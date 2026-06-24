@@ -73,11 +73,18 @@ Asset index:
 
 `docs/assets/ASSET_INDEX.md`
 
+Production backlog:
+
+- `docs/assets/PRODUCTION_BACKLOG.md`
+- `docs/assets/ASSET_CONCEPTS_MANIFEST.md`
+- Source concept folder: `/home/Flamestrike/Desktop/Aerathea/Aerathea Creative/ASSET CONCEPTS`
+
 Current first-slice status:
 
 - Concept reference sheets generated for the first target dummy, portal arch, portal blueprint states, Mekgineer crate, and modular ground tile.
 - `SM_AET_TargetDummy_A01` has a dedicated modeling handoff and is the first DCC production candidate.
 - Remaining first-slice concept references still need final visual approval before their DCC handoff files are treated as locked.
+- The wider `ASSET CONCEPTS` folder contains 289 PNG source concept files. Some are collages/catalogs, so the final asset count is higher than 289 after child-asset expansion.
 
 Next priority order:
 
@@ -93,6 +100,7 @@ Next priority order:
 5. Build/import `SM_MKG_WorkshopPropCrate_A01` for the first Mekgineer prop language test.
 6. Validate each asset with collision, material slot count, LOD0-LOD3 plan, and map check.
 7. Add a simple player-start/camera review flow once the first meshes exist.
+8. Run collage-aware intake on `ASSET CONCEPTS`, starting with armory sheets such as `Gnome Armory.png`.
 
 ## First Asset Production Rule
 
