@@ -80,15 +80,15 @@ Example: `Gnome Armory.png` is a catalog with multiple child assets, including w
 | --- | --- | --- |
 | `Anubisath Armaments.png` | Anubisath/Sutekh | Create Anubisath/Sutekh armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
 | `Armorer Workshop.png` | Aerathea/Common | Create Aerathea/Common armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
-| `Dark Elven Armory.png` | Dark Elven | Create Dark Elven armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
-| `Drakhar Arms Relics and Field Gear.png` | Drakhar | Create Drakhar armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
+| `Dark Elven Armory.png` | Dark Elven | Child intake complete in `docs/assets/kits/KIT_DEL_Armory_A01/CHILD_ASSET_INTAKE.md`; kit production package and child packages needed |
+| `Drakhar Arms Relics and Field Gear.png` | Drakhar | Child intake complete in `docs/assets/kits/KIT_DKH_FieldGear_A01/CHILD_ASSET_INTAKE.md`; kit production package and child packages needed; source scale conflicts with approved Drakhar anchor |
 | `Dwarven Ancestral Armor.png` | Dwarven | Create Dwarven armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
-| `Dwarven Armory.png` | Dwarven | Create Dwarven armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
+| `Dwarven Armory.png` | Dwarven | Child intake complete in `docs/assets/kits/KIT_DWR_Armory_A01/CHILD_ASSET_INTAKE.md`; kit production package and child packages needed |
 | `Dwarven Armory2.png` | Dwarven | Create Dwarven armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
-| `Elven Armory.png` | Elven | Create Elven armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
+| `Elven Armory.png` | Elven | Child intake complete in `docs/assets/kits/KIT_ELV_Armory_A01/CHILD_ASSET_INTAKE.md`; kit production package and child packages needed |
 | `Gnome Armory.png` | Gnome/Mekgineer | Kit package ready in `docs/assets/kits/KIT_MKG_Armory_A01/PRODUCTION_PACKAGE.md`; child asset intake complete in `docs/assets/kits/KIT_MKG_Armory_A01/CHILD_ASSET_INTAKE.md` |
-| `Minotaur Arsenal.png` | Minotaur | Create Minotaur armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
-| `Orc Arsenal.png` | Orc | Create Orc armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
+| `Minotaur Arsenal.png` | Minotaur | Child intake complete in `docs/assets/kits/KIT_MIN_Arsenal_A01/CHILD_ASSET_INTAKE.md`; kit production package and child packages needed |
+| `Orc Arsenal.png` | Orc | Child intake complete in `docs/assets/kits/KIT_ORC_Arsenal_A01/CHILD_ASSET_INTAKE.md`; kit production package and child packages needed |
 | `Relic Seekers and Arcane Trails.png` | Aerathea/Common | Create Aerathea/Common armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
 | `Valararmory.png` | Valar | Create Valar armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
 
@@ -99,15 +99,15 @@ Example: `Gnome Armory.png` is a catalog with multiple child assets, including w
 | `Armorer Workshop.png` | Armory/weapons/gear | Aerathea/Common | Create Aerathea/Common armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
 | `Relic Seekers and Arcane Trails.png` | Armory/weapons/gear | Aerathea/Common | Create Aerathea/Common armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
 | `Anubisath Armaments.png` | Armory/weapons/gear | Anubisath/Sutekh | Create Anubisath/Sutekh armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
-| `Dark Elven Armory.png` | Armory/weapons/gear | Dark Elven | Create Dark Elven armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
-| `Drakhar Arms Relics and Field Gear.png` | Armory/weapons/gear | Drakhar | Create Drakhar armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
+| `Dark Elven Armory.png` | Armory/weapons/gear | Dark Elven | Child intake complete in `docs/assets/kits/KIT_DEL_Armory_A01/CHILD_ASSET_INTAKE.md`; kit production package and child packages needed |
+| `Drakhar Arms Relics and Field Gear.png` | Armory/weapons/gear | Drakhar | Child intake complete in `docs/assets/kits/KIT_DKH_FieldGear_A01/CHILD_ASSET_INTAKE.md`; kit production package and child packages needed; source scale conflicts with approved Drakhar anchor |
 | `Dwarven Ancestral Armor.png` | Armory/weapons/gear | Dwarven | Create Dwarven armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
-| `Dwarven Armory.png` | Armory/weapons/gear | Dwarven | Create Dwarven armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
+| `Dwarven Armory.png` | Armory/weapons/gear | Dwarven | Child intake complete in `docs/assets/kits/KIT_DWR_Armory_A01/CHILD_ASSET_INTAKE.md`; kit production package and child packages needed |
 | `Dwarven Armory2.png` | Armory/weapons/gear | Dwarven | Create Dwarven armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
-| `Elven Armory.png` | Armory/weapons/gear | Elven | Create Elven armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
+| `Elven Armory.png` | Armory/weapons/gear | Elven | Child intake complete in `docs/assets/kits/KIT_ELV_Armory_A01/CHILD_ASSET_INTAKE.md`; kit production package and child packages needed |
 | `Gnome Armory.png` | Armory/weapons/gear | Gnome/Mekgineer | Kit package ready in `docs/assets/kits/KIT_MKG_Armory_A01/PRODUCTION_PACKAGE.md`; child asset intake complete in `docs/assets/kits/KIT_MKG_Armory_A01/CHILD_ASSET_INTAKE.md` |
-| `Minotaur Arsenal.png` | Armory/weapons/gear | Minotaur | Create Minotaur armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
-| `Orc Arsenal.png` | Armory/weapons/gear | Orc | Create Orc armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
+| `Minotaur Arsenal.png` | Armory/weapons/gear | Minotaur | Child intake complete in `docs/assets/kits/KIT_MIN_Arsenal_A01/CHILD_ASSET_INTAKE.md`; kit production package and child packages needed |
+| `Orc Arsenal.png` | Armory/weapons/gear | Orc | Child intake complete in `docs/assets/kits/KIT_ORC_Arsenal_A01/CHILD_ASSET_INTAKE.md`; kit production package and child packages needed |
 | `Valararmory.png` | Armory/weapons/gear | Valar | Create Valar armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
 | `Ancestral Shrine.png` | Building/settlement/environment | Aerathea/Common | Create Aerathea/Common environment kit or building package with modular parts, materials, LOD/collision/import notes |
 | `Barracks.png` | Building/settlement/environment | Aerathea/Common | Create Aerathea/Common environment kit or building package with modular parts, materials, LOD/collision/import notes |

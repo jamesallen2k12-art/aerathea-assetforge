@@ -8,6 +8,14 @@ This handoff covers `BP_AET_Portal_A01` and its required arch dependency, `SM_AE
 
 Do not make travel, teleport, quest, inventory, progression, or unlock behavior client-authoritative in this slice.
 
+## Current Implementation Status
+
+- Blueprint asset shell exists at `/Game/Aerathea/Blueprints/Props/BP_AET_Portal_A01`.
+- `SM_AET_PortalArch_A01` exists at `/Game/Aerathea/Props/Portal/SM_AET_PortalArch_A01`.
+- `L_Aerathea_Startup` currently uses placed production mesh actors `AET_PROD_PortalArch_A01` and `AET_PROD_PortalCore_Aetherium_A01`.
+- Behavior components, portal state functions, interaction volume, VFX/audio hooks, and server-authoritative use request handling are still pending.
+- The current arch mesh is an OBJ/FBX fallback generated while Blender is blocked locally; replace with approved Blender source before final art signoff.
+
 ## Source References
 
 - Blueprint package: `docs/assets/blueprints/BP_AET_Portal_A01/PRODUCTION_PACKAGE.md`

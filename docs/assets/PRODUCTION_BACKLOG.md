@@ -39,12 +39,12 @@ These have production package documentation in `docs/assets/`:
 
 | Asset | Current state | Next action |
 | --- | --- | --- |
-| `SM_AET_TargetDummy_A01` | Concept sheet generated, modeling handoff ready, build/import blocked on approved DCC mesh | Create approved DCC mesh, then build/import and replace startup blockout |
-| `SM_AET_PortalArch_A01` | Concept sheet generated, modeling handoff ready, build/import blocked on approved DCC mesh | Create approved DCC mesh, then build/import for portal Blueprint |
-| `BP_AET_Portal_A01` | Concept state sheet generated, implementation handoff ready, final Blueprint blocked on portal arch mesh import | Build Blueprint after portal arch mesh exists |
-| `SM_MKG_WorkshopPropCrate_A01` | Concept sheet generated, modeling handoff ready | Build/import after DCC mesh is approved |
-| `SM_AET_ModularGroundTile_A01` | Concept sheet generated, modeling handoff ready | Build/import after DCC mesh is approved |
-| `KIT_MKG_Armory_A01` | Kit package ready, child asset intake complete, child packages needed | Create first child packages from `Gnome Armory.png` |
+| `SM_AET_TargetDummy_A01` | Source OBJ/FBX generated, imported to Unreal, startup blockout replaced, validation passing | Replace fallback mesh with approved Blender source when local Blender is repaired; then add target dummy Blueprint behavior |
+| `SM_AET_PortalArch_A01` | Source OBJ/FBX generated, imported to Unreal, startup blockout replaced, validation passing | Replace fallback mesh with approved Blender source when local Blender is repaired; then wire final portal Blueprint behavior |
+| `BP_AET_Portal_A01` | Blueprint asset shell created in Unreal; visual startup portal uses imported arch/core | Implement trigger/VFX/audio/destination behavior after gameplay rules are approved |
+| `SM_MKG_WorkshopPropCrate_A01` | Source OBJ/FBX generated, imported to Unreal, placed in startup scene, validation passing | Replace fallback mesh with approved Blender source when local Blender is repaired |
+| `SM_AET_ModularGroundTile_A01` | Source OBJ/FBX generated, imported to Unreal, placed as 5x5 startup ground-tile layout, validation passing | Replace fallback mesh with approved Blender source when local Blender is repaired |
+| `KIT_MKG_Armory_A01` | Kit package ready, child asset intake complete, first four child packages ready | Continue child packages after `SM_MKG_AetherKnife_A01`, `SM_MKG_AetherCoreUnit_A01`, `SM_MKG_SparkPistol_A01`, and `SM_MKG_AetheriumGrenade_A01` |
 
 ## Existing Startup Scene Blockouts
 
@@ -85,14 +85,14 @@ Armory concepts are not single assets. Treat each armory or gear sheet as a kit 
 | Source concept | Faction/theme | Required expansion |
 | --- | --- | --- |
 | `Gnome Armory.png` | Gnome/Mekgineer | Kit package and child intake complete in `KIT_MKG_Armory_A01`; next create child packages for weapons, Mek-linked gear, pistols, rifles, tools, grenades, armor modules, armor configurations, backpacks, power modules, Aetherium core variants |
-| `Dwarven Armory.png` | Dwarven | Weapons, shields, armor pieces, runic details, display props, material set |
+| `Dwarven Armory.png` | Dwarven | Child intake complete in `KIT_DWR_Armory_A01`; kit production package and child packages needed |
 | `Dwarven Armory2.png` | Dwarven | Additional armory variants and display-ready weapons/armor |
 | `Dwarven Ancestral Armor.png` | Dwarven | Hero armor set, modular armor pieces, rune/metal/fur material set |
-| `Elven Armory.png` | Elven | Moonblade/ranger weapons, elegant armor pieces, living-wood/silver/moonstone material set |
-| `Dark Elven Armory.png` | Dark Elven | Shadowblade/spellbow gear, crescent motifs, obsidian/dark silver/violet material set |
-| `Orc Arsenal.png` | Orc | Clan weapons, shields, shaman/warrior gear, hide/bone/iron material set |
-| `Minotaur Arsenal.png` | Minotaur | Simple heavy brutal weapons, hide/bone/raw iron gear, scale rules for 8-9 ft bodies |
-| `Drakhar Arms Relics and Field Gear.png` | Drakhar | Relics, arcane charms, field gear, bone/leather/ember/sun-baked material set |
+| `Elven Armory.png` | Elven | Child intake complete in `KIT_ELV_Armory_A01`; kit production package and child packages needed |
+| `Dark Elven Armory.png` | Dark Elven | Child intake complete in `KIT_DEL_Armory_A01`; kit production package and child packages needed |
+| `Orc Arsenal.png` | Orc | Child intake complete in `KIT_ORC_Arsenal_A01`; kit production package and child packages needed |
+| `Minotaur Arsenal.png` | Minotaur | Child intake complete in `KIT_MIN_Arsenal_A01`; kit production package and child packages needed |
+| `Drakhar Arms Relics and Field Gear.png` | Drakhar | Child intake complete in `KIT_DKH_FieldGear_A01`; kit production package and child packages needed; source scale conflicts with approved 4-5 ft Drakhar anchor |
 | `Anubisath Armaments.png` | Anubisath/Sutekh | Enemy/faction weapons, armor pieces, seal/necropolis material set |
 | `Valararmory.png` | Valar | Valar weapons, armor pieces, oath/warden/ranger variants |
 | `Armorer Workshop.png` | Aerathea/Common | Workshop environment kit, racks, benches, tools, display props, forge-adjacent materials |
@@ -157,10 +157,10 @@ These are referenced by existing packages or startup docs and should be promoted
 
 ## Recommended Next Backlog Actions
 
-1. Finish the first-slice mesh path: build/import `SM_AET_TargetDummy_A01`.
-2. Perform a collage-aware intake pass for `ASSET CONCEPTS`, starting with armory sheets and first-slice overlaps.
-3. Add modeling handoffs for `SM_AET_PortalArch_A01`, `SM_AET_ModularGroundTile_A01`, and `SM_MKG_WorkshopPropCrate_A01`.
-4. Create first child production packages from `KIT_MKG_Armory_A01`, starting with `SM_MKG_AetherKnife_A01`, `SM_MKG_AetherCoreUnit_A01`, `SM_MKG_SparkPistol_A01`, and `SM_MKG_AetheriumGrenade_A01`.
+1. Replace first-slice fallback OBJ/FBX meshes with approved Blender-authored source meshes after Blender is repaired.
+2. Implement `BP_AET_Portal_A01` trigger/VFX/audio/destination behavior after portal gameplay rules are approved.
+3. Create modeling handoffs and DCC source meshes for `SM_MKG_AetherKnife_A01`, `SM_MKG_AetherCoreUnit_A01`, `SM_MKG_SparkPistol_A01`, and `SM_MKG_AetheriumGrenade_A01`.
+4. Continue child production packages from `KIT_MKG_Armory_A01` after the first four priority child packages.
 5. Create the first race production package for gnomes, starting with a base body/style sheet.
 6. Create the first settlement modular package, either `SM_AET_Palisade_A01` or `SM_AET_House_A01`.
 7. Create the first creature package, likely `SK_CRE_Gryphon_A01`.

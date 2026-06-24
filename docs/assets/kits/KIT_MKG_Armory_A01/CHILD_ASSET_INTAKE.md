@@ -10,17 +10,17 @@
 
 | Child ID | Type | Proposed asset/package | Status | Notes |
 | --- | --- | --- | --- | --- |
-| `Gnome Armory.png#Weapons_AetherKnife` | One-handed weapon | `SM_MKG_AetherKnife_A01` | Package needed | Compact blade with blue Aetherium accent |
+| `Gnome Armory.png#Weapons_AetherKnife` | One-handed weapon | `SM_MKG_AetherKnife_A01` | Covered by existing package | Production package: `docs/assets/props/SM_MKG_AetherKnife_A01/PRODUCTION_PACKAGE.md` |
 | `Gnome Armory.png#Weapons_RatchetCleaver` | One-handed weapon | `SM_MKG_RatchetCleaver_A01` | Package needed | Broad tool-weapon silhouette |
 | `Gnome Armory.png#Weapons_SpikeDrill` | One-handed weapon/tool | `SM_MKG_SpikeDrill_A01` | Package needed | Drill mace silhouette, likely no animation baseline |
 | `Gnome Armory.png#Weapons_GearMace` | One-handed weapon | `SM_MKG_GearMace_A01` | Package needed | Heavy compact mace, large head shape |
 | `Gnome Armory.png#Weapons_MonkeyWrench` | Tool/weapon | `SM_MKG_MonkeyWrench_A01` | Package needed | Utility melee/tool item |
-| `Gnome Armory.png#Gear_AetherCoreUnit` | Power module | `SM_MKG_AetherCoreUnit_A01` | Package needed | Powered backpack/device core |
+| `Gnome Armory.png#Gear_AetherCoreUnit` | Power module | `SM_MKG_AetherCoreUnit_A01` | Covered by existing package | Production package: `docs/assets/props/SM_MKG_AetherCoreUnit_A01/PRODUCTION_PACKAGE.md` |
 | `Gnome Armory.png#Gear_PowerCoupler` | Power module | `SM_MKG_PowerCoupler_A01` | Package needed | Connector/reactor component |
 | `Gnome Armory.png#Gear_LinkedToolRig` | Gear rig | `SM_MKG_LinkedToolRig_A01` | Package needed | Socket rules required |
 | `Gnome Armory.png#Gear_FoldingShield` | Shield/device | `SM_MKG_FoldingShield_A01` | Package needed | May need folded/unfolded variant or BP |
 | `Gnome Armory.png#Gear_MicroReactor` | Power module | `SM_MKG_MicroReactor_A01` | Package needed | Emissive core material candidate |
-| `Gnome Armory.png#Pistols_SparkPistol` | Pistol | `SM_MKG_SparkPistol_A01` | Package needed | Short-range firearm silhouette |
+| `Gnome Armory.png#Pistols_SparkPistol` | Pistol | `SM_MKG_SparkPistol_A01` | Covered by existing package | Production package: `docs/assets/props/SM_MKG_SparkPistol_A01/PRODUCTION_PACKAGE.md` |
 | `Gnome Armory.png#Pistols_RivetSparker` | Pistol | `SM_MKG_RivetSparker_A01` | Package needed | Industrial rivet-gun influence |
 | `Gnome Armory.png#Pistols_AetherboltPistol` | Pistol | `SM_MKG_AetherboltPistol_A01` | Package needed | Blue muzzle/core state |
 | `Gnome Armory.png#Pistols_HeavyPistol` | Pistol | `SM_MKG_HeavyPistol_A01` | Package needed | Fourth pistol on sheet; label not fully legible |
@@ -34,7 +34,7 @@
 | `Gnome Armory.png#Tools_PortableAnvil` | Tool/prop | `SM_MKG_PortableAnvil_A01` | Package needed | World prop and inventory item candidate |
 | `Gnome Armory.png#Tools_FoldingSaw` | Tool | `SM_MKG_FoldingSaw_A01` | Package needed | Folded/unfolded variant possible |
 | `Gnome Armory.png#Grenades_FragGrenade` | Throwable | `SM_MKG_FragGrenade_A01` | Package needed | Compact explosive prop |
-| `Gnome Armory.png#Grenades_AetheriumGrenade` | Throwable | `SM_MKG_AetheriumGrenade_A01` | Package needed | Emissive Aetherium core candidate |
+| `Gnome Armory.png#Grenades_AetheriumGrenade` | Throwable | `SM_MKG_AetheriumGrenade_A01` | Covered by existing package | Production package: `docs/assets/props/SM_MKG_AetheriumGrenade_A01/PRODUCTION_PACKAGE.md` |
 | `Gnome Armory.png#Grenades_SmokeBomb` | Throwable | `SM_MKG_SmokeBomb_A01` | Package needed | VFX gameplay later |
 | `Gnome Armory.png#Grenades_StickyBomb` | Throwable | `SM_MKG_StickyBomb_A01` | Package needed | Attachment/socket behavior later |
 | `Gnome Armory.png#Armor_HelmetModule` | Armor module | `SK_GNM_HelmetModule_MKG_A01` | Package needed | Character gear module |
@@ -64,10 +64,10 @@
 
 ## Immediate Child Package Priority
 
-1. `SM_MKG_AetherKnife_A01`: simple weapon, proves small gear material language.
-2. `SM_MKG_AetherCoreUnit_A01`: establishes powered device materials and emissive limits.
-3. `SM_MKG_SparkPistol_A01`: establishes compact firearm proportions.
-4. `SM_MKG_AetheriumGrenade_A01`: small throwable and inventory icon candidate.
+1. `SM_MKG_AetherKnife_A01`: production package ready; next action is modeling handoff and DCC source mesh.
+2. `SM_MKG_AetherCoreUnit_A01`: production package ready; next action is modeling handoff and DCC source mesh.
+3. `SM_MKG_SparkPistol_A01`: production package ready; next action is modeling handoff and DCC source mesh.
+4. `SM_MKG_AetheriumGrenade_A01`: production package ready; next action is modeling handoff and DCC source mesh.
 5. `SK_GNM_ChestRig_MKG_A01`: waits until gnome base body sizing is approved.
 
 ## Notes For Next Pass
