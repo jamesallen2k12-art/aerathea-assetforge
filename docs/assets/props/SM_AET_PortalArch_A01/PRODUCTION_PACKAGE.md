@@ -6,10 +6,16 @@
 - Asset type: Static Mesh
 - World: Aerathea
 - Category: Portal structure / magical traversal prop
-- Current status: Production spec ready, concept direction proposed
+- Current status: Concept sheet generated, ready for modeling review
 - Working selected direction: Chunky ancient stone archway with hand-hewn blocks, dark-iron reinforcement, worn brass insets, and restrained blue Aetherium channel stones.
 
 This asset replaces the portal-arch blockout in `L_Aerathea_Startup` and becomes the static structure used by `BP_AET_Portal_A01`.
+
+## Concept Reference
+
+- Concept sheet: `docs/assets/props/SM_AET_PortalArch_A01/concepts/SM_AET_PortalArch_A01_concept_sheet_A01.png`
+- Generation mode: built-in image generation tool.
+- Review status: usable first-pass reference; final Flamestrike approval still required before treating it as a locked final art target.
 
 ## Gameplay Purpose
 

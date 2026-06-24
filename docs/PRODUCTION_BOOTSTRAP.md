@@ -73,9 +73,15 @@ Asset index:
 
 `docs/assets/ASSET_INDEX.md`
 
+Current first-slice status:
+
+- Concept reference sheets generated for the first target dummy, portal arch, portal blueprint states, Mekgineer crate, and modular ground tile.
+- `SM_AET_TargetDummy_A01` has a dedicated modeling handoff and is the first DCC production candidate.
+- Remaining first-slice concept references still need final visual approval before their DCC handoff files are treated as locked.
+
 Next priority order:
 
-1. Approve or revise the proposed first-slice asset directions:
+1. Approve or revise the generated first-slice concept references:
    - `SM_AET_TargetDummy_A01`
    - `SM_AET_PortalArch_A01`
    - `BP_AET_Portal_A01`
@@ -104,5 +110,6 @@ Do not jump straight to final art. For each production asset:
 
 - Local source control has been initialized on branch `main`.
 - Baseline commit created: `5c018cb9f4ceb8d460482472f9716fe102ddbdd9`.
+- First-slice production package commit created: `482f953`.
 - No remote is configured yet.
 - Preserve the current `.keep` placeholder files in empty content folders until real Unreal assets occupy those directories.
