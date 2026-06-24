@@ -1,0 +1,34 @@
+# Unreal generated state
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# Local IDE/editor files
+*.suo
+*.user
+*.userosscache
+*.sln
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.opendb
+*.swp
+*.swo
+.*.kate-swp
+
+# Python generated state
+__pycache__/
+*.py[cod]
+
+# OS/filesystem noise
+.DS_Store
+Thumbs.db
+
+# Build/package output
+Build/
+Releases/
+PackagedBuilds/
+
+# Local scratch
+filename.txt
