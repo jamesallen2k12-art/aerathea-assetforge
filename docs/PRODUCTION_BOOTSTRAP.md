@@ -69,16 +69,24 @@ Do not run `MAP CHECK` from the headless Python commandlet on UE 5.8; that path 
 
 Build a small, controlled Aerathea asset cluster before broad production. The goal is to prove the visual style, import rules, collision scale, material setup, LOD rules, and editor stability.
 
+Asset index:
+
+`docs/assets/ASSET_INDEX.md`
+
 Next priority order:
 
-1. Replace blockout forms with production-ready first-pass meshes:
+1. Approve or revise the proposed first-slice asset directions:
    - `SM_AET_TargetDummy_A01`
    - `SM_AET_PortalArch_A01`
    - `BP_AET_Portal_A01`
    - `SM_MKG_WorkshopPropCrate_A01`
    - `SM_AET_ModularGroundTile_A01`
-2. Validate each asset with collision, material slot count, LOD0-LOD3 plan, and map check.
-3. Add a simple player-start/camera review flow once the first meshes exist.
+2. Build/import `SM_AET_TargetDummy_A01` as the first production mesh and replace the startup blockout.
+3. Build/import `SM_AET_PortalArch_A01`, then create `BP_AET_Portal_A01` around it.
+4. Build/import `SM_AET_ModularGroundTile_A01` and replace or supplement the startup ground plane.
+5. Build/import `SM_MKG_WorkshopPropCrate_A01` for the first Mekgineer prop language test.
+6. Validate each asset with collision, material slot count, LOD0-LOD3 plan, and map check.
+7. Add a simple player-start/camera review flow once the first meshes exist.
 
 ## First Asset Production Rule
 
@@ -95,6 +103,6 @@ Do not jump straight to final art. For each production asset:
 ## Source Control Status
 
 - Local source control has been initialized on branch `main`.
+- Baseline commit created: `5c018cb9f4ceb8d460482472f9716fe102ddbdd9`.
 - No remote is configured yet.
 - Preserve the current `.keep` placeholder files in empty content folders until real Unreal assets occupy those directories.
-- First local commit is ready once `git user.name` and `git user.email` are configured.
