@@ -84,6 +84,10 @@ Current first-slice status:
 
 - Concept reference sheets generated for the first target dummy, portal arch, portal blueprint states, Mekgineer crate, and modular ground tile.
 - `SM_AET_TargetDummy_A01` has a dedicated modeling handoff and is the first DCC production candidate.
+- `SM_AET_TargetDummy_A01` build/import is blocked on an approved DCC mesh; do not substitute a procedural placeholder for the production asset.
+- `SM_AET_PortalArch_A01`, `SM_AET_ModularGroundTile_A01`, and `SM_MKG_WorkshopPropCrate_A01` now have dedicated modeling handoffs.
+- `BP_AET_Portal_A01` has an implementation handoff, but final Blueprint validation is blocked until `SM_AET_PortalArch_A01` is imported.
+- `KIT_MKG_Armory_A01` has a kit package and child asset intake from `Gnome Armory.png`.
 - Remaining first-slice concept references still need final visual approval before their DCC handoff files are treated as locked.
 - The wider `ASSET CONCEPTS` folder contains 289 PNG source concept files. Some are collages/catalogs, so the final asset count is higher than 289 after child-asset expansion.
 
@@ -101,7 +105,7 @@ Next priority order:
 5. Build/import `SM_MKG_WorkshopPropCrate_A01` for the first Mekgineer prop language test.
 6. Validate each asset with collision, material slot count, LOD0-LOD3 plan, and map check.
 7. Add a simple player-start/camera review flow once the first meshes exist.
-8. Run collage-aware intake on `ASSET CONCEPTS`, starting with armory sheets such as `Gnome Armory.png`.
+8. Continue collage-aware intake on `ASSET CONCEPTS`, starting with the remaining armory sheets after `Gnome Armory.png`.
 
 ## First Asset Production Rule
 

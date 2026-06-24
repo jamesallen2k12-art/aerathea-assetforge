@@ -6,13 +6,14 @@
 - Asset type: Static Mesh
 - World: Aerathea
 - Category: Modular ground / startup scene test tile
-- Current status: Concept sheet generated, ready for modeling review
+- Current status: Concept sheet generated, modeling handoff ready
 
 This asset replaces the flat startup ground plane with a reusable modular tile that can test scale, collision, material readability, and early settlement dressing.
 
 ## Concept Reference
 
 - Concept sheet: `docs/assets/props/SM_AET_ModularGroundTile_A01/concepts/SM_AET_ModularGroundTile_A01_concept_sheet_A01.png`
+- Modeling handoff: `docs/assets/props/SM_AET_ModularGroundTile_A01/MODELING_HANDOFF.md`
 - Generation mode: built-in image generation tool.
 - Review status: usable first-pass reference; final Flamestrike approval still required before treating it as a locked final art target.
 

@@ -39,11 +39,12 @@ These have production package documentation in `docs/assets/`:
 
 | Asset | Current state | Next action |
 | --- | --- | --- |
-| `SM_AET_TargetDummy_A01` | Concept sheet generated, modeling handoff ready | Build/import first production mesh and replace startup blockout |
-| `SM_AET_PortalArch_A01` | Concept sheet generated, ready for modeling review | Add modeling handoff, then build/import |
-| `BP_AET_Portal_A01` | Concept state sheet generated, implementation pending | Build Blueprint after portal arch mesh exists |
-| `SM_MKG_WorkshopPropCrate_A01` | Concept sheet generated, ready for modeling review | Add modeling handoff, then build/import |
-| `SM_AET_ModularGroundTile_A01` | Concept sheet generated, ready for modeling review | Add modeling handoff, then build/import |
+| `SM_AET_TargetDummy_A01` | Concept sheet generated, modeling handoff ready, build/import blocked on approved DCC mesh | Create approved DCC mesh, then build/import and replace startup blockout |
+| `SM_AET_PortalArch_A01` | Concept sheet generated, modeling handoff ready, build/import blocked on approved DCC mesh | Create approved DCC mesh, then build/import for portal Blueprint |
+| `BP_AET_Portal_A01` | Concept state sheet generated, implementation handoff ready, final Blueprint blocked on portal arch mesh import | Build Blueprint after portal arch mesh exists |
+| `SM_MKG_WorkshopPropCrate_A01` | Concept sheet generated, modeling handoff ready | Build/import after DCC mesh is approved |
+| `SM_AET_ModularGroundTile_A01` | Concept sheet generated, modeling handoff ready | Build/import after DCC mesh is approved |
+| `KIT_MKG_Armory_A01` | Kit package ready, child asset intake complete, child packages needed | Create first child packages from `Gnome Armory.png` |
 
 ## Existing Startup Scene Blockouts
 
@@ -83,7 +84,7 @@ Armory concepts are not single assets. Treat each armory or gear sheet as a kit 
 
 | Source concept | Faction/theme | Required expansion |
 | --- | --- | --- |
-| `Gnome Armory.png` | Gnome/Mekgineer | Weapons, Mek-linked gear, pistols, rifles, tools, grenades, armor modules, armor configurations, backpacks, power modules, Aetherium core variants |
+| `Gnome Armory.png` | Gnome/Mekgineer | Kit package and child intake complete in `KIT_MKG_Armory_A01`; next create child packages for weapons, Mek-linked gear, pistols, rifles, tools, grenades, armor modules, armor configurations, backpacks, power modules, Aetherium core variants |
 | `Dwarven Armory.png` | Dwarven | Weapons, shields, armor pieces, runic details, display props, material set |
 | `Dwarven Armory2.png` | Dwarven | Additional armory variants and display-ready weapons/armor |
 | `Dwarven Ancestral Armor.png` | Dwarven | Hero armor set, modular armor pieces, rune/metal/fur material set |
@@ -159,7 +160,7 @@ These are referenced by existing packages or startup docs and should be promoted
 1. Finish the first-slice mesh path: build/import `SM_AET_TargetDummy_A01`.
 2. Perform a collage-aware intake pass for `ASSET CONCEPTS`, starting with armory sheets and first-slice overlaps.
 3. Add modeling handoffs for `SM_AET_PortalArch_A01`, `SM_AET_ModularGroundTile_A01`, and `SM_MKG_WorkshopPropCrate_A01`.
-4. Create `KIT_MKG_Armory_A01` from `Gnome Armory.png`, splitting child weapons, gear, armor modules, backpacks, and Aetherium core variants.
+4. Create first child production packages from `KIT_MKG_Armory_A01`, starting with `SM_MKG_AetherKnife_A01`, `SM_MKG_AetherCoreUnit_A01`, `SM_MKG_SparkPistol_A01`, and `SM_MKG_AetheriumGrenade_A01`.
 5. Create the first race production package for gnomes, starting with a base body/style sheet.
 6. Create the first settlement modular package, either `SM_AET_Palisade_A01` or `SM_AET_House_A01`.
 7. Create the first creature package, likely `SK_CRE_Gryphon_A01`.

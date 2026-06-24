@@ -86,7 +86,7 @@ Example: `Gnome Armory.png` is a catalog with multiple child assets, including w
 | `Dwarven Armory.png` | Dwarven | Create Dwarven armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
 | `Dwarven Armory2.png` | Dwarven | Create Dwarven armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
 | `Elven Armory.png` | Elven | Create Elven armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
-| `Gnome Armory.png` | Gnome/Mekgineer | Create Gnome/Mekgineer armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
+| `Gnome Armory.png` | Gnome/Mekgineer | Kit package ready in `docs/assets/kits/KIT_MKG_Armory_A01/PRODUCTION_PACKAGE.md`; child asset intake complete in `docs/assets/kits/KIT_MKG_Armory_A01/CHILD_ASSET_INTAKE.md` |
 | `Minotaur Arsenal.png` | Minotaur | Create Minotaur armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
 | `Orc Arsenal.png` | Orc | Create Orc armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
 | `Relic Seekers and Arcane Trails.png` | Aerathea/Common | Create Aerathea/Common armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
@@ -105,7 +105,7 @@ Example: `Gnome Armory.png` is a catalog with multiple child assets, including w
 | `Dwarven Armory.png` | Armory/weapons/gear | Dwarven | Create Dwarven armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
 | `Dwarven Armory2.png` | Armory/weapons/gear | Dwarven | Create Dwarven armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
 | `Elven Armory.png` | Armory/weapons/gear | Elven | Create Elven armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
-| `Gnome Armory.png` | Armory/weapons/gear | Gnome/Mekgineer | Create Gnome/Mekgineer armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
+| `Gnome Armory.png` | Armory/weapons/gear | Gnome/Mekgineer | Kit package ready in `docs/assets/kits/KIT_MKG_Armory_A01/PRODUCTION_PACKAGE.md`; child asset intake complete in `docs/assets/kits/KIT_MKG_Armory_A01/CHILD_ASSET_INTAKE.md` |
 | `Minotaur Arsenal.png` | Armory/weapons/gear | Minotaur | Create Minotaur armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
 | `Orc Arsenal.png` | Armory/weapons/gear | Orc | Create Orc armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |
 | `Valararmory.png` | Armory/weapons/gear | Valar | Create Valar armory kit: weapons, armor silhouettes, racks/displays, material set, and Unreal import specs |

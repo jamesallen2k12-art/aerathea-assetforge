@@ -6,7 +6,7 @@
 - Asset type: Static Mesh
 - World: Aerathea
 - Category: Training prop / combat-readability test prop
-- Current status: Concept sheet generated, modeling handoff ready
+- Current status: Concept sheet generated, modeling handoff ready, build/import blocked on approved DCC mesh
 - Working selected direction: Rugged militia training dummy with chunky timber frame, wrapped straw core, patched leather hit zones, dark-iron bracing, and painted blue Aetherium scoring marks.
 
 This asset replaces the current target-dummy blockout in `L_Aerathea_Startup` after concept approval and modeling.
@@ -15,6 +15,7 @@ This asset replaces the current target-dummy blockout in `L_Aerathea_Startup` af
 
 - Concept sheet: `docs/assets/props/SM_AET_TargetDummy_A01/concepts/SM_AET_TargetDummy_A01_concept_sheet_A01.png`
 - Modeling handoff: `docs/assets/props/SM_AET_TargetDummy_A01/MODELING_HANDOFF.md`
+- Build/import status: `docs/assets/props/SM_AET_TargetDummy_A01/BUILD_IMPORT_STATUS.md`
 - Generation mode: built-in image generation tool.
 - Review status: usable first-pass reference; final Flamestrike approval still required before treating it as a locked final art target.
 

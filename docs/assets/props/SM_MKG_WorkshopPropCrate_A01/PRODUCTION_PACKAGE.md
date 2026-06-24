@@ -6,7 +6,7 @@
 - Asset type: Static Mesh
 - World: Aerathea
 - Category: Mekgineer workshop prop / storage crate
-- Current status: Concept sheet generated, ready for modeling review
+- Current status: Concept sheet generated, modeling handoff ready
 - Cultural anchor: Gnome Mekgineer
 
 This crate is the first small prop for Mekgineer workshop visual language: compact, clever, sturdy, brass/copper/dark-iron accents, leather handles, and restrained blue Aetherium details.
@@ -14,6 +14,7 @@ This crate is the first small prop for Mekgineer workshop visual language: compa
 ## Concept Reference
 
 - Concept sheet: `docs/assets/props/SM_MKG_WorkshopPropCrate_A01/concepts/SM_MKG_WorkshopPropCrate_A01_concept_sheet_A01.png`
+- Modeling handoff: `docs/assets/props/SM_MKG_WorkshopPropCrate_A01/MODELING_HANDOFF.md`
 - Generation mode: built-in image generation tool.
 - Review status: usable first-pass reference; final Flamestrike approval still required before treating it as a locked final art target.
 

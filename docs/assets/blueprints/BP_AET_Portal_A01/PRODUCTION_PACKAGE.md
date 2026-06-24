@@ -6,7 +6,7 @@
 - Asset type: Blueprint Actor
 - World: Aerathea
 - Category: Interactive portal / traversal actor
-- Current status: Concept state sheet generated, implementation pending
+- Current status: Concept state sheet generated, implementation handoff ready, final Blueprint blocked on portal arch mesh import
 - Required static mesh: `SM_AET_PortalArch_A01`
 
 This blueprint wraps the portal arch mesh, visual portal core, interaction area, and future traversal behavior.
@@ -14,6 +14,7 @@ This blueprint wraps the portal arch mesh, visual portal core, interaction area,
 ## Concept Reference
 
 - State sheet: `docs/assets/blueprints/BP_AET_Portal_A01/concepts/BP_AET_Portal_A01_state_sheet_A01.png`
+- Implementation handoff: `docs/assets/blueprints/BP_AET_Portal_A01/IMPLEMENTATION_HANDOFF.md`
 - Generation mode: built-in image generation tool.
 - Review status: usable first-pass reference for inactive, idle active, and highlighted interaction states; final Flamestrike approval still required before treating it as a locked final art target.
 
