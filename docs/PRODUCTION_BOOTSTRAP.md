@@ -78,6 +78,7 @@ Production backlog:
 - `docs/assets/PRODUCTION_BACKLOG.md`
 - `docs/assets/ASSET_CONCEPTS_MANIFEST.md`
 - Source concept folder: `/home/Flamestrike/Desktop/Aerathea/Aerathea Creative/ASSET CONCEPTS`
+- Codex skill: `/home/Flamestrike/.codex/skills/aerathea-production-intake`
 
 Current first-slice status:
 
