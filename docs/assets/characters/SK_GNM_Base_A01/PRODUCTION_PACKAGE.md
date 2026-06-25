@@ -1,0 +1,89 @@
+# SK_GNM_Base_A01 Production Package
+
+## Art Direction Summary
+
+- Asset name: `SK_GNM_Base_A01`
+- Asset type: Skeletal Mesh base race body / character production package
+- Source concepts: `Gnome Male.png`, `Gnome Female.png`, `GnomeMale1.png`, `Gnomish Sentinels.png`
+- Faction/theme: Gnome / Mekgineer
+- Status: First race body production package ready
+
+Compact original Aerathea gnome base body for future player/NPC production. Gnomes are 3-4 ft tall, not short humans: large head, expressive ears, compact torso, sturdy legs, oversized boots, clever hands with four fingers plus one thumb, and a practical inventor stance.
+
+## Gameplay Purpose
+
+Establishes the first race body target for scale validation, armor fit, Mekgineer gear sockets, startup-scene review, NPC/player prototyping, and future animation retarget tests.
+
+## Silhouette Notes
+
+Strong read from MMO distance: large head and ears, compact chest, low center of gravity, sturdy legs, oversized boots, broad gloves, tool-ready belt zone, and readable backpack/goggles socket areas. Avoid childlike proportions; the body should feel adult, capable, and craft-driven.
+
+## Scale Notes
+
+Target standing height: 110-120 cm baseline, with variants fitting the approved 3-4 ft range. Use `AET_BOOT_GnomeScale_110cm` as the startup reference. Author in centimeters. Keep arm length and hand scale generous enough for tools and small weapons.
+
+## Materials And Color Palette
+
+Base body material uses warm skin tones with hand-painted stylization, AO in ear/neck/finger forms, and clean normal detail. Starter fit direction uses brass, copper, dark iron, leather, blue Aetherium, cloth workwear, goggles, gloves, and oversized boots.
+
+## Concept Image Prompt
+
+Create an original stylized fantasy MMORPG character production sheet of a base Gnome body for Aerathea. The design should emphasize 3-4 ft compact adult proportions, large expressive ears, large head, sturdy legs, oversized boots, four fingers plus one thumb per hand, craft-driven Mekgineer culture, readable MMO silhouette, brass/copper/leather starter gear, and clever inventor mood. Use hand-painted texture detail, readable shapes, baked-AO-style depth, normal-map-style surface detail, sparing blue Aetherium accents, and production-friendly Unreal character design. Present it as front, side, back, and proportion callout views on a clean background.
+
+## Modeling Notes
+
+Model body forms, head, ears, hands, boots, belt blocks, and large starter gear shapes as real geometry. Keep face and ear silhouettes clean for expression. Texture pores, cloth weave, leather stitching, tiny tool scratches, and small fasteners. Do not bake armor into the base naked/body mesh; starter clothing and gear should remain modular where possible.
+
+## Texture And Material Notes
+
+- `T_GNM_Base_A01_Body_BC`
+- `T_GNM_Base_A01_Body_N`
+- `T_GNM_Base_A01_Body_ORM`
+- `T_GNM_Base_A01_Eyes_BC`
+- `T_GNM_StarterOutfit_A01_BC`
+- `T_GNM_StarterOutfit_A01_N`
+- `T_GNM_StarterOutfit_A01_ORM`
+
+Use 2-3 material slots: body/head, eyes, starter outfit/gear. 2K texture sets are baseline; 4K only for hero review.
+
+## Triangle Budget
+
+LOD0 target: 15k-25k tris for the base gnome body. Starter outfit and boot/glove modules may add 5k-12k tris depending on modularity. Keep total first playable review target under 35k tris.
+
+## LOD Plan
+
+LOD0: full body, face, ears, fingers, boots, and starter outfit shapes. LOD1: 60-70 percent. LOD2: 35-45 percent. LOD3: 15-25 percent. Reduce stitching, small straps, small buckles, inner clothing folds, and boot cuts before reducing head/ear/boot silhouette.
+
+## Collision Notes
+
+Use a standard humanoid capsule tuned to gnome height. Add physics assets for head, torso, upper/lower arms, hands, thighs, calves, and feet after skeleton approval. Keep movement-critical collision server-authoritative.
+
+## Animation Notes
+
+Baseline animation list: idle, walk, run, jump start, jump loop, land, turn in place, interact, one-handed attack, two-handed attack, pistol aim/fire placeholder, cast/channel placeholder, emote wave, death. Rig should support expressive ears, facial blend targets later, tool/backpack sockets, and oversized boot ground contact.
+
+## Unreal Import Notes
+
+- Folder: `/Game/Aerathea/Characters/Gnomes/Base/`
+- Skeletal mesh: `SK_GNM_Base_A01`
+- Skeleton: `SKEL_GNM_Base_A01`
+- Physics asset: `PHYS_GNM_Base_A01`
+- Animation Blueprint placeholder: `ABP_GNM_Base_A01`
+- Pivot: feet at world origin, facing +X per project convention if confirmed in import tests
+- Sockets: `hand_r_weapon`, `hand_l_offhand`, `back_pack`, `head_goggles`, `belt_tool_l`, `belt_tool_r`, `muzzle_preview`, `vfx_aether_core`
+
+## Folder And Naming Recommendation
+
+- Docs: `docs/assets/characters/SK_GNM_Base_A01/`
+- Source: `SourceAssets/Blender/Characters/Gnomes/SK_GNM_Base_A01/`
+- Export: `SourceAssets/Exports/Characters/Gnomes/SK_GNM_Base_A01/`
+- Unreal: `/Game/Aerathea/Characters/Gnomes/Base/`
+
+## Quality Gate Checklist
+
+- Original Aerathea gnome identity.
+- 3-4 ft compact adult proportions.
+- Large ears/head, sturdy legs, oversized boots, four fingers plus thumb.
+- Mekgineer sockets and starter gear language documented.
+- Texture maps, material slots, LODs, collision, skeleton, animation, and Unreal import notes included.
+- Does not copy franchise gnome designs.

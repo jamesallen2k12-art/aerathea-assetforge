@@ -39,12 +39,19 @@ These have production package documentation in `docs/assets/`:
 
 | Asset | Current state | Next action |
 | --- | --- | --- |
-| `SM_AET_TargetDummy_A01` | Source OBJ/FBX generated, imported to Unreal, startup blockout replaced, validation passing | Replace fallback mesh with approved Blender source when local Blender is repaired; then add target dummy Blueprint behavior |
-| `SM_AET_PortalArch_A01` | Source OBJ/FBX generated, imported to Unreal, startup blockout replaced, validation passing | Replace fallback mesh with approved Blender source when local Blender is repaired; then wire final portal Blueprint behavior |
-| `BP_AET_Portal_A01` | Blueprint asset shell created in Unreal; visual startup portal uses imported arch/core | Implement trigger/VFX/audio/destination behavior after gameplay rules are approved |
-| `SM_MKG_WorkshopPropCrate_A01` | Source OBJ/FBX generated, imported to Unreal, placed in startup scene, validation passing | Replace fallback mesh with approved Blender source when local Blender is repaired |
-| `SM_AET_ModularGroundTile_A01` | Source OBJ/FBX generated, imported to Unreal, placed as 5x5 startup ground-tile layout, validation passing | Replace fallback mesh with approved Blender source when local Blender is repaired |
-| `KIT_MKG_Armory_A01` | Kit package ready, child asset intake complete, first four child packages ready | Continue child packages after `SM_MKG_AetherKnife_A01`, `SM_MKG_AetherCoreUnit_A01`, `SM_MKG_SparkPistol_A01`, and `SM_MKG_AetheriumGrenade_A01` |
+| `SM_AET_TargetDummy_A01` | Blender source and FBX generated, imported to Unreal, startup blockout replaced, validation passing | Add `BP_AET_TargetDummy_A01` behavior after combat/damage test rules are approved |
+| `SM_AET_PortalArch_A01` | Blender source and FBX generated, imported to Unreal, startup portal visual replaced, validation passing | Refine final portal materials/VFX after destination rules are approved |
+| `BP_AET_Portal_A01` | Blueprint reparented to `AAETPortalActor`; startup review actor uses native portal class, validation passing | Add trigger/VFX/audio/destination data once gameplay rules are approved |
+| `SM_MKG_WorkshopPropCrate_A01` | Blender source and FBX generated, imported to Unreal, placed in startup scene, validation passing | Use as Mekgineer material/style reference for workshop props |
+| `SM_AET_ModularGroundTile_A01` | Blender source and FBX generated, imported to Unreal, placed as 5x5 startup ground-tile layout, validation passing | Use for early scene layout and collision/material validation |
+| `KIT_MKG_Armory_A01` | Kit package ready, child asset intake complete, first four child packages, DCC meshes, handoffs, Unreal imports, and startup placements complete | Continue remaining Gnome armory child packages from the intake table |
+| `KIT_DWR_Armory_A01` | Child intake and kit production package ready | Create priority child packages for Oathkeeper hammer, Stonewall shield, Stonebound helm, and runic glow states |
+| `KIT_ELV_Armory_A01` | Child intake and kit production package ready | Create priority child packages for Moonblade, Silverleaf Recurve, Moonward buckler, and Aetherium lantern |
+| `KIT_DEL_Armory_A01` | Child intake and kit production package ready | Create priority child packages for Duskspite blade, Veilstrider bow, Aegis of Eternal Dusk, and Shadow Armory material set |
+| `KIT_ORC_Arsenal_A01` | Child intake and kit production package ready | Create priority child packages for GreatAxe A01, shields, shamanic talismans, and runic affinities |
+| `KIT_MIN_Arsenal_A01` | Child intake and kit production package ready | Create priority child packages for GreatAxe A01, CrushingMaul A01, hide shields, and helmets |
+| `KIT_DKH_FieldGear_A01` | Child intake and kit production package ready; package uses approved 4-5 ft Drakhar scale over conflicting source-sheet scale | Create priority child packages for Riversind Recurve, curved daggers, ReedShell shield, and magic tracking charms |
+| `SK_GNM_Base_A01` | First race body production package ready | Create concept sheet/modeling handoff, then build first gnome body source mesh and skeleton |
 
 ## Existing Startup Scene Blockouts
 
@@ -55,10 +62,10 @@ These exist in `L_Aerathea_Startup` as validation/blockout content, not final pr
 | `AET_BOOT_PlayerScale_180cm` | Keep as scale reference until playable humanoid package exists |
 | `AET_BOOT_GnomeScale_110cm` | Replace or supplement after gnome body reference package exists |
 | `AET_BOOT_MinotaurScale_270cm` | Replace or supplement after minotaur body reference package exists |
-| `AET_BOOT_PortalArch_*` | Replace with `SM_AET_PortalArch_A01` |
-| `AET_BOOT_PortalCore_Aetherium_A01` | Replace or wrap with `BP_AET_Portal_A01` |
-| `AET_BOOT_TargetDummy_*` | Replace with `SM_AET_TargetDummy_A01` |
-| `AET_BOOT_GroundTile_20m_A01` | Replace or supplement with `SM_AET_ModularGroundTile_A01` |
+| `AET_BOOT_PortalArch_*` | Retired in startup scene; replaced by production portal actor using `SM_AET_PortalArch_A01` |
+| `AET_BOOT_PortalCore_Aetherium_A01` | Retired in startup scene; replaced by production portal actor core component |
+| `AET_BOOT_TargetDummy_*` | Replaced by `SM_AET_TargetDummy_A01` |
+| `AET_BOOT_GroundTile_20m_A01` | Replaced by 5x5 `SM_AET_ModularGroundTile_A01` layout |
 
 ## Race Anchors Needing Production Packages
 
@@ -66,7 +73,7 @@ All approved races below need concept sheets, body proportion sheets, starter ou
 
 | Race | Approved anchor | Missing production packages |
 | --- | --- | --- |
-| Gnomes | Compact 3-4 ft inventors with large heads, expressive ears, sturdy legs, oversized boots, tools, goggles, brass/copper/dark iron/leather/blue Aetherium | Base body sheet, male/female or modular body package, starter outfit, Mekgineer tool kit, goggles/accessory kit |
+| Gnomes | Compact 3-4 ft inventors with large heads, expressive ears, sturdy legs, oversized boots, tools, goggles, brass/copper/dark iron/leather/blue Aetherium | Base body package ready in `SK_GNM_Base_A01`; concept sheet/modeling handoff, starter outfit, Mekgineer tool kit, and goggles/accessory kit still needed |
 | Dwarves | Broad dense mountain-forged weaponsmiths/runesmiths/guardians with stone, steel, brass, blue runes, fur, leather | Base body sheet, male/female body package, beard variants for males, starter armor, runesmith/weapon kit |
 | Elves | Tall graceful ancient nature/moon/star culture with living wood, silver, moonstone, silverleaf, blue-white Aetherium | Base body sheet, starter outfit, ranger kit, runesinger/moonblade kit, living-architecture material sheet |
 | Dark Elves | Elegant shadowed oath-bound culture with dark silver, obsidian, violet glow, crescent motifs | Base body sheet, starter outfit, shadowblade kit, priestess/spellbow kit, dark hall material sheet |
@@ -85,14 +92,14 @@ Armory concepts are not single assets. Treat each armory or gear sheet as a kit 
 | Source concept | Faction/theme | Required expansion |
 | --- | --- | --- |
 | `Gnome Armory.png` | Gnome/Mekgineer | Kit package and child intake complete in `KIT_MKG_Armory_A01`; next create child packages for weapons, Mek-linked gear, pistols, rifles, tools, grenades, armor modules, armor configurations, backpacks, power modules, Aetherium core variants |
-| `Dwarven Armory.png` | Dwarven | Child intake complete in `KIT_DWR_Armory_A01`; kit production package and child packages needed |
+| `Dwarven Armory.png` | Dwarven | Child intake and kit production package complete in `KIT_DWR_Armory_A01`; priority child packages needed |
 | `Dwarven Armory2.png` | Dwarven | Additional armory variants and display-ready weapons/armor |
 | `Dwarven Ancestral Armor.png` | Dwarven | Hero armor set, modular armor pieces, rune/metal/fur material set |
-| `Elven Armory.png` | Elven | Child intake complete in `KIT_ELV_Armory_A01`; kit production package and child packages needed |
-| `Dark Elven Armory.png` | Dark Elven | Child intake complete in `KIT_DEL_Armory_A01`; kit production package and child packages needed |
-| `Orc Arsenal.png` | Orc | Child intake complete in `KIT_ORC_Arsenal_A01`; kit production package and child packages needed |
-| `Minotaur Arsenal.png` | Minotaur | Child intake complete in `KIT_MIN_Arsenal_A01`; kit production package and child packages needed |
-| `Drakhar Arms Relics and Field Gear.png` | Drakhar | Child intake complete in `KIT_DKH_FieldGear_A01`; kit production package and child packages needed; source scale conflicts with approved 4-5 ft Drakhar anchor |
+| `Elven Armory.png` | Elven | Child intake and kit production package complete in `KIT_ELV_Armory_A01`; priority child packages needed |
+| `Dark Elven Armory.png` | Dark Elven | Child intake and kit production package complete in `KIT_DEL_Armory_A01`; priority child packages needed |
+| `Orc Arsenal.png` | Orc | Child intake and kit production package complete in `KIT_ORC_Arsenal_A01`; priority child packages needed |
+| `Minotaur Arsenal.png` | Minotaur | Child intake and kit production package complete in `KIT_MIN_Arsenal_A01`; priority child packages needed |
+| `Drakhar Arms Relics and Field Gear.png` | Drakhar | Child intake and kit production package complete in `KIT_DKH_FieldGear_A01`; priority child packages needed; source scale conflicts with approved 4-5 ft Drakhar anchor |
 | `Anubisath Armaments.png` | Anubisath/Sutekh | Enemy/faction weapons, armor pieces, seal/necropolis material set |
 | `Valararmory.png` | Valar | Valar weapons, armor pieces, oath/warden/ranger variants |
 | `Armorer Workshop.png` | Aerathea/Common | Workshop environment kit, racks, benches, tools, display props, forge-adjacent materials |
@@ -157,11 +164,11 @@ These are referenced by existing packages or startup docs and should be promoted
 
 ## Recommended Next Backlog Actions
 
-1. Replace first-slice fallback OBJ/FBX meshes with approved Blender-authored source meshes after Blender is repaired.
-2. Implement `BP_AET_Portal_A01` trigger/VFX/audio/destination behavior after portal gameplay rules are approved.
-3. Create modeling handoffs and DCC source meshes for `SM_MKG_AetherKnife_A01`, `SM_MKG_AetherCoreUnit_A01`, `SM_MKG_SparkPistol_A01`, and `SM_MKG_AetheriumGrenade_A01`.
-4. Continue child production packages from `KIT_MKG_Armory_A01` after the first four priority child packages.
-5. Create the first race production package for gnomes, starting with a base body/style sheet.
+1. Create remaining Gnome armory child production packages from `KIT_MKG_Armory_A01`.
+2. Create priority child packages from `KIT_DWR_Armory_A01`, `KIT_ELV_Armory_A01`, `KIT_DEL_Armory_A01`, `KIT_ORC_Arsenal_A01`, `KIT_MIN_Arsenal_A01`, and `KIT_DKH_FieldGear_A01`.
+3. Create the `SK_GNM_Base_A01` concept sheet/modeling handoff, then build the first gnome body DCC source mesh and skeleton.
+4. Implement final `BP_AET_Portal_A01` trigger/VFX/audio/destination behavior after portal gameplay rules are approved.
+5. Add `BP_AET_TargetDummy_A01` behavior after combat/damage test rules are approved.
 6. Create the first settlement modular package, either `SM_AET_Palisade_A01` or `SM_AET_House_A01`.
 7. Create the first creature package, likely `SK_CRE_Gryphon_A01`.
 

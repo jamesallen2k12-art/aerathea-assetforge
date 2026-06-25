@@ -10,11 +10,12 @@ Do not make travel, teleport, quest, inventory, progression, or unlock behavior 
 
 ## Current Implementation Status
 
-- Blueprint asset shell exists at `/Game/Aerathea/Blueprints/Props/BP_AET_Portal_A01`.
+- Blueprint asset exists at `/Game/Aerathea/Blueprints/Props/BP_AET_Portal_A01` and is reparented to `AAETPortalActor`.
 - `SM_AET_PortalArch_A01` exists at `/Game/Aerathea/Props/Portal/SM_AET_PortalArch_A01`.
-- `L_Aerathea_Startup` currently uses placed production mesh actors `AET_PROD_PortalArch_A01` and `AET_PROD_PortalCore_Aetherium_A01`.
-- Behavior components, portal state functions, interaction volume, VFX/audio hooks, and server-authoritative use request handling are still pending.
-- The current arch mesh is an OBJ/FBX fallback generated while Blender is blocked locally; replace with approved Blender source before final art signoff.
+- `L_Aerathea_Startup` currently uses `AET_PROD_Portal_A01`, a placed `AAETPortalActor` review actor with imported arch and core visuals.
+- C++ behavior scaffolding exists for portal state, overlap tracking, and server-authoritative use request gating.
+- Final VFX/audio hooks, destination data, traversal rules, and tuned Blueprint child components remain pending.
+- The current arch mesh has Blender source and FBX export. Treat it as production-review source, not final art polish.
 
 ## Source References
 
@@ -61,7 +62,7 @@ Before building the final Blueprint actor, confirm:
 - Material slot count is 2 target, 3 maximum only if emissive inserts require it.
 - Arch materials are assigned and preserve chunky stone, dark iron, brass, and restrained Aetherium language.
 
-If the mesh is not imported, the Blueprint may be scaffolded with a temporary editor-only placeholder, but the slice is blocked from final validation, map replacement, collision approval, aperture alignment, and performance signoff.
+The mesh is imported and the startup validator passes. Final signoff still requires visual inspection, final materials/VFX/audio, LOD review, collision review, and approved traversal rules.
 
 ## Blueprint Components
 

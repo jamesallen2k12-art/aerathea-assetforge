@@ -21,6 +21,9 @@ Saved/
 __pycache__/
 *.py[cod]
 
+# DCC editor backups
+*.blend1
+
 # OS/filesystem noise
 .DS_Store
 Thumbs.db

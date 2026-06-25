@@ -45,10 +45,16 @@ The initial controlled Aerathea test scene exists in:
 
 Current verified contents:
 
-- Grounded test area.
+- 5x5 production ground-tile review area using `SM_AET_ModularGroundTile_A01`.
 - Player, gnome, and minotaur scale markers.
-- Portal-arch blockout with restrained Aetherium glow core.
-- Target-dummy blockout.
+- Production target dummy using `SM_AET_TargetDummy_A01`.
+- Production portal review actor using `AAETPortalActor`, imported `SM_AET_PortalArch_A01`, and restrained Aetherium core material.
+- Mekgineer workshop crate using `SM_MKG_WorkshopPropCrate_A01`.
+- Gnome armory review props:
+  - `SM_MKG_AetherKnife_A01`
+  - `SM_MKG_AetherCoreUnit_A01`
+  - `SM_MKG_SparkPistol_A01`
+  - `SM_MKG_AetheriumGrenade_A01`
 - Directional light, sky light, overview camera, and scene label.
 - Base materials:
   - `M_AET_Stone_Handpainted_A01`
@@ -60,7 +66,8 @@ Current verified contents:
 Validation:
 
 - `Tools/Unreal/bootstrap_startup_scene.py` builds/saves the startup scene.
-- `Tools/Unreal/validate_startup_scene.py` verifies 6 expected assets and 14 expected actors.
+- `Tools/Unreal/import_first_slice_assets.py` imports Blender-authored FBX exports and updates the startup scene.
+- `Tools/Unreal/validate_startup_scene.py` verifies 19 expected assets, 15 expected actor labels, 25 production ground tiles, static mesh material slots, and the portal actor class.
 - GUI map check result: `0 Error(s), 0 Warning(s)`.
 
 Do not run `MAP CHECK` from the headless Python commandlet on UE 5.8; that path produced a native commandlet crash in `UEditorEngine::Map_Check`. Use the validator for headless checks and the GUI editor for map check.
@@ -82,30 +89,26 @@ Production backlog:
 
 Current first-slice status:
 
-- Concept reference sheets generated for the first target dummy, portal arch, portal blueprint states, Mekgineer crate, and modular ground tile.
-- `SM_AET_TargetDummy_A01` has a dedicated modeling handoff and is the first DCC production candidate.
-- `SM_AET_TargetDummy_A01` build/import is blocked on an approved DCC mesh; do not substitute a procedural placeholder for the production asset.
-- `SM_AET_PortalArch_A01`, `SM_AET_ModularGroundTile_A01`, and `SM_MKG_WorkshopPropCrate_A01` now have dedicated modeling handoffs.
-- `BP_AET_Portal_A01` has an implementation handoff, but final Blueprint validation is blocked until `SM_AET_PortalArch_A01` is imported.
-- `KIT_MKG_Armory_A01` has a kit package and child asset intake from `Gnome Armory.png`.
-- Remaining first-slice concept references still need final visual approval before their DCC handoff files are treated as locked.
+- Blender 5.1.1 starts after downgrading Fedora `materialx` to `1.39.4-5.fc44`.
+- Blender `.blend` sources and FBX exports exist for the first-slice target dummy, portal arch, modular ground tile, Mekgineer crate, and four Gnome armory child assets.
+- `SM_AET_TargetDummy_A01`, `SM_AET_PortalArch_A01`, `SM_AET_ModularGroundTile_A01`, and `SM_MKG_WorkshopPropCrate_A01` are imported to Unreal and placed in the startup scene.
+- `BP_AET_Portal_A01` is reparented to `AAETPortalActor`; the startup review actor uses the native C++ portal class to avoid a UE 5.8 Linux commandlet crash in Blueprint object placement.
+- The startup scene includes a review camera, PlayerStart, fill light, and `AAETReviewCameraDirector` so X11/Vulkan game-mode captures use a stable production-asset view.
+- `SM_MKG_AetherKnife_A01`, `SM_MKG_AetherCoreUnit_A01`, `SM_MKG_SparkPistol_A01`, and `SM_MKG_AetheriumGrenade_A01` have production packages, modeling handoffs, Blender sources, FBX exports, Unreal imports, startup placements, and passing validation.
+- `KIT_MKG_Armory_A01`, `KIT_DWR_Armory_A01`, `KIT_ELV_Armory_A01`, `KIT_DEL_Armory_A01`, `KIT_ORC_Arsenal_A01`, `KIT_MIN_Arsenal_A01`, and `KIT_DKH_FieldGear_A01` have child intake and/or kit production packages ready.
+- `SK_GNM_Base_A01` has the first race body production package ready.
 - The wider `ASSET CONCEPTS` folder contains 289 PNG source concept files. Some are collages/catalogs, so the final asset count is higher than 289 after child-asset expansion.
 
 Next priority order:
 
-1. Approve or revise the generated first-slice concept references:
-   - `SM_AET_TargetDummy_A01`
-   - `SM_AET_PortalArch_A01`
-   - `BP_AET_Portal_A01`
-   - `SM_MKG_WorkshopPropCrate_A01`
-   - `SM_AET_ModularGroundTile_A01`
-2. Build/import `SM_AET_TargetDummy_A01` as the first production mesh and replace the startup blockout.
-3. Build/import `SM_AET_PortalArch_A01`, then create `BP_AET_Portal_A01` around it.
-4. Build/import `SM_AET_ModularGroundTile_A01` and replace or supplement the startup ground plane.
-5. Build/import `SM_MKG_WorkshopPropCrate_A01` for the first Mekgineer prop language test.
-6. Validate each asset with collision, material slot count, LOD0-LOD3 plan, and map check.
-7. Add a simple player-start/camera review flow once the first meshes exist.
-8. Continue collage-aware intake on `ASSET CONCEPTS`, starting with the remaining armory sheets after `Gnome Armory.png`.
+1. Create remaining Gnome armory child production packages from `KIT_MKG_Armory_A01`.
+2. Create priority child packages from the Dwarven, Elven, Dark Elven, Orc, Minotaur, and Drakhar kit packages.
+3. Create `SK_GNM_Base_A01` concept sheet/modeling handoff, then build the first gnome body source mesh and skeleton.
+4. Implement final `BP_AET_Portal_A01` trigger/VFX/audio/destination behavior after portal gameplay rules are approved.
+5. Add `BP_AET_TargetDummy_A01` behavior after combat/damage test rules are approved.
+6. Create the first settlement modular package, either `SM_AET_Palisade_A01` or `SM_AET_House_A01`.
+7. Create the first creature package, likely `SK_CRE_Gryphon_A01`.
+8. Continue collage-aware intake on the remaining `ASSET CONCEPTS` categories.
 
 ## First Asset Production Rule
 

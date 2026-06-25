@@ -6,7 +6,7 @@
 - Asset type: Static Mesh
 - World: Aerathea
 - Category: Training prop / combat-readability test prop
-- Current status: Source OBJ/FBX generated, imported to Unreal, startup blockout replaced, validation passing; replace fallback mesh with approved Blender source before final art signoff
+- Current status: Blender source and FBX generated, imported to Unreal, startup blockout replaced, validation passing; final materials, LODs, collision, and visual signoff still pending
 - Working selected direction: Rugged militia training dummy with chunky timber frame, wrapped straw core, patched leather hit zones, dark-iron bracing, and painted blue Aetherium scoring marks.
 
 This asset replaces the current target-dummy blockout in `L_Aerathea_Startup` after concept approval and modeling.

@@ -33,7 +33,7 @@ Batch IDs should use `ACIQ-P##_NN`, where `P##` matches the priority row below a
 
 | Priority | Queue area | Scope from manifest/backlog | First scheduling target | Output artifact per batch | Dependency notes |
 | ---: | --- | --- | --- | --- | --- |
-| 1 | Armory and gear | 13 armory/gear source concepts, including faction armories, arsenals, relic gear, and workshop gear | Continue from existing `KIT_MKG_Armory_A01`; then schedule Dwarven, Elven, Dark Elven, Orc, Minotaur, Drakhar, Anubisath/Sutekh, Valar, and Common kits | Kit-level production package plus `CHILD_ASSET_INTAKE.md` for each collage-heavy armory sheet | Gnome armory is already seeded; individual armor modules wait for race body fit rules |
+| 1 | Armory and gear | 13 armory/gear source concepts, including faction armories, arsenals, relic gear, and workshop gear | Continue child packages from `KIT_MKG_Armory_A01`, `KIT_DWR_Armory_A01`, `KIT_ELV_Armory_A01`, `KIT_DEL_Armory_A01`, `KIT_ORC_Arsenal_A01`, `KIT_MIN_Arsenal_A01`, and `KIT_DKH_FieldGear_A01`; then schedule Anubisath/Sutekh, Valar, and Common kits | Kit-level production package plus `CHILD_ASSET_INTAKE.md` for each collage-heavy armory sheet | Seven armory/field-gear kits are seeded; individual armor modules wait for race body fit rules |
 | 2 | Race body/style | 57 character/NPC/class sources plus approved race anchors | Start with gnome base body/style because startup scale and Mekgineer gear already exist; then Dwarves, Elves, Dark Elves, Orcs, Minotaurs, Drakhar, Valar, and Anubisath/Sutekh bodies/NPCs | Race body/style sheet package with proportions, material language, starter outfit rules, rig notes, and Unreal import plan | Required before wearable armor, portrait finalization, and Mek pilot fit |
 | 3 | Settlement/building | 66 building, settlement, and environment concepts | Start with `SM_AET_Palisade_A01` or `SM_AET_House_A01`; then common settlement anchors before faction buildings | Modular building kit intake brief or production package with child module list | Exterior shell and material rules should precede matching interiors |
 | 4 | Creature/mount | 45 creature/mount concepts | Start with `SK_CRE_Gryphon_A01`; then Hippogryph, Manticore, Dragon variants, and Dwarf riding yak | Creature family intake package with base anatomy, variant matrix, animation list, collision, LOD, and material plan | Dragon and raid-boss variants wait until family rules and aggressive LOD policy are approved |
@@ -52,7 +52,7 @@ Batch IDs should use `ACIQ-P##_NN`, where `P##` matches the priority row below a
 - Group children into weapons, shields, armor pieces, tools, backpacks, relics, power cores, displays, and outfit configurations.
 - Use `KIT_<Faction>_Armory_A##` for kit-level documentation where an established faction code exists.
 - Create child packages only after the kit breakdown, material set, scale rules, sockets, and attachment rules are recorded.
-- Existing seed: `docs/assets/kits/KIT_MKG_Armory_A01/` covers `Gnome Armory.png` at kit and child-intake level; schedule its child packages before duplicating the same work elsewhere.
+- Existing seeded kits: `KIT_MKG_Armory_A01`, `KIT_DWR_Armory_A01`, `KIT_ELV_Armory_A01`, `KIT_DEL_Armory_A01`, `KIT_ORC_Arsenal_A01`, `KIT_MIN_Arsenal_A01`, and `KIT_DKH_FieldGear_A01`. Schedule priority child packages from those kits before duplicating the same work elsewhere.
 
 ### Race Body And Style
 

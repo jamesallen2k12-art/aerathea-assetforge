@@ -1,3 +1,4 @@
+import math
 from pathlib import Path
 
 import unreal
@@ -30,6 +31,26 @@ ASSETS = [
         "source": ROOT / "SourceAssets/Exports/Props/Mekgineer/SM_MKG_WorkshopPropCrate_A01/SM_MKG_WorkshopPropCrate_A01.fbx",
         "destination": "/Game/Aerathea/Props/Mekgineer",
     },
+    {
+        "name": "SM_MKG_AetherKnife_A01",
+        "source": ROOT / "SourceAssets/Exports/Kits/Mekgineer/Armory/SM_MKG_AetherKnife_A01/SM_MKG_AetherKnife_A01.fbx",
+        "destination": "/Game/Aerathea/Weapons/Mekgineer",
+    },
+    {
+        "name": "SM_MKG_AetherCoreUnit_A01",
+        "source": ROOT / "SourceAssets/Exports/Kits/Mekgineer/Armory/SM_MKG_AetherCoreUnit_A01/SM_MKG_AetherCoreUnit_A01.fbx",
+        "destination": "/Game/Aerathea/Props/Mekgineer/Armory",
+    },
+    {
+        "name": "SM_MKG_SparkPistol_A01",
+        "source": ROOT / "SourceAssets/Exports/Kits/Mekgineer/Armory/SM_MKG_SparkPistol_A01/SM_MKG_SparkPistol_A01.fbx",
+        "destination": "/Game/Aerathea/Weapons/Mekgineer",
+    },
+    {
+        "name": "SM_MKG_AetheriumGrenade_A01",
+        "source": ROOT / "SourceAssets/Exports/Kits/Mekgineer/Armory/SM_MKG_AetheriumGrenade_A01/SM_MKG_AetheriumGrenade_A01.fbx",
+        "destination": "/Game/Aerathea/Props/Mekgineer/Armory",
+    },
 ]
 
 REPLACED_BLOCKOUT_LABELS = {
@@ -40,6 +61,15 @@ REPLACED_BLOCKOUT_LABELS = {
     "AET_BOOT_PortalCore_Aetherium_A01",
     "AET_BOOT_TargetDummy_Blockout_A01",
     "AET_BOOT_TargetDummy_Crossbar_A01",
+    "AET_PROD_PortalArch_A01",
+    "AET_PROD_PortalCore_Aetherium_A01",
+}
+RUNTIME_REVIEW_HIDDEN_LABELS = {
+    "AET_BOOT_PlayerScale_180cm",
+    "AET_BOOT_GnomeScale_110cm",
+    "AET_BOOT_MinotaurScale_270cm",
+    "AET_BOOT_Camera_Overview",
+    "AET_BOOT_Label_StyleTarget",
 }
 
 
@@ -219,11 +249,35 @@ def assign_project_materials(mesh, project_materials):
 def ensure_portal_blueprint():
     ensure_directory(BLUEPRINT_PATH)
     asset_path = "{}/BP_AET_Portal_A01".format(BLUEPRINT_PATH)
+    parent_type = getattr(unreal, "AETPortalActor", None)
+    if parent_type is None:
+        raise RuntimeError("Compiled AAETPortalActor class is not available to Unreal Python")
+    parent_class = parent_type.static_class() if hasattr(parent_type, "static_class") else parent_type
+
     if unreal.EditorAssetLibrary.does_asset_exist(asset_path):
-        return unreal.load_asset(asset_path)
+        blueprint = unreal.load_asset(asset_path)
+        current_parent = unreal.BlueprintEditorLibrary.get_blueprint_parent_class(blueprint)
+        current_parent_name = current_parent.get_name() if current_parent is not None else "None"
+        parent_class_name = parent_class.get_name()
+        if current_parent != parent_class and current_parent_name != parent_class_name:
+            unreal.log_warning(
+                "Reparenting {} from {} to AAETPortalActor.".format(
+                    asset_path,
+                    current_parent_name,
+                )
+            )
+            unreal.BlueprintEditorLibrary.reparent_blueprint(blueprint, parent_class)
+            try:
+                unreal.BlueprintEditorLibrary.compile_blueprint(blueprint)
+            except Exception as exc:
+                unreal.log_warning("Could not compile portal Blueprint immediately: {}".format(exc))
+            unreal.EditorAssetLibrary.save_asset(asset_path)
+            return blueprint
+        unreal.log("Portal Blueprint already parented to {}.".format(current_parent_name))
+        return blueprint
 
     factory = unreal.BlueprintFactory()
-    factory.set_editor_property("parent_class", unreal.Actor)
+    factory.set_editor_property("parent_class", parent_class)
     blueprint = unreal.AssetToolsHelpers.get_asset_tools().create_asset(
         asset_name="BP_AET_Portal_A01",
         package_path=BLUEPRINT_PATH,
@@ -232,8 +286,12 @@ def ensure_portal_blueprint():
     )
     if blueprint is None:
         raise RuntimeError("Failed to create {}".format(asset_path))
+    try:
+        unreal.BlueprintEditorLibrary.compile_blueprint(blueprint)
+    except Exception as exc:
+        unreal.log_warning("Could not compile portal Blueprint immediately: {}".format(exc))
     unreal.EditorAssetLibrary.save_asset(asset_path)
-    unreal.log("Created portal Blueprint asset shell: {}".format(asset_path))
+    unreal.log("Created portal Blueprint from AAETPortalActor: {}".format(asset_path))
     return blueprint
 
 
@@ -242,40 +300,280 @@ def tag_actor(actor):
     return actor
 
 
-def clear_replaced_startup_actors():
-    for actor in list(unreal.EditorLevelLibrary.get_all_level_actors()):
+def all_level_actors():
+    actor_subsystem = unreal.get_editor_subsystem(unreal.EditorActorSubsystem)
+    return list(actor_subsystem.get_all_level_actors())
+
+
+def find_actor_by_label(label):
+    for actor in all_level_actors():
+        if actor.get_actor_label() == label:
+            return actor
+    return None
+
+
+def portal_actor_spawn_class():
+    parent_type = getattr(unreal, "AETPortalActor", None)
+    if parent_type is None:
+        raise RuntimeError("Compiled AAETPortalActor class is not available to Unreal Python")
+    return parent_type
+
+
+def set_actor_transform(actor, location, rotation=None, scale=None):
+    rotation = rotation or unreal.Rotator(0, 0, 0)
+    scale = scale or unreal.Vector(1, 1, 1)
+    try:
+        actor.set_actor_location(location, False, True)
+    except Exception:
+        actor.set_actor_location(location, False, False)
+    try:
+        actor.set_actor_rotation(rotation, False)
+    except Exception:
+        pass
+    actor.set_actor_scale3d(scale)
+
+
+def review_rotator(pitch, yaw, roll=0.0):
+    # Unreal's Python Rotator constructor maps arguments as roll, pitch, yaw.
+    return unreal.Rotator(roll, pitch, yaw)
+
+
+def look_at_rotation(source, target):
+    dx = target.x - source.x
+    dy = target.y - source.y
+    dz = target.z - source.z
+    yaw = math.degrees(math.atan2(dy, dx))
+    horizontal = math.sqrt((dx * dx) + (dy * dy))
+    pitch = math.degrees(math.atan2(dz, horizontal))
+    return review_rotator(pitch, yaw)
+
+
+def activate_actor_for_review(actor):
+    try:
+        actor.set_actor_hidden_in_game(False)
+    except Exception:
+        pass
+    try:
+        actor.set_is_temporarily_hidden_in_editor(False)
+    except Exception:
+        pass
+    try:
+        for component in actor.get_components_by_class(unreal.PrimitiveComponent):
+            try:
+                component.set_visibility(True, True)
+            except Exception:
+                pass
+            try:
+                component.set_hidden_in_game(False, True)
+            except Exception:
+                pass
+
+            collision_profile = getattr(component, "set_collision_profile_name", None)
+            if callable(collision_profile):
+                try:
+                    component.set_collision_profile_name("BlockAll")
+                except Exception:
+                    pass
+    except Exception:
+        pass
+    return actor
+
+
+def hide_actor_for_runtime_review(actor):
+    try:
+        actor.set_actor_hidden_in_game(True)
+    except Exception:
+        pass
+    try:
+        actor.set_is_temporarily_hidden_in_editor(True)
+    except Exception:
+        pass
+    try:
+        for component in actor.get_components_by_class(unreal.PrimitiveComponent):
+            try:
+                component.set_visibility(False, True)
+            except Exception:
+                pass
+            try:
+                component.set_hidden_in_game(True, True)
+            except Exception:
+                pass
+    except Exception:
+        pass
+    return actor
+
+
+def retire_actor(actor):
+    old_label = actor.get_actor_label()
+    if old_label.startswith("AET_RETIRED_"):
+        return
+    actor.set_actor_label("AET_RETIRED_{}".format(old_label))
+    actor.set_actor_hidden_in_game(True)
+    try:
+        actor.set_is_temporarily_hidden_in_editor(True)
+    except Exception:
+        pass
+    try:
+        actor.set_actor_location(unreal.Vector(0, 0, -100000), False, True)
+    except Exception:
+        pass
+    try:
+        actor.set_actor_scale3d(unreal.Vector(0.01, 0.01, 0.01))
+    except Exception:
+        pass
+    try:
+        for component in actor.get_components_by_class(unreal.PrimitiveComponent):
+            component.set_visibility(False, True)
+    except Exception:
+        pass
+    unreal.log("Retired startup actor without deleting it: {}".format(old_label))
+
+
+def retire_replaced_startup_actors(desired_labels):
+    desired = set(desired_labels)
+    for actor in all_level_actors():
         label = actor.get_actor_label()
         tags = actor.get_editor_property("tags")
-        if label in REPLACED_BLOCKOUT_LABELS or unreal.Name(FIRST_SLICE_TAG) in tags:
-            unreal.EditorLevelLibrary.destroy_actor(actor)
+        if label in REPLACED_BLOCKOUT_LABELS:
+            retire_actor(actor)
+        elif unreal.Name(FIRST_SLICE_TAG) in tags and label not in desired:
+            retire_actor(actor)
 
 
 def spawn_static_mesh(label, mesh, location, rotation=None, scale=None, material=None):
     rotation = rotation or unreal.Rotator(0, 0, 0)
     scale = scale or unreal.Vector(1, 1, 1)
-    actor = unreal.EditorLevelLibrary.spawn_actor_from_class(
-        unreal.StaticMeshActor,
-        location,
-        rotation,
-    )
-    actor.set_actor_label(label)
-    actor.set_actor_scale3d(scale)
+    actor = find_actor_by_label(label)
+    if actor is None:
+        actor = unreal.EditorLevelLibrary.spawn_actor_from_class(
+            unreal.StaticMeshActor,
+            location,
+            rotation,
+        )
+        actor.set_actor_label(label)
+    else:
+        set_actor_transform(actor, location, rotation, scale)
     tag_actor(actor)
 
     component = actor.get_component_by_class(unreal.StaticMeshComponent)
     if component is None:
-        raise RuntimeError("Static mesh actor has no StaticMeshComponent: {}".format(label))
+        retire_actor(actor)
+        actor = unreal.EditorLevelLibrary.spawn_actor_from_class(
+            unreal.StaticMeshActor,
+            location,
+            rotation,
+        )
+        actor.set_actor_label(label)
+        tag_actor(actor)
+        component = actor.get_component_by_class(unreal.StaticMeshComponent)
+        if component is None:
+            raise RuntimeError("Static mesh actor has no StaticMeshComponent: {}".format(label))
+    set_actor_transform(actor, location, rotation, scale)
+    activate_actor_for_review(actor)
     component.set_static_mesh(mesh)
     if material is not None:
         component.set_material(0, material)
     return actor
 
 
-def update_startup_level(meshes, materials):
+def spawn_blueprint(label, blueprint, location, rotation=None, scale=None):
+    rotation = rotation or unreal.Rotator(0, 0, 0)
+    scale = scale or unreal.Vector(1, 1, 1)
+    actor = find_actor_by_label(label)
+    spawn_class = portal_actor_spawn_class()
+    if actor is None:
+        actor = unreal.EditorLevelLibrary.spawn_actor_from_class(spawn_class, location, rotation)
+    elif "BP_AET_Portal_A01" not in actor.get_class().get_name() and "AETPortalActor" not in actor.get_class().get_name():
+        retire_actor(actor)
+        actor = unreal.EditorLevelLibrary.spawn_actor_from_class(spawn_class, location, rotation)
+    if actor is None:
+        raise RuntimeError("Failed to spawn portal actor: {}".format(label))
+    actor.set_actor_label(label)
+    set_actor_transform(actor, location, rotation, scale)
+    activate_actor_for_review(actor)
+    tag_actor(actor)
+    return actor
+
+
+def spawn_actor(label, actor_class, location, rotation=None, scale=None):
+    rotation = rotation or unreal.Rotator(0, 0, 0)
+    scale = scale or unreal.Vector(1, 1, 1)
+    actor = find_actor_by_label(label)
+    if actor is None or actor.get_class() != actor_class.static_class():
+        if actor is not None:
+            retire_actor(actor)
+        actor = unreal.EditorLevelLibrary.spawn_actor_from_class(actor_class, location, rotation)
+    if actor is None:
+        raise RuntimeError("Failed to spawn actor: {}".format(label))
+    actor.set_actor_label(label)
+    set_actor_transform(actor, location, rotation, scale)
+    activate_actor_for_review(actor)
+    tag_actor(actor)
+    return actor
+
+
+def ensure_review_lighting():
+    directional = find_actor_by_label("AET_BOOT_KeyLight_Directional")
+    if directional is None and getattr(unreal, "DirectionalLight", None) is not None:
+        directional = unreal.EditorLevelLibrary.spawn_actor_from_class(
+            unreal.DirectionalLight,
+            unreal.Vector(-260, -420, 780),
+            review_rotator(-38.0, 42.0),
+        )
+        directional.set_actor_label("AET_BOOT_KeyLight_Directional")
+    if directional is not None:
+        set_actor_transform(
+            directional,
+            unreal.Vector(-260, -420, 780),
+            review_rotator(-38.0, 42.0),
+        )
+        activate_actor_for_review(directional)
+        component = directional.get_component_by_class(unreal.DirectionalLightComponent)
+        if component is not None:
+            safe_set(component, "intensity", 5.0)
+            safe_set(component, "light_color", unreal.Color(255, 236, 205, 255))
+
+    sky_light = find_actor_by_label("AET_BOOT_SkyLight")
+    if sky_light is None and getattr(unreal, "SkyLight", None) is not None:
+        sky_light = unreal.EditorLevelLibrary.spawn_actor_from_class(
+            unreal.SkyLight,
+            unreal.Vector(0, 0, 460),
+            review_rotator(0.0, 0.0),
+        )
+        sky_light.set_actor_label("AET_BOOT_SkyLight")
+    if sky_light is not None:
+        set_actor_transform(sky_light, unreal.Vector(0, 0, 460), review_rotator(0.0, 0.0))
+        activate_actor_for_review(sky_light)
+        component = sky_light.get_component_by_class(unreal.SkyLightComponent)
+        if component is not None:
+            safe_set(component, "intensity", 1.5)
+
+
+def update_startup_level(meshes, materials, portal_blueprint):
     if not unreal.EditorLevelLibrary.load_level(LEVEL_PATH):
         raise RuntimeError("Failed to load level: {}".format(LEVEL_PATH))
 
-    clear_replaced_startup_actors()
+    desired_labels = [
+        "AET_PROD_TargetDummy_A01",
+        "AET_PROD_Portal_A01",
+        "AET_PROD_WorkshopCrate_A01",
+        "AET_PROD_MKG_AetherKnife_A01",
+        "AET_PROD_MKG_SparkPistol_A01",
+        "AET_PROD_MKG_AetherCoreUnit_A01",
+        "AET_PROD_MKG_AetheriumGrenade_A01",
+        "AET_PROD_PlayerStart_Review_A01",
+        "AET_PROD_Camera_Review_A01",
+        "AET_PROD_ReviewCameraDirector_A01",
+        "AET_PROD_ReviewFillLight_A01",
+    ]
+    for ix in range(5):
+        for iy in range(5):
+            desired_labels.append("AET_PROD_GroundTile_A01_R{}_C{}".format(iy + 1, ix + 1))
+    retire_replaced_startup_actors(desired_labels)
+    for label in RUNTIME_REVIEW_HIDDEN_LABELS:
+        actor = find_actor_by_label(label)
+        if actor is not None:
+            hide_actor_for_runtime_review(actor)
 
     tile = meshes["SM_AET_ModularGroundTile_A01"]
     for ix, x in enumerate(range(-800, 801, 400)):
@@ -291,9 +589,9 @@ def update_startup_level(meshes, materials):
         meshes["SM_AET_TargetDummy_A01"],
         unreal.Vector(-50, 350, 0),
     )
-    spawn_static_mesh(
-        "AET_PROD_PortalArch_A01",
-        meshes["SM_AET_PortalArch_A01"],
+    spawn_blueprint(
+        "AET_PROD_Portal_A01",
+        portal_blueprint,
         unreal.Vector(350, 0, 0),
     )
     spawn_static_mesh(
@@ -302,16 +600,81 @@ def update_startup_level(meshes, materials):
         unreal.Vector(-235, 260, 0),
     )
 
-    sphere = unreal.load_asset("/Engine/BasicShapes/Sphere.Sphere")
-    if sphere is None:
-        raise RuntimeError("Failed to load Engine sphere for portal core")
     spawn_static_mesh(
-        "AET_PROD_PortalCore_Aetherium_A01",
-        sphere,
-        unreal.Vector(350, -18, 210),
-        scale=unreal.Vector(1.05, 0.12, 1.55),
-        material=materials["M_AET_AetheriumGlow_Blue_A01"],
+        "AET_PROD_MKG_AetherKnife_A01",
+        meshes["SM_MKG_AetherKnife_A01"],
+        unreal.Vector(-395, 190, 42),
+        rotation=review_rotator(0.0, 18.0),
     )
+    spawn_static_mesh(
+        "AET_PROD_MKG_SparkPistol_A01",
+        meshes["SM_MKG_SparkPistol_A01"],
+        unreal.Vector(-465, 190, 50),
+        rotation=review_rotator(0.0, -15.0),
+    )
+    spawn_static_mesh(
+        "AET_PROD_MKG_AetherCoreUnit_A01",
+        meshes["SM_MKG_AetherCoreUnit_A01"],
+        unreal.Vector(-360, 270, 28),
+        rotation=review_rotator(0.0, 12.0),
+    )
+    spawn_static_mesh(
+        "AET_PROD_MKG_AetheriumGrenade_A01",
+        meshes["SM_MKG_AetheriumGrenade_A01"],
+        unreal.Vector(-455, 275, 24),
+        rotation=review_rotator(0.0, -10.0),
+    )
+
+    review_location = unreal.Vector(-2350, 1600, 1280)
+    review_target = unreal.Vector(-70, 160, 110)
+    review_rotation = look_at_rotation(review_location, review_target)
+    player_start_class = getattr(unreal, "PlayerStart", None)
+    if player_start_class is None:
+        unreal.log_warning("PlayerStart class is not available; skipping review player start.")
+    else:
+        spawn_actor(
+            "AET_PROD_PlayerStart_Review_A01",
+            player_start_class,
+            review_location,
+            review_rotation,
+        )
+
+    camera_actor = spawn_actor(
+        "AET_PROD_Camera_Review_A01",
+        unreal.CameraActor,
+        review_location,
+        review_rotation,
+    )
+    camera_component = camera_actor.get_component_by_class(unreal.CameraComponent)
+    if camera_component is not None:
+        safe_set(camera_component, "field_of_view", 70.0)
+        safe_set(camera_component, "auto_activate", True)
+    safe_set(camera_actor, "auto_activate_for_player", unreal.AutoReceiveInput.PLAYER0)
+    safe_set(camera_actor, "tags", [unreal.Name("AET_REVIEW_CAMERA")])
+
+    review_director_class = getattr(unreal, "AETReviewCameraDirector", None)
+    if review_director_class is None:
+        unreal.log_warning("AETReviewCameraDirector class is not available; skipping runtime review camera director.")
+    else:
+        spawn_actor(
+            "AET_PROD_ReviewCameraDirector_A01",
+            review_director_class,
+            unreal.Vector(-900, -80, 220),
+            review_rotation,
+        )
+
+    fill_light = spawn_actor(
+        "AET_PROD_ReviewFillLight_A01",
+        unreal.PointLight,
+        unreal.Vector(-160, -180, 520),
+    )
+    light_component = fill_light.get_component_by_class(unreal.PointLightComponent)
+    if light_component is not None:
+        safe_set(light_component, "intensity", 350000.0)
+        safe_set(light_component, "attenuation_radius", 2200.0)
+        safe_set(light_component, "light_color", unreal.Color(180, 210, 255, 255))
+
+    ensure_review_lighting()
 
     if not unreal.EditorLevelLibrary.save_current_level():
         raise RuntimeError("Failed to save current level")
@@ -327,8 +690,8 @@ def main():
         assign_project_materials(mesh, materials)
         meshes[entry["name"]] = mesh
 
-    ensure_portal_blueprint()
-    update_startup_level(meshes, materials)
+    portal_blueprint = ensure_portal_blueprint()
+    update_startup_level(meshes, materials, portal_blueprint)
     unreal.log("Aerathea first-slice import complete.")
 
 
