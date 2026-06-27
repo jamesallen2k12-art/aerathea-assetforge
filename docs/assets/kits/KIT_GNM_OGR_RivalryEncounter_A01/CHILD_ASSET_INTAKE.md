@@ -48,7 +48,7 @@ This intake routes the 2026-06-27 Gnome-vs-Ogre source concepts into reusable pr
 | `SK_OGR_Necromancer_A01` | Skeletal Mesh class package | `OgreNecromancer.png`, `OgreNecropolis.png`, Ogre class source set | Package ready | Ogre necromancer with grave lantern, skull trophies, green-black VFX sockets, and necropolis material direction |
 | `SM_OGR_CairnBattleGate_A01` | Static Mesh kit | gate and battlefield framing in encounter sheets | First-pass DCC/Unreal review import complete | Ogre cairn gate/wall dressing scaled for 10-11 ft Ogres |
 | `SM_OGR_CrudeTekPylon_A01` | Static Mesh/VFX hook | Ogre Teknomancer pressure references | Package ready | Large unstable power pylon or coil for encounter objectives |
-| `BP_GNM_OGR_BattlefieldEncounter_A01` | Blueprint Actor | full source group | Blocked | Assembly Blueprint after first Mek, Ogre, shield, and gate children exist |
+| `BP_GNM_OGR_BattlefieldEncounter_A01` | Blueprint Actor | full source group | Implementation handoff ready | Coordinator Blueprint contract for required imported children and optional pylon/caster/Manticore branches |
 | `SK_CRE_Manticore_Interrupt_A01` | Creature variant reference | `GnomevsOgreandManticore8.png` | Planning package ready | DCC waits for base `SK_CRE_Manticore_A01` approval/import |
 
 ## First Child Recommendation
@@ -65,7 +65,7 @@ Start with `BP_GNM_HeavyMekShieldwall_A01` as a controlled technical concept pac
 - `KIT_GNM_IonaSiegebreaker_A01` should own named hero-pilot and hero heavy Mek decisions.
 - `SK_OGR_Base_A01` should own Ogre base body proportions before final `SK_OGR_Teknomancer_A01` sculpt.
 - `SM_OGR_CairnBattleGate_A01` provides the first imported Ogre gate review module; `KIT_OGR_CairnFortifications_A01` should own expanded reusable wall, tower, and gate variants when that package is created.
-- `SK_CRE_Manticore_A01` must exist before the Manticore interrupt is more than a reference.
+- `SK_CRE_Manticore_A01` must be approved/imported before the Manticore interrupt is more than a reference branch.
 
 ## Quality Gate Checklist
 

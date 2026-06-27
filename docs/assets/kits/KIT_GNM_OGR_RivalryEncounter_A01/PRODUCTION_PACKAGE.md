@@ -148,7 +148,8 @@ Use 2K texture sets for common characters and props. Use 4K only for a named her
 - `SM_OGR_CrudeTekPylon_A01` has a production package, modeling handoff, build/import status, material plan, socket plan, collision plan, LOD plan, and future Blueprint state notes ready; DCC build waits for approval.
 - `SK_CRE_Manticore_A01` has a base production package, source concept intake, modeling handoff, build/import status, skeleton/proportion plan, material plan, LOD plan, collision plan, and sockets ready for approval.
 - `SK_CRE_Manticore_Interrupt_A01` has an encounter-variant production package, modeling handoff, and build/import status ready; DCC build waits for base `SK_CRE_Manticore_A01` approval/import.
-- Current approved sequence continues with `BP_GNM_OGR_BattlefieldEncounter_A01` and final authored shieldwall Niagara art.
+- `BP_GNM_OGR_BattlefieldEncounter_A01` has a production package, implementation handoff, build/import status, dependency contract, phase-state plan, actor slots, collision volumes, variables, events, and optional-branch gates ready; Blueprint asset not created.
+- Current approved sequence continues with final authored shieldwall Niagara art.
 
 ## Quality Gate Checklist
 
