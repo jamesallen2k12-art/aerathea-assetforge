@@ -67,11 +67,18 @@ Driven by pylon state and scalar parameters:
 - `User.PylonState`
 - `User.OverloadPercent`
 - `User.DamagePercent`
+- `User.DamageWindowAlpha`
+- `User.RepairWindowAlpha`
+- `User.DamageTraceRadius`
+- `User.RepairTraceRadius`
 - `User.bOverloaded`
 - `User.bDestroyed`
+- `User.bDamageWindowActive`
+- `User.bRepairWindowActive`
 - `User.StateColor`
 - `User.CoreWorldLocation`
 - `User.TopArcWorldLocation`
+- `User.GroundSparksWorldLocation`
 
 ## 13. Unreal Import Notes
 
@@ -81,7 +88,7 @@ Driven by pylon state and scalar parameters:
 - Native consumer: `AAETCrudeTekPylonActor`
 - Blueprint consumer: `/Game/Aerathea/Blueprints/Ogres/BP_OGR_CrudeTekPylon_A01`
 - Component: `PylonNiagara`
-- Validation: `Tools/Unreal/validate_startup_scene.py`
+- Validation: `Tools/Unreal/validate_startup_scene.py`, `Tools/Unreal/validate_gnome_ogre_gameplay_timing_traces.py`
 
 ## 14. Folder and Naming Recommendation
 

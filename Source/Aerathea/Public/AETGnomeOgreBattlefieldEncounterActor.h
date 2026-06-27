@@ -179,6 +179,24 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Aerathea|Gnome Ogre Encounter")
 	void TriggerManticoreInterrupt(AActor* ManticoreActor);
 
+	UFUNCTION(BlueprintCallable, Category = "Aerathea|Gnome Ogre Encounter|Gameplay")
+	void BeginPylonRepairWindow();
+
+	UFUNCTION(BlueprintCallable, Category = "Aerathea|Gnome Ogre Encounter|Gameplay")
+	void ApplyPylonDamageTrace(float DamageScale);
+
+	UFUNCTION(BlueprintCallable, Category = "Aerathea|Gnome Ogre Encounter|Gameplay")
+	void ApplyPylonRepairTrace(float RepairScale);
+
+	UFUNCTION(BlueprintCallable, Category = "Aerathea|Gnome Ogre Encounter|Gameplay")
+	void AdvanceBranchTiming(float DeltaSeconds);
+
+	UFUNCTION(BlueprintCallable, Category = "Aerathea|Gnome Ogre Encounter|Gameplay")
+	FVector GetPylonTraceLocation() const;
+
+	UFUNCTION(BlueprintCallable, Category = "Aerathea|Gnome Ogre Encounter|Gameplay")
+	FVector GetManticoreImpactTraceLocation() const;
+
 	UFUNCTION(BlueprintCallable, Category = "Aerathea|Gnome Ogre Encounter|Review")
 	void StartReviewPhaseSequence();
 

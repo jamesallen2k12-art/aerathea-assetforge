@@ -18,6 +18,15 @@ AAETManticoreInterruptActor::AAETManticoreInterruptActor()
 	ImpactOffset = FVector(0.0f, 0.0f, 0.0f);
 	RetreatOffset = FVector(260.0f, -130.0f, 0.0f);
 	bUseNiagara = true;
+	StalkSeconds = 1.2f;
+	TelegraphSeconds = 0.8f;
+	ImpactSeconds = 0.35f;
+	ThreatHoldSeconds = 1.1f;
+	RetreatSeconds = 1.0f;
+	InterruptTraceRadiusCm = 260.0f;
+	ImpactDamageRadiusCm = 320.0f;
+	InterruptElapsedSeconds = 0.0f;
+	bInterruptSequenceActive = false;
 
 	SceneRoot = CreateDefaultSubobject<USceneComponent>(TEXT("SceneRoot"));
 	SetRootComponent(SceneRoot);
@@ -47,6 +56,13 @@ void AAETManticoreInterruptActor::OnConstruction(const FTransform& Transform)
 	Super::OnConstruction(Transform);
 
 	SequenceProgress = FMath::Clamp(SequenceProgress, 0.0f, 1.0f);
+	StalkSeconds = FMath::Clamp(StalkSeconds, 0.05f, 20.0f);
+	TelegraphSeconds = FMath::Clamp(TelegraphSeconds, 0.05f, 20.0f);
+	ImpactSeconds = FMath::Clamp(ImpactSeconds, 0.05f, 20.0f);
+	ThreatHoldSeconds = FMath::Clamp(ThreatHoldSeconds, 0.05f, 20.0f);
+	RetreatSeconds = FMath::Clamp(RetreatSeconds, 0.05f, 20.0f);
+	InterruptTraceRadiusCm = FMath::Clamp(InterruptTraceRadiusCm, 0.0f, 1200.0f);
+	ImpactDamageRadiusCm = FMath::Clamp(ImpactDamageRadiusCm, 0.0f, 1200.0f);
 	AssignDefaultAssets();
 	UpdateInterruptLayout();
 	ApplyInterruptState();
@@ -55,6 +71,10 @@ void AAETManticoreInterruptActor::OnConstruction(const FTransform& Transform)
 void AAETManticoreInterruptActor::SetInterruptState(EAETManticoreInterruptState NewState)
 {
 	InterruptState = NewState;
+	if (InterruptState == EAETManticoreInterruptState::Hidden || InterruptState == EAETManticoreInterruptState::Retreat)
+	{
+		bInterruptSequenceActive = false;
+	}
 	ApplyInterruptState();
 }
 
@@ -65,18 +85,107 @@ void AAETManticoreInterruptActor::SetSequenceProgress(float NewSequenceProgress)
 	ApplyInterruptState();
 }
 
+void AAETManticoreInterruptActor::BeginInterruptSequence()
+{
+	InterruptElapsedSeconds = 0.0f;
+	SequenceProgress = 0.0f;
+	bInterruptSequenceActive = true;
+	InterruptState = EAETManticoreInterruptState::Stalking;
+	UpdateInterruptLayout();
+	ApplyInterruptState();
+}
+
+void AAETManticoreInterruptActor::AdvanceInterruptSequence(float DeltaSeconds)
+{
+	if (!bInterruptSequenceActive)
+	{
+		return;
+	}
+
+	const float TotalSeconds = StalkSeconds + TelegraphSeconds + ImpactSeconds + ThreatHoldSeconds + RetreatSeconds;
+	InterruptElapsedSeconds = FMath::Clamp(InterruptElapsedSeconds + FMath::Max(DeltaSeconds, 0.0f), 0.0f, TotalSeconds);
+	SequenceProgress = TotalSeconds > KINDA_SMALL_NUMBER ? FMath::Clamp(InterruptElapsedSeconds / TotalSeconds, 0.0f, 1.0f) : 1.0f;
+
+	const float TelegraphStart = StalkSeconds;
+	const float ImpactStart = TelegraphStart + TelegraphSeconds;
+	const float HoldStart = ImpactStart + ImpactSeconds;
+	const float RetreatStart = HoldStart + ThreatHoldSeconds;
+	if (InterruptElapsedSeconds < TelegraphStart)
+	{
+		InterruptState = EAETManticoreInterruptState::Stalking;
+	}
+	else if (InterruptElapsedSeconds < ImpactStart)
+	{
+		InterruptState = EAETManticoreInterruptState::Telegraph;
+	}
+	else if (InterruptElapsedSeconds < HoldStart)
+	{
+		InterruptState = EAETManticoreInterruptState::LeapImpact;
+	}
+	else if (InterruptElapsedSeconds < RetreatStart)
+	{
+		InterruptState = EAETManticoreInterruptState::ThreatHold;
+	}
+	else
+	{
+		InterruptState = EAETManticoreInterruptState::Retreat;
+		if (InterruptElapsedSeconds >= TotalSeconds)
+		{
+			bInterruptSequenceActive = false;
+		}
+	}
+
+	UpdateInterruptLayout();
+	ApplyInterruptState();
+}
+
 void AAETManticoreInterruptActor::TriggerInterrupt()
 {
 	InterruptState = EAETManticoreInterruptState::LeapImpact;
 	SequenceProgress = 0.75f;
+	InterruptElapsedSeconds = StalkSeconds + TelegraphSeconds;
+	bInterruptSequenceActive = true;
 	UpdateInterruptLayout();
 	ApplyInterruptState();
+}
+
+bool AAETManticoreInterruptActor::IsInterruptSequenceActive() const
+{
+	return bInterruptSequenceActive;
+}
+
+bool AAETManticoreInterruptActor::IsImpactWindowActive() const
+{
+	return InterruptState == EAETManticoreInterruptState::LeapImpact || InterruptState == EAETManticoreInterruptState::ThreatHold;
+}
+
+float AAETManticoreInterruptActor::GetInterruptWindowAlpha() const
+{
+	const float TotalSeconds = StalkSeconds + TelegraphSeconds + ImpactSeconds + ThreatHoldSeconds + RetreatSeconds;
+	return TotalSeconds > KINDA_SMALL_NUMBER ? FMath::Clamp(InterruptElapsedSeconds / TotalSeconds, 0.0f, 1.0f) : SequenceProgress;
+}
+
+FVector AAETManticoreInterruptActor::GetEntryTraceLocation() const
+{
+	return EntryMarker != nullptr ? EntryMarker->GetComponentLocation() : GetActorLocation() + EntryOffset;
+}
+
+FVector AAETManticoreInterruptActor::GetImpactTraceLocation() const
+{
+	return ImpactMarker != nullptr ? ImpactMarker->GetComponentLocation() : GetActorLocation() + ImpactOffset;
+}
+
+FVector AAETManticoreInterruptActor::GetRetreatTraceLocation() const
+{
+	return RetreatMarker != nullptr ? RetreatMarker->GetComponentLocation() : GetActorLocation() + RetreatOffset;
 }
 
 void AAETManticoreInterruptActor::ResetInterrupt()
 {
 	InterruptState = EAETManticoreInterruptState::Hidden;
 	SequenceProgress = 0.0f;
+	InterruptElapsedSeconds = 0.0f;
+	bInterruptSequenceActive = false;
 	UpdateInterruptLayout();
 	ApplyInterruptState();
 }
@@ -171,6 +280,7 @@ void AAETManticoreInterruptActor::ApplyInterruptState()
 		ManticoreMesh->SetScalarParameterValueOnMaterials(TEXT("InterruptState"), static_cast<float>(static_cast<uint8>(InterruptState)));
 		ManticoreMesh->SetScalarParameterValueOnMaterials(TEXT("SequenceProgress"), SequenceProgress);
 		ManticoreMesh->SetScalarParameterValueOnMaterials(TEXT("ImpactIntensity"), bImpactState ? 1.0f : 0.0f);
+		ManticoreMesh->SetScalarParameterValueOnMaterials(TEXT("InterruptWindowAlpha"), GetInterruptWindowAlpha());
 	}
 
 	if (ImpactNiagara != nullptr)
@@ -194,7 +304,12 @@ void AAETManticoreInterruptActor::ApplyInterruptState()
 
 		ImpactNiagara->SetVariableFloat(TEXT("User.InterruptState"), static_cast<float>(static_cast<uint8>(InterruptState)));
 		ImpactNiagara->SetVariableFloat(TEXT("User.SequenceProgress"), SequenceProgress);
+		ImpactNiagara->SetVariableFloat(TEXT("User.InterruptWindowAlpha"), GetInterruptWindowAlpha());
+		ImpactNiagara->SetVariableFloat(TEXT("User.InterruptTraceRadius"), InterruptTraceRadiusCm);
+		ImpactNiagara->SetVariableFloat(TEXT("User.ImpactDamageRadius"), ImpactDamageRadiusCm);
 		ImpactNiagara->SetVariableBool(TEXT("User.bImpact"), bImpactState);
+		ImpactNiagara->SetVariableBool(TEXT("User.bImpactWindowActive"), IsImpactWindowActive());
+		ImpactNiagara->SetVariableBool(TEXT("User.bInterruptSequenceActive"), bInterruptSequenceActive);
 		ImpactNiagara->SetVariableLinearColor(TEXT("User.ImpactColor"), FLinearColor(0.18f, 0.95f, 0.30f, 1.0f));
 	}
 }

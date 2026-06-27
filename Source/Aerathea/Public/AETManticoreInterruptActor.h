@@ -76,14 +76,65 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Manticore Interrupt|VFX")
 	bool bUseNiagara;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Manticore Interrupt|Gameplay", meta = (ClampMin = "0.05", ClampMax = "20.0"))
+	float StalkSeconds;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Manticore Interrupt|Gameplay", meta = (ClampMin = "0.05", ClampMax = "20.0"))
+	float TelegraphSeconds;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Manticore Interrupt|Gameplay", meta = (ClampMin = "0.05", ClampMax = "20.0"))
+	float ImpactSeconds;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Manticore Interrupt|Gameplay", meta = (ClampMin = "0.05", ClampMax = "20.0"))
+	float ThreatHoldSeconds;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Manticore Interrupt|Gameplay", meta = (ClampMin = "0.05", ClampMax = "20.0"))
+	float RetreatSeconds;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Manticore Interrupt|Gameplay", meta = (ClampMin = "0.0", ClampMax = "1200.0"))
+	float InterruptTraceRadiusCm;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Manticore Interrupt|Gameplay", meta = (ClampMin = "0.0", ClampMax = "1200.0"))
+	float ImpactDamageRadiusCm;
+
+	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = "Aerathea|Manticore Interrupt|Gameplay")
+	float InterruptElapsedSeconds;
+
+	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = "Aerathea|Manticore Interrupt|Gameplay")
+	bool bInterruptSequenceActive;
+
 	UFUNCTION(BlueprintCallable, Category = "Aerathea|Manticore Interrupt")
 	void SetInterruptState(EAETManticoreInterruptState NewState);
 
 	UFUNCTION(BlueprintCallable, Category = "Aerathea|Manticore Interrupt")
 	void SetSequenceProgress(float NewSequenceProgress);
 
+	UFUNCTION(BlueprintCallable, Category = "Aerathea|Manticore Interrupt|Gameplay")
+	void BeginInterruptSequence();
+
+	UFUNCTION(BlueprintCallable, Category = "Aerathea|Manticore Interrupt|Gameplay")
+	void AdvanceInterruptSequence(float DeltaSeconds);
+
 	UFUNCTION(BlueprintCallable, Category = "Aerathea|Manticore Interrupt")
 	void TriggerInterrupt();
+
+	UFUNCTION(BlueprintCallable, Category = "Aerathea|Manticore Interrupt|Gameplay")
+	bool IsInterruptSequenceActive() const;
+
+	UFUNCTION(BlueprintCallable, Category = "Aerathea|Manticore Interrupt|Gameplay")
+	bool IsImpactWindowActive() const;
+
+	UFUNCTION(BlueprintCallable, Category = "Aerathea|Manticore Interrupt|Gameplay")
+	float GetInterruptWindowAlpha() const;
+
+	UFUNCTION(BlueprintCallable, Category = "Aerathea|Manticore Interrupt|Gameplay")
+	FVector GetEntryTraceLocation() const;
+
+	UFUNCTION(BlueprintCallable, Category = "Aerathea|Manticore Interrupt|Gameplay")
+	FVector GetImpactTraceLocation() const;
+
+	UFUNCTION(BlueprintCallable, Category = "Aerathea|Manticore Interrupt|Gameplay")
+	FVector GetRetreatTraceLocation() const;
 
 	UFUNCTION(BlueprintCallable, Category = "Aerathea|Manticore Interrupt")
 	void ResetInterrupt();

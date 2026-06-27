@@ -212,6 +212,7 @@ void AAETGnomeOgreBattlefieldEncounterActor::TriggerPylonOverload(float NewOverl
 	if (AAETCrudeTekPylonActor* PylonActor = Cast<AAETCrudeTekPylonActor>(PylonObjectiveActor.Get()))
 	{
 		PylonActor->TriggerOverload(PylonOverloadPercent);
+		PylonActor->BeginDamageWindow();
 	}
 	if (ShieldwallActor != nullptr)
 	{
@@ -244,6 +245,60 @@ void AAETGnomeOgreBattlefieldEncounterActor::TriggerManticoreInterrupt(AActor* M
 		OnManticoreInterruptTriggered.Broadcast(ActorToTrigger);
 	}
 	SetEncounterState(EAETGnomeOgreEncounterState::ManticoreInterrupt);
+}
+
+void AAETGnomeOgreBattlefieldEncounterActor::BeginPylonRepairWindow()
+{
+	if (AAETCrudeTekPylonActor* PylonActor = Cast<AAETCrudeTekPylonActor>(PylonObjectiveActor.Get()))
+	{
+		PylonActor->BeginRepairWindow();
+	}
+}
+
+void AAETGnomeOgreBattlefieldEncounterActor::ApplyPylonDamageTrace(float DamageScale)
+{
+	if (AAETCrudeTekPylonActor* PylonActor = Cast<AAETCrudeTekPylonActor>(PylonObjectiveActor.Get()))
+	{
+		PylonActor->ApplyDamageTrace(DamageScale);
+	}
+}
+
+void AAETGnomeOgreBattlefieldEncounterActor::ApplyPylonRepairTrace(float RepairScale)
+{
+	if (AAETCrudeTekPylonActor* PylonActor = Cast<AAETCrudeTekPylonActor>(PylonObjectiveActor.Get()))
+	{
+		PylonActor->ApplyRepairTrace(RepairScale);
+	}
+}
+
+void AAETGnomeOgreBattlefieldEncounterActor::AdvanceBranchTiming(float DeltaSeconds)
+{
+	if (AAETCrudeTekPylonActor* PylonActor = Cast<AAETCrudeTekPylonActor>(PylonObjectiveActor.Get()))
+	{
+		PylonActor->AdvanceObjectiveWindow(DeltaSeconds);
+	}
+	if (AAETManticoreInterruptActor* InterruptActor = Cast<AAETManticoreInterruptActor>(ManticoreInterruptActor.Get()))
+	{
+		InterruptActor->AdvanceInterruptSequence(DeltaSeconds);
+	}
+}
+
+FVector AAETGnomeOgreBattlefieldEncounterActor::GetPylonTraceLocation() const
+{
+	if (const AAETCrudeTekPylonActor* PylonActor = Cast<AAETCrudeTekPylonActor>(PylonObjectiveActor.Get()))
+	{
+		return PylonActor->GetCoreTraceLocation();
+	}
+	return PylonMarker != nullptr ? PylonMarker->GetComponentLocation() : GetActorLocation();
+}
+
+FVector AAETGnomeOgreBattlefieldEncounterActor::GetManticoreImpactTraceLocation() const
+{
+	if (const AAETManticoreInterruptActor* InterruptActor = Cast<AAETManticoreInterruptActor>(ManticoreInterruptActor.Get()))
+	{
+		return InterruptActor->GetImpactTraceLocation();
+	}
+	return ManticoreEntryMarker != nullptr ? ManticoreEntryMarker->GetComponentLocation() : GetActorLocation();
 }
 
 void AAETGnomeOgreBattlefieldEncounterActor::StartReviewPhaseSequence()
@@ -441,6 +496,7 @@ void AAETGnomeOgreBattlefieldEncounterActor::ApplyEncounterState()
 		case EAETGnomeOgreEncounterState::Resolution:
 			PylonActor->SetPylonState(EAETCrudeTekPylonState::Damaged);
 			PylonActor->SetDamagePercent(0.45f);
+			PylonActor->BeginRepairWindow();
 			break;
 		case EAETGnomeOgreEncounterState::ShieldImpact:
 		case EAETGnomeOgreEncounterState::ManticoreInterrupt:

@@ -69,6 +69,36 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Ogre Tek Pylon|VFX")
 	bool bUseNiagara;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Ogre Tek Pylon|Gameplay", meta = (ClampMin = "0.05", ClampMax = "60.0"))
+	float DamageWindowSeconds;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Ogre Tek Pylon|Gameplay", meta = (ClampMin = "0.05", ClampMax = "60.0"))
+	float RepairWindowSeconds;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Ogre Tek Pylon|Gameplay", meta = (ClampMin = "0.0", ClampMax = "1000.0"))
+	float DamageTraceRadiusCm;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Ogre Tek Pylon|Gameplay", meta = (ClampMin = "0.0", ClampMax = "1000.0"))
+	float RepairTraceRadiusCm;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Ogre Tek Pylon|Gameplay", meta = (ClampMin = "0.0", ClampMax = "1.0"))
+	float DamagePerTrace;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Ogre Tek Pylon|Gameplay", meta = (ClampMin = "0.0", ClampMax = "1.0"))
+	float RepairPerTrace;
+
+	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = "Aerathea|Ogre Tek Pylon|Gameplay")
+	float DamageWindowElapsedSeconds;
+
+	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = "Aerathea|Ogre Tek Pylon|Gameplay")
+	float RepairWindowElapsedSeconds;
+
+	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = "Aerathea|Ogre Tek Pylon|Gameplay")
+	bool bDamageWindowActive;
+
+	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = "Aerathea|Ogre Tek Pylon|Gameplay")
+	bool bRepairWindowActive;
+
 	UFUNCTION(BlueprintCallable, Category = "Aerathea|Ogre Tek Pylon")
 	void SetPylonState(EAETCrudeTekPylonState NewState);
 
@@ -80,6 +110,42 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Aerathea|Ogre Tek Pylon")
 	void TriggerOverload(float NewOverloadPercent);
+
+	UFUNCTION(BlueprintCallable, Category = "Aerathea|Ogre Tek Pylon|Gameplay")
+	void BeginDamageWindow();
+
+	UFUNCTION(BlueprintCallable, Category = "Aerathea|Ogre Tek Pylon|Gameplay")
+	void BeginRepairWindow();
+
+	UFUNCTION(BlueprintCallable, Category = "Aerathea|Ogre Tek Pylon|Gameplay")
+	void AdvanceObjectiveWindow(float DeltaSeconds);
+
+	UFUNCTION(BlueprintCallable, Category = "Aerathea|Ogre Tek Pylon|Gameplay")
+	void ApplyDamageTrace(float DamageScale);
+
+	UFUNCTION(BlueprintCallable, Category = "Aerathea|Ogre Tek Pylon|Gameplay")
+	void ApplyRepairTrace(float RepairScale);
+
+	UFUNCTION(BlueprintCallable, Category = "Aerathea|Ogre Tek Pylon|Gameplay")
+	bool IsDamageWindowActive() const;
+
+	UFUNCTION(BlueprintCallable, Category = "Aerathea|Ogre Tek Pylon|Gameplay")
+	bool IsRepairWindowActive() const;
+
+	UFUNCTION(BlueprintCallable, Category = "Aerathea|Ogre Tek Pylon|Gameplay")
+	float GetDamageWindowAlpha() const;
+
+	UFUNCTION(BlueprintCallable, Category = "Aerathea|Ogre Tek Pylon|Gameplay")
+	float GetRepairWindowAlpha() const;
+
+	UFUNCTION(BlueprintCallable, Category = "Aerathea|Ogre Tek Pylon|Gameplay")
+	FVector GetCoreTraceLocation() const;
+
+	UFUNCTION(BlueprintCallable, Category = "Aerathea|Ogre Tek Pylon|Gameplay")
+	FVector GetTopArcTraceLocation() const;
+
+	UFUNCTION(BlueprintCallable, Category = "Aerathea|Ogre Tek Pylon|Gameplay")
+	FVector GetGroundSparksTraceLocation() const;
 
 	UFUNCTION(BlueprintCallable, Category = "Aerathea|Ogre Tek Pylon")
 	void ResetPylon();

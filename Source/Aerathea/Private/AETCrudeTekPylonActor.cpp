@@ -16,6 +16,16 @@ AAETCrudeTekPylonActor::AAETCrudeTekPylonActor()
 	DamagePercent = 0.0f;
 	bPoweredVisible = true;
 	bUseNiagara = true;
+	DamageWindowSeconds = 8.0f;
+	RepairWindowSeconds = 10.0f;
+	DamageTraceRadiusCm = 220.0f;
+	RepairTraceRadiusCm = 180.0f;
+	DamagePerTrace = 0.18f;
+	RepairPerTrace = 0.16f;
+	DamageWindowElapsedSeconds = 0.0f;
+	RepairWindowElapsedSeconds = 0.0f;
+	bDamageWindowActive = false;
+	bRepairWindowActive = false;
 
 	SceneRoot = CreateDefaultSubobject<USceneComponent>(TEXT("SceneRoot"));
 	SetRootComponent(SceneRoot);
@@ -46,6 +56,12 @@ void AAETCrudeTekPylonActor::OnConstruction(const FTransform& Transform)
 
 	OverloadPercent = FMath::Clamp(OverloadPercent, 0.0f, 1.0f);
 	DamagePercent = FMath::Clamp(DamagePercent, 0.0f, 1.0f);
+	DamageWindowSeconds = FMath::Clamp(DamageWindowSeconds, 0.05f, 60.0f);
+	RepairWindowSeconds = FMath::Clamp(RepairWindowSeconds, 0.05f, 60.0f);
+	DamageTraceRadiusCm = FMath::Clamp(DamageTraceRadiusCm, 0.0f, 1000.0f);
+	RepairTraceRadiusCm = FMath::Clamp(RepairTraceRadiusCm, 0.0f, 1000.0f);
+	DamagePerTrace = FMath::Clamp(DamagePerTrace, 0.0f, 1.0f);
+	RepairPerTrace = FMath::Clamp(RepairPerTrace, 0.0f, 1.0f);
 	AssignDefaultAssets();
 	UpdatePylonLayout();
 	ApplyPylonState();
@@ -54,6 +70,11 @@ void AAETCrudeTekPylonActor::OnConstruction(const FTransform& Transform)
 void AAETCrudeTekPylonActor::SetPylonState(EAETCrudeTekPylonState NewState)
 {
 	PylonState = NewState;
+	if (PylonState == EAETCrudeTekPylonState::Destroyed)
+	{
+		bDamageWindowActive = false;
+		bRepairWindowActive = false;
+	}
 	ApplyPylonState();
 }
 
@@ -73,6 +94,8 @@ void AAETCrudeTekPylonActor::SetDamagePercent(float NewDamagePercent)
 	if (DamagePercent > 0.75f)
 	{
 		PylonState = EAETCrudeTekPylonState::Destroyed;
+		bDamageWindowActive = false;
+		bRepairWindowActive = false;
 	}
 	else if (DamagePercent > 0.25f && PylonState != EAETCrudeTekPylonState::Overload)
 	{
@@ -88,12 +111,126 @@ void AAETCrudeTekPylonActor::TriggerOverload(float NewOverloadPercent)
 	ApplyPylonState();
 }
 
+void AAETCrudeTekPylonActor::BeginDamageWindow()
+{
+	DamageWindowElapsedSeconds = 0.0f;
+	RepairWindowElapsedSeconds = 0.0f;
+	bDamageWindowActive = true;
+	bRepairWindowActive = false;
+	if (PylonState != EAETCrudeTekPylonState::Destroyed)
+	{
+		PylonState = EAETCrudeTekPylonState::Overload;
+	}
+	ApplyPylonState();
+}
+
+void AAETCrudeTekPylonActor::BeginRepairWindow()
+{
+	DamageWindowElapsedSeconds = 0.0f;
+	RepairWindowElapsedSeconds = 0.0f;
+	bDamageWindowActive = false;
+	bRepairWindowActive = PylonState != EAETCrudeTekPylonState::Destroyed;
+	if (bRepairWindowActive)
+	{
+		PylonState = EAETCrudeTekPylonState::Damaged;
+	}
+	ApplyPylonState();
+}
+
+void AAETCrudeTekPylonActor::AdvanceObjectiveWindow(float DeltaSeconds)
+{
+	const float ClampedDeltaSeconds = FMath::Max(DeltaSeconds, 0.0f);
+	if (bDamageWindowActive)
+	{
+		DamageWindowElapsedSeconds = FMath::Min(DamageWindowElapsedSeconds + ClampedDeltaSeconds, DamageWindowSeconds);
+		if (DamageWindowElapsedSeconds >= DamageWindowSeconds)
+		{
+			bDamageWindowActive = false;
+		}
+	}
+	if (bRepairWindowActive)
+	{
+		RepairWindowElapsedSeconds = FMath::Min(RepairWindowElapsedSeconds + ClampedDeltaSeconds, RepairWindowSeconds);
+		if (RepairWindowElapsedSeconds >= RepairWindowSeconds)
+		{
+			bRepairWindowActive = false;
+		}
+	}
+	ApplyPylonState();
+}
+
+void AAETCrudeTekPylonActor::ApplyDamageTrace(float DamageScale)
+{
+	if (!bDamageWindowActive || PylonState == EAETCrudeTekPylonState::Destroyed)
+	{
+		return;
+	}
+
+	SetDamagePercent(DamagePercent + DamagePerTrace * FMath::Max(DamageScale, 0.0f));
+}
+
+void AAETCrudeTekPylonActor::ApplyRepairTrace(float RepairScale)
+{
+	if (!bRepairWindowActive || PylonState == EAETCrudeTekPylonState::Destroyed)
+	{
+		return;
+	}
+
+	SetDamagePercent(DamagePercent - RepairPerTrace * FMath::Max(RepairScale, 0.0f));
+	if (DamagePercent <= KINDA_SMALL_NUMBER)
+	{
+		DamagePercent = 0.0f;
+		bRepairWindowActive = false;
+		PylonState = OverloadPercent > 0.25f ? EAETCrudeTekPylonState::Charged : EAETCrudeTekPylonState::Idle;
+		ApplyPylonState();
+	}
+}
+
+bool AAETCrudeTekPylonActor::IsDamageWindowActive() const
+{
+	return bDamageWindowActive;
+}
+
+bool AAETCrudeTekPylonActor::IsRepairWindowActive() const
+{
+	return bRepairWindowActive;
+}
+
+float AAETCrudeTekPylonActor::GetDamageWindowAlpha() const
+{
+	return DamageWindowSeconds > KINDA_SMALL_NUMBER ? FMath::Clamp(DamageWindowElapsedSeconds / DamageWindowSeconds, 0.0f, 1.0f) : 0.0f;
+}
+
+float AAETCrudeTekPylonActor::GetRepairWindowAlpha() const
+{
+	return RepairWindowSeconds > KINDA_SMALL_NUMBER ? FMath::Clamp(RepairWindowElapsedSeconds / RepairWindowSeconds, 0.0f, 1.0f) : 0.0f;
+}
+
+FVector AAETCrudeTekPylonActor::GetCoreTraceLocation() const
+{
+	return CoreLocator != nullptr ? CoreLocator->GetComponentLocation() : GetActorLocation();
+}
+
+FVector AAETCrudeTekPylonActor::GetTopArcTraceLocation() const
+{
+	return TopArcLocator != nullptr ? TopArcLocator->GetComponentLocation() : GetActorLocation();
+}
+
+FVector AAETCrudeTekPylonActor::GetGroundSparksTraceLocation() const
+{
+	return GroundSparksLocator != nullptr ? GroundSparksLocator->GetComponentLocation() : GetActorLocation();
+}
+
 void AAETCrudeTekPylonActor::ResetPylon()
 {
 	OverloadPercent = 0.0f;
 	DamagePercent = 0.0f;
 	PylonState = EAETCrudeTekPylonState::Idle;
 	bPoweredVisible = true;
+	DamageWindowElapsedSeconds = 0.0f;
+	RepairWindowElapsedSeconds = 0.0f;
+	bDamageWindowActive = false;
+	bRepairWindowActive = false;
 	ApplyPylonState();
 }
 
@@ -168,6 +305,8 @@ void AAETCrudeTekPylonActor::ApplyPylonState()
 		PylonMesh->SetScalarParameterValueOnMaterials(TEXT("PylonState"), StateValue);
 		PylonMesh->SetScalarParameterValueOnMaterials(TEXT("OverloadPercent"), OverloadPercent);
 		PylonMesh->SetScalarParameterValueOnMaterials(TEXT("DamagePercent"), DamagePercent);
+		PylonMesh->SetScalarParameterValueOnMaterials(TEXT("DamageWindowAlpha"), GetDamageWindowAlpha());
+		PylonMesh->SetScalarParameterValueOnMaterials(TEXT("RepairWindowAlpha"), GetRepairWindowAlpha());
 		PylonMesh->SetVectorParameterValueOnMaterials(TEXT("StateColor"), FVector(StateColor.R, StateColor.G, StateColor.B));
 	}
 
@@ -193,8 +332,14 @@ void AAETCrudeTekPylonActor::ApplyPylonState()
 		PylonNiagara->SetVariableFloat(TEXT("User.PylonState"), StateValue);
 		PylonNiagara->SetVariableFloat(TEXT("User.OverloadPercent"), OverloadPercent);
 		PylonNiagara->SetVariableFloat(TEXT("User.DamagePercent"), DamagePercent);
+		PylonNiagara->SetVariableFloat(TEXT("User.DamageWindowAlpha"), GetDamageWindowAlpha());
+		PylonNiagara->SetVariableFloat(TEXT("User.RepairWindowAlpha"), GetRepairWindowAlpha());
+		PylonNiagara->SetVariableFloat(TEXT("User.DamageTraceRadius"), DamageTraceRadiusCm);
+		PylonNiagara->SetVariableFloat(TEXT("User.RepairTraceRadius"), RepairTraceRadiusCm);
 		PylonNiagara->SetVariableBool(TEXT("User.bOverloaded"), PylonState == EAETCrudeTekPylonState::Overload || OverloadPercent > 0.66f);
 		PylonNiagara->SetVariableBool(TEXT("User.bDestroyed"), bDestroyed);
+		PylonNiagara->SetVariableBool(TEXT("User.bDamageWindowActive"), bDamageWindowActive);
+		PylonNiagara->SetVariableBool(TEXT("User.bRepairWindowActive"), bRepairWindowActive);
 		PylonNiagara->SetVariableLinearColor(TEXT("User.StateColor"), StateColor);
 		if (CoreLocator != nullptr)
 		{
@@ -203,6 +348,10 @@ void AAETCrudeTekPylonActor::ApplyPylonState()
 		if (TopArcLocator != nullptr)
 		{
 			PylonNiagara->SetVariableVec3(TEXT("User.TopArcWorldLocation"), TopArcLocator->GetComponentLocation());
+		}
+		if (GroundSparksLocator != nullptr)
+		{
+			PylonNiagara->SetVariableVec3(TEXT("User.GroundSparksWorldLocation"), GroundSparksLocator->GetComponentLocation());
 		}
 	}
 }

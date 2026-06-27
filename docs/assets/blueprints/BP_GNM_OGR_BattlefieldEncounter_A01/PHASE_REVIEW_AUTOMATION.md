@@ -73,6 +73,10 @@ The validator asserts:
 - Pylon overload drives the pylon `Overload` state and overload percent.
 - Manticore interrupt drives the `LeapImpact` state and sequence progress.
 
+For gameplay objective timing and trace contracts, also run:
+
+`/home/Flamestrike/UnrealEngine/UE_5.8.0/Engine/Binaries/Linux/UnrealEditor-Cmd /home/Flamestrike/Projects/Aerathea/Aerathea.uproject -NullRHI -NoRHIThread -NoSplash -Unattended -nop4 -ExecutePythonScript=/home/Flamestrike/Projects/Aerathea/Tools/Unreal/validate_gnome_ogre_gameplay_timing_traces.py`
+
 ## Review Rule
 
 Before presenting a phase capture for approval, inspect the generated PNG for orientation, framing, actor visibility, and obvious clipping. If orientation is uncertain, use the existing A/B/C/D/E marker pass before generating clean phase captures.

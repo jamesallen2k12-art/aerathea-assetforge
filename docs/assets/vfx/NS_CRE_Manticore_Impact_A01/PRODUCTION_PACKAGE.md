@@ -66,7 +66,12 @@ Driven by interrupt state and sequence parameters:
 
 - `User.InterruptState`
 - `User.SequenceProgress`
+- `User.InterruptWindowAlpha`
+- `User.InterruptTraceRadius`
+- `User.ImpactDamageRadius`
 - `User.bImpact`
+- `User.bImpactWindowActive`
+- `User.bInterruptSequenceActive`
 - `User.ImpactColor`
 
 ## 13. Unreal Import Notes
@@ -77,7 +82,7 @@ Driven by interrupt state and sequence parameters:
 - Native consumer: `AAETManticoreInterruptActor`
 - Blueprint consumer: `/Game/Aerathea/Blueprints/Creatures/BP_CRE_ManticoreInterrupt_A01`
 - Component: `ImpactNiagara`
-- Validation: `Tools/Unreal/validate_startup_scene.py`
+- Validation: `Tools/Unreal/validate_startup_scene.py`, `Tools/Unreal/validate_gnome_ogre_gameplay_timing_traces.py`
 
 ## 14. Folder and Naming Recommendation
 

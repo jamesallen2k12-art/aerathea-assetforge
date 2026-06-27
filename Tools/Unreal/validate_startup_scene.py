@@ -976,6 +976,12 @@ def validate_pylon_contract(pylon_actor):
     ranged_properties = {
         "OverloadPercent": (0.0, 1.0),
         "DamagePercent": (0.0, 1.0),
+        "DamageWindowSeconds": (0.05, 60.0),
+        "RepairWindowSeconds": (0.05, 60.0),
+        "DamageTraceRadiusCm": (0.0, 1000.0),
+        "RepairTraceRadiusCm": (0.0, 1000.0),
+        "DamagePerTrace": (0.0, 1.0),
+        "RepairPerTrace": (0.0, 1.0),
     }
     for prop_name, (min_value, max_value) in ranged_properties.items():
         try:
@@ -1032,6 +1038,24 @@ def validate_manticore_interrupt_contract(manticore_actor):
             failures.append("SequenceProgress value {:.2f} is outside 0.0-1.0".format(progress))
     except Exception as exc:
         failures.append("missing SequenceProgress ({})".format(exc))
+
+    ranged_properties = {
+        "StalkSeconds": (0.05, 20.0),
+        "TelegraphSeconds": (0.05, 20.0),
+        "ImpactSeconds": (0.05, 20.0),
+        "ThreatHoldSeconds": (0.05, 20.0),
+        "RetreatSeconds": (0.05, 20.0),
+        "InterruptTraceRadiusCm": (0.0, 1200.0),
+        "ImpactDamageRadiusCm": (0.0, 1200.0),
+    }
+    for prop_name, (min_value, max_value) in ranged_properties.items():
+        try:
+            value = float(manticore_actor.get_editor_property(prop_name))
+        except Exception as exc:
+            failures.append("missing property {} ({})".format(prop_name, exc))
+            continue
+        if value < min_value or value > max_value:
+            failures.append("{} value {:.2f} is outside {:.2f}-{:.2f}".format(prop_name, value, min_value, max_value))
 
     mesh_component = component_by_name(manticore_actor, unreal.SkeletalMeshComponent, "ManticoreMesh")
     if mesh_component is None:
