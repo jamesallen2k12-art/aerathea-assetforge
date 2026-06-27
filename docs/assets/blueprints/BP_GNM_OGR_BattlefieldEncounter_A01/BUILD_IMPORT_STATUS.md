@@ -4,7 +4,7 @@
 
 - Build/import status: native-backed coordinator implemented; Blueprint asset created, compiled, placed in startup, and wired to branch actors.
 - Unreal state: implemented as `/Game/Aerathea/Blueprints/GnomeOgre/BP_GNM_OGR_BattlefieldEncounter_A01`; startup actor label is `AET_PROD_GNM_OGR_BattlefieldEncounter_A01`.
-- Review scope: dependency contract, phase states, actor slots, collision volumes, variables, events, optional-branch gates, shieldwall impact forwarding, pylon overload, caster reinforcement, and Manticore interrupt hooks are implemented for review-safe assembly.
+- Review scope: dependency contract, phase states, actor slots, collision volumes, variables, events, optional-branch gates, shieldwall impact forwarding, pylon overload, caster reinforcement, Manticore interrupt hooks, and timed auto-advancing review phases are implemented for review-safe assembly.
 
 ## Planned Unreal Asset
 
@@ -44,16 +44,16 @@ Branch dependencies currently exist and are assigned in the startup scene:
 - Creation script: `Tools/Unreal/create_gnome_ogre_encounter_blueprint.py`
 - Wiring script: `Tools/Unreal/wire_gnome_ogre_encounter.py`
 - C++ build: `AeratheaEditor Linux Development` succeeded after implementation.
-- Startup validation: passing with `125` expected assets, `47` expected actor labels, and `25` ground tiles.
+- Startup validation: passing with `127` expected assets, `47` expected actor labels, and `25` ground tiles.
 
 ## Blocking Items
 
 - Final combat AI, quest rules, rewards, spawn balancing, and persistence are intentionally out of scope.
-- Final pylon, shieldwall, and Manticore Niagara emitter art remains pending.
+- Bespoke pylon, shieldwall, and Manticore Niagara graph polish remains pending after the template-derived target assets.
 
 ## Remaining To Finalize
 
 1. Review the updated startup capture with the coordinator, pylon wrapper, caster branches, and Manticore interrupt wrapper visible.
-2. Author final pylon, shieldwall, and Manticore Niagara emitters against the native `User.*` contracts.
-3. Add gameplay timeline or PIE automation for phase sequencing after visual approval.
+2. Polish final pylon, shieldwall, and Manticore Niagara graphs against the native `User.*` contracts.
+3. Add PIE assertions around the auto-advance sequence after visual approval.
 4. Add final combat AI, quest rules, rewards, spawn balancing, and persistence only after gameplay rules are approved.

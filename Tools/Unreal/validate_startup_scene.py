@@ -73,6 +73,8 @@ EXPECTED_ASSETS = [
     "/Game/Aerathea/VFX/GnomeOgre/SM_GNM_AetherShieldWall_A01",
     "/Game/Aerathea/VFX/GnomeOgre/VFX_GNM_AetherShieldWall_A01",
     "/Game/Aerathea/VFX/GnomeOgre/NS_GNM_AetherShieldWall_A01",
+    "/Game/Aerathea/VFX/Ogres/NS_OGR_CrudeTekPylon_A01",
+    "/Game/Aerathea/VFX/Creatures/NS_CRE_Manticore_Impact_A01",
     "/Game/Aerathea/Weapons/Mekgineer/SM_MKG_SpikeDrill_A01",
     "/Game/Aerathea/Weapons/Mekgineer/SM_MKG_MonkeyWrench_A01",
     "/Game/Aerathea/Weapons/Mekgineer/SM_MKG_RatchetCleaver_A01",
@@ -925,6 +927,17 @@ def validate_shieldwall_vfx_contract(shieldwall_actor):
         elif not material_matches_expected(material, expected_idle):
             failures.append("ShieldPanel_01 material is {}, expected {}".format(material.get_path_name(), expected_idle))
 
+    try:
+        shield_system = shieldwall_actor.get_editor_property("ShieldNiagaraSystem")
+    except Exception as exc:
+        failures.append("missing ShieldNiagaraSystem ({})".format(exc))
+        shield_system = None
+    expected_system = "/Game/Aerathea/VFX/GnomeOgre/NS_GNM_AetherShieldWall_A01"
+    if shield_system is None:
+        failures.append("ShieldNiagaraSystem is not assigned")
+    elif asset_path_without_object(shield_system) != expected_system:
+        failures.append("ShieldNiagaraSystem is {}, expected {}".format(shield_system.get_path_name(), expected_system))
+
     if failures:
         raise RuntimeError("Shieldwall VFX contract validation failed: {}".format("; ".join(failures)))
 
@@ -984,6 +997,25 @@ def validate_pylon_contract(pylon_actor):
         elif asset_path_without_object(mesh) != expected_path:
             failures.append("PylonMesh uses {}, expected {}".format(mesh.get_path_name(), expected_path))
 
+    try:
+        pylon_system = pylon_actor.get_editor_property("PylonNiagaraSystem")
+    except Exception as exc:
+        failures.append("missing PylonNiagaraSystem ({})".format(exc))
+        pylon_system = None
+    expected_system = "/Game/Aerathea/VFX/Ogres/NS_OGR_CrudeTekPylon_A01"
+    if pylon_system is None:
+        failures.append("PylonNiagaraSystem is not assigned")
+    elif asset_path_without_object(pylon_system) != expected_system:
+        failures.append("PylonNiagaraSystem is {}, expected {}".format(pylon_system.get_path_name(), expected_system))
+
+    niagara_component = component_by_name(pylon_actor, unreal.NiagaraComponent, "PylonNiagara")
+    if niagara_component is None:
+        failures.append("missing PylonNiagara component")
+    else:
+        asset = try_call(niagara_component, "get_asset")
+        if asset is not None and asset_path_without_object(asset) != expected_system:
+            failures.append("PylonNiagara uses {}, expected {}".format(asset.get_path_name(), expected_system))
+
     if failures:
         raise RuntimeError("Crude Tek pylon contract validation failed: {}".format("; ".join(failures)))
 
@@ -1012,6 +1044,25 @@ def validate_manticore_interrupt_contract(manticore_actor):
         elif asset_path_without_object(mesh) != expected_path:
             failures.append("ManticoreMesh uses {}, expected {}".format(mesh.get_path_name(), expected_path))
 
+    try:
+        impact_system = manticore_actor.get_editor_property("ImpactNiagaraSystem")
+    except Exception as exc:
+        failures.append("missing ImpactNiagaraSystem ({})".format(exc))
+        impact_system = None
+    expected_system = "/Game/Aerathea/VFX/Creatures/NS_CRE_Manticore_Impact_A01"
+    if impact_system is None:
+        failures.append("ImpactNiagaraSystem is not assigned")
+    elif asset_path_without_object(impact_system) != expected_system:
+        failures.append("ImpactNiagaraSystem is {}, expected {}".format(impact_system.get_path_name(), expected_system))
+
+    niagara_component = component_by_name(manticore_actor, unreal.NiagaraComponent, "ImpactNiagara")
+    if niagara_component is None:
+        failures.append("missing ImpactNiagara component")
+    else:
+        asset = try_call(niagara_component, "get_asset")
+        if asset is not None and asset_path_without_object(asset) != expected_system:
+            failures.append("ImpactNiagara uses {}, expected {}".format(asset.get_path_name(), expected_system))
+
     if failures:
         raise RuntimeError("Manticore interrupt contract validation failed: {}".format("; ".join(failures)))
 
@@ -1027,6 +1078,8 @@ def validate_encounter_contract(encounter_actor, actors_by_label):
         "bEnablePylonObjective": True,
         "bEnableCasterReinforcements": True,
         "bEnableManticoreInterrupt": True,
+        "bAutoStart": True,
+        "bAutoAdvanceReviewPhases": True,
     }
     for prop_name, expected in expected_bools.items():
         try:
@@ -1036,6 +1089,13 @@ def validate_encounter_contract(encounter_actor, actors_by_label):
             continue
         if value != expected:
             failures.append("{} is {}, expected {}".format(prop_name, value, expected))
+
+    try:
+        phase_duration = float(encounter_actor.get_editor_property("ReviewPhaseDurationSeconds"))
+        if phase_duration < 0.25 or phase_duration > 30.0:
+            failures.append("ReviewPhaseDurationSeconds {:.2f} is outside 0.25-30.0".format(phase_duration))
+    except Exception as exc:
+        failures.append("missing ReviewPhaseDurationSeconds ({})".format(exc))
 
     expected_refs = {
         "ShieldwallActor": "AET_PROD_GNM_HeavyMekShieldwall_A01",

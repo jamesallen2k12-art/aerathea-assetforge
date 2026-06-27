@@ -6,6 +6,7 @@
 - VFX placeholder: `/Game/Aerathea/VFX/GnomeOgre/VFX_GNM_AetherShieldWall_A01`
 - Shield helper mesh: `/Game/Aerathea/VFX/GnomeOgre/SM_GNM_AetherShieldWall_A01`
 - Niagara target: `/Game/Aerathea/VFX/GnomeOgre/NS_GNM_AetherShieldWall_A01`
+- Template-derived emitter targets: `/Game/Aerathea/VFX/GnomeOgre/NE_GNM_ShieldEdgeBands_A01`, `/Game/Aerathea/VFX/GnomeOgre/NE_GNM_ShieldSurfacePulse_A01`, `/Game/Aerathea/VFX/GnomeOgre/NE_GNM_ShieldImpactRipple_A01`, `/Game/Aerathea/VFX/GnomeOgre/NE_GNM_ShieldOverloadSparks_A01`, `/Game/Aerathea/VFX/GnomeOgre/NE_GNM_ShieldFailingFragments_A01`
 - Startup review actor: `AET_PROD_GNM_HeavyMekShieldwall_A01`
 
 ## Completed Review Requirements
@@ -23,5 +24,5 @@
 
 - Replace DCC review geometry with approved art-model projector.
 - Author final UVs, BC/N/ORM/E textures, and material instances.
-- Replace review helper panel with authored final Niagara/VFX emitters after approving the handoff in `docs/assets/vfx/VFX_GNM_AetherShieldWall_A01/NIAGARA_ART_PASS_HANDOFF.md`; the empty `NS_GNM_AetherShieldWall_A01` target exists.
+- Replace or supplement the review helper panel with the polished final Niagara/VFX graph after approving the handoff in `docs/assets/vfx/VFX_GNM_AetherShieldWall_A01/NIAGARA_ART_PASS_HANDOFF.md`; `NS_GNM_AetherShieldWall_A01` and template-derived `NE_GNM_*` emitter targets exist.
 - Tune combat-facing state transitions, audio hooks, projectile rules, and gameplay blocking after combat rules are approved.

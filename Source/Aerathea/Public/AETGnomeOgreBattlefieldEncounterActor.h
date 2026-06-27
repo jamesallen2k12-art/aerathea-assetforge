@@ -36,6 +36,7 @@ public:
 
 	virtual void OnConstruction(const FTransform& Transform) override;
 	virtual void BeginPlay() override;
+	virtual void Tick(float DeltaSeconds) override;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Aerathea|Gnome Ogre Encounter")
 	TObjectPtr<USceneComponent> SceneRoot;
@@ -87,6 +88,18 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Gnome Ogre Encounter")
 	bool bLoopForReview;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Gnome Ogre Encounter|Review")
+	bool bAutoAdvanceReviewPhases;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Gnome Ogre Encounter|Review", meta = (ClampMin = "0.25", ClampMax = "30.0"))
+	float ReviewPhaseDurationSeconds;
+
+	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = "Aerathea|Gnome Ogre Encounter|Review")
+	float ReviewPhaseElapsedSeconds;
+
+	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = "Aerathea|Gnome Ogre Encounter|Review")
+	int32 ReviewPhaseIndex;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Gnome Ogre Encounter", meta = (ClampMin = "1200.0", ClampMax = "6000.0"))
 	float EncounterWidthCm;
@@ -166,6 +179,15 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Aerathea|Gnome Ogre Encounter")
 	void TriggerManticoreInterrupt(AActor* ManticoreActor);
 
+	UFUNCTION(BlueprintCallable, Category = "Aerathea|Gnome Ogre Encounter|Review")
+	void StartReviewPhaseSequence();
+
+	UFUNCTION(BlueprintCallable, Category = "Aerathea|Gnome Ogre Encounter|Review")
+	void StopReviewPhaseSequence();
+
+	UFUNCTION(BlueprintCallable, Category = "Aerathea|Gnome Ogre Encounter|Review")
+	void AdvanceReviewPhase();
+
 	UFUNCTION(BlueprintCallable, Category = "Aerathea|Gnome Ogre Encounter")
 	void ResetEncounter();
 
@@ -173,5 +195,6 @@ protected:
 	void ConfigureTrigger(UBoxComponent* TriggerComponent, const FVector& RelativeLocation, const FVector& Extent) const;
 	void UpdateEncounterLayout();
 	void ApplyEncounterState();
+	void ApplyReviewPhase(int32 PhaseIndex);
 	void SetOptionalActorEnabled(AActor* Actor, bool bEnabled) const;
 };

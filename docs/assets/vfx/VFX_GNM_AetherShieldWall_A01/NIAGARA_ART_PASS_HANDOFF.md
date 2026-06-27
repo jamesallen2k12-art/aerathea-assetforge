@@ -22,7 +22,22 @@ Current exposed controls:
 - `ShieldImpactMaterial`
 - `ShieldFailingMaterial`
 
-Current implementation pushes scalar parameters to shield helper panels and projector materials. It does not yet own a `UNiagaraComponent`, and `Source/Aerathea/Aerathea.Build.cs` does not currently include the `Niagara` module dependency.
+Current implementation pushes scalar parameters to shield helper panels and projector materials, owns a native `UNiagaraComponent` named `ShieldNiagara`, exposes `ShieldNiagaraSystem`, and assigns `/Game/Aerathea/VFX/GnomeOgre/NS_GNM_AetherShieldWall_A01`. `Source/Aerathea/Aerathea.Build.cs` already includes the `Niagara` module dependency.
+
+Current native Niagara parameters pushed by `AAETHeavyMekShieldwallActor`:
+
+- `User.ShieldState`
+- `User.ShieldWidthCm`
+- `User.ArcHeightCm`
+- `User.ProjectorCount`
+- `User.ImpactIntensity`
+- `User.OverloadPercent`
+- `User.ImpactLocationNormalized`
+- `User.bFailing`
+- `User.bOverloaded`
+- `User.ImpactWorldLocation`
+- `User.EdgeColor`
+- `User.FillColor`
 
 ## Final Niagara Target
 
@@ -30,6 +45,7 @@ Current implementation pushes scalar parameters to shield helper panels and proj
 - Unreal folder: `/Game/Aerathea/VFX/GnomeOgre/`
 - Blueprint/native consumer: `BP_GNM_HeavyMekShieldwall_A01` / `AAETHeavyMekShieldwallActor`
 - Optional helper mesh fallback: `SM_GNM_AetherShieldWall_A01`
+- Current first-pass emitter targets: `NE_GNM_ShieldEdgeBands_A01`, `NE_GNM_ShieldSurfacePulse_A01`, `NE_GNM_ShieldImpactRipple_A01`, `NE_GNM_ShieldOverloadSparks_A01`, and `NE_GNM_ShieldFailingFragments_A01`
 
 ## Visual Direction
 
@@ -89,24 +105,17 @@ Parameter mapping:
 | `Failing` | Broken segments, intermittent fill loss, unstable edge gaps |
 | `Shutdown` | Energy collapses toward projectors and fades |
 
-## Native Or Blueprint Hook Needed
+## Native Hook Status
 
-Preferred native path:
+Implemented native path:
 
-1. Add `Niagara` to `Source/Aerathea/Aerathea.Build.cs`.
-2. Add `UNiagaraComponent* ShieldNiagara` to `AAETHeavyMekShieldwallActor`.
-3. Expose `UNiagaraSystem* ShieldNiagaraSystem`.
-4. Attach Niagara component to `SceneRoot`.
-5. In `UpdateShieldwallLayout`, set Niagara position/scale or user parameters for width/height/projector count.
-6. In `ApplyShieldState`, push all Niagara user parameters alongside existing material parameter updates.
-7. Keep helper panels available as fallback or low-end LOD until final performance is validated.
-
-Blueprint-only path:
-
-1. Add a Niagara component to `BP_GNM_HeavyMekShieldwall_A01`.
-2. Bind component user parameters from exposed actor variables.
-3. Call existing functions `SetShieldState`, `SetImpactIntensity`, `SetOverloadPercent`, and `SetImpactLocationNormalized` before updating Niagara user parameters.
-4. Keep validation focused on material contract until a Niagara validation rule is added.
+1. `Niagara` is included in `Source/Aerathea/Aerathea.Build.cs`.
+2. `UNiagaraComponent* ShieldNiagara` exists on `AAETHeavyMekShieldwallActor`.
+3. `UNiagaraSystem* ShieldNiagaraSystem` is exposed and assigned.
+4. The Niagara component is attached to `SceneRoot`.
+5. `UpdateShieldwallLayout` positions and scales the component to the shield wall.
+6. `ApplyShieldState` pushes the documented Niagara user parameters alongside existing material parameter updates.
+7. Helper panels remain available as the visible fallback and low-end LOD until the bespoke Niagara graph is validated.
 
 ## Texture And Material Requirements
 

@@ -50,5 +50,5 @@
 1. Review interrupt variant scale and silhouette beside the base Manticore, Ogre line, heavy Mek, and crude Tek pylon.
 2. Replace blockout variant geometry with final encounter-ready sculpt and approved surface damage/torn membrane treatment.
 3. Tune physics bodies, collision capsules, tail hit traces, wing-buffet traces, and venom sockets.
-4. Author final `NS_CRE_Manticore_Impact_A01` impact/venom Niagara emitters against the native wrapper contract.
+4. Polish final `NS_CRE_Manticore_Impact_A01` impact/venom Niagara graph against the native wrapper contract.
 5. Add encounter timing for arrival leap/glide, wing buffet, tail sting, venom telegraph, and shield-wall pressure after animation review.

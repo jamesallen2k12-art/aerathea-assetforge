@@ -113,7 +113,7 @@ Runtime material parameters:
 - Required sockets on projector mesh: `vfx_core`, `vfx_shield_emit_l`, `vfx_shield_emit_r`, `attach_mek_l`, `attach_mek_r`, `damage_spark`.
 - Blueprint variables: `ShieldState`, `ShieldWidthCm`, `ProjectorCount`, `ArcHeightCm`, `bBlocksProjectiles`, `bBlocksPawns`, `ImpactIntensity`, `OverloadPercent`, `ImpactLocationNormalized`, `ShieldIdleMaterial`, `ShieldImpactMaterial`, `ShieldFailingMaterial`.
 - Blueprint functions: `SetShieldState`, `SetImpactIntensity`, `SetOverloadPercent`, `SetImpactLocationNormalized`, `TriggerImpact`, `ConfigureShieldwall`.
-- Current native polish: state-driven material switching, scalar parameter propagation, and assignment to empty target `NS_GNM_AetherShieldWall_A01` are implemented; final Niagara emitter art-pass handoff is ready in `docs/assets/vfx/VFX_GNM_AetherShieldWall_A01/NIAGARA_ART_PASS_HANDOFF.md`.
+- Current native polish: state-driven material switching, scalar parameter propagation, assignment to `NS_GNM_AetherShieldWall_A01`, and template-derived `NE_GNM_*` shield emitter targets are implemented; final Niagara graph polish handoff is ready in `docs/assets/vfx/VFX_GNM_AetherShieldWall_A01/NIAGARA_ART_PASS_HANDOFF.md`.
 
 ## Folder And Naming Recommendation
 

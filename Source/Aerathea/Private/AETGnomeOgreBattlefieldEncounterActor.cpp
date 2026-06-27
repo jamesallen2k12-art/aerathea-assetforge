@@ -8,7 +8,7 @@
 
 AAETGnomeOgreBattlefieldEncounterActor::AAETGnomeOgreBattlefieldEncounterActor()
 {
-	PrimaryActorTick.bCanEverTick = false;
+	PrimaryActorTick.bCanEverTick = true;
 	bReplicates = true;
 
 	EncounterState = EAETGnomeOgreEncounterState::Setup;
@@ -18,6 +18,10 @@ AAETGnomeOgreBattlefieldEncounterActor::AAETGnomeOgreBattlefieldEncounterActor()
 	bEnableCasterReinforcements = false;
 	bEnableManticoreInterrupt = false;
 	bLoopForReview = false;
+	bAutoAdvanceReviewPhases = false;
+	ReviewPhaseDurationSeconds = 3.0f;
+	ReviewPhaseElapsedSeconds = 0.0f;
+	ReviewPhaseIndex = 0;
 	EncounterWidthCm = 2800.0f;
 	EncounterDepthCm = 2200.0f;
 	ShieldImpactLocationNormalized = 0.5f;
@@ -67,6 +71,7 @@ void AAETGnomeOgreBattlefieldEncounterActor::OnConstruction(const FTransform& Tr
 	EncounterDepthCm = FMath::Clamp(EncounterDepthCm, 1200.0f, 6000.0f);
 	ShieldImpactLocationNormalized = FMath::Clamp(ShieldImpactLocationNormalized, -1.0f, 1.0f);
 	PylonOverloadPercent = FMath::Clamp(PylonOverloadPercent, 0.0f, 1.0f);
+	ReviewPhaseDurationSeconds = FMath::Clamp(ReviewPhaseDurationSeconds, 0.25f, 30.0f);
 	UpdateEncounterLayout();
 	ApplyEncounterState();
 }
@@ -76,9 +81,30 @@ void AAETGnomeOgreBattlefieldEncounterActor::BeginPlay()
 	Super::BeginPlay();
 
 	ValidateDependencies();
-	if (bAutoStart)
+	if (bAutoAdvanceReviewPhases)
+	{
+		StartReviewPhaseSequence();
+	}
+	else if (bAutoStart)
 	{
 		SetEncounterState(EAETGnomeOgreEncounterState::GnomeHoldLine);
+	}
+}
+
+void AAETGnomeOgreBattlefieldEncounterActor::Tick(float DeltaSeconds)
+{
+	Super::Tick(DeltaSeconds);
+
+	if (!bAutoAdvanceReviewPhases || ReviewPhaseDurationSeconds <= KINDA_SMALL_NUMBER)
+	{
+		return;
+	}
+
+	ReviewPhaseElapsedSeconds += DeltaSeconds;
+	if (ReviewPhaseElapsedSeconds >= ReviewPhaseDurationSeconds)
+	{
+		ReviewPhaseElapsedSeconds = 0.0f;
+		AdvanceReviewPhase();
 	}
 }
 
@@ -220,6 +246,44 @@ void AAETGnomeOgreBattlefieldEncounterActor::TriggerManticoreInterrupt(AActor* M
 	SetEncounterState(EAETGnomeOgreEncounterState::ManticoreInterrupt);
 }
 
+void AAETGnomeOgreBattlefieldEncounterActor::StartReviewPhaseSequence()
+{
+	ValidateDependencies();
+	bAutoAdvanceReviewPhases = true;
+	ReviewPhaseElapsedSeconds = 0.0f;
+	ReviewPhaseIndex = 0;
+	ApplyReviewPhase(ReviewPhaseIndex);
+}
+
+void AAETGnomeOgreBattlefieldEncounterActor::StopReviewPhaseSequence()
+{
+	bAutoAdvanceReviewPhases = false;
+	ReviewPhaseElapsedSeconds = 0.0f;
+}
+
+void AAETGnomeOgreBattlefieldEncounterActor::AdvanceReviewPhase()
+{
+	++ReviewPhaseIndex;
+
+	constexpr int32 ReviewPhaseCount = 7;
+	if (ReviewPhaseIndex >= ReviewPhaseCount)
+	{
+		if (!bLoopForReview)
+		{
+			ReviewPhaseIndex = ReviewPhaseCount - 1;
+			StopReviewPhaseSequence();
+			ApplyReviewPhase(ReviewPhaseIndex);
+			return;
+		}
+
+		ResetEncounter();
+		ReviewPhaseIndex = 0;
+		bAutoAdvanceReviewPhases = true;
+	}
+
+	ApplyReviewPhase(ReviewPhaseIndex);
+}
+
 void AAETGnomeOgreBattlefieldEncounterActor::ResetEncounter()
 {
 	PylonOverloadPercent = 0.0f;
@@ -244,6 +308,35 @@ void AAETGnomeOgreBattlefieldEncounterActor::ResetEncounter()
 	SetOptionalActorEnabled(OgreNecromancerActor, bEnableCasterReinforcements);
 	SetOptionalActorEnabled(ManticoreInterruptActor, bEnableManticoreInterrupt);
 	SetEncounterState(EAETGnomeOgreEncounterState::Setup);
+}
+
+void AAETGnomeOgreBattlefieldEncounterActor::ApplyReviewPhase(int32 PhaseIndex)
+{
+	switch (PhaseIndex)
+	{
+	case 0:
+		SetEncounterState(EAETGnomeOgreEncounterState::GnomeHoldLine);
+		break;
+	case 1:
+		SetEncounterState(EAETGnomeOgreEncounterState::OgreAdvance);
+		break;
+	case 2:
+		TriggerShieldImpact(0.15f, 0.75f);
+		break;
+	case 3:
+		TriggerPylonOverload(0.78f);
+		break;
+	case 4:
+		TriggerCasterReinforcement(OgreShamanActor != nullptr ? OgreShamanActor.Get() : OgreNecromancerActor.Get());
+		break;
+	case 5:
+		TriggerManticoreInterrupt(ManticoreInterruptActor.Get());
+		break;
+	case 6:
+	default:
+		SetEncounterState(EAETGnomeOgreEncounterState::Resolution);
+		break;
+	}
 }
 
 void AAETGnomeOgreBattlefieldEncounterActor::ConfigureTrigger(UBoxComponent* TriggerComponent, const FVector& RelativeLocation, const FVector& Extent) const

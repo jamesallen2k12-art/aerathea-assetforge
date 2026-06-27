@@ -46,5 +46,5 @@
 1. Replace the first-pass review mesh with approved final sculpt/retopo.
 2. Author final UVs, hand-painted textures, packed ORM, and tuned emissive map.
 3. Tune collision beyond broad UCX review hulls.
-4. Author final `NS_OGR_CrudeTekPylon_A01` overload/damage/repair Niagara emitters against the native wrapper contract.
+4. Polish final `NS_OGR_CrudeTekPylon_A01` overload/damage/repair Niagara graph against the native wrapper contract.
 5. Add gameplay repair/destroy rules after final encounter placement is approved.

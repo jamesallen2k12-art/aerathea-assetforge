@@ -4,7 +4,7 @@
 
 `VFX_GNM_AetherShieldWall_A01` defines the Gnome/Mekgineer Aether shield-wall effect for the Gnome-vs-Ogre rivalry kit. The current review implementation uses static helper panels and material-state instances. The final authored Niagara art pass should replace or supplement the helper panels with a clean, blue, segmented, defensive, and precise effect that contrasts clearly against Ogre forge-orange and necromantic green effects.
 
-Current status: first-pass helper/VFX contract implemented; final authored Niagara art-pass handoff ready; empty Unreal Niagara target `NS_GNM_AetherShieldWall_A01` exists; final emitter art pass pending.
+Current status: first-pass helper/VFX contract implemented; final authored Niagara art-pass handoff ready; Unreal Niagara target `NS_GNM_AetherShieldWall_A01` exists and is assigned; template-derived `NE_GNM_*` emitter assets exist as editable art-pass targets; bespoke shield graph polish remains pending.
 
 ## Gameplay Purpose
 
@@ -53,6 +53,11 @@ Create an original stylized fantasy MMORPG VFX state sheet of `VFX_GNM_AetherShi
 Final Niagara assets:
 
 - `NS_GNM_AetherShieldWall_A01`
+- `NE_GNM_ShieldEdgeBands_A01`
+- `NE_GNM_ShieldSurfacePulse_A01`
+- `NE_GNM_ShieldImpactRipple_A01`
+- `NE_GNM_ShieldOverloadSparks_A01`
+- `NE_GNM_ShieldFailingFragments_A01`
 - `NE_GNM_ShieldEdgeBands_A01`
 - `NE_GNM_ShieldSurfacePulse_A01`
 - `NE_GNM_ShieldImpactRipple_A01`
@@ -125,4 +130,4 @@ Niagara user parameters:
 - State names match the Blueprint handoff.
 - Helper mesh, materials, LOD behavior, collision ownership, and Unreal paths are defined.
 - Final Niagara consumes the existing native state and parameter contract instead of duplicating gameplay state.
-- Final Niagara asset is not marked complete until `NS_GNM_AetherShieldWall_A01` exists in Unreal and is bound to the shieldwall actor or Blueprint.
+- Final Niagara asset is not marked visually complete until `NS_GNM_AetherShieldWall_A01` contains the polished shield graph, consumes the native `User.*` parameters, and is approved from the startup review camera.
