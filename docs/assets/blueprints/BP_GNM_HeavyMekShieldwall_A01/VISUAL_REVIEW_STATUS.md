@@ -17,7 +17,7 @@
 - The runtime view confirms the actor is visible, not clipped, and not presenting collision helper geometry.
 - The helper shield mesh has been strengthened with segmented panes, edge rails, horizontal pulse lanes, projector nodes, impact focus geometry, and failing-crack accents.
 - The native actor now swaps idle, impact, and failing material states and exposes `TriggerImpact` plus `ImpactLocationNormalized` for future localized ripples.
-- This remains a static helper/VFX placeholder with a Niagara-ready contract, not final authored Niagara.
+- This remains a static helper/VFX placeholder with a Niagara-ready contract. The final Niagara art-pass handoff is ready, but `NS_GNM_AetherShieldWall_A01` is not authored yet.
 
 ## Accepted For
 
@@ -29,7 +29,7 @@
 
 ## Final VFX Work Pending
 
-- Replace the static helper panel with final Niagara or equivalent VFX authored from `docs/assets/vfx/VFX_GNM_AetherShieldWall_A01/PRODUCTION_PACKAGE.md`.
+- Replace the static helper panel with final Niagara or equivalent VFX authored from `docs/assets/vfx/VFX_GNM_AetherShieldWall_A01/PRODUCTION_PACKAGE.md` and `docs/assets/vfx/VFX_GNM_AetherShieldWall_A01/NIAGARA_ART_PASS_HANDOFF.md`.
 - Author final Niagara behavior for `Inactive`, `Booting`, `Braced`, `Impact`, `Overload`, `Failing`, and `Shutdown` using the existing native material/state contract.
 - Bind authored impact ripples to `ImpactLocator`, `ImpactLocationNormalized`, or hit-location data.
 - Add controlled emissive pulse, overload flicker, failing segment gaps, and shutdown collapse.

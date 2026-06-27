@@ -138,7 +138,7 @@ Use 2K texture sets for common characters and props. Use 4K only for a named her
 
 ## Implementation Status
 
-- `BP_GNM_HeavyMekShieldwall_A01`, `SM_GNM_AetherShieldProjector_A01`, `SM_GNM_AetherShieldWall_A01`, and `VFX_GNM_AetherShieldWall_A01` have approved first-pass review implementations and a validated native Blueprint/VFX contract for state material switching, impact location, impact intensity, overload, and future Niagara handoff.
+- `BP_GNM_HeavyMekShieldwall_A01`, `SM_GNM_AetherShieldProjector_A01`, `SM_GNM_AetherShieldWall_A01`, and `VFX_GNM_AetherShieldWall_A01` have approved first-pass review implementations and a validated native Blueprint/VFX contract for state material switching, impact location, impact intensity, overload, and future Niagara handoff. The final shieldwall Niagara art-pass handoff is ready; the Unreal Niagara asset is not authored.
 - `SK_OGR_Teknomancer_A01` has a first-pass class-fit DCC/Unreal review import.
 - `SK_GNM_HeavyMek_Rivalry_A01` has a first-pass DCC/Unreal review import with required Mek, weapon, pilot, and VFX sockets.
 - `SK_OGR_Warrior_Rival_A01` has a first-pass DCC/Unreal review import with shield, hammer, belt, stomp, head, and weapon grip sockets.
@@ -149,7 +149,7 @@ Use 2K texture sets for common characters and props. Use 4K only for a named her
 - `SK_CRE_Manticore_A01` has a base production package, source concept intake, modeling handoff, build/import status, skeleton/proportion plan, material plan, LOD plan, collision plan, and sockets ready for approval.
 - `SK_CRE_Manticore_Interrupt_A01` has an encounter-variant production package, modeling handoff, and build/import status ready; DCC build waits for base `SK_CRE_Manticore_A01` approval/import.
 - `BP_GNM_OGR_BattlefieldEncounter_A01` has a production package, implementation handoff, build/import status, dependency contract, phase-state plan, actor slots, collision volumes, variables, events, and optional-branch gates ready; Blueprint asset not created.
-- Current approved sequence continues with final authored shieldwall Niagara art.
+- Current approved sequence is complete through production handoff. Next work should choose which approved handoff moves into DCC/Unreal implementation.
 
 ## Quality Gate Checklist
 

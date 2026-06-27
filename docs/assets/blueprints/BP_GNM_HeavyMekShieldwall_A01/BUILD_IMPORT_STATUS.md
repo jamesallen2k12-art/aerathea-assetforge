@@ -22,5 +22,5 @@
 
 - Replace DCC review geometry with approved art-model projector.
 - Author final UVs, BC/N/ORM/E textures, and material instances.
-- Replace review helper panel with authored final Niagara/VFX implementation after final VFX art is approved.
+- Replace review helper panel with authored final Niagara/VFX implementation after approving the handoff in `docs/assets/vfx/VFX_GNM_AetherShieldWall_A01/NIAGARA_ART_PASS_HANDOFF.md`; `NS_GNM_AetherShieldWall_A01` is not authored yet.
 - Tune combat-facing state transitions, audio hooks, projectile rules, and gameplay blocking after combat rules are approved.

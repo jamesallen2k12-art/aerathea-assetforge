@@ -2,7 +2,9 @@
 
 ## Art Direction Summary
 
-`VFX_GNM_AetherShieldWall_A01` defines the first Gnome/Mekgineer Aether shield-wall effect for the Gnome-vs-Ogre rivalry kit. The effect should be clean, blue, segmented, defensive, and precise, with clear contrast against Ogre forge-orange and necromantic green effects.
+`VFX_GNM_AetherShieldWall_A01` defines the Gnome/Mekgineer Aether shield-wall effect for the Gnome-vs-Ogre rivalry kit. The current review implementation uses static helper panels and material-state instances. The final authored Niagara art pass should replace or supplement the helper panels with a clean, blue, segmented, defensive, and precise effect that contrasts clearly against Ogre forge-orange and necromantic green effects.
+
+Current status: first-pass helper/VFX contract implemented; final authored Niagara art-pass handoff ready; Unreal Niagara asset not authored.
 
 ## Gameplay Purpose
 
@@ -38,6 +40,7 @@ Create an original stylized fantasy MMORPG VFX state sheet of `VFX_GNM_AetherShi
 - Final VFX should move to Niagara or equivalent VFX assets while keeping the helper mesh as optional LOD support.
 - VFX attaches to projector sockets and Blueprint state.
 - The native shieldwall actor now provides the VFX contract: `ShieldState`, `ImpactIntensity`, `OverloadPercent`, `ImpactLocationNormalized`, `ImpactLocator`, and idle/impact/failing material bindings.
+- Final Niagara requires an implementation hook because `AAETHeavyMekShieldwallActor` currently pushes scalar parameters to materials and positions `ImpactLocator`, but does not own a Niagara component.
 
 ## Texture And Material Notes
 
@@ -46,6 +49,29 @@ Create an original stylized fantasy MMORPG VFX state sheet of `VFX_GNM_AetherShi
 - Review material: `M_GNM_AetherShieldWall_Review_A01`
 - State instances: `MI_GNM_AetherShieldWall_A01_Idle`, `MI_GNM_AetherShieldWall_A01_Impact`, `MI_GNM_AetherShieldWall_A01_Failing`
 - Runtime scalar parameters: `ImpactIntensity`, `OverloadPercent`, `ImpactLocationNormalized`
+
+Final Niagara assets:
+
+- `NS_GNM_AetherShieldWall_A01`
+- `NE_GNM_ShieldEdgeBands_A01`
+- `NE_GNM_ShieldSurfacePulse_A01`
+- `NE_GNM_ShieldImpactRipple_A01`
+- `NE_GNM_ShieldOverloadSparks_A01`
+- `NE_GNM_ShieldFailingFragments_A01`
+
+Niagara user parameters:
+
+- `User.ShieldState`
+- `User.ShieldWidthCm`
+- `User.ArcHeightCm`
+- `User.ProjectorCount`
+- `User.ImpactIntensity`
+- `User.OverloadPercent`
+- `User.ImpactLocationNormalized`
+- `User.ImpactWorldLocation`
+- `User.EdgeColor`
+- `User.FillColor`
+- `User.bFailing`
 
 ## Triangle Budget
 
@@ -58,6 +84,7 @@ Create an original stylized fantasy MMORPG VFX state sheet of `VFX_GNM_AetherShi
 - LOD1: reduce pulse lines and ripple density.
 - LOD2: keep edge bands and broad transparent fill only.
 - LOD3: disable particles and preserve minimal core/edge glow on projectors.
+- Niagara scalability: cap active particles and ribbons by distance, disable overload sparks first, disable surface fill second, keep edge bands last.
 
 ## Collision Notes
 
@@ -77,6 +104,7 @@ Create an original stylized fantasy MMORPG VFX state sheet of `VFX_GNM_AetherShi
 ## Unreal Import Notes
 
 - VFX placeholder asset: `/Game/Aerathea/VFX/GnomeOgre/VFX_GNM_AetherShieldWall_A01`
+- Final Niagara system target: `/Game/Aerathea/VFX/GnomeOgre/NS_GNM_AetherShieldWall_A01`
 - Helper mesh: `/Game/Aerathea/VFX/GnomeOgre/SM_GNM_AetherShieldWall_A01`
 - Material: `/Game/Aerathea/Materials/M_GNM_AetherShieldWall_Review_A01`
 - Blueprint consumer: `/Game/Aerathea/Blueprints/GnomeOgre/BP_GNM_HeavyMekShieldwall_A01`
@@ -86,6 +114,8 @@ Create an original stylized fantasy MMORPG VFX state sheet of `VFX_GNM_AetherShi
 
 - Package folder: `docs/assets/vfx/VFX_GNM_AetherShieldWall_A01/`
 - Unreal VFX folder: `/Game/Aerathea/VFX/GnomeOgre/`
+- Niagara art-pass handoff: `docs/assets/vfx/VFX_GNM_AetherShieldWall_A01/NIAGARA_ART_PASS_HANDOFF.md`
+- Build/import status: `docs/assets/vfx/VFX_GNM_AetherShieldWall_A01/BUILD_IMPORT_STATUS.md`
 - Material instances: `/Game/Aerathea/Materials/Instances/MI_GNM_AetherShieldWall_A01_*`
 
 ## Quality Gate Checklist
@@ -95,3 +125,4 @@ Create an original stylized fantasy MMORPG VFX state sheet of `VFX_GNM_AetherShi
 - State names match the Blueprint handoff.
 - Helper mesh, materials, LOD behavior, collision ownership, and Unreal paths are defined.
 - Final Niagara consumes the existing native state and parameter contract instead of duplicating gameplay state.
+- Final Niagara asset is not marked complete until `NS_GNM_AetherShieldWall_A01` exists in Unreal and is bound to the shieldwall actor or Blueprint.
