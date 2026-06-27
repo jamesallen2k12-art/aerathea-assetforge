@@ -1,5 +1,6 @@
 #include "AETReviewCameraDirector.h"
 
+#include "AETGnomeOgreBattlefieldEncounterActor.h"
 #include "Camera/CameraActor.h"
 #include "Camera/CameraComponent.h"
 #include "Components/PrimitiveComponent.h"
@@ -12,6 +13,120 @@
 
 namespace
 {
+FString NormalizedReviewPhaseName(FString PhaseName)
+{
+	PhaseName.TrimStartAndEndInline();
+	PhaseName.ReplaceInline(TEXT("-"), TEXT(""));
+	PhaseName.ReplaceInline(TEXT("_"), TEXT(""));
+	PhaseName.ReplaceInline(TEXT(" "), TEXT(""));
+	return PhaseName.ToLower();
+}
+
+bool TryReadEncounterPhaseCommandLine(EAETGnomeOgreEncounterState& OutState, FString& OutPhaseName)
+{
+	FString PhaseName;
+	if (!FParse::Value(FCommandLine::Get(), TEXT("AETEncounterPhase="), PhaseName) &&
+		!FParse::Value(FCommandLine::Get(), TEXT("AETReviewEncounterPhase="), PhaseName))
+	{
+		return false;
+	}
+
+	OutPhaseName = PhaseName;
+	const FString NormalizedPhaseName = NormalizedReviewPhaseName(PhaseName);
+	if (NormalizedPhaseName == TEXT("setup"))
+	{
+		OutState = EAETGnomeOgreEncounterState::Setup;
+		return true;
+	}
+	if (NormalizedPhaseName == TEXT("gnomeholdline"))
+	{
+		OutState = EAETGnomeOgreEncounterState::GnomeHoldLine;
+		return true;
+	}
+	if (NormalizedPhaseName == TEXT("ogreadvance"))
+	{
+		OutState = EAETGnomeOgreEncounterState::OgreAdvance;
+		return true;
+	}
+	if (NormalizedPhaseName == TEXT("shieldimpact"))
+	{
+		OutState = EAETGnomeOgreEncounterState::ShieldImpact;
+		return true;
+	}
+	if (NormalizedPhaseName == TEXT("pylonoverload"))
+	{
+		OutState = EAETGnomeOgreEncounterState::PylonOverload;
+		return true;
+	}
+	if (NormalizedPhaseName == TEXT("casterreinforcement"))
+	{
+		OutState = EAETGnomeOgreEncounterState::CasterReinforcement;
+		return true;
+	}
+	if (NormalizedPhaseName == TEXT("manticoreinterrupt"))
+	{
+		OutState = EAETGnomeOgreEncounterState::ManticoreInterrupt;
+		return true;
+	}
+	if (NormalizedPhaseName == TEXT("resolution"))
+	{
+		OutState = EAETGnomeOgreEncounterState::Resolution;
+		return true;
+	}
+
+	UE_LOG(LogTemp, Warning, TEXT("AETReviewCameraDirector: unrecognized AETEncounterPhase value '%s'."), *OutPhaseName);
+	return false;
+}
+
+int32 ReviewPhaseIndexForState(EAETGnomeOgreEncounterState State)
+{
+	switch (State)
+	{
+	case EAETGnomeOgreEncounterState::GnomeHoldLine:
+		return 0;
+	case EAETGnomeOgreEncounterState::OgreAdvance:
+		return 1;
+	case EAETGnomeOgreEncounterState::ShieldImpact:
+		return 2;
+	case EAETGnomeOgreEncounterState::PylonOverload:
+		return 3;
+	case EAETGnomeOgreEncounterState::CasterReinforcement:
+		return 4;
+	case EAETGnomeOgreEncounterState::ManticoreInterrupt:
+		return 5;
+	case EAETGnomeOgreEncounterState::Resolution:
+		return 6;
+	case EAETGnomeOgreEncounterState::Setup:
+	default:
+		return 0;
+	}
+}
+
+const TCHAR* ReviewPhaseLogName(EAETGnomeOgreEncounterState State)
+{
+	switch (State)
+	{
+	case EAETGnomeOgreEncounterState::Setup:
+		return TEXT("Setup");
+	case EAETGnomeOgreEncounterState::GnomeHoldLine:
+		return TEXT("GnomeHoldLine");
+	case EAETGnomeOgreEncounterState::OgreAdvance:
+		return TEXT("OgreAdvance");
+	case EAETGnomeOgreEncounterState::ShieldImpact:
+		return TEXT("ShieldImpact");
+	case EAETGnomeOgreEncounterState::PylonOverload:
+		return TEXT("PylonOverload");
+	case EAETGnomeOgreEncounterState::CasterReinforcement:
+		return TEXT("CasterReinforcement");
+	case EAETGnomeOgreEncounterState::ManticoreInterrupt:
+		return TEXT("ManticoreInterrupt");
+	case EAETGnomeOgreEncounterState::Resolution:
+		return TEXT("Resolution");
+	default:
+		return TEXT("Unknown");
+	}
+}
+
 void LogReviewViewState(const TCHAR* Context, APlayerController* PlayerController)
 {
 	if (PlayerController == nullptr)
@@ -65,12 +180,15 @@ void AAETReviewCameraDirector::BeginPlay()
 	CaptureElapsedSeconds = 0.0f;
 	PostScreenshotExitFrames = INDEX_NONE;
 
+	ConfigureCommandLineOptions();
 	ConfigureReviewMarkers();
 	ApplyReviewCamera();
+	ConfigureEncounterReviewPhase();
 
 	if (UWorld* World = GetWorld())
 	{
 		World->GetTimerManager().SetTimerForNextTick(this, &AAETReviewCameraDirector::ApplyReviewCamera);
+		World->GetTimerManager().SetTimerForNextTick(this, &AAETReviewCameraDirector::ConfigureEncounterReviewPhase);
 	}
 
 	if (bCaptureReviewScreenshot)
@@ -89,6 +207,88 @@ void AAETReviewCameraDirector::BeginPlay()
 		bCaptureReviewScreenshot ? TEXT("enabled") : TEXT("disabled"),
 		ScreenshotDelaySeconds,
 		ScreenshotWarmupFrames
+	);
+}
+
+void AAETReviewCameraDirector::ConfigureCommandLineOptions()
+{
+	float RequestedDelay = ScreenshotDelaySeconds;
+	if (FParse::Value(FCommandLine::Get(), TEXT("AETReviewCaptureDelay="), RequestedDelay))
+	{
+		ScreenshotDelaySeconds = FMath::Max(0.2f, RequestedDelay);
+	}
+}
+
+void AAETReviewCameraDirector::ConfigureEncounterReviewPhase()
+{
+	EAETGnomeOgreEncounterState RequestedState = EAETGnomeOgreEncounterState::Setup;
+	FString RequestedPhaseName;
+	if (!TryReadEncounterPhaseCommandLine(RequestedState, RequestedPhaseName))
+	{
+		return;
+	}
+
+	UWorld* World = GetWorld();
+	if (World == nullptr)
+	{
+		return;
+	}
+
+	AAETGnomeOgreBattlefieldEncounterActor* EncounterActor = nullptr;
+	for (TActorIterator<AAETGnomeOgreBattlefieldEncounterActor> It(World); It; ++It)
+	{
+		EncounterActor = *It;
+		if (EncounterActor != nullptr)
+		{
+			break;
+		}
+	}
+
+	if (EncounterActor == nullptr)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("AETReviewCameraDirector: AETEncounterPhase requested, but no Gnome/Ogre encounter actor was found."));
+		return;
+	}
+
+	EncounterActor->bAutoStart = false;
+	EncounterActor->bAutoAdvanceReviewPhases = false;
+	EncounterActor->StopReviewPhaseSequence();
+	EncounterActor->ReviewPhaseIndex = ReviewPhaseIndexForState(RequestedState);
+	EncounterActor->ResetEncounter();
+
+	switch (RequestedState)
+	{
+	case EAETGnomeOgreEncounterState::Setup:
+		break;
+	case EAETGnomeOgreEncounterState::GnomeHoldLine:
+	case EAETGnomeOgreEncounterState::OgreAdvance:
+	case EAETGnomeOgreEncounterState::Resolution:
+		EncounterActor->SetEncounterState(RequestedState);
+		break;
+	case EAETGnomeOgreEncounterState::ShieldImpact:
+		EncounterActor->TriggerShieldImpact(0.15f, 0.75f);
+		break;
+	case EAETGnomeOgreEncounterState::PylonOverload:
+		EncounterActor->TriggerPylonOverload(0.78f);
+		break;
+	case EAETGnomeOgreEncounterState::CasterReinforcement:
+		EncounterActor->TriggerCasterReinforcement(
+			EncounterActor->OgreShamanActor != nullptr ? EncounterActor->OgreShamanActor.Get() : EncounterActor->OgreNecromancerActor.Get()
+		);
+		break;
+	case EAETGnomeOgreEncounterState::ManticoreInterrupt:
+		EncounterActor->TriggerManticoreInterrupt(EncounterActor->ManticoreInterruptActor.Get());
+		break;
+	default:
+		break;
+	}
+
+	UE_LOG(
+		LogTemp,
+		Display,
+		TEXT("AETReviewCameraDirector: forced Gnome/Ogre review phase %s from command-line value '%s'."),
+		ReviewPhaseLogName(RequestedState),
+		*RequestedPhaseName
 	);
 }
 

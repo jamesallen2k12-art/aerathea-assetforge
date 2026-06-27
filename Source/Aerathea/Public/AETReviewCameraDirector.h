@@ -47,6 +47,8 @@ protected:
 	void RequestReviewScreenshot();
 
 private:
+	void ConfigureCommandLineOptions();
+	void ConfigureEncounterReviewPhase();
 	void ConfigureReviewMarkers();
 	void MarkScreenshotDelayElapsed();
 	void TryRequestReviewScreenshot();

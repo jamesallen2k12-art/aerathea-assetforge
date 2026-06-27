@@ -21,17 +21,17 @@ Implement a reusable Blueprint encounter coordinator for the Gnome/Ogre rivalry 
 | `SK_OGR_Teknomancer_A01` | First-pass DCC/Unreal import complete | Required Ogre magic-tech pressure unit |
 | `SK_OGR_Warrior_Rival_A01` | First-pass DCC/Unreal import complete | Required Ogre melee pressure unit |
 | `SM_OGR_CairnBattleGate_A01` | First-pass DCC/Unreal import complete | Required Ogre background/frame prop |
-| `SM_OGR_CrudeTekPylon_A01` | Package ready, not imported | Optional pylon objective slot |
-| `SK_OGR_Shaman_A01` | Package ready, not imported | Optional caster reinforcement slot |
-| `SK_OGR_Necromancer_A01` | Package ready, not imported | Optional caster reinforcement slot |
-| `SK_CRE_Manticore_A01` | Package ready, not imported | Base dependency for optional creature branch |
-| `SK_CRE_Manticore_Interrupt_A01` | Package ready, not imported | Optional Manticore branch |
+| `SM_OGR_CrudeTekPylon_A01` | First-pass DCC/Unreal import complete; native pylon wrapper exists | Optional pylon objective slot |
+| `SK_OGR_Shaman_A01` | First-pass DCC/Unreal import complete | Optional caster reinforcement slot |
+| `SK_OGR_Necromancer_A01` | First-pass DCC/Unreal import complete | Optional caster reinforcement slot |
+| `SK_CRE_Manticore_A01` | First-pass DCC/Unreal import complete | Base dependency for optional creature branch |
+| `SK_CRE_Manticore_Interrupt_A01` | First-pass DCC/Unreal import complete; native interrupt wrapper exists | Optional Manticore branch |
 
 ## Implementation Target
 
 - Blueprint: `/Game/Aerathea/Blueprints/GnomeOgre/BP_GNM_OGR_BattlefieldEncounter_A01`
 - Editor label: `AET_PROD_GNM_OGR_BattlefieldEncounter_A01`
-- Map placement: deferred until the coordinator can validate required imported actors.
+- Map placement: complete in `L_Aerathea_Startup` with required and branch actors assigned.
 - Root pivot: encounter center.
 
 ## Component Plan
@@ -128,6 +128,8 @@ After Unreal implementation:
 
 - Add `AET_PROD_GNM_OGR_BattlefieldEncounter_A01` to `Tools/Unreal/validate_startup_scene.py` only if the actor is placed in `L_Aerathea_Startup`.
 - Validate that optional disabled branches do not fail startup checks.
+- Use `Tools/Unreal/validate_gnome_ogre_encounter_phase_sequence.py` after C++ or Blueprint phase edits.
+- Use `Tools/Unreal/capture_gnome_ogre_phase_reviews.sh` for shield impact, pylon overload, caster reinforcement, and Manticore interrupt review frames.
 - Keep capture orientation rules from `AGENTS.md` before presenting any visual approval.
 
 ## Acceptance Checklist
