@@ -2,33 +2,37 @@
 
 ## Current Result
 
-- Build/import status: planning package complete; DCC build not started.
+- Build/import status: first-pass DCC encounter variant generated and imported to Unreal.
 - Production scope: encounter-specific Manticore interrupt variant for `KIT_GNM_OGR_RivalryEncounter_A01`.
-- Dependency: base `SK_CRE_Manticore_A01` production direction, body proportions, skeleton, and animation requirements now exist as documentation and must be approved/imported before this variant becomes a DCC build.
-- Review scope: production planning only. No Blender source, FBX export, Unreal skeletal mesh, physics asset, animation Blueprint, or startup actor exists yet.
+- Dependency: imports against base `/Game/Aerathea/Creatures/Manticores/Base/SK_CRE_Manticore_A01_Skeleton`.
+- Unreal state: skeletal mesh imported, material instances assigned, LOD0-LOD3 generated, sockets added, physics asset assigned, base Manticore animation Blueprint placeholder reused, startup review actor placed, validation passing.
 
-## Planned Source Outputs
+## Source Outputs
 
 - Blender source: `SourceAssets/Blender/Creatures/Manticores/SK_CRE_Manticore_Interrupt_A01/SK_CRE_Manticore_Interrupt_A01.blend`
 - FBX export: `SourceAssets/Exports/Creatures/Manticores/SK_CRE_Manticore_Interrupt_A01/SK_CRE_Manticore_Interrupt_A01.fbx`
-- DCC review render: `Saved/Automation/ManticoreInterruptReview/SK_CRE_Manticore_Interrupt_A01_DCCReview.png`
+- DCC review render: `Saved/Automation/GnomeOgreRemainingReview/SK_CRE_Manticore_Interrupt_A01_DCCReview.png`
+- DCC build script: `Tools/DCC/build_gnome_ogre_remaining_assets.py`
+- Unreal import script: `Tools/Unreal/import_gnome_ogre_remaining_assets.py`
 
-## Planned Unreal Assets
+## Unreal Assets
 
 - `/Game/Aerathea/Creatures/Manticores/SK_CRE_Manticore_Interrupt_A01`
 - `/Game/Aerathea/Creatures/Manticores/PHYS_CRE_Manticore_Interrupt_A01`
-- `/Game/Aerathea/Creatures/Manticores/ABP_CRE_Manticore_A01`
-- `/Game/Aerathea/Materials/Instances/MI_CRE_Manticore_Interrupt_A01_Body`
-- `/Game/Aerathea/Materials/Instances/MI_CRE_Manticore_Interrupt_A01_Wings`
-- `/Game/Aerathea/Materials/Instances/MI_CRE_Manticore_Interrupt_A01_TailClaws`
-- Optional `/Game/Aerathea/Materials/Instances/MI_CRE_Manticore_Interrupt_A01_Venom`
-- Optional `/Game/Aerathea/Blueprints/Encounters/BP_GNM_OGR_ManticoreInterrupt_A01`
+- Shared skeleton: `/Game/Aerathea/Creatures/Manticores/Base/SK_CRE_Manticore_A01_Skeleton`
+- Shared animation Blueprint placeholder: `/Game/Aerathea/Creatures/Manticores/Base/ABP_CRE_Manticore_A01`
+- Startup actor: `AET_PROD_CRE_Manticore_Interrupt_A01`
+- Material instances:
+  - `/Game/Aerathea/Materials/Instances/MI_CRE_Manticore_Interrupt_A01_Manticore_Body`
+  - `/Game/Aerathea/Materials/Instances/MI_CRE_Manticore_Interrupt_A01_Manticore_Mane`
+  - `/Game/Aerathea/Materials/Instances/MI_CRE_Manticore_Interrupt_A01_Manticore_Wing`
+  - `/Game/Aerathea/Materials/Instances/MI_CRE_Manticore_Interrupt_A01_Manticore_TailClaw`
+  - `/Game/Aerathea/Materials/Instances/MI_CRE_Manticore_Interrupt_A01_Manticore_Venom`
 
-## Planned Review Outputs
+## Validation
 
-- DCC proof against Gnome heavy Mek, Ogre Warrior, and Ogre cairn gate scale references.
-- Startup review actor only after a base Manticore DCC skeleton exists.
-- Encounter staging review with the Manticore entering from the background or flank, not replacing the main Gnome/Ogre composition.
+- `Tools/Unreal/validate_startup_scene.py` now checks this variant mesh, physics asset, shared skeleton binding, LOD count, sockets, bounds, runtime visibility, and startup actor.
+- Latest validation result: passing with `121` expected assets, `46` expected actor labels, and `25` ground tiles.
 
 ## Completed Prerequisites
 
@@ -42,9 +46,8 @@
 
 ## Remaining To Finalize
 
-1. Review and approve base `SK_CRE_Manticore_A01` production direction, skeleton, and proportions.
-2. Build the first-pass DCC source for the interrupt variant or a reusable base Manticore variant.
-3. Export FBX and import to Unreal as a skeletal mesh.
-4. Generate material instances, LOD0-LOD3, sockets, physics asset, and animation Blueprint placeholder.
-5. Create encounter Blueprint/VFX timing for leap, wing buffet, tail sting, venom telegraph, and shield-wall impact.
-6. Validate in the startup review scene only after the base creature import is stable.
+1. Review interrupt variant scale and silhouette beside the base Manticore, Ogre line, heavy Mek, and crude Tek pylon.
+2. Replace blockout variant geometry with final encounter-ready sculpt and approved surface damage/torn membrane treatment.
+3. Tune physics bodies, collision capsules, tail hit traces, wing-buffet traces, and venom sockets.
+4. Create optional `/Game/Aerathea/Blueprints/Encounters/BP_GNM_OGR_ManticoreInterrupt_A01`.
+5. Add encounter timing for arrival leap/glide, wing buffet, tail sting, venom telegraph, and shield-wall pressure.

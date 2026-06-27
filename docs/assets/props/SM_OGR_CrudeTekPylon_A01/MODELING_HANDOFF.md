@@ -24,7 +24,7 @@ Create the DCC source, static mesh, material slots, LODs, sockets, collision, an
 - Height target: 360-520 cm.
 - Footprint target: 260-380 cm wide.
 - Unreal path: `/Game/Aerathea/Props/Ogres/Teknomancy/`
-- DCC state: not started.
+- DCC state: first-pass Blender source and FBX export complete; final art model polish pending.
 
 ## Modeling Constraints
 

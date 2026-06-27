@@ -8,7 +8,7 @@
 - Theme: common dangerous ruin/desert predator
 - Source concepts: `Manticore.png`, `Manticore1.png`, `Manticore3.png`, `Manticore4.png`, `Manticore5.png`, `Manticore8.png`, plus variant-only checks from `Manticore2.png`, `Manticore6.png`, `Manticore7.png`, `Manticore9.png`, and `Manticore10.png`
 - Source folder: `/home/Flamestrike/Desktop/Aerathea/Aerathea Creative/ASSET CONCEPTS/`
-- Current status: base production direction, skeleton/proportion plan, modeling handoff, and build/import status ready; DCC build not started
+- Current status: first-pass DCC source, FBX export, Unreal skeletal import, material instances, physics asset, anim Blueprint, sockets, startup review placement, validation, and build/import status complete; final creature art polish and animation set pending
 
 `SK_CRE_Manticore_A01` is the shared Aerathea Manticore body and rig target. It establishes the readable base creature before the Gnome/Ogre interrupt variant, future elemental variants, or named elite versions are built. The approved anchor is lion body, bat/draconic wings, and scorpion tail, with a clear tail stinger and leathery wing silhouette.
 

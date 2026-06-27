@@ -9,7 +9,7 @@
 - World: Aerathea
 - Theme: Ogre crude Teknomancy battlefield power pylon
 - Primary source references: `OgreTekShop.png`, `Ogres10.png`, `Ogres11.png`, `OgreMaleTek.png`, `OgreTekvsGnomeMek.png`, `GnomevsOgre3.png`
-- Current status: production package, modeling handoff, and build/import status ready; DCC build not started
+- Current status: first-pass DCC source, FBX export, Unreal import, material instances, sockets, LODs, simple collision, startup review placement, validation, and build/import status complete; final art polish and Blueprint state wrapper pending
 
 `SM_OGR_CrudeTekPylon_A01` is a large unstable field pylon that channels Ogre Teknomancy into cannons, bracers, barricades, or anti-Mek disruption. It should feel overbuilt, hot, dangerous, and made by Ogres who understand magic-machines by instinct rather than gnomish precision. The pylon is not a clean generator, not a refined magical obelisk, and not a gnome Aetherium device.
 

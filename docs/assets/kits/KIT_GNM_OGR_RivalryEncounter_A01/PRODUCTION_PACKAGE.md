@@ -142,12 +142,12 @@ Use 2K texture sets for common characters and props. Use 4K only for a named her
 - `SK_OGR_Teknomancer_A01` has a first-pass class-fit DCC/Unreal review import.
 - `SK_GNM_HeavyMek_Rivalry_A01` has a first-pass DCC/Unreal review import with required Mek, weapon, pilot, and VFX sockets.
 - `SK_OGR_Warrior_Rival_A01` has a first-pass DCC/Unreal review import with shield, hammer, belt, stomp, head, and weapon grip sockets.
-- `SK_OGR_Shaman_A01` has a production package, modeling handoff, build/import status, and shamanic socket/material/animation plan ready; DCC build waits for approval.
-- `SK_OGR_Necromancer_A01` has a production package, modeling handoff, build/import status, and necromantic socket/material/animation plan ready; DCC build waits for approval.
+- `SK_OGR_Shaman_A01` has a first-pass DCC/Unreal review import with shamanic material instances, sockets, physics asset, anim Blueprint, startup placement, validation, and build/import status.
+- `SK_OGR_Necromancer_A01` has a first-pass DCC/Unreal review import with necromantic material instances, sockets, physics asset, anim Blueprint, startup placement, validation, and build/import status.
 - `SM_OGR_CairnBattleGate_A01` has a first-pass DCC/Unreal review import with material instances, LOD0-LOD3, static mesh sockets, simple collision, startup review placement, validation, and offscreen capture coverage.
-- `SM_OGR_CrudeTekPylon_A01` has a production package, modeling handoff, build/import status, material plan, socket plan, collision plan, LOD plan, and future Blueprint state notes ready; DCC build waits for approval.
-- `SK_CRE_Manticore_A01` has a base production package, source concept intake, modeling handoff, build/import status, skeleton/proportion plan, material plan, LOD plan, collision plan, and sockets ready for approval.
-- `SK_CRE_Manticore_Interrupt_A01` has an encounter-variant production package, modeling handoff, and build/import status ready; DCC build waits for base `SK_CRE_Manticore_A01` approval/import.
+- `SM_OGR_CrudeTekPylon_A01` has a first-pass DCC/Unreal review import with material instances, LOD0-LOD3, static mesh sockets, simple collision, startup placement, validation, and build/import status.
+- `SK_CRE_Manticore_A01` has a first-pass DCC/Unreal review import with skeleton, physics asset, anim Blueprint, material instances, sockets, startup placement, validation, and build/import status.
+- `SK_CRE_Manticore_Interrupt_A01` has a first-pass DCC/Unreal review import as an encounter variant with material instances, physics asset, sockets, startup placement, validation, and build/import status.
 - `BP_GNM_OGR_BattlefieldEncounter_A01` has a native-backed coordinator class and compiled Blueprint asset with dependency validation, phase-state controls, actor slots, trigger volumes, optional-branch gates, and shieldwall impact/pylon/caster/Manticore event hooks; startup placement is deferred until optional branch imports can be assigned cleanly.
 - Current approved sequence is complete through production handoff. Next work should choose which approved handoff moves into DCC/Unreal implementation.
 

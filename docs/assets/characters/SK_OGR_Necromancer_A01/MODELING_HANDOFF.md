@@ -18,7 +18,7 @@ Create the DCC source, class gear, grave-lantern staff silhouette, socket plan, 
 - Type: Skeletal Mesh class outfit and staff package.
 - Height target: 330 cm male Ogre baseline, with later female fit adjustment.
 - Unreal path: `/Game/Aerathea/Characters/Ogres/Necromancer/`
-- DCC state: not started.
+- DCC state: first-pass Blender source and FBX export complete; final class art polish pending.
 
 ## Modeling Constraints
 

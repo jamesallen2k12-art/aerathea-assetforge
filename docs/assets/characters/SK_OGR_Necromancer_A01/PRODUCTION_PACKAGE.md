@@ -8,7 +8,7 @@
 - World: Aerathea
 - Theme: Ogre battlefield necromancer, grave-cairn caster, corpse-war ritualist
 - Primary source references: `OgreNecromancer.png`, `OgreNecropolis.png`, `OgreMale2.png`, `SK_OGR_Base_A01`
-- Current status: production package, modeling handoff, and build/import status ready; DCC build not started
+- Current status: first-pass DCC source, FBX export, Unreal skeletal import, material instances, physics asset, anim Blueprint, sockets, startup review placement, validation, and build/import status complete; final art polish and animation set pending
 
 Ogre Necromancers are grim battlefield casters who turn casualties, grave cairns, and corpse trophies into weapons. They are still Ogres first: huge, broad, aggressive, and physically terrifying. Their class identity is defined by grave-green lantern magic, skull belts, corpse-war trophies, tombstone-like armor plates, blackened iron, torn dark cloth, bone spikes, and a heavy staff or grave-lantern focus.
 

@@ -8,7 +8,7 @@
 - World: Aerathea
 - Theme: Ogre primal shaman, cairn-channel caster, battlefield ritualist
 - Primary source references: `OgreShaman.png`, `OgreShamanHut.png`, `OgreFemale2.png`, `SK_OGR_Base_A01`
-- Current status: production package, modeling handoff, and build/import status ready; DCC build not started
+- Current status: first-pass DCC source, FBX export, Unreal skeletal import, material instances, physics asset, anim Blueprint, sockets, startup review placement, validation, and build/import status complete; final art polish and animation set pending
 
 Ogre Shamans are brutal battlefield mystics. They do not feel refined, scholarly, or nature-druidic. Their magic is instinctive and forceful: cairn stones, carved bone, hide wraps, storm charms, ember runes, ritual paint, and huge staffs used as both spell focus and weapon. They stand with the same broad Ogre mass as Warriors and Teknomancers, but their silhouette is defined by a ritual staff, rune wheel, dangling fetishes, fur and hide, stone charm plates, and a free casting hand.
 
