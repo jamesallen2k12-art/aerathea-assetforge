@@ -138,7 +138,7 @@ Use 2K texture sets for common characters and props. Use 4K only for a named her
 
 ## Implementation Status
 
-- `BP_GNM_HeavyMekShieldwall_A01`, `SM_GNM_AetherShieldProjector_A01`, `SM_GNM_AetherShieldWall_A01`, and `VFX_GNM_AetherShieldWall_A01` have approved first-pass review implementations, a validated native Blueprint/VFX contract for state material switching, impact location, impact intensity, overload, and a native Niagara component hook. The final shieldwall Niagara art-pass handoff is ready; the authored Unreal Niagara system is not created.
+- `BP_GNM_HeavyMekShieldwall_A01`, `SM_GNM_AetherShieldProjector_A01`, `SM_GNM_AetherShieldWall_A01`, and `VFX_GNM_AetherShieldWall_A01` have approved first-pass review implementations, a validated native Blueprint/VFX contract for state material switching, impact location, impact intensity, overload, a native Niagara component hook, and an empty Niagara target system. The final shieldwall Niagara emitter art pass is still pending.
 - `SK_OGR_Teknomancer_A01` has a first-pass class-fit DCC/Unreal review import.
 - `SK_GNM_HeavyMek_Rivalry_A01` has a first-pass DCC/Unreal review import with required Mek, weapon, pilot, and VFX sockets.
 - `SK_OGR_Warrior_Rival_A01` has a first-pass DCC/Unreal review import with shield, hammer, belt, stomp, head, and weapon grip sockets.
@@ -148,8 +148,9 @@ Use 2K texture sets for common characters and props. Use 4K only for a named her
 - `SM_OGR_CrudeTekPylon_A01` has a first-pass DCC/Unreal review import with material instances, LOD0-LOD3, static mesh sockets, simple collision, startup placement, validation, and build/import status.
 - `SK_CRE_Manticore_A01` has a first-pass DCC/Unreal review import with skeleton, physics asset, anim Blueprint, material instances, sockets, startup placement, validation, and build/import status.
 - `SK_CRE_Manticore_Interrupt_A01` has a first-pass DCC/Unreal review import as an encounter variant with material instances, physics asset, sockets, startup placement, validation, and build/import status.
-- `BP_GNM_OGR_BattlefieldEncounter_A01` has a native-backed coordinator class and compiled Blueprint asset with dependency validation, phase-state controls, actor slots, trigger volumes, optional-branch gates, and shieldwall impact/pylon/caster/Manticore event hooks; startup placement is deferred until optional branch imports can be assigned cleanly.
-- Current approved sequence is complete through production handoff. Next work should choose which approved handoff moves into DCC/Unreal implementation.
+- `BP_OGR_CrudeTekPylon_A01` and `BP_CRE_ManticoreInterrupt_A01` have native-backed wrapper Blueprints, startup review actors, state contracts, and coordinator wiring.
+- `BP_GNM_OGR_BattlefieldEncounter_A01` has a native-backed coordinator class and compiled Blueprint asset with dependency validation, phase-state controls, actor slots, trigger volumes, optional-branch gates, shieldwall impact/pylon/caster/Manticore event hooks, startup placement, and assigned required/branch actor references.
+- Current approved sequence is complete through first-pass startup wiring. Next work should review the updated capture, then author final VFX/ability timing or move into gameplay phase automation.
 
 ## Quality Gate Checklist
 

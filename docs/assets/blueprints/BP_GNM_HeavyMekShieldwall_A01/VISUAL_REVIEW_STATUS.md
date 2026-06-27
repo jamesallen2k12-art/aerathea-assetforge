@@ -17,7 +17,7 @@
 - The runtime view confirms the actor is visible, not clipped, and not presenting collision helper geometry.
 - The helper shield mesh has been strengthened with segmented panes, edge rails, horizontal pulse lanes, projector nodes, impact focus geometry, and failing-crack accents.
 - The native actor now swaps idle, impact, and failing material states and exposes `TriggerImpact` plus `ImpactLocationNormalized` for future localized ripples.
-- This remains a static helper/VFX placeholder with a Niagara-ready contract. The final Niagara art-pass handoff is ready, but `NS_GNM_AetherShieldWall_A01` is not authored yet.
+- This remains a static helper/VFX placeholder with a Niagara-ready contract. The final Niagara art-pass handoff is ready, and empty target `NS_GNM_AetherShieldWall_A01` exists for emitter authoring.
 
 ## Accepted For
 

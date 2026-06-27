@@ -7,7 +7,7 @@
 - Parent kit: `KIT_GNM_OGR_RivalryEncounter_A01`
 - World: Aerathea
 - Theme: Gnome Heavy Mek shield line versus Ogre warband pressure
-- Current status: native-backed coordinator implemented; Blueprint asset created and compiled; startup placement deferred until all optional branch imports can be assigned cleanly
+- Current status: native-backed coordinator implemented; Blueprint asset created, compiled, placed in startup, and assigned to required and branch actors
 
 `BP_GNM_OGR_BattlefieldEncounter_A01` coordinates the reusable Gnome/Ogre rivalry scene. It should not become a monolithic art asset. Its job is to place, reference, configure, and sequence existing child actors: Gnome Heavy Mek, Heavy Mek shieldwall, Ogre Teknomancer, Ogre Warrior, Cairn Battle Gate, crude Tek pylon objective, optional Ogre caster variants, and optional Manticore interrupt.
 
@@ -18,7 +18,7 @@ The encounter must keep the faction reads separated: Gnome precision, brass/dark
 - Provides a reusable encounter coordinator for review scenes, quests, events, dungeon pulls, and future combat prototypes.
 - Establishes actor slots, dependency validation, phase sequencing, and VFX/audio hooks for the Gnome/Ogre rivalry.
 - Allows imported first-pass assets to be reviewed together without hard-coding every child into the level.
-- Supports optional branches for crude Tek pylon objective, Ogre Shaman/Necromancer reinforcement, and Manticore interrupt after those assets are approved/imported.
+- Supports optional branches for crude Tek pylon objective, Ogre Shaman/Necromancer reinforcement, and Manticore interrupt using the current first-pass imported assets and wrapper Blueprints.
 - Creates a single production handoff for designers and programmers before gameplay combat rules are final.
 
 ## 3. Silhouette Notes
@@ -64,7 +64,7 @@ Create an original stylized fantasy MMORPG encounter Blueprint sheet of `BP_GNM_
 - Use child meshes and skeletal actors as placed components, child actor components, soft references, or spawn classes.
 - Add simple editor-only marker meshes or billboards only if useful for layout; keep them hidden in runtime review.
 - Do not create crude placeholder fantasy art to stand in for missing children.
-- Missing dependencies should remain disabled slots until their production assets exist.
+- Missing dependencies should remain disabled slots; the current pylon, caster, and Manticore review branches are assigned from first-pass imported assets.
 
 ## 8. Texture And Material Notes
 
@@ -81,7 +81,7 @@ Runtime material/VFX control should forward parameters to child actors:
 
 Blueprint adds no unique triangle budget. It must keep aggregate scene cost reviewable:
 
-- Startup/review slice should use the currently imported first-pass actors and keep optional package-only actors disabled.
+- Startup/review slice should use the currently imported first-pass actors and keep non-reviewed package-only actors disabled.
 - Do not spawn every optional branch at once.
 - Use HLOD or manual review layout later if the encounter becomes a full battlefield set piece.
 
@@ -98,8 +98,8 @@ Blueprint collision components:
 - `EncounterBounds`: non-blocking BoxComponent for editor review and activation area.
 - `GnomeLineTrigger`: optional phase trigger.
 - `OgreAdvanceTrigger`: optional phase trigger.
-- `PylonObjectiveVolume`: disabled until pylon gameplay is implemented.
-- `ManticoreInterruptVolume`: disabled until Manticore import and encounter rules are approved.
+- `PylonObjectiveVolume`: review-safe trigger volume for future pylon gameplay rules.
+- `ManticoreInterruptVolume`: review-safe trigger volume for future interrupt gameplay rules.
 
 Do not use the Blueprint root as blocking collision. Child actors keep their own collision.
 
@@ -124,7 +124,7 @@ Use short, inspectable Blueprint events first. Do not script final combat AI in 
 - Native class: `AAETGnomeOgreBattlefieldEncounterActor`.
 - Root component: `DefaultSceneRoot` or custom `SceneComponent`.
 - Editor label if placed: `AET_PROD_GNM_OGR_BattlefieldEncounter_A01`.
-- Map target: optional placement in `/Game/Aerathea/Maps/L_Aerathea_Startup` only after dependency review.
+- Map target: placed in `/Game/Aerathea/Maps/L_Aerathea_Startup` for review.
 
 Required child/dependency slots:
 
@@ -133,10 +133,10 @@ Required child/dependency slots:
 - `OgreTeknomancerActor`: `SK_OGR_Teknomancer_A01` actor or future class wrapper
 - `OgreWarriorActor`: `SK_OGR_Warrior_Rival_A01` actor or future class wrapper
 - `CairnGateActor`: `SM_OGR_CairnBattleGate_A01` actor
-- `CrudeTekPylonActor`: future `SM_OGR_CrudeTekPylon_A01` or `BP_OGR_CrudeTekPylon_A01`
-- `OgreShamanActor`: future `SK_OGR_Shaman_A01`
-- `OgreNecromancerActor`: future `SK_OGR_Necromancer_A01`
-- `ManticoreInterruptActor`: future `SK_CRE_Manticore_Interrupt_A01` or creature Blueprint
+- `CrudeTekPylonActor`: `BP_OGR_CrudeTekPylon_A01`
+- `OgreShamanActor`: `SK_OGR_Shaman_A01` startup actor
+- `OgreNecromancerActor`: `SK_OGR_Necromancer_A01` startup actor
+- `ManticoreInterruptActor`: `BP_CRE_ManticoreInterrupt_A01`
 
 Editor-exposed variables:
 
@@ -174,12 +174,13 @@ Blueprint functions/events:
   - `Source/Aerathea/Public/AETGnomeOgreBattlefieldEncounterActor.h`
   - `Source/Aerathea/Private/AETGnomeOgreBattlefieldEncounterActor.cpp`
 - Blueprint creation script: `Tools/Unreal/create_gnome_ogre_encounter_blueprint.py`
+- Blueprint wiring script: `Tools/Unreal/wire_gnome_ogre_encounter.py`
 
 ## 15. Quality Gate Checklist
 
 - Encounter remains a coordinator, not a monolithic art asset.
 - Gnome and Ogre visual languages remain separated.
-- Optional package-only dependencies are soft-gated until imported.
+- Optional branch dependencies are assigned for the current first-pass review slice.
 - Actor slots, phase states, variables, events, collision volumes, and Unreal paths are defined.
 - Shieldwall, pylon, caster, and Manticore branches have explicit dependency gates.
 - No final combat AI, quest logic, loot, or travel rules are hard-coded in this package.

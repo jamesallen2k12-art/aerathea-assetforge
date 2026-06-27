@@ -1,6 +1,8 @@
 #include "AETGnomeOgreBattlefieldEncounterActor.h"
 
+#include "AETCrudeTekPylonActor.h"
 #include "AETHeavyMekShieldwallActor.h"
+#include "AETManticoreInterruptActor.h"
 #include "Components/BoxComponent.h"
 #include "Components/SceneComponent.h"
 
@@ -181,6 +183,10 @@ void AAETGnomeOgreBattlefieldEncounterActor::TriggerShieldImpact(float NewImpact
 void AAETGnomeOgreBattlefieldEncounterActor::TriggerPylonOverload(float NewOverloadPercent)
 {
 	PylonOverloadPercent = FMath::Clamp(NewOverloadPercent, 0.0f, 1.0f);
+	if (AAETCrudeTekPylonActor* PylonActor = Cast<AAETCrudeTekPylonActor>(PylonObjectiveActor.Get()))
+	{
+		PylonActor->TriggerOverload(PylonOverloadPercent);
+	}
 	if (ShieldwallActor != nullptr)
 	{
 		ShieldwallActor->SetOverloadPercent(PylonOverloadPercent);
@@ -205,6 +211,10 @@ void AAETGnomeOgreBattlefieldEncounterActor::TriggerManticoreInterrupt(AActor* M
 	if (ActorToTrigger != nullptr)
 	{
 		SetOptionalActorEnabled(ActorToTrigger, true);
+		if (AAETManticoreInterruptActor* InterruptActor = Cast<AAETManticoreInterruptActor>(ActorToTrigger))
+		{
+			InterruptActor->TriggerInterrupt();
+		}
 		OnManticoreInterruptTriggered.Broadcast(ActorToTrigger);
 	}
 	SetEncounterState(EAETGnomeOgreEncounterState::ManticoreInterrupt);
@@ -220,6 +230,14 @@ void AAETGnomeOgreBattlefieldEncounterActor::ResetEncounter()
 		ShieldwallActor->SetImpactIntensity(0.0f);
 		ShieldwallActor->SetImpactLocationNormalized(0.0f);
 		ShieldwallActor->SetShieldState(EAETShieldwallState::Braced);
+	}
+	if (AAETCrudeTekPylonActor* PylonActor = Cast<AAETCrudeTekPylonActor>(PylonObjectiveActor.Get()))
+	{
+		PylonActor->ResetPylon();
+	}
+	if (AAETManticoreInterruptActor* InterruptActor = Cast<AAETManticoreInterruptActor>(ManticoreInterruptActor.Get()))
+	{
+		InterruptActor->ResetInterrupt();
 	}
 	SetOptionalActorEnabled(PylonObjectiveActor, bEnablePylonObjective);
 	SetOptionalActorEnabled(OgreShamanActor, bEnableCasterReinforcements);
@@ -279,6 +297,9 @@ void AAETGnomeOgreBattlefieldEncounterActor::UpdateEncounterLayout()
 
 void AAETGnomeOgreBattlefieldEncounterActor::ApplyEncounterState()
 {
+	AAETCrudeTekPylonActor* PylonActor = Cast<AAETCrudeTekPylonActor>(PylonObjectiveActor.Get());
+	AAETManticoreInterruptActor* InterruptActor = Cast<AAETManticoreInterruptActor>(ManticoreInterruptActor.Get());
+
 	if (ShieldwallActor != nullptr)
 	{
 		switch (EncounterState)
@@ -302,6 +323,61 @@ void AAETGnomeOgreBattlefieldEncounterActor::ApplyEncounterState()
 		case EAETGnomeOgreEncounterState::OgreAdvance:
 		case EAETGnomeOgreEncounterState::CasterReinforcement:
 		case EAETGnomeOgreEncounterState::ManticoreInterrupt:
+		default:
+			break;
+		}
+	}
+
+	if (PylonActor != nullptr)
+	{
+		switch (EncounterState)
+		{
+		case EAETGnomeOgreEncounterState::Setup:
+		case EAETGnomeOgreEncounterState::GnomeHoldLine:
+			PylonActor->SetPylonState(EAETCrudeTekPylonState::Idle);
+			PylonActor->SetOverloadPercent(0.0f);
+			break;
+		case EAETGnomeOgreEncounterState::OgreAdvance:
+		case EAETGnomeOgreEncounterState::CasterReinforcement:
+			PylonActor->SetPylonState(EAETCrudeTekPylonState::Charged);
+			PylonActor->SetOverloadPercent(FMath::Max(PylonOverloadPercent, 0.35f));
+			break;
+		case EAETGnomeOgreEncounterState::PylonOverload:
+			PylonActor->TriggerOverload(PylonOverloadPercent);
+			break;
+		case EAETGnomeOgreEncounterState::Resolution:
+			PylonActor->SetPylonState(EAETCrudeTekPylonState::Damaged);
+			PylonActor->SetDamagePercent(0.45f);
+			break;
+		case EAETGnomeOgreEncounterState::ShieldImpact:
+		case EAETGnomeOgreEncounterState::ManticoreInterrupt:
+		default:
+			break;
+		}
+	}
+
+	if (InterruptActor != nullptr)
+	{
+		switch (EncounterState)
+		{
+		case EAETGnomeOgreEncounterState::Setup:
+		case EAETGnomeOgreEncounterState::GnomeHoldLine:
+			InterruptActor->ResetInterrupt();
+			break;
+		case EAETGnomeOgreEncounterState::OgreAdvance:
+		case EAETGnomeOgreEncounterState::CasterReinforcement:
+			InterruptActor->SetInterruptState(EAETManticoreInterruptState::Stalking);
+			InterruptActor->SetSequenceProgress(0.25f);
+			break;
+		case EAETGnomeOgreEncounterState::ManticoreInterrupt:
+			InterruptActor->TriggerInterrupt();
+			break;
+		case EAETGnomeOgreEncounterState::Resolution:
+			InterruptActor->SetInterruptState(EAETManticoreInterruptState::Retreat);
+			InterruptActor->SetSequenceProgress(0.8f);
+			break;
+		case EAETGnomeOgreEncounterState::ShieldImpact:
+		case EAETGnomeOgreEncounterState::PylonOverload:
 		default:
 			break;
 		}

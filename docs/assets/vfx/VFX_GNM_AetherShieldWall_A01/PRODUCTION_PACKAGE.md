@@ -4,7 +4,7 @@
 
 `VFX_GNM_AetherShieldWall_A01` defines the Gnome/Mekgineer Aether shield-wall effect for the Gnome-vs-Ogre rivalry kit. The current review implementation uses static helper panels and material-state instances. The final authored Niagara art pass should replace or supplement the helper panels with a clean, blue, segmented, defensive, and precise effect that contrasts clearly against Ogre forge-orange and necromantic green effects.
 
-Current status: first-pass helper/VFX contract implemented; final authored Niagara art-pass handoff ready; Unreal Niagara asset not authored.
+Current status: first-pass helper/VFX contract implemented; final authored Niagara art-pass handoff ready; empty Unreal Niagara target `NS_GNM_AetherShieldWall_A01` exists; final emitter art pass pending.
 
 ## Gameplay Purpose
 

@@ -5,6 +5,7 @@
 - Projector mesh: `/Game/Aerathea/Props/Gnomes/Mekgineer/SM_GNM_AetherShieldProjector_A01`
 - VFX placeholder: `/Game/Aerathea/VFX/GnomeOgre/VFX_GNM_AetherShieldWall_A01`
 - Shield helper mesh: `/Game/Aerathea/VFX/GnomeOgre/SM_GNM_AetherShieldWall_A01`
+- Niagara target: `/Game/Aerathea/VFX/GnomeOgre/NS_GNM_AetherShieldWall_A01`
 - Startup review actor: `AET_PROD_GNM_HeavyMekShieldwall_A01`
 
 ## Completed Review Requirements
@@ -22,5 +23,5 @@
 
 - Replace DCC review geometry with approved art-model projector.
 - Author final UVs, BC/N/ORM/E textures, and material instances.
-- Replace review helper panel with authored final Niagara/VFX implementation after approving the handoff in `docs/assets/vfx/VFX_GNM_AetherShieldWall_A01/NIAGARA_ART_PASS_HANDOFF.md`; `NS_GNM_AetherShieldWall_A01` is not authored yet.
+- Replace review helper panel with authored final Niagara/VFX emitters after approving the handoff in `docs/assets/vfx/VFX_GNM_AetherShieldWall_A01/NIAGARA_ART_PASS_HANDOFF.md`; the empty `NS_GNM_AetherShieldWall_A01` target exists.
 - Tune combat-facing state transitions, audio hooks, projectile rules, and gameplay blocking after combat rules are approved.

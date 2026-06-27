@@ -2,9 +2,9 @@
 
 ## Current Status
 
-- Build/import status: native-backed coordinator implemented; Blueprint asset created and compiled.
-- Unreal state: implemented as `/Game/Aerathea/Blueprints/GnomeOgre/BP_GNM_OGR_BattlefieldEncounter_A01`; not placed in startup scene yet.
-- Review scope: dependency contract, phase states, actor slots, collision volumes, variables, events, optional-branch gates, and shieldwall impact forwarding are implemented for review-safe assembly.
+- Build/import status: native-backed coordinator implemented; Blueprint asset created, compiled, placed in startup, and wired to branch actors.
+- Unreal state: implemented as `/Game/Aerathea/Blueprints/GnomeOgre/BP_GNM_OGR_BattlefieldEncounter_A01`; startup actor label is `AET_PROD_GNM_OGR_BattlefieldEncounter_A01`.
+- Review scope: dependency contract, phase states, actor slots, collision volumes, variables, events, optional-branch gates, shieldwall impact forwarding, pylon overload, caster reinforcement, and Manticore interrupt hooks are implemented for review-safe assembly.
 
 ## Planned Unreal Asset
 
@@ -25,13 +25,13 @@ Required imported dependencies currently exist for the first implementation hand
 - `SK_OGR_Warrior_Rival_A01`
 - `SM_OGR_CairnBattleGate_A01`
 
-Optional package-ready dependencies are still gated until their DCC/Unreal imports exist:
+Branch dependencies currently exist and are assigned in the startup scene:
 
-- `SM_OGR_CrudeTekPylon_A01`
+- `BP_OGR_CrudeTekPylon_A01`
 - `SK_OGR_Shaman_A01`
 - `SK_OGR_Necromancer_A01`
 - `SK_CRE_Manticore_A01`
-- `SK_CRE_Manticore_Interrupt_A01`
+- `BP_CRE_ManticoreInterrupt_A01`
 
 ## Completed Prerequisites
 
@@ -42,16 +42,18 @@ Optional package-ready dependencies are still gated until their DCC/Unreal impor
 - Native class: `AAETGnomeOgreBattlefieldEncounterActor`
 - Blueprint asset: `/Game/Aerathea/Blueprints/GnomeOgre/BP_GNM_OGR_BattlefieldEncounter_A01`
 - Creation script: `Tools/Unreal/create_gnome_ogre_encounter_blueprint.py`
+- Wiring script: `Tools/Unreal/wire_gnome_ogre_encounter.py`
 - C++ build: `AeratheaEditor Linux Development` succeeded after implementation.
+- Startup validation: passing with `125` expected assets, `47` expected actor labels, and `25` ground tiles.
 
 ## Blocking Items
 
-- Optional pylon/caster/Manticore branches cannot become visual runtime branches until their DCC/Unreal imports exist.
 - Final combat AI, quest rules, rewards, spawn balancing, and persistence are intentionally out of scope.
+- Final pylon, shieldwall, and Manticore Niagara emitter art remains pending.
 
 ## Remaining To Finalize
 
-1. Import `SM_OGR_CrudeTekPylon_A01`, `SK_OGR_Shaman_A01`, `SK_OGR_Necromancer_A01`, `SK_CRE_Manticore_A01`, and `SK_CRE_Manticore_Interrupt_A01`.
-2. Place the coordinator in startup only after all actor references can be assigned cleanly.
-3. Add startup validation for the coordinator actor when it is placed.
+1. Review the updated startup capture with the coordinator, pylon wrapper, caster branches, and Manticore interrupt wrapper visible.
+2. Author final pylon, shieldwall, and Manticore Niagara emitters against the native `User.*` contracts.
+3. Add gameplay timeline or PIE automation for phase sequencing after visual approval.
 4. Add final combat AI, quest rules, rewards, spawn balancing, and persistence only after gameplay rules are approved.

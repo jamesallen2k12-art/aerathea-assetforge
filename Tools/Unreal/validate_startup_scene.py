@@ -72,6 +72,7 @@ EXPECTED_ASSETS = [
     "/Game/Aerathea/Props/Gnomes/Mekgineer/SM_GNM_AetherShieldProjector_A01",
     "/Game/Aerathea/VFX/GnomeOgre/SM_GNM_AetherShieldWall_A01",
     "/Game/Aerathea/VFX/GnomeOgre/VFX_GNM_AetherShieldWall_A01",
+    "/Game/Aerathea/VFX/GnomeOgre/NS_GNM_AetherShieldWall_A01",
     "/Game/Aerathea/Weapons/Mekgineer/SM_MKG_SpikeDrill_A01",
     "/Game/Aerathea/Weapons/Mekgineer/SM_MKG_MonkeyWrench_A01",
     "/Game/Aerathea/Weapons/Mekgineer/SM_MKG_RatchetCleaver_A01",
@@ -127,6 +128,9 @@ EXPECTED_ASSETS = [
     "/Game/Aerathea/Blueprints/Props/BP_AET_Portal_A01",
     "/Game/Aerathea/Blueprints/Props/BP_AET_TargetDummy_A01",
     "/Game/Aerathea/Blueprints/GnomeOgre/BP_GNM_HeavyMekShieldwall_A01",
+    "/Game/Aerathea/Blueprints/GnomeOgre/BP_GNM_OGR_BattlefieldEncounter_A01",
+    "/Game/Aerathea/Blueprints/Ogres/BP_OGR_CrudeTekPylon_A01",
+    "/Game/Aerathea/Blueprints/Creatures/BP_CRE_ManticoreInterrupt_A01",
     LEVEL_PATH,
 ]
 EXPECTED_ACTOR_LABELS = [
@@ -168,6 +172,7 @@ EXPECTED_ACTOR_LABELS = [
     "AET_PROD_CRE_Manticore_Interrupt_A01",
     "AET_PROD_OgreShaman_A01",
     "AET_PROD_OgreNecromancer_A01",
+    "AET_PROD_GNM_OGR_BattlefieldEncounter_A01",
     "AET_PROD_PlayerStart_Review_A01",
     "AET_PROD_Camera_Review_A01",
     "AET_PROD_ReviewCameraDirector_A01",
@@ -747,6 +752,16 @@ def component_hidden_or_invisible(component, actor_label=None):
     }
     if actor_label == "AET_PROD_GNM_HeavyMekShieldwall_A01" and component_name in optional_shieldwall_components:
         return False
+    optional_pylon_components = {
+        "PylonNiagara",
+    }
+    if actor_label == "AET_PROD_OGR_CrudeTekPylon_A01" and component_name in optional_pylon_components:
+        return False
+    optional_manticore_interrupt_components = {
+        "ImpactNiagara",
+    }
+    if actor_label == "AET_PROD_CRE_Manticore_Interrupt_A01" and component_name in optional_manticore_interrupt_components:
+        return False
     hidden = try_call(component, "is_hidden_in_game")
     visible = try_call(component, "is_visible")
     return bool(hidden) or visible is False
@@ -914,6 +929,149 @@ def validate_shieldwall_vfx_contract(shieldwall_actor):
         raise RuntimeError("Shieldwall VFX contract validation failed: {}".format("; ".join(failures)))
 
 
+def static_mesh_component_mesh(component):
+    mesh = try_call(component, "get_static_mesh")
+    if mesh is not None:
+        return mesh
+    try:
+        return component.get_editor_property("static_mesh")
+    except Exception:
+        return None
+
+
+def skeletal_mesh_component_mesh(component):
+    for method_name in ("get_skeletal_mesh_asset", "get_skeletal_mesh"):
+        mesh = try_call(component, method_name)
+        if mesh is not None:
+            return mesh
+    for prop_name in ("skeletal_mesh_asset", "skeletal_mesh"):
+        try:
+            mesh = component.get_editor_property(prop_name)
+            if mesh is not None:
+                return mesh
+        except Exception:
+            continue
+    return None
+
+
+def validate_pylon_contract(pylon_actor):
+    failures = []
+    class_name = pylon_actor.get_class().get_name()
+    if "BP_OGR_CrudeTekPylon_A01" not in class_name and "AETCrudeTekPylonActor" not in class_name:
+        failures.append("unexpected class {}".format(class_name))
+
+    ranged_properties = {
+        "OverloadPercent": (0.0, 1.0),
+        "DamagePercent": (0.0, 1.0),
+    }
+    for prop_name, (min_value, max_value) in ranged_properties.items():
+        try:
+            value = float(pylon_actor.get_editor_property(prop_name))
+        except Exception as exc:
+            failures.append("missing property {} ({})".format(prop_name, exc))
+            continue
+        if value < min_value or value > max_value:
+            failures.append("{} value {:.2f} is outside {:.2f}-{:.2f}".format(prop_name, value, min_value, max_value))
+
+    mesh_component = component_by_name(pylon_actor, unreal.StaticMeshComponent, "PylonMesh")
+    if mesh_component is None:
+        failures.append("missing PylonMesh component")
+    else:
+        mesh = static_mesh_component_mesh(mesh_component)
+        expected_path = "/Game/Aerathea/Props/Ogres/Teknomancy/SM_OGR_CrudeTekPylon_A01"
+        if mesh is None:
+            failures.append("PylonMesh has no static mesh")
+        elif asset_path_without_object(mesh) != expected_path:
+            failures.append("PylonMesh uses {}, expected {}".format(mesh.get_path_name(), expected_path))
+
+    if failures:
+        raise RuntimeError("Crude Tek pylon contract validation failed: {}".format("; ".join(failures)))
+
+
+def validate_manticore_interrupt_contract(manticore_actor):
+    failures = []
+    class_name = manticore_actor.get_class().get_name()
+    if "BP_CRE_ManticoreInterrupt_A01" not in class_name and "AETManticoreInterruptActor" not in class_name:
+        failures.append("unexpected class {}".format(class_name))
+
+    try:
+        progress = float(manticore_actor.get_editor_property("SequenceProgress"))
+        if progress < 0.0 or progress > 1.0:
+            failures.append("SequenceProgress value {:.2f} is outside 0.0-1.0".format(progress))
+    except Exception as exc:
+        failures.append("missing SequenceProgress ({})".format(exc))
+
+    mesh_component = component_by_name(manticore_actor, unreal.SkeletalMeshComponent, "ManticoreMesh")
+    if mesh_component is None:
+        failures.append("missing ManticoreMesh component")
+    else:
+        mesh = skeletal_mesh_component_mesh(mesh_component)
+        expected_path = "/Game/Aerathea/Creatures/Manticores/SK_CRE_Manticore_Interrupt_A01"
+        if mesh is None:
+            failures.append("ManticoreMesh has no skeletal mesh")
+        elif asset_path_without_object(mesh) != expected_path:
+            failures.append("ManticoreMesh uses {}, expected {}".format(mesh.get_path_name(), expected_path))
+
+    if failures:
+        raise RuntimeError("Manticore interrupt contract validation failed: {}".format("; ".join(failures)))
+
+
+def validate_encounter_contract(encounter_actor, actors_by_label):
+    failures = []
+    class_name = encounter_actor.get_class().get_name()
+    if "BP_GNM_OGR_BattlefieldEncounter_A01" not in class_name and "AETGnomeOgreBattlefieldEncounterActor" not in class_name:
+        failures.append("unexpected class {}".format(class_name))
+
+    expected_bools = {
+        "bUsePlacedActors": True,
+        "bEnablePylonObjective": True,
+        "bEnableCasterReinforcements": True,
+        "bEnableManticoreInterrupt": True,
+    }
+    for prop_name, expected in expected_bools.items():
+        try:
+            value = bool(encounter_actor.get_editor_property(prop_name))
+        except Exception as exc:
+            failures.append("missing property {} ({})".format(prop_name, exc))
+            continue
+        if value != expected:
+            failures.append("{} is {}, expected {}".format(prop_name, value, expected))
+
+    expected_refs = {
+        "ShieldwallActor": "AET_PROD_GNM_HeavyMekShieldwall_A01",
+        "GnomeHeavyMekActor": "AET_PROD_GNM_HeavyMek_Rivalry_A01",
+        "OgreTeknomancerActor": "AET_PROD_OgreTeknomancer_A01",
+        "OgreWarriorActor": "AET_PROD_OgreWarrior_Rival_A01",
+        "CairnGateActor": "AET_PROD_OGR_CairnBattleGate_A01",
+        "PylonObjectiveActor": "AET_PROD_OGR_CrudeTekPylon_A01",
+        "OgreShamanActor": "AET_PROD_OgreShaman_A01",
+        "OgreNecromancerActor": "AET_PROD_OgreNecromancer_A01",
+        "ManticoreInterruptActor": "AET_PROD_CRE_Manticore_Interrupt_A01",
+    }
+    for prop_name, label in expected_refs.items():
+        target_actor = actors_by_label.get(label)
+        try:
+            value = encounter_actor.get_editor_property(prop_name)
+        except Exception as exc:
+            failures.append("missing reference {} ({})".format(prop_name, exc))
+            continue
+        if value is None:
+            failures.append("{} is unassigned".format(prop_name))
+        elif target_actor is not None and value.get_actor_label() != label:
+            failures.append("{} points to {}, expected {}".format(prop_name, value.get_actor_label(), label))
+
+    validate = getattr(encounter_actor, "validate_dependencies", None)
+    if callable(validate):
+        try:
+            if not validate():
+                failures.append("ValidateDependencies returned false: {}".format(encounter_actor.get_editor_property("LastValidationReport")))
+        except Exception as exc:
+            failures.append("ValidateDependencies raised {}".format(exc))
+
+    if failures:
+        raise RuntimeError("Gnome/Ogre encounter contract validation failed: {}".format("; ".join(failures)))
+
+
 def main():
     missing_assets = [
         asset_path
@@ -974,6 +1132,10 @@ def main():
     if "BP_GNM_HeavyMekShieldwall_A01" not in shieldwall_class_name and "AETHeavyMekShieldwallActor" not in shieldwall_class_name:
         raise RuntimeError("Shieldwall actor has unexpected class: {}".format(shieldwall_class_name))
     validate_shieldwall_vfx_contract(shieldwall_actor)
+
+    validate_pylon_contract(actors_by_label["AET_PROD_OGR_CrudeTekPylon_A01"])
+    validate_manticore_interrupt_contract(actors_by_label["AET_PROD_CRE_Manticore_Interrupt_A01"])
+    validate_encounter_contract(actors_by_label["AET_PROD_GNM_OGR_BattlefieldEncounter_A01"], actors_by_label)
 
     mesh_slot_failures = []
     for mesh_path in EXPECTED_STATIC_MESHES:

@@ -5,7 +5,7 @@
 - Build/import status: first-pass DCC encounter variant generated and imported to Unreal.
 - Production scope: encounter-specific Manticore interrupt variant for `KIT_GNM_OGR_RivalryEncounter_A01`.
 - Dependency: imports against base `/Game/Aerathea/Creatures/Manticores/Base/SK_CRE_Manticore_A01_Skeleton`.
-- Unreal state: skeletal mesh imported, material instances assigned, LOD0-LOD3 generated, sockets added, physics asset assigned, base Manticore animation Blueprint placeholder reused, startup review actor placed, validation passing.
+- Unreal state: skeletal mesh imported, material instances assigned, LOD0-LOD3 generated, sockets added, physics asset assigned, base Manticore animation Blueprint placeholder reused, `BP_CRE_ManticoreInterrupt_A01` wrapper created, startup review actor placed, and validation passing.
 
 ## Source Outputs
 
@@ -18,6 +18,7 @@
 ## Unreal Assets
 
 - `/Game/Aerathea/Creatures/Manticores/SK_CRE_Manticore_Interrupt_A01`
+- `/Game/Aerathea/Blueprints/Creatures/BP_CRE_ManticoreInterrupt_A01`
 - `/Game/Aerathea/Creatures/Manticores/PHYS_CRE_Manticore_Interrupt_A01`
 - Shared skeleton: `/Game/Aerathea/Creatures/Manticores/Base/SK_CRE_Manticore_A01_Skeleton`
 - Shared animation Blueprint placeholder: `/Game/Aerathea/Creatures/Manticores/Base/ABP_CRE_Manticore_A01`
@@ -32,7 +33,7 @@
 ## Validation
 
 - `Tools/Unreal/validate_startup_scene.py` now checks this variant mesh, physics asset, shared skeleton binding, LOD count, sockets, bounds, runtime visibility, and startup actor.
-- Latest validation result: passing with `121` expected assets, `46` expected actor labels, and `25` ground tiles.
+- Latest validation result: passing with `125` expected assets, `47` expected actor labels, and `25` ground tiles.
 
 ## Completed Prerequisites
 
@@ -49,5 +50,5 @@
 1. Review interrupt variant scale and silhouette beside the base Manticore, Ogre line, heavy Mek, and crude Tek pylon.
 2. Replace blockout variant geometry with final encounter-ready sculpt and approved surface damage/torn membrane treatment.
 3. Tune physics bodies, collision capsules, tail hit traces, wing-buffet traces, and venom sockets.
-4. Create optional `/Game/Aerathea/Blueprints/Encounters/BP_GNM_OGR_ManticoreInterrupt_A01`.
-5. Add encounter timing for arrival leap/glide, wing buffet, tail sting, venom telegraph, and shield-wall pressure.
+4. Author final `NS_CRE_Manticore_Impact_A01` impact/venom Niagara emitters against the native wrapper contract.
+5. Add encounter timing for arrival leap/glide, wing buffet, tail sting, venom telegraph, and shield-wall pressure after animation review.

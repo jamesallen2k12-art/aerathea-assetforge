@@ -149,15 +149,17 @@
 | --- | --- | --- |
 | `BP_AET_Portal_A01` | Native preview state/overlap/use-cooldown behavior implemented; Blueprint asset compiled; startup validation passing | `docs/assets/blueprints/BP_AET_Portal_A01/PRODUCTION_PACKAGE.md` |
 | `BP_AET_TargetDummy_A01` | Native training hit/break/reset behavior implemented; Blueprint asset created and compiled; startup validation passing | `docs/assets/blueprints/BP_AET_TargetDummy_A01/PRODUCTION_PACKAGE.md` |
-| `BP_GNM_HeavyMekShieldwall_A01` | Approved first-pass native Blueprintable actor, Blueprint asset, projector mesh, strengthened segmented VFX helper, material states, impact-location API, scalar VFX parameters, sockets, LOD0-LOD3, startup review actor, validation contract, and native Niagara hook implemented; final authored Niagara system not created | `docs/assets/blueprints/BP_GNM_HeavyMekShieldwall_A01/PRODUCTION_PACKAGE.md` |
-| `BP_GNM_OGR_BattlefieldEncounter_A01` | Native-backed encounter coordinator implemented; Blueprint asset created and compiled; exposes dependency validation, phase-state controls, actor slots, trigger volumes, optional-branch gates, and shieldwall impact/pylon/caster/Manticore event hooks; startup placement deferred until optional branch imports are available | `docs/assets/blueprints/BP_GNM_OGR_BattlefieldEncounter_A01/PRODUCTION_PACKAGE.md` |
+| `BP_GNM_HeavyMekShieldwall_A01` | Approved first-pass native Blueprintable actor, Blueprint asset, projector mesh, strengthened segmented VFX helper, material states, impact-location API, scalar VFX parameters, sockets, LOD0-LOD3, startup review actor, validation contract, native Niagara hook, and assigned empty Niagara target implemented; final emitter art pass pending | `docs/assets/blueprints/BP_GNM_HeavyMekShieldwall_A01/PRODUCTION_PACKAGE.md` |
+| `BP_GNM_OGR_BattlefieldEncounter_A01` | Native-backed encounter coordinator implemented; Blueprint asset created, compiled, placed in startup, assigned to required and branch actors, and validated with dependency checks, phase-state controls, actor slots, trigger volumes, optional-branch gates, and shieldwall impact/pylon/caster/Manticore event hooks | `docs/assets/blueprints/BP_GNM_OGR_BattlefieldEncounter_A01/PRODUCTION_PACKAGE.md` |
+| `BP_OGR_CrudeTekPylon_A01` | Native-backed pylon state wrapper implemented, compiled, placed in startup, and wired to the encounter coordinator for Idle/Charged/Overload/Damaged/Destroyed review states | `docs/assets/blueprints/BP_OGR_CrudeTekPylon_A01/BUILD_IMPORT_STATUS.md` |
+| `BP_CRE_ManticoreInterrupt_A01` | Native-backed Manticore interrupt wrapper implemented, compiled, placed in startup, and wired to the encounter coordinator for Hidden/Stalking/Telegraph/LeapImpact/ThreatHold/Retreat review states | `docs/assets/blueprints/BP_CRE_ManticoreInterrupt_A01/BUILD_IMPORT_STATUS.md` |
 
 ## VFX
 
 | Asset | Status | Package |
 | --- | --- | --- |
 | `VFX_INF_WorthinessJudgment_A01` | Infernal worthiness judgment VFX production package ready; Niagara/material authoring not started | `docs/assets/vfx/VFX_INF_WorthinessJudgment_A01/PRODUCTION_PACKAGE.md` |
-| `VFX_GNM_AetherShieldWall_A01` | First-pass helper mesh/material state implementation, native shieldwall VFX parameter contract, and native Niagara component hook exist; final Niagara art-pass handoff ready; `NS_GNM_AetherShieldWall_A01` not authored | `docs/assets/vfx/VFX_GNM_AetherShieldWall_A01/PRODUCTION_PACKAGE.md` |
+| `VFX_GNM_AetherShieldWall_A01` | First-pass helper mesh/material state implementation, native shieldwall VFX parameter contract, native Niagara component hook, and empty `NS_GNM_AetherShieldWall_A01` target exist; final emitter art pass pending | `docs/assets/vfx/VFX_GNM_AetherShieldWall_A01/PRODUCTION_PACKAGE.md` |
 
 ## Status Key
 
