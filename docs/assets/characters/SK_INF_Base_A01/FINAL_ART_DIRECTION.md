@@ -10,6 +10,20 @@ Infernals should read as a mortal-descended demonic race that willingly embraced
 
 Adult Infernals support playable race exploration, hostile cult factions, elite NPCs, hunters, rogues, warriors, mages, ritual leaders, and encounter bosses. Their visual package must work without mortal weapon dependency. Even when a class later uses a tool, relic, or focus, the core combat read remains claws, tail, wings, teeth, body power, magic, and demonic gifts.
 
+## Source Concept Routing
+
+The 2026-06-27 source addendum strengthens this sheet with adult body, lit-brand, sorcerer, and cult-gate scene references.
+
+| Source group | Routed use |
+| --- | --- |
+| `InfernalFemale*.png`, `Infernalfemale3.png` | Adult female body, outfit, horn, wing, tail, and class-variant references for the sex-variant matrix |
+| `InfernalFemaleLit*.png` | Lit brand, eye glow, scar-emissive, and restrained material-state references |
+| `InfernalMale*.png` | Adult male body, horn mass, wing fold, tail proportion, and class-variant references |
+| `InfernalMaleLit.png` | Male lit-brand material and emissive-state reference |
+| `InfernalMaleSorcerer*.png` | Future `SK_INF_Mage_A01` source for mage posture, brand-channeling, and cult VFX gestures |
+| `Infernals.png` | Adult group hierarchy, body-band comparison, and faction silhouette source |
+| `Infernals Guarding a Gate*.png` | Adult guard bearing plus `KIT_INF_BalgorothCult_A01` gate/arch encounter reference |
+
 ## Locked Adult Body Bands
 
 The adult canon range remains 5'0"-9'0" / 152-274 cm. Production should use body-type bands instead of a strict male/female height split until character creation rules demand otherwise.

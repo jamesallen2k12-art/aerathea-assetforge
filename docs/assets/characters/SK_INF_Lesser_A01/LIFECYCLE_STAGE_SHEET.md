@@ -10,6 +10,18 @@ The approved stage names are `Spawn`, `1st Kill`, `Blooded`, `Elder`, and `Ancie
 
 The lifecycle sheet supports cult den encounters, early Infernal threats, bloodline trials, named Ancient NPCs, tutorial/lore art, and future spawn-to-adult animation planning. Each stage should be readable in gameplay without relying on gore.
 
+## Source Concept Routing
+
+The 2026-06-27 source addendum supplies dedicated Lesser Infernal and child references beyond the first-pass scale proxies. These images route into the lifecycle matrix, not into a separate ordinary child race package.
+
+| Source group | Routed use |
+| --- | --- |
+| `Infernal Children.png`, `InfernalClutch.png` | Spawn/1st Kill group staging, clutch behavior, den population, and trial-space scale references |
+| `InfernalBoy*.png`, `INfernalBoy*.png` | Male-presenting Spawn, 1st Kill, and Blooded posture, horn, claw, wing-bud, and tail development references |
+| `InfernalGirl*.png`, `InfernalGirls5.png` | Female-presenting Spawn, 1st Kill, Blooded, and Elder-bridge silhouette references |
+| `LesserInfernal*.png`, `Lesser Infernal15.png` | General Lesser stage variants across Blooded, Elder, and Ancient body language |
+| `LesserInfernalFemale.png`, `LesserInfernalMale.png` | Sex-variant checks inside the approved lifecycle stages without changing the locked stage names |
+
 ## Stage Progression
 
 | Stage | Production height band | Lore/read | Silhouette priority |

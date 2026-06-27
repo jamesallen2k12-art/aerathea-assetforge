@@ -116,10 +116,24 @@ Use 1K-2K textures for modular pieces. Use trim/atlas reuse where possible for f
 - FBX export: `SourceAssets/Exports/Props/Infernals/BalgorothCult/SM_INF_CullingTrialFloor_A01/SM_INF_CullingTrialFloor_A01.fbx`
 - Unreal mesh: `/Game/Aerathea/Props/Infernals/BalgorothCult/SM_INF_CullingTrialFloor_A01`
 - Material instances:
-  - `MI_INF_CullingTrialFloor_Inactive_A01`
-  - `MI_INF_CullingTrialFloor_Smolder_A01`
-  - `MI_INF_CullingTrialFloor_Active_A01`
-  - `MI_INF_CullingTrialFloor_Rejected_A01`
+  - `MI_INF_CullingTrialFloor_A01_CultStone`
+  - `MI_INF_CullingTrialFloor_A01_ScorchedStone`
+  - `MI_INF_CullingTrialFloor_A01_ObsidianIron`
+  - `MI_INF_CullingTrialFloor_A01_RitualGlow`
+
+## Implementation Status - 2026-06-27
+
+- DCC source generated at `SourceAssets/Blender/Props/Infernals/BalgorothCult/SM_INF_CullingTrialFloor_A01/SM_INF_CullingTrialFloor_A01.blend`.
+- FBX export generated at `SourceAssets/Exports/Props/Infernals/BalgorothCult/SM_INF_CullingTrialFloor_A01/SM_INF_CullingTrialFloor_A01.fbx`.
+- Unreal static mesh imported at `/Game/Aerathea/Props/Infernals/BalgorothCult/SM_INF_CullingTrialFloor_A01`.
+- Base blockout materials created for cult stone, scorched stone, obsidian iron, and ritual glow.
+- LOD0-LOD3 generated in Unreal.
+- Static mesh sockets added: `vfx_center`, `vfx_ring_active`, `vfx_rejected_gap`, `snap_altar`, `snap_arch_front`, `stage_spawn`, `stage_blooded`, and `stage_elder`.
+- Import tooling places startup actor `AET_PROD_INF_CullingTrialFloor_A01` behind the Infernal scale lineup for local review.
+- Local validation passes through `Tools/Unreal/validate_startup_scene.py`.
+- Review captures:
+  - DCC proof: `Saved/Automation/InfernalCultFloorReview/SM_INF_CullingTrialFloor_A01_DCCReview.png`
+  - Unreal startup review: `Saved/Automation/StartupReview/AeratheaStartupReview_InfernalCultFloor_A01.png`
 
 ## Quality Gate Checklist
 

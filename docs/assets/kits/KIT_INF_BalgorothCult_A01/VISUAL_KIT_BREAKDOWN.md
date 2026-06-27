@@ -16,6 +16,17 @@ The kit provides modular pieces and shared materials for:
 - Mage, rogue, hunter, and warrior class VFX callouts.
 - Cult settlement interiors, dens, altar rooms, banners, trial floors, and encounter dressing.
 
+## Source Concept Routing
+
+The 2026-06-27 Infernal source addendum adds practical references for cult scene dressing, lit brand material states, gate defense silhouettes, and Lesser trial population. These files should inform kit children without overriding the approved symbol language.
+
+| Source group | Routed use |
+| --- | --- |
+| `InfernalFemaleLit*.png`, `InfernalMaleLit.png`, `InfernalMaleSorcererLit.png` | `MI_INF_BrandGlowStates_A01`, restrained emissive masks, ritual-active body/material states |
+| `Infernals Guarding a Gate*.png` | `SM_INF_HornWingArch_A01`, cult gate stance, guard spacing, and encounter threshold dressing |
+| `InfernalClutch.png`, `Infernal Children.png` | Trial den layout, Spawn-scale props, low viewing angles, culling trial staging |
+| `Infernals.png` | Group hierarchy, leader/readiness poses, cult settlement population density |
+
 ## Symbol Language
 
 | Symbol | Shape rule | Use |

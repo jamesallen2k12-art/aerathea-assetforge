@@ -82,6 +82,15 @@ Material slots:
 - Material slots are assigned and named.
 - Required sockets or locator equivalents exist: `vfx_center`, `vfx_ring_active`, `vfx_rejected_gap`, `snap_altar`, `snap_arch_front`, `stage_spawn`, `stage_blooded`, `stage_elder`.
 
+## DCC And Unreal Pass - 2026-06-27
+
+- Built first-pass Blender source and FBX export using `Tools/DCC/build_infernal_cult_floor.py`.
+- Imported to `/Game/Aerathea/Props/Infernals/BalgorothCult/SM_INF_CullingTrialFloor_A01` with `Tools/Unreal/import_infernal_cult_floor.py`.
+- Generated LOD0-LOD3 and assigned four blockout material instances: cult stone, scorched stone, obsidian iron, and ritual glow.
+- Added the required static mesh sockets for VFX, altar/arch snapping, and Lesser lifecycle stage markers.
+- Import tooling places startup review actor `AET_PROD_INF_CullingTrialFloor_A01` under the Infernal review grouping for local validation.
+- Local validation checks the mesh, materials, LODs, sockets, actor placement, runtime visibility, and bounds.
+
 ## Acceptance Checklist
 
 - Reads as Infernal/Balgoroth trial floor at MMO camera distance.
