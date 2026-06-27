@@ -234,6 +234,18 @@ Create an original stylized fantasy MMORPG concept image of [ASSET] for the worl
 - Tribal markings, hide, bone, raw iron, fur, leather.
 - Roles: barbarian, berserker, shaman, warrior.
 
+### Ogres
+- Female Ogres are 10'0"-10'6" tall; male Ogres are 10'4"-11'0" tall.
+- Created for war; heavily muscled, very broad, and terrifying on the battlefield.
+- Larger than Minotaurs but smaller than Giants.
+- Fascinated with magic and technology, with an instinctual but crude understanding of Teknomancy.
+- Not as brilliant or precise as Gnomes; they compensate by making weapons, armor, rigs, and fortifications bigger, tougher, and more brutal.
+- Jealous of Gnome inventions; battles between Ogre Teknomancers and Gnome Mek pilots are legendary.
+- They do not care about honor; they care about winning.
+- Build giant stone cairn structures, stone walls, gates, defensive fortifications, forges, Tek shops, barracks, necropolises, and rough settlements.
+- Materials: weathered skin, blackened iron, dark steel, crude brass/copper, scorched leather, hide, fur, carved cairn stone, bone, forge orange, Aetherium glow, shamanic fire/storm glow, and necromantic green-black accents.
+- Roles: warrior, Teknomancer, shaman, necromancer, sentinel, smith, siege fighter.
+
 ### Drakhar Lizardfolk
 - Inspired by bearded dragons and desert lizards.
 - 4–5 ft tall.

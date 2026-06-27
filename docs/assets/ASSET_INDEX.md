@@ -30,6 +30,7 @@
 | Asset | Status | Package |
 | --- | --- | --- |
 | `SK_GNM_Base_A01` | First race body production package ready | `docs/assets/characters/SK_GNM_Base_A01/PRODUCTION_PACKAGE.md` |
+| `SK_OGR_Base_A01` | Ogre source concept intake and base body production package ready; DCC build not started | `docs/assets/characters/SK_OGR_Base_A01/PRODUCTION_PACKAGE.md` |
 
 ## Blueprints
 
