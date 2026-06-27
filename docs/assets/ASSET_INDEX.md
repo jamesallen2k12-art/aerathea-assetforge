@@ -44,6 +44,7 @@
 | `SM_MKG_SparkPistol_A01` | Blender source and FBX generated, imported to Unreal, modeling handoff ready, placed in startup scene, validation passing | `docs/assets/props/SM_MKG_SparkPistol_A01/PRODUCTION_PACKAGE.md` |
 | `SM_MKG_AetheriumGrenade_A01` | Blender source and FBX generated, imported to Unreal, modeling handoff ready, placed in startup scene, validation passing | `docs/assets/props/SM_MKG_AetheriumGrenade_A01/PRODUCTION_PACKAGE.md` |
 | `SM_AET_Palisade_A01` | Wall/post/corner/gate/end-cap Blender sources and FBX exports generated, imported to Unreal, material instances and LOD0-LOD3 generated, placed in startup scene, validation passing | `docs/assets/props/SM_AET_Palisade_A01/PRODUCTION_PACKAGE.md` |
+| `SM_INF_CullingTrialFloor_A01` | Balgoroth cult culling trial floor production package and modeling handoff ready; first DCC child target for `KIT_INF_BalgorothCult_A01` | `docs/assets/props/SM_INF_CullingTrialFloor_A01/PRODUCTION_PACKAGE.md` |
 | `SM_DWR_OathkeeperHammer_A01` | Priority production package ready; DCC build not started | `docs/assets/props/SM_DWR_OathkeeperHammer_A01/PRODUCTION_PACKAGE.md` |
 | `SM_DWR_StonewallShield_A01` | Priority production package ready; DCC build not started | `docs/assets/props/SM_DWR_StonewallShield_A01/PRODUCTION_PACKAGE.md` |
 | `SM_ELV_Moonblade_A01` | Priority production package ready; DCC build not started | `docs/assets/props/SM_ELV_Moonblade_A01/PRODUCTION_PACKAGE.md` |
@@ -81,7 +82,7 @@
 | `KIT_MIN_Helmets_A01` | Priority production package ready; DCC build not started | `docs/assets/kits/KIT_MIN_Helmets_A01/PRODUCTION_PACKAGE.md` |
 | `KIT_DKH_CurvedDaggers_A01` | Priority production package ready; DCC build not started | `docs/assets/kits/KIT_DKH_CurvedDaggers_A01/PRODUCTION_PACKAGE.md` |
 | `KIT_DKH_MagicTrackingCharms_A01` | Priority production package ready; DCC build not started | `docs/assets/kits/KIT_DKH_MagicTrackingCharms_A01/PRODUCTION_PACKAGE.md` |
-| `KIT_INF_BalgorothCult_A01` | Production package ready for Infernal cult symbols, ritual sites, materials, and VFX language | `docs/assets/kits/KIT_INF_BalgorothCult_A01/PRODUCTION_PACKAGE.md` |
+| `KIT_INF_BalgorothCult_A01` | Production package and visual kit breakdown ready for Infernal cult symbols, ritual sites, materials, VFX language, and first child target `SM_INF_CullingTrialFloor_A01` | `docs/assets/kits/KIT_INF_BalgorothCult_A01/PRODUCTION_PACKAGE.md` |
 
 ## Characters
 
@@ -97,8 +98,8 @@
 | `SK_GNM_Base_A01` | First-pass Blender source/FBX generated, imported as skeletal mesh, material instances and LOD0-LOD3 generated, sockets added, physics asset assigned, ABP created, validation passing | `docs/assets/characters/SK_GNM_Base_A01/PRODUCTION_PACKAGE.md` |
 | `SK_GIA_Base_A01` | Concept direction and first-pass DCC scale/proportion pass approved after height verification; male/female FBXs imported to Unreal, sockets/physics/ABP placeholders generated, startup validation passing; close-up visual approval pending | `docs/assets/characters/SK_GIA_Base_A01/PRODUCTION_PACKAGE.md` |
 | `SK_OGR_Base_A01` | Ogre source concept intake and base body production package ready; DCC build not started | `docs/assets/characters/SK_OGR_Base_A01/PRODUCTION_PACKAGE.md` |
-| `SK_INF_Base_A01` | First-pass Blender source/FBX generated, compact/tall adult skeletal meshes imported, material instances and LOD0-LOD3 generated, sockets/physics/ABP placeholders created, startup scale/silhouette review approved | `docs/assets/characters/SK_INF_Base_A01/PRODUCTION_PACKAGE.md` |
-| `SK_INF_Lesser_A01` | First-pass Blender source/FBX generated, lifecycle skeletal meshes imported for Spawn, 1st Kill, Blooded, Elder, Ancient; material instances and LOD0-LOD3 generated, sockets/physics/ABP placeholders created, startup scale/lifecycle silhouette review approved | `docs/assets/characters/SK_INF_Lesser_A01/PRODUCTION_PACKAGE.md` |
+| `SK_INF_Base_A01` | First-pass Blender source/FBX generated, compact/tall adult skeletal meshes imported, material instances and LOD0-LOD3 generated, sockets/physics/ABP placeholders created, startup scale/silhouette review approved; final adult body-band art direction ready | `docs/assets/characters/SK_INF_Base_A01/PRODUCTION_PACKAGE.md` |
+| `SK_INF_Lesser_A01` | First-pass Blender source/FBX generated, lifecycle skeletal meshes imported for Spawn, 1st Kill, Blooded, Elder, Ancient; material instances and LOD0-LOD3 generated, sockets/physics/ABP placeholders created, startup scale/lifecycle silhouette review approved; lifecycle stage sheet ready | `docs/assets/characters/SK_INF_Lesser_A01/PRODUCTION_PACKAGE.md` |
 | `SK_DWR_Helm_Stonebound_A01` | Priority production package ready; DCC build not started | `docs/assets/characters/SK_DWR_Helm_Stonebound_A01/PRODUCTION_PACKAGE.md` |
 
 ## Creatures

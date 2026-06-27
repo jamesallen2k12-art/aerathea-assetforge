@@ -4,6 +4,8 @@
 
 `KIT_INF_BalgorothCult_A01` defines the cult symbol, ritual-site, material, and VFX language for Infernals. Balgoroth worship should feel severe, predatory, hierarchical, and sacrificial without relying on gore. The visual language supports Infernal body brands, cult dens, ritual arenas, sacrifice platforms, bloodline trials, Lesser Infernal training spaces, and mage/rogue/hunter class details.
 
+The child asset split and first DCC target are tracked in `VISUAL_KIT_BREAKDOWN.md`. `SM_INF_CullingTrialFloor_A01` is the first ready child package because it validates symbols, material states, collision, scale, and VFX channels before altar or Blueprint work.
+
 ## Gameplay Purpose
 
 The kit supports Infernal settlements, encounter spaces, class VFX, faction props, quest locations, and readable cult identity. It gives artists and designers a shared visual source before individual ritual props, buildings, or VFX are built.
@@ -93,6 +95,8 @@ Create an original stylized fantasy MMORPG cult material and ritual-site concept
 ## Folder And Naming Recommendation
 
 - Package folder: `docs/assets/kits/KIT_INF_BalgorothCult_A01/`.
+- Visual kit breakdown: `docs/assets/kits/KIT_INF_BalgorothCult_A01/VISUAL_KIT_BREAKDOWN.md`.
+- First child package: `docs/assets/props/SM_INF_CullingTrialFloor_A01/PRODUCTION_PACKAGE.md`.
 - Source: `SourceAssets/Blender/Kits/Infernals/BalgorothCult/`.
 - Export: `SourceAssets/Exports/Kits/Infernals/BalgorothCult/`.
 - Unreal: `/Game/Aerathea/Props/Infernals/BalgorothCult/`.

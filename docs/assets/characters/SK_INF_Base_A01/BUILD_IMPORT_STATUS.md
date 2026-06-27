@@ -91,4 +91,4 @@ Review capture:
 - Author final UVs and texture sets.
 - Tune physics bodies for tail and wings.
 - Build real class animation sets for warrior, rogue, hunter, and mage variants.
-- Decide final sex/body-type split within the 5'0"-9'0" adult range.
+- Use the locked Compact, Standard, Greater, and Exalted body bands from `FINAL_ART_DIRECTION.md`; sex-specific variants remain future character-creation work.

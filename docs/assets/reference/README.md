@@ -25,7 +25,7 @@ Canonical adult race scale anchors:
 | Drakhar Lizardfolk | 3'6"-4'2" / 107-127 cm | 4'0"-4'6" / 122-137 cm | Bearded-dragon-inspired lizardfolk; female must read clearly female while remaining lizardfolk |
 | Elves | 5'2"-5'8" / 157-173 cm | 5'8"-6'0" / 173-183 cm | Graceful, tall humanoid |
 | Dark Elves | 5'2"-5'8" / 157-173 cm | 5'8"-6'0" / 173-183 cm | Same scale range as Elves |
-| Infernals | 5'0"-9'0" / 152-274 cm shared adult range | 5'0"-9'0" / 152-274 cm shared adult range | Mortal-descended demonic race; body-type/sex split pending dedicated sheet |
+| Infernals | 5'0"-9'0" / 152-274 cm shared adult range | 5'0"-9'0" / 152-274 cm shared adult range | Mortal-descended demonic race; production body bands locked as Compact, Standard, Greater, and Exalted; sex variants remain future character-creation work |
 | Orcs | 6'2"-6'8" / 188-203 cm | 6'6"-7'0" / 198-213 cm | Upright, powerful build |
 | Basari | 6-7 ft / 183-213 cm | 7-8 ft / 213-244 cm | Culture/body anchor pending |
 | Valar | 6'6"-7'0" / 198-213 cm | 6'10"-7'4" / 208-224 cm | Human-like highborn northern people; rounded human ears, not elven/Tolkien-like |

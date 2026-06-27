@@ -11,6 +11,7 @@
 ## Body And Silhouette Rules
 
 - Use upright predatory posture, not default hunched monster posture.
+- Adult production body bands are Compact 5'0"-5'8", Standard 5'8"-6'8", Greater 6'8"-8'0", and Exalted 8'0"-9'0".
 - Horns must be real geometry and visible in front, side, and gameplay camera views.
 - Wings must read when folded; spread wings are for concept/silhouette and selected animation states.
 - Tail must be thick and readable in side/back view, not a thin decorative cord.

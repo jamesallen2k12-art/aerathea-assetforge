@@ -8,6 +8,7 @@ Create the first adult Infernal DCC review source for compact and tall adult bod
 
 - Lore: `docs/lore/races/INFERNALS.md`
 - Production package: `docs/assets/characters/SK_INF_Base_A01/PRODUCTION_PACKAGE.md`
+- Final art direction: `docs/assets/characters/SK_INF_Base_A01/FINAL_ART_DIRECTION.md`
 - Visual rules: `docs/assets/characters/SK_INF_Base_A01/VISUAL_RULES.md`
 - Lesser lifecycle package: `docs/assets/characters/SK_INF_Lesser_A01/PRODUCTION_PACKAGE.md`
 
@@ -20,7 +21,7 @@ First adult review meshes:
 | Compact adult | `SK_INF_Base_Compact_A01` | 165 cm |
 | Tall adult | `SK_INF_Base_Tall_A01` | 245 cm |
 
-Adult canon range remains 5'0"-9'0" / 152-274 cm until final body-type split approval.
+Adult canon range remains 5'0"-9'0" / 152-274 cm. Final production body bands are Compact, Standard, Greater, and Exalted as defined in `FINAL_ART_DIRECTION.md`.
 
 ## Modeling Constraints
 

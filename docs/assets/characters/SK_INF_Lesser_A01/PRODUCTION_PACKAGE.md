@@ -6,6 +6,8 @@
 
 The approved lifecycle stages are Spawn, 1st Kill, Blooded, Elder, and Ancient. The sheet must show how horns, wings, tails, claws, posture, eye glow, skin tone, scars, and restraint change across the stages without turning the race into random Abyss creatures. Lesser Infernals are still mortal-descended, socially legible, and tied to Balgoroth's cult laws.
 
+The production lifecycle stage sheet is locked in `LIFECYCLE_STAGE_SHEET.md`, including stage height bands, material progression, collision targets, and stage-specific animation reads.
+
 ## Gameplay Purpose
 
 This package supports juvenile Infernal NPCs, lifecycle lore art, stealth/ambush encounters, cult den encounters, bloodline growth events, and future adult Infernal body planning. It establishes the stage names and body language needed before creating `SK_INF_Base_A01` final body variants or Infernal class packages.
@@ -38,7 +40,9 @@ First-pass review heights for `SK_INF_Lesser_A01`:
 | Elder | 220 cm | Mature Infernal review target, within adult 5'0"-9'0" range. |
 | Ancient | 250 cm | Older powerful body, still below 9'0" adult maximum. |
 
-These are blockout review heights, not final canon splits. The adult race anchor remains 5'0"-9'0" / 152-274 cm until a sex/body-type split is approved.
+These are blockout review heights, not final sculpt proportions. The adult race anchor remains 5'0"-9'0" / 152-274 cm, with Compact, Standard, Greater, and Exalted body bands defined in `SK_INF_Base_A01/FINAL_ART_DIRECTION.md`.
+
+Production height bands are defined in `LIFECYCLE_STAGE_SHEET.md`: Spawn 70-90 cm, 1st Kill 105-125 cm, Blooded 140-160 cm, Elder 198-244 cm, and Ancient 230-274 cm.
 
 ## Materials And Color Palette
 
@@ -119,6 +123,7 @@ Create an original stylized fantasy MMORPG lifecycle concept sheet of Lesser Inf
 ## Folder And Naming Recommendation
 
 - Package folder: `docs/assets/characters/SK_INF_Lesser_A01/`.
+- Lifecycle stage sheet: `docs/assets/characters/SK_INF_Lesser_A01/LIFECYCLE_STAGE_SHEET.md`.
 - Blender source: `SourceAssets/Blender/Characters/Infernals/SK_INF_Lesser_A01/SK_INF_Lesser_A01.blend`.
 - FBX exports: `SourceAssets/Exports/Characters/Infernals/SK_INF_Lesser_A01/`.
 - Unreal folder: `/Game/Aerathea/Characters/Infernals/Lesser/`.

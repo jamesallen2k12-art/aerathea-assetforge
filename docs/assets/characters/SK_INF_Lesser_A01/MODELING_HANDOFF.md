@@ -8,6 +8,7 @@ Create the first DCC lifecycle review source for Lesser Infernals. This is a det
 
 - Lore: `docs/lore/races/INFERNALS.md`
 - Production package: `docs/assets/characters/SK_INF_Lesser_A01/PRODUCTION_PACKAGE.md`
+- Lifecycle stage sheet: `docs/assets/characters/SK_INF_Lesser_A01/LIFECYCLE_STAGE_SHEET.md`
 - Visual rules: `docs/assets/characters/SK_INF_Base_A01/VISUAL_RULES.md`
 - Cult package: `docs/assets/kits/KIT_INF_BalgorothCult_A01/PRODUCTION_PACKAGE.md`
 

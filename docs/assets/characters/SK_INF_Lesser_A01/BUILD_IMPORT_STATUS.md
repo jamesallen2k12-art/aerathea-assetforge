@@ -101,7 +101,7 @@ Review capture:
 
 ## Remaining Work
 
-- Lock final stage proportions after visual review.
+- Use the production height bands and stage rules from `LIFECYCLE_STAGE_SHEET.md`.
 - Replace blockout geometry with approved sculpt/retopo.
 - Author final UVs and texture sets.
 - Tune per-stage physics bodies and movement capsules.

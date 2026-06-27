@@ -6,6 +6,8 @@
 
 Their bodies must communicate willing transformation: reddish skin, black claws, horns, large leathery wings, a long thick tail, predatory posture, regenerative scars, and eyes or brands that imply invisible sight. They reject mortal weaponry as weakness, so their combat identity is natural weapons, body power, magic, wings, tail, and demonic gifts.
 
+The final adult production art direction is locked in `FINAL_ART_DIRECTION.md`, using body-type bands instead of a strict male/female height split: Compact, Standard, Greater, and Exalted.
+
 ## Gameplay Purpose
 
 The base package supports playable or NPC race development, enemy faction variants, cult leaders, hunters, rogues, mages, and natural-weapon combat. It provides the adult body target that later class packages will build on:
@@ -31,10 +33,11 @@ The base package supports playable or NPC race development, enemy faction varian
 ## Scale Notes
 
 - Canon adult range: 5'0"-9'0" / 152-274 cm.
+- Production body bands: Compact 5'0"-5'8", Standard 5'8"-6'8", Greater 6'8"-8'0", Exalted 8'0"-9'0".
 - First-pass adult review heights:
   - `SK_INF_Base_Compact_A01`: 165 cm.
   - `SK_INF_Base_Tall_A01`: 245 cm.
-- Final sex/body-type split is pending approval.
+- Sex-specific variants remain future character-creation work and must stay inside the locked body bands.
 - Review should include a 180 cm humanoid marker and Lesser Infernal stage markers.
 
 ## Materials And Color Palette
@@ -114,6 +117,7 @@ Create an original stylized fantasy MMORPG race body/style concept sheet of adul
 ## Folder And Naming Recommendation
 
 - Package folder: `docs/assets/characters/SK_INF_Base_A01/`.
+- Final art direction sheet: `docs/assets/characters/SK_INF_Base_A01/FINAL_ART_DIRECTION.md`.
 - Blender source: `SourceAssets/Blender/Characters/Infernals/SK_INF_Base_A01/SK_INF_Base_A01.blend`.
 - FBX exports: `SourceAssets/Exports/Characters/Infernals/SK_INF_Base_A01/`.
 - Unreal folder: `/Game/Aerathea/Characters/Infernals/Base/`.
