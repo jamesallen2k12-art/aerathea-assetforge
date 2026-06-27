@@ -37,6 +37,7 @@ Create an original stylized fantasy MMORPG VFX state sheet of `VFX_GNM_AetherShi
 - First-pass review uses `SM_GNM_AetherShieldWall_A01` as a low-poly helper mesh with segmented panes, edge rails, pulse lanes, projector nodes, impact focus, and failure-crack accents.
 - Final VFX should move to Niagara or equivalent VFX assets while keeping the helper mesh as optional LOD support.
 - VFX attaches to projector sockets and Blueprint state.
+- The native shieldwall actor now provides the VFX contract: `ShieldState`, `ImpactIntensity`, `OverloadPercent`, `ImpactLocationNormalized`, `ImpactLocator`, and idle/impact/failing material bindings.
 
 ## Texture And Material Notes
 
@@ -44,6 +45,7 @@ Create an original stylized fantasy MMORPG VFX state sheet of `VFX_GNM_AetherShi
 - Optional ripple/edge mask texture for final art.
 - Review material: `M_GNM_AetherShieldWall_Review_A01`
 - State instances: `MI_GNM_AetherShieldWall_A01_Idle`, `MI_GNM_AetherShieldWall_A01_Impact`, `MI_GNM_AetherShieldWall_A01_Failing`
+- Runtime scalar parameters: `ImpactIntensity`, `OverloadPercent`, `ImpactLocationNormalized`
 
 ## Triangle Budget
 
@@ -78,6 +80,7 @@ Create an original stylized fantasy MMORPG VFX state sheet of `VFX_GNM_AetherShi
 - Helper mesh: `/Game/Aerathea/VFX/GnomeOgre/SM_GNM_AetherShieldWall_A01`
 - Material: `/Game/Aerathea/Materials/M_GNM_AetherShieldWall_Review_A01`
 - Blueprint consumer: `/Game/Aerathea/Blueprints/GnomeOgre/BP_GNM_HeavyMekShieldwall_A01`
+- Native handoff: `AAETHeavyMekShieldwallActor` controls state materials, impact location, and scalar parameters until authored Niagara replaces or supplements the helper mesh.
 
 ## Folder And Naming Recommendation
 
@@ -91,3 +94,4 @@ Create an original stylized fantasy MMORPG VFX state sheet of `VFX_GNM_AetherShi
 - VFX does not overwhelm silhouettes or camera.
 - State names match the Blueprint handoff.
 - Helper mesh, materials, LOD behavior, collision ownership, and Unreal paths are defined.
+- Final Niagara consumes the existing native state and parameter contract instead of duplicating gameplay state.

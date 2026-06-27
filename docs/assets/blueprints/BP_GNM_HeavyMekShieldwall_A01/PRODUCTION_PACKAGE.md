@@ -68,6 +68,12 @@ Material instances:
 - `MI_GNM_AetherShieldWall_A01_Impact`
 - `MI_GNM_AetherShieldWall_A01_Failing`
 
+Runtime material parameters:
+
+- `ImpactIntensity`
+- `OverloadPercent`
+- `ImpactLocationNormalized`
+
 ## Triangle Budget
 
 - Projector static mesh LOD0: 3k-8k tris, 1-2 material slots.
@@ -105,7 +111,9 @@ Material instances:
 - VFX path: `/Game/Aerathea/VFX/GnomeOgre/VFX_GNM_AetherShieldWall_A01`
 - Pivot: ground center of shield-wall arc.
 - Required sockets on projector mesh: `vfx_core`, `vfx_shield_emit_l`, `vfx_shield_emit_r`, `attach_mek_l`, `attach_mek_r`, `damage_spark`.
-- Blueprint variables: `ShieldState`, `ShieldWidthCm`, `ProjectorCount`, `ArcHeightCm`, `bBlocksProjectiles`, `bBlocksPawns`, `ImpactIntensity`, `OverloadPercent`.
+- Blueprint variables: `ShieldState`, `ShieldWidthCm`, `ProjectorCount`, `ArcHeightCm`, `bBlocksProjectiles`, `bBlocksPawns`, `ImpactIntensity`, `OverloadPercent`, `ImpactLocationNormalized`, `ShieldIdleMaterial`, `ShieldImpactMaterial`, `ShieldFailingMaterial`.
+- Blueprint functions: `SetShieldState`, `SetImpactIntensity`, `SetOverloadPercent`, `SetImpactLocationNormalized`, `TriggerImpact`, `ConfigureShieldwall`.
+- Current native polish: state-driven material switching and scalar parameter propagation are implemented; final authored Niagara remains a future art pass.
 
 ## Folder And Naming Recommendation
 
@@ -123,3 +131,4 @@ Material instances:
 - Projector geometry is buildable as mid-poly Unreal content.
 - VFX is restrained, state-driven, and not constant heavy overdraw.
 - Collision, LODs, sockets, Blueprint variables, texture maps, and Unreal paths are defined.
+- Native Blueprint/VFX contract exposes state materials, impact location, impact intensity, and overload parameters for final Niagara or material-driven effects.

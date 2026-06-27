@@ -674,6 +674,71 @@ def validate_directional_light_priority(actors):
         raise RuntimeError("Directional light priority validation failed: {}".format("; ".join(failures)))
 
 
+def component_by_name(actor, component_class, expected_name):
+    for component in actor.get_components_by_class(component_class):
+        name = component.get_name()
+        if name == expected_name or name.startswith("{}_".format(expected_name)):
+            return component
+    return None
+
+
+def material_matches_expected(material, expected_path):
+    if material is None:
+        return False
+    if asset_path_without_object(material) == expected_path:
+        return True
+    expected_name = expected_path.rsplit("/", 1)[-1]
+    material_name = material.get_name()
+    return expected_name in material_name
+
+
+def validate_shieldwall_vfx_contract(shieldwall_actor):
+    failures = []
+    ranged_properties = {
+        "ImpactIntensity": (0.0, 1.0),
+        "OverloadPercent": (0.0, 1.0),
+        "ImpactLocationNormalized": (-1.0, 1.0),
+    }
+    for prop_name, (min_value, max_value) in ranged_properties.items():
+        try:
+            value = float(shieldwall_actor.get_editor_property(prop_name))
+        except Exception as exc:
+            failures.append("missing property {} ({})".format(prop_name, exc))
+            continue
+        if value < min_value or value > max_value:
+            failures.append("{} value {:.2f} is outside {:.2f}-{:.2f}".format(prop_name, value, min_value, max_value))
+
+    expected_materials = {
+        "ShieldIdleMaterial": "/Game/Aerathea/Materials/Instances/MI_GNM_AetherShieldWall_A01_Idle",
+        "ShieldImpactMaterial": "/Game/Aerathea/Materials/Instances/MI_GNM_AetherShieldWall_A01_Impact",
+        "ShieldFailingMaterial": "/Game/Aerathea/Materials/Instances/MI_GNM_AetherShieldWall_A01_Failing",
+    }
+    for prop_name, expected_path in expected_materials.items():
+        try:
+            material = shieldwall_actor.get_editor_property(prop_name)
+        except Exception as exc:
+            failures.append("missing property {} ({})".format(prop_name, exc))
+            continue
+        if material is None:
+            failures.append("{} is not assigned".format(prop_name))
+        elif not material_matches_expected(material, expected_path):
+            failures.append("{} is {}, expected {}".format(prop_name, material.get_path_name(), expected_path))
+
+    active_panel = component_by_name(shieldwall_actor, unreal.StaticMeshComponent, "ShieldPanel_01")
+    if active_panel is None:
+        failures.append("missing ShieldPanel_01 component")
+    else:
+        material = active_panel.get_material(0)
+        expected_idle = expected_materials["ShieldIdleMaterial"]
+        if material is None:
+            failures.append("ShieldPanel_01 has no material")
+        elif not material_matches_expected(material, expected_idle):
+            failures.append("ShieldPanel_01 material is {}, expected {}".format(material.get_path_name(), expected_idle))
+
+    if failures:
+        raise RuntimeError("Shieldwall VFX contract validation failed: {}".format("; ".join(failures)))
+
+
 def main():
     missing_assets = [
         asset_path
@@ -733,6 +798,7 @@ def main():
     shieldwall_class_name = shieldwall_actor.get_class().get_name()
     if "BP_GNM_HeavyMekShieldwall_A01" not in shieldwall_class_name and "AETHeavyMekShieldwallActor" not in shieldwall_class_name:
         raise RuntimeError("Shieldwall actor has unexpected class: {}".format(shieldwall_class_name))
+    validate_shieldwall_vfx_contract(shieldwall_actor)
 
     mesh_slot_failures = []
     for mesh_path in EXPECTED_STATIC_MESHES:

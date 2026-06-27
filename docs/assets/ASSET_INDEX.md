@@ -78,7 +78,7 @@
 | `KIT_DKH_FieldGear_A01` | Child asset intake complete, kit production package ready; priority child package docs ready; DCC builds pending; package uses approved A04 Drakhar scale: females 3'6"-4'2", males 4'0"-4'6" over conflicting source-sheet scale | `docs/assets/kits/KIT_DKH_FieldGear_A01/PRODUCTION_PACKAGE.md` |
 | `KIT_ABY_ShadowFlame_A01` | Visual intake complete for Abyss/Anathema source set; hierarchy kit and first ten proposed child creature packages ready for approval review | `docs/assets/kits/KIT_ABY_ShadowFlame_A01/PRODUCTION_PACKAGE.md` |
 | `KIT_GNM_IonaSiegebreaker_A01` | Visual intake complete for `Iona.png`; named gnome hero, heavy Mek, arc cannon, and Abyss encounter package directions proposed for approval review; 4 additional heavy Mek variants routed as source variants | `docs/assets/kits/KIT_GNM_IonaSiegebreaker_A01/PRODUCTION_PACKAGE.md` |
-| `KIT_GNM_OGR_RivalryEncounter_A01` | Source intake and production package ready for 21 Gnome-vs-Ogre encounter images plus 4 heavy Mek variants; `BP_GNM_HeavyMekShieldwall_A01`, `SK_OGR_Teknomancer_A01`, `SK_GNM_HeavyMek_Rivalry_A01`, `SK_OGR_Warrior_Rival_A01`, and `SM_OGR_CairnBattleGate_A01` have first-pass DCC/Unreal review implementations; Manticore interrupt route and final shieldwall Niagara/Blueprint polish remain pending | `docs/assets/kits/KIT_GNM_OGR_RivalryEncounter_A01/PRODUCTION_PACKAGE.md` |
+| `KIT_GNM_OGR_RivalryEncounter_A01` | Source intake and production package ready for 21 Gnome-vs-Ogre encounter images plus 4 heavy Mek variants; approved sequence is complete through `BP_GNM_HeavyMekShieldwall_A01`, `SK_OGR_Teknomancer_A01`, `SK_GNM_HeavyMek_Rivalry_A01`, `SK_OGR_Warrior_Rival_A01`, `SM_OGR_CairnBattleGate_A01`, `SK_CRE_Manticore_Interrupt_A01` planning, and shieldwall Blueprint/VFX contract polish | `docs/assets/kits/KIT_GNM_OGR_RivalryEncounter_A01/PRODUCTION_PACKAGE.md` |
 | `KIT_ORC_Shields_A01` | Priority production package ready; DCC build not started | `docs/assets/kits/KIT_ORC_Shields_A01/PRODUCTION_PACKAGE.md` |
 | `KIT_ORC_ShamanicTalismans_A01` | Priority production package ready; DCC build not started | `docs/assets/kits/KIT_ORC_ShamanicTalismans_A01/PRODUCTION_PACKAGE.md` |
 | `KIT_MIN_HideShields_A01` | Priority production package ready; DCC build not started | `docs/assets/kits/KIT_MIN_HideShields_A01/PRODUCTION_PACKAGE.md` |
@@ -144,14 +144,14 @@
 | --- | --- | --- |
 | `BP_AET_Portal_A01` | Native preview state/overlap/use-cooldown behavior implemented; Blueprint asset compiled; startup validation passing | `docs/assets/blueprints/BP_AET_Portal_A01/PRODUCTION_PACKAGE.md` |
 | `BP_AET_TargetDummy_A01` | Native training hit/break/reset behavior implemented; Blueprint asset created and compiled; startup validation passing | `docs/assets/blueprints/BP_AET_TargetDummy_A01/PRODUCTION_PACKAGE.md` |
-| `BP_GNM_HeavyMekShieldwall_A01` | Approved first-pass native Blueprintable actor, Blueprint asset, projector mesh, strengthened segmented VFX helper, material states, sockets, LOD0-LOD3, and startup review actor implemented; final Niagara/art pass pending | `docs/assets/blueprints/BP_GNM_HeavyMekShieldwall_A01/PRODUCTION_PACKAGE.md` |
+| `BP_GNM_HeavyMekShieldwall_A01` | Approved first-pass native Blueprintable actor, Blueprint asset, projector mesh, strengthened segmented VFX helper, material states, impact-location API, scalar VFX parameters, sockets, LOD0-LOD3, startup review actor, and validation contract implemented; final authored Niagara/art pass pending | `docs/assets/blueprints/BP_GNM_HeavyMekShieldwall_A01/PRODUCTION_PACKAGE.md` |
 
 ## VFX
 
 | Asset | Status | Package |
 | --- | --- | --- |
 | `VFX_INF_WorthinessJudgment_A01` | Infernal worthiness judgment VFX production package ready; Niagara/material authoring not started | `docs/assets/vfx/VFX_INF_WorthinessJudgment_A01/PRODUCTION_PACKAGE.md` |
-| `VFX_GNM_AetherShieldWall_A01` | First-pass VFX placeholder Blueprint, strengthened segmented helper mesh, and blue Aetherium material state instances implemented for `BP_GNM_HeavyMekShieldwall_A01`; final Niagara authoring pending | `docs/assets/vfx/VFX_GNM_AetherShieldWall_A01/PRODUCTION_PACKAGE.md` |
+| `VFX_GNM_AetherShieldWall_A01` | First-pass VFX placeholder Blueprint, strengthened segmented helper mesh, blue Aetherium material state instances, and native shieldwall VFX parameter contract implemented; final authored Niagara system pending | `docs/assets/vfx/VFX_GNM_AetherShieldWall_A01/PRODUCTION_PACKAGE.md` |
 
 ## Status Key
 

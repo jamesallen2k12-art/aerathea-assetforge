@@ -52,6 +52,26 @@ Create the first reusable Gnome-vs-Ogre encounter child as a Blueprint Actor tha
 - `ShieldState`: enum listed above
 - `ImpactIntensity`: 0.0-1.0
 - `OverloadPercent`: 0.0-1.0
+- `ImpactLocationNormalized`: -1.0 to 1.0 across the shield width
+- `ShieldIdleMaterial`: idle/braced helper-panel material
+- `ShieldImpactMaterial`: impact/overload helper-panel material
+- `ShieldFailingMaterial`: failing helper-panel material
+
+## Blueprint Callable Functions
+
+- `SetShieldState`
+- `SetImpactIntensity`
+- `SetOverloadPercent`
+- `SetImpactLocationNormalized`
+- `TriggerImpact`
+- `ConfigureShieldwall`
+
+## Native VFX Contract
+
+- The native actor assigns idle, impact, and failing materials by shield state.
+- The native actor moves `ImpactLocator` from `ImpactLocationNormalized` and current shield width.
+- The native actor pushes `ImpactIntensity`, `OverloadPercent`, and `ImpactLocationNormalized` scalar parameters onto shield panels and projectors.
+- Final Niagara should consume the same state and parameter names rather than inventing a parallel contract.
 - `bBlocksProjectiles`: default true
 - `bBlocksPawns`: default false
 
@@ -63,3 +83,4 @@ Create the first reusable Gnome-vs-Ogre encounter child as a Blueprint Actor tha
 - Shield VFX remains visible from gameplay camera distance but does not overwhelm the scene.
 - Collision state is disabled in `Inactive`, `Failing`, and `Shutdown`.
 - Heavy Mek socket attachment remains optional, so the package can be reviewed before final Mek skeletal work.
+- Material state bindings and impact parameter ranges are covered by `Tools/Unreal/validate_startup_scene.py`.

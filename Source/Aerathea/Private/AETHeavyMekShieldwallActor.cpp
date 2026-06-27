@@ -6,6 +6,7 @@
 #include "Components/SplineComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "Engine/StaticMesh.h"
+#include "Materials/MaterialInterface.h"
 
 AAETHeavyMekShieldwallActor::AAETHeavyMekShieldwallActor()
 {
@@ -20,6 +21,7 @@ AAETHeavyMekShieldwallActor::AAETHeavyMekShieldwallActor()
 	bBlocksPawns = false;
 	ImpactIntensity = 0.0f;
 	OverloadPercent = 0.0f;
+	ImpactLocationNormalized = 0.0f;
 
 	SceneRoot = CreateDefaultSubobject<USceneComponent>(TEXT("Root"));
 	SetRootComponent(SceneRoot);
@@ -77,6 +79,7 @@ void AAETHeavyMekShieldwallActor::OnConstruction(const FTransform& Transform)
 	ArcHeightCm = FMath::Clamp(ArcHeightCm, 180.0f, 520.0f);
 	ImpactIntensity = FMath::Clamp(ImpactIntensity, 0.0f, 1.0f);
 	OverloadPercent = FMath::Clamp(OverloadPercent, 0.0f, 1.0f);
+	ImpactLocationNormalized = FMath::Clamp(ImpactLocationNormalized, -1.0f, 1.0f);
 
 	AssignDefaultAssets();
 	UpdateShieldwallLayout();
@@ -101,6 +104,22 @@ void AAETHeavyMekShieldwallActor::SetOverloadPercent(float NewOverloadPercent)
 	ApplyShieldState();
 }
 
+void AAETHeavyMekShieldwallActor::SetImpactLocationNormalized(float NewImpactLocationNormalized)
+{
+	ImpactLocationNormalized = FMath::Clamp(NewImpactLocationNormalized, -1.0f, 1.0f);
+	UpdateShieldwallLayout();
+	ApplyShieldState();
+}
+
+void AAETHeavyMekShieldwallActor::TriggerImpact(float NewImpactLocationNormalized, float NewImpactIntensity)
+{
+	ImpactLocationNormalized = FMath::Clamp(NewImpactLocationNormalized, -1.0f, 1.0f);
+	ImpactIntensity = FMath::Clamp(NewImpactIntensity, 0.0f, 1.0f);
+	ShieldState = EAETShieldwallState::Impact;
+	UpdateShieldwallLayout();
+	ApplyShieldState();
+}
+
 void AAETHeavyMekShieldwallActor::ConfigureShieldwall(int32 NewProjectorCount, float NewShieldWidthCm, float NewArcHeightCm)
 {
 	ProjectorCount = FMath::Clamp(NewProjectorCount, 3, 5);
@@ -120,6 +139,27 @@ void AAETHeavyMekShieldwallActor::AssignDefaultAssets()
 		nullptr,
 		TEXT("/Game/Aerathea/VFX/GnomeOgre/SM_GNM_AetherShieldWall_A01.SM_GNM_AetherShieldWall_A01")
 	);
+	if (ShieldIdleMaterial == nullptr)
+	{
+		ShieldIdleMaterial = LoadObject<UMaterialInterface>(
+			nullptr,
+			TEXT("/Game/Aerathea/Materials/Instances/MI_GNM_AetherShieldWall_A01_Idle.MI_GNM_AetherShieldWall_A01_Idle")
+		);
+	}
+	if (ShieldImpactMaterial == nullptr)
+	{
+		ShieldImpactMaterial = LoadObject<UMaterialInterface>(
+			nullptr,
+			TEXT("/Game/Aerathea/Materials/Instances/MI_GNM_AetherShieldWall_A01_Impact.MI_GNM_AetherShieldWall_A01_Impact")
+		);
+	}
+	if (ShieldFailingMaterial == nullptr)
+	{
+		ShieldFailingMaterial = LoadObject<UMaterialInterface>(
+			nullptr,
+			TEXT("/Game/Aerathea/Materials/Instances/MI_GNM_AetherShieldWall_A01_Failing.MI_GNM_AetherShieldWall_A01_Failing")
+		);
+	}
 
 	if (ProjectorMesh != nullptr)
 	{
@@ -224,7 +264,9 @@ void AAETHeavyMekShieldwallActor::UpdateShieldwallLayout()
 
 	if (ImpactLocator != nullptr)
 	{
-		ImpactLocator->SetRelativeLocation(FVector(46.0f, 0.0f, ArcHeightCm * 0.62f));
+		const float ImpactY = FMath::Clamp(ImpactLocationNormalized, -1.0f, 1.0f) * ShieldWidthCm * 0.45f;
+		const float ImpactZ = ArcHeightCm * (0.58f + (0.10f * FMath::Clamp(ImpactIntensity, 0.0f, 1.0f)));
+		ImpactLocator->SetRelativeLocation(FVector(46.0f, ImpactY, ImpactZ));
 	}
 }
 
@@ -248,6 +290,21 @@ void AAETHeavyMekShieldwallActor::ApplyShieldState()
 		const bool bPanelSlotActive = Index < ActivePanelCount;
 		Panel->SetVisibility(bShieldVisible && bPanelSlotActive, true);
 		Panel->SetHiddenInGame(!(bShieldVisible && bPanelSlotActive), true);
+		if (bPanelSlotActive)
+		{
+			ApplyShieldMaterialAndParameters(Panel, ShieldMaterialForState());
+		}
+	}
+
+	for (UStaticMeshComponent* Projector : ProjectorComponents())
+	{
+		if (Projector == nullptr)
+		{
+			continue;
+		}
+		Projector->SetScalarParameterValueOnMaterials(TEXT("ImpactIntensity"), ImpactIntensity);
+		Projector->SetScalarParameterValueOnMaterials(TEXT("OverloadPercent"), OverloadPercent);
+		Projector->SetScalarParameterValueOnMaterials(TEXT("ImpactLocationNormalized"), ImpactLocationNormalized);
 	}
 
 	if (ShieldCollision != nullptr)
@@ -259,6 +316,43 @@ void AAETHeavyMekShieldwallActor::ApplyShieldState()
 		ShieldCollision->SetCollisionResponseToChannel(ECC_Pawn, bBlocksPawns ? ECR_Block : ECR_Ignore);
 		ShieldCollision->SetVisibility(false, true);
 		ShieldCollision->SetHiddenInGame(true, true);
+	}
+}
+
+void AAETHeavyMekShieldwallActor::ApplyShieldMaterialAndParameters(
+	UStaticMeshComponent* Panel,
+	UMaterialInterface* ShieldMaterial
+) const
+{
+	if (Panel == nullptr)
+	{
+		return;
+	}
+
+	if (ShieldMaterial != nullptr)
+	{
+		Panel->SetMaterial(0, ShieldMaterial);
+	}
+	Panel->SetScalarParameterValueOnMaterials(TEXT("ImpactIntensity"), ImpactIntensity);
+	Panel->SetScalarParameterValueOnMaterials(TEXT("OverloadPercent"), OverloadPercent);
+	Panel->SetScalarParameterValueOnMaterials(TEXT("ImpactLocationNormalized"), ImpactLocationNormalized);
+}
+
+UMaterialInterface* AAETHeavyMekShieldwallActor::ShieldMaterialForState() const
+{
+	switch (ShieldState)
+	{
+	case EAETShieldwallState::Impact:
+	case EAETShieldwallState::Overload:
+		return ShieldImpactMaterial != nullptr ? ShieldImpactMaterial.Get() : ShieldIdleMaterial.Get();
+	case EAETShieldwallState::Failing:
+		return ShieldFailingMaterial != nullptr ? ShieldFailingMaterial.Get() : ShieldIdleMaterial.Get();
+	case EAETShieldwallState::Inactive:
+	case EAETShieldwallState::Booting:
+	case EAETShieldwallState::Braced:
+	case EAETShieldwallState::Shutdown:
+	default:
+		return ShieldIdleMaterial.Get();
 	}
 }
 

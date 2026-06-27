@@ -6,6 +6,7 @@
 
 class UAudioComponent;
 class UBoxComponent;
+class UMaterialInterface;
 class USceneComponent;
 class USplineComponent;
 class UStaticMeshComponent;
@@ -98,6 +99,18 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Shieldwall", meta = (ClampMin = "0.0", ClampMax = "1.0"))
 	float OverloadPercent;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Shieldwall|VFX", meta = (ClampMin = "-1.0", ClampMax = "1.0"))
+	float ImpactLocationNormalized;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Shieldwall|VFX")
+	TObjectPtr<UMaterialInterface> ShieldIdleMaterial;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Shieldwall|VFX")
+	TObjectPtr<UMaterialInterface> ShieldImpactMaterial;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Shieldwall|VFX")
+	TObjectPtr<UMaterialInterface> ShieldFailingMaterial;
+
 	UFUNCTION(BlueprintCallable, Category = "Aerathea|Shieldwall")
 	void SetShieldState(EAETShieldwallState NewState);
 
@@ -108,12 +121,20 @@ public:
 	void SetOverloadPercent(float NewOverloadPercent);
 
 	UFUNCTION(BlueprintCallable, Category = "Aerathea|Shieldwall")
+	void SetImpactLocationNormalized(float NewImpactLocationNormalized);
+
+	UFUNCTION(BlueprintCallable, Category = "Aerathea|Shieldwall")
+	void TriggerImpact(float NewImpactLocationNormalized, float NewImpactIntensity);
+
+	UFUNCTION(BlueprintCallable, Category = "Aerathea|Shieldwall")
 	void ConfigureShieldwall(int32 NewProjectorCount, float NewShieldWidthCm, float NewArcHeightCm);
 
 protected:
 	void AssignDefaultAssets();
 	void UpdateShieldwallLayout();
 	void ApplyShieldState();
+	void ApplyShieldMaterialAndParameters(UStaticMeshComponent* Panel, UMaterialInterface* ShieldMaterial) const;
+	UMaterialInterface* ShieldMaterialForState() const;
 	TArray<UStaticMeshComponent*> ProjectorComponents() const;
 	TArray<UStaticMeshComponent*> ShieldPanelComponents() const;
 };
