@@ -1,6 +1,7 @@
 #include "AETReviewCameraDirector.h"
 
 #include "AETGnomeOgreBattlefieldEncounterActor.h"
+#include "AETHeavyMekShieldwallActor.h"
 #include "Camera/CameraActor.h"
 #include "Camera/CameraComponent.h"
 #include "Components/PrimitiveComponent.h"
@@ -102,6 +103,25 @@ int32 ReviewPhaseIndexForState(EAETGnomeOgreEncounterState State)
 	}
 }
 
+AAETGnomeOgreBattlefieldEncounterActor* FindGnomeOgreEncounterActor(UWorld* World)
+{
+	if (World == nullptr)
+	{
+		return nullptr;
+	}
+
+	for (TActorIterator<AAETGnomeOgreBattlefieldEncounterActor> It(World); It; ++It)
+	{
+		AAETGnomeOgreBattlefieldEncounterActor* EncounterActor = *It;
+		if (EncounterActor != nullptr)
+		{
+			return EncounterActor;
+		}
+	}
+
+	return nullptr;
+}
+
 const TCHAR* ReviewPhaseLogName(EAETGnomeOgreEncounterState State)
 {
 	switch (State)
@@ -125,6 +145,12 @@ const TCHAR* ReviewPhaseLogName(EAETGnomeOgreEncounterState State)
 	default:
 		return TEXT("Unknown");
 	}
+}
+
+bool IsPhaseFocusRequested()
+{
+	return FParse::Param(FCommandLine::Get(), TEXT("AETReviewPhaseFocus")) ||
+		FParse::Param(FCommandLine::Get(), TEXT("AETReviewFocusPhase"));
 }
 
 void LogReviewViewState(const TCHAR* Context, APlayerController* PlayerController)
@@ -234,16 +260,7 @@ void AAETReviewCameraDirector::ConfigureEncounterReviewPhase()
 		return;
 	}
 
-	AAETGnomeOgreBattlefieldEncounterActor* EncounterActor = nullptr;
-	for (TActorIterator<AAETGnomeOgreBattlefieldEncounterActor> It(World); It; ++It)
-	{
-		EncounterActor = *It;
-		if (EncounterActor != nullptr)
-		{
-			break;
-		}
-	}
-
+	AAETGnomeOgreBattlefieldEncounterActor* EncounterActor = FindGnomeOgreEncounterActor(World);
 	if (EncounterActor == nullptr)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("AETReviewCameraDirector: AETEncounterPhase requested, but no Gnome/Ogre encounter actor was found."));
@@ -428,6 +445,7 @@ void AAETReviewCameraDirector::ApplyReviewCamera()
 			{
 				CameraComponent->SetVisibility(true, true);
 			}
+			ConfigureFocusedEncounterCamera(CameraActor);
 			PlayerController->SetViewTargetWithBlend(CameraActor, 0.0f);
 			UE_LOG(
 				LogTemp,
@@ -443,6 +461,88 @@ void AAETReviewCameraDirector::ApplyReviewCamera()
 	}
 
 	UE_LOG(LogTemp, Warning, TEXT("AETReviewCameraDirector: no camera tagged %s found."), *ReviewCameraTag.ToString());
+}
+
+void AAETReviewCameraDirector::ConfigureFocusedEncounterCamera(ACameraActor* CameraActor)
+{
+	if (CameraActor == nullptr || !IsPhaseFocusRequested())
+	{
+		return;
+	}
+
+	EAETGnomeOgreEncounterState RequestedState = EAETGnomeOgreEncounterState::Setup;
+	FString RequestedPhaseName;
+	if (!TryReadEncounterPhaseCommandLine(RequestedState, RequestedPhaseName))
+	{
+		return;
+	}
+
+	AAETGnomeOgreBattlefieldEncounterActor* EncounterActor = FindGnomeOgreEncounterActor(GetWorld());
+	if (EncounterActor == nullptr)
+	{
+		return;
+	}
+
+	AActor* FocusActor = nullptr;
+	float AimHeightCm = 160.0f;
+	float FieldOfView = 42.0f;
+	FVector CameraOffset(1450.0f, -920.0f, 720.0f);
+
+	switch (RequestedState)
+	{
+	case EAETGnomeOgreEncounterState::ShieldImpact:
+		FocusActor = EncounterActor->ShieldwallActor.Get();
+		AimHeightCm = 210.0f;
+		FieldOfView = 40.0f;
+		CameraOffset = FVector(1200.0f, -760.0f, 620.0f);
+		break;
+	case EAETGnomeOgreEncounterState::PylonOverload:
+		FocusActor = EncounterActor->PylonObjectiveActor.Get();
+		AimHeightCm = 280.0f;
+		FieldOfView = 44.0f;
+		CameraOffset = FVector(-900.0f, 1700.0f, 850.0f);
+		break;
+	case EAETGnomeOgreEncounterState::CasterReinforcement:
+		FocusActor = EncounterActor->OgreShamanActor != nullptr ? EncounterActor->OgreShamanActor.Get() : EncounterActor->OgreNecromancerActor.Get();
+		AimHeightCm = 120.0f;
+		FieldOfView = 36.0f;
+		CameraOffset = FVector(620.0f, -760.0f, 420.0f);
+		break;
+	case EAETGnomeOgreEncounterState::ManticoreInterrupt:
+		FocusActor = EncounterActor->ManticoreInterruptActor.Get();
+		AimHeightCm = 260.0f;
+		FieldOfView = 40.0f;
+		CameraOffset = FVector(1350.0f, -820.0f, 720.0f);
+		break;
+	default:
+		return;
+	}
+
+	if (FocusActor == nullptr)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("AETReviewCameraDirector: phase focus requested for %s, but no focus actor is assigned."), ReviewPhaseLogName(RequestedState));
+		return;
+	}
+
+	const FVector AimLocation = FocusActor->GetActorLocation() + FVector(0.0f, 0.0f, AimHeightCm);
+	const FVector CameraLocation = AimLocation + CameraOffset;
+	CameraActor->SetActorLocation(CameraLocation);
+	CameraActor->SetActorRotation((AimLocation - CameraLocation).Rotation());
+	if (UCameraComponent* CameraComponent = CameraActor->GetCameraComponent())
+	{
+		CameraComponent->SetFieldOfView(FieldOfView);
+	}
+
+	UE_LOG(
+		LogTemp,
+		Display,
+		TEXT("AETReviewCameraDirector: focused review camera on %s for phase %s at %s rot=%s fov=%.1f."),
+		*GetNameSafe(FocusActor),
+		ReviewPhaseLogName(RequestedState),
+		*CameraActor->GetActorLocation().ToCompactString(),
+		*CameraActor->GetActorRotation().ToCompactString(),
+		FieldOfView
+	);
 }
 
 void AAETReviewCameraDirector::MarkScreenshotDelayElapsed()

@@ -49,6 +49,7 @@ protected:
 private:
 	void ConfigureCommandLineOptions();
 	void ConfigureEncounterReviewPhase();
+	void ConfigureFocusedEncounterCamera(class ACameraActor* CameraActor);
 	void ConfigureReviewMarkers();
 	void MarkScreenshotDelayElapsed();
 	void TryRequestReviewScreenshot();

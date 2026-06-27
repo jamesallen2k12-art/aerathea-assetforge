@@ -4,7 +4,7 @@
 
 - Build/import status: native-backed coordinator implemented; Blueprint asset created, compiled, placed in startup, and wired to branch actors.
 - Unreal state: implemented as `/Game/Aerathea/Blueprints/GnomeOgre/BP_GNM_OGR_BattlefieldEncounter_A01`; startup actor label is `AET_PROD_GNM_OGR_BattlefieldEncounter_A01`.
-- Review scope: dependency contract, phase states, actor slots, collision volumes, variables, events, optional-branch gates, shieldwall impact forwarding, pylon overload, caster reinforcement, Manticore interrupt hooks, timed auto-advancing review phases, headless phase validation, and phase-specific offscreen capture hooks are implemented for review-safe assembly.
+- Review scope: dependency contract, phase states, actor slots, collision volumes, variables, events, optional-branch gates, shieldwall impact forwarding, pylon overload, caster reinforcement, Manticore interrupt hooks, timed auto-advancing review phases, headless phase validation, and phase-specific focused/offscreen capture hooks are implemented for review-safe assembly.
 
 ## Planned Unreal Asset
 

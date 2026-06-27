@@ -13,6 +13,7 @@ VIEW_MODE="${AET_REVIEW_VIEWMODE:-lit}"
 SHOW_MARKERS="${AET_REVIEW_MARKERS:-0}"
 ENCOUNTER_PHASE="${AET_REVIEW_ENCOUNTER_PHASE:-}"
 CAPTURE_DELAY="${AET_REVIEW_CAPTURE_DELAY:-}"
+PHASE_FOCUS="${AET_REVIEW_PHASE_FOCUS:-0}"
 
 if [[ "$#" -eq 0 && "${SHOW_MARKERS}" =~ ^(1|true|TRUE|yes|YES|on|ON)$ ]]; then
   OUTPUT_PATH="${ROOT}/Saved/Automation/StartupReview/AeratheaStartupReview_Game4_Markers.png"
@@ -31,6 +32,11 @@ fi
 DELAY_ARGS=()
 if [[ -n "${CAPTURE_DELAY}" ]]; then
   DELAY_ARGS+=("-AETReviewCaptureDelay=${CAPTURE_DELAY}")
+fi
+
+FOCUS_ARGS=()
+if [[ "${PHASE_FOCUS}" =~ ^(1|true|TRUE|yes|YES|on|ON)$ ]]; then
+  FOCUS_ARGS+=("-AETReviewPhaseFocus")
 fi
 
 mkdir -p "$(dirname "${OUTPUT_PATH}")"
@@ -53,5 +59,6 @@ timeout 90s "${UE_EDITOR}" "${UPROJECT}" "${MAP_PATH}" \
   "${MARKER_ARGS[@]}" \
   "${PHASE_ARGS[@]}" \
   "${DELAY_ARGS[@]}" \
+  "${FOCUS_ARGS[@]}" \
   "-AETReviewViewMode=${VIEW_MODE}" \
   "-AETReviewCaptureFile=${OUTPUT_PATH}"

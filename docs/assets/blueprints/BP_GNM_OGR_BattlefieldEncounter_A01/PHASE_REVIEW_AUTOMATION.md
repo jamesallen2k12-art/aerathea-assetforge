@@ -26,11 +26,19 @@ Optional capture timing override:
 
 - `-AETReviewCaptureDelay=0.45`
 
+Optional focused phase framing:
+
+- `-AETReviewPhaseFocus`
+
+The focused flag temporarily moves the runtime review camera for that process only. It does not alter the saved startup overview camera. Use it for phase approval frames where the pylon, caster, Manticore, or shieldwall state must be readable.
+
 ## Capture Tooling
 
 Use this for the four branch review frames:
 
 `Tools/Unreal/capture_gnome_ogre_phase_reviews.sh`
+
+The batch script enables focused phase framing by default. Set `AET_REVIEW_PHASE_FOCUS=0` to force the canonical wide overview for every phase.
 
 Default output:
 
@@ -46,6 +54,10 @@ Generated files:
 For one-off captures, set `AET_REVIEW_ENCOUNTER_PHASE` before the standard startup capture script:
 
 `AET_REVIEW_ENCOUNTER_PHASE=PylonOverload Tools/Unreal/capture_startup_review_offscreen.sh`
+
+For a one-off focused frame:
+
+`AET_REVIEW_ENCOUNTER_PHASE=PylonOverload AET_REVIEW_PHASE_FOCUS=1 Tools/Unreal/capture_startup_review_offscreen.sh`
 
 ## Validation
 
