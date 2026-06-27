@@ -344,6 +344,7 @@ def aether_shield_wall() -> Mesh:
     mesh = Mesh("SM_GNM_AetherShieldWall_A01")
     m = create_common_materials(mesh)
     shield_material = mesh.material("M_GNM_AetherShieldWall_Review_A01", (0.04, 0.55, 1.0))
+    bright = m["aetherium"]
 
     pane = mesh.add_object("ShieldPane_Aetherium_CrescentReviewSurface", shield_material)
     pane.verts.extend(
@@ -363,12 +364,26 @@ def aether_shield_wall() -> Mesh:
         ]
     )
 
-    mesh.add_box("ShieldEdge_Aetherium_LeftBand", (0, -84, 160), (4, 6, 310), m["aetherium"])
-    mesh.add_box("ShieldEdge_Aetherium_RightBand", (0, 84, 160), (4, 6, 310), m["aetherium"])
-    mesh.add_box("ShieldEdge_Aetherium_TopBand", (0, 0, 336), (4, 128, 8), m["aetherium"])
-    mesh.add_box("ShieldPulse_Aetherium_LowerArc", (1, 0, 82), (3, 160, 10), m["aetherium"])
-    mesh.add_box("ShieldPulse_Aetherium_MidArc", (1, 0, 184), (3, 150, 8), m["aetherium"])
-    mesh.add_box("ShieldPulse_Aetherium_ImpactFocus", (2, 0, 214), (5, 34, 34), m["aetherium"])
+    mesh.add_box("ShieldEdge_Aetherium_LeftBand", (0, -84, 160), (4, 6, 310), bright)
+    mesh.add_box("ShieldEdge_Aetherium_RightBand", (0, 84, 160), (4, 6, 310), bright)
+    mesh.add_box("ShieldEdge_Aetherium_TopBand", (0, 0, 336), (4, 128, 8), bright)
+    mesh.add_box("ShieldEdge_Aetherium_BottomBand", (0, 0, 7), (4, 158, 8), bright)
+
+    for index, y in enumerate((-50, 0, 50), 1):
+        mesh.add_box(f"ShieldPane_Aetherium_SegmentRib_{index:02d}", (2, y, 169), (5, 4, 304), bright)
+    for index, z in enumerate((82, 154, 226, 294), 1):
+        width = 162 - (index * 10)
+        mesh.add_box(f"ShieldPulse_Aetherium_HorizontalLane_{index:02d}", (3, 0, z), (4, width, 7), bright)
+    for index, (y, z) in enumerate(((-42, 120), (42, 120), (-30, 246), (30, 246)), 1):
+        mesh.add_box(f"ShieldPulse_Aetherium_DiagonalLane_{index:02d}", (4, y, z), (4, 52, 6), bright)
+
+    mesh.add_diamond("ShieldPulse_Aetherium_ImpactFocus_Center", (5, 0, 214), (42, 42, 42), bright)
+    mesh.add_diamond("ShieldPulse_Aetherium_ImpactFocus_Outer", (6, 0, 214), (70, 70, 16), bright)
+    for index, (y, z) in enumerate(((-62, 92), (62, 92), (-47, 276), (47, 276)), 1):
+        mesh.add_diamond(f"ShieldPulse_Aetherium_ProjectorNode_{index:02d}", (5, y, z), (18, 18, 26), bright)
+
+    mesh.add_box("ShieldState_Aetherium_FailingCrack_LowerLeft", (7, -31, 62), (4, 10, 60), bright)
+    mesh.add_box("ShieldState_Aetherium_FailingCrack_UpperRight", (7, 28, 292), (4, 9, 54), bright)
     return mesh
 
 

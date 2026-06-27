@@ -77,7 +77,7 @@
 | `KIT_DKH_FieldGear_A01` | Child asset intake complete, kit production package ready; priority child package docs ready; DCC builds pending; package uses approved A04 Drakhar scale: females 3'6"-4'2", males 4'0"-4'6" over conflicting source-sheet scale | `docs/assets/kits/KIT_DKH_FieldGear_A01/PRODUCTION_PACKAGE.md` |
 | `KIT_ABY_ShadowFlame_A01` | Visual intake complete for Abyss/Anathema source set; hierarchy kit and first ten proposed child creature packages ready for approval review | `docs/assets/kits/KIT_ABY_ShadowFlame_A01/PRODUCTION_PACKAGE.md` |
 | `KIT_GNM_IonaSiegebreaker_A01` | Visual intake complete for `Iona.png`; named gnome hero, heavy Mek, arc cannon, and Abyss encounter package directions proposed for approval review; 4 additional heavy Mek variants routed as source variants | `docs/assets/kits/KIT_GNM_IonaSiegebreaker_A01/PRODUCTION_PACKAGE.md` |
-| `KIT_GNM_OGR_RivalryEncounter_A01` | Source intake and production package ready for 21 Gnome-vs-Ogre encounter images plus 4 heavy Mek variants; first child `BP_GNM_HeavyMekShieldwall_A01` has first-pass projector/VFX/Blueprint review implementation; Ogre Teknomancer, warrior, cairn gate, and Manticore routes remain pending | `docs/assets/kits/KIT_GNM_OGR_RivalryEncounter_A01/PRODUCTION_PACKAGE.md` |
+| `KIT_GNM_OGR_RivalryEncounter_A01` | Source intake and production package ready for 21 Gnome-vs-Ogre encounter images plus 4 heavy Mek variants; first child `BP_GNM_HeavyMekShieldwall_A01` has approved first-pass projector/VFX/Blueprint review implementation; `SK_OGR_Teknomancer_A01` has first-pass class-fit DCC/Unreal review import; Ogre warrior, cairn gate, and Manticore routes remain pending | `docs/assets/kits/KIT_GNM_OGR_RivalryEncounter_A01/PRODUCTION_PACKAGE.md` |
 | `KIT_ORC_Shields_A01` | Priority production package ready; DCC build not started | `docs/assets/kits/KIT_ORC_Shields_A01/PRODUCTION_PACKAGE.md` |
 | `KIT_ORC_ShamanicTalismans_A01` | Priority production package ready; DCC build not started | `docs/assets/kits/KIT_ORC_ShamanicTalismans_A01/PRODUCTION_PACKAGE.md` |
 | `KIT_MIN_HideShields_A01` | Priority production package ready; DCC build not started | `docs/assets/kits/KIT_MIN_HideShields_A01/PRODUCTION_PACKAGE.md` |
@@ -99,7 +99,8 @@
 | `SK_GNM_MekHarness_MKG_A01` | Production package and modeling handoff ready; DCC fit waits for approved gnome base body/skeleton | `docs/assets/characters/SK_GNM_MekHarness_MKG_A01/PRODUCTION_PACKAGE.md` |
 | `SK_GNM_Base_A01` | First-pass Blender source/FBX generated, imported as skeletal mesh, material instances and LOD0-LOD3 generated, sockets added, physics asset assigned, ABP created, validation passing | `docs/assets/characters/SK_GNM_Base_A01/PRODUCTION_PACKAGE.md` |
 | `SK_GIA_Base_A01` | Concept direction and first-pass DCC scale/proportion pass approved after height verification; male/female FBXs imported to Unreal, sockets/physics/ABP placeholders generated, startup validation passing; close-up visual approval pending | `docs/assets/characters/SK_GIA_Base_A01/PRODUCTION_PACKAGE.md` |
-| `SK_OGR_Base_A01` | Ogre source concept intake and base body production package ready; DCC build not started | `docs/assets/characters/SK_OGR_Base_A01/PRODUCTION_PACKAGE.md` |
+| `SK_OGR_Base_A01` | First-pass male/female Ogre body sources generated, imported to Unreal, material instances and LOD0-LOD3 generated, sockets/physics/ABP placeholders created, startup validation passing; final sculpt/retopo/UVs/textures and animation remain pending | `docs/assets/characters/SK_OGR_Base_A01/PRODUCTION_PACKAGE.md` |
+| `SK_OGR_Teknomancer_A01` | First-pass Ogre Teknomancer class-fit source generated, imported to Unreal, material instances and LOD0-LOD3 generated, sockets/physics/ABP placeholder created, startup review actor placed; final sculpt, shared-skeleton rig pass, UVs/textures, tuned physics, and animation remain pending | `docs/assets/characters/SK_OGR_Teknomancer_A01/PRODUCTION_PACKAGE.md` |
 | `SK_INF_Base_A01` | First-pass Blender source/FBX generated, compact/tall adult skeletal meshes imported, material instances and LOD0-LOD3 generated, sockets/physics/ABP placeholders created, startup scale/silhouette review approved; final adult body-band art direction ready; adult, lit-brand, sorcerer, and gate-guard source variants routed | `docs/assets/characters/SK_INF_Base_A01/PRODUCTION_PACKAGE.md` |
 | `SK_INF_Lesser_A01` | First-pass Blender source/FBX generated, lifecycle skeletal meshes imported for Spawn, 1st Kill, Blooded, Elder, Ancient; material instances and LOD0-LOD3 generated, sockets/physics/ABP placeholders created, startup scale/lifecycle silhouette review approved; child, clutch, and Lesser source variants routed | `docs/assets/characters/SK_INF_Lesser_A01/PRODUCTION_PACKAGE.md` |
 | `SK_DWR_Helm_Stonebound_A01` | Priority production package ready; DCC build not started | `docs/assets/characters/SK_DWR_Helm_Stonebound_A01/PRODUCTION_PACKAGE.md` |
@@ -139,14 +140,14 @@
 | --- | --- | --- |
 | `BP_AET_Portal_A01` | Native preview state/overlap/use-cooldown behavior implemented; Blueprint asset compiled; startup validation passing | `docs/assets/blueprints/BP_AET_Portal_A01/PRODUCTION_PACKAGE.md` |
 | `BP_AET_TargetDummy_A01` | Native training hit/break/reset behavior implemented; Blueprint asset created and compiled; startup validation passing | `docs/assets/blueprints/BP_AET_TargetDummy_A01/PRODUCTION_PACKAGE.md` |
-| `BP_GNM_HeavyMekShieldwall_A01` | First-pass native Blueprintable actor, Blueprint asset, projector mesh, VFX helper, material states, sockets, LOD0-LOD3, and startup review actor implemented; final Niagara/art pass pending | `docs/assets/blueprints/BP_GNM_HeavyMekShieldwall_A01/PRODUCTION_PACKAGE.md` |
+| `BP_GNM_HeavyMekShieldwall_A01` | Approved first-pass native Blueprintable actor, Blueprint asset, projector mesh, strengthened segmented VFX helper, material states, sockets, LOD0-LOD3, and startup review actor implemented; final Niagara/art pass pending | `docs/assets/blueprints/BP_GNM_HeavyMekShieldwall_A01/PRODUCTION_PACKAGE.md` |
 
 ## VFX
 
 | Asset | Status | Package |
 | --- | --- | --- |
 | `VFX_INF_WorthinessJudgment_A01` | Infernal worthiness judgment VFX production package ready; Niagara/material authoring not started | `docs/assets/vfx/VFX_INF_WorthinessJudgment_A01/PRODUCTION_PACKAGE.md` |
-| `VFX_GNM_AetherShieldWall_A01` | First-pass VFX placeholder Blueprint, helper mesh, and blue Aetherium material state instances implemented for `BP_GNM_HeavyMekShieldwall_A01`; final Niagara authoring pending | `docs/assets/vfx/VFX_GNM_AetherShieldWall_A01/PRODUCTION_PACKAGE.md` |
+| `VFX_GNM_AetherShieldWall_A01` | First-pass VFX placeholder Blueprint, strengthened segmented helper mesh, and blue Aetherium material state instances implemented for `BP_GNM_HeavyMekShieldwall_A01`; final Niagara authoring pending | `docs/assets/vfx/VFX_GNM_AetherShieldWall_A01/PRODUCTION_PACKAGE.md` |
 
 ## Status Key
 

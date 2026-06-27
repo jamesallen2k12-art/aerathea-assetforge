@@ -36,6 +36,8 @@ EXPECTED_ASSETS = [
     "/Game/Aerathea/Materials/M_INF_ScorchedStone_Blockout_A01",
     "/Game/Aerathea/Materials/M_INF_ObsidianIron_Blockout_A01",
     "/Game/Aerathea/Materials/M_INF_RitualGlow_Blockout_A01",
+    "/Game/Aerathea/Materials/M_OGR_TekGlow_Blockout_A01",
+    "/Game/Aerathea/Materials/M_OGR_SootedCopper_Blockout_A01",
     "/Game/Aerathea/Props/Training/SM_AET_TargetDummy_A01",
     "/Game/Aerathea/Props/Portal/SM_AET_PortalArch_A01",
     "/Game/Aerathea/Props/Environment/SM_AET_ModularGroundTile_A01",
@@ -76,6 +78,9 @@ EXPECTED_ASSETS = [
     "/Game/Aerathea/Characters/Giants/Base/SK_GIA_Base_Female_A01_Skeleton",
     "/Game/Aerathea/Characters/Giants/Base/PHYS_GIA_Base_Female_A01",
     "/Game/Aerathea/Characters/Giants/Base/ABP_GIA_Base_Female_A01",
+    "/Game/Aerathea/Characters/Ogres/Teknomancer/SK_OGR_Teknomancer_A01",
+    "/Game/Aerathea/Characters/Ogres/Teknomancer/PHYS_OGR_Teknomancer_A01",
+    "/Game/Aerathea/Characters/Ogres/Teknomancer/ABP_OGR_Teknomancer_A01",
     "/Game/Aerathea/Props/Infernals/BalgorothCult/SM_INF_CullingTrialFloor_A01",
     "/Game/Aerathea/Blueprints/Props/BP_AET_Portal_A01",
     "/Game/Aerathea/Blueprints/Props/BP_AET_TargetDummy_A01",
@@ -112,6 +117,7 @@ EXPECTED_ACTOR_LABELS = [
     "AET_PROD_Palisade_Corner_A01",
     "AET_PROD_Palisade_Gate_A01",
     "AET_PROD_INF_CullingTrialFloor_A01",
+    "AET_PROD_OgreTeknomancer_A01",
     "AET_PROD_PlayerStart_Review_A01",
     "AET_PROD_Camera_Review_A01",
     "AET_PROD_ReviewCameraDirector_A01",
@@ -173,6 +179,10 @@ EXPECTED_SKELETAL_MESHES = [
     (
         "/Game/Aerathea/Characters/Giants/Base/SK_GIA_Base_Female_A01",
         "/Game/Aerathea/Characters/Giants/Base/PHYS_GIA_Base_Female_A01",
+    ),
+    (
+        "/Game/Aerathea/Characters/Ogres/Teknomancer/SK_OGR_Teknomancer_A01",
+        "/Game/Aerathea/Characters/Ogres/Teknomancer/PHYS_OGR_Teknomancer_A01",
     ),
 ]
 EXPECTED_LOD_STATIC_MESHES = [
@@ -290,6 +300,25 @@ EXPECTED_SKELETAL_MESH_SOCKETS = [
             "vfx_stomp_ground",
         ],
     ),
+    (
+        "/Game/Aerathea/Characters/Ogres/Teknomancer/SK_OGR_Teknomancer_A01",
+        [
+            "hand_r_weapon",
+            "hand_l_offhand",
+            "hand_r_twohand_grip",
+            "hand_l_twohand_grip",
+            "spine_teknomancy_pack",
+            "vfx_chest_core",
+            "vfx_mouth",
+            "vfx_stomp_ground",
+            "vfx_hammer_core",
+            "vfx_bracer_l",
+            "vfx_bracer_r",
+            "vfx_tek_core",
+            "weapon_socket_r",
+            "head_fx",
+        ],
+    ),
 ]
 EXPECTED_RUNTIME_VISIBLE_LABELS = [
     "AET_PROD_GroundTile_A01_R3_C3",
@@ -318,6 +347,7 @@ EXPECTED_RUNTIME_VISIBLE_LABELS = [
     "AET_PROD_Palisade_Corner_A01",
     "AET_PROD_Palisade_Gate_A01",
     "AET_PROD_INF_CullingTrialFloor_A01",
+    "AET_PROD_OgreTeknomancer_A01",
     "AET_PROD_Camera_Review_A01",
     "AET_PROD_ReviewFillLight_A01",
     "AET_BOOT_KeyLight_Directional",
@@ -358,6 +388,10 @@ EXPECTED_BOUNDS_LIMITS = {
     "AET_PROD_INF_CullingTrialFloor_A01": {
         "extent_min": unreal.Vector(390.0, 390.0, 8.0),
         "radius_max": 720.0,
+    },
+    "AET_PROD_OgreTeknomancer_A01": {
+        "extent_min": unreal.Vector(45.0, 45.0, 140.0),
+        "radius_max": 700.0,
     },
 }
 REVIEW_CAMERA_ROTATION_TOLERANCE_DEGREES = 2.0

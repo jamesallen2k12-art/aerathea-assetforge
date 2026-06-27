@@ -34,7 +34,7 @@ Create an original stylized fantasy MMORPG VFX state sheet of `VFX_GNM_AetherShi
 
 ## Modeling Notes
 
-- First-pass review uses `SM_GNM_AetherShieldWall_A01` as a low-poly helper mesh.
+- First-pass review uses `SM_GNM_AetherShieldWall_A01` as a low-poly helper mesh with segmented panes, edge rails, pulse lanes, projector nodes, impact focus, and failure-crack accents.
 - Final VFX should move to Niagara or equivalent VFX assets while keeping the helper mesh as optional LOD support.
 - VFX attaches to projector sockets and Blueprint state.
 
@@ -47,7 +47,7 @@ Create an original stylized fantasy MMORPG VFX state sheet of `VFX_GNM_AetherShi
 
 ## Triangle Budget
 
-- Helper mesh: under 300 tris per segment.
+- Helper mesh: under 500 tris for the full first-pass review helper; final particle/ribbon implementation should stay cheaper at distance.
 - Final VFX should keep overdraw modest and reduce ripple density at distance.
 
 ## LOD Plan

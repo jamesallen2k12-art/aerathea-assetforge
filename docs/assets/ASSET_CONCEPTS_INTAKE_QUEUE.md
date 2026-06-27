@@ -62,7 +62,7 @@ Batch IDs should use `ACIQ-P##_NN`, where `P##` matches the priority row below a
 - Approved anchors in `AGENTS.md` control silhouettes and culture; do not re-interpret races from a single source image.
 - Character/NPC/class sheets that are not base bodies should be classified as starter outfit, class kit, hero NPC, enemy NPC, or reference variant.
 - Giant and Blood Axe concepts are seeded in `docs/assets/intake/ACIQ-P02_01_GIANT_BLOODAXE_SLATE.md`; `SK_GIA_Base_A01` now records the A04 review scale of female 14-15 ft and male 14'10"-16'0". Rebuild or rescale that package before any Blood Axe warband, Giant armor, or Giant-scale environment work.
-- Ogre concepts are seeded in `docs/assets/characters/SK_OGR_Base_A01/SOURCE_CONCEPT_INTAKE.md`; `SK_OGR_Base_A01` records the scale of female 10'0"-10'6" and male 10'4"-11'0". Approve base body direction before Ogre Teknomancer, Warrior, Shaman, Necromancer, armor, or settlement work.
+- Ogre concepts are seeded in `docs/assets/characters/SK_OGR_Base_A01/SOURCE_CONCEPT_INTAKE.md`; `SK_OGR_Base_A01` records the scale of female 10'0"-10'6" and male 10'4"-11'0". First-pass `SK_OGR_Base_A01` and `SK_OGR_Teknomancer_A01` review imports exist; Warrior, Shaman, Necromancer, armor, cairn, and settlement work still need child packages or final-art passes.
 
 ### Creature And Mount
 
