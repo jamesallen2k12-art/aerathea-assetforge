@@ -38,11 +38,11 @@ This intake routes the 2026-06-27 Gnome-vs-Ogre source concepts into reusable pr
 
 | Child asset | Type | Source support | Status | Notes |
 | --- | --- | --- | --- | --- |
-| `BP_GNM_HeavyMekShieldwall_A01` | Blueprint Actor/VFX | `GnomevsOgre*.png`, `GnomeFemalevsOgre*.png` | Production package ready | Creates reusable shield-wall field using Mek projectors and blue Aetherium arcs |
-| `SK_GNM_HeavyMek_Rivalry_A01` | Skeletal Mesh | `GnomeFemaleHeavyMek*.png`, encounter sheets | Package needed | Shared heavy Mek variant for encounter staging; may inherit from Iona kit if approved |
-| `SM_GNM_AetherShieldProjector_A01` | Static Mesh | shield-wall images | Package needed | Ground or Mek-mounted projector prop with socketed VFX |
-| `VFX_GNM_AetherShieldWall_A01` | Niagara/VFX | shield-wall images | Package needed | Blue shield arc, pulse, impact ripple, and failure state |
-| `SK_OGR_Teknomancer_A01` | Skeletal Mesh | `OgreTekvsGnomeMek.png`, encounter sheets | Package needed | Ogre class opponent with crude oversized Teknomancy hardware |
+| `BP_GNM_HeavyMekShieldwall_A01` | Blueprint Actor/VFX | `GnomevsOgre*.png`, `GnomeFemalevsOgre*.png` | First-pass DCC/Unreal review complete | Creates reusable shield-wall field using Mek projectors and blue Aetherium arcs |
+| `SK_GNM_HeavyMek_Rivalry_A01` | Skeletal Mesh | `GnomeFemaleHeavyMek*.png`, encounter sheets | First-pass DCC/Unreal review import complete | Shared heavy Mek variant for encounter staging; generic rivalry Mek, not the named Iona hero Mek |
+| `SM_GNM_AetherShieldProjector_A01` | Static Mesh | shield-wall images | First-pass DCC/Unreal review complete | Ground or Mek-mounted projector prop with socketed VFX |
+| `VFX_GNM_AetherShieldWall_A01` | Niagara/VFX | shield-wall images | First-pass placeholder VFX complete | Blue shield arc, pulse, impact ripple, and failure state |
+| `SK_OGR_Teknomancer_A01` | Skeletal Mesh | `OgreTekvsGnomeMek.png`, encounter sheets | First-pass DCC/Unreal review import complete | Ogre class opponent with crude oversized Teknomancy hardware |
 | `SK_OGR_Warrior_Rival_A01` | Skeletal Mesh | encounter sheets | Package needed | Brutal melee pressure unit using simple heavy weapons |
 | `SM_OGR_CairnBattleGate_A01` | Static Mesh kit | gate and battlefield framing in encounter sheets | Package needed | Ogre cairn gate/wall dressing scaled for 10-11 ft Ogres |
 | `SM_OGR_CrudeTekPylon_A01` | Static Mesh/VFX hook | Ogre Teknomancer pressure references | Package needed | Large unstable power pylon or coil for encounter objectives |

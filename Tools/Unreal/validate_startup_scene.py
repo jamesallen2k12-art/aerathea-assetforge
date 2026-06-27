@@ -38,6 +38,15 @@ EXPECTED_ASSETS = [
     "/Game/Aerathea/Materials/M_INF_RitualGlow_Blockout_A01",
     "/Game/Aerathea/Materials/M_OGR_TekGlow_Blockout_A01",
     "/Game/Aerathea/Materials/M_OGR_SootedCopper_Blockout_A01",
+    "/Game/Aerathea/Materials/M_GNM_Mek_DarkIron_Blockout_A01",
+    "/Game/Aerathea/Materials/M_GNM_Mek_Brass_Blockout_A01",
+    "/Game/Aerathea/Materials/M_GNM_Mek_Copper_Blockout_A01",
+    "/Game/Aerathea/Materials/M_GNM_Mek_BluePanel_Blockout_A01",
+    "/Game/Aerathea/Materials/M_GNM_Mek_AetheriumGlow_Blockout_A01",
+    "/Game/Aerathea/Materials/M_GNM_MekPilotSkin_Blockout_A01",
+    "/Game/Aerathea/Materials/M_GNM_MekPilotWorkwear_Blockout_A01",
+    "/Game/Aerathea/Materials/M_GNM_MekPilotHair_Blockout_A01",
+    "/Game/Aerathea/Materials/M_GNM_Mek_Leather_Blockout_A01",
     "/Game/Aerathea/Props/Training/SM_AET_TargetDummy_A01",
     "/Game/Aerathea/Props/Portal/SM_AET_PortalArch_A01",
     "/Game/Aerathea/Props/Environment/SM_AET_ModularGroundTile_A01",
@@ -81,6 +90,10 @@ EXPECTED_ASSETS = [
     "/Game/Aerathea/Characters/Ogres/Teknomancer/SK_OGR_Teknomancer_A01",
     "/Game/Aerathea/Characters/Ogres/Teknomancer/PHYS_OGR_Teknomancer_A01",
     "/Game/Aerathea/Characters/Ogres/Teknomancer/ABP_OGR_Teknomancer_A01",
+    "/Game/Aerathea/Characters/Gnomes/Meks/SK_GNM_HeavyMek_Rivalry_A01",
+    "/Game/Aerathea/Characters/Gnomes/Meks/SK_GNM_HeavyMek_Rivalry_A01_Skeleton",
+    "/Game/Aerathea/Characters/Gnomes/Meks/PHYS_GNM_HeavyMek_Rivalry_A01",
+    "/Game/Aerathea/Characters/Gnomes/Meks/ABP_GNM_HeavyMek_Rivalry_A01",
     "/Game/Aerathea/Props/Infernals/BalgorothCult/SM_INF_CullingTrialFloor_A01",
     "/Game/Aerathea/Blueprints/Props/BP_AET_Portal_A01",
     "/Game/Aerathea/Blueprints/Props/BP_AET_TargetDummy_A01",
@@ -118,6 +131,7 @@ EXPECTED_ACTOR_LABELS = [
     "AET_PROD_Palisade_Gate_A01",
     "AET_PROD_INF_CullingTrialFloor_A01",
     "AET_PROD_OgreTeknomancer_A01",
+    "AET_PROD_GNM_HeavyMek_Rivalry_A01",
     "AET_PROD_PlayerStart_Review_A01",
     "AET_PROD_Camera_Review_A01",
     "AET_PROD_ReviewCameraDirector_A01",
@@ -188,6 +202,11 @@ EXPECTED_SKELETAL_MESHES = [
         "/Game/Aerathea/Characters/Ogres/Teknomancer/SK_OGR_Teknomancer_A01",
         "/Game/Aerathea/Characters/Ogres/Teknomancer/PHYS_OGR_Teknomancer_A01",
         "/Game/Aerathea/Characters/Ogres/Base/SK_OGR_Base_Male_A01_Skeleton",
+    ),
+    (
+        "/Game/Aerathea/Characters/Gnomes/Meks/SK_GNM_HeavyMek_Rivalry_A01",
+        "/Game/Aerathea/Characters/Gnomes/Meks/PHYS_GNM_HeavyMek_Rivalry_A01",
+        "/Game/Aerathea/Characters/Gnomes/Meks/SK_GNM_HeavyMek_Rivalry_A01_Skeleton",
     ),
 ]
 EXPECTED_LOD_STATIC_MESHES = [
@@ -324,6 +343,22 @@ EXPECTED_SKELETAL_MESH_SOCKETS = [
             "head_fx",
         ],
     ),
+    (
+        "/Game/Aerathea/Characters/Gnomes/Meks/SK_GNM_HeavyMek_Rivalry_A01",
+        [
+            "vfx_reactor_core",
+            "vfx_shield_l",
+            "vfx_shield_r",
+            "weapon_cannon_muzzle",
+            "pilot_hatch",
+            "foot_l",
+            "foot_r",
+            "vfx_stomp_l",
+            "vfx_stomp_r",
+            "weapon_hammer_socket",
+            "vfx_chest_core",
+        ],
+    ),
 ]
 EXPECTED_RUNTIME_VISIBLE_LABELS = [
     "AET_PROD_GroundTile_A01_R3_C3",
@@ -353,6 +388,7 @@ EXPECTED_RUNTIME_VISIBLE_LABELS = [
     "AET_PROD_Palisade_Gate_A01",
     "AET_PROD_INF_CullingTrialFloor_A01",
     "AET_PROD_OgreTeknomancer_A01",
+    "AET_PROD_GNM_HeavyMek_Rivalry_A01",
     "AET_PROD_Camera_Review_A01",
     "AET_PROD_ReviewFillLight_A01",
     "AET_BOOT_KeyLight_Directional",
@@ -397,6 +433,10 @@ EXPECTED_BOUNDS_LIMITS = {
     "AET_PROD_OgreTeknomancer_A01": {
         "extent_min": unreal.Vector(45.0, 45.0, 140.0),
         "radius_max": 700.0,
+    },
+    "AET_PROD_GNM_HeavyMek_Rivalry_A01": {
+        "extent_min": unreal.Vector(45.0, 45.0, 140.0),
+        "radius_max": 760.0,
     },
 }
 REVIEW_CAMERA_ROTATION_TOLERANCE_DEGREES = 2.0

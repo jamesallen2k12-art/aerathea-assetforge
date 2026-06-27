@@ -136,6 +136,13 @@ Use 2K texture sets for common characters and props. Use 4K only for a named her
   - `BP_GNM_HeavyMekShieldwall_A01`
   - Alternative: `SK_OGR_Teknomancer_A01` if the next priority is Ogre class validation.
 
+## Implementation Status
+
+- `BP_GNM_HeavyMekShieldwall_A01`, `SM_GNM_AetherShieldProjector_A01`, `SM_GNM_AetherShieldWall_A01`, and `VFX_GNM_AetherShieldWall_A01` have approved first-pass review implementations.
+- `SK_OGR_Teknomancer_A01` has a first-pass class-fit DCC/Unreal review import.
+- `SK_GNM_HeavyMek_Rivalry_A01` has a first-pass DCC/Unreal review import with required Mek, weapon, pilot, and VFX sockets.
+- Remaining approved sequence: Ogre warrior rival, Ogre cairn battle gate, Manticore interrupt planning, then final shieldwall Niagara/Blueprint polish.
+
 ## Quality Gate Checklist
 
 - Gnome/Ogre scale contrast is readable at gameplay distance.

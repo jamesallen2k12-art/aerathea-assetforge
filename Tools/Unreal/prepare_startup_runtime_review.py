@@ -40,6 +40,7 @@ RUNTIME_VISIBLE_LABELS = [
     "AET_PROD_Palisade_Corner_A01",
     "AET_PROD_Palisade_Gate_A01",
     "AET_PROD_OgreTeknomancer_A01",
+    "AET_PROD_GNM_HeavyMek_Rivalry_A01",
     "AET_PROD_Camera_Review_A01",
     "AET_PROD_ReviewFillLight_A01",
     "AET_BOOT_KeyLight_Directional",
