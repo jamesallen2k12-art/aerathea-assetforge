@@ -43,7 +43,7 @@ This intake routes the 2026-06-27 Gnome-vs-Ogre source concepts into reusable pr
 | `SM_GNM_AetherShieldProjector_A01` | Static Mesh | shield-wall images | First-pass DCC/Unreal review complete | Ground or Mek-mounted projector prop with socketed VFX |
 | `VFX_GNM_AetherShieldWall_A01` | Niagara/VFX | shield-wall images | First-pass placeholder VFX complete | Blue shield arc, pulse, impact ripple, and failure state |
 | `SK_OGR_Teknomancer_A01` | Skeletal Mesh | `OgreTekvsGnomeMek.png`, encounter sheets | First-pass DCC/Unreal review import complete | Ogre class opponent with crude oversized Teknomancy hardware |
-| `SK_OGR_Warrior_Rival_A01` | Skeletal Mesh | encounter sheets | Package needed | Brutal melee pressure unit using simple heavy weapons |
+| `SK_OGR_Warrior_Rival_A01` | Skeletal Mesh | encounter sheets | First-pass DCC/Unreal review import complete | Brutal melee pressure unit using simple heavy weapons |
 | `SM_OGR_CairnBattleGate_A01` | Static Mesh kit | gate and battlefield framing in encounter sheets | Package needed | Ogre cairn gate/wall dressing scaled for 10-11 ft Ogres |
 | `SM_OGR_CrudeTekPylon_A01` | Static Mesh/VFX hook | Ogre Teknomancer pressure references | Package needed | Large unstable power pylon or coil for encounter objectives |
 | `BP_GNM_OGR_BattlefieldEncounter_A01` | Blueprint Actor | full source group | Blocked | Assembly Blueprint after first Mek, Ogre, shield, and gate children exist |

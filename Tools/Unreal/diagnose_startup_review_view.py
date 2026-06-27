@@ -23,6 +23,7 @@ REPORT_LABELS = [
     "AET_PROD_MKG_ToolPack_BackFit_A01",
     "AET_PROD_GNM_HeavyMekShieldwall_A01",
     "AET_PROD_OgreTeknomancer_A01",
+    "AET_PROD_OgreWarrior_Rival_A01",
     "AET_PROD_GNM_HeavyMek_Rivalry_A01",
     "AET_PROD_CRE_Gryphon_A01",
     "AET_PROD_Palisade_Wall_A01",
