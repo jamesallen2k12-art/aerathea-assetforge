@@ -97,8 +97,8 @@ The Ogre addendum contains 31 source concepts added after the previous manifest 
 | `Ogremale4.png` | Character/NPC/class | Ogre | Male warrior/body reference for future `SK_OGR_Warrior_A01` |
 | `OgreMaleTek.png` | Character/NPC/class | Ogre | Teknomancer class source; create `SK_OGR_Teknomancer_A01` and `KIT_OGR_Teknomancy_A01` |
 | `OgreWarrior.png` | Character/NPC/class | Ogre | Warrior class source; create `SK_OGR_Warrior_A01` |
-| `OgreShaman.png` | Character/NPC/class | Ogre | Shaman class source; create `SK_OGR_Shaman_A01` |
-| `OgreNecromancer.png` | Character/NPC/class | Ogre | Necromancer class source; create `SK_OGR_Necromancer_A01` |
+| `OgreShaman.png` | Character/NPC/class | Ogre | Shaman class source; package ready in `docs/assets/characters/SK_OGR_Shaman_A01/` |
+| `OgreNecromancer.png` | Character/NPC/class | Ogre | Necromancer class source; package ready in `docs/assets/characters/SK_OGR_Necromancer_A01/` |
 | `OgreSentinel.png` | Character/NPC/class | Ogre | Sentinel/formation source; create `SK_OGR_Sentinel_A01` or `KIT_OGR_Warband_A01` |
 | `OgreSentinels.png` | Character/NPC/class | Ogre | Sentinel group source; create `KIT_OGR_Warband_A01` |
 | `OgreSmiths.png` | Character/NPC/class | Ogre | Smith/forge NPC source; route to `KIT_OGR_Teknomancy_A01` and forge props |
