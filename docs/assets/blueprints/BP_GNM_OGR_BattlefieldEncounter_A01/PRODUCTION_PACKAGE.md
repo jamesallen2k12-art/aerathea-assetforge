@@ -7,7 +7,7 @@
 - Parent kit: `KIT_GNM_OGR_RivalryEncounter_A01`
 - World: Aerathea
 - Theme: Gnome Heavy Mek shield line versus Ogre warband pressure
-- Current status: production package, implementation handoff, and build/import status ready; Blueprint asset not created
+- Current status: native-backed coordinator implemented; Blueprint asset created and compiled; startup placement deferred until all optional branch imports can be assigned cleanly
 
 `BP_GNM_OGR_BattlefieldEncounter_A01` coordinates the reusable Gnome/Ogre rivalry scene. It should not become a monolithic art asset. Its job is to place, reference, configure, and sequence existing child actors: Gnome Heavy Mek, Heavy Mek shieldwall, Ogre Teknomancer, Ogre Warrior, Cairn Battle Gate, crude Tek pylon objective, optional Ogre caster variants, and optional Manticore interrupt.
 
@@ -121,7 +121,7 @@ Use short, inspectable Blueprint events first. Do not script final combat AI in 
 ## 13. Unreal Import Notes
 
 - Blueprint path: `/Game/Aerathea/Blueprints/GnomeOgre/BP_GNM_OGR_BattlefieldEncounter_A01`
-- Suggested native class later: `AAETGnomeOgreBattlefieldEncounterActor` only if Blueprint graph complexity grows.
+- Native class: `AAETGnomeOgreBattlefieldEncounterActor`.
 - Root component: `DefaultSceneRoot` or custom `SceneComponent`.
 - Editor label if placed: `AET_PROD_GNM_OGR_BattlefieldEncounter_A01`.
 - Map target: optional placement in `/Game/Aerathea/Maps/L_Aerathea_Startup` only after dependency review.
@@ -170,9 +170,10 @@ Blueprint functions/events:
 - Implementation handoff: `docs/assets/blueprints/BP_GNM_OGR_BattlefieldEncounter_A01/IMPLEMENTATION_HANDOFF.md`
 - Build/import status: `docs/assets/blueprints/BP_GNM_OGR_BattlefieldEncounter_A01/BUILD_IMPORT_STATUS.md`
 - Unreal Blueprint: `/Game/Aerathea/Blueprints/GnomeOgre/BP_GNM_OGR_BattlefieldEncounter_A01`
-- Future native class files, if needed:
+- Native class files:
   - `Source/Aerathea/Public/AETGnomeOgreBattlefieldEncounterActor.h`
   - `Source/Aerathea/Private/AETGnomeOgreBattlefieldEncounterActor.cpp`
+- Blueprint creation script: `Tools/Unreal/create_gnome_ogre_encounter_blueprint.py`
 
 ## 15. Quality Gate Checklist
 

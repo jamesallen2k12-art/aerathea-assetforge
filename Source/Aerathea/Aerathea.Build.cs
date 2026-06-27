@@ -13,7 +13,8 @@ public class Aerathea : ModuleRules
 				"CoreUObject",
 				"Engine",
 				"EnhancedInput",
-				"InputCore"
+				"InputCore",
+				"Niagara"
 			}
 		);
 	}

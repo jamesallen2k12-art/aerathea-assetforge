@@ -7,6 +7,8 @@
 class UAudioComponent;
 class UBoxComponent;
 class UMaterialInterface;
+class UNiagaraComponent;
+class UNiagaraSystem;
 class USceneComponent;
 class USplineComponent;
 class UStaticMeshComponent;
@@ -75,6 +77,9 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Aerathea|Shieldwall")
 	TObjectPtr<UAudioComponent> AudioShieldLoop;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Aerathea|Shieldwall|VFX")
+	TObjectPtr<UNiagaraComponent> ShieldNiagara;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Shieldwall")
 	EAETShieldwallState ShieldState;
 
@@ -111,6 +116,12 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Shieldwall|VFX")
 	TObjectPtr<UMaterialInterface> ShieldFailingMaterial;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Shieldwall|VFX")
+	TObjectPtr<UNiagaraSystem> ShieldNiagaraSystem;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Shieldwall|VFX")
+	bool bUseNiagaraShield;
+
 	UFUNCTION(BlueprintCallable, Category = "Aerathea|Shieldwall")
 	void SetShieldState(EAETShieldwallState NewState);
 
@@ -133,6 +144,7 @@ protected:
 	void AssignDefaultAssets();
 	void UpdateShieldwallLayout();
 	void ApplyShieldState();
+	void ApplyShieldNiagaraParameters();
 	void ApplyShieldMaterialAndParameters(UStaticMeshComponent* Panel, UMaterialInterface* ShieldMaterial) const;
 	UMaterialInterface* ShieldMaterialForState() const;
 	TArray<UStaticMeshComponent*> ProjectorComponents() const;

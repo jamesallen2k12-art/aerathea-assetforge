@@ -569,6 +569,7 @@ def component_hidden_or_invisible(component, actor_label=None):
         "Projector_05",
         "ShieldPanel_03",
         "ShieldPanel_04",
+        "ShieldNiagara",
     }
     if actor_label == "AET_PROD_GNM_HeavyMekShieldwall_A01" and component_name in optional_shieldwall_components:
         return False

@@ -5,7 +5,7 @@
 - Review helper status: implemented as static helper panels, material state instances, and native parameter contract.
 - Final Niagara art-pass status: handoff ready.
 - Unreal Niagara status: `NS_GNM_AetherShieldWall_A01` not authored.
-- Native Niagara hook status: not implemented.
+- Native Niagara hook status: implemented in `AAETHeavyMekShieldwallActor`; helper panels remain the visible fallback until an authored Niagara system exists.
 
 ## Existing Unreal Assets
 
@@ -31,19 +31,19 @@
 - Niagara art-pass handoff: `docs/assets/vfx/VFX_GNM_AetherShieldWall_A01/NIAGARA_ART_PASS_HANDOFF.md`
 - Blueprint/native consumer package: `docs/assets/blueprints/BP_GNM_HeavyMekShieldwall_A01/PRODUCTION_PACKAGE.md`
 - Native material/state contract: `AAETHeavyMekShieldwallActor`
+- Native Niagara hook: `UNiagaraComponent` on `AAETHeavyMekShieldwallActor`
+- Module dependency: `Niagara` added to `Source/Aerathea/Aerathea.Build.cs`
+- Project plugin: `Niagara` enabled in `Aerathea.uproject`
 - Startup validation checks the current material/scalar parameter contract.
 
 ## Blocking Items
 
 - Final Niagara system is not authored in Unreal.
-- `AAETHeavyMekShieldwallActor` does not yet include a Niagara component.
-- `Source/Aerathea/Aerathea.Build.cs` does not include the `Niagara` module dependency.
 - Final VFX visual approval must happen after the actual Niagara asset exists and is captured from the review camera.
 
 ## Remaining To Finalize
 
-1. Approve whether final implementation should be Blueprint-only Niagara or native-backed Niagara.
-2. Add the Niagara hook and module dependency if using native-backed implementation.
-3. Author `NS_GNM_AetherShieldWall_A01` and its emitters in Unreal.
-4. Bind user parameters to the existing shieldwall state/impact/overload contract.
-5. Validate startup capture and performance before marking the final art pass implemented.
+1. Author `NS_GNM_AetherShieldWall_A01` and its emitters in Unreal.
+2. Bind the authored system to the existing `User.*` shieldwall state/impact/overload parameters.
+3. Add validation for the Niagara component once the system asset exists.
+4. Validate startup capture and performance before marking the final art pass visually complete.

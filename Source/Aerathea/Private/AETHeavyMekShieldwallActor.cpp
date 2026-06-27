@@ -7,6 +7,8 @@
 #include "Components/StaticMeshComponent.h"
 #include "Engine/StaticMesh.h"
 #include "Materials/MaterialInterface.h"
+#include "NiagaraComponent.h"
+#include "NiagaraSystem.h"
 
 AAETHeavyMekShieldwallActor::AAETHeavyMekShieldwallActor()
 {
@@ -22,6 +24,7 @@ AAETHeavyMekShieldwallActor::AAETHeavyMekShieldwallActor()
 	ImpactIntensity = 0.0f;
 	OverloadPercent = 0.0f;
 	ImpactLocationNormalized = 0.0f;
+	bUseNiagaraShield = true;
 
 	SceneRoot = CreateDefaultSubobject<USceneComponent>(TEXT("Root"));
 	SetRootComponent(SceneRoot);
@@ -68,6 +71,12 @@ AAETHeavyMekShieldwallActor::AAETHeavyMekShieldwallActor()
 	AudioShieldLoop = CreateDefaultSubobject<UAudioComponent>(TEXT("AudioShieldLoop"));
 	AudioShieldLoop->SetupAttachment(SceneRoot);
 	AudioShieldLoop->bAutoActivate = false;
+
+	ShieldNiagara = CreateDefaultSubobject<UNiagaraComponent>(TEXT("ShieldNiagara"));
+	ShieldNiagara->SetupAttachment(SceneRoot);
+	ShieldNiagara->SetAutoActivate(false);
+	ShieldNiagara->SetVisibleFlag(false);
+	ShieldNiagara->SetHiddenInGame(true, true);
 }
 
 void AAETHeavyMekShieldwallActor::OnConstruction(const FTransform& Transform)
@@ -158,6 +167,13 @@ void AAETHeavyMekShieldwallActor::AssignDefaultAssets()
 		ShieldFailingMaterial = LoadObject<UMaterialInterface>(
 			nullptr,
 			TEXT("/Game/Aerathea/Materials/Instances/MI_GNM_AetherShieldWall_A01_Failing.MI_GNM_AetherShieldWall_A01_Failing")
+		);
+	}
+	if (ShieldNiagaraSystem == nullptr)
+	{
+		ShieldNiagaraSystem = LoadObject<UNiagaraSystem>(
+			nullptr,
+			TEXT("/Game/Aerathea/VFX/GnomeOgre/NS_GNM_AetherShieldWall_A01.NS_GNM_AetherShieldWall_A01")
 		);
 	}
 
@@ -268,6 +284,13 @@ void AAETHeavyMekShieldwallActor::UpdateShieldwallLayout()
 		const float ImpactZ = ArcHeightCm * (0.58f + (0.10f * FMath::Clamp(ImpactIntensity, 0.0f, 1.0f)));
 		ImpactLocator->SetRelativeLocation(FVector(46.0f, ImpactY, ImpactZ));
 	}
+
+	if (ShieldNiagara != nullptr)
+	{
+		ShieldNiagara->SetRelativeLocation(FVector(36.0f, 0.0f, ArcHeightCm * 0.50f));
+		ShieldNiagara->SetRelativeScale3D(FVector(1.0f, ShieldWidthCm / 700.0f, ArcHeightCm / 340.0f));
+		ApplyShieldNiagaraParameters();
+	}
 }
 
 void AAETHeavyMekShieldwallActor::ApplyShieldState()
@@ -317,6 +340,50 @@ void AAETHeavyMekShieldwallActor::ApplyShieldState()
 		ShieldCollision->SetVisibility(false, true);
 		ShieldCollision->SetHiddenInGame(true, true);
 	}
+
+	ApplyShieldNiagaraParameters();
+}
+
+void AAETHeavyMekShieldwallActor::ApplyShieldNiagaraParameters()
+{
+	if (ShieldNiagara == nullptr)
+	{
+		return;
+	}
+
+	if (ShieldNiagaraSystem != nullptr && ShieldNiagara->GetAsset() == nullptr)
+	{
+		ShieldNiagara->SetAsset(ShieldNiagaraSystem);
+	}
+
+	const bool bShieldVisible = ShieldState != EAETShieldwallState::Inactive && ShieldState != EAETShieldwallState::Shutdown;
+	const bool bCanRunNiagara = bUseNiagaraShield && bShieldVisible && ShieldNiagaraSystem != nullptr;
+	ShieldNiagara->SetVisibility(bCanRunNiagara, true);
+	ShieldNiagara->SetHiddenInGame(!bCanRunNiagara, true);
+	if (bCanRunNiagara && !ShieldNiagara->IsActive())
+	{
+		ShieldNiagara->Activate(true);
+	}
+	else if (!bCanRunNiagara && ShieldNiagara->IsActive())
+	{
+		ShieldNiagara->Deactivate();
+	}
+
+	ShieldNiagara->SetVariableFloat(TEXT("User.ShieldState"), static_cast<float>(static_cast<uint8>(ShieldState)));
+	ShieldNiagara->SetVariableFloat(TEXT("User.ShieldWidthCm"), ShieldWidthCm);
+	ShieldNiagara->SetVariableFloat(TEXT("User.ArcHeightCm"), ArcHeightCm);
+	ShieldNiagara->SetVariableInt(TEXT("User.ProjectorCount"), FMath::Clamp(ProjectorCount, 3, 5));
+	ShieldNiagara->SetVariableFloat(TEXT("User.ImpactIntensity"), ImpactIntensity);
+	ShieldNiagara->SetVariableFloat(TEXT("User.OverloadPercent"), OverloadPercent);
+	ShieldNiagara->SetVariableFloat(TEXT("User.ImpactLocationNormalized"), ImpactLocationNormalized);
+	ShieldNiagara->SetVariableBool(TEXT("User.bFailing"), ShieldState == EAETShieldwallState::Failing);
+	ShieldNiagara->SetVariableBool(TEXT("User.bOverloaded"), ShieldState == EAETShieldwallState::Overload || OverloadPercent > 0.66f);
+	if (ImpactLocator != nullptr)
+	{
+		ShieldNiagara->SetVariableVec3(TEXT("User.ImpactWorldLocation"), ImpactLocator->GetComponentLocation());
+	}
+	ShieldNiagara->SetVariableLinearColor(TEXT("User.EdgeColor"), FLinearColor(0.02f, 0.72f, 1.0f, 1.0f));
+	ShieldNiagara->SetVariableLinearColor(TEXT("User.FillColor"), FLinearColor(0.05f, 0.32f, 0.92f, 0.42f));
 }
 
 void AAETHeavyMekShieldwallActor::ApplyShieldMaterialAndParameters(
