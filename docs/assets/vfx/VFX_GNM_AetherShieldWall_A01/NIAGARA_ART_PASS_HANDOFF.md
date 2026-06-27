@@ -45,7 +45,7 @@ Current native Niagara parameters pushed by `AAETHeavyMekShieldwallActor`:
 - Unreal folder: `/Game/Aerathea/VFX/GnomeOgre/`
 - Blueprint/native consumer: `BP_GNM_HeavyMekShieldwall_A01` / `AAETHeavyMekShieldwallActor`
 - Optional helper mesh fallback: `SM_GNM_AetherShieldWall_A01`
-- Current first-pass emitter targets: `NE_GNM_ShieldEdgeBands_A01`, `NE_GNM_ShieldSurfacePulse_A01`, `NE_GNM_ShieldImpactRipple_A01`, `NE_GNM_ShieldOverloadSparks_A01`, and `NE_GNM_ShieldFailingFragments_A01`
+- Current first-pass emitter targets: `NE_GNM_ShieldEdgeBands_A01`, `NE_GNM_ShieldSurfacePulse_A01`, `NE_GNM_ShieldImpactRipple_A01`, `NE_GNM_ShieldOverloadSparks_A01`, `NE_GNM_ShieldFailingFragments_A01`, and `NE_GNM_ShieldShutdownCollapse_A01`
 
 ## Visual Direction
 
@@ -152,9 +152,10 @@ Before presenting a final Niagara visual approval:
 
 1. Validate shieldwall actor still exposes material/state contract.
 2. Confirm Niagara consumes `ImpactIntensity`, `OverloadPercent`, and `ImpactLocationNormalized`.
-3. Trigger `Braced`, `Impact`, `Overload`, `Failing`, and `Shutdown` states in editor or review map.
-4. Capture at startup review camera and confirm it does not obscure Ogre/Gnome silhouettes.
-5. Check mobile/low scalability settings or a low-VFX fallback if applicable.
+3. Run `Tools/Unreal/validate_gnome_ogre_vfx_polish_targets.py` to confirm every system/emitter target exists.
+4. Trigger `Braced`, `Impact`, `Overload`, `Failing`, and `Shutdown` states in editor or review map.
+5. Capture at startup review camera and confirm it does not obscure Ogre/Gnome silhouettes.
+6. Check mobile/low scalability settings or a low-VFX fallback if applicable.
 
 ## Acceptance Checklist
 

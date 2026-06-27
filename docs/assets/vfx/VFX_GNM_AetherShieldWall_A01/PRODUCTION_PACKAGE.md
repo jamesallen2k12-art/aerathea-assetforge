@@ -4,7 +4,7 @@
 
 `VFX_GNM_AetherShieldWall_A01` defines the Gnome/Mekgineer Aether shield-wall effect for the Gnome-vs-Ogre rivalry kit. The current review implementation uses static helper panels and material-state instances. The final authored Niagara art pass should replace or supplement the helper panels with a clean, blue, segmented, defensive, and precise effect that contrasts clearly against Ogre forge-orange and necromantic green effects.
 
-Current status: first-pass helper/VFX contract implemented; final authored Niagara art-pass handoff ready; Unreal Niagara target `NS_GNM_AetherShieldWall_A01` exists and is assigned; template-derived `NE_GNM_*` emitter assets exist as editable art-pass targets; bespoke shield graph polish remains pending.
+Current status: first-pass helper/VFX contract implemented; final authored Niagara art-pass handoff ready; Unreal Niagara target `NS_GNM_AetherShieldWall_A01` exists and is assigned; template-derived `NE_GNM_*` emitter assets exist as editable art-pass targets, including shutdown-collapse coverage; bespoke shield graph polish remains pending.
 
 ## Gameplay Purpose
 
@@ -39,8 +39,8 @@ Create an original stylized fantasy MMORPG VFX state sheet of `VFX_GNM_AetherShi
 - First-pass review uses `SM_GNM_AetherShieldWall_A01` as a low-poly helper mesh with segmented panes, edge rails, pulse lanes, projector nodes, impact focus, and failure-crack accents.
 - Final VFX should move to Niagara or equivalent VFX assets while keeping the helper mesh as optional LOD support.
 - VFX attaches to projector sockets and Blueprint state.
-- The native shieldwall actor now provides the VFX contract: `ShieldState`, `ImpactIntensity`, `OverloadPercent`, `ImpactLocationNormalized`, `ImpactLocator`, and idle/impact/failing material bindings.
-- Final Niagara requires an implementation hook because `AAETHeavyMekShieldwallActor` currently pushes scalar parameters to materials and positions `ImpactLocator`, but does not own a Niagara component.
+- The native shieldwall actor now provides the VFX contract: `ShieldState`, `ImpactIntensity`, `OverloadPercent`, `ImpactLocationNormalized`, `ImpactLocator`, idle/impact/failing material bindings, `ShieldNiagara`, and `ShieldNiagaraSystem`.
+- Final Niagara uses the implemented native hook on `AAETHeavyMekShieldwallActor`; helper panels remain as fallback and low-end LOD support until the bespoke graph is visually approved.
 
 ## Texture And Material Notes
 
@@ -58,11 +58,7 @@ Final Niagara assets:
 - `NE_GNM_ShieldImpactRipple_A01`
 - `NE_GNM_ShieldOverloadSparks_A01`
 - `NE_GNM_ShieldFailingFragments_A01`
-- `NE_GNM_ShieldEdgeBands_A01`
-- `NE_GNM_ShieldSurfacePulse_A01`
-- `NE_GNM_ShieldImpactRipple_A01`
-- `NE_GNM_ShieldOverloadSparks_A01`
-- `NE_GNM_ShieldFailingFragments_A01`
+- `NE_GNM_ShieldShutdownCollapse_A01`
 
 Niagara user parameters:
 
@@ -114,6 +110,7 @@ Niagara user parameters:
 - Material: `/Game/Aerathea/Materials/M_GNM_AetherShieldWall_Review_A01`
 - Blueprint consumer: `/Game/Aerathea/Blueprints/GnomeOgre/BP_GNM_HeavyMekShieldwall_A01`
 - Native handoff: `AAETHeavyMekShieldwallActor` controls state materials, impact location, and scalar parameters until authored Niagara replaces or supplements the helper mesh.
+- Validation: `Tools/Unreal/validate_startup_scene.py`, `Tools/Unreal/validate_gnome_ogre_vfx_polish_targets.py`
 
 ## Folder And Naming Recommendation
 

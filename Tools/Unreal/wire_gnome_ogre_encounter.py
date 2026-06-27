@@ -57,6 +57,7 @@ NIAGARA_EMITTER_TARGETS = [
     ("{}/NE_GNM_ShieldImpactRipple_A01".format(GNOME_OGRE_VFX_PATH), "/Niagara/DefaultAssets/Templates/Emitters/SimpleSpriteBurst"),
     ("{}/NE_GNM_ShieldOverloadSparks_A01".format(GNOME_OGRE_VFX_PATH), "/Niagara/DefaultAssets/Templates/Emitters/DirectionalBurst"),
     ("{}/NE_GNM_ShieldFailingFragments_A01".format(GNOME_OGRE_VFX_PATH), "/Niagara/DefaultAssets/Templates/Emitters/ConfettiBurst"),
+    ("{}/NE_GNM_ShieldShutdownCollapse_A01".format(GNOME_OGRE_VFX_PATH), "/Niagara/DefaultAssets/Templates/Emitters/SimpleSpriteBurst"),
     ("{}/NE_OGR_CrudeTekPylon_Overload_A01".format(OGRE_VFX_PATH), "/Niagara/DefaultAssets/Templates/Emitters/SimpleSpriteBurst"),
     ("{}/NE_CRE_Manticore_Impact_A01".format(CREATURE_VFX_PATH), "/Niagara/DefaultAssets/Templates/Emitters/DirectionalBurst"),
 ]

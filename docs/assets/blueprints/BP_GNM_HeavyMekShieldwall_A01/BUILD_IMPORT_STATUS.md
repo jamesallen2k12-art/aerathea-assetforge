@@ -6,7 +6,7 @@
 - VFX placeholder: `/Game/Aerathea/VFX/GnomeOgre/VFX_GNM_AetherShieldWall_A01`
 - Shield helper mesh: `/Game/Aerathea/VFX/GnomeOgre/SM_GNM_AetherShieldWall_A01`
 - Niagara target: `/Game/Aerathea/VFX/GnomeOgre/NS_GNM_AetherShieldWall_A01`
-- Template-derived emitter targets: `/Game/Aerathea/VFX/GnomeOgre/NE_GNM_ShieldEdgeBands_A01`, `/Game/Aerathea/VFX/GnomeOgre/NE_GNM_ShieldSurfacePulse_A01`, `/Game/Aerathea/VFX/GnomeOgre/NE_GNM_ShieldImpactRipple_A01`, `/Game/Aerathea/VFX/GnomeOgre/NE_GNM_ShieldOverloadSparks_A01`, `/Game/Aerathea/VFX/GnomeOgre/NE_GNM_ShieldFailingFragments_A01`
+- Template-derived emitter targets: `/Game/Aerathea/VFX/GnomeOgre/NE_GNM_ShieldEdgeBands_A01`, `/Game/Aerathea/VFX/GnomeOgre/NE_GNM_ShieldSurfacePulse_A01`, `/Game/Aerathea/VFX/GnomeOgre/NE_GNM_ShieldImpactRipple_A01`, `/Game/Aerathea/VFX/GnomeOgre/NE_GNM_ShieldOverloadSparks_A01`, `/Game/Aerathea/VFX/GnomeOgre/NE_GNM_ShieldFailingFragments_A01`, `/Game/Aerathea/VFX/GnomeOgre/NE_GNM_ShieldShutdownCollapse_A01`
 - Startup review actor: `AET_PROD_GNM_HeavyMekShieldwall_A01`
 
 ## Completed Review Requirements
@@ -18,6 +18,7 @@
 - Native actor now binds `ShieldIdleMaterial`, `ShieldImpactMaterial`, and `ShieldFailingMaterial` to the helper panels by `ShieldState`.
 - Native actor exposes `ImpactLocationNormalized`, `SetImpactLocationNormalized`, and `TriggerImpact` for localized impact ripples.
 - Native actor pushes `ImpactIntensity`, `OverloadPercent`, and `ImpactLocationNormalized` scalar parameters to shield panels and projector materials for future Niagara/material handoff.
+- Native actor also pushes the shieldwall `User.*` Niagara parameters through `ShieldNiagara`; VFX target coverage is validated by `Tools/Unreal/validate_gnome_ogre_vfx_polish_targets.py`.
 - Startup validation now verifies the shieldwall VFX material contract and impact parameter ranges.
 
 ## Remaining Final-Art Work

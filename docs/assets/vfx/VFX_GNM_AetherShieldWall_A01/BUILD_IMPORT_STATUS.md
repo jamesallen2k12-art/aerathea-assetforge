@@ -3,7 +3,7 @@
 ## Current Status
 
 - Review helper status: implemented as static helper panels, material state instances, and native parameter contract.
-- Final Niagara art-pass status: handoff ready; template-derived emitter target assets created; bespoke graph polish pending.
+- Final Niagara art-pass status: handoff ready; template-derived emitter target assets created, including shutdown-collapse coverage; bespoke graph polish pending.
 - Unreal Niagara status: target system `NS_GNM_AetherShieldWall_A01` exists and is assigned for native/component binding.
 - Native Niagara hook status: implemented in `AAETHeavyMekShieldwallActor`; helper panels remain the visible fallback until the target system receives bespoke authored shield graph tuning.
 
@@ -17,6 +17,7 @@
 - `/Game/Aerathea/VFX/GnomeOgre/NE_GNM_ShieldImpactRipple_A01`
 - `/Game/Aerathea/VFX/GnomeOgre/NE_GNM_ShieldOverloadSparks_A01`
 - `/Game/Aerathea/VFX/GnomeOgre/NE_GNM_ShieldFailingFragments_A01`
+- `/Game/Aerathea/VFX/GnomeOgre/NE_GNM_ShieldShutdownCollapse_A01`
 - `/Game/Aerathea/Materials/M_GNM_AetherShieldWall_Review_A01`
 - `/Game/Aerathea/Materials/Instances/MI_GNM_AetherShieldWall_A01_Idle`
 - `/Game/Aerathea/Materials/Instances/MI_GNM_AetherShieldWall_A01_Impact`
@@ -29,6 +30,7 @@
 - `/Game/Aerathea/VFX/GnomeOgre/NE_GNM_ShieldImpactRipple_A01`
 - `/Game/Aerathea/VFX/GnomeOgre/NE_GNM_ShieldOverloadSparks_A01`
 - `/Game/Aerathea/VFX/GnomeOgre/NE_GNM_ShieldFailingFragments_A01`
+- `/Game/Aerathea/VFX/GnomeOgre/NE_GNM_ShieldShutdownCollapse_A01`
 
 ## Completed Prerequisites
 
@@ -40,6 +42,7 @@
 - Module dependency: `Niagara` added to `Source/Aerathea/Aerathea.Build.cs`
 - Project plugin: `Niagara` enabled in `Aerathea.uproject`
 - Startup validation checks the current material/scalar parameter contract and the assigned `NS_GNM_AetherShieldWall_A01` target asset.
+- VFX target validation script: `Tools/Unreal/validate_gnome_ogre_vfx_polish_targets.py`
 
 ## Blocking Items
 
