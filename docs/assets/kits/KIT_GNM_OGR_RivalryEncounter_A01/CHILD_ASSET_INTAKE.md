@@ -47,7 +47,7 @@ This intake routes the 2026-06-27 Gnome-vs-Ogre source concepts into reusable pr
 | `SM_OGR_CairnBattleGate_A01` | Static Mesh kit | gate and battlefield framing in encounter sheets | First-pass DCC/Unreal review import complete | Ogre cairn gate/wall dressing scaled for 10-11 ft Ogres |
 | `SM_OGR_CrudeTekPylon_A01` | Static Mesh/VFX hook | Ogre Teknomancer pressure references | Package needed | Large unstable power pylon or coil for encounter objectives |
 | `BP_GNM_OGR_BattlefieldEncounter_A01` | Blueprint Actor | full source group | Blocked | Assembly Blueprint after first Mek, Ogre, shield, and gate children exist |
-| `SK_CRE_Manticore_Interrupt_A01` | Creature variant reference | `GnomevsOgreandManticore8.png` | Reference only | Do not build until base Manticore package direction is approved |
+| `SK_CRE_Manticore_Interrupt_A01` | Creature variant reference | `GnomevsOgreandManticore8.png` | Planning package ready | Do not build until base `SK_CRE_Manticore_A01` direction, skeleton, and proportions are approved |
 
 ## First Child Recommendation
 

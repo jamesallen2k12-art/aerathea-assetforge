@@ -113,6 +113,7 @@
 | Asset | Status | Package |
 | --- | --- | --- |
 | `SK_CRE_Gryphon_A01` | First-pass Blender source/FBX generated, imported as skeletal mesh, material instances and LOD0-LOD3 generated, sockets added, physics asset assigned, ABP created, wing-spread animation blockout imported, validation passing | `docs/assets/creatures/SK_CRE_Gryphon_A01/PRODUCTION_PACKAGE.md` |
+| `SK_CRE_Manticore_Interrupt_A01` | Encounter-variant production package, modeling handoff, and build/import status ready; DCC build blocked until base `SK_CRE_Manticore_A01` direction, skeleton, and proportions are approved | `docs/assets/creatures/SK_CRE_Manticore_Interrupt_A01/PRODUCTION_PACKAGE.md` |
 | `SK_ABY_BlackPikeTrooper_A01` | Concept direction proposed; approval pending before DCC build | `docs/assets/creatures/SK_ABY_BlackPikeTrooper_A01/PRODUCTION_PACKAGE.md` |
 | `SK_ABY_CrescentReaver_A01` | Concept direction proposed; approval pending before DCC build | `docs/assets/creatures/SK_ABY_CrescentReaver_A01/PRODUCTION_PACKAGE.md` |
 | `SK_ABY_VoidbowStalker_A01` | Concept direction proposed; approval pending before DCC build | `docs/assets/creatures/SK_ABY_VoidbowStalker_A01/PRODUCTION_PACKAGE.md` |

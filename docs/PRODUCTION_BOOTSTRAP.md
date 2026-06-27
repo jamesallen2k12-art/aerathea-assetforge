@@ -137,6 +137,7 @@ Current first-slice status:
 - `SK_GNM_HeavyMek_Rivalry_A01` has a first-pass Blender source, FBX export, Unreal skeletal mesh import, material instances, LOD0-LOD3, Mek/VFX sockets, physics asset, ABP placeholder, and startup review placement. Final sculpt, retopo, UVs/textures, tuned physics, and animation remain pending.
 - `SK_OGR_Warrior_Rival_A01` has a first-pass Blender source, FBX export, Unreal skeletal mesh import, material instances, LOD0-LOD3, shield/hammer/VFX sockets, physics asset, ABP placeholder, and startup review placement. Final sculpt, shared Ogre rig fit, UVs/textures, tuned physics, and animation remain pending.
 - `SM_OGR_CairnBattleGate_A01` has a first-pass Blender source, FBX export, Unreal static mesh import, cairn stone material base, material instances, LOD0-LOD3, static mesh sockets, simple collision, startup review placement, passing validation, and offscreen capture coverage. Final sculpt, UVs/textures, tuned collision, modular variants, and Blueprint gate behavior remain pending.
+- `SK_CRE_Manticore_Interrupt_A01` has an encounter-variant production package, modeling handoff, and build/import status ready for the Gnome/Ogre interrupt source. DCC build is blocked until base `SK_CRE_Manticore_A01` direction, skeleton, and proportions are approved.
 - `KIT_DWR_Armory_A01`, `KIT_ELV_Armory_A01`, `KIT_DEL_Armory_A01`, `KIT_ORC_Arsenal_A01`, `KIT_MIN_Arsenal_A01`, and `KIT_DKH_FieldGear_A01` have child intake and kit production packages ready, and their first priority child package docs are complete; DCC builds for those children are still pending.
 - `SK_GNM_Base_A01` has a first-pass DCC review body, skeleton, Unreal skeletal mesh import, material instances, generated LOD0-LOD3, gear/VFX socket landmarks, assigned physics asset, animation Blueprint placeholder, and passing validation. Final sculpt, retopo, UVs, textures, tuned physics, and full animation set remain production work.
 - `SM_AET_Palisade_A01` has wall/post/corner/gate/end-cap Blender sources, FBX exports, Unreal imports, startup placements, simple UCX collision, material instances, generated LOD0-LOD3, and passing validation.
@@ -148,7 +149,7 @@ Next priority order:
 
 1. Use `Tools/Unreal/launch_startup_review_editor.sh` when an interactive manual inspection is needed; focus on silhouette, scale, material readability, collision fit, sockets, and LOD transitions.
 2. Review the updated startup scene with `SM_MKG_GrappleHook_A01`, `BP_GNM_HeavyMekShieldwall_A01`, `SK_OGR_Teknomancer_A01`, and `SK_GNM_HeavyMek_Rivalry_A01` visible together.
-3. Continue the approved Gnome/Ogre rivalry order with Manticore interrupt planning, then final shieldwall Niagara/Blueprint polish.
+3. Continue the approved Gnome/Ogre rivalry order with final shieldwall Niagara/Blueprint polish.
 4. Resolve the first-pass `SK_OGR_Teknomancer_A01` shared Ogre skeleton warning during the final rig pass.
 5. Replace first-pass review meshes with approved art-model geometry, final UVs, authored texture sets, and tuned collision after the relevant final art directions are approved.
 6. Tune gnome and gryphon physics bodies, sockets, and animation Blueprint logic into real locomotion/attachment tests after approved final sculpt, skin, and animation direction is available.
