@@ -72,7 +72,6 @@ def color_material(name, color, roughness=0.85, metallic=0.0, emissive=None, use
     asset_path = "{}/{}".format(MATERIAL_PATH, name)
     material = unreal.load_asset(asset_path)
     if material is not None:
-        configure_material_usage(material, use_with_skeletal_mesh=use_with_skeletal_mesh)
         return material
 
     material = unreal.AssetToolsHelpers.get_asset_tools().create_asset(
@@ -253,6 +252,37 @@ def import_skeletal_mesh(entry):
 
 def asset_path_without_object(asset):
     return asset.get_path_name().split(".", 1)[0]
+
+
+def skeletal_mesh_skeleton(mesh):
+    getter = getattr(mesh, "get_skeleton", None)
+    if callable(getter):
+        try:
+            return getter()
+        except Exception:
+            pass
+    try:
+        return mesh.get_editor_property("skeleton")
+    except Exception:
+        return None
+
+
+def log_skeleton_binding(mesh, expected_skeleton_path):
+    skeleton = skeletal_mesh_skeleton(mesh)
+    if skeleton is None:
+        unreal.log_warning("{} has no skeleton after import.".format(mesh.get_name()))
+        return
+    skeleton_path = asset_path_without_object(skeleton)
+    if skeleton_path != expected_skeleton_path:
+        unreal.log_warning(
+            "{} is bound to {}, expected {}. Final rig pass must resolve this before production animation.".format(
+                mesh.get_name(),
+                skeleton_path,
+                expected_skeleton_path,
+            )
+        )
+        return
+    unreal.log("{} bound to expected skeleton {}.".format(mesh.get_name(), expected_skeleton_path))
 
 
 def ensure_physics_asset(mesh, desired_asset_path):
@@ -446,6 +476,7 @@ def update_startup_level(mesh):
 def main():
     materials = ensure_materials()
     mesh = import_skeletal_mesh(TEKNOMANCER_ASSET)
+    log_skeleton_binding(mesh, TEKNOMANCER_ASSET["skeleton"])
     assign_project_materials(mesh, materials)
     ensure_physics_asset(mesh, TEKNOMANCER_ASSET["physics_asset"])
     ensure_review_lods_skeletal(mesh)

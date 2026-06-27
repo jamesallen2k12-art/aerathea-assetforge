@@ -33,7 +33,8 @@
 
 ## Known Import Notes
 
-- The first-pass FBX imports as a valid review mesh, but Unreal logs a skeleton merge warning against the existing Ogre base skeleton. Treat this as a review-slice limitation until the final rig pass confirms shared Ogre skeleton compatibility.
+- The first-pass FBX now exports with the Ogre male base armature node and imports bound to `/Game/Aerathea/Characters/Ogres/Base/SK_OGR_Base_Male_A01_Skeleton`.
+- Unreal still logs a generic FBX bind-pose matrix warning during import; the startup validator now confirms the final saved mesh is bound to the expected Ogre base skeleton.
 - Current physics asset is generated for validation and startup review only.
 - Current materials are blockout materials and instances, not final hand-painted texture sets.
 
@@ -41,11 +42,10 @@
 
 1. Confirm final class silhouette against `OgreMaleTek.png` and the Gnome/Ogre rivalry concepts.
 2. Rebuild final sculpt, retopo, UVs, texture sets, and final skin weighting over the approved Ogre base skeleton.
-3. Resolve the shared Ogre skeleton merge warning during final rig authoring.
-4. Tune generated LODs manually against final geometry.
-5. Tune physics bodies for hammer/back reactor after final gear proportions are approved.
-6. Build locomotion, hammer combat, bracer overload, reactor failure, repair, hit-react, and death animation sets.
+3. Tune generated LODs manually against final geometry.
+4. Tune physics bodies for hammer/back reactor after final gear proportions are approved.
+5. Build locomotion, hammer combat, bracer overload, reactor failure, repair, hit-react, and death animation sets.
 
 ## Acceptance Gate
 
-The Teknomancer is imported for scale, silhouette, sockets, LOD, and first class-fit validation. Do not mark it final until the shared skeleton issue, final art mesh, final materials, physics tuning, and animation setup are complete.
+The Teknomancer is imported for scale, silhouette, sockets, LOD, and first class-fit validation. Do not mark it final until the final art mesh, final materials, physics tuning, and animation setup are complete.

@@ -44,6 +44,7 @@ TEKNOMANCER_MATERIALS = {
     "M_OGR_TekGlow_Blockout_A01": (1.0, 0.36, 0.03),
     "M_OGR_SootedCopper_Blockout_A01": (0.40, 0.18, 0.075),
 }
+OGRE_BASE_MALE_ARMATURE_NAME = "SKEL_SK_OGR_Base_Male_A01"
 
 
 def add_diamond_obj(
@@ -247,7 +248,7 @@ def build_teknomancer_variant() -> None:
     clear_scene()
     setup_scene()
     materials = create_materials(TEKNOMANCER_MATERIALS)
-    armature, objects = add_ogre_variant("Teknomancer", "SKEL_OGR_Teknomancer_A01", 330.0, 0.0, "male", materials)
+    armature, objects = add_ogre_variant("Teknomancer", OGRE_BASE_MALE_ARMATURE_NAME, 330.0, 0.0, "male", materials)
     add_teknomancer_gear("Teknomancer", armature, objects, 330.0, materials)
     add_asset_metadata(
         "SK_OGR_Teknomancer_A01",
@@ -273,7 +274,7 @@ def render_review() -> None:
 
     materials = create_materials(TEKNOMANCER_MATERIALS)
     make_review_materials_readable(materials)
-    armature, objects = add_ogre_variant("Teknomancer", "SKEL_OGR_Teknomancer_A01", 330.0, 0.0, "male", materials)
+    armature, objects = add_ogre_variant("Teknomancer", OGRE_BASE_MALE_ARMATURE_NAME, 330.0, 0.0, "male", materials)
     add_teknomancer_gear("Teknomancer", armature, objects, 330.0, materials)
 
     bpy.ops.object.light_add(type="SUN", location=(0, 0, 620), rotation=(math.radians(48), 0, math.radians(40)))

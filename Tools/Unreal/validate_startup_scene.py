@@ -167,22 +167,27 @@ EXPECTED_SKELETAL_MESHES = [
     (
         "/Game/Aerathea/Characters/Gnomes/Base/SK_GNM_Base_A01",
         "/Game/Aerathea/Characters/Gnomes/Base/PHYS_GNM_Base_A01",
+        "/Game/Aerathea/Characters/Gnomes/Base/SK_GNM_Base_A01_Skeleton",
     ),
     (
         "/Game/Aerathea/Creatures/Gryphon/Base/SK_CRE_Gryphon_A01",
         "/Game/Aerathea/Creatures/Gryphon/Base/PHYS_CRE_Gryphon_A01",
+        "/Game/Aerathea/Creatures/Gryphon/Base/SK_CRE_Gryphon_A01_Skeleton",
     ),
     (
         "/Game/Aerathea/Characters/Giants/Base/SK_GIA_Base_Male_A01",
         "/Game/Aerathea/Characters/Giants/Base/PHYS_GIA_Base_Male_A01",
+        "/Game/Aerathea/Characters/Giants/Base/SK_GIA_Base_Male_A01_Skeleton",
     ),
     (
         "/Game/Aerathea/Characters/Giants/Base/SK_GIA_Base_Female_A01",
         "/Game/Aerathea/Characters/Giants/Base/PHYS_GIA_Base_Female_A01",
+        "/Game/Aerathea/Characters/Giants/Base/SK_GIA_Base_Female_A01_Skeleton",
     ),
     (
         "/Game/Aerathea/Characters/Ogres/Teknomancer/SK_OGR_Teknomancer_A01",
         "/Game/Aerathea/Characters/Ogres/Teknomancer/PHYS_OGR_Teknomancer_A01",
+        "/Game/Aerathea/Characters/Ogres/Base/SK_OGR_Base_Male_A01_Skeleton",
     ),
 ]
 EXPECTED_LOD_STATIC_MESHES = [
@@ -413,6 +418,20 @@ def try_call(obj, method_name):
         return None
 
 
+def asset_path_without_object(asset):
+    return asset.get_path_name().split(".", 1)[0]
+
+
+def skeletal_mesh_skeleton(mesh):
+    skeleton = try_call(mesh, "get_skeleton")
+    if skeleton is not None:
+        return skeleton
+    try:
+        return mesh.get_editor_property("skeleton")
+    except Exception:
+        return None
+
+
 def is_actor_hidden_in_game(actor):
     hidden = try_call(actor, "get_actor_hidden_in_game")
     if hidden is not None:
@@ -628,13 +647,20 @@ def main():
         raise RuntimeError("Static mesh validation failed: {}".format("; ".join(mesh_slot_failures)))
 
     skeletal_slot_failures = []
-    for mesh_path, physics_asset_path in EXPECTED_SKELETAL_MESHES:
+    for mesh_path, physics_asset_path, skeleton_path in EXPECTED_SKELETAL_MESHES:
         mesh = unreal.load_asset(mesh_path)
         if mesh is None:
             skeletal_slot_failures.append("{} failed to load".format(mesh_path))
             continue
         if len(mesh.get_editor_property("materials")) == 0:
             skeletal_slot_failures.append("{} has no material slots".format(mesh_path))
+        skeleton = skeletal_mesh_skeleton(mesh)
+        if skeleton is None:
+            skeletal_slot_failures.append("{} has no assigned skeleton".format(mesh_path))
+        elif asset_path_without_object(skeleton) != skeleton_path:
+            skeletal_slot_failures.append(
+                "{} has unexpected skeleton {}".format(mesh_path, skeleton.get_path_name())
+            )
         physics_asset = mesh.get_editor_property("physics_asset")
         if physics_asset is None:
             skeletal_slot_failures.append("{} has no assigned physics asset".format(mesh_path))
@@ -656,7 +682,7 @@ def main():
             lod_failures.append("{} has {} LODs, expected at least 4".format(mesh_path, lod_count))
 
     skeletal_subsystem = unreal.get_editor_subsystem(unreal.SkeletalMeshEditorSubsystem)
-    for mesh_path, _physics_asset_path in EXPECTED_SKELETAL_MESHES:
+    for mesh_path, _physics_asset_path, _skeleton_path in EXPECTED_SKELETAL_MESHES:
         mesh = unreal.load_asset(mesh_path)
         if mesh is None:
             continue
