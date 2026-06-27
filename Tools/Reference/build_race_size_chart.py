@@ -280,6 +280,10 @@ def draw_badge(entry: RaceEntry, x: float, y: float) -> str:
     elif icon == "minotaur":
         base.append(f'<path d="M {x-5} {y+12} C {x-28} {y-2}, {x-25} {y-22}, {x-5} {y-8}" fill="none" stroke="{entry.accent}" stroke-width="6" stroke-linecap="round"/>')
         base.append(f'<path d="M {x+5} {y+12} C {x+28} {y-2}, {x+25} {y-22}, {x+5} {y-8}" fill="none" stroke="{entry.accent}" stroke-width="6" stroke-linecap="round"/>')
+    elif icon == "ogre":
+        base.append(f'<path d="M {x-20} {y+16} L {x-12} {y-12} L {x+12} {y-12} L {x+20} {y+16} Z" fill="none" stroke="{entry.accent}" stroke-width="5"/>')
+        base.append(f'<path d="M {x-22} {y+6} L {x+22} {y-14}" stroke="{entry.accent}" stroke-width="5" stroke-linecap="round"/>')
+        base.append(f'<circle cx="{x+21}" cy="{y-15}" r="7" fill="{entry.accent}"/>')
     elif icon == "anubisath":
         base.append(f'<path d="M {x-14} {y+15} L {x} {y-20} L {x+14} {y+15} Z" fill="none" stroke="{entry.accent}" stroke-width="5"/>')
         base.append(f'<path d="M {x-18} {y-8} L {x-5} {y-20} M {x+18} {y-8} L {x+5} {y-20}" stroke="{entry.accent}" stroke-width="5"/>')

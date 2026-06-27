@@ -6,6 +6,8 @@ Ogres are a war-created race built around brutal battlefield mass, instinctual T
 
 They are fascinated by magic and technology, but their craft is not gnomish precision. Ogre Teknomancy should feel instinctive, overbuilt, dangerous, and passionate: massive coils, bolted plates, crude pressure tanks, rune-choked engines, oversized guns, heavy armor rigs, and battlefield repairs hammered into place. Ogres are jealous of Gnome Mekgineer craft, and conflicts between Ogre Teknomancers and Gnome Mek pilots should read as a legendary rivalry.
 
+Current source concept scan: 41 Ogre-related PNG files, including body/class sheets, Teknomancy and Gnome Mek encounter references, settlement boards, interiors, fortifications, forge references, and necropolis/shamanic architecture.
+
 ## Gameplay Purpose
 
 Ogres support large-race player/NPC bodies, enemy warbands, faction settlements, and class variants:

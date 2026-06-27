@@ -4,7 +4,7 @@ Source folder: `/home/Flamestrike/Desktop/Aerathea/Aerathea Creative/ASSET CONCE
 
 ## Intake Summary
 
-The Ogre source set contains 31 PNG files. It supports one base race body package plus several follow-up packages for class variants, Teknomancy kits, settlement architecture, fortifications, and the Gnome Mek rivalry.
+The Ogre source set currently contains 41 PNG files. It supports one base race body package plus several follow-up packages for class variants, Teknomancy kits, settlement architecture, fortifications, and the Gnome Mek rivalry.
 
 Core lore anchors from Flamestrike:
 
@@ -35,6 +35,16 @@ Core lore anchors from Flamestrike:
 | `OgreSentinels.png` | Sentinel formation/class | Package needed | `KIT_OGR_Warband_A01` |
 | `OgreSmiths.png` | Smith/forge NPCs | Package needed | `KIT_OGR_Teknomancy_A01`; `SM_OGR_ForgeProps_A01` |
 | `OgreTekvsGnomeMek.png` | Cross-faction encounter | Reference plus package needed | `KIT_OGR_Teknomancy_A01`; future Gnome Mek encounter reference |
+| `GnomevsOgre1.png` | Cross-faction encounter | Reference plus package needed | `KIT_OGR_Teknomancy_A01`; Gnome Mek rivalry scale reference |
+| `GnomevsOgre2.png` | Cross-faction encounter | Reference plus package needed | `KIT_OGR_Teknomancy_A01`; Ogre ranged pressure against Mek reference |
+| `GnomevsOgre3.png` | Cross-faction encounter | Reference plus package needed | `KIT_OGR_Teknomancy_A01`; Aetherium beam duel reference |
+| `GnomevsOgre4.png` | Cross-faction encounter | Reference plus package needed | `KIT_OGR_Teknomancy_A01`; warband versus Mek pilot reference |
+| `GnomevsOgre5.png` | Cross-faction encounter | Reference plus package needed | `KIT_OGR_Teknomancy_A01`; battlefield chaos and size contrast |
+| `GnomevsOgre6.png` | Cross-faction encounter | Reference plus package needed | `KIT_OGR_Teknomancy_A01`; close-range Mek collision reference |
+| `GnomevsOgre7.png` | Cross-faction encounter | Reference plus package needed | `KIT_OGR_Teknomancy_A01`; magic-tech beam duel reference |
+| `GnomevsOgre9.png` | Cross-faction encounter | Reference plus package needed | `KIT_OGR_Teknomancy_A01`; warfront and terrain scale reference |
+| `GnomevsOgre10.png` | Cross-faction encounter | Reference plus package needed | `KIT_OGR_Teknomancy_A01`; forge/warcamp lighting reference |
+| `GnomevsOgreandManticore8.png` | Cross-faction encounter | Reference plus package needed | `KIT_OGR_Teknomancy_A01`; encounter escalation reference |
 | `OgreBarracks.png` | Building/interior | Package needed | `KIT_OGR_CairnFortifications_A01`; `SM_OGR_Barracks_A01` |
 | `OgreForge.png` | Forge/interior | Package needed | `SM_OGR_Forge_A01`; `KIT_OGR_Teknomancy_A01` |
 | `OgreFortress.png` | Fortress exterior | Package needed | `KIT_OGR_CairnFortifications_A01` |
@@ -57,7 +67,7 @@ Core lore anchors from Flamestrike:
 ## Recommended Package Order
 
 1. `SK_OGR_Base_A01` for male/female scale, skeleton, sockets, and body proportions.
-2. `SK_OGR_Teknomancer_A01` and `KIT_OGR_Teknomancy_A01` because Teknomancy is the strongest unique cultural hook.
+2. `SK_OGR_Teknomancer_A01` and `KIT_OGR_Teknomancy_A01` because Teknomancy is the strongest unique cultural hook, and the `GnomevsOgre*.png` encounter set now gives strong scale/rivalry references.
 3. `SK_OGR_Warrior_A01`, `SK_OGR_Shaman_A01`, and `SK_OGR_Necromancer_A01` as class packages.
 4. `KIT_OGR_CairnFortifications_A01` for walls, gates, cairns, barracks, and fortress modules.
 5. `KIT_OGR_Necropolis_A01` and `KIT_OGR_SettlementInteriors_A01` after the base settlement language is approved.

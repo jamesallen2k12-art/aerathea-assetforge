@@ -14,7 +14,7 @@ This folder stores project-bound visual references that are useful across multip
 - Purpose: visual scale lineup for race body packages, starter outfits, armory scale, collision capsules, doors, stairs, and Unreal review actors.
 - Status: A04 approved chart is generated from the updated supplied ranges and ordered shortest-to-tallest by race group. Figure tops align to the maximum listed height for each entry, while the side bars show the full min-max range. A01/A02 are concept-art lineups and should be treated as visual mood only where their illustrated body heights drift from the ruler.
 - Illustration note: the v7 game-ready chart is a presentation composite built from the A04 scale data with clean Basari alpha cutouts, a rebuilt bearded male dwarf cutout, preserved Valar/Minotaur/Giant source art, and horizontal spacing for readability. The A04 SVG/PNG files remain the exact scale and text authority.
-- Ogre note: Ogre scale was added after A04 approval and should be included in the next chart revision.
+- Ogre note: Ogre scale was added after A04 approval. `AET_Race_Size_Comparison_A05_OgreReview.svg` and `.png` are the approved Ogre revision; A04 remains the historical pre-Ogre scale authority.
 
 Canonical adult race scale anchors:
 
