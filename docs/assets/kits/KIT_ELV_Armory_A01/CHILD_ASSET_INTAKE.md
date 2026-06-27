@@ -16,9 +16,9 @@ The sheet is a labeled Elven catalog with weapons, shields, armor sets, bracers,
 | Child ID | Type | Proposed asset/package | Status | Notes |
 | --- | --- | --- | --- | --- |
 | `Elven Armory.png#Bow_LunarSong` | Warbow | `SM_ELV_LunarSongBow_A01` | Package needed | Moonlit bow |
-| `Elven Armory.png#Bow_SilverleafRecurve` | Warbow | `SM_ELV_SilverleafRecurve_A01` | Package needed | Recurve bow |
+| `Elven Armory.png#Bow_SilverleafRecurve` | Warbow | `SM_ELV_SilverleafRecurve_A01` | Production package ready | Package: `docs/assets/props/SM_ELV_SilverleafRecurve_A01/PRODUCTION_PACKAGE.md`; Recurve bow |
 | `Elven Armory.png#Bow_StarwindLongBow` | Warbow | `SM_ELV_StarwindLongBow_A01` | Package needed | Long bow with leaf/star motif |
-| `Elven Armory.png#Sword_Moonblade` | Sword | `SM_ELV_Moonblade_A01` | Package needed | Straight elegant sword |
+| `Elven Armory.png#Sword_Moonblade` | Sword | `SM_ELV_Moonblade_A01` | Production package ready | Package: `docs/assets/props/SM_ELV_Moonblade_A01/PRODUCTION_PACKAGE.md`; Straight elegant sword |
 | `Elven Armory.png#Sword_Starblade` | Sword | `SM_ELV_Starblade_A01` | Package needed | Blue-white core accent |
 | `Elven Armory.png#Sword_SilverleafRapier` | Rapier | `SM_ELV_SilverleafRapier_A01` | Package needed | Thin elegant sidearm |
 | `Elven Armory.png#Sword_AetheriumSaber` | Saber | `SM_ELV_AetheriumSaber_A01` | Package needed | Blue blade/gem language |
@@ -29,7 +29,7 @@ The sheet is a labeled Elven catalog with weapons, shields, armor sets, bracers,
 | `Elven Armory.png#Spear_MoonlitLance` | Lance | `SM_ELV_MoonlitLance_A01` | Package needed | Narrow moonlit head |
 | `Elven Armory.png#Spear_SilverleafPike` | Pike | `SM_ELV_SilverleafPike_A01` | Package needed | Leaf-shaped pike |
 | `Elven Armory.png#Spear_Aetherio` | Spear | `SM_ELV_AetherioSpear_A01` | Package needed | Label should be verified before final naming |
-| `Elven Armory.png#Shield_MoonwardBuckler` | Shield | `SM_ELV_MoonwardBuckler_A01` | Package needed | Round shield |
+| `Elven Armory.png#Shield_MoonwardBuckler` | Shield | `SM_ELV_MoonwardBuckler_A01` | Production package ready | Package: `docs/assets/props/SM_ELV_MoonwardBuckler_A01/PRODUCTION_PACKAGE.md`; Round shield |
 | `Elven Armory.png#Shield_StarleafTarge` | Shield | `SM_ELV_StarleafTarge_A01` | Package needed | Leaf/star targe |
 | `Elven Armory.png#Shield_AetheriumDefender` | Shield | `SM_ELV_AetheriumDefender_A01` | Package needed | Blue shield |
 | `Elven Armory.png#Helmet_MoonlitCowl` | Helmet | `SK_ELV_MoonlitCowl_A01` | Package needed | Character gear module |
@@ -61,11 +61,13 @@ The sheet is a labeled Elven catalog with weapons, shields, armor sets, bracers,
 | `Elven Armory.png#Ring_AetheriumSeal` | Ring | `SM_ELV_AetheriumSeal_A01` | Package needed | Inventory/equipment prop |
 | `Elven Armory.png#Accessory_GlimmeringFocus` | Magical accessory | `SM_ELV_GlimmeringFocus_A01` | Package needed | Focus item |
 | `Elven Armory.png#Accessory_WayfarersCompass` | Magical accessory | `SM_ELV_WayfarersCompass_A01` | Package needed | Navigation/relic prop |
-| `Elven Armory.png#Accessory_AetheriumLantern` | Magical accessory | `SM_ELV_AetheriumLantern_A01` | Package needed | Light prop |
+| `Elven Armory.png#Accessory_AetheriumLantern` | Magical accessory | `SM_ELV_AetheriumLantern_A01` | Production package ready | Package: `docs/assets/props/SM_ELV_AetheriumLantern_A01/PRODUCTION_PACKAGE.md`; Light prop |
 | `Elven Armory.png#Accessory_SpellthreadTome` | Magical accessory | `SM_ELV_SpellthreadTome_A01` | Package needed | Book prop |
 | `Elven Armory.png#ScaleReference` | Reference | `KIT_ELV_Armory_A01` | Reference only | Elf body/gear scale |
 
 ## Immediate Package Priority
+
+Priority package docs are complete; next step is DCC build ordering.
 
 1. `SM_ELV_Moonblade_A01`
 2. `SM_ELV_SilverleafRecurve_A01`

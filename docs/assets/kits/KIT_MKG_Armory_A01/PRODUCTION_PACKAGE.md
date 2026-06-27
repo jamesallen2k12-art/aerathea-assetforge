@@ -7,7 +7,7 @@
 - World: Aerathea
 - Faction anchor: Gnome / Mekgineer
 - Source concept: `/home/Flamestrike/Desktop/Aerathea/Aerathea Creative/ASSET CONCEPTS/Gnome Armory.png`
-- Current status: Kit package ready, child asset intake complete, child packages needed
+- Current status: Kit package ready, child asset intake complete, all catalog child production packages and handoffs documented; first ten child DCC meshes imported or fit-previewed
 
 `Gnome Armory.png` is a catalog sheet, not a single prop. This kit defines the production direction for compact gnome-scale weapons, Mek-linked devices, tools, armor modules, grenades, backpacks, power modules, and Aetherium core variants.
 
@@ -23,7 +23,7 @@ This kit supports:
 - Weapon and gear socket planning for gnome characters and Mek suits.
 - Reusable material language for brass, copper, dark iron, leather, and Aetherium cores.
 
-Primary production goal: establish a controlled armory breakdown before individual weapons or gear pieces are modeled.
+Primary production goal: use the completed armory breakdown to build individual weapons, gear pieces, armor modules, packs, and material variants in controlled DCC priority order.
 
 ## Silhouette Notes
 
@@ -84,7 +84,7 @@ Texture style:
 
 ## Modeling Notes
 
-Create child packages before DCC modeling. For each child asset, decide whether it is:
+Use the documented child packages before DCC modeling. For each child asset, decide whether the build pass is:
 
 - Static mesh.
 - Skeletal mesh.
@@ -213,7 +213,7 @@ Do not commit large source meshes until the source-asset policy is approved.
 - Gnome scale and ergonomics preserved.
 - Brass/copper/dark iron/leather/Aetherium language is consistent.
 - Aetherium glow used sparingly.
-- Each child item has a proposed package or asset name before modeling.
+- Each child item has a production package and proposed asset name before modeling.
 - Triangle budget chosen by child type.
 - Texture map plan uses BC, N, ORM, and optional E.
 - LOD0-LOD3 expected for important meshes.

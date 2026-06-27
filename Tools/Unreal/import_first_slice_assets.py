@@ -9,6 +9,9 @@ LEVEL_PATH = "/Game/Aerathea/Maps/L_Aerathea_Startup"
 MATERIAL_PATH = "/Game/Aerathea/Materials"
 BLUEPRINT_PATH = "/Game/Aerathea/Blueprints/Props"
 FIRST_SLICE_TAG = "AET_FIRST_SLICE"
+# Blender source meshes are authored in centimeters and exported without FBX unit
+# conversion, so Unreal must import the raw FBX geometry at 1 cm = 1 Unreal cm.
+FBX_IMPORT_UNIFORM_SCALE = 0.01
 
 ASSETS = [
     {
@@ -203,6 +206,7 @@ def import_static_mesh(entry):
     safe_set(fbx_ui, "import_as_skeletal", False)
     safe_set(fbx_ui, "import_materials", False)
     safe_set(fbx_ui, "import_textures", False)
+    safe_set(fbx_ui, "import_uniform_scale", FBX_IMPORT_UNIFORM_SCALE)
 
     static_data = fbx_ui.static_mesh_import_data
     safe_set(static_data, "combine_meshes", True)
@@ -210,6 +214,7 @@ def import_static_mesh(entry):
     safe_set(static_data, "generate_lightmap_u_vs", True)
     safe_set(static_data, "remove_degenerates", True)
     safe_set(static_data, "one_convex_hull_per_ucx", False)
+    safe_set(static_data, "import_uniform_scale", FBX_IMPORT_UNIFORM_SCALE)
 
     task = unreal.AssetImportTask()
     task.set_editor_property("filename", str(entry["source"]))
@@ -348,6 +353,14 @@ def look_at_rotation(source, target):
     return review_rotator(pitch, yaw)
 
 
+def is_shape_component(component):
+    return component.get_class().get_name() in {
+        "BoxComponent",
+        "CapsuleComponent",
+        "SphereComponent",
+    }
+
+
 def activate_actor_for_review(actor):
     try:
         actor.set_actor_hidden_in_game(False)
@@ -359,6 +372,16 @@ def activate_actor_for_review(actor):
         pass
     try:
         for component in actor.get_components_by_class(unreal.PrimitiveComponent):
+            if is_shape_component(component):
+                try:
+                    component.set_visibility(False, True)
+                except Exception:
+                    pass
+                try:
+                    component.set_hidden_in_game(True, True)
+                except Exception:
+                    pass
+                continue
             try:
                 component.set_visibility(True, True)
             except Exception:
@@ -512,6 +535,14 @@ def spawn_actor(label, actor_class, location, rotation=None, scale=None):
     return actor
 
 
+def set_directional_forward_priority(actor, priority):
+    component = actor.get_component_by_class(unreal.DirectionalLightComponent)
+    if component is not None:
+        safe_set(component, "forward_shading_priority", priority)
+        safe_set(component, "ForwardShadingPriority", priority)
+    return component
+
+
 def ensure_review_lighting():
     directional = find_actor_by_label("AET_BOOT_KeyLight_Directional")
     if directional is None and getattr(unreal, "DirectionalLight", None) is not None:
@@ -532,6 +563,11 @@ def ensure_review_lighting():
         if component is not None:
             safe_set(component, "intensity", 5.0)
             safe_set(component, "light_color", unreal.Color(255, 236, 205, 255))
+            set_directional_forward_priority(directional, 1)
+    for actor in all_level_actors():
+        if actor == directional or actor.get_component_by_class(unreal.DirectionalLightComponent) is None:
+            continue
+        set_directional_forward_priority(actor, 0)
 
     sky_light = find_actor_by_label("AET_BOOT_SkyLight")
     if sky_light is None and getattr(unreal, "SkyLight", None) is not None:
@@ -625,7 +661,7 @@ def update_startup_level(meshes, materials, portal_blueprint):
         rotation=review_rotator(0.0, -10.0),
     )
 
-    review_location = unreal.Vector(-2350, 1600, 1280)
+    review_location = unreal.Vector(4710, -2880, 2575)
     review_target = unreal.Vector(-70, 160, 110)
     review_rotation = look_at_rotation(review_location, review_target)
     player_start_class = getattr(unreal, "PlayerStart", None)
@@ -647,7 +683,7 @@ def update_startup_level(meshes, materials, portal_blueprint):
     )
     camera_component = camera_actor.get_component_by_class(unreal.CameraComponent)
     if camera_component is not None:
-        safe_set(camera_component, "field_of_view", 70.0)
+        safe_set(camera_component, "field_of_view", 65.0)
         safe_set(camera_component, "auto_activate", True)
     safe_set(camera_actor, "auto_activate_for_player", unreal.AutoReceiveInput.PLAYER0)
     safe_set(camera_actor, "tags", [unreal.Name("AET_REVIEW_CAMERA")])
@@ -670,7 +706,7 @@ def update_startup_level(meshes, materials, portal_blueprint):
     )
     light_component = fill_light.get_component_by_class(unreal.PointLightComponent)
     if light_component is not None:
-        safe_set(light_component, "intensity", 350000.0)
+        safe_set(light_component, "intensity", 6000.0)
         safe_set(light_component, "attenuation_radius", 2200.0)
         safe_set(light_component, "light_color", unreal.Color(180, 210, 255, 255))
 

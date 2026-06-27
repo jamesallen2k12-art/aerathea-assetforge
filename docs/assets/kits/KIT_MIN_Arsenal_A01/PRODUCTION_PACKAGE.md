@@ -8,7 +8,7 @@
 - Priority children: `SM_MIN_GreatAxe_A01`, `SM_MIN_CrushingMaul_A01`, `KIT_MIN_HideShields_A01`, `KIT_MIN_Helmets_A01`
 - Status: Kit production package ready
 
-Oversized brutal practical weapons and defensive gear for 8-9 ft Minotaur plains warriors. Gear should feel heavy, direct, strength-respecting, and battlefield-repaired, using hide, bone, raw iron, fur, leather, rope, horn, and crude bindings.
+Oversized brutal practical weapons and defensive gear for Minotaur plains warriors. Female Minotaurs are 7-8 ft; male Minotaurs are 8-9 ft. Gear should feel heavy, direct, strength-respecting, and battlefield-repaired, using hide, bone, raw iron, fur, leather, rope, horn, and crude bindings.
 
 ## Gameplay Purpose
 
@@ -20,7 +20,7 @@ Great axes use slab blades, long hafts, blunt hooks, and top-heavy mass. Mauls r
 
 ## Scale Notes
 
-Minotaur reference: 8-9 ft. Great axe: 220-300 cm. Crushing maul: 180-260 cm. Hide shields: 120-170 cm. Helmets include horn clearance, heavy brow guards, cheek plates, leather caps, and raw iron reinforcement.
+Minotaur reference: females 7-8 ft / 213-244 cm, males 8-9 ft / 244-274 cm. Great axe: 220-300 cm. Crushing maul: 180-260 cm. Hide shields: 120-170 cm. Helmets include horn clearance, heavy brow guards, cheek plates, leather caps, and raw iron reinforcement.
 
 ## Materials And Color Palette
 
@@ -28,7 +28,7 @@ Dark raw iron, sweat-darkened leather, reddish brown hide, coarse fur, aged ivor
 
 ## Concept Image Prompt
 
-Create an original stylized fantasy MMORPG concept image of a Minotaur arsenal kit for Aerathea. Emphasize massive practical silhouettes, raw iron weapon heads, hide shields, horn-compatible helmets, bone and fur accents, brutal lowland warrior culture, magic-resistant strength, and heavy melee gameplay roles. Use hand-painted texture detail, readable shapes, baked-AO-style depth, normal-map-style surface detail, restrained material contrast, and MMO-friendly production design. Present it as an armory catalog concept sheet with 8-9 ft Minotaur scale callouts.
+Create an original stylized fantasy MMORPG concept image of a Minotaur arsenal kit for Aerathea. Emphasize massive practical silhouettes, raw iron weapon heads, hide shields, horn-compatible helmets, bone and fur accents, brutal lowland warrior culture, magic-resistant strength, and heavy melee gameplay roles. Use hand-painted texture detail, readable shapes, baked-AO-style depth, normal-map-style surface detail, restrained material contrast, and MMO-friendly production design. Present it as an armory catalog concept sheet with female 7-8 ft and male 8-9 ft Minotaur scale callouts.
 
 ## Modeling Notes
 
@@ -68,7 +68,7 @@ Use centimeter scale and validate against `AET_BOOT_MinotaurScale_270cm`. Weapon
 
 ## Quality Gate Checklist
 
-- Matches approved 8-9 ft Minotaur anchor.
+- Matches approved Minotaur scale anchor: females 7-8 ft, males 8-9 ft.
 - Brutal, practical, simple, and heavy.
 - Avoids refined craftsmanship and complex mechanisms.
 - Uses hide, bone, raw iron, fur, leather, rope, and horn consistently.

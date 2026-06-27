@@ -6,7 +6,7 @@
 - Asset type: Blueprint Actor
 - World: Aerathea
 - Category: Interactive portal / traversal actor
-- Current status: Concept state sheet generated, implementation handoff ready, final Blueprint blocked on portal arch mesh import
+- Current status: Native preview behavior implemented in `AAETPortalActor`; Blueprint asset exists/reparented/compiled; startup validator passes; final traversal/VFX/audio still pending gameplay approval
 - Required static mesh: `SM_AET_PortalArch_A01`
 
 This blueprint wraps the portal arch mesh, visual portal core, interaction area, and future traversal behavior.
@@ -105,7 +105,9 @@ Editor-exposed variables:
 Initial bootstrap behavior:
 
 - Idle active visual state.
-- Interaction overlap debug logs only, if needed.
+- Interaction overlap focus state.
+- Use-requested preview state and cooldown.
+- Debug logs and Blueprint events only, if needed.
 - No map travel by default.
 - No player teleport by default.
 

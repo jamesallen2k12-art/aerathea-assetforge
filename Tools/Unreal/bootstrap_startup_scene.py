@@ -119,6 +119,13 @@ def spawn_light(label, cls, location, rotation):
     return actor
 
 
+def safe_set(obj, prop, value):
+    try:
+        obj.set_editor_property(prop, value)
+    except Exception:
+        pass
+
+
 def spawn_text(label, text, location, rotation, size=64.0):
     actor = unreal.EditorLevelLibrary.spawn_actor_from_class(
         unreal.TextRenderActor,
@@ -258,12 +265,16 @@ def build_scene():
         dark_iron,
     )
 
-    spawn_light(
+    key_light = spawn_light(
         "AET_BOOT_KeyLight_Directional",
         unreal.DirectionalLight,
         unreal.Vector(0, 0, 800),
         unreal.Rotator(-45, -35, 0),
     )
+    key_component = key_light.get_component_by_class(unreal.DirectionalLightComponent)
+    if key_component is not None:
+        safe_set(key_component, "forward_shading_priority", 1)
+        safe_set(key_component, "ForwardShadingPriority", 1)
     spawn_light(
         "AET_BOOT_SkyLight",
         unreal.SkyLight,

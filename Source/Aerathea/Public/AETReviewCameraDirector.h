@@ -31,6 +31,9 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Review", meta = (EditCondition = "bCaptureReviewScreenshot", ClampMin = "1"))
 	int32 ScreenshotHeight;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Review", meta = (EditCondition = "bCaptureReviewScreenshot"))
+	FString ScreenshotFilenameOverride;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Review", meta = (EditCondition = "bCaptureReviewScreenshot", ClampMin = "0.2"))
 	float ScreenshotDelaySeconds;
 
@@ -44,6 +47,7 @@ protected:
 	void RequestReviewScreenshot();
 
 private:
+	void ConfigureReviewMarkers();
 	void MarkScreenshotDelayElapsed();
 	void TryRequestReviewScreenshot();
 	void RequestReviewExit();
@@ -51,7 +55,9 @@ private:
 	bool bReviewScreenshotRequested;
 	bool bScreenshotDelayElapsed;
 	bool bReviewExposureConfigured;
+	float CaptureElapsedSeconds;
 	int32 RemainingWarmupFrames;
+	int32 PostScreenshotExitFrames;
 
 	FTimerHandle ScreenshotTimerHandle;
 	FTimerHandle ExitTimerHandle;

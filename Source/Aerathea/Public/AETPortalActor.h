@@ -5,6 +5,7 @@
 #include "AETPortalActor.generated.h"
 
 class UBoxComponent;
+class UMaterialInstanceDynamic;
 class UStaticMeshComponent;
 
 UENUM(BlueprintType)
@@ -12,9 +13,13 @@ enum class EAETPortalState : uint8
 {
 	Inactive UMETA(DisplayName = "Inactive"),
 	Idle UMETA(DisplayName = "Idle"),
+	Focused UMETA(DisplayName = "Focused"),
+	UseRequested UMETA(DisplayName = "Use Requested"),
+	Cooldown UMETA(DisplayName = "Cooldown"),
 	Charging UMETA(DisplayName = "Charging"),
 	Ready UMETA(DisplayName = "Ready"),
-	Locked UMETA(DisplayName = "Locked")
+	Locked UMETA(DisplayName = "Locked"),
+	Blocked UMETA(DisplayName = "Blocked")
 };
 
 UCLASS(Blueprintable)
@@ -26,6 +31,8 @@ public:
 	AAETPortalActor();
 
 	virtual void OnConstruction(const FTransform& Transform) override;
+	virtual void BeginPlay() override;
+	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Aerathea|Portal")
 	TObjectPtr<USceneComponent> SceneRoot;
@@ -40,13 +47,34 @@ public:
 	TObjectPtr<UBoxComponent> InteractionVolume;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Portal")
-	EAETPortalState PortalState;
+	bool bPortalActive;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Portal")
+	FName PortalId;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Replicated, Category = "Aerathea|Portal")
+	EAETPortalState PortalState;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Replicated, Category = "Aerathea|Portal")
 	FName DestinationId;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Portal")
 	bool bServerAuthoritativeUse;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Portal")
+	bool bAllowClientPreviewOnly;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Portal|Interaction", meta = (ClampMin = "0.0"))
+	float UsePreviewDurationSeconds;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Portal|Interaction", meta = (ClampMin = "0.0"))
+	float UseCooldownSeconds;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Portal|Interaction")
+	FVector InteractionBoxExtent;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aerathea|Portal|Debug")
+	bool bDebugPortalLogs;
 
 	UFUNCTION(BlueprintCallable, Category = "Aerathea|Portal")
 	void SetPortalState(EAETPortalState NewState);
@@ -57,11 +85,23 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Aerathea|Portal")
 	bool RequestPortalUse(AActor* InteractingActor);
 
+	UFUNCTION(BlueprintCallable, Category = "Aerathea|Portal")
+	void SetPortalActive(bool bNewPortalActive);
+
+	UFUNCTION(BlueprintPure, Category = "Aerathea|Portal")
+	bool HasValidDestination() const;
+
 	UFUNCTION(BlueprintImplementableEvent, Category = "Aerathea|Portal")
 	void OnPortalStateChanged(EAETPortalState NewState);
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "Aerathea|Portal")
 	void OnPortalUseRequested(AActor* InteractingActor);
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "Aerathea|Portal")
+	void OnPortalFocusChanged(AActor* FocusedActor, bool bIsFocused);
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "Aerathea|Portal")
+	void OnPortalUseRejected(AActor* InteractingActor, FName Reason);
 
 protected:
 	UFUNCTION()
@@ -84,4 +124,16 @@ protected:
 
 	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = "Aerathea|Portal")
 	TObjectPtr<AActor> LastOverlappingActor;
+
+	UPROPERTY(Transient, VisibleInstanceOnly, BlueprintReadOnly, Category = "Aerathea|Portal")
+	TObjectPtr<UMaterialInstanceDynamic> PortalCoreMaterialInstance;
+
+	FTimerHandle UsePreviewTimerHandle;
+	FTimerHandle CooldownTimerHandle;
+
+	void EnterUseCooldown();
+	void ReturnToSafeState();
+	void ApplyPortalVisualState();
+	bool IsValidFocusedActor(AActor* Actor) const;
+	void RejectPortalUse(AActor* InteractingActor, FName Reason);
 };

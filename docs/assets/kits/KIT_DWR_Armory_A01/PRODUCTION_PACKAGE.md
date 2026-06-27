@@ -20,7 +20,7 @@ Use squat powerful proportions, thick bevels, large stone-and-steel masses, heav
 
 ## Scale Notes
 
-Hammer length: 105-120 cm. Shield height: 85-100 cm. Helm sized for broad dwarf heads with male beard clearance and female non-bearded variants. Author in centimeters.
+Hammer length: 105-120 cm. Shield height: 85-100 cm. Helm sized for broad dwarf heads, with male beard clearance and clean-shaven female variants. Author in centimeters.
 
 ## Materials And Color Palette
 

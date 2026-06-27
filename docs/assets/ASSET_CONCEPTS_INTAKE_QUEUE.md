@@ -2,9 +2,9 @@
 
 ## Purpose
 
-This queue schedules category-level intake for the 289 PNG source concepts listed in `docs/assets/ASSET_CONCEPTS_MANIFEST.md`. It does not replace the manifest, production backlog, or asset index. Its job is to define the order, batching rules, expected batch artifacts, and collage-expansion rules before more production packages are created.
+This queue schedules category-level intake for the 459 source concept files listed in `docs/assets/ASSET_CONCEPTS_MANIFEST.md`: 458 PNG files and 1 JPG file. It does not replace the manifest, production backlog, or asset index. Its job is to define the order, batching rules, expected batch artifacts, and collage-expansion rules before more production packages are created.
 
-Source concepts remain in `/home/Flamestrike/Desktop/Aerathea/Aerathea Creative/ASSET CONCEPTS`. A source PNG is not complete until it has been visually inspected, expanded into child items when needed, and assigned a package, variant, reference-only, covered, or retired status.
+Source concepts remain in `/home/Flamestrike/Desktop/Aerathea/Aerathea Creative/ASSET CONCEPTS`. A source file is not complete until it has been visually inspected, expanded into child items when needed, and assigned a package, variant, reference-only, covered, or retired status.
 
 ## Intake Principles
 
@@ -33,12 +33,12 @@ Batch IDs should use `ACIQ-P##_NN`, where `P##` matches the priority row below a
 
 | Priority | Queue area | Scope from manifest/backlog | First scheduling target | Output artifact per batch | Dependency notes |
 | ---: | --- | --- | --- | --- | --- |
-| 1 | Armory and gear | 13 armory/gear source concepts, including faction armories, arsenals, relic gear, and workshop gear | Continue child packages from `KIT_MKG_Armory_A01`, `KIT_DWR_Armory_A01`, `KIT_ELV_Armory_A01`, `KIT_DEL_Armory_A01`, `KIT_ORC_Arsenal_A01`, `KIT_MIN_Arsenal_A01`, and `KIT_DKH_FieldGear_A01`; then schedule Anubisath/Sutekh, Valar, and Common kits | Kit-level production package plus `CHILD_ASSET_INTAKE.md` for each collage-heavy armory sheet | Seven armory/field-gear kits are seeded; individual armor modules wait for race body fit rules |
-| 2 | Race body/style | 57 character/NPC/class sources plus approved race anchors | Start with gnome base body/style because startup scale and Mekgineer gear already exist; then Dwarves, Elves, Dark Elves, Orcs, Minotaurs, Drakhar, Valar, and Anubisath/Sutekh bodies/NPCs | Race body/style sheet package with proportions, material language, starter outfit rules, rig notes, and Unreal import plan | Required before wearable armor, portrait finalization, and Mek pilot fit |
-| 3 | Settlement/building | 66 building, settlement, and environment concepts | Start with `SM_AET_Palisade_A01` or `SM_AET_House_A01`; then common settlement anchors before faction buildings | Modular building kit intake brief or production package with child module list | Exterior shell and material rules should precede matching interiors |
-| 4 | Creature/mount | 45 creature/mount concepts | Start with `SK_CRE_Gryphon_A01`; then Hippogryph, Manticore, Dragon variants, and Dwarf riding yak | Creature family intake package with base anatomy, variant matrix, animation list, collision, LOD, and material plan | Dragon and raid-boss variants wait until family rules and aggressive LOD policy are approved |
-| 5 | Mek suits/companions | 43 Gnome/Mekgineer Mek suit and companion sources | Group light, medium, heavy, weapon-specific, companion, and rift-touched sources into Mek class batches | Mek class kit with skeletal/static mesh split, sockets, attachment rules, child intake, material plan, and VFX socket notes | Depends on gnome body scale, Mekgineer material language, and armory socket policy |
-| 6 | Interiors | 36 interior/environment set concepts | Start with common house/interior and meeting hall sources; then faction halls and Sutekh temple interiors | Interior kit intake with room modules, hero props, lighting/material notes, collision, and LOD guidance | Match exterior faction material rules where available |
+| 1 | Armory and gear | 14 armory/gear source concepts, including faction armories, arsenals, relic gear, workshop gear, and `BloodAxeArmory.png` | Continue child packages from `KIT_MKG_Armory_A01`, `KIT_DWR_Armory_A01`, `KIT_ELV_Armory_A01`, `KIT_DEL_Armory_A01`, `KIT_ORC_Arsenal_A01`, `KIT_MIN_Arsenal_A01`, and `KIT_DKH_FieldGear_A01`; then schedule Blood Axe, Anubisath/Sutekh, Valar, and Common kits | Kit-level production package plus `CHILD_ASSET_INTAKE.md` for each collage-heavy armory sheet | Seven armory/field-gear kits are seeded; Blood Axe gear also waits for Giant hand/body scale rules |
+| 2 | Race body/style | 123 character/NPC/class sources plus approved race anchors, including the new Giant, Blood Axe, and Ogre character slates | Start with gnome base body/style because startup scale and Mekgineer gear already exist; then Dwarves, Elves, Dark Elves, Orcs, Minotaurs, Drakhar, Valar, Anubisath/Sutekh, Basari, Giants/Blood Axe bodies/NPCs, and Ogres | Race body/style sheet package with proportions, material language, starter outfit rules, rig notes, and Unreal import plan | Required before wearable armor, portrait finalization, Mek pilot fit, Giant/Ogre doors/interiors, Blood Axe warband packages, and Ogre Teknomancy rigs |
+| 3 | Settlement/building | 98 building, settlement, and environment concepts, including Giant cave towns, Blood Axe camps/ritual sites, and Ogre cairn fortifications | `SM_AET_Palisade_A01` package is ready; next create `SM_AET_House_A01`, then common settlement anchors before faction buildings; Giant/Blood Axe routes are seeded in `docs/assets/intake/ACIQ-P02_01_GIANT_BLOODAXE_SLATE.md`; Ogre routes are seeded in `docs/assets/characters/SK_OGR_Base_A01/SOURCE_CONCEPT_INTAKE.md` | Modular building kit intake brief or production package with child module list | Exterior shell and material rules should precede matching interiors; Giant and Ogre environment modules require their race scale rules first |
+| 4 | Creature/mount and Abyss enemy hierarchy | 46 creature/mount concepts plus 45 Abyss/Anathema enemy source concepts | `SK_CRE_Gryphon_A01` package is ready; `KIT_ABY_ShadowFlame_A01` intake and first ten proposed child packages are ready; next review one Abyss candidate or schedule Hippogryph, Manticore, Dragon variants, and Dwarf riding yak | Creature family intake package with base anatomy, variant matrix, animation list, collision, LOD, and material plan | Dragon, raid-boss, and Anathema variants wait until family rules, approvals, and aggressive LOD policy are confirmed |
+| 5 | Mek suits/companions | 61 Gnome/Mekgineer Mek suit and companion sources plus Iona's named heavy Mek source | Group light, medium, heavy, weapon-specific, companion, rift-touched, and named hero Mek sources into Mek class batches | Mek class kit with skeletal/static mesh split, sockets, attachment rules, child intake, material plan, and VFX socket notes | Depends on gnome body scale, Mekgineer material language, and armory socket policy; `KIT_GNM_IonaSiegebreaker_A01` now records the named hero heavy Mek source |
+| 6 | Interiors | 41 interior/environment set concepts | Start with common house/interior and meeting hall sources; then faction halls, Sutekh temple interiors, and Ogre forge/Tek shop/interior sources | Interior kit intake with room modules, hero props, lighting/material notes, collision, and LOD guidance | Match exterior faction material rules where available |
 | 7 | UI and portraits | 7 portrait icon sheets | Batch all `Portrait Icons for Mobs*.png` sheets by icon rows/panels | UI portrait atlas intake with one child ID per icon, crop/export rules, naming plan, and status table | Final portrait naming should align with race, creature, and NPC package names where known |
 | 8 | Anubisath/Sutekh vertical slice | 47 Anubisath/Sutekh sources across armory, character, buildings, interiors, and world references | Consolidate armaments, minions/NPCs, pyramid/necropolis structures, barge concepts, temple interiors, and Sutekh reference sources | Faction slate that maps all Anubisath/Sutekh sources to package needs, variants, reference-only items, and dependency order | Cross-cutting pass prevents contradictory seal, necropolis, sand, soulforge, and enemy-faction material language |
 | 9 | Valar vertical slice | 16 Valar sources across armory, character, buildings, interiors, and world references | Consolidate Valar body/style, nobility, paladin/priest, ranger/warden, armory, halls, barracks/training yard, and spire sources | Faction slate that defines Valar silhouette, material, oath/warden motifs, package needs, and child expansion | Should follow or run alongside race body/style so Valar body proportions and gear fit are consistent |
@@ -53,6 +53,7 @@ Batch IDs should use `ACIQ-P##_NN`, where `P##` matches the priority row below a
 - Use `KIT_<Faction>_Armory_A##` for kit-level documentation where an established faction code exists.
 - Create child packages only after the kit breakdown, material set, scale rules, sockets, and attachment rules are recorded.
 - Existing seeded kits: `KIT_MKG_Armory_A01`, `KIT_DWR_Armory_A01`, `KIT_ELV_Armory_A01`, `KIT_DEL_Armory_A01`, `KIT_ORC_Arsenal_A01`, `KIT_MIN_Arsenal_A01`, and `KIT_DKH_FieldGear_A01`. Schedule priority child packages from those kits before duplicating the same work elsewhere.
+- `BloodAxeArmory.png` should become `KIT_GIA_BloodAxeArmory_A01` before individual giant weapons, bows, quivers, trophy armor, or bowyer tools are promoted.
 
 ### Race Body And Style
 
@@ -60,6 +61,8 @@ Batch IDs should use `ACIQ-P##_NN`, where `P##` matches the priority row below a
 - Every race batch needs a base body proportion sheet, starter outfit direction, material language, rig assumptions, animation notes, and import naming.
 - Approved anchors in `AGENTS.md` control silhouettes and culture; do not re-interpret races from a single source image.
 - Character/NPC/class sheets that are not base bodies should be classified as starter outfit, class kit, hero NPC, enemy NPC, or reference variant.
+- Giant and Blood Axe concepts are seeded in `docs/assets/intake/ACIQ-P02_01_GIANT_BLOODAXE_SLATE.md`; `SK_GIA_Base_A01` now records the A04 review scale of female 14-15 ft and male 14'10"-16'0". Rebuild or rescale that package before any Blood Axe warband, Giant armor, or Giant-scale environment work.
+- Ogre concepts are seeded in `docs/assets/characters/SK_OGR_Base_A01/SOURCE_CONCEPT_INTAKE.md`; `SK_OGR_Base_A01` records the scale of female 10'0"-10'6" and male 10'4"-11'0". Approve base body direction before Ogre Teknomancer, Warrior, Shaman, Necromancer, armor, or settlement work.
 
 ### Creature And Mount
 
@@ -67,6 +70,7 @@ Batch IDs should use `ACIQ-P##_NN`, where `P##` matches the priority row below a
 - Separate base anatomy, mount/ride assumptions, combat animation needs, wing/tail collision, physics constraints, and LOD budgets.
 - Variant sheets should produce a variant matrix first, then individual packages only for approved gameplay roles.
 - Creature sheets with many variants must use child IDs for each distinct variant, pose, or body-part reference.
+- Abyss/Anathema intake is now seeded in `KIT_ABY_ShadowFlame_A01`; keep those proposed child packages approval-gated before DCC build.
 
 ### Settlement And Building
 
@@ -74,6 +78,8 @@ Batch IDs should use `ACIQ-P##_NN`, where `P##` matches the priority row below a
 - Split boards into modular walls, doors, windows, roofs, pillars, props, lamps, banners, signs, terrain pieces, and material sets.
 - Every building batch should specify pivot policy, snap dimensions, collision type, material slot limits, LOD targets, and Unreal folder naming.
 - Boards that include multiple views or districts should become kit/module lists before any individual building package is marked ready.
+- Giant cave-town and Blood Axe camp sources must stay separate: civilized Giant masonry should not inherit Blood Axe red-banner, skull, and ritual-stone language by default.
+- Ogre cairn fortifications, gates, barracks, Tek shops, forge interiors, necropolis, and shaman hut sources should share Ogre scale rules but remain visually distinct from Giant and Blood Axe stone culture.
 
 ### Interiors
 

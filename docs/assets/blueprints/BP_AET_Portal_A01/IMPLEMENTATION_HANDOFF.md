@@ -13,8 +13,8 @@ Do not make travel, teleport, quest, inventory, progression, or unlock behavior 
 - Blueprint asset exists at `/Game/Aerathea/Blueprints/Props/BP_AET_Portal_A01` and is reparented to `AAETPortalActor`.
 - `SM_AET_PortalArch_A01` exists at `/Game/Aerathea/Props/Portal/SM_AET_PortalArch_A01`.
 - `L_Aerathea_Startup` currently uses `AET_PROD_Portal_A01`, a placed `AAETPortalActor` review actor with imported arch and core visuals.
-- C++ behavior scaffolding exists for portal state, overlap tracking, and server-authoritative use request gating.
-- Final VFX/audio hooks, destination data, traversal rules, and tuned Blueprint child components remain pending.
+- C++ behavior exists for portal active state, overlap focus, preview use request, cooldown return, destination validation, dynamic material parameters, debug logs, and server-authoritative use request gating.
+- Final Niagara/audio assets, destination registry, traversal rules, and tuned Blueprint child components remain pending.
 - The current arch mesh has Blender source and FBX export. Treat it as production-review source, not final art polish.
 
 ## Source References

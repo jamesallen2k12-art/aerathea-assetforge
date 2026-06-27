@@ -15,10 +15,10 @@ The sheet is a labeled Dark Elven catalog with shadow bows, crescent blades, sab
 
 | Child ID | Type | Proposed asset/package | Status | Notes |
 | --- | --- | --- | --- | --- |
-| `Dark Elven Armory.png#Bow_Veilstrider` | Shadow bow | `SM_DEL_VeilstriderBow_A01` | Package needed | Crescent bow |
+| `Dark Elven Armory.png#Bow_Veilstrider` | Shadow bow | `SM_DEL_VeilstriderBow_A01` | Production package ready | Package: `docs/assets/props/SM_DEL_VeilstriderBow_A01/PRODUCTION_PACKAGE.md`; Crescent bow |
 | `Dark Elven Armory.png#Bow_Nightsong` | Shadow bow | `SM_DEL_NightsongBow_A01` | Package needed | Dark bow |
 | `Dark Elven Armory.png#Bow_Moonreaver` | Shadow bow | `SM_DEL_MoonreaverBow_A01` | Package needed | Heavier moon bow |
-| `Dark Elven Armory.png#Blade_Duskspite` | Crescent blade | `SM_DEL_DuskspiteBlade_A01` | Package needed | Curved blade |
+| `Dark Elven Armory.png#Blade_Duskspite` | Crescent blade | `SM_DEL_DuskspiteBlade_A01` | Production package ready | Package: `docs/assets/props/SM_DEL_DuskspiteBlade_A01/PRODUCTION_PACKAGE.md`; Curved blade |
 | `Dark Elven Armory.png#Blade_EclipseEdge` | Crescent blade | `SM_DEL_EclipseEdge_A01` | Package needed | Smooth crescent blade |
 | `Dark Elven Armory.png#Blade_Voidrevenant` | Crescent blade | `SM_DEL_VoidrevenantBlade_A01` | Package needed | Blue-violet accent |
 | `Dark Elven Armory.png#Blade_Starfall` | Crescent blade | `SM_DEL_StarfallBlade_A01` | Package needed | Hooked crescent blade |
@@ -31,7 +31,7 @@ The sheet is a labeled Dark Elven catalog with shadow bows, crescent blades, sab
 | `Dark Elven Armory.png#Spear_Moonhunter` | Spear/polearm | `SM_DEL_MoonhunterSpear_A01` | Package needed | Crescent spear |
 | `Dark Elven Armory.png#Spear_Starsbane` | Spear/polearm | `SM_DEL_StarsbaneSpear_A01` | Package needed | Tall guard spear |
 | `Dark Elven Armory.png#RitualDagger_Set` | Dagger set | `SM_DEL_RitualDaggers_A01` | Package needed | Three visible variants |
-| `Dark Elven Armory.png#Shield_AegisEternalDusk` | Shield | `SM_DEL_AegisOfEternalDusk_A01` | Package needed | Round ornate shield |
+| `Dark Elven Armory.png#Shield_AegisEternalDusk` | Shield | `SM_DEL_AegisOfEternalDusk_A01` | Production package ready | Package: `docs/assets/props/SM_DEL_AegisOfEternalDusk_A01/PRODUCTION_PACKAGE.md`; Round ornate shield |
 | `Dark Elven Armory.png#Shield_WardVeiledPath` | Shield | `SM_DEL_WardOfTheVeiledPath_A01` | Package needed | Tall shield |
 | `Dark Elven Armory.png#Helm_NightarionCrown` | Helmet | `SK_DEL_CrownOfTheNightarion_A01` | Package needed | Verify spelling before final naming |
 | `Dark Elven Armory.png#Helm_Veilward` | Helmet | `SK_DEL_VeilwardHelm_A01` | Package needed | Tall helm |
@@ -58,10 +58,12 @@ The sheet is a labeled Dark Elven catalog with shadow bows, crescent blades, sab
 | `Dark Elven Armory.png#Accessory_LostRitesTome` | Magical accessory | `SM_DEL_TomeOfLostRites_A01` | Package needed | Book prop |
 | `Dark Elven Armory.png#Accessory_VeilLantern` | Magical accessory | `SM_DEL_LanternOfTheVeil_A01` | Package needed | Lantern prop |
 | `Dark Elven Armory.png#Accessory_AetheriumFocus` | Magical accessory | `SM_DEL_AetheriumFocus_A01` | Package needed | Focus prop |
-| `Dark Elven Armory.png#Materials_ShadowSet` | Material set | `MI_DEL_ShadowArmory_Set_A01` | Package needed | Obsidian steel, silverspine light, star-iron, moonbone, Aetherium, void silk, shadow leather, lunar crystal |
+| `Dark Elven Armory.png#Materials_ShadowSet` | Material set | `MI_DEL_ShadowArmory_Set_A01` | Production package ready | Package: `docs/assets/materials/MI_DEL_ShadowArmory_Set_A01/PRODUCTION_PACKAGE.md`; Obsidian steel, silverspine light, star-iron, moonbone, Aetherium, void silk, shadow leather, lunar crystal |
 | `Dark Elven Armory.png#ScaleReference` | Reference | `KIT_DEL_Armory_A01` | Reference only | Dark elf armor/body scale |
 
 ## Immediate Package Priority
+
+Priority package docs are complete; next step is DCC build ordering.
 
 1. `SM_DEL_DuskspiteBlade_A01`
 2. `SM_DEL_VeilstriderBow_A01`

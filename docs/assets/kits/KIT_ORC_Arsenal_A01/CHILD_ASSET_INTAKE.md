@@ -15,7 +15,7 @@ The sheet is a catalog for honorable Orc warden/seeress gear. Several weapon row
 
 | Child ID | Type | Proposed asset/package | Status | Notes |
 | --- | --- | --- | --- | --- |
-| `Orc Arsenal.png#GreatAxe_01` | Great axe | `SM_ORC_GreatAxe_A01` | Package needed | Broad blue-rune axe |
+| `Orc Arsenal.png#GreatAxe_01` | Great axe | `SM_ORC_GreatAxe_A01` | Production package ready | Package: `docs/assets/props/SM_ORC_GreatAxe_A01/PRODUCTION_PACKAGE.md`; Broad blue-rune axe |
 | `Orc Arsenal.png#GreatAxe_02` | Great axe | `SM_ORC_GreatAxe_A02` | Package needed | Curved blade variant |
 | `Orc Arsenal.png#GreatAxe_03` | Great axe | `SM_ORC_GreatAxe_A03` | Package needed | Double-head variant |
 | `Orc Arsenal.png#GreatAxe_04` | Great axe | `SM_ORC_GreatAxe_A04` | Package needed | Feathered haft variant |
@@ -30,19 +30,21 @@ The sheet is a catalog for honorable Orc warden/seeress gear. Several weapon row
 | `Orc Arsenal.png#PlateArmor_Set` | Armor set | `KIT_ORC_PlateArmor_A01` | Package needed | Three visible plate armor variants |
 | `Orc Arsenal.png#MailScale_Set` | Armor set | `KIT_ORC_MailScale_A01` | Package needed | Three mail/scale variants |
 | `Orc Arsenal.png#LeatherRangerGear_Set` | Armor set | `KIT_ORC_RangerGear_A01` | Package needed | Hooded/ranger variants |
-| `Orc Arsenal.png#Shield_Set` | Shields | `KIT_ORC_Shields_A01` | Package needed | Three shield variants |
-| `Orc Arsenal.png#ShamanicTalisman_Set` | Talismans | `KIT_ORC_ShamanicTalismans_A01` | Package needed | Skull, feather, charm variants |
+| `Orc Arsenal.png#Shield_Set` | Shields | `KIT_ORC_Shields_A01` | Production package ready | Package: `docs/assets/kits/KIT_ORC_Shields_A01/PRODUCTION_PACKAGE.md`; Three shield variants |
+| `Orc Arsenal.png#ShamanicTalisman_Set` | Talismans | `KIT_ORC_ShamanicTalismans_A01` | Production package ready | Package: `docs/assets/kits/KIT_ORC_ShamanicTalismans_A01/PRODUCTION_PACKAGE.md`; Skull, feather, charm variants |
 | `Orc Arsenal.png#MageFociTotem_Set` | Mage foci/totems | `KIT_ORC_MageFociTotems_A01` | Package needed | Five foci/totem variants |
 | `Orc Arsenal.png#GearSet_Warblood` | Outfit configuration | `KIT_ORC_Warblood_A01` | Package needed | Gear-set example |
 | `Orc Arsenal.png#GearSet_BloodHunter` | Outfit configuration | `KIT_ORC_BloodHunter_A01` | Package needed | Gear-set example |
 | `Orc Arsenal.png#GearSet_SpiritWarden` | Outfit configuration | `KIT_ORC_SpiritWarden_A01` | Package needed | Gear-set example |
 | `Orc Arsenal.png#GearSet_RuneSeeress` | Outfit configuration | `KIT_ORC_RuneSeeress_A01` | Package needed | Gear-set example |
 | `Orc Arsenal.png#Materials_Elements` | Material set | `MI_ORC_ArsenalMaterials_A01` | Package needed | Iron, bronze, bone, leather, fur, spirit stone |
-| `Orc Arsenal.png#RunicAffinities` | Rune/material variants | `MI_ORC_RunicAffinities_A01` | Package needed | Strength, protection, ancestry, spirit, balance |
+| `Orc Arsenal.png#RunicAffinities` | Rune/material variants | `MI_ORC_RunicAffinities_A01` | Production package ready | Package: `docs/assets/materials/MI_ORC_RunicAffinities_A01/PRODUCTION_PACKAGE.md`; Strength, protection, ancestry, spirit, balance |
 | `Orc Arsenal.png#PillarsOfArsenal` | Reference/UI | `KIT_ORC_ArsenalPrinciples_A01` | Reference only | Strength, honor, ancestry, balance, loyalty |
 | `Orc Arsenal.png#ScaleReference` | Reference | `KIT_ORC_Arsenal_A01` | Reference only | Orc about 7.5 ft vs 6 ft human on sheet |
 
 ## Immediate Package Priority
+
+Priority package docs are complete; next step is DCC build ordering.
 
 1. `SM_ORC_GreatAxe_A01`
 2. `KIT_ORC_Shields_A01`

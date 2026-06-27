@@ -8,7 +8,7 @@
 - Priority children: `SM_DKH_RiversindRecurve_A01`, `KIT_DKH_CurvedDaggers_A01`, `SM_DKH_ReedShellShield_A01`, `KIT_DKH_MagicTrackingCharms_A01`
 - Status: Kit production package ready
 
-Field gear for compact Drakhar relic hunters, rangers, rogues, shamans, and wizards. Use the approved 4-5 ft bearded-dragon/desert-lizardfolk anchor, not the conflicting taller source-sheet scale.
+Field gear for compact Drakhar relic hunters, rangers, rogues, shamans, and wizards. Use the approved A04 bearded-dragon/desert-lizardfolk anchor, females 3'6"-4'2" and males 4'0"-4'6", not the conflicting taller source-sheet scale.
 
 ## Gameplay Purpose
 
@@ -20,7 +20,7 @@ Riversind Recurve has a compact crescent recurve profile. Curved daggers read as
 
 ## Scale Notes
 
-Approved Drakhar scale: 4-5 ft. Riversind Recurve: 90-125 cm. Daggers: 25-45 cm. ReedShell shield: 45-75 cm. Charms: 8-25 cm each. Grips and straps fit small clawed hands.
+Approved Drakhar scale: females 3'6"-4'2" / 107-127 cm, males 4'0"-4'6" / 122-137 cm. Riversind Recurve: 90-125 cm. Daggers: 25-45 cm. ReedShell shield: 45-75 cm. Charms: 8-25 cm each. Grips and straps fit small clawed hands.
 
 ## Materials And Color Palette
 
@@ -28,7 +28,7 @@ Ochre and muted green scales, sun-bleached bone, dark cracked leather, reed, she
 
 ## Concept Image Prompt
 
-Create an original stylized fantasy MMORPG concept image of a Drakhar field gear kit for Aerathea. Emphasize compact 4-5 ft lizardfolk scale, bearded-dragon and desert-lizard identity, recurve bow silhouettes, curved daggers, reed-shell shielding, bone and leather field craft, ember-lit magic tracking charms, relic gathering for Volcreon, and agile ranger/rogue/shaman/wizard gameplay roles. Use hand-painted texture detail, readable shapes, baked-AO-style depth, normal-map-style surface detail, sparing emissive ember accents, and MMO-friendly production design. Present it as an armory and field-gear catalog sheet with corrected 4-5 ft scale callouts.
+Create an original stylized fantasy MMORPG concept image of a Drakhar field gear kit for Aerathea. Emphasize compact female 3'6"-4'2" and male 4'0"-4'6" lizardfolk scale, bearded-dragon and desert-lizard identity, recurve bow silhouettes, curved daggers, reed-shell shielding, bone and leather field craft, ember-lit magic tracking charms, relic gathering for Volcreon, and agile ranger/rogue/shaman/wizard gameplay roles. Use hand-painted texture detail, readable shapes, baked-AO-style depth, normal-map-style surface detail, sparing emissive ember accents, and MMO-friendly production design. Present it as an armory and field-gear catalog sheet with corrected A04 scale callouts.
 
 ## Modeling Notes
 
@@ -56,7 +56,7 @@ Static mesh baseline. Bow needs sockets for string alignment, arrow rest, charm 
 
 ## Unreal Import Notes
 
-Use centimeter scale and validate against a 4-5 ft Drakhar marker. Bow/dagger pivots at grip center; shield at forearm strap; charms at top loop. Sockets: `Grip_Main`, `Carry_Back`, `Charm_Attach_A`, `Charm_Attach_B`, `Arrow_Rest`, `Belt_Left`, `Belt_Right`, `Shield_Forearm`, `Relic_Activate`.
+Use centimeter scale and validate against A04 Drakhar female and male markers. Bow/dagger pivots at grip center; shield at forearm strap; charms at top loop. Sockets: `Grip_Main`, `Carry_Back`, `Charm_Attach_A`, `Charm_Attach_B`, `Arrow_Rest`, `Belt_Left`, `Belt_Right`, `Shield_Forearm`, `Relic_Activate`.
 
 ## Folder And Naming Recommendation
 
@@ -68,7 +68,7 @@ Use centimeter scale and validate against a 4-5 ft Drakhar marker. Bow/dagger pi
 
 ## Quality Gate Checklist
 
-- Uses approved 4-5 ft Drakhar scale despite source conflict.
+- Uses approved A04 Drakhar scale despite source conflict.
 - Matches bearded-dragon/desert-lizardfolk anchor.
 - Magic obsession, relic gathering, and Volcreon influence are clear.
 - Ember glow is restrained.

@@ -8,6 +8,7 @@ Run with:
 from __future__ import annotations
 
 import math
+import os
 import sys
 from pathlib import Path
 
@@ -16,7 +17,11 @@ from mathutils import Vector
 
 
 ROOT = Path(__file__).resolve().parents[2]
-OUTPUT_PATH = ROOT / "Saved/Automation/StartupReview/AeratheaStartupReview_DCCCameraRetry.png"
+SHOW_REVIEW_MARKERS = os.environ.get("AET_REVIEW_MARKERS", "").lower() in {"1", "true", "yes", "on"}
+DEFAULT_OUTPUT_PATH = ROOT / "Saved/Automation/StartupReview/AeratheaStartupReview_DCCCameraRetry.png"
+if SHOW_REVIEW_MARKERS:
+    DEFAULT_OUTPUT_PATH = ROOT / "Saved/Automation/StartupReview/AeratheaStartupReview_DCCMarkers.png"
+OUTPUT_PATH = Path(os.environ.get("AET_REVIEW_OUTPUT", str(DEFAULT_OUTPUT_PATH)))
 
 sys.path.insert(0, str(ROOT))
 
@@ -29,12 +34,23 @@ from Tools.DCC.build_aerathea_blender_assets import (  # noqa: E402
     target_dummy,
     workshop_crate,
 )
+from Tools.DCC.build_next_slice_assets import (  # noqa: E402
+    gear_mace,
+    palisade_corner,
+    palisade_endcap,
+    palisade_gate,
+    palisade_post,
+    palisade_wall,
+    ratchet_cleaver,
+    tool_pack,
+)
 from Tools.DCC.generate_first_slice_meshes import ground_tile  # noqa: E402
+from Tools.review_alignment_markers import REVIEW_ALIGNMENT_MARKERS  # noqa: E402
 
 
-REVIEW_LOCATION = Vector((-2350.0, 1600.0, 1280.0))
+REVIEW_LOCATION = Vector((-4850.0, 3200.0, 2575.0))
 REVIEW_TARGET = Vector((-70.0, 160.0, 110.0))
-REVIEW_FOV_DEGREES = 70.0
+REVIEW_FOV_DEGREES = 65.0
 
 
 def clear_scene() -> None:
@@ -124,6 +140,49 @@ def add_startup_assets() -> None:
     mesh_to_blender(spark_pistol(), "AET_PROD_MKG_SparkPistol_A01", (-465, 190, 50), -15.0)
     mesh_to_blender(aether_core_unit(), "AET_PROD_MKG_AetherCoreUnit_A01", (-360, 270, 28), 12.0)
     mesh_to_blender(aetherium_grenade(), "AET_PROD_MKG_AetheriumGrenade_A01", (-455, 275, 24), -10.0)
+    mesh_to_blender(ratchet_cleaver(), "AET_PROD_MKG_RatchetCleaver_A01", (-540, 282, 45), 16.0)
+    mesh_to_blender(gear_mace(), "AET_PROD_MKG_GearMace_A01", (-620, 365, 45), -12.0)
+    mesh_to_blender(tool_pack(), "AET_PROD_MKG_ToolPack_BackFit_A01", (-745, 520, 74), 0.0)
+
+    mesh_to_blender(palisade_wall(), "AET_PROD_Palisade_Wall_A01", (-200, -660, 0))
+    mesh_to_blender(palisade_post(), "AET_PROD_Palisade_Post_A01", (-430, -660, 0))
+    mesh_to_blender(palisade_endcap(), "AET_PROD_Palisade_EndCap_A01", (70, -660, 0))
+    mesh_to_blender(palisade_corner(), "AET_PROD_Palisade_Corner_A01", (360, -660, 0))
+    mesh_to_blender(palisade_gate(), "AET_PROD_Palisade_Gate_A01", (140, -1020, 0))
+
+
+def add_review_alignment_markers() -> None:
+    if not SHOW_REVIEW_MARKERS:
+        return
+
+    label_material = get_material("M_AET_ReviewMarker_Label", (1.0, 1.0, 1.0))
+    for marker in REVIEW_ALIGNMENT_MARKERS:
+        marker_id = marker["id"]
+        x, y, z = marker["location"]
+        # FBX export/import keeps the asset view aligned after an XY axis swap.
+        dcc_location = (y, x, z)
+        color = marker["color"]
+        material = get_material(f"M_AET_ReviewMarker_{marker_id}", color[:3])
+
+        bpy.ops.mesh.primitive_uv_sphere_add(
+            segments=32,
+            ring_count=16,
+            radius=48.0 if marker_id != "E" else 62.0,
+            location=dcc_location,
+        )
+        sphere = bpy.context.object
+        sphere.name = f"AET_REVIEW_MARKER_{marker_id}"
+        sphere.data.materials.append(material)
+
+        curve = bpy.data.curves.new(f"AET_REVIEW_MARKER_LABEL_{marker_id}", "FONT")
+        curve.body = marker["label"]
+        curve.align_x = "CENTER"
+        curve.align_y = "CENTER"
+        curve.size = 145.0 if marker_id != "E" else 170.0
+        label = bpy.data.objects.new(f"AET_REVIEW_MARKER_LABEL_{marker_id}", curve)
+        label.location = (dcc_location[0], dcc_location[1], dcc_location[2] + 115.0)
+        label.data.materials.append(label_material)
+        bpy.context.collection.objects.link(label)
 
 
 def look_at(obj: bpy.types.Object, target: Vector) -> None:
@@ -167,6 +226,7 @@ def main() -> None:
     clear_scene()
     setup_scene()
     add_startup_assets()
+    add_review_alignment_markers()
     setup_camera_and_lights()
     render()
 
