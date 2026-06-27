@@ -134,6 +134,9 @@ Use 1K-2K textures for modular pieces. Use trim/atlas reuse where possible for f
 - Review captures:
   - DCC proof: `Saved/Automation/InfernalCultFloorReview/SM_INF_CullingTrialFloor_A01_DCCReview.png`
   - Unreal startup review: `Saved/Automation/StartupReview/AeratheaStartupReview_InfernalCultFloor_A01.png`
+  - Fresh Unreal startup check: `Saved/Automation/StartupReview/AeratheaStartupReview_InfernalCultFloor_A01_Fresh.png`
+- Visual review status: `docs/assets/props/SM_INF_CullingTrialFloor_A01/VISUAL_REVIEW_STATUS.md`
+- First-pass DCC and Unreal visual review is accepted for production planning; final sculpt, authored UVs/textures, tuned collision, and VFX/material state work remain pending.
 
 ## Quality Gate Checklist
 

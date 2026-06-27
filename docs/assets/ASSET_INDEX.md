@@ -19,7 +19,7 @@
 | `SM_MKG_AetherRifle_A01` | Production package and handoff ready | `docs/assets/props/SM_MKG_AetherRifle_A01/PRODUCTION_PACKAGE.md` |
 | `SM_MKG_Cogmauler_A01` | Production package and handoff ready | `docs/assets/props/SM_MKG_Cogmauler_A01/PRODUCTION_PACKAGE.md` |
 | `SM_MKG_Geargrinder_A01` | Production package and handoff ready | `docs/assets/props/SM_MKG_Geargrinder_A01/PRODUCTION_PACKAGE.md` |
-| `SM_MKG_GrappleHook_A01` | Production package and handoff ready | `docs/assets/props/SM_MKG_GrappleHook_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MKG_GrappleHook_A01` | Blender source and FBX generated, imported to Unreal, material instances and LOD0-LOD3 generated, static mesh sockets added, placed in startup scene, validation passing | `docs/assets/props/SM_MKG_GrappleHook_A01/PRODUCTION_PACKAGE.md` |
 | `SM_MKG_MultiTool_A01` | Blender source and FBX generated, imported to Unreal, material instances and LOD0-LOD3 generated, placed in startup scene, validation passing | `docs/assets/props/SM_MKG_MultiTool_A01/PRODUCTION_PACKAGE.md` |
 | `SM_MKG_WeldingTorch_A01` | Production package and handoff ready | `docs/assets/props/SM_MKG_WeldingTorch_A01/PRODUCTION_PACKAGE.md` |
 | `SM_MKG_PortableAnvil_A01` | Production package and handoff ready | `docs/assets/props/SM_MKG_PortableAnvil_A01/PRODUCTION_PACKAGE.md` |
@@ -44,7 +44,7 @@
 | `SM_MKG_SparkPistol_A01` | Blender source and FBX generated, imported to Unreal, modeling handoff ready, placed in startup scene, validation passing | `docs/assets/props/SM_MKG_SparkPistol_A01/PRODUCTION_PACKAGE.md` |
 | `SM_MKG_AetheriumGrenade_A01` | Blender source and FBX generated, imported to Unreal, modeling handoff ready, placed in startup scene, validation passing | `docs/assets/props/SM_MKG_AetheriumGrenade_A01/PRODUCTION_PACKAGE.md` |
 | `SM_AET_Palisade_A01` | Wall/post/corner/gate/end-cap Blender sources and FBX exports generated, imported to Unreal, material instances and LOD0-LOD3 generated, placed in startup scene, validation passing | `docs/assets/props/SM_AET_Palisade_A01/PRODUCTION_PACKAGE.md` |
-| `SM_INF_CullingTrialFloor_A01` | Blender source and FBX generated, imported to Unreal, material instances assigned, LOD0-LOD3 generated, static mesh sockets added; local startup review placement and validation pass completed | `docs/assets/props/SM_INF_CullingTrialFloor_A01/PRODUCTION_PACKAGE.md` |
+| `SM_INF_CullingTrialFloor_A01` | Blender source and FBX generated, imported to Unreal, material instances assigned, LOD0-LOD3 generated, static mesh sockets added; first-pass DCC/Unreal visual review accepted, final art and VFX states pending | `docs/assets/props/SM_INF_CullingTrialFloor_A01/PRODUCTION_PACKAGE.md` |
 | `SM_DWR_OathkeeperHammer_A01` | Priority production package ready; DCC build not started | `docs/assets/props/SM_DWR_OathkeeperHammer_A01/PRODUCTION_PACKAGE.md` |
 | `SM_DWR_StonewallShield_A01` | Priority production package ready; DCC build not started | `docs/assets/props/SM_DWR_StonewallShield_A01/PRODUCTION_PACKAGE.md` |
 | `SM_ELV_Moonblade_A01` | Priority production package ready; DCC build not started | `docs/assets/props/SM_ELV_Moonblade_A01/PRODUCTION_PACKAGE.md` |
@@ -67,7 +67,7 @@
 | `KIT_GNM_TinkersGear_A01` | Gear configuration production package and handoff ready; assembly waits for approved gnome base body/skeleton | `docs/assets/kits/KIT_GNM_TinkersGear_A01/PRODUCTION_PACKAGE.md` |
 | `KIT_GNM_MekgineersKit_A01` | Gear configuration production package and handoff ready; assembly waits for approved gnome base body/skeleton | `docs/assets/kits/KIT_GNM_MekgineersKit_A01/PRODUCTION_PACKAGE.md` |
 | `KIT_GNM_ForgeguardPlate_A01` | Gear configuration production package and handoff ready; assembly waits for approved gnome base body/skeleton | `docs/assets/kits/KIT_GNM_ForgeguardPlate_A01/PRODUCTION_PACKAGE.md` |
-| `KIT_MKG_Armory_A01` | Kit package ready, child asset intake complete, all catalog child production packages documented; first ten child DCC meshes imported or fit-previewed | `docs/assets/kits/KIT_MKG_Armory_A01/PRODUCTION_PACKAGE.md` |
+| `KIT_MKG_Armory_A01` | Kit package ready, child asset intake complete, all catalog child production packages documented; first eleven child DCC meshes imported or fit-previewed, including `SM_MKG_GrappleHook_A01` | `docs/assets/kits/KIT_MKG_Armory_A01/PRODUCTION_PACKAGE.md` |
 | `KIT_DWR_Armory_A01` | Child asset intake complete, kit production package ready; priority child package docs ready; DCC builds pending | `docs/assets/kits/KIT_DWR_Armory_A01/PRODUCTION_PACKAGE.md` |
 | `KIT_ELV_Armory_A01` | Child asset intake complete, kit production package ready; priority child package docs ready; DCC builds pending | `docs/assets/kits/KIT_ELV_Armory_A01/PRODUCTION_PACKAGE.md` |
 | `KIT_DEL_Armory_A01` | Child asset intake complete, kit production package ready; priority child package docs ready; DCC builds pending | `docs/assets/kits/KIT_DEL_Armory_A01/PRODUCTION_PACKAGE.md` |
@@ -76,14 +76,14 @@
 | `KIT_DKH_FieldGear_A01` | Child asset intake complete, kit production package ready; priority child package docs ready; DCC builds pending; package uses approved A04 Drakhar scale: females 3'6"-4'2", males 4'0"-4'6" over conflicting source-sheet scale | `docs/assets/kits/KIT_DKH_FieldGear_A01/PRODUCTION_PACKAGE.md` |
 | `KIT_ABY_ShadowFlame_A01` | Visual intake complete for Abyss/Anathema source set; hierarchy kit and first ten proposed child creature packages ready for approval review | `docs/assets/kits/KIT_ABY_ShadowFlame_A01/PRODUCTION_PACKAGE.md` |
 | `KIT_GNM_IonaSiegebreaker_A01` | Visual intake complete for `Iona.png`; named gnome hero, heavy Mek, arc cannon, and Abyss encounter package directions proposed for approval review; 4 additional heavy Mek variants routed as source variants | `docs/assets/kits/KIT_GNM_IonaSiegebreaker_A01/PRODUCTION_PACKAGE.md` |
-| `KIT_GNM_OGR_RivalryEncounter_A01` | Source intake and production package ready for 21 Gnome-vs-Ogre encounter images plus 4 heavy Mek variants; child routes defined for shield-wall, Ogre Teknomancer, Ogre warrior waves, cairn gate dressing, and Manticore interrupt variants | `docs/assets/kits/KIT_GNM_OGR_RivalryEncounter_A01/PRODUCTION_PACKAGE.md` |
+| `KIT_GNM_OGR_RivalryEncounter_A01` | Source intake and production package ready for 21 Gnome-vs-Ogre encounter images plus 4 heavy Mek variants; first child `BP_GNM_HeavyMekShieldwall_A01` package ready; Ogre Teknomancer, warrior, cairn gate, and Manticore routes remain pending | `docs/assets/kits/KIT_GNM_OGR_RivalryEncounter_A01/PRODUCTION_PACKAGE.md` |
 | `KIT_ORC_Shields_A01` | Priority production package ready; DCC build not started | `docs/assets/kits/KIT_ORC_Shields_A01/PRODUCTION_PACKAGE.md` |
 | `KIT_ORC_ShamanicTalismans_A01` | Priority production package ready; DCC build not started | `docs/assets/kits/KIT_ORC_ShamanicTalismans_A01/PRODUCTION_PACKAGE.md` |
 | `KIT_MIN_HideShields_A01` | Priority production package ready; DCC build not started | `docs/assets/kits/KIT_MIN_HideShields_A01/PRODUCTION_PACKAGE.md` |
 | `KIT_MIN_Helmets_A01` | Priority production package ready; DCC build not started | `docs/assets/kits/KIT_MIN_Helmets_A01/PRODUCTION_PACKAGE.md` |
 | `KIT_DKH_CurvedDaggers_A01` | Priority production package ready; DCC build not started | `docs/assets/kits/KIT_DKH_CurvedDaggers_A01/PRODUCTION_PACKAGE.md` |
 | `KIT_DKH_MagicTrackingCharms_A01` | Priority production package ready; DCC build not started | `docs/assets/kits/KIT_DKH_MagicTrackingCharms_A01/PRODUCTION_PACKAGE.md` |
-| `KIT_INF_BalgorothCult_A01` | Production package and visual kit breakdown ready for Infernal cult symbols, ritual sites, materials, VFX language, gate-guard scene routing, and first child target `SM_INF_CullingTrialFloor_A01` | `docs/assets/kits/KIT_INF_BalgorothCult_A01/PRODUCTION_PACKAGE.md` |
+| `KIT_INF_BalgorothCult_A01` | Production package and visual kit breakdown ready; `SM_INF_CullingTrialFloor_A01` first-pass visual review accepted; brand material and worthiness VFX packages ready | `docs/assets/kits/KIT_INF_BalgorothCult_A01/PRODUCTION_PACKAGE.md` |
 
 ## Characters
 
@@ -130,6 +130,7 @@
 | `MI_DWR_RunicGlowStates_A01` | Priority material production package ready; material authoring not started | `docs/assets/materials/MI_DWR_RunicGlowStates_A01/PRODUCTION_PACKAGE.md` |
 | `MI_DEL_ShadowArmory_Set_A01` | Priority material production package ready; material authoring not started | `docs/assets/materials/MI_DEL_ShadowArmory_Set_A01/PRODUCTION_PACKAGE.md` |
 | `MI_ORC_RunicAffinities_A01` | Priority material production package ready; material authoring not started | `docs/assets/materials/MI_ORC_RunicAffinities_A01/PRODUCTION_PACKAGE.md` |
+| `MI_INF_BrandGlowStates_A01` | Infernal brand material-state production package ready; material authoring not started | `docs/assets/materials/MI_INF_BrandGlowStates_A01/PRODUCTION_PACKAGE.md` |
 
 ## Blueprints
 
@@ -137,6 +138,13 @@
 | --- | --- | --- |
 | `BP_AET_Portal_A01` | Native preview state/overlap/use-cooldown behavior implemented; Blueprint asset compiled; startup validation passing | `docs/assets/blueprints/BP_AET_Portal_A01/PRODUCTION_PACKAGE.md` |
 | `BP_AET_TargetDummy_A01` | Native training hit/break/reset behavior implemented; Blueprint asset created and compiled; startup validation passing | `docs/assets/blueprints/BP_AET_TargetDummy_A01/PRODUCTION_PACKAGE.md` |
+| `BP_GNM_HeavyMekShieldwall_A01` | First Gnome-vs-Ogre encounter child production package and implementation handoff ready; Unreal Blueprint build pending dependencies | `docs/assets/blueprints/BP_GNM_HeavyMekShieldwall_A01/PRODUCTION_PACKAGE.md` |
+
+## VFX
+
+| Asset | Status | Package |
+| --- | --- | --- |
+| `VFX_INF_WorthinessJudgment_A01` | Infernal worthiness judgment VFX production package ready; Niagara/material authoring not started | `docs/assets/vfx/VFX_INF_WorthinessJudgment_A01/PRODUCTION_PACKAGE.md` |
 
 ## Status Key
 

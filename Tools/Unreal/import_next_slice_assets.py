@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 
 import unreal
@@ -17,6 +18,11 @@ STATIC_ASSETS = [
     {
         "name": "SM_MKG_MultiTool_A01",
         "source": ROOT / "SourceAssets/Exports/Kits/Mekgineer/Armory/SM_MKG_MultiTool_A01/SM_MKG_MultiTool_A01.fbx",
+        "destination": "/Game/Aerathea/Props/Mekgineer/Armory",
+    },
+    {
+        "name": "SM_MKG_GrappleHook_A01",
+        "source": ROOT / "SourceAssets/Exports/Kits/Mekgineer/Armory/SM_MKG_GrappleHook_A01/SM_MKG_GrappleHook_A01.fbx",
         "destination": "/Game/Aerathea/Props/Mekgineer/Armory",
     },
     {
@@ -70,6 +76,14 @@ STATIC_ASSETS = [
         "destination": "/Game/Aerathea/Buildings/Common/Palisade",
     },
 ]
+
+STATIC_MESH_SOCKET_SETS = {
+    "SM_MKG_GrappleHook_A01": [
+        ("socket_muzzle", unreal.Vector(76.0, 0.0, 3.0), unreal.Rotator(0.0, 0.0, 0.0)),
+        ("socket_beam", unreal.Vector(86.0, 0.0, 3.0), unreal.Rotator(0.0, 0.0, 0.0)),
+        ("socket_cable", unreal.Vector(-54.0, 0.0, 0.0), unreal.Rotator(0.0, 180.0, 0.0)),
+    ],
+}
 
 SKELETAL_ASSETS = [
     {
@@ -225,8 +239,8 @@ def ensure_material_instance(name, parent_material):
     return instance
 
 
-def ensure_materials():
-    return {
+def ensure_materials(include_skeletal=True):
+    materials = {
         "M_AET_Stone_Handpainted_A01": color_material(
             "M_AET_Stone_Handpainted_A01",
             unreal.LinearColor(0.34, 0.36, 0.37, 1.0),
@@ -257,6 +271,12 @@ def ensure_materials():
             "M_AET_Leather_Dark_A01",
             unreal.LinearColor(0.19, 0.11, 0.07, 1.0),
         ),
+    }
+    if not include_skeletal:
+        return materials
+
+    materials.update(
+        {
         "M_GNM_Skin_Blockout_A01": color_material(
             "M_GNM_Skin_Blockout_A01",
             unreal.LinearColor(0.78, 0.55, 0.38, 1.0),
@@ -292,7 +312,9 @@ def ensure_materials():
             unreal.LinearColor(0.78, 0.68, 0.46, 1.0),
             use_with_skeletal_mesh=True,
         ),
-    }
+        }
+    )
+    return materials
 
 
 def ensure_review_lods_static(mesh, target_lods=4):
@@ -560,6 +582,35 @@ def ensure_skeletal_infrastructure():
         ensure_anim_blueprint(entry["anim_blueprint"], entry["skeleton"], entry["mesh"])
 
 
+def ensure_static_mesh_sockets(mesh, socket_specs):
+    for name, location, rotation in socket_specs:
+        existing = None
+        finder = getattr(mesh, "find_socket", None)
+        if callable(finder):
+            try:
+                existing = finder(unreal.Name(name))
+            except Exception:
+                existing = None
+        remover = getattr(mesh, "remove_socket", None)
+        if existing is not None and callable(remover):
+            try:
+                remover(existing)
+            except TypeError:
+                remover(unreal.Name(name))
+
+        socket = unreal.new_object(unreal.StaticMeshSocket, outer=mesh)
+        socket.set_editor_property("socket_name", unreal.Name(name))
+        socket.set_editor_property("relative_location", location)
+        socket.set_editor_property("relative_rotation", rotation)
+        socket.set_editor_property("relative_scale", unreal.Vector(1.0, 1.0, 1.0))
+        add_socket = getattr(mesh, "add_socket", None)
+        if not callable(add_socket):
+            raise RuntimeError("StaticMesh.add_socket is not available for {}".format(mesh.get_name()))
+        add_socket(socket)
+    unreal.EditorAssetLibrary.save_loaded_asset(mesh)
+    unreal.log("Ensured {} static mesh sockets for {}".format(len(socket_specs), mesh.get_name()))
+
+
 def all_level_actors():
     actor_subsystem = unreal.get_editor_subsystem(unreal.EditorActorSubsystem)
     return list(actor_subsystem.get_all_level_actors())
@@ -779,6 +830,12 @@ def update_startup_level(meshes, skeletal_meshes):
         rotation=review_rotator(0.0, -42.0),
     )
     spawn_static_mesh(
+        "AET_PROD_MKG_GrappleHook_A01",
+        meshes["SM_MKG_GrappleHook_A01"],
+        unreal.Vector(-380, 148, 42),
+        rotation=review_rotator(0.0, -54.0),
+    )
+    spawn_static_mesh(
         "AET_PROD_MKG_SpikeDrill_A01",
         meshes["SM_MKG_SpikeDrill_A01"],
         unreal.Vector(-455, 205, 44),
@@ -842,28 +899,58 @@ def update_startup_level(meshes, skeletal_meshes):
 
     if not unreal.EditorLevelLibrary.save_current_level():
         raise RuntimeError("Failed to save current level")
-    unreal.EditorAssetLibrary.save_directory("/Game/Aerathea", only_if_is_dirty=False, recursive=True)
+    unreal.EditorAssetLibrary.save_directory("/Game/Aerathea", only_if_is_dirty=True, recursive=True)
     unreal.log("Updated startup level with next-slice production review assets.")
 
 
+def selected_asset_names():
+    raw = os.environ.get("AET_IMPORT_ASSETS", "")
+    return {part.strip() for part in raw.split(",") if part.strip()}
+
+
+def static_asset_path(entry):
+    return "{}/{}".format(entry["destination"], entry["name"])
+
+
 def main():
-    materials = ensure_materials()
+    selected = selected_asset_names()
+    known = {entry["name"] for entry in STATIC_ASSETS} | {entry["name"] for entry in SKELETAL_ASSETS}
+    unknown = selected - known
+    if unknown:
+        raise RuntimeError("Unknown AET_IMPORT_ASSETS entries: {}".format(", ".join(sorted(unknown))))
+
+    process_skeletal_assets = not selected or any(entry["name"] in selected for entry in SKELETAL_ASSETS)
+    materials = ensure_materials(include_skeletal=process_skeletal_assets)
     meshes = {}
     skeletal_meshes = {}
     for entry in STATIC_ASSETS:
-        mesh = import_static_mesh(entry)
-        assign_project_materials(mesh, materials)
-        ensure_review_lods_static(mesh)
+        if not selected or entry["name"] in selected:
+            mesh = import_static_mesh(entry)
+            assign_project_materials(mesh, materials)
+            ensure_review_lods_static(mesh)
+            socket_specs = STATIC_MESH_SOCKET_SETS.get(entry["name"])
+            if socket_specs:
+                ensure_static_mesh_sockets(mesh, socket_specs)
+        else:
+            mesh = unreal.load_asset(static_asset_path(entry))
+            if mesh is None:
+                raise RuntimeError("Missing previously imported static mesh: {}".format(static_asset_path(entry)))
         meshes[entry["name"]] = mesh
 
     for entry in SKELETAL_ASSETS:
-        mesh = import_skeletal_mesh(entry)
-        assign_project_materials(mesh, materials)
-        ensure_physics_asset(mesh, entry["physics_asset"])
-        ensure_review_lods_skeletal(mesh)
+        if not selected or entry["name"] in selected:
+            mesh = import_skeletal_mesh(entry)
+            assign_project_materials(mesh, materials)
+            ensure_physics_asset(mesh, entry["physics_asset"])
+            ensure_review_lods_skeletal(mesh)
+        else:
+            mesh = unreal.load_asset("{}/{}".format(entry["destination"], entry["name"]))
+            if mesh is None:
+                raise RuntimeError("Missing previously imported skeletal mesh: {}/{}".format(entry["destination"], entry["name"]))
         skeletal_meshes[entry["name"]] = mesh
 
-    ensure_skeletal_infrastructure()
+    if process_skeletal_assets:
+        ensure_skeletal_infrastructure()
     update_startup_level(meshes, skeletal_meshes)
     unreal.log("Aerathea next-slice import complete.")
 

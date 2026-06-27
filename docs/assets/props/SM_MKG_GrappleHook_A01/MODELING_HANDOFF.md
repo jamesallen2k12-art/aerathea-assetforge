@@ -68,6 +68,16 @@ No blocking collision while equipped. Use one simple box/capsule pickup or displ
 - LOD0-LOD3 preserve the silhouette.
 - Equipped collision is disabled unless this is a world prop or display item.
 
+## DCC And Unreal Pass - 2026-06-27
+
+- Built first-pass Blender source and FBX export using `Tools/DCC/build_next_slice_assets.py` with `AET_BUILD_ASSETS=SM_MKG_GrappleHook_A01`.
+- Imported selectively to `/Game/Aerathea/Props/Mekgineer/Armory/SM_MKG_GrappleHook_A01` using `Tools/Unreal/import_next_slice_assets.py` with `AET_IMPORT_ASSETS=SM_MKG_GrappleHook_A01`.
+- Generated LOD0-LOD3 in Unreal and assigned review material instances for Aetherium glow, brass, dark iron, leather, and stone.
+- Added static mesh sockets `socket_muzzle`, `socket_beam`, and `socket_cable` for future cable, beam, and firing Blueprint validation.
+- Placed startup review actor `AET_PROD_MKG_GrappleHook_A01`.
+- Startup validation passes through `Tools/Unreal/validate_startup_scene.py`.
+- Final art pass still needs authored UVs, texture maps, refined hook curvature, final collision, and gameplay Blueprint behavior.
+
 ## Acceptance Checklist
 
 - Gnome/Mekgineer identity is clear.

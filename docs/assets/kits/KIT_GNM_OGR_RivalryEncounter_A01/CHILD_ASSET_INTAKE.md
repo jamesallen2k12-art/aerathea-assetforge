@@ -38,7 +38,7 @@ This intake routes the 2026-06-27 Gnome-vs-Ogre source concepts into reusable pr
 
 | Child asset | Type | Source support | Status | Notes |
 | --- | --- | --- | --- | --- |
-| `BP_GNM_HeavyMekShieldwall_A01` | Blueprint Actor/VFX | `GnomevsOgre*.png`, `GnomeFemalevsOgre*.png` | Recommended first child | Creates reusable shield-wall field using Mek projectors and blue Aetherium arcs |
+| `BP_GNM_HeavyMekShieldwall_A01` | Blueprint Actor/VFX | `GnomevsOgre*.png`, `GnomeFemalevsOgre*.png` | Production package ready | Creates reusable shield-wall field using Mek projectors and blue Aetherium arcs |
 | `SK_GNM_HeavyMek_Rivalry_A01` | Skeletal Mesh | `GnomeFemaleHeavyMek*.png`, encounter sheets | Package needed | Shared heavy Mek variant for encounter staging; may inherit from Iona kit if approved |
 | `SM_GNM_AetherShieldProjector_A01` | Static Mesh | shield-wall images | Package needed | Ground or Mek-mounted projector prop with socketed VFX |
 | `VFX_GNM_AetherShieldWall_A01` | Niagara/VFX | shield-wall images | Package needed | Blue shield arc, pulse, impact ripple, and failure state |

@@ -12,6 +12,7 @@ they are not final sculpted/painted production art.
 from __future__ import annotations
 
 import math
+import os
 import sys
 from dataclasses import dataclass
 from pathlib import Path
@@ -245,6 +246,58 @@ def spike_drill() -> Mesh:
     return mesh
 
 
+def grapple_hook() -> Mesh:
+    mesh = Mesh("SM_MKG_GrappleHook_A01")
+    m = create_common_materials(mesh)
+
+    # Pivot sits at the gnome grip center. The hook fires forward on +X and the cable exits -X.
+    mesh.add_cylinder("Grip_Leather_CompactLauncher", (-18, 0, -4), 4.4, 30, m["leather"], "x", 14)
+    mesh.add_cylinder("Grip_Brass_BackBand", (-31, 0, -4), 5.1, 4, m["brass"], "x", 14)
+    mesh.add_cylinder("Grip_Brass_FrontBand", (-5, 0, -4), 5.1, 4, m["brass"], "x", 14)
+    mesh.add_box("TriggerGuard_Brass_LoopBlock", (-4, 0, -12), (15, 16, 5), m["brass"])
+    mesh.add_box("Trigger_DarkIron_Lever", (-2, 0, -16), (7, 5, 7), m["dark_iron"])
+
+    mesh.add_cylinder("CableSocket_DarkIron_RearHousing", (-42, 0, 0), 7.0, 10, m["dark_iron"], "x", 16)
+    mesh.add_cylinder("CableSocket_Brass_Rim", (-48, 0, 0), 5.6, 4, m["brass"], "x", 14)
+    mesh.add_cylinder("CablePort_Aetherium_BlueGuide", (-51, 0, 0), 2.8, 2, m["aetherium"], "x", 12)
+    mesh.add_box("CableDrum_DarkIron_LeftCap", (-26, 13, 5), (18, 5, 16), m["dark_iron"])
+    mesh.add_box("CableDrum_DarkIron_RightCap", (-26, -13, 5), (18, 5, 16), m["dark_iron"])
+    mesh.add_cylinder("CableDrum_Brass_Winder", (-26, 0, 5), 8.0, 22, m["brass"], "y", 16)
+
+    mesh.add_cylinder("LauncherBody_DarkIron_PressureTube", (5, 0, 3), 8.5, 32, m["dark_iron"], "x", 18)
+    mesh.add_cylinder("LauncherBody_Brass_RearCollar", (-10, 0, 3), 9.4, 4, m["brass"], "x", 18)
+    mesh.add_cylinder("LauncherBody_Brass_FrontCollar", (21, 0, 3), 9.4, 5, m["brass"], "x", 18)
+    mesh.add_box("LauncherBody_DarkIron_TopPlate", (6, 0, 14), (26, 11, 4), m["dark_iron"])
+    mesh.add_diamond("Aetherium_TensionLens_Blue", (2, -10, 5), (6, 3, 8), m["aetherium"])
+
+    mesh.add_cylinder("HookNeck_DarkIron_ForwardShaft", (34, 0, 3), 4.8, 22, m["dark_iron"], "x", 14)
+    mesh.add_cylinder("HookHub_Brass_TripleClawMount", (46, 0, 3), 9.0, 8, m["brass"], "x", 18)
+    mesh.add_cylinder("HookHub_DarkIron_CenterPin", (50, 0, 3), 4.0, 10, m["dark_iron"], "x", 12)
+
+    add_trapezoid_prism(
+        mesh,
+        "HookClaw_DarkIron_CenterForward",
+        49,
+        74,
+        4.0,
+        2.0,
+        2.8,
+        3,
+        m["dark_iron"],
+    )
+    mesh.add_box("HookClaw_DarkIron_LeftArm", (58, 11, 3), (24, 5, 6), m["dark_iron"])
+    mesh.add_box("HookClaw_DarkIron_LeftTip", (69, 17, 3), (8, 11, 8), m["dark_iron"])
+    mesh.add_box("HookClaw_DarkIron_RightArm", (58, -11, 3), (24, 5, 6), m["dark_iron"])
+    mesh.add_box("HookClaw_DarkIron_RightTip", (69, -17, 3), (8, 11, 8), m["dark_iron"])
+    mesh.add_box("HookClaw_DarkIron_TopArm", (57, 0, 13), (23, 6, 5), m["dark_iron"])
+    mesh.add_box("HookClaw_DarkIron_TopTip", (68, 0, 20), (8, 8, 12), m["dark_iron"])
+
+    mesh.add_box("SocketMarker_Muzzle", (76, 0, 3), (3, 3, 3), m["aetherium"])
+    mesh.add_box("SocketMarker_Cable", (-54, 0, 0), (3, 3, 3), m["aetherium"])
+    mesh.add_box("UCX_SM_MKG_GrappleHook_A01_00", (10, 0, 4), (132, 50, 48), m["stone"])
+    return mesh
+
+
 def multi_tool() -> Mesh:
     mesh = Mesh("SM_MKG_MultiTool_A01")
     m = create_common_materials(mesh)
@@ -397,6 +450,11 @@ STATIC_ASSETS = [
         "Kits/Mekgineer/Armory/SM_MKG_MultiTool_A01",
         multi_tool,
         "/Game/Aerathea/Props/Mekgineer/Armory/SM_MKG_MultiTool_A01",
+    ),
+    StaticAssetBuild(
+        "Kits/Mekgineer/Armory/SM_MKG_GrappleHook_A01",
+        grapple_hook,
+        "/Game/Aerathea/Props/Mekgineer/Armory/SM_MKG_GrappleHook_A01",
     ),
     StaticAssetBuild(
         "Kits/Mekgineer/Armory/SM_MKG_SpikeDrill_A01",
@@ -899,11 +957,25 @@ def build_gryphon_base() -> None:
     print(f"Exported {export_path.relative_to(ROOT)}")
 
 
+def selected_asset_names() -> set[str]:
+    raw = os.environ.get("AET_BUILD_ASSETS", "")
+    return {part.strip() for part in raw.split(",") if part.strip()}
+
+
 def main() -> None:
+    selected = selected_asset_names()
+    known = {asset.name for asset in STATIC_ASSETS} | {"SK_GNM_Base_A01", "SK_CRE_Gryphon_A01"}
+    unknown = selected - known
+    if unknown:
+        raise RuntimeError(f"Unknown AET_BUILD_ASSETS entries: {', '.join(sorted(unknown))}")
+
     for asset in STATIC_ASSETS:
-        export_static_asset(asset)
-    build_gnome_base()
-    build_gryphon_base()
+        if not selected or asset.name in selected:
+            export_static_asset(asset)
+    if not selected or "SK_GNM_Base_A01" in selected:
+        build_gnome_base()
+    if not selected or "SK_CRE_Gryphon_A01" in selected:
+        build_gryphon_base()
 
 
 if __name__ == "__main__":

@@ -8,7 +8,7 @@
 - Parent kit: `KIT_MKG_Armory_A01`
 - Source concept: `/home/Flamestrike/Desktop/Aerathea/Aerathea Creative/ASSET CONCEPTS/Gnome Armory.png`
 - Faction/theme: Gnome / Mekgineer
-- Status: Production package and handoff ready; DCC build not started
+- Status: Blender source and FBX generated; Unreal static mesh imported with material instances, LOD0-LOD3, sockets, and startup review placement; final art pass pending
 
 Create an original Aerathea gnome/Mekgineer child asset from the armory catalog. This package keeps the compact, rugged, Aetherium-powered language established by `KIT_MKG_Armory_A01` and the first five completed child props.
 
@@ -75,6 +75,19 @@ Static mesh baseline. Equip, use, fire, throw, or impact animation belongs to ch
 - Source: `SourceAssets/Blender/Kits/Mekgineer/Armory/SM_MKG_GrappleHook_A01/`
 - Export: `SourceAssets/Exports/Kits/Mekgineer/Armory/SM_MKG_GrappleHook_A01/`
 - Unreal: `/Game/Aerathea/Props/Mekgineer/Armory/SM_MKG_GrappleHook_A01`
+
+## Implementation Status - 2026-06-27
+
+- Blender source generated at `SourceAssets/Blender/Kits/Mekgineer/Armory/SM_MKG_GrappleHook_A01/SM_MKG_GrappleHook_A01.blend`.
+- FBX export generated at `SourceAssets/Exports/Kits/Mekgineer/Armory/SM_MKG_GrappleHook_A01/SM_MKG_GrappleHook_A01.fbx`.
+- Unreal static mesh imported at `/Game/Aerathea/Props/Mekgineer/Armory/SM_MKG_GrappleHook_A01`.
+- Material instances created for Aetherium glow, brass, dark iron, leather, and stone review slots.
+- LOD0-LOD3 generated in Unreal.
+- Static mesh sockets added: `socket_muzzle`, `socket_beam`, and `socket_cable`.
+- Startup actor placed as `AET_PROD_MKG_GrappleHook_A01` for review.
+- Local import log confirms the asset, material instances, LODs, sockets, and startup placement completed.
+- Startup validation passes through `Tools/Unreal/validate_startup_scene.py` with 69 expected assets, 36 expected actors, and 25 ground tiles.
+- Startup review capture: `Saved/Automation/StartupReview/AeratheaStartupReview_GrappleHook_A01.png`.
 
 ## Quality Gate Checklist
 

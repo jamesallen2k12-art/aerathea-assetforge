@@ -45,7 +45,7 @@ Symbols must be graphic and readable at MMO camera distance. Do not rely on read
 | Child asset | Type | Purpose | Status |
 | --- | --- | --- | --- |
 | `SM_INF_BalgorothSigil_A01` | Static Mesh | large wall/floor horned crown sigil | Package needed |
-| `SM_INF_CullingTrialFloor_A01` | Static Mesh modular floor | circular proving floor with claw channels | Production package and modeling handoff ready |
+| `SM_INF_CullingTrialFloor_A01` | Static Mesh modular floor | circular proving floor with claw channels | DCC/Unreal first-pass visual review accepted; final art and VFX states pending |
 | `SM_INF_HornWingArch_A01` | Static Mesh | tall arch scaled for 9' Infernals with folded wings | Package needed |
 | `SM_INF_WorthinessAltar_A01` | Static Mesh or Blueprint | altar/platform for sacrifice judgment states | Package needed |
 | `SM_INF_AshBasin_A01` | Static Mesh/VFX hook | ash, ember, and regeneration ritual prop | Package needed |
@@ -53,9 +53,9 @@ Symbols must be graphic and readable at MMO camera distance. Do not rely on read
 | `SM_INF_TrialBanner_A01` | Static Mesh/Skeletal optional | hanging black-red cult banner | Package needed |
 | `SM_INF_BrandingStone_A01` | Static Mesh | body-brand source prop and VFX anchor | Package needed |
 | `MI_INF_CultStone_Set_A01` | Material set | basalt, ash stone, scorched red stone | Package needed |
-| `MI_INF_BrandGlowStates_A01` | Material set | inactive, smolder, active, rejected states | Package needed |
+| `MI_INF_BrandGlowStates_A01` | Material set | inactive, smolder, active, rejected states | Production package ready |
 | `VFX_INF_RegenerationBrand_A01` | VFX | restrained body/brand regen pulse | Package needed |
-| `VFX_INF_WorthinessJudgment_A01` | VFX | altar active/rejected/accepted pulse | Package needed |
+| `VFX_INF_WorthinessJudgment_A01` | VFX | altar active/rejected/accepted pulse | Production package ready |
 | `BP_INF_RitualAltar_A01` | Blueprint Actor | altar state machine and VFX/audio hooks | Blocked until mesh/material set exists |
 
 ## Scale Notes

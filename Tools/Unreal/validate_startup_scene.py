@@ -44,6 +44,7 @@ EXPECTED_ASSETS = [
     "/Game/Aerathea/Weapons/Mekgineer/SM_MKG_SparkPistol_A01",
     "/Game/Aerathea/Props/Mekgineer/Armory/SM_MKG_AetheriumGrenade_A01",
     "/Game/Aerathea/Props/Mekgineer/Armory/SM_MKG_MultiTool_A01",
+    "/Game/Aerathea/Props/Mekgineer/Armory/SM_MKG_GrappleHook_A01",
     "/Game/Aerathea/Weapons/Mekgineer/SM_MKG_SpikeDrill_A01",
     "/Game/Aerathea/Weapons/Mekgineer/SM_MKG_MonkeyWrench_A01",
     "/Game/Aerathea/Weapons/Mekgineer/SM_MKG_RatchetCleaver_A01",
@@ -89,6 +90,7 @@ EXPECTED_ACTOR_LABELS = [
     "AET_PROD_MKG_SparkPistol_A01",
     "AET_PROD_MKG_AetheriumGrenade_A01",
     "AET_PROD_MKG_MultiTool_A01",
+    "AET_PROD_MKG_GrappleHook_A01",
     "AET_PROD_MKG_SpikeDrill_A01",
     "AET_PROD_MKG_MonkeyWrench_A01",
     "AET_PROD_MKG_RatchetCleaver_A01",
@@ -134,6 +136,7 @@ EXPECTED_STATIC_MESHES = [
     "/Game/Aerathea/Weapons/Mekgineer/SM_MKG_SparkPistol_A01",
     "/Game/Aerathea/Props/Mekgineer/Armory/SM_MKG_AetheriumGrenade_A01",
     "/Game/Aerathea/Props/Mekgineer/Armory/SM_MKG_MultiTool_A01",
+    "/Game/Aerathea/Props/Mekgineer/Armory/SM_MKG_GrappleHook_A01",
     "/Game/Aerathea/Weapons/Mekgineer/SM_MKG_SpikeDrill_A01",
     "/Game/Aerathea/Weapons/Mekgineer/SM_MKG_MonkeyWrench_A01",
     "/Game/Aerathea/Weapons/Mekgineer/SM_MKG_RatchetCleaver_A01",
@@ -166,6 +169,7 @@ EXPECTED_SKELETAL_MESHES = [
 ]
 EXPECTED_LOD_STATIC_MESHES = [
     "/Game/Aerathea/Props/Mekgineer/Armory/SM_MKG_MultiTool_A01",
+    "/Game/Aerathea/Props/Mekgineer/Armory/SM_MKG_GrappleHook_A01",
     "/Game/Aerathea/Weapons/Mekgineer/SM_MKG_SpikeDrill_A01",
     "/Game/Aerathea/Weapons/Mekgineer/SM_MKG_MonkeyWrench_A01",
     "/Game/Aerathea/Weapons/Mekgineer/SM_MKG_RatchetCleaver_A01",
@@ -179,6 +183,14 @@ EXPECTED_LOD_STATIC_MESHES = [
     "/Game/Aerathea/Props/Infernals/BalgorothCult/SM_INF_CullingTrialFloor_A01",
 ]
 EXPECTED_STATIC_MESH_SOCKETS = [
+    (
+        "/Game/Aerathea/Props/Mekgineer/Armory/SM_MKG_GrappleHook_A01",
+        [
+            "socket_muzzle",
+            "socket_beam",
+            "socket_cable",
+        ],
+    ),
     (
         "/Game/Aerathea/Props/Infernals/BalgorothCult/SM_INF_CullingTrialFloor_A01",
         [
@@ -268,6 +280,7 @@ EXPECTED_RUNTIME_VISIBLE_LABELS = [
     "AET_PROD_MKG_SparkPistol_A01",
     "AET_PROD_MKG_AetheriumGrenade_A01",
     "AET_PROD_MKG_MultiTool_A01",
+    "AET_PROD_MKG_GrappleHook_A01",
     "AET_PROD_MKG_SpikeDrill_A01",
     "AET_PROD_MKG_MonkeyWrench_A01",
     "AET_PROD_MKG_RatchetCleaver_A01",
@@ -304,6 +317,7 @@ EXPECTED_BOUNDS_LIMITS = {
     "AET_PROD_Portal_A01": {"radius_max": 600.0},
     "AET_PROD_TargetDummy_A01": {"radius_max": 350.0},
     "AET_PROD_WorkshopCrate_A01": {"radius_max": 250.0},
+    "AET_PROD_MKG_GrappleHook_A01": {"radius_max": 180.0},
     "AET_PROD_GnomeBase_A01": {"radius_max": 250.0},
     "AET_PROD_CRE_Gryphon_A01": {"radius_max": 600.0},
     "AET_PROD_GiantMaleBase_A01": {
