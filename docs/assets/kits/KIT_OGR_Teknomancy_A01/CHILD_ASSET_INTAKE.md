@@ -10,6 +10,7 @@ The Ogre Teknomancy sources are collage-like kit references. They should be spli
 | --- | --- | --- | --- | --- |
 | `SM_OGR_TekCannon_A01` | Static Mesh / optional Blueprint Actor | `OgreTekShop.png`, `Ogres10.png`, `Ogres11.png` | Package needed | Massive siege cannon with orange rune barrel, reinforced wheels/base, recoil socket, and simple blocking collision. |
 | `SM_OGR_ForgeReactor_A01` | Static Mesh / Blueprint Actor | `OgreTekShop.png`, `Ogres10.png` | Package needed | Vertical forge-reactor tower with furnace windows, vent pipes, hoist points, and glow pulse option. |
+| `SM_OGR_CrudeTekPylon_A01` | Static Mesh / future Blueprint objective | `OgreTekShop.png`, `Ogres10.png`, `Ogres11.png`, `OgreTekvsGnomeMek.png` | Package ready | Battlefield pylon with overbuilt reactor column, pressure tanks, top conductors, forge-orange core, anti-Mek discharge sockets, and simple UCX collision plan. |
 | `SM_OGR_PressureTank_A01` | Static Mesh | `OgreTekShop.png`, `Ogres10.png` | Package needed | Heavy cylindrical tank with brass bands, pressure gauge, chains, and vent socket. |
 | `SM_OGR_TekWorkbench_A01` | Static Mesh | `OgreTekShop.png`, `Ogres10.png` | Package needed | Ogre-height workbench for tools, crates, hammering, and powered assemblies. |
 | `SM_OGR_PoweredHammer_A01` | Static Mesh / weapon attachment | `OgreMaleTek.png`, `OgreTekvsGnomeMek.png`, `OgreSmiths.png` | Package needed | Oversized powered hammer for `SK_OGR_Teknomancer_A01`; grip sockets and hammer-core VFX required. |

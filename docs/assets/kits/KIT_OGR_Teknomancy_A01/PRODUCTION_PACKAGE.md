@@ -2,7 +2,7 @@
 
 ## Art Direction Summary
 
-`KIT_OGR_Teknomancy_A01` is the shared prop, weapon, armor-module, and workshop kit for Ogre Teknomancy. The kit should feel like an arsenal built by passionate war-creators who understand magic and machines instinctively: massive cannons, hammer engines, pressure tanks, hoists, rune-burned plates, forge reactors, chained crates, shield barricades, and field repair rigs. It should not resemble gnome precision engineering. Ogre Teknomancy is larger, heavier, rougher, hotter, and more reckless.
+`KIT_OGR_Teknomancy_A01` is the shared prop, weapon, armor-module, and workshop kit for Ogre Teknomancy. The kit should feel like an arsenal built by passionate war-creators who understand magic and machines instinctively: massive cannons, hammer engines, pressure tanks, crude field pylons, hoists, rune-burned plates, forge reactors, chained crates, shield barricades, and field repair rigs. It should not resemble gnome precision engineering. Ogre Teknomancy is larger, heavier, rougher, hotter, and more reckless.
 
 Primary source references:
 
@@ -19,7 +19,7 @@ This kit supports `SK_OGR_Teknomancer_A01`, Ogre forge interiors, siege yards, l
 
 ## Silhouette Notes
 
-- Primary silhouettes: huge cannon barrel, squat pressure tank, heavy forge reactor, blocky hammer engine, chained workbench, shield barricade, and backpack coil rig.
+- Primary silhouettes: huge cannon barrel, squat pressure tank, heavy forge reactor, crude field pylon, blocky hammer engine, chained workbench, shield barricade, and backpack coil rig.
 - Forms should be chunky and readable, with large riveted plates and reinforced bands.
 - Use hanging chains, hoist hooks, skull plates, and banners sparingly as silhouette breaks.
 - Avoid hundreds of modeled small bolts or wires; paint and normal-map that detail.
@@ -41,7 +41,7 @@ This kit supports `SK_OGR_Teknomancer_A01`, Ogre forge interiors, siege yards, l
 
 ## Concept Image Prompt
 
-Create an original stylized fantasy MMORPG concept image of `KIT_OGR_Teknomancy_A01`, an Ogre Teknomancy prop and gear kit for the world of Aerathea. The design should emphasize giant overbuilt siege cannons, pressure tanks, forge reactors, powered hammers, massive bracer modules, chained workbenches, hoists, shield barricades, rune-burned blackened iron, crude brass, scorched leather, bone trophies, forge-orange heat, and jealous anti-gnome battlefield technology. Use hand-painted texture detail, readable shapes, baked-AO-style depth, normal-map-style surface detail, sparing emissive accents, and MMO-friendly production design. Present it as an asset board with labeled child props, scale callouts beside an Ogre body, material swatches, socket notes, and Unreal-ready modular breakdowns on a clean background. Avoid copying any existing franchise and avoid excessive micro-detail that would not translate to a mid-poly Unreal asset.
+Create an original stylized fantasy MMORPG concept image of `KIT_OGR_Teknomancy_A01`, an Ogre Teknomancy prop and gear kit for the world of Aerathea. The design should emphasize giant overbuilt siege cannons, pressure tanks, forge reactors, crude field pylons, powered hammers, massive bracer modules, chained workbenches, hoists, shield barricades, rune-burned blackened iron, crude brass, scorched leather, bone trophies, forge-orange heat, and jealous anti-gnome battlefield technology. Use hand-painted texture detail, readable shapes, baked-AO-style depth, normal-map-style surface detail, sparing emissive accents, and MMO-friendly production design. Present it as an asset board with labeled child props, scale callouts beside an Ogre body, material swatches, socket notes, and Unreal-ready modular breakdowns on a clean background. Avoid copying any existing franchise and avoid excessive micro-detail that would not translate to a mid-poly Unreal asset.
 
 ## Modeling Notes
 

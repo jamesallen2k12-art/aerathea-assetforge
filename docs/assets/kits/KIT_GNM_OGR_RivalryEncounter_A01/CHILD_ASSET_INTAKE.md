@@ -47,7 +47,7 @@ This intake routes the 2026-06-27 Gnome-vs-Ogre source concepts into reusable pr
 | `SK_OGR_Shaman_A01` | Skeletal Mesh class package | `OgreShaman.png`, `OgreShamanHut.png`, Ogre class source set | Package ready | Ogre shamanic caster with cairn-stone, hide, bone, ember/storm sockets, and ritual staff direction |
 | `SK_OGR_Necromancer_A01` | Skeletal Mesh class package | `OgreNecromancer.png`, `OgreNecropolis.png`, Ogre class source set | Package ready | Ogre necromancer with grave lantern, skull trophies, green-black VFX sockets, and necropolis material direction |
 | `SM_OGR_CairnBattleGate_A01` | Static Mesh kit | gate and battlefield framing in encounter sheets | First-pass DCC/Unreal review import complete | Ogre cairn gate/wall dressing scaled for 10-11 ft Ogres |
-| `SM_OGR_CrudeTekPylon_A01` | Static Mesh/VFX hook | Ogre Teknomancer pressure references | Package needed | Large unstable power pylon or coil for encounter objectives |
+| `SM_OGR_CrudeTekPylon_A01` | Static Mesh/VFX hook | Ogre Teknomancer pressure references | Package ready | Large unstable power pylon or coil for encounter objectives |
 | `BP_GNM_OGR_BattlefieldEncounter_A01` | Blueprint Actor | full source group | Blocked | Assembly Blueprint after first Mek, Ogre, shield, and gate children exist |
 | `SK_CRE_Manticore_Interrupt_A01` | Creature variant reference | `GnomevsOgreandManticore8.png` | Planning package ready | DCC waits for base `SK_CRE_Manticore_A01` approval/import |
 
