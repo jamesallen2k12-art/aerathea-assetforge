@@ -44,7 +44,7 @@ This intake routes the 2026-06-27 Gnome-vs-Ogre source concepts into reusable pr
 | `VFX_GNM_AetherShieldWall_A01` | Niagara/VFX | shield-wall images | First-pass placeholder VFX complete | Blue shield arc, pulse, impact ripple, and failure state |
 | `SK_OGR_Teknomancer_A01` | Skeletal Mesh | `OgreTekvsGnomeMek.png`, encounter sheets | First-pass DCC/Unreal review import complete | Ogre class opponent with crude oversized Teknomancy hardware |
 | `SK_OGR_Warrior_Rival_A01` | Skeletal Mesh | encounter sheets | First-pass DCC/Unreal review import complete | Brutal melee pressure unit using simple heavy weapons |
-| `SM_OGR_CairnBattleGate_A01` | Static Mesh kit | gate and battlefield framing in encounter sheets | Package needed | Ogre cairn gate/wall dressing scaled for 10-11 ft Ogres |
+| `SM_OGR_CairnBattleGate_A01` | Static Mesh kit | gate and battlefield framing in encounter sheets | First-pass DCC/Unreal review import complete | Ogre cairn gate/wall dressing scaled for 10-11 ft Ogres |
 | `SM_OGR_CrudeTekPylon_A01` | Static Mesh/VFX hook | Ogre Teknomancer pressure references | Package needed | Large unstable power pylon or coil for encounter objectives |
 | `BP_GNM_OGR_BattlefieldEncounter_A01` | Blueprint Actor | full source group | Blocked | Assembly Blueprint after first Mek, Ogre, shield, and gate children exist |
 | `SK_CRE_Manticore_Interrupt_A01` | Creature variant reference | `GnomevsOgreandManticore8.png` | Reference only | Do not build until base Manticore package direction is approved |
@@ -62,7 +62,7 @@ Start with `BP_GNM_HeavyMekShieldwall_A01` as a controlled technical concept pac
 
 - `KIT_GNM_IonaSiegebreaker_A01` should own named hero-pilot and hero heavy Mek decisions.
 - `SK_OGR_Base_A01` should own Ogre base body proportions before final `SK_OGR_Teknomancer_A01` sculpt.
-- `KIT_OGR_CairnFortifications_A01` should own reusable Ogre wall and gate modules when that package is created.
+- `SM_OGR_CairnBattleGate_A01` provides the first imported Ogre gate review module; `KIT_OGR_CairnFortifications_A01` should own expanded reusable wall, tower, and gate variants when that package is created.
 - `SK_CRE_Manticore_A01` must exist before the Manticore interrupt is more than a reference.
 
 ## Quality Gate Checklist

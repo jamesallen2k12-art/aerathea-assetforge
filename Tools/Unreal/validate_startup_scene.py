@@ -36,6 +36,7 @@ EXPECTED_ASSETS = [
     "/Game/Aerathea/Materials/M_INF_ScorchedStone_Blockout_A01",
     "/Game/Aerathea/Materials/M_INF_ObsidianIron_Blockout_A01",
     "/Game/Aerathea/Materials/M_INF_RitualGlow_Blockout_A01",
+    "/Game/Aerathea/Materials/M_OGR_CairnStone_Blockout_A01",
     "/Game/Aerathea/Materials/M_OGR_TekGlow_Blockout_A01",
     "/Game/Aerathea/Materials/M_OGR_SootedCopper_Blockout_A01",
     "/Game/Aerathea/Materials/M_GNM_Mek_DarkIron_Blockout_A01",
@@ -70,6 +71,7 @@ EXPECTED_ASSETS = [
     "/Game/Aerathea/Buildings/Common/Palisade/SM_AET_Palisade_Corner_A01",
     "/Game/Aerathea/Buildings/Common/Palisade/SM_AET_Palisade_Gate_A01",
     "/Game/Aerathea/Buildings/Common/Palisade/SM_AET_Palisade_EndCap_A01",
+    "/Game/Aerathea/Props/Ogres/CairnFortifications/SM_OGR_CairnBattleGate_A01",
     "/Game/Aerathea/Characters/Gnomes/Base/SK_GNM_Base_A01",
     "/Game/Aerathea/Characters/Gnomes/Base/SK_GNM_Base_A01_Skeleton",
     "/Game/Aerathea/Characters/Gnomes/Base/PHYS_GNM_Base_A01",
@@ -135,6 +137,7 @@ EXPECTED_ACTOR_LABELS = [
     "AET_PROD_INF_CullingTrialFloor_A01",
     "AET_PROD_OgreTeknomancer_A01",
     "AET_PROD_OgreWarrior_Rival_A01",
+    "AET_PROD_OGR_CairnBattleGate_A01",
     "AET_PROD_GNM_HeavyMek_Rivalry_A01",
     "AET_PROD_PlayerStart_Review_A01",
     "AET_PROD_Camera_Review_A01",
@@ -179,6 +182,7 @@ EXPECTED_STATIC_MESHES = [
     "/Game/Aerathea/Buildings/Common/Palisade/SM_AET_Palisade_Corner_A01",
     "/Game/Aerathea/Buildings/Common/Palisade/SM_AET_Palisade_Gate_A01",
     "/Game/Aerathea/Buildings/Common/Palisade/SM_AET_Palisade_EndCap_A01",
+    "/Game/Aerathea/Props/Ogres/CairnFortifications/SM_OGR_CairnBattleGate_A01",
     "/Game/Aerathea/Props/Infernals/BalgorothCult/SM_INF_CullingTrialFloor_A01",
 ]
 EXPECTED_SKELETAL_MESHES = [
@@ -233,6 +237,7 @@ EXPECTED_LOD_STATIC_MESHES = [
     "/Game/Aerathea/Buildings/Common/Palisade/SM_AET_Palisade_Corner_A01",
     "/Game/Aerathea/Buildings/Common/Palisade/SM_AET_Palisade_Gate_A01",
     "/Game/Aerathea/Buildings/Common/Palisade/SM_AET_Palisade_EndCap_A01",
+    "/Game/Aerathea/Props/Ogres/CairnFortifications/SM_OGR_CairnBattleGate_A01",
     "/Game/Aerathea/Props/Infernals/BalgorothCult/SM_INF_CullingTrialFloor_A01",
 ]
 EXPECTED_STATIC_MESH_SOCKETS = [
@@ -266,6 +271,24 @@ EXPECTED_STATIC_MESH_SOCKETS = [
             "stage_spawn",
             "stage_blooded",
             "stage_elder",
+        ],
+    ),
+    (
+        "/Game/Aerathea/Props/Ogres/CairnFortifications/SM_OGR_CairnBattleGate_A01",
+        [
+            "snap_wall_l",
+            "snap_wall_r",
+            "gate_center",
+            "portcullis_top",
+            "portcullis_bottom",
+            "vfx_brazier_l",
+            "vfx_brazier_r",
+            "vfx_gate_forge",
+            "vfx_skull_crest",
+            "socket_banner_l",
+            "socket_banner_r",
+            "ai_gate_defender_l",
+            "ai_gate_defender_r",
         ],
     ),
 ]
@@ -415,6 +438,7 @@ EXPECTED_RUNTIME_VISIBLE_LABELS = [
     "AET_PROD_INF_CullingTrialFloor_A01",
     "AET_PROD_OgreTeknomancer_A01",
     "AET_PROD_OgreWarrior_Rival_A01",
+    "AET_PROD_OGR_CairnBattleGate_A01",
     "AET_PROD_GNM_HeavyMek_Rivalry_A01",
     "AET_PROD_Camera_Review_A01",
     "AET_PROD_ReviewFillLight_A01",
@@ -464,6 +488,10 @@ EXPECTED_BOUNDS_LIMITS = {
     "AET_PROD_OgreWarrior_Rival_A01": {
         "extent_min": unreal.Vector(45.0, 45.0, 140.0),
         "radius_max": 760.0,
+    },
+    "AET_PROD_OGR_CairnBattleGate_A01": {
+        "extent_min": unreal.Vector(430.0, 80.0, 260.0),
+        "radius_max": 1450.0,
     },
     "AET_PROD_GNM_HeavyMek_Rivalry_A01": {
         "extent_min": unreal.Vector(45.0, 45.0, 140.0),
