@@ -1,0 +1,264 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="4200" height="1480" viewBox="0 0 4200 1480">
+<rect width="100%" height="100%" fill="#d8d0c0"/>
+<rect x="0" y="0" width="100%" height="100%" fill="#f2eadb" opacity="0.45"/>
+<text x="2100.0" y="72" font-size="62" font-family="serif" letter-spacing="12" text-anchor="middle" fill="#251f18">AERATHEA</text>
+<text x="2100.0" y="124" font-size="34" font-family="serif" letter-spacing="10" text-anchor="middle" fill="#251f18">RACE SIZE REVIEW CHART A04</text>
+<text x="30" y="105" font-size="20" font-family="serif" fill="#211d18">HEIGHT (FT)</text>
+<line x1="88" y1="1120.00" x2="4160" y2="1120.00" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="1128.00" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">0</text>
+<line x1="88" y1="1057.50" x2="4160" y2="1057.50" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="1065.50" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">1</text>
+<line x1="88" y1="995.00" x2="4160" y2="995.00" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="1003.00" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">2</text>
+<line x1="88" y1="932.50" x2="4160" y2="932.50" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="940.50" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">3</text>
+<line x1="88" y1="870.00" x2="4160" y2="870.00" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="878.00" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">4</text>
+<line x1="88" y1="807.50" x2="4160" y2="807.50" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="815.50" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">5</text>
+<line x1="88" y1="745.00" x2="4160" y2="745.00" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="753.00" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">6</text>
+<line x1="88" y1="682.50" x2="4160" y2="682.50" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="690.50" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">7</text>
+<line x1="88" y1="620.00" x2="4160" y2="620.00" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="628.00" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">8</text>
+<line x1="88" y1="557.50" x2="4160" y2="557.50" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="565.50" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">9</text>
+<line x1="88" y1="495.00" x2="4160" y2="495.00" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="503.00" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">10</text>
+<line x1="88" y1="432.50" x2="4160" y2="432.50" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="440.50" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">11</text>
+<line x1="88" y1="370.00" x2="4160" y2="370.00" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="378.00" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">12</text>
+<line x1="88" y1="307.50" x2="4160" y2="307.50" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="315.50" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">13</text>
+<line x1="88" y1="245.00" x2="4160" y2="245.00" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="253.00" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">14</text>
+<line x1="88" y1="182.50" x2="4160" y2="182.50" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="190.50" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">15</text>
+<line x1="88" y1="120.00" x2="4160" y2="120.00" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="128.00" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">16</text>
+<line x1="88" y1="1120" x2="4160" y2="1120" stroke="#2b251f" stroke-width="3"/>
+<line x1="88" y1="120" x2="88" y2="1120" stroke="#2b251f" stroke-width="3"/>
+
+    <g class="range">
+      <line x1="149.7312" y1="901.25" x2="149.7312" y2="932.5" stroke="#2d2924" stroke-width="2"/>
+      <line x1="139.7312" y1="901.25" x2="159.7312" y2="901.25" stroke="#2d2924" stroke-width="2"/>
+      <line x1="139.7312" y1="932.5" x2="159.7312" y2="932.5" stroke="#2d2924" stroke-width="2"/>
+      <text x="135" y="883.25" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">3'-3'6"</text>
+    </g>
+
+<text x="135" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Gnome (F)</text>
+<g class="badge"><circle cx="135" cy="1252" r="28" fill="#9a6a26" stroke="#3b332b" stroke-width="3"/><circle cx="135" cy="1252" r="13" fill="none" stroke="#2e5b7c" stroke-width="5"/><line x1="135" y1="1228" x2="135" y2="1237" stroke="#2e5b7c" stroke-width="4" transform="rotate(0 135 1252)"/><line x1="135" y1="1228" x2="135" y2="1237" stroke="#2e5b7c" stroke-width="4" transform="rotate(60 135 1252)"/><line x1="135" y1="1228" x2="135" y2="1237" stroke="#2e5b7c" stroke-width="4" transform="rotate(120 135 1252)"/><line x1="135" y1="1228" x2="135" y2="1237" stroke="#2e5b7c" stroke-width="4" transform="rotate(180 135 1252)"/><line x1="135" y1="1228" x2="135" y2="1237" stroke="#2e5b7c" stroke-width="4" transform="rotate(240 135 1252)"/><line x1="135" y1="1228" x2="135" y2="1237" stroke="#2e5b7c" stroke-width="4" transform="rotate(300 135 1252)"/></g>
+
+    <g class="range">
+      <line x1="296.0704" y1="870.0" x2="296.0704" y2="911.6666666666666" stroke="#2d2924" stroke-width="2"/>
+      <line x1="286.0704" y1="870.0" x2="306.0704" y2="870.0" stroke="#2d2924" stroke-width="2"/>
+      <line x1="286.0704" y1="911.6666666666666" x2="306.0704" y2="911.6666666666666" stroke="#2d2924" stroke-width="2"/>
+      <text x="280" y="852.0" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">3'4"-4'</text>
+    </g>
+
+<text x="280" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Gnome (M)</text>
+<g class="badge"><circle cx="280" cy="1252" r="28" fill="#9a6a26" stroke="#3b332b" stroke-width="3"/><circle cx="280" cy="1252" r="13" fill="none" stroke="#2e5b7c" stroke-width="5"/><line x1="280" y1="1228" x2="280" y2="1237" stroke="#2e5b7c" stroke-width="4" transform="rotate(0 280 1252)"/><line x1="280" y1="1228" x2="280" y2="1237" stroke="#2e5b7c" stroke-width="4" transform="rotate(60 280 1252)"/><line x1="280" y1="1228" x2="280" y2="1237" stroke="#2e5b7c" stroke-width="4" transform="rotate(120 280 1252)"/><line x1="280" y1="1228" x2="280" y2="1237" stroke="#2e5b7c" stroke-width="4" transform="rotate(180 280 1252)"/><line x1="280" y1="1228" x2="280" y2="1237" stroke="#2e5b7c" stroke-width="4" transform="rotate(240 280 1252)"/><line x1="280" y1="1228" x2="280" y2="1237" stroke="#2e5b7c" stroke-width="4" transform="rotate(300 280 1252)"/></g>
+
+    <g class="range">
+      <line x1="441.5168" y1="859.5833333333333" x2="441.5168" y2="901.25" stroke="#2d2924" stroke-width="2"/>
+      <line x1="431.5168" y1="859.5833333333333" x2="451.5168" y2="859.5833333333333" stroke="#2d2924" stroke-width="2"/>
+      <line x1="431.5168" y1="901.25" x2="451.5168" y2="901.25" stroke="#2d2924" stroke-width="2"/>
+      <text x="425" y="841.5833333333333" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">3'6"-4'2"</text>
+    </g>
+
+<text x="425" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Drakhar (F)</text>
+<g class="badge"><circle cx="425" cy="1252" r="28" fill="#8e8a3a" stroke="#3b332b" stroke-width="3"/><ellipse cx="425" cy="1252" rx="20" ry="12" fill="none" stroke="#d17a36" stroke-width="5"/><circle cx="425" cy="1252" r="5" fill="#d17a36"/></g>
+
+    <g class="range">
+      <line x1="587.856" y1="838.75" x2="587.856" y2="870.0" stroke="#2d2924" stroke-width="2"/>
+      <line x1="577.856" y1="838.75" x2="597.856" y2="838.75" stroke="#2d2924" stroke-width="2"/>
+      <line x1="577.856" y1="870.0" x2="597.856" y2="870.0" stroke="#2d2924" stroke-width="2"/>
+      <text x="570" y="820.75" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">4'-4'6"</text>
+    </g>
+
+<text x="570" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Drakhar (M)</text>
+<g class="badge"><circle cx="570" cy="1252" r="28" fill="#8e8a3a" stroke="#3b332b" stroke-width="3"/><ellipse cx="570" cy="1252" rx="20" ry="12" fill="none" stroke="#d17a36" stroke-width="5"/><circle cx="570" cy="1252" r="5" fill="#d17a36"/></g>
+
+    <g class="range">
+      <line x1="741.204" y1="838.75" x2="741.204" y2="859.5833333333333" stroke="#2d2924" stroke-width="2"/>
+      <line x1="731.204" y1="838.75" x2="751.204" y2="838.75" stroke="#2d2924" stroke-width="2"/>
+      <line x1="731.204" y1="859.5833333333333" x2="751.204" y2="859.5833333333333" stroke="#2d2924" stroke-width="2"/>
+      <text x="720" y="820.75" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">4'2"-4'6"</text>
+    </g>
+
+<text x="720" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Dwarf (F)</text>
+<g class="badge"><circle cx="720" cy="1252" r="28" fill="#8a6f55" stroke="#3b332b" stroke-width="3"/><path d="M 702 1264 L 720 1236 L 738 1264 Z" fill="none" stroke="#b28b38" stroke-width="5"/><path d="M 696 1266 L 744 1266" stroke="#b28b38" stroke-width="4"/></g>
+
+    <g class="range">
+      <line x1="893.436" y1="807.5" x2="893.436" y2="849.1666666666667" stroke="#2d2924" stroke-width="2"/>
+      <line x1="883.436" y1="807.5" x2="903.436" y2="807.5" stroke="#2d2924" stroke-width="2"/>
+      <line x1="883.436" y1="849.1666666666667" x2="903.436" y2="849.1666666666667" stroke="#2d2924" stroke-width="2"/>
+      <text x="870" y="789.5" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">4'4"-5'</text>
+    </g>
+
+<text x="870" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Dwarf (M)</text>
+<g class="badge"><circle cx="870" cy="1252" r="28" fill="#6d5d4f" stroke="#3b332b" stroke-width="3"/><path d="M 852 1264 L 870 1236 L 888 1264 Z" fill="none" stroke="#c28b3c" stroke-width="5"/><path d="M 846 1266 L 894 1266" stroke="#c28b3c" stroke-width="4"/></g>
+
+    <g class="range">
+      <line x1="1051.0704" y1="765.8333333333333" x2="1051.0704" y2="797.0833333333333" stroke="#2d2924" stroke-width="2"/>
+      <line x1="1041.0704" y1="765.8333333333333" x2="1061.0704" y2="765.8333333333333" stroke="#2d2924" stroke-width="2"/>
+      <line x1="1041.0704" y1="797.0833333333333" x2="1061.0704" y2="797.0833333333333" stroke="#2d2924" stroke-width="2"/>
+      <text x="1035" y="747.8333333333333" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">5'2"-5'8"</text>
+    </g>
+
+<text x="1035" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Elf (F)</text>
+<g class="badge"><circle cx="1035" cy="1252" r="28" fill="#d8d6cd" stroke="#3b332b" stroke-width="3"/><path d="M 1030 1268 C 1011 1248, 1029 1230, 1050 1234 C 1048 1254, 1041 1264, 1030 1268 Z" fill="none" stroke="#87a6c8" stroke-width="5"/></g>
+
+    <g class="range">
+      <line x1="1212.4096" y1="745.0" x2="1212.4096" y2="765.8333333333333" stroke="#2d2924" stroke-width="2"/>
+      <line x1="1202.4096" y1="745.0" x2="1222.4096" y2="745.0" stroke="#2d2924" stroke-width="2"/>
+      <line x1="1202.4096" y1="765.8333333333333" x2="1222.4096" y2="765.8333333333333" stroke="#2d2924" stroke-width="2"/>
+      <text x="1195" y="727.0" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">5'8"-6'</text>
+    </g>
+
+<text x="1195" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Elf (M)</text>
+<g class="badge"><circle cx="1195" cy="1252" r="28" fill="#c5ced0" stroke="#3b332b" stroke-width="3"/><path d="M 1190 1268 C 1171 1248, 1189 1230, 1210 1234 C 1208 1254, 1201 1264, 1190 1268 Z" fill="none" stroke="#7ea3c8" stroke-width="5"/></g>
+
+    <g class="range">
+      <line x1="1376.0704" y1="765.8333333333333" x2="1376.0704" y2="797.0833333333333" stroke="#2d2924" stroke-width="2"/>
+      <line x1="1366.0704" y1="765.8333333333333" x2="1386.0704" y2="765.8333333333333" stroke="#2d2924" stroke-width="2"/>
+      <line x1="1366.0704" y1="797.0833333333333" x2="1386.0704" y2="797.0833333333333" stroke="#2d2924" stroke-width="2"/>
+      <text x="1360" y="747.8333333333333" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">5'2"-5'8"</text>
+    </g>
+
+<text x="1360" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Dark Elf (F)</text>
+<g class="badge"><circle cx="1360" cy="1252" r="28" fill="#4f465e" stroke="#3b332b" stroke-width="3"/><circle cx="1364" cy="1252" r="17" fill="#8c62bf" opacity="0.95"/><circle cx="1372" cy="1250" r="17" fill="#4f465e"/></g>
+
+    <g class="range">
+      <line x1="1537.4096" y1="745.0" x2="1537.4096" y2="765.8333333333333" stroke="#2d2924" stroke-width="2"/>
+      <line x1="1527.4096" y1="745.0" x2="1547.4096" y2="745.0" stroke="#2d2924" stroke-width="2"/>
+      <line x1="1527.4096" y1="765.8333333333333" x2="1547.4096" y2="765.8333333333333" stroke="#2d2924" stroke-width="2"/>
+      <text x="1520" y="727.0" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">5'8"-6'</text>
+    </g>
+
+<text x="1520" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Dark Elf (M)</text>
+<g class="badge"><circle cx="1520" cy="1252" r="28" fill="#40394e" stroke="#3b332b" stroke-width="3"/><circle cx="1524" cy="1252" r="17" fill="#9a72cc" opacity="0.95"/><circle cx="1532" cy="1250" r="17" fill="#40394e"/></g>
+
+    <g class="range">
+      <line x1="1717.7664" y1="703.3333333333333" x2="1717.7664" y2="734.5833333333333" stroke="#2d2924" stroke-width="2"/>
+      <line x1="1707.7664" y1="703.3333333333333" x2="1727.7664" y2="703.3333333333333" stroke="#2d2924" stroke-width="2"/>
+      <line x1="1707.7664" y1="734.5833333333333" x2="1727.7664" y2="734.5833333333333" stroke="#2d2924" stroke-width="2"/>
+      <text x="1695" y="685.3333333333333" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">6'2"-6'8"</text>
+    </g>
+
+<text x="1695" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Orc (F)</text>
+<g class="badge"><circle cx="1695" cy="1252" r="28" fill="#6c7e3d" stroke="#3b332b" stroke-width="3"/><path d="M 1679 1248 Q 1695 1234 1711 1248 L 1705 1268 L 1685 1268 Z" fill="none" stroke="#8d4a2e" stroke-width="5"/></g>
+
+    <g class="range">
+      <line x1="1894.9984" y1="682.5" x2="1894.9984" y2="713.75" stroke="#2d2924" stroke-width="2"/>
+      <line x1="1884.9984" y1="682.5" x2="1904.9984" y2="682.5" stroke="#2d2924" stroke-width="2"/>
+      <line x1="1884.9984" y1="713.75" x2="1904.9984" y2="713.75" stroke="#2d2924" stroke-width="2"/>
+      <text x="1870" y="664.5" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">6'6"-7'</text>
+    </g>
+
+<text x="1870" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Orc (M)</text>
+<g class="badge"><circle cx="1870" cy="1252" r="28" fill="#617136" stroke="#3b332b" stroke-width="3"/><path d="M 1854 1248 Q 1870 1234 1886 1248 L 1880 1268 L 1860 1268 Z" fill="none" stroke="#8d4a2e" stroke-width="5"/></g>
+
+    <g class="range">
+      <line x1="2072.4096" y1="682.5" x2="2072.4096" y2="713.75" stroke="#2d2924" stroke-width="2"/>
+      <line x1="2062.4096" y1="682.5" x2="2082.4096" y2="682.5" stroke="#2d2924" stroke-width="2"/>
+      <line x1="2062.4096" y1="713.75" x2="2082.4096" y2="713.75" stroke="#2d2924" stroke-width="2"/>
+      <text x="2055" y="664.5" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">6'6"-7'</text>
+    </g>
+
+<text x="2055" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Valar (F)</text>
+<g class="badge"><circle cx="2055" cy="1252" r="28" fill="#d9dde3" stroke="#3b332b" stroke-width="3"/><polygon points="2055,1230 2061,1246 2077,1252 2061,1258 2055,1274 2049,1258 2033,1252 2049,1246" fill="none" stroke="#d6bd6a" stroke-width="5"/></g>
+
+    <g class="range">
+      <line x1="2259.6416" y1="661.6666666666667" x2="2259.6416" y2="692.9166666666667" stroke="#2d2924" stroke-width="2"/>
+      <line x1="2249.6416" y1="661.6666666666667" x2="2269.6416" y2="661.6666666666667" stroke="#2d2924" stroke-width="2"/>
+      <line x1="2249.6416" y1="692.9166666666667" x2="2269.6416" y2="692.9166666666667" stroke="#2d2924" stroke-width="2"/>
+      <text x="2240" y="643.6666666666667" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">6'10"-7'4"</text>
+    </g>
+
+<text x="2240" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Valar (M)</text>
+<g class="badge"><circle cx="2240" cy="1252" r="28" fill="#d6d7dc" stroke="#3b332b" stroke-width="3"/><polygon points="2240,1230 2246,1246 2262,1252 2246,1258 2240,1274 2234,1258 2218,1252 2234,1246" fill="none" stroke="#d6bd6a" stroke-width="5"/></g>
+
+    <g class="range">
+      <line x1="2443.3024" y1="682.5" x2="2443.3024" y2="745.0" stroke="#2d2924" stroke-width="2"/>
+      <line x1="2433.3024" y1="682.5" x2="2453.3024" y2="682.5" stroke="#2d2924" stroke-width="2"/>
+      <line x1="2433.3024" y1="745.0" x2="2453.3024" y2="745.0" stroke="#2d2924" stroke-width="2"/>
+      <text x="2425" y="664.5" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">6-7'</text>
+    </g>
+
+<text x="2425" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Basari (F)</text>
+<g class="badge"><circle cx="2425" cy="1252" r="28" fill="#b78d3c" stroke="#3b332b" stroke-width="3"/><circle cx="2425" cy="1252" r="10" fill="#f1dc93"/><line x1="2425" y1="1228" x2="2425" y2="1237" stroke="#f1dc93" stroke-width="4" transform="rotate(0 2425 1252)"/><line x1="2425" y1="1228" x2="2425" y2="1237" stroke="#f1dc93" stroke-width="4" transform="rotate(45 2425 1252)"/><line x1="2425" y1="1228" x2="2425" y2="1237" stroke="#f1dc93" stroke-width="4" transform="rotate(90 2425 1252)"/><line x1="2425" y1="1228" x2="2425" y2="1237" stroke="#f1dc93" stroke-width="4" transform="rotate(135 2425 1252)"/><line x1="2425" y1="1228" x2="2425" y2="1237" stroke="#f1dc93" stroke-width="4" transform="rotate(180 2425 1252)"/><line x1="2425" y1="1228" x2="2425" y2="1237" stroke="#f1dc93" stroke-width="4" transform="rotate(225 2425 1252)"/><line x1="2425" y1="1228" x2="2425" y2="1237" stroke="#f1dc93" stroke-width="4" transform="rotate(270 2425 1252)"/><line x1="2425" y1="1228" x2="2425" y2="1237" stroke="#f1dc93" stroke-width="4" transform="rotate(315 2425 1252)"/></g>
+
+    <g class="range">
+      <line x1="2630.5344" y1="620.0" x2="2630.5344" y2="682.5" stroke="#2d2924" stroke-width="2"/>
+      <line x1="2620.5344" y1="620.0" x2="2640.5344" y2="620.0" stroke="#2d2924" stroke-width="2"/>
+      <line x1="2620.5344" y1="682.5" x2="2640.5344" y2="682.5" stroke="#2d2924" stroke-width="2"/>
+      <text x="2610" y="602.0" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">7-8'</text>
+    </g>
+
+<text x="2610" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Basari (M)</text>
+<g class="badge"><circle cx="2610" cy="1252" r="28" fill="#a77d35" stroke="#3b332b" stroke-width="3"/><circle cx="2610" cy="1252" r="10" fill="#f1dc93"/><line x1="2610" y1="1228" x2="2610" y2="1237" stroke="#f1dc93" stroke-width="4" transform="rotate(0 2610 1252)"/><line x1="2610" y1="1228" x2="2610" y2="1237" stroke="#f1dc93" stroke-width="4" transform="rotate(45 2610 1252)"/><line x1="2610" y1="1228" x2="2610" y2="1237" stroke="#f1dc93" stroke-width="4" transform="rotate(90 2610 1252)"/><line x1="2610" y1="1228" x2="2610" y2="1237" stroke="#f1dc93" stroke-width="4" transform="rotate(135 2610 1252)"/><line x1="2610" y1="1228" x2="2610" y2="1237" stroke="#f1dc93" stroke-width="4" transform="rotate(180 2610 1252)"/><line x1="2610" y1="1228" x2="2610" y2="1237" stroke="#f1dc93" stroke-width="4" transform="rotate(225 2610 1252)"/><line x1="2610" y1="1228" x2="2610" y2="1237" stroke="#f1dc93" stroke-width="4" transform="rotate(270 2610 1252)"/><line x1="2610" y1="1228" x2="2610" y2="1237" stroke="#f1dc93" stroke-width="4" transform="rotate(315 2610 1252)"/></g>
+
+    <g class="range">
+      <line x1="2830.5344" y1="620.0" x2="2830.5344" y2="651.25" stroke="#2d2924" stroke-width="2"/>
+      <line x1="2820.5344" y1="620.0" x2="2840.5344" y2="620.0" stroke="#2d2924" stroke-width="2"/>
+      <line x1="2820.5344" y1="651.25" x2="2840.5344" y2="651.25" stroke="#2d2924" stroke-width="2"/>
+      <text x="2810" y="602.0" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">7'6"-8'</text>
+    </g>
+
+<text x="2810" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18"><tspan x="2810" dy="0">Anubisath</tspan><tspan x="2810" dy="23.1">(F)</tspan></text>
+<g class="badge"><circle cx="2810" cy="1252" r="28" fill="#25272d" stroke="#3b332b" stroke-width="3"/><path d="M 2796 1267 L 2810 1232 L 2824 1267 Z" fill="none" stroke="#d2a94b" stroke-width="5"/><path d="M 2792 1244 L 2805 1232 M 2828 1244 L 2815 1232" stroke="#d2a94b" stroke-width="5"/></g>
+
+    <g class="range">
+      <line x1="3032.9896" y1="599.1666666666666" x2="3032.9896" y2="630.4166666666667" stroke="#2d2924" stroke-width="2"/>
+      <line x1="3022.9896" y1="599.1666666666666" x2="3042.9896" y2="599.1666666666666" stroke="#2d2924" stroke-width="2"/>
+      <line x1="3022.9896" y1="630.4166666666667" x2="3042.9896" y2="630.4166666666667" stroke="#2d2924" stroke-width="2"/>
+      <text x="3010" y="581.1666666666666" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">7'10"-8'4"</text>
+    </g>
+
+<text x="3010" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18"><tspan x="3010" dy="0">Anubisath</tspan><tspan x="3010" dy="23.1">(M)</tspan></text>
+<g class="badge"><circle cx="3010" cy="1252" r="28" fill="#24262c" stroke="#3b332b" stroke-width="3"/><path d="M 2996 1267 L 3010 1232 L 3024 1267 Z" fill="none" stroke="#d2a94b" stroke-width="5"/><path d="M 2992 1244 L 3005 1232 M 3028 1244 L 3015 1232" stroke="#d2a94b" stroke-width="5"/></g>
+
+    <g class="range">
+      <line x1="3261.3376" y1="620.0" x2="3261.3376" y2="682.5" stroke="#2d2924" stroke-width="2"/>
+      <line x1="3251.3376" y1="620.0" x2="3271.3376" y2="620.0" stroke="#2d2924" stroke-width="2"/>
+      <line x1="3251.3376" y1="682.5" x2="3271.3376" y2="682.5" stroke="#2d2924" stroke-width="2"/>
+      <text x="3235" y="602.0" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">7'-8'</text>
+    </g>
+
+<text x="3235" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Minotaur (F)</text>
+<g class="badge"><circle cx="3235" cy="1252" r="28" fill="#8b6040" stroke="#3b332b" stroke-width="3"/><path d="M 3230 1264 C 3207 1250, 3210 1230, 3230 1244" fill="none" stroke="#c08a45" stroke-width="6" stroke-linecap="round"/><path d="M 3240 1264 C 3263 1250, 3260 1230, 3240 1244" fill="none" stroke="#c08a45" stroke-width="6" stroke-linecap="round"/></g>
+
+    <g class="range">
+      <line x1="3490.8016" y1="557.5" x2="3490.8016" y2="620.0" stroke="#2d2924" stroke-width="2"/>
+      <line x1="3480.8016" y1="557.5" x2="3500.8016" y2="557.5" stroke="#2d2924" stroke-width="2"/>
+      <line x1="3480.8016" y1="620.0" x2="3500.8016" y2="620.0" stroke="#2d2924" stroke-width="2"/>
+      <text x="3460" y="539.5" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">8-9'</text>
+    </g>
+
+<text x="3460" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Minotaur (M)</text>
+<g class="badge"><circle cx="3460" cy="1252" r="28" fill="#7b5134" stroke="#3b332b" stroke-width="3"/><path d="M 3455 1264 C 3432 1250, 3435 1230, 3455 1244" fill="none" stroke="#bd8540" stroke-width="6" stroke-linecap="round"/><path d="M 3465 1264 C 3488 1250, 3485 1230, 3465 1244" fill="none" stroke="#bd8540" stroke-width="6" stroke-linecap="round"/></g>
+
+    <g class="range">
+      <line x1="3763.0336" y1="182.5" x2="3763.0336" y2="245.0" stroke="#2d2924" stroke-width="2"/>
+      <line x1="3753.0336" y1="182.5" x2="3773.0336" y2="182.5" stroke="#2d2924" stroke-width="2"/>
+      <line x1="3753.0336" y1="245.0" x2="3773.0336" y2="245.0" stroke="#2d2924" stroke-width="2"/>
+      <text x="3730" y="164.5" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">14'-15'</text>
+    </g>
+
+<text x="3730" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Giant (F)</text>
+<g class="badge"><circle cx="3730" cy="1252" r="28" fill="#7890a3" stroke="#3b332b" stroke-width="3"/><path d="M 3706 1268 L 3722 1242 L 3730 1254 L 3740 1234 L 3754 1268 Z" fill="none" stroke="#d5c1a0" stroke-width="5"/></g>
+
+    <g class="range">
+      <line x1="4009.7296" y1="120.0" x2="4009.7296" y2="192.91666666666663" stroke="#2d2924" stroke-width="2"/>
+      <line x1="3999.7296" y1="120.0" x2="4019.7296" y2="120.0" stroke="#2d2924" stroke-width="2"/>
+      <line x1="3999.7296" y1="192.91666666666663" x2="4019.7296" y2="192.91666666666663" stroke="#2d2924" stroke-width="2"/>
+      <text x="3970" y="102.0" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">14'10"-16'</text>
+    </g>
+
+<text x="3970" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Giant (M)</text>
+<g class="badge"><circle cx="3970" cy="1252" r="28" fill="#6c8194" stroke="#3b332b" stroke-width="3"/><path d="M 3946 1268 L 3962 1242 L 3970 1254 L 3980 1234 L 3994 1268 Z" fill="none" stroke="#d5c1a0" stroke-width="5"/></g>
+<text x="2100.0" y="1430" font-size="22" font-family="serif" text-anchor="middle" fill="#473f34">Illustrated v4 presentation layout generated from A04 race scale data. Race groups are ordered shortest to tallest; figure tops align to maximum listed height.</text>
+</svg>

@@ -1,0 +1,564 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3800" height="1480" viewBox="0 0 3800 1480">
+<rect width="100%" height="100%" fill="#d8d0c0"/>
+<rect x="0" y="0" width="100%" height="100%" fill="#f2eadb" opacity="0.45"/>
+<text x="1900.0" y="72" font-size="62" font-family="serif" letter-spacing="12" text-anchor="middle" fill="#251f18">AERATHEA</text>
+<text x="1900.0" y="124" font-size="34" font-family="serif" letter-spacing="10" text-anchor="middle" fill="#251f18">PRECISION RACE SIZE CHART A03</text>
+<text x="30" y="105" font-size="20" font-family="serif" fill="#211d18">HEIGHT (FT)</text>
+<line x1="88" y1="1120.00" x2="3760" y2="1120.00" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="1128.00" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">0</text>
+<line x1="88" y1="1057.50" x2="3760" y2="1057.50" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="1065.50" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">1</text>
+<line x1="88" y1="995.00" x2="3760" y2="995.00" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="1003.00" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">2</text>
+<line x1="88" y1="932.50" x2="3760" y2="932.50" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="940.50" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">3</text>
+<line x1="88" y1="870.00" x2="3760" y2="870.00" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="878.00" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">4</text>
+<line x1="88" y1="807.50" x2="3760" y2="807.50" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="815.50" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">5</text>
+<line x1="88" y1="745.00" x2="3760" y2="745.00" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="753.00" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">6</text>
+<line x1="88" y1="682.50" x2="3760" y2="682.50" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="690.50" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">7</text>
+<line x1="88" y1="620.00" x2="3760" y2="620.00" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="628.00" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">8</text>
+<line x1="88" y1="557.50" x2="3760" y2="557.50" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="565.50" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">9</text>
+<line x1="88" y1="495.00" x2="3760" y2="495.00" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="503.00" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">10</text>
+<line x1="88" y1="432.50" x2="3760" y2="432.50" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="440.50" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">11</text>
+<line x1="88" y1="370.00" x2="3760" y2="370.00" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="378.00" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">12</text>
+<line x1="88" y1="307.50" x2="3760" y2="307.50" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="315.50" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">13</text>
+<line x1="88" y1="245.00" x2="3760" y2="245.00" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="253.00" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">14</text>
+<line x1="88" y1="182.50" x2="3760" y2="182.50" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="190.50" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">15</text>
+<line x1="88" y1="120.00" x2="3760" y2="120.00" stroke="#857c70" stroke-width="1" stroke-dasharray="8 8" opacity="0.55"/>
+<text x="70" y="128.00" font-size="24" font-family="serif" text-anchor="end" fill="#211d18">16</text>
+<line x1="88" y1="1120" x2="3760" y2="1120" stroke="#2b251f" stroke-width="3"/>
+<line x1="88" y1="120" x2="88" y2="1120" stroke="#2b251f" stroke-width="3"/>
+
+    <g class="range">
+      <line x1="151.0704" y1="870.0" x2="151.0704" y2="932.5" stroke="#2d2924" stroke-width="2"/>
+      <line x1="141.0704" y1="870.0" x2="161.0704" y2="870.0" stroke="#2d2924" stroke-width="2"/>
+      <line x1="141.0704" y1="932.5" x2="161.0704" y2="932.5" stroke="#2d2924" stroke-width="2"/>
+      <text x="135.0" y="852.0" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">3-4'</text>
+    </g>
+
+
+    <g class="figure">
+
+      <polygon points="124.7734375,915.0859375 115.1484375,917.4921875 125.134375,919.8984375" fill="#9a6a26" stroke="#3a3128" stroke-width="2"/><polygon points="145.2265625,915.0859375 154.8515625,917.4921875 144.865625,919.8984375" fill="#9a6a26" stroke="#3a3128" stroke-width="2"/>
+      <ellipse cx="135.0" cy="917.4921875" rx="9.865625" ry="12.03125" fill="#9a6a26" stroke="#302820" stroke-width="2"/>
+
+      <path d="M 124.8912 951.5625 L 145.1088 951.5625 L 141.9984 1039.0625 L 128.0016 1039.0625 Z" fill="#9a6a26" stroke="#302820" stroke-width="2"/>
+      <path d="M 124.8912 959.5625 L 114.7824 1029.0625" stroke="#9a6a26" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 145.1088 959.5625 L 155.2176 1029.0625" stroke="#9a6a26" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 130.3344 1039.0625 L 125.928 1112" stroke="#9a6a26" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 139.6656 1039.0625 L 144.072 1112" stroke="#9a6a26" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 126.91296 971.5625 L 142.682688 1023.0625" stroke="#2e5b7c" stroke-width="5" opacity="0.75"/>
+      <ellipse cx="125.928" cy="1116" rx="9" ry="6" fill="#2c241f"/>
+      <ellipse cx="144.072" cy="1116" rx="9" ry="6" fill="#2c241f"/>
+    </g>
+
+<text x="135.0" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Gnome</text>
+<rect x="101.0" y="1238" width="68" height="36" rx="18" fill="#9a6a26" stroke="#3b332b" stroke-width="2"/>
+
+    <g class="range">
+      <line x1="339.62505263157897" y1="859.5833333333333" x2="339.62505263157897" y2="890.8333333333334" stroke="#2d2924" stroke-width="2"/>
+      <line x1="329.62505263157897" y1="859.5833333333333" x2="349.62505263157897" y2="859.5833333333333" stroke="#2d2924" stroke-width="2"/>
+      <line x1="329.62505263157897" y1="890.8333333333334" x2="349.62505263157897" y2="890.8333333333334" stroke="#2d2924" stroke-width="2"/>
+      <text x="318.42105263157896" y="841.5833333333333" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">3'8"-4'2"</text>
+    </g>
+
+
+    <g class="figure">
+
+
+      <ellipse cx="318.42105263157896" cy="893.3841145833334" rx="11.040104166666666" ry="13.463541666666666" fill="#8a6f55" stroke="#302820" stroke-width="2"/>
+
+      <path d="M 305.08305263157894 931.5104166666667 L 331.759052631579 931.5104166666667 L 327.65505263157894 1029.4270833333335 L 309.187052631579 1029.4270833333335 Z" fill="#8a6f55" stroke="#302820" stroke-width="2"/>
+      <path d="M 305.08305263157894 939.5104166666667 L 291.745052631579 1019.4270833333335" stroke="#8a6f55" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 331.759052631579 939.5104166666667 L 345.09705263157895 1019.4270833333335" stroke="#8a6f55" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 312.26505263157895 1029.4270833333335 L 306.451052631579 1112" stroke="#8a6f55" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 324.57705263157897 1029.4270833333335 L 330.39105263157893 1112" stroke="#8a6f55" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 307.750652631579 951.5104166666667 L 328.557932631579 1013.4270833333335" stroke="#b28b38" stroke-width="5" opacity="0.75"/>
+      <ellipse cx="306.451052631579" cy="1116" rx="9" ry="6" fill="#2c241f"/>
+      <ellipse cx="330.39105263157893" cy="1116" rx="9" ry="6" fill="#2c241f"/>
+    </g>
+
+<text x="318.42105263157896" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Dwarf (F)</text>
+<rect x="284.42105263157896" y="1238" width="68" height="36" rx="18" fill="#8a6f55" stroke="#3b332b" stroke-width="2"/>
+
+    <g class="range">
+      <line x1="525.278105263158" y1="807.5" x2="525.278105263158" y2="838.75" stroke="#2d2924" stroke-width="2"/>
+      <line x1="515.278105263158" y1="807.5" x2="535.278105263158" y2="807.5" stroke="#2d2924" stroke-width="2"/>
+      <line x1="515.278105263158" y1="838.75" x2="535.278105263158" y2="838.75" stroke="#2d2924" stroke-width="2"/>
+      <text x="501.8421052631579" y="789.5" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">4'6"-5'</text>
+    </g>
+
+
+    <g class="figure">
+
+
+      <ellipse cx="501.8421052631579" cy="845.16796875" rx="13.3890625" ry="16.328125" fill="#6d5d4f" stroke="#302820" stroke-width="2"/>
+      <path d="M 492.0452302631579 854.1484375 Q 501.8421052631579 881.08984375 511.6389802631579 854.1484375" fill="#9f5d2d" opacity="0.9"/>
+      <path d="M 487.1001052631579 891.40625 L 516.5841052631579 891.40625 L 512.0481052631579 1010.15625 L 491.6361052631579 1010.15625 Z" fill="#6d5d4f" stroke="#302820" stroke-width="2"/>
+      <path d="M 487.1001052631579 899.40625 L 472.35810526315794 1000.15625" stroke="#6d5d4f" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 516.5841052631579 899.40625 L 531.326105263158 1000.15625" stroke="#6d5d4f" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 495.03810526315795 1010.15625 L 488.6121052631579 1112" stroke="#6d5d4f" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 508.6461052631579 1010.15625 L 515.0721052631579 1112" stroke="#6d5d4f" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 490.0485052631579 911.40625 L 513.046025263158 994.15625" stroke="#c28b3c" stroke-width="5" opacity="0.75"/>
+      <ellipse cx="488.6121052631579" cy="1116" rx="9" ry="6" fill="#2c241f"/>
+      <ellipse cx="515.0721052631579" cy="1116" rx="9" ry="6" fill="#2c241f"/>
+    </g>
+
+<text x="501.8421052631579" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Dwarf (M)</text>
+<rect x="467.8421052631579" y="1238" width="68" height="36" rx="18" fill="#6d5d4f" stroke="#3b332b" stroke-width="2"/>
+
+    <g class="range">
+      <line x1="702.6727578947368" y1="807.5" x2="702.6727578947368" y2="870.0" stroke="#2d2924" stroke-width="2"/>
+      <line x1="692.6727578947368" y1="807.5" x2="712.6727578947368" y2="807.5" stroke="#2d2924" stroke-width="2"/>
+      <line x1="692.6727578947368" y1="870.0" x2="712.6727578947368" y2="870.0" stroke="#2d2924" stroke-width="2"/>
+      <text x="685.2631578947369" y="789.5" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">4-5'</text>
+    </g>
+
+
+    <g class="figure">
+      <path d="M 692.8447578947369 1033.9375 C 713.3431578947369 1050.9375, 706.3231578947368 1085, 720.3631578947369 1095" fill="none" stroke="#8e8a3a" stroke-width="10" stroke-linecap="round"/>
+
+      <ellipse cx="685.2631578947369" cy="859.6328125" rx="12.684375" ry="15.46875" fill="#8e8a3a" stroke="#302820" stroke-width="2"/>
+
+      <path d="M 674.3119578947369 903.4375 L 696.2143578947368 903.4375 L 692.8447578947369 1015.9375 L 677.6815578947369 1015.9375 Z" fill="#8e8a3a" stroke="#302820" stroke-width="2"/>
+      <path d="M 674.3119578947369 911.4375 L 663.3607578947368 1005.9375" stroke="#8e8a3a" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 696.2143578947368 911.4375 L 707.1655578947369 1005.9375" stroke="#8e8a3a" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 680.2087578947369 1015.9375 L 675.4351578947369 1112" stroke="#8e8a3a" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 690.3175578947369 1015.9375 L 695.0911578947369 1112" stroke="#8e8a3a" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 676.5021978947369 923.4375 L 693.5860698947369 999.9375" stroke="#d17a36" stroke-width="5" opacity="0.75"/>
+      <ellipse cx="675.4351578947369" cy="1116" rx="9" ry="6" fill="#2c241f"/>
+      <ellipse cx="695.0911578947369" cy="1116" rx="9" ry="6" fill="#2c241f"/>
+    </g>
+
+<text x="685.2631578947369" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Drakhar</text>
+<rect x="651.2631578947369" y="1238" width="68" height="36" rx="18" fill="#8e8a3a" stroke="#3b332b" stroke-width="2"/>
+
+    <g class="range">
+      <line x1="884.7546105263158" y1="765.8333333333333" x2="884.7546105263158" y2="797.0833333333333" stroke="#2d2924" stroke-width="2"/>
+      <line x1="874.7546105263158" y1="765.8333333333333" x2="894.7546105263158" y2="765.8333333333333" stroke="#2d2924" stroke-width="2"/>
+      <line x1="874.7546105263158" y1="797.0833333333333" x2="894.7546105263158" y2="797.0833333333333" stroke="#2d2924" stroke-width="2"/>
+      <text x="868.6842105263158" y="747.8333333333333" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">5'2"-5'8"</text>
+    </g>
+
+
+    <g class="figure">
+
+      <polygon points="852.8573876096492,802.8710937499999 837.9615542763158,806.5950520833333 853.4159813596492,810.3190104166666" fill="#d8d6cd" stroke="#3a3128" stroke-width="2"/><polygon points="884.5110334429825,802.8710937499999 899.4068667763158,806.5950520833333 883.9524396929825,810.3190104166666" fill="#d8d6cd" stroke="#3a3128" stroke-width="2"/>
+      <ellipse cx="868.6842105263158" cy="806.5950520833333" rx="15.268229166666666" ry="18.619791666666668" fill="#d8d6cd" stroke="#302820" stroke-width="2"/>
+
+      <path d="M 858.5754105263159 859.3229166666666 L 878.7930105263158 859.3229166666666 L 875.6826105263158 994.7395833333333 L 861.6858105263159 994.7395833333333 Z" fill="#d8d6cd" stroke="#302820" stroke-width="2"/>
+      <path d="M 858.5754105263159 867.3229166666666 L 848.4666105263159 984.7395833333333" stroke="#d8d6cd" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 878.7930105263158 867.3229166666666 L 888.9018105263158 984.7395833333333" stroke="#d8d6cd" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 864.0186105263158 994.7395833333333 L 859.6122105263158 1112" stroke="#d8d6cd" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 873.3498105263159 994.7395833333333 L 877.7562105263158 1112" stroke="#d8d6cd" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 860.5971705263158 879.3229166666666 L 876.3668985263158 978.7395833333333" stroke="#87a6c8" stroke-width="5" opacity="0.75"/>
+      <ellipse cx="859.6122105263158" cy="1116" rx="9" ry="6" fill="#2c241f"/>
+      <ellipse cx="877.7562105263158" cy="1116" rx="9" ry="6" fill="#2c241f"/>
+    </g>
+
+<text x="868.6842105263158" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Elf (F)</text>
+<rect x="834.6842105263158" y="1238" width="68" height="36" rx="18" fill="#d8d6cd" stroke="#3b332b" stroke-width="2"/>
+
+    <g class="range">
+      <line x1="1069.5148631578948" y1="745.0" x2="1069.5148631578948" y2="765.8333333333333" stroke="#2d2924" stroke-width="2"/>
+      <line x1="1059.5148631578948" y1="745.0" x2="1079.5148631578948" y2="745.0" stroke="#2d2924" stroke-width="2"/>
+      <line x1="1059.5148631578948" y1="765.8333333333333" x2="1079.5148631578948" y2="765.8333333333333" stroke="#2d2924" stroke-width="2"/>
+      <text x="1052.1052631578948" y="727.0" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">5'8"-6'</text>
+    </g>
+
+
+    <g class="figure">
+
+      <polygon points="1035.0609923245615,778.4765625000001 1019.0193256578948,782.4869791666667 1035.6625548245615,786.4973958333334" fill="#c5ced0" stroke="#3a3128" stroke-width="2"/><polygon points="1069.149533991228,778.4765625000001 1085.1912006578948,782.4869791666667 1068.547971491228,786.4973958333334" fill="#c5ced0" stroke="#3a3128" stroke-width="2"/>
+      <ellipse cx="1052.1052631578948" cy="782.4869791666667" rx="16.442708333333332" ry="20.052083333333332" fill="#c5ced0" stroke="#302820" stroke-width="2"/>
+
+      <path d="M 1041.1540631578948 839.2708333333334 L 1063.0564631578948 839.2708333333334 L 1059.6868631578948 985.1041666666667 L 1044.5236631578948 985.1041666666667 Z" fill="#c5ced0" stroke="#302820" stroke-width="2"/>
+      <path d="M 1041.1540631578948 847.2708333333334 L 1030.2028631578949 975.1041666666667" stroke="#c5ced0" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 1063.0564631578948 847.2708333333334 L 1074.0076631578947 975.1041666666667" stroke="#c5ced0" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 1047.0508631578948 985.1041666666667 L 1042.2772631578948 1112" stroke="#c5ced0" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 1057.1596631578948 985.1041666666667 L 1061.9332631578948 1112" stroke="#c5ced0" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 1043.3443031578947 859.2708333333334 L 1060.4281751578949 969.1041666666667" stroke="#7ea3c8" stroke-width="5" opacity="0.75"/>
+      <ellipse cx="1042.2772631578948" cy="1116" rx="9" ry="6" fill="#2c241f"/>
+      <ellipse cx="1061.9332631578948" cy="1116" rx="9" ry="6" fill="#2c241f"/>
+    </g>
+
+<text x="1052.1052631578948" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Elf (M)</text>
+<rect x="1018.1052631578948" y="1238" width="68" height="36" rx="18" fill="#c5ced0" stroke="#3b332b" stroke-width="2"/>
+
+    <g class="range">
+      <line x1="1251.5967157894738" y1="765.8333333333333" x2="1251.5967157894738" y2="797.0833333333333" stroke="#2d2924" stroke-width="2"/>
+      <line x1="1241.5967157894738" y1="765.8333333333333" x2="1261.5967157894738" y2="765.8333333333333" stroke="#2d2924" stroke-width="2"/>
+      <line x1="1241.5967157894738" y1="797.0833333333333" x2="1261.5967157894738" y2="797.0833333333333" stroke="#2d2924" stroke-width="2"/>
+      <text x="1235.5263157894738" y="747.8333333333333" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">5'2"-5'8"</text>
+    </g>
+
+
+    <g class="figure">
+
+      <polygon points="1219.699492872807,802.8710937499999 1204.8036595394738,806.5950520833333 1220.258086622807,810.3190104166666" fill="#4f465e" stroke="#3a3128" stroke-width="2"/><polygon points="1251.3531387061405,802.8710937499999 1266.2489720394738,806.5950520833333 1250.7945449561405,810.3190104166666" fill="#4f465e" stroke="#3a3128" stroke-width="2"/>
+      <ellipse cx="1235.5263157894738" cy="806.5950520833333" rx="15.268229166666666" ry="18.619791666666668" fill="#4f465e" stroke="#302820" stroke-width="2"/>
+
+      <path d="M 1225.4175157894738 859.3229166666666 L 1245.6351157894737 859.3229166666666 L 1242.5247157894737 994.7395833333333 L 1228.5279157894738 994.7395833333333 Z" fill="#4f465e" stroke="#302820" stroke-width="2"/>
+      <path d="M 1225.4175157894738 867.3229166666666 L 1215.3087157894738 984.7395833333333" stroke="#4f465e" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 1245.6351157894737 867.3229166666666 L 1255.7439157894737 984.7395833333333" stroke="#4f465e" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 1230.8607157894737 994.7395833333333 L 1226.4543157894739 1112" stroke="#4f465e" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 1240.1919157894738 994.7395833333333 L 1244.5983157894736 1112" stroke="#4f465e" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 1227.4392757894739 879.3229166666666 L 1243.2090037894739 978.7395833333333" stroke="#8c62bf" stroke-width="5" opacity="0.75"/>
+      <ellipse cx="1226.4543157894739" cy="1116" rx="9" ry="6" fill="#2c241f"/>
+      <ellipse cx="1244.5983157894736" cy="1116" rx="9" ry="6" fill="#2c241f"/>
+    </g>
+
+<text x="1235.5263157894738" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Dark Elf (F)</text>
+<rect x="1201.5263157894738" y="1238" width="68" height="36" rx="18" fill="#4f465e" stroke="#3b332b" stroke-width="2"/>
+
+    <g class="range">
+      <line x1="1436.3569684210527" y1="745.0" x2="1436.3569684210527" y2="765.8333333333333" stroke="#2d2924" stroke-width="2"/>
+      <line x1="1426.3569684210527" y1="745.0" x2="1446.3569684210527" y2="745.0" stroke="#2d2924" stroke-width="2"/>
+      <line x1="1426.3569684210527" y1="765.8333333333333" x2="1446.3569684210527" y2="765.8333333333333" stroke="#2d2924" stroke-width="2"/>
+      <text x="1418.9473684210527" y="727.0" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">5'8"-6'</text>
+    </g>
+
+
+    <g class="figure">
+
+      <polygon points="1401.9030975877195,778.4765625000001 1385.8614309210527,782.4869791666667 1402.5046600877195,786.4973958333334" fill="#40394e" stroke="#3a3128" stroke-width="2"/><polygon points="1435.991639254386,778.4765625000001 1452.0333059210527,782.4869791666667 1435.390076754386,786.4973958333334" fill="#40394e" stroke="#3a3128" stroke-width="2"/>
+      <ellipse cx="1418.9473684210527" cy="782.4869791666667" rx="16.442708333333332" ry="20.052083333333332" fill="#40394e" stroke="#302820" stroke-width="2"/>
+
+      <path d="M 1407.9961684210527 839.2708333333334 L 1429.8985684210527 839.2708333333334 L 1426.5289684210527 985.1041666666667 L 1411.3657684210527 985.1041666666667 Z" fill="#40394e" stroke="#302820" stroke-width="2"/>
+      <path d="M 1407.9961684210527 847.2708333333334 L 1397.0449684210528 975.1041666666667" stroke="#40394e" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 1429.8985684210527 847.2708333333334 L 1440.8497684210527 975.1041666666667" stroke="#40394e" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 1413.8929684210527 985.1041666666667 L 1409.1193684210527 1112" stroke="#40394e" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 1424.0017684210527 985.1041666666667 L 1428.7753684210527 1112" stroke="#40394e" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 1410.1864084210526 859.2708333333334 L 1427.2702804210528 969.1041666666667" stroke="#9a72cc" stroke-width="5" opacity="0.75"/>
+      <ellipse cx="1409.1193684210527" cy="1116" rx="9" ry="6" fill="#2c241f"/>
+      <ellipse cx="1428.7753684210527" cy="1116" rx="9" ry="6" fill="#2c241f"/>
+    </g>
+
+<text x="1418.9473684210527" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Dark Elf (M)</text>
+<rect x="1384.9473684210527" y="1238" width="68" height="36" rx="18" fill="#40394e" stroke="#3b332b" stroke-width="2"/>
+
+    <g class="range">
+      <line x1="1625.1348210526317" y1="692.9166666666667" x2="1625.1348210526317" y2="724.1666666666667" stroke="#2d2924" stroke-width="2"/>
+      <line x1="1615.1348210526317" y1="692.9166666666667" x2="1635.1348210526317" y2="692.9166666666667" stroke="#2d2924" stroke-width="2"/>
+      <line x1="1615.1348210526317" y1="724.1666666666667" x2="1635.1348210526317" y2="724.1666666666667" stroke="#2d2924" stroke-width="2"/>
+      <text x="1602.3684210526317" y="674.9166666666667" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">6'4"-6'10"</text>
+    </g>
+
+
+    <g class="figure">
+
+
+      <ellipse cx="1602.3684210526317" cy="739.0924479166667" rx="18.55677083333333" ry="22.630208333333332" fill="#6c7e3d" stroke="#302820" stroke-width="2"/>
+
+      <path d="M 1588.0476210526317 803.1770833333334 L 1616.6892210526316 803.1770833333334 L 1612.2828210526318 967.7604166666667 L 1592.4540210526316 967.7604166666667 Z" fill="#6c7e3d" stroke="#302820" stroke-width="2"/>
+      <path d="M 1588.0476210526317 811.1770833333334 L 1573.7268210526317 957.7604166666667" stroke="#6c7e3d" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 1616.6892210526316 811.1770833333334 L 1631.0100210526316 957.7604166666667" stroke="#6c7e3d" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 1595.7588210526317 967.7604166666667 L 1589.5164210526316 1112" stroke="#6c7e3d" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 1608.9780210526317 967.7604166666667 L 1615.2204210526318 1112" stroke="#6c7e3d" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 1590.9117810526316 823.1770833333334 L 1613.2522290526317 951.7604166666667" stroke="#8d4a2e" stroke-width="5" opacity="0.75"/>
+      <ellipse cx="1589.5164210526316" cy="1116" rx="9" ry="6" fill="#2c241f"/>
+      <ellipse cx="1615.2204210526318" cy="1116" rx="9" ry="6" fill="#2c241f"/>
+    </g>
+
+<text x="1602.3684210526317" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Orc (F)</text>
+<rect x="1568.3684210526317" y="1238" width="68" height="36" rx="18" fill="#6c7e3d" stroke="#3b332b" stroke-width="2"/>
+
+    <g class="range">
+      <line x1="1810.7878736842106" y1="682.5" x2="1810.7878736842106" y2="713.75" stroke="#2d2924" stroke-width="2"/>
+      <line x1="1800.7878736842106" y1="682.5" x2="1820.7878736842106" y2="682.5" stroke="#2d2924" stroke-width="2"/>
+      <line x1="1800.7878736842106" y1="713.75" x2="1820.7878736842106" y2="713.75" stroke="#2d2924" stroke-width="2"/>
+      <text x="1785.7894736842106" y="664.5" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">6'6"-7'</text>
+    </g>
+
+
+    <g class="figure">
+
+
+      <ellipse cx="1785.7894736842106" cy="729.44921875" rx="19.026562499999997" ry="23.203125" fill="#617136" stroke="#302820" stroke-width="2"/>
+
+      <path d="M 1770.0646736842107 795.15625 L 1801.5142736842106 795.15625 L 1796.6758736842107 963.90625 L 1774.9030736842105 963.90625 Z" fill="#617136" stroke="#302820" stroke-width="2"/>
+      <path d="M 1770.0646736842107 803.15625 L 1754.3398736842107 953.90625" stroke="#617136" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 1801.5142736842106 803.15625 L 1817.2390736842106 953.90625" stroke="#617136" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 1778.5318736842107 963.90625 L 1771.6774736842106 1112" stroke="#617136" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 1793.0470736842105 963.90625 L 1799.9014736842107 1112" stroke="#617136" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 1773.2096336842105 815.15625 L 1797.7403216842106 947.90625" stroke="#8d4a2e" stroke-width="5" opacity="0.75"/>
+      <ellipse cx="1771.6774736842106" cy="1116" rx="9" ry="6" fill="#2c241f"/>
+      <ellipse cx="1799.9014736842107" cy="1116" rx="9" ry="6" fill="#2c241f"/>
+    </g>
+
+<text x="1785.7894736842106" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Orc (M)</text>
+<rect x="1751.7894736842106" y="1238" width="68" height="36" rx="18" fill="#617136" stroke="#3b332b" stroke-width="2"/>
+
+    <g class="range">
+      <line x1="1987.5129263157896" y1="682.5" x2="1987.5129263157896" y2="745.0" stroke="#2d2924" stroke-width="2"/>
+      <line x1="1977.5129263157896" y1="682.5" x2="1997.5129263157896" y2="682.5" stroke="#2d2924" stroke-width="2"/>
+      <line x1="1977.5129263157896" y1="745.0" x2="1997.5129263157896" y2="745.0" stroke="#2d2924" stroke-width="2"/>
+      <text x="1969.2105263157896" y="664.5" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">6-7'</text>
+    </g>
+
+
+    <g class="figure">
+
+
+      <ellipse cx="1969.2105263157896" cy="743.9140625" rx="18.321875" ry="22.34375" fill="#b78d3c" stroke="#302820" stroke-width="2"/>
+
+      <path d="M 1957.6977263157896 807.1875 L 1980.7233263157896 807.1875 L 1977.1809263157895 969.6875 L 1961.2401263157897 969.6875 Z" fill="#b78d3c" stroke="#302820" stroke-width="2"/>
+      <path d="M 1957.6977263157896 815.1875 L 1946.1849263157897 959.6875" stroke="#b78d3c" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 1980.7233263157896 815.1875 L 1992.2361263157895 959.6875" stroke="#b78d3c" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 1963.8969263157896 969.6875 L 1958.8785263157895 1112" stroke="#b78d3c" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 1974.5241263157895 969.6875 L 1979.5425263157897 1112" stroke="#b78d3c" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 1960.0002863157895 827.1875 L 1977.9602543157896 953.6875" stroke="#f1dc93" stroke-width="5" opacity="0.75"/>
+      <ellipse cx="1958.8785263157895" cy="1116" rx="9" ry="6" fill="#2c241f"/>
+      <ellipse cx="1979.5425263157897" cy="1116" rx="9" ry="6" fill="#2c241f"/>
+    </g>
+
+<text x="1969.2105263157896" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Basari (F)</text>
+<rect x="1935.2105263157896" y="1238" width="68" height="36" rx="18" fill="#b78d3c" stroke="#3b332b" stroke-width="2"/>
+
+    <g class="range">
+      <line x1="2173.1659789473683" y1="620.0" x2="2173.1659789473683" y2="682.5" stroke="#2d2924" stroke-width="2"/>
+      <line x1="2163.1659789473683" y1="620.0" x2="2183.1659789473683" y2="620.0" stroke="#2d2924" stroke-width="2"/>
+      <line x1="2163.1659789473683" y1="682.5" x2="2183.1659789473683" y2="682.5" stroke="#2d2924" stroke-width="2"/>
+      <text x="2152.6315789473683" y="602.0" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">7-8'</text>
+    </g>
+
+
+    <g class="figure">
+
+
+      <ellipse cx="2152.6315789473683" cy="686.0546875" rx="21.140625" ry="25.78125" fill="#a77d35" stroke="#302820" stroke-width="2"/>
+
+      <path d="M 2139.7147789473684 759.0625 L 2165.5483789473683 759.0625 L 2161.5739789473682 946.5625 L 2143.6891789473684 946.5625 Z" fill="#a77d35" stroke="#302820" stroke-width="2"/>
+      <path d="M 2139.7147789473684 767.0625 L 2126.7979789473684 936.5625" stroke="#a77d35" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 2165.5483789473683 767.0625 L 2178.4651789473683 936.5625" stroke="#a77d35" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 2146.6699789473682 946.5625 L 2141.039578947368 1112" stroke="#a77d35" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 2158.5931789473684 946.5625 L 2164.2235789473684 1112" stroke="#a77d35" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 2142.2981389473684 779.0625 L 2162.4483469473685 930.5625" stroke="#f1dc93" stroke-width="5" opacity="0.75"/>
+      <ellipse cx="2141.039578947368" cy="1116" rx="9" ry="6" fill="#2c241f"/>
+      <ellipse cx="2164.2235789473684" cy="1116" rx="9" ry="6" fill="#2c241f"/>
+    </g>
+
+<text x="2152.6315789473683" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Basari (M)</text>
+<rect x="2118.6315789473683" y="1238" width="68" height="36" rx="18" fill="#a77d35" stroke="#3b332b" stroke-width="2"/>
+
+    <g class="range">
+      <line x1="2353.4622315789475" y1="682.5" x2="2353.4622315789475" y2="713.75" stroke="#2d2924" stroke-width="2"/>
+      <line x1="2343.4622315789475" y1="682.5" x2="2363.4622315789475" y2="682.5" stroke="#2d2924" stroke-width="2"/>
+      <line x1="2343.4622315789475" y1="713.75" x2="2363.4622315789475" y2="713.75" stroke="#2d2924" stroke-width="2"/>
+      <text x="2336.0526315789475" y="664.5" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">6'6"-7'</text>
+    </g>
+
+
+    <g class="figure">
+
+
+      <ellipse cx="2336.0526315789475" cy="729.44921875" rx="19.026562499999997" ry="23.203125" fill="#d9dde3" stroke="#302820" stroke-width="2"/>
+
+      <path d="M 2325.1014315789475 795.15625 L 2347.0038315789475 795.15625 L 2343.6342315789475 963.90625 L 2328.4710315789475 963.90625 Z" fill="#d9dde3" stroke="#302820" stroke-width="2"/>
+      <path d="M 2325.1014315789475 803.15625 L 2314.1502315789476 953.90625" stroke="#d9dde3" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 2347.0038315789475 803.15625 L 2357.9550315789475 953.90625" stroke="#d9dde3" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 2330.9982315789475 963.90625 L 2326.2246315789475 1112" stroke="#d9dde3" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 2341.1070315789475 963.90625 L 2345.8806315789475 1112" stroke="#d9dde3" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 2327.2916715789474 815.15625 L 2344.3755435789476 947.90625" stroke="#d6bd6a" stroke-width="5" opacity="0.75"/>
+      <ellipse cx="2326.2246315789475" cy="1116" rx="9" ry="6" fill="#2c241f"/>
+      <ellipse cx="2345.8806315789475" cy="1116" rx="9" ry="6" fill="#2c241f"/>
+    </g>
+
+<text x="2336.0526315789475" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Valar (F)</text>
+<rect x="2302.0526315789475" y="1238" width="68" height="36" rx="18" fill="#d9dde3" stroke="#3b332b" stroke-width="2"/>
+
+    <g class="range">
+      <line x1="2539.1152842105266" y1="620.0" x2="2539.1152842105266" y2="661.6666666666667" stroke="#2d2924" stroke-width="2"/>
+      <line x1="2529.1152842105266" y1="620.0" x2="2549.1152842105266" y2="620.0" stroke="#2d2924" stroke-width="2"/>
+      <line x1="2529.1152842105266" y1="661.6666666666667" x2="2549.1152842105266" y2="661.6666666666667" stroke="#2d2924" stroke-width="2"/>
+      <text x="2519.4736842105267" y="602.0" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">7'4"-8'</text>
+    </g>
+
+
+    <g class="figure">
+
+
+      <ellipse cx="2519.4736842105267" cy="676.4114583333333" rx="21.610416666666666" ry="26.354166666666668" fill="#d6d7dc" stroke="#302820" stroke-width="2"/>
+
+      <path d="M 2507.1184842105267 751.0416666666666 L 2531.8288842105267 751.0416666666666 L 2528.027284210527 942.7083333333333 L 2510.9200842105265 942.7083333333333 Z" fill="#d6d7dc" stroke="#302820" stroke-width="2"/>
+      <path d="M 2507.1184842105267 759.0416666666666 L 2494.7632842105268 932.7083333333333" stroke="#d6d7dc" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 2531.8288842105267 759.0416666666666 L 2544.1840842105266 932.7083333333333" stroke="#d6d7dc" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 2513.7712842105266 942.7083333333333 L 2508.3856842105265 1112" stroke="#d6d7dc" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 2525.176084210527 942.7083333333333 L 2530.561684210527 1112" stroke="#d6d7dc" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 2509.5895242105266 771.0416666666666 L 2528.8636362105267 926.7083333333333" stroke="#d6bd6a" stroke-width="5" opacity="0.75"/>
+      <ellipse cx="2508.3856842105265" cy="1116" rx="9" ry="6" fill="#2c241f"/>
+      <ellipse cx="2530.561684210527" cy="1116" rx="9" ry="6" fill="#2c241f"/>
+    </g>
+
+<text x="2519.4736842105267" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Valar (M)</text>
+<rect x="2485.4736842105267" y="1238" width="68" height="36" rx="18" fill="#d6d7dc" stroke="#3b332b" stroke-width="2"/>
+
+    <g class="range">
+      <line x1="2729.2323368421053" y1="640.8333333333333" x2="2729.2323368421053" y2="672.0833333333333" stroke="#2d2924" stroke-width="2"/>
+      <line x1="2719.2323368421053" y1="640.8333333333333" x2="2739.2323368421053" y2="640.8333333333333" stroke="#2d2924" stroke-width="2"/>
+      <line x1="2719.2323368421053" y1="672.0833333333333" x2="2739.2323368421053" y2="672.0833333333333" stroke="#2d2924" stroke-width="2"/>
+      <text x="2702.8947368421054" y="622.8333333333333" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">7'2"-7'8"</text>
+    </g>
+
+
+    <g class="figure">
+      <path d="M 2694.5686568421056 702.4583333333333 C 2673.1587368421056 682.4583333333333, 2674.348176842105 656.4583333333333, 2691.4761128421055 676.4583333333333" fill="none" stroke="#d7c08e" stroke-width="9" stroke-linecap="round"/>
+      <path d="M 2711.2208168421053 702.4583333333333 C 2732.6307368421053 682.4583333333333, 2731.4412968421057 656.4583333333333, 2714.3133608421053 676.4583333333333" fill="none" stroke="#d7c08e" stroke-width="9" stroke-linecap="round"/>
+      <ellipse cx="2702.8947368421054" cy="707.4479166666666" rx="9.991296" ry="11.894400000000001" fill="#8b6040" stroke="#302820" stroke-width="2"/>
+      <line x1="2702.8947368421054" y1="715.7739966666667" x2="2702.8947368421054" y2="747.8958333333333" stroke="#8b6040" stroke-width="10.195199999999998" stroke-linecap="round"/>
+      <path d="M 2682.9291368421054 739.8958333333333 L 2722.8603368421054 739.8958333333333 L 2717.3379368421056 925.3125 L 2688.4515368421053 925.3125 Z" fill="#8b6040" stroke="#302820" stroke-width="2"/>
+      <path d="M 2682.9291368421054 749.8958333333333 L 2671.0347368421053 917.3125" stroke="#8b6040" stroke-width="7.646399999999999" stroke-linecap="round"/>
+      <path d="M 2722.8603368421054 749.8958333333333 L 2734.7547368421056 917.3125" stroke="#8b6040" stroke-width="7.646399999999999" stroke-linecap="round"/>
+      <path d="M 2693.5491368421053 925.3125 L 2688.4515368421053 1110" stroke="#8b6040" stroke-width="8.9208" stroke-linecap="round"/>
+      <path d="M 2712.2403368421055 925.3125 L 2717.3379368421056 1110" stroke="#8b6040" stroke-width="8.9208" stroke-linecap="round"/>
+      <path d="M 2688.9188168421056 755.8958333333333 L 2716.8706568421053 907.3125" stroke="#c08a45" stroke-width="6" opacity="0.75"/>
+      <ellipse cx="2687.6019368421053" cy="1116" rx="11.0448" ry="7" fill="#2c241f"/>
+      <ellipse cx="2718.1875368421056" cy="1116" rx="11.0448" ry="7" fill="#2c241f"/>
+    </g>
+
+<text x="2702.8947368421054" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Minotaur (F)</text>
+<rect x="2668.8947368421054" y="1238" width="68" height="36" rx="18" fill="#8b6040" stroke="#3b332b" stroke-width="2"/>
+
+    <g class="range">
+      <line x1="2917.117389473684" y1="557.5" x2="2917.117389473684" y2="620.0" stroke="#2d2924" stroke-width="2"/>
+      <line x1="2907.117389473684" y1="557.5" x2="2927.117389473684" y2="557.5" stroke="#2d2924" stroke-width="2"/>
+      <line x1="2907.117389473684" y1="620.0" x2="2927.117389473684" y2="620.0" stroke="#2d2924" stroke-width="2"/>
+      <text x="2886.315789473684" y="539.5" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">8-9'</text>
+    </g>
+
+
+    <g class="figure">
+      <path d="M 2876.5785094736843 634.75 C 2851.5397894736843 614.75, 2852.9308294736843 588.75, 2872.9618054736843 608.75" fill="none" stroke="#d7c08e" stroke-width="9" stroke-linecap="round"/>
+      <path d="M 2896.053069473684 634.75 C 2921.091789473684 614.75, 2919.700749473684 588.75, 2899.669773473684 608.75" fill="none" stroke="#d7c08e" stroke-width="9" stroke-linecap="round"/>
+      <ellipse cx="2886.315789473684" cy="647.1875" rx="11.684736" ry="13.9104" fill="#7b5134" stroke="#302820" stroke-width="2"/>
+      <line x1="2886.315789473684" y1="656.92478" x2="2886.315789473684" y2="692.375" stroke="#7b5134" stroke-width="11.923199999999998" stroke-linecap="round"/>
+      <path d="M 2862.966189473684 684.375 L 2909.665389473684 684.375 L 2903.206989473684 896.875 L 2869.424589473684 896.875 Z" fill="#7b5134" stroke="#302820" stroke-width="2"/>
+      <path d="M 2862.966189473684 694.375 L 2849.055789473684 888.875" stroke="#7b5134" stroke-width="8.942399999999997" stroke-linecap="round"/>
+      <path d="M 2909.665389473684 694.375 L 2923.5757894736844 888.875" stroke="#7b5134" stroke-width="8.942399999999997" stroke-linecap="round"/>
+      <path d="M 2875.386189473684 896.875 L 2869.424589473684 1110" stroke="#7b5134" stroke-width="10.432799999999999" stroke-linecap="round"/>
+      <path d="M 2897.245389473684 896.875 L 2903.206989473684 1110" stroke="#7b5134" stroke-width="10.432799999999999" stroke-linecap="round"/>
+      <path d="M 2869.971069473684 700.375 L 2902.660509473684 878.875" stroke="#bd8540" stroke-width="6" opacity="0.75"/>
+      <ellipse cx="2868.4309894736843" cy="1116" rx="12.916799999999999" ry="7" fill="#2c241f"/>
+      <ellipse cx="2904.200589473684" cy="1116" rx="12.916799999999999" ry="7" fill="#2c241f"/>
+    </g>
+
+<text x="2886.315789473684" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Minotaur (M)</text>
+<rect x="2852.315789473684" y="1238" width="68" height="36" rx="18" fill="#7b5134" stroke="#3b332b" stroke-width="2"/>
+
+    <g class="range">
+      <line x1="3090.2712421052634" y1="620.0" x2="3090.2712421052634" y2="682.5" stroke="#2d2924" stroke-width="2"/>
+      <line x1="3080.2712421052634" y1="620.0" x2="3100.2712421052634" y2="620.0" stroke="#2d2924" stroke-width="2"/>
+      <line x1="3080.2712421052634" y1="682.5" x2="3100.2712421052634" y2="682.5" stroke="#2d2924" stroke-width="2"/>
+      <text x="3069.7368421052633" y="602.0" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">7-8'</text>
+    </g>
+
+
+    <g class="figure">
+
+
+      <ellipse cx="3069.7368421052633" cy="686.0546875" rx="21.140625" ry="25.78125" fill="#25272d" stroke="#302820" stroke-width="2"/>
+
+      <path d="M 3056.8200421052634 759.0625 L 3082.6536421052633 759.0625 L 3078.6792421052633 946.5625 L 3060.7944421052634 946.5625 Z" fill="#25272d" stroke="#302820" stroke-width="2"/>
+      <path d="M 3056.8200421052634 767.0625 L 3043.9032421052634 936.5625" stroke="#25272d" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 3082.6536421052633 767.0625 L 3095.5704421052633 936.5625" stroke="#25272d" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 3063.7752421052633 946.5625 L 3058.1448421052633 1112" stroke="#25272d" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 3075.6984421052634 946.5625 L 3081.3288421052634 1112" stroke="#25272d" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 3059.4034021052635 779.0625 L 3079.5536101052635 930.5625" stroke="#d2a94b" stroke-width="5" opacity="0.75"/>
+      <ellipse cx="3058.1448421052633" cy="1116" rx="9" ry="6" fill="#2c241f"/>
+      <ellipse cx="3081.3288421052634" cy="1116" rx="9" ry="6" fill="#2c241f"/>
+    </g>
+
+<text x="3069.7368421052633" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18"><tspan x="3069.7368421052633" dy="0">Anubisath</tspan><tspan x="3069.7368421052633" dy="23.1">(F)</tspan></text>
+<rect x="3035.7368421052633" y="1238" width="68" height="36" rx="18" fill="#25272d" stroke="#3b332b" stroke-width="2"/>
+
+    <g class="range">
+      <line x1="3276.1474947368424" y1="557.5" x2="3276.1474947368424" y2="620.0" stroke="#2d2924" stroke-width="2"/>
+      <line x1="3266.1474947368424" y1="557.5" x2="3286.1474947368424" y2="557.5" stroke="#2d2924" stroke-width="2"/>
+      <line x1="3266.1474947368424" y1="620.0" x2="3286.1474947368424" y2="620.0" stroke="#2d2924" stroke-width="2"/>
+      <text x="3253.1578947368425" y="539.5" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">8-9'</text>
+    </g>
+
+
+    <g class="figure">
+
+
+      <ellipse cx="3253.1578947368425" cy="625.2" rx="22.139999999999997" ry="27.0" fill="#24262c" stroke="#302820" stroke-width="2"/>
+
+      <path d="M 3238.6966947368423 710.9375 L 3267.6190947368427 710.9375 L 3263.1694947368424 923.4375 L 3243.1462947368427 923.4375 Z" fill="#24262c" stroke="#302820" stroke-width="2"/>
+      <path d="M 3238.6966947368423 718.9375 L 3224.2354947368426 913.4375" stroke="#24262c" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 3267.6190947368427 718.9375 L 3282.0802947368425 913.4375" stroke="#24262c" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 3246.4834947368427 923.4375 L 3240.1798947368425 1112" stroke="#24262c" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 3259.8322947368424 923.4375 L 3266.1358947368426 1112" stroke="#24262c" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 3241.5889347368425 730.9375 L 3264.1484067368424 907.4375" stroke="#d2a94b" stroke-width="5" opacity="0.75"/>
+      <ellipse cx="3240.1798947368425" cy="1116" rx="9" ry="6" fill="#2c241f"/>
+      <ellipse cx="3266.1358947368426" cy="1116" rx="9" ry="6" fill="#2c241f"/>
+    </g>
+
+<text x="3253.1578947368425" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18"><tspan x="3253.1578947368425" dy="0">Anubisath</tspan><tspan x="3253.1578947368425" dy="23.1">(M)</tspan></text>
+<rect x="3219.1578947368425" y="1238" width="68" height="36" rx="18" fill="#24262c" stroke="#3b332b" stroke-width="2"/>
+
+    <g class="range">
+      <line x1="3469.6125473684215" y1="245.0" x2="3469.6125473684215" y2="370.0" stroke="#2d2924" stroke-width="2"/>
+      <line x1="3459.6125473684215" y1="245.0" x2="3479.6125473684215" y2="245.0" stroke="#2d2924" stroke-width="2"/>
+      <line x1="3459.6125473684215" y1="370.0" x2="3479.6125473684215" y2="370.0" stroke="#2d2924" stroke-width="2"/>
+      <text x="3436.5789473684213" y="227.0" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">12-14'</text>
+    </g>
+
+
+    <g class="figure">
+
+
+      <ellipse cx="3436.5789473684213" cy="343.95" rx="22.139999999999997" ry="27.0" fill="#7890a3" stroke="#302820" stroke-width="2"/>
+
+      <path d="M 3415.7997473684213 494.375 L 3457.358147368421 494.375 L 3450.9645473684213 819.375 L 3422.193347368421 819.375 Z" fill="#7890a3" stroke="#302820" stroke-width="2"/>
+      <path d="M 3415.7997473684213 502.375 L 3395.0205473684214 809.375" stroke="#7890a3" stroke-width="9.5904" stroke-linecap="round"/>
+      <path d="M 3457.358147368421 502.375 L 3478.137347368421 809.375" stroke="#7890a3" stroke-width="9.5904" stroke-linecap="round"/>
+      <path d="M 3426.988547368421 819.375 L 3417.930947368421 1112" stroke="#7890a3" stroke-width="10.656" stroke-linecap="round"/>
+      <path d="M 3446.1693473684213 819.375 L 3455.2269473684214 1112" stroke="#7890a3" stroke-width="10.656" stroke-linecap="round"/>
+      <path d="M 3419.955587368421 514.375 L 3452.371139368421 803.375" stroke="#d5c1a0" stroke-width="5" opacity="0.75"/>
+      <ellipse cx="3417.930947368421" cy="1116" rx="11.7216" ry="6" fill="#2c241f"/>
+      <ellipse cx="3455.2269473684214" cy="1116" rx="11.7216" ry="6" fill="#2c241f"/>
+    </g>
+
+<text x="3436.5789473684213" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Giant (F)</text>
+<rect x="3402.5789473684213" y="1238" width="68" height="36" rx="18" fill="#7890a3" stroke="#3b332b" stroke-width="2"/>
+
+    <g class="range">
+      <line x1="3659.7296" y1="120.0" x2="3659.7296" y2="307.5" stroke="#2d2924" stroke-width="2"/>
+      <line x1="3649.7296" y1="120.0" x2="3669.7296" y2="120.0" stroke="#2d2924" stroke-width="2"/>
+      <line x1="3649.7296" y1="307.5" x2="3669.7296" y2="307.5" stroke="#2d2924" stroke-width="2"/>
+      <text x="3620.0" y="102.0" font-size="24" font-family="serif" text-anchor="middle" fill="#211d18">13-16'</text>
+    </g>
+
+
+    <g class="figure">
+
+
+      <ellipse cx="3620.0" cy="250.2" rx="22.139999999999997" ry="27.0" fill="#6c8194" stroke="#302820" stroke-width="2"/>
+
+      <path d="M 3595.0088 422.1875 L 3644.9912 422.1875 L 3637.3016 784.6875 L 3602.6984 784.6875 Z" fill="#6c8194" stroke="#302820" stroke-width="2"/>
+      <path d="M 3595.0088 430.1875 L 3570.0176 774.6875" stroke="#6c8194" stroke-width="11.5344" stroke-linecap="round"/>
+      <path d="M 3644.9912 430.1875 L 3669.9824 774.6875" stroke="#6c8194" stroke-width="11.5344" stroke-linecap="round"/>
+      <path d="M 3608.4656 784.6875 L 3597.572 1112" stroke="#6c8194" stroke-width="12.816" stroke-linecap="round"/>
+      <path d="M 3631.5344 784.6875 L 3642.428 1112" stroke="#6c8194" stroke-width="12.816" stroke-linecap="round"/>
+      <path d="M 3600.00704 442.1875 L 3638.993312 768.6875" stroke="#d5c1a0" stroke-width="5" opacity="0.75"/>
+      <ellipse cx="3597.572" cy="1116" rx="14.0976" ry="6" fill="#2c241f"/>
+      <ellipse cx="3642.428" cy="1116" rx="14.0976" ry="6" fill="#2c241f"/>
+    </g>
+
+<text x="3620.0" y="1182" font-size="22" font-family="serif" text-anchor="middle" fill="#211d18">Giant (M)</text>
+<rect x="3586.0" y="1238" width="68" height="36" rx="18" fill="#6c8194" stroke="#3b332b" stroke-width="2"/>
+<text x="1900.0" y="1430" font-size="22" font-family="serif" text-anchor="middle" fill="#473f34">Generated from canonical Aerathea race scale anchors. Geometric silhouettes are scale references, not final character art.</text>
+</svg>
