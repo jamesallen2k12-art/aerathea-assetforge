@@ -4,6 +4,37 @@
 
 | Asset | Status | Package |
 | --- | --- | --- |
+| `SM_MKG_RatchetCleaver_A01` | Blender source and FBX generated, imported to Unreal, material instances and LOD0-LOD3 generated, placed in startup scene, validation passing | `docs/assets/props/SM_MKG_RatchetCleaver_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MKG_SpikeDrill_A01` | Blender source and FBX generated, imported to Unreal, material instances and LOD0-LOD3 generated, placed in startup scene, validation passing | `docs/assets/props/SM_MKG_SpikeDrill_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MKG_GearMace_A01` | Blender source and FBX generated, imported to Unreal, material instances and LOD0-LOD3 generated, placed in startup scene, validation passing | `docs/assets/props/SM_MKG_GearMace_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MKG_MonkeyWrench_A01` | Blender source and FBX generated, imported to Unreal, material instances and LOD0-LOD3 generated, placed in startup scene, validation passing | `docs/assets/props/SM_MKG_MonkeyWrench_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MKG_PowerCoupler_A01` | Production package and handoff ready | `docs/assets/props/SM_MKG_PowerCoupler_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MKG_LinkedToolRig_A01` | Production package and handoff ready | `docs/assets/props/SM_MKG_LinkedToolRig_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MKG_FoldingShield_A01` | Production package and handoff ready | `docs/assets/props/SM_MKG_FoldingShield_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MKG_MicroReactor_A01` | Production package and handoff ready | `docs/assets/props/SM_MKG_MicroReactor_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MKG_RivetSparker_A01` | Production package and handoff ready | `docs/assets/props/SM_MKG_RivetSparker_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MKG_AetherboltPistol_A01` | Production package and handoff ready | `docs/assets/props/SM_MKG_AetherboltPistol_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MKG_HeavyPistol_A01` | Production package and handoff ready | `docs/assets/props/SM_MKG_HeavyPistol_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MKG_WrenchRifle_A01` | Production package and handoff ready | `docs/assets/props/SM_MKG_WrenchRifle_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MKG_AetherRifle_A01` | Production package and handoff ready | `docs/assets/props/SM_MKG_AetherRifle_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MKG_Cogmauler_A01` | Production package and handoff ready | `docs/assets/props/SM_MKG_Cogmauler_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MKG_Geargrinder_A01` | Production package and handoff ready | `docs/assets/props/SM_MKG_Geargrinder_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MKG_GrappleHook_A01` | Production package and handoff ready | `docs/assets/props/SM_MKG_GrappleHook_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MKG_MultiTool_A01` | Blender source and FBX generated, imported to Unreal, material instances and LOD0-LOD3 generated, placed in startup scene, validation passing | `docs/assets/props/SM_MKG_MultiTool_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MKG_WeldingTorch_A01` | Production package and handoff ready | `docs/assets/props/SM_MKG_WeldingTorch_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MKG_PortableAnvil_A01` | Production package and handoff ready | `docs/assets/props/SM_MKG_PortableAnvil_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MKG_FoldingSaw_A01` | Production package and handoff ready | `docs/assets/props/SM_MKG_FoldingSaw_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MKG_FragGrenade_A01` | Production package and handoff ready | `docs/assets/props/SM_MKG_FragGrenade_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MKG_SmokeBomb_A01` | Production package and handoff ready | `docs/assets/props/SM_MKG_SmokeBomb_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MKG_StickyBomb_A01` | Production package and handoff ready | `docs/assets/props/SM_MKG_StickyBomb_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MKG_AetherPack_A01` | Production package and handoff ready | `docs/assets/props/SM_MKG_AetherPack_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MKG_ShrinkRay_A01` | Production package and handoff ready | `docs/assets/props/SM_MKG_ShrinkRay_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MKG_FieldRations_A01` | Production package and handoff ready | `docs/assets/props/SM_MKG_FieldRations_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MKG_MedKit_A01` | Production package and handoff ready | `docs/assets/props/SM_MKG_MedKit_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MKG_ToolPack_A01` | Blender source and FBX generated, imported to Unreal, material instances and LOD0-LOD3 generated, preview-fit to `SK_GNM_Base_A01` `back_pack` socket, validation passing | `docs/assets/props/SM_MKG_ToolPack_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MKG_AetheriumReactor_A01` | Production package and handoff ready | `docs/assets/props/SM_MKG_AetheriumReactor_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MKG_FieldEngine_A01` | Production package and handoff ready | `docs/assets/props/SM_MKG_FieldEngine_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MKG_RawAetheriumShard_A01` | Production package and handoff ready | `docs/assets/props/SM_MKG_RawAetheriumShard_A01/PRODUCTION_PACKAGE.md` |
 | `SM_AET_TargetDummy_A01` | Blender source and FBX generated, imported to Unreal, startup blockout replaced, validation passing | `docs/assets/props/SM_AET_TargetDummy_A01/PRODUCTION_PACKAGE.md` |
 | `SM_AET_PortalArch_A01` | Blender source and FBX generated, imported to Unreal, startup portal visual replaced, validation passing | `docs/assets/props/SM_AET_PortalArch_A01/PRODUCTION_PACKAGE.md` |
 | `SM_MKG_WorkshopPropCrate_A01` | Blender source and FBX generated, imported to Unreal, placed in startup scene, validation passing | `docs/assets/props/SM_MKG_WorkshopPropCrate_A01/PRODUCTION_PACKAGE.md` |
@@ -12,31 +43,98 @@
 | `SM_MKG_AetherCoreUnit_A01` | Blender source and FBX generated, imported to Unreal, modeling handoff ready, placed in startup scene, validation passing | `docs/assets/props/SM_MKG_AetherCoreUnit_A01/PRODUCTION_PACKAGE.md` |
 | `SM_MKG_SparkPistol_A01` | Blender source and FBX generated, imported to Unreal, modeling handoff ready, placed in startup scene, validation passing | `docs/assets/props/SM_MKG_SparkPistol_A01/PRODUCTION_PACKAGE.md` |
 | `SM_MKG_AetheriumGrenade_A01` | Blender source and FBX generated, imported to Unreal, modeling handoff ready, placed in startup scene, validation passing | `docs/assets/props/SM_MKG_AetheriumGrenade_A01/PRODUCTION_PACKAGE.md` |
+| `SM_AET_Palisade_A01` | Wall/post/corner/gate/end-cap Blender sources and FBX exports generated, imported to Unreal, material instances and LOD0-LOD3 generated, placed in startup scene, validation passing | `docs/assets/props/SM_AET_Palisade_A01/PRODUCTION_PACKAGE.md` |
+| `SM_DWR_OathkeeperHammer_A01` | Priority production package ready; DCC build not started | `docs/assets/props/SM_DWR_OathkeeperHammer_A01/PRODUCTION_PACKAGE.md` |
+| `SM_DWR_StonewallShield_A01` | Priority production package ready; DCC build not started | `docs/assets/props/SM_DWR_StonewallShield_A01/PRODUCTION_PACKAGE.md` |
+| `SM_ELV_Moonblade_A01` | Priority production package ready; DCC build not started | `docs/assets/props/SM_ELV_Moonblade_A01/PRODUCTION_PACKAGE.md` |
+| `SM_ELV_SilverleafRecurve_A01` | Priority production package ready; DCC build not started | `docs/assets/props/SM_ELV_SilverleafRecurve_A01/PRODUCTION_PACKAGE.md` |
+| `SM_ELV_MoonwardBuckler_A01` | Priority production package ready; DCC build not started | `docs/assets/props/SM_ELV_MoonwardBuckler_A01/PRODUCTION_PACKAGE.md` |
+| `SM_ELV_AetheriumLantern_A01` | Priority production package ready; DCC build not started | `docs/assets/props/SM_ELV_AetheriumLantern_A01/PRODUCTION_PACKAGE.md` |
+| `SM_DEL_DuskspiteBlade_A01` | Priority production package ready; DCC build not started | `docs/assets/props/SM_DEL_DuskspiteBlade_A01/PRODUCTION_PACKAGE.md` |
+| `SM_DEL_VeilstriderBow_A01` | Priority production package ready; DCC build not started | `docs/assets/props/SM_DEL_VeilstriderBow_A01/PRODUCTION_PACKAGE.md` |
+| `SM_DEL_AegisOfEternalDusk_A01` | Priority production package ready; DCC build not started | `docs/assets/props/SM_DEL_AegisOfEternalDusk_A01/PRODUCTION_PACKAGE.md` |
+| `SM_ORC_GreatAxe_A01` | Priority production package ready; DCC build not started | `docs/assets/props/SM_ORC_GreatAxe_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MIN_GreatAxe_A01` | Priority production package ready; DCC build not started | `docs/assets/props/SM_MIN_GreatAxe_A01/PRODUCTION_PACKAGE.md` |
+| `SM_MIN_CrushingMaul_A01` | Priority production package ready; DCC build not started | `docs/assets/props/SM_MIN_CrushingMaul_A01/PRODUCTION_PACKAGE.md` |
+| `SM_DKH_RiversindRecurve_A01` | Priority production package ready; DCC build not started | `docs/assets/props/SM_DKH_RiversindRecurve_A01/PRODUCTION_PACKAGE.md` |
+| `SM_DKH_ReedShellShield_A01` | Priority production package ready; DCC build not started | `docs/assets/props/SM_DKH_ReedShellShield_A01/PRODUCTION_PACKAGE.md` |
 
 ## Kits
 
 | Asset | Status | Package |
 | --- | --- | --- |
-| `KIT_MKG_Armory_A01` | Kit package ready, child asset intake complete, first four child packages and handoffs ready | `docs/assets/kits/KIT_MKG_Armory_A01/PRODUCTION_PACKAGE.md` |
-| `KIT_DWR_Armory_A01` | Child asset intake complete, kit production package ready | `docs/assets/kits/KIT_DWR_Armory_A01/PRODUCTION_PACKAGE.md` |
-| `KIT_ELV_Armory_A01` | Child asset intake complete, kit production package ready | `docs/assets/kits/KIT_ELV_Armory_A01/PRODUCTION_PACKAGE.md` |
-| `KIT_DEL_Armory_A01` | Child asset intake complete, kit production package ready | `docs/assets/kits/KIT_DEL_Armory_A01/PRODUCTION_PACKAGE.md` |
-| `KIT_ORC_Arsenal_A01` | Child asset intake complete, kit production package ready | `docs/assets/kits/KIT_ORC_Arsenal_A01/PRODUCTION_PACKAGE.md` |
-| `KIT_MIN_Arsenal_A01` | Child asset intake complete, kit production package ready | `docs/assets/kits/KIT_MIN_Arsenal_A01/PRODUCTION_PACKAGE.md` |
-| `KIT_DKH_FieldGear_A01` | Child asset intake complete, kit production package ready; package uses approved 4-5 ft Drakhar scale over conflicting source-sheet scale | `docs/assets/kits/KIT_DKH_FieldGear_A01/PRODUCTION_PACKAGE.md` |
+| `KIT_GNM_TinkersGear_A01` | Gear configuration production package and handoff ready; assembly waits for approved gnome base body/skeleton | `docs/assets/kits/KIT_GNM_TinkersGear_A01/PRODUCTION_PACKAGE.md` |
+| `KIT_GNM_MekgineersKit_A01` | Gear configuration production package and handoff ready; assembly waits for approved gnome base body/skeleton | `docs/assets/kits/KIT_GNM_MekgineersKit_A01/PRODUCTION_PACKAGE.md` |
+| `KIT_GNM_ForgeguardPlate_A01` | Gear configuration production package and handoff ready; assembly waits for approved gnome base body/skeleton | `docs/assets/kits/KIT_GNM_ForgeguardPlate_A01/PRODUCTION_PACKAGE.md` |
+| `KIT_MKG_Armory_A01` | Kit package ready, child asset intake complete, all catalog child production packages documented; first ten child DCC meshes imported or fit-previewed | `docs/assets/kits/KIT_MKG_Armory_A01/PRODUCTION_PACKAGE.md` |
+| `KIT_DWR_Armory_A01` | Child asset intake complete, kit production package ready; priority child package docs ready; DCC builds pending | `docs/assets/kits/KIT_DWR_Armory_A01/PRODUCTION_PACKAGE.md` |
+| `KIT_ELV_Armory_A01` | Child asset intake complete, kit production package ready; priority child package docs ready; DCC builds pending | `docs/assets/kits/KIT_ELV_Armory_A01/PRODUCTION_PACKAGE.md` |
+| `KIT_DEL_Armory_A01` | Child asset intake complete, kit production package ready; priority child package docs ready; DCC builds pending | `docs/assets/kits/KIT_DEL_Armory_A01/PRODUCTION_PACKAGE.md` |
+| `KIT_ORC_Arsenal_A01` | Child asset intake complete, kit production package ready; priority child package docs ready; DCC builds pending | `docs/assets/kits/KIT_ORC_Arsenal_A01/PRODUCTION_PACKAGE.md` |
+| `KIT_MIN_Arsenal_A01` | Child asset intake complete, kit production package ready; priority child package docs ready; DCC builds pending | `docs/assets/kits/KIT_MIN_Arsenal_A01/PRODUCTION_PACKAGE.md` |
+| `KIT_DKH_FieldGear_A01` | Child asset intake complete, kit production package ready; priority child package docs ready; DCC builds pending; package uses approved A04 Drakhar scale: females 3'6"-4'2", males 4'0"-4'6" over conflicting source-sheet scale | `docs/assets/kits/KIT_DKH_FieldGear_A01/PRODUCTION_PACKAGE.md` |
+| `KIT_ABY_ShadowFlame_A01` | Visual intake complete for Abyss/Anathema source set; hierarchy kit and first ten proposed child creature packages ready for approval review | `docs/assets/kits/KIT_ABY_ShadowFlame_A01/PRODUCTION_PACKAGE.md` |
+| `KIT_GNM_IonaSiegebreaker_A01` | Visual intake complete for `Iona.png`; named gnome hero, heavy Mek, arc cannon, and Abyss encounter package directions proposed for approval review | `docs/assets/kits/KIT_GNM_IonaSiegebreaker_A01/PRODUCTION_PACKAGE.md` |
+| `KIT_ORC_Shields_A01` | Priority production package ready; DCC build not started | `docs/assets/kits/KIT_ORC_Shields_A01/PRODUCTION_PACKAGE.md` |
+| `KIT_ORC_ShamanicTalismans_A01` | Priority production package ready; DCC build not started | `docs/assets/kits/KIT_ORC_ShamanicTalismans_A01/PRODUCTION_PACKAGE.md` |
+| `KIT_MIN_HideShields_A01` | Priority production package ready; DCC build not started | `docs/assets/kits/KIT_MIN_HideShields_A01/PRODUCTION_PACKAGE.md` |
+| `KIT_MIN_Helmets_A01` | Priority production package ready; DCC build not started | `docs/assets/kits/KIT_MIN_Helmets_A01/PRODUCTION_PACKAGE.md` |
+| `KIT_DKH_CurvedDaggers_A01` | Priority production package ready; DCC build not started | `docs/assets/kits/KIT_DKH_CurvedDaggers_A01/PRODUCTION_PACKAGE.md` |
+| `KIT_DKH_MagicTrackingCharms_A01` | Priority production package ready; DCC build not started | `docs/assets/kits/KIT_DKH_MagicTrackingCharms_A01/PRODUCTION_PACKAGE.md` |
+| `KIT_INF_BalgorothCult_A01` | Production package ready for Infernal cult symbols, ritual sites, materials, and VFX language | `docs/assets/kits/KIT_INF_BalgorothCult_A01/PRODUCTION_PACKAGE.md` |
 
 ## Characters
 
 | Asset | Status | Package |
 | --- | --- | --- |
-| `SK_GNM_Base_A01` | First race body production package ready | `docs/assets/characters/SK_GNM_Base_A01/PRODUCTION_PACKAGE.md` |
+| `SK_GNM_HelmetModule_MKG_A01` | Production package and modeling handoff ready; DCC fit waits for approved gnome base body/skeleton | `docs/assets/characters/SK_GNM_HelmetModule_MKG_A01/PRODUCTION_PACKAGE.md` |
+| `SK_GNM_ShoulderPlate_MKG_A01` | Production package and modeling handoff ready; DCC fit waits for approved gnome base body/skeleton | `docs/assets/characters/SK_GNM_ShoulderPlate_MKG_A01/PRODUCTION_PACKAGE.md` |
+| `SK_GNM_ChestRig_MKG_A01` | Production package and modeling handoff ready; DCC fit waits for approved gnome base body/skeleton | `docs/assets/characters/SK_GNM_ChestRig_MKG_A01/PRODUCTION_PACKAGE.md` |
+| `SK_GNM_Gauntlets_MKG_A01` | Production package and modeling handoff ready; DCC fit waits for approved gnome base body/skeleton | `docs/assets/characters/SK_GNM_Gauntlets_MKG_A01/PRODUCTION_PACKAGE.md` |
+| `SK_GNM_Greaves_MKG_A01` | Production package and modeling handoff ready; DCC fit waits for approved gnome base body/skeleton | `docs/assets/characters/SK_GNM_Greaves_MKG_A01/PRODUCTION_PACKAGE.md` |
+| `SK_GNM_ClimbingHarness_MKG_A01` | Production package and modeling handoff ready; DCC fit waits for approved gnome base body/skeleton | `docs/assets/characters/SK_GNM_ClimbingHarness_MKG_A01/PRODUCTION_PACKAGE.md` |
+| `SK_GNM_MekHarness_MKG_A01` | Production package and modeling handoff ready; DCC fit waits for approved gnome base body/skeleton | `docs/assets/characters/SK_GNM_MekHarness_MKG_A01/PRODUCTION_PACKAGE.md` |
+| `SK_GNM_Base_A01` | First-pass Blender source/FBX generated, imported as skeletal mesh, material instances and LOD0-LOD3 generated, sockets added, physics asset assigned, ABP created, validation passing | `docs/assets/characters/SK_GNM_Base_A01/PRODUCTION_PACKAGE.md` |
+| `SK_GIA_Base_A01` | Concept direction and first-pass DCC scale/proportion pass approved after height verification; male/female FBXs imported to Unreal, sockets/physics/ABP placeholders generated, startup validation passing; close-up visual approval pending | `docs/assets/characters/SK_GIA_Base_A01/PRODUCTION_PACKAGE.md` |
 | `SK_OGR_Base_A01` | Ogre source concept intake and base body production package ready; DCC build not started | `docs/assets/characters/SK_OGR_Base_A01/PRODUCTION_PACKAGE.md` |
+| `SK_INF_Base_A01` | First-pass Blender source/FBX generated, compact/tall adult skeletal meshes imported, material instances and LOD0-LOD3 generated, sockets/physics/ABP placeholders created, startup scale/silhouette review approved | `docs/assets/characters/SK_INF_Base_A01/PRODUCTION_PACKAGE.md` |
+| `SK_INF_Lesser_A01` | First-pass Blender source/FBX generated, lifecycle skeletal meshes imported for Spawn, 1st Kill, Blooded, Elder, Ancient; material instances and LOD0-LOD3 generated, sockets/physics/ABP placeholders created, startup scale/lifecycle silhouette review approved | `docs/assets/characters/SK_INF_Lesser_A01/PRODUCTION_PACKAGE.md` |
+| `SK_DWR_Helm_Stonebound_A01` | Priority production package ready; DCC build not started | `docs/assets/characters/SK_DWR_Helm_Stonebound_A01/PRODUCTION_PACKAGE.md` |
+
+## Creatures
+
+| Asset | Status | Package |
+| --- | --- | --- |
+| `SK_CRE_Gryphon_A01` | First-pass Blender source/FBX generated, imported as skeletal mesh, material instances and LOD0-LOD3 generated, sockets added, physics asset assigned, ABP created, wing-spread animation blockout imported, validation passing | `docs/assets/creatures/SK_CRE_Gryphon_A01/PRODUCTION_PACKAGE.md` |
+| `SK_ABY_BlackPikeTrooper_A01` | Concept direction proposed; approval pending before DCC build | `docs/assets/creatures/SK_ABY_BlackPikeTrooper_A01/PRODUCTION_PACKAGE.md` |
+| `SK_ABY_CrescentReaver_A01` | Concept direction proposed; approval pending before DCC build | `docs/assets/creatures/SK_ABY_CrescentReaver_A01/PRODUCTION_PACKAGE.md` |
+| `SK_ABY_VoidbowStalker_A01` | Concept direction proposed; approval pending before DCC build | `docs/assets/creatures/SK_ABY_VoidbowStalker_A01/PRODUCTION_PACKAGE.md` |
+| `SK_ABY_WardbreakerMage_A01` | Concept direction proposed; approval pending before DCC build | `docs/assets/creatures/SK_ABY_WardbreakerMage_A01/PRODUCTION_PACKAGE.md` |
+| `SK_ABY_BulwarkDemon_A01` | Concept direction proposed; approval pending before DCC build | `docs/assets/creatures/SK_ABY_BulwarkDemon_A01/PRODUCTION_PACKAGE.md` |
+| `SK_ABY_WingedRavager_A01` | Concept direction proposed; approval pending before DCC build | `docs/assets/creatures/SK_ABY_WingedRavager_A01/PRODUCTION_PACKAGE.md` |
+| `SK_ABY_RiftHound_A01` | Concept direction proposed; approval pending before DCC build | `docs/assets/creatures/SK_ABY_RiftHound_A01/PRODUCTION_PACKAGE.md` |
+| `SK_ABY_SiegeBrute_A01` | Concept direction proposed; approval pending before DCC build | `docs/assets/creatures/SK_ABY_SiegeBrute_A01/PRODUCTION_PACKAGE.md` |
+| `SK_ABY_CinderLord_A01` | Concept direction proposed; approval pending before DCC build | `docs/assets/creatures/SK_ABY_CinderLord_A01/PRODUCTION_PACKAGE.md` |
+| `SK_ANA_SiegeDrake_A01` | Concept direction proposed; approval pending before DCC build | `docs/assets/creatures/SK_ANA_SiegeDrake_A01/PRODUCTION_PACKAGE.md` |
+
+## Materials
+
+| Asset | Status | Package |
+| --- | --- | --- |
+| `MI_MKG_AetheriumCore_Standard_A01` | Material production package and handoff ready | `docs/assets/materials/MI_MKG_AetheriumCore_Standard_A01/PRODUCTION_PACKAGE.md` |
+| `MI_MKG_AetheriumCore_Overcharged_A01` | Material production package and handoff ready | `docs/assets/materials/MI_MKG_AetheriumCore_Overcharged_A01/PRODUCTION_PACKAGE.md` |
+| `MI_MKG_AetheriumCore_Focused_A01` | Material production package and handoff ready | `docs/assets/materials/MI_MKG_AetheriumCore_Focused_A01/PRODUCTION_PACKAGE.md` |
+| `MI_MKG_AetheriumCore_Stabilized_A01` | Material production package and handoff ready | `docs/assets/materials/MI_MKG_AetheriumCore_Stabilized_A01/PRODUCTION_PACKAGE.md` |
+| `MI_DWR_RunicGlowStates_A01` | Priority material production package ready; material authoring not started | `docs/assets/materials/MI_DWR_RunicGlowStates_A01/PRODUCTION_PACKAGE.md` |
+| `MI_DEL_ShadowArmory_Set_A01` | Priority material production package ready; material authoring not started | `docs/assets/materials/MI_DEL_ShadowArmory_Set_A01/PRODUCTION_PACKAGE.md` |
+| `MI_ORC_RunicAffinities_A01` | Priority material production package ready; material authoring not started | `docs/assets/materials/MI_ORC_RunicAffinities_A01/PRODUCTION_PACKAGE.md` |
 
 ## Blueprints
 
 | Asset | Status | Package |
 | --- | --- | --- |
-| `BP_AET_Portal_A01` | Blueprint asset reparented to `AAETPortalActor`; startup review actor uses the native portal class with imported arch/core visuals, validation passing | `docs/assets/blueprints/BP_AET_Portal_A01/PRODUCTION_PACKAGE.md` |
+| `BP_AET_Portal_A01` | Native preview state/overlap/use-cooldown behavior implemented; Blueprint asset compiled; startup validation passing | `docs/assets/blueprints/BP_AET_Portal_A01/PRODUCTION_PACKAGE.md` |
+| `BP_AET_TargetDummy_A01` | Native training hit/break/reset behavior implemented; Blueprint asset created and compiled; startup validation passing | `docs/assets/blueprints/BP_AET_TargetDummy_A01/PRODUCTION_PACKAGE.md` |
 
 ## Status Key
 

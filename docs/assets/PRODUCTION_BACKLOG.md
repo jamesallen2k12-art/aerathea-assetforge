@@ -16,16 +16,20 @@ Everything in `/home/Flamestrike/Desktop/Aerathea/Aerathea Creative/ASSET CONCEP
 
 Current scan:
 
-- 289 PNG source concept files.
+- 459 source concept files: 458 PNG files and 1 JPG file.
 - The source-file count is not the final asset count.
 - Some images are collages, catalogs, contact sheets, or multi-panel boards with many child assets.
 - Each source image must be visually inspected and expanded into child assets before it is marked complete.
+- The 2026-06-25 refresh tracks 139 live source files not yet represented in the full manifest intake table: the initial 91-file refresh plus a 48-file Giant/Blood Axe addendum. The 2026-06-26 Ogre addendum adds 31 Ogre source files and is tracked in `docs/assets/ASSET_CONCEPTS_MANIFEST.md`.
 
 Collage examples:
 
 - Armory sheets can expand into weapons, armor pieces, shields, tools, grenades, backpacks, power cores, racks, display props, and outfit configurations.
 - Portrait sheets can expand into many UI portrait assets.
 - Creature sheets can expand into multiple variants or body-part references.
+- Abyss, Anathema, demon, lord, and troop sheets can expand into hierarchy packages: lesser spawn, troops, hounds, siegers, lords, bound servitors, and boss-class entities.
+- Giant and Blood Axe sheets can expand into body/scale packages, named NPCs, warbands, armory/weapon kits, cave-town modules, nomad camps, ritual stones, gates, forge props, and settlement camouflage rules.
+- Ogre sheets can expand into body/scale packages, Warrior/Teknomancer/Shaman/Necromancer variants, Teknomancy kits, forge props, siege weapons, cairn fortifications, stone gates, barracks, necropolises, and settlement interiors.
 - Building and interior boards can expand into modular walls, doors, roofs, pillars, props, lamps, banners, collision pieces, and material sets.
 - Gnome Mek sheets can expand into multiple armor classes, weapons, mechanical limbs, backpacks, sockets, and VFX points.
 
@@ -39,19 +43,28 @@ These have production package documentation in `docs/assets/`:
 
 | Asset | Current state | Next action |
 | --- | --- | --- |
-| `SM_AET_TargetDummy_A01` | Blender source and FBX generated, imported to Unreal, startup blockout replaced, validation passing | Add `BP_AET_TargetDummy_A01` behavior after combat/damage test rules are approved |
+| `SM_AET_TargetDummy_A01` | Blender source and FBX generated, imported to Unreal, startup blockout replaced, validation passing | Keep as reusable static mesh dependency for `BP_AET_TargetDummy_A01` |
 | `SM_AET_PortalArch_A01` | Blender source and FBX generated, imported to Unreal, startup portal visual replaced, validation passing | Refine final portal materials/VFX after destination rules are approved |
-| `BP_AET_Portal_A01` | Blueprint reparented to `AAETPortalActor`; startup review actor uses native portal class, validation passing | Add trigger/VFX/audio/destination data once gameplay rules are approved |
+| `BP_AET_Portal_A01` | Native preview state, focus overlap, use-request cooldown, destination validation, and Blueprint events implemented; Blueprint compiled; startup validation passing | Add final traversal, VFX, audio, and destination registry once gameplay rules are approved |
+| `BP_AET_TargetDummy_A01` | Native training hit/break/reset behavior implemented; Blueprint asset created and compiled; startup actor replaced with Blueprint; validation passing | Add optional visual/audio/UI feedback after training interaction rules are approved |
 | `SM_MKG_WorkshopPropCrate_A01` | Blender source and FBX generated, imported to Unreal, placed in startup scene, validation passing | Use as Mekgineer material/style reference for workshop props |
 | `SM_AET_ModularGroundTile_A01` | Blender source and FBX generated, imported to Unreal, placed as 5x5 startup ground-tile layout, validation passing | Use for early scene layout and collision/material validation |
-| `KIT_MKG_Armory_A01` | Kit package ready, child asset intake complete, first four child packages, DCC meshes, handoffs, Unreal imports, and startup placements complete | Continue remaining Gnome armory child packages from the intake table |
-| `KIT_DWR_Armory_A01` | Child intake and kit production package ready | Create priority child packages for Oathkeeper hammer, Stonewall shield, Stonebound helm, and runic glow states |
-| `KIT_ELV_Armory_A01` | Child intake and kit production package ready | Create priority child packages for Moonblade, Silverleaf Recurve, Moonward buckler, and Aetherium lantern |
-| `KIT_DEL_Armory_A01` | Child intake and kit production package ready | Create priority child packages for Duskspite blade, Veilstrider bow, Aegis of Eternal Dusk, and Shadow Armory material set |
-| `KIT_ORC_Arsenal_A01` | Child intake and kit production package ready | Create priority child packages for GreatAxe A01, shields, shamanic talismans, and runic affinities |
-| `KIT_MIN_Arsenal_A01` | Child intake and kit production package ready | Create priority child packages for GreatAxe A01, CrushingMaul A01, hide shields, and helmets |
-| `KIT_DKH_FieldGear_A01` | Child intake and kit production package ready; package uses approved 4-5 ft Drakhar scale over conflicting source-sheet scale | Create priority child packages for Riversind Recurve, curved daggers, ReedShell shield, and magic tracking charms |
-| `SK_GNM_Base_A01` | First race body production package ready | Create concept sheet/modeling handoff, then build first gnome body source mesh and skeleton |
+| `KIT_MKG_Armory_A01` | Kit package ready, child asset intake complete, all catalog child production packages documented; first ten child DCC meshes/imports/startup placements or socket-fit previews complete | Next DCC child: `SM_MKG_GrappleHook_A01` for a strong hook silhouette and later cable/socket validation |
+| `KIT_DWR_Armory_A01` | Child intake and kit production package ready; priority child packages ready | Choose first DCC build from Oathkeeper hammer, Stonewall shield, Stonebound helm, or runic glow states |
+| `KIT_ELV_Armory_A01` | Child intake and kit production package ready; priority child packages ready | Choose first DCC build from Moonblade, Silverleaf Recurve, Moonward buckler, or Aetherium lantern |
+| `KIT_DEL_Armory_A01` | Child intake and kit production package ready; priority child packages ready | Choose first DCC build from Duskspite blade, Veilstrider bow, Aegis of Eternal Dusk, or Shadow Armory material set |
+| `KIT_ORC_Arsenal_A01` | Child intake and kit production package ready; priority child packages ready | Choose first DCC build from GreatAxe A01, shields, shamanic talismans, or runic affinities |
+| `KIT_MIN_Arsenal_A01` | Child intake and kit production package ready; priority child packages ready | Choose first DCC build from GreatAxe A01, CrushingMaul A01, hide shields, or helmets |
+| `KIT_DKH_FieldGear_A01` | Child intake and kit production package ready; priority child packages ready; package uses approved A04 Drakhar scale: females 3'6"-4'2", males 4'0"-4'6" over conflicting source-sheet scale | Choose first DCC build from Riversind Recurve, curved daggers, ReedShell shield, or magic tracking charms |
+| `KIT_ABY_ShadowFlame_A01` | Visual intake complete; Abyss/Anathema hierarchy, generated-lore comparison, and first ten proposed child creature packages ready for approval review | Choose which proposed Abyss or Anathema creature moves to approved DCC modeling |
+| `KIT_GNM_IonaSiegebreaker_A01` | Visual intake complete for `Iona.png`; named gnome hero, heavy Mek, twin arc cannon, and encounter child items proposed | Choose whether Iona's heavy Mek, pilot, or arc cannons should become the first approved child package |
+| `SK_GNM_Base_A01` | First-pass DCC review body/skeleton generated, imported as skeletal mesh, material instances assigned, LOD0-LOD3 generated, gear/VFX sockets added, `PHYS_GNM_Base_A01` assigned, `ABP_GNM_Base_A01` created, validation passing | Replace blockout geometry with approved sculpt/retopo, UVs, authored textures, tuned physics, and animation set |
+| `SK_GIA_Base_A01` | Giant scale superseded by A04 review data: females 14-15 ft, males 14'10"-16'0"; previous first-pass DCC/Unreal import used older scale assumptions | Rebuild or rescale Giant base after A04 scale chart is approved; do not use the current import as final hand/body scale lock |
+| `SK_OGR_Base_A01` | Source intake and production package ready for the 31-file Ogre concept set; DCC build not started | Approve base body direction, then build male/female Ogre sculpt, skeleton, sockets, and first class outfit target |
+| `SK_INF_Base_A01` | First-pass compact/tall adult Infernal DCC source and FBX exports generated, imported to Unreal as skeletal meshes with material instances, LOD0-LOD3, sockets, physics assets, ABP placeholders, and scale/silhouette review approved | Replace blockout geometry with approved sculpt/retopo, UVs, authored textures, tuned wing/tail physics, and class animation sets |
+| `SK_INF_Lesser_A01` | First-pass Lesser Infernal lifecycle DCC source and FBX exports generated for Spawn, 1st Kill, Blooded, Elder, and Ancient; imported to Unreal with material instances, LOD0-LOD3, sockets, physics assets, ABP placeholders, and lifecycle silhouette review approved | Replace blockout geometry with approved sculpt/retopo, UVs, authored textures, tuned per-stage capsules/physics, and stage animation sets |
+| `SM_AET_Palisade_A01` | Five-module DCC source set generated, imported, placed in startup scene, simple UCX collision included, material instances assigned, LOD0-LOD3 generated, validation passing | Polish final UV atlas, texture set, collision fit, and snap review in GUI |
+| `SK_CRE_Gryphon_A01` | First-pass DCC review mesh/skeleton generated, imported as skeletal mesh, material instances assigned, LOD0-LOD3 generated, creature sockets added, `PHYS_CRE_Gryphon_A01` assigned, `ABP_CRE_Gryphon_A01` created, wing-spread animation blockout imported, validation passing | Replace blockout with approved sculpt/skin/UVs, tuned physics bodies, and full animation set |
 
 ## Existing Startup Scene Blockouts
 
@@ -64,7 +77,7 @@ These exist in `L_Aerathea_Startup` as validation/blockout content, not final pr
 | `AET_BOOT_MinotaurScale_270cm` | Replace or supplement after minotaur body reference package exists |
 | `AET_BOOT_PortalArch_*` | Retired in startup scene; replaced by production portal actor using `SM_AET_PortalArch_A01` |
 | `AET_BOOT_PortalCore_Aetherium_A01` | Retired in startup scene; replaced by production portal actor core component |
-| `AET_BOOT_TargetDummy_*` | Replaced by `SM_AET_TargetDummy_A01` |
+| `AET_BOOT_TargetDummy_*` | Replaced by `BP_AET_TargetDummy_A01` using `SM_AET_TargetDummy_A01` |
 | `AET_BOOT_GroundTile_20m_A01` | Replaced by 5x5 `SM_AET_ModularGroundTile_A01` layout |
 
 ## Race Anchors Needing Production Packages
@@ -73,13 +86,19 @@ All approved races below need concept sheets, body proportion sheets, starter ou
 
 | Race | Approved anchor | Missing production packages |
 | --- | --- | --- |
-| Gnomes | Compact 3-4 ft inventors with large heads, expressive ears, sturdy legs, oversized boots, tools, goggles, brass/copper/dark iron/leather/blue Aetherium | Base body package ready in `SK_GNM_Base_A01`; concept sheet/modeling handoff, starter outfit, Mekgineer tool kit, and goggles/accessory kit still needed |
-| Dwarves | Broad dense mountain-forged weaponsmiths/runesmiths/guardians with stone, steel, brass, blue runes, fur, leather | Base body sheet, male/female body package, beard variants for males, starter armor, runesmith/weapon kit |
-| Elves | Tall graceful ancient nature/moon/star culture with living wood, silver, moonstone, silverleaf, blue-white Aetherium | Base body sheet, starter outfit, ranger kit, runesinger/moonblade kit, living-architecture material sheet |
-| Dark Elves | Elegant shadowed oath-bound culture with dark silver, obsidian, violet glow, crescent motifs | Base body sheet, starter outfit, shadowblade kit, priestess/spellbow kit, dark hall material sheet |
-| Orcs | Noble upright powerful clan culture with honor, spirituality, shamanism, disciplined warriors | Base body sheet, starter outfit, clan warrior kit, shaman kit, weapon/material sheet |
-| Minotaurs | 8-9 ft plains/lowlands strength culture, simple brutal weapons, magic resistant, hide/bone/raw iron/fur/leather | Base body sheet, starter outfit, barbarian/berserker kit, simple heavy weapon kit, tribal marking sheet |
-| Drakhar Lizardfolk | 4-5 ft desert lizardfolk obsessed with magic, Volcreon-linked, scales/bone/leather/sun-baked stone/ember/relics | Base body sheet, scale/material sheet, starter outfit, relic/magic-item kit, rogue/wizard/shaman variants |
+| Gnomes | Compact inventors with large heads, compact expressive ears that do not inflate measured height, sturdy legs, oversized boots, tools, goggles, brass/copper/dark iron/leather/blue Aetherium; females 3'0"-3'6", males 3'4"-4'0" | First-pass `SK_GNM_Base_A01` body/skeleton/physics import exists; approved sculpt/retopo, starter outfit build, and goggles/accessory mesh still needed |
+| Dwarves | Broad dense mountain-forged weaponsmiths/runesmiths/guardians with stone, steel, brass, blue runes, fur, leather; female faces clean-shaven, male dwarves have practical full beards with armor clearance; females 4'2"-4'6", males 4'4"-5'0" | Base body sheet, male/female body package, starter armor, runesmith/weapon kit |
+| Elves | Tall graceful ancient nature/moon/star culture with living wood, silver, moonstone, silverleaf, blue-white Aetherium; females 5'2"-5'8", males 5'8"-6'0" | Base body sheet, starter outfit, ranger kit, runesinger/moonblade kit, living-architecture material sheet |
+| Dark Elves | Elegant shadowed oath-bound culture with dark silver, obsidian, violet glow, crescent motifs; females 5'2"-5'8", males 5'8"-6'0" | Base body sheet, starter outfit, shadowblade kit, priestess/spellbow kit, dark hall material sheet |
+| Infernals | Mortal-descended demonic race blessed by Balgoroth, with reddish skin, required horns, large leathery wings, long thick tails, black claws, regeneration, invisible sight, natural-weapon doctrine, contempt for weakness, and Lesser Infernal culling temper; shared adult range 5'0"-9'0" pending body-type split | First-pass `SK_INF_Base_A01` and `SK_INF_Lesser_A01` DCC/Unreal scale review approved; needs final sculpt/retopo/UVs/textures, horn/wing/tail rig polish, starter class variants for warrior/rogue/hunter/mage, and Balgoroth cult material/VFX language |
+| Orcs | Noble upright powerful clan culture with honor, spirituality, shamanism, disciplined warriors; females 6'2"-6'8", males 6'6"-7'0" | Base body sheet, starter outfit, clan warrior kit, shaman kit, weapon/material sheet |
+| Minotaurs | Plains/lowlands strength culture, simple brutal weapons, magic resistant, hide/bone/raw iron/fur/leather; females 7-8 ft, males 8-9 ft | Base body sheet, starter outfit, barbarian/berserker kit, simple heavy weapon kit, tribal marking sheet |
+| Ogres | War-created, heavily muscled, very broad battlefield terrors with instinctive crude Teknomancy, shamans, necromancers, sentinels, stone cairns, defensive fortifications, and jealousy of Gnome Mekgineer creations; females 10'0"-10'6", males 10'4"-11'0" | `SK_OGR_Base_A01` package ready; needs concept sheet approval, male/female body DCC build, Teknomancer kit, Warrior/Shaman/Necromancer class packages, and cairn fortification kit |
+| Drakhar Lizardfolk | Desert lizardfolk obsessed with magic, Volcreon-linked, scales/bone/leather/sun-baked stone/ember/relics; females must read clearly female while remaining lizardfolk; females 3'6"-4'2", males 4'0"-4'6" | Base body sheet, scale/material sheet, starter outfit, relic/magic-item kit, rogue/wizard/shaman variants |
+| Giants | Remote mountain people with civilized master stoneworkers, hidden cave towns, nomadic highland bands, and the brutal Blood Axe Tribe as a hostile sub-faction; females 14-15 ft, males 14'10"-16'0" | `SK_GIA_Base_A01` package exists but its first-pass DCC/Unreal import used older scale assumptions; rebuild/rescale after A04 review approval, then proceed with Blood Axe warband kit, armory kit, and named Giant NPC packages |
+| Valar | Human-like highborn northern people, not elven/Tolkien-like; rounded human ears, strong human faces, broad athletic frames, fur-trimmed blue/silver/gold armor, cloaks, oath symbols; females 6'6"-7'0", males 6'10"-7'4" | Base body sheet, starter outfit, armory kit, settlement/material language |
+| Anubisath/Sutekh | Scale anchor established: females 7'6"-8'0", males 7'10"-8'4"; full culture/material/silhouette anchor pending | Race/culture anchor, base body sheet, starter outfit, armory kit, temple/settlement material language |
+| Basari | Scale anchor established: females 6-7 ft, males 7-8 ft; full culture/material/silhouette anchor pending | Race/culture anchor, base body sheet, starter outfit, sentinel/priestess kit, temple material language |
 
 Suggested first race package:
 
@@ -91,16 +110,17 @@ Armory concepts are not single assets. Treat each armory or gear sheet as a kit 
 
 | Source concept | Faction/theme | Required expansion |
 | --- | --- | --- |
-| `Gnome Armory.png` | Gnome/Mekgineer | Kit package and child intake complete in `KIT_MKG_Armory_A01`; next create child packages for weapons, Mek-linked gear, pistols, rifles, tools, grenades, armor modules, armor configurations, backpacks, power modules, Aetherium core variants |
-| `Dwarven Armory.png` | Dwarven | Child intake and kit production package complete in `KIT_DWR_Armory_A01`; priority child packages needed |
+| `Gnome Armory.png` | Gnome/Mekgineer | Kit package and child intake complete in `KIT_MKG_Armory_A01`; all catalog child production packages and handoffs documented; first ten DCC imports or fit-previews complete |
+| `Dwarven Armory.png` | Dwarven | Child intake and kit production package complete in `KIT_DWR_Armory_A01`; priority child package docs ready; DCC builds pending |
 | `Dwarven Armory2.png` | Dwarven | Additional armory variants and display-ready weapons/armor |
 | `Dwarven Ancestral Armor.png` | Dwarven | Hero armor set, modular armor pieces, rune/metal/fur material set |
-| `Elven Armory.png` | Elven | Child intake and kit production package complete in `KIT_ELV_Armory_A01`; priority child packages needed |
-| `Dark Elven Armory.png` | Dark Elven | Child intake and kit production package complete in `KIT_DEL_Armory_A01`; priority child packages needed |
-| `Orc Arsenal.png` | Orc | Child intake and kit production package complete in `KIT_ORC_Arsenal_A01`; priority child packages needed |
-| `Minotaur Arsenal.png` | Minotaur | Child intake and kit production package complete in `KIT_MIN_Arsenal_A01`; priority child packages needed |
-| `Drakhar Arms Relics and Field Gear.png` | Drakhar | Child intake and kit production package complete in `KIT_DKH_FieldGear_A01`; priority child packages needed; source scale conflicts with approved 4-5 ft Drakhar anchor |
+| `Elven Armory.png` | Elven | Child intake and kit production package complete in `KIT_ELV_Armory_A01`; priority child package docs ready; DCC builds pending |
+| `Dark Elven Armory.png` | Dark Elven | Child intake and kit production package complete in `KIT_DEL_Armory_A01`; priority child package docs ready; DCC builds pending |
+| `Orc Arsenal.png` | Orc | Child intake and kit production package complete in `KIT_ORC_Arsenal_A01`; priority child package docs ready; DCC builds pending |
+| `Minotaur Arsenal.png` | Minotaur | Child intake and kit production package complete in `KIT_MIN_Arsenal_A01`; priority child package docs ready; DCC builds pending |
+| `Drakhar Arms Relics and Field Gear.png` | Drakhar | Child intake and kit production package complete in `KIT_DKH_FieldGear_A01`; priority child package docs ready; DCC builds pending; source scale conflicts with approved female 3'6"-4'2" and male 4'0"-4'6" Drakhar anchor |
 | `Anubisath Armaments.png` | Anubisath/Sutekh | Enemy/faction weapons, armor pieces, seal/necropolis material set |
+| `BloodAxeArmory.png` | Blood Axe Tribe | Giant double axes, cleavers, hammers, spears, knives, bows, quivers, bowyer tools, trophy armor, and reforged-metal process reference; create `KIT_GIA_BloodAxeArmory_A01` after Giant hand/body scale is approved |
 | `Valararmory.png` | Valar | Valar weapons, armor pieces, oath/warden/ranger variants |
 | `Armorer Workshop.png` | Aerathea/Common | Workshop environment kit, racks, benches, tools, display props, forge-adjacent materials |
 | `Relic Seekers and Arcane Trails.png` | Aerathea/Common | Relic props, trail markers, arcane field gear, exploration kit |
@@ -115,7 +135,8 @@ All approved creatures need concept sheets, scale sheets, skeletal mesh packages
 
 | Creature | Approved anchor | Variant backlog |
 | --- | --- | --- |
-| Gryphon | Eagle front, lion rear, noble mountain/sky guardian with strong feather silhouette, talons, lion tail | Golden, white, storm, forest, desert, royal, moonlit |
+| Abyss/Anathema | Ancient entropic beings of shadow and flame, sealed in the Abyss, destructive to creation, bindable by sorcerers but hostile to binders | Visual intake complete in `KIT_ABY_ShadowFlame_A01`; first ten proposed packages documented for troops, elites, casters, hound, siege brute, lord, and Anathema siege drake; final selection approval pending |
+| Gryphon | Eagle front, lion rear, noble mountain/sky guardian with strong feather silhouette, talons, lion tail | First-pass base mesh/skeleton/physics/animation blockout imported in `SK_CRE_Gryphon_A01`; approved golden sculpt pass next, then white, storm, forest, desert, royal, and moonlit variants |
 | Manticore | Lion body, bat/draconic wings, scorpion tail, dangerous ruin/desert predator | Base manticore first, then biome or threat variants after approval |
 | Hippogryph | Eagle front, horse rear, elegant swift mount/creature with horse back legs/tail and eagle head/wings/front talons | Mountain, forest, white, autumn, storm, moonlit |
 | Western Dragon | Four legs plus two wings, large reptilian powerful long-tail horned silhouette | Fire, forest, storm, frost, gold, swamp, moonlit, ocean, ruin, desert, raid boss hero |
@@ -142,7 +163,11 @@ The following buildings are approved as established Aerathea settlement assets b
 | Mekgineer Workshop | Partially seeded by `SM_MKG_WorkshopPropCrate_A01` | Building package, interior prop set, machines, tool racks, lamps |
 | Inn | Approved building anchor only | Production package, concept sheet, modular kit, interior notes |
 | Lumber Mill | Approved building anchor only | Production package, concept sheet, modular kit, saw/log props |
-| Palisade | Approved building anchor only | Production package, concept sheet, modular wall/gate/corner set |
+| Giant Hidden Cave Town | Lore image set exists in `docs/lore/images/giant-stone-caves/`; Giant culture anchor and final direction are not yet approved for DCC | Create `KIT_GIA_MountainCaveTown_A01` after Giant culture/settlement direction approval; split into cave gates, terraces, halls, waterworks, market props, nomad links, Blood Axe variant modules, and Blood Axe Nomad ritual-stone markers |
+| Blood Axe Nomad Ritual Stones | Lore added under Giant cave-town notes; standing stones and altars are ritual sites, warnings, memory markers, and guideposts left behind after nomad camps move on | Create future `KIT_GIA_BloodAxeRitualStones_A01` after Blood Axe direction approval; split into altars, standing-stone rings, cairn guideposts, ritual channels, banner poles, and cave approach markers |
+| Blood Axe Camp, Armory, And Warband | 22 live source concepts now tracked in the Giant/Blood Axe slate; Blood Axe should remain a hostile Giant sub-faction, not the default Giant culture | Create `KIT_GIA_BloodAxeCamp_A01`, `KIT_GIA_BloodAxeArmory_A01`, and `KIT_GIA_BloodAxeWarband_A01` after `SK_GIA_Base_A01`; split chieftain, shaman, hunters, troop formations, giant weapons, bows, armor trophies, banners, gates, shelters, forge, and stronghold modules |
+| Ogre Cairn Fortifications And Settlement | 31 Ogre source concepts now tracked; visual language includes stone cairns, rough walls, gates, barracks, forge interiors, Tek shops, necropolis, shaman hut, inn, and siege yards | Create `KIT_OGR_CairnFortifications_A01`, `KIT_OGR_Teknomancy_A01`, `KIT_OGR_Necropolis_A01`, and `KIT_OGR_SettlementInteriors_A01` after `SK_OGR_Base_A01` direction approval |
+| Palisade | Five-module DCC source/import/startup placement complete in `SM_AET_Palisade_A01`; material instances and generated LOD0-LOD3 complete | Polish final UV atlas, texture set, collision fit, and snap review |
 
 Suggested first building package:
 
@@ -154,7 +179,7 @@ These are referenced by existing packages or startup docs and should be promoted
 
 | Candidate | Reason to create |
 | --- | --- |
-| `BP_AET_TargetDummy_A01` | Hit reaction, damage numbers, training scoring, and audio cues after the static dummy mesh exists |
+| `BP_AET_TargetDummy_A01` | Native training hit/break/reset behavior and Blueprint startup actor exist; next pass should add optional visual/audio/UI feedback |
 | `SM_AET_TargetDummyArea_A01` | Converts the target dummy into a dressed training-yard area |
 | `SM_MKG_Goggles_A01` | Core gnome/Mekgineer identity prop |
 | `SM_MKG_Toolkit_A01` | Supports Mekgineer workshop and gnome character identity |
@@ -164,13 +189,18 @@ These are referenced by existing packages or startup docs and should be promoted
 
 ## Recommended Next Backlog Actions
 
-1. Create remaining Gnome armory child production packages from `KIT_MKG_Armory_A01`.
-2. Create priority child packages from `KIT_DWR_Armory_A01`, `KIT_ELV_Armory_A01`, `KIT_DEL_Armory_A01`, `KIT_ORC_Arsenal_A01`, `KIT_MIN_Arsenal_A01`, and `KIT_DKH_FieldGear_A01`.
-3. Create the `SK_GNM_Base_A01` concept sheet/modeling handoff, then build the first gnome body DCC source mesh and skeleton.
-4. Implement final `BP_AET_Portal_A01` trigger/VFX/audio/destination behavior after portal gameplay rules are approved.
-5. Add `BP_AET_TargetDummy_A01` behavior after combat/damage test rules are approved.
-6. Create the first settlement modular package, either `SM_AET_Palisade_A01` or `SM_AET_House_A01`.
-7. Create the first creature package, likely `SK_CRE_Gryphon_A01`.
+1. Use `Tools/Unreal/launch_startup_review_editor.sh` when interactive manual inspection is needed for first-pass import scale, silhouette, collision, sockets, and LOD transitions.
+2. Build the next Gnome armory child DCC mesh, recommended `SM_MKG_GrappleHook_A01`.
+3. Replace first-pass review meshes with approved art-model geometry, final UVs, authored texture sets, and tuned collision.
+4. Tune sockets, physics bodies, and animation Blueprint logic for `SK_GNM_Base_A01` and `SK_CRE_Gryphon_A01` after approved final sculpt, skin, and animation direction are available.
+5. Choose and build the first non-Gnome priority DCC child from `KIT_DWR_Armory_A01`, `KIT_ELV_Armory_A01`, `KIT_DEL_Armory_A01`, `KIT_ORC_Arsenal_A01`, `KIT_MIN_Arsenal_A01`, and `KIT_DKH_FieldGear_A01`; their priority package docs are now complete.
+6. Review and approve one proposed Abyss/Anathema child from `KIT_ABY_ShadowFlame_A01` before any DCC build.
+7. Review `KIT_GNM_IonaSiegebreaker_A01` and choose whether Iona's pilot, heavy Mek, or arc cannons should become a child production package.
+8. Review the staged `SK_GIA_Base_A01` Unreal close-up capture and either approve it as the Giant hand/body scale lock or request scale/proportion changes.
+9. Review and approve `SK_OGR_Base_A01` as the next large-race body direction, then choose whether Teknomancer, Warrior, Shaman, or Necromancer becomes the first class package.
+10. Split `BloodAxeArmory.png` into `KIT_GIA_BloodAxeArmory_A01` child IDs after the Giant Unreal visual is approved.
+11. Review Giant cave-town lore images and approve whether `KIT_GIA_MountainCaveTown_A01` or `KIT_GIA_BloodAxeRitualStones_A01` should become the first Giant environment production package.
+12. Add final `BP_AET_Portal_A01` traversal, VFX, audio, and destination registry only after gameplay rules are approved.
 
 ## Production Rule
 
