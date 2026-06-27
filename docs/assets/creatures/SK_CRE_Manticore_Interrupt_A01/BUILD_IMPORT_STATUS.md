@@ -4,7 +4,7 @@
 
 - Build/import status: planning package complete; DCC build not started.
 - Production scope: encounter-specific Manticore interrupt variant for `KIT_GNM_OGR_RivalryEncounter_A01`.
-- Blocker: base `SK_CRE_Manticore_A01` direction, body proportions, skeleton, and animation requirements must be approved before this variant becomes a DCC build.
+- Dependency: base `SK_CRE_Manticore_A01` production direction, body proportions, skeleton, and animation requirements now exist as documentation and must be approved/imported before this variant becomes a DCC build.
 - Review scope: production planning only. No Blender source, FBX export, Unreal skeletal mesh, physics asset, animation Blueprint, or startup actor exists yet.
 
 ## Planned Source Outputs
@@ -42,7 +42,7 @@
 
 ## Remaining To Finalize
 
-1. Create and approve base `SK_CRE_Manticore_A01` production direction, skeleton, and proportions.
+1. Review and approve base `SK_CRE_Manticore_A01` production direction, skeleton, and proportions.
 2. Build the first-pass DCC source for the interrupt variant or a reusable base Manticore variant.
 3. Export FBX and import to Unreal as a skeletal mesh.
 4. Generate material instances, LOD0-LOD3, sockets, physics asset, and animation Blueprint placeholder.

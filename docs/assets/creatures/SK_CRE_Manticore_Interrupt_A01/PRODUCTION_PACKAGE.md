@@ -4,7 +4,7 @@
 
 `SK_CRE_Manticore_Interrupt_A01` is an encounter-specific Manticore variant for the Gnome/Ogre rivalry scene. It should read as a wild third-party predator crashing into the battle, not as a Gnome machine, Ogre war beast, or faction pet. The design uses the approved Aerathea Manticore anchor: lion body, bat/draconic wings, scorpion tail, predatory ruin/desert threat language, clear tail stinger, and readable leathery wings.
 
-Use `GnomevsOgreandManticore8.png` for encounter staging and use `Manticore.png` plus `Manticore8.png` as the main anatomy references. `Manticore5.png` can inform stalking posture and forest/overgrown surface variants, but feathered or birdlike wing language from any source should not drive this interrupt package.
+Use `GnomevsOgreandManticore8.png` for encounter staging and inherit body, skeleton, scale, socket, material, and animation authority from `SK_CRE_Manticore_A01`. `Manticore.png` plus `Manticore8.png` remain the main anatomy references. `Manticore5.png` can inform stalking posture and forest/overgrown surface variants, but feathered or birdlike wing language from any source should not drive this interrupt package.
 
 ## 2. Gameplay Purpose
 
@@ -12,7 +12,7 @@ Use `GnomevsOgreandManticore8.png` for encounter staging and use `Manticore.png`
 - Forces both sides to reposition with wing buffet, leap impact, and scorpion-tail threat zones.
 - Adds a temporary third objective or hazard without changing the core rivalry identity.
 - Supports quest, world event, ruin ambush, and dungeon-pull variants.
-- Establishes production requirements for a future base `SK_CRE_Manticore_A01` skeleton and shared animation set.
+- Uses the base `SK_CRE_Manticore_A01` skeleton and shared animation set once approved/imported.
 
 ## 3. Silhouette Notes
 
@@ -50,7 +50,7 @@ Create an original stylized fantasy MMORPG concept image of `SK_CRE_Manticore_In
 
 ## 7. Modeling Notes
 
-- Treat this package as a variant specification until `SK_CRE_Manticore_A01` base body, skeleton, and proportions are approved.
+- Treat this package as a variant specification that waits for approval/import of `SK_CRE_Manticore_A01` base body, skeleton, and proportions.
 - Model real geometry for the lion body, mane volume, wing arm/finger bones, main membrane shape, tail segments, stinger, paws, claws, ears, and major facial planes.
 - Fake fine fur, skin pores, membrane scratches, tiny scars, and small tail-plate wear in texture/normal maps.
 - Keep wing membranes broad and readable from above; avoid feather clumps on this interrupt variant.
@@ -126,7 +126,7 @@ Optional encounter states:
 - Asset type: Skeletal Mesh creature variant, with future encounter Blueprint dependency.
 - Unreal folder: `/Game/Aerathea/Creatures/Manticores/`
 - Primary mesh: `SK_CRE_Manticore_Interrupt_A01`
-- Skeleton dependency: future `SK_CRE_Manticore_A01_Skeleton`
+- Skeleton dependency: `SKEL_CRE_Manticore_A01`
 - Physics asset: `PHYS_CRE_Manticore_Interrupt_A01`
 - Animation Blueprint: `ABP_CRE_Manticore_A01`
 - Optional encounter Blueprint: `BP_GNM_OGR_ManticoreInterrupt_A01`
@@ -149,7 +149,7 @@ Optional encounter states:
   - `vfx_venom_drip`
   - `vfx_landing_dust`
 
-Do not import this variant before the base Manticore skeleton and proportion package are approved.
+Do not import this variant before the base Manticore skeleton and proportion package are approved and imported.
 
 ## 14. Folder And Naming Recommendation
 
@@ -172,4 +172,4 @@ Do not import this variant before the base Manticore skeleton and proportion pac
 - Supports mid-poly Unreal production with clear material slots and LOD priorities.
 - Keeps the Gnome/Ogre rivalry as the core scene while adding a clear interrupt hazard.
 - Lists required sockets, collision volumes, animations, and import dependencies.
-- Blocks DCC work until base `SK_CRE_Manticore_A01` direction, skeleton, and proportions are approved.
+- Blocks DCC work until base `SK_CRE_Manticore_A01` direction, skeleton, and proportions are approved/imported.

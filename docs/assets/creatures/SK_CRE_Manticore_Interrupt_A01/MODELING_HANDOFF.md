@@ -3,7 +3,7 @@
 ## Handoff Status
 
 - Current state: production planning and modeling handoff ready.
-- DCC state: blocked until base `SK_CRE_Manticore_A01` body, skeleton, and proportion direction are approved.
+- DCC state: waits for approval/import of the documented base `SK_CRE_Manticore_A01` body, skeleton, and proportion direction.
 - Intended use: encounter-specific variant for the Gnome/Ogre rivalry interrupt source.
 
 ## Source References
@@ -14,6 +14,7 @@
 | `/home/Flamestrike/Desktop/Aerathea/Aerathea Creative/ASSET CONCEPTS/Manticore.png` | Primary anatomy reference: lion body, leathery bat/draconic wings, scorpion tail |
 | `/home/Flamestrike/Desktop/Aerathea/Aerathea Creative/ASSET CONCEPTS/Manticore8.png` | Ruin-stalker mood, tail arc, wing membrane, forward threat posture |
 | `/home/Flamestrike/Desktop/Aerathea/Aerathea Creative/ASSET CONCEPTS/Manticore5.png` | Optional stalking posture and overgrown/forest variant cues; do not copy feathered wing language |
+| `docs/assets/creatures/SK_CRE_Manticore_A01/PRODUCTION_PACKAGE.md` | Base body, skeleton, scale, sockets, material families, and animation authority |
 
 ## Approved Shape Language
 
@@ -114,7 +115,7 @@ The interrupt set must support:
 - Roar and hit reactions.
 - Wounded retreat and death.
 
-The base Manticore animation set should own locomotion and idle behavior; this package adds encounter-specific interrupt poses and VFX timing.
+The base Manticore animation set owns locomotion and idle behavior; this package adds encounter-specific interrupt poses and VFX timing after the base body/skeleton is approved.
 
 ## Review Checklist
 

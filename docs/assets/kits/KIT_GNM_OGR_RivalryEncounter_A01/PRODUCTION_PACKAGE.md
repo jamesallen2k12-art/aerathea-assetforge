@@ -143,8 +143,9 @@ Use 2K texture sets for common characters and props. Use 4K only for a named her
 - `SK_GNM_HeavyMek_Rivalry_A01` has a first-pass DCC/Unreal review import with required Mek, weapon, pilot, and VFX sockets.
 - `SK_OGR_Warrior_Rival_A01` has a first-pass DCC/Unreal review import with shield, hammer, belt, stomp, head, and weapon grip sockets.
 - `SM_OGR_CairnBattleGate_A01` has a first-pass DCC/Unreal review import with material instances, LOD0-LOD3, static mesh sockets, simple collision, startup review placement, validation, and offscreen capture coverage.
-- `SK_CRE_Manticore_Interrupt_A01` has an encounter-variant production package, modeling handoff, and build/import status ready; DCC build waits for base `SK_CRE_Manticore_A01` direction, skeleton, and proportions.
-- Approved five-item sequence is complete. Remaining follow-ups should be selected from authored final shieldwall Niagara art, base `SK_CRE_Manticore_A01`, Ogre Shaman/Necromancer class packages, `SM_OGR_CrudeTekPylon_A01`, or `BP_GNM_OGR_BattlefieldEncounter_A01`.
+- `SK_CRE_Manticore_A01` has a base production package, source concept intake, modeling handoff, build/import status, skeleton/proportion plan, material plan, LOD plan, collision plan, and sockets ready for approval.
+- `SK_CRE_Manticore_Interrupt_A01` has an encounter-variant production package, modeling handoff, and build/import status ready; DCC build waits for base `SK_CRE_Manticore_A01` approval/import.
+- Current approved sequence continues with Ogre Shaman/Necromancer class packages, `SM_OGR_CrudeTekPylon_A01`, `BP_GNM_OGR_BattlefieldEncounter_A01`, and final authored shieldwall Niagara art.
 
 ## Quality Gate Checklist
 
