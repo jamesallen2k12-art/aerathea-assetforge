@@ -24,6 +24,7 @@ RUNTIME_VISIBLE_LABELS = [
     "AET_PROD_MKG_SparkPistol_A01",
     "AET_PROD_MKG_AetheriumGrenade_A01",
     "AET_PROD_MKG_MultiTool_A01",
+    "AET_PROD_GNM_HeavyMekShieldwall_A01",
     "AET_PROD_MKG_SpikeDrill_A01",
     "AET_PROD_MKG_MonkeyWrench_A01",
     "AET_PROD_MKG_RatchetCleaver_A01",

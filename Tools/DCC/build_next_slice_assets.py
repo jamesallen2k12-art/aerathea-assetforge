@@ -298,6 +298,80 @@ def grapple_hook() -> Mesh:
     return mesh
 
 
+def aether_shield_projector() -> Mesh:
+    mesh = Mesh("SM_GNM_AetherShieldProjector_A01")
+    m = create_common_materials(mesh)
+
+    # Origin is ground center. +X is the shield-emitter side; -X is the operator side.
+    mesh.add_box("Base_DarkIron_LowStabilizer", (0, 0, 10), (118, 98, 20), m["dark_iron"])
+    mesh.add_box("Base_Brass_ServicePlate", (-8, 0, 24), (86, 66, 12), m["brass"])
+    mesh.add_box("Foot_DarkIron_LeftWideBrace", (-18, 48, 9), (82, 20, 18), m["dark_iron"])
+    mesh.add_box("Foot_DarkIron_RightWideBrace", (-18, -48, 9), (82, 20, 18), m["dark_iron"])
+    mesh.add_box("ToeClamp_Brass_Left", (34, 55, 18), (34, 12, 15), m["brass"])
+    mesh.add_box("ToeClamp_Brass_Right", (34, -55, 18), (34, 12, 15), m["brass"])
+
+    mesh.add_box("Body_DarkIron_SquatCoreHousing", (-4, 0, 54), (68, 52, 60), m["dark_iron"])
+    mesh.add_box("Body_Brass_FrontFrame", (34, 0, 58), (18, 64, 70), m["brass"])
+    mesh.add_box("Body_Brass_RearServiceFrame", (-44, 0, 54), (16, 50, 54), m["brass"])
+    mesh.add_cylinder("Core_Aetherium_VerticalReactor", (5, 0, 72), 18, 46, m["aetherium"], "z", 18)
+    mesh.add_cylinder("Core_Brass_TopCollar", (5, 0, 99), 22, 8, m["brass"], "z", 18)
+    mesh.add_cylinder("Core_Brass_LowerCollar", (5, 0, 45), 22, 8, m["brass"], "z", 18)
+
+    mesh.add_box("EmitterArm_DarkIron_Left", (30, 47, 80), (58, 12, 16), m["dark_iron"])
+    mesh.add_box("EmitterArm_DarkIron_Right", (30, -47, 80), (58, 12, 16), m["dark_iron"])
+    mesh.add_box("EmitterVane_Brass_Left", (58, 62, 92), (18, 13, 68), m["brass"])
+    mesh.add_box("EmitterVane_Brass_Right", (58, -62, 92), (18, 13, 68), m["brass"])
+    mesh.add_diamond("EmitterCrystal_Aetherium_Left", (63, 70, 94), (14, 6, 24), m["aetherium"])
+    mesh.add_diamond("EmitterCrystal_Aetherium_Right", (63, -70, 94), (14, 6, 24), m["aetherium"])
+
+    mesh.add_box("OperatorStep_DarkIron_Rear", (-64, 0, 26), (22, 62, 16), m["dark_iron"])
+    mesh.add_cylinder("ControlHandle_Brass_Left", (-55, 24, 70), 3.2, 34, m["brass"], "z", 10)
+    mesh.add_cylinder("ControlHandle_Brass_Right", (-55, -24, 70), 3.2, 34, m["brass"], "z", 10)
+    mesh.add_cylinder("ControlCrossbar_DarkIron", (-55, 0, 87), 3.0, 58, m["dark_iron"], "y", 10)
+    mesh.add_diamond("ControlGauge_Aetherium_Blue", (-54, 0, 62), (10, 5, 12), m["aetherium"])
+
+    mesh.add_box("SocketMarker_vfx_core", (5, 0, 78), (4, 4, 4), m["aetherium"])
+    mesh.add_box("SocketMarker_vfx_shield_emit_l", (64, 70, 94), (4, 4, 4), m["aetherium"])
+    mesh.add_box("SocketMarker_vfx_shield_emit_r", (64, -70, 94), (4, 4, 4), m["aetherium"])
+    mesh.add_box("SocketMarker_attach_mek_l", (-38, 45, 72), (4, 4, 4), m["aetherium"])
+    mesh.add_box("SocketMarker_attach_mek_r", (-38, -45, 72), (4, 4, 4), m["aetherium"])
+    mesh.add_box("SocketMarker_damage_spark", (44, 0, 112), (4, 4, 4), m["aetherium"])
+    mesh.add_box("UCX_SM_GNM_AetherShieldProjector_A01_00", (0, 0, 58), (140, 140, 124), m["stone"])
+    return mesh
+
+
+def aether_shield_wall() -> Mesh:
+    mesh = Mesh("SM_GNM_AetherShieldWall_A01")
+    m = create_common_materials(mesh)
+    shield_material = mesh.material("M_GNM_AetherShieldWall_Review_A01", (0.04, 0.55, 1.0))
+
+    pane = mesh.add_object("ShieldPane_Aetherium_CrescentReviewSurface", shield_material)
+    pane.verts.extend(
+        [
+            (0, -85, 0),
+            (0, 85, 0),
+            (0, 85, 255),
+            (0, 62, 340),
+            (0, -62, 340),
+            (0, -85, 255),
+        ]
+    )
+    pane.faces.extend(
+        [
+            (1, 2, 3, 4, 5, 6),
+            (6, 5, 4, 3, 2, 1),
+        ]
+    )
+
+    mesh.add_box("ShieldEdge_Aetherium_LeftBand", (0, -84, 160), (4, 6, 310), m["aetherium"])
+    mesh.add_box("ShieldEdge_Aetherium_RightBand", (0, 84, 160), (4, 6, 310), m["aetherium"])
+    mesh.add_box("ShieldEdge_Aetherium_TopBand", (0, 0, 336), (4, 128, 8), m["aetherium"])
+    mesh.add_box("ShieldPulse_Aetherium_LowerArc", (1, 0, 82), (3, 160, 10), m["aetherium"])
+    mesh.add_box("ShieldPulse_Aetherium_MidArc", (1, 0, 184), (3, 150, 8), m["aetherium"])
+    mesh.add_box("ShieldPulse_Aetherium_ImpactFocus", (2, 0, 214), (5, 34, 34), m["aetherium"])
+    return mesh
+
+
 def multi_tool() -> Mesh:
     mesh = Mesh("SM_MKG_MultiTool_A01")
     m = create_common_materials(mesh)
@@ -455,6 +529,16 @@ STATIC_ASSETS = [
         "Kits/Mekgineer/Armory/SM_MKG_GrappleHook_A01",
         grapple_hook,
         "/Game/Aerathea/Props/Mekgineer/Armory/SM_MKG_GrappleHook_A01",
+    ),
+    StaticAssetBuild(
+        "Kits/GnomeOgre/RivalryEncounter/BP_GNM_HeavyMekShieldwall_A01/SM_GNM_AetherShieldProjector_A01",
+        aether_shield_projector,
+        "/Game/Aerathea/Props/Gnomes/Mekgineer/SM_GNM_AetherShieldProjector_A01",
+    ),
+    StaticAssetBuild(
+        "Kits/GnomeOgre/RivalryEncounter/BP_GNM_HeavyMekShieldwall_A01/SM_GNM_AetherShieldWall_A01",
+        aether_shield_wall,
+        "/Game/Aerathea/VFX/GnomeOgre/SM_GNM_AetherShieldWall_A01",
     ),
     StaticAssetBuild(
         "Kits/Mekgineer/Armory/SM_MKG_SpikeDrill_A01",

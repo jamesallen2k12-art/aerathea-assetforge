@@ -35,6 +35,8 @@ from Tools.DCC.build_aerathea_blender_assets import (  # noqa: E402
     workshop_crate,
 )
 from Tools.DCC.build_next_slice_assets import (  # noqa: E402
+    aether_shield_projector,
+    aether_shield_wall,
     gear_mace,
     palisade_corner,
     palisade_endcap,
@@ -103,11 +105,18 @@ def get_material(name: str, color: tuple[float, float, float]) -> bpy.types.Mate
     return material
 
 
-def mesh_to_blender(mesh, name: str, location: tuple[float, float, float], yaw_degrees: float = 0.0) -> None:
+def mesh_to_blender(
+    mesh,
+    name: str,
+    location: tuple[float, float, float],
+    yaw_degrees: float = 0.0,
+    scale: tuple[float, float, float] = (1.0, 1.0, 1.0),
+) -> None:
     parent = bpy.data.objects.new(name, None)
     parent.empty_display_type = "PLAIN_AXES"
     parent.location = location
     parent.rotation_euler[2] = math.radians(yaw_degrees)
+    parent.scale = scale
     bpy.context.collection.objects.link(parent)
 
     materials = {mat_name: get_material(mat_name, color) for mat_name, color in mesh.materials.items()}
@@ -143,12 +152,54 @@ def add_startup_assets() -> None:
     mesh_to_blender(ratchet_cleaver(), "AET_PROD_MKG_RatchetCleaver_A01", (-540, 282, 45), 16.0)
     mesh_to_blender(gear_mace(), "AET_PROD_MKG_GearMace_A01", (-620, 365, 45), -12.0)
     mesh_to_blender(tool_pack(), "AET_PROD_MKG_ToolPack_BackFit_A01", (-745, 520, 74), 0.0)
+    add_shieldwall()
 
     mesh_to_blender(palisade_wall(), "AET_PROD_Palisade_Wall_A01", (-200, -660, 0))
     mesh_to_blender(palisade_post(), "AET_PROD_Palisade_Post_A01", (-430, -660, 0))
     mesh_to_blender(palisade_endcap(), "AET_PROD_Palisade_EndCap_A01", (70, -660, 0))
     mesh_to_blender(palisade_corner(), "AET_PROD_Palisade_Corner_A01", (360, -660, 0))
     mesh_to_blender(palisade_gate(), "AET_PROD_Palisade_Gate_A01", (140, -1020, 0))
+
+
+def add_shieldwall() -> None:
+    projector_mesh = aether_shield_projector()
+    shield_mesh = aether_shield_wall()
+    origin = Vector((260.0, 165.0, 0.0))
+    active_projectors = 3
+    shield_width = 700.0
+    arc_height = 340.0
+    segment_length = shield_width / float(active_projectors - 1)
+    projector_center = float(active_projectors - 1) * 0.5
+
+    for index in range(active_projectors):
+        normalized = (float(index) - projector_center) / projector_center
+        location = (
+            origin.x - 55.0 * abs(normalized),
+            origin.y + (float(index) - projector_center) * segment_length,
+            origin.z,
+        )
+        mesh_to_blender(
+            projector_mesh,
+            f"AET_PROD_GNM_HeavyMekShieldwall_A01_Projector_{index + 1:02d}",
+            location,
+            -normalized * 14.0,
+        )
+
+    for index in range(active_projectors - 1):
+        mid_index = float(index) + 0.5
+        normalized = (mid_index - projector_center) / projector_center
+        location = (
+            origin.x + 32.0 - 24.0 * abs(normalized),
+            origin.y + (mid_index - projector_center) * segment_length,
+            origin.z,
+        )
+        mesh_to_blender(
+            shield_mesh,
+            f"AET_PROD_GNM_HeavyMekShieldwall_A01_ShieldPanel_{index + 1:02d}",
+            location,
+            -normalized * 8.0,
+            (1.0, segment_length / 170.0, arc_height / 340.0),
+        )
 
 
 def add_review_alignment_markers() -> None:

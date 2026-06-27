@@ -8,6 +8,8 @@ ROOT = Path(__file__).resolve().parents[2]
 LEVEL_PATH = "/Game/Aerathea/Maps/L_Aerathea_Startup"
 MATERIAL_PATH = "/Game/Aerathea/Materials"
 MATERIAL_INSTANCE_PATH = "/Game/Aerathea/Materials/Instances"
+GNOME_OGRE_VFX_PATH = "/Game/Aerathea/VFX/GnomeOgre"
+GNOME_OGRE_BLUEPRINT_PATH = "/Game/Aerathea/Blueprints/GnomeOgre"
 NEXT_SLICE_TAG = "AET_NEXT_SLICE"
 # Blender source meshes are authored in centimeters and exported without FBX unit
 # conversion, so Unreal must import the raw FBX geometry at 1 cm = 1 Unreal cm.
@@ -24,6 +26,16 @@ STATIC_ASSETS = [
         "name": "SM_MKG_GrappleHook_A01",
         "source": ROOT / "SourceAssets/Exports/Kits/Mekgineer/Armory/SM_MKG_GrappleHook_A01/SM_MKG_GrappleHook_A01.fbx",
         "destination": "/Game/Aerathea/Props/Mekgineer/Armory",
+    },
+    {
+        "name": "SM_GNM_AetherShieldProjector_A01",
+        "source": ROOT / "SourceAssets/Exports/Kits/GnomeOgre/RivalryEncounter/BP_GNM_HeavyMekShieldwall_A01/SM_GNM_AetherShieldProjector_A01/SM_GNM_AetherShieldProjector_A01.fbx",
+        "destination": "/Game/Aerathea/Props/Gnomes/Mekgineer",
+    },
+    {
+        "name": "SM_GNM_AetherShieldWall_A01",
+        "source": ROOT / "SourceAssets/Exports/Kits/GnomeOgre/RivalryEncounter/BP_GNM_HeavyMekShieldwall_A01/SM_GNM_AetherShieldWall_A01/SM_GNM_AetherShieldWall_A01.fbx",
+        "destination": "/Game/Aerathea/VFX/GnomeOgre",
     },
     {
         "name": "SM_MKG_SpikeDrill_A01",
@@ -82,6 +94,14 @@ STATIC_MESH_SOCKET_SETS = {
         ("socket_muzzle", unreal.Vector(76.0, 0.0, 3.0), unreal.Rotator(0.0, 0.0, 0.0)),
         ("socket_beam", unreal.Vector(86.0, 0.0, 3.0), unreal.Rotator(0.0, 0.0, 0.0)),
         ("socket_cable", unreal.Vector(-54.0, 0.0, 0.0), unreal.Rotator(0.0, 180.0, 0.0)),
+    ],
+    "SM_GNM_AetherShieldProjector_A01": [
+        ("vfx_core", unreal.Vector(5.0, 0.0, 78.0), unreal.Rotator(0.0, 0.0, 0.0)),
+        ("vfx_shield_emit_l", unreal.Vector(64.0, 70.0, 94.0), unreal.Rotator(0.0, 0.0, 0.0)),
+        ("vfx_shield_emit_r", unreal.Vector(64.0, -70.0, 94.0), unreal.Rotator(0.0, 0.0, 0.0)),
+        ("attach_mek_l", unreal.Vector(-38.0, 45.0, 72.0), unreal.Rotator(0.0, 180.0, 0.0)),
+        ("attach_mek_r", unreal.Vector(-38.0, -45.0, 72.0), unreal.Rotator(0.0, 180.0, 0.0)),
+        ("damage_spark", unreal.Vector(44.0, 0.0, 112.0), unreal.Rotator(0.0, 0.0, 0.0)),
     ],
 }
 
@@ -203,6 +223,47 @@ def color_material(name, color, roughness=0.85, metallic=0.0, emissive=None, use
     return material
 
 
+def aether_shield_wall_material():
+    name = "M_GNM_AetherShieldWall_Review_A01"
+    ensure_directory(MATERIAL_PATH)
+    asset_path = "{}/{}".format(MATERIAL_PATH, name)
+    if unreal.EditorAssetLibrary.does_asset_exist(asset_path):
+        material = unreal.load_asset(asset_path)
+        if material is None:
+            raise RuntimeError("Failed to load material {}".format(asset_path))
+        return material
+
+    material = unreal.AssetToolsHelpers.get_asset_tools().create_asset(
+        asset_name=name,
+        package_path=MATERIAL_PATH,
+        asset_class=unreal.Material,
+        factory=unreal.MaterialFactoryNew(),
+    )
+    if material is None:
+        raise RuntimeError("Failed to create material {}".format(asset_path))
+
+    safe_set(material, "blend_mode", unreal.BlendMode.BLEND_TRANSLUCENT)
+    safe_set(material, "two_sided", True)
+    safe_set(material, "shading_model", unreal.MaterialShadingModel.MSM_UNLIT)
+
+    mat_lib = unreal.MaterialEditingLibrary
+    base = mat_lib.create_material_expression(material, unreal.MaterialExpressionConstant3Vector, -420, -80)
+    base.set_editor_property("constant", unreal.LinearColor(0.03, 0.44, 1.0, 1.0))
+    mat_lib.connect_material_property(base, "", unreal.MaterialProperty.MP_BASE_COLOR)
+
+    opacity = mat_lib.create_material_expression(material, unreal.MaterialExpressionConstant, -420, 100)
+    opacity.set_editor_property("r", 0.34)
+    mat_lib.connect_material_property(opacity, "", unreal.MaterialProperty.MP_OPACITY)
+
+    glow = mat_lib.create_material_expression(material, unreal.MaterialExpressionConstant3Vector, -420, 280)
+    glow.set_editor_property("constant", unreal.LinearColor(0.0, 1.6, 4.8, 1.0))
+    mat_lib.connect_material_property(glow, "", unreal.MaterialProperty.MP_EMISSIVE_COLOR)
+
+    mat_lib.recompile_material(material)
+    unreal.EditorAssetLibrary.save_asset(asset_path)
+    return material
+
+
 def material_instance_name(mesh_name, material_name):
     asset_name = mesh_name
     for prefix in ("SM_", "SK_"):
@@ -221,14 +282,14 @@ def material_instance_name(mesh_name, material_name):
     return "MI_{}_{}".format(asset_name, semantic)
 
 
-def ensure_material_instance(name, parent_material):
-    ensure_directory(MATERIAL_INSTANCE_PATH)
-    asset_path = "{}/{}".format(MATERIAL_INSTANCE_PATH, name)
+def ensure_material_instance_at(package_path, name, parent_material):
+    ensure_directory(package_path)
+    asset_path = "{}/{}".format(package_path, name)
     instance = unreal.load_asset(asset_path)
     if instance is None:
         instance = unreal.AssetToolsHelpers.get_asset_tools().create_asset(
             asset_name=name,
-            package_path=MATERIAL_INSTANCE_PATH,
+            package_path=package_path,
             asset_class=unreal.MaterialInstanceConstant,
             factory=unreal.MaterialInstanceConstantFactoryNew(),
         )
@@ -237,6 +298,21 @@ def ensure_material_instance(name, parent_material):
     safe_set(instance, "parent", parent_material)
     unreal.EditorAssetLibrary.save_loaded_asset(instance)
     return instance
+
+
+def ensure_material_instance(name, parent_material):
+    return ensure_material_instance_at(MATERIAL_INSTANCE_PATH, name, parent_material)
+
+
+def ensure_shieldwall_material_instances(parent_material):
+    instances = {}
+    for name in (
+        "MI_GNM_AetherShieldWall_A01_Idle",
+        "MI_GNM_AetherShieldWall_A01_Impact",
+        "MI_GNM_AetherShieldWall_A01_Failing",
+    ):
+        instances[name] = ensure_material_instance(name, parent_material)
+    return instances
 
 
 def ensure_materials(include_skeletal=True):
@@ -271,6 +347,7 @@ def ensure_materials(include_skeletal=True):
             "M_AET_Leather_Dark_A01",
             unreal.LinearColor(0.19, 0.11, 0.07, 1.0),
         ),
+        "M_GNM_AetherShieldWall_Review_A01": aether_shield_wall_material(),
     }
     if not include_skeletal:
         return materials
@@ -788,6 +865,62 @@ def load_blueprint_class(asset_path):
     return unreal.load_object(None, "{}.{}_C".format(asset_path, asset_name))
 
 
+def parent_class_for(unreal_class_name, readable_name):
+    parent_type = getattr(unreal, unreal_class_name, None)
+    if parent_type is None:
+        raise RuntimeError("Compiled {} class is not available to Unreal Python".format(readable_name))
+    return parent_type.static_class() if hasattr(parent_type, "static_class") else parent_type
+
+
+def ensure_blueprint(asset_path, unreal_class_name, readable_name):
+    package_path, asset_name = asset_path.rsplit("/", 1)
+    ensure_directory(package_path)
+    parent_class = parent_class_for(unreal_class_name, readable_name)
+
+    if unreal.EditorAssetLibrary.does_asset_exist(asset_path):
+        blueprint = unreal.load_asset(asset_path)
+        current_parent = unreal.BlueprintEditorLibrary.get_blueprint_parent_class(blueprint)
+        current_parent_name = current_parent.get_name() if current_parent is not None else "None"
+        parent_class_name = parent_class.get_name()
+        if current_parent != parent_class and current_parent_name != parent_class_name:
+            unreal.log_warning("Reparenting {} from {} to {}.".format(asset_path, current_parent_name, readable_name))
+            unreal.BlueprintEditorLibrary.reparent_blueprint(blueprint, parent_class)
+        else:
+            unreal.log("{} already parented to {}.".format(asset_path, current_parent_name))
+    else:
+        factory = unreal.BlueprintFactory()
+        factory.set_editor_property("parent_class", parent_class)
+        blueprint = unreal.AssetToolsHelpers.get_asset_tools().create_asset(
+            asset_name=asset_name,
+            package_path=package_path,
+            asset_class=unreal.Blueprint,
+            factory=factory,
+        )
+        if blueprint is None:
+            raise RuntimeError("Failed to create {}".format(asset_path))
+        unreal.log("Created {} from {}.".format(asset_path, readable_name))
+
+    try:
+        unreal.BlueprintEditorLibrary.compile_blueprint(blueprint)
+    except Exception as exc:
+        unreal.log_warning("Could not compile {} immediately: {}".format(asset_path, exc))
+    unreal.EditorAssetLibrary.save_asset(asset_path)
+    return blueprint
+
+
+def ensure_gnome_ogre_blueprints():
+    ensure_blueprint(
+        "{}/BP_GNM_HeavyMekShieldwall_A01".format(GNOME_OGRE_BLUEPRINT_PATH),
+        "AETHeavyMekShieldwallActor",
+        "AAETHeavyMekShieldwallActor",
+    )
+    ensure_blueprint(
+        "{}/VFX_GNM_AetherShieldWall_A01".format(GNOME_OGRE_VFX_PATH),
+        "Actor",
+        "AActor",
+    )
+
+
 def spawn_target_dummy_blueprint():
     label = "AET_PROD_TargetDummy_A01"
     asset_path = "/Game/Aerathea/Blueprints/Props/BP_AET_TargetDummy_A01"
@@ -818,7 +951,77 @@ def spawn_target_dummy_blueprint():
     return actor
 
 
-def update_startup_level(meshes, skeletal_meshes):
+def component_named(actor, component_class, expected_name):
+    for component in actor.get_components_by_class(component_class):
+        name = component.get_name()
+        if name == expected_name or name.startswith("{}_".format(expected_name)):
+            return component
+    return None
+
+
+def spawn_blueprint_actor(label, asset_path, location, rotation=None, scale=None):
+    bp_class = load_blueprint_class(asset_path)
+    if bp_class is None:
+        raise RuntimeError("Could not load Blueprint class {}".format(asset_path))
+    actor = find_actor_by_label(label)
+    class_name = actor.get_class().get_name() if actor is not None else ""
+    expected_class_fragment = asset_path.rsplit("/", 1)[-1]
+    if actor is None or expected_class_fragment not in class_name:
+        if actor is not None:
+            retire_actor(actor)
+        actor = unreal.EditorLevelLibrary.spawn_actor_from_class(
+            bp_class,
+            location,
+            rotation or unreal.Rotator(0, 0, 0),
+        )
+    if actor is None:
+        raise RuntimeError("Failed to spawn {}".format(label))
+    actor.set_actor_label(label)
+    set_actor_transform(actor, location, rotation, scale)
+    tag_actor(actor)
+    activate_actor_for_review(actor)
+    return actor
+
+
+def configure_shieldwall_actor(actor, projector_mesh, shield_mesh, shieldwall_materials):
+    safe_set(actor, "ProjectorCount", 3)
+    safe_set(actor, "ShieldWidthCm", 700.0)
+    safe_set(actor, "ArcHeightCm", 340.0)
+    safe_set(actor, "bBlocksProjectiles", True)
+    safe_set(actor, "bBlocksPawns", False)
+    safe_set(actor, "ImpactIntensity", 0.18)
+    safe_set(actor, "OverloadPercent", 0.0)
+    rerun = getattr(actor, "rerun_construction_scripts", None)
+    if callable(rerun):
+        rerun()
+
+    for index in range(1, 6):
+        component = component_named(actor, unreal.StaticMeshComponent, "Projector_{:02d}".format(index))
+        if component is not None:
+            component.set_static_mesh(projector_mesh)
+
+    idle_material = shieldwall_materials.get("MI_GNM_AetherShieldWall_A01_Idle")
+    for index in range(1, 5):
+        component = component_named(actor, unreal.StaticMeshComponent, "ShieldPanel_{:02d}".format(index))
+        if component is not None:
+            component.set_static_mesh(shield_mesh)
+            if idle_material is not None:
+                component.set_material(0, idle_material)
+
+    # Collision is intentionally present for gameplay review but hidden in this visual pass.
+    collision = component_named(actor, unreal.BoxComponent, "ShieldCollision")
+    if collision is not None:
+        collision.set_visibility(False, True)
+        collision.set_hidden_in_game(True, True)
+
+    activate_actor_for_review(actor)
+    if collision is not None:
+        collision.set_visibility(False, True)
+        collision.set_hidden_in_game(True, True)
+    return actor
+
+
+def update_startup_level(meshes, skeletal_meshes, shieldwall_materials):
     if not unreal.EditorLevelLibrary.load_level(LEVEL_PATH):
         raise RuntimeError("Failed to load level: {}".format(LEVEL_PATH))
 
@@ -834,6 +1037,18 @@ def update_startup_level(meshes, skeletal_meshes):
         meshes["SM_MKG_GrappleHook_A01"],
         unreal.Vector(-380, 148, 42),
         rotation=review_rotator(0.0, -54.0),
+    )
+    shieldwall_actor = spawn_blueprint_actor(
+        "AET_PROD_GNM_HeavyMekShieldwall_A01",
+        "{}/BP_GNM_HeavyMekShieldwall_A01".format(GNOME_OGRE_BLUEPRINT_PATH),
+        unreal.Vector(260, 165, 0),
+        rotation=review_rotator(0.0, 0.0),
+    )
+    configure_shieldwall_actor(
+        shieldwall_actor,
+        meshes["SM_GNM_AetherShieldProjector_A01"],
+        meshes["SM_GNM_AetherShieldWall_A01"],
+        shieldwall_materials,
     )
     spawn_static_mesh(
         "AET_PROD_MKG_SpikeDrill_A01",
@@ -921,6 +1136,8 @@ def main():
 
     process_skeletal_assets = not selected or any(entry["name"] in selected for entry in SKELETAL_ASSETS)
     materials = ensure_materials(include_skeletal=process_skeletal_assets)
+    shieldwall_materials = ensure_shieldwall_material_instances(materials["M_GNM_AetherShieldWall_Review_A01"])
+    ensure_gnome_ogre_blueprints()
     meshes = {}
     skeletal_meshes = {}
     for entry in STATIC_ASSETS:
@@ -951,7 +1168,7 @@ def main():
 
     if process_skeletal_assets:
         ensure_skeletal_infrastructure()
-    update_startup_level(meshes, skeletal_meshes)
+    update_startup_level(meshes, skeletal_meshes, shieldwall_materials)
     unreal.log("Aerathea next-slice import complete.")
 
 

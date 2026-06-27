@@ -128,6 +128,7 @@ Current first-slice status:
 - Hidden `AET_REVIEW_MARKER` A/B/C/D/E debug actors are present for orientation checks and are only shown during marker captures.
 - `SM_MKG_AetherKnife_A01`, `SM_MKG_AetherCoreUnit_A01`, `SM_MKG_SparkPistol_A01`, `SM_MKG_AetheriumGrenade_A01`, `SM_MKG_RatchetCleaver_A01`, `SM_MKG_GearMace_A01`, `SM_MKG_MonkeyWrench_A01`, `SM_MKG_SpikeDrill_A01`, `SM_MKG_ToolPack_A01`, and `SM_MKG_MultiTool_A01` have production packages, modeling handoffs, Blender sources, FBX exports, Unreal imports, startup placements or socket-fit previews, and passing validation.
 - `KIT_MKG_Armory_A01` has all catalog child production packages and handoffs documented; first eleven child DCC meshes are imported and placed or fit-previewed, including `SM_MKG_GrappleHook_A01` with muzzle/beam/cable sockets.
+- `KIT_GNM_OGR_RivalryEncounter_A01` first child `BP_GNM_HeavyMekShieldwall_A01` has a first-pass native Blueprintable actor, Blueprint asset, `SM_GNM_AetherShieldProjector_A01`, `SM_GNM_AetherShieldWall_A01`, `VFX_GNM_AetherShieldWall_A01`, blue shield material state instances, LOD0-LOD3, required projector sockets, and startup review placement.
 - `KIT_DWR_Armory_A01`, `KIT_ELV_Armory_A01`, `KIT_DEL_Armory_A01`, `KIT_ORC_Arsenal_A01`, `KIT_MIN_Arsenal_A01`, and `KIT_DKH_FieldGear_A01` have child intake and kit production packages ready, and their first priority child package docs are complete; DCC builds for those children are still pending.
 - `SK_GNM_Base_A01` has a first-pass DCC review body, skeleton, Unreal skeletal mesh import, material instances, generated LOD0-LOD3, gear/VFX socket landmarks, assigned physics asset, animation Blueprint placeholder, and passing validation. Final sculpt, retopo, UVs, textures, tuned physics, and full animation set remain production work.
 - `SM_AET_Palisade_A01` has wall/post/corner/gate/end-cap Blender sources, FBX exports, Unreal imports, startup placements, simple UCX collision, material instances, generated LOD0-LOD3, and passing validation.
@@ -139,11 +140,11 @@ Next priority order:
 
 1. Use `Tools/Unreal/launch_startup_review_editor.sh` when an interactive manual inspection is needed; focus on silhouette, scale, material readability, collision fit, sockets, and LOD transitions.
 2. Review the updated startup scene with `SM_MKG_GrappleHook_A01` in place and validate its cable/muzzle socket read.
-3. Build the shield projector mesh and VFX dependencies for `BP_GNM_HeavyMekShieldwall_A01`, or approve `SK_OGR_Teknomancer_A01` as the first Ogre-side rivalry child.
-4. Replace first-pass review meshes with approved art-model geometry, final UVs, authored texture sets, and tuned collision after the relevant final art directions are approved.
-5. Tune gnome and gryphon physics bodies, sockets, and animation Blueprint logic into real locomotion/attachment tests after approved final sculpt, skin, and animation direction is available.
-6. Review and approve one proposed Abyss/Anathema child from `KIT_ABY_ShadowFlame_A01` before any DCC build.
-7. Review `KIT_GNM_IonaSiegebreaker_A01` and choose whether Iona's pilot, heavy Mek, or arc cannons should become a child production package.
+3. Review the `BP_GNM_HeavyMekShieldwall_A01` capture for projector silhouette, blue shield readability, collision fit, and Gnome/Ogre rivalry scale.
+4. Approve `SK_OGR_Teknomancer_A01` or a heavy Mek child from `KIT_GNM_IonaSiegebreaker_A01` as the next rivalry package.
+5. Replace first-pass review meshes with approved art-model geometry, final UVs, authored texture sets, and tuned collision after the relevant final art directions are approved.
+6. Tune gnome and gryphon physics bodies, sockets, and animation Blueprint logic into real locomotion/attachment tests after approved final sculpt, skin, and animation direction is available.
+7. Review and approve one proposed Abyss/Anathema child from `KIT_ABY_ShadowFlame_A01` before any DCC build.
 8. Implement final `BP_AET_Portal_A01` traversal/VFX/audio/destination behavior after portal gameplay rules are approved.
 9. Continue collage-aware intake on the remaining `ASSET CONCEPTS` categories.
 

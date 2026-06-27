@@ -12,6 +12,7 @@ EXPECTED_ASSETS = [
     "/Game/Aerathea/Materials/M_AET_DarkIron_A01",
     "/Game/Aerathea/Materials/M_AET_Brass_A01",
     "/Game/Aerathea/Materials/M_AET_AetheriumGlow_Blue_A01",
+    "/Game/Aerathea/Materials/M_GNM_AetherShieldWall_Review_A01",
     "/Game/Aerathea/Materials/M_AET_Straw_A01",
     "/Game/Aerathea/Materials/M_AET_Leather_Dark_A01",
     "/Game/Aerathea/Materials/M_AET_PackedEarth_A01",
@@ -45,6 +46,9 @@ EXPECTED_ASSETS = [
     "/Game/Aerathea/Props/Mekgineer/Armory/SM_MKG_AetheriumGrenade_A01",
     "/Game/Aerathea/Props/Mekgineer/Armory/SM_MKG_MultiTool_A01",
     "/Game/Aerathea/Props/Mekgineer/Armory/SM_MKG_GrappleHook_A01",
+    "/Game/Aerathea/Props/Gnomes/Mekgineer/SM_GNM_AetherShieldProjector_A01",
+    "/Game/Aerathea/VFX/GnomeOgre/SM_GNM_AetherShieldWall_A01",
+    "/Game/Aerathea/VFX/GnomeOgre/VFX_GNM_AetherShieldWall_A01",
     "/Game/Aerathea/Weapons/Mekgineer/SM_MKG_SpikeDrill_A01",
     "/Game/Aerathea/Weapons/Mekgineer/SM_MKG_MonkeyWrench_A01",
     "/Game/Aerathea/Weapons/Mekgineer/SM_MKG_RatchetCleaver_A01",
@@ -75,6 +79,7 @@ EXPECTED_ASSETS = [
     "/Game/Aerathea/Props/Infernals/BalgorothCult/SM_INF_CullingTrialFloor_A01",
     "/Game/Aerathea/Blueprints/Props/BP_AET_Portal_A01",
     "/Game/Aerathea/Blueprints/Props/BP_AET_TargetDummy_A01",
+    "/Game/Aerathea/Blueprints/GnomeOgre/BP_GNM_HeavyMekShieldwall_A01",
     LEVEL_PATH,
 ]
 EXPECTED_ACTOR_LABELS = [
@@ -91,6 +96,7 @@ EXPECTED_ACTOR_LABELS = [
     "AET_PROD_MKG_AetheriumGrenade_A01",
     "AET_PROD_MKG_MultiTool_A01",
     "AET_PROD_MKG_GrappleHook_A01",
+    "AET_PROD_GNM_HeavyMekShieldwall_A01",
     "AET_PROD_MKG_SpikeDrill_A01",
     "AET_PROD_MKG_MonkeyWrench_A01",
     "AET_PROD_MKG_RatchetCleaver_A01",
@@ -137,6 +143,8 @@ EXPECTED_STATIC_MESHES = [
     "/Game/Aerathea/Props/Mekgineer/Armory/SM_MKG_AetheriumGrenade_A01",
     "/Game/Aerathea/Props/Mekgineer/Armory/SM_MKG_MultiTool_A01",
     "/Game/Aerathea/Props/Mekgineer/Armory/SM_MKG_GrappleHook_A01",
+    "/Game/Aerathea/Props/Gnomes/Mekgineer/SM_GNM_AetherShieldProjector_A01",
+    "/Game/Aerathea/VFX/GnomeOgre/SM_GNM_AetherShieldWall_A01",
     "/Game/Aerathea/Weapons/Mekgineer/SM_MKG_SpikeDrill_A01",
     "/Game/Aerathea/Weapons/Mekgineer/SM_MKG_MonkeyWrench_A01",
     "/Game/Aerathea/Weapons/Mekgineer/SM_MKG_RatchetCleaver_A01",
@@ -170,6 +178,8 @@ EXPECTED_SKELETAL_MESHES = [
 EXPECTED_LOD_STATIC_MESHES = [
     "/Game/Aerathea/Props/Mekgineer/Armory/SM_MKG_MultiTool_A01",
     "/Game/Aerathea/Props/Mekgineer/Armory/SM_MKG_GrappleHook_A01",
+    "/Game/Aerathea/Props/Gnomes/Mekgineer/SM_GNM_AetherShieldProjector_A01",
+    "/Game/Aerathea/VFX/GnomeOgre/SM_GNM_AetherShieldWall_A01",
     "/Game/Aerathea/Weapons/Mekgineer/SM_MKG_SpikeDrill_A01",
     "/Game/Aerathea/Weapons/Mekgineer/SM_MKG_MonkeyWrench_A01",
     "/Game/Aerathea/Weapons/Mekgineer/SM_MKG_RatchetCleaver_A01",
@@ -189,6 +199,17 @@ EXPECTED_STATIC_MESH_SOCKETS = [
             "socket_muzzle",
             "socket_beam",
             "socket_cable",
+        ],
+    ),
+    (
+        "/Game/Aerathea/Props/Gnomes/Mekgineer/SM_GNM_AetherShieldProjector_A01",
+        [
+            "vfx_core",
+            "vfx_shield_emit_l",
+            "vfx_shield_emit_r",
+            "attach_mek_l",
+            "attach_mek_r",
+            "damage_spark",
         ],
     ),
     (
@@ -281,6 +302,7 @@ EXPECTED_RUNTIME_VISIBLE_LABELS = [
     "AET_PROD_MKG_AetheriumGrenade_A01",
     "AET_PROD_MKG_MultiTool_A01",
     "AET_PROD_MKG_GrappleHook_A01",
+    "AET_PROD_GNM_HeavyMekShieldwall_A01",
     "AET_PROD_MKG_SpikeDrill_A01",
     "AET_PROD_MKG_MonkeyWrench_A01",
     "AET_PROD_MKG_RatchetCleaver_A01",
@@ -318,6 +340,10 @@ EXPECTED_BOUNDS_LIMITS = {
     "AET_PROD_TargetDummy_A01": {"radius_max": 350.0},
     "AET_PROD_WorkshopCrate_A01": {"radius_max": 250.0},
     "AET_PROD_MKG_GrappleHook_A01": {"radius_max": 180.0},
+    "AET_PROD_GNM_HeavyMekShieldwall_A01": {
+        "extent_min": unreal.Vector(40.0, 280.0, 120.0),
+        "radius_max": 760.0,
+    },
     "AET_PROD_GnomeBase_A01": {"radius_max": 250.0},
     "AET_PROD_CRE_Gryphon_A01": {"radius_max": 600.0},
     "AET_PROD_GiantMaleBase_A01": {
@@ -363,7 +389,7 @@ def is_actor_hidden_in_game(actor):
         return False
 
 
-def component_hidden_or_invisible(component):
+def component_hidden_or_invisible(component, actor_label=None):
     component_name = component.get_name()
     component_class_name = component.get_class().get_name()
     editor_visual_classes = (
@@ -377,6 +403,7 @@ def component_hidden_or_invisible(component):
     hidden_runtime_helpers = {
         "HitVolume",
         "InteractionVolume",
+        "ShieldCollision",
     }
     hidden_runtime_helper_classes = {
         "BoxComponent",
@@ -384,6 +411,14 @@ def component_hidden_or_invisible(component):
         "SphereComponent",
     }
     if component_name in hidden_runtime_helpers and component_class_name in hidden_runtime_helper_classes:
+        return False
+    optional_shieldwall_components = {
+        "Projector_04",
+        "Projector_05",
+        "ShieldPanel_03",
+        "ShieldPanel_04",
+    }
+    if actor_label == "AET_PROD_GNM_HeavyMekShieldwall_A01" and component_name in optional_shieldwall_components:
         return False
     hidden = try_call(component, "is_hidden_in_game")
     visible = try_call(component, "is_visible")
@@ -542,6 +577,11 @@ def main():
     if "BP_AET_TargetDummy_A01" not in target_dummy_class_name and "AETTargetDummyActor" not in target_dummy_class_name:
         raise RuntimeError("Target dummy actor has unexpected class: {}".format(target_dummy_class_name))
 
+    shieldwall_actor = actors_by_label["AET_PROD_GNM_HeavyMekShieldwall_A01"]
+    shieldwall_class_name = shieldwall_actor.get_class().get_name()
+    if "BP_GNM_HeavyMekShieldwall_A01" not in shieldwall_class_name and "AETHeavyMekShieldwallActor" not in shieldwall_class_name:
+        raise RuntimeError("Shieldwall actor has unexpected class: {}".format(shieldwall_class_name))
+
     mesh_slot_failures = []
     for mesh_path in EXPECTED_STATIC_MESHES:
         mesh = unreal.load_asset(mesh_path)
@@ -654,7 +694,7 @@ def main():
             runtime_visibility_failures.append("{} is hidden in game".format(label))
         primitive_components = actor.get_components_by_class(unreal.PrimitiveComponent)
         for component in primitive_components:
-            if component_hidden_or_invisible(component):
+            if component_hidden_or_invisible(component, label):
                 runtime_visibility_failures.append(
                     "{} component {} is hidden or invisible".format(
                         label,

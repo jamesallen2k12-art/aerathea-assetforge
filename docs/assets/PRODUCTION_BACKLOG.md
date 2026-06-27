@@ -60,7 +60,7 @@ These have production package documentation in `docs/assets/`:
 | `KIT_DKH_FieldGear_A01` | Child intake and kit production package ready; priority child packages ready; package uses approved A04 Drakhar scale: females 3'6"-4'2", males 4'0"-4'6" over conflicting source-sheet scale | Choose first DCC build from Riversind Recurve, curved daggers, ReedShell shield, or magic tracking charms |
 | `KIT_ABY_ShadowFlame_A01` | Visual intake complete; Abyss/Anathema hierarchy, generated-lore comparison, and first ten proposed child creature packages ready for approval review | Choose which proposed Abyss or Anathema creature moves to approved DCC modeling |
 | `KIT_GNM_IonaSiegebreaker_A01` | Visual intake complete for `Iona.png`; named gnome hero, heavy Mek, twin arc cannon, and encounter child items proposed | Choose whether Iona's heavy Mek, pilot, or arc cannons should become the first approved child package |
-| `KIT_GNM_OGR_RivalryEncounter_A01` | Source intake and production package ready for 21 Gnome-vs-Ogre encounter images plus 4 added heavy Mek variants; first child `BP_GNM_HeavyMekShieldwall_A01` package and implementation handoff ready | Build the shield projector mesh/VFX dependencies or approve `SK_OGR_Teknomancer_A01` as the first Ogre-side child |
+| `KIT_GNM_OGR_RivalryEncounter_A01` | Source intake and production package ready for 21 Gnome-vs-Ogre encounter images plus 4 added heavy Mek variants; first child `BP_GNM_HeavyMekShieldwall_A01` has first-pass projector mesh, VFX helper/material states, Blueprint actor, sockets, and startup placement | Review the Shieldwall capture, then approve `SK_OGR_Teknomancer_A01` or heavy Mek child production as the next rivalry package |
 | `SK_GNM_Base_A01` | First-pass DCC review body/skeleton generated, imported as skeletal mesh, material instances assigned, LOD0-LOD3 generated, gear/VFX sockets added, `PHYS_GNM_Base_A01` assigned, `ABP_GNM_Base_A01` created, validation passing | Replace blockout geometry with approved sculpt/retopo, UVs, authored textures, tuned physics, and animation set |
 | `SK_GIA_Base_A01` | Giant scale superseded by A04 review data: females 14-15 ft, males 14'10"-16'0"; previous first-pass DCC/Unreal import used older scale assumptions | Rebuild or rescale Giant base after A04 scale chart is approved; do not use the current import as final hand/body scale lock |
 | `SK_OGR_Base_A01` | Source intake and production package ready for the 31-file Ogre concept set; DCC build not started | Approve base body direction, then build male/female Ogre sculpt, skeleton, sockets, and first class outfit target |
@@ -195,16 +195,17 @@ These are referenced by existing packages or startup docs and should be promoted
 
 1. Use `Tools/Unreal/launch_startup_review_editor.sh` when interactive manual inspection is needed for first-pass import scale, silhouette, collision, sockets, and LOD transitions.
 2. Review the updated startup scene with `SM_MKG_GrappleHook_A01` in place and validate its socket/scale read.
-3. Build the shield projector mesh and VFX dependencies for `BP_GNM_HeavyMekShieldwall_A01`, or approve `SK_OGR_Teknomancer_A01` as the first Ogre-side rivalry child.
-4. Replace first-pass review meshes with approved art-model geometry, final UVs, authored texture sets, and tuned collision.
-5. Tune sockets, physics bodies, and animation Blueprint logic for `SK_GNM_Base_A01` and `SK_CRE_Gryphon_A01` after approved final sculpt, skin, and animation direction are available.
-6. Review and approve one proposed Abyss/Anathema child from `KIT_ABY_ShadowFlame_A01` before any DCC build.
-7. Review `KIT_GNM_IonaSiegebreaker_A01` and choose whether Iona's pilot, heavy Mek, or arc cannons should become a child production package.
-8. Review the staged `SK_GIA_Base_A01` Unreal close-up capture and either approve it as the Giant hand/body scale lock or request scale/proportion changes.
-9. Review and approve `SK_OGR_Base_A01` as the next large-race body direction, then choose whether Teknomancer, Warrior, Shaman, or Necromancer becomes the first class package.
-10. Split `BloodAxeArmory.png` into `KIT_GIA_BloodAxeArmory_A01` child IDs after the Giant Unreal visual is approved.
-11. Review Giant cave-town lore images and approve whether `KIT_GIA_MountainCaveTown_A01` or `KIT_GIA_BloodAxeRitualStones_A01` should become the first Giant environment production package.
-12. Add final `BP_AET_Portal_A01` traversal, VFX, audio, and destination registry only after gameplay rules are approved.
+3. Review the `BP_GNM_HeavyMekShieldwall_A01` capture for projector silhouette, blue shield readability, collision fit, and Gnome/Ogre rivalry scale.
+4. Approve `SK_OGR_Teknomancer_A01` or a heavy Mek child from `KIT_GNM_IonaSiegebreaker_A01` as the next rivalry package.
+5. Replace first-pass review meshes with approved art-model geometry, final UVs, authored texture sets, and tuned collision.
+6. Tune sockets, physics bodies, and animation Blueprint logic for `SK_GNM_Base_A01` and `SK_CRE_Gryphon_A01` after approved final sculpt, skin, and animation direction are available.
+7. Review and approve one proposed Abyss/Anathema child from `KIT_ABY_ShadowFlame_A01` before any DCC build.
+8. Review `KIT_GNM_IonaSiegebreaker_A01` and choose whether Iona's pilot, heavy Mek, or arc cannons should become a child production package.
+9. Review the staged `SK_GIA_Base_A01` Unreal close-up capture and either approve it as the Giant hand/body scale lock or request scale/proportion changes.
+10. Review and approve `SK_OGR_Base_A01` as the next large-race body direction, then choose whether Teknomancer, Warrior, Shaman, or Necromancer becomes the first class package.
+11. Split `BloodAxeArmory.png` into `KIT_GIA_BloodAxeArmory_A01` child IDs after the Giant Unreal visual is approved.
+12. Review Giant cave-town lore images and approve whether `KIT_GIA_MountainCaveTown_A01` or `KIT_GIA_BloodAxeRitualStones_A01` should become the first Giant environment production package.
+13. Add final `BP_AET_Portal_A01` traversal, VFX, audio, and destination registry only after gameplay rules are approved.
 
 ## Production Rule
 

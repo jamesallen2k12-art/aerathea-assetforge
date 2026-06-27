@@ -2,6 +2,7 @@ import unreal
 
 
 BLUEPRINT_PATH = "/Game/Aerathea/Blueprints/Props"
+GNOME_OGRE_BLUEPRINT_PATH = "/Game/Aerathea/Blueprints/GnomeOgre"
 
 
 def ensure_directory(path):
@@ -16,9 +17,9 @@ def parent_class_for(unreal_class_name, readable_name):
     return parent_type.static_class() if hasattr(parent_type, "static_class") else parent_type
 
 
-def ensure_blueprint(asset_name, unreal_class_name, readable_name):
-    ensure_directory(BLUEPRINT_PATH)
-    asset_path = "{}/{}".format(BLUEPRINT_PATH, asset_name)
+def ensure_blueprint(asset_name, unreal_class_name, readable_name, package_path=BLUEPRINT_PATH):
+    ensure_directory(package_path)
+    asset_path = "{}/{}".format(package_path, asset_name)
     parent_class = parent_class_for(unreal_class_name, readable_name)
 
     if unreal.EditorAssetLibrary.does_asset_exist(asset_path):
@@ -42,7 +43,7 @@ def ensure_blueprint(asset_name, unreal_class_name, readable_name):
         factory.set_editor_property("parent_class", parent_class)
         blueprint = unreal.AssetToolsHelpers.get_asset_tools().create_asset(
             asset_name=asset_name,
-            package_path=BLUEPRINT_PATH,
+            package_path=package_path,
             asset_class=unreal.Blueprint,
             factory=factory,
         )
@@ -61,6 +62,12 @@ def ensure_blueprint(asset_name, unreal_class_name, readable_name):
 def main():
     ensure_blueprint("BP_AET_Portal_A01", "AETPortalActor", "AAETPortalActor")
     ensure_blueprint("BP_AET_TargetDummy_A01", "AETTargetDummyActor", "AAETTargetDummyActor")
+    ensure_blueprint(
+        "BP_GNM_HeavyMekShieldwall_A01",
+        "AETHeavyMekShieldwallActor",
+        "AAETHeavyMekShieldwallActor",
+        GNOME_OGRE_BLUEPRINT_PATH,
+    )
     unreal.log("Aerathea gameplay Blueprint creation complete.")
 
 
