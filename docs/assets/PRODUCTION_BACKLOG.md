@@ -38,6 +38,7 @@ Collage examples:
 Tracking source:
 
 - `docs/assets/ASSET_CONCEPTS_MANIFEST.md`
+- `docs/assets/APPROVAL_QUEUE.md`
 
 ## Current Packaged Assets
 
@@ -213,13 +214,14 @@ These are referenced by existing packages or startup docs and should be promoted
 4. Complete the final Ogre shared-rig/art-model fit after `Tools/Unreal/validate_ogre_shared_skeletons.py` confirms current first-pass skeleton binding.
 5. Follow `docs/assets/kits/KIT_GNM_OGR_RivalryEncounter_A01/FINAL_ART_REPLACEMENT_PLAN.md` when replacing first-pass review meshes with approved art-model geometry, final UVs, authored texture sets, and tuned collision.
 6. Use `docs/assets/GNOME_GRYPHON_FOLLOWUP_READINESS.md` and `Tools/Unreal/validate_gnome_gryphon_followup_readiness.py` before tuning sockets, physics bodies, and animation Blueprint logic for `SK_GNM_Base_A01` and `SK_CRE_Gryphon_A01` after approved final sculpt, skin, and animation direction are available.
-7. Review and approve one proposed Abyss/Anathema child from `KIT_ABY_ShadowFlame_A01` before any DCC build.
-8. Review `KIT_GNM_IonaSiegebreaker_A01` and choose whether Iona's pilot, heavy Mek, or arc cannons should become a child production package.
-9. Review the staged `SK_GIA_Base_A01` Unreal close-up capture and either approve it as the Giant hand/body scale lock or request scale/proportion changes.
-10. Continue Ogre final-art planning from the imported `SK_OGR_Base_A01`, `SK_OGR_Teknomancer_A01`, `SK_OGR_Warrior_Rival_A01`, `SK_OGR_Shaman_A01`, and `SK_OGR_Necromancer_A01` review slices, then resolve the final shared Ogre rig and art-model handoff order.
-11. Split `BloodAxeArmory.png` into `KIT_GIA_BloodAxeArmory_A01` child IDs after the Giant Unreal visual is approved.
-12. Review Giant cave-town lore images and approve whether `KIT_GIA_MountainCaveTown_A01` or `KIT_GIA_BloodAxeRitualStones_A01` should become the first Giant environment production package.
-13. Add final `BP_AET_Portal_A01` traversal, VFX, audio, and destination registry only after gameplay rules are approved.
+7. Use `docs/assets/APPROVAL_QUEUE.md` to clear the remaining approval-gated production lanes.
+8. Review and approve one proposed Abyss/Anathema child from `KIT_ABY_ShadowFlame_A01` before any DCC build; production-efficient default is `SK_ABY_BlackPikeTrooper_A01`.
+9. Review `KIT_GNM_IonaSiegebreaker_A01` and choose whether Iona's pilot, heavy Mek, or arc cannons should become a child production package; package docs recommend starting with `SK_GNM_IonaSiegebreakerMek_A01`.
+10. Approve rebuilding/rescaling `SK_GIA_Base_A01` to the current A04 Giant baselines, or request scale/proportion changes before Blood Axe armory, cave-town, or Giant environment work.
+11. Continue Ogre final-art planning from the imported `SK_OGR_Base_A01`, `SK_OGR_Teknomancer_A01`, `SK_OGR_Warrior_Rival_A01`, `SK_OGR_Shaman_A01`, and `SK_OGR_Necromancer_A01` review slices, then resolve the final shared Ogre rig and art-model handoff order.
+12. Split `BloodAxeArmory.png` into `KIT_GIA_BloodAxeArmory_A01` child IDs after the Giant rebuild/rescale decision is approved.
+13. Review Giant cave-town lore images and approve whether `KIT_GIA_MountainCaveTown_A01` or `KIT_GIA_BloodAxeRitualStones_A01` should become the first Giant environment production package.
+14. Add final `BP_AET_Portal_A01` traversal, VFX, audio, and destination registry only after gameplay rules are approved.
 
 ## Production Rule
 

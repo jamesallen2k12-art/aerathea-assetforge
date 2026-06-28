@@ -168,9 +168,12 @@ Next priority order:
 4. Complete the final Ogre shared-rig/art-model fit after `Tools/Unreal/validate_ogre_shared_skeletons.py` confirms current first-pass skeleton binding.
 5. Follow `docs/assets/kits/KIT_GNM_OGR_RivalryEncounter_A01/FINAL_ART_REPLACEMENT_PLAN.md` when replacing first-pass review meshes with approved art-model geometry, final UVs, authored texture sets, and tuned collision after the relevant final art directions are approved.
 6. Use `docs/assets/GNOME_GRYPHON_FOLLOWUP_READINESS.md` and `Tools/Unreal/validate_gnome_gryphon_followup_readiness.py` before tuning gnome and gryphon physics bodies, sockets, and animation Blueprint logic into real locomotion/attachment tests after approved final sculpt, skin, and animation direction is available.
-7. Review and approve one proposed Abyss/Anathema child from `KIT_ABY_ShadowFlame_A01` before any DCC build.
-8. Implement final `BP_AET_Portal_A01` traversal/VFX/audio/destination behavior after portal gameplay rules are approved.
-9. Continue collage-aware intake on the remaining `ASSET CONCEPTS` categories.
+7. Use `docs/assets/APPROVAL_QUEUE.md` to clear remaining approval-gated lanes before starting Abyss, Iona, Giant rebuild, or portal final-behavior production.
+8. Review and approve one proposed Abyss/Anathema child from `KIT_ABY_ShadowFlame_A01` before any DCC build; production-efficient default is `SK_ABY_BlackPikeTrooper_A01`.
+9. Review `KIT_GNM_IonaSiegebreaker_A01` and approve whether the first child package is the heavy Mek, pilot, or arc cannons; package docs recommend starting with `SK_GNM_IonaSiegebreakerMek_A01`.
+10. Approve rebuilding/rescaling `SK_GIA_Base_A01` to the current A04 Giant baselines, or request proportion changes before Blood Axe and Giant environment production.
+11. Implement final `BP_AET_Portal_A01` traversal/VFX/audio/destination behavior after portal gameplay rules are approved.
+12. Continue collage-aware intake on the remaining `ASSET CONCEPTS` categories.
 
 ## First Asset Production Rule
 
