@@ -107,7 +107,7 @@ Create an original stylized fantasy MMORPG concept image of `SK_OGR_Teknomancer_
 - Asset type: Skeletal Mesh class outfit / gear configuration.
 - Primary mesh: `SK_OGR_Teknomancer_A01`.
 - Parent body: `SK_OGR_Base_A01`.
-- Skeleton: use Ogre base skeleton unless a later rig review requires class-specific auxiliary bones.
+- Skeleton: use `/Game/Aerathea/Characters/Ogres/Base/SK_OGR_Base_Male_A01_Skeleton`; current first-pass validation uses `Tools/Unreal/validate_ogre_shared_skeletons.py`, and class-specific auxiliary bones require a later shared-rig review.
 - Physics asset: inherit base physics, add simplified auxiliary bodies for hammer/back reactor only when needed.
 - Animation Blueprint: `ABP_OGR_Teknomancer_A01`, derived from future Ogre base locomotion.
 - Unreal path: `/Game/Aerathea/Characters/Ogres/Teknomancer/`.
@@ -133,6 +133,7 @@ Create an original stylized fantasy MMORPG concept image of `SK_OGR_Teknomancer_
 - Scale remains below Giants and above Minotaurs.
 - Teknomancy reads crude, oversized, dangerous, and instinctive.
 - Core silhouette is readable at MMO camera distance.
+- Shared Ogre skeleton validation passes for the saved mesh, physics asset, and required class sockets.
 - Glow is limited to reactor, hammer core, bracer vents, and rune cuts.
 - Major hardware is real geometry; micro-detail is texture/normal detail.
 - Base body, sockets, animation fit, collision, triangle budget, LODs, and Unreal paths are defined.

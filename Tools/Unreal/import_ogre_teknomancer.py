@@ -270,18 +270,12 @@ def skeletal_mesh_skeleton(mesh):
 def log_skeleton_binding(mesh, expected_skeleton_path):
     skeleton = skeletal_mesh_skeleton(mesh)
     if skeleton is None:
-        unreal.log_warning("{} has no skeleton after import.".format(mesh.get_name()))
-        return
+        raise RuntimeError("{} has no skeleton after import.".format(mesh.get_name()))
     skeleton_path = asset_path_without_object(skeleton)
     if skeleton_path != expected_skeleton_path:
-        unreal.log_warning(
-            "{} is bound to {}, expected {}. Final rig pass must resolve this before production animation.".format(
-                mesh.get_name(),
-                skeleton_path,
-                expected_skeleton_path,
-            )
+        raise RuntimeError(
+            "{} is bound to {}, expected {}".format(mesh.get_name(), skeleton_path, expected_skeleton_path)
         )
-        return
     unreal.log("{} bound to expected skeleton {}.".format(mesh.get_name(), expected_skeleton_path))
 
 

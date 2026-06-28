@@ -17,7 +17,7 @@
   - `Saved/Automation/OgreBaseReview/SK_OGR_Base_A01_DCCReview.png`
   - `Saved/Automation/StartupReview/AeratheaStartupReview_OgreScale_A01.png`
   - `Saved/Automation/StartupReview/AeratheaStartupReview_OgreScale_A01_Crop.png`
-- Validation: `Tools/Unreal/validate_startup_scene.py` passes through `UnrealEditor-Cmd`.
+- Validation: `Tools/Unreal/validate_startup_scene.py` passes through `UnrealEditor-Cmd`; `Tools/Unreal/validate_ogre_shared_skeletons.py` validates the male Ogre base skeleton binding across the current Teknomancer, Warrior, Shaman, and Necromancer class meshes.
 
 ## Completed Prerequisites
 

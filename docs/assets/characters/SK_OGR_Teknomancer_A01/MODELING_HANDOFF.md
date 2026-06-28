@@ -30,10 +30,12 @@ Build the first class-fit Ogre Teknomancer over the approved Ogre male base. Thi
 ## Unreal Contract
 
 - Skeletal mesh: `/Game/Aerathea/Characters/Ogres/Teknomancer/SK_OGR_Teknomancer_A01`
+- Shared skeleton: `/Game/Aerathea/Characters/Ogres/Base/SK_OGR_Base_Male_A01_Skeleton`
 - Physics asset: `/Game/Aerathea/Characters/Ogres/Teknomancer/PHYS_OGR_Teknomancer_A01`
 - Animation Blueprint: `/Game/Aerathea/Characters/Ogres/Teknomancer/ABP_OGR_Teknomancer_A01`
 - Startup actor: `AET_PROD_OgreTeknomancer_A01`
 - Import script: `Tools/Unreal/import_ogre_teknomancer.py`
+- Rig validation: `Tools/Unreal/validate_ogre_shared_skeletons.py`
 - Material instances: `/Game/Aerathea/Materials/Instances/MI_OGR_Teknomancer_A01_*`
 
 ## Required Sockets
@@ -57,6 +59,7 @@ Build the first class-fit Ogre Teknomancer over the approved Ogre male base. Thi
 
 - Replace the blockout hammer with a sculpted powered crusher tool in the 190-240 cm range.
 - Retopo armor modules so final shoulder/bracer hardware does not clip heavy attack poses.
+- Keep the final Teknomancer outfit bound to the Ogre male base skeleton; class imports must not update the shared skeleton reference pose.
 - Add clear material separation for skin, iron, leather, brass/copper, trophies, and emissive Tek glow.
 - Keep emissive forge-orange focused on reactor windows, hammer core, bracer vents, and rune cuts.
 - Retain the final gameplay capsule from the Ogre base and use simplified auxiliary collision for hammer/back hardware only if needed.
@@ -67,4 +70,4 @@ Build the first class-fit Ogre Teknomancer over the approved Ogre male base. Thi
 - Gear reads as crude Teknomancy, not precise Gnome Mek craft.
 - Scale remains between Minotaur and Giant anchors.
 - Primary silhouette is readable from MMO camera distance.
-- Sockets, LODs, physics asset, and startup review actor validate before final sculpt work starts.
+- Sockets, LODs, physics asset, shared skeleton binding, and startup review actor validate before final sculpt work starts.
