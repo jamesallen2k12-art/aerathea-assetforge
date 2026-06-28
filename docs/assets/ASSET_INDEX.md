@@ -112,6 +112,9 @@
 | `SK_INF_Base_A01` | First-pass Blender source/FBX generated, compact/tall adult skeletal meshes imported, material instances and LOD0-LOD3 generated, sockets/physics/ABP placeholders created, startup scale/silhouette review approved; final adult body-band art direction ready; adult, lit-brand, sorcerer, and gate-guard source variants routed | `docs/assets/characters/SK_INF_Base_A01/PRODUCTION_PACKAGE.md` |
 | `SK_INF_Lesser_A01` | First-pass Blender source/FBX generated, lifecycle skeletal meshes imported for Spawn, 1st Kill, Blooded, Elder, Ancient; material instances and LOD0-LOD3 generated, sockets/physics/ABP placeholders created, startup scale/lifecycle silhouette review approved; child, clutch, and Lesser source variants routed | `docs/assets/characters/SK_INF_Lesser_A01/PRODUCTION_PACKAGE.md` |
 | `SK_INF_Mage_A01` | Production package and modeling handoff ready for the first Infernal class overlay; uses approved A03 sorcerer cleanse anchors, `SK_INF_Base_A01`, and `MI_INF_BrandGlowStates_A01`; DCC build not started | `docs/assets/characters/SK_INF_Mage_A01/PRODUCTION_PACKAGE.md` |
+| `SK_INF_Warrior_A01` | Production package and modeling handoff ready for the Infernal natural-weapon melee class overlay; DCC build not started | `docs/assets/characters/SK_INF_Warrior_A01/PRODUCTION_PACKAGE.md` |
+| `SK_INF_Rogue_A01` | Production package and modeling handoff ready for the Infernal stealth/ambush class overlay; DCC build not started | `docs/assets/characters/SK_INF_Rogue_A01/PRODUCTION_PACKAGE.md` |
+| `SK_INF_Hunter_A01` | Production package and modeling handoff ready for the Infernal tracking/pursuit class overlay; DCC build not started | `docs/assets/characters/SK_INF_Hunter_A01/PRODUCTION_PACKAGE.md` |
 | `SK_DWR_Helm_Stonebound_A01` | Priority production package ready; DCC build not started | `docs/assets/characters/SK_DWR_Helm_Stonebound_A01/PRODUCTION_PACKAGE.md` |
 
 ## Creatures
