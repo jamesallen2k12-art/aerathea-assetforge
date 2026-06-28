@@ -150,7 +150,8 @@ Use 2K texture sets for common characters and props. Use 4K only for a named her
 - `SK_CRE_Manticore_Interrupt_A01` has a first-pass DCC/Unreal review import as an encounter variant with material instances, physics asset, sockets, startup placement, validation, and build/import status.
 - `BP_OGR_CrudeTekPylon_A01` and `BP_CRE_ManticoreInterrupt_A01` have native-backed wrapper Blueprints, startup review actors, state contracts, and coordinator wiring.
 - `BP_GNM_OGR_BattlefieldEncounter_A01` has a native-backed coordinator class and compiled Blueprint asset with dependency validation, phase-state controls, actor slots, trigger volumes, optional-branch gates, shieldwall impact/pylon/caster/Manticore event hooks, startup placement, and assigned required/branch actor references.
-- Current approved sequence is complete through first-pass startup wiring. Next work should review the updated capture, then author final VFX/ability timing or move into gameplay phase automation.
+- Final-art replacement dependency order is documented in `docs/assets/kits/KIT_GNM_OGR_RivalryEncounter_A01/FINAL_ART_REPLACEMENT_PLAN.md`.
+- Current approved sequence is complete through first-pass startup wiring. Next work should follow the final-art replacement plan: lock shared character foundations, replace class/vehicle blockouts, then tune static props, textures, collision, physics, animation, and final VFX.
 
 ## Quality Gate Checklist
 
