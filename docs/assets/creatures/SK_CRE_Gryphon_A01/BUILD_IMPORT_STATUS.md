@@ -10,7 +10,7 @@
   - `/Game/Aerathea/Creatures/Gryphon/Base/PHYS_CRE_Gryphon_A01`
   - `/Game/Aerathea/Creatures/Gryphon/Base/ABP_CRE_Gryphon_A01`
   - `/Game/Aerathea/Creatures/Gryphon/Base/SK_CRE_Gryphon_A01_Anim`
-- Validation: `Tools/Unreal/validate_startup_scene.py` passes through `UnrealEditor-Cmd`
+- Validation: `Tools/Unreal/validate_startup_scene.py` and `Tools/Unreal/validate_gnome_gryphon_followup_readiness.py` pass through `UnrealEditor-Cmd`
 
 ## Completed Prerequisites
 

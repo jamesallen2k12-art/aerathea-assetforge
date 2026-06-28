@@ -9,7 +9,7 @@
   - `/Game/Aerathea/Characters/Gnomes/Base/SK_GNM_Base_A01_Skeleton`
   - `/Game/Aerathea/Characters/Gnomes/Base/PHYS_GNM_Base_A01`
   - `/Game/Aerathea/Characters/Gnomes/Base/ABP_GNM_Base_A01`
-- Validation: `Tools/Unreal/validate_startup_scene.py` passes through `UnrealEditor-Cmd`
+- Validation: `Tools/Unreal/validate_startup_scene.py` and `Tools/Unreal/validate_gnome_gryphon_followup_readiness.py` pass through `UnrealEditor-Cmd`
 - Attachment preview: `AET_PROD_MKG_ToolPack_BackFit_A01` validates within 2 cm of the `back_pack` socket in `L_Aerathea_Startup`
 
 ## Completed Prerequisites

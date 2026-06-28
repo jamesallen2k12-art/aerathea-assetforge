@@ -19,9 +19,10 @@ Build status:
 - Unreal physics asset: `/Game/Aerathea/Creatures/Gryphon/Base/PHYS_CRE_Gryphon_A01`
 - Animation Blueprint placeholder: `/Game/Aerathea/Creatures/Gryphon/Base/ABP_CRE_Gryphon_A01`
 - Animation blockout: `/Game/Aerathea/Creatures/Gryphon/Base/SK_CRE_Gryphon_A01_Anim`
-- Validation: included in `Tools/Unreal/validate_startup_scene.py`
+- Validation: included in `Tools/Unreal/validate_startup_scene.py` and focused follow-up readiness in `Tools/Unreal/validate_gnome_gryphon_followup_readiness.py`
 - Technical polish complete: per-asset material instances, review sockets, and generated LOD0-LOD3.
 - Remaining production work: approved golden gryphon sculpt/retopo, clean skin weights, final authored sockets, UVs, BC/N/ORM texture sets, tuned physics bodies, real animation Blueprint logic, and the full locomotion/attack/death animation set.
+- Follow-up readiness handoff: `docs/assets/GNOME_GRYPHON_FOLLOWUP_READINESS.md`
 
 Create the first Aerathea creature package: a noble gryphon with eagle head, eagle wings and talons, lion rear body, lion hind legs, and lion tail. It should feel majestic and powerful, but still buildable as a mid-poly MMO creature with aggressive LODs.
 
