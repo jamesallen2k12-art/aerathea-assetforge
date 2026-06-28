@@ -8,6 +8,8 @@ The approved lifecycle stages are Spawn, 1st Kill, Blooded, Elder, and Ancient. 
 
 The production lifecycle stage sheet is locked in `LIFECYCLE_STAGE_SHEET.md`, including stage height bands, material progression, collision targets, and stage-specific animation reads.
 
+All Lesser Infernal source images must pass through `docs/assets/characters/INFERNAL_VISUAL_CLEANSE_STANDARD.md` before they become modeling, texture, VFX, or prompt requirements.
+
 ## Gameplay Purpose
 
 This package supports juvenile Infernal NPCs, lifecycle lore art, stealth/ambush encounters, cult den encounters, bloodline growth events, and future adult Infernal body planning. It establishes the stage names and body language needed before creating `SK_INF_Base_A01` final body variants or Infernal class packages.
@@ -49,12 +51,12 @@ Production height bands are defined in `LIFECYCLE_STAGE_SHEET.md`: Spawn 70-90 c
 - Skin: ember red, ash red, crimson, dark umber, or muted infernal red.
 - Claws/horns: black keratin, dark horn tips, subtle worn edges.
 - Wings: dark leathery membrane with red-brown undertone.
-- Eyes/marks: restrained abyssal red-orange or violet eye glow.
+- Eyes/marks: readable abyssal red-orange or violet eye glow.
 - Ritual elements: charcoal leather, blood-dark wraps, bone/obsidian beads, ash markings, Balgoroth brand marks.
 
 ## Concept Image Prompt
 
-Create an original stylized fantasy MMORPG lifecycle concept sheet of Lesser Infernals for the world of Aerathea. The design should emphasize the approved stages Spawn, 1st Kill, Blooded, Elder, and Ancient; demon/mortal hybrid birth; fully autonomous newborn behavior; violent culling temper; rapid first-year growth by feeding on the slain; reddish skin; black claws; horn, wing, tail, eye, posture, and skin development; cult upbringing; and production-friendly MMO silhouettes. Use hand-painted texture detail, readable shapes, baked-AO-style depth, normal-map-style surface detail, sparing emissive eye and brand accents, and MMO-safe production design. Present it as a clean lifecycle/body-stage sheet with scale callouts, material swatches, folded and open wing notes, tail callouts, claw detail, and a 180 cm humanoid comparison. Avoid copied franchise designs, gore, excessive particles, readable text, watermarks, and weapon-focused designs.
+Create an original stylized fantasy MMORPG lifecycle concept sheet of Lesser Infernals for the world of Aerathea. The design should emphasize the approved stages Spawn, 1st Kill, Blooded, Elder, and Ancient; demon/mortal hybrid birth; fully autonomous newborn behavior; violent culling temper; rapid first-year growth by feeding on the slain; reddish skin; black claws; horn, wing, tail, eye, posture, and skin development; cult upbringing; skull/bone villain language where age-appropriate; and production-friendly MMO silhouettes. Use hand-painted texture detail, readable shapes, baked-AO-style depth, normal-map-style surface detail, focused emissive eye and brand accents, and MMO-safe production design. Present it as a clean lifecycle/body-stage sheet with scale callouts, material swatches, folded and open wing notes, tail callouts, claw detail, and a 180 cm humanoid comparison. Clean the design for production readability: full body visible, feet and wings uncropped, readable midtone lighting, clear separation between red skin, black armor, dark wings, and background. If the source is too dark, start from a roughly 30 percent brighter pass. Use A03-style cleanup by default: reduce tiny repeated rivets, random speckle artifacts, malformed micro-spikes, broken micro-chains, torn-strip noise, dense spell clutter that hides anatomy, and photoreal surface garbage. Preserve skulls, bones, flame, lightning, glowing eyes, anger, and villain threat where appropriate for the stage. Avoid copied franchise designs, gore, excessive particles, readable text, watermarks, and weapon-focused designs.
 
 ## Modeling Notes
 
@@ -72,7 +74,7 @@ Create an original stylized fantasy MMORPG lifecycle concept sheet of Lesser Inf
   - `T_INF_Lesser_A01_BC`
   - `T_INF_Lesser_A01_N`
   - `T_INF_Lesser_A01_ORM`
-  - `T_INF_Lesser_A01_E` for eyes, brands, and restrained magic only.
+  - `T_INF_Lesser_A01_E` for eyes, brands, and focused magic only.
 - Material slots: skin, horn/claw, wing membrane, ritual wraps/brands, emissive.
 - Use 2K shared texture set for lifecycle sheet; 4K only for hero Ancient or cinematic use.
 
@@ -103,7 +105,7 @@ Create an original stylized fantasy MMORPG lifecycle concept sheet of Lesser Inf
 - 1st Kill: lunge, ambush, feeding crouch, rage idle.
 - Blooded: stalk, leap, claw combo, short wing burst, tail balance.
 - Elder: controlled idle, wing flare, claw strike, tail sweep, cast/see-invisible gesture.
-- Ancient: restrained idle, slow predatory turn, authority gesture, wing mantle, ritual mark activation.
+- Ancient: controlled idle, slow predatory turn, authority gesture, wing mantle, ritual mark activation.
 
 ## Unreal Import Notes
 

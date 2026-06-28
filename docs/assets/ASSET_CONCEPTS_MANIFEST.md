@@ -126,6 +126,8 @@ The Ogre addendum contains 31 source concepts added after the previous manifest 
 
 The current source folder adds 88 files after the 2026-06-26 Ogre pass: 63 Infernal/Balgoroth references, 21 Gnome-vs-Ogre encounter references, and 4 Gnome heavy Mek references. The Infernal set confirms adult body, Lesser lifecycle, sorcerer, lit-brand, gate-guard, clutch, and cult-space routing. The Gnome/Ogre set establishes a dedicated rivalry encounter package instead of treating these images as standalone Gnome or Ogre body references.
 
+All Infernal/Balgoroth references in this section route through `docs/assets/characters/INFERNAL_VISUAL_CLEANSE_STANDARD.md` before becoming modeling, prompt, VFX, or texture requirements.
+
 | Source concept | Category | Faction/theme | Build interpretation |
 | --- | --- | --- | --- |
 | `INfernalBoy2.png` | Character/NPC/class | Infernal/Balgoroth cult | Lesser Infernal boy stage reference; route to `SK_INF_Lesser_A01` Spawn or 1st Kill variants |

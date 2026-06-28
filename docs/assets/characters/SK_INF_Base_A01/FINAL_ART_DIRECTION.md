@@ -4,7 +4,7 @@
 
 `SK_INF_Base_A01` is the production body/style sheet for adult Infernals. The first-pass compact and tall blockouts are approved for scale and silhouette, so this sheet locks the adult design language for sculpt, retopo, UV, texture, rig, animation, and future class variants.
 
-Infernals should read as a mortal-descended demonic race that willingly embraced Balgoroth's gifts. They are not generic demons and not true Abyss creatures. Their base identity is a society of predatory, ambitious, cult-bound people whose bodies have become weapons: horns, large leathery wings, long thick tails, black claws, regenerative scar language, and restrained eye/brand glow.
+Infernals should read as a mortal-descended demonic race that willingly embraced Balgoroth's gifts. They are not generic demons and not true Abyss creatures. Their base identity is a society of predatory, ambitious, cult-bound people whose bodies have become weapons: horns, large leathery wings, long thick tails, black claws, regenerative scar language, skull/bone villain iconography where appropriate, and readable eye/brand glow.
 
 ## Gameplay Purpose
 
@@ -14,15 +14,26 @@ Adult Infernals support playable race exploration, hostile cult factions, elite 
 
 The 2026-06-27 source addendum strengthens this sheet with adult body, lit-brand, sorcerer, and cult-gate scene references.
 
+Apply the approved cleanse standard in `docs/assets/characters/INFERNAL_VISUAL_CLEANSE_STANDARD.md` before using any Infernal source image as a production target. The concept images are direction references, not literal modeling requirements.
+
 | Source group | Routed use |
 | --- | --- |
 | `InfernalFemale*.png`, `Infernalfemale3.png` | Adult female body, outfit, horn, wing, tail, and class-variant references for the sex-variant matrix |
-| `InfernalFemaleLit*.png` | Lit brand, eye glow, scar-emissive, and restrained material-state references |
+| `InfernalFemaleLit*.png` | Lit brand, eye glow, scar-emissive, and readable material-state references |
 | `InfernalMale*.png` | Adult male body, horn mass, wing fold, tail proportion, and class-variant references |
 | `InfernalMaleLit.png` | Male lit-brand material and emissive-state reference |
 | `InfernalMaleSorcerer*.png` | Future `SK_INF_Mage_A01` source for mage posture, brand-channeling, and cult VFX gestures |
 | `Infernals.png` | Adult group hierarchy, body-band comparison, and faction silhouette source |
 | `Infernals Guarding a Gate*.png` | Adult guard bearing plus `KIT_INF_BalgorothCult_A01` gate/arch encounter reference |
+
+## Approved Clean Anchors
+
+| Anchor | Source image | Use |
+| --- | --- | --- |
+| Adult male base | `InfernalMaleLit.png` | Primary male guideline for readable body, wings, tail, claws, horn mass, and focused material value. |
+| Adult female base | `InfernalFemaleLit2.png` | Primary female guideline for full-body silhouette, wing read, armor/body separation, and tail mass. |
+| Adult sorcerer | `InfernalMaleSorcererLit.png` | Mage hierarchy, ritual hand shapes, and brand-channeling; reduce the spell circles and sigil density. |
+| Lesser/action crossover | `LesserInfernal24.png` | Secondary bright-combat reference for encounter staging and Lesser aggression, not adult base proportions. |
 
 ## Locked Adult Body Bands
 
@@ -56,11 +67,11 @@ Sex-specific variants can be layered later through face, torso, hip, voice, hair
 | Wings | dark leather, red-brown membrane, blackened leading fingers | membranes use broad value planes; fine veins stay in texture |
 | Ritual wraps | charcoal leather, ash cloth, scorched hide | limited straps, no clutter that hurts animation or silhouette |
 | Ornaments | obsidian, blackened iron, bone, horn fragments | large readable pieces only; small beads in texture when possible |
-| Emissive | ember orange, deep red, restrained violet | eyes, brands, mage marks, regeneration core, invisible-sight cues only |
+| Emissive | ember orange, deep red, focused violet | eyes, brands, mage marks, regeneration core, invisible-sight cues only |
 
 ## Concept Image Prompt
 
-Create an original stylized fantasy MMORPG adult race production sheet of Infernals for the world of Aerathea. The design should emphasize a mortal-descended demonic race blessed by Balgoroth, adult body bands from compact 5'0" rogues to exalted 9'0" champions, reddish skin, black claws, required horns, large folded leathery wings, long thick tails, regenerative healed-scar language, invisible-sight eye glow, natural-weapon combat, predatory upright posture, cult hierarchy, and restrained abyssal brand marks. Use hand-painted texture detail, readable shapes, baked-AO-style depth, normal-map-style surface detail, sparing emissive accents, and MMO-friendly production design. Present it as a clean character production sheet with compact, standard, greater, and exalted body bands, front/side/back views, folded and spread wing callouts, horn families, claw detail, tail motion callouts, material swatches, and a 180 cm humanoid scale marker. Avoid copied franchise designs, gore, excessive particles, readable text, watermarks, and weapon-focused designs.
+Create an original stylized fantasy MMORPG adult race production sheet of Infernals for the world of Aerathea. The design should emphasize a mortal-descended demonic race blessed by Balgoroth, adult body bands from compact 5'0" rogues to exalted 9'0" champions, reddish skin, black claws, required horns, large folded leathery wings, long thick tails, regenerative healed-scar language, invisible-sight eye glow, natural-weapon combat, predatory upright posture, cult hierarchy, major skull/bone villain iconography where appropriate, flame or lightning-like abyssal power effects for caster variants, and readable abyssal brand marks. Use hand-painted texture detail, readable shapes, baked-AO-style depth, normal-map-style surface detail, focused emissive accents, and MMO-friendly production design. Present it as a clean character production sheet with compact, standard, greater, and exalted body bands, front/side/back views, folded and spread wing callouts, horn families, claw detail, tail motion callouts, material swatches, and a 180 cm humanoid scale marker. Clean the design for production readability: full body visible, feet and wings uncropped, readable midtone lighting, clear separation between red skin, black armor, dark wings, and background. If the source is too dark, start from a roughly 30 percent brighter pass. Use A03-style cleanup by default: reduce tiny repeated rivets, random speckle artifacts, malformed micro-spikes, broken micro-chains, torn-strip noise, dense spell clutter that hides anatomy, and photoreal surface garbage. Preserve skulls, bones, flame, lightning, glowing eyes, anger, and villain threat. Avoid copied franchise designs, gore, excessive particles, readable text, watermarks, and weapon-focused designs.
 
 ## Modeling Notes
 
@@ -88,7 +99,7 @@ Material slot target:
 - Ritual wraps and ornaments
 - Emissive brands/eyes
 
-Use 2K as the default production texture set. Use 4K only for named leaders, cinematic bodies, or hero Exalted variants. Emissive masks must remain sparse and readable at MMO camera distance.
+Use 2K as the default production texture set. Use 4K only for named leaders, cinematic bodies, or hero Exalted variants. Emissive masks must remain focused and readable at MMO camera distance.
 
 ## Triangle Budget
 
@@ -155,6 +166,6 @@ Class overlays:
 - Horns, wings, tail, and black claws are present and readable.
 - Design reads as a mortal-descended demonic race with society, not a one-off monster.
 - No mortal weapon is required to understand the race.
-- Regeneration and invisible sight have restrained, buildable visual hooks.
+- Regeneration and invisible sight have controlled, buildable visual hooks.
 - Wing, tail, claw, socket, collision, and LOD needs are production-ready.
-- Materials use red/black/ash/obsidian/ember language without excessive glow.
+- Materials use red/black/ash/obsidian/ember language with readable eye, brand, fire, lightning, and ritual glow where appropriate.

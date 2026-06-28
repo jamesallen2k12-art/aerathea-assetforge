@@ -8,6 +8,8 @@ Their bodies must communicate willing transformation: reddish skin, black claws,
 
 The final adult production art direction is locked in `FINAL_ART_DIRECTION.md`, using body-type bands instead of a strict male/female height split: Compact, Standard, Greater, and Exalted.
 
+All adult Infernal source images must pass through `docs/assets/characters/INFERNAL_VISUAL_CLEANSE_STANDARD.md` before they become modeling, texture, VFX, or prompt requirements.
+
 ## Gameplay Purpose
 
 The base package supports playable or NPC race development, enemy faction variants, cult leaders, hunters, rogues, mages, and natural-weapon combat. It provides the adult body target that later class packages will build on:
@@ -46,11 +48,11 @@ The base package supports playable or NPC race development, enemy faction varian
 - Horns/claws: black keratin, dark horn tips, worn edges.
 - Wings: dark leather membrane, red-brown undertone, thicker leading fingers.
 - Ritual material: charcoal leather, ash cloth, bone beads, obsidian ornaments, scorched metal.
-- Glow: restrained eye glow, chest/forehead/hand brands, mage spell marks, invisible-sight accents.
+- Glow: readable eye glow, chest/forehead/hand brands, mage spell marks, fire/lightning-like abyssal power for caster variants, and invisible-sight accents.
 
 ## Concept Image Prompt
 
-Create an original stylized fantasy MMORPG race body/style concept sheet of adult Infernals for the world of Aerathea. The design should emphasize a mortal-descended demonic race blessed by Balgoroth, reddish skin, black claws, required horns, large leathery wings, long thick tail, regenerative scar language, invisible-sight eye glow, natural-weapon combat, contempt for mortal weaponry, predatory upright posture, and adult scale range from 5'0" to 9'0". Use hand-painted texture detail, readable MMO shapes, baked-AO-style depth, normal-map-style surface detail, sparing emissive accents, and production-friendly forms. Present it as a body/style sheet with compact and tall adult bodies, folded and spread wing views, tail callouts, horn variants, claw detail, material swatches, natural-weapon poses, and a 180 cm humanoid comparison. Avoid copied franchise designs, gore, excessive particles, readable text, watermarks, and weapon-focused designs.
+Create an original stylized fantasy MMORPG race body/style concept sheet of adult Infernals for the world of Aerathea. The design should emphasize a mortal-descended demonic race blessed by Balgoroth, reddish skin, black claws, required horns, large leathery wings, long thick tail, regenerative scar language, invisible-sight eye glow, natural-weapon combat, contempt for mortal weaponry, predatory upright posture, major skull/bone villain iconography where appropriate, and adult scale range from 5'0" to 9'0". Use hand-painted texture detail, readable MMO shapes, baked-AO-style depth, normal-map-style surface detail, focused emissive accents, and production-friendly forms. Present it as a body/style sheet with compact and tall adult bodies, folded and spread wing views, tail callouts, horn variants, claw detail, material swatches, natural-weapon poses, and a 180 cm humanoid comparison. Clean the design for production readability: full body visible, feet and wings uncropped, readable midtone lighting, clear separation between red skin, black armor, dark wings, and background. If the source is too dark, start from a roughly 30 percent brighter pass. Use A03-style cleanup by default: reduce tiny repeated rivets, random speckle artifacts, malformed micro-spikes, broken micro-chains, torn-strip noise, dense spell clutter that hides anatomy, and photoreal surface garbage. Preserve skulls, bones, flame, lightning, glowing eyes, anger, and villain threat. Avoid copied franchise designs, gore, excessive particles, readable text, watermarks, and weapon-focused designs.
 
 ## Modeling Notes
 
@@ -98,7 +100,7 @@ Create an original stylized fantasy MMORPG race body/style concept sheet of adul
 
 - Base: idle, walk, run, turn, jump/land or wing-assisted hop, hit react, death, interact.
 - Natural combat: claw combo, bite/snarl, tail sweep, wing buffet, leap, pounce, execute pose.
-- Utility: see-invisible focus gesture, regeneration flare, restrained rage idle.
+- Utility: see-invisible focus gesture, regeneration flare, controlled rage idle.
 - Wing states: folded idle, flare, short burst, glide test if approved, damaged-fold variant.
 
 ## Unreal Import Notes
@@ -128,6 +130,6 @@ Create an original stylized fantasy MMORPG race body/style concept sheet of adul
 - Infernals read as mortal-descended demonic race, not true Abyss demons.
 - Horns, wings, tail, and black claws are mandatory silhouette features.
 - Natural-weapon doctrine is respected; no mortal weapon dependency.
-- Regeneration and invisible sight have restrained visual hooks.
+- Regeneration and invisible sight have controlled visual hooks.
 - Wing/tail/claw rig and collision needs are defined.
 - Texture maps, LODs, sockets, Unreal paths, and performance budgets are included.

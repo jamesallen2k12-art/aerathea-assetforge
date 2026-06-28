@@ -17,7 +17,7 @@
 - Tail must be thick and readable in side/back view, not a thin decorative cord.
 - Claws must be visible on hands in neutral and combat poses.
 - Regeneration should show through healed scars, skin seam marks, or subtle ember-vein texture, not gore.
-- Invisible sight should show through eyes, brow marks, or restrained VFX, not oversized particles.
+- Invisible sight should show through eyes, brow marks, or controlled VFX, not oversized particles.
 
 ## Stage Rules For Lesser Infernals
 
@@ -35,7 +35,19 @@
 - Keratin family: black claws, black horn tips, worn horn edges.
 - Wing family: dark leathery membrane with red-brown undertones.
 - Ritual family: charcoal leather, ash cloth, obsidian, bone, scorched metal.
-- Glow family: restrained red-orange, ember, or violet abyssal accents for eyes, brands, and mage marks.
+- Glow family: readable red-orange, ember, or violet abyssal accents for eyes, brands, mage marks, flame, lightning-like energy, and ritual power.
+
+## Visual Cleanse Rules
+
+- Use `docs/assets/characters/INFERNAL_VISUAL_CLEANSE_STANDARD.md` when evaluating Infernal source images or writing new Infernal prompts.
+- Prefer `InfernalMaleLit.png` and `InfernalFemaleLit2.png` as the adult base anchors.
+- Prefer `InfernalMaleSorcererLit.png` for mage posture and brand-channeling after reducing spell-circle density.
+- Prefer `LesserInfernal24.png` as the bright Lesser/action anchor, with cinematic clutter reduced.
+- Brighten midtones enough that red skin, black armor, dark wings, tail, and claws remain readable. If the source is too dark, start from a roughly 30 percent brighter pass before cleanup.
+- Reduce tiny repeated rivets, random speckle artifacts, malformed micro-spikes, broken micro-chains, hanging noise, torn-strip noise, dense floor sigils, and glow fuzz that hides anatomy.
+- Preserve skull/bone villain iconography, flame, lightning-like abyssal energy, glowing eyes, anger, and threat when those elements support Infernal identity.
+- Prefer A03-style cleanup that keeps glow, menace, skulls, and useful detail. Use stronger A04-style cleanup only when A03 remains too noisy.
+- Keep broad forms as geometry and push fine membrane veins, scars, scratches, small brands, and tiny surface details into texture/normal/emissive maps.
 
 ## Do Not Use
 

@@ -14,6 +14,8 @@ The lifecycle sheet supports cult den encounters, early Infernal threats, bloodl
 
 The 2026-06-27 source addendum supplies dedicated Lesser Infernal and child references beyond the first-pass scale proxies. These images route into the lifecycle matrix, not into a separate ordinary child race package.
 
+All source concepts in this routing pass through `docs/assets/characters/INFERNAL_VISUAL_CLEANSE_STANDARD.md` before they become production requirements. Use the images for stage language, posture, wing/tail/claw development, and encounter mood, then reduce noisy micro-detail, excessive VFX, crop-heavy framing, and mortal-weapon emphasis.
+
 | Source group | Routed use |
 | --- | --- |
 | `Infernal Children.png`, `InfernalClutch.png` | Spawn/1st Kill group staging, clutch behavior, den population, and trial-space scale references |
@@ -50,13 +52,13 @@ First-pass review heights remain valid for current DCC proxies: 80 cm, 115 cm, 1
 | --- | --- | --- | --- | --- |
 | Spawn | warm ember red, softer dark joints | glossy black claw tips, tiny horn buds | short tail, dark folded ridges | tiny eye glow, faint chest mark |
 | 1st Kill | red with fresh darker scar islands | sharper black claws, horn nubs | lengthened tail, first membrane | first brand pulse, small eye flare |
-| Blooded | deeper crimson and ash red | clear horn hooks, worn claws | partial functional wings | stronger brand, restrained rage glow |
+| Blooded | deeper crimson and ash red | clear horn hooks, worn claws | partial functional wings | stronger brand, focused rage glow |
 | Elder | rich ember/umber variation | mature horn mass, black claws | full folded wings, thick tail | controlled eye/brand glow |
 | Ancient | ash red, dark umber, pale healed scars | heavy worn horns, cracked black keratin | scarred membrane, heavy tail | ritual marks, violet/ember restraint |
 
 ## Concept Image Prompt
 
-Create an original stylized fantasy MMORPG lifecycle production sheet of Lesser Infernals for the world of Aerathea. The design should emphasize the approved stages Spawn, 1st Kill, Blooded, Elder, and Ancient; demon/mortal hybrid birth; fully autonomous newborn behavior; aggressive culling temper; rapid first-year growth by feeding on the slain; slowed aging after the first year; Ancient 900+ year age signs; reddish skin; black claws; visible horn, wing, tail, eye, posture, scar, and brand progression; cult upbringing; and production-friendly MMO silhouettes. Use hand-painted texture detail, readable shapes, baked-AO-style depth, normal-map-style surface detail, sparing emissive eye and brand accents, and MMO-safe production design. Present it as a clean lifecycle/body-stage sheet with front/side/back stage views, scale callouts, material swatches, folded and open wing notes, tail callouts, claw detail, and a 180 cm humanoid comparison. Avoid copied franchise designs, gore, excessive particles, readable text, watermarks, and weapon-focused designs.
+Create an original stylized fantasy MMORPG lifecycle production sheet of Lesser Infernals for the world of Aerathea. The design should emphasize the approved stages Spawn, 1st Kill, Blooded, Elder, and Ancient; demon/mortal hybrid birth; fully autonomous newborn behavior; aggressive culling temper; rapid first-year growth by feeding on the slain; slowed aging after the first year; Ancient 900+ year age signs; reddish skin; black claws; visible horn, wing, tail, eye, posture, scar, and brand progression; cult upbringing; skull/bone villain language where age-appropriate; and production-friendly MMO silhouettes. Use hand-painted texture detail, readable shapes, baked-AO-style depth, normal-map-style surface detail, focused emissive eye and brand accents, and MMO-safe production design. Present it as a clean lifecycle/body-stage sheet with front/side/back stage views, scale callouts, material swatches, folded and open wing notes, tail callouts, claw detail, and a 180 cm humanoid comparison. Clean the design for production readability: full body visible, feet and wings uncropped, readable midtone lighting, clear separation between red skin, black armor, dark wings, and background. If the source is too dark, start from a roughly 30 percent brighter pass. Preserve horns, leathery wings, thick tail, black claws, glowing eyes, skulls, bones, flame, lightning-like abyssal energy, anger, and Balgoroth brand identity where appropriate for the stage. Use A03-style cleanup by default: reduce tiny repeated rivets, random speckle artifacts, malformed micro-spikes, broken micro-chains, torn-strip noise, dense spell clutter that hides anatomy, crop-heavy action framing, and photoreal surface garbage. Avoid copied franchise designs, gore, excessive particles, readable text, watermarks, and weapon-focused designs.
 
 ## Modeling Notes
 
