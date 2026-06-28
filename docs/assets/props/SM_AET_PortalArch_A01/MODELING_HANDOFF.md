@@ -2,12 +2,13 @@
 
 ## Purpose
 
-Create the first-slice DCC handoff for `SM_AET_PortalArch_A01`, the static stone-and-Aetherium portal arch used by `BP_AET_Portal_A01` in the Aerathea startup scene. The mesh should replace the blockout portal structure with a readable mid-poly large prop that proves scale, silhouette, collision, material language, LOD behavior, and portal Blueprint attachment readiness.
+Create the first-slice DCC handoff for `SM_AET_PortalArch_A01`, the static stone-and-Aetherium portal arch used by `BP_AET_Portal_A01` in the Aerathea startup scene. The mesh should replace the blockout portal structure with a readable mid-poly monumental prop that proves scale, silhouette, collision, material language, LOD behavior, and portal Blueprint attachment readiness.
 
 ## Source References
 
 - Production package: `docs/assets/props/SM_AET_PortalArch_A01/PRODUCTION_PACKAGE.md`
 - Concept sheet: `docs/assets/props/SM_AET_PortalArch_A01/concepts/SM_AET_PortalArch_A01_concept_sheet_A01.png`
+- Exploration directions: `docs/assets/props/SM_AET_PortalArch_A01/PORTAL_EXPLORATION_DIRECTIONS.md`
 - Review state: usable first-pass reference; not final locked art until Flamestrike approval.
 
 Reference read notes:
@@ -23,11 +24,13 @@ Reference read notes:
 - Unreal path: `/Game/Aerathea/Props/Portal/SM_AET_PortalArch_A01`
 - Source file target: `SourceAssets/Blender/Props/Portal/SM_AET_PortalArch_A01.blend`
 - FBX export target: `SourceAssets/Exports/Props/Portal/SM_AET_PortalArch_A01.fbx`
-- Dimensions: 360 cm wide, 420 cm tall, 90 cm deep
-- Portal aperture: about 190 cm wide by 300 cm tall
+- Final target dimensions: 900-1100 cm wide, 1200-1400 cm tall, 220-320 cm deep
+- Minimum clear traversal height: 1000 cm / 10 m / about 33 ft
+- Portal aperture: about 650-800 cm wide by 1000 cm tall
 - Pivot: bottom center between both columns, at ground contact
 - Forward axis: portal faces +X unless level convention changes
 - Material slot target: 2, maximum 3 only if Aetherium needs separate emissive handling
+- Current imported startup mesh was built to the older 360 cm x 420 cm x 90 cm target; treat it as review-only and rebuild or rescale before final signoff.
 
 ## Modeling Constraints
 
@@ -35,13 +38,15 @@ Reference read notes:
 - Model real geometry for columns, capstone, base blocks, beveled inner frame, large iron bands, brass brackets, and Aetherium socket stones.
 - Use broad, hand-cut stone blocks. Do not turn the arch into tiny brickwork.
 - Fake fine cracks, small chips, stone pitting, shallow rune scratches, and tiny rivets with normal/AO/albedo detail.
-- Keep the portal aperture open and clean for player walk-up and Blueprint portal effects.
+- Keep the portal aperture open and clean for player, Giant, large NPC, large enemy, dungeon, raid, and city traversal.
+- Normal player characters should feel small beside the arch.
+- Final visual direction should feel old, mysterious, awe-inspiring, and discovered in a large world rather than newly built for a small settlement.
 - Avoid relying on glow for readability. Blue accents should support, not define, the silhouette.
 - Keep backside detail simpler than the front, but do not leave it unfinished.
 
 ## Blender Setup
 
-- Unit system: Metric, centimeters. Verify dimensions against a 180 cm humanoid scale marker and the 420 cm height target.
+- Unit system: Metric, centimeters. Verify dimensions against a 180 cm humanoid scale marker, a 470 cm Giant scale marker, and a 1000 cm clearance marker.
 - Object origin: world origin at bottom center between columns.
 - Facing: front of arch along +X.
 - Recommended collections:
@@ -65,8 +70,8 @@ Reference read notes:
 
 ## Modeling Sequence
 
-1. Block out the full 360 x 420 x 90 cm bounding form with two columns, stepped base stones, capstone, and the inner aperture.
-2. Cut the aperture to the target size and check that a humanoid marker can stand comfortably inside it.
+1. Block out the full 900-1100 cm x 1200-1400 cm x 220-320 cm bounding form with two columns, stepped base stones, capstone, and the inner aperture.
+2. Cut the aperture to the 650-800 cm wide x 1000 cm tall target and check that a 1000 cm clearance marker can pass through it.
 3. Build the main stone blocks as large separated masses with bevels that read in silhouette.
 4. Add the inner arch ring and Aetherium channel blocks. Keep the channel pieces large enough to read at distance.
 5. Add dark-iron bands around columns and capstone. Use a few large modeled rivets only where visible in silhouette or close-up.
@@ -80,10 +85,10 @@ Reference read notes:
 
 ## Triangle Budget
 
-- LOD0: 7k to 9k tris
-- LOD1: 3.5k to 4.5k tris
-- LOD2: 1.4k to 2k tris
-- LOD3: 450 to 800 tris
+- LOD0: 10k to 14k tris
+- LOD1: 5k to 7k tris
+- LOD2: 2k to 3k tris
+- LOD3: 700 to 1200 tris
 
 LOD reduction priority:
 
@@ -140,7 +145,7 @@ Collision rules:
 - Blender: `SourceAssets/Blender/Props/Portal/SM_AET_PortalArch_A01.blend`
 - FBX: `SourceAssets/Exports/Props/Portal/SM_AET_PortalArch_A01.fbx`
 - Export contents: LOD0-LOD3, UCX collision, material slots, applied transforms
-- FBX scale: centimeters to Unreal, import result should match 360 x 420 x 90 cm
+- FBX scale: centimeters to Unreal, final import result should match the 900-1100 cm x 1200-1400 cm x 220-320 cm target envelope with a 1000 cm clear traversal aperture
 - Mesh name in FBX: `SM_AET_PortalArch_A01`
 
 ## Unreal Validation
@@ -157,12 +162,13 @@ Collision rules:
 ## Acceptance Checklist
 
 - Original Aerathea portal design, not copied franchise architecture.
-- Large prop silhouette reads from 30 m.
+- Monumental portal silhouette reads from 30 m.
 - Dimensions match the package target.
-- Player can stand inside the aperture.
+- 1000 cm / 10 m / about 33 ft clear traversal aperture is preserved.
+- Normal player characters feel small beside the portal.
 - Stone blocks are chunky and readable.
 - Blue Aetherium is restrained and purposeful.
-- LOD0 is under 10k tris.
+- LOD0 fits the 10k-14k final monument target.
 - LOD0-LOD3 are present.
 - Simple UCX collision is present.
 - Material slot count is within target.

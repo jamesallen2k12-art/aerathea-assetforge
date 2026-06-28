@@ -134,8 +134,8 @@ Current first-slice status:
 
 - Blender 5.1.1 starts after downgrading Fedora `materialx` to `1.39.4-5.fc44`.
 - Blender `.blend` sources and FBX exports exist for the first-slice target dummy, portal arch, modular ground tile, Mekgineer crate, eleven Gnome armory child assets, the palisade module set, the first gnome base body, the first gryphon blockout, the first Infernal adult/Lesser lifecycle scale review set, and `SM_INF_CullingTrialFloor_A01`.
-- `SM_AET_TargetDummy_A01`, `SM_AET_PortalArch_A01`, `SM_AET_ModularGroundTile_A01`, and `SM_MKG_WorkshopPropCrate_A01` are imported to Unreal and placed in the startup scene.
-- `BP_AET_Portal_A01` is reparented to `AAETPortalActor`; native preview state, focus overlap, use-request cooldown, and destination validation are implemented while final traversal remains deferred.
+- `SM_AET_TargetDummy_A01`, `SM_AET_PortalArch_A01`, `SM_AET_ModularGroundTile_A01`, and `SM_MKG_WorkshopPropCrate_A01` are imported to Unreal and placed in the startup scene. The current portal arch import uses older smaller scale assumptions and remains a validation/review placeholder until the 10 m universal portal rebuild.
+- `BP_AET_Portal_A01` is reparented to `AAETPortalActor`; native preview state, focus overlap, use-request cooldown, and destination validation are implemented while final traversal remains deferred. Final portal signoff now requires several old, mysterious, awe-inspiring visual directions and a 10 m / about 33 ft clear traversal opening.
 - `BP_AET_TargetDummy_A01` exists, compiles from `AAETTargetDummyActor`, provides training hit/break/reset events, and now owns the startup target dummy actor.
 - The startup scene includes a review camera, PlayerStart, fill light, and `AAETReviewCameraDirector` so X11/Vulkan offscreen game-mode captures use a stable production-asset view.
 - Hidden `AET_REVIEW_MARKER` A/B/C/D/E debug actors are present for orientation checks and are only shown during marker captures.
@@ -172,7 +172,7 @@ Next priority order:
 8. Review and approve one proposed Abyss/Anathema child from `KIT_ABY_ShadowFlame_A01` before any DCC build; production-efficient default is `SK_ABY_BlackPikeTrooper_A01`.
 9. Review `KIT_GNM_IonaSiegebreaker_A01` and approve whether the first child package is the heavy Mek, pilot, or arc cannons; package docs recommend starting with `SK_GNM_IonaSiegebreakerMek_A01`.
 10. Approve rebuilding/rescaling `SK_GIA_Base_A01` to the current A04 Giant baselines, or request proportion changes before Blood Axe and Giant environment production.
-11. Implement final `BP_AET_Portal_A01` traversal/VFX/audio/destination behavior after portal gameplay rules are approved.
+11. Explore several old, mysterious, awe-inspiring universal portal directions, then rebuild/rescale `SM_AET_PortalArch_A01` and `BP_AET_Portal_A01` around a 10 m / about 33 ft clear traversal opening after portal gameplay rules are approved.
 12. Continue collage-aware intake on the remaining `ASSET CONCEPTS` categories.
 
 ## First Asset Production Rule

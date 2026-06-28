@@ -47,8 +47,8 @@ These have production package documentation in `docs/assets/`:
 | Asset | Current state | Next action |
 | --- | --- | --- |
 | `SM_AET_TargetDummy_A01` | Blender source and FBX generated, imported to Unreal, startup blockout replaced, validation passing | Keep as reusable static mesh dependency for `BP_AET_TargetDummy_A01` |
-| `SM_AET_PortalArch_A01` | Blender source and FBX generated, imported to Unreal, startup portal visual replaced, validation passing | Refine final portal materials/VFX after destination rules are approved |
-| `BP_AET_Portal_A01` | Native preview state, focus overlap, use-request cooldown, destination validation, and Blueprint events implemented; Blueprint compiled; startup validation passing | Add final traversal, VFX, audio, and destination registry once gameplay rules are approved |
+| `SM_AET_PortalArch_A01` | Blender source and FBX generated, imported to Unreal, startup portal visual replaced, validation passing; current import uses older smaller scale assumptions | Explore several old, mysterious, awe-inspiring 10 m / 33 ft universal portal directions, then rebuild/rescale before final signoff |
+| `BP_AET_Portal_A01` | Native preview state, focus overlap, use-request cooldown, destination validation, and Blueprint events implemented; Blueprint compiled; startup validation passing; final portal target is universal, race-neutral, and 10 m clear traversal scale | Add final traversal, VFX, audio, and destination registry once gameplay rules and final portal visual direction are approved |
 | `BP_AET_TargetDummy_A01` | Native training hit/break/reset behavior implemented; Blueprint asset created and compiled; startup actor replaced with Blueprint; validation passing | Add optional visual/audio/UI feedback after training interaction rules are approved |
 | `SM_MKG_WorkshopPropCrate_A01` | Blender source and FBX generated, imported to Unreal, placed in startup scene, validation passing | Use as Mekgineer material/style reference for workshop props |
 | `SM_AET_ModularGroundTile_A01` | Blender source and FBX generated, imported to Unreal, placed as 5x5 startup ground-tile layout, validation passing | Use for early scene layout and collision/material validation |
@@ -178,7 +178,7 @@ The following buildings are approved as established Aerathea settlement assets b
 | Mine Entrance | Approved building anchor only | Production package, concept sheet, rock/timber modular kit |
 | Smithy | Approved building anchor only | Production package, concept sheet, forge/props/VFX notes |
 | Target Dummy Area | Partially covered by `SM_AET_TargetDummy_A01` | Area layout package, ground dressing, rack/fence/sign props |
-| Portal with Stone Archway | Partially covered by `SM_AET_PortalArch_A01` and `BP_AET_Portal_A01` | Final arch mesh, portal blueprint, VFX/audio/interact notes |
+| Portal with Stone Archway | Partially covered by `SM_AET_PortalArch_A01` and `BP_AET_Portal_A01`; final portal should be old, mysterious, awe-inspiring, race-neutral, and large enough for a 10 m / 33 ft clear traversal opening | Explore several final portal directions, then rebuild arch mesh, portal blueprint scale, VFX/audio/interact notes |
 | Mekgineer Workshop | Partially seeded by `SM_MKG_WorkshopPropCrate_A01` | Building package, interior prop set, machines, tool racks, lamps |
 | Inn | Approved building anchor only | Production package, concept sheet, modular kit, interior notes |
 | Lumber Mill | Approved building anchor only | Production package, concept sheet, modular kit, saw/log props |
@@ -221,7 +221,7 @@ These are referenced by existing packages or startup docs and should be promoted
 11. Continue Ogre final-art planning from the imported `SK_OGR_Base_A01`, `SK_OGR_Teknomancer_A01`, `SK_OGR_Warrior_Rival_A01`, `SK_OGR_Shaman_A01`, and `SK_OGR_Necromancer_A01` review slices, then resolve the final shared Ogre rig and art-model handoff order.
 12. Split `BloodAxeArmory.png` into `KIT_GIA_BloodAxeArmory_A01` child IDs after the Giant rebuild/rescale decision is approved.
 13. Review Giant cave-town lore images and approve whether `KIT_GIA_MountainCaveTown_A01` or `KIT_GIA_BloodAxeRitualStones_A01` should become the first Giant environment production package.
-14. Add final `BP_AET_Portal_A01` traversal, VFX, audio, and destination registry only after gameplay rules are approved.
+14. Explore several old, mysterious, awe-inspiring universal portal directions, then rebuild/rescale `SM_AET_PortalArch_A01` and `BP_AET_Portal_A01` around a 10 m / about 33 ft clear traversal opening after gameplay rules are approved.
 
 ## Production Rule
 

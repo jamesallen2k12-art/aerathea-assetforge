@@ -4,7 +4,7 @@
 
 Create the first production-ready Blueprint slice for the Aerathea portal landmark in `L_Aerathea_Startup`.
 
-This handoff covers `BP_AET_Portal_A01` and its required arch dependency, `SM_AET_PortalArch_A01`. The slice should prove Blueprint composition, portal visual states, material/VFX state control, collision, interaction overlap, and startup-map replacement without implementing final traversal.
+This handoff covers `BP_AET_Portal_A01` and its required arch dependency, `SM_AET_PortalArch_A01`. The slice should prove Blueprint composition, portal visual states, material/VFX state control, collision, interaction overlap, universal epic-world scale, and startup-map replacement without implementing final traversal.
 
 Do not make travel, teleport, quest, inventory, progression, or unlock behavior client-authoritative in this slice.
 
@@ -16,6 +16,7 @@ Do not make travel, teleport, quest, inventory, progression, or unlock behavior 
 - C++ behavior exists for portal active state, overlap focus, preview use request, cooldown return, destination validation, dynamic material parameters, debug logs, and server-authoritative use request gating.
 - Final Niagara/audio assets, destination registry, traversal rules, and tuned Blueprint child components remain pending.
 - The current arch mesh has Blender source and FBX export. Treat it as production-review source, not final art polish.
+- The current arch mesh uses older smaller scale assumptions. Final signoff requires several old, mysterious, awe-inspiring visual directions and a rebuilt or rescaled arch with a 10 m / about 33 ft clear traversal opening.
 
 ## Source References
 
@@ -23,6 +24,7 @@ Do not make travel, teleport, quest, inventory, progression, or unlock behavior 
 - Portal arch package: `docs/assets/props/SM_AET_PortalArch_A01/PRODUCTION_PACKAGE.md`
 - Portal state sheet: `docs/assets/blueprints/BP_AET_Portal_A01/concepts/BP_AET_Portal_A01_state_sheet_A01.png`
 - Portal arch concept sheet: `docs/assets/props/SM_AET_PortalArch_A01/concepts/SM_AET_PortalArch_A01_concept_sheet_A01.png`
+- Portal exploration directions: `docs/assets/props/SM_AET_PortalArch_A01/PORTAL_EXPLORATION_DIRECTIONS.md`
 - Startup map target: `/Game/Aerathea/Maps/L_Aerathea_Startup`
 
 ## Production Target
@@ -44,6 +46,7 @@ Initial slice behavior:
 - Overlap pawn interaction volume.
 - Log or broadcast interaction intent only.
 - Never perform final travel or teleport.
+- Preserve universal portal logic; race/faction variants should swap mesh, material, VFX, audio, or dressing while keeping the same server-authoritative behavior.
 
 ## Dependency Gate
 
@@ -52,10 +55,10 @@ Initial slice behavior:
 Before building the final Blueprint actor, confirm:
 
 - Static mesh exists at `/Game/Aerathea/Props/Portal/SM_AET_PortalArch_A01`.
-- Mesh scale matches the package target: 420 cm high, 360 cm wide, 90 cm deep.
+- Mesh scale matches the final package target: 1200-1400 cm high, 900-1100 cm wide, 220-320 cm deep.
 - Pivot is bottom center at ground contact.
 - Forward axis faces +X unless the level convention changes.
-- Portal aperture is about 190 cm wide x 300 cm tall.
+- Portal aperture is about 650-800 cm wide x 1000 cm tall, with 1000 cm / 10 m / about 33 ft clear traversal height.
 - LOD0-LOD3 are imported or generated and inspected.
 - Runtime collision uses simple primitives, not complex-as-simple.
 - Collision leaves the portal opening walkable unless a later gameplay spec requires blocking.
@@ -72,8 +75,8 @@ Use these components in `BP_AET_Portal_A01`:
 | --- | --- | --- | --- |
 | `DefaultSceneRoot` | Scene Component | None | Actor origin at arch bottom center. |
 | `SM_PortalArch` | Static Mesh Component | `DefaultSceneRoot` | Assign `SM_AET_PortalArch_A01`; scale `1.0`; use imported collision. |
-| `SM_PortalCore` | Static Mesh Component or plane mesh | `DefaultSceneRoot` or `SM_PortalArch` | Center in aperture; about 170 cm wide x 280 cm high; no collision; assign dynamic instance of `MI_AET_PortalCore_A01`. |
-| `InteractionVolume` | Box Component or Sphere Component | `DefaultSceneRoot` | Overlap pawn only; radius target 175 cm or box equivalent; height target 260 cm. |
+| `SM_PortalCore` | Static Mesh Component or plane mesh | `DefaultSceneRoot` or `SM_PortalArch` | Center in aperture; about 650-800 cm wide x 1000 cm high; no collision; assign dynamic instance of `MI_AET_PortalCore_A01`. |
+| `InteractionVolume` | Box Component or Sphere Component | `DefaultSceneRoot` | Overlap pawn only; radius target 550 cm or box equivalent; height target 1100 cm. |
 | `VFX_PortalIdle` | Niagara Component | `DefaultSceneRoot` | Optional; disabled if Niagara dependency is missing; attach at portal center. |
 | `Audio_PortalHum` | Audio Component | `DefaultSceneRoot` | Optional; auto activate only when `bPortalActive` is true and audio cue exists. |
 | `PointLight_Aetherium` | Point Light Component | `DefaultSceneRoot` | Optional; disabled by default on low settings; low intensity only. |
@@ -101,8 +104,8 @@ Group variables under clear editor categories.
 
 ### Interaction
 
-- `InteractionRadius` float, default `175.0`
-- `InteractionHeight` float, default `260.0`
+- `InteractionRadius` float, default `550.0`
+- `InteractionHeight` float, default `1100.0`
 - `bPlayerInRange` bool, runtime only
 - `FocusedActor` actor reference, runtime only
 
@@ -233,8 +236,8 @@ Interaction volume:
 
 - Overlap pawn only.
 - Ignore world/static, visibility, camera, physics body, and projectiles unless a future interaction system requires otherwise.
-- Box option: about 350 cm wide x 120 cm deep x 260 cm high, centered on the aperture.
-- Sphere option: radius 175 cm, with vertical reach validated against player capsule height.
+- Box option: about 1000 cm wide x 320 cm deep x 1100 cm high, centered on the aperture.
+- Sphere option: radius 550 cm, with vertical reach validated against the 1000 cm clear portal height.
 - Generate begin/end overlap events.
 
 Interaction events:
@@ -301,7 +304,8 @@ Blueprint validation:
 PIE validation:
 
 - Player can approach without collision snagging.
-- Player can stand inside the aperture.
+- Player and large-character markers can stand inside the aperture.
+- The 1000 cm / 10 m / about 33 ft clear traversal aperture is unobstructed.
 - Begin overlap enters `Focused`.
 - End overlap returns to `IdleActive`.
 - Interact request enters `UseRequested`, then `Cooldown`, then the correct safe state.
@@ -312,8 +316,8 @@ PIE validation:
 Startup map validation:
 
 - `BP_AET_Portal_A01` replaces or wraps the portal blockout cleanly.
-- Existing startup scene composition remains readable from settlement distance.
-- The portal reads as a landmark, not a raid-scale monument.
+- Existing startup scene composition remains readable from settlement distance or receives a dedicated review layout after the 10 m rebuild.
+- The portal reads as an old, mysterious, awe-inspiring world-scale landmark suitable for epic dungeons, raids, cities, Giants, major NPCs, and large enemies.
 - GUI map check reports `0 Error(s), 0 Warning(s)`.
 
 ## Blockers And Open Items

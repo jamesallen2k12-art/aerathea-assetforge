@@ -6,14 +6,15 @@
 - Asset type: Static Mesh
 - World: Aerathea
 - Category: Portal structure / magical traversal prop
-- Current status: Blender source and FBX generated, imported to Unreal, startup portal visual replaced, validation passing; final materials, LODs, collision, and visual signoff still pending
-- Working selected direction: Chunky ancient stone archway with hand-hewn blocks, dark-iron reinforcement, worn brass insets, and restrained blue Aetherium channel stones.
+- Current status: Blender source and FBX generated, imported to Unreal, startup portal visual replaced, validation passing; final materials, LODs, collision, scale rebuild, visual exploration, and visual signoff still pending
+- Working selected direction: First-pass chunky ancient stone archway with hand-hewn blocks, dark-iron reinforcement, worn brass insets, and restrained blue Aetherium channel stones. Treat this as a review direction, not the final locked portal style.
 
-This asset replaces the portal-arch blockout in `L_Aerathea_Startup` and becomes the static structure used by `BP_AET_Portal_A01`.
+This asset replaces the portal-arch blockout in `L_Aerathea_Startup` and becomes the static structure used by `BP_AET_Portal_A01`. The base portal is universal rather than race-specific; race or faction portal variants should inherit this gameplay scale and use visual skins or alternate meshes on top of the shared portal logic.
 
 ## Concept Reference
 
 - Concept sheet: `docs/assets/props/SM_AET_PortalArch_A01/concepts/SM_AET_PortalArch_A01_concept_sheet_A01.png`
+- Exploration directions: `docs/assets/props/SM_AET_PortalArch_A01/PORTAL_EXPLORATION_DIRECTIONS.md`
 - Modeling handoff: `docs/assets/props/SM_AET_PortalArch_A01/MODELING_HANDOFF.md`
 - Build/import status: `docs/assets/props/SM_AET_PortalArch_A01/BUILD_IMPORT_STATUS.md`
 - Generation mode: built-in image generation tool.
@@ -29,7 +30,7 @@ The portal arch is the first large interactive landmark prop in the startup scen
 - Portal blueprint attachment points.
 - Visual readability from settlement distance.
 
-It should look important without becoming a raid-scale monument.
+It should feel old, mysterious, awe-inspiring, and world-scale. Normal players should feel small beside it. It should be large enough to support epic dungeon, raid, city, Giant, major NPC, and large enemy traversal without relying on excessive particles or over-dense micro-detail.
 
 ## Silhouette Notes
 
@@ -51,13 +52,23 @@ Primary readable shapes:
 
 ## Scale Notes
 
-- Total height: 420 cm.
-- Total width: 360 cm.
-- Depth: 90 cm.
-- Portal aperture: about 190 cm wide x 300 cm tall.
+Final universal portal target:
+
+- Minimum clear traversal height: 1000 cm / 10 m / about 33 ft.
+- Recommended total height: 1200-1400 cm.
+- Recommended total width: 900-1100 cm.
+- Recommended depth: 220-320 cm.
+- Recommended portal aperture: about 650-800 cm wide x 1000 cm tall.
 - Pivot: bottom center between both columns.
 - Unreal scale: 1 Unreal unit = 1 cm.
-- Player should comfortably stand inside the portal opening.
+- The portal should comfortably accommodate beings up to 33 ft tall, including Giants, major NPCs, large enemies, and raid/dungeon-scale characters.
+- Normal player characters should feel small when standing in front of it.
+
+Current imported startup mesh note:
+
+- The current first-pass import was built to the older 420 cm x 360 cm x 90 cm target with a 190 cm x 300 cm aperture.
+- Treat the current imported mesh as a startup validation/review placeholder only.
+- Rebuild or rescale the final arch before visual signoff.
 
 ## Materials And Color Palette
 
@@ -82,7 +93,7 @@ Use glow sparingly. The arch should be readable from shape and value, not only f
 
 ## Concept Image Prompt
 
-Create an original stylized fantasy MMORPG concept image of a stone portal archway for the world of Aerathea. The design should emphasize a chunky readable arch silhouette, large hand-hewn stone blocks, dark-iron reinforcing bands, muted brass insets, restrained blue Aetherium channel stones, ancient settlement craftsmanship, mysterious but practical mood, and magical traversal gameplay role. Use hand-painted texture detail, readable shapes, baked-AO-style depth, normal-map-style surface detail, sparing emissive accents, and MMO-friendly production design. Present it as a production asset sheet with front, side, back, scale reference, and material callouts on a clean background. Avoid copying any existing franchise and avoid excessive micro-detail that would not translate to a mid-poly Unreal asset.
+Create an original stylized fantasy MMORPG concept image of a universal stone portal archway for the world of Aerathea. The design should emphasize an epic 10 m / 33 ft clear traversal opening, an old and mysterious monumental arch silhouette, large ancient stone masses, restrained blue Aetherium channel stones, dark-iron or ancient-metal reinforcement, age-worn craftsmanship, awe-inspiring world-scale magic, and a traversal role for players, Giants, large NPCs, enemies, dungeons, raids, and cities. Normal player characters should feel small beside it. Use hand-painted texture detail, readable shapes, baked-AO-style depth, normal-map-style surface detail, sparing emissive accents, and MMO-friendly production design. Present it as a production asset sheet with front, side, back, a 180 cm humanoid scale reference, a 470 cm Giant reference, a 1000 cm clearance marker, and material callouts on a clean background. Avoid copying any existing franchise and avoid excessive particles or micro-detail that would not translate to a mid-poly Unreal asset.
 
 ## Modeling Notes
 
@@ -141,14 +152,14 @@ If a single material is feasible, use one packed atlas and name it `MI_AET_Porta
 
 ## Triangle Budget
 
-Large prop target range: 4k to 10k tris.
+Large monument prop target range: 8k to 16k tris for the final 10 m portal.
 
 Recommended:
 
-- LOD0: 7k to 9k tris.
-- LOD1: 3.5k to 4.5k tris.
-- LOD2: 1.4k to 2k tris.
-- LOD3: 450 to 800 tris.
+- LOD0: 10k to 14k tris.
+- LOD1: 5k to 7k tris.
+- LOD2: 2k to 3k tris.
+- LOD3: 700 to 1200 tris.
 
 Material slots:
 
@@ -221,6 +232,7 @@ Animation and effects belong in `BP_AET_Portal_A01`:
 - Nanite: optional later; off for first bootstrap validation unless explicitly tested.
 - LODs: import LOD0-LOD3 or generate and inspect manually.
 - Place in `L_Aerathea_Startup` near current blockout portal location: roughly `X=350, Y=0`.
+- Current startup placement may need repositioning or a dedicated review area after the 10 m scale rebuild.
 
 ## Folder And Naming Recommendation
 
@@ -240,11 +252,13 @@ External source, if used later:
 
 - Original Aerathea design.
 - Portal opening reads clearly at 30 m.
-- Player can stand inside aperture.
+- Clear portal opening supports beings up to 1000 cm / 10 m / about 33 ft tall.
+- Normal players feel small beside the portal.
+- Final direction feels old, mysterious, awe-inspiring, and suitable for epic-scale dungeons, raids, and cities.
 - Stone blocks are chunky and readable.
 - No excessive small brickwork.
 - Aetherium glow is restrained.
-- LOD0 under 10k tris.
+- LOD0 target fits the approved large monument budget.
 - LOD0-LOD3 planned.
 - Collision uses simple primitives.
 - Material slots no more than 3.
