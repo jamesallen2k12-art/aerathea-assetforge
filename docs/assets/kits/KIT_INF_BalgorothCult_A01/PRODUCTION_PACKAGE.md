@@ -4,7 +4,7 @@
 
 `KIT_INF_BalgorothCult_A01` defines the cult symbol, ritual-site, material, and VFX language for Infernals. Balgoroth worship should feel severe, predatory, hierarchical, and sacrificial without relying on gore. The visual language supports Infernal body brands, cult dens, ritual arenas, sacrifice platforms, bloodline trials, Lesser Infernal training spaces, and mage/rogue/hunter class details.
 
-The child asset split and first DCC target are tracked in `VISUAL_KIT_BREAKDOWN.md`. `SM_INF_CullingTrialFloor_A01` is the first ready child package because it validates symbols, material states, collision, scale, and VFX channels before altar or Blueprint work.
+The child asset split and first DCC target are tracked in `VISUAL_KIT_BREAKDOWN.md`. `SM_INF_CullingTrialFloor_A01` is the first accepted child package because it validates symbols, material states, collision, scale, and VFX channels before altar or Blueprint work. `SM_INF_HornWingArch_A01` is the next documented child package and covers guarded Infernal cult thresholds from the gate imagery.
 
 ## Gameplay Purpose
 
@@ -20,7 +20,7 @@ The kit supports Infernal settlements, encounter spaces, class VFX, faction prop
 ## Scale Notes
 
 - Props must support Spawn through Ancient Infernal scale.
-- Doorways/arches should account for tall adult Infernals up to 274 cm plus horns and folded wings.
+- Doorways/arches should account for tall adult Infernals up to 274 cm plus horns and folded wings. `SM_INF_HornWingArch_A01` uses a minimum 360 cm by 260 cm clear opening for the first production target.
 - Arena and trial sites should leave room for wing flares, tail sweeps, and claw combat.
 
 ## Materials And Color Palette
@@ -97,6 +97,7 @@ Create an original stylized fantasy MMORPG cult material and ritual-site concept
 - Package folder: `docs/assets/kits/KIT_INF_BalgorothCult_A01/`.
 - Visual kit breakdown: `docs/assets/kits/KIT_INF_BalgorothCult_A01/VISUAL_KIT_BREAKDOWN.md`.
 - First child package: `docs/assets/props/SM_INF_CullingTrialFloor_A01/PRODUCTION_PACKAGE.md`.
+- Gate/threshold child package: `docs/assets/props/SM_INF_HornWingArch_A01/PRODUCTION_PACKAGE.md`.
 - Source: `SourceAssets/Blender/Kits/Infernals/BalgorothCult/`.
 - Export: `SourceAssets/Exports/Kits/Infernals/BalgorothCult/`.
 - Unreal: `/Game/Aerathea/Props/Infernals/BalgorothCult/`.

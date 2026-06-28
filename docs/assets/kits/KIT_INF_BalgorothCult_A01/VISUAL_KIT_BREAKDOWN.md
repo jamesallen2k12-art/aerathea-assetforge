@@ -46,7 +46,7 @@ Symbols must be graphic and readable at MMO camera distance. Do not rely on read
 | --- | --- | --- | --- |
 | `SM_INF_BalgorothSigil_A01` | Static Mesh | large wall/floor horned crown sigil | Package needed |
 | `SM_INF_CullingTrialFloor_A01` | Static Mesh modular floor | circular proving floor with claw channels | DCC/Unreal first-pass visual review accepted; final art and VFX states pending |
-| `SM_INF_HornWingArch_A01` | Static Mesh | tall arch scaled for 9' Infernals with folded wings | Package needed |
+| `SM_INF_HornWingArch_A01` | Static Mesh | tall arch scaled for 9' Infernals with folded wings | Production package and modeling handoff ready; DCC build not started |
 | `SM_INF_WorthinessAltar_A01` | Static Mesh or Blueprint | altar/platform for sacrifice judgment states | Package needed |
 | `SM_INF_AshBasin_A01` | Static Mesh/VFX hook | ash, ember, and regeneration ritual prop | Package needed |
 | `SM_INF_WitnessChains_A01` | Static Mesh | non-blocking witness/restraint dressing | Package needed |

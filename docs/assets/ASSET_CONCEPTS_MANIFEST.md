@@ -164,12 +164,12 @@ All Infernal/Balgoroth references in this section route through `docs/assets/cha
 | `InfernalMale6.png` | Character/NPC/class | Infernal/Balgoroth cult | Adult male body/reference outfit source; route to `SK_INF_Base_A01` |
 | `InfernalMale7.png` | Character/NPC/class | Infernal/Balgoroth cult | Adult male body/reference outfit source; route to `SK_INF_Base_A01` |
 | `InfernalMaleLit.png` | Character/NPC/class | Infernal/Balgoroth cult | Male lit-brand material and emissive reference; route to adult brand states |
-| `InfernalMaleSorcerer2.png` | Character/NPC/class | Infernal/Balgoroth cult | Adult sorcerer class source; route to future `SK_INF_Mage_A01` and cult VFX |
-| `InfernalMaleSorcerer3.png` | Character/NPC/class | Infernal/Balgoroth cult | Adult sorcerer class source; route to future `SK_INF_Mage_A01` |
-| `InfernalMaleSorcererLit.png` | Character/NPC/class | Infernal/Balgoroth cult | Lit sorcerer material and VFX source; route to future `SK_INF_Mage_A01` and brand states |
+| `InfernalMaleSorcerer2.png` | Character/NPC/class | Infernal/Balgoroth cult | Adult sorcerer action source; route to `SK_INF_Mage_A01`, cult VFX, and action/animation references |
+| `InfernalMaleSorcerer3.png` | Character/NPC/class | Infernal/Balgoroth cult | Adult sorcerer power-pose source; route to `SK_INF_Mage_A01` after A03 cleanse |
+| `InfernalMaleSorcererLit.png` | Character/NPC/class | Infernal/Balgoroth cult | Primary lit sorcerer material and VFX source; route to `SK_INF_Mage_A01` and brand states |
 | `Infernalfemale3.png` | Character/NPC/class | Infernal/Balgoroth cult | Adult female body/reference outfit source; naming normalization needed |
 | `Infernals Guarding a Gate.png` | Building/settlement/environment | Infernal/Balgoroth cult | Gate guard scene and arch source; route to `SM_INF_HornWingArch_A01` and cult encounter dressing |
-| `Infernals Guarding a Gate2.png` | Building/settlement/environment | Infernal/Balgoroth cult | Gate guard scene and arch variant source; route to future cult gate package |
+| `Infernals Guarding a Gate2.png` | Building/settlement/environment | Infernal/Balgoroth cult | Gate guard scene and arch variant source; route to `SM_INF_HornWingArch_A01` and future `BP_INF_CultGate_A01` behavior if approved |
 | `Infernals.png` | Character/NPC/class | Infernal/Balgoroth cult | Adult group hierarchy source; route to `SK_INF_Base_A01` body/class matrix |
 | `Lesser Infernal15.png` | Character/NPC/class | Infernal/Balgoroth cult | Lesser Infernal stage variant; filename normalization needed |
 | `LesserInfernal10.png` | Character/NPC/class | Infernal/Balgoroth cult | Lesser Infernal stage variant; route to `SK_INF_Lesser_A01` |

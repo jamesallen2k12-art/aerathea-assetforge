@@ -22,7 +22,7 @@ Apply the approved cleanse standard in `docs/assets/characters/INFERNAL_VISUAL_C
 | `InfernalFemaleLit*.png` | Lit brand, eye glow, scar-emissive, and readable material-state references |
 | `InfernalMale*.png` | Adult male body, horn mass, wing fold, tail proportion, and class-variant references |
 | `InfernalMaleLit.png` | Male lit-brand material and emissive-state reference |
-| `InfernalMaleSorcerer*.png` | Future `SK_INF_Mage_A01` source for mage posture, brand-channeling, and cult VFX gestures |
+| `InfernalMaleSorcerer*.png` | `SK_INF_Mage_A01` source for mage posture, brand-channeling, and cult VFX gestures |
 | `Infernals.png` | Adult group hierarchy, body-band comparison, and faction silhouette source |
 | `Infernals Guarding a Gate*.png` | Adult guard bearing plus `KIT_INF_BalgorothCult_A01` gate/arch encounter reference |
 
@@ -145,7 +145,7 @@ Class overlays:
 - Scale: centimeters, no import scaling.
 - Pivot: ground center between feet.
 - Physics: tuned per body band after final mesh.
-- Animation Blueprint: one base `ABP_INF_Base_A01` target with class overlays or child ABPs.
+- Animation Blueprint: one base `ABP_INF_Base_A01` target with class overlays or child ABPs. Detailed motion rules live in `ANIMATION_HANDOFF.md`.
 - Required sockets: `hand_l_claw`, `hand_r_claw`, `tail_tip`, `wing_l_tip`, `wing_r_tip`, `vfx_eye_l`, `vfx_eye_r`, `vfx_brand_chest`, `vfx_mouth`, `vfx_regen_core`.
 
 ## Folder And Naming Recommendation

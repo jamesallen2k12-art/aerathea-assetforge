@@ -120,6 +120,7 @@ Create an original stylized fantasy MMORPG race body/style concept sheet of adul
 
 - Package folder: `docs/assets/characters/SK_INF_Base_A01/`.
 - Final art direction sheet: `docs/assets/characters/SK_INF_Base_A01/FINAL_ART_DIRECTION.md`.
+- Animation handoff: `docs/assets/characters/SK_INF_Base_A01/ANIMATION_HANDOFF.md`.
 - Blender source: `SourceAssets/Blender/Characters/Infernals/SK_INF_Base_A01/SK_INF_Base_A01.blend`.
 - FBX exports: `SourceAssets/Exports/Characters/Infernals/SK_INF_Base_A01/`.
 - Unreal folder: `/Game/Aerathea/Characters/Infernals/Base/`.
