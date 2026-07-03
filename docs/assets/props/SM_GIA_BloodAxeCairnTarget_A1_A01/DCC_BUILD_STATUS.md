@@ -2,7 +2,7 @@
 
 ## Current Status
 
-- Status: `DCC source candidate pending concept-geometry review`
+- Status: `DCC source candidate pending concept-geometry and paint review`
 - Source target: `docs/assets/visual_canon/BloodAxeCairnTargets_A01/VC_GIA_BloodAxe_CairnTarget_A1.png`
 - Brief: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/CONCEPT_GEOMETRY_BRIEF.md`
 - Unreal status: not imported
@@ -17,10 +17,11 @@
 - Texture root: `SourceAssets/Textures/Props/Giants/BloodAxe/CairnTargets/A1/SM_GIA_BloodAxeCairnTarget_A1_A01/`
 - DCC render root: `Saved/Automation/DCC/SM_GIA_BloodAxeCairnTarget_A1_A01/`
 - Concept comparison: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_ConceptGeometryCompare.png`
+- Strict front paint comparison: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_StrictFrontPaintCompare.png`
 - DCC target-layout proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_DCCProofTargetLayout.png`
 - Material/texture proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_MaterialTextureProof.png`
-- LOD0: 6196 tris
-- LOD1: 3264 tris
+- LOD0: 5914 tris
+- LOD1: 3132 tris
 - LOD2: 1376 tris
 - LOD3: 1104 tris
 
@@ -61,9 +62,20 @@
 - Red paint remains a proof treatment for review; final stained/dry-brushed texture art should be refined only after concept-geometry approval.
 - Status remains `DCC source candidate pending concept-geometry review`.
 
+## Strict Paint Correction Pass
+
+- Flamestrike rejected the prior material proof because the painted rock marks read as raised red sticks.
+- Production lesson recorded: concept paint must stay surface pigment unless the concept clearly shows attached geometry.
+- Replaced the raised/extruded red paint patch meshes with no-thickness surface pigment ribbon meshes.
+- Changed red material metadata to `worn_oxide_pigment_surface_decal` and kept the red treatment opaque so it reads as visible painted stone rather than semi-transparent UI markup.
+- Reduced dash-like breakup after the first correction pass made the red marks too faint and fragmented.
+- Regenerated the Blender source, FBX exports, LOD exports, textures, DCC proof renders, target-layout proof, concept comparison, material proof, and strict front paint comparison.
+- Latest triangle counts: LOD0 5914 tris, LOD1 3132, LOD2 1376, LOD3 1104.
+- Status remains `DCC source candidate pending concept-geometry and paint review`.
+
 ## Gate
 
-The current proof must be evaluated against the A1 target image side by side. If the DCC candidate does not match the dominant A1 geometry, revise the DCC source before any Unreal import, final texture polish, or batch expansion.
+The current proof must be evaluated against the A1 target image side by side. If the DCC candidate does not match the dominant A1 geometry or if the red paint still reads as separate geometry, revise the DCC source before any Unreal import, final texture polish, or batch expansion.
 
 ## Required Outputs
 
@@ -73,6 +85,7 @@ The current proof must be evaluated against the A1 target image side by side. If
 - Broad UCX collision export: complete for source candidate
 - DCC front/right/back/left/hero proof renders: complete for source candidate
 - Concept-vs-DCC comparison sheet: complete for source candidate
+- Strict front paint comparison sheet: complete for source candidate
 - Material/texture proof sheet: complete for source candidate
 
 ## Notes
@@ -98,16 +111,17 @@ What it captures:
 - Major secondary stones now use fractured silhouettes instead of clean beveled box silhouettes.
 - Review captures are fully framed and no longer clip the tall rear slab.
 - First-pass BC/N/ORM textures are now present and wired into the Blender proof materials.
+- Red markings are now no-thickness surface pigment patches instead of raised strip/slab geometry.
 
 Remaining gaps before approval:
 
 - Stone silhouette is much closer, but still lacks the concept's hand-authored natural stone breakup and texture-level chipped erosion.
-- Red paint is readable and now textured, but still needs final stained/dry-brushed material polish after geometry approval.
+- Red paint no longer uses raised strip geometry, but the corrected surface-paint treatment still needs Flamestrike approval against the strict front comparison.
 - Rope bindings have round volume, but their contact and wrapping paths should be refined after geometry approval.
 - Ground rubble density is better, but the mound still needs a more natural dirt/stone blend around the footprint.
 - Current proof material is a first-pass DCC texture integration pass; final Unreal material instances and import validation are still pending.
 
-Decision: hold at `DCC source candidate pending concept-geometry review`; do not import to Unreal yet. This is not a `DCC game-ready candidate` and not `Fully game-ready`.
+Decision: hold at `DCC source candidate pending concept-geometry and paint review`; do not import to Unreal yet. This is not a `DCC game-ready candidate` and not `Fully game-ready`.
 
 ## Reference Benchmark Link
 

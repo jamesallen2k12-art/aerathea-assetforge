@@ -261,3 +261,13 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260703-140353/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260703-140353/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-03 14:30:52 EDT -0400 - post Blood Axe A1 strict red paint correction
+
+- Snapshot: `Saved/ProjectRecovery/20260703-143052/`
+- Git: branch `main`, HEAD `d5f5502`, status lines `15`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260703-143052/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260703-143052/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260703-143052/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

@@ -150,7 +150,7 @@ def generate_textures() -> dict[str, dict[str, Path]]:
         "stone": generate_texture_set("Stone", (0.36, 0.345, 0.295), (0.78, 0.70, 0.54), 5103, "stone"),
         "earth": generate_texture_set("Earth", (0.25, 0.17, 0.105), (0.52, 0.38, 0.24), 6207, "earth"),
         "rawhide": generate_texture_set("Rawhide", (0.48, 0.30, 0.13), (0.82, 0.54, 0.23), 7301, "rawhide"),
-        "red": generate_texture_set("RedPaint", (0.58, 0.055, 0.035), (0.98, 0.15, 0.075), 8409, "red"),
+        "red": generate_texture_set("RedPaint", (0.46, 0.040, 0.026), (0.86, 0.12, 0.060), 8409, "red"),
     }
 
 
@@ -167,6 +167,8 @@ def make_texture_material(name: str, textures: dict[str, Path], roughness: float
     material["Aerathea.TextureN"] = str(textures["n"].relative_to(ROOT))
     material["Aerathea.TextureORM"] = str(textures["orm"].relative_to(ROOT))
     material["Aerathea.MaterialPass"] = "dcc_texture_integration_proof"
+    if name.endswith("_RedPaint"):
+        material["Aerathea.SurfaceTreatment"] = "worn_oxide_pigment_surface_decal"
 
     def load_image_node(path: Path, label: str, color_space: str) -> bpy.types.Node:
         image = bpy.data.images.load(str(path), check_existing=True)
@@ -223,7 +225,7 @@ def make_materials(texture_paths: dict[str, dict[str, Path]]) -> dict[str, bpy.t
         ),
         "earth": make_texture_material("M_GIA_BloodAxeCairnTarget_A1_A01_Earth", texture_paths["earth"], 0.96, (0.30, 0.20, 0.13)),
         "rawhide": make_texture_material("M_GIA_BloodAxeCairnTarget_A1_A01_Rawhide", texture_paths["rawhide"], 0.88, (0.58, 0.36, 0.16)),
-        "red": make_texture_material("M_GIA_BloodAxeCairnTarget_A1_A01_RedPaint", texture_paths["red"], 0.94, (0.58, 0.045, 0.030)),
+        "red": make_texture_material("M_GIA_BloodAxeCairnTarget_A1_A01_RedPaint", texture_paths["red"], 0.96, (0.46, 0.032, 0.021)),
     }
 
 
@@ -427,20 +429,40 @@ def add_worn_paint_patch(
     rotation: tuple[float, float, float],
     seed: int,
 ) -> bpy.types.Object:
-    return add_tapered_slab(
-        name,
-        collection,
-        material,
-        location,
-        dimensions,
-        rotation,
-        seed,
-        top_scale_x=0.82,
-        top_scale_y=0.96,
-        top_offset=((deterministic_noise(seed, 5, 91) - 0.5) * dimensions[0] * 0.08, 0.0),
-        bevel_scale=0.035,
-        rough_scale=0.06,
-    )
+    length, _surface_offset, stroke_width = dimensions
+    segments = 9
+    verts: list[tuple[float, float, float]] = []
+    faces: list[tuple[int, int, int, int]] = []
+    for index in range(segments + 1):
+        t = index / segments
+        x = (-length * 0.5) + (length * t)
+        taper = 0.46 + math.sin(t * math.pi) * 0.50
+        upper_noise = (deterministic_noise(index, seed, seed + 3) - 0.5) * stroke_width * 0.44
+        lower_noise = (deterministic_noise(seed, index, seed + 7) - 0.5) * stroke_width * 0.44
+        center_noise = (deterministic_noise(index, seed + 11, seed + 13) - 0.5) * stroke_width * 0.28
+        half_width = max(stroke_width * taper * 0.5, stroke_width * 0.20)
+        verts.append((x, 0.0, center_noise - half_width + lower_noise))
+        verts.append((x, 0.0, center_noise + half_width + upper_noise))
+
+    for index in range(segments):
+        if deterministic_noise(index, seed + 23, seed + 29) > 0.97:
+            continue
+        faces.append((index * 2, index * 2 + 1, index * 2 + 3, index * 2 + 2))
+
+    mesh = bpy.data.meshes.new(f"{name}_Mesh")
+    mesh.from_pydata(verts, [], faces)
+    mesh.update()
+    obj = bpy.data.objects.new(name, mesh)
+    obj.location = location
+    obj.rotation_euler = rotation
+    obj.data.materials.append(material)
+    obj["Aerathea.PaintTreatment"] = "surface_pigment_patch_no_thickness"
+    try:
+        obj.visible_shadow = False
+    except AttributeError:
+        pass
+    collection.objects.link(obj)
+    return obj
 
 
 def add_cylinder_between(
@@ -758,21 +780,21 @@ def build_asset_lod(collection: bpy.types.Collection, materials: dict[str, bpy.t
 
     if mid:
         paint_specs = [
-            ("MainLongAxeSigilStem", (0, -85, 88), (126, 1.8, 5.0), (math.radians(-31), math.radians(-8), math.radians(62)), 301),
-            ("MainAxeBladeUpperSlash", (-35, -86, 107), (82, 1.8, 4.6), (math.radians(-31), math.radians(-8), math.radians(9)), 302),
-            ("MainAxeBladeLowerSlash", (24, -84, 78), (86, 1.8, 4.6), (math.radians(-31), math.radians(-8), math.radians(-28)), 303),
-            ("LeftStackRedSmear", (-126, -50, 70), (70, 1.7, 3.5), (math.radians(2), math.radians(-6), math.radians(5)), 304),
-            ("RearSlabSmallWarMark", (53, 18, 142), (52, 1.7, 3.5), (math.radians(-7), math.radians(9), math.radians(-32)), 305),
+            ("MainLongAxeSigilStem", (0, -86, 88), (118, 0.0, 9.5), (math.radians(-31), math.radians(-8), math.radians(62)), 301),
+            ("MainAxeBladeUpperSlash", (-35, -87, 107), (76, 0.0, 9.0), (math.radians(-31), math.radians(-8), math.radians(9)), 302),
+            ("MainAxeBladeLowerSlash", (24, -86, 78), (80, 0.0, 8.5), (math.radians(-31), math.radians(-8), math.radians(-28)), 303),
+            ("LeftStackRedSmear", (-126, -51, 70), (62, 0.0, 7.0), (math.radians(2), math.radians(-6), math.radians(5)), 304),
+            ("RearSlabSmallWarMark", (53, 17, 142), (44, 0.0, 7.0), (math.radians(-7), math.radians(9), math.radians(-32)), 305),
         ]
         if lod == 0:
             paint_specs.extend(
                 [
-                    ("MainShortRaggedBottomStroke", (35, -84, 57), (64, 1.6, 3.5), (math.radians(-31), math.radians(-8), math.radians(72)), 306),
-                    ("MainRaggedAxeHeadPatch", (-9, -86, 77), (40, 1.8, 12), (math.radians(-31), math.radians(-8), math.radians(14)), 307),
-                    ("MainLeftHookBrokenStroke", (-49, -86, 88), (56, 1.6, 3.5), (math.radians(-31), math.radians(-8), math.radians(46)), 309),
-                    ("MainDryBrushTopChipA", (-18, -86, 117), (38, 1.4, 3.0), (math.radians(-31), math.radians(-8), math.radians(-42)), 310),
-                    ("MainDryBrushBottomDrip", (18, -85, 47), (40, 1.4, 3.0), (math.radians(-31), math.radians(-8), math.radians(84)), 311),
-                    ("RightSupportSmallMark", (128, -31, 77), (40, 1.4, 3.0), (math.radians(3), math.radians(-9), math.radians(36)), 308),
+                    ("MainShortRaggedBottomStroke", (35, -86, 57), (56, 0.0, 6.2), (math.radians(-31), math.radians(-8), math.radians(72)), 306),
+                    ("MainRaggedAxeHeadPatch", (-9, -87, 77), (36, 0.0, 15.0), (math.radians(-31), math.radians(-8), math.radians(14)), 307),
+                    ("MainLeftHookBrokenStroke", (-49, -87, 88), (48, 0.0, 6.2), (math.radians(-31), math.radians(-8), math.radians(46)), 309),
+                    ("MainDryBrushTopChipA", (-18, -87, 117), (30, 0.0, 5.4), (math.radians(-31), math.radians(-8), math.radians(-42)), 310),
+                    ("MainDryBrushBottomDrip", (18, -86, 47), (34, 0.0, 5.4), (math.radians(-31), math.radians(-8), math.radians(84)), 311),
+                    ("RightSupportSmallMark", (128, -32, 77), (34, 0.0, 5.8), (math.radians(3), math.radians(-9), math.radians(36)), 308),
                 ]
             )
         for label, location, dimensions, rotation, seed in paint_specs:
