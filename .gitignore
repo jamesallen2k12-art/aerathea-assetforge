@@ -24,6 +24,9 @@ __pycache__/
 # DCC editor backups
 *.blend1
 
+# Local external tools, model caches, and research dependencies
+Tools/External/
+
 # OS/filesystem noise
 .DS_Store
 Thumbs.db
