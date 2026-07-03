@@ -26,10 +26,11 @@
 - Fractured face proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_FracturedFacePass_A04.png`
 - Traced outline proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_TracedOutlinePass_A05.png`
 - Reclined multi-pass proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_ReclinedMultiPass_A08.png`
-- LOD0: 4288 tris
-- LOD1: 2280 tris
-- LOD2: 1334 tris
-- LOD3: 1028 tris
+- Authored multi-plane proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_AuthoredMultiPlanePass_A09.png`
+- LOD0: 4496 tris
+- LOD1: 2472 tris
+- LOD2: 1542 tris
+- LOD3: 1228 tris
 
 ## Second Geometry Pass
 
@@ -132,6 +133,16 @@
 - Status remains `DCC source candidate pending concept-geometry and paint review`; final approval status is `not approved`.
 - Review note: this pass improves the A05/A06 angle problem and reduces the paint artifact, but it is still not close enough to the A1 concept. The main face remains one broad procedural slab with a smooth/oval read, the underside still reads too black, and the concept's chipped multi-plane slate fracture language is missing.
 - Next pass must stop rotating one monolithic slab. Build the dominant A1 face as multiple authored stone planes: upper-left shoulder, central painted face, right broken cheek, front lower lip, and embedded support wedges, each with separate chipped outlines and shallow depth.
+
+## Authored Multi-Plane Front Learning Pass
+
+- Replaced the single dominant slab with separate authored front planes: central painted face, upper-left shoulder plane, right broken cheek plane, lower front lip plane, and embedded support wedges.
+- This moved the structure away from the one-piece slab failure and made the front read more broken, but the result still does not match the A1 concept.
+- Saved the latest in-progress proof as `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_AuthoredMultiPlanePass_A09.png`.
+- Latest triangle counts: LOD0 4496 tris, LOD1 2472, LOD2 1542, LOD3 1228.
+- Status remains `DCC source candidate pending concept-geometry and paint review`; final approval status is `not approved`.
+- Review note: the multi-plane structure is directionally better, but the face now reads as layered shingles with harsh black seams rather than a chipped painted stone. The target requires a more faithful volumetric guide before further hand-authored tuning.
+- Next pass should use the existing TRELLIS-AMD multi-view research path or a generated multi-view A1 reference to extract volume proportions and plane landmarks, then rebuild the DCC source from those landmarks. Do not repeat the single-view TRELLIS.2 flat-relief path.
 
 ## Gate
 
