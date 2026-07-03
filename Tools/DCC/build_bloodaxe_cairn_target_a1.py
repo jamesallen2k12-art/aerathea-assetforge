@@ -140,13 +140,13 @@ def make_materials(texture_paths: dict[str, dict[str, Path]]) -> dict[str, bpy.t
             "M_GIA_BloodAxeCairnTarget_A1_A01_StoneFacetLight",
             texture_paths["stone"],
             0.9,
-            (0.64, 0.59, 0.48),
+            (0.57, 0.53, 0.44),
         ),
         "stone_dark": make_texture_material(
             "M_GIA_BloodAxeCairnTarget_A1_A01_StoneFacetDark",
             texture_paths["stone"],
             0.93,
-            (0.34, 0.32, 0.27),
+            (0.38, 0.36, 0.30),
         ),
         "earth": make_texture_material("M_GIA_BloodAxeCairnTarget_A1_A01_Earth", texture_paths["earth"], 0.95, (0.32, 0.20, 0.11)),
         "rawhide": make_texture_material("M_GIA_BloodAxeCairnTarget_A1_A01_Rawhide", texture_paths["rawhide"], 0.86, (0.66, 0.40, 0.17)),
@@ -408,19 +408,28 @@ def add_surface_facet(
     rotation: tuple[float, float, float],
     seed: int,
 ) -> bpy.types.Object:
-    return add_tapered_slab(
+    facet_outline = [
+        (-0.50, -0.34),
+        (-0.27, -0.50),
+        (-0.04, -0.41),
+        (0.24, -0.49),
+        (0.50, -0.18),
+        (0.38, 0.08),
+        (0.47, 0.30),
+        (0.12, 0.51),
+        (-0.18, 0.40),
+        (-0.44, 0.20),
+    ]
+    return add_fractured_slab(
         name,
         collection,
         material,
         location,
         dimensions,
         rotation,
+        facet_outline,
         seed,
-        top_scale_x=0.70,
-        top_scale_y=0.90,
-        top_offset=((deterministic_noise(seed, 1, 43) - 0.5) * dimensions[0] * 0.12, 0.0),
-        bevel_scale=0.07,
-        rough_scale=0.05,
+        rough_scale=0.035,
     )
 
 
@@ -508,106 +517,141 @@ def build_asset_lod(collection: bpy.types.Collection, materials: dict[str, bpy.t
     mid = lod <= 1
     low = lod <= 2
 
+    broad_front_outline = [
+        (-0.53, -0.42),
+        (-0.39, -0.56),
+        (-0.20, -0.50),
+        (-0.06, -0.57),
+        (0.18, -0.49),
+        (0.35, -0.39),
+        (0.55, -0.18),
+        (0.46, -0.02),
+        (0.53, 0.15),
+        (0.34, 0.25),
+        (0.25, 0.43),
+        (0.08, 0.56),
+        (-0.07, 0.48),
+        (-0.20, 0.55),
+        (-0.32, 0.34),
+        (-0.48, 0.22),
+        (-0.38, 0.06),
+        (-0.55, -0.06),
+    ]
+    tall_crag_outline = [
+        (-0.42, -0.50),
+        (0.18, -0.52),
+        (0.38, -0.39),
+        (0.28, -0.21),
+        (0.49, -0.02),
+        (0.30, 0.19),
+        (0.36, 0.39),
+        (0.08, 0.58),
+        (-0.05, 0.48),
+        (-0.20, 0.55),
+        (-0.34, 0.31),
+        (-0.50, 0.12),
+        (-0.39, -0.04),
+        (-0.52, -0.28),
+    ]
+    support_crag_outline = [
+        (-0.45, -0.50),
+        (0.30, -0.49),
+        (0.48, -0.29),
+        (0.36, -0.10),
+        (0.51, 0.10),
+        (0.24, 0.42),
+        (-0.03, 0.54),
+        (-0.26, 0.35),
+        (-0.47, 0.18),
+        (-0.38, -0.06),
+    ]
+    low_slab_outline = [
+        (-0.52, -0.42),
+        (-0.37, -0.53),
+        (-0.12, -0.46),
+        (0.09, -0.54),
+        (0.38, -0.42),
+        (0.55, -0.14),
+        (0.43, 0.11),
+        (0.51, 0.31),
+        (0.18, 0.52),
+        (-0.07, 0.43),
+        (-0.30, 0.53),
+        (-0.50, 0.20),
+        (-0.40, -0.03),
+    ]
+
     fractured_specs = [
         (
             "DominantDiagonalFrontSlab",
-            (2, -43, 77),
-            (184, 36, 144),
-            (math.radians(-31), math.radians(-8), math.radians(-10)),
-            [
-                (-0.52, -0.43),
-                (-0.36, -0.55),
-                (0.08, -0.52),
-                (0.41, -0.37),
-                (0.54, -0.05),
-                (0.42, 0.24),
-                (0.18, 0.54),
-                (-0.14, 0.49),
-                (-0.36, 0.28),
-                (-0.50, 0.02),
-            ],
+            (0, -43, 72),
+            (176, 34, 136),
+            (math.radians(-32), math.radians(-9), math.radians(-12)),
+            broad_front_outline,
             201,
         ),
         (
             "TallRearOathSlab",
-            (36, 52, 112),
-            (74, 38, 184),
-            (math.radians(-10), math.radians(7), math.radians(-13)),
-            [
-                (-0.45, -0.47),
-                (0.31, -0.50),
-                (0.47, -0.18),
-                (0.38, 0.31),
-                (0.10, 0.56),
-                (-0.24, 0.44),
-                (-0.48, 0.03),
-            ],
+            (36, 52, 108),
+            (70, 34, 178),
+            (math.radians(-12), math.radians(8), math.radians(-11)),
+            tall_crag_outline,
             202,
         ),
         (
             "RightUprightSupportStone",
-            (122, -4, 76),
-            (48, 32, 124),
+            (124, -6, 72),
+            (42, 30, 116),
             (math.radians(2), math.radians(-8), math.radians(13)),
-            [
-                (-0.45, -0.50),
-                (0.36, -0.47),
-                (0.50, -0.12),
-                (0.32, 0.45),
-                (-0.04, 0.52),
-                (-0.44, 0.20),
-            ],
+            support_crag_outline,
             206,
         ),
         (
             "RightRearSupportStone",
-            (152, 39, 68),
-            (38, 30, 104),
+            (153, 38, 64),
+            (34, 28, 96),
             (math.radians(-5), math.radians(6), math.radians(20)),
-            [
-                (-0.42, -0.50),
-                (0.36, -0.47),
-                (0.48, -0.10),
-                (0.20, 0.51),
-                (-0.36, 0.37),
-                (-0.50, -0.06),
-            ],
+            support_crag_outline,
             207,
         ),
     ]
-    primary_specs = [
-        ("LeftBundledStackLowSlab", (-117, -25, 34), (112, 44, 24), (math.radians(2), math.radians(-7), math.radians(8)), 203),
-        ("LeftBundledStackMidSlab", (-127, -26, 57), (98, 40, 22), (math.radians(-1), math.radians(5), math.radians(-6)), 204),
-        ("LeftBundledStackTopSlab", (-112, -23, 79), (84, 35, 20), (math.radians(4), math.radians(-5), math.radians(13)), 205),
-        ("RearLowCounterweight", (-42, 56, 48), (132, 42, 42), (math.radians(-4), math.radians(4), math.radians(10)), 208),
+    secondary_fractured_specs = [
+        ("LeftBundledStackLowSlab", (-117, -25, 33), (112, 42, 24), (math.radians(2), math.radians(-7), math.radians(8)), low_slab_outline, 203),
+        ("LeftBundledStackMidSlab", (-127, -26, 56), (96, 38, 22), (math.radians(-1), math.radians(5), math.radians(-6)), low_slab_outline, 204),
+        ("LeftBundledStackTopSlab", (-112, -23, 78), (82, 34, 20), (math.radians(4), math.radians(-5), math.radians(13)), low_slab_outline, 205),
+        ("RearLowCounterweight", (-42, 56, 47), (130, 40, 40), (math.radians(-4), math.radians(4), math.radians(10)), low_slab_outline, 208),
     ]
+    primary_specs: list[tuple[str, tuple[float, float, float], tuple[float, float, float], tuple[float, float, float], int]] = []
     if low:
-        primary_specs.extend(
+        secondary_fractured_specs.extend(
             [
-                ("FrontBrokenFootStone", (42, -92, 30), (122, 34, 28), (math.radians(3), math.radians(4), math.radians(-5)), 209),
-                ("RearGroundLockStone", (26, 118, 33), (142, 36, 30), (math.radians(2), math.radians(-4), math.radians(2)), 210),
+                ("FrontBrokenFootStone", (42, -92, 28), (118, 32, 26), (math.radians(3), math.radians(4), math.radians(-5)), low_slab_outline, 209),
+                ("RearGroundLockStone", (26, 118, 31), (138, 34, 28), (math.radians(2), math.radians(-4), math.radians(2)), low_slab_outline, 210),
             ]
         )
     if mid:
-        primary_specs.extend(
+        secondary_fractured_specs.extend(
             [
-                ("LeftBackBrokenShard", (-166, 20, 48), (42, 32, 72), (math.radians(-7), math.radians(8), math.radians(-18)), 211),
-                ("RearNeedleShardLeft", (-8, 72, 91), (26, 22, 96), (math.radians(-11), math.radians(-7), math.radians(7)), 212),
-                ("RearNeedleShardRight", (92, 92, 78), (30, 24, 80), (math.radians(8), math.radians(5), math.radians(21)), 213),
+                ("LeftBackBrokenShard", (-166, 20, 47), (38, 30, 70), (math.radians(-7), math.radians(8), math.radians(-18)), support_crag_outline, 211),
+                ("RearNeedleShardLeft", (-8, 72, 91), (24, 20, 94), (math.radians(-11), math.radians(-7), math.radians(7)), tall_crag_outline, 212),
+                ("RearNeedleShardRight", (92, 92, 77), (28, 22, 78), (math.radians(8), math.radians(5), math.radians(21)), support_crag_outline, 213),
             ]
         )
     if detail:
-        primary_specs.extend(
+        secondary_fractured_specs.extend(
             [
-                ("FrontLeftGroundShard", (-62, -107, 25), (58, 26, 32), (math.radians(5), math.radians(7), math.radians(-23)), 214),
-                ("FarRightSmallSupportShard", (179, -34, 44), (27, 24, 58), (math.radians(5), math.radians(-8), math.radians(18)), 215),
-                ("BackLeftButtressShard", (-116, 95, 41), (74, 38, 54), (math.radians(-8), math.radians(-4), math.radians(-14)), 216),
-                ("BackRightButtressShard", (128, 102, 44), (74, 34, 58), (math.radians(5), math.radians(7), math.radians(14)), 217),
+                ("FrontLeftGroundShard", (-62, -107, 24), (56, 24, 30), (math.radians(5), math.radians(7), math.radians(-23)), low_slab_outline, 214),
+                ("FarRightSmallSupportShard", (179, -34, 43), (24, 22, 56), (math.radians(5), math.radians(-8), math.radians(18)), support_crag_outline, 215),
+                ("BackLeftButtressShard", (-116, 95, 40), (70, 36, 52), (math.radians(-8), math.radians(-4), math.radians(-14)), low_slab_outline, 216),
+                ("BackRightButtressShard", (128, 102, 43), (70, 32, 56), (math.radians(5), math.radians(7), math.radians(14)), support_crag_outline, 217),
             ]
         )
 
     for label, location, dimensions, rotation, outline, seed in fractured_specs:
         objects.append(add_fractured_slab(f"{prefix}_Stone_{label}", collection, materials["stone"], location, dimensions, rotation, outline, seed + lod * 31))
+
+    for label, location, dimensions, rotation, outline, seed in secondary_fractured_specs:
+        objects.append(add_fractured_slab(f"{prefix}_Stone_{label}", collection, materials["stone"], location, dimensions, rotation, outline, seed + lod * 31, rough_scale=0.12))
 
     for label, location, dimensions, rotation, seed in primary_specs:
         objects.append(add_rough_box(f"{prefix}_Stone_{label}", collection, materials["stone"], location, dimensions, rotation, seed + lod * 31))
@@ -878,7 +922,7 @@ def configure_review_scene() -> tuple[bpy.types.Object, Vector]:
     camera = bpy.context.object
     camera.name = "AET_DCC_ReviewCamera"
     camera.data.type = "ORTHO"
-    camera.data.ortho_scale = 385.0
+    camera.data.ortho_scale = 455.0
     camera.data.lens = 45
     camera.data.sensor_width = 32
     bpy.context.scene.camera = camera

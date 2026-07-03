@@ -18,10 +18,10 @@
 - DCC render root: `Saved/Automation/DCC/SM_GIA_BloodAxeCairnTarget_A1_A01/`
 - Concept comparison: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_ConceptGeometryCompare.png`
 - DCC target-layout proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_DCCProofTargetLayout.png`
-- LOD0: 3832 tris
-- LOD1: 1616 tris
-- LOD2: 636 tris
-- LOD3: 524 tris
+- LOD0: 6196 tris
+- LOD1: 3264 tris
+- LOD2: 1376 tris
+- LOD3: 1104 tris
 
 ## Second Geometry Pass
 
@@ -40,6 +40,15 @@
 - Reworked red marks as thinner worn paint patches instead of heavy raised bars.
 - Increased loose ground rubble density and regenerated all DCC proof captures.
 - Kept the asset in the small prop budget at LOD0 3832 tris.
+
+## Fourth Geometry Pass
+
+- Converted the left lashed stack, rear counterweight, front foot stones, rear lock stones, and side buttresses from clean beveled boxes into fractured slab meshes.
+- Recut the dominant front slab, tall rear oath slab, and right support stones with sharper jagged outlines so the silhouette changes, not only the surface detail.
+- Replaced rectangular-looking chipped facet patches with lower-contrast jagged fracture patches.
+- Increased DCC review camera framing so the tall rear slab is no longer clipped in front, side, back, left, hero, or turntable proof images.
+- Regenerated the Blender source, FBX exports, LOD exports, DCC proof renders, target-layout proof, and concept comparison sheet.
+- Triangle budget moved from small-prop range into the approved large-prop range from the concept brief: LOD0 6196 tris, LOD1 3264, LOD2 1376, LOD3 1104.
 
 ## Gate
 
@@ -60,7 +69,7 @@ This asset intentionally starts a new clean lane instead of reusing the older `S
 
 ## Review Result
 
-The third-pass A1 DCC source candidate is useful as a geometry planning proof, but it should not pass concept-geometry approval yet.
+The fourth-pass A1 DCC source candidate is now a useful concept-geometry review candidate, but it should not move to Unreal import or `DCC game-ready candidate` status without Flamestrike approval against the A1 target.
 
 What it captures:
 
@@ -74,15 +83,16 @@ What it captures:
 - More reviewable DCC proof captures for front/right/back/left/hero orientation.
 - Rounder rope binding volumes and more rubble density than the second pass.
 - Red marks now read more like worn applied pigment than the earlier raised bars.
+- Major secondary stones now use fractured silhouettes instead of clean beveled box silhouettes.
+- Review captures are fully framed and no longer clip the tall rear slab.
 
 Remaining gaps before approval:
 
-- Stone forms are improved but still too clean, blocky, and planar compared with the concept's fractured natural slabs.
-- Front slab still needs more asymmetric chipped edges, concave breaks, and broken face planes that affect the base silhouette, not only surface facets.
-- Rear and side stones are in the right lane, but need more organic proportion and less blockout-like vertical massing.
-- Red paint is thinner, but should be pushed closer to stained/dry-brushed pigment once the stone geometry is approved.
-- Rope bindings now have round volume, but the wrap paths still need better contact around the actual slab shapes after the next stone pass.
+- Stone silhouette is much closer, but still lacks the concept's hand-authored natural stone breakup and texture-level chipped erosion.
+- Red paint is readable, but still needs texture/material treatment to become stained/dry-brushed pigment instead of raised proof geometry.
+- Rope bindings have round volume, but their contact and wrapping paths should be refined after geometry approval.
 - Ground rubble density is better, but the mound still needs a more natural dirt/stone blend around the footprint.
+- Current proof material is intentionally simple DCC review shading; final material work is still pending.
 
 Decision: hold at `DCC source candidate pending concept-geometry review`; do not import to Unreal yet. This is not a `DCC game-ready candidate` and not `Fully game-ready`.
 
