@@ -810,13 +810,17 @@ def render_review(spec: VariantSpec, material: bpy.types.Material) -> None:
     bpy.ops.render.render(write_still=True)
 
 
-def export_collection(collection: bpy.types.Collection, export_path: Path) -> None:
+def export_collection(collection: bpy.types.Collection, export_path: Path, exclude_prefixes: tuple[str, ...] = ()) -> None:
     export_path.parent.mkdir(parents=True, exist_ok=True)
     previous_collection_hidden = collection.hide_viewport
     collection.hide_viewport = False
     previous_object_hidden: list[tuple[bpy.types.Object, bool, bool]] = []
     bpy.ops.object.select_all(action="DESELECT")
-    export_objects = [obj for obj in collection.objects if obj.type == "MESH"]
+    export_objects = [
+        obj
+        for obj in collection.objects
+        if obj.type == "MESH" and not any(obj.name.startswith(prefix) for prefix in exclude_prefixes)
+    ]
     for obj in export_objects:
         previous_object_hidden.append((obj, obj.hide_viewport, obj.hide_get()))
         obj.hide_viewport = False
@@ -877,12 +881,14 @@ def build_variant(spec: VariantSpec) -> None:
     bpy.ops.wm.save_as_mainfile(filepath=str(blend_path))
 
     export_collection(lod_collections[0], export_path)
+    unreal_import_path = export_path.parent / f"{spec.asset_name}_UnrealImport.fbx"
+    export_collection(lod_collections[0], unreal_import_path, exclude_prefixes=("UCX_",))
     for lod_level, collection in enumerate(lod_collections):
         lod_path = export_path.parent / f"{spec.asset_name}_LOD{lod_level}.fbx"
         export_collection(collection, lod_path)
 
     print(f"Built {blend_path.relative_to(ROOT)}")
-    print(f"Exported {export_path.relative_to(ROOT)} and LOD0-LOD3")
+    print(f"Exported {export_path.relative_to(ROOT)}, Unreal import FBX, and LOD0-LOD3")
     print(f"Rendered {REVIEW_ROOT.relative_to(ROOT)}/{spec.asset_name}/{spec.asset_name}_DCCReview.png")
 
 
