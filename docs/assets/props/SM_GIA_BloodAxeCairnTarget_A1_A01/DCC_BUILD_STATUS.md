@@ -5,6 +5,9 @@
 - Status: `DCC source candidate pending concept-geometry and paint review`
 - Source target: `docs/assets/visual_canon/BloodAxeCairnTargets_A01/VC_GIA_BloodAxe_CairnTarget_A1.png`
 - Brief: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/CONCEPT_GEOMETRY_BRIEF.md`
+- Active review lane: A21 primitive-shape blockout, shape-only
+- Primitive reference sheet: `docs/assets/reference/geometric_image_training/REF_AET_GeometricImageTraining_Primitives_A01.png`
+- Latest primitive comparison: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_A1_PrimitiveShapeBlockoutCompare_A21.png`
 - Unreal status: not imported
 - Final approval status: not approved
 
@@ -37,6 +40,8 @@
 - A19 trace-locked failure comparison: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_A1_TraceLockedFailureCompare_A19.png`
 - A20 image-locked projection proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_ImageLockedProjectionProof_A20.png`
 - A20 image-locked projection comparison: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_A1_ImageLockedProjectionCompare_A20.png`
+- A21 primitive-shape blockout proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_PrimitiveShapeBlockout_A21.png`
+- A21 primitive-shape blockout comparison: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_A1_PrimitiveShapeBlockoutCompare_A21.png`
 - LOD0: 3701 tris
 - LOD1: 1786 tris
 - LOD2: 1150 tris
@@ -219,8 +224,25 @@
 - Saved the side-by-side audit as `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_A1_ImageLockedProjectionCompare_A20.png`.
 - Saved the proof `.blend` under `SourceAssets/Blender/Props/Giants/BloodAxe/CairnTargets/A1/SM_GIA_BloodAxeCairnTarget_A1_A01_A20_ImageLockedBlockout/`.
 - Status: review-only A20 image-locked proof. This is not final texture work, not a `DCC game-ready candidate`, and not Unreal-ready.
-- Review note: A20 is ready to show Flamestrike because it exposes the remaining geometry decisions clearly. The dominant front face and paint placement now derive directly from the A1 target crop. The right support, rear slab cap, rope zones, and ground footprint still need approval or correction before retopo/export.
-- Recommended next step: get Flamestrike approval or rejection on the A20 comparison. If approved as the geometry direction, convert the projection proof into hand-authored stone meshes with real UVs and texture masks. If rejected, revise the image-locked blockout itself, not the old procedural slab generator.
+- Flamestrike review result: rejected. The image-locked projection still did not match the target strongly enough and did not answer the underlying shape-construction problem.
+- Process lesson: projection makes paint and texture easier to see, but it can hide whether the basic massing is right. The next pass should strip the work back to primitive geometry and lock the major shape language before any paint, texture, rope, chip, FBX, or Unreal work.
+- Recommended next step after A20 rejection: use the geometric image training primitives to rebuild a shape-only proof and judge silhouette/massing before restoring art detail.
+
+## A21 Primitive-Shape Blockout
+
+- Located the local primitive training images in `/home/james/Desktop/Aerathea/Geometric Image Training`.
+- Promoted recoverable PNG copies and a contact sheet to `docs/assets/reference/geometric_image_training/`.
+- Added `Tools/DCC/build_geometric_training_reference_sheet.py` for repeatable reference-sheet generation.
+- Added `Tools/DCC/build_bloodaxe_a1_primitive_shape_blockout.py` as a separate shape-only proof lane.
+- Added `Tools/DCC/build_bloodaxe_a1_primitive_shape_compare.py` to generate the A1 target versus A21 primitive side-by-side review.
+- Primitive vocabulary used: hexagonal-prism front mass, parallelepiped rear and side slabs, tetrahedron/octahedron-derived foot wedges, and no cylinder rope yet.
+- Removed projected concept texture, red paint geometry, rope bindings, chipped detail, UV/texture claims, FBX/LOD/export claims, and Unreal import claims from this pass.
+- Saved the proof image as `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_PrimitiveShapeBlockout_A21.png`.
+- Saved the comparison as `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_A1_PrimitiveShapeBlockoutCompare_A21.png`.
+- Saved the proof `.blend` under `SourceAssets/Blender/Props/Giants/BloodAxe/CairnTargets/A1/SM_GIA_BloodAxeCairnTarget_A1_A01_A21_PrimitiveShapeBlockout/`.
+- Status: review-only A21 primitive blockout. This is not final art, not a `DCC game-ready candidate`, and not Unreal-ready.
+- Review gate: approve or reject only the primary silhouette, major primitive masses, overlap hierarchy, and footprint. Do not judge paint, texture, rope, chips, UVs, LODs, collision, or Unreal readiness from this proof.
+- Recommended next step: if Flamestrike approves the primitive massing direction, lock A21 as the silhouette scaffold and add one controlled detail tier: slab chips and surface paint masks only. If rejected, keep iterating the primitive shapes before any detail work resumes.
 
 ## Gate
 
