@@ -27,6 +27,7 @@
 - Traced outline proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_TracedOutlinePass_A05.png`
 - Reclined multi-pass proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_ReclinedMultiPass_A08.png`
 - Authored multi-plane proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_AuthoredMultiPlanePass_A09.png`
+- A1 target multiview prep contact sheet: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_TargetMultiviewPrep_A10.png`
 - LOD0: 4496 tris
 - LOD1: 2472 tris
 - LOD2: 1542 tris
@@ -143,6 +144,14 @@
 - Status remains `DCC source candidate pending concept-geometry and paint review`; final approval status is `not approved`.
 - Review note: the multi-plane structure is directionally better, but the face now reads as layered shingles with harsh black seams rather than a chipped painted stone. The target requires a more faithful volumetric guide before further hand-authored tuning.
 - Next pass should use the existing TRELLIS-AMD multi-view research path or a generated multi-view A1 reference to extract volume proportions and plane landmarks, then rebuild the DCC source from those landmarks. Do not repeat the single-view TRELLIS.2 flat-relief path.
+
+## A1 Target Multiview Reference Prep
+
+- Added `Tools/DCC/prepare_bloodaxe_a1_target_multiview_inputs.py` to crop the approved A1 target sheet into research-only RGBA hero/front/right/back/left views for TRELLIS-AMD reference testing.
+- Generated the ignored working inputs under `Saved/AssetForgeResearch/benchmarks/inputs/bloodaxe_a1_target_multiview/`.
+- Promoted the crop contact sheet to `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_TargetMultiviewPrep_A10.png`.
+- Status remains `DCC source candidate pending concept-geometry and paint review`; this prep is not a DCC source candidate, not visual canon, and not production art.
+- Next pass should run the TRELLIS-AMD multi-view reference job using these A1 crops, inspect whether it passes the volume gate, and use only landmark/proportion lessons from the output.
 
 ## Gate
 
