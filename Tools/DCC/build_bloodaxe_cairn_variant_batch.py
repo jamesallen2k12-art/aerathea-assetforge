@@ -456,6 +456,85 @@ def scrap_cap_stack(prefix: str, origin: tuple[float, float, float], yaw: float 
     )
 
 
+def approach_marker_stack(prefix: str, origin: tuple[float, float, float], yaw: float = 0.0) -> CairnStack:
+    return CairnStack(
+        prefix=prefix,
+        origin=origin,
+        yaw=yaw,
+        base_radius=(182, 106, 6),
+        stones=(
+            Stone("Stone_BroadShoulder", (-38, -2, 42), (96, 54, 38), (rad(5), rad(-8), rad(10)), STONE_MID, 2),
+            Stone("Stone_SunkOuterFoot", (-104, 22, 28), (48, 30, 22), (rad(6), rad(12), rad(28)), STONE_CAVE, 1),
+            Stone("Stone_RouteEdgeBrace", (72, -18, 36), (62, 38, 30), (rad(8), rad(-5), rad(-18)), STONE_DARK, 1),
+            Stone("Stone_LowOffsetCap", (8, 0, 88), (44, 30, 22), (rad(15), rad(3), rad(-10)), STONE_WORN, 1),
+        ),
+        ribbons=(
+            Ribbon("BloodAxeCloth_SideWarningBeat", (-54, -62, 62), (78, 5, 18), (rad(5), 0, rad(-18))),
+            Ribbon("RawhideWrap_ApproachEdgeTie", (28, -50, 68), (54, 4, 7), (rad(4), 0, rad(22)), RAWHIDE),
+        ),
+    )
+
+
+def ritual_guidepost_stack(prefix: str, origin: tuple[float, float, float], yaw: float = 0.0) -> CairnStack:
+    return CairnStack(
+        prefix=prefix,
+        origin=origin,
+        yaw=yaw,
+        base_radius=(126, 90, 6),
+        stones=(
+            Stone("Stone_TallLowerShard", (-6, 0, 66), (58, 40, 82), (rad(0), rad(-12), rad(5)), STONE_MID, 2),
+            Stone("Stone_RearRitualBrace", (46, 20, 42), (48, 32, 34), (rad(-5), rad(8), rad(-24)), STONE_DARK, 1),
+            Stone("Stone_FrontKneestone", (-52, -18, 32), (44, 28, 24), (rad(9), rad(9), rad(20)), STONE_CAVE, 1),
+            Stone("Stone_CeremonialCrown", (4, -6, 142), (38, 28, 28), (rad(17), rad(2), rad(-7)), STONE_WORN, 1),
+        ),
+        ribbons=(
+            Ribbon("BloodAxeCloth_HighRitualBand", (-2, -52, 112), (82, 5, 20), (rad(6), 0, rad(-4))),
+            Ribbon("RawhideWrap_CrownTie", (8, -46, 138), (48, 4, 7), (rad(4), 0, rad(9)), RAWHIDE),
+        ),
+        accents=(
+            Accent("DullBone_LowRitualToken", (-48, -48, 34), (32, 7, 7), (rad(5), 0, rad(-20)), BONE),
+        ),
+    )
+
+
+def path_marker_stack(prefix: str, origin: tuple[float, float, float], yaw: float = 0.0) -> CairnStack:
+    return CairnStack(
+        prefix=prefix,
+        origin=origin,
+        yaw=yaw,
+        base_radius=(132, 92, 5),
+        stones=(
+            Stone("Stone_SimpleLean", (-16, 2, 48), (58, 38, 58), (rad(4), rad(-24), rad(9)), STONE_MID, 2),
+            Stone("Stone_TrailFootLeft", (-62, 22, 26), (38, 28, 20), (rad(6), rad(10), rad(28)), STONE_DARK, 1),
+            Stone("Stone_TrailFootRight", (48, -20, 30), (42, 28, 23), (rad(5), rad(-7), rad(-22)), STONE_CAVE, 1),
+            Stone("Stone_SmallDirectionCap", (0, -4, 98), (32, 24, 20), (rad(16), rad(3), rad(-12)), STONE_WORN, 1),
+        ),
+        ribbons=(
+            Ribbon("BloodAxeCloth_SmallTrailBeat", (-6, -50, 76), (62, 5, 16), (rad(4), 0, rad(-6))),
+        ),
+    )
+
+
+def collapsed_cave_remnant_stack(prefix: str, origin: tuple[float, float, float], yaw: float = 0.0) -> CairnStack:
+    return CairnStack(
+        prefix=prefix,
+        origin=origin,
+        yaw=yaw,
+        base_radius=(186, 132, 7),
+        stones=(
+            Stone("Stone_CaveBuriedSlab", (-62, -8, 28), (92, 50, 22), (rad(8), rad(8), rad(16)), STONE_CAVE, 2),
+            Stone("Stone_DarkSideMass", (44, 26, 30), (68, 40, 26), (rad(13), rad(-3), rad(-27)), STONE_DARK, 1),
+            Stone("Stone_AshChokedCap", (-2, -56, 28), (56, 30, 18), (rad(4), rad(20), rad(2)), STONE_WORN, 1),
+            Stone("Stone_LowMemoryStub", (-16, 18, 58), (38, 28, 30), (rad(-8), rad(4), rad(10)), STONE_CAVE, 1),
+        ),
+        ribbons=(
+            Ribbon("BloodAxeCloth_OldBuriedStrip", (12, -76, 36), (82, 5, 12), (rad(2), 0, rad(13)), (0.42, 0.035, 0.028, 1.0)),
+            Ribbon("Rawhide_CaveResidueTie", (-36, -58, 34), (48, 4, 6), (rad(3), 0, rad(-14)), RAWHIDE),
+        ),
+        base_color=(0.07, 0.072, 0.07, 1.0),
+    )
+
+
 VARIANTS: tuple[VariantSpec, ...] = (
     VariantSpec(
         asset_name="SM_GIA_BloodAxeApproachCairnMarker_A01",
@@ -463,7 +542,7 @@ VARIANTS: tuple[VariantSpec, ...] = (
         unreal_path="/Game/Aerathea/Props/Giants/BloodAxe/StrongholdApproach/CairnMarkers/SM_GIA_BloodAxeApproachCairnMarker_A01",
         status_doc="docs/assets/props/SM_GIA_BloodAxeApproachCairnMarker_A01/DCC_BUILD_STATUS.md",
         summary="First-pass route-edge cairn marker with squat wedge mass, oxide red cloth, ash base, and no gameplay marker behavior.",
-        stacks=(leaning_stack("ApproachMarker", (0, 0, 0), rad(-6)),),
+        stacks=(approach_marker_stack("ApproachMarker", (0, 0, 0), rad(-6)),),
     ),
     VariantSpec(
         asset_name="SM_GIA_BloodAxeRitualCairnGuidepost_A01",
@@ -471,7 +550,7 @@ VARIANTS: tuple[VariantSpec, ...] = (
         unreal_path="/Game/Aerathea/Props/Giants/BloodAxe/RitualStones/Guideposts/SM_GIA_BloodAxeRitualCairnGuidepost_A01",
         status_doc="docs/assets/props/SM_GIA_BloodAxeRitualCairnGuidepost_A01/DCC_BUILD_STATUS.md",
         summary="First-pass single ritual cairn guidepost with stacked Giant-scale stones, one static red cloth beat, and ash/mud grounding.",
-        stacks=(leaning_stack("RitualGuidepost", (0, 0, 0), rad(3)),),
+        stacks=(ritual_guidepost_stack("RitualGuidepost", (0, 0, 0), rad(3)),),
     ),
     VariantSpec(
         asset_name="SM_GIA_BloodAxeLowThresholdCairn_A01",
@@ -503,7 +582,7 @@ VARIANTS: tuple[VariantSpec, ...] = (
         unreal_path="/Game/Aerathea/Props/Giants/BloodAxe/CaveApproachMarkers/SM_GIA_BloodAxeCollapsedCaveRemnantCairn_A01",
         status_doc="docs/assets/props/SM_GIA_BloodAxeCollapsedCaveRemnantCairn_A01/DCC_BUILD_STATUS.md",
         summary="First-pass collapsed cave remnant cairn with low shifted stones and darker cave-mouth ash/mud grounding.",
-        stacks=(collapsed_stack("CollapsedCaveRemnant", (0, 0, 0), rad(12)),),
+        stacks=(collapsed_cave_remnant_stack("CollapsedCaveRemnant", (0, 0, 0), rad(12)),),
     ),
     VariantSpec(
         asset_name="SM_GIA_BloodAxeCaveThresholdCairnPair_A01",
@@ -555,7 +634,7 @@ VARIANTS: tuple[VariantSpec, ...] = (
         unreal_path="/Game/Aerathea/Props/Giants/BloodAxe/PathMarkers/SM_GIA_BloodAxeCairnPathMarker_A01",
         status_doc="docs/assets/props/SM_GIA_BloodAxeCairnPathMarker_A01/DCC_BUILD_STATUS.md",
         summary="First-pass cairn path marker with leaning mass, fixed cloth beat, and ash base; no waypoint or objective behavior.",
-        stacks=(leaning_stack("PathMarker", (0, 0, 0), rad(-14)),),
+        stacks=(path_marker_stack("PathMarker", (0, 0, 0), rad(-14)),),
     ),
     VariantSpec(
         asset_name="SM_GIA_BloodAxeCairnScrapCap_A01",

@@ -43,9 +43,19 @@ Each asset has a local proof render at:
 
 The proof renders include the asset, ground-center pivot label, female Giant 442 cm height marker, and male Giant 470 cm height marker. They are DCC proof renders, not final visual approval captures.
 
+## Contact Sheet And Preflight Review
+
+- Tracked contact sheet: `docs/assets/kits/KIT_GIA_BloodAxeCairnVariantBatch_A01/BloodAxeCairnVariants_A01_DCCReviewContactSheet.png`
+- Local contact sheet: `Saved/Automation/DCC/BloodAxeCairnVariants_A01/BloodAxeCairnVariants_A01_DCCReviewContactSheet.png`
+- Preflight review: `docs/assets/kits/KIT_GIA_BloodAxeCairnVariantBatch_A01/DCC_PREFLIGHT_REVIEW.md`
+
+Codex preflight review keeps all twelve variants in the batch. Initial review flagged four duplicate-risk silhouettes; a same-day DCC differentiation pass revised those four assets, regenerated the Blender sources, rebuilt main FBXs and LOD0-LOD3 FBXs, and updated the contact sheet. Current recommendation: all twelve remain `DCC source candidate` assets and may advance to game-ready prep after Flamestrike contact-sheet review.
+
 ## Validation
 
 - `python3 -m py_compile Tools/DCC/build_bloodaxe_cairn_variant_batch.py` passed.
+- `python3 -m py_compile Tools/DCC/build_bloodaxe_cairn_variant_review_sheet.py` passed.
+- `python3 Tools/DCC/build_bloodaxe_cairn_variant_review_sheet.py` completed and regenerated the local and tracked review contact sheets.
 - `blender --background --python Tools/DCC/build_bloodaxe_cairn_variant_batch.py` completed and generated all twelve `.blend` sources, main FBXs, LOD0-LOD3 FBXs, and proof renders.
 - LOD export size validation returned no `_LOD1` through `_LOD3` FBX files under 5000 bytes, confirming the hidden-collection export fix produced real LOD mesh files instead of empty FBX headers.
 - DCC proof renders were spot-checked for the cave-threshold pair and approach cairn marker.
