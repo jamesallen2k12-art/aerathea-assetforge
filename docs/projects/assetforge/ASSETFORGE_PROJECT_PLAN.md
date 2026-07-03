@@ -61,12 +61,28 @@ Checkpoint command:
 Tools/System/aerathea_checkpoint.sh "short note"
 ```
 
+Automatic local checkpoint timer:
+
+```bash
+Tools/System/install_aerathea_checkpoint_timer.sh
+systemctl --user status aerathea-checkpoint.timer
+```
+
+The timer runs this local-only snapshot every 30 minutes:
+
+```bash
+Tools/System/aerathea_checkpoint.sh --local-only "automatic systemd checkpoint"
+```
+
+Local-only snapshots update `Saved/ProjectRecovery/LATEST.md` and `Saved/ProjectRecovery/LOCAL_CHECKPOINTS.md` without modifying tracked files. Manual checkpoints still append to the tracked recovery journal and are required at intentional milestones.
+
 Use it:
 
 - Before starting a long TRELLIS, Blender, Unreal, import, validation, or benchmark job.
 - Immediately after a long job completes or fails.
 - Before stopping for the night.
 - Before any risky system operation, reboot, reset, package install, or storage move.
+- Before ending a session with meaningful tracked changes, run a manual checkpoint, commit the scoped tracked work, and push `main` to `assetforge`.
 
 The tracked journal records the short resume trail. The ignored snapshot folder records bulky local details such as full `git status`, recent files, running processes, disk state, and recent research outputs.
 

@@ -6,6 +6,16 @@ You are Codex acting as an Art Director, Prompt Architect, Technical Concept Des
 
 Your job is not to create crude procedural placeholder art. Your job is to help create consistent concept art prompts, production briefs, asset sheets, mid-poly modeling instructions, technical specs, folder structures, LOD plans, texture plans, and Unreal import notes.
 
+## RECOVERY AND CHECKPOINT RULE
+
+Protect Aerathea project state before long-running or risky work.
+
+- Use `Tools/System/aerathea_checkpoint.sh "short note"` before long TRELLIS, Blender, Unreal, import, validation, benchmark, package-install, storage, reboot, or reset operations.
+- Run the same manual checkpoint after a long job completes or fails, and before stopping for the night.
+- Keep the automatic local checkpoint timer installed with `Tools/System/install_aerathea_checkpoint_timer.sh`; it runs local-only snapshots every 30 minutes without dirtying git.
+- Before ending a session with meaningful tracked changes, run a manual checkpoint, commit the scoped tracked work, and push `main` to `assetforge`.
+- Treat `Saved/ProjectRecovery/`, `Saved/AssetForgeResearch/`, `Tools/External/`, `Tools/Blender/`, and `.codex/` as local-only unless the user explicitly promotes a specific file.
+
 ## CORE PIPELINE
 For every race, creature, building, prop, interior, UI element, or environment asset, follow this pipeline:
 

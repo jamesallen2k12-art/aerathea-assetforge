@@ -71,3 +71,13 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260703-074652/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260703-074652/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-03 08:00:09 EDT -0400 - automatic checkpoint timer installed and verified
+
+- Snapshot: `Saved/ProjectRecovery/20260703-080009/`
+- Git: branch `main`, HEAD `c43631f`, status lines `5`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260703-080009/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260703-080009/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260703-080009/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

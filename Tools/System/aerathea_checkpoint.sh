@@ -5,6 +5,13 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "${SCRIPT_DIR}/../.." && pwd)"
 STAMP="$(date '+%Y%m%d-%H%M%S')"
 HUMAN_TIME="$(date '+%Y-%m-%d %H:%M:%S %Z %z')"
+LOCAL_ONLY="${AET_CHECKPOINT_LOCAL_ONLY:-0}"
+
+if [[ "${1:-}" == "--local-only" ]]; then
+  LOCAL_ONLY=1
+  shift
+fi
+
 NOTE="${*:-manual checkpoint}"
 
 JOURNAL="${REPO_ROOT}/docs/projects/assetforge/RECOVERY_JOURNAL.md"
@@ -62,6 +69,34 @@ fi
 HEAD="$(git -C "${REPO_ROOT}" rev-parse --short HEAD 2>/dev/null || echo unknown)"
 BRANCH="$(git -C "${REPO_ROOT}" branch --show-current 2>/dev/null || echo unknown)"
 STATUS_COUNT="$(git -C "${REPO_ROOT}" status --short 2>/dev/null | wc -l | tr -d ' ')"
+
+if [[ "${LOCAL_ONLY}" == "1" ]]; then
+  LOCAL_LOG="${REPO_ROOT}/Saved/ProjectRecovery/LOCAL_CHECKPOINTS.md"
+  LATEST="${REPO_ROOT}/Saved/ProjectRecovery/LATEST.md"
+
+  cat >"${LATEST}" <<EOF
+# Latest Aerathea Local Checkpoint
+
+- Time: ${HUMAN_TIME}
+- Note: ${NOTE}
+- Snapshot: \`Saved/ProjectRecovery/${STAMP}/\`
+- Git: branch \`${BRANCH}\`, HEAD \`${HEAD}\`, status lines \`${STATUS_COUNT}\`
+- Resume: inspect \`Saved/ProjectRecovery/${STAMP}/git_status_short.txt\` and \`Saved/ProjectRecovery/${STAMP}/recent_project_files.txt\`.
+EOF
+
+  cat >>"${LOCAL_LOG}" <<EOF
+
+### ${HUMAN_TIME} - ${NOTE}
+
+- Snapshot: \`Saved/ProjectRecovery/${STAMP}/\`
+- Git: branch \`${BRANCH}\`, HEAD \`${HEAD}\`, status lines \`${STATUS_COUNT}\`
+EOF
+
+  echo "Local checkpoint written:"
+  echo "  Latest: ${LATEST}"
+  echo "  Snapshot: ${SNAPSHOT_DIR}"
+  exit 0
+fi
 
 cat >>"${JOURNAL}" <<EOF
 
