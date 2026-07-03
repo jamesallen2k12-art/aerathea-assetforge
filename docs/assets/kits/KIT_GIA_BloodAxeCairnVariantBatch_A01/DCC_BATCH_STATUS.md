@@ -7,6 +7,7 @@
 - DCC source output class: `DCC game-ready candidate`
 - Current Unreal status: `Unreal import candidate`
 - Visual canon reference: `VC-GIA-BloodAxe-CairnStones-A01`
+- Primary rebuild target set: `VC-GIA-BloodAxe-CairnTargets-A01`
 - Turnaround reference: `VC-GIA-BloodAxe-CairnStones-A01-A1-TurnaroundGuide`
 - Concept geometry audit: `CONCEPT_GEOMETRY_AUDIT.md`
 
@@ -83,7 +84,7 @@ Codex preflight review kept all twelve variants in the batch. Initial review fla
 
 ## Still Blocked
 
-Concept-specific geometry rebuild/repair, final hand-painted BC/N/ORM texture sets, final material polish, startup/gameplay placement, final visual approval, final Blood Axe ritual/cave/route approval, gameplay behavior, waypoint behavior, route logic, pickup/loot/salvage behavior, destructible behavior, physics behavior, cloth simulation, VFX/audio, and Hermes work remain blocked.
+Concept-specific geometry rebuild/repair against `VC-GIA-BloodAxe-CairnTargets-A01`, final hand-painted BC/N/ORM texture sets, final material polish, startup/gameplay placement, final visual approval, final Blood Axe ritual/cave/route approval, gameplay behavior, waypoint behavior, route logic, pickup/loot/salvage behavior, destructible behavior, physics behavior, cloth simulation, VFX/audio, and Hermes work remain blocked.
 
 ## Decision
 

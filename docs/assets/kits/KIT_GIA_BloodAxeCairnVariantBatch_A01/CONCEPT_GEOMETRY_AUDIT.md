@@ -11,10 +11,14 @@
 - Approved A1 turnaround guide: `docs/assets/visual_canon/VC_GIA_BloodAxe_CairnStones_A01_A1_TurnaroundDraft_A01.png`
 - Current Unreal review: `docs/assets/kits/KIT_GIA_BloodAxeCairnVariantBatch_A01/BloodAxeCairnVariants_A01_TextureReview_Close_Lit.png`
 - Current DCC contact sheet: `docs/assets/kits/KIT_GIA_BloodAxeCairnVariantBatch_A01/BloodAxeCairnVariants_A01_DCCReviewContactSheet.png`
+- Replacement target set: `docs/assets/visual_canon/BloodAxeCairnTargets_A01/`
+- Replacement target contact sheet: `docs/assets/visual_canon/BloodAxeCairnTargets_A01/VC_GIA_BloodAxe_CairnTargets_A01_ContactSheet.png`
 
 ## Decision
 
 The current twelve-cairn batch should not proceed as final visual work. It is valid as a technical Unreal import candidate and automation proof, but it has not passed a proper concept-to-geometry match. The batch was generalized from the A1 Blood Axe cairn language and was not individually matched against A2, A3, A4, A5, B1, B2, B3, B4, or B5.
+
+Flamestrike has now provided clearer individual target images named BloodAxe A1-A5 and BloodAxe B1-B5. Those files have been copied into `docs/assets/visual_canon/BloodAxeCairnTargets_A01/` and are the required source targets for the next rebuild pass.
 
 The earlier statement in `UNREAL_VISUAL_REVIEW_STATUS.md` that no geometry rebuild was required is superseded by this audit.
 
@@ -39,21 +43,21 @@ Every cairn variant must have a concept target before DCC rebuild or final appro
 
 | Required Concept Target | Required Action |
 | --- | --- |
-| `A1` | Rebuild or repair as the primary approved slab-cluster target using the A1 crop and turnaround guide. |
-| `A2` | Create a distinct asset only after isolating the A2 concept crop and writing its geometry notes. |
-| `A3` | Create a distinct asset only after isolating the A3 concept crop and writing its geometry notes. |
-| `A4` | Create a distinct asset only after isolating the A4 concept crop and writing its geometry notes. |
-| `A5` | Create a distinct asset only after isolating the A5 concept crop and writing its geometry notes. |
-| `B1` | Create a distinct asset only after isolating the B1 concept crop and writing its geometry notes. |
-| `B2` | Create a distinct asset only after isolating the B2 concept crop and writing its geometry notes. |
-| `B3` | Create a distinct asset only after isolating the B3 concept crop and writing its geometry notes. |
-| `B4` | Create a distinct asset only after isolating the B4 concept crop and writing its geometry notes. |
-| `B5` | Create a distinct asset only after isolating the B5 concept crop and writing its geometry notes. |
+| `A1` | Build against `docs/assets/visual_canon/BloodAxeCairnTargets_A01/VC_GIA_BloodAxe_CairnTarget_A1.png`. |
+| `A2` | Build against `docs/assets/visual_canon/BloodAxeCairnTargets_A01/VC_GIA_BloodAxe_CairnTarget_A2.png`. |
+| `A3` | Build against `docs/assets/visual_canon/BloodAxeCairnTargets_A01/VC_GIA_BloodAxe_CairnTarget_A3.png`. |
+| `A4` | Build against `docs/assets/visual_canon/BloodAxeCairnTargets_A01/VC_GIA_BloodAxe_CairnTarget_A4.png`. |
+| `A5` | Build against `docs/assets/visual_canon/BloodAxeCairnTargets_A01/VC_GIA_BloodAxe_CairnTarget_A5.png`. |
+| `B1` | Build against `docs/assets/visual_canon/BloodAxeCairnTargets_A01/VC_GIA_BloodAxe_CairnTarget_B1.png`. |
+| `B2` | Build against `docs/assets/visual_canon/BloodAxeCairnTargets_A01/VC_GIA_BloodAxe_CairnTarget_B2.png`. |
+| `B3` | Build against `docs/assets/visual_canon/BloodAxeCairnTargets_A01/VC_GIA_BloodAxe_CairnTarget_B3.png`. |
+| `B4` | Build against `docs/assets/visual_canon/BloodAxeCairnTargets_A01/VC_GIA_BloodAxe_CairnTarget_B4.png`. |
+| `B5` | Build against `docs/assets/visual_canon/BloodAxeCairnTargets_A01/VC_GIA_BloodAxe_CairnTarget_B5.png`. |
 
 ## New Required Workflow
 
-1. Crop and label each concept cairn target from the approved board.
-2. Create a one-page geometry brief per target: silhouette, major stone masses, ground contact, cloth/rawhide/paint placement, front/side/back inference, and scale.
+1. Use the individual tracked target images in `docs/assets/visual_canon/BloodAxeCairnTargets_A01/`.
+2. Create a one-page geometry brief per target: silhouette, major stone masses, ground contact, cloth/rawhide/paint placement, front/side/back information, and scale.
 3. Build only one or two targets first, not a full batch.
 4. Render DCC proof directly beside the exact concept crop.
 5. Do not import to Unreal until the DCC proof passes concept-geometry review.

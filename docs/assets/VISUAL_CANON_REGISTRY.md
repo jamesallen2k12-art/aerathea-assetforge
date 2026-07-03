@@ -1,6 +1,6 @@
 # Aerathea Visual Canon Registry
 
-Last updated: 2026-07-02
+Last updated: 2026-07-03
 
 This registry records concept images and selected variants that define Aerathea's visual aesthetic. Source concepts remain in the external concept folder unless a separate storage policy approves copying them into the repository.
 
@@ -19,6 +19,7 @@ This registry records concept images and selected variants that define Aerathea'
 | `VC-GIA-BloodAxe-CairnStones-A01` | approved source board | Blood Axe cairn stones, low remnants, moved-camp residue | `docs/assets/visual_canon/VC_GIA_BloodAxe_CairnStones_A01_CandidateBoard.png` | `A1` selected as the source direction; the later `Test2Manual` implementation is requested-changes after backside review | Preserve rough dark stone, cold ash/mud grounding, restrained oxide red, rawhide/rope residue, Blood Axe hostility, and separation from civilized Giant stonework | Guides future Blood Axe cairn variants; does not approve gameplay behavior, quest markers, VFX/audio, destruction, or weak 360-degree backsides |
 | `VC-GIA-BloodAxe-CairnStones-A01-A1-TurnaroundGuide` | approved rebuild guide | A1 Blood Axe cairn slab cluster turnaround | `docs/assets/visual_canon/VC_GIA_BloodAxe_CairnStones_A01_A1_TurnaroundDraft_A01.png` | Approved by Flamestrike as the multi-angle rebuild guide after the front-only method failed | Low collapsed slab cluster, broken rear slab, rawhide lashings, restrained oxide-red paint, rough ash/mud base, shared landmark points across views | Historical guide for the A1 reconstruction lane; current repair target is `SM_GIA_BloodAxeCairnSlabCluster_A01_BacksideRepair` |
 | `VC-GIA-BloodAxe-CairnStones-A01-A1-Test2Manual` | requested changes / historical proof | A1 Blood Axe cairn slab cluster static prop | `Saved/Automation/DCC/SM_GIA_BloodAxeCairnSlabCluster_A01_Test2Manual/SM_GIA_BloodAxeCairnSlabCluster_A01_Test2Manual_FinalGameReadyReviewBoard.png` | Brightened Test 2 approved by Flamestrike on 2026-07-01, then later failed backside review | Front-faithful A01 projection, broad dark slab cluster, restrained oxide-red Blood Axe paint, side-stone massing, broad collision; failed requirement is believable authored rear geometry | Retained as historical proof and failure evidence; do not promote to asset-library final without repair |
+| `VC-GIA-BloodAxe-CairnTargets-A01` | primary target set | Blood Axe cairn stones A1-A5 and B1-B5 | `docs/assets/visual_canon/BloodAxeCairnTargets_A01/VC_GIA_BloodAxe_CairnTargets_A01_ContactSheet.png`; individual targets in `docs/assets/visual_canon/BloodAxeCairnTargets_A01/` | Flamestrike provided clearer labeled target images on 2026-07-03 and instructed Codex to use them | Per-target multi-angle geometry, stronger stone massing, cloth/rawhide placement, red paint placement, terrain/debris grounding, and distinct A/B target identities | Required source targets for the next Blood Axe cairn rebuild; supersedes generic A1-derived batch comparison for concept-geometry approval |
 
 ## Pending Approval Candidates
 
