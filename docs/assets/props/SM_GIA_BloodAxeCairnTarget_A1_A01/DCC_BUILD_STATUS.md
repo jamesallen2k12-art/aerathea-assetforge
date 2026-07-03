@@ -28,6 +28,7 @@
 - Reclined multi-pass proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_ReclinedMultiPass_A08.png`
 - Authored multi-plane proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_AuthoredMultiPlanePass_A09.png`
 - A1 target multiview prep contact sheet: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_TargetMultiviewPrep_A10.png`
+- TRELLIS-AMD reference comparison: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_TRELLISReferenceCompare_A11.png`
 - LOD0: 4496 tris
 - LOD1: 2472 tris
 - LOD2: 1542 tris
@@ -152,6 +153,20 @@
 - Promoted the crop contact sheet to `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_TargetMultiviewPrep_A10.png`.
 - Status remains `DCC source candidate pending concept-geometry and paint review`; this prep is not a DCC source candidate, not visual canon, and not production art.
 - Next pass should run the TRELLIS-AMD multi-view reference job using these A1 crops, inspect whether it passes the volume gate, and use only landmark/proportion lessons from the output.
+
+## TRELLIS-AMD A1 Reference Learning Pass
+
+- Added `Tools/DCC/run_bloodaxe_a1_target_trellis_ref.sh` as the repeatable A1 target multi-view TRELLIS-AMD launcher.
+- Added `Tools/DCC/build_bloodaxe_a1_trellis_reference_compare.py` to build the tracked diagnostic sheet from quarantined TRELLIS outputs.
+- First launch failed because the new launcher missed the proven AMD backend settings; the launcher now matches the successful benchmark environment: `ATTN_BACKEND=sdpa`, `SPARSE_ATTN_BACKEND=sdpa`, `XFORMERS_DISABLED=1`, and `SPARSE_BACKEND=torchsparse`.
+- Successful output is quarantined under `Saved/AssetForgeResearch/benchmarks/outputs/trellis-amd/bloodaxe_a1_target_multiview_mesh/`.
+- Raw mesh volume stats: 304,644 vertices, 606,624 faces, extents approximately `0.957 x 0.987 x 0.473`, smallest/largest ratio `0.479`.
+- Result: `PASS_VOLUME_GATE_REFERENCE_ONLY_WITH_ARTIFACT_WARNINGS`.
+- Promoted the lightweight diagnostic sheet to `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_TRELLISReferenceCompare_A11.png`.
+- Useful lessons: target needs a real thick footprint, a taller rear slab rising behind the lower painted front slab, side support masses, and overlap between major stone planes.
+- Do not use: raw mesh shards, micro-noise, TRELLIS surface scratches, texture/paint, UVs, collision, LODs, or final silhouette approval.
+- Status remains `DCC source candidate pending concept-geometry and paint review`; final approval status remains `not approved`; Unreal status remains not imported.
+- Next pass should rebuild the authored DCC source using these broad landmark lessons while keeping the A1 concept image as the visual source of truth.
 
 ## Gate
 

@@ -318,6 +318,95 @@ Interpretation:
 - Raw GLB import gives only one LOD and one fallback material slot; AssetForge must generate or assign LODs, authored material slots, UV/material metadata, and collision policy before a candidate can advance.
 - The result remains research-only and does not create visual canon, a DCC source candidate, a DCC game-ready candidate, or Fully game-ready content.
 
+## Benchmark: `bloodaxe_a1_target_multiview_mesh`
+
+Result: `PASS_VOLUME_GATE_REFERENCE_ONLY_WITH_ARTIFACT_WARNINGS`
+
+This run used cropped views from the approved Blood Axe A1 target sheet as a direct multi-view reference test. It produced real volume and is useful for broad landmark learning, but the raw output is noisy and remains quarantined research material only.
+
+### Input
+
+Source target:
+
+- `docs/assets/visual_canon/BloodAxeCairnTargets_A01/VC_GIA_BloodAxe_CairnTarget_A1.png`
+
+Prepared benchmark inputs:
+
+- `Saved/AssetForgeResearch/benchmarks/inputs/bloodaxe_a1_target_multiview/bloodaxe_a1_target_multiview_front.png`
+- `Saved/AssetForgeResearch/benchmarks/inputs/bloodaxe_a1_target_multiview/bloodaxe_a1_target_multiview_right.png`
+- `Saved/AssetForgeResearch/benchmarks/inputs/bloodaxe_a1_target_multiview/bloodaxe_a1_target_multiview_back.png`
+- `Saved/AssetForgeResearch/benchmarks/inputs/bloodaxe_a1_target_multiview/bloodaxe_a1_target_multiview_left.png`
+- `Saved/AssetForgeResearch/benchmarks/inputs/bloodaxe_a1_target_multiview/bloodaxe_a1_target_multiview_hero.png`
+
+Preparation:
+
+- Script: `Tools/DCC/prepare_bloodaxe_a1_target_multiview_inputs.py`
+- Contact sheet: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_TargetMultiviewPrep_A10.png`
+
+### Engine
+
+- Tool: `TRELLIS-AMD`
+- Local source: `Tools/External/TRELLIS-AMD`
+- Runner: `Saved/AssetForgeResearch/benchmarks/trellis_amd_multiview_benchmark_runner.py`
+- Job launcher: `Tools/DCC/run_bloodaxe_a1_target_trellis_ref.sh`
+- GPU: `Radeon RX 7900 XTX`
+- Torch: `2.12.1+rocm7.2`
+- HIP: `7.2.53211`
+- Mode: `multidiffusion`
+- Formats: `mesh`
+- Sparse backend: `torchsparse`
+- Attention backend: `sdpa`
+- Sparse structure steps: `12`, CFG `7.5`
+- SLAT steps: `12`, CFG `3.0`
+
+The first launcher attempt failed because it omitted the proven AMD backend settings and TRELLIS tried to import `flash_attn`. The launcher was corrected to set `ATTN_BACKEND=sdpa`, `SPARSE_ATTN_BACKEND=sdpa`, `XFORMERS_DISABLED=1`, and `SPARSE_BACKEND=torchsparse`.
+
+### Runtime
+
+- Script-reported elapsed time: `41.172` seconds.
+- Wall-clock time: `0:48.06`.
+- Peak resident memory: `7263600 KB`, about `7.3 GB`.
+- Exit status: `0`.
+
+### Output Artifacts
+
+- JSON report: `Saved/AssetForgeResearch/benchmarks/outputs/trellis-amd/bloodaxe_a1_target_multiview_mesh/bloodaxe_a1_target_multiview_mesh.json`
+- Raw mesh preview PLY: `Saved/AssetForgeResearch/benchmarks/outputs/trellis-amd/bloodaxe_a1_target_multiview_mesh/bloodaxe_a1_target_multiview_mesh.preview_geometry.ply`
+- Three-quarter internal preview PNG: `Saved/AssetForgeResearch/benchmarks/outputs/trellis-amd/bloodaxe_a1_target_multiview_mesh/bloodaxe_a1_target_multiview_mesh_internal_threequarter.png`
+- Side internal preview PNG: `Saved/AssetForgeResearch/benchmarks/outputs/trellis-amd/bloodaxe_a1_target_multiview_mesh/bloodaxe_a1_target_multiview_mesh_internal_side.png`
+- Diagnostic comparison sheet: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_TRELLISReferenceCompare_A11.png`
+- Log: `Saved/AssetForgeResearch/benchmarks/logs/bloodaxe_a1_target_multiview_mesh.log`
+
+### Mesh Stats
+
+- Raw vertices: `304,644`
+- Raw faces: `606,624`
+- Bounds min: `[-0.489354, -0.496770, -0.236325]`
+- Bounds max: `[0.467509, 0.489867, 0.236314]`
+- Extents: `[0.956863, 0.986637, 0.472640]`
+
+The smallest dimension is about `47.9%` of the largest dimension, so this run passes the first volumetric geometry gate. It is not a flat/decal reconstruction.
+
+### Interpretation
+
+Useful lessons:
+
+- The A1 target needs a real thick footprint, not a front-only relief.
+- The taller rear slab must rise behind and above the lower painted front slab.
+- Side support stones are important for the concept's clustered silhouette.
+- The next DCC pass should use broad plane landmarks and overlap relationships from this result.
+
+Warnings:
+
+- The raw mesh contains noisy shards, surface chatter, and generated micro-detail.
+- It does not preserve reliable Blood Axe red paint language.
+- It has no production UVs, collision, LODs, scale policy, material slots, or Unreal validation.
+- It must not be promoted to visual canon, DCC source candidate, DCC game-ready candidate, or Fully game-ready asset.
+
+Next production-facing step:
+
+- Rebuild the authored DCC source from A1 concept landmarks plus this volume reference, then generate a new strict side-by-side proof for approval review.
+
 ## Queued Alternate Benchmark: `ProjectedEarth_PolarCluster`
 
 This package is queued as a different benchmark class: planet/map texture and Unreal import validation, not single-prop image-to-3D generation.
