@@ -41,6 +41,10 @@ echo "Log: $LOG_FILE"
     export SPCONV_ALGO="native"
     export TORCH_ROCM_AOTRITON_ENABLE_EXPERIMENTAL="1"
     export PYTHONUNBUFFERED="1"
+    export ATTN_BACKEND="sdpa"
+    export SPARSE_ATTN_BACKEND="sdpa"
+    export XFORMERS_DISABLED="1"
+    export SPARSE_BACKEND="torchsparse"
 
     exec systemd-inhibit --what=idle:sleep --who=Codex --why="Aerathea Blood Axe A1 TRELLIS-AMD reference" \
         /usr/bin/time -v "$PY" "$RUNNER" \
