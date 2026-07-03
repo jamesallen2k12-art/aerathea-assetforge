@@ -90,10 +90,10 @@ def build_sheet() -> Image.Image:
     sheet = Image.new("RGB", (sheet_width, sheet_height), (24, 24, 22))
     draw = ImageDraw.Draw(sheet)
 
-    draw.text((margin, margin), "Blood Axe Cairn Variant Batch A01 - DCC Source Candidate Review", fill=(242, 236, 216), font=title_font)
+    draw.text((margin, margin), "Blood Axe Cairn Variant Batch A01 - DCC Game-Ready Candidate Review", fill=(242, 236, 216), font=title_font)
     draw.text(
         (margin, margin + 42),
-        "Local proof renders only; not visual canon, not DCC game-ready, not Fully game-ready.",
+        "Local proof renders only; not Unreal-imported, not final visual approval, not Fully game-ready.",
         fill=(190, 184, 166),
         font=meta_font,
     )

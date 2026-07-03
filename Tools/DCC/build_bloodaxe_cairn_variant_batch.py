@@ -4,9 +4,11 @@
 Run with:
     blender --background --python Tools/DCC/build_bloodaxe_cairn_variant_batch.py
 
-This creates deterministic first-pass DCC review sources, LOD source meshes,
-FBX exports, and proof renders for the package-ready Blood Axe cairn variants.
-They are DCC source candidates for review, not final sculpted or painted art.
+This creates deterministic first-pass DCC review sources, UV0 review unwraps,
+LOD source meshes, broad UCX-style collision proxies, FBX exports, and proof
+renders for the package-ready Blood Axe cairn variants. They are DCC
+game-ready candidates for Unreal import testing, not final sculpted or painted
+library assets.
 """
 
 from __future__ import annotations
@@ -45,6 +47,7 @@ RED = (0.62, 0.055, 0.035, 1.0)
 RAWHIDE = (0.23, 0.14, 0.075, 1.0)
 IRON = (0.06, 0.065, 0.065, 1.0)
 BONE = (0.50, 0.42, 0.27, 1.0)
+COLLISION_BLUE = (0.0, 0.45, 0.85, 0.28)
 
 
 @dataclass(frozen=True)
@@ -203,6 +206,40 @@ def apply_vertex_color(obj: bpy.types.Object) -> None:
         entry.color = tuple(obj.color)
 
 
+def add_smart_uv0(obj: bpy.types.Object) -> None:
+    if obj.type != "MESH" or obj.name.startswith("UCX_"):
+        return
+    if bpy.context.object is not None and bpy.context.object.mode != "OBJECT":
+        try:
+            bpy.ops.object.mode_set(mode="OBJECT")
+        except RuntimeError:
+            pass
+    bpy.ops.object.select_all(action="DESELECT")
+    set_active(obj)
+    if not obj.data.uv_layers:
+        obj.data.uv_layers.new(name="UV0")
+    else:
+        obj.data.uv_layers.active = obj.data.uv_layers[0]
+        obj.data.uv_layers[0].name = "UV0"
+    try:
+        bpy.ops.object.mode_set(mode="EDIT")
+        bpy.ops.mesh.select_all(action="SELECT")
+        bpy.ops.uv.smart_project(angle_limit=rad(64), island_margin=0.035)
+    except RuntimeError:
+        pass
+    finally:
+        bpy.ops.object.mode_set(mode="OBJECT")
+
+
+def prepare_game_ready_collection(collection: bpy.types.Collection) -> None:
+    previous_hidden = collection.hide_viewport
+    collection.hide_viewport = False
+    for obj in collection.objects:
+        add_smart_uv0(obj)
+    bpy.ops.object.select_all(action="DESELECT")
+    collection.hide_viewport = previous_hidden
+
+
 def add_rough_stone(
     name: str,
     location: tuple[float, float, float],
@@ -225,6 +262,50 @@ def add_rough_stone(
     move_to_collection(obj, collection)
     apply_vertex_color(obj)
     return obj
+
+
+def stack_collision_top(stack: CairnStack) -> float:
+    top = stack.origin[2] + stack.base_radius[2]
+    for stone in stack.stones:
+        top = max(top, world_loc(stack.origin, stone.loc, stack.yaw)[2] + stone.scale[2])
+    for ribbon in stack.ribbons:
+        top = max(top, world_loc(stack.origin, ribbon.loc, stack.yaw)[2] + ribbon.scale[2] * 0.5)
+    for accent in stack.accents:
+        top = max(top, world_loc(stack.origin, accent.loc, stack.yaw)[2] + accent.scale[2] * 0.5)
+    return top
+
+
+def add_collision_proxy(
+    asset_name: str,
+    index: int,
+    stack: CairnStack,
+    material: bpy.types.Material,
+    collection: bpy.types.Collection,
+) -> bpy.types.Object:
+    top = stack_collision_top(stack)
+    height = max(36.0, top - stack.origin[2])
+    obj = add_box(
+        f"UCX_{asset_name}_{index:02d}",
+        (stack.origin[0], stack.origin[1], stack.origin[2] + height * 0.5),
+        (
+            max(70.0, stack.base_radius[0] * 1.72),
+            max(60.0, stack.base_radius[1] * 1.62),
+            height,
+        ),
+        (0.0, 0.0, stack.yaw),
+        COLLISION_BLUE,
+        material,
+        collection,
+    )
+    obj.display_type = "WIRE"
+    obj.show_wire = True
+    obj.hide_render = True
+    return obj
+
+
+def add_collision_proxies(spec: VariantSpec, material: bpy.types.Material, collection: bpy.types.Collection) -> None:
+    for index, stack in enumerate(spec.stacks):
+        add_collision_proxy(spec.asset_name, index, stack, material, collection)
 
 
 def add_box(
@@ -775,10 +856,14 @@ def build_variant(spec: VariantSpec) -> None:
         lod_collections.append(collection)
         for stack in spec.stacks:
             build_stack(stack, material, collection, lod_level=lod_level)
+        prepare_game_ready_collection(collection)
+
+    collision_material = flat_material("M_AET_CollisionProxy_UCX_Wire_A01", COLLISION_BLUE)
+    add_collision_proxies(spec, collision_material, lod_collections[0])
 
     add_asset_metadata(
         spec.asset_name,
-        f"{spec.summary} First-pass DCC source candidate only; not final sculpt, authored UV/texture pass, Unreal validation, or Fully game-ready content.",
+        f"{spec.summary} First-pass DCC game-ready candidate for Unreal import testing with UV0 review unwraps, LOD0-LOD3 exports, and broad UCX collision proxy; not final sculpt, final hand-painted texture pass, Unreal validation, or Fully game-ready content.",
         spec.unreal_path,
     )
 

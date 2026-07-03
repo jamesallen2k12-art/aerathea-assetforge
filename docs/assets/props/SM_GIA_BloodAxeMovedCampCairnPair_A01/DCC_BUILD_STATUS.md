@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeMovedCampCairnPair_A01 DCC Build Status
 
-Status: `DCC source candidate`.
+Status: `DCC game-ready candidate`.
 
 Built on 2026-07-03 by `Tools/DCC/build_bloodaxe_cairn_variant_batch.py` as part of `docs/assets/kits/KIT_GIA_BloodAxeCairnVariantBatch_A01/DCC_BATCH_STATUS.md`.
 
@@ -12,10 +12,12 @@ Built on 2026-07-03 by `Tools/DCC/build_bloodaxe_cairn_variant_batch.py` as part
 
 The export folder contains the main FBX plus LOD0, LOD1, LOD2, and LOD3 FBXs.
 
+The main FBX and LOD0 FBX include broad UCX-style collision proxies, and visible mesh objects have UV0 review unwraps. See `docs/assets/kits/KIT_GIA_BloodAxeCairnVariantBatch_A01/DCC_GAME_READY_PREP_STATUS.md` and `docs/assets/kits/KIT_GIA_BloodAxeCairnVariantBatch_A01/UNREAL_IMPORT_TASK_PACKET.md` for material, collision, and Unreal import planning.
+
 ## Boundary
 
-This is a first-pass DCC review source. It is not a `DCC game-ready candidate` and not `Fully game-ready`.
+This is a `DCC game-ready candidate` for Unreal import testing. It is not an `Unreal import candidate` and not `Fully game-ready`.
 
 ## Still Blocked
 
-Authored UVs, final hand-painted textures, material instances, collision proxy, Unreal import, startup placement, final visual approval, tracking behavior, breadcrumb behavior, pickup/loot behavior, and patrol-spawn behavior remain blocked.
+Final hand-painted textures, material instances, Unreal import, startup placement, final visual approval, tracking behavior, breadcrumb behavior, pickup/loot behavior, and patrol-spawn behavior remain blocked.

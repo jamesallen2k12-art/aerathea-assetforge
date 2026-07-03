@@ -5,7 +5,8 @@
 - Review date: 2026-07-03
 - Review type: Codex DCC preflight, not Flamestrike final visual approval
 - Contact sheet: `docs/assets/kits/KIT_GIA_BloodAxeCairnVariantBatch_A01/BloodAxeCairnVariants_A01_DCCReviewContactSheet.png`
-- Source status: `DCC source candidate`
+- Source status at preflight: `DCC source candidate`
+- Current status after later prep pass: `DCC game-ready candidate`
 
 This review checks whether the twelve cairn variants are worth taking into the next production pass. It does not promote any asset to `DCC game-ready candidate` or `Fully game-ready`.
 
@@ -43,13 +44,18 @@ These variants read clearly enough in the first contact sheet and did not need a
 
 ## Next Production Step
 
-1. Present the revised tracked contact sheet for Flamestrike DCC review.
-2. If accepted, move all twelve source candidates into a game-ready prep pass:
-   - authored/simple UVs
-   - material-slot consolidation plan
-   - BC/N/ORM texture authoring plan
-   - collision proxy policy per asset
-   - Unreal import task packet
+Follow-up completed on 2026-07-03: all twelve variants received the DCC game-ready prep pass recorded in `DCC_GAME_READY_PREP_STATUS.md`.
+
+Next active gate:
+
+1. Run the Unreal import task packet in `UNREAL_IMPORT_TASK_PACKET.md`.
+2. Validate the imported static meshes:
+   - target Content path exists
+   - one material slot is assigned
+   - vertex colors drive the review material correctly
+   - LOD0-LOD3 are present and switch without disappearing
+   - broad simple collision exists and does not snag on small detail
+   - no route, waypoint, quest, pickup, loot, destructible, VFX, or audio behavior is added
 
 ## Blockers
 

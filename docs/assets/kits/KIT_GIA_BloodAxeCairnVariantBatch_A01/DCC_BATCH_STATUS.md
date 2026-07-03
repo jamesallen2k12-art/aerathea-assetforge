@@ -4,11 +4,11 @@
 
 - Build date: 2026-07-03
 - Builder: `Tools/DCC/build_bloodaxe_cairn_variant_batch.py`
-- Output class: `DCC source candidate`
+- Output class: `DCC game-ready candidate`
 - Visual canon reference: `VC-GIA-BloodAxe-CairnStones-A01`
 - Turnaround reference: `VC-GIA-BloodAxe-CairnStones-A01-A1-TurnaroundGuide`
 
-This batch converts twelve package-ready Blood Axe cairn variants into deterministic first-pass Blender sources, FBX exports, LOD0-LOD3 FBX handoffs, and DCC proof renders. These are reviewable DCC source candidates only. They are not `DCC game-ready candidate` assets and are not `Fully game-ready`.
+This batch converts twelve package-ready Blood Axe cairn variants into deterministic first-pass Blender sources, UV0 review unwraps, FBX exports, LOD0-LOD3 FBX handoffs, broad UCX-style collision proxies, and DCC proof renders. These are `DCC game-ready candidate` assets for Unreal import testing only. They are not `Unreal import candidate` assets and are not `Fully game-ready`.
 
 ## Output Roots
 
@@ -20,20 +20,22 @@ This batch converts twelve package-ready Blood Axe cairn variants into determini
 
 | Asset | Source Path | Export Path | Status |
 | --- | --- | --- | --- |
-| `SM_GIA_BloodAxeApproachCairnMarker_A01` | `SourceAssets/Blender/Props/Giants/BloodAxe/StrongholdApproach/CairnMarkers/SM_GIA_BloodAxeApproachCairnMarker_A01/SM_GIA_BloodAxeApproachCairnMarker_A01.blend` | `SourceAssets/Exports/Props/Giants/BloodAxe/StrongholdApproach/CairnMarkers/SM_GIA_BloodAxeApproachCairnMarker_A01/` | `DCC source candidate` |
-| `SM_GIA_BloodAxeRitualCairnGuidepost_A01` | `SourceAssets/Blender/Props/Giants/BloodAxe/RitualStones/Guideposts/SM_GIA_BloodAxeRitualCairnGuidepost_A01/SM_GIA_BloodAxeRitualCairnGuidepost_A01.blend` | `SourceAssets/Exports/Props/Giants/BloodAxe/RitualStones/Guideposts/SM_GIA_BloodAxeRitualCairnGuidepost_A01/` | `DCC source candidate` |
-| `SM_GIA_BloodAxeLowThresholdCairn_A01` | `SourceAssets/Blender/Props/Giants/BloodAxe/CaveApproachMarkers/SM_GIA_BloodAxeLowThresholdCairn_A01/SM_GIA_BloodAxeLowThresholdCairn_A01.blend` | `SourceAssets/Exports/Props/Giants/BloodAxe/CaveApproachMarkers/SM_GIA_BloodAxeLowThresholdCairn_A01/` | `DCC source candidate` |
-| `SM_GIA_BloodAxeCollapsedThresholdCairn_A01` | `SourceAssets/Blender/Props/Giants/BloodAxe/CaveApproachMarkers/SM_GIA_BloodAxeCollapsedThresholdCairn_A01/SM_GIA_BloodAxeCollapsedThresholdCairn_A01.blend` | `SourceAssets/Exports/Props/Giants/BloodAxe/CaveApproachMarkers/SM_GIA_BloodAxeCollapsedThresholdCairn_A01/` | `DCC source candidate` |
-| `SM_GIA_BloodAxeCaveRemnantCairn_A01` | `SourceAssets/Blender/Props/Giants/BloodAxe/CaveApproachMarkers/SM_GIA_BloodAxeCaveRemnantCairn_A01/SM_GIA_BloodAxeCaveRemnantCairn_A01.blend` | `SourceAssets/Exports/Props/Giants/BloodAxe/CaveApproachMarkers/SM_GIA_BloodAxeCaveRemnantCairn_A01/` | `DCC source candidate` |
-| `SM_GIA_BloodAxeCollapsedCaveRemnantCairn_A01` | `SourceAssets/Blender/Props/Giants/BloodAxe/CaveApproachMarkers/SM_GIA_BloodAxeCollapsedCaveRemnantCairn_A01/SM_GIA_BloodAxeCollapsedCaveRemnantCairn_A01.blend` | `SourceAssets/Exports/Props/Giants/BloodAxe/CaveApproachMarkers/SM_GIA_BloodAxeCollapsedCaveRemnantCairn_A01/` | `DCC source candidate` |
-| `SM_GIA_BloodAxeCaveThresholdCairnPair_A01` | `SourceAssets/Blender/Props/Giants/BloodAxe/CaveApproachMarkers/SM_GIA_BloodAxeCaveThresholdCairnPair_A01/SM_GIA_BloodAxeCaveThresholdCairnPair_A01.blend` | `SourceAssets/Exports/Props/Giants/BloodAxe/CaveApproachMarkers/SM_GIA_BloodAxeCaveThresholdCairnPair_A01/` | `DCC source candidate` |
-| `SM_GIA_BloodAxeMovedCampCairnPair_A01` | `SourceAssets/Blender/Props/Giants/BloodAxe/MovedCamp/SM_GIA_BloodAxeMovedCampCairnPair_A01/SM_GIA_BloodAxeMovedCampCairnPair_A01.blend` | `SourceAssets/Exports/Props/Giants/BloodAxe/MovedCamp/SM_GIA_BloodAxeMovedCampCairnPair_A01/` | `DCC source candidate` |
-| `SM_GIA_BloodAxePairedCairnClosePair_A01` | `SourceAssets/Blender/Props/Giants/BloodAxe/CairnGuideposts/SM_GIA_BloodAxePairedCairnClosePair_A01/SM_GIA_BloodAxePairedCairnClosePair_A01.blend` | `SourceAssets/Exports/Props/Giants/BloodAxe/CairnGuideposts/SM_GIA_BloodAxePairedCairnClosePair_A01/` | `DCC source candidate` |
-| `SM_GIA_BloodAxePairedCairnStaggeredPair_A01` | `SourceAssets/Blender/Props/Giants/BloodAxe/CairnGuideposts/SM_GIA_BloodAxePairedCairnStaggeredPair_A01/SM_GIA_BloodAxePairedCairnStaggeredPair_A01.blend` | `SourceAssets/Exports/Props/Giants/BloodAxe/CairnGuideposts/SM_GIA_BloodAxePairedCairnStaggeredPair_A01/` | `DCC source candidate` |
-| `SM_GIA_BloodAxeCairnPathMarker_A01` | `SourceAssets/Blender/Props/Giants/BloodAxe/PathMarkers/SM_GIA_BloodAxeCairnPathMarker_A01/SM_GIA_BloodAxeCairnPathMarker_A01.blend` | `SourceAssets/Exports/Props/Giants/BloodAxe/PathMarkers/SM_GIA_BloodAxeCairnPathMarker_A01/` | `DCC source candidate` |
-| `SM_GIA_BloodAxeCairnScrapCap_A01` | `SourceAssets/Blender/Props/Giants/BloodAxe/PathMarkers/SM_GIA_BloodAxeCairnScrapCap_A01/SM_GIA_BloodAxeCairnScrapCap_A01.blend` | `SourceAssets/Exports/Props/Giants/BloodAxe/PathMarkers/SM_GIA_BloodAxeCairnScrapCap_A01/` | `DCC source candidate` |
+| `SM_GIA_BloodAxeApproachCairnMarker_A01` | `SourceAssets/Blender/Props/Giants/BloodAxe/StrongholdApproach/CairnMarkers/SM_GIA_BloodAxeApproachCairnMarker_A01/SM_GIA_BloodAxeApproachCairnMarker_A01.blend` | `SourceAssets/Exports/Props/Giants/BloodAxe/StrongholdApproach/CairnMarkers/SM_GIA_BloodAxeApproachCairnMarker_A01/` | `DCC game-ready candidate` |
+| `SM_GIA_BloodAxeRitualCairnGuidepost_A01` | `SourceAssets/Blender/Props/Giants/BloodAxe/RitualStones/Guideposts/SM_GIA_BloodAxeRitualCairnGuidepost_A01/SM_GIA_BloodAxeRitualCairnGuidepost_A01.blend` | `SourceAssets/Exports/Props/Giants/BloodAxe/RitualStones/Guideposts/SM_GIA_BloodAxeRitualCairnGuidepost_A01/` | `DCC game-ready candidate` |
+| `SM_GIA_BloodAxeLowThresholdCairn_A01` | `SourceAssets/Blender/Props/Giants/BloodAxe/CaveApproachMarkers/SM_GIA_BloodAxeLowThresholdCairn_A01/SM_GIA_BloodAxeLowThresholdCairn_A01.blend` | `SourceAssets/Exports/Props/Giants/BloodAxe/CaveApproachMarkers/SM_GIA_BloodAxeLowThresholdCairn_A01/` | `DCC game-ready candidate` |
+| `SM_GIA_BloodAxeCollapsedThresholdCairn_A01` | `SourceAssets/Blender/Props/Giants/BloodAxe/CaveApproachMarkers/SM_GIA_BloodAxeCollapsedThresholdCairn_A01/SM_GIA_BloodAxeCollapsedThresholdCairn_A01.blend` | `SourceAssets/Exports/Props/Giants/BloodAxe/CaveApproachMarkers/SM_GIA_BloodAxeCollapsedThresholdCairn_A01/` | `DCC game-ready candidate` |
+| `SM_GIA_BloodAxeCaveRemnantCairn_A01` | `SourceAssets/Blender/Props/Giants/BloodAxe/CaveApproachMarkers/SM_GIA_BloodAxeCaveRemnantCairn_A01/SM_GIA_BloodAxeCaveRemnantCairn_A01.blend` | `SourceAssets/Exports/Props/Giants/BloodAxe/CaveApproachMarkers/SM_GIA_BloodAxeCaveRemnantCairn_A01/` | `DCC game-ready candidate` |
+| `SM_GIA_BloodAxeCollapsedCaveRemnantCairn_A01` | `SourceAssets/Blender/Props/Giants/BloodAxe/CaveApproachMarkers/SM_GIA_BloodAxeCollapsedCaveRemnantCairn_A01/SM_GIA_BloodAxeCollapsedCaveRemnantCairn_A01.blend` | `SourceAssets/Exports/Props/Giants/BloodAxe/CaveApproachMarkers/SM_GIA_BloodAxeCollapsedCaveRemnantCairn_A01/` | `DCC game-ready candidate` |
+| `SM_GIA_BloodAxeCaveThresholdCairnPair_A01` | `SourceAssets/Blender/Props/Giants/BloodAxe/CaveApproachMarkers/SM_GIA_BloodAxeCaveThresholdCairnPair_A01/SM_GIA_BloodAxeCaveThresholdCairnPair_A01.blend` | `SourceAssets/Exports/Props/Giants/BloodAxe/CaveApproachMarkers/SM_GIA_BloodAxeCaveThresholdCairnPair_A01/` | `DCC game-ready candidate` |
+| `SM_GIA_BloodAxeMovedCampCairnPair_A01` | `SourceAssets/Blender/Props/Giants/BloodAxe/MovedCamp/SM_GIA_BloodAxeMovedCampCairnPair_A01/SM_GIA_BloodAxeMovedCampCairnPair_A01.blend` | `SourceAssets/Exports/Props/Giants/BloodAxe/MovedCamp/SM_GIA_BloodAxeMovedCampCairnPair_A01/` | `DCC game-ready candidate` |
+| `SM_GIA_BloodAxePairedCairnClosePair_A01` | `SourceAssets/Blender/Props/Giants/BloodAxe/CairnGuideposts/SM_GIA_BloodAxePairedCairnClosePair_A01/SM_GIA_BloodAxePairedCairnClosePair_A01.blend` | `SourceAssets/Exports/Props/Giants/BloodAxe/CairnGuideposts/SM_GIA_BloodAxePairedCairnClosePair_A01/` | `DCC game-ready candidate` |
+| `SM_GIA_BloodAxePairedCairnStaggeredPair_A01` | `SourceAssets/Blender/Props/Giants/BloodAxe/CairnGuideposts/SM_GIA_BloodAxePairedCairnStaggeredPair_A01/SM_GIA_BloodAxePairedCairnStaggeredPair_A01.blend` | `SourceAssets/Exports/Props/Giants/BloodAxe/CairnGuideposts/SM_GIA_BloodAxePairedCairnStaggeredPair_A01/` | `DCC game-ready candidate` |
+| `SM_GIA_BloodAxeCairnPathMarker_A01` | `SourceAssets/Blender/Props/Giants/BloodAxe/PathMarkers/SM_GIA_BloodAxeCairnPathMarker_A01/SM_GIA_BloodAxeCairnPathMarker_A01.blend` | `SourceAssets/Exports/Props/Giants/BloodAxe/PathMarkers/SM_GIA_BloodAxeCairnPathMarker_A01/` | `DCC game-ready candidate` |
+| `SM_GIA_BloodAxeCairnScrapCap_A01` | `SourceAssets/Blender/Props/Giants/BloodAxe/PathMarkers/SM_GIA_BloodAxeCairnScrapCap_A01/SM_GIA_BloodAxeCairnScrapCap_A01.blend` | `SourceAssets/Exports/Props/Giants/BloodAxe/PathMarkers/SM_GIA_BloodAxeCairnScrapCap_A01/` | `DCC game-ready candidate` |
 
 Each export folder contains the main FBX plus `_LOD0.fbx`, `_LOD1.fbx`, `_LOD2.fbx`, and `_LOD3.fbx`.
+
+The main FBX and `_LOD0.fbx` include broad UCX-style collision proxies. `_LOD1.fbx` through `_LOD3.fbx` are visual LOD handoffs only.
 
 ## Proof Renders
 
@@ -48,16 +50,20 @@ The proof renders include the asset, ground-center pivot label, female Giant 442
 - Tracked contact sheet: `docs/assets/kits/KIT_GIA_BloodAxeCairnVariantBatch_A01/BloodAxeCairnVariants_A01_DCCReviewContactSheet.png`
 - Local contact sheet: `Saved/Automation/DCC/BloodAxeCairnVariants_A01/BloodAxeCairnVariants_A01_DCCReviewContactSheet.png`
 - Preflight review: `docs/assets/kits/KIT_GIA_BloodAxeCairnVariantBatch_A01/DCC_PREFLIGHT_REVIEW.md`
+- DCC game-ready prep status: `docs/assets/kits/KIT_GIA_BloodAxeCairnVariantBatch_A01/DCC_GAME_READY_PREP_STATUS.md`
+- Unreal import task packet: `docs/assets/kits/KIT_GIA_BloodAxeCairnVariantBatch_A01/UNREAL_IMPORT_TASK_PACKET.md`
 
-Codex preflight review keeps all twelve variants in the batch. Initial review flagged four duplicate-risk silhouettes; a same-day DCC differentiation pass revised those four assets, regenerated the Blender sources, rebuilt main FBXs and LOD0-LOD3 FBXs, and updated the contact sheet. Current recommendation: all twelve remain `DCC source candidate` assets and may advance to game-ready prep after Flamestrike contact-sheet review.
+Codex preflight review kept all twelve variants in the batch. Initial review flagged four duplicate-risk silhouettes; a same-day DCC differentiation pass revised those four assets, regenerated the Blender sources, rebuilt main FBXs and LOD0-LOD3 FBXs, and updated the contact sheet. The game-ready prep pass then added UV0 review unwraps, broad UCX-style collision proxies, and a material/texture/import plan. Current recommendation: all twelve are `DCC game-ready candidate` assets ready for Unreal import testing.
 
 ## Validation
 
 - `python3 -m py_compile Tools/DCC/build_bloodaxe_cairn_variant_batch.py` passed.
 - `python3 -m py_compile Tools/DCC/build_bloodaxe_cairn_variant_review_sheet.py` passed.
 - `python3 Tools/DCC/build_bloodaxe_cairn_variant_review_sheet.py` completed and regenerated the local and tracked review contact sheets.
-- `blender --background --python Tools/DCC/build_bloodaxe_cairn_variant_batch.py` completed and generated all twelve `.blend` sources, main FBXs, LOD0-LOD3 FBXs, and proof renders.
-- LOD export size validation returned no `_LOD1` through `_LOD3` FBX files under 5000 bytes, confirming the hidden-collection export fix produced real LOD mesh files instead of empty FBX headers.
+- `blender --background --python Tools/DCC/build_bloodaxe_cairn_variant_batch.py` completed and generated all twelve `.blend` sources, main FBXs, LOD0-LOD3 FBXs, UV0 review unwraps, broad UCX-style collision proxies, and proof renders.
+- Scoped LOD export size validation returned no `_LOD1` through `_LOD3` FBX files under 5000 bytes for these twelve variants, confirming real LOD mesh files instead of empty FBX headers.
+- Scoped FBX string validation found `UCX_SM_GIA_BloodAxe...` markers in every main and `_LOD0.fbx` export.
+- Scoped FBX string validation found `LayerElementUV` data across the exported variant FBX set.
 - DCC proof renders were spot-checked for the cave-threshold pair and approach cairn marker.
 - Blender emitted nonfatal color-management fallback warnings under Blender 3.0.1.
 
@@ -69,8 +75,8 @@ Codex preflight review keeps all twelve variants in the batch. Initial review fl
 
 ## Still Blocked
 
-Authored UVs, final hand-painted BC/N/ORM texture sets, material instances, material consolidation, collision proxies, UCX meshes, Unreal import, Unreal Content paths, startup placement, scale/material/LOD/collision validation in Unreal, final visual approval, final Blood Axe ritual/cave/route approval, gameplay behavior, waypoint behavior, route logic, pickup/loot/salvage behavior, destructible behavior, physics behavior, cloth simulation, VFX/audio, and Hermes work remain blocked.
+Final hand-painted BC/N/ORM texture sets, Unreal material parent, material instance creation, Unreal import, Unreal Content paths, startup placement, scale/material/LOD/collision validation in Unreal, final visual approval, final Blood Axe ritual/cave/route approval, gameplay behavior, waypoint behavior, route logic, pickup/loot/salvage behavior, destructible behavior, physics behavior, cloth simulation, VFX/audio, and Hermes work remain blocked.
 
 ## Decision
 
-The July 3, 2026 batch creates twelve valid `DCC source candidate` cairn variants ready for Flamestrike DCC review and later Unreal import task packets. Do not promote any of these to `DCC game-ready candidate` or `Fully game-ready` until the remaining gates are completed and approved.
+The July 3, 2026 batch now creates twelve valid `DCC game-ready candidate` cairn variants ready for Unreal import testing. Do not promote any of these to `Unreal import candidate`, `Gameplay validated asset`, `Approved library asset`, or `Fully game-ready` until the remaining Unreal gates are completed and approved.
