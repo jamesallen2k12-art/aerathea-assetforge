@@ -62,3 +62,9 @@ Remaining gaps before approval:
 - Surface breakup, stone chips, and rubble density need a second sculpt/detail pass.
 
 Decision: hold at `DCC source candidate pending concept-geometry review`; do not import to Unreal yet.
+
+## Reference Benchmark Link
+
+- Benchmark doc: `docs/assets/benchmarks/STATIC_PROP_REFERENCE_BENCHMARKS_A01.md`
+- Applied process lesson: keep the A1 production package complete and reviewable like the reference packages, but keep the `BloodAxe A1` concept image as the only visual target.
+- Next build should preserve source, exports, LODs, UCX, proof images, status notes, and deterministic rebuild script while improving the actual concept match.
