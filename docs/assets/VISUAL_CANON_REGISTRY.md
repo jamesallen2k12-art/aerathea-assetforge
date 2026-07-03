@@ -26,6 +26,7 @@ This registry records concept images and selected variants that define Aerathea'
 | Candidate ID | Status | Scope | Source or board | Selection state | Keeper features | Production use |
 | --- | --- | --- | --- | --- | --- | --- |
 | `VC-GIA-BloodAxe-CairnStones-A01-A1-BacksideRepair` | repair candidate pending approval; not canon | A1 Blood Axe cairn slab cluster static prop repair | `Saved/Automation/DCC/SM_GIA_BloodAxeCairnSlabCluster_A01_BacksideRepair/SM_GIA_BloodAxeCairnSlabCluster_A01_BacksideRepair_BacksideRepairTurntableReview.png` | Created after Flamestrike requested a complete repair run for the failed backside | Preserve A1 front read while adding real rear counterweight/support stones, rear paint/lashing treatment, deeper mud/ash grounding, and updated collision depth | Pending DCC proof, Unreal import validation, startup capture, and Flamestrike visual approval |
+| `SM-GIA-BloodAxeCairnTarget-A1-A01-DCCProof` | DCC source candidate pending concept-geometry review; not canon | Blood Axe cairn target A1 static prop rebuild | `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_ConceptGeometryCompare.png` | Created from the clearer `BloodAxe A1` target set on 2026-07-03 | Establishes a clean A1 rebuild lane with dominant front slab, rear slab, left lashed stack, right supports, and authored 360-degree massing; still too blocky for approval | Use as first DCC source proof and revision base only; not approved visual canon and not ready for Unreal import |
 
 ## Rejected Or Requested-Change References
 
