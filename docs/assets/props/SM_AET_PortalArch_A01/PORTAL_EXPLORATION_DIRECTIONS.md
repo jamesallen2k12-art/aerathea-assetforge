@@ -5,8 +5,8 @@
 The current portal arch is a first-pass review direction, not a final locked art
 target. Aerathea portals should be universal, ancient, mysterious,
 awe-inspiring, and large enough to make normal player characters feel small.
-Final portal design should be selected from several visual directions before any
-DCC rebuild or final Unreal signoff.
+Final portal design should be selected from several visual directions before
+final art lock or final Unreal signoff.
 
 ## Locked Requirements
 

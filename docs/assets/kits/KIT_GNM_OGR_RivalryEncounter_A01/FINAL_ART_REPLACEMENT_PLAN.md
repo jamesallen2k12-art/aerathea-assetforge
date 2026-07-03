@@ -6,6 +6,12 @@ This plan converts the accepted first-pass Gnome/Ogre encounter review assets in
 
 The current review slice is useful for scale, silhouette, sockets, LOD validation, phase review, and gameplay timing. It is not final sculpted or hand-painted production art.
 
+## Current Execution Status
+
+- 2026-06-28: Flamestrike approved the production order to finish the Gnome/Ogre final-art foundation first, then complete the Ogre shared rig/art-model fit before Iona, Infernal, Giant, Portal, and Abyss follow-up lanes.
+- 2026-06-28: `Tools/Unreal/validate_ogre_shared_skeletons.py` passed through `UnrealEditor-Cmd`; the male Ogre base, Teknomancer, Warrior, Shaman, and Necromancer review meshes are bound to `/Game/Aerathea/Characters/Ogres/Base/SK_OGR_Base_Male_A01_Skeleton`.
+- Shared Ogre final-art fit now follows `docs/assets/kits/KIT_GNM_OGR_RivalryEncounter_A01/OGRE_SHARED_RIG_FINAL_ART_FIT_PLAN.md`.
+
 ## Dependency Order
 
 1. **Lock shared character foundations first.**

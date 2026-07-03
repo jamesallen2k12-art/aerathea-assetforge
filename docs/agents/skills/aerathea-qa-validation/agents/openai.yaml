@@ -1,0 +1,4 @@
+interface:
+  display_name: "Aerathea QA Validation"
+  short_description: "Validate assets, scenes, and regressions."
+  default_prompt: "Use this skill to write and run Aerathea validators, inspect bounds, naming, sockets, startup scene contracts, camera review, and regressions."

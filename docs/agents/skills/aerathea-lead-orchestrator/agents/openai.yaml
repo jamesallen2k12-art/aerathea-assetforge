@@ -1,0 +1,4 @@
+interface:
+  display_name: "Aerathea Lead Orchestrator"
+  short_description: "Coordinate Aerathea multi-agent production."
+  default_prompt: "Use this skill to create task packets, assign specialist agents, track dependencies, and integrate validated work for Aerathea."

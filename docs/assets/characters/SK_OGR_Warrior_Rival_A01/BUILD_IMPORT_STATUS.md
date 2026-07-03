@@ -44,6 +44,6 @@
 ## Remaining To Finalize
 
 1. Replace the blockout with final sculpt, retopo, UVs, authored textures, tuned physics, and real animation.
-2. Resolve final shared Ogre skeleton fit after `SK_OGR_Base_A01` final rig direction is approved.
+2. Follow `docs/assets/kits/KIT_GNM_OGR_RivalryEncounter_A01/OGRE_SHARED_RIG_FINAL_ART_FIT_PLAN.md`; the 2026-06-28 shared-skeleton baseline is validated, and Warrior is the second class overlay fit after Teknomancer.
 3. Author real shield brace, shield slam, hammer swing, charge, hit reaction, and death animations.
 4. Tune gameplay capsules/traces for shield, hammer, stomp, belt forge, and head VFX sockets.

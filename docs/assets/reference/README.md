@@ -2,6 +2,14 @@
 
 This folder stores project-bound visual references that are useful across multiple production packages.
 
+## Planet Maps
+
+- `planet_maps/ProjectedEarth_PolarCluster/ProjectedEarth_PolarCluster_Model_Package.zip`
+- Possible lore note: `planet_maps/ProjectedEarth_PolarCluster/POSSIBLE_LORE_Heavy_World_Gravity_Notes.md`
+- Source: user-downloaded GPT package, saved July 2, 2026.
+- Package contents include map preview, north pole preview, land mask, 4096 texture, OBJ, GLB, specs JSON, README, and generator script.
+- Status: reference package only until Flamestrike approves any map element as Aerathea visual canon.
+
 ## Race Size Comparison
 
 - Current approved exact scale chart: `AET_Race_Size_Comparison_A04.png`

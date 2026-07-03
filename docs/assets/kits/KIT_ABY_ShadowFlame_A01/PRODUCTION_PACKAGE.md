@@ -8,12 +8,12 @@
 - Faction/theme: Abyss/Anathema
 - Source concepts: 45 Abyss/Anathema source images plus `Gnome Mek fighting Demon.png`
 - Generated lore set: `docs/lore/images/abyss-shadow-flame/`
-- Current status: Visual intake complete; concept directions proposed; final creature approvals pending before DCC build
+- Current status: Visual intake complete; `SK_ABY_BlackPikeTrooper_A01` approved and validated as the first DCC/Unreal review child; remaining creature directions pending individual approval before DCC build
 - Proposed naming codes: `ABY` for Abyss entities, `ANA` for Anathema siege entities
 
 Ancient entropic beings of shadow and flame that seek the destruction of anything that creates, heals, orders, or builds. The hierarchy should feel like a war-host from a sealed cosmic prison: rank troops, duelists, casters, hounds, siege beasts, commanders, lords, and Anathema war constructs.
 
-This package is not final art approval. It creates a build-ready planning structure and first ten proposed child packages so selection can happen without losing hierarchy, scale, or performance control.
+This package is not blanket final art approval. It creates a build-ready planning structure and child packages so selection can happen without losing hierarchy, scale, or performance control. `SK_ABY_BlackPikeTrooper_A01` is the first approved child and now has a validated first-pass DCC/Unreal review implementation.
 
 ## Gameplay Purpose
 
@@ -137,4 +137,4 @@ Proposed first ten child packages:
 - Hierarchy includes troops, elites, casters, beasts, siege, lords, and Anathema.
 - Each proposed child has source concepts, gameplay role, scale, materials, triangle budget, LODs, collision, animation notes, sockets, and Unreal path.
 - Emissive effects are sparing and role-based.
-- No child is marked approved for DCC build until Flamestrike selects the direction.
+- `SK_ABY_BlackPikeTrooper_A01` is approved and validated as the first DCC/Unreal review child; remaining children require selection before DCC build.

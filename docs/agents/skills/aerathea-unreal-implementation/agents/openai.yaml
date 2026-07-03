@@ -1,0 +1,4 @@
+interface:
+  display_name: "Aerathea Unreal Implementation"
+  short_description: "Import and wire assets in Unreal."
+  default_prompt: "Use this skill to import Aerathea assets, create materials and Blueprints, add sockets, place review actors, and integrate startup scene validation."

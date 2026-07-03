@@ -19,6 +19,7 @@ Use this map instead of `L_Aerathea_Startup` for future single-asset or batch as
 - 1m, 2m, 5m, 11m, and 10m rail scale references.
 - Red X axis and green Y axis ground markers.
 - Current placed asset: `AET_REVIEW_CurrentAsset_BloodAxeCairn_A01`.
+- Current asset mesh: `/Game/Aerathea/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnSlabCluster_A01_GameReady`.
 - Tagged runtime review camera: `AET_REVIEW_Camera_Main_A01`.
 - Runtime review director: `AET_REVIEW_ReviewCameraDirector_A01`.
 
@@ -29,7 +30,7 @@ Use this map instead of `L_Aerathea_Startup` for future single-asset or batch as
 - Apply live editor viewport: `Tools/Unreal/apply_review_island_viewport.py`
 - Launch visible editor review: `Tools/Unreal/launch_review_island_editor.sh`
 - Unreal map path: `/Game/Aerathea/Maps/L_Aerathea_ReviewIsland`
-- Latest stable capture: `Saved/Automation/ReviewIsland/AeratheaReviewIsland_Backdrop_Unlit.png`
+- Latest stable capture: `Saved/Automation/ReviewIsland/AeratheaReviewIsland_Backdrop_Unlit.png` predates the GameReady A01 cairn placement.
 
 `Config/DefaultEngine.ini` sets `EditorStartupMap` to this island so editor review sessions open in the clean review environment. `GameDefaultMap` and `ServerDefaultMap` remain pointed at `/Game/Aerathea/Maps/L_Aerathea_Startup`.
 
@@ -37,15 +38,23 @@ The review launcher also runs `apply_review_island_viewport.py` to force the liv
 
 ## Validation Evidence
 
-Validated on `2026-07-01T14:48:30-04:00`.
+Validated on `2026-07-02`.
 
-Focused validator result:
+Review island validator result:
 
 `Aerathea review island validation passed: 83 tagged actors, 13 asset slots, fixed-lighting review map /Game/Aerathea/Maps/L_Aerathea_ReviewIsland.`
+
+Current asset focused validator result:
+
+`Blood Axe game-ready cairn validation passed: 170.65h x 351.50w x 78.00d cm, 4 LODs, 4 materials, 4 textures, review island actor AET_REVIEW_CurrentAsset_BloodAxeCairn_A01, broad collision enabled.`
 
 Map check result:
 
 `MapCheck: Map check complete: 0 Error(s), 0 Warning(s).`
+
+Offscreen capture note:
+
+The `-game -RenderOffscreen` review capture path crashed before writing a new PNG for the GameReady A01 cairn. Use `Tools/Unreal/launch_review_island_editor.sh` for live visual observation until the capture path is fixed.
 
 Additional visibility guard:
 

@@ -8,9 +8,22 @@
 - World: Aerathea
 - Theme: winged predator, invisible-sight ambusher, claw-and-tail assassin
 - Primary references: `SK_INF_Base_A01`, `ANIMATION_HANDOFF.md`, `INFERNAL_VISUAL_CLEANSE_STANDARD.md`, `InfernalMaleLit.png`, `InfernalFemaleLit2.png`, Lesser Infernal action references
-- Current status: production package and modeling handoff ready; DCC build not started
+- Current status: approved by Flamestrike on 2026-06-28 as part of the Infernal starter class set; first-pass DCC/Unreal review implementation complete on the compact Infernal skeleton; final sculpt, retopo, UVs, textures, tuned physics, final VFX binding, and animation remain pending
 
 Infernal Rogues do not need daggers to feel dangerous. Their stealth identity comes from folded wings, low predatory posture, black claws, tail counterbalance, see-invisible focus, sudden pounce, short aerial repositioning, and tight brand glow. Gear should be close-fit and quiet: ash-black wraps, obsidian plates, minimal bone trophies, claw guards, wing straps, and tail-root armor.
+
+## Implementation Status - 2026-06-28
+
+- DCC build script: `Tools/DCC/build_infernal_rogue.py`
+- Unreal import script: `Tools/Unreal/import_infernal_rogue.py`
+- Focused validator: `Tools/Unreal/validate_infernal_rogue.py`
+- Blender source: `SourceAssets/Blender/Characters/Infernals/Rogue/SK_INF_Rogue_A01/SK_INF_Rogue_A01.blend`
+- FBX export: `SourceAssets/Exports/Characters/Infernals/Rogue/SK_INF_Rogue_A01/SK_INF_Rogue_A01.fbx`
+- DCC review image: `Saved/Automation/InfernalRogueReview/SK_INF_Rogue_A01_DCCReview.png`
+- Unreal mesh: `/Game/Aerathea/Characters/Infernals/Rogue/SK_INF_Rogue_A01`
+- Shared skeleton: `/Game/Aerathea/Characters/Infernals/Base/SK_INF_Base_Compact_A01_Skeleton`
+- Review actor: `AET_PROD_INF_Rogue_A01`
+- Validation: focused Rogue validator passed with visible height 176.06 cm, bounds radius 133.74 cm, and 25 sockets; startup validator passed with 188 assets, 53 expected actors, and 25 ground tiles.
 
 ## 2. Gameplay Purpose
 
@@ -115,7 +128,7 @@ Use `ANIMATION_HANDOFF.md`. Required rogue overlay:
 - Unreal path: `/Game/Aerathea/Characters/Infernals/Rogue/`
 - Animation Blueprint: `ABP_INF_Rogue_A01`
 - Scale: centimeters.
-- Required sockets: base claw/wing/tail/eye sockets plus optional `vfx_ambush_mark`.
+- Required sockets: base claw, cast, hand VFX, wing, tail, eye, chest brand, forearm brand, regeneration, mouth, ambush mark, invisible-sight focus, pounce trace, claw-rake trace, tail-balance trace, and crouch-center sockets.
 
 ## 14. Folder And Naming Recommendation
 

@@ -22,7 +22,7 @@ Create the first DCC-ready Balgoroth cult gate/threshold mesh for `KIT_INF_Balgo
 - Clear opening: at least 360 cm high and 260 cm wide.
 - Full arch target: 520-650 cm high, 430-560 cm wide, 120-220 cm deep.
 - Unreal path: `/Game/Aerathea/Props/Infernals/BalgorothCult/`
-- DCC state: not started.
+- DCC state: first-pass DCC/Unreal review implementation complete and validated; final sculpt/UV/texture/tuned collision pass pending.
 
 ## Modeling Constraints
 
@@ -115,6 +115,17 @@ Material instances:
   - `vfx_eye`
   - `vfx_inner_throat`
   - `vfx_rejected_gap`
+
+## DCC And Unreal Pass - 2026-06-28
+
+- Built first-pass Blender source and FBX export using `Tools/DCC/build_infernal_horn_wing_arch.py`.
+- Generated DCC review proof at `Saved/Automation/InfernalHornWingArchReview/SM_INF_HornWingArch_A01_DCCReview.png`.
+- Imported to `/Game/Aerathea/Props/Infernals/BalgorothCult/SM_INF_HornWingArch_A01` with `Tools/Unreal/import_infernal_horn_wing_arch.py`.
+- Generated LOD0-LOD3 and assigned five blockout material instances: cult stone, scorched stone, obsidian iron, bone/horn, and brand glow.
+- Added the required static mesh sockets for floor/altar snapping, guard placement, banners, crown/eye/throat VFX, and rejected-gap VFX.
+- Startup review actor: `AET_PROD_INF_HornWingArch_A01`.
+- Focused validator passed: `650.00h x 660.00w x 220.87d cm`, bounds radius `476.15 cm`, and `10` sockets.
+- Startup validator passed with the arch added to expected assets, actors, LOD checks, socket checks, runtime visibility, and bounds.
 
 ## Acceptance Checklist
 

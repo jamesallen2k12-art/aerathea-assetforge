@@ -8,11 +8,19 @@
 - Related source concept: `Gnome Mek fighting Demon.png`
 - Related heavy Mek variants: `GnomeFemaleHeavyMek.png`, `GnomeFemaleHeavyMek0.png`, `GnomeFemaleHeavyMek8.png`, `GnomeFemaleHeavyMek10.png`
 - Faction/theme: Gnome/Mekgineer versus Abyss
-- Current status: Visual intake complete; concept direction proposed; approval pending before DCC build
+- Current status: Visual intake complete; first child approved by Flamestrike on 2026-06-28 as `SK_GNM_IonaSiegebreakerMek_A01`; first-pass DCC/Unreal review implementation is imported and validated
 
 Iona is a named gnome/Mekgineer hero-pilot shown in a heavy combat Mek during an Abyss assault. The image is not a generic Aerathea/Common portrait. It should seed a named hero package, a heavy Mek package, and a cross-faction encounter reference.
 
 The added female heavy Mek references support alternate heavy Mek body and armor solutions, but they should not overwrite Iona's named hero silhouette. Shared mechanical language can be reused by `KIT_GNM_OGR_RivalryEncounter_A01`.
+
+First child package:
+
+- `docs/assets/characters/SK_GNM_IonaSiegebreakerMek_A01/PRODUCTION_PACKAGE.md`
+- `docs/assets/characters/SK_GNM_IonaSiegebreakerMek_A01/MODELING_HANDOFF.md`
+- `docs/assets/characters/SK_GNM_IonaSiegebreakerMek_A01/BUILD_IMPORT_STATUS.md`
+
+First-pass validation locks the Mek foundation at `419.61 cm` visible height with `16` required sockets and startup-scene validation passing. Split `SK_GNM_IonaPilot_A01` and `SM_GNM_IonaArcCannon_A01` after this cockpit and cannon socket contract is accepted for the next asset lane.
 
 ## Gameplay Purpose
 
@@ -112,12 +120,12 @@ Mek: idle engine rumble, heavy walk, turn, brace, fist punch, cannon aim, cannon
 - Source: `SourceAssets/Blender/Characters/Gnomes/Iona/`
 - Export: `SourceAssets/Exports/Characters/Gnomes/Iona/`
 
-Likely child packages after approval:
+Child package order:
 
-- `SK_GNM_IonaPilot_A01`
-- `SK_GNM_IonaSiegebreakerMek_A01`
-- `SM_GNM_IonaArcCannon_A01`
-- `BP_GNM_IonaSiegebreaker_A01`
+1. `SK_GNM_IonaSiegebreakerMek_A01` - approved first child; first-pass DCC/Unreal review implementation imported and validated.
+2. `SK_GNM_IonaPilot_A01` - split after Mek cockpit/harness scale lock.
+3. `SM_GNM_IonaArcCannon_A01` - split after Mek cannon socket lock.
+4. `BP_GNM_IonaSiegebreaker_A01` - assemble after pilot, Mek, and cannon packages are stable.
 
 ## Quality Gate Checklist
 
@@ -126,4 +134,4 @@ Likely child packages after approval:
 - Demon content remains reference only unless promoted through Abyss packages.
 - Main forms are modeled; tiny bolts, scratches, and gauge marks are textured.
 - LODs, collision, sockets, animation list, maps, and Unreal paths are defined.
-- Not approved for DCC build until Flamestrike selects the direction.
+- First child direction is approved for `SK_GNM_IonaSiegebreakerMek_A01`; first-pass implementation is validated, while final art-model sculpt/UV/texture/animation work remains pending.

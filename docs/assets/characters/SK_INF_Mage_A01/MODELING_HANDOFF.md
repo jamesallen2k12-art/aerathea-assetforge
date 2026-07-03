@@ -4,6 +4,8 @@
 
 Create the DCC source, class gear, brand-channel surface plan, socket plan, LODs, and Unreal import path for the Infernal Mage class package. The result should fit over `SK_INF_Base_A01` and prove the first Infernal caster silhouette without relying on mortal staffs, wands, books, or weapons.
 
+Current implementation state: first-pass Blender source, FBX export, DCC review render, Unreal skeletal mesh import, generated LOD0-LOD3, sockets, physics asset, placeholder ABP, startup actor, focused validator, and startup validator are complete as of 2026-06-28. Final sculpt, retopo, authored UVs/textures, tuned physics, socket-driven VFX, and authored animation remain pending.
+
 ## Source References
 
 - Production package: `docs/assets/characters/SK_INF_Mage_A01/PRODUCTION_PACKAGE.md`
@@ -29,7 +31,7 @@ Create the DCC source, class gear, brand-channel surface plan, socket plan, LODs
 - First fit targets: Standard adult 190-203 cm and Greater adult 230-244 cm.
 - Optional later fit: Exalted 260-274 cm named leader variant.
 - Unreal path: `/Game/Aerathea/Characters/Infernals/Mage/`
-- DCC state: not started.
+- DCC state: first-pass review implementation imported and validated; final art-model pass pending.
 
 ## Modeling Constraints
 
@@ -52,6 +54,7 @@ Create the DCC source, class gear, brand-channel surface plan, socket plan, LODs
   - `Mage_BrandRidges`
   - `Mage_GlowMarkers`
 - Skeleton: inherit the final Infernal base skeleton when locked.
+- Current first-pass skeleton: `/Game/Aerathea/Characters/Infernals/Base/SK_INF_Base_Tall_A01_Skeleton`.
 - Add empties/socket markers for hands, eyes, chest brands, forearms, wing roots, tail tip, regeneration core, sorcerer focus, and worthiness mark.
 
 ## Modeling Sequence
@@ -100,9 +103,11 @@ Material instances:
 
 - Blender source: `SourceAssets/Blender/Characters/Infernals/Mage/SK_INF_Mage_A01/SK_INF_Mage_A01.blend`
 - FBX export: `SourceAssets/Exports/Characters/Infernals/Mage/SK_INF_Mage_A01/SK_INF_Mage_A01.fbx`
+- DCC proof render: `Saved/Automation/InfernalMageReview/SK_INF_Mage_A01_DCCReview.png`
 - Unreal skeletal mesh: `/Game/Aerathea/Characters/Infernals/Mage/SK_INF_Mage_A01`
 - Physics asset: `/Game/Aerathea/Characters/Infernals/Mage/PHYS_INF_Mage_A01`
 - Animation Blueprint: `/Game/Aerathea/Characters/Infernals/Mage/ABP_INF_Mage_A01`
+- Startup actor: `AET_PROD_INF_Mage_A01`
 
 ## Unreal Validation
 
@@ -128,6 +133,11 @@ Material instances:
   - `vfx_sorcerer_focus`
   - `vfx_worthiness_mark`
 - Emissive states can be driven by `MI_INF_BrandGlowStates_A01` or future mage VFX parameters.
+
+2026-06-28 validation results:
+
+- `Tools/Unreal/validate_infernal_mage.py` passed: visible height `213.49 cm`, bounds radius `183.37 cm`, and `21` sockets present.
+- `Tools/Unreal/validate_startup_scene.py` passed with `161 assets`, `50 expected actors`, and `25 ground tiles`.
 
 ## Acceptance Checklist
 

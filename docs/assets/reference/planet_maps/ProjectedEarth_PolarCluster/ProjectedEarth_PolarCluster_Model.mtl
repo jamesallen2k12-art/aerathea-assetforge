@@ -1,0 +1,20 @@
+# Materials for ProjectedEarth_PolarCluster_Model.obj
+# 1 model unit = 100 km
+newmtl PlanetTexture
+Ka 1.000 1.000 1.000
+Kd 1.000 1.000 1.000
+Ks 0.150 0.150 0.150
+Ns 64.000
+map_Kd ProjectedEarth_PolarCluster_Texture_4096.png
+
+newmtl RaisedLand
+Ka 0.090 0.190 0.070
+Kd 0.190 0.560 0.180
+Ks 0.080 0.080 0.060
+Ns 24.000
+
+newmtl IceLand
+Ka 0.700 0.730 0.730
+Kd 0.880 0.920 0.920
+Ks 0.250 0.250 0.250
+Ns 48.000

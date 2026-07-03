@@ -8,9 +8,21 @@
 - World: Aerathea
 - Theme: invisible-sight tracker, winged pursuit predator, natural-weapon hunter
 - Primary references: `SK_INF_Base_A01`, `ANIMATION_HANDOFF.md`, `INFERNAL_VISUAL_CLEANSE_STANDARD.md`, `InfernalMaleLit.png`, `InfernalFemaleLit2.png`, Lesser action references
-- Current status: production package and modeling handoff ready; DCC build not started
+- Current status: approved by Flamestrike on 2026-06-28 as part of the Infernal starter class set; first-pass DCC/Unreal review implementation complete and validation passing; final sculpt, retopo, UVs/textures, tuned physics, authored LODs, VFX hookup, and animation remain pending
 
 Infernal Hunters are not archers. They hunt by seeing what prey tries to hide, crossing distance with wing-assisted bursts, using tail balance in leaps, and killing with claws, teeth, horns, and body-powered strikes. Their gear should support pursuit and trophy hierarchy without becoming a mortal weapon kit: tracking brands, eye/brow marks, light armor, wing harness straps, claw guards, tail bands, bone markers, and prey-scent ritual charms.
+
+## Implementation Status
+
+The approved first-pass review lane is complete. This pass establishes the Standard/Greater-band Hunter class read at `235.63 cm` visible height including horns, the weaponless pursuit silhouette, folded wing-burst shape, tail counterbalance, light pursuit armor, wing harness anchors, brow sight glow, target-mark marker, shared tall Infernal skeleton binding, generated LOD0-LOD3, physics assignment, placeholder animation Blueprint, and startup-scene placement.
+
+- Blender source: `SourceAssets/Blender/Characters/Infernals/Hunter/SK_INF_Hunter_A01/SK_INF_Hunter_A01.blend`
+- FBX export: `SourceAssets/Exports/Characters/Infernals/Hunter/SK_INF_Hunter_A01/SK_INF_Hunter_A01.fbx`
+- DCC proof render: `Saved/Automation/InfernalHunterReview/SK_INF_Hunter_A01_DCCReview.png`
+- Unreal skeletal mesh: `/Game/Aerathea/Characters/Infernals/Hunter/SK_INF_Hunter_A01`
+- Shared skeleton: `/Game/Aerathea/Characters/Infernals/Base/SK_INF_Base_Tall_A01_Skeleton`
+- Startup actor: `AET_PROD_INF_Hunter_A01`
+- Build/import status: `docs/assets/characters/SK_INF_Hunter_A01/BUILD_IMPORT_STATUS.md`
 
 ## 2. Gameplay Purpose
 
@@ -68,10 +80,14 @@ Texture maps:
 Material slots:
 
 1. Base Infernal skin/body inherited from `SK_INF_Base_A01`
-2. `MI_INF_Hunter_A01_PursuitArmor`
-3. `MI_INF_Hunter_A01_HarnessLeather`
-4. `MI_INF_Hunter_A01_BoneHorn`
-5. Optional `MI_INF_Hunter_A01_SightMarkGlow`
+2. `MI_INF_Hunter_A01_HornClaw`
+3. `MI_INF_Hunter_A01_Wing`
+4. `MI_INF_Hunter_A01_PursuitArmor`
+5. `MI_INF_Hunter_A01_HarnessLeather`
+6. `MI_INF_Hunter_A01_BoneHorn`
+7. `MI_INF_Hunter_A01_SightMarkGlow`
+
+The first-pass import keeps seven blockout material parents for validation readability. Final art should reduce or merge slots where practical while preserving separate emissive control for sight/target marks.
 
 ## 9. Triangle Budget
 
@@ -113,10 +129,11 @@ Use `ANIMATION_HANDOFF.md`. Required hunter overlay:
 
 - Primary mesh: `SK_INF_Hunter_A01`
 - Parent body: `SK_INF_Base_A01`
+- Shared skeleton: `/Game/Aerathea/Characters/Infernals/Base/SK_INF_Base_Tall_A01_Skeleton`
 - Unreal path: `/Game/Aerathea/Characters/Infernals/Hunter/`
 - Animation Blueprint: `ABP_INF_Hunter_A01`
 - Scale: centimeters.
-- Required sockets: base claw/wing/tail/eye sockets plus optional `vfx_target_mark`, `vfx_brow_sight`, and `vfx_pursuit_burst`.
+- Required sockets: base claw/wing/tail/eye sockets plus `vfx_target_mark`, `vfx_brow_sight`, `vfx_pursuit_burst`, `pounce_trace`, `claw_takedown_trace`, `tail_balance_trace`, `tracking_center`, and `wing_burst_trace`.
 
 ## 14. Folder And Naming Recommendation
 

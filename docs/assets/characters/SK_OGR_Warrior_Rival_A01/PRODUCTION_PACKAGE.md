@@ -6,6 +6,8 @@
 
 The Warrior should feel less technical than `SK_OGR_Teknomancer_A01`: simpler, meaner, and more direct. Any magic-tech details are crude forge reinforcements, not gnomish precision.
 
+Shared final-art fit source: `docs/assets/kits/KIT_GNM_OGR_RivalryEncounter_A01/OGRE_SHARED_RIG_FINAL_ART_FIT_PLAN.md`. This class remains bound to `/Game/Aerathea/Characters/Ogres/Base/SK_OGR_Base_Male_A01_Skeleton` and should be the second class overlay fit after Teknomancer.
+
 ## Gameplay Purpose
 
 - Provides the first Ogre melee rival for Gnome Heavy Mek and shield-wall encounter tests.
@@ -136,6 +138,7 @@ Required sockets:
 ## Quality Gate Checklist
 
 - Reads as a broad 10-11 ft Ogre, not a tall human.
+- Final art follows the Ogre shared rig fit plan and remains bound to the validated male Ogre skeleton.
 - Warrior silhouette is distinct from Teknomancer: shield and hammer, not reactor cannon.
 - Tower shield and hammer read at gameplay distance.
 - Glow is sparing and forge-like.

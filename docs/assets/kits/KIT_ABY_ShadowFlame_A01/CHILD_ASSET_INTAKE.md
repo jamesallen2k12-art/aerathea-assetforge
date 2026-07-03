@@ -6,7 +6,7 @@
 - Source concepts: 45 Abyss/Anathema files plus `Gnome Mek fighting Demon.png`
 - Generated lore comparison: `docs/lore/images/abyss-shadow-flame/`
 - Faction/theme: Abyss/Anathema
-- Intake status: visual classification complete; package directions proposed; approval pending before DCC build
+- Intake status: visual classification complete; `SK_ABY_BlackPikeTrooper_A01` approved and validated as the first DCC/Unreal review child; remaining package directions pending selection before DCC build
 - Proposed codes: `ABY` for Abyss, `ANA` for Anathema
 
 ## Visual Classification Summary
@@ -25,11 +25,11 @@ The source set breaks into seven production groups:
 
 ## Proposed First Production Candidates
 
-These are proposed directions only. They are not approved for DCC modeling until Flamestrike selects them.
+These are proposed directions only unless explicitly approved. `SK_ABY_BlackPikeTrooper_A01` is approved and has a validated first-pass DCC/Unreal review implementation.
 
 | Priority | Proposed asset/package | Primary source concepts | Role | Status |
 | ---: | --- | --- | --- | --- |
-| 1 | `SK_ABY_BlackPikeTrooper_A01` | `AbyssalTroops3.png`, `AbyssalTroops8.png`, `AbyssalDemon2.png` | Standard polearm infantry | Concept direction proposed |
+| 1 | `SK_ABY_BlackPikeTrooper_A01` | `AbyssalTroops3.png`, `AbyssalTroops8.png`, `AbyssalDemon2.png` | Standard polearm infantry | Approved; first-pass DCC/Unreal review import and validation complete |
 | 2 | `SK_ABY_CrescentReaver_A01` | `AbyssalDemon12.png`, `AbyssalDemon18.png` | Agile melee elite | Concept direction proposed |
 | 3 | `SK_ABY_VoidbowStalker_A01` | `AbyssalDemon10.png`, `AbyssalDemon20.png` | Ranged void archer | Concept direction proposed |
 | 4 | `SK_ABY_WardbreakerMage_A01` | `AbyssalDemon11.png`, `AbyssalDemon3.png`, `AbyssalTroops1.png` | Anti-ward caster | Concept direction proposed |

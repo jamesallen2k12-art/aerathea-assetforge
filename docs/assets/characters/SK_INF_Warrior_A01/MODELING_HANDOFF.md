@@ -17,7 +17,7 @@ Create the DCC source and class gear for the Infernal Warrior overlay on `SK_INF
 - Type: Skeletal Mesh class outfit.
 - Fit targets: Standard, Greater, and Exalted Infernal body bands.
 - Unreal path: `/Game/Aerathea/Characters/Infernals/Warrior/`
-- DCC state: not started.
+- DCC state: first-pass DCC/Unreal review implementation complete; final sculpt, retopo, UVs, textures, tuned physics, and animation remain pending.
 
 ## Modeling Constraints
 
@@ -39,6 +39,8 @@ Create the DCC source and class gear for the Infernal Warrior overlay on `SK_INF
 4. Add socket markers for claw traces, tail sweep, wing buffet, rage core, and regeneration.
 5. Build LOD0-LOD3.
 6. Export skeletal FBX.
+
+Current first-pass source is available at `SourceAssets/Blender/Characters/Infernals/Warrior/SK_INF_Warrior_A01/SK_INF_Warrior_A01.blend`; final art should preserve the validated claw, tail, wing, rage, and body-check socket layout unless animation review requires a targeted change.
 
 ## Triangle Budget
 
@@ -71,9 +73,10 @@ Create the DCC source and class gear for the Infernal Warrior overlay on `SK_INF
 ## Unreal Validation
 
 - Imports at centimeter scale.
-- Binds to the final Infernal base skeleton.
+- Binds to `/Game/Aerathea/Characters/Infernals/Base/SK_INF_Base_Tall_A01_Skeleton`.
 - Claws, wings, tail, skull belt, and armor blocks read at review distance.
 - Clears claw combo, tail sweep, wing buffet, pounce, and hit-react poses.
+- Focused validator passed with visible height 248.71 cm, bounds radius 213.18 cm, and 23 sockets.
 
 ## Acceptance Checklist
 

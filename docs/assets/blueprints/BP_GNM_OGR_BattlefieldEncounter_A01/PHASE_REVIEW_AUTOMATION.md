@@ -40,6 +40,8 @@ Use this for the four branch review frames:
 
 The batch script enables focused phase framing by default. Set `AET_REVIEW_PHASE_FOCUS=0` to force the canonical wide overview for every phase.
 
+The batch script also defaults to `AET_REVIEW_VIEWMODE=unlit` so phase frames stay readable when placeholder lights or emissive review states overexpose the gate area. Set `AET_REVIEW_VIEWMODE=lit` when the pass is specifically about lighting.
+
 Default output:
 
 `Saved/Automation/GnomeOgrePhaseReview/`

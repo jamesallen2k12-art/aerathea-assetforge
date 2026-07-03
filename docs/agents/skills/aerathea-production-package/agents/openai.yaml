@@ -1,0 +1,4 @@
+interface:
+  display_name: "Aerathea Production Package"
+  short_description: "Create asset packages and handoffs."
+  default_prompt: "Use this skill to convert approved Aerathea concepts into production packages, modeling notes, LOD plans, collision, and Unreal import specs."

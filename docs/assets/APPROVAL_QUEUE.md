@@ -5,19 +5,36 @@ Unreal, or final-art implementation pass. Documentation and planning can continu
 around these items, but the listed work should not move into build production
 until the approval is explicit.
 
-## Active Approval Gates
+## Current Approval Status
 
-| Priority | Gate | Required approval | Recommended default | Why this default helps production | Source docs |
-| ---: | --- | --- | --- | --- | --- |
-| 1 | Abyss/Anathema first child | Choose one of the first ten proposed Abyss/Anathema child packages to move from concept direction to approved DCC modeling | `SK_ABY_BlackPikeTrooper_A01` | Standard infantry establishes the first Abyss scale, shared material language, weapon sockets, rig expectations, and troop variants before expensive elite, winged, siege, or boss work | `docs/assets/kits/KIT_ABY_ShadowFlame_A01/CHILD_ASSET_INTAKE.md` |
-| 2 | Iona Siegebreaker first child | Choose whether Iona's heavy Mek, pilot, or arc cannons become the first child production package | `SK_GNM_IonaSiegebreakerMek_A01` | The child intake already identifies the heavy Mek as the first build if approved; it locks the cockpit, harness, weapon sockets, pilot scale envelope, and encounter mass | `docs/assets/kits/KIT_GNM_IonaSiegebreaker_A01/CHILD_ASSET_INTAKE.md` |
-| 3 | Giant base scale and body lock | Approve rebuilding/rescaling the staged Giant base to the current A04 scale baselines, or request proportion changes before Blood Axe and Giant environment work | Rebuild/rescale to female 442 cm and male 470 cm baselines | Giant weapons, Blood Axe armory, doors, stairs, cave-town interiors, and hand/body sockets depend on this lock; the current import is documented as review-only | `docs/assets/characters/SK_GIA_Base_A01/PRODUCTION_PACKAGE.md` |
-| 4 | Portal gameplay rules and scale | Approve final traversal, destination, VFX, audio, failure-state rules, multi-direction visual exploration, and the 10 m / about 33 ft universal portal scale for `BP_AET_Portal_A01` | Explore several old, mysterious, awe-inspiring portal silhouettes, rebuild/rescale the chosen arch to a 1000 cm clear traversal opening, keep preview/overlap/cooldown behavior, then add a single startup-test destination registry before expanding | The native portal actor and Blueprint are already validating; the portal should remain race-neutral and epic-scale so players feel small while Giants, major NPCs, large enemies, dungeons, raids, and cities are supported | `docs/assets/blueprints/BP_AET_Portal_A01/PRODUCTION_PACKAGE.md` |
-| 5 | Infernal starter class and cult child signoff | Approve starter class packages, first class DCC child, first cult prop child, combat VFX direction, and animation direction before Infernal DCC production starts | Approve all four starter classes; first DCC `SK_INF_Mage_A01`; first cult prop `SM_INF_HornWingArch_A01`; approve VFX and animation handoffs | The docs are ready, but DCC work should not begin until class silhouettes, weaponless doctrine, cult threshold scale, spell intensity, and animation rules are approved together | `docs/assets/characters/INFERNAL_APPROVAL_QUEUE.md` |
+All approval gates listed below were cleared by Flamestrike on 2026-06-28. The
+approved production order is:
+
+1. Finish the Gnome/Ogre encounter final-art foundation.
+2. Complete the Ogre shared rig/art-model fit.
+3. `SK_GNM_IonaSiegebreakerMek_A01` completed the first Iona child production lane as a validated first-pass DCC/Unreal review asset.
+4. Infernal starter class review lanes are complete for `SK_INF_Mage_A01`, `SK_INF_Warrior_A01`, `SK_INF_Rogue_A01`, and `SK_INF_Hunter_A01`; `SM_INF_HornWingArch_A01` remains the validated first cult prop.
+5. Rebuild/rescale `SK_GIA_Base_A01` to the Giant A04 baselines: female 442 cm, male 470 cm.
+6. Explore and rebuild the universal portal around old, mysterious, awe-inspiring 10 m scale; traversal expansion can defer.
+7. `SK_ABY_BlackPikeTrooper_A01` completed the first Abyss/Anathema child production lane as a validated first-pass DCC/Unreal review asset.
+8. `SM_GIA_BloodAxeCairnSlabCluster_A01_Test2Manual` is approved as the A01 Blood Axe cairn proof-of-concept game-ready static prop and placed in Unreal.
+
+## Resolved Approval Gates
+
+| Priority | Gate | Approved decision | Production effect | Source docs |
+| ---: | --- | --- | --- | --- |
+| 1 | Gnome/Ogre final-art foundation | Continue the existing final-art replacement plan before branching to unrelated DCC | Locks the encounter as the active foundation lane and keeps phase review, pylon, shieldwall, Manticore, Ogre, and Mek dependencies in order | `docs/assets/kits/KIT_GNM_OGR_RivalryEncounter_A01/FINAL_ART_REPLACEMENT_PLAN.md` |
+| 2 | Ogre shared rig/art-model fit | Complete the shared Ogre rig and final-art model fit after baseline validation | Keeps `SK_OGR_Base_A01`, Teknomancer, Warrior, Shaman, and Necromancer on a reusable male Ogre skeleton before final class art expands | `docs/assets/characters/SK_OGR_Base_A01/PRODUCTION_PACKAGE.md` |
+| 3 | Iona Siegebreaker first child | Start with `SK_GNM_IonaSiegebreakerMek_A01`; first-pass DCC/Unreal review lane complete | Locks cockpit, harness, weapon sockets, pilot scale envelope, and encounter mass before pilot and cannon variants | `docs/assets/characters/SK_GNM_IonaSiegebreakerMek_A01/BUILD_IMPORT_STATUS.md` |
+| 4 | Infernal starter class and cult child signoff | Approve all starter classes; first-pass DCC/Unreal review lanes complete for Mage, Warrior, Rogue, and Hunter; first cult prop `SM_INF_HornWingArch_A01`; approve VFX and animation handoffs | Clears Infernal class silhouettes, weaponless doctrine, cult threshold scale, spell intensity, and animation rules for final material, VFX, animation, and art-model production | `docs/assets/characters/INFERNAL_APPROVAL_QUEUE.md` |
+| 5 | Giant base scale and body lock | Rebuild/rescale to female 442 cm and male 470 cm baselines | Locks Giant hand/body scale for Blood Axe armory, cave-town architecture, stairs, doors, sockets, and environment modules | `docs/assets/characters/SK_GIA_Base_A01/PRODUCTION_PACKAGE.md` |
+| 6 | Portal gameplay rules and scale | Explore old, mysterious, awe-inspiring portal silhouettes and rebuild around a 1000 cm clear traversal opening; traversal registry expansion can defer | Keeps the portal race-neutral and epic-scale while preserving validated preview/overlap/cooldown behavior for the next build pass | `docs/assets/blueprints/BP_AET_Portal_A01/PRODUCTION_PACKAGE.md` |
+| 7 | Abyss/Anathema first child | Start with `SK_ABY_BlackPikeTrooper_A01` | Established first Abyss scale, material language, weapon sockets, rig expectations, and troop variant boundaries with a validated first-pass DCC/Unreal review asset | `docs/assets/kits/KIT_ABY_ShadowFlame_A01/CHILD_ASSET_INTAKE.md` |
+| 8 | Blood Axe cairn A01 proof-of-concept | Approve `SM_GIA_BloodAxeCairnSlabCluster_A01_Test2Manual` brightened Test 2 as the A01 static prop direction | Locks the A1/Test2 bright visual match/readability lane for static environmental storytelling placement in Unreal; gameplay behavior, VFX/audio, destruction, quest markers, and combat remain out of scope | `docs/assets/props/SM_GIA_BloodAxeCairnSlabCluster_A01/TEST2_MANUAL_ASSET_STATUS.md`, `docs/assets/VISUAL_CANON_REGISTRY.md` |
 
 ## Abyss/Anathema Candidate List
 
-Choose one before DCC modeling starts:
+Approved first child is `SK_ABY_BlackPikeTrooper_A01`, now validated in the startup scene. The remaining candidates stay available as later variants:
 
 1. `SK_ABY_BlackPikeTrooper_A01` - standard polearm infantry.
 2. `SK_ABY_CrescentReaver_A01` - agile melee elite.
@@ -30,12 +47,10 @@ Choose one before DCC modeling starts:
 9. `SK_ABY_CinderLord_A01` - boss-class commander.
 10. `SK_ANA_SiegeDrake_A01` - bound siege construct or drake.
 
-## Ready Reply Format
+## Active Approval Gates
 
-To clear all current approval gates, reply with decisions like:
+| Priority | Gate | Required Flamestrike decision | Production effect | Source docs |
+| ---: | --- | --- | --- | --- |
+| - | None | No active global approval gate is open for the approved A01 Blood Axe cairn proof-of-concept static prop. | Additional Blood Axe cairn variants, gameplay behavior, VFX/audio, destruction, quest markers, combat use, and broader kit rollout still require separate approval if requested. | `docs/assets/props/SM_GIA_BloodAxeCairnSlabCluster_A01/TEST2_MANUAL_ASSET_STATUS.md` |
 
-`Abyss: BlackPikeTrooper; Iona: SiegebreakerMek; Giant: rebuild at 442/470 cm; Portal: explore old/mysterious 10 m universal scale, traversal defer`
-
-The portal decision can be deferred without blocking creature, Mek, Giant, or
-Infernal package approval. Abyss, Iona, Giant, and Infernal decisions each
-unblock separate production lanes.
+Package-specific future Infernal visual gates are separated in `docs/assets/characters/INFERNAL_APPROVAL_QUEUE.md`. New approval gates should be added here only when a later package needs a fresh visual, gameplay, backend, economy, audio, or implementation decision from Flamestrike.

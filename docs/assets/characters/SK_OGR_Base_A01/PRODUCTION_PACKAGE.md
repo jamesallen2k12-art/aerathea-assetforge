@@ -8,6 +8,8 @@ They are fascinated by magic and technology, but their craft is not gnomish prec
 
 Current source concept scan: 41 Ogre-related PNG files, including body/class sheets, Teknomancy and Gnome Mek encounter references, settlement boards, interiors, fortifications, forge references, and necropolis/shamanic architecture.
 
+Current final-art fit source: `docs/assets/kits/KIT_GNM_OGR_RivalryEncounter_A01/OGRE_SHARED_RIG_FINAL_ART_FIT_PLAN.md`. The 2026-06-28 shared-skeleton baseline validates the male Ogre base, Teknomancer, Warrior, Shaman, and Necromancer review meshes against `/Game/Aerathea/Characters/Ogres/Base/SK_OGR_Base_Male_A01_Skeleton`.
+
 ## Gameplay Purpose
 
 Ogres support large-race player/NPC bodies, enemy warbands, faction settlements, and class variants:
@@ -135,6 +137,7 @@ Create an original stylized fantasy MMORPG concept image of an Ogre base body an
 ## Quality Gate Checklist
 
 - Ogre female and male scales are clearly below Giants and above Minotaurs.
+- Final art follows the shared rig fit plan without renaming or rescaling the validated skeleton.
 - The body reads as heavily muscled, broad, and war-created, not just a tall human.
 - Teknomancy reads as instinctive, oversized, and crude, not gnomish precision craft.
 - Warrior, Teknomancer, Shaman, and Necromancer variants remain readable at MMO camera distance.

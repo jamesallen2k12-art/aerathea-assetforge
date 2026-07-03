@@ -8,9 +8,22 @@
 - World: Aerathea
 - Theme: Balgoroth-chosen natural-weapon shock fighter
 - Primary references: `SK_INF_Base_A01`, `INFERNAL_VISUAL_CLEANSE_STANDARD.md`, `ANIMATION_HANDOFF.md`, `InfernalMaleLit.png`, `InfernalFemaleLit2.png`, `Infernals.png`
-- Current status: production package and modeling handoff ready; DCC build not started
+- Current status: approved by Flamestrike on 2026-06-28 as part of the Infernal starter class set; first-pass DCC/Unreal review implementation complete; final sculpt, retopo, UVs, textures, tuned physics, final VFX binding, and animation remain pending
 
 Infernal Warriors are not sword-and-shield soldiers. They are armored natural-weapon combatants who prove strength through claws, horns, tail sweeps, wing pressure, brutal pounces, regeneration, and controlled rage. Armor should amplify their demonic gifts rather than replace them: heavy bracers around clawed hands, wing-root guards, skull/bone hierarchy belts, obsidian chest plates, and reinforced tail-root armor.
+
+## Implementation Status - 2026-06-28
+
+- DCC build script: `Tools/DCC/build_infernal_warrior.py`
+- Unreal import script: `Tools/Unreal/import_infernal_warrior.py`
+- Focused validator: `Tools/Unreal/validate_infernal_warrior.py`
+- Blender source: `SourceAssets/Blender/Characters/Infernals/Warrior/SK_INF_Warrior_A01/SK_INF_Warrior_A01.blend`
+- FBX export: `SourceAssets/Exports/Characters/Infernals/Warrior/SK_INF_Warrior_A01/SK_INF_Warrior_A01.fbx`
+- DCC review image: `Saved/Automation/InfernalWarriorReview/SK_INF_Warrior_A01_DCCReview.png`
+- Unreal mesh: `/Game/Aerathea/Characters/Infernals/Warrior/SK_INF_Warrior_A01`
+- Shared skeleton: `/Game/Aerathea/Characters/Infernals/Base/SK_INF_Base_Tall_A01_Skeleton`
+- Review actor: `AET_PROD_INF_Warrior_A01`
+- Validation: focused Warrior validator passed with visible height 248.71 cm, bounds radius 213.18 cm, and 23 sockets; startup validator passed with 177 assets, 52 expected actors, and 25 ground tiles.
 
 ## 2. Gameplay Purpose
 
@@ -117,7 +130,7 @@ Use `ANIMATION_HANDOFF.md`. Required warrior overlay:
 - Animation Blueprint: `ABP_INF_Warrior_A01`
 - Pivot: inherited from base body at ground center.
 - Scale: centimeters.
-- Required sockets: base claw, wing, tail, eye, chest brand, and regeneration sockets plus optional `vfx_rage_core`.
+- Required sockets: base claw, wing, tail, eye, chest brand, regeneration, forearm brand, rage core, tail-sweep trace, wing-buffet trace, and body-check trace sockets.
 
 ## 14. Folder And Naming Recommendation
 

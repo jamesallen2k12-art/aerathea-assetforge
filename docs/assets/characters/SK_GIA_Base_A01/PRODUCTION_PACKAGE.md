@@ -7,7 +7,7 @@
 - Source concepts: `Giant.png`, `Giant1.png`, `Giant2.png`, `GiantMale1.png`, `GiantMale2.png`, `GiantMale3.png`, `GiantMale4.png`, `GiantFemale.png`, `GiantFemale1.png`, `GiantFemale3.png`, `GiantFemale4.png`, `GiantFemale5.png`, `GiantFemaleShaman.png`, `GiantMaleandFemale.png`, `GiantMaleandFemale3.png`
 - Faction/theme: Giant
 - Approval image: `docs/assets/characters/SK_GIA_Base_A01/SK_GIA_Base_A01_ApprovalConcept.png`
-- Status: Concept direction approved, but the first-pass DCC/Unreal scale is superseded by A04 race-scale review data; rebuild or rescale before using this as the final Giant body lock
+- Status: Concept direction approved; 2026-06-28 rebuild/rescale completed to A04 baselines: female 442 cm and male 470 cm; current staged import is validated for first-pass scale, sockets, physics, LODs, and startup placement, but remains review-only for final sculpt/retopo/UV/texture quality
 
 Build status:
 
@@ -18,7 +18,9 @@ Build status:
 - Female FBX export: `SourceAssets/Exports/Characters/Giants/SK_GIA_Base_A01/SK_GIA_Base_Female_A01.fbx`
 - DCC review render: `Saved/Automation/GiantBaseReview/SK_GIA_Base_A01_DCCReview.png`
 - Unreal close-up capture: `Saved/Automation/StartupReview/AeratheaStartupReview_GiantBase_Closeup_v2.png`
-- Unreal import: current male/female FBX exports imported, placed in startup scene, sockets generated, physics assets assigned, animation Blueprint placeholders created, and startup validation passing; current staged meshes use older scale assumptions and are review-only until rebuilt
+- Unreal import: regenerated male/female FBX exports imported, placed in startup scene, sockets generated, physics assets assigned, animation Blueprint placeholders created, focused scale validation passing via `Tools/Unreal/validate_giant_base_scale.py`, and startup validation passing via `Tools/Unreal/validate_startup_scene.py`
+- Scale validation result: male review mesh visible bounds height 464.26 cm for the approved 470 cm baseline; female review mesh visible bounds height 429.35 cm for the approved 442 cm baseline
+- Rebuild/rescale plan: `docs/assets/characters/SK_GIA_Base_A01/REBUILD_RESCALE_PLAN.md`
 
 Approved Giant base direction for Aerathea. Giants are remote mountain people, not oversized humans: massive, weathered, broad-framed, highland-adapted, and strongly tied to stonecraft, isolated cave towns, and nomadic mountain life. The neutral base package must preserve civilized Giant identity and not let Blood Axe brutality become the default Giant culture. The approval concept is the visual target for the first DCC scale/body pass; the current DCC output is a review blockout for scale, proportion, skeleton, and sockets only.
 
@@ -155,7 +157,7 @@ Animation style should sell mass: slower acceleration, clear weight shift, footf
 - Current staged animation Blueprint placeholders: `ABP_GIA_Base_Male_A01`, `ABP_GIA_Base_Female_A01`
 - Startup review actors: `AET_PROD_GiantMaleBase_A01`, `AET_PROD_GiantFemaleBase_A01`
 - Pivot: feet at world origin
-- Scale: centimeters, no import scale correction
+- Scale: DCC authored to centimeter baselines; import script applies the project FBX uniform scale and keeps startup actors at scale 1,1,1
 - Material slots: body/head, eyes, hair/fur, starter outfit/gear
 - Sockets:
   - `hand_r_weapon`
@@ -187,6 +189,7 @@ Validate beside a 180 cm humanoid reference, the 110 cm gnome reference, a 270 c
 ## Quality Gate Checklist
 
 - Female Giant scale is 14-15 ft; male Giant scale is 14'10"-16'0".
+- Approved A04 rebuild baselines are female 442 cm and male 470 cm; current first-pass DCC/Unreal import has been regenerated and validated before Blood Axe, cave-town, armory, or named Giant production.
 - Giant base reads as a remote mountain race, not a scaled normal human.
 - Civilized/neutral Giant identity is separate from Blood Axe Tribe visual language.
 - Primary silhouette remains readable at MMO distance.

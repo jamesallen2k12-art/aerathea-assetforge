@@ -35,6 +35,7 @@
 ## Known Import Notes
 
 - The first-pass FBX now exports with the Ogre male base armature node and imports bound to `/Game/Aerathea/Characters/Ogres/Base/SK_OGR_Base_Male_A01_Skeleton`.
+- Final art follows `docs/assets/kits/KIT_GNM_OGR_RivalryEncounter_A01/OGRE_SHARED_RIG_FINAL_ART_FIT_PLAN.md`; Teknomancer is the first class overlay fit after the final Ogre base body.
 - Unreal still logs a generic FBX bind-pose matrix warning during import; the startup validator and focused `Tools/Unreal/validate_ogre_shared_skeletons.py` validator confirm the final saved mesh is bound to the expected Ogre base skeleton.
 - `Tools/Unreal/import_ogre_teknomancer.py` now fails the import if the saved mesh is bound to any skeleton other than `/Game/Aerathea/Characters/Ogres/Base/SK_OGR_Base_Male_A01_Skeleton`.
 - Current physics asset is generated for validation and startup review only.

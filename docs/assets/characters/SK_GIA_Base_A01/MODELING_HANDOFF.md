@@ -38,7 +38,7 @@ Skeletal mesh base body for adult Aerathea Giants:
 - Male Giants: 14'10"-16'0" / 452-488 cm.
 - First production baselines: female 442 cm and male 470 cm.
 
-The current first-pass DCC/Unreal import was produced from older scale assumptions. Treat it as review-only until rebuilt or rescaled against the A04 race-size chart.
+Flamestrike approved rebuilding/rescaling this package on 2026-06-28 to the A04 baselines: female 442 cm and male 470 cm. The first-pass DCC source, FBX exports, and Unreal imports have been regenerated to those baselines and validated against the A04 race-size chart. Treat the current import as scale/socket review only; final sculpt, retopo, UVs, authored textures, tuned physics, and animation are still production work.
 
 The first DCC source should create a neutral Giant base body with starter highland clothing, not a final Blood Axe raider, boss, or named hero. Match the approved concept image for body mass, stance, hand scale, highland clothing, and neutral/civilized material language.
 
@@ -135,9 +135,11 @@ Material slot target:
 
 ## Unreal Validation
 
-- Current first-pass import is staged in `/Game/Aerathea/Characters/Giants/Base/` and passes `Tools/Unreal/validate_startup_scene.py`, but it uses older scale assumptions and must be rebuilt or rescaled before final Giant approval.
-- Imports at centimeter scale with no correction.
-- Final target baselines should read at roughly 442 cm for female Giants and 470 cm for male Giants.
+- Current first-pass import is staged in `/Game/Aerathea/Characters/Giants/Base/` after the 2026-06-28 rebuild/rescale pass.
+- `Tools/Unreal/validate_giant_base_scale.py` passes with male review mesh visible bounds height 464.26 cm for the approved 470 cm baseline and female review mesh visible bounds height 429.35 cm for the approved 442 cm baseline.
+- `Tools/Unreal/validate_startup_scene.py` passes after the import.
+- Imports use the project FBX uniform scale and leave startup actors at scale 1,1,1.
+- Final target baselines remain 442 cm for female Giants and 470 cm for male Giants.
 - Feet sit on the ground plane and pivot at world origin.
 - Skeleton supports idle, walk, run/jog, turn, step up/down, reach down, one-handed heavy attack, two-handed heavy attack, shield brace, bow draw placeholder, mason/tool loop, shaman channel, stomp, hit reaction, stagger, and death.
 - Required sockets exist:

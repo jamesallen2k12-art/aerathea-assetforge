@@ -7,7 +7,20 @@
 - Primary users: `SK_INF_Mage_A01`, `SK_INF_Base_A01`, `SK_INF_Lesser_A01`, future Infernal class variants
 - World: Aerathea
 - Theme: Balgoroth-touched abyssal combat magic, brand-channel fire, lightning-like claw energy, invisible-sight reveal
-- Current status: production package ready; Niagara/material authoring not started
+- Current status: approved by Flamestrike on 2026-06-28 for the Infernal starter lane; production package ready; `SK_INF_Mage_A01` first-pass sockets validated; first-pass Unreal material/Niagara assets created and focused validation passing; bespoke Niagara graph polish pending
+
+## Implementation Status - 2026-06-28
+
+First-pass Unreal VFX assets now exist for the shared Infernal spellcasting contract. These are production-review foundations, not final authored spell art.
+
+- Authoring script: `Tools/Unreal/import_infernal_abyssal_spellcasting_vfx.py`
+- Focused validator: `Tools/Unreal/validate_infernal_abyssal_spellcasting_vfx.py`
+- Unreal VFX folder: `/Game/Aerathea/VFX/Infernals/AbyssalSpellcasting/`
+- Unreal material parent folder: `/Game/Aerathea/Materials/Infernals/VFX/`
+- Unreal material instance folder: `/Game/Aerathea/Materials/Instances/`
+- Validation result: `8` Niagara systems, `5` Niagara emitters, `5` material instances, and `15` Mage VFX sockets passed focused validation
+
+The current Niagara assets are duplicated from stock Unreal Niagara templates so gameplay, animation, socket, and material contracts can be wired early. Final production still requires hand-authored Niagara graphs, fixed bounds tuning, ability parameter binding, and animation notify hookup.
 
 This package defines the shared combat spellcasting language for adult Infernals and advanced Lesser Infernals. It is separate from `VFX_INF_WorthinessJudgment_A01`, which handles ritual floor and altar states. Abyssal spellcasting should feel angry, powerful, and predatory: flame, lightning-like red-orange arcs, glowing eyes, brand channels, claw bursts, wing-root flares, and short violent pulses. It must not become constant full-screen fire, unreadable bloom, or noisy artifact speckle.
 
@@ -71,7 +84,15 @@ Texture targets:
 - `T_INF_EyeReveal_A01_E`
 - `T_INF_AshMote_A01_BC`
 
-Material instances:
+First-pass material parent and instance pairs:
+
+- `M_INF_AbyssalArc_A01` parent material, `MI_INF_AbyssalArc_A01`
+- `M_INF_AbyssalFlame_A01` parent material, `MI_INF_AbyssalFlame_A01`
+- `M_INF_BrandPulse_A01` parent material, `MI_INF_BrandPulse_A01`
+- `M_INF_EyeReveal_A01` parent material, `MI_INF_EyeReveal_A01`
+- `M_INF_AshMote_A01` parent material, `MI_INF_AshMote_A01`
+
+Material instance targets:
 
 - `MI_INF_AbyssalArc_A01`
 - `MI_INF_AbyssalFlame_A01`
@@ -89,6 +110,14 @@ Niagara systems:
 - `NS_INF_InvisibleSightReveal_A01`
 - `NS_INF_WingMantleCast_A01`
 - `NS_INF_RageSurge_A01`
+
+Template-derived emitter targets:
+
+- `NE_INF_AbyssalArc_A01`
+- `NE_INF_AbyssalFlame_A01`
+- `NE_INF_BrandPulse_A01`
+- `NE_INF_EyeReveal_A01`
+- `NE_INF_AshMote_A01`
 
 Suggested parameters:
 
@@ -149,10 +178,13 @@ The effect should respond to `SK_INF_Mage_A01` sockets first, then fall back to 
 - Texture path: `/Game/Aerathea/Textures/Infernals/VFX/`
 - Primary consumers:
   - `/Game/Aerathea/Characters/Infernals/Mage/SK_INF_Mage_A01`
-  - `/Game/Aerathea/Materials/Infernals/MI_INF_BrandGlowStates_A01`
+  - `/Game/Aerathea/Materials/Instances/MI_INF_BrandGlowStates_A01_*`
   - future `ABP_INF_Mage_A01`
 - Use fixed bounds per system and expose bounds scale for Exalted variants.
 - Expose parameters to Gameplay Ability and Animation Blueprint.
+- First-pass material/Niagara authoring is automated by `Tools/Unreal/import_infernal_abyssal_spellcasting_vfx.py`.
+- Focused validation is handled by `Tools/Unreal/validate_infernal_abyssal_spellcasting_vfx.py`.
+- Current template-derived Niagara systems should be replaced or graph-polished during the final VFX art pass without changing asset names or socket-facing contract.
 
 ## 14. Folder And Naming Recommendation
 

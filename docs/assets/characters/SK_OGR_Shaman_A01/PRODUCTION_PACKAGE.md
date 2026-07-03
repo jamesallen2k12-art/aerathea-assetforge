@@ -9,6 +9,7 @@
 - Theme: Ogre primal shaman, cairn-channel caster, battlefield ritualist
 - Primary source references: `OgreShaman.png`, `OgreShamanHut.png`, `OgreFemale2.png`, `SK_OGR_Base_A01`
 - Current status: first-pass DCC source, FBX export, Unreal skeletal import, material instances, physics asset, anim Blueprint, sockets, startup review placement, validation, and build/import status complete; final art polish and animation set pending
+- Shared final-art fit source: `docs/assets/kits/KIT_GNM_OGR_RivalryEncounter_A01/OGRE_SHARED_RIG_FINAL_ART_FIT_PLAN.md`; this class remains bound to `/Game/Aerathea/Characters/Ogres/Base/SK_OGR_Base_Male_A01_Skeleton` and should be the third class overlay fit after Teknomancer and Warrior.
 
 Ogre Shamans are brutal battlefield mystics. They do not feel refined, scholarly, or nature-druidic. Their magic is instinctive and forceful: cairn stones, carved bone, hide wraps, storm charms, ember runes, ritual paint, and huge staffs used as both spell focus and weapon. They stand with the same broad Ogre mass as Warriors and Teknomancers, but their silhouette is defined by a ritual staff, rune wheel, dangling fetishes, fur and hide, stone charm plates, and a free casting hand.
 
@@ -175,6 +176,7 @@ Related follow-up assets:
 ## 15. Quality Gate Checklist
 
 - Reads as a broad 10-11 ft Ogre, not a tall human caster.
+- Final art follows the Ogre shared rig fit plan and remains bound to the validated male Ogre skeleton.
 - Shaman silhouette is distinct from Teknomancer and Necromancer at MMO camera distance.
 - Cairn stone, bone, hide, fur, and ritual paint language is clear.
 - Glow is warm rune/storm spell language, not grave-green necromancy or Gnome Tek.

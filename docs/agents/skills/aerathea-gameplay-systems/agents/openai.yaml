@@ -1,0 +1,4 @@
+interface:
+  display_name: "Aerathea Gameplay Systems"
+  short_description: "Build gameplay and encounter systems."
+  default_prompt: "Use this skill to build Aerathea combat, interaction, timing, ability, enemy, loot, quest, and encounter systems with validation contracts."

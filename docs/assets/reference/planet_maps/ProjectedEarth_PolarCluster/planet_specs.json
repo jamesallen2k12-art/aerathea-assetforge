@@ -1,0 +1,33 @@
+{
+  "name": "ProjectedEarth_PolarCluster",
+  "description": "Hypothetical Earth landmasses remapped into a northern polar cap on a 91,600 km circumference rocky planet.",
+  "source_assumption": "Land/ocean outlines use bundled Basemap/GSHHS coastline mask; elevations are procedural visual relief, not real Earth DEM data.",
+  "target_equatorial_circumference_km": 91600.0,
+  "target_radius_km": 14578.592787217613,
+  "target_diameter_km": 29157.185574435225,
+  "scale_vs_earth_equatorial_circumference": 2.2857133161041454,
+  "surface_area_km2": 2670798198.6182666,
+  "surface_area_ratio_vs_earth": 5.224485363415807,
+  "same_density_mass_ratio_vs_earth": 11.94167576495072,
+  "same_density_surface_gravity_ratio_vs_earth": 2.2857133161041454,
+  "same_density_surface_gravity_m_s2": 22.415190491372716,
+  "model_units": {
+    "km_per_model_unit": 100.0,
+    "radius_model_units": 145.78592787217613,
+    "diameter_model_units": 291.57185574435226
+  },
+  "polar_projection": {
+    "method": "azimuthal-equidistant-style remap from old Earth north pole",
+    "new_colatitude_degrees": "old_colatitude_degrees / scale_vs_earth",
+    "old_colatitude_degrees": "new_colatitude_degrees * scale_vs_earth",
+    "projected_cap_edge_latitude_degrees_north": 11.24996659388647
+  },
+  "files": {
+    "obj": "ProjectedEarth_PolarCluster_Model.obj",
+    "mtl": "ProjectedEarth_PolarCluster_Model.mtl",
+    "glb": "ProjectedEarth_PolarCluster_Model.glb",
+    "texture": "ProjectedEarth_PolarCluster_Texture_4096.png",
+    "map_preview": "ProjectedEarth_PolarCluster_MapPreview.png",
+    "land_mask": "ProjectedEarth_PolarCluster_LandMask.png"
+  }
+}

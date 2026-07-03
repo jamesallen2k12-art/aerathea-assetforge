@@ -6,8 +6,8 @@
 - Asset type: Static Mesh
 - World: Aerathea
 - Category: Portal structure / magical traversal prop
-- Current status: Blender source and FBX generated, imported to Unreal, startup portal visual replaced, validation passing; final materials, LODs, collision, scale rebuild, visual exploration, and visual signoff still pending
-- Working selected direction: First-pass chunky ancient stone archway with hand-hewn blocks, dark-iron reinforcement, worn brass insets, and restrained blue Aetherium channel stones. Treat this as a review direction, not the final locked portal style.
+- Current status: 10 m universal scale rebuild complete; Blender source and FBX regenerated, imported to Unreal, startup portal visual replaced, sockets/LODs/UCX collision present, focused portal validation passing, and startup validation passing. Final art direction approval, material polish, tangent cleanup, VFX/audio, and traversal signoff remain pending.
+- Working selected direction: First-pass ancient megalith / deep-vault threshold with hand-hewn stone masses, dark-iron reinforcement, and restrained blue Aetherium channel stones. Treat this as a validated scale-and-composition pass, not the final locked portal style.
 
 This asset replaces the portal-arch blockout in `L_Aerathea_Startup` and becomes the static structure used by `BP_AET_Portal_A01`. The base portal is universal rather than race-specific; race or faction portal variants should inherit this gameplay scale and use visual skins or alternate meshes on top of the shared portal logic.
 
@@ -56,8 +56,8 @@ Final universal portal target:
 
 - Minimum clear traversal height: 1000 cm / 10 m / about 33 ft.
 - Recommended total height: 1200-1400 cm.
-- Recommended total width: 900-1100 cm.
-- Recommended depth: 220-320 cm.
+- Recommended total width: 1200-1400 cm.
+- Recommended depth: 280-360 cm.
 - Recommended portal aperture: about 650-800 cm wide x 1000 cm tall.
 - Pivot: bottom center between both columns.
 - Unreal scale: 1 Unreal unit = 1 cm.
@@ -66,13 +66,14 @@ Final universal portal target:
 
 Current imported startup mesh note:
 
-- The current first-pass import was built to the older 420 cm x 360 cm x 90 cm target with a 190 cm x 300 cm aperture.
-- Treat the current imported mesh as a startup validation/review placeholder only.
-- Rebuild or rescale the final arch before visual signoff.
+- The current first-pass 10 m rebuild is approximately 1360 cm wide x 1270 cm tall x 340 cm deep.
+- Clear aperture is approximately 788 cm wide by 1000 cm high, with the portal core centered at Z 500 cm.
+- The import is valid for startup-scale review and production planning.
+- Treat the mesh as first-pass generated geometry; final sculpt/retopo/UVs/textures, tangent cleanup, and Flamestrike visual approval remain required before final art signoff.
 
 ## Materials And Color Palette
 
-Material slot target: 2 material slots.
+Material slot target: 2-3 material slots.
 
 Materials:
 
@@ -163,7 +164,8 @@ Recommended:
 
 Material slots:
 
-- Target: 2.
+- Target: 2 for final atlas efficiency.
+- Current 10 m review import: 3, split across stone, dark iron, and Aetherium.
 - Maximum: 3 only if portal inserts require a separate emissive material.
 
 ## LOD Plan
@@ -198,7 +200,7 @@ Use simple collision primitives:
 - Left column box.
 - Right column box.
 - Capstone box.
-- Optional base boxes.
+- Left and right base boxes.
 
 Keep the portal opening walkable unless gameplay requires blocking.
 
@@ -207,7 +209,8 @@ Recommended collision names:
 - `UCX_SM_AET_PortalArch_A01_00`: left column.
 - `UCX_SM_AET_PortalArch_A01_01`: right column.
 - `UCX_SM_AET_PortalArch_A01_02`: capstone.
-- `UCX_SM_AET_PortalArch_A01_03`: base stones.
+- `UCX_SM_AET_PortalArch_A01_03`: left base stone.
+- `UCX_SM_AET_PortalArch_A01_04`: right base stone.
 
 Do not use complex-as-simple for runtime collision.
 
@@ -231,8 +234,12 @@ Animation and effects belong in `BP_AET_Portal_A01`:
 - Collision: imported UCX or generated simple boxes.
 - Nanite: optional later; off for first bootstrap validation unless explicitly tested.
 - LODs: import LOD0-LOD3 or generate and inspect manually.
-- Place in `L_Aerathea_Startup` near current blockout portal location: roughly `X=350, Y=0`.
-- Current startup placement may need repositioning or a dedicated review area after the 10 m scale rebuild.
+- Current build script: `Tools/DCC/build_portal_arch.py`.
+- Current import script: `Tools/Unreal/import_portal_10m.py`.
+- Focused validator: `Tools/Unreal/validate_portal_10m_scale.py`.
+- Startup validator: `Tools/Unreal/validate_startup_scene.py`.
+- Place in `L_Aerathea_Startup` through `BP_AET_Portal_A01` / `AET_PROD_Portal_A01`.
+- Current startup placement is validated for scale/composition; final visual approval still needs a focused live review capture before final signoff.
 
 ## Folder And Naming Recommendation
 
@@ -245,8 +252,8 @@ Unreal content:
 
 External source, if used later:
 
-- `SourceAssets/Blender/Props/Portal/SM_AET_PortalArch_A01.blend`
-- `SourceAssets/Exports/Props/Portal/SM_AET_PortalArch_A01.fbx`
+- `SourceAssets/Blender/Props/Portal/SM_AET_PortalArch_A01/SM_AET_PortalArch_A01.blend`
+- `SourceAssets/Exports/Props/Portal/SM_AET_PortalArch_A01/SM_AET_PortalArch_A01.fbx`
 
 ## Quality Gate Checklist
 
@@ -264,5 +271,7 @@ External source, if used later:
 - Material slots no more than 3.
 - Pivot is bottom center.
 - Imports at correct scale.
+- `Tools/Unreal/validate_portal_10m_scale.py` passes.
+- `Tools/Unreal/validate_startup_scene.py` passes.
 - Works as the static arch for `BP_AET_Portal_A01`.
 - GUI map check remains `0 Error(s), 0 Warning(s)`.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Aerathea Docs Index"
+  short_description: "Maintain production docs and indexes."
+  default_prompt: "Use this skill to update Aerathea ASSET_INDEX, PRODUCTION_BACKLOG, BUILD_IMPORT_STATUS, PRODUCTION_BOOTSTRAP, approval queues, and package docs after validated work."

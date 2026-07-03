@@ -2,9 +2,20 @@
 
 ## Art Direction Summary
 
-`MI_INF_BrandGlowStates_A01` defines the final-art material-state direction for Infernal body brands, lit sigils, ritual scars, sorcerer glow accents, and Balgoroth cult markings. It is shared by `SK_INF_Base_A01`, `SK_INF_Lesser_A01`, and `KIT_INF_BalgorothCult_A01`.
+`MI_INF_BrandGlowStates_A01` defines the final-art material-state direction for Infernal body brands, lit sigils, ritual scars, sorcerer glow accents, and Balgoroth cult markings. It is shared by `SK_INF_Base_A01`, `SK_INF_Lesser_A01`, the four starter class packages, and `KIT_INF_BalgorothCult_A01`.
 
 The material must feel predatory and ritualized without turning the Infernals into constantly glowing demons. Glow is a state language: chosen, culling temper, regeneration, trial active, accepted, rejected, or sorcerer focus.
+
+## Implementation Status
+
+First-pass Unreal material-state authoring is complete. This pass creates stable shared assets for the approved states and validates that Mage, Warrior, Rogue, and Hunter meshes expose the sockets needed to drive brand/eye/class glow.
+
+- Master material: `/Game/Aerathea/Materials/Infernals/M_INF_BrandGlow_Master_A01`
+- Material function placeholder: `/Game/Aerathea/Materials/Infernals/MF_INF_BrandGlowStates_A01`
+- State instances: `MI_INF_BrandGlowStates_A01_Inactive`, `MI_INF_BrandGlowStates_A01_Smolder`, `MI_INF_BrandGlowStates_A01_TrialActive`, `MI_INF_BrandGlowStates_A01_Accepted`, `MI_INF_BrandGlowStates_A01_Rejected`, `MI_INF_BrandGlowStates_A01_SorcererFocus`
+- Build/import status: `docs/assets/materials/MI_INF_BrandGlowStates_A01/BUILD_IMPORT_STATUS.md`
+- Focused validation: 1 master material, 1 material function, 6 material instances, and 4 class mesh socket contracts passed.
+- Startup validation: 206 assets, 54 expected actors, 25 ground tiles.
 
 ## Gameplay Purpose
 

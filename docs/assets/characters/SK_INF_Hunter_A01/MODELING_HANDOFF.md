@@ -18,7 +18,7 @@ Create the DCC source and pursuit/tracking gear for the Infernal Hunter overlay 
 - Type: Skeletal Mesh class outfit.
 - Fit targets: Standard and Greater Infernal body bands.
 - Unreal path: `/Game/Aerathea/Characters/Infernals/Hunter/`
-- DCC state: not started.
+- DCC state: first-pass Blender source, FBX export, Unreal skeletal import, material instances, LOD0-LOD3, sockets, physics asset, ABP placeholder, startup actor, focused validation, and startup validation complete. Final sculpt/retopo/UVs/textures/animation remain pending.
 
 ## Modeling Constraints
 
@@ -66,14 +66,51 @@ Create the DCC source and pursuit/tracking gear for the Infernal Hunter overlay 
 
 - Blender source: `SourceAssets/Blender/Characters/Infernals/Hunter/SK_INF_Hunter_A01/SK_INF_Hunter_A01.blend`
 - FBX export: `SourceAssets/Exports/Characters/Infernals/Hunter/SK_INF_Hunter_A01/SK_INF_Hunter_A01.fbx`
+- DCC proof render: `Saved/Automation/InfernalHunterReview/SK_INF_Hunter_A01_DCCReview.png`
 - Unreal mesh: `/Game/Aerathea/Characters/Infernals/Hunter/SK_INF_Hunter_A01`
+- Shared skeleton: `/Game/Aerathea/Characters/Infernals/Base/SK_INF_Base_Tall_A01_Skeleton`
+- Physics asset: `/Game/Aerathea/Characters/Infernals/Hunter/PHYS_INF_Hunter_A01`
+- Animation Blueprint: `/Game/Aerathea/Characters/Infernals/Hunter/ABP_INF_Hunter_A01`
+- Startup actor: `AET_PROD_INF_Hunter_A01`
+
+## Validated Runtime Sockets
+
+- `hand_l_claw`
+- `hand_r_claw`
+- `hand_l_cast`
+- `hand_r_cast`
+- `vfx_hand_l`
+- `vfx_hand_r`
+- `vfx_eye_l`
+- `vfx_eye_r`
+- `vfx_brand_chest`
+- `vfx_brand_forearm_l`
+- `vfx_brand_forearm_r`
+- `vfx_wing_root_l`
+- `vfx_wing_root_r`
+- `wing_l_tip`
+- `wing_r_tip`
+- `tail_tip`
+- `vfx_tail_tip`
+- `vfx_regen_core`
+- `vfx_mouth`
+- `vfx_target_mark`
+- `vfx_brow_sight`
+- `vfx_pursuit_burst`
+- `pounce_trace`
+- `claw_takedown_trace`
+- `tail_balance_trace`
+- `tracking_center`
+- `wing_burst_trace`
 
 ## Unreal Validation
 
 - Imports at centimeter scale.
-- Binds to final Infernal base skeleton.
+- Binds to the tall Infernal base skeleton.
 - Tracking, pounce, wing burst, and tail-balance poses remain readable.
 - No modeled weapon dependency appears in the silhouette.
+- Focused validator passed: visible height 235.63 cm, bounds radius 174.84 cm, 27 sockets.
+- Startup validator passed: 198 assets, 54 expected actors, 25 ground tiles.
 
 ## Acceptance Checklist
 

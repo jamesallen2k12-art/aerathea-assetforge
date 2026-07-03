@@ -44,19 +44,19 @@ Symbols must be graphic and readable at MMO camera distance. Do not rely on read
 
 | Child asset | Type | Purpose | Status |
 | --- | --- | --- | --- |
-| `SM_INF_BalgorothSigil_A01` | Static Mesh | large wall/floor horned crown sigil | Package needed |
-| `SM_INF_CullingTrialFloor_A01` | Static Mesh modular floor | circular proving floor with claw channels | DCC/Unreal first-pass visual review accepted; final art and VFX states pending |
-| `SM_INF_HornWingArch_A01` | Static Mesh | tall arch scaled for 9' Infernals with folded wings | Production package and modeling handoff ready; DCC build not started |
-| `SM_INF_WorthinessAltar_A01` | Static Mesh or Blueprint | altar/platform for sacrifice judgment states | Package needed |
-| `SM_INF_AshBasin_A01` | Static Mesh/VFX hook | ash, ember, and regeneration ritual prop | Package needed |
-| `SM_INF_WitnessChains_A01` | Static Mesh | non-blocking witness/restraint dressing | Package needed |
-| `SM_INF_TrialBanner_A01` | Static Mesh/Skeletal optional | hanging black-red cult banner | Package needed |
-| `SM_INF_BrandingStone_A01` | Static Mesh | body-brand source prop and VFX anchor | Package needed |
-| `MI_INF_CultStone_Set_A01` | Material set | basalt, ash stone, scorched red stone | Package needed |
-| `MI_INF_BrandGlowStates_A01` | Material set | inactive, smolder, active, rejected states | Production package ready |
-| `VFX_INF_RegenerationBrand_A01` | VFX | restrained body/brand regen pulse | Package needed |
-| `VFX_INF_WorthinessJudgment_A01` | VFX | altar active/rejected/accepted pulse | Production package ready |
-| `BP_INF_RitualAltar_A01` | Blueprint Actor | altar state machine and VFX/audio hooks | Blocked until mesh/material set exists |
+| `SM_INF_BalgorothSigil_A01` | Static Mesh | large wall/floor horned crown sigil | Production package ready |
+| `SM_INF_CullingTrialFloor_A01` | Static Mesh modular floor | circular proving floor with claw channels | DCC/Unreal first-pass visual review accepted; WorthinessJudgment VFX socket contract validated; final art and expanded floor-state behavior pending |
+| `SM_INF_HornWingArch_A01` | Static Mesh | tall arch scaled for 9' Infernals with folded wings | First-pass DCC/Unreal review implementation complete and validated; final art, VFX states, and Blueprint behavior pending |
+| `SM_INF_WorthinessAltar_A01` | Static Mesh | altar/platform for sacrifice judgment states | First-pass DCC/Unreal review implementation complete and validated; bound into `BP_INF_RitualAltar_A01`; final art and tuned collision pending |
+| `SM_INF_AshBasin_A01` | Static Mesh/VFX hook | ash, ember, and regeneration ritual prop | Production package ready |
+| `SM_INF_WitnessChains_A01` | Static Mesh | non-blocking witness/restraint dressing | Production package ready |
+| `SM_INF_TrialBanner_A01` | Static Mesh/Skeletal optional | hanging black-red cult banner | Production package ready |
+| `SM_INF_BrandingStone_A01` | Static Mesh | body-brand source prop and VFX anchor | Production package ready |
+| `MI_INF_CultStone_Set_A01` | Material set | basalt, ash stone, scorched red stone | Production package ready |
+| `MI_INF_BrandGlowStates_A01` | Material set | inactive, smolder, trial active, accepted, rejected, sorcerer-focus states | First-pass Unreal material-state authoring complete and validated; final masks and gameplay binding pending |
+| `VFX_INF_RegenerationBrand_A01` | VFX | restrained body/brand regen pulse | Production package ready |
+| `VFX_INF_WorthinessJudgment_A01` | VFX | inactive, smolder, trial active, accepted, rejected, and judgment pulse ritual states | First-pass Unreal material/Niagara authoring complete and validated; assigned to `BP_INF_RitualAltar_A01`; bespoke graph polish pending |
+| `BP_INF_RitualAltar_A01` | Blueprint Actor | altar state machine and VFX/audio hooks | Native-backed first-pass Blueprint implementation complete, placed in startup, and validated; final quest/audio/UI/combat binding pending |
 
 ## Scale Notes
 
@@ -151,7 +151,10 @@ Material states:
 - Blueprints: `/Game/Aerathea/Blueprints/Infernals/`
 - Pivots: floor modules at center-bottom, arches at ground center, altars at interaction-facing center, banners at hanging point if animated.
 - Collision: simple collision authored or generated per child.
-- First DCC candidate: `SM_INF_CullingTrialFloor_A01`, because it validates symbols, material channels, scale, collision, and future ritual props in one controlled module.
+- Accepted first child: `SM_INF_CullingTrialFloor_A01`, because it validates symbols, material channels, scale, collision, and future ritual props in one controlled module.
+- Completed first cult prop DCC child after the culling floor: `SM_INF_HornWingArch_A01`; focused validation confirms `650.00h x 660.00w x 220.87d cm`, LOD0-LOD3, 5 material slots, 10 sockets, authored collision, startup actor placement, and startup validation.
+- Completed altar dependency: `SM_INF_WorthinessAltar_A01`; focused validation confirms `356.00h x 404.00w x 346.00d cm` after Blueprint wrapping, LOD0-LOD3, 5 material slots, 9 sockets, authored collision, startup actor placement snapped to the culling floor, and startup validation.
+- Completed Blueprint dependency: `BP_INF_RitualAltar_A01`; native class `AAETInfernalRitualAltarActor`, 9 components, 6 BrandGlow state materials, 6 WorthinessJudgment Niagara systems, focused Blueprint validation, mesh-level validation, and startup validation all pass.
 
 ## Folder And Naming Recommendation
 

@@ -8,6 +8,7 @@
 - Collage rule: one PNG can contain multiple buildable assets. Treat the source-file count as the floor, not the final asset count.
 - Build rule: concept images are source references only; each buildable item still needs an Aerathea production package before mesh, Blueprint, UI, material, or environment work.
 - Storage rule: source images remain in the desktop concept folder for now; do not copy all 547 files into Git until the project asset-storage policy is approved.
+- Visual canon rule: when Flamestrike approves a source image, cleaned reference, generated board selection, or selected variant, record it in `docs/assets/VISUAL_CANON_REGISTRY.md` before DCC or Unreal treats that look as locked.
 
 ## Collage Expansion Rule
 
@@ -24,6 +25,8 @@ For each source concept:
    - `Variant of existing package`
    - `Reference only`
    - `Rejected or retired by Flamestrike`
+   - `Visual canon candidate`
+   - `Approved visual canon`
 5. Only then create production packages, modeling handoffs, UI sheets, or Unreal implementation tasks.
 
 Use child IDs when a single image expands into many assets:
@@ -126,7 +129,7 @@ The Ogre addendum contains 31 source concepts added after the previous manifest 
 
 The current source folder adds 88 files after the 2026-06-26 Ogre pass: 63 Infernal/Balgoroth references, 21 Gnome-vs-Ogre encounter references, and 4 Gnome heavy Mek references. The Infernal set confirms adult body, Lesser lifecycle, sorcerer, lit-brand, gate-guard, clutch, and cult-space routing. The Gnome/Ogre set establishes a dedicated rivalry encounter package instead of treating these images as standalone Gnome or Ogre body references.
 
-All Infernal/Balgoroth references in this section route through `docs/assets/characters/INFERNAL_VISUAL_CLEANSE_STANDARD.md` before becoming modeling, prompt, VFX, or texture requirements.
+All Infernal/Balgoroth references in this section route through `docs/assets/characters/INFERNAL_VISUAL_CLEANSE_STANDARD.md` before becoming modeling, prompt, VFX, or texture requirements. On 2026-06-28, Flamestrike approved the Infernal starter class set with `SK_INF_Mage_A01` first, `SM_INF_HornWingArch_A01` as the first cult prop, `VFX_INF_AbyssalSpellcasting_A01`, and `SK_INF_Base_A01/ANIMATION_HANDOFF.md`. `SK_INF_Mage_A01`, `SK_INF_Warrior_A01`, `SK_INF_Rogue_A01`, `SK_INF_Hunter_A01`, `SM_INF_HornWingArch_A01`, and `VFX_INF_AbyssalSpellcasting_A01` now have validated first-pass DCC/Unreal or Unreal review implementations.
 
 | Source concept | Category | Faction/theme | Build interpretation |
 | --- | --- | --- | --- |
@@ -333,25 +336,25 @@ The initial live refresh recorded 91 source files not yet represented in the ful
 | `GnomemaleHeavyMek14.png` | Mek suit/mechanical companion | Gnome/Mekgineer | Heavy Mek variant; package needed |
 | `GnomemaleHeavyMek15.png` | Mek suit/mechanical companion | Gnome/Mekgineer | Heavy Mek variant; package needed |
 | `GnomemaleHeavyMek16.png` | Mek suit/mechanical companion | Gnome/Mekgineer | Heavy Mek variant; package needed |
-| `Iona.png` | Character/NPC/class | Gnome/Mekgineer | Visual intake complete in `KIT_GNM_IonaSiegebreaker_A01`; named gnome hero-pilot, heavy Mek, arc cannon, and encounter child items proposed |
+| `Iona.png` | Character/NPC/class | Gnome/Mekgineer | Visual intake complete in `KIT_GNM_IonaSiegebreaker_A01`; first approved child `SK_GNM_IonaSiegebreakerMek_A01` has a validated first-pass DCC/Unreal review implementation |
 | `Kittehbee.jpg` | Creature/mount | Aerathea/Common | Non-PNG creature/pet source; visually inspect before deciding whether to accept, retire, or package |
 
 ## Visual Intake Completion 2026-06-25
 
 | Source group | Intake result | Package location | Approval state |
 | --- | --- | --- | --- |
-| Abyss/Anathema source set | 45 source concepts classified into rank troops, elite demons, casters, hounds, siege threats, lords, and Anathema siege-drake variants | `docs/assets/kits/KIT_ABY_ShadowFlame_A01/CHILD_ASSET_INTAKE.md` | First ten child packages are proposed only; DCC build approval pending |
+| Abyss/Anathema source set | 45 source concepts classified into rank troops, elite demons, casters, hounds, siege threats, lords, and Anathema siege-drake variants | `docs/assets/kits/KIT_ABY_ShadowFlame_A01/CHILD_ASSET_INTAKE.md` | First child `SK_ABY_BlackPikeTrooper_A01` approved and validated as a first-pass DCC/Unreal review implementation; remaining child packages are proposed until selected |
 | Generated Abyss lore images | 10 generated lore images compared against live source concepts; retained as named elite/boss mood references | `docs/assets/kits/KIT_ABY_ShadowFlame_A01/SOURCE_COMPARISON.md` | Reference only until individual entity approval |
 | `Gnome Mek fighting Demon.png` | Routed as cross-faction encounter reference for Gnome heavy Mek versus winged Abyss demon | `docs/assets/kits/KIT_GNM_IonaSiegebreaker_A01/CHILD_ASSET_INTAKE.md` | Reference only |
-| `Iona.png` | Classified as named Gnome/Mekgineer hero-pilot plus heavy Mek and arc cannon encounter kit | `docs/assets/kits/KIT_GNM_IonaSiegebreaker_A01/PRODUCTION_PACKAGE.md` | Concept direction proposed; DCC build approval pending |
+| `Iona.png` | Classified as named Gnome/Mekgineer hero-pilot plus heavy Mek and arc cannon encounter kit | `docs/assets/kits/KIT_GNM_IonaSiegebreaker_A01/PRODUCTION_PACKAGE.md` | First child approved as `SK_GNM_IonaSiegebreakerMek_A01`; first-pass DCC/Unreal review implementation validated |
 
 ## Live Refresh Delta 2026-06-25 - Giant And Blood Axe Addendum
 
-A same-day follow-up scan found 48 additional Giant, Blood Axe Tribe, and named Giant source concepts. A visual contact sheet and the late-added `BloodAxeArmory.png` collage were reviewed before classification. Source-level intake is recorded in `docs/assets/intake/ACIQ-P02_01_GIANT_BLOODAXE_SLATE.md`; `SK_GIA_Base_A01` now has a production package and modeling handoff, while Blood Axe armory, warband, camp, ritual-stone, and Giant environment children still need expansion before DCC or Unreal work.
+A same-day follow-up scan found 48 additional Giant, Blood Axe Tribe, and named Giant source concepts. A visual contact sheet and the late-added `BloodAxeArmory.png` collage were reviewed before classification. Source-level intake is recorded in `docs/assets/intake/ACIQ-P02_01_GIANT_BLOODAXE_SLATE.md`; `SK_GIA_Base_A01` now has a production package, modeling handoff, rebuild/rescale plan, regenerated DCC/FBX exports, and validated Unreal first-pass scale import. Blood Axe armory, warband, camp, ritual-stone, and Giant environment children still need expansion before their own DCC or Unreal work.
 
 | Source concept | Category | Faction/theme | Build interpretation |
 | --- | --- | --- | --- |
-| `Blood Axe Fist Hunting Party.png` | Character/NPC/class | Blood Axe Tribe | Blood Axe hunting warband reference; route through `KIT_GIA_BloodAxeWarband_A01` after Giant body/scale anchor |
+| `Blood Axe Fist Hunting Party.png` | Character/NPC/class | Blood Axe Tribe | Blood Axe hunting warband reference; route through `KIT_GIA_BloodAxeWarband_A01` after validated Giant base scale |
 | `BloodAxe Village.png` | Building/settlement/environment | Blood Axe Tribe | Blood Axe camp/village kit source with red banners, bone markers, and rough highland structures |
 | `BloodAxeArmory.png` | Armory/weapons/gear | Blood Axe Tribe | Collage-heavy Blood Axe armory and bowyer workshop source; route to `KIT_GIA_BloodAxeArmory_A01` before child packages |
 | `BloodAxeCamp.png` | Building/settlement/environment | Blood Axe Tribe | Blood Axe fortified camp board; route to `KIT_GIA_BloodAxeCamp_A01` |

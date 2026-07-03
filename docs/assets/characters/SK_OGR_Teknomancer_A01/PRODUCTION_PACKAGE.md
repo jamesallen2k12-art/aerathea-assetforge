@@ -13,6 +13,8 @@ Primary source references:
 - `/home/Flamestrike/Desktop/Aerathea/Aerathea Creative/ASSET CONCEPTS/Ogres10.png`
 - `/home/Flamestrike/Desktop/Aerathea/Aerathea Creative/ASSET CONCEPTS/Ogres11.png`
 
+Shared final-art fit source: `docs/assets/kits/KIT_GNM_OGR_RivalryEncounter_A01/OGRE_SHARED_RIG_FINAL_ART_FIT_PLAN.md`. This class remains bound to `/Game/Aerathea/Characters/Ogres/Base/SK_OGR_Base_Male_A01_Skeleton` and should be the first class overlay fit after the final Ogre base body.
+
 ## Gameplay Purpose
 
 `SK_OGR_Teknomancer_A01` is the first Ogre class body package after `SK_OGR_Base_A01`. It supports player/NPC Teknomancer identity, elite enemy units, forge masters, siege engineers, and Gnome Mek rivalry encounters. Gameplay should read as brutal magic-tech pressure: cannon bracing, powered hammer strikes, overload casts, reactor venting, battlefield repairs, and anti-Mek disruption.
@@ -130,6 +132,7 @@ Create an original stylized fantasy MMORPG concept image of `SK_OGR_Teknomancer_
 ## Quality Gate Checklist
 
 - Reads as an Ogre, not a tall human or a gnome-style engineer.
+- Final art follows the Ogre shared rig fit plan and remains bound to the validated male Ogre skeleton.
 - Scale remains below Giants and above Minotaurs.
 - Teknomancy reads crude, oversized, dangerous, and instinctive.
 - Core silhouette is readable at MMO camera distance.

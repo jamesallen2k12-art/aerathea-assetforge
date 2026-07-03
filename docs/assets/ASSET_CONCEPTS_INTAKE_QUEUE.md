@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This queue schedules category-level intake for the 459 source concept files listed in `docs/assets/ASSET_CONCEPTS_MANIFEST.md`: 458 PNG files and 1 JPG file. It does not replace the manifest, production backlog, or asset index. Its job is to define the order, batching rules, expected batch artifacts, and collage-expansion rules before more production packages are created.
+This queue schedules category-level intake for the 547 source concept files listed in `docs/assets/ASSET_CONCEPTS_MANIFEST.md`: 546 PNG files and 1 JPG file. It does not replace the manifest, production backlog, or asset index. Its job is to define the order, batching rules, expected batch artifacts, and collage-expansion rules before more production packages are created.
 
 Source concepts remain in `/home/Flamestrike/Desktop/Aerathea/Aerathea Creative/ASSET CONCEPTS`. A source file is not complete until it has been visually inspected, expanded into child items when needed, and assigned a package, variant, reference-only, covered, or retired status.
 
@@ -14,6 +14,7 @@ Source concepts remain in `/home/Flamestrike/Desktop/Aerathea/Aerathea Creative/
 - Keep building shell kits ahead of interior kits when an interior depends on the same architectural language.
 - Use cross-category faction passes for Anubisath/Sutekh and Valar so their visual systems stay coherent across characters, armory, structures, interiors, and UI.
 - Do not turn any source concept or collage child directly into a mesh, Blueprint, UI icon, or material without the Aerathea production pipeline.
+- When a source image or generated variant is chosen for the final look, record it in `docs/assets/VISUAL_CANON_REGISTRY.md` before DCC or Unreal implementation proceeds.
 
 ## Batch Size And Method
 
@@ -25,6 +26,7 @@ Use small, reviewable batches rather than one broad manifest pass.
 | Category intake slice | 3-8 source PNGs | Group related sources by category, faction/theme, and production dependency | Category intake brief, usually `docs/assets/intake/<BatchID>_<Category>_INTAKE.md` when intake artifacts are created |
 | Faction/theme vertical slice | 6-15 source PNGs | Pull matching sources across armory, race/NPC, building, interior, UI, and world-reference categories | Faction intake slate, usually `docs/assets/intake/<BatchID>_<Faction>_SLATE.md` when intake artifacts are created |
 | Variant family | 5-12 source PNGs | Compare variants, pick base silhouette/material rules, then classify child variants | Family package plus variant matrix |
+| Visual-canon concept board | 8-12 generated or curated variants | Use approved source concepts as guidance, create a selection board, then stop for Flamestrike choices | Canon slate under `docs/assets/visual_canon/` plus registry entry after approval |
 | Pipeline/reference pass | 3-6 source PNGs | Classify as project rule, style anchor, production checklist, or reference-only source | Rule/reference classification brief |
 
 Batch IDs should use `ACIQ-P##_NN`, where `P##` matches the priority row below and `NN` is the local batch number. Example: `ACIQ-P01_01_MKG_ARMORY_CHILDREN`.

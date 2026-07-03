@@ -17,7 +17,7 @@ Create the DCC source and close-fit stealth gear for the Infernal Rogue overlay 
 - Type: Skeletal Mesh class outfit.
 - Fit targets: Compact and Standard Infernal body bands.
 - Unreal path: `/Game/Aerathea/Characters/Infernals/Rogue/`
-- DCC state: not started.
+- DCC state: first-pass DCC/Unreal review implementation complete on the compact Infernal skeleton; final sculpt, retopo, UVs, textures, tuned physics, and animation remain pending.
 
 ## Modeling Constraints
 
@@ -39,6 +39,8 @@ Create the DCC source and close-fit stealth gear for the Infernal Rogue overlay 
 4. Add socket markers for claw rake, pounce, invisible sight, tail balance, and ambush mark.
 5. Build LOD0-LOD3.
 6. Export skeletal FBX.
+
+Current first-pass source is available at `SourceAssets/Blender/Characters/Infernals/Rogue/SK_INF_Rogue_A01/SK_INF_Rogue_A01.blend`; final art should preserve the validated compact skeleton binding and stealth socket layout unless animation review requires a targeted change.
 
 ## Triangle Budget
 
@@ -70,9 +72,10 @@ Create the DCC source and close-fit stealth gear for the Infernal Rogue overlay 
 ## Unreal Validation
 
 - Imports at centimeter scale.
-- Binds to final Infernal base skeleton.
+- Binds to `/Game/Aerathea/Characters/Infernals/Base/SK_INF_Base_Compact_A01_Skeleton`.
 - Crouch, stalk, pounce, rake, and tail-balance poses do not clip badly.
 - Folded wings remain readable at review distance.
+- Focused validator passed with visible height 176.06 cm, bounds radius 133.74 cm, and 25 sockets.
 
 ## Acceptance Checklist
 

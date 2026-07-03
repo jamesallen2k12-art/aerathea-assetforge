@@ -22,15 +22,15 @@ Reference read notes:
 
 - Asset type: Static Mesh
 - Unreal path: `/Game/Aerathea/Props/Portal/SM_AET_PortalArch_A01`
-- Source file target: `SourceAssets/Blender/Props/Portal/SM_AET_PortalArch_A01.blend`
-- FBX export target: `SourceAssets/Exports/Props/Portal/SM_AET_PortalArch_A01.fbx`
-- Final target dimensions: 900-1100 cm wide, 1200-1400 cm tall, 220-320 cm deep
+- Source file target: `SourceAssets/Blender/Props/Portal/SM_AET_PortalArch_A01/SM_AET_PortalArch_A01.blend`
+- FBX export target: `SourceAssets/Exports/Props/Portal/SM_AET_PortalArch_A01/SM_AET_PortalArch_A01.fbx`
+- Final target dimensions: 1200-1400 cm wide, 1200-1400 cm tall, 280-360 cm deep
 - Minimum clear traversal height: 1000 cm / 10 m / about 33 ft
 - Portal aperture: about 650-800 cm wide by 1000 cm tall
 - Pivot: bottom center between both columns, at ground contact
 - Forward axis: portal faces +X unless level convention changes
 - Material slot target: 2, maximum 3 only if Aetherium needs separate emissive handling
-- Current imported startup mesh was built to the older 360 cm x 420 cm x 90 cm target; treat it as review-only and rebuild or rescale before final signoff.
+- Current imported startup mesh is a first-pass 10 m rebuild, approximately 1360 cm wide x 1270 cm tall x 340 cm deep, with an approximately 788 cm wide x 1000 cm high clear aperture. Treat it as scale/composition validated but not final-art complete.
 
 ## Modeling Constraints
 
@@ -70,7 +70,7 @@ Reference read notes:
 
 ## Modeling Sequence
 
-1. Block out the full 900-1100 cm x 1200-1400 cm x 220-320 cm bounding form with two columns, stepped base stones, capstone, and the inner aperture.
+1. Block out the full 1200-1400 cm x 1200-1400 cm x 280-360 cm bounding form with two columns, stepped base stones, capstone, and the inner aperture.
 2. Cut the aperture to the 650-800 cm wide x 1000 cm tall target and check that a 1000 cm clearance marker can pass through it.
 3. Build the main stone blocks as large separated masses with bevels that read in silhouette.
 4. Add the inner arch ring and Aetherium channel blocks. Keep the channel pieces large enough to read at distance.
@@ -131,7 +131,8 @@ Use simple UCX primitives:
 - `UCX_SM_AET_PortalArch_A01_00`: left column
 - `UCX_SM_AET_PortalArch_A01_01`: right column
 - `UCX_SM_AET_PortalArch_A01_02`: capstone
-- `UCX_SM_AET_PortalArch_A01_03`: base stones
+- `UCX_SM_AET_PortalArch_A01_03`: left base stone
+- `UCX_SM_AET_PortalArch_A01_04`: right base stone
 
 Collision rules:
 
@@ -142,10 +143,10 @@ Collision rules:
 
 ## Export Targets
 
-- Blender: `SourceAssets/Blender/Props/Portal/SM_AET_PortalArch_A01.blend`
-- FBX: `SourceAssets/Exports/Props/Portal/SM_AET_PortalArch_A01.fbx`
+- Blender: `SourceAssets/Blender/Props/Portal/SM_AET_PortalArch_A01/SM_AET_PortalArch_A01.blend`
+- FBX: `SourceAssets/Exports/Props/Portal/SM_AET_PortalArch_A01/SM_AET_PortalArch_A01.fbx`
 - Export contents: LOD0-LOD3, UCX collision, material slots, applied transforms
-- FBX scale: centimeters to Unreal, final import result should match the 900-1100 cm x 1200-1400 cm x 220-320 cm target envelope with a 1000 cm clear traversal aperture
+- FBX scale: centimeters to Unreal, final import result should match the 1200-1400 cm x 1200-1400 cm x 280-360 cm target envelope with a 1000 cm clear traversal aperture
 - Mesh name in FBX: `SM_AET_PortalArch_A01`
 
 ## Unreal Validation
@@ -158,6 +159,8 @@ Collision rules:
 - UCX collision imports as simple boxes and does not block the portal opening.
 - Nanite remains off for first bootstrap validation unless explicitly tested later.
 - Placement in `L_Aerathea_Startup` near the current portal blockout reads clearly at settlement distance.
+- Focused validation command: `Tools/Unreal/validate_portal_10m_scale.py`.
+- Startup validation command: `Tools/Unreal/validate_startup_scene.py`.
 
 ## Acceptance Checklist
 

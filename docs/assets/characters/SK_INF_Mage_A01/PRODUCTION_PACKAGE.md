@@ -9,11 +9,31 @@
 - Theme: Balgoroth-chosen Infernal mage, abyssal brand-channeler, natural-weapon sorcerer
 - Primary source references: `InfernalMaleSorcererLit.png`, `InfernalMaleSorcerer2.png`, `InfernalMaleSorcerer3.png`, `InfernalFemaleLit3.png`, `SK_INF_Base_A01`, `MI_INF_BrandGlowStates_A01`
 - Review references: `docs/assets/characters/reviews/INFERNAL_ADULT_A03_BATCH_REVIEW.png`, `docs/assets/characters/reviews/INFERNAL_MALE_SORCERER_LIT_A03_REVIEW_SHEET.png`
-- Current status: production package and modeling handoff ready; DCC build not started
+- Current status: approved by Flamestrike on 2026-06-28 as the first Infernal class DCC child; first-pass DCC/Unreal review implementation imported and validated
 
 `SK_INF_Mage_A01` defines the first adult Infernal class overlay. Infernal mages do not read as robed mortal scholars. They are predatory ritual casters who use their own bodies as the focus: horns, claws, wings, tail, eyes, brands, scar channels, and open hands. Armor, skull trophies, bone ornaments, obsidian plates, and ritual cloth are allowed, but mortal staffs, wands, and weapons should not become the primary silhouette. Combat spellcasting VFX are defined in `docs/assets/vfx/VFX_INF_AbyssalSpellcasting_A01/PRODUCTION_PACKAGE.md`.
 
 All source imagery must pass through `docs/assets/characters/INFERNAL_VISUAL_CLEANSE_STANDARD.md`. Use A03-style cleanup as the default: preserve skulls, fire, lightning-like abyssal energy, glowing eyes, anger, and menace while removing artifact speckle, tiny repeated rivets, broken micro-chains, malformed micro-spikes, and noisy ground/sigil clutter.
+
+## First-Pass Build Status
+
+The approved first-pass review lane is complete. This pass establishes the Standard-band Mage class read at `213.49 cm` visible height including horns, the no-weapon casting silhouette, skull/bone belt mass, obsidian chest plate, ritual cloth panels, folded/half-spread wing mantle, tail line, hand/brand glow markers, shared tall Infernal skeleton binding, generated LOD0-LOD3, physics assignment, placeholder animation Blueprint, and startup-scene placement.
+
+Generated and imported review files:
+
+- Blender source: `SourceAssets/Blender/Characters/Infernals/Mage/SK_INF_Mage_A01/SK_INF_Mage_A01.blend`
+- FBX export: `SourceAssets/Exports/Characters/Infernals/Mage/SK_INF_Mage_A01/SK_INF_Mage_A01.fbx`
+- DCC proof render: `Saved/Automation/InfernalMageReview/SK_INF_Mage_A01_DCCReview.png`
+- Unreal skeletal mesh: `/Game/Aerathea/Characters/Infernals/Mage/SK_INF_Mage_A01`
+- Shared skeleton: `/Game/Aerathea/Characters/Infernals/Base/SK_INF_Base_Tall_A01_Skeleton`
+- Startup actor: `AET_PROD_INF_Mage_A01`
+
+Validation is passing:
+
+- Focused validator: visible height `213.49 cm`, bounds radius `183.37 cm`, `21` required sockets present.
+- Startup validator: `161 assets`, `50 expected actors`, `25 ground tiles`.
+
+This is not final art. Use it as the locked production foundation for final sculpt, retopo, UVs, authored textures, tuned physics, real animation, and socket-driven VFX.
 
 ## 2. Gameplay Purpose
 
@@ -94,6 +114,7 @@ Use `MI_INF_BrandGlowStates_A01` for inactive, smolder, trial active, accepted, 
 - Full equipped Standard/Greater character with base body: 42k-62k tris.
 - Exalted named leader variant may reach 65k tris if wing mantle, skull hierarchy, and ritual armor justify it.
 - Material slot target: 4-5 total for the fully equipped class variant.
+- First-pass review import uses seven blockout material families for readability: skin, horn/claw, wing, ritual cloth, obsidian armor, bone ornaments, and abyssal glow. Final art should consolidate toward the 4-5 slot target where practical.
 
 Geometry priority goes to horns, claws, wings, tail, major armor plates, skull belt, hand silhouettes, and readable wing mantle. Tiny rivets, speckles, micro-chains, small scratches, and small brand filigree must stay in maps or VFX.
 
@@ -185,8 +206,10 @@ Related follow-up assets:
 ## 15. Quality Gate Checklist
 
 - Reads as an Infernal mage, not a mortal wizard, true Abyss demon, or weapon user.
+- Approved first Infernal class child; DCC follows this package, its modeling handoff, `VFX_INF_AbyssalSpellcasting_A01`, and `SK_INF_Base_A01/ANIMATION_HANDOFF.md`.
 - Horns, wings, thick tail, black claws, red skin, and predatory posture remain clear.
 - Skull/bone villain hierarchy, flame, lightning-like energy, eye glow, and brand channels are preserved.
 - A03 cleanse standard is applied before using source images as production targets.
 - Major forms are real geometry; tiny rivets, speckles, micro-chains, minor scratches, and small brand lines stay in maps/VFX.
 - Triangle budget, material slots, texture maps, LOD plan, sockets, collision, animation notes, and Unreal paths are included.
+- First-pass DCC/Unreal review implementation is validated; final sculpt, retopo, UVs, authored textures, tuned physics, VFX hookup, and animation are still required before final visual approval.

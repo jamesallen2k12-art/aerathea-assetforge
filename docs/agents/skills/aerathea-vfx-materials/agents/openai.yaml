@@ -1,0 +1,4 @@
+interface:
+  display_name: "Aerathea VFX Materials"
+  short_description: "Author restrained VFX and materials."
+  default_prompt: "Use this skill to create Aerathea state materials, Niagara contracts, VFX validators, readability limits, and bloom-safe material plans."

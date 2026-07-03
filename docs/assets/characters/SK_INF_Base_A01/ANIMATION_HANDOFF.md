@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Define the first production animation rules for adult Infernals, Lesser Infernals, and class overlays such as `SK_INF_Mage_A01`. This handoff protects the race identity in motion: natural weapons, wings, tail, predatory intelligence, controlled rage, regeneration, and invisible sight must all read through animation, not only still images.
+Define the first production animation rules for adult Infernals, Lesser Infernals, and class overlays such as `SK_INF_Mage_A01`. This handoff protects the race identity in motion: natural weapons, wings, tail, predatory intelligence, controlled rage, regeneration, and invisible sight must all read through animation, not only still images. Flamestrike approved this animation direction for the Infernal starter lane on 2026-06-28.
 
 ## Source References
 

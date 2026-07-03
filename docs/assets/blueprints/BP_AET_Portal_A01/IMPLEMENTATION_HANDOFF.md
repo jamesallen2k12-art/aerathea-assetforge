@@ -15,8 +15,8 @@ Do not make travel, teleport, quest, inventory, progression, or unlock behavior 
 - `L_Aerathea_Startup` currently uses `AET_PROD_Portal_A01`, a placed `AAETPortalActor` review actor with imported arch and core visuals.
 - C++ behavior exists for portal active state, overlap focus, preview use request, cooldown return, destination validation, dynamic material parameters, debug logs, and server-authoritative use request gating.
 - Final Niagara/audio assets, destination registry, traversal rules, and tuned Blueprint child components remain pending.
-- The current arch mesh has Blender source and FBX export. Treat it as production-review source, not final art polish.
-- The current arch mesh uses older smaller scale assumptions. Final signoff requires several old, mysterious, awe-inspiring visual directions and a rebuilt or rescaled arch with a 10 m / about 33 ft clear traversal opening.
+- The current arch mesh has regenerated Blender source and FBX export for the 10 m universal scale target. Treat it as production-review source, not final art polish.
+- The current arch mesh is approximately 1360 cm wide x 1270 cm tall x 340 cm deep, with an approximately 788 cm wide x 1000 cm high clear aperture. Final signoff requires Flamestrike visual approval, final sculpt/retopo/UVs/textures, tangent cleanup, VFX/audio, and approved traversal behavior.
 
 ## Source References
 
@@ -55,7 +55,7 @@ Initial slice behavior:
 Before building the final Blueprint actor, confirm:
 
 - Static mesh exists at `/Game/Aerathea/Props/Portal/SM_AET_PortalArch_A01`.
-- Mesh scale matches the final package target: 1200-1400 cm high, 900-1100 cm wide, 220-320 cm deep.
+- Mesh scale matches the final package target: 1200-1400 cm high, 1200-1400 cm wide, 280-360 cm deep.
 - Pivot is bottom center at ground contact.
 - Forward axis faces +X unless the level convention changes.
 - Portal aperture is about 650-800 cm wide x 1000 cm tall, with 1000 cm / 10 m / about 33 ft clear traversal height.
@@ -65,7 +65,7 @@ Before building the final Blueprint actor, confirm:
 - Material slot count is 2 target, 3 maximum only if emissive inserts require it.
 - Arch materials are assigned and preserve chunky stone, dark iron, brass, and restrained Aetherium language.
 
-The mesh is imported and the startup validator passes. Final signoff still requires visual inspection, final materials/VFX/audio, LOD review, collision review, and approved traversal rules.
+The mesh is imported and both `Tools/Unreal/validate_portal_10m_scale.py` and `Tools/Unreal/validate_startup_scene.py` pass. Final signoff still requires visual inspection, final materials/VFX/audio, final-art LOD review, collision review, and approved traversal rules.
 
 ## Blueprint Components
 
@@ -75,8 +75,8 @@ Use these components in `BP_AET_Portal_A01`:
 | --- | --- | --- | --- |
 | `DefaultSceneRoot` | Scene Component | None | Actor origin at arch bottom center. |
 | `SM_PortalArch` | Static Mesh Component | `DefaultSceneRoot` | Assign `SM_AET_PortalArch_A01`; scale `1.0`; use imported collision. |
-| `SM_PortalCore` | Static Mesh Component or plane mesh | `DefaultSceneRoot` or `SM_PortalArch` | Center in aperture; about 650-800 cm wide x 1000 cm high; no collision; assign dynamic instance of `MI_AET_PortalCore_A01`. |
-| `InteractionVolume` | Box Component or Sphere Component | `DefaultSceneRoot` | Overlap pawn only; radius target 550 cm or box equivalent; height target 1100 cm. |
+| `SM_PortalCore` | Static Mesh Component or plane mesh | `DefaultSceneRoot` or `SM_PortalArch` | Current native setup: relative location `(0, -32, 500)`, relative scale `(7.4, 0.18, 10.0)`, no collision; assign dynamic instance of `MI_AET_PortalCore_A01`. |
+| `InteractionVolume` | Box Component or Sphere Component | `DefaultSceneRoot` | Current native setup: relative location `(0, -120, 520)`, box extent `(560, 260, 560)`, overlap pawn only. |
 | `VFX_PortalIdle` | Niagara Component | `DefaultSceneRoot` | Optional; disabled if Niagara dependency is missing; attach at portal center. |
 | `Audio_PortalHum` | Audio Component | `DefaultSceneRoot` | Optional; auto activate only when `bPortalActive` is true and audio cue exists. |
 | `PointLight_Aetherium` | Point Light Component | `DefaultSceneRoot` | Optional; disabled by default on low settings; low intensity only. |
@@ -221,10 +221,11 @@ Static mesh collision:
 
 - `SM_PortalArch` blocks world/static and pawn according to the imported simple collision.
 - Expected arch collision primitives:
-  - `UCX_SM_AET_PortalArch_A01_00`: left column
-  - `UCX_SM_AET_PortalArch_A01_01`: right column
-  - `UCX_SM_AET_PortalArch_A01_02`: capstone
-  - `UCX_SM_AET_PortalArch_A01_03`: base stones
+	  - `UCX_SM_AET_PortalArch_A01_00`: left column
+	  - `UCX_SM_AET_PortalArch_A01_01`: right column
+	  - `UCX_SM_AET_PortalArch_A01_02`: capstone
+	  - `UCX_SM_AET_PortalArch_A01_03`: left base stone
+	  - `UCX_SM_AET_PortalArch_A01_04`: right base stone
 - The portal opening should remain walkable unless gameplay later requires a blocking portal surface.
 
 Portal core collision:
@@ -261,7 +262,7 @@ Placement notes:
   - `AET_BOOT_PortalArch_*`
   - `AET_BOOT_PortalCore_Aetherium_A01`
 - Use the current portal blockout location as the placement reference.
-- Portal arch package notes a rough target of `X=350, Y=0`.
+- Current validated review actor is `AET_PROD_Portal_A01`.
 - Actor origin should sit at ground contact between the two columns.
 - Portal should face +X unless the level convention has changed.
 - Player should be able to stand inside the aperture without collision snagging.
@@ -316,7 +317,7 @@ PIE validation:
 Startup map validation:
 
 - `BP_AET_Portal_A01` replaces or wraps the portal blockout cleanly.
-- Existing startup scene composition remains readable from settlement distance or receives a dedicated review layout after the 10 m rebuild.
+- Existing startup scene composition remains readable from settlement distance or receives a dedicated review layout if final art framing requires it.
 - The portal reads as an old, mysterious, awe-inspiring world-scale landmark suitable for epic dungeons, raids, cities, Giants, major NPCs, and large enemies.
 - GUI map check reports `0 Error(s), 0 Warning(s)`.
 
@@ -334,7 +335,7 @@ Soft blockers for full visual polish:
 - `NS_AET_PortalIdle_A01` does not exist yet; use material-only core until VFX is approved.
 - Portal hum audio cue does not exist yet; keep audio component disabled.
 - Final Flamestrike approval is still pending for both first-pass concept references.
-- Arch sockets may be absent; use relative transforms for the slice and request sockets in the next mesh pass.
+- Final art normals/tangents may need cleanup after replacing the generated block/prism source.
 
 Future gameplay blockers:
 

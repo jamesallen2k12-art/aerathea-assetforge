@@ -23,6 +23,26 @@ For every race, creature, building, prop, interior, UI element, or environment a
 
 Never skip from concept directly to final asset. Concept art defines the look. Production specs make it playable.
 
+## GAME-READY ASSET PIPELINE
+
+The formal concept-art-to-game-ready workflow lives at `docs/assets/CONCEPT_ART_TO_GAME_READY_ASSET_PIPELINE.md`.
+
+Use its status vocabulary in all build reports:
+
+- `DCC source candidate` means a Blender or other DCC source exists for review.
+- `DCC game-ready candidate` means source, FBX, UV/texture/material plan, LODs, collision proxy, scale, and proof renders exist and the asset is ready for Unreal import testing.
+- `Fully game-ready` means the asset has been imported into Unreal, configured, placed in a gameplay or approved review map, validated for scale/materials/LODs/collision/performance, and approved for the asset library.
+
+Do not call an asset fully game-ready just because it resembles the concept. A single 2D concept image does not define complete 360-degree geometry; missing front, side, back, and top information must be inferred, documented, and approved before final visual lock.
+
+## VISUAL CANON RULE
+
+Use provided Aerathea concept art as the first source of visual truth. When a look is not locked, create grouped concept boards or variant sheets for Flamestrike approval before DCC, FBX, Unreal, material, or final visual work.
+
+Once Flamestrike approves a source image, generated image, cleaned concept, or selected variant, record it as visual canon in `docs/assets/VISUAL_CANON_REGISTRY.md`. Approved canon defines the silhouette, material language, color language, culture, mood, and cleanup requirements for later production packages, Blender work, texture work, and Unreal review captures.
+
+Do not treat procedural blockouts, failed captures, or first-pass DCC/Unreal review assets as visual canon. If an implementation does not match the approved canon image, revise the implementation instead of redefining the canon target.
+
 ## APPROVED VISUAL STYLE
 Aerathea uses a stylized fantasy MMORPG art style with:
 
@@ -73,52 +93,52 @@ Use:
 Use these as target ranges unless the user specifies otherwise:
 
 Small prop:
-- LOD0: 500–4k tris
+- LOD0: 500-4k tris
 - 1 material
-- 512–1K texture set
+- 512-1K texture set
 
 Large prop:
-- LOD0: 4k–10k tris
-- 1–2 materials
-- 1K–2K texture set
+- LOD0: 4k-10k tris
+- 1-2 materials
+- 1K-2K texture set
 
 Small character / gnome:
-- LOD0: 15k–25k tris
-- 2–3 materials
+- LOD0: 15k-25k tris
+- 2-3 materials
 - 2K texture set, 4K hero only
 
 Normal humanoid:
-- LOD0: 20k–35k tris
-- 2–3 materials
+- LOD0: 20k-35k tris
+- 2-3 materials
 - 2K texture set, 4K hero only
 
 Large creature:
-- LOD0: 25k–50k tris
-- 2–4 materials
-- 2K–4K texture set
+- LOD0: 25k-50k tris
+- 2-4 materials
+- 2K-4K texture set
 
 Large Mek / boss creature:
-- LOD0: 35k–70k tris
-- 3–5 materials
+- LOD0: 35k-70k tris
+- 3-5 materials
 - 4K hero only if justified
 
 Dragon / raid boss hero:
-- LOD0: 60k–100k tris
+- LOD0: 60k-100k tris
 - aggressive LODs required
 - avoid excessive material slots
 
 Small building:
-- LOD0: 12k–22k tris
-- 2–3 materials
+- LOD0: 12k-22k tris
+- 2-3 materials
 - modular where possible
 
 Medium building:
-- LOD0: 18k–35k tris
-- 2–4 materials
+- LOD0: 18k-35k tris
+- 2-4 materials
 
 Large building / town hall / fortress piece:
-- LOD0: 25k–45k tris
-- 3–5 materials
+- LOD0: 25k-45k tris
+- 3-5 materials
 - impostor/billboard for very far distance if needed
 
 ## LOD RULE
@@ -373,7 +393,7 @@ Before finalizing any response, check:
 If the answer is no, revise before final output.
 
 ## VISUAL REVIEW ORIENTATION RULE
-Before presenting any Unreal visual approval, compare the live Unreal view against the source concept or DCC proof image. Match orientation, camera pitch/yaw, framing, and production scale first. Use `Tools/Unreal/capture_startup_review_offscreen.sh` for automated startup captures; avoid visible `-game` capture windows unless the user explicitly asks, because they can capture the mouse. If orientation is uncertain, render the A/B/C/D/E marker pass with `AET_REVIEW_MARKERS=1 blender --background --python Tools/DCC/render_startup_review.py` and `AET_REVIEW_MARKERS=1 Tools/Unreal/capture_startup_review_offscreen.sh`, compare the marker order, then rerun a clean Unreal capture without markers before presenting. If the view shows an underside, side-on plane, frustum/proxy geometry, clipped structure, or a scale mismatch, the review is not ready to present.
+Before presenting any Unreal visual approval, compare the live Unreal view against the approved visual-canon concept image and the DCC proof image. Match orientation, camera pitch/yaw, framing, and production scale first. Use `Tools/Unreal/capture_startup_review_offscreen.sh` for automated startup captures; avoid visible `-game` capture windows unless the user explicitly asks, because they can capture the mouse. If orientation is uncertain, render the A/B/C/D/E marker pass with `AET_REVIEW_MARKERS=1 blender --background --python Tools/DCC/render_startup_review.py` and `AET_REVIEW_MARKERS=1 Tools/Unreal/capture_startup_review_offscreen.sh`, compare the marker order, then rerun a clean Unreal capture without markers before presenting. If the view shows an underside, side-on plane, frustum/proxy geometry, clipped structure, or a scale mismatch, the review is not ready to present.
 
 ## SPECIAL RULE FOR CODEX
 If the user asks for image generation, Codex should produce excellent image prompts, style sheets, specs, and checklists. Codex should not attempt to fake final fantasy art using Python drawing or crude procedural placeholders. Use procedural code only for folder creation, cropping, renaming, packaging, sprite sheets, or technical export after art is approved.
@@ -381,7 +401,7 @@ If the user asks for image generation, Codex should produce excellent image prom
 ## MASTER COMMAND STYLE
 When the user asks for a new asset, respond as if executing this command:
 
-“Create an Aerathea-ready asset package for [ASSET]. Follow the approved visual style, race/creature/building anchor, mid-poly MMO constraints, Unreal Engine implementation rules, and output the universal asset format.”
+"Create an Aerathea-ready asset package for [ASSET]. Follow the approved visual style, race/creature/building anchor, mid-poly MMO constraints, Unreal Engine implementation rules, and output the universal asset format."
 
 ## FINAL MOTTO
 Build the shape. Paint the detail. Protect the performance. Tell the story.

@@ -68,6 +68,6 @@ Core lore anchors from Flamestrike:
 
 1. `SK_OGR_Base_A01` for male/female scale, skeleton, sockets, and body proportions.
 2. `SK_OGR_Teknomancer_A01` and `KIT_OGR_Teknomancy_A01` because Teknomancy is the strongest unique cultural hook, and the `GnomevsOgre*.png` encounter set now gives strong scale/rivalry references.
-3. `SK_OGR_Warrior_A01`, `SK_OGR_Shaman_A01`, and `SK_OGR_Necromancer_A01` as class packages. The Shaman and Necromancer production packages are now ready; DCC builds are pending approval.
+3. `SK_OGR_Warrior_A01`, `SK_OGR_Shaman_A01`, and `SK_OGR_Necromancer_A01` as class packages. Warrior, Shaman, and Necromancer first-pass class imports exist; final-art fit follows `docs/assets/kits/KIT_GNM_OGR_RivalryEncounter_A01/OGRE_SHARED_RIG_FINAL_ART_FIT_PLAN.md`.
 4. `KIT_OGR_CairnFortifications_A01` for walls, gates, cairns, barracks, and fortress modules.
 5. `KIT_OGR_Necropolis_A01` and `KIT_OGR_SettlementInteriors_A01` after the base settlement language is approved.

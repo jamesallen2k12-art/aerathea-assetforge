@@ -1,0 +1,4 @@
+interface:
+  display_name: "Aerathea DCC Modeling Prep"
+  short_description: "Prepare Blender blockouts and exports."
+  default_prompt: "Use this skill to create Blender blockout scripts, source folders, FBX export plans, scale checks, proof renders, and DCC validation notes for Aerathea."

@@ -8,7 +8,7 @@
 - World: Aerathea
 - Theme: Balgoroth cult threshold, horned-wing ritual arch, Infernal gate marker
 - Primary source references: `Infernals Guarding a Gate.png`, `Infernals Guarding a Gate2.png`, `SM_INF_CullingTrialFloor_A01`, `KIT_INF_BalgorothCult_A01`
-- Current status: production package and modeling handoff ready; DCC build not started
+- Current status: approved by Flamestrike on 2026-06-28 as the first Infernal cult prop DCC child; first-pass DCC/Unreal review implementation complete and validated; final sculpt, UVs, authored textures, tuned collision, VFX states, and Blueprint behavior pending
 
 `SM_INF_HornWingArch_A01` is the first gate/threshold child for the Balgoroth cult kit. It should feel old, predatory, judgmental, and ceremonial: a tall black-basalt arch whose silhouette combines horned crown, split wings, hooked tail curves, claw grooves, obsidian insets, bone/horn ornaments, and ember-red brand channels. It is not a universal travel portal. It is an Infernal cult threshold used for dens, proving arenas, altar rooms, and guarded Balgoroth spaces.
 
@@ -35,6 +35,7 @@
 - Full arch height target: 520-650 cm.
 - Full arch width target: 430-560 cm.
 - Depth target: 120-220 cm, enough to feel massive without creating navigation problems.
+- First-pass implementation measures `650.00h x 660.00w x 220.87d cm` in Unreal bounds; the extra width comes from the readable split-wing/horn silhouette and remains within the focused validator envelope.
 - Step/rim height should stay under movement-snag thresholds unless authored as a deliberate blocker.
 - Pivots: center-bottom for standalone placement; optional snap points for floor/ring alignment.
 
@@ -128,6 +129,12 @@ Never reduce the opening, horn crown, split-wing silhouette, or readable Balgoro
 - Scale: centimeters, no import scaling.
 - Collision: authored UCX simple volumes or generated simple collision.
 - Material slot count: 4-5.
+- First-pass import creates five blockout parent materials under `/Game/Aerathea/Materials/Infernals/HornWingArch/` and assigns five material instances:
+  - `MI_INF_HornWingArch_A01_CultStone`
+  - `MI_INF_HornWingArch_A01_ScorchedStone`
+  - `MI_INF_HornWingArch_A01_ObsidianIron`
+  - `MI_INF_HornWingArch_A01_BoneHorn`
+  - `MI_INF_HornWingArch_A01_BrandGlow`
 - Suggested sockets:
   - `snap_floor`
   - `snap_altar`
@@ -156,9 +163,21 @@ Related follow-up assets:
 - `SM_INF_WitnessChains_A01`
 - `BP_INF_CultGate_A01`
 
+## Implementation Status - 2026-06-28
+
+- DCC source generated at `SourceAssets/Blender/Props/Infernals/BalgorothCult/SM_INF_HornWingArch_A01/SM_INF_HornWingArch_A01.blend`.
+- FBX export generated at `SourceAssets/Exports/Props/Infernals/BalgorothCult/SM_INF_HornWingArch_A01/SM_INF_HornWingArch_A01.fbx`.
+- DCC review proof generated at `Saved/Automation/InfernalHornWingArchReview/SM_INF_HornWingArch_A01_DCCReview.png`.
+- Unreal static mesh imported at `/Game/Aerathea/Props/Infernals/BalgorothCult/SM_INF_HornWingArch_A01`.
+- Import automation creates blockout materials, material instances, LOD0-LOD3, static mesh sockets, simple authored collision, and startup actor `AET_PROD_INF_HornWingArch_A01`.
+- Focused validation passes through `Tools/Unreal/validate_infernal_horn_wing_arch.py`: `650.00h x 660.00w x 220.87d cm`, bounds radius `476.15 cm`, and `10` required sockets.
+- Startup validation passes through `Tools/Unreal/validate_startup_scene.py`: `167 assets`, `51 expected actors`, and `25 ground tiles`.
+- This is a validated first-pass review foundation, not final art.
+
 ## 15. Quality Gate Checklist
 
 - Reads as a Balgoroth cult threshold, not a common arch or universal portal.
+- Approved first Infernal cult prop child; first-pass DCC/Unreal implementation follows this package, its modeling handoff, and the Balgoroth cult kit rules.
 - Clear opening supports 274 cm Infernals with horns, folded wings, and tail movement.
 - Horned crown, split wing, claw grooves, skull/bone hierarchy, and ember channels are readable.
 - Major forms are real geometry; tiny cracks, rivets, scratches, and micro-symbols stay in maps.

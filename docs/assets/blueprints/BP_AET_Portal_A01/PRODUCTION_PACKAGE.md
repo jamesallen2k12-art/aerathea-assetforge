@@ -6,7 +6,7 @@
 - Asset type: Blueprint Actor
 - World: Aerathea
 - Category: Interactive portal / traversal actor
-- Current status: Native preview behavior implemented in `AAETPortalActor`; Blueprint asset exists/reparented/compiled; startup validator passes; final traversal/VFX/audio still pending gameplay approval
+- Current status: Native preview behavior implemented in `AAETPortalActor`; Blueprint asset exists/reparented/compiled; 10 m portal core and interaction scale applied; focused portal validator and startup validator pass; final traversal/VFX/audio still pending gameplay approval
 - Required static mesh: `SM_AET_PortalArch_A01`
 
 This blueprint wraps the portal arch mesh, visual portal core, interaction area, and future traversal behavior. The base portal is universal and race-neutral; race or faction portal variants should reuse this gameplay logic and change only mesh, materials, VFX, audio, or dressing as needed.
@@ -59,8 +59,10 @@ Final universal portal target:
 
 Current startup review note:
 
-- The current imported arch and portal core use the older smaller first-pass scale.
-- Treat the current placement as a validation placeholder until the 10 m portal arch rebuild is complete.
+- The current imported arch and portal core use the 10 m universal first-pass rebuild.
+- Portal core relative location is `(0, -32, 500)` with relative scale `(7.4, 0.18, 10.0)`.
+- Interaction volume relative location is `(0, -120, 520)` with box extent `(560, 260, 560)`.
+- Treat the current placement as scale/composition validated; final visual approval, VFX/audio, and traversal signoff remain pending.
 
 ## Materials And Color Palette
 
@@ -203,9 +205,11 @@ Avoid skeletal animation for this actor.
 - Static mesh dependency: `/Game/Aerathea/Props/Portal/SM_AET_PortalArch_A01`
 - Material dependency: `/Game/Aerathea/Materials/Props/Portal/MI_AET_PortalCore_A01`
 - VFX dependency: future `/Game/Aerathea/VFX/Portal/NS_AET_PortalIdle_A01`
-- Place in `L_Aerathea_Startup` at current portal blockout location for the first pass; review and likely reposition after the 10 m arch rebuild.
+- Place in `L_Aerathea_Startup` at the validated `AET_PROD_Portal_A01` review actor location; review and likely reposition only if final art framing requires it.
 - Use construction script only for editor-safe setup, not gameplay authority.
 - Add clear editor category labels for exposed variables.
+- Focused validator: `Tools/Unreal/validate_portal_10m_scale.py`.
+- Startup validator: `Tools/Unreal/validate_startup_scene.py`.
 
 ## Folder And Naming Recommendation
 

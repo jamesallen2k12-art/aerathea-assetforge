@@ -4,7 +4,7 @@
 
 `KIT_INF_BalgorothCult_A01` defines the cult symbol, ritual-site, material, and VFX language for Infernals. Balgoroth worship should feel severe, predatory, hierarchical, and sacrificial without relying on gore. The visual language supports Infernal body brands, cult dens, ritual arenas, sacrifice platforms, bloodline trials, Lesser Infernal training spaces, and mage/rogue/hunter class details.
 
-The child asset split and first DCC target are tracked in `VISUAL_KIT_BREAKDOWN.md`. `SM_INF_CullingTrialFloor_A01` is the first accepted child package because it validates symbols, material states, collision, scale, and VFX channels before altar or Blueprint work. `SM_INF_HornWingArch_A01` is the next documented child package and covers guarded Infernal cult thresholds from the gate imagery.
+The child asset split and first DCC target are tracked in `VISUAL_KIT_BREAKDOWN.md`. `SM_INF_CullingTrialFloor_A01` is the first accepted child package because it validates symbols, material states, collision, scale, and VFX channels before altar or Blueprint work. Flamestrike approved `SM_INF_HornWingArch_A01` on 2026-06-28 as the first Infernal cult prop DCC child after the culling floor; its first-pass DCC/Unreal review implementation is now complete and validates guarded Infernal cult threshold scale, material slots, sockets, collision, LOD0-LOD3, and startup placement.
 
 ## Gameplay Purpose
 
