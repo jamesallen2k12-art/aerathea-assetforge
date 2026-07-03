@@ -18,6 +18,7 @@
 - DCC render root: `Saved/Automation/DCC/SM_GIA_BloodAxeCairnTarget_A1_A01/`
 - Concept comparison: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_ConceptGeometryCompare.png`
 - DCC target-layout proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_DCCProofTargetLayout.png`
+- Material/texture proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_MaterialTextureProof.png`
 - LOD0: 6196 tris
 - LOD1: 3264 tris
 - LOD2: 1376 tris
@@ -50,9 +51,19 @@
 - Regenerated the Blender source, FBX exports, LOD exports, DCC proof renders, target-layout proof, and concept comparison sheet.
 - Triangle budget moved from small-prop range into the approved large-prop range from the concept brief: LOD0 6196 tris, LOD1 3264, LOD2 1376, LOD3 1104.
 
+## First Material/Texture Integration Pass
+
+- Generated 1K Base Color, Normal, and packed ORM texture maps for Stone, Earth, Rawhide, and RedPaint.
+- Wired the generated BC/N/ORM maps into the Blender proof materials so the DCC renders now show texture integration rather than flat review colors.
+- Switched proof rendering to lit EEVEE with ambient occlusion, broad fill lighting, and stable gray review background.
+- Regenerated front, right, back, left, hero, turntable, concept-comparison, target-layout, and material/texture proof images.
+- Geometry and LOD counts are unchanged from the fourth geometry pass: LOD0 6196 tris, LOD1 3264, LOD2 1376, LOD3 1104.
+- Red paint remains a proof treatment for review; final stained/dry-brushed texture art should be refined only after concept-geometry approval.
+- Status remains `DCC source candidate pending concept-geometry review`.
+
 ## Gate
 
-The current proof must be evaluated against the A1 target image side by side. If the DCC candidate does not match the dominant A1 geometry, revise the DCC source before any Unreal import, texture polish, or batch expansion.
+The current proof must be evaluated against the A1 target image side by side. If the DCC candidate does not match the dominant A1 geometry, revise the DCC source before any Unreal import, final texture polish, or batch expansion.
 
 ## Required Outputs
 
@@ -62,6 +73,7 @@ The current proof must be evaluated against the A1 target image side by side. If
 - Broad UCX collision export: complete for source candidate
 - DCC front/right/back/left/hero proof renders: complete for source candidate
 - Concept-vs-DCC comparison sheet: complete for source candidate
+- Material/texture proof sheet: complete for source candidate
 
 ## Notes
 
@@ -85,14 +97,15 @@ What it captures:
 - Red marks now read more like worn applied pigment than the earlier raised bars.
 - Major secondary stones now use fractured silhouettes instead of clean beveled box silhouettes.
 - Review captures are fully framed and no longer clip the tall rear slab.
+- First-pass BC/N/ORM textures are now present and wired into the Blender proof materials.
 
 Remaining gaps before approval:
 
 - Stone silhouette is much closer, but still lacks the concept's hand-authored natural stone breakup and texture-level chipped erosion.
-- Red paint is readable, but still needs texture/material treatment to become stained/dry-brushed pigment instead of raised proof geometry.
+- Red paint is readable and now textured, but still needs final stained/dry-brushed material polish after geometry approval.
 - Rope bindings have round volume, but their contact and wrapping paths should be refined after geometry approval.
 - Ground rubble density is better, but the mound still needs a more natural dirt/stone blend around the footprint.
-- Current proof material is intentionally simple DCC review shading; final material work is still pending.
+- Current proof material is a first-pass DCC texture integration pass; final Unreal material instances and import validation are still pending.
 
 Decision: hold at `DCC source candidate pending concept-geometry review`; do not import to Unreal yet. This is not a `DCC game-ready candidate` and not `Fully game-ready`.
 

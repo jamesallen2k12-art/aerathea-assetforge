@@ -64,11 +64,17 @@ def save_texture(path: Path, width: int, height: int, pixels: array) -> None:
     bpy.data.images.remove(image)
 
 
-def generate_texture_set(label: str, base: tuple[float, float, float], accent: tuple[float, float, float], seed: int) -> dict[str, Path]:
+def generate_texture_set(
+    label: str,
+    base: tuple[float, float, float],
+    accent: tuple[float, float, float],
+    seed: int,
+    profile: str,
+) -> dict[str, Path]:
     texture_dir = TEXTURE_ROOT / REL_PATH
     ensure_dir(texture_dir)
-    width = 512
-    height = 512
+    width = 1024
+    height = 1024
     bc = array("f")
     normal = array("f")
     orm = array("f")
@@ -76,22 +82,55 @@ def generate_texture_set(label: str, base: tuple[float, float, float], accent: t
         for x in range(width):
             n1 = deterministic_noise(x, y, seed)
             n2 = deterministic_noise(x // 5, y // 5, seed + 17)
-            vein = 1.0 if deterministic_noise(x // 29, y // 23, seed + 41) > 0.94 else 0.0
-            chip = 1.0 if deterministic_noise(x // 13, y // 19, seed + 71) > 0.985 else 0.0
-            mix = ((n1 * 0.34) + (n2 * 0.24) + (vein * 0.07) + (chip * 0.05)) * 0.68
+            n3 = deterministic_noise(x // 19, y // 13, seed + 29)
+            vein = 1.0 if deterministic_noise(x // 31, y // 17, seed + 41) > 0.935 else 0.0
+            chip = 1.0 if deterministic_noise(x // 11, y // 17, seed + 71) > 0.982 else 0.0
+            streak = abs(math.sin(((x * 0.018) + (y * 0.006) + seed) % math.tau))
+            crack = 1.0 if deterministic_noise((x + y) // 23, (y - x) // 29, seed + 87) > 0.965 else 0.0
+            dust = deterministic_noise(x // 47, y // 43, seed + 119)
+            mix = ((n1 * 0.30) + (n2 * 0.22) + (n3 * 0.12) + (vein * 0.08) + (chip * 0.06)) * 0.66
             color = (
                 base[0] * (1.0 - mix) + accent[0] * mix,
                 base[1] * (1.0 - mix) + accent[1] * mix,
                 base[2] * (1.0 - mix) + accent[2] * mix,
             )
-            if chip:
-                color = (min(color[0] + 0.10, 1.0), min(color[1] + 0.085, 1.0), min(color[2] + 0.065, 1.0))
+
+            if profile == "stone":
+                shadow = 1.0 - (crack * 0.28) - (vein * 0.07)
+                warm_edge = chip * (0.09 + streak * 0.05)
+                color = (
+                    clamp(color[0] * shadow + warm_edge),
+                    clamp(color[1] * shadow + warm_edge * 0.90),
+                    clamp(color[2] * shadow + warm_edge * 0.70),
+                )
+            elif profile == "earth":
+                ash = 0.10 + dust * 0.16
+                wet = 1.0 - (n3 * 0.18)
+                color = (
+                    clamp(color[0] * wet + ash * 0.48),
+                    clamp(color[1] * wet + ash * 0.44),
+                    clamp(color[2] * wet + ash * 0.36),
+                )
+            elif profile == "rawhide":
+                fiber = 0.82 + streak * 0.20
+                grime = 1.0 - (crack * 0.18) - (n3 * 0.08)
+                color = (clamp(color[0] * fiber * grime), clamp(color[1] * fiber * grime), clamp(color[2] * fiber * grime))
+            elif profile == "red":
+                wear = 0.56 + (n2 * 0.24) - (chip * 0.20) - (crack * 0.22)
+                oxidized = (0.28 + n1 * 0.18, 0.030 + n2 * 0.035, 0.020 + n3 * 0.028)
+                color = (
+                    clamp((color[0] * wear) + oxidized[0] * (1.0 - wear)),
+                    clamp((color[1] * wear) + oxidized[1] * (1.0 - wear)),
+                    clamp((color[2] * wear) + oxidized[2] * (1.0 - wear)),
+                )
             bc.extend((clamp(color[0]), clamp(color[1]), clamp(color[2]), 1.0))
 
-            bump = ((n1 - 0.5) * 0.18) + ((n2 - 0.5) * 0.08)
+            bump_strength = 0.24 if profile == "stone" else 0.18 if profile == "earth" else 0.12
+            bump = ((n1 - 0.5) * bump_strength) + ((n2 - 0.5) * 0.08) - (crack * 0.08) + (chip * 0.05)
             normal.extend((clamp(0.5 + bump), clamp(0.5 + (deterministic_noise(x, y, seed + 101) - 0.5) * 0.12), 1.0, 1.0))
-            occlusion = 0.56 + (1.0 - n2) * 0.26
-            roughness = 0.84 + n1 * 0.12
+            occlusion = 0.50 + (1.0 - n2) * 0.28 - crack * 0.10
+            roughness_base = 0.92 if profile in {"stone", "earth", "red"} else 0.82
+            roughness = roughness_base + n1 * 0.07 + crack * 0.04
             orm.extend((clamp(occlusion), clamp(roughness), 0.0, 1.0))
 
     file_label = label.replace(" ", "")
@@ -108,10 +147,10 @@ def generate_texture_set(label: str, base: tuple[float, float, float], accent: t
 
 def generate_textures() -> dict[str, dict[str, Path]]:
     return {
-        "stone": generate_texture_set("Stone", (0.22, 0.215, 0.19), (0.58, 0.52, 0.42), 5103),
-        "earth": generate_texture_set("Earth", (0.18, 0.115, 0.07), (0.50, 0.32, 0.17), 6207),
-        "rawhide": generate_texture_set("Rawhide", (0.42, 0.23, 0.09), (0.78, 0.50, 0.22), 7301),
-        "red": generate_texture_set("RedPaint", (0.62, 0.055, 0.040), (1.0, 0.17, 0.07), 8409),
+        "stone": generate_texture_set("Stone", (0.36, 0.345, 0.295), (0.78, 0.70, 0.54), 5103, "stone"),
+        "earth": generate_texture_set("Earth", (0.25, 0.17, 0.105), (0.52, 0.38, 0.24), 6207, "earth"),
+        "rawhide": generate_texture_set("Rawhide", (0.48, 0.30, 0.13), (0.82, 0.54, 0.23), 7301, "rawhide"),
+        "red": generate_texture_set("RedPaint", (0.58, 0.055, 0.035), (0.98, 0.15, 0.075), 8409, "red"),
     }
 
 
@@ -127,6 +166,40 @@ def make_texture_material(name: str, textures: dict[str, Path], roughness: float
     material["Aerathea.TextureBC"] = str(textures["bc"].relative_to(ROOT))
     material["Aerathea.TextureN"] = str(textures["n"].relative_to(ROOT))
     material["Aerathea.TextureORM"] = str(textures["orm"].relative_to(ROOT))
+    material["Aerathea.MaterialPass"] = "dcc_texture_integration_proof"
+
+    def load_image_node(path: Path, label: str, color_space: str) -> bpy.types.Node:
+        image = bpy.data.images.load(str(path), check_existing=True)
+        try:
+            image.colorspace_settings.name = color_space
+        except TypeError:
+            pass
+        node = nodes.new(type="ShaderNodeTexImage")
+        node.name = label
+        node.label = label
+        node.image = image
+        return node
+
+    bc_node = load_image_node(textures["bc"], f"{name}_BC", "sRGB")
+    bc_node.location = (-680, 180)
+    n_node = load_image_node(textures["n"], f"{name}_N", "Non-Color")
+    n_node.location = (-680, -80)
+    orm_node = load_image_node(textures["orm"], f"{name}_ORM", "Non-Color")
+    orm_node.location = (-680, -340)
+    normal_map = nodes.new(type="ShaderNodeNormalMap")
+    normal_map.name = f"{name}_NormalMap"
+    normal_map.inputs["Strength"].default_value = 0.45
+    normal_map.location = (-360, -80)
+    separate = nodes.new(type="ShaderNodeSeparateRGB")
+    separate.name = f"{name}_ORMSplit"
+    separate.location = (-360, -340)
+
+    links = material.node_tree.links
+    links.new(bc_node.outputs["Color"], bsdf.inputs["Base Color"])
+    links.new(n_node.outputs["Color"], normal_map.inputs["Color"])
+    links.new(normal_map.outputs["Normal"], bsdf.inputs["Normal"])
+    links.new(orm_node.outputs["Color"], separate.inputs["Image"])
+    links.new(separate.outputs["G"], bsdf.inputs["Roughness"])
     bsdf.inputs["Base Color"].default_value = (review_color[0], review_color[1], review_color[2], 1.0)
     bsdf.inputs["Roughness"].default_value = roughness
     bsdf.inputs["Metallic"].default_value = 0.0
@@ -135,22 +208,22 @@ def make_texture_material(name: str, textures: dict[str, Path], roughness: float
 
 def make_materials(texture_paths: dict[str, dict[str, Path]]) -> dict[str, bpy.types.Material]:
     return {
-        "stone": make_texture_material("M_GIA_BloodAxeCairnTarget_A1_A01_Stone", texture_paths["stone"], 0.91, (0.48, 0.45, 0.37)),
+        "stone": make_texture_material("M_GIA_BloodAxeCairnTarget_A1_A01_Stone", texture_paths["stone"], 0.93, (0.42, 0.39, 0.32)),
         "stone_light": make_texture_material(
             "M_GIA_BloodAxeCairnTarget_A1_A01_StoneFacetLight",
             texture_paths["stone"],
             0.9,
-            (0.57, 0.53, 0.44),
+            (0.53, 0.49, 0.39),
         ),
         "stone_dark": make_texture_material(
             "M_GIA_BloodAxeCairnTarget_A1_A01_StoneFacetDark",
             texture_paths["stone"],
             0.93,
-            (0.38, 0.36, 0.30),
+            (0.30, 0.285, 0.235),
         ),
-        "earth": make_texture_material("M_GIA_BloodAxeCairnTarget_A1_A01_Earth", texture_paths["earth"], 0.95, (0.32, 0.20, 0.11)),
-        "rawhide": make_texture_material("M_GIA_BloodAxeCairnTarget_A1_A01_Rawhide", texture_paths["rawhide"], 0.86, (0.66, 0.40, 0.17)),
-        "red": make_texture_material("M_GIA_BloodAxeCairnTarget_A1_A01_RedPaint", texture_paths["red"], 0.78, (0.82, 0.055, 0.040)),
+        "earth": make_texture_material("M_GIA_BloodAxeCairnTarget_A1_A01_Earth", texture_paths["earth"], 0.96, (0.30, 0.20, 0.13)),
+        "rawhide": make_texture_material("M_GIA_BloodAxeCairnTarget_A1_A01_Rawhide", texture_paths["rawhide"], 0.88, (0.58, 0.36, 0.16)),
+        "red": make_texture_material("M_GIA_BloodAxeCairnTarget_A1_A01_RedPaint", texture_paths["red"], 0.94, (0.58, 0.045, 0.030)),
     }
 
 
@@ -881,42 +954,48 @@ def look_at(camera: bpy.types.Object, target: Vector) -> None:
 def configure_review_scene() -> tuple[bpy.types.Object, Vector]:
     world = bpy.context.scene.world or bpy.data.worlds.new("AeratheaDCCWorld")
     bpy.context.scene.world = world
-    world.color = (0.82, 0.82, 0.80)
+    world.color = (0.72, 0.70, 0.66)
 
     scene = bpy.context.scene
     try:
-        scene.render.engine = "BLENDER_WORKBENCH"
-        scene.display.shading.light = "STUDIO"
-        scene.display.shading.color_type = "MATERIAL"
-        scene.display.shading.show_shadows = True
-        scene.display.shading.show_cavity = True
-        scene.display.shading.cavity_valley_factor = 0.85
-        scene.display.shading.cavity_ridge_factor = 0.65
+        scene.render.engine = "BLENDER_EEVEE"
+        scene.eevee.use_gtao = True
+        scene.eevee.gtao_distance = 2.4
+        scene.eevee.gtao_factor = 0.38
+        scene.eevee.shadow_cube_size = "2048"
+        scene.eevee.shadow_cascade_size = "2048"
+        scene.eevee.taa_render_samples = 48
     except (AttributeError, TypeError):
         pass
     scene.view_settings.view_transform = "Standard"
     scene.view_settings.look = "None"
-    scene.view_settings.exposure = 0.25
+    scene.view_settings.exposure = 1.45
     scene.view_settings.gamma = 1.0
     scene.render.film_transparent = False
 
     bpy.ops.object.light_add(type="AREA", location=(-260, -320, 430))
     key = bpy.context.object
     key.name = "AET_DCC_Key_Area"
-    key.data.energy = 3600.0
+    key.data.energy = 68000.0
     key.data.size = 430.0
 
     bpy.ops.object.light_add(type="POINT", location=(280, -240, 190))
     fill = bpy.context.object
     fill.name = "AET_DCC_Fill_Point"
-    fill.data.energy = 1550.0
+    fill.data.energy = 26000.0
     fill.data.shadow_soft_size = 380.0
 
     bpy.ops.object.light_add(type="AREA", location=(250, 340, 270))
     rim = bpy.context.object
     rim.name = "AET_DCC_Back_Rim_Area"
-    rim.data.energy = 1650.0
+    rim.data.energy = 24000.0
     rim.data.size = 360.0
+
+    bpy.ops.object.light_add(type="SUN", location=(-220, -340, 520))
+    sun = bpy.context.object
+    sun.name = "AET_DCC_Broad_SunFill"
+    sun.data.energy = 3.6
+    look_at(sun, Vector((0.0, -2.0, 75.0)))
 
     bpy.ops.object.camera_add(location=(315, -430, 220))
     camera = bpy.context.object
