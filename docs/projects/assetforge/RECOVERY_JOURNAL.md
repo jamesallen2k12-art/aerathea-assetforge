@@ -101,3 +101,23 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260703-080515/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260703-080515/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-03 08:57:43 EDT -0400 - pre Blood Axe cairn variant batch build
+
+- Snapshot: `Saved/ProjectRecovery/20260703-085743/`
+- Git: branch `main`, HEAD `c866930`, status lines `0`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260703-085743/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260703-085743/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260703-085743/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-03 09:11:20 EDT -0400 - post Blood Axe cairn variant batch build
+
+- Snapshot: `Saved/ProjectRecovery/20260703-091120/`
+- Git: branch `main`, HEAD `c866930`, status lines `28`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260703-091120/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260703-091120/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260703-091120/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
