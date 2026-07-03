@@ -35,6 +35,8 @@
 - Upright trace overcorrection proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_UprightTraceOvercorrection_A17.png`
 - Trace-locked failure proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_TraceLockedFailure_A19.png`
 - A19 trace-locked failure comparison: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_A1_TraceLockedFailureCompare_A19.png`
+- A20 image-locked projection proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_ImageLockedProjectionProof_A20.png`
+- A20 image-locked projection comparison: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_A1_ImageLockedProjectionCompare_A20.png`
 - LOD0: 3701 tris
 - LOD1: 1786 tris
 - LOD2: 1150 tris
@@ -207,6 +209,18 @@
 - Latest triangle counts: LOD0 3701 tris, LOD1 1786, LOD2 1150, LOD3 840.
 - Status remains `DCC source candidate pending concept-geometry and paint review`; final approval status remains `not approved`; Unreal status remains not imported.
 - Process lesson: more hand-tuned procedural coordinates are not the most efficient path for this target. The next pass should start a new image-locked Blender blockout/sculpt lane using the A1 target crop as a camera-aligned reference plane, then model the front slab, rear slab, left lashed stack, and right support as separate traced stone meshes before retopo/LOD/export.
+
+## A20 Image-Locked Projection Proof
+
+- Added `Tools/DCC/build_bloodaxe_a1_image_locked_blockout.py` as a separate proof lane instead of overwriting the current A1 source candidate.
+- Built a front-view blockout from the A1 trace polygons, then projected the approved A1 target crop onto those traced meshes as a temporary guide material.
+- Disabled separate red-paint geometry in the projection proof; the red marks come from the approved A1 image projection so paint reads as texture/reference, not attached strips.
+- Saved the proof image as `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_ImageLockedProjectionProof_A20.png`.
+- Saved the side-by-side audit as `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_A1_ImageLockedProjectionCompare_A20.png`.
+- Saved the proof `.blend` under `SourceAssets/Blender/Props/Giants/BloodAxe/CairnTargets/A1/SM_GIA_BloodAxeCairnTarget_A1_A01_A20_ImageLockedBlockout/`.
+- Status: review-only A20 image-locked proof. This is not final texture work, not a `DCC game-ready candidate`, and not Unreal-ready.
+- Review note: A20 is ready to show Flamestrike because it exposes the remaining geometry decisions clearly. The dominant front face and paint placement now derive directly from the A1 target crop. The right support, rear slab cap, rope zones, and ground footprint still need approval or correction before retopo/export.
+- Recommended next step: get Flamestrike approval or rejection on the A20 comparison. If approved as the geometry direction, convert the projection proof into hand-authored stone meshes with real UVs and texture masks. If rejected, revise the image-locked blockout itself, not the old procedural slab generator.
 
 ## Gate
 
