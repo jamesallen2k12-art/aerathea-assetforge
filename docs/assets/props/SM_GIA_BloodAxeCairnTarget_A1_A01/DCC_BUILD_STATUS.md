@@ -21,10 +21,12 @@
 - DCC target-layout proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_DCCProofTargetLayout.png`
 - Material/texture proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_MaterialTextureProof.png`
 - Rejected clean baseline proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_RejectedCleanBaseline_A02.png`
-- LOD0: 4356 tris
-- LOD1: 2168 tris
-- LOD2: 1396 tris
-- LOD3: 1116 tris
+- A1 front trace guide: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_A1_FrontTraceGuide.png`
+- Traced geometry proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_TracedGeometryPass_A03.png`
+- LOD0: 4172 tris
+- LOD1: 2012 tris
+- LOD2: 1300 tris
+- LOD3: 1028 tris
 
 ## Second Geometry Pass
 
@@ -84,6 +86,18 @@
 - Latest triangle counts: LOD0 4356 tris, LOD1 2168, LOD2 1396, LOD3 1116.
 - Status remains `DCC source candidate pending concept-geometry and paint review`; final approval status is `not approved`.
 
+## A1 Front Trace Guide Pass
+
+- Added a technical front trace guide derived from the approved A1 target crop.
+- Locked review landmarks for the ground line, dominant front slab, tall rear slab, left lashed stack, right bound support, red paint lanes, and rope binding zones.
+- Rebuilt the front composition against those trace landmarks instead of adding more texture or crack overlays.
+- Lowered and sharpened the dominant front slab so it is less broad/wall-like than the rejected clean baseline.
+- Shortened the rear slab, reduced right-side vertical clutter, reduced the left stack mass, darkened the rawhide material, and removed the prior X-like lashing read.
+- Saved the latest in-progress trace proof as `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_TracedGeometryPass_A03.png`.
+- Latest triangle counts: LOD0 4172 tris, LOD1 2012, LOD2 1300, LOD3 1028.
+- Status remains `DCC source candidate pending concept-geometry and paint review`; final approval status is `not approved`.
+- Review note: this pass is improved but still not strict enough. The front stone needs more hand-authored fractured plane geometry, the rear slab still reads too isolated, rope bindings still read too rod-like, and red paint remains too graphic.
+
 ## Gate
 
 The current proof must be evaluated against the A1 target image side by side. If the DCC candidate does not match the dominant A1 geometry or if the red paint still reads as separate geometry, revise the DCC source before any Unreal import, final texture polish, or batch expansion.
@@ -132,6 +146,7 @@ Remaining gaps before approval:
 - Ground rubble density is better, but the mound still needs a more natural dirt/stone blend around the footprint.
 - Current proof material is a first-pass DCC texture integration pass; final Unreal material instances and import validation are still pending.
 - Latest rejected proof remains too broad and wall-like compared with A1; next correction must start from traced front proportions before adding any further texture/detail overlays.
+- Latest traced proof improves the A1 proportions, but it is still not visually approved and should continue through stricter fractured-plane geometry before paint polish.
 
 Decision: hold at `DCC source candidate pending concept-geometry and paint review`; do not import to Unreal yet. This is not a `DCC game-ready candidate` and not `Fully game-ready`.
 
