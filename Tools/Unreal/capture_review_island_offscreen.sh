@@ -6,7 +6,7 @@ UE_EDITOR="${UE_EDITOR:-${HOME}/UnrealEngine/UE_5.8.0/Engine/Binaries/Linux/Unre
 UPROJECT="${ROOT}/Aerathea.uproject"
 MAP_PATH="/Game/Aerathea/Maps/L_Aerathea_ReviewIsland"
 OUTPUT_PATH="${1:-${ROOT}/Saved/Automation/ReviewIsland/AeratheaReviewIsland_Offscreen.png}"
-VIEW_MODE="${AET_REVIEW_VIEWMODE:-unlit}"
+VIEW_MODE="${2:-${AET_REVIEW_VIEWMODE:-unlit}}"
 CAPTURE_DELAY="${AET_REVIEW_CAPTURE_DELAY:-}"
 
 if [[ "${OUTPUT_PATH}" != /* ]]; then

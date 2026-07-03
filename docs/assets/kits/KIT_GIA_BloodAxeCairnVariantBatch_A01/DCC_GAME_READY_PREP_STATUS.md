@@ -68,12 +68,13 @@ The import-test material should use vertex color to preserve the current dark st
 - Scoped FBX string check found no `UCX_` markers in the visual-only `*_UnrealImport.fbx` files used by Unreal.
 - Scoped FBX string check found `LayerElementUV` data across the exported variant FBX set.
 - Follow-up Unreal import validation passed for all twelve assets with 4 LODs, 1 shared material slot, simple collision present, mesh metadata, and review island placement.
+- Follow-up shared BC/N/ORM texture/material candidate validation passed in Unreal; see `TEXTURE_MATERIAL_STATUS.md`.
 
 ## Remaining Gates
 
 - Unreal import has run and passed validation; status details are tracked in `UNREAL_IMPORT_STATUS.md`.
-- Unreal material parent and material instance exist as shared review material assets.
-- Texture maps are planned but not authored in this pass.
+- Unreal material parent and material instance exist as shared texture/material candidate assets.
+- Shared BC/N/ORM texture maps are authored as candidates and pending Flamestrike review.
 - Broad simple collision has been validated in Unreal as import-candidate collision.
 - LOD count has been validated in Unreal.
 - Review island placement exists; startup/gameplay placement has not been created.

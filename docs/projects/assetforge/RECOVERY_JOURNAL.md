@@ -191,3 +191,13 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260703-105042/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260703-105042/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-03 11:14:57 EDT -0400 - post Blood Axe cairn texture material candidate
+
+- Snapshot: `Saved/ProjectRecovery/20260703-111457/`
+- Git: branch `main`, HEAD `5452f72`, status lines `27`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260703-111457/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260703-111457/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260703-111457/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

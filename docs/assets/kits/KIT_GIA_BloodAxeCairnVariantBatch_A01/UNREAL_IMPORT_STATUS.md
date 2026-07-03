@@ -10,6 +10,7 @@
 - Review placement script: `Tools/Unreal/place_bloodaxe_cairn_variant_batch_review.py`
 - Review capture: `Saved/Automation/ReviewIsland/BloodAxeCairnVariants_A01_UnrealReview_Unlit.png`
 - Visual review status: `UNREAL_VISUAL_REVIEW_STATUS.md`
+- Texture/material status: `TEXTURE_MATERIAL_STATUS.md`
 
 This pass imported the twelve Blood Axe cairn variants into Unreal, validated their static mesh setup, and placed them on `/Game/Aerathea/Maps/L_Aerathea_ReviewIsland` for batch review. The pass promotes the assets to `Unreal import candidate` only. It does not approve final hand-painted textures, final material polish, gameplay use, route logic, waypoint logic, quest markers, salvage/loot behavior, destructible behavior, or `Fully game-ready` status.
 
@@ -17,9 +18,10 @@ This pass imported the twelve Blood Axe cairn variants into Unreal, validated th
 
 - Parent material: `/Game/Aerathea/Materials/Giants/BloodAxe/Cairns/M_GIA_BloodAxeCairnVariants_VertexBlend_A01`
 - Material instance: `/Game/Aerathea/Materials/Instances/MI_GIA_BloodAxeCairnVariants_A01`
-- Review material mode: shared vertex-color review material, not final BC/N/ORM texture art.
+- Material mode: shared BC/N/ORM texture/material candidate with vertex-color detail multiplier.
 - Review map: `/Game/Aerathea/Maps/L_Aerathea_ReviewIsland`
 - Batch review tag: `AET_BLOODAXE_CAIRN_VARIANT_BATCH_REVIEW`
+- Shared texture root: `/Game/Aerathea/Textures/Giants/BloodAxe/Cairns/KIT_GIA_BloodAxeCairnVariantBatch_A01/`
 
 ## Import Adjustment
 
@@ -62,16 +64,18 @@ Validated import source requirements:
 - Review island placement completed and saved the batch actors in contact-sheet order.
 - Clean offscreen review capture completed at `Saved/Automation/ReviewIsland/BloodAxeCairnVariants_A01_UnrealReview_Unlit.png`.
 - Codex Unreal visual review passed for source-intent preservation and cleared the batch for final texture/material production; see `UNREAL_VISUAL_REVIEW_STATUS.md`.
+- Shared BC/N/ORM texture/material candidate import passed validation for texture settings, material instance parent, one-slot mesh assignment, and mesh metadata.
+- Close texture/material captures completed at `Saved/Automation/ReviewIsland/BloodAxeCairnVariants_A01_TextureReview_Close_Unlit.png` and `Saved/Automation/ReviewIsland/BloodAxeCairnVariants_A01_TextureReview_Close_Lit.png`.
 
 ## Boundaries
 
 - Not `Fully game-ready`.
 - Not final visual approval.
-- Not final hand-painted BC/N/ORM texture art.
-- Not final material polish.
+- Not Flamestrike-approved final BC/N/ORM texture art.
+- Not final material polish beyond the current candidate pass.
 - Not startup-scene gameplay placement.
 - Not gameplay route, waypoint, quest, pickup, loot, salvage, destructible, physics, encounter, VFX, audio, or nav/pathfinding approval.
 
 ## Next Gate
 
-The next useful gate is final shared texture/material authoring for the imported batch, followed by a closer Unreal review capture for Flamestrike final visual approval.
+The next useful gate is Flamestrike close visual review of the shared texture/material candidate, followed by any requested value/color/detail adjustment before final approval.
