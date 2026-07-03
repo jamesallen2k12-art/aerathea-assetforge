@@ -26,6 +26,10 @@ __pycache__/
 
 # Local external tools, model caches, and research dependencies
 Tools/External/
+Tools/Blender/
+
+# Local Codex connector settings
+.codex/
 
 # OS/filesystem noise
 .DS_Store
