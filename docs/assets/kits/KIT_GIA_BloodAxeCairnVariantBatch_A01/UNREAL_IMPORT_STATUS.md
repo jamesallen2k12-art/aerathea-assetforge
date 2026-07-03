@@ -9,6 +9,7 @@
 - Validation script: `Tools/Unreal/validate_bloodaxe_cairn_variant_batch.py`
 - Review placement script: `Tools/Unreal/place_bloodaxe_cairn_variant_batch_review.py`
 - Review capture: `Saved/Automation/ReviewIsland/BloodAxeCairnVariants_A01_UnrealReview_Unlit.png`
+- Visual review status: `UNREAL_VISUAL_REVIEW_STATUS.md`
 
 This pass imported the twelve Blood Axe cairn variants into Unreal, validated their static mesh setup, and placed them on `/Game/Aerathea/Maps/L_Aerathea_ReviewIsland` for batch review. The pass promotes the assets to `Unreal import candidate` only. It does not approve final hand-painted textures, final material polish, gameplay use, route logic, waypoint logic, quest markers, salvage/loot behavior, destructible behavior, or `Fully game-ready` status.
 
@@ -60,6 +61,7 @@ Validated import source requirements:
 - Mesh metadata records `Aerathea.StaticMesh.Status=unreal_import_candidate`, source status, package doc, import packet, collision policy, final-art boundary, material mode, and review placement state.
 - Review island placement completed and saved the batch actors in contact-sheet order.
 - Clean offscreen review capture completed at `Saved/Automation/ReviewIsland/BloodAxeCairnVariants_A01_UnrealReview_Unlit.png`.
+- Codex Unreal visual review passed for source-intent preservation and cleared the batch for final texture/material production; see `UNREAL_VISUAL_REVIEW_STATUS.md`.
 
 ## Boundaries
 
@@ -72,4 +74,4 @@ Validated import source requirements:
 
 ## Next Gate
 
-The next useful gate is Flamestrike review of the Unreal batch capture and/or live review island. After that, choose whether the batch needs final texture/material authoring, silhouette revisions, route-context placement, or selected promotion into an approved asset library set.
+The next useful gate is final shared texture/material authoring for the imported batch, followed by a closer Unreal review capture for Flamestrike final visual approval.
