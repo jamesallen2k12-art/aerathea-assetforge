@@ -1,0 +1,172 @@
+{
+  "asset": "SM_Gnome_AetherTek_PowerNexus_FuelCell_01",
+  "status": "Concept candidate; non-canon generated proof only; approved visual source and Blender DCC source missing",
+  "unit_scale": "centimeters",
+  "pivot_target": "rear-bottom center",
+  "dimensions_cm": {
+    "width": 62,
+    "depth": 47,
+    "height": 81
+  },
+  "sockets": {
+    "Socket_PowerRoute_A": {
+      "location_cm": [
+        -15,
+        -24.4,
+        65
+      ],
+      "purpose": "upper-left chest routing"
+    },
+    "Socket_PowerRoute_B": {
+      "location_cm": [
+        15,
+        -24.4,
+        65
+      ],
+      "purpose": "upper-right chest routing"
+    },
+    "Socket_PowerRoute_C": {
+      "location_cm": [
+        0,
+        -24.4,
+        14
+      ],
+      "purpose": "lower return route"
+    }
+  },
+  "stats": {
+    "LOD0": {
+      "triangles": 1384,
+      "parts": 61
+    },
+    "LOD1": {
+      "triangles": 572,
+      "parts": 22
+    },
+    "LOD2": {
+      "triangles": 344,
+      "parts": 15
+    },
+    "LOD3": {
+      "triangles": 112,
+      "parts": 7
+    },
+    "Collision": {
+      "triangles": 32,
+      "parts": 1
+    }
+  },
+  "preview": "SourceAssets/Generated/Props/Mekgineer/SM_Gnome_AetherTek_PowerNexus_FuelCell_01/Preview/SM_Gnome_AetherTek_PowerNexus_FuelCell_01_PreviewSheet.png",
+  "files": [
+    {
+      "path": "SourceAssets/Generated/Props/Mekgineer/SM_Gnome_AetherTek_PowerNexus_FuelCell_01/Meshes/SM_Gnome_AetherTek_PowerNexus_FuelCell_01_LOD0.glb",
+      "sha256_16": "5c05980218f4a38b",
+      "bytes": 155836
+    },
+    {
+      "path": "SourceAssets/Generated/Props/Mekgineer/SM_Gnome_AetherTek_PowerNexus_FuelCell_01/Meshes/SM_Gnome_AetherTek_PowerNexus_FuelCell_01_LOD0.mtl",
+      "sha256_16": "88cdc1be7b6f752d",
+      "bytes": 861
+    },
+    {
+      "path": "SourceAssets/Generated/Props/Mekgineer/SM_Gnome_AetherTek_PowerNexus_FuelCell_01/Meshes/SM_Gnome_AetherTek_PowerNexus_FuelCell_01_LOD0.obj",
+      "sha256_16": "69d7bb13dfbbfa78",
+      "bytes": 36237
+    },
+    {
+      "path": "SourceAssets/Generated/Props/Mekgineer/SM_Gnome_AetherTek_PowerNexus_FuelCell_01/Meshes/SM_Gnome_AetherTek_PowerNexus_FuelCell_01_LOD1.glb",
+      "sha256_16": "8e9378e3607e2137",
+      "bytes": 63388
+    },
+    {
+      "path": "SourceAssets/Generated/Props/Mekgineer/SM_Gnome_AetherTek_PowerNexus_FuelCell_01/Meshes/SM_Gnome_AetherTek_PowerNexus_FuelCell_01_LOD1.mtl",
+      "sha256_16": "a6b3f83bc9b5cefa",
+      "bytes": 861
+    },
+    {
+      "path": "SourceAssets/Generated/Props/Mekgineer/SM_Gnome_AetherTek_PowerNexus_FuelCell_01/Meshes/SM_Gnome_AetherTek_PowerNexus_FuelCell_01_LOD1.obj",
+      "sha256_16": "7ded02ce7c2a1b8c",
+      "bytes": 14453
+    },
+    {
+      "path": "SourceAssets/Generated/Props/Mekgineer/SM_Gnome_AetherTek_PowerNexus_FuelCell_01/Meshes/SM_Gnome_AetherTek_PowerNexus_FuelCell_01_LOD2.glb",
+      "sha256_16": "40bab9ac3b5c81a6",
+      "bytes": 39944
+    },
+    {
+      "path": "SourceAssets/Generated/Props/Mekgineer/SM_Gnome_AetherTek_PowerNexus_FuelCell_01/Meshes/SM_Gnome_AetherTek_PowerNexus_FuelCell_01_LOD2.mtl",
+      "sha256_16": "578d63b0bf49c217",
+      "bytes": 861
+    },
+    {
+      "path": "SourceAssets/Generated/Props/Mekgineer/SM_Gnome_AetherTek_PowerNexus_FuelCell_01/Meshes/SM_Gnome_AetherTek_PowerNexus_FuelCell_01_LOD2.obj",
+      "sha256_16": "4b897db61f50b2da",
+      "bytes": 8967
+    },
+    {
+      "path": "SourceAssets/Generated/Props/Mekgineer/SM_Gnome_AetherTek_PowerNexus_FuelCell_01/Meshes/SM_Gnome_AetherTek_PowerNexus_FuelCell_01_LOD3.glb",
+      "sha256_16": "145ba89e83b7f4f6",
+      "bytes": 15212
+    },
+    {
+      "path": "SourceAssets/Generated/Props/Mekgineer/SM_Gnome_AetherTek_PowerNexus_FuelCell_01/Meshes/SM_Gnome_AetherTek_PowerNexus_FuelCell_01_LOD3.mtl",
+      "sha256_16": "3585180b001e6d45",
+      "bytes": 861
+    },
+    {
+      "path": "SourceAssets/Generated/Props/Mekgineer/SM_Gnome_AetherTek_PowerNexus_FuelCell_01/Meshes/SM_Gnome_AetherTek_PowerNexus_FuelCell_01_LOD3.obj",
+      "sha256_16": "2a7b90fe6443a2ab",
+      "bytes": 3111
+    },
+    {
+      "path": "SourceAssets/Generated/Props/Mekgineer/SM_Gnome_AetherTek_PowerNexus_FuelCell_01/Meshes/UCX_SM_Gnome_AetherTek_PowerNexus_FuelCell_01_00.glb",
+      "sha256_16": "fb35255c432cda90",
+      "bytes": 4876
+    },
+    {
+      "path": "SourceAssets/Generated/Props/Mekgineer/SM_Gnome_AetherTek_PowerNexus_FuelCell_01/Meshes/UCX_SM_Gnome_AetherTek_PowerNexus_FuelCell_01_00.mtl",
+      "sha256_16": "3d9fdafbaf432dc9",
+      "bytes": 860
+    },
+    {
+      "path": "SourceAssets/Generated/Props/Mekgineer/SM_Gnome_AetherTek_PowerNexus_FuelCell_01/Meshes/UCX_SM_Gnome_AetherTek_PowerNexus_FuelCell_01_00.obj",
+      "sha256_16": "a7dda88fbfa4af52",
+      "bytes": 820
+    },
+    {
+      "path": "SourceAssets/Generated/Props/Mekgineer/SM_Gnome_AetherTek_PowerNexus_FuelCell_01/Preview/SM_Gnome_AetherTek_PowerNexus_FuelCell_01_PreviewSheet.png",
+      "sha256_16": "d5eff5413d9f2ce9",
+      "bytes": 105326
+    },
+    {
+      "path": "SourceAssets/Generated/Props/Mekgineer/SM_Gnome_AetherTek_PowerNexus_FuelCell_01/Textures/T_SM_Gnome_AetherTek_PowerNexus_FuelCell_01_BC_Guide.png",
+      "sha256_16": "a5420e18eb07a1a6",
+      "bytes": 14699
+    },
+    {
+      "path": "SourceAssets/Generated/Props/Mekgineer/SM_Gnome_AetherTek_PowerNexus_FuelCell_01/Textures/T_SM_Gnome_AetherTek_PowerNexus_FuelCell_01_E_Guide.png",
+      "sha256_16": "fb3c620323ef5da2",
+      "bytes": 9109
+    },
+    {
+      "path": "SourceAssets/Generated/Props/Mekgineer/SM_Gnome_AetherTek_PowerNexus_FuelCell_01/Textures/T_SM_Gnome_AetherTek_PowerNexus_FuelCell_01_N_Guide.png",
+      "sha256_16": "86993e9276b66928",
+      "bytes": 5334
+    },
+    {
+      "path": "SourceAssets/Generated/Props/Mekgineer/SM_Gnome_AetherTek_PowerNexus_FuelCell_01/Textures/T_SM_Gnome_AetherTek_PowerNexus_FuelCell_01_ORM_Guide.png",
+      "sha256_16": "fb5209cfd6a9b915",
+      "bytes": 11536
+    },
+    {
+      "path": "docs/assets/props/SM_Gnome_AetherTek_PowerNexus_FuelCell_01/CODEX_2D_IMAGE_TO_ACCURATE_3D_GAME_READY_ASSET.md",
+      "sha256_16": "a8eba36552a79b69",
+      "bytes": 1391
+    },
+    {
+      "path": "docs/assets/props/SM_Gnome_AetherTek_PowerNexus_FuelCell_01/RUN_THIS_IN_CODEX.md",
+      "sha256_16": "8cdeb75b4a9c4706",
+      "bytes": 1197
+    }
+  ]
+}
