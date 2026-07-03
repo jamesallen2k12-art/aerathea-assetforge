@@ -29,10 +29,11 @@
 - Authored multi-plane proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_AuthoredMultiPlanePass_A09.png`
 - A1 target multiview prep contact sheet: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_TargetMultiviewPrep_A10.png`
 - TRELLIS-AMD reference comparison: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_TRELLISReferenceCompare_A11.png`
-- LOD0: 4496 tris
-- LOD1: 2472 tris
-- LOD2: 1542 tris
-- LOD3: 1228 tris
+- Continuous slab proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_ContinuousSlabPass_A13.png`
+- LOD0: 4506 tris
+- LOD1: 2408 tris
+- LOD2: 1342 tris
+- LOD3: 1024 tris
 
 ## Second Geometry Pass
 
@@ -167,6 +168,17 @@
 - Do not use: raw mesh shards, micro-noise, TRELLIS surface scratches, texture/paint, UVs, collision, LODs, or final silhouette approval.
 - Status remains `DCC source candidate pending concept-geometry and paint review`; final approval status remains `not approved`; Unreal status remains not imported.
 - Next pass should rebuild the authored DCC source using these broad landmark lessons while keeping the A1 concept image as the visual source of truth.
+
+## Continuous Slab Learning Pass
+
+- Replaced the A09 shingle-like dominant front with one continuous thick painted front slab, using the A1 TRELLIS reference only for broad volume and rear/front overlap cues.
+- Removed the heavy separate shoulder/cheek/lip slabs that caused the harsh layered-shingle read.
+- Generated regenerated Blender source, FBX, LOD0-LOD3, UCX collision proxy, and DCC proof captures.
+- Saved the latest in-progress proof as `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_ContinuousSlabPass_A13.png`.
+- Latest triangle counts: LOD0 4506 tris, LOD1 2408, LOD2 1342, LOD3 1024.
+- Status remains `DCC source candidate pending concept-geometry and paint review`; final approval status remains `not approved`.
+- Review note: this pass fixes the A09 layered-shingle problem, but it still does not match A1 closely enough. The main stone still reads as a broad flat shield-like slab, the procedural stone speckling is too regular, and the red paint still reads as broken strip geometry rather than naturally worn pigment in the concept.
+- Next pass must stop freehand parameter tuning and create a target-contour/landmark overlay from the A1 front crop. Use that overlay to lock silhouette, dominant slab angle, paint-mask placement, side-support positions, and rear-slab overlap before regenerating the DCC source.
 
 ## Gate
 

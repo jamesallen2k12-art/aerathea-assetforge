@@ -696,42 +696,19 @@ def build_asset_lod(collection: bpy.types.Collection, materials: dict[str, bpy.t
 
     # Front proportions are locked to the traced A1 guide in
     # docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/*_A1_FrontTraceGuide.png.
-    dominant_reclined_outline = [
-        (-0.53, -0.44),
-        (-0.18, -0.50),
-        (0.24, -0.43),
-        (0.51, -0.17),
-        (0.43, 0.18),
-        (0.10, 0.49),
-        (-0.32, 0.39),
-        (-0.56, 0.05),
-    ]
-    shoulder_plane_outline = [
-        (-0.56, -0.38),
-        (-0.22, -0.52),
-        (0.34, -0.40),
-        (0.52, -0.08),
-        (0.34, 0.30),
-        (-0.08, 0.52),
-        (-0.48, 0.25),
-    ]
-    cheek_plane_outline = [
-        (-0.50, -0.46),
-        (-0.10, -0.52),
-        (0.44, -0.31),
-        (0.54, 0.05),
-        (0.20, 0.49),
-        (-0.36, 0.32),
-        (-0.58, -0.06),
-    ]
-    lower_lip_outline = [
-        (-0.58, -0.32),
-        (-0.35, -0.48),
-        (0.24, -0.44),
-        (0.58, -0.18),
-        (0.42, 0.18),
-        (-0.12, 0.48),
-        (-0.52, 0.22),
+    dominant_painted_outline = [
+        (-0.52, -0.47),
+        (-0.27, -0.54),
+        (0.10, -0.48),
+        (0.38, -0.34),
+        (0.50, -0.10),
+        (0.42, 0.14),
+        (0.22, 0.35),
+        (0.07, 0.55),
+        (-0.15, 0.47),
+        (-0.35, 0.28),
+        (-0.55, 0.06),
+        (-0.59, -0.24),
     ]
     tall_crag_outline = [
         (-0.34, -0.50),
@@ -775,60 +752,38 @@ def build_asset_lod(collection: bpy.types.Collection, materials: dict[str, bpy.t
         (-0.50, 0.20),
         (-0.40, -0.03),
     ]
+    front_slab_rotation = (math.radians(-42), math.radians(-7), math.radians(-18))
+    front_paint_y = -93
 
     fractured_specs = [
         (
-            "DominantCentralPaintedPlane",
-            (-5, -64, 54),
-            (82, 13, 78),
-            (math.radians(-49), math.radians(-6), math.radians(-17)),
-            dominant_reclined_outline,
+            "DominantPaintedFrontSlab",
+            (-10, -62, 66),
+            (98, 24, 112),
+            front_slab_rotation,
+            dominant_painted_outline,
             201,
         ),
         (
-            "DominantUpperLeftShoulderPlane",
-            (-42, -58, 68),
-            (56, 12, 46),
-            (math.radians(-47), math.radians(-8), math.radians(-28)),
-            shoulder_plane_outline,
-            218,
-        ),
-        (
-            "DominantRightBrokenCheekPlane",
-            (39, -68, 47),
-            (48, 12, 55),
-            (math.radians(-52), math.radians(-4), math.radians(-8)),
-            cheek_plane_outline,
-            219,
-        ),
-        (
-            "DominantLowerFrontLipPlane",
-            (-2, -83, 33),
-            (92, 14, 24),
-            (math.radians(-30), math.radians(-4), math.radians(-14)),
-            lower_lip_outline,
-            220,
-        ),
-        (
             "TallRearOathSlab",
-            (26, 58, 88),
-            (54, 24, 144),
-            (math.radians(-13), math.radians(8), math.radians(-4)),
+            (20, 48, 94),
+            (58, 28, 152),
+            (math.radians(-9), math.radians(7), math.radians(-5)),
             tall_crag_outline,
             202,
         ),
         (
             "RightUprightSupportStone",
-            (104, -12, 49),
-            (32, 21, 74),
+            (92, -8, 52),
+            (36, 24, 82),
             (math.radians(-1), math.radians(-8), math.radians(7)),
             support_crag_outline,
             206,
         ),
         (
             "RightRearSupportStone",
-            (116, 33, 29),
-            (18, 15, 30),
+            (110, 35, 32),
+            (22, 17, 34),
             (math.radians(-7), math.radians(5), math.radians(11)),
             support_crag_outline,
             207,
@@ -854,8 +809,8 @@ def build_asset_lod(collection: bpy.types.Collection, materials: dict[str, bpy.t
                 ("LeftBackBrokenShard", (-150, 18, 40), (24, 20, 54), (math.radians(-7), math.radians(8), math.radians(-18)), support_crag_outline, 211),
                 ("RearNeedleShardLeft", (-14, 70, 83), (18, 16, 70), (math.radians(-11), math.radians(-7), math.radians(7)), tall_crag_outline, 212),
                 ("RearNeedleShardRight", (70, 86, 43), (10, 10, 24), (math.radians(8), math.radians(5), math.radians(14)), support_crag_outline, 213),
-                ("MainSlabLeftEmbeddedSupport", (-62, -72, 35), (32, 18, 22), (math.radians(-24), math.radians(-6), math.radians(-18)), low_slab_outline, 221),
-                ("MainSlabRightEmbeddedSupport", (52, -88, 28), (38, 18, 18), (math.radians(-16), math.radians(7), math.radians(-4)), low_slab_outline, 222),
+                ("MainSlabLeftEmbeddedSupport", (-70, -76, 33), (34, 20, 24), (math.radians(-22), math.radians(-7), math.radians(-20)), low_slab_outline, 221),
+                ("MainSlabRightEmbeddedSupport", (56, -90, 29), (42, 20, 20), (math.radians(-15), math.radians(7), math.radians(-4)), low_slab_outline, 222),
             ]
         )
     if detail:
@@ -885,23 +840,31 @@ def build_asset_lod(collection: bpy.types.Collection, materials: dict[str, bpy.t
 
     if mid:
         paint_specs = [
-            ("MainSlabCentralLongBloodAxeStem", (-4, -89, 56), (58, -0.52, 4.2), (math.radians(-49), math.radians(-6), math.radians(54)), 301),
-            ("MainSlabUpperLeftPaintSweep", (-28, -90, 63), (34, -0.52, 3.4), (math.radians(-49), math.radians(-6), math.radians(10)), 302),
-            ("MainSlabLowerRightPaintSweep", (14, -89, 46), (30, -0.52, 3.2), (math.radians(-49), math.radians(-6), math.radians(-34)), 303),
+            ("MainSlabCentralLongBloodAxeStem", (-12, front_paint_y, 75), (78, -0.75, 7.4), (math.radians(-42), math.radians(-7), math.radians(55)), 301),
+            ("MainSlabUpperLeftPaintSweep", (-34, front_paint_y - 1, 88), (46, -0.75, 6.2), (math.radians(-42), math.radians(-7), math.radians(12)), 302),
+            ("MainSlabLowerRightPaintSweep", (13, front_paint_y, 61), (48, -0.75, 5.8), (math.radians(-42), math.radians(-7), math.radians(-33)), 303),
+            ("MainSlabLeftBrokenPaintArc", (-31, front_paint_y - 1, 72), (34, -0.75, 5.0), (math.radians(-42), math.radians(-7), math.radians(93)), 312),
+            ("MainSlabRightBrokenPaintArc", (3, front_paint_y, 79), (34, -0.75, 4.8), (math.radians(-42), math.radians(-7), math.radians(-83)), 313),
             ("LeftStackSubtleRedSmear", (-125, -53, 58), (46, -0.8, 5.0), (math.radians(2), math.radians(-6), math.radians(5)), 304),
-            ("RearSlabTallWarPaint", (30, 20, 111), (44, -0.8, 5.8), (math.radians(-13), math.radians(8), math.radians(63)), 305),
+            ("RearSlabTallWarPaint", (24, 16, 117), (42, -0.8, 5.2), (math.radians(-9), math.radians(7), math.radians(63)), 305),
         ]
         if lod == 0:
             paint_specs.extend(
                 [
-                    ("MainSlabBottomDripToGround", (18, -89, 38), (19, -0.52, 2.0), (math.radians(-49), math.radians(-6), math.radians(72)), 306),
-                    ("MainSlabCenterAxeHeadPatch", (-6, -89, 56), (16, -0.52, 4.8), (math.radians(-49), math.radians(-6), math.radians(9)), 307),
+                    ("MainSlabBottomDripToGround", (18, front_paint_y, 47), (30, -0.75, 3.8), (math.radians(-42), math.radians(-7), math.radians(71)), 306),
+                    ("MainSlabCenterAxeHeadPatch", (-8, front_paint_y, 74), (26, -0.75, 8.2), (math.radians(-42), math.radians(-7), math.radians(8)), 307),
+                    ("MainSlabDryBrushTopChip", (-22, front_paint_y - 1, 98), (20, -0.75, 3.2), (math.radians(-42), math.radians(-7), math.radians(-42)), 314),
+                    ("MainSlabLowerDryBrushBreak", (0, front_paint_y, 52), (24, -0.75, 3.2), (math.radians(-42), math.radians(-7), math.radians(5)), 315),
                 ]
             )
         for label, location, dimensions, rotation, seed in paint_specs:
             objects.append(add_worn_paint_patch(f"{prefix}_BloodAxePaint_{label}", collection, materials["red"], location, dimensions, rotation, seed + lod * 37))
 
-        surface_overlay_specs: list[tuple[str, tuple[float, float, float], tuple[float, float, float], tuple[float, float, float], str, int]] = []
+        surface_overlay_specs: list[tuple[str, tuple[float, float, float], tuple[float, float, float], tuple[float, float, float], str, int]] = [
+            ("FrontSlabUpperLightChip", (-22, front_paint_y - 1, 100), (30, -0.70, 1.1), (math.radians(-42), math.radians(-7), math.radians(-24)), "stone_light", 334),
+            ("FrontSlabLeftLightEdge", (-48, front_paint_y - 1, 65), (32, -0.70, 0.9), (math.radians(-42), math.radians(-7), math.radians(69)), "stone_light", 335),
+            ("FrontSlabLowerMutedChip", (-4, front_paint_y - 1, 45), (52, -0.70, 0.8), (math.radians(-42), math.radians(-7), math.radians(-5)), "stone_light", 336),
+        ]
         for label, location, dimensions, rotation, material_key, seed in surface_overlay_specs:
             objects.append(
                 add_surface_stroke(
