@@ -31,10 +31,14 @@
 - TRELLIS-AMD reference comparison: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_TRELLISReferenceCompare_A11.png`
 - Continuous slab proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_ContinuousSlabPass_A13.png`
 - A1 landmark mismatch guide: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_A1_LandmarkMismatchGuide_A14.png`
-- LOD0: 4506 tris
-- LOD1: 2408 tris
-- LOD2: 1342 tris
-- LOD3: 1024 tris
+- Landmark constrained proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_LandmarkConstrainedPass_A16.png`
+- Upright trace overcorrection proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_UprightTraceOvercorrection_A17.png`
+- Trace-locked failure proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_TraceLockedFailure_A19.png`
+- A19 trace-locked failure comparison: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_A1_TraceLockedFailureCompare_A19.png`
+- LOD0: 3701 tris
+- LOD1: 1786 tris
+- LOD2: 1150 tris
+- LOD3: 840 tris
 
 ## Second Geometry Pass
 
@@ -188,6 +192,22 @@
 - The board confirms A13 is still not approved: the main slab is too broad and shield-like, the rear slab dominates too much as a centered tower, side masses are outside the intended concept bounds, and paint must move from modeled red strip strokes to a texture/mask pass.
 - Next pass should modify the DCC rebuild to satisfy the A14 landmark guide before restoring detailed stone surface noise or final paint texture work.
 
+## Trace-Locked Procedural Failure Passes
+
+- Iterated A16-A19 against the A14 landmark guide after Flamestrike rejected the earlier continuous slab proof.
+- A16 reduced procedural stone speckle and changed red paint from strip strokes to flatter masks, but the result still read as a low boulder cluster with a dominant rear needle instead of the A1 painted cairn face.
+- A17 raised the front face and rebalanced side masses, but overcorrected into a vertical shield slab with a centered rear tower.
+- A18 switched the front, rear, and right support stones to exact A1 trace-derived polygons and restored opaque surface pigment, but the render still read as shield/monolith geometry.
+- A19 widened and lowered the front slab and changed surface paint patches from faceted triangle fans to single flat polygons, but the proof still does not match A1 and the paint/shadow relationship remains unacceptable.
+- Latest rejected proofs are saved as:
+  - `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_LandmarkConstrainedPass_A16.png`
+  - `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_UprightTraceOvercorrection_A17.png`
+  - `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_TraceLockedFailure_A19.png`
+- Side-by-side A19 audit is saved as `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_A1_TraceLockedFailureCompare_A19.png`.
+- Latest triangle counts: LOD0 3701 tris, LOD1 1786, LOD2 1150, LOD3 840.
+- Status remains `DCC source candidate pending concept-geometry and paint review`; final approval status remains `not approved`; Unreal status remains not imported.
+- Process lesson: more hand-tuned procedural coordinates are not the most efficient path for this target. The next pass should start a new image-locked Blender blockout/sculpt lane using the A1 target crop as a camera-aligned reference plane, then model the front slab, rear slab, left lashed stack, and right support as separate traced stone meshes before retopo/LOD/export.
+
 ## Gate
 
 The current proof must be evaluated against the A1 target image side by side. If the DCC candidate does not match the dominant A1 geometry or if the red paint still reads as separate geometry, revise the DCC source before any Unreal import, final texture polish, or batch expansion.
@@ -238,6 +258,7 @@ Remaining gaps before approval:
 - Latest rejected proof remains too broad and wall-like compared with A1; next correction must start from traced front proportions before adding any further texture/detail overlays.
 - Latest traced proof improves the A1 proportions, but it is still not visually approved and should continue through stricter fractured-plane geometry before paint polish.
 - Latest fractured-face proof reduces the rope/stroke implementation problems, but the dominant stone construction is still not faithful enough to A1.
+- Latest trace-locked procedural proof confirms the deterministic generator is now the bottleneck; the next correction should be an image-locked Blender blockout/sculpt pass rather than another coordinate-tuned procedural slab pass.
 
 Decision: hold at `DCC source candidate pending concept-geometry and paint review`; do not import to Unreal yet. This is not a `DCC game-ready candidate` and not `Fully game-ready`.
 

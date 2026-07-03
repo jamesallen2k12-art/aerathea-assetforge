@@ -381,3 +381,13 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260703-163014/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260703-163014/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-03 18:08:46 EDT -0400 - post Blood Axe A1 A16-A19 trace-locked failure learning pass
+
+- Snapshot: `Saved/ProjectRecovery/20260703-180846/`
+- Git: branch `main`, HEAD `420f3b0`, status lines `18`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260703-180846/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260703-180846/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260703-180846/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

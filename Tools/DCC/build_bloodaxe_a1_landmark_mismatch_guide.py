@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 import sys
 from pathlib import Path
 
@@ -17,8 +18,8 @@ from Tools.DCC.make_bloodaxe_a1_trace_guide import LOCK_LINES, PAINT_GUIDES, TRA
 
 PROP_DIR = ROOT / "docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01"
 TARGET = PROP_DIR / "SM_GIA_BloodAxeCairnTarget_A1_A01_TargetFrontCrop.png"
-PROOF = PROP_DIR / "SM_GIA_BloodAxeCairnTarget_A1_A01_ContinuousSlabPass_A13.png"
-OUTPUT = PROP_DIR / "SM_GIA_BloodAxeCairnTarget_A1_A01_A1_LandmarkMismatchGuide_A14.png"
+DEFAULT_PROOF = PROP_DIR / "SM_GIA_BloodAxeCairnTarget_A1_A01_ContinuousSlabPass_A13.png"
+DEFAULT_OUTPUT = PROP_DIR / "SM_GIA_BloodAxeCairnTarget_A1_A01_A1_LandmarkMismatchGuide_A14.png"
 
 
 def font(size: int, bold: bool = False) -> ImageFont.ImageFont:
@@ -73,9 +74,23 @@ def paste_center(canvas: Image.Image, image: Image.Image, box: tuple[int, int, i
     return (x, y, x + image.width, y + image.height)
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--proof", type=Path, default=DEFAULT_PROOF)
+    parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument("--title", default="Blood Axe A1 Landmark Mismatch Guide")
+    parser.add_argument(
+        "--subtitle",
+        default="Purpose: lock silhouette/paint landmarks before the next DCC rebuild. A13 remains not approved.",
+    )
+    parser.add_argument("--proof-label", default="Rejected proof with same normalized landmarks")
+    return parser.parse_args()
+
+
 def main() -> None:
+    args = parse_args()
     target = Image.open(TARGET).convert("RGB")
-    proof = Image.open(PROOF).convert("RGB")
+    proof = Image.open(args.proof).convert("RGB")
 
     canvas = Image.new("RGB", (1920, 1180), (28, 28, 30))
     draw = ImageDraw.Draw(canvas, "RGBA")
@@ -83,20 +98,15 @@ def main() -> None:
     label_font = font(22, True)
     body_font = font(18)
 
-    draw.text((40, 30), "Blood Axe A1 Landmark Mismatch Guide", fill=(238, 232, 220), font=title_font)
-    draw.text(
-        (40, 78),
-        "Purpose: lock silhouette/paint landmarks before the next DCC rebuild. A13 remains not approved.",
-        fill=(215, 198, 174),
-        font=body_font,
-    )
+    draw.text((40, 30), args.title, fill=(238, 232, 220), font=title_font)
+    draw.text((40, 78), args.subtitle, fill=(215, 198, 174), font=body_font)
 
     left_frame = (40, 145, 910, 760)
     right_frame = (1010, 145, 1880, 760)
     draw.rectangle(left_frame, outline=(96, 88, 76), width=2)
     draw.rectangle(right_frame, outline=(96, 88, 76), width=2)
     draw.text((left_frame[0], left_frame[1] - 34), "A1 target with locked landmarks", fill=(238, 232, 220), font=label_font)
-    draw.text((right_frame[0], right_frame[1] - 34), "Rejected A13 proof with same normalized landmarks", fill=(238, 232, 220), font=label_font)
+    draw.text((right_frame[0], right_frame[1] - 34), args.proof_label, fill=(238, 232, 220), font=label_font)
 
     target_fit = fit(target, (820, 540))
     proof_fit = fit(proof, (820, 540))
@@ -121,9 +131,10 @@ def main() -> None:
         draw.text((40, y), line, fill=fill, font=label_font if index == 0 else body_font)
         y += 42 if index == 0 else 32
 
-    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    canvas.save(OUTPUT)
-    print(OUTPUT.relative_to(ROOT))
+    output = args.output if args.output.is_absolute() else ROOT / args.output
+    output.parent.mkdir(parents=True, exist_ok=True)
+    canvas.save(output)
+    print(output.relative_to(ROOT))
 
 
 if __name__ == "__main__":
