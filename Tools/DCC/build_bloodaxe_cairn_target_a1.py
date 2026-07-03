@@ -95,6 +95,7 @@ def generate_texture_set(
                 base[2] * (1.0 - mix) + accent[2] * mix,
             )
 
+            alpha = 1.0
             if profile == "stone":
                 shadow = 1.0 - (crack * 0.28) - (vein * 0.07)
                 warm_edge = chip * (0.09 + streak * 0.05)
@@ -123,7 +124,8 @@ def generate_texture_set(
                     clamp((color[1] * wear) + oxidized[1] * (1.0 - wear)),
                     clamp((color[2] * wear) + oxidized[2] * (1.0 - wear)),
                 )
-            bc.extend((clamp(color[0]), clamp(color[1]), clamp(color[2]), 1.0))
+                alpha = clamp(0.70 + (wear * 0.22) - (chip * 0.18) - (crack * 0.14) + (streak * 0.04))
+            bc.extend((clamp(color[0]), clamp(color[1]), clamp(color[2]), alpha))
 
             bump_strength = 0.24 if profile == "stone" else 0.18 if profile == "earth" else 0.12
             bump = ((n1 - 0.5) * bump_strength) + ((n2 - 0.5) * 0.08) - (crack * 0.08) + (chip * 0.05)
@@ -147,10 +149,10 @@ def generate_texture_set(
 
 def generate_textures() -> dict[str, dict[str, Path]]:
     return {
-        "stone": generate_texture_set("Stone", (0.36, 0.345, 0.295), (0.78, 0.70, 0.54), 5103, "stone"),
-        "earth": generate_texture_set("Earth", (0.25, 0.17, 0.105), (0.52, 0.38, 0.24), 6207, "earth"),
-        "rawhide": generate_texture_set("Rawhide", (0.48, 0.30, 0.13), (0.82, 0.54, 0.23), 7301, "rawhide"),
-        "red": generate_texture_set("RedPaint", (0.46, 0.040, 0.026), (0.86, 0.12, 0.060), 8409, "red"),
+        "stone": generate_texture_set("Stone", (0.12, 0.118, 0.105), (0.40, 0.36, 0.28), 5103, "stone"),
+        "earth": generate_texture_set("Earth", (0.15, 0.095, 0.060), (0.36, 0.235, 0.135), 6207, "earth"),
+        "rawhide": generate_texture_set("Rawhide", (0.34, 0.20, 0.08), (0.64, 0.40, 0.17), 7301, "rawhide"),
+        "red": generate_texture_set("RedPaint", (0.20, 0.022, 0.016), (0.50, 0.060, 0.034), 8409, "red"),
     }
 
 
@@ -169,6 +171,8 @@ def make_texture_material(name: str, textures: dict[str, Path], roughness: float
     material["Aerathea.MaterialPass"] = "dcc_texture_integration_proof"
     if name.endswith("_RedPaint"):
         material["Aerathea.SurfaceTreatment"] = "worn_oxide_pigment_surface_decal"
+        material.blend_method = "BLEND"
+        material.show_transparent_back = False
 
     def load_image_node(path: Path, label: str, color_space: str) -> bpy.types.Node:
         image = bpy.data.images.load(str(path), check_existing=True)
@@ -198,6 +202,8 @@ def make_texture_material(name: str, textures: dict[str, Path], roughness: float
 
     links = material.node_tree.links
     links.new(bc_node.outputs["Color"], bsdf.inputs["Base Color"])
+    if name.endswith("_RedPaint"):
+        links.new(bc_node.outputs["Alpha"], bsdf.inputs["Alpha"])
     links.new(n_node.outputs["Color"], normal_map.inputs["Color"])
     links.new(normal_map.outputs["Normal"], bsdf.inputs["Normal"])
     links.new(orm_node.outputs["Color"], separate.inputs["Image"])
@@ -208,24 +214,38 @@ def make_texture_material(name: str, textures: dict[str, Path], roughness: float
     return material
 
 
+def make_flat_material(name: str, roughness: float, color: tuple[float, float, float], purpose: str) -> bpy.types.Material:
+    material = bpy.data.materials.new(name)
+    material.diffuse_color = (color[0], color[1], color[2], 1.0)
+    material.use_nodes = True
+    material["Aerathea.MaterialPass"] = purpose
+    nodes = material.node_tree.nodes
+    bsdf = nodes.get("Principled BSDF")
+    if bsdf is not None:
+        bsdf.inputs["Base Color"].default_value = (color[0], color[1], color[2], 1.0)
+        bsdf.inputs["Roughness"].default_value = roughness
+        bsdf.inputs["Metallic"].default_value = 0.0
+    return material
+
+
 def make_materials(texture_paths: dict[str, dict[str, Path]]) -> dict[str, bpy.types.Material]:
     return {
-        "stone": make_texture_material("M_GIA_BloodAxeCairnTarget_A1_A01_Stone", texture_paths["stone"], 0.93, (0.42, 0.39, 0.32)),
-        "stone_light": make_texture_material(
+        "stone": make_texture_material("M_GIA_BloodAxeCairnTarget_A1_A01_Stone", texture_paths["stone"], 0.94, (0.18, 0.175, 0.155)),
+        "stone_light": make_flat_material(
             "M_GIA_BloodAxeCairnTarget_A1_A01_StoneFacetLight",
-            texture_paths["stone"],
             0.9,
-            (0.53, 0.49, 0.39),
+            (0.32, 0.29, 0.22),
+            "dcc_hand_painted_edge_highlight_proof",
         ),
-        "stone_dark": make_texture_material(
+        "stone_dark": make_flat_material(
             "M_GIA_BloodAxeCairnTarget_A1_A01_StoneFacetDark",
-            texture_paths["stone"],
-            0.93,
-            (0.30, 0.285, 0.235),
+            0.94,
+            (0.075, 0.070, 0.060),
+            "dcc_hand_painted_crack_shadow_proof",
         ),
-        "earth": make_texture_material("M_GIA_BloodAxeCairnTarget_A1_A01_Earth", texture_paths["earth"], 0.96, (0.30, 0.20, 0.13)),
-        "rawhide": make_texture_material("M_GIA_BloodAxeCairnTarget_A1_A01_Rawhide", texture_paths["rawhide"], 0.88, (0.58, 0.36, 0.16)),
-        "red": make_texture_material("M_GIA_BloodAxeCairnTarget_A1_A01_RedPaint", texture_paths["red"], 0.96, (0.46, 0.032, 0.021)),
+        "earth": make_texture_material("M_GIA_BloodAxeCairnTarget_A1_A01_Earth", texture_paths["earth"], 0.96, (0.19, 0.12, 0.075)),
+        "rawhide": make_texture_material("M_GIA_BloodAxeCairnTarget_A1_A01_Rawhide", texture_paths["rawhide"], 0.9, (0.42, 0.25, 0.10)),
+        "red": make_texture_material("M_GIA_BloodAxeCairnTarget_A1_A01_RedPaint", texture_paths["red"], 0.97, (0.26, 0.024, 0.017)),
     }
 
 
@@ -420,7 +440,7 @@ def add_paint_strip(
     return add_rough_box(name, collection, material, location, dimensions, rotation, seed, bevel_scale=0.16, rough_scale=0.035)
 
 
-def add_worn_paint_patch(
+def add_surface_stroke(
     name: str,
     collection: bpy.types.Collection,
     material: bpy.types.Material,
@@ -428,24 +448,29 @@ def add_worn_paint_patch(
     dimensions: tuple[float, float, float],
     rotation: tuple[float, float, float],
     seed: int,
+    treatment: str,
+    segments: int = 13,
+    min_width: float = 0.10,
+    edge_noise: float = 0.72,
+    center_noise_scale: float = 0.36,
+    gap_threshold: float = 0.92,
 ) -> bpy.types.Object:
     length, _surface_offset, stroke_width = dimensions
-    segments = 9
     verts: list[tuple[float, float, float]] = []
     faces: list[tuple[int, int, int, int]] = []
     for index in range(segments + 1):
         t = index / segments
         x = (-length * 0.5) + (length * t)
-        taper = 0.46 + math.sin(t * math.pi) * 0.50
-        upper_noise = (deterministic_noise(index, seed, seed + 3) - 0.5) * stroke_width * 0.44
-        lower_noise = (deterministic_noise(seed, index, seed + 7) - 0.5) * stroke_width * 0.44
-        center_noise = (deterministic_noise(index, seed + 11, seed + 13) - 0.5) * stroke_width * 0.28
-        half_width = max(stroke_width * taper * 0.5, stroke_width * 0.20)
+        taper = 0.30 + math.sin(t * math.pi) * 0.66
+        upper_noise = (deterministic_noise(index, seed, seed + 3) - 0.5) * stroke_width * edge_noise
+        lower_noise = (deterministic_noise(seed, index, seed + 7) - 0.5) * stroke_width * edge_noise
+        center_noise = (deterministic_noise(index, seed + 11, seed + 13) - 0.5) * stroke_width * center_noise_scale
+        half_width = max(stroke_width * taper * 0.5, stroke_width * min_width)
         verts.append((x, 0.0, center_noise - half_width + lower_noise))
         verts.append((x, 0.0, center_noise + half_width + upper_noise))
 
     for index in range(segments):
-        if deterministic_noise(index, seed + 23, seed + 29) > 0.97:
+        if deterministic_noise(index, seed + 23, seed + 29) > gap_threshold:
             continue
         faces.append((index * 2, index * 2 + 1, index * 2 + 3, index * 2 + 2))
 
@@ -456,13 +481,39 @@ def add_worn_paint_patch(
     obj.location = location
     obj.rotation_euler = rotation
     obj.data.materials.append(material)
-    obj["Aerathea.PaintTreatment"] = "surface_pigment_patch_no_thickness"
+    obj["Aerathea.SurfaceTreatment"] = treatment
     try:
         obj.visible_shadow = False
     except AttributeError:
         pass
     collection.objects.link(obj)
     return obj
+
+
+def add_worn_paint_patch(
+    name: str,
+    collection: bpy.types.Collection,
+    material: bpy.types.Material,
+    location: tuple[float, float, float],
+    dimensions: tuple[float, float, float],
+    rotation: tuple[float, float, float],
+    seed: int,
+) -> bpy.types.Object:
+    return add_surface_stroke(
+        name,
+        collection,
+        material,
+        location,
+        dimensions,
+        rotation,
+        seed,
+        "worn_oxide_pigment_stain_no_thickness",
+        segments=17,
+        min_width=0.08,
+        edge_noise=0.62,
+        center_noise_scale=0.30,
+        gap_threshold=0.94,
+    )
 
 
 def add_cylinder_between(
@@ -679,66 +730,66 @@ def build_asset_lod(collection: bpy.types.Collection, materials: dict[str, bpy.t
     fractured_specs = [
         (
             "DominantDiagonalFrontSlab",
-            (0, -43, 72),
-            (176, 34, 136),
-            (math.radians(-32), math.radians(-9), math.radians(-12)),
+            (-12, -48, 64),
+            (158, 30, 112),
+            (math.radians(-38), math.radians(-10), math.radians(-20)),
             broad_front_outline,
             201,
         ),
         (
             "TallRearOathSlab",
-            (36, 52, 108),
-            (70, 34, 178),
-            (math.radians(-12), math.radians(8), math.radians(-11)),
+            (24, 50, 112),
+            (76, 32, 190),
+            (math.radians(-10), math.radians(7), math.radians(-9)),
             tall_crag_outline,
             202,
         ),
         (
             "RightUprightSupportStone",
-            (124, -6, 72),
-            (42, 30, 116),
-            (math.radians(2), math.radians(-8), math.radians(13)),
+            (116, -5, 68),
+            (54, 30, 114),
+            (math.radians(0), math.radians(-7), math.radians(5)),
             support_crag_outline,
             206,
         ),
         (
             "RightRearSupportStone",
-            (153, 38, 64),
-            (34, 28, 96),
-            (math.radians(-5), math.radians(6), math.radians(20)),
+            (150, 42, 58),
+            (32, 24, 82),
+            (math.radians(-5), math.radians(6), math.radians(15)),
             support_crag_outline,
             207,
         ),
     ]
     secondary_fractured_specs = [
-        ("LeftBundledStackLowSlab", (-117, -25, 33), (112, 42, 24), (math.radians(2), math.radians(-7), math.radians(8)), low_slab_outline, 203),
-        ("LeftBundledStackMidSlab", (-127, -26, 56), (96, 38, 22), (math.radians(-1), math.radians(5), math.radians(-6)), low_slab_outline, 204),
-        ("LeftBundledStackTopSlab", (-112, -23, 78), (82, 34, 20), (math.radians(4), math.radians(-5), math.radians(13)), low_slab_outline, 205),
-        ("RearLowCounterweight", (-42, 56, 47), (130, 40, 40), (math.radians(-4), math.radians(4), math.radians(10)), low_slab_outline, 208),
+        ("LeftBundledStackLowSlab", (-116, -28, 31), (100, 40, 23), (math.radians(2), math.radians(-7), math.radians(6)), low_slab_outline, 203),
+        ("LeftBundledStackMidSlab", (-126, -29, 52), (92, 36, 22), (math.radians(-1), math.radians(5), math.radians(-7)), low_slab_outline, 204),
+        ("LeftBundledStackTopSlab", (-111, -27, 73), (78, 32, 20), (math.radians(4), math.radians(-5), math.radians(12)), low_slab_outline, 205),
+        ("RearLowCounterweight", (-42, 57, 43), (112, 36, 34), (math.radians(-4), math.radians(4), math.radians(9)), low_slab_outline, 208),
     ]
     primary_specs: list[tuple[str, tuple[float, float, float], tuple[float, float, float], tuple[float, float, float], int]] = []
     if low:
         secondary_fractured_specs.extend(
             [
                 ("FrontBrokenFootStone", (42, -92, 28), (118, 32, 26), (math.radians(3), math.radians(4), math.radians(-5)), low_slab_outline, 209),
-                ("RearGroundLockStone", (26, 118, 31), (138, 34, 28), (math.radians(2), math.radians(-4), math.radians(2)), low_slab_outline, 210),
+                ("RearGroundLockStone", (26, 118, 29), (116, 30, 25), (math.radians(2), math.radians(-4), math.radians(2)), low_slab_outline, 210),
             ]
         )
     if mid:
         secondary_fractured_specs.extend(
             [
-                ("LeftBackBrokenShard", (-166, 20, 47), (38, 30, 70), (math.radians(-7), math.radians(8), math.radians(-18)), support_crag_outline, 211),
-                ("RearNeedleShardLeft", (-8, 72, 91), (24, 20, 94), (math.radians(-11), math.radians(-7), math.radians(7)), tall_crag_outline, 212),
-                ("RearNeedleShardRight", (92, 92, 77), (28, 22, 78), (math.radians(8), math.radians(5), math.radians(21)), support_crag_outline, 213),
+                ("LeftBackBrokenShard", (-160, 20, 45), (30, 24, 64), (math.radians(-7), math.radians(8), math.radians(-18)), support_crag_outline, 211),
+                ("RearNeedleShardLeft", (-12, 72, 89), (20, 18, 82), (math.radians(-11), math.radians(-7), math.radians(7)), tall_crag_outline, 212),
+                ("RearNeedleShardRight", (88, 92, 68), (22, 18, 62), (math.radians(8), math.radians(5), math.radians(17)), support_crag_outline, 213),
             ]
         )
     if detail:
         secondary_fractured_specs.extend(
             [
                 ("FrontLeftGroundShard", (-62, -107, 24), (56, 24, 30), (math.radians(5), math.radians(7), math.radians(-23)), low_slab_outline, 214),
-                ("FarRightSmallSupportShard", (179, -34, 43), (24, 22, 56), (math.radians(5), math.radians(-8), math.radians(18)), support_crag_outline, 215),
+                ("FarRightSmallSupportShard", (170, -34, 35), (18, 18, 40), (math.radians(5), math.radians(-8), math.radians(18)), support_crag_outline, 215),
                 ("BackLeftButtressShard", (-116, 95, 40), (70, 36, 52), (math.radians(-8), math.radians(-4), math.radians(-14)), low_slab_outline, 216),
-                ("BackRightButtressShard", (128, 102, 43), (70, 32, 56), (math.radians(5), math.radians(7), math.radians(14)), support_crag_outline, 217),
+                ("BackRightButtressShard", (128, 102, 40), (58, 28, 46), (math.radians(5), math.radians(7), math.radians(14)), support_crag_outline, 217),
             ]
         )
 
@@ -752,66 +803,65 @@ def build_asset_lod(collection: bpy.types.Collection, materials: dict[str, bpy.t
         objects.append(add_rough_box(f"{prefix}_Stone_{label}", collection, materials["stone"], location, dimensions, rotation, seed + lod * 31))
 
     if mid:
-        facet_specs = [
-            ("FrontSlabTopLightFacet", (-58, -81, 121), (48, 2.8, 38), (math.radians(-31), math.radians(-8), math.radians(-18)), "stone_light", 251),
-            ("FrontSlabCenterDarkBreak", (-5, -83, 92), (42, 2.8, 48), (math.radians(-31), math.radians(-8), math.radians(9)), "stone_dark", 252),
-            ("FrontSlabLowerLightChip", (49, -83, 57), (56, 2.8, 26), (math.radians(-31), math.radians(-8), math.radians(-18)), "stone_light", 253),
-            ("RearSlabLeftLightFacet", (18, 20, 139), (28, 2.8, 48), (math.radians(-8), math.radians(8), math.radians(-15)), "stone_light", 254),
-            ("RearSlabBaseDarkFacet", (56, 18, 80), (32, 2.8, 38), (math.radians(-8), math.radians(8), math.radians(9)), "stone_dark", 255),
-            ("FrontSlabUpperRightLightPlane", (58, -82, 116), (44, 2.8, 34), (math.radians(-31), math.radians(-8), math.radians(31)), "stone_light", 260),
-            ("FrontSlabLongDarkFault", (12, -84, 79), (74, 2.5, 8), (math.radians(-31), math.radians(-8), math.radians(62)), "stone_dark", 261),
-            ("FrontSlabUpperLeftChippedPlane", (-36, -82, 126), (46, 2.4, 18), (math.radians(-31), math.radians(-8), math.radians(47)), "stone_light", 262),
-            ("FrontSlabLowerCenterDarkPocket", (7, -84, 51), (44, 2.4, 18), (math.radians(-31), math.radians(-8), math.radians(-8)), "stone_dark", 263),
-            ("RightRearStoneDarkSideBreak", (151, 21, 82), (22, 2.4, 42), (math.radians(-5), math.radians(6), math.radians(-18)), "stone_dark", 264),
-        ]
-        if detail:
-            facet_specs.extend(
-                [
-                    ("FrontSlabLeftEdgeDarkChip", (-88, -82, 74), (30, 2.8, 50), (math.radians(-31), math.radians(-8), math.radians(17)), "stone_dark", 256),
-                    ("FrontSlabRightEdgeLightChip", (82, -83, 99), (32, 2.8, 38), (math.radians(-31), math.radians(-8), math.radians(-32)), "stone_light", 257),
-                    ("RightSupportLightFacet", (123, -28, 82), (22, 2.6, 38), (math.radians(2), math.radians(-8), math.radians(19)), "stone_light", 258),
-                    ("LeftStackLightTopChip", (-121, -51, 85), (35, 2.6, 16), (math.radians(3), math.radians(-5), math.radians(10)), "stone_light", 259),
-                    ("FrontFootStoneLightBrokenFace", (38, -112, 39), (56, 2.4, 15), (math.radians(3), math.radians(4), math.radians(6)), "stone_light", 265),
-                    ("BackTallSlabTopChip", (48, 36, 184), (26, 2.4, 28), (math.radians(-10), math.radians(7), math.radians(-28)), "stone_light", 266),
-                ]
-            )
+        facet_specs: list[tuple[str, tuple[float, float, float], tuple[float, float, float], tuple[float, float, float], str, int]] = []
         for label, location, dimensions, rotation, material_key, seed in facet_specs:
             objects.append(add_surface_facet(f"{prefix}_StoneFacet_{label}", collection, materials[material_key], location, dimensions, rotation, seed + lod * 29))
 
     if mid:
         paint_specs = [
-            ("MainLongAxeSigilStem", (0, -86, 88), (118, 0.0, 9.5), (math.radians(-31), math.radians(-8), math.radians(62)), 301),
-            ("MainAxeBladeUpperSlash", (-35, -87, 107), (76, 0.0, 9.0), (math.radians(-31), math.radians(-8), math.radians(9)), 302),
-            ("MainAxeBladeLowerSlash", (24, -86, 78), (80, 0.0, 8.5), (math.radians(-31), math.radians(-8), math.radians(-28)), 303),
-            ("LeftStackRedSmear", (-126, -51, 70), (62, 0.0, 7.0), (math.radians(2), math.radians(-6), math.radians(5)), 304),
-            ("RearSlabSmallWarMark", (53, 17, 142), (44, 0.0, 7.0), (math.radians(-7), math.radians(9), math.radians(-32)), 305),
+            ("MainSlabCentralLongBloodAxeStem", (2, -89, 76), (118, 0.0, 9.5), (math.radians(-38), math.radians(-10), math.radians(58)), 301),
+            ("MainSlabUpperLeftPaintSweep", (-38, -90, 92), (78, 0.0, 9.0), (math.radians(-38), math.radians(-10), math.radians(12)), 302),
+            ("MainSlabLowerRightPaintSweep", (21, -89, 60), (74, 0.0, 8.2), (math.radians(-38), math.radians(-10), math.radians(-31)), 303),
+            ("MainSlabCircularLeftBrokenArc", (-34, -90, 76), (50, 0.0, 7.6), (math.radians(-38), math.radians(-10), math.radians(99)), 312),
+            ("MainSlabCircularRightBrokenArc", (13, -89, 84), (52, 0.0, 7.6), (math.radians(-38), math.radians(-10), math.radians(-82)), 313),
+            ("LeftStackSubtleRedSmear", (-132, -51, 66), (56, 0.0, 6.0), (math.radians(2), math.radians(-6), math.radians(8)), 304),
+            ("RearSlabTallWarPaint", (30, 16, 139), (78, 0.0, 9.0), (math.radians(-10), math.radians(7), math.radians(66)), 305),
         ]
         if lod == 0:
             paint_specs.extend(
                 [
-                    ("MainShortRaggedBottomStroke", (35, -86, 57), (56, 0.0, 6.2), (math.radians(-31), math.radians(-8), math.radians(72)), 306),
-                    ("MainRaggedAxeHeadPatch", (-9, -87, 77), (36, 0.0, 15.0), (math.radians(-31), math.radians(-8), math.radians(14)), 307),
-                    ("MainLeftHookBrokenStroke", (-49, -87, 88), (48, 0.0, 6.2), (math.radians(-31), math.radians(-8), math.radians(46)), 309),
-                    ("MainDryBrushTopChipA", (-18, -87, 117), (30, 0.0, 5.4), (math.radians(-31), math.radians(-8), math.radians(-42)), 310),
-                    ("MainDryBrushBottomDrip", (18, -86, 47), (34, 0.0, 5.4), (math.radians(-31), math.radians(-8), math.radians(84)), 311),
-                    ("RightSupportSmallMark", (128, -32, 77), (34, 0.0, 5.8), (math.radians(3), math.radians(-9), math.radians(36)), 308),
+                    ("MainSlabBottomDripToGround", (29, -89, 42), (54, 0.0, 5.8), (math.radians(-38), math.radians(-10), math.radians(75)), 306),
+                    ("MainSlabCenterAxeHeadPatch", (-8, -90, 73), (40, 0.0, 13.5), (math.radians(-38), math.radians(-10), math.radians(11)), 307),
+                    ("MainSlabLeftHookBrokenStroke", (-50, -90, 82), (46, 0.0, 5.4), (math.radians(-38), math.radians(-10), math.radians(42)), 309),
+                    ("MainSlabDryBrushTopChip", (-21, -90, 104), (28, 0.0, 4.8), (math.radians(-38), math.radians(-10), math.radians(-45)), 310),
+                    ("MainSlabLowerDryBrushBreak", (1, -89, 47), (34, 0.0, 4.8), (math.radians(-38), math.radians(-10), math.radians(7)), 311),
                 ]
             )
         for label, location, dimensions, rotation, seed in paint_specs:
             objects.append(add_worn_paint_patch(f"{prefix}_BloodAxePaint_{label}", collection, materials["red"], location, dimensions, rotation, seed + lod * 37))
 
+        surface_overlay_specs: list[tuple[str, tuple[float, float, float], tuple[float, float, float], tuple[float, float, float], str, int]] = []
+        for label, location, dimensions, rotation, material_key, seed in surface_overlay_specs:
+            objects.append(
+                add_surface_stroke(
+                    f"{prefix}_StoneSurface_{label}",
+                    collection,
+                    materials[material_key],
+                    location,
+                    dimensions,
+                    rotation,
+                    seed + lod * 41,
+                    "stone_crack_or_edge_overlay_no_thickness",
+                    segments=12,
+                    min_width=0.10,
+                    edge_noise=0.35,
+                    center_noise_scale=0.18,
+                    gap_threshold=0.97,
+                )
+            )
+
     if detail:
         rope_specs = [
-            ("LeftStackWrapUpper", (-162, -58, 72), (-82, -57, 69), 3.2, 401),
-            ("LeftStackWrapLower", (-158, -58, 50), (-91, -57, 47), 2.8, 402),
-            ("LeftStackWrapDiagA", (-160, -59, 42), (-86, -57, 80), 2.7, 403),
-            ("LeftStackWrapDiagB", (-158, -59, 80), (-92, -57, 39), 2.7, 404),
-            ("LeftStackVerticalLashA", (-151, -59, 29), (-148, -58, 95), 2.4, 407),
-            ("LeftStackVerticalLashB", (-96, -58, 31), (-100, -57, 89), 2.4, 408),
-            ("RightSupportWrap", (115, -37, 58), (151, -36, 88), 2.7, 405),
-            ("RightSupportLowTie", (112, -37, 47), (151, -36, 51), 2.4, 409),
-            ("RearCounterweightBinding", (-75, 103, 55), (21, 104, 58), 2.7, 406),
-            ("RearSlabWaistWrap", (18, 21, 104), (75, 22, 108), 2.6, 410),
+            ("LeftStackWrapUpper", (-160, -59, 69), (-84, -58, 67), 2.1, 401),
+            ("LeftStackWrapLower", (-156, -59, 49), (-91, -58, 47), 1.9, 402),
+            ("LeftStackWrapDiagA", (-158, -60, 42), (-89, -58, 75), 1.6, 403),
+            ("LeftStackWrapDiagB", (-156, -60, 77), (-95, -58, 39), 1.6, 404),
+            ("LeftStackVerticalLashA", (-150, -60, 31), (-148, -59, 88), 1.6, 407),
+            ("LeftStackVerticalLashB", (-99, -60, 32), (-101, -59, 84), 1.5, 408),
+            ("RightSupportWrap", (113, -38, 60), (149, -37, 83), 1.8, 405),
+            ("RightSupportLowTie", (112, -38, 49), (149, -37, 50), 1.6, 409),
+            ("RearCounterweightBinding", (-72, 103, 51), (15, 104, 54), 1.8, 406),
+            ("RearSlabWaistWrap", (18, 21, 101), (69, 22, 105), 1.7, 410),
         ]
         for label, start, end, radius, seed in rope_specs:
             objects.append(add_cylinder_between(f"{prefix}_RawhideRope_{label}", collection, materials["rawhide"], start, end, radius, seed))
@@ -976,7 +1026,7 @@ def look_at(camera: bpy.types.Object, target: Vector) -> None:
 def configure_review_scene() -> tuple[bpy.types.Object, Vector]:
     world = bpy.context.scene.world or bpy.data.worlds.new("AeratheaDCCWorld")
     bpy.context.scene.world = world
-    world.color = (0.72, 0.70, 0.66)
+    world.color = (0.60, 0.59, 0.56)
 
     scene = bpy.context.scene
     try:
@@ -991,32 +1041,32 @@ def configure_review_scene() -> tuple[bpy.types.Object, Vector]:
         pass
     scene.view_settings.view_transform = "Standard"
     scene.view_settings.look = "None"
-    scene.view_settings.exposure = 1.45
+    scene.view_settings.exposure = 0.82
     scene.view_settings.gamma = 1.0
     scene.render.film_transparent = False
 
     bpy.ops.object.light_add(type="AREA", location=(-260, -320, 430))
     key = bpy.context.object
     key.name = "AET_DCC_Key_Area"
-    key.data.energy = 68000.0
+    key.data.energy = 52000.0
     key.data.size = 430.0
 
     bpy.ops.object.light_add(type="POINT", location=(280, -240, 190))
     fill = bpy.context.object
     fill.name = "AET_DCC_Fill_Point"
-    fill.data.energy = 26000.0
+    fill.data.energy = 18000.0
     fill.data.shadow_soft_size = 380.0
 
     bpy.ops.object.light_add(type="AREA", location=(250, 340, 270))
     rim = bpy.context.object
     rim.name = "AET_DCC_Back_Rim_Area"
-    rim.data.energy = 24000.0
+    rim.data.energy = 19000.0
     rim.data.size = 360.0
 
     bpy.ops.object.light_add(type="SUN", location=(-220, -340, 520))
     sun = bpy.context.object
     sun.name = "AET_DCC_Broad_SunFill"
-    sun.data.energy = 3.6
+    sun.data.energy = 2.4
     look_at(sun, Vector((0.0, -2.0, 75.0)))
 
     bpy.ops.object.camera_add(location=(315, -430, 220))
@@ -1032,9 +1082,18 @@ def configure_review_scene() -> tuple[bpy.types.Object, Vector]:
     return camera, target
 
 
-def render_view(camera: bpy.types.Object, target: Vector, location: tuple[float, float, float], path: Path, resolution: tuple[int, int]) -> None:
+def render_view(
+    camera: bpy.types.Object,
+    target: Vector,
+    location: tuple[float, float, float],
+    path: Path,
+    resolution: tuple[int, int],
+    ortho_scale: float | None = None,
+) -> None:
     camera.location = location
     look_at(camera, target)
+    if ortho_scale is not None:
+        camera.data.ortho_scale = ortho_scale
     ensure_dir(path.parent)
     scene = bpy.context.scene
     scene.render.resolution_x = resolution[0]
@@ -1143,6 +1202,14 @@ def main() -> None:
     ]
     for path, location in zip(render_paths, view_locations):
         render_view(camera, target, location, path, (960, 540))
+    render_view(
+        camera,
+        Vector((-10.0, -24.0, 76.0)),
+        (-125, -525, 188),
+        REVIEW_ROOT / f"{ASSET_NAME}_TargetFrontMatchReview.png",
+        (960, 540),
+        430.0,
+    )
     compose_review_board(render_paths, REVIEW_ROOT / f"{ASSET_NAME}_DCCProofTurntable.png", 960, 540)
 
     blend_path = BLENDER_ROOT / REL_PATH / f"{ASSET_NAME}.blend"

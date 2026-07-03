@@ -20,10 +20,11 @@
 - Strict front paint comparison: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_StrictFrontPaintCompare.png`
 - DCC target-layout proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_DCCProofTargetLayout.png`
 - Material/texture proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_MaterialTextureProof.png`
-- LOD0: 5914 tris
-- LOD1: 3132 tris
-- LOD2: 1376 tris
-- LOD3: 1104 tris
+- Rejected clean baseline proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_RejectedCleanBaseline_A02.png`
+- LOD0: 4356 tris
+- LOD1: 2168 tris
+- LOD2: 1396 tris
+- LOD3: 1116 tris
 
 ## Second Geometry Pass
 
@@ -73,6 +74,16 @@
 - Latest triangle counts: LOD0 5914 tris, LOD1 3132, LOD2 1376, LOD3 1104.
 - Status remains `DCC source candidate pending concept-geometry and paint review`.
 
+## Strict A1 Rejection Learning Pass
+
+- Flamestrike rejected the latest A1 image as not approved.
+- Revision attempt tested darker stone/earth/rawhide texture ranges, a lower/wider dominant front slab, thinner darkened lashings, and more visible worn red pigment.
+- A crack/highlight overlay attempt failed because the flat surface accent planes read as white/black graphic shards instead of natural hand-painted stone breakup.
+- Failed overlay accent planes were removed from the active clean baseline; their lesson is retained in source history, not in the current proof.
+- Latest clean baseline proof is saved as `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_RejectedCleanBaseline_A02.png`.
+- Latest triangle counts: LOD0 4356 tris, LOD1 2168, LOD2 1396, LOD3 1116.
+- Status remains `DCC source candidate pending concept-geometry and paint review`; final approval status is `not approved`.
+
 ## Gate
 
 The current proof must be evaluated against the A1 target image side by side. If the DCC candidate does not match the dominant A1 geometry or if the red paint still reads as separate geometry, revise the DCC source before any Unreal import, final texture polish, or batch expansion.
@@ -120,6 +131,7 @@ Remaining gaps before approval:
 - Rope bindings have round volume, but their contact and wrapping paths should be refined after geometry approval.
 - Ground rubble density is better, but the mound still needs a more natural dirt/stone blend around the footprint.
 - Current proof material is a first-pass DCC texture integration pass; final Unreal material instances and import validation are still pending.
+- Latest rejected proof remains too broad and wall-like compared with A1; next correction must start from traced front proportions before adding any further texture/detail overlays.
 
 Decision: hold at `DCC source candidate pending concept-geometry and paint review`; do not import to Unreal yet. This is not a `DCC game-ready candidate` and not `Fully game-ready`.
 
