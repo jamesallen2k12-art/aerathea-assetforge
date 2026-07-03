@@ -30,6 +30,7 @@
 - A1 target multiview prep contact sheet: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_TargetMultiviewPrep_A10.png`
 - TRELLIS-AMD reference comparison: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_TRELLISReferenceCompare_A11.png`
 - Continuous slab proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_ContinuousSlabPass_A13.png`
+- A1 landmark mismatch guide: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_A1_LandmarkMismatchGuide_A14.png`
 - LOD0: 4506 tris
 - LOD1: 2408 tris
 - LOD2: 1342 tris
@@ -179,6 +180,13 @@
 - Status remains `DCC source candidate pending concept-geometry and paint review`; final approval status remains `not approved`.
 - Review note: this pass fixes the A09 layered-shingle problem, but it still does not match A1 closely enough. The main stone still reads as a broad flat shield-like slab, the procedural stone speckling is too regular, and the red paint still reads as broken strip geometry rather than naturally worn pigment in the concept.
 - Next pass must stop freehand parameter tuning and create a target-contour/landmark overlay from the A1 front crop. Use that overlay to lock silhouette, dominant slab angle, paint-mask placement, side-support positions, and rear-slab overlap before regenerating the DCC source.
+
+## Target Landmark Mismatch Guide
+
+- Added `Tools/DCC/build_bloodaxe_a1_landmark_mismatch_guide.py` to place the locked A1 target polygons beside the rejected A13 proof.
+- Generated `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_A1_LandmarkMismatchGuide_A14.png`.
+- The board confirms A13 is still not approved: the main slab is too broad and shield-like, the rear slab dominates too much as a centered tower, side masses are outside the intended concept bounds, and paint must move from modeled red strip strokes to a texture/mask pass.
+- Next pass should modify the DCC rebuild to satisfy the A14 landmark guide before restoring detailed stone surface noise or final paint texture work.
 
 ## Gate
 
