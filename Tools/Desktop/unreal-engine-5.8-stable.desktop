@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Unreal Engine 5.8 Stable
+Comment=Launch Aerathea in Unreal Editor using the AMDGPU Vulkan route
+Exec=/home/james/Projects/Aerathea/Tools/Unreal/launch_aerathea_editor_desktop.sh
+Path=/home/james/Projects/Aerathea
+Icon=applications-development
+Terminal=false
+Categories=Development;IDE;
+StartupNotify=true

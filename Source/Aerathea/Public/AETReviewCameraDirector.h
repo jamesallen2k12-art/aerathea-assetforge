@@ -51,6 +51,7 @@ private:
 	void ConfigureEncounterReviewPhase();
 	void ConfigureFocusedEncounterCamera(class ACameraActor* CameraActor);
 	void ConfigureReviewMarkers();
+	void UpdateOrbitCamera(float DeltaSeconds);
 	void MarkScreenshotDelayElapsed();
 	void TryRequestReviewScreenshot();
 	void RequestReviewExit();
@@ -58,7 +59,17 @@ private:
 	bool bReviewScreenshotRequested;
 	bool bScreenshotDelayElapsed;
 	bool bReviewExposureConfigured;
+	bool bOrbitReviewCamera;
 	float CaptureElapsedSeconds;
+	float OrbitElapsedSeconds;
+	float OrbitStartAngleDegrees;
+	float OrbitSpeedDegreesPerSecond;
+	float OrbitRadius;
+	float OrbitHeight;
+	float OrbitFieldOfView;
+	float OrbitLogElapsedSeconds;
+	FVector OrbitTarget;
+	bool bOrbitCameraMissingLogged;
 	int32 RemainingWarmupFrames;
 	int32 PostScreenshotExitFrames;
 

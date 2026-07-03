@@ -59,6 +59,87 @@ EXPECTED_ASSETS = [
     "/Game/Aerathea/Materials/M_GNM_MekPilotWorkwear_Blockout_A01",
     "/Game/Aerathea/Materials/M_GNM_MekPilotHair_Blockout_A01",
     "/Game/Aerathea/Materials/M_GNM_Mek_Leather_Blockout_A01",
+    "/Game/Aerathea/Materials/M_ABY_CharredFlesh_Blockout_A01",
+    "/Game/Aerathea/Materials/M_ABY_ScorchedIron_Blockout_A01",
+    "/Game/Aerathea/Materials/M_ABY_AshCloth_Blockout_A01",
+    "/Game/Aerathea/Materials/M_ABY_BoneHorn_Blockout_A01",
+    "/Game/Aerathea/Materials/M_ABY_PikeBlackIron_Blockout_A01",
+    "/Game/Aerathea/Materials/M_ABY_VoidGlow_Blockout_A01",
+    "/Game/Aerathea/Materials/M_ABY_EmberFissure_Blockout_A01",
+    "/Game/Aerathea/Materials/Gnome/Iona/M_GNM_IonaMek_DarkIron_Blockout_A01",
+    "/Game/Aerathea/Materials/Gnome/Iona/M_GNM_IonaMek_BrassCopper_Blockout_A01",
+    "/Game/Aerathea/Materials/Gnome/Iona/M_GNM_IonaMek_LeatherCable_Blockout_A01",
+    "/Game/Aerathea/Materials/Gnome/Iona/M_GNM_IonaMek_AetheriumGlow_Blockout_A01",
+    "/Game/Aerathea/Materials/Gnome/Iona/M_GNM_IonaMek_CockpitGlass_Blockout_A01",
+    "/Game/Aerathea/Materials/Gnome/Iona/M_GNM_IonaPilotSkin_Blockout_A01",
+    "/Game/Aerathea/Materials/Gnome/Iona/M_GNM_IonaPilotHair_Blockout_A01",
+    "/Game/Aerathea/Materials/Gnome/Iona/M_GNM_IonaPilotWorkwear_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/Mage/M_INF_Mage_Skin_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/Mage/M_INF_Mage_HornClaw_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/Mage/M_INF_Mage_Wing_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/Mage/M_INF_Mage_RitualCloth_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/Mage/M_INF_Mage_ObsidianArmor_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/Mage/M_INF_Mage_BoneOrnaments_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/Mage/M_INF_Mage_AbyssalGlow_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/Warrior/M_INF_Warrior_Skin_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/Warrior/M_INF_Warrior_HornClaw_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/Warrior/M_INF_Warrior_Wing_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/Warrior/M_INF_Warrior_RitualCloth_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/Warrior/M_INF_Warrior_ObsidianArmor_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/Warrior/M_INF_Warrior_BoneOrnaments_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/Warrior/M_INF_Warrior_AbyssalGlow_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/Rogue/M_INF_Rogue_Skin_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/Rogue/M_INF_Rogue_HornClaw_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/Rogue/M_INF_Rogue_Wing_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/Rogue/M_INF_Rogue_Wraps_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/Rogue/M_INF_Rogue_LightArmor_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/Rogue/M_INF_Rogue_BoneHorn_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/Rogue/M_INF_Rogue_SightGlow_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/Hunter/M_INF_Hunter_Skin_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/Hunter/M_INF_Hunter_HornClaw_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/Hunter/M_INF_Hunter_Wing_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/Hunter/M_INF_Hunter_HarnessLeather_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/Hunter/M_INF_Hunter_PursuitArmor_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/Hunter/M_INF_Hunter_BoneHorn_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/Hunter/M_INF_Hunter_SightMarkGlow_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/HornWingArch/M_INF_HornWingArch_CultStone_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/HornWingArch/M_INF_HornWingArch_ScorchedStone_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/HornWingArch/M_INF_HornWingArch_ObsidianIron_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/HornWingArch/M_INF_HornWingArch_BoneHorn_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/HornWingArch/M_INF_HornWingArch_BrandGlow_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/WorthinessAltar/M_INF_WorthinessAltar_CultStone_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/WorthinessAltar/M_INF_WorthinessAltar_ScorchedStone_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/WorthinessAltar/M_INF_WorthinessAltar_ObsidianIron_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/WorthinessAltar/M_INF_WorthinessAltar_BoneHorn_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/WorthinessAltar/M_INF_WorthinessAltar_BrandGlow_Blockout_A01",
+    "/Game/Aerathea/Materials/Infernals/M_INF_BrandGlow_Master_A01",
+    "/Game/Aerathea/Materials/Infernals/MF_INF_BrandGlowStates_A01",
+    "/Game/Aerathea/Materials/Instances/MI_INF_BrandGlowStates_A01_Inactive",
+    "/Game/Aerathea/Materials/Instances/MI_INF_BrandGlowStates_A01_Smolder",
+    "/Game/Aerathea/Materials/Instances/MI_INF_BrandGlowStates_A01_TrialActive",
+    "/Game/Aerathea/Materials/Instances/MI_INF_BrandGlowStates_A01_Accepted",
+    "/Game/Aerathea/Materials/Instances/MI_INF_BrandGlowStates_A01_Rejected",
+    "/Game/Aerathea/Materials/Instances/MI_INF_BrandGlowStates_A01_SorcererFocus",
+    "/Game/Aerathea/Materials/Infernals/VFX/M_INF_WorthinessRing_A01",
+    "/Game/Aerathea/Materials/Infernals/VFX/M_INF_WorthinessSigil_A01",
+    "/Game/Aerathea/Materials/Infernals/VFX/M_INF_WorthinessAsh_A01",
+    "/Game/Aerathea/Materials/Infernals/VFX/M_INF_WorthinessRejected_A01",
+    "/Game/Aerathea/Materials/Infernals/VFX/M_INF_WorthinessJudgmentPulse_A01",
+    "/Game/Aerathea/Materials/Instances/MI_INF_WorthinessRing_A01",
+    "/Game/Aerathea/Materials/Instances/MI_INF_WorthinessSigil_A01",
+    "/Game/Aerathea/Materials/Instances/MI_INF_WorthinessAsh_A01",
+    "/Game/Aerathea/Materials/Instances/MI_INF_WorthinessRejected_A01",
+    "/Game/Aerathea/Materials/Instances/MI_INF_WorthinessJudgmentPulse_A01",
+    "/Game/Aerathea/VFX/Infernals/WorthinessJudgment/NS_INF_Worthiness_Inactive_A01",
+    "/Game/Aerathea/VFX/Infernals/WorthinessJudgment/NS_INF_Worthiness_Smolder_A01",
+    "/Game/Aerathea/VFX/Infernals/WorthinessJudgment/NS_INF_Worthiness_TrialActive_A01",
+    "/Game/Aerathea/VFX/Infernals/WorthinessJudgment/NS_INF_Worthiness_Accepted_A01",
+    "/Game/Aerathea/VFX/Infernals/WorthinessJudgment/NS_INF_Worthiness_Rejected_A01",
+    "/Game/Aerathea/VFX/Infernals/WorthinessJudgment/NS_INF_Worthiness_JudgmentPulse_A01",
+    "/Game/Aerathea/VFX/Infernals/WorthinessJudgment/NE_INF_WorthinessRingPulse_A01",
+    "/Game/Aerathea/VFX/Infernals/WorthinessJudgment/NE_INF_WorthinessSigilPulse_A01",
+    "/Game/Aerathea/VFX/Infernals/WorthinessJudgment/NE_INF_WorthinessAshMote_A01",
+    "/Game/Aerathea/VFX/Infernals/WorthinessJudgment/NE_INF_WorthinessRejectedSnap_A01",
     "/Game/Aerathea/Props/Training/SM_AET_TargetDummy_A01",
     "/Game/Aerathea/Props/Portal/SM_AET_PortalArch_A01",
     "/Game/Aerathea/Props/Environment/SM_AET_ModularGroundTile_A01",
@@ -126,7 +207,32 @@ EXPECTED_ASSETS = [
     "/Game/Aerathea/Characters/Ogres/Necromancer/SK_OGR_Necromancer_A01",
     "/Game/Aerathea/Characters/Ogres/Necromancer/PHYS_OGR_Necromancer_A01",
     "/Game/Aerathea/Characters/Ogres/Necromancer/ABP_OGR_Necromancer_A01",
+    "/Game/Aerathea/Creatures/Abyss/Troops/BlackPikeTrooper/SK_ABY_BlackPikeTrooper_A01",
+    "/Game/Aerathea/Creatures/Abyss/Troops/BlackPikeTrooper/SK_ABY_BlackPikeTrooper_A01_Skeleton",
+    "/Game/Aerathea/Creatures/Abyss/Troops/BlackPikeTrooper/PHYS_ABY_BlackPikeTrooper_A01",
+    "/Game/Aerathea/Creatures/Abyss/Troops/BlackPikeTrooper/ABP_ABY_Trooper_A01",
+    "/Game/Aerathea/Characters/Gnomes/Iona/Mek/SK_GNM_IonaSiegebreakerMek_A01",
+    "/Game/Aerathea/Characters/Gnomes/Iona/Mek/SK_GNM_IonaSiegebreakerMek_A01_Skeleton",
+    "/Game/Aerathea/Characters/Gnomes/Iona/Mek/PHYS_GNM_IonaSiegebreakerMek_A01",
+    "/Game/Aerathea/Characters/Gnomes/Iona/Mek/ABP_GNM_IonaSiegebreakerMek_A01",
+    "/Game/Aerathea/Characters/Infernals/Base/SK_INF_Base_Compact_A01_Skeleton",
+    "/Game/Aerathea/Characters/Infernals/Base/SK_INF_Base_Tall_A01_Skeleton",
+    "/Game/Aerathea/Characters/Infernals/Mage/SK_INF_Mage_A01",
+    "/Game/Aerathea/Characters/Infernals/Mage/PHYS_INF_Mage_A01",
+    "/Game/Aerathea/Characters/Infernals/Mage/ABP_INF_Mage_A01",
+    "/Game/Aerathea/Characters/Infernals/Warrior/SK_INF_Warrior_A01",
+    "/Game/Aerathea/Characters/Infernals/Warrior/PHYS_INF_Warrior_A01",
+    "/Game/Aerathea/Characters/Infernals/Warrior/ABP_INF_Warrior_A01",
+    "/Game/Aerathea/Characters/Infernals/Rogue/SK_INF_Rogue_A01",
+    "/Game/Aerathea/Characters/Infernals/Rogue/PHYS_INF_Rogue_A01",
+    "/Game/Aerathea/Characters/Infernals/Rogue/ABP_INF_Rogue_A01",
+    "/Game/Aerathea/Characters/Infernals/Hunter/SK_INF_Hunter_A01",
+    "/Game/Aerathea/Characters/Infernals/Hunter/PHYS_INF_Hunter_A01",
+    "/Game/Aerathea/Characters/Infernals/Hunter/ABP_INF_Hunter_A01",
     "/Game/Aerathea/Props/Infernals/BalgorothCult/SM_INF_CullingTrialFloor_A01",
+    "/Game/Aerathea/Props/Infernals/BalgorothCult/SM_INF_HornWingArch_A01",
+    "/Game/Aerathea/Props/Infernals/BalgorothCult/SM_INF_WorthinessAltar_A01",
+    "/Game/Aerathea/Blueprints/Infernals/BP_INF_RitualAltar_A01",
     "/Game/Aerathea/Blueprints/Props/BP_AET_Portal_A01",
     "/Game/Aerathea/Blueprints/Props/BP_AET_TargetDummy_A01",
     "/Game/Aerathea/Blueprints/GnomeOgre/BP_GNM_HeavyMekShieldwall_A01",
@@ -165,6 +271,8 @@ EXPECTED_ACTOR_LABELS = [
     "AET_PROD_Palisade_Corner_A01",
     "AET_PROD_Palisade_Gate_A01",
     "AET_PROD_INF_CullingTrialFloor_A01",
+    "AET_PROD_INF_HornWingArch_A01",
+    "AET_PROD_INF_WorthinessAltar_A01",
     "AET_PROD_OgreTeknomancer_A01",
     "AET_PROD_OgreWarrior_Rival_A01",
     "AET_PROD_OGR_CairnBattleGate_A01",
@@ -174,6 +282,12 @@ EXPECTED_ACTOR_LABELS = [
     "AET_PROD_CRE_Manticore_Interrupt_A01",
     "AET_PROD_OgreShaman_A01",
     "AET_PROD_OgreNecromancer_A01",
+    "AET_PROD_ABY_BlackPikeTrooper_A01",
+    "AET_PROD_GNM_IonaSiegebreakerMek_A01",
+    "AET_PROD_INF_Mage_A01",
+    "AET_PROD_INF_Warrior_A01",
+    "AET_PROD_INF_Rogue_A01",
+    "AET_PROD_INF_Hunter_A01",
     "AET_PROD_GNM_OGR_BattlefieldEncounter_A01",
     "AET_PROD_PlayerStart_Review_A01",
     "AET_PROD_Camera_Review_A01",
@@ -221,6 +335,8 @@ EXPECTED_STATIC_MESHES = [
     "/Game/Aerathea/Props/Ogres/CairnFortifications/SM_OGR_CairnBattleGate_A01",
     "/Game/Aerathea/Props/Ogres/Teknomancy/SM_OGR_CrudeTekPylon_A01",
     "/Game/Aerathea/Props/Infernals/BalgorothCult/SM_INF_CullingTrialFloor_A01",
+    "/Game/Aerathea/Props/Infernals/BalgorothCult/SM_INF_HornWingArch_A01",
+    "/Game/Aerathea/Props/Infernals/BalgorothCult/SM_INF_WorthinessAltar_A01",
 ]
 EXPECTED_SKELETAL_MESHES = [
     (
@@ -278,8 +394,39 @@ EXPECTED_SKELETAL_MESHES = [
         "/Game/Aerathea/Characters/Ogres/Necromancer/PHYS_OGR_Necromancer_A01",
         "/Game/Aerathea/Characters/Ogres/Base/SK_OGR_Base_Male_A01_Skeleton",
     ),
+    (
+        "/Game/Aerathea/Creatures/Abyss/Troops/BlackPikeTrooper/SK_ABY_BlackPikeTrooper_A01",
+        "/Game/Aerathea/Creatures/Abyss/Troops/BlackPikeTrooper/PHYS_ABY_BlackPikeTrooper_A01",
+        "/Game/Aerathea/Creatures/Abyss/Troops/BlackPikeTrooper/SK_ABY_BlackPikeTrooper_A01_Skeleton",
+    ),
+    (
+        "/Game/Aerathea/Characters/Gnomes/Iona/Mek/SK_GNM_IonaSiegebreakerMek_A01",
+        "/Game/Aerathea/Characters/Gnomes/Iona/Mek/PHYS_GNM_IonaSiegebreakerMek_A01",
+        "/Game/Aerathea/Characters/Gnomes/Iona/Mek/SK_GNM_IonaSiegebreakerMek_A01_Skeleton",
+    ),
+    (
+        "/Game/Aerathea/Characters/Infernals/Mage/SK_INF_Mage_A01",
+        "/Game/Aerathea/Characters/Infernals/Mage/PHYS_INF_Mage_A01",
+        "/Game/Aerathea/Characters/Infernals/Base/SK_INF_Base_Tall_A01_Skeleton",
+    ),
+    (
+        "/Game/Aerathea/Characters/Infernals/Warrior/SK_INF_Warrior_A01",
+        "/Game/Aerathea/Characters/Infernals/Warrior/PHYS_INF_Warrior_A01",
+        "/Game/Aerathea/Characters/Infernals/Base/SK_INF_Base_Tall_A01_Skeleton",
+    ),
+    (
+        "/Game/Aerathea/Characters/Infernals/Rogue/SK_INF_Rogue_A01",
+        "/Game/Aerathea/Characters/Infernals/Rogue/PHYS_INF_Rogue_A01",
+        "/Game/Aerathea/Characters/Infernals/Base/SK_INF_Base_Compact_A01_Skeleton",
+    ),
+    (
+        "/Game/Aerathea/Characters/Infernals/Hunter/SK_INF_Hunter_A01",
+        "/Game/Aerathea/Characters/Infernals/Hunter/PHYS_INF_Hunter_A01",
+        "/Game/Aerathea/Characters/Infernals/Base/SK_INF_Base_Tall_A01_Skeleton",
+    ),
 ]
 EXPECTED_LOD_STATIC_MESHES = [
+    "/Game/Aerathea/Props/Portal/SM_AET_PortalArch_A01",
     "/Game/Aerathea/Props/Mekgineer/Armory/SM_MKG_MultiTool_A01",
     "/Game/Aerathea/Props/Mekgineer/Armory/SM_MKG_GrappleHook_A01",
     "/Game/Aerathea/Props/Gnomes/Mekgineer/SM_GNM_AetherShieldProjector_A01",
@@ -297,8 +444,18 @@ EXPECTED_LOD_STATIC_MESHES = [
     "/Game/Aerathea/Props/Ogres/CairnFortifications/SM_OGR_CairnBattleGate_A01",
     "/Game/Aerathea/Props/Ogres/Teknomancy/SM_OGR_CrudeTekPylon_A01",
     "/Game/Aerathea/Props/Infernals/BalgorothCult/SM_INF_CullingTrialFloor_A01",
+    "/Game/Aerathea/Props/Infernals/BalgorothCult/SM_INF_HornWingArch_A01",
+    "/Game/Aerathea/Props/Infernals/BalgorothCult/SM_INF_WorthinessAltar_A01",
 ]
 EXPECTED_STATIC_MESH_SOCKETS = [
+    (
+        "/Game/Aerathea/Props/Portal/SM_AET_PortalArch_A01",
+        [
+            "Socket_PortalCore",
+            "Socket_VFX_Center",
+            "Socket_Audio_Hum",
+        ],
+    ),
     (
         "/Game/Aerathea/Props/Mekgineer/Armory/SM_MKG_GrappleHook_A01",
         [
@@ -329,6 +486,35 @@ EXPECTED_STATIC_MESH_SOCKETS = [
             "stage_spawn",
             "stage_blooded",
             "stage_elder",
+        ],
+    ),
+    (
+        "/Game/Aerathea/Props/Infernals/BalgorothCult/SM_INF_HornWingArch_A01",
+        [
+            "snap_floor",
+            "snap_altar",
+            "guard_l",
+            "guard_r",
+            "banner_l",
+            "banner_r",
+            "vfx_crown",
+            "vfx_eye",
+            "vfx_inner_throat",
+            "vfx_rejected_gap",
+        ],
+    ),
+    (
+        "/Game/Aerathea/Props/Infernals/BalgorothCult/SM_INF_WorthinessAltar_A01",
+        [
+            "snap_floor",
+            "snap_arch_back",
+            "interact_front",
+            "stage_offering",
+            "vfx_altar_core",
+            "vfx_sacrifice_mark",
+            "vfx_brand_transfer",
+            "vfx_ring_link",
+            "vfx_rejected_gap",
         ],
     ),
     (
@@ -564,6 +750,158 @@ EXPECTED_SKELETAL_MESH_SOCKETS = [
             "head_fx",
         ],
     ),
+    (
+        "/Game/Aerathea/Creatures/Abyss/Troops/BlackPikeTrooper/SK_ABY_BlackPikeTrooper_A01",
+        [
+            "socket_weapon_r",
+            "socket_weapon_l",
+            "socket_pike_tip",
+            "socket_head_vfx",
+            "socket_eye_l",
+            "socket_eye_r",
+            "socket_chest_core",
+            "socket_banner_back",
+            "socket_ground_rift",
+            "socket_hit_trace_pike",
+        ],
+    ),
+    (
+        "/Game/Aerathea/Characters/Gnomes/Iona/Mek/SK_GNM_IonaSiegebreakerMek_A01",
+        [
+            "socket_pilot_harness",
+            "socket_cannon_l_mount",
+            "socket_cannon_r_mount",
+            "socket_cannon_l_muzzle",
+            "socket_cannon_r_muzzle",
+            "socket_core_chest",
+            "socket_core_back",
+            "socket_hand_l",
+            "socket_hand_r",
+            "socket_foot_l",
+            "socket_foot_r",
+            "socket_vent_l",
+            "socket_vent_r",
+            "socket_camera_focus",
+            "vfx_arc_l",
+            "vfx_arc_r",
+        ],
+    ),
+    (
+        "/Game/Aerathea/Characters/Infernals/Mage/SK_INF_Mage_A01",
+        [
+            "hand_l_claw",
+            "hand_r_claw",
+            "hand_l_cast",
+            "hand_r_cast",
+            "vfx_hand_l",
+            "vfx_hand_r",
+            "vfx_eye_l",
+            "vfx_eye_r",
+            "vfx_brand_chest",
+            "vfx_brand_forearm_l",
+            "vfx_brand_forearm_r",
+            "vfx_wing_root_l",
+            "vfx_wing_root_r",
+            "wing_l_tip",
+            "wing_r_tip",
+            "tail_tip",
+            "vfx_tail_tip",
+            "vfx_regen_core",
+            "vfx_sorcerer_focus",
+            "vfx_worthiness_mark",
+            "vfx_mouth",
+        ],
+    ),
+    (
+        "/Game/Aerathea/Characters/Infernals/Warrior/SK_INF_Warrior_A01",
+        [
+            "hand_l_claw",
+            "hand_r_claw",
+            "hand_l_cast",
+            "hand_r_cast",
+            "vfx_hand_l",
+            "vfx_hand_r",
+            "vfx_eye_l",
+            "vfx_eye_r",
+            "vfx_brand_chest",
+            "vfx_brand_forearm_l",
+            "vfx_brand_forearm_r",
+            "vfx_wing_root_l",
+            "vfx_wing_root_r",
+            "wing_l_tip",
+            "wing_r_tip",
+            "tail_tip",
+            "vfx_tail_tip",
+            "vfx_regen_core",
+            "vfx_mouth",
+            "vfx_rage_core",
+            "tail_sweep_trace",
+            "wing_buffet_trace",
+            "body_check_trace",
+        ],
+    ),
+    (
+        "/Game/Aerathea/Characters/Infernals/Rogue/SK_INF_Rogue_A01",
+        [
+            "hand_l_claw",
+            "hand_r_claw",
+            "hand_l_cast",
+            "hand_r_cast",
+            "vfx_hand_l",
+            "vfx_hand_r",
+            "vfx_eye_l",
+            "vfx_eye_r",
+            "vfx_brand_chest",
+            "vfx_brand_forearm_l",
+            "vfx_brand_forearm_r",
+            "vfx_wing_root_l",
+            "vfx_wing_root_r",
+            "wing_l_tip",
+            "wing_r_tip",
+            "tail_tip",
+            "vfx_tail_tip",
+            "vfx_regen_core",
+            "vfx_mouth",
+            "vfx_ambush_mark",
+            "vfx_invisible_sight_focus",
+            "pounce_trace",
+            "claw_rake_trace",
+            "tail_balance_trace",
+            "crouch_center",
+        ],
+    ),
+    (
+        "/Game/Aerathea/Characters/Infernals/Hunter/SK_INF_Hunter_A01",
+        [
+            "hand_l_claw",
+            "hand_r_claw",
+            "hand_l_cast",
+            "hand_r_cast",
+            "vfx_hand_l",
+            "vfx_hand_r",
+            "vfx_eye_l",
+            "vfx_eye_r",
+            "vfx_brand_chest",
+            "vfx_brand_forearm_l",
+            "vfx_brand_forearm_r",
+            "vfx_wing_root_l",
+            "vfx_wing_root_r",
+            "wing_l_tip",
+            "wing_r_tip",
+            "tail_tip",
+            "vfx_tail_tip",
+            "vfx_regen_core",
+            "vfx_mouth",
+            "vfx_target_mark",
+            "vfx_brow_sight",
+            "vfx_pursuit_burst",
+            "pounce_trace",
+            "claw_takedown_trace",
+            "tail_balance_trace",
+            "tracking_center",
+            "wing_burst_trace",
+        ],
+    ),
 ]
 EXPECTED_RUNTIME_VISIBLE_LABELS = [
     "AET_PROD_GroundTile_A01_R3_C3",
@@ -592,6 +930,8 @@ EXPECTED_RUNTIME_VISIBLE_LABELS = [
     "AET_PROD_Palisade_Corner_A01",
     "AET_PROD_Palisade_Gate_A01",
     "AET_PROD_INF_CullingTrialFloor_A01",
+    "AET_PROD_INF_HornWingArch_A01",
+    "AET_PROD_INF_WorthinessAltar_A01",
     "AET_PROD_OgreTeknomancer_A01",
     "AET_PROD_OgreWarrior_Rival_A01",
     "AET_PROD_OGR_CairnBattleGate_A01",
@@ -601,6 +941,12 @@ EXPECTED_RUNTIME_VISIBLE_LABELS = [
     "AET_PROD_CRE_Manticore_Interrupt_A01",
     "AET_PROD_OgreShaman_A01",
     "AET_PROD_OgreNecromancer_A01",
+    "AET_PROD_ABY_BlackPikeTrooper_A01",
+    "AET_PROD_GNM_IonaSiegebreakerMek_A01",
+    "AET_PROD_INF_Mage_A01",
+    "AET_PROD_INF_Warrior_A01",
+    "AET_PROD_INF_Rogue_A01",
+    "AET_PROD_INF_Hunter_A01",
     "AET_PROD_Camera_Review_A01",
     "AET_PROD_ReviewFillLight_A01",
     "AET_BOOT_KeyLight_Directional",
@@ -619,7 +965,10 @@ EXPECTED_BOUNDS_LIMITS = {
         "extent_max": unreal.Vector(250.0, 250.0, 20.0),
         "radius_max": 360.0,
     },
-    "AET_PROD_Portal_A01": {"radius_max": 600.0},
+    "AET_PROD_Portal_A01": {
+        "extent_min": unreal.Vector(590.0, 120.0, 620.0),
+        "radius_max": 1250.0,
+    },
     "AET_PROD_TargetDummy_A01": {"radius_max": 350.0},
     "AET_PROD_WorkshopCrate_A01": {"radius_max": 250.0},
     "AET_PROD_MKG_GrappleHook_A01": {"radius_max": 180.0},
@@ -641,6 +990,14 @@ EXPECTED_BOUNDS_LIMITS = {
     "AET_PROD_INF_CullingTrialFloor_A01": {
         "extent_min": unreal.Vector(390.0, 390.0, 8.0),
         "radius_max": 720.0,
+    },
+    "AET_PROD_INF_HornWingArch_A01": {
+        "extent_min": unreal.Vector(300.0, 90.0, 250.0),
+        "radius_max": 760.0,
+    },
+    "AET_PROD_INF_WorthinessAltar_A01": {
+        "extent_min": unreal.Vector(145.0, 80.0, 125.0),
+        "radius_max": 550.0,
     },
     "AET_PROD_OgreTeknomancer_A01": {
         "extent_min": unreal.Vector(45.0, 45.0, 140.0),
@@ -678,9 +1035,38 @@ EXPECTED_BOUNDS_LIMITS = {
         "extent_min": unreal.Vector(45.0, 45.0, 140.0),
         "radius_max": 780.0,
     },
+    "AET_PROD_ABY_BlackPikeTrooper_A01": {
+        "extent_min": unreal.Vector(35.0, 35.0, 95.0),
+        "radius_max": 520.0,
+    },
+    "AET_PROD_GNM_IonaSiegebreakerMek_A01": {
+        "extent_min": unreal.Vector(80.0, 120.0, 185.0),
+        "radius_max": 820.0,
+    },
+    "AET_PROD_INF_Mage_A01": {
+        "extent_min": unreal.Vector(35.0, 35.0, 95.0),
+        "radius_max": 560.0,
+    },
+    "AET_PROD_INF_Warrior_A01": {
+        "extent_min": unreal.Vector(45.0, 45.0, 115.0),
+        "radius_max": 720.0,
+    },
+    "AET_PROD_INF_Rogue_A01": {
+        "extent_min": unreal.Vector(25.0, 25.0, 75.0),
+        "radius_max": 500.0,
+    },
+    "AET_PROD_INF_Hunter_A01": {
+        "extent_min": unreal.Vector(35.0, 35.0, 95.0),
+        "radius_max": 650.0,
+    },
 }
 REVIEW_CAMERA_ROTATION_TOLERANCE_DEGREES = 2.0
 KEY_DIRECTIONAL_LIGHT_LABEL = "AET_BOOT_KeyLight_Directional"
+EXPECTED_MOVABLE_LIGHT_LABELS = [
+    "AET_BOOT_KeyLight_Directional",
+    "AET_BOOT_SkyLight",
+    "AET_PROD_ReviewFillLight_A01",
+]
 
 
 def all_level_actors():
@@ -763,6 +1149,12 @@ def component_hidden_or_invisible(component, actor_label=None):
         "ImpactNiagara",
     }
     if actor_label == "AET_PROD_CRE_Manticore_Interrupt_A01" and component_name in optional_manticore_interrupt_components:
+        return False
+    optional_ritual_altar_components = {
+        "InteractionVolume",
+        "WorthinessNiagara",
+    }
+    if actor_label == "AET_PROD_INF_WorthinessAltar_A01" and component_name in optional_ritual_altar_components:
         return False
     hidden = try_call(component, "is_hidden_in_game")
     visible = try_call(component, "is_visible")
@@ -864,6 +1256,57 @@ def validate_directional_light_priority(actors):
         failures.append("Missing key directional light {}".format(KEY_DIRECTIONAL_LIGHT_LABEL))
     if failures:
         raise RuntimeError("Directional light priority validation failed: {}".format("; ".join(failures)))
+
+
+def get_light_component(actor):
+    light_component_base = getattr(unreal, "LightComponentBase", None)
+    if light_component_base is not None:
+        component = actor.get_component_by_class(light_component_base)
+        if component is not None:
+            return component
+    for class_name in (
+        "DirectionalLightComponent",
+        "SkyLightComponent",
+        "PointLightComponent",
+        "SpotLightComponent",
+        "RectLightComponent",
+    ):
+        component_class = getattr(unreal, class_name, None)
+        if component_class is None:
+            continue
+        component = actor.get_component_by_class(component_class)
+        if component is not None:
+            return component
+    return None
+
+
+def mobility_name(value):
+    if value is None:
+        return "None"
+    text = str(value)
+    return text.rsplit(".", 1)[-1]
+
+
+def validate_review_light_mobility(actors_by_label):
+    expected = unreal.ComponentMobility.MOVABLE
+    failures = []
+    for label in EXPECTED_MOVABLE_LIGHT_LABELS:
+        actor = actors_by_label.get(label)
+        if actor is None:
+            failures.append("missing {}".format(label))
+            continue
+        component = get_light_component(actor)
+        if component is None:
+            failures.append("{} has no light component".format(label))
+            continue
+        try:
+            mobility = component.get_editor_property("mobility")
+        except Exception:
+            mobility = None
+        if mobility != expected:
+            failures.append("{} mobility is {}, expected MOVABLE".format(label, mobility_name(mobility)))
+    if failures:
+        raise RuntimeError("Review light mobility validation failed: {}".format("; ".join(failures)))
 
 
 def component_by_name(actor, component_class, expected_name):
@@ -1024,6 +1467,119 @@ def validate_pylon_contract(pylon_actor):
 
     if failures:
         raise RuntimeError("Crude Tek pylon contract validation failed: {}".format("; ".join(failures)))
+
+
+def validate_ritual_altar_contract(altar_actor):
+    failures = []
+    class_name = altar_actor.get_class().get_name()
+    if "BP_INF_RitualAltar_A01" not in class_name and "AETInfernalRitualAltarActor" not in class_name:
+        failures.append("unexpected class {}".format(class_name))
+
+    ranged_properties = {
+        "TrialProgress": (0.0, 1.0),
+        "JudgmentIntensity": (0.0, 1.0),
+        "RejectedSeverity": (0.0, 1.0),
+        "TrialDurationSeconds": (0.05, 60.0),
+        "JudgmentPulseSeconds": (0.05, 10.0),
+        "CooldownSeconds": (0.05, 30.0),
+        "InteractionRadiusCm": (0.0, 1000.0),
+        "InteractionDepthCm": (0.0, 1000.0),
+    }
+    for prop_name, (min_value, max_value) in ranged_properties.items():
+        try:
+            value = float(altar_actor.get_editor_property(prop_name))
+        except Exception as exc:
+            failures.append("missing property {} ({})".format(prop_name, exc))
+            continue
+        if value < min_value or value > max_value:
+            failures.append("{} value {:.2f} is outside {:.2f}-{:.2f}".format(prop_name, value, min_value, max_value))
+
+    try:
+        slot_index = int(altar_actor.get_editor_property("BrandGlowMaterialSlotIndex"))
+        if slot_index != 4:
+            failures.append("BrandGlowMaterialSlotIndex is {}, expected 4".format(slot_index))
+    except Exception as exc:
+        failures.append("missing BrandGlowMaterialSlotIndex ({})".format(exc))
+
+    expected_materials = {
+        "BrandGlowInactiveMaterial": "/Game/Aerathea/Materials/Instances/MI_INF_BrandGlowStates_A01_Inactive",
+        "BrandGlowSmolderMaterial": "/Game/Aerathea/Materials/Instances/MI_INF_BrandGlowStates_A01_Smolder",
+        "BrandGlowTrialActiveMaterial": "/Game/Aerathea/Materials/Instances/MI_INF_BrandGlowStates_A01_TrialActive",
+        "BrandGlowAcceptedMaterial": "/Game/Aerathea/Materials/Instances/MI_INF_BrandGlowStates_A01_Accepted",
+        "BrandGlowRejectedMaterial": "/Game/Aerathea/Materials/Instances/MI_INF_BrandGlowStates_A01_Rejected",
+        "BrandGlowJudgmentPulseMaterial": "/Game/Aerathea/Materials/Instances/MI_INF_BrandGlowStates_A01_SorcererFocus",
+    }
+    for prop_name, expected_path in expected_materials.items():
+        try:
+            material = altar_actor.get_editor_property(prop_name)
+        except Exception as exc:
+            failures.append("missing material property {} ({})".format(prop_name, exc))
+            continue
+        if material is None:
+            failures.append("{} is not assigned".format(prop_name))
+        elif not material_matches_expected(material, expected_path):
+            failures.append("{} is {}, expected {}".format(prop_name, material.get_path_name(), expected_path))
+
+    expected_niagara = {
+        "InactiveNiagaraSystem": "/Game/Aerathea/VFX/Infernals/WorthinessJudgment/NS_INF_Worthiness_Inactive_A01",
+        "SmolderNiagaraSystem": "/Game/Aerathea/VFX/Infernals/WorthinessJudgment/NS_INF_Worthiness_Smolder_A01",
+        "TrialActiveNiagaraSystem": "/Game/Aerathea/VFX/Infernals/WorthinessJudgment/NS_INF_Worthiness_TrialActive_A01",
+        "AcceptedNiagaraSystem": "/Game/Aerathea/VFX/Infernals/WorthinessJudgment/NS_INF_Worthiness_Accepted_A01",
+        "RejectedNiagaraSystem": "/Game/Aerathea/VFX/Infernals/WorthinessJudgment/NS_INF_Worthiness_Rejected_A01",
+        "JudgmentPulseNiagaraSystem": "/Game/Aerathea/VFX/Infernals/WorthinessJudgment/NS_INF_Worthiness_JudgmentPulse_A01",
+    }
+    for prop_name, expected_path in expected_niagara.items():
+        try:
+            system = altar_actor.get_editor_property(prop_name)
+        except Exception as exc:
+            failures.append("missing Niagara property {} ({})".format(prop_name, exc))
+            continue
+        if system is None:
+            failures.append("{} is not assigned".format(prop_name))
+        elif asset_path_without_object(system) != expected_path:
+            failures.append("{} is {}, expected {}".format(prop_name, system.get_path_name(), expected_path))
+
+    required_locators = [
+        "InteractFrontLocator",
+        "AltarCoreLocator",
+        "SacrificeMarkLocator",
+        "BrandTransferLocator",
+        "RingLinkLocator",
+        "RejectedGapLocator",
+    ]
+    for locator_name in required_locators:
+        if component_by_name(altar_actor, unreal.SceneComponent, locator_name) is None:
+            failures.append("missing {} component".format(locator_name))
+
+    if component_by_name(altar_actor, unreal.BoxComponent, "InteractionVolume") is None:
+        failures.append("missing InteractionVolume component")
+
+    mesh_component = component_by_name(altar_actor, unreal.StaticMeshComponent, "AltarMesh")
+    if mesh_component is None:
+        failures.append("missing AltarMesh component")
+    else:
+        mesh = static_mesh_component_mesh(mesh_component)
+        expected_path = "/Game/Aerathea/Props/Infernals/BalgorothCult/SM_INF_WorthinessAltar_A01"
+        if mesh is None:
+            failures.append("AltarMesh has no static mesh")
+        elif asset_path_without_object(mesh) != expected_path:
+            failures.append("AltarMesh uses {}, expected {}".format(mesh.get_path_name(), expected_path))
+        state_material = mesh_component.get_material(4)
+        if state_material is None:
+            failures.append("AltarMesh slot 4 is unassigned")
+        elif not any(material_matches_expected(state_material, expected_path) for expected_path in expected_materials.values()):
+            failures.append("AltarMesh slot 4 uses {}, expected BrandGlow state material".format(state_material.get_path_name()))
+
+    niagara_component = component_by_name(altar_actor, unreal.NiagaraComponent, "WorthinessNiagara")
+    if niagara_component is None:
+        failures.append("missing WorthinessNiagara component")
+    else:
+        asset = try_call(niagara_component, "get_asset")
+        if asset is not None and asset_path_without_object(asset) not in set(expected_niagara.values()):
+            failures.append("WorthinessNiagara uses {}, expected WorthinessJudgment system".format(asset.get_path_name()))
+
+    if failures:
+        raise RuntimeError("Infernal ritual altar contract validation failed: {}".format("; ".join(failures)))
 
 
 def validate_manticore_interrupt_contract(manticore_actor):
@@ -1196,6 +1752,7 @@ def main():
         raise RuntimeError("Expected 25 production ground tiles, found {}".format(len(ground_tiles)))
     validate_actor_bounds(actors_by_label)
     validate_directional_light_priority(actors)
+    validate_review_light_mobility(actors_by_label)
 
     portal_actor = next(
         actor
@@ -1218,6 +1775,7 @@ def main():
     validate_shieldwall_vfx_contract(shieldwall_actor)
 
     validate_pylon_contract(actors_by_label["AET_PROD_OGR_CrudeTekPylon_A01"])
+    validate_ritual_altar_contract(actors_by_label["AET_PROD_INF_WorthinessAltar_A01"])
     validate_manticore_interrupt_contract(actors_by_label["AET_PROD_CRE_Manticore_Interrupt_A01"])
     validate_encounter_contract(actors_by_label["AET_PROD_GNM_OGR_BattlefieldEncounter_A01"], actors_by_label)
 

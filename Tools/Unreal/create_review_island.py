@@ -638,7 +638,7 @@ def place_current_asset():
             component.set_material(index, material)
     spawn_text(
         "AET_REVIEW_Label_CurrentAsset_BloodAxeCairn_A01",
-        "A01 BLOOD AXE CAIRN - PAINT-01",
+        "A01 BLOOD AXE CAIRN - TEST2MANUAL APPROVED PROOF",
         unreal.Vector(0.0, 540.0, 42.0),
         size=34.0,
         yaw=90.0,

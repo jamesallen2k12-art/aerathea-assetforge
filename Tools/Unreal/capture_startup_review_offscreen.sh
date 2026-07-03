@@ -2,7 +2,21 @@
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
-UE_EDITOR="/home/Flamestrike/UnrealEngine/UE_5.8.0/Engine/Binaries/Linux/UnrealEditor"
+UE_EDITOR="${AET_UE_EDITOR:-}"
+if [[ -z "${UE_EDITOR}" ]]; then
+  for candidate in \
+    "/home/james/UnrealEngine/UE_5.8.0/Engine/Binaries/Linux/UnrealEditor" \
+    "/home/Flamestrike/UnrealEngine/UE_5.8.0/Engine/Binaries/Linux/UnrealEditor"; do
+    if [[ -x "${candidate}" ]]; then
+      UE_EDITOR="${candidate}"
+      break
+    fi
+  done
+fi
+if [[ ! -x "${UE_EDITOR}" ]]; then
+  echo "UnrealEditor not found. Set AET_UE_EDITOR to the UnrealEditor binary path." >&2
+  exit 1
+fi
 UPROJECT="${ROOT}/Aerathea.uproject"
 MAP_PATH="/Game/Aerathea/Maps/L_Aerathea_Startup"
 OUTPUT_PATH="${1:-${ROOT}/Saved/Automation/StartupReview/AeratheaStartupReview_Game4_Offscreen.png}"

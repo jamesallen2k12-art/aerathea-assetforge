@@ -2,7 +2,7 @@
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
-UE_EDITOR="/home/Flamestrike/UnrealEngine/UE_5.8.0/Engine/Binaries/Linux/UnrealEditor"
+UE_EDITOR="${UE_EDITOR:-${HOME}/UnrealEngine/UE_5.8.0/Engine/Binaries/Linux/UnrealEditor}"
 UPROJECT="${ROOT}/Aerathea.uproject"
 MAP_PATH="/Game/Aerathea/Maps/L_Aerathea_ReviewIsland"
 OUTPUT_PATH="${1:-${ROOT}/Saved/Automation/ReviewIsland/AeratheaReviewIsland_Offscreen.png}"

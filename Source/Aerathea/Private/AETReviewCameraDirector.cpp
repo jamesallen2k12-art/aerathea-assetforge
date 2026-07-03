@@ -153,6 +153,15 @@ bool IsPhaseFocusRequested()
 		FParse::Param(FCommandLine::Get(), TEXT("AETReviewFocusPhase"));
 }
 
+struct FFocusedEncounterCameraSettings
+{
+	AActor* FocusActor = nullptr;
+	FVector AimOffset = FVector(0.0f, 0.0f, 160.0f);
+	FVector CameraOffset = FVector(1450.0f, -920.0f, 720.0f);
+	float FieldOfView = 42.0f;
+	bool bUseBoundsOrigin = false;
+};
+
 void LogReviewViewState(const TCHAR* Context, APlayerController* PlayerController)
 {
 	if (PlayerController == nullptr)
@@ -191,7 +200,17 @@ AAETReviewCameraDirector::AAETReviewCameraDirector()
 	bReviewScreenshotRequested = false;
 	bScreenshotDelayElapsed = false;
 	bReviewExposureConfigured = false;
+	bOrbitReviewCamera = false;
 	CaptureElapsedSeconds = 0.0f;
+	OrbitElapsedSeconds = 0.0f;
+	OrbitStartAngleDegrees = 235.0f;
+	OrbitSpeedDegreesPerSecond = 20.0f;
+	OrbitRadius = 700.0f;
+	OrbitHeight = 250.0f;
+	OrbitFieldOfView = 48.0f;
+	OrbitLogElapsedSeconds = 0.0f;
+	OrbitTarget = FVector(0.0f, 0.0f, 150.0f);
+	bOrbitCameraMissingLogged = false;
 	RemainingWarmupFrames = INDEX_NONE;
 	PostScreenshotExitFrames = INDEX_NONE;
 }
@@ -204,6 +223,9 @@ void AAETReviewCameraDirector::BeginPlay()
 	PrimaryActorTick.SetTickFunctionEnable(true);
 	bCaptureReviewScreenshot = bCaptureReviewScreenshot || FParse::Param(FCommandLine::Get(), TEXT("AETReviewCapture"));
 	CaptureElapsedSeconds = 0.0f;
+	OrbitElapsedSeconds = 0.0f;
+	OrbitLogElapsedSeconds = 0.0f;
+	bOrbitCameraMissingLogged = false;
 	PostScreenshotExitFrames = INDEX_NONE;
 
 	ConfigureCommandLineOptions();
@@ -242,6 +264,59 @@ void AAETReviewCameraDirector::ConfigureCommandLineOptions()
 	if (FParse::Value(FCommandLine::Get(), TEXT("AETReviewCaptureDelay="), RequestedDelay))
 	{
 		ScreenshotDelaySeconds = FMath::Max(0.2f, RequestedDelay);
+	}
+
+	bOrbitReviewCamera =
+		FParse::Param(FCommandLine::Get(), TEXT("AETReviewOrbit")) ||
+		FParse::Param(FCommandLine::Get(), TEXT("AETReviewCameraOrbit"));
+
+	float RequestedFloat = 0.0f;
+	if (FParse::Value(FCommandLine::Get(), TEXT("AETReviewOrbitStartAngle="), RequestedFloat))
+	{
+		OrbitStartAngleDegrees = RequestedFloat;
+	}
+	if (FParse::Value(FCommandLine::Get(), TEXT("AETReviewOrbitSpeed="), RequestedFloat))
+	{
+		OrbitSpeedDegreesPerSecond = RequestedFloat;
+	}
+	if (FParse::Value(FCommandLine::Get(), TEXT("AETReviewOrbitRadius="), RequestedFloat))
+	{
+		OrbitRadius = FMath::Max(100.0f, RequestedFloat);
+	}
+	if (FParse::Value(FCommandLine::Get(), TEXT("AETReviewOrbitHeight="), RequestedFloat))
+	{
+		OrbitHeight = RequestedFloat;
+	}
+	if (FParse::Value(FCommandLine::Get(), TEXT("AETReviewOrbitFOV="), RequestedFloat))
+	{
+		OrbitFieldOfView = FMath::Clamp(RequestedFloat, 5.0f, 170.0f);
+	}
+	if (FParse::Value(FCommandLine::Get(), TEXT("AETReviewOrbitTargetX="), RequestedFloat))
+	{
+		OrbitTarget.X = RequestedFloat;
+	}
+	if (FParse::Value(FCommandLine::Get(), TEXT("AETReviewOrbitTargetY="), RequestedFloat))
+	{
+		OrbitTarget.Y = RequestedFloat;
+	}
+	if (FParse::Value(FCommandLine::Get(), TEXT("AETReviewOrbitTargetZ="), RequestedFloat))
+	{
+		OrbitTarget.Z = RequestedFloat;
+	}
+
+	if (bOrbitReviewCamera)
+	{
+		UE_LOG(
+			LogTemp,
+			Display,
+			TEXT("AETReviewCameraDirector: orbit camera enabled target=%s radius=%.1f height=%.1f fov=%.1f speed=%.1f startAngle=%.1f."),
+			*OrbitTarget.ToCompactString(),
+			OrbitRadius,
+			OrbitHeight,
+			OrbitFieldOfView,
+			OrbitSpeedDegreesPerSecond,
+			OrbitStartAngleDegrees
+		);
 	}
 }
 
@@ -312,6 +387,8 @@ void AAETReviewCameraDirector::ConfigureEncounterReviewPhase()
 void AAETReviewCameraDirector::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
+
+	UpdateOrbitCamera(DeltaSeconds);
 
 	if (!bCaptureReviewScreenshot || bReviewScreenshotRequested)
 	{
@@ -463,6 +540,77 @@ void AAETReviewCameraDirector::ApplyReviewCamera()
 	UE_LOG(LogTemp, Warning, TEXT("AETReviewCameraDirector: no camera tagged %s found."), *ReviewCameraTag.ToString());
 }
 
+void AAETReviewCameraDirector::UpdateOrbitCamera(float DeltaSeconds)
+{
+	if (!bOrbitReviewCamera)
+	{
+		return;
+	}
+
+	UWorld* World = GetWorld();
+	if (World == nullptr)
+	{
+		return;
+	}
+
+	APlayerController* PlayerController = World->GetFirstPlayerController();
+	if (PlayerController == nullptr)
+	{
+		return;
+	}
+
+	OrbitElapsedSeconds += DeltaSeconds;
+	OrbitLogElapsedSeconds += DeltaSeconds;
+	const float OrbitAngleRadians = FMath::DegreesToRadians(OrbitStartAngleDegrees + (OrbitElapsedSeconds * OrbitSpeedDegreesPerSecond));
+	const FVector CameraLocation = OrbitTarget + FVector(
+		FMath::Cos(OrbitAngleRadians) * OrbitRadius,
+		FMath::Sin(OrbitAngleRadians) * OrbitRadius,
+		OrbitHeight
+	);
+	const FRotator CameraRotation = (OrbitTarget - CameraLocation).Rotation();
+
+	for (TActorIterator<ACameraActor> It(World); It; ++It)
+	{
+		ACameraActor* CameraActor = *It;
+		if (CameraActor == nullptr || !CameraActor->ActorHasTag(ReviewCameraTag))
+		{
+			continue;
+		}
+
+		CameraActor->SetActorHiddenInGame(false);
+		CameraActor->SetActorLocation(CameraLocation);
+		CameraActor->SetActorRotation(CameraRotation);
+		if (UCameraComponent* CameraComponent = CameraActor->GetCameraComponent())
+		{
+			CameraComponent->SetVisibility(true, true);
+			CameraComponent->SetFieldOfView(OrbitFieldOfView);
+		}
+
+		PlayerController->SetViewTargetWithBlend(CameraActor, 0.0f);
+		if (OrbitLogElapsedSeconds >= 2.0f)
+		{
+			OrbitLogElapsedSeconds = 0.0f;
+			UE_LOG(
+				LogTemp,
+				Display,
+				TEXT("AETReviewCameraDirector: orbit camera tick t=%.2f camera=%s loc=%s rot=%s target=%s."),
+				OrbitElapsedSeconds,
+				*CameraActor->GetName(),
+				*CameraLocation.ToCompactString(),
+				*CameraRotation.ToCompactString(),
+				*OrbitTarget.ToCompactString()
+			);
+		}
+		return;
+	}
+
+	if (!bOrbitCameraMissingLogged)
+	{
+		bOrbitCameraMissingLogged = true;
+		UE_LOG(LogTemp, Warning, TEXT("AETReviewCameraDirector: orbit requested, but no camera tagged %s was found."), *ReviewCameraTag.ToString());
+	}
+}
+
 void AAETReviewCameraDirector::ConfigureFocusedEncounterCamera(ACameraActor* CameraActor)
 {
 	if (CameraActor == nullptr || !IsPhaseFocusRequested())
@@ -483,65 +631,76 @@ void AAETReviewCameraDirector::ConfigureFocusedEncounterCamera(ACameraActor* Cam
 		return;
 	}
 
-	AActor* FocusActor = nullptr;
-	float AimHeightCm = 160.0f;
-	float FieldOfView = 42.0f;
-	FVector CameraOffset(1450.0f, -920.0f, 720.0f);
+	FFocusedEncounterCameraSettings CameraSettings;
 
 	switch (RequestedState)
 	{
 	case EAETGnomeOgreEncounterState::ShieldImpact:
-		FocusActor = EncounterActor->ShieldwallActor.Get();
-		AimHeightCm = 210.0f;
-		FieldOfView = 40.0f;
-		CameraOffset = FVector(1200.0f, -760.0f, 620.0f);
+		CameraSettings.FocusActor = EncounterActor->ShieldwallActor.Get();
+		CameraSettings.AimOffset = FVector(0.0f, 0.0f, 240.0f);
+		CameraSettings.CameraOffset = FVector(1750.0f, -1350.0f, 920.0f);
+		CameraSettings.FieldOfView = 48.0f;
 		break;
 	case EAETGnomeOgreEncounterState::PylonOverload:
-		FocusActor = EncounterActor->PylonObjectiveActor.Get();
-		AimHeightCm = 280.0f;
-		FieldOfView = 44.0f;
-		CameraOffset = FVector(-900.0f, 1700.0f, 850.0f);
+		CameraSettings.FocusActor = EncounterActor->PylonObjectiveActor.Get();
+		CameraSettings.AimOffset = FVector(0.0f, 0.0f, 50.0f);
+		CameraSettings.CameraOffset = FVector(1300.0f, 1150.0f, 1000.0f);
+		CameraSettings.FieldOfView = 52.0f;
+		CameraSettings.bUseBoundsOrigin = true;
 		break;
 	case EAETGnomeOgreEncounterState::CasterReinforcement:
-		FocusActor = EncounterActor->OgreShamanActor != nullptr ? EncounterActor->OgreShamanActor.Get() : EncounterActor->OgreNecromancerActor.Get();
-		AimHeightCm = 120.0f;
-		FieldOfView = 36.0f;
-		CameraOffset = FVector(620.0f, -760.0f, 420.0f);
+		CameraSettings.FocusActor = EncounterActor->OgreShamanActor != nullptr ? EncounterActor->OgreShamanActor.Get() : EncounterActor->OgreNecromancerActor.Get();
+		CameraSettings.AimOffset = FVector(0.0f, 0.0f, 140.0f);
+		CameraSettings.CameraOffset = FVector(-1500.0f, -1450.0f, 960.0f);
+		CameraSettings.FieldOfView = 60.0f;
 		break;
 	case EAETGnomeOgreEncounterState::ManticoreInterrupt:
-		FocusActor = EncounterActor->ManticoreInterruptActor.Get();
-		AimHeightCm = 260.0f;
-		FieldOfView = 40.0f;
-		CameraOffset = FVector(1350.0f, -820.0f, 720.0f);
+		CameraSettings.FocusActor = EncounterActor->ManticoreInterruptActor.Get();
+		CameraSettings.AimOffset = FVector(0.0f, 0.0f, 280.0f);
+		CameraSettings.CameraOffset = FVector(1550.0f, -1100.0f, 820.0f);
+		CameraSettings.FieldOfView = 44.0f;
 		break;
 	default:
 		return;
 	}
 
-	if (FocusActor == nullptr)
+	if (CameraSettings.FocusActor == nullptr)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("AETReviewCameraDirector: phase focus requested for %s, but no focus actor is assigned."), ReviewPhaseLogName(RequestedState));
 		return;
 	}
 
-	const FVector AimLocation = FocusActor->GetActorLocation() + FVector(0.0f, 0.0f, AimHeightCm);
-	const FVector CameraLocation = AimLocation + CameraOffset;
+	FVector FocusOrigin = CameraSettings.FocusActor->GetActorLocation();
+	if (CameraSettings.bUseBoundsOrigin)
+	{
+		FVector BoundsOrigin = FocusOrigin;
+		FVector BoundsExtent = FVector::ZeroVector;
+		CameraSettings.FocusActor->GetActorBounds(false, BoundsOrigin, BoundsExtent);
+		if (!BoundsExtent.IsNearlyZero())
+		{
+			FocusOrigin = BoundsOrigin;
+		}
+	}
+
+	const FVector AimLocation = FocusOrigin + CameraSettings.AimOffset;
+	const FVector CameraLocation = AimLocation + CameraSettings.CameraOffset;
 	CameraActor->SetActorLocation(CameraLocation);
 	CameraActor->SetActorRotation((AimLocation - CameraLocation).Rotation());
 	if (UCameraComponent* CameraComponent = CameraActor->GetCameraComponent())
 	{
-		CameraComponent->SetFieldOfView(FieldOfView);
+		CameraComponent->SetFieldOfView(CameraSettings.FieldOfView);
 	}
 
 	UE_LOG(
 		LogTemp,
 		Display,
-		TEXT("AETReviewCameraDirector: focused review camera on %s for phase %s at %s rot=%s fov=%.1f."),
-		*GetNameSafe(FocusActor),
+		TEXT("AETReviewCameraDirector: focused review camera on %s for phase %s at %s rot=%s aim=%s fov=%.1f."),
+		*GetNameSafe(CameraSettings.FocusActor),
 		ReviewPhaseLogName(RequestedState),
 		*CameraActor->GetActorLocation().ToCompactString(),
 		*CameraActor->GetActorRotation().ToCompactString(),
-		FieldOfView
+		*AimLocation.ToCompactString(),
+		CameraSettings.FieldOfView
 	);
 }
 

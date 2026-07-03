@@ -54,6 +54,10 @@ GIANT_MATERIALS = {
     "M_AET_ScaleMarker_Blockout_A01": (0.12, 0.12, 0.12),
 }
 
+GIANT_TEMPLATE_HEIGHT_CM = 457.0
+GIANT_MALE_BASELINE_CM = 470.0
+GIANT_FEMALE_BASELINE_CM = 442.0
+
 
 def make_review_materials_readable(materials: dict[str, bpy.types.Material]) -> None:
     for material in materials.values():
@@ -228,11 +232,11 @@ def export_variant(name: str, gender_label: str, height_cm: float) -> None:
     clear_scene()
     setup_scene()
     materials = create_materials(GIANT_MATERIALS)
-    scale = height_cm / 457.0
+    scale = height_cm / GIANT_TEMPLATE_HEIGHT_CM
     armature, objects = add_giant_variant(gender_label, f"SKEL_{name}", scale, 0.0, materials)
     add_asset_metadata(
         name,
-        f"First-pass DCC review Giant {gender_label.lower()} body source; final sculpt, skinning, physics, LODs, and textures pending",
+        f"First-pass DCC review Giant {gender_label.lower()} body source at {height_cm:.0f} cm A04 baseline; final sculpt, skinning, physics, LODs, and textures pending",
         f"/Game/Aerathea/Characters/Giants/Base/{name}",
     )
     export_path = EXPORT_ROOT / f"Characters/Giants/SK_GIA_Base_A01/{name}.fbx"
@@ -258,15 +262,15 @@ def render_review() -> None:
         bpy.context.scene.world.color = (0.62, 0.62, 0.62)
     materials = create_materials(GIANT_MATERIALS)
     make_review_materials_readable(materials)
-    add_giant_variant("Male", "SKEL_GIA_Base_Male_A01", 1.0, -82.0, materials)
-    add_giant_variant("Female", "SKEL_GIA_Base_Female_A01", 396.0 / 457.0, 112.0, materials)
+    add_giant_variant("Male", "SKEL_GIA_Base_Male_A01", GIANT_MALE_BASELINE_CM / GIANT_TEMPLATE_HEIGHT_CM, -82.0, materials)
+    add_giant_variant("Female", "SKEL_GIA_Base_Female_A01", GIANT_FEMALE_BASELINE_CM / GIANT_TEMPLATE_HEIGHT_CM, 112.0, materials)
     add_scale_marker("Scale_180cm_Human", 180.0, -250.0, materials)
     add_scale_marker("Scale_110cm_Gnome", 110.0, -315.0, materials)
     add_scale_marker("Scale_270cm_Minotaur", 270.0, 300.0, materials)
 
     add_asset_metadata(
         "SK_GIA_Base_A01",
-        "Approved Giant base first-pass DCC review scene with male/female baselines and scale markers",
+        "Approved Giant base first-pass DCC review scene with 470 cm male and 442 cm female A04 baselines and scale markers",
         "/Game/Aerathea/Characters/Giants/Base/",
     )
 
@@ -303,8 +307,8 @@ def render_review() -> None:
 
 
 def main() -> None:
-    export_variant("SK_GIA_Base_Male_A01", "Male", 457.0)
-    export_variant("SK_GIA_Base_Female_A01", "Female", 396.0)
+    export_variant("SK_GIA_Base_Male_A01", "Male", GIANT_MALE_BASELINE_CM)
+    export_variant("SK_GIA_Base_Female_A01", "Female", GIANT_FEMALE_BASELINE_CM)
     render_review()
 
 

@@ -72,6 +72,90 @@ PRESETS = {
             "sky_intensity": 0.3,
         },
     },
+    "bloodaxe_low_cairn": {
+        "location": unreal.Vector(1740.0, 5.0, 260.0),
+        "target": unreal.Vector(1280.0, 430.0, 62.0),
+        "fov": 38.0,
+        "lighting": {
+            "directional_intensity": 0.1,
+            "fill_location": unreal.Vector(1560.0, 190.0, 230.0),
+            "fill_intensity": 120.0,
+            "fill_radius": 900.0,
+            "sky_intensity": 0.1,
+        },
+    },
+    "bloodaxe_image_relief_cairn": {
+        "location": unreal.Vector(9795.0, 9395.0, 300.0),
+        "target": unreal.Vector(10000.0, 10000.0, 88.0),
+        "fov": 38.0,
+        "lighting": {
+            "directional_intensity": 0.12,
+            "fill_location": unreal.Vector(9900.0, 9650.0, 270.0),
+            "fill_intensity": 180.0,
+            "fill_radius": 1200.0,
+            "sky_intensity": 0.12,
+        },
+    },
+    "bloodaxe_complete_cairn": {
+        "location": unreal.Vector(11795.0, 9395.0, 300.0),
+        "target": unreal.Vector(12000.0, 10000.0, 82.0),
+        "fov": 38.0,
+        "lighting": {
+            "directional_intensity": 0.10,
+            "fill_location": unreal.Vector(11920.0, 9645.0, 300.0),
+            "fill_intensity": 170.0,
+            "fill_radius": 1450.0,
+            "sky_intensity": 0.08,
+        },
+    },
+    "bloodaxe_test2_manual": {
+        "location": unreal.Vector(12675.0, 9395.0, 330.0),
+        "target": unreal.Vector(12880.0, 10000.0, 105.0),
+        "fov": 38.0,
+        "lighting": {
+            "directional_intensity": 0.16,
+            "fill_location": unreal.Vector(12760.0, 9660.0, 315.0),
+            "fill_intensity": 260.0,
+            "fill_radius": 1450.0,
+            "sky_intensity": 0.14,
+        },
+    },
+    "bloodaxe_backside_repair_front": {
+        "location": unreal.Vector(11250.0, 8000.0, 620.0),
+        "target": unreal.Vector(12000.0, 10000.0, 112.0),
+        "fov": 42.0,
+        "lighting": {
+            "directional_intensity": 0.18,
+            "fill_location": unreal.Vector(11640.0, 9070.0, 430.0),
+            "fill_intensity": 260.0,
+            "fill_radius": 2300.0,
+            "sky_intensity": 0.16,
+        },
+    },
+    "bloodaxe_backside_repair_back": {
+        "location": unreal.Vector(12750.0, 12000.0, 620.0),
+        "target": unreal.Vector(12000.0, 10000.0, 112.0),
+        "fov": 42.0,
+        "lighting": {
+            "directional_intensity": 0.18,
+            "fill_location": unreal.Vector(12360.0, 10930.0, 430.0),
+            "fill_intensity": 280.0,
+            "fill_radius": 2300.0,
+            "sky_intensity": 0.16,
+        },
+    },
+    "bloodaxe_backside_repair_back_approval": {
+        "location": unreal.Vector(12280.0, 10750.0, 310.0),
+        "target": unreal.Vector(12000.0, 10000.0, 95.0),
+        "fov": 36.0,
+        "lighting": {
+            "directional_intensity": 0.36,
+            "fill_location": unreal.Vector(12240.0, 10540.0, 350.0),
+            "fill_intensity": 850.0,
+            "fill_radius": 1200.0,
+            "sky_intensity": 0.30,
+        },
+    },
     "infernal_scale": {
         "location": unreal.Vector(1300.0, -930.0, 700.0),
         "target": unreal.Vector(-10.0, 130.0, 135.0),
@@ -128,6 +212,17 @@ def safe_set(obj, props, value):
             pass
     unreal.log_warning("Could not set {}.{}.".format(type(obj).__name__, "/".join(props)))
     return None
+
+
+def set_movable(component):
+    if component is None:
+        return
+    try:
+        component.set_mobility(unreal.ComponentMobility.MOVABLE)
+        return
+    except Exception:
+        pass
+    safe_set(component, "mobility", unreal.ComponentMobility.MOVABLE)
 
 
 def all_level_actors():
@@ -204,6 +299,7 @@ def configure_lighting(preset_name):
     if key_light is not None:
         component = key_light.get_component_by_class(unreal.DirectionalLightComponent)
         if component is not None:
+            set_movable(component)
             safe_set(component, "intensity", lighting["directional_intensity"])
             set_directional_priority(key_light)
 
@@ -214,6 +310,7 @@ def configure_lighting(preset_name):
             set_actor_transform(fill_light, fill_location, fill_light.get_actor_rotation())
         component = fill_light.get_component_by_class(unreal.PointLightComponent)
         if component is not None:
+            set_movable(component)
             safe_set(component, "intensity", lighting["fill_intensity"])
             if "fill_radius" in lighting:
                 safe_set(component, "attenuation_radius", lighting["fill_radius"])
@@ -222,6 +319,7 @@ def configure_lighting(preset_name):
     if sky_light is not None:
         component = sky_light.get_component_by_class(unreal.SkyLightComponent)
         if component is not None:
+            set_movable(component)
             safe_set(component, "intensity", lighting["sky_intensity"])
 
     unreal.log("Applied Aerathea startup review lighting for preset {}.".format(preset_name))

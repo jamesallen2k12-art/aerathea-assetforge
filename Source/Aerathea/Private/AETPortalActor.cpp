@@ -22,7 +22,7 @@ AAETPortalActor::AAETPortalActor()
 	bAllowClientPreviewOnly = true;
 	UsePreviewDurationSeconds = 0.35f;
 	UseCooldownSeconds = 1.0f;
-	InteractionBoxExtent = FVector(175.0f, 60.0f, 130.0f);
+	InteractionBoxExtent = FVector(560.0f, 260.0f, 560.0f);
 	bDebugPortalLogs = false;
 
 	SceneRoot = CreateDefaultSubobject<USceneComponent>(TEXT("SceneRoot"));
@@ -34,13 +34,13 @@ AAETPortalActor::AAETPortalActor()
 
 	PortalCoreMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("PortalCoreMesh"));
 	PortalCoreMesh->SetupAttachment(SceneRoot);
-	PortalCoreMesh->SetRelativeLocation(FVector(0.0, -18.0, 210.0));
-	PortalCoreMesh->SetRelativeScale3D(FVector(1.05, 0.12, 1.55));
+	PortalCoreMesh->SetRelativeLocation(FVector(0.0, -32.0, 500.0));
+	PortalCoreMesh->SetRelativeScale3D(FVector(7.4, 0.18, 10.0));
 	PortalCoreMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 
 	InteractionVolume = CreateDefaultSubobject<UBoxComponent>(TEXT("InteractionVolume"));
 	InteractionVolume->SetupAttachment(SceneRoot);
-	InteractionVolume->SetRelativeLocation(FVector(0.0, -36.0, 130.0));
+	InteractionVolume->SetRelativeLocation(FVector(0.0, -120.0, 520.0));
 	InteractionVolume->SetBoxExtent(InteractionBoxExtent);
 	InteractionVolume->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
 	InteractionVolume->SetCollisionResponseToAllChannels(ECR_Ignore);
@@ -58,6 +58,7 @@ void AAETPortalActor::OnConstruction(const FTransform& Transform)
 
 	if (InteractionVolume != nullptr)
 	{
+		InteractionVolume->SetRelativeLocation(FVector(0.0, -120.0, 520.0));
 		InteractionVolume->SetBoxExtent(InteractionBoxExtent);
 		InteractionVolume->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
 		InteractionVolume->SetCollisionResponseToAllChannels(ECR_Ignore);
@@ -87,6 +88,9 @@ void AAETPortalActor::OnConstruction(const FTransform& Transform)
 
 	if (PortalCoreMesh != nullptr)
 	{
+		PortalCoreMesh->SetRelativeLocation(FVector(0.0, -32.0, 500.0));
+		PortalCoreMesh->SetRelativeScale3D(FVector(7.4, 0.18, 10.0));
+		PortalCoreMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 		if (UMaterialInterface* CoreMaterial = LoadObject<UMaterialInterface>(
 				nullptr,
 				TEXT("/Game/Aerathea/Materials/M_AET_AetheriumGlow_Blue_A01.M_AET_AetheriumGlow_Blue_A01")

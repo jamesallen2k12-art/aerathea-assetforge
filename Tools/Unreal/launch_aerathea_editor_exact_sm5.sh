@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ENGINE_ROOT="/home/Flamestrike/UnrealEngine/UE_5.8.0"
-PROJECT_FILE="/home/Flamestrike/Projects/Aerathea/Aerathea.uproject"
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+ENGINE_ROOT="${UE_ENGINE_ROOT:-${HOME}/UnrealEngine/UE_5.8.0}"
+PROJECT_FILE="${AET_UPROJECT:-${ROOT}/Aerathea.uproject}"
 
 # Mirrors the last known visible Linux editor route recorded in the Aetherium
 # notes: X11, Vulkan SM5, bindless disabled, fixed window size, no VSync.

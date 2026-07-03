@@ -70,6 +70,17 @@ def safe_set(obj, props, value):
     return None
 
 
+def set_movable(component):
+    if component is None:
+        return
+    try:
+        component.set_mobility(unreal.ComponentMobility.MOVABLE)
+        return
+    except Exception:
+        pass
+    safe_set(component, "mobility", unreal.ComponentMobility.MOVABLE)
+
+
 def ensure_directory(path):
     if not unreal.EditorAssetLibrary.does_directory_exist(path):
         unreal.EditorAssetLibrary.make_directory(path)
@@ -391,6 +402,7 @@ def main():
     fill_light = ensure_actor("AET_PROD_ReviewFillLight_A01", unreal.PointLight, unreal.Vector(-160, -180, 520))
     fill_component = fill_light.get_component_by_class(unreal.PointLightComponent)
     if fill_component is not None:
+        set_movable(fill_component)
         safe_set(fill_component, "intensity", 6000.0)
         safe_set(fill_component, "attenuation_radius", 2200.0)
         safe_set(fill_component, "light_color", unreal.Color(180, 210, 255, 255))
@@ -405,6 +417,7 @@ def main():
         )
         directional_component = directional.get_component_by_class(unreal.DirectionalLightComponent)
         if directional_component is not None:
+            set_movable(directional_component)
             safe_set(directional_component, "intensity", 5.0)
             safe_set(directional_component, "light_color", unreal.Color(255, 236, 205, 255))
             safe_set(directional_component, ("forward_shading_priority", "ForwardShadingPriority"), 1)
@@ -418,6 +431,7 @@ def main():
         sky_light = ensure_actor("AET_BOOT_SkyLight", sky_light_class, unreal.Vector(0, 0, 460), review_rotator(0.0, 0.0))
         sky_component = sky_light.get_component_by_class(unreal.SkyLightComponent)
         if sky_component is not None:
+            set_movable(sky_component)
             safe_set(sky_component, "intensity", 1.5)
 
     if not unreal.EditorLevelLibrary.save_current_level():

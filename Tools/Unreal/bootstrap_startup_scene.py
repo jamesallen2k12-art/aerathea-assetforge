@@ -116,6 +116,7 @@ def spawn_light(label, cls, location, rotation):
     actor = unreal.EditorLevelLibrary.spawn_actor_from_class(cls, location, rotation)
     actor.set_actor_label(label)
     tagged(actor)
+    set_movable(get_light_component(actor))
     return actor
 
 
@@ -124,6 +125,39 @@ def safe_set(obj, prop, value):
         obj.set_editor_property(prop, value)
     except Exception:
         pass
+
+
+def set_movable(component):
+    if component is None:
+        return
+    try:
+        component.set_mobility(unreal.ComponentMobility.MOVABLE)
+        return
+    except Exception:
+        pass
+    safe_set(component, "mobility", unreal.ComponentMobility.MOVABLE)
+
+
+def get_light_component(actor):
+    light_component_base = getattr(unreal, "LightComponentBase", None)
+    if light_component_base is not None:
+        component = actor.get_component_by_class(light_component_base)
+        if component is not None:
+            return component
+    for class_name in (
+        "DirectionalLightComponent",
+        "SkyLightComponent",
+        "PointLightComponent",
+        "SpotLightComponent",
+        "RectLightComponent",
+    ):
+        component_class = getattr(unreal, class_name, None)
+        if component_class is None:
+            continue
+        component = actor.get_component_by_class(component_class)
+        if component is not None:
+            return component
+    return None
 
 
 def spawn_text(label, text, location, rotation, size=64.0):

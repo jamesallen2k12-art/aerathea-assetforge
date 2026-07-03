@@ -30,6 +30,10 @@ EXPECTED_LABELS = [
 ]
 EXPECTED_SLOT_LABELS = ["AET_REVIEW_Slot_{}_A01".format(chr(ord("A") + i)) for i in range(12)]
 CURRENT_MESH_PATH = "/Game/Aerathea/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnSlabCluster_A01_Test2Manual"
+CURRENT_MATERIAL_PATHS = [
+    "/Game/Aerathea/Materials/Instances/MI_GIA_BloodAxeCairnSlabCluster_A01_Test2Manual_Projection",
+    "/Game/Aerathea/Materials/Instances/MI_GIA_BloodAxeCairnSlabCluster_A01_Test2Manual_SideStone",
+]
 EXPECTED_UNLIT_REVIEW_MATERIALS = {
     "AET_REVIEW_Floor_120m_A01": "/Game/Aerathea/Materials/Review/M_AET_ReviewIsland_Floor_Unlit_A01",
     "AET_REVIEW_SkyDome_Unlit_A01": "/Game/Aerathea/Materials/Review/M_AET_ReviewIsland_Sky_Unlit_A01",
@@ -272,10 +276,16 @@ def validate_current_asset(actors, failures):
         failures.append("Current asset has no static mesh assigned")
     elif path_without_object(mesh) != CURRENT_MESH_PATH:
         failures.append("Current asset mesh is {}, expected {}".format(path_without_object(mesh), CURRENT_MESH_PATH))
-    if component.get_material(0) is None:
-        failures.append("Current asset material slot 0 is empty")
-    if component.get_material(1) is None:
-        failures.append("Current asset material slot 1 is empty")
+    override_paths = set()
+    for index in range(len(CURRENT_MATERIAL_PATHS)):
+        material = component.get_material(index)
+        if material is None:
+            failures.append("Current asset material slot {} is empty".format(index))
+            continue
+        override_paths.add(path_without_object(material))
+    for material_path in CURRENT_MATERIAL_PATHS:
+        if material_path not in override_paths:
+            failures.append("Current asset is missing material override {}".format(material_path))
 
 
 def validate_world_settings(failures):

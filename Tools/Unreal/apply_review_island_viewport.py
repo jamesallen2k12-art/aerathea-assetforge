@@ -11,7 +11,7 @@ REVIEW_TARGET = unreal.Vector(0.0, 0.0, 120.0)
 REVIEW_FOV = 52.0
 APPLY_ON_TICKS = (2, 15, 45)
 STOP_ON_TICK = 70
-AUTO_BEGIN_PLAY = os.environ.get("AET_REVIEW_AUTO_PLAY", "1").lower() not in ("0", "false", "no")
+AUTO_BEGIN_PLAY = os.environ.get("AET_REVIEW_AUTO_PLAY", "0").lower() in ("1", "true", "yes")
 
 
 def review_rotator(pitch, yaw, roll=0.0):
@@ -69,9 +69,20 @@ def get_viewport_keys(level_editor_subsystem):
     return unique
 
 
+def editor_world_is_review_island():
+    try:
+        world = unreal.EditorLevelLibrary.get_editor_world()
+        if world is None:
+            return False
+        return "L_Aerathea_ReviewIsland" in world.get_path_name()
+    except Exception:
+        return False
+
+
 def apply_viewport():
-    if not unreal.EditorLevelLibrary.load_level(LEVEL_PATH):
-        raise RuntimeError("Failed to load review island: {}".format(LEVEL_PATH))
+    if not editor_world_is_review_island():
+        if not unreal.EditorLevelLibrary.load_level(LEVEL_PATH):
+            raise RuntimeError("Failed to load review island: {}".format(LEVEL_PATH))
 
     rotation = look_at_rotation(REVIEW_LOCATION, REVIEW_TARGET)
     world = unreal.EditorLevelLibrary.get_editor_world()
@@ -126,6 +137,9 @@ def request_begin_play_once():
         return
     if safe_call("begin Play In Editor review", level_editor.editor_request_begin_play):
         state["pie_requested"] = True
+        if state["handle"] is not None:
+            unreal.unregister_slate_post_tick_callback(state["handle"])
+            state["handle"] = None
         unreal.log("Requested Aerathea review island Play In Editor camera review.")
 
 
@@ -149,8 +163,9 @@ def on_tick(delta_time):
                 )
             return
 
-    if state["ticks"] >= STOP_ON_TICK:
+    if state["handle"] is not None and state["ticks"] >= STOP_ON_TICK:
         unreal.unregister_slate_post_tick_callback(state["handle"])
+        state["handle"] = None
         unreal.log("Aerathea review island viewport setup finished after {} ticks.".format(state["ticks"]))
 
 

@@ -88,6 +88,17 @@ def safe_set(obj, prop, value):
         unreal.log_warning("Could not set {}.{}: {}".format(type(obj).__name__, prop, exc))
 
 
+def set_movable(component):
+    if component is None:
+        return
+    try:
+        component.set_mobility(unreal.ComponentMobility.MOVABLE)
+        return
+    except Exception:
+        pass
+    safe_set(component, "mobility", unreal.ComponentMobility.MOVABLE)
+
+
 def color_material(name, color, roughness=0.85, metallic=0.0, emissive=None):
     ensure_directory(MATERIAL_PATH)
     asset_path = "{}/{}".format(MATERIAL_PATH, name)
@@ -561,6 +572,7 @@ def ensure_review_lighting():
         activate_actor_for_review(directional)
         component = directional.get_component_by_class(unreal.DirectionalLightComponent)
         if component is not None:
+            set_movable(component)
             safe_set(component, "intensity", 5.0)
             safe_set(component, "light_color", unreal.Color(255, 236, 205, 255))
             set_directional_forward_priority(directional, 1)
@@ -582,6 +594,7 @@ def ensure_review_lighting():
         activate_actor_for_review(sky_light)
         component = sky_light.get_component_by_class(unreal.SkyLightComponent)
         if component is not None:
+            set_movable(component)
             safe_set(component, "intensity", 1.5)
 
 
@@ -706,6 +719,7 @@ def update_startup_level(meshes, materials, portal_blueprint):
     )
     light_component = fill_light.get_component_by_class(unreal.PointLightComponent)
     if light_component is not None:
+        set_movable(light_component)
         safe_set(light_component, "intensity", 6000.0)
         safe_set(light_component, "attenuation_radius", 2200.0)
         safe_set(light_component, "light_color", unreal.Color(180, 210, 255, 255))
