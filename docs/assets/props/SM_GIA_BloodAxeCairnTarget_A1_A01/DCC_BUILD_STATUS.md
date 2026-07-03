@@ -24,10 +24,11 @@
 - A1 front trace guide: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_A1_FrontTraceGuide.png`
 - Traced geometry proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_TracedGeometryPass_A03.png`
 - Fractured face proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_FracturedFacePass_A04.png`
-- LOD0: 4458 tris
-- LOD1: 2222 tris
-- LOD2: 1484 tris
-- LOD3: 1156 tris
+- Traced outline proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_TracedOutlinePass_A05.png`
+- LOD0: 4170 tris
+- LOD1: 2018 tris
+- LOD2: 1354 tris
+- LOD3: 1044 tris
 
 ## Second Geometry Pass
 
@@ -109,6 +110,17 @@
 - Latest triangle counts: LOD0 4458 tris, LOD1 2222, LOD2 1484, LOD3 1156.
 - Status remains `DCC source candidate pending concept-geometry and paint review`; final approval status is `not approved`.
 - Review note: this pass fixed part of the previous surface-plane failure, but the front still reads as one broad tabletop slab. The next pass must replace the one-piece dominant slab with a stricter multi-plane stone construction matching the A1 front target before paint polish continues.
+
+## Traced Outline Front Slab Learning Pass
+
+- Replaced the dominant front slab outline with a stricter traced A1 polygon and reduced the mesh face perturbation so the silhouette could be judged without heavy procedural noise.
+- Made the red pigment material opaque and removed alpha coupling in the proof material so paint is treated as surface pigment instead of semi-transparent decal markup.
+- Softened the DCC review world light and fill light to reduce false black tearing in proof renders.
+- Saved the latest in-progress proof as `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_TracedOutlinePass_A05.png`.
+- Latest triangle counts: LOD0 4170 tris, LOD1 2018, LOD2 1354, LOD3 1044.
+- Status remains `DCC source candidate pending concept-geometry and paint review`; final approval status is `not approved`.
+- Review note: this pass is useful failure evidence, not an approval candidate. The traced front silhouette moved closer to the A1 crop, but the 3D read became too upright, front-facing, smooth, and shield-like instead of a low collapsed slanted cairn stone integrated into the mound.
+- Next pass should use the trace polygon as a proportion guide only: lean the slab back/down, lower it into the pile, restore low collapsed massing, and hold red pigment until the stone geometry reads correctly.
 
 ## Gate
 

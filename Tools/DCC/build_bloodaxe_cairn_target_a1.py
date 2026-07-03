@@ -171,7 +171,7 @@ def make_texture_material(name: str, textures: dict[str, Path], roughness: float
     material["Aerathea.MaterialPass"] = "dcc_texture_integration_proof"
     if name.endswith("_RedPaint"):
         material["Aerathea.SurfaceTreatment"] = "worn_oxide_pigment_surface_decal"
-        material.blend_method = "BLEND"
+        material.blend_method = "OPAQUE"
         material.show_transparent_back = False
 
     def load_image_node(path: Path, label: str, color_space: str) -> bpy.types.Node:
@@ -202,8 +202,6 @@ def make_texture_material(name: str, textures: dict[str, Path], roughness: float
 
     links = material.node_tree.links
     links.new(bc_node.outputs["Color"], bsdf.inputs["Base Color"])
-    if name.endswith("_RedPaint"):
-        links.new(bc_node.outputs["Alpha"], bsdf.inputs["Alpha"])
     links.new(n_node.outputs["Color"], normal_map.inputs["Color"])
     links.new(normal_map.outputs["Normal"], bsdf.inputs["Normal"])
     links.new(orm_node.outputs["Color"], separate.inputs["Image"])
@@ -388,8 +386,8 @@ def add_fractured_slab(
     for index, (nx, nz) in enumerate(outline):
         x_noise = (deterministic_noise(index, seed, seed + 11) - 0.5) * width * 0.045
         z_noise = (deterministic_noise(seed, index, seed + 17) - 0.5) * height * 0.045
-        front_y_noise = (deterministic_noise(index, seed + 19, seed + 23) - 0.5) * depth * 0.16
-        back_y_noise = (deterministic_noise(index, seed + 29, seed + 31) - 0.5) * depth * 0.10
+        front_y_noise = (deterministic_noise(index, seed + 19, seed + 23) - 0.5) * depth * 0.08
+        back_y_noise = (deterministic_noise(index, seed + 29, seed + 31) - 0.5) * depth * 0.06
         x = nx * width + x_noise
         z = nz * height + z_noise
         front.append(len(verts))
@@ -400,9 +398,9 @@ def add_fractured_slab(
         verts.append((back_x, back_y + back_y_noise, back_z))
 
     front_center = len(verts)
-    verts.append((0.0, front_y - max(0.8, depth * 0.16), 0.0))
+    verts.append((0.0, front_y - max(0.8, depth * 0.08), 0.0))
     back_center = len(verts)
-    verts.append((0.0, back_y + max(0.8, depth * 0.12), 0.0))
+    verts.append((0.0, back_y + max(0.8, depth * 0.08), 0.0))
 
     faces: list[tuple[int, ...]] = []
     for index in range(len(outline)):
@@ -699,20 +697,13 @@ def build_asset_lod(collection: bpy.types.Collection, materials: dict[str, bpy.t
     # Front proportions are locked to the traced A1 guide in
     # docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/*_A1_FrontTraceGuide.png.
     broad_front_outline = [
-        (-0.50, -0.43),
-        (-0.39, -0.53),
-        (-0.22, -0.47),
-        (-0.05, -0.55),
-        (0.18, -0.43),
-        (0.40, -0.30),
-        (0.53, -0.10),
-        (0.40, 0.04),
-        (0.31, 0.24),
-        (0.10, 0.42),
-        (-0.12, 0.51),
-        (-0.31, 0.36),
-        (-0.48, 0.13),
-        (-0.56, -0.08),
+        (-0.40, 0.37),
+        (-0.02, 0.50),
+        (0.34, 0.32),
+        (0.50, -0.08),
+        (0.26, -0.50),
+        (-0.20, -0.45),
+        (-0.50, -0.06),
     ]
     tall_crag_outline = [
         (-0.34, -0.50),
@@ -760,9 +751,9 @@ def build_asset_lod(collection: bpy.types.Collection, materials: dict[str, bpy.t
     fractured_specs = [
         (
             "DominantDiagonalFrontSlab",
-            (-18, -55, 53),
-            (126, 25, 92),
-            (math.radians(-46), math.radians(-8), math.radians(-18)),
+            (-16, -56, 58),
+            (136, 24, 112),
+            (math.radians(-43), math.radians(-8), math.radians(-18)),
             broad_front_outline,
             201,
         ),
@@ -839,22 +830,22 @@ def build_asset_lod(collection: bpy.types.Collection, materials: dict[str, bpy.t
 
     if mid:
         paint_specs = [
-            ("MainSlabCentralLongBloodAxeStem", (-4, -89, 62), (84, -1.2, 6.6), (math.radians(-46), math.radians(-8), math.radians(54)), 301),
-            ("MainSlabUpperLeftPaintSweep", (-39, -90, 73), (54, -1.2, 6.0), (math.radians(-46), math.radians(-8), math.radians(8)), 302),
-            ("MainSlabLowerRightPaintSweep", (14, -89, 48), (48, -1.2, 5.6), (math.radians(-46), math.radians(-8), math.radians(-34)), 303),
-            ("MainSlabCircularLeftBrokenArc", (-33, -90, 61), (34, -1.2, 4.8), (math.radians(-46), math.radians(-8), math.radians(95)), 312),
-            ("MainSlabCircularRightBrokenArc", (5, -89, 68), (36, -1.2, 4.8), (math.radians(-46), math.radians(-8), math.radians(-84)), 313),
+            ("MainSlabCentralLongBloodAxeStem", (-3, -89, 65), (84, -1.0, 6.2), (math.radians(-43), math.radians(-8), math.radians(54)), 301),
+            ("MainSlabUpperLeftPaintSweep", (-39, -90, 77), (54, -1.0, 5.6), (math.radians(-43), math.radians(-8), math.radians(8)), 302),
+            ("MainSlabLowerRightPaintSweep", (14, -89, 49), (48, -1.0, 5.2), (math.radians(-43), math.radians(-8), math.radians(-34)), 303),
+            ("MainSlabCircularLeftBrokenArc", (-33, -90, 63), (34, -1.0, 4.4), (math.radians(-43), math.radians(-8), math.radians(95)), 312),
+            ("MainSlabCircularRightBrokenArc", (5, -89, 70), (36, -1.0, 4.4), (math.radians(-43), math.radians(-8), math.radians(-84)), 313),
             ("LeftStackSubtleRedSmear", (-125, -53, 58), (46, -0.8, 5.0), (math.radians(2), math.radians(-6), math.radians(5)), 304),
             ("RearSlabTallWarPaint", (30, 20, 111), (44, -0.8, 5.8), (math.radians(-13), math.radians(8), math.radians(63)), 305),
         ]
         if lod == 0:
             paint_specs.extend(
                 [
-                    ("MainSlabBottomDripToGround", (20, -89, 34), (34, -1.2, 3.6), (math.radians(-46), math.radians(-8), math.radians(72)), 306),
-                    ("MainSlabCenterAxeHeadPatch", (-9, -90, 60), (26, -1.2, 8.0), (math.radians(-46), math.radians(-8), math.radians(9)), 307),
-                    ("MainSlabLeftHookBrokenStroke", (-46, -90, 67), (30, -1.2, 3.4), (math.radians(-46), math.radians(-8), math.radians(39)), 309),
-                    ("MainSlabDryBrushTopChip", (-24, -90, 80), (18, -1.2, 3.0), (math.radians(-46), math.radians(-8), math.radians(-43)), 310),
-                    ("MainSlabLowerDryBrushBreak", (-1, -89, 39), (22, -1.2, 3.0), (math.radians(-46), math.radians(-8), math.radians(5)), 311),
+                    ("MainSlabBottomDripToGround", (20, -89, 36), (34, -1.0, 3.2), (math.radians(-43), math.radians(-8), math.radians(72)), 306),
+                    ("MainSlabCenterAxeHeadPatch", (-9, -90, 63), (26, -1.0, 7.4), (math.radians(-43), math.radians(-8), math.radians(9)), 307),
+                    ("MainSlabLeftHookBrokenStroke", (-46, -90, 70), (30, -1.0, 3.0), (math.radians(-43), math.radians(-8), math.radians(39)), 309),
+                    ("MainSlabDryBrushTopChip", (-24, -90, 84), (18, -1.0, 2.8), (math.radians(-43), math.radians(-8), math.radians(-43)), 310),
+                    ("MainSlabLowerDryBrushBreak", (-1, -89, 41), (22, -1.0, 2.8), (math.radians(-43), math.radians(-8), math.radians(5)), 311),
                 ]
             )
         for label, location, dimensions, rotation, seed in paint_specs:
@@ -1055,14 +1046,14 @@ def look_at(camera: bpy.types.Object, target: Vector) -> None:
 def configure_review_scene() -> tuple[bpy.types.Object, Vector]:
     world = bpy.context.scene.world or bpy.data.worlds.new("AeratheaDCCWorld")
     bpy.context.scene.world = world
-    world.color = (0.60, 0.59, 0.56)
+    world.color = (0.68, 0.67, 0.64)
 
     scene = bpy.context.scene
     try:
         scene.render.engine = "BLENDER_EEVEE"
         scene.eevee.use_gtao = True
         scene.eevee.gtao_distance = 2.4
-        scene.eevee.gtao_factor = 0.38
+        scene.eevee.gtao_factor = 0.24
         scene.eevee.shadow_cube_size = "2048"
         scene.eevee.shadow_cascade_size = "2048"
         scene.eevee.taa_render_samples = 48
@@ -1083,7 +1074,7 @@ def configure_review_scene() -> tuple[bpy.types.Object, Vector]:
     bpy.ops.object.light_add(type="POINT", location=(280, -240, 190))
     fill = bpy.context.object
     fill.name = "AET_DCC_Fill_Point"
-    fill.data.energy = 18000.0
+    fill.data.energy = 28000.0
     fill.data.shadow_soft_size = 380.0
 
     bpy.ops.object.light_add(type="AREA", location=(250, 340, 270))
