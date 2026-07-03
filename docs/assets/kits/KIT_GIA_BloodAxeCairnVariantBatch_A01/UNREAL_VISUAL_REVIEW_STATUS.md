@@ -21,8 +21,8 @@ The imported batch is acceptable for the next production gate: final shared text
 The shared BC/N/ORM texture/material candidate was authored and imported on 2026-07-03. The follow-up pass preserved the broad dark-stone, dirt-base, and oxide-red Blood Axe cloth read while adding shared candidate map support through the one-slot Unreal material.
 
 - Texture proof sheet: `docs/assets/kits/KIT_GIA_BloodAxeCairnVariantBatch_A01/BloodAxeCairnVariants_A01_TextureReviewSheet.png`
-- Close unlit capture: `Saved/Automation/ReviewIsland/BloodAxeCairnVariants_A01_TextureReview_Close_Unlit.png`
-- Close lit capture: `Saved/Automation/ReviewIsland/BloodAxeCairnVariants_A01_TextureReview_Close_Lit.png`
+- Close unlit capture: `docs/assets/kits/KIT_GIA_BloodAxeCairnVariantBatch_A01/BloodAxeCairnVariants_A01_TextureReview_Close_Unlit.png`
+- Close lit capture: `docs/assets/kits/KIT_GIA_BloodAxeCairnVariantBatch_A01/BloodAxeCairnVariants_A01_TextureReview_Close_Lit.png`
 - Texture/material status: texture/material candidate pending Flamestrike review
 
 The close captures are acceptable for Flamestrike texture/material review. The batch remains `Unreal import candidate` and is still not final visual approval.

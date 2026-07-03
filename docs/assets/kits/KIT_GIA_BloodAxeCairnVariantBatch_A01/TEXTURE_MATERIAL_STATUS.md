@@ -18,6 +18,8 @@ This pass authored and imported a shared BC/N/ORM candidate for the twelve Blood
 - `SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/KIT_GIA_BloodAxeCairnVariantBatch_A01/T_GIA_BloodAxeCairnVariants_A01_N.png`
 - `SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/KIT_GIA_BloodAxeCairnVariantBatch_A01/T_GIA_BloodAxeCairnVariants_A01_ORM.png`
 - Proof sheet: `docs/assets/kits/KIT_GIA_BloodAxeCairnVariantBatch_A01/BloodAxeCairnVariants_A01_TextureReviewSheet.png`
+- Tracked unlit review capture: `docs/assets/kits/KIT_GIA_BloodAxeCairnVariantBatch_A01/BloodAxeCairnVariants_A01_TextureReview_Close_Unlit.png`
+- Tracked lit review capture: `docs/assets/kits/KIT_GIA_BloodAxeCairnVariantBatch_A01/BloodAxeCairnVariants_A01_TextureReview_Close_Lit.png`
 
 The source maps are derived from existing approved Blood Axe cairn texture swatches and are intentionally neutral enough to preserve the variant vertex-color identity: dark highland stone, cave stone, ash/mud, oxide-red cloth, rawhide, iron, and bone.
 
@@ -56,6 +58,8 @@ The material keeps vertex color as the broad identity layer and applies the shar
 
 - Unlit close material review: `Saved/Automation/ReviewIsland/BloodAxeCairnVariants_A01_TextureReview_Close_Unlit.png`
 - Lit close material review: `Saved/Automation/ReviewIsland/BloodAxeCairnVariants_A01_TextureReview_Close_Lit.png`
+- Git-tracked unlit copy: `docs/assets/kits/KIT_GIA_BloodAxeCairnVariantBatch_A01/BloodAxeCairnVariants_A01_TextureReview_Close_Unlit.png`
+- Git-tracked lit copy: `docs/assets/kits/KIT_GIA_BloodAxeCairnVariantBatch_A01/BloodAxeCairnVariants_A01_TextureReview_Close_Lit.png`
 
 The clean close captures show the twelve variants in review-map order with readable stone value grouping, round dirt/soil bases, and retained oxide-red Blood Axe cloth accents. The lit capture is the best approval-facing view for texture/material read; the unlit capture is retained as a material identity check.
 

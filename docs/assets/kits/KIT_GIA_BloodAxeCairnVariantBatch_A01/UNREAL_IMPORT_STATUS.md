@@ -65,7 +65,7 @@ Validated import source requirements:
 - Clean offscreen review capture completed at `Saved/Automation/ReviewIsland/BloodAxeCairnVariants_A01_UnrealReview_Unlit.png`.
 - Codex Unreal visual review passed for source-intent preservation and cleared the batch for final texture/material production; see `UNREAL_VISUAL_REVIEW_STATUS.md`.
 - Shared BC/N/ORM texture/material candidate import passed validation for texture settings, material instance parent, one-slot mesh assignment, and mesh metadata.
-- Close texture/material captures completed at `Saved/Automation/ReviewIsland/BloodAxeCairnVariants_A01_TextureReview_Close_Unlit.png` and `Saved/Automation/ReviewIsland/BloodAxeCairnVariants_A01_TextureReview_Close_Lit.png`.
+- Close texture/material captures completed and were preserved as tracked copies at `docs/assets/kits/KIT_GIA_BloodAxeCairnVariantBatch_A01/BloodAxeCairnVariants_A01_TextureReview_Close_Unlit.png` and `docs/assets/kits/KIT_GIA_BloodAxeCairnVariantBatch_A01/BloodAxeCairnVariants_A01_TextureReview_Close_Lit.png`.
 
 ## Boundaries
 
