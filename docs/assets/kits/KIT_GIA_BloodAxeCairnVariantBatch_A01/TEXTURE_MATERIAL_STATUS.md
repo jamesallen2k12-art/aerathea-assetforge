@@ -5,12 +5,13 @@
 - Pass date: 2026-07-03
 - Current asset status: `Unreal import candidate`
 - Texture/material pass status: texture/material candidate pending Flamestrike review
+- Concept geometry audit: requested changes; see `CONCEPT_GEOMETRY_AUDIT.md`
 - DCC builder: `Tools/DCC/build_bloodaxe_cairn_variant_textures.py`
 - Unreal import script: `Tools/Unreal/import_bloodaxe_cairn_variant_textures.py`
 - Unreal validation script: `Tools/Unreal/validate_bloodaxe_cairn_variant_textures.py`
 - Review placement script: `Tools/Unreal/place_bloodaxe_cairn_variant_texture_review.py`
 
-This pass authored and imported a shared BC/N/ORM candidate for the twelve Blood Axe cairn variants. The pass does not promote any asset to `Fully game-ready`, final visual approval, gameplay placement approval, or approved library status.
+This pass authored and imported a shared BC/N/ORM candidate for the twelve Blood Axe cairn variants. Flamestrike review identified that the current geometry does not adequately match the approved concept asset direction, so this texture/material pass must not be treated as final approval evidence. The pass does not promote any asset to `Fully game-ready`, final visual approval, gameplay placement approval, or approved library status.
 
 ## Authored Source Textures
 
@@ -66,6 +67,7 @@ The clean close captures show the twelve variants in review-map order with reada
 ## Remaining Gates
 
 - Flamestrike close visual review and final texture/material approval.
+- Concept-geometry rebuild or repair before final texture/material approval.
 - Any requested material value/color adjustment from review.
 - Startup or gameplay placement review, if these cairns are promoted beyond the review island.
 - Performance and gameplay validation in an approved gameplay or library-review map.

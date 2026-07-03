@@ -8,6 +8,7 @@
 - Current Unreal status: `Unreal import candidate`
 - Visual canon reference: `VC-GIA-BloodAxe-CairnStones-A01`
 - Turnaround reference: `VC-GIA-BloodAxe-CairnStones-A01-A1-TurnaroundGuide`
+- Concept geometry audit: `CONCEPT_GEOMETRY_AUDIT.md`
 
 This batch converts twelve package-ready Blood Axe cairn variants into deterministic first-pass Blender sources, UV0 review unwraps, FBX exports, LOD0-LOD3 FBX handoffs, broad UCX-style collision proxies, and DCC proof renders. A follow-up Unreal pass imported and validated the batch as `Unreal import candidate`. The assets are not `Fully game-ready`.
 
@@ -54,7 +55,7 @@ The proof renders include the asset, ground-center pivot label, female Giant 442
 - DCC game-ready prep status: `docs/assets/kits/KIT_GIA_BloodAxeCairnVariantBatch_A01/DCC_GAME_READY_PREP_STATUS.md`
 - Unreal import task packet: `docs/assets/kits/KIT_GIA_BloodAxeCairnVariantBatch_A01/UNREAL_IMPORT_TASK_PACKET.md`
 
-Codex preflight review kept all twelve variants in the batch. Initial review flagged four duplicate-risk silhouettes; a same-day DCC differentiation pass revised those four assets, regenerated the Blender sources, rebuilt main FBXs and LOD0-LOD3 FBXs, and updated the contact sheet. The game-ready prep pass then added UV0 review unwraps, broad UCX-style collision proxies, and a material/texture/import plan. Current recommendation: all twelve are `DCC game-ready candidate` assets ready for Unreal import testing.
+Codex preflight review kept all twelve variants in the batch. Initial review flagged four duplicate-risk silhouettes; a same-day DCC differentiation pass revised those four assets, regenerated the Blender sources, rebuilt main FBXs and LOD0-LOD3 FBXs, and updated the contact sheet. The game-ready prep pass then added UV0 review unwraps, broad UCX-style collision proxies, and a material/texture/import plan. Follow-up Flamestrike review found that the batch was not checked tightly enough against the approved concept asset geometry. Current recommendation: preserve the technical import work, but treat the visual geometry as requested changes before final approval.
 
 ## Validation
 
@@ -78,11 +79,12 @@ Codex preflight review kept all twelve variants in the batch. Initial review fla
 - The batch preserves the Blood Axe cairn language: rough dark highland stone, cold ash/mud grounding, restrained oxide red cloth, rawhide or scrap accents only where planned, and no civilized Giant masonry read.
 - The silhouettes stay crude, low-to-mid height, and readable for MMO camera distances.
 - The paired variants are art-composition pairs only. They do not define route gates, objective lanes, nav blockers, encounter scripting, or quest marker logic.
+- Concept-geometry audit found that the batch is too generalized from A1, uses too many clean round bases, and does not prove distinct A2-A5 or B1-B5 concept matches.
 
 ## Still Blocked
 
-Final hand-painted BC/N/ORM texture sets, final material polish, startup/gameplay placement, final visual approval, final Blood Axe ritual/cave/route approval, gameplay behavior, waypoint behavior, route logic, pickup/loot/salvage behavior, destructible behavior, physics behavior, cloth simulation, VFX/audio, and Hermes work remain blocked.
+Concept-specific geometry rebuild/repair, final hand-painted BC/N/ORM texture sets, final material polish, startup/gameplay placement, final visual approval, final Blood Axe ritual/cave/route approval, gameplay behavior, waypoint behavior, route logic, pickup/loot/salvage behavior, destructible behavior, physics behavior, cloth simulation, VFX/audio, and Hermes work remain blocked.
 
 ## Decision
 
-The July 3, 2026 batch now creates twelve valid `DCC game-ready candidate` source assets and twelve validated `Unreal import candidate` static meshes. Do not promote any of these to `Gameplay validated asset`, `Approved library asset`, or `Fully game-ready` until the remaining visual, gameplay, and approval gates are completed and approved.
+The July 3, 2026 batch creates twelve technically valid `DCC game-ready candidate` source assets and twelve validated `Unreal import candidate` static meshes. Do not promote any of these to `Gameplay validated asset`, `Approved library asset`, or `Fully game-ready` until concept-specific geometry, visual, gameplay, and approval gates are completed and approved.

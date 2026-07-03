@@ -8,6 +8,7 @@
 - Contact sheet: `docs/assets/kits/KIT_GIA_BloodAxeCairnVariantBatch_A01/BloodAxeCairnVariants_A01_DCCReviewContactSheet.png`
 - Status after this pass: `DCC game-ready candidate`
 - Current follow-up status: `Unreal import candidate`
+- Concept geometry audit: requested changes; see `CONCEPT_GEOMETRY_AUDIT.md`
 
 This DCC pass moved the twelve Blood Axe cairn variants from `DCC source candidate` to `DCC game-ready candidate` for Unreal import testing. A follow-up Unreal import pass on 2026-07-03 promoted the same twelve assets to `Unreal import candidate`; see `UNREAL_IMPORT_STATUS.md`. They are still not `Gameplay validated asset`, `Approved library asset`, or `Fully game-ready`.
 
@@ -75,6 +76,7 @@ The import-test material should use vertex color to preserve the current dark st
 - Unreal import has run and passed validation; status details are tracked in `UNREAL_IMPORT_STATUS.md`.
 - Unreal material parent and material instance exist as shared texture/material candidate assets.
 - Shared BC/N/ORM texture maps are authored as candidates and pending Flamestrike review.
+- Concept-specific geometry repair/rebuild is now required before final visual or material approval.
 - Broad simple collision has been validated in Unreal as import-candidate collision.
 - LOD count has been validated in Unreal.
 - Review island placement exists; startup/gameplay placement has not been created.
