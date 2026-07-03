@@ -61,3 +61,13 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260703-073927/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260703-073927/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-03 07:46:52 EDT -0400 - post GitHub protection clean state
+
+- Snapshot: `Saved/ProjectRecovery/20260703-074652/`
+- Git: branch `main`, HEAD `1b55c7f`, status lines `0`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260703-074652/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260703-074652/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260703-074652/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
