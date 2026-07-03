@@ -388,19 +388,21 @@ def add_fractured_slab(
     for index, (nx, nz) in enumerate(outline):
         x_noise = (deterministic_noise(index, seed, seed + 11) - 0.5) * width * 0.045
         z_noise = (deterministic_noise(seed, index, seed + 17) - 0.5) * height * 0.045
+        front_y_noise = (deterministic_noise(index, seed + 19, seed + 23) - 0.5) * depth * 0.16
+        back_y_noise = (deterministic_noise(index, seed + 29, seed + 31) - 0.5) * depth * 0.10
         x = nx * width + x_noise
         z = nz * height + z_noise
         front.append(len(verts))
-        verts.append((x, front_y, z))
+        verts.append((x, front_y + front_y_noise, z))
         back.append(len(verts))
         back_x = x * (0.92 + deterministic_noise(index, seed + 3, seed + 31) * 0.08)
         back_z = z * (0.94 + deterministic_noise(index, seed + 5, seed + 37) * 0.06)
-        verts.append((back_x, back_y, back_z))
+        verts.append((back_x, back_y + back_y_noise, back_z))
 
     front_center = len(verts)
-    verts.append((0.0, front_y - 0.8, 0.0))
+    verts.append((0.0, front_y - max(0.8, depth * 0.16), 0.0))
     back_center = len(verts)
-    verts.append((0.0, back_y + 0.8, 0.0))
+    verts.append((0.0, back_y + max(0.8, depth * 0.12), 0.0))
 
     faces: list[tuple[int, ...]] = []
     for index in range(len(outline)):
@@ -455,7 +457,7 @@ def add_surface_stroke(
     center_noise_scale: float = 0.36,
     gap_threshold: float = 0.92,
 ) -> bpy.types.Object:
-    length, _surface_offset, stroke_width = dimensions
+    length, surface_offset, stroke_width = dimensions
     verts: list[tuple[float, float, float]] = []
     faces: list[tuple[int, int, int, int]] = []
     for index in range(segments + 1):
@@ -466,8 +468,8 @@ def add_surface_stroke(
         lower_noise = (deterministic_noise(seed, index, seed + 7) - 0.5) * stroke_width * edge_noise
         center_noise = (deterministic_noise(index, seed + 11, seed + 13) - 0.5) * stroke_width * center_noise_scale
         half_width = max(stroke_width * taper * 0.5, stroke_width * min_width)
-        verts.append((x, 0.0, center_noise - half_width + lower_noise))
-        verts.append((x, 0.0, center_noise + half_width + upper_noise))
+        verts.append((x, surface_offset, center_noise - half_width + lower_noise))
+        verts.append((x, surface_offset, center_noise + half_width + upper_noise))
 
     for index in range(segments):
         if deterministic_noise(index, seed + 23, seed + 29) > gap_threshold:
@@ -542,6 +544,37 @@ def add_cylinder_between(
     roughen_mesh(obj, radius * 0.22, seed)
     bpy.ops.object.shade_flat()
     move_to_collection(obj, collection)
+    return obj
+
+
+def add_curved_rope(
+    name: str,
+    collection: bpy.types.Collection,
+    material: bpy.types.Material,
+    points: list[tuple[float, float, float]],
+    radius: float,
+    seed: int,
+) -> bpy.types.Object:
+    curve = bpy.data.curves.new(f"{name}_Curve", "CURVE")
+    curve.dimensions = "3D"
+    curve.resolution_u = 2
+    curve.bevel_depth = radius
+    curve.bevel_resolution = 1
+    curve.fill_mode = "FULL"
+    spline = curve.splines.new("POLY")
+    spline.points.add(len(points) - 1)
+    for point, co in zip(spline.points, points):
+        point.co = (co[0], co[1], co[2], 1.0)
+
+    obj = bpy.data.objects.new(name, curve)
+    obj.data.materials.append(material)
+    collection.objects.link(obj)
+    set_active(obj)
+    bpy.ops.object.convert(target="MESH")
+    obj = bpy.context.object
+    obj.name = name
+    roughen_mesh(obj, radius * 0.18, seed)
+    bpy.ops.object.shade_flat()
     return obj
 
 
@@ -727,33 +760,33 @@ def build_asset_lod(collection: bpy.types.Collection, materials: dict[str, bpy.t
     fractured_specs = [
         (
             "DominantDiagonalFrontSlab",
-            (-16, -55, 50),
-            (132, 26, 88),
-            (math.radians(-56), math.radians(-8), math.radians(-18)),
+            (-18, -55, 53),
+            (126, 25, 92),
+            (math.radians(-46), math.radians(-8), math.radians(-18)),
             broad_front_outline,
             201,
         ),
         (
             "TallRearOathSlab",
-            (16, 52, 96),
-            (58, 26, 158),
-            (math.radians(-8), math.radians(6), math.radians(-7)),
+            (26, 58, 88),
+            (54, 24, 144),
+            (math.radians(-13), math.radians(8), math.radians(-4)),
             tall_crag_outline,
             202,
         ),
         (
             "RightUprightSupportStone",
-            (105, -7, 58),
-            (38, 22, 94),
-            (math.radians(1), math.radians(-6), math.radians(4)),
+            (108, -10, 54),
+            (34, 21, 84),
+            (math.radians(1), math.radians(-8), math.radians(8)),
             support_crag_outline,
             206,
         ),
         (
             "RightRearSupportStone",
-            (128, 40, 40),
-            (18, 18, 46),
-            (math.radians(-5), math.radians(5), math.radians(12)),
+            (121, 36, 33),
+            (14, 15, 32),
+            (math.radians(-5), math.radians(5), math.radians(10)),
             support_crag_outline,
             207,
         ),
@@ -777,7 +810,7 @@ def build_asset_lod(collection: bpy.types.Collection, materials: dict[str, bpy.t
             [
                 ("LeftBackBrokenShard", (-150, 18, 40), (24, 20, 54), (math.radians(-7), math.radians(8), math.radians(-18)), support_crag_outline, 211),
                 ("RearNeedleShardLeft", (-14, 70, 83), (18, 16, 70), (math.radians(-11), math.radians(-7), math.radians(7)), tall_crag_outline, 212),
-                ("RearNeedleShardRight", (72, 86, 50), (14, 14, 36), (math.radians(8), math.radians(5), math.radians(14)), support_crag_outline, 213),
+                ("RearNeedleShardRight", (70, 86, 43), (10, 10, 24), (math.radians(8), math.radians(5), math.radians(14)), support_crag_outline, 213),
             ]
         )
     if detail:
@@ -806,22 +839,22 @@ def build_asset_lod(collection: bpy.types.Collection, materials: dict[str, bpy.t
 
     if mid:
         paint_specs = [
-            ("MainSlabCentralLongBloodAxeStem", (-3, -89, 62), (92, 0.0, 7.6), (math.radians(-56), math.radians(-8), math.radians(54)), 301),
-            ("MainSlabUpperLeftPaintSweep", (-38, -90, 74), (62, 0.0, 7.0), (math.radians(-56), math.radians(-8), math.radians(8)), 302),
-            ("MainSlabLowerRightPaintSweep", (14, -89, 47), (56, 0.0, 6.6), (math.radians(-56), math.radians(-8), math.radians(-34)), 303),
-            ("MainSlabCircularLeftBrokenArc", (-33, -90, 61), (38, 0.0, 5.8), (math.radians(-56), math.radians(-8), math.radians(95)), 312),
-            ("MainSlabCircularRightBrokenArc", (6, -89, 68), (40, 0.0, 5.8), (math.radians(-56), math.radians(-8), math.radians(-84)), 313),
-            ("LeftStackSubtleRedSmear", (-125, -53, 58), (46, 0.0, 5.0), (math.radians(2), math.radians(-6), math.radians(5)), 304),
-            ("RearSlabTallWarPaint", (22, 16, 120), (52, 0.0, 6.8), (math.radians(-8), math.radians(6), math.radians(63)), 305),
+            ("MainSlabCentralLongBloodAxeStem", (-4, -89, 62), (84, -1.2, 6.6), (math.radians(-46), math.radians(-8), math.radians(54)), 301),
+            ("MainSlabUpperLeftPaintSweep", (-39, -90, 73), (54, -1.2, 6.0), (math.radians(-46), math.radians(-8), math.radians(8)), 302),
+            ("MainSlabLowerRightPaintSweep", (14, -89, 48), (48, -1.2, 5.6), (math.radians(-46), math.radians(-8), math.radians(-34)), 303),
+            ("MainSlabCircularLeftBrokenArc", (-33, -90, 61), (34, -1.2, 4.8), (math.radians(-46), math.radians(-8), math.radians(95)), 312),
+            ("MainSlabCircularRightBrokenArc", (5, -89, 68), (36, -1.2, 4.8), (math.radians(-46), math.radians(-8), math.radians(-84)), 313),
+            ("LeftStackSubtleRedSmear", (-125, -53, 58), (46, -0.8, 5.0), (math.radians(2), math.radians(-6), math.radians(5)), 304),
+            ("RearSlabTallWarPaint", (30, 20, 111), (44, -0.8, 5.8), (math.radians(-13), math.radians(8), math.radians(63)), 305),
         ]
         if lod == 0:
             paint_specs.extend(
                 [
-                    ("MainSlabBottomDripToGround", (20, -89, 33), (38, 0.0, 4.4), (math.radians(-56), math.radians(-8), math.radians(72)), 306),
-                    ("MainSlabCenterAxeHeadPatch", (-9, -90, 59), (30, 0.0, 9.8), (math.radians(-56), math.radians(-8), math.radians(9)), 307),
-                    ("MainSlabLeftHookBrokenStroke", (-46, -90, 67), (34, 0.0, 4.2), (math.radians(-56), math.radians(-8), math.radians(39)), 309),
-                    ("MainSlabDryBrushTopChip", (-24, -90, 81), (22, 0.0, 3.7), (math.radians(-56), math.radians(-8), math.radians(-43)), 310),
-                    ("MainSlabLowerDryBrushBreak", (-1, -89, 38), (25, 0.0, 3.7), (math.radians(-56), math.radians(-8), math.radians(5)), 311),
+                    ("MainSlabBottomDripToGround", (20, -89, 34), (34, -1.2, 3.6), (math.radians(-46), math.radians(-8), math.radians(72)), 306),
+                    ("MainSlabCenterAxeHeadPatch", (-9, -90, 60), (26, -1.2, 8.0), (math.radians(-46), math.radians(-8), math.radians(9)), 307),
+                    ("MainSlabLeftHookBrokenStroke", (-46, -90, 67), (30, -1.2, 3.4), (math.radians(-46), math.radians(-8), math.radians(39)), 309),
+                    ("MainSlabDryBrushTopChip", (-24, -90, 80), (18, -1.2, 3.0), (math.radians(-46), math.radians(-8), math.radians(-43)), 310),
+                    ("MainSlabLowerDryBrushBreak", (-1, -89, 39), (22, -1.2, 3.0), (math.radians(-46), math.radians(-8), math.radians(5)), 311),
                 ]
             )
         for label, location, dimensions, rotation, seed in paint_specs:
@@ -849,18 +882,18 @@ def build_asset_lod(collection: bpy.types.Collection, materials: dict[str, bpy.t
 
     if detail:
         rope_specs = [
-            ("LeftStackWrapUpper", (-151, -59, 65), (-87, -58, 63), 1.7, 401),
-            ("LeftStackWrapMid", (-152, -59, 54), (-85, -58, 52), 1.7, 402),
-            ("LeftStackWrapLower", (-148, -59, 42), (-91, -58, 41), 1.5, 403),
-            ("LeftStackShortVerticalTieA", (-143, -60, 38), (-142, -59, 74), 1.2, 407),
-            ("LeftStackShortVerticalTieB", (-101, -60, 39), (-102, -59, 71), 1.2, 408),
-            ("RightSupportWrapUpper", (92, -38, 65), (121, -37, 64), 1.2, 405),
-            ("RightSupportWrapLower", (93, -38, 49), (122, -37, 48), 1.1, 409),
-            ("RearCounterweightBinding", (-72, 101, 48), (7, 102, 50), 1.5, 406),
-            ("RearSlabWaistWrap", (1, 21, 95), (52, 22, 98), 1.4, 410),
+            ("LeftStackWrapUpper", [(-151, -59, 64), (-133, -63, 66), (-108, -62, 64), (-87, -58, 62)], 1.35, 401),
+            ("LeftStackWrapMid", [(-153, -59, 53), (-131, -64, 55), (-106, -62, 53), (-85, -58, 51)], 1.35, 402),
+            ("LeftStackWrapLower", [(-148, -59, 42), (-128, -63, 43), (-107, -62, 42), (-91, -58, 40)], 1.20, 403),
+            ("LeftStackShortVerticalTieA", [(-143, -60, 38), (-146, -63, 53), (-143, -61, 73)], 1.05, 407),
+            ("LeftStackShortVerticalTieB", [(-101, -60, 39), (-98, -63, 54), (-102, -59, 70)], 1.05, 408),
+            ("RightSupportWrapUpper", [(91, -39, 64), (105, -43, 66), (121, -38, 63)], 1.05, 405),
+            ("RightSupportWrapLower", [(92, -39, 49), (106, -43, 50), (122, -38, 48)], 1.00, 409),
+            ("RearCounterweightBinding", [(-72, 101, 48), (-40, 105, 50), (7, 102, 49)], 1.25, 406),
+            ("RearSlabWaistWrap", [(1, 21, 90), (25, 18, 94), (52, 22, 96)], 1.15, 410),
         ]
-        for label, start, end, radius, seed in rope_specs:
-            objects.append(add_cylinder_between(f"{prefix}_RawhideRope_{label}", collection, materials["rawhide"], start, end, radius, seed))
+        for label, points, radius, seed in rope_specs:
+            objects.append(add_curved_rope(f"{prefix}_RawhideRope_{label}", collection, materials["rawhide"], points, radius, seed))
 
         knot_specs = [
             ("LeftUpperKnotA", (-143, -60, 65), (4.4, 3.2, 4.0), 421),

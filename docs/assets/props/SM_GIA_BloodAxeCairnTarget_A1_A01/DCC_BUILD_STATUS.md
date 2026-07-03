@@ -23,10 +23,11 @@
 - Rejected clean baseline proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_RejectedCleanBaseline_A02.png`
 - A1 front trace guide: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_A1_FrontTraceGuide.png`
 - Traced geometry proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_TracedGeometryPass_A03.png`
-- LOD0: 4172 tris
-- LOD1: 2012 tris
-- LOD2: 1300 tris
-- LOD3: 1028 tris
+- Fractured face proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_FracturedFacePass_A04.png`
+- LOD0: 4458 tris
+- LOD1: 2222 tris
+- LOD2: 1484 tris
+- LOD3: 1156 tris
 
 ## Second Geometry Pass
 
@@ -98,6 +99,17 @@
 - Status remains `DCC source candidate pending concept-geometry and paint review`; final approval status is `not approved`.
 - Review note: this pass is improved but still not strict enough. The front stone needs more hand-authored fractured plane geometry, the rear slab still reads too isolated, rope bindings still read too rod-like, and red paint remains too graphic.
 
+## Fractured Face And Offset Paint Pass
+
+- Tested mesh-level face perturbation inside `add_fractured_slab` instead of adding separate black/light crack overlay planes.
+- Added curved rawhide rope meshes to replace the straight cylinder rope pass.
+- Fixed a generator bug where `add_surface_stroke` accepted a surface offset value but ignored it; paint strokes now use the offset field to reduce z-fighting.
+- Adjusted the dominant front slab to stand more upright, shortened the tall rear slab, reduced the isolated right rear shard, and regenerated the Blender source plus FBX/LOD exports.
+- Saved the latest in-progress proof as `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_FracturedFacePass_A04.png`.
+- Latest triangle counts: LOD0 4458 tris, LOD1 2222, LOD2 1484, LOD3 1156.
+- Status remains `DCC source candidate pending concept-geometry and paint review`; final approval status is `not approved`.
+- Review note: this pass fixed part of the previous surface-plane failure, but the front still reads as one broad tabletop slab. The next pass must replace the one-piece dominant slab with a stricter multi-plane stone construction matching the A1 front target before paint polish continues.
+
 ## Gate
 
 The current proof must be evaluated against the A1 target image side by side. If the DCC candidate does not match the dominant A1 geometry or if the red paint still reads as separate geometry, revise the DCC source before any Unreal import, final texture polish, or batch expansion.
@@ -147,6 +159,7 @@ Remaining gaps before approval:
 - Current proof material is a first-pass DCC texture integration pass; final Unreal material instances and import validation are still pending.
 - Latest rejected proof remains too broad and wall-like compared with A1; next correction must start from traced front proportions before adding any further texture/detail overlays.
 - Latest traced proof improves the A1 proportions, but it is still not visually approved and should continue through stricter fractured-plane geometry before paint polish.
+- Latest fractured-face proof reduces the rope/stroke implementation problems, but the dominant stone construction is still not faithful enough to A1.
 
 Decision: hold at `DCC source candidate pending concept-geometry and paint review`; do not import to Unreal yet. This is not a `DCC game-ready candidate` and not `Fully game-ready`.
 
