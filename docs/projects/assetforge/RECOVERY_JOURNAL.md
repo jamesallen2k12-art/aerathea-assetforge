@@ -311,3 +311,23 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260703-154100/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260703-154100/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-03 15:43:50 EDT -0400 - pre Blood Axe A1 reclined slab rebuild
+
+- Snapshot: `Saved/ProjectRecovery/20260703-154350/`
+- Git: branch `main`, HEAD `9ae3f27`, status lines `1`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260703-154350/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260703-154350/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260703-154350/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-03 15:50:35 EDT -0400 - post Blood Axe A1 reclined multi-pass learning state
+
+- Snapshot: `Saved/ProjectRecovery/20260703-155035/`
+- Git: branch `main`, HEAD `9ae3f27`, status lines `12`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260703-155035/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260703-155035/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260703-155035/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

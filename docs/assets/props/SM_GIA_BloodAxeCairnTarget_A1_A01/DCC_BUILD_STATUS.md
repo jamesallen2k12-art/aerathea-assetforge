@@ -25,10 +25,11 @@
 - Traced geometry proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_TracedGeometryPass_A03.png`
 - Fractured face proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_FracturedFacePass_A04.png`
 - Traced outline proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_TracedOutlinePass_A05.png`
-- LOD0: 4170 tris
-- LOD1: 2018 tris
-- LOD2: 1354 tris
-- LOD3: 1044 tris
+- Reclined multi-pass proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_ReclinedMultiPass_A08.png`
+- LOD0: 4288 tris
+- LOD1: 2280 tris
+- LOD2: 1334 tris
+- LOD3: 1028 tris
 
 ## Second Geometry Pass
 
@@ -121,6 +122,16 @@
 - Status remains `DCC source candidate pending concept-geometry and paint review`; final approval status is `not approved`.
 - Review note: this pass is useful failure evidence, not an approval candidate. The traced front silhouette moved closer to the A1 crop, but the 3D read became too upright, front-facing, smooth, and shield-like instead of a low collapsed slanted cairn stone integrated into the mound.
 - Next pass should use the trace polygon as a proportion guide only: lean the slab back/down, lower it into the pile, restore low collapsed massing, and hold red pigment until the stone geometry reads correctly.
+
+## Reclined Slab Multi-Pass Learning Pass
+
+- Iterated through A06-A08 after A05: A06 overcorrected into a flat raft/tabletop, A07 found a better angle but stayed oversized and oval, and A08 narrowed/thinned the slab while reducing black graphic paint artifacts.
+- Reduced the dominant slab from a vertical traced shield shape into a reclined chipped stone face, narrowed the left bundled stack, added smaller shoulder/foot wedges, and reduced paint strokes to keep geometry readable.
+- Saved the latest in-progress proof as `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_ReclinedMultiPass_A08.png`.
+- Latest triangle counts: LOD0 4288 tris, LOD1 2280, LOD2 1334, LOD3 1028.
+- Status remains `DCC source candidate pending concept-geometry and paint review`; final approval status is `not approved`.
+- Review note: this pass improves the A05/A06 angle problem and reduces the paint artifact, but it is still not close enough to the A1 concept. The main face remains one broad procedural slab with a smooth/oval read, the underside still reads too black, and the concept's chipped multi-plane slate fracture language is missing.
+- Next pass must stop rotating one monolithic slab. Build the dominant A1 face as multiple authored stone planes: upper-left shoulder, central painted face, right broken cheek, front lower lip, and embedded support wedges, each with separate chipped outlines and shallow depth.
 
 ## Gate
 

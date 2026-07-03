@@ -386,8 +386,8 @@ def add_fractured_slab(
     for index, (nx, nz) in enumerate(outline):
         x_noise = (deterministic_noise(index, seed, seed + 11) - 0.5) * width * 0.045
         z_noise = (deterministic_noise(seed, index, seed + 17) - 0.5) * height * 0.045
-        front_y_noise = (deterministic_noise(index, seed + 19, seed + 23) - 0.5) * depth * 0.08
-        back_y_noise = (deterministic_noise(index, seed + 29, seed + 31) - 0.5) * depth * 0.06
+        front_y_noise = (deterministic_noise(index, seed + 19, seed + 23) - 0.5) * depth * 0.05
+        back_y_noise = (deterministic_noise(index, seed + 29, seed + 31) - 0.5) * depth * 0.04
         x = nx * width + x_noise
         z = nz * height + z_noise
         front.append(len(verts))
@@ -398,9 +398,9 @@ def add_fractured_slab(
         verts.append((back_x, back_y + back_y_noise, back_z))
 
     front_center = len(verts)
-    verts.append((0.0, front_y - max(0.8, depth * 0.08), 0.0))
+    verts.append((0.0, front_y - max(0.8, depth * 0.05), 0.0))
     back_center = len(verts)
-    verts.append((0.0, back_y + max(0.8, depth * 0.08), 0.0))
+    verts.append((0.0, back_y + max(0.8, depth * 0.05), 0.0))
 
     faces: list[tuple[int, ...]] = []
     for index in range(len(outline)):
@@ -696,14 +696,19 @@ def build_asset_lod(collection: bpy.types.Collection, materials: dict[str, bpy.t
 
     # Front proportions are locked to the traced A1 guide in
     # docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/*_A1_FrontTraceGuide.png.
-    broad_front_outline = [
-        (-0.40, 0.37),
-        (-0.02, 0.50),
-        (0.34, 0.32),
-        (0.50, -0.08),
-        (0.26, -0.50),
-        (-0.20, -0.45),
-        (-0.50, -0.06),
+    dominant_reclined_outline = [
+        (-0.54, -0.44),
+        (-0.31, -0.51),
+        (0.08, -0.47),
+        (0.42, -0.34),
+        (0.55, -0.10),
+        (0.44, 0.08),
+        (0.20, 0.26),
+        (0.04, 0.45),
+        (-0.24, 0.50),
+        (-0.47, 0.33),
+        (-0.53, 0.08),
+        (-0.59, -0.19),
     ]
     tall_crag_outline = [
         (-0.34, -0.50),
@@ -751,10 +756,10 @@ def build_asset_lod(collection: bpy.types.Collection, materials: dict[str, bpy.t
     fractured_specs = [
         (
             "DominantDiagonalFrontSlab",
-            (-16, -56, 58),
-            (136, 24, 112),
-            (math.radians(-43), math.radians(-8), math.radians(-18)),
-            broad_front_outline,
+            (-8, -64, 54),
+            (116, 18, 96),
+            (math.radians(-50), math.radians(-6), math.radians(-18)),
+            dominant_reclined_outline,
             201,
         ),
         (
@@ -767,32 +772,32 @@ def build_asset_lod(collection: bpy.types.Collection, materials: dict[str, bpy.t
         ),
         (
             "RightUprightSupportStone",
-            (108, -10, 54),
-            (34, 21, 84),
-            (math.radians(1), math.radians(-8), math.radians(8)),
+            (104, -12, 49),
+            (32, 21, 74),
+            (math.radians(-1), math.radians(-8), math.radians(7)),
             support_crag_outline,
             206,
         ),
         (
             "RightRearSupportStone",
-            (121, 36, 33),
-            (14, 15, 32),
-            (math.radians(-5), math.radians(5), math.radians(10)),
+            (116, 33, 29),
+            (18, 15, 30),
+            (math.radians(-7), math.radians(5), math.radians(11)),
             support_crag_outline,
             207,
         ),
     ]
     secondary_fractured_specs = [
-        ("LeftBundledStackLowSlab", (-113, -31, 29), (92, 38, 22), (math.radians(2), math.radians(-7), math.radians(5)), low_slab_outline, 203),
-        ("LeftBundledStackMidSlab", (-122, -32, 49), (84, 34, 21), (math.radians(-1), math.radians(5), math.radians(-7)), low_slab_outline, 204),
-        ("LeftBundledStackTopSlab", (-108, -30, 69), (70, 30, 19), (math.radians(4), math.radians(-5), math.radians(12)), low_slab_outline, 205),
+        ("LeftBundledStackLowSlab", (-112, -34, 29), (78, 36, 24), (math.radians(2), math.radians(-7), math.radians(5)), low_slab_outline, 203),
+        ("LeftBundledStackMidSlab", (-120, -34, 49), (72, 32, 23), (math.radians(-1), math.radians(5), math.radians(-7)), low_slab_outline, 204),
+        ("LeftBundledStackTopSlab", (-106, -34, 67), (56, 28, 21), (math.radians(4), math.radians(-5), math.radians(12)), low_slab_outline, 205),
         ("RearLowCounterweight", (-46, 58, 39), (94, 32, 30), (math.radians(-4), math.radians(4), math.radians(8)), low_slab_outline, 208),
     ]
     primary_specs: list[tuple[str, tuple[float, float, float], tuple[float, float, float], tuple[float, float, float], int]] = []
     if low:
         secondary_fractured_specs.extend(
             [
-                ("FrontBrokenFootStone", (36, -94, 22), (88, 26, 18), (math.radians(3), math.radians(4), math.radians(-5)), low_slab_outline, 209),
+                ("FrontBrokenFootStone", (36, -100, 20), (90, 26, 17), (math.radians(3), math.radians(4), math.radians(-5)), low_slab_outline, 209),
                 ("RearGroundLockStone", (16, 112, 27), (94, 26, 22), (math.radians(2), math.radians(-4), math.radians(2)), low_slab_outline, 210),
             ]
         )
@@ -802,6 +807,8 @@ def build_asset_lod(collection: bpy.types.Collection, materials: dict[str, bpy.t
                 ("LeftBackBrokenShard", (-150, 18, 40), (24, 20, 54), (math.radians(-7), math.radians(8), math.radians(-18)), support_crag_outline, 211),
                 ("RearNeedleShardLeft", (-14, 70, 83), (18, 16, 70), (math.radians(-11), math.radians(-7), math.radians(7)), tall_crag_outline, 212),
                 ("RearNeedleShardRight", (70, 86, 43), (10, 10, 24), (math.radians(8), math.radians(5), math.radians(14)), support_crag_outline, 213),
+                ("MainSlabLeftShoulderWedge", (-54, -58, 48), (32, 18, 22), (math.radians(-46), math.radians(-6), math.radians(-30)), low_slab_outline, 218),
+                ("MainSlabRightFootWedge", (45, -88, 30), (40, 18, 19), (math.radians(-18), math.radians(7), math.radians(-4)), low_slab_outline, 219),
             ]
         )
     if detail:
@@ -815,7 +822,8 @@ def build_asset_lod(collection: bpy.types.Collection, materials: dict[str, bpy.t
         )
 
     for label, location, dimensions, rotation, outline, seed in fractured_specs:
-        objects.append(add_fractured_slab(f"{prefix}_Stone_{label}", collection, materials["stone"], location, dimensions, rotation, outline, seed + lod * 31))
+        rough_scale = 0.16 if label == "DominantDiagonalFrontSlab" else 0.10
+        objects.append(add_fractured_slab(f"{prefix}_Stone_{label}", collection, materials["stone"], location, dimensions, rotation, outline, seed + lod * 31, rough_scale=rough_scale))
 
     for label, location, dimensions, rotation, outline, seed in secondary_fractured_specs:
         objects.append(add_fractured_slab(f"{prefix}_Stone_{label}", collection, materials["stone"], location, dimensions, rotation, outline, seed + lod * 31, rough_scale=0.12))
@@ -830,22 +838,17 @@ def build_asset_lod(collection: bpy.types.Collection, materials: dict[str, bpy.t
 
     if mid:
         paint_specs = [
-            ("MainSlabCentralLongBloodAxeStem", (-3, -89, 65), (84, -1.0, 6.2), (math.radians(-43), math.radians(-8), math.radians(54)), 301),
-            ("MainSlabUpperLeftPaintSweep", (-39, -90, 77), (54, -1.0, 5.6), (math.radians(-43), math.radians(-8), math.radians(8)), 302),
-            ("MainSlabLowerRightPaintSweep", (14, -89, 49), (48, -1.0, 5.2), (math.radians(-43), math.radians(-8), math.radians(-34)), 303),
-            ("MainSlabCircularLeftBrokenArc", (-33, -90, 63), (34, -1.0, 4.4), (math.radians(-43), math.radians(-8), math.radians(95)), 312),
-            ("MainSlabCircularRightBrokenArc", (5, -89, 70), (36, -1.0, 4.4), (math.radians(-43), math.radians(-8), math.radians(-84)), 313),
+            ("MainSlabCentralLongBloodAxeStem", (-3, -90, 56), (64, -0.55, 4.6), (math.radians(-50), math.radians(-6), math.radians(54)), 301),
+            ("MainSlabUpperLeftPaintSweep", (-31, -91, 64), (38, -0.55, 3.8), (math.radians(-50), math.radians(-6), math.radians(10)), 302),
+            ("MainSlabLowerRightPaintSweep", (14, -90, 46), (34, -0.55, 3.6), (math.radians(-50), math.radians(-6), math.radians(-34)), 303),
             ("LeftStackSubtleRedSmear", (-125, -53, 58), (46, -0.8, 5.0), (math.radians(2), math.radians(-6), math.radians(5)), 304),
             ("RearSlabTallWarPaint", (30, 20, 111), (44, -0.8, 5.8), (math.radians(-13), math.radians(8), math.radians(63)), 305),
         ]
         if lod == 0:
             paint_specs.extend(
                 [
-                    ("MainSlabBottomDripToGround", (20, -89, 36), (34, -1.0, 3.2), (math.radians(-43), math.radians(-8), math.radians(72)), 306),
-                    ("MainSlabCenterAxeHeadPatch", (-9, -90, 63), (26, -1.0, 7.4), (math.radians(-43), math.radians(-8), math.radians(9)), 307),
-                    ("MainSlabLeftHookBrokenStroke", (-46, -90, 70), (30, -1.0, 3.0), (math.radians(-43), math.radians(-8), math.radians(39)), 309),
-                    ("MainSlabDryBrushTopChip", (-24, -90, 84), (18, -1.0, 2.8), (math.radians(-43), math.radians(-8), math.radians(-43)), 310),
-                    ("MainSlabLowerDryBrushBreak", (-1, -89, 41), (22, -1.0, 2.8), (math.radians(-43), math.radians(-8), math.radians(5)), 311),
+                    ("MainSlabBottomDripToGround", (18, -90, 37), (22, -0.55, 2.2), (math.radians(-50), math.radians(-6), math.radians(72)), 306),
+                    ("MainSlabCenterAxeHeadPatch", (-6, -90, 56), (18, -0.55, 5.2), (math.radians(-50), math.radians(-6), math.radians(9)), 307),
                 ]
             )
         for label, location, dimensions, rotation, seed in paint_specs:
