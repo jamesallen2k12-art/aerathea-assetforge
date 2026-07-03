@@ -18,14 +18,23 @@
 - DCC render root: `Saved/Automation/DCC/SM_GIA_BloodAxeCairnTarget_A1_A01/`
 - Concept comparison: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_ConceptGeometryCompare.png`
 - DCC target-layout proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_DCCProofTargetLayout.png`
-- LOD0: 1880 tris
-- LOD1: 1056 tris
-- LOD2: 512 tris
-- LOD3: 400 tris
+- LOD0: 3144 tris
+- LOD1: 1488 tris
+- LOD2: 636 tris
+- LOD3: 524 tris
+
+## Second Geometry Pass
+
+- Rebuilt primary stones as irregular extruded slab outlines instead of simple tapered boxes.
+- Added light/dark stone facet planes to expose the major chipped planes in DCC review.
+- Reworked the main front slab, rear oath slab, right uprights, left lashed stack bindings, Blood Axe red paint layout, and front rubble scatter.
+- Added deterministic UV0 smart projection to LOD0-LOD3.
+- Switched DCC proof renders to Workbench/material preview with cavity shading so geometry reads clearly in concept comparisons.
+- Regenerated source `.blend`, FBX, LOD0-LOD3, broad UCX collision export, DCC proof renders, target-layout proof, and concept comparison sheet.
 
 ## Gate
 
-The next proof must be evaluated against the A1 target image side by side. If the DCC candidate does not match the dominant A1 geometry, revise the DCC source before any Unreal import, texture polish, or batch expansion.
+The current proof must be evaluated against the A1 target image side by side. If the DCC candidate does not match the dominant A1 geometry, revise the DCC source before any Unreal import, texture polish, or batch expansion.
 
 ## Required Outputs
 
@@ -42,7 +51,7 @@ This asset intentionally starts a new clean lane instead of reusing the older `S
 
 ## Review Result
 
-The first A1 DCC source candidate is useful as a geometry planning proof, but it should not pass concept-geometry approval yet.
+The second-pass A1 DCC source candidate is useful as a geometry planning proof, but it should not pass concept-geometry approval yet.
 
 What it captures:
 
@@ -52,16 +61,19 @@ What it captures:
 - Left lashed stack lane.
 - Right support-stone lane.
 - Rear/side authored massing instead of a front-only plane.
+- Clearer chipped-plane read through large facet geometry.
+- More reviewable DCC proof captures for front/right/back/left/hero orientation.
 
 Remaining gaps before approval:
 
-- Stone forms are still too blocky and rectangular compared with the concept's fractured natural slabs.
-- Front slab needs a more sculpted, chipped face contour and less barricade-like read.
-- Rear slab currently over-dominates the hero/front read and needs better proportional balance against the concept.
-- Red paint placement is present but too strip-like; final pass should read as broad hand-painted Blood Axe marks integrated to the stone surface.
-- Surface breakup, stone chips, and rubble density need a second sculpt/detail pass.
+- Stone forms are improved but still too clean and planar compared with the concept's fractured natural slabs.
+- Front slab still needs a sculpt/detail pass for chipped edges, concave breaks, and broken face planes.
+- Rear and side stones are in the right lane, but need better organic proportion and less blockout-like vertical massing.
+- Red paint placement is improved, but still reads as raised bars instead of worn hand-painted Blood Axe pigment integrated into the stone surface.
+- Rope bindings need rounder volume and wrapped-material read.
+- Ground rubble density is improved but still below the concept target.
 
-Decision: hold at `DCC source candidate pending concept-geometry review`; do not import to Unreal yet.
+Decision: hold at `DCC source candidate pending concept-geometry review`; do not import to Unreal yet. This is not a `DCC game-ready candidate` and not `Fully game-ready`.
 
 ## Reference Benchmark Link
 

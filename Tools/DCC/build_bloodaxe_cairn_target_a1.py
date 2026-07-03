@@ -135,10 +135,22 @@ def make_texture_material(name: str, textures: dict[str, Path], roughness: float
 
 def make_materials(texture_paths: dict[str, dict[str, Path]]) -> dict[str, bpy.types.Material]:
     return {
-        "stone": make_texture_material("M_GIA_BloodAxeCairnTarget_A1_A01_Stone", texture_paths["stone"], 0.91, (0.42, 0.39, 0.32)),
-        "earth": make_texture_material("M_GIA_BloodAxeCairnTarget_A1_A01_Earth", texture_paths["earth"], 0.95, (0.27, 0.17, 0.09)),
-        "rawhide": make_texture_material("M_GIA_BloodAxeCairnTarget_A1_A01_Rawhide", texture_paths["rawhide"], 0.86, (0.58, 0.34, 0.13)),
-        "red": make_texture_material("M_GIA_BloodAxeCairnTarget_A1_A01_RedPaint", texture_paths["red"], 0.78, (0.72, 0.045, 0.035)),
+        "stone": make_texture_material("M_GIA_BloodAxeCairnTarget_A1_A01_Stone", texture_paths["stone"], 0.91, (0.48, 0.45, 0.37)),
+        "stone_light": make_texture_material(
+            "M_GIA_BloodAxeCairnTarget_A1_A01_StoneFacetLight",
+            texture_paths["stone"],
+            0.9,
+            (0.64, 0.59, 0.48),
+        ),
+        "stone_dark": make_texture_material(
+            "M_GIA_BloodAxeCairnTarget_A1_A01_StoneFacetDark",
+            texture_paths["stone"],
+            0.93,
+            (0.34, 0.32, 0.27),
+        ),
+        "earth": make_texture_material("M_GIA_BloodAxeCairnTarget_A1_A01_Earth", texture_paths["earth"], 0.95, (0.32, 0.20, 0.11)),
+        "rawhide": make_texture_material("M_GIA_BloodAxeCairnTarget_A1_A01_Rawhide", texture_paths["rawhide"], 0.86, (0.66, 0.40, 0.17)),
+        "red": make_texture_material("M_GIA_BloodAxeCairnTarget_A1_A01_RedPaint", texture_paths["red"], 0.78, (0.82, 0.055, 0.040)),
     }
 
 
@@ -260,6 +272,67 @@ def add_tapered_slab(
     return obj
 
 
+def add_fractured_slab(
+    name: str,
+    collection: bpy.types.Collection,
+    material: bpy.types.Material,
+    location: tuple[float, float, float],
+    dimensions: tuple[float, float, float],
+    rotation: tuple[float, float, float],
+    outline: list[tuple[float, float]],
+    seed: int,
+    rough_scale: float = 0.10,
+) -> bpy.types.Object:
+    """Create a low-poly extruded stone slab with an irregular X/Z outline."""
+    width, depth, height = dimensions
+    front_y = -depth * 0.5
+    back_y = depth * 0.5
+    verts: list[tuple[float, float, float]] = []
+    front: list[int] = []
+    back: list[int] = []
+    for index, (nx, nz) in enumerate(outline):
+        x_noise = (deterministic_noise(index, seed, seed + 11) - 0.5) * width * 0.045
+        z_noise = (deterministic_noise(seed, index, seed + 17) - 0.5) * height * 0.045
+        x = nx * width + x_noise
+        z = nz * height + z_noise
+        front.append(len(verts))
+        verts.append((x, front_y, z))
+        back.append(len(verts))
+        back_x = x * (0.92 + deterministic_noise(index, seed + 3, seed + 31) * 0.08)
+        back_z = z * (0.94 + deterministic_noise(index, seed + 5, seed + 37) * 0.06)
+        verts.append((back_x, back_y, back_z))
+
+    front_center = len(verts)
+    verts.append((0.0, front_y - 0.8, 0.0))
+    back_center = len(verts)
+    verts.append((0.0, back_y + 0.8, 0.0))
+
+    faces: list[tuple[int, ...]] = []
+    for index in range(len(outline)):
+        next_index = (index + 1) % len(outline)
+        faces.append((front_center, front[index], front[next_index]))
+        faces.append((back_center, back[next_index], back[index]))
+        faces.append((front[index], back[index], back[next_index], front[next_index]))
+
+    mesh = bpy.data.meshes.new(f"{name}_Mesh")
+    mesh.from_pydata(verts, [], faces)
+    mesh.update()
+    obj = bpy.data.objects.new(name, mesh)
+    obj.location = location
+    obj.rotation_euler = rotation
+    obj.data.materials.append(material)
+    collection.objects.link(obj)
+    set_active(obj)
+    bevel = obj.modifiers.new(f"{name}_BrokenEdgeBevel", "BEVEL")
+    bevel.width = max(0.35, min(dimensions) * 0.035)
+    bevel.segments = 1
+    bevel.affect = "EDGES"
+    bpy.ops.object.modifier_apply(modifier=bevel.name)
+    roughen_mesh(obj, min(dimensions) * rough_scale, seed)
+    bpy.ops.object.shade_flat()
+    return obj
+
+
 def add_paint_strip(
     name: str,
     collection: bpy.types.Collection,
@@ -270,6 +343,31 @@ def add_paint_strip(
     seed: int,
 ) -> bpy.types.Object:
     return add_rough_box(name, collection, material, location, dimensions, rotation, seed, bevel_scale=0.16, rough_scale=0.035)
+
+
+def add_surface_facet(
+    name: str,
+    collection: bpy.types.Collection,
+    material: bpy.types.Material,
+    location: tuple[float, float, float],
+    dimensions: tuple[float, float, float],
+    rotation: tuple[float, float, float],
+    seed: int,
+) -> bpy.types.Object:
+    return add_tapered_slab(
+        name,
+        collection,
+        material,
+        location,
+        dimensions,
+        rotation,
+        seed,
+        top_scale_x=0.70,
+        top_scale_y=0.90,
+        top_offset=((deterministic_noise(seed, 1, 43) - 0.5) * dimensions[0] * 0.12, 0.0),
+        bevel_scale=0.07,
+        rough_scale=0.05,
+    )
 
 
 def add_small_stone(
@@ -356,11 +454,72 @@ def build_asset_lod(collection: bpy.types.Collection, materials: dict[str, bpy.t
     mid = lod <= 1
     low = lod <= 2
 
-    slab_specs = [
-        ("DominantDiagonalFrontSlab", (-4, -38, 67), (192, 34, 132), (math.radians(-25), math.radians(-7), math.radians(-14)), 201, 0.68, 0.80, (-18.0, 3.0)),
-        ("TallRearOathSlab", (38, 51, 113), (82, 40, 186), (math.radians(-7), math.radians(9), math.radians(-9)), 202, 0.62, 0.86, (-8.0, 2.0)),
-        ("RightUprightSupportStone", (122, -3, 68), (50, 34, 108), (math.radians(3), math.radians(-8), math.radians(8)), 206, 0.58, 0.86, (4.0, 1.0)),
-        ("RightRearSupportStone", (154, 36, 65), (42, 32, 94), (math.radians(-5), math.radians(6), math.radians(15)), 207, 0.60, 0.86, (-2.0, 0.0)),
+    fractured_specs = [
+        (
+            "DominantDiagonalFrontSlab",
+            (2, -43, 77),
+            (184, 36, 144),
+            (math.radians(-31), math.radians(-8), math.radians(-10)),
+            [
+                (-0.52, -0.43),
+                (-0.36, -0.55),
+                (0.08, -0.52),
+                (0.41, -0.37),
+                (0.54, -0.05),
+                (0.42, 0.24),
+                (0.18, 0.54),
+                (-0.14, 0.49),
+                (-0.36, 0.28),
+                (-0.50, 0.02),
+            ],
+            201,
+        ),
+        (
+            "TallRearOathSlab",
+            (36, 52, 112),
+            (74, 38, 184),
+            (math.radians(-10), math.radians(7), math.radians(-13)),
+            [
+                (-0.45, -0.47),
+                (0.31, -0.50),
+                (0.47, -0.18),
+                (0.38, 0.31),
+                (0.10, 0.56),
+                (-0.24, 0.44),
+                (-0.48, 0.03),
+            ],
+            202,
+        ),
+        (
+            "RightUprightSupportStone",
+            (122, -4, 76),
+            (48, 32, 124),
+            (math.radians(2), math.radians(-8), math.radians(13)),
+            [
+                (-0.45, -0.50),
+                (0.36, -0.47),
+                (0.50, -0.12),
+                (0.32, 0.45),
+                (-0.04, 0.52),
+                (-0.44, 0.20),
+            ],
+            206,
+        ),
+        (
+            "RightRearSupportStone",
+            (152, 39, 68),
+            (38, 30, 104),
+            (math.radians(-5), math.radians(6), math.radians(20)),
+            [
+                (-0.42, -0.50),
+                (0.36, -0.47),
+                (0.48, -0.10),
+                (0.20, 0.51),
+                (-0.36, 0.37),
+                (-0.50, -0.06),
+            ],
+            207,
+        ),
     ]
     primary_specs = [
         ("LeftBundledStackLowSlab", (-117, -25, 34), (112, 44, 24), (math.radians(2), math.radians(-7), math.radians(8)), 203),
@@ -393,38 +552,49 @@ def build_asset_lod(collection: bpy.types.Collection, materials: dict[str, bpy.t
             ]
         )
 
-    for label, location, dimensions, rotation, seed, top_scale_x, top_scale_y, top_offset in slab_specs:
-        objects.append(
-            add_tapered_slab(
-                f"{prefix}_Stone_{label}",
-                collection,
-                materials["stone"],
-                location,
-                dimensions,
-                rotation,
-                seed + lod * 31,
-                top_scale_x,
-                top_scale_y,
-                top_offset,
-            )
-        )
+    for label, location, dimensions, rotation, outline, seed in fractured_specs:
+        objects.append(add_fractured_slab(f"{prefix}_Stone_{label}", collection, materials["stone"], location, dimensions, rotation, outline, seed + lod * 31))
 
     for label, location, dimensions, rotation, seed in primary_specs:
         objects.append(add_rough_box(f"{prefix}_Stone_{label}", collection, materials["stone"], location, dimensions, rotation, seed + lod * 31))
 
     if mid:
+        facet_specs = [
+            ("FrontSlabTopLightFacet", (-58, -81, 121), (48, 2.8, 38), (math.radians(-31), math.radians(-8), math.radians(-18)), "stone_light", 251),
+            ("FrontSlabCenterDarkBreak", (-5, -83, 92), (42, 2.8, 48), (math.radians(-31), math.radians(-8), math.radians(9)), "stone_dark", 252),
+            ("FrontSlabLowerLightChip", (49, -83, 57), (56, 2.8, 26), (math.radians(-31), math.radians(-8), math.radians(-18)), "stone_light", 253),
+            ("RearSlabLeftLightFacet", (18, 20, 139), (28, 2.8, 48), (math.radians(-8), math.radians(8), math.radians(-15)), "stone_light", 254),
+            ("RearSlabBaseDarkFacet", (56, 18, 80), (32, 2.8, 38), (math.radians(-8), math.radians(8), math.radians(9)), "stone_dark", 255),
+            ("FrontSlabUpperRightLightPlane", (58, -82, 116), (44, 2.8, 34), (math.radians(-31), math.radians(-8), math.radians(31)), "stone_light", 260),
+            ("FrontSlabLongDarkFault", (12, -84, 79), (74, 2.5, 8), (math.radians(-31), math.radians(-8), math.radians(62)), "stone_dark", 261),
+        ]
+        if detail:
+            facet_specs.extend(
+                [
+                    ("FrontSlabLeftEdgeDarkChip", (-88, -82, 74), (30, 2.8, 50), (math.radians(-31), math.radians(-8), math.radians(17)), "stone_dark", 256),
+                    ("FrontSlabRightEdgeLightChip", (82, -83, 99), (32, 2.8, 38), (math.radians(-31), math.radians(-8), math.radians(-32)), "stone_light", 257),
+                    ("RightSupportLightFacet", (123, -28, 82), (22, 2.6, 38), (math.radians(2), math.radians(-8), math.radians(19)), "stone_light", 258),
+                    ("LeftStackLightTopChip", (-121, -51, 85), (35, 2.6, 16), (math.radians(3), math.radians(-5), math.radians(10)), "stone_light", 259),
+                ]
+            )
+        for label, location, dimensions, rotation, material_key, seed in facet_specs:
+            objects.append(add_surface_facet(f"{prefix}_StoneFacet_{label}", collection, materials[material_key], location, dimensions, rotation, seed + lod * 29))
+
+    if mid:
         paint_specs = [
-            ("MainDiagonalAxeStroke", (-17, -79, 91), (132, 8, 2.4), (math.radians(-25), math.radians(-7), math.radians(-17)), 301),
-            ("MainCrossAxeStrokeUpper", (-38, -80, 105), (74, 7, 2.4), (math.radians(-25), math.radians(-7), math.radians(26)), 302),
-            ("MainCrossAxeStrokeLower", (30, -78, 75), (82, 7, 2.4), (math.radians(-25), math.radians(-7), math.radians(-46)), 303),
-            ("LeftStackRedSmear", (-126, -50, 70), (70, 6, 2.1), (math.radians(2), math.radians(-6), math.radians(5)), 304),
-            ("RearSlabSmallWarMark", (53, 18, 142), (52, 6, 2.0), (math.radians(-7), math.radians(9), math.radians(-32)), 305),
+            ("MainLongAxeSigilStem", (0, -85, 88), (126, 7, 8.5), (math.radians(-31), math.radians(-8), math.radians(62)), 301),
+            ("MainAxeBladeUpperSlash", (-35, -86, 107), (82, 7, 8.0), (math.radians(-31), math.radians(-8), math.radians(9)), 302),
+            ("MainAxeBladeLowerSlash", (24, -84, 78), (86, 7, 8.0), (math.radians(-31), math.radians(-8), math.radians(-28)), 303),
+            ("LeftStackRedSmear", (-126, -50, 70), (70, 6, 5.5), (math.radians(2), math.radians(-6), math.radians(5)), 304),
+            ("RearSlabSmallWarMark", (53, 18, 142), (52, 6, 5.5), (math.radians(-7), math.radians(9), math.radians(-32)), 305),
         ]
         if lod == 0:
             paint_specs.extend(
                 [
-                    ("MainShortRaggedBottomStroke", (12, -77, 58), (56, 6, 2.0), (math.radians(-25), math.radians(-7), math.radians(8)), 306),
-                    ("RightSupportSmallMark", (128, -31, 77), (40, 5, 2.0), (math.radians(3), math.radians(-9), math.radians(36)), 307),
+                    ("MainShortRaggedBottomStroke", (35, -84, 57), (64, 6, 6.0), (math.radians(-31), math.radians(-8), math.radians(72)), 306),
+                    ("MainRaggedAxeHeadPatch", (-9, -86, 77), (40, 7, 18), (math.radians(-31), math.radians(-8), math.radians(14)), 307),
+                    ("MainLeftHookBrokenStroke", (-49, -86, 88), (56, 6, 6.0), (math.radians(-31), math.radians(-8), math.radians(46)), 309),
+                    ("RightSupportSmallMark", (128, -31, 77), (40, 5, 4.6), (math.radians(3), math.radians(-9), math.radians(36)), 308),
                 ]
             )
         for label, location, dimensions, rotation, seed in paint_specs:
@@ -436,6 +606,8 @@ def build_asset_lod(collection: bpy.types.Collection, materials: dict[str, bpy.t
             ("LeftStackBindingVerticalB", (-92, -51, 60), (7, 6, 75), (math.radians(1), math.radians(4), math.radians(-5)), 402),
             ("LeftStackBindingDiagonalA", (-121, -53, 60), (86, 6, 5), (math.radians(2), math.radians(-4), math.radians(37)), 403),
             ("LeftStackBindingDiagonalB", (-121, -54, 58), (82, 6, 5), (math.radians(2), math.radians(-4), math.radians(-35)), 404),
+            ("LeftStackBindingHorizontalA", (-121, -55, 69), (96, 6, 5), (math.radians(2), math.radians(-4), math.radians(3)), 407),
+            ("LeftStackBindingHorizontalB", (-123, -56, 49), (86, 6, 5), (math.radians(2), math.radians(-4), math.radians(-3)), 408),
             ("RightSupportRawhideTie", (137, -33, 63), (54, 6, 5), (math.radians(5), math.radians(-8), math.radians(91)), 405),
             ("RearCounterweightBinding", (-30, 103, 53), (86, 6, 5), (math.radians(-4), math.radians(4), math.radians(77)), 406),
         ]
@@ -456,6 +628,17 @@ def build_asset_lod(collection: bpy.types.Collection, materials: dict[str, bpy.t
             (52, 151, 16, (19, 13, 9), 511),
             (136, 118, 18, (22, 14, 10), 512),
         ]
+        for index in range(24):
+            angle = math.radians(205 + index * 7.5)
+            radius_x = 86 + deterministic_noise(index, 18, 650) * 105
+            radius_y = 66 + deterministic_noise(19, index, 651) * 62
+            x = math.cos(angle) * radius_x
+            y = math.sin(angle) * radius_y - 10
+            z = 13 + deterministic_noise(index, 21, 652) * 8
+            sx = 8 + deterministic_noise(index, 22, 653) * 16
+            sy = 6 + deterministic_noise(index, 23, 654) * 10
+            sz = 5 + deterministic_noise(index, 24, 655) * 9
+            pebble_specs.append((x, y, z, (sx, sy, sz), 620 + index))
         for x, y, z, scale, seed in pebble_specs:
             objects.append(
                 add_small_stone(
@@ -496,6 +679,25 @@ def object_triangles(objects: list[bpy.types.Object]) -> int:
             continue
         total += sum(max(1, len(poly.vertices) - 2) for poly in obj.data.polygons)
     return total
+
+
+def add_smart_uv0(objects: list[bpy.types.Object]) -> None:
+    for obj in objects:
+        if obj.type != "MESH" or obj.name.startswith("UCX_"):
+            continue
+        if bpy.context.object is not None and bpy.context.object.mode != "OBJECT":
+            bpy.ops.object.mode_set(mode="OBJECT")
+        bpy.ops.object.select_all(action="DESELECT")
+        set_active(obj)
+        if not obj.data.uv_layers:
+            obj.data.uv_layers.new(name="UV0")
+        try:
+            bpy.ops.object.mode_set(mode="EDIT")
+            bpy.ops.mesh.select_all(action="SELECT")
+            bpy.ops.uv.smart_project(angle_limit=1.1519, island_margin=0.02)
+        finally:
+            bpy.ops.object.mode_set(mode="OBJECT")
+            obj.select_set(False)
 
 
 def export_objects(objects: list[bpy.types.Object], path: Path) -> None:
@@ -552,30 +754,41 @@ def look_at(camera: bpy.types.Object, target: Vector) -> None:
 def configure_review_scene() -> tuple[bpy.types.Object, Vector]:
     world = bpy.context.scene.world or bpy.data.worlds.new("AeratheaDCCWorld")
     bpy.context.scene.world = world
-    world.color = (0.70, 0.70, 0.70)
+    world.color = (0.82, 0.82, 0.80)
 
     scene = bpy.context.scene
+    try:
+        scene.render.engine = "BLENDER_WORKBENCH"
+        scene.display.shading.light = "STUDIO"
+        scene.display.shading.color_type = "MATERIAL"
+        scene.display.shading.show_shadows = True
+        scene.display.shading.show_cavity = True
+        scene.display.shading.cavity_valley_factor = 0.85
+        scene.display.shading.cavity_ridge_factor = 0.65
+    except (AttributeError, TypeError):
+        pass
     scene.view_settings.view_transform = "Standard"
     scene.view_settings.look = "None"
-    scene.view_settings.exposure = 1.18
+    scene.view_settings.exposure = 0.25
     scene.view_settings.gamma = 1.0
+    scene.render.film_transparent = False
 
     bpy.ops.object.light_add(type="AREA", location=(-260, -320, 430))
     key = bpy.context.object
     key.name = "AET_DCC_Key_Area"
-    key.data.energy = 2400.0
+    key.data.energy = 3600.0
     key.data.size = 430.0
 
     bpy.ops.object.light_add(type="POINT", location=(280, -240, 190))
     fill = bpy.context.object
     fill.name = "AET_DCC_Fill_Point"
-    fill.data.energy = 780.0
+    fill.data.energy = 1550.0
     fill.data.shadow_soft_size = 380.0
 
     bpy.ops.object.light_add(type="AREA", location=(250, 340, 270))
     rim = bpy.context.object
     rim.name = "AET_DCC_Back_Rim_Area"
-    rim.data.energy = 980.0
+    rim.data.energy = 1650.0
     rim.data.size = 360.0
 
     bpy.ops.object.camera_add(location=(315, -430, 220))
@@ -670,6 +883,10 @@ def main() -> None:
     lod1_objects = build_asset_lod(lod1_collection, materials, 1)
     lod2_objects = build_asset_lod(lod2_collection, materials, 2)
     lod3_objects = build_asset_lod(lod3_collection, materials, 3)
+    add_smart_uv0(lod0_objects)
+    add_smart_uv0(lod1_objects)
+    add_smart_uv0(lod2_objects)
+    add_smart_uv0(lod3_objects)
     collision = add_collision_proxy(collision_collection, materials["stone"])
     add_metadata_to_objects(lod0_objects + lod1_objects + lod2_objects + lod3_objects + [collision])
 
