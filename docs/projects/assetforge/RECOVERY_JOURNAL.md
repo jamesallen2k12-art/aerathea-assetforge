@@ -81,3 +81,23 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260703-080009/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260703-080009/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-03 08:02:27 EDT -0400 - pre AssetForge Unreal import validation benchmark
+
+- Snapshot: `Saved/ProjectRecovery/20260703-080227/`
+- Git: branch `main`, HEAD `2ed1b4a`, status lines `0`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260703-080227/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260703-080227/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260703-080227/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-03 08:05:15 EDT -0400 - post AssetForge Unreal import validation benchmark
+
+- Snapshot: `Saved/ProjectRecovery/20260703-080515/`
+- Git: branch `main`, HEAD `2ed1b4a`, status lines `2`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260703-080515/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260703-080515/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260703-080515/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

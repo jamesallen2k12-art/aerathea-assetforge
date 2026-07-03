@@ -275,6 +275,49 @@ Interpretation:
 - The useful-budget meshes are suitable for the next research benchmark: Unreal import validation.
 - They are still not production assets. Texture paint, UV validation, collision, LOD setup, scale, material slots, and final visual approval remain open.
 
+### Unreal Import Validation Follow-Up
+
+Result: `PASS_UNREAL_IMPORT_VALIDATION_WITH_POSTPROCESS_GAPS`
+
+The repaired `20k` and `50k` GLBs were imported through headless Unreal Editor as research-only assets, measured, and then deleted from the temporary Unreal content folder.
+
+Script:
+
+- `Tools/Unreal/validate_assetforge_repaired_glb_imports.py`
+
+Reports:
+
+- `Saved/AssetForgeResearch/benchmarks/outputs/unreal/import_validation/assetforge_cairn_repaired_unreal_import_validation_20260703-080443.json`
+- `Saved/AssetForgeResearch/benchmarks/outputs/unreal/import_validation/assetforge_cairn_repaired_unreal_import_validation_20260703-080443.md`
+
+Temporary Unreal destination:
+
+- `/Game/Aerathea/Developer/AssetForgeResearch/ImportValidation/Run_20260703-080443`
+
+Cleanup:
+
+- Complete. No research `uasset` files remained under `Content/Aerathea/Developer/AssetForgeResearch/` after the benchmark.
+
+Import results:
+
+| Input | Result | Static meshes | LODs | Materials | Collision | Bounds cm | Import seconds |
+|---|---|---:|---:|---:|---|---|---:|
+| `20k repaired GLB` | `PASS_IMPORT_VALIDATION` | `1` | `1` | `1` WorldGrid slot | `simple=0`, `convex=1` | `97.63 x 92.02 x 61.49` | `1.590` |
+| `50k repaired GLB` | `PASS_IMPORT_VALIDATION` | `1` | `1` | `1` WorldGrid slot | `simple=0`, `convex=1` | `97.93 x 92.50 x 61.65` | `4.115` |
+
+Unreal import warnings observed:
+
+- glTF mesh primitives had no materials assigned.
+- Imported static meshes reported degenerate tangent bases and nearly zero binormals.
+- Asset path length warnings appeared because the source benchmark names are long.
+
+Interpretation:
+
+- The repaired GLBs are importable in Unreal and survive the static-mesh build path.
+- The imports are normalized to roughly `1 m` wide, so scale normalization is still required before any Aerathea candidate package.
+- Raw GLB import gives only one LOD and one fallback material slot; AssetForge must generate or assign LODs, authored material slots, UV/material metadata, and collision policy before a candidate can advance.
+- The result remains research-only and does not create visual canon, a DCC source candidate, a DCC game-ready candidate, or Fully game-ready content.
+
 ## Queued Alternate Benchmark: `ProjectedEarth_PolarCluster`
 
 This package is queued as a different benchmark class: planet/map texture and Unreal import validation, not single-prop image-to-3D generation.

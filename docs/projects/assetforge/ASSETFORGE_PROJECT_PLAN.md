@@ -270,7 +270,7 @@ Current cleanup/budget result:
 - `8k-12k` faces reads as a lower LOD/chunky stylized version.
 - `4k` faces preserves broad massing but loses too much surface language for this cairn as a primary close-view asset.
 - Initial GLB export reported mesh-validity warnings on decimated variants, but a follow-up Blender repair pass re-exported clean `50k`, `20k`, and `10k` GLBs without those warnings.
-- Next best research benchmark: Unreal import validation on the repaired `20k` and `50k` GLBs as quarantined research-only assets, not production content.
+- Unreal import validation on the repaired `20k` and `50k` GLBs passed as quarantined research-only assets. Temporary Unreal content was deleted after measurement. Raw imports produced one static mesh each, one LOD, one fallback material slot, one convex collision entry, and about `1 m` bounds; scale normalization, tangent cleanup, material-slot authoring, generated LODs, UV/material metadata, and collision policy remain required AssetForge post-process work.
 
 Queued non-cairn benchmark candidate:
 
