@@ -345,6 +345,60 @@ def add_paint_strip(
     return add_rough_box(name, collection, material, location, dimensions, rotation, seed, bevel_scale=0.16, rough_scale=0.035)
 
 
+def add_worn_paint_patch(
+    name: str,
+    collection: bpy.types.Collection,
+    material: bpy.types.Material,
+    location: tuple[float, float, float],
+    dimensions: tuple[float, float, float],
+    rotation: tuple[float, float, float],
+    seed: int,
+) -> bpy.types.Object:
+    return add_tapered_slab(
+        name,
+        collection,
+        material,
+        location,
+        dimensions,
+        rotation,
+        seed,
+        top_scale_x=0.82,
+        top_scale_y=0.96,
+        top_offset=((deterministic_noise(seed, 5, 91) - 0.5) * dimensions[0] * 0.08, 0.0),
+        bevel_scale=0.035,
+        rough_scale=0.06,
+    )
+
+
+def add_cylinder_between(
+    name: str,
+    collection: bpy.types.Collection,
+    material: bpy.types.Material,
+    start: tuple[float, float, float],
+    end: tuple[float, float, float],
+    radius: float,
+    seed: int,
+    vertices: int = 8,
+) -> bpy.types.Object:
+    start_v = Vector(start)
+    end_v = Vector(end)
+    delta = end_v - start_v
+    length = delta.length
+    if length <= 0.01:
+        raise ValueError(f"{name} has no length")
+    midpoint = start_v + (delta * 0.5)
+    bpy.ops.mesh.primitive_cylinder_add(vertices=vertices, radius=radius, depth=length, location=midpoint)
+    obj = bpy.context.object
+    obj.name = name
+    obj.rotation_euler = delta.to_track_quat("Z", "Y").to_euler()
+    obj.data.materials.append(material)
+    set_active(obj)
+    roughen_mesh(obj, radius * 0.22, seed)
+    bpy.ops.object.shade_flat()
+    move_to_collection(obj, collection)
+    return obj
+
+
 def add_surface_facet(
     name: str,
     collection: bpy.types.Collection,
@@ -567,6 +621,9 @@ def build_asset_lod(collection: bpy.types.Collection, materials: dict[str, bpy.t
             ("RearSlabBaseDarkFacet", (56, 18, 80), (32, 2.8, 38), (math.radians(-8), math.radians(8), math.radians(9)), "stone_dark", 255),
             ("FrontSlabUpperRightLightPlane", (58, -82, 116), (44, 2.8, 34), (math.radians(-31), math.radians(-8), math.radians(31)), "stone_light", 260),
             ("FrontSlabLongDarkFault", (12, -84, 79), (74, 2.5, 8), (math.radians(-31), math.radians(-8), math.radians(62)), "stone_dark", 261),
+            ("FrontSlabUpperLeftChippedPlane", (-36, -82, 126), (46, 2.4, 18), (math.radians(-31), math.radians(-8), math.radians(47)), "stone_light", 262),
+            ("FrontSlabLowerCenterDarkPocket", (7, -84, 51), (44, 2.4, 18), (math.radians(-31), math.radians(-8), math.radians(-8)), "stone_dark", 263),
+            ("RightRearStoneDarkSideBreak", (151, 21, 82), (22, 2.4, 42), (math.radians(-5), math.radians(6), math.radians(-18)), "stone_dark", 264),
         ]
         if detail:
             facet_specs.extend(
@@ -575,6 +632,8 @@ def build_asset_lod(collection: bpy.types.Collection, materials: dict[str, bpy.t
                     ("FrontSlabRightEdgeLightChip", (82, -83, 99), (32, 2.8, 38), (math.radians(-31), math.radians(-8), math.radians(-32)), "stone_light", 257),
                     ("RightSupportLightFacet", (123, -28, 82), (22, 2.6, 38), (math.radians(2), math.radians(-8), math.radians(19)), "stone_light", 258),
                     ("LeftStackLightTopChip", (-121, -51, 85), (35, 2.6, 16), (math.radians(3), math.radians(-5), math.radians(10)), "stone_light", 259),
+                    ("FrontFootStoneLightBrokenFace", (38, -112, 39), (56, 2.4, 15), (math.radians(3), math.radians(4), math.radians(6)), "stone_light", 265),
+                    ("BackTallSlabTopChip", (48, 36, 184), (26, 2.4, 28), (math.radians(-10), math.radians(7), math.radians(-28)), "stone_light", 266),
                 ]
             )
         for label, location, dimensions, rotation, material_key, seed in facet_specs:
@@ -582,37 +641,61 @@ def build_asset_lod(collection: bpy.types.Collection, materials: dict[str, bpy.t
 
     if mid:
         paint_specs = [
-            ("MainLongAxeSigilStem", (0, -85, 88), (126, 7, 8.5), (math.radians(-31), math.radians(-8), math.radians(62)), 301),
-            ("MainAxeBladeUpperSlash", (-35, -86, 107), (82, 7, 8.0), (math.radians(-31), math.radians(-8), math.radians(9)), 302),
-            ("MainAxeBladeLowerSlash", (24, -84, 78), (86, 7, 8.0), (math.radians(-31), math.radians(-8), math.radians(-28)), 303),
-            ("LeftStackRedSmear", (-126, -50, 70), (70, 6, 5.5), (math.radians(2), math.radians(-6), math.radians(5)), 304),
-            ("RearSlabSmallWarMark", (53, 18, 142), (52, 6, 5.5), (math.radians(-7), math.radians(9), math.radians(-32)), 305),
+            ("MainLongAxeSigilStem", (0, -85, 88), (126, 1.8, 5.0), (math.radians(-31), math.radians(-8), math.radians(62)), 301),
+            ("MainAxeBladeUpperSlash", (-35, -86, 107), (82, 1.8, 4.6), (math.radians(-31), math.radians(-8), math.radians(9)), 302),
+            ("MainAxeBladeLowerSlash", (24, -84, 78), (86, 1.8, 4.6), (math.radians(-31), math.radians(-8), math.radians(-28)), 303),
+            ("LeftStackRedSmear", (-126, -50, 70), (70, 1.7, 3.5), (math.radians(2), math.radians(-6), math.radians(5)), 304),
+            ("RearSlabSmallWarMark", (53, 18, 142), (52, 1.7, 3.5), (math.radians(-7), math.radians(9), math.radians(-32)), 305),
         ]
         if lod == 0:
             paint_specs.extend(
                 [
-                    ("MainShortRaggedBottomStroke", (35, -84, 57), (64, 6, 6.0), (math.radians(-31), math.radians(-8), math.radians(72)), 306),
-                    ("MainRaggedAxeHeadPatch", (-9, -86, 77), (40, 7, 18), (math.radians(-31), math.radians(-8), math.radians(14)), 307),
-                    ("MainLeftHookBrokenStroke", (-49, -86, 88), (56, 6, 6.0), (math.radians(-31), math.radians(-8), math.radians(46)), 309),
-                    ("RightSupportSmallMark", (128, -31, 77), (40, 5, 4.6), (math.radians(3), math.radians(-9), math.radians(36)), 308),
+                    ("MainShortRaggedBottomStroke", (35, -84, 57), (64, 1.6, 3.5), (math.radians(-31), math.radians(-8), math.radians(72)), 306),
+                    ("MainRaggedAxeHeadPatch", (-9, -86, 77), (40, 1.8, 12), (math.radians(-31), math.radians(-8), math.radians(14)), 307),
+                    ("MainLeftHookBrokenStroke", (-49, -86, 88), (56, 1.6, 3.5), (math.radians(-31), math.radians(-8), math.radians(46)), 309),
+                    ("MainDryBrushTopChipA", (-18, -86, 117), (38, 1.4, 3.0), (math.radians(-31), math.radians(-8), math.radians(-42)), 310),
+                    ("MainDryBrushBottomDrip", (18, -85, 47), (40, 1.4, 3.0), (math.radians(-31), math.radians(-8), math.radians(84)), 311),
+                    ("RightSupportSmallMark", (128, -31, 77), (40, 1.4, 3.0), (math.radians(3), math.radians(-9), math.radians(36)), 308),
                 ]
             )
         for label, location, dimensions, rotation, seed in paint_specs:
-            objects.append(add_paint_strip(f"{prefix}_BloodAxePaint_{label}", collection, materials["red"], location, dimensions, rotation, seed + lod * 37))
+            objects.append(add_worn_paint_patch(f"{prefix}_BloodAxePaint_{label}", collection, materials["red"], location, dimensions, rotation, seed + lod * 37))
 
     if detail:
-        rawhide_specs = [
-            ("LeftStackBindingVerticalA", (-152, -52, 60), (7, 6, 78), (math.radians(3), math.radians(-3), math.radians(3)), 401),
-            ("LeftStackBindingVerticalB", (-92, -51, 60), (7, 6, 75), (math.radians(1), math.radians(4), math.radians(-5)), 402),
-            ("LeftStackBindingDiagonalA", (-121, -53, 60), (86, 6, 5), (math.radians(2), math.radians(-4), math.radians(37)), 403),
-            ("LeftStackBindingDiagonalB", (-121, -54, 58), (82, 6, 5), (math.radians(2), math.radians(-4), math.radians(-35)), 404),
-            ("LeftStackBindingHorizontalA", (-121, -55, 69), (96, 6, 5), (math.radians(2), math.radians(-4), math.radians(3)), 407),
-            ("LeftStackBindingHorizontalB", (-123, -56, 49), (86, 6, 5), (math.radians(2), math.radians(-4), math.radians(-3)), 408),
-            ("RightSupportRawhideTie", (137, -33, 63), (54, 6, 5), (math.radians(5), math.radians(-8), math.radians(91)), 405),
-            ("RearCounterweightBinding", (-30, 103, 53), (86, 6, 5), (math.radians(-4), math.radians(4), math.radians(77)), 406),
+        rope_specs = [
+            ("LeftStackWrapUpper", (-162, -58, 72), (-82, -57, 69), 3.2, 401),
+            ("LeftStackWrapLower", (-158, -58, 50), (-91, -57, 47), 2.8, 402),
+            ("LeftStackWrapDiagA", (-160, -59, 42), (-86, -57, 80), 2.7, 403),
+            ("LeftStackWrapDiagB", (-158, -59, 80), (-92, -57, 39), 2.7, 404),
+            ("LeftStackVerticalLashA", (-151, -59, 29), (-148, -58, 95), 2.4, 407),
+            ("LeftStackVerticalLashB", (-96, -58, 31), (-100, -57, 89), 2.4, 408),
+            ("RightSupportWrap", (115, -37, 58), (151, -36, 88), 2.7, 405),
+            ("RightSupportLowTie", (112, -37, 47), (151, -36, 51), 2.4, 409),
+            ("RearCounterweightBinding", (-75, 103, 55), (21, 104, 58), 2.7, 406),
+            ("RearSlabWaistWrap", (18, 21, 104), (75, 22, 108), 2.6, 410),
         ]
-        for label, location, dimensions, rotation, seed in rawhide_specs:
-            objects.append(add_paint_strip(f"{prefix}_Rawhide_{label}", collection, materials["rawhide"], location, dimensions, rotation, seed))
+        for label, start, end, radius, seed in rope_specs:
+            objects.append(add_cylinder_between(f"{prefix}_RawhideRope_{label}", collection, materials["rawhide"], start, end, radius, seed))
+
+        knot_specs = [
+            ("LeftUpperKnotA", (-151, -60, 71), (5.0, 3.8, 4.6), 421),
+            ("LeftUpperKnotB", (-96, -59, 69), (4.6, 3.5, 4.4), 422),
+            ("LeftCrossKnot", (-124, -60, 60), (5.4, 4.0, 4.8), 423),
+            ("RightSupportKnot", (139, -38, 68), (4.8, 3.6, 4.6), 424),
+            ("RearWrapKnot", (-25, 105, 57), (4.8, 3.8, 4.4), 425),
+        ]
+        for label, location, scale, seed in knot_specs:
+            objects.append(
+                add_small_stone(
+                    f"{prefix}_RawhideKnot_{label}",
+                    collection,
+                    materials["rawhide"],
+                    location,
+                    scale,
+                    (math.radians(seed % 17), math.radians(seed % 11), math.radians(seed % 29)),
+                    seed,
+                )
+            )
 
         pebble_specs = [
             (-152, -82, 16, (18, 12, 8), 501),
@@ -628,7 +711,7 @@ def build_asset_lod(collection: bpy.types.Collection, materials: dict[str, bpy.t
             (52, 151, 16, (19, 13, 9), 511),
             (136, 118, 18, (22, 14, 10), 512),
         ]
-        for index in range(24):
+        for index in range(42):
             angle = math.radians(205 + index * 7.5)
             radius_x = 86 + deterministic_noise(index, 18, 650) * 105
             radius_y = 66 + deterministic_noise(19, index, 651) * 62

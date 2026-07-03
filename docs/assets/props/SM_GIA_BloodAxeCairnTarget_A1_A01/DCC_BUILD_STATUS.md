@@ -18,8 +18,8 @@
 - DCC render root: `Saved/Automation/DCC/SM_GIA_BloodAxeCairnTarget_A1_A01/`
 - Concept comparison: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_ConceptGeometryCompare.png`
 - DCC target-layout proof: `docs/assets/props/SM_GIA_BloodAxeCairnTarget_A1_A01/SM_GIA_BloodAxeCairnTarget_A1_A01_DCCProofTargetLayout.png`
-- LOD0: 3144 tris
-- LOD1: 1488 tris
+- LOD0: 3832 tris
+- LOD1: 1616 tris
 - LOD2: 636 tris
 - LOD3: 524 tris
 
@@ -31,6 +31,15 @@
 - Added deterministic UV0 smart projection to LOD0-LOD3.
 - Switched DCC proof renders to Workbench/material preview with cavity shading so geometry reads clearly in concept comparisons.
 - Regenerated source `.blend`, FBX, LOD0-LOD3, broad UCX collision export, DCC proof renders, target-layout proof, and concept comparison sheet.
+
+## Third Sculpt/Detail Pass
+
+- Integrated lessons from the saved BloodAxe Cairnstone Asset reference as support reference only, not as visual canon.
+- Added more chipped light/dark fracture facets on the main slab, right support, front foot stone, and rear oath slab.
+- Replaced rectangular rawhide blocks with rounder rope/lash cylinders and knot forms.
+- Reworked red marks as thinner worn paint patches instead of heavy raised bars.
+- Increased loose ground rubble density and regenerated all DCC proof captures.
+- Kept the asset in the small prop budget at LOD0 3832 tris.
 
 ## Gate
 
@@ -51,7 +60,7 @@ This asset intentionally starts a new clean lane instead of reusing the older `S
 
 ## Review Result
 
-The second-pass A1 DCC source candidate is useful as a geometry planning proof, but it should not pass concept-geometry approval yet.
+The third-pass A1 DCC source candidate is useful as a geometry planning proof, but it should not pass concept-geometry approval yet.
 
 What it captures:
 
@@ -63,15 +72,17 @@ What it captures:
 - Rear/side authored massing instead of a front-only plane.
 - Clearer chipped-plane read through large facet geometry.
 - More reviewable DCC proof captures for front/right/back/left/hero orientation.
+- Rounder rope binding volumes and more rubble density than the second pass.
+- Red marks now read more like worn applied pigment than the earlier raised bars.
 
 Remaining gaps before approval:
 
-- Stone forms are improved but still too clean and planar compared with the concept's fractured natural slabs.
-- Front slab still needs a sculpt/detail pass for chipped edges, concave breaks, and broken face planes.
-- Rear and side stones are in the right lane, but need better organic proportion and less blockout-like vertical massing.
-- Red paint placement is improved, but still reads as raised bars instead of worn hand-painted Blood Axe pigment integrated into the stone surface.
-- Rope bindings need rounder volume and wrapped-material read.
-- Ground rubble density is improved but still below the concept target.
+- Stone forms are improved but still too clean, blocky, and planar compared with the concept's fractured natural slabs.
+- Front slab still needs more asymmetric chipped edges, concave breaks, and broken face planes that affect the base silhouette, not only surface facets.
+- Rear and side stones are in the right lane, but need more organic proportion and less blockout-like vertical massing.
+- Red paint is thinner, but should be pushed closer to stained/dry-brushed pigment once the stone geometry is approved.
+- Rope bindings now have round volume, but the wrap paths still need better contact around the actual slab shapes after the next stone pass.
+- Ground rubble density is better, but the mound still needs a more natural dirt/stone blend around the footprint.
 
 Decision: hold at `DCC source candidate pending concept-geometry review`; do not import to Unreal yet. This is not a `DCC game-ready candidate` and not `Fully game-ready`.
 
@@ -80,3 +91,11 @@ Decision: hold at `DCC source candidate pending concept-geometry review`; do not
 - Benchmark doc: `docs/assets/benchmarks/STATIC_PROP_REFERENCE_BENCHMARKS_A01.md`
 - Applied process lesson: keep the A1 production package complete and reviewable like the reference packages, but keep the `BloodAxe A1` concept image as the only visual target.
 - Next build should preserve source, exports, LODs, UCX, proof images, status notes, and deterministic rebuild script while improving the actual concept match.
+
+## Cairnstone Asset Reference Intake
+
+- Reference intake: `docs/assets/reference/bloodaxe_cairnstone_asset/README.md`
+- Curated support sheet: `docs/assets/reference/bloodaxe_cairnstone_asset/REF_GIA_BloodAxeCairnstoneAsset_A01_CuratedReferenceSheet.png`
+- Payload limitation: the saved HTML mentioned `BloodAxe_Cairnstone_Asset_Package.zip`, `.glb` LODs, and a UCX `.obj`, but those actual files were not present locally. This is therefore image reference only, not a verified 3D benchmark.
+- Applied A1 lessons: make stone planes more fractured and chipped, make red paint thinner/worn into the stone surface, replace rectangular rawhide blocks with rounder rope/wrap forms, densify ground rubble, and keep authored side/back massing.
+- Boundary: the A1 visual-canon target remains `docs/assets/visual_canon/BloodAxeCairnTargets_A01/VC_GIA_BloodAxe_CairnTarget_A1.png`. Do not use the larger shrine, throne, camp, or stacked-cairn references to redefine the A1 silhouette.
