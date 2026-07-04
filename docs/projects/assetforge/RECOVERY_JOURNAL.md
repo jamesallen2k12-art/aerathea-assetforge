@@ -521,3 +521,53 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260703-215555/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260703-215555/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-03 22:54:22 EDT -0400 - post perspective drawing exact redraw board
+
+- Snapshot: `Saved/ProjectRecovery/20260703-225422/`
+- Git: branch `main`, HEAD `025837a`, status lines `2`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260703-225422/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260703-225422/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260703-225422/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-03 23:04:51 EDT -0400 - post web perspective reference redraw board
+
+- Snapshot: `Saved/ProjectRecovery/20260703-230451/`
+- Git: branch `main`, HEAD `025837a`, status lines `5`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260703-230451/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260703-230451/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260703-230451/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-03 23:16:00 EDT -0400 - post measured web perspective redraw board
+
+- Snapshot: `Saved/ProjectRecovery/20260703-231600/`
+- Git: branch `main`, HEAD `025837a`, status lines `5`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260703-231600/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260703-231600/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260703-231600/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-03 23:27:50 EDT -0400 - post p05 pixel-line perspective measurement board
+
+- Snapshot: `Saved/ProjectRecovery/20260703-232750/`
+- Git: branch `main`, HEAD `025837a`, status lines `7`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260703-232750/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260703-232750/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260703-232750/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-03 23:36:58 EDT -0400 - post p07 hybrid measured perspective board
+
+- Snapshot: `Saved/ProjectRecovery/20260703-233658/`
+- Git: branch `main`, HEAD `025837a`, status lines `9`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260703-233658/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260703-233658/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260703-233658/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
