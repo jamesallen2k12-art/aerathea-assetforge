@@ -244,16 +244,24 @@ def add_dodecahedron(name: str, location: tuple[float, float, float], material: 
 
 
 def add_pentagonal_trapezohedron(name: str, location: tuple[float, float, float], material: bpy.types.Material) -> bpy.types.Object:
-    ring = []
-    for index in range(10):
-        angle = (math.tau * index / 10.0) + math.radians(18.0)
-        z = 0.28 if index % 2 == 0 else -0.28
-        ring.append((math.cos(angle) * 0.96, math.sin(angle) * 0.96, z))
-    verts = [(0.0, 0.0, 1.35), (0.0, 0.0, -1.35)] + ring
-    faces = []
-    for index in range(10):
-        faces.append((0, 2 + index, 1, 2 + ((index + 1) % 10)))
-    return add_mesh_object(name, verts, faces, location, material, "Pentagonal Trapezohedron")
+    radius = 1.12
+    polar_z = 1.38
+    # The local training reference presents the D10 as a simplified five-waist
+    # form: top pole, bottom pole, and a pentagonal belt. Match that visual
+    # scaffold here instead of using the stricter two-ring deltohedron variant.
+    equator: list[tuple[float, float, float]] = []
+    for index in range(5):
+        angle = (math.tau * index / 5.0) + math.radians(18.0)
+        equator.append((math.cos(angle) * radius, math.sin(angle) * radius, 0.0))
+    verts = [(0.0, 0.0, polar_z), (0.0, 0.0, -polar_z)] + equator
+    faces: list[tuple[int, int, int]] = []
+    for index in range(5):
+        next_index = (index + 1) % 5
+        current = 2 + index
+        next_vertex = 2 + next_index
+        faces.append((0, current, next_vertex))
+        faces.append((1, next_vertex, current))
+    return add_mesh_object(name, verts, faces, location, material, "Pentagonal Trapezohedron Reference Form")
 
 
 def add_zocchihedron(name: str, location: tuple[float, float, float], material: bpy.types.Material) -> bpy.types.Object:

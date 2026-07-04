@@ -32,7 +32,7 @@ Allowed forms:
 - Octa cut
 - Icosahedron
 - Dodecahedron
-- Pentagonal trapezohedron / D10 form
+- Pentagonal trapezohedron / D10 reference form, matched to `docs/assets/reference/geometric_image_training/REF_AET_GeometricImageTraining_pentagonal_trapezohedron.png`
 - Zocchihedron / high-facet rounded form
 
 Approval question: Are the basic shapes readable and clean enough to use as construction pieces?

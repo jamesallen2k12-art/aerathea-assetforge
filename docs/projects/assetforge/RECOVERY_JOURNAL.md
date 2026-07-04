@@ -431,3 +431,13 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260703-195244/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260703-195244/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-03 20:09:07 EDT -0400 - post corrected P01 D10 trapezohedron reference form
+
+- Snapshot: `Saved/ProjectRecovery/20260703-200907/`
+- Git: branch `main`, HEAD `8f97153`, status lines `4`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260703-200907/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260703-200907/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260703-200907/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
