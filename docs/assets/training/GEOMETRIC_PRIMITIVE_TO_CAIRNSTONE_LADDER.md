@@ -5,7 +5,7 @@ This training lane exists because the Blood Axe A1 cairnstone attempts were not 
 ## Status
 
 - Current lane: primitive fundamentals
-- Current stage: `P01D Complex Geometric Shape Board`
+- Current stage: `P01E Tesseract Projection Board`
 - Cairn target images: blocked until primitive stages are approved
 - Paint, texture, rope, chips, LODs, FBX, Unreal import: blocked until primitive composition is approved
 
@@ -55,6 +55,12 @@ Approval question: Do the primitives still read correctly when every shape is sp
 Goal: Build a clean reference board of more complex geometric forms, including expanded polyhedra, stellated forms, topology loops, knots, and spiral surfaces. These are not cairn assets yet. They are a vocabulary expansion stage for later cutting, stacking, carving, and silhouette work.
 
 Approval question: Which complex forms are useful enough to keep in the construction vocabulary, and which should be simplified or removed before P02?
+
+### P01E Tesseract Projection Board
+
+Goal: Build a readable 3D projection of a 4D hypercube using all 16 vertices and 32 edges. Show the classic cube-within-cube projection, rotated 4D projections, and a W-dimension color legend.
+
+Approval question: Does the tesseract read as a coherent complex construction form, or should it be simplified before becoming part of the visual vocabulary?
 
 ### P02 Primitive Transform Board
 
@@ -118,6 +124,13 @@ Approval question: Does the material support the form without redefining the sil
 - Review image: `docs/assets/training/geometric_primitives/P01D_ComplexGeometricShapeBoard.png`
 - Research note: `docs/assets/reference/geometric_image_training/COMPLEX_GEOMETRIC_SHAPES_RESEARCH.md`
 
+## Current P01E Output
+
+- Builder: `Tools/DCC/build_tesseract_projection_board.py`
+- Blender source: `SourceAssets/Blender/Props/Training/GeometricPrimitives/P01E_TesseractProjectionBoard/P01E_TesseractProjectionBoard.blend`
+- Review image: `docs/assets/training/geometric_primitives/P01E_TesseractProjectionBoard.png`
+- Notes: `docs/assets/training/geometric_primitives/P01E_TesseractProjectionNotes.md`
+
 ## Recommended Next Step
 
-Review `P01D_ComplexGeometricShapeBoard.png`. If the useful complex forms are approved, continue to `P02 Primitive Transform Board`. If not, revise the complex shape board before any cairn work resumes.
+Review `P01E_TesseractProjectionBoard.png`. If the tesseract projection is approved, continue to `P02 Primitive Transform Board`. If not, simplify or revise the tesseract projection before any cairn work resumes.
