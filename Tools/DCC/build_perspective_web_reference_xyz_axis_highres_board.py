@@ -30,7 +30,6 @@ from build_perspective_web_reference_hybrid_measured_board import (
     fit_image,
     make_line_art,
     panel_image_rect,
-    resize_for_processing,
     soften_line_art,
 )
 from build_perspective_web_reference_pixel_measured_board import (
@@ -45,6 +44,7 @@ BOARD_NAME = "P12_WebPerspectiveXYZAxisHighResMeasuredRedrawBoard"
 DOC_IMAGE = OUT_ROOT / f"{BOARD_NAME}.png"
 REVIEW_IMAGE = REVIEW_ROOT / f"{BOARD_NAME}.png"
 MEASUREMENT_MANIFEST = OUT_ROOT / f"{BOARD_NAME}_Measurements.md"
+PROCESSING_WIDTH = 1500
 
 X_BLUE = (47, 112, 190)
 Y_GREEN = (58, 143, 84)
@@ -94,13 +94,18 @@ def highres_extract(spec):
     original_resize = pixel.resize_for_processing
 
     def highres_resize(img, target_w=940):
-        return original_resize(img, target_w=1500)
+        return original_resize(img, target_w=PROCESSING_WIDTH)
 
     pixel.resize_for_processing = highres_resize
     try:
         return pixel.extract(spec)
     finally:
         pixel.resize_for_processing = original_resize
+
+
+def extraction_work_size(image):
+    scale = PROCESSING_WIDTH / image.width
+    return (PROCESSING_WIDTH, max(1, round(image.height * scale)))
 
 
 def choose_unique(lines: list[DetectedLine], limit: int, theta_tol: int = 3, rho_tol: float = 22.0) -> list[DetectedLine]:
@@ -163,7 +168,7 @@ def draw_panel(draw: ImageDraw.ImageDraw, rect: tuple[int, int, int, int], title
 
 
 def draw_axis_overlay(draw: ImageDraw.ImageDraw, extraction, rect: tuple[int, int, int, int], dark: bool) -> None:
-    work_size = pixel.resize_for_processing(extraction.crop).size
+    work_size = extraction_work_size(extraction.crop)
     x_lines, y_lines, z_lines = axis_lines(extraction)
     vp = normalized_to_rect(extraction.vp_norm, rect)
     draw.line((rect[0], vp[1], rect[2], vp[1]), fill=GOLD, width=1)
@@ -302,11 +307,11 @@ def write_measurements(extractions) -> None:
                 "- Z-axis measurement lines:",
             ]
         )
-        work = pixel.resize_for_processing(extraction.crop)
+        work_size = extraction_work_size(extraction.crop)
         for line_index, line in enumerate(z_lines, 1):
             p0, p1 = line.segment_px
-            n0 = (p0[0] / max(1, work.width - 1), p0[1] / max(1, work.height - 1))
-            n1 = (p1[0] / max(1, work.width - 1), p1[1] / max(1, work.height - 1))
+            n0 = (p0[0] / max(1, work_size[0] - 1), p0[1] / max(1, work_size[1] - 1))
+            n1 = (p1[0] / max(1, work_size[0] - 1), p1[1] / max(1, work_size[1] - 1))
             a, b, c = line.equation
             lines.append(
                 f"  - Z{line_index}: endpoints `({n0[0]:.6f}, {n0[1]:.6f}) -> ({n1[0]:.6f}, {n1[1]:.6f})`; "
