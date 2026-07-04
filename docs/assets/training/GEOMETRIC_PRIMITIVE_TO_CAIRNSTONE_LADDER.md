@@ -28,6 +28,7 @@ Allowed forms:
 - Smooth cylinder
 - Cone
 - Smooth sphere
+- Oval egg
 - Tetra wedge
 - Octa cut
 - Icosahedron
@@ -36,6 +37,12 @@ Allowed forms:
 - Zocchihedron / high-facet rounded form
 
 Approval question: Are the basic shapes readable and clean enough to use as construction pieces?
+
+### P01B Primitive Bisection Board
+
+Goal: Bisect each approved P01 primitive evenly, separate the halves, and expose the cut face so the internal volume and silhouette behavior are readable. Smooth forms use a centered meridian cut. Faceted or asymmetric forms use the most logical symmetry, edge, slant, or median path available.
+
+Approval question: Do the cut primitives remain understandable as construction pieces after being split?
 
 ### P02 Primitive Transform Board
 

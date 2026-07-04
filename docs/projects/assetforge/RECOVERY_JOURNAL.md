@@ -441,3 +441,23 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260703-200907/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260703-200907/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-03 20:21:11 EDT -0400 - post P01B bisected primitive board with oval egg
+
+- Snapshot: `Saved/ProjectRecovery/20260703-202111/`
+- Git: branch `main`, HEAD `43856a7`, status lines `7`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260703-202111/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260703-202111/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260703-202111/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-03 20:29:54 EDT -0400 - post logical P01B bisection board
+
+- Snapshot: `Saved/ProjectRecovery/20260703-202954/`
+- Git: branch `main`, HEAD `43856a7`, status lines `8`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260703-202954/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260703-202954/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260703-202954/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

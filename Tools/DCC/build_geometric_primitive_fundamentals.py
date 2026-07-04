@@ -297,6 +297,51 @@ def add_sphere(name: str, location: tuple[float, float, float], material: bpy.ty
     return obj
 
 
+def add_oval_egg(name: str, location: tuple[float, float, float], material: bpy.types.Material) -> bpy.types.Object:
+    segments = 64
+    rings = 32
+    verts: list[tuple[float, float, float]] = []
+    faces: list[tuple[int, ...]] = []
+    verts.append((0.0, 0.0, 1.34))
+    for ring in range(1, rings):
+        theta = math.pi * ring / rings
+        z_unit = math.cos(theta)
+        bottom_weight = (1.0 - z_unit) * 0.5
+        radius = math.sin(theta) * (0.70 + 0.26 * bottom_weight)
+        z = z_unit * 1.34
+        for segment in range(segments):
+            angle = math.tau * segment / segments
+            verts.append((math.cos(angle) * radius, math.sin(angle) * radius, z))
+    verts.append((0.0, 0.0, -1.34))
+
+    def ring_start(ring_index: int) -> int:
+        if ring_index == 0:
+            return 0
+        if ring_index == rings:
+            return 1 + (rings - 1) * segments
+        return 1 + (ring_index - 1) * segments
+
+    top = 0
+    bottom = ring_start(rings)
+    first_ring = ring_start(1)
+    last_ring = ring_start(rings - 1)
+    for segment in range(segments):
+        next_segment = (segment + 1) % segments
+        faces.append((top, first_ring + segment, first_ring + next_segment))
+        faces.append((bottom, last_ring + next_segment, last_ring + segment))
+    for ring in range(1, rings - 1):
+        current = ring_start(ring)
+        next_ring = ring_start(ring + 1)
+        for segment in range(segments):
+            next_segment = (segment + 1) % segments
+            faces.append((current + segment, next_ring + segment, next_ring + next_segment, current + next_segment))
+
+    obj = add_mesh_object(name, verts, faces, location, material, "Oval Egg")
+    for polygon in obj.data.polygons:
+        polygon.use_smooth = True
+    return obj
+
+
 def add_cylinder(name: str, location: tuple[float, float, float], material: bpy.types.Material) -> bpy.types.Object:
     bpy.ops.mesh.primitive_cylinder_add(vertices=96, radius=0.92, depth=2.2, location=location)
     obj = bpy.context.object
@@ -467,6 +512,7 @@ def main() -> None:
         "zocchi": make_material("M_P01_Zocchihedron", (0.45, 0.48, 0.58)),
         "cone": make_material("M_P01_Cone", (0.58, 0.48, 0.38)),
         "sphere": make_material("M_P01_SmoothSphere", (0.46, 0.55, 0.58)),
+        "egg": make_material("M_P01_OvalEgg", (0.55, 0.48, 0.38)),
         "cylinder": make_material("M_P01_Cylinder", (0.56, 0.52, 0.45)),
         "base": make_material("M_P01_NeutralBase", (0.31, 0.31, 0.30)),
     }
@@ -494,6 +540,7 @@ def main() -> None:
         ),
         ("Cone", add_cone("P01_Cone", (-6.25, -4.75, 1.12), materials["cone"]), 3.5),
         ("Smooth Sphere", add_sphere("P01_SmoothSphere", (-3.75, -4.75, 1.08), materials["sphere"]), 3.4),
+        ("Oval Egg", add_oval_egg("P01_OvalEgg", (-1.25, -4.75, 1.24), materials["egg"]), 3.5),
     ]
 
     for obj in bpy.context.scene.objects:
