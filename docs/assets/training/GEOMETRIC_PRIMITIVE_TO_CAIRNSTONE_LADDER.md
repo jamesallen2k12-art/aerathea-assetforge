@@ -5,7 +5,7 @@ This training lane exists because the Blood Axe A1 cairnstone attempts were not 
 ## Status
 
 - Current lane: primitive fundamentals
-- Current stage: `P01B Primitive Bisection Board`
+- Current stage: `P01C Y-Axis 90 Degree Bisection Board`
 - Cairn target images: blocked until primitive stages are approved
 - Paint, texture, rope, chips, LODs, FBX, Unreal import: blocked until primitive composition is approved
 
@@ -43,6 +43,12 @@ Approval question: Are the basic shapes readable and clean enough to use as cons
 Goal: Bisect each approved P01 primitive evenly, separate the halves, and expose the cut face so the internal volume and silhouette behavior are readable. Smooth forms use a centered meridian cut. Faceted or asymmetric forms use the most logical symmetry, edge, diagonal, slant, or median path available.
 
 Approval question: Do the cut primitives remain understandable as construction pieces after being split?
+
+### P01C Y-Axis 90 Degree Bisection Board
+
+Goal: Bisect each approved P01 primitive with one consistent plane: the X/Z plane through center, perpendicular to the Y axis. Separate and open the halves so the 90-degree-to-Y cut faces remain readable.
+
+Approval question: Do the primitives still read correctly when every shape is split on the same Y-axis-perpendicular plane?
 
 ### P02 Primitive Transform Board
 
@@ -93,6 +99,12 @@ Approval question: Does the material support the form without redefining the sil
 - Review image: `docs/assets/training/geometric_primitives/P01_BasicPrimitiveBoard.png`
 - Source reference sheet: `docs/assets/reference/geometric_image_training/REF_AET_GeometricImageTraining_Primitives_A01.png`
 
+## Current P01C Output
+
+- Builder: `Tools/DCC/build_geometric_primitive_y_axis_bisections.py`
+- Blender source: `SourceAssets/Blender/Props/Training/GeometricPrimitives/P01C_YAxis90BisectionBoard/P01C_YAxis90BisectionBoard.blend`
+- Review image: `docs/assets/training/geometric_primitives/P01C_YAxis90BisectionBoard.png`
+
 ## Recommended Next Step
 
-Review `P01B_BisectedPrimitiveBoard.png`. If the logical bisections are approved, continue to `P02 Primitive Transform Board`. If not, fix primitive split logic before any cairn work resumes.
+Review `P01C_YAxis90BisectionBoard.png`. If the Y-axis 90-degree bisections are approved, continue to `P02 Primitive Transform Board`. If not, fix the Y-axis split presentation before any cairn work resumes.

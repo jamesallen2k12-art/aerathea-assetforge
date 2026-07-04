@@ -55,24 +55,24 @@ from Tools.DCC.build_geometric_primitive_fundamentals import (  # noqa: E402
 from Tools.DCC.build_next_slice_assets import clear_scene, setup_scene  # noqa: E402
 
 
-def build_materials() -> dict[str, bpy.types.Material]:
+def build_materials(prefix: str = "P01B") -> dict[str, bpy.types.Material]:
     materials = {
-        "cube": make_material("M_P01B_Cube", (0.58, 0.58, 0.54)),
-        "slab": make_material("M_P01B_RectangularSlab", (0.48, 0.53, 0.56)),
-        "para": make_material("M_P01B_Parallelepiped", (0.52, 0.47, 0.58)),
-        "tetra": make_material("M_P01B_Tetrahedron", (0.58, 0.50, 0.42)),
-        "octa": make_material("M_P01B_OctaCut", (0.47, 0.56, 0.48)),
-        "hex": make_material("M_P01B_HexagonalPrism", (0.44, 0.54, 0.56)),
-        "ico": make_material("M_P01B_Icosahedron", (0.50, 0.58, 0.45)),
-        "dodeca": make_material("M_P01B_Dodecahedron", (0.58, 0.52, 0.45)),
-        "d10": make_material("M_P01B_PentagonalTrapezohedron", (0.57, 0.44, 0.42)),
-        "zocchi": make_material("M_P01B_Zocchihedron", (0.45, 0.48, 0.58)),
-        "cone": make_material("M_P01B_Cone", (0.58, 0.48, 0.38)),
-        "sphere": make_material("M_P01B_SmoothSphere", (0.46, 0.55, 0.58)),
-        "egg": make_material("M_P01B_OvalEgg", (0.55, 0.48, 0.38)),
-        "cylinder": make_material("M_P01B_Cylinder", (0.56, 0.52, 0.45)),
-        "cut": make_material("M_P01B_WarmCutFace", (0.84, 0.72, 0.48), roughness=0.92),
-        "base": make_material("M_P01B_NeutralBase", (0.31, 0.31, 0.30)),
+        "cube": make_material(f"M_{prefix}_Cube", (0.58, 0.58, 0.54)),
+        "slab": make_material(f"M_{prefix}_RectangularSlab", (0.48, 0.53, 0.56)),
+        "para": make_material(f"M_{prefix}_Parallelepiped", (0.52, 0.47, 0.58)),
+        "tetra": make_material(f"M_{prefix}_Tetrahedron", (0.58, 0.50, 0.42)),
+        "octa": make_material(f"M_{prefix}_OctaCut", (0.47, 0.56, 0.48)),
+        "hex": make_material(f"M_{prefix}_HexagonalPrism", (0.44, 0.54, 0.56)),
+        "ico": make_material(f"M_{prefix}_Icosahedron", (0.50, 0.58, 0.45)),
+        "dodeca": make_material(f"M_{prefix}_Dodecahedron", (0.58, 0.52, 0.45)),
+        "d10": make_material(f"M_{prefix}_PentagonalTrapezohedron", (0.57, 0.44, 0.42)),
+        "zocchi": make_material(f"M_{prefix}_Zocchihedron", (0.45, 0.48, 0.58)),
+        "cone": make_material(f"M_{prefix}_Cone", (0.58, 0.48, 0.38)),
+        "sphere": make_material(f"M_{prefix}_SmoothSphere", (0.46, 0.55, 0.58)),
+        "egg": make_material(f"M_{prefix}_OvalEgg", (0.55, 0.48, 0.38)),
+        "cylinder": make_material(f"M_{prefix}_Cylinder", (0.56, 0.52, 0.45)),
+        "cut": make_material(f"M_{prefix}_WarmCutFace", (0.84, 0.72, 0.48), roughness=0.92),
+        "base": make_material(f"M_{prefix}_NeutralBase", (0.31, 0.31, 0.30)),
     }
     return materials
 
@@ -156,10 +156,13 @@ def make_bisected_pair(
     label: str,
     cut_material: bpy.types.Material,
     plane_fn: Callable[[bpy.types.Object], tuple[Vector, Vector, str]] = default_bisect_plane,
+    object_prefix: str = "P01B",
+    primitive_stage: str = "P01B center bisection",
+    presentation_note: str = "Halves opened 30 degrees for cut-face review.",
 ) -> tuple[bpy.types.Object, bpy.types.Object]:
     plane_co, plane_no, plane_note = plane_fn(source)
-    negative = duplicate_object(source, f"P01B_{label.replace(' ', '')}_NegativeHalf")
-    positive = duplicate_object(source, f"P01B_{label.replace(' ', '')}_PositiveHalf")
+    negative = duplicate_object(source, f"{object_prefix}_{label.replace(' ', '')}_NegativeHalf")
+    positive = duplicate_object(source, f"{object_prefix}_{label.replace(' ', '')}_PositiveHalf")
     bisect_half(negative, plane_co=plane_co, plane_no=plane_no, keep_positive_side=False)
     bisect_half(positive, plane_co=plane_co, plane_no=plane_no, keep_positive_side=True)
     assign_cut_face_material(negative, cut_material, plane_co, plane_no)
@@ -176,10 +179,10 @@ def make_bisected_pair(
     negative.rotation_euler.z -= turn
     positive.rotation_euler.z += turn
     for obj in (negative, positive):
-        obj["Aerathea.PrimitiveStage"] = "P01B center bisection"
+        obj["Aerathea.PrimitiveStage"] = primitive_stage
         obj["Aerathea.PrimitiveName"] = label
         obj["Aerathea.BisectionPlane"] = plane_note
-        obj["Aerathea.PresentationNote"] = "Halves opened 30 degrees for cut-face review."
+        obj["Aerathea.PresentationNote"] = presentation_note
         obj["Aerathea.NotAssetCandidate"] = True
     bpy.data.objects.remove(source, do_unlink=True)
     return negative, positive
@@ -222,7 +225,12 @@ def render_tile_objects(
             item.hide_viewport = hide_viewport
 
 
-def compose_contact_sheet(tile_specs: list[tuple[str, Path]], output_path: Path) -> None:
+def compose_contact_sheet(
+    tile_specs: list[tuple[str, Path]],
+    output_path: Path,
+    title: str = "P01B Logical Primitive Bisection Board",
+    subtitle: str = "halves opened for review; cuts follow center, symmetry, edge, diagonal, or median paths",
+) -> None:
     cols = 4
     rows = math.ceil(len(tile_specs) / cols)
     pad = 24
@@ -242,8 +250,8 @@ def compose_contact_sheet(tile_specs: list[tuple[str, Path]], output_path: Path)
     note_font = load_font(18)
 
     draw.rectangle((0, 0, width, 100), fill=(34, 34, 34, 214))
-    draw.text((34, 16), "P01B Logical Primitive Bisection Board", fill=(238, 232, 220, 255), font=title_font)
-    draw.text((38, 66), "halves opened for review; cuts follow center, symmetry, edge, diagonal, or median paths", fill=(216, 198, 166, 255), font=note_font)
+    draw.text((34, 16), title, fill=(238, 232, 220, 255), font=title_font)
+    draw.text((38, 66), subtitle, fill=(216, 198, 166, 255), font=note_font)
 
     for index, (label, tile_path) in enumerate(tile_specs):
         col = index % cols
