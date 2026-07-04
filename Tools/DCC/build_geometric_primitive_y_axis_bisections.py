@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
 """Build the P01C geometric primitive Y-axis bisection board.
 
-This training proof cuts every approved P01 primitive with the same plane:
-the X/Z plane through the origin, perpendicular to the Y axis.
+This training proof cuts every approved P01 primitive with the same visual
+direction: a horizontal plane through each primitive center, perpendicular to
+the vertical Y direction requested in the training review. Blender is Z-up, so
+this maps to the X/Y plane with a Z normal.
 """
 
 from __future__ import annotations
 
 import shutil
 import sys
+import math
 from pathlib import Path
 
 import bpy
@@ -27,9 +30,11 @@ REVIEW_IMAGE = REVIEW_ROOT / f"{ASSET_NAME}.png"
 sys.path.insert(0, str(ROOT))
 
 from Tools.DCC.build_geometric_primitive_bisections import (  # noqa: E402
+    assign_cut_face_material,
     build_materials,
     compose_contact_sheet,
-    make_bisected_pair,
+    duplicate_object,
+    bisect_half,
     mesh_world_bounds,
 )
 from Tools.DCC.build_geometric_primitive_fundamentals import (  # noqa: E402
@@ -56,8 +61,37 @@ from Tools.DCC.build_geometric_primitive_fundamentals import (  # noqa: E402
 from Tools.DCC.build_next_slice_assets import clear_scene, setup_scene  # noqa: E402
 
 
-def y_axis_90_bisect_plane(_source: bpy.types.Object) -> tuple[Vector, Vector, str]:
-    return Vector((0.0, 0.0, 0.0)), Vector((0.0, 1.0, 0.0)), "90 degree cut to Y axis; X/Z plane through center"
+def y_axis_90_bisect_plane(source: bpy.types.Object) -> tuple[Vector, Vector, str]:
+    plane_co = Vector((source.location.x, source.location.y, source.location.z))
+    return plane_co, Vector((0.0, 0.0, 1.0)), "horizontal plane through center; perpendicular to visual Y axis"
+
+
+def make_perpendicular_y_pair(
+    source: bpy.types.Object,
+    label: str,
+    cut_material: bpy.types.Material,
+) -> tuple[bpy.types.Object, bpy.types.Object]:
+    plane_co, plane_no, plane_note = y_axis_90_bisect_plane(source)
+    lower = duplicate_object(source, f"P01C_{label.replace(' ', '')}_LowerHalf")
+    upper = duplicate_object(source, f"P01C_{label.replace(' ', '')}_UpperHalf")
+    bisect_half(lower, plane_co=plane_co, plane_no=plane_no, keep_positive_side=False)
+    bisect_half(upper, plane_co=plane_co, plane_no=plane_no, keep_positive_side=True)
+    local_cut_co = Vector((0.0, 0.0, 0.0))
+    assign_cut_face_material(lower, cut_material, local_cut_co, plane_no)
+    assign_cut_face_material(upper, cut_material, local_cut_co, plane_no)
+
+    gap = 1.55
+    lower.location.x -= gap
+    upper.location.x += gap
+    upper.rotation_euler.x += math.pi
+    for obj in (lower, upper):
+        obj["Aerathea.PrimitiveStage"] = "P01C perpendicular-to-Y bisection"
+        obj["Aerathea.PrimitiveName"] = label
+        obj["Aerathea.BisectionPlane"] = plane_note
+        obj["Aerathea.PresentationNote"] = "Upper and lower halves separated laterally with cut faces aimed upward for perpendicular split review."
+        obj["Aerathea.NotAssetCandidate"] = True
+    bpy.data.objects.remove(source, do_unlink=True)
+    return lower, upper
 
 
 def render_y_axis_tile(
@@ -74,12 +108,13 @@ def render_y_axis_tile(
             if item.type == "MESH" and item not in visible:
                 item.hide_render = True
                 item.hide_viewport = True
+        bpy.context.view_layer.update()
         minimum, maximum = mesh_world_bounds(objects)
         center = (minimum + maximum) * 0.5
         span = maximum - minimum
-        camera.data.ortho_scale = max(ortho_scale, max(span.x, span.y, span.z) * 1.34)
+        camera.data.ortho_scale = max(ortho_scale, max(span.x, span.y, span.z) * 1.42)
         target = Vector((center.x, center.y, center.z + 0.05))
-        camera.location = (center.x + 2.65, center.y - 7.25, center.z + 3.7)
+        camera.location = (center.x + 0.15, center.y - 7.8, center.z + 4.85)
         look_at(camera, target)
         render(camera, path, (620, 460))
     finally:
@@ -116,18 +151,10 @@ def main() -> None:
     tile_specs: list[tuple[str, Path]] = []
     for index, (label, builder, ortho_scale) in enumerate(build_specs, 1):
         source = builder()
-        halves = make_bisected_pair(
-            source,
-            label,
-            materials["cut"],
-            y_axis_90_bisect_plane,
-            object_prefix="P01C",
-            primitive_stage="P01C Y-axis 90 degree bisection",
-            presentation_note="All halves cut perpendicular to the Y axis and opened 30 degrees for cut-face review.",
-        )
+        halves = make_perpendicular_y_pair(source, label, materials["cut"])
         for obj in halves:
             obj["Aerathea.TrainingLane"] = "geometric_primitive_to_cairnstone"
-            obj["Aerathea.Stage"] = "P01C Y-Axis 90 Degree Bisection Board"
+            obj["Aerathea.Stage"] = "P01C Perpendicular-To-Y Bisection Board"
         tile_path = TILE_ROOT / f"P01C_{index:02d}_{label.replace(' ', '_')}_YAxis90_Bisected.png"
         render_y_axis_tile(camera, halves, base, tile_path, ortho_scale)
         tile_specs.append((label, tile_path))
@@ -135,8 +162,8 @@ def main() -> None:
     compose_contact_sheet(
         tile_specs,
         REVIEW_IMAGE,
-        title="P01C Y-Axis 90 Degree Bisection Board",
-        subtitle="all primitives bisected by the X/Z plane: 90 degrees to the Y axis",
+        title="P01C Perpendicular-To-Y Bisection Board",
+        subtitle="crosswise center split: lower and upper halves shown separately with cut faces exposed",
     )
     ensure_dir(DOC_IMAGE.parent)
     shutil.copyfile(REVIEW_IMAGE, DOC_IMAGE)

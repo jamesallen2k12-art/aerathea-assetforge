@@ -5,7 +5,7 @@ This training lane exists because the Blood Axe A1 cairnstone attempts were not 
 ## Status
 
 - Current lane: primitive fundamentals
-- Current stage: `P01C Y-Axis 90 Degree Bisection Board`
+- Current stage: `P01C Perpendicular-To-Y Bisection Board`
 - Cairn target images: blocked until primitive stages are approved
 - Paint, texture, rope, chips, LODs, FBX, Unreal import: blocked until primitive composition is approved
 
@@ -44,11 +44,11 @@ Goal: Bisect each approved P01 primitive evenly, separate the halves, and expose
 
 Approval question: Do the cut primitives remain understandable as construction pieces after being split?
 
-### P01C Y-Axis 90 Degree Bisection Board
+### P01C Perpendicular-To-Y Bisection Board
 
-Goal: Bisect each approved P01 primitive with one consistent plane: the X/Z plane through center, perpendicular to the Y axis. Separate and open the halves so the 90-degree-to-Y cut faces remain readable.
+Goal: Bisect each approved P01 primitive with one consistent visual rule: cut across the form at 90 degrees to the requested Y direction, producing upper and lower halves rather than front/back halves. Separate and open the halves so the perpendicular cut faces remain readable.
 
-Approval question: Do the primitives still read correctly when every shape is split on the same Y-axis-perpendicular plane?
+Approval question: Do the primitives still read correctly when every shape is split perpendicular to the Y direction?
 
 ### P02 Primitive Transform Board
 
@@ -107,4 +107,4 @@ Approval question: Does the material support the form without redefining the sil
 
 ## Recommended Next Step
 
-Review `P01C_YAxis90BisectionBoard.png`. If the Y-axis 90-degree bisections are approved, continue to `P02 Primitive Transform Board`. If not, fix the Y-axis split presentation before any cairn work resumes.
+Review `P01C_YAxis90BisectionBoard.png`. If the perpendicular-to-Y bisections are approved, continue to `P02 Primitive Transform Board`. If not, fix the split presentation before any cairn work resumes.
