@@ -5,7 +5,7 @@ This training lane exists because the Blood Axe A1 cairnstone attempts were not 
 ## Status
 
 - Current lane: primitive fundamentals
-- Current stage: `P01C Perpendicular-To-Y Bisection Board`
+- Current stage: `P01D Complex Geometric Shape Board`
 - Cairn target images: blocked until primitive stages are approved
 - Paint, texture, rope, chips, LODs, FBX, Unreal import: blocked until primitive composition is approved
 
@@ -49,6 +49,12 @@ Approval question: Do the cut primitives remain understandable as construction p
 Goal: Bisect each approved P01 primitive with one consistent visual rule: cut across the form at 90 degrees to the requested Y direction, producing upper and lower halves rather than front/back halves. Separate and open the halves so the perpendicular cut faces remain readable.
 
 Approval question: Do the primitives still read correctly when every shape is split perpendicular to the Y direction?
+
+### P01D Complex Geometric Shape Board
+
+Goal: Build a clean reference board of more complex geometric forms, including expanded polyhedra, stellated forms, topology loops, knots, and spiral surfaces. These are not cairn assets yet. They are a vocabulary expansion stage for later cutting, stacking, carving, and silhouette work.
+
+Approval question: Which complex forms are useful enough to keep in the construction vocabulary, and which should be simplified or removed before P02?
 
 ### P02 Primitive Transform Board
 
@@ -105,6 +111,13 @@ Approval question: Does the material support the form without redefining the sil
 - Blender source: `SourceAssets/Blender/Props/Training/GeometricPrimitives/P01C_YAxis90BisectionBoard/P01C_YAxis90BisectionBoard.blend`
 - Review image: `docs/assets/training/geometric_primitives/P01C_YAxis90BisectionBoard.png`
 
+## Current P01D Output
+
+- Builder: `Tools/DCC/build_complex_geometric_shapes.py`
+- Blender source: `SourceAssets/Blender/Props/Training/GeometricPrimitives/P01D_ComplexGeometricShapeBoard/P01D_ComplexGeometricShapeBoard.blend`
+- Review image: `docs/assets/training/geometric_primitives/P01D_ComplexGeometricShapeBoard.png`
+- Research note: `docs/assets/reference/geometric_image_training/COMPLEX_GEOMETRIC_SHAPES_RESEARCH.md`
+
 ## Recommended Next Step
 
-Review `P01C_YAxis90BisectionBoard.png`. If the perpendicular-to-Y bisections are approved, continue to `P02 Primitive Transform Board`. If not, fix the split presentation before any cairn work resumes.
+Review `P01D_ComplexGeometricShapeBoard.png`. If the useful complex forms are approved, continue to `P02 Primitive Transform Board`. If not, revise the complex shape board before any cairn work resumes.
