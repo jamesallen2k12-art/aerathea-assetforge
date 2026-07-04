@@ -601,3 +601,13 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260704-002308/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260704-002308/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 00:34:44 EDT -0400 - post p13 lacma high resolution perspective board
+
+- Snapshot: `Saved/ProjectRecovery/20260704-003444/`
+- Git: branch `main`, HEAD `3cb0268`, status lines `4`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-003444/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-003444/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-003444/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
