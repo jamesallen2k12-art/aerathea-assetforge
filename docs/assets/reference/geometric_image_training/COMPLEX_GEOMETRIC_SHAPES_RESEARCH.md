@@ -9,9 +9,9 @@ for Aerathea training use and is not a pasted image collage.
 - Truncated icosahedron / soccer-ball polyhedron rhythm.
 - Truncated dodecahedron / clipped dodecahedral plane rhythm.
 - Rhombicuboctahedron / expanded cube-octahedron face language.
-- Truncated cuboctahedron / larger expanded Archimedean scaffold.
-- Great stellated dodecahedron / stellation reference, simplified into a readable spiked icosa form.
-- Geodesic polyhedron / triangular-facet sphere language.
+- Truncated cuboctahedron / exact expanded Archimedean coordinate form.
+- Exact icosahedral face stellation / formula-defined spiked icosahedral form.
+- Geodesic icosphere / exact subdivided icosahedral mesh language.
 - Torus / ring topology.
 - Mobius strip / twisted one-sided strip topology.
 - Klein bottle / boundaryless non-orientable surface reference.
@@ -32,4 +32,3 @@ for Aerathea training use and is not a pasted image collage.
 - https://en.wikipedia.org/wiki/Trefoil_knot
 - https://en.wikipedia.org/wiki/Helix
 - https://en.wikipedia.org/wiki/Helicoid
-

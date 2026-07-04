@@ -511,3 +511,13 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260703-213131/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260703-213131/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-03 21:55:55 EDT -0400 - post exact geometric formula board rebuild
+
+- Snapshot: `Saved/ProjectRecovery/20260703-215555/`
+- Git: branch `main`, HEAD `2d12665`, status lines `16`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260703-215555/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260703-215555/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260703-215555/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

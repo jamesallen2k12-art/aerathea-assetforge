@@ -17,13 +17,13 @@ SHAPES = [
     "Cube",
     "Parallelepiped",
     "Tetrahedron",
-    "Octahedron",
+    "Regular Octahedron",
     "Hexagonal Prism",
     "Cylinder",
     "Dodecahedron",
     "Icosahedron",
     "Pentagonal Trapezohedron",
-    "Zocchihedron",
+    "D100 Trapezohedron",
 ]
 
 RESAMPLE_LANCZOS = getattr(Image, "Resampling", Image).LANCZOS

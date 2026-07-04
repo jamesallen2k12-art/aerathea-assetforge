@@ -58,7 +58,7 @@ def make_materials() -> dict[str, bpy.types.Material]:
         "trunc_dodeca": make_material("M_P01D_TruncatedDodecahedron", (0.55, 0.48, 0.60)),
         "rhombi": make_material("M_P01D_Rhombicuboctahedron", (0.45, 0.56, 0.60)),
         "trunc_cubo": make_material("M_P01D_TruncatedCuboctahedron", (0.60, 0.51, 0.42)),
-        "stellated": make_material("M_P01D_StellatedForm", (0.55, 0.44, 0.42)),
+        "stellated": make_material("M_P01D_ExactIcosahedralStellation", (0.55, 0.44, 0.42)),
         "geodesic": make_material("M_P01D_GeodesicSphere", (0.47, 0.58, 0.48)),
         "torus": make_material("M_P01D_Torus", (0.44, 0.50, 0.60)),
         "mobius": make_material("M_P01D_MobiusStrip", (0.58, 0.53, 0.42)),
@@ -211,7 +211,7 @@ def add_truncated_icosahedron(material: bpy.types.Material) -> bpy.types.Object:
         new_faces,
         material,
         "Truncated Icosahedron",
-        "Soccer-ball style Archimedean scaffold: pentagon and hexagon rhythm.",
+        "Exact truncation of a regular icosahedron at one third of each edge.",
     )
     recalc_normals(obj)
     return normalize_mesh(obj)
@@ -226,7 +226,7 @@ def add_truncated_dodecahedron(material: bpy.types.Material) -> bpy.types.Object
         new_faces,
         material,
         "Truncated Dodecahedron",
-        "Dodecahedron-derived scaffold with broader decagonal planes and clipped corners.",
+        "Exact truncation of a regular dodecahedron at 0.30 of each directed edge.",
     )
     recalc_normals(obj)
     return normalize_mesh(obj)
@@ -302,7 +302,7 @@ def add_truncated_cuboctahedron(material: bpy.types.Material) -> bpy.types.Objec
         points,
         material,
         "Truncated Cuboctahedron",
-        "Expanded Archimedean block form with square, hexagonal, and octagonal visual beats.",
+        "Exact coordinate construction from signed permutations of (1, 1+sqrt(2), 1+2sqrt(2)).",
     )
 
 
@@ -311,20 +311,21 @@ def add_stellated_form(material: bpy.types.Material) -> bpy.types.Object:
     verts = [Vector(vert) for vert in verts_raw]
     new_verts: list[tuple[float, float, float]] = [(vert.x, vert.y, vert.z) for vert in verts]
     new_faces: list[tuple[int, int, int]] = []
+    apex_radius = 1.5
     for face in faces_raw:
         center = (verts[face[0]] + verts[face[1]] + verts[face[2]]) / 3.0
-        apex = center.normalized() * 1.92
+        apex = center.normalized() * apex_radius
         apex_index = len(new_verts)
         new_verts.append((apex.x, apex.y, apex.z))
         a, b, c = face
         new_faces.extend([(a, b, apex_index), (b, c, apex_index), (c, a, apex_index)])
     obj = make_mesh_object(
-        "P01D_StellatedIcosaForm",
+        "P01D_ExactIcosahedralStellation",
         new_verts,
         new_faces,
         material,
-        "Stellated Icosa Form",
-        "Great-stellated-dodecahedron reference simplified into readable triangular spikes.",
+        "Exact Icosahedral Stellation",
+        "Exact face stellation of a regular icosahedron: each triangular face receives an apex at 1.5 times circumradius along its face-center normal.",
     )
     recalc_normals(obj)
     return normalize_mesh(obj)
@@ -336,7 +337,7 @@ def add_geodesic_sphere(material: bpy.types.Material) -> bpy.types.Object:
     obj.name = "P01D_GeodesicSphere"
     obj.data.name = "P01D_GeodesicSphere_Mesh"
     obj.data.materials.append(material)
-    metadata(obj, "Geodesic Sphere", "Triangular-facet sphere approximation for dome and faceted stone training.")
+    metadata(obj, "Geodesic Icosphere", "Exact subdivided icosahedral geodesic mesh generated from Blender's ico-sphere construction.")
     return obj
 
 
@@ -581,8 +582,8 @@ def main() -> None:
         ("Truncated Dodecahedron", lambda: add_truncated_dodecahedron(materials["trunc_dodeca"]), 4.2),
         ("Rhombicuboctahedron", lambda: add_rhombicuboctahedron(materials["rhombi"]), 4.0),
         ("Truncated Cuboctahedron", lambda: add_truncated_cuboctahedron(materials["trunc_cubo"]), 4.1),
-        ("Stellated Icosa Form", lambda: add_stellated_form(materials["stellated"]), 4.1),
-        ("Geodesic Sphere", lambda: add_geodesic_sphere(materials["geodesic"]), 3.7),
+        ("Exact Icosahedral Stellation", lambda: add_stellated_form(materials["stellated"]), 4.1),
+        ("Geodesic Icosphere", lambda: add_geodesic_sphere(materials["geodesic"]), 3.7),
         ("Torus", lambda: add_torus(materials["torus"]), 3.5),
         ("Mobius Strip", lambda: add_mobius_strip(materials["mobius"]), 3.6),
         ("Klein Bottle", lambda: add_klein_bottle(materials["klein"]), 3.9),
@@ -603,7 +604,7 @@ def main() -> None:
         tile_specs,
         REVIEW_IMAGE,
         title="P01D Complex Geometric Shape Board",
-        subtitle="reference-built 3D forms: expanded solids, stellation, topology, knots, and spiral surfaces",
+        subtitle="formula-built 3D forms: expanded solids, exact stellation, topology, knots, and spiral surfaces",
     )
     ensure_dir(DOC_IMAGE.parent)
     shutil.copyfile(REVIEW_IMAGE, DOC_IMAGE)

@@ -28,13 +28,13 @@ Allowed forms:
 - Smooth cylinder
 - Cone
 - Smooth sphere
-- Oval egg
+- Prolate spheroid
 - Tetrahedron
-- Octa cut
+- Regular octahedron
 - Icosahedron
 - Dodecahedron
-- Pentagonal trapezohedron / D10 reference form, matched to `docs/assets/reference/geometric_image_training/REF_AET_GeometricImageTraining_pentagonal_trapezohedron.png`
-- Zocchihedron / high-facet rounded form
+- D10 pentagonal trapezohedron
+- D100 50-gonal trapezohedron
 
 Approval question: Are the basic shapes readable and clean enough to use as construction pieces?
 
@@ -52,7 +52,7 @@ Approval question: Do the primitives still read correctly when every shape is sp
 
 ### P01D Complex Geometric Shape Board
 
-Goal: Build a clean reference board of more complex geometric forms, including expanded polyhedra, stellated forms, topology loops, knots, and spiral surfaces. These are not cairn assets yet. They are a vocabulary expansion stage for later cutting, stacking, carving, and silhouette work.
+Goal: Build a clean reference board of more complex geometric forms, including expanded polyhedra, exact stellated forms, topology loops, knots, and spiral surfaces. These are not cairn assets yet. They are a vocabulary expansion stage for later cutting, stacking, carving, and silhouette work.
 
 Approval question: Which complex forms are useful enough to keep in the construction vocabulary, and which should be simplified or removed before P02?
 
@@ -90,7 +90,7 @@ Approval question: Does the cluster read as a believable cairn silhouette?
 
 Goal: Only after P01-P05 pass, compare primitive cairn compositions against Aerathea cairnstone concepts.
 
-Approval question: Which primitive composition should become the production scaffold?
+Approval question: Which primitive composition should become the production base?
 
 ### P07 Detail Tier One
 
@@ -110,6 +110,7 @@ Approval question: Does the material support the form without redefining the sil
 - Blender source: `SourceAssets/Blender/Props/Training/GeometricPrimitives/P01_BasicPrimitiveBoard/P01_BasicPrimitiveBoard.blend`
 - Review image: `docs/assets/training/geometric_primitives/P01_BasicPrimitiveBoard.png`
 - Source reference sheet: `docs/assets/reference/geometric_image_training/REF_AET_GeometricImageTraining_Primitives_A01.png`
+- Formula registry: `docs/assets/training/geometric_primitives/GEOMETRIC_SHAPE_FORMULA_REGISTRY.md`
 
 ## Current P01C Output
 

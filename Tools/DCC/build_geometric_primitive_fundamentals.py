@@ -135,18 +135,15 @@ def add_tetrahedron(name: str, location: tuple[float, float, float], material: b
     return add_mesh_object(name, verts, faces, location, material, "Tetrahedron")
 
 
-def add_tetra_wedge(name: str, location: tuple[float, float, float], material: bpy.types.Material) -> bpy.types.Object:
-    return add_tetrahedron(name, location, material)
-
-
-def add_octa_cut(name: str, location: tuple[float, float, float], material: bpy.types.Material) -> bpy.types.Object:
+def add_regular_octahedron(name: str, location: tuple[float, float, float], material: bpy.types.Material) -> bpy.types.Object:
+    radius = 1.18
     verts = [
-        (0.0, 0.0, 1.35),
-        (1.1, 0.0, 0.0),
-        (0.0, 1.1, 0.0),
-        (-1.1, 0.0, 0.0),
-        (0.0, -1.1, 0.0),
-        (0.0, 0.0, -1.35),
+        (0.0, 0.0, radius),
+        (radius, 0.0, 0.0),
+        (0.0, radius, 0.0),
+        (-radius, 0.0, 0.0),
+        (0.0, -radius, 0.0),
+        (0.0, 0.0, -radius),
     ]
     faces = [
         (0, 1, 2),
@@ -158,7 +155,7 @@ def add_octa_cut(name: str, location: tuple[float, float, float], material: bpy.
         (5, 4, 3),
         (5, 1, 4),
     ]
-    return add_mesh_object(name, verts, faces, location, material, "Octa Cut")
+    return add_mesh_object(name, verts, faces, location, material, "Regular Octahedron")
 
 
 def add_hexagonal_prism(name: str, location: tuple[float, float, float], material: bpy.types.Material) -> bpy.types.Object:
@@ -254,35 +251,46 @@ def add_dodecahedron(name: str, location: tuple[float, float, float], material: 
     return add_mesh_object(name, verts, dodeca_faces, location, material, "Dodecahedron")
 
 
+def trapezohedron_data(
+    sides: int,
+    *,
+    radius: float = 1.0,
+    ring_z: float = 0.24,
+    pole_z: float = 1.42,
+    angle_offset: float = 0.0,
+) -> tuple[list[tuple[float, float, float]], list[tuple[int, int, int, int]]]:
+    """Return an exact n-gonal trapezohedron with 2n congruent kite faces."""
+    verts: list[tuple[float, float, float]] = [(0.0, 0.0, pole_z), (0.0, 0.0, -pole_z)]
+    upper_start = len(verts)
+    for index in range(sides):
+        angle = (math.tau * index / sides) + angle_offset
+        verts.append((math.cos(angle) * radius, math.sin(angle) * radius, ring_z))
+    lower_start = len(verts)
+    for index in range(sides):
+        angle = (math.tau * (index + 0.5) / sides) + angle_offset
+        verts.append((math.cos(angle) * radius, math.sin(angle) * radius, -ring_z))
+
+    faces: list[tuple[int, int, int, int]] = []
+    for index in range(sides):
+        next_index = (index + 1) % sides
+        upper = upper_start + index
+        upper_next = upper_start + next_index
+        lower = lower_start + index
+        lower_next = lower_start + next_index
+        faces.append((0, upper, lower, upper_next))
+        faces.append((1, lower_next, upper_next, lower))
+    return verts, faces
+
+
 def add_pentagonal_trapezohedron(name: str, location: tuple[float, float, float], material: bpy.types.Material) -> bpy.types.Object:
-    radius = 1.12
-    polar_z = 1.38
-    # The local training reference presents the D10 as a simplified five-waist
-    # form: top pole, bottom pole, and a pentagonal belt. Match that visual
-    # scaffold here instead of using the stricter two-ring deltohedron variant.
-    equator: list[tuple[float, float, float]] = []
-    for index in range(5):
-        angle = (math.tau * index / 5.0) + math.radians(18.0)
-        equator.append((math.cos(angle) * radius, math.sin(angle) * radius, 0.0))
-    verts = [(0.0, 0.0, polar_z), (0.0, 0.0, -polar_z)] + equator
-    faces: list[tuple[int, int, int]] = []
-    for index in range(5):
-        next_index = (index + 1) % 5
-        current = 2 + index
-        next_vertex = 2 + next_index
-        faces.append((0, current, next_vertex))
-        faces.append((1, next_vertex, current))
-    return add_mesh_object(name, verts, faces, location, material, "Pentagonal Trapezohedron Reference Form")
+    verts, faces = trapezohedron_data(5, radius=1.06, ring_z=0.30, pole_z=1.36, angle_offset=math.radians(18.0))
+    return add_mesh_object(name, verts, faces, location, material, "D10 Pentagonal Trapezohedron")
 
 
-def add_zocchihedron(name: str, location: tuple[float, float, float], material: bpy.types.Material) -> bpy.types.Object:
-    bpy.ops.mesh.primitive_uv_sphere_add(segments=20, ring_count=10, radius=1.08, location=location)
-    obj = bpy.context.object
-    obj.name = name
-    obj.data.materials.append(material)
-    bpy.ops.object.shade_flat()
-    obj["Aerathea.PrimitiveStage"] = "P01 basic primitive"
-    obj["Aerathea.PrimitiveName"] = "Zocchihedron"
+def add_d100_trapezohedron(name: str, location: tuple[float, float, float], material: bpy.types.Material) -> bpy.types.Object:
+    verts, faces = trapezohedron_data(50, radius=1.04, ring_z=0.20, pole_z=1.18, angle_offset=math.radians(90.0))
+    obj = add_mesh_object(name, verts, faces, location, material, "D100 50-Gonal Trapezohedron")
+    obj["Aerathea.ShapeNote"] = "Exact 100-face 50-gonal trapezohedron; retired the non-canonical rounded D100 label."
     return obj
 
 
@@ -308,22 +316,22 @@ def add_sphere(name: str, location: tuple[float, float, float], material: bpy.ty
     return obj
 
 
-def add_oval_egg(name: str, location: tuple[float, float, float], material: bpy.types.Material) -> bpy.types.Object:
+def add_prolate_spheroid(name: str, location: tuple[float, float, float], material: bpy.types.Material) -> bpy.types.Object:
     segments = 64
     rings = 32
+    radius_x = 0.78
+    radius_y = 0.78
+    radius_z = 1.34
     verts: list[tuple[float, float, float]] = []
     faces: list[tuple[int, ...]] = []
-    verts.append((0.0, 0.0, 1.34))
+    verts.append((0.0, 0.0, radius_z))
     for ring in range(1, rings):
         theta = math.pi * ring / rings
-        z_unit = math.cos(theta)
-        bottom_weight = (1.0 - z_unit) * 0.5
-        radius = math.sin(theta) * (0.70 + 0.26 * bottom_weight)
-        z = z_unit * 1.34
+        z = math.cos(theta) * radius_z
         for segment in range(segments):
             angle = math.tau * segment / segments
-            verts.append((math.cos(angle) * radius, math.sin(angle) * radius, z))
-    verts.append((0.0, 0.0, -1.34))
+            verts.append((math.cos(angle) * math.sin(theta) * radius_x, math.sin(angle) * math.sin(theta) * radius_y, z))
+    verts.append((0.0, 0.0, -radius_z))
 
     def ring_start(ring_index: int) -> int:
         if ring_index == 0:
@@ -347,7 +355,8 @@ def add_oval_egg(name: str, location: tuple[float, float, float], material: bpy.
             next_segment = (segment + 1) % segments
             faces.append((current + segment, next_ring + segment, next_ring + next_segment, current + next_segment))
 
-    obj = add_mesh_object(name, verts, faces, location, material, "Oval Egg")
+    obj = add_mesh_object(name, verts, faces, location, material, "Prolate Spheroid")
+    obj["Aerathea.ShapeNote"] = "Exact prolate spheroid equation: x^2/a^2 + y^2/b^2 + z^2/c^2 = 1, a=b=0.78, c=1.34."
     for polygon in obj.data.polygons:
         polygon.use_smooth = True
     return obj
@@ -514,16 +523,16 @@ def main() -> None:
         "cube": make_material("M_P01_Cube", (0.58, 0.58, 0.54)),
         "slab": make_material("M_P01_RectangularSlab", (0.48, 0.53, 0.56)),
         "para": make_material("M_P01_Parallelepiped", (0.52, 0.47, 0.58)),
-        "tetra": make_material("M_P01_TetraWedge", (0.58, 0.50, 0.42)),
-        "octa": make_material("M_P01_OctaCut", (0.47, 0.56, 0.48)),
+        "tetra": make_material("M_P01_Tetrahedron", (0.58, 0.50, 0.42)),
+        "octa": make_material("M_P01_RegularOctahedron", (0.47, 0.56, 0.48)),
         "hex": make_material("M_P01_HexagonalPrism", (0.44, 0.54, 0.56)),
         "ico": make_material("M_P01_Icosahedron", (0.50, 0.58, 0.45)),
         "dodeca": make_material("M_P01_Dodecahedron", (0.58, 0.52, 0.45)),
-        "d10": make_material("M_P01_PentagonalTrapezohedron", (0.57, 0.44, 0.42)),
-        "zocchi": make_material("M_P01_Zocchihedron", (0.45, 0.48, 0.58)),
+        "d10": make_material("M_P01_D10PentagonalTrapezohedron", (0.57, 0.44, 0.42)),
+        "d100": make_material("M_P01_D100Trapezohedron", (0.45, 0.48, 0.58)),
         "cone": make_material("M_P01_Cone", (0.58, 0.48, 0.38)),
         "sphere": make_material("M_P01_SmoothSphere", (0.46, 0.55, 0.58)),
-        "egg": make_material("M_P01_OvalEgg", (0.55, 0.48, 0.38)),
+        "spheroid": make_material("M_P01_ProlateSpheroid", (0.55, 0.48, 0.38)),
         "cylinder": make_material("M_P01_Cylinder", (0.56, 0.52, 0.45)),
         "base": make_material("M_P01_NeutralBase", (0.31, 0.31, 0.30)),
     }
@@ -539,9 +548,9 @@ def main() -> None:
         ("Parallelepiped", add_parallelepiped("P01_Parallelepiped", (top_x[2], top_y, 1.2), materials["para"]), 4.0),
         ("Hex Prism", add_hexagonal_prism("P01_HexagonalPrism", (top_x[3], top_y, 1.08), materials["hex"]), 3.5),
         ("Cylinder", add_cylinder("P01_Cylinder", (top_x[4], top_y, 1.1), materials["cylinder"]), 3.5),
-        ("Zocchihedron", add_zocchihedron("P01_Zocchihedron", (top_x[5], top_y, 1.1), materials["zocchi"]), 3.4),
+        ("D100 Trapezohedron", add_d100_trapezohedron("P01_D100Trapezohedron", (top_x[5], top_y, 1.1), materials["d100"]), 3.4),
         ("Tetrahedron", add_tetrahedron("P01_Tetrahedron", (bottom_x[0], bottom_y, 1.0), materials["tetra"]), 3.5),
-        ("Octa Cut", add_octa_cut("P01_OctaCut", (bottom_x[1], bottom_y, 1.25), materials["octa"]), 3.7),
+        ("Regular Octahedron", add_regular_octahedron("P01_RegularOctahedron", (bottom_x[1], bottom_y, 1.25), materials["octa"]), 3.7),
         ("Icosahedron", add_icosahedron("P01_Icosahedron", (bottom_x[2], bottom_y, 1.25), materials["ico"]), 3.6),
         ("Dodecahedron", add_dodecahedron("P01_Dodecahedron", (bottom_x[3], bottom_y, 1.25), materials["dodeca"]), 3.7),
         (
@@ -551,7 +560,7 @@ def main() -> None:
         ),
         ("Cone", add_cone("P01_Cone", (-6.25, -4.75, 1.12), materials["cone"]), 3.5),
         ("Smooth Sphere", add_sphere("P01_SmoothSphere", (-3.75, -4.75, 1.08), materials["sphere"]), 3.4),
-        ("Oval Egg", add_oval_egg("P01_OvalEgg", (-1.25, -4.75, 1.24), materials["egg"]), 3.5),
+        ("Prolate Spheroid", add_prolate_spheroid("P01_ProlateSpheroid", (-1.25, -4.75, 1.24), materials["spheroid"]), 3.5),
     ]
 
     for obj in bpy.context.scene.objects:
