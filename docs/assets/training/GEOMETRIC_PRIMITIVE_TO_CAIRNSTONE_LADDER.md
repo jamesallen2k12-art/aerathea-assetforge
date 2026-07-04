@@ -5,7 +5,7 @@ This training lane exists because the Blood Axe A1 cairnstone attempts were not 
 ## Status
 
 - Current lane: primitive fundamentals
-- Current stage: `P01 Basic Primitive Board`
+- Current stage: `P01B Primitive Bisection Board`
 - Cairn target images: blocked until primitive stages are approved
 - Paint, texture, rope, chips, LODs, FBX, Unreal import: blocked until primitive composition is approved
 
@@ -29,7 +29,7 @@ Allowed forms:
 - Cone
 - Smooth sphere
 - Oval egg
-- Tetra wedge
+- Tetrahedron
 - Octa cut
 - Icosahedron
 - Dodecahedron
@@ -40,7 +40,7 @@ Approval question: Are the basic shapes readable and clean enough to use as cons
 
 ### P01B Primitive Bisection Board
 
-Goal: Bisect each approved P01 primitive evenly, separate the halves, and expose the cut face so the internal volume and silhouette behavior are readable. Smooth forms use a centered meridian cut. Faceted or asymmetric forms use the most logical symmetry, edge, slant, or median path available.
+Goal: Bisect each approved P01 primitive evenly, separate the halves, and expose the cut face so the internal volume and silhouette behavior are readable. Smooth forms use a centered meridian cut. Faceted or asymmetric forms use the most logical symmetry, edge, diagonal, slant, or median path available.
 
 Approval question: Do the cut primitives remain understandable as construction pieces after being split?
 
@@ -95,4 +95,4 @@ Approval question: Does the material support the form without redefining the sil
 
 ## Recommended Next Step
 
-Review `P01_BasicPrimitiveBoard.png`. If the primitives are approved, continue to `P02 Primitive Transform Board`. If not, fix primitive readability before any cairn work resumes.
+Review `P01B_BisectedPrimitiveBoard.png`. If the logical bisections are approved, continue to `P02 Primitive Transform Board`. If not, fix primitive split logic before any cairn work resumes.

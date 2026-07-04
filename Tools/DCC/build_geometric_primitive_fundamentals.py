@@ -117,15 +117,26 @@ def add_parallelepiped(name: str, location: tuple[float, float, float], material
     return add_mesh_object(name, verts, faces, location, material, "Parallelepiped")
 
 
-def add_tetra_wedge(name: str, location: tuple[float, float, float], material: bpy.types.Material) -> bpy.types.Object:
-    verts = [
-        (-1.25, -0.8, -0.75),
-        (1.25, -0.8, -0.75),
-        (0.0, 1.05, -0.75),
-        (-0.25, -0.05, 1.25),
-    ]
+def tetrahedron_data(edge_length: float = 2.25) -> tuple[list[tuple[float, float, float]], list[tuple[int, int, int]]]:
+    base_radius = edge_length / math.sqrt(3.0)
+    height = math.sqrt(2.0 / 3.0) * edge_length
+    base_z = -height / 4.0
+    apex_z = height * 3.0 / 4.0
+    verts = []
+    for angle in (math.radians(90.0), math.radians(210.0), math.radians(330.0)):
+        verts.append((math.cos(angle) * base_radius, math.sin(angle) * base_radius, base_z))
+    verts.append((0.0, 0.0, apex_z))
     faces = [(0, 1, 2), (0, 3, 1), (1, 3, 2), (2, 3, 0)]
-    return add_mesh_object(name, verts, faces, location, material, "Tetra Wedge")
+    return verts, faces
+
+
+def add_tetrahedron(name: str, location: tuple[float, float, float], material: bpy.types.Material) -> bpy.types.Object:
+    verts, faces = tetrahedron_data()
+    return add_mesh_object(name, verts, faces, location, material, "Tetrahedron")
+
+
+def add_tetra_wedge(name: str, location: tuple[float, float, float], material: bpy.types.Material) -> bpy.types.Object:
+    return add_tetrahedron(name, location, material)
 
 
 def add_octa_cut(name: str, location: tuple[float, float, float], material: bpy.types.Material) -> bpy.types.Object:
@@ -529,7 +540,7 @@ def main() -> None:
         ("Hex Prism", add_hexagonal_prism("P01_HexagonalPrism", (top_x[3], top_y, 1.08), materials["hex"]), 3.5),
         ("Cylinder", add_cylinder("P01_Cylinder", (top_x[4], top_y, 1.1), materials["cylinder"]), 3.5),
         ("Zocchihedron", add_zocchihedron("P01_Zocchihedron", (top_x[5], top_y, 1.1), materials["zocchi"]), 3.4),
-        ("Tetra Wedge", add_tetra_wedge("P01_TetraWedge", (bottom_x[0], bottom_y, 0.82), materials["tetra"]), 3.5),
+        ("Tetrahedron", add_tetrahedron("P01_Tetrahedron", (bottom_x[0], bottom_y, 1.0), materials["tetra"]), 3.5),
         ("Octa Cut", add_octa_cut("P01_OctaCut", (bottom_x[1], bottom_y, 1.25), materials["octa"]), 3.7),
         ("Icosahedron", add_icosahedron("P01_Icosahedron", (bottom_x[2], bottom_y, 1.25), materials["ico"]), 3.6),
         ("Dodecahedron", add_dodecahedron("P01_Dodecahedron", (bottom_x[3], bottom_y, 1.25), materials["dodeca"]), 3.7),

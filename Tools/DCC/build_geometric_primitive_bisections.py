@@ -43,7 +43,7 @@ from Tools.DCC.build_geometric_primitive_fundamentals import (  # noqa: E402
     add_pentagonal_trapezohedron,
     add_rectangular_slab,
     add_sphere,
-    add_tetra_wedge,
+    add_tetrahedron,
     add_zocchihedron,
     configure_scene,
     ensure_dir,
@@ -60,7 +60,7 @@ def build_materials() -> dict[str, bpy.types.Material]:
         "cube": make_material("M_P01B_Cube", (0.58, 0.58, 0.54)),
         "slab": make_material("M_P01B_RectangularSlab", (0.48, 0.53, 0.56)),
         "para": make_material("M_P01B_Parallelepiped", (0.52, 0.47, 0.58)),
-        "tetra": make_material("M_P01B_TetraWedge", (0.58, 0.50, 0.42)),
+        "tetra": make_material("M_P01B_Tetrahedron", (0.58, 0.50, 0.42)),
         "octa": make_material("M_P01B_OctaCut", (0.47, 0.56, 0.48)),
         "hex": make_material("M_P01B_HexagonalPrism", (0.44, 0.54, 0.56)),
         "ico": make_material("M_P01B_Icosahedron", (0.50, 0.58, 0.45)),
@@ -71,7 +71,7 @@ def build_materials() -> dict[str, bpy.types.Material]:
         "sphere": make_material("M_P01B_SmoothSphere", (0.46, 0.55, 0.58)),
         "egg": make_material("M_P01B_OvalEgg", (0.55, 0.48, 0.38)),
         "cylinder": make_material("M_P01B_Cylinder", (0.56, 0.52, 0.45)),
-        "cut": make_material("M_P01B_WarmCutFace", (0.74, 0.66, 0.52), roughness=0.92),
+        "cut": make_material("M_P01B_WarmCutFace", (0.84, 0.72, 0.48), roughness=0.92),
         "base": make_material("M_P01B_NeutralBase", (0.31, 0.31, 0.30)),
     }
     return materials
@@ -116,7 +116,7 @@ def assign_cut_face_material(obj: bpy.types.Object, cut_material: bpy.types.Mate
     normal = plane_no.normalized()
     for polygon in obj.data.polygons:
         distances = [(obj.data.vertices[index].co - plane_co).dot(normal) for index in polygon.vertices]
-        if distances and max(abs(value) for value in distances) < 0.001:
+        if distances and max(abs(value) for value in distances) < 0.02:
             polygon.material_index = cut_index
 
 
@@ -125,28 +125,30 @@ def default_bisect_plane(source: bpy.types.Object) -> tuple[Vector, Vector, str]
 
 
 def parallelepiped_bisect_plane() -> tuple[Vector, Vector, str]:
-    width = 2.35
+    depth = 1.35
     height = 2.25
     shear_x = 0.55
+    shear_y = 0.15
     z0 = -height / 2.0
     z1 = height / 2.0
-    y0 = -1.35 / 2.0
-    y1 = 1.35 / 2.0
-    bottom_front = Vector((0.0, y0, z0))
-    bottom_back = Vector((0.0, y1, z0))
-    top_front = Vector((shear_x, y0, z1))
-    plane_no = (bottom_back - bottom_front).cross(top_front - bottom_front).normalized()
-    return bottom_front, plane_no, f"slanted center plane parallel to side edges across {width:.2f} width"
+    y0 = -depth / 2.0
+    y1 = depth / 2.0
+    bottom_front_mid = Vector((0.0, y0, z0))
+    bottom_back_mid = Vector((0.0, y1, z0))
+    top_front_mid = Vector((shear_x, y0 + shear_y, z1))
+    plane_no = (bottom_back_mid - bottom_front_mid).cross(top_front_mid - bottom_front_mid).normalized()
+    return bottom_front_mid, plane_no, "slanted center plane parallel to side faces"
 
 
-def tetra_wedge_bisect_plane() -> tuple[Vector, Vector, str]:
-    base_left = Vector((-1.25, -0.8, -0.75))
-    base_right = Vector((1.25, -0.8, -0.75))
-    base_peak = Vector((0.0, 1.05, -0.75))
-    apex = Vector((-0.25, -0.05, 1.25))
-    base_mid = (base_left + base_right) * 0.5
-    plane_no = (base_peak - base_mid).cross(apex - base_mid).normalized()
-    return base_mid, plane_no, "median plane through apex and base midpoint"
+def tetrahedron_bisect_plane() -> tuple[Vector, Vector, str]:
+    return Vector((0.0, 0.0, 0.0)), Vector((1.0, 0.0, 0.0)), "mirror plane through apex edge and opposite midpoint"
+
+
+def mesh_world_bounds(objects: tuple[bpy.types.Object, ...]) -> tuple[Vector, Vector]:
+    corners = [obj.matrix_world @ Vector(corner) for obj in objects for corner in obj.bound_box]
+    minimum = Vector((min(corner.x for corner in corners), min(corner.y for corner in corners), min(corner.z for corner in corners)))
+    maximum = Vector((max(corner.x for corner in corners), max(corner.y for corner in corners), max(corner.z for corner in corners)))
+    return minimum, maximum
 
 
 def make_bisected_pair(
@@ -163,8 +165,8 @@ def make_bisected_pair(
     assign_cut_face_material(negative, cut_material, plane_co, plane_no)
     assign_cut_face_material(positive, cut_material, plane_co, plane_no)
 
-    gap = 0.58
-    turn = math.radians(18.0)
+    gap = 0.78
+    turn = math.radians(30.0)
     separation = Vector((plane_no.x, plane_no.y, 0.0))
     if separation.length < 0.001:
         separation = Vector((1.0, 0.0, 0.0))
@@ -177,6 +179,7 @@ def make_bisected_pair(
         obj["Aerathea.PrimitiveStage"] = "P01B center bisection"
         obj["Aerathea.PrimitiveName"] = label
         obj["Aerathea.BisectionPlane"] = plane_note
+        obj["Aerathea.PresentationNote"] = "Halves opened 30 degrees for cut-face review."
         obj["Aerathea.NotAssetCandidate"] = True
     bpy.data.objects.remove(source, do_unlink=True)
     return negative, positive
@@ -196,10 +199,21 @@ def render_tile_objects(
             if item.type == "MESH" and item not in visible:
                 item.hide_render = True
                 item.hide_viewport = True
-        center = (objects[0].location + objects[1].location) * 0.5
-        camera.data.ortho_scale = ortho_scale
-        target = Vector((center.x, center.y, center.z + 0.1))
-        camera.location = (center.x, center.y - 7.4, center.z + 3.5)
+        minimum, maximum = mesh_world_bounds(objects)
+        center = (minimum + maximum) * 0.5
+        span = maximum - minimum
+        split_axis = objects[1].location - objects[0].location
+        if split_axis.length < 0.001:
+            split_axis = Vector((1.0, 0.0, 0.0))
+        split_axis.z = 0.0
+        split_axis.normalize()
+        camera.data.ortho_scale = max(ortho_scale, max(span.x, span.y, span.z) * 1.34)
+        target = Vector((center.x, center.y, center.z + 0.05))
+        camera.location = (
+            center.x + split_axis.x * 2.15,
+            center.y - 7.25 + split_axis.y * 0.55,
+            center.z + 3.7,
+        )
         look_at(camera, target)
         render(camera, path, (620, 460))
     finally:
@@ -229,7 +243,7 @@ def compose_contact_sheet(tile_specs: list[tuple[str, Path]], output_path: Path)
 
     draw.rectangle((0, 0, width, 100), fill=(34, 34, 34, 214))
     draw.text((34, 16), "P01B Logical Primitive Bisection Board", fill=(238, 232, 220, 255), font=title_font)
-    draw.text((38, 66), "even center splits; faceted shapes follow logical symmetry, edge, or median paths", fill=(216, 198, 166, 255), font=note_font)
+    draw.text((38, 66), "halves opened for review; cuts follow center, symmetry, edge, diagonal, or median paths", fill=(216, 198, 166, 255), font=note_font)
 
     for index, (label, tile_path) in enumerate(tile_specs):
         col = index % cols
@@ -265,7 +279,7 @@ def main() -> None:
         ("Hex Prism", lambda: add_hexagonal_prism("P01B_HexagonalPrism_Source", (0.0, 0.0, 1.08), materials["hex"]), default_bisect_plane, 4.0),
         ("Cylinder", lambda: add_cylinder("P01B_Cylinder_Source", (0.0, 0.0, 1.1), materials["cylinder"]), default_bisect_plane, 4.0),
         ("Zocchihedron", lambda: add_zocchihedron("P01B_Zocchihedron_Source", (0.0, 0.0, 1.1), materials["zocchi"]), default_bisect_plane, 4.0),
-        ("Tetra Wedge", lambda: add_tetra_wedge("P01B_TetraWedge_Source", (0.0, 0.0, 0.82), materials["tetra"]), lambda _obj: tetra_wedge_bisect_plane(), 4.1),
+        ("Tetrahedron", lambda: add_tetrahedron("P01B_Tetrahedron_Source", (0.0, 0.0, 1.0), materials["tetra"]), lambda _obj: tetrahedron_bisect_plane(), 4.1),
         ("Octa Cut", lambda: add_octa_cut("P01B_OctaCut_Source", (0.0, 0.0, 1.25), materials["octa"]), default_bisect_plane, 4.1),
         ("Icosahedron", lambda: add_icosahedron("P01B_Icosahedron_Source", (0.0, 0.0, 1.25), materials["ico"]), default_bisect_plane, 4.2),
         ("Dodecahedron", lambda: add_dodecahedron("P01B_Dodecahedron_Source", (0.0, 0.0, 1.25), materials["dodeca"]), default_bisect_plane, 4.2),
