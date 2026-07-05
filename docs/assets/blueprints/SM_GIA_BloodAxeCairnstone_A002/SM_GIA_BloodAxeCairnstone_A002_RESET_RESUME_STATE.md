@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A002 Reset Resume State
 
-Status: `Core Recovery; A21 strict-pixel recovery authority approved; production blocked before handoff plan`
+Status: `Core Recovery; A21 handoff plan drafted; pending Flamestrike approval before production file action`
 
 Date: 2026-07-05
 
@@ -35,6 +35,7 @@ Current status:
 - The Phase 7D capture is `proof only; rejected visual evidence`.
 - `Content/Aerathea/Maps/L_Aerathea_Startup.umap` is `tainted/mixed local map state`; it was not moved.
 - A21 is approved as the strict-pixel recovery authority for A002 planning.
+- A21 handoff plan is drafted and pending Flamestrike approval.
 - A002 has no valid active DCC game-ready candidate.
 - A002 has no valid active Unreal import candidate.
 - A002 is not `Fully game-ready`.
@@ -87,14 +88,17 @@ Read in this order:
 4. `Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A002/CoreRecovery/20260705_Phase3_AnalyticProofShellDataset_Quarantine/QUARANTINE_MANIFEST.md`
 5. `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A02_StrictPixelA21/SM_GIA_BloodAxeCairnstone_A02_StrictPixelA21_3D_GAME_ASSET_BLUEPRINT.md`
 6. `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A002/SM_GIA_BloodAxeCairnstone_A002_RECOVERY_AUTHORITY_20260705_A21_STRICT_PIXEL.md`
+7. `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A002/SM_GIA_BloodAxeCairnstone_A002_A21_HANDOFF_PLAN_DRAFT.md`
 
 ## Next Core-Valid Step
 
 Stop before production file actions.
 
-The next task is to draft the A002 A21 handoff plan for Flamestrike approval.
+The next task is to wait for Flamestrike approval or rejection of the A002 A21 handoff plan.
 
-That plan must decide exactly how A21 becomes a working A002 production package without losing evidence lineage.
+Pending plan:
+
+- `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A002/SM_GIA_BloodAxeCairnstone_A002_A21_HANDOFF_PLAN_DRAFT.md`
 
 ## Hard Boundaries
 

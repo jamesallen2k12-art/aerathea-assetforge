@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A002 Core Recovery Status - Phase 3 Analytic Proof Shell Dataset
 
-Status: `Core Recovery; A21 strict-pixel recovery authority approved; production blocked before handoff plan`
+Status: `Core Recovery; A21 handoff plan drafted; pending Flamestrike approval before production file action`
 
 Date: 2026-07-05
 
@@ -127,10 +127,25 @@ This approval reclassifies A21 from `reference/candidate recovery evidence only`
 
 This approval does not authorize copying, renaming, rebuilding, Unreal import, map repair, review capture, final visual approval, or `Fully game-ready` status.
 
+## A21 Handoff Plan
+
+Draft handoff plan:
+
+- `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A002/SM_GIA_BloodAxeCairnstone_A002_A21_HANDOFF_PLAN_DRAFT.md`
+
+Recommended route:
+
+- create an A002-named strict-pixel recovery package from A21
+- preserve A21 as the source evidence
+- allow only naming/path handoff changes unless a later approval expands scope
+- require an A002 handoff audit and strict-pixel/equivalence gate before Unreal import
+
+The draft plan is pending Flamestrike approval.
+
 ## Current State
 
-A002 production is blocked before the A21 handoff plan.
+A002 production is blocked before handoff plan approval.
 
-The next Core-valid task is to draft the A002 A21 handoff plan for Flamestrike approval.
+The next Core-valid task is to wait for Flamestrike approval or rejection of the A002 A21 handoff plan.
 
 No rebuild, copy, rename, import, map repair, visual capture, or asset status advancement is authorized by this recovery status record.
