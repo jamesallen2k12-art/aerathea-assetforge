@@ -1,8 +1,24 @@
 # SM_GIA_BloodAxeCairnstone_A002 Core Recovery Status - Phase 6C Empty FBX
 
-Status: `Core Recovery reopened at Phase 7D visual capture mismatch`
+Status: `superseded by Phase 3 analytic proof-shell dataset quarantine; reference only for Phase 6C/7D history`
 
 Date: 2026-07-05
+
+## Supersession Notice
+
+This record remains valid as history for the Phase 6C empty-FBX recovery and the Phase 7D visual capture block.
+
+It is no longer the current A002 recovery status.
+
+Superseding record:
+
+- `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A002/SM_GIA_BloodAxeCairnstone_A002_CORE_RECOVERY_STATUS_20260705_PHASE3_ANALYTIC_PROOF_SHELL_DATASET.md`
+
+Superseding decision:
+
+- A002 Phase 3B/3C generated and advanced analytic oval proof-shell geometry instead of strict source-pixel-owned reconstruction geometry.
+- Phase 3C through Phase 7D generated outputs are now `quarantined`.
+- A002 production is blocked pending an approved strict-pixel recovery contract.
 
 ## Core Trigger
 
@@ -146,4 +162,5 @@ Current status after Phase 7D:
 
 Recovery need:
 
-- Flamestrike approval is required before any Phase 7D repair, second import, second placement, validator change, or second review capture.
+- Superseded by the Phase 3 dataset root-cause finding.
+- Flamestrike approval is required before any A002 rebuild, A21 reclassification, Unreal repair, second import, second placement, validator change, or second review capture.

@@ -95,11 +95,47 @@ Affected outputs:
 - Phase 7C imported Unreal Static Mesh/material package as a visual-review candidate
 - Phase 7C validation scope, which is now known to be incomplete for visual-review readiness
 
+## Root-Cause Supersession
+
+Later root-cause audit on 2026-07-05 found that Phase 7D exposed but did not create the primary dataset failure.
+
+Superseding recovery record:
+
+- `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A002/SM_GIA_BloodAxeCairnstone_A002_CORE_RECOVERY_STATUS_20260705_PHASE3_ANALYTIC_PROOF_SHELL_DATASET.md`
+
+Superseding drift ledger entry:
+
+- `2026-07-05 19:42 EDT - A002 Phase 3 Analytic Proof Shell Dataset Quarantine`
+
+Revised root cause:
+
+- A002 Phase 3B/3C generated and advanced analytic oval proof-shell geometry rather than strict source-pixel-owned reconstruction geometry.
+
+Revised artifact status:
+
+- Phase 3C through Phase 7D generated outputs are `quarantined`.
+- Phase 7D capture remains `proof only; rejected visual evidence`.
+- A002 production is blocked pending an approved strict-pixel recovery contract.
+
 ## Decision
 
 Decision: `phase_7d_capture_blocked_visual_match_mismatch`
 
 Do not request final visual approval from this capture.
+
+## Flamestrike Visual Response
+
+Flamestrike reviewed the opened Phase 7D blocked capture on 2026-07-05 and rejected it as unacceptable.
+
+User response:
+
+- `what is this garbage...`
+
+Classification:
+
+- explicit visual rejection of the Phase 7D capture
+- confirms the capture must not be treated as approval-ready visual evidence
+- confirms repair requires a new Core-approved recovery contract before any further production action
 
 ## Smallest Sufficient Proposed Recovery
 

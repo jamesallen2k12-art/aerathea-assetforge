@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A002 Reset Resume State
 
-Status: `safe to resume at Phase 5D`
+Status: `Core Recovery; A002 analytic proof-shell dataset quarantined; production blocked`
 
 Date: 2026-07-05
 
@@ -14,105 +14,93 @@ Do not rely on conversation memory.
 
 - `AGENTS.md`
 - `docs/projects/assetforge/AETHERFORGE_BLUEPRINTS.md`
+- `docs/projects/assetforge/DRIFT_LEDGER.md`
 - `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A002/SM_GIA_BloodAxeCairnstone_A002_CORE_RECONSTRUCTION_ASSET_BLUEPRINT.md`
+- `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A002/SM_GIA_BloodAxeCairnstone_A002_CORE_RECOVERY_STATUS_20260705_PHASE3_ANALYTIC_PROOF_SHELL_DATASET.md`
 
 ## Current A002 State
 
-A002 is a clean restart after A001 drift quarantine.
+A002 is in Core Recovery.
 
-Current completed stage:
+Root-cause finding:
 
-- Phase 5C: texture/UV/material generator and audit script creation
+- The wrong A002 dataset began at Phase 3B/3C.
+- The branch used the correct A02 source template path, but generated analytic oval proof-shell geometry instead of strict source-pixel-owned reconstruction geometry.
+- The bad dataset propagated through Phase 4, Phase 5, Phase 6, Phase 7C, and the rejected Phase 7D capture.
 
 Current status:
 
-- Phase 5B ownership manifest is complete and valid JSON.
-- Phase 5C generator/audit scripts are created and pass Python syntax validation.
-- No Phase 5D Blender run has happened yet.
-- No UV candidate `.blend` has been generated yet.
-- No source-matched textures have been generated yet.
-- No FBX export has been created.
-- No Unreal import has been created.
-- Flamestrike subjective visual review remains reserved for the later concept-art-match assembled asset stage.
+- Phase 3C through Phase 7D generated outputs are `quarantined`.
+- A002 active generated DCC source/export/Unreal Content outputs have been moved out of active production locations.
+- The Phase 7D capture is `proof only; rejected visual evidence`.
+- `Content/Aerathea/Maps/L_Aerathea_Startup.umap` is `tainted/mixed local map state`; it was not moved.
+- A002 has no valid active DCC game-ready candidate.
+- A002 has no valid active Unreal import candidate.
+- A002 is not `Fully game-ready`.
 
 ## Latest Recovery Checkpoint
 
-Manual checkpoint after Phase 5C validation:
+Manual checkpoint before quarantine:
 
-- `Saved/ProjectRecovery/20260705-183056`
+- `Saved/ProjectRecovery/20260705-194054`
 
 Checkpoint note:
 
-- `A002 after Phase 5C script creation and validation`
+- `A002 before analytic proof shell dataset quarantine`
+
+## Quarantine Location
+
+Quarantine manifest:
+
+- `Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A002/CoreRecovery/20260705_Phase3_AnalyticProofShellDataset_Quarantine/QUARANTINE_MANIFEST.md`
+
+Quarantine root:
+
+- `Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A002/CoreRecovery/20260705_Phase3_AnalyticProofShellDataset_Quarantine/`
+
+## Correct Pixel Data Evidence Found
+
+Strongest local strict-pixel evidence:
+
+- `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A02_StrictPixelA21/SM_GIA_BloodAxeCairnstone_A02_StrictPixelA21_3D_GAME_ASSET_BLUEPRINT.md`
+- `Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A02_StrictPixelA21/SM_GIA_BloodAxeCairnstone_A02_StrictPixelA21_StrictPixelGate.json`
+
+A21 status:
+
+- `reference/candidate recovery evidence only`
+- strict gate PASS
+- not promoted to A002 authority by the quarantine action
+
+A24 status:
+
+- `reference only`
+- strict gate failed
 
 ## Required Read Before Continuing
 
 Read in this order:
 
 1. `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A002/SM_GIA_BloodAxeCairnstone_A002_CORE_RECONSTRUCTION_ASSET_BLUEPRINT.md`
-2. `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A002/SM_GIA_BloodAxeCairnstone_A002_PHASE_4E_SNAP_ASSEMBLY_SOURCE_OUTPUT_RECORD.md`
-3. `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A002/SM_GIA_BloodAxeCairnstone_A002_PHASE_5A_TEXTURE_UV_MATERIAL_CANDIDATE_PLAN.md`
-4. `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A002/SM_GIA_BloodAxeCairnstone_A002_PHASE_5B_UV_TEXTURE_OWNERSHIP_MANIFEST.md`
-5. `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A002/SM_GIA_BloodAxeCairnstone_A002_PHASE_5C_GENERATOR_AND_AUDIT_SCRIPT_RECORD.md`
-
-## Phase 5B Ownership Manifest
-
-Ownership manifest:
-
-- `Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A002/TextureUVMaterialA01/SM_GIA_BloodAxeCairnstone_A002_TextureUVMaterialA01OwnershipManifest.json`
-
-Status:
-
-- `ownership_manifest_recorded_uv_texture_generation_not_authorized`
-
-Important policy:
-
-- visible source pixels must copy exactly from approved source regions
-- inferred/contact/hidden areas must be tagged separately
-- no A001/A02 generated texture or material authority
-- no FBX export
-- no Unreal output
-
-## Phase 5C Scripts
-
-Generator:
-
-- `Tools/DCC/build_bloodaxe_cairnstone_a002_texture_uv_material_a01.py`
-
-Audit:
-
-- `Tools/DCC/audit_bloodaxe_cairnstone_a002_texture_uv_material_a01.py`
-
-Validation already completed:
-
-- `python3 -m py_compile Tools/DCC/build_bloodaxe_cairnstone_a002_texture_uv_material_a01.py Tools/DCC/audit_bloodaxe_cairnstone_a002_texture_uv_material_a01.py`
-- `python3 -m json.tool Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A002/TextureUVMaterialA01/SM_GIA_BloodAxeCairnstone_A002_TextureUVMaterialA01OwnershipManifest.json`
-- `git diff --check` for Phase 5C/5B scoped files
+2. `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A002/SM_GIA_BloodAxeCairnstone_A002_CORE_RECOVERY_STATUS_20260705_PHASE3_ANALYTIC_PROOF_SHELL_DATASET.md`
+3. `docs/projects/assetforge/DRIFT_LEDGER.md`
+4. `Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A002/CoreRecovery/20260705_Phase3_AnalyticProofShellDataset_Quarantine/QUARANTINE_MANIFEST.md`
+5. `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A02_StrictPixelA21/SM_GIA_BloodAxeCairnstone_A02_StrictPixelA21_3D_GAME_ASSET_BLUEPRINT.md`
 
 ## Next Core-Valid Step
 
-Begin A002 Phase 5D: Run Texture UV Material Candidate Generator.
+Stop before production.
 
-Required sequence:
-
-1. Create a manual checkpoint.
-2. Run:
-   `blender --background --python Tools/DCC/build_bloodaxe_cairnstone_a002_texture_uv_material_a01.py`
-3. Run:
-   `blender --background --python Tools/DCC/audit_bloodaxe_cairnstone_a002_texture_uv_material_a01.py`
-4. If audit passes, record Phase 5D output.
-5. Do not open proof renders for Flamestrike unless a real decision is needed or the asset reaches concept-art-match subjective review stage.
+The next task is to draft a recovery contract for Flamestrike approval. That contract must decide whether A02 StrictPixelA21 is reclassified/promoted for A002 recovery, or whether A002 must be rebuilt from the approved A02 source template with a new strict-pixel method and gate.
 
 ## Hard Boundaries
 
-Do not do any of the following before Phase 5D audit passes:
+Do not do any of the following until Flamestrike approves a new recovery contract:
 
-- FBX export
-- Unreal import
-- runtime mesh merge
-- source-image pixel edits
-- A001/A02 generated texture or material reuse as source authority
-- manual painting over visible measured source pixels
-- subjective visual approval request for technical proof renders
-
-If the Phase 5D audit fails, stop, record the mismatch, identify the violated authority, and propose the smallest correction.
+- rebuild A002 geometry
+- promote A21 or any A02 output to A002 authority
+- edit Unreal Content or maps
+- run Blender generation
+- export FBX
+- import to Unreal
+- capture a new review image
+- claim DCC game-ready, Unreal import candidate, or Fully game-ready status

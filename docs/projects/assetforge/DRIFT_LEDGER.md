@@ -24,6 +24,20 @@ Core authority: `AGENTS.md` Core Principles govern this ledger. Drifted artifact
 
 ## Entries
 
+### 2026-07-05 19:42 EDT - A002 Phase 3 Analytic Proof Shell Dataset Quarantine
+
+- Asset or scope: `SM_GIA_BloodAxeCairnstone_A002` Phase 3C through Phase 7D generated dataset lineage.
+- Detected by: Flamestrike visual rejection of the Phase 7D Unreal capture followed by Codex root-cause audit of A002 records, generator scripts, manifests, and local strict-pixel evidence.
+- Last known Core-valid state: Phase 1 source evidence lock and Phase 2B/2C measurement/formula/audit records before production geometry. Phase 3A remains valid only as a plan boundary, not as proof that analytic shell output satisfied pixel-owned geometry authority.
+- First drift action: Phase 3B/3C generated and advanced analytic oval proof-shell geometry as the A002 modular DCC source candidate.
+- Assumption or interpretation that caused drift: source-named formula constants, footprint dimensions, centers, and per-view contact station heights were treated as sufficient geometry authority, even though the A002 blueprint required scan-verified source-pixel geometry evidence and blocked generic primitive replacement, old generator behavior, visual fitting, and unapproved inference.
+- Affected outputs: A002 Phase 3C modular DCC source output; Phase 3D visual decision as advancement authority; Phase 4 snap assembly; Phase 5 texture/UV/material candidate; Phase 6 DCC game-ready source and exports, including recovered Phase 6C outputs; Phase 7C Unreal import candidate; Phase 7D startup review capture.
+- Artifact statuses: Phase 1 source evidence remains `authoritative`; Phase 2B/2C remain `authoritative for recovery analysis` but not output authority alone; Phase 3A remains `authoritative as a boundary plan`; Phase 3B scripts are `evidence only`; Phase 3C through Phase 7D generated outputs are `quarantined`; Phase 7D capture is `proof only; rejected visual evidence`; `Content/Aerathea/Maps/L_Aerathea_Startup.umap` is `tainted/mixed local map state`; A02 StrictPixelA21 is `reference/candidate recovery evidence only`; A02 StrictPixelViewOwnedA24 is `reference only; strict gate failed`.
+- Quarantined locations or records: `Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A002/CoreRecovery/20260705_Phase3_AnalyticProofShellDataset_Quarantine/`; manifest at `Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A002/CoreRecovery/20260705_Phase3_AnalyticProofShellDataset_Quarantine/QUARANTINE_MANIFEST.md`; local status record at `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A002/SM_GIA_BloodAxeCairnstone_A002_CORE_RECOVERY_STATUS_20260705_PHASE3_ANALYTIC_PROOF_SHELL_DATASET.md`.
+- Recovery decision: quarantine completed after Flamestrike approval. A002 production is blocked until a new approved recovery contract decides whether A02 StrictPixelA21 is reclassified/promoted for A002 recovery or a new strict-pixel A002 rebuild is made from the approved A02 source template.
+- Flamestrike approval: approved quarantine scope on 2026-07-05 after Codex identified the wrong A002 analytic/proof-shell dataset and the A21 strict-pixel evidence family.
+- Follow-up Core/Kaizen improvement: future A002 recovery must add a strict-pixel/source-contour gate before any DCC source candidate can advance. Formula constants and proof-shell renders are not enough for source-image visual reconstruction assets.
+
 ### 2026-07-05 19:20 EDT - A002 Phase 7D Capture Visual Match Block
 
 - Asset or scope: `SM_GIA_BloodAxeCairnstone_A002` Phase 7D startup review capture and Phase 7C Unreal import candidate visual-readiness gate.
@@ -35,7 +49,7 @@ Core authority: `AGENTS.md` Core Principles govern this ledger. Drifted artifact
 - Artifact statuses: Phase 7D capture PNG is `proof only; blocked evidence`; Phase 7C Unreal import candidate is `candidate; visual-match recovery required before review`; recovered Phase 6C DCC package remains `DCC game-ready candidate`; final visual approval remains `pending`; A002 remains not `Fully game-ready`.
 - Quarantined locations or records: blocked capture is preserved in place and recorded in `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A002/SM_GIA_BloodAxeCairnstone_A002_PHASE_7D_STARTUP_REVIEW_CAPTURE_BLOCKED_RECORD.md`; A002 local recovery status reopened in `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A002/SM_GIA_BloodAxeCairnstone_A002_CORE_RECOVERY_STATUS_20260705_PHASE6C_EMPTY_FBX.md`.
 - Recovery decision: blocked pending Flamestrike approval. Proposed smallest sufficient recovery is to inspect the A002 Unreal material/rendered mesh state against the recovered DCC proof and approved source template, identify whether the mismatch is material graph, slot assignment, import, camera targeting, or DCC handoff, then correct only the confirmed cause and strengthen the Phase 7 validator/readiness gate.
-- Flamestrike approval: pending.
+- Flamestrike approval: Phase 7D capture rejected by Flamestrike on 2026-07-05 with response `what is this garbage...`; recovery approval remains pending.
 - Follow-up Core/Kaizen improvement: Phase 7 visual-readiness gates must include rendered capture/DCC-proof comparison before a capture can be presented as review-ready.
 
 ### 2026-07-05 19:04 EDT - A002 Phase 6C Empty Visual FBX False Pass
