@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A002 Core Recovery Status - Phase 3 Analytic Proof Shell Dataset
 
-Status: `Core Recovery; A002 proof-shell dataset quarantined; production blocked`
+Status: `Core Recovery; A21 strict-pixel recovery authority approved; production blocked before handoff plan`
 
 Date: 2026-07-05
 
@@ -58,7 +58,7 @@ The mixed startup map is not moved, but the local `Content/Aerathea/Maps/L_Aerat
 - Phase 3B generator/audit scripts: `evidence; not production authority`
 - Phase 3C through Phase 7D generated outputs: `quarantined`
 - Phase 7D capture: `proof only; rejected visual evidence`
-- A02 StrictPixelA21: `reference/candidate recovery evidence only; not promoted to A002 authority`
+- A02 StrictPixelA21: `approved recovery authority for A002 strict-pixel recovery planning`
 - A02 StrictPixelViewOwnedA24: `reference only; strict gate failed`
 - A002 final visual approval: `pending`
 - A002 `Fully game-ready`: `false`
@@ -115,10 +115,22 @@ Completed quarantine:
 
 No A21/A24/A001 data was moved by this action.
 
+## A21 Recovery Authority Approval
+
+After quarantine, Flamestrike approved using `SM_GIA_BloodAxeCairnstone_A02_StrictPixelA21` as the A002 strict-pixel recovery authority.
+
+Approval record:
+
+- `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A002/SM_GIA_BloodAxeCairnstone_A002_RECOVERY_AUTHORITY_20260705_A21_STRICT_PIXEL.md`
+
+This approval reclassifies A21 from `reference/candidate recovery evidence only` to `approved recovery authority for A002 strict-pixel recovery planning`.
+
+This approval does not authorize copying, renaming, rebuilding, Unreal import, map repair, review capture, final visual approval, or `Fully game-ready` status.
+
 ## Current State
 
-A002 production is blocked.
+A002 production is blocked before the A21 handoff plan.
 
-The next Core-valid task is to draft a recovery contract for Flamestrike approval. That contract must decide whether A21 is reclassified/promoted as the pixel-owned recovery source, or whether A002 must be rebuilt from the approved A02 source template with a new strict-pixel method and gate.
+The next Core-valid task is to draft the A002 A21 handoff plan for Flamestrike approval.
 
-No rebuild, import, map repair, visual capture, or asset status advancement is authorized by this quarantine record.
+No rebuild, copy, rename, import, map repair, visual capture, or asset status advancement is authorized by this recovery status record.

@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A002 Reset Resume State
 
-Status: `Core Recovery; A002 analytic proof-shell dataset quarantined; production blocked`
+Status: `Core Recovery; A21 strict-pixel recovery authority approved; production blocked before handoff plan`
 
 Date: 2026-07-05
 
@@ -34,6 +34,7 @@ Current status:
 - A002 active generated DCC source/export/Unreal Content outputs have been moved out of active production locations.
 - The Phase 7D capture is `proof only; rejected visual evidence`.
 - `Content/Aerathea/Maps/L_Aerathea_Startup.umap` is `tainted/mixed local map state`; it was not moved.
+- A21 is approved as the strict-pixel recovery authority for A002 planning.
 - A002 has no valid active DCC game-ready candidate.
 - A002 has no valid active Unreal import candidate.
 - A002 is not `Fully game-ready`.
@@ -67,9 +68,9 @@ Strongest local strict-pixel evidence:
 
 A21 status:
 
-- `reference/candidate recovery evidence only`
+- `approved recovery authority for A002 strict-pixel recovery planning`
 - strict gate PASS
-- not promoted to A002 authority by the quarantine action
+- not yet copied, renamed, rebuilt, imported, or visually approved as A002
 
 A24 status:
 
@@ -85,19 +86,22 @@ Read in this order:
 3. `docs/projects/assetforge/DRIFT_LEDGER.md`
 4. `Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A002/CoreRecovery/20260705_Phase3_AnalyticProofShellDataset_Quarantine/QUARANTINE_MANIFEST.md`
 5. `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A02_StrictPixelA21/SM_GIA_BloodAxeCairnstone_A02_StrictPixelA21_3D_GAME_ASSET_BLUEPRINT.md`
+6. `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A002/SM_GIA_BloodAxeCairnstone_A002_RECOVERY_AUTHORITY_20260705_A21_STRICT_PIXEL.md`
 
 ## Next Core-Valid Step
 
-Stop before production.
+Stop before production file actions.
 
-The next task is to draft a recovery contract for Flamestrike approval. That contract must decide whether A02 StrictPixelA21 is reclassified/promoted for A002 recovery, or whether A002 must be rebuilt from the approved A02 source template with a new strict-pixel method and gate.
+The next task is to draft the A002 A21 handoff plan for Flamestrike approval.
+
+That plan must decide exactly how A21 becomes a working A002 production package without losing evidence lineage.
 
 ## Hard Boundaries
 
-Do not do any of the following until Flamestrike approves a new recovery contract:
+Do not do any of the following until Flamestrike approves the A21 handoff plan:
 
 - rebuild A002 geometry
-- promote A21 or any A02 output to A002 authority
+- copy, rename, or move A21 files
 - edit Unreal Content or maps
 - run Blender generation
 - export FBX
