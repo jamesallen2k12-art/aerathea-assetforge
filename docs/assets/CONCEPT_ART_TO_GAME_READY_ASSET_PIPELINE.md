@@ -1,6 +1,6 @@
 # Concept Art to Game-Ready Asset Pipeline
 
-Last updated: 2026-06-30
+Last updated: 2026-07-04
 
 Source intake: `/home/Flamestrike/Downloads/CONCEPT_ART_TO_GAME_READY_ASSET_PIPELINE.md`
 
@@ -78,6 +78,54 @@ When only one view exists:
 - Use camera projection only as a source-view fidelity tool, not as a substitute for full 3D design.
 
 For simple static props, a single-image concept can produce a DCC game-ready candidate, but Unreal import and side/back approval are still required before full game-ready status.
+
+## Pixel-Measured Mesh Rule
+
+When an asset is built from calibrated scanline pixels or multi-view measured reference images, do not average panel measurements to hide disagreement between views.
+
+- Convert each source edge from pixels to centimeters using that view's calibration.
+- Preserve explicit source measurements for visible panels wherever a source view owns that edge.
+- When adjacent views disagree at a shared corner, use a documented selection rule such as the outer measured min/max envelope, an approved source-priority edge, or a tagged inferred hidden-contact fill.
+- Do not use cross-panel averaged width/depth profiles, smoothing, stretch strips, or detached projection shells as a final fix for visible seams.
+- Record any selected edge rule in the build manifest and keep hidden or missing geometry tagged as inferred.
+
+## Strict Pixel-Perfect Gate Rule
+
+When a pass is intended to be pixel-perfect, validation is mandatory before visual approval.
+
+Run an asset-specific geometry/color audit, then run:
+
+```bash
+python3 Tools/DCC/strict_pixel_asset_gate.py \
+  --audit path/to/ASSET_GeometryColorGuidanceAudit.json \
+  --generator path/to/build_asset.py \
+  --out path/to/ASSET_StrictPixelGate.json
+```
+
+If the gate fails, the pass is not review-ready. Do not present proof renders as approval images until the blocking checks are fixed.
+
+The gate must fail on:
+
+- non-exact scanline evidence;
+- visible source pixels that do not match exported visible texture pixels;
+- Lanczos, bicubic, bilinear, or other filtered resampling on visible canon pixels;
+- lit/material preview color drift when the task is color proofing;
+- visible contact gaps, unapproved center offsets, or unapproved yaw/pitch/roll offsets between assembled pieces;
+- measured contours replaced by analytic approximations such as ellipses or superellipses;
+- fallback clamps, nearby-row search, smoothing, or averaging on visible measured geometry;
+- stretch strips or detached shells used as final visible seam fixes.
+
+Hidden-contact geometry, occluded faces, and missing pedestal fill may use tagged inference or sample-based synthesis, but those surfaces must be named in the manifest and kept separate from visible canon measurements.
+
+## Multi-Part Registration Mark Rule
+
+When a source template contains multiple physical asset pieces that must be reassembled into one 3D asset, add hidden, review-only, or non-shipping registration marks before scan capture.
+
+- Give each physical piece its own registration identity, such as base, central stone, top plate, trim ring, cloth wrap, socketed prop, or hidden contact patch.
+- Include orientation marks for front, back, left, right, top, and any intended yaw offset between pieces.
+- Place marks where they can be read by the reconstruction workflow but removed, masked, or assigned to a non-rendering helper layer before final art.
+- Use the marks to verify piece-to-piece orientation before welding, boolean joining, texture baking, or atlas packing.
+- If registration marks are missing, treat cross-piece yaw, offsets, and hidden contact geometry as inferred until Flamestrike approves the assembly.
 
 ## Required Asset Brief
 

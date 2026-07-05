@@ -1,0 +1,23 @@
+{
+  "format": "AET_RGB_SCANLINE_V1",
+  "asset_id": "REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate",
+  "source": "docs/assets/reference/bloodaxe_cairnstone_asset/REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate.png",
+  "target_image": "docs/assets/reference/bloodaxe_cairnstone_asset/ScanlineCapture/REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate_ScanTarget.png",
+  "scan_record": "docs/assets/reference/bloodaxe_cairnstone_asset/ScanlineCapture/REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate.rgbscan.gz",
+  "rebuilt_image": "docs/assets/reference/bloodaxe_cairnstone_asset/ScanlineCapture/REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate_RebuiltFromScanlines.png",
+  "difference_image": "docs/assets/reference/bloodaxe_cairnstone_asset/ScanlineCapture/REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate_Difference.png",
+  "width": 1055,
+  "height": 1491,
+  "scanlines": 1491,
+  "rgb_bytes": 4719015,
+  "scan_sha256": "65b69c9674d6644fcae6795df01bdab55e59fc0c493a501ed7ed1baa966a3a72",
+  "target_pixel_sha256": "65b69c9674d6644fcae6795df01bdab55e59fc0c493a501ed7ed1baa966a3a72",
+  "rebuild_pixel_sha256": "65b69c9674d6644fcae6795df01bdab55e59fc0c493a501ed7ed1baa966a3a72",
+  "max_rgb_delta": 0,
+  "changed_pixels": 0,
+  "mean_grayscale_delta": 0.0,
+  "first_row_sha256": "67d9634f82ac9404c6b23e97b9349c670c8f616a75e1a7d69f0a5b578abab84e",
+  "middle_row_sha256": "18357a729e12ff23b6027e50c9d02794e1ccc4b9fb27088511625be4dcfb98a1",
+  "last_row_sha256": "1b259f74634d2d37f1c6333544dfd7e82c5ab6d65541f636cc00ea4f4bf5ab94",
+  "pixel_exact": true
+}

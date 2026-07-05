@@ -661,3 +661,813 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260704-012207/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260704-012207/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 09:14:26 EDT -0400 - post P18 perspective inference pass
+
+- Snapshot: `Saved/ProjectRecovery/20260704-091426/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `3`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-091426/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-091426/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-091426/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 09:18:26 EDT -0400 - post readable P18 perspective exports
+
+- Snapshot: `Saved/ProjectRecovery/20260704-091826/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `7`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-091826/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-091826/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-091826/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 09:23:10 EDT -0400 - post clean P18 perspective poster export
+
+- Snapshot: `Saved/ProjectRecovery/20260704-092310/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `8`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-092310/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-092310/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-092310/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 10:00:14 EDT -0400 - pre P13 based perspective inference pass
+
+- Snapshot: `Saved/ProjectRecovery/20260704-100014/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `11`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-100014/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-100014/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-100014/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 10:07:51 EDT -0400 - post P13 based perspective inference pass
+
+- Snapshot: `Saved/ProjectRecovery/20260704-100751/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `15`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-100751/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-100751/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-100751/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 10:13:52 EDT -0400 - pre P19 rectified plane perspective pass
+
+- Snapshot: `Saved/ProjectRecovery/20260704-101352/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `15`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-101352/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-101352/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-101352/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 10:23:34 EDT -0400 - post P19 rectified plane perspective pass
+
+- Snapshot: `Saved/ProjectRecovery/20260704-102334/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `19`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-102334/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-102334/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-102334/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 10:34:14 EDT -0400 - pre P20 progressive perspective layer set
+
+- Snapshot: `Saved/ProjectRecovery/20260704-103414/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `19`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-103414/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-103414/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-103414/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 10:39:40 EDT -0400 - post P20 progressive perspective layer set
+
+- Snapshot: `Saved/ProjectRecovery/20260704-103940/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `30`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-103940/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-103940/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-103940/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 10:48:13 EDT -0400 - pre P21 tiled interferometer perspective pass
+
+- Snapshot: `Saved/ProjectRecovery/20260704-104813/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `30`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-104813/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-104813/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-104813/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 10:58:31 EDT -0400 - post P21 tiled interferometer perspective pass
+
+- Snapshot: `Saved/ProjectRecovery/20260704-105831/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `37`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-105831/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-105831/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-105831/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 11:00:45 EDT -0400 - pre P22 scanline color reconstruction pass
+
+- Snapshot: `Saved/ProjectRecovery/20260704-110045/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `37`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-110045/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-110045/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-110045/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 11:32:56 EDT -0400 - post scanline skill update and cairnstone template capture
+
+- Snapshot: `Saved/ProjectRecovery/20260704-113256/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `57`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-113256/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-113256/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-113256/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 11:54:19 EDT -0400 - pre cairnstone A02 measured DCC build
+
+- Snapshot: `Saved/ProjectRecovery/20260704-115419/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `57`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-115419/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-115419/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-115419/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 12:05:49 EDT -0400 - post cairnstone A02 DCC game-ready candidate build
+
+- Snapshot: `Saved/ProjectRecovery/20260704-120549/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `61`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-120549/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-120549/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-120549/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 12:18:17 EDT -0400 - pre cairnstone A02 pixel-measured remake
+
+- Snapshot: `Saved/ProjectRecovery/20260704-121817/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `61`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-121817/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-121817/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-121817/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 12:26:05 EDT -0400 - post cairnstone A02 PixelMeasuredA03 image remake
+
+- Snapshot: `Saved/ProjectRecovery/20260704-122605/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `62`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-122605/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-122605/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-122605/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 12:31:33 EDT -0400 - pre cairnstone A02 PixelMeasuredA03 3D rebuild
+
+- Snapshot: `Saved/ProjectRecovery/20260704-123133/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `62`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-123133/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-123133/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-123133/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 12:41:09 EDT -0400 - post cairnstone A02 PixelMeasuredA03 3D rebuild
+
+- Snapshot: `Saved/ProjectRecovery/20260704-124109/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `66`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-124109/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-124109/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-124109/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 12:53:59 EDT -0400 - pre cairnstone A04 pixel polygon formula pass
+
+- Snapshot: `Saved/ProjectRecovery/20260704-125359/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `66`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-125359/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-125359/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-125359/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 13:08:38 EDT -0400 - post cairnstone A04 pixel polygon formula pass
+
+- Snapshot: `Saved/ProjectRecovery/20260704-130838/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `70`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-130838/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-130838/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-130838/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 13:15:00 EDT -0400 - pre cairnstone A05 pixel seam resolve pass
+
+- Snapshot: `Saved/ProjectRecovery/20260704-131500/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `70`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-131500/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-131500/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-131500/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 13:26:08 EDT -0400 - pre cairnstone A06 seam stretch pass
+
+- Snapshot: `Saved/ProjectRecovery/20260704-132608/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `74`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-132608/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-132608/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-132608/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 13:35:29 EDT -0400 - post cairnstone A06 seam stretch pass
+
+- Snapshot: `Saved/ProjectRecovery/20260704-133529/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `78`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-133529/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-133529/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-133529/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 13:44:15 EDT -0400 - pre cairnstone A07 welded atlas pass
+
+- Snapshot: `Saved/ProjectRecovery/20260704-134415/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `78`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-134415/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-134415/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-134415/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 14:02:33 EDT -0400 - post cairnstone A07 welded atlas cap correction
+
+- Snapshot: `Saved/ProjectRecovery/20260704-140233/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `82`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-140233/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-140233/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-140233/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 14:06:14 EDT -0400 - pre cairnstone A07 top plate correction
+
+- Snapshot: `Saved/ProjectRecovery/20260704-140614/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `82`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-140614/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-140614/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-140614/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 14:19:32 EDT -0400 - post cairnstone A07 top plate correction
+
+- Snapshot: `Saved/ProjectRecovery/20260704-141932/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `82`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-141932/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-141932/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-141932/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 14:26:13 EDT -0400 - pre A08 no-average corner-profile cairnstone integration
+
+- Snapshot: `Saved/ProjectRecovery/20260704-142613/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `83`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-142613/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-142613/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-142613/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 14:30:25 EDT -0400 - post A08 no-average corner-profile cairnstone integration
+
+- Snapshot: `Saved/ProjectRecovery/20260704-143025/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `86`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-143025/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-143025/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-143025/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 14:33:25 EDT -0400 - pre A09 no-average measured-envelope cairnstone integration
+
+- Snapshot: `Saved/ProjectRecovery/20260704-143325/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `87`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-143325/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-143325/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-143325/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 14:36:46 EDT -0400 - post A09 measured-envelope cairnstone integration
+
+- Snapshot: `Saved/ProjectRecovery/20260704-143646/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `90`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-143646/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-143646/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-143646/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 14:43:11 EDT -0400 - pre A10 split base monolith orientation cairnstone integration
+
+- Snapshot: `Saved/ProjectRecovery/20260704-144311/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `92`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-144311/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-144311/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-144311/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 14:49:09 EDT -0400 - pre A11 split orientation monolith footprint clamp cairnstone integration
+
+- Snapshot: `Saved/ProjectRecovery/20260704-144909/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `96`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-144909/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-144909/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-144909/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 15:01:04 EDT -0400 - pre A12 base rotated 90 to axe stone cairnstone integration
+
+- Snapshot: `Saved/ProjectRecovery/20260704-150104/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `100`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-150104/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-150104/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-150104/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 15:08:29 EDT -0400 - post A12 base rotated 90 to axe stone cairnstone review
+
+- Snapshot: `Saved/ProjectRecovery/20260704-150829/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `103`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-150829/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-150829/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-150829/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 15:09:00 EDT -0400 - pre A13 base90 contact fill cairnstone integration
+
+- Snapshot: `Saved/ProjectRecovery/20260704-150900/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `103`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-150900/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-150900/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-150900/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 15:11:39 EDT -0400 - pre A14 fresh axe-frame cairnstone rebuild
+
+- Snapshot: `Saved/ProjectRecovery/20260704-151139/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `104`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-151139/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-151139/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-151139/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 15:22:26 EDT -0400 - post A14 fresh axe-frame cairnstone baseline
+
+- Snapshot: `Saved/ProjectRecovery/20260704-152226/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `108`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-152226/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-152226/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-152226/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 15:27:20 EDT -0400 - pre A15 pixel-scanned top registration cairnstone rebuild
+
+- Snapshot: `Saved/ProjectRecovery/20260704-152720/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `108`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-152720/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-152720/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-152720/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 15:41:38 EDT -0400 - post A15 pixel-scanned top center correction cairnstone
+
+- Snapshot: `Saved/ProjectRecovery/20260704-154138/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `112`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-154138/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-154138/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-154138/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 15:49:50 EDT -0400 - pre A16 untwisted pedestal base cairnstone rebuild
+
+- Snapshot: `Saved/ProjectRecovery/20260704-154950/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `113`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-154950/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-154950/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-154950/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 15:56:42 EDT -0400 - pre A17 untwisted pedestal fixed side scans cairnstone rebuild
+
+- Snapshot: `Saved/ProjectRecovery/20260704-155642/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `117`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-155642/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-155642/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-155642/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 15:59:33 EDT -0400 - post A17 untwisted pedestal fixed side scans cairnstone review
+
+- Snapshot: `Saved/ProjectRecovery/20260704-155933/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `120`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-155933/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-155933/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-155933/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 16:02:43 EDT -0400 - pre clean pixel-perfect cairnstone rebuild from original scans
+
+- Snapshot: `Saved/ProjectRecovery/20260704-160243/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `120`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-160243/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-160243/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-160243/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 16:14:19 EDT -0400 - pre A18 corrected annular contact rerun
+
+- Snapshot: `Saved/ProjectRecovery/20260704-161419/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `124`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-161419/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-161419/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-161419/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 16:19:28 EDT -0400 - pre base-only 180 orientation test cairnstone
+
+- Snapshot: `Saved/ProjectRecovery/20260704-161928/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `125`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-161928/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-161928/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-161928/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 16:30:14 EDT -0400 - pre A20 fresh data only cairnstone rebuild
+
+- Snapshot: `Saved/ProjectRecovery/20260704-163014/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `128`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-163014/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-163014/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-163014/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 16:44:19 EDT -0400 - post A20 fresh data only cairnstone rebuild
+
+- Snapshot: `Saved/ProjectRecovery/20260704-164419/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `132`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-164419/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-164419/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-164419/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 16:48:03 EDT -0400 - pre A20 geometry color audit
+
+- Snapshot: `Saved/ProjectRecovery/20260704-164803/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `132`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-164803/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-164803/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-164803/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 16:54:58 EDT -0400 - post A20 geometry color guidance audit
+
+- Snapshot: `Saved/ProjectRecovery/20260704-165458/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `133`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-165458/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-165458/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-165458/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 17:01:07 EDT -0400 - pre A21 strict pixel asset rebuild
+
+- Snapshot: `Saved/ProjectRecovery/20260704-170107/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `134`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-170107/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-170107/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-170107/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 17:33:42 EDT -0400 - pre A21 Blueprint-compliant cairnstone build
+
+- Snapshot: `Saved/ProjectRecovery/20260704-173342/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `136`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-173342/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-173342/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-173342/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 17:53:31 EDT -0400 - before A22 exterior-weld cairnstone rebuild
+
+- Snapshot: `Saved/ProjectRecovery/20260704-175331/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `143`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-175331/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-175331/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-175331/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 17:58:31 EDT -0400 - before corrected A22 texture-fill rebuild
+
+- Snapshot: `Saved/ProjectRecovery/20260704-175831/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `146`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-175831/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-175831/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-175831/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 18:02:21 EDT -0400 - before A22 material-mask texture-fill rebuild
+
+- Snapshot: `Saved/ProjectRecovery/20260704-180221/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `146`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-180221/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-180221/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-180221/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 18:18:33 EDT -0400 - before A23 exterior-push rebuild
+
+- Snapshot: `Saved/ProjectRecovery/20260704-181833/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `148`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-181833/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-181833/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-181833/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 18:36:19 EDT -0400 - before A24 view-owned all-angle rebuild
+
+- Snapshot: `Saved/ProjectRecovery/20260704-183619/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `153`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-183619/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-183619/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-183619/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 18:39:05 EDT -0400 - before A24 view-owned verifier rebuild rerun
+
+- Snapshot: `Saved/ProjectRecovery/20260704-183905/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `156`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-183905/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-183905/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-183905/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 18:40:36 EDT -0400 - before A24 final top ownership rerun
+
+- Snapshot: `Saved/ProjectRecovery/20260704-184036/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `156`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-184036/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-184036/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-184036/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 19:07:57 EDT -0400 - before A25 no-copied-support-layer rebuild
+
+- Snapshot: `Saved/ProjectRecovery/20260704-190757/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `158`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-190757/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-190757/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-190757/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 19:10:43 EDT -0400 - after A25 no-copied-support-layer gate pass
+
+- Snapshot: `Saved/ProjectRecovery/20260704-191043/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `161`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-191043/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-191043/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-191043/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 19:18:05 EDT -0400 - before A26 clean restart fresh original rebuild
+
+- Snapshot: `Saved/ProjectRecovery/20260704-191805/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `163`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-191805/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-191805/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-191805/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 19:34:19 EDT -0400 - Before BloodAxe cairnstone A001 clean slate rebuild
+
+- Snapshot: `Saved/ProjectRecovery/20260704-193419/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `166`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-193419/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-193419/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-193419/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 19:55:01 EDT -0400 - Before deleting contaminated A001 and restarting from Blueprint
+
+- Snapshot: `Saved/ProjectRecovery/20260704-195501/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `169`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-195501/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-195501/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-195501/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 20:00:06 EDT -0400 - After A001 Blueprint restart source proof
+
+- Snapshot: `Saved/ProjectRecovery/20260704-200006/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `168`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-200006/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-200006/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-200006/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 20:06:08 EDT -0400 - After A001 orientation pixels marked before decomposition
+
+- Snapshot: `Saved/ProjectRecovery/20260704-200608/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `169`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-200608/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-200608/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-200608/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 20:14:48 EDT -0400 - After A001 formula archive and measurement masks
+
+- Snapshot: `Saved/ProjectRecovery/20260704-201448/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `170`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-201448/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-201448/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-201448/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 20:35:38 EDT -0400 - Before A001 source-derived snap anchor evidence pass
+
+- Snapshot: `Saved/ProjectRecovery/20260704-203538/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `170`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-203538/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-203538/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-203538/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 20:54:48 EDT -0400 - After A001 pixel-count centers and source-derived snap anchor evidence
+
+- Snapshot: `Saved/ProjectRecovery/20260704-205448/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `172`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-205448/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-205448/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-205448/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 21:09:05 EDT -0400 - After corrected A001 reviewed primary contour evidence
+
+- Snapshot: `Saved/ProjectRecovery/20260704-210905/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `173`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-210905/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-210905/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-210905/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 21:30:44 EDT -0400 - After A001 shared-origin radial perimeter evidence
+
+- Snapshot: `Saved/ProjectRecovery/20260704-213044/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `175`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-213044/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-213044/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-213044/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 21:38:59 EDT -0400 - After A001 oval footprint ratio proof
+
+- Snapshot: `Saved/ProjectRecovery/20260704-213859/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `176`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-213859/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-213859/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-213859/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 21:50:37 EDT -0400 - After A001 oval approval and contact interface hard gate
+
+- Snapshot: `Saved/ProjectRecovery/20260704-215037/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `177`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-215037/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-215037/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-215037/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 22:08:55 EDT -0400 - After A001 layered contact formula candidate
+
+- Snapshot: `Saved/ProjectRecovery/20260704-220855/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `178`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-220855/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-220855/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-220855/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 22:18:34 EDT -0400 - After A001 layered contact approval and surface marker evidence
+
+- Snapshot: `Saved/ProjectRecovery/20260704-221834/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `178`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-221834/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-221834/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-221834/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 22:25:37 EDT -0400 - After A001 pre-geometry hard audit passed
+
+- Snapshot: `Saved/ProjectRecovery/20260704-222537/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `179`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-222537/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-222537/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-222537/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 22:32:16 EDT -0400 - After A001 geometry construction plan candidate
+
+- Snapshot: `Saved/ProjectRecovery/20260704-223216/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `181`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-223216/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-223216/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-223216/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 22:33:57 EDT -0400 - Before A001 DCC source candidate geometry proof
+
+- Snapshot: `Saved/ProjectRecovery/20260704-223357/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `181`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-223357/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-223357/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-223357/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 22:42:46 EDT -0400 - A001 DCC geometry proof generated and review board opened
+
+- Snapshot: `Saved/ProjectRecovery/20260704-224246/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `184`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-224246/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-224246/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-224246/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-04 22:45:29 EDT -0400 - End of session save after A001 DCC geometry proof
+
+- Snapshot: `Saved/ProjectRecovery/20260704-224529/`
+- Git: branch `main`, HEAD `0c7bbc3`, status lines `184`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260704-224529/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260704-224529/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260704-224529/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

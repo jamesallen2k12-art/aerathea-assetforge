@@ -1,4 +1,4 @@
 interface:
   display_name: "Aerathea DCC Modeling Prep"
-  short_description: "Prepare Blender blockouts and exports."
-  default_prompt: "Use this skill to create Blender blockout scripts, source folders, FBX export plans, scale checks, proof renders, and DCC validation notes for Aerathea."
+  short_description: "Prepare Blender work with scanline-backed image intake."
+  default_prompt: "Use this skill to run lossless scanline image capture, create Blender blockout scripts, source folders, FBX export plans, scale checks, proof renders, and DCC validation notes for Aerathea."

@@ -1,4 +1,4 @@
 interface:
   display_name: "Aerathea Visual Art Direction"
-  short_description: "Clean concepts and lock readable art direction."
-  default_prompt: "Use this skill to cleanse Aerathea references, reduce noise, lock silhouettes, and prepare visual direction for production."
+  short_description: "Clean concepts with scanline-backed reference intake."
+  default_prompt: "Use this skill to run scanline-backed raster reference intake, cleanse Aerathea references, reduce noise, lock silhouettes, and prepare visual direction for production."
