@@ -24,6 +24,20 @@ Core authority: `AGENTS.md` Core Principles govern this ledger. Drifted artifact
 
 ## Entries
 
+### 2026-07-05 19:20 EDT - A002 Phase 7D Capture Visual Match Block
+
+- Asset or scope: `SM_GIA_BloodAxeCairnstone_A002` Phase 7D startup review capture and Phase 7C Unreal import candidate visual-readiness gate.
+- Detected by: Codex inspection of `Saved/Automation/StartupReview/AeratheaStartupReview_BloodAxeCairnstone_A002_Phase7D.png` against the recovered Phase 6C DCC game-ready angle/front proof renders.
+- Last known Core-valid state: recovered Phase 6C DCC audit and FBX geometry proof passed; Phase 7C Unreal import, placement, and focused technical validator passed for presence, LODs, simple collision, materials, actor placement, and metadata.
+- First drift action: Phase 7D offscreen startup capture produced a framed, non-empty image that does not visually match the DCC proof/source authority closely enough for review presentation.
+- Assumption or interpretation that caused drift: Phase 7C technical validation was treated as sufficient evidence that the rendered Unreal capture would match the DCC proof; the validator did not prove rendered material/camera/asset match.
+- Affected outputs: `Saved/Automation/StartupReview/AeratheaStartupReview_BloodAxeCairnstone_A002_Phase7D.png`; Phase 7C Unreal Static Mesh/material package as a visual-review candidate; Phase 7C validation scope as a review-readiness authority.
+- Artifact statuses: Phase 7D capture PNG is `proof only; blocked evidence`; Phase 7C Unreal import candidate is `candidate; visual-match recovery required before review`; recovered Phase 6C DCC package remains `DCC game-ready candidate`; final visual approval remains `pending`; A002 remains not `Fully game-ready`.
+- Quarantined locations or records: blocked capture is preserved in place and recorded in `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A002/SM_GIA_BloodAxeCairnstone_A002_PHASE_7D_STARTUP_REVIEW_CAPTURE_BLOCKED_RECORD.md`; A002 local recovery status reopened in `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A002/SM_GIA_BloodAxeCairnstone_A002_CORE_RECOVERY_STATUS_20260705_PHASE6C_EMPTY_FBX.md`.
+- Recovery decision: blocked pending Flamestrike approval. Proposed smallest sufficient recovery is to inspect the A002 Unreal material/rendered mesh state against the recovered DCC proof and approved source template, identify whether the mismatch is material graph, slot assignment, import, camera targeting, or DCC handoff, then correct only the confirmed cause and strengthen the Phase 7 validator/readiness gate.
+- Flamestrike approval: pending.
+- Follow-up Core/Kaizen improvement: Phase 7 visual-readiness gates must include rendered capture/DCC-proof comparison before a capture can be presented as review-ready.
+
 ### 2026-07-05 19:04 EDT - A002 Phase 6C Empty Visual FBX False Pass
 
 - Asset or scope: `SM_GIA_BloodAxeCairnstone_A002` Phase 6C DCC game-ready exports and Phase 7C Unreal import attempt.
@@ -34,9 +48,9 @@ Core authority: `AGENTS.md` Core Principles govern this ledger. Drifted artifact
 - Affected outputs: Phase 6C visual FBXs `SM_GIA_BloodAxeCairnstone_A002_DCCGameReady_A01.fbx`, `_LOD0.fbx`, `_LOD1.fbx`, `_LOD2.fbx`, `_LOD3.fbx`; Phase 6C manifest/audit/handoff and output record claims about valid FBX exports; Phase 7C partial Unreal texture/material assets created before Static Mesh import failure.
 - Artifact statuses: Phase 5D output remains `authoritative` for the pre-FBX DCC source; Phase 6A plan remains `authoritative`; Phase 6B scripts are `candidate` and require correction; Phase 6C visual FBX exports are `invalid`; Phase 6C UCX FBX is `partial/reference only`; Phase 6C audit and output record are `quarantined as FBX-validity authority`; Phase 7B Unreal scripts are `candidate`; Phase 7C partial Unreal texture/material assets are `quarantined` in place and not asset authority.
 - Quarantined locations or records: recorded in `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A002/SM_GIA_BloodAxeCairnstone_A002_CORE_RECOVERY_STATUS_20260705_PHASE6C_EMPTY_FBX.md`; files are preserved in place pending approved recovery.
-- Recovery decision: pending Flamestrike approval. Proposed smallest sufficient recovery is to correct the Phase 6 generator to export visible visual LOD meshes, correct the Phase 6 audit to re-import or otherwise prove FBX mesh/triangle contents, rerun Phase 6C, then rerun Phase 7C only after the recovered DCC audit passes.
-- Flamestrike approval: pending.
-- Follow-up Core/Kaizen improvement: all future FBX-producing DCC audits must prove imported mesh contents and triangle counts, not only file presence and size.
+- Recovery decision: completed through technical Unreal validation. The invalid Phase 6C FBXs were preserved under `Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A002/CoreRecovery/20260705_Phase6C_EmptyFBX_Quarantine/`; the Phase 6 generator and audit were corrected; recovered Phase 6C audit passed with imported FBX mesh/triangle proof; Phase 7C Unreal import, placement, and validation passed.
+- Flamestrike approval: `approved` on 2026-07-05 for the recovery sequence: fix Phase 6 export/audit, rerun Phase 6C, then retry Phase 7C only after recovered audit pass.
+- Follow-up Core/Kaizen improvement: all future FBX-producing DCC audits must prove imported mesh contents and triangle counts, not only file presence and size. A002 Phase 6 audit now performs this check.
 
 ### 2026-07-05 17:43 EDT - A001 Drift Quarantine And A002 Clean Restart
 

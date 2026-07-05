@@ -52,6 +52,7 @@ PROOF_EXPECTED = (
     "CollisionProxyProof",
 )
 MATERIAL_SLOTS = ("M_A002_SourceTemplate_Closest", "M_A002_TaggedInferredHidden_Neutral")
+VISUAL_FBX_KEYS = ("LOD0", "LOD0_named", "LOD1", "LOD2", "LOD3")
 COMPONENT_OBJECTS = {
     "primary_monolith": "SM_GIA_BloodAxeCairnstone_A002_PrimaryMonolith",
     "upper_socket_ring": "SM_GIA_BloodAxeCairnstone_A002_UpperSocketRing",
@@ -167,7 +168,39 @@ def audit_manifest(manifest: dict[str, object], phase5_audit: dict[str, object],
             failures.append(f"Collision proxy has invalid UCX name: {name}")
 
 
-def audit_files(manifest: dict[str, object], failures: list[str]) -> None:
+def delete_objects(objects: list[bpy.types.Object]) -> None:
+    for obj in objects:
+        bpy.data.objects.remove(obj, do_unlink=True)
+
+
+def audit_fbx_geometry(path: Path, key: str, failures: list[str]) -> dict[str, object]:
+    before_names = set(bpy.data.objects.keys())
+    try:
+        bpy.ops.import_scene.fbx(filepath=str(path))
+    except Exception as exc:
+        failures.append(f"FBX import failed for {key}: {relative(path)} ({exc})")
+        return {"key": key, "path": relative(path), "mesh_count": 0, "triangles": 0, "status": "import_failed"}
+
+    imported = [obj for obj in bpy.data.objects if obj.name not in before_names]
+    imported_meshes = [obj for obj in imported if obj.type == "MESH"]
+    triangles = sum(mesh_triangle_count(obj) for obj in imported_meshes)
+    report = {
+        "key": key,
+        "path": relative(path),
+        "mesh_count": len(imported_meshes),
+        "triangles": triangles,
+        "status": "pass" if imported_meshes and triangles > 0 else "fail",
+    }
+    if not imported_meshes:
+        failures.append(f"FBX {key} imported no mesh objects: {relative(path)}")
+    elif triangles <= 0:
+        failures.append(f"FBX {key} imported mesh objects but zero triangles: {relative(path)}")
+    delete_objects(imported)
+    return report
+
+
+def audit_files(manifest: dict[str, object], failures: list[str]) -> list[dict[str, object]]:
+    fbx_reports: list[dict[str, object]] = []
     if not HANDOFF_REPORT.exists():
         failures.append(f"Missing handoff report: {relative(HANDOFF_REPORT)}")
     fbx_exports = manifest.get("fbx_exports", {})
@@ -180,6 +213,10 @@ def audit_files(manifest: dict[str, object], failures: list[str]) -> None:
         path = ROOT / path_value
         if not path.exists():
             failures.append(f"Missing FBX export file: {path_value}")
+        elif path.stat().st_size <= 0:
+            failures.append(f"Empty FBX export file: {path_value}")
+        elif key in VISUAL_FBX_KEYS:
+            fbx_reports.append(audit_fbx_geometry(path, key, failures))
     proof_paths = set(manifest.get("proof_renders", []))
     for label in PROOF_EXPECTED:
         expected = relative(AUTOMATION_ROOT / "ProofRenders" / f"{ASSET_ID}_DCCGameReady_{label}.png")
@@ -194,6 +231,7 @@ def audit_files(manifest: dict[str, object], failures: list[str]) -> None:
     for path in blocked_unreal_paths:
         if path.exists():
             failures.append(f"Blocked Unreal output exists: {relative(path)}")
+    return fbx_reports
 
 
 def main() -> int:
@@ -201,15 +239,17 @@ def main() -> int:
     phase5_audit = read_json(PHASE5_AUDIT, failures)
     manifest = read_json(BUILD_MANIFEST, failures)
     component_reports = audit_component_objects(failures)
+    fbx_reports: list[dict[str, object]] = []
     if manifest:
         audit_manifest(manifest, phase5_audit, failures)
-        audit_files(manifest, failures)
+        fbx_reports = audit_files(manifest, failures)
     report = {
         "asset_id": ASSET_ID,
         "package_id": PACKAGE_ID,
         "status": "pass" if not failures else "fail",
         "candidate_blend": relative(CANDIDATE_BLEND),
         "component_reports": component_reports,
+        "fbx_geometry_reports": fbx_reports,
         "manifest": relative(BUILD_MANIFEST),
         "handoff_report": relative(HANDOFF_REPORT),
         "failures": failures,

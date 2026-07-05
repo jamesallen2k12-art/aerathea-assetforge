@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A002 Core Recovery Status - Phase 6C Empty FBX
 
-Status: `Core Recovery block; Phase 6C FBX validity false pass`
+Status: `Core Recovery reopened at Phase 7D visual capture mismatch`
 
 Date: 2026-07-05
 
@@ -102,10 +102,48 @@ Proposed recovery sequence:
 4. Record a recovery Phase 6C output only if the corrected audit passes.
 5. Rerun Phase 7C import, placement, and validation only after recovered Phase 6C passes.
 
-## Current Decision Need
+## Recovery Completion
 
-Flamestrike approval is required before repair work continues.
+Flamestrike approved the proposed recovery sequence on 2026-07-05.
 
-Approval question:
+Completed recovery:
 
-Approve the proposed A002 Core Recovery sequence to repair Phase 6C FBX export/audit and rerun Phase 6C before retrying Phase 7C?
+- invalid Phase 6C FBXs preserved under `Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A002/CoreRecovery/20260705_Phase6C_EmptyFBX_Quarantine/`
+- Phase 6 generator corrected
+- Phase 6 audit strengthened to prove visual FBX mesh/triangle contents
+- recovered Phase 6C audit passed
+- Phase 7C Unreal import, startup placement, and validation passed
+
+Current status:
+
+- A002 is an `Unreal import candidate`
+- final visual approval remains pending
+- A002 is not `Fully game-ready`
+
+## Phase 7D Recovery Reopen
+
+Phase 7D startup review capture was attempted after Phase 7C technical validation passed.
+
+Blocked capture:
+
+- `Saved/Automation/StartupReview/AeratheaStartupReview_BloodAxeCairnstone_A002_Phase7D.png`
+
+Blocked record:
+
+- `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A002/SM_GIA_BloodAxeCairnstone_A002_PHASE_7D_STARTUP_REVIEW_CAPTURE_BLOCKED_RECORD.md`
+
+Reason:
+
+- the capture is framed and non-empty, but it does not match the recovered DCC game-ready proof/source authority closely enough to present for visual approval
+- Phase 7C technical validation proved presence, LODs, collision, materials, placement, and metadata, but did not prove rendered visual match against the DCC proof
+
+Current status after Phase 7D:
+
+- Phase 7D capture PNG is `proof only; blocked evidence`
+- Phase 7C Unreal import candidate is `candidate; visual-match recovery required before review`
+- final visual approval remains pending
+- A002 is not `Fully game-ready`
+
+Recovery need:
+
+- Flamestrike approval is required before any Phase 7D repair, second import, second placement, validator change, or second review capture.

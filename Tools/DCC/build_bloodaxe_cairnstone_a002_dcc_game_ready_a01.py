@@ -268,16 +268,34 @@ def select_only(objects: list[bpy.types.Object]) -> None:
 
 def export_fbx(path: Path, objects: list[bpy.types.Object]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    select_only(objects)
-    bpy.ops.export_scene.fbx(
-        filepath=str(path),
-        use_selection=True,
-        apply_unit_scale=True,
-        bake_space_transform=False,
-        object_types={"MESH"},
-        add_leaf_bones=False,
-        path_mode="RELATIVE",
-    )
+    visibility_state = [(obj, obj.hide_viewport, obj.hide_render, obj.hide_get()) for obj in objects]
+    try:
+        for obj in objects:
+            obj.hide_viewport = False
+            obj.hide_render = False
+            obj.hide_set(False)
+        bpy.context.view_layer.update()
+        select_only(objects)
+        selected_meshes = [obj for obj in bpy.context.selected_objects if obj.type == "MESH"]
+        if len(selected_meshes) != len(objects):
+            selected_names = sorted(obj.name for obj in selected_meshes)
+            expected_names = sorted(obj.name for obj in objects)
+            raise RuntimeError(f"FBX export selection mismatch for {path.name}: selected={selected_names} expected={expected_names}")
+        bpy.ops.export_scene.fbx(
+            filepath=str(path),
+            use_selection=True,
+            apply_unit_scale=True,
+            bake_space_transform=False,
+            object_types={"MESH"},
+            add_leaf_bones=False,
+            path_mode="RELATIVE",
+        )
+    finally:
+        for obj, hide_viewport, hide_render, hidden in visibility_state:
+            obj.hide_viewport = hide_viewport
+            obj.hide_render = hide_render
+            obj.hide_set(hidden)
+        bpy.ops.object.select_all(action="DESELECT")
 
 
 def export_package(lod_objects: dict[str, list[bpy.types.Object]], collision_objects: list[bpy.types.Object]) -> dict[str, str]:
