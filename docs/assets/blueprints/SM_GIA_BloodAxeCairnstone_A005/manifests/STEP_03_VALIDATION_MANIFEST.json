@@ -3,7 +3,7 @@
   "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
   "step_id": "STEP_03",
   "date": "2026-07-15",
-  "status": "step_03_complete_pending_scoped_closeout",
+  "status": "step_03_complete",
   "artifact_classification": "proof only",
   "decision": "All six panel crops are exact decoded-pixel copies of their declared source regions, and Flamestrike approved their boundaries as source ownership.",
   "source": {
@@ -173,6 +173,15 @@
     "panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_RIGHT.png": "cc6c27405fbd6ea8c46b70966fe559acbd57acb88e58bfdcd6b763ce827a862e",
     "panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_TOP.png": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf"
   },
+  "final_closeout_output_hashes_before_manifest_finalization": {
+    "steps/STEP_03_CONTRACT.md": "ba3a35e32f3639d0d248b8b50a1ed19887c2e94140465048fa090718080dd151",
+    "manifests/STEP_03_PANEL_CROP_MANIFEST.json": "5d423400e1415c7e816648f703f2d04de384070813480db923303ab0709a0356",
+    "steps/STEP_03_OUTPUT_RECORD.md": "fa84e63d77d830c54d6645a2c0d6975a2bf4e9fec771ffeee753987ef4a4b924",
+    "handoffs/STEP_03_TO_STEP_04_HANDOFF.md": "b5aaad3a4f9da4197d5ebda6aece01c51332f866544fffe237ec75886713a374",
+    "SM_GIA_BloodAxeCairnstone_A005_RESET_RESUME_STATE.md": "68195d1014b4a164b3df7adfedc9a550770926b01dbc879c5220464b27e6d592",
+    "SM_GIA_BloodAxeCairnstone_A005_ARTIFACT_INDEX.md": "7f7f58935046e12e54c040fc0c0432b18e63e2d6ccc823cc05291f74784f3ba5",
+    "SM_GIA_BloodAxeCairnstone_A005_APPROVAL_LOG.md": "e7d87a57320d8db58db1c1e03108487eb00582b349fae1b00fd2e8d6ed3aaf0d"
+  },
   "manifest_self_hash_policy": "The validation-manifest SHA256 is omitted because the file contains approved package hashes and is protected by the scoped git tree.",
   "interpretation_introduced": false,
   "source_modified": false,
@@ -188,5 +197,16 @@
     "panel_crop_status": "authoritative",
     "step_04_authorized": false,
     "approved_pre_closeout_checkpoint": "Saved/ProjectRecovery/20260715-125003/"
+  },
+  "closeout": {
+    "scoped_content_commit": "2cee686",
+    "commit_message": "Lock BloodAxe Cairn Stone A005 panel decomposition",
+    "push_remote": "assetforge",
+    "push_branch": "main",
+    "push_result": "success",
+    "remote_advanced_from": "ac3be5d",
+    "remote_advanced_to": "2cee686",
+    "scoped_file_count": 15,
+    "unrelated_changes_staged": false
   }
 }

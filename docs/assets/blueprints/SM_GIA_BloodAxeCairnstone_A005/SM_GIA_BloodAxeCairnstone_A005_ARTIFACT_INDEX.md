@@ -40,7 +40,7 @@ Updated: 2026-07-15
 | `evidence/SM_GIA_BloodAxeCairnstone_A005_STEP_03_PANEL_BOUNDARY_EVIDENCE.png` | `proof only` | Source-only exact-boundary review board |
 | `manifests/STEP_03_VALIDATION_MANIFEST.json` | `proof only` | Deterministic Step 03 candidate validation evidence |
 | `steps/STEP_03_OUTPUT_RECORD.md` | `authoritative` | Approved exact panel-decomposition decision record |
-| `handoffs/STEP_03_TO_STEP_04_HANDOFF.md` | `authoritative` | Approved restart handoff pending scoped closeout |
+| `handoffs/STEP_03_TO_STEP_04_HANDOFF.md` | `authoritative` | Restart handoff after scoped content closeout |
 
 ## Legacy Classification
 

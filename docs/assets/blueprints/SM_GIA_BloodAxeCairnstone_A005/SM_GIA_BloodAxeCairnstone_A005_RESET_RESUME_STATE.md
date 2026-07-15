@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: Step 03 approved; scoped closeout pending
+Status: Step 03 complete and pushed; mandatory restart pending
 
 Artifact classification: `authoritative`
 
@@ -12,12 +12,13 @@ Flamestrike approved the Step 03 outputs on 2026-07-15 after visible review.
 Six lossless panel crops passed exact source-region validation, and their
 boundaries were approved as source ownership. Their formulas and images are
 authoritative for A005. The exact A02 source and its scanline evidence remain
-authoritative. Scoped closeout remains.
+authoritative. Scoped content commit `2cee686` was pushed to
+`assetforge/main`. A mandatory new-agent restart is now required.
 
 ## Current Step
 
 - Active decision: 03 - Exact Panel Decomposition
-- Decision: approved; scoped closeout pending
+- Decision: approved, committed, and pushed
 - Locked asset ID: `SM_GIA_BloodAxeCairnstone_A005`
 - Production status: not started
 
@@ -70,11 +71,12 @@ authoritative. Scoped closeout remains.
 - Pre-existing unrelated worktree entries remain preserved and outside scope
 - No unrelated file may be staged or committed by Step 03
 
-## Last Approved Commit And Push
+## Step 03 Commit And Push
 
-- Step 02 handoff closeout commit: `ac3be5d`
-- Push: success; current `main` synchronized with `assetforge/main`
-- Unrelated dirty files remain unstaged
+- Scoped content commit: `2cee686`
+- Push: success to `assetforge/main`
+- Remote advanced from `ac3be5d` to `2cee686`
+- Unrelated dirty files remained unstaged
 
 ## Blocked
 
@@ -88,7 +90,7 @@ authoritative. Scoped closeout remains.
 
 ## Resume Instruction
 
-Complete only the approved Step 03 scoped closeout: validate, stage, commit,
-and push the Step 03 package without unrelated worktree changes; record the
-commit and push; create the final checkpoint; then require a mandatory new-agent
-restart. Step 04 remains unauthorized.
+Restart with a new agent now. That agent must perform the Core resume handshake
+using this file, the Step 03 output record, panel and validation manifests, and
+handoff. It may present a Step 04 contract only. Step 03 approval does not
+authorize Step 04.

@@ -148,3 +148,11 @@ Updated: 2026-07-15
   remain unauthorized
 - Approved pre-closeout checkpoint:
   `Saved/ProjectRecovery/20260715-125003/`
+
+## Step 03 Scoped Content Commit And Push
+
+- Date: 2026-07-15
+- Commit: `2cee686` (`Lock BloodAxe Cairn Stone A005 panel decomposition`)
+- Push: success; `assetforge/main` advanced from `ac3be5d` to `2cee686`
+- Scoped files: fifteen A005 Step 03 records and images
+- Excluded: recovery-journal changes and every unrelated worktree change

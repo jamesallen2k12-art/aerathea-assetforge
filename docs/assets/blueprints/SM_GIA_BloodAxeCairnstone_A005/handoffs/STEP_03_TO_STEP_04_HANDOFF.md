@@ -1,6 +1,6 @@
 # Step 03 To Step 04 Handoff
 
-Status: authoritative; Step 03 approved and scoped closeout pending
+Status: authoritative; ready for mandatory restart
 
 Artifact classification: `authoritative`
 
@@ -77,12 +77,11 @@ Focused validators passed:
 
 ## Last Core-Valid State
 
-The approved Step 03 panel-decomposition package protected by
-`Saved/ProjectRecovery/20260715-125003/`. Scoped commit and push remain.
+The approved Step 03 panel-decomposition package at scoped content commit
+`2cee686`, pushed to `assetforge/main`.
 
-## Remaining Gates
+## Remaining Next-Step Gates
 
-- Step 03 scoped closeout;
 - mandatory new-agent restart;
 - separate Step 04 contract approval.
 
@@ -90,7 +89,15 @@ The approved Step 03 panel-decomposition package protected by
 
 - Step 03 pre-action checkpoint: `Saved/ProjectRecovery/20260715-123416/`;
 - validated-candidate review checkpoint:
-  `Saved/ProjectRecovery/20260715-124330/`.
+  `Saved/ProjectRecovery/20260715-124330/`;
+- approved pre-closeout checkpoint: `Saved/ProjectRecovery/20260715-125003/`.
+
+## Current Git State
+
+- Pre-Step 03 HEAD: `ac3be5d`;
+- scoped Step 03 content commit: `2cee686`;
+- push: success to `assetforge/main`;
+- pre-existing unrelated worktree changes remain outside scope.
 
 ## Proposed Next Step
 
