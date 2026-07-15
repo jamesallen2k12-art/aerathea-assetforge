@@ -1,6 +1,6 @@
 # Step 01 Output Record
 
-Status: Step 01 approved; closeout in progress
+Status: Step 01 complete and pushed
 
 Artifact classification: `authoritative`
 
@@ -95,7 +95,14 @@ Flamestrike then approved the outputs. Step 02 remains unauthorized.
 - Validation manifest: `proof only`
 - Production artifacts: none
 
+## Commit And Push
+
+- Scoped content commit: `6940c20`
+- Commit message: `Lock BloodAxe Cairn Stone A005 fresh-start charter`
+- Push: success to `assetforge/main`
+- Unrelated changes: preserved and unstaged
+
 ## Next Gate
 
-Complete checkpoint, scoped commit, and push; then restart with a new agent.
-That agent may present a Step 02 contract only. Step 02 remains unauthorized.
+Restart with a new agent. That agent may present a Step 02 contract only. Step
+02 remains unauthorized.

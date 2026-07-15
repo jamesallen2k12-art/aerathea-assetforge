@@ -52,3 +52,13 @@ Updated: 2026-07-15
 - Statement: `always show outputs to me in a visible window so I can physically see them`
 - Application: every future reviewable output must be opened automatically in
   a visible desktop window; links alone do not satisfy review visibility
+
+## Step 01 Scoped Content Commit And Push
+
+- Date: 2026-07-15
+- Commit: `6940c20` (`Lock BloodAxe Cairn Stone A005 fresh-start charter`)
+- Push: success; `assetforge/main` advanced from `884e742` to `6940c20`
+- Scoped files: nine A005 Step 01 records and the approved checkpoint-pointer
+  repair
+- Excluded: pre-existing recovery-journal changes and all unrelated worktree
+  changes

@@ -1,6 +1,6 @@
 # Step 01 To Step 02 Handoff
 
-Status: authoritative; inactive until mandatory restart and Step 02 contract approval
+Status: authoritative; ready for mandatory restart
 
 Artifact classification: `authoritative`
 
@@ -54,9 +54,14 @@ interpretation, DCC, texture, export, or Unreal evidence was produced in Step
 The approved A005 Step 01 governance package. Approved pre-commit checkpoint:
 `Saved/ProjectRecovery/20260715-111930/`.
 
-## Remaining Closeout And Next-Step Gates
+## Commit And Push
 
-- Step 01 closeout checkpoint, scoped commit, and push
+- Scoped Step 01 content commit: `6940c20`
+- Push: success to `assetforge/main`
+- Pre-existing unrelated changes remain unstaged
+
+## Remaining Next-Step Gates
+
 - mandatory new-agent restart
 - separate Step 02 contract approval
 

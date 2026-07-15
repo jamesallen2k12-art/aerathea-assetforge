@@ -3,7 +3,7 @@
   "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
   "step_id": "STEP_01",
   "date": "2026-07-15",
-  "status": "step_01_approved_pending_closeout",
+  "status": "step_01_complete",
   "artifact_classification": "proof only",
   "source_accessed": false,
   "legacy_asset_specific_data_accessed": false,
@@ -64,12 +64,12 @@
   "output_hashes": {
     "SM_GIA_BloodAxeCairnstone_A005_PROJECT_CHARTER.md": "1383a975b0c376be4c493fd41f3b81a2f94c2e62dce4a9b758e7a1d2e9e51d90",
     "SM_GIA_BloodAxeCairnstone_A005_FRESH_START_DATA_FIREWALL.md": "29e476473610e9f1bd36410874e9fcce641571d8ecd38edf6944cf93ec39d0ab",
-    "SM_GIA_BloodAxeCairnstone_A005_RESET_RESUME_STATE.md": "7a37ba5424a5e31b64b27f1ef45d49e71274c0a085b83fc9d9219b3e00d8c604",
+    "SM_GIA_BloodAxeCairnstone_A005_RESET_RESUME_STATE.md": "f29b9a9f5fbf575eaf9763f9ef4358f6260f0b4a4d2a97f2ff508f539b667971",
     "SM_GIA_BloodAxeCairnstone_A005_ARTIFACT_INDEX.md": "2965fa2e62ec5da8d463a2dacc63f86360f9beb39fb5cfe98bf6a6cd2a29abbd",
-    "SM_GIA_BloodAxeCairnstone_A005_APPROVAL_LOG.md": "4345d09a36633fd20d7a8dc5a9bd8decac1513564eab35b904c7a5ed5614b410",
+    "SM_GIA_BloodAxeCairnstone_A005_APPROVAL_LOG.md": "95549f107022b736c38a70c7ed25f335fa190195786a5f36fad7ba53ce69d1ad",
     "steps/STEP_01_CONTRACT.md": "df966c917b5be1bbcb37a6a8139944a419e15996250787ffc24bd864d8b8b9e6",
-    "steps/STEP_01_OUTPUT_RECORD.md": "64b5125754ef9d7754a7eb89b31a28ab7e820a1d8ed893de1c0c5e66adee426e",
-    "handoffs/STEP_01_TO_STEP_02_HANDOFF.md": "fea020d28fc70cca8d8ec94c77c8278e7ce72b241815020f8d0ca9dcff5c1ee5"
+    "steps/STEP_01_OUTPUT_RECORD.md": "37b06baf25ba0fc735b87c76389374a0d6e332cf93069531d0698da75e651476",
+    "handoffs/STEP_01_TO_STEP_02_HANDOFF.md": "76d4cc86c8abd95aedd70aa40e59a2050ec44093a369459b20c27e454044e2d4"
   },
   "manifest_self_hash_policy": "The manifest SHA256 is recorded in the review report after this file is written and will be superseded by final post-approval hashes and the scoped git tree.",
   "checkpoints": [
@@ -78,5 +78,12 @@
     "Saved/ProjectRecovery/20260715-110951/",
     "Saved/ProjectRecovery/20260715-111930/"
   ],
-  "flamestrike_output_approval": "approved"
+  "flamestrike_output_approval": "approved",
+  "closeout": {
+    "scoped_content_commit": "6940c20",
+    "push_remote": "assetforge",
+    "push_branch": "main",
+    "push_result": "success",
+    "unrelated_changes_staged": false
+  }
 }

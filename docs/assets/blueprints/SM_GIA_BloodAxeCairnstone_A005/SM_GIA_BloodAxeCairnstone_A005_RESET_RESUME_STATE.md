@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: Step 01 approved; closeout in progress
+Status: Step 01 complete and pushed; mandatory restart pending
 
 Artifact classification: `authoritative`
 
@@ -8,15 +8,16 @@ Updated: 2026-07-15
 
 ## Last Core-Valid State
 
-The fresh-start multi-step plan is authoritative and committed at `884e742`.
-Flamestrike approved the Step 01 outputs on 2026-07-15. The A005 identity,
-charter, firewall, reset state, indexes, and handoff are authoritative. Step 02
-is not authorized.
+The fresh-start multi-step plan is authoritative at `884e742`. Flamestrike
+approved the Step 01 outputs on 2026-07-15. The A005 identity, charter,
+firewall, reset state, indexes, and handoff are authoritative. Scoped Step 01
+content commit `6940c20` was pushed to `assetforge/main`. Step 02 is not
+authorized.
 
 ## Current Step
 
-- Step: 01 - Fresh Project Charter And Asset Identity Lock
-- Decision: approved
+- Completed step: 01 - Fresh Project Charter And Asset Identity Lock
+- Decision: approved and pushed
 - Locked asset ID: `SM_GIA_BloodAxeCairnstone_A005`
 - Production status: not started
 
@@ -43,7 +44,8 @@ is not authorized.
 
 - Branch: `main`
 - Initial Step 01 HEAD: `884e742`
-- Remote baseline: `assetforge/main` at `884e742`
+- Scoped Step 01 content commit: `6940c20`
+- Push: `assetforge/main` advanced from `884e742` to `6940c20`
 - Pre-existing worktree status entries before A005 creation: 248 after the
   checkpoint-tool repair
 - Unrelated dirty files must not be staged or committed by Step 01.
@@ -59,7 +61,7 @@ is not authorized.
 
 ## Resume Instruction
 
-After Step 01 closeout, restart with a new agent. That agent must
+Restart with a new agent now. That agent must
 read `AGENTS.md`, the authoritative fresh-start plan, this file, the Step 01
 output record, the Step 01-to-Step 02 handoff, and a separately approved Step
 02 contract. A Step 01 approval does not authorize Step 02.
