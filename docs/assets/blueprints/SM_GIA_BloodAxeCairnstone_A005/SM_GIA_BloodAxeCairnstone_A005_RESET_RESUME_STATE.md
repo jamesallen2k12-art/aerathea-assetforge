@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: Step 05 approved; pending scoped commit and push
+Status: Step 05 complete and pushed; mandatory restart pending
 
 Artifact classification: `authoritative`
 
@@ -19,14 +19,15 @@ the exact Step 05 contract and subsequently approved the visible Step 05
 output. Its image-coordinate convention, asset frame, origin/pivot/center
 authority policies, 46 exact registration marks, semantic correspondence
 rules, tolerance policy, and blocked-physical-correspondence record are now
-authoritative. Evidence and validation remain `proof only`. Scoped commit and
-push are pending.
+authoritative. Evidence and validation remain `proof only`. Scoped content
+commit `5af0d91` was pushed to `assetforge/main`. A mandatory new-agent restart
+is now required.
 
 ## Current Step
 
 - Active decision: 05 - Pixel Convention, Coordinate Frame, And Registration
   Lock
-- Decision: approved; pending scoped commit and push
+- Decision: approved, committed, and pushed
 - Locked asset ID: `SM_GIA_BloodAxeCairnstone_A005`
 - Production status: not started
 
@@ -117,9 +118,9 @@ push are pending.
 
 ## Last Scoped Commit And Push
 
-- Scoped content commit: `e7860d6`
+- Scoped content commit: `5af0d91`
 - Push: success to `assetforge/main`
-- Remote advanced from `f2fb2b8` to `e7860d6`
+- Remote advanced from `19ebaf1` to `5af0d91`
 - Unrelated dirty files remained unstaged
 
 ## Blocked
@@ -135,10 +136,7 @@ push are pending.
 
 ## Resume Instruction
 
-If interruption occurs before closeout, resume Step 05 closeout only. Read this
-file, the approved Step 05 contract and output record, both approved Step 05
-manifests, evidence board, validation manifest, and handoff. Revalidate, commit
-and push only scoped Step 05 work, then require a mandatory new-agent restart.
-
-After successful closeout, the next agent must perform the Core resume
-handshake and may present a Step 06 contract only. Step 06 is not authorized.
+Restart with a new agent now. That agent must perform the Core resume handshake
+using this file, the approved Step 05 output record, both authoritative Step 05
+manifests, evidence board, validation manifest, and handoff. It may present a
+Step 06 contract only. Step 06 is not authorized.

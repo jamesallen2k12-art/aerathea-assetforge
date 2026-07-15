@@ -239,3 +239,11 @@ Step 08.
 
 Complete scoped Step 05 closeout, commit, push, and mandatory restart. The next
 agent may present a Step 06 contract only. Step 06 remains unauthorized.
+
+## Commit And Push
+
+- Scoped content commit: `5af0d91`
+- Commit message: `Lock BloodAxe Cairn Stone A005 registration frame`
+- Push: success; `assetforge/main` advanced from `19ebaf1` to `5af0d91`
+- Scoped files: ten A005 Step 05 records and evidence files
+- Unrelated changes: preserved and unstaged

@@ -448,5 +448,16 @@
     "approved_pre_closeout_checkpoint": "Saved/ProjectRecovery/20260715-141013/",
     "blocked_physical_correspondence_resolved": false,
     "step_06_authorized": false
+  },
+  "closeout": {
+    "scoped_content_commit": "5af0d91",
+    "commit_message": "Lock BloodAxe Cairn Stone A005 registration frame",
+    "push_remote": "assetforge",
+    "push_branch": "main",
+    "push_result": "success",
+    "remote_advanced_from": "19ebaf1",
+    "remote_advanced_to": "5af0d91",
+    "scoped_file_count": 10,
+    "unrelated_changes_staged": false
   }
 }

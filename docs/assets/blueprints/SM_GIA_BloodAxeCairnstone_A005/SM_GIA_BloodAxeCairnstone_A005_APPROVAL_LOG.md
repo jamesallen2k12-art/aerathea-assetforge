@@ -210,6 +210,14 @@ Updated: 2026-07-15
 - Approved pre-closeout checkpoint:
   `Saved/ProjectRecovery/20260715-141013/`
 
+## Step 05 Scoped Content Commit And Push
+
+- Date: 2026-07-15
+- Commit: `5af0d91` (`Lock BloodAxe Cairn Stone A005 registration frame`)
+- Push: success; `assetforge/main` advanced from `19ebaf1` to `5af0d91`
+- Scoped files: ten A005 Step 05 records and evidence files
+- Excluded: recovery-journal changes and every unrelated worktree change
+
 ## Step 04 Output Approval
 
 - Date: 2026-07-15

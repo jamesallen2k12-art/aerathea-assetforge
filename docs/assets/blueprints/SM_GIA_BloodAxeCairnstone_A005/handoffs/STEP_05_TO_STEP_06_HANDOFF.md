@@ -1,6 +1,6 @@
 # Step 05 To Step 06 Handoff
 
-Status: authoritative; ready for scoped closeout and mandatory restart
+Status: authoritative; Step 05 complete and pushed; mandatory restart
 
 Artifact classification: `authoritative`
 
@@ -48,13 +48,15 @@ authority exists.
 
 ## Last Core-Valid State
 
-The approved Step 04 package at scoped content commit `e7860d6`, with final
-handoff commit `19ebaf1`, both pushed to `assetforge/main`.
+The approved Step 05 convention and registration package at scoped content
+commit `5af0d91`, pushed to `assetforge/main`.
 
 ## Current Git State
 
 - Step 05 initialization HEAD: `19ebaf1`;
-- `HEAD` and `assetforge/main` were synchronized at initialization;
+- scoped Step 05 content commit: `5af0d91`;
+- push: success to `assetforge/main`;
+- remote advanced from `19ebaf1` to `5af0d91`;
 - pre-existing unrelated worktree changes remain outside scope;
 - no unrelated file is staged.
 
