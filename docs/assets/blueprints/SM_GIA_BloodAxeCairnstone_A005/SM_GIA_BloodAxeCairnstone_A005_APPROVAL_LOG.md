@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A005 Approval Log
 
-Status: approved Step 03 approval record
+Status: approved Step 05 approval record; pending scoped closeout
 
 Artifact classification: `authoritative`
 
@@ -187,7 +187,28 @@ Updated: 2026-07-15
 - Production artifacts: none
 - Validated-candidate review checkpoint:
   `Saved/ProjectRecovery/20260715-133027/`
-- Output approval: pending visible Flamestrike review
+- Output approval: completed after visible Flamestrike review
+
+## Step 05 Output Approval
+
+- Date: 2026-07-15
+- Approver: Flamestrike
+- Statement: `approved`
+- Reviewed visibly: all six untouched authoritative panels, paired registration
+  evidence board, complete pixel/coordinate-frame record,
+  orientation-registration manifest, blocked-correspondence list, focused
+  validation result, and Step 05 output record
+- Decision: pass
+- Result: pixel convention, coordinate frame, origin/pivot/center-authority
+  policies, 46 exact registration marks, semantic correspondence IDs,
+  tolerance policy, blocked-correspondence record, output record, and handoff
+  promoted to `authoritative`
+- Evidence board and validation manifest remain `proof only`
+- Blocked physical correspondence remains unresolved
+- Exclusion: numeric measurement, calibration, interpretation, Step 06, and
+  production work remain unauthorized
+- Approved pre-closeout checkpoint:
+  `Saved/ProjectRecovery/20260715-141013/`
 
 ## Step 04 Output Approval
 
@@ -215,3 +236,39 @@ Updated: 2026-07-15
 - Push: success; `assetforge/main` advanced from `f2fb2b8` to `e7860d6`
 - Scoped files: fourteen A005 Step 04 records and images
 - Excluded: recovery-journal changes and every unrelated worktree change
+
+## Step 05 Contract Approval
+
+- Date: 2026-07-15
+- Approver: Flamestrike
+- Statement: `approved`
+- Scope: exact visible Step 05 pixel-convention, coordinate-frame, and
+  registration-lock contract
+- Result: convention/frame records, exact source registration marks, semantic
+  correspondence IDs, blocked-correspondence record, unfilled evidence board,
+  validation, and candidate Step 05 record creation authorized
+- Exclusion: Step 05 output approval, numeric measurement/calibration,
+  interpretation, Step 06, and production work
+- Pre-action checkpoint: `Saved/ProjectRecovery/20260715-134936/`
+
+## Step 05 Candidate Validation
+
+- Date: 2026-07-15
+- Technical result: pass
+- Pixel convention: zero-based integer centers with exclusive edge-to-edge
+  half-open spans
+- World frame: right-handed, `+Z` up, `-Y` forward
+- Exact source registration marks: `46`
+- Blocked physical-correspondence categories: `7`
+- Validators: `22` passed, `0` failed
+- Full-source/panel-local coordinate error: `0 px`
+- Evidence source tiles pixel exact: `true`
+- Aggregate changed source-tile pixels: `0`
+- Maximum RGB delta: `0`
+- Step 04 review coordinates reused: none
+- Perspective metric use: none
+- Legacy asset-specific access: false
+- Measurement, calibration, interpretation, and production artifacts: none
+- Validated-candidate review checkpoint:
+  `Saved/ProjectRecovery/20260715-140730/`
+- Output approval: pending visible Flamestrike review

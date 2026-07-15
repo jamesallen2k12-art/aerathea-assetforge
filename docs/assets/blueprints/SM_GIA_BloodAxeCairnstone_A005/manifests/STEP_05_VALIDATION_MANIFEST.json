@@ -1,0 +1,452 @@
+{
+  "schema": "aerathea.step_validation.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "step_id": "STEP_05",
+  "date": "2026-07-15",
+  "status": "step_05_complete_pending_scoped_closeout",
+  "artifact_classification": "proof only",
+  "aggregate_result": {
+    "pass": true,
+    "validator_count": 22,
+    "failed_validator_count": 0,
+    "orientation_mark_count": 46,
+    "blocked_physical_correspondence_count": 7,
+    "evidence_board_count": 1,
+    "all_left_source_tiles_pixel_exact": true,
+    "aggregate_changed_pixels": 0,
+    "maximum_rgb_delta": 0,
+    "legacy_asset_specific_data_accessed": false,
+    "interpretation_introduced": false,
+    "measurement_or_calibration_created": false,
+    "production_artifact_created": false,
+    "unrelated_changes_staged": false
+  },
+  "validators": [
+    {
+      "id": "source_file_hash",
+      "result": "pass",
+      "observed": "4b953abb87f5f254a5f51c6214e76d3f72c4fc55bc2fa4e4d605b2440d6e53c2"
+    },
+    {
+      "id": "source_pixel_hash",
+      "result": "pass",
+      "observed": "65b69c9674d6644fcae6795df01bdab55e59fc0c493a501ed7ed1baa966a3a72"
+    },
+    {
+      "id": "scanline_manifest_file_hash",
+      "result": "pass",
+      "observed": "ec544f80b969f53eb9729910d4eebc28a0fd0bfbc9c2d1be35d2aa7de0806dbc"
+    },
+    {
+      "id": "approved_panel_identities",
+      "result": "pass",
+      "panels": [
+        {
+          "view": "perspective",
+          "result": "pass",
+          "file_sha256": "4c49c9661f14ece54abfbfd39da9ef047e6f749638b0842d1e51eaebca2564c7",
+          "pixel_sha256": "9b772aefc3aea81a65a419863a85d3682a9e870505a419eeacef9a582568bd8f",
+          "size_px": [
+            522,
+            525
+          ]
+        },
+        {
+          "view": "front",
+          "result": "pass",
+          "file_sha256": "262071198bc0d409e9b68af5ac4f3c6a4768a90b1fd199342035a8a82342c2c5",
+          "pixel_sha256": "d4fb34cb01ce6eaa04213a5a7c517743960daec6dcf638c53ec80a958ecc807f",
+          "size_px": [
+            483,
+            525
+          ]
+        },
+        {
+          "view": "back",
+          "result": "pass",
+          "file_sha256": "8ceae7f5ccf311ded8822fdd623d2b68009102bc07ceaf66708f59d2a013d271",
+          "pixel_sha256": "9256a8df175cbf54ca0662b11e0c5f5f6be4e670b10a9783efc1d6e9e26a56b1",
+          "size_px": [
+            522,
+            401
+          ]
+        },
+        {
+          "view": "left",
+          "result": "pass",
+          "file_sha256": "52212ba783d026a008929e3946cac934281de7d2daec2ada316205059258cba4",
+          "pixel_sha256": "96a10daa637b28b879b5dd210bad3526e87499218dece9ca4ed0560046c9bddb",
+          "size_px": [
+            484,
+            401
+          ]
+        },
+        {
+          "view": "right",
+          "result": "pass",
+          "file_sha256": "cc6c27405fbd6ea8c46b70966fe559acbd57acb88e58bfdcd6b763ce827a862e",
+          "pixel_sha256": "f6201cbae75fa061f7614893d7f2c081149a350fc6d64ad510b49ef5c12d7610",
+          "size_px": [
+            367,
+            372
+          ]
+        },
+        {
+          "view": "top",
+          "result": "pass",
+          "file_sha256": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf",
+          "pixel_sha256": "eda0f5d691336489e257a44b09f58b8543b023bd4edc0893d5fab68ad8dbf05f",
+          "size_px": [
+            337,
+            371
+          ]
+        }
+      ]
+    },
+    {
+      "id": "single_pixel_span_convention",
+      "result": "pass"
+    },
+    {
+      "id": "coordinate_round_trip_tolerance_zero",
+      "result": "pass"
+    },
+    {
+      "id": "orientation_mark_integrity",
+      "result": "pass",
+      "mark_count": 46,
+      "marks": [
+        {
+          "id": "VM-PERSPECTIVE",
+          "result": "pass"
+        },
+        {
+          "id": "VM-FRONT",
+          "result": "pass"
+        },
+        {
+          "id": "VM-BACK",
+          "result": "pass"
+        },
+        {
+          "id": "VM-LEFT",
+          "result": "pass"
+        },
+        {
+          "id": "VM-RIGHT",
+          "result": "pass"
+        },
+        {
+          "id": "VM-TOP",
+          "result": "pass"
+        },
+        {
+          "id": "HS-Z220-FRONT",
+          "result": "pass"
+        },
+        {
+          "id": "HS-Z000-OH-FRONT",
+          "result": "pass"
+        },
+        {
+          "id": "HS-Z035-FRONT",
+          "result": "pass"
+        },
+        {
+          "id": "HS-Z000-BH-FRONT",
+          "result": "pass"
+        },
+        {
+          "id": "HS-Z220-BACK",
+          "result": "pass"
+        },
+        {
+          "id": "HS-Z000-OH-BACK",
+          "result": "pass"
+        },
+        {
+          "id": "HS-Z035-BACK",
+          "result": "pass"
+        },
+        {
+          "id": "HS-Z000-BH-BACK",
+          "result": "pass"
+        },
+        {
+          "id": "HS-Z220-LEFT",
+          "result": "pass"
+        },
+        {
+          "id": "HS-Z000-OH-LEFT",
+          "result": "pass"
+        },
+        {
+          "id": "HS-Z035-LEFT",
+          "result": "pass"
+        },
+        {
+          "id": "HS-Z000-BH-LEFT",
+          "result": "pass"
+        },
+        {
+          "id": "HS-Z220-RIGHT",
+          "result": "pass"
+        },
+        {
+          "id": "HS-Z000-OH-RIGHT",
+          "result": "pass"
+        },
+        {
+          "id": "HS-Z035-RIGHT",
+          "result": "pass"
+        },
+        {
+          "id": "HS-Z000-BH-RIGHT",
+          "result": "pass"
+        },
+        {
+          "id": "XS-C001-XNEG-FRONT",
+          "result": "pass"
+        },
+        {
+          "id": "XS-C004-XNEG-FRONT",
+          "result": "pass"
+        },
+        {
+          "id": "XS-C001-XPOS-FRONT",
+          "result": "pass"
+        },
+        {
+          "id": "XS-C004-XPOS-FRONT",
+          "result": "pass"
+        },
+        {
+          "id": "XS-C001-XPOS-BACK",
+          "result": "pass"
+        },
+        {
+          "id": "XS-C004-XPOS-BACK",
+          "result": "pass"
+        },
+        {
+          "id": "XS-C001-XNEG-BACK",
+          "result": "pass"
+        },
+        {
+          "id": "XS-C004-XNEG-BACK",
+          "result": "pass"
+        },
+        {
+          "id": "XS-C001-XNEG-TOP",
+          "result": "pass"
+        },
+        {
+          "id": "XS-C004-XNEG-TOP",
+          "result": "pass"
+        },
+        {
+          "id": "XS-C001-XPOS-TOP",
+          "result": "pass"
+        },
+        {
+          "id": "XS-C004-XPOS-TOP",
+          "result": "pass"
+        },
+        {
+          "id": "YS-C001-YPOS-LEFT",
+          "result": "pass"
+        },
+        {
+          "id": "YS-C004-YPOS-LEFT",
+          "result": "pass"
+        },
+        {
+          "id": "YS-C001-YNEG-LEFT",
+          "result": "pass"
+        },
+        {
+          "id": "YS-C004-YNEG-LEFT",
+          "result": "pass"
+        },
+        {
+          "id": "YS-C001-YNEG-RIGHT",
+          "result": "pass"
+        },
+        {
+          "id": "YS-C004-YNEG-RIGHT",
+          "result": "pass"
+        },
+        {
+          "id": "YS-C001-YPOS-RIGHT",
+          "result": "pass"
+        },
+        {
+          "id": "YS-C004-YPOS-RIGHT",
+          "result": "pass"
+        },
+        {
+          "id": "YS-C001-YPOS-TOP",
+          "result": "pass"
+        },
+        {
+          "id": "YS-C004-YPOS-TOP",
+          "result": "pass"
+        },
+        {
+          "id": "YS-C001-YNEG-TOP",
+          "result": "pass"
+        },
+        {
+          "id": "YS-C004-YNEG-TOP",
+          "result": "pass"
+        }
+      ]
+    },
+    {
+      "id": "full_local_coordinate_round_trip",
+      "result": "pass",
+      "tolerance_px": 0
+    },
+    {
+      "id": "semantic_pair_references",
+      "result": "pass"
+    },
+    {
+      "id": "step04_review_coordinates_not_reused",
+      "result": "pass",
+      "reused_mark_ids": []
+    },
+    {
+      "id": "center_authority_types_complete",
+      "result": "pass",
+      "component_count": 7
+    },
+    {
+      "id": "world_axis_frame_complete",
+      "result": "pass"
+    },
+    {
+      "id": "numeric_origin_centerline_blocked",
+      "result": "pass"
+    },
+    {
+      "id": "perspective_corroboration_only",
+      "result": "pass"
+    },
+    {
+      "id": "blocked_correspondence_preserved",
+      "result": "pass"
+    },
+    {
+      "id": "contact_relations_not_pixel_paired",
+      "result": "pass"
+    },
+    {
+      "id": "evidence_board_identity",
+      "result": "pass",
+      "file_sha256": "5e44b5de6661e7da03300ae4420c65a0e409684dd9449fcd01e8f8d659868d24",
+      "pixel_sha256": "be8b5c4f0aa6bafa4d65d3b63e96a96a6c8ee09198485424f54ee9bac65052a3",
+      "size_px": [
+        1144,
+        3346
+      ]
+    },
+    {
+      "id": "evidence_left_source_tiles_pixel_exact",
+      "result": "pass",
+      "tiles": [
+        {
+          "view": "perspective",
+          "result": "pass",
+          "changed_pixels": 0,
+          "max_rgb_delta": 0,
+          "extracted_pixel_sha256": "9b772aefc3aea81a65a419863a85d3682a9e870505a419eeacef9a582568bd8f"
+        },
+        {
+          "view": "front",
+          "result": "pass",
+          "changed_pixels": 0,
+          "max_rgb_delta": 0,
+          "extracted_pixel_sha256": "d4fb34cb01ce6eaa04213a5a7c517743960daec6dcf638c53ec80a958ecc807f"
+        },
+        {
+          "view": "back",
+          "result": "pass",
+          "changed_pixels": 0,
+          "max_rgb_delta": 0,
+          "extracted_pixel_sha256": "9256a8df175cbf54ca0662b11e0c5f5f6be4e670b10a9783efc1d6e9e26a56b1"
+        },
+        {
+          "view": "left",
+          "result": "pass",
+          "changed_pixels": 0,
+          "max_rgb_delta": 0,
+          "extracted_pixel_sha256": "96a10daa637b28b879b5dd210bad3526e87499218dece9ca4ed0560046c9bddb"
+        },
+        {
+          "view": "right",
+          "result": "pass",
+          "changed_pixels": 0,
+          "max_rgb_delta": 0,
+          "extracted_pixel_sha256": "f6201cbae75fa061f7614893d7f2c081149a350fc6d64ad510b49ef5c12d7610"
+        },
+        {
+          "view": "top",
+          "result": "pass",
+          "changed_pixels": 0,
+          "max_rgb_delta": 0,
+          "extracted_pixel_sha256": "eda0f5d691336489e257a44b09f58b8543b023bd4edc0893d5fab68ad8dbf05f"
+        }
+      ],
+      "aggregate_changed_pixels": 0,
+      "maximum_rgb_delta": 0
+    },
+    {
+      "id": "evidence_policy_unfilled",
+      "result": "pass"
+    },
+    {
+      "id": "a005_production_roots_absent",
+      "result": "pass",
+      "present": []
+    },
+    {
+      "id": "legacy_and_interpretation_access_false",
+      "result": "pass"
+    },
+    {
+      "id": "unrelated_changes_staged",
+      "result": "pass",
+      "staged_files": []
+    }
+  ],
+  "input_hashes": {
+    "source_png": "4b953abb87f5f254a5f51c6214e76d3f72c4fc55bc2fa4e4d605b2440d6e53c2",
+    "scanline_manifest": "ec544f80b969f53eb9729910d4eebc28a0fd0bfbc9c2d1be35d2aa7de0806dbc",
+    "step_03_panel_manifest": "5d423400e1415c7e816648f703f2d04de384070813480db923303ab0709a0356",
+    "step_04_component_inventory": "664daadce0bac933d0090408e23df663b72b6ea83c825041dde365a1fad0819f"
+  },
+  "candidate_output_hashes_before_validation_manifest_finalization": {
+    "steps/STEP_05_CONTRACT.md": "35df27413b2921507941bf53a2f84a041724a4bb40e00a7096e05478d4601737",
+    "manifests/STEP_05_PIXEL_COORDINATE_FRAME_RECORD.json": "ccfce6b8316369b512ff83eee11fd4385dd15b546f7b92da9e80b9e7ed959d1d",
+    "manifests/STEP_05_ORIENTATION_REGISTRATION_MANIFEST.json": "b7efa865e8b82f63e714d36ed4935fc02515ecc3f4d355941467f20b49348395",
+    "evidence/STEP_05/SM_GIA_BloodAxeCairnstone_A005_STEP_05_REGISTRATION_EVIDENCE.png": "5e44b5de6661e7da03300ae4420c65a0e409684dd9449fcd01e8f8d659868d24",
+    "steps/STEP_05_OUTPUT_RECORD.md": "925e4d4b64a38af1a1bb121b84e854775165f232abf9767ef5b9b6cbd1e519c0",
+    "handoffs/STEP_05_TO_STEP_06_HANDOFF.md": "123740dfbe70f4337eb97258b9ccf7c3cfd6f61736a79db565240a36796a48ed",
+    "SM_GIA_BloodAxeCairnstone_A005_RESET_RESUME_STATE.md": "575028773a97183682b4a1c81614cb0a176f131f83b7b4bfdd67b674cec61885",
+    "SM_GIA_BloodAxeCairnstone_A005_ARTIFACT_INDEX.md": "75a802505261d09c1e0552c1bf04e481b734908ea808f0b1322576af7ee7595a",
+    "SM_GIA_BloodAxeCairnstone_A005_APPROVAL_LOG.md": "2cc4601282032b0deb41487be986aaf40c22d7a901adc9bdeaebcd981b454a4f"
+  },
+  "manifest_self_hash_policy": "The validation-manifest SHA256 is omitted because the file contains candidate package hashes and will be protected by the scoped git tree after output approval.",
+  "pre_action_checkpoint": "Saved/ProjectRecovery/20260715-134936/",
+  "validated_candidate_review_checkpoint": "Saved/ProjectRecovery/20260715-140730/",
+  "flamestrike_output_approval": {
+    "status": "approved",
+    "date": "2026-07-15",
+    "statement": "approved",
+    "result": "pass",
+    "approved_pre_closeout_checkpoint": "Saved/ProjectRecovery/20260715-141013/",
+    "blocked_physical_correspondence_resolved": false,
+    "step_06_authorized": false
+  }
+}

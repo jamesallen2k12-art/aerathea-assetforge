@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A005 Artifact Index
 
-Status: approved Step 04 artifact index
+Status: approved Step 05 artifact index; pending scoped closeout
 
 Artifact classification: `authoritative`
 
@@ -52,6 +52,13 @@ Updated: 2026-07-15
 | `steps/STEP_04_OUTPUT_RECORD.md` | `authoritative` | Approved Step 04 component-decomposition decision record |
 | `manifests/STEP_04_VALIDATION_MANIFEST.json` | `proof only` | Focused deterministic Step 04 candidate validation |
 | `handoffs/STEP_04_TO_STEP_05_HANDOFF.md` | `authoritative` | Restart handoff after approved Step 04 output; Step 05 remains unauthorized |
+| `steps/STEP_05_CONTRACT.md` | `authoritative` | Flamestrike-approved Step 05 execution boundary |
+| `manifests/STEP_05_PIXEL_COORDINATE_FRAME_RECORD.json` | `authoritative` | Approved pixel convention, asset frame, origin/pivot policy, center-authority types, and tolerance policy |
+| `manifests/STEP_05_ORIENTATION_REGISTRATION_MANIFEST.json` | `authoritative` | Approved forty-six exact source registration marks, semantic correspondence IDs, and explicit blocked physical correspondence |
+| `evidence/STEP_05/SM_GIA_BloodAxeCairnstone_A005_STEP_05_REGISTRATION_EVIDENCE.png` | `proof only` | Paired exact source and unfilled registration-mark copies for all six panels |
+| `steps/STEP_05_OUTPUT_RECORD.md` | `authoritative` | Approved convention and registration decision record |
+| `manifests/STEP_05_VALIDATION_MANIFEST.json` | `proof only` | Focused deterministic Step 05 candidate validation |
+| `handoffs/STEP_05_TO_STEP_06_HANDOFF.md` | `authoritative` | Restart-safe approved handoff; Step 06 remains unauthorized |
 
 ## Legacy Classification
 
@@ -86,3 +93,21 @@ layers or treatment families, three discontinuous contact relationships, three
 occluded sectors, and nine blocked unknowns. The six evidence boards contain no
 component fill or closed candidate contour. The blocked unknowns remain
 unresolved; Step 05 and production work remain unauthorized.
+
+## Step 05 Approval
+
+Flamestrike approved the exact Step 05 execution contract and visible output
+on 2026-07-15. The approved records lock zero-based integer pixel centers,
+exclusive edge-to-edge
+half-open spans, a right-handed `+Z`-up/`-Y`-forward frame, future
+origin/pivot/center-authority types, 46 exact source-authored registration
+marks, semantic station/span correspondence IDs, and zero-error
+source-coordinate audit tolerances.
+
+All 22 focused validators pass. The evidence board's six source tiles are
+pixel-exact with zero changed pixels and zero maximum RGB delta. Seven physical
+correspondence categories remain explicitly blocked; no numeric center,
+calibration, measurement, interpretation, geometry, or production authority
+was created. The convention/frame record, orientation-registration manifest,
+output record, and handoff are `authoritative`; evidence and validation remain
+`proof only`. Step 06 is unauthorized.

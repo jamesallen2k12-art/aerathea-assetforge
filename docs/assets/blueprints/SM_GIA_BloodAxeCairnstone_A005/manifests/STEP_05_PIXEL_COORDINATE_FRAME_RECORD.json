@@ -1,0 +1,232 @@
+{
+  "schema": "aerathea.pixel_coordinate_frame.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "step_id": "STEP_05",
+  "date": "2026-07-15",
+  "status": "approved_step_05_pixel_coordinate_frame",
+  "artifact_classification": "authoritative",
+  "decision": "Lock exact image-coordinate conventions, asset axes, origin and pivot policies, center-authority types, registration semantics, and audit tolerances without measuring or deriving geometry.",
+  "authority": {
+    "plan_section": "Step 05 - Pixel Convention, Coordinate Frame, And Registration Lock",
+    "contract": "steps/STEP_05_CONTRACT.md",
+    "source_lock": "SM_GIA_BloodAxeCairnstone_A005_SOURCE_AUTHORITY_LOCK.md",
+    "panel_manifest": "manifests/STEP_03_PANEL_CROP_MANIFEST.json",
+    "component_inventory": "manifests/STEP_04_COMPONENT_OWNERSHIP_INVENTORY.json",
+    "legacy_asset_specific_data_allowed": false,
+    "perspective_metric_authority": false
+  },
+  "source": {
+    "path": "docs/assets/reference/bloodaxe_cairnstone_asset/REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate.png",
+    "file_sha256": "4b953abb87f5f254a5f51c6214e76d3f72c4fc55bc2fa4e4d605b2440d6e53c2",
+    "pixel_sha256": "65b69c9674d6644fcae6795df01bdab55e59fc0c493a501ed7ed1baa966a3a72",
+    "scanline_manifest": "docs/assets/reference/bloodaxe_cairnstone_asset/ScanlineCapture/REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate_ScanlineManifest.json",
+    "scanline_manifest_file_sha256": "ec544f80b969f53eb9729910d4eebc28a0fd0bfbc9c2d1be35d2aa7de0806dbc",
+    "width_px": 1055,
+    "height_px": 1491,
+    "mode": "RGB"
+  },
+  "pixel_convention": {
+    "coordinate_indexing": "zero_based_integer_pixel_centers",
+    "origin": "center_of_top_left_pixel_is_0_0",
+    "image_axes": "x_right_y_down",
+    "point_coordinates": "integer_pixel_center_indices",
+    "span_convention": "exclusive_edge_to_edge_half_open",
+    "bounds_notation": "[x0,x1)_by_[y0,y1)",
+    "width_formula": "x1 - x0",
+    "height_formula": "y1 - y0",
+    "feature_span_formula": "exclusive_upper_edge - inclusive_lower_edge",
+    "inclusive_span_allowed_in_this_sequence": false,
+    "center_to_center_span_allowed_in_this_sequence": false,
+    "mixed_span_conventions_allowed": false,
+    "resampling_allowed": false
+  },
+  "coordinate_spaces": {
+    "full_source": {
+      "id": "FS",
+      "bounds_half_open": [0, 0, 1055, 1491],
+      "valid_pixel_centers": "0 <= x <= 1054 and 0 <= y <= 1490"
+    },
+    "panel_local": {
+      "id_pattern": "PV:<view>",
+      "local_from_full_formula": "x_local = x_full - crop_x0; y_local = y_full - crop_y0",
+      "full_from_local_formula": "x_full = x_local + crop_x0; y_full = y_local + crop_y0",
+      "round_trip_formula": "full_from_local(local_from_full(x_full,y_full)) == (x_full,y_full)",
+      "round_trip_tolerance_px": 0
+    }
+  },
+  "panels": [
+    {
+      "view": "perspective",
+      "space_id": "PV:perspective",
+      "usage": "visual_corroboration_only_unless_separately_calibrated",
+      "crop_half_open_full_source": [19, 130, 541, 655],
+      "size_px": [522, 525],
+      "file_sha256": "4c49c9661f14ece54abfbfd39da9ef047e6f749638b0842d1e51eaebca2564c7",
+      "pixel_sha256": "9b772aefc3aea81a65a419863a85d3682a9e870505a419eeacef9a582568bd8f",
+      "metric_mapping": "blocked"
+    },
+    {
+      "view": "front",
+      "space_id": "PV:front",
+      "usage": "source_panel",
+      "crop_half_open_full_source": [552, 130, 1035, 655],
+      "size_px": [483, 525],
+      "file_sha256": "262071198bc0d409e9b68af5ac4f3c6a4768a90b1fd199342035a8a82342c2c5",
+      "pixel_sha256": "d4fb34cb01ce6eaa04213a5a7c517743960daec6dcf638c53ec80a958ecc807f"
+    },
+    {
+      "view": "back",
+      "space_id": "PV:back",
+      "usage": "source_panel",
+      "crop_half_open_full_source": [19, 663, 541, 1064],
+      "size_px": [522, 401],
+      "file_sha256": "8ceae7f5ccf311ded8822fdd623d2b68009102bc07ceaf66708f59d2a013d271",
+      "pixel_sha256": "9256a8df175cbf54ca0662b11e0c5f5f6be4e670b10a9783efc1d6e9e26a56b1"
+    },
+    {
+      "view": "left",
+      "space_id": "PV:left",
+      "usage": "source_panel",
+      "crop_half_open_full_source": [552, 663, 1036, 1064],
+      "size_px": [484, 401],
+      "file_sha256": "52212ba783d026a008929e3946cac934281de7d2daec2ada316205059258cba4",
+      "pixel_sha256": "96a10daa637b28b879b5dd210bad3526e87499218dece9ca4ed0560046c9bddb"
+    },
+    {
+      "view": "right",
+      "space_id": "PV:right",
+      "usage": "source_panel",
+      "crop_half_open_full_source": [19, 1073, 386, 1445],
+      "size_px": [367, 372],
+      "file_sha256": "cc6c27405fbd6ea8c46b70966fe559acbd57acb88e58bfdcd6b763ce827a862e",
+      "pixel_sha256": "f6201cbae75fa061f7614893d7f2c081149a350fc6d64ad510b49ef5c12d7610"
+    },
+    {
+      "view": "top",
+      "space_id": "PV:top",
+      "usage": "source_panel",
+      "crop_half_open_full_source": [393, 1073, 730, 1444],
+      "size_px": [337, 371],
+      "file_sha256": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf",
+      "pixel_sha256": "eda0f5d691336489e257a44b09f58b8543b023bd4edc0893d5fab68ad8dbf05f"
+    }
+  ],
+  "world_coordinate_frame": {
+    "handedness": "right_handed",
+    "units_policy": "centimeters_after_per_view_calibration_in_steps_06_to_08",
+    "world_up_axis": "+Z",
+    "forward_axis": "-Y",
+    "front_direction": "-Y",
+    "back_direction": "+Y",
+    "left_direction": "-X",
+    "right_direction": "+X",
+    "top_direction": "+Z",
+    "panel_axis_mappings": {
+      "front": {"image_x_right": "+X", "image_y_down": "-Z", "normal_owner": "-Y"},
+      "back": {"image_x_right": "-X", "image_y_down": "-Z", "normal_owner": "+Y"},
+      "left": {"image_x_right": "-Y", "image_y_down": "-Z", "normal_owner": "-X"},
+      "right": {"image_x_right": "+Y", "image_y_down": "-Z", "normal_owner": "+X"},
+      "top": {"image_x_right": "+X", "image_y_down": "-Y", "normal_owner": "+Z"},
+      "perspective": {"image_x_right": "uncalibrated", "image_y_down": "uncalibrated", "normal_owner": "none_metric"}
+    },
+    "origin_policy_id": "ORIGIN-C004-OUTER-FOOTPRINT-GROUND",
+    "origin_policy": "The future numeric origin is the intersection of the Step-08 approved C-004 filled outer-footprint center with the approved Z=0 ground-contact plane.",
+    "numeric_origin_status": "blocked_pending_steps_06_to_08_measurement",
+    "pivot_policy": "Static-mesh pivot equals the approved numeric origin after measurement; no provisional bounding-box pivot is authorized.",
+    "centerline_policy": "The vertical centerline passes through the future approved C-004 filled outer-footprint center and is parallel to +Z.",
+    "numeric_centerline_status": "blocked_pending_step_08_measurement",
+    "rotation_policy": "No component yaw, pitch, roll, or offset is authorized by Step 05. Any future non-zero transform requires a source-linked measurement or approved interpretation contract.",
+    "unapproved_rotation_tolerance_degrees": 0
+  },
+  "center_authority_types": [
+    {
+      "component_id": "C-001",
+      "authority_type": "filled_source_owned_outer_footprint_center",
+      "numeric_status": "blocked_pending_step_08_measurement",
+      "bounding_box_center_authority": false,
+      "raw_color_density_center_authority": false
+    },
+    {
+      "component_id": "C-002",
+      "authority_type": "visible_annulus_center_with_separate_inner_and_outer_perimeters",
+      "numeric_status": "blocked_pending_step_08_measurement",
+      "bounding_box_center_authority": false,
+      "raw_color_density_center_authority": false
+    },
+    {
+      "component_id": "C-003",
+      "authority_type": "visible_annulus_center_with_separate_inner_and_outer_perimeters",
+      "numeric_status": "blocked_pending_step_08_measurement",
+      "bounding_box_center_authority": false,
+      "raw_color_density_center_authority": false
+    },
+    {
+      "component_id": "C-004",
+      "authority_type": "filled_source_owned_outer_footprint_center",
+      "numeric_status": "blocked_pending_step_08_measurement",
+      "origin_and_pivot_authority_after_measurement": true,
+      "bounding_box_center_authority": false,
+      "raw_color_density_center_authority": false
+    },
+    {
+      "component_id": "C-005",
+      "authority_type": "not_applicable_while_physical_identity_is_ambiguous",
+      "numeric_status": "blocked_by_U_005_U_006_U_009",
+      "alignment_center_authorized": false
+    },
+    {
+      "component_id": "C-006",
+      "authority_type": "not_applicable_while_physical_identity_is_ambiguous",
+      "numeric_status": "blocked_by_U_005_U_008_U_009",
+      "alignment_center_authorized": false
+    },
+    {
+      "component_id": "C-007",
+      "authority_type": "not_applicable_while_physical_identity_is_ambiguous",
+      "numeric_status": "blocked_by_U_001_U_002_U_003_U_004_U_005_U_008",
+      "alignment_center_authorized": false
+    }
+  ],
+  "contact_center_policy": [
+    {"contact_id": "CL-001", "between": ["C-001", "C-002"], "authority_type": "paired_measured_contact_perimeter_centers", "numeric_status": "blocked_pending_steps_06_08"},
+    {"contact_id": "CL-002", "between": ["C-002", "C-003"], "authority_type": "paired_measured_contact_perimeter_centers", "numeric_status": "blocked_pending_steps_06_08"},
+    {"contact_id": "CL-003", "between": ["C-003", "C-004"], "authority_type": "paired_measured_contact_perimeter_centers", "numeric_status": "blocked_pending_steps_06_08"}
+  ],
+  "tolerance_policy": {
+    "source_file_hash_mismatch_allowed": false,
+    "source_pixel_hash_mismatch_allowed": false,
+    "source_coordinate_record_tolerance_px": 0,
+    "full_local_round_trip_tolerance_px": 0,
+    "evidence_source_tile_changed_pixels_allowed": 0,
+    "evidence_source_tile_max_rgb_delta_allowed": 0,
+    "unapproved_axis_rotation_tolerance_deg": 0,
+    "cross_view_semantic_station_policy": "same ID only when source-authored dimension labels prove the same station or span role",
+    "cross_view_pixel_distance_tolerance": null,
+    "cross_view_pixel_distance_reason": "Pixels in different panels do not share a common metric space before per-view calibration.",
+    "world_space_translation_tolerance_cm": null,
+    "world_space_rotation_tolerance_deg": null,
+    "world_space_tolerance_status": "blocked_pending_steps_06_09_calibration_and_dataset_audit",
+    "disagreement_rule": "Stop; preserve both source observations; do not average, shift, rotate, or select a convenient center."
+  },
+  "evidence_interpretation_boundary": {
+    "dimension_annotation_marks_are_geometry": false,
+    "panel_label_marks_are_geometry": false,
+    "review_overlay_marks_are_geometry": false,
+    "orientation_marks_enter_texture_mesh_render_or_export": false,
+    "component_mask_created": false,
+    "filled_contour_created": false,
+    "calibration_created": false,
+    "geometry_created": false,
+    "interpretation_introduced": false
+  },
+  "flamestrike_output_approval": {
+    "date": "2026-07-15",
+    "statement": "approved",
+    "result": "pass",
+    "scope": "Pixel convention, right-handed asset frame, origin/pivot/center-authority policies, and audit-tolerance rules.",
+    "numeric_measurement_authorized": false,
+    "interpretation_authorized": false,
+    "step_06_authorized": false,
+    "approved_pre_closeout_checkpoint": "Saved/ProjectRecovery/20260715-141013/"
+  }
+}

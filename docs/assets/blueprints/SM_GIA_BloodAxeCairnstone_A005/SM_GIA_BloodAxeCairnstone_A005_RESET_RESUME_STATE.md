@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: Step 04 complete and pushed; mandatory restart pending
+Status: Step 05 approved; pending scoped commit and push
 
 Artifact classification: `authoritative`
 
@@ -8,22 +8,25 @@ Updated: 2026-07-15
 
 ## Last Core-Valid State
 
-Flamestrike approved the Step 03 outputs on 2026-07-15 after visible review.
-Six lossless panel crops passed exact source-region validation, and their
-boundaries were approved as source ownership. Their formulas and images are
-authoritative for A005. The exact A02 source and its scanline evidence remain
-authoritative. Scoped content commit `2cee686` and final Step 03 handoff commit
-`f2fb2b8` were pushed to `assetforge/main`. Flamestrike subsequently approved
-the exact Step 04 contract and, after visible review, approved the Step 04
-component decomposition. Its inventory, ownership matrix, contact inventory,
-occluded-sector record, and blocked-unknown record are authoritative. Scoped
-content commit `e7860d6` was pushed to `assetforge/main`. A mandatory new-agent
-restart is now required.
+Flamestrike approved the Step 04 component decomposition after visible review.
+Its seven neutral source-visible layers/treatment families, source-view
+ownership matrix, three discontinuous contacts, three occluded sectors, and
+nine blocked unknowns are authoritative. Scoped content commit `e7860d6` and
+final handoff commit `19ebaf1` were pushed to `assetforge/main`.
+
+After the mandatory restart and Core resume handshake, Flamestrike approved
+the exact Step 05 contract and subsequently approved the visible Step 05
+output. Its image-coordinate convention, asset frame, origin/pivot/center
+authority policies, 46 exact registration marks, semantic correspondence
+rules, tolerance policy, and blocked-physical-correspondence record are now
+authoritative. Evidence and validation remain `proof only`. Scoped commit and
+push are pending.
 
 ## Current Step
 
-- Active decision: 04 - Physical Component And Source-Ownership Inventory
-- Decision: approved, committed, and pushed
+- Active decision: 05 - Pixel Convention, Coordinate Frame, And Registration
+  Lock
+- Decision: approved; pending scoped commit and push
 - Locked asset ID: `SM_GIA_BloodAxeCairnstone_A005`
 - Production status: not started
 
@@ -40,6 +43,10 @@ restart is now required.
 - Step 04 contract: `authoritative`
 - Step 04 component-ownership inventory and output record: `authoritative`
 - Step 04 evidence boards and validation manifest: `proof only`
+- Step 05 execution contract: `authoritative`
+- Step 05 pixel/coordinate-frame record: `authoritative`
+- Step 05 orientation-registration manifest and output record: `authoritative`
+- Step 05 evidence board and validation manifest: `proof only`
 - Fresh-project exact-data authority: the approved A02 source, exact scanline
   evidence, and approved Step 03 panel formulas and lossless crops
 - Interpretation authority: none
@@ -82,14 +89,31 @@ restart is now required.
   unknowns, and six unfilled evidence boards
 - Step 04 approved pre-closeout checkpoint:
   `Saved/ProjectRecovery/20260715-133530/`
+- Step 05 pre-action checkpoint: `Saved/ProjectRecovery/20260715-134936/`
+- Step 05 validated-candidate review checkpoint:
+  `Saved/ProjectRecovery/20260715-140730/`
+- Step 05 approved pre-closeout checkpoint:
+  `Saved/ProjectRecovery/20260715-141013/`
+- Step 05 pixel/coordinate-frame record:
+  `manifests/STEP_05_PIXEL_COORDINATE_FRAME_RECORD.json`
+- Step 05 orientation-registration manifest:
+  `manifests/STEP_05_ORIENTATION_REGISTRATION_MANIFEST.json`
+- Step 05 registration evidence:
+  `evidence/STEP_05/SM_GIA_BloodAxeCairnstone_A005_STEP_05_REGISTRATION_EVIDENCE.png`
+- Step 05 validation manifest: `manifests/STEP_05_VALIDATION_MANIFEST.json`
+- Step 05 output record: `steps/STEP_05_OUTPUT_RECORD.md`
+- Step 05 candidate result: 22 validators passed, 46 exact source marks,
+  seven blocked physical-correspondence categories, coordinate round-trip
+  error `0 px`, all six source tiles pixel-exact with `0` changed pixels and
+  `0` maximum RGB delta
 
 ## Git And Checkpoint State
 
 - Branch: `main`
-- Step 04 initialization HEAD: `f2fb2b8`
+- Step 05 initialization HEAD: `19ebaf1`
 - Remote: synchronized with `assetforge/main`
 - Pre-existing unrelated worktree entries remain preserved and outside scope
-- No unrelated file may be staged or committed by Step 04
+- No unrelated file may be staged or committed by Step 05
 
 ## Last Scoped Commit And Push
 
@@ -100,16 +124,21 @@ restart is now required.
 
 ## Blocked
 
-- Step 05
-- component masks, measurements, registration, calibration, and interpretation
+- Step 06
+- numeric component/contact centers, origin, pivot, centerline, calibration,
+  physical cross-view pixel pairing, snap anchors, and component transforms
+- component masks, filled contours, geometry measurement, and interpretation
 - A001-A004 data access
 - DCC, texture, FBX, Unreal, and performance work
 - production-root creation
-- any authority beyond the approved Step 04 execution contract
+- any authority beyond the approved Step 05 execution contract
 
 ## Resume Instruction
 
-Restart with a new agent now. That agent must perform the Core resume handshake
-using this file, the Step 04 output record, component and validation manifests,
-evidence boards, and handoff. It may present a Step 05 contract only. Step 04
-approval does not authorize Step 05.
+If interruption occurs before closeout, resume Step 05 closeout only. Read this
+file, the approved Step 05 contract and output record, both approved Step 05
+manifests, evidence board, validation manifest, and handoff. Revalidate, commit
+and push only scoped Step 05 work, then require a mandatory new-agent restart.
+
+After successful closeout, the next agent must perform the Core resume
+handshake and may present a Step 06 contract only. Step 06 is not authorized.

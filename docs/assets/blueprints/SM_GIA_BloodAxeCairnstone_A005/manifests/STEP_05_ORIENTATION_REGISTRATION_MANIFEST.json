@@ -1,0 +1,2075 @@
+{
+  "schema": "aerathea.orientation_registration_manifest.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "step_id": "STEP_05",
+  "date": "2026-07-15",
+  "status": "approved_step_05_orientation_registration",
+  "artifact_classification": "authoritative",
+  "decision": "Record exact source-authored view and dimension-station pixels as registration evidence, lock only source-proven semantic correspondences, and preserve unproved physical correspondence as blocked.",
+  "authority": {
+    "contract": "steps/STEP_05_CONTRACT.md",
+    "coordinate_frame_record": "manifests/STEP_05_PIXEL_COORDINATE_FRAME_RECORD.json",
+    "panel_manifest": "manifests/STEP_03_PANEL_CROP_MANIFEST.json",
+    "component_inventory": "manifests/STEP_04_COMPONENT_OWNERSHIP_INVENTORY.json",
+    "step_04_review_mark_coordinates_used_as_registration_authority": false,
+    "legacy_asset_specific_data_allowed": false
+  },
+  "mark_policy": {
+    "coordinate_indexing": "zero_based_integer_pixel_centers",
+    "span_convention": "exclusive_edge_to_edge_half_open",
+    "marks_reference_existing_source_authored_annotation_pixels": true,
+    "colored_crosses_exist_only_on_marked_review_copies": true,
+    "source_pixels_modified": false,
+    "mark_coordinates_define_geometry": false,
+    "semantic_station_correspondence_does_not_claim_cross_view_pixel_distance": true,
+    "perspective_metric_authority": false
+  },
+  "mark_count": 46,
+  "marks": [
+    {
+      "id": "VM-PERSPECTIVE",
+      "source_view": "perspective",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_PERSPECTIVE.png",
+      "source_file_sha256": "4c49c9661f14ece54abfbfd39da9ef047e6f749638b0842d1e51eaebca2564c7",
+      "coordinate_space": "PV:perspective",
+      "pixel_local": [
+        9,
+        7
+      ],
+      "pixel_full_source": [
+        28,
+        137
+      ],
+      "world_meaning": "Source-authored panel identity; visual corroboration only.",
+      "mark_origin": "source_authored_view_label_region_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "VIEW-PERSPECTIVE",
+      "paired_marker_ids": [],
+      "height_station": null,
+      "normal_owner": "none_metric",
+      "contact_line_id": null,
+      "physical_layer_id": null,
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "VM-FRONT",
+      "source_view": "front",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_FRONT.png",
+      "source_file_sha256": "262071198bc0d409e9b68af5ac4f3c6a4768a90b1fd199342035a8a82342c2c5",
+      "coordinate_space": "PV:front",
+      "pixel_local": [
+        11,
+        9
+      ],
+      "pixel_full_source": [
+        563,
+        139
+      ],
+      "world_meaning": "Front panel identity; panel normal owner -Y.",
+      "mark_origin": "source_authored_view_label_region_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "VIEW-FRONT",
+      "paired_marker_ids": [],
+      "height_station": null,
+      "normal_owner": "-Y",
+      "contact_line_id": null,
+      "physical_layer_id": null,
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "VM-BACK",
+      "source_view": "back",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_BACK.png",
+      "source_file_sha256": "8ceae7f5ccf311ded8822fdd623d2b68009102bc07ceaf66708f59d2a013d271",
+      "coordinate_space": "PV:back",
+      "pixel_local": [
+        9,
+        11
+      ],
+      "pixel_full_source": [
+        28,
+        674
+      ],
+      "world_meaning": "Back panel identity; panel normal owner +Y.",
+      "mark_origin": "source_authored_view_label_region_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "VIEW-BACK",
+      "paired_marker_ids": [],
+      "height_station": null,
+      "normal_owner": "+Y",
+      "contact_line_id": null,
+      "physical_layer_id": null,
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "VM-LEFT",
+      "source_view": "left",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_LEFT.png",
+      "source_file_sha256": "52212ba783d026a008929e3946cac934281de7d2daec2ada316205059258cba4",
+      "coordinate_space": "PV:left",
+      "pixel_local": [
+        9,
+        8
+      ],
+      "pixel_full_source": [
+        561,
+        671
+      ],
+      "world_meaning": "Left panel identity; panel normal owner -X.",
+      "mark_origin": "source_authored_view_label_region_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "VIEW-LEFT",
+      "paired_marker_ids": [],
+      "height_station": null,
+      "normal_owner": "-X",
+      "contact_line_id": null,
+      "physical_layer_id": null,
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "VM-RIGHT",
+      "source_view": "right",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_RIGHT.png",
+      "source_file_sha256": "cc6c27405fbd6ea8c46b70966fe559acbd57acb88e58bfdcd6b763ce827a862e",
+      "coordinate_space": "PV:right",
+      "pixel_local": [
+        9,
+        7
+      ],
+      "pixel_full_source": [
+        28,
+        1080
+      ],
+      "world_meaning": "Right panel identity; panel normal owner +X.",
+      "mark_origin": "source_authored_view_label_region_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "VIEW-RIGHT",
+      "paired_marker_ids": [],
+      "height_station": null,
+      "normal_owner": "+X",
+      "contact_line_id": null,
+      "physical_layer_id": null,
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "VM-TOP",
+      "source_view": "top",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_TOP.png",
+      "source_file_sha256": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf",
+      "coordinate_space": "PV:top",
+      "pixel_local": [
+        9,
+        7
+      ],
+      "pixel_full_source": [
+        402,
+        1080
+      ],
+      "world_meaning": "Top panel identity; panel normal owner +Z.",
+      "mark_origin": "source_authored_view_label_region_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "VIEW-TOP",
+      "paired_marker_ids": [],
+      "height_station": null,
+      "normal_owner": "+Z",
+      "contact_line_id": null,
+      "physical_layer_id": null,
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "HS-Z220-FRONT",
+      "source_view": "front",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_FRONT.png",
+      "source_file_sha256": "262071198bc0d409e9b68af5ac4f3c6a4768a90b1fd199342035a8a82342c2c5",
+      "coordinate_space": "PV:front",
+      "pixel_local": [
+        77,
+        40
+      ],
+      "pixel_full_source": [
+        629,
+        170
+      ],
+      "world_meaning": "Source-authored 220 cm overall-height top-station arrow endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "HS-Z220",
+      "paired_marker_ids": [
+        "HS-Z220-BACK",
+        "HS-Z220-LEFT",
+        "HS-Z220-RIGHT"
+      ],
+      "height_station": "Z=220 cm source-authored station",
+      "normal_owner": "-Y",
+      "contact_line_id": null,
+      "physical_layer_id": null,
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "HS-Z000-OH-FRONT",
+      "source_view": "front",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_FRONT.png",
+      "source_file_sha256": "262071198bc0d409e9b68af5ac4f3c6a4768a90b1fd199342035a8a82342c2c5",
+      "coordinate_space": "PV:front",
+      "pixel_local": [
+        77,
+        415
+      ],
+      "pixel_full_source": [
+        629,
+        545
+      ],
+      "world_meaning": "Source-authored overall-height ground-station arrow endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "HS-Z000",
+      "paired_marker_ids": [
+        "HS-Z000-BH-FRONT",
+        "HS-Z000-OH-BACK",
+        "HS-Z000-BH-BACK",
+        "HS-Z000-OH-LEFT",
+        "HS-Z000-BH-LEFT",
+        "HS-Z000-OH-RIGHT",
+        "HS-Z000-BH-RIGHT"
+      ],
+      "height_station": "Z=0 cm ground station",
+      "normal_owner": "-Y",
+      "contact_line_id": null,
+      "physical_layer_id": null,
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "HS-Z035-FRONT",
+      "source_view": "front",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_FRONT.png",
+      "source_file_sha256": "262071198bc0d409e9b68af5ac4f3c6a4768a90b1fd199342035a8a82342c2c5",
+      "coordinate_space": "PV:front",
+      "pixel_local": [
+        424,
+        366
+      ],
+      "pixel_full_source": [
+        976,
+        496
+      ],
+      "world_meaning": "Source-authored 35 cm base-height top-station arrow endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "HS-Z035",
+      "paired_marker_ids": [
+        "HS-Z035-BACK",
+        "HS-Z035-LEFT",
+        "HS-Z035-RIGHT"
+      ],
+      "height_station": "Z=35 cm source-authored station",
+      "normal_owner": "-Y",
+      "contact_line_id": null,
+      "physical_layer_id": null,
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "HS-Z000-BH-FRONT",
+      "source_view": "front",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_FRONT.png",
+      "source_file_sha256": "262071198bc0d409e9b68af5ac4f3c6a4768a90b1fd199342035a8a82342c2c5",
+      "coordinate_space": "PV:front",
+      "pixel_local": [
+        424,
+        428
+      ],
+      "pixel_full_source": [
+        976,
+        558
+      ],
+      "world_meaning": "Source-authored base-height ground-station arrow endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "HS-Z000",
+      "paired_marker_ids": [
+        "HS-Z000-OH-FRONT",
+        "HS-Z000-OH-BACK",
+        "HS-Z000-BH-BACK",
+        "HS-Z000-OH-LEFT",
+        "HS-Z000-BH-LEFT",
+        "HS-Z000-OH-RIGHT",
+        "HS-Z000-BH-RIGHT"
+      ],
+      "height_station": "Z=0 cm ground station",
+      "normal_owner": "-Y",
+      "contact_line_id": null,
+      "physical_layer_id": null,
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "HS-Z220-BACK",
+      "source_view": "back",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_BACK.png",
+      "source_file_sha256": "8ceae7f5ccf311ded8822fdd623d2b68009102bc07ceaf66708f59d2a013d271",
+      "coordinate_space": "PV:back",
+      "pixel_local": [
+        64,
+        40
+      ],
+      "pixel_full_source": [
+        83,
+        703
+      ],
+      "world_meaning": "Source-authored 220 cm overall-height top-station arrow endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "HS-Z220",
+      "paired_marker_ids": [
+        "HS-Z220-FRONT",
+        "HS-Z220-LEFT",
+        "HS-Z220-RIGHT"
+      ],
+      "height_station": "Z=220 cm source-authored station",
+      "normal_owner": "+Y",
+      "contact_line_id": null,
+      "physical_layer_id": null,
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "HS-Z000-OH-BACK",
+      "source_view": "back",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_BACK.png",
+      "source_file_sha256": "8ceae7f5ccf311ded8822fdd623d2b68009102bc07ceaf66708f59d2a013d271",
+      "coordinate_space": "PV:back",
+      "pixel_local": [
+        64,
+        315
+      ],
+      "pixel_full_source": [
+        83,
+        978
+      ],
+      "world_meaning": "Source-authored overall-height ground-station arrow endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "HS-Z000",
+      "paired_marker_ids": [
+        "HS-Z000-OH-FRONT",
+        "HS-Z000-BH-FRONT",
+        "HS-Z000-BH-BACK",
+        "HS-Z000-OH-LEFT",
+        "HS-Z000-BH-LEFT",
+        "HS-Z000-OH-RIGHT",
+        "HS-Z000-BH-RIGHT"
+      ],
+      "height_station": "Z=0 cm ground station",
+      "normal_owner": "+Y",
+      "contact_line_id": null,
+      "physical_layer_id": null,
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "HS-Z035-BACK",
+      "source_view": "back",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_BACK.png",
+      "source_file_sha256": "8ceae7f5ccf311ded8822fdd623d2b68009102bc07ceaf66708f59d2a013d271",
+      "coordinate_space": "PV:back",
+      "pixel_local": [
+        405,
+        264
+      ],
+      "pixel_full_source": [
+        424,
+        927
+      ],
+      "world_meaning": "Source-authored 35 cm base-height top-station arrow endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "HS-Z035",
+      "paired_marker_ids": [
+        "HS-Z035-FRONT",
+        "HS-Z035-LEFT",
+        "HS-Z035-RIGHT"
+      ],
+      "height_station": "Z=35 cm source-authored station",
+      "normal_owner": "+Y",
+      "contact_line_id": null,
+      "physical_layer_id": null,
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "HS-Z000-BH-BACK",
+      "source_view": "back",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_BACK.png",
+      "source_file_sha256": "8ceae7f5ccf311ded8822fdd623d2b68009102bc07ceaf66708f59d2a013d271",
+      "coordinate_space": "PV:back",
+      "pixel_local": [
+        405,
+        316
+      ],
+      "pixel_full_source": [
+        424,
+        979
+      ],
+      "world_meaning": "Source-authored base-height ground-station arrow endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "HS-Z000",
+      "paired_marker_ids": [
+        "HS-Z000-OH-FRONT",
+        "HS-Z000-BH-FRONT",
+        "HS-Z000-OH-BACK",
+        "HS-Z000-OH-LEFT",
+        "HS-Z000-BH-LEFT",
+        "HS-Z000-OH-RIGHT",
+        "HS-Z000-BH-RIGHT"
+      ],
+      "height_station": "Z=0 cm ground station",
+      "normal_owner": "+Y",
+      "contact_line_id": null,
+      "physical_layer_id": null,
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "HS-Z220-LEFT",
+      "source_view": "left",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_LEFT.png",
+      "source_file_sha256": "52212ba783d026a008929e3946cac934281de7d2daec2ada316205059258cba4",
+      "coordinate_space": "PV:left",
+      "pixel_local": [
+        74,
+        39
+      ],
+      "pixel_full_source": [
+        626,
+        702
+      ],
+      "world_meaning": "Source-authored 220 cm overall-height top-station arrow endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "HS-Z220",
+      "paired_marker_ids": [
+        "HS-Z220-FRONT",
+        "HS-Z220-BACK",
+        "HS-Z220-RIGHT"
+      ],
+      "height_station": "Z=220 cm source-authored station",
+      "normal_owner": "-X",
+      "contact_line_id": null,
+      "physical_layer_id": null,
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "HS-Z000-OH-LEFT",
+      "source_view": "left",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_LEFT.png",
+      "source_file_sha256": "52212ba783d026a008929e3946cac934281de7d2daec2ada316205059258cba4",
+      "coordinate_space": "PV:left",
+      "pixel_local": [
+        74,
+        316
+      ],
+      "pixel_full_source": [
+        626,
+        979
+      ],
+      "world_meaning": "Source-authored overall-height ground-station arrow endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "HS-Z000",
+      "paired_marker_ids": [
+        "HS-Z000-OH-FRONT",
+        "HS-Z000-BH-FRONT",
+        "HS-Z000-OH-BACK",
+        "HS-Z000-BH-BACK",
+        "HS-Z000-BH-LEFT",
+        "HS-Z000-OH-RIGHT",
+        "HS-Z000-BH-RIGHT"
+      ],
+      "height_station": "Z=0 cm ground station",
+      "normal_owner": "-X",
+      "contact_line_id": null,
+      "physical_layer_id": null,
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "HS-Z035-LEFT",
+      "source_view": "left",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_LEFT.png",
+      "source_file_sha256": "52212ba783d026a008929e3946cac934281de7d2daec2ada316205059258cba4",
+      "coordinate_space": "PV:left",
+      "pixel_local": [
+        393,
+        264
+      ],
+      "pixel_full_source": [
+        945,
+        927
+      ],
+      "world_meaning": "Source-authored 35 cm base-height top-station arrow endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "HS-Z035",
+      "paired_marker_ids": [
+        "HS-Z035-FRONT",
+        "HS-Z035-BACK",
+        "HS-Z035-RIGHT"
+      ],
+      "height_station": "Z=35 cm source-authored station",
+      "normal_owner": "-X",
+      "contact_line_id": null,
+      "physical_layer_id": null,
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "HS-Z000-BH-LEFT",
+      "source_view": "left",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_LEFT.png",
+      "source_file_sha256": "52212ba783d026a008929e3946cac934281de7d2daec2ada316205059258cba4",
+      "coordinate_space": "PV:left",
+      "pixel_local": [
+        393,
+        316
+      ],
+      "pixel_full_source": [
+        945,
+        979
+      ],
+      "world_meaning": "Source-authored base-height ground-station arrow endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "HS-Z000",
+      "paired_marker_ids": [
+        "HS-Z000-OH-FRONT",
+        "HS-Z000-BH-FRONT",
+        "HS-Z000-OH-BACK",
+        "HS-Z000-BH-BACK",
+        "HS-Z000-OH-LEFT",
+        "HS-Z000-OH-RIGHT",
+        "HS-Z000-BH-RIGHT"
+      ],
+      "height_station": "Z=0 cm ground station",
+      "normal_owner": "-X",
+      "contact_line_id": null,
+      "physical_layer_id": null,
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "HS-Z220-RIGHT",
+      "source_view": "right",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_RIGHT.png",
+      "source_file_sha256": "cc6c27405fbd6ea8c46b70966fe559acbd57acb88e58bfdcd6b763ce827a862e",
+      "coordinate_space": "PV:right",
+      "pixel_local": [
+        58,
+        37
+      ],
+      "pixel_full_source": [
+        77,
+        1110
+      ],
+      "world_meaning": "Source-authored 220 cm overall-height top-station arrow endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "HS-Z220",
+      "paired_marker_ids": [
+        "HS-Z220-FRONT",
+        "HS-Z220-BACK",
+        "HS-Z220-LEFT"
+      ],
+      "height_station": "Z=220 cm source-authored station",
+      "normal_owner": "+X",
+      "contact_line_id": null,
+      "physical_layer_id": null,
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "HS-Z000-OH-RIGHT",
+      "source_view": "right",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_RIGHT.png",
+      "source_file_sha256": "cc6c27405fbd6ea8c46b70966fe559acbd57acb88e58bfdcd6b763ce827a862e",
+      "coordinate_space": "PV:right",
+      "pixel_local": [
+        58,
+        291
+      ],
+      "pixel_full_source": [
+        77,
+        1364
+      ],
+      "world_meaning": "Source-authored overall-height ground-station arrow endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "HS-Z000",
+      "paired_marker_ids": [
+        "HS-Z000-OH-FRONT",
+        "HS-Z000-BH-FRONT",
+        "HS-Z000-OH-BACK",
+        "HS-Z000-BH-BACK",
+        "HS-Z000-OH-LEFT",
+        "HS-Z000-BH-LEFT",
+        "HS-Z000-BH-RIGHT"
+      ],
+      "height_station": "Z=0 cm ground station",
+      "normal_owner": "+X",
+      "contact_line_id": null,
+      "physical_layer_id": null,
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "HS-Z035-RIGHT",
+      "source_view": "right",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_RIGHT.png",
+      "source_file_sha256": "cc6c27405fbd6ea8c46b70966fe559acbd57acb88e58bfdcd6b763ce827a862e",
+      "coordinate_space": "PV:right",
+      "pixel_local": [
+        312,
+        247
+      ],
+      "pixel_full_source": [
+        331,
+        1320
+      ],
+      "world_meaning": "Source-authored 35 cm base-height top-station arrow endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "HS-Z035",
+      "paired_marker_ids": [
+        "HS-Z035-FRONT",
+        "HS-Z035-BACK",
+        "HS-Z035-LEFT"
+      ],
+      "height_station": "Z=35 cm source-authored station",
+      "normal_owner": "+X",
+      "contact_line_id": null,
+      "physical_layer_id": null,
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "HS-Z000-BH-RIGHT",
+      "source_view": "right",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_RIGHT.png",
+      "source_file_sha256": "cc6c27405fbd6ea8c46b70966fe559acbd57acb88e58bfdcd6b763ce827a862e",
+      "coordinate_space": "PV:right",
+      "pixel_local": [
+        312,
+        294
+      ],
+      "pixel_full_source": [
+        331,
+        1367
+      ],
+      "world_meaning": "Source-authored base-height ground-station arrow endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "HS-Z000",
+      "paired_marker_ids": [
+        "HS-Z000-OH-FRONT",
+        "HS-Z000-BH-FRONT",
+        "HS-Z000-OH-BACK",
+        "HS-Z000-BH-BACK",
+        "HS-Z000-OH-LEFT",
+        "HS-Z000-BH-LEFT",
+        "HS-Z000-OH-RIGHT"
+      ],
+      "height_station": "Z=0 cm ground station",
+      "normal_owner": "+X",
+      "contact_line_id": null,
+      "physical_layer_id": null,
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "XS-C001-XNEG-FRONT",
+      "source_view": "front",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_FRONT.png",
+      "source_file_sha256": "262071198bc0d409e9b68af5ac4f3c6a4768a90b1fd199342035a8a82342c2c5",
+      "coordinate_space": "PV:front",
+      "pixel_local": [
+        136,
+        450
+      ],
+      "pixel_full_source": [
+        688,
+        580
+      ],
+      "world_meaning": "Source-authored 120 cm monolith maximum-width XNEG span endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "XS-C001-XNEG",
+      "paired_marker_ids": [
+        "XS-C001-XNEG-BACK",
+        "XS-C001-XNEG-TOP"
+      ],
+      "height_station": null,
+      "normal_owner": "-Y",
+      "contact_line_id": null,
+      "physical_layer_id": "C-001",
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "XS-C004-XNEG-FRONT",
+      "source_view": "front",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_FRONT.png",
+      "source_file_sha256": "262071198bc0d409e9b68af5ac4f3c6a4768a90b1fd199342035a8a82342c2c5",
+      "coordinate_space": "PV:front",
+      "pixel_local": [
+        105,
+        492
+      ],
+      "pixel_full_source": [
+        657,
+        622
+      ],
+      "world_meaning": "Source-authored 140 cm base-footprint width XNEG span endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "XS-C004-XNEG",
+      "paired_marker_ids": [
+        "XS-C004-XNEG-BACK",
+        "XS-C004-XNEG-TOP"
+      ],
+      "height_station": null,
+      "normal_owner": "-Y",
+      "contact_line_id": null,
+      "physical_layer_id": "C-004",
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "XS-C001-XPOS-FRONT",
+      "source_view": "front",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_FRONT.png",
+      "source_file_sha256": "262071198bc0d409e9b68af5ac4f3c6a4768a90b1fd199342035a8a82342c2c5",
+      "coordinate_space": "PV:front",
+      "pixel_local": [
+        366,
+        450
+      ],
+      "pixel_full_source": [
+        918,
+        580
+      ],
+      "world_meaning": "Source-authored 120 cm monolith maximum-width XPOS span endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "XS-C001-XPOS",
+      "paired_marker_ids": [
+        "XS-C001-XPOS-BACK",
+        "XS-C001-XPOS-TOP"
+      ],
+      "height_station": null,
+      "normal_owner": "-Y",
+      "contact_line_id": null,
+      "physical_layer_id": "C-001",
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "XS-C004-XPOS-FRONT",
+      "source_view": "front",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_FRONT.png",
+      "source_file_sha256": "262071198bc0d409e9b68af5ac4f3c6a4768a90b1fd199342035a8a82342c2c5",
+      "coordinate_space": "PV:front",
+      "pixel_local": [
+        395,
+        492
+      ],
+      "pixel_full_source": [
+        947,
+        622
+      ],
+      "world_meaning": "Source-authored 140 cm base-footprint width XPOS span endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "XS-C004-XPOS",
+      "paired_marker_ids": [
+        "XS-C004-XPOS-BACK",
+        "XS-C004-XPOS-TOP"
+      ],
+      "height_station": null,
+      "normal_owner": "-Y",
+      "contact_line_id": null,
+      "physical_layer_id": "C-004",
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "XS-C001-XPOS-BACK",
+      "source_view": "back",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_BACK.png",
+      "source_file_sha256": "8ceae7f5ccf311ded8822fdd623d2b68009102bc07ceaf66708f59d2a013d271",
+      "coordinate_space": "PV:back",
+      "pixel_local": [
+        148,
+        336
+      ],
+      "pixel_full_source": [
+        167,
+        999
+      ],
+      "world_meaning": "Source-authored 120 cm monolith maximum-width XPOS span endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "XS-C001-XPOS",
+      "paired_marker_ids": [
+        "XS-C001-XPOS-FRONT",
+        "XS-C001-XPOS-TOP"
+      ],
+      "height_station": null,
+      "normal_owner": "+Y",
+      "contact_line_id": null,
+      "physical_layer_id": "C-001",
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "XS-C004-XPOS-BACK",
+      "source_view": "back",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_BACK.png",
+      "source_file_sha256": "8ceae7f5ccf311ded8822fdd623d2b68009102bc07ceaf66708f59d2a013d271",
+      "coordinate_space": "PV:back",
+      "pixel_local": [
+        119,
+        373
+      ],
+      "pixel_full_source": [
+        138,
+        1036
+      ],
+      "world_meaning": "Source-authored 140 cm base-footprint width XPOS span endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "XS-C004-XPOS",
+      "paired_marker_ids": [
+        "XS-C004-XPOS-FRONT",
+        "XS-C004-XPOS-TOP"
+      ],
+      "height_station": null,
+      "normal_owner": "+Y",
+      "contact_line_id": null,
+      "physical_layer_id": "C-004",
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "XS-C001-XNEG-BACK",
+      "source_view": "back",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_BACK.png",
+      "source_file_sha256": "8ceae7f5ccf311ded8822fdd623d2b68009102bc07ceaf66708f59d2a013d271",
+      "coordinate_space": "PV:back",
+      "pixel_local": [
+        337,
+        336
+      ],
+      "pixel_full_source": [
+        356,
+        999
+      ],
+      "world_meaning": "Source-authored 120 cm monolith maximum-width XNEG span endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "XS-C001-XNEG",
+      "paired_marker_ids": [
+        "XS-C001-XNEG-FRONT",
+        "XS-C001-XNEG-TOP"
+      ],
+      "height_station": null,
+      "normal_owner": "+Y",
+      "contact_line_id": null,
+      "physical_layer_id": "C-001",
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "XS-C004-XNEG-BACK",
+      "source_view": "back",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_BACK.png",
+      "source_file_sha256": "8ceae7f5ccf311ded8822fdd623d2b68009102bc07ceaf66708f59d2a013d271",
+      "coordinate_space": "PV:back",
+      "pixel_local": [
+        364,
+        373
+      ],
+      "pixel_full_source": [
+        383,
+        1036
+      ],
+      "world_meaning": "Source-authored 140 cm base-footprint width XNEG span endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "XS-C004-XNEG",
+      "paired_marker_ids": [
+        "XS-C004-XNEG-FRONT",
+        "XS-C004-XNEG-TOP"
+      ],
+      "height_station": null,
+      "normal_owner": "+Y",
+      "contact_line_id": null,
+      "physical_layer_id": "C-004",
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "XS-C001-XNEG-TOP",
+      "source_view": "top",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_TOP.png",
+      "source_file_sha256": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf",
+      "coordinate_space": "PV:top",
+      "pixel_local": [
+        56,
+        277
+      ],
+      "pixel_full_source": [
+        449,
+        1350
+      ],
+      "world_meaning": "Source-authored 120 cm monolith maximum-width XNEG span endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "XS-C001-XNEG",
+      "paired_marker_ids": [
+        "XS-C001-XNEG-FRONT",
+        "XS-C001-XNEG-BACK"
+      ],
+      "height_station": null,
+      "normal_owner": "+Z",
+      "contact_line_id": null,
+      "physical_layer_id": "C-001",
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "XS-C004-XNEG-TOP",
+      "source_view": "top",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_TOP.png",
+      "source_file_sha256": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf",
+      "coordinate_space": "PV:top",
+      "pixel_local": [
+        31,
+        316
+      ],
+      "pixel_full_source": [
+        424,
+        1389
+      ],
+      "world_meaning": "Source-authored 140 cm base-footprint width XNEG span endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "XS-C004-XNEG",
+      "paired_marker_ids": [
+        "XS-C004-XNEG-FRONT",
+        "XS-C004-XNEG-BACK"
+      ],
+      "height_station": null,
+      "normal_owner": "+Z",
+      "contact_line_id": null,
+      "physical_layer_id": "C-004",
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "XS-C001-XPOS-TOP",
+      "source_view": "top",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_TOP.png",
+      "source_file_sha256": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf",
+      "coordinate_space": "PV:top",
+      "pixel_local": [
+        215,
+        278
+      ],
+      "pixel_full_source": [
+        608,
+        1351
+      ],
+      "world_meaning": "Source-authored 120 cm monolith maximum-width XPOS span endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "XS-C001-XPOS",
+      "paired_marker_ids": [
+        "XS-C001-XPOS-FRONT",
+        "XS-C001-XPOS-BACK"
+      ],
+      "height_station": null,
+      "normal_owner": "+Z",
+      "contact_line_id": null,
+      "physical_layer_id": "C-001",
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "XS-C004-XPOS-TOP",
+      "source_view": "top",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_TOP.png",
+      "source_file_sha256": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf",
+      "coordinate_space": "PV:top",
+      "pixel_local": [
+        239,
+        316
+      ],
+      "pixel_full_source": [
+        632,
+        1389
+      ],
+      "world_meaning": "Source-authored 140 cm base-footprint width XPOS span endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "XS-C004-XPOS",
+      "paired_marker_ids": [
+        "XS-C004-XPOS-FRONT",
+        "XS-C004-XPOS-BACK"
+      ],
+      "height_station": null,
+      "normal_owner": "+Z",
+      "contact_line_id": null,
+      "physical_layer_id": "C-004",
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "YS-C001-YPOS-LEFT",
+      "source_view": "left",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_LEFT.png",
+      "source_file_sha256": "52212ba783d026a008929e3946cac934281de7d2daec2ada316205059258cba4",
+      "coordinate_space": "PV:left",
+      "pixel_local": [
+        144,
+        336
+      ],
+      "pixel_full_source": [
+        696,
+        999
+      ],
+      "world_meaning": "Source-authored 90 cm monolith maximum-depth YPOS span endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "YS-C001-YPOS",
+      "paired_marker_ids": [
+        "YS-C001-YPOS-RIGHT",
+        "YS-C001-YPOS-TOP"
+      ],
+      "height_station": null,
+      "normal_owner": "-X",
+      "contact_line_id": null,
+      "physical_layer_id": "C-001",
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "YS-C004-YPOS-LEFT",
+      "source_view": "left",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_LEFT.png",
+      "source_file_sha256": "52212ba783d026a008929e3946cac934281de7d2daec2ada316205059258cba4",
+      "coordinate_space": "PV:left",
+      "pixel_local": [
+        117,
+        373
+      ],
+      "pixel_full_source": [
+        669,
+        1036
+      ],
+      "world_meaning": "Source-authored 110 cm base-footprint depth YPOS span endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "YS-C004-YPOS",
+      "paired_marker_ids": [
+        "YS-C004-YPOS-RIGHT",
+        "YS-C004-YPOS-TOP"
+      ],
+      "height_station": null,
+      "normal_owner": "-X",
+      "contact_line_id": null,
+      "physical_layer_id": "C-004",
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "YS-C001-YNEG-LEFT",
+      "source_view": "left",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_LEFT.png",
+      "source_file_sha256": "52212ba783d026a008929e3946cac934281de7d2daec2ada316205059258cba4",
+      "coordinate_space": "PV:left",
+      "pixel_local": [
+        312,
+        336
+      ],
+      "pixel_full_source": [
+        864,
+        999
+      ],
+      "world_meaning": "Source-authored 90 cm monolith maximum-depth YNEG span endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "YS-C001-YNEG",
+      "paired_marker_ids": [
+        "YS-C001-YNEG-RIGHT",
+        "YS-C001-YNEG-TOP"
+      ],
+      "height_station": null,
+      "normal_owner": "-X",
+      "contact_line_id": null,
+      "physical_layer_id": "C-001",
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "YS-C004-YNEG-LEFT",
+      "source_view": "left",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_LEFT.png",
+      "source_file_sha256": "52212ba783d026a008929e3946cac934281de7d2daec2ada316205059258cba4",
+      "coordinate_space": "PV:left",
+      "pixel_local": [
+        342,
+        373
+      ],
+      "pixel_full_source": [
+        894,
+        1036
+      ],
+      "world_meaning": "Source-authored 110 cm base-footprint depth YNEG span endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "YS-C004-YNEG",
+      "paired_marker_ids": [
+        "YS-C004-YNEG-RIGHT",
+        "YS-C004-YNEG-TOP"
+      ],
+      "height_station": null,
+      "normal_owner": "-X",
+      "contact_line_id": null,
+      "physical_layer_id": "C-004",
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "YS-C001-YNEG-RIGHT",
+      "source_view": "right",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_RIGHT.png",
+      "source_file_sha256": "cc6c27405fbd6ea8c46b70966fe559acbd57acb88e58bfdcd6b763ce827a862e",
+      "coordinate_space": "PV:right",
+      "pixel_local": [
+        108,
+        313
+      ],
+      "pixel_full_source": [
+        127,
+        1386
+      ],
+      "world_meaning": "Source-authored 90 cm monolith maximum-depth YNEG span endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "YS-C001-YNEG",
+      "paired_marker_ids": [
+        "YS-C001-YNEG-LEFT",
+        "YS-C001-YNEG-TOP"
+      ],
+      "height_station": null,
+      "normal_owner": "+X",
+      "contact_line_id": null,
+      "physical_layer_id": "C-001",
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "YS-C004-YNEG-RIGHT",
+      "source_view": "right",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_RIGHT.png",
+      "source_file_sha256": "cc6c27405fbd6ea8c46b70966fe559acbd57acb88e58bfdcd6b763ce827a862e",
+      "coordinate_space": "PV:right",
+      "pixel_local": [
+        85,
+        346
+      ],
+      "pixel_full_source": [
+        104,
+        1419
+      ],
+      "world_meaning": "Source-authored 110 cm base-footprint depth YNEG span endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "YS-C004-YNEG",
+      "paired_marker_ids": [
+        "YS-C004-YNEG-LEFT",
+        "YS-C004-YNEG-TOP"
+      ],
+      "height_station": null,
+      "normal_owner": "+X",
+      "contact_line_id": null,
+      "physical_layer_id": "C-004",
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "YS-C001-YPOS-RIGHT",
+      "source_view": "right",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_RIGHT.png",
+      "source_file_sha256": "cc6c27405fbd6ea8c46b70966fe559acbd57acb88e58bfdcd6b763ce827a862e",
+      "coordinate_space": "PV:right",
+      "pixel_local": [
+        252,
+        313
+      ],
+      "pixel_full_source": [
+        271,
+        1386
+      ],
+      "world_meaning": "Source-authored 90 cm monolith maximum-depth YPOS span endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "YS-C001-YPOS",
+      "paired_marker_ids": [
+        "YS-C001-YPOS-LEFT",
+        "YS-C001-YPOS-TOP"
+      ],
+      "height_station": null,
+      "normal_owner": "+X",
+      "contact_line_id": null,
+      "physical_layer_id": "C-001",
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "YS-C004-YPOS-RIGHT",
+      "source_view": "right",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_RIGHT.png",
+      "source_file_sha256": "cc6c27405fbd6ea8c46b70966fe559acbd57acb88e58bfdcd6b763ce827a862e",
+      "coordinate_space": "PV:right",
+      "pixel_local": [
+        278,
+        346
+      ],
+      "pixel_full_source": [
+        297,
+        1419
+      ],
+      "world_meaning": "Source-authored 110 cm base-footprint depth YPOS span endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "YS-C004-YPOS",
+      "paired_marker_ids": [
+        "YS-C004-YPOS-LEFT",
+        "YS-C004-YPOS-TOP"
+      ],
+      "height_station": null,
+      "normal_owner": "+X",
+      "contact_line_id": null,
+      "physical_layer_id": "C-004",
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "YS-C001-YPOS-TOP",
+      "source_view": "top",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_TOP.png",
+      "source_file_sha256": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf",
+      "coordinate_space": "PV:top",
+      "pixel_local": [
+        263,
+        45
+      ],
+      "pixel_full_source": [
+        656,
+        1118
+      ],
+      "world_meaning": "Source-authored 90 cm monolith maximum-depth YPOS span endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "YS-C001-YPOS",
+      "paired_marker_ids": [
+        "YS-C001-YPOS-LEFT",
+        "YS-C001-YPOS-RIGHT"
+      ],
+      "height_station": null,
+      "normal_owner": "+Z",
+      "contact_line_id": null,
+      "physical_layer_id": "C-001",
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "YS-C004-YPOS-TOP",
+      "source_view": "top",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_TOP.png",
+      "source_file_sha256": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf",
+      "coordinate_space": "PV:top",
+      "pixel_local": [
+        263,
+        151
+      ],
+      "pixel_full_source": [
+        656,
+        1224
+      ],
+      "world_meaning": "Source-authored 110 cm base-footprint depth YPOS span endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "YS-C004-YPOS",
+      "paired_marker_ids": [
+        "YS-C004-YPOS-LEFT",
+        "YS-C004-YPOS-RIGHT"
+      ],
+      "height_station": null,
+      "normal_owner": "+Z",
+      "contact_line_id": null,
+      "physical_layer_id": "C-004",
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "YS-C001-YNEG-TOP",
+      "source_view": "top",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_TOP.png",
+      "source_file_sha256": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf",
+      "coordinate_space": "PV:top",
+      "pixel_local": [
+        263,
+        139
+      ],
+      "pixel_full_source": [
+        656,
+        1212
+      ],
+      "world_meaning": "Source-authored 90 cm monolith maximum-depth YNEG span endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "YS-C001-YNEG",
+      "paired_marker_ids": [
+        "YS-C001-YNEG-LEFT",
+        "YS-C001-YNEG-RIGHT"
+      ],
+      "height_station": null,
+      "normal_owner": "+Z",
+      "contact_line_id": null,
+      "physical_layer_id": "C-001",
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    },
+    {
+      "id": "YS-C004-YNEG-TOP",
+      "source_view": "top",
+      "source_file": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_TOP.png",
+      "source_file_sha256": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf",
+      "coordinate_space": "PV:top",
+      "pixel_local": [
+        263,
+        291
+      ],
+      "pixel_full_source": [
+        656,
+        1364
+      ],
+      "world_meaning": "Source-authored 110 cm base-footprint depth YNEG span endpoint.",
+      "mark_origin": "source_authored_dimension_arrow_endpoint_pixel",
+      "overlay_classification": "review_only_registration_mark",
+      "geometry_owner": false,
+      "source_pixel_modified": false,
+      "excluded_from": [
+        "texture",
+        "mesh",
+        "render",
+        "export",
+        "shipping_asset"
+      ],
+      "correspondence_id": "YS-C004-YNEG",
+      "paired_marker_ids": [
+        "YS-C004-YNEG-LEFT",
+        "YS-C004-YNEG-RIGHT"
+      ],
+      "height_station": null,
+      "normal_owner": "+Z",
+      "contact_line_id": null,
+      "physical_layer_id": "C-004",
+      "source_coordinate_tolerance_px": 0,
+      "world_translation_tolerance_cm": null,
+      "world_rotation_tolerance_deg": null
+    }
+  ],
+  "panel_normal_owner_ids": [
+    {
+      "id": "NO-FRONT",
+      "source_view": "front",
+      "world_normal_owner": "-Y",
+      "scope": "panel frame only; not individual physical facets"
+    },
+    {
+      "id": "NO-BACK",
+      "source_view": "back",
+      "world_normal_owner": "+Y",
+      "scope": "panel frame only; not individual physical facets"
+    },
+    {
+      "id": "NO-LEFT",
+      "source_view": "left",
+      "world_normal_owner": "-X",
+      "scope": "panel frame only; not individual physical facets"
+    },
+    {
+      "id": "NO-RIGHT",
+      "source_view": "right",
+      "world_normal_owner": "+X",
+      "scope": "panel frame only; not individual physical facets"
+    },
+    {
+      "id": "NO-TOP",
+      "source_view": "top",
+      "world_normal_owner": "+Z",
+      "scope": "panel frame only; not individual physical facets"
+    },
+    {
+      "id": "NO-PERSPECTIVE",
+      "source_view": "perspective",
+      "world_normal_owner": null,
+      "scope": "uncalibrated visual corroboration only"
+    }
+  ],
+  "contact_correspondence_ids": [
+    {
+      "id": "RC-CL001",
+      "contact_line_id": "CL-001",
+      "between": [
+        "C-001",
+        "C-002"
+      ],
+      "semantic_relation": "authoritative_from_step_04",
+      "pixel_to_pixel_pairing": "blocked_by_U_007_U_008",
+      "snap_anchor_authority": false
+    },
+    {
+      "id": "RC-CL002",
+      "contact_line_id": "CL-002",
+      "between": [
+        "C-002",
+        "C-003"
+      ],
+      "semantic_relation": "authoritative_from_step_04",
+      "pixel_to_pixel_pairing": "blocked_by_U_007_U_008",
+      "snap_anchor_authority": false
+    },
+    {
+      "id": "RC-CL003",
+      "contact_line_id": "CL-003",
+      "between": [
+        "C-003",
+        "C-004"
+      ],
+      "semantic_relation": "authoritative_from_step_04",
+      "pixel_to_pixel_pairing": "blocked_by_U_007_U_008",
+      "snap_anchor_authority": false
+    }
+  ],
+  "blocked_physical_correspondence": [
+    {
+      "id": "BCR-001",
+      "subject": "C-001 front-left/front-right/back-left/back-right physical corner or exterior seam pixels",
+      "status": "blocked_unknown",
+      "blocked_by": [
+        "U-001",
+        "U-008"
+      ],
+      "reason": "Silhouette-side similarity does not prove a shared physical corner on the irregular source object."
+    },
+    {
+      "id": "BCR-002",
+      "subject": "Individual C-002 and C-003 masonry divisions across views",
+      "status": "blocked_unknown",
+      "blocked_by": [
+        "U-002",
+        "U-003",
+        "U-008"
+      ],
+      "reason": "Visible divisions do not prove hidden interfaces or cross-view stone identity."
+    },
+    {
+      "id": "BCR-003",
+      "subject": "Individual C-004 peripheral small-form identity across views",
+      "status": "blocked_unknown",
+      "blocked_by": [
+        "U-004",
+        "U-008"
+      ],
+      "reason": "Occlusion prevents exact one-to-one cross-view identity."
+    },
+    {
+      "id": "BCR-004",
+      "subject": "C-005 motif correspondence outside front and top",
+      "status": "blocked_unknown",
+      "blocked_by": [
+        "U-005",
+        "U-006",
+        "U-009"
+      ],
+      "reason": "Absence, occlusion, representation, and physical identity are unproved."
+    },
+    {
+      "id": "BCR-005",
+      "subject": "C-006 and C-007 individual line-feature identity across views",
+      "status": "blocked_unknown",
+      "blocked_by": [
+        "U-005",
+        "U-008",
+        "U-009"
+      ],
+      "reason": "Similar line appearance is not calibrated physical correspondence."
+    },
+    {
+      "id": "BCR-006",
+      "subject": "Individual physical facet normal owners",
+      "status": "blocked_unknown",
+      "blocked_by": [
+        "U-001",
+        "U-002",
+        "U-003",
+        "U-004",
+        "U-008"
+      ],
+      "reason": "Panel normal owners lock only the orthographic frame; they do not solve irregular facet normals."
+    },
+    {
+      "id": "BCR-007",
+      "subject": "Numeric component centers, contact centers, origin, pivot, and centerline",
+      "status": "blocked_pending_measurement",
+      "blocked_by": [
+        "STEP_06",
+        "STEP_07",
+        "STEP_08"
+      ],
+      "reason": "Step 05 locks authority types only; numeric values require approved formula-derived measurements."
+    }
+  ],
+  "evidence_board": {
+    "path": "evidence/STEP_05/SM_GIA_BloodAxeCairnstone_A005_STEP_05_REGISTRATION_EVIDENCE.png",
+    "format": "paired_exact_source_and_marked_copy_rows",
+    "source_tiles_resampled": false,
+    "marked_tiles_resampled": false,
+    "fills_present": false,
+    "closed_candidate_contours_present": false,
+    "file_sha256": "5e44b5de6661e7da03300ae4420c65a0e409684dd9449fcd01e8f8d659868d24",
+    "pixel_sha256": "be8b5c4f0aa6bafa4d65d3b63e96a96a6c8ee09198485424f54ee9bac65052a3",
+    "size_px": [1144, 3346],
+    "left_source_tiles": [
+      {
+        "view": "perspective",
+        "source_pixel_sha256": "9b772aefc3aea81a65a419863a85d3682a9e870505a419eeacef9a582568bd8f",
+        "box_half_open": [30, 204, 552, 729],
+        "pixel_exact_required": true
+      },
+      {
+        "view": "front",
+        "source_pixel_sha256": "d4fb34cb01ce6eaa04213a5a7c517743960daec6dcf638c53ec80a958ecc807f",
+        "box_half_open": [30, 785, 513, 1310],
+        "pixel_exact_required": true
+      },
+      {
+        "view": "back",
+        "source_pixel_sha256": "9256a8df175cbf54ca0662b11e0c5f5f6be4e670b10a9783efc1d6e9e26a56b1",
+        "box_half_open": [30, 1366, 552, 1767],
+        "pixel_exact_required": true
+      },
+      {
+        "view": "left",
+        "source_pixel_sha256": "96a10daa637b28b879b5dd210bad3526e87499218dece9ca4ed0560046c9bddb",
+        "box_half_open": [30, 1823, 514, 2224],
+        "pixel_exact_required": true
+      },
+      {
+        "view": "right",
+        "source_pixel_sha256": "f6201cbae75fa061f7614893d7f2c081149a350fc6d64ad510b49ef5c12d7610",
+        "box_half_open": [30, 2280, 397, 2652],
+        "pixel_exact_required": true
+      },
+      {
+        "view": "top",
+        "source_pixel_sha256": "eda0f5d691336489e257a44b09f58b8543b023bd4edc0893d5fab68ad8dbf05f",
+        "box_half_open": [30, 2708, 367, 3079],
+        "pixel_exact_required": true
+      }
+    ]
+  },
+  "access_declaration": {
+    "a001_a004_asset_specific_data_accessed": false,
+    "old_registration_coordinates_accessed": false,
+    "step_04_review_mark_coordinates_used": false,
+    "source_or_approved_panel_modified": false,
+    "interpretation_introduced": false,
+    "measurement_or_calibration_created": false,
+    "geometry_or_production_artifact_created": false
+  },
+  "flamestrike_output_approval": {
+    "date": "2026-07-15",
+    "statement": "approved",
+    "result": "pass",
+    "scope": "Forty-six exact source registration marks, semantic station/span correspondence IDs, panel normal-owner frame records, contact-relation preservation, and seven blocked physical-correspondence categories.",
+    "blocked_physical_correspondence_resolved": false,
+    "numeric_measurement_authorized": false,
+    "interpretation_authorized": false,
+    "step_06_authorized": false,
+    "approved_pre_closeout_checkpoint": "Saved/ProjectRecovery/20260715-141013/"
+  }
+}
