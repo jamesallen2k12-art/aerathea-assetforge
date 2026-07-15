@@ -1,0 +1,87 @@
+{
+  "schema": "aerathea.exact_view_measurement_manifest.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "step_id": "STEP_06",
+  "view": "front",
+  "date": "2026-07-15",
+  "status": "approved_step_06_front_pixel_measurements_world_conversion_blocked",
+  "artifact_classification": "authoritative",
+  "source_panel": {
+    "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_FRONT.png",
+    "file_sha256": "262071198bc0d409e9b68af5ac4f3c6a4768a90b1fd199342035a8a82342c2c5",
+    "pixel_sha256": "d4fb34cb01ce6eaa04213a5a7c517743960daec6dcf638c53ec80a958ecc807f",
+    "size_px": [483, 525],
+    "full_source_offset": [552, 130]
+  },
+  "calibration_record": "manifests/STEP_06_FRONT_CALIBRATION_RECORD.json",
+  "selection_policy": {
+    "method": "manual_native_pixel_source_boundary_review",
+    "diagnostic_location_scan_is_authority": false,
+    "retained_coordinates_visually_audited_against_source": true,
+    "row_span_represents_fill": false,
+    "row_span_role": "distance_between_two_exact_source_visible_outer_edge_pixels_at_one_row",
+    "smoothing_allowed": false,
+    "inferred_closure_allowed": false
+  },
+  "height_station_observations": [
+    {"id": "HS-Z220-FRONT", "pixel_local": [77, 40], "declared_station_cm": 220, "role": "annotation_endpoint_only"},
+    {"id": "HS-Z000-OH-FRONT", "pixel_local": [77, 415], "declared_station_cm": 0, "role": "annotation_endpoint_only"},
+    {"id": "HS-Z035-FRONT", "pixel_local": [424, 366], "declared_station_cm": 35, "role": "annotation_endpoint_only"},
+    {"id": "HS-Z000-BH-FRONT", "pixel_local": [424, 428], "declared_station_cm": 0, "role": "annotation_endpoint_only"}
+  ],
+  "visible_outer_edge_row_samples": [
+    {"id": "F-C001-R035", "component_id": "C-001", "y": 35, "span_half_open": [227, 264], "width_px": 37, "profile_center_x_px": 245.0},
+    {"id": "F-C001-R040", "component_id": "C-001", "y": 40, "span_half_open": [206, 285], "width_px": 79, "profile_center_x_px": 245.0},
+    {"id": "F-C001-R100", "component_id": "C-001", "y": 100, "span_half_open": [189, 300], "width_px": 111, "profile_center_x_px": 244.0},
+    {"id": "F-C001-R200", "component_id": "C-001", "y": 200, "span_half_open": [171, 324], "width_px": 153, "profile_center_x_px": 247.0},
+    {"id": "F-C001-R300", "component_id": "C-001", "y": 300, "span_half_open": [152, 346], "width_px": 194, "profile_center_x_px": 248.5},
+    {"id": "F-C001-R330", "component_id": "C-001", "y": 330, "span_half_open": [152, 347], "width_px": 195, "profile_center_x_px": 249.0},
+    {"id": "F-C002-R345", "component_id": "C-002", "y": 345, "span_half_open": [135, 366], "width_px": 231, "profile_center_x_px": 250.0},
+    {"id": "F-C002-R355", "component_id": "C-002", "y": 355, "span_half_open": [134, 366], "width_px": 232, "profile_center_x_px": 249.5},
+    {"id": "F-C002-R360", "component_id": "C-002", "y": 360, "span_half_open": [127, 372], "width_px": 245, "profile_center_x_px": 249.0},
+    {"id": "F-C003-R375", "component_id": "C-003", "y": 375, "span_half_open": [120, 381], "width_px": 261, "profile_center_x_px": 250.0},
+    {"id": "F-C003-R380", "component_id": "C-003", "y": 380, "span_half_open": [119, 381], "width_px": 262, "profile_center_x_px": 249.5},
+    {"id": "F-C003-R385", "component_id": "C-003", "y": 385, "span_half_open": [115, 388], "width_px": 273, "profile_center_x_px": 251.0},
+    {"id": "F-C003-R390", "component_id": "C-003", "y": 390, "span_half_open": [111, 388], "width_px": 277, "profile_center_x_px": 249.0}
+  ],
+  "irregular_C004_outer_edge_observations": [
+    {"id": "F-C004-R400", "y": 400, "left_source_pixel": [107, 400], "right_source_pixel": [393, 400], "interior_span_owned": false},
+    {"id": "F-C004-R410", "y": 410, "left_source_pixel": [106, 410], "right_source_pixel": [394, 410], "interior_span_owned": false},
+    {"id": "F-C004-R420", "y": 420, "left_source_pixel": [134, 420], "right_source_pixel": [372, 420], "interior_span_owned": false},
+    {"id": "F-C004-R425", "y": 425, "visible_segments_half_open": [[179, 183], [189, 330]], "intervening_gap_owned": false}
+  ],
+  "contact_line_samples": [
+    {"contact_id": "CL-001", "between": ["C-001", "C-002"], "classification": "visible_discontinuous", "open_segments": [[[136, 341], [145, 339], [151, 340]], [[346, 340], [354, 339], [363, 342]]], "closure_authorized": false},
+    {"contact_id": "CL-002", "between": ["C-002", "C-003"], "classification": "visible_discontinuous", "open_segments": [[[120, 365], [127, 360], [134, 356]], [[365, 356], [372, 360], [379, 365]]], "closure_authorized": false},
+    {"contact_id": "CL-003", "between": ["C-003", "C-004"], "classification": "visible_discontinuous", "open_segments": [[[119, 391], [126, 394], [133, 397]], [[166, 400], [171, 403]], [[296, 403], [301, 400]], [[373, 397], [381, 394]]], "closure_authorized": false}
+  ],
+  "source_feature_landmarks": [
+    {"component_id": "C-005", "observation_id": "F-C005-BILATERAL-MOTIF", "visibility": "visible", "landmarks": [[212, 135], [220, 145], [249, 132], [285, 120], [290, 130], [199, 199], [297, 200], [249, 328]], "physical_geometry_authority": false},
+    {"component_id": "C-006", "observation_id": "F-C006-LEFT-LINEAR", "visibility": "visible", "landmarks": [[189, 199], [210, 206], [187, 273], [210, 271]], "physical_geometry_authority": false},
+    {"component_id": "C-006", "observation_id": "F-C006-RIGHT-LINEAR", "visibility": "visible", "landmarks": [[291, 199], [309, 207], [292, 273], [309, 272]], "physical_geometry_authority": false},
+    {"component_id": "C-007", "observation_id": "F-C007-REPRESENTATIVE-ANCHORS", "visibility": "visible_nonexhaustive", "landmarks": [[227, 41], [197, 101], [174, 200], [171, 309], [334, 300], [249, 342]], "cross_view_identity_authorized": false, "physical_geometry_authority": false}
+  ],
+  "world_measurement_status": {
+    "direct_source_labels_cm": {"overall_height": 220, "base_height": 35, "C-001_max_width": 120, "C-004_footprint_width": 140},
+    "derived_contour_world_values": null,
+    "reason": "Front X and Z calibration observations disagree internally; no consolidated scale is authorized."
+  },
+  "blocked": [
+    "filled component contours",
+    "C-004 interior ownership between outer edge pixels",
+    "hidden contact closure",
+    "final component centers or alignment authority",
+    "world conversion of contour samples",
+    "physical classification of C-005 through C-007"
+  ],
+  "interpretation_introduced": false,
+  "production_artifact_created": false,
+  "legacy_asset_specific_data_accessed": false,
+  "flamestrike_output_approval": {
+    "date": "2026-07-15",
+    "statement": "approved",
+    "result": "pass",
+    "scope": "Source-linked front pixel measurements with world conversion and blocked questions preserved.",
+    "approved_pre_closeout_checkpoint": "Saved/ProjectRecovery/20260715-150643/"
+  }
+}

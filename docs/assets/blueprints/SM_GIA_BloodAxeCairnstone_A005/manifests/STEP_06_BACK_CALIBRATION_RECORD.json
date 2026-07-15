@@ -1,0 +1,103 @@
+{
+  "schema": "aerathea.view_calibration_record.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "step_id": "STEP_06",
+  "view": "back",
+  "date": "2026-07-15",
+  "status": "approved_step_06_back_calibration_observations_with_blocked_disagreement",
+  "artifact_classification": "authoritative",
+  "source_panel": {
+    "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_BACK.png",
+    "file_sha256": "8ceae7f5ccf311ded8822fdd623d2b68009102bc07ceaf66708f59d2a013d271",
+    "pixel_sha256": "9256a8df175cbf54ca0662b11e0c5f5f6be4e670b10a9783efc1d6e9e26a56b1",
+    "size_px": [522, 401],
+    "crop_half_open_full_source": [19, 663, 541, 1064]
+  },
+  "coordinate_convention": "zero_based_integer_pixel_centers_with_exclusive_edge_to_edge_half_open_spans",
+  "formulas": {
+    "pixel_span": "upper_edge - lower_edge",
+    "cm_per_px": "declared_real_span_cm / pixel_span",
+    "pixel_center_for_contiguous_half_open_row_span": "(x0 + x1 - 1) / 2",
+    "averaging_allowed": false
+  },
+  "observations": [
+    {
+      "id": "CAL-BACK-Z-OH-220",
+      "axis": "Z",
+      "source_mark_ids": ["HS-Z220-BACK", "HS-Z000-OH-BACK"],
+      "pixel_endpoints_local": [[64, 40], [64, 315]],
+      "pixel_span": 275,
+      "declared_real_span_cm": 220,
+      "cm_per_px_exact": "4/5",
+      "cm_per_px_decimal": 0.800000000000,
+      "role": "overall_height_annotation_calibration",
+      "annotation_endpoints_are_geometry_boundaries": false
+    },
+    {
+      "id": "CAL-BACK-Z-BH-035",
+      "axis": "Z",
+      "source_mark_ids": ["HS-Z035-BACK", "HS-Z000-BH-BACK"],
+      "pixel_endpoints_local": [[405, 264], [405, 316]],
+      "pixel_span": 52,
+      "declared_real_span_cm": 35,
+      "cm_per_px_exact": "35/52",
+      "cm_per_px_decimal": 0.673076923077,
+      "role": "base_height_annotation_calibration",
+      "annotation_endpoints_are_geometry_boundaries": false
+    },
+    {
+      "id": "CAL-BACK-X-C001-120",
+      "axis": "X",
+      "source_mark_ids": ["XS-C001-XPOS-BACK", "XS-C001-XNEG-BACK"],
+      "pixel_endpoints_local": [[148, 336], [337, 336]],
+      "pixel_span": 189,
+      "declared_real_span_cm": 120,
+      "cm_per_px_exact": "40/63",
+      "cm_per_px_decimal": 0.634920634921,
+      "role": "C-001_maximum_width_annotation_calibration",
+      "annotation_endpoints_are_geometry_boundaries": false
+    },
+    {
+      "id": "CAL-BACK-X-C004-140",
+      "axis": "X",
+      "source_mark_ids": ["XS-C004-XPOS-BACK", "XS-C004-XNEG-BACK"],
+      "pixel_endpoints_local": [[119, 373], [364, 373]],
+      "pixel_span": 245,
+      "declared_real_span_cm": 140,
+      "cm_per_px_exact": "4/7",
+      "cm_per_px_decimal": 0.571428571429,
+      "role": "C-004_footprint_width_annotation_calibration",
+      "annotation_endpoints_are_geometry_boundaries": false
+    }
+  ],
+  "axis_decisions": {
+    "Z": {
+      "status": "blocked_disagreement",
+      "observation_ids": ["CAL-BACK-Z-OH-220", "CAL-BACK-Z-BH-035"],
+      "absolute_cm_per_px_delta": 0.126923076923,
+      "relative_delta_against_overall_height_percent": 15.865385,
+      "selected_scale": null,
+      "averaged_scale": null
+    },
+    "X": {
+      "status": "blocked_disagreement",
+      "observation_ids": ["CAL-BACK-X-C001-120", "CAL-BACK-X-C004-140"],
+      "absolute_cm_per_px_delta": 0.063492063492,
+      "relative_delta_against_C001_percent": 10.000000,
+      "selected_scale": null,
+      "averaged_scale": null
+    }
+  },
+  "decision": "Preserve all four exact source-linked calibration results. No consolidated back-view X or Z scale is authorized.",
+  "world_conversion_status": "blocked_pending_calibration_disagreement_resolution",
+  "interpretation_introduced": false,
+  "legacy_asset_specific_data_accessed": false,
+  "flamestrike_output_approval": {
+    "date": "2026-07-15",
+    "statement": "approved",
+    "result": "pass_with_blocked_disagreement_preserved",
+    "consolidated_scale_authorized": false,
+    "derived_world_conversion_authorized": false,
+    "approved_pre_closeout_checkpoint": "Saved/ProjectRecovery/20260715-150643/"
+  }
+}

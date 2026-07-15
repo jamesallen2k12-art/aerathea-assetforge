@@ -1,0 +1,96 @@
+{
+  "schema": "aerathea.measurement_disagreement_list.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "step_id": "STEP_06",
+  "date": "2026-07-15",
+  "status": "approved_step_06_blocked_disagreements_preserved",
+  "artifact_classification": "authoritative",
+  "rule": "Stop; preserve every source observation; do not average, shift, stretch, rotate, or select a convenient scale.",
+  "observations": [
+    {
+      "id": "D06-001",
+      "subject": "front Z calibration",
+      "status": "blocked_disagreement",
+      "source_records": ["CAL-FRONT-Z-OH-220", "CAL-FRONT-Z-BH-035"],
+      "values_cm_per_px": [0.586666666667, 0.564516129032],
+      "absolute_delta_cm_per_px": 0.022150537634,
+      "relative_delta_against_first_percent": 3.775660,
+      "selected_value": null,
+      "average_used": false
+    },
+    {
+      "id": "D06-002",
+      "subject": "front X calibration",
+      "status": "blocked_disagreement",
+      "source_records": ["CAL-FRONT-X-C001-120", "CAL-FRONT-X-C004-140"],
+      "values_cm_per_px": [0.521739130435, 0.482758620690],
+      "absolute_delta_cm_per_px": 0.038980509745,
+      "relative_delta_against_first_percent": 7.471264,
+      "selected_value": null,
+      "average_used": false
+    },
+    {
+      "id": "D06-003",
+      "subject": "back Z calibration",
+      "status": "blocked_disagreement",
+      "source_records": ["CAL-BACK-Z-OH-220", "CAL-BACK-Z-BH-035"],
+      "values_cm_per_px": [0.800000000000, 0.673076923077],
+      "absolute_delta_cm_per_px": 0.126923076923,
+      "relative_delta_against_first_percent": 15.865385,
+      "selected_value": null,
+      "average_used": false
+    },
+    {
+      "id": "D06-004",
+      "subject": "back X calibration",
+      "status": "blocked_disagreement",
+      "source_records": ["CAL-BACK-X-C001-120", "CAL-BACK-X-C004-140"],
+      "values_cm_per_px": [0.634920634921, 0.571428571429],
+      "absolute_delta_cm_per_px": 0.063492063492,
+      "relative_delta_against_first_percent": 10.000000,
+      "selected_value": null,
+      "average_used": false
+    },
+    {
+      "id": "D06-005",
+      "subject": "front/back visible profile comparison",
+      "status": "blocked_missing_common_calibration_and_pixel_pairing",
+      "source_records": ["STEP_06_FRONT_MEASUREMENT_MANIFEST", "STEP_06_BACK_MEASUREMENT_MANIFEST"],
+      "reason": "The two panels have independent image spaces, both consolidated scales are blocked, and irregular physical row/corner correspondence is not source-proven.",
+      "selected_value": null,
+      "average_used": false
+    },
+    {
+      "id": "D06-006",
+      "subject": "C-005 front/back identity",
+      "status": "blocked_by_U-006_U-009",
+      "front_observation": "visible bilateral blade-like treatment",
+      "back_observation": "ambiguous; absence not proven",
+      "selected_interpretation": null
+    },
+    {
+      "id": "D06-007",
+      "subject": "CL-001 through CL-003 front/back physical pairing",
+      "status": "blocked_by_U-007_U-008",
+      "reason": "Open source-visible samples exist in both views, but pixel-to-pixel pairing, hidden closure, and snap anchors are not authorized.",
+      "selected_pairing": null
+    }
+  ],
+  "non_conflicting_source_labels": {
+    "front_and_back_declared_values_match": true,
+    "overall_height_cm": 220,
+    "base_height_cm": 35,
+    "C-001_maximum_width_cm": 120,
+    "C-004_footprint_width_cm": 140,
+    "note": "Matching printed values do not repair inconsistent pixel-span calibrations or authorize cross-view pixel pairing."
+  },
+  "derived_world_measurements_authorized": false,
+  "interpretation_authorized": false,
+  "flamestrike_output_approval": {
+    "date": "2026-07-15",
+    "statement": "approved",
+    "result": "blocked_entries_accepted_without_resolution",
+    "approved_entry_count": 7,
+    "approved_pre_closeout_checkpoint": "Saved/ProjectRecovery/20260715-150643/"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "schema": "aerathea.step_validation_manifest.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "step_id": "STEP_06",
+  "date": "2026-07-15",
+  "status": "step_06_complete_approved_pending_scoped_closeout",
+  "artifact_classification": "proof only",
+  "aggregate_result": "pass_with_blocked_disagreements_preserved",
+  "source": {
+    "file_sha256": "4b953abb87f5f254a5f51c6214e76d3f72c4fc55bc2fa4e4d605b2440d6e53c2",
+    "pixel_sha256": "65b69c9674d6644fcae6795df01bdab55e59fc0c493a501ed7ed1baa966a3a72"
+  },
+  "panels": {
+    "front": {
+      "file_sha256": "262071198bc0d409e9b68af5ac4f3c6a4768a90b1fd199342035a8a82342c2c5",
+      "pixel_sha256": "d4fb34cb01ce6eaa04213a5a7c517743960daec6dcf638c53ec80a958ecc807f",
+      "size_px": [483, 525]
+    },
+    "back": {
+      "file_sha256": "8ceae7f5ccf311ded8822fdd623d2b68009102bc07ceaf66708f59d2a013d271",
+      "pixel_sha256": "9256a8df175cbf54ca0662b11e0c5f5f6be4e670b10a9783efc1d6e9e26a56b1",
+      "size_px": [522, 401]
+    }
+  },
+  "outputs": {
+    "front_calibration_sha256": "17993e1d472d97cf1d4c8996b668e1bb11b8f2fc160ce6c46fd5b8d2bc32ca4b",
+    "back_calibration_sha256": "7eaa651d6c89bbe444af8f167e663a0d16a204832c45e18f2447f64b1a952fcc",
+    "front_measurement_manifest_sha256": "c71932bef2016808d24fdc9aed47b9f4a3c32f59bdd45a551aab6804d877ecef",
+    "back_measurement_manifest_sha256": "7d203f0b4993aa5764bf54f3c78109ba0f614cc4b17553a58e3acde07deb1e56",
+    "front_measurement_contracts_sha256": "79029a8f03d1af2fe880fb791d38b33b0efc335da8eea9064d35ed85a4a2299b",
+    "back_measurement_contracts_sha256": "1bc424f6fbc52a84e532c4861d50eb35bd57e5635238a8b219fca2d10b9ffcd8",
+    "disagreement_list_sha256": "78d95fdc0cc10a4e2698b7a8fb10903b451431af85f272b81fd75b3c4647a0b2",
+    "evidence_board": {
+      "path": "evidence/STEP_06/SM_GIA_BloodAxeCairnstone_A005_STEP_06_FRONT_BACK_MEASUREMENT_EVIDENCE.png",
+      "file_sha256": "8222da8c909569971d749c504497899688323ac06583959f10188a7a45509543",
+      "pixel_sha256": "0df6c81b5f261045be28b8764956cf5bd26b639bc92195fc49cca52adb019acd",
+      "size_px": [1130, 1160],
+      "front_source_tile_changed_pixels": 0,
+      "front_source_tile_max_rgb_delta": 0,
+      "back_source_tile_changed_pixels": 0,
+      "back_source_tile_max_rgb_delta": 0
+    }
+  },
+  "counts": {
+    "calibration_observations": 8,
+    "blocked_internal_calibration_disagreements": 4,
+    "front_visible_row_samples": 13,
+    "back_visible_row_samples": 13,
+    "front_irregular_C004_observations": 4,
+    "back_irregular_C004_observations": 4,
+    "front_contact_sample_pixels": 21,
+    "back_contact_sample_pixels": 22,
+    "front_feature_landmarks": 22,
+    "back_feature_landmarks": 10,
+    "measurement_contracts": 24,
+    "disagreement_entries": 7
+  },
+  "validators": [
+    {"id": "source_file_hash", "result": "pass"},
+    {"id": "source_pixel_hash", "result": "pass"},
+    {"id": "front_panel_file_hash", "result": "pass"},
+    {"id": "front_panel_pixel_hash", "result": "pass"},
+    {"id": "back_panel_file_hash", "result": "pass"},
+    {"id": "back_panel_pixel_hash", "result": "pass"},
+    {"id": "step_06_json_parse", "result": "pass", "files": 7},
+    {"id": "front_coordinates_in_bounds", "result": "pass"},
+    {"id": "back_coordinates_in_bounds", "result": "pass"},
+    {"id": "row_span_width_formula", "result": "pass"},
+    {"id": "profile_center_formula", "result": "pass"},
+    {"id": "full_source_panel_local_round_trip", "result": "pass", "tolerance_px": 0},
+    {"id": "calibration_pixel_span_formula", "result": "pass"},
+    {"id": "calibration_cm_per_px_formula", "result": "pass"},
+    {"id": "conflicting_calibrations_not_averaged", "result": "pass", "blocked_count": 4},
+    {"id": "derived_world_conversion_blocked", "result": "pass"},
+    {"id": "measurement_contract_references_resolve", "result": "pass"},
+    {"id": "C004_interior_ownership_not_claimed", "result": "pass"},
+    {"id": "contact_segments_remain_open", "result": "pass"},
+    {"id": "C005_back_identity_remains_ambiguous", "result": "pass"},
+    {"id": "C006_C007_physical_identity_not_claimed", "result": "pass"},
+    {"id": "evidence_front_source_tile_pixel_exact", "result": "pass", "changed_pixels": 0, "max_rgb_delta": 0},
+    {"id": "evidence_back_source_tile_pixel_exact", "result": "pass", "changed_pixels": 0, "max_rgb_delta": 0},
+    {"id": "evidence_contains_no_fill_or_closed_candidate_contour", "result": "pass"},
+    {"id": "legacy_asset_specific_access", "result": "pass", "accessed": false},
+    {"id": "interpretation_or_geometry_created", "result": "pass", "created": false},
+    {"id": "A005_production_roots", "result": "pass", "present": false},
+    {"id": "unrelated_staged_files", "result": "pass", "present": false}
+  ],
+  "access_declaration": {
+    "A001_A004_asset_specific_data_accessed": false,
+    "left_right_top_perspective_measurement_accessed": false,
+    "approved_source_modified": false,
+    "approved_panels_modified": false,
+    "diagnostic_location_scan_used_as_authority": false,
+    "candidate_fill_created": false,
+    "component_mask_created": false,
+    "hidden_contact_closed": false,
+    "calibration_average_created": false,
+    "geometry_or_production_artifact_created": false,
+    "unrelated_changes_staged": false
+  },
+  "approval_status": "approved_by_Flamestrike",
+  "flamestrike_output_approval": {
+    "date": "2026-07-15",
+    "statement": "approved",
+    "result": "pass_with_blocked_disagreements_preserved",
+    "approved_pre_closeout_checkpoint": "Saved/ProjectRecovery/20260715-150643/",
+    "derived_world_conversion_authorized": false,
+    "step_07_authorized": false
+  },
+  "step_07_authorized": false
+}
