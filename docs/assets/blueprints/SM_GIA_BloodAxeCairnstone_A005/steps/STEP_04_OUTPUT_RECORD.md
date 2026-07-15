@@ -184,6 +184,13 @@ questions are recorded as blocked unknowns.
 
 ## Next Gate
 
-Complete the scoped Step 04 commit and push, write the restart-safe handoff,
-create the completion checkpoint, and stop for the mandatory restart. Step 05
-remains unauthorized.
+Stop for the mandatory restart. The next agent may present a Step 05 contract
+only after the Core resume handshake. Step 05 remains unauthorized.
+
+## Commit And Push
+
+- Scoped content commit: `e7860d6`
+- Commit message: `Lock BloodAxe Cairn Stone A005 component inventory`
+- Push: success; `assetforge/main` advanced from `f2fb2b8` to `e7860d6`
+- Scoped files: fourteen A005 Step 04 records and images
+- Unrelated changes: preserved and unstaged

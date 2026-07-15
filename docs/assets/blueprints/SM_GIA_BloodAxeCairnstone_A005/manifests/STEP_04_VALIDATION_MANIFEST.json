@@ -142,5 +142,16 @@
     "approved_pre_closeout_checkpoint": "Saved/ProjectRecovery/20260715-133530/",
     "blocked_unknowns_resolved": false,
     "step_05_authorized": false
+  },
+  "closeout": {
+    "scoped_content_commit": "e7860d6",
+    "commit_message": "Lock BloodAxe Cairn Stone A005 component inventory",
+    "push_remote": "assetforge",
+    "push_branch": "main",
+    "push_result": "success",
+    "remote_advanced_from": "f2fb2b8",
+    "remote_advanced_to": "e7860d6",
+    "scoped_file_count": 14,
+    "unrelated_changes_staged": false
   }
 }

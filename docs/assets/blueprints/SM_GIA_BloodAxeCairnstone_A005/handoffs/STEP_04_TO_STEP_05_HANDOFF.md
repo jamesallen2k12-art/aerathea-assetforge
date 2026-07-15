@@ -36,8 +36,15 @@ interpretation, or production authority exists.
 
 ## Last Core-Valid State
 
-The approved Step 04 component-decomposition package before scoped content
-closeout.
+The approved Step 04 component-decomposition package at scoped content commit
+`e7860d6`, pushed to `assetforge/main`.
+
+## Current Git State
+
+- Pre-Step 04 HEAD: `f2fb2b8`;
+- scoped Step 04 content commit: `e7860d6`;
+- push: success to `assetforge/main`;
+- pre-existing unrelated worktree changes remain outside scope.
 
 ## Next Gate
 

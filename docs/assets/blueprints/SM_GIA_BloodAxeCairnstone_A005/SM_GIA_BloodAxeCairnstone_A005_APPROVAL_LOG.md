@@ -207,3 +207,11 @@ Updated: 2026-07-15
   production work remain unauthorized
 - Approved pre-closeout checkpoint:
   `Saved/ProjectRecovery/20260715-133530/`
+
+## Step 04 Scoped Content Commit And Push
+
+- Date: 2026-07-15
+- Commit: `e7860d6` (`Lock BloodAxe Cairn Stone A005 component inventory`)
+- Push: success; `assetforge/main` advanced from `f2fb2b8` to `e7860d6`
+- Scoped files: fourteen A005 Step 04 records and images
+- Excluded: recovery-journal changes and every unrelated worktree change

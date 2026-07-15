@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: Step 04 approved; scoped closeout in progress
+Status: Step 04 complete and pushed; mandatory restart pending
 
 Artifact classification: `authoritative`
 
@@ -16,12 +16,14 @@ authoritative. Scoped content commit `2cee686` and final Step 03 handoff commit
 `f2fb2b8` were pushed to `assetforge/main`. Flamestrike subsequently approved
 the exact Step 04 contract and, after visible review, approved the Step 04
 component decomposition. Its inventory, ownership matrix, contact inventory,
-occluded-sector record, and blocked-unknown record are authoritative.
+occluded-sector record, and blocked-unknown record are authoritative. Scoped
+content commit `e7860d6` was pushed to `assetforge/main`. A mandatory new-agent
+restart is now required.
 
 ## Current Step
 
 - Active decision: 04 - Physical Component And Source-Ownership Inventory
-- Decision: approved; scoped commit and push pending
+- Decision: approved, committed, and pushed
 - Locked asset ID: `SM_GIA_BloodAxeCairnstone_A005`
 - Production status: not started
 
@@ -84,16 +86,16 @@ occluded-sector record, and blocked-unknown record are authoritative.
 ## Git And Checkpoint State
 
 - Branch: `main`
-- Current HEAD: `f2fb2b8`
+- Step 04 initialization HEAD: `f2fb2b8`
 - Remote: synchronized with `assetforge/main`
 - Pre-existing unrelated worktree entries remain preserved and outside scope
 - No unrelated file may be staged or committed by Step 04
 
 ## Last Scoped Commit And Push
 
-- Scoped content commit: `2cee686`
+- Scoped content commit: `e7860d6`
 - Push: success to `assetforge/main`
-- Remote advanced from `ac3be5d` to `2cee686`
+- Remote advanced from `f2fb2b8` to `e7860d6`
 - Unrelated dirty files remained unstaged
 
 ## Blocked
@@ -107,7 +109,7 @@ occluded-sector record, and blocked-unknown record are authoritative.
 
 ## Resume Instruction
 
-Complete only the scoped Step 04 closeout, create the completion checkpoint,
-and stop for the mandatory new-agent restart. The next agent must perform the
-Core resume handshake and may present a Step 05 contract only. Step 05 is not
-authorized.
+Restart with a new agent now. That agent must perform the Core resume handshake
+using this file, the Step 04 output record, component and validation manifests,
+evidence boards, and handoff. It may present a Step 05 contract only. Step 04
+approval does not authorize Step 05.
