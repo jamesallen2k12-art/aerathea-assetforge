@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A005 Artifact Index
 
-Status: approved Step 02 artifact index
+Status: approved Step 03 artifact index
 
 Artifact classification: `authoritative`
 
@@ -29,6 +29,18 @@ Updated: 2026-07-15
 | `steps/STEP_02_OUTPUT_RECORD.md` | `authoritative` | Approved source-authority decision record |
 | `manifests/STEP_02_VALIDATION_MANIFEST.json` | `proof only` | Deterministic Step 02 validation evidence |
 | `handoffs/STEP_02_TO_STEP_03_HANDOFF.md` | `authoritative` | Restart handoff after scoped closeout |
+| `steps/STEP_03_CONTRACT.md` | `authoritative` | Approved Step 03 execution boundary |
+| `manifests/STEP_03_PANEL_CROP_MANIFEST.json` | `authoritative` | Six approved half-open panel formulas and crop identities |
+| `panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_PERSPECTIVE.png` | `authoritative` | Lossless perspective source crop; visual corroboration only unless calibrated |
+| `panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_FRONT.png` | `authoritative` | Approved lossless front source crop |
+| `panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_BACK.png` | `authoritative` | Approved lossless back source crop |
+| `panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_LEFT.png` | `authoritative` | Approved lossless left source crop |
+| `panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_RIGHT.png` | `authoritative` | Approved lossless right source crop |
+| `panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_TOP.png` | `authoritative` | Approved lossless top source crop; specifications table excluded |
+| `evidence/SM_GIA_BloodAxeCairnstone_A005_STEP_03_PANEL_BOUNDARY_EVIDENCE.png` | `proof only` | Source-only exact-boundary review board |
+| `manifests/STEP_03_VALIDATION_MANIFEST.json` | `proof only` | Deterministic Step 03 candidate validation evidence |
+| `steps/STEP_03_OUTPUT_RECORD.md` | `authoritative` | Approved exact panel-decomposition decision record |
+| `handoffs/STEP_03_TO_STEP_04_HANDOFF.md` | `authoritative` | Approved restart handoff pending scoped closeout |
 
 ## Legacy Classification
 
@@ -46,3 +58,11 @@ exists for A005.
 Flamestrike approved the Step 02 output package on 2026-07-15. The A02 source
 and its exact scanline evidence are authoritative for A005. No panel,
 measurement, interpretation, or production authority was granted.
+
+## Step 03 Candidate
+
+Flamestrike approved the exact Step 03 contract and the visible Step 03 output
+package on 2026-07-15. Six lossless panels pass direct source-region comparison
+with zero changed pixels and zero maximum RGB delta. Their crop formulas and
+images are authoritative. No component, interpretation, or production
+authority exists.

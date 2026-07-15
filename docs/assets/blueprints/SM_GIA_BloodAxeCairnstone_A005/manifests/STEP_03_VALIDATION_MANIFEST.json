@@ -1,0 +1,192 @@
+{
+  "schema": "aerathea.step_validation.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "step_id": "STEP_03",
+  "date": "2026-07-15",
+  "status": "step_03_complete_pending_scoped_closeout",
+  "artifact_classification": "proof only",
+  "decision": "All six panel crops are exact decoded-pixel copies of their declared source regions, and Flamestrike approved their boundaries as source ownership.",
+  "source": {
+    "path": "docs/assets/reference/bloodaxe_cairnstone_asset/REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate.png",
+    "file_sha256": "4b953abb87f5f254a5f51c6214e76d3f72c4fc55bc2fa4e4d605b2440d6e53c2",
+    "pixel_sha256": "65b69c9674d6644fcae6795df01bdab55e59fc0c493a501ed7ed1baa966a3a72",
+    "width": 1055,
+    "height": 1491,
+    "mode": "RGB"
+  },
+  "aggregate_result": {
+    "panel_count": 6,
+    "changed_pixels": 0,
+    "max_rgb_delta": 0,
+    "all_pixel_exact": true,
+    "scaling_applied": false,
+    "filtering_applied": false,
+    "rotation_applied": false,
+    "color_transform_applied": false,
+    "annotation_removal_applied": false
+  },
+  "panel_results": [
+    {
+      "id": "perspective",
+      "crop_half_open": [19, 130, 541, 655],
+      "size": [522, 525],
+      "file_sha256": "4c49c9661f14ece54abfbfd39da9ef047e6f749638b0842d1e51eaebca2564c7",
+      "pixel_sha256": "9b772aefc3aea81a65a419863a85d3682a9e870505a419eeacef9a582568bd8f",
+      "source_region_pixel_sha256": "9b772aefc3aea81a65a419863a85d3682a9e870505a419eeacef9a582568bd8f",
+      "changed_pixels": 0,
+      "max_rgb_delta": 0,
+      "pixel_exact": true
+    },
+    {
+      "id": "front",
+      "crop_half_open": [552, 130, 1035, 655],
+      "size": [483, 525],
+      "file_sha256": "262071198bc0d409e9b68af5ac4f3c6a4768a90b1fd199342035a8a82342c2c5",
+      "pixel_sha256": "d4fb34cb01ce6eaa04213a5a7c517743960daec6dcf638c53ec80a958ecc807f",
+      "source_region_pixel_sha256": "d4fb34cb01ce6eaa04213a5a7c517743960daec6dcf638c53ec80a958ecc807f",
+      "changed_pixels": 0,
+      "max_rgb_delta": 0,
+      "pixel_exact": true
+    },
+    {
+      "id": "back",
+      "crop_half_open": [19, 663, 541, 1064],
+      "size": [522, 401],
+      "file_sha256": "8ceae7f5ccf311ded8822fdd623d2b68009102bc07ceaf66708f59d2a013d271",
+      "pixel_sha256": "9256a8df175cbf54ca0662b11e0c5f5f6be4e670b10a9783efc1d6e9e26a56b1",
+      "source_region_pixel_sha256": "9256a8df175cbf54ca0662b11e0c5f5f6be4e670b10a9783efc1d6e9e26a56b1",
+      "changed_pixels": 0,
+      "max_rgb_delta": 0,
+      "pixel_exact": true
+    },
+    {
+      "id": "left",
+      "crop_half_open": [552, 663, 1036, 1064],
+      "size": [484, 401],
+      "file_sha256": "52212ba783d026a008929e3946cac934281de7d2daec2ada316205059258cba4",
+      "pixel_sha256": "96a10daa637b28b879b5dd210bad3526e87499218dece9ca4ed0560046c9bddb",
+      "source_region_pixel_sha256": "96a10daa637b28b879b5dd210bad3526e87499218dece9ca4ed0560046c9bddb",
+      "changed_pixels": 0,
+      "max_rgb_delta": 0,
+      "pixel_exact": true
+    },
+    {
+      "id": "right",
+      "crop_half_open": [19, 1073, 386, 1445],
+      "size": [367, 372],
+      "file_sha256": "cc6c27405fbd6ea8c46b70966fe559acbd57acb88e58bfdcd6b763ce827a862e",
+      "pixel_sha256": "f6201cbae75fa061f7614893d7f2c081149a350fc6d64ad510b49ef5c12d7610",
+      "source_region_pixel_sha256": "f6201cbae75fa061f7614893d7f2c081149a350fc6d64ad510b49ef5c12d7610",
+      "changed_pixels": 0,
+      "max_rgb_delta": 0,
+      "pixel_exact": true
+    },
+    {
+      "id": "top",
+      "crop_half_open": [393, 1073, 730, 1444],
+      "size": [337, 371],
+      "file_sha256": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf",
+      "pixel_sha256": "eda0f5d691336489e257a44b09f58b8543b023bd4edc0893d5fab68ad8dbf05f",
+      "source_region_pixel_sha256": "eda0f5d691336489e257a44b09f58b8543b023bd4edc0893d5fab68ad8dbf05f",
+      "changed_pixels": 0,
+      "max_rgb_delta": 0,
+      "pixel_exact": true
+    }
+  ],
+  "validators": [
+    {
+      "id": "source_authority_identity",
+      "result": "pass"
+    },
+    {
+      "id": "six_named_integer_half_open_crops",
+      "result": "pass"
+    },
+    {
+      "id": "positive_in_bounds_dimensions",
+      "result": "pass"
+    },
+    {
+      "id": "direct_source_region_pixel_comparison",
+      "result": "pass",
+      "changed_pixels": 0,
+      "max_rgb_delta": 0,
+      "pixel_exact": true
+    },
+    {
+      "id": "source_only_boundary_evidence",
+      "result": "pass",
+      "detail": "Full authoritative source background with exact unfilled crop rectangles and coordinate labels only; no candidate shape fill or interpretation."
+    },
+    {
+      "id": "perspective_usage_classification",
+      "result": "pass",
+      "usage": "visual_corroboration_unless_separately_calibrated"
+    },
+    {
+      "id": "legacy_asset_specific_access",
+      "result": "pass",
+      "accessed": false
+    },
+    {
+      "id": "production_root_creation",
+      "result": "pass",
+      "created": false
+    },
+    {
+      "id": "flamestrike_boundary_approval",
+      "result": "pass",
+      "date": "2026-07-15",
+      "statement": "approved"
+    }
+  ],
+  "internal_candidate_correction": {
+    "initial_right_crop_half_open": [19, 1073, 386, 1444],
+    "initial_right_crop_file_sha256": "1600ff7eaecb22c37076abde1f021fe0641956596070c252524cd819fa92b425",
+    "initial_boundary_board_file_sha256": "b0d73c26750bbee2bd390da48fa0451dcdf33d6771469d5e5b342c51e5e21908",
+    "classification": "invalid",
+    "reason": "Source row 1444 is inside the right-view frame; its border begins at row 1445.",
+    "resolution": "Overwritten before manifest lock or user presentation with right y1 = 1445.",
+    "drift_event": false
+  },
+  "evidence_board": {
+    "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/evidence/SM_GIA_BloodAxeCairnstone_A005_STEP_03_PANEL_BOUNDARY_EVIDENCE.png",
+    "file_sha256": "f5def9451265c0b8f578c1886077d1d0b2629a69a8f26c7faf0530a10891df60",
+    "pixel_sha256": "d867b46a0fba594eb7d5f4b9f660887c3603e5d1e355058ac5cdcb23d0fcc733",
+    "size": [1055, 1491],
+    "candidate_fill_present": false,
+    "interpretation_present": false
+  },
+  "approved_output_hashes_before_validation_manifest_finalization": {
+    "steps/STEP_03_CONTRACT.md": "ba3a35e32f3639d0d248b8b50a1ed19887c2e94140465048fa090718080dd151",
+    "manifests/STEP_03_PANEL_CROP_MANIFEST.json": "5d423400e1415c7e816648f703f2d04de384070813480db923303ab0709a0356",
+    "steps/STEP_03_OUTPUT_RECORD.md": "76863b81ecf3b3473c1e03aae338d54d7fa655b87dc522c729a9da1b5273d35a",
+    "handoffs/STEP_03_TO_STEP_04_HANDOFF.md": "56af9def84239d685f69df75ee67e382bbf25f91721bcd1e4ea0ddab8bcc913f",
+    "SM_GIA_BloodAxeCairnstone_A005_RESET_RESUME_STATE.md": "ca3363e60b8256e4bcbd968f5f121596675eda1b99971e6daa5d2c197f97ee7d",
+    "SM_GIA_BloodAxeCairnstone_A005_ARTIFACT_INDEX.md": "bc731631f75a3a0b03f51243d0c673e8fc75beaa37b8fa2ada33efff99a60f37",
+    "SM_GIA_BloodAxeCairnstone_A005_APPROVAL_LOG.md": "2547b1df0c5a0a81e7d254153938cd3b7ebb88dd220c8121e99144d6dad391ed",
+    "evidence/SM_GIA_BloodAxeCairnstone_A005_STEP_03_PANEL_BOUNDARY_EVIDENCE.png": "f5def9451265c0b8f578c1886077d1d0b2629a69a8f26c7faf0530a10891df60",
+    "panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_BACK.png": "8ceae7f5ccf311ded8822fdd623d2b68009102bc07ceaf66708f59d2a013d271",
+    "panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_FRONT.png": "262071198bc0d409e9b68af5ac4f3c6a4768a90b1fd199342035a8a82342c2c5",
+    "panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_LEFT.png": "52212ba783d026a008929e3946cac934281de7d2daec2ada316205059258cba4",
+    "panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_PERSPECTIVE.png": "4c49c9661f14ece54abfbfd39da9ef047e6f749638b0842d1e51eaebca2564c7",
+    "panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_RIGHT.png": "cc6c27405fbd6ea8c46b70966fe559acbd57acb88e58bfdcd6b763ce827a862e",
+    "panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_TOP.png": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf"
+  },
+  "manifest_self_hash_policy": "The validation-manifest SHA256 is omitted because the file contains approved package hashes and is protected by the scoped git tree.",
+  "interpretation_introduced": false,
+  "source_modified": false,
+  "legacy_asset_specific_data_accessed": false,
+  "production_artifact_created": false,
+  "pre_action_checkpoint": "Saved/ProjectRecovery/20260715-123416/",
+  "candidate_review_checkpoint": "Saved/ProjectRecovery/20260715-124330/",
+  "flamestrike_output_approval": {
+    "date": "2026-07-15",
+    "statement": "approved",
+    "result": "pass",
+    "panel_crop_manifest_status": "authoritative",
+    "panel_crop_status": "authoritative",
+    "step_04_authorized": false,
+    "approved_pre_closeout_checkpoint": "Saved/ProjectRecovery/20260715-125003/"
+  }
+}
