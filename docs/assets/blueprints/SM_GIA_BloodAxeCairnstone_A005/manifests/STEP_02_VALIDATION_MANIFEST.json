@@ -1,0 +1,148 @@
+{
+  "schema": "aerathea.step_validation.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "step_id": "STEP_02",
+  "date": "2026-07-15",
+  "status": "step_02_approved_pending_scoped_closeout",
+  "artifact_classification": "proof only",
+  "decision": "The confirmed A02 source and manifest-contained scanline evidence passed fresh non-mutating exact verification.",
+  "source": {
+    "path": "docs/assets/reference/bloodaxe_cairnstone_asset/REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate.png",
+    "file_sha256": "4b953abb87f5f254a5f51c6214e76d3f72c4fc55bc2fa4e4d605b2440d6e53c2",
+    "pixel_sha256": "65b69c9674d6644fcae6795df01bdab55e59fc0c493a501ed7ed1baa966a3a72",
+    "width": 1055,
+    "height": 1491,
+    "format": "PNG",
+    "mode": "RGB",
+    "bit_depth_per_channel": 8,
+    "non_interlaced": true
+  },
+  "scanline_manifest": {
+    "path": "docs/assets/reference/bloodaxe_cairnstone_asset/ScanlineCapture/REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate_ScanlineManifest.json",
+    "file_sha256": "ec544f80b969f53eb9729910d4eebc28a0fd0bfbc9c2d1be35d2aa7de0806dbc",
+    "format": "AET_RGB_SCANLINE_V1",
+    "claims_match_fresh_verification": true
+  },
+  "proof_files": {
+    "target_image": {
+      "path": "docs/assets/reference/bloodaxe_cairnstone_asset/ScanlineCapture/REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate_ScanTarget.png",
+      "file_sha256": "64dd5c613cf294c146fa03238b1429062c2e5d7de3e472f8dd204fdd3e1576e7",
+      "pixel_sha256": "65b69c9674d6644fcae6795df01bdab55e59fc0c493a501ed7ed1baa966a3a72"
+    },
+    "scan_record": {
+      "path": "docs/assets/reference/bloodaxe_cairnstone_asset/ScanlineCapture/REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate.rgbscan.gz",
+      "file_sha256": "0be64c62d497f8bf062954e1c16661a954442f6eb2a540a43cdb57650e37040b",
+      "decoded_rgb_sha256": "65b69c9674d6644fcae6795df01bdab55e59fc0c493a501ed7ed1baa966a3a72"
+    },
+    "rebuilt_image": {
+      "path": "docs/assets/reference/bloodaxe_cairnstone_asset/ScanlineCapture/REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate_RebuiltFromScanlines.png",
+      "file_sha256": "64dd5c613cf294c146fa03238b1429062c2e5d7de3e472f8dd204fdd3e1576e7",
+      "pixel_sha256": "65b69c9674d6644fcae6795df01bdab55e59fc0c493a501ed7ed1baa966a3a72"
+    },
+    "difference_image": {
+      "path": "docs/assets/reference/bloodaxe_cairnstone_asset/ScanlineCapture/REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate_Difference.png",
+      "file_sha256": "7a57ebc0b89e6e1535aadd2c81793bc46baef18b30db6dd9c729bd83a231d8b5",
+      "pixel_sha256": "2936d95969e331faf52f52ef48a6922ed8495cf600030681c8e7b79c1cf25dd0",
+      "all_rgb_values_zero": true
+    }
+  },
+  "fresh_reconstruction": {
+    "scan_record_signature": "AET_RGB_SCANLINE_V1",
+    "scan_record_metadata": "1055 1491 3 RGB",
+    "scanlines": 1491,
+    "row_index_encoding": "unsigned 32-bit big-endian",
+    "all_row_indices_valid": true,
+    "rgb_bytes_per_row": 3165,
+    "rgb_bytes": 4719015,
+    "pixel_sha256": "65b69c9674d6644fcae6795df01bdab55e59fc0c493a501ed7ed1baa966a3a72",
+    "first_row_sha256": "67d9634f82ac9404c6b23e97b9349c670c8f616a75e1a7d69f0a5b578abab84e",
+    "middle_row_sha256": "18357a729e12ff23b6027e50c9d02794e1ccc4b9fb27088511625be4dcfb98a1",
+    "last_row_sha256": "1b259f74634d2d37f1c6333544dfd7e82c5ab6d65541f636cc00ea4f4bf5ab94",
+    "changed_pixels": 0,
+    "max_rgb_delta": 0,
+    "mean_grayscale_delta": 0.0,
+    "pixel_exact": true,
+    "source_target_scan_stored_rebuild_fresh_rebuild_match": true
+  },
+  "validators": [
+    {
+      "id": "approved_input_path_containment",
+      "result": "pass",
+      "detail": "Every manifest proof path resolved to a regular non-symlink file inside the exact ScanlineCapture directory."
+    },
+    {
+      "id": "source_file_identity",
+      "result": "pass"
+    },
+    {
+      "id": "source_png_metadata",
+      "result": "pass"
+    },
+    {
+      "id": "scan_record_structure",
+      "result": "pass",
+      "detail": "Signature, metadata, payload length, and all 1491 sequential row indices passed."
+    },
+    {
+      "id": "fresh_in_memory_reconstruction",
+      "result": "pass"
+    },
+    {
+      "id": "exact_pixel_comparison",
+      "result": "pass",
+      "changed_pixels": 0,
+      "max_rgb_delta": 0,
+      "pixel_exact": true
+    },
+    {
+      "id": "difference_image_zero_audit",
+      "result": "pass"
+    },
+    {
+      "id": "first_verifier_format_assumption",
+      "result": "stopped_without_output",
+      "detail": "The initial verifier treated the complete decompressed record as plain RGB. It created no output. The record-declared header and per-row indices were then decoded and fully validated by the corrected verifier."
+    },
+    {
+      "id": "legacy_asset_specific_access",
+      "result": "pass",
+      "accessed": false
+    },
+    {
+      "id": "input_mutation",
+      "result": "pass",
+      "modified": false
+    },
+    {
+      "id": "a005_production_root",
+      "result": "pass",
+      "created": false
+    }
+  ],
+  "interpretation_introduced": false,
+  "source_modified": false,
+  "legacy_asset_specific_data_accessed": false,
+  "production_artifact_created": false,
+  "output_hashes_after_approval_before_manifest_finalization": {
+    "SM_GIA_BloodAxeCairnstone_A005_SOURCE_AUTHORITY_LOCK.md": "ac51c7c55483dcb5259da530e197ea611655cd1aeb2ad2a522997dc27117e161",
+    "steps/STEP_02_CONTRACT.md": "6abece1cdfebffe6b3fe312ce46a72157429df19760c93c09151d809cfb56798",
+    "steps/STEP_02_OUTPUT_RECORD.md": "13b23926ed48c64a823fe7c76b8f9fd6fb9f4afc2d615b3a639d33852d282fd9",
+    "handoffs/STEP_02_TO_STEP_03_HANDOFF.md": "8c269e37cccb60810b826d40d1302430edeebe4268121e1113988f28588d9899",
+    "SM_GIA_BloodAxeCairnstone_A005_RESET_RESUME_STATE.md": "d4c283e6022133a3ded7e966f72856c7253bba59097368467ce6d2d4b3232ebb",
+    "SM_GIA_BloodAxeCairnstone_A005_ARTIFACT_INDEX.md": "3675002dacc6edd880b139c0ed6f7cd39766fb56c5b538cdf12d0871a102d4e5",
+    "SM_GIA_BloodAxeCairnstone_A005_APPROVAL_LOG.md": "47be26e1f8887bdc244ac2ac8734cae684c987433d8e0c9c57bf976f98778796"
+  },
+  "manifest_self_hash_policy": "The manifest SHA256 is recorded in the visible review report after final candidate validation and is superseded by post-approval closeout hashes and the scoped git tree.",
+  "checkpoints": [
+    "Saved/ProjectRecovery/20260715-115009/",
+    "Saved/ProjectRecovery/20260715-115658/",
+    "Saved/ProjectRecovery/20260715-120829/"
+  ],
+  "flamestrike_output_approval": {
+    "date": "2026-07-15",
+    "statement": "approved",
+    "result": "pass",
+    "source_and_scanline_evidence_status": "authoritative",
+    "step_03_authorized": false
+  }
+}

@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A005 Approval Log
 
-Status: approved Step 01 approval record
+Status: approved Step 02 approval record
 
 Artifact classification: `authoritative`
 
@@ -62,3 +62,39 @@ Updated: 2026-07-15
   repair
 - Excluded: pre-existing recovery-journal changes and all unrelated worktree
   changes
+
+## Step 02 Contract Approval
+
+- Date: 2026-07-15
+- Approver: Flamestrike
+- Statement: `approved`
+- Scope: exact visible Step 02 source-authority and scanline-lock contract
+- Result: non-mutating A02 source and scanline verification plus candidate
+  Step 02 record creation authorized
+- Exclusion: Step 02 output approval, Step 03, and production work
+
+## Step 02 Candidate Validation
+
+- Date: 2026-07-15
+- Technical result: pass
+- Source file and decoded pixel hashes match the approved plan
+- Fresh scanline reconstruction: pixel exact
+- Changed pixels: `0`
+- Maximum RGB delta: `0`
+- Interpretation introduced: none
+- Output approval: completed after visible Flamestrike review
+
+## Step 02 Output Approval
+
+- Date: 2026-07-15
+- Approver: Flamestrike
+- Statement: `approved`
+- Reviewed visibly: untouched A02 source, Step 02 source authority lock, and
+  Step 02 output record
+- Decision: pass
+- Result: A02 source and exact scanline evidence promoted to `authoritative`
+  for A005
+- Exclusion: panel decomposition, measurement, interpretation, production
+  work, and Step 03 remain unauthorized
+- Approved pre-closeout checkpoint:
+  `Saved/ProjectRecovery/20260715-120829/`
