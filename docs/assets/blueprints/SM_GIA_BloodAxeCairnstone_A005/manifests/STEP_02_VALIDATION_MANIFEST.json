@@ -3,7 +3,7 @@
   "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
   "step_id": "STEP_02",
   "date": "2026-07-15",
-  "status": "step_02_approved_pending_scoped_closeout",
+  "status": "step_02_complete",
   "artifact_classification": "proof only",
   "decision": "The confirmed A02 source and manifest-contained scanline evidence passed fresh non-mutating exact verification.",
   "source": {
@@ -123,7 +123,7 @@
   "source_modified": false,
   "legacy_asset_specific_data_accessed": false,
   "production_artifact_created": false,
-  "output_hashes_after_approval_before_manifest_finalization": {
+  "scoped_content_commit_output_hashes": {
     "SM_GIA_BloodAxeCairnstone_A005_SOURCE_AUTHORITY_LOCK.md": "ac51c7c55483dcb5259da530e197ea611655cd1aeb2ad2a522997dc27117e161",
     "steps/STEP_02_CONTRACT.md": "6abece1cdfebffe6b3fe312ce46a72157429df19760c93c09151d809cfb56798",
     "steps/STEP_02_OUTPUT_RECORD.md": "13b23926ed48c64a823fe7c76b8f9fd6fb9f4afc2d615b3a639d33852d282fd9",
@@ -131,6 +131,15 @@
     "SM_GIA_BloodAxeCairnstone_A005_RESET_RESUME_STATE.md": "d4c283e6022133a3ded7e966f72856c7253bba59097368467ce6d2d4b3232ebb",
     "SM_GIA_BloodAxeCairnstone_A005_ARTIFACT_INDEX.md": "3675002dacc6edd880b139c0ed6f7cd39766fb56c5b538cdf12d0871a102d4e5",
     "SM_GIA_BloodAxeCairnstone_A005_APPROVAL_LOG.md": "47be26e1f8887bdc244ac2ac8734cae684c987433d8e0c9c57bf976f98778796"
+  },
+  "final_closeout_output_hashes_before_manifest_finalization": {
+    "SM_GIA_BloodAxeCairnstone_A005_SOURCE_AUTHORITY_LOCK.md": "ac51c7c55483dcb5259da530e197ea611655cd1aeb2ad2a522997dc27117e161",
+    "steps/STEP_02_CONTRACT.md": "6abece1cdfebffe6b3fe312ce46a72157429df19760c93c09151d809cfb56798",
+    "steps/STEP_02_OUTPUT_RECORD.md": "b34776528ea0f1aec2b53f35e8a8e2247a8e977a41f4ccf88d33c33335242dcc",
+    "handoffs/STEP_02_TO_STEP_03_HANDOFF.md": "1203563b995592ee5eca4d7f11606e2c837d57115e3d78dee5a0e04e88f2ea78",
+    "SM_GIA_BloodAxeCairnstone_A005_RESET_RESUME_STATE.md": "ceb42e32d33204e733591fca2ffd94f281a74d884d5d2e3a20179cba4aedc6fa",
+    "SM_GIA_BloodAxeCairnstone_A005_ARTIFACT_INDEX.md": "3675002dacc6edd880b139c0ed6f7cd39766fb56c5b538cdf12d0871a102d4e5",
+    "SM_GIA_BloodAxeCairnstone_A005_APPROVAL_LOG.md": "364327c90d91e148d2ea2644fc2757e1bd7a509e1a9462efcce41d81221306e1"
   },
   "manifest_self_hash_policy": "The manifest SHA256 is recorded in the visible review report after final candidate validation and is superseded by post-approval closeout hashes and the scoped git tree.",
   "checkpoints": [
@@ -144,5 +153,16 @@
     "result": "pass",
     "source_and_scanline_evidence_status": "authoritative",
     "step_03_authorized": false
+  },
+  "closeout": {
+    "scoped_content_commit": "7714f8c",
+    "commit_message": "Lock BloodAxe Cairn Stone A005 source authority",
+    "push_remote": "assetforge",
+    "push_branch": "main",
+    "push_result": "success",
+    "remote_advanced_from": "4a8b66d",
+    "remote_advanced_to": "7714f8c",
+    "scoped_file_count": 8,
+    "unrelated_changes_staged": false
   }
 }

@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: Step 02 approved; scoped closeout in progress
+Status: Step 02 complete and pushed; mandatory restart pending
 
 Artifact classification: `authoritative`
 
@@ -9,14 +9,14 @@ Updated: 2026-07-15
 ## Last Core-Valid State
 
 Flamestrike approved the Step 02 outputs on 2026-07-15 after visible review.
-The exact A02 source and its scanline evidence are authoritative for A005. The
-current closeout must record and push only the approved Step 02 scope before
-the mandatory restart.
+The exact A02 source and its scanline evidence are authoritative for A005.
+Scoped content commit `7714f8c` was pushed to `assetforge/main`. A mandatory
+new-agent restart is now required.
 
 ## Current Step
 
 - Completed decision: 02 - Source Authority And Scanline Lock
-- Decision: approved; scoped commit and push pending
+- Decision: approved, committed, and pushed
 - Locked asset ID: `SM_GIA_BloodAxeCairnstone_A005`
 - Production status: not started
 
@@ -55,6 +55,13 @@ the mandatory restart.
 - Pre-existing unrelated worktree entries remain preserved and outside scope
 - No unrelated file may be staged or committed by Step 02
 
+## Step 02 Commit And Push
+
+- Scoped content commit: `7714f8c`
+- Push: success to `assetforge/main`
+- Remote advanced from `4a8b66d` to `7714f8c`
+- Unrelated dirty files remained unstaged
+
 ## Blocked
 
 - Step 03
@@ -66,7 +73,7 @@ the mandatory restart.
 
 ## Resume Instruction
 
-Finish only the scoped Step 02 commit, push, handoff evidence, and completion
-checkpoint. Then restart with a new agent. The new agent must perform the Core
-resume handshake and may present a Step 03 contract only. Step 02 approval does
-not authorize Step 03.
+Restart with a new agent now. That agent must perform the Core resume handshake
+using this file, the Step 02 output record, validation manifest, and handoff.
+It may present a Step 03 contract only. Step 02 approval does not authorize
+Step 03.

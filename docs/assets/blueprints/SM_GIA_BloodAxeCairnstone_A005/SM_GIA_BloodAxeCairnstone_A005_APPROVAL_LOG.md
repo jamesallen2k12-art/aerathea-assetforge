@@ -98,3 +98,12 @@ Updated: 2026-07-15
   work, and Step 03 remain unauthorized
 - Approved pre-closeout checkpoint:
   `Saved/ProjectRecovery/20260715-120829/`
+
+## Step 02 Scoped Content Commit And Push
+
+- Date: 2026-07-15
+- Commit: `7714f8c` (`Lock BloodAxe Cairn Stone A005 source authority`)
+- Push: success; `assetforge/main` advanced from `4a8b66d` to `7714f8c`
+- Scoped files: eight A005 Step 02 records
+- Excluded: pre-existing recovery-journal changes and every unrelated
+  worktree change

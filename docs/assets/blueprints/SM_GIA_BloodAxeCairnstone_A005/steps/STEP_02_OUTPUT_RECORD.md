@@ -1,6 +1,6 @@
 # Step 02 Output Record
 
-Status: Step 02 approved; scoped closeout in progress
+Status: Step 02 complete and pushed
 
 Artifact classification: `authoritative`
 
@@ -137,8 +137,16 @@ Focused technical validation passed. The detailed deterministic evidence is in
 - Result: pass and authority promotion
 - Exclusion: Step 03 remains unauthorized
 
-## Remaining Closeout
+## Commit And Push
 
-Commit and push only the approved Step 02 record scope, finalize the commit and
-push evidence, create the completion checkpoint, and require a new-agent
-restart. Do not begin Step 03.
+- Scoped content commit: `7714f8c`
+- Commit message: `Lock BloodAxe Cairn Stone A005 source authority`
+- Push: success; `assetforge/main` advanced from `4a8b66d` to `7714f8c`
+- Scoped files: eight A005 Step 02 records
+- Unrelated changes: preserved and unstaged
+
+## Next Gate
+
+Create the final handoff closeout commit and completion checkpoint, then stop.
+The next agent must perform the Core resume handshake and may present a Step 03
+contract only. Step 03 remains unauthorized.

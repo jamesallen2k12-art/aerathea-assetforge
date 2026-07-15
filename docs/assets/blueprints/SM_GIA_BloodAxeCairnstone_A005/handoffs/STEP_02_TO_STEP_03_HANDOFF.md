@@ -1,6 +1,6 @@
 # Step 02 To Step 03 Handoff
 
-Status: authoritative; scoped closeout in progress
+Status: authoritative; ready for mandatory restart
 
 Artifact classification: `authoritative`
 
@@ -101,19 +101,19 @@ Exact result:
 
 ## Last Core-Valid State
 
-The approved Step 02 source-authority package. Scoped closeout commit and push
-evidence remain to be recorded before the mandatory restart.
+The approved Step 02 source-authority package at scoped content commit
+`7714f8c`, pushed to `assetforge/main`.
 
-## Blockers
+## Remaining Next-Step Gates
 
-- scoped closeout commit and push after approval;
 - mandatory new-agent restart;
 - separate Step 03 contract approval.
 
 ## Current Git And Checkpoint State
 
-- Pre-Step 02 HEAD: `4a8b66d` on `main`, synchronized with
-  `assetforge/main`;
+- Pre-Step 02 HEAD: `4a8b66d`;
+- scoped Step 02 content commit: `7714f8c`;
+- push: success to `assetforge/main`;
 - pre-existing unrelated worktree changes remain outside scope;
 - Step 02 pre-action checkpoint: `Saved/ProjectRecovery/20260715-115009/`;
 - Step 02 validated-candidate review checkpoint:
@@ -142,5 +142,4 @@ Step 03 is not authorized by this candidate handoff or by Step 02 approval.
 
 ## Next Approval Gate
 
-After scoped closeout and mandatory restart, a new agent may present a Step 03
-contract only.
+After the mandatory restart, a new agent may present a Step 03 contract only.
