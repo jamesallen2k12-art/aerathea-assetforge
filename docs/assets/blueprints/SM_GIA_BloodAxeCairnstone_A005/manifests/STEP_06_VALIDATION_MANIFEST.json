@@ -107,5 +107,16 @@
     "derived_world_conversion_authorized": false,
     "step_07_authorized": false
   },
-  "step_07_authorized": false
+  "step_07_authorized": false,
+  "closeout": {
+    "scoped_content_commit": "c4e192d",
+    "commit_message": "Lock BloodAxe Cairn Stone A005 front back measurements",
+    "push_remote": "assetforge",
+    "push_branch": "main",
+    "push_result": "success",
+    "remote_advanced_from": "249fb9b",
+    "remote_advanced_to": "c4e192d",
+    "scoped_file_count": 11,
+    "unrelated_changes_staged": false
+  }
 }

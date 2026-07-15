@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A005 Approval Log
 
-Status: approved Step 05 approval record; pending scoped closeout
+Status: approved Step 06 approval record; pending final handoff closeout
 
 Artifact classification: `authoritative`
 
@@ -280,3 +280,69 @@ Updated: 2026-07-15
 - Validated-candidate review checkpoint:
   `Saved/ProjectRecovery/20260715-140730/`
 - Output approval: pending visible Flamestrike review
+
+## Step 06 Contract Approval
+
+- Date: 2026-07-15
+- Approver: Flamestrike
+- Statement: `approved`
+- Scope: exact visible Step 06 front/back exact-measurement contract
+- Result: independent front/back calibration observations, exact pixel-space
+  row/contact/feature measurements, measurement contracts, disagreement list,
+  unfilled evidence board, validation, and candidate Step 06 record creation
+  authorized
+- Exclusion: Step 06 output approval, scale selection, averaging, derived
+  world-space measurement, interpretation, Step 07, and production work
+- Pre-action checkpoint: `Saved/ProjectRecovery/20260715-142939/`
+
+## Step 06 Candidate Validation
+
+- Date: 2026-07-15
+- Technical result: pass with blocked disagreements preserved
+- Calibration observations: `8`
+- Blocked within-view calibration disagreements: `4`
+- Visible row samples: `26`
+- Irregular C-004 edge observations: `8`
+- Exposed contact sample pixels: `43`
+- Appearance landmarks: `32`
+- Measurement contracts: `24`
+- Disagreement entries: `7`
+- Validators: `28` passed, `0` failed
+- Evidence source tiles pixel exact: `true`
+- Aggregate changed source-tile pixels: `0`
+- Maximum RGB delta: `0`
+- Consolidated X/Z scale: none
+- Derived contour/contact world conversion: blocked
+- Legacy asset-specific access: false
+- Interpretation, geometry, and production artifacts: none
+- Validated-candidate review checkpoint:
+  `Saved/ProjectRecovery/20260715-145056/`
+
+## Step 06 Output Approval
+
+- Date: 2026-07-15
+- Approver: Flamestrike
+- Statement: `approved`
+- Reviewed visibly: untouched front/back panels, exact unfilled measurement
+  evidence board, calibration records, measurement manifests and contracts,
+  disagreement list, focused validation, and Step 06 output record
+- Decision: pass with blocked disagreements preserved
+- Result: source-linked front/back pixel measurements, calibration
+  observations, measurement contracts, disagreement record, output record,
+  and handoff promoted to `authoritative`
+- Evidence board and validation manifest remain `proof only`
+- All seven disagreement entries remain blocked; no disputed scale was
+  selected or averaged
+- Exclusion: consolidated scale, derived world-space contour/contact
+  measurements, hidden correspondence, interpretation, Step 07, and
+  production work
+- Approved pre-closeout checkpoint:
+  `Saved/ProjectRecovery/20260715-150643/`
+
+## Step 06 Scoped Content Commit And Push
+
+- Date: 2026-07-15
+- Commit: `c4e192d` (`Lock BloodAxe Cairn Stone A005 front back measurements`)
+- Push: success; `assetforge/main` advanced from `249fb9b` to `c4e192d`
+- Scoped files: eleven A005 Step 06 records and evidence files
+- Excluded: recovery-journal changes and every unrelated worktree change

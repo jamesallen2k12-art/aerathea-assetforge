@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: Step 05 complete and pushed; mandatory restart pending
+Status: Step 06 complete and pushed; mandatory restart pending
 
 Artifact classification: `authoritative`
 
@@ -20,13 +20,21 @@ output. Its image-coordinate convention, asset frame, origin/pivot/center
 authority policies, 46 exact registration marks, semantic correspondence
 rules, tolerance policy, and blocked-physical-correspondence record are now
 authoritative. Evidence and validation remain `proof only`. Scoped content
-commit `5af0d91` was pushed to `assetforge/main`. A mandatory new-agent restart
-is now required.
+commit `5af0d91` was pushed to `assetforge/main`.
+
+After the next mandatory restart and Core resume handshake, Flamestrike
+approved the exact Step 06 contract and subsequently approved the visible
+front/back measurement output. Its eight calibration observations, exact
+pixel-space row/contact/feature measurements, twenty-four measurement
+contracts, and seven-entry disagreement record are authoritative. Four
+within-view calibration disagreements, consolidated X/Z scales, and derived
+world-space contour/contact measurements remain blocked. Evidence and
+validation remain `proof only`. Scoped content commit `c4e192d` was pushed to
+`assetforge/main`. A mandatory new-agent restart is now required.
 
 ## Current Step
 
-- Active decision: 05 - Pixel Convention, Coordinate Frame, And Registration
-  Lock
+- Active decision: 06 - Front And Back Exact Measurement Contracts
 - Decision: approved, committed, and pushed
 - Locked asset ID: `SM_GIA_BloodAxeCairnstone_A005`
 - Production status: not started
@@ -48,8 +56,18 @@ is now required.
 - Step 05 pixel/coordinate-frame record: `authoritative`
 - Step 05 orientation-registration manifest and output record: `authoritative`
 - Step 05 evidence board and validation manifest: `proof only`
+- Step 06 execution contract: `authoritative`
+- Step 06 front/back calibration observations: `authoritative`
+- Step 06 front/back pixel measurement manifests and contract sets:
+  `authoritative`
+- Step 06 disagreement list and output record: `authoritative`
+- Step 06 evidence board and validation manifest: `proof only`
 - Fresh-project exact-data authority: the approved A02 source, exact scanline
   evidence, and approved Step 03 panel formulas and lossless crops
+- Approved direct dimensions: overall height `220 cm`, base height `35 cm`,
+  C-001 maximum width `120 cm`, C-004 footprint width `140 cm`
+- Consolidated front/back X/Z calibration authority: none; blocked by four
+  approved disagreement entries
 - Interpretation authority: none
 - A001-A004 asset-specific data: blocked production input
 
@@ -107,28 +125,57 @@ is now required.
   seven blocked physical-correspondence categories, coordinate round-trip
   error `0 px`, all six source tiles pixel-exact with `0` changed pixels and
   `0` maximum RGB delta
+- Step 06 pre-action checkpoint: `Saved/ProjectRecovery/20260715-142939/`
+- Step 06 validated-candidate review checkpoint:
+  `Saved/ProjectRecovery/20260715-145056/`
+- Step 06 approved pre-closeout checkpoint:
+  `Saved/ProjectRecovery/20260715-150643/`
+- Step 06 front/back calibration records:
+  `manifests/STEP_06_FRONT_CALIBRATION_RECORD.json` and
+  `manifests/STEP_06_BACK_CALIBRATION_RECORD.json`
+- Step 06 measurement manifests and contract sets:
+  `manifests/STEP_06_FRONT_MEASUREMENT_MANIFEST.json`,
+  `manifests/STEP_06_BACK_MEASUREMENT_MANIFEST.json`,
+  `manifests/STEP_06_FRONT_MEASUREMENT_CONTRACTS.json`, and
+  `manifests/STEP_06_BACK_MEASUREMENT_CONTRACTS.json`
+- Step 06 disagreement list:
+  `manifests/STEP_06_FRONT_BACK_DISAGREEMENT_LIST.json`
+- Step 06 evidence board:
+  `evidence/STEP_06/SM_GIA_BloodAxeCairnstone_A005_STEP_06_FRONT_BACK_MEASUREMENT_EVIDENCE.png`
+- Step 06 validation manifest: `manifests/STEP_06_VALIDATION_MANIFEST.json`
+- Step 06 output record: `steps/STEP_06_OUTPUT_RECORD.md`
+- Step 06 approved result: 28 validators passed; 26 visible row samples,
+  eight irregular C-004 edge observations, 43 exposed contact sample pixels,
+  32 appearance landmarks, 24 measurement contracts, and seven blocked
+  disagreement entries; both evidence source tiles pixel-exact with `0`
+  changed pixels and `0` maximum RGB delta
 
 ## Git And Checkpoint State
 
 - Branch: `main`
-- Step 05 initialization HEAD: `19ebaf1`
+- Step 06 initialization HEAD: `249fb9b`
 - Remote: synchronized with `assetforge/main`
 - Pre-existing unrelated worktree entries remain preserved and outside scope
-- No unrelated file may be staged or committed by Step 05
+- No unrelated file may be staged or committed by Step 06 closeout
 
 ## Last Scoped Commit And Push
 
-- Scoped content commit: `5af0d91`
+- Scoped content commit: `c4e192d`
 - Push: success to `assetforge/main`
-- Remote advanced from `19ebaf1` to `5af0d91`
+- Remote advanced from `249fb9b` to `c4e192d`
 - Unrelated dirty files remained unstaged
 
 ## Blocked
 
-- Step 06
-- numeric component/contact centers, origin, pivot, centerline, calibration,
-  physical cross-view pixel pairing, snap anchors, and component transforms
-- component masks, filled contours, geometry measurement, and interpretation
+- Step 07
+- all four within-view calibration disagreements and any consolidated X/Z
+  scale selection
+- derived world-space conversion for source-visible contour/contact/feature
+  measurements
+- final component/contact centers, origin, pivot, centerline, physical
+  cross-view pixel pairing, snap anchors, and component transforms
+- C-004 interior ownership, hidden contact closure, component masks, filled
+  contours, geometry measurement, and interpretation
 - A001-A004 data access
 - DCC, texture, FBX, Unreal, and performance work
 - production-root creation
@@ -137,6 +184,7 @@ is now required.
 ## Resume Instruction
 
 Restart with a new agent now. That agent must perform the Core resume handshake
-using this file, the approved Step 05 output record, both authoritative Step 05
-manifests, evidence board, validation manifest, and handoff. It may present a
-Step 06 contract only. Step 06 is not authorized.
+using this file, the approved Step 06 output record, calibration records,
+measurement manifests and contracts, disagreement list, evidence board,
+validation manifest, and handoff. It may present a Step 07 contract only. Step
+07 is not authorized.
