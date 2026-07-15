@@ -1,0 +1,82 @@
+{
+  "schema": "aerathea.step_validation.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "step_id": "STEP_01",
+  "date": "2026-07-15",
+  "status": "step_01_approved_pending_closeout",
+  "artifact_classification": "proof only",
+  "source_accessed": false,
+  "legacy_asset_specific_data_accessed": false,
+  "production_artifact_created": false,
+  "input_hashes": {
+    "AGENTS.md": "5d2d2637a58113f0a6f5ec92e40d8bb2bda9e03fb58b4868a0d9dfbb3b57ad55",
+    "docs/projects/assetforge/BLOODAXE_CAIRNSTONE_PIXEL_EXACT_FRESH_START_MULTISTEP_PLAN.md": "ba6784498d792dc85dd431c807f59620d6851af97b4cd15efe89c44a397b10b6",
+    "docs/projects/assetforge/AETHERFORGE_BLUEPRINTS.md": "73cca5b1c3f1054cb1b35f5e789f7f83d6e40a97bf4afb0b49b38cdb2d3bb82d",
+    "docs/assets/CONCEPT_ART_TO_GAME_READY_ASSET_PIPELINE.md": "761b7e24154d0c68069efc89f21678f2fc9c2a6cb7863b4c78277b39c651655d"
+  },
+  "reference_only_paths": [
+    "docs/assets/reference/bloodaxe_cairnstone_asset/REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate.png",
+    "docs/assets/reference/bloodaxe_cairnstone_asset/ScanlineCapture/REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate_ScanlineManifest.json"
+  ],
+  "validators": [
+    {
+      "id": "precreation_a005_collision_audit",
+      "result": "pass",
+      "detail": "No pre-existing SM_GIA_BloodAxeCairnstone_A005 path was found before creation."
+    },
+    {
+      "id": "checkpoint_latest_pointer",
+      "result": "pass",
+      "detail": "LATEST.md resolves to Saved/ProjectRecovery/20260715-110507/."
+    },
+    {
+      "id": "required_output_set",
+      "result": "pass",
+      "expected_file_count": 9,
+      "actual_file_count": 9
+    },
+    {
+      "id": "json_parse_and_identity",
+      "result": "pass"
+    },
+    {
+      "id": "production_namespace_absent",
+      "result": "pass",
+      "detail": "No A005 path exists under SourceAssets, Content, or Saved/Automation."
+    },
+    {
+      "id": "scoped_diff_check",
+      "result": "pass"
+    },
+    {
+      "id": "staged_file_audit",
+      "result": "pass",
+      "staged_file_count": 0
+    },
+    {
+      "id": "data_access_declaration",
+      "result": "pass",
+      "source_accessed": false,
+      "legacy_asset_specific_data_accessed": false,
+      "production_artifact_created": false
+    }
+  ],
+  "output_hashes": {
+    "SM_GIA_BloodAxeCairnstone_A005_PROJECT_CHARTER.md": "1383a975b0c376be4c493fd41f3b81a2f94c2e62dce4a9b758e7a1d2e9e51d90",
+    "SM_GIA_BloodAxeCairnstone_A005_FRESH_START_DATA_FIREWALL.md": "29e476473610e9f1bd36410874e9fcce641571d8ecd38edf6944cf93ec39d0ab",
+    "SM_GIA_BloodAxeCairnstone_A005_RESET_RESUME_STATE.md": "7a37ba5424a5e31b64b27f1ef45d49e71274c0a085b83fc9d9219b3e00d8c604",
+    "SM_GIA_BloodAxeCairnstone_A005_ARTIFACT_INDEX.md": "2965fa2e62ec5da8d463a2dacc63f86360f9beb39fb5cfe98bf6a6cd2a29abbd",
+    "SM_GIA_BloodAxeCairnstone_A005_APPROVAL_LOG.md": "4345d09a36633fd20d7a8dc5a9bd8decac1513564eab35b904c7a5ed5614b410",
+    "steps/STEP_01_CONTRACT.md": "df966c917b5be1bbcb37a6a8139944a419e15996250787ffc24bd864d8b8b9e6",
+    "steps/STEP_01_OUTPUT_RECORD.md": "64b5125754ef9d7754a7eb89b31a28ab7e820a1d8ed893de1c0c5e66adee426e",
+    "handoffs/STEP_01_TO_STEP_02_HANDOFF.md": "fea020d28fc70cca8d8ec94c77c8278e7ce72b241815020f8d0ca9dcff5c1ee5"
+  },
+  "manifest_self_hash_policy": "The manifest SHA256 is recorded in the review report after this file is written and will be superseded by final post-approval hashes and the scoped git tree.",
+  "checkpoints": [
+    "Saved/ProjectRecovery/20260715-105720/",
+    "Saved/ProjectRecovery/20260715-110507/",
+    "Saved/ProjectRecovery/20260715-110951/",
+    "Saved/ProjectRecovery/20260715-111930/"
+  ],
+  "flamestrike_output_approval": "approved"
+}

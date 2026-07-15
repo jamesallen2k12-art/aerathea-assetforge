@@ -69,12 +69,9 @@ fi
 HEAD="$(git -C "${REPO_ROOT}" rev-parse --short HEAD 2>/dev/null || echo unknown)"
 BRANCH="$(git -C "${REPO_ROOT}" branch --show-current 2>/dev/null || echo unknown)"
 STATUS_COUNT="$(git -C "${REPO_ROOT}" status --short 2>/dev/null | wc -l | tr -d ' ')"
+LATEST="${REPO_ROOT}/Saved/ProjectRecovery/LATEST.md"
 
-if [[ "${LOCAL_ONLY}" == "1" ]]; then
-  LOCAL_LOG="${REPO_ROOT}/Saved/ProjectRecovery/LOCAL_CHECKPOINTS.md"
-  LATEST="${REPO_ROOT}/Saved/ProjectRecovery/LATEST.md"
-
-  cat >"${LATEST}" <<EOF
+cat >"${LATEST}" <<EOF
 # Latest Aerathea Local Checkpoint
 
 - Time: ${HUMAN_TIME}
@@ -83,6 +80,9 @@ if [[ "${LOCAL_ONLY}" == "1" ]]; then
 - Git: branch \`${BRANCH}\`, HEAD \`${HEAD}\`, status lines \`${STATUS_COUNT}\`
 - Resume: inspect \`Saved/ProjectRecovery/${STAMP}/git_status_short.txt\` and \`Saved/ProjectRecovery/${STAMP}/recent_project_files.txt\`.
 EOF
+
+if [[ "${LOCAL_ONLY}" == "1" ]]; then
+  LOCAL_LOG="${REPO_ROOT}/Saved/ProjectRecovery/LOCAL_CHECKPOINTS.md"
 
   cat >>"${LOCAL_LOG}" <<EOF
 
