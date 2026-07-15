@@ -1,0 +1,103 @@
+{
+  "schema": "aerathea.step_validation_manifest.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "step_id": "STEP_07",
+  "date": "2026-07-15",
+  "status": "step_07_complete_approved_pending_scoped_closeout",
+  "artifact_classification": "proof only",
+  "aggregate_result": "pass_with_blocked_disagreements_preserved",
+  "source": {
+    "file_sha256": "4b953abb87f5f254a5f51c6214e76d3f72c4fc55bc2fa4e4d605b2440d6e53c2",
+    "pixel_sha256": "65b69c9674d6644fcae6795df01bdab55e59fc0c493a501ed7ed1baa966a3a72"
+  },
+  "panels": {
+    "left": {
+      "file_sha256": "52212ba783d026a008929e3946cac934281de7d2daec2ada316205059258cba4",
+      "pixel_sha256": "96a10daa637b28b879b5dd210bad3526e87499218dece9ca4ed0560046c9bddb",
+      "size_px": [484, 401]
+    },
+    "right": {
+      "file_sha256": "cc6c27405fbd6ea8c46b70966fe559acbd57acb88e58bfdcd6b763ce827a862e",
+      "pixel_sha256": "f6201cbae75fa061f7614893d7f2c081149a350fc6d64ad510b49ef5c12d7610",
+      "size_px": [367, 372]
+    }
+  },
+  "outputs": {
+    "left_calibration_sha256": "df9f379a26e71152808ef1e975ef7bab12eb25ac2a19960752a1976bfde37bc2",
+    "right_calibration_sha256": "3d7c8a32d82fca202da710cf4209f42e443c4be8fad7a4b79caeccc244d6a76c",
+    "left_measurement_manifest_sha256": "e08d868925967a05d465cecadc4810a3f3e2b3cdb5be342e32ebdd807e0e9725",
+    "right_measurement_manifest_sha256": "72cf8758a1a73b36a653635512267ed84c363620459f2a3953179527f31f19bc",
+    "left_measurement_contracts_sha256": "92b9ff907ec3ca5c1fe0b894363bd801b5a5c7cb79aa1a5e3b5e3dcb4ea043dc",
+    "right_measurement_contracts_sha256": "45c0a392af1e2bd7387b08e5ca8ad6e6d52c98cb2b3b0a681b05b7d2b943a0fc",
+    "disagreement_list_sha256": "238ee8da9eb0228aa1c4388d544e376b63e9a1376091e0ea49d2c4ec95ae59f4",
+    "evidence_board": {
+      "path": "evidence/STEP_07/SM_GIA_BloodAxeCairnstone_A005_STEP_07_LEFT_RIGHT_MEASUREMENT_EVIDENCE.png",
+      "file_sha256": "9603adc4d4af7f8550509c1bc5f2a6ec17ec9b8495243564d3479776f00bca02",
+      "pixel_sha256": "2d1af413dddc811eacfa05c324b645b3d5ac23291f6f928231afd18118837bd4",
+      "size_px": [1052, 1001],
+      "left_source_tile_changed_pixels": 0,
+      "left_source_tile_max_rgb_delta": 0,
+      "right_source_tile_changed_pixels": 0,
+      "right_source_tile_max_rgb_delta": 0
+    }
+  },
+  "counts": {
+    "calibration_observations": 8,
+    "blocked_internal_calibration_disagreements": 4,
+    "left_visible_row_samples": 13,
+    "right_visible_row_samples": 13,
+    "left_irregular_C004_observations": 4,
+    "right_irregular_C004_observations": 4,
+    "left_contact_sample_pixels": 18,
+    "right_contact_sample_pixels": 18,
+    "left_feature_landmarks": 10,
+    "right_feature_landmarks": 10,
+    "measurement_contracts": 24,
+    "disagreement_entries": 7
+  },
+  "validators": [
+    {"id": "source_file_hash", "result": "pass"},
+    {"id": "source_pixel_hash", "result": "pass"},
+    {"id": "left_panel_file_hash", "result": "pass"},
+    {"id": "left_panel_pixel_hash", "result": "pass"},
+    {"id": "right_panel_file_hash", "result": "pass"},
+    {"id": "right_panel_pixel_hash", "result": "pass"},
+    {"id": "step_07_json_parse", "result": "pass", "files": 7},
+    {"id": "left_coordinates_in_bounds", "result": "pass"},
+    {"id": "right_coordinates_in_bounds", "result": "pass"},
+    {"id": "all_recorded_coordinates_in_bounds", "result": "pass"},
+    {"id": "row_span_width_formula", "result": "pass"},
+    {"id": "profile_center_formula", "result": "pass"},
+    {"id": "full_source_panel_local_round_trip", "result": "pass", "tolerance_px": 0},
+    {"id": "calibration_pixel_span_formula", "result": "pass"},
+    {"id": "calibration_cm_per_px_formula", "result": "pass"},
+    {"id": "left_z_calibration_disagreement_preserved", "result": "pass"},
+    {"id": "left_y_calibration_disagreement_preserved", "result": "pass"},
+    {"id": "right_z_calibration_disagreement_preserved", "result": "pass"},
+    {"id": "right_y_calibration_disagreement_preserved", "result": "pass"},
+    {"id": "no_consolidated_scale", "result": "pass"},
+    {"id": "no_averaging_or_visual_thickness_fit", "result": "pass"},
+    {"id": "measurement_contract_references", "result": "pass"},
+    {"id": "C005_side_identity_ambiguous", "result": "pass"},
+    {"id": "contacts_open_and_unclosed", "result": "pass"},
+    {"id": "C004_interior_unowned", "result": "pass"},
+    {"id": "evidence_source_tiles_pixel_exact", "result": "pass", "left_changed_pixels": 0, "right_changed_pixels": 0, "max_rgb_delta": 0},
+    {"id": "candidate_fill_absent", "result": "pass"},
+    {"id": "interpretation_geometry_absent", "result": "pass"},
+    {"id": "legacy_asset_specific_access_absent", "result": "pass"},
+    {"id": "A005_production_roots_absent", "result": "pass"},
+    {"id": "unrelated_staged_files_absent", "result": "pass", "staged_count": 0}
+  ],
+  "validator_summary": {"passed": 31, "failed": 0},
+  "validated_candidate_review_checkpoint": "Saved/ProjectRecovery/20260715-154227/",
+  "derived_world_measurements_authorized": false,
+  "visual_thickness_fitting_authorized": false,
+  "interpretation_authorized": false,
+  "flamestrike_output_approval": {
+    "date": "2026-07-15",
+    "statement": "approved",
+    "result": "blocked_entries_accepted_without_resolution",
+    "approved_entry_count": 7,
+    "approved_pre_closeout_checkpoint": "Saved/ProjectRecovery/20260715-154456/"
+  }
+}

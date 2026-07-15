@@ -1,0 +1,104 @@
+{
+  "schema": "aerathea.view_calibration_record.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "step_id": "STEP_07",
+  "view": "right",
+  "date": "2026-07-15",
+  "status": "approved_step_07_right_calibration_observations_with_blocked_disagreement",
+  "artifact_classification": "authoritative",
+  "source_panel": {
+    "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_RIGHT.png",
+    "file_sha256": "cc6c27405fbd6ea8c46b70966fe559acbd57acb88e58bfdcd6b763ce827a862e",
+    "pixel_sha256": "f6201cbae75fa061f7614893d7f2c081149a350fc6d64ad510b49ef5c12d7610",
+    "size_px": [367, 372],
+    "crop_half_open_full_source": [19, 1073, 386, 1445]
+  },
+  "coordinate_convention": "zero_based_integer_pixel_centers_with_exclusive_edge_to_edge_half_open_spans",
+  "formulas": {
+    "pixel_span": "second_axis_endpoint - first_axis_endpoint",
+    "cm_per_px": "declared_real_span_cm / pixel_span",
+    "pixel_center_for_contiguous_half_open_row_span": "(x0 + x1 - 1) / 2",
+    "averaging_allowed": false,
+    "visual_thickness_fitting_allowed": false
+  },
+  "observations": [
+    {
+      "id": "CAL-RIGHT-Z-OH-220",
+      "axis": "Z",
+      "source_mark_ids": ["HS-Z220-RIGHT", "HS-Z000-OH-RIGHT"],
+      "pixel_endpoints_local": [[58, 37], [58, 291]],
+      "pixel_span": 254,
+      "declared_real_span_cm": 220,
+      "cm_per_px_exact": "110/127",
+      "cm_per_px_decimal": 0.866141732283,
+      "role": "overall_height_annotation_calibration",
+      "annotation_endpoints_are_geometry_boundaries": false
+    },
+    {
+      "id": "CAL-RIGHT-Z-BH-035",
+      "axis": "Z",
+      "source_mark_ids": ["HS-Z035-RIGHT", "HS-Z000-BH-RIGHT"],
+      "pixel_endpoints_local": [[312, 247], [312, 294]],
+      "pixel_span": 47,
+      "declared_real_span_cm": 35,
+      "cm_per_px_exact": "35/47",
+      "cm_per_px_decimal": 0.744680851064,
+      "role": "base_height_annotation_calibration",
+      "annotation_endpoints_are_geometry_boundaries": false
+    },
+    {
+      "id": "CAL-RIGHT-Y-C001-090",
+      "axis": "Y",
+      "source_mark_ids": ["YS-C001-YNEG-RIGHT", "YS-C001-YPOS-RIGHT"],
+      "pixel_endpoints_local": [[108, 313], [252, 313]],
+      "pixel_span": 144,
+      "declared_real_span_cm": 90,
+      "cm_per_px_exact": "5/8",
+      "cm_per_px_decimal": 0.625,
+      "role": "C-001_maximum_depth_annotation_calibration",
+      "annotation_endpoints_are_geometry_boundaries": false
+    },
+    {
+      "id": "CAL-RIGHT-Y-C004-110",
+      "axis": "Y",
+      "source_mark_ids": ["YS-C004-YNEG-RIGHT", "YS-C004-YPOS-RIGHT"],
+      "pixel_endpoints_local": [[85, 346], [278, 346]],
+      "pixel_span": 193,
+      "declared_real_span_cm": 110,
+      "cm_per_px_exact": "110/193",
+      "cm_per_px_decimal": 0.569948186528,
+      "role": "C-004_footprint_depth_annotation_calibration",
+      "annotation_endpoints_are_geometry_boundaries": false
+    }
+  ],
+  "axis_decisions": {
+    "Z": {
+      "status": "blocked_disagreement",
+      "observation_ids": ["CAL-RIGHT-Z-OH-220", "CAL-RIGHT-Z-BH-035"],
+      "absolute_cm_per_px_delta": 0.121460881220,
+      "relative_delta_against_overall_height_percent": 14.023211,
+      "selected_scale": null,
+      "averaged_scale": null
+    },
+    "Y": {
+      "status": "blocked_disagreement",
+      "observation_ids": ["CAL-RIGHT-Y-C001-090", "CAL-RIGHT-Y-C004-110"],
+      "absolute_cm_per_px_delta": 0.055051813472,
+      "relative_delta_against_C001_percent": 8.808290,
+      "selected_scale": null,
+      "averaged_scale": null
+    }
+  },
+  "decision": "Preserve all four exact source-linked calibration results. No consolidated right-view Y or Z scale is authorized.",
+  "world_conversion_status": "blocked_pending_calibration_disagreement_resolution",
+  "interpretation_introduced": false,
+  "legacy_asset_specific_data_accessed": false,
+  "flamestrike_output_approval": {
+    "date": "2026-07-15",
+    "statement": "approved",
+    "result": "pass_with_blocked_disagreement_preserved",
+    "consolidated_scale_authorized": false,
+    "derived_world_conversion_authorized": false,
+    "approved_pre_closeout_checkpoint": "Saved/ProjectRecovery/20260715-154456/"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema": "aerathea.view_pixel_measurement_manifest.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "step_id": "STEP_07",
+  "view": "left",
+  "date": "2026-07-15",
+  "status": "approved_step_07_left_pixel_measurements_world_conversion_blocked",
+  "artifact_classification": "authoritative",
+  "source_panel": {
+    "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_LEFT.png",
+    "file_sha256": "52212ba783d026a008929e3946cac934281de7d2daec2ada316205059258cba4",
+    "pixel_sha256": "96a10daa637b28b879b5dd210bad3526e87499218dece9ca4ed0560046c9bddb",
+    "size_px": [484, 401],
+    "crop_half_open_full_source": [552, 663, 1036, 1064]
+  },
+  "calibration_record": "manifests/STEP_07_LEFT_CALIBRATION_RECORD.json",
+  "selection_policy": "Manual native-pixel audit of source-visible outer edges, open contact samples, and appearance landmarks. Diagnostic scans locate candidates only and create no authority.",
+  "height_station_observations": [
+    {"id": "HS-Z220-LEFT", "pixel_local": [74, 39], "declared_station_cm": 220, "geometry_boundary": false},
+    {"id": "HS-Z000-OH-LEFT", "pixel_local": [74, 316], "declared_station_cm": 0, "geometry_boundary": false},
+    {"id": "HS-Z035-LEFT", "pixel_local": [393, 264], "declared_station_cm": 35, "geometry_boundary": false},
+    {"id": "HS-Z000-BH-LEFT", "pixel_local": [393, 316], "declared_station_cm": 0, "geometry_boundary": false}
+  ],
+  "visible_outer_edge_row_samples": [
+    {"id": "L-C001-R010", "component_id": "C-001", "y": 10, "span_half_open": [203, 246], "width_px": 43, "profile_center_x_px": 224.0},
+    {"id": "L-C001-R040", "component_id": "C-001", "y": 40, "span_half_open": [197, 254], "width_px": 57, "profile_center_x_px": 225.0},
+    {"id": "L-C001-R080", "component_id": "C-001", "y": 80, "span_half_open": [192, 262], "width_px": 70, "profile_center_x_px": 226.5},
+    {"id": "L-C001-R120", "component_id": "C-001", "y": 120, "span_half_open": [187, 270], "width_px": 83, "profile_center_x_px": 228.0},
+    {"id": "L-C001-R160", "component_id": "C-001", "y": 160, "span_half_open": [181, 278], "width_px": 97, "profile_center_x_px": 229.0},
+    {"id": "L-C001-R200", "component_id": "C-001", "y": 200, "span_half_open": [176, 285], "width_px": 109, "profile_center_x_px": 230.0},
+    {"id": "L-C001-R230", "component_id": "C-001", "y": 230, "span_half_open": [173, 289], "width_px": 116, "profile_center_x_px": 230.5},
+    {"id": "L-C002-R240", "component_id": "C-002", "y": 240, "span_half_open": [154, 306], "width_px": 152, "profile_center_x_px": 229.5},
+    {"id": "L-C002-R250", "component_id": "C-002", "y": 250, "span_half_open": [153, 308], "width_px": 155, "profile_center_x_px": 230.0},
+    {"id": "L-C002-R255", "component_id": "C-002", "y": 255, "span_half_open": [152, 308], "width_px": 156, "profile_center_x_px": 229.5},
+    {"id": "L-C003-R265", "component_id": "C-003", "y": 265, "span_half_open": [133, 327], "width_px": 194, "profile_center_x_px": 229.5},
+    {"id": "L-C003-R275", "component_id": "C-003", "y": 275, "span_half_open": [133, 327], "width_px": 194, "profile_center_x_px": 229.5},
+    {"id": "L-C003-R280", "component_id": "C-003", "y": 280, "span_half_open": [133, 327], "width_px": 194, "profile_center_x_px": 229.5}
+  ],
+  "irregular_C004_outer_edge_observations": [
+    {"id": "L-C004-R285", "y": 285, "left_source_pixel": [126, 285], "right_source_pixel": [334, 285], "interior_span_owned": false},
+    {"id": "L-C004-R295", "y": 295, "left_source_pixel": [121, 295], "right_source_pixel": [340, 295], "interior_span_owned": false},
+    {"id": "L-C004-R305", "y": 305, "left_source_pixel": [120, 305], "right_source_pixel": [341, 305], "interior_span_owned": false},
+    {"id": "L-C004-R310", "y": 310, "visible_segments_half_open": [[115, 117], [127, 330], [344, 346]], "intervening_gaps_owned": false}
+  ],
+  "contact_line_samples": [
+    {"contact_id": "CL-001", "between": ["C-001", "C-002"], "classification": "visible_discontinuous", "open_segments": [[[190, 237], [205, 238], [215, 238]], [[245, 238], [260, 238], [275, 237]]], "closure_authorized": false},
+    {"contact_id": "CL-002", "between": ["C-002", "C-003"], "classification": "visible_discontinuous", "open_segments": [[[161, 262], [175, 262], [196, 264]], [[277, 262], [294, 263], [311, 261]]], "closure_authorized": false},
+    {"contact_id": "CL-003", "between": ["C-003", "C-004"], "classification": "visible_discontinuous", "open_segments": [[[128, 292], [132, 293], [145, 293]], [[315, 292], [328, 292], [335, 291]]], "closure_authorized": false}
+  ],
+  "source_feature_landmarks": [
+    {"component_id": "C-005", "observation_id": "L-C005-IDENTITY", "visibility": "ambiguous", "landmarks": [], "absence_proven": false, "measurement_status": "blocked_by_U-006_U-009"},
+    {"component_id": "C-006", "observation_id": "L-C006-CENTRAL-LINEAR", "visibility": "visible", "landmarks": [[225, 37], [238, 82], [232, 148], [226, 194]], "physical_geometry_authority": false},
+    {"component_id": "C-007", "observation_id": "L-C007-REPRESENTATIVE-ANCHORS", "visibility": "visible_nonexhaustive", "landmarks": [[201, 26], [244, 37], [193, 102], [256, 123], [185, 171], [279, 205]], "cross_view_identity_authorized": false, "physical_geometry_authority": false}
+  ],
+  "world_measurement_status": {
+    "direct_source_labels_cm": {"overall_height": 220, "base_height": 35, "C-001_max_depth": 90, "C-004_footprint_depth": 110},
+    "derived_contour_world_values": null,
+    "reason": "Left Y and Z calibration observations disagree internally; no consolidated scale is authorized."
+  },
+  "blocked": ["filled component contours", "C-004 interior ownership", "hidden contact closure", "C-005 absence or physical identity", "final component centers or alignment authority", "world conversion of contour samples", "physical classification of C-006 and C-007"],
+  "interpretation_introduced": false,
+  "production_artifact_created": false,
+  "legacy_asset_specific_data_accessed": false,
+  "flamestrike_output_approval": {
+    "date": "2026-07-15",
+    "statement": "approved",
+    "result": "pass",
+    "scope": "Source-linked left pixel measurements with world conversion and blocked questions preserved.",
+    "approved_pre_closeout_checkpoint": "Saved/ProjectRecovery/20260715-154456/"
+  }
+}
