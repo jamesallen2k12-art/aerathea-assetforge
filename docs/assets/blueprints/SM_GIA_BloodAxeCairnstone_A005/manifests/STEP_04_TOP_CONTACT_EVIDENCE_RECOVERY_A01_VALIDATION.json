@@ -1,0 +1,173 @@
+{
+  "schema": "aerathea.step_recovery_validation.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "recovery_id": "STEP_04R_TOP_CONTACT_EVIDENCE_RECOVERY_A01",
+  "date": "2026-07-15",
+  "status": "step_04r_complete_approved_pending_scoped_closeout",
+  "artifact_classification": "proof only",
+  "aggregate_result": "pass",
+  "inputs": {
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_TOP.png": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_03_PANEL_CROP_MANIFEST.json": "5d423400e1415c7e816648f703f2d04de384070813480db923303ab0709a0356",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/evidence/STEP_04/SM_GIA_BloodAxeCairnstone_A005_STEP_04_TOP_OWNERSHIP_EVIDENCE.png": "a8da08ce5e9abe4846039ddba4d2cf074caf6b6517070f2034449d5fe580e62b",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_04_COMPONENT_OWNERSHIP_INVENTORY.json": "664daadce0bac933d0090408e23df663b72b6ea83c825041dde365a1fad0819f",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_04_VALIDATION_MANIFEST.json": "37c0c649a8e2fe6755b09d1ad23aa61c5faea68e721cadc0611ec74e32abcfb3",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/STEP_04_OUTPUT_RECORD.md": "c166f1b9fbba4f426c467e3409592e104a35a681557d7cde01f3056085e36980",
+    "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/CoreRecovery/20260715_STEP04_TopContactEvidenceDrift/A005_STEP04R_ContactCandidate_A01_REJECTED.png": "4392e9ff2c99c0623df349509f87b30720b875a41f956484d9fb7fca95482228"
+  },
+  "outputs": {
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_04_COMPONENT_OWNERSHIP_INVENTORY_RECOVERY_A01.json": "f472f5bb749eda8ffb27809658d4afd3f5fc732ddcf7d4fcb1275492c1e7d755",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_04_TOP_CONTACT_EVIDENCE_RECOVERY_A01.json": "8f9fb86ef631e5785552a61f61e4a2d3085727f1a667bdf59cf904284b1b2eb0",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/evidence/STEP_04_RECOVERY/SM_GIA_BloodAxeCairnstone_A005_STEP_04_TOP_OWNERSHIP_EVIDENCE_RECOVERY_A01.png": {
+      "file_sha256": "26c58da05a2ab52768887f339935ab72a833aff4ea38b0e38439dde034aaee61",
+      "pixel_sha256": "d55cdb1b169eb1d2be325c2e6a7f5b6dfbce3f54f5beb62751217562dbd7a328",
+      "size_px": [
+        738,
+        555
+      ],
+      "source_tile_changed_pixels": 0,
+      "source_tile_max_rgb_delta": 0
+    }
+  },
+  "counts": {
+    "accepted_contact_points": 48,
+    "CL-001": 16,
+    "CL-002": 16,
+    "CL-003": 16,
+    "explicit_background_rejections": 2
+  },
+  "validators": [
+    {
+      "id": "source_file_hash",
+      "result": "pass"
+    },
+    {
+      "id": "source_pixel_hash",
+      "result": "pass"
+    },
+    {
+      "id": "step_03_crop_manifest_hash",
+      "result": "pass"
+    },
+    {
+      "id": "original_quarantined_board_byte_identity",
+      "result": "pass"
+    },
+    {
+      "id": "original_inventory_byte_identity",
+      "result": "pass"
+    },
+    {
+      "id": "original_validation_byte_identity",
+      "result": "pass"
+    },
+    {
+      "id": "original_output_record_byte_identity",
+      "result": "pass"
+    },
+    {
+      "id": "rejected_diagnostic_preserved",
+      "result": "pass"
+    },
+    {
+      "id": "json_outputs_parse",
+      "result": "pass",
+      "files": 2
+    },
+    {
+      "id": "accepted_point_count",
+      "result": "pass",
+      "count": 48
+    },
+    {
+      "id": "per_contact_point_count",
+      "result": "pass",
+      "counts": {
+        "CL-001": 16,
+        "CL-002": 16,
+        "CL-003": 16
+      }
+    },
+    {
+      "id": "all_coordinates_integer_and_in_bounds",
+      "result": "pass"
+    },
+    {
+      "id": "panel_local_full_source_round_trip",
+      "result": "pass",
+      "tolerance_px": 0
+    },
+    {
+      "id": "accepted_points_exclude_near_white_background",
+      "result": "pass",
+      "maximum_accepted_rgb_channel": 83
+    },
+    {
+      "id": "manual_native_pixel_named_contact_review",
+      "result": "pass",
+      "reviewed_points": 48
+    },
+    {
+      "id": "board_marks_are_discrete_crosses_only",
+      "result": "pass"
+    },
+    {
+      "id": "line_interpolation_absent",
+      "result": "pass"
+    },
+    {
+      "id": "hidden_closure_absent",
+      "result": "pass"
+    },
+    {
+      "id": "evidence_source_tile_pixel_exact",
+      "result": "pass",
+      "changed_pixels": 0,
+      "max_rgb_delta": 0
+    },
+    {
+      "id": "semantic_ids_unchanged",
+      "result": "pass"
+    },
+    {
+      "id": "step_05_07_records_unmodified_by_builder",
+      "result": "pass"
+    },
+    {
+      "id": "interpretation_geometry_absent",
+      "result": "pass"
+    },
+    {
+      "id": "legacy_asset_specific_access_absent",
+      "result": "pass"
+    },
+    {
+      "id": "step_08_output_absent",
+      "result": "pass"
+    }
+  ],
+  "validator_summary": {
+    "passed": 24,
+    "failed": 0
+  },
+  "independent_read_only_audit": {
+    "result": "pass",
+    "validators": 30,
+    "accepted_points": 48,
+    "contact_counts": {
+      "CL-001": 16,
+      "CL-002": 16,
+      "CL-003": 16
+    },
+    "source_tile_changed_pixels": 0,
+    "marked_tile_reconstruction": "exact",
+    "original_artifacts_byte_identical": true,
+    "step_05_07_restored": false,
+    "step_08_outputs_present": false,
+    "unrelated_staged_files": 0
+  },
+  "original_artifacts_modified": false,
+  "step_05_07_authority_restored": false,
+  "step_08_authorized": false,
+  "interpretation_authorized": false
+}

@@ -1,0 +1,100 @@
+{
+  "schema": "aerathea.component_ownership_inventory_recovery.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "recovery_id": "STEP_04R_TOP_CONTACT_EVIDENCE_RECOVERY_A01",
+  "date": "2026-07-15",
+  "status": "approved_step_04r_recovered_semantic_inventory",
+  "artifact_classification": "authoritative",
+  "decision": "Preserve the Step 04 semantic inventory while superseding only invalid top review coordinates with fresh exact discrete contact samples.",
+  "semantic_inventory_preservation": {
+    "component_ids": [
+      "C-001",
+      "C-002",
+      "C-003",
+      "C-004",
+      "C-005",
+      "C-006",
+      "C-007"
+    ],
+    "contact_ids": [
+      "CL-001",
+      "CL-002",
+      "CL-003"
+    ],
+    "occluded_sector_ids": [
+      "OS-001",
+      "OS-002",
+      "OS-003"
+    ],
+    "blocked_unknown_ids": [
+      "U-001",
+      "U-002",
+      "U-003",
+      "U-004",
+      "U-005",
+      "U-006",
+      "U-007",
+      "U-008",
+      "U-009"
+    ],
+    "ids_changed": false,
+    "semantic_descriptions_changed": false,
+    "physical_separability_claimed": false
+  },
+  "top_contact_recovery_manifest": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_04_TOP_CONTACT_EVIDENCE_RECOVERY_A01.json",
+  "top_contact_relations": {
+    "CL-001": {
+      "between": [
+        "C-001",
+        "C-002"
+      ],
+      "classification": "visible_discontinuous_exact_discrete_samples",
+      "sample_count": 16,
+      "closure_authorized": false
+    },
+    "CL-002": {
+      "between": [
+        "C-002",
+        "C-003"
+      ],
+      "classification": "visible_discontinuous_exact_discrete_samples",
+      "sample_count": 16,
+      "closure_authorized": false
+    },
+    "CL-003": {
+      "between": [
+        "C-003",
+        "C-004"
+      ],
+      "classification": "visible_discontinuous_exact_discrete_samples",
+      "sample_count": 16,
+      "closure_authorized": false
+    }
+  },
+  "original_artifacts": {
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/evidence/STEP_04/SM_GIA_BloodAxeCairnstone_A005_STEP_04_TOP_OWNERSHIP_EVIDENCE.png": {
+      "sha256": "a8da08ce5e9abe4846039ddba4d2cf074caf6b6517070f2034449d5fe580e62b",
+      "status": "quarantined_invalid_as_source_bounded_proof"
+    },
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_04_COMPONENT_OWNERSHIP_INVENTORY.json": {
+      "sha256": "664daadce0bac933d0090408e23df663b72b6ea83c825041dde365a1fad0819f",
+      "status": "candidate_semantics_with_invalid_embedded_top_review_coordinates"
+    },
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_04_VALIDATION_MANIFEST.json": {
+      "sha256": "37c0c649a8e2fe6755b09d1ad23aa61c5faea68e721cadc0611ec74e32abcfb3",
+      "status": "quarantined_invalid_as_source_bounded_validation"
+    },
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/STEP_04_OUTPUT_RECORD.md": {
+      "sha256": "c166f1b9fbba4f426c467e3409592e104a35a681557d7cde01f3056085e36980",
+      "status": "quarantined_as_completion_authority_pending_recovery"
+    }
+  },
+  "downstream_authority": {
+    "STEP_05": "suspended_pending_dependency_audit",
+    "STEP_06": "suspended_pending_dependency_audit",
+    "STEP_07": "suspended_pending_dependency_audit",
+    "STEP_08": "stopped_no_output_authority"
+  },
+  "interpretation_introduced": false,
+  "geometry_created": false
+}

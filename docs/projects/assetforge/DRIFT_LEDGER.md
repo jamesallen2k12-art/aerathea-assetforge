@@ -24,6 +24,21 @@ Core authority: `AGENTS.md` Core Principles govern this ledger. Drifted artifact
 
 ## Entries
 
+### 2026-07-15 16:04 EDT - A005 Step 04 Top Contact Evidence Source-Ownership Drift
+
+- Asset or scope: `SM_GIA_BloodAxeCairnstone_A005`, approved Step 04 top ownership evidence and the downstream Step 05-08 authority chain.
+- Detected by: Codex native-pixel audit during the approved Step 08 pre-action pass. Approved Step 04 top contact coordinates include obvious white background pixels, including `CL-003` points `(140,27) = (248,248,248)`, `(167,27) = (253,253,253)`, `(195,27) = (254,254,254)`, `CL-002` endpoint `(195,38) = (254,254,254)`, and `CL-003` endpoint `(31,130) = (255,255,255)`.
+- Last known Core-valid state: approved Step 03 lossless panel decomposition at content commit `2cee686` and final handoff commit `f2fb2b8`; the A02 source, exact scanline evidence, A005 charter/firewall, source lock, and Step 03 crops remain authoritative.
+- First drift action: the final Step 04 correction retained top contact marks outside the source-owned object, then the board and validator were accepted as source-bounded.
+- Assumption or interpretation that caused drift: visual proximity on the composite board was treated as proof of source ownership instead of a native-pixel coordinate audit against the authoritative top panel.
+- Affected outputs: Step 04 top evidence board, component-inventory top review coordinates, Step 04 validation manifest, Step 04 output/approval/handoff completion claims, downstream Step 05-07 authority classification, and the approved but not yet executed Step 08 contract.
+- Artifact statuses: Step 04 top board is `quarantined; invalid as source-bounded proof`; embedded top review coordinates are `invalid`; the original Step 04 inventory is `quarantined/superseded for active authority`; the approved Step 04R recovery inventory and exact top-contact manifest are `authoritative`; the recovered board and validation are `proof only`; original Step 04 validation/output/handoff completion authority remains `quarantined`; Step 05-07 authority is `quarantined/suspended pending dependency audit`, not yet declared invalid; Step 08 is stopped with no tracked output.
+- Quarantined locations or records: `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_CORE_RECOVERY_STATUS_20260715_STEP04_TOP_CONTACT_EVIDENCE.md`; local diagnostics under `Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/CoreRecovery/20260715_STEP04_TopContactEvidenceDrift/`.
+- Recovery progress: Flamestrike approved the exact Step 04R recovery contract and then approved the visible recovered package. The authoritative recovery records contain 48 discrete source-owned top-contact pixels; 24 builder validators and 30 independent audit checks pass. The original affected artifacts remain byte-identical and quarantined; Step 05-07 remain suspended; Step 08 has no output.
+- Recovery decision: Step 04R recovery is complete. Do not repair forward in Step 08. After the mandatory restart, the next gate is a separately approved Step 05-07 dependency restoration/quarantine audit contract; Step 08 can be renewed only after that audit and an explicit renewed authorization.
+- Flamestrike approval: Step 04R execution contract and visible output package approved on 2026-07-15. The earlier approved Step 08 execution boundary remains suspended by Core Recovery.
+- Follow-up Core/Kaizen improvement: every evidence mark claiming source ownership must receive a native-pixel coordinate audit against the authoritative panel; composite-board visual review and pixel-exact untouched source tiles do not prove overlay containment.
+
 ### 2026-07-05 19:42 EDT - A002 Phase 3 Analytic Proof Shell Dataset Quarantine
 
 - Asset or scope: `SM_GIA_BloodAxeCairnstone_A002` Phase 3C through Phase 7D generated dataset lineage.

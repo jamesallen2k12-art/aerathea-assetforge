@@ -1,0 +1,2689 @@
+{
+  "schema": "aerathea.top_contact_evidence_recovery.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "recovery_id": "STEP_04R_TOP_CONTACT_EVIDENCE_RECOVERY_A01",
+  "date": "2026-07-15",
+  "status": "approved_step_04r_exact_top_contact_observations",
+  "artifact_classification": "authoritative",
+  "decision": "Replace invalid Step 04 top review coordinates with exact discrete source-owned contact pixels without line interpolation or hidden closure.",
+  "authority": {
+    "contract": "steps/STEP_04R_TOP_CONTACT_EVIDENCE_RECOVERY_A01_CONTRACT.md",
+    "source_panel": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_TOP.png",
+    "crop_manifest": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_03_PANEL_CROP_MANIFEST.json",
+    "original_quarantined_board": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/evidence/STEP_04/SM_GIA_BloodAxeCairnstone_A005_STEP_04_TOP_OWNERSHIP_EVIDENCE.png",
+    "legacy_asset_specific_data_allowed": false
+  },
+  "source_panel": {
+    "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_TOP.png",
+    "file_sha256": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf",
+    "pixel_sha256": "eda0f5d691336489e257a44b09f58b8543b023bd4edc0893d5fab68ad8dbf05f",
+    "size_px": [
+      337,
+      371
+    ],
+    "crop_half_open_full_source": [
+      393,
+      1073,
+      730,
+      1444
+    ]
+  },
+  "coordinate_convention": "zero_based_integer_pixel_centers_with_panel_local_to_full_source_exact_offset",
+  "selection_policy": {
+    "method": "fresh manual native-pixel audit of directly visible named-layer contacts",
+    "diagnostics_can_locate_candidates_only": true,
+    "threshold_or_shape_fit_authority": false,
+    "original_quarantined_coordinates_reused": false,
+    "line_interpolation_authorized": false,
+    "hidden_closure_authorized": false
+  },
+  "accepted_points": [
+    {
+      "id": "T-CL001-TOP-01",
+      "contact_id": "CL-001",
+      "between": [
+        "C-001",
+        "C-002"
+      ],
+      "sector": "top",
+      "sample_order_within_contact": 1,
+      "pixel_local": [
+        120,
+        68
+      ],
+      "pixel_full_source": [
+        513,
+        1141
+      ],
+      "source_rgb": [
+        16,
+        9,
+        6
+      ],
+      "neighborhood_5x5_rgb_sha256": "433750c2591a992c244a16c033d9de297c047de8673257f3074fba389cdc41fe",
+      "inward_witness": {
+        "component_id": "C-001",
+        "pixel_local": [
+          120,
+          70
+        ],
+        "source_rgb": [
+          78,
+          72,
+          62
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-002",
+        "pixel_local": [
+          120,
+          66
+        ],
+        "source_rgb": [
+          35,
+          25,
+          22
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL001-TOP-02",
+      "contact_id": "CL-001",
+      "between": [
+        "C-001",
+        "C-002"
+      ],
+      "sector": "top",
+      "sample_order_within_contact": 2,
+      "pixel_local": [
+        145,
+        67
+      ],
+      "pixel_full_source": [
+        538,
+        1140
+      ],
+      "source_rgb": [
+        46,
+        39,
+        33
+      ],
+      "neighborhood_5x5_rgb_sha256": "c602a8cfa986d699809a1328b8a727bb6485c61518719cd18efcdf3899acef30",
+      "inward_witness": {
+        "component_id": "C-001",
+        "pixel_local": [
+          145,
+          69
+        ],
+        "source_rgb": [
+          52,
+          40,
+          32
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-002",
+        "pixel_local": [
+          145,
+          65
+        ],
+        "source_rgb": [
+          78,
+          72,
+          65
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL001-TOP-03",
+      "contact_id": "CL-001",
+      "between": [
+        "C-001",
+        "C-002"
+      ],
+      "sector": "top",
+      "sample_order_within_contact": 3,
+      "pixel_local": [
+        170,
+        67
+      ],
+      "pixel_full_source": [
+        563,
+        1140
+      ],
+      "source_rgb": [
+        14,
+        5,
+        3
+      ],
+      "neighborhood_5x5_rgb_sha256": "c203d1f667ca76738e5469d91df4f3448acc59c8d112a04e7518125f07a46e65",
+      "inward_witness": {
+        "component_id": "C-001",
+        "pixel_local": [
+          170,
+          69
+        ],
+        "source_rgb": [
+          79,
+          53,
+          48
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-002",
+        "pixel_local": [
+          170,
+          65
+        ],
+        "source_rgb": [
+          28,
+          23,
+          19
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL001-TOP-04",
+      "contact_id": "CL-001",
+      "between": [
+        "C-001",
+        "C-002"
+      ],
+      "sector": "top",
+      "sample_order_within_contact": 4,
+      "pixel_local": [
+        195,
+        68
+      ],
+      "pixel_full_source": [
+        588,
+        1141
+      ],
+      "source_rgb": [
+        54,
+        44,
+        40
+      ],
+      "neighborhood_5x5_rgb_sha256": "fd1329da44596702e2e98a2d77f2e0744443abfe3f9b96284505a5e67d05a117",
+      "inward_witness": {
+        "component_id": "C-001",
+        "pixel_local": [
+          195,
+          70
+        ],
+        "source_rgb": [
+          82,
+          80,
+          81
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-002",
+        "pixel_local": [
+          195,
+          66
+        ],
+        "source_rgb": [
+          20,
+          2,
+          2
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL001-BOTTOM-01",
+      "contact_id": "CL-001",
+      "between": [
+        "C-001",
+        "C-002"
+      ],
+      "sector": "bottom",
+      "sample_order_within_contact": 5,
+      "pixel_local": [
+        110,
+        221
+      ],
+      "pixel_full_source": [
+        503,
+        1294
+      ],
+      "source_rgb": [
+        65,
+        18,
+        12
+      ],
+      "neighborhood_5x5_rgb_sha256": "2cca8940f7d0b37d7f26ce291f4051d4fda64246d6b68194609ee12f2d29f767",
+      "inward_witness": {
+        "component_id": "C-001",
+        "pixel_local": [
+          110,
+          219
+        ],
+        "source_rgb": [
+          17,
+          15,
+          10
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-002",
+        "pixel_local": [
+          110,
+          223
+        ],
+        "source_rgb": [
+          37,
+          10,
+          9
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL001-BOTTOM-02",
+      "contact_id": "CL-001",
+      "between": [
+        "C-001",
+        "C-002"
+      ],
+      "sector": "bottom",
+      "sample_order_within_contact": 6,
+      "pixel_local": [
+        135,
+        223
+      ],
+      "pixel_full_source": [
+        528,
+        1296
+      ],
+      "source_rgb": [
+        83,
+        9,
+        5
+      ],
+      "neighborhood_5x5_rgb_sha256": "2049f7fa0980b0879f3c7752694b0eb47ad8adabfbcf643e11ae40afe240ef35",
+      "inward_witness": {
+        "component_id": "C-001",
+        "pixel_local": [
+          135,
+          221
+        ],
+        "source_rgb": [
+          26,
+          5,
+          4
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-002",
+        "pixel_local": [
+          135,
+          225
+        ],
+        "source_rgb": [
+          40,
+          2,
+          2
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL001-BOTTOM-03",
+      "contact_id": "CL-001",
+      "between": [
+        "C-001",
+        "C-002"
+      ],
+      "sector": "bottom",
+      "sample_order_within_contact": 7,
+      "pixel_local": [
+        160,
+        224
+      ],
+      "pixel_full_source": [
+        553,
+        1297
+      ],
+      "source_rgb": [
+        8,
+        8,
+        8
+      ],
+      "neighborhood_5x5_rgb_sha256": "cdf947b3adc491b15447732b7cfd9b818b9d6f38ec87610153eb628c3ea055f8",
+      "inward_witness": {
+        "component_id": "C-001",
+        "pixel_local": [
+          160,
+          222
+        ],
+        "source_rgb": [
+          59,
+          15,
+          6
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-002",
+        "pixel_local": [
+          160,
+          226
+        ],
+        "source_rgb": [
+          25,
+          23,
+          15
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL001-BOTTOM-04",
+      "contact_id": "CL-001",
+      "between": [
+        "C-001",
+        "C-002"
+      ],
+      "sector": "bottom",
+      "sample_order_within_contact": 8,
+      "pixel_local": [
+        190,
+        221
+      ],
+      "pixel_full_source": [
+        583,
+        1294
+      ],
+      "source_rgb": [
+        35,
+        36,
+        33
+      ],
+      "neighborhood_5x5_rgb_sha256": "3e691efbbb5f20c759505dd872c0cfc5c2acd29e9831772029000800107e8cef",
+      "inward_witness": {
+        "component_id": "C-001",
+        "pixel_local": [
+          190,
+          219
+        ],
+        "source_rgb": [
+          39,
+          39,
+          37
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-002",
+        "pixel_local": [
+          190,
+          223
+        ],
+        "source_rgb": [
+          39,
+          37,
+          35
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL001-LEFT-01",
+      "contact_id": "CL-001",
+      "between": [
+        "C-001",
+        "C-002"
+      ],
+      "sector": "left",
+      "sample_order_within_contact": 9,
+      "pixel_local": [
+        72,
+        110
+      ],
+      "pixel_full_source": [
+        465,
+        1183
+      ],
+      "source_rgb": [
+        64,
+        60,
+        51
+      ],
+      "neighborhood_5x5_rgb_sha256": "7a00d4d090de656a4c8221ee8961f1d3a2000b9f921b8651a4e13ab11dcf35ca",
+      "inward_witness": {
+        "component_id": "C-001",
+        "pixel_local": [
+          74,
+          110
+        ],
+        "source_rgb": [
+          56,
+          51,
+          55
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-002",
+        "pixel_local": [
+          70,
+          110
+        ],
+        "source_rgb": [
+          55,
+          1,
+          1
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL001-LEFT-02",
+      "contact_id": "CL-001",
+      "between": [
+        "C-001",
+        "C-002"
+      ],
+      "sector": "left",
+      "sample_order_within_contact": 10,
+      "pixel_local": [
+        71,
+        135
+      ],
+      "pixel_full_source": [
+        464,
+        1208
+      ],
+      "source_rgb": [
+        80,
+        53,
+        42
+      ],
+      "neighborhood_5x5_rgb_sha256": "ca1cade7089b5cf8d9a488fd1621333e0c0f9f0b8455ce0839a3baa6457529fd",
+      "inward_witness": {
+        "component_id": "C-001",
+        "pixel_local": [
+          73,
+          135
+        ],
+        "source_rgb": [
+          82,
+          71,
+          63
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-002",
+        "pixel_local": [
+          69,
+          135
+        ],
+        "source_rgb": [
+          72,
+          64,
+          62
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL001-LEFT-03",
+      "contact_id": "CL-001",
+      "between": [
+        "C-001",
+        "C-002"
+      ],
+      "sector": "left",
+      "sample_order_within_contact": 11,
+      "pixel_local": [
+        70,
+        160
+      ],
+      "pixel_full_source": [
+        463,
+        1233
+      ],
+      "source_rgb": [
+        69,
+        51,
+        45
+      ],
+      "neighborhood_5x5_rgb_sha256": "8b032c856652c07cf1f437ff96844077230f2fa608b99387e69e32aba829d861",
+      "inward_witness": {
+        "component_id": "C-001",
+        "pixel_local": [
+          72,
+          160
+        ],
+        "source_rgb": [
+          67,
+          65,
+          59
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-002",
+        "pixel_local": [
+          68,
+          160
+        ],
+        "source_rgb": [
+          43,
+          34,
+          26
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL001-LEFT-04",
+      "contact_id": "CL-001",
+      "between": [
+        "C-001",
+        "C-002"
+      ],
+      "sector": "left",
+      "sample_order_within_contact": 12,
+      "pixel_local": [
+        75,
+        190
+      ],
+      "pixel_full_source": [
+        468,
+        1263
+      ],
+      "source_rgb": [
+        29,
+        26,
+        23
+      ],
+      "neighborhood_5x5_rgb_sha256": "0df078279c85be0a956fb2d1ad6d4d893074a67ac9e193ce5941874499751ff9",
+      "inward_witness": {
+        "component_id": "C-001",
+        "pixel_local": [
+          77,
+          190
+        ],
+        "source_rgb": [
+          78,
+          55,
+          45
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-002",
+        "pixel_local": [
+          73,
+          190
+        ],
+        "source_rgb": [
+          45,
+          42,
+          38
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL001-RIGHT-01",
+      "contact_id": "CL-001",
+      "between": [
+        "C-001",
+        "C-002"
+      ],
+      "sector": "right",
+      "sample_order_within_contact": 13,
+      "pixel_local": [
+        207,
+        110
+      ],
+      "pixel_full_source": [
+        600,
+        1183
+      ],
+      "source_rgb": [
+        29,
+        16,
+        11
+      ],
+      "neighborhood_5x5_rgb_sha256": "a5511f1dc457dc7e1f4a89527c6cb6309e26abb903c0bb74dec45cdb68911a2a",
+      "inward_witness": {
+        "component_id": "C-001",
+        "pixel_local": [
+          205,
+          110
+        ],
+        "source_rgb": [
+          60,
+          21,
+          11
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-002",
+        "pixel_local": [
+          209,
+          110
+        ],
+        "source_rgb": [
+          33,
+          28,
+          23
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL001-RIGHT-02",
+      "contact_id": "CL-001",
+      "between": [
+        "C-001",
+        "C-002"
+      ],
+      "sector": "right",
+      "sample_order_within_contact": 14,
+      "pixel_local": [
+        210,
+        135
+      ],
+      "pixel_full_source": [
+        603,
+        1208
+      ],
+      "source_rgb": [
+        69,
+        17,
+        11
+      ],
+      "neighborhood_5x5_rgb_sha256": "7db256fe2e9c7b28a272f77676853f016d22a7ed77f7e8248b03ed0a79ab22f1",
+      "inward_witness": {
+        "component_id": "C-001",
+        "pixel_local": [
+          208,
+          135
+        ],
+        "source_rgb": [
+          15,
+          9,
+          7
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-002",
+        "pixel_local": [
+          212,
+          135
+        ],
+        "source_rgb": [
+          13,
+          8,
+          6
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL001-RIGHT-03",
+      "contact_id": "CL-001",
+      "between": [
+        "C-001",
+        "C-002"
+      ],
+      "sector": "right",
+      "sample_order_within_contact": 15,
+      "pixel_local": [
+        210,
+        160
+      ],
+      "pixel_full_source": [
+        603,
+        1233
+      ],
+      "source_rgb": [
+        16,
+        0,
+        2
+      ],
+      "neighborhood_5x5_rgb_sha256": "f7bc63c62e65ad84abbbeee7ca8f4c7189132295dbaebf93344fb34e8c5ff0b9",
+      "inward_witness": {
+        "component_id": "C-001",
+        "pixel_local": [
+          208,
+          160
+        ],
+        "source_rgb": [
+          11,
+          4,
+          5
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-002",
+        "pixel_local": [
+          212,
+          160
+        ],
+        "source_rgb": [
+          2,
+          3,
+          3
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL001-RIGHT-04",
+      "contact_id": "CL-001",
+      "between": [
+        "C-001",
+        "C-002"
+      ],
+      "sector": "right",
+      "sample_order_within_contact": 16,
+      "pixel_local": [
+        206,
+        190
+      ],
+      "pixel_full_source": [
+        599,
+        1263
+      ],
+      "source_rgb": [
+        31,
+        29,
+        24
+      ],
+      "neighborhood_5x5_rgb_sha256": "cbf42fe2f8bf3012bf71250e64b19effe5ad27b793acbdf960ca5206679976ad",
+      "inward_witness": {
+        "component_id": "C-001",
+        "pixel_local": [
+          204,
+          190
+        ],
+        "source_rgb": [
+          10,
+          6,
+          5
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-002",
+        "pixel_local": [
+          208,
+          190
+        ],
+        "source_rgb": [
+          28,
+          29,
+          25
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL002-TOP-01",
+      "contact_id": "CL-002",
+      "between": [
+        "C-002",
+        "C-003"
+      ],
+      "sector": "top",
+      "sample_order_within_contact": 1,
+      "pixel_local": [
+        120,
+        58
+      ],
+      "pixel_full_source": [
+        513,
+        1131
+      ],
+      "source_rgb": [
+        0,
+        0,
+        0
+      ],
+      "neighborhood_5x5_rgb_sha256": "fcfc89f1332894b062ae4783170664899c7727d737c3ddd233164aef88c7b804",
+      "inward_witness": {
+        "component_id": "C-002",
+        "pixel_local": [
+          120,
+          60
+        ],
+        "source_rgb": [
+          72,
+          7,
+          1
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-003",
+        "pixel_local": [
+          120,
+          56
+        ],
+        "source_rgb": [
+          50,
+          43,
+          38
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL002-TOP-02",
+      "contact_id": "CL-002",
+      "between": [
+        "C-002",
+        "C-003"
+      ],
+      "sector": "top",
+      "sample_order_within_contact": 2,
+      "pixel_local": [
+        145,
+        57
+      ],
+      "pixel_full_source": [
+        538,
+        1130
+      ],
+      "source_rgb": [
+        21,
+        11,
+        6
+      ],
+      "neighborhood_5x5_rgb_sha256": "3a61409126584ab73dfe2c2a0606ae6e2a386518d1c232477e640bfc7a90f9e8",
+      "inward_witness": {
+        "component_id": "C-002",
+        "pixel_local": [
+          145,
+          59
+        ],
+        "source_rgb": [
+          10,
+          2,
+          2
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-003",
+        "pixel_local": [
+          145,
+          55
+        ],
+        "source_rgb": [
+          32,
+          21,
+          16
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL002-TOP-03",
+      "contact_id": "CL-002",
+      "between": [
+        "C-002",
+        "C-003"
+      ],
+      "sector": "top",
+      "sample_order_within_contact": 3,
+      "pixel_local": [
+        170,
+        58
+      ],
+      "pixel_full_source": [
+        563,
+        1131
+      ],
+      "source_rgb": [
+        51,
+        47,
+        43
+      ],
+      "neighborhood_5x5_rgb_sha256": "8aad6da9775254853bc80ee2f4895e6f044dacb4f91842a4640ea2b702b3f6bc",
+      "inward_witness": {
+        "component_id": "C-002",
+        "pixel_local": [
+          170,
+          60
+        ],
+        "source_rgb": [
+          48,
+          46,
+          38
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-003",
+        "pixel_local": [
+          170,
+          56
+        ],
+        "source_rgb": [
+          62,
+          53,
+          54
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL002-TOP-04",
+      "contact_id": "CL-002",
+      "between": [
+        "C-002",
+        "C-003"
+      ],
+      "sector": "top",
+      "sample_order_within_contact": 4,
+      "pixel_local": [
+        195,
+        58
+      ],
+      "pixel_full_source": [
+        588,
+        1131
+      ],
+      "source_rgb": [
+        67,
+        66,
+        61
+      ],
+      "neighborhood_5x5_rgb_sha256": "9a59de35ed75f82f898359016cea3fb55b4a494b6dd5df77480730b786b3a023",
+      "inward_witness": {
+        "component_id": "C-002",
+        "pixel_local": [
+          195,
+          60
+        ],
+        "source_rgb": [
+          24,
+          20,
+          18
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-003",
+        "pixel_local": [
+          195,
+          56
+        ],
+        "source_rgb": [
+          59,
+          55,
+          50
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL002-BOTTOM-01",
+      "contact_id": "CL-002",
+      "between": [
+        "C-002",
+        "C-003"
+      ],
+      "sector": "bottom",
+      "sample_order_within_contact": 5,
+      "pixel_local": [
+        100,
+        239
+      ],
+      "pixel_full_source": [
+        493,
+        1312
+      ],
+      "source_rgb": [
+        60,
+        21,
+        14
+      ],
+      "neighborhood_5x5_rgb_sha256": "80fb178d28449fcdef595697739270613d5f3ed6d31c8f042ecba06ae97db442",
+      "inward_witness": {
+        "component_id": "C-002",
+        "pixel_local": [
+          100,
+          237
+        ],
+        "source_rgb": [
+          55,
+          38,
+          29
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-003",
+        "pixel_local": [
+          100,
+          241
+        ],
+        "source_rgb": [
+          42,
+          15,
+          9
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL002-BOTTOM-02",
+      "contact_id": "CL-002",
+      "between": [
+        "C-002",
+        "C-003"
+      ],
+      "sector": "bottom",
+      "sample_order_within_contact": 6,
+      "pixel_local": [
+        130,
+        240
+      ],
+      "pixel_full_source": [
+        523,
+        1313
+      ],
+      "source_rgb": [
+        41,
+        25,
+        18
+      ],
+      "neighborhood_5x5_rgb_sha256": "2c6fd762857048e9bf76fdb44d77f742e83055a57b2b820968e72cab45e4328c",
+      "inward_witness": {
+        "component_id": "C-002",
+        "pixel_local": [
+          130,
+          238
+        ],
+        "source_rgb": [
+          63,
+          27,
+          21
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-003",
+        "pixel_local": [
+          130,
+          242
+        ],
+        "source_rgb": [
+          28,
+          3,
+          3
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL002-BOTTOM-03",
+      "contact_id": "CL-002",
+      "between": [
+        "C-002",
+        "C-003"
+      ],
+      "sector": "bottom",
+      "sample_order_within_contact": 7,
+      "pixel_local": [
+        160,
+        240
+      ],
+      "pixel_full_source": [
+        553,
+        1313
+      ],
+      "source_rgb": [
+        35,
+        23,
+        16
+      ],
+      "neighborhood_5x5_rgb_sha256": "3006a5310ee4c33de13b60ea623f810cb9f3528512cf4bf07b461545db6454e5",
+      "inward_witness": {
+        "component_id": "C-002",
+        "pixel_local": [
+          160,
+          238
+        ],
+        "source_rgb": [
+          85,
+          87,
+          79
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-003",
+        "pixel_local": [
+          160,
+          242
+        ],
+        "source_rgb": [
+          12,
+          5,
+          3
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL002-BOTTOM-04",
+      "contact_id": "CL-002",
+      "between": [
+        "C-002",
+        "C-003"
+      ],
+      "sector": "bottom",
+      "sample_order_within_contact": 8,
+      "pixel_local": [
+        195,
+        239
+      ],
+      "pixel_full_source": [
+        588,
+        1312
+      ],
+      "source_rgb": [
+        31,
+        27,
+        26
+      ],
+      "neighborhood_5x5_rgb_sha256": "7a9241024fd9fbdd25806d37562c6d7119368e7e156011f2bcda0cfdcee919f2",
+      "inward_witness": {
+        "component_id": "C-002",
+        "pixel_local": [
+          195,
+          237
+        ],
+        "source_rgb": [
+          51,
+          48,
+          41
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-003",
+        "pixel_local": [
+          195,
+          241
+        ],
+        "source_rgb": [
+          49,
+          44,
+          42
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL002-LEFT-01",
+      "contact_id": "CL-002",
+      "between": [
+        "C-002",
+        "C-003"
+      ],
+      "sector": "left",
+      "sample_order_within_contact": 9,
+      "pixel_local": [
+        57,
+        110
+      ],
+      "pixel_full_source": [
+        450,
+        1183
+      ],
+      "source_rgb": [
+        62,
+        56,
+        55
+      ],
+      "neighborhood_5x5_rgb_sha256": "67e559824a324cf57c7c5e4a8179961bc68422a1dd8cb1fa56404af4ffa12392",
+      "inward_witness": {
+        "component_id": "C-002",
+        "pixel_local": [
+          59,
+          110
+        ],
+        "source_rgb": [
+          79,
+          74,
+          66
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-003",
+        "pixel_local": [
+          55,
+          110
+        ],
+        "source_rgb": [
+          83,
+          83,
+          75
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL002-LEFT-02",
+      "contact_id": "CL-002",
+      "between": [
+        "C-002",
+        "C-003"
+      ],
+      "sector": "left",
+      "sample_order_within_contact": 10,
+      "pixel_local": [
+        56,
+        135
+      ],
+      "pixel_full_source": [
+        449,
+        1208
+      ],
+      "source_rgb": [
+        28,
+        11,
+        11
+      ],
+      "neighborhood_5x5_rgb_sha256": "8a7fabd8a87678804f50405ee73b86bd942d9e3a1a44c0bba4245870b8e81628",
+      "inward_witness": {
+        "component_id": "C-002",
+        "pixel_local": [
+          58,
+          135
+        ],
+        "source_rgb": [
+          77,
+          52,
+          33
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-003",
+        "pixel_local": [
+          54,
+          135
+        ],
+        "source_rgb": [
+          56,
+          39,
+          27
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL002-LEFT-03",
+      "contact_id": "CL-002",
+      "between": [
+        "C-002",
+        "C-003"
+      ],
+      "sector": "left",
+      "sample_order_within_contact": 11,
+      "pixel_local": [
+        56,
+        160
+      ],
+      "pixel_full_source": [
+        449,
+        1233
+      ],
+      "source_rgb": [
+        68,
+        58,
+        56
+      ],
+      "neighborhood_5x5_rgb_sha256": "cb2273333f2f403bb31328fc88aa74ff2f18d5be75c8d4e63bb40774be492f7f",
+      "inward_witness": {
+        "component_id": "C-002",
+        "pixel_local": [
+          58,
+          160
+        ],
+        "source_rgb": [
+          74,
+          65,
+          57
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-003",
+        "pixel_local": [
+          54,
+          160
+        ],
+        "source_rgb": [
+          82,
+          75,
+          67
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL002-LEFT-04",
+      "contact_id": "CL-002",
+      "between": [
+        "C-002",
+        "C-003"
+      ],
+      "sector": "left",
+      "sample_order_within_contact": 12,
+      "pixel_local": [
+        60,
+        190
+      ],
+      "pixel_full_source": [
+        453,
+        1263
+      ],
+      "source_rgb": [
+        63,
+        55,
+        57
+      ],
+      "neighborhood_5x5_rgb_sha256": "8c526a8b83ebf87d2d28a37ea65b386b8e2e095083b6d2d0418d3eadd1100d3c",
+      "inward_witness": {
+        "component_id": "C-002",
+        "pixel_local": [
+          62,
+          190
+        ],
+        "source_rgb": [
+          68,
+          64,
+          55
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-003",
+        "pixel_local": [
+          58,
+          190
+        ],
+        "source_rgb": [
+          74,
+          74,
+          65
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL002-RIGHT-01",
+      "contact_id": "CL-002",
+      "between": [
+        "C-002",
+        "C-003"
+      ],
+      "sector": "right",
+      "sample_order_within_contact": 13,
+      "pixel_local": [
+        222,
+        110
+      ],
+      "pixel_full_source": [
+        615,
+        1183
+      ],
+      "source_rgb": [
+        19,
+        13,
+        10
+      ],
+      "neighborhood_5x5_rgb_sha256": "7b94ece26be6b23cad6ede050773dd7eae5e7290111d4d3c0fca923b37df5604",
+      "inward_witness": {
+        "component_id": "C-002",
+        "pixel_local": [
+          220,
+          110
+        ],
+        "source_rgb": [
+          40,
+          33,
+          33
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-003",
+        "pixel_local": [
+          224,
+          110
+        ],
+        "source_rgb": [
+          22,
+          21,
+          18
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL002-RIGHT-02",
+      "contact_id": "CL-002",
+      "between": [
+        "C-002",
+        "C-003"
+      ],
+      "sector": "right",
+      "sample_order_within_contact": 14,
+      "pixel_local": [
+        223,
+        135
+      ],
+      "pixel_full_source": [
+        616,
+        1208
+      ],
+      "source_rgb": [
+        62,
+        58,
+        57
+      ],
+      "neighborhood_5x5_rgb_sha256": "d8c9cfdc06fa9c86dd06a8f4dad6645b940938a81c63671178380c7ef264195c",
+      "inward_witness": {
+        "component_id": "C-002",
+        "pixel_local": [
+          221,
+          135
+        ],
+        "source_rgb": [
+          52,
+          55,
+          52
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-003",
+        "pixel_local": [
+          225,
+          135
+        ],
+        "source_rgb": [
+          48,
+          44,
+          36
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL002-RIGHT-03",
+      "contact_id": "CL-002",
+      "between": [
+        "C-002",
+        "C-003"
+      ],
+      "sector": "right",
+      "sample_order_within_contact": 15,
+      "pixel_local": [
+        223,
+        160
+      ],
+      "pixel_full_source": [
+        616,
+        1233
+      ],
+      "source_rgb": [
+        74,
+        74,
+        70
+      ],
+      "neighborhood_5x5_rgb_sha256": "3afcf99c7291f6913daac76507fdf34d57731fd9755703c8531ccc9677a4d6c1",
+      "inward_witness": {
+        "component_id": "C-002",
+        "pixel_local": [
+          221,
+          160
+        ],
+        "source_rgb": [
+          34,
+          31,
+          30
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-003",
+        "pixel_local": [
+          225,
+          160
+        ],
+        "source_rgb": [
+          20,
+          5,
+          3
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL002-RIGHT-04",
+      "contact_id": "CL-002",
+      "between": [
+        "C-002",
+        "C-003"
+      ],
+      "sector": "right",
+      "sample_order_within_contact": 16,
+      "pixel_local": [
+        220,
+        190
+      ],
+      "pixel_full_source": [
+        613,
+        1263
+      ],
+      "source_rgb": [
+        34,
+        16,
+        11
+      ],
+      "neighborhood_5x5_rgb_sha256": "87c44c800b0bef337ab8a90405769c5d268d016bca40417a78b1eb7d95601001",
+      "inward_witness": {
+        "component_id": "C-002",
+        "pixel_local": [
+          218,
+          190
+        ],
+        "source_rgb": [
+          8,
+          6,
+          5
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-003",
+        "pixel_local": [
+          222,
+          190
+        ],
+        "source_rgb": [
+          52,
+          13,
+          7
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL003-TOP-01",
+      "contact_id": "CL-003",
+      "between": [
+        "C-003",
+        "C-004"
+      ],
+      "sector": "top",
+      "sample_order_within_contact": 1,
+      "pixel_local": [
+        120,
+        47
+      ],
+      "pixel_full_source": [
+        513,
+        1120
+      ],
+      "source_rgb": [
+        53,
+        46,
+        46
+      ],
+      "neighborhood_5x5_rgb_sha256": "72ee38dbec6c178332af3e351ca50c5298882e463498c5c7449be075e8fdd650",
+      "inward_witness": {
+        "component_id": "C-003",
+        "pixel_local": [
+          120,
+          49
+        ],
+        "source_rgb": [
+          68,
+          62,
+          51
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-004",
+        "pixel_local": [
+          120,
+          45
+        ],
+        "source_rgb": [
+          89,
+          83,
+          76
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL003-TOP-02",
+      "contact_id": "CL-003",
+      "between": [
+        "C-003",
+        "C-004"
+      ],
+      "sector": "top",
+      "sample_order_within_contact": 2,
+      "pixel_local": [
+        145,
+        46
+      ],
+      "pixel_full_source": [
+        538,
+        1119
+      ],
+      "source_rgb": [
+        76,
+        71,
+        66
+      ],
+      "neighborhood_5x5_rgb_sha256": "aaac04e33c70f2e44cfe367f50d1fa3062a29cf2f08d3b79d60454b8f352c3e2",
+      "inward_witness": {
+        "component_id": "C-003",
+        "pixel_local": [
+          145,
+          48
+        ],
+        "source_rgb": [
+          62,
+          50,
+          44
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-004",
+        "pixel_local": [
+          145,
+          44
+        ],
+        "source_rgb": [
+          98,
+          91,
+          82
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL003-TOP-03",
+      "contact_id": "CL-003",
+      "between": [
+        "C-003",
+        "C-004"
+      ],
+      "sector": "top",
+      "sample_order_within_contact": 3,
+      "pixel_local": [
+        170,
+        46
+      ],
+      "pixel_full_source": [
+        563,
+        1119
+      ],
+      "source_rgb": [
+        34,
+        31,
+        30
+      ],
+      "neighborhood_5x5_rgb_sha256": "ed4edcb516984b0b66362aa4ca021f15cc72f10742ed38a2f8e659efbdedce4f",
+      "inward_witness": {
+        "component_id": "C-003",
+        "pixel_local": [
+          170,
+          48
+        ],
+        "source_rgb": [
+          27,
+          19,
+          17
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-004",
+        "pixel_local": [
+          170,
+          44
+        ],
+        "source_rgb": [
+          32,
+          26,
+          28
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL003-TOP-04",
+      "contact_id": "CL-003",
+      "between": [
+        "C-003",
+        "C-004"
+      ],
+      "sector": "top",
+      "sample_order_within_contact": 4,
+      "pixel_local": [
+        184,
+        49
+      ],
+      "pixel_full_source": [
+        577,
+        1122
+      ],
+      "source_rgb": [
+        34,
+        18,
+        17
+      ],
+      "neighborhood_5x5_rgb_sha256": "c63eb5da7ed1d8bf087878e1f9d9713dc33b61e86cee9c088960a2ded28fb462",
+      "inward_witness": {
+        "component_id": "C-003",
+        "pixel_local": [
+          184,
+          51
+        ],
+        "source_rgb": [
+          23,
+          9,
+          9
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-004",
+        "pixel_local": [
+          184,
+          47
+        ],
+        "source_rgb": [
+          90,
+          78,
+          69
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL003-BOTTOM-01",
+      "contact_id": "CL-003",
+      "between": [
+        "C-003",
+        "C-004"
+      ],
+      "sector": "bottom",
+      "sample_order_within_contact": 5,
+      "pixel_local": [
+        90,
+        250
+      ],
+      "pixel_full_source": [
+        483,
+        1323
+      ],
+      "source_rgb": [
+        18,
+        19,
+        13
+      ],
+      "neighborhood_5x5_rgb_sha256": "6a99576c9ddb6b9fae3857d3a324a49c542f59796b684025bc8cbb0d4e98863e",
+      "inward_witness": {
+        "component_id": "C-003",
+        "pixel_local": [
+          90,
+          248
+        ],
+        "source_rgb": [
+          85,
+          78,
+          73
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-004",
+        "pixel_local": [
+          90,
+          252
+        ],
+        "source_rgb": [
+          31,
+          25,
+          21
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL003-BOTTOM-02",
+      "contact_id": "CL-003",
+      "between": [
+        "C-003",
+        "C-004"
+      ],
+      "sector": "bottom",
+      "sample_order_within_contact": 6,
+      "pixel_local": [
+        120,
+        252
+      ],
+      "pixel_full_source": [
+        513,
+        1325
+      ],
+      "source_rgb": [
+        62,
+        59,
+        51
+      ],
+      "neighborhood_5x5_rgb_sha256": "7956a8c7956c32e50d0e932382e89a3b0961a6a86568430d85080aa5debdfb3a",
+      "inward_witness": {
+        "component_id": "C-003",
+        "pixel_local": [
+          120,
+          250
+        ],
+        "source_rgb": [
+          37,
+          35,
+          33
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-004",
+        "pixel_local": [
+          120,
+          254
+        ],
+        "source_rgb": [
+          40,
+          37,
+          35
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL003-BOTTOM-03",
+      "contact_id": "CL-003",
+      "between": [
+        "C-003",
+        "C-004"
+      ],
+      "sector": "bottom",
+      "sample_order_within_contact": 7,
+      "pixel_local": [
+        150,
+        253
+      ],
+      "pixel_full_source": [
+        543,
+        1326
+      ],
+      "source_rgb": [
+        48,
+        45,
+        47
+      ],
+      "neighborhood_5x5_rgb_sha256": "6a4f2893be580ff2eb5943485bb5ee806ae61b68ffac7d9252b18a1518285ccc",
+      "inward_witness": {
+        "component_id": "C-003",
+        "pixel_local": [
+          150,
+          251
+        ],
+        "source_rgb": [
+          43,
+          38,
+          32
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-004",
+        "pixel_local": [
+          150,
+          255
+        ],
+        "source_rgb": [
+          78,
+          72,
+          62
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL003-BOTTOM-04",
+      "contact_id": "CL-003",
+      "between": [
+        "C-003",
+        "C-004"
+      ],
+      "sector": "bottom",
+      "sample_order_within_contact": 8,
+      "pixel_local": [
+        184,
+        249
+      ],
+      "pixel_full_source": [
+        577,
+        1322
+      ],
+      "source_rgb": [
+        19,
+        12,
+        11
+      ],
+      "neighborhood_5x5_rgb_sha256": "7b4cf259d2ab62385bea53d0b78f2bfb12248b2b16229b9d6ea5aa7fee9c578e",
+      "inward_witness": {
+        "component_id": "C-003",
+        "pixel_local": [
+          184,
+          247
+        ],
+        "source_rgb": [
+          13,
+          6,
+          3
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-004",
+        "pixel_local": [
+          184,
+          251
+        ],
+        "source_rgb": [
+          0,
+          0,
+          0
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL003-LEFT-01",
+      "contact_id": "CL-003",
+      "between": [
+        "C-003",
+        "C-004"
+      ],
+      "sector": "left",
+      "sample_order_within_contact": 9,
+      "pixel_local": [
+        49,
+        110
+      ],
+      "pixel_full_source": [
+        442,
+        1183
+      ],
+      "source_rgb": [
+        32,
+        20,
+        17
+      ],
+      "neighborhood_5x5_rgb_sha256": "1007f72e9e35c0b7171b3e1201f8879fc9e1701b8d5dba575b09746b31a64c28",
+      "inward_witness": {
+        "component_id": "C-003",
+        "pixel_local": [
+          51,
+          110
+        ],
+        "source_rgb": [
+          122,
+          97,
+          88
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-004",
+        "pixel_local": [
+          47,
+          110
+        ],
+        "source_rgb": [
+          70,
+          70,
+          68
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL003-LEFT-02",
+      "contact_id": "CL-003",
+      "between": [
+        "C-003",
+        "C-004"
+      ],
+      "sector": "left",
+      "sample_order_within_contact": 10,
+      "pixel_local": [
+        46,
+        135
+      ],
+      "pixel_full_source": [
+        439,
+        1208
+      ],
+      "source_rgb": [
+        2,
+        0,
+        0
+      ],
+      "neighborhood_5x5_rgb_sha256": "b600e1f9e265d1f666db4327dd2ba1904b5f418158f21d363aa91e7abfb11c27",
+      "inward_witness": {
+        "component_id": "C-003",
+        "pixel_local": [
+          48,
+          135
+        ],
+        "source_rgb": [
+          113,
+          101,
+          96
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-004",
+        "pixel_local": [
+          44,
+          135
+        ],
+        "source_rgb": [
+          20,
+          17,
+          13
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL003-LEFT-03",
+      "contact_id": "CL-003",
+      "between": [
+        "C-003",
+        "C-004"
+      ],
+      "sector": "left",
+      "sample_order_within_contact": 11,
+      "pixel_local": [
+        45,
+        160
+      ],
+      "pixel_full_source": [
+        438,
+        1233
+      ],
+      "source_rgb": [
+        15,
+        2,
+        2
+      ],
+      "neighborhood_5x5_rgb_sha256": "8c96dcc7eed9e1e54ba169ef6483684b62c23c0fcde8288a39c7c0cf0f7ee5c8",
+      "inward_witness": {
+        "component_id": "C-003",
+        "pixel_local": [
+          47,
+          160
+        ],
+        "source_rgb": [
+          156,
+          116,
+          111
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-004",
+        "pixel_local": [
+          43,
+          160
+        ],
+        "source_rgb": [
+          63,
+          43,
+          30
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL003-LEFT-04",
+      "contact_id": "CL-003",
+      "between": [
+        "C-003",
+        "C-004"
+      ],
+      "sector": "left",
+      "sample_order_within_contact": 12,
+      "pixel_local": [
+        49,
+        190
+      ],
+      "pixel_full_source": [
+        442,
+        1263
+      ],
+      "source_rgb": [
+        54,
+        9,
+        6
+      ],
+      "neighborhood_5x5_rgb_sha256": "57059c0129fe4ec5c6d34fd67ebfcdc9322409c4bacabc48375108e49f0c2a52",
+      "inward_witness": {
+        "component_id": "C-003",
+        "pixel_local": [
+          51,
+          190
+        ],
+        "source_rgb": [
+          32,
+          2,
+          2
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-004",
+        "pixel_local": [
+          47,
+          190
+        ],
+        "source_rgb": [
+          50,
+          18,
+          18
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL003-RIGHT-01",
+      "contact_id": "CL-003",
+      "between": [
+        "C-003",
+        "C-004"
+      ],
+      "sector": "right",
+      "sample_order_within_contact": 13,
+      "pixel_local": [
+        230,
+        110
+      ],
+      "pixel_full_source": [
+        623,
+        1183
+      ],
+      "source_rgb": [
+        43,
+        39,
+        37
+      ],
+      "neighborhood_5x5_rgb_sha256": "40506f7d9dacb432f1544bfe4e959637cd4c8ae32f6532f08b7f789ec62874ee",
+      "inward_witness": {
+        "component_id": "C-003",
+        "pixel_local": [
+          228,
+          110
+        ],
+        "source_rgb": [
+          56,
+          56,
+          54
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-004",
+        "pixel_local": [
+          232,
+          110
+        ],
+        "source_rgb": [
+          40,
+          30,
+          29
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL003-RIGHT-02",
+      "contact_id": "CL-003",
+      "between": [
+        "C-003",
+        "C-004"
+      ],
+      "sector": "right",
+      "sample_order_within_contact": 14,
+      "pixel_local": [
+        231,
+        135
+      ],
+      "pixel_full_source": [
+        624,
+        1208
+      ],
+      "source_rgb": [
+        38,
+        37,
+        34
+      ],
+      "neighborhood_5x5_rgb_sha256": "2960ef777e2859026f010468d4e2a0d59c7736e01b010586fdcf3603e7f87397",
+      "inward_witness": {
+        "component_id": "C-003",
+        "pixel_local": [
+          229,
+          135
+        ],
+        "source_rgb": [
+          29,
+          27,
+          25
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-004",
+        "pixel_local": [
+          233,
+          135
+        ],
+        "source_rgb": [
+          70,
+          73,
+          67
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL003-RIGHT-03",
+      "contact_id": "CL-003",
+      "between": [
+        "C-003",
+        "C-004"
+      ],
+      "sector": "right",
+      "sample_order_within_contact": 15,
+      "pixel_local": [
+        233,
+        160
+      ],
+      "pixel_full_source": [
+        626,
+        1233
+      ],
+      "source_rgb": [
+        45,
+        10,
+        11
+      ],
+      "neighborhood_5x5_rgb_sha256": "f96ce6441de7d3fc53516f7871765fbfaeeaf64a58d3d00f7f9883011460351a",
+      "inward_witness": {
+        "component_id": "C-003",
+        "pixel_local": [
+          231,
+          160
+        ],
+        "source_rgb": [
+          28,
+          19,
+          15
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-004",
+        "pixel_local": [
+          235,
+          160
+        ],
+        "source_rgb": [
+          14,
+          6,
+          4
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    },
+    {
+      "id": "T-CL003-RIGHT-04",
+      "contact_id": "CL-003",
+      "between": [
+        "C-003",
+        "C-004"
+      ],
+      "sector": "right",
+      "sample_order_within_contact": 16,
+      "pixel_local": [
+        227,
+        190
+      ],
+      "pixel_full_source": [
+        620,
+        1263
+      ],
+      "source_rgb": [
+        26,
+        9,
+        6
+      ],
+      "neighborhood_5x5_rgb_sha256": "f81e225be6b88c19ef290e051d3b44388c5b623625c6363ef105056f5ea18d2f",
+      "inward_witness": {
+        "component_id": "C-003",
+        "pixel_local": [
+          225,
+          190
+        ],
+        "source_rgb": [
+          50,
+          14,
+          6
+        ]
+      },
+      "outward_witness": {
+        "component_id": "C-004",
+        "pixel_local": [
+          229,
+          190
+        ],
+        "source_rgb": [
+          30,
+          10,
+          4
+        ]
+      },
+      "selection_method": "fresh manual native-pixel audit of directly visible named-layer contact",
+      "visibility": "visible_discrete_sample",
+      "line_interpolation_authorized": false,
+      "closure_authorized": false,
+      "tolerance_px": 0
+    }
+  ],
+  "counts": {
+    "accepted_total": 48,
+    "per_contact": {
+      "CL-001": 16,
+      "CL-002": 16,
+      "CL-003": 16
+    },
+    "per_contact_sector": 4
+  },
+  "contact_status": {
+    "CL-001": {
+      "between": [
+        "C-001",
+        "C-002"
+      ],
+      "classification": "visible_discontinuous_exact_discrete_samples",
+      "sample_count": 16,
+      "sampled_sectors": [
+        "top",
+        "bottom",
+        "left",
+        "right"
+      ],
+      "continuity_between_samples": "blocked",
+      "hidden_closure": "blocked"
+    },
+    "CL-002": {
+      "between": [
+        "C-002",
+        "C-003"
+      ],
+      "classification": "visible_discontinuous_exact_discrete_samples",
+      "sample_count": 16,
+      "sampled_sectors": [
+        "top",
+        "bottom",
+        "left",
+        "right"
+      ],
+      "continuity_between_samples": "blocked",
+      "hidden_closure": "blocked"
+    },
+    "CL-003": {
+      "between": [
+        "C-003",
+        "C-004"
+      ],
+      "classification": "visible_discontinuous_exact_discrete_samples",
+      "sample_count": 16,
+      "sampled_sectors": [
+        "top",
+        "bottom",
+        "left",
+        "right"
+      ],
+      "continuity_between_samples": "blocked",
+      "hidden_closure": "blocked"
+    }
+  },
+  "rejected_internal_diagnostic": {
+    "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/CoreRecovery/20260715_STEP04_TopContactEvidenceDrift/A005_STEP04R_ContactCandidate_A01_REJECTED.png",
+    "file_sha256": "4392e9ff2c99c0623df349509f87b30720b875a41f956484d9fb7fca95482228",
+    "classification": "invalid_internal_diagnostic_rejection_evidence_only",
+    "authority": false,
+    "explicit_background_rejections": [
+      {
+        "contact_id": "CL-003",
+        "pixel_local": [
+          195,
+          47
+        ],
+        "source_rgb": [
+          251,
+          251,
+          251
+        ]
+      },
+      {
+        "contact_id": "CL-003",
+        "pixel_local": [
+          190,
+          251
+        ],
+        "source_rgb": [
+          239,
+          240,
+          239
+        ]
+      }
+    ],
+    "resolution": "Rejected diagnostic candidates were not promoted. Final accepted points were re-audited directly on the authoritative panel."
+  },
+  "blocked": [
+    "continuous contact perimeter",
+    "hidden closure",
+    "component masks or fills",
+    "measurement calibration centers or orientation",
+    "Step 05-07 restoration",
+    "Step 08"
+  ],
+  "interpretation_introduced": false,
+  "geometry_created": false,
+  "legacy_asset_specific_data_accessed": false
+}
