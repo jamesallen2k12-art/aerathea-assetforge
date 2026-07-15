@@ -1,12 +1,34 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: Step 07 complete and pushed; mandatory restart pending
+Status: Step 04R approved and pushed; mandatory restart pending
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-15
 
-## Last Core-Valid State
+## Core Recovery Override
+
+During the approved Step 08 pre-action pass, native-pixel inspection proved
+that the final approved Step 04 top evidence contains contact marks on white
+background/annotation pixels. This contradicts the Step 04 source-bounded
+validation and triggers Core Recovery.
+
+Last fully completed pre-drift gate: Step 03 lossless panel decomposition.
+
+Flamestrike approved Step 04R. The recovered semantic inventory and 48 fresh
+exact top-contact observations are authoritative. The recovered board and
+validation remain proof only. Original affected Step 04 artifacts remain
+quarantined/superseded. Step 05-07 authority remains suspended pending a
+separately approved dependency audit. Step 08 is stopped and has no tracked
+output.
+
+Controlling recovery record:
+
+`SM_GIA_BloodAxeCairnstone_A005_CORE_RECOVERY_STATUS_20260715_STEP04_TOP_CONTACT_EVIDENCE.md`
+
+This override supersedes the pre-detection status descriptions below.
+
+## Superseded Pre-Detection State
 
 Flamestrike approved the Step 04 component decomposition after visible review.
 Its seven neutral source-visible layers/treatment families, source-view
@@ -48,8 +70,10 @@ new-agent restart is now required.
 
 ## Current Step
 
-- Active decision: 07 - Left And Right Exact Measurement Contracts
-- Decision: approved, committed, and pushed
+- Active decision: mandatory restart before Step 05-07 dependency-audit
+  contract review
+- Decision: Step 04R approved, committed, and pushed; dependency audit not
+  authorized
 - Locked asset ID: `SM_GIA_BloodAxeCairnstone_A005`
 - Production status: not started
 
@@ -64,22 +88,15 @@ new-agent restart is now required.
 - Step 03 panel crop manifest and six crops: `authoritative`
 - Step 03 boundary evidence and validation manifest: `proof only`
 - Step 04 contract: `authoritative`
-- Step 04 component-ownership inventory and output record: `authoritative`
-- Step 04 evidence boards and validation manifest: `proof only`
-- Step 05 execution contract: `authoritative`
-- Step 05 pixel/coordinate-frame record: `authoritative`
-- Step 05 orientation-registration manifest and output record: `authoritative`
-- Step 05 evidence board and validation manifest: `proof only`
-- Step 06 execution contract: `authoritative`
-- Step 06 front/back calibration observations: `authoritative`
-- Step 06 front/back pixel measurement manifests and contract sets:
-  `authoritative`
-- Step 06 disagreement list and output record: `authoritative`
-- Step 06 evidence board and validation manifest: `proof only`
-- Step 07 execution contract: `authoritative`
-- Step 07 left/right calibration records, measurement manifests, contract
-  sets, disagreement list, and output record: `authoritative`
-- Step 07 evidence board and validation manifest: `proof only`
+- Step 04R contract, recovered semantic inventory, exact top-contact manifest,
+  and output record: `authoritative`
+- Step 04R recovered board and focused validation: `proof only`
+- Original Step 04 inventory, top board, validation, output record, and
+  handoff completion authority: `quarantined/superseded`
+- Step 05-07 contracts, records, evidence, validation, outputs, and handoffs:
+  `quarantined/suspended pending dependency audit`; not declared invalid
+- Approved Step 08 execution boundary: `suspended by Core Recovery`
+- Step 08 tracked output authority: none
 - Fresh-project exact-data authority: the approved A02 source, exact scanline
   evidence, and approved Step 03 panel formulas and lossless crops
 - Approved direct dimensions: overall height `220 cm`, base height `35 cm`,
@@ -194,24 +211,49 @@ new-agent restart is now required.
   20 appearance landmarks, 24 measurement contracts, and seven blocked
   disagreement entries; both evidence source tiles pixel-exact with `0`
   changed pixels and `0` maximum RGB delta
+- Step 04R pre-action checkpoint: `Saved/ProjectRecovery/20260715-162256/`
+- Step 04R validated-candidate checkpoint:
+  `Saved/ProjectRecovery/20260715-163538/`
+- Step 04R approved pre-closeout checkpoint:
+  `Saved/ProjectRecovery/20260715-163837/`
+- Step 04R final restart-handoff checkpoint:
+  `Saved/ProjectRecovery/20260715-164736/`
+- Step 04R recovered inventory:
+  `manifests/STEP_04_COMPONENT_OWNERSHIP_INVENTORY_RECOVERY_A01.json`
+- Step 04R exact contact manifest:
+  `manifests/STEP_04_TOP_CONTACT_EVIDENCE_RECOVERY_A01.json`
+- Step 04R evidence board:
+  `evidence/STEP_04_RECOVERY/SM_GIA_BloodAxeCairnstone_A005_STEP_04_TOP_OWNERSHIP_EVIDENCE_RECOVERY_A01.png`
+- Step 04R validation:
+  `manifests/STEP_04_TOP_CONTACT_EVIDENCE_RECOVERY_A01_VALIDATION.json`
+- Step 04R output record:
+  `steps/STEP_04R_TOP_CONTACT_EVIDENCE_RECOVERY_A01_OUTPUT_RECORD.md`
+- Step 04R restart handoff:
+  `handoffs/STEP_04R_TO_STEP_05_07_DEPENDENCY_AUDIT_HANDOFF.md`
+- Step 04R result: 48 exact source-owned observations; 24 builder validators
+  and 30 independent checks pass; source tile changed pixels `0`; maximum RGB
+  delta `0`; original affected artifacts byte-identical
 
 ## Git And Checkpoint State
 
 - Branch: `main`
-- Step 07 initialization HEAD: `d9f2d1a`
-- Remote after scoped content push: `1735fbb`
+- Recovery initialization HEAD: `3e219f0`
+- Remote after scoped recovery-content push: `a8ae9ec`
 - Pre-existing unrelated worktree entries remain preserved and outside scope
-- No unrelated file may be staged or committed by Step 07 closeout
+- No unrelated file may be staged or committed by Step 04R closeout
 
 ## Last Scoped Commit And Push
 
-- Scoped Step 07 content commit: `1735fbb`
+- Scoped Step 04R recovery-content commit: `a8ae9ec`
 - Push: success to `assetforge/main`
-- Remote advanced from `d9f2d1a` to `1735fbb`
+- Remote advanced from `3e219f0` to `a8ae9ec`
 - Unrelated dirty files remained unstaged
 
 ## Blocked
 
+- all Step 08 execution while Core Recovery is active
+- restoration or use of Step 04-07 authority without dependency audit and
+  Flamestrike reclassification
 - Step 08
 - all four within-view calibration disagreements and any consolidated X/Z
   scale selection
@@ -226,12 +268,15 @@ new-agent restart is now required.
 - A001-A004 data access
 - DCC, texture, FBX, Unreal, and performance work
 - production-root creation
-- any authority beyond the approved Step 07 execution contract
+- dependency-audit execution without a separately approved contract
+- any authority beyond the approved Step 04R recovery result
 
 ## Resume Instruction
 
 Restart with a new agent now. That agent must perform the Core resume handshake
-using this file, the approved Step 07 output record, calibration records,
-measurement manifests and contracts, disagreement list, evidence board,
-validation manifest, and handoff. It may present a Step 08 contract only. Step
-08 is not authorized.
+using the recovery journal/latest checkpoint, this file, the dedicated A005
+recovery status, the 2026-07-15 A005 drift-ledger entry, the Step 04R contract,
+approved output, recovery manifests, validation, board, and dependency-audit
+handoff. It may present a Step 05-07 dependency-audit contract only. The audit,
+authority restoration, renewed Step 08 authorization, and production work are
+not authorized.

@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A005 Approval Log
 
-Status: approved Step 07 approval record; final handoff included in closeout
+Status: Step 04R approved and pushed; dependency audit pending restart
 
 Artifact classification: `authoritative`
 
@@ -415,3 +415,88 @@ Updated: 2026-07-15
 - Push: success; `assetforge/main` advanced from `d9f2d1a` to `1735fbb`
 - Scoped files: eleven A005 Step 07 records and evidence files
 - Excluded: recovery-journal changes and every unrelated worktree change
+
+## Step 08 Contract Approval And Core Recovery Stop
+
+- Date: 2026-07-15
+- Approver: Flamestrike
+- Contract statement: `approved`
+- Initially authorized scope: exact Step 08 top measurement contract only
+- Pre-action checkpoint: `Saved/ProjectRecovery/20260715-160008/`
+- Stop-the-line detection: native-pixel audit found approved Step 04 top contact
+  evidence on white background/annotation pixels, contradicting the Step 04
+  source-bounded validation claim
+- Result: Step 08 stopped before any tracked output was created; its approved
+  execution boundary is suspended by Core Recovery
+- Recovery-boundary checkpoint: `Saved/ProjectRecovery/20260715-160608/`
+- Recovery status: Step 04R subsequently approved; Step 08 remains suspended
+
+## Step 04R Recovery Contract Approval
+
+- Date: 2026-07-15
+- Approver: Flamestrike
+- Statement: `approved`
+- Scope: exact Step 04R top-contact evidence recovery A01 contract
+- Result: fresh top-contact coordinate audit, recovered unfilled board,
+  focused validation, and candidate output record authorized
+- Exclusion: output approval, Step 05-07 restoration, dependency audit,
+  Step 08, interpretation, geometry, commit, and push
+- Pre-action checkpoint: `Saved/ProjectRecovery/20260715-162256/`
+
+## Step 04R Candidate Validation
+
+- Date: 2026-07-15
+- Exact discrete source pixels: `48`
+- Per-contact counts: `16 / 16 / 16`
+- Builder validators: `24` passed, `0` failed
+- Independent audit: `30` checks passed
+- Source tile changed pixels: `0`
+- Maximum RGB delta: `0`
+- Marked tile reconstruction: exact
+- Original quarantined artifacts: byte-identical
+- Step 05-07 restored: false
+- Step 08 outputs: none
+- Validated-candidate review checkpoint:
+  `Saved/ProjectRecovery/20260715-163538/`
+- Output approval: approved by Flamestrike after visible review
+
+## Step 04R Output Approval
+
+- Date: 2026-07-15
+- Approver: Flamestrike
+- Statement: `approved`
+- Scope: visible Step 04R recovered top-contact package only
+- Decision: the recovered semantic inventory and 48 exact contact
+  observations are `authoritative`
+- Evidence board and focused validation remain `proof only`
+- Original affected Step 04 artifacts remain byte-identical and
+  `quarantined/superseded`
+- Step 05-07 remain `quarantined/suspended pending dependency audit`
+- Step 08 remains suspended with no tracked output
+- Exclusion: dependency-audit execution, downstream restoration, renewed Step
+  08 authorization, interpretation, geometry, and production work
+- Approved pre-closeout checkpoint:
+  `Saved/ProjectRecovery/20260715-163837/`
+
+## Step 04R Scoped Recovery Commit And Push
+
+- Date: 2026-07-15
+- Commit: `a8ae9ec` (`Recover BloodAxe A005 top contact evidence`)
+- Push: success; `assetforge/main` advanced from `3e219f0` to `a8ae9ec`
+- Scoped files: seven Step 04R package files plus the single A005 drift-ledger
+  entry
+- Excluded: every unrelated dirty worktree file and pre-existing A004
+  drift-ledger additions
+
+## Step 04R Restart Handoff
+
+- Date: 2026-07-15
+- Handoff:
+  `handoffs/STEP_04R_TO_STEP_05_07_DEPENDENCY_AUDIT_HANDOFF.md`
+- Status: `authoritative`; mandatory restart required
+- Final restart-handoff checkpoint:
+  `Saved/ProjectRecovery/20260715-164736/`
+- Next permitted presentation: Step 05-07 dependency-audit contract only,
+  after the Core resume handshake
+- Not authorized: dependency-audit execution, Step 05-07 restoration, renewed
+  Step 08 execution, interpretation, geometry, or production work

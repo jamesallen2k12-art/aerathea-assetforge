@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A005 Core Recovery Status
 
-Status: `Step 04R approved; scoped closeout and mandatory restart`
+Status: `Step 04R approved and pushed; mandatory restart`
 
 Artifact classification: `authoritative recovery status`
 
@@ -116,6 +116,11 @@ Flamestrike approved the visible Step 04R recovered top-contact package on
 2026-07-15. The recovered inventory and exact contact manifest are now
 `authoritative`; the board and validation remain `proof only`. Approved
 pre-closeout checkpoint: `Saved/ProjectRecovery/20260715-163837/`.
+
+Scoped recovery content commit `a8ae9ec` was pushed to `assetforge/main`,
+advancing the remote from `3e219f0`. Restart handoff:
+`handoffs/STEP_04R_TO_STEP_05_07_DEPENDENCY_AUDIT_HANDOFF.md`.
+Final restart-handoff checkpoint: `Saved/ProjectRecovery/20260715-164736/`.
 
 ## Smallest Sufficient Recovery
 

@@ -1,6 +1,6 @@
 # Step 04R Top Contact Evidence Recovery A01 Output Record
 
-Status: Step 04R complete and approved; scoped closeout in progress
+Status: Step 04R complete and approved; recovery content pushed; mandatory restart
 
 Artifact classification: `authoritative`
 
@@ -104,6 +104,7 @@ pixels are exact visible observations only.
 - Pre-action: `Saved/ProjectRecovery/20260715-162256/`.
 - Validated-candidate checkpoint: `Saved/ProjectRecovery/20260715-163538/`.
 - Approved pre-closeout checkpoint: `Saved/ProjectRecovery/20260715-163837/`.
+- Final restart-handoff checkpoint: `Saved/ProjectRecovery/20260715-164736/`.
 
 ## Output Approval
 
@@ -122,3 +123,13 @@ Complete scoped closeout, commit, push, and mandatory restart. The next agent
 must perform the Core resume handshake and may present a Step 05-07 dependency-
 audit contract only. The audit is not authorized by this output approval or by
 the restart handoff.
+
+## Scoped Commit And Push
+
+- Recovery content commit: `a8ae9ec`.
+- Push: success to `assetforge/main`.
+- Remote advanced from `3e219f0` to `a8ae9ec`.
+- Included: seven Step 04R recovery package files and only the single A005
+  drift-ledger entry.
+- Excluded: every unrelated dirty worktree file and the pre-existing A004
+  drift-ledger additions.

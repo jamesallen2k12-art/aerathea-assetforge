@@ -1,10 +1,35 @@
 # SM_GIA_BloodAxeCairnstone_A005 Artifact Index
 
-Status: approved Step 07 artifact index; final handoff included in closeout
+Status: Step 04R approved; dependency audit pending mandatory restart
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-15
+
+## Core Recovery Override - 2026-07-15
+
+This section supersedes conflicting historical classifications below. Step
+04R is approved; the override remains active while Step 05-07 await a separate
+dependency audit.
+
+| Artifact or group | Current status | Recovery role |
+|---|---|---|
+| A02 source, scanline evidence, A005 charter/firewall, Step 01-03 authority | `authoritative` | Last fully completed pre-drift authority chain |
+| `SM_GIA_BloodAxeCairnstone_A005_CORE_RECOVERY_STATUS_20260715_STEP04_TOP_CONTACT_EVIDENCE.md` | `authoritative recovery status` | Current stop/reassessment authority |
+| Step 04 contract | `authoritative` | Approved scope boundary only |
+| Original Step 04 inventory | `quarantined/superseded for active authority` | Contains invalid embedded top coordinates; semantics preserved in recovery inventory |
+| Step 04 embedded top contact coordinates | `invalid` | Includes white background pixels |
+| Step 04 top evidence board | `quarantined; invalid as source-bounded proof` | Preserved affected proof |
+| Original Step 04 validation/output/handoff completion claims | `quarantined/superseded` | Preserved drifted completion authority |
+| Step 05-07 records | `quarantined/suspended pending dependency audit` | Not declared invalid; cannot be used as authority |
+| Approved Step 08 contract | `suspended by Core Recovery` | No tracked Step 08 output exists |
+| `steps/STEP_04R_TOP_CONTACT_EVIDENCE_RECOVERY_A01_CONTRACT.md` | `authoritative` | Flamestrike-approved recovery execution boundary |
+| `manifests/STEP_04_COMPONENT_OWNERSHIP_INVENTORY_RECOVERY_A01.json` | `authoritative` | Approved preserved semantics with recovered top-contact override |
+| `manifests/STEP_04_TOP_CONTACT_EVIDENCE_RECOVERY_A01.json` | `authoritative` | Approved 48 exact discrete contact observations |
+| `evidence/STEP_04_RECOVERY/SM_GIA_BloodAxeCairnstone_A005_STEP_04_TOP_OWNERSHIP_EVIDENCE_RECOVERY_A01.png` | `proof only` | Untouched source plus exact unfilled recovered marks |
+| `manifests/STEP_04_TOP_CONTACT_EVIDENCE_RECOVERY_A01_VALIDATION.json` | `proof only` | 24 builder validators plus 30 independent audit checks pass |
+| `steps/STEP_04R_TOP_CONTACT_EVIDENCE_RECOVERY_A01_OUTPUT_RECORD.md` | `authoritative` | Flamestrike-approved recovery decision record |
+| `handoffs/STEP_04R_TO_STEP_05_07_DEPENDENCY_AUDIT_HANDOFF.md` | `authoritative` | Mandatory-restart handoff; dependency audit remains unauthorized |
 
 | Artifact | Status | Role |
 |---|---|---|
