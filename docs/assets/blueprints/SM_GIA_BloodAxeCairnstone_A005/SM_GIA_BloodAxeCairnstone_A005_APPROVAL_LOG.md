@@ -156,3 +156,54 @@ Updated: 2026-07-15
 - Push: success; `assetforge/main` advanced from `ac3be5d` to `2cee686`
 - Scoped files: fifteen A005 Step 03 records and images
 - Excluded: recovery-journal changes and every unrelated worktree change
+
+## Step 04 Contract Approval
+
+- Date: 2026-07-15
+- Approver: Flamestrike
+- Statement: `approve`
+- Scope: exact visible Step 04 physical-component and source-ownership
+  inventory contract
+- Result: fresh neutral inventory, source-view matrix, contact-line inventory,
+  blocked-unknown record, unfilled evidence boards, validation, and candidate
+  Step 04 record creation authorized
+- Exclusion: Step 04 output approval, measurement, registration,
+  interpretation, Step 05, and production work
+- Pre-action checkpoint: `Saved/ProjectRecovery/20260715-131308/`
+
+## Step 04 Candidate Validation
+
+- Date: 2026-07-15
+- Technical result: pass
+- Neutral component/layer IDs: `7`
+- Initial visible contact relationships: `3`
+- Explicit occluded sectors: `3`
+- Blocked unknowns: `9`
+- Source-only evidence boards: `6`
+- Untouched source tiles pixel exact: `true`
+- Resampling, candidate fills, and closed component contours: none
+- Perspective use: corroboration only
+- Legacy asset-specific access: false
+- Production artifacts: none
+- Validated-candidate review checkpoint:
+  `Saved/ProjectRecovery/20260715-133027/`
+- Output approval: pending visible Flamestrike review
+
+## Step 04 Output Approval
+
+- Date: 2026-07-15
+- Approver: Flamestrike
+- Statement: `approved`
+- Reviewed visibly: approved Step 03 crops, all six paired Step 04 source/mark
+  evidence boards, complete neutral inventory, source-view ownership matrix,
+  contact-line inventory, occluded sectors, blocked unknowns, and output record
+- Decision: pass
+- Result: Step 04 inventory, ownership matrix, contact relationships, occluded
+  sectors, blocked-unknown record, output record, and handoff promoted to
+  `authoritative`
+- Evidence boards and validation manifest remain `proof only`
+- Blocked unknowns remain unresolved
+- Exclusion: Step 05, measurement, registration, interpretation, and
+  production work remain unauthorized
+- Approved pre-closeout checkpoint:
+  `Saved/ProjectRecovery/20260715-133530/`

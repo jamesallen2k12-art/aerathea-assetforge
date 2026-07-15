@@ -1,0 +1,348 @@
+{
+  "schema": "aerathea.component_ownership_inventory.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "step_id": "STEP_04",
+  "date": "2026-07-15",
+  "status": "approved_step_04_component_decomposition",
+  "artifact_classification": "authoritative",
+  "decision": "Inventory only source-visible physical layers and surface-treatment families, with neutral IDs and explicit blocked unknowns; do not solve physical separability or hidden construction.",
+  "authority": {
+    "plan_section": "Step 04 - Physical Component And Source-Ownership Inventory",
+    "contract": "steps/STEP_04_CONTRACT.md",
+    "panel_manifest": "manifests/STEP_03_PANEL_CROP_MANIFEST.json",
+    "perspective_usage": "visual_corroboration_only_unless_separately_calibrated",
+    "legacy_asset_specific_data_allowed": false
+  },
+  "id_policy": {
+    "component_format": "C-NNN",
+    "contact_format": "CL-NNN",
+    "blocked_unknown_format": "U-NNN",
+    "semantic_legacy_names_loaded": false,
+    "old_component_count_loaded": false,
+    "physical_separability_claimed_by_id": false,
+    "note": "An ID establishes a source-visible inventory layer only. It does not prove a separate mesh, material, stone, or hidden interface."
+  },
+  "classification_vocabulary": {
+    "visible": "Source pixels directly show the listed layer or treatment in the view.",
+    "occluded": "A source-visible relation directly shows that some portion continues behind another visible layer; no hidden extent is solved.",
+    "ambiguous": "The source does not prove presence, absence, ownership, continuity, or physical separability.",
+    "visible_discontinuous": "Only separated source-visible segments are recorded; gaps are not connected."
+  },
+  "components": [
+    {
+      "id": "C-001",
+      "neutral_description": "central tapered primary body layer",
+      "observed_kind": "physical_layer",
+      "minimum_source_claim": "A continuous central tapered silhouette is visible above the annular tiers.",
+      "physical_separability": "ambiguous",
+      "visible_views": ["front", "back", "left", "right", "top", "perspective"],
+      "blocked_unknown_refs": ["U-001", "U-007", "U-008"]
+    },
+    {
+      "id": "C-002",
+      "neutral_description": "first annular masonry tier immediately below C-001",
+      "observed_kind": "physical_layer",
+      "minimum_source_claim": "A distinct upper circumferential tier is visible between C-001 and C-003.",
+      "physical_separability": "ambiguous",
+      "visible_views": ["front", "back", "left", "right", "top", "perspective"],
+      "blocked_unknown_refs": ["U-002", "U-007", "U-008"]
+    },
+    {
+      "id": "C-003",
+      "neutral_description": "second lower annular masonry tier below C-002",
+      "observed_kind": "physical_layer",
+      "minimum_source_claim": "A distinct lower circumferential tier is visible between C-002 and C-004.",
+      "physical_separability": "ambiguous",
+      "visible_views": ["front", "back", "left", "right", "top", "perspective"],
+      "blocked_unknown_refs": ["U-003", "U-007", "U-008"]
+    },
+    {
+      "id": "C-004",
+      "neutral_description": "irregular peripheral small-stone apron layer",
+      "observed_kind": "physical_layer",
+      "minimum_source_claim": "An irregular outermost layer of small visible stone forms surrounds C-003.",
+      "physical_separability": "ambiguous",
+      "visible_views": ["front", "back", "left", "right", "top", "perspective"],
+      "blocked_unknown_refs": ["U-004", "U-007", "U-008"]
+    },
+    {
+      "id": "C-005",
+      "neutral_description": "large bilateral blade-like red-appearing surface motif family",
+      "observed_kind": "surface_treatment_family",
+      "minimum_source_claim": "A bounded bilateral blade-like motif is directly visible; its material, relief, and cross-view identity are not established.",
+      "physical_separability": "ambiguous",
+      "visible_views": ["front", "top", "perspective"],
+      "ambiguous_views": ["back", "left", "right"],
+      "blocked_unknown_refs": ["U-005", "U-006", "U-009"]
+    },
+    {
+      "id": "C-006",
+      "neutral_description": "narrow linear inscription-like red-appearing surface motif family",
+      "observed_kind": "surface_treatment_family",
+      "minimum_source_claim": "Narrow ordered linear marks are directly visible in every view; same-physical-layer continuity is not established.",
+      "physical_separability": "ambiguous",
+      "visible_views": ["front", "back", "left", "right", "top", "perspective"],
+      "blocked_unknown_refs": ["U-005", "U-008", "U-009"]
+    },
+    {
+      "id": "C-007",
+      "neutral_description": "branching red-appearing seam or fissure surface-treatment family",
+      "observed_kind": "surface_treatment_family",
+      "minimum_source_claim": "Branching red-appearing lines are directly visible across the stone layers; whether they are seams, cracks, inlay, glow, or painted marks is not established.",
+      "physical_separability": "ambiguous",
+      "visible_views": ["front", "back", "left", "right", "top", "perspective"],
+      "blocked_unknown_refs": ["U-001", "U-002", "U-003", "U-004", "U-005", "U-008"]
+    }
+  ],
+  "source_view_ownership_matrix": {
+    "front": {
+      "usage": "source_panel",
+      "C-001": "visible",
+      "C-002": "visible",
+      "C-003": "visible",
+      "C-004": "visible",
+      "C-005": "visible",
+      "C-006": "visible",
+      "C-007": "visible"
+    },
+    "back": {
+      "usage": "source_panel",
+      "C-001": "visible",
+      "C-002": "visible",
+      "C-003": "visible",
+      "C-004": "visible",
+      "C-005": "ambiguous",
+      "C-006": "visible",
+      "C-007": "visible"
+    },
+    "left": {
+      "usage": "source_panel",
+      "C-001": "visible",
+      "C-002": "visible",
+      "C-003": "visible",
+      "C-004": "visible",
+      "C-005": "ambiguous",
+      "C-006": "visible",
+      "C-007": "visible"
+    },
+    "right": {
+      "usage": "source_panel",
+      "C-001": "visible",
+      "C-002": "visible",
+      "C-003": "visible",
+      "C-004": "visible",
+      "C-005": "ambiguous",
+      "C-006": "visible",
+      "C-007": "visible"
+    },
+    "top": {
+      "usage": "source_panel",
+      "C-001": "visible",
+      "C-002": "visible",
+      "C-003": "visible",
+      "C-004": "visible",
+      "C-005": "visible",
+      "C-006": "visible",
+      "C-007": "visible"
+    },
+    "perspective": {
+      "usage": "visual_corroboration_only_unless_separately_calibrated",
+      "C-001": "visible",
+      "C-002": "visible",
+      "C-003": "visible",
+      "C-004": "visible",
+      "C-005": "visible",
+      "C-006": "visible",
+      "C-007": "visible"
+    }
+  },
+  "occluded_sector_inventory": [
+    {
+      "id": "OS-001",
+      "relation": "C-001/C-002",
+      "classification": "occluded",
+      "claim": "Only exposed contact segments are visible; the interior and underside interface is occluded in every source view.",
+      "blocked_unknown_ref": "U-007"
+    },
+    {
+      "id": "OS-002",
+      "relation": "C-002/C-003",
+      "classification": "occluded",
+      "claim": "Only exposed tier edges are visible; the hidden stacked interface is occluded.",
+      "blocked_unknown_ref": "U-007"
+    },
+    {
+      "id": "OS-003",
+      "relation": "C-003/C-004",
+      "classification": "occluded",
+      "claim": "C-004 interrupts portions of the visible lower edge of C-003; covered contacts are not solved.",
+      "blocked_unknown_ref": "U-007"
+    }
+  ],
+  "initial_contact_line_inventory": [
+    {
+      "id": "CL-001",
+      "between": ["C-001", "C-002"],
+      "classification": "visible_discontinuous",
+      "source_views": ["front", "back", "left", "right", "top", "perspective"],
+      "rule": "Record only exposed source-visible segments; do not close the interface through occluded sectors."
+    },
+    {
+      "id": "CL-002",
+      "between": ["C-002", "C-003"],
+      "classification": "visible_discontinuous",
+      "source_views": ["front", "back", "left", "right", "top", "perspective"],
+      "rule": "Record only exposed source-visible tier separation; do not infer a complete annulus."
+    },
+    {
+      "id": "CL-003",
+      "between": ["C-003", "C-004"],
+      "classification": "visible_discontinuous",
+      "source_views": ["front", "back", "left", "right", "top", "perspective"],
+      "rule": "Record only exposed source-visible segments and stop at rubble occlusion."
+    }
+  ],
+  "blocked_unknowns": [
+    {
+      "id": "U-001",
+      "status": "blocked_unknown",
+      "question": "Is C-001 one physical stone or an assembly divided by some of the visible red-appearing lines?",
+      "reason": "Color and line continuity do not prove a hidden physical joint."
+    },
+    {
+      "id": "U-002",
+      "status": "blocked_unknown",
+      "question": "How many separate stones form C-002, and which apparent divisions correspond across views?",
+      "reason": "Visible divisions do not expose hidden interfaces or guaranteed cross-view identity."
+    },
+    {
+      "id": "U-003",
+      "status": "blocked_unknown",
+      "question": "How many separate stones form C-003, and which apparent divisions correspond across views?",
+      "reason": "Visible divisions do not expose hidden interfaces or guaranteed cross-view identity."
+    },
+    {
+      "id": "U-004",
+      "status": "blocked_unknown",
+      "question": "What are the individual count, hidden placement, and cross-view identities of the small forms in C-004?",
+      "reason": "Occlusion and view changes prevent a complete source-owned inventory of individual forms."
+    },
+    {
+      "id": "U-005",
+      "status": "blocked_unknown",
+      "question": "Are C-005, C-006, and C-007 paint, inset material, emissive fill, carved recesses, physical seams, or multiple different treatments?",
+      "reason": "The source shows appearance but not physical construction; color threshold alone is not geometry authority."
+    },
+    {
+      "id": "U-006",
+      "status": "blocked_unknown",
+      "question": "Is C-005 absent, occluded, or represented differently on the back and side views?",
+      "reason": "No bounded bilateral blade-like motif is directly visible in those views, but absence is not proven."
+    },
+    {
+      "id": "U-007",
+      "status": "blocked_unknown",
+      "question": "What are the bottom surfaces and hidden interfaces among C-001, C-002, C-003, and C-004?",
+      "reason": "The source does not expose the underside or internal contacts."
+    },
+    {
+      "id": "U-008",
+      "status": "blocked_unknown",
+      "question": "Which individual seams, corners, blocks, and contact points correspond pixel-to-pixel across views?",
+      "reason": "Step 04 does not authorize registration or correspondence IDs; perspective is uncalibrated."
+    },
+    {
+      "id": "U-009",
+      "status": "blocked_unknown",
+      "question": "Do similarly shaped C-005 and C-006 observations in the front, top, and perspective panels describe the same physical surface features?",
+      "reason": "Similarity and color do not prove calibrated cross-view identity."
+    }
+  ],
+  "evidence_board_policy": {
+    "format": "paired_exact_pixel_source_and_marked_copy",
+    "source_tile_resampled": false,
+    "source_tile_pixel_hash_must_match_step_03": true,
+    "marked_tile_resampled": false,
+    "component_marks": "unfilled point crosses with neutral ID labels",
+    "contact_marks": "short unfilled source-visible line segments only",
+    "closed_contours_present": false,
+    "candidate_fills_present": false,
+    "mark_coordinates_are_review_only": true,
+    "measurement_or_registration_authority": false
+  },
+  "evidence_boards": [
+    {
+      "view": "front",
+      "source_path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_FRONT.png",
+      "source_file_sha256": "262071198bc0d409e9b68af5ac4f3c6a4768a90b1fd199342035a8a82342c2c5",
+      "output_path": "evidence/STEP_04/SM_GIA_BloodAxeCairnstone_A005_STEP_04_FRONT_OWNERSHIP_EVIDENCE.png",
+      "component_points": {"C-001": [208, 75], "C-002": [180, 350], "C-003": [190, 380], "C-004": [120, 410], "C-005": [244, 165], "C-006": [249, 270], "C-007": [302, 240]},
+      "contact_segments": {"CL-001": [[176, 340, 218, 341], [270, 341, 315, 340]], "CL-002": [[150, 365, 195, 367], [288, 367, 335, 365]], "CL-003": [[111, 399, 139, 399], [342, 400, 371, 398]]}
+    },
+    {
+      "view": "back",
+      "source_path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_BACK.png",
+      "source_file_sha256": "8ceae7f5ccf311ded8822fdd623d2b68009102bc07ceaf66708f59d2a013d271",
+      "output_path": "evidence/STEP_04/SM_GIA_BloodAxeCairnstone_A005_STEP_04_BACK_OWNERSHIP_EVIDENCE.png",
+      "component_points": {"C-001": [250, 80], "C-002": [250, 238], "C-003": [250, 268], "C-004": [130, 293], "C-006": [249, 125], "C-007": [300, 160]},
+      "contact_segments": {"CL-001": [[185, 233, 225, 235], [278, 235, 318, 233]], "CL-002": [[160, 256, 205, 259], [300, 259, 340, 257]], "CL-003": [[122, 292, 150, 292], [350, 292, 365, 292]]}
+    },
+    {
+      "view": "left",
+      "source_path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_LEFT.png",
+      "source_file_sha256": "52212ba783d026a008929e3946cac934281de7d2daec2ada316205059258cba4",
+      "output_path": "evidence/STEP_04/SM_GIA_BloodAxeCairnstone_A005_STEP_04_LEFT_OWNERSHIP_EVIDENCE.png",
+      "component_points": {"C-001": [230, 90], "C-002": [230, 243], "C-003": [230, 273], "C-004": [130, 294], "C-006": [220, 150], "C-007": [260, 170]},
+      "contact_segments": {"CL-001": [[190, 237, 215, 238], [245, 238, 275, 237]], "CL-002": [[160, 261, 195, 263], [278, 263, 312, 261]], "CL-003": [[120, 292, 145, 293], [315, 292, 340, 291]]}
+    },
+    {
+      "view": "right",
+      "source_path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_RIGHT.png",
+      "source_file_sha256": "cc6c27405fbd6ea8c46b70966fe559acbd57acb88e58bfdcd6b763ce827a862e",
+      "output_path": "evidence/STEP_04/SM_GIA_BloodAxeCairnstone_A005_STEP_04_RIGHT_OWNERSHIP_EVIDENCE.png",
+      "component_points": {"C-001": [180, 85], "C-002": [180, 231], "C-003": [180, 256], "C-004": [96, 278], "C-006": [177, 145], "C-007": [215, 180]},
+      "contact_segments": {"CL-001": [[135, 225, 165, 226], [205, 226, 235, 225]], "CL-002": [[110, 249, 145, 251], [220, 251, 255, 250]], "CL-003": [[88, 276, 110, 276], [255, 276, 278, 275]]}
+    },
+    {
+      "view": "top",
+      "source_path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_TOP.png",
+      "source_file_sha256": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf",
+      "output_path": "evidence/STEP_04/SM_GIA_BloodAxeCairnstone_A005_STEP_04_TOP_OWNERSHIP_EVIDENCE.png",
+      "component_points": {"C-001": [168, 130], "C-002": [75, 165], "C-003": [45, 170], "C-004": [31, 205], "C-005": [170, 160], "C-006": [145, 100], "C-007": [220, 110]},
+      "contact_segments": {"CL-001": [[140, 50, 195, 50], [140, 220, 195, 220], [59, 130, 59, 165], [214, 130, 214, 165]], "CL-002": [[140, 38, 195, 38], [140, 232, 195, 232], [44, 130, 44, 170], [224, 130, 224, 170]], "CL-003": [[140, 27, 195, 27], [140, 243, 195, 243], [31, 130, 31, 175], [231, 130, 231, 175]]}
+    },
+    {
+      "view": "perspective",
+      "source_path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_PERSPECTIVE.png",
+      "source_file_sha256": "4c49c9661f14ece54abfbfd39da9ef047e6f749638b0842d1e51eaebca2564c7",
+      "output_path": "evidence/STEP_04/SM_GIA_BloodAxeCairnstone_A005_STEP_04_PERSPECTIVE_OWNERSHIP_EVIDENCE.png",
+      "component_points": {"C-001": [270, 90], "C-002": [270, 330], "C-003": [270, 365], "C-004": [120, 390], "C-005": [250, 150], "C-006": [250, 250], "C-007": [330, 225]},
+      "contact_segments": {"CL-001": [[195, 317, 235, 320], [300, 320, 340, 324]], "CL-002": [[170, 346, 220, 352], [310, 354, 360, 350]], "CL-003": [[120, 385, 160, 386], [372, 389, 412, 385]]}
+    }
+  ],
+  "internal_candidate_correction": {
+    "classification": "invalid",
+    "presentation_status": "never_presented_for_approval",
+    "initial_back_board_file_sha256": "1a0962ee70aa17815b6f7ecca231c0a3b5d616c8d1043044c9a442b51a41ed53",
+    "initial_top_board_file_sha256": "c77e9c4602881ebeca31d5bdd97585af342a2f607dd8d45a27e1ec0937a0c8aa",
+    "intermediate_top_board_file_sha256": "8768d515e6e94dc5c482a3f2ad5606d41f3e5dd6391a246c1f3083193c4d2be0",
+    "reason": "One back-view CL-003 segment and the top-view right-side contact segments extended beyond the source-owned visible object into the annotation field.",
+    "resolution": "Shorten those segments to directly visible source-owned contact pixels and regenerate both boards before validation or visible review.",
+    "drift_event": false
+  },
+  "interpretation_introduced": false,
+  "component_fill_created": false,
+  "hidden_geometry_created": false,
+  "measurement_or_registration_created": false,
+  "legacy_asset_specific_data_accessed": false,
+  "production_artifact_created": false,
+  "flamestrike_output_approval": {
+    "date": "2026-07-15",
+    "statement": "approved",
+    "result": "pass",
+    "scope": "Seven neutral source-visible layers or treatment families, source-view ownership matrix, three discontinuous contact relationships, three occluded sectors, and nine blocked unknowns.",
+    "blocked_unknowns_resolved": false,
+    "step_05_authorized": false,
+    "approved_pre_closeout_checkpoint": "Saved/ProjectRecovery/20260715-133530/"
+  }
+}

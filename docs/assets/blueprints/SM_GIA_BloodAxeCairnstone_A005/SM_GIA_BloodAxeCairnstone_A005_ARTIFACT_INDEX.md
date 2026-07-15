@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A005 Artifact Index
 
-Status: approved Step 03 artifact index
+Status: approved Step 04 artifact index
 
 Artifact classification: `authoritative`
 
@@ -41,6 +41,17 @@ Updated: 2026-07-15
 | `manifests/STEP_03_VALIDATION_MANIFEST.json` | `proof only` | Deterministic Step 03 candidate validation evidence |
 | `steps/STEP_03_OUTPUT_RECORD.md` | `authoritative` | Approved exact panel-decomposition decision record |
 | `handoffs/STEP_03_TO_STEP_04_HANDOFF.md` | `authoritative` | Restart handoff after scoped content closeout |
+| `steps/STEP_04_CONTRACT.md` | `authoritative` | Approved Step 04 execution boundary |
+| `manifests/STEP_04_COMPONENT_OWNERSHIP_INVENTORY.json` | `authoritative` | Seven neutral source-visible layers, ownership matrix, three contacts, three occluded sectors, and nine blocked unknowns |
+| `evidence/STEP_04/SM_GIA_BloodAxeCairnstone_A005_STEP_04_FRONT_OWNERSHIP_EVIDENCE.png` | `proof only` | Paired exact source and unfilled front-view ownership marks |
+| `evidence/STEP_04/SM_GIA_BloodAxeCairnstone_A005_STEP_04_BACK_OWNERSHIP_EVIDENCE.png` | `proof only` | Paired exact source and unfilled back-view ownership marks |
+| `evidence/STEP_04/SM_GIA_BloodAxeCairnstone_A005_STEP_04_LEFT_OWNERSHIP_EVIDENCE.png` | `proof only` | Paired exact source and unfilled left-view ownership marks |
+| `evidence/STEP_04/SM_GIA_BloodAxeCairnstone_A005_STEP_04_RIGHT_OWNERSHIP_EVIDENCE.png` | `proof only` | Paired exact source and unfilled right-view ownership marks |
+| `evidence/STEP_04/SM_GIA_BloodAxeCairnstone_A005_STEP_04_TOP_OWNERSHIP_EVIDENCE.png` | `proof only` | Paired exact source and unfilled top-view ownership marks |
+| `evidence/STEP_04/SM_GIA_BloodAxeCairnstone_A005_STEP_04_PERSPECTIVE_OWNERSHIP_EVIDENCE.png` | `proof only` | Paired exact source and unfilled corroboration-only perspective marks |
+| `steps/STEP_04_OUTPUT_RECORD.md` | `authoritative` | Approved Step 04 component-decomposition decision record |
+| `manifests/STEP_04_VALIDATION_MANIFEST.json` | `proof only` | Focused deterministic Step 04 candidate validation |
+| `handoffs/STEP_04_TO_STEP_05_HANDOFF.md` | `authoritative` | Restart handoff after approved Step 04 output; Step 05 remains unauthorized |
 
 ## Legacy Classification
 
@@ -59,10 +70,19 @@ Flamestrike approved the Step 02 output package on 2026-07-15. The A02 source
 and its exact scanline evidence are authoritative for A005. No panel,
 measurement, interpretation, or production authority was granted.
 
-## Step 03 Candidate
+## Step 03 Approval
 
 Flamestrike approved the exact Step 03 contract and the visible Step 03 output
 package on 2026-07-15. Six lossless panels pass direct source-region comparison
 with zero changed pixels and zero maximum RGB delta. Their crop formulas and
 images are authoritative. No component, interpretation, or production
 authority exists.
+
+## Step 04 Approval
+
+Flamestrike approved the exact Step 04 contract and visible output package on
+2026-07-15. The authoritative inventory contains seven neutral source-visible
+layers or treatment families, three discontinuous contact relationships, three
+occluded sectors, and nine blocked unknowns. The six evidence boards contain no
+component fill or closed candidate contour. The blocked unknowns remain
+unresolved; Step 05 and production work remain unauthorized.
