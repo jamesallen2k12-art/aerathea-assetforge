@@ -1,6 +1,6 @@
 # Step 07 Output Record
 
-Status: Step 07 complete; approved pending scoped closeout
+Status: Step 07 complete; approved content pushed; final handoff included in closeout
 
 Artifact classification: `authoritative`
 
@@ -141,7 +141,7 @@ Every retained coordinate was manually audited against the source panel. Row
 marks are distance samples between visible edge pixels, not masks or candidate
 fills.
 
-The candidate does not assume that left/right irregular pixels correspond to
+The approved record does not assume that left/right irregular pixels correspond to
 the same physical corners, stones, seams, contacts, or thickness stations.
 
 ## Access Declaration
@@ -192,3 +192,11 @@ the same physical corners, stones, seams, contacts, or thickness stations.
 
 Complete scoped Step 07 closeout, commit, push, and mandatory restart. The next
 agent may present a Step 08 contract only. Step 08 remains unauthorized.
+
+## Commit And Push
+
+- Scoped content commit: `1735fbb`
+- Commit message: `Lock BloodAxe Cairn Stone A005 left right measurements`
+- Push: success; `assetforge/main` advanced from `d9f2d1a` to `1735fbb`
+- Scoped files: eleven A005 Step 07 records and evidence files
+- Unrelated changes: preserved and unstaged

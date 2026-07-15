@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: Step 06 complete and pushed; mandatory restart pending
+Status: Step 07 complete and pushed; mandatory restart pending
 
 Artifact classification: `authoritative`
 
@@ -30,11 +30,25 @@ contracts, and seven-entry disagreement record are authoritative. Four
 within-view calibration disagreements, consolidated X/Z scales, and derived
 world-space contour/contact measurements remain blocked. Evidence and
 validation remain `proof only`. Scoped content commit `c4e192d` was pushed to
-`assetforge/main`. A mandatory new-agent restart is now required.
+`assetforge/main`. Final Step 06 handoff commit `d9f2d1a` was pushed before the
+mandatory restart.
+
+After the mandatory restart and Core resume handshake, Flamestrike approved
+the exact Step 07 contract and subsequently approved the visible left/right
+measurement output. The approved package contains eight
+source-linked calibration observations, 26 visible row samples, eight
+irregular C-004 observations, 36 exposed contact sample pixels, 20 appearance
+landmarks, 24 measurement contracts, and seven preserved disagreement
+entries. All 31 focused validators pass. The measurement records are now
+`authoritative`; evidence and validation remain `proof only`. Four within-view
+calibration disagreements, consolidated Y/Z scales, derived world-space
+contour/contact measurements, and visual thickness fitting remain blocked.
+Scoped content commit `1735fbb` was pushed to `assetforge/main`. A mandatory
+new-agent restart is now required.
 
 ## Current Step
 
-- Active decision: 06 - Front And Back Exact Measurement Contracts
+- Active decision: 07 - Left And Right Exact Measurement Contracts
 - Decision: approved, committed, and pushed
 - Locked asset ID: `SM_GIA_BloodAxeCairnstone_A005`
 - Production status: not started
@@ -62,11 +76,18 @@ validation remain `proof only`. Scoped content commit `c4e192d` was pushed to
   `authoritative`
 - Step 06 disagreement list and output record: `authoritative`
 - Step 06 evidence board and validation manifest: `proof only`
+- Step 07 execution contract: `authoritative`
+- Step 07 left/right calibration records, measurement manifests, contract
+  sets, disagreement list, and output record: `authoritative`
+- Step 07 evidence board and validation manifest: `proof only`
 - Fresh-project exact-data authority: the approved A02 source, exact scanline
   evidence, and approved Step 03 panel formulas and lossless crops
 - Approved direct dimensions: overall height `220 cm`, base height `35 cm`,
-  C-001 maximum width `120 cm`, C-004 footprint width `140 cm`
+  C-001 maximum width `120 cm`, C-004 footprint width `140 cm`, C-001 maximum
+  depth `90 cm`, and C-004 footprint depth `110 cm`
 - Consolidated front/back X/Z calibration authority: none; blocked by four
+  approved disagreement entries
+- Consolidated left/right Y/Z calibration authority: none; blocked by four
   approved disagreement entries
 - Interpretation authority: none
 - A001-A004 asset-specific data: blocked production input
@@ -149,27 +170,53 @@ validation remain `proof only`. Scoped content commit `c4e192d` was pushed to
   32 appearance landmarks, 24 measurement contracts, and seven blocked
   disagreement entries; both evidence source tiles pixel-exact with `0`
   changed pixels and `0` maximum RGB delta
+- Step 07 pre-action checkpoint: `Saved/ProjectRecovery/20260715-152620/`
+- Step 07 validated-candidate review checkpoint:
+  `Saved/ProjectRecovery/20260715-154227/`
+- Step 07 approved pre-closeout checkpoint:
+  `Saved/ProjectRecovery/20260715-154456/`
+- Step 07 left/right calibration records:
+  `manifests/STEP_07_LEFT_CALIBRATION_RECORD.json` and
+  `manifests/STEP_07_RIGHT_CALIBRATION_RECORD.json`
+- Step 07 measurement manifests and contract sets:
+  `manifests/STEP_07_LEFT_MEASUREMENT_MANIFEST.json`,
+  `manifests/STEP_07_RIGHT_MEASUREMENT_MANIFEST.json`,
+  `manifests/STEP_07_LEFT_MEASUREMENT_CONTRACTS.json`, and
+  `manifests/STEP_07_RIGHT_MEASUREMENT_CONTRACTS.json`
+- Step 07 disagreement list:
+  `manifests/STEP_07_LEFT_RIGHT_DISAGREEMENT_LIST.json`
+- Step 07 evidence board:
+  `evidence/STEP_07/SM_GIA_BloodAxeCairnstone_A005_STEP_07_LEFT_RIGHT_MEASUREMENT_EVIDENCE.png`
+- Step 07 validation manifest: `manifests/STEP_07_VALIDATION_MANIFEST.json`
+- Step 07 output record: `steps/STEP_07_OUTPUT_RECORD.md`
+- Step 07 approved result: 31 validators passed; 26 visible row samples,
+  eight irregular C-004 edge observations, 36 exposed contact sample pixels,
+  20 appearance landmarks, 24 measurement contracts, and seven blocked
+  disagreement entries; both evidence source tiles pixel-exact with `0`
+  changed pixels and `0` maximum RGB delta
 
 ## Git And Checkpoint State
 
 - Branch: `main`
-- Step 06 initialization HEAD: `249fb9b`
-- Remote: synchronized with `assetforge/main`
+- Step 07 initialization HEAD: `d9f2d1a`
+- Remote after scoped content push: `1735fbb`
 - Pre-existing unrelated worktree entries remain preserved and outside scope
-- No unrelated file may be staged or committed by Step 06 closeout
+- No unrelated file may be staged or committed by Step 07 closeout
 
 ## Last Scoped Commit And Push
 
-- Scoped content commit: `c4e192d`
+- Scoped Step 07 content commit: `1735fbb`
 - Push: success to `assetforge/main`
-- Remote advanced from `249fb9b` to `c4e192d`
+- Remote advanced from `d9f2d1a` to `1735fbb`
 - Unrelated dirty files remained unstaged
 
 ## Blocked
 
-- Step 07
+- Step 08
 - all four within-view calibration disagreements and any consolidated X/Z
   scale selection
+- all four side-view calibration disagreements and any consolidated Y/Z scale
+  selection or visual thickness fitting
 - derived world-space conversion for source-visible contour/contact/feature
   measurements
 - final component/contact centers, origin, pivot, centerline, physical
@@ -179,12 +226,12 @@ validation remain `proof only`. Scoped content commit `c4e192d` was pushed to
 - A001-A004 data access
 - DCC, texture, FBX, Unreal, and performance work
 - production-root creation
-- any authority beyond the approved Step 05 execution contract
+- any authority beyond the approved Step 07 execution contract
 
 ## Resume Instruction
 
 Restart with a new agent now. That agent must perform the Core resume handshake
-using this file, the approved Step 06 output record, calibration records,
+using this file, the approved Step 07 output record, calibration records,
 measurement manifests and contracts, disagreement list, evidence board,
-validation manifest, and handoff. It may present a Step 07 contract only. Step
-07 is not authorized.
+validation manifest, and handoff. It may present a Step 08 contract only. Step
+08 is not authorized.

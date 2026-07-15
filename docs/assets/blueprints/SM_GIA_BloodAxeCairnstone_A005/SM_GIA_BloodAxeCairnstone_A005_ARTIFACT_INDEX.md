@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A005 Artifact Index
 
-Status: approved Step 06 artifact index; pending final handoff closeout
+Status: approved Step 07 artifact index; final handoff included in closeout
 
 Artifact classification: `authoritative`
 
@@ -71,6 +71,18 @@ Updated: 2026-07-15
 | `steps/STEP_06_OUTPUT_RECORD.md` | `authoritative` | Approved front/back exact pixel-measurement decision record |
 | `manifests/STEP_06_VALIDATION_MANIFEST.json` | `proof only` | Focused deterministic Step 06 validation; 28 validators pass |
 | `handoffs/STEP_06_TO_STEP_07_HANDOFF.md` | `authoritative` | Restart-safe approved handoff; Step 07 remains unauthorized |
+| `steps/STEP_07_CONTRACT.md` | `authoritative` | Flamestrike-approved Step 07 execution boundary |
+| `manifests/STEP_07_LEFT_CALIBRATION_RECORD.json` | `authoritative` | Four exact left source-span calibration observations with Y/Z disagreements preserved |
+| `manifests/STEP_07_RIGHT_CALIBRATION_RECORD.json` | `authoritative` | Four exact right source-span calibration observations with Y/Z disagreements preserved |
+| `manifests/STEP_07_LEFT_MEASUREMENT_MANIFEST.json` | `authoritative` | Approved left pixel-space row, C-004 edge, contact, and feature measurements |
+| `manifests/STEP_07_RIGHT_MEASUREMENT_MANIFEST.json` | `authoritative` | Approved right pixel-space row, C-004 edge, contact, and feature measurements |
+| `manifests/STEP_07_LEFT_MEASUREMENT_CONTRACTS.json` | `authoritative` | Formula-linked left feature contracts with world conversion blocked |
+| `manifests/STEP_07_RIGHT_MEASUREMENT_CONTRACTS.json` | `authoritative` | Formula-linked right feature contracts with world conversion blocked |
+| `manifests/STEP_07_LEFT_RIGHT_DISAGREEMENT_LIST.json` | `authoritative` | Seven approved blocked disagreement entries; no averaging, pairing, or visual thickness fitting |
+| `evidence/STEP_07/SM_GIA_BloodAxeCairnstone_A005_STEP_07_LEFT_RIGHT_MEASUREMENT_EVIDENCE.png` | `proof only` | Paired exact source and unfilled measurement-mark copies for left and right |
+| `steps/STEP_07_OUTPUT_RECORD.md` | `authoritative` | Approved left/right exact pixel-measurement decision record |
+| `manifests/STEP_07_VALIDATION_MANIFEST.json` | `proof only` | Focused deterministic Step 07 validation; 31 validators pass |
+| `handoffs/STEP_07_TO_STEP_08_HANDOFF.md` | `authoritative` | Restart-safe approved handoff; Step 08 remains unauthorized |
 
 ## Legacy Classification
 
@@ -140,3 +152,21 @@ record. No consolidated X/Z scale, derived world-space contour/contact
 measurement, interpretation, geometry, or production authority was created.
 The measurement records and output record are `authoritative`; evidence and
 validation remain `proof only`. Step 07 is unauthorized.
+
+## Step 07 Approval
+
+Flamestrike approved the exact Step 07 execution contract and visible output
+on 2026-07-15. The approved records contain eight exact calibration
+observations, 26 visible
+side-row samples, eight irregular C-004 outer-edge observations without
+interior ownership, 36 exposed contact sample pixels, 20 appearance landmarks,
+and 24 formula-linked measurement contracts.
+
+All 31 focused validators pass. The evidence board's left and right source
+tiles are pixel-exact with zero changed pixels and zero maximum RGB delta. Four
+within-view calibration disagreements and three physical correspondence
+questions remain preserved in the seven-entry authoritative disagreement record.
+No consolidated Y/Z scale, derived world-space contour/contact measurement,
+visual thickness fitting, interpretation, geometry, or production authority
+was created. The measurement records and output record are `authoritative`;
+evidence and validation remain `proof only`. Step 08 remains unauthorized.
