@@ -1,0 +1,188 @@
+{
+  "schema": "aerathea.pre_geometry_exact_data_audit.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "step_id": "STEP_09",
+  "date": "2026-07-16",
+  "status": "approved_pre_geometry_exact_data_audit_pass_with_explicit_blocks",
+  "artifact_classification": "authoritative",
+  "decision": "Determine whether the five approved metric-view datasets form one coherent exact measurement authority without averaging, stretching, silent selection, unapproved tolerance, correction, or interpretation.",
+  "candidate_verdict": "pass_with_explicit_blocks",
+  "verdict_definition": "The records form one bounded provenance, semantic-correspondence, and direct-dimension authority. They do not form a unified calibrated world-space contour or geometry dataset.",
+  "pre_action_checkpoint": "Saved/ProjectRecovery/20260716-090924/",
+  "input_integrity_audit": {
+    "critical_inputs_hashed": 36,
+    "critical_input_hashes_matching": 36,
+    "critical_input_hashes_failed": 0,
+    "structured_records_parsed": 27,
+    "structured_record_parse_failures": 0,
+    "source_file_sha256_match": true,
+    "scanline_manifest_sha256_match": true,
+    "source_pixel_exact": true,
+    "panel_file_hashes_matching": 5,
+    "panel_file_hashes_failed": 0,
+    "recovery_override_hashes_matching": true,
+    "authoritative_inputs_modified": false
+  },
+  "exact_formula_audit": {
+    "calibration_observations_replayed": 20,
+    "pixel_span_formulas_passed": 20,
+    "cm_per_px_exact_formulas_passed": 20,
+    "decimal_convenience_fields_consistent": 20,
+    "formula_failures": 0,
+    "exact_arithmetic_controlled_decision": true
+  },
+  "direct_dimension_audit": {
+    "groups": 6,
+    "declared_value_groups_matching": 6,
+    "declared_value_group_failures": 0,
+    "authoritative_values_cm": {
+      "overall_height": 220,
+      "base_height": 35,
+      "C-001_maximum_width": 120,
+      "C-004_outer_footprint_width": 140,
+      "C-001_maximum_depth": 90,
+      "C-004_outer_footprint_depth": 110
+    },
+    "direct_dimensions_authorize_arbitrary_contour_world_conversion": false
+  },
+  "cross_view_calibration_audit": {
+    "comparison_groups": 6,
+    "groups_with_all_ratios_equal": 0,
+    "groups_with_any_exact_equal_pair": 1,
+    "only_exact_equal_pair": {
+      "group": "base_height_35",
+      "views": ["back", "left"],
+      "cm_per_px_exact": "35/52",
+      "group_still_unified": false
+    },
+    "unified_X_scale": null,
+    "unified_Y_scale": null,
+    "unified_Z_scale": null,
+    "selected_calibrations": 0,
+    "averaged_calibrations": 0,
+    "stretched_or_corrected_calibrations": 0,
+    "world_space_contour_conversion_authorized": false
+  },
+  "correspondence_audit": {
+    "registration_marks": 46,
+    "metric_cross_view_semantic_groups": 11,
+    "semantic_groups_replayed": 11,
+    "semantic_group_failures": 0,
+    "direct_dimension_groups": 6,
+    "cross_panel_pixel_distance_tolerance": null,
+    "world_space_translation_tolerance_cm": null,
+    "world_space_rotation_tolerance_deg": null,
+    "proven_cross_panel_physical_pixel_pairs": 0,
+    "proven_irregular_corner_pairs": 0,
+    "proven_numeric_centers": 0,
+    "perspective_metric_authority": false
+  },
+  "measurement_inventory_audit": {
+    "visible_row_samples": 52,
+    "irregular_C004_edge_observations": 16,
+    "appearance_landmarks": 52,
+    "measurement_contracts": 48,
+    "discrete_contact_samples": 127,
+    "contact_sample_counts": {
+      "CL-001": 40,
+      "CL-002": 40,
+      "CL-003": 47
+    },
+    "contact_semantic_relations_authoritative": true,
+    "contact_pixel_to_pixel_pairing_authorized": false,
+    "contact_hidden_closure_authorized": false,
+    "filled_footprints": 0,
+    "closed_perimeters": 0,
+    "exact_pixel_sets": 0,
+    "component_centers": 0,
+    "contact_centers": 0
+  },
+  "recovery_boundary_audit": {
+    "original_step_06_package_whole_status": "quarantined",
+    "step_06_eligible_sections_only": true,
+    "step_06_original_contact_arrays_used": false,
+    "step_06_recovered_contacts_used": true,
+    "invalid_original_front_contact_372_360_used": false,
+    "invalid_original_back_contact_355_271_used": false,
+    "original_step_07_package_whole_status": "quarantined",
+    "step_07_bounded_recovery_override_used": true,
+    "step_07_disclosed_endpoint_overlaps": 10,
+    "independent_derivation_claim_for_overlaps": false,
+    "original_step_07_to_step_08_handoff_used": false
+  },
+  "disagreement_and_unknown_audit": {
+    "inherited_disagreement_entries_preserved": 18,
+    "new_cross_view_disagreement_entries": 6,
+    "blocked_physical_correspondence_entries": 7,
+    "top_closure_and_center_block_entries": 6,
+    "semantic_unknown_ids_preserved": 9,
+    "occluded_sector_ids_preserved": 3,
+    "status_weakenings": 0,
+    "hidden_disagreements": 0,
+    "resolved_by_interpretation": 0
+  },
+  "tolerance_audit": {
+    "hash_tolerance": 0,
+    "source_coordinate_tolerance_px": 0,
+    "full_local_round_trip_tolerance_px": 0,
+    "cross_view_pixel_distance_tolerance": null,
+    "world_space_translation_tolerance_cm": null,
+    "world_space_rotation_tolerance_deg": null,
+    "new_tolerance_introduced": false,
+    "visual_closeness_used": false
+  },
+  "exact_dataset_boundary": {
+    "included": [
+      "authoritative source identity and five lossless metric panels",
+      "approved semantic component, contact, station, span-role, and panel-frame identities",
+      "six matching direct source-authored dimension values",
+      "twenty independent exact calibration observations",
+      "source-linked per-view pixel observations within approved recovery boundaries",
+      "one hundred twenty-seven discrete source-visible contact samples",
+      "all inherited and newly proven blocked disagreements and unknowns"
+    ],
+    "excluded_or_blocked": [
+      "unified X, Y, or Z scale",
+      "cross-panel physical pixel pairing",
+      "derived world-space contours",
+      "filled footprints and closed perimeters",
+      "component and contact centers",
+      "numeric origin, pivot, centerline, transforms, and snap anchors",
+      "hidden surfaces, interfaces, contact closure, and topology",
+      "rectification, interpretation, and geometry"
+    ]
+  },
+  "production_readiness_decision": {
+    "geometry_ready_exact_dataset": false,
+    "rectification_executed": false,
+    "interpretation_authority_created": false,
+    "step_10_executed": false,
+    "production_work_authorized": false,
+    "reason": "The exact audit is complete as a bounded authority decision, but cross-view pixel scales and physical correspondences remain blocked. Geometry requires later separately approved interpretation and correction decisions."
+  },
+  "artifact_status_decision": {
+    "integrated_index": "authoritative_within_declared_boundaries",
+    "correspondence_manifest": "authoritative_within_declared_boundaries",
+    "disagreement_unknown_matrix": "authoritative",
+    "this_audit": "authoritative",
+    "validation_manifest": "proof_only",
+    "existing_authoritative_records": "unchanged",
+    "existing_proof_only_records": "unchanged",
+    "existing_quarantined_records": "unchanged"
+  },
+  "flamestrike_output_approval": {
+    "statement": "approved",
+    "date": "2026-07-16",
+    "decision": "pass_with_explicit_blocks",
+    "scope": "Accept the bounded exact-data audit while leaving the dataset not geometry-ready and keeping rectification, interpretation, Step 10 execution, and production unauthorized.",
+    "approved_pre_closeout_checkpoint": "Saved/ProjectRecovery/20260716-092835/"
+  },
+  "assumptions_or_interpretations": [],
+  "view_prioritization_used": false,
+  "average_used": false,
+  "correction_or_rectification_performed": false,
+  "image_or_visual_artifact_created": false,
+  "geometry_created": false,
+  "commit_or_push_performed": false,
+  "next_gate": "separate Flamestrike review and approval, rejection, or blocked classification of this candidate Step 09 result"
+}

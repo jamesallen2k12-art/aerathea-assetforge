@@ -1,0 +1,289 @@
+{
+  "schema": "aerathea.disagreement_unknown_matrix.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "step_id": "STEP_09",
+  "date": "2026-07-16",
+  "status": "approved_all_disagreements_and_unknowns_preserved",
+  "artifact_classification": "authoritative",
+  "decision": "Preserve every inherited and newly proven cross-view disagreement or unknown without selection, averaging, correction, or interpretation.",
+  "inherited_disagreements": [
+    {
+      "id": "D06-001",
+      "subject": "front Z calibration",
+      "source": "manifests/STEP_06_FRONT_BACK_DISAGREEMENT_LIST.json#/observations/0",
+      "status": "blocked_disagreement"
+    },
+    {
+      "id": "D06-002",
+      "subject": "front X calibration",
+      "source": "manifests/STEP_06_FRONT_BACK_DISAGREEMENT_LIST.json#/observations/1",
+      "status": "blocked_disagreement"
+    },
+    {
+      "id": "D06-003",
+      "subject": "back Z calibration",
+      "source": "manifests/STEP_06_FRONT_BACK_DISAGREEMENT_LIST.json#/observations/2",
+      "status": "blocked_disagreement"
+    },
+    {
+      "id": "D06-004",
+      "subject": "back X calibration",
+      "source": "manifests/STEP_06_FRONT_BACK_DISAGREEMENT_LIST.json#/observations/3",
+      "status": "blocked_disagreement"
+    },
+    {
+      "id": "D06-005",
+      "subject": "front/back visible profile comparison",
+      "source": "manifests/STEP_06_FRONT_BACK_DISAGREEMENT_LIST.json#/observations/4",
+      "status": "blocked_missing_common_calibration_and_pixel_pairing"
+    },
+    {
+      "id": "D06-006",
+      "subject": "C-005 front/back identity",
+      "source": "manifests/STEP_06_FRONT_BACK_DISAGREEMENT_LIST.json#/observations/5",
+      "status": "blocked_by_U-006_U-009"
+    },
+    {
+      "id": "D06-007",
+      "subject": "CL-001 through CL-003 front/back physical pairing",
+      "source": "manifests/STEP_06_FRONT_BACK_DISAGREEMENT_LIST.json#/observations/6",
+      "status": "blocked_by_U-007_U-008"
+    },
+    {
+      "id": "D07-001",
+      "subject": "left Z calibration",
+      "source": "manifests/STEP_07_LEFT_RIGHT_DISAGREEMENT_LIST.json#/entries/0",
+      "status": "blocked_disagreement"
+    },
+    {
+      "id": "D07-002",
+      "subject": "left Y calibration",
+      "source": "manifests/STEP_07_LEFT_RIGHT_DISAGREEMENT_LIST.json#/entries/1",
+      "status": "blocked_disagreement"
+    },
+    {
+      "id": "D07-003",
+      "subject": "right Z calibration",
+      "source": "manifests/STEP_07_LEFT_RIGHT_DISAGREEMENT_LIST.json#/entries/2",
+      "status": "blocked_disagreement"
+    },
+    {
+      "id": "D07-004",
+      "subject": "right Y calibration",
+      "source": "manifests/STEP_07_LEFT_RIGHT_DISAGREEMENT_LIST.json#/entries/3",
+      "status": "blocked_disagreement"
+    },
+    {
+      "id": "D07-005",
+      "subject": "left/right visible depth-profile comparison",
+      "source": "manifests/STEP_07_LEFT_RIGHT_DISAGREEMENT_LIST.json#/entries/4",
+      "status": "blocked_missing_common_calibration_and_pixel_pairing"
+    },
+    {
+      "id": "D07-006",
+      "subject": "C-005 left/right identity",
+      "source": "manifests/STEP_07_LEFT_RIGHT_DISAGREEMENT_LIST.json#/entries/5",
+      "status": "blocked_by_U-006_U-009"
+    },
+    {
+      "id": "D07-007",
+      "subject": "CL-001 through CL-003 left/right physical pairing",
+      "source": "manifests/STEP_07_LEFT_RIGHT_DISAGREEMENT_LIST.json#/entries/6",
+      "status": "blocked_by_U-007_U-008"
+    },
+    {
+      "id": "TDIS-001",
+      "subject": "top C-001 versus C-004 X calibration",
+      "source": "manifests/STEP_08R_TOP_DISAGREEMENT_LIST.json#/entries/0",
+      "status": "blocked_no_selection_or_average"
+    },
+    {
+      "id": "TDIS-002",
+      "subject": "top C-001 versus C-004 Y calibration",
+      "source": "manifests/STEP_08R_TOP_DISAGREEMENT_LIST.json#/entries/1",
+      "status": "blocked_no_selection_or_average"
+    },
+    {
+      "id": "TDIS-003",
+      "subject": "top C-001 X versus Y calibration",
+      "source": "manifests/STEP_08R_TOP_DISAGREEMENT_LIST.json#/entries/2",
+      "status": "blocked_no_axis_unification"
+    },
+    {
+      "id": "TDIS-004",
+      "subject": "top C-004 X versus Y calibration",
+      "source": "manifests/STEP_08R_TOP_DISAGREEMENT_LIST.json#/entries/3",
+      "status": "blocked_no_axis_unification"
+    }
+  ],
+  "new_cross_view_disagreements": [
+    {
+      "id": "XDIS-001",
+      "subject": "overall-height 220 cm cross-view pixel calibration",
+      "source": "manifests/STEP_09_CROSS_VIEW_CORRESPONDENCE_MANIFEST.json#/direct_dimension_comparisons/0",
+      "views": ["front", "back", "left", "right"],
+      "exact_ratios": ["44/75", "4/5", "220/277", "110/127"],
+      "exact_equal_ratio_pairs": [],
+      "status": "blocked_no_unified_Z_scale"
+    },
+    {
+      "id": "XDIS-002",
+      "subject": "base-height 35 cm cross-view pixel calibration",
+      "source": "manifests/STEP_09_CROSS_VIEW_CORRESPONDENCE_MANIFEST.json#/direct_dimension_comparisons/1",
+      "views": ["front", "back", "left", "right"],
+      "exact_ratios": ["35/62", "35/52", "35/52", "35/47"],
+      "exact_equal_ratio_pairs": [["back", "left"]],
+      "status": "blocked_no_unified_Z_scale"
+    },
+    {
+      "id": "XDIS-003",
+      "subject": "C-001 120 cm width cross-view pixel calibration",
+      "source": "manifests/STEP_09_CROSS_VIEW_CORRESPONDENCE_MANIFEST.json#/direct_dimension_comparisons/2",
+      "views": ["front", "back", "top"],
+      "exact_ratios": ["12/23", "40/63", "40/53"],
+      "exact_equal_ratio_pairs": [],
+      "status": "blocked_no_unified_X_scale"
+    },
+    {
+      "id": "XDIS-004",
+      "subject": "C-004 140 cm width cross-view pixel calibration",
+      "source": "manifests/STEP_09_CROSS_VIEW_CORRESPONDENCE_MANIFEST.json#/direct_dimension_comparisons/3",
+      "views": ["front", "back", "top"],
+      "exact_ratios": ["14/29", "4/7", "35/52"],
+      "exact_equal_ratio_pairs": [],
+      "status": "blocked_no_unified_X_scale"
+    },
+    {
+      "id": "XDIS-005",
+      "subject": "C-001 90 cm depth cross-view pixel calibration",
+      "source": "manifests/STEP_09_CROSS_VIEW_CORRESPONDENCE_MANIFEST.json#/direct_dimension_comparisons/4",
+      "views": ["left", "right", "top"],
+      "exact_ratios": ["15/28", "5/8", "45/47"],
+      "exact_equal_ratio_pairs": [],
+      "status": "blocked_no_unified_Y_scale"
+    },
+    {
+      "id": "XDIS-006",
+      "subject": "C-004 110 cm depth cross-view pixel calibration",
+      "source": "manifests/STEP_09_CROSS_VIEW_CORRESPONDENCE_MANIFEST.json#/direct_dimension_comparisons/5",
+      "views": ["left", "right", "top"],
+      "exact_ratios": ["22/45", "110/193", "11/14"],
+      "exact_equal_ratio_pairs": [],
+      "status": "blocked_no_unified_Y_scale"
+    }
+  ],
+  "blocked_physical_correspondence": [
+    {
+      "id": "BCR-001",
+      "subject": "C-001 irregular exterior corner or seam pixel identity across views",
+      "blocked_by": ["U-001", "U-008"],
+      "status": "blocked_unknown"
+    },
+    {
+      "id": "BCR-002",
+      "subject": "C-002 and C-003 masonry-division identity across views",
+      "blocked_by": ["U-002", "U-003", "U-008"],
+      "status": "blocked_unknown"
+    },
+    {
+      "id": "BCR-003",
+      "subject": "C-004 peripheral small-form identity across views",
+      "blocked_by": ["U-004", "U-008"],
+      "status": "blocked_unknown"
+    },
+    {
+      "id": "BCR-004",
+      "subject": "C-005 motif correspondence outside front and top",
+      "blocked_by": ["U-005", "U-006", "U-009"],
+      "status": "blocked_unknown"
+    },
+    {
+      "id": "BCR-005",
+      "subject": "C-006 and C-007 individual line-feature identity across views",
+      "blocked_by": ["U-005", "U-008", "U-009"],
+      "status": "blocked_unknown"
+    },
+    {
+      "id": "BCR-006",
+      "subject": "individual physical facet normal ownership",
+      "blocked_by": ["U-001", "U-002", "U-003", "U-004", "U-008"],
+      "status": "blocked_unknown"
+    },
+    {
+      "id": "BCR-007",
+      "subject": "numeric component/contact centers, origin, pivot, centerline, transforms, and snap anchors",
+      "blocked_by": ["STEP_08R_BLOCKED_PERIMETER_AND_CENTER_DECISION"],
+      "status": "blocked_after_step_08r_no_numeric_centers"
+    }
+  ],
+  "top_closure_and_center_blocks": [
+    {
+      "id": "TBLOCK-001",
+      "subject": "C-001 filled outer footprint and center",
+      "status": "blocked"
+    },
+    {
+      "id": "TBLOCK-002",
+      "subject": "C-002 perimeters, visible annulus, and center",
+      "status": "blocked"
+    },
+    {
+      "id": "TBLOCK-003",
+      "subject": "C-003 perimeters, visible annulus, and center",
+      "status": "blocked"
+    },
+    {
+      "id": "TBLOCK-004",
+      "subject": "C-004 filled outer footprint and center",
+      "status": "blocked"
+    },
+    {
+      "id": "TBLOCK-005",
+      "subject": "C-005, C-006, and C-007 physical centers and orientations",
+      "status": "blocked"
+    },
+    {
+      "id": "TBLOCK-006",
+      "subject": "CL-001 through CL-003 closed perimeter centers",
+      "status": "blocked"
+    }
+  ],
+  "preserved_unknown_sets": {
+    "semantic_unknowns": {
+      "ids": ["U-001", "U-002", "U-003", "U-004", "U-005", "U-006", "U-007", "U-008", "U-009"],
+      "status": "preserved_blocked_unknown",
+      "source": "manifests/STEP_04_COMPONENT_OWNERSHIP_INVENTORY_RECOVERY_A01.json#/semantic_inventory_preservation/blocked_unknown_ids"
+    },
+    "occluded_sectors": {
+      "ids": ["OS-001", "OS-002", "OS-003"],
+      "status": "preserved_blocked_unknown",
+      "source": "manifests/STEP_08R_TOP_SECTOR_CLASSIFICATION.json#/occluded_sector_records"
+    },
+    "contact_hidden_closure": {
+      "ids": ["CL-001", "CL-002", "CL-003"],
+      "status": "blocked_discontinuous_samples_only"
+    }
+  },
+  "matrix_summary": {
+    "inherited_disagreement_entries": 18,
+    "new_cross_view_disagreement_entries": 6,
+    "blocked_physical_correspondence_entries": 7,
+    "top_closure_and_center_block_entries": 6,
+    "preserved_semantic_unknown_ids": 9,
+    "preserved_occluded_sector_ids": 3,
+    "selected_values": 0,
+    "averages_used": 0,
+    "view_prioritizations": 0,
+    "repairs_or_corrections": 0,
+    "world_space_conversions": 0,
+    "resolved_unknowns": 0
+  },
+  "candidate_classification": "all_known_disagreements_and_unknowns_preserved_without_status_weakening",
+  "flamestrike_output_approval": {
+    "statement": "approved",
+    "date": "2026-07-16",
+    "scope": "Accept the complete blocked disagreement and unknown classification with zero selections, repairs, status weakenings, or resolved unknowns."
+  },
+  "interpretation_introduced": false,
+  "geometry_created": false
+}

@@ -1,10 +1,10 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: Step 08R exact top evidence approved with all footprints and centers blocked; mandatory restart pending dependency-complete closeout
+Status: Step 09 bounded cross-view exact-data audit approved with explicit blocks; mandatory restart pending
 
 Artifact classification: `authoritative`
 
-Updated: 2026-07-15
+Updated: 2026-07-16
 
 ## Core Recovery Override
 
@@ -65,6 +65,20 @@ interpretation, or geometry was created. Step 08R evidence and validation
 remain proof only. Step 09 and the agreed future rectification direction
 remain unauthorized pending separate gates.
 
+After the mandatory restart, Flamestrike approved the Step 09 cross-view
+exact-dataset audit contract, its execution, and its visible bounded result.
+All 36 critical data inputs and 11 governing inputs matched their recorded
+hashes; 27 structured records parsed; 20 independent calibration formulas
+replayed exactly; and all six direct dimension groups agree with the printed
+centimeter authorities. The audit proves 11 semantic cross-view registration
+groups and preserves 127 exact discrete contact samples, but it does not prove
+physical cross-view pixel pairs, closed contact geometry, centers, a unified
+X/Y/Z pixel scale, or world conversion. All inherited and newly classified
+disagreements and unknowns remain explicit. The four decision manifests,
+contract, output record, and restart handoff are authoritative within this
+bounded decision; validation remains proof only. Step 10 has no execution
+authority.
+
 Controlling recovery record:
 
 `SM_GIA_BloodAxeCairnstone_A005_CORE_RECOVERY_STATUS_20260715_STEP04_TOP_CONTACT_EVIDENCE.md`
@@ -113,13 +127,13 @@ new-agent restart is now required.
 
 ## Current Step
 
-- Active decision: Step 08R exact top evidence approved; dependency-complete
-  A005-only closeout and mandatory restart in progress
-- Decision: preserve four independent top calibrations and 48 exact contact
-  pixels; keep all footprint, perimeter, center, unified-scale, world-space,
-  origin, pivot, interpretation, and geometry results blocked
-- Next permitted presentation after restart: Step 09 cross-view exact-dataset
-  audit contract only
+- Active decision: Step 09 bounded cross-view exact-data audit approved;
+  scoped closeout and mandatory restart in progress
+- Decision: preserve the complete exact-data chain and all explicit blocks;
+  do not reconcile calibrations, invent physical pixel pairs, close contacts,
+  derive centers, convert to world space, rectify images, interpret shapes, or
+  create geometry
+- Next permitted presentation after restart: Step 10 contract only
 - Locked asset ID: `SM_GIA_BloodAxeCairnstone_A005`
 - Production status: not started
 
@@ -194,7 +208,17 @@ new-agent restart is now required.
 - Step 08R filled footprints, closed perimeters, exact pixel sets, centers,
   world-space conversions, origin, pivot, centerline, transforms, and snap
   anchors: blocked
-- Step 09 authority: none
+- Step 09 contract, integrated exact-measurement index, cross-view
+  correspondence manifest, disagreement/unknown matrix, pre-geometry audit,
+  output record, and Step 09-to-Step 10 handoff: `authoritative` within the
+  approved bounded exact-data decision
+- Step 09 validation manifest: `proof only`; 60 focused validators passed and
+  zero failed
+- Step 09 cross-view authority: 11 semantic registration groups only;
+  physical cross-view pixel pairing authority: none
+- Step 09 contact authority: 127 exact discrete source-owned samples only;
+  closed contact geometry and center authority: none
+- Step 10 execution authority: none
 - Fresh-project exact-data authority: the approved A02 source, exact scanline
   evidence, and approved Step 03 panel formulas and lossless crops
 - Approved direct dimensions: overall height `220 cm`, base height `35 cm`,
@@ -204,8 +228,8 @@ new-agent restart is now required.
   approved disagreement entries
 - Consolidated left/right Y/Z calibration authority: none; blocked by four
   approved disagreement entries
-- Approved future rectification direction: `reference-only direction pending
-  Step 09 and a separate interpretation contract`
+- Approved future rectification direction: `reference only`; any execution
+  still requires a separate approved contract after the Step 10 gate
 - Interpretation authority: none
 - A001-A004 asset-specific data: blocked production input
 
@@ -412,26 +436,45 @@ new-agent restart is now required.
   perimeters, centers, unified scales, world conversions, origin, pivot,
   interpretation, and geometry remain blocked
 - Future rectification: approved direction only; execution remains blocked
-  until Step 09 and a separate interpretation contract
+  pending the Step 10 gate and a separate approved contract
+- Step 09 pre-action checkpoint: `Saved/ProjectRecovery/20260716-090924/`
+- Step 09 validated-candidate checkpoint:
+  `Saved/ProjectRecovery/20260716-092637/`
+- Step 09 approved pre-closeout checkpoint:
+  `Saved/ProjectRecovery/20260716-092835/`
+- Step 09 decision manifests:
+  `manifests/STEP_09_INTEGRATED_EXACT_MEASUREMENT_INDEX.json`,
+  `manifests/STEP_09_CROSS_VIEW_CORRESPONDENCE_MANIFEST.json`,
+  `manifests/STEP_09_DISAGREEMENT_UNKNOWN_MATRIX.json`, and
+  `manifests/STEP_09_PRE_GEOMETRY_EXACT_DATA_AUDIT.json`
+- Step 09 validation and output:
+  `manifests/STEP_09_VALIDATION_MANIFEST.json` and
+  `steps/STEP_09_OUTPUT_RECORD.md`
+- Approved Step 09 result: 36 critical and 11 governing inputs hash-verified;
+  27 structured records parsed; 20 calibration formulas replayed exactly; six
+  direct dimension groups agree; 11 semantic cross-view groups and 127 exact
+  contact samples preserved; 60 validators passed and zero failed
+- Step 09 explicit blocks: no unified cross-view X/Y/Z pixel scale, world
+  conversion, physical pixel pairing, contact closure, centers, rectification,
+  interpretation, or geometry
 
 ## Git And Checkpoint State
 
 - Branch: `main`
-- Current HEAD: `e3a0eac`
-- Remote `assetforge/main`: `e3a0eac`
-- Dependency Audit A01, Step 06R, Step 06Q, Step 07R, and Step 08R are
-  approved for dependency-complete A005-only closeout but are not yet
-  committed or pushed
+- Current pre-closeout HEAD: `17debd8`
+- Pre-closeout remote `assetforge/main`: `17debd8`
+- Step 09 is approved for A005-only closeout but is not yet committed or
+  pushed
 - Latest approved pre-closeout checkpoint:
-  `Saved/ProjectRecovery/20260715-223831/`
+  `Saved/ProjectRecovery/20260716-092835/`
 - Pre-existing unrelated worktree entries remain preserved and outside scope
 - No unrelated file is staged
 
 ## Last Scoped Commit And Push
 
-- Last scoped final handoff commit: `e3a0eac`
+- Last completed scoped A005 commit before Step 09: `17debd8`
 - Push: success to `assetforge/main`
-- Remote and local HEAD match at `e3a0eac`
+- Remote and local HEAD match at `17debd8`
 - Unrelated dirty files remained unstaged
 
 ## Blocked
@@ -440,7 +483,7 @@ new-agent restart is now required.
 - restoration or reclassification of the original Step 07 package as a whole
 - restoration of the original Step 07 output `Next Gate` section or original
   Step 07-to-Step 08 handoff as downstream authority
-- Step 09 execution
+- Step 10 execution
 - image rectification or any interpretation pass
 - all four within-view calibration disagreements and any consolidated X/Z
   scale selection
@@ -467,8 +510,8 @@ new-agent restart is now required.
 On resume, inspect the recovery journal/latest checkpoint, this file, the
 dedicated A005 recovery status, both 2026-07-15 A005 drift-ledger entries, the
 Step 04R package, Dependency Audit A01, the approved Step 06R, Step 06Q,
-Step 07R, and Step 08R packages, and
-`handoffs/STEP_08R_TO_STEP_09_HANDOFF.md`. No downstream execution contract is
-active. The next permitted presentation is a Step 09 cross-view exact-dataset
-audit contract only. Rectification, interpretation, geometry, production
-work, and Step 09 execution remain unauthorized.
+Step 07R, Step 08R, and Step 09 packages, and
+`handoffs/STEP_09_TO_STEP_10_HANDOFF.md`. No downstream execution contract is
+active. The next permitted presentation is a Step 10 contract only.
+Rectification, interpretation, geometry, production work, and Step 10
+execution remain unauthorized.

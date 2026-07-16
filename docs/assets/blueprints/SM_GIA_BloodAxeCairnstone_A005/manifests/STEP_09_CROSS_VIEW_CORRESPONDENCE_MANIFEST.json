@@ -1,0 +1,283 @@
+{
+  "schema": "aerathea.cross_view_correspondence_manifest.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "step_id": "STEP_09",
+  "date": "2026-07-16",
+  "status": "approved_bounded_cross_view_correspondence_classification",
+  "artifact_classification": "authoritative",
+  "decision": "Classify only approved semantic and exact numeric correspondences while keeping cross-panel pixel pairing and disputed scale unification blocked.",
+  "registration_authority": {
+    "path": "manifests/STEP_05_ORIENTATION_REGISTRATION_MANIFEST.json",
+    "sha256": "b7efa865e8b82f63e714d36ed4935fc02515ecc3f4d355941467f20b49348395",
+    "coordinate_frame_path": "manifests/STEP_05_PIXEL_COORDINATE_FRAME_RECORD.json",
+    "coordinate_frame_sha256": "ccfce6b8316369b512ff83eee11fd4385dd15b546f7b92da9e80b9e7ed959d1d",
+    "registration_marks": 46,
+    "metric_cross_view_semantic_groups": 11,
+    "perspective_metric_authority": false
+  },
+  "semantic_correspondence_groups": [
+    {
+      "id": "HS-Z220",
+      "meaning": "Z=220 cm source-authored overall-height station",
+      "mark_ids": ["HS-Z220-FRONT", "HS-Z220-BACK", "HS-Z220-LEFT", "HS-Z220-RIGHT"],
+      "views": ["front", "back", "left", "right"],
+      "classification": "proven_semantic_station_correspondence_only",
+      "pixel_to_pixel_pairing": false
+    },
+    {
+      "id": "HS-Z000",
+      "meaning": "Z=0 cm source-authored ground station for overall-height and base-height annotations",
+      "mark_ids": ["HS-Z000-OH-FRONT", "HS-Z000-BH-FRONT", "HS-Z000-OH-BACK", "HS-Z000-BH-BACK", "HS-Z000-OH-LEFT", "HS-Z000-BH-LEFT", "HS-Z000-OH-RIGHT", "HS-Z000-BH-RIGHT"],
+      "views": ["front", "back", "left", "right"],
+      "classification": "proven_semantic_station_correspondence_only",
+      "pixel_to_pixel_pairing": false
+    },
+    {
+      "id": "HS-Z035",
+      "meaning": "Z=35 cm source-authored base-height station",
+      "mark_ids": ["HS-Z035-FRONT", "HS-Z035-BACK", "HS-Z035-LEFT", "HS-Z035-RIGHT"],
+      "views": ["front", "back", "left", "right"],
+      "classification": "proven_semantic_station_correspondence_only",
+      "pixel_to_pixel_pairing": false
+    },
+    {
+      "id": "XS-C001-XNEG",
+      "meaning": "C-001 negative-X maximum-width annotation endpoint role",
+      "mark_ids": ["XS-C001-XNEG-FRONT", "XS-C001-XNEG-BACK", "XS-C001-XNEG-TOP"],
+      "views": ["front", "back", "top"],
+      "classification": "proven_semantic_span_endpoint_correspondence_only",
+      "physical_surface_point_pairing": false
+    },
+    {
+      "id": "XS-C001-XPOS",
+      "meaning": "C-001 positive-X maximum-width annotation endpoint role",
+      "mark_ids": ["XS-C001-XPOS-FRONT", "XS-C001-XPOS-BACK", "XS-C001-XPOS-TOP"],
+      "views": ["front", "back", "top"],
+      "classification": "proven_semantic_span_endpoint_correspondence_only",
+      "physical_surface_point_pairing": false
+    },
+    {
+      "id": "XS-C004-XNEG",
+      "meaning": "C-004 negative-X outer-footprint-width annotation endpoint role",
+      "mark_ids": ["XS-C004-XNEG-FRONT", "XS-C004-XNEG-BACK", "XS-C004-XNEG-TOP"],
+      "views": ["front", "back", "top"],
+      "classification": "proven_semantic_span_endpoint_correspondence_only",
+      "physical_surface_point_pairing": false
+    },
+    {
+      "id": "XS-C004-XPOS",
+      "meaning": "C-004 positive-X outer-footprint-width annotation endpoint role",
+      "mark_ids": ["XS-C004-XPOS-FRONT", "XS-C004-XPOS-BACK", "XS-C004-XPOS-TOP"],
+      "views": ["front", "back", "top"],
+      "classification": "proven_semantic_span_endpoint_correspondence_only",
+      "physical_surface_point_pairing": false
+    },
+    {
+      "id": "YS-C001-YPOS",
+      "meaning": "C-001 positive-Y maximum-depth annotation endpoint role",
+      "mark_ids": ["YS-C001-YPOS-LEFT", "YS-C001-YPOS-RIGHT", "YS-C001-YPOS-TOP"],
+      "views": ["left", "right", "top"],
+      "classification": "proven_semantic_span_endpoint_correspondence_only",
+      "physical_surface_point_pairing": false
+    },
+    {
+      "id": "YS-C001-YNEG",
+      "meaning": "C-001 negative-Y maximum-depth annotation endpoint role",
+      "mark_ids": ["YS-C001-YNEG-LEFT", "YS-C001-YNEG-RIGHT", "YS-C001-YNEG-TOP"],
+      "views": ["left", "right", "top"],
+      "classification": "proven_semantic_span_endpoint_correspondence_only",
+      "physical_surface_point_pairing": false
+    },
+    {
+      "id": "YS-C004-YPOS",
+      "meaning": "C-004 positive-Y outer-footprint-depth annotation endpoint role",
+      "mark_ids": ["YS-C004-YPOS-LEFT", "YS-C004-YPOS-RIGHT", "YS-C004-YPOS-TOP"],
+      "views": ["left", "right", "top"],
+      "classification": "proven_semantic_span_endpoint_correspondence_only",
+      "physical_surface_point_pairing": false
+    },
+    {
+      "id": "YS-C004-YNEG",
+      "meaning": "C-004 negative-Y outer-footprint-depth annotation endpoint role",
+      "mark_ids": ["YS-C004-YNEG-LEFT", "YS-C004-YNEG-RIGHT", "YS-C004-YNEG-TOP"],
+      "views": ["left", "right", "top"],
+      "classification": "proven_semantic_span_endpoint_correspondence_only",
+      "physical_surface_point_pairing": false
+    }
+  ],
+  "direct_dimension_comparisons": [
+    {
+      "id": "XDIS-001",
+      "subject": "overall height 220 cm",
+      "axis": "Z",
+      "declared_values_match": true,
+      "declared_cm": 220,
+      "observations": [
+        {"view": "front", "id": "CAL-FRONT-Z-OH-220", "pixel_span": 375, "cm_per_px_exact": "44/75"},
+        {"view": "back", "id": "CAL-BACK-Z-OH-220", "pixel_span": 275, "cm_per_px_exact": "4/5"},
+        {"view": "left", "id": "CAL-LEFT-Z-OH-220", "pixel_span": 277, "cm_per_px_exact": "220/277"},
+        {"view": "right", "id": "CAL-RIGHT-Z-OH-220", "pixel_span": 254, "cm_per_px_exact": "110/127"}
+      ],
+      "exact_equal_ratio_pairs": [],
+      "all_ratios_equal": false,
+      "unified_scale": null,
+      "classification": "direct_dimension_agreement_with_blocked_pixel_scale_disagreement"
+    },
+    {
+      "id": "XDIS-002",
+      "subject": "base height 35 cm",
+      "axis": "Z",
+      "declared_values_match": true,
+      "declared_cm": 35,
+      "observations": [
+        {"view": "front", "id": "CAL-FRONT-Z-BH-035", "pixel_span": 62, "cm_per_px_exact": "35/62"},
+        {"view": "back", "id": "CAL-BACK-Z-BH-035", "pixel_span": 52, "cm_per_px_exact": "35/52"},
+        {"view": "left", "id": "CAL-LEFT-Z-BH-035", "pixel_span": 52, "cm_per_px_exact": "35/52"},
+        {"view": "right", "id": "CAL-RIGHT-Z-BH-035", "pixel_span": 47, "cm_per_px_exact": "35/47"}
+      ],
+      "exact_equal_ratio_pairs": [["back", "left"]],
+      "all_ratios_equal": false,
+      "unified_scale": null,
+      "classification": "direct_dimension_agreement_with_blocked_pixel_scale_disagreement"
+    },
+    {
+      "id": "XDIS-003",
+      "subject": "C-001 maximum width 120 cm",
+      "axis": "X",
+      "declared_values_match": true,
+      "declared_cm": 120,
+      "observations": [
+        {"view": "front", "id": "CAL-FRONT-X-C001-120", "pixel_span": 230, "cm_per_px_exact": "12/23"},
+        {"view": "back", "id": "CAL-BACK-X-C001-120", "pixel_span": 189, "cm_per_px_exact": "40/63"},
+        {"view": "top", "id": "TCAL-001", "pixel_span": 159, "cm_per_px_exact": "40/53"}
+      ],
+      "exact_equal_ratio_pairs": [],
+      "all_ratios_equal": false,
+      "unified_scale": null,
+      "classification": "direct_dimension_agreement_with_blocked_pixel_scale_disagreement"
+    },
+    {
+      "id": "XDIS-004",
+      "subject": "C-004 outer footprint width 140 cm",
+      "axis": "X",
+      "declared_values_match": true,
+      "declared_cm": 140,
+      "observations": [
+        {"view": "front", "id": "CAL-FRONT-X-C004-140", "pixel_span": 290, "cm_per_px_exact": "14/29"},
+        {"view": "back", "id": "CAL-BACK-X-C004-140", "pixel_span": 245, "cm_per_px_exact": "4/7"},
+        {"view": "top", "id": "TCAL-002", "pixel_span": 208, "cm_per_px_exact": "35/52"}
+      ],
+      "exact_equal_ratio_pairs": [],
+      "all_ratios_equal": false,
+      "unified_scale": null,
+      "classification": "direct_dimension_agreement_with_blocked_pixel_scale_disagreement"
+    },
+    {
+      "id": "XDIS-005",
+      "subject": "C-001 maximum depth 90 cm",
+      "axis": "Y",
+      "declared_values_match": true,
+      "declared_cm": 90,
+      "observations": [
+        {"view": "left", "id": "CAL-LEFT-Y-C001-090", "pixel_span": 168, "cm_per_px_exact": "15/28"},
+        {"view": "right", "id": "CAL-RIGHT-Y-C001-090", "pixel_span": 144, "cm_per_px_exact": "5/8"},
+        {"view": "top", "id": "TCAL-003", "pixel_span": 94, "cm_per_px_exact": "45/47"}
+      ],
+      "exact_equal_ratio_pairs": [],
+      "all_ratios_equal": false,
+      "unified_scale": null,
+      "classification": "direct_dimension_agreement_with_blocked_pixel_scale_disagreement"
+    },
+    {
+      "id": "XDIS-006",
+      "subject": "C-004 outer footprint depth 110 cm",
+      "axis": "Y",
+      "declared_values_match": true,
+      "declared_cm": 110,
+      "observations": [
+        {"view": "left", "id": "CAL-LEFT-Y-C004-110", "pixel_span": 225, "cm_per_px_exact": "22/45"},
+        {"view": "right", "id": "CAL-RIGHT-Y-C004-110", "pixel_span": 193, "cm_per_px_exact": "110/193"},
+        {"view": "top", "id": "TCAL-004", "pixel_span": 140, "cm_per_px_exact": "11/14"}
+      ],
+      "exact_equal_ratio_pairs": [],
+      "all_ratios_equal": false,
+      "unified_scale": null,
+      "classification": "direct_dimension_agreement_with_blocked_pixel_scale_disagreement"
+    }
+  ],
+  "contact_correspondence": [
+    {
+      "id": "RC-CL001",
+      "contact_id": "CL-001",
+      "between": ["C-001", "C-002"],
+      "sample_counts": {"front": 6, "back": 6, "left": 6, "right": 6, "top": 16, "total": 40},
+      "semantic_relation": "authoritative",
+      "samples": "authoritative_discrete_per_view",
+      "pixel_to_pixel_pairing": "blocked_by_U_007_U_008",
+      "hidden_closure": "blocked",
+      "snap_anchor_authority": false
+    },
+    {
+      "id": "RC-CL002",
+      "contact_id": "CL-002",
+      "between": ["C-002", "C-003"],
+      "sample_counts": {"front": 6, "back": 6, "left": 6, "right": 6, "top": 16, "total": 40},
+      "semantic_relation": "authoritative",
+      "samples": "authoritative_discrete_per_view",
+      "pixel_to_pixel_pairing": "blocked_by_U_007_U_008",
+      "hidden_closure": "blocked",
+      "snap_anchor_authority": false
+    },
+    {
+      "id": "RC-CL003",
+      "contact_id": "CL-003",
+      "between": ["C-003", "C-004"],
+      "sample_counts": {"front": 9, "back": 10, "left": 6, "right": 6, "top": 16, "total": 47},
+      "semantic_relation": "authoritative",
+      "samples": "authoritative_discrete_per_view",
+      "pixel_to_pixel_pairing": "blocked_by_U_007_U_008",
+      "hidden_closure": "blocked",
+      "snap_anchor_authority": false
+    }
+  ],
+  "axis_integration": {
+    "X": {
+      "views": ["front", "back", "top"],
+      "direct_dimensions": [120, 140],
+      "unified_scale": null,
+      "world_contour_conversion": "blocked"
+    },
+    "Y": {
+      "views": ["left", "right", "top"],
+      "direct_dimensions": [90, 110],
+      "unified_scale": null,
+      "world_contour_conversion": "blocked"
+    },
+    "Z": {
+      "views": ["front", "back", "left", "right"],
+      "direct_dimensions": [220, 35],
+      "unified_scale": null,
+      "world_contour_conversion": "blocked"
+    }
+  },
+  "physical_correspondence_summary": {
+    "proven_semantic_groups": 11,
+    "proven_direct_dimension_groups": 6,
+    "proven_cross_panel_pixel_pairs": 0,
+    "proven_cross_view_irregular_corner_pairs": 0,
+    "proven_closed_contact_pairs": 0,
+    "proven_numeric_centers": 0,
+    "unified_axis_scales": 0,
+    "view_prioritization_used": false,
+    "average_used": false,
+    "stretch_or_correction_used": false,
+    "interpretation_used": false
+  },
+  "candidate_classification": "bounded_semantic_and_direct_dimension_correspondence_with_pixel_scale_and_physical_pairing_blocked",
+  "flamestrike_output_approval": {
+    "statement": "approved",
+    "date": "2026-07-16",
+    "scope": "Accept the semantic and direct-dimension correspondence classification without promoting any cross-panel physical pixel pairing or unified scale."
+  },
+  "geometry_created": false
+}

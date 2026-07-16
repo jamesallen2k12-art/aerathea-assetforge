@@ -1,10 +1,10 @@
 # SM_GIA_BloodAxeCairnstone_A005 Artifact Index
 
-Status: Step 08R exact top evidence approved; all footprints, centers, and interpretation remain blocked
+Status: Step 09 bounded cross-view exact-data audit approved; explicit scale, pairing, center, and geometry blocks preserved
 
 Artifact classification: `authoritative`
 
-Updated: 2026-07-15
+Updated: 2026-07-16
 
 ## Core Recovery Override - 2026-07-15
 
@@ -16,6 +16,13 @@ recovery overrides. Step 08R adds exact top calibration/contact authority with
 all closed footprints and centers blocked. The original Step 06 and Step 07
 packages remain quarantined as wholes, and the original Step 07 downstream
 handoff remains quarantined/superseded.
+
+Step 09 is now approved as a bounded cross-view exact-data decision. It
+integrates and audits the existing authority chain without selecting a scale,
+creating a physical pixel pairing, closing contact geometry, deriving a center
+or world-space result, rectifying an image, interpreting a shape, or creating
+production geometry. Its validation remains proof only, and Step 10 has no
+execution authority.
 
 | Artifact or group | Current status | Recovery role |
 |---|---|---|
@@ -155,6 +162,14 @@ handoff remains quarantined/superseded.
 | `manifests/STEP_08R_VALIDATION_MANIFEST.json` | `proof only` | Approved output validation; 37 checks pass |
 | `steps/STEP_08R_OUTPUT_RECORD.md` | `authoritative` | Approved Step 08R decision record |
 | `handoffs/STEP_08R_TO_STEP_09_HANDOFF.md` | `authoritative` | Restart boundary; Step 09 contract only after resume |
+| `steps/STEP_09_CROSS_VIEW_EXACT_DATASET_AUDIT_CONTRACT.md` | `authoritative` | Flamestrike-approved record-only Step 09 execution and closeout boundary |
+| `manifests/STEP_09_INTEGRATED_EXACT_MEASUREMENT_INDEX.json` | `authoritative` | Hash-linked integrated index of the approved exact-data chain |
+| `manifests/STEP_09_CROSS_VIEW_CORRESPONDENCE_MANIFEST.json` | `authoritative` | Eleven semantic cross-view groups; no physical pixel pairing authority |
+| `manifests/STEP_09_DISAGREEMENT_UNKNOWN_MATRIX.json` | `authoritative` | All inherited and newly classified disagreement and unknown groups preserved |
+| `manifests/STEP_09_PRE_GEOMETRY_EXACT_DATA_AUDIT.json` | `authoritative` | Approved pass-with-explicit-blocks pre-geometry decision |
+| `manifests/STEP_09_VALIDATION_MANIFEST.json` | `proof only` | Approved bounded-output validation; 60 validators pass and zero fail |
+| `steps/STEP_09_OUTPUT_RECORD.md` | `authoritative` | Approved Step 09 exact-data audit decision record |
+| `handoffs/STEP_09_TO_STEP_10_HANDOFF.md` | `authoritative` | Mandatory restart boundary; Step 10 contract only after resume |
 
 ## Legacy Classification
 
@@ -166,6 +181,22 @@ or reclassified in Step 01.
 
 No DCC, texture, export, Unreal, proof-render, or production automation artifact
 exists for A005.
+
+## Step 09 Approval
+
+Flamestrike approved the Step 09 contract, execution, visible audit package,
+authoritative bounded classifications, handoff, checkpoint, and scoped
+commit/push closeout on 2026-07-16. All 36 critical data inputs and 11
+governing inputs hash-verify, 27 structured records parse, and 20 independent
+calibration formulas replay exactly. All six direct dimension groups match
+their printed centimeter authorities. Eleven semantic cross-view registration
+groups and 127 exact discrete contact samples are preserved without claiming
+physical cross-view pixel pairs or contact closure.
+
+The result is `pass_with_explicit_blocks`. No unified X/Y/Z pixel scale,
+world conversion, physical pixel pairing, center, rectification,
+interpretation, geometry, or production authority was created. Step 10
+execution remains unauthorized.
 
 ## Step 02 Approval
 

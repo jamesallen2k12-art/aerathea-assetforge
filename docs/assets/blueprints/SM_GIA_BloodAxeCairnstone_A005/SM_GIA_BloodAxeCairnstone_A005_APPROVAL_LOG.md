@@ -1,10 +1,10 @@
 # SM_GIA_BloodAxeCairnstone_A005 Approval Log
 
-Status: Step 08R output and dependency-complete A005 recovery-chain closeout approved
+Status: Step 09 bounded exact-data output and scoped closeout approved
 
 Artifact classification: `authoritative`
 
-Updated: 2026-07-15
+Updated: 2026-07-16
 
 ## Plan Approval
 
@@ -708,3 +708,68 @@ Updated: 2026-07-15
   and production work
 - Closeout method: dependency-complete A005 content commit/push followed by a
   final restart-handoff evidence commit/push
+
+## Step 09 Contract Preparation Approval
+
+- Date: 2026-07-16
+- Approver: Flamestrike
+- Statement: `approved`
+- Scope: prepare and visibly present the exact Step 09 cross-view
+  exact-dataset audit contract without executing it
+- Result: the candidate record-only Step 09 contract was created and opened
+  visibly
+- Exclusion: Step 09 execution, rectification, interpretation, geometry,
+  production work, commit, and push
+
+## Step 09 Execution Approval
+
+- Date: 2026-07-16
+- Approver: Flamestrike
+- Statement: `approved`
+- Scope: execute the visible Step 09 contract as a record-only audit of the
+  complete approved A005 exact-data chain and produce bounded candidate
+  decision records
+- Pre-action checkpoint: `Saved/ProjectRecovery/20260716-090924/`
+- Exclusion: output approval, scale selection, physical pixel pairing, contact
+  closure, centers, world conversion, rectification, interpretation, geometry,
+  production work, commit, and push
+
+## Step 09 Candidate Validation
+
+- Date: 2026-07-16
+- Technical result: `pass_with_explicit_blocks`
+- Critical data input hashes: `36` matched, `0` mismatched
+- Governing input hashes: `11` matched, `0` mismatched
+- Structured records: `27` parsed, `0` failed
+- Independent calibration formulas: `20` replayed exactly
+- Direct dimension groups: `6` agree with printed centimeter authorities
+- Semantic cross-view registration groups: `11`
+- Exact discrete contact samples: `127`
+- Validators: `60` passed, `0` failed
+- Unified X/Y/Z pixel scale, world conversion, physical pixel pairing,
+  contact closure, and centers: blocked
+- Rectification, interpretation, geometry, and production artifacts: none
+- Validated-candidate checkpoint: `Saved/ProjectRecovery/20260716-092637/`
+
+## Step 09 Output And Scoped Closeout Approval
+
+- Date: 2026-07-16
+- Approver: Flamestrike
+- Statement: `approved`
+- Reviewed visibly: Step 09 contract, four decision manifests, focused
+  validation manifest, and output record
+- Decision: accept `pass_with_explicit_blocks`; classify the contract, four
+  decision manifests, output record, and Step 09-to-Step 10 handoff as
+  `authoritative` within the bounded exact-data decision; validation remains
+  `proof only`
+- Preserved blocks: no unified scale, world conversion, physical pixel
+  pairing, closed contact geometry, center, rectification, interpretation,
+  geometry, or production authority
+- Approved closeout scope: Step 09 records, A005 status/handoff updates,
+  checkpoint, exact-file staging, scoped commit, and push to `assetforge/main`
+- Approved pre-closeout checkpoint: `Saved/ProjectRecovery/20260716-092835/`
+- Excluded: recovery-journal history, every unrelated worktree file, A001-A004
+  data, Step 10 execution, rectification, interpretation, geometry, and
+  production work
+- Mandatory restart: required after closeout; next permitted presentation is a
+  Step 10 contract only
