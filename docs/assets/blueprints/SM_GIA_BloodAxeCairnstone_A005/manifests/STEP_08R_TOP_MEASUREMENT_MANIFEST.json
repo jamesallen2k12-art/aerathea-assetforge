@@ -1,0 +1,143 @@
+{
+  "schema": "aerathea.top_exact_measurement_manifest.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "step_id": "STEP_08R",
+  "date": "2026-07-15",
+  "status": "approved_exact_top_dimensions_and_reverified_discrete_contacts",
+  "artifact_classification": "authoritative",
+  "decision": "Record only exact source-linked top-view dimensions and freshly re-audited discrete contacts; keep every unproved closed footprint, perimeter, ownership region, center, orientation, and hidden sector blocked.",
+  "authority": {
+    "top_panel": {
+      "path": "panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_TOP.png",
+      "file_sha256": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf",
+      "pixel_sha256": "eda0f5d691336489e257a44b09f58b8543b023bd4edc0893d5fab68ad8dbf05f",
+      "size_px": [337, 371],
+      "crop_half_open_full_source": [393, 1073, 730, 1444]
+    },
+    "calibration_record": "manifests/STEP_08R_TOP_CALIBRATION_RECORD.json",
+    "recovered_semantic_inventory": {
+      "path": "manifests/STEP_04_COMPONENT_OWNERSHIP_INVENTORY_RECOVERY_A01.json",
+      "sha256": "f472f5bb749eda8ffb27809658d4afd3f5fc732ddcf7d4fcb1275492c1e7d755"
+    },
+    "recovered_top_contacts": {
+      "path": "manifests/STEP_04_TOP_CONTACT_EVIDENCE_RECOVERY_A01.json",
+      "sha256": "8f9fb86ef631e5785552a61f61e4a2d3085727f1a667bdf59cf904284b1b2eb0"
+    }
+  },
+  "direct_dimension_observations": [
+    {
+      "id": "TDIM-001",
+      "component_id": "C-001",
+      "feature": "maximum_width",
+      "declared_cm": 120,
+      "calibration_observation_id": "TCAL-001",
+      "authority_type": "source_authored_dimension"
+    },
+    {
+      "id": "TDIM-002",
+      "component_id": "C-004",
+      "feature": "outer_footprint_width",
+      "declared_cm": 140,
+      "calibration_observation_id": "TCAL-002",
+      "authority_type": "source_authored_dimension"
+    },
+    {
+      "id": "TDIM-003",
+      "component_id": "C-001",
+      "feature": "maximum_depth",
+      "declared_cm": 90,
+      "calibration_observation_id": "TCAL-003",
+      "authority_type": "source_authored_dimension"
+    },
+    {
+      "id": "TDIM-004",
+      "component_id": "C-004",
+      "feature": "outer_footprint_depth",
+      "declared_cm": 110,
+      "calibration_observation_id": "TCAL-004",
+      "authority_type": "source_authored_dimension"
+    }
+  ],
+  "top_contact_reaudit": {
+    "method": "fresh exact RGB and coordinate audit against the authoritative native top panel",
+    "source_manifest_points_checked": 48,
+    "per_contact_counts": {
+      "CL-001": 16,
+      "CL-002": 16,
+      "CL-003": 16
+    },
+    "source_rgb_mismatches": 0,
+    "panel_local_to_full_source_round_trip_failures": 0,
+    "native_rgb_channel_range": [0, 83],
+    "all_points_match": true,
+    "new_contact_points_added": 0,
+    "line_interpolation_authorized": false,
+    "closure_authorized": false,
+    "result": "authoritative_discrete_contact_evidence_reconfirmed_without_expansion"
+  },
+  "new_closed_footprint_records": [],
+  "new_closed_perimeter_records": [],
+  "new_component_ownership_regions": [],
+  "new_orientation_measurements": [],
+  "blocked_measurement_decisions": [
+    {
+      "id": "TBLOCK-001",
+      "subject": "C-001 filled outer footprint and center",
+      "status": "blocked",
+      "reason": "This pass did not establish a fully enumerated, closed, annotation-excluded source-owned boundary without inference."
+    },
+    {
+      "id": "TBLOCK-002",
+      "subject": "C-002 outer perimeter, inner CL-001 perimeter, visible annulus, and center",
+      "status": "blocked",
+      "reason": "Recovered CL-001 evidence is exact but deliberately discontinuous; closure and complete layer ownership are not authorized."
+    },
+    {
+      "id": "TBLOCK-003",
+      "subject": "C-003 outer perimeter, inner CL-002 perimeter, visible annulus, and center",
+      "status": "blocked",
+      "reason": "Recovered CL-002 evidence is exact but deliberately discontinuous; closure and complete layer ownership are not authorized."
+    },
+    {
+      "id": "TBLOCK-004",
+      "subject": "C-004 filled outer footprint and center",
+      "status": "blocked",
+      "reason": "Peripheral rubble, shadows, and discontinuous CL-003 ownership prevent an exact closed source-owned pixel set without interpretation."
+    },
+    {
+      "id": "TBLOCK-005",
+      "subject": "C-005, C-006, and C-007 physical centers and orientations",
+      "status": "blocked",
+      "reason": "Their physical identity or ownership remains ambiguous under U-001 through U-009 and cannot be promoted from appearance to geometry authority."
+    },
+    {
+      "id": "TBLOCK-006",
+      "subject": "CL-001, CL-002, and CL-003 closed perimeter centers",
+      "status": "blocked",
+      "reason": "Only exact discrete visible samples are authoritative; hidden and occluded closure remains forbidden."
+    }
+  ],
+  "annotation_classes_excluded_from_ownership": [
+    "view_label",
+    "dimension_text",
+    "dimension_arrow",
+    "dimension_extension_line",
+    "gridline",
+    "panel_border",
+    "background",
+    "review_overlay"
+  ],
+  "filled_footprint_calculation_performed": false,
+  "candidate_fill_present": false,
+  "mask_present": false,
+  "inferred_contour_present": false,
+  "world_space_conversion_performed": false,
+  "interpretation_introduced": false,
+  "geometry_created": false,
+  "legacy_asset_specific_data_accessed": false,
+  "flamestrike_output_approval": {
+    "statement": "approved",
+    "date": "2026-07-15",
+    "scope": "Direct top dimensions and all 48 reverified contact pixels accepted; every footprint, perimeter, center, orientation, and hidden sector remains blocked."
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "schema": "aerathea.top_calibration_record.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "step_id": "STEP_08R",
+  "date": "2026-07-15",
+  "status": "approved_independent_top_calibration_observations_with_disagreements_preserved",
+  "artifact_classification": "authoritative",
+  "decision": "Preserve four independent source-authored top-view calibration observations without selecting, averaging, stretching, or unifying them.",
+  "authority": {
+    "contract": {
+      "path": "steps/STEP_08R_CORE_REASSESSED_TOP_EXACT_MEASUREMENT_A01_CONTRACT.md",
+      "sha256": "859c58b297196541ba0f81637a39913f577803343fae889442e16fe028eeec17"
+    },
+    "top_panel": {
+      "path": "panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_TOP.png",
+      "file_sha256": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf",
+      "pixel_sha256": "eda0f5d691336489e257a44b09f58b8543b023bd4edc0893d5fab68ad8dbf05f",
+      "size_px": [337, 371],
+      "crop_half_open_full_source": [393, 1073, 730, 1444]
+    },
+    "coordinate_frame_record": {
+      "path": "manifests/STEP_05_PIXEL_COORDINATE_FRAME_RECORD.json",
+      "sha256": "ccfce6b8316369b512ff83eee11fd4385dd15b546f7b92da9e80b9e7ed959d1d"
+    },
+    "registration_manifest": {
+      "path": "manifests/STEP_05_ORIENTATION_REGISTRATION_MANIFEST.json",
+      "sha256": "b7efa865e8b82f63e714d36ed4935fc02515ecc3f4d355941467f20b49348395"
+    }
+  },
+  "coordinate_convention": {
+    "indexing": "zero_based_integer_pixel_centers",
+    "image_axes": "x_right_y_down",
+    "span_formula": "second_axis_endpoint - first_axis_endpoint",
+    "cm_per_px_formula": "declared_real_span_cm / pixel_span",
+    "top_axis_mapping": {
+      "image_x": "+X",
+      "image_y": "-Y",
+      "panel_normal": "+Z"
+    },
+    "coordinate_tolerance_px": 0
+  },
+  "observations": [
+    {
+      "id": "TCAL-001",
+      "component_id": "C-001",
+      "axis": "X",
+      "endpoint_a_id": "XS-C001-XNEG-TOP",
+      "endpoint_a_local_px": [56, 277],
+      "endpoint_a_full_source_px": [449, 1350],
+      "endpoint_b_id": "XS-C001-XPOS-TOP",
+      "endpoint_b_local_px": [215, 278],
+      "endpoint_b_full_source_px": [608, 1351],
+      "pixel_span_formula": "215 - 56",
+      "pixel_span_px": 159,
+      "declared_real_span_cm": 120,
+      "cm_per_px_exact": "40/53",
+      "cm_per_px_decimal": 0.7547169811320755,
+      "selection_status": "independent_observation_not_selected_as_unified_scale"
+    },
+    {
+      "id": "TCAL-002",
+      "component_id": "C-004",
+      "axis": "X",
+      "endpoint_a_id": "XS-C004-XNEG-TOP",
+      "endpoint_a_local_px": [31, 316],
+      "endpoint_a_full_source_px": [424, 1389],
+      "endpoint_b_id": "XS-C004-XPOS-TOP",
+      "endpoint_b_local_px": [239, 316],
+      "endpoint_b_full_source_px": [632, 1389],
+      "pixel_span_formula": "239 - 31",
+      "pixel_span_px": 208,
+      "declared_real_span_cm": 140,
+      "cm_per_px_exact": "35/52",
+      "cm_per_px_decimal": 0.6730769230769231,
+      "selection_status": "independent_observation_not_selected_as_unified_scale"
+    },
+    {
+      "id": "TCAL-003",
+      "component_id": "C-001",
+      "axis": "Y",
+      "endpoint_a_id": "YS-C001-YPOS-TOP",
+      "endpoint_a_local_px": [263, 45],
+      "endpoint_a_full_source_px": [656, 1118],
+      "endpoint_b_id": "YS-C001-YNEG-TOP",
+      "endpoint_b_local_px": [263, 139],
+      "endpoint_b_full_source_px": [656, 1212],
+      "pixel_span_formula": "139 - 45",
+      "pixel_span_px": 94,
+      "declared_real_span_cm": 90,
+      "cm_per_px_exact": "45/47",
+      "cm_per_px_decimal": 0.9574468085106383,
+      "selection_status": "independent_observation_not_selected_as_unified_scale"
+    },
+    {
+      "id": "TCAL-004",
+      "component_id": "C-004",
+      "axis": "Y",
+      "endpoint_a_id": "YS-C004-YPOS-TOP",
+      "endpoint_a_local_px": [263, 151],
+      "endpoint_a_full_source_px": [656, 1224],
+      "endpoint_b_id": "YS-C004-YNEG-TOP",
+      "endpoint_b_local_px": [263, 291],
+      "endpoint_b_full_source_px": [656, 1364],
+      "pixel_span_formula": "291 - 151",
+      "pixel_span_px": 140,
+      "declared_real_span_cm": 110,
+      "cm_per_px_exact": "11/14",
+      "cm_per_px_decimal": 0.7857142857142857,
+      "selection_status": "independent_observation_not_selected_as_unified_scale"
+    }
+  ],
+  "observation_count": 4,
+  "unified_top_scale": null,
+  "unified_x_scale": null,
+  "unified_y_scale": null,
+  "selected_or_averaged_observations": 0,
+  "disagreement_record": "manifests/STEP_08R_TOP_DISAGREEMENT_LIST.json",
+  "world_space_contour_conversion_authorized": false,
+  "interpretation_introduced": false,
+  "geometry_created": false,
+  "flamestrike_output_approval": {
+    "statement": "approved",
+    "date": "2026-07-15",
+    "scope": "Four independent top calibration observations accepted with all four disagreements preserved and no unified scale selected."
+  }
+}

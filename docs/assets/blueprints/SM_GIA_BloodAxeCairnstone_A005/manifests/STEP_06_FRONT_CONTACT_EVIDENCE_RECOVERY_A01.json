@@ -1,0 +1,107 @@
+{
+  "schema": "aerathea.step_06_contact_evidence_recovery.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "recovery_id": "STEP_06R_CONTACT_EVIDENCE_RECOVERY_A01",
+  "view": "front",
+  "date": "2026-07-15",
+  "status": "approved_step_06r_front_contact_evidence",
+  "artifact_classification": "authoritative",
+  "decision": "Preserve the 20 supported front contact samples and replace only the proven external-background CL-002 sample with an exact source-owned sample on the same visible junction.",
+  "authority": {
+    "contract": "steps/STEP_06R_CONTACT_EVIDENCE_RECOVERY_A01_CONTRACT.md",
+    "approval_statement": "approved",
+    "step_04r_semantic_inventory": "manifests/STEP_04_COMPONENT_OWNERSHIP_INVENTORY_RECOVERY_A01.json",
+    "step_05_coordinate_frame": "manifests/STEP_05_PIXEL_COORDINATE_FRAME_RECORD.json",
+    "dependency_audit": "manifests/STEP_05_07_DEPENDENCY_AUDIT_A01.json"
+  },
+  "source_panel": {
+    "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_FRONT.png",
+    "file_sha256": "262071198bc0d409e9b68af5ac4f3c6a4768a90b1fd199342035a8a82342c2c5",
+    "pixel_sha256": "d4fb34cb01ce6eaa04213a5a7c517743960daec6dcf638c53ec80a958ecc807f",
+    "size_px": [483, 525],
+    "mode": "RGB",
+    "full_source_offset": [552, 130]
+  },
+  "original_quarantined_manifest": {
+    "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_06_FRONT_MEASUREMENT_MANIFEST.json",
+    "sha256": "c71932bef2016808d24fdc9aed47b9f4a3c32f59bdd45a551aab6804d877ecef",
+    "use": "recovery_evidence_only",
+    "modified": false
+  },
+  "selection_policy": {
+    "method": "manual_native_pixel_source_ownership_and_named_contact_review",
+    "threshold_is_authority": false,
+    "closure_authorized": false,
+    "line_interpolation_authorized": false,
+    "semantic_role_required": true
+  },
+  "counts": {
+    "audited": 21,
+    "retained": 20,
+    "replaced": 1,
+    "unsupported_remaining": 0,
+    "CL-001": 6,
+    "CL-002": 6,
+    "CL-003": 9
+  },
+  "recovered_open_segments": {
+    "CL-001": [[[136, 341], [145, 339], [151, 340]], [[346, 340], [354, 339], [363, 342]]],
+    "CL-002": [[[120, 365], [127, 360], [134, 356]], [[365, 356], [371, 360], [379, 365]]],
+    "CL-003": [[[119, 391], [126, 394], [133, 397]], [[166, 400], [171, 403]], [[296, 403], [301, 400]], [[373, 397], [381, 394]]]
+  },
+  "samples": [
+    {"id":"F-CL-001-S01-P01","contact_id":"CL-001","between":["C-001","C-002"],"segment":1,"point":1,"panel_local":[136,341],"full_source":[688,471],"source_rgb":[67,60,61],"disposition":"retained","review":"pass"},
+    {"id":"F-CL-001-S01-P02","contact_id":"CL-001","between":["C-001","C-002"],"segment":1,"point":2,"panel_local":[145,339],"full_source":[697,469],"source_rgb":[101,97,97],"disposition":"retained","review":"pass"},
+    {"id":"F-CL-001-S01-P03","contact_id":"CL-001","between":["C-001","C-002"],"segment":1,"point":3,"panel_local":[151,340],"full_source":[703,470],"source_rgb":[53,51,49],"disposition":"retained","review":"pass"},
+    {"id":"F-CL-001-S02-P01","contact_id":"CL-001","between":["C-001","C-002"],"segment":2,"point":1,"panel_local":[346,340],"full_source":[898,470],"source_rgb":[14,10,9],"disposition":"retained","review":"pass"},
+    {"id":"F-CL-001-S02-P02","contact_id":"CL-001","between":["C-001","C-002"],"segment":2,"point":2,"panel_local":[354,339],"full_source":[906,469],"source_rgb":[73,72,69],"disposition":"retained","review":"pass"},
+    {"id":"F-CL-001-S02-P03","contact_id":"CL-001","between":["C-001","C-002"],"segment":2,"point":3,"panel_local":[363,342],"full_source":[915,472],"source_rgb":[42,37,36],"disposition":"retained","review":"pass"},
+    {"id":"F-CL-002-S01-P01","contact_id":"CL-002","between":["C-002","C-003"],"segment":1,"point":1,"panel_local":[120,365],"full_source":[672,495],"source_rgb":[137,140,140],"disposition":"retained","review":"pass"},
+    {"id":"F-CL-002-S01-P02","contact_id":"CL-002","between":["C-002","C-003"],"segment":1,"point":2,"panel_local":[127,360],"full_source":[679,490],"source_rgb":[175,177,173],"disposition":"retained","review":"pass"},
+    {"id":"F-CL-002-S01-P03","contact_id":"CL-002","between":["C-002","C-003"],"segment":1,"point":3,"panel_local":[134,356],"full_source":[686,486],"source_rgb":[123,125,124],"disposition":"retained","review":"pass"},
+    {"id":"F-CL-002-S02-P01","contact_id":"CL-002","between":["C-002","C-003"],"segment":2,"point":1,"panel_local":[365,356],"full_source":[917,486],"source_rgb":[44,41,42],"disposition":"retained","review":"pass"},
+    {"id":"F-CL-002-S02-P02","contact_id":"CL-002","between":["C-002","C-003"],"segment":2,"point":2,"panel_local":[371,360],"full_source":[923,490],"source_rgb":[144,143,144],"disposition":"replacement","review":"pass"},
+    {"id":"F-CL-002-S02-P03","contact_id":"CL-002","between":["C-002","C-003"],"segment":2,"point":3,"panel_local":[379,365],"full_source":[931,495],"source_rgb":[74,71,71],"disposition":"retained","review":"pass"},
+    {"id":"F-CL-003-S01-P01","contact_id":"CL-003","between":["C-003","C-004"],"segment":1,"point":1,"panel_local":[119,391],"full_source":[671,521],"source_rgb":[64,63,58],"disposition":"retained","review":"pass"},
+    {"id":"F-CL-003-S01-P02","contact_id":"CL-003","between":["C-003","C-004"],"segment":1,"point":2,"panel_local":[126,394],"full_source":[678,524],"source_rgb":[20,5,3],"disposition":"retained","review":"pass"},
+    {"id":"F-CL-003-S01-P03","contact_id":"CL-003","between":["C-003","C-004"],"segment":1,"point":3,"panel_local":[133,397],"full_source":[685,527],"source_rgb":[29,27,24],"disposition":"retained","review":"pass"},
+    {"id":"F-CL-003-S02-P01","contact_id":"CL-003","between":["C-003","C-004"],"segment":2,"point":1,"panel_local":[166,400],"full_source":[718,530],"source_rgb":[36,30,26],"disposition":"retained","review":"pass"},
+    {"id":"F-CL-003-S02-P02","contact_id":"CL-003","between":["C-003","C-004"],"segment":2,"point":2,"panel_local":[171,403],"full_source":[723,533],"source_rgb":[44,39,32],"disposition":"retained","review":"pass"},
+    {"id":"F-CL-003-S03-P01","contact_id":"CL-003","between":["C-003","C-004"],"segment":3,"point":1,"panel_local":[296,403],"full_source":[848,533],"source_rgb":[16,16,15],"disposition":"retained","review":"pass"},
+    {"id":"F-CL-003-S03-P02","contact_id":"CL-003","between":["C-003","C-004"],"segment":3,"point":2,"panel_local":[301,400],"full_source":[853,530],"source_rgb":[114,10,11],"disposition":"retained","review":"pass"},
+    {"id":"F-CL-003-S04-P01","contact_id":"CL-003","between":["C-003","C-004"],"segment":4,"point":1,"panel_local":[373,397],"full_source":[925,527],"source_rgb":[83,84,75],"disposition":"retained","review":"pass"},
+    {"id":"F-CL-003-S04-P02","contact_id":"CL-003","between":["C-003","C-004"],"segment":4,"point":2,"panel_local":[381,394],"full_source":[933,524],"source_rgb":[0,0,0],"disposition":"retained","review":"pass"}
+  ],
+  "replacement": {
+    "contact_id": "CL-002",
+    "original_panel_local": [372, 360],
+    "original_source_rgb": [235, 237, 238],
+    "original_classification": "invalid_external_antialiased_background_pixel",
+    "recovered_panel_local": [371, 360],
+    "recovered_full_source": [923, 490],
+    "recovered_source_rgb": [144, 143, 144],
+    "recovered_role": "directly_visible_source_owned_C-002_C-003_junction_pixel"
+  },
+  "semantic_review": {
+    "result": "pass",
+    "reviewed_samples": 21,
+    "source_owned": 21,
+    "declared_contact_role_supported": 21,
+    "additional_drift_found": false
+  },
+  "flamestrike_output_approval": {
+    "date": "2026-07-15",
+    "statement": "approved",
+    "result": "pass",
+    "scope": "Recovered front contact evidence only; 20 retained samples and one replacement sample.",
+    "classification": "authoritative_recovered_contact_evidence",
+    "pre_classification_checkpoint": "Saved/ProjectRecovery/20260715-192306/",
+    "original_step_06_restoration_authorized": false,
+    "step_07_authorized": false,
+    "step_08_authorized": false,
+    "commit_push_authorized": false
+  },
+  "interpretation_introduced": false,
+  "geometry_created": false,
+  "step_06_restoration_authorized": false
+}

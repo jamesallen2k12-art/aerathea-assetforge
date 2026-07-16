@@ -24,6 +24,20 @@ Core authority: `AGENTS.md` Core Principles govern this ledger. Drifted artifact
 
 ## Entries
 
+### 2026-07-15 18:18 EDT - A005 Step 06 Contact Sample Source-Ownership Drift
+
+- Asset or scope: SM_GIA_BloodAxeCairnstone_A005, suspended Step 06 front/back contact-sample authority and the downstream Step 07-08 authority chain.
+- Detected by: Codex native-pixel source-neighborhood audit during the Flamestrike-approved Step 05-07 Dependency Audit A01.
+- Last known Core-valid state: approved Step 03 lossless panel decomposition plus the approved Step 04R recovered semantic inventory and 48 exact top-contact observations. Step 05 was still suspended when this event was detected, although the dependency audit found it eligible for restoration.
+- First drift action: Step 06 retained front CL-002 point (372,360) and back CL-002 point (355,271) as visible C-002/C-003 contact samples even though both coordinates lie on external white or anti-aliased background pixels.
+- Assumption or interpretation that caused drift: visual proximity on the composite Step 06 evidence board and a manual review claim were treated as sufficient contact ownership without an exact native-pixel object-versus-background and semantic-role check.
+- Affected outputs: STEP_06_FRONT_MEASUREMENT_MANIFEST.json, STEP_06_BACK_MEASUREMENT_MANIFEST.json, both Step 06 contact measurement contracts, the Step 06 evidence board, validation manifest, output/approval/handoff completion claims, the Step 07 authority classification, and the suspended Step 08 chain.
+- Artifact statuses: the two named original Step 06 contact observations remain `invalid`; the approved Step 06R front/back recovery manifests and output record are `authoritative` recovered contact evidence; the approved Step 06Q record makes only its explicitly named unaffected records/sections plus Step 06R contacts an `authoritative` bounded recovered Step 06 set; the original Step 06 package remains `quarantined` as a whole; its original contact arrays and validation/evidence/output/handoff completion chain remain `quarantined/superseded`; Step 07 remains `quarantined`; Step 08 remains `stopped` with no tracked output.
+- Quarantined locations or records: original Step 06 records remain in place under `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/`; exact drift diagnostics remain under `Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/CoreRecovery/STEP_05_07_DependencyAudit_A01/`; approved recovery evidence is recorded under the A005 `STEP_06_RECOVERY` evidence directory and recovery-suffixed manifests.
+- Recovery decision: Step 06R re-audited all 43 native front/back contact samples, retained 41, replaced front `(372,360)` with `(371,360)` and back `(355,271)` with `(345,270)`, and found no additional drift. Step 06Q then proved that the two invalid points did not feed calibration, row, C-004, feature, contract-value, or disagreement data. Flamestrike approved a bounded recovered Step 06 authority from the named unaffected records/sections plus Step 06R while keeping the original package quarantined as a whole.
+- Flamestrike approval: dependency-audit execution/output, Step 06R execution/output, and Step 06Q execution/output classification were approved on 2026-07-15. Step 05 remains restored; bounded recovered Step 06 authority is approved; the original Step 06 package and Step 07 remain quarantined; Step 08 remains stopped; production work and commit/push were not authorized.
+- Follow-up Core/Kaizen improvement: every exact contact observation must validate both pixel containment and semantic contact role at native resolution; pixel-exact source tiles and composite-board proximity are insufficient.
+
 ### 2026-07-15 16:04 EDT - A005 Step 04 Top Contact Evidence Source-Ownership Drift
 
 - Asset or scope: `SM_GIA_BloodAxeCairnstone_A005`, approved Step 04 top ownership evidence and the downstream Step 05-08 authority chain.

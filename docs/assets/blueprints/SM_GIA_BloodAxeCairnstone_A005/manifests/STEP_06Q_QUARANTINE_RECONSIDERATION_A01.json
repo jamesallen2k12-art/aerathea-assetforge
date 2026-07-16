@@ -1,0 +1,233 @@
+{
+  "schema": "aerathea.step_06_quarantine_reconsideration.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "audit_id": "STEP_06Q_QUARANTINE_RECONSIDERATION_A01",
+  "date": "2026-07-15",
+  "status": "approved_bounded_recovered_step_06_authority",
+  "artifact_classification": "authoritative",
+  "decision": "Determine which original Step 06 records or record sections remain supported after the approved Step 06R contact recovery without modifying or automatically reclassifying the original package.",
+  "approval": {
+    "approver": "Flamestrike",
+    "statement": "approved",
+    "date": "2026-07-15",
+    "scope": "Step 06 quarantine check exactly as presented in plain English",
+    "output_approval": {
+      "statement": "approved",
+      "date": "2026-07-15",
+      "scope": "Record the bounded recovered Step 06 authority exactly as reviewed while keeping the original Step 06 package quarantined as a whole.",
+      "pre_classification_checkpoint": "Saved/ProjectRecovery/20260715-195001/"
+    }
+  },
+  "checkpoints": {
+    "pre_action": "Saved/ProjectRecovery/20260715-193739/"
+  },
+  "authority_input_hashes": {
+    "step_04r_semantic_inventory": "f472f5bb749eda8ffb27809658d4afd3f5fc732ddcf7d4fcb1275492c1e7d755",
+    "step_05_coordinate_frame": "ccfce6b8316369b512ff83eee11fd4385dd15b546f7b92da9e80b9e7ed959d1d",
+    "dependency_audit": "a98d488f95ad9af6899c392f79ccc2b1e6a5a27e5221ca063b895f94de0b496c",
+    "step_06r_front_contacts": "534b89f2d37fabcd7bdc3aa95d4ec9e368b0abab13307e80c1c075aeee1212f2",
+    "step_06r_back_contacts": "36f65a8873ce8c430d1e6156e07492bb01a45f6e6cd31515d9326ce44ac935af",
+    "step_06r_validation": "dae2d87a2572cde9a843e1f47415439ff9fa1e8cbe9e4df77d64e1dd1345e07e"
+  },
+  "original_step_06_artifact_hashes": {
+    "steps/STEP_06_CONTRACT.md": "692a95e660a4dfb77fef6117f415db1b682c86423c572b532b90dcbe8d8c47e3",
+    "manifests/STEP_06_FRONT_CALIBRATION_RECORD.json": "17993e1d472d97cf1d4c8996b668e1bb11b8f2fc160ce6c46fd5b8d2bc32ca4b",
+    "manifests/STEP_06_BACK_CALIBRATION_RECORD.json": "7eaa651d6c89bbe444af8f167e663a0d16a204832c45e18f2447f64b1a952fcc",
+    "manifests/STEP_06_FRONT_MEASUREMENT_MANIFEST.json": "c71932bef2016808d24fdc9aed47b9f4a3c32f59bdd45a551aab6804d877ecef",
+    "manifests/STEP_06_BACK_MEASUREMENT_MANIFEST.json": "7d203f0b4993aa5764bf54f3c78109ba0f614cc4b17553a58e3acde07deb1e56",
+    "manifests/STEP_06_FRONT_MEASUREMENT_CONTRACTS.json": "79029a8f03d1af2fe880fb791d38b33b0efc335da8eea9064d35ed85a4a2299b",
+    "manifests/STEP_06_BACK_MEASUREMENT_CONTRACTS.json": "1bc424f6fbc52a84e532c4861d50eb35bd57e5635238a8b219fca2d10b9ffcd8",
+    "manifests/STEP_06_FRONT_BACK_DISAGREEMENT_LIST.json": "78d95fdc0cc10a4e2698b7a8fb10903b451431af85f272b81fd75b3c4647a0b2",
+    "manifests/STEP_06_VALIDATION_MANIFEST.json": "8e32d202fe81cc7081d6d91faa4cb6c318c3910443e02086183909e026b10991",
+    "evidence/STEP_06/SM_GIA_BloodAxeCairnstone_A005_STEP_06_FRONT_BACK_MEASUREMENT_EVIDENCE.png": "8222da8c909569971d749c504497899688323ac06583959f10188a7a45509543",
+    "steps/STEP_06_OUTPUT_RECORD.md": "656efdbb2b68ed13cef9f4240bde384c9503f421b75571093144e6ca18b6c73f",
+    "handoffs/STEP_06_TO_STEP_07_HANDOFF.md": "902670a3f07a087ee9eb1382e8f27bda3c82ac22c52f3b2ece442d73faca2498"
+  },
+  "contact_comparison": {
+    "original_observations": 43,
+    "recovered_observations": 43,
+    "exactly_retained": 41,
+    "changed": 2,
+    "unsupported_remaining": 0,
+    "front_change": {
+      "sequence_index_zero_based": 10,
+      "contact_id": "CL-002",
+      "original_panel_local": [372, 360],
+      "recovered_panel_local": [371, 360]
+    },
+    "back_change": {
+      "sequence_index_zero_based": 11,
+      "contact_id": "CL-002",
+      "original_panel_local": [355, 271],
+      "recovered_panel_local": [345, 270]
+    },
+    "original_invalid_coordinates_absent_from_recovery": true,
+    "all_other_sequence_positions_identical": true
+  },
+  "containment_finding": {
+    "structured_occurrences_of_exact_invalid_coordinate_pairs": [
+      "manifests/STEP_06_FRONT_MEASUREMENT_MANIFEST.json#/contact_line_samples/1/open_segments/1/1",
+      "manifests/STEP_06_BACK_MEASUREMENT_MANIFEST.json#/contact_line_samples/1/open_segments/1/2"
+    ],
+    "calibration_dependency": false,
+    "height_station_dependency": false,
+    "visible_outer_edge_row_dependency": false,
+    "irregular_C004_dependency": false,
+    "feature_landmark_dependency": false,
+    "measurement_contract_value_dependency": false,
+    "disagreement_value_dependency": false,
+    "affected_proof_and_completion_chain": [
+      "manifests/STEP_06_VALIDATION_MANIFEST.json",
+      "evidence/STEP_06/SM_GIA_BloodAxeCairnstone_A005_STEP_06_FRONT_BACK_MEASUREMENT_EVIDENCE.png",
+      "steps/STEP_06_OUTPUT_RECORD.md",
+      "handoffs/STEP_06_TO_STEP_07_HANDOFF.md"
+    ],
+    "finding": "The two invalid contact pixels do not feed calibration, row spans, height stations, C-004 observations, feature landmarks, contract formulas, or disagreement values. They do invalidate the original contact arrays and every proof or completion claim that the complete original package is source-owned."
+  },
+  "original_measurement_counts": {
+    "front": {
+      "calibration_observations": 4,
+      "height_station_observations": 4,
+      "visible_outer_edge_rows": 13,
+      "irregular_C004_observations": 4,
+      "contact_points": 21,
+      "feature_groups": 4,
+      "feature_landmark_points": 22,
+      "measurement_contracts": 12
+    },
+    "back": {
+      "calibration_observations": 4,
+      "height_station_observations": 4,
+      "visible_outer_edge_rows": 13,
+      "irregular_C004_observations": 4,
+      "contact_points": 22,
+      "feature_groups": 3,
+      "feature_landmark_points": 10,
+      "measurement_contracts": 12
+    },
+    "blocked_disagreement_entries": 7
+  },
+  "artifact_recommendations": {
+    "steps/STEP_06_CONTRACT.md": {
+      "current_status": "authoritative_for_scope_only",
+      "recommendation": "retain_authoritative_for_scope_only",
+      "reason": "The contract defines the evidence standard and contains no disputed measurement result."
+    },
+    "manifests/STEP_06_FRONT_CALIBRATION_RECORD.json": {
+      "current_status": "quarantined_as_part_of_original_package",
+      "recommendation": "restore_authoritative_with_existing_blocked_disagreements",
+      "reason": "All four observations are independent of contact coordinates; no consolidated X or Z scale exists."
+    },
+    "manifests/STEP_06_BACK_CALIBRATION_RECORD.json": {
+      "current_status": "quarantined_as_part_of_original_package",
+      "recommendation": "restore_authoritative_with_existing_blocked_disagreements",
+      "reason": "All four observations are independent of contact coordinates; no consolidated X or Z scale exists."
+    },
+    "manifests/STEP_06_FRONT_MEASUREMENT_MANIFEST.json": {
+      "current_status": "quarantined",
+      "recommendation": "keep_whole_file_quarantined_use_bounded_sections_only",
+      "eligible_sections": [
+        "/source_panel",
+        "/calibration_record",
+        "/height_station_observations",
+        "/visible_outer_edge_row_samples",
+        "/irregular_C004_outer_edge_observations",
+        "/source_feature_landmarks",
+        "/blocked",
+        "/world_measurement_status"
+      ],
+      "superseded_section": "/contact_line_samples",
+      "replacement_authority": "manifests/STEP_06_FRONT_CONTACT_EVIDENCE_RECOVERY_A01.json",
+      "invalid_global_claim": "/selection_policy/retained_coordinates_visually_audited_against_source"
+    },
+    "manifests/STEP_06_BACK_MEASUREMENT_MANIFEST.json": {
+      "current_status": "quarantined",
+      "recommendation": "keep_whole_file_quarantined_use_bounded_sections_only",
+      "eligible_sections": [
+        "/source_panel",
+        "/calibration_record",
+        "/height_station_observations",
+        "/visible_outer_edge_row_samples",
+        "/irregular_C004_outer_edge_observations",
+        "/source_feature_landmarks",
+        "/blocked",
+        "/world_measurement_status"
+      ],
+      "superseded_section": "/contact_line_samples",
+      "replacement_authority": "manifests/STEP_06_BACK_CONTACT_EVIDENCE_RECOVERY_A01.json",
+      "invalid_global_claim": "/selection_policy/retained_coordinates_visually_audited_against_source"
+    },
+    "manifests/STEP_06_FRONT_MEASUREMENT_CONTRACTS.json": {
+      "current_status": "quarantined_as_part_of_original_package",
+      "recommendation": "restore_with_contact_dependency_override",
+      "contact_contract": "MC-FRONT-CONTACTS",
+      "contact_value_authority": "manifests/STEP_06_FRONT_CONTACT_EVIDENCE_RECOVERY_A01.json",
+      "reason": "The contract definitions contain no invalid coordinate and preserve blocked world conversion."
+    },
+    "manifests/STEP_06_BACK_MEASUREMENT_CONTRACTS.json": {
+      "current_status": "quarantined_as_part_of_original_package",
+      "recommendation": "restore_with_contact_dependency_override",
+      "contact_contract": "MC-BACK-CONTACTS",
+      "contact_value_authority": "manifests/STEP_06_BACK_CONTACT_EVIDENCE_RECOVERY_A01.json",
+      "reason": "The contract definitions contain no invalid coordinate and preserve blocked world conversion."
+    },
+    "manifests/STEP_06_FRONT_BACK_DISAGREEMENT_LIST.json": {
+      "current_status": "quarantined_as_part_of_original_package",
+      "recommendation": "restore_authoritative_with_all_seven_blocks_preserved",
+      "reason": "No selected scale, pairing, closure, or interpretation depends on the two invalid coordinates; approved recovery preserves open contact observations."
+    },
+    "manifests/STEP_06_VALIDATION_MANIFEST.json": {
+      "current_status": "quarantined_proof_only",
+      "recommendation": "remain_quarantined_reference_only_for_unaffected_mechanical_checks",
+      "reason": "Its aggregate pass did not detect the two unsupported contact pixels and cannot prove complete source ownership."
+    },
+    "evidence/STEP_06/SM_GIA_BloodAxeCairnstone_A005_STEP_06_FRONT_BACK_MEASUREMENT_EVIDENCE.png": {
+      "current_status": "quarantined_proof",
+      "recommendation": "remain_quarantined_invalid_as_complete_contact_proof",
+      "reason": "Its contact overlay contains the two invalid marks even though the untouched source tiles remain pixel-exact."
+    },
+    "steps/STEP_06_OUTPUT_RECORD.md": {
+      "current_status": "quarantined",
+      "recommendation": "remain_quarantined_superseded_for_completion_authority",
+      "reason": "It incorrectly states that every retained coordinate was audited against the source panel."
+    },
+    "handoffs/STEP_06_TO_STEP_07_HANDOFF.md": {
+      "current_status": "quarantined",
+      "recommendation": "remain_quarantined_superseded_for_completion_authority",
+      "reason": "It declares the uncorrected original package complete and authoritative."
+    }
+  },
+  "approved_composite_authority": {
+    "recommendation": "approved_bounded_recovered_step_06_measurement_authority_without_restoring_the_original_package_as_a_whole",
+    "included_if_approved": [
+      "Step 06 contract as the execution-scope boundary",
+      "front and back calibration records with all four within-view disagreements preserved",
+      "only the explicitly listed non-contact sections of the original front/back measurement manifests",
+      "front and back measurement contract definitions with contact values resolved through Step 06R",
+      "the seven-entry disagreement list with every block preserved",
+      "authoritative Step 06R front/back recovered contact manifests",
+      "this reconsideration manifest and its separately approved output record"
+    ],
+    "excluded_if_approved": [
+      "original front/back contact_line_samples sections",
+      "original Step 06 validation aggregate pass",
+      "original Step 06 evidence board as complete contact proof",
+      "original Step 06 output completion claim",
+      "original Step 06 to Step 07 handoff completion claim"
+    ],
+    "original_package_whole_file_status": "remain_quarantined",
+    "step_07_status": "remain_quarantined_pending_separate_renewed_dependency_audit",
+    "step_08_status": "stopped",
+    "automatic_application_performed": false,
+    "flamestrike_approved_classification_applied": true
+  },
+  "assumptions_or_interpretations": [],
+  "original_source_records_modified": false,
+  "automatic_reclassification_performed": false,
+  "flamestrike_approved_reclassification_applied": true,
+  "step_07_modified_or_restored": false,
+  "step_08_authorized": false,
+  "interpretation_introduced": false,
+  "geometry_created": false,
+  "commit_or_push_performed": false
+}

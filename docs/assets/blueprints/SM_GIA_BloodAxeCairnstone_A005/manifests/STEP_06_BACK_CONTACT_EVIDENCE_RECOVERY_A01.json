@@ -1,0 +1,108 @@
+{
+  "schema": "aerathea.step_06_contact_evidence_recovery.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "recovery_id": "STEP_06R_CONTACT_EVIDENCE_RECOVERY_A01",
+  "view": "back",
+  "date": "2026-07-15",
+  "status": "approved_step_06r_back_contact_evidence",
+  "artifact_classification": "authoritative",
+  "decision": "Preserve the 21 supported back contact samples and replace only the proven external-background CL-002 sample with an exact source-owned sample on the same visible junction.",
+  "authority": {
+    "contract": "steps/STEP_06R_CONTACT_EVIDENCE_RECOVERY_A01_CONTRACT.md",
+    "approval_statement": "approved",
+    "step_04r_semantic_inventory": "manifests/STEP_04_COMPONENT_OWNERSHIP_INVENTORY_RECOVERY_A01.json",
+    "step_05_coordinate_frame": "manifests/STEP_05_PIXEL_COORDINATE_FRAME_RECORD.json",
+    "dependency_audit": "manifests/STEP_05_07_DEPENDENCY_AUDIT_A01.json"
+  },
+  "source_panel": {
+    "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_BACK.png",
+    "file_sha256": "8ceae7f5ccf311ded8822fdd623d2b68009102bc07ceaf66708f59d2a013d271",
+    "pixel_sha256": "9256a8df175cbf54ca0662b11e0c5f5f6be4e670b10a9783efc1d6e9e26a56b1",
+    "size_px": [522, 401],
+    "mode": "RGB",
+    "full_source_offset": [19, 663]
+  },
+  "original_quarantined_manifest": {
+    "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_06_BACK_MEASUREMENT_MANIFEST.json",
+    "sha256": "7d203f0b4993aa5764bf54f3c78109ba0f614cc4b17553a58e3acde07deb1e56",
+    "use": "recovery_evidence_only",
+    "modified": false
+  },
+  "selection_policy": {
+    "method": "manual_native_pixel_source_ownership_and_named_contact_review",
+    "threshold_is_authority": false,
+    "closure_authorized": false,
+    "line_interpolation_authorized": false,
+    "semantic_role_required": true
+  },
+  "counts": {
+    "audited": 22,
+    "retained": 21,
+    "replaced": 1,
+    "unsupported_remaining": 0,
+    "CL-001": 6,
+    "CL-002": 6,
+    "CL-003": 10
+  },
+  "recovered_open_segments": {
+    "CL-001": [[[154, 235], [160, 233], [166, 235]], [[317, 235], [323, 233], [329, 236]]],
+    "CL-002": [[[137, 270], [145, 267], [152, 265]], [[333, 265], [345, 267], [345, 270]]],
+    "CL-003": [[[123, 291], [130, 294], [138, 297]], [[166, 300], [173, 303]], [[307, 303], [315, 300]], [[346, 297], [355, 294], [362, 291]]]
+  },
+  "samples": [
+    {"id":"B-CL-001-S01-P01","contact_id":"CL-001","between":["C-001","C-002"],"segment":1,"point":1,"panel_local":[154,235],"full_source":[173,898],"source_rgb":[159,156,155],"disposition":"retained","review":"pass"},
+    {"id":"B-CL-001-S01-P02","contact_id":"CL-001","between":["C-001","C-002"],"segment":1,"point":2,"panel_local":[160,233],"full_source":[179,896],"source_rgb":[146,139,131],"disposition":"retained","review":"pass"},
+    {"id":"B-CL-001-S01-P03","contact_id":"CL-001","between":["C-001","C-002"],"segment":1,"point":3,"panel_local":[166,235],"full_source":[185,898],"source_rgb":[33,21,19],"disposition":"retained","review":"pass"},
+    {"id":"B-CL-001-S02-P01","contact_id":"CL-001","between":["C-001","C-002"],"segment":2,"point":1,"panel_local":[317,235],"full_source":[336,898],"source_rgb":[24,19,17],"disposition":"retained","review":"pass"},
+    {"id":"B-CL-001-S02-P02","contact_id":"CL-001","between":["C-001","C-002"],"segment":2,"point":2,"panel_local":[323,233],"full_source":[342,896],"source_rgb":[145,141,140],"disposition":"retained","review":"pass"},
+    {"id":"B-CL-001-S02-P03","contact_id":"CL-001","between":["C-001","C-002"],"segment":2,"point":3,"panel_local":[329,236],"full_source":[348,899],"source_rgb":[28,22,19],"disposition":"retained","review":"pass"},
+    {"id":"B-CL-002-S01-P01","contact_id":"CL-002","between":["C-002","C-003"],"segment":1,"point":1,"panel_local":[137,270],"full_source":[156,933],"source_rgb":[147,138,136],"disposition":"retained","review":"pass"},
+    {"id":"B-CL-002-S01-P02","contact_id":"CL-002","between":["C-002","C-003"],"segment":1,"point":2,"panel_local":[145,267],"full_source":[164,930],"source_rgb":[73,71,60],"disposition":"retained","review":"pass"},
+    {"id":"B-CL-002-S01-P03","contact_id":"CL-002","between":["C-002","C-003"],"segment":1,"point":3,"panel_local":[152,265],"full_source":[171,928],"source_rgb":[97,93,90],"disposition":"retained","review":"pass"},
+    {"id":"B-CL-002-S02-P01","contact_id":"CL-002","between":["C-002","C-003"],"segment":2,"point":1,"panel_local":[333,265],"full_source":[352,928],"source_rgb":[86,87,86],"disposition":"retained","review":"pass"},
+    {"id":"B-CL-002-S02-P02","contact_id":"CL-002","between":["C-002","C-003"],"segment":2,"point":2,"panel_local":[345,267],"full_source":[364,930],"source_rgb":[226,228,230],"disposition":"retained","review":"pass"},
+    {"id":"B-CL-002-S02-P03","contact_id":"CL-002","between":["C-002","C-003"],"segment":2,"point":3,"panel_local":[345,270],"full_source":[364,933],"source_rgb":[165,166,164],"disposition":"replacement","review":"pass"},
+    {"id":"B-CL-003-S01-P01","contact_id":"CL-003","between":["C-003","C-004"],"segment":1,"point":1,"panel_local":[123,291],"full_source":[142,954],"source_rgb":[111,111,102],"disposition":"retained","review":"pass"},
+    {"id":"B-CL-003-S01-P02","contact_id":"CL-003","between":["C-003","C-004"],"segment":1,"point":2,"panel_local":[130,294],"full_source":[149,957],"source_rgb":[37,36,30],"disposition":"retained","review":"pass"},
+    {"id":"B-CL-003-S01-P03","contact_id":"CL-003","between":["C-003","C-004"],"segment":1,"point":3,"panel_local":[138,297],"full_source":[157,960],"source_rgb":[32,25,21],"disposition":"retained","review":"pass"},
+    {"id":"B-CL-003-S02-P01","contact_id":"CL-003","between":["C-003","C-004"],"segment":2,"point":1,"panel_local":[166,300],"full_source":[185,963],"source_rgb":[0,0,0],"disposition":"retained","review":"pass"},
+    {"id":"B-CL-003-S02-P02","contact_id":"CL-003","between":["C-003","C-004"],"segment":2,"point":2,"panel_local":[173,303],"full_source":[192,966],"source_rgb":[3,0,0],"disposition":"retained","review":"pass"},
+    {"id":"B-CL-003-S03-P01","contact_id":"CL-003","between":["C-003","C-004"],"segment":3,"point":1,"panel_local":[307,303],"full_source":[326,966],"source_rgb":[55,47,43],"disposition":"retained","review":"pass"},
+    {"id":"B-CL-003-S03-P02","contact_id":"CL-003","between":["C-003","C-004"],"segment":3,"point":2,"panel_local":[315,300],"full_source":[334,963],"source_rgb":[26,5,8],"disposition":"retained","review":"pass"},
+    {"id":"B-CL-003-S04-P01","contact_id":"CL-003","between":["C-003","C-004"],"segment":4,"point":1,"panel_local":[346,297],"full_source":[365,960],"source_rgb":[70,66,64],"disposition":"retained","review":"pass"},
+    {"id":"B-CL-003-S04-P02","contact_id":"CL-003","between":["C-003","C-004"],"segment":4,"point":2,"panel_local":[355,294],"full_source":[374,957],"source_rgb":[48,47,40],"disposition":"retained","review":"pass"},
+    {"id":"B-CL-003-S04-P03","contact_id":"CL-003","between":["C-003","C-004"],"segment":4,"point":3,"panel_local":[362,291],"full_source":[381,954],"source_rgb":[184,187,184],"disposition":"retained","review":"pass"}
+  ],
+  "replacement": {
+    "contact_id": "CL-002",
+    "original_panel_local": [355, 271],
+    "original_source_rgb": [249, 249, 249],
+    "original_classification": "invalid_external_white_background_pixel",
+    "recovered_panel_local": [345, 270],
+    "recovered_full_source": [364, 933],
+    "recovered_source_rgb": [165, 166, 164],
+    "recovered_role": "directly_visible_source_owned_C-002_C-003_junction_pixel"
+  },
+  "semantic_review": {
+    "result": "pass",
+    "reviewed_samples": 22,
+    "source_owned": 22,
+    "declared_contact_role_supported": 22,
+    "additional_drift_found": false
+  },
+  "flamestrike_output_approval": {
+    "date": "2026-07-15",
+    "statement": "approved",
+    "result": "pass",
+    "scope": "Recovered back contact evidence only; 21 retained samples and one replacement sample.",
+    "classification": "authoritative_recovered_contact_evidence",
+    "pre_classification_checkpoint": "Saved/ProjectRecovery/20260715-192306/",
+    "original_step_06_restoration_authorized": false,
+    "step_07_authorized": false,
+    "step_08_authorized": false,
+    "commit_push_authorized": false
+  },
+  "interpretation_introduced": false,
+  "geometry_created": false,
+  "step_06_restoration_authorized": false
+}

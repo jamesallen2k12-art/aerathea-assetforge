@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A005 Artifact Index
 
-Status: Step 04R approved; dependency audit pending mandatory restart
+Status: Step 08R exact top evidence approved; all footprints, centers, and interpretation remain blocked
 
 Artifact classification: `authoritative`
 
@@ -9,8 +9,13 @@ Updated: 2026-07-15
 ## Core Recovery Override - 2026-07-15
 
 This section supersedes conflicting historical classifications below. Step
-04R is approved; the override remains active while Step 05-07 await a separate
-dependency audit.
+04R, Dependency Audit A01, Step 06R recovered contact evidence, and the bounded
+Step 06Q, Step 07R, and Step 08R classifications are approved. Step 05 and the
+bounded Step 06/07 measurement authority sets are restored through their
+recovery overrides. Step 08R adds exact top calibration/contact authority with
+all closed footprints and centers blocked. The original Step 06 and Step 07
+packages remain quarantined as wholes, and the original Step 07 downstream
+handoff remains quarantined/superseded.
 
 | Artifact or group | Current status | Recovery role |
 |---|---|---|
@@ -21,15 +26,47 @@ dependency audit.
 | Step 04 embedded top contact coordinates | `invalid` | Includes white background pixels |
 | Step 04 top evidence board | `quarantined; invalid as source-bounded proof` | Preserved affected proof |
 | Original Step 04 validation/output/handoff completion claims | `quarantined/superseded` | Preserved drifted completion authority |
-| Step 05-07 records | `quarantined/suspended pending dependency audit` | Not declared invalid; cannot be used as authority |
-| Approved Step 08 contract | `suspended by Core Recovery` | No tracked Step 08 output exists |
+| Step 05 records | `authoritative within prior approved boundaries` | Restored by approved Dependency Audit A01; no numeric geometry or physical pairing authority |
+| Bounded recovered Step 06 authority set | `authoritative` | Step 06Q names the accepted unaffected records/sections and resolves all contact values through Step 06R |
+| Original Step 06 package as a whole | `quarantined` | Two original CL-002 observations and the affected proof/completion chain remain invalid or superseded; the package is not restored wholesale |
+| Bounded recovered Step 07 measurement authority set | `authoritative` | Step 07R accepts the source-linked calibration, measurement, contract, disagreement, and named output sections while preserving all blocks |
+| Original Step 07 package as a whole | `quarantined` | The output `Next Gate` and downstream handoff are superseded; the package is not restored wholesale |
+| Original approved Step 08 boundary | `suspended/superseded historical boundary` | Core Recovery stopped it before any tracked output existed |
 | `steps/STEP_04R_TOP_CONTACT_EVIDENCE_RECOVERY_A01_CONTRACT.md` | `authoritative` | Flamestrike-approved recovery execution boundary |
 | `manifests/STEP_04_COMPONENT_OWNERSHIP_INVENTORY_RECOVERY_A01.json` | `authoritative` | Approved preserved semantics with recovered top-contact override |
 | `manifests/STEP_04_TOP_CONTACT_EVIDENCE_RECOVERY_A01.json` | `authoritative` | Approved 48 exact discrete contact observations |
 | `evidence/STEP_04_RECOVERY/SM_GIA_BloodAxeCairnstone_A005_STEP_04_TOP_OWNERSHIP_EVIDENCE_RECOVERY_A01.png` | `proof only` | Untouched source plus exact unfilled recovered marks |
 | `manifests/STEP_04_TOP_CONTACT_EVIDENCE_RECOVERY_A01_VALIDATION.json` | `proof only` | 24 builder validators plus 30 independent audit checks pass |
 | `steps/STEP_04R_TOP_CONTACT_EVIDENCE_RECOVERY_A01_OUTPUT_RECORD.md` | `authoritative` | Flamestrike-approved recovery decision record |
-| `handoffs/STEP_04R_TO_STEP_05_07_DEPENDENCY_AUDIT_HANDOFF.md` | `authoritative` | Mandatory-restart handoff; dependency audit remains unauthorized |
+| `handoffs/STEP_04R_TO_STEP_05_07_DEPENDENCY_AUDIT_HANDOFF.md` | `authoritative historical handoff` | Restart boundary satisfied; superseded by approved Dependency Audit A01 |
+| `steps/STEP_05_07_DEPENDENCY_AUDIT_A01_CONTRACT.md` | `authoritative` | Flamestrike-approved dependency-audit execution boundary |
+| `manifests/STEP_05_07_DEPENDENCY_AUDIT_A01.json` | `authoritative` | Approved per-step classification and Step 06 drift decision |
+| `manifests/STEP_05_07_DEPENDENCY_AUDIT_A01_VALIDATION.json` | `proof only` | Hash, lineage, coordinate, and native-pixel audit evidence |
+| `steps/STEP_05_07_DEPENDENCY_AUDIT_A01_OUTPUT_RECORD.md` | `authoritative` | Approved restoration/quarantine decision record |
+| `steps/STEP_06R_CONTACT_EVIDENCE_RECOVERY_A01_CONTRACT.md` | `authoritative for execution scope` | Approved contact-only recovery boundary |
+| `manifests/STEP_06_FRONT_CONTACT_EVIDENCE_RECOVERY_A01.json` | `authoritative` | Approved 21-sample recovered front contact evidence |
+| `manifests/STEP_06_BACK_CONTACT_EVIDENCE_RECOVERY_A01.json` | `authoritative` | Approved 22-sample recovered back contact evidence |
+| `evidence/STEP_06_RECOVERY/SM_GIA_BloodAxeCairnstone_A005_STEP_06_FRONT_BACK_CONTACT_EVIDENCE_RECOVERY_A01.png` | `proof only` | Untouched panels, discrete recovered marks, and replacement insets |
+| `manifests/STEP_06_CONTACT_EVIDENCE_RECOVERY_A01_VALIDATION.json` | `proof only` | Approved recovery validation evidence; 43 samples audited, zero unsupported remaining |
+| `steps/STEP_06R_CONTACT_EVIDENCE_RECOVERY_A01_OUTPUT_RECORD.md` | `authoritative` | Approved recovered-contact classification record; original Step 06 remains quarantined |
+| `steps/STEP_06Q_QUARANTINE_RECONSIDERATION_A01_CONTRACT.md` | `authoritative for execution scope` | Approved read-only quarantine-reconsideration boundary |
+| `manifests/STEP_06Q_QUARANTINE_RECONSIDERATION_A01.json` | `authoritative` | Approved field-bounded recovered Step 06 classification |
+| `manifests/STEP_06Q_QUARANTINE_RECONSIDERATION_A01_VALIDATION.json` | `proof only` | Integrity, dependency, comparison, and classification evidence |
+| `steps/STEP_06Q_QUARANTINE_RECONSIDERATION_A01_OUTPUT_RECORD.md` | `authoritative` | Approved bounded recovered Step 06 decision record |
+| `steps/STEP_07R_RENEWED_DEPENDENCY_AUDIT_A01_CONTRACT.md` | `authoritative for execution scope` | Approved read-only renewed dependency-audit boundary |
+| `manifests/STEP_07R_RENEWED_DEPENDENCY_AUDIT_A01.json` | `authoritative` | Approved bounded recovered Step 07 measurement classification |
+| `manifests/STEP_07R_RENEWED_DEPENDENCY_AUDIT_A01_VALIDATION.json` | `proof only` | Hash, formula, dependency, native-pixel, overlap, and classification evidence |
+| `steps/STEP_07R_RENEWED_DEPENDENCY_AUDIT_A01_OUTPUT_RECORD.md` | `authoritative` | Approved bounded recovered Step 07 decision record |
+| `steps/STEP_08R_CORE_REASSESSED_TOP_EXACT_MEASUREMENT_A01_CONTRACT.md` | `authoritative for execution scope` | Approved renewed top exact-measurement boundary and A005-only closeout amendment |
+| `manifests/STEP_08R_TOP_CALIBRATION_RECORD.json` | `authoritative` | Four independent top calibrations; no unified scale |
+| `manifests/STEP_08R_TOP_MEASUREMENT_MANIFEST.json` | `authoritative` | Four direct dimensions and 48 reverified discrete contacts; no closure |
+| `manifests/STEP_08R_TOP_PERIMETER_CENTER_MANIFEST.json` | `authoritative blocked decision record` | No filled footprint, perimeter, center, origin, or pivot authorized |
+| `manifests/STEP_08R_TOP_SECTOR_CLASSIFICATION.json` | `authoritative` | Visible discrete contact sectors accepted; occluded/ambiguous closure blocked |
+| `manifests/STEP_08R_TOP_DISAGREEMENT_LIST.json` | `authoritative` | Four top calibration disagreements preserved without selection or averaging |
+| `evidence/STEP_08R/SM_GIA_BloodAxeCairnstone_A005_STEP_08R_TOP_MEASUREMENT_EVIDENCE.png` | `proof only` | Untouched top panel and exact unfilled calibration/contact marks |
+| `manifests/STEP_08R_VALIDATION_MANIFEST.json` | `proof only` | 37 checks pass; source tile remains pixel-exact |
+| `steps/STEP_08R_OUTPUT_RECORD.md` | `authoritative` | Approved exact top evidence and blocked perimeter/center decision |
+| `handoffs/STEP_08R_TO_STEP_09_HANDOFF.md` | `authoritative` | Mandatory-restart handoff; Step 09 remains unauthorized |
 
 | Artifact | Status | Role |
 |---|---|---|
@@ -96,18 +133,28 @@ dependency audit.
 | `steps/STEP_06_OUTPUT_RECORD.md` | `authoritative` | Approved front/back exact pixel-measurement decision record |
 | `manifests/STEP_06_VALIDATION_MANIFEST.json` | `proof only` | Focused deterministic Step 06 validation; 28 validators pass |
 | `handoffs/STEP_06_TO_STEP_07_HANDOFF.md` | `authoritative` | Restart-safe approved handoff; Step 07 remains unauthorized |
-| `steps/STEP_07_CONTRACT.md` | `authoritative` | Flamestrike-approved Step 07 execution boundary |
-| `manifests/STEP_07_LEFT_CALIBRATION_RECORD.json` | `authoritative` | Four exact left source-span calibration observations with Y/Z disagreements preserved |
-| `manifests/STEP_07_RIGHT_CALIBRATION_RECORD.json` | `authoritative` | Four exact right source-span calibration observations with Y/Z disagreements preserved |
-| `manifests/STEP_07_LEFT_MEASUREMENT_MANIFEST.json` | `authoritative` | Approved left pixel-space row, C-004 edge, contact, and feature measurements |
-| `manifests/STEP_07_RIGHT_MEASUREMENT_MANIFEST.json` | `authoritative` | Approved right pixel-space row, C-004 edge, contact, and feature measurements |
-| `manifests/STEP_07_LEFT_MEASUREMENT_CONTRACTS.json` | `authoritative` | Formula-linked left feature contracts with world conversion blocked |
-| `manifests/STEP_07_RIGHT_MEASUREMENT_CONTRACTS.json` | `authoritative` | Formula-linked right feature contracts with world conversion blocked |
-| `manifests/STEP_07_LEFT_RIGHT_DISAGREEMENT_LIST.json` | `authoritative` | Seven approved blocked disagreement entries; no averaging, pairing, or visual thickness fitting |
-| `evidence/STEP_07/SM_GIA_BloodAxeCairnstone_A005_STEP_07_LEFT_RIGHT_MEASUREMENT_EVIDENCE.png` | `proof only` | Paired exact source and unfilled measurement-mark copies for left and right |
-| `steps/STEP_07_OUTPUT_RECORD.md` | `authoritative` | Approved left/right exact pixel-measurement decision record |
-| `manifests/STEP_07_VALIDATION_MANIFEST.json` | `proof only` | Focused deterministic Step 07 validation; 31 validators pass |
-| `handoffs/STEP_07_TO_STEP_08_HANDOFF.md` | `authoritative` | Restart-safe approved handoff; Step 08 remains unauthorized |
+| `steps/STEP_07_CONTRACT.md` | `authoritative for execution scope through Step 07R` | Flamestrike-approved Step 07 execution boundary; front/back coordinate reuse remained forbidden |
+| `manifests/STEP_07_LEFT_CALIBRATION_RECORD.json` | `authoritative through Step 07R` | Four exact left source-span calibration observations with Y/Z disagreements preserved |
+| `manifests/STEP_07_RIGHT_CALIBRATION_RECORD.json` | `authoritative through Step 07R` | Four exact right source-span calibration observations with Y/Z disagreements preserved |
+| `manifests/STEP_07_LEFT_MEASUREMENT_MANIFEST.json` | `authoritative through Step 07R override` | Source-linked left measurements; six older endpoint overlaps disclosed without an independent-derivation claim |
+| `manifests/STEP_07_RIGHT_MEASUREMENT_MANIFEST.json` | `authoritative through Step 07R override` | Source-linked right measurements; four older endpoint overlaps disclosed without an independent-derivation claim |
+| `manifests/STEP_07_LEFT_MEASUREMENT_CONTRACTS.json` | `authoritative through Step 07R` | Formula-linked left feature contracts with world conversion blocked |
+| `manifests/STEP_07_RIGHT_MEASUREMENT_CONTRACTS.json` | `authoritative through Step 07R` | Formula-linked right feature contracts with world conversion blocked |
+| `manifests/STEP_07_LEFT_RIGHT_DISAGREEMENT_LIST.json` | `authoritative through Step 07R` | Seven blocked disagreement entries; no averaging, pairing, or visual thickness fitting |
+| `evidence/STEP_07/SM_GIA_BloodAxeCairnstone_A005_STEP_07_LEFT_RIGHT_MEASUREMENT_EVIDENCE.png` | `proof only through Step 07R` | Both source tiles remain pixel-exact; mark-only measurement proof |
+| `steps/STEP_07_OUTPUT_RECORD.md` | `whole file quarantined; named headings authoritative through Step 07R` | Measurement and historical approval sections are accepted; `Next Gate` is superseded |
+| `manifests/STEP_07_VALIDATION_MANIFEST.json` | `proof only through Step 07R` | Historical validation corroborated by 35 renewed audit validators |
+| `handoffs/STEP_07_TO_STEP_08_HANDOFF.md` | `quarantined/superseded` | Broad original Step 06 wording and downstream Step 08 gate are not current authority |
+| `steps/STEP_08R_CORE_REASSESSED_TOP_EXACT_MEASUREMENT_A01_CONTRACT.md` | `authoritative for execution scope` | Core-reassessed top measurement and dependency-complete A005 closeout boundary |
+| `manifests/STEP_08R_TOP_CALIBRATION_RECORD.json` | `authoritative` | Four independent top calibration observations with no unified scale |
+| `manifests/STEP_08R_TOP_MEASUREMENT_MANIFEST.json` | `authoritative` | Direct dimensions and 48 reverified contacts; closure remains blocked |
+| `manifests/STEP_08R_TOP_PERIMETER_CENTER_MANIFEST.json` | `authoritative blocked decision record` | No exact filled region, perimeter, center, origin, or pivot exists |
+| `manifests/STEP_08R_TOP_SECTOR_CLASSIFICATION.json` | `authoritative` | Exact discrete contact sectors and preserved blocked sectors |
+| `manifests/STEP_08R_TOP_DISAGREEMENT_LIST.json` | `authoritative` | Four unresolved top calibration disagreements |
+| `evidence/STEP_08R/SM_GIA_BloodAxeCairnstone_A005_STEP_08R_TOP_MEASUREMENT_EVIDENCE.png` | `proof only` | Pixel-exact source tile with unfilled marks only |
+| `manifests/STEP_08R_VALIDATION_MANIFEST.json` | `proof only` | Approved output validation; 37 checks pass |
+| `steps/STEP_08R_OUTPUT_RECORD.md` | `authoritative` | Approved Step 08R decision record |
+| `handoffs/STEP_08R_TO_STEP_09_HANDOFF.md` | `authoritative` | Restart boundary; Step 09 contract only after resume |
 
 ## Legacy Classification
 

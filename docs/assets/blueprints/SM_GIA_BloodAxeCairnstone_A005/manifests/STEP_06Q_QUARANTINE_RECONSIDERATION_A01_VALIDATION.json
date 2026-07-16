@@ -1,0 +1,109 @@
+{
+  "schema": "aerathea.step_06_quarantine_reconsideration_validation.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "audit_id": "STEP_06Q_QUARANTINE_RECONSIDERATION_A01",
+  "date": "2026-07-15",
+  "status": "approved_classification_validation_evidence",
+  "artifact_classification": "proof only",
+  "aggregate_result": "pass_approved_bounded_recovered_step_06_authority",
+  "authority_boundary": "Validates only the approved Step 06Q bounded classification record. The approval applies that bounded classification but does not restore the original Step 06 package as a whole, restore Step 07, authorize Step 08, or authorize production work.",
+  "inputs": {
+    "contract": {
+      "path": "steps/STEP_06Q_QUARANTINE_RECONSIDERATION_A01_CONTRACT.md",
+      "sha256": "eb0cb65359133c8a290c2c4be96623c8a94abf3bea85f780e5a3183b4ec935ee"
+    },
+    "audit_manifest": {
+      "path": "manifests/STEP_06Q_QUARANTINE_RECONSIDERATION_A01.json",
+      "sha256": "92692980c8dbcaa81c01c36e35cdfb2e377d6bc13da000bf09702947b3bbb2d3"
+    },
+    "approved_authority_hashes_match": true,
+    "original_step_06_artifact_hashes_match": true,
+    "original_step_06_artifacts_checked": 12
+  },
+  "contact_comparison": {
+    "original_count": 43,
+    "recovered_count": 43,
+    "unchanged_count": 41,
+    "changed_count": 2,
+    "front_changed_positions": [
+      {
+        "sequence_index_zero_based": 10,
+        "original": [372, 360],
+        "recovered": [371, 360]
+      }
+    ],
+    "back_changed_positions": [
+      {
+        "sequence_index_zero_based": 11,
+        "original": [355, 271],
+        "recovered": [345, 270]
+      }
+    ],
+    "invalid_original_coordinates_absent_from_recovery": true,
+    "all_other_positions_identical": true
+  },
+  "dependency_validation": {
+    "invalid_pair_occurrences_in_original_structured_text_records": 2,
+    "invalid_pairs_confined_to_front_back_contact_arrays": true,
+    "calibration_value_dependency": false,
+    "height_station_value_dependency": false,
+    "outer_edge_row_value_dependency": false,
+    "irregular_C004_value_dependency": false,
+    "feature_landmark_value_dependency": false,
+    "measurement_contract_embedded_coordinate_dependency": false,
+    "disagreement_value_dependency": false,
+    "proof_completion_chain_affected": true,
+    "consolidated_scale_created": false,
+    "derived_world_measurement_created": false
+  },
+  "classification_validation": {
+    "whole_original_package_recommended_restored": false,
+    "original_measurement_manifests_recommended_whole_file_restored": false,
+    "original_validation_recommended_as_complete_proof": false,
+    "original_board_recommended_as_complete_proof": false,
+    "original_output_or_handoff_recommended_as_completion_authority": false,
+    "bounded_non_contact_sections_named_by_json_pointer": true,
+    "contact_value_authority_points_to_approved_step_06r_manifests": true,
+    "all_seven_disagreements_remain_blocked": true,
+    "step_07_remains_quarantined": true,
+    "step_08_remains_stopped": true,
+    "automatic_classification_application_performed": false
+  },
+  "validators": [
+    {"id": "contract_approval_scope", "result": "pass"},
+    {"id": "contract_hash", "result": "pass"},
+    {"id": "audit_manifest_hash", "result": "pass"},
+    {"id": "json_outputs_parse", "result": "pass", "files": 2},
+    {"id": "approved_authority_input_hashes", "result": "pass", "files": 6},
+    {"id": "original_step_06_artifact_integrity", "result": "pass", "files": 12},
+    {"id": "all_43_original_and_recovered_contacts_compared", "result": "pass"},
+    {"id": "exactly_41_contacts_retained", "result": "pass"},
+    {"id": "exactly_two_approved_replacements", "result": "pass"},
+    {"id": "invalid_coordinates_absent_from_recovery", "result": "pass"},
+    {"id": "invalid_pair_structured_occurrences_confined_to_contact_arrays", "result": "pass", "count": 2},
+    {"id": "unaffected_value_dependencies", "result": "pass"},
+    {"id": "whole_mixed_validity_files_not_restored", "result": "pass"},
+    {"id": "proof_and_completion_claims_remain_quarantined", "result": "pass"},
+    {"id": "blocked_disagreements_preserved", "result": "pass", "count": 7},
+    {"id": "source_records_unchanged", "result": "pass"},
+    {"id": "step_07_unchanged_and_quarantined", "result": "pass"},
+    {"id": "step_08_stopped_no_output", "result": "pass"},
+    {"id": "interpretation_and_geometry_absent", "result": "pass"},
+    {"id": "commit_and_push_absent", "result": "pass"}
+  ],
+  "approved_classification": "Bounded recovered Step 06 measurement authority composed of the unaffected named records/sections plus the approved Step 06R contact manifests. The original Step 06 package remains quarantined as a whole.",
+  "flamestrike_output_approval": {
+    "statement": "approved",
+    "date": "2026-07-15",
+    "scope": "Bounded recovered Step 06 measurement authority; original Step 06 package remains quarantined as a whole.",
+    "pre_classification_checkpoint": "Saved/ProjectRecovery/20260715-195001/"
+  },
+  "source_records_modified": false,
+  "automatic_reclassification_performed": false,
+  "flamestrike_approved_classification_applied": true,
+  "step_07_authorized": false,
+  "step_08_authorized": false,
+  "interpretation_introduced": false,
+  "geometry_created": false,
+  "commit_or_push_performed": false
+}

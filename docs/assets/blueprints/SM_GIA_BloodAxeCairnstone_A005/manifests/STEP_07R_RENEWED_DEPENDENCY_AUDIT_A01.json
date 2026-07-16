@@ -1,0 +1,271 @@
+{
+  "schema": "aerathea.step_07_renewed_dependency_audit.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "audit_id": "STEP_07R_RENEWED_DEPENDENCY_AUDIT_A01",
+  "date": "2026-07-15",
+  "status": "approved_bounded_recovered_step_07_measurement_authority",
+  "artifact_classification": "authoritative",
+  "decision": "Apply bounded recovered Step 07 measurement authority without restoring the original Step 07 package as a whole or restoring its downstream handoff.",
+  "approval": {
+    "approver": "Flamestrike",
+    "statement": "approved",
+    "date": "2026-07-15",
+    "scope": "Exact renewed Step 07 dependency-audit contract presented after the Core resume handshake",
+    "output_approval": {
+      "statement": "approved",
+      "date": "2026-07-15",
+      "scope": "Apply the exact bounded recovered Step 07 measurement classification while keeping the original package and downstream handoff quarantined and Step 08 stopped.",
+      "pre_classification_checkpoint": "Saved/ProjectRecovery/20260715-212847/"
+    }
+  },
+  "checkpoints": {
+    "pre_action": "Saved/ProjectRecovery/20260715-211549/"
+  },
+  "authority_input_hashes": {
+    "step_04r_semantic_inventory": "f472f5bb749eda8ffb27809658d4afd3f5fc732ddcf7d4fcb1275492c1e7d755",
+    "step_04r_top_contacts": "8f9fb86ef631e5785552a61f61e4a2d3085727f1a667bdf59cf904284b1b2eb0",
+    "step_05_coordinate_frame": "ccfce6b8316369b512ff83eee11fd4385dd15b546f7b92da9e80b9e7ed959d1d",
+    "step_05_orientation_registration": "b7efa865e8b82f63e714d36ed4935fc02515ecc3f4d355941467f20b49348395",
+    "step_06r_front_contacts": "534b89f2d37fabcd7bdc3aa95d4ec9e368b0abab13307e80c1c075aeee1212f2",
+    "step_06r_back_contacts": "36f65a8873ce8c430d1e6156e07492bb01a45f6e6cd31515d9326ce44ac935af",
+    "step_06q_bounded_authority": "92692980c8dbcaa81c01c36e35cdfb2e377d6bc13da000bf09702947b3bbb2d3",
+    "step_06q_output": "e315174751cca3ef2a36083315b1f409e5a8321e07e2fe8ac91f7c77e0715a47",
+    "step_03_left_panel": "52212ba783d026a008929e3946cac934281de7d2daec2ada316205059258cba4",
+    "step_03_right_panel": "cc6c27405fbd6ea8c46b70966fe559acbd57acb88e58bfdcd6b763ce827a862e"
+  },
+  "original_step_07_artifact_hashes": {
+    "steps/STEP_07_CONTRACT.md": "40419f12beb589cd3997341651f552763919a2430e1f2e16ad6ff35fe8ad17c3",
+    "manifests/STEP_07_LEFT_CALIBRATION_RECORD.json": "df9f379a26e71152808ef1e975ef7bab12eb25ac2a19960752a1976bfde37bc2",
+    "manifests/STEP_07_RIGHT_CALIBRATION_RECORD.json": "3d7c8a32d82fca202da710cf4209f42e443c4be8fad7a4b79caeccc244d6a76c",
+    "manifests/STEP_07_LEFT_MEASUREMENT_MANIFEST.json": "e08d868925967a05d465cecadc4810a3f3e2b3cdb5be342e32ebdd807e0e9725",
+    "manifests/STEP_07_RIGHT_MEASUREMENT_MANIFEST.json": "72cf8758a1a73b36a653635512267ed84c363620459f2a3953179527f31f19bc",
+    "manifests/STEP_07_LEFT_MEASUREMENT_CONTRACTS.json": "92b9ff907ec3ca5c1fe0b894363bd801b5a5c7cb79aa1a5e3b5e3dcb4ea043dc",
+    "manifests/STEP_07_RIGHT_MEASUREMENT_CONTRACTS.json": "45c0a392af1e2bd7387b08e5ca8ad6e6d52c98cb2b3b0a681b05b7d2b943a0fc",
+    "manifests/STEP_07_LEFT_RIGHT_DISAGREEMENT_LIST.json": "238ee8da9eb0228aa1c4388d544e376b63e9a1376091e0ea49d2c4ec95ae59f4",
+    "manifests/STEP_07_VALIDATION_MANIFEST.json": "3feed4bc857d1529d75a0104311a4ca878dafa06a7dd313fae181adfeb913f46",
+    "evidence/STEP_07/SM_GIA_BloodAxeCairnstone_A005_STEP_07_LEFT_RIGHT_MEASUREMENT_EVIDENCE.png": "9603adc4d4af7f8550509c1bc5f2a6ec17ec9b8495243564d3479776f00bca02",
+    "steps/STEP_07_OUTPUT_RECORD.md": "abea560fa0c5f1a14309fcafb56147a41586273acebb6598793494d6d4c32b2a",
+    "handoffs/STEP_07_TO_STEP_08_HANDOFF.md": "20844e5122fe4ecbc17a90f3e2ea527d07ca290a7fd6f855c98add6faa164d8c"
+  },
+  "integrity_finding": {
+    "original_artifacts_checked": 12,
+    "hashes_matching": 12,
+    "hashes_failed": 0,
+    "json_records_parsed": 7,
+    "original_step_07_files_modified": false
+  },
+  "step_06_dependency_trace": {
+    "step_07_contract_reference": "Uses Step 06 only for established controls, status, and blockers and explicitly forbids front/back coordinate or calibration reuse.",
+    "step_07_handoff_reference": "Broadly names approved Step 06 front/back measurements and disagreements as allowed authority.",
+    "structured_step_07_measurement_records_with_step_06_path_or_hash_dependency": 0,
+    "invalid_original_step_06_front_pixel_372_360_found": false,
+    "invalid_original_step_06_back_pixel_355_271_found": false,
+    "original_step_06_validation_path_found": false,
+    "original_step_06_output_path_found": false,
+    "original_step_06_to_step_07_handoff_path_found": false,
+    "current_dependency_resolution": "The Step 07 execution contract's control/status/blocker dependency is supported by the approved bounded Step 06Q authority and Step 06R contacts. The original Step 07-to-Step 08 handoff remains overbroad because it does not state the bounded Step 06 override and advances a superseded downstream gate.",
+    "finding": "No invalid Step 06 coordinate or invalid Step 06 completion-chain artifact propagates into Step 07 measurement values. Measurement values are linked directly to authoritative left/right panels."
+  },
+  "focused_structural_audit": {
+    "calibration_observations": 8,
+    "calibration_formulas_replayed": 8,
+    "visible_row_samples": 26,
+    "row_width_and_profile_center_formulas_replayed": 26,
+    "irregular_C004_observations": 8,
+    "contact_samples": 36,
+    "appearance_landmarks": 20,
+    "measurement_contracts": 24,
+    "measurement_contract_references_resolved": 24,
+    "blocked_disagreement_entries": 7,
+    "selected_or_averaged_disagreement_values": 0,
+    "coordinate_or_formula_issues": 0,
+    "consolidated_scale_created": false,
+    "derived_world_measurement_created": false,
+    "hidden_closure_created": false
+  },
+  "evidence_board_audit": {
+    "left_source_tile": {
+      "board_origin_px": [18, 82],
+      "changed_pixels": 0,
+      "max_rgb_delta": 0
+    },
+    "right_source_tile": {
+      "board_origin_px": [18, 533],
+      "changed_pixels": 0,
+      "max_rgb_delta": 0
+    },
+    "candidate_fill_present": false,
+    "classification": "proof_only"
+  },
+  "native_contact_pixel_audit": {
+    "samples_checked": 36,
+    "left_samples": 18,
+    "right_samples": 18,
+    "minimum_native_channel_value": 0,
+    "maximum_native_channel_value": 81,
+    "external_white_or_near_white_background_samples_found": 0,
+    "finding": "All 36 recorded coordinates are dark source-visible interface pixels in the authoritative left/right panels. None resembles the rejected Step 06 external background observations, whose RGB values were 235/237/238 and 249/249/249.",
+    "samples": [
+      {"view":"left","contact_id":"CL-001","segment":0,"index":0,"pixel":[190,237],"rgb":[22,22,14]},
+      {"view":"left","contact_id":"CL-001","segment":0,"index":1,"pixel":[205,238],"rgb":[26,26,23]},
+      {"view":"left","contact_id":"CL-001","segment":0,"index":2,"pixel":[215,238],"rgb":[29,2,4]},
+      {"view":"left","contact_id":"CL-001","segment":1,"index":0,"pixel":[245,238],"rgb":[23,20,18]},
+      {"view":"left","contact_id":"CL-001","segment":1,"index":1,"pixel":[260,238],"rgb":[13,14,12]},
+      {"view":"left","contact_id":"CL-001","segment":1,"index":2,"pixel":[275,237],"rgb":[34,4,3]},
+      {"view":"left","contact_id":"CL-002","segment":0,"index":0,"pixel":[161,262],"rgb":[7,7,6]},
+      {"view":"left","contact_id":"CL-002","segment":0,"index":1,"pixel":[175,262],"rgb":[28,23,21]},
+      {"view":"left","contact_id":"CL-002","segment":0,"index":2,"pixel":[196,264],"rgb":[24,18,18]},
+      {"view":"left","contact_id":"CL-002","segment":1,"index":0,"pixel":[277,262],"rgb":[12,0,2]},
+      {"view":"left","contact_id":"CL-002","segment":1,"index":1,"pixel":[294,263],"rgb":[9,8,6]},
+      {"view":"left","contact_id":"CL-002","segment":1,"index":2,"pixel":[311,261],"rgb":[47,45,45]},
+      {"view":"left","contact_id":"CL-003","segment":0,"index":0,"pixel":[128,292],"rgb":[71,62,57]},
+      {"view":"left","contact_id":"CL-003","segment":0,"index":1,"pixel":[132,293],"rgb":[51,46,46]},
+      {"view":"left","contact_id":"CL-003","segment":0,"index":2,"pixel":[145,293],"rgb":[17,7,4]},
+      {"view":"left","contact_id":"CL-003","segment":1,"index":0,"pixel":[315,292],"rgb":[35,31,30]},
+      {"view":"left","contact_id":"CL-003","segment":1,"index":1,"pixel":[328,292],"rgb":[5,4,3]},
+      {"view":"left","contact_id":"CL-003","segment":1,"index":2,"pixel":[335,291],"rgb":[71,70,66]},
+      {"view":"right","contact_id":"CL-001","segment":0,"index":0,"pixel":[135,225],"rgb":[34,29,23]},
+      {"view":"right","contact_id":"CL-001","segment":0,"index":1,"pixel":[150,226],"rgb":[37,15,14]},
+      {"view":"right","contact_id":"CL-001","segment":0,"index":2,"pixel":[165,226],"rgb":[47,37,36]},
+      {"view":"right","contact_id":"CL-001","segment":1,"index":0,"pixel":[205,226],"rgb":[25,8,6]},
+      {"view":"right","contact_id":"CL-001","segment":1,"index":1,"pixel":[220,225],"rgb":[9,8,7]},
+      {"view":"right","contact_id":"CL-001","segment":1,"index":2,"pixel":[235,225],"rgb":[44,37,39]},
+      {"view":"right","contact_id":"CL-002","segment":0,"index":0,"pixel":[110,248],"rgb":[73,65,66]},
+      {"view":"right","contact_id":"CL-002","segment":0,"index":1,"pixel":[127,249],"rgb":[63,45,38]},
+      {"view":"right","contact_id":"CL-002","segment":0,"index":2,"pixel":[144,250],"rgb":[63,55,51]},
+      {"view":"right","contact_id":"CL-002","segment":1,"index":0,"pixel":[221,250],"rgb":[73,56,50]},
+      {"view":"right","contact_id":"CL-002","segment":1,"index":1,"pixel":[237,249],"rgb":[58,49,46]},
+      {"view":"right","contact_id":"CL-002","segment":1,"index":2,"pixel":[254,251],"rgb":[23,17,16]},
+      {"view":"right","contact_id":"CL-003","segment":0,"index":0,"pixel":[87,277],"rgb":[54,49,44]},
+      {"view":"right","contact_id":"CL-003","segment":0,"index":1,"pixel":[99,275],"rgb":[50,43,40]},
+      {"view":"right","contact_id":"CL-003","segment":0,"index":2,"pixel":[110,277],"rgb":[2,2,1]},
+      {"view":"right","contact_id":"CL-003","segment":1,"index":0,"pixel":[254,276],"rgb":[30,26,26]},
+      {"view":"right","contact_id":"CL-003","segment":1,"index":1,"pixel":[267,275],"rgb":[12,9,8]},
+      {"view":"right","contact_id":"CL-003","segment":1,"index":2,"pixel":[277,276],"rgb":[81,78,79]}
+    ]
+  },
+  "disclosed_step_04_endpoint_overlaps": {
+    "source_record": "manifests/STEP_04_COMPONENT_OWNERSHIP_INVENTORY.json#/evidence_boards",
+    "source_record_status": "quarantined/superseded",
+    "overlap_count": 10,
+    "left": [
+      {"contact_id":"CL-001","pixel":[190,237],"rgb":[22,22,14]},
+      {"contact_id":"CL-001","pixel":[215,238],"rgb":[29,2,4]},
+      {"contact_id":"CL-001","pixel":[245,238],"rgb":[23,20,18]},
+      {"contact_id":"CL-001","pixel":[275,237],"rgb":[34,4,3]},
+      {"contact_id":"CL-003","pixel":[145,293],"rgb":[17,7,4]},
+      {"contact_id":"CL-003","pixel":[315,292],"rgb":[35,31,30]}
+    ],
+    "right": [
+      {"contact_id":"CL-001","pixel":[135,225],"rgb":[34,29,23]},
+      {"contact_id":"CL-001","pixel":[165,226],"rgb":[47,37,36]},
+      {"contact_id":"CL-001","pixel":[205,226],"rgb":[25,8,6]},
+      {"contact_id":"CL-001","pixel":[235,225],"rgb":[44,37,39]}
+    ],
+    "independent_original_derivation_proven": false,
+    "copying_proven": false,
+    "current_source_ownership_reaudited": true,
+    "classification": "disclosed_coordinate_equality_with_quarantined_non_top_review_endpoints; exact current panel pixels independently re-audited; no derivation claim"
+  },
+  "artifact_recommendations": {
+    "steps/STEP_07_CONTRACT.md": {
+      "recommendation": "restore_authoritative_for_scope_only",
+      "reason": "Its Step 06 dependency is limited to controls, status, and blockers and is satisfied by the approved bounded Step 06Q authority; it forbids front/back coordinate and calibration reuse."
+    },
+    "manifests/STEP_07_LEFT_CALIBRATION_RECORD.json": {
+      "recommendation": "restore_authoritative_with_blocked_disagreements",
+      "reason": "All four exact observations replay from the authoritative left panel; no consolidated scale is selected."
+    },
+    "manifests/STEP_07_RIGHT_CALIBRATION_RECORD.json": {
+      "recommendation": "restore_authoritative_with_blocked_disagreements",
+      "reason": "All four exact observations replay from the authoritative right panel; no consolidated scale is selected."
+    },
+    "manifests/STEP_07_LEFT_MEASUREMENT_MANIFEST.json": {
+      "recommendation": "restore_authoritative_through_renewed_audit_override",
+      "reason": "All coordinates, formulas, contacts, landmarks, and blocked fields pass against the authoritative left panel; six disclosed endpoint overlaps are retained without an independent-derivation claim."
+    },
+    "manifests/STEP_07_RIGHT_MEASUREMENT_MANIFEST.json": {
+      "recommendation": "restore_authoritative_through_renewed_audit_override",
+      "reason": "All coordinates, formulas, contacts, landmarks, and blocked fields pass against the authoritative right panel; four disclosed endpoint overlaps are retained without an independent-derivation claim."
+    },
+    "manifests/STEP_07_LEFT_MEASUREMENT_CONTRACTS.json": {
+      "recommendation": "restore_authoritative",
+      "reason": "All twelve references resolve and all world conversion remains blocked."
+    },
+    "manifests/STEP_07_RIGHT_MEASUREMENT_CONTRACTS.json": {
+      "recommendation": "restore_authoritative",
+      "reason": "All twelve references resolve and all world conversion remains blocked."
+    },
+    "manifests/STEP_07_LEFT_RIGHT_DISAGREEMENT_LIST.json": {
+      "recommendation": "restore_authoritative_with_all_seven_blocks_preserved",
+      "reason": "No selected value, average, pairing, identity, closure, or interpretation was introduced."
+    },
+    "manifests/STEP_07_VALIDATION_MANIFEST.json": {
+      "recommendation": "retain_proof_only_through_recovery_override",
+      "reason": "Its 31 historical validators are consistent with the renewed audit, but validation is not measurement authority."
+    },
+    "evidence/STEP_07/SM_GIA_BloodAxeCairnstone_A005_STEP_07_LEFT_RIGHT_MEASUREMENT_EVIDENCE.png": {
+      "recommendation": "retain_proof_only_through_recovery_override",
+      "reason": "Both untouched source tiles remain pixel-exact; the board contains marks but no fill, hidden closure, or geometry."
+    },
+    "steps/STEP_07_OUTPUT_RECORD.md": {
+      "recommendation": "keep_whole_file_quarantined_use_bounded_measurement_sections_only",
+      "eligible_sections": [
+        "Assigned Goal",
+        "Candidate Decision",
+        "Exact Calibration Observations",
+        "Pixel-Space Measurements",
+        "Component And Contact Boundary",
+        "Blocked Disagreement",
+        "Evidence Produced",
+        "Focused Validation Result",
+        "Assumptions And Interpretations",
+        "Access Declaration",
+        "Artifact Status",
+        "Checkpoint",
+        "Output Approval",
+        "Commit And Push"
+      ],
+      "superseded_section": "Next Gate",
+      "reason": "The measurement and historical approval content is supported, but the old downstream Step 08 gate was suspended by later Core Recovery."
+    },
+    "handoffs/STEP_07_TO_STEP_08_HANDOFF.md": {
+      "recommendation": "remain_quarantined_superseded_for_downstream_authority",
+      "reason": "It broadly names the original Step 06 package and advances Step 08 without the later bounded Step 06Q override or current Core Recovery boundary."
+    }
+  },
+  "approved_composite_authority": {
+    "decision": "bounded_recovered_step_07_measurement_authority_without_restoring_the_original_package_as_a_whole",
+    "included": [
+      "Step 07 contract as the execution-scope boundary",
+      "left and right calibration records with all four within-view disagreements preserved",
+      "left and right measurement manifests through this renewed native-pixel audit override",
+      "left and right measurement contract sets",
+      "the seven-entry disagreement list with every block preserved",
+      "the evidence board and historical validation as proof only",
+      "only the explicitly named supported sections of the original Step 07 output record",
+      "this renewed audit manifest and its separately approved output record"
+    ],
+    "excluded": [
+      "any claim that the ten disclosed overlaps prove independent original derivation",
+      "the superseded Next Gate section of the original Step 07 output",
+      "the original Step 07-to-Step 08 handoff as downstream authority",
+      "any consolidated Y/Z scale or derived world-space measurement",
+      "Step 08, interpretation, geometry, or production authority"
+    ],
+    "original_package_whole_file_status": "remain_quarantined",
+    "step_08_status": "stopped",
+    "automatic_application_performed": false,
+    "flamestrike_approved_classification_applied": true
+  },
+  "assumptions_or_interpretations": [],
+  "original_source_records_modified": false,
+  "automatic_reclassification_performed": false,
+  "flamestrike_approved_reclassification_applied": true,
+  "step_07_bounded_authority_restored": true,
+  "original_step_07_package_restored_as_a_whole": false,
+  "step_08_authorized": false,
+  "interpretation_introduced": false,
+  "geometry_created": false,
+  "commit_or_push_performed": false
+}

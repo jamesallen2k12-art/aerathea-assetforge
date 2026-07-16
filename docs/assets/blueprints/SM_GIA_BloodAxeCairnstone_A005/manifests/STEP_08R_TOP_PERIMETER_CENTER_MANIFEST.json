@@ -1,0 +1,118 @@
+{
+  "schema": "aerathea.top_perimeter_center_manifest.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "step_id": "STEP_08R",
+  "date": "2026-07-15",
+  "status": "approved_blocked_perimeter_and_center_decision",
+  "artifact_classification": "authoritative",
+  "decision": "Do not calculate a footprint or center where a fully source-owned closed pixel set is not proven.",
+  "approved_pixel_set_formula": {
+    "pixel_set": "P = union of recorded source-owned half-open row spans",
+    "pixel_count": "N = |P|",
+    "center": "center_px = (sum(x for P) / N, sum(y for P) / N)",
+    "bounding_box_center_allowed": false,
+    "raw_color_density_center_allowed": false,
+    "threshold_center_allowed": false,
+    "smoothed_or_primitive_center_allowed": false
+  },
+  "exact_pixel_sets": [],
+  "component_records": [
+    {
+      "component_id": "C-001",
+      "requested_center_type": "filled_source_owned_outer_footprint_center",
+      "outer_perimeter_status": "blocked_no_fully_enumerated_closed_source_owned_boundary",
+      "pixel_set_status": "not_created",
+      "center_status": "blocked",
+      "center_px": null
+    },
+    {
+      "component_id": "C-002",
+      "requested_center_type": "visible_annulus_center_with_separate_inner_and_outer_perimeters",
+      "outer_perimeter_status": "blocked",
+      "inner_perimeter_status": "blocked_CL_001_is_discontinuous",
+      "visible_annulus_status": "blocked",
+      "pixel_set_status": "not_created",
+      "center_status": "blocked",
+      "center_px": null
+    },
+    {
+      "component_id": "C-003",
+      "requested_center_type": "visible_annulus_center_with_separate_inner_and_outer_perimeters",
+      "outer_perimeter_status": "blocked",
+      "inner_perimeter_status": "blocked_CL_002_is_discontinuous",
+      "visible_annulus_status": "blocked",
+      "pixel_set_status": "not_created",
+      "center_status": "blocked",
+      "center_px": null
+    },
+    {
+      "component_id": "C-004",
+      "requested_center_type": "filled_source_owned_outer_footprint_center",
+      "outer_perimeter_status": "blocked_by_rubble_shadow_and_discontinuous_CL_003_ownership",
+      "pixel_set_status": "not_created",
+      "center_status": "blocked",
+      "center_px": null
+    },
+    {
+      "component_id": "C-005",
+      "requested_center_type": "not_applicable_while_physical_identity_is_ambiguous",
+      "center_status": "blocked_by_U_005_U_006_U_009",
+      "center_px": null
+    },
+    {
+      "component_id": "C-006",
+      "requested_center_type": "not_applicable_while_physical_identity_is_ambiguous",
+      "center_status": "blocked_by_U_005_U_008_U_009",
+      "center_px": null
+    },
+    {
+      "component_id": "C-007",
+      "requested_center_type": "not_applicable_while_physical_identity_is_ambiguous",
+      "center_status": "blocked_by_U_001_U_002_U_003_U_004_U_005_U_008",
+      "center_px": null
+    }
+  ],
+  "contact_center_records": [
+    {
+      "contact_id": "CL-001",
+      "between": ["C-001", "C-002"],
+      "exact_discrete_samples": 16,
+      "perimeter_status": "discontinuous_closure_forbidden",
+      "center_status": "blocked",
+      "center_px": null
+    },
+    {
+      "contact_id": "CL-002",
+      "between": ["C-002", "C-003"],
+      "exact_discrete_samples": 16,
+      "perimeter_status": "discontinuous_closure_forbidden",
+      "center_status": "blocked",
+      "center_px": null
+    },
+    {
+      "contact_id": "CL-003",
+      "between": ["C-003", "C-004"],
+      "exact_discrete_samples": 16,
+      "perimeter_status": "discontinuous_closure_forbidden",
+      "center_status": "blocked",
+      "center_px": null
+    }
+  ],
+  "shared_stacked_layer_envelope": {
+    "status": "blocked",
+    "reason": "No one contour may be duplicated as proof for multiple hidden layers."
+  },
+  "numeric_origin_status": "blocked",
+  "pivot_status": "blocked",
+  "centerline_status": "blocked",
+  "component_transform_status": "blocked",
+  "filled_visual_created": false,
+  "mask_created": false,
+  "interpretation_introduced": false,
+  "geometry_created": false,
+  "flamestrike_output_approval": {
+    "statement": "approved",
+    "date": "2026-07-15",
+    "scope": "No filled footprint, closed perimeter, exact pixel set, component center, contact center, origin, pivot, centerline, or transform is authorized."
+  }
+}

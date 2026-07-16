@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A005 Approval Log
 
-Status: Step 04R approved and pushed; dependency audit pending restart
+Status: Step 08R output and dependency-complete A005 recovery-chain closeout approved
 
 Artifact classification: `authoritative`
 
@@ -500,3 +500,211 @@ Updated: 2026-07-15
   after the Core resume handshake
 - Not authorized: dependency-audit execution, Step 05-07 restoration, renewed
   Step 08 execution, interpretation, geometry, or production work
+
+## Step 05-07 Dependency Audit A01 Execution Approval
+
+- Date: 2026-07-15
+- Approver: Flamestrike
+- Statement: approved
+- Scope: read-only lineage and content audit with candidate classification
+  records
+- Exclusion: automatic reclassification, Step 06 repair, Step 08,
+  interpretation, geometry, commit, and push
+- Pre-action checkpoint: Saved/ProjectRecovery/20260715-181325/
+
+## Step 05-07 Dependency Audit A01 Output Approval
+
+- Date: 2026-07-15
+- Approver: Flamestrike
+- Statement: approved
+- Reviewed visibly: dependency-audit output record, manifest, validation, and
+  exact front/back native-pixel Step 06 drift diagnostics
+- Decision: restore Step 05 within its prior approved boundaries; keep Steps
+  06-07 quarantined; keep Step 08 stopped
+- Step 06 invalid observations: front CL-002 at (372,360) and back CL-002 at
+  (355,271)
+- Step 06 recovery authorized: false
+- Step 07 restoration authorized: false
+- Step 08 authorized: false
+- Validated-candidate checkpoint: Saved/ProjectRecovery/20260715-182525/
+- Exclusion: repair, production work, commit, and push
+
+## Step 06R Contact Evidence Recovery A01 Execution Approval
+
+- Date: 2026-07-15
+- Approver: Flamestrike
+- Statement: approved
+- Scope: re-audit all 43 Step 06 front/back contact samples at native
+  resolution, replace only unsupported samples, and create recovery-suffixed
+  manifests, point-only evidence, validation, and output record
+- Known invalid inputs: front `CL-002` `(372,360)` and back `CL-002`
+  `(355,271)`
+- Pre-action checkpoint: `Saved/ProjectRecovery/20260715-190453/`
+- Exclusion: original Step 06 modification or restoration, Step 07, Step 08,
+  geometry, DCC, texture, Unreal, commit, and push
+
+## Step 06R Contact Evidence Recovery A01 Output Approval
+
+- Date: 2026-07-15
+- Approver: Flamestrike
+- Statement: approved
+- Reviewed visibly:
+  `evidence/STEP_06_RECOVERY/SM_GIA_BloodAxeCairnstone_A005_STEP_06_FRONT_BACK_CONTACT_EVIDENCE_RECOVERY_A01.png`
+- Decision: classify the Step 06R front/back recovery manifests and output
+  record as `authoritative` recovered contact evidence
+- Result: 43 samples audited; 41 retained; two replaced; zero unsupported
+  remaining; no additional drift
+- Approved replacements: front `(372,360)` to `(371,360)`; back `(355,271)`
+  to `(345,270)`
+- Pre-classification checkpoint: `Saved/ProjectRecovery/20260715-192306/`
+- Original Step 06 package: remains `quarantined`
+- Step 06 restoration authorized: false
+- Step 07 authorized: false
+- Step 08 authorized: false
+- Commit/push authorized: false
+
+## Step 06Q Quarantine Reconsideration A01 Execution Approval
+
+- Date: 2026-07-15
+- Approver: Flamestrike
+- Statement: `approved`
+- Scope: check every old Step 06 record, identify what remains trustworthy,
+  keep the original files unchanged, and present the result before restoring
+  anything
+- Pre-action checkpoint: `Saved/ProjectRecovery/20260715-193739/`
+- Exclusion: automatic Step 06 reclassification, original-file modification,
+  Step 07 restoration or modification, Step 08, production work, commit, and
+  push
+
+## Step 06Q Quarantine Reconsideration A01 Output Approval
+
+- Date: 2026-07-15
+- Approver: Flamestrike
+- Statement: `approved`
+- Reviewed visibly:
+  `steps/STEP_06Q_QUARANTINE_RECONSIDERATION_A01_OUTPUT_RECORD.md`
+- Decision: accept the bounded recovered Step 06 authority from the unaffected
+  named records/sections plus the approved Step 06R contact manifests
+- Exact comparison: 43 original/recovered contacts, 41 unchanged, two
+  approved replacements, zero unsupported remaining
+- Original Step 06 package: remains `quarantined` as a whole
+- Original contact arrays and original validation/evidence/output/handoff
+  completion chain: remain `quarantined/superseded`
+- Step 07: remains `quarantined` pending a renewed dependency audit
+- Step 08 authorized: false
+- Production work authorized: false
+- Commit/push authorized: false
+- Pre-classification checkpoint: `Saved/ProjectRecovery/20260715-195001/`
+
+## Step 07R Renewed Dependency Audit A01 Execution Approval
+
+- Date: 2026-07-15
+- Approver: Flamestrike
+- Statement: `approved`
+- Scope: read-only audit of all twelve original Step 07 artifacts against the
+  approved Step 04R, restored Step 05, Step 06R, and bounded Step 06Q
+  authority; verify hashes, formulas, dependencies, all 36 contact samples,
+  the ten disclosed endpoint overlaps, and all seven blocked disagreements;
+  produce a candidate classification for separate review
+- Pre-action checkpoint: `Saved/ProjectRecovery/20260715-211549/`
+- Exclusion: original Step 07 modification, automatic reclassification, Step
+  08, interpretation, geometry, production work, commit, and push
+
+## Step 07R Renewed Dependency Audit A01 Output Approval
+
+- Date: 2026-07-15
+- Approver: Flamestrike
+- Statement: `approved`
+- Reviewed visibly:
+  `steps/STEP_07R_RENEWED_DEPENDENCY_AUDIT_A01_OUTPUT_RECORD.md`
+- Decision: apply bounded recovered Step 07 measurement authority without
+  restoring the original Step 07 package as a whole
+- Exact result: 12 of 12 original hashes match; 35 validators pass; eight
+  calibration observations, 26 row samples, eight C-004 observations, 36
+  contact samples, 20 landmarks, 24 contracts, and seven blocked
+  disagreements are accepted through the Step 07R recovery override
+- Endpoint overlap limitation: ten older non-top Step 04 endpoint equalities
+  remain disclosed; current source ownership is re-audited; independent
+  original derivation is not claimed
+- Original Step 07 output: whole file remains `quarantined`; only the exact
+  headings named by Step 07R are authoritative through the override; `Next
+  Gate` remains superseded
+- Original Step 07-to-Step 08 handoff: remains
+  `quarantined/superseded`
+- Original Step 07 package: remains `quarantined` as a whole
+- Step 08 authorized: false
+- Production work authorized: false
+- Commit/push authorized: false
+- Validated-candidate checkpoint: `Saved/ProjectRecovery/20260715-212643/`
+- Pre-classification checkpoint: `Saved/ProjectRecovery/20260715-212847/`
+
+## Step 08R Contract Preparation Approval
+
+- Date: 2026-07-15
+- Approver: Flamestrike
+- Statement: `approved`
+- Scope: prepare and visibly present a separate Core reassessment and renewed
+  Step 08 top-measurement contract without executing Step 08
+- Result: one candidate Step 08R contract created and opened visibly
+- Exclusion: Step 08R execution, measurement output, interpretation,
+  geometry, commit, and push
+
+## Step 08R Execution Approval
+
+- Date: 2026-07-15
+- Approver: Flamestrike
+- Statement: `approved`
+- Reviewed presentation: exact visible Step 08R contract and its plain-English
+  top-view measurement scope
+- Scope: top-panel-only exact calibration, exact visible measurements,
+  re-audit of the 48 Step 04R contacts, blocked perimeter/center decisions,
+  unfilled evidence, validation, and candidate output
+- Pre-action checkpoint: `Saved/ProjectRecovery/20260715-221409/`
+- Exclusion: output approval, Step 09, rectification, interpretation, geometry,
+  production work, commit, and push
+
+## Step 08R Candidate Validation
+
+- Date: 2026-07-15
+- Four independent calibration observations: `159 px = 120 cm`,
+  `208 px = 140 cm`, `94 px = 90 cm`, and `140 px = 110 cm`
+- Unified top scale: none
+- Reverified contacts: `48`
+- Contact RGB mismatches: `0`
+- Contact coordinate round-trip failures: `0`
+- Filled footprints, closed perimeters, and centers: `0`
+- Validators: `37` passed, `0` failed
+- Evidence source tile: `0` changed pixels; maximum RGB delta `0`
+- Validated-candidate checkpoint: `Saved/ProjectRecovery/20260715-222630/`
+
+## Step 08R Output Approval
+
+- Date: 2026-07-15
+- Approver: Flamestrike
+- Statement: `approved`
+- Clarification: Flamestrike agreed with the recommendation to preserve the
+  honest evidence result and prepare a separately reviewed correction path
+- Decision: accept the four independent top calibrations and all 48
+  reverified contacts while keeping every footprint, perimeter, center,
+  unified scale, world conversion, origin, pivot, interpretation, and geometry
+  result blocked
+- Approved pre-closeout checkpoint:
+  `Saved/ProjectRecovery/20260715-223831/`
+- Step 09 authorized: false
+- Rectification authorized: future direction only; execution false
+- Production work authorized: false
+
+## Dependency-Complete A005 Closeout Approval
+
+- Date: 2026-07-15
+- Approver: Flamestrike
+- Statement: `approved`
+- Clarification: `to be clear I am approving your recommendation`
+- Approved scope: save and push the complete approved A005 recovery evidence
+  chain required by Step 08R—Dependency Audit A01, Step 06R, Step 06Q, Step
+  07R, Step 08R, and their A005 status/handoff records
+- Exclusion: every unrelated worktree file, recovery-journal history,
+  A001-A004 data, rectification, Step 09 execution, interpretation, geometry,
+  and production work
+- Closeout method: dependency-complete A005 content commit/push followed by a
+  final restart-handoff evidence commit/push

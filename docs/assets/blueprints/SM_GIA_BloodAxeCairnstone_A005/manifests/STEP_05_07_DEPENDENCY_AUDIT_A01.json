@@ -1,0 +1,171 @@
+{
+  "schema": "aerathea.downstream_dependency_audit.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "audit_id": "STEP_05_07_DEPENDENCY_AUDIT_A01",
+  "date": "2026-07-15",
+  "status": "approved_classification_step_05_restored_step_06_07_quarantined",
+  "artifact_classification": "authoritative",
+  "decision": "Classify suspended Steps 05, 06, and 07 by proven propagation from the invalid original Step 04 top coordinates or completion claims without modifying or automatically restoring any source record.",
+  "approval": {
+    "approver": "Flamestrike",
+    "statement": "approved",
+    "date": "2026-07-15",
+    "scope": "dependency audit execution only",
+    "output_approval": {
+      "statement": "approved",
+      "date": "2026-07-15",
+      "scope": "restore Step 05, keep Steps 06-07 quarantined, and keep Step 08 stopped",
+      "pre_classification_checkpoint": "Saved/ProjectRecovery/20260715-184421/"
+    }
+  },
+  "checkpoints": {
+    "pre_action": "Saved/ProjectRecovery/20260715-181325/",
+    "step_06_drift_boundary": "Saved/ProjectRecovery/20260715-182015/",
+    "validated_candidate": "Saved/ProjectRecovery/20260715-182525/"
+  },
+  "input_hashes": {
+    "original_step_04_inventory": "664daadce0bac933d0090408e23df663b72b6ea83c825041dde365a1fad0819f",
+    "step_04r_recovery_inventory": "f472f5bb749eda8ffb27809658d4afd3f5fc732ddcf7d4fcb1275492c1e7d755",
+    "step_04r_exact_top_contacts": "8f9fb86ef631e5785552a61f61e4a2d3085727f1a667bdf59cf904284b1b2eb0",
+    "step_05_coordinate_frame": "ccfce6b8316369b512ff83eee11fd4385dd15b546f7b92da9e80b9e7ed959d1d",
+    "step_05_orientation_registration": "b7efa865e8b82f63e714d36ed4935fc02515ecc3f4d355941467f20b49348395",
+    "step_05_validation": "dc587864b689a36e33a7444857057ce74abbd9798ce6185ccdc647996a5f61e7",
+    "step_06_front_measurements": "c71932bef2016808d24fdc9aed47b9f4a3c32f59bdd45a551aab6804d877ecef",
+    "step_06_back_measurements": "7d203f0b4993aa5764bf54f3c78109ba0f614cc4b17553a58e3acde07deb1e56",
+    "step_06_validation": "8e32d202fe81cc7081d6d91faa4cb6c318c3910443e02086183909e026b10991",
+    "step_07_left_measurements": "e08d868925967a05d465cecadc4810a3f3e2b3cdb5be342e32ebdd807e0e9725",
+    "step_07_right_measurements": "72cf8758a1a73b36a653635512267ed84c363620459f2a3953179527f31f19bc",
+    "step_07_validation": "3feed4bc857d1529d75a0104311a4ca878dafa06a7dd313fae181adfeb913f46"
+  },
+  "lineage_limits": {
+    "tracked_a005_step_05_07_builder_scripts_found": false,
+    "executable_derivation_replay_available": false,
+    "effect": "Classification uses committed manifests, exact source-panel identities, explicit provenance, scoped git history, and native-pixel evidence. Independent executable derivation is not claimed."
+  },
+  "step_results": {
+    "STEP_05": {
+      "recommendation": "restore",
+      "current_status_until_approval": "authoritative_restored",
+      "files_scanned": 6,
+      "original_inventory_path_reference_files": [
+        "manifests/STEP_05_ORIENTATION_REGISTRATION_MANIFEST.json",
+        "manifests/STEP_05_PIXEL_COORDINATE_FRAME_RECORD.json"
+      ],
+      "original_inventory_hash_reference_files": [
+        "manifests/STEP_05_VALIDATION_MANIFEST.json"
+      ],
+      "invalid_top_board_path_references": [],
+      "registration_marks_checked": 46,
+      "same_view_step_04_review_coordinate_overlaps": 0,
+      "top_registration_marks_checked": 9,
+      "top_marks_on_invalid_original_top_contact_segments": 0,
+      "contact_semantics_match_step_04r": true,
+      "step_04_review_coordinates_declared_used": false,
+      "finding": "Step 05 depends on the original inventory path only for component, contact, occlusion, and blocked-unknown semantics. Step 04R explicitly preserves those IDs and descriptions. No Step 04 review coordinate or invalid top-board path propagated into the 46 source-authored registration marks.",
+      "restoration_boundary": "Restore only the previously approved Step 05 convention, frame, semantic registration, blocking policies, and exact source-authored marks. Numeric geometry, centers, contact pairing, and Step 08 remain blocked."
+    },
+    "STEP_06": {
+      "recommendation": "remain_quarantined",
+      "current_status_until_approval": "quarantined",
+      "files_scanned": 11,
+      "original_inventory_path_references": 0,
+      "original_inventory_hash_references": 0,
+      "invalid_top_board_path_references": 0,
+      "top_panel_used_for_measurement": false,
+      "front_back_hash_checks": {
+        "passed": 10,
+        "failed": 0
+      },
+      "original_step_04_top_coordinate_propagation_found": false,
+      "new_core_drift": {
+        "status": "proven",
+        "relation": "CL-002",
+        "claimed_between": [
+          "C-002",
+          "C-003"
+        ],
+        "invalid_observations": [
+          {
+            "view": "front",
+            "panel_local": [
+              372,
+              360
+            ],
+            "source_rgb": [
+              235,
+              237,
+              238
+            ],
+            "classification": "invalid_external_antialiased_background_pixel",
+            "diagnostic": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/CoreRecovery/STEP_05_07_DependencyAudit_A01/front_372_360_NativePixelNeighborhood.png",
+            "diagnostic_sha256": "05bb67baff2613103cadada1b1db71575a51b8efd9c13acc5937db538c0b8946"
+          },
+          {
+            "view": "back",
+            "panel_local": [
+              355,
+              271
+            ],
+            "source_rgb": [
+              249,
+              249,
+              249
+            ],
+            "classification": "invalid_external_white_background_pixel",
+            "diagnostic": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/CoreRecovery/STEP_05_07_DependencyAudit_A01/back_355_271_NativePixelNeighborhood.png",
+            "diagnostic_sha256": "c31b7a9a59ea5e4229a57b4efc42897a9f741c909c758909bc7bad36857b017a"
+          }
+        ]
+      },
+      "finding": "No invalid Step 04 top coordinate propagated into Step 06, but Step 06 independently contains two unambiguous background pixels claimed as exposed CL-002 contact observations. Its complete source-bounded contact proof therefore fails.",
+      "recovery_boundary": "Do not edit or restore Step 06 inside this audit. A separate approved recovery must re-audit the Step 06 contact observations and classify unaffected Step 06 records."
+    },
+    "STEP_07": {
+      "recommendation": "remain_quarantined",
+      "current_status_until_approval": "quarantined",
+      "files_scanned": 11,
+      "original_inventory_path_references": 0,
+      "original_inventory_hash_references": 0,
+      "invalid_top_board_path_references": 0,
+      "top_panel_used_for_measurement": false,
+      "left_right_hash_checks": {
+        "passed": 10,
+        "failed": 0
+      },
+      "original_step_04_top_coordinate_propagation_found": false,
+      "exact_same_contact_non_top_step_04_endpoint_matches": {
+        "left": [
+          {"contact_id": "CL-001", "pixel": [190, 237]},
+          {"contact_id": "CL-001", "pixel": [215, 238]},
+          {"contact_id": "CL-001", "pixel": [245, 238]},
+          {"contact_id": "CL-001", "pixel": [275, 237]},
+          {"contact_id": "CL-003", "pixel": [145, 293]},
+          {"contact_id": "CL-003", "pixel": [315, 292]}
+        ],
+        "right": [
+          {"contact_id": "CL-001", "pixel": [135, 225]},
+          {"contact_id": "CL-001", "pixel": [165, 226]},
+          {"contact_id": "CL-001", "pixel": [205, 226]},
+          {"contact_id": "CL-001", "pixel": [235, 225]}
+        ],
+        "total": 10,
+        "classification": "disclosed_coordinate_overlap_with_non_top_quarantined_review_data_not_invalid_top_propagation"
+      },
+      "finding": "Step 07 contains no invalid top-coordinate propagation and its measurements use only authoritative left/right panels. Ten contact pixels exactly match older non-top Step 04 review endpoints; absent tracked builders, independent derivation of those ten coordinates is not proven. Step 07 also consumed Step 06 controls, status, and completion authority. The new Step 06 drift prevents restoration now.",
+      "recovery_boundary": "Keep Step 07 quarantined until Step 06 recovery and a renewed dependency decision explicitly classify the Step 07 authority set."
+    }
+  },
+  "aggregate_decision": {
+    "STEP_05": "authoritative_restored_with_prior_boundaries_unchanged",
+    "STEP_06": "remain_quarantined_new_source_ownership_drift",
+    "STEP_07": "remain_quarantined_pending_step_06_recovery_and_renewed_audit",
+    "STEP_08": "stopped_no_output_authority"
+  },
+  "source_records_modified": false,
+  "automatic_reclassification_performed": false,
+  "flamestrike_approved_reclassification_applied": true,
+  "interpretation_introduced": false,
+  "geometry_created": false,
+  "legacy_asset_specific_data_accessed": false,
+  "step_08_output_created": false
+}

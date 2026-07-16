@@ -1,0 +1,60 @@
+{
+  "schema": "aerathea.top_measurement_disagreement_list.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "step_id": "STEP_08R",
+  "date": "2026-07-15",
+  "status": "approved_top_calibration_disagreement_record",
+  "artifact_classification": "authoritative",
+  "decision": "Preserve every top-view calibration disagreement without selecting or averaging a convenient scale.",
+  "entries": [
+    {
+      "id": "TDIS-001",
+      "subject": "C-001 versus C-004 X calibration",
+      "observation_a": {"id":"TCAL-001","cm_per_px_exact":"40/53","cm_per_px_decimal":0.7547169811320755},
+      "observation_b": {"id":"TCAL-002","cm_per_px_exact":"35/52","cm_per_px_decimal":0.6730769230769231},
+      "absolute_difference_exact": "225/2756",
+      "absolute_difference_decimal": 0.0816400580551524,
+      "status": "blocked_no_selection_or_average"
+    },
+    {
+      "id": "TDIS-002",
+      "subject": "C-001 versus C-004 Y calibration",
+      "observation_a": {"id":"TCAL-003","cm_per_px_exact":"45/47","cm_per_px_decimal":0.9574468085106383},
+      "observation_b": {"id":"TCAL-004","cm_per_px_exact":"11/14","cm_per_px_decimal":0.7857142857142857},
+      "absolute_difference_exact": "113/658",
+      "absolute_difference_decimal": 0.1717325227963526,
+      "status": "blocked_no_selection_or_average"
+    },
+    {
+      "id": "TDIS-003",
+      "subject": "C-001 X versus Y calibration",
+      "observation_a": {"id":"TCAL-001","cm_per_px_exact":"40/53","cm_per_px_decimal":0.7547169811320755},
+      "observation_b": {"id":"TCAL-003","cm_per_px_exact":"45/47","cm_per_px_decimal":0.9574468085106383},
+      "absolute_difference_exact": "505/2491",
+      "absolute_difference_decimal": 0.20272982737856282,
+      "status": "blocked_no_axis_unification"
+    },
+    {
+      "id": "TDIS-004",
+      "subject": "C-004 X versus Y calibration",
+      "observation_a": {"id":"TCAL-002","cm_per_px_exact":"35/52","cm_per_px_decimal":0.6730769230769231},
+      "observation_b": {"id":"TCAL-004","cm_per_px_exact":"11/14","cm_per_px_decimal":0.7857142857142857},
+      "absolute_difference_exact": "41/364",
+      "absolute_difference_decimal": 0.11263736263736264,
+      "status": "blocked_no_axis_unification"
+    }
+  ],
+  "entry_count": 4,
+  "all_entries_blocked": true,
+  "selected_observation_count": 0,
+  "averaged_observation_count": 0,
+  "unified_top_scale": null,
+  "world_space_conversion_authorized": false,
+  "interpretation_introduced": false,
+  "geometry_created": false,
+  "flamestrike_output_approval": {
+    "statement": "approved",
+    "date": "2026-07-15",
+    "scope": "All four top calibration disagreements remain blocked without scale selection, averaging, or axis unification."
+  }
+}

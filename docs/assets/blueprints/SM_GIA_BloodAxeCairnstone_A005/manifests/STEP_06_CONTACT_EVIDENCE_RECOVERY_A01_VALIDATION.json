@@ -1,0 +1,168 @@
+{
+  "schema": "aerathea.step_06_contact_evidence_recovery_validation.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "recovery_id": "STEP_06R_CONTACT_EVIDENCE_RECOVERY_A01",
+  "date": "2026-07-15",
+  "status": "approved_recovery_validation_evidence",
+  "artifact_classification": "proof only",
+  "aggregate_result": "pass_approved_recovered_contact_evidence",
+  "authority_boundary": "Validates only the recovery-suffixed front/back contact evidence. It does not restore Step 06 or authorize Step 07, Step 08, or production work.",
+  "inputs": {
+    "front_panel": {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_FRONT.png",
+      "file_sha256": "262071198bc0d409e9b68af5ac4f3c6a4768a90b1fd199342035a8a82342c2c5",
+      "pixel_sha256": "d4fb34cb01ce6eaa04213a5a7c517743960daec6dcf638c53ec80a958ecc807f"
+    },
+    "back_panel": {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_BACK.png",
+      "file_sha256": "8ceae7f5ccf311ded8822fdd623d2b68009102bc07ceaf66708f59d2a013d271",
+      "pixel_sha256": "9256a8df175cbf54ca0662b11e0c5f5f6be4e670b10a9783efc1d6e9e26a56b1"
+    },
+    "step_04r_semantic_inventory_sha256": "f472f5bb749eda8ffb27809658d4afd3f5fc732ddcf7d4fcb1275492c1e7d755",
+    "step_05_coordinate_frame_sha256": "ccfce6b8316369b512ff83eee11fd4385dd15b546f7b92da9e80b9e7ed959d1d",
+    "dependency_audit_sha256": "a98d488f95ad9af6899c392f79ccc2b1e6a5a27e5221ca063b895f94de0b496c",
+    "dependency_audit_validation_sha256": "449fa728a11e9e2f5dd8244b470405a3d67c6cb88578eb087aff1f30e35925c9",
+    "front_failure_diagnostic_sha256": "05bb67baff2613103cadada1b1db71575a51b8efd9c13acc5937db538c0b8946",
+    "back_failure_diagnostic_sha256": "c31b7a9a59ea5e4229a57b4efc42897a9f741c909c758909bc7bad36857b017a"
+  },
+  "recovery_outputs": {
+    "contract": {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/STEP_06R_CONTACT_EVIDENCE_RECOVERY_A01_CONTRACT.md",
+      "sha256": "87cb5df10dedbfb5bf6a3515f8b857e35c8b9ad575b9f6cfc6902d818242947e",
+      "classification": "authoritative_for_execution_scope_only"
+    },
+    "front_manifest": {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_06_FRONT_CONTACT_EVIDENCE_RECOVERY_A01.json",
+      "sha256": "534b89f2d37fabcd7bdc3aa95d4ec9e368b0abab13307e80c1c075aeee1212f2",
+      "classification": "authoritative"
+    },
+    "back_manifest": {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_06_BACK_CONTACT_EVIDENCE_RECOVERY_A01.json",
+      "sha256": "36f65a8873ce8c430d1e6156e07492bb01a45f6e6cd31515d9326ce44ac935af",
+      "classification": "authoritative"
+    },
+    "evidence_board": {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/evidence/STEP_06_RECOVERY/SM_GIA_BloodAxeCairnstone_A005_STEP_06_FRONT_BACK_CONTACT_EVIDENCE_RECOVERY_A01.png",
+      "sha256": "514658bc21a10bafbb3bf9926bd2ed47299068c4aa1985510e7a67d4e74fc98f",
+      "classification": "proof only",
+      "size_px": [1510, 1210],
+      "mode": "RGB"
+    }
+  },
+  "original_step_06_package_integrity": {
+    "classification": "quarantined_unchanged",
+    "files": {
+      "steps/STEP_06_CONTRACT.md": "692a95e660a4dfb77fef6117f415db1b682c86423c572b532b90dcbe8d8c47e3",
+      "manifests/STEP_06_FRONT_CALIBRATION_RECORD.json": "17993e1d472d97cf1d4c8996b668e1bb11b8f2fc160ce6c46fd5b8d2bc32ca4b",
+      "manifests/STEP_06_BACK_CALIBRATION_RECORD.json": "7eaa651d6c89bbe444af8f167e663a0d16a204832c45e18f2447f64b1a952fcc",
+      "manifests/STEP_06_FRONT_MEASUREMENT_MANIFEST.json": "c71932bef2016808d24fdc9aed47b9f4a3c32f59bdd45a551aab6804d877ecef",
+      "manifests/STEP_06_BACK_MEASUREMENT_MANIFEST.json": "7d203f0b4993aa5764bf54f3c78109ba0f614cc4b17553a58e3acde07deb1e56",
+      "manifests/STEP_06_FRONT_MEASUREMENT_CONTRACTS.json": "79029a8f03d1af2fe880fb791d38b33b0efc335da8eea9064d35ed85a4a2299b",
+      "manifests/STEP_06_BACK_MEASUREMENT_CONTRACTS.json": "1bc424f6fbc52a84e532c4861d50eb35bd57e5635238a8b219fca2d10b9ffcd8",
+      "manifests/STEP_06_FRONT_BACK_DISAGREEMENT_LIST.json": "78d95fdc0cc10a4e2698b7a8fb10903b451431af85f272b81fd75b3c4647a0b2",
+      "manifests/STEP_06_VALIDATION_MANIFEST.json": "8e32d202fe81cc7081d6d91faa4cb6c318c3910443e02086183909e026b10991",
+      "evidence/STEP_06/SM_GIA_BloodAxeCairnstone_A005_STEP_06_FRONT_BACK_MEASUREMENT_EVIDENCE.png": "8222da8c909569971d749c504497899688323ac06583959f10188a7a45509543",
+      "steps/STEP_06_OUTPUT_RECORD.md": "656efdbb2b68ed13cef9f4240bde384c9503f421b75571093144e6ca18b6c73f",
+      "handoffs/STEP_06_TO_STEP_07_HANDOFF.md": "902670a3f07a087ee9eb1382e8f27bda3c82ac22c52f3b2ece442d73faca2498"
+    }
+  },
+  "counts": {
+    "audited_samples": 43,
+    "front_samples": 21,
+    "back_samples": 22,
+    "retained_samples": 41,
+    "replaced_samples": 2,
+    "unsupported_remaining": 0,
+    "additional_drift_found": 0
+  },
+  "replacements": [
+    {
+      "view": "front",
+      "contact_id": "CL-002",
+      "between": ["C-002", "C-003"],
+      "invalid_panel_local": [372, 360],
+      "invalid_rgb": [235, 237, 238],
+      "recovered_panel_local": [371, 360],
+      "recovered_full_source": [923, 490],
+      "recovered_rgb": [144, 143, 144],
+      "manual_semantic_result": "pass"
+    },
+    {
+      "view": "back",
+      "contact_id": "CL-002",
+      "between": ["C-002", "C-003"],
+      "invalid_panel_local": [355, 271],
+      "invalid_rgb": [249, 249, 249],
+      "recovered_panel_local": [345, 270],
+      "recovered_full_source": [364, 933],
+      "recovered_rgb": [165, 166, 164],
+      "manual_semantic_result": "pass"
+    }
+  ],
+  "board_validation": {
+    "front_untouched_source_tile_changed_pixels": 0,
+    "back_untouched_source_tile_changed_pixels": 0,
+    "front_marked_copy_changed_pixels": 651,
+    "back_marked_copy_changed_pixels": 694,
+    "marked_copy_changes_limited_to_43_discrete_cross_footprints": true,
+    "connecting_lines_present": false,
+    "fills_present": false,
+    "closure_present": false
+  },
+  "validators": [
+    {"id":"contract_approval_scope","result":"pass"},
+    {"id":"front_source_file_and_pixel_hash","result":"pass"},
+    {"id":"back_source_file_and_pixel_hash","result":"pass"},
+    {"id":"authority_input_hashes","result":"pass"},
+    {"id":"failure_diagnostic_hashes","result":"pass"},
+    {"id":"json_outputs_parse","result":"pass","files":3},
+    {"id":"all_43_samples_reaudited","result":"pass"},
+    {"id":"front_sample_and_contact_counts","result":"pass","samples":21},
+    {"id":"back_sample_and_contact_counts","result":"pass","samples":22},
+    {"id":"sample_ids_and_coordinates_unique_per_view","result":"pass"},
+    {"id":"coordinates_integer_and_in_bounds","result":"pass"},
+    {"id":"panel_local_full_source_round_trip","result":"pass","tolerance_px":0},
+    {"id":"recorded_rgb_matches_native_source","result":"pass"},
+    {"id":"manual_source_ownership_review","result":"pass","reviewed_samples":43},
+    {"id":"manual_named_contact_semantic_review","result":"pass","reviewed_samples":43},
+    {"id":"invalid_background_coordinates_absent","result":"pass","count":2},
+    {"id":"replacement_coordinates_present","result":"pass","count":2},
+    {"id":"additional_drift_scan","result":"pass","additional_drift_found":0},
+    {"id":"original_step_06_package_unchanged","result":"pass","files":12},
+    {"id":"untouched_board_source_tiles","result":"pass","changed_pixels":0},
+    {"id":"board_marks_map_to_manifest_samples","result":"pass","marks":43},
+    {"id":"board_marks_are_discrete_crosses_only","result":"pass"},
+    {"id":"line_interpolation_fill_and_closure_absent","result":"pass"},
+    {"id":"geometry_and_interpretation_absent","result":"pass"},
+    {"id":"step_07_and_step_08_unchanged","result":"pass"}
+  ],
+  "artifact_status": {
+    "contract": "authoritative_for_execution_scope_only",
+    "front_recovery_manifest": "authoritative",
+    "back_recovery_manifest": "authoritative",
+    "evidence_board": "proof only",
+    "validation": "proof only",
+    "output_record": "authoritative_recovery_classification_record",
+    "original_step_06_package": "quarantined",
+    "step_07": "quarantined",
+    "step_08": "stopped"
+  },
+  "flamestrike_output_approval": {
+    "date": "2026-07-15",
+    "statement": "approved",
+    "result": "pass",
+    "scope": "Step 06R recovered front/back contact evidence only.",
+    "classification": "authoritative_recovered_contact_evidence",
+    "pre_classification_checkpoint": "Saved/ProjectRecovery/20260715-192306/",
+    "original_step_06_package_status": "quarantined",
+    "step_06_restoration_authorized": false,
+    "step_07_authorized": false,
+    "step_08_authorized": false,
+    "commit_push_authorized": false
+  },
+  "step_06_restoration_authorized": false,
+  "step_07_authorized": false,
+  "step_08_authorized": false,
+  "geometry_created": false,
+  "interpretation_introduced": false
+}

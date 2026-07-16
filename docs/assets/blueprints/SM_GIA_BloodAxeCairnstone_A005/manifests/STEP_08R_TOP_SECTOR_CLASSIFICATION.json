@@ -1,0 +1,59 @@
+{
+  "schema": "aerathea.top_sector_classification.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "step_id": "STEP_08R",
+  "date": "2026-07-15",
+  "status": "approved_visible_contact_and_blocked_closure_sector_classification",
+  "artifact_classification": "authoritative",
+  "decision": "Preserve exact visible contact sectors while keeping every unmeasured or occluded closure sector blocked.",
+  "authority": {
+    "semantic_inventory": "manifests/STEP_04_COMPONENT_OWNERSHIP_INVENTORY_RECOVERY_A01.json",
+    "contact_observations": "manifests/STEP_04_TOP_CONTACT_EVIDENCE_RECOVERY_A01.json",
+    "contact_observations_sha256": "8f9fb86ef631e5785552a61f61e4a2d3085727f1a667bdf59cf904284b1b2eb0"
+  },
+  "contact_sector_records": [
+    {"contact_id":"CL-001","sector":"top","classification":"visible_source_owned_discrete_samples","sample_count":4,"closure_authorized":false},
+    {"contact_id":"CL-001","sector":"bottom","classification":"visible_source_owned_discrete_samples","sample_count":4,"closure_authorized":false},
+    {"contact_id":"CL-001","sector":"left","classification":"visible_source_owned_discrete_samples","sample_count":4,"closure_authorized":false},
+    {"contact_id":"CL-001","sector":"right","classification":"visible_source_owned_discrete_samples","sample_count":4,"closure_authorized":false},
+    {"contact_id":"CL-002","sector":"top","classification":"visible_source_owned_discrete_samples","sample_count":4,"closure_authorized":false},
+    {"contact_id":"CL-002","sector":"bottom","classification":"visible_source_owned_discrete_samples","sample_count":4,"closure_authorized":false},
+    {"contact_id":"CL-002","sector":"left","classification":"visible_source_owned_discrete_samples","sample_count":4,"closure_authorized":false},
+    {"contact_id":"CL-002","sector":"right","classification":"visible_source_owned_discrete_samples","sample_count":4,"closure_authorized":false},
+    {"contact_id":"CL-003","sector":"top","classification":"visible_source_owned_discrete_samples","sample_count":4,"closure_authorized":false},
+    {"contact_id":"CL-003","sector":"bottom","classification":"visible_source_owned_discrete_samples","sample_count":4,"closure_authorized":false},
+    {"contact_id":"CL-003","sector":"left","classification":"visible_source_owned_discrete_samples","sample_count":4,"closure_authorized":false},
+    {"contact_id":"CL-003","sector":"right","classification":"visible_source_owned_discrete_samples","sample_count":4,"closure_authorized":false}
+  ],
+  "occluded_sector_records": [
+    {"sector_id":"OS-001","classification":"preserved_blocked_unknown","resolved_by_step_08r":false},
+    {"sector_id":"OS-002","classification":"preserved_blocked_unknown","resolved_by_step_08r":false},
+    {"sector_id":"OS-003","classification":"preserved_blocked_unknown","resolved_by_step_08r":false}
+  ],
+  "component_closure_records": [
+    {"component_id":"C-001","outer_boundary":"visible_partial_not_closed_as_authority","filled_region":"blocked"},
+    {"component_id":"C-002","outer_boundary":"visible_partial_not_closed_as_authority","inner_boundary":"discontinuous_CL_001","filled_region":"blocked"},
+    {"component_id":"C-003","outer_boundary":"visible_partial_not_closed_as_authority","inner_boundary":"discontinuous_CL_002","filled_region":"blocked"},
+    {"component_id":"C-004","outer_boundary":"rubble_shadow_and_annotation_adjacent_not_closed_as_authority","inner_boundary":"discontinuous_CL_003","filled_region":"blocked"},
+    {"component_id":"C-005","ownership":"ambiguous_blocked"},
+    {"component_id":"C-006","ownership":"ambiguous_blocked"},
+    {"component_id":"C-007","ownership":"ambiguous_blocked"}
+  ],
+  "excluded_sector_classes": [
+    "annotation",
+    "grid",
+    "panel_border",
+    "background",
+    "unsupported_shadow",
+    "ambiguous_component_ownership"
+  ],
+  "inferred_sector_count": 0,
+  "closed_hidden_sector_count": 0,
+  "interpretation_introduced": false,
+  "geometry_created": false,
+  "flamestrike_output_approval": {
+    "statement": "approved",
+    "date": "2026-07-15",
+    "scope": "Exact visible discrete contact sectors accepted; occluded, ambiguous, annotation-adjacent, and unclosed sectors remain blocked."
+  }
+}
