@@ -11,8 +11,8 @@ Updated: 2026-07-20
 | Artifact | Status | Role |
 |---|---|---|
 | manifests/S10R_006_R9_A_GIT_ROLLBACK_CLOSEOUT_A01_SCOPE.json | authoritative | Records Flamestrike's exact Git-closeout authority, dependency-complete include/exclude boundary, target remote, and validation requirements. |
-| manifests/S10R_006_R9_A_GIT_ROLLBACK_CLOSEOUT_A01_VALIDATION.json | proof only; staged snapshot passed with 14 preserved historical EOF exceptions; remote verification pending | Records the exact 232-path staged snapshot, parse and scope checks, immutable historical whitespace exceptions, and pending remote verification. |
-| steps/S10R_006_R9_A_GIT_ROLLBACK_CLOSEOUT_A01_OUTPUT_RECORD.md | candidate until pushed rollback verification | Records the Core reassessment, minimal dependency closure, exclusions, passed staged-snapshot audit, and remaining Git completion boundary. |
+| manifests/S10R_006_R9_A_GIT_ROLLBACK_CLOSEOUT_A01_VALIDATION.json | proof only; dependency snapshot push and remote verification passed | Records the exact 232-path snapshot, parse and scope checks, immutable historical whitespace exceptions, dependency commit, push result, and exact local/remote hash match. |
+| steps/S10R_006_R9_A_GIT_ROLLBACK_CLOSEOUT_A01_OUTPUT_RECORD.md | authoritative Git rollback closeout record | Records the Core reassessment, minimal dependency closure, exclusions, passed staged audit, dependency commit, and verified remote rollback anchor. |
 
 This closeout creates no new production authority. It exists only to preserve
 the approved A005 authority history as a verified Git rollback point while

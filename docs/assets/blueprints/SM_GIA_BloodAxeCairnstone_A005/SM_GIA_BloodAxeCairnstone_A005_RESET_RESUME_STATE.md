@@ -6,7 +6,7 @@ Artifact classification: `authoritative`
 
 Updated: 2026-07-20
 
-## Active Git Closeout Boundary - Scoped Snapshot Validated
+## Completed Git Closeout Boundary - Dependency Snapshot Verified
 
 Flamestrike authorized uninterrupted completion of a clean Git rollback point
 for the current A005 authority chain. The dependency-complete scope contains
@@ -22,7 +22,14 @@ project drift ledger. Unrelated user work and local-only paths remain excluded.
 - Fourteen historical blank-line-at-EOF warnings are accepted evidence
   exceptions because every affected file is SHA-256-referenced by later
   authority records; their bytes remain unchanged.
-- Commit and verified push to `assetforge/main`: pending.
+- Dependency snapshot commit:
+  `571d9002e3120cf0c383c78e5e37f0b0353a7f71`.
+- Push to `assetforge/main`: passed.
+- Remote verification: local and remote hashes matched exactly at the
+  dependency snapshot commit.
+- A005 rollback scope after the dependency commit: clean.
+- The immediate metadata closeout commit records this already-proven result;
+  its hash is intentionally not self-embedded.
 
 This Git closeout grants no production authority. The production resume
 boundary below remains controlling: Core reassessment is required, and rule

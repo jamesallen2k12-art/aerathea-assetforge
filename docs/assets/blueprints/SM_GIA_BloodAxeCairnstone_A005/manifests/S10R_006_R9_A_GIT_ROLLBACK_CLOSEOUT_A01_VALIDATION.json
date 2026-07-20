@@ -3,7 +3,7 @@
   "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
   "closeout_id": "A005-GIT-S10R-006-R9-A-ROLLBACK-A01",
   "date": "2026-07-20",
-  "status": "pass_precommit_staged_snapshot_232_paths_with_14_preserved_historical_eof_exceptions",
+  "status": "pass_dependency_snapshot_committed_pushed_and_remote_verified",
   "artifact_classification": "proof only",
   "pre_scope_checks": {
     "core_reassessment_complete": true,
@@ -49,10 +49,15 @@
   ],
   "historical_whitespace_exception_decision": "accepted as immutable historical evidence because every warning-bearing file is referenced by one or more later SHA-256 authority locks; cosmetic rewriting would invalidate those evidence links",
   "git_result": {
-    "dependency_snapshot_commit": null,
-    "verification_closeout_commit": null,
-    "push_status": "pending",
-    "verified_remote_head": null
+    "dependency_snapshot_commit": "571d9002e3120cf0c383c78e5e37f0b0353a7f71",
+    "dependency_snapshot_commit_subject": "Checkpoint BloodAxe A005 authority through R9",
+    "dependency_snapshot_commit_path_count": 232,
+    "verification_closeout_commit": "intentionally_not_self_embedded; identify as the immediate child metadata commit of the dependency snapshot",
+    "push_status": "pass_dependency_snapshot_pushed_to_assetforge_main",
+    "verification_method": "git rev-parse HEAD compared exactly with git ls-remote assetforge refs/heads/main",
+    "verified_remote_head": "571d9002e3120cf0c383c78e5e37f0b0353a7f71",
+    "local_remote_hash_match": true,
+    "a005_scope_clean_after_dependency_snapshot": true
   },
   "authorization_boundary": {
     "rule_evaluation_authorized": false,

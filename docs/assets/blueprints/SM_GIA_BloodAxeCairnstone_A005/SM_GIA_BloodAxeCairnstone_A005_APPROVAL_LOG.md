@@ -22,6 +22,14 @@ Updated: 2026-07-20
 - Production authority: unchanged; rule evaluation, implementation, Step 10
   closeout, Step 11, DCC, Unreal, and production remain unauthorized
 - Pre-staging checkpoint: `Saved/ProjectRecovery/20260720-135030/`
+- Exact dependency snapshot: `232` paths; staged-scope audit passed
+- Dependency snapshot commit:
+  `571d9002e3120cf0c383c78e5e37f0b0353a7f71`
+- Push result: passed to `assetforge/main`
+- Remote verification: local and remote hashes matched exactly at
+  `571d9002e3120cf0c383c78e5e37f0b0353a7f71`
+- A005 rollback scope after the dependency commit: clean
+- Unrelated user work: preserved and excluded
 
 ## S10R-006-R9-A Bounded Rule Decision - Approved
 

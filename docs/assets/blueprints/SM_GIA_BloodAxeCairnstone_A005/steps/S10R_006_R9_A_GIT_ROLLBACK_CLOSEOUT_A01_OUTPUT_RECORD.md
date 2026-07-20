@@ -1,8 +1,8 @@
 # A005 S10R-006-R9-A Git Rollback Closeout A01 Output Record
 
-Status: dependency-complete A005 rollback scope staged and validated; commit and remote verification pending
+Status: dependency-complete A005 rollback snapshot committed, pushed, and remote-verified
 
-Artifact classification: `candidate until pushed rollback anchor verification`
+Artifact classification: `authoritative Git rollback closeout record`
 
 Closeout ID: `A005-GIT-S10R-006-R9-A-ROLLBACK-A01`
 
@@ -72,8 +72,19 @@ are therefore preserved exactly and the warnings are accepted as explicit
 historical-evidence exceptions; no authority record was cosmetically rewritten
 to silence them.
 
-## Required Completion
+## Git Rollback Result
 
-Create and push the dependency snapshot, record and push remote verification,
-verify `assetforge/main`, checkpoint, and stop. Unrelated worktree dirt may
-remain; the A005 rollback scope must be clean and reproducible.
+- Dependency snapshot commit:
+  `571d9002e3120cf0c383c78e5e37f0b0353a7f71`.
+- Commit subject: `Checkpoint BloodAxe A005 authority through R9`.
+- Push: passed to `assetforge/main`.
+- Remote verification: local `HEAD` and
+  `git ls-remote assetforge refs/heads/main` matched exactly at the dependency
+  snapshot commit.
+- A005 rollback scope after the dependency commit: clean.
+
+The immediate metadata closeout commit records this already-proven snapshot;
+its own hash is intentionally not embedded in itself. Unrelated worktree dirt
+remains preserved and outside both commits. The production boundary remains
+the approved R9 stop for Core reassessment, with no evaluation or
+implementation authority.
