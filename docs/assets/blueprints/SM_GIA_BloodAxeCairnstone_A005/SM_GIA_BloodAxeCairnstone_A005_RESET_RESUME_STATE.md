@@ -47,9 +47,15 @@ Technical result:
 - DCC runs and Unreal runs: `0`; geometry, UV, texture, material, FBX, LOD,
   collision, and production outputs: `0`.
 - `S10R-BLOCK-009` is resolved only as the completed Step 11 planning gate.
-- Dependency snapshot commit: pending scoped Git closeout.
-- Push to `assetforge/main` and exact remote verification: pending scoped Git
-  closeout.
+- Exact dependency-complete Git scope: `13/13` paths; outside-scope staged
+  paths, secret matches, and unstaged in-scope differences: `0`.
+- Dependency snapshot commit:
+  `022fc7ff284ebe71feae7f447354afd71b602d2a`.
+- Push to `assetforge/main`: passed; local and remote hashes matched exactly at
+  the dependency snapshot commit.
+- Pre-metadata checkpoint: `Saved/ProjectRecovery/20260720-151841/`.
+- The immediate follow-up metadata commit records this already-proven
+  closeout; its hash is intentionally not self-embedded.
 
 Required next task: stop for the mandatory post-Step-11 restart. After resume,
 inspect the latest checkpoint, Step 11 handoff, construction blueprint, vertex

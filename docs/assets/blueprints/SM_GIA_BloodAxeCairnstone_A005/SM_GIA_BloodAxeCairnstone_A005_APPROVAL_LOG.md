@@ -45,8 +45,17 @@ Updated: 2026-07-20
 - Geometry, DCC, texture, FBX, LOD, collision, Unreal, and production outputs:
   `0`
 - `S10R-BLOCK-009`: resolved only as the completed Step 11 planning gate
-- Dependency snapshot commit: pending scoped Git closeout
-- Push and exact local/remote verification: pending scoped Git closeout
+- Exact dependency-complete staged scope: `13/13` paths; outside scope `0`
+- JSON parse: `5/5`; auditor compile and diff check passed; secret matches
+  and unstaged in-scope differences: `0`
+- Dependency snapshot commit:
+  `022fc7ff284ebe71feae7f447354afd71b602d2a`
+- Push to `assetforge/main`: passed
+- Remote verification: local and remote hashes matched exactly at the
+  dependency snapshot commit
+- Pre-metadata checkpoint: `Saved/ProjectRecovery/20260720-151841/`
+- Immediate metadata closeout commit: records the proven snapshot result; its
+  hash is intentionally not self-embedded
 - Step 11: complete
 - Required next gate: mandatory restart, followed only by preparation of a
   separate Step 12 DCC Source Geometry Candidate contract; no DCC launch or

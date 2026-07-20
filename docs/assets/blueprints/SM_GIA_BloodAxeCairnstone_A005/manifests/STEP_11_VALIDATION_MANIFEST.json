@@ -106,7 +106,7 @@
     "construction_blueprint": "a0859422c14dbf00b51d627c0ba257abc064e7dc78abe5b106bd0c2ee8cc75e7",
     "vertex_authority_map": "bca4b850f61baf8c3c7ebddddffd31bd5b1b7a6be4065282c6ff526ebf22724e",
     "review": "44788fa23d12c0c27737c39eeea5ff4b61877a00994002d3be4a86091ec6bfb4",
-    "output_record": "4713b4abd4bfab25f489fabf922b6515accd7409fa7ab0e8d77d0eb47b2c2432",
+    "output_record": "6b7a700576736e6c08e37615176428219244349747f7f6e4bec7c78b34e8a959",
     "handoff": "1b36a52c39c6b89a0e56a1d6e5d995a9ac3084acbd62bcaee653198b1836708c"
   },
   "scope": {
@@ -118,6 +118,23 @@
     "legacy_A001_A004_inputs_used": 0,
     "dcc_runs": 0,
     "unreal_runs": 0
+  },
+  "git_closeout": {
+    "dependency_scope_paths": 13,
+    "outside_scope_staged_paths": 0,
+    "json_files_parsed": 5,
+    "auditor_compile_passed": true,
+    "diff_check_passed": true,
+    "secret_matches": 0,
+    "unstaged_in_scope_differences": 0,
+    "dependency_snapshot_commit": "022fc7ff284ebe71feae7f447354afd71b602d2a",
+    "push_remote": "assetforge",
+    "push_branch": "main",
+    "push_passed": true,
+    "remote_hash": "022fc7ff284ebe71feae7f447354afd71b602d2a",
+    "local_remote_hash_match": true,
+    "pre_metadata_checkpoint": "Saved/ProjectRecovery/20260720-151841/",
+    "metadata_commit_self_embedded": false
   },
   "routing": {
     "step11_complete": true,

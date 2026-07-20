@@ -97,9 +97,17 @@ Still unstarted:
 
 ## Git Closeout
 
-The dependency snapshot commit, push, and remote verification are recorded in
-the final metadata refresh. The immediate metadata commit is intentionally not
-self-embedded.
+- Exact dependency-complete staged scope: `13/13` paths; outside scope `0`.
+- JSON parse: `5/5`; auditor compile and diff check passed; secret matches and
+  unstaged in-scope differences: `0`.
+- Dependency snapshot commit:
+  `022fc7ff284ebe71feae7f447354afd71b602d2a`.
+- Push to `assetforge/main`: passed.
+- Remote verification: local and remote hashes matched exactly at the
+  dependency snapshot commit.
+- Pre-metadata checkpoint: `Saved/ProjectRecovery/20260720-151841/`.
+- The immediate metadata commit records this proven result and is
+  intentionally not self-embedded.
 
 ## Required Next Action
 

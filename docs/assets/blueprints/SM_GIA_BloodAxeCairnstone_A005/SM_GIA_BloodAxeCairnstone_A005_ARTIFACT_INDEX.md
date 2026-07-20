@@ -40,10 +40,14 @@ production state changed. The blueprint rerun passed `24/24`; the final
 closeout audit passed `27/27` with zero failures. `S10R-BLOCK-009` is resolved
 only as the Step 11 planning gate.
 
-Dependency snapshot commit, push, and exact remote verification: pending
-scoped Git closeout. The mandatory restart is controlling; only Step 12
-contract preparation may follow it, and no DCC or geometry work is authorized
-in this session.
+The exact 13-path dependency snapshot was committed as
+`022fc7ff284ebe71feae7f447354afd71b602d2a`, pushed to `assetforge/main`, and
+verified by exact local/remote hash match. Pre-metadata checkpoint:
+`Saved/ProjectRecovery/20260720-151841/`. The immediate follow-up metadata
+commit records that proven closeout and intentionally does not self-embed its
+own hash. The mandatory restart is controlling; only Step 12 contract
+preparation may follow it, and no DCC or geometry work is authorized in this
+session.
 
 ## Final Step 10 Ten-Item Disposition - Authoritative Closeout
 
