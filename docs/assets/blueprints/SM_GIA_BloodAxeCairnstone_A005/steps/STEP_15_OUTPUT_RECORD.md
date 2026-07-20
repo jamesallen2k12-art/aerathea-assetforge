@@ -1,6 +1,6 @@
 # A005 Step 15 UV / Texture / Material Candidate Output Record
 
-Status: technically complete candidate; pending focused visual review; mandatory restart required after closeout
+Status: technically complete candidate; pending focused visual review; mandatory restart required
 
 Artifact classification: `authoritative Step 15 technical result record`
 
@@ -63,12 +63,22 @@ Drift ledger:
 
 ## Git Closeout
 
-The exact dependency-complete Step 15 snapshot will be committed and pushed
-before the mandatory restart. Its verified commit/checkpoint metadata will be
-recorded immediately after remote verification without staging unrelated user
-work.
+- Exact dependency-complete staged scope: `27/27`; outside scope: `0`.
+- JSON parse and Python AST checks: passed.
+- Builder and auditor schema-only preflights: passed; Blender imports and
+  filesystem writes: `0`.
+- Staged diff check and secret scan: passed.
+- Unstaged in-scope differences: `0`; `244` unrelated worktree entries
+  remained unstaged and untouched.
+- Dependency snapshot commit:
+  `4c61f9dbfec953653334119246244b0206dbf014`.
+- Push to `assetforge/main`: passed.
+- Live remote verification: exact hash match at the dependency snapshot.
+- Pre-metadata checkpoint: `Saved/ProjectRecovery/20260720-184145/`.
+- The immediate metadata closeout commit records this proven result and
+  intentionally does not self-embed its own hash.
 
 ## Required Next Action
 
-Open the review board and review record visibly, complete exact scoped Git
-closeout, then stop for the mandatory restart. Step 16 is not authorized.
+The review board and review record are open visibly. Stop for the mandatory
+restart. Step 16 is not authorized.

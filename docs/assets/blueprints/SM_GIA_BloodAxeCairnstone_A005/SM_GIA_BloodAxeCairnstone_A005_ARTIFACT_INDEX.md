@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A005 Artifact Index
 
-Status: Step 15 technical candidate complete; focused visual approval pending; mandatory restart required after closeout
+Status: Step 15 technical candidate complete and remotely closed; focused visual approval pending; mandatory restart required
 
 Artifact classification: `authoritative`
 
@@ -35,6 +35,14 @@ The approved source remains byte-identical at
 All 18 gates pass; geometry changes, UV1, LOD, collision, FBX, Unreal, and
 visual-canon promotion remain zero. Pipeline status remains `DCC source
 candidate`. Focused visual approval remains Flamestrike's decision.
+
+The exact 27-path dependency snapshot was committed as
+`4c61f9dbfec953653334119246244b0206dbf014`, pushed to
+`assetforge/main`, and verified by exact live remote hash match. The
+pre-metadata checkpoint is `Saved/ProjectRecovery/20260720-184145/`. The
+immediate metadata closeout commit records that proven result and
+intentionally does not self-embed its own hash. The mandatory restart is
+controlling; Step 16 remains unauthorized.
 
 ## Step 14 UV, Base Color, And Material-Interpretation Plan - Authoritative Closeout
 

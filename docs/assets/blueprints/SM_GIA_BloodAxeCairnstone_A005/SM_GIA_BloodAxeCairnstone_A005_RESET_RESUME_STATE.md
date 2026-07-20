@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: Step 15 technical candidate complete; focused visual approval pending; mandatory restart required after closeout
+Status: Step 15 technical candidate complete and remotely closed; focused visual approval pending; mandatory restart required
 
 Artifact classification: `authoritative`
 
@@ -31,8 +31,11 @@ Technical result:
 `pass_step15_candidate_complete_pending_focused_review`.
 
 Pipeline status remains `DCC source candidate`. Focused visual approval is
-pending and remains Flamestrike's decision. Complete exact scoped Git
-closeout, then stop for the mandatory restart. Step 16 is unauthorized.
+pending and remains Flamestrike's decision. The exact 27-path dependency
+snapshot commit `4c61f9dbfec953653334119246244b0206dbf014` is pushed to
+`assetforge/main` and live-remote verified. Pre-metadata checkpoint:
+`Saved/ProjectRecovery/20260720-184145/`. Stop for the mandatory restart.
+Step 16 is unauthorized.
 
 ## Historical Resume Boundary - Step 14 Complete / Mandatory Restart
 

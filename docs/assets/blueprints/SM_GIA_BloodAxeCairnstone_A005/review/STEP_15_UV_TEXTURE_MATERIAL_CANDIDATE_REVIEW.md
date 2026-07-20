@@ -1,6 +1,6 @@
 # A005 Step 15 UV / Texture / Material Candidate Review
 
-Status: technically complete candidate; pending Flamestrike focused visual review; mandatory restart required after closeout
+Status: technically complete candidate; pending Flamestrike focused visual review; mandatory restart required
 
 Artifact classification: `candidate review package; proof only`
 

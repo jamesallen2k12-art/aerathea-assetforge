@@ -6021,3 +6021,13 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260720-184026/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260720-184026/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-20 18:41:45 EDT -0400 - A005 Step15 dependency snapshot 4c61f9d pushed and live assetforge main verified before metadata closeout
+
+- Snapshot: `Saved/ProjectRecovery/20260720-184145/`
+- Git: branch `main`, HEAD `4c61f9d`, status lines `244`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260720-184145/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260720-184145/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260720-184145/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

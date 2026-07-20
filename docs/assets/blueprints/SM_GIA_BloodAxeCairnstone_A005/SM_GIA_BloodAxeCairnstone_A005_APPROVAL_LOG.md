@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A005 Approval Log
 
-Status: Step 15 technical candidate complete; focused visual approval pending; mandatory restart required after closeout
+Status: Step 15 technical candidate complete and remotely closed; focused visual approval pending; mandatory restart required
 
 Artifact classification: `authoritative`
 
@@ -43,8 +43,18 @@ Updated: 2026-07-20
   game-ready, fully game-ready, finished appearance, or visual canon
 - Focused visual decision: pending Flamestrike; technical completion is not
   self-approval of appearance
-- Required next gate: visible focused review, exact scoped closeout, mandatory
-  restart; Step 16 remains unauthorized
+- Exact dependency-complete staged scope: `27/27`; outside scope `0`
+- JSON/Python structure, schema-only preflights, staged diff check, and secret
+  scan: passed; unstaged in-scope differences `0`
+- Unrelated worktree entries preserved unstaged: `244`
+- Dependency snapshot commit:
+  `4c61f9dbfec953653334119246244b0206dbf014`
+- Push to `assetforge/main`: passed; live remote hash matched exactly
+- Pre-metadata checkpoint: `Saved/ProjectRecovery/20260720-184145/`
+- Immediate metadata closeout commit: records the already-proven dependency
+  result and intentionally does not self-embed its own hash
+- Required next gate: mandatory restart; focused visual decision remains
+  pending; Step 16 remains unauthorized
 
 ## Step 14 UV, Base Color, And Material-Interpretation Plan Authority
 
