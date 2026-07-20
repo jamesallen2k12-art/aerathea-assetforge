@@ -1,10 +1,26 @@
 # SM_GIA_BloodAxeCairnstone_A005 Artifact Index
 
-Status: Step 11 complete; authoritative production specification and geometry construction blueprint; final audit passed 27 of 27 after one bounded validation correction; mandatory restart required; Step 12 contract preparation only after restart
+Status: Step 12 DCC source candidate complete; pre-proof audit 16 of 16 and post-proof audit 4 of 4; scoped Git closeout pending; mandatory restart required
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
+
+## Step 12 DCC Source Geometry Candidate - Validated Candidate / Git Closeout Pending
+
+| Artifact | Status | Role |
+|---|---|---|
+| steps/STEP_12_DCC_SOURCE_GEOMETRY_CANDIDATE_CONTRACT.md | authoritative execution boundary | Records Flamestrike's full Step 12 approval, exact closed-world build/audit/proof outputs, fail-closed gates, downstream exclusions, Git closeout, and mandatory restart. |
+| manifests/STEP_12_INPUT_LOCK.json | authoritative | Locks 52 immutable direct and transitive A005 construction authorities by SHA-256. |
+| Tools/DCC/build_bloodaxe_cairnstone_a005_step12_dcc_source.py | candidate | Fresh A005-only schema-capable generator; creates only the declared Blender source and geometry sidecar. |
+| Tools/DCC/audit_bloodaxe_cairnstone_a005_step12_dcc_source.py | candidate | Independent numeric/topology/authority/holdout auditor and post-pass proof packager. |
+| SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_DCCSource_A01.blend | candidate | Four-object Blender DCC source candidate; not DCC game-ready or visually approved. |
+| SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_GEOMETRY_MANIFEST.json | candidate | Complete object, vertex, face, VAG, derivation, topology, bound, contact, and blocked-method lineage sidecar. |
+| manifests/STEP_12_DCC_SOURCE_GEOMETRY_AUDIT.json | proof only | Preserves failed-first-run history, bounded validation correction, 16/16 rerun, and 4/4 post-proof result. |
+| review/STEP_12_DCC_SOURCE_GEOMETRY_CANDIDATE_REVIEW.md | proof only | Visible review boundary and links to six clean local renders plus paired board. |
+| Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/Step12/ | proof only; local-only | Numeric audit, six clean renders, and the paired source/candidate review board; excluded from Git by project recovery policy. |
+| steps/STEP_12_OUTPUT_RECORD.md | authoritative Step 12 result record | Classifies the bounded pass, candidate status, audit history, proof result, exclusions, and next gate. |
+| handoffs/STEP_12_TO_STEP_13_HANDOFF.md | authoritative routing | Requires restart and routes only to later Step 13 review-contract preparation; no repair or downstream escalation. |
 
 ## Step 11 Production Specification And Geometry Construction Blueprint - Authoritative Closeout
 

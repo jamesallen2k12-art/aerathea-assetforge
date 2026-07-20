@@ -1,0 +1,806 @@
+{
+  "schema": "aerathea.step12_dcc_source_geometry_audit.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-STEP12-DCC-SOURCE-GEOMETRY-A01",
+  "date": "2026-07-20",
+  "status": "pass_step12_candidate_proof_complete",
+  "artifact_classification": "proof only",
+  "technical_result": "pass_step12_dcc_source_candidate_complete_pending_step13_review",
+  "tolerance_cm": 1e-05,
+  "gates": [
+    {
+      "id": "G01_locked_inputs",
+      "status": "pass",
+      "evidence": {
+        "count": 52,
+        "failures": 0
+      }
+    },
+    {
+      "id": "G02_contract_and_authority",
+      "status": "pass",
+      "evidence": {
+        "contract": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/STEP_12_DCC_SOURCE_GEOMETRY_CANDIDATE_CONTRACT.md",
+        "whitespace_normalized": true
+      }
+    },
+    {
+      "id": "G03_fresh_A005_firewall",
+      "status": "pass",
+      "evidence": {
+        "builder_ast_parse": true,
+        "imports": [
+          "__future__",
+          "argparse",
+          "hashlib",
+          "json",
+          "math",
+          "os",
+          "sys",
+          "collections",
+          "pathlib",
+          "typing",
+          "bpy"
+        ],
+        "legacy_builder_imports": [],
+        "forbidden_calls_found": [],
+        "legacy_asset_literals_found": [],
+        "core_recovery_literal_is_firewall_only": true,
+        "pass": true
+      }
+    },
+    {
+      "id": "G04_exact_four_objects",
+      "status": "pass",
+      "evidence": {
+        "mesh_objects": [
+          "C001_BODY",
+          "C002_UPPER_TIER",
+          "C003_LOWER_TIER",
+          "C004_APRON"
+        ],
+        "decoration_geometry": []
+      }
+    },
+    {
+      "id": "G05_scene_units_and_transforms",
+      "status": "pass",
+      "evidence": {
+        "scene_units": {
+          "system": "METRIC",
+          "scale_length": 0.009999999776482582,
+          "length_unit": "CENTIMETERS",
+          "pass": true
+        },
+        "transform_failures": 0
+      }
+    },
+    {
+      "id": "G06_exact_bounds_and_stations",
+      "status": "pass",
+      "evidence": {
+        "assembled_min_cm": [
+          -70.0,
+          -55.0,
+          0.0
+        ],
+        "assembled_max_cm": [
+          70.0,
+          55.0,
+          220.0
+        ],
+        "assembled_extent_cm": [
+          140.0,
+          110.0,
+          220.0
+        ],
+        "object_results": {
+          "C004_APRON": {
+            "component_id": "C-004",
+            "bounds": {
+              "min_cm": [
+                -70.0,
+                -55.0,
+                0.0
+              ],
+              "max_cm": [
+                70.0,
+                55.0,
+                10.5
+              ],
+              "extent_cm": [
+                140.0,
+                110.0,
+                10.5
+              ]
+            },
+            "expected_hidden_z_cm": [
+              0.0,
+              10.5
+            ],
+            "hidden_z_pass": true,
+            "topology": {
+              "vertices": 130,
+              "faces": 160,
+              "triangles_evaluated": 256,
+              "edges": 288,
+              "open_edges": 0,
+              "non_manifold_edges": 0,
+              "loose_vertices": 0,
+              "duplicate_faces": 0,
+              "degenerate_faces": 0,
+              "watertight_by_edge_incidence": true
+            },
+            "single_primary_vag_failures": 0,
+            "transform_and_identity_pass": true,
+            "uv_layers": 0,
+            "material_slots": 0
+          },
+          "C003_LOWER_TIER": {
+            "component_id": "C-003",
+            "bounds": {
+              "min_cm": [
+                -55.5,
+                -43.5,
+                9.5
+              ],
+              "max_cm": [
+                55.5,
+                43.5,
+                23.5
+              ],
+              "extent_cm": [
+                111.0,
+                87.0,
+                14.0
+              ]
+            },
+            "expected_hidden_z_cm": [
+              9.5,
+              23.5
+            ],
+            "hidden_z_pass": true,
+            "topology": {
+              "vertices": 82,
+              "faces": 96,
+              "triangles_evaluated": 160,
+              "edges": 176,
+              "open_edges": 0,
+              "non_manifold_edges": 0,
+              "loose_vertices": 0,
+              "duplicate_faces": 0,
+              "degenerate_faces": 0,
+              "watertight_by_edge_incidence": true
+            },
+            "single_primary_vag_failures": 0,
+            "transform_and_identity_pass": true,
+            "uv_layers": 0,
+            "material_slots": 0
+          },
+          "C002_UPPER_TIER": {
+            "component_id": "C-002",
+            "bounds": {
+              "min_cm": [
+                -53.0,
+                -41.0,
+                22.5
+              ],
+              "max_cm": [
+                53.0,
+                41.0,
+                35.5
+              ],
+              "extent_cm": [
+                106.0,
+                82.0,
+                13.0
+              ]
+            },
+            "expected_hidden_z_cm": [
+              22.5,
+              35.5
+            ],
+            "hidden_z_pass": true,
+            "topology": {
+              "vertices": 82,
+              "faces": 96,
+              "triangles_evaluated": 160,
+              "edges": 176,
+              "open_edges": 0,
+              "non_manifold_edges": 0,
+              "loose_vertices": 0,
+              "duplicate_faces": 0,
+              "degenerate_faces": 0,
+              "watertight_by_edge_incidence": true
+            },
+            "single_primary_vag_failures": 0,
+            "transform_and_identity_pass": true,
+            "uv_layers": 0,
+            "material_slots": 0
+          },
+          "C001_BODY": {
+            "component_id": "C-001",
+            "bounds": {
+              "min_cm": [
+                -60.0,
+                -45.0,
+                34.5
+              ],
+              "max_cm": [
+                60.0,
+                45.0,
+                220.0
+              ],
+              "extent_cm": [
+                120.0,
+                90.0,
+                185.5
+              ]
+            },
+            "expected_hidden_z_cm": [
+              34.5,
+              220.0
+            ],
+            "hidden_z_pass": true,
+            "topology": {
+              "vertices": 106,
+              "faces": 112,
+              "triangles_evaluated": 208,
+              "edges": 216,
+              "open_edges": 0,
+              "non_manifold_edges": 0,
+              "loose_vertices": 0,
+              "duplicate_faces": 0,
+              "degenerate_faces": 0,
+              "watertight_by_edge_incidence": true
+            },
+            "single_primary_vag_failures": 0,
+            "transform_and_identity_pass": true,
+            "uv_layers": 0,
+            "material_slots": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "G07_vertex_authority",
+      "status": "pass",
+      "evidence": {
+        "membership_failures": 0,
+        "vag_ids": [
+          "VAG-001-C001-FRONT-XZ",
+          "VAG-002-C001-LEFT-YZ",
+          "VAG-003-C001-CORNER-JOINS",
+          "VAG-004-C001-TOP",
+          "VAG-005-C001-HIDDEN-BOTTOM",
+          "VAG-006-C002-VISIBLE-TIER",
+          "VAG-007-C002-HIDDEN-CLOSURES",
+          "VAG-008-C003-VISIBLE-TIER",
+          "VAG-009-C003-HIDDEN-CLOSURES",
+          "VAG-010-C004-TRANSITION-LATTICE",
+          "VAG-011-C004-SOURCE-OWNED-SILHOUETTE",
+          "VAG-012-C004-FINAL-FIRST-CLOSURE-FACE",
+          "VAG-013-C004-Z0-BOTTOM",
+          "VAG-014-CL001-CL003-HIDDEN-OVERLAP"
+        ],
+        "blend_vertex_counts": {
+          "VAG-010-C004-TRANSITION-LATTICE": 92,
+          "VAG-011-C004-SOURCE-OWNED-SILHOUETTE": 4,
+          "VAG-014-CL001-CL003-HIDDEN-OVERLAP": 105,
+          "VAG-013-C004-Z0-BOTTOM": 1,
+          "VAG-008-C003-VISIBLE-TIER": 48,
+          "VAG-009-C003-HIDDEN-CLOSURES": 2,
+          "VAG-006-C002-VISIBLE-TIER": 48,
+          "VAG-007-C002-HIDDEN-CLOSURES": 2,
+          "VAG-001-C001-FRONT-XZ": 33,
+          "VAG-002-C001-LEFT-YZ": 33,
+          "VAG-003-C001-CORNER-JOINS": 22,
+          "VAG-004-C001-TOP": 9,
+          "VAG-005-C001-HIDDEN-BOTTOM": 1
+        },
+        "manifest_accounted": true,
+        "all_groups_nonempty_or_face": true
+      }
+    },
+    {
+      "id": "G08_manifest_blend_equivalence",
+      "status": "pass",
+      "evidence": {
+        "equivalence": {
+          "coordinate_mismatches": 0,
+          "face_index_mismatches": 0,
+          "vag_mismatches": 0,
+          "maximum_coordinate_delta_cm": 6.935812933761554e-06,
+          "tolerance_cm": 1e-05,
+          "pass": true
+        },
+        "blend_hash_match": true
+      }
+    },
+    {
+      "id": "G09_topology",
+      "status": "pass",
+      "evidence": {
+        "C004_APRON": {
+          "component_id": "C-004",
+          "bounds": {
+            "min_cm": [
+              -70.0,
+              -55.0,
+              0.0
+            ],
+            "max_cm": [
+              70.0,
+              55.0,
+              10.5
+            ],
+            "extent_cm": [
+              140.0,
+              110.0,
+              10.5
+            ]
+          },
+          "expected_hidden_z_cm": [
+            0.0,
+            10.5
+          ],
+          "hidden_z_pass": true,
+          "topology": {
+            "vertices": 130,
+            "faces": 160,
+            "triangles_evaluated": 256,
+            "edges": 288,
+            "open_edges": 0,
+            "non_manifold_edges": 0,
+            "loose_vertices": 0,
+            "duplicate_faces": 0,
+            "degenerate_faces": 0,
+            "watertight_by_edge_incidence": true
+          },
+          "single_primary_vag_failures": 0,
+          "transform_and_identity_pass": true,
+          "uv_layers": 0,
+          "material_slots": 0
+        },
+        "C003_LOWER_TIER": {
+          "component_id": "C-003",
+          "bounds": {
+            "min_cm": [
+              -55.5,
+              -43.5,
+              9.5
+            ],
+            "max_cm": [
+              55.5,
+              43.5,
+              23.5
+            ],
+            "extent_cm": [
+              111.0,
+              87.0,
+              14.0
+            ]
+          },
+          "expected_hidden_z_cm": [
+            9.5,
+            23.5
+          ],
+          "hidden_z_pass": true,
+          "topology": {
+            "vertices": 82,
+            "faces": 96,
+            "triangles_evaluated": 160,
+            "edges": 176,
+            "open_edges": 0,
+            "non_manifold_edges": 0,
+            "loose_vertices": 0,
+            "duplicate_faces": 0,
+            "degenerate_faces": 0,
+            "watertight_by_edge_incidence": true
+          },
+          "single_primary_vag_failures": 0,
+          "transform_and_identity_pass": true,
+          "uv_layers": 0,
+          "material_slots": 0
+        },
+        "C002_UPPER_TIER": {
+          "component_id": "C-002",
+          "bounds": {
+            "min_cm": [
+              -53.0,
+              -41.0,
+              22.5
+            ],
+            "max_cm": [
+              53.0,
+              41.0,
+              35.5
+            ],
+            "extent_cm": [
+              106.0,
+              82.0,
+              13.0
+            ]
+          },
+          "expected_hidden_z_cm": [
+            22.5,
+            35.5
+          ],
+          "hidden_z_pass": true,
+          "topology": {
+            "vertices": 82,
+            "faces": 96,
+            "triangles_evaluated": 160,
+            "edges": 176,
+            "open_edges": 0,
+            "non_manifold_edges": 0,
+            "loose_vertices": 0,
+            "duplicate_faces": 0,
+            "degenerate_faces": 0,
+            "watertight_by_edge_incidence": true
+          },
+          "single_primary_vag_failures": 0,
+          "transform_and_identity_pass": true,
+          "uv_layers": 0,
+          "material_slots": 0
+        },
+        "C001_BODY": {
+          "component_id": "C-001",
+          "bounds": {
+            "min_cm": [
+              -60.0,
+              -45.0,
+              34.5
+            ],
+            "max_cm": [
+              60.0,
+              45.0,
+              220.0
+            ],
+            "extent_cm": [
+              120.0,
+              90.0,
+              185.5
+            ]
+          },
+          "expected_hidden_z_cm": [
+            34.5,
+            220.0
+          ],
+          "hidden_z_pass": true,
+          "topology": {
+            "vertices": 106,
+            "faces": 112,
+            "triangles_evaluated": 208,
+            "edges": 216,
+            "open_edges": 0,
+            "non_manifold_edges": 0,
+            "loose_vertices": 0,
+            "duplicate_faces": 0,
+            "degenerate_faces": 0,
+            "watertight_by_edge_incidence": true
+          },
+          "single_primary_vag_failures": 0,
+          "transform_and_identity_pass": true,
+          "uv_layers": 0,
+          "material_slots": 0
+        }
+      }
+    },
+    {
+      "id": "G10_contacts_and_visible_overlap",
+      "status": "pass",
+      "evidence": {
+        "contacts": {
+          "CL-001": {
+            "station_z_cm": 35.0,
+            "intersection_z_cm": [
+              34.5,
+              35.5
+            ],
+            "intersection_thickness_cm": 1.0,
+            "upper_visible_extent_cm": [
+              100.0,
+              76.0
+            ],
+            "lower_visible_extent_cm": [
+              102.0,
+              78.0
+            ],
+            "strict_visible_containment": true,
+            "numeric_visible_overlap_pixels_proxy": 0,
+            "pass": true
+          },
+          "CL-002": {
+            "station_z_cm": 23.0,
+            "intersection_z_cm": [
+              22.5,
+              23.5
+            ],
+            "intersection_thickness_cm": 1.0,
+            "upper_visible_extent_cm": [
+              106.0,
+              82.0
+            ],
+            "lower_visible_extent_cm": [
+              108.0,
+              84.0
+            ],
+            "strict_visible_containment": true,
+            "numeric_visible_overlap_pixels_proxy": 0,
+            "pass": true
+          },
+          "CL-003": {
+            "station_z_cm": 10.0,
+            "intersection_z_cm": [
+              9.5,
+              10.5
+            ],
+            "intersection_thickness_cm": 1.0,
+            "upper_visible_extent_cm": [
+              111.0,
+              87.0
+            ],
+            "lower_visible_extent_cm": [
+              112.0,
+              88.0
+            ],
+            "strict_visible_containment": true,
+            "numeric_visible_overlap_pixels_proxy": 0,
+            "pass": true
+          }
+        },
+        "shared_vertex_loops": false,
+        "visible_overlap_pixels": 0,
+        "pass": true
+      }
+    },
+    {
+      "id": "G11_holdouts",
+      "status": "pass",
+      "evidence": {
+        "method": "exact non-metric holdout invariants only: taper direction, nested component ordering, and contact order; no pixel pairing, tolerance fit, averaging, or geometry tuning",
+        "checks": {
+          "back_C001_tapers_monotonically_toward_top": true,
+          "right_C001_tapers_monotonically_toward_top": true,
+          "back_C002_wider_than_C001_observed_max": true,
+          "back_C003_wider_than_C002_observed_max": true,
+          "right_C002_deeper_than_C001_observed_max": true,
+          "right_C003_deeper_than_C002_observed_max": true,
+          "back_contact_order": true,
+          "right_contact_order": true,
+          "construction_coordinates_from_holdouts": false,
+          "metric_cross_view_residual_claimed": false
+        },
+        "pass": true
+      }
+    },
+    {
+      "id": "G12_budget",
+      "status": "pass",
+      "evidence": {
+        "triangles": 784,
+        "target": 8000,
+        "hard_cap": 10000
+      }
+    },
+    {
+      "id": "G13_no_downstream_outputs",
+      "status": "pass",
+      "evidence": {
+        "uv_material_lod_collision_absent": true,
+        "decoration_geometry": []
+      }
+    },
+    {
+      "id": "G14_no_pre_audit_proofs",
+      "status": "pass",
+      "evidence": {
+        "preexisting_proofs": []
+      }
+    },
+    {
+      "id": "G15_geometry_manifest",
+      "status": "pass",
+      "evidence": {
+        "manifest": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_GEOMETRY_MANIFEST.json",
+        "status": "candidate_pending_independent_step12_audit"
+      }
+    },
+    {
+      "id": "G16_blend_reopen",
+      "status": "pass",
+      "evidence": {
+        "loaded_blend": "/home/james/Projects/Aerathea/SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_DCCSource_A01.blend",
+        "sha256": "5b4af2275a70e2598e72361382fc7ea6ea318724ac928d71b2c200c768a93095"
+      }
+    }
+  ],
+  "counts": {
+    "gates": 16,
+    "passed": 16,
+    "failed": 0,
+    "objects": 4,
+    "vertices": 400,
+    "faces": 464,
+    "triangles_evaluated": 784,
+    "vag_groups": 14,
+    "proof_renders": 6,
+    "review_boards": 1
+  },
+  "hashes": {
+    "blend": "5b4af2275a70e2598e72361382fc7ea6ea318724ac928d71b2c200c768a93095",
+    "geometry_manifest": "c3c131370dc6d63f89686b78358a4597139ebbb04e59234230e0103736000a82",
+    "builder": "e83dff6d085853ae0a28b406b392f480164352310b86d23887963b15ea8670f2",
+    "auditor": "740b1266263219a434de841027d5b2d9fdf9fc5e906022570f02a0cccb3e7f84",
+    "contract": "e758593d67a69fa96ecc520f793d37d58e52c7b489eb3281b7c73adc53a54bc1",
+    "input_lock": "dce3e9f7258cf4e15905f1c058e21edec2d9b7fdf9866fc1cb25e34165314f2f",
+    "review": "381586c786319a03518717f34c6a9b07b0bee6fceefc81fac8b278600e835812",
+    "auditor_postproof": "bfac0ca0ca856c36ab8e1f7f6f24b9dfba25a19712e94fcb85983b2743439a15"
+  },
+  "proof": {
+    "authorized": true,
+    "rendered": true,
+    "files": [
+      {
+        "view": "front",
+        "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/Step12/SM_GIA_BloodAxeCairnstone_A005_STEP12_FRONT.png",
+        "sha256": "65a9f191fddb3d3f4456bcdde69a424234b74b79b24d29b4c76797943cf8971e"
+      },
+      {
+        "view": "back",
+        "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/Step12/SM_GIA_BloodAxeCairnstone_A005_STEP12_BACK.png",
+        "sha256": "74fa59b7dcc80388c8b651a133bb15941e58953c672815b20352f2495b184902"
+      },
+      {
+        "view": "left",
+        "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/Step12/SM_GIA_BloodAxeCairnstone_A005_STEP12_LEFT.png",
+        "sha256": "50914fd5f62625dc62475f056814f74aad9a9388d951a587bcad424a06e2bd13"
+      },
+      {
+        "view": "right",
+        "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/Step12/SM_GIA_BloodAxeCairnstone_A005_STEP12_RIGHT.png",
+        "sha256": "3b92769f63fadb7d1e0494a9c54e6bca3624aa17a7564790c00647dd6d82e9d8"
+      },
+      {
+        "view": "top",
+        "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/Step12/SM_GIA_BloodAxeCairnstone_A005_STEP12_TOP.png",
+        "sha256": "dc6cbf40286b8cf7b7b3ed3bc86f7b2a23df5eea889d05782bb21a315c99aa24"
+      },
+      {
+        "view": "perspective",
+        "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/Step12/SM_GIA_BloodAxeCairnstone_A005_STEP12_PERSPECTIVE.png",
+        "sha256": "0eeadf566db909021158af9d07a747de3d650847b2f58919196b48f40929b943"
+      }
+    ],
+    "review_board": {
+      "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/Step12/SM_GIA_BloodAxeCairnstone_A005_STEP12_DCC_SOURCE_CANDIDATE_REVIEW_BOARD.png",
+      "sha256": "6bf1ee353749782568391d9dfd8899d0d9061e226f5283c3d81987690a263176"
+    },
+    "source_panels_byte_identical": true,
+    "perspective_orientation": "source-readable front-right orientation; non-metric; no uncertainty marker pass required",
+    "classification": "proof only"
+  },
+  "pipeline_status": "DCC source candidate",
+  "audit_history": [
+    {
+      "run": 1,
+      "result": "fail_closed",
+      "gates": 16,
+      "passed": 14,
+      "failed": 2,
+      "failure_ids": [
+        "G02_contract_and_authority",
+        "G08_manifest_blend_equivalence"
+      ],
+      "proof_renders_created": 0
+    },
+    {
+      "run": 2,
+      "result": "pass",
+      "gates": 16,
+      "passed": 16,
+      "failed": 0,
+      "proof_renders_created": 0
+    }
+  ],
+  "bounded_validation_correction": {
+    "classification": "smallest sufficient read-only auditor correction",
+    "contract_authority_check": "normalize Markdown whitespace without changing the authority statement",
+    "coordinate_tolerance_cm_before": 1e-06,
+    "coordinate_tolerance_cm_after": 1e-05,
+    "maximum_observed_blender_float32_delta_cm": 6.935812933761554e-06,
+    "geometry_changed": 0,
+    "geometry_manifest_changed": 0,
+    "source_or_authority_input_changed": 0,
+    "proof_renders_created_before_pass": 0
+  },
+  "proof_history": [
+    {
+      "run": 1,
+      "renders": 6,
+      "board": "failed_before_write",
+      "reason": "bundled Pillow bitmap font rejected one non-ASCII title glyph",
+      "geometry_changed": 0,
+      "source_changed": 0
+    },
+    {
+      "run": 2,
+      "renders_reused_after_hash_verification": 6,
+      "board": "failed_before_write",
+      "reason": "installed Pillow predates the Image.Resampling namespace",
+      "geometry_changed": 0,
+      "source_changed": 0
+    },
+    {
+      "run": 3,
+      "renders_reused_after_hash_verification": 6,
+      "board": "pass_ascii_title_legacy_lanczos_compatibility",
+      "geometry_changed": 0,
+      "source_changed": 0
+    }
+  ],
+  "postproof_gates": [
+    {
+      "id": "P01_six_clean_views",
+      "status": "pass",
+      "evidence": [
+        {
+          "view": "front",
+          "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/Step12/SM_GIA_BloodAxeCairnstone_A005_STEP12_FRONT.png",
+          "sha256": "65a9f191fddb3d3f4456bcdde69a424234b74b79b24d29b4c76797943cf8971e"
+        },
+        {
+          "view": "back",
+          "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/Step12/SM_GIA_BloodAxeCairnstone_A005_STEP12_BACK.png",
+          "sha256": "74fa59b7dcc80388c8b651a133bb15941e58953c672815b20352f2495b184902"
+        },
+        {
+          "view": "left",
+          "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/Step12/SM_GIA_BloodAxeCairnstone_A005_STEP12_LEFT.png",
+          "sha256": "50914fd5f62625dc62475f056814f74aad9a9388d951a587bcad424a06e2bd13"
+        },
+        {
+          "view": "right",
+          "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/Step12/SM_GIA_BloodAxeCairnstone_A005_STEP12_RIGHT.png",
+          "sha256": "3b92769f63fadb7d1e0494a9c54e6bca3624aa17a7564790c00647dd6d82e9d8"
+        },
+        {
+          "view": "top",
+          "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/Step12/SM_GIA_BloodAxeCairnstone_A005_STEP12_TOP.png",
+          "sha256": "dc6cbf40286b8cf7b7b3ed3bc86f7b2a23df5eea889d05782bb21a315c99aa24"
+        },
+        {
+          "view": "perspective",
+          "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/Step12/SM_GIA_BloodAxeCairnstone_A005_STEP12_PERSPECTIVE.png",
+          "sha256": "0eeadf566db909021158af9d07a747de3d650847b2f58919196b48f40929b943"
+        }
+      ]
+    },
+    {
+      "id": "P02_review_board",
+      "status": "pass",
+      "evidence": {
+        "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/Step12/SM_GIA_BloodAxeCairnstone_A005_STEP12_DCC_SOURCE_CANDIDATE_REVIEW_BOARD.png",
+        "sha256": "6bf1ee353749782568391d9dfd8899d0d9061e226f5283c3d81987690a263176"
+      }
+    },
+    {
+      "id": "P03_source_panels_unchanged",
+      "status": "pass",
+      "evidence": {
+        "front": "262071198bc0d409e9b68af5ac4f3c6a4768a90b1fd199342035a8a82342c2c5",
+        "back": "8ceae7f5ccf311ded8822fdd623d2b68009102bc07ceaf66708f59d2a013d271",
+        "left": "52212ba783d026a008929e3946cac934281de7d2daec2ada316205059258cba4",
+        "right": "cc6c27405fbd6ea8c46b70966fe559acbd57acb88e58bfdcd6b763ce827a862e",
+        "top": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf",
+        "perspective": "4c49c9661f14ece54abfbfd39da9ef047e6f749638b0842d1e51eaebca2564c7"
+      }
+    },
+    {
+      "id": "P04_candidate_classification",
+      "status": "pass",
+      "evidence": "DCC source candidate; proof only review"
+    }
+  ]
+}

@@ -1,10 +1,51 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: Step 11 complete; authoritative production specification and geometry construction blueprint; final audit passed 27 of 27 after one bounded validation correction; mandatory restart required; Step 12 contract preparation only after restart
+Status: Step 12 DCC source candidate complete; pre-proof audit 16 of 16 and post-proof audit 4 of 4; scoped Git closeout pending; mandatory restart required
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
+
+## Current Resume Boundary - Step 12 Candidate Complete / Git Closeout Pending
+
+Flamestrike stated: `resume    you have full authority and full approval to
+complete step 12 from start to finish no matter what is required`. Under Core
+and the active Blueprint, this authorized the complete bounded Step 12
+contract, fresh A005-only DCC construction, independent audits, proof rendering
+after audit pass, visible review, candidate classification, exact Git closeout,
+and mandatory restart. It does not authorize Step 13 repair/review decisions or
+UV, texture, material, LOD, collision, FBX, or Unreal escalation.
+
+Technical result:
+`pass_step12_dcc_source_candidate_complete_pending_step13_review`.
+
+- Contract ID: `A005-CR-STEP12-DCC-SOURCE-GEOMETRY-A01`.
+- Pre-action checkpoint: `Saved/ProjectRecovery/20260720-152708/`.
+- Immutable inputs: `52/52` matched.
+- Schema-only generator/auditor writes and `bpy` imports: `0`.
+- Fresh Blender source candidate: four independent watertight shells; `400`
+  vertices; `464` faces; `784` evaluated triangles.
+- Exact assembled/component bounds, pivot, component hidden ranges, and all
+  three one-centimeter contact intersections: passed.
+- VAG coverage: `14/14`; unmapped or multiply mapped vertices: `0`.
+- First independent audit: failed closed `14/16`; proof renders `0`.
+- Bounded auditor correction: Markdown whitespace normalization and
+  `0.00001 cm` Blender float32 tolerance; geometry/source/authority changes:
+  `0`.
+- Complete rerun: `16/16`; post-proof gates: `4/4`.
+- Six clean proof renders and one paired board: present under the local-only
+  Step 12 proof root; source panels byte-identical.
+- Visual review: automatically opened; macro geometry visibly remains a
+  candidate and is not self-approved against the richer source.
+- C-005/C-006/C-007 geometry, UV, material, LOD, collision, FBX, Unreal, and
+  Step 13 work: `0`.
+- Current pending operation: exact Step 12 dependency commit/push and remote
+  verification, followed by immediate metadata closeout.
+
+Required next task: complete only that scoped Git closeout, stop for the
+mandatory post-Step-12 restart, then on resume permit only preparation of a
+separate Step 13 DCC Geometry Audit and Flamestrike Review contract. Geometry
+repair is prohibited during Step 13 review.
 
 ## Current Resume Boundary - Step 11 Complete / Mandatory Restart
 
