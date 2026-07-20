@@ -1,0 +1,150 @@
+{
+  "schema": "aerathea.step13_dcc_geometry_review_audit.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-STEP13-DCC-GEOMETRY-REVIEW-A01",
+  "date": "2026-07-20",
+  "status": "pass_step13_geometry_approved_for_later_step14_planning",
+  "artifact_classification": "proof only",
+  "decision": "approved",
+  "approved_candidate": {
+    "path": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_DCCSource_A01.blend",
+    "sha256": "5b4af2275a70e2598e72361382fc7ea6ea318724ac928d71b2c200c768a93095",
+    "pipeline_status": "DCC source candidate; geometry approved for later Step 14 planning",
+    "artifact_classification": "candidate",
+    "visual_canon": false,
+    "dcc_game_ready": false,
+    "fully_game_ready": false
+  },
+  "immutable_inputs": {
+    "count": 40,
+    "matched": 40,
+    "mismatched": 0,
+    "source_panels_unchanged": 6,
+    "step12_proofs_unchanged": 7,
+    "blend_unchanged": true,
+    "geometry_manifest_unchanged": true
+  },
+  "dcc_audit": {
+    "status": "pass_dcc_geometry_review_candidate_approval_recommended",
+    "gates_passed": 13,
+    "gates_total": 13,
+    "failed_gates": [],
+    "objects": 4,
+    "watertight_positive_orientation_volumes": 4,
+    "vertices": 400,
+    "faces": 464,
+    "evaluated_triangles": 784,
+    "lod0_hard_cap": 10000,
+    "bounds_matches": 4,
+    "topology_matches": 4,
+    "identity_transforms": 4,
+    "modifiers": 0,
+    "uv_layers": 0,
+    "material_slots": 0,
+    "lods": 0,
+    "collision_objects": 0,
+    "fbx_outputs": 0,
+    "unreal_outputs": 0,
+    "component_nesting_pass": true,
+    "common_xy_origin_pass": true,
+    "blend_save_operations": 0,
+    "geometry_repairs": 0
+  },
+  "macro_geometry_findings": [
+    {
+      "id": "S13-F-001-C001-MACRO-SILHOUETTE",
+      "component": "C-001",
+      "disposition": "pass",
+      "authority": ["S11-TR-002", "S11-TR-003", "STEP_12 G07/G11"],
+      "finding": "Approved view-owned piecewise-linear faceted envelope and back/right holdout invariants remain intact. Planar facets are bounded approved interpretation, not an unapproved smoothing defect."
+    },
+    {
+      "id": "S13-F-002-C002-C003-COURSES",
+      "component": "C-002/C-003",
+      "disposition": "pass",
+      "authority": ["S11-TR-004", "S11-TR-005", "S11-TR-006", "STEP_12 G06/G10"],
+      "finding": "Independent masonry-course envelopes are distinct, watertight, positively overlapped, and visually separated. Individual stone divisions remain later Normal/Base Color consumers except approved source-critical silhouette breaks."
+    },
+    {
+      "id": "S13-F-003-C004-APRON",
+      "component": "C-004",
+      "disposition": "pass",
+      "authority": ["S11-TR-005", "S11-TR-007", "STEP_12 G07/G11"],
+      "finding": "The apron preserves N3/K80 containment, front/left source-owned inward refinements, and the approved 32-column macro transition. Micro-rubble is deferred."
+    },
+    {
+      "id": "S13-F-004-DECORATION-DEFERRAL",
+      "component": "C-005/C-006/C-007",
+      "disposition": "deferred_non_geometry",
+      "authority": ["S11-TR-009", "Step 13 contract"],
+      "finding": "Blade motif, inscriptions, fissures, stone grain, microchips, individual-stone surface divisions, and appearance response require Step 14 planning. Their absence neither fails geometry nor constitutes finished appearance."
+    },
+    {
+      "id": "S13-F-005-AERATHEA-GEOMETRY-READABILITY",
+      "component": "assembled",
+      "disposition": "pass",
+      "authority": ["Aerathea approved visual style", "Step 11 triangle budget", "Step 12/13 six-view proof"],
+      "finding": "The 220 cm tapered monolith and three-level base remain a readable chunky Blood Axe cairnstone silhouette. The 8,000-triangle value is a target rather than a minimum; the 784-triangle source remains below the hard cap without forcing texture-owned detail into geometry."
+    }
+  ],
+  "review_package_history": [
+    {
+      "run": 1,
+      "status": "fail_closed",
+      "gates_passed": 6,
+      "gates_total": 7,
+      "failed_gate": "P05_candidate_not_clipped",
+      "evidence": "The immutable Step 12 top proof touched both horizontal image boundaries because 154 cm vertical orthographic scale implied only 126 cm horizontal span at 900 by 1100 for a 140 cm apron.",
+      "candidate_changes": 0,
+      "source_changes": 0,
+      "decision_changes": 0
+    },
+    {
+      "run": 2,
+      "status": "pass_after_bounded_presentation_correction",
+      "correction": "Rerender six Step 13 proof-only fixed-camera views from the unchanged blend; top orthographic scale changed only in memory to 190 cm.",
+      "render_gates_passed": 5,
+      "render_gates_total": 5,
+      "review_gates_passed": 8,
+      "review_gates_total": 8,
+      "top_candidate_margins_px": {"left": 44, "top": 231, "right": 45, "bottom": 232},
+      "candidate_changes": 0,
+      "source_changes": 0,
+      "geometry_repairs": 0
+    }
+  ],
+  "review_evidence": {
+    "native_resolution_comparisons": 6,
+    "exact_source_marks": 225,
+    "filled_source_contours": 0,
+    "unified_cross_view_transform_claims": 0,
+    "candidate_clipped_views": 0,
+    "board_path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/Step13/SM_GIA_BloodAxeCairnstone_A005_STEP13_GEOMETRY_REVIEW_BOARD.png",
+    "board_sha256": "09951bca98cb6256e3595b315613d1de589f5307562392d04257882e1eb74c82",
+    "board_role": "presentation thumbnails only; native comparisons are the evidence"
+  },
+  "explicitly_deferred_to_step14_planning": [
+    "UV ownership and seam placement",
+    "visible source-owned Base Color routing",
+    "hidden-surface Base Color continuation",
+    "C-005 bilateral motif",
+    "C-006 linear inscriptions",
+    "C-007 fissures",
+    "Normal-map stone and division detail",
+    "ORM, AO, roughness, metallic, filtering, bake, and emissive decisions"
+  ],
+  "blocked_outputs_created": {
+    "geometry_repair": 0,
+    "uv": 0,
+    "texture": 0,
+    "material": 0,
+    "lod": 0,
+    "collision": 0,
+    "fbx": 0,
+    "unreal": 0,
+    "visual_canon_change": 0,
+    "step14_execution": 0
+  },
+  "next_authority": "after mandatory restart, preparation only of a separate Step 14 UV, Base Color, and Material-Interpretation Plan contract",
+  "mandatory_restart": true
+}

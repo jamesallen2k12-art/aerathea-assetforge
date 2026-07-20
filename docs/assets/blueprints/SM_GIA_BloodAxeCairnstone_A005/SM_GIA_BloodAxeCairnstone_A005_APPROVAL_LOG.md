@@ -1,10 +1,51 @@
 # SM_GIA_BloodAxeCairnstone_A005 Approval Log
 
-Status: Step 12 complete; DCC source candidate validated; pre-proof audit 16 of 16 and post-proof audit 4 of 4; dependency snapshot pushed and remotely verified; mandatory restart required
+Status: Step 13 complete; macro DCC source geometry approved for later Step 14 planning; scoped Git closeout pending
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
+
+## Step 13 DCC Geometry Audit And Review Authority
+
+- Date: 2026-07-20
+- Approver: Flamestrike
+- Approval statement: `resume    You have full Approval and Authority to
+  complete step 13 from beginning to end, no matter what is required`
+- Contract ID: `A005-CR-STEP13-DCC-GEOMETRY-REVIEW-A01`
+- Approved scope: complete bounded Step 13 non-mutating Blender audit,
+  source/measurement/interpretation comparison, proof-only fixed-camera
+  review package, evidence-bound approval/rejection/block classification,
+  visible review, checkpoints, exact scoped commit/push, remote verification,
+  and mandatory restart
+- Blueprint override: `false`
+- Pre-action checkpoint: `Saved/ProjectRecovery/20260720-160223/`
+- Immutable inputs: `40/40` matched
+- Read-only DCC audit: `13/13` passed; four watertight positive-orientation
+  volumes; exact bounds/topology/transforms/nesting preserved; `.blend` saves
+  and geometry repairs `0`
+- First review-package audit: fail closed `6/7`; the historical Step 12 top
+  proof touched both horizontal frame boundaries
+- Drift recovery: old Step 12 top/board preserved and reclassified for the
+  framing defect; fresh Step 13 proof-only top camera scale `190 cm`; candidate,
+  source, and authority changes `0`
+- Fixed-camera render audit: `5/5` passed
+- Final review package: `8/8` passed; six native comparisons; `225` exact
+  source marks; clipped views, filled contours, and unified pixel-transform
+  claims `0`
+- Decision: `approved`
+- Approved candidate SHA-256:
+  `5b4af2275a70e2598e72361382fc7ea6ea318724ac928d71b2c200c768a93095`
+- Pipeline status: `DCC source candidate`; geometry approved for later Step 14
+  planning; not DCC game-ready, fully game-ready, finished appearance, or
+  visual canon
+- C-005/C-006/C-007, UV, Base Color, Normal, ORM, AO, roughness, metallic,
+  filtering, bake, and emissive behavior: deferred; not approved by Step 13
+- UV, texture, material, LOD, collision, FBX, Unreal, visual-canon changes,
+  and Step 14 execution: `0`
+- Exact scoped Git closeout: pending
+- Required next gate after closeout: mandatory restart, then only preparation
+  of a separate Step 14 contract
 
 ## Step 12 DCC Source Geometry Candidate Authority
 

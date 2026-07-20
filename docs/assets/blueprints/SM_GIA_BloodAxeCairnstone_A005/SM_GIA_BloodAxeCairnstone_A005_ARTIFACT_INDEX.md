@@ -1,10 +1,42 @@
 # SM_GIA_BloodAxeCairnstone_A005 Artifact Index
 
-Status: Step 12 complete; DCC source candidate validated; pre-proof audit 16 of 16 and post-proof audit 4 of 4; dependency snapshot pushed and remotely verified; mandatory restart required
+Status: Step 13 complete; macro DCC source geometry approved for later Step 14 planning; scoped Git closeout pending
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
+
+## Step 13 DCC Geometry Audit And Review - Approved / Git Closeout Pending
+
+| Artifact | Status | Role |
+|---|---|---|
+| steps/STEP_13_DCC_GEOMETRY_AUDIT_AND_FLAMESTRIKE_REVIEW_CONTRACT.md | authoritative execution boundary | Records Flamestrike's full Step 13 authority, exact non-mutating review boundary, decision rule, fail-closed gates, exclusions, Git closeout, and mandatory restart. |
+| manifests/STEP_13_INPUT_LOCK.json | authoritative execution input lock | Locks 40 direct Core, Blueprint, source, measurement, interpretation, candidate, and proof inputs by SHA-256. |
+| Tools/DCC/audit_bloodaxe_cairnstone_a005_step13_geometry_review.py | proof-supporting auditor and packager | Performs schema-only preflight, read-only Blender inspection, fixed-camera proof rendering without `.blend` save, evidence marking, clipping checks, and review packaging. |
+| manifests/STEP_13_DCC_GEOMETRY_REVIEW_AUDIT.json | proof only | Records 13/13 DCC gates, the fail-closed first proof audit, the bounded top-camera recovery, 5/5 render gates, 8/8 final review gates, candidate hash, macro findings, and downstream zero counts. |
+| review/STEP_13_DCC_GEOMETRY_REVIEW.md | authoritative Step 13 review decision | Approves the unchanged macro DCC source geometry while keeping C-005/C-006/C-007 and every appearance/material consumer explicitly deferred. |
+| Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/Step13/ | proof only; local-only | Read-only audit JSON, six corrected fixed-camera renders, six native-resolution source/candidate comparisons, and the Step 13 board. |
+| steps/STEP_13_OUTPUT_RECORD.md | authoritative Step 13 result record | Records the approved geometry decision, exact candidate hash, audit history, classifications, exclusions, and restart boundary. |
+| handoffs/STEP_13_TO_STEP_14_HANDOFF.md | authoritative post-Step-13 routing | After restart, permits only later preparation of a separate Step 14 plan contract; no Step 14 execution or downstream work. |
+
+Technical result:
+`pass_step13_geometry_approved_for_later_step14_planning`.
+
+The approved candidate hash is
+`5b4af2275a70e2598e72361382fc7ea6ea318724ac928d71b2c200c768a93095`.
+Its artifact classification remains `candidate` and its pipeline status remains
+`DCC source candidate`; Step 13 approves only the bounded macro geometry for
+later Step 14 planning.
+
+The historical Step 12 top proof touched both horizontal image boundaries.
+It is `invalid for unclipped top-view review; reference only as historical
+proof`; the old Step 12 board is `reference only for Step 13` because its top
+cell inherits that defect. The Step 12 numeric/topology/authority audit and
+unchanged candidate remain valid. The recovery is recorded in the project
+drift ledger and Step 13 audit. Old proof files remain preserved in place.
+
+Exact scoped Git closeout is pending. UV, texture, material, LOD, collision,
+FBX, Unreal, visual-canon changes, and Step 14 execution remain zero.
 
 ## Step 12 DCC Source Geometry Candidate - Validated Candidate / Authoritative Closeout
 

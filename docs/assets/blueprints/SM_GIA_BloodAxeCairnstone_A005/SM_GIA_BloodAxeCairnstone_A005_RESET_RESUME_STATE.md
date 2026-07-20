@@ -1,10 +1,52 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: Step 12 complete; DCC source candidate validated; pre-proof audit 16 of 16 and post-proof audit 4 of 4; dependency snapshot pushed and remotely verified; mandatory restart required
+Status: Step 13 complete; macro DCC source geometry approved for later Step 14 planning; scoped Git closeout pending
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
+
+## Current Resume Boundary - Step 13 Complete / Git Closeout Pending
+
+Flamestrike stated: `resume    You have full Approval and Authority to complete
+step 13 from beginning to end, no matter what is required`. Under Core and the
+active Blueprint, this authorized the complete bounded Step 13 non-mutating
+geometry review, evidence-bound decision, proof recovery, visible review,
+checkpointing, exact scoped Git closeout, and mandatory restart. It did not
+authorize geometry repair or any downstream production.
+
+Technical result:
+`pass_step13_geometry_approved_for_later_step14_planning`.
+
+- Contract ID: `A005-CR-STEP13-DCC-GEOMETRY-REVIEW-A01`.
+- Pre-action checkpoint: `Saved/ProjectRecovery/20260720-160223/`.
+- Immutable direct inputs: `40/40` matched.
+- Read-only Blender audit: `13/13` passed; `.blend` saves and geometry repairs:
+  `0`.
+- Four independently watertight, positive-orientation volumes; exact
+  transforms, bounds, topology, contact/nesting, and `784`-triangle result
+  preserved.
+- First review package: failed closed `6/7` because the old Step 12 top proof
+  touched both horizontal frame boundaries.
+- Core recovery: old Step 12 top proof and board preserved and classified as
+  reference/invalid for unclipped top review; unchanged candidate returned as
+  the last valid state; new Step 13 proof camera used `190 cm` top scale.
+- Fixed-camera render audit: `5/5` passed; final review package: `8/8` passed.
+- Decision: `approved` for bounded macro DCC source geometry only.
+- Approved candidate SHA-256:
+  `5b4af2275a70e2598e72361382fc7ea6ea318724ac928d71b2c200c768a93095`.
+- Pipeline status remains `DCC source candidate`; DCC game-ready, fully
+  game-ready, finished appearance, and visual canon are false.
+- C-005/C-006/C-007 and all UV/Base Color/Normal/ORM/material decisions remain
+  deferred to a separately approved Step 14 plan.
+- UV, texture, material, LOD, collision, FBX, Unreal, visual-canon changes,
+  and Step 14 execution: `0`.
+- Exact scoped Git closeout: pending.
+
+Required next task: finish Step 13 exact scoped Git closeout, push and remotely
+verify `assetforge/main`, record the closeout metadata, then stop for the
+mandatory restart. After restart, only preparation of a separate Step 14 UV,
+Base Color, and Material-Interpretation Plan contract is permitted.
 
 ## Current Resume Boundary - Step 12 Complete / Mandatory Restart
 
