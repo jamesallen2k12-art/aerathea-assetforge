@@ -83,6 +83,24 @@
     "future_step15_gates": 18,
     "material_slots": 1
   },
+  "git_closeout": {
+    "dependency_complete_paths": 16,
+    "staged_paths": 16,
+    "unexpected_staged_paths": 0,
+    "unstaged_in_scope_differences": 0,
+    "json_parse_passed": 6,
+    "python_ast_passed": 1,
+    "staged_diff_check": "pass",
+    "staged_secret_scan": "pass",
+    "dependency_snapshot_commit": "5bcdd6cc95adee69f0e6b36a0b411eb1b15285b5",
+    "push_remote": "assetforge",
+    "push_branch": "main",
+    "push_status": "pass",
+    "live_remote_hash": "5bcdd6cc95adee69f0e6b36a0b411eb1b15285b5",
+    "remote_hash_match": true,
+    "pre_metadata_checkpoint": "Saved/ProjectRecovery/20260720-164624/",
+    "metadata_commit_hash_embedded": false
+  },
   "output_hashes": {
     "contract": "7fc96244e27c51c3938c24ce2441c418894b0d78371c5c64d137aa25e3e9be68",
     "input_lock": "42e6877f8887824a7aeabc36917ee0160c12e0511042df353abfb3bdef8cb0de",
@@ -91,7 +109,7 @@
     "material_manifest": "159f94034408d96746eb6cb64c909093861cdad1e1157b81a2b420d103c74685",
     "delivery_validation_plan": "a7170bdd971c09101bc460fe0fedd4bae7581e27c3e62d1fb7667196fcfbb2e0",
     "review": "f5131428d2784ba7ed93d5dfeaeb3727cb51a086139e016bfde55ce8ff8113a8",
-    "output_record": "57f63decb5ead0e8b4b586e3eb2fcf98798f5fc45826df12a38859a3d5fa6352",
+    "output_record": "4674113ed10cafcafc8c8347aae4a89a445c1454a3ad56007f023828f7383af0",
     "handoff": "ede7c00fbf8e4489dd43837a684a0dbf5a140b1468f0b2c8037ce5b83cb0eb0f"
   },
   "visible_review": {

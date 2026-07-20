@@ -1,12 +1,12 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: Step 14 complete; authoritative UV/Base Color/material plan approved; scoped Git closeout pending
+Status: Step 14 complete; authoritative UV/Base Color/material plan approved; mandatory restart required
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
 
-## Current Resume Boundary - Step 14 Complete / Git Closeout Pending
+## Current Resume Boundary - Step 14 Complete / Mandatory Restart
 
 Flamestrike stated: `resume    You have full authority and approval to complete
 step 14 from start to finish regardless of what you need to do to complete
@@ -47,12 +47,20 @@ Technical result:
   `5b4af2275a70e2598e72361382fc7ea6ea318724ac928d71b2c200c768a93095`.
 - Pipeline status remains `DCC source candidate`; DCC game-ready, fully
   game-ready, finished appearance, and visual canon are false.
-- Exact scoped Git closeout: pending.
+- Exact dependency-complete staged scope: `16/16`; unexpected paths `0`.
+- JSON parse: `6/6`; Python AST: `1/1`; staged diff check and secret scan:
+  passed; unstaged in-scope differences: `0`.
+- Dependency snapshot commit:
+  `5bcdd6cc95adee69f0e6b36a0b411eb1b15285b5`.
+- Push to `assetforge/main`: passed; live remote hash matched exactly.
+- Pre-metadata checkpoint: `Saved/ProjectRecovery/20260720-164624/`.
+- The immediate metadata closeout commit records this proven result and
+  intentionally does not self-embed its own hash.
 
-Required next task: complete the exact Step 14 Git closeout, push and remotely
-verify `assetforge/main`, record the closeout metadata, checkpoint, and stop
-for the mandatory restart. After restart, only preparation of a separate Step
-15 UV and Texture/Material Candidate contract is permitted.
+Required next task: stop for the mandatory post-Step-14 restart. After resume,
+inspect the latest checkpoint and Step 14 authority package. Only preparation
+of a separate Step 15 UV and Texture/Material Candidate contract is permitted;
+Step 15 execution remains unauthorized.
 
 ## Historical Resume Boundary - Step 13 Complete
 

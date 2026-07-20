@@ -49,6 +49,21 @@ relief, response, bake, mip, and filter decision is labeled interpretation.
 - Approved candidate remains byte-identical at
   `5b4af2275a70e2598e72361382fc7ea6ea318724ac928d71b2c200c768a93095`.
 
+## Git Closeout
+
+- Exact dependency-complete staged scope: `16/16`; outside scope: `0`.
+- JSON parse: `6/6`; Python AST: `1/1`.
+- Staged diff check: passed.
+- Staged secret scan: passed.
+- Unstaged in-scope differences: `0`.
+- Dependency snapshot commit:
+  `5bcdd6cc95adee69f0e6b36a0b411eb1b15285b5`.
+- Push to `assetforge/main`: passed.
+- Live remote verification: exact hash match at the dependency snapshot.
+- Pre-metadata checkpoint: `Saved/ProjectRecovery/20260720-164624/`.
+- Immediate metadata closeout commit: records this already-proven result and
+  intentionally does not self-embed its own hash.
+
 ## Classification Boundary
 
 - Step 14 contract, UV/Base Color/material/delivery plans, review, output,
@@ -63,6 +78,5 @@ relief, response, bake, mip, and filter decision is labeled interpretation.
 
 ## Required Next Action
 
-Finish exact scoped Git closeout, push and remotely verify `assetforge/main`,
-record the closeout metadata, checkpoint, and stop for the mandatory restart.
-After restart, only preparation of a separate Step 15 contract is permitted.
+Stop for the mandatory restart. After restart, only preparation of a separate
+Step 15 contract is permitted.

@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A005 Approval Log
 
-Status: Step 14 complete; authoritative UV/Base Color/material plan approved; scoped Git closeout pending
+Status: Step 14 complete; authoritative UV/Base Color/material plan approved; mandatory restart required
 
 Artifact classification: `authoritative`
 
@@ -44,9 +44,17 @@ Updated: 2026-07-20
   collision, FBX, Unreal, and visual-canon changes: `0`
 - Pipeline status: `DCC source candidate`; not DCC game-ready, fully
   game-ready, finished appearance, or visual canon
-- Exact scoped Git closeout: pending
-- Required next gate after closeout: mandatory restart, then only preparation
-  of a separate Step 15 contract
+- Exact dependency-complete staged scope: `16/16`; outside scope `0`
+- JSON parse: `6/6`; Python AST: `1/1`; staged diff check and secret scan:
+  passed; unstaged in-scope differences: `0`
+- Dependency snapshot commit:
+  `5bcdd6cc95adee69f0e6b36a0b411eb1b15285b5`
+- Push to `assetforge/main`: passed; live remote hash matched exactly
+- Pre-metadata checkpoint: `Saved/ProjectRecovery/20260720-164624/`
+- Immediate metadata closeout commit: records the already-proven dependency
+  result and intentionally does not self-embed its own hash
+- Required next gate: mandatory restart, then only preparation of a separate
+  Step 15 contract
 
 ## Step 13 DCC Geometry Audit And Review Authority
 

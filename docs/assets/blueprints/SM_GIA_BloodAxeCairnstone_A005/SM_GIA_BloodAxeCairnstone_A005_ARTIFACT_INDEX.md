@@ -1,12 +1,12 @@
 # SM_GIA_BloodAxeCairnstone_A005 Artifact Index
 
-Status: Step 14 complete; authoritative UV/Base Color/material plan approved; scoped Git closeout pending
+Status: Step 14 complete; authoritative UV/Base Color/material plan approved; mandatory restart required
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
 
-## Step 14 UV, Base Color, And Material-Interpretation Plan - Authoritative / Git Closeout Pending
+## Step 14 UV, Base Color, And Material-Interpretation Plan - Authoritative Closeout
 
 | Artifact | Status | Role |
 |---|---|---|
@@ -34,8 +34,14 @@ interpretation. Perspective remains corroboration only; emissive is rejected.
 The Blender candidate remains byte-identical at
 `5b4af2275a70e2598e72361382fc7ea6ea318724ac928d71b2c200c768a93095`.
 UV layers, textures, materials, bakes, DCC saves, geometry changes, LOD,
-collision, FBX, Unreal, and visual-canon changes remain zero. Exact scoped Git
-closeout is pending.
+collision, FBX, Unreal, and visual-canon changes remain zero.
+
+The exact 16-path dependency snapshot was committed as
+`5bcdd6cc95adee69f0e6b36a0b411eb1b15285b5`, pushed to `assetforge/main`, and
+verified by exact live remote hash match. Pre-metadata checkpoint:
+`Saved/ProjectRecovery/20260720-164624/`. The immediate follow-up metadata
+commit records that proven closeout and intentionally does not self-embed its
+own hash. The mandatory restart is controlling.
 
 ## Step 13 DCC Geometry Audit And Review - Approved / Authoritative Closeout
 
