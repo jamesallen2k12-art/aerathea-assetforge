@@ -1,12 +1,40 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: Step 14 complete; authoritative UV/Base Color/material plan approved; mandatory restart required
+Status: Step 15 technical candidate complete; focused visual approval pending; mandatory restart required after closeout
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
 
-## Current Resume Boundary - Step 14 Complete / Mandatory Restart
+## Current Resume Boundary - Step 15 Technical Candidate Complete / Focused Review Pending
+
+Flamestrike stated: `resume You have full Approval and Authority to complete
+step 15 from start to finish regardless of what that requires`. This authorizes
+the bounded Step 15 lifecycle under Contract
+`A005-CR-STEP15-UV-TEXTURE-MATERIAL-CANDIDATE-A01`; Step 16 remains forbidden.
+
+Attempt 01 was internally rejected before presentation because its UV-derived
+source-owner masks included printed dimension/annotation pixels. Its complete
+output family is `invalid` and preserved at
+`Saved/AssetForgeResearch/quarantine/SM_GIA_BloodAxeCairnstone_A005/Step15_Attempt01_20260720/`.
+
+The approved source candidate still matches SHA-256
+`5b4af2275a70e2598e72361382fc7ea6ea318724ac928d71b2c200c768a93095`.
+The clean rebuild candidate matches SHA-256
+`7befa56a10003c2d424de3db40e2bc402075b79644b0944413e97c92db6cab89`.
+It passed all `18/18` Step 15 gates with zero geometry changes, one UV0, no
+UV1, five annotation-safe masks, three 2K maps, one non-emissive material,
+and six unclipped proof renders. No Attempt 01 output was repaired forward or
+treated as authority.
+
+Technical result:
+`pass_step15_candidate_complete_pending_focused_review`.
+
+Pipeline status remains `DCC source candidate`. Focused visual approval is
+pending and remains Flamestrike's decision. Complete exact scoped Git
+closeout, then stop for the mandatory restart. Step 16 is unauthorized.
+
+## Historical Resume Boundary - Step 14 Complete / Mandatory Restart
 
 Flamestrike stated: `resume    You have full authority and approval to complete
 step 14 from start to finish regardless of what you need to do to complete

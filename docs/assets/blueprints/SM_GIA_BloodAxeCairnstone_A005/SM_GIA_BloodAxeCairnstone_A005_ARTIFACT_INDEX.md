@@ -1,10 +1,40 @@
 # SM_GIA_BloodAxeCairnstone_A005 Artifact Index
 
-Status: Step 14 complete; authoritative UV/Base Color/material plan approved; mandatory restart required
+Status: Step 15 technical candidate complete; focused visual approval pending; mandatory restart required after closeout
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
+
+## Step 15 UV / Texture / Material Candidate - Technical Closeout / Focused Review Pending
+
+| Artifact | Status | Role |
+|---|---|---|
+| steps/STEP_15_UV_TEXTURE_MATERIAL_CANDIDATE_CONTRACT.md | authoritative execution boundary | Records Flamestrike's full Step 15 authority, exact candidate outputs, recovery behavior, 18 gates, visible review, Git closeout, downstream exclusions, and mandatory restart. |
+| manifests/STEP_15_INPUT_LOCK.json | authoritative execution input lock | Locks 25 Core, Blueprint, Step 14, Step 13, source Blender, geometry, and panel inputs plus six decoded source RGB identities. |
+| Tools/DCC/build_bloodaxe_cairnstone_a005_step15_candidate.py | candidate production builder | Creates only the bounded copied Blender candidate, one UV0, five masks, three maps, equivalent audited AO bake, one material, and manifests; imports no Blender API in schema mode. |
+| Tools/DCC/audit_bloodaxe_cairnstone_a005_step15_candidate.py | proof-supporting independent auditor and packager | Independently checks all 18 gates, source-object annotation safety, geometry/UV/maps/material/status/firewall, and creates mask preflight plus fixed-camera review evidence without saving the candidate. |
+| SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_UVTextureMaterialCandidate_A01.blend | candidate | Clean copied Step 15 Blender candidate; one UV0 and one shared material; geometry unchanged; not DCC game-ready or visually approved. |
+| SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_STEP15_CANDIDATE_MANIFEST.json | candidate | Complete hashes, UV/mask/map/bake/material/classification/forbidden-output sidecar. |
+| SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/ | candidate | Five owner masks, 2K Base Color/DirectX Normal/ORM, AO proof, classification, and mask manifest; exactness limited to declared source-owned mip-0 RGB. |
+| manifests/STEP_15_VALIDATION_MANIFEST.json | proof only | Tracked 18/18 summary, hashes, clean-rebuild recovery, zero-geometry-change result, proof counts, and downstream zeros. |
+| review/STEP_15_UV_TEXTURE_MATERIAL_CANDIDATE_REVIEW.md | candidate review package; proof only | Focused visible review boundary; technical pass is not appearance self-approval. |
+| Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/Step15/ | proof only; local-only | Final audit, native mask preflight, six renders, native comparisons, and review board. |
+| steps/STEP_15_CORE_RECOVERY_A01_OUTPUT_RECORD.md | authoritative recovery record | Records Attempt 01 rejection, drift cause, quarantine, return to last valid source, and clean rebuild result. |
+| Saved/AssetForgeResearch/quarantine/SM_GIA_BloodAxeCairnstone_A005/Step15_Attempt01_20260720/ | invalid; quarantined; local-only | Preserves all 34 Attempt 01 files and key hashes; never presented or promoted. |
+| steps/STEP_15_OUTPUT_RECORD.md | authoritative Step 15 technical result record | Records `pass_step15_candidate_complete_pending_focused_review`, exact classifications, and mandatory stop. |
+| handoffs/STEP_15_TO_STEP_16_HANDOFF.md | authoritative blocked routing | Requires focused visual approval and mandatory restart; Step 16 remains unauthorized. |
+
+Technical result:
+`pass_step15_candidate_complete_pending_focused_review`.
+
+The clean candidate SHA-256 is
+`7befa56a10003c2d424de3db40e2bc402075b79644b0944413e97c92db6cab89`.
+The approved source remains byte-identical at
+`5b4af2275a70e2598e72361382fc7ea6ea318724ac928d71b2c200c768a93095`.
+All 18 gates pass; geometry changes, UV1, LOD, collision, FBX, Unreal, and
+visual-canon promotion remain zero. Pipeline status remains `DCC source
+candidate`. Focused visual approval remains Flamestrike's decision.
 
 ## Step 14 UV, Base Color, And Material-Interpretation Plan - Authoritative Closeout
 

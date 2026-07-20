@@ -1,0 +1,454 @@
+{
+  "schema": "aerathea.step15_source_mask_manifest.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-STEP15-UV-TEXTURE-MATERIAL-CANDIDATE-A01",
+  "date": "2026-07-20",
+  "status": "candidate_masks_generated_no_manual_edits",
+  "artifact_classification": "candidate interpretation; not source evidence",
+  "rule": {
+    "status": "approved deterministic interpretation for future Step 15 execution",
+    "not_source_evidence": true,
+    "paper_reference": "per-channel median RGB of the outer eight-pixel panel border",
+    "foreground_seed_predicate": "max(abs(R-paper_R), abs(G-paper_G), abs(B-paper_B)) >= 24 OR (R-max(G,B) >= 18 AND R >= 50)",
+    "geometry_restriction": "intersect the predicate with the depth-tested raster coverage of the approved face owner, grown by one pixel only to retain antialias fringe",
+    "small_component_rule": "remove an 8-connected foreground component smaller than four pixels unless it lies within two pixels of a component at least 64 pixels in size",
+    "component_owner": "the rasterized approved C-001/C-002/C-003/C-004 face identity supplies the primary component label",
+    "manual_pixel_changes_allowed": false,
+    "failure_policy": "If the deterministic matte includes labels/grid/dimensions or excludes material source pixels, Step 15 blocks and requires a separately approved rule revision; do not hand-correct the mask.",
+    "review_required": "native-resolution mask/source comparison for all five owner views before map acceptance"
+  },
+  "records": [
+    {
+      "view": "front",
+      "source_path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_FRONT.png",
+      "source_size": [
+        483,
+        525
+      ],
+      "paper_rgb": [
+        253,
+        253,
+        253
+      ],
+      "raw_red_predicate_pixels": 10272,
+      "central_object_bbox_inclusive_px": [
+        104,
+        34,
+        397,
+        427
+      ],
+      "source_object_selection": {
+        "method": "largest_8_connected_raw_foreground_component_before_any_growth",
+        "selected_pixels": 67223,
+        "second_largest_pixels": 2585,
+        "dominance_ratio": 26.00502901353965,
+        "bbox_density": 0.5803290859491005,
+        "horizontal_center_offset_fraction": 0.019668737060041408,
+        "component_count": 97,
+        "safe_against_thin_external_annotation_components": true
+      },
+      "coverage_pixels": 71329,
+      "owned_mask_pixels": 60761,
+      "owned_pixels_outside_selected_object_or_2px_fringe": 0,
+      "owned_red_pixels": 10039,
+      "component_owned_pixels": {
+        "C-001": 50284,
+        "C-002": 4786,
+        "C-003": 5271,
+        "C-004": 420
+      },
+      "mask_path": "SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/Masks/SM_GIA_BloodAxeCairnstone_A005_SOURCE_OWNED_MASK_FRONT_A01.png",
+      "mask_sha256": "327155c8cf716853c8829fe151e74aa4c14a6a05b74bff106d0cc0e19c675bdc",
+      "manual_pixel_edits": 0
+    },
+    {
+      "view": "back",
+      "source_path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_BACK.png",
+      "source_size": [
+        522,
+        401
+      ],
+      "paper_rgb": [
+        253,
+        253,
+        253
+      ],
+      "raw_red_predicate_pixels": 4999,
+      "central_object_bbox_inclusive_px": [
+        120,
+        7,
+        365,
+        318
+      ],
+      "source_object_selection": {
+        "method": "largest_8_connected_raw_foreground_component_before_any_growth",
+        "selected_pixels": 43421,
+        "second_largest_pixels": 2228,
+        "dominance_ratio": 19.48877917414722,
+        "bbox_density": 0.5657311861580154,
+        "horizontal_center_offset_fraction": 0.034482758620689655,
+        "component_count": 105,
+        "safe_against_thin_external_annotation_components": true
+      },
+      "coverage_pixels": 47213,
+      "owned_mask_pixels": 39241,
+      "owned_pixels_outside_selected_object_or_2px_fringe": 0,
+      "owned_red_pixels": 4884,
+      "component_owned_pixels": {
+        "C-001": 32330,
+        "C-002": 2912,
+        "C-003": 3639,
+        "C-004": 360
+      },
+      "mask_path": "SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/Masks/SM_GIA_BloodAxeCairnstone_A005_SOURCE_OWNED_MASK_BACK_A01.png",
+      "mask_sha256": "7238e7244942ad924e68df57af0d334d2334a3ddd9978fdd5ad00c8520ec6371",
+      "manual_pixel_edits": 0
+    },
+    {
+      "view": "left",
+      "source_path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_LEFT.png",
+      "source_size": [
+        484,
+        401
+      ],
+      "paper_rgb": [
+        253,
+        253,
+        253
+      ],
+      "raw_red_predicate_pixels": 4298,
+      "central_object_bbox_inclusive_px": [
+        118,
+        7,
+        343,
+        318
+      ],
+      "source_object_selection": {
+        "method": "largest_8_connected_raw_foreground_component_before_any_growth",
+        "selected_pixels": 34508,
+        "second_largest_pixels": 2134,
+        "dominance_ratio": 16.170571696344894,
+        "bbox_density": 0.48939187656001815,
+        "horizontal_center_offset_fraction": 0.022727272727272728,
+        "component_count": 93,
+        "safe_against_thin_external_annotation_components": true
+      },
+      "coverage_pixels": 20161,
+      "owned_mask_pixels": 20938,
+      "owned_pixels_outside_selected_object_or_2px_fringe": 0,
+      "owned_red_pixels": 2933,
+      "component_owned_pixels": {
+        "C-001": 17188,
+        "C-002": 1310,
+        "C-003": 1663,
+        "C-004": 777
+      },
+      "mask_path": "SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/Masks/SM_GIA_BloodAxeCairnstone_A005_SOURCE_OWNED_MASK_LEFT_A01.png",
+      "mask_sha256": "f50f661b8e2eea55bb97880082a228dd6ad11f2093de324cbc5e34064afb6770",
+      "manual_pixel_edits": 0
+    },
+    {
+      "view": "right",
+      "source_path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_RIGHT.png",
+      "source_size": [
+        367,
+        372
+      ],
+      "paper_rgb": [
+        253,
+        253,
+        253
+      ],
+      "raw_red_predicate_pixels": 3729,
+      "central_object_bbox_inclusive_px": [
+        85,
+        9,
+        278,
+        295
+      ],
+      "source_object_selection": {
+        "method": "largest_8_connected_raw_foreground_component_before_any_growth",
+        "selected_pixels": 27526,
+        "second_largest_pixels": 2102,
+        "dominance_ratio": 13.095147478591818,
+        "bbox_density": 0.49437839002837747,
+        "horizontal_center_offset_fraction": 0.004087193460490463,
+        "component_count": 90,
+        "safe_against_thin_external_annotation_components": true
+      },
+      "coverage_pixels": 15891,
+      "owned_mask_pixels": 16516,
+      "owned_pixels_outside_selected_object_or_2px_fringe": 0,
+      "owned_red_pixels": 2835,
+      "component_owned_pixels": {
+        "C-001": 13454,
+        "C-002": 1122,
+        "C-003": 1275,
+        "C-004": 665
+      },
+      "mask_path": "SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/Masks/SM_GIA_BloodAxeCairnstone_A005_SOURCE_OWNED_MASK_RIGHT_A01.png",
+      "mask_sha256": "88c387c93e7d5fd9a51163e823bdeba5b63852a0a4d24478757f8fac10e2b497",
+      "manual_pixel_edits": 0
+    },
+    {
+      "view": "top",
+      "source_path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_TOP.png",
+      "source_size": [
+        337,
+        371
+      ],
+      "paper_rgb": [
+        253,
+        253,
+        253
+      ],
+      "raw_red_predicate_pixels": 6645,
+      "central_object_bbox_inclusive_px": [
+        29,
+        29,
+        240,
+        262
+      ],
+      "source_object_selection": {
+        "method": "largest_8_connected_raw_foreground_component_before_any_growth",
+        "selected_pixels": 39442,
+        "second_largest_pixels": 1881,
+        "dominance_ratio": 20.96863370547581,
+        "bbox_density": 0.7950733752620545,
+        "horizontal_center_offset_fraction": 0.09940652818991098,
+        "component_count": 109,
+        "safe_against_thin_external_annotation_components": true
+      },
+      "coverage_pixels": 20215,
+      "owned_mask_pixels": 17492,
+      "owned_pixels_outside_selected_object_or_2px_fringe": 0,
+      "owned_red_pixels": 3026,
+      "component_owned_pixels": {
+        "C-001": 4663,
+        "C-002": 0,
+        "C-003": 0,
+        "C-004": 12829
+      },
+      "mask_path": "SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/Masks/SM_GIA_BloodAxeCairnstone_A005_SOURCE_OWNED_MASK_TOP_A01.png",
+      "mask_sha256": "79709441ae480ab4a1116e5f3389b0b47532f0341d9d98604851f5d90408c66c",
+      "manual_pixel_edits": 0
+    }
+  ],
+  "palettes": {
+    "C-001": [
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        16,
+        14,
+        13
+      ],
+      [
+        20,
+        0,
+        0
+      ],
+      [
+        37,
+        35,
+        33
+      ],
+      [
+        38,
+        0,
+        0
+      ],
+      [
+        46,
+        44,
+        41
+      ],
+      [
+        52,
+        51,
+        48
+      ],
+      [
+        59,
+        58,
+        54
+      ]
+    ],
+    "C-002": [
+      [
+        6,
+        4,
+        3
+      ],
+      [
+        24,
+        22,
+        19
+      ],
+      [
+        34,
+        30,
+        27
+      ],
+      [
+        47,
+        0,
+        1
+      ],
+      [
+        49,
+        44,
+        38
+      ],
+      [
+        81,
+        75,
+        77
+      ],
+      [
+        112,
+        111,
+        107
+      ],
+      [
+        123,
+        128,
+        123
+      ]
+    ],
+    "C-003": [
+      [
+        4,
+        2,
+        1
+      ],
+      [
+        13,
+        11,
+        8
+      ],
+      [
+        22,
+        20,
+        17
+      ],
+      [
+        31,
+        27,
+        23
+      ],
+      [
+        39,
+        34,
+        31
+      ],
+      [
+        46,
+        43,
+        37
+      ],
+      [
+        53,
+        51,
+        44
+      ],
+      [
+        67,
+        64,
+        55
+      ]
+    ],
+    "C-004": [
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        17,
+        10,
+        7
+      ],
+      [
+        23,
+        0,
+        0
+      ],
+      [
+        28,
+        22,
+        20
+      ],
+      [
+        35,
+        33,
+        30
+      ],
+      [
+        50,
+        45,
+        42
+      ],
+      [
+        63,
+        60,
+        55
+      ],
+      [
+        79,
+        74,
+        71
+      ]
+    ]
+  },
+  "global_fallback_palette": [
+    [
+      3,
+      0,
+      0
+    ],
+    [
+      11,
+      9,
+      8
+    ],
+    [
+      22,
+      21,
+      19
+    ],
+    [
+      25,
+      0,
+      0
+    ],
+    [
+      35,
+      33,
+      30
+    ],
+    [
+      44,
+      42,
+      39
+    ],
+    [
+      50,
+      49,
+      46
+    ],
+    [
+      56,
+      55,
+      52
+    ]
+  ],
+  "palette_algorithm": "weighted deterministic PAM over the 512 most frequent owned non-red source RGB triplets; seed 0; lexicographic tie break",
+  "source_object_selection_rule": "largest 8-connected raw foreground-predicate component before any growth; minimum 8x dominance, 0.40 bbox density, central containment, and no border contact",
+  "annotation_contamination_policy": "every owned pixel must remain within the selected raw object component or its two-pixel fringe; zero pixels outside required",
+  "manual_pixel_edits": 0,
+  "source_mutations": 0
+}

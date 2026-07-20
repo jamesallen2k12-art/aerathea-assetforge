@@ -1,10 +1,50 @@
 # SM_GIA_BloodAxeCairnstone_A005 Approval Log
 
-Status: Step 14 complete; authoritative UV/Base Color/material plan approved; mandatory restart required
+Status: Step 15 technical candidate complete; focused visual approval pending; mandatory restart required after closeout
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
+
+## Step 15 UV / Texture / Material Candidate Execution Authority
+
+- Date: 2026-07-20
+- Approver: Flamestrike
+- Approval statement: `resume You have full Approval and Authority to
+  complete step 15 from start to finish regardless of what that requires`
+- Contract ID: `A005-CR-STEP15-UV-TEXTURE-MATERIAL-CANDIDATE-A01`
+- Approved scope: complete bounded Step 15 contract/input lock, clean copied
+  Blender candidate, one UV0, five deterministic owner masks, 2K Base Color/
+  DirectX Normal/ORM, one non-emissive material, independent 18-gate audit,
+  six-view proof package, Core recovery if required, visible review,
+  checkpoints, exact scoped Git closeout, remote verification, and mandatory
+  restart
+- Blueprint override: `false`; Step 16 authority: `false`
+- Pre-action checkpoint: `Saved/ProjectRecovery/20260720-175240/`
+- Immutable inputs: `25/25`; source RGB identities: `6/6`
+- Attempt 01: internally rejected before presentation; annotation-contaminated
+  UV-placement interpretation; complete family `invalid` and `quarantined`
+- Clean rebuild checkpoint: `Saved/ProjectRecovery/20260720-183202/`
+- Clean candidate SHA-256:
+  `7befa56a10003c2d424de3db40e2bc402075b79644b0944413e97c92db6cab89`
+- Source SHA-256 unchanged:
+  `5b4af2275a70e2598e72361382fc7ea6ea318724ac928d71b2c200c768a93095`
+- Geometry changes `0`; UV0 layers `1`; UV1 layers `0`; masks `5`; manual
+  mask edits `0`; source-owned pixels outside object/fringe `0`
+- Maps: three 2K maps; metallic identically zero; emissive absent
+- Material: one shared opaque, one-sided, non-emissive slot
+- Independent preproof audit: `17/18`, render gate pending, failures `0`
+- Final independent audit: `18/18`; pending `0`; failures `0`
+- Proof package: six fixed-camera renders, five native mask comparisons, six
+  native material comparisons, one board; clipped views `0`
+- Technical result:
+  `pass_step15_candidate_complete_pending_focused_review`
+- Artifact/pipeline status: `candidate`; `DCC source candidate`; not DCC
+  game-ready, fully game-ready, finished appearance, or visual canon
+- Focused visual decision: pending Flamestrike; technical completion is not
+  self-approval of appearance
+- Required next gate: visible focused review, exact scoped closeout, mandatory
+  restart; Step 16 remains unauthorized
 
 ## Step 14 UV, Base Color, And Material-Interpretation Plan Authority
 

@@ -1,0 +1,169 @@
+{
+  "schema": "aerathea.step15_uv_texture_material_candidate_input_lock.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-STEP15-UV-TEXTURE-MATERIAL-CANDIDATE-A01",
+  "date": "2026-07-20",
+  "status": "locked_pre_execution",
+  "artifact_classification": "authoritative execution input lock",
+  "flamestrike_authority": {
+    "statement": "resume You have full Approval and Authority to complete step 15 from start to finish regardless of what that requires",
+    "scope": "complete bounded Step 15 candidate build, independent audit, fixed-camera proof package, visible review, exact scoped Git closeout, remote verification, and mandatory restart",
+    "blueprint_override_authorized": false,
+    "step16_authorized": false
+  },
+  "pre_action_checkpoint": "Saved/ProjectRecovery/20260720-175240/",
+  "git_pre_action": {
+    "branch": "main",
+    "head": "13d2cbf323e0485c73330034a173562e040c7ab0",
+    "remote": "assetforge/main",
+    "remote_head": "13d2cbf323e0485c73330034a173562e040c7ab0",
+    "status_line_count_before_step15_files": 244,
+    "unrelated_worktree_entries_preserved": true
+  },
+  "locked": true,
+  "counts": {
+    "locked_inputs": 25,
+    "hashes_present": 25,
+    "missing_inputs": 0,
+    "source_panels": 6,
+    "texture_owner_panels": 5,
+    "perspective_corroboration_panels": 1,
+    "step15_validation_gates": 18
+  },
+  "locked_inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "5d2d2637a58113f0a6f5ec92e40d8bb2bda9e03fb58b4868a0d9dfbb3b57ad55",
+      "role": "Core authority"
+    },
+    {
+      "path": "docs/projects/assetforge/BLOODAXE_CAIRNSTONE_PIXEL_EXACT_FRESH_START_MULTISTEP_PLAN.md",
+      "sha256": "ba6784498d792dc85dd431c807f59620d6851af97b4cd15efe89c44a397b10b6",
+      "role": "Step 15 Blueprint"
+    },
+    {
+      "path": "docs/assets/CONCEPT_ART_TO_GAME_READY_ASSET_PIPELINE.md",
+      "sha256": "761b7e24154d0c68069efc89f21678f2fc9c2a6cb7863b4c78277b39c651655d",
+      "role": "pipeline vocabulary"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_SOURCE_AUTHORITY_LOCK.md",
+      "sha256": "ac51c7c55483dcb5259da530e197ea611655cd1aeb2ad2a522997dc27117e161",
+      "role": "source identity authority"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/STEP_15_UV_TEXTURE_MATERIAL_CANDIDATE_CONTRACT.md",
+      "sha256": "22ebf7eed9743f8a5f551c98a73edebfb6173839b3e369cbddbba5422a4d65b9",
+      "role": "Step 15 execution boundary"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_14_INPUT_LOCK.json",
+      "sha256": "42e6877f8887824a7aeabc36917ee0160c12e0511042df353abfb3bdef8cb0de",
+      "role": "approved Step 14 dependency lock"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_14_UV_OWNERSHIP_PLAN.json",
+      "sha256": "ab0367c9ae2e7741822e9937f55e95d653e15914faef2f7f5977718088010283",
+      "role": "authoritative UV0 ownership and packing plan"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_14_BASE_COLOR_OWNERSHIP_MANIFEST.json",
+      "sha256": "c04c44aba1a7efacb9a2fc2f3146c3705ed7b9a80801e3ee2ff6b9e08ec97970",
+      "role": "authoritative masks, RGB transfer, continuation, and decoration rules"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_14_MATERIAL_INTERPRETATION_MANIFEST.json",
+      "sha256": "159f94034408d96746eb6cb64c909093861cdad1e1157b81a2b420d103c74685",
+      "role": "authoritative Normal, ORM, bake, material, and emissive rules"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_14_TEXTURE_DELIVERY_AND_VALIDATION_PLAN.json",
+      "sha256": "a7170bdd971c09101bc460fe0fedd4bae7581e27c3e62d1fb7667196fcfbb2e0",
+      "role": "authoritative names, delivery, filtering, and 18 acceptance gates"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_14_VALIDATION_MANIFEST.json",
+      "sha256": "e6978ba1b344da1be351d9ba0db661ec3e02aa41bd019eea0e83c1feabd34025",
+      "role": "Step 14 validated authority proof"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/review/STEP_14_UV_BASECOLOR_MATERIAL_PLAN_REVIEW.md",
+      "sha256": "f5131428d2784ba7ed93d5dfeaeb3727cb51a086139e016bfde55ce8ff8113a8",
+      "role": "approved Step 14 visible planning decision"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/STEP_14_OUTPUT_RECORD.md",
+      "sha256": "4674113ed10cafcafc8c8347aae4a89a445c1454a3ad56007f023828f7383af0",
+      "role": "authoritative Step 14 result"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/handoffs/STEP_14_TO_STEP_15_HANDOFF.md",
+      "sha256": "ede7c00fbf8e4489dd43837a684a0dbf5a140b1468f0b2c8037ce5b83cb0eb0f",
+      "role": "authoritative Step 15 routing"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_13_DCC_GEOMETRY_REVIEW_AUDIT.json",
+      "sha256": "780cb899813bc9c972f465f3be3955645c33665de0922e01aa7b0a8dcb500c78",
+      "role": "approved geometry identity audit"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/review/STEP_13_DCC_GEOMETRY_REVIEW.md",
+      "sha256": "2957c04793ca02f1cfa5145f28e34c29c68ae614ce9dfe9d9ea572701d74c5e9",
+      "role": "approved geometry decision and appearance deferral"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/STEP_13_OUTPUT_RECORD.md",
+      "sha256": "023e51f96d4d2f0a572fc561ca6beb848bdee74e5b031750ca81bb7b8cdda4fe",
+      "role": "authoritative Step 13 result"
+    },
+    {
+      "path": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_DCCSource_A01.blend",
+      "sha256": "5b4af2275a70e2598e72361382fc7ea6ea318724ac928d71b2c200c768a93095",
+      "role": "approved source geometry candidate opened read-only"
+    },
+    {
+      "path": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_GEOMETRY_MANIFEST.json",
+      "sha256": "c3c131370dc6d63f89686b78358a4597139ebbb04e59234230e0103736000a82",
+      "role": "approved component, face, and vertex lineage"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_FRONT.png",
+      "sha256": "262071198bc0d409e9b68af5ac4f3c6a4768a90b1fd199342035a8a82342c2c5",
+      "role": "front native RGB owner"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_BACK.png",
+      "sha256": "8ceae7f5ccf311ded8822fdd623d2b68009102bc07ceaf66708f59d2a013d271",
+      "role": "back native RGB owner"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_LEFT.png",
+      "sha256": "52212ba783d026a008929e3946cac934281de7d2daec2ada316205059258cba4",
+      "role": "left native RGB owner"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_RIGHT.png",
+      "sha256": "cc6c27405fbd6ea8c46b70966fe559acbd57acb88e58bfdcd6b763ce827a862e",
+      "role": "right native RGB owner"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_TOP.png",
+      "sha256": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf",
+      "role": "top native RGB owner"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_PERSPECTIVE.png",
+      "sha256": "4c49c9661f14ece54abfbfd39da9ef047e6f749638b0842d1e51eaebca2564c7",
+      "role": "perspective corroboration only; never a texture owner"
+    }
+  ],
+  "source_pixel_hashes": {
+    "front": "d4fb34cb01ce6eaa04213a5a7c517743960daec6dcf638c53ec80a958ecc807f",
+    "back": "9256a8df175cbf54ca0662b11e0c5f5f6be4e670b10a9783efc1d6e9e26a56b1",
+    "left": "96a10daa637b28b879b5dd210bad3526e87499218dece9ca4ed0560046c9bddb",
+    "right": "f6201cbae75fa061f7614893d7f2c081149a350fc6d64ad510b49ef5c12d7610",
+    "top": "eda0f5d691336489e257a44b09f58b8543b023bd4edc0893d5fab68ad8dbf05f",
+    "perspective": "9b772aefc3aea81a65a419863a85d3682a9e870505a419eeacef9a582568bd8f"
+  },
+  "approved_source_candidate_sha256": "5b4af2275a70e2598e72361382fc7ea6ea318724ac928d71b2c200c768a93095"
+}

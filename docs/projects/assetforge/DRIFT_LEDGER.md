@@ -24,6 +24,20 @@ Core authority: `AGENTS.md` Core Principles govern this ledger. Drifted artifact
 
 ## Entries
 
+### 2026-07-20 18:28 EDT - A005 Step 15 Annotation-Contaminated Source-Owner Masks
+
+- Asset or scope: `SM_GIA_BloodAxeCairnstone_A005` Step 15 Attempt 01 UV placement, five source-owner masks, texture/material candidate, and proof package.
+- Detected by: Codex internal visual inspection of the native owner-mask comparisons and material review board before visible presentation. The front mask owned the printed `35cm` dimension annotation, the top ownership was incomplete/misregistered, and the material render sampled annotation-contaminated regions.
+- Last known Core-valid state: the approved Step 13 source candidate at SHA-256 `5b4af2275a70e2598e72361382fc7ea6ea318724ac928d71b2c200c768a93095`, governed by the authoritative Step 14 plan. Pipeline status remained `DCC source candidate`.
+- First drift action: the first Step 15 builder selected each view's projection box from a three-pixel-dilated foreground component, then used that box to place owner UVs and construct masks.
+- Assumption or interpretation that caused drift: foreground connectivity after dilation was treated as object ownership even when the component included thin source annotations. This contradicted the locked Step 14 exclusion of labels, grid lines, dimension text, arrows, extension lines, borders, background, and review overlays.
+- Affected outputs: Attempt 01 copied Blender candidate and manifest; five masks; Base Color, DirectX Normal, ORM, AO, and classification maps; technical and review audits; six renders; eleven comparisons; and the review board. Geometry and the approved source candidate were unaffected.
+- Artifact statuses: every Attempt 01 output is `invalid` and `quarantined`; the internal board is rejected proof only and was not presented for approval; the unchanged approved source remains `candidate`; Step 14 authority remains `authoritative`.
+- Quarantined locations or records: `Saved/AssetForgeResearch/quarantine/SM_GIA_BloodAxeCairnstone_A005/Step15_Attempt01_20260720/`; tracked recovery record at `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/STEP_15_CORE_RECOVERY_A01_OUTPUT_RECORD.md`.
+- Recovery decision: stop the invalid line, preserve it, verify the original source hash, return production paths to the Step 14 boundary, then rebuild cleanly from the approved source using deterministic dense-object selection plus independent annotation-contamination checks. Native masks must pass internal inspection before material proof rendering.
+- Flamestrike approval: the direct 2026-07-20 authority to complete Step 15 from start to finish authorizes this smallest sufficient recovery inside the active Step 15 contract; it does not authorize Step 16 or reinterpret the Blueprint.
+- Follow-up Core/Kaizen improvement: source-owner generation must fail closed on thin connected annotations and must validate dense central-object containment independently of UV/raster exactness. A raster that matches its own UV construction is not sufficient semantic ownership evidence.
+
 ### 2026-07-20 16:25 EDT - A005 Step 13 Remote-Closeout Evidence Drift
 
 - Asset or scope: `SM_GIA_BloodAxeCairnstone_A005` Step 13 Git closeout evidence and readiness routing at the Step 14 resume boundary.

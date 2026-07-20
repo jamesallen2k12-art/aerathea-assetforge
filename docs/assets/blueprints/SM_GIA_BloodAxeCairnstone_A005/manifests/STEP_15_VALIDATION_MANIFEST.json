@@ -1,0 +1,121 @@
+{
+  "schema": "aerathea.step15_uv_texture_material_candidate_validation.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-STEP15-UV-TEXTURE-MATERIAL-CANDIDATE-A01",
+  "date": "2026-07-20",
+  "status": "pass_step15_candidate_complete_pending_focused_review",
+  "artifact_classification": "proof only",
+  "flamestrike_execution_authority": "resume You have full Approval and Authority to complete step 15 from start to finish regardless of what that requires",
+  "input_lock": {
+    "locked_inputs": 25,
+    "matched_inputs": 25,
+    "source_panels": 6,
+    "matched_source_rgb_identities": 6,
+    "pre_action_checkpoint": "Saved/ProjectRecovery/20260720-175240/"
+  },
+  "core_recovery": {
+    "attempt_01_status": "invalid_and_quarantined_before_visible_presentation",
+    "cause": "three-pixel foreground dilation connected the source object to dimension and annotation components before UV placement",
+    "quarantine": "Saved/AssetForgeResearch/quarantine/SM_GIA_BloodAxeCairnstone_A005/Step15_Attempt01_20260720/",
+    "last_valid_source_sha256": "5b4af2275a70e2598e72361382fc7ea6ea318724ac928d71b2c200c768a93095",
+    "attempt_02_method": "clean rebuild from the unchanged approved source using the largest raw 8-connected foreground component before any growth",
+    "annotation_gate": "minimum 8x component dominance, minimum 0.40 bbox density, central and border-safe containment, and zero owned pixels beyond the selected object or its approved two-pixel fringe",
+    "manual_mask_edits": 0,
+    "geometry_repairs": 0
+  },
+  "candidate": {
+    "path": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_UVTextureMaterialCandidate_A01.blend",
+    "sha256": "7befa56a10003c2d424de3db40e2bc402075b79644b0944413e97c92db6cab89",
+    "manifest_path": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_STEP15_CANDIDATE_MANIFEST.json",
+    "manifest_sha256": "e63d1dcc62410d2741e488bc6be456890caaba46dd0958d715d97c04462497a1",
+    "artifact_status": "candidate",
+    "pipeline_status": "DCC source candidate",
+    "dcc_game_ready": false,
+    "fully_game_ready": false,
+    "visual_canon": false
+  },
+  "geometry": {
+    "changes": 0,
+    "objects": 4,
+    "vertices": 400,
+    "faces": 464,
+    "evaluated_triangles": 784
+  },
+  "uv": {
+    "uv0_layers": 1,
+    "uv0_name": "UVMap",
+    "faces_assigned_once": 464,
+    "positive_area_overlaps": 0,
+    "hidden_face_islands": 240,
+    "uv1_created": false
+  },
+  "masks": {
+    "owner_views": 5,
+    "perspective_owner_views": 0,
+    "manual_pixel_edits": 0,
+    "owned_pixels_outside_selected_object_or_2px_fringe": 0,
+    "records": [
+      {"view": "front", "bbox_inclusive_px": [104, 34, 397, 427], "owned_pixels": 60761, "owned_red_pixels": 10039, "sha256": "327155c8cf716853c8829fe151e74aa4c14a6a05b74bff106d0cc0e19c675bdc"},
+      {"view": "back", "bbox_inclusive_px": [120, 7, 365, 318], "owned_pixels": 39241, "owned_red_pixels": 4884, "sha256": "7238e7244942ad924e68df57af0d334d2334a3ddd9978fdd5ad00c8520ec6371"},
+      {"view": "left", "bbox_inclusive_px": [118, 7, 343, 318], "owned_pixels": 20938, "owned_red_pixels": 2933, "sha256": "f50f661b8e2eea55bb97880082a228dd6ad11f2093de324cbc5e34064afb6770"},
+      {"view": "right", "bbox_inclusive_px": [85, 9, 278, 295], "owned_pixels": 16516, "owned_red_pixels": 2835, "sha256": "88c387c93e7d5fd9a51163e823bdeba5b63852a0a4d24478757f8fac10e2b497"},
+      {"view": "top", "bbox_inclusive_px": [29, 29, 240, 262], "owned_pixels": 17492, "owned_red_pixels": 3026, "sha256": "79709441ae480ab4a1116e5f3389b0b47532f0341d9d98604851f5d90408c66c"}
+    ]
+  },
+  "maps": {
+    "base_color": {"resolution": [2048, 2048], "color_space": "sRGB", "sha256": "a618619ad7e0da8e8617191b1fa8a96aa74397a9cafb30ddffea8b332533c884"},
+    "normal": {"resolution": [2048, 2048], "color_space": "linear", "space": "DirectX tangent", "sha256": "12c75e4f2a12cad22e07d8872645744d2721d32271f4c455b407829de2ea43b2"},
+    "orm": {"resolution": [2048, 2048], "color_space": "linear", "packing": "R=AO,G=Roughness,B=Metallic", "ao_range": [115, 255], "roughness_range": [163, 215], "metallic_values": [0], "sha256": "76f65c3f9f1e538b0024cbf43356a7e03bc84a67e77dfaaba16f1a259b37011c"},
+    "emissive": null,
+    "texel_classification_sha256": "cccd5547b36935ce05200dade654398c995052f7f3b6791f412e1d5139eb4c98"
+  },
+  "ao_bake": {
+    "method": "Blender BVHTree deterministic cosine-weighted hemisphere ray bake; Step 14 equivalently audited path",
+    "samples_per_station": 256,
+    "face_loop_stations": 1712,
+    "rays_cast": 438272,
+    "distance_cm": 12.0,
+    "cage_extrusion_cm": 0.2,
+    "margin_px": 16,
+    "target_raster_misses": 0,
+    "sha256": "ae85948ccfc47f5c1800544ba51c23cad6ee80e877faecb59f9730c7af015dad"
+  },
+  "material": {
+    "name": "M_GIA_BloodAxeCairnstone_A005",
+    "shared_slots": 1,
+    "opaque": true,
+    "one_sided": true,
+    "emissive": false,
+    "displacement": false
+  },
+  "proofs": {
+    "fixed_material_renders": 6,
+    "native_mask_comparisons": 5,
+    "native_material_comparisons": 6,
+    "review_boards": 1,
+    "clipped_views": 0,
+    "native_mask_preflight_sha256": "a84af992c10de190240f17698499814ec538d23fcc9e74b8365b3cd9357d2e70",
+    "review_package_audit_sha256": "3ca66a8edd1f6562e8f103212fe298ebdca3ffe6d780391b3083de3b12743bae",
+    "review_board_sha256": "84ad456f152c1521d4e310d83a3d31a9b7c6fcf2939d4dcc6b4040716b5a208d",
+    "artifact_classification": "proof only"
+  },
+  "final_audit": {
+    "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/Step15/STEP_15_FINAL_18_GATE_AUDIT.json",
+    "sha256": "04d79d462b5dadf3e9bc6422f71dfad7881bd46b185a92760af93f6ebdd05919",
+    "gates_total": 18,
+    "gates_passed": 18,
+    "gates_pending": 0,
+    "gates_failed": 0,
+    "gate_ids": ["S15-G01-INPUTS", "S15-G02-GEOMETRY", "S15-G03-UV0", "S15-G04-UV1", "S15-G05-WINDOWS", "S15-G06-MASKS", "S15-G07-RGB", "S15-G08-AUTHORED", "S15-G09-DECORATION", "S15-G10-BC", "S15-G11-NORMAL", "S15-G12-ORM", "S15-G13-BAKE", "S15-G14-MIPS", "S15-G15-MATERIAL", "S15-G16-RENDERS", "S15-G17-CLASSIFICATION", "S15-G18-FIREWALL"]
+  },
+  "forbidden_outputs": {
+    "geometry_changes": 0,
+    "uv1": 0,
+    "lod": 0,
+    "collision": 0,
+    "fbx": 0,
+    "unreal": 0,
+    "visual_canon": 0
+  },
+  "decision": "pass_step15_candidate_complete_pending_focused_review"
+}

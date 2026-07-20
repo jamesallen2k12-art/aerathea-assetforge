@@ -5941,3 +5941,83 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260720-164837/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260720-164837/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-20 17:52:40 EDT -0400 - before authorized A005 Step 15 UV texture material candidate
+
+- Snapshot: `Saved/ProjectRecovery/20260720-175240/`
+- Git: branch `main`, HEAD `13d2cbf`, status lines `244`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260720-175240/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260720-175240/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260720-175240/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-20 18:11:41 EDT -0400 - A005 Step 15 first build stopped at Blender 3.0 linear color-space compatibility before candidate save
+
+- Snapshot: `Saved/ProjectRecovery/20260720-181141/`
+- Git: branch `main`, HEAD `13d2cbf`, status lines `250`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260720-181141/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260720-181141/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260720-181141/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-20 18:13:07 EDT -0400 - A005 Step 15 second build stopped at Blender 3.0 AO distance socket compatibility before candidate save
+
+- Snapshot: `Saved/ProjectRecovery/20260720-181307/`
+- Git: branch `main`, HEAD `13d2cbf`, status lines `250`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260720-181307/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260720-181307/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260720-181307/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-20 18:19:13 EDT -0400 - A005 Step 15 Cycles AO path externally terminated at runtime cap before candidate save; switch to approved equivalent audited ray bake
+
+- Snapshot: `Saved/ProjectRecovery/20260720-181913/`
+- Git: branch `main`, HEAD `13d2cbf`, status lines `250`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260720-181913/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260720-181913/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260720-181913/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-20 18:22:17 EDT -0400 - A005 Step 15 candidate build complete before independent 18-gate audit
+
+- Snapshot: `Saved/ProjectRecovery/20260720-182217/`
+- Git: branch `main`, HEAD `13d2cbf`, status lines `252`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260720-182217/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260720-182217/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260720-182217/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-20 18:32:02 EDT -0400 - A005 Step15 Core Recovery complete; before clean Attempt02 rebuild
+
+- Snapshot: `Saved/ProjectRecovery/20260720-183202/`
+- Git: branch `main`, HEAD `13d2cbf`, status lines `252`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260720-183202/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260720-183202/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260720-183202/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-20 18:33:21 EDT -0400 - A005 Step15 Attempt02 clean candidate build complete before independent audit
+
+- Snapshot: `Saved/ProjectRecovery/20260720-183321/`
+- Git: branch `main`, HEAD `13d2cbf`, status lines `255`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260720-183321/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260720-183321/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260720-183321/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-20 18:40:26 EDT -0400 - A005 Step15 18 of 18 pass visible review opened before exact scoped Git closeout
+
+- Snapshot: `Saved/ProjectRecovery/20260720-184026/`
+- Git: branch `main`, HEAD `13d2cbf`, status lines `261`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260720-184026/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260720-184026/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260720-184026/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
