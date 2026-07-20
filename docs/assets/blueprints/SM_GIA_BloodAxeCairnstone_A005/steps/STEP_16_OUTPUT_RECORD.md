@@ -1,6 +1,6 @@
 # A005 Step 16 DCC Game-Ready Package Output Record
 
-Status: technically complete DCC game-ready candidate; mandatory restart required
+Status: technically complete and remotely closed DCC game-ready candidate; mandatory restart required
 
 Artifact classification: `authoritative Step 16 technical result record`
 
@@ -63,12 +63,19 @@ no LOD0/source artifact was repaired forward.
 
 ## Git Closeout
 
-Exact dependency-complete Step 16 closeout is pending scoped staging, syntax/
-JSON/secret/path audit, commit, push to `assetforge/main`, live remote
-verification, metadata closeout, and final checkpoint.
+Exact dependency-complete staged scope: `18/18`; outside scope `0`. Python
+AST, JSON, schema-only preflights, staged path allowlist, staged diff check,
+and staged secret scan passed. Unstaged in-scope differences were `0`; all
+`244` unrelated worktree entries remained unstaged.
+
+Dependency snapshot commit:
+`1334b1225bc3f42f3c2f8ffced8733e452c73abc`. Push to
+`assetforge/main` passed and the live remote hash matched exactly.
+Pre-metadata checkpoint: `Saved/ProjectRecovery/20260720-192022/`.
+The immediate metadata closeout commit records this already-proven dependency
+result and intentionally does not self-embed its own hash.
 
 ## Required Next Action
 
-Open the review board and this review record visibly. Complete the exact
-scoped Git closeout, then stop for the mandatory restart. Step 17 requires a
-separate contract and explicit Flamestrike authority after resume.
+Stop for the mandatory restart. Step 17 requires a separate contract and
+explicit Flamestrike authority after resume.

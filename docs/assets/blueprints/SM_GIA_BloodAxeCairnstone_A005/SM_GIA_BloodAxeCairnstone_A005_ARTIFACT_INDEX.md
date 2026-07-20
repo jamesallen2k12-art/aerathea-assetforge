@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A005 Artifact Index
 
-Status: Step 16 technically complete DCC game-ready candidate; scoped Git closeout pending; mandatory restart required
+Status: Step 16 technically complete and remotely closed DCC game-ready candidate; mandatory restart required
 
 Artifact classification: `authoritative`
 
@@ -31,6 +31,11 @@ All 17 gates pass; LOD triangles are `784/392/174/76`; FBX re-import is
 `4/4`; six proof frames are unclipped. Artifact status is `candidate` and
 pipeline status is `DCC game-ready candidate`. Step 17, Unreal, fully
 game-ready, approved-library, and visual-canon promotion remain zero.
+
+The exact `18/18` Step 16 dependency snapshot is commit
+`1334b1225bc3f42f3c2f8ffced8733e452c73abc`, pushed to
+`assetforge/main` and live-remote verified. Pre-metadata checkpoint:
+`Saved/ProjectRecovery/20260720-192022/`.
 
 ## Historical Step 15 UV / Texture / Material Candidate - Technical Closeout / Focused Review Approved
 

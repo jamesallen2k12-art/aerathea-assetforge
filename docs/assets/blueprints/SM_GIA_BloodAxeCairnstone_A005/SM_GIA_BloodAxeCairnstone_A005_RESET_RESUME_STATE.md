@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: Step 16 technically complete DCC game-ready candidate; scoped Git closeout pending; mandatory restart required
+Status: Step 16 technically complete and remotely closed DCC game-ready candidate; mandatory restart required
 
 Artifact classification: `authoritative`
 
@@ -32,9 +32,19 @@ Technical result: `pass_step16_dcc_game_ready_candidate_complete`.
 - Artifact status: `candidate`; pipeline status: `DCC game-ready candidate`.
 - Unreal, Step 17 approval, fully game-ready, approved-library, and visual-
   canon promotion: `0`.
+- Exact dependency-complete staged scope: `18/18`; outside scope `0`.
+- Python AST, JSON, schema-only preflights, staged path allowlist, staged diff
+  check, and staged secret scan: passed; unstaged in-scope differences `0`.
+- Unrelated worktree entries preserved unstaged: `244`.
+- Dependency snapshot commit:
+  `1334b1225bc3f42f3c2f8ffced8733e452c73abc`.
+- Push to `assetforge/main`: passed; live remote hash matched exactly.
+- Pre-metadata checkpoint: `Saved/ProjectRecovery/20260720-192022/`.
+- Immediate metadata closeout commit records the proven dependency result and
+  intentionally does not self-embed its own hash.
 
-Complete the exact scoped Git closeout and stop for the mandatory restart.
-Step 17 remains unauthorized and requires a separate contract after resume.
+Stop for the mandatory restart. Step 17 remains unauthorized and requires a
+separate contract after resume.
 
 ## Historical Resume Boundary - Step 15 Technical Candidate / Focused Review Approved
 
