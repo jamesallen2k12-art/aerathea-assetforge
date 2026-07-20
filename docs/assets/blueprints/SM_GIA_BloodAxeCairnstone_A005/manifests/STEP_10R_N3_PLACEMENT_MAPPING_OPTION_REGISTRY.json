@@ -1,0 +1,190 @@
+{
+  "schema": "aerathea.step_10r_n3_placement_mapping_option_registry.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-STEP10-REV-A01",
+  "date": "2026-07-17",
+  "status": "approved_bounded_decisions_recorded",
+  "artifact_classification": "authoritative for bounded Step 10R decisions",
+  "input_lock_sha256": "df6b68316b408d65d9de03ddedee9de1f62aae3acc4b04a87edb51f6d1f32bb4",
+  "preserved_authority": {
+    "N3": "approved abstract target-space perimeter only",
+    "N3_equation": "abs(x / 70)^3 + abs(y / 55)^3 = 1",
+    "N3_extents_cm": [
+      140,
+      110
+    ],
+    "top_CL003_sample_count": 16,
+    "all_view_CL003_sample_count": 47,
+    "source_owned_top_outer_anchor_count": 0,
+    "source_center_count": 0,
+    "target_mapping_count_created": 0
+  },
+  "decision_subjects": [
+    {
+      "id": "S10R-002",
+      "title": "N3 construction-frame placement",
+      "missing_authority": "N3 has no source or construction placement, center, pivot, or transform.",
+      "options": [
+        {
+          "id": "S10R-002-A",
+          "label": "Construction-origin centered target frame",
+          "proposed_rule": "Place N3 in the approved right-handed construction convention with its mathematical target origin at construction (X=0,Y=0), X/Y axes parallel to the declared construction axes, width 140 cm, and depth 110 cm. The origin is an interpreted production convention, never a recovered source center, and has no source-pixel relation.",
+          "evidence_effect": "No exact source pixel, sample, measurement, physical target, or prior authority changes.",
+          "interpretation_effect": "Creates a candidate construction-frame placement only; it does not locate N3 on any source panel.",
+          "dependencies": [
+            "approved Step 05 frame",
+            "approved physical targets",
+            "separate future pivot decision"
+          ],
+          "known_risks": [
+            "A centered production convention may not reproduce the apparent source-sheet placement.",
+            "It does not solve CL-003 mapping."
+          ],
+          "candidate_assessment": "recommended_minimum_new_authority",
+          "artifact_classification": "approved interpretation rule",
+          "flamestrike_decision": "approved",
+          "decision_status": "approved_interpretation_rule",
+          "implementation_authorized": false
+        },
+        {
+          "id": "S10R-002-B",
+          "label": "Top dimension-role midpoint as interpreted placement anchor",
+          "proposed_rule": "After a separately approved whole-panel top transform, use the midpoint of the independent top X/Y dimension-role spans as an interpreted diagrammatic placement anchor. Preserve N3 at 140 x 110 cm and record that the anchor is not a source center, surface point, origin, or pivot measurement.",
+          "evidence_effect": "No exact source pixel, sample, measurement, physical target, or prior authority changes.",
+          "interpretation_effect": "Creates a source-referenced interpreted placement convention without claiming source ownership.",
+          "dependencies": [
+            "separately approved whole-panel top transform",
+            "explicit dimension-role endpoint policy",
+            "separate pivot decision"
+          ],
+          "known_risks": [
+            "Annotation endpoints are not surface points.",
+            "The apparent midpoint can load source-layout bias into construction."
+          ],
+          "candidate_assessment": "alternative_high_dependency",
+          "artifact_classification": "rejected candidate",
+          "flamestrike_decision": "rejected",
+          "decision_status": "rejected_interpretation_option",
+          "implementation_authorized": false
+        },
+        {
+          "id": "S10R-002-BLOCK",
+          "label": "Leave blocked",
+          "proposed_rule": null,
+          "evidence_effect": "No change.",
+          "interpretation_effect": "No rule is created.",
+          "dependencies": [],
+          "known_risks": [
+            "N3 remains abstract; contact mapping, transition integration, bottom closure, and Step 11 remain blocked."
+          ],
+          "candidate_assessment": "available_required_block_option",
+          "artifact_classification": "reference only after decision",
+          "flamestrike_decision": "not_selected",
+          "decision_status": "not_selected_block_outcome",
+          "implementation_authorized": false
+        }
+      ],
+      "candidate_recommendation": "S10R-002-A",
+      "recommendation_reason": "It uses the fewest new assumptions and never presents a mathematical target origin as a source center.",
+      "diagram_required": true,
+      "flamestrike_decision": "S10R-002-A",
+      "decision_status": "approved_interpretation_rule",
+      "implementation_authorized": false
+    },
+    {
+      "id": "S10R-003",
+      "title": "CL-003 source-to-target mapping",
+      "missing_authority": "No approved C-003 target-space inner boundary or source-to-target correspondence exists.",
+      "options": [
+        {
+          "id": "S10R-003-A",
+          "label": "Four-sector order-preserving conditional mapping",
+          "proposed_rule": "Preserve the recorded top CL-003 sectors top/bottom/left/right and within-sector sample order. If a separate C-003 target-space inner-boundary rule is later approved, assign each four-sample sector monotonically to its matching target quadrant between registered quadrant endpoints. Do not close source samples, infer a source center, or calculate target points before the inner boundary exists.",
+          "evidence_effect": "No exact source pixel, sample, measurement, physical target, or prior authority changes.",
+          "interpretation_effect": "Approves only a conditional ordering convention; no target-space contact coordinate is produced by this option alone.",
+          "dependencies": [
+            "S10R-002 placement",
+            "separate approved C-003 target-space inner boundary",
+            "quadrant endpoint convention"
+          ],
+          "known_risks": [
+            "Equal semantic sectors may not encode true arc spacing.",
+            "The rule remains unusable until the C-003 inner target boundary is approved."
+          ],
+          "candidate_assessment": "recommended_conditional_minimum_correspondence",
+          "artifact_classification": "approved conditional interpretation rule",
+          "flamestrike_decision": "approved",
+          "decision_status": "approved_conditional_interpretation_rule",
+          "implementation_authorized": false
+        },
+        {
+          "id": "S10R-003-B",
+          "label": "Upright owner-view endpoint constrained mapping",
+          "proposed_rule": "Use approved future owner-view construction frames to constrain target X from front/back CL-003 endpoints and target Y from left/right endpoints, then treat top samples only as a validation set. Physical cross-panel pairs remain unproven, so every cross-view association must be separately registered before any coordinate is produced.",
+          "evidence_effect": "No exact source pixel, sample, measurement, physical target, or prior authority changes.",
+          "interpretation_effect": "Creates a candidate owner-view mapping strategy but no physical pair or target coordinate.",
+          "dependencies": [
+            "approved owner-view construction frames",
+            "registered physical correspondence choices",
+            "S10R-004 upright trace decision"
+          ],
+          "known_risks": [
+            "Cross-panel physical pairs are currently zero.",
+            "A wrong pairing can move contacts while appearing numerically constrained."
+          ],
+          "candidate_assessment": "alternative_blocked_by_physical_correspondence",
+          "artifact_classification": "rejected candidate",
+          "flamestrike_decision": "rejected",
+          "decision_status": "rejected_interpretation_option",
+          "implementation_authorized": false
+        },
+        {
+          "id": "S10R-003-BLOCK",
+          "label": "Leave blocked",
+          "proposed_rule": null,
+          "evidence_effect": "No change.",
+          "interpretation_effect": "No rule is created.",
+          "dependencies": [],
+          "known_risks": [
+            "CL-003 remains source-space evidence only; hidden-contact closure and every joined field remain blocked."
+          ],
+          "candidate_assessment": "available_required_block_option",
+          "artifact_classification": "reference only after decision",
+          "flamestrike_decision": "not_selected",
+          "decision_status": "not_selected_block_outcome",
+          "implementation_authorized": false
+        }
+      ],
+      "candidate_recommendation": "S10R-003-A",
+      "recommendation_reason": "It preserves only explicit sector labels and order, remains conditional, and creates no target coordinate before its dependency is approved.",
+      "diagram_required": true,
+      "flamestrike_decision": "S10R-003-A",
+      "decision_status": "approved_conditional_interpretation_rule",
+      "implementation_authorized": false
+    }
+  ],
+  "forbidden_results": {
+    "source_center_created": false,
+    "source_overlay_created": false,
+    "CL003_target_coordinates_created": 0,
+    "closed_contact_loop_created": false,
+    "geometry_created": false
+  },
+  "flamestrike_output_decision": {
+    "date": "2026-07-17",
+    "approver": "Flamestrike",
+    "statement": "I approve all 7 recommended decisions exactly as listed",
+    "pre_closeout_checkpoint": "Saved/ProjectRecovery/20260717-123959/",
+    "decision_ids": [
+      "S10R-001",
+      "S10R-002",
+      "S10R-003",
+      "S10R-004",
+      "S10R-005",
+      "S10R-006",
+      "S10R-007"
+    ]
+  },
+  "source_or_existing_authority_modified": false,
+  "geometry_created": false
+}

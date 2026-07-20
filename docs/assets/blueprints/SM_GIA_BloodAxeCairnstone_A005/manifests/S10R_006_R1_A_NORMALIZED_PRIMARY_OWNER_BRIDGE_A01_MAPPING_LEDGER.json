@@ -1,0 +1,711 @@
+{
+  "schema": "aerathea.s10r_006_r1_a_normalized_primary_owner_bridge_a01_mapping_ledger.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-006-R1-A-NPOB-EXEC-A01",
+  "date": "2026-07-17",
+  "status": "candidate_normalized_primary_owner_bridge_ready_for_validation",
+  "artifact_classification": "candidate implementation of approved bounded interpretation rule pending Flamestrike",
+  "decision_registry_sha256": "14961845f35c2005b727cea46b19a378db9b79432da0b930c1872e68bf1a63b7",
+  "input_lock_path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/S10R_006_R1_A_NORMALIZED_PRIMARY_OWNER_BRIDGE_A01_INPUT_LOCK.json",
+  "rule": {
+    "common_frame": "dimensionless symbolic trace domain",
+    "parameter_identity": "v = t",
+    "inner_station": "K80 at t = 0; v = 0",
+    "outer_station": "N3 at t = 1; v = 1",
+    "physical_coordinate_claim": false
+  },
+  "construction_owner_counts": {
+    "front_primary_XZ": 6,
+    "left_primary_YZ": 6,
+    "total": 12
+  },
+  "records": [
+    {
+      "mapping_id": "NPOB-A01-FRONT-LEFT-01",
+      "trace_id": "F-BTIR-01",
+      "classification": "candidate implementation of approved bounded interpretation rule pending Flamestrike",
+      "owner_view": "front",
+      "owner_plane": "XZ",
+      "view_role": "primary_XZ",
+      "registered_side": "left",
+      "within_side_order": 1,
+      "order_source": "frozen outer-anchor image row ascending under Step 05 x-right/y-down convention",
+      "source_outer_anchor_row": 400,
+      "source_p_i": [
+        119,
+        391
+      ],
+      "source_p_o": [
+        107,
+        400
+      ],
+      "source_trace_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "source_trace_changed": false,
+      "symbolic_trace_domain": {
+        "parameter": "t",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "normalized_transition_identity": "v = t",
+      "inner_boundary_identity": {
+        "id": "C003_TSIB_K80_MEDIUM_APRON",
+        "station": "t = 0; v = 0"
+      },
+      "outer_boundary_identity": {
+        "id": "TOP_C004_OPIR_N3_ROUNDED_OVAL",
+        "station": "t = 1; v = 1"
+      },
+      "step05_axis_provenance": {
+        "image_x_right": "+X",
+        "image_y_down": "-Z",
+        "normal_owner": "-Y"
+      },
+      "step05_normal_owner_provenance": {
+        "id": "NO-FRONT",
+        "source_view": "front",
+        "world_normal_owner": "-Y",
+        "scope": "panel frame only; not individual physical facets"
+      },
+      "physical_source_target_transform": null,
+      "physical_cross_view_pair": null,
+      "target_xy_cm": null,
+      "target_xyz_cm": null,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "anchor_claim": false,
+      "field_sample": false,
+      "geometry_coordinate": false
+    },
+    {
+      "mapping_id": "NPOB-A01-FRONT-LEFT-02",
+      "trace_id": "F-BTIR-03",
+      "classification": "candidate implementation of approved bounded interpretation rule pending Flamestrike",
+      "owner_view": "front",
+      "owner_plane": "XZ",
+      "view_role": "primary_XZ",
+      "registered_side": "left",
+      "within_side_order": 2,
+      "order_source": "frozen outer-anchor image row ascending under Step 05 x-right/y-down convention",
+      "source_outer_anchor_row": 410,
+      "source_p_i": [
+        119,
+        391
+      ],
+      "source_p_o": [
+        106,
+        410
+      ],
+      "source_trace_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "source_trace_changed": false,
+      "symbolic_trace_domain": {
+        "parameter": "t",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "normalized_transition_identity": "v = t",
+      "inner_boundary_identity": {
+        "id": "C003_TSIB_K80_MEDIUM_APRON",
+        "station": "t = 0; v = 0"
+      },
+      "outer_boundary_identity": {
+        "id": "TOP_C004_OPIR_N3_ROUNDED_OVAL",
+        "station": "t = 1; v = 1"
+      },
+      "step05_axis_provenance": {
+        "image_x_right": "+X",
+        "image_y_down": "-Z",
+        "normal_owner": "-Y"
+      },
+      "step05_normal_owner_provenance": {
+        "id": "NO-FRONT",
+        "source_view": "front",
+        "world_normal_owner": "-Y",
+        "scope": "panel frame only; not individual physical facets"
+      },
+      "physical_source_target_transform": null,
+      "physical_cross_view_pair": null,
+      "target_xy_cm": null,
+      "target_xyz_cm": null,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "anchor_claim": false,
+      "field_sample": false,
+      "geometry_coordinate": false
+    },
+    {
+      "mapping_id": "NPOB-A01-FRONT-LEFT-03",
+      "trace_id": "F-BTIR-05",
+      "classification": "candidate implementation of approved bounded interpretation rule pending Flamestrike",
+      "owner_view": "front",
+      "owner_plane": "XZ",
+      "view_role": "primary_XZ",
+      "registered_side": "left",
+      "within_side_order": 3,
+      "order_source": "frozen outer-anchor image row ascending under Step 05 x-right/y-down convention",
+      "source_outer_anchor_row": 420,
+      "source_p_i": [
+        133,
+        397
+      ],
+      "source_p_o": [
+        134,
+        420
+      ],
+      "source_trace_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "source_trace_changed": false,
+      "symbolic_trace_domain": {
+        "parameter": "t",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "normalized_transition_identity": "v = t",
+      "inner_boundary_identity": {
+        "id": "C003_TSIB_K80_MEDIUM_APRON",
+        "station": "t = 0; v = 0"
+      },
+      "outer_boundary_identity": {
+        "id": "TOP_C004_OPIR_N3_ROUNDED_OVAL",
+        "station": "t = 1; v = 1"
+      },
+      "step05_axis_provenance": {
+        "image_x_right": "+X",
+        "image_y_down": "-Z",
+        "normal_owner": "-Y"
+      },
+      "step05_normal_owner_provenance": {
+        "id": "NO-FRONT",
+        "source_view": "front",
+        "world_normal_owner": "-Y",
+        "scope": "panel frame only; not individual physical facets"
+      },
+      "physical_source_target_transform": null,
+      "physical_cross_view_pair": null,
+      "target_xy_cm": null,
+      "target_xyz_cm": null,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "anchor_claim": false,
+      "field_sample": false,
+      "geometry_coordinate": false
+    },
+    {
+      "mapping_id": "NPOB-A01-FRONT-RIGHT-01",
+      "trace_id": "F-BTIR-02",
+      "classification": "candidate implementation of approved bounded interpretation rule pending Flamestrike",
+      "owner_view": "front",
+      "owner_plane": "XZ",
+      "view_role": "primary_XZ",
+      "registered_side": "right",
+      "within_side_order": 1,
+      "order_source": "frozen outer-anchor image row ascending under Step 05 x-right/y-down convention",
+      "source_outer_anchor_row": 400,
+      "source_p_i": [
+        381,
+        394
+      ],
+      "source_p_o": [
+        393,
+        400
+      ],
+      "source_trace_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "source_trace_changed": false,
+      "symbolic_trace_domain": {
+        "parameter": "t",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "normalized_transition_identity": "v = t",
+      "inner_boundary_identity": {
+        "id": "C003_TSIB_K80_MEDIUM_APRON",
+        "station": "t = 0; v = 0"
+      },
+      "outer_boundary_identity": {
+        "id": "TOP_C004_OPIR_N3_ROUNDED_OVAL",
+        "station": "t = 1; v = 1"
+      },
+      "step05_axis_provenance": {
+        "image_x_right": "+X",
+        "image_y_down": "-Z",
+        "normal_owner": "-Y"
+      },
+      "step05_normal_owner_provenance": {
+        "id": "NO-FRONT",
+        "source_view": "front",
+        "world_normal_owner": "-Y",
+        "scope": "panel frame only; not individual physical facets"
+      },
+      "physical_source_target_transform": null,
+      "physical_cross_view_pair": null,
+      "target_xy_cm": null,
+      "target_xyz_cm": null,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "anchor_claim": false,
+      "field_sample": false,
+      "geometry_coordinate": false
+    },
+    {
+      "mapping_id": "NPOB-A01-FRONT-RIGHT-02",
+      "trace_id": "F-BTIR-04",
+      "classification": "candidate implementation of approved bounded interpretation rule pending Flamestrike",
+      "owner_view": "front",
+      "owner_plane": "XZ",
+      "view_role": "primary_XZ",
+      "registered_side": "right",
+      "within_side_order": 2,
+      "order_source": "frozen outer-anchor image row ascending under Step 05 x-right/y-down convention",
+      "source_outer_anchor_row": 410,
+      "source_p_i": [
+        381,
+        394
+      ],
+      "source_p_o": [
+        394,
+        410
+      ],
+      "source_trace_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "source_trace_changed": false,
+      "symbolic_trace_domain": {
+        "parameter": "t",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "normalized_transition_identity": "v = t",
+      "inner_boundary_identity": {
+        "id": "C003_TSIB_K80_MEDIUM_APRON",
+        "station": "t = 0; v = 0"
+      },
+      "outer_boundary_identity": {
+        "id": "TOP_C004_OPIR_N3_ROUNDED_OVAL",
+        "station": "t = 1; v = 1"
+      },
+      "step05_axis_provenance": {
+        "image_x_right": "+X",
+        "image_y_down": "-Z",
+        "normal_owner": "-Y"
+      },
+      "step05_normal_owner_provenance": {
+        "id": "NO-FRONT",
+        "source_view": "front",
+        "world_normal_owner": "-Y",
+        "scope": "panel frame only; not individual physical facets"
+      },
+      "physical_source_target_transform": null,
+      "physical_cross_view_pair": null,
+      "target_xy_cm": null,
+      "target_xyz_cm": null,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "anchor_claim": false,
+      "field_sample": false,
+      "geometry_coordinate": false
+    },
+    {
+      "mapping_id": "NPOB-A01-FRONT-RIGHT-03",
+      "trace_id": "F-BTIR-06",
+      "classification": "candidate implementation of approved bounded interpretation rule pending Flamestrike",
+      "owner_view": "front",
+      "owner_plane": "XZ",
+      "view_role": "primary_XZ",
+      "registered_side": "right",
+      "within_side_order": 3,
+      "order_source": "frozen outer-anchor image row ascending under Step 05 x-right/y-down convention",
+      "source_outer_anchor_row": 420,
+      "source_p_i": [
+        373,
+        397
+      ],
+      "source_p_o": [
+        372,
+        420
+      ],
+      "source_trace_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "source_trace_changed": false,
+      "symbolic_trace_domain": {
+        "parameter": "t",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "normalized_transition_identity": "v = t",
+      "inner_boundary_identity": {
+        "id": "C003_TSIB_K80_MEDIUM_APRON",
+        "station": "t = 0; v = 0"
+      },
+      "outer_boundary_identity": {
+        "id": "TOP_C004_OPIR_N3_ROUNDED_OVAL",
+        "station": "t = 1; v = 1"
+      },
+      "step05_axis_provenance": {
+        "image_x_right": "+X",
+        "image_y_down": "-Z",
+        "normal_owner": "-Y"
+      },
+      "step05_normal_owner_provenance": {
+        "id": "NO-FRONT",
+        "source_view": "front",
+        "world_normal_owner": "-Y",
+        "scope": "panel frame only; not individual physical facets"
+      },
+      "physical_source_target_transform": null,
+      "physical_cross_view_pair": null,
+      "target_xy_cm": null,
+      "target_xyz_cm": null,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "anchor_claim": false,
+      "field_sample": false,
+      "geometry_coordinate": false
+    },
+    {
+      "mapping_id": "NPOB-A01-LEFT-LEFT-01",
+      "trace_id": "L-BTIR-01",
+      "classification": "candidate implementation of approved bounded interpretation rule pending Flamestrike",
+      "owner_view": "left",
+      "owner_plane": "YZ",
+      "view_role": "primary_YZ",
+      "registered_side": "left",
+      "within_side_order": 1,
+      "order_source": "frozen outer-anchor image row ascending under Step 05 x-right/y-down convention",
+      "source_outer_anchor_row": 285,
+      "source_p_i": [
+        128,
+        292
+      ],
+      "source_p_o": [
+        126,
+        285
+      ],
+      "source_trace_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "source_trace_changed": false,
+      "symbolic_trace_domain": {
+        "parameter": "t",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "normalized_transition_identity": "v = t",
+      "inner_boundary_identity": {
+        "id": "C003_TSIB_K80_MEDIUM_APRON",
+        "station": "t = 0; v = 0"
+      },
+      "outer_boundary_identity": {
+        "id": "TOP_C004_OPIR_N3_ROUNDED_OVAL",
+        "station": "t = 1; v = 1"
+      },
+      "step05_axis_provenance": {
+        "image_x_right": "-Y",
+        "image_y_down": "-Z",
+        "normal_owner": "-X"
+      },
+      "step05_normal_owner_provenance": {
+        "id": "NO-LEFT",
+        "source_view": "left",
+        "world_normal_owner": "-X",
+        "scope": "panel frame only; not individual physical facets"
+      },
+      "physical_source_target_transform": null,
+      "physical_cross_view_pair": null,
+      "target_xy_cm": null,
+      "target_xyz_cm": null,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "anchor_claim": false,
+      "field_sample": false,
+      "geometry_coordinate": false
+    },
+    {
+      "mapping_id": "NPOB-A01-LEFT-LEFT-02",
+      "trace_id": "L-BTIR-03",
+      "classification": "candidate implementation of approved bounded interpretation rule pending Flamestrike",
+      "owner_view": "left",
+      "owner_plane": "YZ",
+      "view_role": "primary_YZ",
+      "registered_side": "left",
+      "within_side_order": 2,
+      "order_source": "frozen outer-anchor image row ascending under Step 05 x-right/y-down convention",
+      "source_outer_anchor_row": 295,
+      "source_p_i": [
+        128,
+        292
+      ],
+      "source_p_o": [
+        121,
+        295
+      ],
+      "source_trace_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "source_trace_changed": false,
+      "symbolic_trace_domain": {
+        "parameter": "t",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "normalized_transition_identity": "v = t",
+      "inner_boundary_identity": {
+        "id": "C003_TSIB_K80_MEDIUM_APRON",
+        "station": "t = 0; v = 0"
+      },
+      "outer_boundary_identity": {
+        "id": "TOP_C004_OPIR_N3_ROUNDED_OVAL",
+        "station": "t = 1; v = 1"
+      },
+      "step05_axis_provenance": {
+        "image_x_right": "-Y",
+        "image_y_down": "-Z",
+        "normal_owner": "-X"
+      },
+      "step05_normal_owner_provenance": {
+        "id": "NO-LEFT",
+        "source_view": "left",
+        "world_normal_owner": "-X",
+        "scope": "panel frame only; not individual physical facets"
+      },
+      "physical_source_target_transform": null,
+      "physical_cross_view_pair": null,
+      "target_xy_cm": null,
+      "target_xyz_cm": null,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "anchor_claim": false,
+      "field_sample": false,
+      "geometry_coordinate": false
+    },
+    {
+      "mapping_id": "NPOB-A01-LEFT-LEFT-03",
+      "trace_id": "L-BTIR-05",
+      "classification": "candidate implementation of approved bounded interpretation rule pending Flamestrike",
+      "owner_view": "left",
+      "owner_plane": "YZ",
+      "view_role": "primary_YZ",
+      "registered_side": "left",
+      "within_side_order": 3,
+      "order_source": "frozen outer-anchor image row ascending under Step 05 x-right/y-down convention",
+      "source_outer_anchor_row": 305,
+      "source_p_i": [
+        128,
+        292
+      ],
+      "source_p_o": [
+        120,
+        305
+      ],
+      "source_trace_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "source_trace_changed": false,
+      "symbolic_trace_domain": {
+        "parameter": "t",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "normalized_transition_identity": "v = t",
+      "inner_boundary_identity": {
+        "id": "C003_TSIB_K80_MEDIUM_APRON",
+        "station": "t = 0; v = 0"
+      },
+      "outer_boundary_identity": {
+        "id": "TOP_C004_OPIR_N3_ROUNDED_OVAL",
+        "station": "t = 1; v = 1"
+      },
+      "step05_axis_provenance": {
+        "image_x_right": "-Y",
+        "image_y_down": "-Z",
+        "normal_owner": "-X"
+      },
+      "step05_normal_owner_provenance": {
+        "id": "NO-LEFT",
+        "source_view": "left",
+        "world_normal_owner": "-X",
+        "scope": "panel frame only; not individual physical facets"
+      },
+      "physical_source_target_transform": null,
+      "physical_cross_view_pair": null,
+      "target_xy_cm": null,
+      "target_xyz_cm": null,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "anchor_claim": false,
+      "field_sample": false,
+      "geometry_coordinate": false
+    },
+    {
+      "mapping_id": "NPOB-A01-LEFT-RIGHT-01",
+      "trace_id": "L-BTIR-02",
+      "classification": "candidate implementation of approved bounded interpretation rule pending Flamestrike",
+      "owner_view": "left",
+      "owner_plane": "YZ",
+      "view_role": "primary_YZ",
+      "registered_side": "right",
+      "within_side_order": 1,
+      "order_source": "frozen outer-anchor image row ascending under Step 05 x-right/y-down convention",
+      "source_outer_anchor_row": 285,
+      "source_p_i": [
+        335,
+        291
+      ],
+      "source_p_o": [
+        334,
+        285
+      ],
+      "source_trace_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "source_trace_changed": false,
+      "symbolic_trace_domain": {
+        "parameter": "t",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "normalized_transition_identity": "v = t",
+      "inner_boundary_identity": {
+        "id": "C003_TSIB_K80_MEDIUM_APRON",
+        "station": "t = 0; v = 0"
+      },
+      "outer_boundary_identity": {
+        "id": "TOP_C004_OPIR_N3_ROUNDED_OVAL",
+        "station": "t = 1; v = 1"
+      },
+      "step05_axis_provenance": {
+        "image_x_right": "-Y",
+        "image_y_down": "-Z",
+        "normal_owner": "-X"
+      },
+      "step05_normal_owner_provenance": {
+        "id": "NO-LEFT",
+        "source_view": "left",
+        "world_normal_owner": "-X",
+        "scope": "panel frame only; not individual physical facets"
+      },
+      "physical_source_target_transform": null,
+      "physical_cross_view_pair": null,
+      "target_xy_cm": null,
+      "target_xyz_cm": null,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "anchor_claim": false,
+      "field_sample": false,
+      "geometry_coordinate": false
+    },
+    {
+      "mapping_id": "NPOB-A01-LEFT-RIGHT-02",
+      "trace_id": "L-BTIR-04",
+      "classification": "candidate implementation of approved bounded interpretation rule pending Flamestrike",
+      "owner_view": "left",
+      "owner_plane": "YZ",
+      "view_role": "primary_YZ",
+      "registered_side": "right",
+      "within_side_order": 2,
+      "order_source": "frozen outer-anchor image row ascending under Step 05 x-right/y-down convention",
+      "source_outer_anchor_row": 295,
+      "source_p_i": [
+        335,
+        291
+      ],
+      "source_p_o": [
+        340,
+        295
+      ],
+      "source_trace_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "source_trace_changed": false,
+      "symbolic_trace_domain": {
+        "parameter": "t",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "normalized_transition_identity": "v = t",
+      "inner_boundary_identity": {
+        "id": "C003_TSIB_K80_MEDIUM_APRON",
+        "station": "t = 0; v = 0"
+      },
+      "outer_boundary_identity": {
+        "id": "TOP_C004_OPIR_N3_ROUNDED_OVAL",
+        "station": "t = 1; v = 1"
+      },
+      "step05_axis_provenance": {
+        "image_x_right": "-Y",
+        "image_y_down": "-Z",
+        "normal_owner": "-X"
+      },
+      "step05_normal_owner_provenance": {
+        "id": "NO-LEFT",
+        "source_view": "left",
+        "world_normal_owner": "-X",
+        "scope": "panel frame only; not individual physical facets"
+      },
+      "physical_source_target_transform": null,
+      "physical_cross_view_pair": null,
+      "target_xy_cm": null,
+      "target_xyz_cm": null,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "anchor_claim": false,
+      "field_sample": false,
+      "geometry_coordinate": false
+    },
+    {
+      "mapping_id": "NPOB-A01-LEFT-RIGHT-03",
+      "trace_id": "L-BTIR-06",
+      "classification": "candidate implementation of approved bounded interpretation rule pending Flamestrike",
+      "owner_view": "left",
+      "owner_plane": "YZ",
+      "view_role": "primary_YZ",
+      "registered_side": "right",
+      "within_side_order": 3,
+      "order_source": "frozen outer-anchor image row ascending under Step 05 x-right/y-down convention",
+      "source_outer_anchor_row": 305,
+      "source_p_i": [
+        335,
+        291
+      ],
+      "source_p_o": [
+        341,
+        305
+      ],
+      "source_trace_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "source_trace_changed": false,
+      "symbolic_trace_domain": {
+        "parameter": "t",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "normalized_transition_identity": "v = t",
+      "inner_boundary_identity": {
+        "id": "C003_TSIB_K80_MEDIUM_APRON",
+        "station": "t = 0; v = 0"
+      },
+      "outer_boundary_identity": {
+        "id": "TOP_C004_OPIR_N3_ROUNDED_OVAL",
+        "station": "t = 1; v = 1"
+      },
+      "step05_axis_provenance": {
+        "image_x_right": "-Y",
+        "image_y_down": "-Z",
+        "normal_owner": "-X"
+      },
+      "step05_normal_owner_provenance": {
+        "id": "NO-LEFT",
+        "source_view": "left",
+        "world_normal_owner": "-X",
+        "scope": "panel frame only; not individual physical facets"
+      },
+      "physical_source_target_transform": null,
+      "physical_cross_view_pair": null,
+      "target_xy_cm": null,
+      "target_xyz_cm": null,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "anchor_claim": false,
+      "field_sample": false,
+      "geometry_coordinate": false
+    }
+  ],
+  "summary": {
+    "record_count": 12,
+    "unique_mapping_id_count": 12,
+    "unique_trace_id_count": 12,
+    "source_trace_changes": 0,
+    "order_reversals": 0,
+    "order_ambiguities": 0,
+    "introduced_crossings": 0,
+    "physical_source_target_transforms": 0,
+    "physical_cross_view_pairs": 0,
+    "target_xy_coordinates": 0,
+    "target_xyz_coordinates": 0,
+    "field_samples": 0,
+    "geometry_coordinates": 0
+  }
+}

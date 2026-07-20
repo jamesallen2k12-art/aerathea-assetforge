@@ -1,0 +1,110 @@
+{
+  "schema": "aerathea.s10r_006_r2_a_post_bridge_field_authority_validation.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-006-R2-A-PBFA-DEC-A01",
+  "date": "2026-07-17",
+  "status": "pass_candidate_decision_package_ready_for_visible_review",
+  "artifact_classification": "proof only",
+  "independent_auditor": "Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r006_r2_a_post_bridge_field_authority.py",
+  "pre_action_checkpoint": "Saved/ProjectRecovery/20260717-185031/",
+  "prewrite_input_verification": {
+    "locked_inputs": 12,
+    "matched_inputs": 12,
+    "mismatched_inputs": 0,
+    "output_paths_opened_before_verification": false
+  },
+  "interrupted_launch_history": [
+    {
+      "launch": 1,
+      "classification": "proof only compatibility interruption; no registered validation result",
+      "result": "stopped_before_validation_result",
+      "cause": "The read-only auditor requested owner_view at the wrapper level of approved mapping records; the frozen schema stores owner_view under frozen_record and stores holdout view under view.",
+      "evidence_or_authority_failure": false,
+      "output_record_change": false,
+      "option_change": false,
+      "block_change": false,
+      "correction": "Parser paths only: approved item frozen_record.owner_view; holdout item view."
+    }
+  ],
+  "independent_validation": {
+    "gate_count": 20,
+    "passed_gate_count": 20,
+    "failed_gate_count": 0,
+    "result": "pass"
+  },
+  "post_status_confirmation": {
+    "gate_count": 22,
+    "passed_gate_count": 22,
+    "failed_gate_count": 0,
+    "result": "pass",
+    "scope": "complete package plus proof-only validation record and allowed A005 status updates"
+  },
+  "visible_review_verification": {
+    "wmctrl_returncode": 0,
+    "output_visible": true,
+    "decision_handoff_visible": true,
+    "windows": [
+      "0x01e000f8 Flamestrike S10R_006_R2_A_POST_BRIDGE_FIELD_AUTHORITY_DECISION_OUTPUT_RECORD.md - gedit",
+      "0x01e00588 Flamestrike S10R_006_R2_A_POST_BRIDGE_FIELD_AUTHORITY_TO_DECISION_HANDOFF.md - gedit"
+    ]
+  },
+  "validated_facts": {
+    "approved_symbolic_bridge_records": 12,
+    "front_primary_XZ_records": 6,
+    "left_primary_YZ_records": 6,
+    "proof_only_holdouts": 14,
+    "back_validation_only_holdouts": 6,
+    "right_validation_only_holdouts": 8,
+    "required_options": [
+      "S10R-006-R2-A",
+      "S10R-006-R2-BLOCK"
+    ],
+    "selected_option": null,
+    "candidate_recommendation": "S10R-006-R2-A",
+    "recommendation_authoritative": false,
+    "resolved_block_ids": [],
+    "active_block_ids": [
+      "S10R-BLOCK-006",
+      "S10R-BLOCK-008",
+      "S10R-BLOCK-009"
+    ],
+    "physical_source_target_transforms": 0,
+    "physical_cross_view_pairs": 0,
+    "target_trace_coordinates": 0,
+    "source_centers": 0,
+    "pivots": 0,
+    "anchors": 0,
+    "field_samples": 0,
+    "fills": 0,
+    "surfaces": 0,
+    "topology": 0,
+    "geometry": 0
+  },
+  "downstream_authority": {
+    "field_implementation_authorized": false,
+    "step10_closeout_authorized": false,
+    "step11_authorized": false,
+    "dcc_authorized": false,
+    "unreal_authorized": false,
+    "production_authorized": false,
+    "staging_authorized": false,
+    "commit_authorized": false,
+    "push_authorized": false
+  },
+  "output_hashes_before_validation_write": {
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/S10R_006_R2_A_POST_BRIDGE_FIELD_AUTHORITY_DECISION_CONTRACT.md": "15b3031374a7b6c862264c982aad8a8d30dd3f85675b1acd212dddb727c8e64a",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/S10R_006_R2_A_POST_BRIDGE_FIELD_AUTHORITY_INPUT_LOCK.json": "847a4c3ba9e86a13371e0aae0ac47ec6adcf92bd5ba259fe46d13d23cf3c8b27",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/S10R_006_R2_A_POST_BRIDGE_FIELD_AUTHORITY_DEPENDENCY_AUDIT.json": "41e2202da2bcb8d284df253817f61825120af9f4944d950ac4ccb3cc5063a4c3",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/S10R_006_R2_A_POST_BRIDGE_FIELD_AUTHORITY_OPTION_REGISTRY.json": "f83a4a89994816fa47e37ef2bff87a20fed261fd5f08c9c67dbcfc667e7f2328",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/S10R_006_R2_A_POST_BRIDGE_FIELD_AUTHORITY_DECISION_OUTPUT_RECORD.md": "4f8feb4824ef36e3db75f927e5da73dabc93f8c35c2ada17944c522429d84b58",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/handoffs/S10R_006_R2_A_POST_BRIDGE_FIELD_AUTHORITY_TO_DECISION_HANDOFF.md": "780a8f5550c1588874a1b93a28cbd6f5469616161a201f2fe4207803229123a7",
+    "Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r006_r2_a_post_bridge_field_authority.py": "4e8a0af4e6141c5109a79df918eb957fb03e961770d1d5be6e7a35d262f9c5f7"
+  },
+  "changed_path_audit": {
+    "baseline_status_path": "/tmp/a005_s10r006_r2_preexec_git_status.txt",
+    "baseline_status_sha256": "b40f8eb723d923be9bcc10841b0de04ba12ee0ead9fc22434068b7cc534f627d",
+    "unexpected_new_paths": [],
+    "staged_paths": []
+  },
+  "required_stop": "visible review verified; stop for Flamestrike option decision"
+}

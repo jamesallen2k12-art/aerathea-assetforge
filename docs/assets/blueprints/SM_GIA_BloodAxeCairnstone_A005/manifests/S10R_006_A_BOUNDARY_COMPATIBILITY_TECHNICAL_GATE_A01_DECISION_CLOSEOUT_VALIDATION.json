@@ -1,0 +1,166 @@
+{
+  "schema": "aerathea.s10r_006_a_boundary_compatibility_technical_gate_a01_decision_closeout_validation.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-006-A-BCTG-DC-A01",
+  "date": "2026-07-17",
+  "validated_at": "2026-07-17T17:23:01-04:00",
+  "status": "pass_blocked_result_closeout",
+  "artifact_classification": "proof only",
+  "independent_auditor": "Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r006a_decision_closeout_a01.py",
+  "technical_result": "blocked_source_authority_missing",
+  "gate_count": 24,
+  "passed_gate_count": 24,
+  "failed_gate_count": 0,
+  "immutable_input_hashes": {
+    "AGENTS.md": {
+      "expected_sha256": "5d2d2637a58113f0a6f5ec92e40d8bb2bda9e03fb58b4868a0d9dfbb3b57ad55",
+      "actual_sha256": "5d2d2637a58113f0a6f5ec92e40d8bb2bda9e03fb58b4868a0d9dfbb3b57ad55",
+      "match": true
+    },
+    "docs/projects/assetforge/BLOODAXE_CAIRNSTONE_PIXEL_EXACT_FRESH_START_MULTISTEP_PLAN.md": {
+      "expected_sha256": "ba6784498d792dc85dd431c807f59620d6851af97b4cd15efe89c44a397b10b6",
+      "actual_sha256": "ba6784498d792dc85dd431c807f59620d6851af97b4cd15efe89c44a397b10b6",
+      "match": true
+    },
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/S10R_006_A_BOUNDARY_COMPATIBILITY_TECHNICAL_GATE_A01_CONTRACT.md": {
+      "expected_sha256": "0f4e7fae93d9fe36beb4e0d5ad13cafaf1a2ea0864845c79ac574db75792bd8e",
+      "actual_sha256": "0f4e7fae93d9fe36beb4e0d5ad13cafaf1a2ea0864845c79ac574db75792bd8e",
+      "match": true
+    },
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/S10R_006_A_BOUNDARY_COMPATIBILITY_TECHNICAL_GATE_A01_INPUT_LOCK.json": {
+      "expected_sha256": "83198249ec146d19c378917598d85a1e646105c29a827b0f8e7e862f48a8c7aa",
+      "actual_sha256": "83198249ec146d19c378917598d85a1e646105c29a827b0f8e7e862f48a8c7aa",
+      "match": true
+    },
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/S10R_006_A_BOUNDARY_COMPATIBILITY_TECHNICAL_GATE_A01_DEPENDENCY_AUDIT.json": {
+      "expected_sha256": "2c25a23614f98de2145118194fdb44ffd5d50956184ecca55a1e9603a1788100",
+      "actual_sha256": "2c25a23614f98de2145118194fdb44ffd5d50956184ecca55a1e9603a1788100",
+      "match": true
+    },
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/S10R_006_A_BOUNDARY_COMPATIBILITY_TECHNICAL_GATE_A01_BOUNDARY_AUTHORITY_AUDIT.json": {
+      "expected_sha256": "34be26075ca9af9bd8b7dedce974d5b748a2dd07124b7dc5f8613c9b23ec0832",
+      "actual_sha256": "34be26075ca9af9bd8b7dedce974d5b748a2dd07124b7dc5f8613c9b23ec0832",
+      "match": true
+    },
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/S10R_006_A_BOUNDARY_COMPATIBILITY_TECHNICAL_GATE_A01_VALIDATION.json": {
+      "expected_sha256": "fa69ba67c76d17de5ab9edc570e021bf315d4e0501440d3ba6bece72deeb03b5",
+      "actual_sha256": "fa69ba67c76d17de5ab9edc570e021bf315d4e0501440d3ba6bece72deeb03b5",
+      "match": true
+    },
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/evidence/S10R_006_A_BOUNDARY_COMPATIBILITY_TECHNICAL_GATE_A01/SM_GIA_BloodAxeCairnstone_A005_S10R_006_A_BOUNDARY_COMPATIBILITY_TECHNICAL_GATE_A01_REVIEW_BOARD.png": {
+      "expected_sha256": "a02d8756ce5e010c41756b67ded2b6113ade283a7299397a200b99216754a051",
+      "actual_sha256": "a02d8756ce5e010c41756b67ded2b6113ade283a7299397a200b99216754a051",
+      "match": true
+    },
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/S10R_006_A_BOUNDARY_COMPATIBILITY_TECHNICAL_GATE_A01_OUTPUT_RECORD.md": {
+      "expected_sha256": "50ddc7da23a13b2bc34a7113d9ca1cc618e17f6764f44a039fc212631c81581b",
+      "actual_sha256": "50ddc7da23a13b2bc34a7113d9ca1cc618e17f6764f44a039fc212631c81581b",
+      "match": true
+    },
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/handoffs/S10R_006_A_BOUNDARY_COMPATIBILITY_TECHNICAL_GATE_A01_TO_DECISION_HANDOFF.md": {
+      "expected_sha256": "8b2956415f2118b92ae340fac4337a37253831102762f45ad4a0d85489d61362",
+      "actual_sha256": "8b2956415f2118b92ae340fac4337a37253831102762f45ad4a0d85489d61362",
+      "match": true
+    },
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/S10R_006_A_BOUNDARY_COMPATIBILITY_TECHNICAL_GATE_A01_DECISION_CLOSEOUT_CONTRACT.md": {
+      "expected_sha256": "86560bbb76906ec5926fc90fdbf5e00c005fb84a2cfeac1ca3361e4caaec904b",
+      "actual_sha256": "86560bbb76906ec5926fc90fdbf5e00c005fb84a2cfeac1ca3361e4caaec904b",
+      "match": true
+    },
+    "Saved/ProjectRecovery/20260717-162812/git_status_short.txt": {
+      "expected_sha256": "ce78802d2c6092c092e64f036bf89fef41bfe3a9ec999f17cde7ce2a78d30d22",
+      "actual_sha256": "ce78802d2c6092c092e64f036bf89fef41bfe3a9ec999f17cde7ce2a78d30d22",
+      "match": true
+    }
+  },
+  "output_hashes_before_validation_write": {
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/S10R_006_A_BOUNDARY_COMPATIBILITY_TECHNICAL_GATE_A01_DECISION_REGISTRY.json": "609a912568ccea01f65a4ec6060c53a97b93679d5a647125bed835bd9b28759b",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/S10R_006_A_BOUNDARY_COMPATIBILITY_TECHNICAL_GATE_A01_REMAINING_BLOCKS.json": "5d3458789dd0317d66493b137225dcd604d05ff5c73483b4df8946bea453eb07",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/S10R_006_A_BOUNDARY_COMPATIBILITY_TECHNICAL_GATE_A01_DECISION_CLOSEOUT_OUTPUT_RECORD.md": "bfbff21a2d35c6102762e681315c94d4b6536cb056025d04c82e513dd5ca3ae8",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/handoffs/S10R_006_A_BOUNDARY_COMPATIBILITY_TECHNICAL_GATE_A01_TO_BLOCKED_ROUTING_HANDOFF.md": "d9e6a4f5b1c2ea210eaed940f5891a05e830fc8055e6ecab6053ea095a871697",
+    "Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r006a_decision_closeout_a01.py": "aac636ecf3960eb08f785dca4c181313d8360db6130e2ba0efb8fd06c9612e3a",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_RESET_RESUME_STATE.md": "d26f3d2ecbddef614fb43a431e7f38ce33985b8ae5d559b343f0b7dad06692d6",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_APPROVAL_LOG.md": "bc40e32d6a9ce2f13be0eb4582c258087c1f68d8e1ae427c2d4e00d5317f74ae",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_ARTIFACT_INDEX.md": "52aa1135e9faa4d4fbf879a52795cc43730d0417944a313d06c4ee5a8346af42"
+  },
+  "decision_counts": {
+    "approved_bounded_technical_results": 1,
+    "resolved_result_decisions": 1,
+    "resolved_technical_blocks": 0,
+    "active_remaining_blocks": 3
+  },
+  "trace_counts": {
+    "required_registered_trace_boundaries": 26,
+    "common_frame_authority_available": 0,
+    "common_frame_authority_missing": 26,
+    "exact_comparisons_performed": 0,
+    "explicit_boundary_mismatches": 0,
+    "inferred_correspondences": 0
+  },
+  "authority_counts": {
+    "new_source_target_transforms": 0,
+    "new_target_trace_coordinates": 0,
+    "new_physical_cross_view_pairs": 0,
+    "field_samples": 0,
+    "fills": 0,
+    "surfaces": 0,
+    "topology": 0,
+    "geometry": 0
+  },
+  "changed_path_audit": {
+    "baseline": "Saved/ProjectRecovery/20260717-171757/",
+    "new_paths": [
+      "Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r006a_decision_closeout_a01.py",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/handoffs/S10R_006_A_BOUNDARY_COMPATIBILITY_TECHNICAL_GATE_A01_TO_BLOCKED_ROUTING_HANDOFF.md",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/S10R_006_A_BOUNDARY_COMPATIBILITY_TECHNICAL_GATE_A01_DECISION_CLOSEOUT_VALIDATION.json",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/S10R_006_A_BOUNDARY_COMPATIBILITY_TECHNICAL_GATE_A01_DECISION_REGISTRY.json",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/S10R_006_A_BOUNDARY_COMPATIBILITY_TECHNICAL_GATE_A01_REMAINING_BLOCKS.json",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/S10R_006_A_BOUNDARY_COMPATIBILITY_TECHNICAL_GATE_A01_DECISION_CLOSEOUT_OUTPUT_RECORD.md"
+    ],
+    "unexpected": [],
+    "missing": []
+  },
+  "visible_review_verification": {
+    "output_visible": true,
+    "matching_desktop_line": "0x01e000f8  0 Flamestrike S10R_006_A_BOUNDARY_COMPATIBILITY_TECHNICAL_GATE_A01_DECISION_CLOSEOUT_OUTPUT_RECORD.md (~/Project…A005/steps) - gedit"
+  },
+  "active_blocks_preserved": [
+    "S10R-BLOCK-006",
+    "S10R-BLOCK-008",
+    "S10R-BLOCK-009"
+  ],
+  "gates": [
+    {"gate": "G01", "subject": "all locked input hashes match before closeout writes", "status": "pass"},
+    {"gate": "G02", "subject": "visible approved closeout contract hash and ID match", "status": "pass"},
+    {"gate": "G03", "subject": "blocked-result and closeout-execution approvals are explicit", "status": "pass"},
+    {"gate": "G04", "subject": "branch main, HEAD f525945, and zero staged paths", "status": "pass"},
+    {"gate": "G05", "subject": "approved result is exactly blocked_source_authority_missing", "status": "pass"},
+    {"gate": "G06", "subject": "frozen technical validation remains 29/29 pass", "status": "pass"},
+    {"gate": "G07", "subject": "N3/K80 ratios 0.8 and containment value 0.512 remain exact", "status": "pass"},
+    {"gate": "G08", "subject": "four approved dependency rules and zero implementations preserved", "status": "pass"},
+    {"gate": "G09", "subject": "sixteen unique endpoint-exclusive top target mappings preserved", "status": "pass"},
+    {"gate": "G10", "subject": "twenty-six upright traces remain distributed 6/6/6/8", "status": "pass"},
+    {"gate": "G11", "subject": "common-frame authority available 0/26 and missing 26/26", "status": "pass"},
+    {"gate": "G12", "subject": "exact comparisons and explicit mismatches remain zero", "status": "pass"},
+    {"gate": "G13", "subject": "inferred correspondences, transforms, target traces, and physical pairs remain zero", "status": "pass"},
+    {"gate": "G14", "subject": "field, fill, surface, topology, and geometry authority remain zero", "status": "pass"},
+    {"gate": "G15", "subject": "decision classification is bounded technical-result authority only", "status": "pass"},
+    {"gate": "G16", "subject": "missing authority is not described as an explicit mismatch", "status": "pass"},
+    {"gate": "G17", "subject": "completed technical package and prior authority remain byte-identical", "status": "pass"},
+    {"gate": "G18", "subject": "new paths are contained by the closeout allowlist", "status": "pass"},
+    {"gate": "G19", "subject": "S10R-BLOCK-006, S10R-BLOCK-008, and S10R-BLOCK-009 remain active", "status": "pass"},
+    {"gate": "G20", "subject": "Step 10 closeout, Step 11, DCC, Unreal, and production remain blocked", "status": "pass"},
+    {"gate": "G21", "subject": "no missing-authority recovery route is selected or prepared", "status": "pass"},
+    {"gate": "G22", "subject": "no path is staged, committed, or pushed", "status": "pass"},
+    {"gate": "G23", "subject": "closeout output record is visibly open", "status": "pass"},
+    {"gate": "G24", "subject": "execution stops for mandatory restart", "status": "pass"}
+  ],
+  "step10_closeout_authorized": false,
+  "step11_authorized": false,
+  "dcc_authorized": false,
+  "unreal_authorized": false,
+  "production_authorized": false,
+  "staging_commit_push_authorized": false,
+  "recovery_route_selected": false,
+  "mandatory_restart_required": true
+}

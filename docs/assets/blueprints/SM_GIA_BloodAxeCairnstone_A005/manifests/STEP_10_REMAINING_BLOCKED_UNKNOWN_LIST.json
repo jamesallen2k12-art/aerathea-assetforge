@@ -1,0 +1,80 @@
+{
+  "schema": "aerathea.step_10_remaining_blocked_unknown_list.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "step_id": "STEP_10",
+  "date": "2026-07-16",
+  "status": "candidate_all_decisions_pending_and_blocked",
+  "artifact_classification": "candidate",
+  "decision": "Keep every required interpretation and every dependent construction action blocked until Flamestrike records explicit outcomes.",
+  "pending_decision_items": [
+    {
+      "id": "I10-001",
+      "blocked_subject": "cross-view scale and rectification convention",
+      "blocks": ["world-contour construction", "all dependent interpretation rules", "Step 11"]
+    },
+    {
+      "id": "I10-002",
+      "blocked_subject": "C-001 closed 360-degree envelope",
+      "blocks": ["C-001 construction blueprint", "C-001 topology"]
+    },
+    {
+      "id": "I10-003",
+      "blocked_subject": "C-002/C-003 course separation and hidden interfaces",
+      "blocks": ["base-course construction order", "course topology"]
+    },
+    {
+      "id": "I10-004",
+      "blocked_subject": "C-004 closed outer footprint",
+      "blocks": ["support envelope", "bottom boundary", "collision planning"]
+    },
+    {
+      "id": "I10-005",
+      "blocked_subject": "motif and line-feature face ownership",
+      "blocks": ["decoration ownership map", "hidden-face decoration decision"]
+    },
+    {
+      "id": "I10-006",
+      "blocked_subject": "hidden contact closure and occluded interface fill",
+      "blocks": ["watertight component interface plan", "modular assembly rule"]
+    },
+    {
+      "id": "I10-007",
+      "blocked_subject": "source-invisible bottom surface",
+      "blocks": ["closed mesh definition", "ground-contact surface"]
+    },
+    {
+      "id": "I10-008",
+      "blocked_subject": "source-invisible topology and watertight grouping",
+      "blocks": ["Step 11 topology ownership", "DCC construction"]
+    },
+    {
+      "id": "I10-009",
+      "blocked_subject": "construction origin, centerline, and pivot",
+      "blocks": ["component coordinates", "export pivot", "Unreal placement convention"]
+    },
+    {
+      "id": "I10-010",
+      "blocked_subject": "source-view ownership for transition sectors",
+      "blocks": ["complete source-versus-interpretation surface map", "corner construction"]
+    }
+  ],
+  "preserved_inherited_decision_subject_ids": [
+    "D06-001", "D06-002", "D06-003", "D06-004", "D06-005", "D06-006", "D06-007",
+    "D07-001", "D07-002", "D07-003", "D07-004", "D07-005", "D07-006", "D07-007",
+    "TDIS-001", "TDIS-002", "TDIS-003", "TDIS-004",
+    "XDIS-001", "XDIS-002", "XDIS-003", "XDIS-004", "XDIS-005", "XDIS-006",
+    "BCR-001", "BCR-002", "BCR-003", "BCR-004", "BCR-005", "BCR-006", "BCR-007",
+    "TBLOCK-001", "TBLOCK-002", "TBLOCK-003", "TBLOCK-004", "TBLOCK-005", "TBLOCK-006",
+    "U-001", "U-002", "U-003", "U-004", "U-005", "U-006", "U-007", "U-008", "U-009",
+    "OS-001", "OS-002", "OS-003",
+    "CL-001", "CL-002", "CL-003"
+  ],
+  "inherited_decision_subject_ids_count": 52,
+  "pending_interpretation_decisions": 10,
+  "rectification_subgate_status": "not_authorized",
+  "corrected_image_status": "does_not_exist",
+  "geometry_status": "not_started",
+  "step_10_pass": false,
+  "step_11_authorized": false,
+  "flamestrike_output_decisions": "pending"
+}

@@ -1,0 +1,145 @@
+{
+  "schema": "aerathea.s10r_006_r4_a_lane_boundary_coupling_authority_option_registry.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-006-R4-A-LBCA-DEC-A01",
+  "date": "2026-07-17",
+  "status": "S10R_006_R4_A_selected_separate_coupling_rule_contract_preparation_authorized",
+  "artifact_classification": "authoritative for bounded S10R-006-R4-A option selection only",
+  "decision_subject": "authority to prepare a separate bounded lane-to-H_v coupling-rule contract",
+  "options": [
+    {
+      "id": "S10R-006-R4-A",
+      "label": "Bounded Coupling-Rule Design Route",
+      "candidate_rule": "Accept the approved R3 symbolic method as sufficient interpretation authority to prepare, under a later separately approved task, one bounded lane-to-H_v coupling-rule contract.",
+      "preserved_r3_scope": {
+        "symbolic_lanes": 4,
+        "approved_construction_records": 12,
+        "u_meaning": "normalized within-lane rank only",
+        "v_identity": "v = t",
+        "between_trace_operator": "unevaluated adjacent-record-only symbolic weights",
+        "boundary_family": "unevaluated H_v abstract analytic family",
+        "proof_only_holdouts": 14
+      },
+      "later_contract_requirements": [
+        "declare one exact abstract boundary parameter, orientation, domain, and endpoint convention",
+        "identify every proposed per-lane parameter interval explicitly",
+        "label every proposed relation as interpretation rather than source evidence or physical placement",
+        "preserve all cross-lane, cross-view, top/upright, closure, and implementation stops",
+        "stop before any parameter value or coordinate is instantiated"
+      ],
+      "current_rule_definitions": {
+        "boundary_parameter": null,
+        "orientation": null,
+        "domain": null,
+        "endpoint_convention": null,
+        "per_lane_parameter_intervals": [],
+        "lane_to_boundary_function": null,
+        "angular_placement": null,
+        "arc_length_placement": null
+      },
+      "future_authority_if_selected": "preparation only of a separate bounded lane-to-H_v coupling-rule contract",
+      "block_effect_if_selected": {
+        "S10R-BLOCK-006": "active_pending_separate_lane_boundary_coupling_rule_contract",
+        "S10R-BLOCK-008": "active_unchanged",
+        "S10R-BLOCK-009": "active_unchanged",
+        "resolved_block_ids": []
+      },
+      "current_authority_created": true,
+      "coupling_rule_authorized": false,
+      "field_implementation_authorized": false,
+      "known_risks": [
+        "Any later interval or orientation would be interpretation rather than recovered physical source placement.",
+        "A mathematically complete mapping could still be physically wrong.",
+        "Lane intervals could imply seams or closure unless a later contract explicitly forbids those effects.",
+        "A later rule could overstate symbolic rank as angular or arc evidence."
+      ],
+      "candidate_assessment": "recommended_smallest_sufficient_bounded_route",
+      "artifact_classification": "authoritative selected bounded preparation route only",
+      "flamestrike_decision": "approved",
+      "selected": true
+    },
+    {
+      "id": "S10R-006-R4-BLOCK",
+      "label": "Preserve Coupling Block",
+      "candidate_rule": "Do not authorize preparation of a coupling-rule contract; retain the approved R3 symbolic method within its uncoupled scope until new source authority or another separately approved Blueprint rule exists.",
+      "future_authority_if_selected": "none",
+      "block_effect_if_selected": {
+        "S10R-BLOCK-006": "active_approved_symbolic_method_no_field_coupling",
+        "S10R-BLOCK-008": "active_unchanged",
+        "S10R-BLOCK-009": "active_unchanged",
+        "resolved_block_ids": []
+      },
+      "current_authority_created": false,
+      "coupling_rule_authorized": false,
+      "field_implementation_authorized": false,
+      "known_risks": [
+        "A005 cannot advance toward a coupled transition interpretation until new authority is supplied."
+      ],
+      "candidate_assessment": "required_block_option",
+      "artifact_classification": "candidate block option only",
+      "flamestrike_decision": "not selected",
+      "selected": false
+    }
+  ],
+  "candidate_recommendation": "S10R-006-R4-A",
+  "recommendation_classification": "candidate recommendation only",
+  "recommendation_selected": true,
+  "selected_option": "S10R-006-R4-A",
+  "selection_record": {
+    "approver": "Flamestrike",
+    "approval_statement": "ok lets follow your recommendation",
+    "approval_context": "Direct response to the evidence-based recommendation of S10R-006-R4-A over S10R-006-R4-BLOCK.",
+    "codex_evidence_recommendation": "S10R-006-R4-A",
+    "authority_granted": "preparation only of a separate bounded lane-to-H_v coupling-rule contract",
+    "coupling_rule_authorized": false,
+    "field_implementation_authorized": false,
+    "resolved_block_ids": []
+  },
+  "pending_flamestrike_decisions": 0,
+  "definition_counts": {
+    "boundary_parameters": 0,
+    "parameter_intervals": 0,
+    "orientations": 0,
+    "coupling_functions": 0,
+    "seams": 0,
+    "joins": 0,
+    "closures": 0,
+    "physical_source_target_transforms": 0,
+    "physical_cross_view_pairs": 0,
+    "target_trace_coordinates": 0,
+    "field_samples": 0,
+    "fills": 0,
+    "surfaces": 0,
+    "topology": 0,
+    "geometry": 0
+  },
+  "active_blocks": [
+    {
+      "id": "S10R-BLOCK-006",
+      "status": "active_pending_separate_lane_boundary_coupling_rule_contract"
+    },
+    {
+      "id": "S10R-BLOCK-008",
+      "status": "active_unchanged"
+    },
+    {
+      "id": "S10R-BLOCK-009",
+      "status": "active_unchanged"
+    }
+  ],
+  "resolved_block_ids": [],
+  "authorization_flags": {
+    "coupling_rule_preparation_authorized": true,
+    "coupling_rule_authorized": false,
+    "method_implementation_authorized": false,
+    "field_implementation_authorized": false,
+    "step10_closeout_authorized": false,
+    "step11_authorized": false,
+    "dcc_authorized": false,
+    "unreal_authorized": false,
+    "production_authorized": false,
+    "staging_authorized": false,
+    "commit_authorized": false,
+    "push_authorized": false
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "schema": "aerathea.core_reassessment_scale_authority_validation.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-SA-A01",
+  "date": "2026-07-16",
+  "status": "validation_pass_approved_reassessment_closeout",
+  "artifact_classification": "proof only",
+  "historical_role_choice": "A005-CR-ROLE-A",
+  "pre_action_checkpoint": "Saved/ProjectRecovery/20260716-110355/",
+  "mid_action_checkpoint": "Saved/ProjectRecovery/20260716-110717/",
+  "post_validation_checkpoint": "Saved/ProjectRecovery/20260716-111329",
+  "post_output_decision_checkpoint": "Saved/ProjectRecovery/20260716-111546",
+  "coverage": {
+    "preoutput_universe_records": 101,
+    "lexical_match_records": 70,
+    "field_or_line_matches": 883,
+    "original_hash_mismatches": [],
+    "source_hash_mismatches": {},
+    "governing_hash_mismatches": {}
+  },
+  "output_hashes": {
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/CORE_REASSESSMENT_SCALE_AUTHORITY_A01_CONTRACT.md": "b3d8c174bfd8f6447beb00398e750725f02f6479e438fa36bc268c1741c3057a",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/CORE_REASSESSMENT_SCALE_AUTHORITY_A01_INPUT_INDEX.json": "1501c685686a01433590e4d6ad4a9c505ac7bd0c4140538aaa4d42af42c1355c",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/CORE_REASSESSMENT_SCALE_AUTHORITY_A01_AFFECTED_RECORD_INDEX.json": "c800cbe7bcf91c0af18d043de7916c02d9d6a76dd59efb29627751deb642ac67",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/CORE_REASSESSMENT_SCALE_AUTHORITY_A01_CLASSIFICATION.json": "38429af9c5103514024b01fabd3acd90c6eba59c18be736df954c962e5d0ac44",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_CORE_REASSESSMENT_STATUS_20260716_SCALE_AUTHORITY.md": "9ce73ffc0482c22a854feb6794a94035630f32154dcb9ace9d63b833474a4e3b",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/CORE_REASSESSMENT_SCALE_AUTHORITY_A01_OUTPUT_RECORD.md": "435ef8e8acc79279f9ebee3dc85e214f0945cd0a61ae3c3214244a188e745fb5",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/handoffs/CORE_REASSESSMENT_SCALE_AUTHORITY_A01_TO_RECOVERY_HANDOFF.md": "9f05b7a245e14ee7dd5573635753836bf19b81b244aaee21066ad348764053f1",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_APPROVAL_LOG.md": "89a64fbdc4ed9eab26e43edd745a00e9bb088e63bf1ace9162657d36a0ae05a1",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_ARTIFACT_INDEX.md": "6d424818161b9cbc1f53215e8bed9298ed9869d34b4420bae2fdaea76bd9bcaf",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_RESET_RESUME_STATE.md": "3b9c1a98cd42332d72a01c3673ebfd49ddd51cd074d9353511d8412b79a9e7e3",
+    "docs/projects/assetforge/DRIFT_LEDGER.md": "8920efd1b4f0e7c28efdfd58965bb9281a1f8fe001bb93db30f3df7e7cfa6fd0"
+  },
+  "validator_summary": {
+    "passed": 48,
+    "failed": 0
+  },
+  "validators": [
+    {
+      "id": "input_index_parses",
+      "result": "pass"
+    },
+    {
+      "id": "affected_index_parses",
+      "result": "pass"
+    },
+    {
+      "id": "classification_parses",
+      "result": "pass"
+    },
+    {
+      "id": "preoutput_universe_is_101",
+      "result": "pass"
+    },
+    {
+      "id": "all_universe_paths_unique",
+      "result": "pass"
+    },
+    {
+      "id": "all_original_json_inputs_parse",
+      "result": "pass"
+    },
+    {
+      "id": "all_nonupdated_original_records_hash_match",
+      "result": "pass",
+      "evidence": []
+    },
+    {
+      "id": "all_six_source_and_panel_hashes_match",
+      "result": "pass",
+      "evidence": {}
+    },
+    {
+      "id": "governing_hashes_match",
+      "result": "pass",
+      "evidence": {}
+    },
+    {
+      "id": "a01_a02_metric_hashes_match",
+      "result": "pass",
+      "evidence": {}
+    },
+    {
+      "id": "all_created_output_paths_exist",
+      "result": "pass",
+      "evidence": []
+    },
+    {
+      "id": "all_updated_output_paths_exist",
+      "result": "pass",
+      "evidence": []
+    },
+    {
+      "id": "lexical_match_record_count_is_70",
+      "result": "pass"
+    },
+    {
+      "id": "field_or_line_match_count_is_883",
+      "result": "pass"
+    },
+    {
+      "id": "all_lexical_records_have_matches",
+      "result": "pass"
+    },
+    {
+      "id": "unaffected_plus_matched_equals_universe",
+      "result": "pass"
+    },
+    {
+      "id": "all_required_hit_classes_present",
+      "result": "pass"
+    },
+    {
+      "id": "role_choice_is_a005_cr_role_a",
+      "result": "pass"
+    },
+    {
+      "id": "affected_index_is_authoritative_recovery_routing",
+      "result": "pass"
+    },
+    {
+      "id": "classification_is_authoritative_recovery_routing",
+      "result": "pass"
+    },
+    {
+      "id": "output_approval_recorded_in_classification",
+      "result": "pass"
+    },
+    {
+      "id": "drift_confirmed",
+      "result": "pass"
+    },
+    {
+      "id": "last_whole_step_boundary_is_step04r",
+      "result": "pass"
+    },
+    {
+      "id": "step05_is_mixed_not_whole_invalid",
+      "result": "pass"
+    },
+    {
+      "id": "first_affected_action_is_step06",
+      "result": "pass"
+    },
+    {
+      "id": "raw_pixel_evidence_preserved",
+      "result": "pass"
+    },
+    {
+      "id": "printed_values_are_approximate_target_evidence",
+      "result": "pass"
+    },
+    {
+      "id": "exact_calibration_conclusions_superseded_candidate",
+      "result": "pass"
+    },
+    {
+      "id": "step10_original_files_hash_unchanged",
+      "result": "pass"
+    },
+    {
+      "id": "step10_stopped",
+      "result": "pass"
+    },
+    {
+      "id": "step11_unauthorized",
+      "result": "pass"
+    },
+    {
+      "id": "transform_not_authorized",
+      "result": "pass"
+    },
+    {
+      "id": "rectification_not_authorized",
+      "result": "pass"
+    },
+    {
+      "id": "geometry_not_authorized",
+      "result": "pass"
+    },
+    {
+      "id": "in_place_rewrite_not_performed",
+      "result": "pass"
+    },
+    {
+      "id": "whole_mixed_files_not_invalidated",
+      "result": "pass"
+    },
+    {
+      "id": "drift_ledger_entry_present_once",
+      "result": "pass"
+    },
+    {
+      "id": "reset_state_stop_override_present",
+      "result": "pass"
+    },
+    {
+      "id": "artifact_index_candidate_entries_present",
+      "result": "pass"
+    },
+    {
+      "id": "approval_log_records_role_a",
+      "result": "pass"
+    },
+    {
+      "id": "contract_records_execution_approval",
+      "result": "pass"
+    },
+    {
+      "id": "contract_records_output_approval",
+      "result": "pass"
+    },
+    {
+      "id": "approval_log_records_output_approval",
+      "result": "pass"
+    },
+    {
+      "id": "status_record_is_authoritative_recovery_routing",
+      "result": "pass"
+    },
+    {
+      "id": "handoff_limits_authority_to_contract_preparation",
+      "result": "pass"
+    },
+    {
+      "id": "drift_ledger_records_output_approval",
+      "result": "pass"
+    },
+    {
+      "id": "no_transform_or_corrected_image_output_created",
+      "result": "pass"
+    },
+    {
+      "id": "no_geometry_extension_created",
+      "result": "pass"
+    }
+  ],
+  "aggregate_result": "pass_integrity_approved_scale_authority_core_reassessment_closeout",
+  "tracked_authority_effect": "authoritative field-level recovery routing and status override only",
+  "recovery_execution_authorized": false,
+  "original_step01_step10_records_modified": false,
+  "source_or_panel_modified": false,
+  "step10_revised": false,
+  "transform_created": false,
+  "rectification_created": false,
+  "geometry_created": false,
+  "commit_or_push_performed": false
+}

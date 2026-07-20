@@ -1,0 +1,185 @@
+{
+  "schema": "aerathea.source_vs_measurement_dual_option_registry.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-SMR-A02",
+  "date": "2026-07-17",
+  "status": "rules_locked_before_option_calculation",
+  "artifact_classification": "proof only",
+  "one_decision": "Determine whether Option A, Option B, both, or neither pass the pre-registered feasibility gates.",
+  "physical_targets_cm": {
+    "complete_asset_Z": 220,
+    "C_001_X": 120,
+    "C_001_Y": 90,
+    "C_004_X": 140,
+    "C_004_Y": 110,
+    "C_004_Z": 35
+  },
+  "source_roles": {
+    "front": "primary_visible_XZ_shape_evidence",
+    "left": "primary_visible_YZ_shape_evidence",
+    "back": "validation_only_for_conflicting_scale_and_nonconflicting_visible_detail",
+    "right": "validation_only_for_conflicting_scale_and_nonconflicting_visible_detail",
+    "top": "visible_plan_character_and_contact_feasibility_evidence_only"
+  },
+  "replayed_A01_whole_C004_factor_candidates": {
+    "formula": "factor = (target C-004 to reference target ratio) / (source annotation-span ratio)",
+    "front": {
+      "X": {
+        "source_spans_px": {
+          "C_001": 230,
+          "C_004": 290
+        },
+        "target_ratio": "140/120",
+        "factor": 0.925287356322,
+        "change_percent": -7.471264367816
+      },
+      "Z": {
+        "source_spans_px": {
+          "complete_asset": 375,
+          "C_004": 62
+        },
+        "target_ratio": "35/220",
+        "factor": 0.96224340176,
+        "change_percent": -3.775659824047
+      }
+    },
+    "back_validation": {
+      "X": {
+        "source_spans_px": {
+          "C_001": 189,
+          "C_004": 245
+        },
+        "target_ratio": "140/120",
+        "factor": 0.9,
+        "change_percent": -10.0
+      },
+      "Z": {
+        "source_spans_px": {
+          "complete_asset": 275,
+          "C_004": 52
+        },
+        "target_ratio": "35/220",
+        "factor": 0.841346153846,
+        "change_percent": -15.865384615385
+      }
+    },
+    "left": {
+      "Y": {
+        "source_spans_px": {
+          "C_001": 168,
+          "C_004": 225
+        },
+        "target_ratio": "110/90",
+        "factor": 0.912592592593,
+        "change_percent": -8.740740740741
+      },
+      "Z": {
+        "source_spans_px": {
+          "complete_asset": 277,
+          "C_004": 52
+        },
+        "target_ratio": "35/220",
+        "factor": 0.847465034965,
+        "change_percent": -15.253496503497
+      }
+    },
+    "right_validation": {
+      "Y": {
+        "source_spans_px": {
+          "C_001": 144,
+          "C_004": 193
+        },
+        "target_ratio": "110/90",
+        "factor": 0.911917098446,
+        "change_percent": -8.80829015544
+      },
+      "Z": {
+        "source_spans_px": {
+          "complete_asset": 254,
+          "C_004": 47
+        },
+        "target_ratio": "35/220",
+        "factor": 0.859767891683,
+        "change_percent": -14.023210831721
+      }
+    },
+    "top": {
+      "X": {
+        "source_spans_px": {
+          "C_001": 159,
+          "C_004": 208
+        },
+        "target_ratio": "140/120",
+        "factor": 0.891826923077,
+        "change_percent": -10.817307692308
+      },
+      "Y": {
+        "source_spans_px": {
+          "C_001": 94,
+          "C_004": 140
+        },
+        "target_ratio": "110/90",
+        "factor": 0.820634920635,
+        "change_percent": -17.936507936508
+      }
+    }
+  },
+  "shared_rules": {
+    "same_input_lock": true,
+    "same_comparison_gates": true,
+    "no_hybrid": true,
+    "source_pixels_immutable": true,
+    "existing_authority_immutable": true,
+    "raw_pixels_cross_panel_physically_commensurate": false,
+    "physical_cross_view_pixel_pairs_allowed": false,
+    "world_transform_allowed": false,
+    "filled_or_closed_unknown_allowed": false,
+    "automatic_option_selection_allowed": false
+  },
+  "option_A": {
+    "id": "OPTION_A_C003_SCALE_WITH_C004_INNER_CONTACT",
+    "C004_operation": "replay per-view A01 axis factors in a diagnostic coordinate set only",
+    "C003_operation": "one matching axis-aligned affine feasibility map per applicable view",
+    "C001_operation": "unchanged",
+    "C002_operation": "unchanged",
+    "CL003_requirement": "exact coincidence after shared C003/C004 map",
+    "CL002_requirement": "exact coincidence with unchanged C002",
+    "near_match_allowed": false
+  },
+  "option_B": {
+    "id": "OPTION_B_C004_OUTER_ONLY_CONTACT_LOCKED_ADJUSTMENT",
+    "CL003_operation": "lock every tested sample at original source coordinate",
+    "C001_operation": "unchanged",
+    "C002_operation": "unchanged",
+    "C003_operation": "unchanged",
+    "C004_operation": "move only traceable source-visible outer points or segments",
+    "source_raster_warp_allowed": false,
+    "hidden_or_occluded_transition_allowed": false,
+    "untraceable_transition_result": "blocked"
+  },
+  "hard_gates": [
+    "input_and_source_hash_integrity",
+    "six_physical_targets_unchanged",
+    "primary_view_target_frame_error",
+    "CL003_preservation",
+    "CL002_preservation",
+    "CL001_and_unaffected_component_preservation",
+    "per_panel_displacement_statistics",
+    "normalized_displacement_statistics",
+    "affected_scope_counts",
+    "front_left_owner_compliance",
+    "back_right_disagreement_disclosure",
+    "top_evidence_role_compliance",
+    "source_interpretation_separation",
+    "hidden_sector_non_invention",
+    "forbidden_operation_audit",
+    "write_scope_and_stop_state"
+  ],
+  "result_registry": [
+    "option_A_feasible_option_B_blocked",
+    "option_B_feasible_option_A_blocked",
+    "both_options_feasible_pending_Flamestrike_visual_selection",
+    "both_options_blocked"
+  ],
+  "calculation_started": false
+}

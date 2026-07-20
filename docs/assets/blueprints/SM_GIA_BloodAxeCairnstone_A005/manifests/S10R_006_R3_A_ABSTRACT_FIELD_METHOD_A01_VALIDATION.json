@@ -1,0 +1,45 @@
+{
+  "schema": "aerathea.s10r_006_r3_a_abstract_field_method_a01_validation.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-006-R3-A-AFM-A01",
+  "date": "2026-07-17",
+  "status": "pass_independent_audit_visible_review_verified",
+  "artifact_classification": "proof only",
+  "independent_validation": {
+    "gate_count": 20,
+    "passed_gate_count": 20,
+    "failed_gate_count": 0,
+    "result": "pass",
+    "auditor": "Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r006_r3_a_abstract_field_method_a01.py"
+  },
+  "authority_counts": {
+    "physical_transforms": 0,
+    "physical_pairs": 0,
+    "target_trace_coordinates": 0,
+    "field_samples": 0,
+    "fills": 0,
+    "surfaces": 0,
+    "topology": 0,
+    "geometry": 0
+  },
+  "resolved_block_ids": [],
+  "visible_review": {
+    "output_record": "verified in dedicated gedit window through exact A005-title filter",
+    "decision_handoff": "verified in dedicated gedit window through exact A005-title filter",
+    "global_desktop_titles_surfaced": false
+  },
+  "post_decision_confirmation": {
+    "decision": "approved bounded symbolic interpretation only",
+    "field_implementation_authorized": false,
+    "coupling_rule_authorized": false,
+    "resolved_block_ids": [],
+    "all_three_blocks_active": true,
+    "confirmation_status": "pass 20/20 final auditor rerun"
+  },
+  "post_decision_visible_review": {
+    "output_record": "verified in dedicated gedit window through exact A005-title filter",
+    "decision_handoff": "verified in dedicated gedit window through exact A005-title filter",
+    "editor_modified_markers_present": false,
+    "global_desktop_titles_surfaced": false
+  }
+}

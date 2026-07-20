@@ -1,0 +1,244 @@
+{
+  "schema": "aerathea.top_c004_outer_perimeter_interpretation_rule_validation.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-TOP-C004-OPIR-A01",
+  "date": "2026-07-17",
+  "status": "pass",
+  "artifact_classification": "proof only",
+  "controlling_result": "three_target_space_options_ready_for_Flamestrike_decision",
+  "validator_count": 25,
+  "passed_count": 25,
+  "failed_count": 0,
+  "validators": [
+    {
+      "id": "input_count_22",
+      "result": "pass",
+      "evidence": 22
+    },
+    {
+      "id": "input_hashes_match",
+      "result": "pass",
+      "evidence": {
+        "matched": 22,
+        "mismatched": 0
+      }
+    },
+    {
+      "id": "six_physical_targets_unchanged",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "top_CL003_16_unchanged",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "cross_view_CL003_47_unchanged",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "top_outer_anchor_count_zero",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "source_owned_top_perimeter_count_zero",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "option_registry_pre_registered",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "three_registered_options",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "registered_exponents_exact",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "all_widths_140",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "all_depths_110",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "matched_render_rules",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "mathematical_closure_candidate_only",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "line_only_unfilled",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "source_overlay_count_zero",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "source_contact_mapping_count_zero",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "no_source_center_or_pivot",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "no_unified_scale_or_world_conversion",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "no_fill_field_topology_or_geometry",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "no_automatic_ranking_or_selection",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "review_board_exists",
+      "result": "pass",
+      "evidence": {
+        "sha256": "8b77f03f46b596df061a5090489f4506a46fb65ab460a5d3fe5596f9edf820df",
+        "size_bytes": 691949
+      }
+    },
+    {
+      "id": "write_scope_no_unexpected_new_paths",
+      "result": "pass",
+      "evidence": {
+        "new_paths": [
+          "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/evidence/TOP_C004_OUTER_PERIMETER_INTERPRETATION_RULE_A01/SM_GIA_BloodAxeCairnstone_A005_TOP_C004_OUTER_PERIMETER_INTERPRETATION_RULE_A01_REVIEW_BOARD.png",
+          "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/handoffs/TOP_C004_OUTER_PERIMETER_INTERPRETATION_RULE_A01_TO_RULE_SELECTION_HANDOFF.md",
+          "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/TOP_C004_OUTER_PERIMETER_INTERPRETATION_RULE_A01_CURVE_LEDGER.json",
+          "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/TOP_C004_OUTER_PERIMETER_INTERPRETATION_RULE_A01_INPUT_LOCK.json",
+          "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/TOP_C004_OUTER_PERIMETER_INTERPRETATION_RULE_A01_OPTION_REGISTRY.json",
+          "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/TOP_C004_OUTER_PERIMETER_INTERPRETATION_RULE_A01_OUTPUT_RECORD.md"
+        ],
+        "unexpected": []
+      }
+    },
+    {
+      "id": "step10_step11_production_stopped",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "commit_and_push_not_performed",
+      "result": "pass",
+      "evidence": "f525945"
+    }
+  ],
+  "input_lock_validation": {
+    "input_count": 22,
+    "current_hash_match_count": 22,
+    "unexpected_hash_mismatch_count": 0
+  },
+  "write_scope_validation": {
+    "baseline_path_count": 681,
+    "new_git_paths": [
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/evidence/TOP_C004_OUTER_PERIMETER_INTERPRETATION_RULE_A01/SM_GIA_BloodAxeCairnstone_A005_TOP_C004_OUTER_PERIMETER_INTERPRETATION_RULE_A01_REVIEW_BOARD.png",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/handoffs/TOP_C004_OUTER_PERIMETER_INTERPRETATION_RULE_A01_TO_RULE_SELECTION_HANDOFF.md",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/TOP_C004_OUTER_PERIMETER_INTERPRETATION_RULE_A01_CURVE_LEDGER.json",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/TOP_C004_OUTER_PERIMETER_INTERPRETATION_RULE_A01_INPUT_LOCK.json",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/TOP_C004_OUTER_PERIMETER_INTERPRETATION_RULE_A01_OPTION_REGISTRY.json",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/TOP_C004_OUTER_PERIMETER_INTERPRETATION_RULE_A01_OUTPUT_RECORD.md"
+    ],
+    "unexpected_new_paths": []
+  },
+  "forbidden_work_validation": {
+    "source_modified": false,
+    "physical_targets_modified": false,
+    "contacts_modified": false,
+    "source_overlay_created": false,
+    "source_contact_mapping_created": false,
+    "source_center_or_placement_created": false,
+    "unified_top_scale_or_world_conversion_created": false,
+    "filled_footprint_or_mask_created": false,
+    "transition_field_surface_topology_or_geometry_created": false,
+    "step10_revised": false,
+    "step11_started": false,
+    "production_started": false,
+    "commit_created": false,
+    "push_performed": false
+  },
+  "output_hashes": [
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/TOP_C004_OUTER_PERIMETER_INTERPRETATION_RULE_A01_INPUT_LOCK.json",
+      "sha256": "20898c79adfa85efb709912cb7f9e3417d9f20abbfbfd18194984ffd6e8ee1d4",
+      "size_bytes": 108327,
+      "artifact_classification": "proof only"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/TOP_C004_OUTER_PERIMETER_INTERPRETATION_RULE_A01_OPTION_REGISTRY.json",
+      "sha256": "7746e5a27b90e66cd0be652e02dd066a5f23bb77b79f05b50bb11fe3dcd3b6bd",
+      "size_bytes": 3139,
+      "artifact_classification": "proof only"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/TOP_C004_OUTER_PERIMETER_INTERPRETATION_RULE_A01_CURVE_LEDGER.json",
+      "sha256": "3b8bf3a232605d73ca1ecb66085e8f27d3abc54cb91228543cbeddf76149f581",
+      "size_bytes": 354811,
+      "artifact_classification": "proof only"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/evidence/TOP_C004_OUTER_PERIMETER_INTERPRETATION_RULE_A01/SM_GIA_BloodAxeCairnstone_A005_TOP_C004_OUTER_PERIMETER_INTERPRETATION_RULE_A01_REVIEW_BOARD.png",
+      "sha256": "8b77f03f46b596df061a5090489f4506a46fb65ab460a5d3fe5596f9edf820df",
+      "size_bytes": 691949,
+      "artifact_classification": "proof only"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/TOP_C004_OUTER_PERIMETER_INTERPRETATION_RULE_A01_OUTPUT_RECORD.md",
+      "sha256": "4ead0236b5fde061c4d404d29e87be6a44f625d32addf687e23186806193cfc7",
+      "size_bytes": 2049,
+      "artifact_classification": "candidate"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/handoffs/TOP_C004_OUTER_PERIMETER_INTERPRETATION_RULE_A01_TO_RULE_SELECTION_HANDOFF.md",
+      "sha256": "12b081283b8d966099af2a6e7ff7f419a610a56b4667866e6b9ebc4de960ec53",
+      "size_bytes": 1237,
+      "artifact_classification": "candidate"
+    }
+  ],
+  "output_hash_policy": "Every non-validation execution output is recorded here. This validation file omits its own hash to avoid circular mutation.",
+  "visual_review_validation": {
+    "status": "pending_visible_open",
+    "board_clear_and_presentation_ready": true,
+    "source_and_options_separate": true,
+    "three_matched_options_present": true,
+    "candidate_curves_unfilled": true,
+    "source_overlay_or_contact_mapping_shown": false,
+    "filled_footprint_surface_or_geometry_shown": false
+  },
+  "stop_state": {
+    "option_selection": "pending_Flamestrike",
+    "source_placement_and_contact_mapping": "stopped",
+    "continuous_transition_field": "stopped",
+    "step10_revision": "stopped",
+    "step11": "stopped",
+    "geometry_and_production": "stopped"
+  }
+}

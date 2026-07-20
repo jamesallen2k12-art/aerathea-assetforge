@@ -1,0 +1,134 @@
+{
+  "schema": "aerathea.s10r_006_r6_a_cross_view_corner_ownership_authority_option_registry.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-006-R6-A-CVCOA-DEC-A01",
+  "date": "2026-07-17",
+  "status": "approved_S10R_006_R6_A_rule_contract_preparation_route_selected",
+  "artifact_classification": "authoritative for bounded S10R-006-R6-A selection only",
+  "technical_result": "candidate_cross_view_corner_ownership_authority_decision_surface_ready_for_Flamestrike",
+  "options": [
+    {
+      "id": "S10R-006-R6-A",
+      "label": "Bounded Corner-Ownership Rule-Contract Route",
+      "route": "Authorize later preparation only of one separate bounded cross-view corner-ownership rule contract.",
+      "evidence_basis": "Approved Step 05 cardinal axes plus the bounded R5 four-arc/four-gap symbolic structure.",
+      "authority_limit": "No gap point, q value, interval, owner, seam, join, closure, evaluation, field, or implementation is authorized.",
+      "block_effect_if_selected": "S10R-BLOCK-006 changes only to active_pending_separate_cross_view_corner_ownership_rule_contract; no block resolves.",
+      "known_risks": [
+        "An abstract rule could be deterministic without being physical source correspondence.",
+        "Historical I10-010-A requires revision and cannot be copied forward as authority.",
+        "Later rule design could imply seams or closure unless explicitly bounded.",
+        "Proof-only back/right records could be mistaken for construction ownership."
+      ],
+      "selected": true,
+      "classification": "authoritative selected preparation route only"
+    },
+    {
+      "id": "S10R-006-R6-BLOCK",
+      "label": "Preserve Four Unowned Corner Gaps",
+      "route": "Do not authorize corner-ownership rule-contract preparation; preserve G_0 through G_3 as unowned and blocked.",
+      "evidence_basis": "R5 explicitly leaves every gap unowned and no current corner rule exists.",
+      "authority_limit": "No new preparation or corner-ownership authority.",
+      "block_effect_if_selected": "S10R-BLOCK-006 remains active_approved_lane_boundary_coupling_rule_four_corner_gaps_unowned_no_field; no block resolves.",
+      "known_risks": [
+        "Joined transition ownership cannot advance while the four corners remain unowned."
+      ],
+      "selected": false,
+      "classification": "reference only after decision"
+    }
+  ],
+  "selected_option": "S10R-006-R6-A",
+  "candidate_recommendation": {
+    "option_id": "S10R-006-R6-A",
+    "classification": "accepted evidence recommendation",
+    "selected": true,
+    "reason": "It is the smallest bounded gate that permits a later visible and rejectable revised rule proposal without assigning any corner."
+  },
+  "preserved_gap_set": [
+    {
+      "id": "G_0",
+      "q_interval": "(1/2,3/2)",
+      "status": "unowned_blocked"
+    },
+    {
+      "id": "G_1",
+      "q_interval": "(5/2,7/2)",
+      "status": "unowned_blocked"
+    },
+    {
+      "id": "G_2",
+      "q_interval": "(9/2,11/2)",
+      "status": "unowned_blocked"
+    },
+    {
+      "id": "G_3",
+      "q_interval": "(13/2,15/2)",
+      "status": "unowned_blocked_unwrapped"
+    }
+  ],
+  "output_counts": {
+    "selected_options": 1,
+    "gap_assignments": 0,
+    "gap_subintervals": 0,
+    "parameter_instances": 0,
+    "evaluated_samples": 0,
+    "corner_owners": 0,
+    "seams": 0,
+    "joins": 0,
+    "closures": 0,
+    "source_to_target_transforms": 0,
+    "physical_pairs": 0,
+    "target_coordinates": 0,
+    "centers": 0,
+    "pivots": 0,
+    "anchors": 0,
+    "fields": 0,
+    "fills": 0,
+    "surfaces": 0,
+    "topology": 0,
+    "geometry": 0
+  },
+  "active_blocks": [
+    {
+      "id": "S10R-BLOCK-006",
+      "status": "active_pending_separate_cross_view_corner_ownership_rule_contract"
+    },
+    {
+      "id": "S10R-BLOCK-008",
+      "status": "active_unchanged"
+    },
+    {
+      "id": "S10R-BLOCK-009",
+      "status": "active_unchanged"
+    }
+  ],
+  "resolved_block_ids": [],
+  "authorization_flags": {
+    "candidate_decision_surface_registered": true,
+    "option_selected": true,
+    "corner_rule_preparation_authorized": true,
+    "corner_rule_authorized": false,
+    "rule_evaluation_authorized": false,
+    "field_implementation_authorized": false,
+    "step10_closeout_authorized": false,
+    "step11_authorized": false,
+    "dcc_authorized": false,
+    "unreal_authorized": false,
+    "production_authorized": false,
+    "staging_authorized": false,
+    "commit_authorized": false,
+    "push_authorized": false
+  },
+  "selection_record": {
+    "date": "2026-07-17",
+    "approver": "Flamestrike",
+    "approval_statement": "approved",
+    "approval_context": "Direct response to the exact R6-A or R6-BLOCK option decision question and the evidence-based recommendation of R6-A.",
+    "selected_option": "S10R-006-R6-A",
+    "authority_granted": "preparation only of one separate bounded cross-view corner-ownership rule contract",
+    "corner_rule_authorized": false,
+    "rule_evaluation_authorized": false,
+    "field_implementation_authorized": false,
+    "resolved_block_ids": []
+  }
+}

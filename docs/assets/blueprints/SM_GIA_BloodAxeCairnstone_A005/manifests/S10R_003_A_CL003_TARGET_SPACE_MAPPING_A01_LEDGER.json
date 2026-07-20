@@ -1,0 +1,828 @@
+{
+  "schema": "aerathea.s10r_003_a_cl003_target_space_mapping_a01_ledger.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-003-A-MAP-A01",
+  "date": "2026-07-17",
+  "generated_at": "2026-07-17T15:44:09.225548-04:00",
+  "status": "candidate_mapping_calculated_pending_Flamestrike",
+  "artifact_classification": "candidate interpretation",
+  "input_lock_sha256": "f49e239bea3b7f163cecc73718772c42a9284b87d7a3aa37d684db6c98110e2c",
+  "mapping_rule": {
+    "name": "endpoint-exclusive equal-rank parameter mapping",
+    "n_per_sector": 4,
+    "u_rule": "r/(n+1)=r/5",
+    "u_values_exact": [
+      "1/5",
+      "2/5",
+      "3/5",
+      "4/5"
+    ],
+    "equal_arc_length_claim": false,
+    "source_distance_fit": false,
+    "endpoint_ownership_claim": false
+  },
+  "K80": {
+    "equation": "abs(x / 56)^3 + abs(y / 44)^3 = 1",
+    "full_extents_cm": [
+      112,
+      88
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "origin_role": "mathematical construction convention only",
+    "registered_axis_endpoints": {
+      "positive_x": [
+        56,
+        0
+      ],
+      "negative_x": [
+        -56,
+        0
+      ],
+      "positive_y": [
+        0,
+        44
+      ],
+      "negative_y": [
+        0,
+        -44
+      ]
+    },
+    "serialization_decimal_places": 12
+  },
+  "records": [
+    {
+      "mapping_id": "S10R003A-TOP-01",
+      "source_id": "T-CL003-TOP-01",
+      "sector": "top",
+      "local_rank": 1,
+      "source_sample_order_within_contact": 1,
+      "source_pixel_local": [
+        120,
+        47
+      ],
+      "source_pixel_full": [
+        513,
+        1120
+      ],
+      "source_rgb": [
+        53,
+        46,
+        46
+      ],
+      "source_authority": "authoritative exact discrete top-view CL-003 evidence",
+      "source_displacement_px": 0,
+      "u_exact": "1/5",
+      "u_decimal": "0.200000000000",
+      "theta_radians": "2.513274122871834",
+      "theta_rule": "pi * (1 - u)",
+      "target_xy_cm": [
+        -48.62128771031074,
+        30.874395750751876
+      ],
+      "target_xy_cm_decimal": [
+        "-48.621287710311",
+        "30.874395750752"
+      ],
+      "K80_equation_residual": 4.440892098500626e-16,
+      "minimum_registered_endpoint_distance_cm": 31.74387670131134,
+      "endpoint_excluded": true,
+      "classification": "candidate interpretation",
+      "pending_Flamestrike_decision": true,
+      "physical_cross_view_pair": false,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "physical_C003_dimension_claim": false,
+      "snap_anchor_authority": false,
+      "geometry_vertex_authority": false
+    },
+    {
+      "mapping_id": "S10R003A-TOP-02",
+      "source_id": "T-CL003-TOP-02",
+      "sector": "top",
+      "local_rank": 2,
+      "source_sample_order_within_contact": 2,
+      "source_pixel_local": [
+        145,
+        46
+      ],
+      "source_pixel_full": [
+        538,
+        1119
+      ],
+      "source_rgb": [
+        76,
+        71,
+        66
+      ],
+      "source_authority": "authoritative exact discrete top-view CL-003 evidence",
+      "source_displacement_px": 0,
+      "u_exact": "2/5",
+      "u_decimal": "0.400000000000",
+      "theta_radians": "1.884955592153876",
+      "theta_rule": "pi * (1 - u)",
+      "target_xy_cm": [
+        -25.596245664204236,
+        42.55235104965385
+      ],
+      "target_xy_cm_decimal": [
+        "-25.596245664204",
+        "42.552351049654"
+      ],
+      "K80_equation_residual": 2.220446049250313e-16,
+      "minimum_registered_endpoint_distance_cm": 25.637150379590405,
+      "endpoint_excluded": true,
+      "classification": "candidate interpretation",
+      "pending_Flamestrike_decision": true,
+      "physical_cross_view_pair": false,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "physical_C003_dimension_claim": false,
+      "snap_anchor_authority": false,
+      "geometry_vertex_authority": false
+    },
+    {
+      "mapping_id": "S10R003A-TOP-03",
+      "source_id": "T-CL003-TOP-03",
+      "sector": "top",
+      "local_rank": 3,
+      "source_sample_order_within_contact": 3,
+      "source_pixel_local": [
+        170,
+        46
+      ],
+      "source_pixel_full": [
+        563,
+        1119
+      ],
+      "source_rgb": [
+        34,
+        31,
+        30
+      ],
+      "source_authority": "authoritative exact discrete top-view CL-003 evidence",
+      "source_displacement_px": 0,
+      "u_exact": "3/5",
+      "u_decimal": "0.600000000000",
+      "theta_radians": "1.256637061435917",
+      "theta_rule": "pi * (1 - u)",
+      "target_xy_cm": [
+        25.59624566420424,
+        42.55235104965385
+      ],
+      "target_xy_cm_decimal": [
+        "25.596245664204",
+        "42.552351049654"
+      ],
+      "K80_equation_residual": 2.220446049250313e-16,
+      "minimum_registered_endpoint_distance_cm": 25.63715037959041,
+      "endpoint_excluded": true,
+      "classification": "candidate interpretation",
+      "pending_Flamestrike_decision": true,
+      "physical_cross_view_pair": false,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "physical_C003_dimension_claim": false,
+      "snap_anchor_authority": false,
+      "geometry_vertex_authority": false
+    },
+    {
+      "mapping_id": "S10R003A-TOP-04",
+      "source_id": "T-CL003-TOP-04",
+      "sector": "top",
+      "local_rank": 4,
+      "source_sample_order_within_contact": 4,
+      "source_pixel_local": [
+        184,
+        49
+      ],
+      "source_pixel_full": [
+        577,
+        1122
+      ],
+      "source_rgb": [
+        34,
+        18,
+        17
+      ],
+      "source_authority": "authoritative exact discrete top-view CL-003 evidence",
+      "source_displacement_px": 0,
+      "u_exact": "4/5",
+      "u_decimal": "0.800000000000",
+      "theta_radians": "0.628318530717959",
+      "theta_rule": "pi * (1 - u)",
+      "target_xy_cm": [
+        48.621287710310746,
+        30.874395750751873
+      ],
+      "target_xy_cm_decimal": [
+        "48.621287710311",
+        "30.874395750752"
+      ],
+      "K80_equation_residual": 0.0,
+      "minimum_registered_endpoint_distance_cm": 31.743876701311333,
+      "endpoint_excluded": true,
+      "classification": "candidate interpretation",
+      "pending_Flamestrike_decision": true,
+      "physical_cross_view_pair": false,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "physical_C003_dimension_claim": false,
+      "snap_anchor_authority": false,
+      "geometry_vertex_authority": false
+    },
+    {
+      "mapping_id": "S10R003A-BOTTOM-01",
+      "source_id": "T-CL003-BOTTOM-01",
+      "sector": "bottom",
+      "local_rank": 1,
+      "source_sample_order_within_contact": 5,
+      "source_pixel_local": [
+        90,
+        250
+      ],
+      "source_pixel_full": [
+        483,
+        1323
+      ],
+      "source_rgb": [
+        18,
+        19,
+        13
+      ],
+      "source_authority": "authoritative exact discrete top-view CL-003 evidence",
+      "source_displacement_px": 0,
+      "u_exact": "1/5",
+      "u_decimal": "0.200000000000",
+      "theta_radians": "5.654866776461628",
+      "theta_rule": "2*pi - pi*u",
+      "target_xy_cm": [
+        48.62128771031074,
+        -30.87439575075188
+      ],
+      "target_xy_cm_decimal": [
+        "48.621287710311",
+        "-30.874395750752"
+      ],
+      "K80_equation_residual": 2.220446049250313e-16,
+      "minimum_registered_endpoint_distance_cm": 31.743876701311343,
+      "endpoint_excluded": true,
+      "classification": "candidate interpretation",
+      "pending_Flamestrike_decision": true,
+      "physical_cross_view_pair": false,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "physical_C003_dimension_claim": false,
+      "snap_anchor_authority": false,
+      "geometry_vertex_authority": false
+    },
+    {
+      "mapping_id": "S10R003A-BOTTOM-02",
+      "source_id": "T-CL003-BOTTOM-02",
+      "sector": "bottom",
+      "local_rank": 2,
+      "source_sample_order_within_contact": 6,
+      "source_pixel_local": [
+        120,
+        252
+      ],
+      "source_pixel_full": [
+        513,
+        1325
+      ],
+      "source_rgb": [
+        62,
+        59,
+        51
+      ],
+      "source_authority": "authoritative exact discrete top-view CL-003 evidence",
+      "source_displacement_px": 0,
+      "u_exact": "2/5",
+      "u_decimal": "0.400000000000",
+      "theta_radians": "5.026548245743669",
+      "theta_rule": "2*pi - pi*u",
+      "target_xy_cm": [
+        25.596245664204233,
+        -42.55235104965385
+      ],
+      "target_xy_cm_decimal": [
+        "25.596245664204",
+        "-42.552351049654"
+      ],
+      "K80_equation_residual": 2.220446049250313e-16,
+      "minimum_registered_endpoint_distance_cm": 25.637150379590402,
+      "endpoint_excluded": true,
+      "classification": "candidate interpretation",
+      "pending_Flamestrike_decision": true,
+      "physical_cross_view_pair": false,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "physical_C003_dimension_claim": false,
+      "snap_anchor_authority": false,
+      "geometry_vertex_authority": false
+    },
+    {
+      "mapping_id": "S10R003A-BOTTOM-03",
+      "source_id": "T-CL003-BOTTOM-03",
+      "sector": "bottom",
+      "local_rank": 3,
+      "source_sample_order_within_contact": 7,
+      "source_pixel_local": [
+        150,
+        253
+      ],
+      "source_pixel_full": [
+        543,
+        1326
+      ],
+      "source_rgb": [
+        48,
+        45,
+        47
+      ],
+      "source_authority": "authoritative exact discrete top-view CL-003 evidence",
+      "source_displacement_px": 0,
+      "u_exact": "3/5",
+      "u_decimal": "0.600000000000",
+      "theta_radians": "4.398229715025710",
+      "theta_rule": "2*pi - pi*u",
+      "target_xy_cm": [
+        -25.596245664204247,
+        -42.55235104965385
+      ],
+      "target_xy_cm_decimal": [
+        "-25.596245664204",
+        "-42.552351049654"
+      ],
+      "K80_equation_residual": 2.220446049250313e-16,
+      "minimum_registered_endpoint_distance_cm": 25.637150379590416,
+      "endpoint_excluded": true,
+      "classification": "candidate interpretation",
+      "pending_Flamestrike_decision": true,
+      "physical_cross_view_pair": false,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "physical_C003_dimension_claim": false,
+      "snap_anchor_authority": false,
+      "geometry_vertex_authority": false
+    },
+    {
+      "mapping_id": "S10R003A-BOTTOM-04",
+      "source_id": "T-CL003-BOTTOM-04",
+      "sector": "bottom",
+      "local_rank": 4,
+      "source_sample_order_within_contact": 8,
+      "source_pixel_local": [
+        184,
+        249
+      ],
+      "source_pixel_full": [
+        577,
+        1322
+      ],
+      "source_rgb": [
+        19,
+        12,
+        11
+      ],
+      "source_authority": "authoritative exact discrete top-view CL-003 evidence",
+      "source_displacement_px": 0,
+      "u_exact": "4/5",
+      "u_decimal": "0.800000000000",
+      "theta_radians": "3.769911184307752",
+      "theta_rule": "2*pi - pi*u",
+      "target_xy_cm": [
+        -48.62128771031075,
+        -30.874395750751873
+      ],
+      "target_xy_cm_decimal": [
+        "-48.621287710311",
+        "-30.874395750752"
+      ],
+      "K80_equation_residual": 2.220446049250313e-16,
+      "minimum_registered_endpoint_distance_cm": 31.743876701311333,
+      "endpoint_excluded": true,
+      "classification": "candidate interpretation",
+      "pending_Flamestrike_decision": true,
+      "physical_cross_view_pair": false,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "physical_C003_dimension_claim": false,
+      "snap_anchor_authority": false,
+      "geometry_vertex_authority": false
+    },
+    {
+      "mapping_id": "S10R003A-LEFT-01",
+      "source_id": "T-CL003-LEFT-01",
+      "sector": "left",
+      "local_rank": 1,
+      "source_sample_order_within_contact": 9,
+      "source_pixel_local": [
+        49,
+        110
+      ],
+      "source_pixel_full": [
+        442,
+        1183
+      ],
+      "source_rgb": [
+        32,
+        20,
+        17
+      ],
+      "source_authority": "authoritative exact discrete top-view CL-003 evidence",
+      "source_displacement_px": 0,
+      "u_exact": "1/5",
+      "u_decimal": "0.200000000000",
+      "theta_radians": "4.084070449666731",
+      "theta_rule": "3*pi/2 - pi*u",
+      "target_xy_cm": [
+        -39.29468550095693,
+        -38.20244034381558
+      ],
+      "target_xy_cm_decimal": [
+        "-39.294685500957",
+        "-38.202440343816"
+      ],
+      "K80_equation_residual": 1.1102230246251565e-16,
+      "minimum_registered_endpoint_distance_cm": 39.720070576298475,
+      "endpoint_excluded": true,
+      "classification": "candidate interpretation",
+      "pending_Flamestrike_decision": true,
+      "physical_cross_view_pair": false,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "physical_C003_dimension_claim": false,
+      "snap_anchor_authority": false,
+      "geometry_vertex_authority": false
+    },
+    {
+      "mapping_id": "S10R003A-LEFT-02",
+      "source_id": "T-CL003-LEFT-02",
+      "sector": "left",
+      "local_rank": 2,
+      "source_sample_order_within_contact": 10,
+      "source_pixel_local": [
+        46,
+        135
+      ],
+      "source_pixel_full": [
+        439,
+        1208
+      ],
+      "source_rgb": [
+        2,
+        0,
+        0
+      ],
+      "source_authority": "authoritative exact discrete top-view CL-003 evidence",
+      "source_displacement_px": 0,
+      "u_exact": "2/5",
+      "u_decimal": "0.400000000000",
+      "theta_radians": "3.455751918948772",
+      "theta_rule": "3*pi/2 - pi*u",
+      "target_xy_cm": [
+        -54.15753769955945,
+        -20.111335879017613
+      ],
+      "target_xy_cm_decimal": [
+        "-54.157537699559",
+        "-20.111335879018"
+      ],
+      "K80_equation_residual": 2.220446049250313e-16,
+      "minimum_registered_endpoint_distance_cm": 20.19555639657412,
+      "endpoint_excluded": true,
+      "classification": "candidate interpretation",
+      "pending_Flamestrike_decision": true,
+      "physical_cross_view_pair": false,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "physical_C003_dimension_claim": false,
+      "snap_anchor_authority": false,
+      "geometry_vertex_authority": false
+    },
+    {
+      "mapping_id": "S10R003A-LEFT-03",
+      "source_id": "T-CL003-LEFT-03",
+      "sector": "left",
+      "local_rank": 3,
+      "source_sample_order_within_contact": 11,
+      "source_pixel_local": [
+        45,
+        160
+      ],
+      "source_pixel_full": [
+        438,
+        1233
+      ],
+      "source_rgb": [
+        15,
+        2,
+        2
+      ],
+      "source_authority": "authoritative exact discrete top-view CL-003 evidence",
+      "source_displacement_px": 0,
+      "u_exact": "3/5",
+      "u_decimal": "0.600000000000",
+      "theta_radians": "2.827433388230814",
+      "theta_rule": "3*pi/2 - pi*u",
+      "target_xy_cm": [
+        -54.15753769955944,
+        20.11133587901762
+      ],
+      "target_xy_cm_decimal": [
+        "-54.157537699559",
+        "20.111335879018"
+      ],
+      "K80_equation_residual": 0.0,
+      "minimum_registered_endpoint_distance_cm": 20.195556396574126,
+      "endpoint_excluded": true,
+      "classification": "candidate interpretation",
+      "pending_Flamestrike_decision": true,
+      "physical_cross_view_pair": false,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "physical_C003_dimension_claim": false,
+      "snap_anchor_authority": false,
+      "geometry_vertex_authority": false
+    },
+    {
+      "mapping_id": "S10R003A-LEFT-04",
+      "source_id": "T-CL003-LEFT-04",
+      "sector": "left",
+      "local_rank": 4,
+      "source_sample_order_within_contact": 12,
+      "source_pixel_local": [
+        49,
+        190
+      ],
+      "source_pixel_full": [
+        442,
+        1263
+      ],
+      "source_rgb": [
+        54,
+        9,
+        6
+      ],
+      "source_authority": "authoritative exact discrete top-view CL-003 evidence",
+      "source_displacement_px": 0,
+      "u_exact": "4/5",
+      "u_decimal": "0.800000000000",
+      "theta_radians": "2.199114857512855",
+      "theta_rule": "3*pi/2 - pi*u",
+      "target_xy_cm": [
+        -39.29468550095693,
+        38.20244034381559
+      ],
+      "target_xy_cm_decimal": [
+        "-39.294685500957",
+        "38.202440343816"
+      ],
+      "K80_equation_residual": 0.0,
+      "minimum_registered_endpoint_distance_cm": 39.720070576298475,
+      "endpoint_excluded": true,
+      "classification": "candidate interpretation",
+      "pending_Flamestrike_decision": true,
+      "physical_cross_view_pair": false,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "physical_C003_dimension_claim": false,
+      "snap_anchor_authority": false,
+      "geometry_vertex_authority": false
+    },
+    {
+      "mapping_id": "S10R003A-RIGHT-01",
+      "source_id": "T-CL003-RIGHT-01",
+      "sector": "right",
+      "local_rank": 1,
+      "source_sample_order_within_contact": 13,
+      "source_pixel_local": [
+        230,
+        110
+      ],
+      "source_pixel_full": [
+        623,
+        1183
+      ],
+      "source_rgb": [
+        43,
+        39,
+        37
+      ],
+      "source_authority": "authoritative exact discrete top-view CL-003 evidence",
+      "source_displacement_px": 0,
+      "u_exact": "1/5",
+      "u_decimal": "0.200000000000",
+      "theta_radians": "0.942477796076938",
+      "theta_rule": "pi/2 - pi*u",
+      "target_xy_cm": [
+        39.29468550095693,
+        38.20244034381559
+      ],
+      "target_xy_cm_decimal": [
+        "39.294685500957",
+        "38.202440343816"
+      ],
+      "K80_equation_residual": 0.0,
+      "minimum_registered_endpoint_distance_cm": 39.720070576298475,
+      "endpoint_excluded": true,
+      "classification": "candidate interpretation",
+      "pending_Flamestrike_decision": true,
+      "physical_cross_view_pair": false,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "physical_C003_dimension_claim": false,
+      "snap_anchor_authority": false,
+      "geometry_vertex_authority": false
+    },
+    {
+      "mapping_id": "S10R003A-RIGHT-02",
+      "source_id": "T-CL003-RIGHT-02",
+      "sector": "right",
+      "local_rank": 2,
+      "source_sample_order_within_contact": 14,
+      "source_pixel_local": [
+        231,
+        135
+      ],
+      "source_pixel_full": [
+        624,
+        1208
+      ],
+      "source_rgb": [
+        38,
+        37,
+        34
+      ],
+      "source_authority": "authoritative exact discrete top-view CL-003 evidence",
+      "source_displacement_px": 0,
+      "u_exact": "2/5",
+      "u_decimal": "0.400000000000",
+      "theta_radians": "0.314159265358979",
+      "theta_rule": "pi/2 - pi*u",
+      "target_xy_cm": [
+        54.15753769955944,
+        20.111335879017616
+      ],
+      "target_xy_cm_decimal": [
+        "54.157537699559",
+        "20.111335879018"
+      ],
+      "K80_equation_residual": 1.1102230246251565e-16,
+      "minimum_registered_endpoint_distance_cm": 20.195556396574123,
+      "endpoint_excluded": true,
+      "classification": "candidate interpretation",
+      "pending_Flamestrike_decision": true,
+      "physical_cross_view_pair": false,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "physical_C003_dimension_claim": false,
+      "snap_anchor_authority": false,
+      "geometry_vertex_authority": false
+    },
+    {
+      "mapping_id": "S10R003A-RIGHT-03",
+      "source_id": "T-CL003-RIGHT-03",
+      "sector": "right",
+      "local_rank": 3,
+      "source_sample_order_within_contact": 15,
+      "source_pixel_local": [
+        233,
+        160
+      ],
+      "source_pixel_full": [
+        626,
+        1233
+      ],
+      "source_rgb": [
+        45,
+        10,
+        11
+      ],
+      "source_authority": "authoritative exact discrete top-view CL-003 evidence",
+      "source_displacement_px": 0,
+      "u_exact": "3/5",
+      "u_decimal": "0.600000000000",
+      "theta_radians": "-0.314159265358979",
+      "theta_rule": "pi/2 - pi*u",
+      "target_xy_cm": [
+        54.15753769955944,
+        -20.111335879017616
+      ],
+      "target_xy_cm_decimal": [
+        "54.157537699559",
+        "-20.111335879018"
+      ],
+      "K80_equation_residual": 1.1102230246251565e-16,
+      "minimum_registered_endpoint_distance_cm": 20.195556396574123,
+      "endpoint_excluded": true,
+      "classification": "candidate interpretation",
+      "pending_Flamestrike_decision": true,
+      "physical_cross_view_pair": false,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "physical_C003_dimension_claim": false,
+      "snap_anchor_authority": false,
+      "geometry_vertex_authority": false
+    },
+    {
+      "mapping_id": "S10R003A-RIGHT-04",
+      "source_id": "T-CL003-RIGHT-04",
+      "sector": "right",
+      "local_rank": 4,
+      "source_sample_order_within_contact": 16,
+      "source_pixel_local": [
+        227,
+        190
+      ],
+      "source_pixel_full": [
+        620,
+        1263
+      ],
+      "source_rgb": [
+        26,
+        9,
+        6
+      ],
+      "source_authority": "authoritative exact discrete top-view CL-003 evidence",
+      "source_displacement_px": 0,
+      "u_exact": "4/5",
+      "u_decimal": "0.800000000000",
+      "theta_radians": "-0.942477796076938",
+      "theta_rule": "pi/2 - pi*u",
+      "target_xy_cm": [
+        39.29468550095693,
+        -38.20244034381559
+      ],
+      "target_xy_cm_decimal": [
+        "39.294685500957",
+        "-38.202440343816"
+      ],
+      "K80_equation_residual": 0.0,
+      "minimum_registered_endpoint_distance_cm": 39.720070576298475,
+      "endpoint_excluded": true,
+      "classification": "candidate interpretation",
+      "pending_Flamestrike_decision": true,
+      "physical_cross_view_pair": false,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "physical_C003_dimension_claim": false,
+      "snap_anchor_authority": false,
+      "geometry_vertex_authority": false
+    }
+  ],
+  "counts": {
+    "source_records_read": 16,
+    "candidate_mappings": 16,
+    "candidate_target_coordinates": 16,
+    "unique_serialized_target_coordinates": 16,
+    "endpoint_assigned_samples": 0,
+    "mapped_non_top_samples": 0,
+    "source_displacement_px": 0,
+    "physical_cross_view_pairs": 0,
+    "source_overlays": 0,
+    "source_fit_calculations": 0,
+    "closed_contact_loops": 0,
+    "snap_anchors": 0,
+    "filled_footprints": 0,
+    "annuli": 0,
+    "hidden_interfaces": 0,
+    "fields": 0,
+    "surfaces": 0,
+    "topology": 0,
+    "geometry": 0
+  },
+  "review_board": {
+    "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/evidence/S10R_003_A_CL003_TARGET_SPACE_MAPPING_A01/SM_GIA_BloodAxeCairnstone_A005_S10R_003_A_CL003_TARGET_SPACE_MAPPING_A01_REVIEW_BOARD.png",
+    "sha256": "69f028375ee4da0bf3c1b6e4b19403611637e1daa9733645b688a922caf3f9b7",
+    "size_px": [
+      2000,
+      1180
+    ],
+    "source_display_scale": "2x_nearest_neighbor",
+    "source_mark_count": 16,
+    "candidate_target_point_count": 16,
+    "registered_endpoint_marker_count": 4,
+    "candidate_fill_count": 0,
+    "cross_sector_join_count": 0,
+    "source_target_overlay_count": 0,
+    "geometry_preview_count": 0,
+    "line_only_target_curve": true
+  },
+  "authority_limits": {
+    "all_target_coordinates_are_interpretation": true,
+    "source_evidence_modified": false,
+    "source_center_or_pivot_created": false,
+    "physical_C003_size_created": false,
+    "geometry_ready_array_created": false,
+    "automatic_approval": false,
+    "step10_closeout_authorized": false,
+    "step11_authorized": false,
+    "production_authorized": false,
+    "staging_commit_push_authorized": false
+  },
+  "mandatory_stop": "visible candidate review before any promotion or downstream work"
+}

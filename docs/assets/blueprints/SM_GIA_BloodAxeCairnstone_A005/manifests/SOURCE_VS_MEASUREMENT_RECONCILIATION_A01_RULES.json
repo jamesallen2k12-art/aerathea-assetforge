@@ -1,0 +1,193 @@
+{
+  "schema": "aerathea.source_vs_measurement_reconciliation_rules.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-SMR-A01",
+  "date": "2026-07-17",
+  "status": "candidate_rules_with_contact_feasibility_block",
+  "artifact_classification": "candidate",
+  "decision_scope": "2D interpretation proposal only; no corrected source, Step 10 revision, world construction frame, or geometry",
+  "physical_targets_cm": {
+    "complete_asset_Z": 220,
+    "C_001_X": 120,
+    "C_001_Y": 90,
+    "C_004_X": 140,
+    "C_004_Y": 110,
+    "C_004_Z": 35
+  },
+  "source_roles": {
+    "front": "primary_visible_XZ_shape_evidence",
+    "left": "primary_visible_YZ_shape_evidence",
+    "back": "validation_only_for_conflicting_scale_and_nonconflicting_visible_detail",
+    "right": "validation_only_for_conflicting_scale_and_nonconflicting_visible_detail",
+    "top": "visible_plan_character_and_contact_feasibility_evidence_only"
+  },
+  "reference_policy": {
+    "X": "Use the C-001 120 cm annotation span as the unchanged review reference; compute only the C-004 whole-component X factor needed to express 140/120 in the same review frame.",
+    "Y": "Use the C-001 90 cm annotation span as the unchanged review reference; compute only the C-004 whole-component Y factor needed to express 110/90 in the same review frame.",
+    "Z": "Use the complete-asset 220 cm annotation span as the unchanged review reference; compute only the C-004 whole-component Z factor needed to express 35/220 in the same review frame.",
+    "reference_limit": "Annotation spans are approximate target-layout evidence and review coordinates, not geometry boundaries, centers, or historical world-scale calibrators.",
+    "midpoint_or_center_selected": false,
+    "world_scale_selected": false
+  },
+  "permitted_component_operations": {
+    "complete_asset": [
+      "one global Z review normalization to the 220 cm target"
+    ],
+    "C_001": [
+      "one axis-aligned X scale proposal if required",
+      "one axis-aligned Y scale proposal if required"
+    ],
+    "C_004": [
+      "one axis-aligned X scale proposal",
+      "one axis-aligned Y scale proposal",
+      "one axis-aligned Z scale proposal"
+    ],
+    "C_002": [
+      "rigid translation only when required to preserve an approved visible contact"
+    ],
+    "C_003": [
+      "rigid translation only when required to preserve an approved visible contact"
+    ]
+  },
+  "blocked_operations": [
+    "source raster edit or resampling",
+    "component rotation",
+    "C-002 or C-003 scaling",
+    "freeform or feature-level deformation",
+    "local outer-only or inner-only C-004 deformation",
+    "contact closure or hidden fill",
+    "center, origin, pivot, snap anchor, topology, or geometry creation"
+  ],
+  "required_whole_C004_factors": {
+    "formula": "factor = (target C-004 to reference target ratio) / (source annotation-span ratio)",
+    "front": {
+      "X": {
+        "source_spans_px": {
+          "C_001": 230,
+          "C_004": 290
+        },
+        "target_ratio": "140/120",
+        "factor": 0.925287356322,
+        "change_percent": -7.471264367816
+      },
+      "Z": {
+        "source_spans_px": {
+          "complete_asset": 375,
+          "C_004": 62
+        },
+        "target_ratio": "35/220",
+        "factor": 0.96224340176,
+        "change_percent": -3.775659824047
+      }
+    },
+    "back_validation": {
+      "X": {
+        "source_spans_px": {
+          "C_001": 189,
+          "C_004": 245
+        },
+        "target_ratio": "140/120",
+        "factor": 0.9,
+        "change_percent": -10.0
+      },
+      "Z": {
+        "source_spans_px": {
+          "complete_asset": 275,
+          "C_004": 52
+        },
+        "target_ratio": "35/220",
+        "factor": 0.841346153846,
+        "change_percent": -15.865384615385
+      }
+    },
+    "left": {
+      "Y": {
+        "source_spans_px": {
+          "C_001": 168,
+          "C_004": 225
+        },
+        "target_ratio": "110/90",
+        "factor": 0.912592592593,
+        "change_percent": -8.740740740741
+      },
+      "Z": {
+        "source_spans_px": {
+          "complete_asset": 277,
+          "C_004": 52
+        },
+        "target_ratio": "35/220",
+        "factor": 0.847465034965,
+        "change_percent": -15.253496503497
+      }
+    },
+    "right_validation": {
+      "Y": {
+        "source_spans_px": {
+          "C_001": 144,
+          "C_004": 193
+        },
+        "target_ratio": "110/90",
+        "factor": 0.911917098446,
+        "change_percent": -8.80829015544
+      },
+      "Z": {
+        "source_spans_px": {
+          "complete_asset": 254,
+          "C_004": 47
+        },
+        "target_ratio": "35/220",
+        "factor": 0.859767891683,
+        "change_percent": -14.023210831721
+      }
+    },
+    "top": {
+      "X": {
+        "source_spans_px": {
+          "C_001": 159,
+          "C_004": 208
+        },
+        "target_ratio": "140/120",
+        "factor": 0.891826923077,
+        "change_percent": -10.817307692308
+      },
+      "Y": {
+        "source_spans_px": {
+          "C_001": 94,
+          "C_004": 140
+        },
+        "target_ratio": "110/90",
+        "factor": 0.820634920635,
+        "change_percent": -17.936507936508
+      }
+    }
+  },
+  "contact_preservation_rule": {
+    "contacts": {
+      "CL_001": "C-001/C-002",
+      "CL_002": "C-002/C-003",
+      "CL_003": "C-003/C-004"
+    },
+    "required": "Every approved visible contact sample used by the proposal must remain coincident after the permitted component operations.",
+    "C_003_limit": "C-003 may receive only one rigid translation, so every transformed C-004 CL-003 sample must demand the same translation vector.",
+    "feasibility_test": "For two CL-003 samples p_i and p_j and C-004 scale S, translation cancels: required displacement difference = (S-I)(p_i-p_j). If this is nonzero for any pair, one rigid C-003 translation cannot preserve both contacts.",
+    "top_scale_matrix": [
+      [
+        0.891826923077,
+        0.0
+      ],
+      [
+        0.0,
+        0.820634920635
+      ]
+    ],
+    "top_CL_003_sample_count": 16,
+    "top_CL_003_has_multiple_X_values": true,
+    "top_CL_003_has_multiple_Y_values": true,
+    "preliminary_result": "infeasible_under_approved_operations"
+  },
+  "interpretation_output_allowed_only_if_contact_test_passes": true,
+  "interpretation_shape_created": false,
+  "source_modified": false,
+  "step10_revised": false,
+  "geometry_created": false
+}

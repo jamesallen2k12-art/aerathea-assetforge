@@ -1,0 +1,236 @@
+{
+  "schema": "aerathea.source_vs_measurement_dual_option_validation.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-SMR-A02",
+  "date": "2026-07-17",
+  "status": "technical_validation_pass_bounded_both_options_blocked",
+  "artifact_classification": "proof only",
+  "technical_result": "pass_integrity_with_option_A_failure_and_option_B_authority_block",
+  "comparison_result": "both_options_blocked",
+  "validator_count": 40,
+  "validators_passed": 40,
+  "validators_failed": 0,
+  "checks": {
+    "input_count_30": true,
+    "input_hash_mismatch_count_zero": true,
+    "same_locked_registry_for_both_options": true,
+    "no_hybrid_rule_locked": true,
+    "option_A_status_exact": true,
+    "option_A_five_views_audited": true,
+    "option_A_CL003_count_47": true,
+    "option_A_CL003_all_preserved": true,
+    "option_A_CL002_count_40": true,
+    "option_A_zero_views_preserve_CL002": true,
+    "option_A_all_views_fail_CL002": true,
+    "option_A_factor_replay_count_10": true,
+    "option_A_factor_mismatch_zero": true,
+    "option_A_no_silhouette": true,
+    "option_B_status_exact": true,
+    "option_B_CL003_count_47": true,
+    "option_B_CL003_displacement_zero": true,
+    "option_B_C001_C002_C003_unchanged": true,
+    "option_B_all_views_lack_owned_transition": true,
+    "option_B_top_perimeter_block_preserved": true,
+    "option_B_concept_not_disproved": true,
+    "option_B_no_candidate_transition": true,
+    "option_B_no_silhouette": true,
+    "comparison_both_options_blocked": true,
+    "comparison_no_eligible_option": true,
+    "comparison_no_hybrid": true,
+    "source_and_targets_unchanged": true,
+    "no_world_frame": true,
+    "no_physical_cross_view_pairs": true,
+    "no_step10_revision": true,
+    "no_geometry": true,
+    "review_board_exists": true,
+    "review_board_nonempty": true,
+    "output_record_exists": true,
+    "handoff_exists": true,
+    "unexpected_new_git_path_count_zero": true,
+    "missing_expected_git_path_count_zero": true,
+    "unexpected_recent_asset_file_count_zero": true,
+    "reserved_production_path_created_or_modified_count_zero": true,
+    "head_unchanged_f525945": true
+  },
+  "input_lock_validation": {
+    "input_count": 30,
+    "current_hash_match_count": 30,
+    "unexpected_hash_mismatch_count": 0,
+    "mismatches": []
+  },
+  "option_A_validation": {
+    "result": "fail_CL002_exact_contact_preservation",
+    "views_audited": 5,
+    "CL003_samples_preserved": 47,
+    "CL002_samples_audited": 40,
+    "views_with_exact_CL002_preservation": 0
+  },
+  "option_B_validation": {
+    "result": "blocked_missing_source_owned_C004_outer_to_inner_transition_authority",
+    "CL003_samples_locked": 47,
+    "views_with_owned_continuous_transition": 0,
+    "candidate_transition_created": false
+  },
+  "write_scope_validation": {
+    "pre_action_checkpoint": "Saved/ProjectRecovery/20260717-101552/",
+    "new_git_paths_before_validation": [
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/evidence/SOURCE_VS_MEASUREMENT_DUAL_OPTION_A02/",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/handoffs/SOURCE_VS_MEASUREMENT_DUAL_OPTION_A02_TO_RULE_DECISION_HANDOFF.md",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/SOURCE_VS_MEASUREMENT_DUAL_OPTION_A02_COMPARISON.json",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/SOURCE_VS_MEASUREMENT_DUAL_OPTION_A02_INPUT_LOCK.json",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/SOURCE_VS_MEASUREMENT_DUAL_OPTION_A02_OPTION_A_C003_SCALE_AUDIT.json",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/SOURCE_VS_MEASUREMENT_DUAL_OPTION_A02_OPTION_B_C004_OUTER_AUDIT.json",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/SOURCE_VS_MEASUREMENT_DUAL_OPTION_A02_OPTION_REGISTRY.json",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/SOURCE_VS_MEASUREMENT_DUAL_OPTION_A02_OUTPUT_RECORD.md"
+    ],
+    "expected_new_git_paths_before_validation": [
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/evidence/SOURCE_VS_MEASUREMENT_DUAL_OPTION_A02/",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/handoffs/SOURCE_VS_MEASUREMENT_DUAL_OPTION_A02_TO_RULE_DECISION_HANDOFF.md",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/SOURCE_VS_MEASUREMENT_DUAL_OPTION_A02_COMPARISON.json",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/SOURCE_VS_MEASUREMENT_DUAL_OPTION_A02_INPUT_LOCK.json",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/SOURCE_VS_MEASUREMENT_DUAL_OPTION_A02_OPTION_A_C003_SCALE_AUDIT.json",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/SOURCE_VS_MEASUREMENT_DUAL_OPTION_A02_OPTION_B_C004_OUTER_AUDIT.json",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/SOURCE_VS_MEASUREMENT_DUAL_OPTION_A02_OPTION_REGISTRY.json",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/SOURCE_VS_MEASUREMENT_DUAL_OPTION_A02_OUTPUT_RECORD.md"
+    ],
+    "unexpected_new_path_count": 0,
+    "missing_expected_path_count": 0,
+    "unexpected_recent_asset_files": [],
+    "recovery_journal_change": "allowed planned checkpoint side effect; path already modified at pre-action baseline"
+  },
+  "forbidden_work_validation": {
+    "source_modified": false,
+    "existing_step_records_modified": false,
+    "hybrid_created": false,
+    "filled_or_closed_unknown_created": false,
+    "world_frame_created": false,
+    "physical_cross_view_pixel_pairs_created": false,
+    "step10_revised": false,
+    "step11_started": false,
+    "geometry_or_DCC_started": false,
+    "texture_material_or_Unreal_started": false,
+    "preexisting_reserved_production_roots_untouched": [
+      "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005"
+    ],
+    "reserved_production_paths_created_or_modified": [],
+    "commit_created": false,
+    "push_performed": false
+  },
+  "output_hashes": [
+    {
+      "path": "manifests/SOURCE_VS_MEASUREMENT_DUAL_OPTION_A02_INPUT_LOCK.json",
+      "sha256": "3a79ead7f2293b8f17651fa9146392dc3c17af54c505bb580f137c5ef519d405",
+      "size_bytes": 10818,
+      "artifact_classification": "proof only"
+    },
+    {
+      "path": "manifests/SOURCE_VS_MEASUREMENT_DUAL_OPTION_A02_OPTION_REGISTRY.json",
+      "sha256": "a9de86565887ae228f952acf9aac463ce9508638f88348b758a1133d14fc0b6e",
+      "size_bytes": 5698,
+      "artifact_classification": "proof only"
+    },
+    {
+      "path": "manifests/SOURCE_VS_MEASUREMENT_DUAL_OPTION_A02_OPTION_A_C003_SCALE_AUDIT.json",
+      "sha256": "9d5e002e51ed31f937b21dfb8434e81f4629b549599b333692c7645b97319e84",
+      "size_bytes": 57464,
+      "artifact_classification": "proof only"
+    },
+    {
+      "path": "manifests/SOURCE_VS_MEASUREMENT_DUAL_OPTION_A02_OPTION_B_C004_OUTER_AUDIT.json",
+      "sha256": "7e78e7f9266c61d5ae2734b735b11c13f3d94fb38f8f40ea97c6710561e0e920",
+      "size_bytes": 8906,
+      "artifact_classification": "proof only"
+    },
+    {
+      "path": "manifests/SOURCE_VS_MEASUREMENT_DUAL_OPTION_A02_COMPARISON.json",
+      "sha256": "a3451de4a947daa0b646c6369ab20aa415faf85a8e4afe0bd5b23388acba025a",
+      "size_bytes": 4011,
+      "artifact_classification": "proof only"
+    },
+    {
+      "path": "evidence/SOURCE_VS_MEASUREMENT_DUAL_OPTION_A02/SM_GIA_BloodAxeCairnstone_A005_SOURCE_VS_MEASUREMENT_DUAL_OPTION_A02_REVIEW_BOARD.png",
+      "sha256": "2ff46a335a2c51cceda19fe509515b3442981a9cb1d721034175968952b07690",
+      "size_bytes": 896289,
+      "artifact_classification": "proof only"
+    },
+    {
+      "path": "steps/SOURCE_VS_MEASUREMENT_DUAL_OPTION_A02_OUTPUT_RECORD.md",
+      "sha256": "4b2f51b5c0a3f5e786305750ebf9806f4df979ada85281abf46fba7f42d2b929",
+      "size_bytes": 4348,
+      "artifact_classification": "authoritative for bounded A02 decision only"
+    },
+    {
+      "path": "handoffs/SOURCE_VS_MEASUREMENT_DUAL_OPTION_A02_TO_RULE_DECISION_HANDOFF.md",
+      "sha256": "a7d647556b7783cc1821bd0c0ac6557ddf2a2bd0c1662b2fb6dfb4150cd75fea",
+      "size_bytes": 1774,
+      "artifact_classification": "authoritative for blocked routing only"
+    }
+  ],
+  "output_hash_policy": "Every non-validation A02 output is hash-recorded here. This validation manifest cannot contain its own final hash without circular mutation.",
+  "post_decision_closeout": {
+    "approver": "Flamestrike",
+    "statement": "I approve your recommendation",
+    "date": "2026-07-17",
+    "decision": "both_options_blocked",
+    "option_A_classification": "rejected candidate",
+    "option_B_classification": "blocked candidate; not disproved",
+    "output_decision_checkpoint": "Saved/ProjectRecovery/20260717-103156/",
+    "allowed_authority_records_updated": [
+      "steps/SOURCE_VS_MEASUREMENT_DUAL_OPTION_A02_OUTPUT_RECORD.md",
+      "handoffs/SOURCE_VS_MEASUREMENT_DUAL_OPTION_A02_TO_RULE_DECISION_HANDOFF.md",
+      "SM_GIA_BloodAxeCairnstone_A005_APPROVAL_LOG.md",
+      "SM_GIA_BloodAxeCairnstone_A005_ARTIFACT_INDEX.md",
+      "SM_GIA_BloodAxeCairnstone_A005_RESET_RESUME_STATE.md",
+      "manifests/SOURCE_VS_MEASUREMENT_DUAL_OPTION_A02_VALIDATION.json"
+    ],
+    "immutable_input_lock_note": "The 30-input lock proved the execution universe through technical validation. The approval log, artifact index, and reset/resume state were intentionally updated only after Flamestrike's output decision and therefore are expected to differ from their pre-execution locked hashes.",
+    "updated_authority_record_hashes": [
+      {
+        "path": "SM_GIA_BloodAxeCairnstone_A005_RESET_RESUME_STATE.md",
+        "sha256": "fdec99a91348b582756bac0365fec9c1522444ef4003eca8b9e2bb00ab8b140e",
+        "size_bytes": 37702
+      },
+      {
+        "path": "SM_GIA_BloodAxeCairnstone_A005_ARTIFACT_INDEX.md",
+        "sha256": "edc5a06b9643bf5940e6cc19d860d35c6c80efb8daa9395940ad7f1d3e3a6348",
+        "size_bytes": 35632
+      },
+      {
+        "path": "SM_GIA_BloodAxeCairnstone_A005_APPROVAL_LOG.md",
+        "sha256": "f611b42cc532c63230642f21b08480cc8d06784c89f3c6e9422420249ac9e0e0",
+        "size_bytes": 37750
+      }
+    ],
+    "commit_created": false,
+    "push_performed": false
+  },
+  "visual_review_validation": {
+    "status": "pass_visible_review_opened_and_foregrounded",
+    "review_board_clear_and_presentation_ready": true,
+    "board_has_original_source_region": true,
+    "board_has_separate_option_A_diagnostic_region": true,
+    "board_has_separate_option_B_authority_block_region": true,
+    "candidate_silhouette_or_fill_shown": false,
+    "visible_desktop_open_required_before_output_decision": true,
+    "review_board_opened_in_visible_desktop_window": true,
+    "output_record_opened_in_visible_desktop_window": true,
+    "review_board_window_title": "Flamestrike Image Viewer",
+    "review_board_window_id": "0x03600007",
+    "output_record_window_title": "SOURCE_VS_MEASUREMENT_DUAL_OPTION_A02_OUTPUT_RECORD.md",
+    "output_record_window_id": "0x034013c3",
+    "review_board_foreground_activation": "pass"
+  },
+  "checkpoints": [
+    "Saved/ProjectRecovery/20260717-101552/",
+    "Saved/ProjectRecovery/20260717-101928/",
+    "Saved/ProjectRecovery/20260717-102259/",
+    "Saved/ProjectRecovery/20260717-102916/",
+    "Saved/ProjectRecovery/20260717-103156/"
+  ],
+  "stop_state": {
+    "option_selection": "approved_both_options_blocked_no_rule_selected",
+    "step10_revision": "stopped",
+    "step11": "stopped",
+    "geometry_and_production": "stopped"
+  }
+}

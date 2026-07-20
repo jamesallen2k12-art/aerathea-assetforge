@@ -1,0 +1,661 @@
+{
+  "schema": "aerathea.s10r_006_a_boundary_compatibility_technical_gate_a01_boundary_authority_audit.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-006-A-BCTG-A01",
+  "date": "2026-07-17",
+  "status": "blocked_source_authority_missing",
+  "artifact_classification": "proof only",
+  "controlling_result": "blocked_source_authority_missing",
+  "blueprint_block_label": "Blueprint block: source authority missing",
+  "target_boundary_analytic_audit": {
+    "outer_id": "TOP_C004_OPIR_N3_ROUNDED_OVAL",
+    "outer_equation": "abs(x / 70)^3 + abs(y / 55)^3 = 1",
+    "outer_extents_cm": [
+      140,
+      110
+    ],
+    "inner_id": "C003_TSIB_K80_MEDIUM_APRON",
+    "inner_equation": "abs(x / 56)^3 + abs(y / 44)^3 = 1",
+    "inner_extents_cm": [
+      112,
+      88
+    ],
+    "shared_mathematical_origin": [
+      0,
+      0
+    ],
+    "x_axis_ratio": 0.8,
+    "y_axis_ratio": 0.8,
+    "homothetic_scale": 0.8,
+    "inner_boundary_value_in_outer_equation": 0.5120000000000001,
+    "strict_abstract_containment": true,
+    "analytic_gate_status": "pass",
+    "field_samples_created": 0
+  },
+  "approved_top_mapping_audit": {
+    "record_count": 16,
+    "unique_target_coordinate_count": 16,
+    "endpoint_assignment_count": 0,
+    "mapped_non_top_sample_count": 0,
+    "source_displacement_px": 0,
+    "physical_cross_view_pair_count": 0,
+    "status": "pass_bounded_target_mapping_available"
+  },
+  "registered_trace_boundaries": [
+    {
+      "trace_id": "F-BTIR-01",
+      "view": "front",
+      "view_role": "primary_XZ",
+      "source_pixel_frame": "front",
+      "p_i": [
+        119,
+        391
+      ],
+      "p_o": [
+        107,
+        400
+      ],
+      "p_t_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "approved_bounded_classification_authority": "STEP_10R_N3_TRANSITION_INTEGRATION_OPTION_REGISTRY S10R-004-A",
+      "target_space_coordinate_authority": false,
+      "registered_common_frame": null,
+      "registered_cross_frame_correspondence_id": null,
+      "exact_comparison_performed": false,
+      "comparison_status": "unavailable_source_authority_missing",
+      "inferred_coordinate_created": false
+    },
+    {
+      "trace_id": "F-BTIR-02",
+      "view": "front",
+      "view_role": "primary_XZ",
+      "source_pixel_frame": "front",
+      "p_i": [
+        381,
+        394
+      ],
+      "p_o": [
+        393,
+        400
+      ],
+      "p_t_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "approved_bounded_classification_authority": "STEP_10R_N3_TRANSITION_INTEGRATION_OPTION_REGISTRY S10R-004-A",
+      "target_space_coordinate_authority": false,
+      "registered_common_frame": null,
+      "registered_cross_frame_correspondence_id": null,
+      "exact_comparison_performed": false,
+      "comparison_status": "unavailable_source_authority_missing",
+      "inferred_coordinate_created": false
+    },
+    {
+      "trace_id": "F-BTIR-03",
+      "view": "front",
+      "view_role": "primary_XZ",
+      "source_pixel_frame": "front",
+      "p_i": [
+        119,
+        391
+      ],
+      "p_o": [
+        106,
+        410
+      ],
+      "p_t_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "approved_bounded_classification_authority": "STEP_10R_N3_TRANSITION_INTEGRATION_OPTION_REGISTRY S10R-004-A",
+      "target_space_coordinate_authority": false,
+      "registered_common_frame": null,
+      "registered_cross_frame_correspondence_id": null,
+      "exact_comparison_performed": false,
+      "comparison_status": "unavailable_source_authority_missing",
+      "inferred_coordinate_created": false
+    },
+    {
+      "trace_id": "F-BTIR-04",
+      "view": "front",
+      "view_role": "primary_XZ",
+      "source_pixel_frame": "front",
+      "p_i": [
+        381,
+        394
+      ],
+      "p_o": [
+        394,
+        410
+      ],
+      "p_t_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "approved_bounded_classification_authority": "STEP_10R_N3_TRANSITION_INTEGRATION_OPTION_REGISTRY S10R-004-A",
+      "target_space_coordinate_authority": false,
+      "registered_common_frame": null,
+      "registered_cross_frame_correspondence_id": null,
+      "exact_comparison_performed": false,
+      "comparison_status": "unavailable_source_authority_missing",
+      "inferred_coordinate_created": false
+    },
+    {
+      "trace_id": "F-BTIR-05",
+      "view": "front",
+      "view_role": "primary_XZ",
+      "source_pixel_frame": "front",
+      "p_i": [
+        133,
+        397
+      ],
+      "p_o": [
+        134,
+        420
+      ],
+      "p_t_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "approved_bounded_classification_authority": "STEP_10R_N3_TRANSITION_INTEGRATION_OPTION_REGISTRY S10R-004-A",
+      "target_space_coordinate_authority": false,
+      "registered_common_frame": null,
+      "registered_cross_frame_correspondence_id": null,
+      "exact_comparison_performed": false,
+      "comparison_status": "unavailable_source_authority_missing",
+      "inferred_coordinate_created": false
+    },
+    {
+      "trace_id": "F-BTIR-06",
+      "view": "front",
+      "view_role": "primary_XZ",
+      "source_pixel_frame": "front",
+      "p_i": [
+        373,
+        397
+      ],
+      "p_o": [
+        372,
+        420
+      ],
+      "p_t_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "approved_bounded_classification_authority": "STEP_10R_N3_TRANSITION_INTEGRATION_OPTION_REGISTRY S10R-004-A",
+      "target_space_coordinate_authority": false,
+      "registered_common_frame": null,
+      "registered_cross_frame_correspondence_id": null,
+      "exact_comparison_performed": false,
+      "comparison_status": "unavailable_source_authority_missing",
+      "inferred_coordinate_created": false
+    },
+    {
+      "trace_id": "B-BTIR-01",
+      "view": "back",
+      "view_role": "validation_only",
+      "source_pixel_frame": "back",
+      "p_i": [
+        123,
+        291
+      ],
+      "p_o": [
+        121,
+        300
+      ],
+      "p_t_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "approved_bounded_classification_authority": "STEP_10R_N3_TRANSITION_INTEGRATION_OPTION_REGISTRY S10R-004-A",
+      "target_space_coordinate_authority": false,
+      "registered_common_frame": null,
+      "registered_cross_frame_correspondence_id": null,
+      "exact_comparison_performed": false,
+      "comparison_status": "unavailable_source_authority_missing",
+      "inferred_coordinate_created": false
+    },
+    {
+      "trace_id": "B-BTIR-02",
+      "view": "back",
+      "view_role": "validation_only",
+      "source_pixel_frame": "back",
+      "p_i": [
+        362,
+        291
+      ],
+      "p_o": [
+        362,
+        300
+      ],
+      "p_t_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "approved_bounded_classification_authority": "STEP_10R_N3_TRANSITION_INTEGRATION_OPTION_REGISTRY S10R-004-A",
+      "target_space_coordinate_authority": false,
+      "registered_common_frame": null,
+      "registered_cross_frame_correspondence_id": null,
+      "exact_comparison_performed": false,
+      "comparison_status": "unavailable_source_authority_missing",
+      "inferred_coordinate_created": false
+    },
+    {
+      "trace_id": "B-BTIR-03",
+      "view": "back",
+      "view_role": "validation_only",
+      "source_pixel_frame": "back",
+      "p_i": [
+        130,
+        294
+      ],
+      "p_o": [
+        122,
+        305
+      ],
+      "p_t_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "approved_bounded_classification_authority": "STEP_10R_N3_TRANSITION_INTEGRATION_OPTION_REGISTRY S10R-004-A",
+      "target_space_coordinate_authority": false,
+      "registered_common_frame": null,
+      "registered_cross_frame_correspondence_id": null,
+      "exact_comparison_performed": false,
+      "comparison_status": "unavailable_source_authority_missing",
+      "inferred_coordinate_created": false
+    },
+    {
+      "trace_id": "B-BTIR-04",
+      "view": "back",
+      "view_role": "validation_only",
+      "source_pixel_frame": "back",
+      "p_i": [
+        355,
+        294
+      ],
+      "p_o": [
+        358,
+        305
+      ],
+      "p_t_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "approved_bounded_classification_authority": "STEP_10R_N3_TRANSITION_INTEGRATION_OPTION_REGISTRY S10R-004-A",
+      "target_space_coordinate_authority": false,
+      "registered_common_frame": null,
+      "registered_cross_frame_correspondence_id": null,
+      "exact_comparison_performed": false,
+      "comparison_status": "unavailable_source_authority_missing",
+      "inferred_coordinate_created": false
+    },
+    {
+      "trace_id": "B-BTIR-05",
+      "view": "back",
+      "view_role": "validation_only",
+      "source_pixel_frame": "back",
+      "p_i": [
+        138,
+        297
+      ],
+      "p_o": [
+        140,
+        310
+      ],
+      "p_t_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "approved_bounded_classification_authority": "STEP_10R_N3_TRANSITION_INTEGRATION_OPTION_REGISTRY S10R-004-A",
+      "target_space_coordinate_authority": false,
+      "registered_common_frame": null,
+      "registered_cross_frame_correspondence_id": null,
+      "exact_comparison_performed": false,
+      "comparison_status": "unavailable_source_authority_missing",
+      "inferred_coordinate_created": false
+    },
+    {
+      "trace_id": "B-BTIR-06",
+      "view": "back",
+      "view_role": "validation_only",
+      "source_pixel_frame": "back",
+      "p_i": [
+        346,
+        297
+      ],
+      "p_o": [
+        348,
+        310
+      ],
+      "p_t_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "approved_bounded_classification_authority": "STEP_10R_N3_TRANSITION_INTEGRATION_OPTION_REGISTRY S10R-004-A",
+      "target_space_coordinate_authority": false,
+      "registered_common_frame": null,
+      "registered_cross_frame_correspondence_id": null,
+      "exact_comparison_performed": false,
+      "comparison_status": "unavailable_source_authority_missing",
+      "inferred_coordinate_created": false
+    },
+    {
+      "trace_id": "L-BTIR-01",
+      "view": "left",
+      "view_role": "primary_YZ",
+      "source_pixel_frame": "left",
+      "p_i": [
+        128,
+        292
+      ],
+      "p_o": [
+        126,
+        285
+      ],
+      "p_t_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "approved_bounded_classification_authority": "STEP_10R_N3_TRANSITION_INTEGRATION_OPTION_REGISTRY S10R-004-A",
+      "target_space_coordinate_authority": false,
+      "registered_common_frame": null,
+      "registered_cross_frame_correspondence_id": null,
+      "exact_comparison_performed": false,
+      "comparison_status": "unavailable_source_authority_missing",
+      "inferred_coordinate_created": false
+    },
+    {
+      "trace_id": "L-BTIR-02",
+      "view": "left",
+      "view_role": "primary_YZ",
+      "source_pixel_frame": "left",
+      "p_i": [
+        335,
+        291
+      ],
+      "p_o": [
+        334,
+        285
+      ],
+      "p_t_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "approved_bounded_classification_authority": "STEP_10R_N3_TRANSITION_INTEGRATION_OPTION_REGISTRY S10R-004-A",
+      "target_space_coordinate_authority": false,
+      "registered_common_frame": null,
+      "registered_cross_frame_correspondence_id": null,
+      "exact_comparison_performed": false,
+      "comparison_status": "unavailable_source_authority_missing",
+      "inferred_coordinate_created": false
+    },
+    {
+      "trace_id": "L-BTIR-03",
+      "view": "left",
+      "view_role": "primary_YZ",
+      "source_pixel_frame": "left",
+      "p_i": [
+        128,
+        292
+      ],
+      "p_o": [
+        121,
+        295
+      ],
+      "p_t_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "approved_bounded_classification_authority": "STEP_10R_N3_TRANSITION_INTEGRATION_OPTION_REGISTRY S10R-004-A",
+      "target_space_coordinate_authority": false,
+      "registered_common_frame": null,
+      "registered_cross_frame_correspondence_id": null,
+      "exact_comparison_performed": false,
+      "comparison_status": "unavailable_source_authority_missing",
+      "inferred_coordinate_created": false
+    },
+    {
+      "trace_id": "L-BTIR-04",
+      "view": "left",
+      "view_role": "primary_YZ",
+      "source_pixel_frame": "left",
+      "p_i": [
+        335,
+        291
+      ],
+      "p_o": [
+        340,
+        295
+      ],
+      "p_t_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "approved_bounded_classification_authority": "STEP_10R_N3_TRANSITION_INTEGRATION_OPTION_REGISTRY S10R-004-A",
+      "target_space_coordinate_authority": false,
+      "registered_common_frame": null,
+      "registered_cross_frame_correspondence_id": null,
+      "exact_comparison_performed": false,
+      "comparison_status": "unavailable_source_authority_missing",
+      "inferred_coordinate_created": false
+    },
+    {
+      "trace_id": "L-BTIR-05",
+      "view": "left",
+      "view_role": "primary_YZ",
+      "source_pixel_frame": "left",
+      "p_i": [
+        128,
+        292
+      ],
+      "p_o": [
+        120,
+        305
+      ],
+      "p_t_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "approved_bounded_classification_authority": "STEP_10R_N3_TRANSITION_INTEGRATION_OPTION_REGISTRY S10R-004-A",
+      "target_space_coordinate_authority": false,
+      "registered_common_frame": null,
+      "registered_cross_frame_correspondence_id": null,
+      "exact_comparison_performed": false,
+      "comparison_status": "unavailable_source_authority_missing",
+      "inferred_coordinate_created": false
+    },
+    {
+      "trace_id": "L-BTIR-06",
+      "view": "left",
+      "view_role": "primary_YZ",
+      "source_pixel_frame": "left",
+      "p_i": [
+        335,
+        291
+      ],
+      "p_o": [
+        341,
+        305
+      ],
+      "p_t_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "approved_bounded_classification_authority": "STEP_10R_N3_TRANSITION_INTEGRATION_OPTION_REGISTRY S10R-004-A",
+      "target_space_coordinate_authority": false,
+      "registered_common_frame": null,
+      "registered_cross_frame_correspondence_id": null,
+      "exact_comparison_performed": false,
+      "comparison_status": "unavailable_source_authority_missing",
+      "inferred_coordinate_created": false
+    },
+    {
+      "trace_id": "R-BTIR-01",
+      "view": "right",
+      "view_role": "validation_only",
+      "source_pixel_frame": "right",
+      "p_i": [
+        99,
+        275
+      ],
+      "p_o": [
+        92,
+        265
+      ],
+      "p_t_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "approved_bounded_classification_authority": "STEP_10R_N3_TRANSITION_INTEGRATION_OPTION_REGISTRY S10R-004-A",
+      "target_space_coordinate_authority": false,
+      "registered_common_frame": null,
+      "registered_cross_frame_correspondence_id": null,
+      "exact_comparison_performed": false,
+      "comparison_status": "unavailable_source_authority_missing",
+      "inferred_coordinate_created": false
+    },
+    {
+      "trace_id": "R-BTIR-02",
+      "view": "right",
+      "view_role": "validation_only",
+      "source_pixel_frame": "right",
+      "p_i": [
+        267,
+        275
+      ],
+      "p_o": [
+        270,
+        265
+      ],
+      "p_t_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "approved_bounded_classification_authority": "STEP_10R_N3_TRANSITION_INTEGRATION_OPTION_REGISTRY S10R-004-A",
+      "target_space_coordinate_authority": false,
+      "registered_common_frame": null,
+      "registered_cross_frame_correspondence_id": null,
+      "exact_comparison_performed": false,
+      "comparison_status": "unavailable_source_authority_missing",
+      "inferred_coordinate_created": false
+    },
+    {
+      "trace_id": "R-BTIR-03",
+      "view": "right",
+      "view_role": "validation_only",
+      "source_pixel_frame": "right",
+      "p_i": [
+        87,
+        277
+      ],
+      "p_o": [
+        91,
+        270
+      ],
+      "p_t_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "approved_bounded_classification_authority": "STEP_10R_N3_TRANSITION_INTEGRATION_OPTION_REGISTRY S10R-004-A",
+      "target_space_coordinate_authority": false,
+      "registered_common_frame": null,
+      "registered_cross_frame_correspondence_id": null,
+      "exact_comparison_performed": false,
+      "comparison_status": "unavailable_source_authority_missing",
+      "inferred_coordinate_created": false
+    },
+    {
+      "trace_id": "R-BTIR-04",
+      "view": "right",
+      "view_role": "validation_only",
+      "source_pixel_frame": "right",
+      "p_i": [
+        267,
+        275
+      ],
+      "p_o": [
+        272,
+        270
+      ],
+      "p_t_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "approved_bounded_classification_authority": "STEP_10R_N3_TRANSITION_INTEGRATION_OPTION_REGISTRY S10R-004-A",
+      "target_space_coordinate_authority": false,
+      "registered_common_frame": null,
+      "registered_cross_frame_correspondence_id": null,
+      "exact_comparison_performed": false,
+      "comparison_status": "unavailable_source_authority_missing",
+      "inferred_coordinate_created": false
+    },
+    {
+      "trace_id": "R-BTIR-05",
+      "view": "right",
+      "view_role": "validation_only",
+      "source_pixel_frame": "right",
+      "p_i": [
+        87,
+        277
+      ],
+      "p_o": [
+        89,
+        275
+      ],
+      "p_t_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "approved_bounded_classification_authority": "STEP_10R_N3_TRANSITION_INTEGRATION_OPTION_REGISTRY S10R-004-A",
+      "target_space_coordinate_authority": false,
+      "registered_common_frame": null,
+      "registered_cross_frame_correspondence_id": null,
+      "exact_comparison_performed": false,
+      "comparison_status": "unavailable_source_authority_missing",
+      "inferred_coordinate_created": false
+    },
+    {
+      "trace_id": "R-BTIR-06",
+      "view": "right",
+      "view_role": "validation_only",
+      "source_pixel_frame": "right",
+      "p_i": [
+        277,
+        276
+      ],
+      "p_o": [
+        277,
+        275
+      ],
+      "p_t_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "approved_bounded_classification_authority": "STEP_10R_N3_TRANSITION_INTEGRATION_OPTION_REGISTRY S10R-004-A",
+      "target_space_coordinate_authority": false,
+      "registered_common_frame": null,
+      "registered_cross_frame_correspondence_id": null,
+      "exact_comparison_performed": false,
+      "comparison_status": "unavailable_source_authority_missing",
+      "inferred_coordinate_created": false
+    },
+    {
+      "trace_id": "R-BTIR-07",
+      "view": "right",
+      "view_role": "validation_only",
+      "source_pixel_frame": "right",
+      "p_i": [
+        87,
+        277
+      ],
+      "p_o": [
+        86,
+        280
+      ],
+      "p_t_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "approved_bounded_classification_authority": "STEP_10R_N3_TRANSITION_INTEGRATION_OPTION_REGISTRY S10R-004-A",
+      "target_space_coordinate_authority": false,
+      "registered_common_frame": null,
+      "registered_cross_frame_correspondence_id": null,
+      "exact_comparison_performed": false,
+      "comparison_status": "unavailable_source_authority_missing",
+      "inferred_coordinate_created": false
+    },
+    {
+      "trace_id": "R-BTIR-08",
+      "view": "right",
+      "view_role": "validation_only",
+      "source_pixel_frame": "right",
+      "p_i": [
+        277,
+        276
+      ],
+      "p_o": [
+        278,
+        280
+      ],
+      "p_t_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "approved_bounded_classification_authority": "STEP_10R_N3_TRANSITION_INTEGRATION_OPTION_REGISTRY S10R-004-A",
+      "target_space_coordinate_authority": false,
+      "registered_common_frame": null,
+      "registered_cross_frame_correspondence_id": null,
+      "exact_comparison_performed": false,
+      "comparison_status": "unavailable_source_authority_missing",
+      "inferred_coordinate_created": false
+    }
+  ],
+  "trace_counts": {
+    "required_registered_trace_boundaries": 26,
+    "per_view": {
+      "front": 6,
+      "back": 6,
+      "left": 6,
+      "right": 8
+    },
+    "common_frame_authority_available": 0,
+    "common_frame_authority_missing": 26,
+    "exact_comparisons_performed": 0,
+    "explicit_boundary_mismatches": 0,
+    "inferred_correspondences": 0
+  },
+  "comparison_rule": {
+    "comparable_only_if_same_named_frame_and_registered_correspondence": true,
+    "visual_proximity_allowed": false,
+    "nearest_matching_allowed": false,
+    "panel_normalization_allowed": false,
+    "assumed_transform_allowed": false,
+    "post_result_tolerance_allowed": false,
+    "missing_authority_is_not_mismatch": true
+  },
+  "authority_counts": {
+    "field_samples": 0,
+    "fills": 0,
+    "surfaces": 0,
+    "topology": 0,
+    "geometry": 0,
+    "new_target_trace_coordinates": 0,
+    "new_physical_cross_view_pairs": 0,
+    "new_source_target_transforms": 0
+  },
+  "active_blocks_preserved": [
+    "S10R-BLOCK-006",
+    "S10R-BLOCK-008",
+    "S10R-BLOCK-009"
+  ],
+  "step10_closeout_authorized": false,
+  "step11_authorized": false,
+  "production_authorized": false,
+  "staging_commit_push_authorized": false,
+  "review_board_policy": "target boundary lines and source-view trace panels separated; no field fill source-target overlay or inferred correspondence"
+}

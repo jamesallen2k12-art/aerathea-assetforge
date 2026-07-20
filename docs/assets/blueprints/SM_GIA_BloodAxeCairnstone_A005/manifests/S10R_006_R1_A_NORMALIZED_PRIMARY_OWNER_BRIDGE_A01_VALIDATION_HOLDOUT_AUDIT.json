@@ -1,0 +1,530 @@
+{
+  "schema": "aerathea.s10r_006_r1_a_normalized_primary_owner_bridge_a01_validation_holdout_audit.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-006-R1-A-NPOB-EXEC-A01",
+  "date": "2026-07-17",
+  "status": "pass_no_explicit_validation_holdout_contradiction",
+  "artifact_classification": "proof only",
+  "policy": "Back and right remain validation-only and create no construction coordinates or physical pairs.",
+  "counts": {
+    "back_validation_only": 6,
+    "right_validation_only": 8,
+    "total": 14,
+    "unique_holdout_ids": 14,
+    "unique_trace_ids": 14,
+    "order_ambiguities": 0,
+    "crossing_pairs": 0,
+    "handedness_provenance_missing": 0,
+    "construction_coordinates_created": 0,
+    "physical_pairs_created": 0,
+    "explicit_contradictions": 0
+  },
+  "records": [
+    {
+      "holdout_id": "NPOB-A01-HOLDOUT-BACK-LEFT-01",
+      "trace_id": "B-BTIR-01",
+      "view": "back",
+      "view_role": "validation_only",
+      "registered_side": "left",
+      "within_side_order": 1,
+      "source_outer_anchor_row": 300,
+      "source_p_i": [
+        123,
+        291
+      ],
+      "source_p_o": [
+        121,
+        300
+      ],
+      "source_trace_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "step05_axis_provenance": {
+        "image_x_right": "-X",
+        "image_y_down": "-Z",
+        "normal_owner": "+Y"
+      },
+      "step05_normal_owner_provenance": {
+        "id": "NO-BACK",
+        "source_view": "back",
+        "world_normal_owner": "+Y",
+        "scope": "panel frame only; not individual physical facets"
+      },
+      "trace_crossing_count_in_view": 0,
+      "side_order_unique": true,
+      "handedness_provenance_present": true,
+      "construction_coordinate_created": false,
+      "physical_pair_created": false,
+      "explicit_contradiction_detected": false,
+      "classification": "proof only validation holdout"
+    },
+    {
+      "holdout_id": "NPOB-A01-HOLDOUT-BACK-LEFT-02",
+      "trace_id": "B-BTIR-03",
+      "view": "back",
+      "view_role": "validation_only",
+      "registered_side": "left",
+      "within_side_order": 2,
+      "source_outer_anchor_row": 305,
+      "source_p_i": [
+        130,
+        294
+      ],
+      "source_p_o": [
+        122,
+        305
+      ],
+      "source_trace_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "step05_axis_provenance": {
+        "image_x_right": "-X",
+        "image_y_down": "-Z",
+        "normal_owner": "+Y"
+      },
+      "step05_normal_owner_provenance": {
+        "id": "NO-BACK",
+        "source_view": "back",
+        "world_normal_owner": "+Y",
+        "scope": "panel frame only; not individual physical facets"
+      },
+      "trace_crossing_count_in_view": 0,
+      "side_order_unique": true,
+      "handedness_provenance_present": true,
+      "construction_coordinate_created": false,
+      "physical_pair_created": false,
+      "explicit_contradiction_detected": false,
+      "classification": "proof only validation holdout"
+    },
+    {
+      "holdout_id": "NPOB-A01-HOLDOUT-BACK-LEFT-03",
+      "trace_id": "B-BTIR-05",
+      "view": "back",
+      "view_role": "validation_only",
+      "registered_side": "left",
+      "within_side_order": 3,
+      "source_outer_anchor_row": 310,
+      "source_p_i": [
+        138,
+        297
+      ],
+      "source_p_o": [
+        140,
+        310
+      ],
+      "source_trace_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "step05_axis_provenance": {
+        "image_x_right": "-X",
+        "image_y_down": "-Z",
+        "normal_owner": "+Y"
+      },
+      "step05_normal_owner_provenance": {
+        "id": "NO-BACK",
+        "source_view": "back",
+        "world_normal_owner": "+Y",
+        "scope": "panel frame only; not individual physical facets"
+      },
+      "trace_crossing_count_in_view": 0,
+      "side_order_unique": true,
+      "handedness_provenance_present": true,
+      "construction_coordinate_created": false,
+      "physical_pair_created": false,
+      "explicit_contradiction_detected": false,
+      "classification": "proof only validation holdout"
+    },
+    {
+      "holdout_id": "NPOB-A01-HOLDOUT-BACK-RIGHT-01",
+      "trace_id": "B-BTIR-02",
+      "view": "back",
+      "view_role": "validation_only",
+      "registered_side": "right",
+      "within_side_order": 1,
+      "source_outer_anchor_row": 300,
+      "source_p_i": [
+        362,
+        291
+      ],
+      "source_p_o": [
+        362,
+        300
+      ],
+      "source_trace_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "step05_axis_provenance": {
+        "image_x_right": "-X",
+        "image_y_down": "-Z",
+        "normal_owner": "+Y"
+      },
+      "step05_normal_owner_provenance": {
+        "id": "NO-BACK",
+        "source_view": "back",
+        "world_normal_owner": "+Y",
+        "scope": "panel frame only; not individual physical facets"
+      },
+      "trace_crossing_count_in_view": 0,
+      "side_order_unique": true,
+      "handedness_provenance_present": true,
+      "construction_coordinate_created": false,
+      "physical_pair_created": false,
+      "explicit_contradiction_detected": false,
+      "classification": "proof only validation holdout"
+    },
+    {
+      "holdout_id": "NPOB-A01-HOLDOUT-BACK-RIGHT-02",
+      "trace_id": "B-BTIR-04",
+      "view": "back",
+      "view_role": "validation_only",
+      "registered_side": "right",
+      "within_side_order": 2,
+      "source_outer_anchor_row": 305,
+      "source_p_i": [
+        355,
+        294
+      ],
+      "source_p_o": [
+        358,
+        305
+      ],
+      "source_trace_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "step05_axis_provenance": {
+        "image_x_right": "-X",
+        "image_y_down": "-Z",
+        "normal_owner": "+Y"
+      },
+      "step05_normal_owner_provenance": {
+        "id": "NO-BACK",
+        "source_view": "back",
+        "world_normal_owner": "+Y",
+        "scope": "panel frame only; not individual physical facets"
+      },
+      "trace_crossing_count_in_view": 0,
+      "side_order_unique": true,
+      "handedness_provenance_present": true,
+      "construction_coordinate_created": false,
+      "physical_pair_created": false,
+      "explicit_contradiction_detected": false,
+      "classification": "proof only validation holdout"
+    },
+    {
+      "holdout_id": "NPOB-A01-HOLDOUT-BACK-RIGHT-03",
+      "trace_id": "B-BTIR-06",
+      "view": "back",
+      "view_role": "validation_only",
+      "registered_side": "right",
+      "within_side_order": 3,
+      "source_outer_anchor_row": 310,
+      "source_p_i": [
+        346,
+        297
+      ],
+      "source_p_o": [
+        348,
+        310
+      ],
+      "source_trace_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "step05_axis_provenance": {
+        "image_x_right": "-X",
+        "image_y_down": "-Z",
+        "normal_owner": "+Y"
+      },
+      "step05_normal_owner_provenance": {
+        "id": "NO-BACK",
+        "source_view": "back",
+        "world_normal_owner": "+Y",
+        "scope": "panel frame only; not individual physical facets"
+      },
+      "trace_crossing_count_in_view": 0,
+      "side_order_unique": true,
+      "handedness_provenance_present": true,
+      "construction_coordinate_created": false,
+      "physical_pair_created": false,
+      "explicit_contradiction_detected": false,
+      "classification": "proof only validation holdout"
+    },
+    {
+      "holdout_id": "NPOB-A01-HOLDOUT-RIGHT-LEFT-01",
+      "trace_id": "R-BTIR-01",
+      "view": "right",
+      "view_role": "validation_only",
+      "registered_side": "left",
+      "within_side_order": 1,
+      "source_outer_anchor_row": 265,
+      "source_p_i": [
+        99,
+        275
+      ],
+      "source_p_o": [
+        92,
+        265
+      ],
+      "source_trace_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "step05_axis_provenance": {
+        "image_x_right": "+Y",
+        "image_y_down": "-Z",
+        "normal_owner": "+X"
+      },
+      "step05_normal_owner_provenance": {
+        "id": "NO-RIGHT",
+        "source_view": "right",
+        "world_normal_owner": "+X",
+        "scope": "panel frame only; not individual physical facets"
+      },
+      "trace_crossing_count_in_view": 0,
+      "side_order_unique": true,
+      "handedness_provenance_present": true,
+      "construction_coordinate_created": false,
+      "physical_pair_created": false,
+      "explicit_contradiction_detected": false,
+      "classification": "proof only validation holdout"
+    },
+    {
+      "holdout_id": "NPOB-A01-HOLDOUT-RIGHT-LEFT-02",
+      "trace_id": "R-BTIR-03",
+      "view": "right",
+      "view_role": "validation_only",
+      "registered_side": "left",
+      "within_side_order": 2,
+      "source_outer_anchor_row": 270,
+      "source_p_i": [
+        87,
+        277
+      ],
+      "source_p_o": [
+        91,
+        270
+      ],
+      "source_trace_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "step05_axis_provenance": {
+        "image_x_right": "+Y",
+        "image_y_down": "-Z",
+        "normal_owner": "+X"
+      },
+      "step05_normal_owner_provenance": {
+        "id": "NO-RIGHT",
+        "source_view": "right",
+        "world_normal_owner": "+X",
+        "scope": "panel frame only; not individual physical facets"
+      },
+      "trace_crossing_count_in_view": 0,
+      "side_order_unique": true,
+      "handedness_provenance_present": true,
+      "construction_coordinate_created": false,
+      "physical_pair_created": false,
+      "explicit_contradiction_detected": false,
+      "classification": "proof only validation holdout"
+    },
+    {
+      "holdout_id": "NPOB-A01-HOLDOUT-RIGHT-LEFT-03",
+      "trace_id": "R-BTIR-05",
+      "view": "right",
+      "view_role": "validation_only",
+      "registered_side": "left",
+      "within_side_order": 3,
+      "source_outer_anchor_row": 275,
+      "source_p_i": [
+        87,
+        277
+      ],
+      "source_p_o": [
+        89,
+        275
+      ],
+      "source_trace_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "step05_axis_provenance": {
+        "image_x_right": "+Y",
+        "image_y_down": "-Z",
+        "normal_owner": "+X"
+      },
+      "step05_normal_owner_provenance": {
+        "id": "NO-RIGHT",
+        "source_view": "right",
+        "world_normal_owner": "+X",
+        "scope": "panel frame only; not individual physical facets"
+      },
+      "trace_crossing_count_in_view": 0,
+      "side_order_unique": true,
+      "handedness_provenance_present": true,
+      "construction_coordinate_created": false,
+      "physical_pair_created": false,
+      "explicit_contradiction_detected": false,
+      "classification": "proof only validation holdout"
+    },
+    {
+      "holdout_id": "NPOB-A01-HOLDOUT-RIGHT-LEFT-04",
+      "trace_id": "R-BTIR-07",
+      "view": "right",
+      "view_role": "validation_only",
+      "registered_side": "left",
+      "within_side_order": 4,
+      "source_outer_anchor_row": 280,
+      "source_p_i": [
+        87,
+        277
+      ],
+      "source_p_o": [
+        86,
+        280
+      ],
+      "source_trace_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "step05_axis_provenance": {
+        "image_x_right": "+Y",
+        "image_y_down": "-Z",
+        "normal_owner": "+X"
+      },
+      "step05_normal_owner_provenance": {
+        "id": "NO-RIGHT",
+        "source_view": "right",
+        "world_normal_owner": "+X",
+        "scope": "panel frame only; not individual physical facets"
+      },
+      "trace_crossing_count_in_view": 0,
+      "side_order_unique": true,
+      "handedness_provenance_present": true,
+      "construction_coordinate_created": false,
+      "physical_pair_created": false,
+      "explicit_contradiction_detected": false,
+      "classification": "proof only validation holdout"
+    },
+    {
+      "holdout_id": "NPOB-A01-HOLDOUT-RIGHT-RIGHT-01",
+      "trace_id": "R-BTIR-02",
+      "view": "right",
+      "view_role": "validation_only",
+      "registered_side": "right",
+      "within_side_order": 1,
+      "source_outer_anchor_row": 265,
+      "source_p_i": [
+        267,
+        275
+      ],
+      "source_p_o": [
+        270,
+        265
+      ],
+      "source_trace_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "step05_axis_provenance": {
+        "image_x_right": "+Y",
+        "image_y_down": "-Z",
+        "normal_owner": "+X"
+      },
+      "step05_normal_owner_provenance": {
+        "id": "NO-RIGHT",
+        "source_view": "right",
+        "world_normal_owner": "+X",
+        "scope": "panel frame only; not individual physical facets"
+      },
+      "trace_crossing_count_in_view": 0,
+      "side_order_unique": true,
+      "handedness_provenance_present": true,
+      "construction_coordinate_created": false,
+      "physical_pair_created": false,
+      "explicit_contradiction_detected": false,
+      "classification": "proof only validation holdout"
+    },
+    {
+      "holdout_id": "NPOB-A01-HOLDOUT-RIGHT-RIGHT-02",
+      "trace_id": "R-BTIR-04",
+      "view": "right",
+      "view_role": "validation_only",
+      "registered_side": "right",
+      "within_side_order": 2,
+      "source_outer_anchor_row": 270,
+      "source_p_i": [
+        267,
+        275
+      ],
+      "source_p_o": [
+        272,
+        270
+      ],
+      "source_trace_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "step05_axis_provenance": {
+        "image_x_right": "+Y",
+        "image_y_down": "-Z",
+        "normal_owner": "+X"
+      },
+      "step05_normal_owner_provenance": {
+        "id": "NO-RIGHT",
+        "source_view": "right",
+        "world_normal_owner": "+X",
+        "scope": "panel frame only; not individual physical facets"
+      },
+      "trace_crossing_count_in_view": 0,
+      "side_order_unique": true,
+      "handedness_provenance_present": true,
+      "construction_coordinate_created": false,
+      "physical_pair_created": false,
+      "explicit_contradiction_detected": false,
+      "classification": "proof only validation holdout"
+    },
+    {
+      "holdout_id": "NPOB-A01-HOLDOUT-RIGHT-RIGHT-03",
+      "trace_id": "R-BTIR-06",
+      "view": "right",
+      "view_role": "validation_only",
+      "registered_side": "right",
+      "within_side_order": 3,
+      "source_outer_anchor_row": 275,
+      "source_p_i": [
+        277,
+        276
+      ],
+      "source_p_o": [
+        277,
+        275
+      ],
+      "source_trace_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "step05_axis_provenance": {
+        "image_x_right": "+Y",
+        "image_y_down": "-Z",
+        "normal_owner": "+X"
+      },
+      "step05_normal_owner_provenance": {
+        "id": "NO-RIGHT",
+        "source_view": "right",
+        "world_normal_owner": "+X",
+        "scope": "panel frame only; not individual physical facets"
+      },
+      "trace_crossing_count_in_view": 0,
+      "side_order_unique": true,
+      "handedness_provenance_present": true,
+      "construction_coordinate_created": false,
+      "physical_pair_created": false,
+      "explicit_contradiction_detected": false,
+      "classification": "proof only validation holdout"
+    },
+    {
+      "holdout_id": "NPOB-A01-HOLDOUT-RIGHT-RIGHT-04",
+      "trace_id": "R-BTIR-08",
+      "view": "right",
+      "view_role": "validation_only",
+      "registered_side": "right",
+      "within_side_order": 4,
+      "source_outer_anchor_row": 280,
+      "source_p_i": [
+        277,
+        276
+      ],
+      "source_p_o": [
+        278,
+        280
+      ],
+      "source_trace_formula": "p(t) = (1-t) * p_i + t * p_o",
+      "step05_axis_provenance": {
+        "image_x_right": "+Y",
+        "image_y_down": "-Z",
+        "normal_owner": "+X"
+      },
+      "step05_normal_owner_provenance": {
+        "id": "NO-RIGHT",
+        "source_view": "right",
+        "world_normal_owner": "+X",
+        "scope": "panel frame only; not individual physical facets"
+      },
+      "trace_crossing_count_in_view": 0,
+      "side_order_unique": true,
+      "handedness_provenance_present": true,
+      "construction_coordinate_created": false,
+      "physical_pair_created": false,
+      "explicit_contradiction_detected": false,
+      "classification": "proof only validation holdout"
+    }
+  ],
+  "result": "pass_no_explicit_contradiction_within_bounded_holdout_questions",
+  "authority_limit": "The holdout result does not prove physical cross-view agreement or source-to-target correspondence."
+}

@@ -1,0 +1,91 @@
+{
+  "schema": "aerathea.top_c004_outer_perimeter_interpretation_rule_option_registry.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-TOP-C004-OPIR-A01",
+  "date": "2026-07-17",
+  "status": "pre_registered_before_curve_generation",
+  "artifact_classification": "proof only",
+  "decision_options": [
+    "TOP_C004_OPIR_N2_ELLIPSE",
+    "TOP_C004_OPIR_N3_ROUNDED_OVAL",
+    "TOP_C004_OPIR_N4_ROUNDED_RECTILINEAR",
+    "TOP_C004_OPIR_LEAVE_BLOCKED"
+  ],
+  "technical_result_on_full_pass": "three_target_space_options_ready_for_Flamestrike_decision",
+  "neutral_target_review_frame": {
+    "origin": [
+      0.0,
+      0.0
+    ],
+    "origin_authority": "mathematical option-comparison parameter only; not source center, origin, pivot, or placement",
+    "X_extent_cm": [
+      -70.0,
+      70.0
+    ],
+    "Y_extent_cm": [
+      -55.0,
+      55.0
+    ],
+    "width_cm": 140.0,
+    "depth_cm": 110.0,
+    "source_pixel_relation": null,
+    "CL003_mapping": null
+  },
+  "equation": "abs(x / 70)^n + abs(y / 55)^n = 1",
+  "parametric_sampling": {
+    "sample_count": 1440,
+    "theta_domain": "[0, 2*pi)",
+    "x_formula": "70 * sign(cos(theta)) * abs(cos(theta))^(2/n)",
+    "y_formula": "55 * sign(sin(theta)) * abs(sin(theta))^(2/n)",
+    "explicit_closure_for_rendering": true,
+    "closure_authority": "mathematical candidate interpretation only; not source-owned perimeter"
+  },
+  "options": [
+    {
+      "option_id": "TOP_C004_OPIR_N2_ELLIPSE",
+      "short_name": "N2 \u2014 ELLIPSE",
+      "exponent": 2,
+      "character": "softest corners; continuous elliptical target-space footprint",
+      "artifact_classification": "candidate interpretation"
+    },
+    {
+      "option_id": "TOP_C004_OPIR_N3_ROUNDED_OVAL",
+      "short_name": "N3 \u2014 ROUNDED OVAL",
+      "exponent": 3,
+      "character": "fuller sides with rounded ends",
+      "artifact_classification": "candidate interpretation"
+    },
+    {
+      "option_id": "TOP_C004_OPIR_N4_ROUNDED_RECTILINEAR",
+      "short_name": "N4 \u2014 ROUNDED RECTILINEAR",
+      "exponent": 4,
+      "character": "broad stable sides with stronger rectilinear character",
+      "artifact_classification": "candidate interpretation"
+    }
+  ],
+  "matched_render_rules": {
+    "same_target_extents": true,
+    "same_sampling": true,
+    "same_panel_size": true,
+    "same_scale": true,
+    "same_grid": true,
+    "same_line_weight": true,
+    "same_framing": true,
+    "unfilled_lines_only": true
+  },
+  "selection_policy": "no automatic score, rank, or recommendation; Flamestrike selects N2, N3, N4, or leave blocked",
+  "blocked_methods": [
+    "source_overlay_or_registration",
+    "source_contour_trace_or_segmentation",
+    "source_center_axis_origin_pivot_or_placement",
+    "annotation_endpoint_as_surface_point",
+    "unified_top_scale_or_world_conversion",
+    "CL003_source_to_target_mapping",
+    "curve_fit_or_exponent_fit",
+    "unregistered_asymmetry_irregularity_noise_or_control_point",
+    "filled_footprint_mask_or_shaded_band",
+    "transition_field_surface_topology_or_geometry",
+    "Step10_revision",
+    "production_commit_or_push"
+  ]
+}

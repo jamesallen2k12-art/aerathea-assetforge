@@ -1,0 +1,629 @@
+{
+  "schema": "aerathea.step_10_interpretation_option_registry.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "step_id": "STEP_10",
+  "date": "2026-07-16",
+  "status": "candidate_complete_option_registry_pending_flamestrike_decisions",
+  "artifact_classification": "candidate",
+  "decision": "Present explicit construction-interpretation options without changing any exact-evidence or blocked exact-data result.",
+  "authority": {
+    "contract": "steps/STEP_10_UNKNOWNS_AND_INTERPRETATION_DECISION_GATE_CONTRACT.md",
+    "pre_action_checkpoint": "Saved/ProjectRecovery/20260716-095315/",
+    "step_09_matrix": "manifests/STEP_09_DISAGREEMENT_UNKNOWN_MATRIX.json",
+    "step_09_audit": "manifests/STEP_09_PRE_GEOMETRY_EXACT_DATA_AUDIT.json",
+    "source": "docs/assets/reference/bloodaxe_cairnstone_asset/REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate.png"
+  },
+  "decision_status_enum": [
+    "approved_interpretation_rule",
+    "rejected_interpretation_option",
+    "approved_omission_not_required_for_geometry",
+    "remains_blocked"
+  ],
+  "global_evidence_boundary": {
+    "authoritative_direct_dimensions_cm": {
+      "overall_height": 220,
+      "base_height": 35,
+      "C-001_maximum_width": 120,
+      "C-001_maximum_depth": 90,
+      "C-004_outer_footprint_width": 140,
+      "C-004_outer_footprint_depth": 110
+    },
+    "unified_axis_scales": 0,
+    "proven_cross_panel_physical_pixel_pairs": 0,
+    "proven_numeric_centers": 0,
+    "closed_contact_loops": 0,
+    "approved_interpretation_rules": 0,
+    "exact_records_modified": false
+  },
+  "decision_items": [
+    {
+      "id": "I10-001",
+      "title": "Cross-view scale and rectification convention",
+      "blueprint_unknown_classes": ["cross_view_disagreement_selections_or_conventions"],
+      "scope": "whole asset; X, Y, and Z view integration",
+      "covered_inherited_ids": [
+        "D06-001", "D06-002", "D06-003", "D06-004",
+        "D07-001", "D07-002", "D07-003", "D07-004",
+        "TDIS-001", "TDIS-002", "TDIS-003", "TDIS-004",
+        "XDIS-001", "XDIS-002", "XDIS-003", "XDIS-004", "XDIS-005", "XDIS-006"
+      ],
+      "source_owned_facts": [
+        "all six direct printed dimensions agree by annotation role",
+        "all twenty per-view calibration formulas replay exactly",
+        "front/back/top use different X pixel ratios",
+        "left/right/top use different Y pixel ratios",
+        "front/back/left/right use different Z pixel ratios"
+      ],
+      "blocked_fact": "No unified X, Y, or Z pixel scale and no world-contour conversion authority exists.",
+      "required_for_360_geometry": true,
+      "downstream_step_11_dependency": "A construction blueprint needs one declared convention for mapping all source views into the direct-dimension world frame.",
+      "options": [
+        {
+          "id": "I10-001-A",
+          "label": "Dimension-locked component-aware rectification sub-gate",
+          "proposed_rule": "Preserve all source panels unchanged. In a separately approved rectification sub-gate, create derivative per-view, per-component corrections anchored to the six direct dimensions and the approved Z stations. Record every local transform and distortion; do not average pixel ratios. Use corrected derivatives only after Flamestrike reviews the corrected images and distortion record.",
+          "visible_source_effect": "Original pixels remain authority; derivative panels would change spacing only under a later approved gate.",
+          "hidden_surface_effect": "None by itself.",
+          "scale_or_rectification_dependency": "Requires a separate rectification execution and review gate before Step 11.",
+          "topology_implication": "Provides a common construction frame without defining topology.",
+          "known_risk": "Local correction can distort secondary details if the later distortion limits are too broad.",
+          "candidate_assessment": "recommended"
+        },
+        {
+          "id": "I10-001-B",
+          "label": "Single owner view per axis",
+          "proposed_rule": "Use front for X/Z silhouette decisions, left for Y/Z silhouette decisions, and top for X/Y footprints; treat the remaining orthographic views as corroboration only.",
+          "visible_source_effect": "Silhouettes in non-owner views may no longer match their source pixels.",
+          "hidden_surface_effect": "Does not resolve hidden surfaces.",
+          "scale_or_rectification_dependency": "Avoids corrected images by explicitly prioritizing views.",
+          "topology_implication": "Creates one construction frame from three preferred panels.",
+          "known_risk": "Weakens equal status of approved metric views and can create visible mismatch.",
+          "candidate_assessment": "not_recommended_high_drift_risk"
+        },
+        {
+          "id": "I10-001-BLOCK",
+          "label": "Leave blocked",
+          "proposed_rule": null,
+          "visible_source_effect": "None.",
+          "hidden_surface_effect": "None.",
+          "scale_or_rectification_dependency": "All world-contour construction remains blocked.",
+          "topology_implication": "Step 11 cannot specify coherent geometry.",
+          "known_risk": "Project cannot advance to construction planning.",
+          "candidate_assessment": "available_required_block_option"
+        }
+      ],
+      "candidate_recommendation": "I10-001-A",
+      "recommendation_reason": "It preserves every original source and exact record while using the authoritative direct dimensions as the only common metric anchors.",
+      "diagram_required": false,
+      "flamestrike_decision": "pending",
+      "approved_rule": null
+    },
+    {
+      "id": "I10-002",
+      "title": "C-001 monolith 360-degree envelope and facet ownership",
+      "blueprint_unknown_classes": ["fully_occluded_interfaces", "sectors_not_owned_by_visible_source_view"],
+      "scope": "C-001 primary monolith",
+      "covered_inherited_ids": ["D06-005", "D07-005", "BCR-001", "BCR-006", "TBLOCK-001", "U-001"],
+      "source_owned_facts": [
+        "C-001 maximum width is 120 cm",
+        "C-001 maximum depth is 90 cm",
+        "front, back, left, right, and top preserve source-visible profile evidence",
+        "irregular corner and facet pixel identity across panels is not proven"
+      ],
+      "blocked_fact": "No closed C-001 footprint, center, cross-view corner pairing, hidden quadrant surface, or individual facet-normal ownership is exact.",
+      "required_for_360_geometry": true,
+      "downstream_step_11_dependency": "C-001 needs a closed, buildable outer envelope and explicit source-view ownership.",
+      "options": [
+        {
+          "id": "I10-002-A",
+          "label": "Rectified view-owned faceted envelope",
+          "proposed_rule": "After I10-001-A passes its sub-gate, use each orthographic panel only for its approved normal-owner surface. Preserve its corrected visible silhouette and major faceting. In source-unowned corner sectors, join adjacent owner-view contour stations with straight ruled transitions that introduce no new width, depth, or height extrema beyond 120 x 90 x 220 cm.",
+          "visible_source_effect": "Each visible face remains owned by its matching source panel.",
+          "hidden_surface_effect": "Corner sectors become explicit candidate interpolation rather than measurement.",
+          "scale_or_rectification_dependency": "Depends on I10-001-A and the rectification sub-gate.",
+          "topology_implication": "Supports a faceted closed envelope without an analytic primitive.",
+          "known_risk": "Ruled corner transitions may require later art-direction review to avoid planar pinching.",
+          "candidate_assessment": "recommended"
+        },
+        {
+          "id": "I10-002-B",
+          "label": "Dimension-fit analytic oval envelope",
+          "proposed_rule": "Fit a tapered ellipse or superellipse inside the 120 x 90 cm dimensions, then project visible face detail onto it.",
+          "visible_source_effect": "Replaces irregular source silhouette and faceting with a regular primitive.",
+          "hidden_surface_effect": "Closes all hidden quadrants analytically.",
+          "scale_or_rectification_dependency": "Uses direct dimensions but bypasses view-specific profiles.",
+          "topology_implication": "Simple regular radial topology.",
+          "known_risk": "High silhouette and cultural-form drift; conflicts with the source's irregular masonry character.",
+          "candidate_assessment": "not_recommended_high_drift_risk"
+        },
+        {
+          "id": "I10-002-BLOCK",
+          "label": "Leave blocked",
+          "proposed_rule": null,
+          "visible_source_effect": "None.",
+          "hidden_surface_effect": "C-001 remains open and undefined.",
+          "scale_or_rectification_dependency": "No selection.",
+          "topology_implication": "C-001 construction remains blocked.",
+          "known_risk": "No coherent monolith can be specified.",
+          "candidate_assessment": "available_required_block_option"
+        }
+      ],
+      "candidate_recommendation": "I10-002-A",
+      "recommendation_reason": "It retains every view's visible silhouette role and avoids replacing the monolith with a convenient primitive.",
+      "diagram_required": false,
+      "flamestrike_decision": "pending",
+      "approved_rule": null
+    },
+    {
+      "id": "I10-003",
+      "title": "C-002 and C-003 masonry-course separation and hidden interfaces",
+      "blueprint_unknown_classes": ["fully_occluded_interfaces", "source_invisible_topology"],
+      "scope": "C-002 and C-003 stacked base courses",
+      "covered_inherited_ids": ["BCR-002", "TBLOCK-002", "TBLOCK-003", "U-002", "U-003"],
+      "source_owned_facts": [
+        "C-002 and C-003 are preserved as distinct semantic components",
+        "visible course rows and CL-001/CL-002 contact evidence are source-linked",
+        "the authored total base height is 35 cm",
+        "the 35 cm label does not assign individual course heights"
+      ],
+      "blocked_fact": "Hidden course boundaries, closed annuli, individual centers, and per-course height allocation are not exact.",
+      "required_for_360_geometry": true,
+      "downstream_step_11_dependency": "The construction order and separate component envelopes require an approved course rule.",
+      "options": [
+        {
+          "id": "I10-003-A",
+          "label": "Separate nested masonry courses",
+          "proposed_rule": "Keep C-002 and C-003 as separate nested courses. Under the I10-001-A rectification sub-gate, map Z=0 and the base top to the authoritative 35 cm span, preserve each normal-owner panel's visible course-boundary fraction, and reconcile only source-unowned seams by linear transition. Govern hidden contacts through I10-006; do not duplicate one course contour as the other.",
+          "visible_source_effect": "Preserves the visibly stepped two-course base language.",
+          "hidden_surface_effect": "Hidden course interfaces become bounded interpretation.",
+          "scale_or_rectification_dependency": "Depends on I10-001-A and I10-006.",
+          "topology_implication": "Two independently watertight nested components.",
+          "known_risk": "Course station transitions can kink where source panels disagree.",
+          "candidate_assessment": "recommended"
+        },
+        {
+          "id": "I10-003-B",
+          "label": "Single combined base with surface seams",
+          "proposed_rule": "Merge C-002 and C-003 into one hidden volume while retaining their visible dividing lines as surface treatment.",
+          "visible_source_effect": "Can preserve the front-facing seam but removes semantic component separation.",
+          "hidden_surface_effect": "Eliminates the internal interface by omission.",
+          "scale_or_rectification_dependency": "Still depends on an outer base envelope.",
+          "topology_implication": "One simplified base mesh.",
+          "known_risk": "Contradicts the approved distinct-component inventory and reduces modular control.",
+          "candidate_assessment": "not_recommended_semantic_loss"
+        },
+        {
+          "id": "I10-003-BLOCK",
+          "label": "Leave blocked",
+          "proposed_rule": null,
+          "visible_source_effect": "None.",
+          "hidden_surface_effect": "Interfaces remain undefined.",
+          "scale_or_rectification_dependency": "No selection.",
+          "topology_implication": "Base-course construction remains blocked.",
+          "known_risk": "Step 11 cannot assign component construction order.",
+          "candidate_assessment": "available_required_block_option"
+        }
+      ],
+      "candidate_recommendation": "I10-003-A",
+      "recommendation_reason": "It follows the approved component inventory and the source's readable stepped construction.",
+      "diagram_required": false,
+      "flamestrike_decision": "pending",
+      "approved_rule": null
+    },
+    {
+      "id": "I10-004",
+      "title": "C-004 outer rubble footprint and unowned perimeter sectors",
+      "blueprint_unknown_classes": ["sectors_not_owned_by_visible_source_view", "bottom_surface"],
+      "scope": "C-004 outer rubble/support skirt",
+      "covered_inherited_ids": ["BCR-003", "TBLOCK-004", "U-004"],
+      "source_owned_facts": [
+        "C-004 outer footprint dimensions are 140 x 110 cm",
+        "source-visible irregular edge observations exist",
+        "the top boundary is partial, rubble-shadow adjacent, and not closed as exact authority"
+      ],
+      "blocked_fact": "No exact filled C-004 footprint, center, or complete peripheral-form identity exists.",
+      "required_for_360_geometry": true,
+      "downstream_step_11_dependency": "The support footprint, collision envelope, and bottom closure need a bounded outer shape.",
+      "options": [
+        {
+          "id": "I10-004-A",
+          "label": "Dimension-locked irregular rubble closure",
+          "proposed_rule": "After I10-001-A, preserve every rectified source-owned C-004 edge sector. Close each source-unowned gap with the straight chord between its nearest owned endpoints, keep every closure inside the 140 x 110 cm axis-aligned direct-dimension envelope, and introduce no new width or depth extremum. Bottom treatment follows I10-007.",
+          "visible_source_effect": "Preserves irregular visible rubble edges and direct footprint extrema.",
+          "hidden_surface_effect": "Unseen perimeter gaps become explicit chord closures.",
+          "scale_or_rectification_dependency": "Depends on I10-001-A and I10-007.",
+          "topology_implication": "Produces a closed non-analytic support footprint.",
+          "known_risk": "Straight hidden chords may simplify rubble rhythm in fully unowned sectors.",
+          "candidate_assessment": "recommended"
+        },
+        {
+          "id": "I10-004-B",
+          "label": "Smooth 140 x 110 cm ellipse",
+          "proposed_rule": "Use a centered ellipse with the direct footprint dimensions and place visible rubble detail around it.",
+          "visible_source_effect": "Regularizes the irregular rubble footprint.",
+          "hidden_surface_effect": "Closes all sectors analytically.",
+          "scale_or_rectification_dependency": "Uses only direct dimensions.",
+          "topology_implication": "Regular radial base topology.",
+          "known_risk": "Visible silhouette drift and loss of hand-built cairn character.",
+          "candidate_assessment": "not_recommended_high_drift_risk"
+        },
+        {
+          "id": "I10-004-BLOCK",
+          "label": "Leave blocked",
+          "proposed_rule": null,
+          "visible_source_effect": "None.",
+          "hidden_surface_effect": "Footprint remains open.",
+          "scale_or_rectification_dependency": "No selection.",
+          "topology_implication": "C-004, collision, and bottom planning remain blocked.",
+          "known_risk": "No support envelope can be specified.",
+          "candidate_assessment": "available_required_block_option"
+        }
+      ],
+      "candidate_recommendation": "I10-004-A",
+      "recommendation_reason": "It uses the direct footprint as a hard containment limit while preserving all source-owned irregular sectors.",
+      "diagram_required": false,
+      "flamestrike_decision": "pending",
+      "approved_rule": null
+    },
+    {
+      "id": "I10-005",
+      "title": "C-005 motif and C-006/C-007 line-feature ownership",
+      "blueprint_unknown_classes": ["sectors_not_owned_by_visible_source_view", "source_invisible_topology"],
+      "scope": "visible axe/rune motif and line features",
+      "covered_inherited_ids": ["D06-006", "D07-006", "BCR-004", "BCR-005", "TBLOCK-005", "U-005", "U-006", "U-009"],
+      "source_owned_facts": [
+        "motif and line-feature appearance landmarks are view-linked",
+        "C-005 correspondence is not proven outside front and top",
+        "individual C-006/C-007 line identity across views is not proven"
+      ],
+      "blocked_fact": "No source-exact continuous cross-face motif, hidden-face placement, physical center, or orientation exists.",
+      "required_for_360_geometry": false,
+      "downstream_step_11_dependency": "Step 11 needs an ownership rule to avoid inventing wrapped or hidden decorative structure.",
+      "options": [
+        {
+          "id": "I10-005-A",
+          "label": "Face-owned visible decoration only",
+          "proposed_rule": "Treat each source-visible C-005, C-006, and C-007 appearance as owned only by its normal-owner face. Do not assert cross-face continuity. Give source-unseen faces no copied motif by default. Let Step 11 separately decide whether each approved visible feature uses shallow geometry, normal detail, or Base Color, without changing its face-owned placement.",
+          "visible_source_effect": "Preserves every visible motif without forcing false correspondence.",
+          "hidden_surface_effect": "Unseen faces remain undecorated unless a later explicit art-direction gate adds content.",
+          "scale_or_rectification_dependency": "Visible placement follows I10-001-A if rectified.",
+          "topology_implication": "Decorative features need not control the primary silhouette topology.",
+          "known_risk": "Motif continuity at view-boundary seams may require localized review.",
+          "candidate_assessment": "recommended"
+        },
+        {
+          "id": "I10-005-B",
+          "label": "Nearest-endpoint continuous wrap",
+          "proposed_rule": "Pair visually nearest motif and line endpoints between panels and wrap them continuously around the monolith.",
+          "visible_source_effect": "Can alter source-owned placements to force continuity.",
+          "hidden_surface_effect": "Invents unseen decorative paths.",
+          "scale_or_rectification_dependency": "Requires unproved cross-panel pairing.",
+          "topology_implication": "May force decoration-led topology.",
+          "known_risk": "Converts visual proximity into unsupported physical identity.",
+          "candidate_assessment": "not_recommended_unproved_pairing"
+        },
+        {
+          "id": "I10-005-BLOCK",
+          "label": "Leave blocked",
+          "proposed_rule": null,
+          "visible_source_effect": "None.",
+          "hidden_surface_effect": "No decoration ownership rule.",
+          "scale_or_rectification_dependency": "No selection.",
+          "topology_implication": "Primary geometry can proceed only if Step 11 omits these features with approval.",
+          "known_risk": "Decoration implementation remains undecidable.",
+          "candidate_assessment": "available_required_block_option"
+        }
+      ],
+      "candidate_recommendation": "I10-005-A",
+      "recommendation_reason": "It preserves visible source detail and avoids inventing continuity or hidden motifs.",
+      "diagram_required": false,
+      "flamestrike_decision": "pending",
+      "approved_rule": null
+    },
+    {
+      "id": "I10-006",
+      "title": "CL-001 through CL-003 hidden contact closure and occluded interfaces",
+      "blueprint_unknown_classes": ["hidden_contact_fill", "fully_occluded_interfaces", "sectors_not_owned_by_visible_source_view"],
+      "scope": "contacts C-001/C-002, C-002/C-003, and C-003/C-004",
+      "covered_inherited_ids": ["D06-007", "D07-007", "TBLOCK-006", "U-007", "U-008", "CL-001", "CL-002", "CL-003", "OS-001", "OS-002", "OS-003"],
+      "source_owned_facts": [
+        "CL-001, CL-002, and CL-003 semantic component relations are authoritative",
+        "127 source-visible discrete samples are authoritative per view",
+        "no pixel-to-pixel cross-panel pairing or hidden closure is authoritative"
+      ],
+      "blocked_fact": "Closed contact loops, contact centers, snap anchors, hidden fill, and occluded interface topology do not exist as exact evidence.",
+      "required_for_360_geometry": true,
+      "downstream_step_11_dependency": "Watertight component construction requires an explicit hidden-interface convention.",
+      "options": [
+        {
+          "id": "I10-006-A",
+          "label": "Shared interpreted contact loops",
+          "proposed_rule": "After rectification, preserve every source-owned CL sample and close each unowned sector with a non-self-intersecting straight chord between nearest owned endpoints. Use that interpreted loop as a shared boundary for the two contacting components. Keep the loop nested inside the lower component and outside the upper component's occupied footprint.",
+          "visible_source_effect": "Visible contact samples remain fixed.",
+          "hidden_surface_effect": "Creates explicit candidate closed interface loops.",
+          "scale_or_rectification_dependency": "Depends on I10-001-A and component envelopes.",
+          "topology_implication": "Shared boundaries require coordinated component topology.",
+          "known_risk": "A shared loop can overconstrain modular components and imply unsupported contact precision.",
+          "candidate_assessment": "acceptable_but_not_preferred"
+        },
+        {
+          "id": "I10-006-B",
+          "label": "Occluded independently watertight overlap",
+          "proposed_rule": "Preserve every source-visible contact edge on each owner component. Close each component independently inside completely source-invisible contact volume and permit bounded intersection there. Step 11 may choose the minimum positive hidden overlap needed for watertight construction, but every intersecting face must remain behind all approved visible contact samples in every owner view.",
+          "visible_source_effect": "No visible contact position changes.",
+          "hidden_surface_effect": "Hidden fill becomes separately labeled technical overlap, not a claimed shared source loop.",
+          "scale_or_rectification_dependency": "Depends on I10-001-A and the approved component envelopes.",
+          "topology_implication": "Supports separate watertight modular source components without matching hidden edge counts.",
+          "known_risk": "Unbounded overlap would create excess internal geometry, so Step 11 must document and validate the minimum hidden amount.",
+          "candidate_assessment": "recommended"
+        },
+        {
+          "id": "I10-006-BLOCK",
+          "label": "Leave blocked",
+          "proposed_rule": null,
+          "visible_source_effect": "None.",
+          "hidden_surface_effect": "All three interfaces remain open and unknown.",
+          "scale_or_rectification_dependency": "No selection.",
+          "topology_implication": "Watertight component construction remains blocked.",
+          "known_risk": "Step 11 cannot define component interfaces.",
+          "candidate_assessment": "available_required_block_option"
+        }
+      ],
+      "candidate_recommendation": "I10-006-B",
+      "recommendation_reason": "It preserves all visible contacts while keeping hidden technical fill honest and modular rather than pretending the discrete samples prove a shared loop.",
+      "diagram_required": false,
+      "flamestrike_decision": "pending",
+      "approved_rule": null
+    },
+    {
+      "id": "I10-007",
+      "title": "Source-invisible bottom surface",
+      "blueprint_unknown_classes": ["bottom_surface"],
+      "scope": "underside of the complete support footprint",
+      "covered_inherited_ids": [],
+      "new_gap_id": "I10-BOTTOM-001",
+      "source_owned_facts": [
+        "Z=0 is the authoritative ground station",
+        "C-004 outer footprint dimensions are 140 x 110 cm",
+        "the underside is not visible in the source"
+      ],
+      "blocked_fact": "No underside contour, relief, material detail, or thickness transition is source-authored.",
+      "required_for_360_geometry": true,
+      "downstream_step_11_dependency": "A closed static mesh and stable ground placement require a bottom rule.",
+      "options": [
+        {
+          "id": "I10-007-A",
+          "label": "Flat sealed ground-plane bottom",
+          "proposed_rule": "Seal the interpreted C-004 footprint with one planar underside at Z=0. Add no underside relief or decorative detail. Classify the entire underside as approved interpretation and keep its perimeter controlled by I10-004.",
+          "visible_source_effect": "None from approved above-ground review views.",
+          "hidden_surface_effect": "Creates the missing bottom with the minimum sufficient surface.",
+          "scale_or_rectification_dependency": "Depends on I10-004; uses the authoritative Z=0 station.",
+          "topology_implication": "Simple closed underside suitable for later collision planning.",
+          "known_risk": "May be visible if the asset is later placed on uneven terrain or viewed from below.",
+          "candidate_assessment": "recommended"
+        },
+        {
+          "id": "I10-007-B",
+          "label": "Modeled rubble-relief underside",
+          "proposed_rule": "Continue individual rubble forms below Z=0 to create an irregular underside.",
+          "visible_source_effect": "Can change ground contact and apparent height.",
+          "hidden_surface_effect": "Invents unsupported rubble volume.",
+          "scale_or_rectification_dependency": "Requires new depth choices below the ground station.",
+          "topology_implication": "Adds unseen geometry and collision complexity.",
+          "known_risk": "Violates the minimum-change rule and can destabilize placement.",
+          "candidate_assessment": "not_recommended_unnecessary_invention"
+        },
+        {
+          "id": "I10-007-BLOCK",
+          "label": "Leave blocked",
+          "proposed_rule": null,
+          "visible_source_effect": "None.",
+          "hidden_surface_effect": "Bottom remains open.",
+          "scale_or_rectification_dependency": "No selection.",
+          "topology_implication": "Closed mesh construction remains blocked.",
+          "known_risk": "No game-ready mesh can be specified.",
+          "candidate_assessment": "available_required_block_option"
+        }
+      ],
+      "candidate_recommendation": "I10-007-A",
+      "recommendation_reason": "It uses the authoritative ground datum and introduces only the minimum hidden surface needed for a closed asset.",
+      "diagram_required": false,
+      "flamestrike_decision": "pending",
+      "approved_rule": null
+    },
+    {
+      "id": "I10-008",
+      "title": "Source-invisible topology and component watertightness",
+      "blueprint_unknown_classes": ["source_invisible_topology", "fully_occluded_interfaces"],
+      "scope": "whole asset topology ownership",
+      "covered_inherited_ids": [],
+      "new_gap_id": "I10-TOPOLOGY-001",
+      "source_owned_facts": [
+        "C-001 through C-007 are preserved semantic IDs",
+        "physical separability is not source-proven",
+        "visible surface detail does not itself prescribe mesh topology"
+      ],
+      "blocked_fact": "Internal faces, edge flow, watertight grouping, and decoration-to-topology ownership are not source-authored.",
+      "required_for_360_geometry": true,
+      "downstream_step_11_dependency": "Step 11 must assign topology ownership before DCC construction.",
+      "options": [
+        {
+          "id": "I10-008-A",
+          "label": "Separate primary watertight components",
+          "proposed_rule": "Construct C-001, C-002, C-003, and C-004 as separate watertight primary components under I10-006. Treat C-005, C-006, and C-007 as face-owned decorative systems that do not define hidden topology or the primary silhouette unless Step 11 explicitly promotes a source-visible large feature. Omit permanently hidden internal faces except those needed to close each component.",
+          "visible_source_effect": "Preserves component readability and visible decoration placement.",
+          "hidden_surface_effect": "Limits hidden topology to watertight closure and approved overlaps.",
+          "scale_or_rectification_dependency": "Depends on I10-001 through I10-007.",
+          "topology_implication": "Modular DCC sources with a later combined-or-modular runtime decision.",
+          "known_risk": "Intersecting watertight components can carry redundant hidden faces if Step 11 does not minimize them.",
+          "candidate_assessment": "recommended"
+        },
+        {
+          "id": "I10-008-B",
+          "label": "One monolithic watertight mesh",
+          "proposed_rule": "Fuse all primary components into one closed mesh and preserve their visible divisions only as surface seams.",
+          "visible_source_effect": "Can preserve silhouette but weakens component construction language.",
+          "hidden_surface_effect": "Eliminates internal interfaces.",
+          "scale_or_rectification_dependency": "Still depends on all outer-envelope decisions.",
+          "topology_implication": "Simpler runtime mesh but reduced modular editability.",
+          "known_risk": "Conflicts with distinct semantic component ownership and makes revision harder.",
+          "candidate_assessment": "not_recommended_semantic_loss"
+        },
+        {
+          "id": "I10-008-BLOCK",
+          "label": "Leave blocked",
+          "proposed_rule": null,
+          "visible_source_effect": "None.",
+          "hidden_surface_effect": "No closure grouping.",
+          "scale_or_rectification_dependency": "No selection.",
+          "topology_implication": "Step 11 topology planning remains blocked.",
+          "known_risk": "DCC construction cannot start.",
+          "candidate_assessment": "available_required_block_option"
+        }
+      ],
+      "candidate_recommendation": "I10-008-A",
+      "recommendation_reason": "It preserves the approved component language while limiting hidden topology to production necessity.",
+      "diagram_required": false,
+      "flamestrike_decision": "pending",
+      "approved_rule": null
+    },
+    {
+      "id": "I10-009",
+      "title": "Construction origin, centerline, and pivot convention",
+      "blueprint_unknown_classes": ["cross_view_disagreement_selections_or_conventions"],
+      "scope": "whole-asset coordinate frame",
+      "covered_inherited_ids": ["BCR-007"],
+      "source_owned_facts": [
+        "the source defines negative and positive width/depth endpoint roles",
+        "Z=0 is the ground station",
+        "the C-004 direct footprint dimensions are 140 x 110 cm",
+        "no numeric physical center, origin, pivot, transform, or snap anchor is exact"
+      ],
+      "blocked_fact": "A production coordinate origin and pivot do not exist as source measurement.",
+      "required_for_360_geometry": true,
+      "downstream_step_11_dependency": "All component coordinates and Unreal placement need one explicit interpreted datum.",
+      "options": [
+        {
+          "id": "I10-009-A",
+          "label": "Base-dimension midpoint ground pivot",
+          "proposed_rule": "Define construction X=0 and Y=0 as the midpoint between the authoritative negative/positive C-004 140 cm and 110 cm dimension endpoint roles after rectification. Define Z=0 as the authoritative ground station and place the asset pivot at (0,0,0). Label this as a production datum, not a physical center derived from pixels.",
+          "visible_source_effect": "None; only establishes coordinates.",
+          "hidden_surface_effect": "Provides a reference for bottom and hidden-sector rules.",
+          "scale_or_rectification_dependency": "Depends on I10-001-A endpoint rectification.",
+          "topology_implication": "All components share one stable ground-centered frame.",
+          "known_risk": "The visual mass center may not coincide with the interpreted datum.",
+          "candidate_assessment": "recommended"
+        },
+        {
+          "id": "I10-009-B",
+          "label": "C-001 visual-center pivot",
+          "proposed_rule": "Place the origin at a visually estimated center of the monolith footprint and project it to Z=0.",
+          "visible_source_effect": "None directly.",
+          "hidden_surface_effect": "Changes all component coordinate offsets.",
+          "scale_or_rectification_dependency": "Requires an unapproved visual-center estimate.",
+          "topology_implication": "Monolith-centered rather than support-centered assembly.",
+          "known_risk": "Uses the exact center type Step 08R proved absent.",
+          "candidate_assessment": "not_recommended_unapproved_center"
+        },
+        {
+          "id": "I10-009-BLOCK",
+          "label": "Leave blocked",
+          "proposed_rule": null,
+          "visible_source_effect": "None.",
+          "hidden_surface_effect": "No shared frame.",
+          "scale_or_rectification_dependency": "No selection.",
+          "topology_implication": "Step 11 coordinate and pivot planning remain blocked.",
+          "known_risk": "No stable export or Unreal placement convention.",
+          "candidate_assessment": "available_required_block_option"
+        }
+      ],
+      "candidate_recommendation": "I10-009-A",
+      "recommendation_reason": "It uses authoritative dimension roles and the ground station while honestly classifying the midpoint as interpretation.",
+      "diagram_required": false,
+      "flamestrike_decision": "pending",
+      "approved_rule": null
+    },
+    {
+      "id": "I10-010",
+      "title": "Source-view ownership for transition and unowned sectors",
+      "blueprint_unknown_classes": ["sectors_not_owned_by_visible_source_view"],
+      "scope": "whole-asset visible and transition surface ownership",
+      "covered_inherited_ids": [],
+      "new_gap_id": "I10-VIEW-OWNERSHIP-001",
+      "source_owned_facts": [
+        "front normal owner is -Y, back is +Y, left is -X, right is +X, and top is +Z",
+        "the perspective panel is non-metric corroboration only",
+        "cross-panel physical pixel pairing is absent"
+      ],
+      "blocked_fact": "No source record defines which panel owns corner transitions or other multi-view overlap sectors.",
+      "required_for_360_geometry": true,
+      "downstream_step_11_dependency": "Every planned visible surface needs one evidence or interpretation owner.",
+      "options": [
+        {
+          "id": "I10-010-A",
+          "label": "Dominant-normal orthographic ownership",
+          "proposed_rule": "Assign each visible surface sector to the approved orthographic panel whose normal-owner axis has the largest absolute component of the intended outward normal: front -Y, back +Y, left -X, right +X, top +Z. At exact ties, classify the sector as a transition owned jointly by the two adjacent decision items and construct it only through the explicit interpolation rule approved for that component. The perspective panel may flag visual conflict but supplies no metric coordinate.",
+          "visible_source_effect": "Keeps every principal face tied to its matching panel.",
+          "hidden_surface_effect": "Does not own the bottom; I10-007 controls it.",
+          "scale_or_rectification_dependency": "Depends on I10-001-A and component-specific transition rules.",
+          "topology_implication": "Provides deterministic ownership without pixel pairing.",
+          "known_risk": "Tie sectors need careful Step 11 seam placement to avoid a visible crease.",
+          "candidate_assessment": "recommended"
+        },
+        {
+          "id": "I10-010-B",
+          "label": "Fixed panel priority order",
+          "proposed_rule": "Resolve every overlap using the order front, back, left, right, then top regardless of surface orientation.",
+          "visible_source_effect": "Can let a less relevant panel override a face's normal-owner view.",
+          "hidden_surface_effect": "Does not resolve the bottom.",
+          "scale_or_rectification_dependency": "Simple but arbitrary.",
+          "topology_implication": "Deterministic yet directionally biased ownership.",
+          "known_risk": "Systematic source drift on side and top sectors.",
+          "candidate_assessment": "not_recommended_arbitrary_priority"
+        },
+        {
+          "id": "I10-010-BLOCK",
+          "label": "Leave blocked",
+          "proposed_rule": null,
+          "visible_source_effect": "None.",
+          "hidden_surface_effect": "Transition sectors remain ownerless.",
+          "scale_or_rectification_dependency": "No selection.",
+          "topology_implication": "Step 11 cannot map every surface to authority.",
+          "known_risk": "Silent view selection could enter later construction.",
+          "candidate_assessment": "available_required_block_option"
+        }
+      ],
+      "candidate_recommendation": "I10-010-A",
+      "recommendation_reason": "It extends the approved Step 05 normal-owner axes into a deterministic interpretation without promoting cross-panel pixel pairs.",
+      "diagram_required": false,
+      "flamestrike_decision": "pending",
+      "approved_rule": null
+    }
+  ],
+  "coverage_summary": {
+    "decision_items": 10,
+    "covered_inherited_ids": 52,
+    "covered_inherited_unique_ids": 52,
+    "duplicate_coverage_ids": 0,
+    "inherited_calibration_and_cross_view_disagreements": 24,
+    "physical_correspondence_blocks": 7,
+    "closure_and_center_blocks": 6,
+    "semantic_unknowns": 9,
+    "occluded_sectors": 3,
+    "contact_hidden_closure_subjects": 3,
+    "new_blueprint_gap_items": 3,
+    "blueprint_unknown_classes_required": 6,
+    "blueprint_unknown_classes_covered": 6,
+    "uncovered_required_ids": [],
+    "approved_rules": 0,
+    "pending_flamestrike_decisions": 10
+  },
+  "assumptions_or_interpretations": [
+    "All proposed rules and recommendations in this registry are candidate interpretation only and have no authority before Flamestrike decision."
+  ],
+  "rectification_executed": false,
+  "diagram_created": false,
+  "geometry_created": false,
+  "production_artifact_created": false,
+  "flamestrike_output_decisions": "pending"
+}

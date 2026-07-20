@@ -1,0 +1,46 @@
+{
+  "schema": "aerathea.s10r_006_a_boundary_compatibility_technical_gate_a01_dependency_audit.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-006-A-BCTG-A01",
+  "date": "2026-07-17",
+  "status": "dependencies_registered_boundary_common_frame_authority_missing",
+  "artifact_classification": "authoritative for bounded S10R-006-A audit routing only",
+  "approved_conditional_rule": {
+    "id": "S10R-006-A",
+    "decision_status": "approved_conditional_interpretation_rule",
+    "decision_registry_result": "approved_conditional_S10R006A_no_field_created",
+    "implementation_authorized": false
+  },
+  "dependencies": [
+    {
+      "id": "S10R-002-A",
+      "status": "approved_rule_available_not_implemented",
+      "authority_available": true,
+      "scope": "construction-origin centered target-frame interpretation only; no source placement center or pivot"
+    },
+    {
+      "id": "S10R-003-A",
+      "status": "approved_bounded_mapping_available",
+      "authority_available": true,
+      "scope": "K80 plus exact sixteen-record top CL-003 target mapping only"
+    },
+    {
+      "id": "S10R-004-A",
+      "status": "approved_bounded_owner_view_traces_available",
+      "authority_available": true,
+      "scope": "26 exact trace formulas inside declared source owner-view sectors only"
+    },
+    {
+      "id": "S10R-005-A",
+      "status": "approved_bounded_with_join_exclusions",
+      "authority_available": true,
+      "scope": "adjacent-trace ruled strips inside owner-view sectors; cross-view and top/upright joins excluded"
+    }
+  ],
+  "dependency_rule_count": 4,
+  "dependency_rule_authority_available_count": 4,
+  "dependency_implementation_count": 0,
+  "remaining_required_gate": "exact common-frame authority and agreement at every registered trace boundary",
+  "field_samples_created": 0,
+  "source_or_prior_authority_modified": false
+}

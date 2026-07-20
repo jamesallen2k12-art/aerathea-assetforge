@@ -1,0 +1,92 @@
+{
+  "schema": "aerathea.s10r_006_r9_a_git_rollback_closeout_a01_scope.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "closeout_id": "A005-GIT-S10R-006-R9-A-ROLLBACK-A01",
+  "date": "2026-07-20",
+  "status": "authoritative_scoped_git_rollback_closeout_authority",
+  "artifact_classification": "authoritative",
+  "authority": {
+    "approver": "Flamestrike",
+    "statement": "I am granting you the authority you need to proceed uninterrupted to a clean Git rollback point Please proceed with my approval",
+    "approved_goal": "create and verify a dependency-complete pushed Git rollback anchor for the current A005 authority chain",
+    "scope_interpretation": "preserve unrelated user work and exclude it from the commit rather than sweeping the mixed worktree into the rollback anchor",
+    "staging_authorized": true,
+    "commit_authorized": true,
+    "push_authorized": true
+  },
+  "controlling_asset_boundary": {
+    "status": "S10R-006-R9-A bounded symbolic corner-gap-to-field coupling rule approved exactly as registered",
+    "rule_id": "S10R-006-R9-A-CGFC-A01",
+    "rule_evaluation_authorized": false,
+    "rule_implementation_authorized": false,
+    "next_production_task": "Core reassessment",
+    "git_closeout_is_production_authority": false
+  },
+  "git_target": {
+    "branch": "main",
+    "remote": "assetforge",
+    "remote_branch": "main",
+    "base_head": "f5259456b05a95ff5f7422ba2cabf0e288a85d03",
+    "base_remote_head": "f5259456b05a95ff5f7422ba2cabf0e288a85d03"
+  },
+  "core_reassessment": {
+    "last_pushed_authority": "approved Step 09 exact-data audit",
+    "uncommitted_authority_range": "post-Step-09 through approved S10R-006-R9-A decision closeout",
+    "a005_changed_path_count_before_closeout_records": 208,
+    "a005_current_file_bytes_before_closeout_records": 13303466,
+    "a005_json_files_validated": 111,
+    "a005_support_scripts_ast_validated": 19,
+    "largest_scoped_file_bytes": 1995839,
+    "secret_indicator_matches": 0,
+    "staged_paths_before_closeout": 0,
+    "decision": "commit the dependency-complete A005 authority history rather than an isolated R9 subset"
+  },
+  "included_scope": {
+    "exact_files": [
+      "AGENTS.md",
+      "docs/projects/assetforge/DRIFT_LEDGER.md"
+    ],
+    "exact_directory": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005",
+    "a005_support_scripts": [
+      "Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r003_mapping_a01.py",
+      "Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r003_mapping_decision_closeout_a01.py",
+      "Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r006_r1_a_bridge_decision_closeout_a01.py",
+      "Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r006_r1_a_normalized_primary_owner_bridge_a01.py",
+      "Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r006_r2_a_post_bridge_field_authority.py",
+      "Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r006_r3_a_abstract_field_method_a01.py",
+      "Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r006_r4_a_lane_boundary_coupling_authority.py",
+      "Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r006_r5_a_lane_boundary_coupling_rule_a01.py",
+      "Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r006_r6_a_cross_view_corner_ownership_authority.py",
+      "Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r006_r7_a_cross_view_corner_ownership_rule_a01.py",
+      "Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r006_r8_a_post_r7_core_routing_authority.py",
+      "Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r006_r8_r1_a_visibility_recovery.py",
+      "Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r006_r8_r2_a_gate10_wording_correction.py",
+      "Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r006_r9_a_corner_gap_to_field_coupling_rule_a01.py",
+      "Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r006a_boundary_compatibility_a01.py",
+      "Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r006a_decision_closeout_a01.py",
+      "Tools/DCC/build_bloodaxe_cairnstone_a005_s10r003_mapping_a01.py",
+      "Tools/DCC/build_bloodaxe_cairnstone_a005_s10r006_r1_a_normalized_primary_owner_bridge_a01.py",
+      "Tools/DCC/build_bloodaxe_cairnstone_a005_s10r006a_boundary_compatibility_a01.py"
+    ]
+  },
+  "excluded_scope": [
+    "docs/projects/assetforge/RECOVERY_JOURNAL.md and Saved/ProjectRecovery remain local/global recovery evidence and follow the approved Step 09 exclusion precedent",
+    "generic workflow and pipeline documents other than the exact approved AGENTS.md authority",
+    "A001 through A004 asset records, tools, DCC sources, exports, textures, Unreal assets, and maps",
+    "all non-A005 assets, training artifacts, narrative files, and unrelated project work",
+    "Saved/AssetForgeResearch, Tools/External, Tools/Blender, .codex, and every other local-only path",
+    "all evaluation, field implementation, seam, join, closure, surface, topology, geometry, DCC, and Unreal work"
+  ],
+  "expected_phase_one_staged_path_count": 232,
+  "required_validation": [
+    "every staged path is inside included_scope",
+    "every included A005 path and all nineteen exact scripts are staged",
+    "all staged JSON parses",
+    "all staged Python parses as AST",
+    "git diff --cached --check either passes without output or reports only byte-preserved, hash-referenced historical blank-line-at-EOF exceptions explicitly recorded in the closeout validation",
+    "no secret indicator is present",
+    "no local-only or excluded path is staged",
+    "the R9 approved rule remains unevaluated and unimplemented",
+    "the scoped commit is pushed to assetforge/main and the remote hash is verified"
+  ]
+}

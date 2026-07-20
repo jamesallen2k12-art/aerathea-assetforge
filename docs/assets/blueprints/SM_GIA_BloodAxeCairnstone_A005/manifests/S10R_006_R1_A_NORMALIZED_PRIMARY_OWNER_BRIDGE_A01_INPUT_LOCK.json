@@ -1,0 +1,112 @@
+{
+  "schema": "aerathea.s10r_006_r1_a_normalized_primary_owner_bridge_a01_input_lock.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-006-R1-A-NPOB-EXEC-A01",
+  "date": "2026-07-17",
+  "executed_at": "2026-07-17T17:47:19-04:00",
+  "status": "locked_inputs_match_before_bridge_outputs",
+  "artifact_classification": "proof only",
+  "flamestrike_execution_approval": "I approve it",
+  "approval_scope": "twelve-record normalized mapping, fourteen-record holdout audit, independent validation, unfilled visible review, mandatory stop, no field, geometry, downstream work, staging, commit, or push",
+  "pre_action_checkpoint": "Saved/ProjectRecovery/20260717-174106/",
+  "immutable_input_hashes": {
+    "AGENTS.md": {
+      "expected_sha256": "5d2d2637a58113f0a6f5ec92e40d8bb2bda9e03fb58b4868a0d9dfbb3b57ad55",
+      "actual_sha256": "5d2d2637a58113f0a6f5ec92e40d8bb2bda9e03fb58b4868a0d9dfbb3b57ad55",
+      "match": true
+    },
+    "docs/projects/assetforge/BLOODAXE_CAIRNSTONE_PIXEL_EXACT_FRESH_START_MULTISTEP_PLAN.md": {
+      "expected_sha256": "ba6784498d792dc85dd431c807f59620d6851af97b4cd15efe89c44a397b10b6",
+      "actual_sha256": "ba6784498d792dc85dd431c807f59620d6851af97b4cd15efe89c44a397b10b6",
+      "match": true
+    },
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_05_PIXEL_COORDINATE_FRAME_RECORD.json": {
+      "expected_sha256": "ccfce6b8316369b512ff83eee11fd4385dd15b546f7b92da9e80b9e7ed959d1d",
+      "actual_sha256": "ccfce6b8316369b512ff83eee11fd4385dd15b546f7b92da9e80b9e7ed959d1d",
+      "match": true
+    },
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_05_ORIENTATION_REGISTRATION_MANIFEST.json": {
+      "expected_sha256": "b7efa865e8b82f63e714d36ed4935fc02515ecc3f4d355941467f20b49348395",
+      "actual_sha256": "b7efa865e8b82f63e714d36ed4935fc02515ecc3f4d355941467f20b49348395",
+      "match": true
+    },
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_10R_N3_INTEGRATION_DECISION_REGISTRY.json": {
+      "expected_sha256": "f60634468c2d820e230da0a847a181be90893411c3e7838283eb61730e7d37e5",
+      "actual_sha256": "f60634468c2d820e230da0a847a181be90893411c3e7838283eb61730e7d37e5",
+      "match": true
+    },
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_10R_N3_TRANSITION_INTEGRATION_OPTION_REGISTRY.json": {
+      "expected_sha256": "3143f233c471c823693d8539f7abf7478340bdcfdd3eef871f68cabc7ca3728f",
+      "actual_sha256": "3143f233c471c823693d8539f7abf7478340bdcfdd3eef871f68cabc7ca3728f",
+      "match": true
+    },
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/C004_BOUNDARY_TRANSITION_INTERPRETATION_RULE_A01_PER_VIEW_LEDGER.json": {
+      "expected_sha256": "c30fe9e7ae2c623122865102b16922931e42e87e2a3bfadb145cbe73f4861113",
+      "actual_sha256": "c30fe9e7ae2c623122865102b16922931e42e87e2a3bfadb145cbe73f4861113",
+      "match": true
+    },
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/S10R_003_A_CL003_TARGET_SPACE_MAPPING_A01_DECISION_REGISTRY.json": {
+      "expected_sha256": "05ddf7d67cbed5bca4eb32ec749767b43f74af69bcc77f556e08cec5fb288ff2",
+      "actual_sha256": "05ddf7d67cbed5bca4eb32ec749767b43f74af69bcc77f556e08cec5fb288ff2",
+      "match": true
+    },
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/S10R_006_A_BOUNDARY_COMPATIBILITY_TECHNICAL_GATE_A01_DECISION_REGISTRY.json": {
+      "expected_sha256": "609a912568ccea01f65a4ec6060c53a97b93679d5a647125bed835bd9b28759b",
+      "actual_sha256": "609a912568ccea01f65a4ec6060c53a97b93679d5a647125bed835bd9b28759b",
+      "match": true
+    },
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/S10R_006_A_BOUNDARY_COMPATIBILITY_TECHNICAL_GATE_A01_REMAINING_BLOCKS.json": {
+      "expected_sha256": "5d3458789dd0317d66493b137225dcd604d05ff5c73483b4df8946bea453eb07",
+      "actual_sha256": "5d3458789dd0317d66493b137225dcd604d05ff5c73483b4df8946bea453eb07",
+      "match": true
+    },
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/S10R_006_R1_A_NORMALIZED_PRIMARY_OWNER_BRIDGE_DECISION_REGISTRY.json": {
+      "expected_sha256": "14961845f35c2005b727cea46b19a378db9b79432da0b930c1872e68bf1a63b7",
+      "actual_sha256": "14961845f35c2005b727cea46b19a378db9b79432da0b930c1872e68bf1a63b7",
+      "match": true
+    },
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/S10R_006_R1_A_NORMALIZED_PRIMARY_OWNER_BRIDGE_EXECUTION_CONTRACT.md": {
+      "expected_sha256": "7d7ff2c0ea7a556599b89bd0bb7e01f501e59cdf77bbcef4cb8b58b48f03e69f",
+      "actual_sha256": "7d7ff2c0ea7a556599b89bd0bb7e01f501e59cdf77bbcef4cb8b58b48f03e69f",
+      "match": true
+    },
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_RESET_RESUME_STATE.md": {
+      "expected_sha256": "e7d87db50299c32db4bf246e9a70a5e2017bf39522f7478aebd333f451b26839",
+      "actual_sha256": "e7d87db50299c32db4bf246e9a70a5e2017bf39522f7478aebd333f451b26839",
+      "match": true
+    },
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_APPROVAL_LOG.md": {
+      "expected_sha256": "48b58a1770db4326c6e95d069e94943f9003dd37516da8bbca853ce6f6ed6f3b",
+      "actual_sha256": "48b58a1770db4326c6e95d069e94943f9003dd37516da8bbca853ce6f6ed6f3b",
+      "match": true
+    },
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_ARTIFACT_INDEX.md": {
+      "expected_sha256": "84c80d34051ade347fb37282fb73cc304a1f3a1c3689a4747acd098697094dd3",
+      "actual_sha256": "84c80d34051ade347fb37282fb73cc304a1f3a1c3689a4747acd098697094dd3",
+      "match": true
+    },
+    "Saved/ProjectRecovery/20260717-174106/git_status_short.txt": {
+      "expected_sha256": "fc441f44c5b1256afe5a436b6c5b4b9fde5a7d482d7ddac886483bc4c24faf7f",
+      "actual_sha256": "fc441f44c5b1256afe5a436b6c5b4b9fde5a7d482d7ddac886483bc4c24faf7f",
+      "match": true
+    }
+  },
+  "hash_match_count": 16,
+  "hash_mismatch_count": 0,
+  "git_state": {
+    "branch": "main",
+    "head": "f5259456b05a95ff5f7422ba2cabf0e288a85d03",
+    "assetforge_main": "f5259456b05a95ff5f7422ba2cabf0e288a85d03",
+    "staged_path_count": 0
+  },
+  "pre_output_authority_counts": {
+    "physical_source_target_transforms": 0,
+    "physical_cross_view_pairs": 0,
+    "target_trace_coordinates": 0,
+    "field_samples": 0,
+    "fills": 0,
+    "surfaces": 0,
+    "topology": 0,
+    "geometry": 0
+  }
+}

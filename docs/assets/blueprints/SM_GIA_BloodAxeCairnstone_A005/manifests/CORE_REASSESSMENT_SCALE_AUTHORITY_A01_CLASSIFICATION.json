@@ -1,0 +1,114 @@
+{
+  "schema": "aerathea.core_reassessment_scale_authority_classification.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-SA-A01",
+  "date": "2026-07-16",
+  "status": "approved_core_reassessment_drift_confirmed",
+  "artifact_classification": "authoritative for recovery routing only",
+  "output_approval": {
+    "approver": "Flamestrike",
+    "statement": "approved",
+    "date": "2026-07-16",
+    "authority_effect": "field-level recovery routing and status override only",
+    "post_decision_checkpoint": "Saved/ProjectRecovery/20260716-111546"
+  },
+  "approved_historical_role": {
+    "choice": "A005-CR-ROLE-A",
+    "meaning": "retrospective_source_role_correction",
+    "decision": "The six printed centimeter labels were intended as approximate production targets. Treating them as exact per-view pixel calibrators was a misunderstanding of the original source role.",
+    "production_authority_created": false
+  },
+  "core_result": {
+    "drift_confirmed": true,
+    "drift_type": "source_role_and_calibration_premise_drift",
+    "last_whole_step_unaffected_boundary": "STEP_04R recovered source-visible component and contact inventory",
+    "last_whole_step_unaffected_boundary_reason": "Step 04R records source identity, visible semantic ownership, discrete source pixels, and blocked unknowns without performing physical-dimension calibration.",
+    "mixed_boundary": "STEP_05",
+    "mixed_boundary_result": "Step 05 is not invalid as a whole. Pixel convention, panel coordinate spaces, world-axis meanings, view normals, source orientation marks, semantic IDs, and blocked physical correspondence remain valid. Its future units policy and any exact-centimeter interpretation of labeled stations require override.",
+    "first_affected_action": "STEP_06 front/back calibration",
+    "first_affected_authorized_rule": "steps/STEP_06_CONTRACT.md lines 78-81: calibrate from source-authored dimension endpoints with cm_per_px = declared_real_span_cm / pixel_span",
+    "first_affected_output_fields": [
+      "manifests/STEP_06_FRONT_CALIBRATION_RECORD.json /observations/*/declared_real_span_cm as exact premise",
+      "manifests/STEP_06_FRONT_CALIBRATION_RECORD.json /observations/*/cm_per_px_exact",
+      "manifests/STEP_06_FRONT_CALIBRATION_RECORD.json /observations/*/cm_per_px_decimal",
+      "manifests/STEP_06_BACK_CALIBRATION_RECORD.json equivalent fields"
+    ],
+    "causal_assumption": "The process assumed the printed values were exact real spans suitable for independent panel calibration before proving cross-view scale and projection coherence.",
+    "repair_forward_blocked": true
+  },
+  "preserved_authority": {
+    "source_and_scanline": "unaffected_authority",
+    "step_03_lossless_panels_and_crop_formulas": "unaffected_authority",
+    "source_authored_annotation_pixels_text_and_endpoints": "valid_raw_evidence_only",
+    "six_printed_dimension_values": "valid_approximate_target_evidence_only",
+    "step_04r_semantic_inventory_and_exact_discrete_contacts": "unaffected_authority within existing recovery bounds",
+    "step_05_pixel_convention_axes_view_normals_and_orientation_marks": "unaffected_authority at named fields",
+    "step_06_through_step_08r_integer_pixel_coordinates_spans_visible_rows_and_contacts": "valid_raw_evidence_only at named fields",
+    "step_09_source_hash_lineage_and_provenance": "unaffected_authority",
+    "step_09_semantic_cross_view_groups": "valid semantic role evidence only; no exact centimeter station or physical pixel pairing added",
+    "existing_blocked_findings": "unaffected_authority where they state that unified scales, world conversion, centers, closure, correspondence, interpretation, or geometry do not exist"
+  },
+  "superseded_or_recovery_bound_authority": {
+    "step_05_units_policy": "reference_only_pending_recovery",
+    "step_06_front_back_exact_calibration_premises_and_cm_per_px_results": "superseded_world_or_calibration_conclusion",
+    "step_07_left_right_exact_calibration_premises_and_cm_per_px_results": "superseded_world_or_calibration_conclusion",
+    "step_08r_top_exact_calibration_premises_and_cm_per_px_results": "superseded_world_or_calibration_conclusion",
+    "step_06_through_step_08r_expected_or_world_centimeter_values_derived_from_those_calibrations": "reference_only_pending_recovery",
+    "step_09_direct_dimension_authority_as_exact_construction_scale": "superseded_world_or_calibration_conclusion",
+    "step_09_claim_that_twenty_formulas_form_valid_exact_calibration observations": "formula replay remains historical evidence; calibration authority is superseded",
+    "step_09_integrated_authority_and downstream handoff": "partial mixed record requires this override; valid raw evidence is preserved and Step 10 routing is stopped",
+    "root status_index_log summaries that repeat exact dimension authority": "reference_only_pending_recovery at affected headings",
+    "pending_step_10_package": "candidate_step10_requires_revision"
+  },
+  "pending_step_10_result": {
+    "existing_candidate_files_modified": false,
+    "existing_decisions_approved": false,
+    "i10_001_effect": "Current dimension-locked recommendation conflicts with A005-SR-01-B and must be replaced by a later approved Step 10 revision contract.",
+    "i10_002_through_i10_010_effect": "Remain candidate and blocked; any dependency on exact printed bounds or I10-001-A requires revision or renewed review.",
+    "step_10_execution_status": "stopped_pending_scale_authority_recovery_and_revised_decision_surface",
+    "step_11_status": "unauthorized"
+  },
+  "approved_reassessment_direction_not_yet_production_authority": {
+    "dimension_role": "A005-SR-01-B approximate production targets",
+    "upright_owner_candidates": "A005-SR-02-A front X/Z and left Y/Z",
+    "top_relative_mapping_candidate": "A005-SR-03-A factor 1.1260059213 or +12.60059213 percent X relative to Y",
+    "transform_method_candidate": "A005-SR-04-A original-coordinate analytic transform with review-only derivative imagery",
+    "absolute_world_dimensions": null,
+    "transform_authorized": false,
+    "rectification_authorized": false,
+    "geometry_authorized": false
+  },
+  "record_universe": {
+    "pre_output_markdown_json_records": 101,
+    "direct_lexical_match_records": 70,
+    "field_or_line_matches_classified": 883,
+    "input_index": "manifests/CORE_REASSESSMENT_SCALE_AUTHORITY_A01_INPUT_INDEX.json",
+    "affected_record_index": "manifests/CORE_REASSESSMENT_SCALE_AUTHORITY_A01_AFFECTED_RECORD_INDEX.json",
+    "original_records_modified": 0
+  },
+  "artifact_classification_effect": {
+    "before_flamestrike_output_approval": "candidate override only; existing statuses remain current but all downstream scale-dependent action is stopped",
+    "after_flamestrike_output_approval": "authoritative for recovery routing and field-level authority override only",
+    "current_state": "authoritative for recovery routing and field-level authority override only",
+    "in_place_rewrite_performed": false,
+    "whole_file_invalidation_used_for_mixed_records": false
+  },
+  "smallest_sufficient_recovery": [
+    "Approve this reassessment output and field-level override.",
+    "Prepare a separate scale-authority recovery contract that chooses final production bounds and creates an original-coordinate global transform manifest.",
+    "Create and visibly review derivative normalized panels and distortion records under that later contract.",
+    "Rerun only affected centimeter/world and cross-view integration records while preserving raw pixel evidence.",
+    "Revise pending Step 10 item I10-001 and every dependent candidate option after transformed-frame approval.",
+    "Do not begin Step 11 until the revised Step 10 decision surface is approved."
+  ],
+  "blocked_actions": [
+    "rewrite existing Step 01-Step 10 records",
+    "promote A01 or A02 diagnostics to authority",
+    "apply source priority or top transform",
+    "choose absolute production dimensions",
+    "rectify source panels",
+    "revise Step 10",
+    "begin Step 11 or geometry",
+    "commit or push without separate closeout approval"
+  ]
+}

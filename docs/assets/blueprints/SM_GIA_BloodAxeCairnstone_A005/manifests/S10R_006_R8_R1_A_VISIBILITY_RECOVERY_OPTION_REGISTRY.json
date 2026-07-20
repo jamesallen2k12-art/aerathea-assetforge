@@ -1,0 +1,68 @@
+{
+  "schema": "aerathea.s10r_006_r8_r1_a_visibility_recovery_option_registry.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-006-R8-R1-A-VISREC-A01",
+  "date": "2026-07-20",
+  "status": "quarantined_first_complete_audit_gate_10_route_wording_failure",
+  "artifact_classification": "quarantined",
+  "recovery_provenance": {
+    "failed_attempt_status": "quarantined_visibility_gate_failure_no_candidate_surface_registered",
+    "failed_attempt_modified": false,
+    "recovery_scope": "visibility mechanics only",
+    "content_equivalence_result": "fail_closed_route_result_wording_not_exact"
+  },
+  "decision_question": "Which missing post-R7 authority should receive the next separate bounded rule-contract preparation route, or should the current no-field state remain blocked?",
+  "options": [
+    {"id": "S10R-006-R8-A", "label": "Corner-gap-to-field coupling first", "candidate_result": "later preparation only of one separate bounded corner-gap-to-field coupling rule contract", "selected": false, "recommended": true, "route_preparation_authorized": false, "rule_prepared": false, "rule_approved": false},
+    {"id": "S10R-006-R8-B", "label": "Top/upright join first", "candidate_result": "later preparation only of one separate bounded top/upright join rule contract", "selected": false, "recommended": false, "route_preparation_authorized": false, "rule_prepared": false, "rule_approved": false},
+    {"id": "S10R-006-R8-BLOCK", "label": "Preserve current no-field state", "candidate_result": "preserve the current approved symbolic records and no-field block", "selected": false, "recommended": false, "route_preparation_authorized": false, "rule_prepared": false, "rule_approved": false}
+  ],
+  "selection_record": {
+    "approver": null, "decision_statement": null, "selected_option": null,
+    "selected_option_count": 0, "selection_status": "blocked_no_candidate_surface_registered",
+    "recommendation_is_selection": false, "recommendation_is_authority": false
+  },
+  "recommendation": {
+    "option_id": "S10R-006-R8-A", "classification": "candidate interpretation only",
+    "selected": false, "authority": false,
+    "basis": "R7 supplies bounded symbolic owner labels over the four gaps while R5 supplies B_v/C_L coupling only over the four separated owned lane intervals; their missing symbolic connection is the smallest unresolved adjacency."
+  },
+  "preserved_authority": {
+    "r3_status": "approved_bounded_symbolic_method_no_field_coupling",
+    "r5_status": "approved_bounded_symbolic_rule_four_blocked_corner_gaps_unowned",
+    "r7_status": "approved_bounded_cross_view_corner_ownership_rule_registered_no_implementation",
+    "r5_owned_lane_count": 4, "r7_gap_owner_relation_count": 4,
+    "q_periodic": false, "q_unwrapped": true,
+    "r5_endpoint_ownership_changed": false, "r7_successor_at_tie_policy_changed": false,
+    "proof_only_holdout_count": 14
+  },
+  "active_blocks": [
+    {"id": "S10R-BLOCK-006", "status": "active_approved_cross_view_corner_ownership_rule_no_field_no_seam_no_join_no_closure"},
+    {"id": "S10R-BLOCK-008", "status": "active_unchanged"},
+    {"id": "S10R-BLOCK-009", "status": "active_unchanged"}
+  ],
+  "resolved_block_ids": [],
+  "definition_counts": {"candidate_surfaces": 1, "candidate_routes": 3, "selected_routes": 0, "candidate_recommendations": 1, "prepared_coupling_rules": 0, "approved_coupling_rules": 0, "prepared_join_rules": 0, "approved_join_rules": 0},
+  "output_counts": {"q_instances": 0, "u_instances": 0, "owner_instances": 0, "record_instances": 0, "samples": 0, "coordinates": 0, "transforms": 0, "physical_pairs": 0, "centers": 0, "pivots": 0, "anchors": 0, "seams": 0, "joins": 0, "closures": 0, "fields": 0, "fills": 0, "surfaces": 0, "topology": 0, "geometry": 0},
+  "authorization_flags": {
+    "candidate_decision_surface_registered": false, "route_selected": false,
+    "gap_coupling_contract_preparation_authorized": false, "top_upright_contract_preparation_authorized": false,
+    "coupling_rule_preparation_authorized": false, "coupling_rule_approval_authorized": false,
+    "join_rule_preparation_authorized": false, "join_rule_approval_authorized": false,
+    "rule_evaluation_authorized": false, "field_implementation_authorized": false,
+    "step10_closeout_authorized": false, "step11_authorized": false,
+    "dcc_authorized": false, "unreal_authorized": false, "production_authorized": false,
+    "staging_authorized": false, "commit_authorized": false, "push_authorized": false
+  },
+  "execution_failure": {
+    "technical_result": "blocked_R8_visibility_recovery_dependency_or_liveness_failure",
+    "complete_audit_ordinal": 1,
+    "auditor_result": "21_of_22_passed",
+    "failed_gate": 10,
+    "failed_subject": "fresh registry contains exactly R8-A R8-B and R8-BLOCK with exact wording",
+    "candidate_surface_registered": false,
+    "route_selection_permitted": false,
+    "rerun_performed": false
+  },
+  "required_stop": "Stop for separate Core reassessment of the Gate 10 route-result wording failure. Do not repair or rerun in this execution task."
+}

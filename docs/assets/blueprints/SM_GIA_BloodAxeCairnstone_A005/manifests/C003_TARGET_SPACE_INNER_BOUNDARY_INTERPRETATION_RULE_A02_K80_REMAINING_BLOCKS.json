@@ -1,0 +1,83 @@
+{
+  "schema": "aerathea.c003_target_space_inner_boundary_interpretation_rule_a02_k80_remaining_blocks.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-C003-TSIB-A02-K80-DC-A01",
+  "date": "2026-07-17",
+  "status": "K80_boundary_authority_approved_mapping_and_downstream_work_blocked",
+  "artifact_classification": "authoritative for post-K80 blocked routing only",
+  "routing_delta": {
+    "historical_S10R_BLOCK_003": {
+      "historical_record_changed": false,
+      "missing_boundary_condition": "resolved_at_bounded_rule_authority_level_by_K80",
+      "mapping_implementation_status": "not_implemented",
+      "target_CL003_coordinate_count": 0
+    }
+  },
+  "active_blocks": [
+    {
+      "id": "C003-TSIB-A02-K80-BLOCK-001",
+      "subject": "S10R-003-A mapping execution",
+      "blocked_fact": "K80 is approved only as the abstract target boundary. No CL-003 sample has been mapped and no target coordinate exists.",
+      "blocked_consumers": [
+        "I10-003",
+        "I10-006",
+        "S10R-006-A"
+      ],
+      "status": "active_mapping_execution_not_approved"
+    },
+    {
+      "id": "S10R-BLOCK-006",
+      "subject": "S10R-006-A normalized ruled field",
+      "blocked_fact": "No S10R-003-A mapping or target CL-003 coordinates exist, and the separately declared S10R-006-A technical gates have not executed.",
+      "blocked_consumers": [
+        "I10-004",
+        "I10-006",
+        "I10-007",
+        "I10-008",
+        "Step 10 closeout"
+      ],
+      "status": "active_conditional_dependency"
+    },
+    {
+      "id": "S10R-BLOCK-008",
+      "subject": "historical Step 10 decision set",
+      "blocked_fact": "Historical Step 10 items not resolved by the bounded Step 10R and K80 decisions remain pending.",
+      "blocked_consumers": [
+        "Step 10 closeout",
+        "Step 11"
+      ],
+      "status": "active_prior_step10_decisions_pending"
+    },
+    {
+      "id": "S10R-BLOCK-009",
+      "subject": "global production authority",
+      "blocked_fact": "No filled footprint, source center, pivot, implemented field, topology, surface, or geometry authority exists.",
+      "blocked_consumers": [
+        "DCC",
+        "Unreal",
+        "production"
+      ],
+      "status": "active_global_production_block"
+    }
+  ],
+  "preserved_unknowns": [
+    "CL-003 target coordinates",
+    "source-to-target arc spacing",
+    "physical cross-view correspondence",
+    "CL-002 closure",
+    "C-003 annulus and hidden interfaces",
+    "source center, pivot, and placement",
+    "continuous transition field",
+    "surface, topology, and geometry",
+    "remaining historical Step 10 decisions"
+  ],
+  "next_gate": {
+    "status": "preparation_only_after_mandatory_restart",
+    "name": "separate S10R-003-A CL-003 target-space mapping execution contract",
+    "execution_authorized": false
+  },
+  "step10_closeout": "blocked",
+  "step11": "blocked",
+  "production": "blocked",
+  "staging_commit_push": "not_authorized"
+}

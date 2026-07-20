@@ -1,0 +1,111 @@
+{
+  "schema": "aerathea.assetforge.core_recovery.drift_record.v1",
+  "record_id": "A005-C003-TSIB-A01-DRIFT-A01",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "created_at": "2026-07-17T14:22:00-04:00",
+  "artifact_status": "authoritative recovery record",
+  "core_recovery_status": "stopped",
+  "scope": {
+    "contract_id": "A005-CR-C003-TSIB-A01",
+    "gate": "C-003 target-space inner-boundary interpretation rule",
+    "authorized_execution_scope": "generate and visibly present three proof-only options, then stop for K90/K80/K70/leave-blocked",
+    "execution_result": "fail_closed_before_curve_calculation"
+  },
+  "last_known_core_valid_state": {
+    "production_authority": "approved Step 10R stop state",
+    "resume_checkpoint": "Saved/ProjectRecovery/20260717-125240/",
+    "pre_execution_checkpoint": "Saved/ProjectRecovery/20260717-140335/",
+    "checkpoint_caveat": "The pre-execution checkpoint preserves the production state but does not validate the already prepared A01 candidate contract.",
+    "approved_step_10r_decision_count": 7,
+    "conditional_unimplemented_decisions": [
+      "S10R-003-A",
+      "S10R-006-A"
+    ],
+    "active_blocks": [
+      "S10R-BLOCK-003",
+      "S10R-BLOCK-006",
+      "S10R-BLOCK-008",
+      "S10R-BLOCK-009"
+    ]
+  },
+  "drift": {
+    "detected_at": "2026-07-17T14:19:00-04:00",
+    "detection_method": "fail-closed pre-calculation input hash validation followed by direct sha256sum verification",
+    "first_drift_action": "manual SHA-256 transcription into the A01 candidate contract",
+    "root_cause": "The A005 approval-log hash was copied with 2dff where the unchanged machine-verified digest contains 2d5f, then propagated into the A01 input lock.",
+    "incorrect_sha256": "704feb4ba6ae2dff26f575a54f660e82737d5b490e2cb3e4ada3fdd05caf0b18",
+    "machine_verified_sha256": "704feb4ba6ae2d5f26f575a54f660e82737d5b490e2cb3e4ada3fdd05caf0b18",
+    "source_changed": false,
+    "source_path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_APPROVAL_LOG.md",
+    "assumption": "A manually copied digest was treated as exact authority without an independent character-for-character comparison before execution approval."
+  },
+  "affected_artifacts": [
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/C003_TARGET_SPACE_INNER_BOUNDARY_INTERPRETATION_RULE_A01_CONTRACT.md",
+      "sha256_at_detection": "763f9840a8e2dff26d98ea69666887f71d4bd14e44aad5924e8b1af14f138f6e",
+      "status": "quarantined",
+      "reason": "The approved execution boundary contains the incorrect approval-log digest."
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/C003_TARGET_SPACE_INNER_BOUNDARY_INTERPRETATION_RULE_A01_INPUT_LOCK.json",
+      "sha256_at_detection": "900e8add4932342d4dcca727d9ab43915a8b164e5231285f26aef80968ff292a",
+      "status": "invalid",
+      "reason": "The lock records the same incorrect digest as both expected and current."
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/C003_TARGET_SPACE_INNER_BOUNDARY_INTERPRETATION_RULE_A01_OPTION_REGISTRY.json",
+      "sha256_at_detection": "b003e158465d155bd8433269844d1f38b37467c371a519f6602027cb8241b0b4",
+      "status": "quarantined",
+      "reason": "The registry depends on the invalid input lock."
+    },
+    {
+      "path": "Saved/AssetForgeResearch/A005_C003TargetSpaceInnerBoundaryInterpretationRule_A01/build_c003_tsib_a01.py",
+      "status": "reference only",
+      "reason": "Local-only scaffolding; it correctly stopped before calculations because its input preflight failed."
+    }
+  ],
+  "preservation": {
+    "affected_tracked_artifacts_must_remain_byte_identical": true,
+    "move_required": false,
+    "quarantine_is_recorded_in_place": true,
+    "recovery_checkpoint": "Saved/ProjectRecovery/20260717-141933/"
+  },
+  "not_created": [
+    "C003_TARGET_SPACE_INNER_BOUNDARY_INTERPRETATION_RULE_A01_CURVE_LEDGER.json",
+    "SM_GIA_BloodAxeCairnstone_A005_C003_TARGET_SPACE_INNER_BOUNDARY_INTERPRETATION_RULE_A01_REVIEW_BOARD.png",
+    "C003_TARGET_SPACE_INNER_BOUNDARY_INTERPRETATION_RULE_A01_VALIDATION.json",
+    "C003_TARGET_SPACE_INNER_BOUNDARY_INTERPRETATION_RULE_A01_OUTPUT_RECORD.md",
+    "C003_TARGET_SPACE_INNER_BOUNDARY_INTERPRETATION_RULE_A01_TO_RULE_SELECTION_HANDOFF.md",
+    "boundary candidates",
+    "mapping",
+    "coordinate placement",
+    "fills",
+    "fields",
+    "geometry"
+  ],
+  "authority_impact": {
+    "source_evidence_changed": false,
+    "prior_step_10r_authority_changed": false,
+    "c003_target_space_inner_boundary_selected": false,
+    "s10r_003_a_implemented": false,
+    "step_10r_closed": false,
+    "production_advanced": false
+  },
+  "recovery_decision": {
+    "a01_execution": "stopped_permanently",
+    "repair_a01_forward": false,
+    "smallest_sufficient_recovery": "After separate Flamestrike approval, prepare only a fresh A005-CR-C003-TSIB-A02 contract with mechanically verified hashes and A02-specific output paths.",
+    "a02_preparation_authorized": false,
+    "a02_execution_authorized": false
+  },
+  "approval_state": {
+    "a01_preparation": "approved",
+    "a01_execution_exactly_as_written": "approved_but_stopped_by_core_recovery",
+    "a02_preparation": "not_requested_at_record_creation",
+    "a02_execution": "not_authorized",
+    "step_10r_closeout": "not_authorized",
+    "geometry": "not_authorized",
+    "stage_commit_push": "not_authorized"
+  },
+  "kaizen_control": "Populate and compare exact input hashes mechanically before presenting an execution contract; do not manually transcribe digests into an execution authority record."
+}

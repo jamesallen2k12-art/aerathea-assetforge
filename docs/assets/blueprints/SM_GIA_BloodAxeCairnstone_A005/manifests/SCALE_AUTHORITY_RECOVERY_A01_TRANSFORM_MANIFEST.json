@@ -1,0 +1,401 @@
+{
+  "schema": "aerathea.scale_authority_recovery_transform_manifest.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-SAR-A01",
+  "date": "2026-07-17",
+  "status": "candidate_global_transform_package_with_explicit_source_target_block",
+  "artifact_classification": "candidate",
+  "execution_approval": {
+    "approver": "Flamestrike",
+    "statement": "approved",
+    "date": "2026-07-17",
+    "choice": "A005-SAR-BOUNDS-A"
+  },
+  "input_lock": {
+    "path": "manifests/SCALE_AUTHORITY_RECOVERY_A01_INPUT_LOCK.json",
+    "sha256": "cb8d740dc2bd9956c8b9c486711db049c4aafd62f15cdcb652678540f5800846"
+  },
+  "physical_bounds": {
+    "path": "manifests/SCALE_AUTHORITY_RECOVERY_A01_PHYSICAL_BOUNDS.json",
+    "sha256": "688209b57bc5fda0f527fcc853a44286d750257f0c293d15dd67d0e617511056"
+  },
+  "coordinate_convention": "zero_based_original_panel_pixel_centers; image_x_right_image_y_down; homogeneous 3x3 affine matrices",
+  "method": "one_global_original_coordinate_transform_per_complete_panel",
+  "registration_inputs": {
+    "front_back": "overall-height annotation endpoints plus C-001 width annotation midpoint; full silhouette held out",
+    "left_right": "overall-height annotation endpoints plus C-001 depth annotation midpoint; full silhouette held out",
+    "top": "approved global X/Y factor only; no component fit",
+    "annotation_endpoints_are_geometry_boundaries": false,
+    "registration_translation_is_physical_origin": false
+  },
+  "pair_scales": {
+    "back_uniform_to_front_overall_height_span": 1.363636363636,
+    "right_uniform_to_left_overall_height_span": 1.090551181102,
+    "top_x_relative_to_y": 1.1260059213
+  },
+  "panels": {
+    "front": {
+      "source_path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_FRONT.png",
+      "source_file_sha256": "262071198bc0d409e9b68af5ac4f3c6a4768a90b1fd199342035a8a82342c2c5",
+      "source_pixel_sha256": "d4fb34cb01ce6eaa04213a5a7c517743960daec6dcf638c53ec80a958ecc807f",
+      "source_size_px": [
+        483,
+        525
+      ],
+      "derivative_path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/evidence/SCALE_AUTHORITY_RECOVERY_A01/SM_GIA_BloodAxeCairnstone_A005_FRONT_DERIVATIVE_REVIEW.png",
+      "derivative_file_sha256": "72ec80471191635bf0a6f2bdee6abfbb9f66eb3375af86236c3428c62807f3fe",
+      "derivative_pixel_sha256": "77214b1d36dd5b2f8b5fb2769cda85114651cfc200fa893ae184373592a04d6f",
+      "derivative_size_px": [
+        712,
+        547
+      ],
+      "matrix_original_to_derivative": [
+        [
+          1,
+          0,
+          129
+        ],
+        [
+          0,
+          1,
+          15
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "matrix_derivative_to_original": [
+        [
+          1,
+          0,
+          -129
+        ],
+        [
+          0,
+          1,
+          -15
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "role": "primary_XZ_owner",
+      "mirrored": false,
+      "global_complete_panel_transform": true,
+      "local_warp": false,
+      "bounds_after_transform": {
+        "min_x": 129,
+        "min_y": 15,
+        "max_x": 611,
+        "max_y": 539
+      },
+      "source_pixels_clipped": false,
+      "max_forward_inverse_roundtrip_error_px": 0,
+      "raster_method": "nearest_neighbor_inverse_sample_from_original_step03_panel",
+      "artifact_classification": "proof only"
+    },
+    "back": {
+      "source_path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_BACK.png",
+      "source_file_sha256": "8ceae7f5ccf311ded8822fdd623d2b68009102bc07ceaf66708f59d2a013d271",
+      "source_pixel_sha256": "9256a8df175cbf54ca0662b11e0c5f5f6be4e670b10a9783efc1d6e9e26a56b1",
+      "source_size_px": [
+        522,
+        401
+      ],
+      "derivative_path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/evidence/SCALE_AUTHORITY_RECOVERY_A01/SM_GIA_BloodAxeCairnstone_A005_BACK_DERIVATIVE_REVIEW.png",
+      "derivative_file_sha256": "8144fa1e50dcef6d3bd9590cdc2bb45e94b648abb7327698a112eff21fe6a1b5",
+      "derivative_pixel_sha256": "23ffd4da601caa0f5db26a395a0ff10191f436797e0621ccf99e026d4231d05e",
+      "derivative_size_px": [
+        712,
+        547
+      ],
+      "matrix_original_to_derivative": [
+        [
+          -1.363636363636,
+          0,
+          710.681818181818
+        ],
+        [
+          0,
+          1.363636363636,
+          0.454545454545
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "matrix_derivative_to_original": [
+        [
+          -0.733333333333,
+          0,
+          521.166666666667
+        ],
+        [
+          0,
+          0.733333333333,
+          -0.333333333333
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "role": "front_holdout_validation",
+      "mirrored": true,
+      "global_complete_panel_transform": true,
+      "local_warp": false,
+      "bounds_after_transform": {
+        "min_x": 0.227272727273,
+        "min_y": 0.454545454545,
+        "max_x": 710.681818181818,
+        "max_y": 545.909090909091
+      },
+      "source_pixels_clipped": false,
+      "max_forward_inverse_roundtrip_error_px": 0,
+      "raster_method": "nearest_neighbor_inverse_sample_from_original_step03_panel",
+      "artifact_classification": "proof only"
+    },
+    "left": {
+      "source_path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_LEFT.png",
+      "source_file_sha256": "52212ba783d026a008929e3946cac934281de7d2daec2ada316205059258cba4",
+      "source_pixel_sha256": "96a10daa637b28b879b5dd210bad3526e87499218dece9ca4ed0560046c9bddb",
+      "source_size_px": [
+        484,
+        401
+      ],
+      "derivative_path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/evidence/SCALE_AUTHORITY_RECOVERY_A01/SM_GIA_BloodAxeCairnstone_A005_LEFT_DERIVATIVE_REVIEW.png",
+      "derivative_file_sha256": "ae49f0215fc765e581f65177ad5caf5779405d412cd2dbf56ed94680fbe4ee27",
+      "derivative_pixel_sha256": "7faad777efdb7bdcd538bb7bca98cf621d3656028bc48886f26959a808af5e76",
+      "derivative_size_px": [
+        484,
+        407
+      ],
+      "matrix_original_to_derivative": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "matrix_derivative_to_original": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          -2
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "role": "primary_YZ_owner",
+      "mirrored": false,
+      "global_complete_panel_transform": true,
+      "local_warp": false,
+      "bounds_after_transform": {
+        "min_x": 0,
+        "min_y": 2,
+        "max_x": 483,
+        "max_y": 402
+      },
+      "source_pixels_clipped": false,
+      "max_forward_inverse_roundtrip_error_px": 0,
+      "raster_method": "nearest_neighbor_inverse_sample_from_original_step03_panel",
+      "artifact_classification": "proof only"
+    },
+    "right": {
+      "source_path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_RIGHT.png",
+      "source_file_sha256": "cc6c27405fbd6ea8c46b70966fe559acbd57acb88e58bfdcd6b763ce827a862e",
+      "source_pixel_sha256": "f6201cbae75fa061f7614893d7f2c081149a350fc6d64ad510b49ef5c12d7610",
+      "source_size_px": [
+        367,
+        372
+      ],
+      "derivative_path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/evidence/SCALE_AUTHORITY_RECOVERY_A01/SM_GIA_BloodAxeCairnstone_A005_RIGHT_DERIVATIVE_REVIEW.png",
+      "derivative_file_sha256": "a52b73f8d3c0173ca4677240c1569d27a5612a68fe92d4354a5c580b8f4593d0",
+      "derivative_pixel_sha256": "b901db0e1cf03022db2d6b1337e9e47187a680a975cb678991a2c492822d5af8",
+      "derivative_size_px": [
+        484,
+        407
+      ],
+      "matrix_original_to_derivative": [
+        [
+          -1.090551181102,
+          0,
+          424.299212598425
+        ],
+        [
+          0,
+          1.090551181102,
+          0.649606299213
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "matrix_derivative_to_original": [
+        [
+          -0.916967509025,
+          0,
+          389.068592057762
+        ],
+        [
+          0,
+          0.916967509025,
+          -0.595667870036
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "role": "left_holdout_validation",
+      "mirrored": true,
+      "global_complete_panel_transform": true,
+      "local_warp": false,
+      "bounds_after_transform": {
+        "min_x": 25.157480314961,
+        "min_y": 0.649606299213,
+        "max_x": 424.299212598425,
+        "max_y": 405.244094488189
+      },
+      "source_pixels_clipped": false,
+      "max_forward_inverse_roundtrip_error_px": 0,
+      "raster_method": "nearest_neighbor_inverse_sample_from_original_step03_panel",
+      "artifact_classification": "proof only"
+    },
+    "top": {
+      "source_path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_TOP.png",
+      "source_file_sha256": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf",
+      "source_pixel_sha256": "eda0f5d691336489e257a44b09f58b8543b023bd4edc0893d5fab68ad8dbf05f",
+      "source_size_px": [
+        337,
+        371
+      ],
+      "derivative_path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/evidence/SCALE_AUTHORITY_RECOVERY_A01/SM_GIA_BloodAxeCairnstone_A005_TOP_DERIVATIVE_REVIEW.png",
+      "derivative_file_sha256": "1e9d2bef4fb4ca5b2d22d8e0b52e19a71dd684acc0194be494e863ad9e25ced6",
+      "derivative_pixel_sha256": "d7361d94ef8b164a10f78394fc4ad0fb8d4f543bccdd14f37df4354ef5550306",
+      "derivative_size_px": [
+        380,
+        371
+      ],
+      "matrix_original_to_derivative": [
+        [
+          1.1260059213,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "matrix_derivative_to_original": [
+        [
+          0.888094796913,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "role": "XY_derivative_review",
+      "mirrored": false,
+      "global_complete_panel_transform": true,
+      "local_warp": false,
+      "bounds_after_transform": {
+        "min_x": 0,
+        "min_y": 0,
+        "max_x": 378.3379895568,
+        "max_y": 370
+      },
+      "source_pixels_clipped": false,
+      "max_forward_inverse_roundtrip_error_px": 0,
+      "raster_method": "nearest_neighbor_inverse_sample_from_original_step03_panel",
+      "artifact_classification": "proof only"
+    }
+  },
+  "transform_controls": {
+    "original_source_and_step03_panels_modified": false,
+    "complete_panel_global_transforms_only": true,
+    "local_component_row_feature_warp": false,
+    "projective_or_perspective_transform": false,
+    "diagnostic_pair_mean_used": false,
+    "source_pixels_clipped": false,
+    "maximum_roundtrip_error_px": 0,
+    "derivative_raster_method": "nearest_neighbor_inverse_sample_from_original_step03_panel",
+    "registration_translation_physical_origin": false,
+    "physical_center_origin_pivot_or_snap_anchor_created": false
+  },
+  "top_direction": {
+    "x_over_y_factor": "1.1260059213",
+    "x_relative_expansion_percent": "12.60059213",
+    "y_factor": "1.0",
+    "implementation": "global X expansion; Y unchanged",
+    "authority_limit": "candidate derivative review transform only pending Flamestrike output decision"
+  },
+  "review_board": {
+    "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/evidence/SCALE_AUTHORITY_RECOVERY_A01/SM_GIA_BloodAxeCairnstone_A005_SCALE_AUTHORITY_RECOVERY_A01_REVIEW_BOARD.png",
+    "file_sha256": "42ddbefb4ff2550db090fde1886cf27933b4f1cc98a655940ef6c478926ef427",
+    "pixel_sha256": "eaf962472ddd007b009fd638aef3d682dc0634fb62515c369820def95453ea05",
+    "artifact_classification": "proof only"
+  },
+  "candidate_decision": "blocked_by_unresolved_source_target_conflict",
+  "decision_reason": "The selected physical targets do not share the same within-axis ratios as the source-authored endpoint spans. A single global transform cannot make all targets exact without forbidden local or component warping.",
+  "permitted_consumers_before_output_approval": [
+    "visible recovery review",
+    "focused technical validation"
+  ],
+  "blocked_consumers": [
+    "source replacement",
+    "texture input",
+    "geometry input",
+    "Step 10 decision authority",
+    "Step 11",
+    "DCC",
+    "Unreal"
+  ],
+  "geometry_created": false,
+  "step10_revised": false
+}
+

@@ -1,0 +1,112 @@
+{
+  "schema": "aerathea.c003_target_space_inner_boundary_interpretation_rule_a02_k80_decision_registry.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-C003-TSIB-A02-K80-DC-A01",
+  "date": "2026-07-17",
+  "executed_at": "2026-07-17T15:19:06-04:00",
+  "status": "K80_approved_bounded_interpretation_rule_mapping_unimplemented",
+  "artifact_classification": "authoritative for bounded K80 decision only",
+  "decision_subject": "abstract C-003 outer boundary at CL-003 used as C-004 target-space inner-boundary dependency",
+  "approval_chain": {
+    "flamestrike_delegation_record": "Checkpoint 20260717-150326 records that Flamestrike delegated observational selection to Codex.",
+    "codex_observational_selection": "K80",
+    "flamestrike_resume_affirmation": "K80 was observationally selected under Flamestrike delegation.",
+    "closeout_contract_preparation_instruction": "Prepare the A02 K80 decision-closeout contract only.",
+    "closeout_execution_approval": "Approved",
+    "final_authority": "Flamestrike"
+  },
+  "selected_option": {
+    "id": "C003_TSIB_K80_MEDIUM_APRON",
+    "label": "K80 Medium Apron",
+    "k": 0.8,
+    "equation": "abs(x / 56)^3 + abs(y / 44)^3 = 1",
+    "registered_family_equation": "abs(x / (70 * 0.80))^3 + abs(y / (55 * 0.80))^3 = 1",
+    "exponent": 3,
+    "origin": [
+      0,
+      0
+    ],
+    "origin_role": "mathematical target-space construction convention only",
+    "half_width_cm": 56,
+    "half_depth_cm": 44,
+    "full_width_cm": 112,
+    "full_depth_cm": 88,
+    "axis_separation_per_x_side_cm": 14,
+    "axis_separation_per_y_side_cm": 11,
+    "source_pixel_relation": "none",
+    "source_center_claim": false,
+    "pivot_claim": false,
+    "physical_C003_dimension_claim": false,
+    "artifact_classification": "approved bounded interpretation rule for abstract C-003 outer boundary at CL-003 only",
+    "implementation_authorized": false
+  },
+  "unselected_options": [
+    {
+      "id": "C003_TSIB_K90_NARROW_APRON",
+      "artifact_classification": "rejected candidate",
+      "selection_status": "not_selected"
+    },
+    {
+      "id": "C003_TSIB_K70_BROAD_APRON",
+      "artifact_classification": "rejected candidate",
+      "selection_status": "not_selected"
+    },
+    {
+      "id": "C003_TSIB_LEAVE_BLOCKED",
+      "artifact_classification": "reference only; not selected",
+      "selection_status": "not_selected"
+    }
+  ],
+  "technical_proof": {
+    "locked_inputs_matched": 32,
+    "locked_input_mismatches": 0,
+    "validation_gates_passed": 26,
+    "validation_gates_failed": 0,
+    "K80_max_outer_N3_equation_value": 0.5120000000000173,
+    "strictly_contained_inside_outer_N3": true,
+    "intersection_or_escape_count": 0,
+    "extent_error_cm": 0,
+    "mathematical_closure_error_cm": 0,
+    "sample_count": 721,
+    "line_only_unfilled": true,
+    "source_overlay_count": 0,
+    "review_board_sha256": "717ed5ca38947f21bd56b5e2ee13cb060fae17579686b59e83abed8e52e077c9",
+    "validation_sha256": "989c2a8e79addf2aba1cbc74a344a1a5e22d3ca1ba5e763b8bcacf4ce6ff18b1"
+  },
+  "unchanged_a02_artifact_hashes": {
+    "technical_contract": "ea55cd69c494b17cfcc06e324552da2df789a6415f3eceef1112ea3110662d0b",
+    "input_lock": "1208892b0c2e50a15e88062e656374a8183defec8c8d3fe70ba453f3c1b2d541",
+    "frozen_option_registry": "ba24e6b5803deb6af15b5fcf1d7e95f2f088321a63775a32ff39d6350b7423aa",
+    "curve_ledger": "dc04dab52e922786a99eaa7bbc52cb3620ac41c4784aae56a10b098423952410",
+    "validation": "989c2a8e79addf2aba1cbc74a344a1a5e22d3ca1ba5e763b8bcacf4ce6ff18b1",
+    "review_board": "717ed5ca38947f21bd56b5e2ee13cb060fae17579686b59e83abed8e52e077c9",
+    "predecision_output_record": "aa256fa329c0c901580f7cd7a4798ebd3149ac7e5e136f73c9dbd5c3fd24d197",
+    "predecision_selection_handoff": "e8b628ad51d6045f184b079372a09de2c4f3c16cf34c1ee9b49926ba3e5c3ff9"
+  },
+  "authority_counts": {
+    "top_CL003_source_samples": 16,
+    "all_view_CL003_source_samples": 47,
+    "all_view_CL002_source_samples": 40,
+    "source_sample_displacement_px": 0,
+    "physical_cross_view_pairs": 0,
+    "source_to_target_mappings": 0,
+    "target_CL003_coordinates": 0,
+    "center_claims": 0,
+    "pivot_claims": 0,
+    "physical_C003_dimension_claims": 0,
+    "fills_or_annuli": 0,
+    "fields": 0,
+    "surfaces_topology_geometry": 0
+  },
+  "conditional_rules": {
+    "S10R-003-A": "approved conditional interpretation rule; dependency boundary now approved; mapping unimplemented",
+    "S10R-006-A": "approved conditional interpretation rule; unimplemented and blocked by absent S10R-003-A mapping and remaining technical gates"
+  },
+  "implementation_authorized": false,
+  "step10_closeout_authorized": false,
+  "step11_authorized": false,
+  "production_authorized": false,
+  "staging_commit_push_authorized": false,
+  "next_gate": "after mandatory restart, preparation only of a separate S10R-003-A CL-003 target-space mapping execution contract",
+  "pre_closeout_checkpoint": "Saved/ProjectRecovery/20260717-151831/"
+}

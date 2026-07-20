@@ -1,0 +1,143 @@
+{
+  "schema": "aerathea.step_10r_n3_integration_remaining_blocks.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-STEP10-REV-A01",
+  "date": "2026-07-17",
+  "status": "authoritative_remaining_blocks_after_seven_decisions",
+  "artifact_classification": "authoritative for Step 10R blocking and conditional routing",
+  "blocks": [
+    {
+      "id": "S10R-BLOCK-001",
+      "decision_subject": "S10R-001",
+      "blocked_fact": "The Step 10R authority delta is accepted for bounded revision routing.",
+      "blocked_consumers": [
+        "all revised Step 10 routing"
+      ],
+      "status": "resolved_by_approved_S10R001"
+    },
+    {
+      "id": "S10R-BLOCK-002",
+      "decision_subject": "S10R-002",
+      "blocked_fact": "S10R-002-A approves a construction-origin centered N3 target frame with no source-pixel relation; source placement and pivot remain unapproved.",
+      "blocked_consumers": [
+        "I10-004",
+        "I10-007",
+        "I10-009",
+        "S10R-003",
+        "S10R-006"
+      ],
+      "status": "resolved_with_bounded_S10R002A"
+    },
+    {
+      "id": "S10R-BLOCK-003",
+      "decision_subject": "S10R-003",
+      "blocked_fact": "S10R-003-A is approved only as a four-sector order-preserving convention; no target coordinate may be created until a separate C-003 target-space inner boundary is approved.",
+      "blocked_consumers": [
+        "I10-003",
+        "I10-006",
+        "S10R-006"
+      ],
+      "status": "active_conditional_dependency"
+    },
+    {
+      "id": "S10R-BLOCK-004",
+      "decision_subject": "S10R-004",
+      "blocked_fact": "The 26 exact registered upright traces are approved only within their declared sectors.",
+      "blocked_consumers": [
+        "I10-010",
+        "S10R-005",
+        "S10R-006"
+      ],
+      "status": "resolved_with_bounded_S10R004A"
+    },
+    {
+      "id": "S10R-BLOCK-005",
+      "decision_subject": "S10R-005",
+      "blocked_fact": "Piecewise ruled strips are approved only between adjacent approved traces inside declared owner-view sectors; cross-view and top/upright joins remain dependent on S10R-006.",
+      "blocked_consumers": [
+        "I10-008",
+        "I10-010",
+        "S10R-006"
+      ],
+      "status": "resolved_with_bounded_S10R005A"
+    },
+    {
+      "id": "S10R-BLOCK-006",
+      "decision_subject": "S10R-006",
+      "blocked_fact": "S10R-006-A is an approved conditional rule, but no field exists or may be created until S10R-003's C-003 inner-boundary dependency and all declared technical gates pass.",
+      "blocked_consumers": [
+        "I10-004",
+        "I10-006",
+        "I10-007",
+        "I10-008",
+        "Step 10 closeout"
+      ],
+      "status": "active_conditional_dependency"
+    },
+    {
+      "id": "S10R-BLOCK-007",
+      "decision_subject": "S10R-007",
+      "blocked_fact": "The complete dependency audit is accepted while Step 11 remains blocked.",
+      "blocked_consumers": [
+        "Step 10 closeout",
+        "Step 11"
+      ],
+      "status": "resolved_by_approved_S10R007"
+    },
+    {
+      "id": "S10R-BLOCK-008",
+      "decision_subject": "global",
+      "blocked_fact": "Historical Step 10 items not resolved by the seven bounded Step 10R decisions remain pending and cannot enter Step 11.",
+      "blocked_consumers": [
+        "Step 10 closeout",
+        "Step 11"
+      ],
+      "status": "active_prior_step10_decisions_pending"
+    },
+    {
+      "id": "S10R-BLOCK-009",
+      "decision_subject": "global",
+      "blocked_fact": "No filled footprint, source center, pivot, implemented field, topology, surface, or geometry authority exists.",
+      "blocked_consumers": [
+        "DCC",
+        "Unreal",
+        "production"
+      ],
+      "status": "active_global_production_block"
+    }
+  ],
+  "counts": {
+    "blocks_total": 9,
+    "resolved_by_bounded_decision": 5,
+    "active_remaining_blocks": 4,
+    "approved_decisions": 7,
+    "approved_conditional_rules": 2
+  },
+  "step10_closeout_authorized": false,
+  "step11_authorized": false,
+  "geometry_authorized": false,
+  "production_authorized": false,
+  "flamestrike_output_decision": {
+    "date": "2026-07-17",
+    "approver": "Flamestrike",
+    "statement": "I approve all 7 recommended decisions exactly as listed",
+    "pre_closeout_checkpoint": "Saved/ProjectRecovery/20260717-123959/",
+    "decision_ids": [
+      "S10R-001",
+      "S10R-002",
+      "S10R-003",
+      "S10R-004",
+      "S10R-005",
+      "S10R-006",
+      "S10R-007"
+    ]
+  },
+  "active_block_ids": [
+    "S10R-BLOCK-003",
+    "S10R-BLOCK-006",
+    "S10R-BLOCK-008",
+    "S10R-BLOCK-009"
+  ],
+  "next_required_gate": "Separate C-003 target-space inner-boundary interpretation contract preparation after mandatory restart",
+  "step10r_bounded_closeout_complete": true
+}

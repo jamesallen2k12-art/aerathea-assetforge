@@ -1,0 +1,264 @@
+{
+  "schema": "aerathea.scale_authority_recovery_distortion_holdout.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-SAR-A01",
+  "date": "2026-07-17",
+  "status": "candidate_distortion_holdout_pass_with_explicit_source_target_block",
+  "artifact_classification": "candidate",
+  "transform_manifest": "manifests/SCALE_AUTHORITY_RECOVERY_A01_TRANSFORM_MANIFEST.json",
+  "fit_inputs": {
+    "front_back": "overall-height annotation endpoints plus C-001 width annotation midpoint; full silhouette held out",
+    "left_right": "overall-height annotation endpoints plus C-001 depth annotation midpoint; full silhouette held out",
+    "top": "approved global X/Y factor only; no component fit",
+    "annotation_endpoints_are_geometry_boundaries": false,
+    "registration_translation_is_physical_origin": false
+  },
+  "full_silhouettes_used_as_fit_inputs": false,
+  "diagnostic_mask_authority": "proof only; never geometry or source authority",
+  "fresh_diagnostic_silhouettes": {
+    "front": {
+      "bbox": [
+        103,
+        33,
+        401,
+        429
+      ],
+      "width": 298,
+      "height": 396,
+      "method": "fresh_dense_nonwhite_5x5_seed_dilate1_component_selected_by_allowed_a02_bbox_dimensions_row_interval_diagnostic",
+      "allowed_a02_bbox_dimension_expectation": [
+        304,
+        392
+      ],
+      "component_bbox_before_row_fill": [
+        103,
+        33,
+        401,
+        429
+      ],
+      "a02_bbox_used_as_geometry": false,
+      "artifact_classification": "proof only",
+      "geometry_authority": false
+    },
+    "back": {
+      "bbox": [
+        119,
+        6,
+        368,
+        320
+      ],
+      "width": 249,
+      "height": 314,
+      "method": "fresh_dense_nonwhite_5x5_seed_dilate1_component_selected_by_allowed_a02_bbox_dimensions_row_interval_diagnostic",
+      "allowed_a02_bbox_dimension_expectation": [
+        249,
+        312
+      ],
+      "component_bbox_before_row_fill": [
+        119,
+        6,
+        368,
+        320
+      ],
+      "a02_bbox_used_as_geometry": false,
+      "artifact_classification": "proof only",
+      "geometry_authority": false
+    },
+    "left": {
+      "bbox": [
+        114,
+        5,
+        347,
+        320
+      ],
+      "width": 233,
+      "height": 315,
+      "method": "fresh_dense_nonwhite_5x5_seed_dilate1_component_selected_by_allowed_a02_bbox_dimensions_row_interval_diagnostic",
+      "allowed_a02_bbox_dimension_expectation": [
+        229,
+        311
+      ],
+      "component_bbox_before_row_fill": [
+        114,
+        5,
+        347,
+        320
+      ],
+      "a02_bbox_used_as_geometry": false,
+      "artifact_classification": "proof only",
+      "geometry_authority": false
+    },
+    "right": {
+      "bbox": [
+        80,
+        8,
+        281,
+        297
+      ],
+      "width": 201,
+      "height": 289,
+      "method": "fresh_dense_nonwhite_5x5_seed_dilate1_component_selected_by_allowed_a02_bbox_dimensions_row_interval_diagnostic",
+      "allowed_a02_bbox_dimension_expectation": [
+        196,
+        285
+      ],
+      "component_bbox_before_row_fill": [
+        80,
+        8,
+        281,
+        297
+      ],
+      "a02_bbox_used_as_geometry": false,
+      "artifact_classification": "proof only",
+      "geometry_authority": false
+    },
+    "top": {
+      "bbox": [
+        28,
+        28,
+        268,
+        264
+      ],
+      "width": 240,
+      "height": 236,
+      "method": "fresh_dense_nonwhite_5x5_seed_dilate1_component_selected_by_allowed_a02_bbox_dimensions_row_interval_diagnostic",
+      "allowed_a02_bbox_dimension_expectation": [
+        217,
+        232
+      ],
+      "component_bbox_before_row_fill": [
+        28,
+        28,
+        268,
+        264
+      ],
+      "a02_bbox_used_as_geometry": false,
+      "artifact_classification": "proof only",
+      "geometry_authority": false
+    }
+  },
+  "opposing_view_holdouts": {
+    "front_back": {
+      "full_silhouette_iou": 0.78353669257,
+      "shared_row_count": 389,
+      "median_edge_difference_px": 18,
+      "maximum_edge_difference_px": 88,
+      "median_row_iou": 0.840236686391,
+      "mask_role": "fresh diagnostic holdout only; not a fit input and not geometry authority"
+    },
+    "left_right": {
+      "full_silhouette_iou": 0.892233140396,
+      "shared_row_count": 313,
+      "median_edge_difference_px": 5,
+      "maximum_edge_difference_px": 87,
+      "median_row_iou": 0.92385786802,
+      "mask_role": "fresh diagnostic holdout only; not a fit input and not geometry authority"
+    }
+  },
+  "top_cross_axis_holdout": {
+    "observed_outer_x_over_y": 0.93534483,
+    "transformed_outer_x_over_y": 1.053203817037,
+    "factor": 1.1260059213,
+    "y_factor": 1,
+    "metric_source": "allowed A02 reference-only outer-silhouette diagnostic that produced the approved factor",
+    "fresh_dense_component_selector_aspect_for_disclosure_only": 1.016949152542,
+    "outer_silhouette_role": "diagnostic holdout only; not geometry authority"
+  },
+  "per_axis_scale_changes": {
+    "back_uniform_to_front_overall_height_span": 1.363636363636,
+    "right_uniform_to_left_overall_height_span": 1.090551181102,
+    "top_x_relative_to_y": 1.1260059213
+  },
+  "source_target_conflicts": {
+    "target_ratios": {
+      "C004_X_over_C001_X": 1.166666666667,
+      "C004_Y_over_C001_Y": 1.222222222222,
+      "base_Z_over_overall_Z": 0.159090909091
+    },
+    "checks": {
+      "front_C004_X_over_C001_X": {
+        "source_ratio": 1.260869565217,
+        "target_ratio": 1.166666666667,
+        "relative_delta_percent": 8.074534161491,
+        "global_axis_scale_can_satisfy_both_targets": false
+      },
+      "front_base_Z_over_overall_Z": {
+        "source_ratio": 0.165333333333,
+        "target_ratio": 0.159090909091,
+        "relative_delta_percent": 3.92380952381,
+        "global_axis_scale_can_satisfy_both_targets": false
+      },
+      "back_C004_X_over_C001_X": {
+        "source_ratio": 1.296296296296,
+        "target_ratio": 1.166666666667,
+        "relative_delta_percent": 11.111111111111,
+        "global_axis_scale_can_satisfy_both_targets": false
+      },
+      "back_base_Z_over_overall_Z": {
+        "source_ratio": 0.189090909091,
+        "target_ratio": 0.159090909091,
+        "relative_delta_percent": 18.857142857143,
+        "global_axis_scale_can_satisfy_both_targets": false
+      },
+      "left_C004_Y_over_C001_Y": {
+        "source_ratio": 1.339285714286,
+        "target_ratio": 1.222222222222,
+        "relative_delta_percent": 9.577922077922,
+        "global_axis_scale_can_satisfy_both_targets": false
+      },
+      "left_base_Z_over_overall_Z": {
+        "source_ratio": 0.187725631769,
+        "target_ratio": 0.159090909091,
+        "relative_delta_percent": 17.998968540485,
+        "global_axis_scale_can_satisfy_both_targets": false
+      },
+      "right_C004_Y_over_C001_Y": {
+        "source_ratio": 1.340277777778,
+        "target_ratio": 1.222222222222,
+        "relative_delta_percent": 9.659090909091,
+        "global_axis_scale_can_satisfy_both_targets": false
+      },
+      "right_base_Z_over_overall_Z": {
+        "source_ratio": 0.185039370079,
+        "target_ratio": 0.159090909091,
+        "relative_delta_percent": 16.310461192351,
+        "global_axis_scale_can_satisfy_both_targets": false
+      },
+      "top_C004_X_over_C001_X": {
+        "source_ratio": 1.308176100629,
+        "target_ratio": 1.166666666667,
+        "relative_delta_percent": 12.129380053908,
+        "global_axis_scale_can_satisfy_both_targets": false
+      },
+      "top_C004_Y_over_C001_Y": {
+        "source_ratio": 1.489361702128,
+        "target_ratio": 1.222222222222,
+        "relative_delta_percent": 21.856866537718,
+        "global_axis_scale_can_satisfy_both_targets": false
+      }
+    },
+    "conflict_count": 10,
+    "decision_rule": "A single global axis scale preserves within-axis source span ratios. Any ratio differing from the target ratio cannot satisfy both physical targets without local/component warping."
+  },
+  "rejected_internal_attempts": [
+    {
+      "id": "ATTEMPT-01-ANNOTATION-CONTAMINATED-HOLDOUT",
+      "status": "rejected_internal_proof_attempt",
+      "artifact_classification": "quarantined local proof only",
+      "reason": "The first fresh largest-component selector attached source dimension annotations to multiple silhouettes, contaminating the holdout IoU and top-aspect metrics.",
+      "preserved_board": "Saved/AssetForgeResearch/A005_ScaleAuthorityRecovery_A01/REJECTED_ATTEMPT_01_ANNOTATION_CONTAMINATED_REVIEW_BOARD.png",
+      "preserved_results": "Saved/AssetForgeResearch/A005_ScaleAuthorityRecovery_A01/REJECTED_ATTEMPT_01_ANNOTATION_CONTAMINATED_RESULTS.json",
+      "authority_effect": "none",
+      "source_or_transform_changed_by_correction": false
+    }
+  ],
+  "production_pass_threshold": null,
+  "source_or_target_disagreement_hidden": false,
+  "local_warp_applied": false,
+  "candidate_decision": "blocked_by_unresolved_source_target_conflict",
+  "decision_reason": "The selected physical targets do not share the same within-axis ratios as the source-authored endpoint spans. A single global transform cannot make all targets exact without forbidden local or component warping.",
+  "output_effect": "No recovered world-space authority can be promoted while these global-scale conflicts remain.",
+  "geometry_created": false,
+  "step10_revised": false
+}
+

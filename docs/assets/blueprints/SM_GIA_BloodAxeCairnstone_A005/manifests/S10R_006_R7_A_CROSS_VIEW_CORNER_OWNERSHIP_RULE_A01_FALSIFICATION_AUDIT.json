@@ -1,0 +1,40 @@
+{
+  "schema": "aerathea.s10r_006_r7_a_cross_view_corner_ownership_rule_a01_falsification_audit.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-006-R7-A-CVCOR-A01",
+  "rule_id": "S10R-006-R7-A-CVCOR-A01",
+  "date": "2026-07-20",
+  "status": "pass_all_post_decision_fail_closed_falsification_checks",
+  "artifact_classification": "proof only",
+  "checks": [
+    {"id": "F01", "status": "pass", "evidence": "All 16 locked inputs matched before output writes; the three controlled status records contained only the authorized prepared-contract and execution-approval state."},
+    {"id": "F02", "status": "pass", "evidence": "R6-A remains the sole selected route and grants only preparation of this separately executed bounded rule contract."},
+    {"id": "F03", "status": "pass", "evidence": "R5 replays four exact owned closed intervals and four exact open gaps without mutation."},
+    {"id": "F04", "status": "pass", "evidence": "Step 05 replays the +X, +Y, -X, -Y counterclockwise adjacency order."},
+    {"id": "F05", "status": "pass", "evidence": "Every gap has exactly one predecessor and one successor from the four approved construction-lane labels."},
+    {"id": "F06", "status": "pass", "evidence": "Each m_k is registered only as the exact symbolic rational relation m_k = (a_k + b_k) / 2."},
+    {"id": "F07", "status": "pass", "evidence": "Each lower branch is predecessor-only and remains an unevaluated symbolic relation."},
+    {"id": "F08", "status": "pass", "evidence": "Each midpoint and upper branch is successor-only and remains an unevaluated symbolic relation."},
+    {"id": "F09", "status": "pass", "evidence": "The two half-open relations are symbolically total over each existing open gap."},
+    {"id": "F10", "status": "pass", "evidence": "The two relations are disjoint; no q relation receives two labels."},
+    {"id": "F11", "status": "pass", "evidence": "Every existing R5 lane endpoint remains under unchanged R5 ownership and no gap endpoint is reassigned."},
+    {"id": "F12", "status": "pass", "evidence": "G_3 uses +X only as a successor label; no modulus, wrap, new lane, or endpoint identification exists."},
+    {"id": "F13", "status": "pass", "evidence": "Historical I10-010-A remains unchanged candidate history classified requires_revision."},
+    {"id": "F14", "status": "pass", "evidence": "All 14 back/right records remain proof only and unauthorized for construction."},
+    {"id": "F15", "status": "pass", "evidence": "Every midpoint and branch claim is bounded symbolic interpretation only, never source or physical evidence."},
+    {"id": "F16", "status": "pass", "evidence": "No top/upright owner or top/upright join is defined."},
+    {"id": "F17", "status": "pass", "evidence": "No seam, continuity, interpolation, blend, endpoint join, or closure behavior is defined."},
+    {"id": "F18", "status": "pass", "evidence": "Owner instances, q instances, samples, coordinates, transforms, pairs, fields, fills, surfaces, topology, and geometry remain zero."},
+    {"id": "F19", "status": "pass", "evidence": "No earlier gate failed, so the mandatory BLOCK fallback was not triggered."},
+    {"id": "F20", "status": "pass", "evidence": "Execution changes are bounded to the exact R7 allowlist and zero paths are staged."},
+    {"id": "F21", "status": "pass", "evidence": "Candidate registration and bounded rule approval are true; evaluation, implementation, downstream, staging, commit, and push remain false."},
+    {"id": "F22", "status": "pass", "evidence": "The final post-decision output and handoff were opened in separate visible gedit windows and verified through their exact R7 filenames; no global desktop title list was surfaced."}
+  ],
+  "summary": {
+    "check_count": 22,
+    "passed_check_count": 22,
+    "pending_check_count": 0,
+    "failed_check_count": 0,
+    "block_fallback_triggered": false
+  }
+}

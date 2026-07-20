@@ -1,10 +1,1274 @@
 # SM_GIA_BloodAxeCairnstone_A005 Approval Log
 
-Status: Step 09 bounded exact-data output and scoped closeout approved
+Status: S10R-006-R9-A bounded symbolic corner-gap-to-field coupling rule approved exactly as registered; Core reassessment required; no evaluation or implementation authority
 
 Artifact classification: `authoritative`
 
-Updated: 2026-07-16
+Updated: 2026-07-20
+
+## S10R-006-R9-A Scoped Git Rollback Closeout Authority
+
+- Date: 2026-07-20
+- Approver: Flamestrike
+- Approval statement: `I am granting you the authority you need to proceed uninterrupted to a clean Git rollback point Please proceed with my approval`
+- Closeout ID: `A005-GIT-S10R-006-R9-A-ROLLBACK-A01`
+- Approved goal: dependency-complete pushed Git rollback anchor for the
+  current A005 authority chain
+- Scope decision: include the complete post-Step-09 A005 record chain, exact
+  A005-only support scripts, current approved `AGENTS.md`, and A005 drift
+  ledger; exclude unrelated user work and all local-only paths
+- Git target: `main` to `assetforge/main`
+- Staging, commit, and push: explicitly authorized for this exact closeout
+- Production authority: unchanged; rule evaluation, implementation, Step 10
+  closeout, Step 11, DCC, Unreal, and production remain unauthorized
+- Pre-staging checkpoint: `Saved/ProjectRecovery/20260720-135030/`
+
+## S10R-006-R9-A Bounded Rule Decision - Approved
+
+- Date: 2026-07-20
+- Decision maker: Flamestrike
+- Decision statement: `approved`
+- Contract ID: `A005-CR-S10R-006-R9-A-CGFC-A01`
+- Rule ID: `S10R-006-R9-A-CGFC-A01`
+- Decision: approve exactly as registered
+- Approved classification: authoritative bounded symbolic corner-gap-to-field
+  coupling interpretation only
+- Technical result:
+  `pass_approved_bounded_corner_gap_to_field_coupling_rule_registered_no_implementation`
+- Pre-closeout checkpoint: `Saved/ProjectRecovery/20260720-133433/`
+- Pre-decision hashes: contract, input lock, registry, and validation matched
+- Original independent audit: first and only run passed `22/22`; zero reruns
+- Post-decision closeout validation: `15/15` passed; zero failures; auditor
+  not rerun
+- Final approved output and handoff visibility: passed through both exact
+  persistent R9 review titles
+- Registered rules: `1`; approved rules: `1`; evaluated rules: `0`
+- q wrap, endpoint identification, continuous gap-local u, lane-u
+  extrapolation, physical correspondence, evaluation, and implementation:
+  absent and unauthorized
+- All output and geometry counts: `0`
+- All fourteen back/right records: proof only
+- All three blocks: active; resolved block IDs: none
+- Evaluation, implementation, downstream work, staging, commit, and push:
+  unauthorized
+- Required next task: Core reassessment; no evaluation or implementation
+
+## S10R-006-R9-A Candidate Rule Execution - Passed
+
+- Date: 2026-07-20
+- Execution approver: Flamestrike
+- Execution approval statement: `approved`
+- Contract ID: `A005-CR-S10R-006-R9-A-CGFC-A01`
+- Registered rule ID: `S10R-006-R9-A-CGFC-A01`
+- Artifact classification: `candidate`
+- Pre-execution checkpoint: `Saved/ProjectRecovery/20260720-131151/`
+- Locked inputs: `17/17` matched
+- Complete independent audit: first and only run passed `22/22`
+- Failed gates: `0`; reruns: `0`
+- Audit-pass checkpoint: `Saved/ProjectRecovery/20260720-132903/`
+- Technical result:
+  `pass_candidate_bounded_corner_gap_to_field_coupling_rule_registered_no_implementation`
+- Candidate rules registered: `1`; approved rules: `0`
+- Rule approval, evaluation, or implementation: not performed
+- All instance, sample, assignment, coordinate, seam, join, closure, field,
+  surface, topology, and geometry counts: `0`
+- All fourteen back/right records: proof only
+- All three blocks: active; resolved block IDs: none
+- Evaluation, implementation, downstream work, staging, commit, and push:
+  unauthorized
+- Required next task: separate exact candidate-rule decision
+
+## S10R-006-R9-A Corner-Gap-To-Field Coupling Contract Preparation
+
+- Date: 2026-07-20
+- Preparation authority: Flamestrike's selected R8-A route followed by
+  `proceed` to the active preparation-only step
+- Contract ID: `A005-CR-S10R-006-R9-A-CGFC-A01`
+- Proposed rule ID: `S10R-006-R9-A-CGFC-A01`
+- Contract classification: `candidate`
+- Contract SHA-256:
+  `8a84ec2d5920febbc2cad4326ae612a9d48f321fdaf1cee9cddcf50167ea1d63`
+- Locked inputs: `16/16` matched
+- Pre-preparation checkpoint: `Saved/ProjectRecovery/20260720-130150/`
+- Proposed rule count: `1`; registered or approved rule count: `0`
+- Proposed interpretation: R7 gap owner label plus only the adjacent R3 lane
+  endpoint weight identity and unevaluated R5 `B_v(q)` gap descriptor
+- Continuous gap-local u or lane-u extrapolation: forbidden
+- G3 wrap or final/first endpoint identification: forbidden
+- Candidate instances, samples, fields, seams, joins, closure, surfaces,
+  topology, and geometry: `0`
+- All three blocks: active; resolved block IDs: none
+- Execution, registration, approval, evaluation, implementation, downstream
+  work, staging, commit, and push: unauthorized
+- Required next task: separate exact contract-execution decision
+
+## S10R-006-R8-A Route Selection Closeout
+
+- Date: 2026-07-20
+- Decision maker: Flamestrike
+- Decision statement: `I agree we will follow your recommendation`
+- Selected route: `S10R-006-R8-A`
+- Selected result:
+  `later preparation only of a bounded corner-gap-to-field coupling rule contract`
+- Selected route count: `1`; R8-B and R8-BLOCK remain unselected
+- Selection authority: explicit Flamestrike decision
+- Candidate recommendation: interpretation only; not selection authority
+- Candidate-phase independent audit: first and only run passed `22/22`; not
+  rerun
+- Route-selection closeout validation: `12/12` passed
+- Pre-selection checkpoint: `Saved/ProjectRecovery/20260720-125530/`
+- Coupling contracts prepared: `0`
+- Coupling or join rules prepared or approved: `0`
+- All instance and geometry counts: `0`
+- All three blocks: active; resolved block IDs: none
+- Next authorized action: preparation only of one separate bounded
+  corner-gap-to-field coupling rule contract
+- Rule preparation, approval, evaluation, implementation, downstream work,
+  staging, commit, and push: unauthorized
+
+## S10R-006-R8-R2-A Gate 10 Wording Correction - Passed
+
+- Date: 2026-07-20
+- Correction approver: Flamestrike
+- Approval statement: `you have approval to correct Gate 10 whatever you need to do`
+- Contract ID: `A005-CR-S10R-006-R8-R2-A-GATE10-WORDING-CORR-A01`
+- Contract SHA-256:
+  `372895b6c346b0b6ba8d5a68c08026c3e6f555db08a4f6ce7bc8d73d3cd33713`
+- Controlling wording authority: original R8
+  `Route Registry Required From Later Execution` table
+- Locked inputs: `26/26` matched
+- Wording-authority checks: `8/8` passed
+- Complete independent audit: first and only run passed `22/22`
+- Failed gates: `0`; reruns: `0`
+- Audit-pass checkpoint: `Saved/ProjectRecovery/20260720-124656/`
+- Candidate routing surfaces registered: `1`, fresh R8-R2 only
+- Candidate routes: `3`; selected route: `null`; selected route count: `0`
+- R8-A recommendation: candidate only, unselected, no authority
+- Original R8 and R8-R1 packages: unchanged and quarantined
+- Coupling/join contract or rule preparation: not performed
+- All output and geometry counts: `0`
+- All three blocks: active; resolved block IDs: none
+- Step 10 closeout and every downstream action: unauthorized
+- Required next task: separate Flamestrike route-selection decision
+
+## S10R-006-R8-R1-A Recovery Execution - Mandatory BLOCK Fallback
+
+- Date: 2026-07-20
+- Execution approver: Flamestrike
+- Execution approval statement: `approved`
+- Contract ID: `A005-CR-S10R-006-R8-R1-A-VISREC-A01`
+- Pre-execution checkpoint: `Saved/ProjectRecovery/20260720-120747/`
+- Desktop preflight: passed; both persistent titles found
+- Complete independent audit runs: `1`
+- Auditor result: `21/22` internal gates passed
+- Failed gate: `10`, exact route-result wording
+- Failure detail: fresh R8-A and R8-B result strings add `one separate`
+  relative to the original R8 required registry table
+- Technical result:
+  `blocked_R8_visibility_recovery_dependency_or_liveness_failure`
+- Blocked-state checkpoint: `Saved/ProjectRecovery/20260720-122014/`
+- Fresh package: quarantined
+- Original failed R8 package: quarantined and unchanged
+- Candidate surfaces registered: `0`
+- Selected route count: `0`; route selection forbidden
+- Coupling/join contract or rule preparation: not performed
+- All output and geometry counts: `0`
+- All three blocks: active; resolved block IDs: none
+- Auditor modification or rerun after failure: not performed
+- Required next task: separate Core reassessment of Gate 10
+
+## S10R-006-R8-R1-A Visibility-Recovery Contract Preparation
+
+- Date: 2026-07-20
+- Preparation approver: Flamestrike
+- Preparation approval statement: `approved`
+- Contract ID: `A005-CR-S10R-006-R8-R1-A-VISREC-A01`
+- Preparation scope: one visibility-mechanics-only recovery contract
+- Core result: R8 Gates `1-18` proved content and authority integrity; Gate
+  `19` isolated presentation-window liveness
+- Locked inputs: `15/15` matched
+- Contract SHA-256:
+  `4226f1b9230172db104f8839b246cefd6d848adc12bf1466d318303892d20319`
+- Preparation checkpoint: `Saved/ProjectRecovery/20260720-120138/`
+- Prepared-contract completion checkpoint:
+  `Saved/ProjectRecovery/20260720-120608/`
+- Visible review: exact final on-disk contract verified through persistent
+  read-only title `A005_R8_R1_VISREC_CONTRACT_REVIEW`
+- Failed R8 package: remains quarantined and unchanged
+- Recovery package created: none; contract only
+- Candidate surfaces registered: `0`
+- Selected route count: `0`
+- Coupling or join contract/rule preparation: not performed
+- q/u/owner/record instances, samples, coordinates, transforms, pairs,
+  centers, pivots, anchors, seams, joins, closures, fields, fills, surfaces,
+  topology, and geometry: `0`
+- Recovery execution, route selection, downstream work, staging, commit, and
+  push: unauthorized
+- Required next task: separate exact recovery-execution approval
+
+## S10R-006-R8-A Execution Result - Mandatory BLOCK Fallback
+
+- Date: 2026-07-20
+- Execution approver: Flamestrike
+- Execution approval statement: `approved`
+- Contract ID: `A005-CR-S10R-006-R8-A-POSTR7-ROUTE-DEC-A01`
+- Independent validation result: Gates `1-18` passed; Gate `19` failed.
+- Failure checkpoint: `Saved/ProjectRecovery/20260720-113628/`
+- Failed subject: required output and handoff visibility could not be
+  independently observed at audit time.
+- Technical result:
+  `blocked_post_R7_routing_authority_dependency_or_scope_failure`
+- Candidate routing surface registered: `0`
+- Route selection: forbidden; selected route count: `0`
+- Option registry, output record, and handoff: quarantined evidence only
+- Coupling or join rule prepared or approved: not performed
+- q/u/owner/record instances, samples, coordinates, transforms, physical
+  pairs, centers, pivots, anchors, seams, joins, closures, fields, fills,
+  surfaces, topology, and geometry: `0`
+- Active blocks preserved: `S10R-BLOCK-006`, `S10R-BLOCK-008`,
+  `S10R-BLOCK-009`
+- Resolved block IDs: none
+- Rerun toward green, route redesign, route selection, rule preparation,
+  evaluation, implementation, Step 10 closeout, Step 11, DCC, Unreal,
+  production, staging, commit, and push: unauthorized
+- Required next task: separate Core reassessment of the Gate 19 visibility
+  failure; do not select a route or prepare a rule contract
+
+## S10R-006-R8-A Post-R7 Routing Decision Contract Preparation
+
+- Date: 2026-07-20
+- Preparation approver: Flamestrike
+- Preparation approval statement: `approved`
+- Approval context: direct response to the exact preparation-only question
+  containing the three required unselected routes
+- Contract ID: `A005-CR-S10R-006-R8-A-POSTR7-ROUTE-DEC-A01`
+- Artifact classification: candidate
+- Required routes: `S10R-006-R8-A`, `S10R-006-R8-B`, and
+  `S10R-006-R8-BLOCK`
+- Candidate recommendation: `S10R-006-R8-A`, unselected
+- Selected route count: `0`
+- Coupling or join rule preparation/approval: not performed
+- q/u instances, owner instances, samples, coordinates, seams, joins,
+  closures, fields, fills, surfaces, topology, and geometry: `0`
+- Active blocks: `S10R-BLOCK-006`, `S10R-BLOCK-008`, and
+  `S10R-BLOCK-009`
+- Resolved block IDs: none
+- Route selection, evaluation, implementation, Step 10 closeout, Step 11,
+  DCC, Unreal, production, staging, commit, and push: unauthorized
+- Preparation validation: `13/13` locked inputs matched; exactly three routes;
+  zero selected routes; no missing required stop
+- Contract SHA-256:
+  `41ed12c69fd911fe0fd789f4605fd3d577ef8f0beb15b3833a1a646983be4066`
+- Preparation checkpoint: `Saved/ProjectRecovery/20260720-105345/`
+- Visible review: final on-disk contract verified in dedicated read-only
+  terminal window `A005_R8_ROUTING_CONTRACT_REVIEW`
+- Modified editor buffer: ignored and not saved, closed, interacted with, or
+  used as authority
+- Contract execution: not authorized or performed
+- Required next task: separate exact contract-execution approval
+
+## S10R-006-R7-A Bounded Rule Decision
+
+- Date: 2026-07-20
+- Final authority: Flamestrike
+- Reviewed technical result:
+  `pass_candidate_bounded_cross_view_corner_ownership_rule_registered_no_implementation`
+- Decision statement: `approved`
+- Decision: approve
+- Approved rule ID: `S10R-006-R7-A-CVCOR-A01`
+- Artifact classification: authoritative for bounded S10R-006-R7-A symbolic
+  corner-ownership rule only
+- Approved scope: abstract upright owner labels over G_0 through G_3 only
+- Exact rule: predecessor owner on each lower open half; successor owner at
+  each exact symbolic midpoint and on each upper open half
+- q: non-periodic, unwrapped, and unevaluated
+- R5 endpoint ownership: unchanged
+- Wrap, seam, join, closure, interpolation, field, and geometry authority:
+  none
+- Per-point owner instances, q instances, samples, coordinates, seams, joins,
+  closures, fields, fills, surfaces, topology, and geometry: `0`
+- Active blocks: `S10R-BLOCK-006`, `S10R-BLOCK-008`, and
+  `S10R-BLOCK-009`
+- `S10R-BLOCK-006`:
+  `active_approved_cross_view_corner_ownership_rule_no_field_no_seam_no_join_no_closure`
+- Resolved block IDs: none
+- Rule evaluation, Step 10 closeout, Step 11, DCC, Unreal, production,
+  staging, commit, and push: unauthorized
+- Pre-closeout checkpoint: `Saved/ProjectRecovery/20260720-103936/`
+- Post-decision falsification validation: `22/22` passed; `0` failed
+- Post-decision independent validation: `23/23` passed; `0` failed
+- Final visible review: output and handoff verified in separate visible gedit
+  windows through their exact R7 filenames; no global desktop title list
+  surfaced
+- Required next task: Core reassessment only
+
+## S10R-006-R7-A Candidate Corner-Ownership Rule Execution
+
+- Date: 2026-07-20
+- Execution approver: Flamestrike
+- Execution approval statement: `approved`
+- Contract ID: `A005-CR-S10R-006-R7-A-CVCOR-A01`
+- Rule ID: `S10R-006-R7-A-CVCOR-A01`
+- Technical result:
+  `pass_candidate_bounded_cross_view_corner_ownership_rule_registered_no_implementation`
+- Artifact classification: candidate
+- Candidate rule: exact gap midpoint threshold, predecessor owner label on the
+  lower open half, successor owner label at the tie and on the upper open half
+- Scope: G_0 through G_3 only; abstract upright owner labels only
+- R5 owned intervals and open gaps replayed: `4` and `4`
+- Symbolic midpoint definitions and branch relations: `4` and `8`
+- Historical I10-010-A: unchanged candidate history; `requires_revision`
+- Proof-only back/right holdouts: `14`
+- q instances, owner instances, samples, coordinates, seams, joins, closures,
+  fields, fills, surfaces, topology, and geometry: `0`
+- Candidate rule registration: performed
+- Candidate rule approval: not granted
+- Falsification validation: `22/22` passed; `0` failed
+- Independent execution validation: `23/23` passed; `0` failed
+- Visible review: output and handoff verified in separate visible gedit
+  windows through their exact R7 filenames; no global desktop title list
+  surfaced
+- Active blocks: `S10R-BLOCK-006`, `S10R-BLOCK-008`, and
+  `S10R-BLOCK-009`
+- `S10R-BLOCK-006`:
+  `active_candidate_cross_view_corner_ownership_rule_registered_pending_Flamestrike_decision_no_field`
+- Resolved block IDs: none
+- Evaluation, implementation, Step 10 closeout, Step 11, DCC, Unreal,
+  production, staging, commit, and push: unauthorized
+- Pre-execution checkpoint: `Saved/ProjectRecovery/20260720-102116/`
+- Required next task: separate Flamestrike rule-result decision only
+
+## S10R-006-R7-A Corner-Ownership Rule A01 Contract Preparation And Execution Approval
+
+- Date: 2026-07-20
+- Preparation authority: Flamestrike's approved `S10R-006-R6-A` selection
+- Candidate contract ID: `A005-CR-S10R-006-R7-A-CVCOR-A01`
+- Candidate rule ID: `S10R-006-R7-A-CVCOR-A01`
+- Artifact classification: candidate
+- Proposed rule: gap-local exact midpoint threshold with predecessor ownership
+  on the lower open half and successor ownership at the tie and upper open
+  half, expressed only in the existing non-periodic q ledger
+- Scope: G_0 through G_3 only; abstract upright owner labels only
+- Historical I10-010-A: unchanged candidate history; Step 10R classification
+  remains `requires_revision`
+- R5 owned intervals and open gaps: `4` and `4`
+- Preparation validation: `16/16` locked inputs matched; `23` later-execution
+  gates defined; no missing required phrase; exact input hashes matched
+- q instances, owner instances, samples, coordinates, seams, joins, closures,
+  fields, fills, surfaces, topology, and geometry: `0`
+- Contract execution during preparation: not performed
+- Candidate rule registration or approval: not performed
+- Active blocks: `S10R-BLOCK-006`, `S10R-BLOCK-008`, and
+  `S10R-BLOCK-009`
+- Resolved block IDs: none
+- Evaluation, implementation, Step 10 closeout, Step 11, DCC, Unreal,
+  production, staging, commit, and push: unauthorized
+- Pre-preparation checkpoint: `Saved/ProjectRecovery/20260720-095818/`
+- Contract SHA-256:
+  `d1c0905cc51d3b33d000d07f27b6aff05979f9c6ffde4f9145b53b0e1047e431`
+- Visible review: final on-disk contract opened in a visible gedit window and
+  verified through its exact filename in the desktop title
+- Pre-status-closeout checkpoint: `Saved/ProjectRecovery/20260720-100319/`
+- Execution approver: Flamestrike
+- Execution approval statement: `approved`
+- Approval context: direct response while the exact visible contract and its
+  execution-approval question were active
+- Authority granted: exact execution of
+  `A005-CR-S10R-006-R7-A-CVCOR-A01` only
+- Candidate rule approval: not granted
+- Execution status: approved but not started; mandatory restart boundary
+  preserved
+- Required next task: after restart, re-verify all locked inputs and execute
+  only this contract; stop for the separate rule-result decision
+
+## S10R-006-R6-A Option Selection
+
+- Date: 2026-07-17
+- Final authority: Flamestrike
+- Reviewed technical result:
+  `candidate_cross_view_corner_ownership_authority_decision_surface_ready_for_Flamestrike`
+- Evidence-based recommendation: `S10R-006-R6-A`
+- Approval statement: `approved`
+- Selected option: `S10R-006-R6-A`
+- Authority granted: preparation only of one separate bounded cross-view
+  corner-ownership rule contract
+- R6-BLOCK: unselected; reference only after decision
+- Four R5 corner gaps: unchanged, unowned, and blocked
+- `S10R-BLOCK-006`:
+  `active_pending_separate_cross_view_corner_ownership_rule_contract`
+- `S10R-BLOCK-008` and `S10R-BLOCK-009`: active unchanged
+- Resolved block IDs: none
+- Gap assignments, q instances, owners, seams, joins, closures, samples,
+  coordinates, fields, fills, surfaces, topology, and geometry: `0`
+- Corner-rule approval, evaluation, implementation, Step 10 closeout, Step
+  11, DCC, Unreal, production, staging, commit, and push: unauthorized
+- Pre-closeout checkpoint: `Saved/ProjectRecovery/20260717-230928/`
+- Post-decision validation: `20/20` passed; `0` failed
+- Post-decision visible review: updated output and handoff verified in
+  dedicated read-only terminal windows through exact A005 titles; no global
+  desktop title list surfaced
+- Post-decision checkpoint: `Saved/ProjectRecovery/20260717-231315/`
+- Required next task: separate corner-rule contract preparation only
+
+## S10R-006-R6-A Cross-View Corner-Ownership Authority Execution
+
+- Date: 2026-07-17
+- Execution approver: Flamestrike
+- Execution approval: `approved`
+- Contract ID: `A005-CR-S10R-006-R6-A-CVCOA-DEC-A01`
+- Technical result:
+  `candidate_cross_view_corner_ownership_authority_decision_surface_ready_for_Flamestrike`
+- Artifact classification: candidate
+- Required options: `S10R-006-R6-A` and `S10R-006-R6-BLOCK`
+- Candidate recommendation: `S10R-006-R6-A`, unselected
+- Selected option: none
+- Historical I10-010-A: unchanged candidate history; Step 10R classification
+  remains `requires_revision`
+- R5 owned arcs and unowned gaps: `4` and `4`
+- Gap assignments, q instances, owners, seams, joins, closures, samples,
+  coordinates, fields, fills, surfaces, topology, and geometry: `0`
+- Active blocks: `S10R-BLOCK-006`, `S10R-BLOCK-008`, and
+  `S10R-BLOCK-009`
+- Resolved block IDs: none
+- Option selection, corner-rule preparation or approval, evaluation,
+  implementation, downstream work, staging, commit, and push: unauthorized
+- Pre-execution checkpoint: `Saved/ProjectRecovery/20260717-225132/`
+- Independent validation: `20/20` passed; `0` failed
+- Visible review: output and handoff verified in dedicated read-only terminal
+  windows through exact A005 titles; no global desktop title list surfaced
+- Completion checkpoint: `Saved/ProjectRecovery/20260717-230149/`
+- Option decision: pending Flamestrike
+
+## S10R-006-R6-A Cross-View Corner-Ownership Authority Contract Preparation
+
+- Date: 2026-07-17
+- Preparation approver: Flamestrike
+- Approval statement: `approved`
+- Approval context: direct response to preparation only of the R6 authority
+  decision contract recommended by the post-R5 Core reassessment
+- Contract ID: `A005-CR-S10R-006-R6-A-CVCOA-DEC-A01`
+- Artifact classification: candidate
+- Required options: `S10R-006-R6-A` and `S10R-006-R6-BLOCK`
+- Candidate recommendation: `S10R-006-R6-A`, unselected
+- Selected option: none
+- Historical I10-010-A: unchanged candidate history; Step 10R classification
+  remains `requires_revision`
+- R5 owned arcs and blocked gaps: `4` and `4`
+- Gap assignments, q instances, owners, seams, joins, closures, samples,
+  coordinates, fields, fills, surfaces, topology, and geometry: `0`
+- Active blocks: `S10R-BLOCK-006`, `S10R-BLOCK-008`, and
+  `S10R-BLOCK-009`
+- Resolved block IDs: none
+- Contract execution, option selection, corner-rule preparation or approval,
+  evaluation, implementation, downstream work, staging, commit, and push:
+  unauthorized
+- Preparation checkpoint: `Saved/ProjectRecovery/20260717-223527/`
+- Preparation validation: passed; `13/13` locked inputs matched before
+  controlled status updates; both options exact and unselected; zero forbidden
+  outputs; no staged paths
+- Contract SHA-256:
+  `31026cb66c7d6bb7ece475e5a25400812e917a3268b5b5f3fd65a4159b0318f9`
+- Visible review: final on-disk contract verified in the dedicated read-only
+  terminal window `A005_R6_CORNER_AUTHORITY_CONTRACT_REVIEW`; no global
+  desktop title list surfaced
+- Completion checkpoint: `Saved/ProjectRecovery/20260717-224926/`
+- Required next task: separate contract-execution approval
+
+## S10R-006-R5-A Bounded Rule Decision
+
+- Date: 2026-07-17
+- Final authority: Flamestrike
+- Reviewed technical result:
+  `pass_bounded_symbolic_lane_boundary_coupling_rule_registered_with_four_blocked_corner_gaps`
+- Approval statement: `approved`
+- Decision: approve the exact rule as authoritative bounded symbolic
+  interpretation for the four owned cardinal arcs only
+- Approved rule components: non-periodic q, four separated lane intervals,
+  q_L, B_v, and C_L, all unevaluated
+- Blocked corner gaps preserved: `4`, unowned
+- Cross-lane seams, cross-view seams, joins, wrap, and closure: absent and
+  unauthorized
+- `S10R-BLOCK-006`:
+  `active_approved_lane_boundary_coupling_rule_four_corner_gaps_unowned_no_field`
+- `S10R-BLOCK-008` and `S10R-BLOCK-009`: active unchanged
+- Resolved block IDs: none
+- Per-record q instances, samples, coordinates, seams, joins, closures,
+  fields, fills, surfaces, topology, and geometry: `0`
+- Rule evaluation, field implementation, Step 10 closeout, Step 11, DCC,
+  Unreal, production, staging, commit, and push: unauthorized
+- Pre-closeout checkpoint: `Saved/ProjectRecovery/20260717-220427/`
+- Candidate execution validation: `26/26` passed; `0` failed
+- Falsification audit: `16/16` passed; `0` failed
+- Post-decision validation: `26/26` passed; `0` failed
+- Post-decision visible review: authoritative output and handoff verified in
+  dedicated read-only terminal windows through exact A005 titles; no global
+  desktop title list surfaced
+- Completion checkpoint: `Saved/ProjectRecovery/20260717-221123/`
+- Required next task after closeout: Core reassessment; no next-rule design,
+  evaluation, field, or implementation authority
+
+## S10R-006-R5-A Lane-Boundary Coupling-Rule A01 Execution
+
+- Date: 2026-07-17
+- Approver: Flamestrike
+- Execution approval: “I approve”
+- Contract ID: `A005-CR-S10R-006-R5-A-LBCR-A01`
+- Technical result:
+  `pass_bounded_symbolic_lane_boundary_coupling_rule_registered_with_four_blocked_corner_gaps`
+- Artifact classification: candidate interpretation pending Flamestrike
+- Abstract parameter definitions: `1`
+- Lane interval definitions: `4`, pairwise disjoint
+- Blocked corner gaps: `4`, unowned
+- Symbolic boundary parameterizations: `1`, unevaluated
+- Symbolic coupling descriptors: `1`, unevaluated
+- Per-record q instances and evaluated samples: `0`
+- Transforms, pairs, coordinates, seams, joins, closures, fields, fills,
+  surfaces, topology, and geometry: `0`
+- Proof-only holdouts: `14`
+- `S10R-BLOCK-006`:
+  `active_candidate_lane_boundary_coupling_rule_pending_rule_decision`
+- `S10R-BLOCK-008` and `S10R-BLOCK-009`: active unchanged
+- Resolved block IDs: none
+- Rule approval, evaluation, implementation, downstream work, staging,
+  commit, and push: unauthorized
+- Pre-execution checkpoint: `Saved/ProjectRecovery/20260717-212328/`
+- Independent validation: `26/26` passed; `0` failed
+- Falsification audit: `16/16` passed; `0` failed
+- Visible review: output and handoff verified in dedicated read-only terminal
+  windows through exact A005 titles; no global desktop title list surfaced
+- Completion checkpoint: `Saved/ProjectRecovery/20260717-220024/`
+- Rule-result decision: pending Flamestrike
+
+## S10R-006-R5-A Lane-Boundary Coupling-Rule A01 Contract Preparation
+
+- Date: 2026-07-17
+- Preparation authority: authoritative R4-A selection plus Flamestrike's
+  direct `proceed` at the exact next-task boundary
+- Contract ID: `A005-CR-S10R-006-R5-A-LBCR-A01`
+- Rule ID: `S10R-006-R5-A-LBCR-A01`
+- Artifact classification: candidate
+- Proposed parameter: dimensionless q, non-periodic, counterclockwise from
+  +X when viewed from +Z
+- Proposed lane intervals: `4`, pairwise disjoint
+- Preserved corner gaps: `4`, explicitly unowned and blocked
+- Proposed formulas: q_L, B_v, and C_L, unevaluated interpretation only
+- Fail-closed falsification checks: `16`
+- Mandatory BLOCK fallback: present
+- Locked inputs: `18/18` matched
+- Per-record q values, samples, coordinates, seams, joins, closure, fields,
+  fills, surfaces, topology, and geometry: `0`
+- Active blocks: `S10R-BLOCK-006`, `S10R-BLOCK-008`, and
+  `S10R-BLOCK-009`
+- Resolved block IDs: none
+- Rule approval, implementation, downstream work, staging, commit, and push:
+  unauthorized
+- Contract SHA-256:
+  `ac17ba4beb12d5370cce6562c3846a24f3541a062112bca02e2ef850d0134a96`
+- Preparation checkpoint: `Saved/ProjectRecovery/20260717-211158/`
+- Completion checkpoint: `Saved/ProjectRecovery/20260717-212144/`
+- Visible review: verified in dedicated read-only terminal window titled
+  `A005_R5_COUPLING_RULE_CONTRACT_REVIEW`; no global desktop title list
+  surfaced
+- Next task: separately approved record-only contract execution
+
+## S10R-006-R4-A Coupling-Authority Option Selection
+
+- Date: 2026-07-17
+- Approver: Flamestrike
+- Execution approval: “approved”
+- Contract ID: `A005-CR-S10R-006-R4-A-LBCA-DEC-A01`
+- Scope: record-only two-option lane-to-H_v coupling-authority surface
+- Candidate option A: preparation only of a later separate coupling-rule
+  contract
+- Candidate block option: preserve the approved uncoupled R3 method
+- Evidence-based recommendation: `S10R-006-R4-A`
+- Flamestrike approval statement: “ok lets follow your recommendation”
+- Selected option: `S10R-006-R4-A`
+- Authority granted: preparation only of a separate bounded lane-to-H_v
+  coupling-rule contract
+- R3 symbolic lanes and approved records: `4` and `12`
+- Proof-only holdouts: `14`
+- Boundary parameter, interval, orientation, and coupling-function
+  definitions: `0`
+- Seams, joins, closure, samples, coordinates, fields, fills, surfaces,
+  topology, and geometry: `0`
+- `S10R-BLOCK-006`:
+  `active_pending_separate_lane_boundary_coupling_rule_contract`
+- Other active blocks: `S10R-BLOCK-008` and `S10R-BLOCK-009`, unchanged
+- Resolved block IDs: none
+- Coupling-rule preparation: authorized for one separate bounded contract
+- Coupling rule, field implementation, Step 10 closeout, Step 11, DCC,
+  Unreal, production, staging, commit, and push: unauthorized
+- Pre-execution checkpoint: `Saved/ProjectRecovery/20260717-203139/`
+- Independent validation: `20/20` passed; `0` failed
+- Visible review: output and handoff verified in separate gedit windows
+  through an exact A005-title filter; handoff editor-modified marker present,
+  so that buffer was not saved, closed, interacted with, or used as authority
+- Global desktop title list surfaced: no
+- Completion checkpoint: `Saved/ProjectRecovery/20260717-204411/`
+- Post-decision validation: `20/20` passed; `0` failed
+- Post-decision visible review: current handoff verified in a clean standalone
+  gedit window; current on-disk output verified in a dedicated read-only
+  terminal window; older modified buffers excluded from authority
+- Global desktop title list surfaced: no
+- Post-decision checkpoint: `Saved/ProjectRecovery/20260717-210211/`
+- Required next task after closeout: separate coupling-rule contract
+  preparation only
+
+## S10R-006-R4-A Coupling-Authority Decision Contract Preparation
+
+- Date: 2026-07-17
+- Preparation authority: Flamestrike's approval of preparation only plus full
+  evidence-bound authority within the current task
+- Contract ID: A005-CR-S10R-006-R4-A-LBCA-DEC-A01
+- Scope: lane-to-H_v coupling authority only
+- Candidate option A: later coupling-rule contract preparation only
+- Candidate block option: preserve uncoupled R3 method
+- Selected option: none
+- Locked inputs: 15/15 matched
+- Candidate contract artifacts: 1
+- Coupling parameter, interval, orientation, and function definitions: 0
+- Seams, joins, closure, samples, coordinates, fields, fills, surfaces,
+  topology, and geometry: 0
+- Resolved block IDs: 0
+- Staged paths: 0
+- Visible review: exact A005 contract title verified; editor modified marker
+  present, so the buffer was not saved, closed, or used as authority
+- Preparation checkpoint: Saved/ProjectRecovery/20260717-201546/
+- Next task: separately approved record-only contract execution
+
+## S10R-006-R3-A Bounded Symbolic Method Decision
+
+- Date: 2026-07-17
+- Final authority: Flamestrike
+- Reviewed result:
+  pass_bounded_symbolic_method_registered_no_field_coupling
+- Approval statement: “approved”
+- Decision: approve the exact method as authoritative bounded symbolic
+  interpretation only
+- Approved method scope: four independent lanes, twelve construction records,
+  rank u, v = t, unevaluated adjacent-record weights, and unevaluated N3/K80
+  homothetic family
+- Lane-to-boundary coupling: absent and unauthorized
+- Field implementation: unauthorized
+- Proof-only holdouts: 14
+- Active blocks: S10R-BLOCK-006, S10R-BLOCK-008, S10R-BLOCK-009
+- Resolved block IDs: 0
+- Field samples, target coordinates, fills, surfaces, topology, and geometry: 0
+- Step 10 closeout, Step 11, DCC, Unreal, production, staging, commit, and
+  push: blocked or unauthorized
+- Pre-closeout checkpoint: Saved/ProjectRecovery/20260717-195523/
+- Post-decision validation: 20/20 passed; 0 failed
+- Post-decision visible review: updated output and handoff verified in
+  separate clean gedit windows through an exact A005-title filter
+- Next authority state: Core reassessment required
+
+## S10R-006-R3-A Abstract-Field Method A01 Execution
+
+- Date: 2026-07-17
+- Approver: Flamestrike
+- Execution approval: “approved”
+- Contract ID: A005-CR-S10R-006-R3-A-AFM-A01
+- Scope: record and audit only the exact symbolic method; no field-like output
+- Technical result:
+  pass_bounded_symbolic_method_registered_no_field_coupling
+- Construction lanes: 4
+- Approved construction records: 12
+- Proof-only holdouts: 14
+- Lane-to-boundary coupling: absent
+- Cross-lane seams and top/upright joins: absent
+- Field samples, target coordinates, fills, surfaces, topology, and geometry: 0
+- Active blocks: S10R-BLOCK-006, S10R-BLOCK-008, S10R-BLOCK-009
+- Resolved block IDs: 0
+- Independent validation: 20/20 passed; 0 failed
+- Pre-execution checkpoint: Saved/ProjectRecovery/20260717-193433/
+- Visible review: output and handoff verified in separate gedit windows through
+  an exact A005-title filter; no global desktop title list surfaced
+- Method decision: pending Flamestrike
+- Method implementation, downstream work, staging, commit, and push:
+  unauthorized
+
+## S10R-006-R3-A Abstract-Field Method A01 Contract Preparation
+
+- Date: 2026-07-17
+- Preparation authority: selected S10R-006-R2-A route plus Flamestrike's
+  “full approval to move forward until we reach the next step”
+- Contract ID: A005-CR-S10R-006-R3-A-AFM-A01
+- Artifact classification: candidate
+- Method: four independent ordered symbolic lanes; u by exact within-side
+  rank; v = t; adjacent-record symbolic weights; uncoupled N3/K80 homothetic
+  analytic family
+- Frozen construction records: 12/12 exact
+- Proof-only holdouts: 14
+- Embedded input hashes: 18/18 matched
+- Resolved block IDs: 0
+- Field samples, target coordinates, couplings, seams, fills, surfaces,
+  topology, and geometry: 0
+- Staged paths: 0
+- Visible review: verified in a dedicated gedit window through an exact
+  A005-title filter
+- Execution: not authorized
+- Required next step: visible contract review and separate execution decision
+
+## S10R-006-R2-A Option Selection
+
+- Date: 2026-07-17
+- Final authority: Flamestrike
+- Exact offered choices: `S10R-006-R2-A` or `S10R-006-R2-BLOCK`
+- Flamestrike response: `approved`
+- Selected option: `S10R-006-R2-A`
+- Codex evidence choice: `S10R-006-R2-A`
+- Authorized scope: preparation only of a separate abstract-field method
+  contract
+- `S10R-BLOCK-006`:
+  `active_pending_separate_abstract_field_method_contract`
+- `S10R-BLOCK-008` and `S10R-BLOCK-009`: active unchanged
+- Resolved block IDs: `0`
+- Physical correspondence, target coordinates, field samples, fills,
+  surfaces, topology, and geometry: `0`
+- Method execution, Step 10 closeout, Step 11, DCC, Unreal, production,
+  staging, commit, and push: unauthorized
+- Pre-preparation checkpoint: `Saved/ProjectRecovery/20260717-190616/`
+
+## S10R-006-R2-A Post-Bridge Field-Authority Candidate Execution
+
+- Date: 2026-07-17
+- Approver: Flamestrike
+- Execution approval: `approved`
+- Contract ID: `A005-CR-S10R-006-R2-A-PBFA-DEC-A01`
+- Scope: record-only two-option authority audit, independent validation,
+  visible review, checkpoint, and mandatory option-decision stop
+- Technical result:
+  `candidate_post_bridge_field_authority_decision_surface_ready_for_Flamestrike`
+- Option `S10R-006-R2-A`: candidate recommendation; permits only later
+  preparation of a separate abstract-field method contract if selected
+- Option `S10R-006-R2-BLOCK`: candidate block-preservation option
+- Selected option: none
+- Approved symbolic construction owners: front primary XZ `6`; left primary
+  YZ `6`; total `12`
+- Proof-only validation holdouts: back `6`; right `8`; total `14`
+- Physical transforms, pairs, target coordinates, centers, pivots, and
+  anchors: `0`
+- Field samples, fills, surfaces, topology, and geometry: `0`
+- Resolved block IDs: `0`
+- Active blocks: `S10R-BLOCK-006`, `S10R-BLOCK-008`, and `S10R-BLOCK-009`
+- Step 10 closeout, Step 11, DCC, Unreal, production, staging, commit, and
+  push: blocked or unauthorized
+- First auditor launch: stopped before a registered validation result on a
+  read-only schema path; proof-only compatibility interruption
+- Correction: wrapper/frozen-record parser paths only; no evidence, option,
+  authority, block, or output change
+- Corrected independent validation: `20/20` passed; `0` failed
+- Final package/status confirmation: `22/22` passed; `0` failed
+- Visible review: candidate output and decision handoff verified in separate
+  gedit windows
+- Pre-action checkpoint: `Saved/ProjectRecovery/20260717-185031/`
+- Output decision: pending Flamestrike visible option decision
+
+## S10R-006-R1-A Bounded Bridge Decision Closeout
+
+- Date: 2026-07-17
+- Final authority: Flamestrike
+- Reviewed technical result:
+  `pass_normalized_primary_owner_bridge_ready_for_Flamestrike_decision`
+- Codex evidence recommendation: approve the exact candidate result within
+  its bounded symbolic scope
+- Flamestrike result approval:
+  `I agree with your recommendation approved`
+- Closeout-contract preparation approval: `approved create it`
+- Closeout execution approval: `yes approved`
+- Contract ID: `A005-CR-S10R-006-R1-A-NPOB-DC-A01`
+- Decision registry: `authoritative for bounded S10R-006-R1-A normalized
+  primary-owner bridge implementation only`
+- Approved copied records: `12`, each `approved bounded interpretation`
+- Construction-owner split: front primary XZ `6`; left primary YZ `6`
+- Validation holdouts: back `6`; right `8`; total `14`; all `proof only`
+- Frozen technical validation: `24/24` passed; `0` failed
+- Source changes, order defects, crossings, and bounded holdout
+  contradictions: `0`
+- Physical transforms, pairs, target coordinates, centers, pivots, and
+  anchors: `0`
+- Field samples, fills, surfaces, topology, and geometry: `0`
+- Historical `blocked_source_authority_missing`: preserved authoritative
+  technical history
+- Active blocks preserved: `S10R-BLOCK-006`, `S10R-BLOCK-008`, and
+  `S10R-BLOCK-009`
+- Resolved block IDs: `0`
+- Step 10 closeout, Step 11, DCC, Unreal, production, staging, commit, and
+  push: blocked or unauthorized
+- Next technical method or contract selected: none
+- Pre-action checkpoint: `Saved/ProjectRecovery/20260717-180113/`
+- Independent closeout validation: pending registered `28/28` audit
+- First closeout audit launch: `27/28`; proof-only `G27` failure because the
+  sandboxed auditor could not access the desktop window list; all substantive
+  and write-scope gates passed and the visible windows were independently
+  verified outside the sandbox
+- Required recovery: rerun the unchanged complete auditor with desktop access;
+  no evidence, decision, mapping, holdout, classification, or block change
+- Second closeout audit launch: desktop access succeeded but the editor
+  windows had exited before sampling; `27/28` passed and only `G27` failed
+- Required visibility recovery: reopen the exact output and reset/resume files
+  in a persistent editor session, verify them live, and immediately rerun the
+  unchanged complete auditor
+- Final complete closeout validation: `28/28` gates passed; `0` failed
+- Final visible review: persistent output/reset-resume editor session verified
+- Substantive validation failures across all launches: `0`
+- Post-validation checkpoint: `Saved/ProjectRecovery/20260717-181134/`
+- Mandatory restart: required after validation, checkpoint, and visible
+  review
+
+## S10R-006-R1-A Execution Approval And Candidate Validation
+
+- Date: 2026-07-17
+- Approver: Flamestrike
+- Execution approval: `I approve it`
+- Reviewed contract:
+  `steps/S10R_006_R1_A_NORMALIZED_PRIMARY_OWNER_BRIDGE_EXECUTION_CONTRACT.md`
+- Contract ID: `A005-CR-S10R-006-R1-A-NPOB-EXEC-A01`
+- Scope: build only the twelve normalized primary-owner records, audit the
+  fourteen validation-only holdouts, validate independently, produce and
+  visibly review the unfilled package, checkpoint, and stop
+- Pre-action checkpoint: `Saved/ProjectRecovery/20260717-174106/`
+- Technical result:
+  `pass_normalized_primary_owner_bridge_ready_for_Flamestrike_decision`
+- Construction-owner records: front primary XZ `6`; left primary YZ `6`;
+  total `12`
+- Validation-only holdouts: back `6`; right `8`; total `14`
+- Preserved identity: exact source trace `t`; `v = t`; K80 at `t = 0`; N3
+  at `t = 1`; owner view, side, within-side order, and Step 05 handedness
+  preserved
+- Source trace changes, order ambiguities, reversals, crossings, and explicit
+  bounded holdout contradictions: `0`
+- Physical source-to-target transforms, physical pairs, and target trace
+  coordinates: `0`
+- Field samples, fills, surfaces, topology, and geometry: `0`
+- First validation launch: proof-only `G21` write-scope failure caused by
+  leading-character removal in the Git porcelain parser plus collapsed
+  allowlisted evidence-directory reporting; no evidence or mapping defect
+- Compatibility correction: parser and directory recognition only; no rule,
+  input, mapping, holdout, board, or decision-condition change
+- Complete independent validation rerun: `24/24` gates passed; `0` failed
+- Visible review: the unfilled board and candidate output record were opened
+  and their desktop windows were verified
+- Completion checkpoint: `Saved/ProjectRecovery/20260717-175029/`
+- Candidate classification: `candidate implementation of approved bounded
+  interpretation rule pending Flamestrike`
+- Output approval: pending Flamestrike visible result decision
+- Active blocks: `S10R-BLOCK-006`, `S10R-BLOCK-008`, and `S10R-BLOCK-009`
+- Step 10 closeout, Step 11, DCC, Unreal, production, staging, commit, and
+  push: blocked or unauthorized
+- Mandatory restart: active after completed validation, visible review, and
+  checkpoint
+
+## S10R-006-R1-A Normalized Primary-Owner Bridge Decision
+
+- Date: 2026-07-17
+- Final authority: Flamestrike
+- Delegation: `you make the decision based on evidence ... and present it to me for approval`
+- Codex evidence decision: select `S10R-006-R1-A — Normalized Primary-Owner Bridge`
+- Flamestrike approval: `yes approved`
+- Decision classification: `authoritative for bounded recovery routing and normalized common-frame interpretation only`
+- Construction owners: front primary XZ `6`; left primary YZ `6`; total `12`
+- Validation holdouts: back validation-only `6`; right validation-only `8`; total `14`
+- Symbolic mapping rule: preserve exact source trace `t`; register `v = t`; K80 at `t = 0`; N3 at `t = 1`; preserve owner view, side, within-side order, and Step 05 handedness
+- Physical source-to-target transform: none
+- Physical cross-view pairs: `0`
+- Target trace coordinates: `0`
+- Field samples, fills, surfaces, topology, and geometry: `0`
+- Rejected routes preserved: proof-only scale transforms, physical pairing, S10R-003-B, nearest/visual matching, panel normalization, assumed transform, and post-result tolerance
+- Prior `blocked_source_authority_missing` result: unchanged authoritative technical history
+- Candidate execution contract: `A005-CR-S10R-006-R1-A-NPOB-EXEC-A01`
+- Execution approved at this decision-only boundary: no; superseded by the
+  separate execution approval entry above
+- Active blocks: `S10R-BLOCK-006`, `S10R-BLOCK-008`, and `S10R-BLOCK-009`
+- Step 10 closeout, Step 11, DCC, Unreal, production, staging, commit, and push: blocked or unauthorized
+- Pre-preparation checkpoint: `Saved/ProjectRecovery/20260717-173511/`
+- Next possible gate: separate exact approval of the visible execution contract only
+
+## S10R-006-A Blocked Technical-Result Decision Closeout
+
+- Date: 2026-07-17
+- Final authority: Flamestrike
+- Reviewed result: `blocked_source_authority_missing`
+- Result statement: `approved blocked result`
+- Closeout contract preparation authority: preparation only of a separate
+  decision-closeout contract
+- Closeout execution approval: `approved`
+- Contract ID: `A005-CR-S10R-006-A-BCTG-DC-A01`
+- Decision: approve `blocked_source_authority_missing` as the authoritative
+  bounded S10R-006-A technical result only
+- Blueprint label: `Blueprint block: source authority missing`
+- Frozen technical validation: 29 gates passed, 0 failed
+- Frozen governing inputs: 19 matched, 0 mismatched
+- N3/K80 analytic compatibility: pass; homothetic scale `0.8`; containment
+  value `0.512`
+- Approved dependency rules: 4/4 available; implementations: 0
+- Approved top mappings: 16 unique, endpoint-exclusive
+- Approved bounded upright traces: 26 in source owner-view pixel frames
+- Common-frame authority: 0/26 available; 26/26 missing
+- Exact comparisons: 0; explicit mismatches: 0
+- Inferred correspondences, new transforms, upright target coordinates, and
+  physical cross-view pairs: 0
+- Field samples, fills, surfaces, topology, and geometry: 0
+- Active blocks preserved: `S10R-BLOCK-006`, `S10R-BLOCK-008`, and
+  `S10R-BLOCK-009`
+- Step 10 closeout, Step 11, DCC, Unreal, production, staging, commit, and
+  push: blocked or unauthorized
+- Pre-closeout checkpoint: `Saved/ProjectRecovery/20260717-171757/`
+- Recovery route selected: none
+- Mandatory restart: required after closeout validation, checkpoint, and
+  visible review
+
+## S10R-006-A Boundary-Compatibility And Technical-Gate A01 Execution
+
+- Date: 2026-07-17
+- Approver: Flamestrike
+- Reset statement: `reset has been done`
+- Contract-preparation approval: `approved`
+- Execution approval: `approved`
+- Contract ID: `A005-CR-S10R-006-A-BCTG-A01`
+- Result: `blocked_source_authority_missing`
+- Blueprint label: `Blueprint block: source authority missing`
+- Locked inputs: 19 matched, 0 mismatched
+- Approved dependency rules: 4/4 available; implementations: 0
+- N3/K80 analytic compatibility: pass; homothetic scale `0.8`; containment
+  value `0.512`
+- Approved top mappings: 16 unique, endpoint-exclusive
+- Approved bounded upright traces: 26 in source owner-view pixel frames
+- Common-frame trace authority: 0/26 available
+- Exact trace comparisons: 0; explicit mismatches: 0
+- Inferred correspondence or transform: 0
+- Field samples: 0; fills, surfaces, topology, geometry: 0
+- Candidate output decision: pending Flamestrike visible review
+- Active blocks: `S10R-BLOCK-006`, `S10R-BLOCK-008`, and `S10R-BLOCK-009`
+- Step 10 closeout, Step 11, DCC, Unreal, production, staging, commit, and
+  push: blocked or unauthorized
+- Pre-action checkpoint: `Saved/ProjectRecovery/20260717-161842/`
+- Compatibility interruptions: initial registry-key parser stopped before
+  output; local Pillow nearest-neighbor API stopped the board stage after only
+  allowlisted JSON writes; supported API correction and complete deterministic
+  rerun changed no audit rule or value
+- Mandatory restart: required after technical validation, visible review, and
+  Flamestrike decision routing
+
+## S10R-003-A CL-003 Target-Space Mapping A01 Decision Closeout
+
+- Date: 2026-07-17
+- Final authority: Flamestrike
+- Delegation: `you choose based on evidence`
+- Codex evidence decision: `approve`
+- Flamestrike affirmation: `great approved`
+- Closeout-contract preparation approval: `approved`
+- Closeout execution approval: `approved`
+- Contract ID: `A005-CR-S10R-003-A-MAP-DC-A01`
+- Decision: approve the exact sixteen-record endpoint-exclusive equal-rank
+  mapping as `approved bounded interpretation` for abstract target-space
+  CL-003 coordinates only
+- Frozen technical validation: 31 gates passed, 0 failed
+- Exact mappings: 16; unique serialized coordinates: 16
+- Endpoint assignments: 0; duplicate coordinates: 0
+- Source displacement: 0 px; mapped non-top samples: 0
+- Physical cross-view pairs: 0
+- Centers, pivots, physical C-003 sizes, snap anchors, closures, annuli, hidden
+  interfaces, fills, fields, surfaces, topology, and geometry: 0
+- Frozen mapping ledger classification: unchanged `candidate interpretation`
+- Decision registry: `authoritative for bounded S10R-003-A mapping only`
+- `C003-TSIB-A02-K80-BLOCK-001`: resolved only at bounded mapping level
+- Historical `S10R-BLOCK-003`: resolved only at bounded S10R-003-A mapping
+  level; historical manifest unchanged
+- Active blocks: `S10R-BLOCK-006`, `S10R-BLOCK-008`, and `S10R-BLOCK-009`
+- `S10R-BLOCK-006`: mapping dependency satisfied; boundary compatibility and
+  all technical gates remain unexecuted; field samples: 0
+- Step 10 closeout, Step 11, DCC, Unreal, production, staging, commit, and
+  push: blocked or unauthorized
+- Pre-closeout checkpoint: `Saved/ProjectRecovery/20260717-155655/`
+- Mandatory restart: required after closeout validation, checkpoint, and
+  visible review
+- Next possible gate after mandatory restart: preparation only of a separate
+  `S10R-006-A` boundary-compatibility and technical-gate contract; no such
+  contract or execution is approved here
+
+## S10R-003-A CL-003 Target-Space Mapping A01 Execution Approval And Candidate Validation
+
+- Date: 2026-07-17
+- Approver: Flamestrike
+- Statement: `approved`
+- Reviewed before approval:
+  `steps/S10R_003_A_CL003_TARGET_SPACE_MAPPING_EXECUTION_A01_CONTRACT.md`
+- Contract ID: `A005-CR-S10R-003-A-MAP-A01`
+- Scope: map only the 16 authoritative top-view CL-003 samples by the exact
+  endpoint-exclusive equal-rank rule, validate independently, show the
+  evidence-versus-interpretation board visibly, and stop
+- Pre-action checkpoint: `Saved/ProjectRecovery/20260717-153840/`
+- Candidate target parameters per sector: `1/5`, `2/5`, `3/5`, `4/5`
+- Candidate mappings: 16; unique serialized coordinates: 16
+- Endpoint assignments: 0; duplicate coordinates: 0
+- Source displacement: 0 px; mapped non-top samples: 0
+- Physical cross-view pairs: 0
+- Source fits, overlays, closures, snap anchors, centers, pivots, and physical
+  C-003 dimension claims: 0
+- Fields, surfaces, topology, and geometry: 0
+- Independent validation: 31 gates passed, 0 failed
+- Compatibility note: first builder launch stopped before ledger/board output
+  on the local Pillow nearest-neighbor API; the supported constant was used
+  without changing the approved mapping rule, inputs, or scope; complete rerun
+  and audit passed
+- Candidate classification: `candidate interpretation`
+- Output approval: pending Flamestrike visible review
+- Mapping authority promoted: false
+- `S10R-006-A`, Step 10 closeout, Step 11, DCC, Unreal, and production:
+  stopped
+- Staging, commit, and push authorized: false
+
+## C-003 Target-Space Inner-Boundary A02 K80 Decision Closeout
+
+- Date: 2026-07-17
+- Final authority: Flamestrike
+- Delegated observational selector: Codex
+- Resume affirmation: `K80 was observationally selected under Flamestrike delegation`
+- Closeout execution approval: `Approved`
+- Decision: approve `C003_TSIB_K80_MEDIUM_APRON`
+- Exact rule: `abs(x / 56)^3 + abs(y / 44)^3 = 1`
+- Exact abstract target extents: `112 x 88 cm`
+- K80 classification: `approved bounded interpretation rule` for the abstract
+  C-003 outer boundary at CL-003 only
+- K90 classification: `rejected candidate`
+- K70 classification: `rejected candidate`
+- Leave-blocked option: `reference only; not selected`
+- Original A02 validation: 26 gates passed, zero failed; all technical proofs
+  preserved byte-identical
+- Source samples moved: 0; target CL-003 coordinates: 0
+- Source mapping, physical cross-view pairing, C-003 physical size, CL-002
+  closure, annulus, field, surface, topology, or geometry approved: no
+- `S10R-003-A`: boundary dependency satisfied; mapping remains unimplemented
+- `S10R-006-A`: remains conditional and unimplemented
+- Active blocks: mapping execution, `S10R-BLOCK-006`, `S10R-BLOCK-008`, and
+  `S10R-BLOCK-009`
+- Step 10 closeout, Step 11, DCC, Unreal, and production: stopped
+- Commit/push authorized: false
+- Pre-closeout checkpoint: `Saved/ProjectRecovery/20260717-151831/`
+- Mandatory restart: required after validation, visible opening, and final
+  checkpoint
+- Next permitted gate: preparation only of a separate `S10R-003-A` CL-003
+  target-space mapping execution contract; execution requires separate exact
+  approval
+
+## Step 10R N3 Integration Revision A01 Output Decision
+
+- Date: 2026-07-17
+- Approver: Flamestrike
+- Statement: `I approve all 7 recommended decisions exactly as listed`
+- Visible review: Step 10R N3 integration decision board opened in Image
+  Viewer and foregrounded; output record package opened in gedit
+- `S10R-001`: authority delta accepted for bounded Step 10R routing
+- `S10R-002-A`: construction-origin centered N3 target frame approved with no
+  source-pixel relation
+- `S10R-003-A`: four-sector order-preserving CL-003 convention approved
+  conditionally on a separately approved C-003 target-space inner boundary;
+  no target coordinate authorized
+- `S10R-004-A`: exact 26 registered upright traces approved only within their
+  declared sectors
+- `S10R-005-A`: piecewise ruled strips approved only between adjacent approved
+  traces inside declared owner-view sectors
+- `S10R-006-A`: normalized ruled-field rule approved conditionally; no field
+  may be created until every declared dependency and technical gate passes
+- `S10R-007`: complete dependency audit accepted while Step 11 remains blocked
+- Approved decisions: 7; approved conditional interpretation rules: 2;
+  implemented rules: 0
+- Active blocks: `S10R-BLOCK-003`, `S10R-BLOCK-006`, `S10R-BLOCK-008`, and
+  `S10R-BLOCK-009`
+- Original source, all six physical targets, exact contacts, and existing Step
+  01-Step 10 files changed: no
+- Target coordinate, filled footprint, implemented field, surface, topology,
+  or geometry created or approved: no
+- Step 10 closeout, Step 11, geometry, and production: stopped
+- Commit/push authorized: false
+- Pre-closeout checkpoint: `Saved/ProjectRecovery/20260717-123959/`
+- Mandatory restart: required
+- Next permitted gate: preparation only of a separate C-003 target-space
+  inner-boundary interpretation contract after restart; execution and all
+  downstream work require separate exact approval
+
+## Top C-004 Outer-Perimeter Interpretation Rule A01 Option Decision
+
+- Date: 2026-07-17
+- Approver: Flamestrike
+- Statement: `N3`
+- Approval question answered: select N2, N3, N4, or leave blocked as the
+  abstract `140 cm x 110 cm` target-space perimeter rule only
+- Visible review: matched source/N2/N3/N4 review board opened in Image Viewer
+  and foregrounded; plain-English output record opened in gedit
+- Decision: approve `TOP_C004_OPIR_N3_ROUNDED_OVAL`
+- Exact rule: `abs(x / 70)^3 + abs(y / 55)^3 = 1`
+- N3 classification: `approved bounded interpretation rule` for abstract
+  target-space perimeter shape only
+- N2 classification: `rejected candidate`
+- N4 classification: `rejected candidate`
+- Leave-blocked option: not selected
+- Technical validation: 25 validators passed, zero failed; all 22 locked
+  inputs matched; all three options retained exact `140 cm x 110 cm` extents
+- Original source, six physical targets, and authoritative contacts changed:
+  no
+- Source alignment, source center, source placement, or CL-003 mapping
+  approved: no
+- Filled footprint, continuous transition field, surface, topology, or
+  geometry approved: no
+- Step 10 revision, Step 11, geometry, and production: stopped
+- Commit/push authorized: false
+- Option-decision pre-closeout checkpoint:
+  `Saved/ProjectRecovery/20260717-114122/`
+- Next authority required: a separate visible contract before source
+  placement, contact mapping, transition integration, Step 10 revision, or
+  downstream work
+
+## C-004 Boundary-Transition Interpretation Rule A01 Output Decision
+
+- Date: 2026-07-17
+- Approver: Flamestrike
+- Statement: `I approve your recommendation`
+- Visible review: five-view evidence-versus-interpretation board opened in
+  Image Viewer and foregrounded; plain-English output record opened in gedit
+- Decision: accept
+  `partial_candidate_rule_upright_views_only_top_remains_blocked`
+- Upright evidence: 26 approved outer anchors produced 26 unique same-side
+  candidate traces, zero ambiguous pairings, and zero crossing trace pairs
+- Contact preservation: all 47 CL-003 samples remained at zero displacement;
+  C-001, C-002, C-003, CL-001, and CL-002 remained unchanged
+- Accepted trace classification: `candidate interpretation` for later Step 10
+  consideration only
+- Top result: 0 approved outer anchors, 16 locked CL-003 samples, and 0
+  candidate traces; top perimeter remains blocked
+- Continuous transition field: blocked; none was created or approved
+- Validation: 24 validators passed, zero failed; all 30 locked inputs matched
+  through technical validation
+- Authority effect: A01 output is authoritative for the bounded decision only;
+  its handoff is authoritative for partial-rule routing only; input lock,
+  registry, ledger, validation, and board remain `proof only`
+- Original source, six physical targets, and authoritative contacts changed:
+  no
+- Step 10 revision, Step 11, geometry, and production: stopped
+- Commit/push authorized: false
+- Output-decision checkpoint: `Saved/ProjectRecovery/20260717-105931/`
+- Next authority required: a separate visible contract before defining the top
+  C-004 perimeter, creating a continuous transition field, revising Step 10,
+  or advancing downstream
+
+## Dual-Option Feasibility A02 Output Decision
+
+- Date: 2026-07-17
+- Approver: Flamestrike
+- Statement: `I approve your recommendation`
+- Visible review: matched A/B board opened in Image Viewer and foregrounded;
+  the plain-English output record opened in gedit
+- Decision: accept `both_options_blocked`
+- Option A result: `fail_CL002_exact_contact_preservation`
+- Option A classification: `rejected candidate`; scaling C-003 preserved all
+  47 CL-003 samples but preserved all exact CL-002 samples in zero of five
+  views
+- Option B result:
+  `blocked_missing_source_owned_C004_outer_to_inner_transition_authority`
+- Option B classification: `blocked candidate; not disproved`; no candidate
+  transition or silhouette was created
+- Validation: 40 validators passed, zero failed; all 30 locked inputs matched
+- Original source, six physical targets, and authoritative contacts changed:
+  no
+- Authority effect: A02 output is authoritative for the bounded decision only;
+  its handoff is authoritative for blocked routing only; calculations and
+  review board remain `proof only`
+- Step 10 revision, Step 11, interpretation implementation, geometry, and
+  production: stopped
+- Commit/push authorized: false
+- Output-decision checkpoint: `Saved/ProjectRecovery/20260717-103156/`
+- Next authority required: a separate visible contract before defining a
+  source-visible C-004 boundary transition, revising targets, testing a hybrid,
+  or advancing downstream
+
+## Source-Versus-Measurement Reconciliation A01 Output Decision
+
+- Date: 2026-07-17
+- Approver: Flamestrike
+- Statement: `approved`
+- Visible review: the initial generic open was not visible; the board was then
+  opened directly in Image Viewer and its window was brought to the foreground
+- Decision: accept the blocked result
+- Exact result:
+  `blocked_contact_preservation_requires_unapproved_C003_scale_or_local_C004_deformation`
+- Plain-English meaning: shrinking all of C-004 moves its approved contact
+  points by different amounts, and one rigid C-003 movement cannot preserve all
+  16 contacts
+- Accepted as proof: ten required C-004 size factors, 16 exact CL-003 source
+  samples, and the independently replayed contact mismatch calculations
+- Adjusted silhouette accepted: no; none was created
+- Original drawings and six physical targets changed: no
+- Authority effect: blocked result and routing approved; rules remain reference
+  only and diagnostics remain `proof only`
+- Step 10 revision, Step 11, interpretation implementation, geometry, and
+  production: stopped
+- Commit/push authorized: false
+- Output-decision pre-closeout checkpoint:
+  `Saved/ProjectRecovery/20260717-095601/`
+- Next authority required: a separate explicit decision to permit C-003 scale,
+  permit a bounded C-004 outer-only adjustment, change physical targets, or
+  leave the asset blocked
+
+## Scale-Authority Recovery A01 Output Decision
+
+- Date: 2026-07-17
+- Approver: Flamestrike
+- Statement: `Yes`
+- Approval question answered: approve recording A01 as blocked and keep the
+  work stopped while deciding whether the drawing proportions or requested
+  measurements should change
+- Decision: `blocked_by_unresolved_source_target_conflict`
+- Plain-English meaning: the drawings and requested sizes do not match; A01
+  changed neither one
+- Preserved: original drawings, approved physical-target intent, prior valid
+  source evidence, and all 10 disclosed conflicts
+- Recovered world-space scale or construction frame: none
+- Authority effect: blocked result and recovery routing approved; diagnostic
+  images and transforms remain `proof only`
+- Step 10 revision, Step 11, interpretation, geometry, and production:
+  stopped
+- Commit/push authorized: false
+- Output-decision pre-closeout checkpoint:
+  `Saved/ProjectRecovery/20260717-093113/`
+- Next authority required: a separate explicit decision to preserve the
+  requested sizes, preserve the drawing proportions, or leave the conflict
+  blocked
+
+## Scale-Authority Reassessment Direction Approval
+
+- Date: 2026-07-16
+- Approver: Flamestrike
+- Statement: `approved`
+- Reviewed visibly: local multiview normalization process amendment and A005 scale-authority reassessment package
+- Approved direction: `A005-SR-01-B`, `A005-SR-02-A`, `A005-SR-03-A`, and `A005-SR-04-A`
+- Meaning: printed dimensions are approximate production targets; front/left are candidate upright owners; top candidate relative mapping is +12.60059213% X relative to Y; future transforms must use original coordinates
+- Exclusion: direction approval did not reclassify records, authorize rectification, revise Step 10, or begin geometry
+
+## Scale-Authority Core Reassessment Contract Approval
+
+- Date: 2026-07-16
+- Approver: Flamestrike
+- Statement: `approved`
+- Contract: `A005-CR-SA-A01`
+- Historical-role choice: `A005-CR-ROLE-A`, retrospective source-role correction
+- Authorized scope: field-level authority reassessment, conditional drift/status records, validation, and visible review package only
+- Blocked: rewriting existing Step 01-Step 10 records, generic-pipeline edits, rectification, Step 10 revision, Step 11, geometry, commit, and push
+- Output decision: approved after visible review; recorded below
+
+## Scale-Authority Core Reassessment Output Approval
+
+- Date: 2026-07-16
+- Approver: Flamestrike
+- Statement: `approved`
+- Reviewed visibly: output record, affected-record index, classification, status, validation, and Drift Ledger entry
+- Decision: accept `A005-CR-ROLE-A` and promote the bounded field-level classification and status override to `authoritative for recovery routing only`
+- Preserved evidence: source pixels, crops, coordinates, spans, rows, landmarks, contacts, hashes, semantic/orientation evidence, and existing blocked findings remain valid within their recorded bounds
+- Superseded authority: printed dimensions as exact calibrators, their centimeter-per-pixel results, dependent world conclusions, and the current dimension-locked Step 10 route
+- Output-decision checkpoint: `Saved/ProjectRecovery/20260716-111546`
+- Next permitted action: after mandatory restart, preparation of the separate scale-authority recovery contract only
+- Exclusion: recovery execution, rectification, Step 10 revision, Step 11, geometry, commit, and push
 
 ## Plan Approval
 

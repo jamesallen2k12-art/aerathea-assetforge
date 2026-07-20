@@ -1,0 +1,118 @@
+{
+  "schema": "aerathea.step_10_geometry_interpretation_manifest.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "step_id": "STEP_10",
+  "date": "2026-07-16",
+  "status": "candidate_decision_surface_pending_flamestrike",
+  "artifact_classification": "candidate",
+  "decision": "Record the candidate recommendation for each complete interpretation item without promoting any rule before Flamestrike review.",
+  "option_registry": "manifests/STEP_10_INTERPRETATION_OPTION_REGISTRY.json",
+  "decision_items": [
+    {
+      "id": "I10-001",
+      "candidate_recommended_option": "I10-001-A",
+      "candidate_rule_summary": "Preserve originals and use a later dimension-locked, component-aware rectification sub-gate with full distortion records and no averaged scale.",
+      "flamestrike_decision": "pending",
+      "approved_option": null,
+      "approved_rule": null,
+      "step_11_ready": false
+    },
+    {
+      "id": "I10-002",
+      "candidate_recommended_option": "I10-002-A",
+      "candidate_rule_summary": "Build C-001 from rectified normal-owner silhouettes with faceted ruled transitions and no new extrema beyond 120 x 90 x 220 cm.",
+      "flamestrike_decision": "pending",
+      "approved_option": null,
+      "approved_rule": null,
+      "step_11_ready": false
+    },
+    {
+      "id": "I10-003",
+      "candidate_recommended_option": "I10-003-A",
+      "candidate_rule_summary": "Keep C-002 and C-003 as separate nested masonry courses; rectify within the 35 cm base span and interpret only unowned seams.",
+      "flamestrike_decision": "pending",
+      "approved_option": null,
+      "approved_rule": null,
+      "step_11_ready": false
+    },
+    {
+      "id": "I10-004",
+      "candidate_recommended_option": "I10-004-A",
+      "candidate_rule_summary": "Preserve source-owned C-004 rubble edges and close only unowned gaps by contained straight chords inside the 140 x 110 cm envelope.",
+      "flamestrike_decision": "pending",
+      "approved_option": null,
+      "approved_rule": null,
+      "step_11_ready": false
+    },
+    {
+      "id": "I10-005",
+      "candidate_recommended_option": "I10-005-A",
+      "candidate_rule_summary": "Keep C-005/C-006/C-007 decoration face-owned, assert no cross-face continuity, and add no hidden-face motif by default.",
+      "flamestrike_decision": "pending",
+      "approved_option": null,
+      "approved_rule": null,
+      "step_11_ready": false
+    },
+    {
+      "id": "I10-006",
+      "candidate_recommended_option": "I10-006-B",
+      "candidate_rule_summary": "Preserve visible contacts and close components independently with minimum bounded overlap wholly inside source-invisible contact volume.",
+      "flamestrike_decision": "pending",
+      "approved_option": null,
+      "approved_rule": null,
+      "step_11_ready": false
+    },
+    {
+      "id": "I10-007",
+      "candidate_recommended_option": "I10-007-A",
+      "candidate_rule_summary": "Seal the interpreted C-004 footprint with a flat undecorated underside at the authoritative Z=0 ground station.",
+      "flamestrike_decision": "pending",
+      "approved_option": null,
+      "approved_rule": null,
+      "step_11_ready": false
+    },
+    {
+      "id": "I10-008",
+      "candidate_recommended_option": "I10-008-A",
+      "candidate_rule_summary": "Use separate watertight C-001 through C-004 primary components and keep C-005 through C-007 as face-owned decorative systems unless later promoted by source-visible need.",
+      "flamestrike_decision": "pending",
+      "approved_option": null,
+      "approved_rule": null,
+      "step_11_ready": false
+    },
+    {
+      "id": "I10-009",
+      "candidate_recommended_option": "I10-009-A",
+      "candidate_rule_summary": "Use the midpoint of the direct C-004 width/depth endpoint roles at Z=0 as an explicitly interpreted production origin and pivot.",
+      "flamestrike_decision": "pending",
+      "approved_option": null,
+      "approved_rule": null,
+      "step_11_ready": false
+    },
+    {
+      "id": "I10-010",
+      "candidate_recommended_option": "I10-010-A",
+      "candidate_rule_summary": "Extend the approved normal-owner axes into dominant-normal surface ownership; treat ties as explicitly interpreted transitions and keep perspective non-metric.",
+      "flamestrike_decision": "pending",
+      "approved_option": null,
+      "approved_rule": null,
+      "step_11_ready": false
+    }
+  ],
+  "candidate_package_summary": {
+    "decision_items": 10,
+    "pending_decisions": 10,
+    "approved_rules": 0,
+    "rejected_options": 0,
+    "approved_omissions": 0,
+    "remaining_blocked_decisions": 10,
+    "rectification_subgate_required_if_recommendations_approved": true,
+    "step_10_pass": false,
+    "step_11_authorized": false
+  },
+  "exact_evidence_status_changed": false,
+  "interpretation_authority_created": false,
+  "rectification_executed": false,
+  "geometry_created": false,
+  "flamestrike_output_decisions": "pending"
+}

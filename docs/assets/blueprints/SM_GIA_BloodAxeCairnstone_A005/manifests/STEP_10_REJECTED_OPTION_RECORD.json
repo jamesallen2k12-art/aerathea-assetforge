@@ -1,0 +1,27 @@
+{
+  "schema": "aerathea.step_10_rejected_option_record.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "step_id": "STEP_10",
+  "date": "2026-07-16",
+  "status": "candidate_empty_pending_flamestrike_decisions",
+  "artifact_classification": "candidate",
+  "decision": "Record only options Flamestrike explicitly rejects; candidate assessments are not rejection authority.",
+  "option_registry": "manifests/STEP_10_INTERPRETATION_OPTION_REGISTRY.json",
+  "rejected_options": [],
+  "candidate_not_recommended_options_pending_decision": [
+    "I10-001-B",
+    "I10-002-B",
+    "I10-003-B",
+    "I10-004-B",
+    "I10-005-B",
+    "I10-006-A",
+    "I10-007-B",
+    "I10-008-B",
+    "I10-009-B",
+    "I10-010-B"
+  ],
+  "rejection_authority_created": false,
+  "downstream_reuse_prohibitions": [],
+  "flamestrike_output_decisions": "pending",
+  "geometry_created": false
+}

@@ -1,0 +1,123 @@
+{
+  "schema": "aerathea.s10r_006_r5_a_lane_boundary_coupling_rule_a01_validation.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-006-R5-A-LBCR-A01",
+  "rule_id": "S10R-006-R5-A-LBCR-A01",
+  "date": "2026-07-17",
+  "status": "pass_approved_rule_closeout_independently_validated_visible_review_verified",
+  "artifact_classification": "proof only",
+  "independent_auditor": "Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r006_r5_a_lane_boundary_coupling_rule_a01.py",
+  "pre_execution_checkpoint": "Saved/ProjectRecovery/20260717-212328/",
+  "completion_checkpoint": "Saved/ProjectRecovery/20260717-220024/",
+  "prewrite_input_verification": {
+    "locked_inputs": 18,
+    "matched_inputs": 18,
+    "mismatched_inputs": 0,
+    "immutable_inputs": 15,
+    "controlled_status_inputs": 3,
+    "contract_sha256": "ac17ba4beb12d5370cce6562c3846a24f3541a062112bca02e2ef850d0134a96",
+    "staged_paths": 0
+  },
+  "previsibility_validation": {
+    "gate_count": 26,
+    "passed_gate_count": 25,
+    "failed_gate_count": 1,
+    "result": "expected_previsibility_fail_closed",
+    "failed_gate": 26,
+    "cause": "Output and handoff had not yet been opened and exact-title verified.",
+    "evidence_or_authority_failure": false
+  },
+  "independent_validation": {
+    "gate_count": 26,
+    "passed_gate_count": 26,
+    "failed_gate_count": 0,
+    "result": "pass",
+    "auditor": "Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r006_r5_a_lane_boundary_coupling_rule_a01.py"
+  },
+  "post_decision_validation": {
+    "gate_count": 26,
+    "passed_gate_count": 26,
+    "failed_gate_count": 0,
+    "result": "pass",
+    "scope": "approved bounded symbolic interpretation for four owned cardinal arcs only",
+    "blocked_corner_gaps_preserved": 4,
+    "rule_evaluation_authorized": false,
+    "field_implementation_authorized": false,
+    "resolved_block_ids": [],
+    "auditor": "Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r006_r5_a_lane_boundary_coupling_rule_a01.py"
+  },
+  "visible_review": {
+    "verified": true,
+    "output_record": "verified in dedicated read-only terminal window through exact title A005_R5_RULE_OUTPUT_REVIEW",
+    "decision_handoff": "verified in dedicated read-only terminal window through exact title A005_R5_RULE_HANDOFF_REVIEW",
+    "global_desktop_titles_surfaced": false
+  },
+  "post_decision_visible_review": {
+    "verified": true,
+    "output_record": "verified in dedicated read-only terminal window through exact title A005_R5_RULE_APPROVED_OUTPUT_REVIEW",
+    "decision_handoff": "verified in dedicated read-only terminal window through exact title A005_R5_RULE_APPROVED_HANDOFF_REVIEW",
+    "global_desktop_titles_surfaced": false
+  },
+  "validated_facts": {
+    "technical_result": "pass_bounded_symbolic_lane_boundary_coupling_rule_registered_with_four_blocked_corner_gaps",
+    "rule_status": "approved_bounded_symbolic_rule_four_blocked_corner_gaps_unowned",
+    "symbolic_lanes": 4,
+    "approved_construction_records": 12,
+    "proof_only_holdouts": 14,
+    "abstract_parameter_definitions": 1,
+    "lane_interval_definitions": 4,
+    "blocked_gap_definitions": 4,
+    "pairwise_disjoint_owned_intervals": true,
+    "periodic_wrap": false,
+    "closed_360_ownership": false,
+    "candidate_rule_registered": true,
+    "coupling_rule_approved": true,
+    "output_counts": {
+      "per_record_parameter_instances": 0,
+      "evaluated_parameter_samples": 0,
+      "evaluated_boundary_samples": 0,
+      "evaluated_coupling_samples": 0,
+      "source_to_target_transforms": 0,
+      "physical_pairs": 0,
+      "target_coordinates": 0,
+      "centers": 0,
+      "pivots": 0,
+      "anchors": 0,
+      "seams": 0,
+      "joins": 0,
+      "closures": 0,
+      "fields": 0,
+      "fills": 0,
+      "surfaces": 0,
+      "topology": 0,
+      "geometry": 0
+    },
+    "active_block_ids": [
+      "S10R-BLOCK-006",
+      "S10R-BLOCK-008",
+      "S10R-BLOCK-009"
+    ],
+    "resolved_block_ids": []
+  },
+  "authorization_flags": {
+    "candidate_rule_registered": true,
+    "coupling_rule_approved": true,
+    "rule_evaluation_authorized": false,
+    "field_implementation_authorized": false,
+    "step10_closeout_authorized": false,
+    "step11_authorized": false,
+    "dcc_authorized": false,
+    "unreal_authorized": false,
+    "production_authorized": false,
+    "staging_authorized": false,
+    "commit_authorized": false,
+    "push_authorized": false
+  },
+  "changed_path_audit": {
+    "execution_allowlist_verified": true,
+    "unexpected_scoped_paths": [],
+    "staged_paths": []
+  },
+  "required_stop": "complete; stop for Core reassessment with no next-rule design, evaluation, field, or implementation authority",
+  "post_decision_checkpoint": "Saved/ProjectRecovery/20260717-221123/"
+}

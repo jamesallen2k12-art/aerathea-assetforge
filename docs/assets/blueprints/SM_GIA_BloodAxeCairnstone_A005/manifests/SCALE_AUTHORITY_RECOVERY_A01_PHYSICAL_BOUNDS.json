@@ -1,0 +1,108 @@
+{
+  "schema": "aerathea.scale_authority_recovery_physical_bounds.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-SAR-A01",
+  "choice_id": "A005-SAR-BOUNDS-A",
+  "date": "2026-07-17",
+  "status": "approved_execution_input_candidate_output_authority",
+  "artifact_classification": "candidate",
+  "execution_approval": {
+    "approver": "Flamestrike",
+    "statement": "approved",
+    "date": "2026-07-17",
+    "scope": "A005-CR-SAR-A01 with A005-SAR-BOUNDS-A"
+  },
+  "source_role": "The printed values are approximate source-authored production targets, not exact historical per-panel calibration premises.",
+  "production_target_role": "Approval of A005-SAR-BOUNDS-A selects the values as final physical design targets for future production planning. It does not make the original panel layouts metrically exact.",
+  "targets": [
+    {
+      "id": "BOUND-OVERALL-Z",
+      "component_id": "complete_asset",
+      "axis": "Z",
+      "role": "overall_height",
+      "value_cm": 220,
+      "source_label_role": "approximate_target_evidence",
+      "production_role": "absolute_design_target"
+    },
+    {
+      "id": "BOUND-C001-X",
+      "component_id": "C-001",
+      "axis": "X",
+      "role": "maximum_width",
+      "value_cm": 120,
+      "source_label_role": "approximate_target_evidence",
+      "production_role": "absolute_design_target"
+    },
+    {
+      "id": "BOUND-C001-Y",
+      "component_id": "C-001",
+      "axis": "Y",
+      "role": "maximum_depth",
+      "value_cm": 90,
+      "source_label_role": "approximate_target_evidence",
+      "production_role": "absolute_design_target"
+    },
+    {
+      "id": "BOUND-C004-X",
+      "component_id": "C-004",
+      "axis": "X",
+      "role": "footprint_width",
+      "value_cm": 140,
+      "source_label_role": "approximate_target_evidence",
+      "production_role": "absolute_design_target"
+    },
+    {
+      "id": "BOUND-C004-Y",
+      "component_id": "C-004",
+      "axis": "Y",
+      "role": "footprint_depth",
+      "value_cm": 110,
+      "source_label_role": "approximate_target_evidence",
+      "production_role": "absolute_design_target"
+    },
+    {
+      "id": "BOUND-C004-Z",
+      "component_id": "C-004",
+      "axis": "Z",
+      "role": "authored_base_height",
+      "value_cm": 35,
+      "source_label_role": "approximate_target_evidence",
+      "production_role": "absolute_design_target"
+    }
+  ],
+  "shape_owners": {
+    "front": "primary_XZ_upright_source_owner",
+    "left": "primary_YZ_upright_source_owner",
+    "back": "validation_view_with_nonconflicting_visible_detail_ownership",
+    "right": "validation_view_with_nonconflicting_visible_detail_ownership",
+    "top": "XY_review_view_using_approved_relative_factor"
+  },
+  "transform_direction": {
+    "top_x_over_y_factor": "1.1260059213",
+    "top_x_relative_expansion_percent": "12.60059213",
+    "top_y_factor": "1.0",
+    "method": "one_global_original_coordinate_transform_per_complete_panel",
+    "local_warp_allowed": false
+  },
+  "authority_separation": {
+    "physical_targets": "intended future production size",
+    "source_pixels": "visible design evidence",
+    "global_panel_transforms": "cross-view comparison frame",
+    "historical_cm_per_px_results": "superseded_for_production_authority",
+    "target_source_conflict_policy": "record_and_block; do_not_locally_warp_or_create_geometry"
+  },
+  "permitted_consumers_after_output_approval": [
+    "scale-authority recovery routing",
+    "later Step 10 revision contract",
+    "later Step 11 production specification only after Step 10 approval"
+  ],
+  "blocked_consumers": [
+    "historical calibration rewrite",
+    "direct geometry generation",
+    "texture generation",
+    "DCC or Unreal work"
+  ],
+  "retroactive_historical_calibration_validation": false,
+  "geometry_created": false,
+  "step10_revised": false
+}

@@ -1,0 +1,103 @@
+{
+  "schema": "aerathea.s10r_006_r2_a_post_bridge_field_authority_dependency_audit.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-006-R2-A-PBFA-DEC-A01",
+  "date": "2026-07-17",
+  "status": "candidate_decision_dependency_surface_complete",
+  "artifact_classification": "proof only",
+  "governing_question": "Whether the bounded symbolic bridge is sufficient authority to prepare a later abstract-field method contract, without physical source authority or field implementation.",
+  "blueprint_authority": {
+    "step": "Step 10 - Unknowns And Interpretation Decision Gate",
+    "allowed": [
+      "written interpretation options",
+      "explicit rule proposals",
+      "approval rejection or blocked decisions"
+    ],
+    "blocked": [
+      "implementation",
+      "geometry creation",
+      "interpretation presented as measurement",
+      "silent rule selection"
+    ]
+  },
+  "bridge_authority": {
+    "classification": "authoritative for bounded S10R-006-R1-A normalized primary-owner bridge implementation only",
+    "approved_symbolic_records": 12,
+    "construction_owners": {
+      "front_primary_XZ": 6,
+      "left_primary_YZ": 6
+    },
+    "symbolic_rule": "v = t; K80 at t = 0 and v = 0; N3 at t = 1 and v = 1",
+    "physical_authority_created": false
+  },
+  "holdout_authority": {
+    "classification": "proof only validation holdout",
+    "total": 14,
+    "back_validation_only": 6,
+    "right_validation_only": 8,
+    "construction_use_authorized": false
+  },
+  "zero_authority_counts": {
+    "physical_source_target_transforms": 0,
+    "physical_cross_view_pairs": 0,
+    "target_trace_coordinates": 0,
+    "source_centers": 0,
+    "pivots": 0,
+    "anchors": 0,
+    "field_samples": 0,
+    "fills": 0,
+    "surfaces": 0,
+    "topology": 0,
+    "geometry": 0
+  },
+  "route_findings": [
+    {
+      "route_id": "S10R-006-R2-A",
+      "route": "bounded abstract-field method contract preparation",
+      "technical_eligibility": "candidate_decision_available",
+      "evidence_basis": "The approved symbolic bridge supplies an exact dimensionless owner-role and parameter framework, while Step 10 permits explicit bounded interpretation proposals.",
+      "authority_limit": "May authorize only preparation of a later method contract after Flamestrike selection; no method or field is authorized here.",
+      "physical_source_claim": false,
+      "block_resolution": false
+    },
+    {
+      "route_id": "S10R-006-R2-BLOCK",
+      "route": "preserve source-authority block",
+      "technical_eligibility": "candidate_block_option_available",
+      "evidence_basis": "The historical blocked_source_authority_missing result remains authoritative and physical correspondence remains zero.",
+      "authority_limit": "No new rule or method authority.",
+      "physical_source_claim": false,
+      "block_resolution": false
+    }
+  ],
+  "candidate_recommendation": {
+    "option_id": "S10R-006-R2-A",
+    "classification": "candidate recommendation only",
+    "selected": false,
+    "reason": "Smallest sufficient route that advances the current constraint while preserving all source, holdout, field, geometry, and downstream limits."
+  },
+  "active_blocks": [
+    {
+      "id": "S10R-BLOCK-006",
+      "status": "active_bounded_bridge_approved_no_field_and_no_physical_correspondence"
+    },
+    {
+      "id": "S10R-BLOCK-008",
+      "status": "active_prior_step10_decisions_pending"
+    },
+    {
+      "id": "S10R-BLOCK-009",
+      "status": "active_global_production_block"
+    }
+  ],
+  "resolved_block_ids": [],
+  "field_implementation_authorized": false,
+  "step10_closeout_authorized": false,
+  "step11_authorized": false,
+  "dcc_authorized": false,
+  "unreal_authorized": false,
+  "production_authorized": false,
+  "staging_authorized": false,
+  "commit_authorized": false,
+  "push_authorized": false
+}

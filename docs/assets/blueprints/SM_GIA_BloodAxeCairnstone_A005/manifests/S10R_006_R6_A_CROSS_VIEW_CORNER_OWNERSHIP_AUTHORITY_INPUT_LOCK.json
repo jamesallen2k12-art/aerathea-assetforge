@@ -1,0 +1,132 @@
+{
+  "schema": "aerathea.s10r_006_r6_a_cross_view_corner_ownership_authority_input_lock.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-006-R6-A-CVCOA-DEC-A01",
+  "date": "2026-07-17",
+  "status": "pass_pre_execution_input_lock",
+  "artifact_classification": "proof only",
+  "execution_approval": {
+    "approver": "Flamestrike",
+    "statement": "approved",
+    "scope": "Execute the R6 contract exactly as written: create only the record-based two-option authority surface, select neither option, validate, visibly review, checkpoint, and stop for the R6 option decision."
+  },
+  "pre_execution_checkpoint": "Saved/ProjectRecovery/20260717-225132/",
+  "contract_sha256": "31026cb66c7d6bb7ece475e5a25400812e917a3268b5b5f3fd65a4159b0318f9",
+  "git_state": {
+    "branch": "main",
+    "head": "f5259456b05a95ff5f7422ba2cabf0e288a85d03",
+    "status_line_count": 801,
+    "staged_paths": []
+  },
+  "locked_inputs": [
+    {
+      "path": "AGENTS.md",
+      "expected_sha256": "5d2d2637a58113f0a6f5ec92e40d8bb2bda9e03fb58b4868a0d9dfbb3b57ad55",
+      "actual_sha256": "5d2d2637a58113f0a6f5ec92e40d8bb2bda9e03fb58b4868a0d9dfbb3b57ad55",
+      "match": true,
+      "policy": "immutable during execution"
+    },
+    {
+      "path": "docs/projects/assetforge/BLOODAXE_CAIRNSTONE_PIXEL_EXACT_FRESH_START_MULTISTEP_PLAN.md",
+      "expected_sha256": "ba6784498d792dc85dd431c807f59620d6851af97b4cd15efe89c44a397b10b6",
+      "actual_sha256": "ba6784498d792dc85dd431c807f59620d6851af97b4cd15efe89c44a397b10b6",
+      "match": true,
+      "policy": "immutable during execution"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_PROJECT_CHARTER.md",
+      "expected_sha256": "1383a975b0c376be4c493fd41f3b81a2f94c2e62dce4a9b758e7a1d2e9e51d90",
+      "actual_sha256": "1383a975b0c376be4c493fd41f3b81a2f94c2e62dce4a9b758e7a1d2e9e51d90",
+      "match": true,
+      "policy": "immutable during execution"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_RESET_RESUME_STATE.md",
+      "expected_sha256": "8220c6a65859866b7b55985e70857fc38f57a4b542a53278e722668ee001cccf",
+      "actual_sha256": "8220c6a65859866b7b55985e70857fc38f57a4b542a53278e722668ee001cccf",
+      "match": true,
+      "policy": "controlled candidate-status update after prewrite verification"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_APPROVAL_LOG.md",
+      "expected_sha256": "9ef781eded07319f4f641e9018c8ad28de4bed77c2091dbb5d88b920cfe0bc6a",
+      "actual_sha256": "9ef781eded07319f4f641e9018c8ad28de4bed77c2091dbb5d88b920cfe0bc6a",
+      "match": true,
+      "policy": "controlled candidate-status update after prewrite verification"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_ARTIFACT_INDEX.md",
+      "expected_sha256": "472aac5872f28545438b359ddb3cd1f6a829feae6172d77668d03e1c9e3f5cc2",
+      "actual_sha256": "472aac5872f28545438b359ddb3cd1f6a829feae6172d77668d03e1c9e3f5cc2",
+      "match": true,
+      "policy": "controlled candidate-status update after prewrite verification"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_05_PIXEL_COORDINATE_FRAME_RECORD.json",
+      "expected_sha256": "ccfce6b8316369b512ff83eee11fd4385dd15b546f7b92da9e80b9e7ed959d1d",
+      "actual_sha256": "ccfce6b8316369b512ff83eee11fd4385dd15b546f7b92da9e80b9e7ed959d1d",
+      "match": true,
+      "policy": "immutable during execution"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_10R_N3_INTEGRATION_AUTHORITY_DELTA.json",
+      "expected_sha256": "b6a380a4ff0d456c45f30061b372d68600f747974d0c80170f520491f7c0f84a",
+      "actual_sha256": "b6a380a4ff0d456c45f30061b372d68600f747974d0c80170f520491f7c0f84a",
+      "match": true,
+      "policy": "immutable during execution"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_10_INTERPRETATION_OPTION_REGISTRY.json",
+      "expected_sha256": "ca83a60d1ec2e607b688b14605f100333c473cf094f1b3d4036ac52767ca64ea",
+      "actual_sha256": "ca83a60d1ec2e607b688b14605f100333c473cf094f1b3d4036ac52767ca64ea",
+      "match": true,
+      "policy": "immutable during execution"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/S10R_006_R5_A_LANE_BOUNDARY_COUPLING_RULE_A01_RULE_REGISTRY.json",
+      "expected_sha256": "0eb0e0a8abcc554209746f2437e9073951ae7896aca9606a70dd98b202e1edc3",
+      "actual_sha256": "0eb0e0a8abcc554209746f2437e9073951ae7896aca9606a70dd98b202e1edc3",
+      "match": true,
+      "policy": "immutable during execution"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/S10R_006_R5_A_LANE_BOUNDARY_COUPLING_RULE_A01_VALIDATION.json",
+      "expected_sha256": "ee155e6ce7f1da3dfdd1f448fcdaaf6d30038072da14fdcac60df98aed399b1d",
+      "actual_sha256": "ee155e6ce7f1da3dfdd1f448fcdaaf6d30038072da14fdcac60df98aed399b1d",
+      "match": true,
+      "policy": "immutable during execution"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/S10R_006_R5_A_LANE_BOUNDARY_COUPLING_RULE_A01_OUTPUT_RECORD.md",
+      "expected_sha256": "d39d9414c597769bceff1a441ec2f84d0735749ab49b0758bf27d2b3015539bb",
+      "actual_sha256": "d39d9414c597769bceff1a441ec2f84d0735749ab49b0758bf27d2b3015539bb",
+      "match": true,
+      "policy": "immutable during execution"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/handoffs/S10R_006_R5_A_LANE_BOUNDARY_COUPLING_RULE_A01_TO_DECISION_HANDOFF.md",
+      "expected_sha256": "dfe0f00da6b41082729ee8549b6a29ed8f483db144a9362e86c934d43009c84d",
+      "actual_sha256": "dfe0f00da6b41082729ee8549b6a29ed8f483db144a9362e86c934d43009c84d",
+      "match": true,
+      "policy": "immutable during execution"
+    }
+  ],
+  "pre_execution_state": {
+    "existing_r6_artifacts": [
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/S10R_006_R6_A_CROSS_VIEW_CORNER_OWNERSHIP_AUTHORITY_DECISION_CONTRACT.md"
+    ],
+    "owned_r5_arcs": 4,
+    "unowned_r5_corner_gaps": 4,
+    "selected_r6_options": 0,
+    "gap_assignments": 0,
+    "parameter_instances": 0,
+    "seams": 0,
+    "joins": 0,
+    "closures": 0,
+    "fields": 0,
+    "fills": 0,
+    "surfaces": 0,
+    "topology": 0,
+    "geometry": 0
+  }
+}

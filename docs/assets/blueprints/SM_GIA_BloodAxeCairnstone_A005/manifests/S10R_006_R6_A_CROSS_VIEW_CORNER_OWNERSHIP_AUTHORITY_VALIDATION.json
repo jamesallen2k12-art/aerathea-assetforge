@@ -1,0 +1,126 @@
+{
+  "schema": "aerathea.s10r_006_r6_a_cross_view_corner_ownership_authority_validation.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-006-R6-A-CVCOA-DEC-A01",
+  "date": "2026-07-17",
+  "status": "pass_selected_R6_A_closeout_independently_validated_visible_review_verified",
+  "artifact_classification": "proof only",
+  "independent_auditor": "Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r006_r6_a_cross_view_corner_ownership_authority.py",
+  "pre_execution_checkpoint": "Saved/ProjectRecovery/20260717-225132/",
+  "prewrite_input_verification": {
+    "locked_inputs": 13,
+    "matched_inputs": 13,
+    "mismatched_inputs": 0,
+    "immutable_inputs": 10,
+    "controlled_status_inputs": 3,
+    "contract_sha256": "31026cb66c7d6bb7ece475e5a25400812e917a3268b5b5f3fd65a4159b0318f9",
+    "staged_paths": 0
+  },
+  "previsibility_validation": {
+    "gate_count": 20,
+    "passed_gate_count": 19,
+    "failed_gate_count": 1,
+    "result": "expected_previsibility_fail_closed",
+    "failed_gate": 20,
+    "cause": "Output and handoff had not yet been opened and exact-title verified.",
+    "evidence_or_authority_failure": false
+  },
+  "independent_validation": {
+    "gate_count": 20,
+    "passed_gate_count": 20,
+    "failed_gate_count": 0,
+    "result": "pass",
+    "auditor": "Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r006_r6_a_cross_view_corner_ownership_authority.py"
+  },
+  "post_decision_validation": {
+    "gate_count": 20,
+    "passed_gate_count": 20,
+    "failed_gate_count": 0,
+    "result": "pass",
+    "selected_option": "S10R-006-R6-A",
+    "authority_granted": "preparation only of one separate bounded cross-view corner-ownership rule contract",
+    "blocked_corner_gaps_preserved": 4,
+    "corner_rule_authorized": false,
+    "rule_evaluation_authorized": false,
+    "field_implementation_authorized": false,
+    "resolved_block_ids": [],
+    "auditor": "Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r006_r6_a_cross_view_corner_ownership_authority.py"
+  },
+  "visible_review": {
+    "verified": true,
+    "output_record": "verified in dedicated read-only terminal window through exact title A005_R6_AUTHORITY_OUTPUT_REVIEW",
+    "decision_handoff": "verified in dedicated read-only terminal window through exact title A005_R6_AUTHORITY_HANDOFF_REVIEW",
+    "global_desktop_titles_surfaced": false
+  },
+  "post_decision_visible_review": {
+    "verified": true,
+    "output_record": "verified in dedicated read-only terminal window through exact title A005_R6_SELECTED_OUTPUT_REVIEW",
+    "decision_handoff": "verified in dedicated read-only terminal window through exact title A005_R6_SELECTED_HANDOFF_REVIEW",
+    "global_desktop_titles_surfaced": false
+  },
+  "validated_facts": {
+    "technical_result": "candidate_cross_view_corner_ownership_authority_decision_surface_ready_for_Flamestrike",
+    "owned_r5_arcs": 4,
+    "blocked_r5_gaps": 4,
+    "required_option_ids": [
+      "S10R-006-R6-A",
+      "S10R-006-R6-BLOCK"
+    ],
+    "selected_option": "S10R-006-R6-A",
+    "candidate_recommendation": "S10R-006-R6-A",
+    "historical_i10_010_delta": "requires_revision",
+    "output_counts": {
+      "selected_options": 1,
+      "gap_assignments": 0,
+      "gap_subintervals": 0,
+      "parameter_instances": 0,
+      "evaluated_samples": 0,
+      "corner_owners": 0,
+      "seams": 0,
+      "joins": 0,
+      "closures": 0,
+      "source_to_target_transforms": 0,
+      "physical_pairs": 0,
+      "target_coordinates": 0,
+      "centers": 0,
+      "pivots": 0,
+      "anchors": 0,
+      "fields": 0,
+      "fills": 0,
+      "surfaces": 0,
+      "topology": 0,
+      "geometry": 0
+    },
+    "active_block_ids": [
+      "S10R-BLOCK-006",
+      "S10R-BLOCK-008",
+      "S10R-BLOCK-009"
+    ],
+    "resolved_block_ids": []
+  },
+  "authorization_flags": {
+    "candidate_decision_surface_registered": true,
+    "option_selected": true,
+    "corner_rule_preparation_authorized": true,
+    "corner_rule_authorized": false,
+    "rule_evaluation_authorized": false,
+    "field_implementation_authorized": false,
+    "step10_closeout_authorized": false,
+    "step11_authorized": false,
+    "dcc_authorized": false,
+    "unreal_authorized": false,
+    "production_authorized": false,
+    "staging_authorized": false,
+    "commit_authorized": false,
+    "push_authorized": false
+  },
+  "changed_path_audit": {
+    "execution_allowlist_verified": true,
+    "unexpected_scoped_paths": [],
+    "staged_paths": []
+  },
+  "completion_checkpoint": "Saved/ProjectRecovery/20260717-230149/",
+  "pre_closeout_checkpoint": "Saved/ProjectRecovery/20260717-230928/",
+  "post_decision_checkpoint": "Saved/ProjectRecovery/20260717-231315/",
+  "required_stop": "complete; stop before separate bounded corner-ownership rule contract preparation"
+}

@@ -1,0 +1,93 @@
+{
+  "schema": "aerathea.s10r_006_r7_a_cross_view_corner_ownership_rule_a01_validation.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-006-R7-A-CVCOR-A01",
+  "rule_id": "S10R-006-R7-A-CVCOR-A01",
+  "date": "2026-07-20",
+  "status": "pass_post_decision_closeout_validation_23_of_23",
+  "artifact_classification": "proof only",
+  "technical_result": "pass_approved_bounded_cross_view_corner_ownership_rule_registered_no_implementation",
+  "validation_gates": [
+    {"gate": 1, "status": "pass", "subject": "all sixteen locked inputs match"},
+    {"gate": 2, "status": "pass", "subject": "contract hash and exact execution approval match"},
+    {"gate": 3, "status": "pass", "subject": "R6-A remains the selected preparation-only route"},
+    {"gate": 4, "status": "pass", "subject": "R5 remains approved bounded interpretation for four owned arcs only"},
+    {"gate": 5, "status": "pass", "subject": "four R5 owned intervals and four open gaps replay exactly"},
+    {"gate": 6, "status": "pass", "subject": "q remains non-periodic unwrapped and unevaluated"},
+    {"gate": 7, "status": "pass", "subject": "gap adjacencies use only approved construction-lane labels"},
+    {"gate": 8, "status": "pass", "subject": "every m_k is an exact symbolic rational midpoint"},
+    {"gate": 9, "status": "pass", "subject": "each lower branch maps only to its predecessor label"},
+    {"gate": 10, "status": "pass", "subject": "each upper branch maps only to its successor label"},
+    {"gate": 11, "status": "pass", "subject": "branches are total and disjoint over every open gap"},
+    {"gate": 12, "status": "pass", "subject": "existing R5 endpoint ownership is unchanged"},
+    {"gate": 13, "status": "pass", "subject": "G_3 creates no wrap modulo new lane or endpoint identification"},
+    {"gate": 14, "status": "pass", "subject": "historical I10-010-A remains revision-required candidate history"},
+    {"gate": 15, "status": "pass", "subject": "fourteen back/right records remain proof only"},
+    {"gate": 16, "status": "pass", "subject": "no top/upright ownership seam join interpolation or closure is defined"},
+    {"gate": 17, "status": "pass", "subject": "bounded symbolic rule is approved only within the exact Flamestrike decision scope"},
+    {"gate": 18, "status": "pass", "subject": "owner and q instances samples coordinates transforms pairs centers pivots and anchors remain zero"},
+    {"gate": 19, "status": "pass", "subject": "fields fills surfaces topology and geometry remain zero"},
+    {"gate": 20, "status": "pass", "subject": "all three blocks remain active and resolved block IDs remain empty"},
+    {"gate": 21, "status": "pass", "subject": "evaluation implementation downstream and Git authorization flags remain false"},
+    {"gate": 22, "status": "pass", "subject": "changed paths match execution allowlist and no path is staged"},
+    {"gate": 23, "status": "pass", "subject": "final post-decision output and handoff visibility verified before mandatory stop"}
+  ],
+  "summary": {
+    "gate_count": 23,
+    "passed_gate_count": 23,
+    "pending_gate_count": 0,
+    "failed_gate_count": 0
+  },
+  "falsification": {
+    "check_count": 22,
+    "passed_check_count": 22,
+    "pending_check_count": 0,
+    "failed_check_count": 0,
+    "block_fallback_triggered": false
+  },
+  "output_counts": {
+    "candidate_corner_rules": 1,
+    "per_point_owner_instances": 0,
+    "evaluated_q_instances": 0,
+    "samples": 0,
+    "coordinates": 0,
+    "seams": 0,
+    "joins": 0,
+    "closures": 0,
+    "fields": 0,
+    "fills": 0,
+    "surfaces": 0,
+    "topology": 0,
+    "geometry": 0
+  },
+  "independent_audit": {
+    "command": "python3 Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r006_r7_a_cross_view_corner_ownership_rule_a01.py",
+    "status": "pass_post_decision_closeout",
+    "gate_count": 23,
+    "passed_gate_count": 23,
+    "failed_gate_count": 0,
+    "pending_gate_count": 0
+  },
+  "candidate_visible_review": {
+    "verified": true,
+    "output_record": "verified in visible gedit window through exact filename S10R_006_R7_A_CROSS_VIEW_CORNER_OWNERSHIP_RULE_A01_OUTPUT_RECORD.md",
+    "decision_handoff": "verified in visible gedit window through exact filename S10R_006_R7_A_CROSS_VIEW_CORNER_OWNERSHIP_RULE_A01_TO_DECISION_HANDOFF.md",
+    "desktop_title_filter": "exact R7 output and handoff filenames only",
+    "global_desktop_titles_surfaced": false
+  },
+  "decision_closeout": {
+    "approver": "Flamestrike",
+    "decision": "approve",
+    "statement": "approved",
+    "approved_scope": "authoritative bounded symbolic owner-label interpretation over G_0 through G_3 only with no evaluation or implementation authority",
+    "resolved_block_ids": []
+  },
+  "post_decision_visible_review": {
+    "verified": true,
+    "output_record": "verified in visible gedit window through exact final post-decision filename S10R_006_R7_A_CROSS_VIEW_CORNER_OWNERSHIP_RULE_A01_OUTPUT_RECORD.md",
+    "decision_handoff": "verified in visible gedit window through exact final post-decision filename S10R_006_R7_A_CROSS_VIEW_CORNER_OWNERSHIP_RULE_A01_TO_DECISION_HANDOFF.md",
+    "desktop_title_filter": "exact R7 output and handoff filenames only",
+    "global_desktop_titles_surfaced": false
+  },
+  "required_stop": "After post-decision visibility verification, independent validation, and checkpointing, stop for Core reassessment."
+}

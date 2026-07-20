@@ -1,0 +1,113 @@
+{
+  "schema": "aerathea.source_vs_measurement_dual_option_comparison.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-SMR-A02",
+  "date": "2026-07-17",
+  "status": "both_options_blocked",
+  "artifact_classification": "proof only",
+  "option_A": {
+    "result": "fail_CL002_exact_contact_preservation",
+    "eligible_for_selection": false,
+    "meaning": "Analytically disproved under the exact CL-002 preservation gate."
+  },
+  "option_B": {
+    "result": "blocked_missing_source_owned_C004_outer_to_inner_transition_authority",
+    "eligible_for_selection": false,
+    "meaning": "Not disproved as a design direction, but untestable under current boundary ownership without adding a new interpretation rule."
+  },
+  "pre_registered_gate_matrix": [
+    {
+      "gate": "input_and_source_hash_integrity",
+      "option_A": "pass",
+      "option_B": "pass"
+    },
+    {
+      "gate": "six_physical_targets_unchanged",
+      "option_A": "pass",
+      "option_B": "pass"
+    },
+    {
+      "gate": "primary_view_target_frame_error",
+      "option_A": "pass_analytic_factor_replay_only",
+      "option_B": "blocked_no_traceable_candidate_transition"
+    },
+    {
+      "gate": "CL003_preservation",
+      "option_A": "pass_after_shared_C003_C004_map",
+      "option_B": "pass_zero_displacement_no_candidate_applied"
+    },
+    {
+      "gate": "CL002_preservation",
+      "option_A": "fail_nonzero_residuals_in_every_view",
+      "option_B": "pass_C003_unchanged"
+    },
+    {
+      "gate": "CL001_and_unaffected_component_preservation",
+      "option_A": "pass_C001_C002_unchanged",
+      "option_B": "pass_C001_C002_C003_unchanged"
+    },
+    {
+      "gate": "per_panel_displacement_statistics",
+      "option_A": "pass_reported",
+      "option_B": "blocked_candidate_coordinates_not_created"
+    },
+    {
+      "gate": "normalized_displacement_statistics",
+      "option_A": "pass_reported",
+      "option_B": "blocked_candidate_coordinates_not_created"
+    },
+    {
+      "gate": "affected_scope_counts",
+      "option_A": "pass_two_components_two_contacts",
+      "option_B": "pass_theoretical_C004_only_no_candidate_created"
+    },
+    {
+      "gate": "front_left_owner_compliance",
+      "option_A": "pass",
+      "option_B": "pass_no_conflicting_candidate_created"
+    },
+    {
+      "gate": "back_right_disagreement_disclosure",
+      "option_A": "pass_validation_factors_kept_separate",
+      "option_B": "pass_all_validation_factors_and_gaps_disclosed"
+    },
+    {
+      "gate": "top_evidence_role_compliance",
+      "option_A": "pass_no_world_or_geometry_promotion",
+      "option_B": "pass_top_perimeter_block_preserved"
+    },
+    {
+      "gate": "source_interpretation_separation",
+      "option_A": "pass_diagnostic_coordinates_only",
+      "option_B": "pass_no_candidate_transition_presented_as_source"
+    },
+    {
+      "gate": "hidden_sector_non_invention",
+      "option_A": "pass",
+      "option_B": "pass_stop_triggered_before_invention"
+    },
+    {
+      "gate": "forbidden_operation_audit",
+      "option_A": "pass",
+      "option_B": "pass"
+    },
+    {
+      "gate": "write_scope_and_stop_state",
+      "option_A": "pending_final_validation",
+      "option_B": "pending_final_validation"
+    }
+  ],
+  "technical_recommendation": {
+    "status": "none_both_ineligible",
+    "artifact_classification": "reference only",
+    "note": "Do not select either rule from A02. Option A failed; Option B preserved the narrower impact hypothesis but remains blocked by missing source-owned transition authority."
+  },
+  "source_and_targets_changed": false,
+  "hybrid_created": false,
+  "candidate_silhouette_created": false,
+  "world_frame_created": false,
+  "physical_cross_view_pixel_pairs_created": false,
+  "step10_revised": false,
+  "geometry_created": false,
+  "next_decision_required": "Flamestrike accepts or rejects the bounded A02 result. Any new C-004 boundary-interpretation rule, target revision, hybrid, or downstream step requires a separate contract."
+}

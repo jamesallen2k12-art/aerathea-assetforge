@@ -1,0 +1,194 @@
+{
+  "schema": "aerathea.step_10r_n3_integration_decision_registry.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-STEP10-REV-A01",
+  "date": "2026-07-17",
+  "status": "approved_seven_decision_set_with_conditional_blocks",
+  "artifact_classification": "authoritative for bounded Step 10R decisions",
+  "input_lock_sha256": "df6b68316b408d65d9de03ddedee9de1f62aae3acc4b04a87edb51f6d1f32bb4",
+  "technical_result": "revised_step10_candidate_decision_surface_ready_for_Flamestrike",
+  "decision_items": [
+    {
+      "id": "S10R-001",
+      "title": "Prior Step 10 authority delta",
+      "current_result": "approved_authority_delta_for_bounded_routing",
+      "sources": [
+        "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_10R_N3_INTEGRATION_AUTHORITY_DELTA.json"
+      ],
+      "dependencies": [],
+      "options": [
+        "accept_candidate_delta",
+        "request_revision",
+        "leave_blocked"
+      ],
+      "candidate_recommendation": "accept_candidate_delta",
+      "diagram_required": false,
+      "flamestrike_decision": "approved",
+      "approved_selection": "accept_candidate_delta",
+      "implementation_authorized": false
+    },
+    {
+      "id": "S10R-002",
+      "title": "N3 construction-frame placement",
+      "current_result": "approved_S10R002A_construction_frame_no_source_relation",
+      "sources": [
+        "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_10R_N3_PLACEMENT_MAPPING_OPTION_REGISTRY.json"
+      ],
+      "dependencies": [
+        "approved Step 05 frame",
+        "approved physical-target intent"
+      ],
+      "options": [
+        "S10R-002-A",
+        "S10R-002-B",
+        "S10R-002-BLOCK"
+      ],
+      "candidate_recommendation": "S10R-002-A",
+      "diagram_required": true,
+      "flamestrike_decision": "approved",
+      "approved_selection": "S10R-002-A",
+      "implementation_authorized": false
+    },
+    {
+      "id": "S10R-003",
+      "title": "CL-003 source-to-target mapping",
+      "current_result": "approved_conditional_S10R003A_C003_boundary_missing",
+      "sources": [
+        "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_10R_N3_PLACEMENT_MAPPING_OPTION_REGISTRY.json"
+      ],
+      "dependencies": [
+        "S10R-002",
+        "separate approved C-003 target-space inner boundary"
+      ],
+      "options": [
+        "S10R-003-A",
+        "S10R-003-B",
+        "S10R-003-BLOCK"
+      ],
+      "candidate_recommendation": "S10R-003-A conditional",
+      "diagram_required": true,
+      "flamestrike_decision": "approved_conditional_interpretation_rule",
+      "approved_selection": "S10R-003-A",
+      "implementation_authorized": false
+    },
+    {
+      "id": "S10R-004",
+      "title": "Upright trace Step 10 decision",
+      "current_result": "approved_26_bounded_traces_within_registered_sectors",
+      "sources": [
+        "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_10R_N3_TRANSITION_INTEGRATION_OPTION_REGISTRY.json"
+      ],
+      "dependencies": [],
+      "options": [
+        "S10R-004-A",
+        "S10R-004-B",
+        "S10R-004-BLOCK"
+      ],
+      "candidate_recommendation": "S10R-004-A",
+      "diagram_required": true,
+      "flamestrike_decision": "approved",
+      "approved_selection": "S10R-004-A",
+      "implementation_authorized": false
+    },
+    {
+      "id": "S10R-005",
+      "title": "Between-trace and top/upright sector ownership",
+      "current_result": "approved_piecewise_ruled_strips_within_owner_view_sectors",
+      "sources": [
+        "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_10R_N3_TRANSITION_INTEGRATION_OPTION_REGISTRY.json"
+      ],
+      "dependencies": [
+        "S10R-004"
+      ],
+      "options": [
+        "S10R-005-A",
+        "S10R-005-B",
+        "S10R-005-BLOCK"
+      ],
+      "candidate_recommendation": "S10R-005-A",
+      "diagram_required": true,
+      "flamestrike_decision": "approved",
+      "approved_selection": "S10R-005-A",
+      "implementation_authorized": false
+    },
+    {
+      "id": "S10R-006",
+      "title": "Joined continuous transition field",
+      "current_result": "approved_conditional_S10R006A_no_field_created",
+      "sources": [
+        "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_10R_N3_TRANSITION_INTEGRATION_OPTION_REGISTRY.json"
+      ],
+      "dependencies": [
+        "S10R-002",
+        "S10R-003",
+        "S10R-004",
+        "S10R-005"
+      ],
+      "options": [
+        "S10R-006-A",
+        "S10R-006-B",
+        "S10R-006-BLOCK"
+      ],
+      "candidate_recommendation": "S10R-006-A only if every dependency passes",
+      "diagram_required": true,
+      "flamestrike_decision": "approved_conditional_interpretation_rule",
+      "approved_selection": "S10R-006-A",
+      "implementation_authorized": false
+    },
+    {
+      "id": "S10R-007",
+      "title": "Complete Step 10 dependency audit",
+      "current_result": "approved_dependency_audit_Step11_blocked",
+      "sources": [
+        "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_10R_N3_INTEGRATION_AUTHORITY_DELTA.json",
+        "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_10R_N3_INTEGRATION_REMAINING_BLOCKS.json"
+      ],
+      "dependencies": [
+        "S10R-001",
+        "S10R-002",
+        "S10R-003",
+        "S10R-004",
+        "S10R-005",
+        "S10R-006"
+      ],
+      "options": [
+        "accept_dependency_audit",
+        "request_revision",
+        "leave_blocked"
+      ],
+      "candidate_recommendation": "accept_dependency_audit_and_keep_Step11_blocked",
+      "diagram_required": false,
+      "flamestrike_decision": "approved",
+      "approved_selection": "accept_dependency_audit_and_keep_Step11_blocked",
+      "implementation_authorized": false
+    }
+  ],
+  "counts": {
+    "old_step10_items_accounted": 10,
+    "step10r_items": 7,
+    "pending_flamestrike_decisions": 0,
+    "self_approved_rules": 0,
+    "implemented_rules": 0,
+    "approved_decisions": 7,
+    "approved_conditional_rules": 2
+  },
+  "approval_policy": "Exact seven-decision set approved by Flamestrike; only declared bounded or conditional authority is created.",
+  "step11_authorized": false,
+  "geometry_authorized": false,
+  "flamestrike_output_decision": {
+    "date": "2026-07-17",
+    "approver": "Flamestrike",
+    "statement": "I approve all 7 recommended decisions exactly as listed",
+    "pre_closeout_checkpoint": "Saved/ProjectRecovery/20260717-123959/",
+    "decision_ids": [
+      "S10R-001",
+      "S10R-002",
+      "S10R-003",
+      "S10R-004",
+      "S10R-005",
+      "S10R-006",
+      "S10R-007"
+    ]
+  },
+  "step10_closeout_authorized": false
+}

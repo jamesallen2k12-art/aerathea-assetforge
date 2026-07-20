@@ -1,0 +1,96 @@
+{
+  "schema": "aerathea.s10r_006_a_boundary_compatibility_technical_gate_a01_remaining_blocks.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-006-A-BCTG-DC-A01",
+  "date": "2026-07-17",
+  "status": "blocked_result_approved_step10_step11_and_production_still_blocked",
+  "artifact_classification": "authoritative for post-S10R-006-A blocked routing only",
+  "resolved_decision_states": [
+    {
+      "id": "S10R-006-A-TECHNICAL-RESULT-DECISION",
+      "resolution": "blocked_source_authority_missing_approved_as_bounded_technical_result",
+      "technical_block_resolved": false,
+      "implementation_authority_created": false
+    }
+  ],
+  "active_blocks": [
+    {
+      "id": "S10R-BLOCK-006",
+      "subject": "S10R-006-A normalized ruled field",
+      "blocked_fact": "Exact agreement at the 26 registered upright trace boundaries cannot be tested because no approved record supplies target-space trace coordinates or registered source-view-to-target correspondence.",
+      "status": "active_blocked_source_authority_missing",
+      "common_frame_authority_available": 0,
+      "common_frame_authority_missing": 26,
+      "field_sample_count": 0,
+      "blocked_consumers": [
+        "I10-004",
+        "I10-006",
+        "I10-007",
+        "I10-008",
+        "Step 10 closeout"
+      ]
+    },
+    {
+      "id": "S10R-BLOCK-008",
+      "subject": "historical Step 10 decision set",
+      "blocked_fact": "Historical Step 10 items not resolved by bounded Step 10R decisions remain pending.",
+      "status": "active_prior_step10_decisions_pending",
+      "blocked_consumers": [
+        "Step 10 closeout",
+        "Step 11"
+      ]
+    },
+    {
+      "id": "S10R-BLOCK-009",
+      "subject": "global production authority",
+      "blocked_fact": "No filled footprint, source center, pivot, implemented field, topology, surface, or geometry authority exists.",
+      "status": "active_global_production_block",
+      "blocked_consumers": [
+        "DCC",
+        "Unreal",
+        "production"
+      ]
+    }
+  ],
+  "counts": {
+    "approved_bounded_technical_results": 1,
+    "resolved_result_decisions": 1,
+    "resolved_technical_blocks": 0,
+    "active_remaining_blocks": 3,
+    "new_source_target_transforms": 0,
+    "new_target_trace_coordinates": 0,
+    "new_physical_cross_view_pairs": 0,
+    "field_samples": 0,
+    "fills": 0,
+    "surfaces": 0,
+    "topology": 0,
+    "geometry": 0
+  },
+  "preserved_unknowns": [
+    "source-view-to-target correspondence for all 26 upright trace boundaries",
+    "upright trace target-space coordinates",
+    "exact common-frame top-to-upright boundary agreement",
+    "CL-002 closure",
+    "C-003 annulus and hidden interfaces",
+    "source center, pivot, placement, and physical C-003 dimensions",
+    "continuous transition field",
+    "surface, topology, and geometry",
+    "remaining historical Step 10 decisions"
+  ],
+  "step10_closeout": "blocked",
+  "step11": "blocked",
+  "dcc": "blocked",
+  "unreal": "blocked",
+  "production": "blocked",
+  "staging_commit_push": "not_authorized",
+  "next_gate": {
+    "status": "not_selected_blueprint_authority_required_after_mandatory_restart",
+    "blueprint_block": "Blueprint block: source authority missing",
+    "missing_authority": "approved source-view-to-target correspondence or target-space authority for the 26 upright trace boundaries",
+    "recovery_contract_prepared": false,
+    "recovery_execution_authorized": false,
+    "step10_closeout_authorized": false,
+    "step11_authorized": false
+  },
+  "mandatory_restart_required": true
+}

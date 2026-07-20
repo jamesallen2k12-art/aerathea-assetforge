@@ -1,0 +1,206 @@
+{
+  "schema": "aerathea.step_10r_n3_integration_authority_delta.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-STEP10-REV-A01",
+  "date": "2026-07-17",
+  "status": "approved_authority_delta_for_step10r_routing",
+  "artifact_classification": "authoritative for Step 10R revision routing only",
+  "input_lock_sha256": "df6b68316b408d65d9de03ddedee9de1f62aae3acc4b04a87edb51f6d1f32bb4",
+  "historical_step10_preservation": {
+    "modified": false,
+    "old_item_count": 10,
+    "old_item_ids": [
+      "I10-001",
+      "I10-002",
+      "I10-003",
+      "I10-004",
+      "I10-005",
+      "I10-006",
+      "I10-007",
+      "I10-008",
+      "I10-009",
+      "I10-010"
+    ],
+    "old_hashes": {
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/STEP_10_UNKNOWNS_AND_INTERPRETATION_DECISION_GATE_CONTRACT.md": "b0428651d8ba22b50e18c4dfcaf080fc899dedc081697fb02ba6063d55903961",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_10_INTERPRETATION_OPTION_REGISTRY.json": "ca83a60d1ec2e607b688b14605f100333c473cf094f1b3d4036ac52767ca64ea",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_10_GEOMETRY_INTERPRETATION_MANIFEST.json": "4ff5059585eecdf90142fde273ba1f414ded1f0197f9b7b152258478d38b2012",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_10_REJECTED_OPTION_RECORD.json": "e01e555e4ea14bb794aa69f741b09fea49d2b9a5fe6337004e7eaa1ef1bda108",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_10_REMAINING_BLOCKED_UNKNOWN_LIST.json": "7c214c66c69cfd3ccc33940100be74814570560557914874f3007e32808e72e0",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_10_SOURCE_INTERPRETATION_OWNERSHIP_MAP.json": "2807489710a40ab18fe23236af57f0287e10adfcdf1f864ee75ec3936f323154",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_10_VALIDATION_MANIFEST.json": "0508315435da5547320b3fa92f62316edf26978ff87c40ae69162f20ff06e6ee",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/STEP_10_OUTPUT_RECORD.md": "9efa3e93799525b1009463c979c11b50f0002e273c8df5db575298a74ed11189"
+    },
+    "historical_approved_interpretation_rule_count": 0,
+    "current_authority_override": "N3 closeout in authoritative A005 status records; old files remain truthful historical candidates"
+  },
+  "current_authority": {
+    "approved_rule_id": "TOP_C004_OPIR_N3_ROUNDED_OVAL",
+    "approved_rule_scope": "abstract target-space C-004 outer perimeter only",
+    "equation": "abs(x / 70)^3 + abs(y / 55)^3 = 1",
+    "target_extents_cm": {
+      "X": 140,
+      "Y": 110
+    },
+    "source_relation": null,
+    "source_center": null,
+    "CL003_mapping": null,
+    "continuous_field": null,
+    "geometry": null,
+    "rejected_shape_options": [
+      "TOP_C004_OPIR_N2_ELLIPSE",
+      "TOP_C004_OPIR_N4_ROUNDED_RECTILINEAR"
+    ],
+    "upright_trace_status": "approved bounded interpretation within exact registered sectors only",
+    "construction_frame_rule": "S10R-002-A approved; construction-origin centered target frame; no source-pixel relation",
+    "CL003_mapping_rule": "S10R-003-A approved conditionally; no target coordinate until a separate C-003 target-space inner boundary is approved",
+    "continuous_field_rule": "S10R-006-A approved conditionally; no field until every declared dependency and technical gate passes",
+    "upright_approved_trace_count": 26
+  },
+  "item_delta": [
+    {
+      "old_item_id": "I10-001",
+      "candidate_delta_classification": "requires_revision",
+      "new_dependencies": [
+        "S10R-001",
+        "S10R-002"
+      ],
+      "reason": "The old rectification choice predates the physical-target/source-role recovery and must not imply local warp or source placement.",
+      "old_file_modified": false,
+      "flamestrike_decision": "approved_candidate_delta_classification",
+      "authority_effect": "controls Step 10R routing only; original Step 10 file remains unchanged"
+    },
+    {
+      "old_item_id": "I10-002",
+      "candidate_delta_classification": "unaffected_candidate",
+      "new_dependencies": [
+        "S10R-001"
+      ],
+      "reason": "C-001 remains pending and is not directly changed by N3, but its dependencies must point to the revised construction-frame decision.",
+      "old_file_modified": false,
+      "flamestrike_decision": "approved_candidate_delta_classification",
+      "authority_effect": "controls Step 10R routing only; original Step 10 file remains unchanged"
+    },
+    {
+      "old_item_id": "I10-003",
+      "candidate_delta_classification": "requires_revision",
+      "new_dependencies": [
+        "S10R-003",
+        "S10R-006"
+      ],
+      "reason": "C-002/C-003 interfaces depend on the still-missing CL-003 target mapping and hidden-contact rule.",
+      "old_file_modified": false,
+      "flamestrike_decision": "approved_candidate_delta_classification",
+      "authority_effect": "controls Step 10R routing only; original Step 10 file remains unchanged"
+    },
+    {
+      "old_item_id": "I10-004",
+      "candidate_delta_classification": "superseded_candidate_options",
+      "new_dependencies": [
+        "S10R-002",
+        "S10R-003",
+        "S10R-005",
+        "S10R-006"
+      ],
+      "reason": "The old irregular-chord and ellipse options predate the approved N3 abstract perimeter and cannot remain active alternatives.",
+      "old_file_modified": false,
+      "flamestrike_decision": "approved_candidate_delta_classification",
+      "authority_effect": "controls Step 10R routing only; original Step 10 file remains unchanged"
+    },
+    {
+      "old_item_id": "I10-005",
+      "candidate_delta_classification": "unaffected_candidate",
+      "new_dependencies": [
+        "S10R-001"
+      ],
+      "reason": "Face-owned decoration remains pending and has no direct N3 dependency.",
+      "old_file_modified": false,
+      "flamestrike_decision": "approved_candidate_delta_classification",
+      "authority_effect": "controls Step 10R routing only; original Step 10 file remains unchanged"
+    },
+    {
+      "old_item_id": "I10-006",
+      "candidate_delta_classification": "requires_revision",
+      "new_dependencies": [
+        "S10R-003",
+        "S10R-005",
+        "S10R-006"
+      ],
+      "reason": "Hidden contact fill cannot be decided before CL-003 mapping and sector ownership are approved.",
+      "old_file_modified": false,
+      "flamestrike_decision": "approved_candidate_delta_classification",
+      "authority_effect": "controls Step 10R routing only; original Step 10 file remains unchanged"
+    },
+    {
+      "old_item_id": "I10-007",
+      "candidate_delta_classification": "blocked_by_new_dependency",
+      "new_dependencies": [
+        "S10R-002",
+        "S10R-006"
+      ],
+      "reason": "A bottom closure requires a placed outer perimeter and an approved transition/footprint interpretation.",
+      "old_file_modified": false,
+      "flamestrike_decision": "approved_candidate_delta_classification",
+      "authority_effect": "controls Step 10R routing only; original Step 10 file remains unchanged"
+    },
+    {
+      "old_item_id": "I10-008",
+      "candidate_delta_classification": "requires_revision",
+      "new_dependencies": [
+        "S10R-005",
+        "S10R-006"
+      ],
+      "reason": "Watertightness and topology depend on whether a joined transition field or independent-component rule is selected.",
+      "old_file_modified": false,
+      "flamestrike_decision": "approved_candidate_delta_classification",
+      "authority_effect": "controls Step 10R routing only; original Step 10 file remains unchanged"
+    },
+    {
+      "old_item_id": "I10-009",
+      "candidate_delta_classification": "requires_revision",
+      "new_dependencies": [
+        "S10R-002"
+      ],
+      "reason": "The old origin proposal must not be treated as a recovered source center; N3 placement requires a new explicit construction convention.",
+      "old_file_modified": false,
+      "flamestrike_decision": "approved_candidate_delta_classification",
+      "authority_effect": "controls Step 10R routing only; original Step 10 file remains unchanged"
+    },
+    {
+      "old_item_id": "I10-010",
+      "candidate_delta_classification": "requires_revision",
+      "new_dependencies": [
+        "S10R-004",
+        "S10R-005",
+        "S10R-006"
+      ],
+      "reason": "View ownership does not by itself own between-trace sectors or the top/upright join.",
+      "old_file_modified": false,
+      "flamestrike_decision": "approved_candidate_delta_classification",
+      "authority_effect": "controls Step 10R routing only; original Step 10 file remains unchanged"
+    }
+  ],
+  "counts": {
+    "old_items_accounted": 10,
+    "unaffected_candidate": 2,
+    "requires_revision": 6,
+    "superseded_candidate_options": 1,
+    "blocked_by_new_dependency": 1
+  },
+  "authority_effect": "Approved for bounded Step 10R revision routing; no original Step 10 file is reclassified or modified.",
+  "flamestrike_output_decision": {
+    "date": "2026-07-17",
+    "approver": "Flamestrike",
+    "statement": "I approve all 7 recommended decisions exactly as listed",
+    "pre_closeout_checkpoint": "Saved/ProjectRecovery/20260717-123959/",
+    "decision_ids": [
+      "S10R-001",
+      "S10R-002",
+      "S10R-003",
+      "S10R-004",
+      "S10R-005",
+      "S10R-006",
+      "S10R-007"
+    ]
+  }
+}

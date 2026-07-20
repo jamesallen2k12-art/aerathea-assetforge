@@ -1,0 +1,617 @@
+{
+  "schema": "aerathea.s10r_003_a_cl003_target_space_mapping_a01_decision_registry.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-003-A-MAP-DC-A01",
+  "date": "2026-07-17",
+  "executed_at": "2026-07-17T16:03:18-04:00",
+  "status": "sixteen_record_endpoint_exclusive_mapping_approved_bounded_interpretation",
+  "artifact_classification": "authoritative for bounded S10R-003-A mapping only",
+  "decision_subject": "exact 16-record endpoint-exclusive equal-rank mapping to abstract K80 CL-003 target coordinates",
+  "approval_chain": {
+    "flamestrike_delegation": "you choose based on evidence",
+    "codex_evidence_decision": "approve",
+    "flamestrike_decision_affirmation": "great approved",
+    "closeout_contract_preparation_approval": "approved",
+    "closeout_execution_approval": "approved",
+    "final_authority": "Flamestrike"
+  },
+  "mapping_rule": {
+    "name": "endpoint-exclusive equal-rank parameter mapping",
+    "n_per_sector": 4,
+    "u_rule": "r/(n+1)=r/5",
+    "u_values_exact": [
+      "1/5",
+      "2/5",
+      "3/5",
+      "4/5"
+    ],
+    "equal_arc_length_claim": false,
+    "source_distance_fit": false,
+    "endpoint_ownership_claim": false
+  },
+  "K80": {
+    "equation": "abs(x / 56)^3 + abs(y / 44)^3 = 1",
+    "full_extents_cm": [
+      112,
+      88
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "origin_role": "mathematical construction convention only",
+    "registered_axis_endpoints": {
+      "positive_x": [
+        56,
+        0
+      ],
+      "negative_x": [
+        -56,
+        0
+      ],
+      "positive_y": [
+        0,
+        44
+      ],
+      "negative_y": [
+        0,
+        -44
+      ]
+    },
+    "serialization_decimal_places": 12
+  },
+  "frozen_proof": {
+    "ledger_sha256": "eb4cf1d9cab090cf1b7b668924b7510b10374a43768e8cd520656ee13859bbfa",
+    "mapping_validation_sha256": "e5b3b35463a0d8a77076569319a4e27213dd2a900e14edae2007dbf27c828c5f",
+    "mapping_validation_gates_passed": 31,
+    "mapping_validation_gates_failed": 0,
+    "review_board_sha256": "69f028375ee4da0bf3c1b6e4b19403611637e1daa9733645b688a922caf3f9b7",
+    "frozen_ledger_artifact_classification": "candidate interpretation",
+    "frozen_ledger_changed": false
+  },
+  "mappings": [
+    {
+      "mapping_id": "S10R003A-TOP-01",
+      "source_id": "T-CL003-TOP-01",
+      "sector": "top",
+      "local_rank": 1,
+      "source_sample_order_within_contact": 1,
+      "u_exact": "1/5",
+      "u_decimal": "0.200000000000",
+      "target_xy_cm_decimal": [
+        "-48.621287710311",
+        "30.874395750752"
+      ],
+      "source_displacement_px": 0,
+      "mapped_view": "top",
+      "physical_cross_view_pair": false,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "physical_C003_dimension_claim": false,
+      "snap_anchor_authority": false,
+      "field_sample_authority": false,
+      "geometry_vertex_authority": false,
+      "artifact_classification": "approved bounded interpretation",
+      "authority_scope": "abstract target-space CL-003 coordinate only"
+    },
+    {
+      "mapping_id": "S10R003A-TOP-02",
+      "source_id": "T-CL003-TOP-02",
+      "sector": "top",
+      "local_rank": 2,
+      "source_sample_order_within_contact": 2,
+      "u_exact": "2/5",
+      "u_decimal": "0.400000000000",
+      "target_xy_cm_decimal": [
+        "-25.596245664204",
+        "42.552351049654"
+      ],
+      "source_displacement_px": 0,
+      "mapped_view": "top",
+      "physical_cross_view_pair": false,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "physical_C003_dimension_claim": false,
+      "snap_anchor_authority": false,
+      "field_sample_authority": false,
+      "geometry_vertex_authority": false,
+      "artifact_classification": "approved bounded interpretation",
+      "authority_scope": "abstract target-space CL-003 coordinate only"
+    },
+    {
+      "mapping_id": "S10R003A-TOP-03",
+      "source_id": "T-CL003-TOP-03",
+      "sector": "top",
+      "local_rank": 3,
+      "source_sample_order_within_contact": 3,
+      "u_exact": "3/5",
+      "u_decimal": "0.600000000000",
+      "target_xy_cm_decimal": [
+        "25.596245664204",
+        "42.552351049654"
+      ],
+      "source_displacement_px": 0,
+      "mapped_view": "top",
+      "physical_cross_view_pair": false,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "physical_C003_dimension_claim": false,
+      "snap_anchor_authority": false,
+      "field_sample_authority": false,
+      "geometry_vertex_authority": false,
+      "artifact_classification": "approved bounded interpretation",
+      "authority_scope": "abstract target-space CL-003 coordinate only"
+    },
+    {
+      "mapping_id": "S10R003A-TOP-04",
+      "source_id": "T-CL003-TOP-04",
+      "sector": "top",
+      "local_rank": 4,
+      "source_sample_order_within_contact": 4,
+      "u_exact": "4/5",
+      "u_decimal": "0.800000000000",
+      "target_xy_cm_decimal": [
+        "48.621287710311",
+        "30.874395750752"
+      ],
+      "source_displacement_px": 0,
+      "mapped_view": "top",
+      "physical_cross_view_pair": false,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "physical_C003_dimension_claim": false,
+      "snap_anchor_authority": false,
+      "field_sample_authority": false,
+      "geometry_vertex_authority": false,
+      "artifact_classification": "approved bounded interpretation",
+      "authority_scope": "abstract target-space CL-003 coordinate only"
+    },
+    {
+      "mapping_id": "S10R003A-BOTTOM-01",
+      "source_id": "T-CL003-BOTTOM-01",
+      "sector": "bottom",
+      "local_rank": 1,
+      "source_sample_order_within_contact": 5,
+      "u_exact": "1/5",
+      "u_decimal": "0.200000000000",
+      "target_xy_cm_decimal": [
+        "48.621287710311",
+        "-30.874395750752"
+      ],
+      "source_displacement_px": 0,
+      "mapped_view": "top",
+      "physical_cross_view_pair": false,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "physical_C003_dimension_claim": false,
+      "snap_anchor_authority": false,
+      "field_sample_authority": false,
+      "geometry_vertex_authority": false,
+      "artifact_classification": "approved bounded interpretation",
+      "authority_scope": "abstract target-space CL-003 coordinate only"
+    },
+    {
+      "mapping_id": "S10R003A-BOTTOM-02",
+      "source_id": "T-CL003-BOTTOM-02",
+      "sector": "bottom",
+      "local_rank": 2,
+      "source_sample_order_within_contact": 6,
+      "u_exact": "2/5",
+      "u_decimal": "0.400000000000",
+      "target_xy_cm_decimal": [
+        "25.596245664204",
+        "-42.552351049654"
+      ],
+      "source_displacement_px": 0,
+      "mapped_view": "top",
+      "physical_cross_view_pair": false,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "physical_C003_dimension_claim": false,
+      "snap_anchor_authority": false,
+      "field_sample_authority": false,
+      "geometry_vertex_authority": false,
+      "artifact_classification": "approved bounded interpretation",
+      "authority_scope": "abstract target-space CL-003 coordinate only"
+    },
+    {
+      "mapping_id": "S10R003A-BOTTOM-03",
+      "source_id": "T-CL003-BOTTOM-03",
+      "sector": "bottom",
+      "local_rank": 3,
+      "source_sample_order_within_contact": 7,
+      "u_exact": "3/5",
+      "u_decimal": "0.600000000000",
+      "target_xy_cm_decimal": [
+        "-25.596245664204",
+        "-42.552351049654"
+      ],
+      "source_displacement_px": 0,
+      "mapped_view": "top",
+      "physical_cross_view_pair": false,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "physical_C003_dimension_claim": false,
+      "snap_anchor_authority": false,
+      "field_sample_authority": false,
+      "geometry_vertex_authority": false,
+      "artifact_classification": "approved bounded interpretation",
+      "authority_scope": "abstract target-space CL-003 coordinate only"
+    },
+    {
+      "mapping_id": "S10R003A-BOTTOM-04",
+      "source_id": "T-CL003-BOTTOM-04",
+      "sector": "bottom",
+      "local_rank": 4,
+      "source_sample_order_within_contact": 8,
+      "u_exact": "4/5",
+      "u_decimal": "0.800000000000",
+      "target_xy_cm_decimal": [
+        "-48.621287710311",
+        "-30.874395750752"
+      ],
+      "source_displacement_px": 0,
+      "mapped_view": "top",
+      "physical_cross_view_pair": false,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "physical_C003_dimension_claim": false,
+      "snap_anchor_authority": false,
+      "field_sample_authority": false,
+      "geometry_vertex_authority": false,
+      "artifact_classification": "approved bounded interpretation",
+      "authority_scope": "abstract target-space CL-003 coordinate only"
+    },
+    {
+      "mapping_id": "S10R003A-LEFT-01",
+      "source_id": "T-CL003-LEFT-01",
+      "sector": "left",
+      "local_rank": 1,
+      "source_sample_order_within_contact": 9,
+      "u_exact": "1/5",
+      "u_decimal": "0.200000000000",
+      "target_xy_cm_decimal": [
+        "-39.294685500957",
+        "-38.202440343816"
+      ],
+      "source_displacement_px": 0,
+      "mapped_view": "top",
+      "physical_cross_view_pair": false,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "physical_C003_dimension_claim": false,
+      "snap_anchor_authority": false,
+      "field_sample_authority": false,
+      "geometry_vertex_authority": false,
+      "artifact_classification": "approved bounded interpretation",
+      "authority_scope": "abstract target-space CL-003 coordinate only"
+    },
+    {
+      "mapping_id": "S10R003A-LEFT-02",
+      "source_id": "T-CL003-LEFT-02",
+      "sector": "left",
+      "local_rank": 2,
+      "source_sample_order_within_contact": 10,
+      "u_exact": "2/5",
+      "u_decimal": "0.400000000000",
+      "target_xy_cm_decimal": [
+        "-54.157537699559",
+        "-20.111335879018"
+      ],
+      "source_displacement_px": 0,
+      "mapped_view": "top",
+      "physical_cross_view_pair": false,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "physical_C003_dimension_claim": false,
+      "snap_anchor_authority": false,
+      "field_sample_authority": false,
+      "geometry_vertex_authority": false,
+      "artifact_classification": "approved bounded interpretation",
+      "authority_scope": "abstract target-space CL-003 coordinate only"
+    },
+    {
+      "mapping_id": "S10R003A-LEFT-03",
+      "source_id": "T-CL003-LEFT-03",
+      "sector": "left",
+      "local_rank": 3,
+      "source_sample_order_within_contact": 11,
+      "u_exact": "3/5",
+      "u_decimal": "0.600000000000",
+      "target_xy_cm_decimal": [
+        "-54.157537699559",
+        "20.111335879018"
+      ],
+      "source_displacement_px": 0,
+      "mapped_view": "top",
+      "physical_cross_view_pair": false,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "physical_C003_dimension_claim": false,
+      "snap_anchor_authority": false,
+      "field_sample_authority": false,
+      "geometry_vertex_authority": false,
+      "artifact_classification": "approved bounded interpretation",
+      "authority_scope": "abstract target-space CL-003 coordinate only"
+    },
+    {
+      "mapping_id": "S10R003A-LEFT-04",
+      "source_id": "T-CL003-LEFT-04",
+      "sector": "left",
+      "local_rank": 4,
+      "source_sample_order_within_contact": 12,
+      "u_exact": "4/5",
+      "u_decimal": "0.800000000000",
+      "target_xy_cm_decimal": [
+        "-39.294685500957",
+        "38.202440343816"
+      ],
+      "source_displacement_px": 0,
+      "mapped_view": "top",
+      "physical_cross_view_pair": false,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "physical_C003_dimension_claim": false,
+      "snap_anchor_authority": false,
+      "field_sample_authority": false,
+      "geometry_vertex_authority": false,
+      "artifact_classification": "approved bounded interpretation",
+      "authority_scope": "abstract target-space CL-003 coordinate only"
+    },
+    {
+      "mapping_id": "S10R003A-RIGHT-01",
+      "source_id": "T-CL003-RIGHT-01",
+      "sector": "right",
+      "local_rank": 1,
+      "source_sample_order_within_contact": 13,
+      "u_exact": "1/5",
+      "u_decimal": "0.200000000000",
+      "target_xy_cm_decimal": [
+        "39.294685500957",
+        "38.202440343816"
+      ],
+      "source_displacement_px": 0,
+      "mapped_view": "top",
+      "physical_cross_view_pair": false,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "physical_C003_dimension_claim": false,
+      "snap_anchor_authority": false,
+      "field_sample_authority": false,
+      "geometry_vertex_authority": false,
+      "artifact_classification": "approved bounded interpretation",
+      "authority_scope": "abstract target-space CL-003 coordinate only"
+    },
+    {
+      "mapping_id": "S10R003A-RIGHT-02",
+      "source_id": "T-CL003-RIGHT-02",
+      "sector": "right",
+      "local_rank": 2,
+      "source_sample_order_within_contact": 14,
+      "u_exact": "2/5",
+      "u_decimal": "0.400000000000",
+      "target_xy_cm_decimal": [
+        "54.157537699559",
+        "20.111335879018"
+      ],
+      "source_displacement_px": 0,
+      "mapped_view": "top",
+      "physical_cross_view_pair": false,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "physical_C003_dimension_claim": false,
+      "snap_anchor_authority": false,
+      "field_sample_authority": false,
+      "geometry_vertex_authority": false,
+      "artifact_classification": "approved bounded interpretation",
+      "authority_scope": "abstract target-space CL-003 coordinate only"
+    },
+    {
+      "mapping_id": "S10R003A-RIGHT-03",
+      "source_id": "T-CL003-RIGHT-03",
+      "sector": "right",
+      "local_rank": 3,
+      "source_sample_order_within_contact": 15,
+      "u_exact": "3/5",
+      "u_decimal": "0.600000000000",
+      "target_xy_cm_decimal": [
+        "54.157537699559",
+        "-20.111335879018"
+      ],
+      "source_displacement_px": 0,
+      "mapped_view": "top",
+      "physical_cross_view_pair": false,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "physical_C003_dimension_claim": false,
+      "snap_anchor_authority": false,
+      "field_sample_authority": false,
+      "geometry_vertex_authority": false,
+      "artifact_classification": "approved bounded interpretation",
+      "authority_scope": "abstract target-space CL-003 coordinate only"
+    },
+    {
+      "mapping_id": "S10R003A-RIGHT-04",
+      "source_id": "T-CL003-RIGHT-04",
+      "sector": "right",
+      "local_rank": 4,
+      "source_sample_order_within_contact": 16,
+      "u_exact": "4/5",
+      "u_decimal": "0.800000000000",
+      "target_xy_cm_decimal": [
+        "39.294685500957",
+        "-38.202440343816"
+      ],
+      "source_displacement_px": 0,
+      "mapped_view": "top",
+      "physical_cross_view_pair": false,
+      "source_center_claim": false,
+      "pivot_claim": false,
+      "physical_C003_dimension_claim": false,
+      "snap_anchor_authority": false,
+      "field_sample_authority": false,
+      "geometry_vertex_authority": false,
+      "artifact_classification": "approved bounded interpretation",
+      "authority_scope": "abstract target-space CL-003 coordinate only"
+    }
+  ],
+  "authority_counts": {
+    "approved_source_to_target_mappings": 16,
+    "approved_abstract_target_CL003_coordinates": 16,
+    "approved_top_view_source_ids_consumed": 16,
+    "mapped_non_top_samples": 0,
+    "source_displacement_px": 0,
+    "physical_cross_view_pairs": 0,
+    "source_centers": 0,
+    "pivots": 0,
+    "physical_C003_dimensions": 0,
+    "snap_anchors": 0,
+    "CL002_closures": 0,
+    "annuli": 0,
+    "hidden_interfaces": 0,
+    "filled_footprints": 0,
+    "fields": 0,
+    "surfaces": 0,
+    "topology": 0,
+    "geometry": 0
+  },
+  "interpretation_limits": {
+    "equal_arc_length_claim": false,
+    "source_distance_fit": false,
+    "source_measurement_claim": false,
+    "physical_cross_view_correspondence_claim": false,
+    "source_center_claim": false,
+    "pivot_claim": false,
+    "physical_C003_dimension_claim": false,
+    "snap_anchor_claim": false,
+    "contact_closure_claim": false,
+    "field_surface_topology_geometry_claim": false
+  },
+  "block_routing": {
+    "C003-TSIB-A02-K80-BLOCK-001": "resolved_at_bounded_mapping_authority_level",
+    "S10R-BLOCK-003": "historical_record_unchanged_resolved_at_bounded_S10R003A_mapping_level",
+    "S10R-BLOCK-006": "active_mapping_dependency_satisfied_boundary_compatibility_and_technical_gates_unexecuted_no_field",
+    "S10R-BLOCK-008": "active_prior_step10_decisions_pending",
+    "S10R-BLOCK-009": "active_global_production_block"
+  },
+  "implementation_authorized": false,
+  "step10_closeout_authorized": false,
+  "step11_authorized": false,
+  "dcc_authorized": false,
+  "unreal_authorized": false,
+  "production_authorized": false,
+  "staging_authorized": false,
+  "commit_authorized": false,
+  "push_authorized": false,
+  "next_gate": "after mandatory restart, possible preparation only of a separate S10R-006-A boundary-compatibility and technical-gate contract",
+  "pre_closeout_checkpoint": "Saved/ProjectRecovery/20260717-155655/",
+  "mandatory_restart_required": true,
+  "pre_output_locked_input_verification": {
+    "verified_before_output_writes": true,
+    "matched": 20,
+    "total": 20,
+    "mismatches": 0,
+    "hashes": {
+      "AGENTS.md": {
+        "expected_sha256": "5d2d2637a58113f0a6f5ec92e40d8bb2bda9e03fb58b4868a0d9dfbb3b57ad55",
+        "actual_sha256": "5d2d2637a58113f0a6f5ec92e40d8bb2bda9e03fb58b4868a0d9dfbb3b57ad55",
+        "match": true
+      },
+      "docs/projects/assetforge/BLOODAXE_CAIRNSTONE_PIXEL_EXACT_FRESH_START_MULTISTEP_PLAN.md": {
+        "expected_sha256": "ba6784498d792dc85dd431c807f59620d6851af97b4cd15efe89c44a397b10b6",
+        "actual_sha256": "ba6784498d792dc85dd431c807f59620d6851af97b4cd15efe89c44a397b10b6",
+        "match": true
+      },
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_RESET_RESUME_STATE.md": {
+        "expected_sha256": "d8d475d4dcc285dac9cf80abd177d77850290f052071a1de8c79081451b914a8",
+        "actual_sha256": "d8d475d4dcc285dac9cf80abd177d77850290f052071a1de8c79081451b914a8",
+        "match": true
+      },
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_APPROVAL_LOG.md": {
+        "expected_sha256": "b3c2c827eb4ae25a4a400de3d38a9cdd5ba3ebeb33a5d45dd86367e3e8e04f96",
+        "actual_sha256": "b3c2c827eb4ae25a4a400de3d38a9cdd5ba3ebeb33a5d45dd86367e3e8e04f96",
+        "match": true
+      },
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_ARTIFACT_INDEX.md": {
+        "expected_sha256": "de04e0aa584a3d526f4d53d6f0da1425890cb5b7a9a5aa9edb6404396882e000",
+        "actual_sha256": "de04e0aa584a3d526f4d53d6f0da1425890cb5b7a9a5aa9edb6404396882e000",
+        "match": true
+      },
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/S10R_003_A_CL003_TARGET_SPACE_MAPPING_EXECUTION_A01_CONTRACT.md": {
+        "expected_sha256": "10dc155b78e2d2e6f15a389a9a247db13450314df2d8e3bc9ba891901b3208f8",
+        "actual_sha256": "10dc155b78e2d2e6f15a389a9a247db13450314df2d8e3bc9ba891901b3208f8",
+        "match": true
+      },
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/S10R_003_A_CL003_TARGET_SPACE_MAPPING_A01_INPUT_LOCK.json": {
+        "expected_sha256": "f49e239bea3b7f163cecc73718772c42a9284b87d7a3aa37d684db6c98110e2c",
+        "actual_sha256": "f49e239bea3b7f163cecc73718772c42a9284b87d7a3aa37d684db6c98110e2c",
+        "match": true
+      },
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/S10R_003_A_CL003_TARGET_SPACE_MAPPING_A01_LEDGER.json": {
+        "expected_sha256": "eb4cf1d9cab090cf1b7b668924b7510b10374a43768e8cd520656ee13859bbfa",
+        "actual_sha256": "eb4cf1d9cab090cf1b7b668924b7510b10374a43768e8cd520656ee13859bbfa",
+        "match": true
+      },
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/S10R_003_A_CL003_TARGET_SPACE_MAPPING_A01_VALIDATION.json": {
+        "expected_sha256": "e5b3b35463a0d8a77076569319a4e27213dd2a900e14edae2007dbf27c828c5f",
+        "actual_sha256": "e5b3b35463a0d8a77076569319a4e27213dd2a900e14edae2007dbf27c828c5f",
+        "match": true
+      },
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/evidence/S10R_003_A_CL003_TARGET_SPACE_MAPPING_A01/SM_GIA_BloodAxeCairnstone_A005_S10R_003_A_CL003_TARGET_SPACE_MAPPING_A01_REVIEW_BOARD.png": {
+        "expected_sha256": "69f028375ee4da0bf3c1b6e4b19403611637e1daa9733645b688a922caf3f9b7",
+        "actual_sha256": "69f028375ee4da0bf3c1b6e4b19403611637e1daa9733645b688a922caf3f9b7",
+        "match": true
+      },
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/S10R_003_A_CL003_TARGET_SPACE_MAPPING_A01_OUTPUT_RECORD.md": {
+        "expected_sha256": "2a06aac73ab2b60e8d62921b405007c4e42164b8bbdb4a69ef8e67daad6a0d7d",
+        "actual_sha256": "2a06aac73ab2b60e8d62921b405007c4e42164b8bbdb4a69ef8e67daad6a0d7d",
+        "match": true
+      },
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/handoffs/S10R_003_A_CL003_TARGET_SPACE_MAPPING_A01_TO_DECISION_HANDOFF.md": {
+        "expected_sha256": "34c8c23e22c6c2191fdb1d6763c2956c10202fc04df30f10dc0e16dedbe68621",
+        "actual_sha256": "34c8c23e22c6c2191fdb1d6763c2956c10202fc04df30f10dc0e16dedbe68621",
+        "match": true
+      },
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/C003_TARGET_SPACE_INNER_BOUNDARY_INTERPRETATION_RULE_A02_K80_DECISION_REGISTRY.json": {
+        "expected_sha256": "4d7a6e5eff56c217512f54bf0ce50b0d2d37faee8b1e0a6950f08bbc72ae2d05",
+        "actual_sha256": "4d7a6e5eff56c217512f54bf0ce50b0d2d37faee8b1e0a6950f08bbc72ae2d05",
+        "match": true
+      },
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/C003_TARGET_SPACE_INNER_BOUNDARY_INTERPRETATION_RULE_A02_K80_REMAINING_BLOCKS.json": {
+        "expected_sha256": "e3de4150df887e53e3dbc569339daa54b07b1a8bc72cecd7d0a67ab0a7aba883",
+        "actual_sha256": "e3de4150df887e53e3dbc569339daa54b07b1a8bc72cecd7d0a67ab0a7aba883",
+        "match": true
+      },
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_10R_N3_INTEGRATION_DECISION_REGISTRY.json": {
+        "expected_sha256": "f60634468c2d820e230da0a847a181be90893411c3e7838283eb61730e7d37e5",
+        "actual_sha256": "f60634468c2d820e230da0a847a181be90893411c3e7838283eb61730e7d37e5",
+        "match": true
+      },
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_10R_N3_PLACEMENT_MAPPING_OPTION_REGISTRY.json": {
+        "expected_sha256": "37e7b76f6ee98fba5cfbdfed45d7048402114f4b88ea92055717350e48b1f3bc",
+        "actual_sha256": "37e7b76f6ee98fba5cfbdfed45d7048402114f4b88ea92055717350e48b1f3bc",
+        "match": true
+      },
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_10R_N3_TRANSITION_INTEGRATION_OPTION_REGISTRY.json": {
+        "expected_sha256": "3143f233c471c823693d8539f7abf7478340bdcfdd3eef871f68cabc7ca3728f",
+        "actual_sha256": "3143f233c471c823693d8539f7abf7478340bdcfdd3eef871f68cabc7ca3728f",
+        "match": true
+      },
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_10R_N3_INTEGRATION_REMAINING_BLOCKS.json": {
+        "expected_sha256": "8776c2abcc9a96820cbd4046314a0ef1244c5fb58205c58b46dd9aad8cee1953",
+        "actual_sha256": "8776c2abcc9a96820cbd4046314a0ef1244c5fb58205c58b46dd9aad8cee1953",
+        "match": true
+      },
+      "Saved/ProjectRecovery/20260717-154740/git_status_short.txt": {
+        "expected_sha256": "05b997525bbdd8f2811c2bccdd12748e33c42207d8156cade6f9cff9687f5070",
+        "actual_sha256": "05b997525bbdd8f2811c2bccdd12748e33c42207d8156cade6f9cff9687f5070",
+        "match": true
+      },
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/S10R_003_A_CL003_TARGET_SPACE_MAPPING_A01_DECISION_CLOSEOUT_CONTRACT.md": {
+        "expected_sha256": "506943f3b6d92c7c1170c3addb9baa1641ad4026b3ea7d4062a61d09f7f33660",
+        "actual_sha256": "506943f3b6d92c7c1170c3addb9baa1641ad4026b3ea7d4062a61d09f7f33660",
+        "match": true
+      }
+    }
+  }
+}

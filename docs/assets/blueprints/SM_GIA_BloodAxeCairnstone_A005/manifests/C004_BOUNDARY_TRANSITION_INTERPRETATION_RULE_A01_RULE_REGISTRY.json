@@ -1,0 +1,103 @@
+{
+  "schema": "aerathea.c004_boundary_transition_interpretation_rule_registry.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-C004-BTIR-A01",
+  "date": "2026-07-17",
+  "status": "pre_registered_before_pairing_calculations",
+  "artifact_classification": "proof only",
+  "rule_candidate_id": "BTIR_SAME_VIEW_LINEAR_FALLOFF_A01",
+  "source_evidence_changed": false,
+  "component_constraints": {
+    "C001_unchanged": true,
+    "C002_unchanged": true,
+    "C003_unchanged": true,
+    "C004_source_pixels_unchanged": true,
+    "CL001_unchanged": true,
+    "CL002_unchanged": true,
+    "CL003_locked_sample_count": 47,
+    "CL003_displacement_px": 0
+  },
+  "formula_registry": {
+    "trace": "p(t) = (1-t) * p_i + t * p_o, 0 <= t <= 1",
+    "displacement_falloff": "d(t) = t * d_o",
+    "inner_endpoint_coefficient": 0,
+    "outer_endpoint_coefficient": 1,
+    "outer_displacement_application_authorized_in_this_pass": false
+  },
+  "same_side_classification": {
+    "method": "Sort approved CL-003 open segments by minimum x; split at the unique largest positive horizontal gap between adjacent segment ranges; assign the lower-x group to source fields named left_source_pixel and the higher-x group to source fields named right_source_pixel.",
+    "tie_or_nonpositive_gap_result": "blocked",
+    "authority_claim": "same-panel deterministic interpretation classification only; not a center, axis, or physical correspondence"
+  },
+  "pairing_selector": {
+    "eligible_set": "all exact CL-003 samples in the same deterministic side group",
+    "selector": "unique minimum Euclidean pixel distance within the same panel",
+    "tie_result": "blocked",
+    "distance_authority": "diagnostic only; not physical distance"
+  },
+  "trace_rules": [
+    "exact approved same-view endpoints only",
+    "straight unfilled segment only",
+    "no intermediate control points",
+    "unowned gap remains explicitly interpretation and unknown",
+    "adjacent traces remain unjoined and unfilled",
+    "top creates zero traces"
+  ],
+  "per_view_locked_inventory": {
+    "front": {
+      "view_role": "primary_XZ",
+      "outer_point_count": 6,
+      "visible_outer_segment_span_count": 2,
+      "unowned_gap_flag_count": 4,
+      "CL003_sample_count": 9,
+      "continuous_transition_owned": false
+    },
+    "back": {
+      "view_role": "validation_only",
+      "outer_point_count": 6,
+      "visible_outer_segment_span_count": 2,
+      "unowned_gap_flag_count": 4,
+      "CL003_sample_count": 10,
+      "continuous_transition_owned": false
+    },
+    "left": {
+      "view_role": "primary_YZ",
+      "outer_point_count": 6,
+      "visible_outer_segment_span_count": 3,
+      "unowned_gap_flag_count": 4,
+      "CL003_sample_count": 6,
+      "continuous_transition_owned": false
+    },
+    "right": {
+      "view_role": "validation_only",
+      "outer_point_count": 8,
+      "visible_outer_segment_span_count": 0,
+      "unowned_gap_flag_count": 4,
+      "CL003_sample_count": 6,
+      "continuous_transition_owned": false
+    },
+    "top": {
+      "view_role": "plan_contact_evidence_only",
+      "outer_point_count": 0,
+      "visible_outer_segment_span_count": 0,
+      "unowned_gap_flag_count": 1,
+      "CL003_sample_count": 16,
+      "continuous_transition_owned": false,
+      "authoritative_perimeter_status": "blocked_by_rubble_shadow_and_discontinuous_CL_003_ownership"
+    }
+  },
+  "blocked_methods": [
+    "cross_view_pixel_pairing",
+    "center_or_axis_selection",
+    "curve_or_spline_fitting",
+    "smoothing_or_freehand_cleanup",
+    "joined_or_filled_transition_field",
+    "closed_perimeter_or_footprint",
+    "ellipse_superellipse_or_rectangle_substitution",
+    "top_outer_endpoint_or_perimeter_invention",
+    "source_raster_edit_or_warp",
+    "topology_or_geometry",
+    "Step10_revision",
+    "production_commit_or_push"
+  ]
+}

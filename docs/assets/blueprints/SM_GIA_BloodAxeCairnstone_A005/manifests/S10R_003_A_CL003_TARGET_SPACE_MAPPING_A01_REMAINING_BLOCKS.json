@@ -1,0 +1,92 @@
+{
+  "schema": "aerathea.s10r_003_a_cl003_target_space_mapping_a01_remaining_blocks.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-003-A-MAP-DC-A01",
+  "date": "2026-07-17",
+  "status": "bounded_mapping_approved_field_step10_step11_and_production_blocked",
+  "artifact_classification": "authoritative for post-mapping blocked routing only",
+  "resolved_conditions": [
+    {
+      "id": "C003-TSIB-A02-K80-BLOCK-001",
+      "resolution": "resolved_at_bounded_mapping_authority_level",
+      "historical_record_changed": false,
+      "authority_expansion_beyond_mapping": false
+    },
+    {
+      "id": "S10R-BLOCK-003",
+      "resolution": "resolved_at_bounded_S10R003A_mapping_level",
+      "historical_record_changed": false,
+      "authority_expansion_beyond_mapping": false
+    }
+  ],
+  "active_blocks": [
+    {
+      "id": "S10R-BLOCK-006",
+      "subject": "S10R-006-A normalized ruled field",
+      "dependency_state": "S10R-003-A bounded mapping dependency satisfied",
+      "blocked_fact": "Every declared boundary-compatibility and technical gate remains unexecuted; no field sample exists.",
+      "status": "active_pending_separate_boundary_compatibility_and_technical_gate_contract",
+      "field_sample_count": 0,
+      "blocked_consumers": [
+        "I10-004",
+        "I10-006",
+        "I10-007",
+        "I10-008",
+        "Step 10 closeout"
+      ]
+    },
+    {
+      "id": "S10R-BLOCK-008",
+      "subject": "historical Step 10 decision set",
+      "blocked_fact": "Historical Step 10 items not resolved by bounded Step 10R decisions remain pending.",
+      "status": "active_prior_step10_decisions_pending",
+      "blocked_consumers": [
+        "Step 10 closeout",
+        "Step 11"
+      ]
+    },
+    {
+      "id": "S10R-BLOCK-009",
+      "subject": "global production authority",
+      "blocked_fact": "No filled footprint, source center, pivot, implemented field, topology, surface, or geometry authority exists.",
+      "status": "active_global_production_block",
+      "blocked_consumers": [
+        "DCC",
+        "Unreal",
+        "production"
+      ]
+    }
+  ],
+  "counts": {
+    "approved_bounded_mappings": 16,
+    "resolved_mapping_conditions": 2,
+    "active_remaining_blocks": 3,
+    "field_samples": 0,
+    "surfaces": 0,
+    "topology": 0,
+    "geometry": 0
+  },
+  "preserved_unknowns": [
+    "boundary compatibility for S10R-006-A",
+    "all declared S10R-006-A technical gate outcomes",
+    "CL-002 closure",
+    "C-003 annulus and hidden interfaces",
+    "source center, pivot, placement, and physical C-003 dimensions",
+    "continuous transition field",
+    "surface, topology, and geometry",
+    "remaining historical Step 10 decisions"
+  ],
+  "step10_closeout": "blocked",
+  "step11": "blocked",
+  "dcc": "blocked",
+  "unreal": "blocked",
+  "production": "blocked",
+  "staging_commit_push": "not_authorized",
+  "next_gate": {
+    "status": "possible_contract_preparation_only_after_mandatory_restart",
+    "name": "separate S10R-006-A boundary-compatibility and technical-gate contract",
+    "contract_created_during_closeout": false,
+    "execution_authorized": false
+  },
+  "mandatory_restart_required": true
+}

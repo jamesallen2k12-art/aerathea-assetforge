@@ -1,0 +1,103 @@
+{
+  "schema": "aerathea.s10r_006_r2_a_post_bridge_field_authority_option_registry.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-006-R2-A-PBFA-DEC-A01",
+  "date": "2026-07-17",
+  "status": "S10R_006_R2_A_selected_method_contract_preparation_authorized",
+  "artifact_classification": "authoritative for bounded S10R-006-R2-A option selection only",
+  "decision_subject": "post-bridge authority for preparation of a later abstract-field method contract",
+  "options": [
+    {
+      "id": "S10R-006-R2-A",
+      "label": "Bounded Abstract-Field Method Route",
+      "candidate_rule": "Accept the exact twelve approved symbolic bridge records as sufficient bounded interpretation authority to prepare, under a later separately approved gate, a deterministic abstract-field method contract.",
+      "construction_owner_policy": {
+        "front_primary_XZ": 6,
+        "left_primary_YZ": 6,
+        "total": 12
+      },
+      "holdout_policy": {
+        "back_validation_only": 6,
+        "right_validation_only": 8,
+        "total": 14,
+        "classification": "proof only",
+        "construction_use_authorized": false
+      },
+      "preserved_symbolic_rule": "v = t; K80 at t = 0 and v = 0; N3 at t = 1 and v = 1",
+      "future_authority_if_selected": "preparation only of a separate abstract-field method contract",
+      "block_effect_if_selected": {
+        "S10R-BLOCK-006": "active_pending_separate_abstract_field_method_contract",
+        "S10R-BLOCK-008": "active_unchanged",
+        "S10R-BLOCK-009": "active_unchanged",
+        "resolved_block_ids": []
+      },
+      "physical_source_authority_created": false,
+      "field_implementation_authorized": false,
+      "field_samples_created": 0,
+      "fills_created": 0,
+      "surfaces_created": 0,
+      "topology_created": 0,
+      "geometry_created": 0,
+      "known_risks": [
+        "The future abstract field may be mathematically coherent while remaining unrelated to physical source placement.",
+        "Back and right data remain validation-only and cannot generate construction coordinates.",
+        "A later method must define exact between-trace and sector operations before sampling."
+      ],
+      "candidate_assessment": "recommended_smallest_sufficient_bounded_route",
+      "artifact_classification": "authoritative selected bounded preparation route only",
+      "flamestrike_decision": "approved",
+      "selected": true
+    },
+    {
+      "id": "S10R-006-R2-BLOCK",
+      "label": "Preserve Source-Authority Block",
+      "candidate_rule": "Do not authorize an abstract-field method route; retain the field block until approved physical source-to-target correspondence or another separately approved Blueprint rule exists.",
+      "future_authority_if_selected": "none",
+      "block_effect_if_selected": {
+        "S10R-BLOCK-006": "active_bounded_bridge_approved_no_field_and_no_physical_correspondence",
+        "S10R-BLOCK-008": "active_unchanged",
+        "S10R-BLOCK-009": "active_unchanged",
+        "resolved_block_ids": []
+      },
+      "blueprint_block": "Blueprint block: source authority missing",
+      "physical_source_authority_created": false,
+      "field_implementation_authorized": false,
+      "field_samples_created": 0,
+      "fills_created": 0,
+      "surfaces_created": 0,
+      "topology_created": 0,
+      "geometry_created": 0,
+      "known_risks": [
+        "A005 cannot advance toward Step 10 closeout or Step 11 without new authority."
+      ],
+      "candidate_assessment": "required_block_option",
+      "artifact_classification": "candidate block option only",
+      "flamestrike_decision": "not selected",
+      "selected": false
+    }
+  ],
+  "candidate_recommendation": "S10R-006-R2-A",
+  "recommendation_classification": "candidate recommendation only",
+  "selected_option": "S10R-006-R2-A",
+  "selection_record": {
+    "approver": "Flamestrike",
+    "approval_statement": "approved",
+    "approval_context": "Direct response to the exact question selecting S10R-006-R2-A or S10R-006-R2-BLOCK.",
+    "codex_evidence_choice": "S10R-006-R2-A",
+    "flamestrike_confirmation": "so you agree with the choice I made?",
+    "authority_granted": "preparation only of a separate abstract-field method contract",
+    "field_implementation_authorized": false,
+    "resolved_block_ids": []
+  },
+  "pending_flamestrike_decisions": 1,
+  "resolved_block_ids": [],
+  "field_implementation_authorized": false,
+  "step10_closeout_authorized": false,
+  "step11_authorized": false,
+  "dcc_authorized": false,
+  "unreal_authorized": false,
+  "production_authorized": false,
+  "staging_authorized": false,
+  "commit_authorized": false,
+  "push_authorized": false
+}

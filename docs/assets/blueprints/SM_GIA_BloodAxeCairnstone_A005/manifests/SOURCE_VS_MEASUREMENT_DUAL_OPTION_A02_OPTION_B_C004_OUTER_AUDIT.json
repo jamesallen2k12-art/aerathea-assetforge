@@ -1,0 +1,218 @@
+{
+  "schema": "aerathea.source_vs_measurement_dual_option_B_C004_outer_audit.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-SMR-A02",
+  "option_id": "OPTION_B_C004_OUTER_ONLY_CONTACT_LOCKED_ADJUSTMENT",
+  "date": "2026-07-17",
+  "status": "blocked_missing_source_owned_C004_outer_to_inner_transition_authority",
+  "artifact_classification": "proof only",
+  "method": "Lock all authoritative CL-003 samples and audit whether approved source-owned C-004 outer evidence defines a traceable continuous outer-to-inner transition before creating candidate lines.",
+  "input_hash_match_count": 30,
+  "input_hash_mismatch_count": 0,
+  "CL003_lock": {
+    "sample_count_all_views": 47,
+    "displacement_px": 0,
+    "C001_unchanged": true,
+    "C002_unchanged": true,
+    "C003_unchanged": true
+  },
+  "required_target_span_contractions": [
+    {
+      "view": "front",
+      "axis": "X",
+      "source_C004_span_px": 290.0,
+      "required_factor": 0.925287356322,
+      "required_target_span_px_in_same_review_frame": 268.33333333338,
+      "required_total_span_contraction_px": 21.666666666620017,
+      "endpoint_or_center_selected": false,
+      "candidate_coordinates_created": false
+    },
+    {
+      "view": "front",
+      "axis": "Z",
+      "source_C004_span_px": 62.0,
+      "required_factor": 0.96224340176,
+      "required_target_span_px_in_same_review_frame": 59.65909090912,
+      "required_total_span_contraction_px": 2.3409090908799968,
+      "endpoint_or_center_selected": false,
+      "candidate_coordinates_created": false
+    },
+    {
+      "view": "back_validation",
+      "axis": "X",
+      "source_C004_span_px": 245.0,
+      "required_factor": 0.9,
+      "required_target_span_px_in_same_review_frame": 220.5,
+      "required_total_span_contraction_px": 24.5,
+      "endpoint_or_center_selected": false,
+      "candidate_coordinates_created": false
+    },
+    {
+      "view": "back_validation",
+      "axis": "Z",
+      "source_C004_span_px": 52.0,
+      "required_factor": 0.841346153846,
+      "required_target_span_px_in_same_review_frame": 43.749999999992,
+      "required_total_span_contraction_px": 8.250000000008,
+      "endpoint_or_center_selected": false,
+      "candidate_coordinates_created": false
+    },
+    {
+      "view": "left",
+      "axis": "Y",
+      "source_C004_span_px": 225.0,
+      "required_factor": 0.912592592593,
+      "required_target_span_px_in_same_review_frame": 205.333333333425,
+      "required_total_span_contraction_px": 19.666666666574997,
+      "endpoint_or_center_selected": false,
+      "candidate_coordinates_created": false
+    },
+    {
+      "view": "left",
+      "axis": "Z",
+      "source_C004_span_px": 52.0,
+      "required_factor": 0.847465034965,
+      "required_target_span_px_in_same_review_frame": 44.06818181818,
+      "required_total_span_contraction_px": 7.931818181819999,
+      "endpoint_or_center_selected": false,
+      "candidate_coordinates_created": false
+    },
+    {
+      "view": "right_validation",
+      "axis": "Y",
+      "source_C004_span_px": 193.0,
+      "required_factor": 0.911917098446,
+      "required_target_span_px_in_same_review_frame": 176.000000000078,
+      "required_total_span_contraction_px": 16.99999999992201,
+      "endpoint_or_center_selected": false,
+      "candidate_coordinates_created": false
+    },
+    {
+      "view": "right_validation",
+      "axis": "Z",
+      "source_C004_span_px": 47.0,
+      "required_factor": 0.859767891683,
+      "required_target_span_px_in_same_review_frame": 40.409090909101,
+      "required_total_span_contraction_px": 6.590909090898997,
+      "endpoint_or_center_selected": false,
+      "candidate_coordinates_created": false
+    },
+    {
+      "view": "top",
+      "axis": "X",
+      "source_C004_span_px": 208.0,
+      "required_factor": 0.891826923077,
+      "required_target_span_px_in_same_review_frame": 185.500000000016,
+      "required_total_span_contraction_px": 22.499999999984,
+      "endpoint_or_center_selected": false,
+      "candidate_coordinates_created": false
+    },
+    {
+      "view": "top",
+      "axis": "Y",
+      "source_C004_span_px": 140.0,
+      "required_factor": 0.820634920635,
+      "required_target_span_px_in_same_review_frame": 114.8888888889,
+      "required_total_span_contraction_px": 25.1111111111,
+      "endpoint_or_center_selected": false,
+      "candidate_coordinates_created": false
+    }
+  ],
+  "boundary_authority_inventory": [
+    {
+      "view": "front",
+      "irregular_outer_observation_count": 4,
+      "explicit_outer_point_count": 6,
+      "visible_outer_segment_span_count": 2,
+      "unowned_interior_or_gap_flag_count": 4,
+      "CL003_discrete_point_count": 9,
+      "CL003_closure_authorized": false,
+      "continuous_outer_to_inner_transition_owned": false
+    },
+    {
+      "view": "back",
+      "irregular_outer_observation_count": 4,
+      "explicit_outer_point_count": 6,
+      "visible_outer_segment_span_count": 2,
+      "unowned_interior_or_gap_flag_count": 4,
+      "CL003_discrete_point_count": 10,
+      "CL003_closure_authorized": false,
+      "continuous_outer_to_inner_transition_owned": false
+    },
+    {
+      "view": "left",
+      "irregular_outer_observation_count": 4,
+      "explicit_outer_point_count": 6,
+      "visible_outer_segment_span_count": 3,
+      "unowned_interior_or_gap_flag_count": 4,
+      "CL003_discrete_point_count": 6,
+      "CL003_closure_authorized": false,
+      "continuous_outer_to_inner_transition_owned": false
+    },
+    {
+      "view": "right",
+      "irregular_outer_observation_count": 4,
+      "explicit_outer_point_count": 8,
+      "visible_outer_segment_span_count": 0,
+      "unowned_interior_or_gap_flag_count": 4,
+      "CL003_discrete_point_count": 6,
+      "CL003_closure_authorized": false,
+      "continuous_outer_to_inner_transition_owned": false
+    },
+    {
+      "view": "top",
+      "irregular_outer_observation_count": 0,
+      "explicit_outer_point_count": 0,
+      "visible_outer_segment_span_count": 0,
+      "unowned_interior_or_gap_flag_count": 1,
+      "CL003_discrete_point_count": 16,
+      "CL003_closure_authorized": false,
+      "continuous_outer_to_inner_transition_owned": false,
+      "authoritative_perimeter_status": "blocked_by_rubble_shadow_and_discontinuous_CL_003_ownership"
+    }
+  ],
+  "authority_findings": [
+    "Every recorded CL-003 relation is discrete/discontinuous and closure is unauthorized.",
+    "Front, back, left, and right provide bounded irregular outer observations but do not own the intervening gaps or a continuous outer-to-inner boundary transition.",
+    "Top provides no fully enumerated source-owned C-004 outer perimeter; its approved status is blocked by rubble shadow and discontinuous CL-003 ownership.",
+    "Selecting endpoints, a center, a filled footprint, or a transition curve would add an unapproved interpretation beyond the A02 hard-pass rule."
+  ],
+  "hard_gates": {
+    "input_and_source_hash_integrity": "pass",
+    "six_physical_targets_unchanged": "pass",
+    "primary_view_target_frame_error": "blocked_no_traceable_candidate_transition",
+    "CL003_preservation": "pass_zero_displacement_no_candidate_applied",
+    "CL002_preservation": "pass_C003_unchanged",
+    "CL001_and_unaffected_component_preservation": "pass_C001_C002_C003_unchanged",
+    "per_panel_displacement_statistics": "blocked_candidate_coordinates_not_created",
+    "normalized_displacement_statistics": "blocked_candidate_coordinates_not_created",
+    "affected_scope_counts": "pass_theoretical_C004_only_no_candidate_created",
+    "front_left_owner_compliance": "pass_no_conflicting_candidate_created",
+    "back_right_disagreement_disclosure": "pass_all_validation_factors_and_gaps_disclosed",
+    "top_evidence_role_compliance": "pass_top_perimeter_block_preserved",
+    "source_interpretation_separation": "pass_no_candidate_transition_presented_as_source",
+    "hidden_sector_non_invention": "pass_stop_triggered_before_invention",
+    "forbidden_operation_audit": "pass",
+    "write_scope_and_stop_state": "pending_final_validation"
+  },
+  "affected_scope": {
+    "component_ids_if_later_authorized": [
+      "C-004"
+    ],
+    "locked_contact_ids": [
+      "CL-003"
+    ],
+    "unchanged_contact_ids": [
+      "CL-001",
+      "CL-002"
+    ],
+    "candidate_boundary_segment_count": 0
+  },
+  "controlling_block": "The existing authority does not own a continuous C-004 outer-to-inner transition. The top C-004 perimeter is explicitly blocked, all CL-003 contacts are discontinuous with closure forbidden, and the bounded outer observations leave unowned gaps. A candidate line would be untraceable under the approved Option B hard gate.",
+  "option_concept_disproved": false,
+  "candidate_adjusted_silhouette_created": false,
+  "candidate_outer_transition_created": false,
+  "filled_footprint_created": false,
+  "geometry_created": false,
+  "step10_revised": false
+}

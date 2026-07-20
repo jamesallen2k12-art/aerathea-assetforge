@@ -1,0 +1,296 @@
+{
+  "schema": "aerathea.c004_boundary_transition_interpretation_rule_validation.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-C004-BTIR-A01",
+  "date": "2026-07-17",
+  "status": "pass",
+  "artifact_classification": "proof only",
+  "controlling_result": "partial_candidate_rule_upright_views_only_top_remains_blocked",
+  "validator_count": 24,
+  "passed_count": 24,
+  "failed_count": 0,
+  "validators": [
+    {
+      "id": "input_count_30",
+      "result": "pass",
+      "evidence": 30
+    },
+    {
+      "id": "input_hashes_match",
+      "result": "pass",
+      "evidence": {
+        "matched": 30,
+        "mismatched": 0
+      }
+    },
+    {
+      "id": "six_physical_targets_unchanged",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "CL003_47_locked_zero_displacement",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "C001_C002_C003_CL001_CL002_unchanged",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "front_authority_counts_replay",
+      "result": "pass",
+      "evidence": {
+        "outer": 6,
+        "CL003": 9
+      }
+    },
+    {
+      "id": "back_authority_counts_replay",
+      "result": "pass",
+      "evidence": {
+        "outer": 6,
+        "CL003": 10
+      }
+    },
+    {
+      "id": "left_authority_counts_replay",
+      "result": "pass",
+      "evidence": {
+        "outer": 6,
+        "CL003": 6
+      }
+    },
+    {
+      "id": "right_authority_counts_replay",
+      "result": "pass",
+      "evidence": {
+        "outer": 8,
+        "CL003": 6
+      }
+    },
+    {
+      "id": "top_authority_counts_replay",
+      "result": "pass",
+      "evidence": {
+        "outer": 0,
+        "CL003": 16
+      }
+    },
+    {
+      "id": "all_upright_endpoints_approved_same_view",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "pairing_selector_replayable",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "no_crossing_trace_pairs",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "formula_registry_exact",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "inner_endpoint_coefficient_zero",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "front_left_primary_back_right_validation",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "top_zero_traces_and_block_preserved",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "no_outer_displacement_applied",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "no_continuous_field_or_closed_perimeter",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "no_geometry",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "review_board_exists",
+      "result": "pass",
+      "evidence": {
+        "sha256": "09f4dd414079860c2eaa1416c39066beafc30f7e744ff12efa2c43b4b9b1253c",
+        "size_bytes": 1260066
+      }
+    },
+    {
+      "id": "write_scope_no_unexpected_new_paths",
+      "result": "pass",
+      "evidence": {
+        "new_paths": [
+          "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/evidence/C004_BOUNDARY_TRANSITION_INTERPRETATION_RULE_A01/SM_GIA_BloodAxeCairnstone_A005_C004_BOUNDARY_TRANSITION_INTERPRETATION_RULE_A01_REVIEW_BOARD.png",
+          "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/handoffs/C004_BOUNDARY_TRANSITION_INTERPRETATION_RULE_A01_TO_STEP10_RULE_DECISION_HANDOFF.md",
+          "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/C004_BOUNDARY_TRANSITION_INTERPRETATION_RULE_A01_INPUT_LOCK.json",
+          "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/C004_BOUNDARY_TRANSITION_INTERPRETATION_RULE_A01_PER_VIEW_LEDGER.json",
+          "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/C004_BOUNDARY_TRANSITION_INTERPRETATION_RULE_A01_RULE_REGISTRY.json",
+          "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/C004_BOUNDARY_TRANSITION_INTERPRETATION_RULE_A01_OUTPUT_RECORD.md"
+        ],
+        "unexpected": []
+      }
+    },
+    {
+      "id": "step10_step11_production_stopped",
+      "result": "pass",
+      "evidence": null
+    },
+    {
+      "id": "commit_and_push_not_performed",
+      "result": "pass",
+      "evidence": "f525945"
+    }
+  ],
+  "input_lock_validation": {
+    "input_count": 30,
+    "current_hash_match_count": 30,
+    "unexpected_hash_mismatch_count": 0
+  },
+  "write_scope_validation": {
+    "baseline_path_count": 673,
+    "new_git_paths": [
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/evidence/C004_BOUNDARY_TRANSITION_INTERPRETATION_RULE_A01/SM_GIA_BloodAxeCairnstone_A005_C004_BOUNDARY_TRANSITION_INTERPRETATION_RULE_A01_REVIEW_BOARD.png",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/handoffs/C004_BOUNDARY_TRANSITION_INTERPRETATION_RULE_A01_TO_STEP10_RULE_DECISION_HANDOFF.md",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/C004_BOUNDARY_TRANSITION_INTERPRETATION_RULE_A01_INPUT_LOCK.json",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/C004_BOUNDARY_TRANSITION_INTERPRETATION_RULE_A01_PER_VIEW_LEDGER.json",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/C004_BOUNDARY_TRANSITION_INTERPRETATION_RULE_A01_RULE_REGISTRY.json",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/C004_BOUNDARY_TRANSITION_INTERPRETATION_RULE_A01_OUTPUT_RECORD.md"
+    ],
+    "unexpected_new_paths": []
+  },
+  "forbidden_work_validation": {
+    "source_modified": false,
+    "physical_targets_modified": false,
+    "contacts_modified": false,
+    "top_transition_created": false,
+    "continuous_surface_field_created": false,
+    "closed_perimeter_or_fill_created": false,
+    "world_frame_or_cross_view_pair_created": false,
+    "step10_revised": false,
+    "step11_started": false,
+    "geometry_or_production_started": false,
+    "commit_created": false,
+    "push_performed": false
+  },
+  "output_hashes": [
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/C004_BOUNDARY_TRANSITION_INTERPRETATION_RULE_A01_INPUT_LOCK.json",
+      "sha256": "945b5681996575b15506ec9b49fd9f3a9af454de83dc56f93ace9b8c632a39b1",
+      "size_bytes": 108582,
+      "artifact_classification": "proof only"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/C004_BOUNDARY_TRANSITION_INTERPRETATION_RULE_A01_RULE_REGISTRY.json",
+      "sha256": "22227e4b2392b3bd6f03acc4796704e0323ca312e157dda2e5bee19ac361867a",
+      "size_bytes": 3859,
+      "artifact_classification": "proof only"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/C004_BOUNDARY_TRANSITION_INTERPRETATION_RULE_A01_PER_VIEW_LEDGER.json",
+      "sha256": "c30fe9e7ae2c623122865102b16922931e42e87e2a3bfadb145cbe73f4861113",
+      "size_bytes": 96783,
+      "artifact_classification": "proof only"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/evidence/C004_BOUNDARY_TRANSITION_INTERPRETATION_RULE_A01/SM_GIA_BloodAxeCairnstone_A005_C004_BOUNDARY_TRANSITION_INTERPRETATION_RULE_A01_REVIEW_BOARD.png",
+      "sha256": "09f4dd414079860c2eaa1416c39066beafc30f7e744ff12efa2c43b4b9b1253c",
+      "size_bytes": 1260066,
+      "artifact_classification": "proof only"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/C004_BOUNDARY_TRANSITION_INTERPRETATION_RULE_A01_OUTPUT_RECORD.md",
+      "sha256": "7ac45c830f5ae573a6d6247b9a4798ca7d5e90c15d743f25f6e685f32665ef8e",
+      "size_bytes": 3169,
+      "artifact_classification": "authoritative for bounded A01 decision only"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/handoffs/C004_BOUNDARY_TRANSITION_INTERPRETATION_RULE_A01_TO_STEP10_RULE_DECISION_HANDOFF.md",
+      "sha256": "9a13a55333c0c3d1fa063f3296c60c8434df6b66002b6bde26b6ff22939498a9",
+      "size_bytes": 2124,
+      "artifact_classification": "authoritative for partial-rule routing only"
+    }
+  ],
+  "output_hash_policy": "Every non-validation execution output is recorded here. This validation file omits its own hash to avoid circular mutation.",
+  "post_decision_closeout": {
+    "approver": "Flamestrike",
+    "statement": "I approve your recommendation",
+    "date": "2026-07-17",
+    "decision": "partial_candidate_rule_upright_views_only_top_remains_blocked",
+    "upright_trace_count": 26,
+    "upright_trace_classification": "candidate interpretation for later Step 10 consideration only",
+    "top_perimeter_status": "blocked",
+    "continuous_transition_field_status": "blocked",
+    "output_classification": "authoritative for bounded A01 decision only",
+    "handoff_classification": "authoritative for partial-rule routing only",
+    "output_decision_checkpoint": "Saved/ProjectRecovery/20260717-105931/",
+    "allowed_authority_records_updated": [
+      "steps/C004_BOUNDARY_TRANSITION_INTERPRETATION_RULE_A01_OUTPUT_RECORD.md",
+      "handoffs/C004_BOUNDARY_TRANSITION_INTERPRETATION_RULE_A01_TO_STEP10_RULE_DECISION_HANDOFF.md",
+      "SM_GIA_BloodAxeCairnstone_A005_APPROVAL_LOG.md",
+      "SM_GIA_BloodAxeCairnstone_A005_ARTIFACT_INDEX.md",
+      "SM_GIA_BloodAxeCairnstone_A005_RESET_RESUME_STATE.md",
+      "manifests/C004_BOUNDARY_TRANSITION_INTERPRETATION_RULE_A01_VALIDATION.json"
+    ],
+    "immutable_input_lock_note": "The 30-input lock proved the execution universe through technical validation. The approval log, artifact index, and reset/resume state were intentionally updated only after Flamestrike's output decision and therefore are expected to differ from their pre-execution locked hashes.",
+    "updated_authority_record_hashes": [
+      {
+        "path": "SM_GIA_BloodAxeCairnstone_A005_RESET_RESUME_STATE.md",
+        "sha256": "2231a8f36bf6b45a984a9dcad94e8ffbe9fb604c32dca2756ac75a9267be40cd",
+        "size_bytes": 40238
+      },
+      {
+        "path": "SM_GIA_BloodAxeCairnstone_A005_ARTIFACT_INDEX.md",
+        "sha256": "16d84c1640a2288387895249167ff55cebd7f9c12e9edd92644068e8db5bc107",
+        "size_bytes": 38079
+      },
+      {
+        "path": "SM_GIA_BloodAxeCairnstone_A005_APPROVAL_LOG.md",
+        "sha256": "5fd143b55329f26645fbf648bdb753cc07b79239103aa5f29cf47130400ca18e",
+        "size_bytes": 39520
+      }
+    ],
+    "commit_created": false,
+    "push_performed": false
+  },
+  "visual_review_validation": {
+    "status": "pass_visible_review_opened_and_foregrounded",
+    "board_clear_and_presentation_ready": true,
+    "source_evidence_regions_present": true,
+    "candidate_traces_unfilled": true,
+    "top_block_visible": true,
+    "continuous_surface_or_geometry_shown": false,
+    "review_board_opened_in_visible_desktop_window": true,
+    "output_record_opened_in_visible_desktop_window": true,
+    "review_board_window_title": "Flamestrike Image Viewer",
+    "review_board_window_id": "0x03400007",
+    "output_record_window_title": "C004_BOUNDARY_TRANSITION_INTERPRETATION_RULE_A01_OUTPUT_RECORD.md",
+    "output_record_window_id": "0x036000f8",
+    "review_board_foreground_activation": "pass"
+  },
+  "stop_state": {
+    "step10_revision": "stopped",
+    "step11": "stopped",
+    "geometry_and_production": "stopped"
+  }
+}

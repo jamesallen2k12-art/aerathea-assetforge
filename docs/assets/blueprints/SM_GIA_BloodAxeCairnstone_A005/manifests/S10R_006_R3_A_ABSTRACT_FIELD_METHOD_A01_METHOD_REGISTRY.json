@@ -1,0 +1,174 @@
+{
+  "schema": "aerathea.s10r_006_r3_a_abstract_field_method_a01_registry.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-006-R3-A-AFM-A01",
+  "method_id": "S10R-006-R3-A-AFM-A01",
+  "date": "2026-07-17",
+  "status": "approved_bounded_symbolic_method_no_field_coupling",
+  "artifact_classification": "authoritative for bounded S10R-006-R3-A symbolic method only",
+  "technical_result": "pass_bounded_symbolic_method_registered_no_field_coupling",
+  "flamestrike_decision": {
+    "decision": "approve",
+    "statement": "approved",
+    "scope": "authoritative bounded symbolic interpretation only",
+    "resolved_block_ids": [],
+    "field_implementation_authorized": false,
+    "coupling_rule_authorized": false
+  },
+  "r2_authority": {
+    "selected_option": "S10R-006-R2-A",
+    "authority": "preparation and separately approved record-only execution of this method contract",
+    "physical_authority": false,
+    "field_implementation_authorized": false,
+    "resolved_block_ids": []
+  },
+  "construction_frame": {
+    "name": "dimensionless symbolic lane domain",
+    "domain": "D_lane = {(u,v) | 0 <= u <= 1 and 0 <= v <= 1}",
+    "u_meaning": "normalized within-lane rank only",
+    "v_identity": "v = t",
+    "physical_coordinate_claim": false,
+    "target_coordinate_claim": false
+  },
+  "lanes": [
+    {
+      "lane_id": "AFM-FRONT-LEFT",
+      "owner_view": "front",
+      "owner_plane": "XZ",
+      "registered_side": "left",
+      "trace_ids": ["F-BTIR-01", "F-BTIR-03", "F-BTIR-05"],
+      "within_side_orders": [1, 2, 3],
+      "u_stations": ["0", "1/2", "1"]
+    },
+    {
+      "lane_id": "AFM-FRONT-RIGHT",
+      "owner_view": "front",
+      "owner_plane": "XZ",
+      "registered_side": "right",
+      "trace_ids": ["F-BTIR-02", "F-BTIR-04", "F-BTIR-06"],
+      "within_side_orders": [1, 2, 3],
+      "u_stations": ["0", "1/2", "1"]
+    },
+    {
+      "lane_id": "AFM-LEFT-LEFT",
+      "owner_view": "left",
+      "owner_plane": "YZ",
+      "registered_side": "left",
+      "trace_ids": ["L-BTIR-01", "L-BTIR-03", "L-BTIR-05"],
+      "within_side_orders": [1, 2, 3],
+      "u_stations": ["0", "1/2", "1"]
+    },
+    {
+      "lane_id": "AFM-LEFT-RIGHT",
+      "owner_view": "left",
+      "owner_plane": "YZ",
+      "registered_side": "right",
+      "trace_ids": ["L-BTIR-02", "L-BTIR-04", "L-BTIR-06"],
+      "within_side_orders": [1, 2, 3],
+      "u_stations": ["0", "1/2", "1"]
+    }
+  ],
+  "between_trace_operator": {
+    "interval_index": "j(u) = min(floor(2u), 1)",
+    "local_weight": "lambda(u) = 2u - j(u)",
+    "descriptor": "W_lane(u,v) = {(T_j, v, 1-lambda), (T_(j+1), v, lambda)}",
+    "classification": "unevaluated symbolic record-weight descriptor",
+    "properties": {
+      "j_range": [0, 1],
+      "lambda_range": [0, 1],
+      "weight_sum": "1",
+      "u_0_identity": "T_0",
+      "u_half_identity": "T_1",
+      "u_1_identity": "T_2",
+      "adjacent_records_only": true,
+      "cross_lane_interpolation": false
+    }
+  },
+  "boundary_family": {
+    "k80": "abs(x / 56)^3 + abs(y / 44)^3 = 1",
+    "n3": "abs(x / 70)^3 + abs(y / 55)^3 = 1",
+    "scale": "s(v) = 0.8 + 0.2v",
+    "a": "a(v) = 70s(v) = 56 + 14v",
+    "b": "b(v) = 55s(v) = 44 + 11v",
+    "family": "H_v: abs(x / a(v))^3 + abs(y / b(v))^3 = 1",
+    "endpoint_audit": {
+      "s_0": "0.8",
+      "s_1": "1",
+      "a_0": 56,
+      "a_1": 70,
+      "b_0": 44,
+      "b_1": 55
+    },
+    "classification": "approved bounded abstract analytic family within the symbolic method only; registered unevaluated"
+  },
+  "coupling": {
+    "lane_to_boundary_function": null,
+    "angular_placement": null,
+    "arc_length_placement": null,
+    "source_to_target_transform": null,
+    "cross_lane_seam": null,
+    "top_upright_join": null,
+    "closed_field": false,
+    "physical_field": false,
+    "status": "missing_authority_preserved_no_coupling_inferred"
+  },
+  "sector_policy": {
+    "independent_symbolic_lane_count": 4,
+    "within_lane_adjacent_only": true,
+    "front_left_front_right_join": false,
+    "left_left_left_right_join": false,
+    "front_left_view_join": false,
+    "top_upright_join": false,
+    "periodic_wrap": false,
+    "closed_360_ownership": false
+  },
+  "holdouts": {
+    "classification": "proof only",
+    "back_count": 6,
+    "right_count": 8,
+    "total": 14,
+    "construction_use_authorized": false
+  },
+  "authority_counts": {
+    "approved_construction_records": 12,
+    "symbolic_lanes": 4,
+    "physical_source_target_transforms": 0,
+    "physical_cross_view_pairs": 0,
+    "target_trace_coordinates": 0,
+    "source_centers": 0,
+    "pivots": 0,
+    "anchors": 0,
+    "field_samples": 0,
+    "fills": 0,
+    "surfaces": 0,
+    "topology": 0,
+    "geometry": 0
+  },
+  "active_blocks": [
+    {
+      "id": "S10R-BLOCK-006",
+      "status": "active_approved_symbolic_method_no_field_coupling"
+    },
+    {
+      "id": "S10R-BLOCK-008",
+      "status": "active_unchanged"
+    },
+    {
+      "id": "S10R-BLOCK-009",
+      "status": "active_unchanged"
+    }
+  ],
+  "resolved_block_ids": [],
+  "authorization_flags": {
+    "method_implementation_authorized": false,
+    "field_implementation_authorized": false,
+    "step10_closeout_authorized": false,
+    "step11_authorized": false,
+    "dcc_authorized": false,
+    "unreal_authorized": false,
+    "production_authorized": false,
+    "staging_authorized": false,
+    "commit_authorized": false,
+    "push_authorized": false
+  }
+}

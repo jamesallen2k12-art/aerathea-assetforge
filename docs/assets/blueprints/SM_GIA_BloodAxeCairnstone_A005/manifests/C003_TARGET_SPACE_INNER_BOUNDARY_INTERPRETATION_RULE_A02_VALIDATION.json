@@ -1,0 +1,404 @@
+{
+  "schema": "aerathea.c003_target_space_inner_boundary_interpretation_rule_a02_validation.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-C003-TSIB-A02",
+  "date": "2026-07-17",
+  "validated_at": "2026-07-17T14:56:15-04:00",
+  "status": "pass_ready_for_visible_Flamestrike_review",
+  "artifact_classification": "proof only",
+  "input_lock_sha256": "1208892b0c2e50a15e88062e656374a8183defec8c8d3fe70ba453f3c1b2d541",
+  "option_registry_sha256": "ba24e6b5803deb6af15b5fcf1d7e95f2f088321a63775a32ff39d6350b7423aa",
+  "curve_ledger_sha256": "dc04dab52e922786a99eaa7bbc52cb3620ac41c4784aae56a10b098423952410",
+  "review_board_sha256": "717ed5ca38947f21bd56b5e2ee13cb060fae17579686b59e83abed8e52e077c9",
+  "contract_sha256": "ea55cd69c494b17cfcc06e324552da2df789a6415f3eceef1112ea3110662d0b",
+  "gate_count": 26,
+  "passed_gate_count": 26,
+  "failed_gate_count": 0,
+  "gates": [
+    {
+      "gate": "G01",
+      "subject": "allowlisted immutable input hash lock",
+      "status": "pass",
+      "evidence": {
+        "locked_inputs": 32,
+        "mismatches": 0
+      }
+    },
+    {
+      "gate": "G02",
+      "subject": "source and existing Step 01-Step 10R authority unchanged",
+      "status": "pass",
+      "evidence": {
+        "method": "all execution inputs re-hashed against immutable A02 lock"
+      }
+    },
+    {
+      "gate": "G03",
+      "subject": "A01 recovery classifications and byte preservation",
+      "status": "pass",
+      "evidence": {
+        "contract": {
+          "status": "quarantined",
+          "sha256": "763f9840a8e2dff26d98ea69666887f71d4bd14e44aad5924e8b1af14f138f6e"
+        },
+        "input_lock": {
+          "status": "invalid",
+          "sha256": "900e8add4932342d4dcca727d9ab43915a8b164e5231285f26aef80968ff292a"
+        },
+        "option_registry": {
+          "status": "quarantined",
+          "sha256": "b003e158465d155bd8433269844d1f38b37467c371a519f6602027cb8241b0b4"
+        },
+        "byte_identical_required": true,
+        "used_as_option_authority": false
+      }
+    },
+    {
+      "gate": "G04",
+      "subject": "six physical targets unchanged",
+      "status": "pass",
+      "evidence": {
+        "physical_target_record_sha256": "688209b57bc5fda0f527fcc853a44286d750257f0c293d15dd67d0e617511056"
+      }
+    },
+    {
+      "gate": "G05",
+      "subject": "approved outer N3 exact replay",
+      "status": "pass",
+      "evidence": {
+        "equation": "abs(x / 70)^3 + abs(y / 55)^3 = 1",
+        "width_cm": 140,
+        "depth_cm": 110,
+        "exponent": 3
+      }
+    },
+    {
+      "gate": "G06",
+      "subject": "construction-origin frame has zero source-pixel relation",
+      "status": "pass",
+      "evidence": {
+        "origin": [
+          0,
+          0
+        ],
+        "origin_role": "mathematical construction convention only",
+        "source_pixel_relation": "none"
+      }
+    },
+    {
+      "gate": "G07",
+      "subject": "all CL-003 source samples unchanged",
+      "status": "pass",
+      "evidence": {
+        "top_samples": 16,
+        "all_view_samples": 47,
+        "sample_displacement_px": 0
+      }
+    },
+    {
+      "gate": "G08",
+      "subject": "CL-002 samples unchanged and closure blocked",
+      "status": "pass",
+      "evidence": {
+        "all_view_CL002_samples": 40,
+        "closure_authorized": false
+      }
+    },
+    {
+      "gate": "G09",
+      "subject": "option registry frozen before curve generation",
+      "status": "pass",
+      "evidence": {
+        "option_registry_sha256": "ba24e6b5803deb6af15b5fcf1d7e95f2f088321a63775a32ff39d6350b7423aa",
+        "input_lock_sha256": "1208892b0c2e50a15e88062e656374a8183defec8c8d3fe70ba453f3c1b2d541"
+      }
+    },
+    {
+      "gate": "G10",
+      "subject": "K90/K80/K70 exact registered formula replay",
+      "status": "pass",
+      "evidence": [
+        {
+          "option_id": "C003_TSIB_K90_NARROW_APRON",
+          "formula_replay_exact": true,
+          "dimensions_exact": true,
+          "closure_error_cm": 0.0,
+          "max_equation_residual": 3.375077994860476e-14,
+          "max_outer_equation_value_independent": 0.7290000000000233,
+          "strictly_contained": true,
+          "intersection_or_escape_count": 0,
+          "line_only_unfilled": true,
+          "mapping_and_authority_counts_zero": true
+        },
+        {
+          "option_id": "C003_TSIB_K80_MEDIUM_APRON",
+          "formula_replay_exact": true,
+          "dimensions_exact": true,
+          "closure_error_cm": 0.0,
+          "max_equation_residual": 3.397282455352979e-14,
+          "max_outer_equation_value_independent": 0.5120000000000173,
+          "strictly_contained": true,
+          "intersection_or_escape_count": 0,
+          "line_only_unfilled": true,
+          "mapping_and_authority_counts_zero": true
+        },
+        {
+          "option_id": "C003_TSIB_K70_BROAD_APRON",
+          "formula_replay_exact": true,
+          "dimensions_exact": true,
+          "closure_error_cm": 0.0,
+          "max_equation_residual": 4.1522341120980855e-14,
+          "max_outer_equation_value_independent": 0.343000000000013,
+          "strictly_contained": true,
+          "intersection_or_escape_count": 0,
+          "line_only_unfilled": true,
+          "mapping_and_authority_counts_zero": true
+        }
+      ]
+    },
+    {
+      "gate": "G11",
+      "subject": "candidate dimensions exact",
+      "status": "pass",
+      "evidence": {
+        "C003_TSIB_K90_NARROW_APRON": {
+          "dimensions_exact": true
+        },
+        "C003_TSIB_K80_MEDIUM_APRON": {
+          "dimensions_exact": true
+        },
+        "C003_TSIB_K70_BROAD_APRON": {
+          "dimensions_exact": true
+        }
+      }
+    },
+    {
+      "gate": "G12",
+      "subject": "strict containment and zero outer-N3 intersections",
+      "status": "pass",
+      "evidence": {
+        "C003_TSIB_K90_NARROW_APRON": {
+          "max_outer_equation_value": 0.7290000000000233,
+          "escapes": 0
+        },
+        "C003_TSIB_K80_MEDIUM_APRON": {
+          "max_outer_equation_value": 0.5120000000000173,
+          "escapes": 0
+        },
+        "C003_TSIB_K70_BROAD_APRON": {
+          "max_outer_equation_value": 0.343000000000013,
+          "escapes": 0
+        }
+      }
+    },
+    {
+      "gate": "G13",
+      "subject": "identical target frame, exponent, sampling, and serialization",
+      "status": "pass",
+      "evidence": {
+        "sample_count": 721,
+        "theta_step": "2*pi/720",
+        "exponent": 3,
+        "origin": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "gate": "G14",
+      "subject": "mathematical target-space closure only",
+      "status": "pass",
+      "evidence": {
+        "candidate_closure_errors_cm": {
+          "C003_TSIB_K90_NARROW_APRON": 0.0,
+          "C003_TSIB_K80_MEDIUM_APRON": 0.0,
+          "C003_TSIB_K70_BROAD_APRON": 0.0
+        },
+        "source_closure_authorized": false
+      }
+    },
+    {
+      "gate": "G15",
+      "subject": "outer and inner curves line-only and unfilled",
+      "status": "pass",
+      "evidence": {
+        "candidate_fill": false,
+        "filled_pixel_count": 0
+      }
+    },
+    {
+      "gate": "G16",
+      "subject": "source overlay count zero in target option panels",
+      "status": "pass",
+      "evidence": {
+        "source_overlay_count": 0,
+        "source_region_separate": true
+      }
+    },
+    {
+      "gate": "G17",
+      "subject": "CL-003 source-to-target mapping count zero",
+      "status": "pass",
+      "evidence": {
+        "source_contact_mapping_count": 0
+      }
+    },
+    {
+      "gate": "G18",
+      "subject": "target CL-003 coordinate count zero",
+      "status": "pass",
+      "evidence": {
+        "target_CL003_coordinate_count": 0
+      }
+    },
+    {
+      "gate": "G19",
+      "subject": "physical cross-view pair count remains zero",
+      "status": "pass",
+      "evidence": {
+        "physical_cross_view_pairs": 0
+      }
+    },
+    {
+      "gate": "G20",
+      "subject": "no center, physical C-003 size, pivot, or placement claim",
+      "status": "pass",
+      "evidence": {
+        "center_claim_count": 0,
+        "pivot_claim_count": 0,
+        "physical_C003_dimension": false
+      }
+    },
+    {
+      "gate": "G21",
+      "subject": "no annulus, hidden interface, footprint, mask, field, surface, topology, or geometry",
+      "status": "pass",
+      "evidence": {
+        "annulus_count": 0,
+        "field_sample_count": 0,
+        "surface_topology_geometry_count": 0
+      }
+    },
+    {
+      "gate": "G22",
+      "subject": "source evidence and candidate interpretation visibly separate",
+      "status": "pass",
+      "evidence": {
+        "board_dimensions_px": [
+          1920,
+          1080
+        ],
+        "native_source_dimensions_px": [
+          337,
+          371
+        ],
+        "native_unmarked_source_pixels_compared": 122643,
+        "native_unmarked_source_pixels_match": true,
+        "exact_CL003_marks": 16,
+        "internal_visual_review": "pass before visible presentation"
+      }
+    },
+    {
+      "gate": "G23",
+      "subject": "no automatic ranking or selection",
+      "status": "pass",
+      "evidence": {
+        "automatic_selection": false,
+        "Flamestrike_decision": "pending"
+      }
+    },
+    {
+      "gate": "G24",
+      "subject": "only allowlisted paths changed",
+      "status": "pass",
+      "evidence": {
+        "changed_docs_since_pre_execution_checkpoint": [
+          "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/evidence/C003_TARGET_SPACE_INNER_BOUNDARY_INTERPRETATION_RULE_A02/SM_GIA_BloodAxeCairnstone_A005_C003_TARGET_SPACE_INNER_BOUNDARY_INTERPRETATION_RULE_A02_REVIEW_BOARD.png",
+          "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/C003_TARGET_SPACE_INNER_BOUNDARY_INTERPRETATION_RULE_A02_CURVE_LEDGER.json",
+          "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/C003_TARGET_SPACE_INNER_BOUNDARY_INTERPRETATION_RULE_A02_INPUT_LOCK.json",
+          "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/C003_TARGET_SPACE_INNER_BOUNDARY_INTERPRETATION_RULE_A02_OPTION_REGISTRY.json",
+          "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/C003_TARGET_SPACE_INNER_BOUNDARY_INTERPRETATION_RULE_A02_VALIDATION.json",
+          "docs/projects/assetforge/RECOVERY_JOURNAL.md"
+        ],
+        "staged_paths": []
+      }
+    },
+    {
+      "gate": "G25",
+      "subject": "S10R-003-A and S10R-006-A remain unimplemented",
+      "status": "pass",
+      "evidence": {
+        "target_CL003_coordinate_count": 0,
+        "field_sample_count": 0
+      }
+    },
+    {
+      "gate": "G26",
+      "subject": "Step 10 closeout, Step 11, production, staging, commit, and push remain stopped",
+      "status": "pass",
+      "evidence": {
+        "step10_closeout": "stopped",
+        "step11": "stopped",
+        "production": "stopped",
+        "staging_commit_push": "not authorized"
+      }
+    }
+  ],
+  "candidate_audit": [
+    {
+      "option_id": "C003_TSIB_K90_NARROW_APRON",
+      "formula_replay_exact": true,
+      "dimensions_exact": true,
+      "closure_error_cm": 0.0,
+      "max_equation_residual": 3.375077994860476e-14,
+      "max_outer_equation_value_independent": 0.7290000000000233,
+      "strictly_contained": true,
+      "intersection_or_escape_count": 0,
+      "line_only_unfilled": true,
+      "mapping_and_authority_counts_zero": true
+    },
+    {
+      "option_id": "C003_TSIB_K80_MEDIUM_APRON",
+      "formula_replay_exact": true,
+      "dimensions_exact": true,
+      "closure_error_cm": 0.0,
+      "max_equation_residual": 3.397282455352979e-14,
+      "max_outer_equation_value_independent": 0.5120000000000173,
+      "strictly_contained": true,
+      "intersection_or_escape_count": 0,
+      "line_only_unfilled": true,
+      "mapping_and_authority_counts_zero": true
+    },
+    {
+      "option_id": "C003_TSIB_K70_BROAD_APRON",
+      "formula_replay_exact": true,
+      "dimensions_exact": true,
+      "closure_error_cm": 0.0,
+      "max_equation_residual": 4.1522341120980855e-14,
+      "max_outer_equation_value_independent": 0.343000000000013,
+      "strictly_contained": true,
+      "intersection_or_escape_count": 0,
+      "line_only_unfilled": true,
+      "mapping_and_authority_counts_zero": true
+    }
+  ],
+  "internal_rejected_attempts": [
+    {
+      "artifact_status": "rejected internal proof; superseded; not presented",
+      "validation_sha256": "1a01155fbbf6a7ea061021460a5b64e0ad1cb42b5ff78d19df929a06a00faee4",
+      "review_board_sha256": "ef2116ec62de426564f84e2926d443628e791c5327214a4c7b1527cbe3c5fede",
+      "failed_gate_ids": [
+        "G22"
+      ],
+      "root_cause": "Decorative red review-frame border overlapped the outermost native source-copy pixels; authoritative source file was unchanged.",
+      "smallest_sufficient_correction": "Move the decorative border fully outside the native source-copy rectangle and replay the unchanged audit."
+    }
+  ],
+  "technical_result": "three_C003_target_space_boundary_options_ready_for_Flamestrike_decision",
+  "Flamestrike_decision": "pending_visible_review",
+  "authority_effect": "none from technical validation",
+  "review_artifact_ready": true,
+  "visible_opening_claimed_by_manifest": false,
+  "mapping_field_geometry_created": false
+}

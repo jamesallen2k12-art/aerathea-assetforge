@@ -1,0 +1,31 @@
+{
+  "schema": "aerathea.s10r_006_r8_r2_a_gate10_wording_authority_audit.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-006-R8-R2-A-GATE10-WORDING-CORR-A01",
+  "date": "2026-07-20",
+  "status": "pass_exact_original_required_registry_table_authority",
+  "artifact_classification": "proof only",
+  "controlling_source": {
+    "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/S10R_006_R8_A_POST_R7_CORE_ROUTING_AUTHORITY_DECISION_CONTRACT.md",
+    "sha256": "41ed12c69fd911fe0fd789f4605fd3d577ef8f0beb15b3833a1a646983be4066",
+    "section": "Route Registry Required From Later Execution",
+    "authority_rule": "The explicitly execution-required registry table controls Gate 10 route-result strings; narrative variants do not replace it."
+  },
+  "exact_routes": [
+    {"id":"S10R-006-R8-A","candidate_result":"later preparation only of a bounded corner-gap-to-field coupling rule contract","selected":false},
+    {"id":"S10R-006-R8-B","candidate_result":"later preparation only of a bounded top/upright join rule contract","selected":false},
+    {"id":"S10R-006-R8-BLOCK","candidate_result":"preserve current approved symbolic records and no-field block","selected":false}
+  ],
+  "checks": [
+    {"id":"WA-01","status":"pass","subject":"original R8 contract hash matches"},
+    {"id":"WA-02","status":"pass","subject":"required-registry section is present exactly once"},
+    {"id":"WA-03","status":"pass","subject":"original required-registry table contains exactly the three controlling rows"},
+    {"id":"WA-04","status":"pass","subject":"R8-R1 Gate 10 variants are identified as non-controlling failed replay wording"},
+    {"id":"WA-05","status":"pass","subject":"R8-R2 contract reproduces the three controlling route-result strings"},
+    {"id":"WA-06","status":"pass","subject":"fresh option registry reproduces the exact IDs order and strings"},
+    {"id":"WA-07","status":"pass","subject":"all three routes remain unselected with selected route null and count zero"},
+    {"id":"WA-08","status":"pass","subject":"correction changes wording authority only and grants no route or downstream authority"}
+  ],
+  "summary": {"check_count":8,"passed_check_count":8,"failed_check_count":0},
+  "technical_result": "pass_gate10_exact_wording_authority_corrected"
+}

@@ -1,0 +1,62 @@
+{
+  "schema": "aerathea.s10r_006_r1_a_normalized_primary_owner_bridge_a01_remaining_blocks.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-006-R1-A-NPOB-DC-A01",
+  "date": "2026-07-17",
+  "status": "bridge_decision_closed_all_three_blocks_and_downstream_stops_active",
+  "artifact_classification": "authoritative for post-bridge-decision blocked routing only",
+  "closed_decision": {
+    "subject": "exact twelve-record bounded symbolic normalized primary-owner bridge implementation",
+    "decision": "approved bounded interpretation",
+    "resolved_block_ids": []
+  },
+  "active_blocks": [
+    {
+      "id": "S10R-BLOCK-006",
+      "subject": "S10R-006-A transition field and physical correspondence",
+      "approved_condition": "exact twelve-record bounded symbolic normalized bridge",
+      "blocked_fact": "No field exists and no physical source-to-target or cross-view correspondence was created.",
+      "status": "active_bounded_bridge_approved_no_field_and_no_physical_correspondence",
+      "field_sample_count": 0
+    },
+    {
+      "id": "S10R-BLOCK-008",
+      "subject": "historical Step 10 decision set",
+      "blocked_fact": "Historical Step 10 items not resolved by bounded decisions remain pending.",
+      "status": "active_prior_step10_decisions_pending"
+    },
+    {
+      "id": "S10R-BLOCK-009",
+      "subject": "global production authority",
+      "blocked_fact": "No filled footprint, source center, pivot, implemented field, topology, surface, or geometry authority exists.",
+      "status": "active_global_production_block"
+    }
+  ],
+  "counts": {
+    "approved_bounded_symbolic_bridge_records": 12,
+    "proof_only_validation_holdouts": 14,
+    "resolved_block_ids": 0,
+    "active_remaining_blocks": 3,
+    "physical_correspondences": 0,
+    "target_trace_coordinates": 0,
+    "field_samples": 0,
+    "fills": 0,
+    "surfaces": 0,
+    "topology": 0,
+    "geometry": 0
+  },
+  "historical_result": "blocked_source_authority_missing remains authoritative technical history",
+  "step10_closeout": "blocked",
+  "step11": "blocked",
+  "dcc": "blocked",
+  "unreal": "blocked",
+  "production": "blocked",
+  "staging_commit_push": "not_authorized",
+  "next_gate": {
+    "status": "none_selected_core_reassessment_required_after_mandatory_restart",
+    "technical_method_selected": false,
+    "contract_created_during_closeout": false,
+    "execution_authorized": false
+  },
+  "mandatory_restart_required": true
+}

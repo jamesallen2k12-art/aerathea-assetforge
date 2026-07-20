@@ -1,0 +1,1978 @@
+{
+  "schema": "aerathea.source_vs_measurement_dual_option_A_C003_scale_audit.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-SMR-A02",
+  "option_id": "OPTION_A_C003_SCALE_WITH_C004_INNER_CONTACT",
+  "date": "2026-07-17",
+  "status": "fail_CL002_exact_contact_preservation",
+  "artifact_classification": "proof only",
+  "method": "Apply the same per-view A01 axis scale to C-003 and C-004 so CL-003 remains coincident, then solve the one diagnostic translation that minimizes C-003 displacement at fixed CL-002 samples. Nonzero residual proves exact CL-002 preservation is impossible.",
+  "input_hash_match_count": 30,
+  "input_hash_mismatch_count": 0,
+  "view_audits": [
+    {
+      "view": "front",
+      "authority_role": "primary_XZ",
+      "diagnostic_scale_xy": [
+        0.925287356322,
+        0.96224340176
+      ],
+      "reference_spans_px": [
+        230,
+        375
+      ],
+      "diagnostic_translation_px": [
+        18.628352490381335,
+        13.604960899146667
+      ],
+      "diagnostic_translation_authority": "none; least-squares analytic term only, not center/pivot/anchor/geometry",
+      "CL003_sample_count": 9,
+      "CL003_exact_coincidence_after_shared_C003_C004_map": true,
+      "CL002_sample_count": 6,
+      "CL002_exact_coincidence_with_unchanged_C002": false,
+      "CL002_best_translation_residual_metrics_px": {
+        "count": 6,
+        "median": 9.114951217566258,
+        "rms": 9.150906382938413,
+        "maximum": 9.689341642164534
+      },
+      "CL002_residual_records": [
+        {
+          "sample_id": "F-CL-002-S01-P01",
+          "source_coordinate": [
+            120.0,
+            365.0
+          ],
+          "residual_px": [
+            9.662835249021335,
+            -0.17619745845333057
+          ],
+          "residual_magnitude_px": 9.664441556246
+        },
+        {
+          "sample_id": "F-CL-002-S01-P02",
+          "source_coordinate": [
+            127.0,
+            360.0
+          ],
+          "residual_px": [
+            9.139846743275333,
+            0.012585532746667738
+          ],
+          "residual_magnitude_px": 9.139855408385586
+        },
+        {
+          "sample_id": "F-CL-002-S01-P03",
+          "source_coordinate": [
+            134.0,
+            356.0
+          ],
+          "residual_px": [
+            8.616858237529334,
+            0.16361192570666816
+          ],
+          "residual_magnitude_px": 8.618411381914337
+        },
+        {
+          "sample_id": "F-CL-002-S02-P01",
+          "source_coordinate": [
+            365.0,
+            356.0
+          ],
+          "residual_px": [
+            -8.64176245208867,
+            0.16361192570666816
+          ],
+          "residual_magnitude_px": 8.643311121356389
+        },
+        {
+          "sample_id": "F-CL-002-S02-P02",
+          "source_coordinate": [
+            371.0,
+            360.0
+          ],
+          "residual_px": [
+            -9.090038314156669,
+            0.012585532746667738
+          ],
+          "residual_magnitude_px": 9.090047026746932
+        },
+        {
+          "sample_id": "F-CL-002-S02-P03",
+          "source_coordinate": [
+            379.0,
+            365.0
+          ],
+          "residual_px": [
+            -9.68773946358067,
+            -0.17619745845333057
+          ],
+          "residual_magnitude_px": 9.689341642164534
+        }
+      ],
+      "C003_source_coordinate_displacement_metrics_px": {
+        "count": 15,
+        "median": 9.090047026746932,
+        "rms": 8.398403281463542,
+        "maximum": 9.918951769455434
+      },
+      "C003_normalized_displacement_metrics_percent": {
+        "count": 15,
+        "median": 3.952191996365431,
+        "rms": 3.6318369236265924,
+        "maximum": 4.290439454791473
+      },
+      "C003_contact_displacement_records": [
+        {
+          "contact_id": "CL-002",
+          "sample_id": "F-CL-002-S01-P01",
+          "source_coordinate": [
+            120.0,
+            365.0
+          ],
+          "diagnostic_displacement_px": [
+            9.662835249021335,
+            -0.17619745845333057
+          ],
+          "magnitude_px": 9.664441556246,
+          "normalized_percent_of_reference_spans": 4.201495451057717
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "F-CL-002-S01-P02",
+          "source_coordinate": [
+            127.0,
+            360.0
+          ],
+          "diagnostic_displacement_px": [
+            9.139846743275333,
+            0.012585532746667738
+          ],
+          "magnitude_px": 9.139855408385586,
+          "normalized_percent_of_reference_spans": 3.9738478273470506
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "F-CL-002-S01-P03",
+          "source_coordinate": [
+            134.0,
+            356.0
+          ],
+          "diagnostic_displacement_px": [
+            8.616858237529334,
+            0.16361192570666816
+          ],
+          "magnitude_px": 8.618411381914337,
+          "normalized_percent_of_reference_spans": 3.7467141429468045
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "F-CL-002-S02-P01",
+          "source_coordinate": [
+            365.0,
+            356.0
+          ],
+          "diagnostic_displacement_px": [
+            -8.64176245208867,
+            0.16361192570666816
+          ],
+          "magnitude_px": 8.643311121356389,
+          "normalized_percent_of_reference_spans": 3.7575413302670495
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "F-CL-002-S02-P02",
+          "source_coordinate": [
+            371.0,
+            360.0
+          ],
+          "diagnostic_displacement_px": [
+            -9.090038314156669,
+            0.012585532746667738
+          ],
+          "magnitude_px": 9.090047026746932,
+          "normalized_percent_of_reference_spans": 3.952191996365431
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "F-CL-002-S02-P03",
+          "source_coordinate": [
+            379.0,
+            365.0
+          ],
+          "diagnostic_displacement_px": [
+            -9.68773946358067,
+            -0.17619745845333057
+          ],
+          "magnitude_px": 9.689341642164534,
+          "normalized_percent_of_reference_spans": 4.2123226950644375
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "F-CL-003-S01-P01",
+          "source_coordinate": [
+            119.0,
+            391.0
+          ],
+          "diagnostic_displacement_px": [
+            9.737547892699334,
+            -1.1578690126933306
+          ],
+          "magnitude_px": 9.80614601222971,
+          "normalized_percent_of_reference_spans": 4.244960666473156
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "F-CL-003-S01-P02",
+          "source_coordinate": [
+            126.0,
+            394.0
+          ],
+          "diagnostic_displacement_px": [
+            9.214559386953333,
+            -1.2711388074133314
+          ],
+          "magnitude_px": 9.301822324867421,
+          "normalized_percent_of_reference_spans": 4.020644514777963
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "F-CL-003-S01-P03",
+          "source_coordinate": [
+            133.0,
+            397.0
+          ],
+          "diagnostic_displacement_px": [
+            8.691570881207333,
+            -1.3844086021333304
+          ],
+          "magnitude_px": 8.801135810832145,
+          "normalized_percent_of_reference_spans": 3.7969339408680636
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "F-CL-003-S02-P01",
+          "source_coordinate": [
+            166.0,
+            400.0
+          ],
+          "diagnostic_displacement_px": [
+            6.226053639833333,
+            -1.4976783968533312
+          ],
+          "magnitude_px": 6.4036539964681936,
+          "normalized_percent_of_reference_spans": 2.73628305928771
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "F-CL-003-S02-P02",
+          "source_coordinate": [
+            171.0,
+            403.0
+          ],
+          "diagnostic_displacement_px": [
+            5.852490421443333,
+            -1.610948191573332
+          ],
+          "magnitude_px": 6.070156357872452,
+          "normalized_percent_of_reference_spans": 2.580568782512524
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "F-CL-003-S03-P01",
+          "source_coordinate": [
+            296.0,
+            403.0
+          ],
+          "diagnostic_displacement_px": [
+            -3.4865900383066695,
+            -1.610948191573332
+          ],
+          "magnitude_px": 3.840763488051912,
+          "normalized_percent_of_reference_spans": 1.5756025875496553
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "F-CL-003-S03-P02",
+          "source_coordinate": [
+            301.0,
+            400.0
+          ],
+          "diagnostic_displacement_px": [
+            -3.8601532566966696,
+            -1.4976783968533312
+          ],
+          "magnitude_px": 4.140510082778095,
+          "normalized_percent_of_reference_spans": 1.7251922544948752
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "F-CL-003-S04-P01",
+          "source_coordinate": [
+            373.0,
+            397.0
+          ],
+          "diagnostic_displacement_px": [
+            -9.239463601512668,
+            -1.3844086021333304
+          ],
+          "magnitude_px": 9.342605355110436,
+          "normalized_percent_of_reference_spans": 4.034085986271112
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "F-CL-003-S04-P02",
+          "source_coordinate": [
+            381.0,
+            394.0
+          ],
+          "diagnostic_displacement_px": [
+            -9.837164750936669,
+            -1.2711388074133314
+          ],
+          "magnitude_px": 9.918951769455434,
+          "normalized_percent_of_reference_spans": 4.290439454791473
+        }
+      ],
+      "view_result": "fail_CL002_exact_contact_preservation"
+    },
+    {
+      "view": "back",
+      "authority_role": "validation_XZ",
+      "diagnostic_scale_xy": [
+        0.9,
+        0.841346153846
+      ],
+      "reference_spans_px": [
+        189,
+        275
+      ],
+      "diagnostic_translation_px": [
+        24.28333333333333,
+        42.41346153850267
+      ],
+      "diagnostic_translation_authority": "none; least-squares analytic term only, not center/pivot/anchor/geometry",
+      "CL003_sample_count": 10,
+      "CL003_exact_coincidence_after_shared_C003_C004_map": true,
+      "CL002_sample_count": 6,
+      "CL002_exact_coincidence_with_unchanged_C002": false,
+      "CL002_best_translation_residual_metrics_px": {
+        "count": 6,
+        "median": 10.000139903824259,
+        "rms": 9.839766255298384,
+        "maximum": 10.5917863709237
+      },
+      "CL002_residual_records": [
+        {
+          "sample_id": "B-CL-002-S01-P01",
+          "source_coordinate": [
+            137.0,
+            270.0
+          ],
+          "residual_px": [
+            10.583333333333334,
+            -0.4230769230773319
+          ],
+          "residual_magnitude_px": 10.5917863709237
+        },
+        {
+          "sample_id": "B-CL-002-S01-P02",
+          "source_coordinate": [
+            145.0,
+            267.0
+          ],
+          "residual_px": [
+            9.783333333333335,
+            0.05288461538467004
+          ],
+          "residual_magnitude_px": 9.783476268364712
+        },
+        {
+          "sample_id": "B-CL-002-S01-P03",
+          "source_coordinate": [
+            152.0,
+            265.0
+          ],
+          "residual_px": [
+            9.083333333333336,
+            0.370192307692669
+          ],
+          "residual_magnitude_px": 9.090873818787681
+        },
+        {
+          "sample_id": "B-CL-002-S02-P01",
+          "source_coordinate": [
+            333.0,
+            265.0
+          ],
+          "residual_px": [
+            -9.016666666666659,
+            0.370192307692669
+          ],
+          "residual_magnitude_px": 9.024262857566399
+        },
+        {
+          "sample_id": "B-CL-002-S02-P02",
+          "source_coordinate": [
+            345.0,
+            267.0
+          ],
+          "residual_px": [
+            -10.216666666666661,
+            0.05288461538467004
+          ],
+          "residual_magnitude_px": 10.216803539283804
+        },
+        {
+          "sample_id": "B-CL-002-S02-P03",
+          "source_coordinate": [
+            345.0,
+            270.0
+          ],
+          "residual_px": [
+            -10.216666666666661,
+            -0.4230769230773319
+          ],
+          "residual_magnitude_px": 10.225422820627921
+        }
+      ],
+      "C003_source_coordinate_displacement_metrics_px": {
+        "count": 16,
+        "median": 10.221113179955863,
+        "rms": 10.497358925563724,
+        "maximum": 12.557820614422637
+      },
+      "C003_normalized_displacement_metrics_percent": {
+        "count": 16,
+        "median": 5.406755247182295,
+        "rms": 5.362434851807965,
+        "maximum": 6.485737832192676
+      },
+      "C003_contact_displacement_records": [
+        {
+          "contact_id": "CL-002",
+          "sample_id": "B-CL-002-S01-P01",
+          "source_coordinate": [
+            137.0,
+            270.0
+          ],
+          "diagnostic_displacement_px": [
+            10.583333333333334,
+            -0.4230769230773319
+          ],
+          "magnitude_px": 10.5917863709237,
+          "normalized_percent_of_reference_spans": 5.601760272110045
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "B-CL-002-S01-P02",
+          "source_coordinate": [
+            145.0,
+            267.0
+          ],
+          "diagnostic_displacement_px": [
+            9.783333333333335,
+            0.05288461538467004
+          ],
+          "magnitude_px": 9.783476268364712,
+          "normalized_percent_of_reference_spans": 5.176402565116234
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "B-CL-002-S01-P03",
+          "source_coordinate": [
+            152.0,
+            265.0
+          ],
+          "diagnostic_displacement_px": [
+            9.083333333333336,
+            0.370192307692669
+          ],
+          "magnitude_px": 9.090873818787681,
+          "normalized_percent_of_reference_spans": 4.807881383418868
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "B-CL-002-S02-P01",
+          "source_coordinate": [
+            333.0,
+            265.0
+          ],
+          "diagnostic_displacement_px": [
+            -9.016666666666659,
+            0.370192307692669
+          ],
+          "magnitude_px": 9.024262857566399,
+          "normalized_percent_of_reference_spans": 4.772621945781274
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "B-CL-002-S02-P02",
+          "source_coordinate": [
+            345.0,
+            267.0
+          ],
+          "diagnostic_displacement_px": [
+            -10.216666666666661,
+            0.05288461538467004
+          ],
+          "magnitude_px": 10.216803539283804,
+          "normalized_percent_of_reference_spans": 5.405677945940472
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "B-CL-002-S02-P03",
+          "source_coordinate": [
+            345.0,
+            270.0
+          ],
+          "diagnostic_displacement_px": [
+            -10.216666666666661,
+            -0.4230769230773319
+          ],
+          "magnitude_px": 10.225422820627921,
+          "normalized_percent_of_reference_spans": 5.407832548424118
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "B-CL-003-S01-P01",
+          "source_coordinate": [
+            123.0,
+            291.0
+          ],
+          "diagnostic_displacement_px": [
+            11.983333333333334,
+            -3.7548076923113314
+          ],
+          "magnitude_px": 12.557820614422637,
+          "normalized_percent_of_reference_spans": 6.485737832192676
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "B-CL-003-S01-P02",
+          "source_coordinate": [
+            130.0,
+            294.0
+          ],
+          "diagnostic_displacement_px": [
+            11.283333333333335,
+            -4.230769230773333
+          ],
+          "magnitude_px": 12.050436481520888,
+          "normalized_percent_of_reference_spans": 6.165060785397957
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "B-CL-003-S01-P03",
+          "source_coordinate": [
+            138.0,
+            297.0
+          ],
+          "diagnostic_displacement_px": [
+            10.483333333333334,
+            -4.706730769235335
+          ],
+          "magnitude_px": 11.491457362399446,
+          "normalized_percent_of_reference_spans": 5.8047960877097635
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "B-CL-003-S02-P01",
+          "source_coordinate": [
+            166.0,
+            300.0
+          ],
+          "diagnostic_displacement_px": [
+            7.683333333333334,
+            -5.18269230769733
+          ],
+          "magnitude_px": 9.267896776905545,
+          "normalized_percent_of_reference_spans": 4.480856984312688
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "B-CL-003-S02-P02",
+          "source_coordinate": [
+            173.0,
+            303.0
+          ],
+          "diagnostic_displacement_px": [
+            6.983333333333334,
+            -5.658653846159332
+          ],
+          "magnitude_px": 8.988175999339257,
+          "normalized_percent_of_reference_spans": 4.2292168859205805
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "B-CL-003-S03-P01",
+          "source_coordinate": [
+            307.0,
+            303.0
+          ],
+          "diagnostic_displacement_px": [
+            -6.416666666666661,
+            -5.658653846159332
+          ],
+          "magnitude_px": 8.555347711330313,
+          "normalized_percent_of_reference_spans": 3.9699548829624183
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "B-CL-003-S03-P02",
+          "source_coordinate": [
+            315.0,
+            300.0
+          ],
+          "diagnostic_displacement_px": [
+            -7.2166666666666615,
+            -5.18269230769733
+          ],
+          "magnitude_px": 8.88485100235467,
+          "normalized_percent_of_reference_spans": 4.258111310804079
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "B-CL-003-S04-P01",
+          "source_coordinate": [
+            346.0,
+            297.0
+          ],
+          "diagnostic_displacement_px": [
+            -10.316666666666663,
+            -4.706730769235335
+          ],
+          "magnitude_px": 11.339617526406157,
+          "normalized_percent_of_reference_spans": 5.720592050151489
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "B-CL-003-S04-P02",
+          "source_coordinate": [
+            355.0,
+            294.0
+          ],
+          "diagnostic_displacement_px": [
+            -11.216666666666661,
+            -4.230769230773333
+          ],
+          "magnitude_px": 11.988036511254434,
+          "normalized_percent_of_reference_spans": 6.130909674168258
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "B-CL-003-S04-P03",
+          "source_coordinate": [
+            362.0,
+            291.0
+          ],
+          "diagnostic_displacement_px": [
+            -11.916666666666657,
+            -3.7548076923113314
+          ],
+          "magnitude_px": 12.494219673540423,
+          "normalized_percent_of_reference_spans": 6.451259237691774
+        }
+      ],
+      "view_result": "fail_CL002_exact_contact_preservation"
+    },
+    {
+      "view": "left",
+      "authority_role": "primary_YZ",
+      "diagnostic_scale_xy": [
+        0.912592592593,
+        0.847465034965
+      ],
+      "reference_spans_px": [
+        168,
+        277
+      ],
+      "diagnostic_translation_px": [
+        20.59901234558301,
+        40.01500582751499
+      ],
+      "diagnostic_translation_authority": "none; least-squares analytic term only, not center/pivot/anchor/geometry",
+      "CL003_sample_count": 6,
+      "CL003_exact_coincidence_after_shared_C003_C004_map": true,
+      "CL002_sample_count": 6,
+      "CL002_exact_coincidence_with_unchanged_C002": false,
+      "CL002_best_translation_residual_metrics_px": {
+        "count": 6,
+        "median": 5.201369596263618,
+        "rms": 5.248276271119218,
+        "maximum": 6.587831485813656
+      },
+      "CL002_residual_records": [
+        {
+          "sample_id": "CL-002-S01-P01",
+          "source_coordinate": [
+            161.0,
+            262.0
+          ],
+          "residual_px": [
+            6.526419753056004,
+            0.0508449883449984
+          ],
+          "residual_magnitude_px": 6.526617807556943
+        },
+        {
+          "sample_id": "CL-002-S01-P02",
+          "source_coordinate": [
+            175.0,
+            262.0
+          ],
+          "residual_px": [
+            5.302716049358002,
+            0.0508449883449984
+          ],
+          "residual_magnitude_px": 5.302959806839832
+        },
+        {
+          "sample_id": "CL-002-S01-P03",
+          "source_coordinate": [
+            196.0,
+            264.0
+          ],
+          "residual_px": [
+            3.4671604938110008,
+            -0.2542249417249991
+          ],
+          "residual_magnitude_px": 3.4764683532054224
+        },
+        {
+          "sample_id": "CL-002-S02-P01",
+          "source_coordinate": [
+            277.0,
+            262.0
+          ],
+          "residual_px": [
+            -3.612839506156,
+            0.0508449883449984
+          ],
+          "residual_magnitude_px": 3.613197269743424
+        },
+        {
+          "sample_id": "CL-002-S02-P02",
+          "source_coordinate": [
+            294.0,
+            263.0
+          ],
+          "residual_px": [
+            -5.098765432075002,
+            -0.1016899766900039
+          ],
+          "residual_magnitude_px": 5.099779385687404
+        },
+        {
+          "sample_id": "CL-002-S02-P03",
+          "source_coordinate": [
+            311.0,
+            261.0
+          ],
+          "residual_px": [
+            -6.584691357994004,
+            0.2033799533800007
+          ],
+          "residual_magnitude_px": 6.587831485813656
+        }
+      ],
+      "C003_source_coordinate_displacement_metrics_px": {
+        "count": 12,
+        "median": 7.43403284461591,
+        "rms": 7.700981957826727,
+        "maximum": 10.442309890422893
+      },
+      "C003_normalized_displacement_metrics_percent": {
+        "count": 12,
+        "median": 4.17962601365568,
+        "rms": 4.323152681040071,
+        "maximum": 5.835058026111895
+      },
+      "C003_contact_displacement_records": [
+        {
+          "contact_id": "CL-002",
+          "sample_id": "CL-002-S01-P01",
+          "source_coordinate": [
+            161.0,
+            262.0
+          ],
+          "diagnostic_displacement_px": [
+            6.526419753056004,
+            0.0508449883449984
+          ],
+          "magnitude_px": 6.526617807556943,
+          "normalized_percent_of_reference_spans": 3.884817027460949
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "CL-002-S01-P02",
+          "source_coordinate": [
+            175.0,
+            262.0
+          ],
+          "diagnostic_displacement_px": [
+            5.302716049358002,
+            0.0508449883449984
+          ],
+          "magnitude_px": 5.302959806839832,
+          "normalized_percent_of_reference_spans": 3.1564319728735866
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "CL-002-S01-P03",
+          "source_coordinate": [
+            196.0,
+            264.0
+          ],
+          "diagnostic_displacement_px": [
+            3.4671604938110008,
+            -0.2542249417249991
+          ],
+          "magnitude_px": 3.4764683532054224,
+          "normalized_percent_of_reference_spans": 2.0658257141333363
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "CL-002-S02-P01",
+          "source_coordinate": [
+            277.0,
+            262.0
+          ],
+          "diagnostic_displacement_px": [
+            -3.612839506156,
+            0.0508449883449984
+          ],
+          "magnitude_px": 3.613197269743424,
+          "normalized_percent_of_reference_spans": 2.150578041699141
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "CL-002-S02-P02",
+          "source_coordinate": [
+            294.0,
+            263.0
+          ],
+          "diagnostic_displacement_px": [
+            -5.098765432075002,
+            -0.1016899766900039
+          ],
+          "magnitude_px": 5.099779385687404,
+          "normalized_percent_of_reference_spans": 3.0352014454018708
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "CL-002-S02-P03",
+          "source_coordinate": [
+            311.0,
+            261.0
+          ],
+          "diagnostic_displacement_px": [
+            -6.584691357994004,
+            0.2033799533800007
+          ],
+          "magnitude_px": 6.587831485813656,
+          "normalized_percent_of_reference_spans": 3.9201467838554382
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "CL-003-S01-P01",
+          "source_coordinate": [
+            128.0,
+            292.0
+          ],
+          "diagnostic_displacement_px": [
+            9.410864197487005,
+            -4.525203962705
+          ],
+          "magnitude_px": 10.442309890422893,
+          "normalized_percent_of_reference_spans": 5.835058026111895
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "CL-003-S01-P02",
+          "source_coordinate": [
+            132.0,
+            293.0
+          ],
+          "diagnostic_displacement_px": [
+            9.061234567859005,
+            -4.677738927740002
+          ],
+          "magnitude_px": 10.197412091793542,
+          "normalized_percent_of_reference_spans": 5.6517776925625896
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "CL-003-S01-P03",
+          "source_coordinate": [
+            145.0,
+            293.0
+          ],
+          "diagnostic_displacement_px": [
+            7.924938271568005,
+            -4.677738927740002
+          ],
+          "magnitude_px": 9.202493579691184,
+          "normalized_percent_of_reference_spans": 5.0103861726321375
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "CL-003-S02-P01",
+          "source_coordinate": [
+            315.0,
+            292.0
+          ],
+          "diagnostic_displacement_px": [
+            -6.9343209876220016,
+            -4.525203962705
+          ],
+          "magnitude_px": 8.280234203418162,
+          "normalized_percent_of_reference_spans": 4.439105243455921
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "CL-003-S02-P02",
+          "source_coordinate": [
+            328.0,
+            292.0
+          ],
+          "diagnostic_displacement_px": [
+            -8.070617283913002,
+            -4.525203962705
+          ],
+          "magnitude_px": 9.252693350991176,
+          "normalized_percent_of_reference_spans": 5.074114028784817
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "CL-003-S02-P03",
+          "source_coordinate": [
+            335.0,
+            291.0
+          ],
+          "diagnostic_displacement_px": [
+            -8.682469135762002,
+            -4.372668997670004
+          ],
+          "magnitude_px": 9.721394162189092,
+          "normalized_percent_of_reference_spans": 5.403845972850314
+        }
+      ],
+      "view_result": "fail_CL002_exact_contact_preservation"
+    },
+    {
+      "view": "right",
+      "authority_role": "validation_YZ",
+      "diagnostic_scale_xy": [
+        0.911917098446,
+        0.859767891683
+      ],
+      "reference_spans_px": [
+        144,
+        254
+      ],
+      "diagnostic_translation_px": [
+        16.045768566420335,
+        34.987911025091485
+      ],
+      "diagnostic_translation_authority": "none; least-squares analytic term only, not center/pivot/anchor/geometry",
+      "CL003_sample_count": 6,
+      "CL003_exact_coincidence_after_shared_C003_C004_map": true,
+      "CL002_sample_count": 6,
+      "CL002_exact_coincidence_with_unchanged_C002": false,
+      "CL002_best_translation_residual_metrics_px": {
+        "count": 6,
+        "median": 4.845066963763834,
+        "rms": 5.008189308205958,
+        "maximum": 6.360128763359853
+      },
+      "CL002_residual_records": [
+        {
+          "sample_id": "CL-002-S01-P01",
+          "source_coordinate": [
+            110.0,
+            248.0
+          ],
+          "residual_px": [
+            6.356649395480336,
+            0.2103481624754977
+          ],
+          "residual_magnitude_px": 6.360128763359853
+        },
+        {
+          "sample_id": "CL-002-S01-P02",
+          "source_coordinate": [
+            127.0,
+            249.0
+          ],
+          "residual_px": [
+            4.859240069062334,
+            0.07011605415849687
+          ],
+          "residual_magnitude_px": 4.859745910007197
+        },
+        {
+          "sample_id": "CL-002-S01-P03",
+          "source_coordinate": [
+            144.0,
+            250.0
+          ],
+          "residual_px": [
+            3.361830742644335,
+            -0.07011605415850397
+          ],
+          "residual_magnitude_px": 3.3625618512139397
+        },
+        {
+          "sample_id": "CL-002-S02-P01",
+          "source_coordinate": [
+            221.0,
+            250.0
+          ],
+          "residual_px": [
+            -3.420552677013667,
+            -0.07011605415850397
+          ],
+          "residual_magnitude_px": 3.4212712370223035
+        },
+        {
+          "sample_id": "CL-002-S02-P02",
+          "source_coordinate": [
+            237.0,
+            249.0
+          ],
+          "residual_px": [
+            -4.8298791018776654,
+            0.07011605415849687
+          ],
+          "residual_magnitude_px": 4.830388017520472
+        },
+        {
+          "sample_id": "CL-002-S02-P03",
+          "source_coordinate": [
+            254.0,
+            251.0
+          ],
+          "residual_px": [
+            -6.327288428295667,
+            -0.2103481624755048
+          ],
+          "residual_magnitude_px": 6.330783932839682
+        }
+      ],
+      "C003_source_coordinate_displacement_metrics_px": {
+        "count": 12,
+        "median": 6.849000063400944,
+        "rms": 6.852091385982416,
+        "maximum": 9.22707629596912
+      },
+      "C003_normalized_displacement_metrics_percent": {
+        "count": 12,
+        "median": 4.523120810756307,
+        "rms": 4.514155664429337,
+        "maximum": 6.015954902733336
+      },
+      "C003_contact_displacement_records": [
+        {
+          "contact_id": "CL-002",
+          "sample_id": "CL-002-S01-P01",
+          "source_coordinate": [
+            110.0,
+            248.0
+          ],
+          "diagnostic_displacement_px": [
+            6.356649395480336,
+            0.2103481624754977
+          ],
+          "magnitude_px": 6.360128763359853,
+          "normalized_percent_of_reference_spans": 4.41511659863774
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "CL-002-S01-P02",
+          "source_coordinate": [
+            127.0,
+            249.0
+          ],
+          "diagnostic_displacement_px": [
+            4.859240069062334,
+            0.07011605415849687
+          ],
+          "magnitude_px": 4.859745910007197,
+          "normalized_percent_of_reference_spans": 3.3745851780945406
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "CL-002-S01-P03",
+          "source_coordinate": [
+            144.0,
+            250.0
+          ],
+          "diagnostic_displacement_px": [
+            3.361830742644335,
+            -0.07011605415850397
+          ],
+          "magnitude_px": 3.3625618512139397,
+          "normalized_percent_of_reference_spans": 2.334767878191126
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "CL-002-S02-P01",
+          "source_coordinate": [
+            221.0,
+            250.0
+          ],
+          "diagnostic_displacement_px": [
+            -3.420552677013667,
+            -0.07011605415850397
+          ],
+          "magnitude_px": 3.4212712370223035,
+          "normalized_percent_of_reference_spans": 2.3755441978271343
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "CL-002-S02-P02",
+          "source_coordinate": [
+            237.0,
+            249.0
+          ],
+          "diagnostic_displacement_px": [
+            -4.8298791018776654,
+            0.07011605415849687
+          ],
+          "magnitude_px": 4.830388017520472,
+          "normalized_percent_of_reference_spans": 3.354196303896745
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "CL-002-S02-P03",
+          "source_coordinate": [
+            254.0,
+            251.0
+          ],
+          "diagnostic_displacement_px": [
+            -6.327288428295667,
+            -0.2103481624755048
+          ],
+          "magnitude_px": 6.330783932839682,
+          "normalized_percent_of_reference_spans": 4.39473064181934
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "CL-003-S01-P01",
+          "source_coordinate": [
+            87.0,
+            277.0
+          ],
+          "diagnostic_displacement_px": [
+            8.382556131222335,
+            -3.856382978717498
+          ],
+          "magnitude_px": 9.22707629596912,
+          "normalized_percent_of_reference_spans": 6.015954902733336
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "CL-003-S01-P02",
+          "source_coordinate": [
+            99.0,
+            275.0
+          ],
+          "diagnostic_displacement_px": [
+            7.325561312574335,
+            -3.5759187620835036
+          ],
+          "magnitude_px": 8.151750949170776,
+          "normalized_percent_of_reference_spans": 5.278406556679829
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "CL-003-S01-P03",
+          "source_coordinate": [
+            110.0,
+            277.0
+          ],
+          "diagnostic_displacement_px": [
+            6.356649395480336,
+            -3.856382978717498
+          ],
+          "magnitude_px": 7.434963430683608,
+          "normalized_percent_of_reference_spans": 4.668138054095157
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "CL-003-S02-P01",
+          "source_coordinate": [
+            254.0,
+            276.0
+          ],
+          "diagnostic_displacement_px": [
+            -6.327288428295667,
+            -3.7161508704005044
+          ],
+          "magnitude_px": 7.337871363442035,
+          "normalized_percent_of_reference_spans": 4.631125022874874
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "CL-003-S02-P02",
+          "source_coordinate": [
+            267.0,
+            275.0
+          ],
+          "diagnostic_displacement_px": [
+            -7.472366148497667,
+            -3.5759187620835036
+          ],
+          "magnitude_px": 8.283927260076267,
+          "normalized_percent_of_reference_spans": 5.376730038715074
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "CL-003-S02-P03",
+          "source_coordinate": [
+            277.0,
+            276.0
+          ],
+          "diagnostic_displacement_px": [
+            -8.353195164037665,
+            -3.7161508704005044
+          ],
+          "magnitude_px": 9.142518621259716,
+          "normalized_percent_of_reference_spans": 5.982486787314798
+        }
+      ],
+      "view_result": "fail_CL002_exact_contact_preservation"
+    },
+    {
+      "view": "top",
+      "authority_role": "plan_contact_evidence_only",
+      "diagnostic_scale_xy": [
+        0.891826923077,
+        0.820634920635
+      ],
+      "reference_spans_px": [
+        159,
+        94
+      ],
+      "diagnostic_translation_px": [
+        15.766225961527258,
+        26.66934523808343
+      ],
+      "diagnostic_translation_authority": "none; least-squares analytic term only, not center/pivot/anchor/geometry",
+      "CL003_sample_count": 16,
+      "CL003_exact_coincidence_after_shared_C003_C004_map": true,
+      "CL002_sample_count": 16,
+      "CL002_exact_coincidence_with_unchanged_C002": false,
+      "CL002_best_translation_residual_metrics_px": {
+        "count": 16,
+        "median": 14.158978314835581,
+        "rms": 13.90152554911834,
+        "maximum": 17.11639037602453
+      },
+      "CL002_residual_records": [
+        {
+          "sample_id": "T-CL002-TOP-01",
+          "source_coordinate": [
+            120.0,
+            58.0
+          ],
+          "residual_px": [
+            2.785456730767253,
+            16.26617063491343
+          ],
+          "residual_magnitude_px": 16.502941444575768
+        },
+        {
+          "sample_id": "T-CL002-TOP-02",
+          "source_coordinate": [
+            145.0,
+            57.0
+          ],
+          "residual_px": [
+            0.08112980769225153,
+            16.445535714278428
+          ],
+          "residual_magnitude_px": 16.44573582954875
+        },
+        {
+          "sample_id": "T-CL002-TOP-03",
+          "source_coordinate": [
+            170.0,
+            58.0
+          ],
+          "residual_px": [
+            -2.623197115382748,
+            16.26617063491343
+          ],
+          "residual_magnitude_px": 16.47633060575905
+        },
+        {
+          "sample_id": "T-CL002-TOP-04",
+          "source_coordinate": [
+            195.0,
+            58.0
+          ],
+          "residual_px": [
+            -5.327524038457749,
+            16.26617063491343
+          ],
+          "residual_magnitude_px": 17.11639037602453
+        },
+        {
+          "sample_id": "T-CL002-BOTTOM-01",
+          "source_coordinate": [
+            100.0,
+            239.0
+          ],
+          "residual_px": [
+            4.948918269227253,
+            -16.198908730151572
+          ],
+          "residual_magnitude_px": 16.938017477948005
+        },
+        {
+          "sample_id": "T-CL002-BOTTOM-02",
+          "source_coordinate": [
+            130.0,
+            240.0
+          ],
+          "residual_px": [
+            1.703725961537252,
+            -16.37827380951657
+          ],
+          "residual_magnitude_px": 16.466649177398313
+        },
+        {
+          "sample_id": "T-CL002-BOTTOM-03",
+          "source_coordinate": [
+            160.0,
+            240.0
+          ],
+          "residual_px": [
+            -1.541466346152749,
+            -16.37827380951657
+          ],
+          "residual_magnitude_px": 16.450652615498814
+        },
+        {
+          "sample_id": "T-CL002-BOTTOM-04",
+          "source_coordinate": [
+            195.0,
+            239.0
+          ],
+          "residual_px": [
+            -5.327524038457749,
+            -16.198908730151572
+          ],
+          "residual_magnitude_px": 17.05248241248546
+        },
+        {
+          "sample_id": "T-CL002-LEFT-01",
+          "source_coordinate": [
+            57.0,
+            110.0
+          ],
+          "residual_px": [
+            9.600360576916255,
+            6.939186507933428
+          ],
+          "residual_magnitude_px": 11.845641924298283
+        },
+        {
+          "sample_id": "T-CL002-LEFT-02",
+          "source_coordinate": [
+            56.0,
+            135.0
+          ],
+          "residual_px": [
+            9.708533653839256,
+            2.45505952380843
+          ],
+          "residual_magnitude_px": 10.01413715570003
+        },
+        {
+          "sample_id": "T-CL002-LEFT-03",
+          "source_coordinate": [
+            56.0,
+            160.0
+          ],
+          "residual_px": [
+            9.708533653839256,
+            -2.029067460316572
+          ],
+          "residual_magnitude_px": 9.918303305820253
+        },
+        {
+          "sample_id": "T-CL002-LEFT-04",
+          "source_coordinate": [
+            60.0,
+            190.0
+          ],
+          "residual_px": [
+            9.275841346147256,
+            -7.410019841266575
+          ],
+          "residual_magnitude_px": 11.872220800122413
+        },
+        {
+          "sample_id": "T-CL002-RIGHT-01",
+          "source_coordinate": [
+            222.0,
+            110.0
+          ],
+          "residual_px": [
+            -8.248197115378751,
+            6.939186507933428
+          ],
+          "residual_magnitude_px": 10.778917619410015
+        },
+        {
+          "sample_id": "T-CL002-RIGHT-02",
+          "source_coordinate": [
+            223.0,
+            135.0
+          ],
+          "residual_px": [
+            -8.356370192301753,
+            2.45505952380843
+          ],
+          "residual_magnitude_px": 8.709548786029718
+        },
+        {
+          "sample_id": "T-CL002-RIGHT-03",
+          "source_coordinate": [
+            223.0,
+            160.0
+          ],
+          "residual_px": [
+            -8.356370192301753,
+            -2.029067460316572
+          ],
+          "residual_magnitude_px": 8.59918819129485
+        },
+        {
+          "sample_id": "T-CL002-RIGHT-04",
+          "source_coordinate": [
+            220.0,
+            190.0
+          ],
+          "residual_px": [
+            -8.03185096153275,
+            -7.410019841266575
+          ],
+          "residual_magnitude_px": 10.927901167023743
+        }
+      ],
+      "C003_source_coordinate_displacement_metrics_px": {
+        "count": 32,
+        "median": 14.634580175904787,
+        "rms": 14.661421226029027,
+        "maximum": 19.14647674138028
+      },
+      "C003_normalized_displacement_metrics_percent": {
+        "count": 32,
+        "median": 13.826319722090055,
+        "rms": 14.351265417590426,
+        "maximum": 19.906376443233388
+      },
+      "C003_contact_displacement_records": [
+        {
+          "contact_id": "CL-002",
+          "sample_id": "T-CL002-TOP-01",
+          "source_coordinate": [
+            120.0,
+            58.0
+          ],
+          "diagnostic_displacement_px": [
+            2.785456730767253,
+            16.26617063491343
+          ],
+          "magnitude_px": 16.502941444575768,
+          "normalized_percent_of_reference_spans": 17.39288781456545
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "T-CL002-TOP-02",
+          "source_coordinate": [
+            145.0,
+            57.0
+          ],
+          "diagnostic_displacement_px": [
+            0.08112980769225153,
+            16.445535714278428
+          ],
+          "magnitude_px": 16.44573582954875,
+          "normalized_percent_of_reference_spans": 17.49532516717203
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "T-CL002-TOP-03",
+          "source_coordinate": [
+            170.0,
+            58.0
+          ],
+          "diagnostic_displacement_px": [
+            -2.623197115382748,
+            16.26617063491343
+          ],
+          "magnitude_px": 16.47633060575905,
+          "normalized_percent_of_reference_spans": 17.382905567051086
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "T-CL002-TOP-04",
+          "source_coordinate": [
+            195.0,
+            58.0
+          ],
+          "diagnostic_displacement_px": [
+            -5.327524038457749,
+            16.26617063491343
+          ],
+          "magnitude_px": 17.11639037602453,
+          "normalized_percent_of_reference_spans": 17.62584324480921
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "T-CL002-BOTTOM-01",
+          "source_coordinate": [
+            100.0,
+            239.0
+          ],
+          "diagnostic_displacement_px": [
+            4.948918269227253,
+            -16.198908730151572
+          ],
+          "magnitude_px": 16.938017477948005,
+          "normalized_percent_of_reference_spans": 17.511711362751832
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "T-CL002-BOTTOM-02",
+          "source_coordinate": [
+            130.0,
+            240.0
+          ],
+          "diagnostic_displacement_px": [
+            1.703725961537252,
+            -16.37827380951657
+          ],
+          "magnitude_px": 16.466649177398313,
+          "normalized_percent_of_reference_spans": 17.4566128959841
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "T-CL002-BOTTOM-03",
+          "source_coordinate": [
+            160.0,
+            240.0
+          ],
+          "diagnostic_displacement_px": [
+            -1.541466346152749,
+            -16.37827380951657
+          ],
+          "magnitude_px": 16.450652615498814,
+          "normalized_percent_of_reference_spans": 17.450646104199475
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "T-CL002-BOTTOM-04",
+          "source_coordinate": [
+            195.0,
+            239.0
+          ],
+          "diagnostic_displacement_px": [
+            -5.327524038457749,
+            -16.198908730151572
+          ],
+          "magnitude_px": 17.05248241248546,
+          "normalized_percent_of_reference_spans": 17.55559810271049
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "T-CL002-LEFT-01",
+          "source_coordinate": [
+            57.0,
+            110.0
+          ],
+          "diagnostic_displacement_px": [
+            9.600360576916255,
+            6.939186507933428
+          ],
+          "magnitude_px": 11.845641924298283,
+          "normalized_percent_of_reference_spans": 9.536906707742054
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "T-CL002-LEFT-02",
+          "source_coordinate": [
+            56.0,
+            135.0
+          ],
+          "diagnostic_displacement_px": [
+            9.708533653839256,
+            2.45505952380843
+          ],
+          "magnitude_px": 10.01413715570003,
+          "normalized_percent_of_reference_spans": 6.641122347059605
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "T-CL002-LEFT-03",
+          "source_coordinate": [
+            56.0,
+            160.0
+          ],
+          "diagnostic_displacement_px": [
+            9.708533653839256,
+            -2.029067460316572
+          ],
+          "magnitude_px": 9.918303305820253,
+          "normalized_percent_of_reference_spans": 6.476315716186401
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "T-CL002-LEFT-04",
+          "source_coordinate": [
+            60.0,
+            190.0
+          ],
+          "diagnostic_displacement_px": [
+            9.275841346147256,
+            -7.410019841266575
+          ],
+          "magnitude_px": 11.872220800122413,
+          "normalized_percent_of_reference_spans": 9.806917853986965
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "T-CL002-RIGHT-01",
+          "source_coordinate": [
+            222.0,
+            110.0
+          ],
+          "diagnostic_displacement_px": [
+            -8.248197115378751,
+            6.939186507933428
+          ],
+          "magnitude_px": 10.778917619410015,
+          "normalized_percent_of_reference_spans": 9.02253975793254
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "T-CL002-RIGHT-02",
+          "source_coordinate": [
+            223.0,
+            135.0
+          ],
+          "diagnostic_displacement_px": [
+            -8.356370192301753,
+            2.45505952380843
+          ],
+          "magnitude_px": 8.709548786029718,
+          "normalized_percent_of_reference_spans": 5.868767045490158
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "T-CL002-RIGHT-03",
+          "source_coordinate": [
+            223.0,
+            160.0
+          ],
+          "diagnostic_displacement_px": [
+            -8.356370192301753,
+            -2.029067460316572
+          ],
+          "magnitude_px": 8.59918819129485,
+          "normalized_percent_of_reference_spans": 5.681600642542539
+        },
+        {
+          "contact_id": "CL-002",
+          "sample_id": "T-CL002-RIGHT-04",
+          "source_coordinate": [
+            220.0,
+            190.0
+          ],
+          "diagnostic_displacement_px": [
+            -8.03185096153275,
+            -7.410019841266575
+          ],
+          "magnitude_px": 10.927901167023743,
+          "normalized_percent_of_reference_spans": 9.362645048527114
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "T-CL003-TOP-01",
+          "source_coordinate": [
+            120.0,
+            47.0
+          ],
+          "diagnostic_displacement_px": [
+            2.785456730767253,
+            18.23918650792843
+          ],
+          "magnitude_px": 18.45065564336333,
+          "normalized_percent_of_reference_spans": 19.48231381730403
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "T-CL003-TOP-02",
+          "source_coordinate": [
+            145.0,
+            46.0
+          ],
+          "diagnostic_displacement_px": [
+            0.08112980769225153,
+            18.41855158729343
+          ],
+          "magnitude_px": 18.41873026621231,
+          "normalized_percent_of_reference_spans": 19.59427025300616
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "T-CL003-TOP-03",
+          "source_coordinate": [
+            170.0,
+            46.0
+          ],
+          "diagnostic_displacement_px": [
+            -2.623197115382748,
+            18.41855158729343
+          ],
+          "magnitude_px": 18.604413607527157,
+          "normalized_percent_of_reference_spans": 19.66353718437635
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "T-CL003-TOP-04",
+          "source_coordinate": [
+            184.0,
+            49.0
+          ],
+          "diagnostic_displacement_px": [
+            -4.137620192304748,
+            17.88045634919843
+          ],
+          "magnitude_px": 18.352945815627486,
+          "normalized_percent_of_reference_spans": 19.198939480916945
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "T-CL003-BOTTOM-01",
+          "source_coordinate": [
+            90.0,
+            250.0
+          ],
+          "diagnostic_displacement_px": [
+            6.030649038457254,
+            -18.171924603166573
+          ],
+          "magnitude_px": 19.14647674138028,
+          "normalized_percent_of_reference_spans": 19.700396621756312
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "T-CL003-BOTTOM-02",
+          "source_coordinate": [
+            120.0,
+            252.0
+          ],
+          "diagnostic_displacement_px": [
+            2.785456730767253,
+            -18.53065476189657
+          ],
+          "magnitude_px": 18.738834945203415,
+          "normalized_percent_of_reference_spans": 19.79114994695283
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "T-CL003-BOTTOM-03",
+          "source_coordinate": [
+            150.0,
+            253.0
+          ],
+          "diagnostic_displacement_px": [
+            -0.4597355769227498,
+            -18.71001984126157
+          ],
+          "magnitude_px": 18.71566721389035,
+          "normalized_percent_of_reference_spans": 19.906376443233388
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "T-CL003-BOTTOM-04",
+          "source_coordinate": [
+            184.0,
+            249.0
+          ],
+          "diagnostic_displacement_px": [
+            -4.137620192304748,
+            -17.992559523801575
+          ],
+          "magnitude_px": 18.462180236183123,
+          "normalized_percent_of_reference_spans": 19.31710436179076
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "T-CL003-LEFT-01",
+          "source_coordinate": [
+            49.0,
+            110.0
+          ],
+          "diagnostic_displacement_px": [
+            10.465745192300256,
+            6.939186507933428
+          ],
+          "magnitude_px": 12.557234242540881,
+          "normalized_percent_of_reference_spans": 9.890467351779366
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "T-CL003-LEFT-02",
+          "source_coordinate": [
+            46.0,
+            135.0
+          ],
+          "diagnostic_displacement_px": [
+            10.790264423069257,
+            2.45505952380843
+          ],
+          "magnitude_px": 11.066034682089,
+          "normalized_percent_of_reference_spans": 7.271560442934663
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "T-CL003-LEFT-03",
+          "source_coordinate": [
+            45.0,
+            160.0
+          ],
+          "diagnostic_displacement_px": [
+            10.898437499992255,
+            -2.029067460316572
+          ],
+          "magnitude_px": 11.085713991428472,
+          "normalized_percent_of_reference_spans": 7.186221049920756
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "T-CL003-LEFT-04",
+          "source_coordinate": [
+            49.0,
+            190.0
+          ],
+          "diagnostic_displacement_px": [
+            10.465745192300256,
+            -7.410019841266575
+          ],
+          "magnitude_px": 12.823424522260824,
+          "normalized_percent_of_reference_spans": 10.269733877129022
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "T-CL003-RIGHT-01",
+          "source_coordinate": [
+            230.0,
+            110.0
+          ],
+          "diagnostic_displacement_px": [
+            -9.113581730762753,
+            6.939186507933428
+          ],
+          "magnitude_px": 11.45467945231022,
+          "normalized_percent_of_reference_spans": 9.346083156192313
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "T-CL003-RIGHT-02",
+          "source_coordinate": [
+            231.0,
+            135.0
+          ],
+          "diagnostic_displacement_px": [
+            -9.221754807685752,
+            2.45505952380843
+          ],
+          "magnitude_px": 9.54295965612963,
+          "normalized_percent_of_reference_spans": 6.3607806100867474
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "T-CL003-RIGHT-03",
+          "source_coordinate": [
+            233.0,
+            160.0
+          ],
+          "diagnostic_displacement_px": [
+            -9.438100961531752,
+            -2.029067460316572
+          ],
+          "magnitude_px": 9.65374872878832,
+          "normalized_percent_of_reference_spans": 6.3162121442495165
+        },
+        {
+          "contact_id": "CL-003",
+          "sample_id": "T-CL003-RIGHT-04",
+          "source_coordinate": [
+            227.0,
+            190.0
+          ],
+          "diagnostic_displacement_px": [
+            -8.78906249999375,
+            -7.410019841266575
+          ],
+          "magnitude_px": 11.495912911846572,
+          "normalized_percent_of_reference_spans": 9.62794314549428
+        }
+      ],
+      "view_result": "fail_CL002_exact_contact_preservation"
+    }
+  ],
+  "aggregate": {
+    "view_count": 5,
+    "CL003_sample_count": 47,
+    "CL003_exact_coincidence_count": 47,
+    "CL002_sample_count": 40,
+    "views_with_exact_CL002_preservation": 0,
+    "failed_view_count": 5,
+    "C001_unchanged": true,
+    "C002_unchanged": true,
+    "target_factor_formula_replay_count": 10,
+    "target_factor_formula_mismatch_count": 0
+  },
+  "hard_gates": {
+    "input_and_source_hash_integrity": "pass",
+    "six_physical_targets_unchanged": "pass",
+    "primary_view_target_frame_error": "pass_analytic_factor_replay_only",
+    "CL003_preservation": "pass_after_shared_C003_C004_map",
+    "CL002_preservation": "fail_nonzero_residuals_in_every_view",
+    "CL001_and_unaffected_component_preservation": "pass_C001_C002_unchanged",
+    "per_panel_displacement_statistics": "pass_reported",
+    "normalized_displacement_statistics": "pass_reported",
+    "affected_scope_counts": "pass_two_components_two_contacts",
+    "front_left_owner_compliance": "pass",
+    "back_right_disagreement_disclosure": "pass_validation_factors_kept_separate",
+    "top_evidence_role_compliance": "pass_no_world_or_geometry_promotion",
+    "source_interpretation_separation": "pass_diagnostic_coordinates_only",
+    "hidden_sector_non_invention": "pass",
+    "forbidden_operation_audit": "pass",
+    "write_scope_and_stop_state": "pending_final_validation"
+  },
+  "affected_scope": {
+    "component_ids": [
+      "C-003",
+      "C-004"
+    ],
+    "contact_ids": [
+      "CL-002",
+      "CL-003"
+    ],
+    "CL002_and_CL003_source_point_count": 87,
+    "candidate_boundary_segment_count": 0
+  },
+  "controlling_failure": "Scaling C-003 with C-004 can preserve CL-003, but the non-identity scale moves different CL-002 samples by different amounts. One translation cannot keep C-003 coincident with unchanged C-002 at every exact sample.",
+  "candidate_adjusted_silhouette_created": false,
+  "geometry_created": false,
+  "step10_revised": false
+}

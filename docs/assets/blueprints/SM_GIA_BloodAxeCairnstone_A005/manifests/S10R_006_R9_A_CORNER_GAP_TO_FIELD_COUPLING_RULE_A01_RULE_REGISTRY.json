@@ -1,0 +1,71 @@
+{
+  "schema": "aerathea.s10r_006_r9_a_corner_gap_to_field_coupling_rule_a01_registry.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-006-R9-A-CGFC-A01",
+  "rule_id": "S10R-006-R9-A-CGFC-A01",
+  "date": "2026-07-20",
+  "status": "approved_bounded_corner_gap_to_field_coupling_rule_registered_no_implementation",
+  "artifact_classification": "authoritative for bounded S10R-006-R9-A symbolic corner-gap-to-field coupling rule only",
+  "technical_result": "pass_approved_bounded_corner_gap_to_field_coupling_rule_registered_no_implementation",
+  "authority_basis": {
+    "selected_route": "S10R-006-R8-A",
+    "selected_result": "later preparation only of a bounded corner-gap-to-field coupling rule contract",
+    "r3_status": "approved_bounded_symbolic_method_no_field_coupling",
+    "r5_status": "approved_bounded_symbolic_rule_four_blocked_corner_gaps_unowned",
+    "r7_status": "approved_bounded_cross_view_corner_ownership_rule_registered_no_implementation",
+    "physical_source_authority": false,
+    "candidate_registration_authority": true,
+    "candidate_rule_approval_authority": true,
+    "evaluation_authority": false,
+    "implementation_authority": false
+  },
+  "execution_record": {"approver":"Flamestrike","execution_approval_statement":"approved","candidate_rule_decision":"approve","candidate_rule_decision_statement":"approved","candidate_rule_decision_date":"2026-07-20","approved_scope":"authoritative bounded symbolic corner-gap-to-field coupling relation exactly as registered with non-periodic unwrapped q, endpoint selectors only, no evaluation, no implementation, all zero-output counts, all three active blocks, and every downstream stop","candidate_rule_registered":true,"candidate_rule_approved":true,"resolved_block_ids":[]},
+  "abstract_parameter_reference": {"name":"q","classification":"approved R5 bounded dimensionless interpretation parameter; referenced but not instantiated","orientation":"increasing q is counterclockwise in the +X,+Y plane when viewed from +Z","zero_direction":"+X","combined_symbolic_domain":"[-1/2,15/2)","periodic":false,"unwrapped":true,"modulus":null,"wrap":null,"q_15_over_2_in_domain":false,"final_first_endpoint_identification":false,"evaluated_q_instances":[]},
+  "vertical_parameter_reference": {"name":"v","domain":"0 <= v <= 1","identity":"v = t","classification":"approved symbolic identity; referenced but not instantiated","evaluated_v_instances":[]},
+  "preserved_owned_lanes": [
+    {"lane_id":"AFM-FRONT-RIGHT","cardinal_label":"+X","q_interval":"[-1/2,1/2]","q_map":"q_L(u) = c_L + u - 1/2, 0 <= u <= 1","coupling":"C_L(u,v) = B_v(q_L(u))","endpoint_ownership":"unchanged approved R5 lane ownership"},
+    {"lane_id":"AFM-LEFT-LEFT","cardinal_label":"+Y","q_interval":"[3/2,5/2]","q_map":"q_L(u) = c_L + u - 1/2, 0 <= u <= 1","coupling":"C_L(u,v) = B_v(q_L(u))","endpoint_ownership":"unchanged approved R5 lane ownership"},
+    {"lane_id":"AFM-FRONT-LEFT","cardinal_label":"-X","q_interval":"[7/2,9/2]","q_map":"q_L(u) = c_L + u - 1/2, 0 <= u <= 1","coupling":"C_L(u,v) = B_v(q_L(u))","endpoint_ownership":"unchanged approved R5 lane ownership"},
+    {"lane_id":"AFM-LEFT-RIGHT","cardinal_label":"-Y","q_interval":"[11/2,13/2]","q_map":"q_L(u) = c_L + u - 1/2, 0 <= u <= 1","coupling":"C_L(u,v) = B_v(q_L(u))","endpoint_ownership":"unchanged approved R5 lane ownership"}
+  ],
+  "candidate_rule": {
+    "classification": "approved bounded symbolic interpretation only",
+    "approved": true,
+    "evaluated": false,
+    "owner_template": "O_k(q) = P_k when a_k < q < m_k; O_k(q) = S_k when m_k <= q < b_k",
+    "owner_lane_extractor": "ell(O_k(q)) = exact lane-ID portion of the approved R7 owner label",
+    "endpoint_selector": "e_k(q) = 1 when a_k < q < m_k; e_k(q) = 0 when m_k <= q < b_k",
+    "gap_weight_descriptor": "W^G_k(q,v) = W_{ell(O_k(q))}(e_k(q),v)",
+    "gap_boundary_descriptor": "C^G_k(q,v) = B_v(q)",
+    "coupling_tuple": "K_k(q,v) = (O_k(q), e_k(q), W^G_k(q,v), C^G_k(q,v))",
+    "unified_descriptor_lane_case": "C*(q,v) = C_L(u,v) when q=q_L(u), q in the owned interval of L, 0 <= u <= 1",
+    "unified_descriptor_gap_case": "C*(q,v) = C^G_k(q,v) when q in G_k",
+    "combined_domain": "D_L union D_G = [-1/2,15/2)",
+    "gap_local_continuous_u_defined": false,
+    "lane_local_u_extrapolated": false,
+    "cross_lane_interpolation_defined": false,
+    "physical_correspondence_claim": false,
+    "seam_claim": false,
+    "closure_claim": false,
+    "field_claim": false
+  },
+  "gaps": [
+    {"id":"G_0","open_interval":"(1/2,3/2)","a":"1/2","b":"3/2","midpoint":"m_0 = (1/2 + 3/2) / 2","predecessor":"AFM-FRONT-RIGHT / +X","successor":"AFM-LEFT-LEFT / +Y","lower_owner_branch":"1/2 < q < m_0 -> AFM-FRONT-RIGHT / +X","upper_owner_branch":"m_0 <= q < 3/2 -> AFM-LEFT-LEFT / +Y","lower_endpoint_selector":"1/2 < q < m_0 -> AFM-FRONT-RIGHT / +X, u=1","upper_endpoint_selector":"m_0 <= q < 3/2 -> AFM-LEFT-LEFT / +Y, u=0","gap_weight_descriptor":"W^G_0(q,v) = W_{ell(O_0(q))}(e_0(q),v)","gap_boundary_descriptor":"C^G_0(q,v) = B_v(q)","coupling_tuple":"K_0(q,v) = (O_0(q), e_0(q), W^G_0(q,v), C^G_0(q,v))","instances":[]},
+    {"id":"G_1","open_interval":"(5/2,7/2)","a":"5/2","b":"7/2","midpoint":"m_1 = (5/2 + 7/2) / 2","predecessor":"AFM-LEFT-LEFT / +Y","successor":"AFM-FRONT-LEFT / -X","lower_owner_branch":"5/2 < q < m_1 -> AFM-LEFT-LEFT / +Y","upper_owner_branch":"m_1 <= q < 7/2 -> AFM-FRONT-LEFT / -X","lower_endpoint_selector":"5/2 < q < m_1 -> AFM-LEFT-LEFT / +Y, u=1","upper_endpoint_selector":"m_1 <= q < 7/2 -> AFM-FRONT-LEFT / -X, u=0","gap_weight_descriptor":"W^G_1(q,v) = W_{ell(O_1(q))}(e_1(q),v)","gap_boundary_descriptor":"C^G_1(q,v) = B_v(q)","coupling_tuple":"K_1(q,v) = (O_1(q), e_1(q), W^G_1(q,v), C^G_1(q,v))","instances":[]},
+    {"id":"G_2","open_interval":"(9/2,11/2)","a":"9/2","b":"11/2","midpoint":"m_2 = (9/2 + 11/2) / 2","predecessor":"AFM-FRONT-LEFT / -X","successor":"AFM-LEFT-RIGHT / -Y","lower_owner_branch":"9/2 < q < m_2 -> AFM-FRONT-LEFT / -X","upper_owner_branch":"m_2 <= q < 11/2 -> AFM-LEFT-RIGHT / -Y","lower_endpoint_selector":"9/2 < q < m_2 -> AFM-FRONT-LEFT / -X, u=1","upper_endpoint_selector":"m_2 <= q < 11/2 -> AFM-LEFT-RIGHT / -Y, u=0","gap_weight_descriptor":"W^G_2(q,v) = W_{ell(O_2(q))}(e_2(q),v)","gap_boundary_descriptor":"C^G_2(q,v) = B_v(q)","coupling_tuple":"K_2(q,v) = (O_2(q), e_2(q), W^G_2(q,v), C^G_2(q,v))","instances":[]},
+    {"id":"G_3","open_interval":"(13/2,15/2)","a":"13/2","b":"15/2","midpoint":"m_3 = (13/2 + 15/2) / 2","predecessor":"AFM-LEFT-RIGHT / -Y","successor":"AFM-FRONT-RIGHT / +X label-only successor","lower_owner_branch":"13/2 < q < m_3 -> AFM-LEFT-RIGHT / -Y","upper_owner_branch":"m_3 <= q < 15/2 -> AFM-FRONT-RIGHT / +X label-only successor","lower_endpoint_selector":"13/2 < q < m_3 -> AFM-LEFT-RIGHT / -Y, u=1","upper_endpoint_selector":"m_3 <= q < 15/2 -> AFM-FRONT-RIGHT / +X label-only successor, u=0, no wrap","gap_weight_descriptor":"W^G_3(q,v) = W_{ell(O_3(q))}(e_3(q),v)","gap_boundary_descriptor":"C^G_3(q,v) = B_v(q)","coupling_tuple":"K_3(q,v) = (O_3(q), e_3(q), W^G_3(q,v), C^G_3(q,v))","instances":[],"periodic_wrap":false,"q_15_over_2_in_domain":false,"q_15_over_2_identified_with_q_minus_1_over_2":false}
+  ],
+  "r3_endpoint_identity_replay": {"u_0_identity":"T_0","u_half_identity":"T_1","u_1_identity":"T_2","gap_permitted_endpoint_selector_values":["0","1"],"continuous_gap_local_u_defined":false,"lane_u_extrapolation":false,"classification":"evidence replay plus candidate endpoint-selection relation only"},
+  "r5_boundary_replay": {"parameterization":"B_v(q) = (a(v)*spow_2_3(cos(theta(q))), b(v)*spow_2_3(sin(theta(q))))","classification":"approved R5 formula replayed as candidate unevaluated gap descriptor only","evaluated_samples":[]},
+  "holdouts": {"classification":"proof only","back_count":6,"right_count":8,"total":14,"construction_use_authorized":false},
+  "definition_counts": {"candidate_rules":1,"registered_candidate_rules":1,"approved_rules":1,"preserved_lane_intervals":4,"gap_relations":4,"owner_branches":8,"endpoint_selector_branches":8,"gap_weight_descriptors":4,"gap_boundary_descriptors":4,"coupling_tuples":4,"unified_descriptors":1},
+  "output_counts": {"q_instances":0,"u_instances":0,"v_instances":0,"owner_instances":0,"record_instances":0,"weight_instances":0,"boundary_instances":0,"samples":0,"source_assignments":0,"source_normals":0,"transforms":0,"physical_pairs":0,"target_coordinates":0,"centers":0,"pivots":0,"anchors":0,"seams":0,"joins":0,"closures":0,"fields":0,"fills":0,"surfaces":0,"topology":0,"geometry":0},
+  "active_blocks": [
+    {"id":"S10R-BLOCK-006","status":"active_approved_corner_gap_to_field_coupling_rule_no_field_no_seam_no_join_no_closure"},
+    {"id":"S10R-BLOCK-008","status":"active_unchanged"},
+    {"id":"S10R-BLOCK-009","status":"active_unchanged"}
+  ],
+  "resolved_block_ids": [],
+  "authorization_flags": {"candidate_rule_registered":true,"candidate_rule_approved":true,"rule_evaluation_authorized":false,"source_assignment_authorized":false,"physical_correspondence_authorized":false,"seam_definition_authorized":false,"join_definition_authorized":false,"closure_authorized":false,"field_implementation_authorized":false,"step10_closeout_authorized":false,"step11_authorized":false,"dcc_authorized":false,"unreal_authorized":false,"production_authorized":false,"staging_authorized":false,"commit_authorized":false,"push_authorized":false},
+  "required_stop": "Stop after post-decision validation, visible review, and checkpointing. Core reassessment is required before any evaluation, implementation, or downstream action."
+}

@@ -1,0 +1,231 @@
+{
+  "schema": "aerathea.source_vs_measurement_reconciliation_adjustment_ledger.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-SMR-A01",
+  "date": "2026-07-17",
+  "status": "candidate_blocked_adjustment_ledger",
+  "artifact_classification": "candidate",
+  "controlling_result": "blocked_contact_preservation_requires_unapproved_C003_scale_or_local_C004_deformation",
+  "physical_targets_changed": false,
+  "source_pixels_changed": false,
+  "interpretation_shape_created": false,
+  "component_transform_applied": false,
+  "whole_C004_factor_candidates": [
+    {
+      "id": "ADJ-FRONT-C004-X",
+      "component_id": "C-004",
+      "source_view": "front",
+      "axis": "X",
+      "reference_component_or_span": "C-001 230 px annotation span = 120 cm target",
+      "source_span": "C-004 290 px annotation span",
+      "target_role": "C-004 140 cm / C-001 120 cm",
+      "transform_type": "whole_component_axis_aligned_scale_candidate",
+      "factor": 0.925287356322,
+      "change_percent": -7.471264367816,
+      "applied": false,
+      "reason_not_applied": "contact feasibility failed before an interpretation shape could be created"
+    },
+    {
+      "id": "ADJ-FRONT-C004-Z",
+      "component_id": "C-004",
+      "source_view": "front",
+      "axis": "Z",
+      "reference_component_or_span": "complete-asset 375 px annotation span = 220 cm target",
+      "source_span": "C-004 62 px annotation span",
+      "target_role": "C-004 35 cm / complete asset 220 cm",
+      "transform_type": "whole_component_axis_aligned_scale_candidate",
+      "factor": 0.96224340176,
+      "change_percent": -3.775659824047,
+      "applied": false,
+      "reason_not_applied": "contact feasibility failed before an interpretation shape could be created"
+    },
+    {
+      "id": "ADJ-BACK-C004-X",
+      "component_id": "C-004",
+      "source_view": "back_validation",
+      "axis": "X",
+      "reference_component_or_span": "C-001 189 px annotation span = 120 cm target",
+      "source_span": "C-004 245 px annotation span",
+      "target_role": "C-004 140 cm / C-001 120 cm",
+      "transform_type": "whole_component_axis_aligned_scale_candidate",
+      "factor": 0.9,
+      "change_percent": -10.0,
+      "applied": false,
+      "reason_not_applied": "validation-view diagnostic only and controlling contact feasibility failed"
+    },
+    {
+      "id": "ADJ-BACK-C004-Z",
+      "component_id": "C-004",
+      "source_view": "back_validation",
+      "axis": "Z",
+      "reference_component_or_span": "complete-asset 275 px annotation span = 220 cm target",
+      "source_span": "C-004 52 px annotation span",
+      "target_role": "C-004 35 cm / complete asset 220 cm",
+      "transform_type": "whole_component_axis_aligned_scale_candidate",
+      "factor": 0.841346153846,
+      "change_percent": -15.865384615385,
+      "applied": false,
+      "reason_not_applied": "validation-view diagnostic only and controlling contact feasibility failed"
+    },
+    {
+      "id": "ADJ-LEFT-C004-Y",
+      "component_id": "C-004",
+      "source_view": "left",
+      "axis": "Y",
+      "reference_component_or_span": "C-001 168 px annotation span = 90 cm target",
+      "source_span": "C-004 225 px annotation span",
+      "target_role": "C-004 110 cm / C-001 90 cm",
+      "transform_type": "whole_component_axis_aligned_scale_candidate",
+      "factor": 0.912592592593,
+      "change_percent": -8.740740740741,
+      "applied": false,
+      "reason_not_applied": "contact feasibility failed before an interpretation shape could be created"
+    },
+    {
+      "id": "ADJ-LEFT-C004-Z",
+      "component_id": "C-004",
+      "source_view": "left",
+      "axis": "Z",
+      "reference_component_or_span": "complete-asset 277 px annotation span = 220 cm target",
+      "source_span": "C-004 52 px annotation span",
+      "target_role": "C-004 35 cm / complete asset 220 cm",
+      "transform_type": "whole_component_axis_aligned_scale_candidate",
+      "factor": 0.847465034965,
+      "change_percent": -15.253496503497,
+      "applied": false,
+      "reason_not_applied": "contact feasibility failed before an interpretation shape could be created"
+    },
+    {
+      "id": "ADJ-RIGHT-C004-Y",
+      "component_id": "C-004",
+      "source_view": "right_validation",
+      "axis": "Y",
+      "reference_component_or_span": "C-001 144 px annotation span = 90 cm target",
+      "source_span": "C-004 193 px annotation span",
+      "target_role": "C-004 110 cm / C-001 90 cm",
+      "transform_type": "whole_component_axis_aligned_scale_candidate",
+      "factor": 0.911917098446,
+      "change_percent": -8.80829015544,
+      "applied": false,
+      "reason_not_applied": "validation-view diagnostic only and controlling contact feasibility failed"
+    },
+    {
+      "id": "ADJ-RIGHT-C004-Z",
+      "component_id": "C-004",
+      "source_view": "right_validation",
+      "axis": "Z",
+      "reference_component_or_span": "complete-asset 254 px annotation span = 220 cm target",
+      "source_span": "C-004 47 px annotation span",
+      "target_role": "C-004 35 cm / complete asset 220 cm",
+      "transform_type": "whole_component_axis_aligned_scale_candidate",
+      "factor": 0.859767891683,
+      "change_percent": -14.023210831721,
+      "applied": false,
+      "reason_not_applied": "validation-view diagnostic only and controlling contact feasibility failed"
+    },
+    {
+      "id": "ADJ-TOP-C004-X",
+      "component_id": "C-004",
+      "source_view": "top",
+      "axis": "X",
+      "reference_component_or_span": "C-001 159 px annotation span = 120 cm target",
+      "source_span": "C-004 208 px annotation span",
+      "target_role": "C-004 140 cm / C-001 120 cm",
+      "transform_type": "whole_component_axis_aligned_scale_candidate",
+      "factor": 0.891826923077,
+      "change_percent": -10.817307692308,
+      "applied": false,
+      "reason_not_applied": "required scale fails CL-003 contact preservation"
+    },
+    {
+      "id": "ADJ-TOP-C004-Y",
+      "component_id": "C-004",
+      "source_view": "top",
+      "axis": "Y",
+      "reference_component_or_span": "C-001 94 px annotation span = 90 cm target",
+      "source_span": "C-004 140 px annotation span",
+      "target_role": "C-004 110 cm / C-001 90 cm",
+      "transform_type": "whole_component_axis_aligned_scale_candidate",
+      "factor": 0.820634920635,
+      "change_percent": -17.936507936508,
+      "applied": false,
+      "reason_not_applied": "required scale fails CL-003 contact preservation"
+    }
+  ],
+  "contact_feasibility_audit": {
+    "contact_id": "CL-003",
+    "between": [
+      "C-003",
+      "C-004"
+    ],
+    "source_view": "top",
+    "authoritative_sample_count": 16,
+    "C_004_candidate_scale": {
+      "X": 0.891826923077,
+      "Y": 0.820634920635
+    },
+    "C_003_permitted_operation": "one rigid translation only",
+    "diagnostic_method": "For each source sample p, calculate (S-I)p. A common rigid translation could preserve all contacts only if these displacement vectors are identical. Subtract their mean to report the least-squares rigid-translation residual. Scale origin and translation cancel from the pairwise feasibility decision.",
+    "best_rigid_translation_diagnostic_px": [
+      -15.367337740385,
+      -26.702976190476
+    ],
+    "diagnostic_translation_authority": "none; not a physical center, pivot, anchor, component transform, or proposed geometry operation",
+    "scale_displacement_X_range_px": [
+      -25.204326923077,
+      -4.867788461538
+    ],
+    "scale_displacement_Y_range_px": [
+      -45.379365079365,
+      -8.250793650794
+    ],
+    "best_rigid_translation_residual_median_px": 15.454051719078,
+    "best_rigid_translation_residual_rms_px": 15.378617925146,
+    "best_rigid_translation_residual_maximum_px": 18.992483420179,
+    "all_residuals_zero": false,
+    "single_rigid_translation_can_preserve_all_contacts": false,
+    "sample_records": [
+      {"id":"T-CL003-TOP-01","sector":"top","pixel_local":[120,47],"scale_displacement_modulo_translation_px":[-12.980769230769,-8.430158730159],"best_rigid_translation_residual_px":[2.386568509615,18.272817460317],"residual_magnitude_px":18.428010396925},
+      {"id":"T-CL003-TOP-02","sector":"top","pixel_local":[145,46],"scale_displacement_modulo_translation_px":[-15.685096153846,-8.250793650794],"best_rigid_translation_residual_px":[-0.317758413462,18.452182539683],"residual_magnitude_px":18.454918338673},
+      {"id":"T-CL003-TOP-03","sector":"top","pixel_local":[170,46],"scale_displacement_modulo_translation_px":[-18.389423076923,-8.250793650794],"best_rigid_translation_residual_px":[-3.022085336538,18.452182539683],"residual_magnitude_px":18.698022362247},
+      {"id":"T-CL003-TOP-04","sector":"top","pixel_local":[184,49],"scale_displacement_modulo_translation_px":[-19.903846153846,-8.788888888889],"best_rigid_translation_residual_px":[-4.536508413462,17.914087301587],"residual_magnitude_px":18.479567972068},
+      {"id":"T-CL003-BOTTOM-01","sector":"bottom","pixel_local":[90,250],"scale_displacement_modulo_translation_px":[-9.735576923077,-44.84126984127],"best_rigid_translation_residual_px":[5.631760817308,-18.138293650794],"residual_magnitude_px":18.992483420179},
+      {"id":"T-CL003-BOTTOM-02","sector":"bottom","pixel_local":[120,252],"scale_displacement_modulo_translation_px":[-12.980769230769,-45.2],"best_rigid_translation_residual_px":[2.386568509615,-18.497023809524],"residual_magnitude_px":18.650351177959},
+      {"id":"T-CL003-BOTTOM-03","sector":"bottom","pixel_local":[150,253],"scale_displacement_modulo_translation_px":[-16.225961538462,-45.379365079365],"best_rigid_translation_residual_px":[-0.858623798077,-18.676388888889],"residual_magnitude_px":18.696115552586},
+      {"id":"T-CL003-BOTTOM-04","sector":"bottom","pixel_local":[184,249],"scale_displacement_modulo_translation_px":[-19.903846153846,-44.661904761905],"best_rigid_translation_residual_px":[-4.536508413462,-17.958928571429],"residual_magnitude_px":18.523040355705},
+      {"id":"T-CL003-LEFT-01","sector":"left","pixel_local":[49,110],"scale_displacement_modulo_translation_px":[-5.300480769231,-19.730158730159],"best_rigid_translation_residual_px":[10.066856971154,6.972817460317],"residual_magnitude_px":12.245888804516},
+      {"id":"T-CL003-LEFT-02","sector":"left","pixel_local":[46,135],"scale_displacement_modulo_translation_px":[-4.975961538462,-24.214285714286],"best_rigid_translation_residual_px":[10.391376201923,2.48869047619],"residual_magnitude_px":10.685236527853},
+      {"id":"T-CL003-LEFT-03","sector":"left","pixel_local":[45,160],"scale_displacement_modulo_translation_px":[-4.867788461538,-28.698412698413],"best_rigid_translation_residual_px":[10.499549278846,-1.995436507937],"residual_magnitude_px":10.687483422964},
+      {"id":"T-CL003-LEFT-04","sector":"left","pixel_local":[49,190],"scale_displacement_modulo_translation_px":[-5.300480769231,-34.079365079365],"best_rigid_translation_residual_px":[10.066856971154,-7.376388888889],"residual_magnitude_px":12.480093041231},
+      {"id":"T-CL003-RIGHT-01","sector":"right","pixel_local":[230,110],"scale_displacement_modulo_translation_px":[-24.879807692308,-19.730158730159],"best_rigid_translation_residual_px":[-9.512469951923,6.972817460317],"residual_magnitude_px":11.794374418389},
+      {"id":"T-CL003-RIGHT-02","sector":"right","pixel_local":[231,135],"scale_displacement_modulo_translation_px":[-24.987980769231,-24.214285714286],"best_rigid_translation_residual_px":[-9.620643028846,2.48869047619],"residual_magnitude_px":9.937321197122},
+      {"id":"T-CL003-RIGHT-03","sector":"right","pixel_local":[233,160],"scale_displacement_modulo_translation_px":[-25.204326923077,-28.698412698413],"best_rigid_translation_residual_px":[-9.836989182692,-1.995436507937],"residual_magnitude_px":10.037336451351},
+      {"id":"T-CL003-RIGHT-04","sector":"right","pixel_local":[227,190],"scale_displacement_modulo_translation_px":[-24.555288461538,-34.079365079365],"best_rigid_translation_residual_px":[-9.187950721154,-7.376388888889],"residual_magnitude_px":11.782595278396}
+    ]
+  },
+  "C_002_translation_candidate": null,
+  "C_003_translation_candidate": null,
+  "translation_candidate_reason": "No one rigid translation satisfies all 16 CL-003 samples, so promoting a convenient or best-fit translation would hide disagreement.",
+  "required_but_unapproved_alternatives": [
+    "allow C-003 to scale with the C-004 inner contact",
+    "allow a contact-preserving local adjustment that changes only C-004 outside CL-003",
+    "change one or more physical targets",
+    "leave the asset blocked"
+  ],
+  "source_vs_interpretation_classification": {
+    "source_panels_and_CL003_samples": "authoritative source evidence within existing bounds",
+    "whole_C004_factors": "proof only feasibility candidates",
+    "best_rigid_translation_and_residuals": "proof only diagnostic",
+    "adjusted_silhouette": "not created",
+    "geometry": "not created"
+  },
+  "permitted_future_consumer": "a separately approved source-versus-measurement rule decision only",
+  "blocked_consumers": [
+    "source replacement",
+    "Step 10 revision",
+    "Step 11",
+    "geometry or DCC",
+    "texture or material",
+    "Unreal or production"
+  ]
+}

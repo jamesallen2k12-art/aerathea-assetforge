@@ -1,0 +1,429 @@
+{
+  "schema": "aerathea.s10r_003_a_cl003_target_space_mapping_a01_validation.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-003-A-MAP-A01",
+  "date": "2026-07-17",
+  "validated_at": "2026-07-17T15:46:23.394518-04:00",
+  "status": "pass_candidate_mapping_pending_Flamestrike",
+  "artifact_classification": "proof only",
+  "independent_auditor": "Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r003_mapping_a01.py",
+  "builder_imported": false,
+  "input_lock_sha256": "f49e239bea3b7f163cecc73718772c42a9284b87d7a3aa37d684db6c98110e2c",
+  "ledger_sha256": "eb4cf1d9cab090cf1b7b668924b7510b10374a43768e8cd520656ee13859bbfa",
+  "review_board_sha256": "69f028375ee4da0bf3c1b6e4b19403611637e1daa9733645b688a922caf3f9b7",
+  "output_hashes_before_validation": {
+    "input_lock": "f49e239bea3b7f163cecc73718772c42a9284b87d7a3aa37d684db6c98110e2c",
+    "mapping_ledger": "eb4cf1d9cab090cf1b7b668924b7510b10374a43768e8cd520656ee13859bbfa",
+    "review_board": "69f028375ee4da0bf3c1b6e4b19403611637e1daa9733645b688a922caf3f9b7",
+    "output_record": "2a06aac73ab2b60e8d62921b405007c4e42164b8bbdb4a69ef8e67daad6a0d7d",
+    "decision_handoff": "34c8c23e22c6c2191fdb1d6763c2956c10202fc04df30f10dc0e16dedbe68621",
+    "builder": "19f2887ba0ad4524f304e845f05003a2f6a36e338331d03a6b451a801ea096d3",
+    "independent_auditor": "376be5e1edd3cd503ed97ffc5e1fcd75322a08f06a46d68864a581367111e93f"
+  },
+  "gate_count": 31,
+  "passed_gate_count": 31,
+  "failed_gate_count": 0,
+  "gates": [
+    {
+      "gate": "G01",
+      "subject": "all locked input hashes match before output writes",
+      "status": "pass",
+      "evidence": {
+        "matched": 16,
+        "total": 16
+      }
+    },
+    {
+      "gate": "G02",
+      "subject": "contract hash and approved contract identity",
+      "status": "pass",
+      "evidence": {
+        "sha256": "10dc155b78e2d2e6f15a389a9a247db13450314df2d8e3bc9ba891901b3208f8",
+        "approval": {
+          "approver": "Flamestrike",
+          "statement": "approved",
+          "scope": "contract exactly as written"
+        }
+      }
+    },
+    {
+      "gate": "G03",
+      "subject": "exactly sixteen approved top-view CL-003 records",
+      "status": "pass",
+      "evidence": {
+        "ledger": 16,
+        "authority": 16
+      }
+    },
+    {
+      "gate": "G04",
+      "subject": "source IDs sectors ranks pixels and RGB match authority",
+      "status": "pass",
+      "evidence": {
+        "matched": 16,
+        "total": 16
+      }
+    },
+    {
+      "gate": "G05",
+      "subject": "four samples in each of four sectors",
+      "status": "pass",
+      "evidence": {
+        "top": 4,
+        "bottom": 4,
+        "left": 4,
+        "right": 4
+      }
+    },
+    {
+      "gate": "G06",
+      "subject": "source coordinates and artifacts remain byte-identical",
+      "status": "pass",
+      "evidence": {
+        "source_panel_sha256": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf",
+        "source_contacts_sha256": "8f9fb86ef631e5785552a61f61e4a2d3085727f1a667bdf59cf904284b1b2eb0"
+      }
+    },
+    {
+      "gate": "G07",
+      "subject": "K80 formula extents origin role endpoints and sectors remain locked",
+      "status": "pass",
+      "evidence": {
+        "equation": "abs(x / 56)^3 + abs(y / 44)^3 = 1",
+        "full_extents_cm": [
+          112,
+          88
+        ],
+        "origin": [
+          0,
+          0
+        ],
+        "origin_role": "mathematical construction convention only",
+        "registered_axis_endpoints": {
+          "positive_x": [
+            56,
+            0
+          ],
+          "negative_x": [
+            -56,
+            0
+          ],
+          "positive_y": [
+            0,
+            44
+          ],
+          "negative_y": [
+            0,
+            -44
+          ]
+        },
+        "serialization_decimal_places": 12
+      }
+    },
+    {
+      "gate": "G08",
+      "subject": "only exact endpoint-exclusive rank parameters are used",
+      "status": "pass",
+      "evidence": {
+        "top": [
+          "1/5",
+          "2/5",
+          "3/5",
+          "4/5"
+        ],
+        "bottom": [
+          "1/5",
+          "2/5",
+          "3/5",
+          "4/5"
+        ],
+        "left": [
+          "1/5",
+          "2/5",
+          "3/5",
+          "4/5"
+        ],
+        "right": [
+          "1/5",
+          "2/5",
+          "3/5",
+          "4/5"
+        ]
+      }
+    },
+    {
+      "gate": "G09",
+      "subject": "only the four registered angular rules are used",
+      "status": "pass",
+      "evidence": {
+        "top": "pi * (1 - u)",
+        "right": "pi/2 - pi*u",
+        "bottom": "2*pi - pi*u",
+        "left": "3*pi/2 - pi*u"
+      }
+    },
+    {
+      "gate": "G10",
+      "subject": "exactly sixteen target records are produced",
+      "status": "pass",
+      "evidence": 16
+    },
+    {
+      "gate": "G11",
+      "subject": "every target lies on K80",
+      "status": "pass",
+      "evidence": {
+        "max_residual": 4.440892098500626e-16,
+        "tolerance": 1e-12
+      }
+    },
+    {
+      "gate": "G12",
+      "subject": "all coordinates replay to twelve decimal places",
+      "status": "pass",
+      "evidence": {
+        "matched": 16,
+        "total": 16
+      }
+    },
+    {
+      "gate": "G13",
+      "subject": "all sixteen serialized target coordinates are unique",
+      "status": "pass",
+      "evidence": {
+        "unique": 16,
+        "total": 16
+      }
+    },
+    {
+      "gate": "G14",
+      "subject": "no target equals a registered endpoint",
+      "status": "pass",
+      "evidence": {
+        "endpoint_hits": 0
+      }
+    },
+    {
+      "gate": "G15",
+      "subject": "no source sample maps more than once",
+      "status": "pass",
+      "evidence": {
+        "unique_source_ids": 16
+      }
+    },
+    {
+      "gate": "G16",
+      "subject": "within-sector parameter order is strictly monotonic",
+      "status": "pass",
+      "evidence": {
+        "top": [
+          "2.513274122871834",
+          "1.884955592153876",
+          "1.256637061435917",
+          "0.628318530717959"
+        ],
+        "bottom": [
+          "5.654866776461628",
+          "5.026548245743669",
+          "4.398229715025710",
+          "3.769911184307752"
+        ],
+        "left": [
+          "4.084070449666731",
+          "3.455751918948772",
+          "2.827433388230814",
+          "2.199114857512855"
+        ],
+        "right": [
+          "0.942477796076938",
+          "0.314159265358979",
+          "-0.314159265358979",
+          "-0.942477796076938"
+        ]
+      }
+    },
+    {
+      "gate": "G17",
+      "subject": "every target stays in its matching sector half-plane",
+      "status": "pass",
+      "evidence": {
+        "records_checked": 16
+      }
+    },
+    {
+      "gate": "G18",
+      "subject": "adjacent sectors share no mapped coordinate or snap claim",
+      "status": "pass",
+      "evidence": {
+        "duplicates": 0,
+        "snap_claims": 0
+      }
+    },
+    {
+      "gate": "G19",
+      "subject": "source displacement remains zero",
+      "status": "pass",
+      "evidence": {
+        "displacement_px": 0
+      }
+    },
+    {
+      "gate": "G20",
+      "subject": "source overlays and fit calculations remain zero",
+      "status": "pass",
+      "evidence": {
+        "source_overlays": 0,
+        "source_fit_calculations": 0
+      }
+    },
+    {
+      "gate": "G21",
+      "subject": "physical cross-view pairings remain zero",
+      "status": "pass",
+      "evidence": {
+        "physical_cross_view_pairs": 0
+      }
+    },
+    {
+      "gate": "G22",
+      "subject": "non-top mapped samples remain zero",
+      "status": "pass",
+      "evidence": {
+        "mapped_non_top_samples": 0
+      }
+    },
+    {
+      "gate": "G23",
+      "subject": "center pivot placement physical-size and anchor claims remain zero",
+      "status": "pass",
+      "evidence": {
+        "forbidden_claims": 0
+      }
+    },
+    {
+      "gate": "G24",
+      "subject": "CL-002 closure annuli hidden interfaces and footprints remain zero",
+      "status": "pass",
+      "evidence": {
+        "filled_footprints": 0,
+        "annuli": 0,
+        "hidden_interfaces": 0,
+        "closed_contact_loops": 0
+      }
+    },
+    {
+      "gate": "G25",
+      "subject": "fields surfaces topology and geometry remain zero",
+      "status": "pass",
+      "evidence": {
+        "fields": 0,
+        "surfaces": 0,
+        "topology": 0,
+        "geometry": 0
+      }
+    },
+    {
+      "gate": "G26",
+      "subject": "review board is line-only separated unfilled and labeled by construction",
+      "status": "pass",
+      "evidence": {
+        "sha256": "69f028375ee4da0bf3c1b6e4b19403611637e1daa9733645b688a922caf3f9b7",
+        "size_px": [
+          2000,
+          1180
+        ],
+        "metadata": {
+          "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/evidence/S10R_003_A_CL003_TARGET_SPACE_MAPPING_A01/SM_GIA_BloodAxeCairnstone_A005_S10R_003_A_CL003_TARGET_SPACE_MAPPING_A01_REVIEW_BOARD.png",
+          "sha256": "69f028375ee4da0bf3c1b6e4b19403611637e1daa9733645b688a922caf3f9b7",
+          "size_px": [
+            2000,
+            1180
+          ],
+          "source_display_scale": "2x_nearest_neighbor",
+          "source_mark_count": 16,
+          "candidate_target_point_count": 16,
+          "registered_endpoint_marker_count": 4,
+          "candidate_fill_count": 0,
+          "cross_sector_join_count": 0,
+          "source_target_overlay_count": 0,
+          "geometry_preview_count": 0,
+          "line_only_target_curve": true
+        }
+      }
+    },
+    {
+      "gate": "G27",
+      "subject": "independent auditor reproduces calculations without builder arrays",
+      "status": "pass",
+      "evidence": {
+        "independent_replays": 16,
+        "builder_module_imported": false
+      }
+    },
+    {
+      "gate": "G28",
+      "subject": "builder and auditor agree on coordinates and status flags",
+      "status": "pass",
+      "evidence": {
+        "coordinate_matches": 16,
+        "status_matches": 16
+      }
+    },
+    {
+      "gate": "G29",
+      "subject": "changed paths are contained by the execution allowlist",
+      "status": "pass",
+      "evidence": {
+        "new_paths": [
+          "Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r003_mapping_a01.py",
+          "Tools/DCC/build_bloodaxe_cairnstone_a005_s10r003_mapping_a01.py",
+          "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/evidence/S10R_003_A_CL003_TARGET_SPACE_MAPPING_A01/",
+          "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/handoffs/S10R_003_A_CL003_TARGET_SPACE_MAPPING_A01_TO_DECISION_HANDOFF.md",
+          "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/S10R_003_A_CL003_TARGET_SPACE_MAPPING_A01_INPUT_LOCK.json",
+          "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/S10R_003_A_CL003_TARGET_SPACE_MAPPING_A01_LEDGER.json",
+          "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/S10R_003_A_CL003_TARGET_SPACE_MAPPING_A01_VALIDATION.json",
+          "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/S10R_003_A_CL003_TARGET_SPACE_MAPPING_A01_OUTPUT_RECORD.md"
+        ],
+        "unexpected_paths": []
+      }
+    },
+    {
+      "gate": "G30",
+      "subject": "no path is staged committed or pushed",
+      "status": "pass",
+      "evidence": {
+        "staged_paths": [],
+        "head": "f525945"
+      }
+    },
+    {
+      "gate": "G31",
+      "subject": "execution stops at visible candidate review",
+      "status": "pass",
+      "evidence": {
+        "mandatory_stop": "visible candidate review before any promotion or downstream work",
+        "authority_limits": {
+          "all_target_coordinates_are_interpretation": true,
+          "source_evidence_modified": false,
+          "source_center_or_pivot_created": false,
+          "physical_C003_size_created": false,
+          "geometry_ready_array_created": false,
+          "automatic_approval": false,
+          "step10_closeout_authorized": false,
+          "step11_authorized": false,
+          "production_authorized": false,
+          "staging_commit_push_authorized": false
+        }
+      }
+    }
+  ],
+  "technical_result": "sixteen_endpoint_exclusive_candidate_interpretation_mappings_validated",
+  "authority_effect": "none_pending_Flamestrike_decision",
+  "source_displacement_px": 0,
+  "physical_cross_view_pairs": 0,
+  "fields_surfaces_topology_geometry": 0,
+  "step10_closeout_authorized": false,
+  "step11_authorized": false,
+  "production_authorized": false,
+  "staging_commit_push_authorized": false
+}

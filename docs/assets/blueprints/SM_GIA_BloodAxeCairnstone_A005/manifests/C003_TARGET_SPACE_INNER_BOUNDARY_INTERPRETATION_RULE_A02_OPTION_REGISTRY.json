@@ -1,0 +1,227 @@
+{
+  "schema": "aerathea.c003_target_space_inner_boundary_interpretation_rule_a02_option_registry.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-C003-TSIB-A02",
+  "date": "2026-07-17",
+  "registered_at": "2026-07-17T14:43:32-04:00",
+  "status": "options_frozen_before_curve_generation",
+  "artifact_classification": "proof only",
+  "input_lock_sha256": "1208892b0c2e50a15e88062e656374a8183defec8c8d3fe70ba453f3c1b2d541",
+  "contract_sha256": "ea55cd69c494b17cfcc06e324552da2df789a6415f3eceef1112ea3110662d0b",
+  "decision_subject": {
+    "id": "C003-TSIB-A02-DECISION",
+    "question": "Which abstract C-003/C-004 target-space inner-boundary rule, if any, should become approved bounded interpretation authority?",
+    "approver": "Flamestrike",
+    "selection_status": "pending_visible_review",
+    "automatic_selection_allowed": false
+  },
+  "terminology_lock": {
+    "defined_boundary": "C-003 outer boundary at CL-003, used as C-004 target-space inner boundary",
+    "excluded_boundary": "C-003 inner edge at CL-002",
+    "CL002_closure_authorized": false,
+    "C003_annulus_authorized": false
+  },
+  "a01_recovery_boundary": {
+    "affected_artifacts_preserved_byte_identical": true,
+    "a01_contract_status": "quarantined",
+    "a01_input_lock_status": "invalid",
+    "a01_option_registry_status": "quarantined",
+    "a01_used_as_option_authority": false
+  },
+  "outer_N3_authority": {
+    "equation": "abs(x / 70)^3 + abs(y / 55)^3 = 1",
+    "exponent": 3,
+    "half_width_cm": 70,
+    "half_depth_cm": 55,
+    "full_width_cm": 140,
+    "full_depth_cm": 110,
+    "origin": [
+      0,
+      0
+    ],
+    "origin_role": "mathematical construction convention only",
+    "source_pixel_relation": "none",
+    "source_center_claim": false,
+    "pivot_claim": false,
+    "artifact_classification": "approved bounded interpretation rule for abstract outer perimeter only"
+  },
+  "sampling_rule": {
+    "parameter": "t",
+    "domain": "0 through 2*pi inclusive",
+    "sample_count": 721,
+    "step": "2*pi/720",
+    "x_formula": "a * sign(cos(t)) * abs(cos(t))^(2/3)",
+    "y_formula": "b * sign(sin(t)) * abs(sin(t))^(2/3)",
+    "serialization_decimal_places": 12,
+    "curve_fill": false,
+    "hand_tuning_allowed": false
+  },
+  "shared_candidate_rule": {
+    "equation": "abs(x / (70 * k))^3 + abs(y / (55 * k))^3 = 1",
+    "exponent": 3,
+    "uniform_axis_ratio": true,
+    "concentric_in_target_review_frame": true,
+    "concentricity_role": "candidate interpretation only",
+    "source_fit": false,
+    "source_measurement": false,
+    "physical_C003_dimension": false,
+    "CL003_mapping": false,
+    "target_CL003_coordinates": 0
+  },
+  "options": [
+    {
+      "id": "C003_TSIB_K90_NARROW_APRON",
+      "label": "K90 Narrow Apron",
+      "k": 0.9,
+      "half_width_cm": 63,
+      "half_depth_cm": 49.5,
+      "full_width_cm": 126,
+      "full_depth_cm": 99,
+      "axis_separation_per_x_side_cm": 7,
+      "axis_separation_per_y_side_cm": 5.5,
+      "registered_axis_endpoints": {
+        "positive_x": [
+          63,
+          0
+        ],
+        "negative_x": [
+          -63,
+          0
+        ],
+        "positive_y": [
+          0,
+          49.5
+        ],
+        "negative_y": [
+          0,
+          -49.5
+        ]
+      },
+      "artifact_classification": "candidate interpretation",
+      "selection_status": "pending_Flamestrike",
+      "implementation_authorized": false
+    },
+    {
+      "id": "C003_TSIB_K80_MEDIUM_APRON",
+      "label": "K80 Medium Apron",
+      "k": 0.8,
+      "half_width_cm": 56,
+      "half_depth_cm": 44,
+      "full_width_cm": 112,
+      "full_depth_cm": 88,
+      "axis_separation_per_x_side_cm": 14,
+      "axis_separation_per_y_side_cm": 11,
+      "registered_axis_endpoints": {
+        "positive_x": [
+          56,
+          0
+        ],
+        "negative_x": [
+          -56,
+          0
+        ],
+        "positive_y": [
+          0,
+          44
+        ],
+        "negative_y": [
+          0,
+          -44
+        ]
+      },
+      "artifact_classification": "candidate interpretation",
+      "selection_status": "pending_Flamestrike",
+      "implementation_authorized": false
+    },
+    {
+      "id": "C003_TSIB_K70_BROAD_APRON",
+      "label": "K70 Broad Apron",
+      "k": 0.7,
+      "half_width_cm": 49,
+      "half_depth_cm": 38.5,
+      "full_width_cm": 98,
+      "full_depth_cm": 77,
+      "axis_separation_per_x_side_cm": 21,
+      "axis_separation_per_y_side_cm": 16.5,
+      "registered_axis_endpoints": {
+        "positive_x": [
+          49,
+          0
+        ],
+        "negative_x": [
+          -49,
+          0
+        ],
+        "positive_y": [
+          0,
+          38.5
+        ],
+        "negative_y": [
+          0,
+          -38.5
+        ]
+      },
+      "artifact_classification": "candidate interpretation",
+      "selection_status": "pending_Flamestrike",
+      "implementation_authorized": false
+    },
+    {
+      "id": "C003_TSIB_LEAVE_BLOCKED",
+      "label": "Leave Blocked",
+      "k": null,
+      "equation": null,
+      "candidate_curve_created": false,
+      "artifact_classification": "reference only pending decision",
+      "selection_status": "pending_Flamestrike",
+      "implementation_authorized": false
+    }
+  ],
+  "sector_convention": {
+    "role": "formula-derived candidate interpretation only",
+    "top": "negative-X endpoint to positive-X endpoint through positive Y",
+    "right": "positive-Y endpoint to negative-Y endpoint through positive X",
+    "bottom": "positive-X endpoint to negative-X endpoint through negative Y",
+    "left": "negative-Y endpoint to positive-Y endpoint through negative X",
+    "source_sample_assignment_created": false,
+    "target_contact_assignment_created": false,
+    "snap_anchor_authority": false,
+    "geometry_vertex_authority": false
+  },
+  "presentation_rule": {
+    "candidate_panels": 3,
+    "identical_frame": true,
+    "identical_scale": true,
+    "identical_sampling": true,
+    "identical_line_weight": true,
+    "candidate_fill": false,
+    "source_region_separate": true,
+    "source_overlay_count": 0,
+    "target_contact_mapping_count": 0,
+    "automatic_ranking": false
+  },
+  "pre_generation_counts": {
+    "registered_curve_options": 3,
+    "registered_block_options": 1,
+    "candidate_curve_samples_created": 0,
+    "source_overlays_created": 0,
+    "target_CL003_coordinates_created": 0,
+    "filled_regions_created": 0,
+    "fields_created": 0,
+    "geometry_created": 0
+  },
+  "forbidden_methods": [
+    "source contour fitting",
+    "source sample normalization or mapping",
+    "CL-002 closure",
+    "C-003 annulus interpretation",
+    "unregistered ratio",
+    "asymmetric scaling",
+    "rotation or translation",
+    "local deformation",
+    "filled band or footprint",
+    "automatic option selection",
+    "field, surface, topology, or geometry creation"
+  ],
+  "technical_result_if_all_gates_pass": "three_C003_target_space_boundary_options_ready_for_Flamestrike_decision",
+  "option_registry_frozen_before_curve_generation": true
+}

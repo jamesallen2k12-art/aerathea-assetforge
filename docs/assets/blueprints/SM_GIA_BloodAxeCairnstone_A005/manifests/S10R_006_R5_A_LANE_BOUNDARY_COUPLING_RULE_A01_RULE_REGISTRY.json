@@ -1,0 +1,283 @@
+{
+  "schema": "aerathea.s10r_006_r5_a_lane_boundary_coupling_rule_a01_registry.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-006-R5-A-LBCR-A01",
+  "rule_id": "S10R-006-R5-A-LBCR-A01",
+  "date": "2026-07-17",
+  "status": "approved_bounded_symbolic_rule_four_blocked_corner_gaps_unowned",
+  "artifact_classification": "authoritative for bounded S10R-006-R5-A symbolic coupling rule only",
+  "technical_result": "pass_bounded_symbolic_lane_boundary_coupling_rule_registered_with_four_blocked_corner_gaps",
+  "authority_basis": {
+    "r4_selected_option": "S10R-006-R4-A",
+    "r4_authority": "preparation and separately approved record-only execution of one bounded lane-to-H_v coupling-rule contract",
+    "r3_status": "approved_bounded_symbolic_method_no_field_coupling",
+    "physical_source_authority": false,
+    "rule_approval_authority": true,
+    "implementation_authority": false
+  },
+  "flamestrike_decision": {
+    "decision": "approve",
+    "statement": "approved",
+    "scope": "authoritative bounded symbolic interpretation for four owned cardinal arcs only",
+    "blocked_corner_gaps_preserved": 4,
+    "resolved_block_ids": [],
+    "rule_evaluation_authorized": false,
+    "field_implementation_authorized": false
+  },
+  "abstract_parameter": {
+    "name": "q",
+    "classification": "approved bounded dimensionless interpretation parameter only",
+    "orientation": "increasing q is counterclockwise in the +X,+Y plane when viewed from +Z",
+    "zero_direction": "+X",
+    "angular_conversion": "theta(q) = pi*q/4",
+    "domain": "D_q = [-1/2,1/2] union [3/2,5/2] union [7/2,9/2] union [11/2,13/2]",
+    "endpoint_convention": "each lane owns both endpoints of its own closed interval; open gaps are unowned",
+    "periodic": false,
+    "modulus": null,
+    "wrap": null,
+    "final_first_endpoint_identification": false,
+    "physical_angle_claim": false,
+    "source_angle_claim": false
+  },
+  "step05_axis_replay": {
+    "frame_handedness": "right_handed",
+    "up": "+Z",
+    "front_image_right": "+X",
+    "front_image_left": "-X",
+    "left_image_right": "-Y",
+    "left_image_left": "+Y",
+    "classification": "evidence replay only"
+  },
+  "lanes": [
+    {
+      "lane_id": "AFM-FRONT-RIGHT",
+      "owner_view": "front",
+      "owner_plane": "XZ",
+      "registered_side": "right",
+      "trace_ids": [
+        "F-BTIR-02",
+        "F-BTIR-04",
+        "F-BTIR-06"
+      ],
+      "within_side_orders": [
+        1,
+        2,
+        3
+      ],
+      "u_stations": [
+        "0",
+        "1/2",
+        "1"
+      ],
+      "cardinal_center": "+X",
+      "q_center": "0",
+      "q_interval": "[-1/2,1/2]",
+      "q_map": "q_L(u) = c_L + u - 1/2, 0 <= u <= 1",
+      "classification": "approved bounded interpretation only",
+      "per_record_q_values": []
+    },
+    {
+      "lane_id": "AFM-LEFT-LEFT",
+      "owner_view": "left",
+      "owner_plane": "YZ",
+      "registered_side": "left",
+      "trace_ids": [
+        "L-BTIR-01",
+        "L-BTIR-03",
+        "L-BTIR-05"
+      ],
+      "within_side_orders": [
+        1,
+        2,
+        3
+      ],
+      "u_stations": [
+        "0",
+        "1/2",
+        "1"
+      ],
+      "cardinal_center": "+Y",
+      "q_center": "2",
+      "q_interval": "[3/2,5/2]",
+      "q_map": "q_L(u) = c_L + u - 1/2, 0 <= u <= 1",
+      "classification": "approved bounded interpretation only",
+      "per_record_q_values": []
+    },
+    {
+      "lane_id": "AFM-FRONT-LEFT",
+      "owner_view": "front",
+      "owner_plane": "XZ",
+      "registered_side": "left",
+      "trace_ids": [
+        "F-BTIR-01",
+        "F-BTIR-03",
+        "F-BTIR-05"
+      ],
+      "within_side_orders": [
+        1,
+        2,
+        3
+      ],
+      "u_stations": [
+        "0",
+        "1/2",
+        "1"
+      ],
+      "cardinal_center": "-X",
+      "q_center": "4",
+      "q_interval": "[7/2,9/2]",
+      "q_map": "q_L(u) = c_L + u - 1/2, 0 <= u <= 1",
+      "classification": "approved bounded interpretation only",
+      "per_record_q_values": []
+    },
+    {
+      "lane_id": "AFM-LEFT-RIGHT",
+      "owner_view": "left",
+      "owner_plane": "YZ",
+      "registered_side": "right",
+      "trace_ids": [
+        "L-BTIR-02",
+        "L-BTIR-04",
+        "L-BTIR-06"
+      ],
+      "within_side_orders": [
+        1,
+        2,
+        3
+      ],
+      "u_stations": [
+        "0",
+        "1/2",
+        "1"
+      ],
+      "cardinal_center": "-Y",
+      "q_center": "6",
+      "q_interval": "[11/2,13/2]",
+      "q_map": "q_L(u) = c_L + u - 1/2, 0 <= u <= 1",
+      "classification": "approved bounded interpretation only",
+      "per_record_q_values": []
+    }
+  ],
+  "blocked_gaps": [
+    {
+      "id": "G_0",
+      "q_interval": "(1/2,3/2)",
+      "status": "unowned_blocked_cross_view_corner"
+    },
+    {
+      "id": "G_1",
+      "q_interval": "(5/2,7/2)",
+      "status": "unowned_blocked_cross_view_corner"
+    },
+    {
+      "id": "G_2",
+      "q_interval": "(9/2,11/2)",
+      "status": "unowned_blocked_cross_view_corner"
+    },
+    {
+      "id": "G_3",
+      "q_interval": "(13/2,15/2)",
+      "status": "unowned_blocked_unwrapped_final_first_corner",
+      "q_15_over_2_in_domain": false,
+      "identified_with_q_minus_1_over_2": false
+    }
+  ],
+  "boundary_family": {
+    "s": "s(v) = 0.8 + 0.2v",
+    "a": "a(v) = 56 + 14v",
+    "b": "b(v) = 44 + 11v",
+    "implicit_family": "H_v: abs(x/a(v))^3 + abs(y/b(v))^3 = 1",
+    "signed_power": "spow_2_3(r) = sign(r) * abs(r)^(2/3)",
+    "parameterization": "B_v(q) = (a(v)*spow_2_3(cos(theta(q))), b(v)*spow_2_3(sin(theta(q))))",
+    "symbolic_identity": "abs(B_x/a(v))^3 + abs(B_y/b(v))^3 = cos(theta(q))^2 + sin(theta(q))^2 = 1",
+    "classification": "approved bounded unevaluated interpretation formula only",
+    "evaluated_samples": []
+  },
+  "coupling_descriptor": {
+    "lane_map": "q_L(u) = c_L + u - 1/2",
+    "boundary_map": "C_L(u,v) = B_v(q_L(u))",
+    "record_weight_descriptor": "W_L(u,v) = {(T_j, v, 1-lambda), (T_(j+1), v, lambda)}",
+    "v_identity": "v = t",
+    "classification": "approved bounded unevaluated symbolic interpretation descriptor only",
+    "evaluated": false,
+    "physical_source_relation": false,
+    "target_coordinate_relation": false
+  },
+  "sector_policy": {
+    "independent_lane_count": 4,
+    "pairwise_disjoint_owned_intervals": true,
+    "blocked_open_gap_count": 4,
+    "cross_lane_interpolation": false,
+    "cross_lane_seam": null,
+    "cross_view_seam": null,
+    "front_left_view_join": null,
+    "side_to_side_join": null,
+    "top_upright_join": null,
+    "periodic_wrap": false,
+    "closed_360_ownership": false
+  },
+  "holdouts": {
+    "classification": "proof only",
+    "back_count": 6,
+    "right_count": 8,
+    "total": 14,
+    "construction_use_authorized": false
+  },
+  "definition_counts": {
+    "abstract_parameter_definitions": 1,
+    "orientation_definitions": 1,
+    "lane_interval_definitions": 4,
+    "blocked_gap_definitions": 4,
+    "symbolic_boundary_parameterizations": 1,
+    "symbolic_coupling_descriptors": 1
+  },
+  "output_counts": {
+    "per_record_parameter_instances": 0,
+    "evaluated_parameter_samples": 0,
+    "evaluated_boundary_samples": 0,
+    "evaluated_coupling_samples": 0,
+    "source_to_target_transforms": 0,
+    "physical_pairs": 0,
+    "target_coordinates": 0,
+    "centers": 0,
+    "pivots": 0,
+    "anchors": 0,
+    "seams": 0,
+    "joins": 0,
+    "closures": 0,
+    "fields": 0,
+    "fills": 0,
+    "surfaces": 0,
+    "topology": 0,
+    "geometry": 0
+  },
+  "active_blocks": [
+    {
+      "id": "S10R-BLOCK-006",
+      "status": "active_approved_lane_boundary_coupling_rule_four_corner_gaps_unowned_no_field"
+    },
+    {
+      "id": "S10R-BLOCK-008",
+      "status": "active_unchanged"
+    },
+    {
+      "id": "S10R-BLOCK-009",
+      "status": "active_unchanged"
+    }
+  ],
+  "resolved_block_ids": [],
+  "authorization_flags": {
+    "candidate_rule_registered": true,
+    "coupling_rule_approved": true,
+    "rule_evaluation_authorized": false,
+    "field_implementation_authorized": false,
+    "step10_closeout_authorized": false,
+    "step11_authorized": false,
+    "dcc_authorized": false,
+    "unreal_authorized": false,
+    "production_authorized": false,
+    "staging_authorized": false,
+    "commit_authorized": false,
+    "push_authorized": false
+  }
+}

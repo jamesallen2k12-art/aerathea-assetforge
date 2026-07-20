@@ -1,0 +1,101 @@
+{
+  "schema": "aerathea.s10r_006_r5_a_lane_boundary_coupling_rule_a01_falsification_audit.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-006-R5-A-LBCR-A01",
+  "rule_id": "S10R-006-R5-A-LBCR-A01",
+  "date": "2026-07-17",
+  "status": "pass_all_fail_closed_falsification_checks",
+  "artifact_classification": "proof only",
+  "checks": [
+    {
+      "id": "F01",
+      "status": "pass",
+      "evidence": "All 18 locked inputs matched before output writes."
+    },
+    {
+      "id": "F02",
+      "status": "pass",
+      "evidence": "S10R-006-R4-A is the sole selected option and grants bounded contract preparation/execution only."
+    },
+    {
+      "id": "F03",
+      "status": "pass",
+      "evidence": "Step 05 maps front-right to +X, left-left to +Y, front-left to -X, and left-right to -Y."
+    },
+    {
+      "id": "F04",
+      "status": "pass",
+      "evidence": "All four R3 lane IDs, owners, planes, sides, trace orders, and u stations replay exactly."
+    },
+    {
+      "id": "F05",
+      "status": "pass",
+      "evidence": "The unevaluated affine q_L formula maps symbolic u in [0,1] to each declared closed lane interval."
+    },
+    {
+      "id": "F06",
+      "status": "pass",
+      "evidence": "The four rational closed lane intervals are pairwise disjoint."
+    },
+    {
+      "id": "F07",
+      "status": "pass",
+      "evidence": "Exactly four nonempty rational open gaps remain explicitly unowned."
+    },
+    {
+      "id": "F08",
+      "status": "pass",
+      "evidence": "q has no modulus or wrap, and the final and first endpoints are not identified."
+    },
+    {
+      "id": "F09",
+      "status": "pass",
+      "evidence": "The unevaluated signed-power identity reduces algebraically to the exact implicit H_v equation without sampling."
+    },
+    {
+      "id": "F10",
+      "status": "pass",
+      "evidence": "v = t and the adjacent-record-only W_L descriptor remain unchanged and unevaluated."
+    },
+    {
+      "id": "F11",
+      "status": "pass",
+      "evidence": "All 14 back/right records remain proof only with construction use unauthorized."
+    },
+    {
+      "id": "F12",
+      "status": "pass",
+      "evidence": "q, intervals, gaps, B_v, and C_L are labeled approved bounded interpretation only, never source evidence."
+    },
+    {
+      "id": "F13",
+      "status": "pass",
+      "evidence": "Per-record parameter instances, evaluated samples, coordinates, seams, joins, closures, fields, fills, surfaces, topology, and geometry remain zero."
+    },
+    {
+      "id": "F14",
+      "status": "pass",
+      "evidence": "The mandatory BLOCK fallback is preserved and no failed gate required it."
+    },
+    {
+      "id": "F15",
+      "status": "pass",
+      "evidence": "Scoped changed paths match the execution allowlist and no path is staged."
+    },
+    {
+      "id": "F16",
+      "status": "pass",
+      "evidence": "Output and decision handoff visibility were verified in dedicated read-only terminal windows through exact A005 titles."
+    }
+  ],
+  "counts": {
+    "checks": 16,
+    "passed": 16,
+    "pending_visible_review": 0,
+    "failed": 0
+  },
+  "block_fallback_triggered": false,
+  "registered_candidate_rule": true,
+  "approved_rule": true,
+  "authority_expansion": false
+}

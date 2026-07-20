@@ -1,0 +1,73 @@
+{
+  "schema": "aerathea.s10r_006_r3_a_abstract_field_method_a01_dependency_audit.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-006-R3-A-AFM-A01",
+  "date": "2026-07-17",
+  "status": "pass_bounded_dependencies_exact_missing_coupling_preserved",
+  "artifact_classification": "proof only",
+  "dependencies": [
+    {
+      "id": "R2_SELECTION",
+      "status": "pass",
+      "evidence": "S10R-006-R2-A is the sole selected option."
+    },
+    {
+      "id": "CONSTRUCTION_RECORDS",
+      "status": "pass",
+      "evidence": "Twelve frozen records match owner, plane, side, order, v=t, K80 station, and N3 station."
+    },
+    {
+      "id": "LANE_PARTITION",
+      "status": "pass",
+      "evidence": "Four independent lanes contain exactly three adjacent ordered records each."
+    },
+    {
+      "id": "HOLDOUT_POLICY",
+      "status": "pass",
+      "evidence": "Six back and eight right records remain proof only and are not construction inputs."
+    },
+    {
+      "id": "BOUNDARY_ENDPOINTS",
+      "status": "pass",
+      "evidence": "K80 and N3 equations and exact homothetic endpoints replay without sampling."
+    },
+    {
+      "id": "LANE_BOUNDARY_COUPLING",
+      "status": "missing_authority_preserved",
+      "evidence": "No approved angular, arc, target-coordinate, seam, cross-view, or top/upright coupling exists."
+    }
+  ],
+  "algebraic_audit": {
+    "between_trace_weights_sum_to_one": true,
+    "u_station_identities_exact": true,
+    "adjacent_records_only": true,
+    "s_0": "0.8",
+    "s_1": "1",
+    "a_0": 56,
+    "a_1": 70,
+    "b_0": 44,
+    "b_1": 55,
+    "numeric_field_samples_created": 0
+  },
+  "missing_authority": [
+    "lane-to-H_v coupling function",
+    "angular or arc-length placement",
+    "source-view-to-target transform",
+    "cross-lane seam",
+    "cross-view seam",
+    "top/upright join",
+    "closed 360-degree field ownership"
+  ],
+  "block_effect": {
+    "resolved_block_ids": [],
+    "S10R-BLOCK-006": "active_candidate_method_registered_no_field_coupling_pending_method_decision",
+    "S10R-BLOCK-008": "active_unchanged",
+    "S10R-BLOCK-009": "active_unchanged"
+  },
+  "authority_effect": {
+    "physical_authority_created": false,
+    "field_authority_created": false,
+    "geometry_authority_created": false,
+    "downstream_authority_created": false
+  }
+}

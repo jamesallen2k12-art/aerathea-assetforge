@@ -1,0 +1,84 @@
+{
+  "schema": "aerathea.step_10_source_interpretation_ownership_map.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "step_id": "STEP_10",
+  "date": "2026-07-16",
+  "status": "candidate_ownership_map_pending_flamestrike_decisions",
+  "artifact_classification": "candidate",
+  "decision": "Keep exact source ownership, blocked exact results, candidate interpretations, and future technical rules in separate ownership classes.",
+  "ownership_classes": {
+    "authoritative_exact": "Source identity, source pixels, panel identity, integer observations, exact formulas, semantic IDs, discrete contact samples, and approved recovery-bounded records.",
+    "authoritative_direct_dimension": "The six printed centimeter dimensions only; they do not convert arbitrary contours.",
+    "authoritative_blocked_exact": "Every preserved disagreement, unknown, absent center, absent closure, and absent world conversion remains blocked as an exact-data conclusion.",
+    "candidate_interpretation": "A written Step 10 option or recommendation with no authority until Flamestrike approval.",
+    "approved_interpretation": "Empty until Flamestrike approves an exact candidate rule.",
+    "future_technical_rule": "A Step 11 or later production parameter that cannot alter visible source authority and requires its own approval boundary."
+  },
+  "component_ownership": [
+    {
+      "scope": "whole asset metric frame",
+      "authoritative_source": ["six direct dimensions", "twenty independent calibration records", "Step 05 axis mappings"],
+      "blocked_exact": ["unified X/Y/Z scale", "world-contour conversion"],
+      "candidate_interpretation_items": ["I10-001", "I10-009", "I10-010"],
+      "approved_interpretation_items": []
+    },
+    {
+      "scope": "C-001",
+      "authoritative_source": ["120 cm maximum width", "90 cm maximum depth", "owner-view visible profiles", "C-001 semantic identity"],
+      "blocked_exact": ["closed footprint", "center", "corner pairing", "facet-normal ownership", "hidden quadrant surfaces"],
+      "candidate_interpretation_items": ["I10-002", "I10-006", "I10-008", "I10-010"],
+      "approved_interpretation_items": []
+    },
+    {
+      "scope": "C-002 and C-003",
+      "authoritative_source": ["distinct semantic IDs", "visible row evidence", "CL-001 and CL-002 visible samples", "35 cm total base span"],
+      "blocked_exact": ["individual course heights", "closed annuli", "centers", "hidden interfaces"],
+      "candidate_interpretation_items": ["I10-003", "I10-006", "I10-008", "I10-010"],
+      "approved_interpretation_items": []
+    },
+    {
+      "scope": "C-004",
+      "authoritative_source": ["140 x 110 cm direct footprint dimensions", "source-visible irregular edge observations", "C-004 semantic identity"],
+      "blocked_exact": ["filled footprint", "closed perimeter", "center", "unowned sectors", "bottom"],
+      "candidate_interpretation_items": ["I10-004", "I10-006", "I10-007", "I10-008", "I10-010"],
+      "approved_interpretation_items": []
+    },
+    {
+      "scope": "C-005, C-006, and C-007",
+      "authoritative_source": ["view-linked visible appearance landmarks", "preserved semantic IDs"],
+      "blocked_exact": ["cross-face identity", "hidden-face placement", "physical centers", "continuous wrapping"],
+      "candidate_interpretation_items": ["I10-005", "I10-008", "I10-010"],
+      "approved_interpretation_items": []
+    },
+    {
+      "scope": "CL-001, CL-002, and CL-003",
+      "authoritative_source": ["semantic between-component relations", "127 exact discrete per-view samples"],
+      "blocked_exact": ["pixel pairing", "closed loops", "centers", "snap anchors", "hidden fill"],
+      "candidate_interpretation_items": ["I10-006", "I10-008"],
+      "approved_interpretation_items": []
+    },
+    {
+      "scope": "bottom and all source-invisible topology",
+      "authoritative_source": ["Z=0 ground station", "visible owner-view evidence only"],
+      "blocked_exact": ["underside shape", "internal faces", "watertight grouping", "technical overlap"],
+      "candidate_interpretation_items": ["I10-006", "I10-007", "I10-008"],
+      "approved_interpretation_items": []
+    }
+  ],
+  "view_ownership": {
+    "front": {"normal_owner": "-Y", "classification": "authoritative_axis_mapping"},
+    "back": {"normal_owner": "+Y", "classification": "authoritative_axis_mapping"},
+    "left": {"normal_owner": "-X", "classification": "authoritative_axis_mapping"},
+    "right": {"normal_owner": "+X", "classification": "authoritative_axis_mapping"},
+    "top": {"normal_owner": "+Z", "classification": "authoritative_axis_mapping"},
+    "perspective": {"normal_owner": null, "classification": "non_metric_visual_corroboration_only"},
+    "transition_sectors": {"owner": null, "candidate_interpretation_item": "I10-010"},
+    "bottom": {"owner": null, "candidate_interpretation_item": "I10-007"}
+  },
+  "approved_interpretation_count": 0,
+  "candidate_interpretation_item_count": 10,
+  "source_and_interpretation_separated": true,
+  "exact_evidence_status_changed": false,
+  "geometry_created": false,
+  "flamestrike_output_decisions": "pending"
+}

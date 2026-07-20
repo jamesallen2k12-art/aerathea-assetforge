@@ -1,0 +1,135 @@
+{
+  "schema": "aerathea.s10r_006_r4_a_lane_boundary_coupling_authority_dependency_audit.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-006-R4-A-LBCA-DEC-A01",
+  "date": "2026-07-17",
+  "status": "pass_candidate_coupling_authority_decision_dependencies_exact",
+  "artifact_classification": "proof only",
+  "governing_question": "Whether the approved uncoupled R3 symbolic method is sufficient authority to prepare a separate bounded lane-to-H_v coupling-rule contract, or coupling must remain blocked.",
+  "blueprint_authority": {
+    "step": "Step 10 - Unknowns And Interpretation Decision Gate",
+    "allowed": [
+      "written interpretation options",
+      "explicit rule proposals",
+      "approval rejection or blocked decisions"
+    ],
+    "blocked": [
+      "implementation",
+      "geometry creation",
+      "interpretation presented as measurement",
+      "silent rule selection"
+    ]
+  },
+  "r3_authority": {
+    "status": "approved_bounded_symbolic_method_no_field_coupling",
+    "technical_result": "pass_bounded_symbolic_method_registered_no_field_coupling",
+    "artifact_classification": "authoritative for bounded S10R-006-R3-A symbolic method only",
+    "symbolic_lanes": 4,
+    "approved_construction_records": 12,
+    "u_stations": [
+      "0",
+      "1/2",
+      "1"
+    ],
+    "v_identity": "v = t",
+    "between_trace_operator": "unevaluated symbolic record-weight descriptor using adjacent records only",
+    "boundary_family": "approved bounded abstract analytic family within the symbolic method only; registered unevaluated",
+    "lane_to_boundary_coupling": null,
+    "physical_authority_created": false
+  },
+  "holdout_authority": {
+    "classification": "proof only",
+    "back_count": 6,
+    "right_count": 8,
+    "total": 14,
+    "construction_use_authorized": false
+  },
+  "missing_authority": [
+    "abstract boundary parameter",
+    "boundary orientation",
+    "parameter domain and endpoint convention",
+    "per-lane parameter intervals",
+    "lane-to-H_v coupling function",
+    "angular or arc-length placement",
+    "cross-lane seam",
+    "cross-view seam",
+    "top/upright join",
+    "periodic or 360-degree closure",
+    "physical source-to-target correspondence"
+  ],
+  "route_findings": [
+    {
+      "route_id": "S10R-006-R4-A",
+      "route": "bounded coupling-rule contract preparation",
+      "technical_eligibility": "candidate_decision_available",
+      "evidence_basis": "The approved R3 method supplies exact symbolic lane identities and an unevaluated H_v family, while Step 10 permits a separately reviewable interpretation-rule proposal.",
+      "authority_limit": "May authorize preparation only of a later separate rule contract; no parameter, interval, orientation, function, coupling, seam, join, field, or implementation is authorized here.",
+      "physical_source_claim": false,
+      "block_resolution": false
+    },
+    {
+      "route_id": "S10R-006-R4-BLOCK",
+      "route": "preserve uncoupled symbolic method and coupling block",
+      "technical_eligibility": "candidate_block_option_available",
+      "evidence_basis": "R3 explicitly preserves missing lane-to-H_v authority and creates no physical correspondence.",
+      "authority_limit": "No new rule-design or coupling authority.",
+      "physical_source_claim": false,
+      "block_resolution": false
+    }
+  ],
+  "candidate_recommendation": {
+    "option_id": "S10R-006-R4-A",
+    "classification": "candidate recommendation only",
+    "selected": false,
+    "reason": "Smallest sufficient route that makes a later interpretation rule visible and rejectable before any parameter value is instantiated."
+  },
+  "zero_authority_counts": {
+    "boundary_parameter_definitions": 0,
+    "parameter_interval_definitions": 0,
+    "orientation_definitions": 0,
+    "coupling_function_definitions": 0,
+    "seams": 0,
+    "joins": 0,
+    "closures": 0,
+    "physical_source_target_transforms": 0,
+    "physical_cross_view_pairs": 0,
+    "target_trace_coordinates": 0,
+    "source_centers": 0,
+    "pivots": 0,
+    "anchors": 0,
+    "field_samples": 0,
+    "fills": 0,
+    "surfaces": 0,
+    "topology": 0,
+    "geometry": 0
+  },
+  "active_blocks": [
+    {
+      "id": "S10R-BLOCK-006",
+      "status": "active_approved_symbolic_method_no_field_coupling"
+    },
+    {
+      "id": "S10R-BLOCK-008",
+      "status": "active_unchanged"
+    },
+    {
+      "id": "S10R-BLOCK-009",
+      "status": "active_unchanged"
+    }
+  ],
+  "resolved_block_ids": [],
+  "authorization_flags": {
+    "coupling_rule_preparation_authorized": false,
+    "coupling_rule_authorized": false,
+    "method_implementation_authorized": false,
+    "field_implementation_authorized": false,
+    "step10_closeout_authorized": false,
+    "step11_authorized": false,
+    "dcc_authorized": false,
+    "unreal_authorized": false,
+    "production_authorized": false,
+    "staging_authorized": false,
+    "commit_authorized": false,
+    "push_authorized": false
+  }
+}

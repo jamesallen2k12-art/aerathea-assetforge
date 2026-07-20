@@ -1,0 +1,250 @@
+{
+  "schema": "aerathea.scale_authority_recovery_validation.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-SAR-A01",
+  "date": "2026-07-17",
+  "status": "technical_validation_pass_visible_review_opened",
+  "artifact_classification": "proof only",
+  "technical_validation_result": "pass_integrity_with_required_source_target_block",
+  "recovery_result": "blocked_by_unresolved_source_target_conflict",
+  "authority_effect": "none_pending_flamestrike_output_decision",
+  "input_lock_validation": {
+    "result": "pass",
+    "input_count": 90,
+    "current_hash_match_count": 90,
+    "unexpected_hash_mismatch_count": 0,
+    "affected_routed_input_count": 63,
+    "expected_post_reassessment_closeout_hash_updates_locked_at_current_state": 3,
+    "lock_created_before_recovery_outputs": true,
+    "all_used_inputs_allowlisted": true,
+    "optional_absent_input_used": false
+  },
+  "source_integrity": {
+    "result": "pass",
+    "original_source_and_scanline_inputs_match_input_lock": true,
+    "step03_panels": [
+      {
+        "panel": "front",
+        "file_sha256": "262071198bc0d409e9b68af5ac4f3c6a4768a90b1fd199342035a8a82342c2c5",
+        "pixel_sha256": "d4fb34cb01ce6eaa04213a5a7c517743960daec6dcf638c53ec80a958ecc807f"
+      },
+      {
+        "panel": "back",
+        "file_sha256": "8ceae7f5ccf311ded8822fdd623d2b68009102bc07ceaf66708f59d2a013d271",
+        "pixel_sha256": "9256a8df175cbf54ca0662b11e0c5f5f6be4e670b10a9783efc1d6e9e26a56b1"
+      },
+      {
+        "panel": "left",
+        "file_sha256": "52212ba783d026a008929e3946cac934281de7d2daec2ada316205059258cba4",
+        "pixel_sha256": "96a10daa637b28b879b5dd210bad3526e87499218dece9ca4ed0560046c9bddb"
+      },
+      {
+        "panel": "right",
+        "file_sha256": "cc6c27405fbd6ea8c46b70966fe559acbd57acb88e58bfdcd6b763ce827a862e",
+        "pixel_sha256": "f6201cbae75fa061f7614893d7f2c081149a350fc6d64ad510b49ef5c12d7610"
+      },
+      {
+        "panel": "top",
+        "file_sha256": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf",
+        "pixel_sha256": "eda0f5d691336489e257a44b09f58b8543b023bd4edc0893d5fab68ad8dbf05f"
+      }
+    ],
+    "all_current_file_hashes_match_locked_values": true
+  },
+  "historical_record_integrity": {
+    "result": "pass",
+    "existing_step01_through_step10_record_count_checked_against_pre_action_checkpoint_mtimes": 106,
+    "changed_record_count": 0,
+    "affected_input_records_current_hash_match_count": 63,
+    "historical_records_rewritten": 0,
+    "step10_records_modified": 0
+  },
+  "physical_bounds_validation": {
+    "result": "pass",
+    "choice_id": "A005-SAR-BOUNDS-A",
+    "targets_cm": {
+      "overall_Z": 220,
+      "C_001_X": 120,
+      "C_001_Y": 90,
+      "C_004_X": 140,
+      "C_004_Y": 110,
+      "C_004_Z": 35
+    },
+    "all_values_are_absolute_production_targets": true,
+    "physical_targets_separated_from_source_pixel_calibration": true,
+    "retroactive_historical_calibration_validation": false,
+    "front_primary_XZ_owner": true,
+    "left_primary_YZ_owner": true,
+    "back_validation_view": true,
+    "right_validation_view": true
+  },
+  "transform_validation": {
+    "result": "pass",
+    "panel_count": 5,
+    "exactly_one_complete_global_transform_per_panel": true,
+    "exactly_one_inverse_per_panel": true,
+    "maximum_forward_inverse_roundtrip_error_px": 0,
+    "source_pixels_clipped": false,
+    "top_X_factor": 1.1260059213,
+    "top_Y_factor": 1.0,
+    "diagnostic_pair_mean_factor_in_production_fields": false,
+    "derivative_method": "nearest_neighbor_inverse_sample_from_original_step03_panel",
+    "derivatives_generated_from_original_step03_panels": true,
+    "derivative_artifact_classification": "proof only",
+    "derivatives_permitted_as_source_pixels_or_textures": false,
+    "local_component_row_feature_perspective_cage_lattice_spline_or_content_aware_warp": false
+  },
+  "distortion_holdout_validation": {
+    "result": "pass_with_required_block",
+    "front_back_full_silhouette_iou_present": true,
+    "front_back_median_and_maximum_residual_present": true,
+    "left_right_full_silhouette_iou_present": true,
+    "left_right_median_and_maximum_residual_present": true,
+    "top_observed_and_transformed_ratios_present": true,
+    "holdouts_used_as_local_fit_inputs": false,
+    "production_pass_threshold_invented": false,
+    "source_target_conflict_count": 10,
+    "all_conflicts_preserved": true,
+    "required_stop_triggered": true
+  },
+  "world_integration_validation": {
+    "result": "pass_with_required_block",
+    "routed_file_count": 63,
+    "routed_field_match_count": 818,
+    "classified_field_match_count": 818,
+    "classification_totals": {
+      "reference_only_after_recovery": 595,
+      "valid_physical_target_only": 142,
+      "valid_raw_evidence_only": 81
+    },
+    "recovered_authority_candidate_count": 0,
+    "world_conversion_recovered": false,
+    "integrated_construction_frame_recovered": false,
+    "every_affected_field_traceable_through_reassessment_index": true,
+    "reserved_step10_record_count": 7
+  },
+  "forbidden_output_validation": {
+    "result": "pass",
+    "physical_center_created": false,
+    "pivot_created": false,
+    "snap_anchor_created": false,
+    "hidden_surface_created": false,
+    "geometry_interpretation_created": false,
+    "geometry_created": false,
+    "step10_revised": false,
+    "step11_started": false,
+    "production_started": false,
+    "commit_created": false,
+    "push_performed": false
+  },
+  "write_scope_validation": {
+    "result": "pass",
+    "pre_action_git_status": "Saved/ProjectRecovery/20260717-090216/git_status_short.txt",
+    "new_tracked_path_count_including_this_validation": 14,
+    "all_new_tracked_paths_allowlisted_by_contract": true,
+    "unexpected_changed_path_count": 0,
+    "generic_core_pipeline_blueprint_or_plan_modified_by_execution": false,
+    "reset_resume_artifact_index_approval_log_or_drift_ledger_modified_by_execution": false
+  },
+  "output_hashes": [
+    {
+      "path": "manifests/SCALE_AUTHORITY_RECOVERY_A01_INPUT_LOCK.json",
+      "sha256": "cb8d740dc2bd9956c8b9c486711db049c4aafd62f15cdcb652678540f5800846",
+      "size_bytes": 44079,
+      "artifact_classification": "proof only"
+    },
+    {
+      "path": "manifests/SCALE_AUTHORITY_RECOVERY_A01_PHYSICAL_BOUNDS.json",
+      "sha256": "688209b57bc5fda0f527fcc853a44286d750257f0c293d15dd67d0e617511056",
+      "size_bytes": 3849,
+      "artifact_classification": "candidate"
+    },
+    {
+      "path": "manifests/SCALE_AUTHORITY_RECOVERY_A01_TRANSFORM_MANIFEST.json",
+      "sha256": "464c448bf6f896b82c50e383f0de563514f8cbd12297677089b737c86d8b8a73",
+      "size_bytes": 12975,
+      "artifact_classification": "candidate"
+    },
+    {
+      "path": "manifests/SCALE_AUTHORITY_RECOVERY_A01_DISTORTION_HOLDOUT.json",
+      "sha256": "6927d330f07ab4615974fd69ec1f5ba302ba6f13981409fecdf418245e3344e7",
+      "size_bytes": 9392,
+      "artifact_classification": "candidate"
+    },
+    {
+      "path": "manifests/SCALE_AUTHORITY_RECOVERY_A01_WORLD_INTEGRATION_OVERRIDE.json",
+      "sha256": "2b4e9e3d90d33144ff9a7f066d6cef16dd40faea5eae9a85815a07c3ff7401b2",
+      "size_bytes": 55288,
+      "artifact_classification": "candidate"
+    },
+    {
+      "path": "steps/SCALE_AUTHORITY_RECOVERY_A01_OUTPUT_RECORD.md",
+      "sha256": "5cf306eeda5f2b7a5ed501e5baa0e46a26176b9734d784fa07c39a595d39181a",
+      "size_bytes": 5147,
+      "artifact_classification": "candidate"
+    },
+    {
+      "path": "handoffs/SCALE_AUTHORITY_RECOVERY_A01_TO_STEP10_REVISION_HANDOFF.md",
+      "sha256": "8b50e8b1a403b634ed9b1ade874ed4b94feba3342012218de5a48147f3f75c6d",
+      "size_bytes": 3372,
+      "artifact_classification": "candidate"
+    },
+    {
+      "path": "evidence/SCALE_AUTHORITY_RECOVERY_A01/SM_GIA_BloodAxeCairnstone_A005_FRONT_DERIVATIVE_REVIEW.png",
+      "sha256": "72ec80471191635bf0a6f2bdee6abfbb9f66eb3375af86236c3428c62807f3fe",
+      "size_bytes": 318266,
+      "artifact_classification": "proof only"
+    },
+    {
+      "path": "evidence/SCALE_AUTHORITY_RECOVERY_A01/SM_GIA_BloodAxeCairnstone_A005_BACK_DERIVATIVE_REVIEW.png",
+      "sha256": "8144fa1e50dcef6d3bd9590cdc2bb45e94b648abb7327698a112eff21fe6a1b5",
+      "size_bytes": 278283,
+      "artifact_classification": "proof only"
+    },
+    {
+      "path": "evidence/SCALE_AUTHORITY_RECOVERY_A01/SM_GIA_BloodAxeCairnstone_A005_LEFT_DERIVATIVE_REVIEW.png",
+      "sha256": "ae49f0215fc765e581f65177ad5caf5779405d412cd2dbf56ed94680fbe4ee27",
+      "size_bytes": 209817,
+      "artifact_classification": "proof only"
+    },
+    {
+      "path": "evidence/SCALE_AUTHORITY_RECOVERY_A01/SM_GIA_BloodAxeCairnstone_A005_RIGHT_DERIVATIVE_REVIEW.png",
+      "sha256": "a52b73f8d3c0173ca4677240c1569d27a5612a68fe92d4354a5c580b8f4593d0",
+      "size_bytes": 173539,
+      "artifact_classification": "proof only"
+    },
+    {
+      "path": "evidence/SCALE_AUTHORITY_RECOVERY_A01/SM_GIA_BloodAxeCairnstone_A005_TOP_DERIVATIVE_REVIEW.png",
+      "sha256": "1e9d2bef4fb4ca5b2d22d8e0b52e19a71dd684acc0194be494e863ad9e25ced6",
+      "size_bytes": 193000,
+      "artifact_classification": "proof only"
+    },
+    {
+      "path": "evidence/SCALE_AUTHORITY_RECOVERY_A01/SM_GIA_BloodAxeCairnstone_A005_SCALE_AUTHORITY_RECOVERY_A01_REVIEW_BOARD.png",
+      "sha256": "42ddbefb4ff2550db090fde1886cf27933b4f1cc98a655940ef6c478926ef427",
+      "size_bytes": 1995839,
+      "artifact_classification": "proof only"
+    }
+  ],
+  "output_hash_policy": "Every non-validation output is hash-recorded here. This validation manifest cannot contain its own final hash without a circular mutation.",
+  "visual_review_validation": {
+    "status": "pass",
+    "review_board_internally_inspected": true,
+    "review_board_clear_and_presentation_ready": true,
+    "review_board_opened_in_visible_desktop_window": true,
+    "required_records_opened_in_visible_desktop_windows": true,
+    "xdg_open_exit_code_for_each_required_artifact": 0
+  },
+  "checkpoints": [
+    "Saved/ProjectRecovery/20260717-090216/",
+    "Saved/ProjectRecovery/20260717-090714/",
+    "Saved/ProjectRecovery/20260717-092045/",
+    "Saved/ProjectRecovery/20260717-092605/"
+  ],
+  "stop_state": {
+    "step10_revision": "stopped",
+    "step11": "stopped",
+    "geometry_and_production": "stopped",
+    "next_action": "stop for Flamestrike output decision"
+  }
+}

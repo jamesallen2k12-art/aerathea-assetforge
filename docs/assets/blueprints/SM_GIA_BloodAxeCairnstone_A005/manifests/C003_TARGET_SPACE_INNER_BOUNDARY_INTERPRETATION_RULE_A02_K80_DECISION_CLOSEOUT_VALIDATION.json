@@ -1,0 +1,286 @@
+{
+  "schema": "aerathea.c003_target_space_inner_boundary_interpretation_rule_a02_k80_decision_closeout_validation.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-C003-TSIB-A02-K80-DC-A01",
+  "date": "2026-07-17",
+  "validated_at": "2026-07-17T15:22:59-04:00",
+  "status": "pass_K80_decision_closed_mapping_and_downstream_work_blocked",
+  "artifact_classification": "proof only",
+  "preflight": {
+    "preparation_table_inputs": 19,
+    "preparation_table_matches": 19,
+    "preparation_table_mismatches": 0,
+    "closeout_contract_sha256": "ae15dde21ede580b624926b76893368442d6ac04f04b57036bf5c64af24ede41",
+    "closeout_contract_match": true,
+    "execution_approval_statement": "Approved",
+    "pre_closeout_checkpoint": "Saved/ProjectRecovery/20260717-151831/",
+    "branch": "main",
+    "head": "f525945"
+  },
+  "locked_input_hashes": {
+    "AGENTS.md": "5d2d2637a58113f0a6f5ec92e40d8bb2bda9e03fb58b4868a0d9dfbb3b57ad55",
+    "fresh_start_multistep_plan": "ba6784498d792dc85dd431c807f59620d6851af97b4cd15efe89c44a397b10b6",
+    "A02_technical_contract": "ea55cd69c494b17cfcc06e324552da2df789a6415f3eceef1112ea3110662d0b",
+    "A02_input_lock": "1208892b0c2e50a15e88062e656374a8183defec8c8d3fe70ba453f3c1b2d541",
+    "A02_frozen_option_registry": "ba24e6b5803deb6af15b5fcf1d7e95f2f088321a63775a32ff39d6350b7423aa",
+    "A02_curve_ledger": "dc04dab52e922786a99eaa7bbc52cb3620ac41c4784aae56a10b098423952410",
+    "A02_validation": "989c2a8e79addf2aba1cbc74a344a1a5e22d3ca1ba5e763b8bcacf4ce6ff18b1",
+    "A02_review_board": "717ed5ca38947f21bd56b5e2ee13cb060fae17579686b59e83abed8e52e077c9",
+    "A02_output_record": "aa256fa329c0c901580f7cd7a4798ebd3149ac7e5e136f73c9dbd5c3fd24d197",
+    "A02_selection_handoff": "e8b628ad51d6045f184b079372a09de2c4f3c16cf34c1ee9b49926ba3e5c3ff9",
+    "Step10R_decision_registry": "f60634468c2d820e230da0a847a181be90893411c3e7838283eb61730e7d37e5",
+    "Step10R_placement_mapping_options": "37e7b76f6ee98fba5cfbdfed45d7048402114f4b88ea92055717350e48b1f3bc",
+    "Step10R_remaining_blocks": "8776c2abcc9a96820cbd4046314a0ef1244c5fb58205c58b46dd9aad8cee1953",
+    "approval_log_precloseout": "704feb4ba6ae2d5f26f575a54f660e82737d5b490e2cb3e4ada3fdd05caf0b18",
+    "artifact_index_precloseout": "bf92e0bc5b702a4f41d6751ec679bf3c7d589b66b4c05a4240020c20b29d3bd6",
+    "reset_resume_precloseout": "6e14b59224f3c1da1e31c1eb39c2bdde7171929945009ad0d28a9511deacdfc5",
+    "checkpoint_150326_git_status": "28d95639de3938181aa364e29b2e7787317c5d9274a4ea4930ebe5cf56aaf9f1",
+    "checkpoint_150326_recent_project_files": "4cf85488e5f4cfef5eecb34a9e8c41e07efc6ad70ebbd53ffbf630ae8e393d33",
+    "checkpoint_150326_recent_assetforge_outputs": "143dd0c0e007194b553100c6016db065687becc533b2d3a65575c4a368d0d698"
+  },
+  "unchanged_A01_recovery_hashes": {
+    "contract_quarantined": "763f9840a8e2dff26d98ea69666887f71d4bd14e44aad5924e8b1af14f138f6e",
+    "input_lock_invalid": "900e8add4932342d4dcca727d9ab43915a8b164e5231285f26aef80968ff292a",
+    "option_registry_quarantined": "b003e158465d155bd8433269844d1f38b37467c371a519f6602027cb8241b0b4"
+  },
+  "output_hashes_before_validation": {
+    "decision_registry": "4d7a6e5eff56c217512f54bf0ce50b0d2d37faee8b1e0a6950f08bbc72ae2d05",
+    "remaining_blocks": "e3de4150df887e53e3dbc569339daa54b07b1a8bc72cecd7d0a67ab0a7aba883",
+    "output_record": "76c1d8f66ad82d24ce22381b433cc1b07c51933795ae257b65964231de6925ee",
+    "handoff": "2fda3a3c07c0eb618339b35d094ff7cfa29ce8bf92c3c91089bcb6f208852d83",
+    "approval_log": "b193da1f50a7fb375676d74b9d77a1664811d987687efdfa54979a9126bf8a82",
+    "artifact_index": "bd1e4584cf28397427125d1847724bf43f0d23995b8541e1a786416255be0165",
+    "reset_resume_state": "8a3d7b40c93f657093a74361e6511f45d1e34d6b5dab85c73b16abc949998a4d"
+  },
+  "gate_count": 20,
+  "passed_gate_count": 20,
+  "failed_gate_count": 0,
+  "gates": [
+    {
+      "gate": "G01",
+      "subject": "approved-input hash lock before output writes",
+      "status": "pass",
+      "evidence": {
+        "preparation_table_matches": 19,
+        "preparation_table_mismatches": 0,
+        "closeout_contract_match": true
+      }
+    },
+    {
+      "gate": "G02",
+      "subject": "exact closeout contract and approval statement",
+      "status": "pass",
+      "evidence": {
+        "contract_id": "A005-CR-C003-TSIB-A02-K80-DC-A01",
+        "approval": "Approved"
+      }
+    },
+    {
+      "gate": "G03",
+      "subject": "delegated K80 selection checkpoint authority",
+      "status": "pass",
+      "evidence": {
+        "checkpoint": "20260717-150326",
+        "delegation_recorded": true,
+        "K80_selection_recorded": true,
+        "closeout_pending_recorded": true
+      }
+    },
+    {
+      "gate": "G04",
+      "subject": "exact K80 formula and dimensions",
+      "status": "pass",
+      "evidence": {
+        "equation": "abs(x / 56)^3 + abs(y / 44)^3 = 1",
+        "exponent": 3,
+        "width_cm": 112,
+        "depth_cm": 88,
+        "origin": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "gate": "G05",
+      "subject": "K80 containment and unchanged technical validation",
+      "status": "pass",
+      "evidence": {
+        "max_outer_N3_equation_value": 0.5120000000000173,
+        "strictly_contained": true,
+        "intersections_or_escapes": 0,
+        "A02_gates_passed": 26,
+        "A02_gates_failed": 0
+      }
+    },
+    {
+      "gate": "G06",
+      "subject": "bounded K80 classification only",
+      "status": "pass",
+      "evidence": "approved bounded interpretation rule for abstract C-003 outer boundary at CL-003 only"
+    },
+    {
+      "gate": "G07",
+      "subject": "K90 and K70 rejected-candidate classification",
+      "status": "pass",
+      "evidence": {
+        "K90": "rejected candidate",
+        "K70": "rejected candidate"
+      }
+    },
+    {
+      "gate": "G08",
+      "subject": "leave-blocked classification",
+      "status": "pass",
+      "evidence": "reference only; not selected"
+    },
+    {
+      "gate": "G09",
+      "subject": "A02 technical proof byte preservation",
+      "status": "pass",
+      "evidence": {
+        "artifacts_checked": 8,
+        "mismatches": 0
+      }
+    },
+    {
+      "gate": "G10",
+      "subject": "source, targets, CL-002, CL-003, A01 recovery, and prior authority unchanged",
+      "status": "pass",
+      "evidence": {
+        "top_CL003_samples": 16,
+        "all_view_CL003_samples": 47,
+        "all_view_CL002_samples": 40,
+        "sample_displacement_px": 0,
+        "A01_hash_mismatches": 0,
+        "historical_Step10R_manifest_edits": 0
+      }
+    },
+    {
+      "gate": "G11",
+      "subject": "mapping and target-coordinate counts remain zero",
+      "status": "pass",
+      "evidence": {
+        "source_overlays": 0,
+        "source_fits": 0,
+        "physical_pairs": 0,
+        "source_to_target_mappings": 0,
+        "target_CL003_coordinates": 0
+      }
+    },
+    {
+      "gate": "G12",
+      "subject": "physical and geometry authority counts remain zero",
+      "status": "pass",
+      "evidence": {
+        "center_claims": 0,
+        "pivot_claims": 0,
+        "placement_claims": 0,
+        "physical_C003_dimension_claims": 0,
+        "fills_annuli_hidden_interfaces": 0,
+        "fields": 0,
+        "surfaces_topology_geometry": 0
+      }
+    },
+    {
+      "gate": "G13",
+      "subject": "historical S10R-BLOCK-003 routing delta",
+      "status": "pass",
+      "evidence": {
+        "missing_boundary_condition": "resolved_at_bounded_rule_authority_level_by_K80",
+        "S10R-003-A": "unimplemented",
+        "target_CL003_coordinates": 0
+      }
+    },
+    {
+      "gate": "G14",
+      "subject": "remaining Step 10R blocks preserved",
+      "status": "pass",
+      "evidence": [
+        "S10R-BLOCK-006",
+        "S10R-BLOCK-008",
+        "S10R-BLOCK-009"
+      ]
+    },
+    {
+      "gate": "G15",
+      "subject": "downstream stop state",
+      "status": "pass",
+      "evidence": {
+        "Step10_closeout": "blocked",
+        "Step11": "blocked",
+        "DCC": "blocked",
+        "Unreal": "blocked",
+        "production": "blocked"
+      }
+    },
+    {
+      "gate": "G16",
+      "subject": "allowlisted write scope",
+      "status": "pass",
+      "evidence": {
+        "unexpected_changed_paths": 0,
+        "historical_A02_or_Step10R_edits": 0
+      }
+    },
+    {
+      "gate": "G17",
+      "subject": "approval log, artifact index, and reset/resume consistency",
+      "status": "pass",
+      "evidence": {
+        "K80_approved_in_all_three": true,
+        "mapping_unimplemented_in_all_three": true,
+        "downstream_blocks_in_all_three": true
+      }
+    },
+    {
+      "gate": "G18",
+      "subject": "handoff routing bound to mapping-contract preparation only",
+      "status": "pass",
+      "evidence": "separate S10R-003-A CL-003 target-space mapping execution contract preparation after mandatory restart"
+    },
+    {
+      "gate": "G19",
+      "subject": "no adjacent contract prepared or executed",
+      "status": "pass",
+      "evidence": {
+        "mapping_contracts_created": 0,
+        "mapping_executions": 0
+      }
+    },
+    {
+      "gate": "G20",
+      "subject": "staging, commit, and push remain stopped",
+      "status": "pass",
+      "evidence": {
+        "staged_paths": 0,
+        "commits_created": 0,
+        "pushes": 0
+      }
+    }
+  ],
+  "created_paths": [
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/C003_TARGET_SPACE_INNER_BOUNDARY_INTERPRETATION_RULE_A02_K80_DECISION_REGISTRY.json",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/C003_TARGET_SPACE_INNER_BOUNDARY_INTERPRETATION_RULE_A02_K80_REMAINING_BLOCKS.json",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/C003_TARGET_SPACE_INNER_BOUNDARY_INTERPRETATION_RULE_A02_K80_DECISION_CLOSEOUT_VALIDATION.json",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/C003_TARGET_SPACE_INNER_BOUNDARY_INTERPRETATION_RULE_A02_K80_DECISION_CLOSEOUT_OUTPUT_RECORD.md",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/handoffs/C003_TARGET_SPACE_INNER_BOUNDARY_INTERPRETATION_RULE_A02_K80_TO_S10R003_MAPPING_CONTRACT_PREPARATION_HANDOFF.md"
+  ],
+  "updated_paths": [
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_APPROVAL_LOG.md",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_ARTIFACT_INDEX.md",
+    "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_RESET_RESUME_STATE.md",
+    "docs/projects/assetforge/RECOVERY_JOURNAL.md"
+  ],
+  "visible_review": {
+    "required": true,
+    "verified_at": "2026-07-17T15:26:08-04:00",
+    "closeout_output_record": "verified_open_in_visible_gedit_window",
+    "closeout_output_record_window_id": "0x01e00134",
+    "reset_resume_state": "verified_open_in_visible_gedit_window",
+    "reset_resume_state_window_id": "0x01e000f8"
+  },
+  "technical_result": "K80_decision_closed_as_bounded_abstract_boundary_mapping_unimplemented",
+  "next_gate": "after mandatory restart, preparation only of a separate S10R-003-A CL-003 target-space mapping execution contract",
+  "next_gate_execution_authorized": false
+}

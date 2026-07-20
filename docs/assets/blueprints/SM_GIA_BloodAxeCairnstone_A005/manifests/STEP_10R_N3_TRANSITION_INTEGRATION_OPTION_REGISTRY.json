@@ -1,0 +1,245 @@
+{
+  "schema": "aerathea.step_10r_n3_transition_integration_option_registry.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-STEP10-REV-A01",
+  "date": "2026-07-17",
+  "status": "approved_bounded_decisions_recorded",
+  "artifact_classification": "authoritative for bounded Step 10R decisions",
+  "input_lock_sha256": "df6b68316b408d65d9de03ddedee9de1f62aae3acc4b04a87edb51f6d1f32bb4",
+  "upright_trace_replay": {
+    "count": 26,
+    "per_view": {
+      "front": 6,
+      "back": 6,
+      "left": 6,
+      "right": 8
+    },
+    "ambiguous_pairing_count": 0,
+    "crossing_pair_count": 0,
+    "CL003_displacement_px": 0
+  },
+  "decision_subjects": [
+    {
+      "id": "S10R-004",
+      "title": "Upright trace Step 10 decision",
+      "options": [
+        {
+          "id": "S10R-004-A",
+          "label": "Approve the 26 registered upright traces within exact sectors",
+          "proposed_rule": "Accept the existing 26 unique non-crossing same-view line formulas only as bounded Step 10 interpretation rules inside their exact registered owner-view sectors. Endpoints and formulas remain unchanged; no ownership is granted between or beside traces.",
+          "evidence_effect": "No exact source pixel, sample, measurement, physical target, or prior authority changes.",
+          "interpretation_effect": "Promotes only the exact registered traces from candidate interpretation to approved bounded interpretation if Flamestrike selects this option.",
+          "dependencies": [
+            "existing BTIR ledger",
+            "S10R-005 sector ownership for any area between traces"
+          ],
+          "known_risks": [
+            "Discrete approved traces alone do not create a surface or continuous field."
+          ],
+          "candidate_assessment": "recommended_preserves_validated_candidate",
+          "artifact_classification": "approved interpretation rule",
+          "flamestrike_decision": "approved",
+          "decision_status": "approved_interpretation_rule",
+          "implementation_authorized": false
+        },
+        {
+          "id": "S10R-004-B",
+          "label": "Reject the 26-trace rule",
+          "proposed_rule": "Reject the current same-side nearest trace interpretation and preserve the endpoints only in their prior source/candidate roles. A new trace rule would require a separate revision gate.",
+          "evidence_effect": "No exact source pixel, sample, measurement, physical target, or prior authority changes.",
+          "interpretation_effect": "Creates no transition rule.",
+          "dependencies": [],
+          "known_risks": [
+            "C-004 upright transition planning returns to a blocked state."
+          ],
+          "candidate_assessment": "available_rejection_option",
+          "artifact_classification": "rejected candidate",
+          "flamestrike_decision": "rejected",
+          "decision_status": "rejected_interpretation_option",
+          "implementation_authorized": false
+        },
+        {
+          "id": "S10R-004-BLOCK",
+          "label": "Leave blocked",
+          "proposed_rule": null,
+          "evidence_effect": "No change.",
+          "interpretation_effect": "No rule is created.",
+          "dependencies": [],
+          "known_risks": [
+            "The 26 traces remain candidate interpretation and cannot enter Step 11."
+          ],
+          "candidate_assessment": "available_required_block_option",
+          "artifact_classification": "reference only after decision",
+          "flamestrike_decision": "not_selected",
+          "decision_status": "not_selected_block_outcome",
+          "implementation_authorized": false
+        }
+      ],
+      "candidate_recommendation": "S10R-004-A",
+      "diagram_required": true,
+      "flamestrike_decision": "S10R-004-A",
+      "decision_status": "approved_interpretation_rule",
+      "implementation_authorized": false
+    },
+    {
+      "id": "S10R-005",
+      "title": "Between-trace and top/upright sector ownership",
+      "options": [
+        {
+          "id": "S10R-005-A",
+          "label": "Piecewise ruled strips between adjacent traces",
+          "proposed_rule": "Within each owner-view sector only, linearly interpolate between adjacent approved trace formulas at matching normalized trace parameter t. Bound every strip by its two traces, introduce no new endpoint extremum, and stop at sector boundaries. Top/upright and cross-view joins remain separate dependencies.",
+          "evidence_effect": "No exact source pixel, sample, measurement, physical target, or prior authority changes.",
+          "interpretation_effect": "Creates a candidate unfilled ownership rule for between-trace sectors only.",
+          "dependencies": [
+            "S10R-004-A",
+            "registered trace ordering",
+            "separate top/upright join rule"
+          ],
+          "known_risks": [
+            "Ruled strips can show slope changes at trace and sector boundaries.",
+            "They do not resolve cross-view corner sectors."
+          ],
+          "candidate_assessment": "recommended_deterministic_and_bounded",
+          "artifact_classification": "approved interpretation rule",
+          "flamestrike_decision": "approved",
+          "decision_status": "approved_interpretation_rule",
+          "implementation_authorized": false
+        },
+        {
+          "id": "S10R-005-B",
+          "label": "Nearest-trace sector ownership",
+          "proposed_rule": "Assign each source-unowned sector location to the nearest approved trace under the registered owner-view pixel metric, without interpolating between traces. Preserve exact trace formulas and stop at registered sector boundaries.",
+          "evidence_effect": "No exact source pixel, sample, measurement, physical target, or prior authority changes.",
+          "interpretation_effect": "Creates piecewise ownership regions but no smooth or continuous transition.",
+          "dependencies": [
+            "S10R-004-A",
+            "registered owner-view metric"
+          ],
+          "known_risks": [
+            "Nearest-trace boundaries are discontinuous and may be unsuitable for a coherent surface.",
+            "It still does not solve the top/upright join."
+          ],
+          "candidate_assessment": "alternative_low_continuity",
+          "artifact_classification": "rejected candidate",
+          "flamestrike_decision": "rejected",
+          "decision_status": "rejected_interpretation_option",
+          "implementation_authorized": false
+        },
+        {
+          "id": "S10R-005-BLOCK",
+          "label": "Leave blocked",
+          "proposed_rule": null,
+          "evidence_effect": "No change.",
+          "interpretation_effect": "No rule is created.",
+          "dependencies": [],
+          "known_risks": [
+            "Space between and beside traces remains unowned; a joined field cannot be specified."
+          ],
+          "candidate_assessment": "available_required_block_option",
+          "artifact_classification": "reference only after decision",
+          "flamestrike_decision": "not_selected",
+          "decision_status": "not_selected_block_outcome",
+          "implementation_authorized": false
+        }
+      ],
+      "candidate_recommendation": "S10R-005-A",
+      "diagram_required": true,
+      "flamestrike_decision": "S10R-005-A",
+      "decision_status": "approved_interpretation_rule",
+      "implementation_authorized": false
+    },
+    {
+      "id": "S10R-006",
+      "title": "Joined continuous transition field",
+      "options": [
+        {
+          "id": "S10R-006-A",
+          "label": "Dependency-gated normalized ruled transition field",
+          "proposed_rule": "Only after S10R-002 placement, S10R-003 mapping, S10R-004 trace approval, and S10R-005 sector ownership are approved, define an unfilled candidate field between the approved C-003 target inner boundary and placed N3 outer perimeter using normalized radial station v in [0,1]. Use the approved sector rule for angular ownership and require exact agreement at every registered trace boundary. If any boundary disagrees, the field remains blocked.",
+          "evidence_effect": "No exact source pixel, sample, measurement, physical target, or prior authority changes.",
+          "interpretation_effect": "Creates a written candidate field rule only; no field samples, fill, surface, topology, or geometry are generated here.",
+          "dependencies": [
+            "S10R-002 approved option",
+            "S10R-003 approved option and C-003 target boundary",
+            "S10R-004-A",
+            "S10R-005 approved option"
+          ],
+          "known_risks": [
+            "Boundary incompatibility can block the join.",
+            "A normalized ruled field can look overly regular if later implemented without visual review."
+          ],
+          "candidate_assessment": "recommended_only_if_all_dependencies_pass",
+          "artifact_classification": "approved conditional interpretation rule",
+          "flamestrike_decision": "approved",
+          "decision_status": "approved_conditional_interpretation_rule",
+          "implementation_authorized": false
+        },
+        {
+          "id": "S10R-006-B",
+          "label": "No joined field; independently watertight C-004 component",
+          "proposed_rule": "Do not create a continuous transition field. Keep C-004 as an independently watertight interpreted component and require any hidden connection to C-003 to use a later separately approved minimum-overlap rule in source-invisible volume.",
+          "evidence_effect": "No exact source pixel, sample, measurement, physical target, or prior authority changes.",
+          "interpretation_effect": "Avoids a joined field but introduces a separate hidden-interface and topology dependency.",
+          "dependencies": [
+            "placed N3 perimeter",
+            "separate hidden-overlap decision",
+            "later topology approval"
+          ],
+          "known_risks": [
+            "Independent overlap may not match visible transition rhythm.",
+            "It defers rather than resolves hidden-interface topology."
+          ],
+          "candidate_assessment": "alternative_defers_continuity",
+          "artifact_classification": "rejected candidate",
+          "flamestrike_decision": "rejected",
+          "decision_status": "rejected_interpretation_option",
+          "implementation_authorized": false
+        },
+        {
+          "id": "S10R-006-BLOCK",
+          "label": "Leave blocked",
+          "proposed_rule": null,
+          "evidence_effect": "No change.",
+          "interpretation_effect": "No rule is created.",
+          "dependencies": [],
+          "known_risks": [
+            "No continuous C-004 transition authority exists; Step 10 cannot close and Step 11 remains blocked."
+          ],
+          "candidate_assessment": "available_required_block_option",
+          "artifact_classification": "reference only after decision",
+          "flamestrike_decision": "not_selected",
+          "decision_status": "not_selected_block_outcome",
+          "implementation_authorized": false
+        }
+      ],
+      "candidate_recommendation": "S10R-006-A conditional on all dependencies",
+      "diagram_required": true,
+      "flamestrike_decision": "S10R-006-A",
+      "decision_status": "approved_conditional_interpretation_rule",
+      "implementation_authorized": false
+    }
+  ],
+  "field_samples_created": 0,
+  "filled_pixels_created": 0,
+  "surface_count": 0,
+  "topology_count": 0,
+  "geometry_count": 0,
+  "flamestrike_output_decision": {
+    "date": "2026-07-17",
+    "approver": "Flamestrike",
+    "statement": "I approve all 7 recommended decisions exactly as listed",
+    "pre_closeout_checkpoint": "Saved/ProjectRecovery/20260717-123959/",
+    "decision_ids": [
+      "S10R-001",
+      "S10R-002",
+      "S10R-003",
+      "S10R-004",
+      "S10R-005",
+      "S10R-006",
+      "S10R-007"
+    ]
+  },
+  "source_or_existing_authority_modified": false,
+  "geometry_created": false
+}

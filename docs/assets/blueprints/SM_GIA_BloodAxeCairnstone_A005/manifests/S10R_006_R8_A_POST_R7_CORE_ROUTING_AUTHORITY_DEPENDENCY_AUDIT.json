@@ -1,0 +1,167 @@
+{
+  "schema": "aerathea.s10r_006_r8_a_post_r7_core_routing_authority_dependency_audit.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-006-R8-A-POSTR7-ROUTE-DEC-A01",
+  "date": "2026-07-20",
+  "status": "pass_dependency_separation_but_execution_blocked_at_visibility_gate",
+  "artifact_classification": "proof only",
+  "decision_subject": "order the next bounded authority-contract preparation route after R7, or preserve the current no-field block",
+  "approved_authority_replay": {
+    "r3": {
+      "status": "approved_bounded_symbolic_method_no_field_coupling",
+      "classification": "authoritative for bounded S10R-006-R3-A symbolic method only",
+      "unevaluated": true,
+      "implemented": false
+    },
+    "r5": {
+      "status": "approved_bounded_symbolic_rule_four_blocked_corner_gaps_unowned",
+      "classification": "authoritative for bounded S10R-006-R5-A symbolic coupling rule only",
+      "owned_lane_count": 4,
+      "unevaluated": true,
+      "implemented": false
+    },
+    "r7": {
+      "status": "approved_bounded_cross_view_corner_ownership_rule_registered_no_implementation",
+      "classification": "authoritative for bounded S10R-006-R7-A symbolic corner-ownership rule only",
+      "gap_owner_relation_count": 4,
+      "unevaluated": true,
+      "implemented": false
+    }
+  },
+  "exact_interval_replay": {
+    "r5_owned_lanes": [
+      {"lane_id": "AFM-FRONT-RIGHT", "cardinal_label": "+X", "q_interval": "[-1/2,1/2]"},
+      {"lane_id": "AFM-LEFT-LEFT", "cardinal_label": "+Y", "q_interval": "[3/2,5/2]"},
+      {"lane_id": "AFM-FRONT-LEFT", "cardinal_label": "-X", "q_interval": "[7/2,9/2]"},
+      {"lane_id": "AFM-LEFT-RIGHT", "cardinal_label": "-Y", "q_interval": "[11/2,13/2]"}
+    ],
+    "r7_symbolic_gaps": [
+      {"gap_id": "G_0", "q_interval": "(1/2,3/2)"},
+      {"gap_id": "G_1", "q_interval": "(5/2,7/2)"},
+      {"gap_id": "G_2", "q_interval": "(9/2,11/2)"},
+      {"gap_id": "G_3", "q_interval": "(13/2,15/2)"}
+    ],
+    "r5_endpoint_policy": "each lane owns both endpoints of its own closed interval; open gaps are unowned",
+    "r7_tie_policy": "single successor owner label at the exact symbolic midpoint",
+    "q_periodic": false,
+    "q_unwrapped": true,
+    "q_wrap": null,
+    "q_final_first_endpoint_identification": false
+  },
+  "proven_missing_authority": [
+    {
+      "id": "MISSING-GAP-TO-FIELD-COUPLING",
+      "evidence": "R7 labels each open gap symbolically but defines no gap-local u map, record-weight relation, B_v/C_L coupling relation, field sample, seam, join, or closure.",
+      "status": "missing"
+    },
+    {
+      "id": "MISSING-TOP-UPRIGHT-JOIN",
+      "evidence": "No approved record converts analytic H_1 = N3 endpoint identity into a physical seam, continuity rule, topology relation, or source correspondence.",
+      "status": "missing"
+    },
+    {
+      "id": "MISSING-ROUTE-ORDER",
+      "evidence": "The Blueprint permits Step 10 written decisions but does not order gap-to-field coupling and top/upright joining.",
+    "status": "preserved_unresolved_after_visibility_gate_failure"
+    }
+  ],
+  "candidate_route_separation": {
+    "required_route_ids": [
+      "S10R-006-R8-A",
+      "S10R-006-R8-B",
+      "S10R-006-R8-BLOCK"
+    ],
+    "candidate_route_count": 3,
+    "selected_route_count": 0,
+    "selected_route": null,
+    "route_a_scope": "later preparation only of one separate bounded corner-gap-to-field coupling rule contract",
+    "route_b_scope": "later preparation only of one separate bounded top/upright join rule contract",
+    "block_scope": "preserve the current approved symbolic records and no-field block",
+    "coupling_rule_prepared_or_approved": false,
+    "join_rule_prepared_or_approved": false
+  },
+  "recommendation": {
+    "route_id": "S10R-006-R8-A",
+    "classification": "candidate interpretation only",
+    "selected": false,
+    "authority": false,
+    "reason": "R7 supplies deterministic symbolic owner labels over the four gaps while R5 supplies B_v/C_L coupling only over the four separated owned lanes; the smallest unresolved adjacency is their missing symbolic connection.",
+    "countercondition": "R8-B and R8-BLOCK remain valid unselected candidates. Flamestrike alone selects the route."
+  },
+  "holdouts": {
+    "classification": "proof only",
+    "back_count": 6,
+    "right_count": 8,
+    "total": 14,
+    "construction_use_authorized": false
+  },
+  "active_blocks": [
+    {
+      "id": "S10R-BLOCK-006",
+      "status": "active_approved_cross_view_corner_ownership_rule_no_field_no_seam_no_join_no_closure"
+    },
+    {"id": "S10R-BLOCK-008", "status": "active_unchanged"},
+    {"id": "S10R-BLOCK-009", "status": "active_unchanged"}
+  ],
+  "resolved_block_ids": [],
+  "definition_counts": {
+    "candidate_routes": 3,
+    "selected_routes": 0,
+    "recommendations": 1,
+    "prepared_coupling_rules": 0,
+    "approved_coupling_rules": 0,
+    "prepared_join_rules": 0,
+    "approved_join_rules": 0
+  },
+  "output_counts": {
+    "q_instances": 0,
+    "u_instances": 0,
+    "owner_instances": 0,
+    "record_instances": 0,
+    "samples": 0,
+    "source_pixels_assigned": 0,
+    "source_normals_assigned": 0,
+    "coordinates": 0,
+    "transforms": 0,
+    "physical_pairs": 0,
+    "centers": 0,
+    "pivots": 0,
+    "anchors": 0,
+    "seams": 0,
+    "joins": 0,
+    "closures": 0,
+    "fields": 0,
+    "fills": 0,
+    "surfaces": 0,
+    "topology": 0,
+    "geometry": 0
+  },
+  "authorization_flags": {
+    "candidate_decision_surface_registered": false,
+    "route_selected": false,
+    "gap_coupling_contract_preparation_authorized": false,
+    "top_upright_contract_preparation_authorized": false,
+    "coupling_rule_preparation_authorized": false,
+    "coupling_rule_approval_authorized": false,
+    "join_rule_preparation_authorized": false,
+    "join_rule_approval_authorized": false,
+    "rule_evaluation_authorized": false,
+    "field_implementation_authorized": false,
+    "step10_closeout_authorized": false,
+    "step11_authorized": false,
+    "dcc_authorized": false,
+    "unreal_authorized": false,
+    "production_authorized": false,
+    "staging_authorized": false,
+    "commit_authorized": false,
+    "push_authorized": false
+  },
+  "technical_result": "blocked_post_R7_routing_authority_dependency_or_scope_failure",
+  "execution_failure": {
+    "failed_gate": 19,
+    "failed_subject": "output and handoff visibility are verified before the mandatory stop",
+    "passed_gate_count": 18,
+    "candidate_surface_registered": false,
+    "fallback": "mandatory BLOCK fallback applied without redesigning or selecting a route"
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "schema": "aerathea.s10r_006_r7_a_cross_view_corner_ownership_rule_a01_registry.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-006-R7-A-CVCOR-A01",
+  "rule_id": "S10R-006-R7-A-CVCOR-A01",
+  "date": "2026-07-20",
+  "status": "approved_bounded_cross_view_corner_ownership_rule_registered_no_implementation",
+  "artifact_classification": "authoritative for bounded S10R-006-R7-A symbolic corner-ownership rule only",
+  "technical_result": "pass_approved_bounded_cross_view_corner_ownership_rule_registered_no_implementation",
+  "authority_basis": {
+    "r6_selected_option": "S10R-006-R6-A",
+    "r6_authority": "preparation and separately approved record-only execution of one bounded cross-view corner-ownership rule contract",
+    "r5_status": "approved_bounded_symbolic_rule_four_blocked_corner_gaps_unowned",
+    "step05_axis_authority": true,
+    "physical_source_authority": false,
+    "candidate_registration_authority": true,
+    "rule_approval_authority": true,
+    "evaluation_authority": false,
+    "implementation_authority": false
+  },
+  "execution_record": {
+    "approver": "Flamestrike",
+    "execution_approval_statement": "approved",
+    "candidate_rule_decision": "approve",
+    "candidate_rule_decision_statement": "approved",
+    "candidate_rule_decision_date": "2026-07-20",
+    "approved_scope": "authoritative bounded symbolic owner-label interpretation over G_0 through G_3 only with unchanged R5 endpoints, non-periodic q, no wrap, no seam, no join, no closure, zero instances, all three active blocks, and every downstream stop",
+    "candidate_rule_approved": true,
+    "resolved_block_ids": []
+  },
+  "abstract_parameter_reference": {
+    "name": "q",
+    "classification": "approved R5 bounded dimensionless interpretation parameter; referenced but not instantiated here",
+    "orientation": "increasing q is counterclockwise in the +X,+Y plane when viewed from +Z",
+    "zero_direction": "+X",
+    "periodic": false,
+    "unwrapped": true,
+    "modulus": null,
+    "wrap": null,
+    "final_first_endpoint_identification": false,
+    "evaluated_q_instances": []
+  },
+  "step05_axis_replay": {
+    "frame_handedness": "right_handed",
+    "up": "+Z",
+    "front_image_right": "+X",
+    "front_image_left": "-X",
+    "left_image_right": "-Y",
+    "left_image_left": "+Y",
+    "counterclockwise_cardinal_order_from_positive_x": [
+      "+X",
+      "+Y",
+      "-X",
+      "-Y"
+    ],
+    "classification": "evidence replay only"
+  },
+  "preserved_owned_lanes": [
+    {
+      "lane_id": "AFM-FRONT-RIGHT",
+      "cardinal_label": "+X",
+      "q_interval": "[-1/2,1/2]",
+      "endpoint_ownership": "unchanged approved R5 lane ownership"
+    },
+    {
+      "lane_id": "AFM-LEFT-LEFT",
+      "cardinal_label": "+Y",
+      "q_interval": "[3/2,5/2]",
+      "endpoint_ownership": "unchanged approved R5 lane ownership"
+    },
+    {
+      "lane_id": "AFM-FRONT-LEFT",
+      "cardinal_label": "-X",
+      "q_interval": "[7/2,9/2]",
+      "endpoint_ownership": "unchanged approved R5 lane ownership"
+    },
+    {
+      "lane_id": "AFM-LEFT-RIGHT",
+      "cardinal_label": "-Y",
+      "q_interval": "[11/2,13/2]",
+      "endpoint_ownership": "unchanged approved R5 lane ownership"
+    }
+  ],
+  "candidate_gap_rule": {
+    "scope": "G_0 through G_3 only; abstract upright owner labels only",
+    "classification": "approved bounded symbolic interpretation only",
+    "midpoint_template": "m_k = (a_k + b_k) / 2",
+    "lower_branch_template": "O_k(q) = P_k when a_k < q < m_k",
+    "upper_branch_template": "O_k(q) = S_k when m_k <= q < b_k",
+    "tie_policy": "single successor owner label at the exact symbolic midpoint",
+    "totality_scope": "each existing open gap only",
+    "physical_correspondence_claim": false,
+    "seam_claim": false,
+    "closure_claim": false,
+    "evaluated": false,
+    "approved": true
+  },
+  "gaps": [
+    {
+      "id": "G_0",
+      "open_interval": "(1/2,3/2)",
+      "a": "1/2",
+      "b": "3/2",
+      "predecessor": "AFM-FRONT-RIGHT / +X",
+      "successor": "AFM-LEFT-LEFT / +Y",
+      "midpoint_symbol": "m_0",
+      "midpoint_definition": "m_0 = (1/2 + 3/2) / 2",
+      "lower_branch": "1/2 < q < m_0 -> AFM-FRONT-RIGHT / +X",
+      "upper_branch": "m_0 <= q < 3/2 -> AFM-LEFT-LEFT / +Y",
+      "branch_totality": "symbolically total over G_0",
+      "branch_intersection": "empty",
+      "owner_instances": []
+    },
+    {
+      "id": "G_1",
+      "open_interval": "(5/2,7/2)",
+      "a": "5/2",
+      "b": "7/2",
+      "predecessor": "AFM-LEFT-LEFT / +Y",
+      "successor": "AFM-FRONT-LEFT / -X",
+      "midpoint_symbol": "m_1",
+      "midpoint_definition": "m_1 = (5/2 + 7/2) / 2",
+      "lower_branch": "5/2 < q < m_1 -> AFM-LEFT-LEFT / +Y",
+      "upper_branch": "m_1 <= q < 7/2 -> AFM-FRONT-LEFT / -X",
+      "branch_totality": "symbolically total over G_1",
+      "branch_intersection": "empty",
+      "owner_instances": []
+    },
+    {
+      "id": "G_2",
+      "open_interval": "(9/2,11/2)",
+      "a": "9/2",
+      "b": "11/2",
+      "predecessor": "AFM-FRONT-LEFT / -X",
+      "successor": "AFM-LEFT-RIGHT / -Y",
+      "midpoint_symbol": "m_2",
+      "midpoint_definition": "m_2 = (9/2 + 11/2) / 2",
+      "lower_branch": "9/2 < q < m_2 -> AFM-FRONT-LEFT / -X",
+      "upper_branch": "m_2 <= q < 11/2 -> AFM-LEFT-RIGHT / -Y",
+      "branch_totality": "symbolically total over G_2",
+      "branch_intersection": "empty",
+      "owner_instances": []
+    },
+    {
+      "id": "G_3",
+      "open_interval": "(13/2,15/2)",
+      "a": "13/2",
+      "b": "15/2",
+      "predecessor": "AFM-LEFT-RIGHT / -Y",
+      "successor": "AFM-FRONT-RIGHT / +X label-only successor",
+      "midpoint_symbol": "m_3",
+      "midpoint_definition": "m_3 = (13/2 + 15/2) / 2",
+      "lower_branch": "13/2 < q < m_3 -> AFM-LEFT-RIGHT / -Y",
+      "upper_branch": "m_3 <= q < 15/2 -> AFM-FRONT-RIGHT / +X label-only successor",
+      "branch_totality": "symbolically total over G_3",
+      "branch_intersection": "empty",
+      "owner_instances": [],
+      "periodic_wrap": false,
+      "new_lane_created": false,
+      "q_15_over_2_identified_with_q_minus_1_over_2": false
+    }
+  ],
+  "endpoint_policy": {
+    "existing_r5_lane_endpoints_mutated": false,
+    "gap_endpoints_reassigned": false,
+    "owner_label_change_is_geometry_seam": false,
+    "continuity_defined": false,
+    "interpolation_defined": false,
+    "top_upright_owner_defined": false,
+    "top_upright_join_defined": false,
+    "cross_lane_seam_defined": false,
+    "cross_view_seam_defined": false,
+    "endpoint_join_defined": false,
+    "closure_defined": false
+  },
+  "historical_i10_010_a": {
+    "classification": "candidate history",
+    "step10r_status": "requires_revision",
+    "copied_as_authority": false,
+    "modified": false
+  },
+  "holdouts": {
+    "classification": "proof only",
+    "back_count": 6,
+    "right_count": 8,
+    "total": 14,
+    "construction_use_authorized": false
+  },
+  "definition_counts": {
+    "candidate_corner_rules": 1,
+    "symbolic_midpoint_definitions": 4,
+    "symbolic_branch_relations": 8,
+    "r5_owned_lane_intervals_replayed": 4,
+    "r5_open_gaps_replayed": 4
+  },
+  "output_counts": {
+    "per_point_owner_instances": 0,
+    "evaluated_q_instances": 0,
+    "evaluated_midpoint_samples": 0,
+    "samples": 0,
+    "source_pixels_assigned": 0,
+    "source_normals_assigned": 0,
+    "source_to_target_transforms": 0,
+    "physical_pairs": 0,
+    "target_coordinates": 0,
+    "centers": 0,
+    "pivots": 0,
+    "anchors": 0,
+    "seams": 0,
+    "joins": 0,
+    "closures": 0,
+    "fields": 0,
+    "fills": 0,
+    "surfaces": 0,
+    "topology": 0,
+    "geometry": 0
+  },
+  "active_blocks": [
+    {
+      "id": "S10R-BLOCK-006",
+      "status": "active_approved_cross_view_corner_ownership_rule_no_field_no_seam_no_join_no_closure"
+    },
+    {
+      "id": "S10R-BLOCK-008",
+      "status": "active_unchanged"
+    },
+    {
+      "id": "S10R-BLOCK-009",
+      "status": "active_unchanged"
+    }
+  ],
+  "resolved_block_ids": [],
+  "authorization_flags": {
+    "candidate_rule_registered": true,
+    "corner_ownership_rule_approved": true,
+    "rule_evaluation_authorized": false,
+    "seam_definition_authorized": false,
+    "join_definition_authorized": false,
+    "closure_authorized": false,
+    "field_implementation_authorized": false,
+    "step10_closeout_authorized": false,
+    "step11_authorized": false,
+    "dcc_authorized": false,
+    "unreal_authorized": false,
+    "production_authorized": false,
+    "staging_authorized": false,
+    "commit_authorized": false,
+    "push_authorized": false
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "schema": "aerathea.s10r_006_r6_a_cross_view_corner_ownership_authority_dependency_audit.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-006-R6-A-CVCOA-DEC-A01",
+  "date": "2026-07-17",
+  "status": "pass_candidate_corner_ownership_authority_dependencies_exact",
+  "artifact_classification": "proof only",
+  "governing_question": "Whether the approved Step 05 axes and bounded R5 symbolic structure authorize preparation of a later corner-ownership rule contract for the four explicit gaps, or all four gaps must remain blocked.",
+  "blueprint_authority": {
+    "step": "Step 10 - Unknowns And Interpretation Decision Gate",
+    "allowed": [
+      "written interpretation options",
+      "explicit rule proposals",
+      "approval rejection or blocked decisions"
+    ],
+    "blocked": [
+      "implementation",
+      "geometry creation",
+      "interpretation presented as measurement",
+      "silent rule selection"
+    ]
+  },
+  "r5_authority": {
+    "status": "approved_bounded_symbolic_rule_four_blocked_corner_gaps_unowned",
+    "artifact_classification": "authoritative for bounded S10R-006-R5-A symbolic coupling rule only",
+    "owned_lane_count": 4,
+    "blocked_gap_count": 4,
+    "q_periodic": false,
+    "q_wrap": null,
+    "final_first_endpoint_identification": false,
+    "rule_evaluated": false,
+    "physical_source_authority": false
+  },
+  "step05_axis_authority": {
+    "handedness": "right_handed",
+    "up": "+Z",
+    "front_right": "+X",
+    "front_left": "-X",
+    "left_left": "+Y",
+    "left_right": "-Y",
+    "classification": "evidence replay only"
+  },
+  "historical_i10_010": {
+    "artifact_classification": "candidate historical record",
+    "flamestrike_decision": "pending",
+    "approved_rule": null,
+    "step10r_delta_classification": "requires_revision",
+    "current_rule_authority": false
+  },
+  "missing_authority": [
+    "owner for every point inside G_0",
+    "owner for every point inside G_1",
+    "owner for every point inside G_2",
+    "owner for every point inside G_3",
+    "gap subdivision or interpolation rule",
+    "dominant-normal or tie rule",
+    "cross-lane seam",
+    "cross-view seam",
+    "endpoint join",
+    "top/upright join",
+    "periodic or 360-degree closure",
+    "physical source-to-target correspondence"
+  ],
+  "route_findings": [
+    {
+      "route_id": "S10R-006-R6-A",
+      "route": "bounded corner-ownership rule-contract preparation",
+      "technical_eligibility": "candidate_decision_available",
+      "evidence_basis": "R5 identifies four exact symbolic owned arcs and four exact unowned gaps, while Step 05 supplies cardinal-axis evidence and Step 10 permits a separately reviewable interpretation proposal.",
+      "authority_limit": "May authorize preparation only of a later separate rule contract; no owner, allocation, seam, join, closure, evaluation, field, or implementation is authorized here.",
+      "physical_source_claim": false,
+      "block_resolution": false
+    },
+    {
+      "route_id": "S10R-006-R6-BLOCK",
+      "route": "preserve four unowned corner gaps",
+      "technical_eligibility": "candidate_block_option_available",
+      "evidence_basis": "R5 explicitly preserves all four gaps as unowned and the historical I10-010 proposal is not current authority.",
+      "authority_limit": "No new rule-design or corner-ownership preparation authority.",
+      "physical_source_claim": false,
+      "block_resolution": false
+    }
+  ],
+  "candidate_recommendation": {
+    "option_id": "S10R-006-R6-A",
+    "classification": "candidate recommendation only",
+    "selected": false,
+    "reason": "Smallest sufficient route that makes a revised corner-ownership proposal visible and rejectable before any gap point is assigned."
+  },
+  "zero_authority_counts": {
+    "gap_assignments": 0,
+    "gap_subintervals": 0,
+    "parameter_instances": 0,
+    "evaluated_samples": 0,
+    "corner_owners": 0,
+    "seams": 0,
+    "joins": 0,
+    "closures": 0,
+    "physical_source_target_transforms": 0,
+    "physical_cross_view_pairs": 0,
+    "target_coordinates": 0,
+    "centers": 0,
+    "pivots": 0,
+    "anchors": 0,
+    "fields": 0,
+    "fills": 0,
+    "surfaces": 0,
+    "topology": 0,
+    "geometry": 0
+  },
+  "active_blocks": [
+    {
+      "id": "S10R-BLOCK-006",
+      "status": "active_approved_lane_boundary_coupling_rule_four_corner_gaps_unowned_no_field"
+    },
+    {
+      "id": "S10R-BLOCK-008",
+      "status": "active_unchanged"
+    },
+    {
+      "id": "S10R-BLOCK-009",
+      "status": "active_unchanged"
+    }
+  ],
+  "resolved_block_ids": []
+}

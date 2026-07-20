@@ -1,0 +1,66 @@
+{
+  "schema": "aerathea.s10r_006_r9_a_git_rollback_closeout_a01_validation.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "closeout_id": "A005-GIT-S10R-006-R9-A-ROLLBACK-A01",
+  "date": "2026-07-20",
+  "status": "pass_precommit_staged_snapshot_232_paths_with_14_preserved_historical_eof_exceptions",
+  "artifact_classification": "proof only",
+  "pre_scope_checks": {
+    "core_reassessment_complete": true,
+    "a005_json_parse": "pass_111_files",
+    "a005_script_ast_parse": "pass_19_files",
+    "largest_scoped_file_bytes": 1995839,
+    "secret_indicator_matches": 0,
+    "tracked_diff_check": "pass",
+    "staged_path_count": 0
+  },
+  "staged_snapshot": {
+    "status": "pass_exact_dependency_complete_scope",
+    "path_count": 232,
+    "name_status_sha256": "35f2a00922a8fbe9256aee39016157af61a1d7368e46dffec1a5ec6ad191db70",
+    "stat_summary": "232 files changed, 95960 insertions(+), 6 deletions(-)",
+    "json_parse": "pass_113_files",
+    "python_ast_parse": "pass_19_files",
+    "cached_diff_check": "pass_with_14_preserved_hash_referenced_blank_line_at_eof_exceptions",
+    "historical_whitespace_exception_count": 14,
+    "historical_whitespace_exception_type": "new blank line at EOF",
+    "all_historical_whitespace_exceptions_hash_referenced": true,
+    "historical_authority_files_rewritten_to_remove_warnings": false,
+    "secret_scan": "pass_0_matches",
+    "excluded_path_count": 0,
+    "local_only_path_count": 0,
+    "unstaged_difference_inside_scope_count": 0
+  },
+  "historical_whitespace_exceptions": [
+    "handoffs/S10R_003_A_CL003_TARGET_SPACE_MAPPING_A01_TO_DECISION_HANDOFF.md",
+    "handoffs/S10R_006_A_BOUNDARY_COMPATIBILITY_TECHNICAL_GATE_A01_TO_DECISION_HANDOFF.md",
+    "manifests/SCALE_AUTHORITY_RECOVERY_A01_DISTORTION_HOLDOUT.json",
+    "manifests/SCALE_AUTHORITY_RECOVERY_A01_INPUT_LOCK.json",
+    "manifests/SCALE_AUTHORITY_RECOVERY_A01_TRANSFORM_MANIFEST.json",
+    "manifests/SCALE_AUTHORITY_RECOVERY_A01_WORLD_INTEGRATION_OVERRIDE.json",
+    "steps/S10R_003_A_CL003_TARGET_SPACE_MAPPING_A01_DECISION_CLOSEOUT_CONTRACT.md",
+    "steps/S10R_003_A_CL003_TARGET_SPACE_MAPPING_A01_DECISION_CLOSEOUT_OUTPUT_RECORD.md",
+    "steps/S10R_003_A_CL003_TARGET_SPACE_MAPPING_A01_OUTPUT_RECORD.md",
+    "steps/S10R_003_A_CL003_TARGET_SPACE_MAPPING_EXECUTION_A01_CONTRACT.md",
+    "steps/S10R_006_A_BOUNDARY_COMPATIBILITY_TECHNICAL_GATE_A01_CONTRACT.md",
+    "steps/S10R_006_A_BOUNDARY_COMPATIBILITY_TECHNICAL_GATE_A01_OUTPUT_RECORD.md",
+    "steps/SCALE_AUTHORITY_RECOVERY_A01_OUTPUT_RECORD.md",
+    "steps/SOURCE_VS_MEASUREMENT_RECONCILIATION_A01_OUTPUT_RECORD.md"
+  ],
+  "historical_whitespace_exception_decision": "accepted as immutable historical evidence because every warning-bearing file is referenced by one or more later SHA-256 authority locks; cosmetic rewriting would invalidate those evidence links",
+  "git_result": {
+    "dependency_snapshot_commit": null,
+    "verification_closeout_commit": null,
+    "push_status": "pending",
+    "verified_remote_head": null
+  },
+  "authorization_boundary": {
+    "rule_evaluation_authorized": false,
+    "field_implementation_authorized": false,
+    "step10_closeout_authorized": false,
+    "step11_authorized": false,
+    "dcc_authorized": false,
+    "unreal_authorized": false,
+    "production_authorized": false
+  }
+}

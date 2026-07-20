@@ -1,0 +1,101 @@
+{
+  "schema": "aerathea.s10r_006_a_boundary_compatibility_technical_gate_a01_decision_registry.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-006-A-BCTG-DC-A01",
+  "date": "2026-07-17",
+  "executed_at": "2026-07-17T17:18:34-04:00",
+  "status": "blocked_source_authority_missing_approved_bounded_technical_result",
+  "artifact_classification": "authoritative for bounded S10R-006-A blocked technical result only",
+  "decision_subject": "whether the reviewed blocked_source_authority_missing result is accepted as bounded S10R-006-A technical authority",
+  "decision": "approve",
+  "approved_result": "blocked_source_authority_missing",
+  "blueprint_block_label": "Blueprint block: source authority missing",
+  "approval_chain": {
+    "technical_result_visible_before_restart": true,
+    "flamestrike_result_statement": "approved blocked result",
+    "closeout_contract_preparation_authority": "preparation only of a separate decision-closeout contract",
+    "closeout_execution_approval": "approved",
+    "final_authority": "Flamestrike"
+  },
+  "frozen_proof": {
+    "technical_contract_sha256": "0f4e7fae93d9fe36beb4e0d5ad13cafaf1a2ea0864845c79ac574db75792bd8e",
+    "input_lock_sha256": "83198249ec146d19c378917598d85a1e646105c29a827b0f8e7e862f48a8c7aa",
+    "dependency_audit_sha256": "2c25a23614f98de2145118194fdb44ffd5d50956184ecca55a1e9603a1788100",
+    "boundary_authority_audit_sha256": "34be26075ca9af9bd8b7dedce974d5b748a2dd07124b7dc5f8613c9b23ec0832",
+    "technical_validation_sha256": "fa69ba67c76d17de5ab9edc570e021bf315d4e0501440d3ba6bece72deeb03b5",
+    "review_board_sha256": "a02d8756ce5e010c41756b67ded2b6113ade283a7299397a200b99216754a051",
+    "technical_output_sha256": "50ddc7da23a13b2bc34a7113d9ca1cc618e17f6764f44a039fc212631c81581b",
+    "decision_handoff_sha256": "8b2956415f2118b92ae340fac4337a37253831102762f45ad4a0d85489d61362",
+    "technical_validation_gates_passed": 29,
+    "technical_validation_gates_failed": 0,
+    "frozen_proof_changed": false
+  },
+  "analytic_result": {
+    "outer_boundary": "abs(x / 70)^3 + abs(y / 55)^3 = 1",
+    "inner_boundary": "abs(x / 56)^3 + abs(y / 44)^3 = 1",
+    "x_axis_ratio": 0.8,
+    "y_axis_ratio": 0.8,
+    "inner_boundary_value_in_outer_equation": 0.512,
+    "strict_abstract_containment": true,
+    "status": "pass_abstract_target_boundary_compatibility_only"
+  },
+  "dependency_counts": {
+    "approved_rules_available": 4,
+    "approved_rules_required": 4,
+    "implementations": 0
+  },
+  "mapping_counts": {
+    "approved_top_target_mappings": 16,
+    "unique_target_coordinates": 16,
+    "endpoint_assignments": 0,
+    "mapped_non_top_samples": 0,
+    "source_displacement_px": 0,
+    "physical_cross_view_pairs": 0
+  },
+  "trace_counts": {
+    "required_registered_trace_boundaries": 26,
+    "per_view": {
+      "front": 6,
+      "back": 6,
+      "left": 6,
+      "right": 8
+    },
+    "common_frame_authority_available": 0,
+    "common_frame_authority_missing": 26,
+    "exact_comparisons_performed": 0,
+    "explicit_boundary_mismatches": 0,
+    "inferred_correspondences": 0
+  },
+  "authority_counts": {
+    "new_source_target_transforms": 0,
+    "new_target_trace_coordinates": 0,
+    "new_physical_cross_view_pairs": 0,
+    "field_samples": 0,
+    "fills": 0,
+    "surfaces": 0,
+    "topology": 0,
+    "geometry": 0
+  },
+  "interpretation_limits": {
+    "missing_authority_is_explicit_mismatch": false,
+    "inferred_bridge_authorized": false,
+    "visual_alignment_authorized": false,
+    "field_implementation_authorized": false,
+    "geometry_authorized": false
+  },
+  "active_blocks_preserved": [
+    "S10R-BLOCK-006",
+    "S10R-BLOCK-008",
+    "S10R-BLOCK-009"
+  ],
+  "step10_closeout_authorized": false,
+  "step11_authorized": false,
+  "dcc_authorized": false,
+  "unreal_authorized": false,
+  "production_authorized": false,
+  "staging_authorized": false,
+  "commit_authorized": false,
+  "push_authorized": false,
+  "pre_closeout_checkpoint": "Saved/ProjectRecovery/20260717-171757/",
+  "mandatory_restart_required": true
+}

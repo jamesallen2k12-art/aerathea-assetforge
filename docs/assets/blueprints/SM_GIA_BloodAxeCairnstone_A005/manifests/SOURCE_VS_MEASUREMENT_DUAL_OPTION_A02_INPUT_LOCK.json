@@ -1,0 +1,236 @@
+{
+  "schema": "aerathea.source_vs_measurement_dual_option_input_lock.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-SMR-A02",
+  "date": "2026-07-17",
+  "status": "immutable_execution_input_lock",
+  "artifact_classification": "proof only",
+  "execution_approval": {
+    "approver": "Flamestrike",
+    "statement": "approved",
+    "date": "2026-07-17",
+    "scope": "execute A005-CR-SMR-A02 exactly as written and stop for visible option decision"
+  },
+  "pre_action_checkpoint": "Saved/ProjectRecovery/20260717-101552/",
+  "input_count": 30,
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "size_bytes": 30923,
+      "mtime_epoch": 1783285972,
+      "sha256": "5d2d2637a58113f0a6f5ec92e40d8bb2bda9e03fb58b4868a0d9dfbb3b57ad55",
+      "role": "governing_core"
+    },
+    {
+      "path": "docs/projects/assetforge/BLOODAXE_CAIRNSTONE_PIXEL_EXACT_FRESH_START_MULTISTEP_PLAN.md",
+      "size_bytes": 37352,
+      "mtime_epoch": 1784126180,
+      "sha256": "ba6784498d792dc85dd431c807f59620d6851af97b4cd15efe89c44a397b10b6",
+      "role": "governing_blueprint_and_interpretation_separation"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/SOURCE_VS_MEASUREMENT_DUAL_OPTION_FEASIBILITY_A02_CONTRACT.md",
+      "size_bytes": 21625,
+      "mtime_epoch": 1784297622,
+      "sha256": "dc1b9568a0c7bb771f75b4ecb6e723482c98e6da50f4fc92aef9dc052f9d8cfc",
+      "role": "approved_execution_contract"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_RESET_RESUME_STATE.md",
+      "size_bytes": 35158,
+      "mtime_epoch": 1784297053,
+      "sha256": "5967c7f57c2e4a50e1b1fad84177104518d304833efb35906cc70a527d86ebab",
+      "role": "current_stop_state"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_ARTIFACT_INDEX.md",
+      "size_bytes": 33123,
+      "mtime_epoch": 1784296607,
+      "sha256": "e599e40946c58f766217bc1b63d2ff22b1d61163ec2b7f612e127e5a44c6cda2",
+      "role": "artifact_routing"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_APPROVAL_LOG.md",
+      "size_bytes": 36238,
+      "mtime_epoch": 1784296607,
+      "sha256": "eb9f705842ede1198ffc2a1575dacd06de1a8bc2a9be8ce2a08f07e96682925a",
+      "role": "approval_authority"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/SCALE_AUTHORITY_RECOVERY_A01_PHYSICAL_BOUNDS.json",
+      "size_bytes": 3849,
+      "mtime_epoch": 1784293622,
+      "sha256": "688209b57bc5fda0f527fcc853a44286d750257f0c293d15dd67d0e617511056",
+      "role": "six_approved_physical_targets"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/SOURCE_VS_MEASUREMENT_RECONCILIATION_A01_RULES.json",
+      "size_bytes": 6447,
+      "mtime_epoch": 1784295998,
+      "sha256": "233b7f26adde3e66d95cfcda412f3dc10f476dd9a451b01db9927b913f332f86",
+      "role": "reference_only_A01_rules_and_factors"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/SOURCE_VS_MEASUREMENT_RECONCILIATION_A01_ADJUSTMENT_LEDGER.json",
+      "size_bytes": 13221,
+      "mtime_epoch": 1784296253,
+      "sha256": "60ff81816f4585056a4445f80a442ab86e4eb5d5d18a276a9dd9f041fefeaba0",
+      "role": "proof_only_A01_factor_and_contact_calculations"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/SOURCE_VS_MEASUREMENT_RECONCILIATION_A01_VALIDATION.json",
+      "size_bytes": 7914,
+      "mtime_epoch": 1784296548,
+      "sha256": "d54419d939cb464e2a9ca5b926cdf11823c125d576ba001634bd6b2202d18091",
+      "role": "proof_only_A01_validation"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/SOURCE_VS_MEASUREMENT_RECONCILIATION_A01_OUTPUT_RECORD.md",
+      "size_bytes": 3644,
+      "mtime_epoch": 1784296321,
+      "sha256": "e788ed477c88326995b9093f282b349460136c84e0901abdb8f1bce2dfc1e869",
+      "role": "approved_A01_blocked_decision"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/handoffs/SOURCE_VS_MEASUREMENT_RECONCILIATION_A01_TO_STEP10_REVISION_HANDOFF.md",
+      "size_bytes": 2467,
+      "mtime_epoch": 1784296321,
+      "sha256": "954618ca497003897912856118516bb609a2cda0a6f6f22b1cc12f8c81a5490b",
+      "role": "approved_A01_blocked_routing"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_03_PANEL_CROP_MANIFEST.json",
+      "size_bytes": 5001,
+      "mtime_epoch": 1784134277,
+      "sha256": "5d423400e1415c7e816648f703f2d04de384070813480db923303ab0709a0356",
+      "role": "authoritative_panel_bounds"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_FRONT.png",
+      "size_bytes": 301280,
+      "mtime_epoch": 1784133485,
+      "sha256": "262071198bc0d409e9b68af5ac4f3c6a4768a90b1fd199342035a8a82342c2c5",
+      "role": "authoritative_front_source"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_BACK.png",
+      "size_bytes": 229560,
+      "mtime_epoch": 1784133485,
+      "sha256": "8ceae7f5ccf311ded8822fdd623d2b68009102bc07ceaf66708f59d2a013d271",
+      "role": "authoritative_back_validation_source"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_LEFT.png",
+      "size_bytes": 202043,
+      "mtime_epoch": 1784133486,
+      "sha256": "52212ba783d026a008929e3946cac934281de7d2daec2ada316205059258cba4",
+      "role": "authoritative_left_source"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_RIGHT.png",
+      "size_bytes": 156430,
+      "mtime_epoch": 1784133561,
+      "sha256": "cc6c27405fbd6ea8c46b70966fe559acbd57acb88e58bfdcd6b763ce827a862e",
+      "role": "authoritative_right_validation_source"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_TOP.png",
+      "size_bytes": 177109,
+      "mtime_epoch": 1784133486,
+      "sha256": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf",
+      "role": "authoritative_top_source"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_04_COMPONENT_OWNERSHIP_INVENTORY_RECOVERY_A01.json",
+      "size_bytes": 3358,
+      "mtime_epoch": 1784148000,
+      "sha256": "f472f5bb749eda8ffb27809658d4afd3f5fc732ddcf7d4fcb1275492c1e7d755",
+      "role": "authoritative_component_and_contact_semantics"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_04_TOP_CONTACT_EVIDENCE_RECOVERY_A01.json",
+      "size_bytes": 60226,
+      "mtime_epoch": 1784148000,
+      "sha256": "8f9fb86ef631e5785552a61f61e4a2d3085727f1a667bdf59cf904284b1b2eb0",
+      "role": "authoritative_top_discrete_contacts"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_06_FRONT_CONTACT_EVIDENCE_RECOVERY_A01.json",
+      "size_bytes": 8195,
+      "mtime_epoch": 1784157865,
+      "sha256": "534b89f2d37fabcd7bdc3aa95d4ec9e368b0abab13307e80c1c075aeee1212f2",
+      "role": "authoritative_front_recovered_contacts"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_06_BACK_CONTACT_EVIDENCE_RECOVERY_A01.json",
+      "size_bytes": 8419,
+      "mtime_epoch": 1784157865,
+      "sha256": "36f65a8873ce8c430d1e6156e07492bb01a45f6e6cd31515d9326ce44ac935af",
+      "role": "authoritative_back_recovered_contacts"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_06_FRONT_MEASUREMENT_MANIFEST.json",
+      "size_bytes": 6895,
+      "mtime_epoch": 1784142473,
+      "sha256": "c71932bef2016808d24fdc9aed47b9f4a3c32f59bdd45a551aab6804d877ecef",
+      "role": "bounded_front_visible_rows_and_outer_points"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_06_BACK_MEASUREMENT_MANIFEST.json",
+      "size_bytes": 6668,
+      "mtime_epoch": 1784142474,
+      "sha256": "7d203f0b4993aa5764bf54f3c78109ba0f614cc4b17553a58e3acde07deb1e56",
+      "role": "bounded_back_visible_rows_and_outer_points"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_07_LEFT_MEASUREMENT_MANIFEST.json",
+      "size_bytes": 6343,
+      "mtime_epoch": 1784144753,
+      "sha256": "e08d868925967a05d465cecadc4810a3f3e2b3cdb5be342e32ebdd807e0e9725",
+      "role": "bounded_left_contacts_and_outer_points"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_07_RIGHT_MEASUREMENT_MANIFEST.json",
+      "size_bytes": 6339,
+      "mtime_epoch": 1784144753,
+      "sha256": "72cf8758a1a73b36a653635512267ed84c363620459f2a3953179527f31f19bc",
+      "role": "bounded_right_contacts_and_outer_points"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_08R_TOP_MEASUREMENT_MANIFEST.json",
+      "size_bytes": 5675,
+      "mtime_epoch": 1784169833,
+      "sha256": "c4a4196587596bd1fa8b1105f4bf9699c24e5a305ee28f5bbb6ccf128713617d",
+      "role": "authoritative_top_direct_dimensions_with_footprints_blocked"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_08R_TOP_PERIMETER_CENTER_MANIFEST.json",
+      "size_bytes": 4300,
+      "mtime_epoch": 1784169833,
+      "sha256": "0a8ffab6a71e27c666b3d77c81d5da19b354a09d060effa1db0b25b37a23322c",
+      "role": "authoritative_top_perimeter_and_center_block"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_09_CROSS_VIEW_CORRESPONDENCE_MANIFEST.json",
+      "size_bytes": 12190,
+      "mtime_epoch": 1784208588,
+      "sha256": "9efadda542ba2358c59b8d4fac4b731e5d877d2007aa1d03b3fe67abac29547f",
+      "role": "semantic_cross_view_groups_only"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_09_DISAGREEMENT_UNKNOWN_MATRIX.json",
+      "size_bytes": 10617,
+      "mtime_epoch": 1784208588,
+      "sha256": "ba8a85ad7e42faba2ddb77691e38dffe84d31dd709f6501860dead208bb5b1eb",
+      "role": "explicit_cross_view_unknowns_and_blocks"
+    }
+  ],
+  "unexpected_input_count": 0,
+  "blocked_input_uses": [
+    "A001 through A004 asset-specific data",
+    "physical cross-view pixel pairs",
+    "world construction frame",
+    "closed top perimeter or filled footprint",
+    "geometry or production artifacts"
+  ]
+}

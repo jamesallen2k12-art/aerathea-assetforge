@@ -1,0 +1,38 @@
+{
+  "schema": "aerathea.s10r_006_r8_r1_a_visibility_recovery_content_equivalence_audit.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-006-R8-R1-A-VISREC-A01",
+  "date": "2026-07-20",
+  "status": "fail_closed_route_result_wording_not_exact",
+  "artifact_classification": "proof only",
+  "source_contract": {
+    "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/S10R_006_R8_A_POST_R7_CORE_ROUTING_AUTHORITY_DECISION_CONTRACT.md",
+    "sha256": "41ed12c69fd911fe0fd789f4605fd3d577ef8f0beb15b3833a1a646983be4066"
+  },
+  "recovery_contract": {
+    "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/S10R_006_R8_R1_A_VISIBILITY_RECOVERY_CONTRACT.md",
+    "sha256": "4226f1b9230172db104f8839b246cefd6d848adc12bf1466d318303892d20319"
+  },
+  "exact_routes": [
+    {"id": "S10R-006-R8-A", "candidate_result": "later preparation only of one separate bounded corner-gap-to-field coupling rule contract", "selected": false},
+    {"id": "S10R-006-R8-B", "candidate_result": "later preparation only of one separate bounded top/upright join rule contract", "selected": false},
+    {"id": "S10R-006-R8-BLOCK", "candidate_result": "preserve the current approved symbolic records and no-field block", "selected": false}
+  ],
+  "equivalence_checks": [
+    {"id": "EQ-01", "status": "pass", "subject": "route count remains exactly three"},
+    {"id": "EQ-02", "status": "pass", "subject": "route IDs and ordering match the source contract exactly"},
+    {"id": "EQ-03", "status": "fail", "subject": "candidate result wording matches the source contract exactly", "evidence": "fresh R8-A and R8-B results include 'one separate'; the original R8 required registry table uses 'a bounded'"},
+    {"id": "EQ-04", "status": "pass", "subject": "selected route count remains zero"},
+    {"id": "EQ-05", "status": "pass", "subject": "R8-A remains candidate recommendation only"},
+    {"id": "EQ-06", "status": "pass", "subject": "no coupling or join contract or rule is prepared"},
+    {"id": "EQ-07", "status": "pass", "subject": "all zero-output and downstream stops are preserved"},
+    {"id": "EQ-08", "status": "pass", "subject": "only recovery identifiers provenance and visibility mechanics differ"}
+  ],
+  "allowed_differences": ["recovery contract and artifact identifiers", "quarantined-attempt provenance", "persistent visibility protocol", "first-and-only complete audit requirement"],
+  "forbidden_differences_detected": [
+    "R8-A fresh result says 'later preparation only of one separate bounded corner-gap-to-field coupling rule contract' instead of the original registry result 'later preparation only of a bounded corner-gap-to-field coupling rule contract'",
+    "R8-B fresh result says 'later preparation only of one separate bounded top/upright join rule contract' instead of the original registry result 'later preparation only of a bounded top/upright join rule contract'"
+  ],
+  "summary": {"check_count": 8, "passed_check_count": 7, "failed_check_count": 1},
+  "technical_result": "blocked_R8_visibility_recovery_dependency_or_liveness_failure"
+}

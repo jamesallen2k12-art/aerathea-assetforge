@@ -1,0 +1,148 @@
+{
+  "schema": "aerathea.s10r_006_r1_a_normalized_primary_owner_bridge_decision_registry.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "decision_id": "S10R-006-R1-A",
+  "preparation_step_id": "A005-CR-S10R-006-R1-A-NPOB-PREP-A01",
+  "future_execution_contract_id": "A005-CR-S10R-006-R1-A-NPOB-EXEC-A01",
+  "date": "2026-07-17",
+  "recorded_at": "2026-07-17T17:36:00-04:00",
+  "status": "approved_bounded_recovery_rule_execution_contract_prepared_not_approved",
+  "artifact_classification": "authoritative for bounded recovery routing and normalized common-frame interpretation only",
+  "decision_title": "Normalized Primary-Owner Bridge",
+  "decision": "approve",
+  "approval_chain": {
+    "flamestrike_delegation": "you make the decision based on evidence ... and present it to me for approval",
+    "codex_recommendation": "S10R-006-R1-A — Normalized Primary-Owner Bridge",
+    "flamestrike_approval": "yes approved",
+    "final_authority": "Flamestrike"
+  },
+  "controlling_evidence": {
+    "prior_technical_result": "blocked_source_authority_missing",
+    "prior_technical_validation_passed": 29,
+    "prior_technical_validation_failed": 0,
+    "n3_k80_homothetic_scale": 0.8,
+    "k80_value_in_n3_equation": 0.512,
+    "strict_abstract_containment": true,
+    "explicit_boundary_mismatches": 0,
+    "source_view_to_target_correspondences": 0,
+    "physical_cross_view_pairs": 0,
+    "source_target_ratio_conflicts_previously_proven": 10,
+    "approved_primary_owner_trace_count": 12,
+    "primary_owner_trace_distribution": {
+      "front_primary_XZ": 6,
+      "left_primary_YZ": 6
+    },
+    "validation_holdout_trace_count": 14,
+    "validation_holdout_distribution": {
+      "back_validation_only": 6,
+      "right_validation_only": 8
+    }
+  },
+  "approved_rule": {
+    "rule_id": "S10R-006-R1-A",
+    "rule_name": "Normalized Primary-Owner Bridge",
+    "rule_classification": "approved bounded interpretation rule",
+    "purpose": "Provide a deterministic dimensionless common-frame interpretation for the approved primary-owner upright traces without claiming missing source-to-target evidence.",
+    "construction_owner_set": [
+      "F-BTIR-01",
+      "F-BTIR-02",
+      "F-BTIR-03",
+      "F-BTIR-04",
+      "F-BTIR-05",
+      "F-BTIR-06",
+      "L-BTIR-01",
+      "L-BTIR-02",
+      "L-BTIR-03",
+      "L-BTIR-04",
+      "L-BTIR-05",
+      "L-BTIR-06"
+    ],
+    "validation_holdout_set": [
+      "B-BTIR-01",
+      "B-BTIR-02",
+      "B-BTIR-03",
+      "B-BTIR-04",
+      "B-BTIR-05",
+      "B-BTIR-06",
+      "R-BTIR-01",
+      "R-BTIR-02",
+      "R-BTIR-03",
+      "R-BTIR-04",
+      "R-BTIR-05",
+      "R-BTIR-06",
+      "R-BTIR-07",
+      "R-BTIR-08"
+    ],
+    "normalized_common_frame_fields": [
+      "trace_id",
+      "owner_view",
+      "owner_plane",
+      "registered_side",
+      "within_side_order",
+      "symbolic_trace_parameter_t",
+      "normalized_transition_parameter_v",
+      "inner_boundary_id",
+      "outer_boundary_id"
+    ],
+    "parameter_rule": "Preserve each exact source trace formula and symbolic parameter t; register v = t, identify t = 0 with K80 and t = 1 with N3, and preserve owner-view side and within-side ordering under the exact Step 05 handedness convention.",
+    "inner_boundary": {
+      "id": "C003_TSIB_K80_MEDIUM_APRON",
+      "equation": "abs(x / 56)^3 + abs(y / 44)^3 = 1",
+      "normalized_station": 0
+    },
+    "outer_boundary": {
+      "id": "TOP_C004_OPIR_N3_ROUNDED_OVAL",
+      "equation": "abs(x / 70)^3 + abs(y / 55)^3 = 1",
+      "normalized_station": 1
+    },
+    "primary_owner_policy": "Front primary_XZ and left primary_YZ traces are the only construction-owner inputs for this bridge.",
+    "validation_policy": "Back and right traces remain validation-only holdouts. They may test declared side, ordering, handedness, non-crossing behavior, and explicit contradiction, but may not generate independent construction coordinates.",
+    "source_evidence_effect": "No source pixel, endpoint, trace formula, contact sample, measurement, or prior authority changes.",
+    "interpretation_effect": "Creates authority only for a later deterministic normalized common-frame mapping record; it does not create physical source-to-target correspondence.",
+    "gate_failure_policy": "Stop on duplicate construction mapping, owner-order reversal, trace crossing, handedness failure, changed source trace data, or explicit validation-view contradiction. Missing physical correspondence is preserved as missing evidence and is not silently inferred."
+  },
+  "explicitly_rejected_routes": [
+    "proof-only scale-recovery transforms as source-to-target authority",
+    "physical cross-view pixel pairing",
+    "S10R-003-B owner-view endpoint constrained physical mapping",
+    "nearest matching",
+    "visual alignment",
+    "panel-size normalization",
+    "assumed affine or projective transform",
+    "post-result tolerance selection"
+  ],
+  "authority_limits": {
+    "physical_source_target_transform_created": false,
+    "physical_cross_view_pair_created": false,
+    "source_center_created": false,
+    "pivot_created": false,
+    "target_trace_coordinates_created": false,
+    "mapping_execution_authorized": false,
+    "field_samples_created": 0,
+    "fills_created": 0,
+    "surfaces_created": 0,
+    "topology_created": 0,
+    "geometry_created": 0,
+    "step10_closeout_authorized": false,
+    "step11_authorized": false,
+    "dcc_authorized": false,
+    "unreal_authorized": false,
+    "staging_authorized": false,
+    "commit_authorized": false,
+    "push_authorized": false
+  },
+  "block_effect": {
+    "S10R-BLOCK-006": "active_pending_separate_mapping_execution_validation_and_output_decision",
+    "S10R-BLOCK-008": "active_unchanged",
+    "S10R-BLOCK-009": "active_unchanged",
+    "prior_blocked_source_authority_result": "preserved_as_authoritative_historical_technical_result",
+    "blueprint_effect": "Supplies a bounded interpretation route; does not manufacture the missing source authority."
+  },
+  "next_gate": {
+    "contract_path": "steps/S10R_006_R1_A_NORMALIZED_PRIMARY_OWNER_BRIDGE_EXECUTION_CONTRACT.md",
+    "contract_status": "candidate_prepared_execution_not_approved",
+    "execution_requires_separate_exact_flamestrike_approval": true,
+    "same_session_execution_authorized": false
+  },
+  "preparation_checkpoint": "Saved/ProjectRecovery/20260717-173511/"
+}
