@@ -1,0 +1,812 @@
+{
+  "schema": "aerathea.step16_dcc_game_ready_package_manifest.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-STEP16-DCC-GAME-READY-PACKAGE-A01",
+  "date": "2026-07-20",
+  "status": "candidate_pending_step16_independent_audit",
+  "artifact_classification": "candidate",
+  "pipeline_status": "DCC game-ready candidate pending technical audit",
+  "authority": {
+    "step16_execution": "resume You have complete Approval and Authorization to complete step 16 From Start to finish regardless of what you need to do",
+    "focused_step15_visual_decision": "approved",
+    "input_lock": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_16_INPUT_LOCK.json",
+    "locked_inputs": 17,
+    "matched_inputs": 17,
+    "pre_action_checkpoint": "Saved/ProjectRecovery/20260720-184940/"
+  },
+  "immutable_source": {
+    "path": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_UVTextureMaterialCandidate_A01.blend",
+    "sha256_before": "7befa56a10003c2d424de3db40e2bc402075b79644b0944413e97c92db6cab89",
+    "sha256_after": "7befa56a10003c2d424de3db40e2bc402075b79644b0944413e97c92db6cab89",
+    "unchanged": true,
+    "geometry_sha256": "3707e01bc1e6fabeb4cfc500f074cba66a604dd1d1aa781a6b06e57ff35a9c57",
+    "source_uv0_hashes": {
+      "C004_APRON": "6a0a59af8bcd309b5085a4832136af07dcd2e8fdad318b7efebf42dde4feff1e",
+      "C003_LOWER_TIER": "1c15327076b203f8852577b360fe996213262e8171dd5e605af6003c4baca18d",
+      "C002_UPPER_TIER": "2709a0aaa54f612dd1238f114118c4677b6d84bb69e393ad5181177e8dfa442e",
+      "C001_BODY": "56cdd2f6c2e4a66e49083297d7b136a224332a859f4bb1b190759c94055adcc3"
+    },
+    "source_bounds": {
+      "C004_APRON": {
+        "min": [
+          -70.0,
+          -55.0,
+          0.0
+        ],
+        "max": [
+          70.0,
+          55.0,
+          10.5
+        ],
+        "dimensions": [
+          140.0,
+          110.0,
+          10.5
+        ]
+      },
+      "C003_LOWER_TIER": {
+        "min": [
+          -55.5,
+          -43.5,
+          9.5
+        ],
+        "max": [
+          55.5,
+          43.5,
+          23.5
+        ],
+        "dimensions": [
+          111.0,
+          87.0,
+          14.0
+        ]
+      },
+      "C002_UPPER_TIER": {
+        "min": [
+          -53.0,
+          -41.0,
+          22.5
+        ],
+        "max": [
+          53.0,
+          41.0,
+          35.5
+        ],
+        "dimensions": [
+          106.0,
+          82.0,
+          13.0
+        ]
+      },
+      "C001_BODY": {
+        "min": [
+          -60.0,
+          -45.0,
+          34.5
+        ],
+        "max": [
+          60.0,
+          45.0,
+          220.0
+        ],
+        "dimensions": [
+          120.0,
+          90.0,
+          185.5
+        ]
+      }
+    }
+  },
+  "dcc_source": {
+    "path": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_DCCGameReady_A01.blend",
+    "sha256": "25dec2801ede465bf82fee1c2c279333a721aa95ed67028774aedb92bb6ce3ad",
+    "unit": "centimeter",
+    "unreal_unit_equivalence": "1 Blender centimeter = 1 Unreal Unit",
+    "pivot_cm": [
+      0,
+      0,
+      0
+    ],
+    "assembled_bounds_cm": {
+      "min": [
+        -70.0,
+        -55.0,
+        0.0
+      ],
+      "max": [
+        70.0,
+        55.0,
+        220.0
+      ],
+      "dimensions": [
+        140.0,
+        110.0,
+        220.0
+      ]
+    }
+  },
+  "lods": {
+    "LOD0": {
+      "sha256": "0857d85227e666036ad464c0455c5f5c8e5f11d137a4ae863241d213a1a7946e",
+      "vertices": 400,
+      "faces": 464,
+      "triangles": 784,
+      "bounds": {
+        "min": [
+          -70.0,
+          -55.0,
+          0.0
+        ],
+        "max": [
+          70.0,
+          55.0,
+          220.0
+        ],
+        "dimensions": [
+          140.0,
+          110.0,
+          220.0
+        ]
+      },
+      "uv_layers": [
+        "UVMap",
+        "LightmapUV"
+      ],
+      "uv0_sha256": "5e3e68233d175f36e22ac8b481a36fea65b6f48eabc0c79bf1cb267df3206da7",
+      "uv1_sha256": "36b07ee39edef992265f672299b3361427ab60d50b6a47ab55dcff4bc34b6867",
+      "material_slots": 1,
+      "ranges": [
+        {
+          "component_id": "C-004",
+          "component_slot": 0,
+          "source_object": "C004_APRON",
+          "vertex_start": 0,
+          "vertex_end_exclusive": 130,
+          "face_start": 0,
+          "face_end_exclusive": 160,
+          "source_triangles": 256
+        },
+        {
+          "component_id": "C-003",
+          "component_slot": 1,
+          "source_object": "C003_LOWER_TIER",
+          "vertex_start": 130,
+          "vertex_end_exclusive": 212,
+          "face_start": 160,
+          "face_end_exclusive": 256,
+          "source_triangles": 160
+        },
+        {
+          "component_id": "C-002",
+          "component_slot": 2,
+          "source_object": "C002_UPPER_TIER",
+          "vertex_start": 212,
+          "vertex_end_exclusive": 294,
+          "face_start": 256,
+          "face_end_exclusive": 352,
+          "source_triangles": 160
+        },
+        {
+          "component_id": "C-001",
+          "component_slot": 3,
+          "source_object": "C001_BODY",
+          "vertex_start": 294,
+          "vertex_end_exclusive": 400,
+          "face_start": 352,
+          "face_end_exclusive": 464,
+          "source_triangles": 208
+        }
+      ],
+      "lightmap": {
+        "name": "LightmapUV",
+        "resolution": 128,
+        "minimum_padding_texels": 4,
+        "chart_inset_texels": 4.5,
+        "chart_count": 12,
+        "chart_face_counts": {
+          "C-004:side": 96,
+          "C-004:bottom": 32,
+          "C-004:top": 32,
+          "C-003:bottom": 24,
+          "C-003:side": 40,
+          "C-003:top": 32,
+          "C-002:bottom": 32,
+          "C-002:side": 32,
+          "C-002:top": 32,
+          "C-001:side": 94,
+          "C-001:top": 10,
+          "C-001:bottom": 8
+        },
+        "sha256": "36b07ee39edef992265f672299b3361427ab60d50b6a47ab55dcff4bc34b6867",
+        "method": "post-optimization component charts classified by closure normal"
+      },
+      "ratio_requested_from_actual_lod0": 1.0,
+      "budget_triangles": 10000,
+      "budget_pass": true,
+      "artifact_classification": "candidate"
+    },
+    "LOD1": {
+      "sha256": "b3b51acb35cb8d6fb31280b81616caa65d39a5b5466612429ea1bdfcaebe6615",
+      "vertices": 204,
+      "faces": 392,
+      "triangles": 392,
+      "bounds": {
+        "min": [
+          -70.0,
+          -55.0,
+          -0.0
+        ],
+        "max": [
+          70.0,
+          55.0,
+          220.0
+        ],
+        "dimensions": [
+          140.0,
+          110.0,
+          220.0
+        ]
+      },
+      "uv_layers": [
+        "UVMap",
+        "LightmapUV"
+      ],
+      "uv0_sha256": "8e924bbfaa76bd2936e6787a75c875e8d474d366037ce7964c510f63122f8bae",
+      "uv1_sha256": "3e3ee6acb254c51b34e6117f9d8091256d1bbd333db9df31b31e05b1547e66db",
+      "material_slots": 1,
+      "ranges": [
+        {
+          "component_id": "C-004",
+          "component_slot": 0,
+          "source_object": "C004_APRON",
+          "vertex_start": 0,
+          "vertex_end_exclusive": 66,
+          "face_start": 0,
+          "face_end_exclusive": 128,
+          "source_triangles": 128
+        },
+        {
+          "component_id": "C-003",
+          "component_slot": 1,
+          "source_object": "C003_LOWER_TIER",
+          "vertex_start": 66,
+          "vertex_end_exclusive": 108,
+          "face_start": 128,
+          "face_end_exclusive": 208,
+          "source_triangles": 80
+        },
+        {
+          "component_id": "C-002",
+          "component_slot": 2,
+          "source_object": "C002_UPPER_TIER",
+          "vertex_start": 108,
+          "vertex_end_exclusive": 150,
+          "face_start": 208,
+          "face_end_exclusive": 288,
+          "source_triangles": 80
+        },
+        {
+          "component_id": "C-001",
+          "component_slot": 3,
+          "source_object": "C001_BODY",
+          "vertex_start": 150,
+          "vertex_end_exclusive": 204,
+          "face_start": 288,
+          "face_end_exclusive": 392,
+          "source_triangles": 104
+        }
+      ],
+      "lightmap": {
+        "name": "LightmapUV",
+        "resolution": 128,
+        "minimum_padding_texels": 4,
+        "chart_inset_texels": 4.5,
+        "chart_count": 12,
+        "chart_face_counts": {
+          "C-004:side": 68,
+          "C-004:bottom": 30,
+          "C-004:top": 30,
+          "C-003:bottom": 18,
+          "C-003:side": 38,
+          "C-003:top": 24,
+          "C-002:bottom": 26,
+          "C-002:side": 32,
+          "C-002:top": 22,
+          "C-001:side": 88,
+          "C-001:top": 10,
+          "C-001:bottom": 6
+        },
+        "sha256": "3e3ee6acb254c51b34e6117f9d8091256d1bbd333db9df31b31e05b1547e66db",
+        "method": "post-optimization component charts classified by closure normal"
+      },
+      "ratio_requested_from_actual_lod0": 0.5,
+      "budget_triangles": 4000,
+      "budget_pass": true,
+      "artifact_classification": "optimization interpretation"
+    },
+    "LOD2": {
+      "sha256": "fff5405a601986114a3e2a63709b4b7dc633428f0480155d31fb3f2a0dafeacd",
+      "vertices": 95,
+      "faces": 174,
+      "triangles": 174,
+      "bounds": {
+        "min": [
+          -70.0,
+          -55.0,
+          -0.0
+        ],
+        "max": [
+          70.0,
+          55.0,
+          220.0
+        ],
+        "dimensions": [
+          140.0,
+          110.0,
+          220.0
+        ]
+      },
+      "uv_layers": [
+        "UVMap",
+        "LightmapUV"
+      ],
+      "uv0_sha256": "50e87679e4c55797c7be832e1a667b95f8e2b1364e6849ca6b25514a2ad16bb6",
+      "uv1_sha256": "3f301466cae5b54f2012c804454245ea1875c2bf19e0eae219c2cafa7a2c7d8e",
+      "material_slots": 1,
+      "ranges": [
+        {
+          "component_id": "C-004",
+          "component_slot": 0,
+          "source_object": "C004_APRON",
+          "vertex_start": 0,
+          "vertex_end_exclusive": 30,
+          "face_start": 0,
+          "face_end_exclusive": 56,
+          "source_triangles": 56
+        },
+        {
+          "component_id": "C-003",
+          "component_slot": 1,
+          "source_object": "C003_LOWER_TIER",
+          "vertex_start": 30,
+          "vertex_end_exclusive": 50,
+          "face_start": 56,
+          "face_end_exclusive": 92,
+          "source_triangles": 36
+        },
+        {
+          "component_id": "C-002",
+          "component_slot": 2,
+          "source_object": "C002_UPPER_TIER",
+          "vertex_start": 50,
+          "vertex_end_exclusive": 70,
+          "face_start": 92,
+          "face_end_exclusive": 128,
+          "source_triangles": 36
+        },
+        {
+          "component_id": "C-001",
+          "component_slot": 3,
+          "source_object": "C001_BODY",
+          "vertex_start": 70,
+          "vertex_end_exclusive": 95,
+          "face_start": 128,
+          "face_end_exclusive": 174,
+          "source_triangles": 46
+        }
+      ],
+      "lightmap": {
+        "name": "LightmapUV",
+        "resolution": 128,
+        "minimum_padding_texels": 4,
+        "chart_inset_texels": 4.5,
+        "chart_count": 12,
+        "chart_face_counts": {
+          "C-004:side": 30,
+          "C-004:bottom": 14,
+          "C-004:top": 12,
+          "C-003:side": 18,
+          "C-003:top": 10,
+          "C-003:bottom": 8,
+          "C-002:bottom": 8,
+          "C-002:side": 16,
+          "C-002:top": 12,
+          "C-001:side": 36,
+          "C-001:top": 4,
+          "C-001:bottom": 6
+        },
+        "sha256": "3f301466cae5b54f2012c804454245ea1875c2bf19e0eae219c2cafa7a2c7d8e",
+        "method": "post-optimization component charts classified by closure normal"
+      },
+      "ratio_requested_from_actual_lod0": 0.225,
+      "budget_triangles": 1800,
+      "budget_pass": true,
+      "artifact_classification": "optimization interpretation"
+    },
+    "LOD3": {
+      "sha256": "7f13d0c5279fe73b4b80a7df1eb7f68fe620befe0af6b66f6506b41dda298ee0",
+      "vertices": 46,
+      "faces": 76,
+      "triangles": 76,
+      "bounds": {
+        "min": [
+          -70.0,
+          -55.0,
+          -0.0
+        ],
+        "max": [
+          70.0,
+          55.0,
+          220.0
+        ],
+        "dimensions": [
+          140.0,
+          110.0,
+          220.0
+        ]
+      },
+      "uv_layers": [
+        "UVMap",
+        "LightmapUV"
+      ],
+      "uv0_sha256": "0078e09d76a8958b1e012d98d718b9ad1b0bcd67a343a0eef104e4abc371c579",
+      "uv1_sha256": "cad52d89bb2040b588eafcb90cf4682ba36924b6e575433339734da157b1fc7b",
+      "material_slots": 1,
+      "ranges": [
+        {
+          "component_id": "C-004",
+          "component_slot": 0,
+          "source_object": "C004_APRON",
+          "vertex_start": 0,
+          "vertex_end_exclusive": 14,
+          "face_start": 0,
+          "face_end_exclusive": 24,
+          "source_triangles": 24
+        },
+        {
+          "component_id": "C-003",
+          "component_slot": 1,
+          "source_object": "C003_LOWER_TIER",
+          "vertex_start": 14,
+          "vertex_end_exclusive": 24,
+          "face_start": 24,
+          "face_end_exclusive": 40,
+          "source_triangles": 16
+        },
+        {
+          "component_id": "C-002",
+          "component_slot": 2,
+          "source_object": "C002_UPPER_TIER",
+          "vertex_start": 24,
+          "vertex_end_exclusive": 34,
+          "face_start": 40,
+          "face_end_exclusive": 56,
+          "source_triangles": 16
+        },
+        {
+          "component_id": "C-001",
+          "component_slot": 3,
+          "source_object": "C001_BODY",
+          "vertex_start": 34,
+          "vertex_end_exclusive": 46,
+          "face_start": 56,
+          "face_end_exclusive": 76,
+          "source_triangles": 20
+        }
+      ],
+      "lightmap": {
+        "name": "LightmapUV",
+        "resolution": 128,
+        "minimum_padding_texels": 4,
+        "chart_inset_texels": 4.5,
+        "chart_count": 12,
+        "chart_face_counts": {
+          "C-004:side": 14,
+          "C-004:bottom": 6,
+          "C-004:top": 4,
+          "C-003:side": 10,
+          "C-003:bottom": 4,
+          "C-003:top": 2,
+          "C-002:side": 10,
+          "C-002:bottom": 4,
+          "C-002:top": 2,
+          "C-001:side": 12,
+          "C-001:top": 2,
+          "C-001:bottom": 6
+        },
+        "sha256": "cad52d89bb2040b588eafcb90cf4682ba36924b6e575433339734da157b1fc7b",
+        "method": "post-optimization component charts classified by closure normal"
+      },
+      "ratio_requested_from_actual_lod0": 0.1,
+      "budget_triangles": 700,
+      "budget_pass": true,
+      "artifact_classification": "optimization interpretation"
+    }
+  },
+  "lod_policy": {
+    "actual_approved_lod0_triangles": 784,
+    "planning_target_does_not_authorize_subdivision": true,
+    "strictly_monotonic": true,
+    "preservation": [
+      "exact LOD0",
+      "four disconnected component shells",
+      "220/140/110 cm envelope",
+      "four-layer read",
+      "ground pivot"
+    ]
+  },
+  "lightmap_uv": {
+    "name": "LightmapUV",
+    "resolution": 128,
+    "minimum_padding_texels": 4,
+    "chart_inset_texels": 4.5,
+    "charts_per_component": 3,
+    "components": 4,
+    "source_rgb_consumer": false,
+    "artifact_classification": "UV interpretation"
+  },
+  "collision": {
+    "strategy": "custom simple convex collision",
+    "complex_as_simple": false,
+    "hull_count": 4,
+    "hulls": [
+      {
+        "name": "UCX_SM_GIA_BloodAxeCairnstone_A005_00",
+        "owner": "C001_BODY",
+        "component_id": "C-001",
+        "shape": "source-containing rectangular tapered frustum",
+        "parameters": {
+          "bottom_half_extents": [
+            60.0,
+            45.0
+          ],
+          "top_half_extents": [
+            59.99999999999992,
+            44.99999999999994
+          ],
+          "z": [
+            34.5,
+            220.0
+          ]
+        },
+        "vertices": 8,
+        "faces": 6,
+        "triangles": 12,
+        "bounds": {
+          "min": [
+            -60.0,
+            -45.0,
+            34.5
+          ],
+          "max": [
+            60.0,
+            45.0,
+            220.0
+          ],
+          "dimensions": [
+            120.0,
+            90.0,
+            185.5
+          ]
+        },
+        "convex": true,
+        "closed": true,
+        "source_containment_by_construction": true,
+        "artifact_classification": "collision interpretation"
+      },
+      {
+        "name": "UCX_SM_GIA_BloodAxeCairnstone_A005_01",
+        "owner": "C002_UPPER_TIER",
+        "component_id": "C-002",
+        "shape": "source-containing axis-aligned convex box",
+        "parameters": {
+          "min": [
+            -53.0,
+            -41.0,
+            22.5
+          ],
+          "max": [
+            53.0,
+            41.0,
+            35.5
+          ]
+        },
+        "vertices": 8,
+        "faces": 6,
+        "triangles": 12,
+        "bounds": {
+          "min": [
+            -53.0,
+            -41.0,
+            22.5
+          ],
+          "max": [
+            53.0,
+            41.0,
+            35.5
+          ],
+          "dimensions": [
+            106.0,
+            82.0,
+            13.0
+          ]
+        },
+        "convex": true,
+        "closed": true,
+        "source_containment_by_construction": true,
+        "artifact_classification": "collision interpretation"
+      },
+      {
+        "name": "UCX_SM_GIA_BloodAxeCairnstone_A005_02",
+        "owner": "C003_LOWER_TIER",
+        "component_id": "C-003",
+        "shape": "source-containing axis-aligned convex box",
+        "parameters": {
+          "min": [
+            -55.5,
+            -43.5,
+            9.5
+          ],
+          "max": [
+            55.5,
+            43.5,
+            23.5
+          ]
+        },
+        "vertices": 8,
+        "faces": 6,
+        "triangles": 12,
+        "bounds": {
+          "min": [
+            -55.5,
+            -43.5,
+            9.5
+          ],
+          "max": [
+            55.5,
+            43.5,
+            23.5
+          ],
+          "dimensions": [
+            111.0,
+            87.0,
+            14.0
+          ]
+        },
+        "convex": true,
+        "closed": true,
+        "source_containment_by_construction": true,
+        "artifact_classification": "collision interpretation"
+      },
+      {
+        "name": "UCX_SM_GIA_BloodAxeCairnstone_A005_03",
+        "owner": "C004_APRON",
+        "component_id": "C-004",
+        "shape": "source-containing axis-aligned convex box",
+        "parameters": {
+          "min": [
+            -70.0,
+            -55.0,
+            0.0
+          ],
+          "max": [
+            70.0,
+            55.0,
+            10.5
+          ]
+        },
+        "vertices": 8,
+        "faces": 6,
+        "triangles": 12,
+        "bounds": {
+          "min": [
+            -70.0,
+            -55.0,
+            0.0
+          ],
+          "max": [
+            70.0,
+            55.0,
+            10.5
+          ],
+          "dimensions": [
+            140.0,
+            110.0,
+            10.5
+          ]
+        },
+        "convex": true,
+        "closed": true,
+        "source_containment_by_construction": true,
+        "artifact_classification": "collision interpretation"
+      }
+    ],
+    "artifact_classification": "collision interpretation"
+  },
+  "material": {
+    "name": "M_GIA_BloodAxeCairnstone_A005",
+    "slots_per_lod": 1,
+    "opaque": true,
+    "two_sided": false,
+    "emissive": false,
+    "redesign": false
+  },
+  "textures": {
+    "base_color": {
+      "path": "SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/T_GIA_BloodAxeCairnstone_A005_BC.png",
+      "sha256": "a618619ad7e0da8e8617191b1fa8a96aa74397a9cafb30ddffea8b332533c884"
+    },
+    "normal": {
+      "path": "SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/T_GIA_BloodAxeCairnstone_A005_N.png",
+      "sha256": "12c75e4f2a12cad22e07d8872645744d2721d32271f4c455b407829de2ea43b2",
+      "space": "DirectX tangent"
+    },
+    "orm": {
+      "path": "SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/T_GIA_BloodAxeCairnstone_A005_ORM.png",
+      "sha256": "76f65c3f9f1e538b0024cbf43356a7e03bc84a67e77dfaaba16f1a259b37011c",
+      "packing": "R=AO G=Roughness B=Metallic"
+    },
+    "changed": false
+  },
+  "fbx_package": {
+    "LOD0": {
+      "path": "SourceAssets/Exports/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005.fbx",
+      "sha256": "3d38acb3abb8699c9026c763e69dfeac4345b8be011d5c4217cf61ab1081744b",
+      "bytes": 91100,
+      "render_object": "SM_GIA_BloodAxeCairnstone_A005_LOD0",
+      "collision_objects": [
+        "UCX_SM_GIA_BloodAxeCairnstone_A005_00",
+        "UCX_SM_GIA_BloodAxeCairnstone_A005_01",
+        "UCX_SM_GIA_BloodAxeCairnstone_A005_02",
+        "UCX_SM_GIA_BloodAxeCairnstone_A005_03"
+      ]
+    },
+    "LOD1": {
+      "path": "SourceAssets/Exports/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_LOD1.fbx",
+      "sha256": "6bf4740363bce94fdc7a213cc770cf9bdd781076cdace7975617ab314c311a15",
+      "bytes": 71820,
+      "render_object": "SM_GIA_BloodAxeCairnstone_A005_LOD1",
+      "collision_objects": []
+    },
+    "LOD2": {
+      "path": "SourceAssets/Exports/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_LOD2.fbx",
+      "sha256": "9f4d4e231b0199060f73d4d58307e740ef6e872bb65d7c50458659731c5b9914",
+      "bytes": 47628,
+      "render_object": "SM_GIA_BloodAxeCairnstone_A005_LOD2",
+      "collision_objects": []
+    },
+    "LOD3": {
+      "path": "SourceAssets/Exports/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_LOD3.fbx",
+      "sha256": "aa72f26654ea38d7d4fd0063c03926b7b8d24a119fff4051c170ff33e0e58ab1",
+      "bytes": 34156,
+      "render_object": "SM_GIA_BloodAxeCairnstone_A005_LOD3",
+      "collision_objects": []
+    }
+  },
+  "evidence_interpretation": {
+    "evidence": [
+      "locked files and hashes",
+      "approved LOD0 geometry",
+      "approved UV0",
+      "approved maps and material",
+      "numeric audit outputs"
+    ],
+    "interpretation": [
+      "LightmapUV",
+      "LOD1-LOD3 optimization",
+      "collision proxies",
+      "FBX consumer conversion",
+      "rendered proof pixels"
+    ]
+  },
+  "forbidden_outputs": {
+    "source_visual_redesign": 0,
+    "material_redesign": 0,
+    "texture_changes": 0,
+    "unreal": 0,
+    "step17_approval": 0,
+    "fully_game_ready": 0,
+    "visual_canon": 0
+  },
+  "manifest_sha256_before_self_reference": "ad55240944b87b65bdaa70cae7b5eb0b66f512d7f820c3590f76d5cefd61d169"
+}

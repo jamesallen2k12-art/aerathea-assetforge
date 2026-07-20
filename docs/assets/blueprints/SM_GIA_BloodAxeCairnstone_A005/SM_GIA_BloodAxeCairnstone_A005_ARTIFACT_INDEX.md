@@ -1,12 +1,38 @@
 # SM_GIA_BloodAxeCairnstone_A005 Artifact Index
 
-Status: Step 15 technical candidate complete and remotely closed; focused visual approval pending; mandatory restart required
+Status: Step 16 technically complete DCC game-ready candidate; scoped Git closeout pending; mandatory restart required
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
 
-## Step 15 UV / Texture / Material Candidate - Technical Closeout / Focused Review Pending
+## Step 16 DCC Game-Ready Package - Technical Pass / Step 17 Pending
+
+| Artifact | Status | Role |
+|---|---|---|
+| steps/STEP_16_DCC_GAME_READY_PACKAGE_CONTRACT.md | authoritative execution boundary | Records Step 16 authority, approved Step 15 visual prerequisite, exact LOD/UV1/collision/FBX outputs, 17 gates, downstream exclusions, closeout, and mandatory restart. |
+| manifests/STEP_16_INPUT_LOCK.json | authoritative execution input lock | Locks 17 Core, Blueprint, Step 11/14/15, approved Blender, geometry, and texture inputs by hash. |
+| Tools/DCC/build_bloodaxe_cairnstone_a005_step16_dcc_game_ready.py | candidate production builder | Rebuilds only from the immutable Step 15 candidate; creates LightmapUV, four LODs, four collision hulls, Blender source, FBXs, and manifest. |
+| Tools/DCC/audit_bloodaxe_cairnstone_a005_step16_dcc_game_ready.py | proof-supporting independent auditor | Verifies 17 gates, clean FBX re-import, topology, UV, bounds, scale, collision, classification/firewall, and creates six proof renders plus the board without saving the candidate. |
+| SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_DCCGameReady_A01.blend | candidate | Step 16 Blender package with LOD0-LOD3, UV0/UV1, one material, and four UCX hulls. |
+| SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_STEP16_DCC_GAME_READY_MANIFEST.json | candidate sidecar | Complete LOD/UV/collision/material/texture/export hashes and evidence-versus-interpretation labels. |
+| SourceAssets/Exports/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/ | candidate | Primary LOD0/collision FBX plus separate LOD1-LOD3 FBXs. |
+| manifests/STEP_16_VALIDATION_MANIFEST.json | authoritative Step 16 technical result | Records the final 17/17 pass, clean FBX imports, exact hashes/counts, proof pass, and downstream zeros. |
+| review/STEP_16_DCC_GAME_READY_CANDIDATE_REVIEW.md | candidate review package; proof only | Presents the technically complete candidate for the separate Step 17 gate without self-approval. |
+| Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/Step16/ | proof only; local-only | Preproof/final audits, FBX import proof, six unclipped renders, and final review board. |
+| steps/STEP_16_OUTPUT_RECORD.md | authoritative Step 16 technical result record | Records `pass_step16_dcc_game_ready_candidate_complete`, classifications, controlled recovery, and closeout boundary. |
+| handoffs/STEP_16_TO_STEP_17_HANDOFF.md | authoritative blocked routing | Requires mandatory restart and separate Step 17 authority; Unreal remains forbidden. |
+
+Technical result: `pass_step16_dcc_game_ready_candidate_complete`.
+
+Candidate SHA-256:
+`25dec2801ede465bf82fee1c2c279333a721aa95ed67028774aedb92bb6ce3ad`.
+All 17 gates pass; LOD triangles are `784/392/174/76`; FBX re-import is
+`4/4`; six proof frames are unclipped. Artifact status is `candidate` and
+pipeline status is `DCC game-ready candidate`. Step 17, Unreal, fully
+game-ready, approved-library, and visual-canon promotion remain zero.
+
+## Historical Step 15 UV / Texture / Material Candidate - Technical Closeout / Focused Review Approved
 
 | Artifact | Status | Role |
 |---|---|---|
@@ -23,7 +49,7 @@ Updated: 2026-07-20
 | steps/STEP_15_CORE_RECOVERY_A01_OUTPUT_RECORD.md | authoritative recovery record | Records Attempt 01 rejection, drift cause, quarantine, return to last valid source, and clean rebuild result. |
 | Saved/AssetForgeResearch/quarantine/SM_GIA_BloodAxeCairnstone_A005/Step15_Attempt01_20260720/ | invalid; quarantined; local-only | Preserves all 34 Attempt 01 files and key hashes; never presented or promoted. |
 | steps/STEP_15_OUTPUT_RECORD.md | authoritative Step 15 technical result record | Records `pass_step15_candidate_complete_pending_focused_review`, exact classifications, and mandatory stop. |
-| handoffs/STEP_15_TO_STEP_16_HANDOFF.md | authoritative blocked routing | Requires focused visual approval and mandatory restart; Step 16 remains unauthorized. |
+| handoffs/STEP_15_TO_STEP_16_HANDOFF.md | authoritative historical routing | Its focused visual approval, restart, and separate Step 16 authority prerequisites were later satisfied exactly. |
 
 Technical result:
 `pass_step15_candidate_complete_pending_focused_review`.
@@ -33,16 +59,17 @@ The clean candidate SHA-256 is
 The approved source remains byte-identical at
 `5b4af2275a70e2598e72361382fc7ea6ea318724ac928d71b2c200c768a93095`.
 All 18 gates pass; geometry changes, UV1, LOD, collision, FBX, Unreal, and
-visual-canon promotion remain zero. Pipeline status remains `DCC source
-candidate`. Focused visual approval remains Flamestrike's decision.
+visual-canon promotion remained zero at Step 15 closeout. Pipeline status was
+`DCC source candidate`. Flamestrike later approved this exact candidate for
+the separately authorized Step 16 package.
 
 The exact 27-path dependency snapshot was committed as
 `4c61f9dbfec953653334119246244b0206dbf014`, pushed to
 `assetforge/main`, and verified by exact live remote hash match. The
 pre-metadata checkpoint is `Saved/ProjectRecovery/20260720-184145/`. The
 immediate metadata closeout commit records that proven result and
-intentionally does not self-embed its own hash. The mandatory restart is
-controlling; Step 16 remains unauthorized.
+intentionally does not self-embed its own hash. That mandatory restart and the
+later Step 16 authority were satisfied before the current Step 16 execution.
 
 ## Step 14 UV, Base Color, And Material-Interpretation Plan - Authoritative Closeout
 

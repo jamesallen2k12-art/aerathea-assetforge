@@ -1,10 +1,49 @@
 # SM_GIA_BloodAxeCairnstone_A005 Approval Log
 
-Status: Step 15 technical candidate complete and remotely closed; focused visual approval pending; mandatory restart required
+Status: Step 16 technically complete DCC game-ready candidate; scoped Git closeout pending; mandatory restart required
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
+
+## Step 16 DCC Game-Ready Package Execution Authority
+
+- Date: 2026-07-20
+- Approver: Flamestrike
+- Step 16 authority statement: `resume You have complete Approval and
+  Authorization to complete step 16 From Start to finish regardless of what
+  you need to do`
+- Focused Step 15 visual decision: `approved`, in direct response to the exact
+  candidate question for SHA-256
+  `7befa56a10003c2d424de3db40e2bc402075b79644b0944413e97c92db6cab89`
+- Contract ID: `A005-CR-STEP16-DCC-GAME-READY-PACKAGE-A01`
+- Approved scope: complete bounded Step 16 contract/input lock, copied DCC
+  source, LightmapUV, LOD0-LOD3, four custom convex collision hulls, FBX
+  package, clean imported-FBX validation, independent 17-gate audit, six-view
+  proof package, controlled fail-closed recovery, visible review,
+  checkpoints, exact scoped Git closeout, remote verification, and mandatory
+  restart
+- Blueprint override: `false`; Unreal authority: `false`; Step 17 authority:
+  `false`
+- Pre-action checkpoint: `Saved/ProjectRecovery/20260720-184940/`
+- Immutable inputs: `17/17`
+- DCC candidate SHA-256:
+  `25dec2801ede465bf82fee1c2c279333a721aa95ed67028774aedb92bb6ce3ad`
+- LOD triangles: `784/392/174/76`; all four LODs closed, four-component,
+  positive-volume, exact-bounds candidates
+- LightmapUV: overlap `0`; twelve charts per LOD; nine-texel chart separation
+  at 128
+- Collision: four named convex UCX proxies; source containment pass
+- FBX validation: `4/4` package imports pass with matching triangles, UVs,
+  materials, collision, scale, and bounds
+- Final independent audit: `17/17`; pending `0`; failures `0`
+- Proof package: six fixed views plus one board; clipped views `0`
+- Technical result: `pass_step16_dcc_game_ready_candidate_complete`
+- Artifact/pipeline status: `candidate`; `DCC game-ready candidate`; not Step
+  17-approved, fully game-ready, approved-library, or visual canon
+- Git closeout: pending exact scoped commit/push/live remote verification
+- Required next gate: mandatory restart; separate Step 17 authority and
+  contract; Unreal remains forbidden
 
 ## Step 15 UV / Texture / Material Candidate Execution Authority
 
@@ -19,7 +58,8 @@ Updated: 2026-07-20
   six-view proof package, Core recovery if required, visible review,
   checkpoints, exact scoped Git closeout, remote verification, and mandatory
   restart
-- Blueprint override: `false`; Step 16 authority: `false`
+- Blueprint override: `false`; Step 16 authority at this historical Step 15
+  boundary: `false`; later superseded only by the separate authority above
 - Pre-action checkpoint: `Saved/ProjectRecovery/20260720-175240/`
 - Immutable inputs: `25/25`; source RGB identities: `6/6`
 - Attempt 01: internally rejected before presentation; annotation-contaminated
@@ -41,8 +81,8 @@ Updated: 2026-07-20
   `pass_step15_candidate_complete_pending_focused_review`
 - Artifact/pipeline status: `candidate`; `DCC source candidate`; not DCC
   game-ready, fully game-ready, finished appearance, or visual canon
-- Focused visual decision: pending Flamestrike; technical completion is not
-  self-approval of appearance
+- Focused visual decision: approved by Flamestrike on 2026-07-20 for the exact
+  candidate SHA above; this satisfied the prerequisite for authorized Step 16
 - Exact dependency-complete staged scope: `27/27`; outside scope `0`
 - JSON/Python structure, schema-only preflights, staged diff check, and secret
   scan: passed; unstaged in-scope differences `0`
@@ -53,8 +93,8 @@ Updated: 2026-07-20
 - Pre-metadata checkpoint: `Saved/ProjectRecovery/20260720-184145/`
 - Immediate metadata closeout commit: records the already-proven dependency
   result and intentionally does not self-embed its own hash
-- Required next gate: mandatory restart; focused visual decision remains
-  pending; Step 16 remains unauthorized
+- Historical next gate: mandatory restart plus focused visual decision; both
+  were later satisfied before the separately authorized Step 16 execution
 
 ## Step 14 UV, Base Color, And Material-Interpretation Plan Authority
 

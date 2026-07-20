@@ -6031,3 +6031,93 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260720-184145/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260720-184145/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-20 18:49:40 EDT -0400 - before authorized A005 Step 16 DCC game-ready candidate
+
+- Snapshot: `Saved/ProjectRecovery/20260720-184940/`
+- Git: branch `main`, HEAD `a531bc5`, status lines `244`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260720-184940/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260720-184940/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260720-184940/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-20 19:05:47 EDT -0400 - A005 Step 16 first build blocked at four technical gates before proof
+
+- Snapshot: `Saved/ProjectRecovery/20260720-190547/`
+- Git: branch `main`, HEAD `a531bc5`, status lines `252`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260720-190547/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260720-190547/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260720-190547/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-20 19:09:38 EDT -0400 - A005 Step 16 proof render stopped before images because World datablock was absent
+
+- Snapshot: `Saved/ProjectRecovery/20260720-190938/`
+- Git: branch `main`, HEAD `a531bc5`, status lines `252`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260720-190938/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260720-190938/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260720-190938/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-20 19:09:59 EDT -0400 - A005 Step 16 proof render stopped before frames at unavailable fallback OCIO look
+
+- Snapshot: `Saved/ProjectRecovery/20260720-190959/`
+- Git: branch `main`, HEAD `a531bc5`, status lines `252`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260720-190959/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260720-190959/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260720-190959/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-20 19:10:23 EDT -0400 - A005 Step 16 six proof renders complete board packaging stopped at Pillow compatibility
+
+- Snapshot: `Saved/ProjectRecovery/20260720-191023/`
+- Git: branch `main`, HEAD `a531bc5`, status lines `252`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260720-191023/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260720-191023/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260720-191023/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-20 19:11:08 EDT -0400 - A005 Step 16 proof board rejected for pre-update camera framing and meter display scale
+
+- Snapshot: `Saved/ProjectRecovery/20260720-191108/`
+- Git: branch `main`, HEAD `a531bc5`, status lines `252`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260720-191108/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260720-191108/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260720-191108/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-20 19:11:56 EDT -0400 - A005 Step 16 proof board rejected only imported FBX double-applied display scale
+
+- Snapshot: `Saved/ProjectRecovery/20260720-191156/`
+- Git: branch `main`, HEAD `a531bc5`, status lines `252`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260720-191156/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260720-191156/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260720-191156/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-20 19:12:24 EDT -0400 - A005 Step 16 imported FBX proof rejected only 1.85 percent bottom margin
+
+- Snapshot: `Saved/ProjectRecovery/20260720-191224/`
+- Git: branch `main`, HEAD `a531bc5`, status lines `252`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260720-191224/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260720-191224/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260720-191224/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-20 19:16:06 EDT -0400 - A005 Step 16 17 of 17 pass visible review opened before exact scoped Git closeout
+
+- Snapshot: `Saved/ProjectRecovery/20260720-191606/`
+- Git: branch `main`, HEAD `a531bc5`, status lines `259`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260720-191606/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260720-191606/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260720-191606/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

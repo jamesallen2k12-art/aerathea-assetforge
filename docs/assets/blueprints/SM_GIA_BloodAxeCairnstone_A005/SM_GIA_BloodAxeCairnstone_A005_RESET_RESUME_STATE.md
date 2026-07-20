@@ -1,17 +1,48 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: Step 15 technical candidate complete and remotely closed; focused visual approval pending; mandatory restart required
+Status: Step 16 technically complete DCC game-ready candidate; scoped Git closeout pending; mandatory restart required
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
 
-## Current Resume Boundary - Step 15 Technical Candidate Complete / Focused Review Pending
+## Current Resume Boundary - Step 16 Technical Candidate Complete / Step 17 Unauthorized
+
+Flamestrike authorized complete Step 16 execution and then explicitly answered
+`approved` to the focused question approving the exact Step 15 candidate
+`7befa56a10003c2d424de3db40e2bc402075b79644b0944413e97c92db6cab89`
+for Step 16 production.
+
+Contract: `A005-CR-STEP16-DCC-GAME-READY-PACKAGE-A01`.
+
+Technical result: `pass_step16_dcc_game_ready_candidate_complete`.
+
+- Pre-action checkpoint: `Saved/ProjectRecovery/20260720-184940/`.
+- Immutable inputs: `17/17` matched.
+- DCC candidate SHA-256:
+  `25dec2801ede465bf82fee1c2c279333a721aa95ed67028774aedb92bb6ce3ad`.
+- Exact LOD0 preserved; LOD triangles: `784/392/174/76`.
+- LightmapUV: twelve charts per LOD, overlap `0`, nine-texel separation at
+  128, minimum required `4`.
+- Collision: four custom convex named UCX hulls.
+- FBX package: LOD0/collision plus LOD1-LOD3; clean re-import `4/4`.
+- Textures and one shared material remain unchanged.
+- Final audit: `17/17`; failures `0`; pending `0`.
+- Proofs: four LOD, one collision, one imported-FBX; clipped views `0`.
+- Artifact status: `candidate`; pipeline status: `DCC game-ready candidate`.
+- Unreal, Step 17 approval, fully game-ready, approved-library, and visual-
+  canon promotion: `0`.
+
+Complete the exact scoped Git closeout and stop for the mandatory restart.
+Step 17 remains unauthorized and requires a separate contract after resume.
+
+## Historical Resume Boundary - Step 15 Technical Candidate / Focused Review Approved
 
 Flamestrike stated: `resume You have full Approval and Authority to complete
-step 15 from start to finish regardless of what that requires`. This authorizes
+step 15 from start to finish regardless of what that requires`. This authorized
 the bounded Step 15 lifecycle under Contract
-`A005-CR-STEP15-UV-TEXTURE-MATERIAL-CANDIDATE-A01`; Step 16 remains forbidden.
+`A005-CR-STEP15-UV-TEXTURE-MATERIAL-CANDIDATE-A01`. At that historical
+boundary Step 16 remained forbidden; its later approval is recorded above.
 
 Attempt 01 was internally rejected before presentation because its UV-derived
 source-owner masks included printed dimension/annotation pixels. Its complete
@@ -30,12 +61,12 @@ treated as authority.
 Technical result:
 `pass_step15_candidate_complete_pending_focused_review`.
 
-Pipeline status remains `DCC source candidate`. Focused visual approval is
-pending and remains Flamestrike's decision. The exact 27-path dependency
+Pipeline status at that historical closeout was `DCC source candidate`.
+Flamestrike later gave the focused visual approval recorded above. The exact 27-path dependency
 snapshot commit `4c61f9dbfec953653334119246244b0206dbf014` is pushed to
 `assetforge/main` and live-remote verified. Pre-metadata checkpoint:
-`Saved/ProjectRecovery/20260720-184145/`. Stop for the mandatory restart.
-Step 16 is unauthorized.
+`Saved/ProjectRecovery/20260720-184145/`. The restart and separate Step 16
+authority were later satisfied.
 
 ## Historical Resume Boundary - Step 14 Complete / Mandatory Restart
 

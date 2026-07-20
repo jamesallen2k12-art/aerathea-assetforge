@@ -1,0 +1,58 @@
+{
+  "schema": "aerathea.step16_dcc_game_ready_package_input_lock.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-STEP16-DCC-GAME-READY-PACKAGE-A01",
+  "date": "2026-07-20",
+  "status": "locked_pre_execution",
+  "artifact_classification": "authoritative execution input lock",
+  "flamestrike_authority": {
+    "step16_statement": "resume You have complete Approval and Authorization to complete step 16 From Start to finish regardless of what you need to do",
+    "focused_step15_visual_decision": "approved",
+    "approved_candidate_sha256": "7befa56a10003c2d424de3db40e2bc402075b79644b0944413e97c92db6cab89",
+    "scope": "complete bounded Step 16 DCC game-ready package, technical audit, imported-FBX validation, proof package, visible review, exact scoped Git closeout, remote verification, and mandatory restart",
+    "blueprint_override_authorized": false,
+    "unreal_authorized": false,
+    "step17_authorized": false
+  },
+  "pre_action_checkpoint": "Saved/ProjectRecovery/20260720-184940/",
+  "git_pre_action": {
+    "branch": "main",
+    "head": "a531bc529443f3b4c6b975f6af76f999f8ad6684",
+    "remote": "assetforge/main",
+    "remote_head": "a531bc529443f3b4c6b975f6af76f999f8ad6684",
+    "unrelated_status_lines_before_checkpoint": 244,
+    "unrelated_worktree_entries_preserved": true
+  },
+  "locked": true,
+  "counts": {
+    "locked_inputs": 17,
+    "hashes_present": 17,
+    "missing_inputs": 0,
+    "required_lods": 4,
+    "required_collision_hulls": 4,
+    "required_fbx_files": 4
+  },
+  "locked_inputs": [
+    {"path": "AGENTS.md", "sha256": "5d2d2637a58113f0a6f5ec92e40d8bb2bda9e03fb58b4868a0d9dfbb3b57ad55", "role": "Core authority"},
+    {"path": "docs/projects/assetforge/BLOODAXE_CAIRNSTONE_PIXEL_EXACT_FRESH_START_MULTISTEP_PLAN.md", "sha256": "ba6784498d792dc85dd431c807f59620d6851af97b4cd15efe89c44a397b10b6", "role": "Step 16 Blueprint"},
+    {"path": "docs/assets/CONCEPT_ART_TO_GAME_READY_ASSET_PIPELINE.md", "sha256": "761b7e24154d0c68069efc89f21678f2fc9c2a6cb7863b4c78277b39c651655d", "role": "pipeline vocabulary and DCC game-ready definition"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_11_CONSTRUCTION_BLUEPRINT.json", "sha256": "a0859422c14dbf00b51d627c0ba257abc064e7dc78abe5b106bd0c2ee8cc75e7", "role": "LOD, collision, scale, pivot, and export authority"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_14_UV_OWNERSHIP_PLAN.json", "sha256": "ab0367c9ae2e7741822e9937f55e95d653e15914faef2f7f5977718088010283", "role": "UV0 preservation and deferred UV1 authority"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_14_MATERIAL_INTERPRETATION_MANIFEST.json", "sha256": "159f94034408d96746eb6cb64c909093861cdad1e1157b81a2b420d103c74685", "role": "material and map interpretation authority"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_14_TEXTURE_DELIVERY_AND_VALIDATION_PLAN.json", "sha256": "a7170bdd971c09101bc460fe0fedd4bae7581e27c3e62d1fb7667196fcfbb2e0", "role": "texture delivery authority"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_15_VALIDATION_MANIFEST.json", "sha256": "53c59ef8904152fcab1556608c27ffcd7d0a5b490fabff4bad0c2e748b9d7fef", "role": "Step 15 technical pass authority"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/review/STEP_15_UV_TEXTURE_MATERIAL_CANDIDATE_REVIEW.md", "sha256": "4539ec85422c9edc0f8ce946d660d406c189c55a74b6ad9ffd0d91b15cffd271", "role": "focused visual decision target"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/STEP_15_OUTPUT_RECORD.md", "sha256": "1b087127aaea271d6e3130cc90eaa2bf6afb9665d2ab284fc15d9ca21f645ef0", "role": "authoritative Step 15 result"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/handoffs/STEP_15_TO_STEP_16_HANDOFF.md", "sha256": "a29268a3e6b156d4d5e739170b3e335b4e32e16f638ff08cd18c9b0d528abab3", "role": "authoritative Step 16 routing"},
+    {"path": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_UVTextureMaterialCandidate_A01.blend", "sha256": "7befa56a10003c2d424de3db40e2bc402075b79644b0944413e97c92db6cab89", "role": "approved immutable Step 15 candidate"},
+    {"path": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_STEP15_CANDIDATE_MANIFEST.json", "sha256": "e63d1dcc62410d2741e488bc6be456890caaba46dd0958d715d97c04462497a1", "role": "approved UV0, geometry, material, and output identity"},
+    {"path": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_GEOMETRY_MANIFEST.json", "sha256": "c3c131370dc6d63f89686b78358a4597139ebbb04e59234230e0103736000a82", "role": "approved component and topology lineage"},
+    {"path": "SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/T_GIA_BloodAxeCairnstone_A005_BC.png", "sha256": "a618619ad7e0da8e8617191b1fa8a96aa74397a9cafb30ddffea8b332533c884", "role": "immutable Base Color"},
+    {"path": "SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/T_GIA_BloodAxeCairnstone_A005_N.png", "sha256": "12c75e4f2a12cad22e07d8872645744d2721d32271f4c455b407829de2ea43b2", "role": "immutable DirectX tangent Normal"},
+    {"path": "SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/T_GIA_BloodAxeCairnstone_A005_ORM.png", "sha256": "76f65c3f9f1e538b0024cbf43356a7e03bc84a67e77dfaaba16f1a259b37011c", "role": "immutable ORM"}
+  ],
+  "approved_candidate_sha256": "7befa56a10003c2d424de3db40e2bc402075b79644b0944413e97c92db6cab89",
+  "approved_lod0_geometry_sha256": "3707e01bc1e6fabeb4cfc500f074cba66a604dd1d1aa781a6b06e57ff35a9c57",
+  "required_uv1": {"name": "LightmapUV", "resolution": 128, "minimum_padding_texels": 4, "overlap_area_allowed": 0},
+  "forbidden": {"unreal": true, "step17": true, "visual_canon": true, "fully_game_ready": true, "unrelated_worktree_changes": true}
+}
