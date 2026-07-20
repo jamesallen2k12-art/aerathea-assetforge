@@ -802,5 +802,24 @@
       "status": "pass",
       "evidence": "DCC source candidate; proof only review"
     }
-  ]
+  ],
+  "git_closeout": {
+    "dependency_scope_paths": 13,
+    "outside_scope_staged_paths": 0,
+    "json_files_parsed": 3,
+    "python_files_compiled": 2,
+    "locked_input_hashes_matched": 52,
+    "proof_hashes_matched": 6,
+    "review_board_hash_matched": true,
+    "secret_matches": 0,
+    "unstaged_in_scope_differences": 0,
+    "dependency_snapshot_commit": "e2282f057d45b190cd58f7d4da7907d7c19e869b",
+    "push_remote": "assetforge",
+    "push_branch": "main",
+    "push_passed": true,
+    "remote_hash": "e2282f057d45b190cd58f7d4da7907d7c19e869b",
+    "local_remote_hash_match": true,
+    "pre_metadata_checkpoint": "Saved/ProjectRecovery/20260720-155609/",
+    "metadata_commit_self_embedded": false
+  }
 }

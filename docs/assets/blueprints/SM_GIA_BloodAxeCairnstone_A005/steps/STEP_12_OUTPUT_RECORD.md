@@ -1,6 +1,7 @@
 # A005 Step 12 DCC Source Geometry Candidate Output Record
 
-Status: Step 12 candidate and proof package complete; scoped Git closeout pending
+Status: Step 12 complete; DCC source candidate and proof package validated;
+dependency snapshot pushed and remotely verified; mandatory restart required
 
 Artifact classification: `authoritative Step 12 result record`; candidate asset remains `candidate`
 
@@ -110,13 +111,23 @@ record were automatically opened in visible desktop applications.
 
 ## Git Closeout
 
-The exact Step 12 dependency commit, push, remote verification, and immediate
-metadata closeout are pending at this record revision. Unrelated user work and
-local-only proof/recovery outputs remain outside staging.
+- Exact dependency-complete staged scope: `13/13` paths; outside scope `0`.
+- JSON parse: `3/3`; Python compile: `2/2`; locked hashes: `52/52`; proof
+  hashes: `6/6`; review-board hash: passed.
+- Secret matches and unstaged in-scope differences: `0`.
+- Dependency snapshot commit:
+  `e2282f057d45b190cd58f7d4da7907d7c19e869b`.
+- Push to `assetforge/main`: passed.
+- Remote verification: local and remote hashes matched exactly at the
+  dependency snapshot commit.
+- Pre-metadata checkpoint: `Saved/ProjectRecovery/20260720-155609/`.
+- The immediate metadata commit records this proven result and intentionally
+  does not self-embed its own hash.
+- Unrelated user work and local-only proof/recovery outputs remained unstaged.
 
 ## Required Next Action
 
-Complete the exact scoped Git closeout, then stop for the mandatory
-post-Step-12 restart. After resume, the next permitted action is preparation
-only of a separate Step 13 DCC Geometry Audit and Flamestrike Review contract.
-Do not repair geometry or begin downstream work in this session.
+Stop for the mandatory post-Step-12 restart. After resume, the next permitted
+action is preparation only of a separate Step 13 DCC Geometry Audit and
+Flamestrike Review contract. Do not repair geometry or begin downstream work
+in this session.

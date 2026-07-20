@@ -25,6 +25,10 @@ presentation-compatibility corrections.
 - C-005/C-006/C-007 geometry, UV, material, LOD, collision, FBX, and Unreal
   outputs: `0`.
 - Pipeline status: `DCC source candidate`.
+- Dependency snapshot commit:
+  `e2282f057d45b190cd58f7d4da7907d7c19e869b`; pushed to
+  `assetforge/main`; local/remote equality verified.
+- Pre-metadata checkpoint: `Saved/ProjectRecovery/20260720-155609/`.
 
 ## Step 13 Decision Gate
 

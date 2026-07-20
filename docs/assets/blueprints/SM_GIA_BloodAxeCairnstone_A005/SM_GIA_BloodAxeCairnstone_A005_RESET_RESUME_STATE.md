@@ -1,12 +1,12 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: Step 12 DCC source candidate complete; pre-proof audit 16 of 16 and post-proof audit 4 of 4; scoped Git closeout pending; mandatory restart required
+Status: Step 12 complete; DCC source candidate validated; pre-proof audit 16 of 16 and post-proof audit 4 of 4; dependency snapshot pushed and remotely verified; mandatory restart required
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
 
-## Current Resume Boundary - Step 12 Candidate Complete / Git Closeout Pending
+## Current Resume Boundary - Step 12 Complete / Mandatory Restart
 
 Flamestrike stated: `resume    you have full authority and full approval to
 complete step 12 from start to finish no matter what is required`. Under Core
@@ -39,13 +39,19 @@ Technical result:
   candidate and is not self-approved against the richer source.
 - C-005/C-006/C-007 geometry, UV, material, LOD, collision, FBX, Unreal, and
   Step 13 work: `0`.
-- Current pending operation: exact Step 12 dependency commit/push and remote
-  verification, followed by immediate metadata closeout.
+- Exact dependency-complete staged scope: `13/13`; outside scope `0`.
+- Dependency snapshot commit:
+  `e2282f057d45b190cd58f7d4da7907d7c19e869b`.
+- Push to `assetforge/main`: passed; local and remote hashes matched exactly.
+- Pre-metadata checkpoint: `Saved/ProjectRecovery/20260720-155609/`.
+- The immediate metadata commit records this already-proven closeout and does
+  not self-embed its own hash.
 
-Required next task: complete only that scoped Git closeout, stop for the
-mandatory post-Step-12 restart, then on resume permit only preparation of a
-separate Step 13 DCC Geometry Audit and Flamestrike Review contract. Geometry
-repair is prohibited during Step 13 review.
+Required next task: stop for the mandatory post-Step-12 restart. On resume,
+inspect the latest checkpoint, Step 12 output/audit/geometry manifest, review
+board, handoff, and this record. The next permitted action is preparation only
+of a separate Step 13 DCC Geometry Audit and Flamestrike Review contract.
+Geometry repair is prohibited during Step 13 review.
 
 ## Current Resume Boundary - Step 11 Complete / Mandatory Restart
 

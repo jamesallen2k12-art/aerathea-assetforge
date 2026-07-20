@@ -1,12 +1,12 @@
 # SM_GIA_BloodAxeCairnstone_A005 Artifact Index
 
-Status: Step 12 DCC source candidate complete; pre-proof audit 16 of 16 and post-proof audit 4 of 4; scoped Git closeout pending; mandatory restart required
+Status: Step 12 complete; DCC source candidate validated; pre-proof audit 16 of 16 and post-proof audit 4 of 4; dependency snapshot pushed and remotely verified; mandatory restart required
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
 
-## Step 12 DCC Source Geometry Candidate - Validated Candidate / Git Closeout Pending
+## Step 12 DCC Source Geometry Candidate - Validated Candidate / Authoritative Closeout
 
 | Artifact | Status | Role |
 |---|---|---|
@@ -21,6 +21,17 @@ Updated: 2026-07-20
 | Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/Step12/ | proof only; local-only | Numeric audit, six clean renders, and the paired source/candidate review board; excluded from Git by project recovery policy. |
 | steps/STEP_12_OUTPUT_RECORD.md | authoritative Step 12 result record | Classifies the bounded pass, candidate status, audit history, proof result, exclusions, and next gate. |
 | handoffs/STEP_12_TO_STEP_13_HANDOFF.md | authoritative routing | Requires restart and routes only to later Step 13 review-contract preparation; no repair or downstream escalation. |
+
+Technical result:
+`pass_step12_dcc_source_candidate_complete_pending_step13_review`.
+
+The exact 13-path dependency snapshot was committed as
+`e2282f057d45b190cd58f7d4da7907d7c19e869b`, pushed to
+`assetforge/main`, and verified by exact local/remote hash match. The
+pre-metadata checkpoint is `Saved/ProjectRecovery/20260720-155609/`. The
+immediate follow-up metadata commit records that proven closeout and
+intentionally does not self-embed its own hash. Step 12 is complete and the
+mandatory restart is controlling.
 
 ## Step 11 Production Specification And Geometry Construction Blueprint - Authoritative Closeout
 

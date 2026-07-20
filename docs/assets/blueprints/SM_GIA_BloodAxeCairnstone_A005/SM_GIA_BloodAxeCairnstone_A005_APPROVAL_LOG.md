@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A005 Approval Log
 
-Status: Step 12 DCC source candidate complete; pre-proof audit 16 of 16 and post-proof audit 4 of 4; scoped Git closeout pending; mandatory restart required
+Status: Step 12 complete; DCC source candidate validated; pre-proof audit 16 of 16 and post-proof audit 4 of 4; dependency snapshot pushed and remotely verified; mandatory restart required
 
 Artifact classification: `authoritative`
 
@@ -30,8 +30,17 @@ Updated: 2026-07-20
 - Pipeline status: `DCC source candidate`; visual fidelity remains pending
   Flamestrike Step 13 review
 - UV, texture, material, LOD, collision, FBX, Unreal, and Step 13 work: `0`
-- Required next gate: exact scoped Git closeout, mandatory restart, then only
-  preparation of a separate Step 13 review contract
+- Exact dependency-complete staged scope: `13/13`; outside scope `0`
+- JSON parse `3/3`; Python compile `2/2`; locked hashes `52/52`; proof hashes
+  `6/6`; secret matches and unstaged in-scope differences `0`
+- Dependency snapshot commit:
+  `e2282f057d45b190cd58f7d4da7907d7c19e869b`
+- Push to `assetforge/main`: passed; local and remote hashes matched exactly
+- Pre-metadata checkpoint: `Saved/ProjectRecovery/20260720-155609/`
+- Immediate metadata closeout commit: records the proven snapshot result; its
+  hash is intentionally not self-embedded
+- Required next gate: mandatory restart, then only preparation of a separate
+  Step 13 review contract
 
 ## Step 11 Production Specification And Geometry Construction Blueprint Authority
 
