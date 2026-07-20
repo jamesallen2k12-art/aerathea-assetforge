@@ -1,0 +1,173 @@
+{
+  "schema": "aerathea.step11_vertex_authority_map.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-STEP11-PROD-SPEC-GCB-A01",
+  "date": "2026-07-20",
+  "status": "authoritative_complete_planned_vertex_group_coverage",
+  "artifact_classification": "authoritative Step 11 planning map; no vertices or geometry created",
+  "coverage_rule": "Every Step 12 vertex must resolve to exactly one primary authority_group_id and may list secondary constraints. Unmapped or multiply primary-mapped vertices fail closed.",
+  "required_geometry_manifest_fields": [
+    "vertex_range_or_index_set",
+    "authority_group_id",
+    "component_id",
+    "visibility_class",
+    "owner_view_or_rule",
+    "source_record_or_interpretation_rule",
+    "technical_rule_ids"
+  ],
+  "authority_groups": [
+    {
+      "id": "VAG-001-C001-FRONT-XZ",
+      "component_id": "C-001",
+      "visibility_class": "visible_source_constrained",
+      "planned_vertex_scope": "C-001 -Y/front owner-lane silhouette and profile vertices",
+      "primary_authority": ["STEP_06_FRONT_MEASUREMENT_MANIFEST.json", "MC-FRONT-C001-PROFILE", "DIM-C001-X-120", "DIM-Z-OH-220"],
+      "interpretation_authority": ["I10-001-R1-A", "I10-002-R1-A"],
+      "technical_rules": ["S11-TR-002", "S11-TR-003"],
+      "blocked_claims": ["source center", "unified Z scale", "physical back pairing"]
+    },
+    {
+      "id": "VAG-002-C001-LEFT-YZ",
+      "component_id": "C-001",
+      "visibility_class": "visible_source_constrained",
+      "planned_vertex_scope": "C-001 -X/left owner-lane silhouette and profile vertices",
+      "primary_authority": ["STEP_07_LEFT_MEASUREMENT_MANIFEST.json", "MC-LEFT-C001-PROFILE", "DIM-C001-Y-090", "DIM-Z-OH-220"],
+      "interpretation_authority": ["I10-001-R1-A", "I10-002-R1-A"],
+      "technical_rules": ["S11-TR-002", "S11-TR-003"],
+      "blocked_claims": ["source center", "unified Z scale", "physical right pairing"]
+    },
+    {
+      "id": "VAG-003-C001-CORNER-JOINS",
+      "component_id": "C-001",
+      "visibility_class": "visible_bounded_interpretation",
+      "planned_vertex_scope": "owner-lane boundary vertices consumed by four direct planar corner-join facets; no standalone corner sample",
+      "primary_authority": ["I10-002-R1-A-VIEW-OWNED-FACETED-ENVELOPE", "I10-010-R1-A-R5-R7-R9-BOUNDED-OWNERSHIP"],
+      "interpretation_authority": ["S10R-006-R7-A-CVCOR-A01", "S10R-006-R9-A-CGFC-A01"],
+      "technical_rules": ["S11-TR-003"],
+      "blocked_claims": ["physical corner pair", "analytic rounded primitive", "cross-lane fitted vertex"]
+    },
+    {
+      "id": "VAG-004-C001-TOP",
+      "component_id": "C-001",
+      "visibility_class": "visible_source_constrained_plus_technical_triangulation",
+      "planned_vertex_scope": "C-001 +Z boundary and optional construction-origin fan vertex",
+      "primary_authority": ["STEP_08R_TOP_MEASUREMENT_MANIFEST.json", "STEP_08R_TOP_SECTOR_CLASSIFICATION.json", "I10-010-R1-A"],
+      "interpretation_authority": ["I10-009-R1-A-CONSTRUCTION-ORIGIN-GROUND-PIVOT"],
+      "technical_rules": ["S11-TR-001", "S11-TR-003"],
+      "blocked_claims": ["source top center", "source pivot"]
+    },
+    {
+      "id": "VAG-005-C001-HIDDEN-BOTTOM",
+      "component_id": "C-001",
+      "visibility_class": "source_invisible_hidden_closure",
+      "planned_vertex_scope": "minimum C-001 independent bottom cap inside CL-001 overlap",
+      "primary_authority": ["I10-006-R1-B", "I10-008-R1-A"],
+      "technical_rules": ["S11-TR-006"],
+      "blocked_claims": ["source-authored closure", "shared CL-001 loop"]
+    },
+    {
+      "id": "VAG-006-C002-VISIBLE-TIER",
+      "component_id": "C-002",
+      "visibility_class": "visible_source_constrained_plus_bounded_course_rule",
+      "planned_vertex_scope": "C-002 independent upper masonry tier visible shell",
+      "primary_authority": ["MC-FRONT-C002-PROFILE", "MC-LEFT-C002-PROFILE", "STEP_06_FRONT_MEASUREMENT_MANIFEST.json", "STEP_07_LEFT_MEASUREMENT_MANIFEST.json"],
+      "interpretation_authority": ["I10-003-R1-A-SEPARATE-NESTED-COURSES"],
+      "technical_rules": ["S11-TR-002", "S11-TR-004", "S11-TR-005"],
+      "blocked_claims": ["source-exact individual height", "copied C003 contour", "individual hidden stone count"]
+    },
+    {
+      "id": "VAG-007-C002-HIDDEN-CLOSURES",
+      "component_id": "C-002",
+      "visibility_class": "source_invisible_hidden_closure",
+      "planned_vertex_scope": "minimum independent C-002 top and bottom caps inside CL-001/CL-002 overlap",
+      "primary_authority": ["I10-006-R1-B", "I10-008-R1-A"],
+      "technical_rules": ["S11-TR-006"],
+      "blocked_claims": ["shared source loop", "snap anchor"]
+    },
+    {
+      "id": "VAG-008-C003-VISIBLE-TIER",
+      "component_id": "C-003",
+      "visibility_class": "visible_source_constrained_plus_bounded_course_rule",
+      "planned_vertex_scope": "C-003 independent lower masonry tier visible shell including K80-bounded CL-003 edge",
+      "primary_authority": ["MC-FRONT-C003-PROFILE", "MC-LEFT-C003-PROFILE", "S10R003A sixteen CL-003 mappings", "K80"],
+      "interpretation_authority": ["I10-003-R1-A", "I10-006-R1-B"],
+      "technical_rules": ["S11-TR-002", "S11-TR-004", "S11-TR-005"],
+      "blocked_claims": ["K80 as source footprint", "source-exact course height", "copied C002 contour"]
+    },
+    {
+      "id": "VAG-009-C003-HIDDEN-CLOSURES",
+      "component_id": "C-003",
+      "visibility_class": "source_invisible_hidden_closure",
+      "planned_vertex_scope": "minimum independent C-003 top and bottom caps inside CL-002/CL-003 overlap",
+      "primary_authority": ["I10-006-R1-B", "I10-008-R1-A"],
+      "technical_rules": ["S11-TR-006"],
+      "blocked_claims": ["shared K80 loop", "physical contact center"]
+    },
+    {
+      "id": "VAG-010-C004-TRANSITION-LATTICE",
+      "component_id": "C-004",
+      "visibility_class": "visible_bounded_interpretation",
+      "planned_vertex_scope": "32 by 3 planned N3/K80 transition lattice vertices under R5/R7/R9 owner routing",
+      "primary_authority": ["I10-004-R1-A-N3-OUTER-PERIMETER", "K80", "S10R-006-R3-A-AFM-A01", "S10R-006-R5-A-LBCR-A01", "S10R-006-R7-A-CVCOR-A01", "S10R-006-R9-A-CGFC-A01"],
+      "interpretation_authority": ["I10-010-R1-A"],
+      "technical_rules": ["S11-TR-007"],
+      "planned_vertex_formula": "V(i,j)=(B_vj(q_i).x,B_vj(q_i).y,10*(1-v_j)); q_i=-1/2+i/4, i=0..31; v_j in {0,1/2,1}",
+      "blocked_claims": ["source perimeter", "source seam", "periodic R9 wrap"]
+    },
+    {
+      "id": "VAG-011-C004-SOURCE-OWNED-SILHOUETTE",
+      "component_id": "C-004",
+      "visibility_class": "visible_source_constrained",
+      "planned_vertex_scope": "front and left source-owned irregular apron silhouette anchor vertices, inward-contained by N3",
+      "primary_authority": ["F-BTIR-01 through F-BTIR-06 outer anchors", "L-BTIR-01 through L-BTIR-06 outer anchors", "MC-FRONT-C004-OUTER-EDGES", "MC-LEFT-C004-OUTER-EDGES"],
+      "interpretation_authority": ["I10-004-R1-A"],
+      "technical_rules": ["S11-TR-002", "S11-TR-007"],
+      "blocked_claims": ["outward N3 exceedance", "back/right construction ownership", "individual rubble identity across views"]
+    },
+    {
+      "id": "VAG-012-C004-FINAL-FIRST-CLOSURE-FACE",
+      "component_id": "C-004",
+      "visibility_class": "visible_technical_topology_closure",
+      "planned_vertex_scope": "last-to-first q-column closure face using existing endpoint vertices only",
+      "primary_authority": ["I10-010-R1-A", "R7 G_3 +X label-only successor", "R9 G_3 endpoint selector"],
+      "technical_rules": ["S11-TR-007"],
+      "blocked_claims": ["symbolic periodic wrap", "q=15/2 evaluation", "source endpoint identification"]
+    },
+    {
+      "id": "VAG-013-C004-Z0-BOTTOM",
+      "component_id": "C-004",
+      "visibility_class": "source_invisible_bottom",
+      "planned_vertex_scope": "flat undecorated Z=0 underside bounded by N3",
+      "primary_authority": ["I10-007-R1-A-FLAT-Z0-BOTTOM", "I10-004-R1-A-N3-OUTER-PERIMETER"],
+      "technical_rules": ["S11-TR-001", "S11-TR-006"],
+      "blocked_claims": ["source-authored underside", "negative-Z depth", "rubble continuation"]
+    },
+    {
+      "id": "VAG-014-CL001-CL003-HIDDEN-OVERLAP",
+      "component_id": "CL-001_CL-002_CL-003",
+      "visibility_class": "source_invisible_technical_overlap",
+      "planned_vertex_scope": "closure rim vertices required for one-centimeter positive intersection at each contact",
+      "primary_authority": ["I10-006-R1-B-INDEPENDENT-WATERTIGHT-OCCLUDED-OVERLAP", "127 exact visible contact samples as visibility constraints"],
+      "technical_rules": ["S11-TR-006"],
+      "blocked_claims": ["shared contact loop", "snap anchor", "visible overlap"]
+    }
+  ],
+  "non_vertex_consumers": [
+    {"component_id": "C-005", "classification": "face-owned later UV/BaseColor/Normal consumer; zero Step 12 vertices", "authority": ["I10-005-R1-A", "S11-TR-009"]},
+    {"component_id": "C-006", "classification": "face-owned later UV/BaseColor/Normal consumer; zero Step 12 vertices", "authority": ["I10-005-R1-A", "S11-TR-009"]},
+    {"component_id": "C-007", "classification": "face-owned later UV/BaseColor/Normal consumer; zero Step 12 vertices", "authority": ["I10-005-R1-A", "S11-TR-009"]}
+  ],
+  "holdouts": {
+    "back": "validation only; no construction vertex ownership",
+    "right": "validation only; no construction vertex ownership",
+    "perspective": "non-metric corroboration only"
+  },
+  "counts": {
+    "primary_authority_groups": 14,
+    "semantic_component_ids_accounted": 7,
+    "contact_ids_accounted": 3,
+    "non_vertex_decoration_consumers": 3,
+    "unmapped_planned_vertex_classes": 0,
+    "geometry_created": 0
+  }
+}

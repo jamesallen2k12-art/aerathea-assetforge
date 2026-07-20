@@ -1,10 +1,62 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: Step 10 complete; ten of ten current written dispositions authoritative; final audit passed 30 of 30 after one bounded wording correction; mandatory restart required; Step 11 contract preparation only after restart
+Status: Step 11 complete; authoritative production specification and geometry construction blueprint; final audit passed 27 of 27 after one bounded validation correction; mandatory restart required; Step 12 contract preparation only after restart
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
+
+## Current Resume Boundary - Step 11 Complete / Mandatory Restart
+
+Flamestrike stated: `resume, I am giving you full authority to do whatever you
+need to to complete step 11 from start to finish, You have full approval and
+Authority`. Under Core and the active Blueprint, this authorized the entire
+Step 11 planning lifecycle, validation, visible review, closeout records,
+checkpoints, scoped commit/push, and remote verification. It did not convert
+planning authority into DCC, geometry, texture, FBX, Unreal, or Step 12
+execution authority.
+
+Technical result:
+`pass_authoritative_step11_blueprint_complete_mandatory_restart`.
+
+- Contract ID: `A005-CR-STEP11-PROD-SPEC-GCB-A01`.
+- Pre-action checkpoint: `Saved/ProjectRecovery/20260720-145841/`.
+- Locked immutable inputs: `42/42` matched.
+- Technical construction rules: `10/10`; each is marked interpretation and
+  not source evidence.
+- Planned vertex authority groups: `14/14`; unmapped future vertex classes:
+  `0`.
+- Semantic components: `7/7`; C-001 through C-004 are four planned primary
+  shells, while C-005 through C-007 remain later face-owned non-geometry
+  decoration consumers.
+- Contact levels: `3/3`; source-visible contact samples: `127`; CL-003
+  mappings: `16`.
+- Planned review views: `6/6`.
+- First complete blueprint audit: `22/24`; `G19` conservatively identified the
+  pre-existing A005 `CoreRecovery/` directory and `G23` used an overly narrow
+  literal phrase check.
+- Smallest sufficient correction: preserve and exclude the historical
+  quarantined/reference-only diagnostics, isolate the future unused
+  `Production/` subpath, reject unexpected automation siblings, and correct
+  only the read-only phrase check. Changed blueprint decisions and created
+  production outputs: `0`.
+- Complete blueprint rerun: `24/24`; failures `0`.
+- Final closeout audit: `27/27`; failures `0`.
+- Visible planning review and authoritative output record: opened in a desktop
+  editor.
+- DCC runs and Unreal runs: `0`; geometry, UV, texture, material, FBX, LOD,
+  collision, and production outputs: `0`.
+- `S10R-BLOCK-009` is resolved only as the completed Step 11 planning gate.
+- Dependency snapshot commit: pending scoped Git closeout.
+- Push to `assetforge/main` and exact remote verification: pending scoped Git
+  closeout.
+
+Required next task: stop for the mandatory post-Step-11 restart. After resume,
+inspect the latest checkpoint, Step 11 handoff, construction blueprint, vertex
+authority map, validation manifest, and this record. The next permitted action
+is preparation and visible presentation only of a separate Step 12 DCC Source
+Geometry Candidate contract. Do not launch Blender or create geometry before
+that new contract is approved.
 
 ## Current Resume Boundary - Step 10 Complete / Mandatory Restart
 

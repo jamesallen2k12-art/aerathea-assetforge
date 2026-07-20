@@ -1,10 +1,56 @@
 # SM_GIA_BloodAxeCairnstone_A005 Approval Log
 
-Status: Step 10 complete; ten of ten current written dispositions authoritative; final audit passed 30 of 30 after one bounded wording correction; mandatory restart required; Step 11 contract preparation only after restart
+Status: Step 11 complete; authoritative production specification and geometry construction blueprint; final audit passed 27 of 27 after one bounded validation correction; mandatory restart required; Step 12 contract preparation only after restart
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
+
+## Step 11 Production Specification And Geometry Construction Blueprint Authority
+
+- Date: 2026-07-20
+- Approver: Flamestrike
+- Approval statement: `resume, I am giving you full authority to do whatever
+  you need to to complete step 11 from start to finish, You have full approval
+  and Authority`
+- Contract ID: `A005-CR-STEP11-PROD-SPEC-GCB-A01`
+- Authority interpretation: complete the Blueprint-defined Step 11 planning
+  lifecycle under Core, including input lock, construction decisions, bounded
+  technical rules, vertex-authority mapping, independent validation, visible
+  review, status/handoff records, checkpoints, scoped Git closeout, push, and
+  remote verification
+- Excluded production scope: DCC or Blender launch, generated geometry, UVs,
+  textures, materials, FBX, LOD meshes, collision assets, Unreal work, or Step
+  12 execution
+- Pre-action checkpoint: `Saved/ProjectRecovery/20260720-145841/`
+- Locked immutable inputs: `42/42` matched
+- Technical construction rules: `10/10`; explicitly bounded interpretation,
+  not source evidence
+- Planned vertex authority groups: `14/14`; unmapped future vertex classes:
+  `0`
+- Semantic components: `7/7`; four future primary geometry shells and three
+  later face-owned non-geometry decoration consumers
+- Contact levels: `3/3`; source-visible contact samples: `127`; CL-003
+  mappings: `16`
+- Review views: `6/6`
+- First complete blueprint audit: `22/24`; two gates failed closed
+- Bounded correction: preserved the pre-existing quarantined/reference-only
+  `CoreRecovery/` diagnostics, isolated the unused future `Production/`
+  subpath, rejected unexpected siblings, and corrected one literal read-only
+  phrase check; blueprint decisions and production outputs changed: `0`
+- Blueprint audit rerun: `24/24`; failures `0`
+- Final closeout audit: `27/27`; failures `0`
+- Visible review: opened in a desktop editor with the authoritative output
+  record
+- Geometry, DCC, texture, FBX, LOD, collision, Unreal, and production outputs:
+  `0`
+- `S10R-BLOCK-009`: resolved only as the completed Step 11 planning gate
+- Dependency snapshot commit: pending scoped Git closeout
+- Push and exact local/remote verification: pending scoped Git closeout
+- Step 11: complete
+- Required next gate: mandatory restart, followed only by preparation of a
+  separate Step 12 DCC Source Geometry Candidate contract; no DCC launch or
+  geometry creation is authorized in this session
 
 ## Final Step 10 Ten-Item Disposition and Closeout Authority
 

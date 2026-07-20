@@ -1,10 +1,49 @@
 # SM_GIA_BloodAxeCairnstone_A005 Artifact Index
 
-Status: Step 10 complete; ten of ten current written dispositions authoritative; final audit passed 30 of 30 after one bounded wording correction; mandatory restart required; Step 11 contract preparation only after restart
+Status: Step 11 complete; authoritative production specification and geometry construction blueprint; final audit passed 27 of 27 after one bounded validation correction; mandatory restart required; Step 12 contract preparation only after restart
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
+
+## Step 11 Production Specification And Geometry Construction Blueprint - Authoritative Closeout
+
+| Artifact | Status | Role |
+|---|---|---|
+| steps/STEP_11_PRODUCTION_SPECIFICATION_AND_GEOMETRY_CONSTRUCTION_BLUEPRINT_CONTRACT.md | authoritative for completed Step 11 scope | Records Flamestrike's full Step 11 authority, the planning-only boundary, exact outputs, validation gates, visible-review requirement, Git closeout, and mandatory restart. |
+| manifests/STEP_11_INPUT_LOCK.json | proof only | Locks and verifies all 42 immutable source, Blueprint, measurement, formula, ownership, rule, and status inputs consumed by Step 11. |
+| manifests/STEP_11_TECHNICAL_RULE_REGISTRY.json | authoritative bounded Step 11 technical interpretation | Records ten build-enabling technical rules while explicitly separating them from source evidence and future geometry. |
+| manifests/STEP_11_CONSTRUCTION_BLUEPRINT.json | authoritative Step 11 planning blueprint | Defines identity, frame, dimensions, construction order, seven semantic components, three contacts, topology, runtime assembly, LOD, collision, texture/material, review, and fail-closed requirements. |
+| manifests/STEP_11_VERTEX_AUTHORITY_MAP.json | authoritative future vertex-authority routing | Maps fourteen future Step 12 vertex classes to exact source, approved Step 10 interpretation, or bounded Step 11 technical authority with zero unmapped class. |
+| manifests/STEP_11_VALIDATION_MANIFEST.json | proof only; final 27/27 pass | Records the fail-closed 22/24 run, bounded validation correction, 24/24 blueprint rerun, final 27/27 closeout audit, hashes, zero-output state, and restart routing. |
+| review/STEP_11_PRODUCTION_BLUEPRINT_REVIEW.md | authoritative planning review | Provides the visible planning-only construction review without presenting or implying geometry approval. |
+| steps/STEP_11_OUTPUT_RECORD.md | authoritative Step 11 decision output | Records the completed construction blueprint, exact limits, bounded correction, Block 009 planning resolution, and mandatory stop. |
+| handoffs/STEP_11_TO_STEP_12_HANDOFF.md | authoritative post-Step-11 routing | Requires the mandatory restart and permits only later preparation of a separate Step 12 DCC Source Geometry Candidate contract. |
+| Tools/DCC/audit_bloodaxe_cairnstone_a005_step11_blueprint.py | proof-supporting read-only auditor | Validates the locked inputs, structured rules, construction blueprint, vertex authority, zero-production state, review package, output, handoff, and changed-path allowlist. |
+
+Technical result:
+`pass_authoritative_step11_blueprint_complete_mandatory_restart`.
+
+Step 11 defines one buildable, evidence-routed construction plan with 42
+locked inputs, ten technical rules, fourteen vertex authority groups, seven
+semantic components, three contacts, and six future review views. It plans
+four independent watertight shells, one combined runtime Static Mesh, four
+LODs, four convex collision hulls, one material slot, and a 2K Base
+Color/Normal/ORM set. Created DCC, geometry, texture, FBX, LOD, collision,
+Unreal, and production outputs remain zero.
+
+The first complete blueprint audit failed closed at `22/24`. The bounded
+correction preserved and excluded the pre-existing quarantined/reference-only
+`CoreRecovery/` diagnostics, isolated the unused future `Production/` subpath,
+and corrected one literal auditor phrase check. No construction authority or
+production state changed. The blueprint rerun passed `24/24`; the final
+closeout audit passed `27/27` with zero failures. `S10R-BLOCK-009` is resolved
+only as the Step 11 planning gate.
+
+Dependency snapshot commit, push, and exact remote verification: pending
+scoped Git closeout. The mandatory restart is controlling; only Step 12
+contract preparation may follow it, and no DCC or geometry work is authorized
+in this session.
 
 ## Final Step 10 Ten-Item Disposition - Authoritative Closeout
 

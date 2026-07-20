@@ -1,0 +1,237 @@
+{
+  "schema": "aerathea.step11_technical_rule_registry.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-STEP11-PROD-SPEC-GCB-A01",
+  "date": "2026-07-20",
+  "status": "authoritative_step11_technical_rules_for_later_step12_only",
+  "artifact_classification": "authoritative Step 11 technical construction rules; not source evidence",
+  "authority_boundary": {
+    "parent": "S10R_008_R2_A final ten-item Step 10 disposition",
+    "flamestrike_authority": "full Step 11 start-to-finish authority after mandatory restart",
+    "source_evidence_modified": false,
+    "historical_authority_modified": false,
+    "physical_source_to_target_transform_claimed": false,
+    "geometry_created": false
+  },
+  "rules": [
+    {
+      "id": "S11-TR-001-CONSTRUCTION-FRAME",
+      "title": "Centimeter target frame and production datum",
+      "status": "approved",
+      "parent_authority": ["I10-001-R1-A-TARGET-SPACE-NO-RECTIFICATION", "I10-009-R1-A-CONSTRUCTION-ORIGIN-GROUND-PIVOT"],
+      "rule": {
+        "unit": "centimeter",
+        "right_handed": true,
+        "x_role": "front-view horizontal; +X is source-registered right",
+        "y_role": "depth; +Y is source-registered back",
+        "z_role": "height; +Z is up",
+        "origin_cm": [0, 0, 0],
+        "pivot_cm": [0, 0, 0],
+        "ground_station_z_cm": 0,
+        "approved_target_extrema_cm": {
+          "assembled_height": 220,
+          "C001_max_width": 120,
+          "C001_max_depth": 90,
+          "C004_max_width": 140,
+          "C004_max_depth": 110,
+          "assembled_base_span": 35
+        }
+      },
+      "non_claims": ["source center", "mass center", "physical pixel center", "source placement transform", "snap anchor"]
+    },
+    {
+      "id": "S11-TR-002-OWNER-VIEW-CONSTRAINT-NORMALIZATION",
+      "title": "Independent owner-view constraint normalization",
+      "status": "approved",
+      "parent_authority": ["I10-001-R1-A-TARGET-SPACE-NO-RECTIFICATION", "I10-002-R1-A-VIEW-OWNED-FACETED-ENVELOPE"],
+      "construction_owners": {
+        "front": "XZ silhouette/profile constraint owner",
+        "left": "YZ silhouette/profile constraint owner",
+        "top": "+Z visible top-sector constraint owner",
+        "back": "validation holdout only",
+        "right": "validation holdout only",
+        "perspective": "non-metric corroboration only"
+      },
+      "rule": {
+        "formula": "T_V(p) = T_min + (p-p_min)*(T_max-T_min)/(p_max-p_min)",
+        "application": "same-view construction constraint normalization using that view's approved annotation endpoints and the matching approved physical target only",
+        "axis_isolation": true,
+        "front_X_to_target_X": true,
+        "front_Z_to_target_Z": true,
+        "left_Y_to_target_Y": true,
+        "left_Z_to_target_Z": true,
+        "cross_view_scale_unification": false,
+        "cross_view_pixel_pairing": false,
+        "source_raster_modified": false,
+        "back_right_construction_use": false,
+        "piecewise_visible_profile_interpolation": "straight segments between adjacent approved same-view outer-edge observations only",
+        "averaging": false,
+        "smoothing": false
+      },
+      "non_claims": ["physical source-to-target transform", "rectified image", "unified X/Y/Z pixel scale", "cross-panel point identity", "source center"]
+    },
+    {
+      "id": "S11-TR-003-C001-FACETED-SECTOR-CONSTRUCTION",
+      "title": "C-001 view-owned faceted envelope and corner joins",
+      "status": "approved",
+      "parent_authority": ["I10-002-R1-A-VIEW-OWNED-FACETED-ENVELOPE", "I10-010-R1-A-R5-R7-R9-BOUNDED-OWNERSHIP", "S11-TR-002-OWNER-VIEW-CONSTRAINT-NORMALIZATION"],
+      "rule": {
+        "primary_profile_owners": ["front/-Y", "left/-X"],
+        "profile_interpolation": "piecewise linear through approved owner-view observations after S11-TR-002 normalization",
+        "analytic_smoothing_primitive": null,
+        "corner_physical_pairing": false,
+        "corner_join": "one direct planar facet between each adjacent pair of independently constructed owner-lane boundary edges; no intermediate corner sample, fitted curve, or new extremum",
+        "gap_owner_routing": "R7 predecessor/successor branches with successor midpoint ties; R9 endpoint selector controls authority routing only",
+        "owner_label_change_creates_geometry_seam": false,
+        "top_cap": "+Z source-owned perimeter constraints with a construction-origin fan vertex only when required for watertight triangulation",
+        "bottom_closure": "hidden independent closure under I10-006/I10-008 and S11-TR-006",
+        "maximum_extents_cm": [120, 90, 220]
+      },
+      "non_claims": ["source corner", "physical cross-view corner pair", "analytic rounded primitive", "source center", "source seam"]
+    },
+    {
+      "id": "S11-TR-004-BASE-VERTICAL-STATIONS",
+      "title": "Construction-only base-course stations within the 35 cm span",
+      "status": "approved",
+      "parent_authority": ["I10-003-R1-A-SEPARATE-NESTED-COURSES", "I10-006-R1-B-INDEPENDENT-WATERTIGHT-OCCLUDED-OVERLAP"],
+      "rule": {
+        "base_visible_span_cm": [0, 35],
+        "contact_stations_cm": {
+          "CL-003_C003_C004": 10,
+          "CL-002_C002_C003": 23,
+          "CL-001_C001_C002": 35
+        },
+        "selection_reason": "smallest stable monotonic four-layer stack that preserves the authoritative total span and keeps two masonry courses distinct",
+        "visible_course_spans_cm": {
+          "C004": [0, 10],
+          "C003": [10, 23],
+          "C002": [23, 35],
+          "C001": [35, 220]
+        },
+        "individual_course_height_source_exact": false
+      },
+      "non_claims": ["source-measured individual course height", "source contact center", "source snap station"]
+    },
+    {
+      "id": "S11-TR-005-INDEPENDENT-BASE-CONTAINMENT",
+      "title": "Independent C-002/C-003 construction containments and approved C-004 boundaries",
+      "status": "approved",
+      "parent_authority": ["I10-003-R1-A-SEPARATE-NESTED-COURSES", "I10-004-R1-A-N3-OUTER-PERIMETER", "I10-006-R1-B-INDEPENDENT-WATERTIGHT-OCCLUDED-OVERLAP"],
+      "rule": {
+        "C004_outer_bottom_boundary": {"equation": "abs(x/70)^3 + abs(y/55)^3 = 1", "full_extents_cm": [140, 110], "authority": "N3 / I10-004"},
+        "C004_inner_visible_CL003_boundary": {"equation": "abs(x/56)^3 + abs(y/44)^3 = 1", "full_extents_cm": [112, 88], "authority": "K80 at CL-003 only"},
+        "C003_visible_containment": {"CL003_max_box_cm": [112, 88], "CL002_max_box_cm": [108, 84], "shape_rule": "independent owner-view faceted course; do not copy or scale K80"},
+        "C002_visible_containment": {"CL002_max_box_cm": [106, 82], "CL001_max_box_cm": [102, 78], "shape_rule": "independent owner-view faceted course; do not copy or scale C003"},
+        "C001_contact_requirement": "owner-view profile at Z=35 must fit strictly inside the C002 CL001 containment or Step 12 blocks",
+        "shared_exact_loop_claim": false,
+        "copied_or_scaled_component_contour": false
+      },
+      "non_claims": ["source-exact C002/C003 extents", "shared hidden loop", "copied masonry course", "source-derived footprint center"]
+    },
+    {
+      "id": "S11-TR-006-HIDDEN-CLOSURE-AND-OVERLAP",
+      "title": "Independent watertight closures and bounded positive overlap",
+      "status": "approved",
+      "parent_authority": ["I10-006-R1-B-INDEPENDENT-WATERTIGHT-OCCLUDED-OVERLAP", "I10-007-R1-A-FLAT-Z0-BOTTOM", "I10-008-R1-A-SEPARATE-PRIMARY-WATERTIGHT-COMPONENTS"],
+      "rule": {
+        "required_intersection_thickness_cm": 1,
+        "half_extension_each_side_of_contact_cm": 0.5,
+        "component_z_ranges_with_hidden_extension_cm": {
+          "C004": [0, 10.5],
+          "C003": [9.5, 23.5],
+          "C002": [22.5, 35.5],
+          "C001": [34.5, 220]
+        },
+        "C004_underside": "one flat undecorated Z=0 cap bounded by N3",
+        "other_closures": "minimum independent caps inside source-invisible contact volumes only",
+        "visible_overlap_pixels_allowed": 0,
+        "shared_vertex_loop": false,
+        "snap_anchor": false,
+        "failure_policy": "block Step 12; do not increase overlap or alter visible contact evidence without a new approved rule"
+      },
+      "non_claims": ["source-authored closure", "source-authored overlap", "shared source loop", "physical contact center"]
+    },
+    {
+      "id": "S11-TR-007-C004-FIELD-SAMPLING-AND-SEAM",
+      "title": "Planned C-004 N3/K80 transition lattice and technical closure seam",
+      "status": "approved",
+      "parent_authority": ["I10-004-R1-A-N3-OUTER-PERIMETER", "I10-010-R1-A-R5-R7-R9-BOUNDED-OWNERSHIP", "S10R-006-R3-A-AFM-A01", "S10R-006-R5-A-LBCR-A01", "S10R-006-R7-A-CVCOR-A01", "S10R-006-R9-A-CGFC-A01"],
+      "rule": {
+        "q_domain": "[-1/2,15/2)",
+        "q_samples": "q_i = -1/2 + i/4 for integer i in [0,31]",
+        "q_sample_count": 32,
+        "v_samples": [0, 0.5, 1],
+        "v_sample_count": 3,
+        "boundary": "B_v(q) with a(v)=56+14v, b(v)=44+11v, theta=pi*q/4, signed power 2/3",
+        "vertical_assignment": "Z(q,v)=10*(1-v) cm for the visible C004 transition only",
+        "owner_assignment": "R5 on owned lanes; R7/R9 on G_0 through G_3; successor owns exact gap midpoint",
+        "final_first_technical_face": "connect the last planned q column directly to the first planned q column as one A005 topology-closure face owned by the R7/R9 +X label-only successor",
+        "symbolic_periodic_wrap_created": false,
+        "q_15_over_2_evaluated": false,
+        "source_endpoint_identification_claimed": false,
+        "outer_anchor_refinement": "front and left exact C004 owner anchors may move the corresponding visible silhouette vertices inward only from the N3 containment; back/right remain holdouts",
+        "outward_N3_exceedance_allowed_cm": 0
+      },
+      "non_claims": ["source-owned closed perimeter", "source seam", "periodic R9 domain", "physical cross-view pair", "geometry in Step 11"]
+    },
+    {
+      "id": "S11-TR-008-RUNTIME-TOPOLOGY-ARRANGEMENT",
+      "title": "Combined runtime Static Mesh with separate watertight shells",
+      "status": "approved",
+      "parent_authority": ["I10-008-R1-A-SEPARATE-PRIMARY-WATERTIGHT-COMPONENTS"],
+      "rule": {
+        "dcc_primary_objects": ["C001_BODY", "C002_UPPER_TIER", "C003_LOWER_TIER", "C004_APRON"],
+        "each_primary_object_watertight": true,
+        "runtime_asset_count": 1,
+        "runtime_asset_type": "Static Mesh",
+        "runtime_mesh_arrangement": "one combined asset containing four disconnected, independently watertight, positively overlapping shells",
+        "preserve_component_lineage_sidecar": true,
+        "permanently_hidden_internal_faces": "omit except independent closure faces and faces required for approved overlap",
+        "runtime_modular_reuse_claim": false
+      },
+      "non_claims": ["source-proven separability", "shared topology", "one welded physical stone"]
+    },
+    {
+      "id": "S11-TR-009-DECORATION-GEOMETRY-CLASSIFICATION",
+      "title": "C-005/C-006/C-007 remain non-silhouette texture/material consumers",
+      "status": "approved",
+      "parent_authority": ["I10-005-R1-A-FACE-OWNED-VISIBLE-DECORATION", "I10-008-R1-A-SEPARATE-PRIMARY-WATERTIGHT-COMPONENTS"],
+      "rule": {
+        "C005": "no Step 12 geometry; reserve face-owned UV/material regions for later Step 14 decision",
+        "C006": "no Step 12 geometry; reserve face-owned UV/material regions for later Step 14 decision",
+        "C007": "no Step 12 geometry; reserve face-owned UV/material regions for later Step 14 decision",
+        "cross_face_copy": false,
+        "hidden_face_decoration": false,
+        "primary_silhouette_control": false,
+        "emissive_decision": "deferred to Step 14; default unapproved"
+      },
+      "non_claims": ["paint", "inlay", "emissive", "carved recess", "shared cross-face motif", "physical feature center"]
+    },
+    {
+      "id": "S11-TR-010-REVIEW-PROJECTION",
+      "title": "Source-aligned planning and future DCC review cameras",
+      "status": "approved",
+      "parent_authority": ["I10-001-R1-A-TARGET-SPACE-NO-RECTIFICATION", "I10-009-R1-A-CONSTRUCTION-ORIGIN-GROUND-PIVOT"],
+      "rule": {
+        "front": {"camera_axis": "-Y looking +Y", "up": "+Z", "projection": "orthographic"},
+        "back": {"camera_axis": "+Y looking -Y", "up": "+Z", "projection": "orthographic"},
+        "left": {"camera_axis": "-X looking +X", "up": "+Z", "projection": "orthographic"},
+        "right": {"camera_axis": "+X looking -X", "up": "+Z", "projection": "orthographic"},
+        "top": {"camera_axis": "+Z looking -Z", "up": "+Y", "projection": "orthographic"},
+        "perspective": {"projection": "perspective", "orientation": "match the source perspective only after A/B/C/D/E marker verification; non-metric"},
+        "orthographic_frame_margin_percent": 10,
+        "source_panels_modified": false,
+        "marker_pass_required_if_orientation_uncertain": true
+      },
+      "non_claims": ["source camera solve", "perspective metric calibration", "source-to-world transform"]
+    }
+  ],
+  "counts": {
+    "technical_rules": 10,
+    "approved": 10,
+    "source_rules_modified": 0,
+    "geometry_outputs": 0,
+    "dcc_outputs": 0,
+    "unreal_outputs": 0
+  }
+}

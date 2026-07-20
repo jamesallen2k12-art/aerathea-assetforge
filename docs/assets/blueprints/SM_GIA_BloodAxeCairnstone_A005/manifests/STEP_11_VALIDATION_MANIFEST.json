@@ -1,0 +1,129 @@
+{
+  "schema": "aerathea.step11_validation_manifest.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-STEP11-PROD-SPEC-GCB-A01",
+  "date": "2026-07-20",
+  "status": "authoritative_complete_validation_pass",
+  "artifact_classification": "proof only supporting authoritative Step 11 closeout",
+  "technical_result": "pass_authoritative_step11_blueprint_complete_mandatory_restart",
+  "auditor": "Tools/DCC/audit_bloodaxe_cairnstone_a005_step11_blueprint.py",
+  "pre_action_checkpoint": "Saved/ProjectRecovery/20260720-145841/",
+  "audit_history": [
+    {
+      "run": 1,
+      "phase": "blueprint",
+      "result": "fail_closed",
+      "gates": 24,
+      "passed": 22,
+      "failed": 2,
+      "failures": [
+        {
+          "id": "G19_production_roots_absent",
+          "reason": "the pre-existing A005 CoreRecovery automation directory was conservatively treated as a production root"
+        },
+        {
+          "id": "G23_contract_boundary",
+          "reason": "the read-only auditor searched for a narrower literal phrase than the contract uses"
+        }
+      ],
+      "production_output_created": false
+    },
+    {
+      "run": 2,
+      "phase": "blueprint",
+      "result": "pass",
+      "gates": 24,
+      "passed": 24,
+      "failed": 0,
+      "production_output_created": false
+    },
+    {
+      "run": 3,
+      "phase": "final",
+      "result": "pass",
+      "gates": 27,
+      "passed": 27,
+      "failed": 0,
+      "production_output_created": false
+    }
+  ],
+  "bounded_correction": {
+    "classification": "smallest sufficient read-only validation correction",
+    "preexisting_core_recovery_root": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/CoreRecovery/",
+    "preexisting_artifact_status": "quarantined/reference-only historical diagnostics preserved and not consumed",
+    "future_production_subpath": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/",
+    "unexpected_automation_siblings_allowed": 0,
+    "contract_phrase_check_changed": true,
+    "blueprint_decisions_changed": 0,
+    "source_or_authority_inputs_changed": 0,
+    "geometry_or_production_outputs_created": 0
+  },
+  "gates": [
+    {"id": "G01_required_files", "status": "pass"},
+    {"id": "G02_json_parse", "status": "pass"},
+    {"id": "G03_contract_id", "status": "pass"},
+    {"id": "G04_flamestrike_authority", "status": "pass"},
+    {"id": "G05_locked_inputs", "status": "pass"},
+    {"id": "G06_technical_rules", "status": "pass"},
+    {"id": "G07_vertex_authority_coverage", "status": "pass"},
+    {"id": "G08_group_boundaries", "status": "pass"},
+    {"id": "G09_identity_and_role", "status": "pass"},
+    {"id": "G10_coordinate_and_bounds", "status": "pass"},
+    {"id": "G11_construction_order", "status": "pass"},
+    {"id": "G12_semantic_components", "status": "pass"},
+    {"id": "G13_contacts_and_overlap", "status": "pass"},
+    {"id": "G14_n3_k80_scope", "status": "pass"},
+    {"id": "G15_topology_and_runtime", "status": "pass"},
+    {"id": "G16_triangle_and_lod_plan", "status": "pass"},
+    {"id": "G17_collision_uv_material_planning", "status": "pass"},
+    {"id": "G18_zero_production_scope", "status": "pass"},
+    {"id": "G19_production_roots_absent", "status": "pass"},
+    {"id": "G20_future_paths", "status": "pass"},
+    {"id": "G21_holdouts_and_review_views", "status": "pass"},
+    {"id": "G22_blocked_methods", "status": "pass"},
+    {"id": "G23_contract_boundary", "status": "pass"},
+    {"id": "G24_changed_path_allowlist", "status": "pass"},
+    {"id": "G25_visible_review_boundary", "status": "pass"},
+    {"id": "G26_output_and_handoff", "status": "pass"},
+    {"id": "G27_validation_record", "status": "pass"}
+  ],
+  "counts": {
+    "final_gates": 27,
+    "passed_gates": 27,
+    "failed_gates": 0,
+    "locked_inputs": 42,
+    "technical_rules": 10,
+    "vertex_authority_groups": 14,
+    "semantic_components": 7,
+    "contacts": 3,
+    "review_views": 6
+  },
+  "output_hashes": {
+    "auditor": "508584b22bb7861fa5f7f4dd634bc1f4f29b3c953857b0a91acd4340e5eca83c",
+    "contract": "3d0f9a51c8b3d5429b8b7084d48a639ffbf102c26db342ae25f242d8590ef624",
+    "input_lock": "c4c42038ef8a02f7f13f2ec2d5973d656d9e3df9f1acd3b1a2e8453cbe45187f",
+    "technical_rules": "27b63adc0fde2c0be61bb7b7785e01623fc321d18eda7d13cf06cd3f59024b96",
+    "construction_blueprint": "a0859422c14dbf00b51d627c0ba257abc064e7dc78abe5b106bd0c2ee8cc75e7",
+    "vertex_authority_map": "bca4b850f61baf8c3c7ebddddffd31bd5b1b7a6be4065282c6ff526ebf22724e",
+    "review": "44788fa23d12c0c27737c39eeea5ff4b61877a00994002d3be4a86091ec6bfb4",
+    "output_record": "4713b4abd4bfab25f489fabf922b6515accd7409fa7ab0e8d77d0eb47b2c2432",
+    "handoff": "1b36a52c39c6b89a0e56a1d6e5d995a9ac3084acbd62bcaee653198b1836708c"
+  },
+  "scope": {
+    "planning_records_created": 9,
+    "read_only_auditors_created": 1,
+    "production_outputs_created": 0,
+    "source_files_modified": 0,
+    "completed_step01_step10_inputs_modified": 0,
+    "legacy_A001_A004_inputs_used": 0,
+    "dcc_runs": 0,
+    "unreal_runs": 0
+  },
+  "routing": {
+    "step11_complete": true,
+    "S10R_BLOCK_009_resolved_as_planning_gate": true,
+    "step12_contract_preparation_authorized_after_restart": true,
+    "step12_execution_authorized_in_this_session": false,
+    "mandatory_restart_required": true
+  }
+}

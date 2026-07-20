@@ -1,0 +1,344 @@
+{
+  "schema": "aerathea.step11_construction_blueprint.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-STEP11-PROD-SPEC-GCB-A01",
+  "date": "2026-07-20",
+  "status": "approved_authoritative_step11_production_specification",
+  "artifact_classification": "authoritative Step 11 production specification and geometry construction blueprint; no production artifact",
+  "decision": "Approve a buildable, evidence-mapped construction plan for later Step 12 without creating geometry, DCC, texture, export, or Unreal output.",
+  "identity": {
+    "asset_name": "SM_GIA_BloodAxeCairnstone_A005",
+    "asset_type": "Static Mesh",
+    "race_faction": "Giants / Blood Axe",
+    "gameplay_role": "large environmental ritual/territorial cairn prop and readable landmark",
+    "pipeline_status_after_step11": "pre-production construction blueprint approved; no DCC source candidate",
+    "visual_canon_source": "docs/assets/reference/bloodaxe_cairnstone_asset/REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate.png",
+    "source_sha256": "4b953abb87f5f254a5f51c6214e76d3f72c4fc55bc2fa4e4d605b2440d6e53c2"
+  },
+  "scope": {
+    "planning_only": true,
+    "dcc_created": false,
+    "geometry_created": false,
+    "texture_created": false,
+    "fbx_created": false,
+    "collision_created": false,
+    "lod_created": false,
+    "unreal_work_performed": false,
+    "legacy_A001_A004_asset_specific_data_used": false,
+    "preexisting_local_core_recovery_root": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/CoreRecovery/",
+    "preexisting_local_core_recovery_classification": "quarantined/reference-only historical diagnostics; preserved and not consumed"
+  },
+  "authority": {
+    "input_lock": "manifests/STEP_11_INPUT_LOCK.json",
+    "step10_decision_registry": "manifests/S10R_008_R2_A_FINAL_STEP10_TEN_ITEM_DISPOSITION_A01_DECISION_REGISTRY.json",
+    "step10_ownership_map": "manifests/S10R_008_R2_A_FINAL_STEP10_TEN_ITEM_DISPOSITION_A01_SOURCE_INTERPRETATION_OWNERSHIP_MAP.json",
+    "technical_rule_registry": "manifests/STEP_11_TECHNICAL_RULE_REGISTRY.json",
+    "vertex_authority_map": "manifests/STEP_11_VERTEX_AUTHORITY_MAP.json",
+    "source_and_interpretation_separated": true,
+    "source_records_modified": false
+  },
+  "coordinate_frame": {
+    "unit": "centimeter",
+    "unreal_scale": "1 Unreal Unit = 1 cm",
+    "x": "+X source-registered right in front view",
+    "y": "+Y depth/back",
+    "z": "+Z up",
+    "origin_cm": [0, 0, 0],
+    "pivot_cm": [0, 0, 0],
+    "pivot_role": "bottom-center construction datum at ground station; production convention only",
+    "rotation": [0, 0, 0],
+    "transform_apply_policy": "apply object scale and rotation before audit; mesh data remains in centimeters",
+    "bounds_targets_cm": {
+      "assembled": {"height": 220},
+      "C001": {"max_width": 120, "max_depth": 90},
+      "C004": {"max_width": 140, "max_depth": 110},
+      "assembled_base": {"height": 35}
+    },
+    "exact_claim_boundary": "targets are authoritative production dimensions; they do not validate one physical source-pixel scale or source transform"
+  },
+  "construction_order": [
+    {
+      "order": 1,
+      "component_id": "C-004",
+      "object_name": "C004_APRON",
+      "description": "irregular peripheral small-stone apron macro shell",
+      "method": "construct the N3/K80 transition lattice under R3/R5/R7/R9, apply only source-owned inward silhouette refinements, add the flat Z=0 underside, then close independently",
+      "visible_authority_groups": ["VAG-010-C004-TRANSITION-LATTICE", "VAG-011-C004-SOURCE-OWNED-SILHOUETTE", "VAG-012-C004-FINAL-FIRST-CLOSURE-FACE"],
+      "hidden_authority_groups": ["VAG-013-C004-Z0-BOTTOM", "VAG-014-CL001-CL003-HIDDEN-OVERLAP"],
+      "required_rules": ["I10-004-R1-A", "I10-006-R1-B", "I10-007-R1-A", "I10-008-R1-A", "I10-010-R1-A", "S11-TR-005", "S11-TR-006", "S11-TR-007"]
+    },
+    {
+      "order": 2,
+      "component_id": "C-003",
+      "object_name": "C003_LOWER_TIER",
+      "description": "independent lower annular masonry tier",
+      "method": "build an owner-view faceted course inside its independent containment, preserve K80 only at the visible CL-003 boundary, add independent hidden caps, and intersect C-004 by the approved overlap",
+      "visible_authority_groups": ["VAG-008-C003-VISIBLE-TIER"],
+      "hidden_authority_groups": ["VAG-009-C003-HIDDEN-CLOSURES", "VAG-014-CL001-CL003-HIDDEN-OVERLAP"],
+      "required_rules": ["I10-003-R1-A", "I10-006-R1-B", "I10-008-R1-A", "S11-TR-002", "S11-TR-004", "S11-TR-005", "S11-TR-006"]
+    },
+    {
+      "order": 3,
+      "component_id": "C-002",
+      "object_name": "C002_UPPER_TIER",
+      "description": "independent upper annular masonry tier",
+      "method": "build a component-specific owner-view faceted course without copying C-003, add independent hidden caps, and intersect C-003/C-001 only inside approved hidden overlap",
+      "visible_authority_groups": ["VAG-006-C002-VISIBLE-TIER"],
+      "hidden_authority_groups": ["VAG-007-C002-HIDDEN-CLOSURES", "VAG-014-CL001-CL003-HIDDEN-OVERLAP"],
+      "required_rules": ["I10-003-R1-A", "I10-006-R1-B", "I10-008-R1-A", "S11-TR-002", "S11-TR-004", "S11-TR-005", "S11-TR-006"]
+    },
+    {
+      "order": 4,
+      "component_id": "C-001",
+      "object_name": "C001_BODY",
+      "description": "central tapered primary body",
+      "method": "construct independent front-owned XZ and left-owned YZ piecewise-linear profiles, join adjacent owner lanes with direct planar corner facets under R7/R9 authority routing, cap top and hidden bottom, and preserve target extrema",
+      "visible_authority_groups": ["VAG-001-C001-FRONT-XZ", "VAG-002-C001-LEFT-YZ", "VAG-003-C001-CORNER-JOINS", "VAG-004-C001-TOP"],
+      "hidden_authority_groups": ["VAG-005-C001-HIDDEN-BOTTOM", "VAG-014-CL001-CL003-HIDDEN-OVERLAP"],
+      "required_rules": ["I10-001-R1-A", "I10-002-R1-A", "I10-006-R1-B", "I10-008-R1-A", "I10-009-R1-A", "I10-010-R1-A", "S11-TR-002", "S11-TR-003", "S11-TR-006"]
+    },
+    {
+      "order": 5,
+      "component_id": "C-005_C-006_C-007",
+      "object_name": null,
+      "description": "face-owned red-appearing decoration systems",
+      "method": "create no Step 12 geometry; reserve face-owned UV/material regions and defer Base Color, Normal, ORM, and emissive meaning to Step 14",
+      "visible_authority_groups": [],
+      "hidden_authority_groups": [],
+      "required_rules": ["I10-005-R1-A", "S11-TR-009"]
+    }
+  ],
+  "component_specifications": {
+    "C001": {
+      "semantic_role": "central tapered primary body",
+      "visible_z_span_cm": [35, 220],
+      "hidden_z_min_cm": 34.5,
+      "max_extents_cm": [120, 90, 220],
+      "construction_owners": ["front XZ", "left YZ", "top +Z"],
+      "validation_holdouts": ["back", "right", "perspective non-metric"],
+      "profile_method": "piecewise-linear owner-view constraints; no averaging or analytic smoothing",
+      "corner_method": "direct planar gap facets with no standalone inferred corner vertices",
+      "watertight": true
+    },
+    "C002": {
+      "semantic_role": "upper annular masonry tier",
+      "visible_z_span_cm": [23, 35],
+      "hidden_z_span_cm": [22.5, 35.5],
+      "max_containment_boxes_cm": {"CL002": [106, 82], "CL001": [102, 78]},
+      "shape_source": "component-specific front/left visible profiles",
+      "copied_from_other_component": false,
+      "individual_stone_divisions": "Normal/BaseColor planning consumer except source-critical silhouette breaks",
+      "watertight": true
+    },
+    "C003": {
+      "semantic_role": "lower annular masonry tier",
+      "visible_z_span_cm": [10, 23],
+      "hidden_z_span_cm": [9.5, 23.5],
+      "max_containment_boxes_cm": {"CL003": [112, 88], "CL002": [108, 84]},
+      "CL003_boundary": "K80 only",
+      "shape_source": "component-specific front/left visible profiles; no copied/scaled K80 course",
+      "individual_stone_divisions": "Normal/BaseColor planning consumer except source-critical silhouette breaks",
+      "watertight": true
+    },
+    "C004": {
+      "semantic_role": "irregular peripheral small-stone apron",
+      "visible_z_span_cm": [0, 10],
+      "hidden_z_max_cm": 10.5,
+      "outer_boundary": "N3: abs(x/70)^3+abs(y/55)^3=1",
+      "inner_CL003_boundary": "K80: abs(x/56)^3+abs(y/44)^3=1",
+      "field_lattice": {"q_columns": 32, "v_rows": 3, "planned_vertices_before_caps_and_source_refinement": 96},
+      "source_refinement": "front/left exact outer anchors may cut inward only; back/right are holdouts",
+      "small_rubble_microdetail": "Normal/BaseColor later; do not model every tiny stone",
+      "bottom": "flat undecorated Z=0 N3-bounded cap",
+      "watertight": true
+    },
+    "C005": {"semantic_role": "large bilateral blade-like surface motif", "step12_geometry": false, "later_consumer": "face-owned UV/BaseColor/Normal under Step 14"},
+    "C006": {"semantic_role": "narrow linear inscription-like motif", "step12_geometry": false, "later_consumer": "face-owned UV/BaseColor/Normal under Step 14"},
+    "C007": {"semantic_role": "branching seam/fissure treatment", "step12_geometry": false, "later_consumer": "face-owned UV/BaseColor/Normal under Step 14"}
+  },
+  "contacts_and_hidden_interfaces": {
+    "overlap_rule": "S11-TR-006-HIDDEN-CLOSURE-AND-OVERLAP",
+    "required_intersection_thickness_cm": 1,
+    "visible_overlap_pixels_allowed": 0,
+    "CL001": {"between": ["C-001", "C-002"], "station_z_cm": 35, "source_samples": 40, "shared_loop": false},
+    "CL002": {"between": ["C-002", "C-003"], "station_z_cm": 23, "source_samples": 40, "shared_loop": false},
+    "CL003": {"between": ["C-003", "C-004"], "station_z_cm": 10, "source_samples": 47, "shared_loop": false, "target_mappings": 16, "target_boundary": "K80"},
+    "source_visible_contact_samples_total": 127,
+    "failure_policy": "any visible closure/overlap or insufficient positive intersection blocks Step 12; do not repair by moving visible contact edges"
+  },
+  "topology_plan": {
+    "primary_shells": 4,
+    "each_primary_shell_watertight": true,
+    "runtime_static_meshes": 1,
+    "runtime_arrangement": "one combined Static Mesh containing four disconnected watertight shells",
+    "dcc_object_names": ["C001_BODY", "C002_UPPER_TIER", "C003_LOWER_TIER", "C004_APRON"],
+    "triangulation": "deterministic at final export; DCC may retain planar quads where authority groups remain traceable",
+    "face_normals": "preserve faceted silhouette and major plane breaks; no autosmooth operation may alter geometry",
+    "hidden_face_policy": "omit permanently hidden internal faces except independent caps and approved overlap faces",
+    "required_sidecar": "Step 12 geometry manifest with vertex/face ranges mapped to STEP_11_VERTEX_AUTHORITY_MAP.json",
+    "non_manifold_edges_allowed": 0,
+    "open_boundary_edges_allowed_per_primary_shell": 0,
+    "degenerate_faces_allowed": 0,
+    "self_intersection_policy": "only the three approved component-overlap volumes; all other self/inter-component intersections fail"
+  },
+  "triangle_budget": {
+    "asset_class": "large prop",
+    "approved_range_lod0": [4000, 10000],
+    "lod0_target": 8000,
+    "lod0_hard_cap": 10000,
+    "planning_allocation": {
+      "C001": 2800,
+      "C002": 900,
+      "C003": 1000,
+      "C004": 2800,
+      "caps_and_contact_closures": 500,
+      "C005_C006_C007": 0
+    },
+    "allocation_is_target_not_source_claim": true
+  },
+  "lod_plan": [
+    {"lod": "LOD0", "target_tris": 8000, "hard_cap_tris": 10000, "preserve": "all source-critical primary silhouettes, course separation, large apron silhouette stones"},
+    {"lod": "LOD1", "target_tris": 4000, "reduction_percent_from_target": 50, "remove_first": "small apron silhouette facets and secondary course breaks; preserve C001 and N3 outer silhouette"},
+    {"lod": "LOD2", "target_tris": 1800, "reduction_percent_from_target": 77.5, "remove_first": "minor planar subdivisions and small masonry separations; preserve four-layer read"},
+    {"lod": "LOD3", "target_tris": 700, "reduction_percent_from_target": 91.25, "remove_first": "all non-silhouette subdivisions; preserve 220/140/110 envelope and stepped base silhouette"}
+  ],
+  "collision_plan": {
+    "strategy": "custom simple convex collision",
+    "hull_count_target": 4,
+    "hulls": [
+      {"name": "UCX_SM_GIA_BloodAxeCairnstone_A005_00", "owner": "C001 simplified tapered hull"},
+      {"name": "UCX_SM_GIA_BloodAxeCairnstone_A005_01", "owner": "C002 upper-tier hull"},
+      {"name": "UCX_SM_GIA_BloodAxeCairnstone_A005_02", "owner": "C003 lower-tier hull"},
+      {"name": "UCX_SM_GIA_BloodAxeCairnstone_A005_03", "owner": "C004 simplified N3 apron hull"}
+    ],
+    "complex_as_simple": false,
+    "source_geometry_claim": false,
+    "step11_collision_created": false
+  },
+  "uv_material_texture_plan": {
+    "planning_level_only": true,
+    "step14_remains_authority_gate": true,
+    "material_slot_count": 1,
+    "material_slot_name": "M_GIA_BloodAxeCairnstone_A005",
+    "uv0": "unique 0-1 islands grouped by C001/C002/C003/C004 and face-owned C005/C006/C007 regions; exact seams deferred to Step 14",
+    "uv1": "non-overlapping lightmap channel planned; resolution and packing validation deferred",
+    "texture_resolution_target": "2048 x 2048",
+    "texture_names": [
+      "T_GIA_BloodAxeCairnstone_A005_BC",
+      "T_GIA_BloodAxeCairnstone_A005_N",
+      "T_GIA_BloodAxeCairnstone_A005_ORM"
+    ],
+    "optional_emissive_name": "T_GIA_BloodAxeCairnstone_A005_E",
+    "optional_emissive_status": "unapproved and absent unless Step 14 explicitly approves",
+    "base_color_authority": "visible source-owned RGB only after Step 14 plan",
+    "normal_orm_ao_roughness_metallic_authority": "interpretation deferred to Step 14",
+    "step11_maps_created": 0
+  },
+  "future_paths": {
+    "dcc_root": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/",
+    "dcc_source": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_DCCSource_A01.blend",
+    "dcc_geometry_manifest": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_GEOMETRY_MANIFEST.json",
+    "export_root": "SourceAssets/Exports/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/",
+    "fbx": "SourceAssets/Exports/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005.fbx",
+    "texture_root": "SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/",
+    "automation_root": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/",
+    "automation_production_root": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/",
+    "automation_root_preexisting_content": "CoreRecovery/ only; quarantined/reference-only and forbidden as Step 12 input",
+    "unreal_mesh_disk": "Content/Aerathea/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005.uasset",
+    "unreal_mesh_object": "/Game/Aerathea/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005",
+    "unreal_material_object": "/Game/Aerathea/Materials/Giants/BloodAxe/Cairns/M_GIA_BloodAxeCairnstone_A005",
+    "created_in_step11": false
+  },
+  "validators": [
+    {"id": "VAL-S11-AUTHORITY", "stage": "Step 11", "check": "input hashes, schema, source/interpretation labels, allowlist, production-root absence"},
+    {"id": "VAL-S12-FIREWALL", "stage": "Step 12 preflight", "check": "A005-only imports/constants/outputs; reject A001-A004 asset-specific paths"},
+    {"id": "VAL-S12-BOUNDS", "stage": "Step 12 numeric", "check": "assembled/C001/C004/base target bounds and pivot in centimeters"},
+    {"id": "VAL-S12-VERTEX-AUTHORITY", "stage": "Step 12 numeric", "check": "every vertex exactly one primary VAG mapping with source/rule lineage"},
+    {"id": "VAL-S12-SILHOUETTE", "stage": "Step 12 source projection", "check": "front and left construction-owner samples hit approved observations under S11-TR-002; no N3 exceedance"},
+    {"id": "VAL-S12-HOLDOUT", "stage": "Step 12 holdout", "check": "back/right source observations validate without changing construction ownership; mismatch blocks"},
+    {"id": "VAL-S12-TOPOLOGY", "stage": "Step 12 topology", "check": "four watertight shells, zero non-manifold/open/degenerate faces, only approved overlaps"},
+    {"id": "VAL-S12-CONTACT", "stage": "Step 12 contact", "check": "one-centimeter positive overlap and zero visible closure/overlap pixels across owner views"},
+    {"id": "VAL-S12-BUDGET", "stage": "Step 12 budget", "check": "LOD0 candidate <=10000 tris; decoration geometry zero"},
+    {"id": "VAL-S12-CAMERAS", "stage": "Step 12 proof", "check": "six required views, marker pass when orientation uncertain, clean rerun before presentation"}
+  ],
+  "review_views": [
+    {"id": "RV-FRONT", "source_panel": "front", "camera": "-Y looking +Y", "projection": "orthographic", "up": "+Z", "role": "construction owner comparison"},
+    {"id": "RV-BACK", "source_panel": "back", "camera": "+Y looking -Y", "projection": "orthographic", "up": "+Z", "role": "validation holdout comparison"},
+    {"id": "RV-LEFT", "source_panel": "left", "camera": "-X looking +X", "projection": "orthographic", "up": "+Z", "role": "construction owner comparison"},
+    {"id": "RV-RIGHT", "source_panel": "right", "camera": "+X looking -X", "projection": "orthographic", "up": "+Z", "role": "validation holdout comparison"},
+    {"id": "RV-TOP", "source_panel": "top", "camera": "+Z looking -Z", "projection": "orthographic", "up": "+Y", "role": "+Z ownership and N3/K80 plan comparison"},
+    {"id": "RV-PERSPECTIVE", "source_panel": "perspective", "camera": "marker-verified source-match orientation", "projection": "perspective", "role": "non-metric 360-coherence corroboration"}
+  ],
+  "review_frame": {
+    "orthographic_margin_percent": 10,
+    "match_orientation_before_judgment": true,
+    "marker_environment_variable": "AET_REVIEW_MARKERS=1",
+    "source_panel_modification": false,
+    "underside_or_side_on_result_allowed": false,
+    "clean_capture_required_after_marker_pass": true
+  },
+  "blocked_methods": [
+    "A001-A004 asset-specific input or builder reuse",
+    "source raster rectification or warp",
+    "unified cross-view pixel scale",
+    "physical cross-view pixel pairing",
+    "averaging or visually adjusted midpoint",
+    "analytic smoothing primitive for C001",
+    "generic primitive fitting",
+    "copied or scaled C002/C003 component contour",
+    "projection shell or detached carrier",
+    "shared exact contact loop or snap anchor",
+    "outward C004 exceedance beyond N3",
+    "C005/C006/C007 geometry in Step 12",
+    "hidden-face decoration",
+    "unapproved emissive",
+    "DCC/geometry/texture/FBX/Unreal creation in Step 11",
+    "repairing holdout failure by changing source authority"
+  ],
+  "step12_entry_contract_requirements": [
+    "new visible Step 12 contract after mandatory restart",
+    "fresh A005-only generator or controlled Blender construction",
+    "schema-only/preflight mode incapable of output",
+    "all asset constants read from approved A005 manifests",
+    "listed inputs and outputs before execution",
+    "geometry manifest with complete VAG coverage",
+    "numeric/topology audit before any proof render",
+    "no UV, texture, final material, LOD, collision, FBX, or Unreal escalation"
+  ],
+  "step12_fail_closed_conditions": [
+    "any input hash mismatch",
+    "missing VAG assignment",
+    "source observation cannot be satisfied without averaging or smoothing",
+    "C001 contact does not fit within C002 containment",
+    "N3 containment exceeded",
+    "K80 used outside CL-003 scope",
+    "back/right holdout mismatch",
+    "hidden overlap visible in any owner view",
+    "primary shell not watertight",
+    "triangle hard cap exceeded",
+    "legacy path or constant accessed"
+  ],
+  "counts": {
+    "semantic_components": 7,
+    "primary_geometry_components": 4,
+    "non_vertex_decoration_consumers": 3,
+    "contacts": 3,
+    "exact_contact_samples": 127,
+    "CL003_target_mappings": 16,
+    "technical_rules": 10,
+    "vertex_authority_groups": 14,
+    "review_views": 6,
+    "validators": 10,
+    "material_slots_planned": 1,
+    "lod_levels_planned": 4,
+    "collision_hulls_planned": 4,
+    "production_outputs_created": 0
+  },
+  "approval": {
+    "approver": "Flamestrike",
+    "authority_statement": "resume, I am giving you full authority to do whatever you need to to complete step 11 from start to finish, You have full approval and Authority",
+    "decision": "approved under the exact Step 11 contract after complete validation",
+    "step12_authorized_in_this_session": false,
+    "mandatory_restart_after_step11": true
+  }
+}
