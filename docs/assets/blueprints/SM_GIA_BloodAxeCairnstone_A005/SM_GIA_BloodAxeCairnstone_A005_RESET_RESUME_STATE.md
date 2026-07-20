@@ -34,6 +34,15 @@ Technical result:
 - Smallest sufficient correction: wording layout only; no decision, formula,
   ownership, option, block, authorization, or implementation state changed.
 - Final complete audit rerun: `30/30`; failures `0`.
+- Exact dependency-complete Git scope: `21/21` paths; outside-scope staged
+  paths, secret matches, and unstaged in-scope differences: `0`.
+- Dependency snapshot commit:
+  `2d0906dfbe427aeb9f85495e586858996de1837a`.
+- Push to `assetforge/main`: passed; local and remote hashes matched exactly at
+  the dependency snapshot commit.
+- Pre-metadata checkpoint: `Saved/ProjectRecovery/20260720-143930/`.
+- The immediate follow-up metadata commit records this already-proven closeout;
+  its hash is intentionally not self-embedded.
 - `S10R-BLOCK-006` and `S10R-BLOCK-008` are resolved at the written Step 10
   decision level only.
 - `S10R-BLOCK-009` remains the active global production block.

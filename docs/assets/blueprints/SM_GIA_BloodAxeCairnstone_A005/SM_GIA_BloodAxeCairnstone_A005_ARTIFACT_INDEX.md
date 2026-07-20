@@ -32,6 +32,12 @@ implementation, Step 11 execution, DCC, Unreal, and production remain
 unauthorized. The next permitted action after the mandatory restart is Step 11
 contract preparation only.
 
+The exact 21-path dependency snapshot was committed as
+`2d0906dfbe427aeb9f85495e586858996de1837a`, pushed to `assetforge/main`, and
+verified by exact local/remote hash match. The immediate follow-up metadata
+commit records that proven closeout and intentionally does not self-embed its
+own hash.
+
 ## S10R-008-R1-A Post-R9 Historical I10 Reconciliation - Candidate Decision Surface
 
 | Artifact | Status | Role |

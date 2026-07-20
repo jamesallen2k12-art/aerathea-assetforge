@@ -43,6 +43,22 @@
     "preexisting_unrelated_work_preserved": true,
     "independent_auditor_rerun_after_status_updates": false
   },
+  "git_closeout": {
+    "pre_staging_checkpoint": "Saved/ProjectRecovery/20260720-143751/",
+    "dependency_complete_paths": 21,
+    "outside_scope_paths_staged": 0,
+    "json_documents_parsed": 10,
+    "support_scripts_ast_parsed": 2,
+    "diff_check": "pass",
+    "secret_matches": 0,
+    "unstaged_in_scope_differences": 0,
+    "dependency_snapshot_commit": "2d0906dfbe427aeb9f85495e586858996de1837a",
+    "push_target": "assetforge/main",
+    "push_status": "pass",
+    "remote_verification": "pass_exact_local_remote_hash_match",
+    "pre_metadata_checkpoint": "Saved/ProjectRecovery/20260720-143930/",
+    "metadata_closeout": "This validation update and the three authoritative status-record updates are recorded by the immediate follow-up metadata commit; that commit hash is intentionally not self-embedded."
+  },
   "gate_results_final_run": [
     {"id": "G01_contract_identity", "status": "pass"},
     {"id": "G02_full_flamestrike_authority", "status": "pass"},

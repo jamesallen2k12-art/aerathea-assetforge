@@ -32,6 +32,17 @@ Updated: 2026-07-20
 - Corrective action: contract line wrapping only, with no authority or
   technical-state change
 - Final audit rerun: `30/30`; failures `0`
+- Exact dependency-complete staged scope: `21/21` paths; outside scope `0`
+- JSON parse: `10/10`; support-script AST parse: `2/2`; diff check passed;
+  secret matches and unstaged in-scope differences `0`
+- Dependency snapshot commit:
+  `2d0906dfbe427aeb9f85495e586858996de1837a`
+- Push to `assetforge/main`: passed
+- Remote verification: local and remote hashes matched exactly at the
+  dependency snapshot commit
+- Pre-metadata checkpoint: `Saved/ProjectRecovery/20260720-143930/`
+- Immediate metadata closeout commit: records the proven snapshot result; its
+  hash is intentionally not self-embedded
 - Decision-level blocks resolved: `S10R-BLOCK-006`, `S10R-BLOCK-008`
 - Active production block: `S10R-BLOCK-009`
 - Step 10: complete
