@@ -5931,3 +5931,13 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260720-164624/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260720-164624/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-20 16:48:37 EDT -0400 - A005 Step 14 complete final commit 2d507e2 pushed and remote verified mandatory restart
+
+- Snapshot: `Saved/ProjectRecovery/20260720-164837/`
+- Git: branch `main`, HEAD `2d507e2`, status lines `244`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260720-164837/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260720-164837/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260720-164837/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
