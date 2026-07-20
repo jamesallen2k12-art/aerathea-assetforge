@@ -1,0 +1,216 @@
+{
+  "schema": "aerathea.s10r_008_r1_a_post_r9_i10_reconciliation_a01_item_authority_delta.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-008-R1-A-POSTR9-I10-REC-A01",
+  "date": "2026-07-20",
+  "status": "candidate_post_r9_reconciliation_all_ten_current_dispositions_pending",
+  "artifact_classification": "candidate",
+  "historical_files_modified": false,
+  "historical_files_reclassified": false,
+  "decision_items": [
+    {
+      "id": "I10-001",
+      "subject": "cross-view scale and rectification convention",
+      "last_authoritative_routing_classification": "requires_revision",
+      "post_r9_authority": [
+        "S10R-002-A construction-origin-centered abstract target frame with no source-pixel relation",
+        "R3/R5/R7/R9 symbolic domains explicitly preserve zero physical source correspondence"
+      ],
+      "missing_authority": [
+        "approved disposition of rectification versus target-space-only construction",
+        "approved source-to-target relation if rectification remains required"
+      ],
+      "decision_level_complete": false,
+      "candidate_post_r9_classification": "requires_revision",
+      "blocks": ["current I10 disposition", "any source-relative construction rule"]
+    },
+    {
+      "id": "I10-002",
+      "subject": "C-001 closed 360-degree envelope",
+      "last_authoritative_routing_classification": "unaffected_candidate",
+      "post_r9_authority": [
+        "R3 preserves twelve approved primary-owner trace records as symbolic inputs only"
+      ],
+      "missing_authority": [
+        "approved closed C-001 envelope rule",
+        "approved closure or surface ownership"
+      ],
+      "decision_level_complete": false,
+      "candidate_post_r9_classification": "unaffected_candidate",
+      "blocks": ["C-001 construction blueprint", "C-001 topology"]
+    },
+    {
+      "id": "I10-003",
+      "subject": "C-002/C-003 course separation and hidden interfaces",
+      "last_authoritative_routing_classification": "requires_revision",
+      "post_r9_authority": [
+        "K80 bounded abstract C-003 outer boundary",
+        "sixteen approved endpoint-exclusive CL-003 target mappings",
+        "R9 symbolic corner-gap coupling"
+      ],
+      "missing_authority": [
+        "approved C-002/C-003 separation rule",
+        "approved hidden-interface and annulus disposition",
+        "approved CL-002 closure"
+      ],
+      "decision_level_complete": false,
+      "candidate_post_r9_classification": "requires_revision",
+      "blocks": ["base-course construction order", "course topology"]
+    },
+    {
+      "id": "I10-004",
+      "subject": "C-004 closed outer footprint",
+      "last_authoritative_routing_classification": "superseded_candidate_options",
+      "post_r9_authority": [
+        "approved N3 abstract C-004 outer perimeter",
+        "approved target construction frame",
+        "R5/R9 unevaluated symbolic boundary descriptors"
+      ],
+      "missing_authority": [
+        "current explicit I10 disposition using N3",
+        "approved filled footprint or bottom boundary",
+        "evaluated closure if later Blueprint-authorized"
+      ],
+      "decision_level_complete": false,
+      "candidate_post_r9_classification": "requires_revision",
+      "blocks": ["support envelope", "bottom boundary", "collision planning"]
+    },
+    {
+      "id": "I10-005",
+      "subject": "motif and line-feature face ownership",
+      "last_authoritative_routing_classification": "unaffected_candidate",
+      "post_r9_authority": [
+        "no later authority changes decoration ownership"
+      ],
+      "missing_authority": [
+        "explicit current face-ownership and hidden-face decoration disposition"
+      ],
+      "decision_level_complete": false,
+      "candidate_post_r9_classification": "unaffected_candidate",
+      "blocks": ["decoration ownership map", "hidden-face decoration decision"]
+    },
+    {
+      "id": "I10-006",
+      "subject": "hidden contact closure and occluded interface fill",
+      "last_authoritative_routing_classification": "requires_revision",
+      "post_r9_authority": [
+        "sixteen CL-003 target mappings",
+        "R7 gap owner labels",
+        "R9 unevaluated gap-to-field coupling rule"
+      ],
+      "missing_authority": [
+        "approved seam, join, or closure rule",
+        "approved hidden contact fill disposition",
+        "approved CL-002 closure"
+      ],
+      "decision_level_complete": false,
+      "candidate_post_r9_classification": "requires_revision",
+      "blocks": ["watertight component interface plan", "modular assembly rule"]
+    },
+    {
+      "id": "I10-007",
+      "subject": "source-invisible bottom surface",
+      "last_authoritative_routing_classification": "blocked_by_new_dependency",
+      "post_r9_authority": [
+        "approved N3 perimeter and abstract target frame only"
+      ],
+      "missing_authority": [
+        "approved bottom closure rule",
+        "approved relationship to the still-unfilled footprint"
+      ],
+      "decision_level_complete": false,
+      "candidate_post_r9_classification": "blocked_by_dependency",
+      "blocks": ["closed mesh definition", "ground-contact surface"]
+    },
+    {
+      "id": "I10-008",
+      "subject": "source-invisible topology and watertight grouping",
+      "last_authoritative_routing_classification": "requires_revision",
+      "post_r9_authority": [
+        "R3 record-weight method",
+        "R5 owned lane couplings",
+        "R7 corner owner branches",
+        "R9 gap-to-field coupling relation"
+      ],
+      "missing_authority": [
+        "approved component grouping and watertightness disposition",
+        "approved seams, joins, closures, surface, and topology"
+      ],
+      "decision_level_complete": false,
+      "candidate_post_r9_classification": "requires_revision",
+      "blocks": ["Step 11 topology ownership", "DCC construction"]
+    },
+    {
+      "id": "I10-009",
+      "subject": "construction origin, centerline, and pivot",
+      "last_authoritative_routing_classification": "requires_revision",
+      "post_r9_authority": [
+        "S10R-002-A construction-origin-centered target frame with no source-pixel relation"
+      ],
+      "missing_authority": [
+        "explicit current production-origin disposition",
+        "approved pivot and placement convention",
+        "source-center claim remains forbidden"
+      ],
+      "decision_level_complete": false,
+      "candidate_post_r9_classification": "requires_revision",
+      "blocks": ["component coordinates", "export pivot", "Unreal placement convention"]
+    },
+    {
+      "id": "I10-010",
+      "subject": "source-view ownership for transition sectors",
+      "last_authoritative_routing_classification": "requires_revision",
+      "post_r9_authority": [
+        "R5 four owned cardinal lane intervals",
+        "R7 four bounded corner owner branches with successor midpoint ties",
+        "R9 endpoint-selector and gap-to-field coupling relation"
+      ],
+      "missing_authority": [
+        "explicit current I10-010 disposition",
+        "approved top/upright join, seam, and closure",
+        "historical I10-010-A remains candidate history"
+      ],
+      "decision_level_complete": false,
+      "candidate_post_r9_classification": "requires_revision",
+      "blocks": ["complete source-versus-interpretation surface map", "corner construction"]
+    }
+  ],
+  "counts": {
+    "historical_items": 10,
+    "items_reconciled": 10,
+    "current_dispositions_approved": 0,
+    "decision_level_complete": 0,
+    "requires_revision": 7,
+    "unaffected_candidate": 2,
+    "blocked_by_dependency": 1,
+    "resolved_by_post_r9_authority": 0
+  },
+  "active_blocks": [
+    {
+      "id": "S10R-BLOCK-006",
+      "status": "active_approved_corner_gap_to_field_coupling_rule_no_field_no_seam_no_join_no_closure"
+    },
+    {
+      "id": "S10R-BLOCK-008",
+      "status": "active_post_r9_reconciliation_complete_current_dispositions_pending"
+    },
+    {
+      "id": "S10R-BLOCK-009",
+      "status": "active_global_production_block"
+    }
+  ],
+  "resolved_block_ids": [],
+  "authorization_flags": {
+    "i10_disposition_authorized": false,
+    "r9_evaluation_authorized": false,
+    "field_implementation_authorized": false,
+    "step10_closeout_authorized": false,
+    "step11_authorized": false,
+    "dcc_authorized": false,
+    "unreal_authorized": false,
+    "production_authorized": false,
+    "staging_authorized": false,
+    "commit_authorized": false,
+    "push_authorized": false
+  }
+}

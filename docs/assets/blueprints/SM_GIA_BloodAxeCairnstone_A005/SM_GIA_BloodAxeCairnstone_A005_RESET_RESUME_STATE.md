@@ -1,10 +1,87 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: S10R-006-R9-A bounded symbolic corner-gap-to-field coupling rule approved exactly as registered; Core reassessment required; no evaluation or implementation authority
+Status: Step 10 complete; ten of ten current written dispositions authoritative; final audit passed 30 of 30 after one bounded wording correction; mandatory restart required; Step 11 contract preparation only after restart
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
+
+## Current Resume Boundary - Step 10 Complete / Mandatory Restart
+
+Flamestrike stated: `I am granting you full approval and authorization to
+complete this step no matter what is required`. Under the visible closeout
+contract, that statement selected recommended route `S10R-008-R1-A`, delegated
+evidence-bound disposition of all ten historical Step 10 subjects, and
+authorized validation, visible review, Step 10 closeout, checkpointing, and a
+scoped Git closeout. It did not override the higher-priority Blueprint rule
+that prohibits evaluation or implementation inside Step 10.
+
+Technical result:
+`pass_authoritative_step10_ten_of_ten_dispositions_complete_mandatory_restart`.
+
+- Contract ID: `A005-CR-S10R-008-R2-A-FINAL-I10-DISP-A01`.
+- Pre-action checkpoint: `Saved/ProjectRecovery/20260720-142349/`.
+- Locked inputs: `22/22` immutable hashes and `3/3` pre-action mutable status
+  snapshots matched.
+- Current written dispositions: `10/10` approved, `0` pending, `0` evaluated,
+  and `0` implemented.
+- Historical option accounting: `30/30`; ten original recommendations were
+  superseded, ten original alternatives were rejected, and ten block options
+  were not selected.
+- First complete audit: `29/30`; the only failure was
+  `G03_blueprint_boundary` because the literal words `R9 evaluation` crossed a
+  Markdown line break.
+- Smallest sufficient correction: wording layout only; no decision, formula,
+  ownership, option, block, authorization, or implementation state changed.
+- Final complete audit rerun: `30/30`; failures `0`.
+- `S10R-BLOCK-006` and `S10R-BLOCK-008` are resolved at the written Step 10
+  decision level only.
+- `S10R-BLOCK-009` remains the active global production block.
+- R9 instances, fields, fills, surfaces, topology, geometry, physical pairs,
+  transforms, target coordinates, seams, joins, and closures remain `0`.
+- R9 evaluation, implementation, Step 11 execution, DCC, Unreal, and
+  production remain unauthorized.
+
+Required next task: stop for the mandatory post-Step-10 restart. After resume,
+only preparation of a separate Step 11 contract is authorized; Step 11
+execution is not authorized.
+
+## Current Resume Boundary - S10R-008-R1-A Post-R9 I10 Reconciliation
+
+Flamestrike responded `ok proceed with your recommendation` directly to the
+recommendation to address `S10R-BLOCK-008` first through post-R9
+reconciliation. The approved record-only execution reconciled all ten
+historical Step 10 decision subjects and stopped before route selection.
+
+Technical result:
+`pass_candidate_post_r9_i10_reconciliation_complete_route_decision_pending`.
+
+- Pre-action checkpoint: `Saved/ProjectRecovery/20260720-141013/`.
+- Locked inputs: `19/19` immutable hashes matched and `3/3` mutable status
+  snapshots matched before status updates.
+- Independent read-only audit: first and only complete run passed `25/25`;
+  failures `0`; reruns `0`.
+- Historical `I10` items reconciled: `10/10`; current approved item
+  dispositions: `0`.
+- Candidate classifications: `7` require revision, `2` remain unaffected
+  candidates, and `1` remains dependency-blocked.
+- Historical Step 10 and Step 10R authority files modified or reclassified:
+  `0`.
+- Candidate routes registered: `3`; selected routes: `0`.
+- Candidate recommendation: `S10R-008-R1-A`, later preparation only of one
+  bounded current ten-item disposition contract with R9 evaluation and
+  implementation excluded.
+- Alternatives: later preparation only of an R9 evaluation-authority decision
+  contract, or `Blueprint block: rule missing`.
+- `S10R-BLOCK-006`, `S10R-BLOCK-008`, and `S10R-BLOCK-009` remain active;
+  resolved block IDs remain empty.
+- Evaluation, implementation, Step 10 closeout, Step 11, DCC, Unreal,
+  production, staging, commit, and push remain unauthorized.
+
+Required next task: Flamestrike's separate route decision on exactly one of
+`S10R-008-R1-A`, `S10R-008-R1-B`, or `S10R-008-R1-BLOCK`. Approval of the
+recommended route would authorize only later preparation of a separate
+ten-item disposition contract.
 
 ## Completed Git Closeout Boundary - Dependency Snapshot Verified
 

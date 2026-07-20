@@ -1,10 +1,69 @@
 # SM_GIA_BloodAxeCairnstone_A005 Approval Log
 
-Status: S10R-006-R9-A bounded symbolic corner-gap-to-field coupling rule approved exactly as registered; Core reassessment required; no evaluation or implementation authority
+Status: Step 10 complete; ten of ten current written dispositions authoritative; final audit passed 30 of 30 after one bounded wording correction; mandatory restart required; Step 11 contract preparation only after restart
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
+
+## Final Step 10 Ten-Item Disposition and Closeout Authority
+
+- Date: 2026-07-20
+- Approver: Flamestrike
+- Approval statement: `I am granting you full approval and authorization to complete this step no matter what is required`
+- Contract ID: `A005-CR-S10R-008-R2-A-FINAL-I10-DISP-A01`
+- Authority interpretation: select recommended route `S10R-008-R1-A` and
+  complete the current Step 10 written-decision gate under Core; higher-priority
+  Blueprint prohibitions remain controlling
+- Approved scope: evidence-bound disposition of `I10-001` through `I10-010`,
+  exact historical-option accounting, source/interpretation ownership,
+  block-state update, independent validation, visible review, mandatory
+  restart, checkpointing, exact-file staging, scoped commit and push to
+  `assetforge/main`, and remote verification
+- Excluded scope: R9 evaluation, fields, fills, surfaces, topology, geometry,
+  physical pairing, transforms, target coordinates, seams, joins, closures,
+  Step 11 execution, DCC, Unreal, and production
+- Pre-action checkpoint: `Saved/ProjectRecovery/20260720-142349/`
+- Inputs matched: `22/22` immutable and `3/3` mutable pre-action snapshots
+- Dispositions: `10/10` authoritative bounded interpretation rules; pending
+  `0`; evaluated `0`; implemented `0`
+- Historical options accounted: `30/30`
+- First audit run: `29/30`; one fail-closed literal wording gate
+- Corrective action: contract line wrapping only, with no authority or
+  technical-state change
+- Final audit rerun: `30/30`; failures `0`
+- Decision-level blocks resolved: `S10R-BLOCK-006`, `S10R-BLOCK-008`
+- Active production block: `S10R-BLOCK-009`
+- Step 10: complete
+- Required next gate: mandatory restart, followed only by separate Step 11
+  contract preparation; Step 11 execution remains unauthorized
+
+## S10R-008-R1-A Post-R9 I10 Reconciliation Execution Approval
+
+- Date: 2026-07-20
+- Approver: Flamestrike
+- Approval statement: `ok proceed with your recommendation`
+- Approved recommendation: address `S10R-BLOCK-008` first through a post-R9
+  reconciliation of all ten historical Step 10 items
+- Contract ID: `A005-CR-S10R-008-R1-A-POSTR9-I10-REC-A01`
+- Approved scope: record-only input lock, item-by-item authority delta, three
+  candidate routes, independent validation, A005 status updates,
+  checkpointing, visible review, and mandatory stop for route selection
+- Pre-action checkpoint: `Saved/ProjectRecovery/20260720-141013/`
+- Locked inputs: `19/19` immutable and `3/3` pre-action mutable snapshots
+  matched
+- Independent audit: first and only complete run passed `25/25`; failures
+  `0`; reruns `0`
+- Items reconciled: `10/10`; current approved item dispositions: `0`
+- Candidate reconciliation: `7` require revision, `2` remain unaffected
+  candidates, `1` remains dependency-blocked
+- Candidate routes: `3`; selected routes: `0`
+- Recommended route: `S10R-008-R1-A`, later preparation only of one bounded
+  current ten-item disposition contract
+- Route selection, I10 disposition, R9 evaluation, implementation, Step 10
+  closeout, Step 11, DCC, Unreal, production, staging, commit, and push:
+  unauthorized
+- Required next task: separate Flamestrike route decision after visible review
 
 ## S10R-006-R9-A Scoped Git Rollback Closeout Authority
 

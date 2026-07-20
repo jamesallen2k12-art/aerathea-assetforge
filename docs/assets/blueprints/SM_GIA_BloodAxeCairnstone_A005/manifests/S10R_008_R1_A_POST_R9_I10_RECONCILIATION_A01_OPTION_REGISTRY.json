@@ -1,0 +1,60 @@
+{
+  "schema": "aerathea.s10r_008_r1_a_post_r9_i10_reconciliation_a01_option_registry.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-008-R1-A-POSTR9-I10-REC-A01",
+  "date": "2026-07-20",
+  "status": "candidate_routes_ready_for_flamestrike",
+  "artifact_classification": "candidate",
+  "decision_question": "Which bounded route should govern the next action after post-R9 reconciliation proves that all ten historical I10 items still require current disposition?",
+  "routes": [
+    {
+      "id": "S10R-008-R1-A",
+      "label": "Revised ten-item disposition contract first",
+      "result": "later preparation only of one bounded current I10-001-through-I10-010 disposition contract",
+      "authority_effect_if_selected": "authorizes contract preparation only; no I10 decision, R9 evaluation, implementation, or downstream action",
+      "block_effect_if_selected": "S10R-BLOCK-008 remains active_pending_current_ten_item_disposition_contract",
+      "risk": "the later contract may expose additional item-specific dependencies and require further bounded gates",
+      "candidate_recommendation": true,
+      "selected": false
+    },
+    {
+      "id": "S10R-008-R1-B",
+      "label": "R9 evaluation-authority decision first",
+      "result": "later preparation only of a separate decision contract on whether bounded symbolic R9 evaluation may be proposed under Step 10",
+      "authority_effect_if_selected": "authorizes decision-contract preparation only; does not authorize evaluation and does not disposition any I10 item",
+      "block_effect_if_selected": "S10R-BLOCK-008 remains active unchanged",
+      "risk": "more work on S10R-BLOCK-006 may not reduce the historical-decision blocker that directly stops Step 10 closeout",
+      "candidate_recommendation": false,
+      "selected": false
+    },
+    {
+      "id": "S10R-008-R1-BLOCK",
+      "label": "Blueprint rule block",
+      "result": "declare Blueprint block: rule missing and hold before evaluation, implementation, or historical-item disposition",
+      "authority_effect_if_selected": "no new technical or production authority",
+      "block_effect_if_selected": "all three blocks remain active; a separately approved Blueprint rule change would be required",
+      "risk": "Step 10 and all downstream work remain stopped",
+      "candidate_recommendation": false,
+      "selected": false
+    }
+  ],
+  "counts": {
+    "candidate_routes": 3,
+    "candidate_recommendations": 1,
+    "selected_routes": 0,
+    "approved_routes": 0
+  },
+  "recommended_route": "S10R-008-R1-A",
+  "recommendation_reason": "Resolve the historical Step 10 decision blocker before spending more time on an unevaluated symbolic field whose authority cannot itself disposition the ten I10 subjects.",
+  "flamestrike_decision": null,
+  "authorization_flags": {
+    "route_selected": false,
+    "later_contract_preparation_authorized": false,
+    "i10_disposition_authorized": false,
+    "r9_evaluation_authorized": false,
+    "implementation_authorized": false,
+    "step10_closeout_authorized": false,
+    "step11_authorized": false,
+    "production_authorized": false
+  }
+}

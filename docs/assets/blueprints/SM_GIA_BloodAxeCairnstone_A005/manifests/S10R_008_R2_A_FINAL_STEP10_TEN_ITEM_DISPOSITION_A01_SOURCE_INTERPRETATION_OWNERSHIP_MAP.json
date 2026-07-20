@@ -1,0 +1,72 @@
+{
+  "schema": "aerathea.s10r_008_r2_a_final_step10_ten_item_disposition_a01_source_interpretation_ownership_map.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-008-R2-A-FINAL-I10-DISP-A01",
+  "date": "2026-07-20",
+  "status": "authoritative_source_and_interpretation_ownership_complete_for_step10",
+  "artifact_classification": "authoritative for bounded Step 10 ownership routing only",
+  "ownership_classes": {
+    "authoritative_exact": "Unchanged source identity, source pixels, approved measurements, exact formulas, semantic IDs, and discrete observations.",
+    "authoritative_direct_dimension": "The six printed centimeter dimensions only; they do not convert arbitrary source pixels.",
+    "authoritative_blocked_exact": "All absent unified scales, physical pixel pairs, source centers, exact closures, and physical transforms remain blocked as exact-data claims.",
+    "authoritative_bounded_interpretation": "The ten current I10-R1 rules and their already approved N3/K80/R3/R5/R7/R9 dependencies only.",
+    "future_step11_technical_rule": "A separately approved construction-blueprint parameter that may implement but may not broaden or relabel Step 10 authority."
+  },
+  "scope_ownership": [
+    {
+      "scope": "whole-asset target frame",
+      "source_authority": ["six direct dimensions", "twenty per-view calibration formulas", "Step 05 axes"],
+      "bounded_interpretation": ["I10-001-R1-A", "I10-009-R1-A"],
+      "blocked_exact_claims": ["unified pixel scale", "source center", "physical source-to-target transform"]
+    },
+    {
+      "scope": "C-001 primary monolith",
+      "source_authority": ["120 x 90 x 220 cm extrema", "owner-view visible profile records"],
+      "bounded_interpretation": ["I10-002-R1-A", "I10-010-R1-A"],
+      "blocked_exact_claims": ["physical corner pairs", "source center", "exact hidden quadrants"]
+    },
+    {
+      "scope": "C-002 and C-003 base courses",
+      "source_authority": ["distinct semantic IDs", "35 cm total base span", "visible course/contact evidence"],
+      "bounded_interpretation": ["I10-003-R1-A", "I10-006-R1-B", "approved K80 and sixteen mappings"],
+      "blocked_exact_claims": ["individual source-exact course heights", "CL-002 closure", "shared hidden loop"]
+    },
+    {
+      "scope": "C-004 support skirt",
+      "source_authority": ["140 x 110 cm direct extents", "source-visible rubble evidence"],
+      "bounded_interpretation": ["I10-004-R1-A", "I10-007-R1-A", "approved N3 perimeter"],
+      "blocked_exact_claims": ["source-derived footprint center", "source-authored bottom", "physical source perimeter"]
+    },
+    {
+      "scope": "C-005/C-006/C-007 decoration",
+      "source_authority": ["view-linked visible landmarks", "semantic IDs"],
+      "bounded_interpretation": ["I10-005-R1-A"],
+      "blocked_exact_claims": ["cross-face identity", "hidden-face placement", "physical feature centers"]
+    },
+    {
+      "scope": "hidden contacts and topology",
+      "source_authority": ["127 per-view contact samples", "semantic component relations"],
+      "bounded_interpretation": ["I10-006-R1-B", "I10-008-R1-A"],
+      "blocked_exact_claims": ["shared exact loops", "snap anchors", "source-authored topology"]
+    }
+  ],
+  "view_ownership": {
+    "front_cardinal_lane": {"owner": "front / -Y", "authority": "R5"},
+    "back_cardinal_role": {"owner": "back / +Y", "authority": "source evidence only; proof holdouts remain non-construction"},
+    "left_cardinal_lane": {"owner": "left / -X or +Y image-role mapping as registered", "authority": "R5 and Step 05 exact registered labels"},
+    "right_cardinal_role": {"owner": "right / +X", "authority": "source evidence only; proof holdouts remain non-construction"},
+    "corner_gaps": {"owner": "R7 predecessor/successor branches with successor midpoint ties", "authority": "I10-010-R1-A with R7/R9"},
+    "top": {"owner": "+Z source evidence", "authority": "I10-010-R1-A"},
+    "bottom": {"owner": "I10-007-R1-A interpretation only", "authority": "bounded Step 10 interpretation"},
+    "perspective": {"owner": null, "authority": "non-metric corroboration only"}
+  },
+  "counts": {
+    "approved_interpretation_items": 10,
+    "pending_interpretation_items": 0,
+    "source_records_modified": 0,
+    "evaluated_fields": 0,
+    "implemented_surfaces": 0,
+    "geometry": 0
+  },
+  "source_and_interpretation_separated": true
+}

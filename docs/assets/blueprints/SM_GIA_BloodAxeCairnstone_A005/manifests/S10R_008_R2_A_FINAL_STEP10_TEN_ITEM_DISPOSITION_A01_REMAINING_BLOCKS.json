@@ -1,0 +1,53 @@
+{
+  "schema": "aerathea.s10r_008_r2_a_final_step10_ten_item_disposition_a01_remaining_blocks.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-008-R2-A-FINAL-I10-DISP-A01",
+  "date": "2026-07-20",
+  "status": "step10_decision_blocks_resolved_global_production_block_active",
+  "artifact_classification": "authoritative for post-Step-10 routing only",
+  "resolved_blocks": [
+    {
+      "id": "S10R-BLOCK-006",
+      "resolution": "resolved_at_written_step10_interpretation_decision_level_by_approved_R3_R5_R7_R9_chain_and_current_I10_rules",
+      "historical_records_modified": false,
+      "evaluation_or_implementation_authorized": false,
+      "note": "Step 10 forbids implementation; zero evaluated field output is preserved and cannot prevent completion of the written decision gate."
+    },
+    {
+      "id": "S10R-BLOCK-008",
+      "resolution": "resolved_by_ten_of_ten_current_explicit_step10_dispositions",
+      "historical_records_modified": false,
+      "evaluation_or_implementation_authorized": false
+    }
+  ],
+  "active_blocks": [
+    {
+      "id": "S10R-BLOCK-009",
+      "subject": "global production authority",
+      "status": "active_no_implemented_field_fill_surface_topology_or_geometry",
+      "blocked_consumers": ["DCC", "Unreal", "production"],
+      "does_not_block": ["Step 10 closeout", "later Step 11 contract preparation"]
+    }
+  ],
+  "counts": {
+    "resolved_decision_level_blocks": 2,
+    "active_remaining_blocks": 1,
+    "approved_current_i10_dispositions": 10,
+    "evaluated_rules": 0,
+    "implemented_rules": 0,
+    "fields": 0,
+    "fills": 0,
+    "surfaces": 0,
+    "topology": 0,
+    "geometry": 0
+  },
+  "routing": {
+    "step10_complete": true,
+    "mandatory_restart_required": true,
+    "step11_contract_preparation_authorized_after_restart": true,
+    "step11_execution_authorized": false,
+    "dcc_authorized": false,
+    "unreal_authorized": false,
+    "production_authorized": false
+  }
+}

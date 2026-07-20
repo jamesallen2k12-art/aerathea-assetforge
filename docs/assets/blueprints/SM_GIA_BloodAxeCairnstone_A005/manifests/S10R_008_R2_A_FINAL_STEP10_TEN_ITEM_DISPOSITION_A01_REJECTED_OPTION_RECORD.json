@@ -1,0 +1,45 @@
+{
+  "schema": "aerathea.s10r_008_r2_a_final_step10_ten_item_disposition_a01_rejected_option_record.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-008-R2-A-FINAL-I10-DISP-A01",
+  "date": "2026-07-20",
+  "status": "authoritative_historical_option_disposition_complete",
+  "artifact_classification": "authoritative for Step 10 historical option disposition only",
+  "historical_registry_modified": false,
+  "superseded_candidate_options": [
+    {"id": "I10-001-A", "reason": "superseded by target-space-no-rectification rule I10-001-R1-A"},
+    {"id": "I10-002-A", "reason": "superseded by post-R9 view-owned envelope rule I10-002-R1-A"},
+    {"id": "I10-003-A", "reason": "superseded by K80/mapping-aware separate-course rule I10-003-R1-A"},
+    {"id": "I10-004-A", "reason": "superseded by the already approved N3 perimeter rule I10-004-R1-A"},
+    {"id": "I10-005-A", "reason": "superseded by current face-owned decoration rule I10-005-R1-A"},
+    {"id": "I10-006-B", "reason": "superseded by the current bounded overlap rule I10-006-R1-B"},
+    {"id": "I10-007-A", "reason": "superseded by the N3-bounded Z0 bottom rule I10-007-R1-A"},
+    {"id": "I10-008-A", "reason": "superseded by current separate-primary-component rule I10-008-R1-A"},
+    {"id": "I10-009-A", "reason": "superseded by S10R-002-A-aware datum rule I10-009-R1-A"},
+    {"id": "I10-010-A", "reason": "superseded by current R5/R7/R9 ownership rule I10-010-R1-A"}
+  ],
+  "rejected_candidate_options": [
+    {"id": "I10-001-B", "reason": "fixed owner-view priority would weaken equal metric-view evidence"},
+    {"id": "I10-002-B", "reason": "analytic primitive would erase source-owned faceting"},
+    {"id": "I10-003-B", "reason": "single combined base would erase approved component identities"},
+    {"id": "I10-004-B", "reason": "ellipse is superseded by approved N3 and would regularize the footprint incorrectly"},
+    {"id": "I10-005-B", "reason": "nearest-endpoint wrapping would invent physical correspondence and hidden decoration"},
+    {"id": "I10-006-A", "reason": "shared interpreted loops would overclaim exact common interface identity"},
+    {"id": "I10-007-B", "reason": "rubble-relief underside adds unsupported negative-Z volume"},
+    {"id": "I10-008-B", "reason": "monolithic topology would erase approved primary component language"},
+    {"id": "I10-009-B", "reason": "visual-center pivot uses a center type proven absent"},
+    {"id": "I10-010-B", "reason": "fixed panel priority is arbitrary and directionally biased"}
+  ],
+  "not_selected_block_options": [
+    "I10-001-BLOCK", "I10-002-BLOCK", "I10-003-BLOCK", "I10-004-BLOCK", "I10-005-BLOCK",
+    "I10-006-BLOCK", "I10-007-BLOCK", "I10-008-BLOCK", "I10-009-BLOCK", "I10-010-BLOCK"
+  ],
+  "counts": {
+    "superseded_candidate_options": 10,
+    "rejected_candidate_options": 10,
+    "not_selected_block_options": 10,
+    "historical_options_accounted": 30,
+    "historical_files_modified": 0
+  },
+  "downstream_reuse_prohibition": "No superseded, rejected, or not-selected historical option may be used as current construction authority."
+}

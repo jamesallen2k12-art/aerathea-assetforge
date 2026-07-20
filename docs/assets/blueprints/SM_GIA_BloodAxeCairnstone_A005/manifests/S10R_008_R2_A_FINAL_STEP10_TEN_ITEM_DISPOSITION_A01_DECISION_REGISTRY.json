@@ -1,0 +1,174 @@
+{
+  "schema": "aerathea.s10r_008_r2_a_final_step10_ten_item_disposition_a01_decision_registry.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-008-R2-A-FINAL-I10-DISP-A01",
+  "date": "2026-07-20",
+  "status": "authoritative_ten_of_ten_current_step10_dispositions_complete",
+  "artifact_classification": "authoritative for bounded Step 10 interpretation decisions only",
+  "technical_result": "pass_step10_ten_item_disposition_complete_no_implementation",
+  "approval_chain": {
+    "flamestrike_statement": "I am granting you full approval and authorization to complete this step no matter what is required",
+    "selected_route": "S10R-008-R1-A",
+    "delegation_scope": "evidence-bound selection of the smallest sufficient current disposition for all ten Step 10 items, validation, closeout, checkpoint, scoped commit, push, and remote verification",
+    "blueprint_override_authorized": false,
+    "final_authority": "Flamestrike"
+  },
+  "route_decision": {
+    "selected": "S10R-008-R1-A",
+    "not_selected": ["S10R-008-R1-B", "S10R-008-R1-BLOCK"],
+    "authority_effect": "complete current ten-item disposition under the Step 10 written-interpretation boundary"
+  },
+  "decision_items": [
+    {
+      "id": "I10-001",
+      "title": "Cross-view scale and rectification convention",
+      "decision": "approved_interpretation_rule",
+      "approved_rule_id": "I10-001-R1-A-TARGET-SPACE-NO-RECTIFICATION",
+      "approved_rule": "Preserve every source panel and per-view calibration unchanged. Use the approved construction-origin-centered abstract target frame, the six direct centimeter dimensions, and the later bounded target-space rules as construction authority. Do not rectify source imagery, average pixel scales, or claim a physical source-to-target transform. Owner-view source records remain evidence constraints, not target coordinates.",
+      "preserved_source_facts": ["six direct dimensions", "twenty independent calibration formulas", "no unified X/Y/Z pixel scale", "zero physical cross-view pixel pairs"],
+      "non_claims": ["no rectified image", "no unified pixel scale", "no source placement", "no physical transform"],
+      "step11_effect": "Step 11 may plan in the approved abstract target frame and must keep every source-relative claim explicitly absent.",
+      "implementation_status": "not_started",
+      "artifact_classification": "authoritative bounded interpretation"
+    },
+    {
+      "id": "I10-002",
+      "title": "C-001 monolith 360-degree envelope and facet ownership",
+      "decision": "approved_interpretation_rule",
+      "approved_rule_id": "I10-002-R1-A-VIEW-OWNED-FACETED-ENVELOPE",
+      "approved_rule": "Use the approved normal-owner view records as independent visible silhouette constraints for C-001 inside the direct 120 x 90 x 220 cm extrema. Principal sectors retain their owner-view evidence identity. Source-unowned horizontal transition sectors use the approved R5 lane, R7 owner, and R9 coupling rules; no new extremum, physical cross-panel pair, or analytic smoothing primitive is permitted. Later Step 11 evaluation must remain separately authorized.",
+      "preserved_source_facts": ["C-001 maximum width 120 cm", "C-001 maximum depth 90 cm", "overall height 220 cm", "owner-view visible profiles"],
+      "non_claims": ["no closed mesh exists", "no source center", "no physical corner pairing", "no evaluated field"],
+      "step11_effect": "Step 11 may specify a faceted C-001 envelope whose planned consumers trace to direct extrema, owner-view records, and the bounded symbolic transition rules.",
+      "implementation_status": "not_started",
+      "artifact_classification": "authoritative bounded interpretation"
+    },
+    {
+      "id": "I10-003",
+      "title": "C-002 and C-003 masonry-course separation and hidden interfaces",
+      "decision": "approved_interpretation_rule",
+      "approved_rule_id": "I10-003-R1-A-SEPARATE-NESTED-COURSES",
+      "approved_rule": "Keep C-002 and C-003 as separate semantic and construction components within the authoritative 35 cm total base span. Preserve every source-visible course edge and CL-001/CL-002 observation in its owner view. Use the approved K80 CL-003 target boundary and sixteen mappings only within their bounded scope. Source-invisible interfaces follow I10-006-R1-B independent watertight overlap; no shared exact loop, individual source-exact course height, or duplicated contour is claimed.",
+      "preserved_source_facts": ["C-002/C-003 distinct semantic identities", "35 cm total base height", "visible course edges", "CL-001/CL-002 discrete evidence"],
+      "non_claims": ["no source-exact individual course heights", "no CL-002 closure", "no shared hidden loop", "no physical center"],
+      "step11_effect": "Step 11 must plan two separate components, preserve visible course evidence, and define only bounded hidden overlap behind all visible contacts.",
+      "implementation_status": "not_started",
+      "artifact_classification": "authoritative bounded interpretation"
+    },
+    {
+      "id": "I10-004",
+      "title": "C-004 outer rubble footprint and unowned perimeter sectors",
+      "decision": "approved_interpretation_rule",
+      "approved_rule_id": "I10-004-R1-A-N3-OUTER-PERIMETER",
+      "approved_rule": "Use TOP_C004_OPIR_N3_ROUNDED_OVAL as the complete abstract target-space C-004 outer perimeter: abs(x/70)^3 + abs(y/55)^3 = 1, centered only in the approved construction frame. The rule preserves the 140 x 110 cm direct extents. It is a boundary interpretation, not a source-derived footprint center, fill, collision mesh, or implemented surface. Bottom closure follows I10-007-R1-A.",
+      "preserved_source_facts": ["C-004 direct extents 140 x 110 cm", "source-visible irregular edge evidence remains unchanged", "N3 already approved as abstract perimeter"],
+      "non_claims": ["no filled footprint", "no source center", "no source-pixel relation", "no collision geometry"],
+      "step11_effect": "Step 11 may use N3 as the planned outer construction boundary and must keep visible rubble detail source-owned separately from the abstract envelope.",
+      "implementation_status": "not_started",
+      "artifact_classification": "authoritative bounded interpretation"
+    },
+    {
+      "id": "I10-005",
+      "title": "C-005 motif and C-006/C-007 line-feature ownership",
+      "decision": "approved_interpretation_rule",
+      "approved_rule_id": "I10-005-R1-A-FACE-OWNED-VISIBLE-DECORATION",
+      "approved_rule": "Treat each source-visible C-005, C-006, and C-007 appearance as owned only by its approved normal-owner face. Do not assert cross-face continuity or copy motifs onto source-unseen faces. Step 11 may classify an approved visible feature as shallow geometry, normal detail, or Base Color, but may not change its face-owned placement or make decoration control an unsupported primary silhouette.",
+      "preserved_source_facts": ["view-linked appearance landmarks", "semantic IDs C-005/C-006/C-007", "no proven cross-face identity"],
+      "non_claims": ["no hidden-face motif", "no cross-face continuity", "no physical feature center"],
+      "step11_effect": "Step 11 gains a complete decoration ownership rule without inventing hidden content.",
+      "implementation_status": "not_started",
+      "artifact_classification": "authoritative bounded interpretation"
+    },
+    {
+      "id": "I10-006",
+      "title": "CL-001 through CL-003 hidden contact closure and occluded interfaces",
+      "decision": "approved_interpretation_rule",
+      "approved_rule_id": "I10-006-R1-B-INDEPENDENT-WATERTIGHT-OCCLUDED-OVERLAP",
+      "approved_rule": "Preserve every source-visible contact edge on its owner component. Close each primary component independently only inside completely source-invisible contact volume and permit bounded intersection there. Every hidden closure and intersecting face must remain behind all approved visible contact samples in every owner view. Step 11 must specify and validate the minimum positive overlap sufficient for watertight construction; it may not claim a shared source loop or snap anchor.",
+      "preserved_source_facts": ["CL-001/CL-002/CL-003 semantic relations", "127 exact discrete per-view contacts", "sixteen bounded CL-003 target mappings"],
+      "non_claims": ["no exact closed contact loop", "no contact center", "no snap anchor", "no physical cross-view pair"],
+      "step11_effect": "Step 11 may plan independently watertight modular components with strictly hidden, validated technical overlap.",
+      "implementation_status": "not_started",
+      "artifact_classification": "authoritative bounded interpretation"
+    },
+    {
+      "id": "I10-007",
+      "title": "Source-invisible bottom surface",
+      "decision": "approved_interpretation_rule",
+      "approved_rule_id": "I10-007-R1-A-FLAT-Z0-BOTTOM",
+      "approved_rule": "Plan one flat, undecorated underside at the authoritative Z=0 ground station, bounded by the I10-004-R1-A N3 construction perimeter. Add no relief, rubble continuation, negative-Z depth, or decorative detail. The underside is interpretation only and does not exist as geometry in Step 10.",
+      "preserved_source_facts": ["Z=0 ground station", "no source-visible underside"],
+      "non_claims": ["no source-authored bottom", "no implemented surface", "no below-ground volume"],
+      "step11_effect": "Step 11 may specify the minimum closed underside and later collision relationship.",
+      "implementation_status": "not_started",
+      "artifact_classification": "authoritative bounded interpretation"
+    },
+    {
+      "id": "I10-008",
+      "title": "Source-invisible topology and component watertightness",
+      "decision": "approved_interpretation_rule",
+      "approved_rule_id": "I10-008-R1-A-SEPARATE-PRIMARY-WATERTIGHT-COMPONENTS",
+      "approved_rule": "Plan C-001, C-002, C-003, and C-004 as separate watertight primary components under I10-006-R1-B. Keep C-005, C-006, and C-007 as face-owned decorative systems unless Step 11 explicitly promotes a source-visible silhouette-critical feature. Omit permanently hidden internal faces except those required to close each component or provide the approved minimum hidden overlap.",
+      "preserved_source_facts": ["semantic IDs C-001 through C-007", "physical separability not source-proven", "visible detail does not prescribe topology"],
+      "non_claims": ["no topology exists", "no runtime modularity decision", "no hidden feature promotion"],
+      "step11_effect": "Step 11 gains explicit topology ownership and must choose the planned combined-or-modular runtime arrangement without changing source authority.",
+      "implementation_status": "not_started",
+      "artifact_classification": "authoritative bounded interpretation"
+    },
+    {
+      "id": "I10-009",
+      "title": "Construction origin, centerline, and pivot convention",
+      "decision": "approved_interpretation_rule",
+      "approved_rule_id": "I10-009-R1-A-CONSTRUCTION-ORIGIN-GROUND-PIVOT",
+      "approved_rule": "Use the already approved S10R-002-A construction-origin-centered target frame. Define the production datum and planned asset pivot as (0,0,0), with X/Y at the abstract N3/K80 construction origin and Z at the authoritative ground station. This is a production convention only, not a source center, mass center, physical pixel center, or recovered placement transform.",
+      "preserved_source_facts": ["Z=0 ground station", "direct C-004 width/depth endpoint roles", "no exact source center or pivot"],
+      "non_claims": ["no source center", "no mass center", "no source placement transform", "no snap anchor"],
+      "step11_effect": "Step 11 may express every planned component in one stable export and Unreal placement frame.",
+      "implementation_status": "not_started",
+      "artifact_classification": "authoritative bounded interpretation"
+    },
+    {
+      "id": "I10-010",
+      "title": "Source-view ownership for transition and unowned sectors",
+      "decision": "approved_interpretation_rule",
+      "approved_rule_id": "I10-010-R1-A-R5-R7-R9-BOUNDED-OWNERSHIP",
+      "approved_rule": "Use the approved R5 owner lanes on their four closed cardinal q intervals and the approved R7 predecessor/successor owner branches with successor midpoint ties on G_0 through G_3. Use the approved R9 endpoint-selector coupling only as the written transition rule. Top-visible sectors remain owned by +Z source evidence; the bottom is controlled only by I10-007-R1-A; decoration follows I10-005-R1-A. No wrap, final/first endpoint identification, physical cross-panel pair, or source seam is claimed.",
+      "preserved_source_facts": ["Step 05 normal-owner axes", "R5 cardinal lanes", "R7 gap owner branches", "R9 bounded symbolic coupling", "perspective remains non-metric"],
+      "non_claims": ["no evaluated owner instances", "no physical seam", "no top/upright pixel join", "no periodic wrap"],
+      "step11_effect": "Step 11 has complete written surface-ownership routing and must keep any later seam construction subordinate to these bounded owner rules.",
+      "implementation_status": "not_started",
+      "artifact_classification": "authoritative bounded interpretation"
+    }
+  ],
+  "counts": {
+    "historical_items": 10,
+    "current_dispositions": 10,
+    "approved_interpretation_rules": 10,
+    "rejected_item_dispositions": 0,
+    "approved_omissions": 0,
+    "remains_blocked_items": 0,
+    "implemented_rules": 0,
+    "evaluated_rules": 0,
+    "source_records_modified": 0,
+    "historical_authority_files_modified": 0
+  },
+  "global_non_claims": {
+    "rectified_images": 0,
+    "unified_pixel_scales": 0,
+    "physical_cross_view_pairs": 0,
+    "source_centers": 0,
+    "source_to_target_transforms": 0,
+    "evaluated_r9_instances": 0,
+    "fields": 0,
+    "fills": 0,
+    "surfaces": 0,
+    "topology": 0,
+    "geometry": 0
+  },
+  "flamestrike_decision": {
+    "decision": "approve_complete_step10_under_delegated_evidence_bound_selection",
+    "statement": "I am granting you full approval and authorization to complete this step no matter what is required",
+    "selected_route": "S10R-008-R1-A",
+    "decision_items": ["I10-001", "I10-002", "I10-003", "I10-004", "I10-005", "I10-006", "I10-007", "I10-008", "I10-009", "I10-010"]
+  }
+}

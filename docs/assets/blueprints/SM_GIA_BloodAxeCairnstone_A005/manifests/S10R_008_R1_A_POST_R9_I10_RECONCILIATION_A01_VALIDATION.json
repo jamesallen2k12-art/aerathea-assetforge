@@ -1,0 +1,79 @@
+{
+  "schema": "aerathea.s10r_008_r1_a_post_r9_i10_reconciliation_a01_validation.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-008-R1-A-POSTR9-I10-REC-A01",
+  "date": "2026-07-20",
+  "status": "pass_25_of_25",
+  "artifact_classification": "proof only",
+  "technical_result": "pass_candidate_post_r9_i10_reconciliation_complete_route_decision_pending",
+  "audit_execution": {
+    "complete_runs": 1,
+    "reruns": 0,
+    "gates_total": 25,
+    "gates_passed": 25,
+    "gates_failed": 0,
+    "failed_gate_ids": []
+  },
+  "post_audit_write_scope_check": {
+    "status": "pass_exact_11_path_contract_allowlist",
+    "method": "sorted current git status compared with pre-action checkpoint 20260720-141013 git status",
+    "new_or_changed_contract_paths": 11,
+    "outside_allowlist_paths": 0,
+    "preexisting_unrelated_work_preserved": true,
+    "independent_auditor_rerun": false
+  },
+  "gate_results": [
+    {"id": "G01_contract_identity", "status": "pass"},
+    {"id": "G02_contract_approval_scope", "status": "pass"},
+    {"id": "G03_input_lock_counts", "status": "pass"},
+    {"id": "G04_immutable_hashes", "status": "pass", "matched": 19, "mismatched": 0},
+    {"id": "G05_mutable_pre_action_hashes", "status": "pass", "matched": 3, "mismatched": 0},
+    {"id": "G06_k80_authority", "status": "pass"},
+    {"id": "G07_mapping_authority", "status": "pass", "approved_bounded_mappings": 16},
+    {"id": "G08_r3_status", "status": "pass"},
+    {"id": "G09_r5_status", "status": "pass"},
+    {"id": "G10_r7_status", "status": "pass"},
+    {"id": "G11_r9_status", "status": "pass"},
+    {"id": "G12_item_ids", "status": "pass"},
+    {"id": "G13_item_count", "status": "pass", "items": 10},
+    {"id": "G14_all_items_pending", "status": "pass", "current_dispositions": 0},
+    {"id": "G15_classification_counts", "status": "pass", "requires_revision": 7, "unaffected_candidate": 2, "blocked_by_dependency": 1},
+    {"id": "G16_historical_preservation", "status": "pass", "modified": 0, "reclassified": 0},
+    {"id": "G17_resolved_blocks_zero", "status": "pass"},
+    {"id": "G18_active_blocks", "status": "pass", "ids": ["S10R-BLOCK-006", "S10R-BLOCK-008", "S10R-BLOCK-009"]},
+    {"id": "G19_r9_zero_outputs", "status": "pass"},
+    {"id": "G20_r9_no_evaluation_or_implementation", "status": "pass"},
+    {"id": "G21_route_registry", "status": "pass", "routes": 3},
+    {"id": "G22_one_recommendation", "status": "pass", "recommended_route": "S10R-008-R1-A"},
+    {"id": "G23_no_route_selected", "status": "pass", "selected_routes": 0},
+    {"id": "G24_all_authorizations_false", "status": "pass"},
+    {"id": "G25_output_and_handoff_boundary", "status": "pass"}
+  ],
+  "audited_artifact_hashes": {
+    "audit_script": "16358ad6d64d605145c6ce3d7234b64f98b7b67e11908e967b17cf1420d1e8a2",
+    "contract": "867ddb97af0bc22d6fe7f9495ca76eb0c01b6dbe355285fdd012c5a768fce89d",
+    "input_lock": "b0ab33f86f03ba4d45180ec02a63b80ad7022cb2ededd6c07c94eb52065304a0",
+    "item_authority_delta": "289ccbd3fa06aa8970b9711935f87e7e7c87fe96b9d251f8d14ceb3c46ffa59f",
+    "option_registry": "97cf01f1c9dfe505a6d743a699b1601b1e83354ebd50444c757c5074b73c4e9a",
+    "output_record": "6ad942696631b99aaad793cc031803da19eff744198256c0cc82598b54626c40",
+    "decision_handoff": "06b8c137dfb98d6a336c8c4199ea82a0aa1214a9b641dd63b550803f28197537"
+  },
+  "decision_state": {
+    "candidate_routes": 3,
+    "recommended_route": "S10R-008-R1-A",
+    "selected_route": null,
+    "resolved_block_ids": [],
+    "flamestrike_decision": null
+  },
+  "authorization_boundary": {
+    "i10_disposition_authorized": false,
+    "r9_evaluation_authorized": false,
+    "implementation_authorized": false,
+    "step10_closeout_authorized": false,
+    "step11_authorized": false,
+    "dcc_authorized": false,
+    "unreal_authorized": false,
+    "production_authorized": false,
+    "staging_commit_push_authorized": false
+  }
+}

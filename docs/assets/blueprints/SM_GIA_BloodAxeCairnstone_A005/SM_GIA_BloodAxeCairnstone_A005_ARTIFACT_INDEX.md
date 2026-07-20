@@ -1,10 +1,59 @@
 # SM_GIA_BloodAxeCairnstone_A005 Artifact Index
 
-Status: S10R-006-R9-A bounded symbolic corner-gap-to-field coupling rule approved exactly as registered; Core reassessment required; no evaluation or implementation authority
+Status: Step 10 complete; ten of ten current written dispositions authoritative; final audit passed 30 of 30 after one bounded wording correction; mandatory restart required; Step 11 contract preparation only after restart
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
+
+## Final Step 10 Ten-Item Disposition - Authoritative Closeout
+
+| Artifact | Status | Role |
+|---|---|---|
+| steps/S10R_008_R2_A_FINAL_STEP10_TEN_ITEM_DISPOSITION_A01_CONTRACT.md | authoritative for completed Step 10 closeout scope | Records Flamestrike's full step-completion authority, the controlling Blueprint boundary, selected route, exact allowed outputs, validation, visible-review, Git-closeout, and mandatory-restart requirements. |
+| manifests/S10R_008_R2_A_FINAL_STEP10_TEN_ITEM_DISPOSITION_A01_INPUT_LOCK.json | proof only | Locks 22 immutable authority inputs and three pre-action mutable status snapshots at checkpoint `20260720-142349`. |
+| manifests/S10R_008_R2_A_FINAL_STEP10_TEN_ITEM_DISPOSITION_A01_DECISION_REGISTRY.json | authoritative for bounded written Step 10 interpretations only | Records exactly one current approved and unimplemented disposition for each of `I10-001` through `I10-010`. |
+| manifests/S10R_008_R2_A_FINAL_STEP10_TEN_ITEM_DISPOSITION_A01_REJECTED_OPTION_RECORD.json | authoritative option-accounting record | Accounts for all 30 historical options without editing their historical registry: ten superseded recommendations, ten rejected alternatives, and ten unselected block options. |
+| manifests/S10R_008_R2_A_FINAL_STEP10_TEN_ITEM_DISPOSITION_A01_SOURCE_INTERPRETATION_OWNERSHIP_MAP.json | authoritative written ownership boundary | Separates source evidence from ten approved bounded interpretations and preserves zero evaluation and implementation. |
+| manifests/S10R_008_R2_A_FINAL_STEP10_TEN_ITEM_DISPOSITION_A01_REMAINING_BLOCKS.json | authoritative current block state | Resolves blocks 006 and 008 at the written decision level only, preserves block 009 as the active global production block, and requires the post-Step-10 restart. |
+| manifests/S10R_008_R2_A_FINAL_STEP10_TEN_ITEM_DISPOSITION_A01_VALIDATION.json | proof only; final 30/30 pass | Records the initial fail-closed 29/30 result, the bounded wording correction, the successful 30/30 rerun, hashes, scope, zero-output state, and authorization boundary. |
+| steps/S10R_008_R2_A_FINAL_STEP10_TEN_ITEM_DISPOSITION_A01_OUTPUT_RECORD.md | authoritative Step 10 decision output | Visible ten-of-ten disposition result and Step 10 completion record; creates no evaluation, implementation, geometry, or Step 11 execution authority. |
+| handoffs/S10R_008_R2_A_FINAL_STEP10_TEN_ITEM_DISPOSITION_A01_TO_STEP11_HANDOFF.md | authoritative preparation-only routing after restart | Requires the mandatory restart and authorizes only later preparation of a separate Step 11 contract. |
+| Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r008_r2_a_final_step10_ten_item_disposition_a01.py | proof-supporting read-only auditor | Final complete rerun passed all 30 gates after one literal boundary-wording correction; it creates no production artifact. |
+
+Technical result:
+`pass_authoritative_step10_ten_of_ten_dispositions_complete_mandatory_restart`.
+
+All ten current written dispositions are authoritative, bounded, and
+unimplemented. All 30 historical options are accounted. `S10R-BLOCK-006` and
+`S10R-BLOCK-008` are resolved at the Step 10 decision level only;
+`S10R-BLOCK-009` remains the active global production block. R9 evaluation,
+implementation, Step 11 execution, DCC, Unreal, and production remain
+unauthorized. The next permitted action after the mandatory restart is Step 11
+contract preparation only.
+
+## S10R-008-R1-A Post-R9 Historical I10 Reconciliation - Candidate Decision Surface
+
+| Artifact | Status | Role |
+|---|---|---|
+| steps/S10R_008_R1_A_POST_R9_I10_RECONCILIATION_A01_CONTRACT.md | authoritative for completed execution scope only | Records Flamestrike's approved record-only reconciliation boundary, exact exclusions, three required routes, validation rules, and mandatory decision stop. |
+| manifests/S10R_008_R1_A_POST_R9_I10_RECONCILIATION_A01_INPUT_LOCK.json | proof only | Locks 19 immutable authority inputs and three pre-action mutable status snapshots at checkpoint `20260720-141013`. |
+| manifests/S10R_008_R1_A_POST_R9_I10_RECONCILIATION_A01_ITEM_AUTHORITY_DELTA.json | candidate | Reconciles all ten historical I10 items against K80, the sixteen mappings, and R3/R5/R7/R9 without approving a disposition. |
+| manifests/S10R_008_R1_A_POST_R9_I10_RECONCILIATION_A01_OPTION_REGISTRY.json | candidate | Registers exactly three unselected routes and recommends later preparation only of one current ten-item disposition contract. |
+| manifests/S10R_008_R1_A_POST_R9_I10_RECONCILIATION_A01_VALIDATION.json | proof only; 25/25 pass | Records the first-and-only complete independent audit with zero failures and zero reruns. |
+| steps/S10R_008_R1_A_POST_R9_I10_RECONCILIATION_A01_OUTPUT_RECORD.md | candidate | Visible item-by-item reconciliation and route recommendation; creates no decision, evaluation, implementation, or downstream authority. |
+| handoffs/S10R_008_R1_A_POST_R9_I10_RECONCILIATION_A01_TO_DECISION_HANDOFF.md | candidate | Visible decision handoff asking Flamestrike to select one exact route. |
+| Tools/DCC/audit_bloodaxe_cairnstone_a005_s10r008_r1_a_post_r9_i10_reconciliation_a01.py | proof-supporting read-only auditor | Its first and only complete run passed all 25 gates before status updates. |
+
+Technical result:
+`pass_candidate_post_r9_i10_reconciliation_complete_route_decision_pending`.
+
+All ten historical items were reconciled. Zero have a current approved
+disposition. Candidate classifications are seven `requires_revision`, two
+`unaffected_candidate`, and one `blocked_by_dependency`. No historical file
+was modified or reclassified. All three blocks remain active and no route is
+selected. Evaluation, implementation, Step 10 closeout, Step 11, DCC, Unreal,
+production, staging, commit, and push remain unauthorized.
 
 ## S10R-006-R9-A Scoped Git Rollback Closeout A01
 

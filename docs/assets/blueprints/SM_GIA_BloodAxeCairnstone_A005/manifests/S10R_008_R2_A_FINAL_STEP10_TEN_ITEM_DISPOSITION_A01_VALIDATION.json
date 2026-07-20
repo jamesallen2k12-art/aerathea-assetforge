@@ -1,0 +1,117 @@
+{
+  "schema": "aerathea.s10r_008_r2_a_final_step10_ten_item_disposition_a01_validation.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-S10R-008-R2-A-FINAL-I10-DISP-A01",
+  "date": "2026-07-20",
+  "status": "pass_30_of_30_after_one_bounded_wording_correction",
+  "artifact_classification": "proof only",
+  "technical_result": "pass_authoritative_step10_ten_of_ten_dispositions_complete_mandatory_restart",
+  "audit_execution": {
+    "complete_runs": 2,
+    "reruns": 1,
+    "first_complete_run": {
+      "gates_total": 30,
+      "gates_passed": 29,
+      "gates_failed": 1,
+      "failed_gate_ids": [
+        "G03_blueprint_boundary"
+      ],
+      "cause": "The required literal R9 evaluation phrase was split across a Markdown line break even though the implementation exclusion was substantively present.",
+      "classification": "blocked_literal_contract_wording_check"
+    },
+    "corrective_action": {
+      "scope": "contract wording only",
+      "change": "Kept the words R9 evaluation on one physical line; no decision, formula, ownership, option, block, authorization, or implementation state changed.",
+      "artifact_status": "authoritative smallest sufficient correction"
+    },
+    "final_complete_run": {
+      "gates_total": 30,
+      "gates_passed": 30,
+      "gates_failed": 0,
+      "failed_gate_ids": [],
+      "technical_result": "pass_30_of_30"
+    }
+  },
+  "post_audit_write_scope_check": {
+    "status": "pass_exact_13_path_contract_allowlist",
+    "baseline_checkpoint": "Saved/ProjectRecovery/20260720-142349/",
+    "method": "Sorted current git status was compared with the checkpoint status for new paths; the three already-modified mutable status records were separately verified against their locked pre-action SHA-256 values.",
+    "new_contract_paths": 10,
+    "authorized_mutable_status_paths_changed": 3,
+    "total_contract_paths": 13,
+    "outside_allowlist_paths": 0,
+    "preexisting_unrelated_work_preserved": true,
+    "independent_auditor_rerun_after_status_updates": false
+  },
+  "gate_results_final_run": [
+    {"id": "G01_contract_identity", "status": "pass"},
+    {"id": "G02_full_flamestrike_authority", "status": "pass"},
+    {"id": "G03_blueprint_boundary", "status": "pass"},
+    {"id": "G04_input_lock_counts", "status": "pass", "immutable": 22, "mutable": 3},
+    {"id": "G05_immutable_hashes", "status": "pass", "matched": 22, "mismatched": 0},
+    {"id": "G06_mutable_pre_action_hashes", "status": "pass", "matched": 3, "mismatched": 0},
+    {"id": "G07_route_a_selected", "status": "pass"},
+    {"id": "G08_item_ids", "status": "pass"},
+    {"id": "G09_item_count", "status": "pass", "items": 10},
+    {"id": "G10_rule_ids", "status": "pass", "rules": 10},
+    {"id": "G11_all_approved_interpretation", "status": "pass"},
+    {"id": "G12_all_bounded_classification", "status": "pass"},
+    {"id": "G13_all_unimplemented", "status": "pass"},
+    {"id": "G14_every_item_has_nonclaims", "status": "pass"},
+    {"id": "G15_decision_counts", "status": "pass", "approved": 10, "pending": 0, "evaluated": 0, "implemented": 0},
+    {"id": "G16_global_zero_outputs", "status": "pass"},
+    {"id": "G17_r9_zero_outputs", "status": "pass"},
+    {"id": "G18_r9_authorization_unchanged", "status": "pass"},
+    {"id": "G19_historical_options_exact", "status": "pass", "accounted": 30},
+    {"id": "G20_historical_option_counts", "status": "pass", "superseded": 10, "rejected": 10, "block_options_not_selected": 10},
+    {"id": "G21_historical_preservation", "status": "pass"},
+    {"id": "G22_ownership_complete", "status": "pass"},
+    {"id": "G23_decision_blocks_resolved", "status": "pass", "resolved_at_decision_level": ["S10R-BLOCK-006", "S10R-BLOCK-008"]},
+    {"id": "G24_production_block_active", "status": "pass", "active": ["S10R-BLOCK-009"]},
+    {"id": "G25_step10_complete", "status": "pass"},
+    {"id": "G26_step11_boundary", "status": "pass"},
+    {"id": "G27_output_boundary", "status": "pass"},
+    {"id": "G28_handoff_boundary", "status": "pass"},
+    {"id": "G29_no_precloseout_staging", "status": "pass"},
+    {"id": "G30_prevalidation_write_scope", "status": "pass", "paths": 9, "outside_allowlist": 0}
+  ],
+  "audited_artifact_hashes": {
+    "audit_script": "45861cf5f8fd12cf87438889ae591c23fbbe87c276b7b4bec24f6e9871d4f665",
+    "contract": "cf32652a5f147db53d6163c71a47cf621b51de3b76df7b8720a0500cb22f8d50",
+    "input_lock": "ecb29c0febc3f06a8b7fa65db0eac1a8bb52ac4c7296180e5ebace1f3421184a",
+    "decision_registry": "42b0c32b472471f2e6cf71917d107c3da40a75cfa178753e54ab072073562e45",
+    "rejected_option_record": "2935252b7a523bec00cb4e951a49fe29dab77155dd3b30327e76eaba2812283f",
+    "source_interpretation_ownership_map": "262baceb5529b26f0b3f0d09df2ca641df838af7671a3efb3a0bfaa18c0f442d",
+    "remaining_blocks": "03863bc06ddc62d1d6d05043d203dc3b6ab1932fd3a438532a6755c605b4c7b3",
+    "output_record": "06efc309cf46b0f3668efbdce2be0d9f6fc8c36dba2196b4bafe189a1f97809d",
+    "step11_handoff": "a300f2a3e1372d95f0d41755d7be369e631087aad15477e0056fd5dfda60b096"
+  },
+  "decision_state": {
+    "selected_route": "S10R-008-R1-A",
+    "historical_items": 10,
+    "current_approved_dispositions": 10,
+    "pending_dispositions": 0,
+    "evaluated_rules": 0,
+    "implemented_rules": 0,
+    "resolved_decision_block_ids": [
+      "S10R-BLOCK-006",
+      "S10R-BLOCK-008"
+    ],
+    "active_production_block_ids": [
+      "S10R-BLOCK-009"
+    ],
+    "step10_complete": true,
+    "mandatory_restart_required": true
+  },
+  "authorization_boundary": {
+    "step10_written_dispositions_complete": true,
+    "step10_closeout_authorized_and_completed": true,
+    "step11_contract_preparation_after_restart": true,
+    "r9_evaluation_authorized": false,
+    "implementation_authorized": false,
+    "step11_execution_authorized": false,
+    "dcc_authorized": false,
+    "unreal_authorized": false,
+    "production_authorized": false
+  }
+}
