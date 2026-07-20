@@ -1,0 +1,111 @@
+{
+  "schema": "aerathea.step14_uv_ownership_plan.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-STEP14-UV-BASECOLOR-MATERIAL-PLAN-A01",
+  "date": "2026-07-20",
+  "status": "approved_authoritative_step14_uv_ownership_plan",
+  "artifact_classification": "authoritative Step 14 UV interpretation; not source evidence and not an implemented UV layout",
+  "decision": "Use one unique 0-1 UV0 layout with face ownership routed to five normal-owner source views or to an authored hidden/transition zone; use one separate non-overlapping UV1 lightmap layout.",
+  "input_lock": "manifests/STEP_14_INPUT_LOCK.json",
+  "candidate_sha256": "5b4af2275a70e2598e72361382fc7ea6ea318724ac928d71b2c200c768a93095",
+  "material_assignment": {
+    "slot_count": 1,
+    "slot_name": "M_GIA_BloodAxeCairnstone_A005",
+    "runtime_asset_count": 1,
+    "primary_shells": 4
+  },
+  "uv0": {
+    "name": "UVMap",
+    "domain": "closed 0-1 with all sampling footprints and dilation contained inside the atlas",
+    "unique": true,
+    "overlap_area_allowed": 0,
+    "shared_boundary_allowed": true,
+    "texture_resolution_px": [2048, 2048],
+    "atlas_coordinate_convention": "zero-based integer texels; x right, y down; half-open rectangles",
+    "source_ingest_filter": "nearest/point only; no resize or raster warp",
+    "minimum_island_dilation_px": 16,
+    "minimum_independent_window_gap_px": 32,
+    "perspective_owns_texels": false,
+    "face_owner_rule": {
+      "visible_face_test": "approved source-visible authority group and not fully occluded in the matching depth-tested owner view",
+      "top": "+Z when positive n_z is strictly dominant over abs(n_x) and abs(n_y)",
+      "front": "-Y when abs(n_y) dominates and n_y is negative",
+      "back": "+Y when abs(n_y) dominates and n_y is positive",
+      "left": "-X when abs(n_x) dominates and n_x is negative",
+      "right": "+X when abs(n_x) dominates and n_x is positive",
+      "cardinal_ties": "use the already approved R7 predecessor/successor branches and R9 endpoint-selector coupling; successor owns exact midpoint ties",
+      "top_ties": "+Z owns a positive-Z exact dominance tie; this is texture routing only",
+      "hidden_or_unowned": "authored stone zone",
+      "claims_source_seam": false,
+      "claims_physical_cross_panel_pair": false
+    },
+    "component_face_routing": [
+      {
+        "component_id": "C-001",
+        "visible_groups": ["VAG-003-C001-CORNER-JOINS", "VAG-004-C001-TOP"],
+        "hidden_groups": ["VAG-005-C001-HIDDEN-BOTTOM", "VAG-014-CL001-CL003-HIDDEN-OVERLAP"],
+        "visible_owner_method": "normal-owner rule; VAG-004 routes to top",
+        "seams": "component boundary, hidden-contact loop, top-cap boundary, and every cardinal/top owner transition"
+      },
+      {
+        "component_id": "C-002",
+        "visible_groups": ["VAG-006-C002-VISIBLE-TIER"],
+        "hidden_groups": ["VAG-007-C002-HIDDEN-CLOSURES", "VAG-014-CL001-CL003-HIDDEN-OVERLAP"],
+        "visible_owner_method": "normal-owner rule",
+        "seams": "component boundary, both hidden-contact loops, and every owner transition"
+      },
+      {
+        "component_id": "C-003",
+        "visible_groups": ["VAG-008-C003-VISIBLE-TIER"],
+        "hidden_groups": ["VAG-009-C003-HIDDEN-CLOSURES", "VAG-014-CL001-CL003-HIDDEN-OVERLAP"],
+        "visible_owner_method": "normal-owner rule",
+        "seams": "component boundary, both hidden-contact loops, and every owner transition"
+      },
+      {
+        "component_id": "C-004",
+        "visible_groups": ["VAG-010-C004-TRANSITION-LATTICE", "VAG-012-C004-FINAL-FIRST-CLOSURE-FACE at z bands 0-5 and 5-10 cm"],
+        "hidden_groups": ["VAG-013-C004-Z0-BOTTOM", "VAG-014-CL001-CL003-HIDDEN-OVERLAP", "VAG-012-C004-FINAL-FIRST-CLOSURE-FACE at z band 10-10.5 cm"],
+        "visible_owner_method": "normal-owner rule with +Z dominance permitted on upward-facing apron sectors",
+        "seams": "component boundary, Z=0 underside boundary, hidden CL-003 loop, technical final/first closure, and every owner transition"
+      }
+    ],
+    "source_windows_half_open_px": [
+      {"view": "front", "rect": [16, 16, 499, 541], "size": [483, 525], "role": "native unresampled source-routing window"},
+      {"view": "back", "rect": [531, 16, 1053, 417], "size": [522, 401], "role": "native unresampled source-routing window"},
+      {"view": "left", "rect": [1085, 16, 1569, 417], "size": [484, 401], "role": "native unresampled source-routing window"},
+      {"view": "right", "rect": [1601, 16, 1968, 388], "size": [367, 372], "role": "native unresampled source-routing window"},
+      {"view": "top", "rect": [16, 573, 353, 944], "size": [337, 371], "role": "native unresampled source-routing window"}
+    ],
+    "authored_zone_half_open_px": [16, 976, 2032, 2032],
+    "source_window_policy": "Only mask-owned source RGB pixels are copied into these fixed windows. Unowned pixels inside a window and every texel in the authored zone are interpreted continuation, dilation, or unused padding.",
+    "projection_policy": "Step 15 may move UV vertices over a native source window to align an owner face with source appearance, but may not move, warp, resize, or filter the source raster. UV placement is explicitly interpreted consumer mapping and not a physical source-to-target transform.",
+    "projection_failure_policy": "Any positive-area overlap, out-of-window sampling, unowned background sample, or source-owner mismatch blocks Step 15. Do not repair by moving source pixels or changing geometry."
+  },
+  "uv1": {
+    "name": "LightmapUV",
+    "unique": true,
+    "overlap_area_allowed": 0,
+    "planned_lightmap_resolution_px": 128,
+    "minimum_padding_texels_at_planned_resolution": 4,
+    "shell_lineage_preserved": ["C-001", "C-002", "C-003", "C-004"],
+    "source_rgb_consumer": false,
+    "implementation_deferred_to_step16": true
+  },
+  "counts": {
+    "source_owner_views": 5,
+    "perspective_owner_views": 0,
+    "primary_components_routed": 4,
+    "authored_hidden_zones": 1,
+    "uv_layers_created_step14": 0,
+    "material_slots_created_step14": 0
+  },
+  "blocked": [
+    "overlapping UV0 islands",
+    "cross-face motif continuity",
+    "perspective texture ownership",
+    "source raster rectification or warp",
+    "averaged cross-view scale",
+    "hidden-face red decoration",
+    "UV implementation in Step 14"
+  ]
+}

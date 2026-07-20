@@ -1,10 +1,52 @@
 # SM_GIA_BloodAxeCairnstone_A005 Approval Log
 
-Status: Step 13 complete; macro DCC source geometry approved for later Step 14 planning; scoped Git closeout pending
+Status: Step 14 complete; authoritative UV/Base Color/material plan approved; scoped Git closeout pending
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
+
+## Step 14 UV, Base Color, And Material-Interpretation Plan Authority
+
+- Date: 2026-07-20
+- Approver: Flamestrike
+- Approval statement: `resume    You have full authority and approval to
+  complete step 14 from start to finish regardless of what you need to do to
+  complete it`
+- Contract ID: `A005-CR-STEP14-UV-BASECOLOR-MATERIAL-PLAN-A01`
+- Approved scope: complete bounded Step 14 contract/input lock, UV ownership,
+  exact visible Base Color ownership, hidden continuation, C-005/C-006/C-007
+  routing, Normal/ORM/AO/roughness/metallic/bake/mip/filter interpretation,
+  naming/delivery/validation plan, visible review, checkpoints, exact scoped
+  Git closeout, remote verification, and mandatory restart
+- Blueprint override: `false`
+- Pre-action checkpoint: `Saved/ProjectRecovery/20260720-162501/`
+- Step 13 remote prerequisite recovery: live `assetforge/main` was found at
+  `d7c855b`; exact local Step 13 closeout `a602188` was pushed and remotely
+  verified before Step 14 authoring
+- Immutable inputs: `32/32` matched
+- Source panels: `6/6` file, dimensions, and decoded RGB identities matched
+- UV0: one planned unique 0-1 layout; five native owner windows; perspective
+  owners `0`; hidden/source-unowned faces route to one authored zone
+- UV1: unique non-overlap plan at 128 lightmap resolution; implementation
+  deferred to Step 16
+- Base Color: exact native RGB only at declared mask-owned mip-0 texels;
+  resizing, warp, interpolation, grading, and baked AO forbidden
+- C-005/C-006/C-007: face-owned exact red Base Color plus shared shallow
+  normal-only pigment incision; cross-face copy, hidden copy, displacement,
+  and emissive prohibited
+- Maps: 2K Base Color, DirectX Normal, and ORM; ORM R/G/B = AO/Roughness/
+  Metallic; metallic identically zero
+- Emissive decision: `rejected_and_absent_for_A005_A01`
+- Step 15 acceptance gates planned: `18`
+- First complete independent Step 14 audit: `32/32`; failures `0`
+- UV layers, masks, maps, materials, bakes, Blender saves, geometry, LOD,
+  collision, FBX, Unreal, and visual-canon changes: `0`
+- Pipeline status: `DCC source candidate`; not DCC game-ready, fully
+  game-ready, finished appearance, or visual canon
+- Exact scoped Git closeout: pending
+- Required next gate after closeout: mandatory restart, then only preparation
+  of a separate Step 15 contract
 
 ## Step 13 DCC Geometry Audit And Review Authority
 
@@ -43,9 +85,10 @@ Updated: 2026-07-20
   filtering, bake, and emissive behavior: deferred; not approved by Step 13
 - UV, texture, material, LOD, collision, FBX, Unreal, visual-canon changes,
   and Step 14 execution: `0`
-- Exact scoped Git closeout: pending
-- Required next gate after closeout: mandatory restart, then only preparation
-  of a separate Step 14 contract
+- Exact scoped Git closeout: commit `a602188` pushed and remotely verified
+  during the Step 14 resume prerequisite recovery
+- Historical next gate: mandatory restart, then Step 14 planning; satisfied by
+  the current authorized Step 14 lifecycle
 
 ## Step 12 DCC Source Geometry Candidate Authority
 

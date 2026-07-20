@@ -1,12 +1,43 @@
 # SM_GIA_BloodAxeCairnstone_A005 Artifact Index
 
-Status: Step 13 complete; macro DCC source geometry approved for later Step 14 planning; scoped Git closeout pending
+Status: Step 14 complete; authoritative UV/Base Color/material plan approved; scoped Git closeout pending
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
 
-## Step 13 DCC Geometry Audit And Review - Approved / Git Closeout Pending
+## Step 14 UV, Base Color, And Material-Interpretation Plan - Authoritative / Git Closeout Pending
+
+| Artifact | Status | Role |
+|---|---|---|
+| steps/STEP_14_UV_BASECOLOR_MATERIAL_INTERPRETATION_PLAN_CONTRACT.md | authoritative execution boundary | Records Flamestrike's complete Step 14 authority, evidence/interpretation separation, planning-only boundary, required outputs, fail-closed gates, Git closeout, and mandatory restart. |
+| manifests/STEP_14_INPUT_LOCK.json | authoritative execution input lock | Locks 32 Core, Blueprint, source, ownership, interpretation, candidate, and Step 13 inputs plus all six decoded source-panel RGB hashes. |
+| manifests/STEP_14_UV_OWNERSHIP_PLAN.json | authoritative Step 14 UV interpretation | Defines one material slot, five normal-owner source windows, hidden-zone routing, UV0 seams/padding, UV1 intent, and no physical source-transform claims. |
+| manifests/STEP_14_BASE_COLOR_OWNERSHIP_MANIFEST.json | authoritative Step 14 Base Color interpretation | Separates byte-exact owned mip-0 RGB from deterministic interpreted masks and authored continuation; routes C-005/C-006/C-007 without cross-face or hidden copy. |
+| manifests/STEP_14_MATERIAL_INTERPRETATION_MANIFEST.json | authoritative Step 14 material interpretation | Defines DirectX Normal, ORM response, AO/bake bounds, stone/pigment roughness, metallic zero, and rejected emissive. |
+| manifests/STEP_14_TEXTURE_DELIVERY_AND_VALIDATION_PLAN.json | authoritative Step 14 delivery/validation interpretation | Defines three 2K lossless source maps, color spaces, channel packing, mips/filtering, later Unreal intent, and 18 fail-closed Step 15 gates. |
+| Tools/DCC/audit_bloodaxe_cairnstone_a005_step14_plan.py | proof-supporting read-only auditor | Verifies all locked inputs and source pixels, atlas planning, face/decor routing, material/map policy, zero production, review/status completeness, and changed-path firewall. |
+| manifests/STEP_14_VALIDATION_MANIFEST.json | proof only | Records the first complete 32/32 audit, exact hashes/counts, zero-production result, visible-review state, and mandatory restart routing. |
+| review/STEP_14_UV_BASECOLOR_MATERIAL_PLAN_REVIEW.md | authoritative Step 14 planning review | Presents the exact evidence/interpretation boundary and approved UV/Base Color/material decisions without showing or implying a finished material candidate. |
+| steps/STEP_14_OUTPUT_RECORD.md | authoritative Step 14 result record | Records the approved planning package, classifications, audit result, zero-production state, and restart boundary. |
+| handoffs/STEP_14_TO_STEP_15_HANDOFF.md | authoritative post-Step-14 routing | After restart, permits only preparation of a separate Step 15 contract and preserves every downstream exclusion. |
+
+Technical result:
+`pass_authoritative_step14_plan_complete`.
+
+The exact five source-owner windows preserve native front/back/left/right/top
+panel dimensions within a 2K atlas plan. Exactness is limited to deterministic
+mask-owned mip-0 RGB. UVs, masks, hidden continuation, Normal/ORM, AO,
+roughness, metallic, bake, mip, and filtering behavior are approved
+interpretation. Perspective remains corroboration only; emissive is rejected.
+
+The Blender candidate remains byte-identical at
+`5b4af2275a70e2598e72361382fc7ea6ea318724ac928d71b2c200c768a93095`.
+UV layers, textures, materials, bakes, DCC saves, geometry changes, LOD,
+collision, FBX, Unreal, and visual-canon changes remain zero. Exact scoped Git
+closeout is pending.
+
+## Step 13 DCC Geometry Audit And Review - Approved / Authoritative Closeout
 
 | Artifact | Status | Role |
 |---|---|---|
@@ -35,8 +66,10 @@ cell inherits that defect. The Step 12 numeric/topology/authority audit and
 unchanged candidate remain valid. The recovery is recorded in the project
 drift ledger and Step 13 audit. Old proof files remain preserved in place.
 
-Exact scoped Git closeout is pending. UV, texture, material, LOD, collision,
-FBX, Unreal, visual-canon changes, and Step 14 execution remain zero.
+Exact Step 13 closeout commit `a602188` was pushed and remotely verified during
+the Step 14 resume prerequisite recovery. Step 13 UV, texture, material, LOD,
+collision, FBX, Unreal, visual-canon changes, and Step 14 execution remained
+zero.
 
 ## Step 12 DCC Source Geometry Candidate - Validated Candidate / Authoritative Closeout
 

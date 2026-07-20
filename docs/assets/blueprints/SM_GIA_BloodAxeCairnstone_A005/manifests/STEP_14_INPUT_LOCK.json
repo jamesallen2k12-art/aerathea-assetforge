@@ -1,0 +1,80 @@
+{
+  "schema": "aerathea.step14_uv_basecolor_material_plan_input_lock.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-STEP14-UV-BASECOLOR-MATERIAL-PLAN-A01",
+  "date": "2026-07-20",
+  "status": "locked_pre_execution",
+  "artifact_classification": "authoritative execution input lock",
+  "flamestrike_authority": {
+    "statement": "resume    You have full authority and approval to complete step 14 from start to finish regardless of what you need to do to complete it",
+    "scope": "complete bounded Step 14 planning, validation, visible review, exact scoped Git closeout, remote verification, and mandatory restart",
+    "blueprint_override_authorized": false,
+    "step15_production_authorized": false
+  },
+  "pre_action_checkpoint": "Saved/ProjectRecovery/20260720-162501/",
+  "step13_remote_reconciliation": {
+    "journal_claimed_hash": "47900a9600e4eb55b98096185c37d27e08aa47af",
+    "live_remote_before_recovery": "d7c855b5204584283a77f060b239d7e8441528bf",
+    "local_authoritative_closeout": "a602188ae23cfef9ffb21afc2a47d73a6dff24d1",
+    "live_remote_after_recovery": "a602188ae23cfef9ffb21afc2a47d73a6dff24d1",
+    "classification": "remote closeout evidence discrepancy recovered before Step 14 production-moving work"
+  },
+  "git_pre_action": {
+    "branch": "main",
+    "head": "a602188ae23cfef9ffb21afc2a47d73a6dff24d1",
+    "status_line_count": 245,
+    "unrelated_worktree_entries_preserved": true
+  },
+  "locked": true,
+  "counts": {
+    "locked_inputs": 32,
+    "hashes_present": 32,
+    "missing_inputs": 0,
+    "source_panels": 6,
+    "texture_owner_panels": 5,
+    "perspective_corroboration_panels": 1
+  },
+  "locked_inputs": [
+    {"path": "AGENTS.md", "sha256": "5d2d2637a58113f0a6f5ec92e40d8bb2bda9e03fb58b4868a0d9dfbb3b57ad55", "role": "Core authority"},
+    {"path": "docs/projects/assetforge/BLOODAXE_CAIRNSTONE_PIXEL_EXACT_FRESH_START_MULTISTEP_PLAN.md", "sha256": "ba6784498d792dc85dd431c807f59620d6851af97b4cd15efe89c44a397b10b6", "role": "Step 14 Blueprint"},
+    {"path": "docs/assets/CONCEPT_ART_TO_GAME_READY_ASSET_PIPELINE.md", "sha256": "761b7e24154d0c68069efc89f21678f2fc9c2a6cb7863b4c78277b39c651655d", "role": "pipeline vocabulary"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_SOURCE_AUTHORITY_LOCK.md", "sha256": "ac51c7c55483dcb5259da530e197ea611655cd1aeb2ad2a522997dc27117e161", "role": "source identity authority"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/STEP_14_UV_BASECOLOR_MATERIAL_INTERPRETATION_PLAN_CONTRACT.md", "sha256": "7fc96244e27c51c3938c24ce2441c418894b0d78371c5c64d137aa25e3e9be68", "role": "Step 14 execution boundary"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_03_PANEL_CROP_MANIFEST.json", "sha256": "5d423400e1415c7e816648f703f2d04de384070813480db923303ab0709a0356", "role": "panel paths, sizes, file hashes, and RGB hashes"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_04_COMPONENT_OWNERSHIP_INVENTORY_RECOVERY_A01.json", "sha256": "f472f5bb749eda8ffb27809658d4afd3f5fc732ddcf7d4fcb1275492c1e7d755", "role": "recovered component and decoration semantics"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_05_ORIENTATION_REGISTRATION_MANIFEST.json", "sha256": "b7efa865e8b82f63e714d36ed4935fc02515ecc3f4d355941467f20b49348395", "role": "source-view orientation"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_06_FRONT_CALIBRATION_RECORD.json", "sha256": "17993e1d472d97cf1d4c8996b668e1bb11b8f2fc160ce6c46fd5b8d2bc32ca4b", "role": "front independent source observations"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_06_BACK_CALIBRATION_RECORD.json", "sha256": "7eaa651d6c89bbe444af8f167e663a0d16a204832c45e18f2447f64b1a952fcc", "role": "back independent source observations"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_07_LEFT_CALIBRATION_RECORD.json", "sha256": "df9f379a26e71152808ef1e975ef7bab12eb25ac2a19960752a1976bfde37bc2", "role": "left independent source observations"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_07_RIGHT_CALIBRATION_RECORD.json", "sha256": "3d7c8a32d82fca202da710cf4209f42e443c4be8fad7a4b79caeccc244d6a76c", "role": "right independent source observations"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_08R_TOP_CALIBRATION_RECORD.json", "sha256": "6b3c361bb17a2f1d2a9e6685dcfd6e4ac0092a286477bbab127784c4cea9eccd", "role": "top independent source observations"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_09_CROSS_VIEW_CORRESPONDENCE_MANIFEST.json", "sha256": "9efadda542ba2358c59b8d4fac4b731e5d877d2007aa1d03b3fe67abac29547f", "role": "cross-view non-pairing and ownership boundary"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/S10R_008_R2_A_FINAL_STEP10_TEN_ITEM_DISPOSITION_A01_DECISION_REGISTRY.json", "sha256": "42b0c32b472471f2e6cf71917d107c3da40a75cfa178753e54ab072073562e45", "role": "final approved Step 10 interpretation rules"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/S10R_008_R2_A_FINAL_STEP10_TEN_ITEM_DISPOSITION_A01_SOURCE_INTERPRETATION_OWNERSHIP_MAP.json", "sha256": "262baceb5529b26f0b3f0d09df2ca641df838af7671a3efb3a0bfaa18c0f442d", "role": "source versus interpretation ownership"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_11_TECHNICAL_RULE_REGISTRY.json", "sha256": "27b63adc0fde2c0be61bb7b7785e01623fc321d18eda7d13cf06cd3f59024b96", "role": "approved construction and decoration rules"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_11_CONSTRUCTION_BLUEPRINT.json", "sha256": "a0859422c14dbf00b51d627c0ba257abc064e7dc78abe5b106bd0c2ee8cc75e7", "role": "material slot, texture names, resolution, and deferred consumers"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_11_VERTEX_AUTHORITY_MAP.json", "sha256": "bca4b850f61baf8c3c7ebddddffd31bd5b1b7a6be4065282c6ff526ebf22724e", "role": "geometry authority-group routing"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_12_DCC_SOURCE_GEOMETRY_AUDIT.json", "sha256": "9ceafe1e9e1a2e3c9db3f6d895a12e3ea14754a8db7c28be4b5d3b02f11f332d", "role": "candidate numeric and topology proof"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_13_DCC_GEOMETRY_REVIEW_AUDIT.json", "sha256": "780cb899813bc9c972f465f3be3955645c33665de0922e01aa7b0a8dcb500c78", "role": "approved-candidate audit"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/review/STEP_13_DCC_GEOMETRY_REVIEW.md", "sha256": "2957c04793ca02f1cfa5145f28e34c29c68ae614ce9dfe9d9ea572701d74c5e9", "role": "approved geometry and deferred appearance boundary"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/STEP_13_OUTPUT_RECORD.md", "sha256": "023e51f96d4d2f0a572fc561ca6beb848bdee74e5b031750ca81bb7b8cdda4fe", "role": "authoritative Step 13 result"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/handoffs/STEP_13_TO_STEP_14_HANDOFF.md", "sha256": "218f943fefb5ce7424c0b9ee555a2fc68251f2363de03cd46ef3c634bb89098e", "role": "authoritative Step 14 routing"},
+    {"path": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_DCCSource_A01.blend", "sha256": "5b4af2275a70e2598e72361382fc7ea6ea318724ac928d71b2c200c768a93095", "role": "approved candidate Blender source"},
+    {"path": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_GEOMETRY_MANIFEST.json", "sha256": "c3c131370dc6d63f89686b78358a4597139ebbb04e59234230e0103736000a82", "role": "candidate face and component lineage"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_FRONT.png", "sha256": "262071198bc0d409e9b68af5ac4f3c6a4768a90b1fd199342035a8a82342c2c5", "role": "front source RGB owner"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_BACK.png", "sha256": "8ceae7f5ccf311ded8822fdd623d2b68009102bc07ceaf66708f59d2a013d271", "role": "back source RGB owner"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_LEFT.png", "sha256": "52212ba783d026a008929e3946cac934281de7d2daec2ada316205059258cba4", "role": "left source RGB owner"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_RIGHT.png", "sha256": "cc6c27405fbd6ea8c46b70966fe559acbd57acb88e58bfdcd6b763ce827a862e", "role": "right source RGB owner"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_TOP.png", "sha256": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf", "role": "top source RGB owner"},
+    {"path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_PERSPECTIVE.png", "sha256": "4c49c9661f14ece54abfbfd39da9ef047e6f749638b0842d1e51eaebca2564c7", "role": "perspective corroboration only; never a texture owner"}
+  ],
+  "source_pixel_hashes": {
+    "front": "d4fb34cb01ce6eaa04213a5a7c517743960daec6dcf638c53ec80a958ecc807f",
+    "back": "9256a8df175cbf54ca0662b11e0c5f5f6be4e670b10a9783efc1d6e9e26a56b1",
+    "left": "96a10daa637b28b879b5dd210bad3526e87499218dece9ca4ed0560046c9bddb",
+    "right": "f6201cbae75fa061f7614893d7f2c081149a350fc6d64ad510b49ef5c12d7610",
+    "top": "eda0f5d691336489e257a44b09f58b8543b023bd4edc0893d5fab68ad8dbf05f",
+    "perspective": "9b772aefc3aea81a65a419863a85d3682a9e870505a419eeacef9a582568bd8f"
+  },
+  "approved_candidate_sha256": "5b4af2275a70e2598e72361382fc7ea6ea318724ac928d71b2c200c768a93095"
+}

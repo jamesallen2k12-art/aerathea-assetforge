@@ -1,0 +1,86 @@
+{
+  "schema": "aerathea.step14_base_color_ownership_manifest.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-STEP14-UV-BASECOLOR-MATERIAL-PLAN-A01",
+  "date": "2026-07-20",
+  "status": "approved_authoritative_step14_base_color_ownership",
+  "artifact_classification": "authoritative Step 14 Base Color interpretation; source RGB remains evidence only at declared owned pixels",
+  "decision": "Preserve exact native RGB at deterministic source-owned mip-0 pixels and classify every other Base Color texel as authored continuation, dilation, or unused padding.",
+  "map": {
+    "name": "T_GIA_BloodAxeCairnstone_A005_BC",
+    "resolution_px": [2048, 2048],
+    "channels": "RGB; alpha optional but must be opaque 255 and carries no gameplay meaning",
+    "bit_depth": 8,
+    "color_space": "sRGB",
+    "source_file_format": "lossless PNG",
+    "baked_lighting_added": false,
+    "baked_ao_added": false,
+    "color_grading_allowed": false
+  },
+  "source_owner_panels": [
+    {"view": "front", "size_px": [483, 525], "atlas_rect_half_open_px": [16, 16, 499, 541], "file_sha256": "262071198bc0d409e9b68af5ac4f3c6a4768a90b1fd199342035a8a82342c2c5", "pixel_sha256": "d4fb34cb01ce6eaa04213a5a7c517743960daec6dcf638c53ec80a958ecc807f", "raw_red_predicate_pixels": 10272},
+    {"view": "back", "size_px": [522, 401], "atlas_rect_half_open_px": [531, 16, 1053, 417], "file_sha256": "8ceae7f5ccf311ded8822fdd623d2b68009102bc07ceaf66708f59d2a013d271", "pixel_sha256": "9256a8df175cbf54ca0662b11e0c5f5f6be4e670b10a9783efc1d6e9e26a56b1", "raw_red_predicate_pixels": 4999},
+    {"view": "left", "size_px": [484, 401], "atlas_rect_half_open_px": [1085, 16, 1569, 417], "file_sha256": "52212ba783d026a008929e3946cac934281de7d2daec2ada316205059258cba4", "pixel_sha256": "96a10daa637b28b879b5dd210bad3526e87499218dece9ca4ed0560046c9bddb", "raw_red_predicate_pixels": 4298},
+    {"view": "right", "size_px": [367, 372], "atlas_rect_half_open_px": [1601, 16, 1968, 388], "file_sha256": "cc6c27405fbd6ea8c46b70966fe559acbd57acb88e58bfdcd6b763ce827a862e", "pixel_sha256": "f6201cbae75fa061f7614893d7f2c081149a350fc6d64ad510b49ef5c12d7610", "raw_red_predicate_pixels": 3729},
+    {"view": "top", "size_px": [337, 371], "atlas_rect_half_open_px": [16, 573, 353, 944], "file_sha256": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf", "pixel_sha256": "eda0f5d691336489e257a44b09f58b8543b023bd4edc0893d5fab68ad8dbf05f", "raw_red_predicate_pixels": 6645}
+  ],
+  "perspective_policy": {
+    "view": "perspective",
+    "pixel_sha256": "9b772aefc3aea81a65a419863a85d3682a9e870505a419eeacef9a582568bd8f",
+    "role": "non-metric visual corroboration only",
+    "base_color_owner": false,
+    "atlas_window": null
+  },
+  "source_owned_mask_rule": {
+    "status": "approved deterministic interpretation for future Step 15 execution",
+    "not_source_evidence": true,
+    "paper_reference": "per-channel median RGB of the outer eight-pixel panel border",
+    "foreground_seed_predicate": "max(abs(R-paper_R), abs(G-paper_G), abs(B-paper_B)) >= 24 OR (R-max(G,B) >= 18 AND R >= 50)",
+    "geometry_restriction": "intersect the predicate with the depth-tested raster coverage of the approved face owner, grown by one pixel only to retain antialias fringe",
+    "small_component_rule": "remove an 8-connected foreground component smaller than four pixels unless it lies within two pixels of a component at least 64 pixels in size",
+    "component_owner": "the rasterized approved C-001/C-002/C-003/C-004 face identity supplies the primary component label",
+    "manual_pixel_changes_allowed": false,
+    "failure_policy": "If the deterministic matte includes labels/grid/dimensions or excludes material source pixels, Step 15 blocks and requires a separately approved rule revision; do not hand-correct the mask.",
+    "review_required": "native-resolution mask/source comparison for all five owner views before map acceptance"
+  },
+  "exact_rgb_transfer_rule": {
+    "source_to_atlas": "atlas_rgb[x+offset_x,y+offset_y] = panel_rgb[x,y] for every mask-owned source pixel",
+    "coordinate_tolerance_px": 0,
+    "source_sampling": "integer texel copy",
+    "resizing": false,
+    "warping": false,
+    "interpolation": false,
+    "grading": false,
+    "required_audit": "every owned atlas mip-0 RGB triplet equals its declared source-panel RGB triplet byte-for-byte",
+    "exactness_non_claims": ["rendered pixels", "filtered samples", "compressed payload", "lower mips", "physical cross-view correspondence", "source-authored UV placement"]
+  },
+  "authored_continuation": {
+    "artifact_classification": "interpretation",
+    "applies_to": ["source-unowned pixels inside source windows", "cardinal/top transition islands", "hidden contact closures", "C-004 underside", "island dilation", "unused atlas fill"],
+    "visible_transition_palette": "derive an eight-color deterministic RGB k-medoid palette from the same component's owned, non-red stone texels; seed 0; lexicographic tie break",
+    "placement": "hand-painted low-frequency stone variation constrained to that palette family; placement is authored and must be visibly reviewed",
+    "hidden_contact_fill": "component-local darkest non-red medoid, flat except for required dilation",
+    "underside_fill": "C-004 non-red darkest medoid; flat, undecorated, and without rubble continuation",
+    "red_motif_allowed": false,
+    "cross_face_feature_copy_allowed": false,
+    "claim_exact_source_placement": false
+  },
+  "decoration_routing": {
+    "shared_consumer_mask": "RED_APPEARANCE_UNION",
+    "red_predicate": "R-max(G,B) >= 18 AND R >= 50, intersected with the source-owned mask",
+    "C-005": {"semantic_role": "large bilateral blade-like appearance", "source_views": ["front", "top"], "perspective_corroborates": true, "hidden_copy": false, "base_color": "exact owned source RGB"},
+    "C-006": {"semantic_role": "narrow inscription-like appearance", "source_views": ["front", "back", "left", "right", "top"], "perspective_corroborates": true, "hidden_copy": false, "base_color": "exact owned source RGB"},
+    "C-007": {"semantic_role": "branching seam/fissure appearance", "source_views": ["front", "back", "left", "right", "top"], "perspective_corroborates": true, "hidden_copy": false, "base_color": "exact owned source RGB"},
+    "individual_semantic_ids_preserved": true,
+    "shared_material_response_allowed": true,
+    "cross_view_physical_identity_claimed": false
+  },
+  "counts": {
+    "source_owner_panels": 5,
+    "perspective_owner_panels": 0,
+    "source_windows": 5,
+    "authored_zones": 1,
+    "base_color_maps_created_step14": 0,
+    "source_masks_created_step14": 0
+  }
+}

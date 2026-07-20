@@ -1,0 +1,89 @@
+{
+  "schema": "aerathea.step14_texture_delivery_validation_plan.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-STEP14-UV-BASECOLOR-MATERIAL-PLAN-A01",
+  "date": "2026-07-20",
+  "status": "approved_authoritative_step14_texture_delivery_and_validation_plan",
+  "artifact_classification": "authoritative Step 14 delivery and validation interpretation; no texture package exists",
+  "delivery_root": "SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/",
+  "maps": [
+    {"name": "T_GIA_BloodAxeCairnstone_A005_BC", "file": "T_GIA_BloodAxeCairnstone_A005_BC.png", "resolution_px": [2048, 2048], "channels": "RGB or opaque RGBA", "bit_depth": 8, "color_space": "sRGB", "runtime_role": "Base Color"},
+    {"name": "T_GIA_BloodAxeCairnstone_A005_N", "file": "T_GIA_BloodAxeCairnstone_A005_N.png", "resolution_px": [2048, 2048], "channels": "RGB", "bit_depth": 8, "color_space": "linear", "runtime_role": "DirectX tangent normal"},
+    {"name": "T_GIA_BloodAxeCairnstone_A005_ORM", "file": "T_GIA_BloodAxeCairnstone_A005_ORM.png", "resolution_px": [2048, 2048], "channels": "RGB", "bit_depth": 8, "color_space": "linear", "runtime_role": "R=AO G=Roughness B=Metallic"}
+  ],
+  "forbidden_map": "T_GIA_BloodAxeCairnstone_A005_E",
+  "material_name": "M_GIA_BloodAxeCairnstone_A005",
+  "mip_policy": {
+    "source_delivery": "lossless mip 0 only; lower mips are derived consumer data",
+    "base_color": "2x2 box average in linear-light space then re-encode sRGB; derived interpretation, never exact source RGB",
+    "normal": "2x2 vector average followed by renormalization in tangent space",
+    "orm": "2x2 scalar average per channel; metallic must remain exactly zero",
+    "alpha": "opaque 255 at every mip if alpha exists",
+    "island_dilation_mip0_px": 16,
+    "preserve_border": true,
+    "mip_exactness_claimed": false
+  },
+  "filter_policy": {
+    "source_ingest": "nearest/point integer copy only",
+    "mip0_exactness_audit": "nearest/point sampling at integer texel centers",
+    "dcc_preview": "trilinear with 8x anisotropy after exactness audit",
+    "future_unreal_sampling": "trilinear with project anisotropy; exact rendered-pixel equivalence is not claimed",
+    "filtered_source_raster_generation": false
+  },
+  "future_unreal_import_intent": {
+    "base_color": {"sRGB": true, "compression": "Default", "lod_group": "World"},
+    "normal": {"sRGB": false, "compression": "Normalmap", "flip_green": false},
+    "orm": {"sRGB": false, "compression": "Masks"},
+    "emissive": null,
+    "step14_unreal_import_authorized": false
+  },
+  "step15_required_outputs": [
+    "UV0 implementation on a copy of the approved candidate",
+    "native-resolution source-owned masks for five owner views",
+    "Base Color mip-0 atlas with byte-exact owned pixels",
+    "DirectX tangent Normal map",
+    "packed ORM map",
+    "one material candidate",
+    "visible-pixel exactness audit",
+    "UV overlap, bounds, seam, density, and padding audit",
+    "normal orientation and bake audit",
+    "five owner-view material comparisons plus one perspective corroboration render",
+    "candidate review board and artifact hashes"
+  ],
+  "step15_validation_gates": [
+    {"id": "S15-G01-INPUTS", "rule": "all Step 14 authorities and the approved candidate hash match"},
+    {"id": "S15-G02-GEOMETRY", "rule": "geometry vertices, faces, bounds, transforms, and 784 evaluated triangles remain unchanged"},
+    {"id": "S15-G03-UV0", "rule": "one unique 0-1 UV0 layout; zero positive-area overlap; all faces assigned exactly once"},
+    {"id": "S15-G04-UV1", "rule": "no UV1 implementation in Step 15 unless separately included by the Step 15 contract; Step 14 only plans it for Step 16"},
+    {"id": "S15-G05-WINDOWS", "rule": "all five native source windows are in bounds, size exact, and separated by required padding"},
+    {"id": "S15-G06-MASKS", "rule": "five deterministic foreground/face masks pass native-resolution visible review with no manual pixel edits"},
+    {"id": "S15-G07-RGB", "rule": "every mask-owned Base Color mip-0 RGB triplet matches its declared source pixel byte-for-byte"},
+    {"id": "S15-G08-AUTHORED", "rule": "every non-owned texel is labeled authored continuation, dilation, or unused; no exact-source claim"},
+    {"id": "S15-G09-DECORATION", "rule": "C-005/C-006/C-007 remain face-owned, non-emissive, and absent on source-unseen faces"},
+    {"id": "S15-G10-BC", "rule": "2048 Base Color exists, is lossless 8-bit sRGB, and contains no added AO or color grade"},
+    {"id": "S15-G11-NORMAL", "rule": "2048 DirectX tangent normal exists, neutral/green orientation passes, and no silhouette/displacement occurs"},
+    {"id": "S15-G12-ORM", "rule": "2048 linear ORM exists with correct packing and blue metallic channel identically zero"},
+    {"id": "S15-G13-BAKE", "rule": "AO/bake settings match; no ray miss, inverted normal, contact leak, or margin defect"},
+    {"id": "S15-G14-MIPS", "rule": "mip/filter policy is recorded; exactness is limited to source-owned mip-0 texels"},
+    {"id": "S15-G15-MATERIAL", "rule": "one opaque Default Lit material; no emissive input or E texture"},
+    {"id": "S15-G16-RENDERS", "rule": "five owner-view and one perspective material proofs are clean, correctly oriented, and unclipped"},
+    {"id": "S15-G17-CLASSIFICATION", "rule": "candidate maps/material remain candidate; visual canon and DCC game-ready are false"},
+    {"id": "S15-G18-FIREWALL", "rule": "A001-A004 asset-specific artifacts and quarantined A005 diagnostics are not inputs"}
+  ],
+  "step14_zero_output_assertions": {
+    "texture_root_exists": false,
+    "uv_layers_created": 0,
+    "texture_maps_created": 0,
+    "materials_created": 0,
+    "bakes_run": 0,
+    "blend_saves": 0,
+    "geometry_changes": 0,
+    "lods_created": 0,
+    "collision_created": 0,
+    "fbx_created": 0,
+    "unreal_runs": 0,
+    "visual_canon_changes": 0
+  },
+  "step14_pass_status": "authoritative plan only; asset remains DCC source candidate",
+  "mandatory_restart_after_step14": true
+}

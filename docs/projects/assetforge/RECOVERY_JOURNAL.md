@@ -5901,3 +5901,23 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260720-162151/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260720-162151/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-20 16:25:01 EDT -0400 - before A005 Step 14 and Step 13 remote closeout reconciliation
+
+- Snapshot: `Saved/ProjectRecovery/20260720-162501/`
+- Git: branch `main`, HEAD `a602188`, status lines `245`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260720-162501/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260720-162501/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260720-162501/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-20 16:44:36 EDT -0400 - A005 Step 14 plan validated 32 of 32 and visibly reviewed before scoped Git closeout
+
+- Snapshot: `Saved/ProjectRecovery/20260720-164436/`
+- Git: branch `main`, HEAD `a602188`, status lines `260`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260720-164436/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260720-164436/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260720-164436/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

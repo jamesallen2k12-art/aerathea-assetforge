@@ -1,12 +1,60 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: Step 13 complete; macro DCC source geometry approved for later Step 14 planning; scoped Git closeout pending
+Status: Step 14 complete; authoritative UV/Base Color/material plan approved; scoped Git closeout pending
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
 
-## Current Resume Boundary - Step 13 Complete / Git Closeout Pending
+## Current Resume Boundary - Step 14 Complete / Git Closeout Pending
+
+Flamestrike stated: `resume    You have full authority and approval to complete
+step 14 from start to finish regardless of what you need to do to complete
+it`. Under Core and the active Blueprint, this authorized the complete bounded
+Step 14 planning lifecycle, prerequisite closeout recovery, validation, visible
+review, checkpointing, exact scoped Git closeout, remote verification, and
+mandatory restart. It did not authorize Step 15 production.
+
+Technical result:
+`pass_authoritative_step14_plan_complete`.
+
+- Contract ID: `A005-CR-STEP14-UV-BASECOLOR-MATERIAL-PLAN-A01`.
+- Pre-action checkpoint: `Saved/ProjectRecovery/20260720-162501/`.
+- Resume discrepancy: the prior journal claimed Step 13 hash `47900a9` was
+  pushed, while live `assetforge/main` remained at Step 12 `d7c855b`.
+- Recovery: local/origin Step 13 closeout `a602188` was identified as the
+  complete current state, pushed to `assetforge/main`, and remotely verified
+  before Step 14 authoring. No production artifact changed.
+- Immutable inputs: `32/32` matched.
+- Six source panels retained exact file, dimensions, and decoded RGB hashes.
+- Five source-owner windows: front, back, left, right, top; perspective owns
+  zero texels.
+- UV0: unique 0-1 plan with complete visible/hidden routing for four primary
+  components; UV1 planned separately at 128 lightmap resolution.
+- Base Color: byte-exact only at deterministic mask-owned native mip-0 RGB;
+  every other texel is authored/dilated/unused and must be labeled so.
+- C-005/C-006/C-007: face-owned source RGB plus one shared shallow
+  pigment-incision Normal/roughness response; cross-face copy, hidden copy,
+  displacement, metallic, and emissive are absent.
+- Texture plan: 2K Base Color, DirectX Normal, and ORM with R/G/B =
+  AO/Roughness/Metallic; metallic identically zero.
+- Bake/mip/filter behavior and `18` future Step 15 acceptance gates are
+  explicit.
+- First complete read-only plan audit: `32/32`; failures `0`.
+- UV layers, source masks, maps, materials, bakes, Blender saves, geometry,
+  LOD, collision, FBX, Unreal, and visual-canon changes: `0`.
+- Approved candidate SHA-256 remains
+  `5b4af2275a70e2598e72361382fc7ea6ea318724ac928d71b2c200c768a93095`.
+- Pipeline status remains `DCC source candidate`; DCC game-ready, fully
+  game-ready, finished appearance, and visual canon are false.
+- Exact scoped Git closeout: pending.
+
+Required next task: complete the exact Step 14 Git closeout, push and remotely
+verify `assetforge/main`, record the closeout metadata, checkpoint, and stop
+for the mandatory restart. After restart, only preparation of a separate Step
+15 UV and Texture/Material Candidate contract is permitted.
+
+## Historical Resume Boundary - Step 13 Complete
 
 Flamestrike stated: `resume    You have full Approval and Authority to complete
 step 13 from beginning to end, no matter what is required`. Under Core and the
@@ -41,12 +89,11 @@ Technical result:
   deferred to a separately approved Step 14 plan.
 - UV, texture, material, LOD, collision, FBX, Unreal, visual-canon changes,
   and Step 14 execution: `0`.
-- Exact scoped Git closeout: pending.
+- Exact scoped Git closeout: commit `a602188` pushed and remotely verified
+  during the Step 14 resume prerequisite recovery.
 
-Required next task: finish Step 13 exact scoped Git closeout, push and remotely
-verify `assetforge/main`, record the closeout metadata, then stop for the
-mandatory restart. After restart, only preparation of a separate Step 14 UV,
-Base Color, and Material-Interpretation Plan contract is permitted.
+Historical next task: mandatory restart, then Step 14 planning. This was
+satisfied by the current authorized Step 14 lifecycle.
 
 ## Current Resume Boundary - Step 12 Complete / Mandatory Restart
 

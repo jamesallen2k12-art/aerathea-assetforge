@@ -1,0 +1,105 @@
+{
+  "schema": "aerathea.step14_material_interpretation_manifest.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-STEP14-UV-BASECOLOR-MATERIAL-PLAN-A01",
+  "date": "2026-07-20",
+  "status": "approved_authoritative_step14_material_interpretation",
+  "artifact_classification": "authoritative Step 14 material interpretation; not exact source evidence and not an authored material",
+  "decision": "Use one non-metallic, non-emissive stylized cairn-stone material with exact owned source RGB at mip 0 and bounded authored Normal/ORM response.",
+  "material": {
+    "name": "M_GIA_BloodAxeCairnstone_A005",
+    "slot_count": 1,
+    "shading_model": "Default Lit",
+    "blend_mode": "Opaque",
+    "two_sided": false,
+    "base_color_map": "T_GIA_BloodAxeCairnstone_A005_BC",
+    "normal_map": "T_GIA_BloodAxeCairnstone_A005_N",
+    "orm_map": "T_GIA_BloodAxeCairnstone_A005_ORM",
+    "emissive_map": null,
+    "emissive_input_enabled": false
+  },
+  "normal": {
+    "name": "T_GIA_BloodAxeCairnstone_A005_N",
+    "resolution_px": [2048, 2048],
+    "bit_depth": 8,
+    "color_space": "linear",
+    "space": "tangent-space DirectX/Unreal",
+    "channel_convention": "R=+X, G=-Y, B=+Z",
+    "neutral_rgb": [128, 128, 255],
+    "compression_intent": "Normalmap/BC5 at later Unreal import",
+    "detail_interpretations": [
+      {"id": "N-001-STONE-GRAIN", "consumer": ["C-001", "C-002", "C-003", "C-004"], "apparent_depth_cm": [0.05, 0.2], "rule": "broad hand-painted grain; no micro-noise above useful 2K texel scale"},
+      {"id": "N-002-CHIPS", "consumer": ["C-001", "C-002", "C-003", "C-004"], "apparent_depth_cm": [0.1, 0.4], "rule": "source-visible small edge chips and bounded authored continuation; never alter silhouette"},
+      {"id": "N-003-COURSE-DIVISIONS", "consumer": ["C-002", "C-003", "C-004"], "apparent_depth_cm": [0.2, 0.6], "rule": "individual-stone/course divisions remain normal-only except approved macro silhouette breaks already in geometry"},
+      {"id": "N-004-RED-INCISION", "consumer": ["C-005", "C-006", "C-007"], "apparent_depth_cm": 0.15, "edge_bevel_cm": 0.05, "rule": "one shared shallow pigment-filled incision response driven only by the face-owned RED_APPEARANCE_UNION; no displacement or hidden continuation"}
+    ],
+    "displacement": false,
+    "parallax": false,
+    "silhouette_control": false
+  },
+  "orm": {
+    "name": "T_GIA_BloodAxeCairnstone_A005_ORM",
+    "resolution_px": [2048, 2048],
+    "bit_depth": 8,
+    "color_space": "linear",
+    "packing": {"R": "Ambient Occlusion", "G": "Roughness", "B": "Metallic"},
+    "ao": {
+      "source": "geometry AO bake from the unchanged approved four-shell candidate plus bounded incision micro-AO",
+      "range": [0.45, 1.0],
+      "red_incision_minimum": 0.65,
+      "base_color_multiplication": false,
+      "classification": "derived interpretation"
+    },
+    "roughness": {
+      "stone_nominal": 0.78,
+      "stone_range": [0.62, 0.9],
+      "red_pigment_nominal": 0.64,
+      "red_pigment_range": [0.55, 0.75],
+      "hidden_stone_nominal": 0.82,
+      "source_exact_claim": false
+    },
+    "metallic": {
+      "value": 0.0,
+      "required_every_texel": true,
+      "reason": "stone and pigment interpretation; no approved metal or inlay"
+    }
+  },
+  "decoration_material_decision": {
+    "C-005": "exact source-owned red Base Color plus shared shallow normal incision and pigment roughness; face-owned only",
+    "C-006": "exact source-owned red Base Color plus shared shallow normal incision and pigment roughness; face-owned only",
+    "C-007": "exact source-owned red Base Color plus shared shallow normal incision and pigment roughness; face-owned only",
+    "physical_construction_claimed": false,
+    "cross_face_continuity_claimed": false,
+    "hidden_face_decoration": false,
+    "emissive": false
+  },
+  "bake": {
+    "target_resolution_px": [2048, 2048],
+    "base_color_baked": false,
+    "normal_bake_space": "tangent",
+    "ao_engine": "Blender Cycles or equivalently audited ray bake",
+    "ao_samples": 256,
+    "ao_distance_cm": 12.0,
+    "cage_extrusion_cm": 0.2,
+    "margin_px": 16,
+    "selected_to_active": false,
+    "geometry_source_sha256": "5b4af2275a70e2598e72361382fc7ea6ea318724ac928d71b2c200c768a93095",
+    "high_poly_source": null,
+    "source_rgb_resampling_in_bake": false,
+    "failure_policy": "ray misses, gradients across UV seams, normal inversion, contact leaks, or changed geometry block Step 15"
+  },
+  "emissive_decision": {
+    "status": "rejected_and_absent_for_A005_A01",
+    "map_name_reserved_but_not_created": "T_GIA_BloodAxeCairnstone_A005_E",
+    "red_marking_emissive": false,
+    "material_emissive_connection": false,
+    "reason": "source proves red appearance but not emitted light; the smallest sufficient interpretation is pigment-filled shallow incision"
+  },
+  "counts": {
+    "materials_created_step14": 0,
+    "normal_maps_created_step14": 0,
+    "orm_maps_created_step14": 0,
+    "emissive_maps_planned": 0,
+    "emissive_maps_created_step14": 0
+  }
+}
