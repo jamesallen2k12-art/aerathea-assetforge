@@ -1,0 +1,172 @@
+{
+  "schema": "aerathea.visual_correction_a10_pixel_exact_base_reconciliation_validation.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "measurement_id": "A005-CR-VISUAL-CORRECTION-A10-PIXEL-EXACT-BASE-A01",
+  "date": "2026-07-21",
+  "status": "pass_authoritative_measurement",
+  "artifact_classification": "proof only",
+  "manifest": {
+    "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/VISUAL_CORRECTION_A10_PIXEL_EXACT_BASE_RECONCILIATION.json",
+    "sha256": "09452319172cdca60f024e106e20eef52a5567eac04e0f2fda73985370b3e156"
+  },
+  "gate_count": 25,
+  "pass_count": 25,
+  "failure_count": 0,
+  "gates": [
+    {
+      "gate": "manifest_status",
+      "pass": true,
+      "evidence": "approved_authoritative_pixel_ratios_with_conditional_physical_conversion"
+    },
+    {
+      "gate": "artifact_classification",
+      "pass": true,
+      "evidence": "authoritative measurement record"
+    },
+    {
+      "gate": "flamestrike_output_approval",
+      "pass": true,
+      "evidence": {
+        "statement": "approved",
+        "date": "2026-07-21",
+        "scope": "A10 pixel-exact owner-view ratios, conditional C004-normalized dimensions, 48 discrete top interface contacts, and the explicit C002 height interval of 8.235294-11.666667 cm",
+        "exclusions": "no selected single course height, socket clearance, hidden contour closure, geometry, DCC rebuild, Unreal work, or visual-canon promotion"
+      }
+    },
+    {
+      "gate": "front_panel_hash",
+      "pass": true,
+      "evidence": "262071198bc0d409e9b68af5ac4f3c6a4768a90b1fd199342035a8a82342c2c5"
+    },
+    {
+      "gate": "left_panel_hash",
+      "pass": true,
+      "evidence": "52212ba783d026a008929e3946cac934281de7d2daec2ada316205059258cba4"
+    },
+    {
+      "gate": "top_panel_hash",
+      "pass": true,
+      "evidence": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf"
+    },
+    {
+      "gate": "eight_owner_view_span_records",
+      "pass": true,
+      "evidence": {
+        "C001": [
+          194,
+          115
+        ],
+        "C002": [
+          244,
+          155
+        ],
+        "C003": [
+          276,
+          193
+        ],
+        "C004": [
+          288,
+          221
+        ]
+      }
+    },
+    {
+      "gate": "owner_view_endpoint_rgb",
+      "pass": true,
+      "evidence": "all 16 endpoint RGB values match"
+    },
+    {
+      "gate": "consistent_pixel_center_delta_convention",
+      "pass": true,
+      "evidence": "distance between inclusive integer pixel centers; half-open row records use (x1 - 1) - x0"
+    },
+    {
+      "gate": "front_C004_denominator",
+      "pass": true,
+      "evidence": 288
+    },
+    {
+      "gate": "left_C004_denominator",
+      "pass": true,
+      "evidence": 221
+    },
+    {
+      "gate": "top_contact_count",
+      "pass": true,
+      "evidence": 48
+    },
+    {
+      "gate": "top_contact_distribution",
+      "pass": true,
+      "evidence": {
+        "CL-001": 16,
+        "CL-002": 16,
+        "CL-003": 16
+      }
+    },
+    {
+      "gate": "top_contact_rgb",
+      "pass": true,
+      "evidence": "48/48 match"
+    },
+    {
+      "gate": "top_contact_closure_blocked",
+      "pass": true,
+      "evidence": false
+    },
+    {
+      "gate": "no_threshold_ownership",
+      "pass": true,
+      "evidence": false
+    },
+    {
+      "gate": "no_segmentation",
+      "pass": true,
+      "evidence": false
+    },
+    {
+      "gate": "no_curve_fit",
+      "pass": true,
+      "evidence": false
+    },
+    {
+      "gate": "no_closed_contour",
+      "pass": true,
+      "evidence": false
+    },
+    {
+      "gate": "no_candidate_fill",
+      "pass": true,
+      "evidence": false
+    },
+    {
+      "gate": "no_geometry",
+      "pass": true,
+      "evidence": false
+    },
+    {
+      "gate": "source_unmodified",
+      "pass": true,
+      "evidence": false
+    },
+    {
+      "gate": "height_selection_blocked",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "gate": "review_board_hash",
+      "pass": true,
+      "evidence": "f1003ba699b6accb11b1ba29874ca59e83a750a6f4d82e7f9b1efb5291743031"
+    },
+    {
+      "gate": "review_board_dimensions",
+      "pass": true,
+      "evidence": [
+        2800,
+        1900
+      ]
+    }
+  ],
+  "decision": "approved pixel-exact ratios replay; physical conversion remains conditional and geometry remains unauthorized"
+}

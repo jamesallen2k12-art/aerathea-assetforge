@@ -1,12 +1,36 @@
 # SM_GIA_BloodAxeCairnstone_A005 Artifact Index
 
-Status: A09 candidate pending Flamestrike visual review
+Status: A10 pixel-exact base measurement approved; geometry correction contract pending
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-21
 
-## Active A09 Final Candidate / Visual Decision Pending
+## Active A10 Pixel-Exact Base Measurement Authority
+
+Flamestrike approved the A10 owner-view reconciliation. The raw X/Y ratios
+and 48 discrete top interface contacts are authoritative. The centimeter
+values remain conditional on retaining C004 at `140 x 110 cm`; C002 height
+remains the approved interval `8.235294-11.666667 cm`. No geometry rebuild or
+single height selection is authorized.
+
+| Artifact | Status | Role |
+|---|---|---|
+| manifests/VISUAL_CORRECTION_A10_PIXEL_EXACT_BASE_RECONCILIATION.json | authoritative measurement record | Records exact front-X/left-Y ratios, conditional physical dimensions, 48 top contacts, height intervals, and A09 deltas. |
+| manifests/VISUAL_CORRECTION_A10_PIXEL_EXACT_BASE_RECONCILIATION_VALIDATION.json | proof only | Replays `25/25` source, coordinate, RGB, formula, control, and review-hash gates. |
+| steps/VISUAL_CORRECTION_A10_PIXEL_EXACT_BASE_RECONCILIATION_OUTPUT.md | authoritative measurement output | Records approval scope, exact ratios, conditional conversion, and remaining geometry blocks. |
+| Tools/DCC/measure_bloodaxe_cairnstone_a005_pixel_exact_base_reconciliation_a10.py | authoritative measurement tool | Reproduces the exact owner-view reconciliation and evidence board without geometry or contour fitting. |
+| Tools/DCC/audit_bloodaxe_cairnstone_a005_pixel_exact_base_reconciliation_a10.py | proof-supporting independent auditor | Independently replays the approved measurement package. |
+| Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A10_Measurement/ | proof only; local-only | Contains the exact visibly reviewed measurement board. |
+
+Exact review-board SHA-256:
+`f1003ba699b6accb11b1ba29874ca59e83a750a6f4d82e7f9b1efb5291743031`.
+
+Current stop: prepare and approve a separate geometry-correction contract.
+Unreal, Step 17, `Fully game-ready`, approved-library, and visual-canon
+promotion remain unauthorized.
+
+## Prior A09 Final Candidate / Visual Decision Not Granted
 
 Flamestrike rejected the exact A08 review image and approved the A09 modular
 recovery. A09 preserves C001 while rebuilding C002/C003/C004 as separately

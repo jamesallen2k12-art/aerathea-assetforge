@@ -1,12 +1,40 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: A09 candidate pending Flamestrike visual review
+Status: A10 pixel-exact base measurement approved; geometry correction contract pending
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-21
 
-## Active Resume Boundary - A09 Final Candidate / Visual Decision Pending
+## Active Resume Boundary - A10 Measurement Approved / Geometry Blocked
+
+Flamestrike approved the A10 pixel-exact base measurement package after
+reviewing the omitted C002 height evidence separately.
+
+- Authoritative raw ratios: C001 contact `194/288` X and `115/221` Y; C002
+  `244/288` X and `155/221` Y; C003 `276/288` X and `193/221` Y; C004
+  `288/288` X and `221/221` Y.
+- Conditional physical conversion if C004 remains `140 x 110 cm`: C001
+  contact `94.305556 x 57.239819 cm`; C002 `118.611111 x 77.149321 cm`;
+  C003 `134.166667 x 96.063348 cm`; C004 `140 x 110 cm`.
+- C002/top-ring height remains an approved evidence interval of
+  `8.235294-11.666667 cm`; no single construction height is selected.
+- Independent validation: `25/25`; exact top contacts: `48/48`; RGB
+  mismatches: `0`.
+- Exact review board:
+  `Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A10_Measurement/SM_GIA_BloodAxeCairnstone_A005_A10_PIXEL_EXACT_BASE_RECONCILIATION.png`.
+- Review SHA-256:
+  `f1003ba699b6accb11b1ba29874ca59e83a750a6f4d82e7f9b1efb5291743031`.
+- Measurement record:
+  `steps/VISUAL_CORRECTION_A10_PIXEL_EXACT_BASE_RECONCILIATION_OUTPUT.md`.
+- Current stop: geometry remains unauthorized until a separate correction
+  contract selects the conditional C004 envelope, one course-height solution,
+  socket clearances, and hidden interface rules.
+- A09 remains an unapproved candidate and cannot advance using its superseded
+  depth dimensions.
+- Unreal/Step 17 and `Fully game-ready` remain unauthorized and false.
+
+## Prior Resume Boundary - A09 Final Candidate / Visual Decision Not Granted
 
 Flamestrike rejected the exact A08 final image and approved
 `A005-CR-VISUAL-CORRECTION-A09`. The A09 package and final review candidate are

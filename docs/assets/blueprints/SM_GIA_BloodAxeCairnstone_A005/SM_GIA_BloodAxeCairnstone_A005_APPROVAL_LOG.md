@@ -1,10 +1,37 @@
 # SM_GIA_BloodAxeCairnstone_A005 Approval Log
 
-Status: A09 candidate pending Flamestrike visual review
+Status: A10 pixel-exact base measurement approved; geometry correction contract pending
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-21
+
+## A10 Pixel-Exact Base Measurement Approval
+
+- Date: 2026-07-21
+- Approver: Flamestrike
+- Statement: `approved`
+- Approved artifact: A10 pixel-exact owner-view base reconciliation, exact
+  review board SHA-256
+  `f1003ba699b6accb11b1ba29874ca59e83a750a6f4d82e7f9b1efb5291743031`
+- Authoritative raw owner ratios: C001 contact `194/288` X and `115/221`
+  Y; C002 `244/288` X and `155/221` Y; C003 `276/288` X and
+  `193/221` Y; C004 `288/288` X and `221/221` Y
+- Conditional physical conversion, if C004 remains `140 x 110 cm`: C001
+  contact `94.305556 x 57.239819 cm`; C002 `118.611111 x 77.149321 cm`;
+  C003 `134.166667 x 96.063348 cm`; C004 `140 x 110 cm`
+- Explicit C002/top-ring height evidence approved as an interval:
+  `8.235294-11.666667 cm`; no single height was selected
+- Independent validation: `25/25`; exact top interface contacts: `48/48`;
+  source RGB mismatches: `0`
+- Proven A09 depth excess: C001 contact `10.760181 cm`; C002 `15.558103
+  cm`; C003 `9.133159 cm`
+- Artifact status: raw pixel ratios and discrete contacts `authoritative`;
+  centimeter conversion `authoritative conditional derivation`; validation
+  `proof only`
+- A09 visual approval remains ungranted. A10 does not authorize a geometry
+  rebuild, single course-height choice, socket clearance, hidden contour
+  closure, Unreal work, or visual-canon promotion.
 
 ## A09 Modular Recovery Technical Completion / Visual Decision Pending
 
