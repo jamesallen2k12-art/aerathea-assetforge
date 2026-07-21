@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0",
+  "asset_name": "Siege Breaker",
+  "asset_type": "Aerathean Dwarven Great Hammer Prop",
+  "setting": "Aerathea",
+  "units": "centimeters",
+  "coordinate_system": {
+    "x_axis": "head width, right positive",
+    "y_axis": "head depth, back positive",
+    "z_axis": "overall length, up positive",
+    "origin": "bottom center of pommel at Z=0",
+    "front_camera_position": "negative Y looking toward positive Y"
+  },
+  "dimensions_cm": {
+    "overall_length_z": 170,
+    "head_max_width_x": 52,
+    "head_height_z": 38,
+    "head_depth_y": 32,
+    "structural_shaft_length_z": 118,
+    "grip_wrap_length_z": 42,
+    "handle_outer_diameter": 5,
+    "pommel_length_z": 18,
+    "pommel_max_width_x": 11,
+    "shaft_insertion_into_pommel": 4
+  },
+  "z_anchors_cm": {
+    "asset_bottom": 0,
+    "pommel_top": 18,
+    "shaft_structural_bottom": 14,
+    "grip_bottom": 18,
+    "grip_top": 60,
+    "head_bottom": 132,
+    "asset_top": 170
+  },
+  "components": [
+    {
+      "name": "Head_Core",
+      "separate_mesh": true,
+      "symmetry": "mirror_X"
+    },
+    {
+      "name": "Head_Stone_Left",
+      "separate_mesh": true,
+      "symmetry": "mirror_X"
+    },
+    {
+      "name": "Head_Stone_Right",
+      "separate_mesh": true,
+      "symmetry": "mirror_X"
+    },
+    {
+      "name": "Shaft_Metal",
+      "separate_mesh": true,
+      "symmetry": "radial"
+    },
+    {
+      "name": "Grip_Leather",
+      "separate_mesh": true,
+      "symmetry": "radial"
+    },
+    {
+      "name": "Pommel",
+      "separate_mesh": true,
+      "symmetry": "mirror_X"
+    },
+    {
+      "name": "Rune_Inlays",
+      "separate_mesh": true,
+      "symmetry": "mixed"
+    }
+  ],
+  "material_slots": [
+    "M_Stone",
+    "M_Bronze",
+    "M_Steel",
+    "M_Leather",
+    "M_Rune_Emissive"
+  ],
+  "reference_priority": [
+    "asset_spec.json",
+    "SiegeBreaker_Blockout.blend",
+    "generated/orthographic_true/render_manifest.json",
+    "generated/orthographic_true/*.png",
+    "reference/concept_sheet_style_reference.png"
+  ],
+  "non_functional_fantasy_prop": true,
+  "manufacturing_instructions": false
+}

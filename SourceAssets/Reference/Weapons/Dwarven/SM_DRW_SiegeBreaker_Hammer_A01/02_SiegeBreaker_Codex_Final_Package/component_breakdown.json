@@ -1,0 +1,34 @@
+{
+  "head": {
+    "envelope_cm": [
+      52,
+      32,
+      38
+    ],
+    "central_core_width_cm": 24,
+    "stone_block_width_each_cm": 14,
+    "notes": "The 24 cm core plus two 14 cm stone blocks equals the 52 cm maximum width."
+  },
+  "shaft": {
+    "length_cm": 118,
+    "outer_diameter_cm": 5,
+    "bottom_z_cm": 14,
+    "top_z_cm": 132
+  },
+  "grip": {
+    "length_cm": 42,
+    "bottom_z_cm": 18,
+    "top_z_cm": 60,
+    "surface": "cross-wrapped dark brown leather"
+  },
+  "pommel": {
+    "length_cm": 18,
+    "max_width_cm": 11,
+    "bottom_z_cm": 0,
+    "top_z_cm": 18
+  },
+  "rune_system": {
+    "color": "icy blue",
+    "separate_emissive_mesh_or_mask": true
+  }
+}

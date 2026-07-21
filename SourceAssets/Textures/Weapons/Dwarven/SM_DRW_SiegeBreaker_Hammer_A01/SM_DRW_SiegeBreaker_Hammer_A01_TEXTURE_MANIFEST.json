@@ -1,0 +1,127 @@
+{
+  "schema": "aerathea.texture_candidate.v1",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "artifact_status": "candidate",
+  "authority": "verified final package material_spec.json and approved style reference",
+  "interpretation": "deterministic authored PBR surface detail; no geometry or exact source-color authority",
+  "resolution_px": [
+    2048,
+    2048
+  ],
+  "seed": 5367531,
+  "workflow": "PBR metallic-roughness; ORM channels R=AO G=Roughness B=Metallic",
+  "texture_sets": {
+    "Stone": {
+      "BC": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Stone_BC.png",
+      "N": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Stone_N.png",
+      "ORM": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Stone_ORM.png",
+      "E": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Stone_E.png"
+    },
+    "Bronze": {
+      "BC": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Bronze_BC.png",
+      "N": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Bronze_N.png",
+      "ORM": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Bronze_ORM.png",
+      "E": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Bronze_E.png"
+    },
+    "Steel": {
+      "BC": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Steel_BC.png",
+      "N": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Steel_N.png",
+      "ORM": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Steel_ORM.png",
+      "E": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Steel_E.png"
+    },
+    "Leather": {
+      "BC": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Leather_BC.png",
+      "N": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Leather_N.png",
+      "ORM": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Leather_ORM.png",
+      "E": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Leather_E.png"
+    },
+    "Rune": {
+      "BC": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Rune_BC.png",
+      "N": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Rune_N.png",
+      "ORM": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Rune_ORM.png",
+      "E": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Rune_E.png"
+    }
+  },
+  "files": [
+    {
+      "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Bronze_BC.png",
+      "sha256": "75036ab5d4849a38282f31fe6d5bed8e7a3ac935f28791df2b6c0e546ff76649"
+    },
+    {
+      "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Bronze_E.png",
+      "sha256": "6e84541fac14f31507b9d68f110245775261bfd6f75fb997b4b053e25a0614b0"
+    },
+    {
+      "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Bronze_N.png",
+      "sha256": "1e5afb5dd9afe76c9d5f9d83a87d7c0fe97b529be3ec814ac2e9534369944e83"
+    },
+    {
+      "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Bronze_ORM.png",
+      "sha256": "2bb93a10c03fec7296cb6c56ed8066f431c8fcd2be9691fc3d1938000b1f5c30"
+    },
+    {
+      "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Leather_BC.png",
+      "sha256": "cf3a15242ca6c15500d9843f151969b1a8912d69aa33995aace3e9deacc6a041"
+    },
+    {
+      "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Leather_E.png",
+      "sha256": "6e84541fac14f31507b9d68f110245775261bfd6f75fb997b4b053e25a0614b0"
+    },
+    {
+      "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Leather_N.png",
+      "sha256": "12f0decff0110b6e4b46ecb4679162202c5260a471f8260c25c5130eec1e5ff6"
+    },
+    {
+      "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Leather_ORM.png",
+      "sha256": "d96a907721f5f506adb919d4808a028fcfce545440176944558f36e47ea0ec4b"
+    },
+    {
+      "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Rune_BC.png",
+      "sha256": "dd9cb67e2a9bacfa459b29eef46cfa0f0d6c7d40ff40941ca6a07de43b09feae"
+    },
+    {
+      "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Rune_E.png",
+      "sha256": "ed19956386fdaa166a4aeb6cdfe92eaf04a85b49dc654a187d1a78c7fae8a03e"
+    },
+    {
+      "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Rune_N.png",
+      "sha256": "4fa6bd411e273c4fef0a0bc0e53a1b3fbd120ac5a7c9b16490f842e35ddc7e64"
+    },
+    {
+      "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Rune_ORM.png",
+      "sha256": "98bf59e9a6f97b9d5a945906f852baaec4c1c505c370277256ce3d18d064d1b7"
+    },
+    {
+      "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Steel_BC.png",
+      "sha256": "95854ce5dff64cb669cc34df5130a1238291a6a48a1eeff81aa85e4a6e76cbd5"
+    },
+    {
+      "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Steel_E.png",
+      "sha256": "6e84541fac14f31507b9d68f110245775261bfd6f75fb997b4b053e25a0614b0"
+    },
+    {
+      "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Steel_N.png",
+      "sha256": "e159c6d5b0df2adb4cfd35e9b491027ef46f573473b149d94a59448fe948ce81"
+    },
+    {
+      "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Steel_ORM.png",
+      "sha256": "4895683c5c821ddeac4b188c7d06b0fbcbac0cb46b4ecb2d1d5854541df49862"
+    },
+    {
+      "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Stone_BC.png",
+      "sha256": "fab2d91789565381da438fc9c3e957034cb31f9009ea4b665c2987f7908a1cd3"
+    },
+    {
+      "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Stone_E.png",
+      "sha256": "6e84541fac14f31507b9d68f110245775261bfd6f75fb997b4b053e25a0614b0"
+    },
+    {
+      "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Stone_N.png",
+      "sha256": "3e9808c363b1ad38922e1245d0bf1c9c852f0f44e2495261efa9db856873ebae"
+    },
+    {
+      "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Stone_ORM.png",
+      "sha256": "2b4f543d411b5d9368da238c7786fe24af518cd88a960ab04b232a1ba1154688"
+    }
+  ]
+}

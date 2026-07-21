@@ -1,0 +1,11 @@
+name,value_cm,axis,start_anchor_cm,end_anchor_cm,authoritative,notes
+overall_length,170,Z,0,170,true,bottom pommel to top head
+head_max_width,52,X,-26,26,true,maximum front/back silhouette
+head_height,38,Z,132,170,true,
+head_depth,32,Y,-16,16,true,
+structural_shaft_length,118,Z,14,132,true,includes 4 cm insertion into pommel
+grip_wrap_length,42,Z,18,60,true,visible leather wrap
+handle_outer_diameter,5,radial,-2.5,2.5,true,outer visible diameter
+pommel_length,18,Z,0,18,true,
+pommel_max_width,11,X,-5.5,5.5,true,
+shaft_insertion_into_pommel,4,Z,14,18,true,resolves overall dimension relationship

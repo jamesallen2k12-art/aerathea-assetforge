@@ -1,0 +1,16 @@
+{
+  "schema": "aerathea.core_recovery_record.v1",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "date": "2026-07-21",
+  "status": "recovered_to_numeric_authority",
+  "last_core_valid_state": "verified ZIP, asset_spec.json, and dimensions_cm.csv",
+  "first_divergence": "the unchanged supplied blockout script created an icosphere pommel measuring 10.461637 cm wide instead of 11 cm",
+  "cause": "generic icosphere scaling assumed requested dimensions would equal evaluated axis-aligned bounds",
+  "affected_output": "SourceAssets/Reference/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/02_SiegeBreaker_Codex_Final_Package/generated/SiegeBreaker_Blockout.blend",
+  "artifact_status": "invalid",
+  "package_source_status": "authoritative and unchanged",
+  "recovery": "discard generated mesh as authority; rebuild fresh from numeric inputs with an explicit 12-sided faceted pommel ring at X +/-5.5 cm",
+  "repair_forward": false,
+  "corrected_blockout": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/SiegeBreaker_Blockout.blend",
+  "corrected_blockout_status": "authoritative after numeric audit"
+}

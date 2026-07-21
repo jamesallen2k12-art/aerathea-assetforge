@@ -1,0 +1,74 @@
+{
+  "schema": "aerathea.direct_constraint_measurements.v1",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "status": "authoritative",
+  "selection_method": "direct numeric constraint",
+  "pixel_convention": "not applicable to geometry; raster is style-only",
+  "world_convention": "edge-to-edge closed numeric intervals in centimeters",
+  "coordinate_frame": {
+    "x_axis": "head width, right positive",
+    "y_axis": "head depth, back positive",
+    "z_axis": "overall length, up positive",
+    "front": "negative Y looking positive Y",
+    "back": "positive Y looking negative Y",
+    "left": "negative X",
+    "right": "positive X",
+    "top": "positive Z",
+    "origin": [0, 0, 0],
+    "pivot": "bottom center of pommel"
+  },
+  "tolerance_cm": 0.001,
+  "formula_archive": {
+    "extent": "maximum - minimum",
+    "center": "(minimum + maximum) / 2",
+    "interval_length": "end_anchor - start_anchor",
+    "overlap": "min(end_a,end_b) - max(start_a,start_b)"
+  },
+  "measurements": [
+    {"feature": "overall_bounds", "owner": "asset_spec.json", "minimum_cm": [-26, -16, 0], "maximum_cm": [26, 16, 170], "expected_extent_cm": [52, 32, 170]},
+    {"feature": "head", "owner": "asset_spec.json", "minimum_cm": [-26, -16, 132], "maximum_cm": [26, 16, 170], "expected_extent_cm": [52, 32, 38]},
+    {"feature": "shaft", "owner": "dimensions_cm.csv", "z_interval_cm": [14, 132], "length_cm": 118, "outer_diameter_cm": 5},
+    {"feature": "grip", "owner": "dimensions_cm.csv", "z_interval_cm": [18, 60], "visible_length_cm": 42, "outer_diameter_cm": 5},
+    {"feature": "pommel", "owner": "dimensions_cm.csv", "z_interval_cm": [0, 18], "length_cm": 18, "max_width_cm": 11},
+    {"feature": "shaft_pommel_overlap", "owner": "START_HERE.md", "shaft_interval_cm": [14, 132], "pommel_interval_cm": [0, 18], "expected_overlap_cm": 4},
+    {"feature": "head_core_width", "owner": "component_breakdown.json", "expected_cm": 24},
+    {"feature": "stone_block_width_each", "owner": "component_breakdown.json", "expected_cm": 14}
+  ],
+  "components": [
+    {"id": "SB-C001", "name": "Head_Core", "geometry_owner": "asset_spec.json + component_breakdown.json", "role": "assembly core"},
+    {"id": "SB-C002", "name": "Head_Stone_Left", "geometry_owner": "asset_spec.json + component_breakdown.json", "role": "left striking mass"},
+    {"id": "SB-C003", "name": "Head_Stone_Right", "geometry_owner": "asset_spec.json + component_breakdown.json", "role": "right striking mass"},
+    {"id": "SB-C004", "name": "Shaft_Metal", "geometry_owner": "dimensions_cm.csv", "role": "structural shaft"},
+    {"id": "SB-C005", "name": "Grip_Leather", "geometry_owner": "dimensions_cm.csv", "role": "visible grip"},
+    {"id": "SB-C006", "name": "Pommel", "geometry_owner": "dimensions_cm.csv", "role": "counterweight and pivot owner"},
+    {"id": "SB-C007", "name": "Rune_Inlays", "geometry_owner": "numeric containment envelope + approved style interpretation", "role": "restrained emissive accent"}
+  ],
+  "registration": {
+    "centerline": "X=0,Y=0",
+    "height_stations_cm": [0, 14, 18, 60, 132, 170],
+    "component_rotation_deg": [0, 0, 0],
+    "orientation_helpers_shipping": false
+  },
+  "disagreements": [
+    {
+      "feature": "illustrated top/bottom full-length presentation",
+      "classification": "non-authoritative presentation view",
+      "resolution": "true top/bottom projections follow the fixed-object camera requirement and do not show full length"
+    },
+    {
+      "feature": "38 + 118 + 18 apparent 174 cm sum",
+      "classification": "resolved",
+      "resolution": "shaft overlaps pommel from Z=14 to Z=18; total remains 170 cm"
+    }
+  ],
+  "hidden_unknowns": {
+    "approved_interpretation": [
+      "occluded shaft/head socket topology",
+      "occluded shaft/pommel interior",
+      "ornament depth inside the numeric envelope",
+      "UV seams and hidden-surface texture continuation",
+      "normal, roughness, metallic, AO, and restrained emissive response"
+    ],
+    "must_not_change": ["outer numeric envelope", "anchor intervals", "origin", "4 cm overlap"]
+  }
+}

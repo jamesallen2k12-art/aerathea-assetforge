@@ -1,0 +1,42 @@
+{
+  "schema": "aerathea.construction_blueprint.v1",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "status": "authoritative",
+  "asset_type": "Static Mesh Weapon Prop",
+  "scale": "centimeters; 1 Unreal unit = 1 cm",
+  "pivot": "bottom center of pommel",
+  "construction_order": [
+    "exact faceted pommel and structural shaft",
+    "exact head envelope and component-separated stone/core masses",
+    "measured grip interval and cross-wrap",
+    "major steel/bronze braces and collars",
+    "contained rune inlays and restrained ornament",
+    "UV and PBR material candidate",
+    "LOD0-LOD3 and collision",
+    "FBX/GLB export and fixed-camera proof"
+  ],
+  "runtime_plan": "one combined static mesh with preserved component-separated source objects",
+  "material_slots": ["M_Stone", "M_Bronze", "M_Steel", "M_Leather", "M_Rune_Emissive"],
+  "texture_resolution": 2048,
+  "texture_workflow": "per-family BC, N, ORM, E; ORM R=AO G=Roughness B=Metallic",
+  "triangle_budget": {"lod0_min": 3000, "lod0_max": 8000},
+  "lod_plan": {
+    "LOD0": "full silhouette, braces, rune geometry, grip wrap",
+    "LOD1": "approximately 60-70 percent",
+    "LOD2": "approximately 35-45 percent; remove minor rune/strap geometry",
+    "LOD3": "approximately 15-20 percent; preserve head/shaft/pommel silhouette"
+  },
+  "collision": ["head convex proxy", "shaft convex cylinder", "pommel convex proxy"],
+  "source_path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/",
+  "export_path": "SourceAssets/Exports/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/",
+  "texture_path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/",
+  "unreal_path_deferred": "/Game/Aerathea/Weapons/Dwarven/Props/",
+  "blocked_methods": [
+    "legacy grip-centered builder reuse",
+    "concept-panel dimension extraction",
+    "silent averaging",
+    "detached projection shells",
+    "envelope-changing ornament",
+    "Unreal import during Steps 01-16"
+  ]
+}

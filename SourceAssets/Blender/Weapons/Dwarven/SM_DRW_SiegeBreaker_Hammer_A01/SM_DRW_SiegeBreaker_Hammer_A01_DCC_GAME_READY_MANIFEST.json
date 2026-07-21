@@ -1,0 +1,308 @@
+{
+  "schema": "aerathea.dcc_game_ready_candidate.v1",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "artifact_status": "candidate",
+  "pipeline_status": "DCC game-ready candidate",
+  "authority": {
+    "package_sha256": "6d4bf67fe4dcb1bc752c615d16b039bf6fd430037b6ffa4772f8ae83c689a8f0",
+    "geometry": [
+      "asset_spec.json",
+      "dimensions_cm.csv"
+    ],
+    "style_only": "reference/concept_sheet_style_reference.png",
+    "legacy_builder_used": false
+  },
+  "coordinate_frame": {
+    "x": "head width, right positive",
+    "y": "head depth, back positive",
+    "z": "overall length, up positive",
+    "origin": "bottom center of pommel at Z=0"
+  },
+  "world_bounds_cm": {
+    "minimum": [
+      -25.999999046325684,
+      -15.999999642372131,
+      0.0
+    ],
+    "maximum": [
+      25.999999046325684,
+      15.999999642372131,
+      170.00000476837158
+    ],
+    "extent": [
+      51.99999809265137,
+      31.999999284744263,
+      170.00000476837158
+    ]
+  },
+  "source_component_count": 63,
+  "source_triangles": 5840,
+  "lods": [
+    {
+      "level": 0,
+      "object": "SM_DRW_SiegeBreaker_Hammer_A01_LOD0",
+      "triangles": 5648,
+      "ratio_to_lod0": 1.0,
+      "bounds_cm": {
+        "minimum": [
+          -25.999999046325684,
+          -15.999999642372131,
+          0.0
+        ],
+        "maximum": [
+          25.999999046325684,
+          15.999999642372131,
+          170.00000476837158
+        ],
+        "extent": [
+          51.99999809265137,
+          31.999999284744263,
+          170.00000476837158
+        ]
+      },
+      "uv_layers": [
+        "UVMap"
+      ],
+      "material_slots": [
+        "M_Stone",
+        "M_Bronze",
+        "M_Steel",
+        "M_Leather",
+        "M_Rune_Emissive"
+      ]
+    },
+    {
+      "level": 1,
+      "object": "SM_DRW_SiegeBreaker_Hammer_A01_LOD1",
+      "triangles": 3556,
+      "ratio_to_lod0": 0.629603,
+      "bounds_cm": {
+        "minimum": [
+          -25.999999046325684,
+          -15.999999642372131,
+          0.0
+        ],
+        "maximum": [
+          25.999999046325684,
+          15.999999642372131,
+          170.00000476837158
+        ],
+        "extent": [
+          51.99999809265137,
+          31.999999284744263,
+          170.00000476837158
+        ]
+      },
+      "uv_layers": [
+        "UVMap"
+      ],
+      "material_slots": [
+        "M_Stone",
+        "M_Bronze",
+        "M_Steel",
+        "M_Leather",
+        "M_Rune_Emissive"
+      ]
+    },
+    {
+      "level": 2,
+      "object": "SM_DRW_SiegeBreaker_Hammer_A01_LOD2",
+      "triangles": 2272,
+      "ratio_to_lod0": 0.402266,
+      "bounds_cm": {
+        "minimum": [
+          -25.999999046325684,
+          -15.999999642372131,
+          0.0
+        ],
+        "maximum": [
+          25.999999046325684,
+          15.999999642372131,
+          170.00000476837158
+        ],
+        "extent": [
+          51.99999809265137,
+          31.999999284744263,
+          170.00000476837158
+        ]
+      },
+      "uv_layers": [
+        "UVMap"
+      ],
+      "material_slots": [
+        "M_Stone",
+        "M_Bronze",
+        "M_Steel",
+        "M_Leather",
+        "M_Rune_Emissive"
+      ]
+    },
+    {
+      "level": 3,
+      "object": "SM_DRW_SiegeBreaker_Hammer_A01_LOD3",
+      "triangles": 974,
+      "ratio_to_lod0": 0.17245,
+      "bounds_cm": {
+        "minimum": [
+          -25.999999046325684,
+          -15.999999642372131,
+          0.0
+        ],
+        "maximum": [
+          25.999999046325684,
+          15.999999642372131,
+          170.00000476837158
+        ],
+        "extent": [
+          51.99999809265137,
+          31.999999284744263,
+          170.00000476837158
+        ]
+      },
+      "uv_layers": [
+        "UVMap"
+      ],
+      "material_slots": [
+        "M_Stone",
+        "M_Bronze",
+        "M_Steel",
+        "M_Leather",
+        "M_Rune_Emissive"
+      ]
+    }
+  ],
+  "materials": [
+    "M_Stone",
+    "M_Bronze",
+    "M_Steel",
+    "M_Leather",
+    "M_Rune_Emissive"
+  ],
+  "textures": [
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Bronze_BC.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Bronze_E.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Bronze_N.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Bronze_ORM.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Leather_BC.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Leather_E.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Leather_N.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Leather_ORM.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Rune_BC.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Rune_E.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Rune_N.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Rune_ORM.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Steel_BC.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Steel_E.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Steel_N.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Steel_ORM.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Stone_BC.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Stone_E.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Stone_N.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/T_DRW_SiegeBreaker_Hammer_A01_Stone_ORM.png"
+  ],
+  "collision": [
+    {
+      "object": "UCX_SM_DRW_SiegeBreaker_Hammer_A01_00",
+      "triangles": 12,
+      "role": "custom_convex_proxy"
+    },
+    {
+      "object": "UCX_SM_DRW_SiegeBreaker_Hammer_A01_01",
+      "triangles": 44,
+      "role": "custom_convex_proxy"
+    },
+    {
+      "object": "UCX_SM_DRW_SiegeBreaker_Hammer_A01_02",
+      "triangles": 12,
+      "role": "custom_convex_proxy"
+    }
+  ],
+  "contacts": {
+    "shaft_head": {
+      "shaft_top_z_cm": 132,
+      "head_bottom_z_cm": 132,
+      "gap_cm": 0,
+      "status": "pass"
+    },
+    "shaft_pommel": {
+      "shaft_interval_z_cm": [
+        14,
+        132
+      ],
+      "pommel_interval_z_cm": [
+        0,
+        18
+      ],
+      "overlap_cm": 4,
+      "status": "pass"
+    },
+    "grip": {
+      "interval_z_cm": [
+        18,
+        60
+      ],
+      "visible_length_cm": 42,
+      "status": "pass"
+    }
+  },
+  "exterior_seams": [
+    {
+      "name": "stone_left_to_core",
+      "role": "contact_mount",
+      "weld_scope": "contact_alignment_only",
+      "status": "pass"
+    },
+    {
+      "name": "stone_right_to_core",
+      "role": "contact_mount",
+      "weld_scope": "contact_alignment_only",
+      "status": "pass"
+    },
+    {
+      "name": "shaft_to_head",
+      "role": "occluded_contact",
+      "weld_scope": "no_weld",
+      "status": "pass"
+    },
+    {
+      "name": "shaft_into_pommel",
+      "role": "occluded_contact",
+      "weld_scope": "no_weld",
+      "status": "pass"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/SM_DRW_SiegeBreaker_Hammer_A01_DCCGameReady_FinalPackage_A01.blend",
+      "sha256": "ce873cf8286d7d0161f7dc66a4097b3ddc8f2ae76ab95e373f0fa702184cf3c5",
+      "bytes": 2861924
+    },
+    {
+      "path": "SourceAssets/Exports/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/SM_DRW_SiegeBreaker_Hammer_A01.fbx",
+      "sha256": "c7cd369894e2ba480d14538912c97815bb9b6f771f13f49be37a4ae09e2d7b9b",
+      "bytes": 173548
+    },
+    {
+      "path": "SourceAssets/Exports/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/SM_DRW_SiegeBreaker_Hammer_A01_LOD1.fbx",
+      "sha256": "a9f75fa581ce594f1e024c0be7bc8ed8117bb96a6b79d57319a0600848e2f1e1",
+      "bytes": 158988
+    },
+    {
+      "path": "SourceAssets/Exports/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/SM_DRW_SiegeBreaker_Hammer_A01_LOD2.fbx",
+      "sha256": "95ea566ad9f98900da270c028fb6d8372420329ae6e380005be243d347269c27",
+      "bytes": 120076
+    },
+    {
+      "path": "SourceAssets/Exports/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/SM_DRW_SiegeBreaker_Hammer_A01_LOD3.fbx",
+      "sha256": "8a34fc1559d490e16ef05c83e9553a3134d2ce2cd71fc482350c87228fa60621",
+      "bytes": 73692
+    },
+    {
+      "path": "SourceAssets/Exports/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/SM_DRW_SiegeBreaker_Hammer_A01.glb",
+      "sha256": "c6cb43e2e2ef3f56cff59d69e88443f2cf06216fd9906aa108b8eac49ba1945a",
+      "bytes": 35821540
+    }
+  ],
+  "unreal_import_authorized": false,
+  "fully_game_ready": false
+}

@@ -6771,3 +6771,63 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260721-091840/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260721-091840/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 14:03:07 EDT -0400 - Before Siege Breaker final-package Steps 01-16 execution
+
+- Snapshot: `Saved/ProjectRecovery/20260721-140307/`
+- Git: branch `main`, HEAD `cabce5c`, status lines `271`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-140307/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-140307/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-140307/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 14:19:50 EDT -0400 - Siege Breaker Steps 01-11 complete before detailed DCC build
+
+- Snapshot: `Saved/ProjectRecovery/20260721-141950/`
+- Git: branch `main`, HEAD `cabce5c`, status lines `278`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-141950/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-141950/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-141950/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 14:46:25 EDT -0400 - Siege Breaker GLTF dependency available in temporary path before clean Step 12-16 retry
+
+- Snapshot: `Saved/ProjectRecovery/20260721-144625/`
+- Git: branch `main`, HEAD `cabce5c`, status lines `279`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-144625/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-144625/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-144625/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 15:08:16 EDT -0400 - Siege Breaker render recovery before temporary official Blender 3.0.1 runtime download
+
+- Snapshot: `Saved/ProjectRecovery/20260721-150816/`
+- Git: branch `main`, HEAD `cabce5c`, status lines `281`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-150816/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-150816/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-150816/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 15:14:42 EDT -0400 - Siege Breaker before final Steps 01-16 closeout validation
+
+- Snapshot: `Saved/ProjectRecovery/20260721-151442/`
+- Git: branch `main`, HEAD `cabce5c`, status lines `281`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-151442/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-151442/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-151442/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 15:17:24 EDT -0400 - Siege Breaker revised Steps 01-16 complete pending Flamestrike visual approval
+
+- Snapshot: `Saved/ProjectRecovery/20260721-151724/`
+- Git: branch `main`, HEAD `cabce5c`, status lines `281`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-151724/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-151724/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-151724/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

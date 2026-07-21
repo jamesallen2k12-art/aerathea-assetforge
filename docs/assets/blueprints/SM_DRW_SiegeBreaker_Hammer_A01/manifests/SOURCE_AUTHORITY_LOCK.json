@@ -1,0 +1,35 @@
+{
+  "schema": "aerathea.source_authority_lock.v1",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "contract_id": "SB-CR-STEPS01-16-FINALPKG-A01",
+  "date": "2026-07-21",
+  "status": "authoritative",
+  "download_package": {
+    "path": "/home/james/Downloads/SiegeBreaker_Codex_Final_Package.zip",
+    "sha256": "6d4bf67fe4dcb1bc752c615d16b039bf6fd430037b6ffa4772f8ae83c689a8f0",
+    "zip_test": "pass"
+  },
+  "extracted_root": "SourceAssets/Reference/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/02_SiegeBreaker_Codex_Final_Package",
+  "geometry_authority": [
+    "asset_spec.json",
+    "dimensions_cm.csv"
+  ],
+  "supporting_authority": [
+    "component_breakdown.json",
+    "material_spec.json",
+    "modeling_notes.md",
+    "orthographic_render_requirements.md",
+    "unreal/unreal_import_notes.md"
+  ],
+  "style_only": "reference/concept_sheet_style_reference.png",
+  "style_reference_sha256": "3308a7bd0f0830c9cd1b695b57077d9faf77a839bb3e70edc6afe87c68af8b74",
+  "scanline_manifest": "SourceAssets/Reference/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/02_SiegeBreaker_Codex_Final_Package/reference/ScanlineCapture/REF_DRW_SiegeBreaker_FinalPackage_StyleReference_A01_ScanlineManifest.json",
+  "scanline_result": {
+    "pixel_exact": true,
+    "max_rgb_delta": 0,
+    "changed_pixels": 0
+  },
+  "geometry_from_raster": false,
+  "concept_panel_decomposition_required_for_geometry": false,
+  "legacy_authority": "blocked"
+}

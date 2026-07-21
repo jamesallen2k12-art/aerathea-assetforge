@@ -1,0 +1,23 @@
+{
+  "format": "AET_RGB_SCANLINE_V1",
+  "asset_id": "REF_DRW_SiegeBreaker_FinalPackage_StyleReference_A01",
+  "source": "SourceAssets/Reference/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/02_SiegeBreaker_Codex_Final_Package/reference/concept_sheet_style_reference.png",
+  "target_image": "SourceAssets/Reference/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/02_SiegeBreaker_Codex_Final_Package/reference/ScanlineCapture/REF_DRW_SiegeBreaker_FinalPackage_StyleReference_A01_ScanTarget.png",
+  "scan_record": "SourceAssets/Reference/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/02_SiegeBreaker_Codex_Final_Package/reference/ScanlineCapture/REF_DRW_SiegeBreaker_FinalPackage_StyleReference_A01.rgbscan.gz",
+  "rebuilt_image": "SourceAssets/Reference/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/02_SiegeBreaker_Codex_Final_Package/reference/ScanlineCapture/REF_DRW_SiegeBreaker_FinalPackage_StyleReference_A01_RebuiltFromScanlines.png",
+  "difference_image": "SourceAssets/Reference/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/02_SiegeBreaker_Codex_Final_Package/reference/ScanlineCapture/REF_DRW_SiegeBreaker_FinalPackage_StyleReference_A01_Difference.png",
+  "width": 1055,
+  "height": 1491,
+  "scanlines": 1491,
+  "rgb_bytes": 4719015,
+  "scan_sha256": "bf478aa59eb9e229eeddee34460c538d3c75c770116a118285616ddfc805d06c",
+  "target_pixel_sha256": "bf478aa59eb9e229eeddee34460c538d3c75c770116a118285616ddfc805d06c",
+  "rebuild_pixel_sha256": "bf478aa59eb9e229eeddee34460c538d3c75c770116a118285616ddfc805d06c",
+  "max_rgb_delta": 0,
+  "changed_pixels": 0,
+  "mean_grayscale_delta": 0.0,
+  "first_row_sha256": "0fb51acc654dfb019ad919bea7efe7f3a7e81da90a44052ce30166bacf81dbda",
+  "middle_row_sha256": "e838f1deae12ce3b554103e70aaa084928d5465fead030ebe8e111994557d908",
+  "last_row_sha256": "54742e509fcac339796d2e85226d59e68fdaa179ece54b8491b4e5da343c70d6",
+  "pixel_exact": true
+}

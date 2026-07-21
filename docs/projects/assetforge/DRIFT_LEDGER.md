@@ -24,6 +24,20 @@ Core authority: `AGENTS.md` Core Principles govern this ledger. Drifted artifact
 
 ## Entries
 
+### 2026-07-21 14:06 EDT - Siege Breaker Supplied Blockout Pommel Bound Failure
+
+- Asset or scope: `SM_DRW_SiegeBreaker_Hammer_A01` verified final-package canonical blockout verification.
+- Detected by: numeric world-bounds audit immediately after running the supplied blockout script unchanged.
+- Last known Core-valid state: verified ZIP SHA-256 `6d4bf67fe4dcb1bc752c615d16b039bf6fd430037b6ffa4772f8ae83c689a8f0`, embedded `asset_spec.json`, and embedded `dimensions_cm.csv`.
+- First drift action: the supplied `add_ico` helper scaled an icosphere using requested half-dimensions and treated the scale arguments as evaluated axis-aligned bound authority.
+- Assumption or interpretation that caused drift: an icosphere's normalized X extrema were assumed to reach `+/-1`; the evaluated pommel reached only `10.461637 cm` instead of the required `11 cm` width.
+- Affected outputs: only the supplied-script generated `SourceAssets/Reference/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/02_SiegeBreaker_Codex_Final_Package/generated/SiegeBreaker_Blockout.blend` and its transient downstream-authority claim.
+- Artifact statuses: verified ZIP and numeric inputs remain `authoritative`; supplied generated blockout is `invalid`; source script is preserved as `reference only`; corrected fresh blockout is `authoritative` only after its independent numeric pass.
+- Quarantined locations or records: the invalid blockout remains preserved at its generated path; exact recovery record is `docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/manifests/INITIAL_DIVERGENCE_AND_RECOVERY.json`.
+- Recovery decision: do not repair forward from the generated mesh. Return to numeric authority and construct a fresh 12-sided faceted pommel with explicit `X=+/-5.5 cm` ring vertices, then regenerate the entire blockout.
+- Flamestrike approval: covered by the explicit 2026-07-21 full Steps 01-16 final-package execution authority; this does not grant Unreal or final aesthetic approval.
+- Follow-up Core/Kaizen improvement: any primitive-based generator must validate evaluated bounds rather than assuming requested primitive scale equals final axis-aligned dimensions.
+
 ### 2026-07-21 08:01 EDT - A005 A05 Internal Alignment Spans Promoted To Outer Footprints
 
 - Asset or scope: `SM_GIA_BloodAxeCairnstone_A005` A05 measurement audit, C002/C003 footprint authority, replacement-base geometry, package, validation, and final review image.

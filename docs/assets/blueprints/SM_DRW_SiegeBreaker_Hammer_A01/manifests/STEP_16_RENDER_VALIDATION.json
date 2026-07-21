@@ -1,0 +1,63 @@
+{
+  "schema": "aerathea.step16_render_validation.v1",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "contract_id": "SB-CR-STEPS01-16-FINALPKG-A01",
+  "artifact_status": "proof only",
+  "pipeline_status": "DCC game-ready candidate",
+  "result": "pass",
+  "source_blend_sha256": "ce873cf8286d7d0161f7dc66a4097b3ddc8f2ae76ab95e373f0fa702184cf3c5",
+  "orthographic_manifest": "Saved/Automation/DCC/SM_DRW_SiegeBreaker_Hammer_A01/FinalPackage_A01/orthographic_true/render_manifest.json",
+  "orthographic_contract": {
+    "view_count": 6,
+    "resolution_px": [2048, 2048],
+    "ortho_scale_m": 1.9550000548362731,
+    "pixels_per_centimeter": 10.475703030972626,
+    "fixed_object": true,
+    "object_rotation_between_views": false
+  },
+  "orthographic_checks": [
+    {"view": "front", "sha256": "4ec02f561c8eef71b00492cc43b32588c2daf5bd59c68988e8a76e4176498e63", "max_rgb_stddev": 34.776, "pass": true},
+    {"view": "back", "sha256": "f205fcceeee6aefe1b0461f90f1ee6f1ed7473d0a7ac31603fbaddff2fd63c67", "max_rgb_stddev": 34.420, "pass": true},
+    {"view": "left", "sha256": "039d0e43c89d591e832cc228fc180d67c93b5ac50f81dbe4ab9172e0d1d11b3f", "max_rgb_stddev": 30.834, "pass": true},
+    {"view": "right", "sha256": "2f25d1b065c155e34ce9344f7b89c935d763ef0d002712d724a620f5d5196c9b", "max_rgb_stddev": 28.734, "pass": true},
+    {"view": "top", "sha256": "3e764c19c25292bc90a356880125172d505d8438f673928a7f391fc6027d4f45", "max_rgb_stddev": 26.678, "pass": true},
+    {"view": "bottom", "sha256": "94703ce714783a548b0b3d53f112765491203f8c033b201b5fc7f7737f5579a7", "max_rgb_stddev": 33.584, "pass": true}
+  ],
+  "beauty": {
+    "path": "Saved/Automation/DCC/SM_DRW_SiegeBreaker_Hammer_A01/FinalPackage_A01/SM_DRW_SiegeBreaker_Hammer_A01_FinalReview.png",
+    "sha256": "ad86c37aeab7f97db00817b2c8ad7feb615cf7657e3f7a9d6ebca5fed129df61",
+    "resolution_px": [1600, 2000],
+    "max_rgb_stddev": 69.442,
+    "inspection": {
+      "complete_silhouette": true,
+      "no_clipping": true,
+      "no_underside_or_proxy_contamination": true,
+      "material_separation_readable": true,
+      "rune_emission_restrained": true
+    },
+    "artifact_status": "candidate",
+    "final_visual_approval": "pending Flamestrike"
+  },
+  "technical_audit": {
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/manifests/STEPS_01_16_VALIDATION.json",
+    "passed": 32,
+    "total": 32,
+    "result": "pass"
+  },
+  "rejected_internal_attempt": {
+    "status": "invalid",
+    "cause": "The distribution Blender 3.0.1 runtime lacked its OpenColorIO data and emitted black PNGs even for an isolated cube probe.",
+    "effect_on_production_asset": "none",
+    "presentation_status": "never presented for approval",
+    "disposition": "Overwritten at the same local-only render paths by verified non-black renders from the checksum-matched official Blender 3.0.1 runtime."
+  },
+  "render_runtime_evidence": {
+    "runtime": "official Blender 3.0.1 Linux x64 temporary runtime",
+    "archive_sha256": "4f17aa3d10ed6e13e6a75479f1a506f58998b8c007812a0886d9254c953e2ae5",
+    "official_checksum_match": true,
+    "project_install": false,
+    "system_install": false
+  },
+  "unreal_authorized": false,
+  "fully_game_ready": false
+}

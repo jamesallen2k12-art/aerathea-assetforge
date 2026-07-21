@@ -1,0 +1,62 @@
+{
+  "schema": "aerathea.siegebreaker_blockout.v1",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "artifact_status": "authoritative canonical blockout under verified numeric inputs",
+  "authority_order": [
+    "asset_spec.json",
+    "dimensions_cm.csv",
+    "this corrected blockout"
+  ],
+  "world_bounds_cm": {
+    "minimum": [
+      -25.999999046325684,
+      -15.999999642372131,
+      0.0
+    ],
+    "maximum": [
+      25.999999046325684,
+      15.999999642372131,
+      170.00000476837158
+    ],
+    "extent": [
+      51.99999809265137,
+      31.999999284744263,
+      170.00000476837158
+    ]
+  },
+  "required_bounds_cm": {
+    "minimum": [
+      -26,
+      -16,
+      0
+    ],
+    "maximum": [
+      26,
+      16,
+      170
+    ],
+    "extent": [
+      52,
+      32,
+      170
+    ]
+  },
+  "shaft_z_cm": [
+    14,
+    132
+  ],
+  "grip_z_cm": [
+    18,
+    60
+  ],
+  "pommel_z_cm": [
+    0,
+    18
+  ],
+  "pommel_width_cm": 11,
+  "shaft_pommel_overlap_cm": 4,
+  "source_package_sha256": "6d4bf67fe4dcb1bc752c615d16b039bf6fd430037b6ffa4772f8ae83c689a8f0",
+  "blend_path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/SiegeBreaker_Blockout.blend",
+  "blend_sha256": "1365e9d3654fe6e74b9ff558c80dc32164465b4cbd1bbb802374ee599bb6d8ea",
+  "numeric_pass": true
+}
