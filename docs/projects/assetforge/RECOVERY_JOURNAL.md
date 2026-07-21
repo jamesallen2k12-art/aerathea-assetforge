@@ -6751,3 +6751,23 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260721-091054/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260721-091054/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 09:15:25 EDT -0400 - A005 A07 rejected for ring overlap deformation and non-discrete top view; before A08 restart record
+
+- Snapshot: `Saved/ProjectRecovery/20260721-091525/`
+- Git: branch `main`, HEAD `4cc7cb1`, status lines `254`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-091525/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-091525/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-091525/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 09:18:40 EDT -0400 - A005 A07 rejection and A08 measurement-first restart handoff complete; context reset save point
+
+- Snapshot: `Saved/ProjectRecovery/20260721-091840/`
+- Git: branch `main`, HEAD `4cc7cb1`, status lines `265`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-091840/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-091840/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-091840/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

@@ -1,8 +1,8 @@
 # A005 Visual Correction A07 Output Record
 
-Status: `candidate pending Flamestrike visual approval`
+Status: `technical pass; visually rejected and quarantined`
 
-Artifact classification: `authoritative technical result record`
+Artifact classification: `authoritative historical technical/rejection record`
 
 Contract ID: `A005-CR-VISUAL-CORRECTION-A07`
 
@@ -68,3 +68,11 @@ SHA-256:
 Flamestrike may approve, reject, or mark blocked only the exact final A07
 image above. No Unreal, Step 17, `Fully game-ready`, approved-library, or
 visual-canon action is authorized.
+
+## Visual Rejection Supersession
+
+Flamestrike rejected the exact A07 final image. The bottom ring rises above
+the upper course on the right, deforms on the left, and exhibits vertically
+stretched mapping. The top view does not match the concept's geometry or
+individual-stone construction. The package is `quarantined`; this record's
+technical evidence remains `proof only` for A08 defect analysis.

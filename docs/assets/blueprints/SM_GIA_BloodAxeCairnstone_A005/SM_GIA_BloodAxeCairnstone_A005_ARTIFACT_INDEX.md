@@ -1,18 +1,32 @@
 # SM_GIA_BloodAxeCairnstone_A005 Artifact Index
 
-Status: A07 DCC game-ready candidate complete; Flamestrike visual approval pending
+Status: A07 rejected/quarantined; A08 fresh-context measurement restart authorized
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-21
 
-## Active A07 Top-Crown-Corrected Candidate
+## Active A07 Rejection / A08 Fresh-Context Boundary
 
-A07 rebuilds isolated outputs from the exact A04 plinth and unchanged
-source/exterior measurement authority. It uses zero A06 geometry inputs and
-places all three source-derived exterior spans on the top-visible crown
-boundaries. The package passes `20/20` and is a `candidate` / `DCC game-ready
-candidate` pending Flamestrike visual approval.
+Flamestrike rejected A07 after visible review. The package is `quarantined`;
+its `20/20` audit is `proof only`. A08 must begin with a measurement-only top
+source audit before any new geometry.
+
+| Artifact | Status | Role |
+|---|---|---|
+| manifests/VISUAL_CORRECTION_A07_RING_DEFORMATION_DRIFT.json | authoritative recovery decision | Records the rejection, proven overlap, invalid continuous-ring assumption, classifications, and A08 controls. |
+| steps/VISUAL_CORRECTION_A07_VISUAL_REJECTION_A08_RESTART_HANDOFF.md | authoritative fresh-context handoff | Locks the A08 measurement-only first action and later discrete-stone requirements. |
+
+Unreal, Step 17, `Fully game-ready`, approved-library, and visual-canon
+promotion remain unauthorized.
+
+## Quarantined A07 Top-Crown-Corrected Candidate
+
+A07 rebuilt isolated outputs from the exact A04 plinth and unchanged
+source/exterior measurement authority, but its continuous annular shells,
+course overlap, UV deformation, and non-discrete top read failed visible
+review. The historical table below is superseded by the rejection boundary
+above.
 
 | Artifact | Status | Role |
 |---|---|---|

@@ -3,7 +3,7 @@
   "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
   "contract_id": "A005-CR-VISUAL-CORRECTION-A07",
   "date": "2026-07-21",
-  "status": "completed_candidate_pending_flamestrike_visual_review",
+  "status": "completed_technical_pass_visual_rejected_quarantined",
   "artifact_classification": "authoritative execution plan",
   "source_authority": {
     "path": "docs/assets/reference/bloodaxe_cairnstone_asset/REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate.png",

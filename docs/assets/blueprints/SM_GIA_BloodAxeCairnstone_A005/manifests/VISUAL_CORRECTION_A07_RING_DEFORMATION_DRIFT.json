@@ -1,0 +1,52 @@
+{
+  "schema": "aerathea.visual_correction_a07_ring_deformation_drift.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "date": "2026-07-21",
+  "status": "confirmed_visual_rejection_core_recovery",
+  "artifact_classification": "authoritative recovery decision record",
+  "flamestrike_decision": {
+    "classification": "rejected",
+    "statement": "the bottom ring right side seems to have some vertical stretching, pushing it above the top base stone ... and there seeems to be some deformation on the left side of the bottom ring as well ... also the top down image does not match geometrically and visually does not show individual stones as the concept art shows"
+  },
+  "last_known_core_valid_state": {
+    "source_and_top_panel": "authoritative",
+    "a06_exterior_measurement_record": "authoritative",
+    "exact_a04_plinth": "authoritative visual reference",
+    "step11_and_step14_non_conflicting_rules": "authoritative"
+  },
+  "first_drift_action": "A07 reused the continuous annular masonry-course construction method and expanded its top crown extents without replacing the shell with source-visible discrete stones or adding course-separation and per-stone UV gates.",
+  "invalid_assumption": "Correct top-crown dimensions on a continuous ring shell were assumed sufficient to match the original ring geometry and individual-stone read.",
+  "proven_evidence": {
+    "course_z_overlap_cm": {
+      "C003_max_z": 25.248524,
+      "C002_min_z": 24.577829,
+      "overlap": 0.670695
+    },
+    "construction_method": "each course is one continuous watertight annular shell with simulated recessed joints, not individual closed stones",
+    "uv_method": "component-level source-panel projection across continuous sidewalls",
+    "rejected_final_image": {
+      "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A07/SM_GIA_BloodAxeCairnstone_A005_FINAL_CORRECTED_3D_A07.png",
+      "sha256": "a1e90a69e1784650c9b6040f59e3f33cb0332f62c5760db88ab8542111cd3044"
+    }
+  },
+  "affected_outputs": {
+    "a07_blender_fbx_texture_package": "quarantined",
+    "a07_final_and_top_images": "rejected; quarantined",
+    "a07_validation": "proof only; technical pass does not establish visual match",
+    "a07_builder_renderer_auditor": "reference only for defect analysis; invalid as A08 construction authority",
+    "a07_contract_and_plan": "authoritative historical execution boundaries only",
+    "a07_numeric_top_crown_measurements": "reference only; dimensions alone are insufficient",
+    "a06_exterior_measurement_record": "remains authoritative evidence"
+  },
+  "a08_first_action": "measurement-only audit of source-visible ring stone count, angular segmentation, radial projection, course height order, and top-view stone silhouettes before any geometry",
+  "a08_required_controls": [
+    "true individual-stone geometry rather than a continuous annular shell with simulated joints",
+    "C003 maximum crown height must remain below the C002 support boundary with an explicit positive clearance gate",
+    "per-stone UV orientation and aspect-ratio gates that prohibit vertical smearing",
+    "left/right deformation checks in fixed orthographic and final perspective views",
+    "source-versus-render top-view comparison proving individual stone count and silhouette",
+    "fresh A08-only outputs with zero A07 geometry inputs"
+  ],
+  "unreal_authorized": false,
+  "fully_game_ready": false
+}

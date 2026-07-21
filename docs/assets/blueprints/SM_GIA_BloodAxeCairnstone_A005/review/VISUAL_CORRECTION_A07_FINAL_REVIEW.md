@@ -1,8 +1,8 @@
 # A005 Visual Correction A07 Final Review
 
-Status: `candidate pending Flamestrike visual approval`
+Status: `rejected; package quarantined`
 
-Artifact classification: `candidate review record`
+Artifact classification: `authoritative rejection record`
 
 Date: 2026-07-21
 
@@ -40,3 +40,18 @@ SHA-256:
 Approval accepts this exact A07 image and audited DCC package as the corrected
 `DCC game-ready candidate`. It does not authorize Unreal/Step 17,
 `Fully game-ready`, approved-library, or visual-canon promotion.
+
+## Flamestrike Rejection
+
+Flamestrike rejected this exact image on 2026-07-21.
+
+- The bottom ring's right side appears vertically stretched and rises above
+  the top base course.
+- The bottom ring is deformed on the left side.
+- The true top render does not match the original geometry.
+- The rings do not visibly read as individual stones like the concept art.
+
+The A07 package is `quarantined`. Its `20/20` result is retained as
+`proof only`; it is not visual approval authority. A08 must restart from the
+source, retained measurement authority, and exact A04 plinth under
+`VISUAL_CORRECTION_A07_VISUAL_REJECTION_A08_RESTART_HANDOFF.md`.

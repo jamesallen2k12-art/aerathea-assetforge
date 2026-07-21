@@ -1,12 +1,39 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: A07 DCC game-ready candidate complete; Flamestrike visual approval pending
+Status: A07 rejected/quarantined; A08 fresh-context measurement restart authorized
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-21
 
-## Active Resume Boundary - A07 Top-Crown-Corrected Candidate
+## Active Resume Boundary - A07 Rejection / A08 Fresh Restart
+
+Flamestrike rejected the exact A07 review on 2026-07-21 and requested a save
+point/context reset before another attempt.
+
+- A07 complete package, final image, and top proof: `quarantined`.
+- A07 `20/20` validation: `proof only`; not visual-equivalence authority.
+- A07 scripts: `reference only` for defect analysis; invalid as A08
+  construction authority.
+- Rejected findings: right-side bottom-ring vertical stretch/overtake;
+  left-side bottom-ring deformation; top geometry mismatch; no convincing
+  individual-stone read.
+- Proven overlap: C003 max `Z=25.248524 cm` exceeds C002 min
+  `Z=24.577829 cm` by `0.670695 cm`.
+- First drift: retaining the continuous annular shell with simulated joints
+  while changing only crown spans.
+- Recovery manifest:
+  `manifests/VISUAL_CORRECTION_A07_RING_DEFORMATION_DRIFT.json`.
+- Authoritative fresh-context handoff:
+  `steps/VISUAL_CORRECTION_A07_VISUAL_REJECTION_A08_RESTART_HANDOFF.md`.
+- A08 first action: measurement-only source-top audit of stone counts,
+  segmentation, silhouettes, radial reach, course clearances, and UV
+  orientation. Geometry remains blocked until that gate passes.
+- A08 later construction must use actual individual stone islands, positive
+  course clearances, per-stone UV controls, and front/left/right/top proofs.
+- Unreal/Step 17 and `Fully game-ready` remain unauthorized and false.
+
+## Superseded Resume Boundary - A07 Top-Crown-Corrected Candidate
 
 A07 is complete under `A005-CR-VISUAL-CORRECTION-A07` and passes the full
 independent audit.

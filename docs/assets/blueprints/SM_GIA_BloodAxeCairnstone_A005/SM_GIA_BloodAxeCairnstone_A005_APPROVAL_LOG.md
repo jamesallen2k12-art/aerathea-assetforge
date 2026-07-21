@@ -1,12 +1,30 @@
 # SM_GIA_BloodAxeCairnstone_A005 Approval Log
 
-Status: A07 DCC game-ready candidate complete; Flamestrike visual approval pending
+Status: A07 rejected/quarantined; A08 fresh-context measurement restart authorized
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-21
 
-## A07 Complete Top-Crown Correction And Technical Result
+## A07 Visible Rejection / A08 Restart Authority
+
+- Date: 2026-07-21
+- Decision authority: Flamestrike
+- A07 decision: `rejected`; complete package: `quarantined`
+- Findings: right-side bottom ring vertically stretches/overtakes the upper
+  course; left-side bottom ring deforms; top geometry mismatches the original;
+  rings do not read as individual stones
+- Proven course overlap: `0.670695 cm`
+- Invalid method: one continuous annular shell with simulated joints and
+  component-level UV projection
+- A07 `20/20`: `proof only`; visual implication rejected
+- A08 authority: after context reset, execute the measurement-only first
+  action in `VISUAL_CORRECTION_A07_VISUAL_REJECTION_A08_RESTART_HANDOFF.md`
+- Required A08 direction: actual individual stone islands, positive course
+  clearance, per-stone UV controls, and source-matched top proof
+- Unreal authority: `false`; `Fully game-ready`: `false`
+
+## Superseded A07 Complete Top-Crown Correction And Technical Result
 
 - Date: 2026-07-21
 - Execution authority: Flamestrike's full correction authority plus explicit

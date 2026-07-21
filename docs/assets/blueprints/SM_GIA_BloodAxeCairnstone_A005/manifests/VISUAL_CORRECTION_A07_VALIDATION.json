@@ -3,9 +3,9 @@
   "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
   "contract_id": "A005-CR-VISUAL-CORRECTION-A07",
   "date": "2026-07-21",
-  "status": "pass_candidate_pending_flamestrike_visual_review",
+  "status": "technical_pass_visual_rejected",
   "artifact_classification": "proof only",
-  "pipeline_status": "DCC game-ready candidate",
+  "pipeline_status": "candidate rejected; package quarantined",
   "fully_game_ready": false,
   "unreal_outputs": 0,
   "candidate": {
@@ -15,7 +15,7 @@
   "final_review_image": {
     "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A07/SM_GIA_BloodAxeCairnstone_A005_FINAL_CORRECTED_3D_A07.png",
     "sha256": "a1e90a69e1784650c9b6040f59e3f33cb0332f62c5760db88ab8542111cd3044",
-    "visual_gate": "pending Flamestrike"
+    "visual_gate": "rejected by Flamestrike"
   },
   "gates": [
     {
