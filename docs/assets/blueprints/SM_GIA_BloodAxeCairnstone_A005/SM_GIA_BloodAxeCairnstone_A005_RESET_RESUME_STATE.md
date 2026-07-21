@@ -1,12 +1,35 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: A02 visually rejected and quarantined; A03 Core Recovery active
+Status: A03 quarantined by source/target proportion conflict; A04 authority decision required
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
 
-## Active Resume Boundary - A02 Rejected / A03 Core Recovery
+## Active Resume Boundary - A03 Source/Target Proportion Conflict
+
+Flamestrike clarified that the original concept sheet is the comparison target
+and identified the 3D image as materially different. A03 improved source RGB,
+course faceting, and apron cleanup, but its Step 11 target-space allocation
+still makes the C-001 monolith visually broader than C-002/C-003, opposite the
+concept's component relationship.
+
+- A03 outputs and Attempts 01-18: `quarantined / proof only`; do not display.
+- A03 final-path render: `quarantined`; not an accepted final image.
+- A03 contract/plan: `quarantined as execution authority`.
+- Last Core-valid production boundary: committed A02 visual rejection at
+  `ea6294076d2e1e2502426ed876e3aa55aef4c5bc`.
+- Source image: unchanged and `authoritative`.
+- Step 11: authoritative for its recorded physical-target choice, but blocked
+  as source-proportion authority until Flamestrike resolves the conflict.
+- Recovery record:
+  `steps/VISUAL_CORRECTION_A03_SOURCE_TARGET_PROPORTION_CONFLICT_RECOVERY_RECORD.md`.
+- Required decision: approve or reject a fresh A04 rule that preserves the
+  overall `140 x 110 x 220 cm` envelope, `35 cm` base, and pivot while making
+  the concept authoritative for relative visible component proportions.
+- Unreal/Step 17 remains unauthorized; `Fully game-ready` remains `false`.
+
+## Superseded Resume Boundary - A02 Rejected / A03 Core Recovery
 
 After the exact A02 final image was reopened visibly, Flamestrike found that
 the bottom pieces remained materially wrong and the displayed pixel colors

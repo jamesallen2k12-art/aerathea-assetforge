@@ -24,6 +24,20 @@ Core authority: `AGENTS.md` Core Principles govern this ledger. Drifted artifact
 
 ## Entries
 
+### 2026-07-20 22:47 EDT - A005 A03 Target-Space Proportion Gate Visual-Canon Conflict
+
+- Asset or scope: `SM_GIA_BloodAxeCairnstone_A005` A03 visual-correction contract, builder, Blender/FBX/texture package, spatial gates, and final-path image.
+- Detected by: Flamestrike's clarification that the original concept sheet is the comparison target, followed by direct source/3D review. The concept keeps the monolith inside the broad masonry courses; A03 makes the Step 11 C-001 body overhang the narrower C-002/C-003 courses.
+- Last known Core-valid state: committed A02 visual-rejection recovery boundary `ea6294076d2e1e2502426ed876e3aa55aef4c5bc`; unchanged source image remains authoritative. Step 11 remains authoritative for its recorded physical-target construction decision but is blocked as source-proportion authority by the renewed conflict.
+- First drift action: `VISUAL_CORRECTION_A03_CONTRACT.md` allowed independently normalized target-space profiles to substitute for the raw concept's relative component proportions, and G21 compared against that derived target envelope instead of the source component relationship.
+- Assumption or interpretation that caused drift: high target-space silhouette IoU, spatial RGB correspondence, exact source-owned texels, and matching median color were treated as sufficient visual equivalence even though the source/target ratio conflict remained unresolved. The earlier scale-authority audit had already proven all ten within-axis source/target ratio checks conflict.
+- Affected outputs: A03 contract/plan, builder/renderer/auditor, Blender source, maps, FBXs, manifest, validation, final-path render, and Attempts 01-18. A01/A02 preserved files, original source, Step 01-10 evidence, and unrelated files are unaffected.
+- Artifact statuses: A03 contract/plan are `quarantined as execution authority`; all A03 production outputs and render attempts are `quarantined`; technical/spatial audits are `proof only`; no A03 image is approval-ready or visual authority.
+- Quarantined locations or records: A03 tracked/local output paths remain preserved in place; authoritative classification is `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/VISUAL_CORRECTION_A03_SOURCE_TARGET_PROPORTION_CONFLICT_RECOVERY_RECORD.md`; checkpoints `Saved/ProjectRecovery/20260720-223404/` and `Saved/ProjectRecovery/20260720-224049/`.
+- Recovery decision: stop A03 and do not display its final-path image. Do not repair forward. A fresh A04 contract requires an explicit choice between the Step 11 component allocation and source-concept relative proportions. Proposed smallest recovery preserves the overall `140 x 110 x 220 cm` envelope, `35 cm` base span, and pivot while re-deriving all relative visible component proportions from source-owner pixels.
+- Flamestrike approval: pending the exact A04 authority choice; prior broad correction authority does not silently resolve this explicit source/target conflict.
+- Follow-up Core/Kaizen improvement: source-to-final visual gates must compare relative component envelopes and ordering, not only total silhouettes, local color correspondence, topology, or target-space profiles. A known source/target proportion conflict must remain a blocking decision until explicitly resolved.
+
 ### 2026-07-20 21:38 EDT - A005 A02 Extent-Only Base And Distribution-Only Color False Pass
 
 - Asset or scope: `SM_GIA_BloodAxeCairnstone_A005` A02 visual-correction Blender/FBX/texture package, final image, and gates G22-G26.
