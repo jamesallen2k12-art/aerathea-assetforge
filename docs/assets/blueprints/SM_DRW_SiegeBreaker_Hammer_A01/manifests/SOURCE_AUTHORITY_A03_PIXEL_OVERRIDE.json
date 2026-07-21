@@ -1,0 +1,32 @@
+{
+  "schema": "aerathea.siegebreaker.source_authority_pixel_override.v1",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "contract_id": "SB-VF-A03-PIXEL",
+  "date": "2026-07-21",
+  "status": "authoritative",
+  "approval": "Flamestrike approved all required changes and the pixel-perfect method to create the 3D asset",
+  "overrides": {
+    "prior_style_only_limit": true,
+    "geometry_from_raster": "authorized for projected visible geometry inside the locked numeric envelope",
+    "concept_panel_decomposition_required_for_geometry": true
+  },
+  "source": {
+    "path": "SourceAssets/Reference/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/02_SiegeBreaker_Codex_Final_Package/reference/concept_sheet_style_reference.png",
+    "sha256": "3308a7bd0f0830c9cd1b695b57077d9faf77a839bb3e70edc6afe87c68af8b74",
+    "size_px": [1055, 1491],
+    "primary_view": "large_3_4_concept_render",
+    "secondary_views": ["front", "back", "left", "right", "top", "bottom"]
+  },
+  "authority_order": [
+    "exact_numeric_envelope_and_anchors",
+    "primary_3_4_projected_visual_evidence",
+    "non_conflicting_secondary_projected_evidence",
+    "supporting_component_and_material_specs",
+    "documented_hidden_surface_interpretation"
+  ],
+  "numeric_envelope_cm": [52, 32, 170],
+  "conflict_policy": "flag_and_block_the_conflicting_datum; never average or silently reconcile",
+  "color_policy": "source pixels are rendered-reference targets, not raw albedo",
+  "unreal_authorized": false,
+  "fully_game_ready": false
+}

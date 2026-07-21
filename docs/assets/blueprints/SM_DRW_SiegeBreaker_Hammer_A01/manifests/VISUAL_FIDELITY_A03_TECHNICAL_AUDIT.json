@@ -1,0 +1,932 @@
+{
+  "schema": "aerathea.siegebreaker.a03_technical_audit.v1",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "revision": "PixelReconstruction_A03",
+  "contract_id": "SB-VF-A03-PIXEL",
+  "artifact_status": "proof only",
+  "result": "pass",
+  "summary": {
+    "passed": 36,
+    "total": 36,
+    "failures": 0
+  },
+  "pipeline_status": "DCC game-ready candidate pending Flamestrike visual approval",
+  "checks": [
+    {
+      "id": "G01_CONTRACT_ID",
+      "pass": true,
+      "expected": "SB-VF-A03-PIXEL",
+      "observed": "SB-VF-A03-PIXEL",
+      "note": ""
+    },
+    {
+      "id": "G02_SOURCE_MEASUREMENT",
+      "pass": true,
+      "expected": "locked source hash/size, seven measured panels, four primary regions, unmodified pixels",
+      "observed": {
+        "source": {
+          "path": "SourceAssets/Reference/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/02_SiegeBreaker_Codex_Final_Package/reference/concept_sheet_style_reference.png",
+          "sha256": "3308a7bd0f0830c9cd1b695b57077d9faf77a839bb3e70edc6afe87c68af8b74",
+          "size_px": [
+            1055,
+            1491
+          ],
+          "mode": "RGB",
+          "source_pixels_modified": false
+        },
+        "panels": [
+          "back",
+          "bottom",
+          "front",
+          "left",
+          "primary_3_4",
+          "right",
+          "top"
+        ],
+        "regions": [
+          "grip",
+          "head",
+          "pommel",
+          "shaft"
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "G03_CROSS_VIEW_CONFLICT_DECLARED",
+      "pass": true,
+      "expected": "pass_with_declared_cross_view_scale_conflict",
+      "observed": "pass_with_declared_cross_view_scale_conflict",
+      "note": ""
+    },
+    {
+      "id": "G04_PIXEL_COMPARISON",
+      "pass": true,
+      "expected": "pass 5/5",
+      "observed": {
+        "result": "pass",
+        "summary": {
+          "passed": 5,
+          "total": 5
+        }
+      },
+      "note": ""
+    },
+    {
+      "id": "G05_NO_A01_A02_GEOMETRY",
+      "pass": true,
+      "expected": false,
+      "observed": false,
+      "note": ""
+    },
+    {
+      "id": "G06_OVERALL_MIN",
+      "pass": true,
+      "expected": [
+        -26,
+        -16,
+        0
+      ],
+      "observed": [
+        -25.999999046325684,
+        -15.999999642372131,
+        0.0
+      ],
+      "note": ""
+    },
+    {
+      "id": "G07_OVERALL_MAX",
+      "pass": true,
+      "expected": [
+        26,
+        16,
+        170
+      ],
+      "observed": [
+        25.999999046325684,
+        15.999999642372131,
+        170.00000476837158
+      ],
+      "note": ""
+    },
+    {
+      "id": "G08_OVERALL_EXTENT",
+      "pass": true,
+      "expected": [
+        52,
+        32,
+        170
+      ],
+      "observed": [
+        51.99999809265137,
+        31.999999284744263,
+        170.00000476837158
+      ],
+      "note": ""
+    },
+    {
+      "id": "G09_HEAD_BOUNDS",
+      "pass": true,
+      "expected": {
+        "min": [
+          -26,
+          -16,
+          132
+        ],
+        "max": [
+          26,
+          16,
+          170
+        ]
+      },
+      "observed": {
+        "min": [
+          -25.999999046325684,
+          -15.999999642372131,
+          132.00000524520874
+        ],
+        "max": [
+          25.999999046325684,
+          15.999999642372131,
+          170.00000476837158
+        ],
+        "extent": [
+          51.99999809265137,
+          31.999999284744263,
+          37.99999952316284
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "G10_SHAFT_ANCHOR",
+      "pass": true,
+      "expected": {
+        "min": [
+          -2.5,
+          -2.5,
+          14
+        ],
+        "max": [
+          2.5,
+          2.5,
+          132
+        ]
+      },
+      "observed": {
+        "min": [
+          -2.500000037252903,
+          -2.500000037252903,
+          14.000004529953003
+        ],
+        "max": [
+          2.500000037252903,
+          2.500000037252903,
+          131.99999332427979
+        ],
+        "extent": [
+          5.000000074505806,
+          5.000000074505806,
+          117.99998879432678
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "G11_GRIP_ANCHOR",
+      "pass": true,
+      "expected": {
+        "z": [
+          18,
+          60
+        ],
+        "outer_diameter": 5
+      },
+      "observed": {
+        "min": [
+          -2.4977343156933784,
+          -2.4977343156933784,
+          17.999999225139618
+        ],
+        "max": [
+          2.4962175637483597,
+          2.4962175637483597,
+          59.99999642372131
+        ],
+        "extent": [
+          4.993951879441738,
+          4.993951879441738,
+          41.999997198581696
+        ],
+        "outer_diameter": 4.993951879441738
+      },
+      "note": ""
+    },
+    {
+      "id": "G12_POMMEL_ANCHOR",
+      "pass": true,
+      "expected": {
+        "min": [
+          -5.5,
+          -4.5,
+          0
+        ],
+        "max": [
+          5.5,
+          4.5,
+          18
+        ]
+      },
+      "observed": {
+        "min": [
+          -5.499999970197678,
+          -4.500000178813934,
+          0.0
+        ],
+        "max": [
+          5.499999970197678,
+          4.500000178813934,
+          18.000000715255737
+        ],
+        "extent": [
+          10.999999940395355,
+          9.000000357627869,
+          18.000000715255737
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "G13_SHAFT_POMMEL_OVERLAP",
+      "pass": true,
+      "expected": 4,
+      "observed": 4,
+      "note": ""
+    },
+    {
+      "id": "G14_SOURCE_TRANSFORMS",
+      "pass": true,
+      "expected": "all source mesh scales applied",
+      "observed": {},
+      "note": ""
+    },
+    {
+      "id": "G15_SOURCE_UV",
+      "pass": true,
+      "expected": "UVMap on every source mesh",
+      "observed": [],
+      "note": ""
+    },
+    {
+      "id": "G16_OBJECT_AUTHORITY_FLAGS",
+      "pass": true,
+      "expected": false,
+      "observed": {
+        "scene": false,
+        "invalid_objects": []
+      },
+      "note": ""
+    },
+    {
+      "id": "G17_LOD0_LARGE_PROP_BUDGET",
+      "pass": true,
+      "expected": [
+        4000,
+        10000
+      ],
+      "observed": 9794,
+      "note": ""
+    },
+    {
+      "id": "G18_LOD_RATIOS",
+      "pass": true,
+      "expected": {
+        "LOD1": [
+          0.55,
+          0.7
+        ],
+        "LOD2": [
+          0.34,
+          0.48
+        ],
+        "LOD3": [
+          0.14,
+          0.22
+        ]
+      },
+      "observed": {
+        "LOD0": 1.0,
+        "LOD1": 0.6359,
+        "LOD2": 0.435369,
+        "LOD3": 0.187768
+      },
+      "note": ""
+    },
+    {
+      "id": "G19_LOD_MONOTONIC",
+      "pass": true,
+      "expected": "strictly decreasing",
+      "observed": [
+        9794,
+        6228,
+        4264,
+        1839
+      ],
+      "note": ""
+    },
+    {
+      "id": "G20_LOD_SILHOUETTE_BOUNDS",
+      "pass": true,
+      "expected": [
+        52,
+        32,
+        170
+      ],
+      "observed": [
+        [
+          51.99999809265137,
+          31.999999284744263,
+          170.00000476837158
+        ],
+        [
+          51.99999809265137,
+          31.999999284744263,
+          170.00925220781937
+        ],
+        [
+          51.99999809265137,
+          31.999999284744263,
+          170.00000476837158
+        ],
+        [
+          51.99999809265137,
+          31.999999284744263,
+          170.00000476837158
+        ]
+      ],
+      "note": ""
+    },
+    {
+      "id": "G21_MATERIAL_SLOTS",
+      "pass": true,
+      "expected": [
+        "M_Stone",
+        "M_Bronze",
+        "M_Steel",
+        "M_Leather",
+        "M_Rune_Emissive"
+      ],
+      "observed": {
+        "SM_DRW_SiegeBreaker_Hammer_A01_LOD0": [
+          "M_Stone",
+          "M_Bronze",
+          "M_Steel",
+          "M_Leather",
+          "M_Rune_Emissive"
+        ],
+        "SM_DRW_SiegeBreaker_Hammer_A01_LOD1": [
+          "M_Stone",
+          "M_Bronze",
+          "M_Steel",
+          "M_Leather",
+          "M_Rune_Emissive"
+        ],
+        "SM_DRW_SiegeBreaker_Hammer_A01_LOD2": [
+          "M_Stone",
+          "M_Bronze",
+          "M_Steel",
+          "M_Leather",
+          "M_Rune_Emissive"
+        ],
+        "SM_DRW_SiegeBreaker_Hammer_A01_LOD3": [
+          "M_Stone",
+          "M_Bronze",
+          "M_Steel",
+          "M_Leather",
+          "M_Rune_Emissive"
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "G22_LOD_UV",
+      "pass": true,
+      "expected": "UVMap on every LOD",
+      "observed": [],
+      "note": ""
+    },
+    {
+      "id": "G23_PIVOT",
+      "pass": true,
+      "expected": [
+        0,
+        0,
+        0
+      ],
+      "observed": {
+        "SM_DRW_SiegeBreaker_Hammer_A01_LOD0": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "SM_DRW_SiegeBreaker_Hammer_A01_LOD1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "SM_DRW_SiegeBreaker_Hammer_A01_LOD2": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "SM_DRW_SiegeBreaker_Hammer_A01_LOD3": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "G24_COLLISION",
+      "pass": true,
+      "expected": "3 named custom proxies",
+      "observed": [
+        "UCX_SM_DRW_SiegeBreaker_Hammer_A01_00",
+        "UCX_SM_DRW_SiegeBreaker_Hammer_A01_01",
+        "UCX_SM_DRW_SiegeBreaker_Hammer_A01_02"
+      ],
+      "note": ""
+    },
+    {
+      "id": "G25_TEXTURE_PACKAGE",
+      "pass": true,
+      "expected": "20 maps at 2048x2048",
+      "observed": {
+        "T_DRW_SiegeBreaker_Hammer_A01_Bronze_BC.png": [
+          2048,
+          2048
+        ],
+        "T_DRW_SiegeBreaker_Hammer_A01_Bronze_E.png": [
+          2048,
+          2048
+        ],
+        "T_DRW_SiegeBreaker_Hammer_A01_Bronze_N.png": [
+          2048,
+          2048
+        ],
+        "T_DRW_SiegeBreaker_Hammer_A01_Bronze_ORM.png": [
+          2048,
+          2048
+        ],
+        "T_DRW_SiegeBreaker_Hammer_A01_Leather_BC.png": [
+          2048,
+          2048
+        ],
+        "T_DRW_SiegeBreaker_Hammer_A01_Leather_E.png": [
+          2048,
+          2048
+        ],
+        "T_DRW_SiegeBreaker_Hammer_A01_Leather_N.png": [
+          2048,
+          2048
+        ],
+        "T_DRW_SiegeBreaker_Hammer_A01_Leather_ORM.png": [
+          2048,
+          2048
+        ],
+        "T_DRW_SiegeBreaker_Hammer_A01_Rune_BC.png": [
+          2048,
+          2048
+        ],
+        "T_DRW_SiegeBreaker_Hammer_A01_Rune_E.png": [
+          2048,
+          2048
+        ],
+        "T_DRW_SiegeBreaker_Hammer_A01_Rune_N.png": [
+          2048,
+          2048
+        ],
+        "T_DRW_SiegeBreaker_Hammer_A01_Rune_ORM.png": [
+          2048,
+          2048
+        ],
+        "T_DRW_SiegeBreaker_Hammer_A01_Steel_BC.png": [
+          2048,
+          2048
+        ],
+        "T_DRW_SiegeBreaker_Hammer_A01_Steel_E.png": [
+          2048,
+          2048
+        ],
+        "T_DRW_SiegeBreaker_Hammer_A01_Steel_N.png": [
+          2048,
+          2048
+        ],
+        "T_DRW_SiegeBreaker_Hammer_A01_Steel_ORM.png": [
+          2048,
+          2048
+        ],
+        "T_DRW_SiegeBreaker_Hammer_A01_Stone_BC.png": [
+          2048,
+          2048
+        ],
+        "T_DRW_SiegeBreaker_Hammer_A01_Stone_E.png": [
+          2048,
+          2048
+        ],
+        "T_DRW_SiegeBreaker_Hammer_A01_Stone_N.png": [
+          2048,
+          2048
+        ],
+        "T_DRW_SiegeBreaker_Hammer_A01_Stone_ORM.png": [
+          2048,
+          2048
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "G26_TEXTURE_HASHES",
+      "pass": true,
+      "expected": {
+        "T_DRW_SiegeBreaker_Hammer_A01_Bronze_BC.png": "1c1c5439772f5889f1f0495cc008fba4055f8bacb014581acfffec805e6aebde",
+        "T_DRW_SiegeBreaker_Hammer_A01_Bronze_E.png": "6e84541fac14f31507b9d68f110245775261bfd6f75fb997b4b053e25a0614b0",
+        "T_DRW_SiegeBreaker_Hammer_A01_Bronze_N.png": "1e5afb5dd9afe76c9d5f9d83a87d7c0fe97b529be3ec814ac2e9534369944e83",
+        "T_DRW_SiegeBreaker_Hammer_A01_Bronze_ORM.png": "2bb93a10c03fec7296cb6c56ed8066f431c8fcd2be9691fc3d1938000b1f5c30",
+        "T_DRW_SiegeBreaker_Hammer_A01_Leather_BC.png": "fd2188529ff41f3b747b5fc81f72045b0486d504c61019a87444d93293b2ca6b",
+        "T_DRW_SiegeBreaker_Hammer_A01_Leather_E.png": "6e84541fac14f31507b9d68f110245775261bfd6f75fb997b4b053e25a0614b0",
+        "T_DRW_SiegeBreaker_Hammer_A01_Leather_N.png": "12f0decff0110b6e4b46ecb4679162202c5260a471f8260c25c5130eec1e5ff6",
+        "T_DRW_SiegeBreaker_Hammer_A01_Leather_ORM.png": "d96a907721f5f506adb919d4808a028fcfce545440176944558f36e47ea0ec4b",
+        "T_DRW_SiegeBreaker_Hammer_A01_Rune_BC.png": "d5459d6045a93365ba646c49fc74bea3d30d4426579c715d9afb386395b60b48",
+        "T_DRW_SiegeBreaker_Hammer_A01_Rune_E.png": "ed19956386fdaa166a4aeb6cdfe92eaf04a85b49dc654a187d1a78c7fae8a03e",
+        "T_DRW_SiegeBreaker_Hammer_A01_Rune_N.png": "4fa6bd411e273c4fef0a0bc0e53a1b3fbd120ac5a7c9b16490f842e35ddc7e64",
+        "T_DRW_SiegeBreaker_Hammer_A01_Rune_ORM.png": "98bf59e9a6f97b9d5a945906f852baaec4c1c505c370277256ce3d18d064d1b7",
+        "T_DRW_SiegeBreaker_Hammer_A01_Steel_BC.png": "583026cd1c780baf1a95c35f5bfb56113503e64a7936cfac882f53d923b29ab1",
+        "T_DRW_SiegeBreaker_Hammer_A01_Steel_E.png": "6e84541fac14f31507b9d68f110245775261bfd6f75fb997b4b053e25a0614b0",
+        "T_DRW_SiegeBreaker_Hammer_A01_Steel_N.png": "e159c6d5b0df2adb4cfd35e9b491027ef46f573473b149d94a59448fe948ce81",
+        "T_DRW_SiegeBreaker_Hammer_A01_Steel_ORM.png": "4895683c5c821ddeac4b188c7d06b0fbcbac0cb46b4ecb2d1d5854541df49862",
+        "T_DRW_SiegeBreaker_Hammer_A01_Stone_BC.png": "9c9df545326174b5bacd75513b3a6b3ee025b0e5268127cb9253a46a7165ffa3",
+        "T_DRW_SiegeBreaker_Hammer_A01_Stone_E.png": "6e84541fac14f31507b9d68f110245775261bfd6f75fb997b4b053e25a0614b0",
+        "T_DRW_SiegeBreaker_Hammer_A01_Stone_N.png": "3e9808c363b1ad38922e1245d0bf1c9c852f0f44e2495261efa9db856873ebae",
+        "T_DRW_SiegeBreaker_Hammer_A01_Stone_ORM.png": "2b4f543d411b5d9368da238c7786fe24af518cd88a960ab04b232a1ba1154688"
+      },
+      "observed": {
+        "T_DRW_SiegeBreaker_Hammer_A01_Bronze_BC.png": "1c1c5439772f5889f1f0495cc008fba4055f8bacb014581acfffec805e6aebde",
+        "T_DRW_SiegeBreaker_Hammer_A01_Bronze_E.png": "6e84541fac14f31507b9d68f110245775261bfd6f75fb997b4b053e25a0614b0",
+        "T_DRW_SiegeBreaker_Hammer_A01_Bronze_N.png": "1e5afb5dd9afe76c9d5f9d83a87d7c0fe97b529be3ec814ac2e9534369944e83",
+        "T_DRW_SiegeBreaker_Hammer_A01_Bronze_ORM.png": "2bb93a10c03fec7296cb6c56ed8066f431c8fcd2be9691fc3d1938000b1f5c30",
+        "T_DRW_SiegeBreaker_Hammer_A01_Leather_BC.png": "fd2188529ff41f3b747b5fc81f72045b0486d504c61019a87444d93293b2ca6b",
+        "T_DRW_SiegeBreaker_Hammer_A01_Leather_E.png": "6e84541fac14f31507b9d68f110245775261bfd6f75fb997b4b053e25a0614b0",
+        "T_DRW_SiegeBreaker_Hammer_A01_Leather_N.png": "12f0decff0110b6e4b46ecb4679162202c5260a471f8260c25c5130eec1e5ff6",
+        "T_DRW_SiegeBreaker_Hammer_A01_Leather_ORM.png": "d96a907721f5f506adb919d4808a028fcfce545440176944558f36e47ea0ec4b",
+        "T_DRW_SiegeBreaker_Hammer_A01_Rune_BC.png": "d5459d6045a93365ba646c49fc74bea3d30d4426579c715d9afb386395b60b48",
+        "T_DRW_SiegeBreaker_Hammer_A01_Rune_E.png": "ed19956386fdaa166a4aeb6cdfe92eaf04a85b49dc654a187d1a78c7fae8a03e",
+        "T_DRW_SiegeBreaker_Hammer_A01_Rune_N.png": "4fa6bd411e273c4fef0a0bc0e53a1b3fbd120ac5a7c9b16490f842e35ddc7e64",
+        "T_DRW_SiegeBreaker_Hammer_A01_Rune_ORM.png": "98bf59e9a6f97b9d5a945906f852baaec4c1c505c370277256ce3d18d064d1b7",
+        "T_DRW_SiegeBreaker_Hammer_A01_Steel_BC.png": "583026cd1c780baf1a95c35f5bfb56113503e64a7936cfac882f53d923b29ab1",
+        "T_DRW_SiegeBreaker_Hammer_A01_Steel_E.png": "6e84541fac14f31507b9d68f110245775261bfd6f75fb997b4b053e25a0614b0",
+        "T_DRW_SiegeBreaker_Hammer_A01_Steel_N.png": "e159c6d5b0df2adb4cfd35e9b491027ef46f573473b149d94a59448fe948ce81",
+        "T_DRW_SiegeBreaker_Hammer_A01_Steel_ORM.png": "4895683c5c821ddeac4b188c7d06b0fbcbac0cb46b4ecb2d1d5854541df49862",
+        "T_DRW_SiegeBreaker_Hammer_A01_Stone_BC.png": "9c9df545326174b5bacd75513b3a6b3ee025b0e5268127cb9253a46a7165ffa3",
+        "T_DRW_SiegeBreaker_Hammer_A01_Stone_E.png": "6e84541fac14f31507b9d68f110245775261bfd6f75fb997b4b053e25a0614b0",
+        "T_DRW_SiegeBreaker_Hammer_A01_Stone_N.png": "3e9808c363b1ad38922e1245d0bf1c9c852f0f44e2495261efa9db856873ebae",
+        "T_DRW_SiegeBreaker_Hammer_A01_Stone_ORM.png": "2b4f543d411b5d9368da238c7786fe24af518cd88a960ab04b232a1ba1154688"
+      },
+      "note": ""
+    },
+    {
+      "id": "G27_SOURCE_FEATURE_GROUPS",
+      "pass": true,
+      "expected": "all six source feature groups populated",
+      "observed": {
+        "faceted_runestone_masses": 2,
+        "stone_crack_and_rail_system": 76,
+        "layered_architectural_core": 42,
+        "engraved_shaft": 33,
+        "dense_crossed_grip": 2,
+        "compact_faceted_pommel": 15
+      },
+      "note": ""
+    },
+    {
+      "id": "G28_CROSSED_GRIP",
+      "pass": true,
+      "expected": {
+        "count": 2,
+        "directions": [
+          "ascending",
+          "descending"
+        ]
+      },
+      "observed": {
+        "objects": [
+          "Grip_Wrap_Ascending_A03",
+          "Grip_Wrap_Descending_A03"
+        ],
+        "directions": [
+          "ascending",
+          "descending"
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "G29_EXPORT_FILES",
+      "pass": true,
+      "expected": "all FBX/GLB files nonzero",
+      "observed": {
+        "SourceAssets/Exports/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/SM_DRW_SiegeBreaker_Hammer_A01.fbx": 345724,
+        "SourceAssets/Exports/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/SM_DRW_SiegeBreaker_Hammer_A01_LOD1.fbx": 249164,
+        "SourceAssets/Exports/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/SM_DRW_SiegeBreaker_Hammer_A01_LOD2.fbx": 182204,
+        "SourceAssets/Exports/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/SM_DRW_SiegeBreaker_Hammer_A01_LOD3.fbx": 103436,
+        "SourceAssets/Exports/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/SM_DRW_SiegeBreaker_Hammer_A01.glb": 36390056
+      },
+      "note": ""
+    },
+    {
+      "id": "G30_IMPORTED_FBX_TRIANGLES",
+      "pass": true,
+      "expected": [
+        9794,
+        6228,
+        4264,
+        1839
+      ],
+      "observed": [
+        9794,
+        6228,
+        4264,
+        1839
+      ],
+      "note": ""
+    },
+    {
+      "id": "G31_IMPORTED_FBX_BOUNDS",
+      "pass": true,
+      "expected": [
+        52,
+        32,
+        170
+      ],
+      "observed": [
+        [
+          51.99999809265137,
+          32.00000524520874,
+          170.00000476837158
+        ],
+        [
+          51.99999809265137,
+          32.00000524520874,
+          170.00925220781937
+        ],
+        [
+          51.99999809265137,
+          32.00000524520874,
+          170.00000476837158
+        ],
+        [
+          51.99999809265137,
+          32.00000524520874,
+          170.00000476837158
+        ]
+      ],
+      "note": ""
+    },
+    {
+      "id": "G32_IMPORTED_FBX_COLLISION",
+      "pass": true,
+      "expected": "3 proxies in base FBX only",
+      "observed": [
+        3,
+        0,
+        0,
+        0
+      ],
+      "note": ""
+    },
+    {
+      "id": "G33_IMPORTED_GLB",
+      "pass": true,
+      "expected": {
+        "triangles": 9794,
+        "bounds": [
+          52,
+          32,
+          170
+        ]
+      },
+      "observed": {
+        "triangles": 9794,
+        "bounds": [
+          51.99999809265137,
+          31.999999284744263,
+          170.00000476837158
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "G34_FINAL_MATCHED_RENDER",
+      "pass": true,
+      "expected": {
+        "resolution": [
+          1600,
+          2200
+        ],
+        "source_blend_sha256": "5df6ee1506c53d10dd2d24be7c0c57c7337e71acaf14cfbae63c500d731399cf"
+      },
+      "observed": {
+        "resolution": [
+          1600,
+          2200
+        ],
+        "source_blend_sha256": "5df6ee1506c53d10dd2d24be7c0c57c7337e71acaf14cfbae63c500d731399cf"
+      },
+      "note": ""
+    },
+    {
+      "id": "G35_ORTHOGRAPHIC_PROOFS",
+      "pass": true,
+      "expected": {
+        "views": "six fixed-object 1536px",
+        "source_blend_sha256": "5df6ee1506c53d10dd2d24be7c0c57c7337e71acaf14cfbae63c500d731399cf"
+      },
+      "observed": {
+        "views": {
+          "front.png": [
+            1536,
+            1536
+          ],
+          "back.png": [
+            1536,
+            1536
+          ],
+          "left.png": [
+            1536,
+            1536
+          ],
+          "right.png": [
+            1536,
+            1536
+          ],
+          "top.png": [
+            1536,
+            1536
+          ],
+          "bottom.png": [
+            1536,
+            1536
+          ]
+        },
+        "source_blend_sha256": "5df6ee1506c53d10dd2d24be7c0c57c7337e71acaf14cfbae63c500d731399cf"
+      },
+      "note": ""
+    },
+    {
+      "id": "G36_STATUS_BOUNDARY",
+      "pass": true,
+      "expected": {
+        "artifact_status": "candidate",
+        "unreal": false,
+        "fully_game_ready": false
+      },
+      "observed": {
+        "artifact_status": "candidate",
+        "unreal_import_authorized": false,
+        "fully_game_ready": false
+      },
+      "note": ""
+    }
+  ],
+  "fbx_import_audits": [
+    {
+      "path": "SourceAssets/Exports/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/SM_DRW_SiegeBreaker_Hammer_A01.fbx",
+      "asset_mesh_count": 1,
+      "collision_mesh_count": 3,
+      "bounds_cm": {
+        "minimum": [
+          -25.999999046325684,
+          -16.00000262260437,
+          0.0
+        ],
+        "maximum": [
+          25.999999046325684,
+          16.00000262260437,
+          170.00000476837158
+        ],
+        "extent": [
+          51.99999809265137,
+          32.00000524520874,
+          170.00000476837158
+        ]
+      },
+      "triangles": 9794
+    },
+    {
+      "path": "SourceAssets/Exports/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/SM_DRW_SiegeBreaker_Hammer_A01_LOD1.fbx",
+      "asset_mesh_count": 1,
+      "collision_mesh_count": 0,
+      "bounds_cm": {
+        "minimum": [
+          -25.999999046325684,
+          -16.00000262260437,
+          -0.009235518518835306
+        ],
+        "maximum": [
+          25.999999046325684,
+          16.00000262260437,
+          170.00001668930054
+        ],
+        "extent": [
+          51.99999809265137,
+          32.00000524520874,
+          170.00925220781937
+        ]
+      },
+      "triangles": 6228
+    },
+    {
+      "path": "SourceAssets/Exports/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/SM_DRW_SiegeBreaker_Hammer_A01_LOD2.fbx",
+      "asset_mesh_count": 1,
+      "collision_mesh_count": 0,
+      "bounds_cm": {
+        "minimum": [
+          -25.999999046325684,
+          -16.00000262260437,
+          0.0
+        ],
+        "maximum": [
+          25.999999046325684,
+          16.00000262260437,
+          170.00000476837158
+        ],
+        "extent": [
+          51.99999809265137,
+          32.00000524520874,
+          170.00000476837158
+        ]
+      },
+      "triangles": 4264
+    },
+    {
+      "path": "SourceAssets/Exports/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/SM_DRW_SiegeBreaker_Hammer_A01_LOD3.fbx",
+      "asset_mesh_count": 1,
+      "collision_mesh_count": 0,
+      "bounds_cm": {
+        "minimum": [
+          -25.999999046325684,
+          -16.00000262260437,
+          0.0
+        ],
+        "maximum": [
+          25.999999046325684,
+          16.00000262260437,
+          170.00000476837158
+        ],
+        "extent": [
+          51.99999809265137,
+          32.00000524520874,
+          170.00000476837158
+        ]
+      },
+      "triangles": 1839
+    }
+  ],
+  "glb_import_audit": {
+    "path": "SourceAssets/Exports/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/SM_DRW_SiegeBreaker_Hammer_A01.glb",
+    "mesh_count": 1,
+    "bounds_cm": {
+      "minimum": [
+        -25.999999046325684,
+        -15.999999642372131,
+        0.0
+      ],
+      "maximum": [
+        25.999999046325684,
+        15.999999642372131,
+        170.00000476837158
+      ],
+      "extent": [
+        51.99999809265137,
+        31.999999284744263,
+        170.00000476837158
+      ]
+    },
+    "triangles": 9794
+  },
+  "source_blend": {
+    "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/SM_DRW_SiegeBreaker_Hammer_A01_DCCGameReady_PixelReconstruction_A03.blend",
+    "sha256": "5df6ee1506c53d10dd2d24be7c0c57c7337e71acaf14cfbae63c500d731399cf"
+  },
+  "dcc_manifest": {
+    "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/SM_DRW_SiegeBreaker_Hammer_A01_PIXELRECONSTRUCTION_A03_MANIFEST.json",
+    "sha256": "6829f3e0eae1af0ab4f438a466a4e703c380aeeb577712fd6453891174edfaf5"
+  },
+  "pixel_comparison": {
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/manifests/VISUAL_FIDELITY_A03_PIXEL_COMPARISON.json",
+    "sha256": "beb3646c23e1071b113b2c77d3b30328a718ffeeda3158d00b138efe4fca9608"
+  },
+  "final_visual_approval": "pending Flamestrike",
+  "unreal_authorized": false
+}

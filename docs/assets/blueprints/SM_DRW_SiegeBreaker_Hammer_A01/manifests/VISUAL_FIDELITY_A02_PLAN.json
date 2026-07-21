@@ -1,0 +1,45 @@
+{
+  "schema": "aerathea.visual_fidelity_correction_plan.v1",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "contract_id": "SB-VF-A02",
+  "artifact_status": "authoritative",
+  "date": "2026-07-21",
+  "authority": {
+    "approval": "Flamestrike: you have full authority and approval to create this asset at the required fidelity",
+    "numeric": [
+      "asset_spec.json",
+      "dimensions_cm.csv"
+    ],
+    "style": [
+      "VC-DRW-SiegeBreaker-Hammer-A01",
+      "reference/concept_sheet_style_reference.png"
+    ]
+  },
+  "input_candidate": {
+    "revision": "FinalPackage_A01",
+    "artifact_status": "candidate",
+    "technical_result": "32/32 pass",
+    "visual_acceptance": false,
+    "preservation": "retain unchanged as prior candidate and proof"
+  },
+  "required_feature_groups": [
+    "dark_irregular_faceted_runestone_head",
+    "layered_dwarven_head_bracing",
+    "restrained_recessed_blue_runes",
+    "crisscross_leather_grip",
+    "engraved_inlaid_shaft",
+    "layered_focal_pommel"
+  ],
+  "numeric_envelope_cm": {
+    "overall": [52, 32, 170],
+    "head_min": [-26, -16, 132],
+    "head_max": [26, 16, 170],
+    "shaft_z": [14, 132],
+    "grip_z": [18, 60],
+    "pommel_z": [0, 18],
+    "shaft_pommel_overlap": 4
+  },
+  "output_revision": "VisualFidelity_A02",
+  "unreal_authorized": false,
+  "fully_game_ready": false
+}

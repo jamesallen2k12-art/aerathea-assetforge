@@ -1,0 +1,462 @@
+{
+  "schema": "aerathea.dcc_game_ready_candidate.v3",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "revision": "PixelReconstruction_A03",
+  "contract_id": "SB-VF-A03-PIXEL",
+  "artifact_status": "candidate",
+  "pipeline_status": "DCC source candidate pending matched-view visual audit",
+  "authority": {
+    "numeric": [
+      "asset_spec.json",
+      "dimensions_cm.csv"
+    ],
+    "primary_projected_visual": "large 3/4 concept render under SOURCE_AUTHORITY_A03_PIXEL_OVERRIDE.json",
+    "secondary": "normalized structure only under VISUAL_FIDELITY_A03_CROSS_VIEW_CONFLICT_AUDIT.json",
+    "measurement_sha256": "18f019bce9225f3440496b4258a7016c80484a6daf7f5fcf25a21dc843b7af37",
+    "conflict_audit_sha256": "f44ffab4a7e06c0e32892b693207f70e0f25c45992458fa4e136497dcd4d4645",
+    "a01_a02_geometry_used": false
+  },
+  "coordinate_frame": {
+    "x": "head width, right positive",
+    "y": "head depth, back positive",
+    "z": "overall length, up positive",
+    "origin": "bottom center of pommel at Z=0"
+  },
+  "world_bounds_cm": {
+    "minimum": [
+      -25.999999046325684,
+      -15.999999642372131,
+      0.0
+    ],
+    "maximum": [
+      25.999999046325684,
+      15.999999642372131,
+      170.00000476837158
+    ],
+    "extent": [
+      51.99999809265137,
+      31.999999284744263,
+      170.00000476837158
+    ]
+  },
+  "source_component_count": 224,
+  "source_triangles": 14264,
+  "lods": [
+    {
+      "level": 0,
+      "object": "SM_DRW_SiegeBreaker_Hammer_A01_LOD0",
+      "triangles": 9794,
+      "ratio_to_lod0": 1.0,
+      "bounds_cm": {
+        "minimum": [
+          -25.999999046325684,
+          -15.999999642372131,
+          0.0
+        ],
+        "maximum": [
+          25.999999046325684,
+          15.999999642372131,
+          170.00000476837158
+        ],
+        "extent": [
+          51.99999809265137,
+          31.999999284744263,
+          170.00000476837158
+        ]
+      },
+      "uv_layers": [
+        "UVMap"
+      ],
+      "material_slots": [
+        "M_Stone",
+        "M_Bronze",
+        "M_Steel",
+        "M_Leather",
+        "M_Rune_Emissive"
+      ]
+    },
+    {
+      "level": 1,
+      "object": "SM_DRW_SiegeBreaker_Hammer_A01_LOD1",
+      "triangles": 6228,
+      "ratio_to_lod0": 0.6359,
+      "bounds_cm": {
+        "minimum": [
+          -25.999999046325684,
+          -15.999999642372131,
+          -0.009235518518835306
+        ],
+        "maximum": [
+          25.999999046325684,
+          15.999999642372131,
+          170.00001668930054
+        ],
+        "extent": [
+          51.99999809265137,
+          31.999999284744263,
+          170.00925220781937
+        ]
+      },
+      "uv_layers": [
+        "UVMap"
+      ],
+      "material_slots": [
+        "M_Stone",
+        "M_Bronze",
+        "M_Steel",
+        "M_Leather",
+        "M_Rune_Emissive"
+      ]
+    },
+    {
+      "level": 2,
+      "object": "SM_DRW_SiegeBreaker_Hammer_A01_LOD2",
+      "triangles": 4264,
+      "ratio_to_lod0": 0.435369,
+      "bounds_cm": {
+        "minimum": [
+          -25.999999046325684,
+          -15.999999642372131,
+          0.0
+        ],
+        "maximum": [
+          25.999999046325684,
+          15.999999642372131,
+          170.00000476837158
+        ],
+        "extent": [
+          51.99999809265137,
+          31.999999284744263,
+          170.00000476837158
+        ]
+      },
+      "uv_layers": [
+        "UVMap"
+      ],
+      "material_slots": [
+        "M_Stone",
+        "M_Bronze",
+        "M_Steel",
+        "M_Leather",
+        "M_Rune_Emissive"
+      ]
+    },
+    {
+      "level": 3,
+      "object": "SM_DRW_SiegeBreaker_Hammer_A01_LOD3",
+      "triangles": 1839,
+      "ratio_to_lod0": 0.187768,
+      "bounds_cm": {
+        "minimum": [
+          -25.999999046325684,
+          -15.999999642372131,
+          0.0
+        ],
+        "maximum": [
+          25.999999046325684,
+          15.999999642372131,
+          170.00000476837158
+        ],
+        "extent": [
+          51.99999809265137,
+          31.999999284744263,
+          170.00000476837158
+        ]
+      },
+      "uv_layers": [
+        "UVMap"
+      ],
+      "material_slots": [
+        "M_Stone",
+        "M_Bronze",
+        "M_Steel",
+        "M_Leather",
+        "M_Rune_Emissive"
+      ]
+    }
+  ],
+  "materials": [
+    "M_Stone",
+    "M_Bronze",
+    "M_Steel",
+    "M_Leather",
+    "M_Rune_Emissive"
+  ],
+  "textures": [
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/T_DRW_SiegeBreaker_Hammer_A01_Bronze_BC.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/T_DRW_SiegeBreaker_Hammer_A01_Bronze_E.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/T_DRW_SiegeBreaker_Hammer_A01_Bronze_N.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/T_DRW_SiegeBreaker_Hammer_A01_Bronze_ORM.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/T_DRW_SiegeBreaker_Hammer_A01_Leather_BC.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/T_DRW_SiegeBreaker_Hammer_A01_Leather_E.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/T_DRW_SiegeBreaker_Hammer_A01_Leather_N.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/T_DRW_SiegeBreaker_Hammer_A01_Leather_ORM.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/T_DRW_SiegeBreaker_Hammer_A01_Rune_BC.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/T_DRW_SiegeBreaker_Hammer_A01_Rune_E.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/T_DRW_SiegeBreaker_Hammer_A01_Rune_N.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/T_DRW_SiegeBreaker_Hammer_A01_Rune_ORM.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/T_DRW_SiegeBreaker_Hammer_A01_Steel_BC.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/T_DRW_SiegeBreaker_Hammer_A01_Steel_E.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/T_DRW_SiegeBreaker_Hammer_A01_Steel_N.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/T_DRW_SiegeBreaker_Hammer_A01_Steel_ORM.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/T_DRW_SiegeBreaker_Hammer_A01_Stone_BC.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/T_DRW_SiegeBreaker_Hammer_A01_Stone_E.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/T_DRW_SiegeBreaker_Hammer_A01_Stone_N.png",
+    "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/T_DRW_SiegeBreaker_Hammer_A01_Stone_ORM.png"
+  ],
+  "required_feature_groups": {
+    "faceted_runestone_masses": [
+      "Head_Stone_Left_A03",
+      "Head_Stone_Right_A03"
+    ],
+    "stone_crack_and_rail_system": [
+      "StoneCrack_Left_Back_00",
+      "StoneCrack_Left_Back_01",
+      "StoneCrack_Left_Back_02",
+      "StoneCrack_Left_Back_03",
+      "StoneCrack_Left_Back_04",
+      "StoneCrack_Left_Back_05",
+      "StoneCrack_Left_Front_00",
+      "StoneCrack_Left_Front_01",
+      "StoneCrack_Left_Front_02",
+      "StoneCrack_Left_Front_03",
+      "StoneCrack_Left_Front_04",
+      "StoneCrack_Left_Front_05",
+      "StoneCrack_Right_Back_00",
+      "StoneCrack_Right_Back_01",
+      "StoneCrack_Right_Back_02",
+      "StoneCrack_Right_Back_03",
+      "StoneCrack_Right_Back_04",
+      "StoneCrack_Right_Back_05",
+      "StoneCrack_Right_Front_00",
+      "StoneCrack_Right_Front_01",
+      "StoneCrack_Right_Front_02",
+      "StoneCrack_Right_Front_03",
+      "StoneCrack_Right_Front_04",
+      "StoneCrack_Right_Front_05",
+      "StoneRail_Bronze_Left",
+      "StoneRail_Bronze_Right",
+      "StoneRail_Rune_Left_Back_00",
+      "StoneRail_Rune_Left_Back_01",
+      "StoneRail_Rune_Left_Back_02",
+      "StoneRail_Rune_Left_Back_03",
+      "StoneRail_Rune_Left_Back_04",
+      "StoneRail_Rune_Left_Front_00",
+      "StoneRail_Rune_Left_Front_01",
+      "StoneRail_Rune_Left_Front_02",
+      "StoneRail_Rune_Left_Front_03",
+      "StoneRail_Rune_Left_Front_04",
+      "StoneRail_Rune_Right_Back_00",
+      "StoneRail_Rune_Right_Back_01",
+      "StoneRail_Rune_Right_Back_02",
+      "StoneRail_Rune_Right_Back_03",
+      "StoneRail_Rune_Right_Back_04",
+      "StoneRail_Rune_Right_Front_00",
+      "StoneRail_Rune_Right_Front_01",
+      "StoneRail_Rune_Right_Front_02",
+      "StoneRail_Rune_Right_Front_03",
+      "StoneRail_Rune_Right_Front_04",
+      "StoneRail_Steel_Left",
+      "StoneRail_Steel_Right",
+      "StoneStrikeCrack_Left_00",
+      "StoneStrikeCrack_Left_01",
+      "StoneStrikeCrack_Left_02",
+      "StoneStrikeCrack_Left_03",
+      "StoneStrikeCrack_Left_04",
+      "StoneStrikeCrack_Left_05",
+      "StoneStrikeCrack_Left_06",
+      "StoneStrikeCrack_Left_07",
+      "StoneStrikeCrack_Right_00",
+      "StoneStrikeCrack_Right_01",
+      "StoneStrikeCrack_Right_02",
+      "StoneStrikeCrack_Right_03",
+      "StoneStrikeCrack_Right_04",
+      "StoneStrikeCrack_Right_05",
+      "StoneStrikeCrack_Right_06",
+      "StoneStrikeCrack_Right_07",
+      "StoneStrikeFrame_Bronze_Left_00",
+      "StoneStrikeFrame_Bronze_Left_01",
+      "StoneStrikeFrame_Bronze_Left_02",
+      "StoneStrikeFrame_Bronze_Left_03",
+      "StoneStrikeFrame_Bronze_Right_00",
+      "StoneStrikeFrame_Bronze_Right_01",
+      "StoneStrikeFrame_Bronze_Right_02",
+      "StoneStrikeFrame_Bronze_Right_03",
+      "StoneStrikePlate_Left",
+      "StoneStrikePlate_Right",
+      "StoneStrikeRune_Left",
+      "StoneStrikeRune_Right"
+    ],
+    "layered_architectural_core": [
+      "CoreArchitecturalBrace_Back_00",
+      "CoreArchitecturalBrace_Back_01",
+      "CoreArchitecturalBrace_Back_02",
+      "CoreArchitecturalBrace_Back_03",
+      "CoreArchitecturalBrace_Back_04",
+      "CoreArchitecturalBrace_Back_05",
+      "CoreArchitecturalBrace_Back_06",
+      "CoreArchitecturalBrace_Back_07",
+      "CoreArchitecturalBrace_Front_00",
+      "CoreArchitecturalBrace_Front_01",
+      "CoreArchitecturalBrace_Front_02",
+      "CoreArchitecturalBrace_Front_03",
+      "CoreArchitecturalBrace_Front_04",
+      "CoreArchitecturalBrace_Front_05",
+      "CoreArchitecturalBrace_Front_06",
+      "CoreArchitecturalBrace_Front_07",
+      "CoreShield_Backplate_Back",
+      "CoreShield_Backplate_Front",
+      "CoreShield_InnerPlate_Back",
+      "CoreShield_InnerPlate_Front",
+      "CoreShield_InnerSteel_Back_00",
+      "CoreShield_InnerSteel_Back_01",
+      "CoreShield_InnerSteel_Back_02",
+      "CoreShield_InnerSteel_Back_03",
+      "CoreShield_InnerSteel_Front_00",
+      "CoreShield_InnerSteel_Front_01",
+      "CoreShield_InnerSteel_Front_02",
+      "CoreShield_InnerSteel_Front_03",
+      "CoreShield_OuterBronze_Back_00",
+      "CoreShield_OuterBronze_Back_01",
+      "CoreShield_OuterBronze_Back_02",
+      "CoreShield_OuterBronze_Back_03",
+      "CoreShield_OuterBronze_Front_00",
+      "CoreShield_OuterBronze_Front_01",
+      "CoreShield_OuterBronze_Front_02",
+      "CoreShield_OuterBronze_Front_03",
+      "Head_AxleHub_+10.6",
+      "Head_AxleHub_-10.6",
+      "Head_Axle_Bronze_143",
+      "Head_Axle_Bronze_159",
+      "Head_Axle_Steel_143",
+      "Head_Axle_Steel_159"
+    ],
+    "engraved_shaft": [
+      "Shaft_EngravedBand_114",
+      "Shaft_EngravedBand_128",
+      "Shaft_EngravedBand_62",
+      "Shaft_EngravedBand_78",
+      "Shaft_EngravedBand_96",
+      "Shaft_EngravedRail_L_Back",
+      "Shaft_EngravedRail_L_Front",
+      "Shaft_EngravedRail_R_Back",
+      "Shaft_EngravedRail_R_Front",
+      "Shaft_EngravedVine_Back_00",
+      "Shaft_EngravedVine_Back_01",
+      "Shaft_EngravedVine_Back_02",
+      "Shaft_EngravedVine_Back_03",
+      "Shaft_EngravedVine_Back_04",
+      "Shaft_EngravedVine_Back_05",
+      "Shaft_EngravedVine_Back_06",
+      "Shaft_EngravedVine_Back_07",
+      "Shaft_EngravedVine_Front_00",
+      "Shaft_EngravedVine_Front_01",
+      "Shaft_EngravedVine_Front_02",
+      "Shaft_EngravedVine_Front_03",
+      "Shaft_EngravedVine_Front_04",
+      "Shaft_EngravedVine_Front_05",
+      "Shaft_EngravedVine_Front_06",
+      "Shaft_EngravedVine_Front_07",
+      "Shaft_Rune_Back_00",
+      "Shaft_Rune_Back_01",
+      "Shaft_Rune_Back_02",
+      "Shaft_Rune_Back_03",
+      "Shaft_Rune_Front_00",
+      "Shaft_Rune_Front_01",
+      "Shaft_Rune_Front_02",
+      "Shaft_Rune_Front_03"
+    ],
+    "dense_crossed_grip": [
+      "Grip_Wrap_Ascending_A03",
+      "Grip_Wrap_Descending_A03"
+    ],
+    "compact_faceted_pommel": [
+      "PommelBand_Lower_A03",
+      "PommelBand_Mid_A03",
+      "PommelBand_Upper_A03",
+      "PommelFrame_Bronze_Back_00",
+      "PommelFrame_Bronze_Back_01",
+      "PommelFrame_Bronze_Back_02",
+      "PommelFrame_Bronze_Back_03",
+      "PommelFrame_Bronze_Front_00",
+      "PommelFrame_Bronze_Front_01",
+      "PommelFrame_Bronze_Front_02",
+      "PommelFrame_Bronze_Front_03",
+      "PommelPlate_Steel_Back",
+      "PommelPlate_Steel_Front",
+      "PommelRune_Focal_Back",
+      "PommelRune_Focal_Front"
+    ]
+  },
+  "collision": [
+    {
+      "object": "UCX_SM_DRW_SiegeBreaker_Hammer_A01_00",
+      "triangles": 12,
+      "role": "custom_convex_proxy"
+    },
+    {
+      "object": "UCX_SM_DRW_SiegeBreaker_Hammer_A01_01",
+      "triangles": 44,
+      "role": "custom_convex_proxy"
+    },
+    {
+      "object": "UCX_SM_DRW_SiegeBreaker_Hammer_A01_02",
+      "triangles": 12,
+      "role": "custom_convex_proxy"
+    }
+  ],
+  "contacts": {
+    "shaft_head": {
+      "shaft_top_z_cm": 132,
+      "head_bottom_z_cm": 132,
+      "status": "pass"
+    },
+    "shaft_pommel": {
+      "overlap_cm": 4,
+      "status": "pass"
+    },
+    "grip": {
+      "interval_z_cm": [
+        18,
+        60
+      ],
+      "length_cm": 42,
+      "status": "pass"
+    }
+  },
+  "outputs": [
+    {
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/SM_DRW_SiegeBreaker_Hammer_A01_DCCGameReady_PixelReconstruction_A03.blend",
+      "sha256": "5df6ee1506c53d10dd2d24be7c0c57c7337e71acaf14cfbae63c500d731399cf",
+      "bytes": 4438891
+    },
+    {
+      "path": "SourceAssets/Exports/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/SM_DRW_SiegeBreaker_Hammer_A01.fbx",
+      "sha256": "3f4016577a73ebd92dbafdc646aa772c97c67d787c5e85356aefae7d858e3676",
+      "bytes": 345724
+    },
+    {
+      "path": "SourceAssets/Exports/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/SM_DRW_SiegeBreaker_Hammer_A01_LOD1.fbx",
+      "sha256": "f2811683b6c7edcec99e5a2f7d6f8439f65a76fc9df07a9211e011bbac1c8fcc",
+      "bytes": 249164
+    },
+    {
+      "path": "SourceAssets/Exports/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/SM_DRW_SiegeBreaker_Hammer_A01_LOD2.fbx",
+      "sha256": "68b86f75d02f807e7605af0e16e1649564e54bda2586546e037d9759f96af853",
+      "bytes": 182204
+    },
+    {
+      "path": "SourceAssets/Exports/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/SM_DRW_SiegeBreaker_Hammer_A01_LOD3.fbx",
+      "sha256": "5e55a69b8d9ea4880f7ecf2fe78eef8717e4581105d81d01967ad67e36ff9418",
+      "bytes": 103436
+    },
+    {
+      "path": "SourceAssets/Exports/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/PixelReconstruction_A03/SM_DRW_SiegeBreaker_Hammer_A01.glb",
+      "sha256": "ef0846b34ee68075bff7017da54671b819f61d4af7295388542fbb61cd7bf9e1",
+      "bytes": 36390056
+    }
+  ],
+  "final_visual_approval": "pending Flamestrike",
+  "unreal_import_authorized": false,
+  "fully_game_ready": false
+}

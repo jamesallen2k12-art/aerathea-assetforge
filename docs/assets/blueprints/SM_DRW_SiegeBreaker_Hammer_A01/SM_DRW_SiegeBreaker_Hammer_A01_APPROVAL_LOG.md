@@ -26,3 +26,46 @@
 - Pending authority: Flamestrike visual approval, rejection, or blocked decision.
 - Unreal authority: `false`.
 - Fully game-ready: `false`.
+
+## Visual Fidelity A02 Execution Authority
+
+- Date: 2026-07-21.
+- Authority statement: "you have full authority and approval to create this
+  asset at the required fidelity."
+- Contract: `SB-VF-A02`.
+- Scope accepted: preserve the A01 candidate; rebuild the missing canon-defining
+  DCC forms and material reads inside the locked numeric envelope; regenerate
+  versioned textures, LODs, collision, exports, renders, manifests, and audit.
+- Excluded: Unreal/Step 17+, `Fully game-ready`, self-approval of final visual
+  quality, and unrelated worktree changes.
+
+## A02 Visual Rejection
+
+- Date: 2026-07-21.
+- Flamestrike decision: the generated asset is technically correct but has no resemblance to the concept art.
+- Result: A01/A02 visual candidates are `quarantined`; their audits remain `proof only`.
+- Recovery observation: the cairnstone pixel-measurement method was useful; its prior failure likely arose from poor starter imagery containing conflicting information rather than from pixel measurement itself.
+- Pending authority question: whether to promote one selected hammer source view to primary projected visual authority, audit all secondary panels for conflicts, and execute a measurement-only source-versus-render gate before any A03 geometry.
+
+## A03 Pixel Reconstruction Authority
+
+- Date: 2026-07-21.
+- Flamestrike authority: full approval to make the required changes, use the pixel-perfect method, and do whatever is needed to create the 3D asset.
+- Contract: `SB-VF-A03-PIXEL`.
+- Source rule: the large 3/4 concept render is primary projected visual authority; secondary panels are usable only where consistent; the exact numeric envelope remains controlling.
+- Scope: measurement, fresh DCC reconstruction, matched-view iteration, UV/PBR package, LODs, collision, exports, audit, and visible DCC review.
+- Excluded: Unreal import, `Fully game-ready`, and Codex self-approval of final visual quality.
+
+## A03 Objective Result
+
+- Date: 2026-07-21.
+- Source measurement: source hash locked; unmodified source pixels; seven panels and four primary component regions recorded.
+- Conflict decision: secondary drawn scales conflict with the declared centimeter dimensions and are blocked as scale authority; normalized structural evidence remains usable.
+- Fresh construction: zero A01/A02 geometry reused; exact `52 x 32 x 170 cm` envelope preserved.
+- Pixel-registered comparison: `pass`, `5/5` gates.
+- Independent technical audit: `pass`, `36/36` gates.
+- LOD triangles: `9794 / 6228 / 4264 / 1839`.
+- Pipeline status: `DCC game-ready candidate pending Flamestrike visual approval`.
+- Pending authority: Flamestrike visual approval, rejection, or blocked decision on the A03 review board.
+- Unreal authority: `false`.
+- Fully game-ready: `false`.

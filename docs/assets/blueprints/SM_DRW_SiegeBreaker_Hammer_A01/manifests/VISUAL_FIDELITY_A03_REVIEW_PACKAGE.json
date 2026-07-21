@@ -1,0 +1,68 @@
+{
+  "schema": "aerathea.siegebreaker.a03_review_package.v1",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "revision": "PixelReconstruction_A03",
+  "contract_id": "SB-VF-A03-PIXEL",
+  "artifact_status": "candidate",
+  "pipeline_status": "DCC game-ready candidate pending Flamestrike visual approval",
+  "review_board": {
+    "path": "Saved/Automation/DCC/SM_DRW_SiegeBreaker_Hammer_A01/VisualFidelity_A03/review/SM_DRW_SiegeBreaker_Hammer_A01_A03_FinalDCCReviewBoard.png",
+    "sha256": "c109f986ee027996792505c5a8517e7efaee5925ae83bd1cf1c194725c41adf4"
+  },
+  "proofs": [
+    {
+      "path": "Saved/Automation/DCC/SM_DRW_SiegeBreaker_Hammer_A01/VisualFidelity_A03/matched_source_view/SM_DRW_SiegeBreaker_Hammer_A01_A03_SourceMatched_Final.png",
+      "sha256": "023fc8f0bd90ed2091e2b3ceba69f32f3a348c60ec2f3bb7c865d436886498ac"
+    },
+    {
+      "path": "Saved/Automation/DCC/SM_DRW_SiegeBreaker_Hammer_A01/VisualFidelity_A03/orthographic_true/front.png",
+      "sha256": "5d80294b116160a47f16b1eeae9ff3bb0db9021af4859c26024ad3f813bf4303"
+    },
+    {
+      "path": "Saved/Automation/DCC/SM_DRW_SiegeBreaker_Hammer_A01/VisualFidelity_A03/orthographic_true/back.png",
+      "sha256": "73697456dfa404f513f2763c77644eaff843d268f7ef66c6bda46dc23616ef65"
+    },
+    {
+      "path": "Saved/Automation/DCC/SM_DRW_SiegeBreaker_Hammer_A01/VisualFidelity_A03/orthographic_true/left.png",
+      "sha256": "b16d585ab453bcf8d73fc1b79209152abaf88f2924122bd418285a015dfc048b"
+    },
+    {
+      "path": "Saved/Automation/DCC/SM_DRW_SiegeBreaker_Hammer_A01/VisualFidelity_A03/orthographic_true/right.png",
+      "sha256": "b4db9153acf53d9f04d4343829baebfc2f8f3080066d29f1ae02d27c816edf83"
+    },
+    {
+      "path": "Saved/Automation/DCC/SM_DRW_SiegeBreaker_Hammer_A01/VisualFidelity_A03/orthographic_true/top.png",
+      "sha256": "6eeeef43299d4e19231a0e2c7b890c874514511f7334cbf7a720b86d9f20034a"
+    },
+    {
+      "path": "Saved/Automation/DCC/SM_DRW_SiegeBreaker_Hammer_A01/VisualFidelity_A03/orthographic_true/bottom.png",
+      "sha256": "c0ca4b7bf9c76f890d06e642e4fcac6ee02a61cd29252892600f749adb2645a2"
+    },
+    {
+      "path": "Saved/Automation/DCC/SM_DRW_SiegeBreaker_Hammer_A01/VisualFidelity_A03/comparison/SM_DRW_SiegeBreaker_Hammer_A01_A03_PixelRegisteredComparisonBoard.png",
+      "sha256": "96be83f32f424fb28c974511c33bcb8464262f3cedb75f0df4318e6985408736"
+    }
+  ],
+  "pixel_comparison": {
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/manifests/VISUAL_FIDELITY_A03_PIXEL_COMPARISON.json",
+    "sha256": "beb3646c23e1071b113b2c77d3b30328a718ffeeda3158d00b138efe4fca9608",
+    "result": "pass",
+    "gates": {
+      "passed": 5,
+      "total": 5
+    }
+  },
+  "technical_audit": {
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/manifests/VISUAL_FIDELITY_A03_TECHNICAL_AUDIT.json",
+    "sha256": "8e6acc2acd96c606173ae7c18a2f241860b52ae5f8c5907648e65faebf40ba3b",
+    "result": "pass",
+    "gates": {
+      "passed": 36,
+      "total": 36,
+      "failures": 0
+    }
+  },
+  "final_visual_approval": "pending Flamestrike",
+  "unreal_authorized": false,
+  "fully_game_ready": false
+}

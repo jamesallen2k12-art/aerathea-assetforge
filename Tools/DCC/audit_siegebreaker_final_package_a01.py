@@ -6,23 +6,48 @@ import csv
 import hashlib
 import json
 import math
+import os
+import struct
 from pathlib import Path
 
 import bpy
 from mathutils import Vector
-from PIL import Image
 
 
 ROOT = Path(__file__).resolve().parents[2]
 ASSET_ID = "SM_DRW_SiegeBreaker_Hammer_A01"
+REVISION = os.environ.get("AET_SB_REVISION", "FinalPackage_A01")
+CONTRACT_ID = os.environ.get("AET_SB_CONTRACT_ID", "SB-CR-STEPS01-16-FINALPKG-A01")
 PACKAGE_ZIP = Path("/home/james/Downloads/SiegeBreaker_Codex_Final_Package.zip")
 PACKAGE_ROOT = ROOT / "SourceAssets/Reference/Weapons/Dwarven" / ASSET_ID / "02_SiegeBreaker_Codex_Final_Package"
 SOURCE_ROOT = ROOT / "SourceAssets/Blender/Weapons/Dwarven" / ASSET_ID
-EXPORT_ROOT = ROOT / "SourceAssets/Exports/Weapons/Dwarven" / ASSET_ID
-TEXTURE_ROOT = ROOT / "SourceAssets/Textures/Weapons/Dwarven" / ASSET_ID
+EXPORT_ROOT = Path(os.environ.get("AET_SB_EXPORT_ROOT", str(ROOT / "SourceAssets/Exports/Weapons/Dwarven" / ASSET_ID)))
+TEXTURE_ROOT = Path(os.environ.get("AET_SB_TEXTURE_ROOT", str(ROOT / "SourceAssets/Textures/Weapons/Dwarven" / ASSET_ID)))
 BLUEPRINT_ROOT = ROOT / "docs/assets/blueprints" / ASSET_ID
-BLEND_PATH = SOURCE_ROOT / f"{ASSET_ID}_DCCGameReady_FinalPackage_A01.blend"
-MANIFEST_PATH = SOURCE_ROOT / f"{ASSET_ID}_DCC_GAME_READY_MANIFEST.json"
+BLEND_PATH = Path(
+    os.environ.get(
+        "AET_SB_BLEND_PATH",
+        str(SOURCE_ROOT / f"{ASSET_ID}_DCCGameReady_FinalPackage_A01.blend"),
+    )
+)
+MANIFEST_PATH = Path(
+    os.environ.get(
+        "AET_SB_MANIFEST_PATH",
+        str(SOURCE_ROOT / f"{ASSET_ID}_DCC_GAME_READY_MANIFEST.json"),
+    )
+)
+VALIDATION_PATH = Path(
+    os.environ.get(
+        "AET_SB_VALIDATION_PATH",
+        str(BLUEPRINT_ROOT / "manifests/STEPS_01_16_VALIDATION.json"),
+    )
+)
+REVIEW_PATH = Path(
+    os.environ.get(
+        "AET_SB_AUDIT_REVIEW_PATH",
+        str(BLUEPRINT_ROOT / "review/STEP_16_TECHNICAL_AUDIT.md"),
+    )
+)
 MATERIAL_ORDER = ["M_Stone", "M_Bronze", "M_Steel", "M_Leather", "M_Rune_Emissive"]
 TOLERANCE_CM = 0.001
 
@@ -33,6 +58,14 @@ def sha256(path: Path) -> str:
         for chunk in iter(lambda: handle.read(1024 * 1024), b""):
             digest.update(chunk)
     return digest.hexdigest()
+
+
+def png_size(path: Path):
+    with path.open("rb") as handle:
+        header = handle.read(24)
+    if len(header) != 24 or header[:8] != b"\x89PNG\r\n\x1a\n" or header[12:16] != b"IHDR":
+        raise ValueError(f"Not a valid PNG header: {path}")
+    return list(struct.unpack(">II", header[16:24]))
 
 
 def bounds_cm(objects):
@@ -142,6 +175,12 @@ def main() -> int:
     bpy.ops.wm.open_mainfile(filepath=str(BLEND_PATH))
     asset_collection = bpy.data.collections.get("SB_ASSET")
     source_objects = [obj for obj in asset_collection.all_objects if obj.type == "MESH"]
+    source_object_names = {obj.name for obj in source_objects}
+    source_wrap_directions = {
+        obj.name: obj.get("Aerathea.WrapDirection", "")
+        for obj in source_objects
+        if obj.name.startswith("Grip_Wrap_")
+    }
     source_min, source_max, source_extent = bounds_cm(source_objects)
     check("G05_OVERALL_MIN", close_vector(source_min, (-26, -16, 0)), [-26, -16, 0], source_min)
     check("G06_OVERALL_MAX", close_vector(source_max, (26, 16, 170)), [26, 16, 170], source_max)
@@ -149,7 +188,8 @@ def main() -> int:
 
     head_prefixes = (
         "Head_", "StonePlate_", "Rune_Left_", "Rune_Right_", "CoreBrace_", "CorePlate_", "CoreRune_",
-        "StoneBand_", "RuneBar_", "Rivet_",
+        "StoneBand_", "RuneBar_", "Rivet_", "StoneFacet_", "StoneClamp_", "StoneRune",
+        "CoreShield_", "RadialBrace_",
     )
     head_objects = [obj for obj in source_objects if obj.name.startswith(head_prefixes)]
     head_min, head_max, head_extent = bounds_cm(head_objects)
@@ -193,10 +233,7 @@ def main() -> int:
 
     texture_manifest = json.loads((TEXTURE_ROOT / f"{ASSET_ID}_TEXTURE_MANIFEST.json").read_text(encoding="utf-8"))
     texture_files = sorted(TEXTURE_ROOT.glob("*.png"))
-    texture_sizes = {}
-    for path in texture_files:
-        with Image.open(path) as image:
-            texture_sizes[path.name] = list(image.size)
+    texture_sizes = {path.name: png_size(path) for path in texture_files}
     check("G24_TEXTURE_PACKAGE", len(texture_files) == 20 and all(size == [2048, 2048] for size in texture_sizes.values()), "20 maps at 2048x2048", texture_sizes)
     manifest_hashes = {Path(item["path"]).name: item["sha256"] for item in texture_manifest["files"]}
     actual_hashes = {path.name: sha256(path) for path in texture_files}
@@ -221,12 +258,36 @@ def main() -> int:
     check("G31_MANIFEST_MATERIALS", manifest_materials == required_materials, sorted(required_materials), sorted(manifest_materials))
     check("G32_STATUS_BOUNDARY", manifest.get("pipeline_status") == "DCC game-ready candidate" and manifest.get("unreal_import_authorized") is False and manifest.get("fully_game_ready") is False, {"pipeline_status": "DCC game-ready candidate", "unreal": False, "fully_game_ready": False}, {key: manifest.get(key) for key in ("pipeline_status", "unreal_import_authorized", "fully_game_ready")})
 
+    if REVISION == "VisualFidelity_A02":
+        object_names = source_object_names
+        stone_facets = sorted(name for name in object_names if name.startswith("StoneFacet_"))
+        head_bracing = sorted(
+            name for name in object_names
+            if name.startswith(("StoneClamp_", "CoreBrace_", "CoreShield_", "RadialBrace_"))
+        )
+        rune_objects = sorted(name for name in object_names if "Rune" in name)
+        wrap_objects = sorted(name for name in object_names if name.startswith("Grip_Wrap_"))
+        wrap_directions = sorted(source_wrap_directions.get(name, "") for name in wrap_objects)
+        shaft_inlays = sorted(
+            name for name in object_names if name.startswith(("Shaft_Inlay", "Shaft_Engraved"))
+        )
+        pommel_layers = sorted(
+            name for name in object_names if name.startswith(("PommelPlate_", "PommelRune_", "PommelBand_"))
+        )
+        check("G33_FACETED_RUNESTONE", len(stone_facets) >= 22, ">=22 authored face/side facets", stone_facets)
+        check("G34_LAYERED_DWARVEN_BRACING", len(head_bracing) >= 20, ">=20 steel/bronze layered bracing parts", head_bracing)
+        check("G35_RESTRAINED_RUNE_SET", 16 <= len(rune_objects) <= 40, "16-40 rune elements", rune_objects)
+        check("G36_CRISSCROSS_LEATHER_GRIP", len(wrap_objects) == 2 and wrap_directions == ["ascending", "descending"], {"count": 2, "directions": ["ascending", "descending"]}, {"objects": wrap_objects, "directions": wrap_directions})
+        check("G37_ENGRAVED_INLAID_SHAFT", len(shaft_inlays) >= 12, ">=12 shaft rail/rune elements", shaft_inlays)
+        check("G38_LAYERED_FOCAL_POMMEL", len(pommel_layers) >= 8, ">=8 pommel plate/rune/band elements", pommel_layers)
+
     passed = sum(1 for item in checks if item["pass"])
     failures = [item for item in checks if not item["pass"]]
     report = {
         "schema": "aerathea.steps_01_16_validation.v1",
         "asset_id": ASSET_ID,
-        "contract_id": "SB-CR-STEPS01-16-FINALPKG-A01",
+        "contract_id": CONTRACT_ID,
+        "revision": REVISION,
         "artifact_status": "proof only",
         "pipeline_status": "DCC game-ready candidate" if not failures else "blocked",
         "result": "pass" if not failures else "fail",
@@ -239,8 +300,8 @@ def main() -> int:
         "final_visual_approval": "pending Flamestrike",
         "unreal_authorized": False,
     }
-    validation_path = BLUEPRINT_ROOT / "manifests/STEPS_01_16_VALIDATION.json"
-    review_path = BLUEPRINT_ROOT / "review/STEP_16_TECHNICAL_AUDIT.md"
+    validation_path = VALIDATION_PATH
+    review_path = REVIEW_PATH
     validation_path.parent.mkdir(parents=True, exist_ok=True)
     review_path.parent.mkdir(parents=True, exist_ok=True)
     validation_path.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")

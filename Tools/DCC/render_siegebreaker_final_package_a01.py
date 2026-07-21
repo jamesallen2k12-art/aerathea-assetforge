@@ -13,14 +13,28 @@ from mathutils import Vector
 
 ROOT = Path(__file__).resolve().parents[2]
 ASSET_ID = "SM_DRW_SiegeBreaker_Hammer_A01"
-BLEND_PATH = ROOT / "SourceAssets/Blender/Weapons/Dwarven" / ASSET_ID / f"{ASSET_ID}_DCCGameReady_FinalPackage_A01.blend"
-OUTPUT_ROOT = ROOT / "Saved/Automation/DCC" / ASSET_ID / "FinalPackage_A01"
+REVISION = os.environ.get("AET_SB_REVISION", "FinalPackage_A01")
+CONTRACT_ID = os.environ.get("AET_SB_CONTRACT_ID", "SB-CR-STEPS01-16-FINALPKG-A01")
+BLEND_PATH = Path(
+    os.environ.get(
+        "AET_SB_BLEND_PATH",
+        str(ROOT / "SourceAssets/Blender/Weapons/Dwarven" / ASSET_ID / f"{ASSET_ID}_DCCGameReady_FinalPackage_A01.blend"),
+    )
+)
+OUTPUT_ROOT = Path(
+    os.environ.get(
+        "AET_SB_OUTPUT_ROOT",
+        str(ROOT / "Saved/Automation/DCC" / ASSET_ID / "FinalPackage_A01"),
+    )
+)
 ORTHO_ROOT = OUTPUT_ROOT / "orthographic_true"
-BEAUTY_PATH = OUTPUT_ROOT / f"{ASSET_ID}_FinalReview.png"
+BEAUTY_PATH = OUTPUT_ROOT / os.environ.get("AET_SB_BEAUTY_NAME", f"{ASSET_ID}_FinalReview.png")
 RESOLUTION = int(os.environ.get("AET_SB_RENDER_RESOLUTION", "2048"))
 RENDER_MODE = os.environ.get("AET_SB_RENDER_MODE", "all").strip().lower()
 SAMPLES = int(os.environ.get("AET_SB_RENDER_SAMPLES", "32"))
 MARGIN = 1.15
+BEAUTY_FOCUS = os.environ.get("AET_SB_BEAUTY_FOCUS", "full").strip().lower()
+LIGHT_TARGET_Z = float(os.environ.get("AET_SB_LIGHT_TARGET_Z", "0.95"))
 
 
 def sha256(path: Path) -> str:
@@ -64,7 +78,7 @@ def ensure_area(name, location, energy, size, color):
     if obj.name not in bpy.context.scene.collection.objects:
         bpy.context.scene.collection.objects.link(obj)
     obj.location = location
-    target = Vector((0.0, 0.0, 0.95))
+    target = Vector((0.0, 0.0, LIGHT_TARGET_Z))
     obj.rotation_euler = (target - obj.location).to_track_quat("-Z", "Y").to_euler()
     return obj
 
@@ -143,9 +157,10 @@ def main() -> int:
     ortho_scale = longest * MARGIN
     distance = longest * 3.2
 
-    ensure_area("SB_Key", Vector((2.6, -3.0, 3.8)), 1150, 3.2, (1.0, 0.78, 0.60))
-    ensure_area("SB_Fill", Vector((-3.0, -1.5, 2.1)), 760, 4.2, (0.43, 0.62, 1.0))
-    ensure_area("SB_Rim", Vector((1.0, 3.2, 3.0)), 980, 3.0, (0.30, 0.55, 1.0))
+    fidelity_a02 = REVISION == "VisualFidelity_A02"
+    ensure_area("SB_Key", Vector((2.6, -3.0, 3.8)), 720 if fidelity_a02 else 1150, 3.2, (1.0, 0.76, 0.55))
+    ensure_area("SB_Fill", Vector((-3.0, -1.5, 2.1)), 380 if fidelity_a02 else 760, 4.2, (0.38, 0.58, 1.0))
+    ensure_area("SB_Rim", Vector((1.0, 3.2, 3.0)), 650 if fidelity_a02 else 980, 3.0, (0.25, 0.52, 1.0))
 
     scene.render.resolution_x = RESOLUTION
     scene.render.resolution_y = RESOLUTION
@@ -161,6 +176,8 @@ def main() -> int:
     manifest = {
         "schema": "aerathea.fixed_object_orthographic_manifest.v1",
         "asset_id": ASSET_ID,
+        "revision": REVISION,
+        "contract_id": CONTRACT_ID,
         "artifact_status": "proof only",
         "source_blend": str(BLEND_PATH.relative_to(ROOT)),
         "source_blend_sha256": sha256(BLEND_PATH),
@@ -194,12 +211,20 @@ def main() -> int:
 
     if RENDER_MODE in {"all", "beauty"}:
         make_ground()
-        configure_world(scene, (0.006, 0.011, 0.020), 0.18)
+        configure_world(scene, (0.006, 0.011, 0.020), 0.09 if fidelity_a02 else 0.18)
         scene.render.resolution_x = 1600 if RESOLUTION == 2048 else RESOLUTION
         scene.render.resolution_y = 2000 if RESOLUTION == 2048 else RESOLUTION
-        beauty_center = Vector((0.0, 0.0, 0.87))
-        beauty = ensure_camera("CAM_SB_BEAUTY", beauty_center, (2.45, -3.75, 1.45), None)
-        beauty.data.lens = 58.0
+        focus_cameras = {
+            "full": (Vector((0.0, 0.0, 0.87)), (2.45, -3.75, 1.45), 58.0),
+            "head": (Vector((0.0, 0.0, 1.51)), (0.72, -1.28, 0.32), 70.0),
+            "grip": (Vector((0.0, 0.0, 0.39)), (0.42, -0.92, 0.24), 72.0),
+            "pommel": (Vector((0.0, 0.0, 0.09)), (0.30, -0.62, 0.16), 72.0),
+        }
+        if BEAUTY_FOCUS not in focus_cameras:
+            raise ValueError(f"Unsupported AET_SB_BEAUTY_FOCUS={BEAUTY_FOCUS!r}")
+        beauty_center, beauty_offset, beauty_lens = focus_cameras[BEAUTY_FOCUS]
+        beauty = ensure_camera(f"CAM_SB_BEAUTY_{BEAUTY_FOCUS.upper()}", beauty_center, beauty_offset, None)
+        beauty.data.lens = beauty_lens
         scene.camera = beauty
         scene.render.filepath = str(BEAUTY_PATH)
         bpy.ops.render.render(write_still=True)
@@ -207,6 +232,8 @@ def main() -> int:
         beauty_manifest = {
             "schema": "aerathea.dcc_review_render.v1",
             "asset_id": ASSET_ID,
+            "revision": REVISION,
+            "contract_id": CONTRACT_ID,
             "artifact_status": "candidate",
             "pipeline_status": "DCC game-ready candidate",
             "source_blend": str(BLEND_PATH.relative_to(ROOT)),
@@ -216,6 +243,7 @@ def main() -> int:
             "resolution_px": [scene.render.resolution_x, scene.render.resolution_y],
             "camera_location": list(beauty.location),
             "camera_lens_mm": beauty.data.lens,
+            "focus": BEAUTY_FOCUS,
             "final_visual_approval": "pending Flamestrike",
         }
         (OUTPUT_ROOT / "beauty_render_manifest.json").write_text(json.dumps(beauty_manifest, indent=2) + "\n", encoding="utf-8")

@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import gc
 import hashlib
 import json
 import math
@@ -132,6 +133,11 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--out-dir", required=True, type=Path)
     parser.add_argument("--manifest", required=True, type=Path)
+    parser.add_argument(
+        "--profile",
+        choices=("final_package_a01", "visual_fidelity_a02", "pixel_reconstruction_a03"),
+        default="final_package_a01",
+    )
     args = parser.parse_args()
     args.out_dir.mkdir(parents=True, exist_ok=True)
     args.manifest.parent.mkdir(parents=True, exist_ok=True)
@@ -143,7 +149,13 @@ def main() -> int:
     stone_noise = layered_noise(rng)
     cracks = crack_mask(rng, 165)
     stone_height = ImageChops.subtract(Image.blend(stone_noise, Image.new("L", stone_noise.size, 120), 0.34), cracks, scale=1.0)
-    stone_color = colorize_noise(stone_noise, (23, 29, 36), (68, 78, 91))
+    stone_palettes = {
+        "final_package_a01": ((23, 29, 36), (68, 78, 91)),
+        "visual_fidelity_a02": ((7, 10, 15), (39, 49, 61)),
+        "pixel_reconstruction_a03": ((4, 7, 11), (48, 59, 72)),
+    }
+    stone_palette = stone_palettes[args.profile]
+    stone_color = colorize_noise(stone_noise, *stone_palette)
     crack_darkener = ImageOps.colorize(ImageOps.invert(cracks), (7, 10, 14), (255, 255, 255))
     stone_color = ImageChops.multiply(stone_color, crack_darkener)
     stone = save_set(
@@ -157,11 +169,19 @@ def main() -> int:
         zero,
         6.0,
     )
+    del stone_noise, cracks, stone_height, stone_color, crack_darkener
+    gc.collect()
 
     bronze_noise = layered_noise(rng)
     bronze_scratches = scratch_mask(rng, 1900, False)
     bronze_height = ImageChops.add(gray_curve(bronze_noise, 30, 150), gray_curve(bronze_scratches, 0, 85), scale=1.0)
-    bronze_color = colorize_noise(bronze_noise, (54, 27, 13), (175, 101, 45))
+    bronze_palettes = {
+        "final_package_a01": ((54, 27, 13), (175, 101, 45)),
+        "visual_fidelity_a02": ((38, 17, 7), (154, 80, 29)),
+        "pixel_reconstruction_a03": ((31, 13, 4), (174, 91, 28)),
+    }
+    bronze_palette = bronze_palettes[args.profile]
+    bronze_color = colorize_noise(bronze_noise, *bronze_palette)
     patina = gray_curve(smooth_noise(rng, 91), 0, 255).point(lambda p: 210 if p > 200 else 0)
     bronze_color = Image.composite(Image.blend(bronze_color, Image.new("RGB", bronze_color.size, (34, 91, 78)), 0.48), bronze_color, patina)
     bronze = save_set(
@@ -175,11 +195,19 @@ def main() -> int:
         zero,
         4.5,
     )
+    del bronze_noise, bronze_scratches, bronze_height, bronze_color, patina
+    gc.collect()
 
     steel_noise = layered_noise(rng)
     steel_scratches = scratch_mask(rng, 2600, True)
     steel_height = ImageChops.add(gray_curve(steel_noise, 22, 110), gray_curve(steel_scratches, 0, 135), scale=1.0)
-    steel_color = colorize_noise(steel_noise, (22, 28, 36), (80, 91, 108))
+    steel_palettes = {
+        "final_package_a01": ((22, 28, 36), (80, 91, 108)),
+        "visual_fidelity_a02": ((9, 14, 21), (54, 65, 80)),
+        "pixel_reconstruction_a03": ((6, 10, 16), (64, 78, 97)),
+    }
+    steel_palette = steel_palettes[args.profile]
+    steel_color = colorize_noise(steel_noise, *steel_palette)
     steel_color = ImageChops.add(steel_color, Image.merge("RGB", (steel_scratches,) * 3), scale=1.25)
     steel = save_set(
         args.out_dir,
@@ -192,6 +220,8 @@ def main() -> int:
         zero,
         5.0,
     )
+    del steel_noise, steel_scratches, steel_height, steel_color
+    gc.collect()
 
     leather_noise = layered_noise(rng)
     weave = Image.new("L", (SIZE, SIZE), 35)
@@ -202,7 +232,13 @@ def main() -> int:
         weave_draw.line((offset, SIZE, offset + SIZE, 0), fill=168, width=10)
     weave = weave.filter(ImageFilter.GaussianBlur(1.1))
     leather_height = Image.blend(leather_noise, weave, 0.68)
-    leather_color = colorize_noise(Image.blend(leather_noise, weave, 0.36), (40, 15, 9), (111, 54, 27))
+    leather_palettes = {
+        "final_package_a01": ((40, 15, 9), (111, 54, 27)),
+        "visual_fidelity_a02": ((58, 17, 6), (154, 72, 28)),
+        "pixel_reconstruction_a03": ((29, 7, 3), (107, 43, 16)),
+    }
+    leather_palette = leather_palettes[args.profile]
+    leather_color = colorize_noise(Image.blend(leather_noise, weave, 0.36), *leather_palette)
     leather = save_set(
         args.out_dir,
         "Leather",
@@ -214,9 +250,17 @@ def main() -> int:
         zero,
         5.5,
     )
+    del leather_noise, weave, weave_draw, leather_height, leather_color
+    gc.collect()
 
     rune_noise = layered_noise(rng)
-    rune_color = colorize_noise(rune_noise, (3, 45, 116), (95, 225, 255))
+    rune_palettes = {
+        "final_package_a01": ((3, 45, 116), (95, 225, 255)),
+        "visual_fidelity_a02": ((2, 28, 76), (63, 211, 255)),
+        "pixel_reconstruction_a03": ((0, 22, 69), (78, 226, 255)),
+    }
+    rune_palette = rune_palettes[args.profile]
+    rune_color = colorize_noise(rune_noise, *rune_palette)
     rune_emissive = gray_curve(rune_noise, 190, 255)
     rune = save_set(
         args.out_dir,
@@ -229,6 +273,8 @@ def main() -> int:
         rune_emissive,
         2.5,
     )
+    del rune_noise, rune_color, rune_emissive
+    gc.collect()
 
     sets = {"Stone": stone, "Bronze": bronze, "Steel": steel, "Leather": leather, "Rune": rune}
     output_files = sorted(path for family in sets.values() for path in family.values())
@@ -240,6 +286,7 @@ def main() -> int:
         "interpretation": "deterministic authored PBR surface detail; no geometry or exact source-color authority",
         "resolution_px": [SIZE, SIZE],
         "seed": SEED,
+        "profile": args.profile,
         "workflow": "PBR metallic-roughness; ORM channels R=AO G=Roughness B=Metallic",
         "texture_sets": sets,
         "files": [{"path": path, "sha256": sha256(Path(path))} for path in output_files],

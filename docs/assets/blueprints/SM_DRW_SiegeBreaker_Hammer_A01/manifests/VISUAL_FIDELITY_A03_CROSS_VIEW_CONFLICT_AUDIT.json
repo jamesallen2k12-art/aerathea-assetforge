@@ -1,0 +1,47 @@
+{
+  "schema": "aerathea.siegebreaker.cross_view_conflict_audit.v1",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "contract_id": "SB-VF-A03-PIXEL",
+  "date": "2026-07-21",
+  "status": "authoritative",
+  "measurement_manifest": {
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/manifests/VISUAL_FIDELITY_A03_SOURCE_MEASUREMENTS.json",
+    "sha256": "18f019bce9225f3440496b4258a7016c80484a6daf7f5fcf25a21dc843b7af37",
+    "classification": "authoritative source-pixel evidence with authority limits declared here"
+  },
+  "review_board": {
+    "path": "Saved/Automation/DCC/SM_DRW_SiegeBreaker_Hammer_A01/VisualFidelity_A03/measurement/SM_DRW_SiegeBreaker_Hammer_A01_A03_SourcePixelMeasurementBoard.png",
+    "sha256": "e3aea94241630eddd5d079bd4b5490627c4b4b4e24e9c5559be514f327862cda",
+    "visual_audit": "pass; object boundaries are captured and annotations remain outside the selected connected footprints"
+  },
+  "declared_numeric_ratios": {
+    "head_width_over_overall_length": 0.30588235,
+    "head_depth_over_overall_length": 0.18823529
+  },
+  "observed_panel_ratios": {
+    "front_width_over_height": {"value": 0.399516, "deviation_from_declared_percent": 30.61},
+    "back_width_over_height": {"value": 0.392252, "deviation_from_declared_percent": 28.24},
+    "left_depth_over_height": {"value": 0.280645, "deviation_from_declared_percent": 49.09},
+    "right_depth_over_height": {"value": 0.283871, "deviation_from_declared_percent": 50.81},
+    "top_depth_over_length": {"value": 0.348601, "deviation_from_declared_percent": 85.19},
+    "bottom_depth_over_length": {"value": 0.342784, "deviation_from_declared_percent": 82.10}
+  },
+  "paired_view_consistency": {
+    "front_back_height_px": [413, 413],
+    "front_back_width_px": [165, 162],
+    "left_right_height_px": [310, 310],
+    "left_right_depth_px": [87, 88],
+    "top_bottom_length_px": [393, 388],
+    "top_bottom_depth_px": [137, 133],
+    "decision": "paired panels are usable for normalized structural organization and visible feature correspondence"
+  },
+  "authority_decision": {
+    "primary_3_4": "authoritative projected visual identity, silhouette hierarchy, landmark organization, and rendered-reference palette",
+    "secondary_panels": "authoritative source evidence for normalized structure and visible feature correspondence only",
+    "secondary_drawn_scale": "blocked because it conflicts with the declared exact centimeter envelope",
+    "numeric_envelope": "authoritative physical scale: 52 x 32 x 170 cm",
+    "camera_projection": "must reconcile primary projected proportions without deforming the physical envelope",
+    "hidden_surfaces": "bounded documented interpretation"
+  },
+  "result": "pass_with_declared_cross_view_scale_conflict"
+}

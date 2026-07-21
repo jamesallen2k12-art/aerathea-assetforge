@@ -1,0 +1,119 @@
+{
+  "schema": "aerathea.siegebreaker.pixel_registered_comparison.v1",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "revision": "PixelReconstruction_A03",
+  "contract_id": "SB-VF-A03-PIXEL",
+  "artifact_status": "proof only",
+  "result": "pass",
+  "summary": {
+    "passed": 5,
+    "total": 5
+  },
+  "source": {
+    "path": "SourceAssets/Reference/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/02_SiegeBreaker_Codex_Final_Package/reference/concept_sheet_style_reference.png",
+    "sha256": "3308a7bd0f0830c9cd1b695b57077d9faf77a839bb3e70edc6afe87c68af8b74",
+    "bounds_sheet_px_inclusive": [
+      56,
+      104,
+      378,
+      965
+    ]
+  },
+  "render": {
+    "path": "Saved/Automation/DCC/SM_DRW_SiegeBreaker_Hammer_A01/VisualFidelity_A03/matched_source_view/SM_DRW_SiegeBreaker_Hammer_A01_A03_SourceMatched_Preview.png",
+    "sha256": "063fa902462b67ef1b7433ff09a1b43af69bdbd966a1e9f6a343555f07757051"
+  },
+  "registration": {
+    "original_alpha_bounds_px_inclusive": [
+      301,
+      3,
+      875,
+      1496
+    ],
+    "original_alpha_span_px": [
+      575,
+      1494
+    ],
+    "uniform_scale_to_source_height": 0.5769745649263721,
+    "registered_width_px": 332,
+    "horizontal_offset_px": -5
+  },
+  "metrics": {
+    "source_object_size_px": [
+      323,
+      862
+    ],
+    "render_alpha_span_px": [
+      575,
+      1494
+    ],
+    "source_aspect": 0.37470998,
+    "render_aspect": 0.38487282,
+    "aspect_error_percent": 2.712,
+    "silhouette_iou_after_height_registration": 0.66951,
+    "mean_row_boundary_error_px": 24.104,
+    "mean_row_boundary_error_over_source_width": 0.074625,
+    "source_cyan_centroid_px": [
+      162.981,
+      210.215
+    ],
+    "render_cyan_centroid_px": [
+      170.665,
+      239.224
+    ],
+    "cyan_centroid_distance_px": 30.01,
+    "cyan_centroid_distance_over_source_height": 0.034814,
+    "source_cyan_pixels": 4280,
+    "render_cyan_pixels": 3902,
+    "source_mean_rendered_rgb": [
+      62.931,
+      61.357,
+      59.564
+    ],
+    "render_mean_rendered_rgb": [
+      64.681,
+      67.694,
+      71.944
+    ]
+  },
+  "gates": [
+    {
+      "id": "camera_orientation_left_strike_face",
+      "pass": true,
+      "observed": "left strike-face rune is visible as in the primary source"
+    },
+    {
+      "id": "projected_aspect",
+      "pass": true,
+      "expected": "<=4%",
+      "observed": 2.712
+    },
+    {
+      "id": "registered_silhouette_iou",
+      "pass": true,
+      "expected": ">=0.66",
+      "observed": 0.66951
+    },
+    {
+      "id": "row_boundary_error",
+      "pass": true,
+      "expected": "<=0.075 source width",
+      "observed": 0.074625
+    },
+    {
+      "id": "cyan_landmark_distribution",
+      "pass": true,
+      "expected": "<=0.10 source height",
+      "observed": 0.034814
+    }
+  ],
+  "board": {
+    "path": "Saved/Automation/DCC/SM_DRW_SiegeBreaker_Hammer_A01/VisualFidelity_A03/comparison/SM_DRW_SiegeBreaker_Hammer_A01_A03_PixelRegisteredComparisonBoard.png",
+    "sha256": "96be83f32f424fb28c974511c33bcb8464262f3cedb75f0df4318e6985408736"
+  },
+  "interpretation_limits": [
+    "silhouette registration does not prove hidden 3D depth",
+    "rendered RGB comparison does not treat source RGB as raw albedo",
+    "secondary panels remain normalized structural evidence only"
+  ]
+}

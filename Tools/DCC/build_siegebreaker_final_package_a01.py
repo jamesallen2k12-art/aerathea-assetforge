@@ -226,8 +226,12 @@ def finalize_mesh(obj: bpy.types.Object, smooth=False) -> bpy.types.Object:
     if smooth:
         for polygon in obj.data.polygons:
             polygon.use_smooth = True
-        obj.data.use_auto_smooth = True
-        obj.data.auto_smooth_angle = math.radians(42.0)
+        # Blender 4.1+ replaced the legacy mesh auto-smooth properties.  The
+        # polygon smoothing remains authoritative; retain the angle controls
+        # only on Blender versions that still expose them.
+        if hasattr(obj.data, "use_auto_smooth"):
+            obj.data.use_auto_smooth = True
+            obj.data.auto_smooth_angle = math.radians(42.0)
     return obj
 
 
