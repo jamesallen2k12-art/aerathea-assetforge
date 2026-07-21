@@ -1,10 +1,42 @@
 # SM_GIA_BloodAxeCairnstone_A005 Artifact Index
 
-Status: A02 visually rejected and quarantined; A03 Core Recovery active
+Status: A05 DCC game-ready candidate passed 18/18; Flamestrike visual decision pending
 
 Artifact classification: `authoritative`
 
-Updated: 2026-07-20
+Updated: 2026-07-21
+
+## Active A05 Visual Correction Candidate
+
+The bounded A05 correction completed under contract
+`A005-CR-VISUAL-CORRECTION-A05`. It preserves the exact approved A04 plinth,
+replaces the rejected base with measured oval components, and passes `18/18`
+independent gates. The package is a `candidate` with pipeline status `DCC
+game-ready candidate`; visual approval remains pending Flamestrike.
+
+| Artifact | Status | Role |
+|---|---|---|
+| steps/VISUAL_CORRECTION_A05_CONTRACT.md | authoritative execution boundary | Records the exact authorized correction, evidence controls, outputs, gates, and downstream firewall. |
+| steps/VISUAL_CORRECTION_A05_MEASUREMENT_GATE.md | authoritative measurement result | Records the source-measured oval footprint authority and preserved unknowns. |
+| manifests/VISUAL_CORRECTION_A05_MEASUREMENT_AUDIT.json | proof only | Exact measurement evidence, witness pixels, and no-interpretation gate result. |
+| manifests/VISUAL_CORRECTION_A05_PLAN.json | authoritative execution plan | Locks source/A04 authorities, measured footprints, construction interpretation, and A05-only outputs. |
+| Tools/DCC/build_bloodaxe_cairnstone_a005_visual_correction_a05.py | candidate production builder | Builds the exact A04 plinth and new oval base, textures, LODs, collision, Blender package, and FBXs. |
+| Tools/DCC/render_bloodaxe_cairnstone_a005_visual_correction_a05.py | proof-supporting renderer | Produces internal attempts and the single eligible final review image. |
+| Tools/DCC/audit_bloodaxe_cairnstone_a005_visual_correction_a05.py | proof-supporting independent auditor | Verifies 18 authority, geometry, exact-plinth, texture, package, render, and firewall gates. |
+| SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_DCCGameReady_VisualCorrection_A05.blend | candidate | A05 DCC game-ready candidate; SHA-256 `bfb1a771a2234379d71f8905d04084af1434644fbbf572d8cc1ede6b3bf8eb39`. |
+| SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_VISUAL_CORRECTION_A05_MANIFEST.json | candidate sidecar | Exact source, construction, LOD, material, texture, collision, export, and preservation records. |
+| SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/VisualCorrection_A05/ | candidate | Base Color, DirectX Normal, and ORM; source-owned RGB mismatches `0`. |
+| SourceAssets/Exports/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/VisualCorrection_A05/ | candidate | LOD0/collision and LOD1-LOD3 FBXs; clean re-import `4/4`. |
+| manifests/VISUAL_CORRECTION_A05_VALIDATION.json | proof only | Independent `18/18` validation and exact plinth-equivalence record. |
+| steps/VISUAL_CORRECTION_A05_OUTPUT_RECORD.md | authoritative technical result record | Records the candidate result, attempt dispositions, and review stop. |
+| review/VISUAL_CORRECTION_A05_FINAL_REVIEW.md | candidate review boundary | Identifies the exact visible A05 review image and requested decision. |
+| Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A05/ | proof only; local-only | Final image, object pass, fixed-view proofs, render audit, and internal attempts. |
+
+Final image SHA-256:
+`5175ffb7c0c1bd5d66f8b1ede17ebc489ab77ade3c5667ac35c3bc3d101bef56`.
+
+Unreal, Step 17, `Fully game-ready`, approved-library, and visual-canon
+promotion remain zero.
 
 ## Active A03 Core Recovery Boundary
 

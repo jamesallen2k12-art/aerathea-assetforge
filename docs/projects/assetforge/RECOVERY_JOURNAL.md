@@ -6521,3 +6521,123 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260721-065312/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260721-065312/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 07:01:27 EDT -0400 - before A005 A05 measurement-only base contour and corresponding-pixel audit
+
+- Snapshot: `Saved/ProjectRecovery/20260721-070127/`
+- Git: branch `main`, HEAD `7a6dfe9`, status lines `254`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-070127/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-070127/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-070127/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 07:07:09 EDT -0400 - A005 A05 measurement-only gate passed; 119.10x77.65 and 134.65x96.56 cm base authority recorded
+
+- Snapshot: `Saved/ProjectRecovery/20260721-070709/`
+- Git: branch `main`, HEAD `7a6dfe9`, status lines `258`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-070709/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-070709/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-070709/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 07:13:51 EDT -0400 - before A005 A05 measured oval replacement-base Blender build Attempt01
+
+- Snapshot: `Saved/ProjectRecovery/20260721-071351/`
+- Git: branch `main`, HEAD `7a6dfe9`, status lines `261`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-071351/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-071351/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-071351/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 07:14:35 EDT -0400 - A005 A05 Attempt01 measured oval replacement-base build complete at 8704 LOD0 triangles
+
+- Snapshot: `Saved/ProjectRecovery/20260721-071435/`
+- Git: branch `main`, HEAD `7a6dfe9`, status lines `265`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-071435/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-071435/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-071435/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 07:19:20 EDT -0400 - A005 A05 Attempt01 quarantined: smooth dark apron skirt and mechanical horizontal course read
+
+- Snapshot: `Saved/ProjectRecovery/20260721-071920/`
+- Git: branch `main`, HEAD `7a6dfe9`, status lines `266`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-071920/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-071920/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-071920/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 07:21:46 EDT -0400 - A05 Attempt02 quarantined; before Attempt03 rubble-notch and source-side rebuild
+
+- Snapshot: `Saved/ProjectRecovery/20260721-072146/`
+- Git: branch `main`, HEAD `7a6dfe9`, status lines `266`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-072146/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-072146/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-072146/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 07:22:15 EDT -0400 - A05 Attempt03 candidate built; before internal proof render
+
+- Snapshot: `Saved/ProjectRecovery/20260721-072215/`
+- Git: branch `main`, HEAD `7a6dfe9`, status lines `266`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-072215/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-072215/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-072215/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 07:23:33 EDT -0400 - A05 Attempt03 quarantined; before irregular-block Attempt04 rebuild
+
+- Snapshot: `Saved/ProjectRecovery/20260721-072333/`
+- Git: branch `main`, HEAD `7a6dfe9`, status lines `266`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-072333/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-072333/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-072333/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 07:25:55 EDT -0400 - A05 Attempt04 visual candidate held; before exact A04 plinth UV preservation fix
+
+- Snapshot: `Saved/ProjectRecovery/20260721-072555/`
+- Git: branch `main`, HEAD `7a6dfe9`, status lines `266`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-072555/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-072555/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-072555/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 07:29:49 EDT -0400 - A05 technical audit 14 of 15; before component-owned plinth equivalence fix
+
+- Snapshot: `Saved/ProjectRecovery/20260721-072949/`
+- Git: branch `main`, HEAD `7a6dfe9`, status lines `268`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-072949/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-072949/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-072949/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 07:32:23 EDT -0400 - A05 technical audit 15 of 15 passed; before final review render
+
+- Snapshot: `Saved/ProjectRecovery/20260721-073223/`
+- Git: branch `main`, HEAD `7a6dfe9`, status lines `268`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-073223/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-073223/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-073223/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 07:35:02 EDT -0400 - A05 final audit 18 of 18 passed; exact review image opened; visual decision pending
+
+- Snapshot: `Saved/ProjectRecovery/20260721-073502/`
+- Git: branch `main`, HEAD `7a6dfe9`, status lines `273`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-073502/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-073502/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-073502/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

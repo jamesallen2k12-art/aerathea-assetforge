@@ -1,12 +1,35 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: A04 visually rejected and quarantined; A05 measurement-first recovery pending resume
+Status: A05 DCC game-ready candidate passed 18/18; Flamestrike visual decision pending
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-21
 
-## Active Resume Boundary - A04 Rejection / A05 Measurement-First Recovery
+## Active Resume Boundary - A05 Final Candidate / Visual Decision Pending
+
+Flamestrike authorized complete correction of the 3D image on 2026-07-21.
+The A05 measurement gate, replacement-base build, package, final render, and
+independent validation are complete.
+
+- Contract: `A005-CR-VISUAL-CORRECTION-A05`.
+- Status: `candidate`; pipeline status: `DCC game-ready candidate`.
+- Audit: `18/18`; failures `0`.
+- Exact A04 plinth geometry and UV signatures: preserved.
+- Replacement base: measured oval C002/C003 footprints plus irregular oval
+  C004 rubble; A04 base geometry inputs `0`.
+- Final review:
+  `Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A05/SM_GIA_BloodAxeCairnstone_A005_FINAL_CORRECTED_3D_A05.png`.
+- Final SHA-256:
+  `5175ffb7c0c1bd5d66f8b1ede17ebc489ab77ade3c5667ac35c3bc3d101bef56`.
+- Output record: `steps/VISUAL_CORRECTION_A05_OUTPUT_RECORD.md`.
+- Review record: `review/VISUAL_CORRECTION_A05_FINAL_REVIEW.md`.
+- Current stop: Flamestrike may approve, reject, or mark blocked only this
+  exact A05 review candidate.
+- Unreal, Step 17, `Fully game-ready`, approved-library, and visual-canon
+  promotion remain unauthorized and false.
+
+## Superseded Resume Boundary - A04 Rejection / A05 Measurement-First Recovery
 
 Flamestrike rejected the exact A04 review on 2026-07-21. The attempt is an
 improvement, and the plinth looks perfect, but the base still reads as new

@@ -1,0 +1,2519 @@
+{
+  "schema": "aerathea.visual_correction_a05_measurement_audit.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "audit_id": "A005-CR-VISUAL-CORRECTION-A05-MEASUREMENT-A01",
+  "date": "2026-07-21",
+  "status": "authoritative_measurement_record_ready_for_A05_contract",
+  "artifact_classification": "authoritative",
+  "decision": "authoritative measurement record ready for A05 contract",
+  "authority": {
+    "handoff": "steps/VISUAL_CORRECTION_A04_VISUAL_REJECTION_A05_RESTART_HANDOFF.md",
+    "source_panels": {
+      "front": {
+        "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_FRONT.png",
+        "expected_sha256": "262071198bc0d409e9b68af5ac4f3c6a4768a90b1fd199342035a8a82342c2c5",
+        "actual_sha256": "262071198bc0d409e9b68af5ac4f3c6a4768a90b1fd199342035a8a82342c2c5",
+        "hash_match": true,
+        "size_px": [
+          483,
+          525
+        ]
+      },
+      "left": {
+        "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_LEFT.png",
+        "expected_sha256": "52212ba783d026a008929e3946cac934281de7d2daec2ada316205059258cba4",
+        "actual_sha256": "52212ba783d026a008929e3946cac934281de7d2daec2ada316205059258cba4",
+        "hash_match": true,
+        "size_px": [
+          484,
+          401
+        ]
+      },
+      "top": {
+        "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_TOP.png",
+        "expected_sha256": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf",
+        "actual_sha256": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf",
+        "hash_match": true,
+        "size_px": [
+          337,
+          371
+        ]
+      }
+    },
+    "exact_top_contacts": "manifests/STEP_04_TOP_CONTACT_EVIDENCE_RECOVERY_A01.json",
+    "front_measurements": "manifests/STEP_06_FRONT_MEASUREMENT_MANIFEST.json",
+    "left_measurements": "manifests/STEP_07_LEFT_MEASUREMENT_MANIFEST.json",
+    "base_color_ownership": "manifests/STEP_14_BASE_COLOR_OWNERSHIP_MANIFEST.json",
+    "approved_target_anchors_cm": {
+      "C004_width": 140,
+      "C004_depth": 110,
+      "base_span": 35
+    }
+  },
+  "controls": {
+    "geometry_created": false,
+    "candidate_fill_created": false,
+    "inferred_overlay_created": false,
+    "closed_contour_created": false,
+    "curve_or_oval_fit_created": false,
+    "smoothing_performed": false,
+    "source_modified": false,
+    "color_grading_performed": false,
+    "a04_geometry_used_as_measurement_authority": false,
+    "measurement_board_contains_only_source_pixels_exact_marks_and_text": true
+  },
+  "top_exact_contact_contours": {
+    "CL-001": {
+      "classification": "exact_discrete_source_pixel_measurements_no_closure",
+      "sample_count": 16,
+      "observed_extrema_px": {
+        "min_x": 70,
+        "max_x": 210,
+        "min_y": 67,
+        "max_y": 224
+      },
+      "observed_extrema_point_center_deltas_px": [
+        140,
+        157
+      ],
+      "observed_extrema_midpoint_px_reference_only_not_component_center": [
+        140.0,
+        145.5
+      ],
+      "same_row_visible_station_spans": [
+        {
+          "y_px": 110,
+          "left_x_px": 72,
+          "right_x_px": 207,
+          "point_center_delta_px": 135
+        },
+        {
+          "y_px": 135,
+          "left_x_px": 71,
+          "right_x_px": 210,
+          "point_center_delta_px": 139
+        },
+        {
+          "y_px": 160,
+          "left_x_px": 70,
+          "right_x_px": 210,
+          "point_center_delta_px": 140
+        },
+        {
+          "y_px": 190,
+          "left_x_px": 75,
+          "right_x_px": 206,
+          "point_center_delta_px": 131
+        }
+      ],
+      "exact_points": [
+        {
+          "id": "T-CL001-TOP-01",
+          "sector": "top",
+          "pixel_local": [
+            120,
+            68
+          ],
+          "source_rgb": [
+            16,
+            9,
+            6
+          ]
+        },
+        {
+          "id": "T-CL001-TOP-02",
+          "sector": "top",
+          "pixel_local": [
+            145,
+            67
+          ],
+          "source_rgb": [
+            46,
+            39,
+            33
+          ]
+        },
+        {
+          "id": "T-CL001-TOP-03",
+          "sector": "top",
+          "pixel_local": [
+            170,
+            67
+          ],
+          "source_rgb": [
+            14,
+            5,
+            3
+          ]
+        },
+        {
+          "id": "T-CL001-TOP-04",
+          "sector": "top",
+          "pixel_local": [
+            195,
+            68
+          ],
+          "source_rgb": [
+            54,
+            44,
+            40
+          ]
+        },
+        {
+          "id": "T-CL001-BOTTOM-01",
+          "sector": "bottom",
+          "pixel_local": [
+            110,
+            221
+          ],
+          "source_rgb": [
+            65,
+            18,
+            12
+          ]
+        },
+        {
+          "id": "T-CL001-BOTTOM-02",
+          "sector": "bottom",
+          "pixel_local": [
+            135,
+            223
+          ],
+          "source_rgb": [
+            83,
+            9,
+            5
+          ]
+        },
+        {
+          "id": "T-CL001-BOTTOM-03",
+          "sector": "bottom",
+          "pixel_local": [
+            160,
+            224
+          ],
+          "source_rgb": [
+            8,
+            8,
+            8
+          ]
+        },
+        {
+          "id": "T-CL001-BOTTOM-04",
+          "sector": "bottom",
+          "pixel_local": [
+            190,
+            221
+          ],
+          "source_rgb": [
+            35,
+            36,
+            33
+          ]
+        },
+        {
+          "id": "T-CL001-LEFT-01",
+          "sector": "left",
+          "pixel_local": [
+            72,
+            110
+          ],
+          "source_rgb": [
+            64,
+            60,
+            51
+          ]
+        },
+        {
+          "id": "T-CL001-LEFT-02",
+          "sector": "left",
+          "pixel_local": [
+            71,
+            135
+          ],
+          "source_rgb": [
+            80,
+            53,
+            42
+          ]
+        },
+        {
+          "id": "T-CL001-LEFT-03",
+          "sector": "left",
+          "pixel_local": [
+            70,
+            160
+          ],
+          "source_rgb": [
+            69,
+            51,
+            45
+          ]
+        },
+        {
+          "id": "T-CL001-LEFT-04",
+          "sector": "left",
+          "pixel_local": [
+            75,
+            190
+          ],
+          "source_rgb": [
+            29,
+            26,
+            23
+          ]
+        },
+        {
+          "id": "T-CL001-RIGHT-01",
+          "sector": "right",
+          "pixel_local": [
+            207,
+            110
+          ],
+          "source_rgb": [
+            29,
+            16,
+            11
+          ]
+        },
+        {
+          "id": "T-CL001-RIGHT-02",
+          "sector": "right",
+          "pixel_local": [
+            210,
+            135
+          ],
+          "source_rgb": [
+            69,
+            17,
+            11
+          ]
+        },
+        {
+          "id": "T-CL001-RIGHT-03",
+          "sector": "right",
+          "pixel_local": [
+            210,
+            160
+          ],
+          "source_rgb": [
+            16,
+            0,
+            2
+          ]
+        },
+        {
+          "id": "T-CL001-RIGHT-04",
+          "sector": "right",
+          "pixel_local": [
+            206,
+            190
+          ],
+          "source_rgb": [
+            31,
+            29,
+            24
+          ]
+        }
+      ],
+      "closed_contour_created": false,
+      "curve_fit_created": false,
+      "filled_region_created": false
+    },
+    "CL-002": {
+      "classification": "exact_discrete_source_pixel_measurements_no_closure",
+      "sample_count": 16,
+      "observed_extrema_px": {
+        "min_x": 56,
+        "max_x": 223,
+        "min_y": 57,
+        "max_y": 240
+      },
+      "observed_extrema_point_center_deltas_px": [
+        167,
+        183
+      ],
+      "observed_extrema_midpoint_px_reference_only_not_component_center": [
+        139.5,
+        148.5
+      ],
+      "same_row_visible_station_spans": [
+        {
+          "y_px": 110,
+          "left_x_px": 57,
+          "right_x_px": 222,
+          "point_center_delta_px": 165
+        },
+        {
+          "y_px": 135,
+          "left_x_px": 56,
+          "right_x_px": 223,
+          "point_center_delta_px": 167
+        },
+        {
+          "y_px": 160,
+          "left_x_px": 56,
+          "right_x_px": 223,
+          "point_center_delta_px": 167
+        },
+        {
+          "y_px": 190,
+          "left_x_px": 60,
+          "right_x_px": 220,
+          "point_center_delta_px": 160
+        }
+      ],
+      "exact_points": [
+        {
+          "id": "T-CL002-TOP-01",
+          "sector": "top",
+          "pixel_local": [
+            120,
+            58
+          ],
+          "source_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "T-CL002-TOP-02",
+          "sector": "top",
+          "pixel_local": [
+            145,
+            57
+          ],
+          "source_rgb": [
+            21,
+            11,
+            6
+          ]
+        },
+        {
+          "id": "T-CL002-TOP-03",
+          "sector": "top",
+          "pixel_local": [
+            170,
+            58
+          ],
+          "source_rgb": [
+            51,
+            47,
+            43
+          ]
+        },
+        {
+          "id": "T-CL002-TOP-04",
+          "sector": "top",
+          "pixel_local": [
+            195,
+            58
+          ],
+          "source_rgb": [
+            67,
+            66,
+            61
+          ]
+        },
+        {
+          "id": "T-CL002-BOTTOM-01",
+          "sector": "bottom",
+          "pixel_local": [
+            100,
+            239
+          ],
+          "source_rgb": [
+            60,
+            21,
+            14
+          ]
+        },
+        {
+          "id": "T-CL002-BOTTOM-02",
+          "sector": "bottom",
+          "pixel_local": [
+            130,
+            240
+          ],
+          "source_rgb": [
+            41,
+            25,
+            18
+          ]
+        },
+        {
+          "id": "T-CL002-BOTTOM-03",
+          "sector": "bottom",
+          "pixel_local": [
+            160,
+            240
+          ],
+          "source_rgb": [
+            35,
+            23,
+            16
+          ]
+        },
+        {
+          "id": "T-CL002-BOTTOM-04",
+          "sector": "bottom",
+          "pixel_local": [
+            195,
+            239
+          ],
+          "source_rgb": [
+            31,
+            27,
+            26
+          ]
+        },
+        {
+          "id": "T-CL002-LEFT-01",
+          "sector": "left",
+          "pixel_local": [
+            57,
+            110
+          ],
+          "source_rgb": [
+            62,
+            56,
+            55
+          ]
+        },
+        {
+          "id": "T-CL002-LEFT-02",
+          "sector": "left",
+          "pixel_local": [
+            56,
+            135
+          ],
+          "source_rgb": [
+            28,
+            11,
+            11
+          ]
+        },
+        {
+          "id": "T-CL002-LEFT-03",
+          "sector": "left",
+          "pixel_local": [
+            56,
+            160
+          ],
+          "source_rgb": [
+            68,
+            58,
+            56
+          ]
+        },
+        {
+          "id": "T-CL002-LEFT-04",
+          "sector": "left",
+          "pixel_local": [
+            60,
+            190
+          ],
+          "source_rgb": [
+            63,
+            55,
+            57
+          ]
+        },
+        {
+          "id": "T-CL002-RIGHT-01",
+          "sector": "right",
+          "pixel_local": [
+            222,
+            110
+          ],
+          "source_rgb": [
+            19,
+            13,
+            10
+          ]
+        },
+        {
+          "id": "T-CL002-RIGHT-02",
+          "sector": "right",
+          "pixel_local": [
+            223,
+            135
+          ],
+          "source_rgb": [
+            62,
+            58,
+            57
+          ]
+        },
+        {
+          "id": "T-CL002-RIGHT-03",
+          "sector": "right",
+          "pixel_local": [
+            223,
+            160
+          ],
+          "source_rgb": [
+            74,
+            74,
+            70
+          ]
+        },
+        {
+          "id": "T-CL002-RIGHT-04",
+          "sector": "right",
+          "pixel_local": [
+            220,
+            190
+          ],
+          "source_rgb": [
+            34,
+            16,
+            11
+          ]
+        }
+      ],
+      "closed_contour_created": false,
+      "curve_fit_created": false,
+      "filled_region_created": false
+    },
+    "CL-003": {
+      "classification": "exact_discrete_source_pixel_measurements_no_closure",
+      "sample_count": 16,
+      "observed_extrema_px": {
+        "min_x": 45,
+        "max_x": 233,
+        "min_y": 46,
+        "max_y": 253
+      },
+      "observed_extrema_point_center_deltas_px": [
+        188,
+        207
+      ],
+      "observed_extrema_midpoint_px_reference_only_not_component_center": [
+        139.0,
+        149.5
+      ],
+      "same_row_visible_station_spans": [
+        {
+          "y_px": 110,
+          "left_x_px": 49,
+          "right_x_px": 230,
+          "point_center_delta_px": 181
+        },
+        {
+          "y_px": 135,
+          "left_x_px": 46,
+          "right_x_px": 231,
+          "point_center_delta_px": 185
+        },
+        {
+          "y_px": 160,
+          "left_x_px": 45,
+          "right_x_px": 233,
+          "point_center_delta_px": 188
+        },
+        {
+          "y_px": 190,
+          "left_x_px": 49,
+          "right_x_px": 227,
+          "point_center_delta_px": 178
+        }
+      ],
+      "exact_points": [
+        {
+          "id": "T-CL003-TOP-01",
+          "sector": "top",
+          "pixel_local": [
+            120,
+            47
+          ],
+          "source_rgb": [
+            53,
+            46,
+            46
+          ]
+        },
+        {
+          "id": "T-CL003-TOP-02",
+          "sector": "top",
+          "pixel_local": [
+            145,
+            46
+          ],
+          "source_rgb": [
+            76,
+            71,
+            66
+          ]
+        },
+        {
+          "id": "T-CL003-TOP-03",
+          "sector": "top",
+          "pixel_local": [
+            170,
+            46
+          ],
+          "source_rgb": [
+            34,
+            31,
+            30
+          ]
+        },
+        {
+          "id": "T-CL003-TOP-04",
+          "sector": "top",
+          "pixel_local": [
+            184,
+            49
+          ],
+          "source_rgb": [
+            34,
+            18,
+            17
+          ]
+        },
+        {
+          "id": "T-CL003-BOTTOM-01",
+          "sector": "bottom",
+          "pixel_local": [
+            90,
+            250
+          ],
+          "source_rgb": [
+            18,
+            19,
+            13
+          ]
+        },
+        {
+          "id": "T-CL003-BOTTOM-02",
+          "sector": "bottom",
+          "pixel_local": [
+            120,
+            252
+          ],
+          "source_rgb": [
+            62,
+            59,
+            51
+          ]
+        },
+        {
+          "id": "T-CL003-BOTTOM-03",
+          "sector": "bottom",
+          "pixel_local": [
+            150,
+            253
+          ],
+          "source_rgb": [
+            48,
+            45,
+            47
+          ]
+        },
+        {
+          "id": "T-CL003-BOTTOM-04",
+          "sector": "bottom",
+          "pixel_local": [
+            184,
+            249
+          ],
+          "source_rgb": [
+            19,
+            12,
+            11
+          ]
+        },
+        {
+          "id": "T-CL003-LEFT-01",
+          "sector": "left",
+          "pixel_local": [
+            49,
+            110
+          ],
+          "source_rgb": [
+            32,
+            20,
+            17
+          ]
+        },
+        {
+          "id": "T-CL003-LEFT-02",
+          "sector": "left",
+          "pixel_local": [
+            46,
+            135
+          ],
+          "source_rgb": [
+            2,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "T-CL003-LEFT-03",
+          "sector": "left",
+          "pixel_local": [
+            45,
+            160
+          ],
+          "source_rgb": [
+            15,
+            2,
+            2
+          ]
+        },
+        {
+          "id": "T-CL003-LEFT-04",
+          "sector": "left",
+          "pixel_local": [
+            49,
+            190
+          ],
+          "source_rgb": [
+            54,
+            9,
+            6
+          ]
+        },
+        {
+          "id": "T-CL003-RIGHT-01",
+          "sector": "right",
+          "pixel_local": [
+            230,
+            110
+          ],
+          "source_rgb": [
+            43,
+            39,
+            37
+          ]
+        },
+        {
+          "id": "T-CL003-RIGHT-02",
+          "sector": "right",
+          "pixel_local": [
+            231,
+            135
+          ],
+          "source_rgb": [
+            38,
+            37,
+            34
+          ]
+        },
+        {
+          "id": "T-CL003-RIGHT-03",
+          "sector": "right",
+          "pixel_local": [
+            233,
+            160
+          ],
+          "source_rgb": [
+            45,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "T-CL003-RIGHT-04",
+          "sector": "right",
+          "pixel_local": [
+            227,
+            190
+          ],
+          "source_rgb": [
+            26,
+            9,
+            6
+          ]
+        }
+      ],
+      "closed_contour_created": false,
+      "curve_fit_created": false,
+      "filled_region_created": false
+    }
+  },
+  "owner_view_physical_footprint_measurements_cm": {
+    "C-002": {
+      "width": {
+        "exact": "8575/72",
+        "decimal": 119.097222
+      },
+      "depth": {
+        "exact": "1320/17",
+        "decimal": 77.647059
+      },
+      "width_to_depth_ratio": 1.533828,
+      "formula": {
+        "width": "140 * 245 / 288",
+        "depth": "110 * 156 / 221"
+      },
+      "source_rows": {
+        "front": {
+          "id": "F-C002-R360",
+          "component_id": "C-002",
+          "y": 360,
+          "span_half_open": [
+            127,
+            372
+          ],
+          "width_px": 245,
+          "profile_center_x_px": 249.0
+        },
+        "left": {
+          "id": "L-C002-R255",
+          "component_id": "C-002",
+          "y": 255,
+          "span_half_open": [
+            152,
+            308
+          ],
+          "width_px": 156,
+          "profile_center_x_px": 229.5
+        }
+      },
+      "authority": "same-view ratio to exact visible C-004 outer span and approved 140x110 target extents"
+    },
+    "C-003": {
+      "width": {
+        "exact": "9695/72",
+        "decimal": 134.652778
+      },
+      "depth": {
+        "exact": "21340/221",
+        "decimal": 96.561086
+      },
+      "width_to_depth_ratio": 1.394483,
+      "formula": {
+        "width": "140 * 277 / 288",
+        "depth": "110 * 194 / 221"
+      },
+      "source_rows": {
+        "front": {
+          "id": "F-C003-R390",
+          "component_id": "C-003",
+          "y": 390,
+          "span_half_open": [
+            111,
+            388
+          ],
+          "width_px": 277,
+          "profile_center_x_px": 249.0
+        },
+        "left": {
+          "id": "L-C003-R265",
+          "component_id": "C-003",
+          "y": 265,
+          "span_half_open": [
+            133,
+            327
+          ],
+          "width_px": 194,
+          "profile_center_x_px": 229.5
+        }
+      },
+      "authority": "same-view ratio to exact visible C-004 outer span and approved 140x110 target extents"
+    }
+  },
+  "a04_rejected_target_comparison": {
+    "C-002": {
+      "a04_target_cm": [
+        120.0,
+        90.0
+      ],
+      "a05_measured_cm": [
+        119.097222,
+        77.647059
+      ],
+      "a05_minus_a04_cm": [
+        -0.902778,
+        -12.352941
+      ],
+      "a04_depth_excess_over_a05_measurement_percent": 15.909091
+    },
+    "C-003": {
+      "a04_target_cm": [
+        136.0,
+        104.0
+      ],
+      "a05_measured_cm": [
+        134.652778,
+        96.561086
+      ],
+      "a05_minus_a04_cm": [
+        -1.347222,
+        -7.438914
+      ],
+      "a04_depth_excess_over_a05_measurement_percent": 7.703843
+    }
+  },
+  "cross_view_ratio_checks": {
+    "C002_to_C003_observed_X_delta_ratio": 0.888298,
+    "C002_to_C003_observed_Y_delta_ratio": 0.884058,
+    "front_owner_width_ratio": 0.884477,
+    "left_owner_depth_ratio": 0.804124
+  },
+  "height_evidence": {
+    "front": {
+      "contact_y_medians_px": {
+        "CL-001": 340.0,
+        "CL-002": 360.0,
+        "CL-003": 397.0
+      },
+      "lowest_exact_outer_edge_observation_y_px": 425,
+      "observed_base_span_px": 85.0,
+      "component_visible_spans_px": {
+        "C-002": 20.0,
+        "C-003": 37.0,
+        "C-004": 28.0
+      },
+      "normalized_to_approved_35_cm_base_span": {
+        "C-002": 8.235294,
+        "C-003": 15.235294,
+        "C-004": 11.529412
+      },
+      "classification": "same-view normalized evidence_not_source_exact_individual_course_height"
+    },
+    "left": {
+      "contact_y_medians_px": {
+        "CL-001": 238.0,
+        "CL-002": 262.0,
+        "CL-003": 292.0
+      },
+      "lowest_exact_outer_edge_observation_y_px": 310,
+      "observed_base_span_px": 72.0,
+      "component_visible_spans_px": {
+        "C-002": 24.0,
+        "C-003": 30.0,
+        "C-004": 18.0
+      },
+      "normalized_to_approved_35_cm_base_span": {
+        "C-002": 11.666667,
+        "C-003": 14.583333,
+        "C-004": 8.75
+      },
+      "classification": "same-view normalized evidence_not_source_exact_individual_course_height"
+    },
+    "two_view_interval_cm": {
+      "C-002": [
+        8.235294,
+        11.666667
+      ],
+      "C-003": [
+        14.583333,
+        15.235294
+      ],
+      "C-004": [
+        8.75,
+        11.529412
+      ]
+    },
+    "source_exact_individual_course_height": false,
+    "later_contract_must_select_a_35_cm_sum_inside_the_recorded_intervals": true
+  },
+  "component_local_color_correspondence": {
+    "step14_rule_preserved": {
+      "source_to_atlas": "atlas_rgb[x+offset_x,y+offset_y] = panel_rgb[x,y] for every mask-owned source pixel",
+      "coordinate_tolerance_px": 0,
+      "source_sampling": "integer texel copy",
+      "resizing": false,
+      "warping": false,
+      "interpolation": false,
+      "grading": false,
+      "required_audit": "every owned atlas mip-0 RGB triplet equals its declared source-panel RGB triplet byte-for-byte",
+      "exactness_non_claims": [
+        "rendered pixels",
+        "filtered samples",
+        "compressed payload",
+        "lower mips",
+        "physical cross-view correspondence",
+        "source-authored UV placement"
+      ]
+    },
+    "surface_routes": {
+      "C-002": {
+        "top_surface": "top source pixels between exact CL-001 and CL-002 ownership witnesses",
+        "front_side": "front source band between exact CL-001 and CL-002 evidence",
+        "left_side": "left source band between exact CL-001 and CL-002 evidence"
+      },
+      "C-003": {
+        "top_surface": "top source pixels between exact CL-002 and CL-003 ownership witnesses",
+        "front_side": "front source band between exact CL-002 and CL-003 evidence",
+        "left_side": "left source band between exact CL-002 and CL-003 evidence"
+      },
+      "C-004": {
+        "top_surface": "top source pixels outward of exact CL-003 witnesses within source-owned rubble",
+        "front_side": "front source-owned C-004 irregular edge pixels",
+        "left_side": "left source-owned C-004 irregular edge pixels"
+      }
+    },
+    "top_exact_witness_statistics": {
+      "C-001": {
+        "sample_count": 16,
+        "median_rgb": [
+          57,
+          39,
+          34
+        ],
+        "min_rgb": [
+          10,
+          4,
+          4
+        ],
+        "max_rgb": [
+          82,
+          80,
+          81
+        ],
+        "samples": [
+          {
+            "contact_id": "CL-001",
+            "sector": "top",
+            "role": "inward_witness",
+            "pixel_local": [
+              120,
+              70
+            ],
+            "rgb": [
+              78,
+              72,
+              62
+            ]
+          },
+          {
+            "contact_id": "CL-001",
+            "sector": "top",
+            "role": "inward_witness",
+            "pixel_local": [
+              145,
+              69
+            ],
+            "rgb": [
+              52,
+              40,
+              32
+            ]
+          },
+          {
+            "contact_id": "CL-001",
+            "sector": "top",
+            "role": "inward_witness",
+            "pixel_local": [
+              170,
+              69
+            ],
+            "rgb": [
+              79,
+              53,
+              48
+            ]
+          },
+          {
+            "contact_id": "CL-001",
+            "sector": "top",
+            "role": "inward_witness",
+            "pixel_local": [
+              195,
+              70
+            ],
+            "rgb": [
+              82,
+              80,
+              81
+            ]
+          },
+          {
+            "contact_id": "CL-001",
+            "sector": "bottom",
+            "role": "inward_witness",
+            "pixel_local": [
+              110,
+              219
+            ],
+            "rgb": [
+              17,
+              15,
+              10
+            ]
+          },
+          {
+            "contact_id": "CL-001",
+            "sector": "bottom",
+            "role": "inward_witness",
+            "pixel_local": [
+              135,
+              221
+            ],
+            "rgb": [
+              26,
+              5,
+              4
+            ]
+          },
+          {
+            "contact_id": "CL-001",
+            "sector": "bottom",
+            "role": "inward_witness",
+            "pixel_local": [
+              160,
+              222
+            ],
+            "rgb": [
+              59,
+              15,
+              6
+            ]
+          },
+          {
+            "contact_id": "CL-001",
+            "sector": "bottom",
+            "role": "inward_witness",
+            "pixel_local": [
+              190,
+              219
+            ],
+            "rgb": [
+              39,
+              39,
+              37
+            ]
+          },
+          {
+            "contact_id": "CL-001",
+            "sector": "left",
+            "role": "inward_witness",
+            "pixel_local": [
+              74,
+              110
+            ],
+            "rgb": [
+              56,
+              51,
+              55
+            ]
+          },
+          {
+            "contact_id": "CL-001",
+            "sector": "left",
+            "role": "inward_witness",
+            "pixel_local": [
+              73,
+              135
+            ],
+            "rgb": [
+              82,
+              71,
+              63
+            ]
+          },
+          {
+            "contact_id": "CL-001",
+            "sector": "left",
+            "role": "inward_witness",
+            "pixel_local": [
+              72,
+              160
+            ],
+            "rgb": [
+              67,
+              65,
+              59
+            ]
+          },
+          {
+            "contact_id": "CL-001",
+            "sector": "left",
+            "role": "inward_witness",
+            "pixel_local": [
+              77,
+              190
+            ],
+            "rgb": [
+              78,
+              55,
+              45
+            ]
+          },
+          {
+            "contact_id": "CL-001",
+            "sector": "right",
+            "role": "inward_witness",
+            "pixel_local": [
+              205,
+              110
+            ],
+            "rgb": [
+              60,
+              21,
+              11
+            ]
+          },
+          {
+            "contact_id": "CL-001",
+            "sector": "right",
+            "role": "inward_witness",
+            "pixel_local": [
+              208,
+              135
+            ],
+            "rgb": [
+              15,
+              9,
+              7
+            ]
+          },
+          {
+            "contact_id": "CL-001",
+            "sector": "right",
+            "role": "inward_witness",
+            "pixel_local": [
+              208,
+              160
+            ],
+            "rgb": [
+              11,
+              4,
+              5
+            ]
+          },
+          {
+            "contact_id": "CL-001",
+            "sector": "right",
+            "role": "inward_witness",
+            "pixel_local": [
+              204,
+              190
+            ],
+            "rgb": [
+              10,
+              6,
+              5
+            ]
+          }
+        ]
+      },
+      "C-002": {
+        "sample_count": 32,
+        "median_rgb": [
+          41,
+          30,
+          25
+        ],
+        "min_rgb": [
+          2,
+          1,
+          1
+        ],
+        "max_rgb": [
+          85,
+          87,
+          79
+        ],
+        "samples": [
+          {
+            "contact_id": "CL-001",
+            "sector": "top",
+            "role": "outward_witness",
+            "pixel_local": [
+              120,
+              66
+            ],
+            "rgb": [
+              35,
+              25,
+              22
+            ]
+          },
+          {
+            "contact_id": "CL-001",
+            "sector": "top",
+            "role": "outward_witness",
+            "pixel_local": [
+              145,
+              65
+            ],
+            "rgb": [
+              78,
+              72,
+              65
+            ]
+          },
+          {
+            "contact_id": "CL-001",
+            "sector": "top",
+            "role": "outward_witness",
+            "pixel_local": [
+              170,
+              65
+            ],
+            "rgb": [
+              28,
+              23,
+              19
+            ]
+          },
+          {
+            "contact_id": "CL-001",
+            "sector": "top",
+            "role": "outward_witness",
+            "pixel_local": [
+              195,
+              66
+            ],
+            "rgb": [
+              20,
+              2,
+              2
+            ]
+          },
+          {
+            "contact_id": "CL-001",
+            "sector": "bottom",
+            "role": "outward_witness",
+            "pixel_local": [
+              110,
+              223
+            ],
+            "rgb": [
+              37,
+              10,
+              9
+            ]
+          },
+          {
+            "contact_id": "CL-001",
+            "sector": "bottom",
+            "role": "outward_witness",
+            "pixel_local": [
+              135,
+              225
+            ],
+            "rgb": [
+              40,
+              2,
+              2
+            ]
+          },
+          {
+            "contact_id": "CL-001",
+            "sector": "bottom",
+            "role": "outward_witness",
+            "pixel_local": [
+              160,
+              226
+            ],
+            "rgb": [
+              25,
+              23,
+              15
+            ]
+          },
+          {
+            "contact_id": "CL-001",
+            "sector": "bottom",
+            "role": "outward_witness",
+            "pixel_local": [
+              190,
+              223
+            ],
+            "rgb": [
+              39,
+              37,
+              35
+            ]
+          },
+          {
+            "contact_id": "CL-001",
+            "sector": "left",
+            "role": "outward_witness",
+            "pixel_local": [
+              70,
+              110
+            ],
+            "rgb": [
+              55,
+              1,
+              1
+            ]
+          },
+          {
+            "contact_id": "CL-001",
+            "sector": "left",
+            "role": "outward_witness",
+            "pixel_local": [
+              69,
+              135
+            ],
+            "rgb": [
+              72,
+              64,
+              62
+            ]
+          },
+          {
+            "contact_id": "CL-001",
+            "sector": "left",
+            "role": "outward_witness",
+            "pixel_local": [
+              68,
+              160
+            ],
+            "rgb": [
+              43,
+              34,
+              26
+            ]
+          },
+          {
+            "contact_id": "CL-001",
+            "sector": "left",
+            "role": "outward_witness",
+            "pixel_local": [
+              73,
+              190
+            ],
+            "rgb": [
+              45,
+              42,
+              38
+            ]
+          },
+          {
+            "contact_id": "CL-001",
+            "sector": "right",
+            "role": "outward_witness",
+            "pixel_local": [
+              209,
+              110
+            ],
+            "rgb": [
+              33,
+              28,
+              23
+            ]
+          },
+          {
+            "contact_id": "CL-001",
+            "sector": "right",
+            "role": "outward_witness",
+            "pixel_local": [
+              212,
+              135
+            ],
+            "rgb": [
+              13,
+              8,
+              6
+            ]
+          },
+          {
+            "contact_id": "CL-001",
+            "sector": "right",
+            "role": "outward_witness",
+            "pixel_local": [
+              212,
+              160
+            ],
+            "rgb": [
+              2,
+              3,
+              3
+            ]
+          },
+          {
+            "contact_id": "CL-001",
+            "sector": "right",
+            "role": "outward_witness",
+            "pixel_local": [
+              208,
+              190
+            ],
+            "rgb": [
+              28,
+              29,
+              25
+            ]
+          },
+          {
+            "contact_id": "CL-002",
+            "sector": "top",
+            "role": "inward_witness",
+            "pixel_local": [
+              120,
+              60
+            ],
+            "rgb": [
+              72,
+              7,
+              1
+            ]
+          },
+          {
+            "contact_id": "CL-002",
+            "sector": "top",
+            "role": "inward_witness",
+            "pixel_local": [
+              145,
+              59
+            ],
+            "rgb": [
+              10,
+              2,
+              2
+            ]
+          },
+          {
+            "contact_id": "CL-002",
+            "sector": "top",
+            "role": "inward_witness",
+            "pixel_local": [
+              170,
+              60
+            ],
+            "rgb": [
+              48,
+              46,
+              38
+            ]
+          },
+          {
+            "contact_id": "CL-002",
+            "sector": "top",
+            "role": "inward_witness",
+            "pixel_local": [
+              195,
+              60
+            ],
+            "rgb": [
+              24,
+              20,
+              18
+            ]
+          },
+          {
+            "contact_id": "CL-002",
+            "sector": "bottom",
+            "role": "inward_witness",
+            "pixel_local": [
+              100,
+              237
+            ],
+            "rgb": [
+              55,
+              38,
+              29
+            ]
+          },
+          {
+            "contact_id": "CL-002",
+            "sector": "bottom",
+            "role": "inward_witness",
+            "pixel_local": [
+              130,
+              238
+            ],
+            "rgb": [
+              63,
+              27,
+              21
+            ]
+          },
+          {
+            "contact_id": "CL-002",
+            "sector": "bottom",
+            "role": "inward_witness",
+            "pixel_local": [
+              160,
+              238
+            ],
+            "rgb": [
+              85,
+              87,
+              79
+            ]
+          },
+          {
+            "contact_id": "CL-002",
+            "sector": "bottom",
+            "role": "inward_witness",
+            "pixel_local": [
+              195,
+              237
+            ],
+            "rgb": [
+              51,
+              48,
+              41
+            ]
+          },
+          {
+            "contact_id": "CL-002",
+            "sector": "left",
+            "role": "inward_witness",
+            "pixel_local": [
+              59,
+              110
+            ],
+            "rgb": [
+              79,
+              74,
+              66
+            ]
+          },
+          {
+            "contact_id": "CL-002",
+            "sector": "left",
+            "role": "inward_witness",
+            "pixel_local": [
+              58,
+              135
+            ],
+            "rgb": [
+              77,
+              52,
+              33
+            ]
+          },
+          {
+            "contact_id": "CL-002",
+            "sector": "left",
+            "role": "inward_witness",
+            "pixel_local": [
+              58,
+              160
+            ],
+            "rgb": [
+              74,
+              65,
+              57
+            ]
+          },
+          {
+            "contact_id": "CL-002",
+            "sector": "left",
+            "role": "inward_witness",
+            "pixel_local": [
+              62,
+              190
+            ],
+            "rgb": [
+              68,
+              64,
+              55
+            ]
+          },
+          {
+            "contact_id": "CL-002",
+            "sector": "right",
+            "role": "inward_witness",
+            "pixel_local": [
+              220,
+              110
+            ],
+            "rgb": [
+              40,
+              33,
+              33
+            ]
+          },
+          {
+            "contact_id": "CL-002",
+            "sector": "right",
+            "role": "inward_witness",
+            "pixel_local": [
+              221,
+              135
+            ],
+            "rgb": [
+              52,
+              55,
+              52
+            ]
+          },
+          {
+            "contact_id": "CL-002",
+            "sector": "right",
+            "role": "inward_witness",
+            "pixel_local": [
+              221,
+              160
+            ],
+            "rgb": [
+              34,
+              31,
+              30
+            ]
+          },
+          {
+            "contact_id": "CL-002",
+            "sector": "right",
+            "role": "inward_witness",
+            "pixel_local": [
+              218,
+              190
+            ],
+            "rgb": [
+              8,
+              6,
+              5
+            ]
+          }
+        ]
+      },
+      "C-003": {
+        "sample_count": 32,
+        "median_rgb": [
+          49,
+          38,
+          32
+        ],
+        "min_rgb": [
+          12,
+          2,
+          2
+        ],
+        "max_rgb": [
+          156,
+          116,
+          111
+        ],
+        "samples": [
+          {
+            "contact_id": "CL-002",
+            "sector": "top",
+            "role": "outward_witness",
+            "pixel_local": [
+              120,
+              56
+            ],
+            "rgb": [
+              50,
+              43,
+              38
+            ]
+          },
+          {
+            "contact_id": "CL-002",
+            "sector": "top",
+            "role": "outward_witness",
+            "pixel_local": [
+              145,
+              55
+            ],
+            "rgb": [
+              32,
+              21,
+              16
+            ]
+          },
+          {
+            "contact_id": "CL-002",
+            "sector": "top",
+            "role": "outward_witness",
+            "pixel_local": [
+              170,
+              56
+            ],
+            "rgb": [
+              62,
+              53,
+              54
+            ]
+          },
+          {
+            "contact_id": "CL-002",
+            "sector": "top",
+            "role": "outward_witness",
+            "pixel_local": [
+              195,
+              56
+            ],
+            "rgb": [
+              59,
+              55,
+              50
+            ]
+          },
+          {
+            "contact_id": "CL-002",
+            "sector": "bottom",
+            "role": "outward_witness",
+            "pixel_local": [
+              100,
+              241
+            ],
+            "rgb": [
+              42,
+              15,
+              9
+            ]
+          },
+          {
+            "contact_id": "CL-002",
+            "sector": "bottom",
+            "role": "outward_witness",
+            "pixel_local": [
+              130,
+              242
+            ],
+            "rgb": [
+              28,
+              3,
+              3
+            ]
+          },
+          {
+            "contact_id": "CL-002",
+            "sector": "bottom",
+            "role": "outward_witness",
+            "pixel_local": [
+              160,
+              242
+            ],
+            "rgb": [
+              12,
+              5,
+              3
+            ]
+          },
+          {
+            "contact_id": "CL-002",
+            "sector": "bottom",
+            "role": "outward_witness",
+            "pixel_local": [
+              195,
+              241
+            ],
+            "rgb": [
+              49,
+              44,
+              42
+            ]
+          },
+          {
+            "contact_id": "CL-002",
+            "sector": "left",
+            "role": "outward_witness",
+            "pixel_local": [
+              55,
+              110
+            ],
+            "rgb": [
+              83,
+              83,
+              75
+            ]
+          },
+          {
+            "contact_id": "CL-002",
+            "sector": "left",
+            "role": "outward_witness",
+            "pixel_local": [
+              54,
+              135
+            ],
+            "rgb": [
+              56,
+              39,
+              27
+            ]
+          },
+          {
+            "contact_id": "CL-002",
+            "sector": "left",
+            "role": "outward_witness",
+            "pixel_local": [
+              54,
+              160
+            ],
+            "rgb": [
+              82,
+              75,
+              67
+            ]
+          },
+          {
+            "contact_id": "CL-002",
+            "sector": "left",
+            "role": "outward_witness",
+            "pixel_local": [
+              58,
+              190
+            ],
+            "rgb": [
+              74,
+              74,
+              65
+            ]
+          },
+          {
+            "contact_id": "CL-002",
+            "sector": "right",
+            "role": "outward_witness",
+            "pixel_local": [
+              224,
+              110
+            ],
+            "rgb": [
+              22,
+              21,
+              18
+            ]
+          },
+          {
+            "contact_id": "CL-002",
+            "sector": "right",
+            "role": "outward_witness",
+            "pixel_local": [
+              225,
+              135
+            ],
+            "rgb": [
+              48,
+              44,
+              36
+            ]
+          },
+          {
+            "contact_id": "CL-002",
+            "sector": "right",
+            "role": "outward_witness",
+            "pixel_local": [
+              225,
+              160
+            ],
+            "rgb": [
+              20,
+              5,
+              3
+            ]
+          },
+          {
+            "contact_id": "CL-002",
+            "sector": "right",
+            "role": "outward_witness",
+            "pixel_local": [
+              222,
+              190
+            ],
+            "rgb": [
+              52,
+              13,
+              7
+            ]
+          },
+          {
+            "contact_id": "CL-003",
+            "sector": "top",
+            "role": "inward_witness",
+            "pixel_local": [
+              120,
+              49
+            ],
+            "rgb": [
+              68,
+              62,
+              51
+            ]
+          },
+          {
+            "contact_id": "CL-003",
+            "sector": "top",
+            "role": "inward_witness",
+            "pixel_local": [
+              145,
+              48
+            ],
+            "rgb": [
+              62,
+              50,
+              44
+            ]
+          },
+          {
+            "contact_id": "CL-003",
+            "sector": "top",
+            "role": "inward_witness",
+            "pixel_local": [
+              170,
+              48
+            ],
+            "rgb": [
+              27,
+              19,
+              17
+            ]
+          },
+          {
+            "contact_id": "CL-003",
+            "sector": "top",
+            "role": "inward_witness",
+            "pixel_local": [
+              184,
+              51
+            ],
+            "rgb": [
+              23,
+              9,
+              9
+            ]
+          },
+          {
+            "contact_id": "CL-003",
+            "sector": "bottom",
+            "role": "inward_witness",
+            "pixel_local": [
+              90,
+              248
+            ],
+            "rgb": [
+              85,
+              78,
+              73
+            ]
+          },
+          {
+            "contact_id": "CL-003",
+            "sector": "bottom",
+            "role": "inward_witness",
+            "pixel_local": [
+              120,
+              250
+            ],
+            "rgb": [
+              37,
+              35,
+              33
+            ]
+          },
+          {
+            "contact_id": "CL-003",
+            "sector": "bottom",
+            "role": "inward_witness",
+            "pixel_local": [
+              150,
+              251
+            ],
+            "rgb": [
+              43,
+              38,
+              32
+            ]
+          },
+          {
+            "contact_id": "CL-003",
+            "sector": "bottom",
+            "role": "inward_witness",
+            "pixel_local": [
+              184,
+              247
+            ],
+            "rgb": [
+              13,
+              6,
+              3
+            ]
+          },
+          {
+            "contact_id": "CL-003",
+            "sector": "left",
+            "role": "inward_witness",
+            "pixel_local": [
+              51,
+              110
+            ],
+            "rgb": [
+              122,
+              97,
+              88
+            ]
+          },
+          {
+            "contact_id": "CL-003",
+            "sector": "left",
+            "role": "inward_witness",
+            "pixel_local": [
+              48,
+              135
+            ],
+            "rgb": [
+              113,
+              101,
+              96
+            ]
+          },
+          {
+            "contact_id": "CL-003",
+            "sector": "left",
+            "role": "inward_witness",
+            "pixel_local": [
+              47,
+              160
+            ],
+            "rgb": [
+              156,
+              116,
+              111
+            ]
+          },
+          {
+            "contact_id": "CL-003",
+            "sector": "left",
+            "role": "inward_witness",
+            "pixel_local": [
+              51,
+              190
+            ],
+            "rgb": [
+              32,
+              2,
+              2
+            ]
+          },
+          {
+            "contact_id": "CL-003",
+            "sector": "right",
+            "role": "inward_witness",
+            "pixel_local": [
+              228,
+              110
+            ],
+            "rgb": [
+              56,
+              56,
+              54
+            ]
+          },
+          {
+            "contact_id": "CL-003",
+            "sector": "right",
+            "role": "inward_witness",
+            "pixel_local": [
+              229,
+              135
+            ],
+            "rgb": [
+              29,
+              27,
+              25
+            ]
+          },
+          {
+            "contact_id": "CL-003",
+            "sector": "right",
+            "role": "inward_witness",
+            "pixel_local": [
+              231,
+              160
+            ],
+            "rgb": [
+              28,
+              19,
+              15
+            ]
+          },
+          {
+            "contact_id": "CL-003",
+            "sector": "right",
+            "role": "inward_witness",
+            "pixel_local": [
+              225,
+              190
+            ],
+            "rgb": [
+              50,
+              14,
+              6
+            ]
+          }
+        ]
+      },
+      "C-004": {
+        "sample_count": 16,
+        "median_rgb": [
+          45,
+          33,
+          29
+        ],
+        "min_rgb": [
+          0,
+          0,
+          0
+        ],
+        "max_rgb": [
+          98,
+          91,
+          82
+        ],
+        "samples": [
+          {
+            "contact_id": "CL-003",
+            "sector": "top",
+            "role": "outward_witness",
+            "pixel_local": [
+              120,
+              45
+            ],
+            "rgb": [
+              89,
+              83,
+              76
+            ]
+          },
+          {
+            "contact_id": "CL-003",
+            "sector": "top",
+            "role": "outward_witness",
+            "pixel_local": [
+              145,
+              44
+            ],
+            "rgb": [
+              98,
+              91,
+              82
+            ]
+          },
+          {
+            "contact_id": "CL-003",
+            "sector": "top",
+            "role": "outward_witness",
+            "pixel_local": [
+              170,
+              44
+            ],
+            "rgb": [
+              32,
+              26,
+              28
+            ]
+          },
+          {
+            "contact_id": "CL-003",
+            "sector": "top",
+            "role": "outward_witness",
+            "pixel_local": [
+              184,
+              47
+            ],
+            "rgb": [
+              90,
+              78,
+              69
+            ]
+          },
+          {
+            "contact_id": "CL-003",
+            "sector": "bottom",
+            "role": "outward_witness",
+            "pixel_local": [
+              90,
+              252
+            ],
+            "rgb": [
+              31,
+              25,
+              21
+            ]
+          },
+          {
+            "contact_id": "CL-003",
+            "sector": "bottom",
+            "role": "outward_witness",
+            "pixel_local": [
+              120,
+              254
+            ],
+            "rgb": [
+              40,
+              37,
+              35
+            ]
+          },
+          {
+            "contact_id": "CL-003",
+            "sector": "bottom",
+            "role": "outward_witness",
+            "pixel_local": [
+              150,
+              255
+            ],
+            "rgb": [
+              78,
+              72,
+              62
+            ]
+          },
+          {
+            "contact_id": "CL-003",
+            "sector": "bottom",
+            "role": "outward_witness",
+            "pixel_local": [
+              184,
+              251
+            ],
+            "rgb": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "contact_id": "CL-003",
+            "sector": "left",
+            "role": "outward_witness",
+            "pixel_local": [
+              47,
+              110
+            ],
+            "rgb": [
+              70,
+              70,
+              68
+            ]
+          },
+          {
+            "contact_id": "CL-003",
+            "sector": "left",
+            "role": "outward_witness",
+            "pixel_local": [
+              44,
+              135
+            ],
+            "rgb": [
+              20,
+              17,
+              13
+            ]
+          },
+          {
+            "contact_id": "CL-003",
+            "sector": "left",
+            "role": "outward_witness",
+            "pixel_local": [
+              43,
+              160
+            ],
+            "rgb": [
+              63,
+              43,
+              30
+            ]
+          },
+          {
+            "contact_id": "CL-003",
+            "sector": "left",
+            "role": "outward_witness",
+            "pixel_local": [
+              47,
+              190
+            ],
+            "rgb": [
+              50,
+              18,
+              18
+            ]
+          },
+          {
+            "contact_id": "CL-003",
+            "sector": "right",
+            "role": "outward_witness",
+            "pixel_local": [
+              232,
+              110
+            ],
+            "rgb": [
+              40,
+              30,
+              29
+            ]
+          },
+          {
+            "contact_id": "CL-003",
+            "sector": "right",
+            "role": "outward_witness",
+            "pixel_local": [
+              233,
+              135
+            ],
+            "rgb": [
+              70,
+              73,
+              67
+            ]
+          },
+          {
+            "contact_id": "CL-003",
+            "sector": "right",
+            "role": "outward_witness",
+            "pixel_local": [
+              235,
+              160
+            ],
+            "rgb": [
+              14,
+              6,
+              4
+            ]
+          },
+          {
+            "contact_id": "CL-003",
+            "sector": "right",
+            "role": "outward_witness",
+            "pixel_local": [
+              229,
+              190
+            ],
+            "rgb": [
+              30,
+              10,
+              4
+            ]
+          }
+        ]
+      }
+    },
+    "top_witness_rgb_mismatches": 0,
+    "geometry_before_uv_requirement": "A05 must establish corrected component-local geometry and face ownership before UV placement is evaluated.",
+    "no_color_grading": true
+  },
+  "proven_findings": [
+    "A04 C002 and C003 widths were close to the source-owner ratios, but their depths exceeded the corresponding left-owner measurements.",
+    "The excess depth was approximately 15.91 percent for C002 and 7.70 percent for C003.",
+    "Exact top contact stations are nested and have varying same-row widths; a rectangle is not source-authorized for either base course.",
+    "CL002 and CL003 exact extrema midpoints differ by only 0.5 px in X and 1.0 px in Y, but these midpoints remain reference-only and are not promoted to source centers.",
+    "The two upright owner views agree that C003 is the taller visible structural course and that the total visible base remains 35 cm.",
+    "Exact top witness RGB values remain byte-identical to the authoritative source; the A04 displayed-color issue is therefore not evidence for source recoloring."
+  ],
+  "blocked_unknowns_preserved": [
+    "fully enumerated closed source-owned C002 and C003 contours",
+    "source-authored component centers",
+    "hidden contact closure",
+    "one unified cross-view pixel scale",
+    "source-exact individual course heights",
+    "physical pixel identity across different panels"
+  ],
+  "a05_contract_authority_now_available": [
+    "C002 and C003 owner-view footprint extents",
+    "exact top-view contact station constraints",
+    "same-view course-height evidence intervals",
+    "component-local source-pixel routing",
+    "A04 plinth preservation and A04 base rejection"
+  ],
+  "review_board": {
+    "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A05_Measurement/SM_GIA_BloodAxeCairnstone_A005_A05_MEASUREMENT_ONLY_REVIEW.png",
+    "sha256": "e7275844c9ecda918a1838c2b1a164ba42133b29600fae0ec8e1117f80f218cb",
+    "artifact_classification": "proof only",
+    "geometry_depicted": false
+  },
+  "validation": {
+    "source_hash_checks_passed": true,
+    "exact_top_contact_samples_checked": 48,
+    "top_witness_samples_checked": 96,
+    "top_witness_rgb_mismatches": 0,
+    "measurement_only_controls_passed": true,
+    "failures": 0
+  }
+}
