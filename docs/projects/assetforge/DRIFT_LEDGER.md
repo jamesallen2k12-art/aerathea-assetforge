@@ -542,3 +542,18 @@ Core authority: `AGENTS.md` Core Principles govern this ledger. Drifted artifact
 - Recovery decision: A01 achieved a technical `20/20` pass at `8672 / 3988 / 1820 / 692` triangles, but Flamestrike rejected its visual candidate because the bottom base layer reads cut off, the plinth/ring/lower debris-ring sequence is incomplete, and rendered pixel color is off. A01 is `quarantined` as a visual candidate; its audit is `proof only`. A fresh-context A02 correction pass is authorized after a manual restart checkpoint. It is not `Fully game-ready`; Unreal outputs remain zero.
 - Flamestrike approval: explicit full approval and authority on 2026-07-20 to audit and correct Steps 01-16 and make any required changes needed to match the source image.
 - Follow-up Core/Kaizen improvement: DCC reconstruction gates must enforce both sides of an approved triangle range and enumerate source-critical macro features. Exact bounds/topology/containment cannot substitute for visual-fidelity evidence.
+
+### 2026-07-20 22:47 EDT - A005 A03 Source/Target Proportion Conflict
+
+- Asset or scope: `SM_GIA_BloodAxeCairnstone_A005` A03 Steps 11-16 visual correction candidate and proof family.
+- Detected by: Flamestrike's direct comparison against the original concept sheet, followed by source/3D proportion review.
+- Last known Core-valid state: A005 source image and Steps 01-10 evidence remain `authoritative`; A01 and A02 remain quarantined; committed A02 visual-rejection recovery state `ea6294076d2e1e2502426ed876e3aa55aef4c5bc` is the prior production boundary.
+- First drift action: the A03 contract allowed Step 11 component-local target-space normalization to override the concept's relative visible proportions.
+- Assumption or interpretation that caused drift: the conflicting Step 11 C001 `120 x 90 cm` allocation was treated as compatible with the source concept, even though the monolith visibly overhung the narrower C002/C003 supports and all ten recorded within-axis source/target ratio checks conflicted.
+- Affected outputs: A03 contract/plan, builder, renderer, auditor, Blender source, textures, FBXs, manifest, validation, internal Attempts01-18, and final-path render.
+- Artifact statuses: A03 execution package is `quarantined`; A03 attempts and audits are `proof only / quarantined`; the source and non-conflicting overall `140 x 110 x 220 cm`, `35 cm` base, and pivot anchors remain `authoritative`.
+- Quarantined locations or records: outputs are preserved in their A03 paths; recovery record is `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/VISUAL_CORRECTION_A03_SOURCE_TARGET_PROPORTION_CONFLICT_RECOVERY_RECORD.md`; stop-line checkpoint is `Saved/ProjectRecovery/20260720-224730/`.
+- Recovery decision: do not repair A03 forward. A04 makes concept-relative visible proportions authoritative while retaining only the non-conflicting overall envelope, base span, pivot, topology, performance, UV/material, LOD, collision, and packaging rules.
+- Flamestrike approval: explicit complete authority on 2026-07-21 to correct the 3D render across Steps 01-16, with the exact structural requirement of one plinth, one supporting slab, and a larger slab under the first.
+- Recovery result: A04 independently passes `17/17`; front structural widths are `398 / 485 / 549 px`; connected footprints are `108 / 120.01 / 135.84 / 140 cm`; A01-A03 hashes remain unchanged; exact A04 review remains pending Flamestrike visual approval.
+- Follow-up Core/Kaizen improvement: when explicit physical allocations conflict with an approved concept's relative component proportions, the conflict must be resolved before geometry and the final validator must measure the user-visible component hierarchy directly.

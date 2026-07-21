@@ -1,12 +1,41 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: A03 quarantined by source/target proportion conflict; A04 authority decision required
+Status: A04 DCC game-ready candidate complete; Flamestrike visual review pending
 
 Artifact classification: `authoritative`
 
-Updated: 2026-07-20
+Updated: 2026-07-21
 
-## Active Resume Boundary - A03 Source/Target Proportion Conflict
+## Active Resume Boundary - A04 Three-Mass Correction Candidate
+
+Flamestrike granted complete authority to correct the 3D render across Steps
+01-16 and required one plinth, one supporting slab, and a larger slab below
+the first. This approved the A04 concept-relative proportion rule proposed by
+the A03 Core recovery record.
+
+- Contract: `A005-CR-VISUAL-CORRECTION-A04`.
+- A04 status: `candidate`; pipeline status: `DCC game-ready candidate`.
+- Independent audit: `17/17` pass.
+- Exact overall bounds: `140 x 110 x 220 cm`; pivot `[0,0,0]`.
+- Structural front widths: `398 / 485 / 549 px` for plinth, upper slab, and
+  larger lower slab.
+- Connected-shell footprints: `108 x 78`, `120.01 x 89.92`,
+  `135.84 x 103.89`, and shallow-apron `140 x 110 cm`.
+- LOD triangles: `9856 / 4532 / 2068 / 788`.
+- Source-owned Base Color: `154948` pixels; mismatches `0`.
+- Clean FBX re-import: `4/4`; collision hulls: `4`; materials: `1`.
+- Exact review image:
+  `Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A04/SM_GIA_BloodAxeCairnstone_A005_FINAL_CORRECTED_3D_A04.png`.
+- Final image SHA-256:
+  `e2e62ac9a7a8ad17aa56200c6e3d2f155927498c0068cb345af45b51dd53aff1`.
+- Review record: `review/VISUAL_CORRECTION_A04_FINAL_REVIEW.md`.
+- A01-A03 remain unchanged and `quarantined`; internal A04 Attempts01-04 are
+  `quarantined`; Attempt05 is `proof only`.
+- Current stop: Flamestrike may approve, reject, or mark blocked only this
+  exact A04 review candidate.
+- Unreal/Step 17 remains unauthorized; `Fully game-ready` remains `false`.
+
+## Superseded Resume Boundary - A03 Source/Target Proportion Conflict
 
 Flamestrike clarified that the original concept sheet is the comparison target
 and identified the 3D image as materially different. A03 improved source RGB,

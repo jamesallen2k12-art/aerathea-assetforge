@@ -1,0 +1,97 @@
+{
+  "schema": "aerathea.a005_visual_correction_a04_plan.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-VISUAL-CORRECTION-A04",
+  "date": "2026-07-21",
+  "status": "executed_candidate_pending_flamestrike_visual_review",
+  "artifact_classification": "authoritative execution plan",
+  "source_authority": {
+    "path": "docs/assets/reference/bloodaxe_cairnstone_asset/REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate.png",
+    "sha256": "4b953abb87f5f254a5f51c6214e76d3f72c4fc55bc2fa4e4d605b2440d6e53c2",
+    "modified": false
+  },
+  "authority_inputs": {
+    "source": {
+      "path": "docs/assets/reference/bloodaxe_cairnstone_asset/REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate.png",
+      "sha256": "4b953abb87f5f254a5f51c6214e76d3f72c4fc55bc2fa4e4d605b2440d6e53c2"
+    },
+    "front_measurement": {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_06_FRONT_MEASUREMENT_MANIFEST.json",
+      "sha256": "c71932bef2016808d24fdc9aed47b9f4a3c32f59bdd45a551aab6804d877ecef"
+    },
+    "left_measurement": {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_07_LEFT_MEASUREMENT_MANIFEST.json",
+      "sha256": "e08d868925967a05d465cecadc4810a3f3e2b3cdb5be342e32ebdd807e0e9725"
+    },
+    "step11_blueprint": {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_11_CONSTRUCTION_BLUEPRINT.json",
+      "sha256": "a0859422c14dbf00b51d627c0ba257abc064e7dc78abe5b106bd0c2ee8cc75e7"
+    },
+    "step14_uv": {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_14_UV_OWNERSHIP_PLAN.json",
+      "sha256": "ab0367c9ae2e7741822e9937f55e95d653e15914faef2f7f5977718088010283"
+    },
+    "step14_material": {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_14_MATERIAL_INTERPRETATION_MANIFEST.json",
+      "sha256": "159f94034408d96746eb6cb64c909093861cdad1e1157b81a2b420d103c74685"
+    },
+    "a03_recovery_record": {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/VISUAL_CORRECTION_A03_SOURCE_TARGET_PROPORTION_CONFLICT_RECOVERY_RECORD.md",
+      "sha256": "0026e30a96f5e97bd2f3bbb926766cc482f9feadd000f31914b35f6ea35d881b"
+    }
+  },
+  "locked_dimensions_cm": {
+    "assembled": [140.0, 110.0, 220.0],
+    "base_height": 35.0,
+    "pivot": [0.0, 0.0, 0.0]
+  },
+  "component_targets_cm": {
+    "C001_PLINTH": {
+      "visible_z": [34.0, 220.0],
+      "max_footprint": [108.0, 78.0],
+      "contact_max": [96.0, 68.0]
+    },
+    "C002_UPPER_SLAB": {
+      "visible_z": [22.0, 35.5],
+      "footprint": [120.0, 90.0]
+    },
+    "C003_LOWER_SLAB": {
+      "visible_z": [8.0, 23.0],
+      "footprint": [136.0, 104.0]
+    },
+    "C004_RUBBLE_APRON": {
+      "visible_z": [0.0, 8.5],
+      "footprint": [140.0, 110.0],
+      "structural_slab": false
+    }
+  },
+  "source_ratio_evidence": {
+    "front_upper_over_apron": 0.8506944444444444,
+    "front_lower_over_apron": 0.9618055555555556,
+    "front_plinth_contact_over_upper": 0.7959183673469388,
+    "records": [
+      "F-C001-R330 width 195 px",
+      "F-C002-R360 width 245 px",
+      "F-C003-R390 width 277 px",
+      "F-C004-R410 width 288 px"
+    ]
+  },
+  "required_outputs": {
+    "blend": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_DCCGameReady_VisualCorrection_A04.blend",
+    "manifest": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_VISUAL_CORRECTION_A04_MANIFEST.json",
+    "texture_root": "SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/VisualCorrection_A04",
+    "export_root": "SourceAssets/Exports/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/VisualCorrection_A04",
+    "proof_root": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A04",
+    "final_image": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A04/SM_GIA_BloodAxeCairnstone_A005_FINAL_CORRECTED_3D_A04.png",
+    "validation": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/VISUAL_CORRECTION_A04_VALIDATION.json"
+  },
+  "preservation": {
+    "A01_blend_sha256": "4007ce3732a4109712767341abd4b295c4819ede8970c99a2fa089c48d921d36",
+    "A02_final_sha256": "511664eb9ea4192f9d86cd1d08f320158b1d70df6a57bfc2130543c80c47247d",
+    "A03_blend_sha256": "ac45fd9e863373fe9f6a8062339becb49bbcbbb4838fc5b76c0a709cd4877f96",
+    "A03_final_sha256": "64f36f242079eaa3e07d2088d7587a5ddbe5ee4702e7beb19e98eab6d4ec049c"
+  },
+  "unreal_outputs": 0,
+  "fully_game_ready": false,
+  "review_rule": "Open only the independently accepted final A04 image in a visible desktop window."
+}
