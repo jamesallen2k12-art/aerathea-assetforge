@@ -69,3 +69,27 @@
 - Pending authority: Flamestrike visual approval, rejection, or blocked decision on the A03 review board.
 - Unreal authority: `false`.
 - Fully game-ready: `false`.
+
+## A04 Strict Scanline Reconstruction Authority
+
+- Date: 2026-07-21.
+- Flamestrike decision: use the exact successful Cairn Stone process with the
+  approved Hammer base image; plan the work for a fresh-context reset; full
+  authority is granted to complete the new pass; present only the final completed
+  image.
+- Contract: `SB-VF-A04-STRICT-SCANLINE`.
+- Method authority: fresh source-only build, lossless `AET_RGB_SCANLINE_V1`
+  capture, zero-difference scan proof, integer-coordinate crops, source-owned
+  component masks and contours, exact-copy visible RGB, declared view ownership,
+  no visible averaging or analytic replacement, and fail-closed strict audit.
+- A03 decision: superseded and quarantined as the A04 visual solution because its
+  geometry was pixel-registered but was not constructed from the complete pixel
+  scan. Its technical evidence remains `proof only`.
+- Scope: source lock through final DCC image, including fresh geometry, UV/PBR,
+  LOD0-LOD3, collision, FBX/GLB, clean reimport, internal registered iterations,
+  final audit, checkpoint, and visible final-image review.
+- Review behavior: intermediate candidate images are internal; only the final
+  completed A04 image is presented unless an evidence block prevents completion.
+- Excluded: Unreal import, `Fully game-ready`, self-approval of visual quality,
+  and unrelated worktree changes.
+- Execution state: `approved and queued for the first post-reset production turn`.

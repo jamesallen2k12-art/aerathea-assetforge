@@ -7321,3 +7321,24 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260721-173522/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260721-173522/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 18:07:17 EDT -0400 - Siege Breaker A04 strict scanline rebuild approved for post-reset execution
+
+- Flamestrike directed Codex to use the exact successful Cairn Stone process with the approved Hammer base image, granted full authority for the new pass, requested fresh context after reset, and requested only the final completed image.
+- Active contract: `docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/VISUAL_FIDELITY_A04_STRICT_SCANLINE_RECONSTRUCTION_CONTRACT.md`.
+- Method: fresh source-only reconstruction; fresh `AET_RGB_SCANLINE_V1` zero-difference scan; integer-coordinate crops; exact source-owned component masks, contours, and visible RGB; declared view ownership; no visible averaging or analytic replacement; fail-closed strict gate.
+- A03 status: quarantined as the A04 visual solution; its audits remain `proof only` and its geometry/textures are forbidden as A04 construction inputs.
+- A04 production started: `false`.
+- Review rule: do not show intermediate candidate images; open only the final completed A04 image unless a genuine evidence block prevents completion.
+- Unreal authority: `false`; Fully game-ready: `false`.
+- Next resume step: perform the Core resume handshake, read the active A04 contract and fresh checkpoint, then execute A04 end-to-end without requesting another approval unless blocked by evidence.
+
+### 2026-07-21 18:09:23 EDT -0400 - Siege Breaker A04 strict scanline reset handoff ready
+
+- Snapshot: `Saved/ProjectRecovery/20260721-180923/`
+- Git: branch `main`, HEAD `526ad5d`, status lines `277`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-180923/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-180923/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-180923/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
