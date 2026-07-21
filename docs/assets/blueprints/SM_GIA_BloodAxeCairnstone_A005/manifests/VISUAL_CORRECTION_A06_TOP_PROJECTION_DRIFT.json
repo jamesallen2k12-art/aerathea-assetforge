@@ -1,0 +1,57 @@
+{
+  "schema": "aerathea.visual_correction_a06_top_projection_drift.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "date": "2026-07-21",
+  "status": "confirmed_visual_rejection_core_recovery",
+  "artifact_classification": "authoritative recovery decision record",
+  "flamestrike_decision": {
+    "classification": "rejected",
+    "statement": "This is still incorrect ... if you compare the top down view of the original ... you can get an idea as to how far out those rings should be ..."
+  },
+  "last_known_core_valid_state": {
+    "source_top_panel": {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_TOP.png",
+      "sha256": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf"
+    },
+    "exterior_measurement": {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/VISUAL_CORRECTION_A06_EXTERIOR_EDGE_AUDIT.json",
+      "sha256": "89539f3688af26d8b9410f01e927c9df17a8cb21b15c3c966178906332d49bdd",
+      "classification": "authoritative measurement record"
+    },
+    "plinth": "exact A04 plinth geometry and UV signatures remain authoritative visual reference"
+  },
+  "first_drift_action": "A06 placed the source-derived maximum C002/C003 exterior spans on lower sidewall rings, tapered the visible top crowns inward, and accepted whole-component bounds as proof of top-view fidelity.",
+  "invalid_assumption": "A component's maximum XY bounds anywhere in its shell were assumed to prove the exterior projection of the visible upper crown in the original top view.",
+  "top_projection_evidence_cm": {
+    "C002": {
+      "rejected_a06_visible_crown": [116.0, 87.0],
+      "source_derived_exterior_target": [123.846154, 92.707424],
+      "total_deficit": [7.846154, 5.707424],
+      "per_side_deficit": [3.923077, 2.853712]
+    },
+    "C003": {
+      "rejected_a06_visible_crown": [130.0, 99.0],
+      "source_derived_exterior_target": [137.307692, 105.196507],
+      "total_deficit": [7.307692, 6.196507],
+      "per_side_deficit": [3.653846, 3.0982535]
+    },
+    "C004_target": [140.0, 110.0]
+  },
+  "affected_outputs": {
+    "a06_blender_fbx_texture_package": "quarantined",
+    "a06_final_image": "rejected; quarantined",
+    "a06_validation": "proof only; invalid as top-view silhouette authority",
+    "a06_contract_and_plan": "authoritative historical execution boundary only",
+    "a06_exterior_measurement_audit": "authoritative measurement record; its application to sidewalls was invalid",
+    "a06_top_projection_diagnostic": "proof only"
+  },
+  "proof": {
+    "local_audit": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/CoreRecovery/20260721_A06_TopProjectionDrift/A005_A06_TOP_PROJECTION_DRIFT_AUDIT.json",
+    "local_review_board": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/CoreRecovery/20260721_A06_TopProjectionDrift/A005_A06_TOP_PROJECTION_DRIFT_REVIEW.png",
+    "review_board_sha256": "a19dac08ac33ab2e1d4f43cc2b1cfafa8102b76ad790e89b1a3923001afdca6a"
+  },
+  "smallest_sufficient_recovery": "Return to the exact A04 plinth plus authoritative source/exterior measurements. Build an isolated A07 base whose top-visible C002, C003, and C004 crown boundaries reach the source-derived exterior targets, and add an explicit orthographic top-crown gate before final review.",
+  "repair_forward_from_a06_artifact": false,
+  "unreal_authorized": false,
+  "fully_game_ready": false
+}

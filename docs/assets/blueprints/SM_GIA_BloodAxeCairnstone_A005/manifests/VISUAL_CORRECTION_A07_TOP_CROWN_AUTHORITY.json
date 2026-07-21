@@ -1,0 +1,39 @@
+{
+  "schema": "aerathea.visual_correction_a07_top_crown_authority.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "date": "2026-07-21",
+  "status": "pass_authoritative_exterior_edge_measurement",
+  "decision": "authoritative exterior-edge measurement record ready for A07 contract",
+  "artifact_classification": "authoritative measurement application record",
+  "source_top": {
+    "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_TOP.png",
+    "sha256": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf"
+  },
+  "exterior_measurement_source": {
+    "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/VISUAL_CORRECTION_A06_EXTERIOR_EDGE_AUDIT.json",
+    "sha256": "89539f3688af26d8b9410f01e927c9df17a8cb21b15c3c966178906332d49bdd"
+  },
+  "recovery_source": {
+    "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/VISUAL_CORRECTION_A06_TOP_PROJECTION_DRIFT.json",
+    "sha256": "d91c65b4abc0af31355697824320efa4f10d9e0271a43478f101e2b05d5c0fc4"
+  },
+  "top_visible_crown_targets_cm": {
+    "C002": [123.846154, 92.707424],
+    "C003": [137.307692, 105.196507],
+    "C004": [140.0, 110.0]
+  },
+  "placement_rule": "Each target is the outer boundary of the component's top-visible crown, not merely a lower sidewall or hidden maximum bound.",
+  "tolerance_cm": 0.01,
+  "required_proofs": [
+    "connected-component top-band XY measurement",
+    "true orthographic top render",
+    "source/top-render visual comparison before final review"
+  ],
+  "prohibited": [
+    "using whole-shell bounds alone as top-view proof",
+    "placing the exterior target only on a lower sidewall",
+    "tapering inward before the visible crown",
+    "loading the A06 Blender or FBX package as A07 geometry input",
+    "Unreal or Fully game-ready promotion"
+  ]
+}

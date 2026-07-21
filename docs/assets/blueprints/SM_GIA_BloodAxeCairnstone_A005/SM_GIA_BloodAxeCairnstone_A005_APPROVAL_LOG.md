@@ -1,12 +1,49 @@
 # SM_GIA_BloodAxeCairnstone_A005 Approval Log
 
-Status: A06 DCC game-ready candidate complete; Flamestrike visual approval pending
+Status: A07 DCC game-ready candidate complete; Flamestrike visual approval pending
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-21
 
-## A06 Complete Correction Authority And Technical Result
+## A07 Complete Top-Crown Correction And Technical Result
+
+- Date: 2026-07-21
+- Execution authority: Flamestrike's full correction authority plus explicit
+  A06 rejection and top-down comparison direction
+- Contract ID: `A005-CR-VISUAL-CORRECTION-A07`
+- A06 geometry inputs: `0`; exact A04 plinth preserved
+- Top-visible crowns: C002 `123.846157 x 92.707424 cm`; C003
+  `137.307686 x 105.196507 cm`; C004 `140 x 110 cm`
+- True orthographic top proof: pass
+- Independent audit: `20/20`; clean FBX re-import: `4/4`
+- Final image SHA-256:
+  `a1e90a69e1784650c9b6040f59e3f33cb0332f62c5760db88ab8542111cd3044`
+- Artifact classification: `candidate`; pipeline status:
+  `DCC game-ready candidate`
+- Visual approval: pending; Unreal authority: `false`; `Fully game-ready`:
+  `false`
+
+## Superseded A06 Visible Rejection / A07 Top-Crown Recovery Authority
+
+- Date: 2026-07-21
+- Decision authority: Flamestrike
+- Decision: `rejected`; A06 package classification: `quarantined`
+- Direction: compare the original top-down view to determine how far the
+  rings must project
+- Confirmed root cause: A06 validated maximum shell bounds while tapering the
+  top-visible C002/C003 crowns inward
+- C002: visible crown `116 x 87 cm`; target
+  `123.846154 x 92.707424 cm`
+- C003: visible crown `130 x 99 cm`; target
+  `137.307692 x 105.196507 cm`
+- Retained authority: unchanged source/top panel, A06 exterior measurement
+  audit, exact A04 plinth, non-conflicting Step 11/14 rules
+- Recovery: isolated A07 rebuild with explicit top-visible crown extents,
+  top-band geometry gate, and true orthographic top proof
+- Unreal authority: `false`; `Fully game-ready`: `false`
+
+## Superseded A06 Complete Correction Authority And Technical Result
 
 - Date: 2026-07-21
 - Approver for execution: Flamestrike

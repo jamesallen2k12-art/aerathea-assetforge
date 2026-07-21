@@ -1,14 +1,63 @@
 # SM_GIA_BloodAxeCairnstone_A005 Artifact Index
 
-Status: A06 DCC game-ready candidate complete; Flamestrike visual approval pending
+Status: A07 DCC game-ready candidate complete; Flamestrike visual approval pending
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-21
 
-## Active A06 Exterior-Corrected Candidate
+## Active A07 Top-Crown-Corrected Candidate
 
-The A06 measurement gate separates actual component exterior limits from the invalid A05 alignment/contact spans. A06 preserves the exact A04 plinth, rebuilds the two structural oval base pieces at `123.846154 x 92.707424 cm` and `137.307692 x 105.196507 cm`, and passes the complete `18/18` audit. The package is a `candidate` / `DCC game-ready candidate` pending Flamestrike visual approval.
+A07 rebuilds isolated outputs from the exact A04 plinth and unchanged
+source/exterior measurement authority. It uses zero A06 geometry inputs and
+places all three source-derived exterior spans on the top-visible crown
+boundaries. The package passes `20/20` and is a `candidate` / `DCC game-ready
+candidate` pending Flamestrike visual approval.
+
+| Artifact | Status | Role |
+|---|---|---|
+| steps/VISUAL_CORRECTION_A07_CONTRACT.md | authoritative execution boundary | Locks the fresh-input, top-crown, proof, package, and downstream rules. |
+| manifests/VISUAL_CORRECTION_A07_TOP_CROWN_AUTHORITY.json | authoritative measurement application record | Converts the retained exterior measurements into explicit top-visible crown targets. |
+| manifests/VISUAL_CORRECTION_A07_PLAN.json | authoritative execution plan | Locks hashes, isolated paths, corrected construction, and new gates. |
+| Tools/DCC/build_bloodaxe_cairnstone_a005_visual_correction_a07.py | candidate builder | Produces the isolated A07 Blender, texture, LOD, collision, and FBX package with zero A06 geometry inputs. |
+| Tools/DCC/render_bloodaxe_cairnstone_a005_visual_correction_a07.py | proof-supporting renderer | Produces front/left/top proofs and the exact final review image. |
+| Tools/DCC/audit_bloodaxe_cairnstone_a005_visual_correction_a07.py | proof-supporting independent auditor | Verifies 20 gates including top-band crown extents and true orthographic top proof. |
+| SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_DCCGameReady_VisualCorrection_A07.blend | candidate | Audited A07 Blender source; SHA-256 `c9e07506a5adb77e55f87db9c956c2797ccbfe8038e350661c50f1029fe73aa3`. |
+| SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_VISUAL_CORRECTION_A07_MANIFEST.json | candidate sidecar | Records package hashes, counts, bounds, corrected crown construction, and preservation. |
+| SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/VisualCorrection_A07/ | candidate | Base Color, Normal, and ORM; source-owned RGB mismatch count `0`. |
+| SourceAssets/Exports/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/VisualCorrection_A07/ | candidate | LOD0-LOD3 FBXs; clean re-import `4/4`. |
+| manifests/VISUAL_CORRECTION_A07_VALIDATION.json | proof only | Independent `20/20` validation and Unreal firewall record. |
+| steps/VISUAL_CORRECTION_A07_OUTPUT_RECORD.md | authoritative technical result record | Records corrected crown dimensions, package evidence, and stop boundary. |
+| review/VISUAL_CORRECTION_A07_FINAL_REVIEW.md | candidate review record | Identifies the exact final image and requested visual decision. |
+| Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A07/ | proof only; local-only | Internal attempt, fixed-view proofs, top proof, final image, and render audit. |
+
+Final image SHA-256:
+`a1e90a69e1784650c9b6040f59e3f33cb0332f62c5760db88ab8542111cd3044`.
+
+Unreal, Step 17, `Fully game-ready`, approved-library, and visual-canon
+promotion remain unauthorized.
+
+## Superseded A06 Rejection / A07 Recovery Boundary
+
+Flamestrike rejected A06 after comparing the review against the original
+top-down view. A06's maximum shell bounds matched the measurement record, but
+its visible C002/C003 crown edges were tapered inward. The A06 production
+package is now `quarantined`; its validation is `proof only`; the exterior
+measurement audit remains `authoritative`.
+
+| Artifact | Status | Role |
+|---|---|---|
+| manifests/VISUAL_CORRECTION_A06_TOP_PROJECTION_DRIFT.json | authoritative recovery decision | Records the rejection, root cause, affected outputs, classifications, and smallest recovery. |
+| steps/VISUAL_CORRECTION_A06_TOP_PROJECTION_REJECTION_A07_RESTART_HANDOFF.md | authoritative recovery handoff | Locks the fresh A07 input and top-visible crown requirements. |
+| Tools/DCC/audit_bloodaxe_cairnstone_a005_a06_top_projection_recovery.py | proof-supporting diagnostic | Produces the true overhead A06 render and source comparison without changing geometry. |
+| Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/CoreRecovery/20260721_A06_TopProjectionDrift/ | proof only; local-only | Contains the rejected A06 overhead render, comparison board, and audit. |
+
+Unreal, Step 17, `Fully game-ready`, approved-library, and visual-canon
+promotion remain unauthorized.
+
+## Quarantined A06 Exterior-Corrected Candidate
+
+The A06 measurement gate correctly separated exterior limits from the invalid A05 alignment/contact spans, but A06 applied those limits below the visible crowns. Its historical `18/18` audit did not contain a top-visible crown gate. The package and exact final image are `quarantined`; the table below records the historical pre-rejection roles and is superseded by the recovery boundary above.
 
 | Artifact | Status | Role |
 |---|---|---|

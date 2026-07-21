@@ -6711,3 +6711,43 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260721-083342/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260721-083342/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 08:56:16 EDT -0400 - A005 A06 rejected; before top-view ring projection recovery audit
+
+- Snapshot: `Saved/ProjectRecovery/20260721-085616/`
+- Git: branch `main`, HEAD `67a2e7e`, status lines `254`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-085616/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-085616/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-085616/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 09:05:03 EDT -0400 - A005 A07 top-crown contract and preflight passed; before isolated geometry build
+
+- Snapshot: `Saved/ProjectRecovery/20260721-090503/`
+- Git: branch `main`, HEAD `67a2e7e`, status lines `266`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-090503/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-090503/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-090503/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 09:08:14 EDT -0400 - A005 A07 top-visible crowns pass 16 of 16; before final render
+
+- Snapshot: `Saved/ProjectRecovery/20260721-090814/`
+- Git: branch `main`, HEAD `67a2e7e`, status lines `273`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-090814/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-090814/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-090814/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 09:10:54 EDT -0400 - A005 A07 final top-crown correction passes 20 of 20; before scoped closeout
+
+- Snapshot: `Saved/ProjectRecovery/20260721-091054/`
+- Git: branch `main`, HEAD `67a2e7e`, status lines `275`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-091054/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-091054/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-091054/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

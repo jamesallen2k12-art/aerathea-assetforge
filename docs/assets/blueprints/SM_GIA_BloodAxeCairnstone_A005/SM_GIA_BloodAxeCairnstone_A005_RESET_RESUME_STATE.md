@@ -1,12 +1,62 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: A06 DCC game-ready candidate complete; Flamestrike visual approval pending
+Status: A07 DCC game-ready candidate complete; Flamestrike visual approval pending
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-21
 
-## Active Resume Boundary - A06 Exterior-Corrected Candidate
+## Active Resume Boundary - A07 Top-Crown-Corrected Candidate
+
+A07 is complete under `A005-CR-VISUAL-CORRECTION-A07` and passes the full
+independent audit.
+
+- Status: `candidate`; pipeline status: `DCC game-ready candidate`.
+- Independent audit: `20/20`; failures: `0`.
+- A06 geometry inputs: `0`; A06 package remains `quarantined`.
+- Top-visible crowns: C002 `123.846157 x 92.707424 cm`; C003
+  `137.307686 x 105.196507 cm`; C004 `140 x 110 cm`.
+- Exact A04 plinth geometry and UV signatures: preserved.
+- True orthographic top proof: passed and unclipped.
+- LOD triangles: `8704 / 4002 / 1826 / 696`; clean FBX re-import: `4/4`;
+  collision hulls: `4`; materials: `1`.
+- Source-owned RGB: `154948` pixels compared; mismatches: `0`.
+- Final review:
+  `Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A07/SM_GIA_BloodAxeCairnstone_A005_FINAL_CORRECTED_3D_A07.png`.
+- Final SHA-256:
+  `a1e90a69e1784650c9b6040f59e3f33cb0332f62c5760db88ab8542111cd3044`.
+- Output record: `steps/VISUAL_CORRECTION_A07_OUTPUT_RECORD.md`.
+- Review record: `review/VISUAL_CORRECTION_A07_FINAL_REVIEW.md`.
+- Current stop: Flamestrike may approve, reject, or mark blocked only this
+  exact A07 review candidate.
+- Unreal/Step 17 and `Fully game-ready` remain unauthorized and false.
+
+## Superseded Resume Boundary - A06 Rejection / A07 Top-Crown Recovery
+
+Flamestrike rejected the exact A06 review on 2026-07-21 and directed
+comparison with the original top-down view. The recovery audit confirms that
+A06 placed the correct maximum exterior spans on lower sidewalls but tapered
+the visible ring crowns inward.
+
+- A06 complete package and exact final image: `quarantined`.
+- A06 validation: `proof only`; invalid as top-view silhouette authority.
+- A06 exterior-edge measurement audit: remains `authoritative`.
+- C002 visible A06 crown: `116 x 87 cm`; required:
+  `123.846154 x 92.707424 cm`.
+- C003 visible A06 crown: `130 x 99 cm`; required:
+  `137.307692 x 105.196507 cm`.
+- C004 required top-visible outer crown: `140 x 110 cm`.
+- Exact A04 plinth: remains the authoritative visual construction reference.
+- Recovery record:
+  `manifests/VISUAL_CORRECTION_A06_TOP_PROJECTION_DRIFT.json`.
+- A07 handoff:
+  `steps/VISUAL_CORRECTION_A06_TOP_PROJECTION_REJECTION_A07_RESTART_HANDOFF.md`.
+- A07 must build isolated outputs from A04/source/measurement authority, add a
+  true orthographic top render and top-band crown gate, and stop at one DCC
+  review image.
+- Unreal/Step 17 remains unauthorized; `Fully game-ready` remains `false`.
+
+## Superseded Resume Boundary - A06 Exterior-Corrected Candidate
 
 Flamestrike granted full approval and authority on 2026-07-21 to continue correcting the base geometry and present the completed image. A06 completed the required exterior-edge measurement gate, rebuilt the isolated A06 package, and passed the complete independent audit.
 
