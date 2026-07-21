@@ -6501,3 +6501,13 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260721-064340/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260721-064340/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 06:46:31 EDT -0400 - A005 A04 corrected DCC candidate committed and pushed pending Flamestrike visual approval
+
+- Snapshot: `Saved/ProjectRecovery/20260721-064631/`
+- Git: branch `main`, HEAD `bafa4c3`, status lines `254`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-064631/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-064631/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-064631/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
