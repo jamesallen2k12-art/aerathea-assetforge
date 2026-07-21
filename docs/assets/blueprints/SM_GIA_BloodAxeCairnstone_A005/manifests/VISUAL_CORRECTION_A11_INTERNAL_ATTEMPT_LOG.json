@@ -1,0 +1,107 @@
+{
+  "schema": "aerathea.a005_visual_correction_a11_internal_attempt_log.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-VISUAL-CORRECTION-A11",
+  "date": "2026-07-21",
+  "artifact_classification": "proof only",
+  "attempts": [
+    {
+      "attempt": "Attempt01",
+      "status": "internally_rejected",
+      "image": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A11/InternalAttempts/Attempt01/A09_ATTEMPT.png",
+      "sha256": "68c69af4ee730c99d881ebc5e7d96ba3708c01d249c53e49179f07a17486a348",
+      "evidence": {
+        "A10_ovoid_depth_hierarchy": "pass",
+        "interface_alpha_background_leaks": 0
+      },
+      "rejection_reason": "bright diagonal receiver/top-face base-color strip remained visible between masonry courses",
+      "first_cause": "A08 top-owner UV override replaced the A04 authored dark-transition routing on exposed base ledges",
+      "smallest_recovery": "restore the A04 authored dark-stone UV zones only on upward base-transition faces below 35.2 cm; retain geometry and atlas bytes"
+    },
+    {
+      "attempt": "Attempt02",
+      "status": "internally_rejected",
+      "image": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A11/InternalAttempts/Attempt02/A09_ATTEMPT.png",
+      "sha256": "3d1511a0efa81367d1e76d8437ebb40f9881b3144747caf8e28c5fb357447684",
+      "evidence": {
+        "A10_ovoid_depth_hierarchy": "pass",
+        "interface_alpha_background_leaks": 0,
+        "bright_diagonal_strip": "removed"
+      },
+      "rejection_reason": "A04 authored transition UVs made exposed ledges and rubble tops read as flat gray without convincing stone detail",
+      "first_cause": "uniform authored dark-stone atlas zones are suitable for hidden fill but not for camera-visible stone crowns",
+      "smallest_recovery": "route only the same upward base-transition faces to verified source-owned C002/C003/C004 front-panel stone bands; retain geometry and atlas bytes"
+    },
+    {
+      "attempt": "Attempt03",
+      "status": "internally_rejected",
+      "image": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A11/InternalAttempts/Attempt03/A09_ATTEMPT.png",
+      "sha256": "6dfc11ad8b35aabb84665db040f76fd212edd3737fb32d237e80b973643764c6",
+      "evidence": {
+        "A10_ovoid_depth_hierarchy": "pass",
+        "interface_alpha_background_leaks": 0,
+        "visible_stone_crown_detail": "restored"
+      },
+      "rejection_reason": "bright source-background slivers remained on source-hidden receiver vertical faces",
+      "first_cause": "A09 cardinal receiver re-projection reached source-background texels after the A10 depth reduction",
+      "smallest_recovery": "retain source bands on visible crowns but route every hidden receiver face to the authored dark-stone fill zone; retain geometry and atlas bytes"
+    },
+    {
+      "attempt": "Attempt04",
+      "status": "internally_rejected",
+      "image": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A11/InternalAttempts/Attempt04/A09_ATTEMPT.png",
+      "sha256": "f9d16e2912bcec1f0f9e5978ec2a75ae2be876e13b183e16570a49faaa29671c",
+      "evidence": {
+        "A10_ovoid_depth_hierarchy": "pass",
+        "interface_alpha_background_leaks": 0,
+        "bright_source_background_slivers": "removed"
+      },
+      "rejection_reason": "uniform authored receiver fill was too visible through the lower rubble gaps and lacked convincing stone detail",
+      "first_cause": "the receiver fill zone was safe but visually under-detailed when camera-visible",
+      "smallest_recovery": "route receiver faces to the bounded verified C002/C003/C004 stone bands by Z level; retain geometry and atlas bytes"
+    },
+    {
+      "attempt": "Attempt05",
+      "status": "internally_rejected",
+      "image": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A11/InternalAttempts/Attempt05/A09_ATTEMPT.png",
+      "sha256": "c902a2c54e6e7b1cd1c585ec3e8b8389d4865c819e985f19fd110cd1ae439710",
+      "evidence": {
+        "A10_ovoid_depth_hierarchy": "pass",
+        "front_orthographic_interface_alpha_background_leaks": 0,
+        "receiver_texture_detail": "restored"
+      },
+      "rejection_reason": "the owner-view perspective still exposed background through open receiver top loops and showed the full-height C004 receiver as a stretched lower skirt",
+      "first_cause": "the inherited receiver topology had outer, inner, and bottom faces but no top cap; the C004 receiver also extended below the interface into camera-visible rubble gaps",
+      "smallest_recovery": "close all hidden receiver top loops and limit the C004 receiver Z range to the C003/C004 interface; retain A10 exterior dimensions, source-owned atlas bytes, and all visible stone counts"
+    },
+    {
+      "attempt": "Attempt06",
+      "status": "internally_rejected",
+      "image": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A11/InternalAttempts/Attempt06/A09_ATTEMPT.png",
+      "sha256": "d29602b2a15e3c365faf0551f6626e98ba4bea80e36257a52c3778f5de317c1a",
+      "evidence": {
+        "A10_ovoid_depth_hierarchy": "pass",
+        "true_C003_C004_contact_rows_922_930_background_leaks": 0,
+        "receiver_lower_skirt": "removed"
+      },
+      "rejection_reason": "thin owner-view background slits remained below the closed receiver, between under-spaced C004 rubble stones",
+      "first_cause": "the inherited 32-stone rubble layout retained too little tangential coverage after fitting to the A10 140 x 110 cm ovoid footprint",
+      "smallest_recovery": "increase only local C004 stone tangential/radial coverage and minimum local height inside the unchanged 140 x 110 x 9 cm envelope; retain 32 stones, eight clusters, two rows, and the closed interface receiver"
+    },
+    {
+      "attempt": "Attempt07",
+      "status": "internally_passed_final_eligible",
+      "image": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A11/InternalAttempts/Attempt07/A09_ATTEMPT.png",
+      "sha256": "a4a2033e5758e99c3f9cf2d2fffdc60aa213a714f001560246d2ad473e59555b",
+      "evidence": {
+        "A10_ovoid_depth_hierarchy": "pass",
+        "declared_interface_background_leaks": 0,
+        "owner_view_false_lower_skirt": 0,
+        "owner_view_bright_rubble_slit": 0,
+        "remaining_alpha_classification": "exterior rubble silhouette only"
+      },
+      "acceptance_reason": "smallest sufficient A11 construction now preserves the authoritative exterior measurements while closing camera-visible assembly gaps without exposing a receiver skirt",
+      "next_gate": "final render plus independent A11 audit; Flamestrike remains final visual authority"
+    }
+  ]
+}

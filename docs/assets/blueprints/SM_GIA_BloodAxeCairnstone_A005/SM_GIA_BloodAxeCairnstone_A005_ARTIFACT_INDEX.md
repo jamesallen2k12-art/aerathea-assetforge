@@ -1,12 +1,46 @@
 # SM_GIA_BloodAxeCairnstone_A005 Artifact Index
 
-Status: A10 pixel-exact base measurement approved; geometry correction contract pending
+Status: A11 pixel-exact geometry candidate complete; visual decision pending
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-21
 
-## Active A10 Pixel-Exact Base Measurement Authority
+## Active A11 Pixel-Exact Geometry Candidate
+
+A11 converts the approved A10 owner-view ratios into one bounded DCC
+construction while preserving exact A04 C001. It corrects the superseded A09
+depths, closes the hidden receiver loops, limits the C004 receiver to its true
+interface, and densifies the 32-stone rubble layout inside the unchanged
+`140 x 110 x 9 cm` visible envelope. The package passes `26/26`; the exact
+final image is pending Flamestrike's visual decision.
+
+| Artifact | Status | Role |
+|---|---|---|
+| steps/VISUAL_CORRECTION_A11_PIXEL_EXACT_GEOMETRY_CONTRACT.md | authoritative execution boundary | Locks A10 dimensions, bounded construction choices, exact A04 C001 preservation, proof/audit requirements, and the visual-review stop. |
+| manifests/VISUAL_CORRECTION_A11_PLAN.json | authoritative execution plan | Records authority hashes, exact module extents, the selected bounded height, receiver construction, rubble coverage, and downstream firewall. |
+| manifests/VISUAL_CORRECTION_A11_INTERNAL_ATTEMPT_LOG.json | proof only | Quarantines Attempts01-06 and records Attempt07 as the final-eligible internal proof. |
+| Tools/DCC/build_bloodaxe_cairnstone_a005_visual_correction_a11.py | candidate production tool | Builds the A11 Blender source, exact dimensions, closed receivers, LODs, collision, textures, module FBXs, and assembled FBXs. |
+| Tools/DCC/render_bloodaxe_cairnstone_a005_visual_correction_a11.py | proof-supporting renderer | Produces module proofs, fixed owner views, A11 interface diagnostics, and the exact final review image. |
+| Tools/DCC/audit_bloodaxe_cairnstone_a005_visual_correction_a11.py | proof-supporting independent auditor | Verifies the complete 26-gate authority, geometry, topology, export, UV, seam, render, and Unreal-firewall package. |
+| SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_DCCGameReady_VisualCorrection_A11.blend | candidate | A11 Blender source; SHA-256 `6d484a452f217eedf5dbee367aacc79db6129305560ed7e20af4599538b06dc5`. |
+| SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_VISUAL_CORRECTION_A11_MANIFEST.json | candidate sidecar | Records exact bounds, modules, sockets, package hashes, LODs, receiver policy, and preservation. |
+| SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/VisualCorrection_A11/ | candidate | Base Color, Normal, and ORM; source-owned RGB mismatch count `0`. |
+| SourceAssets/Exports/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/VisualCorrection_A11/ | candidate | Assembled LOD0-LOD3 and C001-C004 module FBXs; clean re-import `8/8`. |
+| manifests/VISUAL_CORRECTION_A11_VALIDATION.json | proof only | Independent `26/26` validation and Unreal firewall record. |
+| steps/VISUAL_CORRECTION_A11_OUTPUT_RECORD.md | authoritative technical result record | Records the completed A11 package and visual-decision stop. |
+| review/VISUAL_CORRECTION_A11_FINAL_REVIEW.md | candidate review record | Identifies the exact final image and bounded visual decision. |
+| Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A11/ | proof only; local-only | Exact final image, module/assembled proofs, render audit, and internal attempts. |
+
+Post-job checkpoint: `Saved/ProjectRecovery/20260721-114734/`.
+
+Final image SHA-256:
+`a4a2033e5758e99c3f9cf2d2fffdc60aa213a714f001560246d2ad473e59555b`.
+
+Unreal, Step 17, `Fully game-ready`, approved-library, and visual-canon
+promotion remain unauthorized.
+
+## Prior A10 Pixel-Exact Base Measurement Authority
 
 Flamestrike approved the A10 owner-view reconciliation. The raw X/Y ratios
 and 48 discrete top interface contacts are authoritative. The centimeter
@@ -26,9 +60,9 @@ single height selection is authorized.
 Exact review-board SHA-256:
 `f1003ba699b6accb11b1ba29874ca59e83a750a6f4d82e7f9b1efb5291743031`.
 
-Current stop: prepare and approve a separate geometry-correction contract.
-Unreal, Step 17, `Fully game-ready`, approved-library, and visual-canon
-promotion remain unauthorized.
+Historical A10 stop: prepare and approve a separate geometry-correction
+contract. A11 supplied and executed that contract. Unreal, Step 17, `Fully
+game-ready`, approved-library, and visual-canon promotion remain unauthorized.
 
 ## Prior A09 Final Candidate / Visual Decision Not Granted
 

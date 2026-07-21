@@ -1,10 +1,34 @@
 # SM_GIA_BloodAxeCairnstone_A005 Approval Log
 
-Status: A10 pixel-exact base measurement approved; geometry correction contract pending
+Status: A11 pixel-exact geometry candidate complete; visual decision pending
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-21
+
+## A11 Full Correction Authority / Technical Completion / Visual Decision Pending
+
+- Date: 2026-07-21
+- Execution authority: Flamestrike's statement `resume you have full authority
+  and approval ... to do what you need to do to correct the 3d image`
+- Contract ID: `A005-CR-VISUAL-CORRECTION-A11`
+- Scope executed: retain exact A04 C001; retain C004 `140 x 110 cm`; apply
+  approved A10 owner-view dimensions; select a bounded C002 construction
+  height; rebuild C002/C003/C004; correct hidden interfaces and owner-view
+  background slits; build, render, and independently audit one DCC candidate
+- Selected C002 height: `11.25 cm`, inside the approved
+  `8.235294-11.666667 cm` interval
+- Exact exterior dimensions: C002 `118.611111 x 77.149321 cm`; C003
+  `134.166667 x 96.063348 cm`; C004 `140 x 110 cm`
+- Independent audit: `26/26`; clean FBX re-import: `8/8`; interface
+  background leaks: `0 / 0 / 0`
+- LOD triangles: `9236 / 4248 / 1938 / 725`
+- Exact review SHA-256:
+  `a4a2033e5758e99c3f9cf2d2fffdc60aa213a714f001560246d2ad473e59555b`
+- Artifact status: `candidate`; pipeline status: `DCC game-ready candidate`
+- Visual decision: pending Flamestrike
+- Unreal/Step 17, `Fully game-ready`, approved-library, and visual-canon
+  promotion: unauthorized
 
 ## A10 Pixel-Exact Base Measurement Approval
 

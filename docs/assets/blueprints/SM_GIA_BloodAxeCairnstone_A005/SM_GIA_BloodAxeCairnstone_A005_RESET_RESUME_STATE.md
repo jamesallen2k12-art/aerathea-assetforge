@@ -1,12 +1,40 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: A10 pixel-exact base measurement approved; geometry correction contract pending
+Status: A11 pixel-exact geometry candidate complete; visual decision pending
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-21
 
-## Active Resume Boundary - A10 Measurement Approved / Geometry Blocked
+## Active Resume Boundary - A11 Final Candidate / Visual Decision Pending
+
+Flamestrike granted full correction authority, and Codex executed the visible
+contract `A005-CR-VISUAL-CORRECTION-A11` within the approved A10 measurement
+authority.
+
+- Status: `candidate`; pipeline status: `DCC game-ready candidate`.
+- Exact A04 C001 geometry and UV signatures: preserved.
+- A10 exterior dimensions applied: C002 `118.611111 x 77.149321 cm`; C003
+  `134.166667 x 96.063348 cm`; C004 `140 x 110 cm`.
+- C002 construction height: `11.25 cm`, inside the approved
+  `8.235294-11.666667 cm` interval.
+- Visible stone counts: C002 `19`, C003 `24`, C004 `32`.
+- Hidden receivers: `3`, closed and manifold; declared interface background
+  leaks: `0 / 0 / 0`.
+- Independent audit: `26/26`; clean assembled/module FBX re-import: `8/8`.
+- LOD triangles: `9236 / 4248 / 1938 / 725`.
+- Final review:
+  `Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A11/SM_GIA_BloodAxeCairnstone_A005_FINAL_CORRECTED_3D_A11.png`.
+- Final SHA-256:
+  `a4a2033e5758e99c3f9cf2d2fffdc60aa213a714f001560246d2ad473e59555b`.
+- Output record: `steps/VISUAL_CORRECTION_A11_OUTPUT_RECORD.md`.
+- Review record: `review/VISUAL_CORRECTION_A11_FINAL_REVIEW.md`.
+- Post-job checkpoint: `Saved/ProjectRecovery/20260721-114734/`.
+- Current stop: Flamestrike may approve, reject, or mark blocked only this
+  exact A11 review candidate.
+- Unreal/Step 17 and `Fully game-ready` remain unauthorized and false.
+
+## Prior Resume Boundary - A10 Measurement Approved / Geometry Blocked
 
 Flamestrike approved the A10 pixel-exact base measurement package after
 reviewing the omitted C002 height evidence separately.
@@ -27,9 +55,10 @@ reviewing the omitted C002 height evidence separately.
   `f1003ba699b6accb11b1ba29874ca59e83a750a6f4d82e7f9b1efb5291743031`.
 - Measurement record:
   `steps/VISUAL_CORRECTION_A10_PIXEL_EXACT_BASE_RECONCILIATION_OUTPUT.md`.
-- Current stop: geometry remains unauthorized until a separate correction
-  contract selects the conditional C004 envelope, one course-height solution,
-  socket clearances, and hidden interface rules.
+- Historical stop at A10: geometry remained unauthorized until a separate
+  correction contract selected the conditional C004 envelope, one
+  course-height solution, socket clearances, and hidden interface rules. A11
+  supplied and executed that contract.
 - A09 remains an unapproved candidate and cannot advance using its superseded
   depth dimensions.
 - Unreal/Step 17 and `Fully game-ready` remain unauthorized and false.
