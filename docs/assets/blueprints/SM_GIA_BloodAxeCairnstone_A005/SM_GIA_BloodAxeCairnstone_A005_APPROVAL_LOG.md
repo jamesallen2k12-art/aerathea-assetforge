@@ -1,10 +1,31 @@
 # SM_GIA_BloodAxeCairnstone_A005 Approval Log
 
-Status: A01 technical pass visually rejected; A02 correction pass authorized after restart
+Status: A02 technical pass complete; pending Flamestrike visual approval
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
+
+## A02 Visual Correction Execution And Technical Result
+
+- Date: 2026-07-20
+- Approver for execution: Flamestrike
+- Authority statement: full approval and authority to complete the correction
+  and do whatever is required within the active A02 correction scope
+- Contract ID: `A005-CR-VISUAL-CORRECTION-A02`
+- Scope executed: rebuild the A005-only base hierarchy and displayed material
+  presentation from the unchanged source/Step 11/Step 14 authorities; preserve
+  A01; create Blender, textures, LOD0-LOD3, collision, FBXs, final review
+  render, and independent audit; open only the accepted final image
+- Technical result:
+  `pass_a02_dcc_game_ready_candidate_pending_flamestrike_visual_approval`
+- Independent audit: `26/26`; clean FBX re-import: `4/4`
+- Final image SHA-256:
+  `511664eb9ea4192f9d86cd1d08f320158b1d70df6a57bfc2130543c80c47247d`
+- Artifact classification: `candidate`; pipeline status: `DCC game-ready
+  candidate`
+- Visual approval: pending; Unreal authority: `false`; `Fully game-ready`:
+  `false`
 
 ## A01 Visual Rejection / A02 Restart Authority
 

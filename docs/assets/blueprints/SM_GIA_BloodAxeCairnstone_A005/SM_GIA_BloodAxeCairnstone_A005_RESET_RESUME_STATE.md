@@ -1,12 +1,38 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: A01 technical pass visually rejected; restart into A02 correction pass
+Status: A02 technical pass complete; pending Flamestrike visual approval
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
 
-## Active Resume Boundary - A02 Base-Stack And Color Correction
+## Active Resume Boundary - A02 Candidate Complete / Visual Approval Pending
+
+Flamestrike authorized the bounded A02 correction under contract
+`A005-CR-VISUAL-CORRECTION-A02`. The corrected package is complete and passes
+all `26/26` independent gates.
+
+- Pre-action checkpoint: `Saved/ProjectRecovery/20260720-205731/`.
+- Final technical-pass checkpoint: `Saved/ProjectRecovery/20260720-210958/`.
+- Validation result:
+  `pass_a02_dcc_game_ready_candidate_pending_flamestrike_visual_approval`.
+- Candidate Blend:
+  `SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_DCCGameReady_VisualCorrection_A02.blend`.
+- Final visibly opened review image:
+  `Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A02/SM_GIA_BloodAxeCairnstone_A005_FINAL_CORRECTED_3D_A02.png`.
+- Final image SHA-256:
+  `511664eb9ea4192f9d86cd1d08f320158b1d70df6a57bfc2130543c80c47247d`.
+- Base projected bands: `49.47 / 64.64 / 60.00 px`.
+- Source-owned Base Color: `154948` pixels; mismatches `0`.
+- Clean FBX re-import: `4/4`; LOD triangles:
+  `8672 / 3988 / 1820 / 692`.
+- Artifact status: `candidate`; pipeline status: `DCC game-ready candidate`.
+- A01 remains `quarantined`; its technical evidence remains `proof only`.
+- Current stop: Flamestrike may approve, reject, or block the exact final A02
+  candidate. Unreal/Step 17 remains unauthorized; `Fully game-ready` is
+  `false`.
+
+## Superseded Resume Boundary - A02 Base-Stack And Color Correction
 
 Flamestrike rejected the A01 final image and authorized a recovery point plus
 fresh-context pass. The complete next-agent packet is
@@ -23,7 +49,7 @@ fresh-context pass. The complete next-agent packet is
 Manual restart checkpoint: `Saved/ProjectRecovery/20260720-202843/`.
 
 
-## Active Resume Boundary - Steps 01-16 Visual-Fidelity Core Recovery
+## Superseded Resume Boundary - Steps 01-16 Visual-Fidelity Core Recovery
 
 Flamestrike authorized complete A005 source-to-game-ready discrepancy
 recovery across Steps 01-16 and requested that only the final corrected 3D

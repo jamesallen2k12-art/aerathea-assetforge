@@ -1,12 +1,39 @@
 # SM_GIA_BloodAxeCairnstone_A005 Artifact Index
 
-Status: A01 technical pass visually rejected and quarantined; A02 restart pending
+Status: A02 technical pass complete; pending Flamestrike visual approval
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
 
-## Active A02 Restart Decision
+## Active A02 Visual Correction Candidate
+
+The bounded A02 correction is technically complete under contract
+`A005-CR-VISUAL-CORRECTION-A02`. It passes `26/26` independent gates and is a
+`candidate` with pipeline status `DCC game-ready candidate`. Flamestrike visual
+approval remains pending. Unreal and `Fully game-ready` promotion remain zero.
+
+| Artifact | Status | Role |
+|---|---|---|
+| steps/VISUAL_CORRECTION_A02_CONTRACT.md | authoritative execution boundary | Records the exact base/color correction scope, evidence authorities, review constraint, and downstream firewall. |
+| manifests/VISUAL_CORRECTION_A02_PLAN.json | authoritative execution plan | Locks dimensions, base spans, material/presentation controls, required outputs, and result classification. |
+| Tools/DCC/build_bloodaxe_cairnstone_a005_visual_correction_a02.py | candidate production builder | Builds the corrected four-shell asset, direct source-faithful material package, LODs, collision, Blender source, FBXs, and manifest. |
+| Tools/DCC/render_bloodaxe_cairnstone_a005_visual_correction_a02.py | proof-supporting renderer | Produces the one accepted final review image with measured base-band and displayed-color evidence. |
+| Tools/DCC/audit_bloodaxe_cairnstone_a005_visual_correction_a02.py | proof-supporting independent auditor | Verifies 26 source, geometry, topology, UV, material, FBX, preservation, presentation, and firewall gates. |
+| SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_DCCGameReady_VisualCorrection_A02.blend | candidate | Corrected DCC game-ready candidate; `8672/3988/1820/692` triangles, exact `140 x 110 x 220 cm` bounds, four closed shells, one material, and four collision proxies. |
+| SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_VISUAL_CORRECTION_A02_MANIFEST.json | candidate sidecar | Exact authority, component, UV, material, texture, Blender, FBX, and preservation hashes/counts. |
+| SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/VisualCorrection_A02/ | candidate | A02 Base Color, DirectX Normal, and ORM; all `154948` source-owned Base Color pixels remain exact. |
+| SourceAssets/Exports/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/VisualCorrection_A02/ | candidate | LOD0/collision plus LOD1-LOD3 FBXs; clean re-import `4/4`. |
+| manifests/VISUAL_CORRECTION_A02_VALIDATION.json | proof only | Independent `26/26` validation and classification/firewall record. |
+| steps/VISUAL_CORRECTION_A02_OUTPUT_RECORD.md | authoritative technical result | Records the completed correction, evidence, artifact routing, and approval boundary. |
+| review/VISUAL_CORRECTION_A02_FINAL_REVIEW.md | candidate review boundary | Identifies the exact visibly opened final image and the visual decision it supports. |
+| Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A02/ | proof only; local-only | Final image, object pass, render audit, and independent audit. |
+
+Final image SHA-256:
+`511664eb9ea4192f9d86cd1d08f320158b1d70df6a57bfc2130543c80c47247d`.
+The A01 package remains `quarantined` and byte-preserved.
+
+## Superseded A02 Restart Decision
 
 Flamestrike rejected the A01 review image. The A01 Blender/FBX/texture package
 and final image are `quarantined` as visual candidates; their `20/20` audit is
@@ -14,7 +41,7 @@ retained as `proof only`. The authoritative next-agent packet is
 `SM_GIA_BloodAxeCairnstone_A005_A02_VISUAL_CORRECTION_RESTART_HANDOFF.md`.
 
 
-## Active Steps 01-16 Visual-Fidelity Core Recovery
+## Historical Steps 01-16 Visual-Fidelity Core Recovery
 
 The active contract is
 `A005-CR-STEPS01-16-VISUAL-FIDELITY-RECOVERY-A01`. The first divergence is

@@ -1,0 +1,73 @@
+{
+  "schema": "aerathea.a005_visual_correction_a02_plan.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-VISUAL-CORRECTION-A02",
+  "date": "2026-07-20",
+  "status": "complete_pending_flamestrike_visual_approval",
+  "artifact_classification": "authoritative execution plan",
+  "source_authority": {
+    "path": "docs/assets/reference/bloodaxe_cairnstone_asset/REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate.png",
+    "sha256": "4b953abb87f5f254a5f51c6214e76d3f72c4fc55bc2fa4e4d605b2440d6e53c2",
+    "modified": false
+  },
+  "authority": {
+    "restart_handoff": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_A02_VISUAL_CORRECTION_RESTART_HANDOFF.md",
+    "contract": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/VISUAL_CORRECTION_A02_CONTRACT.md",
+    "geometry": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_11_CONSTRUCTION_BLUEPRINT.json",
+    "uv": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_14_UV_OWNERSHIP_PLAN.json",
+    "material": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_14_MATERIAL_INTERPRETATION_MANIFEST.json"
+  },
+  "locked_dimensions_cm": {
+    "assembled": [140.0, 110.0, 220.0],
+    "base_height": 35.0,
+    "pivot": [0.0, 0.0, 0.0]
+  },
+  "locked_structure": {
+    "primary_shells": 4,
+    "material_slots": 1,
+    "lod_levels": 4,
+    "collision_hulls": 4,
+    "unreal_outputs": 0
+  },
+  "base_components_cm": {
+    "C004_APRON": {"visible_z": [0.0, 10.0], "closed_z": [0.0, 10.5], "max_width": 140.0, "max_depth": 110.0},
+    "C003_LOWER_TIER": {"visible_z": [10.0, 23.0], "closed_z": [9.5, 23.5], "max_width": 112.0, "max_depth": 88.0},
+    "C002_UPPER_TIER": {"visible_z": [23.0, 35.0], "closed_z": [22.5, 35.5], "max_width": 106.0, "max_depth": 82.0}
+  },
+  "correction_controls": {
+    "base": "make all three approved spans project to independently readable vertical bands while preserving hidden overlaps",
+    "base_color": "preserve every source-owned mip-0 RGB triplet exactly; replace unowned stripe propagation with deterministic low-frequency colors drawn only from the approved dark-stone fallback palette",
+    "shader": "direct sRGB Base Color to Default Lit; DirectX normal conversion; ORM roughness and zero metallic; no gamma node, grade, emissive, or procedural specular amplification",
+    "review": "neutral lights, Standard transform, zero exposure offset, lower camera pitch, complete silhouette against a clean background"
+  },
+  "required_outputs": {
+    "blend": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_DCCGameReady_VisualCorrection_A02.blend",
+    "manifest": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_VISUAL_CORRECTION_A02_MANIFEST.json",
+    "texture_root": "SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/VisualCorrection_A02",
+    "export_root": "SourceAssets/Exports/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/VisualCorrection_A02",
+    "final_image": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A02/SM_GIA_BloodAxeCairnstone_A005_FINAL_CORRECTED_3D_A02.png",
+    "validation": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/VISUAL_CORRECTION_A02_VALIDATION.json"
+  },
+  "gates": {
+    "inherited_technical": 20,
+    "a02_additional": [
+      "A02 suffix and A01 preservation",
+      "three base component bounds and step widths",
+      "projected base band visibility and full-frame silhouette",
+      "source-owned Base Color exactness",
+      "non-metallic non-emissive direct Default Lit material chain",
+      "displayed source color comparison"
+    ]
+  },
+  "result": {
+    "validation_status": "pass_a02_dcc_game_ready_candidate_pending_flamestrike_visual_approval",
+    "gates_passed": 26,
+    "gates_total": 26,
+    "artifact_status": "candidate",
+    "pipeline_status": "DCC game-ready candidate",
+    "final_image_sha256": "511664eb9ea4192f9d86cd1d08f320158b1d70df6a57bfc2130543c80c47247d",
+    "unreal_outputs": 0,
+    "fully_game_ready": false
+  },
+  "review_rule": "Intermediate attempts remain internal and are not opened. Open only the accepted final A02 image visibly for Flamestrike."
+}
