@@ -1,6 +1,6 @@
 # A005 Visual Correction A04 Core Recovery Contract
 
-Status: `complete; candidate pending Flamestrike visual review`
+Status: `complete; output visually rejected and quarantined`
 
 Artifact classification: `authoritative execution contract`
 
@@ -106,3 +106,12 @@ End as exactly one of:
   A04 image is pending Flamestrike review;
 - `blocked`: a required gate fails;
 - `quarantined`: an internal attempt fails and is preserved as non-authority.
+
+## Final Visual Decision
+
+Flamestrike rejected A04 on 2026-07-21. The exact plinth is approved as an
+`authoritative visual reference`, but the complete output is `quarantined`.
+The contract's rectangular footprint targets and width-hierarchy gates did
+not prove the source's oval base contour or a replacement rather than
+cumulative-stack visual read. Recovery authority is recorded in
+`VISUAL_CORRECTION_A04_VISUAL_REJECTION_A05_RESTART_HANDOFF.md`.

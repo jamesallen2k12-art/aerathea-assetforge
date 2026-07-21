@@ -6511,3 +6511,13 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260721-064631/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260721-064631/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 06:53:12 EDT -0400 - A005 A04 rejected; plinth approved reference; A05 oval replacement-base pixel-measurement guidance attached
+
+- Snapshot: `Saved/ProjectRecovery/20260721-065312/`
+- Git: branch `main`, HEAD `9c64eeb`, status lines `259`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-065312/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-065312/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-065312/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

@@ -1,14 +1,46 @@
 # A005 Visual Correction A04 Final Review
 
-Status: `candidate pending Flamestrike visual review`
+Status: `visually rejected by Flamestrike; quarantined`
 
-Artifact classification: `candidate`
+Artifact classification: `quarantined`
 
 Date: 2026-07-21
 
 Contract ID: `A005-CR-VISUAL-CORRECTION-A04`
 
-## Decision
+## Flamestrike Decision
+
+Rejected on 2026-07-21. The A04 plinth is visually approved as the exact
+reference to preserve, but the complete A04 candidate is not approved.
+
+Flamestrike's exact guidance:
+
+> This is better the Plinth looks perfect but the issue is still the base
+> although better the base layers look like they were added to the previous
+> base layer as opposed to replacing it ... they are also rectangular where
+> they should be a more oval shape ... this is where the pixel perfect
+> measurements may be needed to determine actual dimensions, pixel
+> colorations are off on the new base but I believe this is a result of
+> improper geometry shifting the actual pixel alignments ... we are seeing
+> improvements though so while I cannot approve the A04 candidate we are
+> making progress ... lets create a save point so we can reset context and try
+> again .... make sure that the save point has the information I just provided
+> attached for additional guidance
+
+Decision consequences:
+
+- Preserve the exact A04 plinth as an `authoritative visual reference`.
+- Quarantine the complete A04 DCC candidate, final render, and base geometry.
+- Treat the A04 `17/17` validation as `proof only` for its technical scope.
+- Do not use A04's rectangular base footprints or cumulative stacked-base
+  read as A05 geometry authority.
+- Begin the next attempt with source-pixel measurement of the base contours,
+  oval footprint, and component-local color correspondence before geometry.
+- Treat geometry/UV displacement as the current user-supplied causal
+  hypothesis for the base color mismatch; verify it after geometry correction
+  rather than applying unproven color grading.
+
+## Historical Decision Target
 
 Decide whether the exact A04 review image provides the required descending
 three-mass structure:
@@ -78,6 +110,7 @@ independent audit pass. No internal attempt is approval authority.
 
 ## Boundary
 
-Approval accepts only this exact A04 DCC candidate and review image. Unreal,
-Step 17, `Fully game-ready`, approved-library, and visual-canon promotion
-remain unauthorized and false.
+The exact A04 DCC candidate and review image were not approved and are now
+`quarantined`. The plinth alone remains an `authoritative visual reference`.
+Unreal, Step 17, `Fully game-ready`, approved-library, and visual-canon
+promotion remain unauthorized and false.

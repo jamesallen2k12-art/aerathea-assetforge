@@ -1,12 +1,64 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: A04 DCC game-ready candidate complete; Flamestrike visual review pending
+Status: A04 visually rejected and quarantined; A05 measurement-first recovery pending resume
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-21
 
-## Active Resume Boundary - A04 Three-Mass Correction Candidate
+## Active Resume Boundary - A04 Rejection / A05 Measurement-First Recovery
+
+Flamestrike rejected the exact A04 review on 2026-07-21. The attempt is an
+improvement, and the plinth looks perfect, but the base still reads as new
+layers added to the previous base instead of a replacement. The base layers
+also read rectangular when they should be more oval. Their displayed pixel
+colors remain off.
+
+Authority and evidence classification:
+
+- The authoritative source image and source-pixel records remain unchanged.
+- The exact A04 plinth is an `authoritative visual reference` for the next
+  attempt; do not redesign it.
+- The complete A04 package and final review image are `quarantined`.
+- A04's `17/17` validation is `proof only` for topology, dimensions, LODs,
+  packaging, source-owned atlas bytes, and preservation. It did not prove the
+  required oval base planform or replacement read.
+- A04 base geometry is `invalid` as A05 construction authority.
+- A04 base color placement is `reference only`; it may not be treated as
+  corresponding-pixel proof for a corrected base.
+
+Controlling A05 guidance:
+
+1. Replace the base visual system; do not visually accumulate new courses on
+   the rejected A04/A03 base read.
+2. Use pixel-perfect source measurements to determine the actual upper- and
+   lower-base dimensions and oval contours before creating A05 geometry.
+3. Prove the footprint in the relevant source views, not only through width,
+   depth, or bounding-box hierarchy.
+4. Correct geometry and component-local UV/pixel correspondence before
+   evaluating base color.
+5. Flamestrike's belief that improper geometry shifted pixel alignment is a
+   diagnostic hypothesis, not yet proven. Test it; do not compensate with
+   unapproved color grading.
+6. Preserve the source, A01-A04 artifacts, and exact A04 plinth. No Unreal or
+   Step 17 work is authorized.
+
+First A04 drift point: the A04 plan reduced C002/C003 footprint authority to
+rectangular width/depth targets and the validator accepted projected width
+hierarchy as sufficient. Although A04 was built fresh rather than importing
+old geometry, the visible result still reads as a cumulative rectangular base
+stack and therefore fails the required source shape/replacement decision.
+
+Next bounded action after context reset: perform an A05 measurement-only base
+contour and corresponding-pixel audit, produce an approval/blocked decision,
+then rebuild only after the measurements establish sufficient source
+authority. Full restart handoff:
+`steps/VISUAL_CORRECTION_A04_VISUAL_REJECTION_A05_RESTART_HANDOFF.md`.
+Recovery checkpoint: `Saved/ProjectRecovery/20260721-065312/`.
+
+Unreal/Step 17 remains unauthorized; `Fully game-ready` remains `false`.
+
+## Superseded Resume Boundary - A04 Three-Mass Correction Candidate
 
 Flamestrike granted complete authority to correct the 3D render across Steps
 01-16 and required one plinth, one supporting slab, and a larger slab below
