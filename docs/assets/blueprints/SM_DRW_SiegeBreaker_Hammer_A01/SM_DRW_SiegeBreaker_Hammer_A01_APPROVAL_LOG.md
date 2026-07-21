@@ -117,3 +117,37 @@
 - Pending authority: Flamestrike visual approval, rejection, or blocked decision.
 - Unreal authority: `false`.
 - Fully game-ready: `false`.
+
+## A04 Visual Rejection And Core Recovery
+
+- Date: 2026-07-21.
+- Flamestrike finding: the head, handle, and pommel are visibly misaligned; the
+  handle reads too long or too thin; the head reads as a copied 2D image with
+  gray pixels that should have been removed; the result is not a true 3D asset.
+- Root decision: the supplied orthographic dataset was adequate; the workflow
+  deviated by promoting the perspective render, independently scaling component
+  bands, creating facades/cards, retaining contaminated pixels, and asserting
+  rather than measuring contact gates.
+- Result: A03/A04 production artifacts are `quarantined`; the A04 final review
+  board is `invalid as a completed 3D asset`; technical audits remain `proof
+  only` for file mechanics and defect history.
+- Recovery: do not repair A04 forward. Return to the verified numeric package,
+  corrected blockout, and supplied detailed orthographic dataset.
+
+## A05 Orthographic Volumetric Rebuild Authority
+
+- Date: 2026-07-21.
+- Flamestrike direction: reset and start again; prepare the proper steps for the
+  next agent under strict Core adherence; maintain full authority and approval;
+  present the final image at the end.
+- Contract: `SB-VF-A05-ORTHOGRAPHIC-VOLUMETRIC`.
+- Scope: fresh orthographic intake and registration, genuine volumetric DCC
+  reconstruction, measured common-axis alignment, UV/PBR package, LOD0-LOD3,
+  collision, FBX/GLB, clean reimport, independent validation, internal
+  iteration, checkpoints, scoped closeout, and visible final-image review.
+- Input boundary: zero A03/A04 Hammer construction inputs.
+- Review behavior: all intermediate images remain internal; only the final
+  completed A05 review image is presented unless an evidence block stops work.
+- Excluded: Unreal import, `Fully game-ready`, self-approval of final visual
+  quality, and unrelated worktree changes.
+- Execution state: `approved and queued for the first post-reset agent`.

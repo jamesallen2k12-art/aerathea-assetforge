@@ -3,7 +3,10 @@
   "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
   "contract_id": "SB-VF-A03-PIXEL",
   "date": "2026-07-21",
-  "status": "authoritative",
+  "status": "quarantined",
+  "former_status": "authoritative",
+  "superseded_by": "VISUAL_FIDELITY_A04_DRIFT_RECOVERY_A05_RESTART.json",
+  "quarantine_reason": "Unauthorized authority inversion promoted the perspective three-quarter render above the supplied orthographic construction dataset.",
   "approval": "Flamestrike approved all required changes and the pixel-perfect method to create the 3D asset",
   "overrides": {
     "prior_style_only_limit": true,

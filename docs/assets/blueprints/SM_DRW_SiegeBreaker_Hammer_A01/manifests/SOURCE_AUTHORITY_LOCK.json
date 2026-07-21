@@ -4,6 +4,13 @@
   "contract_id": "SB-CR-STEPS01-16-FINALPKG-A01",
   "date": "2026-07-21",
   "status": "authoritative",
+  "scope_note": "Numeric foundation remains authoritative; visual scope is amended by SOURCE_AUTHORITY_A05_ORTHOGRAPHIC.json.",
+  "a05_visual_scope_amendment": {
+    "authority": "Flamestrike's 2026-07-21 reset clarification",
+    "record": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/manifests/SOURCE_AUTHORITY_A05_ORTHOGRAPHIC.json",
+    "detailed_orthographic_views": "authoritative visible-geometry evidence after clean whole-view registration",
+    "three_quarter_render": "style, material character, depth character, and final beauty comparison only"
+  },
   "download_package": {
     "path": "/home/james/Downloads/SiegeBreaker_Codex_Final_Package.zip",
     "sha256": "6d4bf67fe4dcb1bc752c615d16b039bf6fd430037b6ffa4772f8ae83c689a8f0",

@@ -1,5 +1,12 @@
 # SM_DRW_SiegeBreaker_Hammer_A01 Project Charter
 
+> A05 authority amendment: this charter remains authoritative for asset identity,
+> numeric bounds, pivot, production scope, and Unreal exclusion. Flamestrike's
+> later explicit clarification promotes the supplied detailed orthographic views
+> to A05 visible-geometry evidence after clean whole-view registration. The
+> three-quarter render remains style and final beauty reference only. See
+> `manifests/SOURCE_AUTHORITY_A05_ORTHOGRAPHIC.json`.
+
 - Contract: `SB-CR-STEPS01-16-FINALPKG-A01`
 - Date: 2026-07-21
 - Approver: Flamestrike

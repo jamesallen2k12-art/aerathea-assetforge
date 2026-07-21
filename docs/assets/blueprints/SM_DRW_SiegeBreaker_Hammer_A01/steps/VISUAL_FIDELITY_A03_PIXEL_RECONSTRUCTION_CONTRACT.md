@@ -5,7 +5,8 @@
 - Date: 2026-07-21
 - Approver: Flamestrike
 - Approval statement: "I approve everything you have full authority and approval ... make the changes use the pixel perfect method and do whatever you need to do to create this 3d asset."
-- Artifact status: `authoritative`
+- Artifact status: `quarantined`
+- Recovery notice: superseded by the A04 drift recovery and A05 orthographic-volumetric restart; forbidden as A05 execution authority.
 
 ## Decision
 

@@ -1,7 +1,13 @@
 # Siege Breaker Steps 01-16 Execution Contract
 
 - Contract ID: `SB-CR-STEPS01-16-FINALPKG-A01`
-- Status: `authoritative`
+- Status: `reference only`
+- Superseded for active execution by: `SB-VF-A05-ORTHOGRAPHIC-VOLUMETRIC`
+
+> A05 scope amendment: the original numeric, production, and Unreal boundaries
+> remain valid. Its concept-panel restriction is superseded only for the supplied
+> detailed orthographic views under Flamestrike's explicit A05 clarification.
+> Perspective-render geometry and detached projection shells remain blocked.
 - Date: 2026-07-21
 
 ## One Decision

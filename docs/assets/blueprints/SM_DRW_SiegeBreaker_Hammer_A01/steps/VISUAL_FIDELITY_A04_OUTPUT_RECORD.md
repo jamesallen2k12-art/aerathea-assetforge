@@ -3,8 +3,12 @@
 - Contract: `SB-VF-A04-STRICT-SCANLINE`
 - Asset: `SM_DRW_SiegeBreaker_Hammer_A01`
 - Date: 2026-07-21
-- Artifact status: `candidate`
-- Pipeline status: `DCC game-ready candidate pending Flamestrike visual approval`
+- Artifact status: `quarantined`
+- Pipeline status: `invalid as a completed 3D asset; superseded by A05 Core Recovery`
+
+> Recovery override: the original result below is preserved as historical
+> evidence only. Its candidate implication was invalidated by Flamestrike's
+> visible review and `VISUAL_FIDELITY_A04_DRIFT_RECOVERY_A05_RESTART.json`.
 
 ## Decision Produced
 
@@ -36,9 +40,10 @@ evidence chain. This record does not self-approve visual quality.
 - Final review-board SHA-256:
   `86496214ba7b593286e275be0cf4b59a7327baaede8f46563251ab7afdd36710`.
 
-## Required Visual Decision
+## Superseding Visual Decision
 
-Flamestrike must classify the opened A04 final completed review board as
-`approved`, `rejected`, or `blocked`. Until that decision, the asset remains a
-`candidate`. Unreal import is not authorized by this contract and `Fully
-game-ready` remains false.
+Flamestrike rejected A04 as a completed 3D solution and directed a reset. The
+board is `invalid`; A04 geometry, textures, and exports are `quarantined`; its
+technical audits remain `proof only`. A05 must restart from orthographic and
+numeric authority. Unreal import remains unauthorized and `Fully game-ready`
+remains false.

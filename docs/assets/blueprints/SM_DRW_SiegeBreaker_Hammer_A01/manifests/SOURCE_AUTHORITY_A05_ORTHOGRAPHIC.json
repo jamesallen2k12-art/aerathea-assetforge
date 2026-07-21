@@ -1,0 +1,53 @@
+{
+  "schema": "aerathea.siegebreaker_a05_orthographic_authority.v1",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "contract_id": "SB-VF-A05-ORTHOGRAPHIC-VOLUMETRIC",
+  "date": "2026-07-21",
+  "status": "authoritative",
+  "flamestrike_clarification": "The supplied orthographic dataset is the intended 2D-to-3D construction data; reset and rebuild with strict Core adherence and full authority.",
+  "authority_order": [
+    "AGENTS.md Core Principles",
+    "Flamestrike's 2026-07-21 reset and A05 completion authority",
+    "asset_spec.json and dimensions_cm.csv",
+    "corrected canonical blockout and its numeric manifest",
+    "detailed front/back/left/right/top/bottom orthographic views and their printed dimensions",
+    "component_breakdown.json, modeling_notes.md, and material_spec.json",
+    "three-quarter render for style, material, depth-character, and final beauty comparison only"
+  ],
+  "world_frame": {
+    "centerline": "X=0,Y=0",
+    "origin": "bottom center of pommel at Z=0",
+    "bounds_cm": [52, 32, 170],
+    "stations_z_cm": [0, 14, 18, 60, 132, 170],
+    "head_interval_z_cm": [132, 170],
+    "shaft_interval_z_cm": [14, 132],
+    "grip_interval_z_cm": [18, 60],
+    "pommel_interval_z_cm": [0, 18],
+    "shaft_pommel_overlap_cm": 4,
+    "handle_outer_diameter_cm": 5
+  },
+  "orthographic_registration_rule": "Register each complete view to its printed dimension endpoints and world axes using one uniform transform for that whole view. Never center or scale individual components independently. Panel crop placement or zoom is camera calibration, not component scale authority.",
+  "view_roles": {
+    "front_back": "X/Z silhouettes, visible component boundaries, ornament placement, and front/back surface evidence",
+    "left_right": "Y/Z silhouettes, head depth, side component boundaries, and side surface evidence",
+    "top_bottom": "X/Y depth/width silhouettes and top/bottom surface evidence",
+    "three_quarter": "style and final volumetric/beauty comparison only; forbidden as the construction coordinate frame"
+  },
+  "texture_rule": "Use clean object-only semantic masks and project/bake onto real UV-unwrapped volumetric geometry. Do not use raw sheet screenshots, annotations, paper, shadows, or camera-facing cards as shipping texture surfaces.",
+  "blocked_inputs": [
+    "all A03/A04 Hammer geometry and textures",
+    "A03/A04 component centers, scale factors, masks, and facade contours",
+    "A03/A04 camera-facing facades, secondary cards, and backing blocks"
+  ],
+  "blocked_methods": [
+    "perspective-derived construction",
+    "per-component independent scaling or recentering",
+    "detached projection shells, billboards, facade slabs, or view cards",
+    "raw background-bearing source RGB copied as a shipping surface",
+    "hard-coded audit passes",
+    "repairing forward after a failed geometry-method gate"
+  ],
+  "review_behavior": "All intermediate evidence and renders remain internal. Visibly open only the final completed A05 review image unless a genuine evidence block stops production.",
+  "unreal_authority": false,
+  "fully_game_ready": false
+}

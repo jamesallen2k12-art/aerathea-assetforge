@@ -1,0 +1,50 @@
+{
+  "schema": "aerathea.siegebreaker_a04_drift_recovery_a05_restart.v1",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "date": "2026-07-21",
+  "status": "authoritative",
+  "decision": "stop A04, preserve evidence, quarantine affected outputs, and restart as A05 from orthographic and numeric authority",
+  "flamestrike_authority": "Reset and start again; prepare the proper Core-strict steps for the next agent; maintain full authority and approval; show the final image at the end.",
+  "last_core_valid_state": {
+    "verified_package_sha256": "6d4bf67fe4dcb1bc752c615d16b039bf6fd430037b6ffa4772f8ae83c689a8f0",
+    "numeric_authority": [
+      "asset_spec.json",
+      "dimensions_cm.csv",
+      "component_breakdown.json"
+    ],
+    "corrected_blockout": {
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/SiegeBreaker_Blockout.blend",
+      "sha256": "1365e9d3654fe6e74b9ff558c80dc32164465b4cbd1bbb802374ee599bb6d8ea"
+    },
+    "orthographic_source": "SourceAssets/Reference/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/02_SiegeBreaker_Codex_Final_Package/reference/concept_sheet_style_reference.png"
+  },
+  "first_drift_action": "SOURCE_AUTHORITY_A03_PIXEL_OVERRIDE.json promoted the perspective three-quarter render over the supplied detailed orthographic dataset for visible geometry construction.",
+  "root_causes": [
+    "broad completion authority was misread as authority to reverse the source hierarchy",
+    "raw panel footprint ratios were used instead of dimension-line and world-frame registration",
+    "perspective component bands were independently centered and nonuniformly scaled",
+    "two-dimensional facades/cards replaced volumetric reconstruction",
+    "mask contamination was preserved by an exact-copy rule",
+    "contact and centerline audit values were asserted rather than independently measured",
+    "the workflow repaired forward after facade-method failures"
+  ],
+  "proven_visible_defects": {
+    "head_to_shaft_attachment_center_mismatch_cm": 5.29,
+    "grip_to_pommel_attachment_center_mismatch_cm": 1.05,
+    "handle_proportion": "elongated and visually thin because component bands used different source-to-world scales",
+    "head_construction": "two-dimensional source facade over crude backing volume",
+    "texture_contamination": "gray/white source background and shadow pixels retained"
+  },
+  "artifact_classification": {
+    "A03_A04_geometry_textures_exports_renders": "quarantined",
+    "A04_final_review_board": "invalid",
+    "A03_A04_technical_audits": "proof only",
+    "A03_A04_scripts": "reference only; forbidden as A05 construction inputs",
+    "source_numeric_records_corrected_blockout_and_A05_orthographic_authority": "authoritative"
+  },
+  "quarantine_policy": "preserve in place; do not delete, import, copy, trace, modify, or repair forward into A05",
+  "pre_recovery_checkpoint": "Saved/ProjectRecovery/20260721-193922",
+  "next_contract": "SB-VF-A05-ORTHOGRAPHIC-VOLUMETRIC",
+  "unreal_authority": false,
+  "fully_game_ready": false
+}

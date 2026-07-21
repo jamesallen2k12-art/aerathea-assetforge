@@ -5,8 +5,9 @@
 - Date: 2026-07-21
 - Approver: Flamestrike
 - Approval statement: "I want you to use the exact process that we used for the Cairn Stone ... You will again have full authority and approval ... I just want to see the final completed image."
-- Artifact status: `authoritative`
-- Execution state: `approved and queued for the first post-reset production turn`
+- Artifact status: `quarantined`
+- Execution state: `stopped; invalid as A05 execution authority`
+- Recovery notice: the contract inherited the A03 perspective-view authority inversion and permitted a facade/card implementation that violated the governing construction blueprint. It is preserved for defect history only.
 
 ## Decision
 

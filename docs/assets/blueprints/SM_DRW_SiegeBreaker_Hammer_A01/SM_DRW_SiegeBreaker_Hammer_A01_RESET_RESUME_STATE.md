@@ -1,30 +1,24 @@
 # SM_DRW_SiegeBreaker_Hammer_A01 Reset / Resume State
 
-- Active contract: `SB-VF-A04-STRICT-SCANLINE`
-- Contract record: `steps/VISUAL_FIDELITY_A04_STRICT_SCANLINE_RECONSTRUCTION_CONTRACT.md`
-- Last Core-valid state: A04 strict-scanline production package completed and all declared technical gates passed
-- Current pipeline state: `DCC game-ready candidate pending Flamestrike visual approval`
-- Geometry authority: embedded `asset_spec.json` and `dimensions_cm.csv`
+- Active contract: `SB-VF-A05-ORTHOGRAPHIC-VOLUMETRIC`
+- Contract record: `steps/VISUAL_FIDELITY_A05_ORTHOGRAPHIC_VOLUMETRIC_REBUILD_CONTRACT.md`
+- Restart handoff: `steps/VISUAL_FIDELITY_A04_DRIFT_RECOVERY_A05_RESTART_HANDOFF.md`
+- Last Core-valid state: verified package, exact numeric specification, corrected canonical blockout, unchanged detailed orthographic source, and A05 authority records
+- Current pipeline state: `A05 orthographic-volumetric DCC rebuild approved and queued after reset`
+- Geometry authority: embedded `asset_spec.json`, `dimensions_cm.csv`, corrected canonical blockout, and freshly registered detailed orthographic views
 - Numeric envelope: exact `52 x 32 x 170 cm`
-- Visual authority: approved final-package concept sheet; large 3/4 render owns the primary visible projection; normalized non-conflicting orthographic evidence owns depth and hidden construction
-- Full scanline evidence: fresh A04-owned capture is `pixel_exact=true`, `changed_pixels=0`, `max_rgb_delta=0`
-- Required method: exact Cairn Stone A21 strict-pixel chain—fresh source only, scanline-exact evidence, exact crops/masks/contours, exact-copy visible RGB, declared view ownership, no visible averaging, fail-closed strict gate
-- Secondary scale conflict: declared and blocked; normalized structural evidence remains usable
-- A01/A02/A03 geometry and textures: forbidden as A04 construction inputs
-- A03 DCC source, textures, LODs, collision, FBX/GLB: `quarantined as an A04 visual solution; reference only for defect history`
-- A03 pixel comparison: `proof only`; `5/5` pass
-- A03 independent technical audit: `proof only`; `36/36` pass
-- A04 DCC source: `SM_DRW_SiegeBreaker_Hammer_A01_DCCGameReady_StrictScanline_A04.blend`
-- A04 production set: five materials, twenty `2048 x 2048` PBR maps, four FBXs, one GLB, three UCX collision proxies
-- LOD triangles: `11592 / 6552 / 3676 / 1676`
-- Exact final review-board SHA-256: `86496214ba7b593286e275be0cf4b59a7327baaede8f46563251ab7afdd36710`
-- Independent technical audit: `24/24 pass`
-- Fail-closed strict-pixel gate: `pass`
-- A04 production started: `true`
-- A04 production complete: `true`
-- Hidden-view interpretation boundary: front/back/left/right visible components use exact source crops and declared ownership; top/bottom are inferred closures because their drawn panel scales conflict with the fixed numeric envelope
-- Next action after resume: preserve the completed package and obtain Flamestrike's visual decision
-- Review rule: final completed A04 image is the only user-facing A04 review artifact
-- Pending gate: Flamestrike visual approval, rejection, or blocked decision on the final A04 image
+- Orthographic authority: front/back own X/Z evidence; left/right own Y/Z evidence; top/bottom own X/Y evidence after one uniform registration per complete view
+- Three-quarter authority: style, material character, depth character, and final beauty comparison only; forbidden as construction frame
+- Shared assembly frame: origin at bottom-center pommel; centerline `X=0,Y=0`; Z stations `0,14,18,60,132,170 cm`
+- A03/A04 authority reversal, component scales, masks, geometry, textures, exports, and renders: `quarantined`; forbidden as A05 construction inputs
+- A03/A04 technical audits: `proof only` for mechanics and defect history; no visual or A05 construction implication
+- A04 final review board SHA `86496214...710`: `invalid as a completed 3D asset`
+- A04 visible defects: 2.5D facades/cards, backing blocks, contaminated gray/white pixels, approximately `5.29 cm` head/shaft center mismatch, approximately `1.05 cm` grip/pommel mismatch, elongated/thin handle read
+- Required A05 method: fresh clean orthographic masks; whole-view registration; real volumetric reconstruction; shared attachment axis; UV projection/bake onto real geometry; computed fail-closed validation; multi-angle parallax proof
+- Blocked A05 methods: perspective-derived geometry, per-component scaling/recentering, facades/cards/billboards, raw background-bearing source textures, asserted audit passes, repair-forward from failed geometry
+- A05 production started: `false`
+- Next action after resume: perform the Core Resume Handshake, run a pre-DCC checkpoint, and execute the A05 contract from Step 1 fresh orthographic intake
+- Review rule: do not show intermediate images; visibly open only the final completed A05 review image unless a genuine evidence block stops production
+- Pending gate after A05 completion: Flamestrike `approved`, `rejected`, or `blocked` decision on the final A05 image
 - Unreal authority: `false`
 - Fully game-ready: `false`
