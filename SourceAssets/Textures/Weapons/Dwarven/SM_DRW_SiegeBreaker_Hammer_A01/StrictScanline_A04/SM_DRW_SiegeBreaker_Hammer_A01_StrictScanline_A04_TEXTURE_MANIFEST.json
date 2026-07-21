@@ -1,0 +1,226 @@
+{
+  "schema": "aerathea.siegebreaker_a04_texture_manifest.v1",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "revision": "StrictScanline_A04",
+  "status": "candidate",
+  "source": "SourceAssets/Reference/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/02_SiegeBreaker_Codex_Final_Package/reference/concept_sheet_style_reference.png",
+  "source_file_sha256": "3308a7bd0f0830c9cd1b695b57077d9faf77a839bb3e70edc6afe87c68af8b74",
+  "atlas_size": [
+    2048,
+    2048
+  ],
+  "visible_source_rgb_exact_all_families": true,
+  "filtered_resampling": false,
+  "files": {
+    "Stone": {
+      "BC": {
+        "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/StrictScanline_A04/T_DRW_SiegeBreaker_Hammer_A01_Stone_BC.png",
+        "sha256": "1294707af0f7d3d48b012aa00b48969b83ecc968ba0feeb0a8e78310118068e2",
+        "size": [
+          2048,
+          2048
+        ]
+      },
+      "N": {
+        "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/StrictScanline_A04/T_DRW_SiegeBreaker_Hammer_A01_Stone_N.png",
+        "sha256": "5f9359e023b8d677654ee25efad56fa120d6de4c1b41455f4ddff933b7df6bf5",
+        "size": [
+          2048,
+          2048
+        ]
+      },
+      "ORM": {
+        "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/StrictScanline_A04/T_DRW_SiegeBreaker_Hammer_A01_Stone_ORM.png",
+        "sha256": "dcb3f52cbf59b4e04d68cd2b1a2efd86077e762ca0401af4ae2c97efb7c8cb78",
+        "size": [
+          2048,
+          2048
+        ]
+      },
+      "E": {
+        "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/StrictScanline_A04/T_DRW_SiegeBreaker_Hammer_A01_Stone_E.png",
+        "sha256": "1ae110716619e9c912439491a6ad53240f116b0522999fdd2f44b5ea65acd44d",
+        "size": [
+          2048,
+          2048
+        ]
+      },
+      "visible_source_rgb_exact": true,
+      "source_region_xyxy": [
+        0,
+        0,
+        1055,
+        1491
+      ],
+      "copy_method": "exact integer paste; no resize; no filter"
+    },
+    "Bronze": {
+      "BC": {
+        "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/StrictScanline_A04/T_DRW_SiegeBreaker_Hammer_A01_Bronze_BC.png",
+        "sha256": "fa2ab7293f1409b0904879958b02007529d011aad00a0e849a1603b2ca8bf7b2",
+        "size": [
+          2048,
+          2048
+        ]
+      },
+      "N": {
+        "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/StrictScanline_A04/T_DRW_SiegeBreaker_Hammer_A01_Bronze_N.png",
+        "sha256": "5f9359e023b8d677654ee25efad56fa120d6de4c1b41455f4ddff933b7df6bf5",
+        "size": [
+          2048,
+          2048
+        ]
+      },
+      "ORM": {
+        "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/StrictScanline_A04/T_DRW_SiegeBreaker_Hammer_A01_Bronze_ORM.png",
+        "sha256": "7553eda0bd453da09ee5fc274a726962fdd1709069d112263862302b0364665a",
+        "size": [
+          2048,
+          2048
+        ]
+      },
+      "E": {
+        "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/StrictScanline_A04/T_DRW_SiegeBreaker_Hammer_A01_Bronze_E.png",
+        "sha256": "1ae110716619e9c912439491a6ad53240f116b0522999fdd2f44b5ea65acd44d",
+        "size": [
+          2048,
+          2048
+        ]
+      },
+      "visible_source_rgb_exact": true,
+      "source_region_xyxy": [
+        0,
+        0,
+        1055,
+        1491
+      ],
+      "copy_method": "exact integer paste; no resize; no filter"
+    },
+    "Steel": {
+      "BC": {
+        "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/StrictScanline_A04/T_DRW_SiegeBreaker_Hammer_A01_Steel_BC.png",
+        "sha256": "a541b6c192e98e8c5ad2d8b6fcd2fc7b4f54b2f2b4f70a3a9c6b024cd1dcd6ab",
+        "size": [
+          2048,
+          2048
+        ]
+      },
+      "N": {
+        "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/StrictScanline_A04/T_DRW_SiegeBreaker_Hammer_A01_Steel_N.png",
+        "sha256": "5f9359e023b8d677654ee25efad56fa120d6de4c1b41455f4ddff933b7df6bf5",
+        "size": [
+          2048,
+          2048
+        ]
+      },
+      "ORM": {
+        "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/StrictScanline_A04/T_DRW_SiegeBreaker_Hammer_A01_Steel_ORM.png",
+        "sha256": "82508ab9d436c5e7476894b2e9b8882d3bbae0a8d791243cf344dc07774bcfb0",
+        "size": [
+          2048,
+          2048
+        ]
+      },
+      "E": {
+        "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/StrictScanline_A04/T_DRW_SiegeBreaker_Hammer_A01_Steel_E.png",
+        "sha256": "1ae110716619e9c912439491a6ad53240f116b0522999fdd2f44b5ea65acd44d",
+        "size": [
+          2048,
+          2048
+        ]
+      },
+      "visible_source_rgb_exact": true,
+      "source_region_xyxy": [
+        0,
+        0,
+        1055,
+        1491
+      ],
+      "copy_method": "exact integer paste; no resize; no filter"
+    },
+    "Leather": {
+      "BC": {
+        "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/StrictScanline_A04/T_DRW_SiegeBreaker_Hammer_A01_Leather_BC.png",
+        "sha256": "fe683d710ca816369e2fca966209329edfd5658783043af4aa88d854776ba90e",
+        "size": [
+          2048,
+          2048
+        ]
+      },
+      "N": {
+        "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/StrictScanline_A04/T_DRW_SiegeBreaker_Hammer_A01_Leather_N.png",
+        "sha256": "5f9359e023b8d677654ee25efad56fa120d6de4c1b41455f4ddff933b7df6bf5",
+        "size": [
+          2048,
+          2048
+        ]
+      },
+      "ORM": {
+        "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/StrictScanline_A04/T_DRW_SiegeBreaker_Hammer_A01_Leather_ORM.png",
+        "sha256": "a02fef10727ef3a18a5d3294d4ea8d4cf9505df2a3a851ec76818e33b5215f11",
+        "size": [
+          2048,
+          2048
+        ]
+      },
+      "E": {
+        "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/StrictScanline_A04/T_DRW_SiegeBreaker_Hammer_A01_Leather_E.png",
+        "sha256": "1ae110716619e9c912439491a6ad53240f116b0522999fdd2f44b5ea65acd44d",
+        "size": [
+          2048,
+          2048
+        ]
+      },
+      "visible_source_rgb_exact": true,
+      "source_region_xyxy": [
+        0,
+        0,
+        1055,
+        1491
+      ],
+      "copy_method": "exact integer paste; no resize; no filter"
+    },
+    "Rune": {
+      "BC": {
+        "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/StrictScanline_A04/T_DRW_SiegeBreaker_Hammer_A01_Rune_BC.png",
+        "sha256": "9c73201d17d553581c099988d6419e2f23573941000cc1839021c4a93900e8f1",
+        "size": [
+          2048,
+          2048
+        ]
+      },
+      "N": {
+        "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/StrictScanline_A04/T_DRW_SiegeBreaker_Hammer_A01_Rune_N.png",
+        "sha256": "5f9359e023b8d677654ee25efad56fa120d6de4c1b41455f4ddff933b7df6bf5",
+        "size": [
+          2048,
+          2048
+        ]
+      },
+      "ORM": {
+        "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/StrictScanline_A04/T_DRW_SiegeBreaker_Hammer_A01_Rune_ORM.png",
+        "sha256": "72f4aa217d74975f7bb3e64463257f545ab5dcc279fa136ba2027a1beafcd9da",
+        "size": [
+          2048,
+          2048
+        ]
+      },
+      "E": {
+        "path": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/StrictScanline_A04/T_DRW_SiegeBreaker_Hammer_A01_Rune_E.png",
+        "sha256": "ec5115b74a3b8dfbc44ce2e197477f3a60329fd9a241c20b242e9484faa6c73c",
+        "size": [
+          2048,
+          2048
+        ]
+      },
+      "visible_source_rgb_exact": true,
+      "source_region_xyxy": [
+        0,
+        0,
+        1055,
+        1491
+      ],
+      "copy_method": "exact integer paste; no resize; no filter"
+    }
+  }
+}

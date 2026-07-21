@@ -1,0 +1,207 @@
+{
+  "schema": "aerathea.siegebreaker_a04_build_manifest.v1",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "revision": "StrictScanline_A04",
+  "contract_id": "SB-VF-A04-STRICT-SCANLINE",
+  "status": "candidate",
+  "source": "SourceAssets/Reference/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/02_SiegeBreaker_Codex_Final_Package/reference/concept_sheet_style_reference.png",
+  "source_sha256": "3308a7bd0f0830c9cd1b695b57077d9faf77a839bb3e70edc6afe87c68af8b74",
+  "fresh_evidence_manifest": "Saved/Automation/DCC/SM_DRW_SiegeBreaker_Hammer_A01/VisualFidelity_A04/FreshEvidence/SM_DRW_SiegeBreaker_Hammer_A01_A04_FreshEvidenceManifest.json",
+  "pre_geometry_audit": "Saved/Automation/DCC/SM_DRW_SiegeBreaker_Hammer_A01/VisualFidelity_A04/FreshEvidence/SM_DRW_SiegeBreaker_Hammer_A01_A04_PreGeometryAudit.json",
+  "source_only_inputs": true,
+  "prior_hammer_candidate_inputs": [],
+  "blend": {
+    "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/SM_DRW_SiegeBreaker_Hammer_A01_DCCGameReady_StrictScanline_A04.blend",
+    "sha256": "65f5ed3e431586826b11ab73c9150f2959ba3016fdb0c43337917cd4168d4991",
+    "bytes": 403669
+  },
+  "numeric_authority": {
+    "overall_bounds_cm": [
+      52.0,
+      32.0,
+      170.0
+    ],
+    "head_interval_cm": [
+      132.0,
+      170.0
+    ],
+    "shaft_interval_cm": [
+      14.0,
+      132.0
+    ],
+    "grip_interval_cm": [
+      18.0,
+      60.0
+    ],
+    "pommel_interval_cm": [
+      0.0,
+      18.0
+    ],
+    "shaft_diameter_cm": 5.0,
+    "pommel_max_width_cm": 11.0
+  },
+  "visible_construction": {
+    "method": "closed per-row source-contour facade meshes with exact source-pixel UV lineage",
+    "selection_method": "source_priority",
+    "source_scope": "component_isolated",
+    "averaging": false,
+    "analytic_replacement": false,
+    "filtered_resampling": false,
+    "components": [
+      "head",
+      "shaft",
+      "grip",
+      "pommel"
+    ],
+    "secondary_view_components": {
+      "back": [
+        "head",
+        "shaft",
+        "grip",
+        "pommel"
+      ],
+      "left": [
+        "head",
+        "shaft",
+        "grip",
+        "pommel"
+      ],
+      "right": [
+        "head",
+        "shaft",
+        "grip",
+        "pommel"
+      ]
+    }
+  },
+  "hidden_interpretation": [
+    "backing volume and hidden surface continuation",
+    "internal head core/socket closure",
+    "PBR normal, ORM, and restrained emission response",
+    "LOD simplification and collision proxies"
+  ],
+  "materials": [
+    "M_Stone",
+    "M_Bronze",
+    "M_Steel",
+    "M_Leather",
+    "M_Rune_Emissive"
+  ],
+  "texture_manifest": "SourceAssets/Textures/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/StrictScanline_A04/SM_DRW_SiegeBreaker_Hammer_A01_StrictScanline_A04_TEXTURE_MANIFEST.json",
+  "texture_maps": 20,
+  "visible_source_rgb_exact_all_families": true,
+  "lod_metrics": {
+    "LOD0": {
+      "objects": 48,
+      "triangles": 11592,
+      "bounds_min_cm": [
+        -25.999999046325684,
+        -15.999999642372131,
+        0.0
+      ],
+      "bounds_max_cm": [
+        25.999999046325684,
+        15.999999642372131,
+        170.00000476837158
+      ],
+      "bounds_extent_cm": [
+        51.99999809265137,
+        31.999999284744263,
+        170.00000476837158
+      ]
+    },
+    "LOD1": {
+      "objects": 48,
+      "triangles": 6552,
+      "bounds_min_cm": [
+        -25.999999046325684,
+        -15.999999642372131,
+        0.0
+      ],
+      "bounds_max_cm": [
+        25.999999046325684,
+        15.999999642372131,
+        170.00000476837158
+      ],
+      "bounds_extent_cm": [
+        51.99999809265137,
+        31.999999284744263,
+        170.00000476837158
+      ]
+    },
+    "LOD2": {
+      "objects": 41,
+      "triangles": 3676,
+      "bounds_min_cm": [
+        -25.999999046325684,
+        -15.999999642372131,
+        0.0
+      ],
+      "bounds_max_cm": [
+        25.999999046325684,
+        15.999999642372131,
+        170.00000476837158
+      ],
+      "bounds_extent_cm": [
+        51.99999809265137,
+        31.999999284744263,
+        170.00000476837158
+      ]
+    },
+    "LOD3": {
+      "objects": 31,
+      "triangles": 1676,
+      "bounds_min_cm": [
+        -25.999999046325684,
+        -15.999999642372131,
+        0.0
+      ],
+      "bounds_max_cm": [
+        25.999999046325684,
+        15.999999642372131,
+        170.00000476837158
+      ],
+      "bounds_extent_cm": [
+        51.99999809265137,
+        31.999999284744263,
+        170.00000476837158
+      ]
+    }
+  },
+  "collision": [
+    "UCX_SM_DRW_SiegeBreaker_Hammer_A01_00",
+    "UCX_SM_DRW_SiegeBreaker_Hammer_A01_01",
+    "UCX_SM_DRW_SiegeBreaker_Hammer_A01_02"
+  ],
+  "exports": {
+    "LOD0_FBX": {
+      "path": "SourceAssets/Exports/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/StrictScanline_A04/SM_DRW_SiegeBreaker_Hammer_A01.fbx",
+      "sha256": "e5f7d16349b59a989cf3c1256ae794a65a13eed4386975876b231e845f5be24f",
+      "bytes": 361308
+    },
+    "LOD1_FBX": {
+      "path": "SourceAssets/Exports/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/StrictScanline_A04/SM_DRW_SiegeBreaker_Hammer_A01_LOD1.fbx",
+      "sha256": "78ee0df792c69497d19d6b99e0f92fac48acb192288622eb754cce4ccaf98d9b",
+      "bytes": 279260
+    },
+    "LOD2_FBX": {
+      "path": "SourceAssets/Exports/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/StrictScanline_A04/SM_DRW_SiegeBreaker_Hammer_A01_LOD2.fbx",
+      "sha256": "1823427618f7fb90f53bd82e425410c6a9355aa70db9ae98af4332c6b0f6cb4e",
+      "bytes": 215852
+    },
+    "LOD3_FBX": {
+      "path": "SourceAssets/Exports/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/StrictScanline_A04/SM_DRW_SiegeBreaker_Hammer_A01_LOD3.fbx",
+      "sha256": "e583f18c861e362b98d6d530dae74e15049c5a19e62bc65719d140cdbfc57d03",
+      "bytes": 153340
+    },
+    "LOD0_GLB": {
+      "path": "SourceAssets/Exports/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/StrictScanline_A04/SM_DRW_SiegeBreaker_Hammer_A01.glb",
+      "sha256": "992cf7bd19394370bf3be8dd74f8c5e154520b89076313407d1fb5ffa5019def",
+      "bytes": 14637272,
+      "status": "complete",
+      "runtime": "3.0.1"
+    }
+  },
+  "unreal_authority": false,
+  "fully_game_ready": false
+}

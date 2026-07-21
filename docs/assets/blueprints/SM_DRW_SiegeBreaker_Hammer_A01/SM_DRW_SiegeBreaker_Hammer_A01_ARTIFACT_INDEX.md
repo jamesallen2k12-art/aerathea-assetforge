@@ -38,5 +38,13 @@
 | A03 final review board SHA `c109f986...1adf4` | `proof only` | Opened source-versus-candidate and six-view review artifact. |
 | Final-package `ScanlineCapture/REF_DRW_SiegeBreaker_FinalPackage_StyleReference_A01.rgbscan.gz` and manifest | `authoritative source evidence` | Existing lossless full-sheet scan proves exact reconstruction with zero changed pixels; A04 must create a fresh A04-owned proof before geometry. |
 | `steps/VISUAL_FIDELITY_A04_STRICT_SCANLINE_RECONSTRUCTION_CONTRACT.md` | `authoritative` | Approved reset-safe contract binding the successful Cairn Stone A21 strict-pixel process to a fresh Hammer reconstruction. |
+| Fresh A04 scanline, exact crops, component masks, row spans, and pregeometry audit | `authoritative source evidence` | Fresh source-only measurement chain; 55/55 pregeometry checks passed. |
+| `SM_DRW_SiegeBreaker_Hammer_A01_DCCGameReady_StrictScanline_A04.blend` | `candidate` | Fresh closed DCC source with LOD0-LOD3, exact visible source facades, inferred hidden closure, and collision. |
+| A04 20-map 2K PBR texture package and manifest | `candidate` | Five material families with exact-copy visible RGB and production PBR companions. |
+| A04 LOD0-LOD3 FBX and LOD0 GLB exports | `candidate` | DCC exports; all clean-reimport checks passed; Unreal not authorized. |
+| `manifests/VISUAL_FIDELITY_A04_STRICT_AUDIT.json` | `proof only` | Independent `24/24` bounds, mesh, texture, export, render, and clean-reimport pass. |
+| A04 fail-closed strict-pixel gate | `proof only` | Confirms zero-difference scan, exact visible pixels, declared source ownership, contact, seams, lineage, and generator blockers. |
+| A04 internal attempt log | `reference only` | Records three rejected internal review boards; none is eligible for approval. |
+| A04 final completed review board SHA `86496214...710` | `candidate` | Only user-facing A04 review artifact; visual decision pending. |
 
-Unreal authority is `false`. `Fully game-ready` is `false`. No A01/A02/A03 visual candidate remains eligible for approval as A04. A04 production is approved and queued for the first post-reset turn.
+Unreal authority is `false`. `Fully game-ready` is `false`. No A01/A02/A03 visual candidate remains eligible for approval as A04. A04 is a `DCC game-ready candidate pending Flamestrike visual approval`.

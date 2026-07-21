@@ -2,24 +2,29 @@
 
 - Active contract: `SB-VF-A04-STRICT-SCANLINE`
 - Contract record: `steps/VISUAL_FIDELITY_A04_STRICT_SCANLINE_RECONSTRUCTION_CONTRACT.md`
-- Last Core-valid state: A03 DCC game-ready candidate produced, then superseded as the visual solution because its geometry was not driven by the complete pixel scan
-- Current pipeline state: `A04 strict-scanline DCC rebuild approved and queued after reset`
+- Last Core-valid state: A04 strict-scanline production package completed and all declared technical gates passed
+- Current pipeline state: `DCC game-ready candidate pending Flamestrike visual approval`
 - Geometry authority: embedded `asset_spec.json` and `dimensions_cm.csv`
 - Numeric envelope: exact `52 x 32 x 170 cm`
 - Visual authority: approved final-package concept sheet; large 3/4 render owns the primary visible projection; normalized non-conflicting orthographic evidence owns depth and hidden construction
-- Full scanline evidence: existing source capture is `pixel_exact=true`, `changed_pixels=0`, `max_rgb_delta=0`; A04 must generate a fresh A04-owned capture before geometry
+- Full scanline evidence: fresh A04-owned capture is `pixel_exact=true`, `changed_pixels=0`, `max_rgb_delta=0`
 - Required method: exact Cairn Stone A21 strict-pixel chain—fresh source only, scanline-exact evidence, exact crops/masks/contours, exact-copy visible RGB, declared view ownership, no visible averaging, fail-closed strict gate
 - Secondary scale conflict: declared and blocked; normalized structural evidence remains usable
 - A01/A02/A03 geometry and textures: forbidden as A04 construction inputs
 - A03 DCC source, textures, LODs, collision, FBX/GLB: `quarantined as an A04 visual solution; reference only for defect history`
 - A03 pixel comparison: `proof only`; `5/5` pass
 - A03 independent technical audit: `proof only`; `36/36` pass
-- LOD triangles: `9794 / 6228 / 4264 / 1839`
-- Exact final matched-render SHA-256: `023fc8f0bd90ed2091e2b3ceba69f32f3a348c60ec2f3bb7c865d436886498ac`
-- Exact final review-board SHA-256: `c109f986ee027996792505c5a8517e7efaee5925ae83bd1cf1c194725c41adf4`
-- A04 production started: `false`
-- Next action after resume: perform the fresh A04 source scan and execute the approved contract end-to-end
-- Review rule: do not show intermediate images; visibly open only the final completed A04 image unless blocked by evidence
-- Pending gate after completion: Flamestrike visual approval, rejection, or blocked decision on the final A04 image
+- A04 DCC source: `SM_DRW_SiegeBreaker_Hammer_A01_DCCGameReady_StrictScanline_A04.blend`
+- A04 production set: five materials, twenty `2048 x 2048` PBR maps, four FBXs, one GLB, three UCX collision proxies
+- LOD triangles: `11592 / 6552 / 3676 / 1676`
+- Exact final review-board SHA-256: `86496214ba7b593286e275be0cf4b59a7327baaede8f46563251ab7afdd36710`
+- Independent technical audit: `24/24 pass`
+- Fail-closed strict-pixel gate: `pass`
+- A04 production started: `true`
+- A04 production complete: `true`
+- Hidden-view interpretation boundary: front/back/left/right visible components use exact source crops and declared ownership; top/bottom are inferred closures because their drawn panel scales conflict with the fixed numeric envelope
+- Next action after resume: preserve the completed package and obtain Flamestrike's visual decision
+- Review rule: final completed A04 image is the only user-facing A04 review artifact
+- Pending gate: Flamestrike visual approval, rejection, or blocked decision on the final A04 image
 - Unreal authority: `false`
 - Fully game-ready: `false`

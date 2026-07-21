@@ -1,0 +1,32 @@
+{
+  "schema": "aerathea.siegebreaker_a04_internal_attempt_log.v1",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "contract_id": "SB-VF-A04-STRICT-SCANLINE",
+  "artifact_status": "reference only",
+  "attempts": [
+    {
+      "sha256_prefix": "dc55c963",
+      "status": "invalid",
+      "decision": "rejected internally",
+      "reason": "Backing geometry occluded the source-owned authority facade."
+    },
+    {
+      "sha256_prefix": "ac21b489",
+      "status": "invalid",
+      "decision": "rejected internally",
+      "reason": "Backing rectangles protruded beyond the source-owned primary silhouette."
+    },
+    {
+      "sha256_prefix": "7f361469",
+      "status": "reference only",
+      "decision": "superseded internally",
+      "reason": "Primary authority was corrected, but back/left/right views had not yet received their own source-derived visible facades."
+    }
+  ],
+  "final_candidate": {
+    "sha256": "86496214ba7b593286e275be0cf4b59a7327baaede8f46563251ab7afdd36710",
+    "status": "candidate",
+    "user_facing": true
+  },
+  "note": "Rejected and superseded boards were overwritten during internal iteration and are not approval artifacts."
+}

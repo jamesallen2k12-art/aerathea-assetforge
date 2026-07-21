@@ -93,3 +93,27 @@
 - Excluded: Unreal import, `Fully game-ready`, self-approval of visual quality,
   and unrelated worktree changes.
 - Execution state: `approved and queued for the first post-reset production turn`.
+
+## A04 Objective Result
+
+- Date: 2026-07-21.
+- Fresh source evidence: source hash locked; lossless A04 scan rebuilt with zero
+  changed pixels and zero maximum RGB delta.
+- Fresh construction: no A01/A02/A03 candidate geometry or textures used as
+  construction inputs; exact `52 x 32 x 170 cm` envelope preserved.
+- Visible source ownership: front, back, left, and right component reconstructions
+  use their own exact integer-copy source pixels; top/bottom surfaces remain
+  declared inferred closure because their panel scales conflict with the fixed
+  numeric authority.
+- Production set: five materials, twenty `2048 x 2048` PBR maps, four LOD FBXs,
+  one GLB, and three UCX proxies.
+- LOD triangles: `11592 / 6552 / 3676 / 1676`.
+- Clean reimport: all FBXs and the GLB passed expected triangle and bounds checks.
+- Independent technical audit: `pass`, `24/24` checks.
+- Fail-closed strict-pixel gate: `pass`.
+- Final review board SHA-256:
+  `86496214ba7b593286e275be0cf4b59a7327baaede8f46563251ab7afdd36710`.
+- Pipeline status: `DCC game-ready candidate pending Flamestrike visual approval`.
+- Pending authority: Flamestrike visual approval, rejection, or blocked decision.
+- Unreal authority: `false`.
+- Fully game-ready: `false`.
