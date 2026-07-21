@@ -1,0 +1,351 @@
+{
+  "schema": "aerathea.a005_visual_correction_a08_candidate.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-VISUAL-CORRECTION-A08",
+  "date": "2026-07-21",
+  "status": "candidate_pending_a08_independent_audit",
+  "artifact_classification": "candidate",
+  "pipeline_status": "DCC game-ready candidate pending A08 audit and Flamestrike review",
+  "source_authority": {
+    "path": "docs/assets/reference/bloodaxe_cairnstone_asset/REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate.png",
+    "sha256": "4b953abb87f5f254a5f51c6214e76d3f72c4fc55bc2fa4e4d605b2440d6e53c2",
+    "modified": false
+  },
+  "first_divergence_repaired": "STEP_12_under_resolved_784_triangle_blockout",
+  "rebuild_from_historical_a005_geometry": false,
+  "legacy_a001_a004_geometry_used": false,
+  "dimensions_cm": {
+    "target": [
+      140.0,
+      110.0,
+      220.0
+    ],
+    "actual": [
+      140.0,
+      110.0,
+      220.0
+    ],
+    "pivot": [
+      0,
+      0,
+      0
+    ]
+  },
+  "macro_features": {
+    "required": [
+      "rounded_irregular_tapered_monolith",
+      "two_independent_annular_masonry_courses",
+      "irregular_peripheral_apron_shell",
+      "face_owned_blood_axe_basecolor_normal_consumer",
+      "face_owned_red_fissure_and_rune_basecolor_normal_consumers",
+      "dark_weathered_stone_material"
+    ],
+    "present": [
+      "rounded_irregular_tapered_monolith",
+      "two_independent_annular_masonry_courses",
+      "irregular_peripheral_apron_shell",
+      "face_owned_blood_axe_basecolor_normal_consumer",
+      "face_owned_red_fissure_and_rune_basecolor_normal_consumers",
+      "dark_weathered_stone_material"
+    ],
+    "primary_shells": 4,
+    "C005_C006_C007_geometry": 0,
+    "decoration_implementation": "source-owned BaseColor and Normal consumers per Step 11 and Step 14"
+  },
+  "lods": {
+    "LOD0": {
+      "object": "SM_GIA_BloodAxeCairnstone_A005_LOD0",
+      "vertices": 4704,
+      "polygons": 9104,
+      "triangles": 9104,
+      "bounds_cm": {
+        "min": [
+          -70.0,
+          -55.0,
+          0.0
+        ],
+        "max": [
+          70.0,
+          55.0,
+          220.0
+        ],
+        "dimensions": [
+          140.0,
+          110.0,
+          220.0
+        ]
+      },
+      "uv_layers": [
+        "UVMap",
+        "LightmapUV"
+      ],
+      "material_slots": 1,
+      "ratio_requested": 1.0
+    },
+    "LOD1": {
+      "object": "SM_GIA_BloodAxeCairnstone_A005_LOD1",
+      "vertices": 2245,
+      "polygons": 4186,
+      "triangles": 4186,
+      "bounds_cm": {
+        "min": [
+          -70.0,
+          -55.0,
+          0.0
+        ],
+        "max": [
+          70.0,
+          55.0,
+          220.0
+        ],
+        "dimensions": [
+          140.0,
+          110.0,
+          220.0
+        ]
+      },
+      "uv_layers": [
+        "UVMap",
+        "LightmapUV"
+      ],
+      "material_slots": 1,
+      "ratio_requested": 0.46
+    },
+    "LOD2": {
+      "object": "SM_GIA_BloodAxeCairnstone_A005_LOD2",
+      "vertices": 1107,
+      "polygons": 1910,
+      "triangles": 1910,
+      "bounds_cm": {
+        "min": [
+          -70.0,
+          -55.0,
+          0.0
+        ],
+        "max": [
+          70.0,
+          55.0,
+          220.0
+        ],
+        "dimensions": [
+          140.0,
+          110.0,
+          220.0
+        ]
+      },
+      "uv_layers": [
+        "UVMap",
+        "LightmapUV"
+      ],
+      "material_slots": 1,
+      "ratio_requested": 0.21
+    },
+    "LOD3": {
+      "object": "SM_GIA_BloodAxeCairnstone_A005_LOD3",
+      "vertices": 516,
+      "polygons": 704,
+      "triangles": 704,
+      "bounds_cm": {
+        "min": [
+          -70.0,
+          -55.0,
+          0.0
+        ],
+        "max": [
+          70.0,
+          55.0,
+          220.0
+        ],
+        "dimensions": [
+          140.0,
+          110.0,
+          220.0
+        ]
+      },
+      "uv_layers": [
+        "UVMap",
+        "LightmapUV"
+      ],
+      "material_slots": 1,
+      "ratio_requested": 0.08
+    }
+  },
+  "collision": {
+    "count": 4,
+    "names": [
+      "UCX_SM_GIA_BloodAxeCairnstone_A005_00",
+      "UCX_SM_GIA_BloodAxeCairnstone_A005_01",
+      "UCX_SM_GIA_BloodAxeCairnstone_A005_02",
+      "UCX_SM_GIA_BloodAxeCairnstone_A005_03"
+    ],
+    "strategy": "four custom source-containing convex boxes"
+  },
+  "materials": {
+    "count": 1,
+    "names": [
+      "M_GIA_BloodAxeCairnstone_A005_VisualCorrection_A08"
+    ],
+    "emissive": "none; source red is BaseColor/Normal-owned"
+  },
+  "textures": {
+    "T_GIA_BloodAxeCairnstone_A005_VF_A08_BC.png": {
+      "path": "SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/VisualCorrection_A08/T_GIA_BloodAxeCairnstone_A005_VF_A08_BC.png",
+      "sha256": "997617ed07b7b1e578f816fd64f8816f1d20cb06cd1188e19b94d3ee0757ea2a",
+      "source_path": "SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/T_GIA_BloodAxeCairnstone_A005_BC.png",
+      "source_sha256": "a618619ad7e0da8e8617191b1fa8a96aa74397a9cafb30ddffea8b332533c884",
+      "recovery_role": "A04 source-regenerated atlas; source-owned RGB remains exact",
+      "a04_correction": "source-owned pixels preserved exactly; unowned view padding receives deterministic nearest-boundary stone continuation; authored zone receives deterministic dark stone; non-owned authored zone lifted to dark-stone midtones",
+      "a08_role": "A04 source-regenerated atlas retained; individual stones receive per-island UV routing"
+    },
+    "T_GIA_BloodAxeCairnstone_A005_VF_A08_N.png": {
+      "path": "SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/VisualCorrection_A08/T_GIA_BloodAxeCairnstone_A005_VF_A08_N.png",
+      "sha256": "12c75e4f2a12cad22e07d8872645744d2721d32271f4c455b407829de2ea43b2",
+      "source_path": "SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/T_GIA_BloodAxeCairnstone_A005_N.png",
+      "source_sha256": "12c75e4f2a12cad22e07d8872645744d2721d32271f4c455b407829de2ea43b2",
+      "recovery_role": "A04 source-regenerated atlas; source-owned RGB remains exact",
+      "a04_correction": "0 unsupported low-Z normal texels replaced by flat tangent normal",
+      "a08_role": "A04 source-regenerated atlas retained; individual stones receive per-island UV routing"
+    },
+    "T_GIA_BloodAxeCairnstone_A005_VF_A08_ORM.png": {
+      "path": "SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/VisualCorrection_A08/T_GIA_BloodAxeCairnstone_A005_VF_A08_ORM.png",
+      "sha256": "76f65c3f9f1e538b0024cbf43356a7e03bc84a67e77dfaaba16f1a259b37011c",
+      "source_path": "SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/T_GIA_BloodAxeCairnstone_A005_ORM.png",
+      "source_sha256": "76f65c3f9f1e538b0024cbf43356a7e03bc84a67e77dfaaba16f1a259b37011c",
+      "recovery_role": "A04 source-regenerated atlas; source-owned RGB remains exact",
+      "a04_correction": "none",
+      "a08_role": "A04 source-regenerated atlas retained; individual stones receive per-island UV routing"
+    }
+  },
+  "uv0_owner_face_counts": {
+    "front": 1422,
+    "back": 1463,
+    "left": 1623,
+    "right": 1588,
+    "top": 1205,
+    "authored": 1803,
+    "individual_stone_components": 75,
+    "recessed_mortar_components": 3
+  },
+  "exports": {
+    "LOD0": {
+      "path": "SourceAssets/Exports/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/VisualCorrection_A08/SM_GIA_BloodAxeCairnstone_A005_VisualCorrection_A08.fbx",
+      "sha256": "cae7a63d40d1de13b6fc9a51e1fb9345b24ad3b970fd2d3d12e2fcb60dacf40f",
+      "bytes": 1270316
+    },
+    "LOD1": {
+      "path": "SourceAssets/Exports/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/VisualCorrection_A08/SM_GIA_BloodAxeCairnstone_A005_VisualCorrection_A08_LOD1.fbx",
+      "sha256": "f5f0b20314dddda9b6eb081975ce117f9d375a1ca89e8ca2b92c6fa82de2c0df",
+      "bytes": 624060
+    },
+    "LOD2": {
+      "path": "SourceAssets/Exports/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/VisualCorrection_A08/SM_GIA_BloodAxeCairnstone_A005_VisualCorrection_A08_LOD2.fbx",
+      "sha256": "9f183e49a346d179efbb7fab5a59270bb660a914ed9af04aa11dfa649317d9ee",
+      "bytes": 306636
+    },
+    "LOD3": {
+      "path": "SourceAssets/Exports/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/VisualCorrection_A08/SM_GIA_BloodAxeCairnstone_A005_VisualCorrection_A08_LOD3.fbx",
+      "sha256": "0efd274588725d3f63b1dfe1afd99f676c3f5ff9c098671e4e5bfe5ead528d57",
+      "bytes": 133964
+    }
+  },
+  "blend": {
+    "path": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_DCCGameReady_VisualCorrection_A08.blend",
+    "sha256": "c971915d5f118c8f420eef28c1c7b0692cbaebf77dcaca225f9d13c542aa724f"
+  },
+  "unreal_outputs": 0,
+  "fully_game_ready": false,
+  "visual_canon": false,
+  "recovery_from": "A07 ring deformation, course overlap, continuous-shell false pass, and component-level UV smear",
+  "geometry_authority": "A08 measurement-first individual-stone construction; exact A04 C001; A07 geometry inputs zero",
+  "a04_plinth_preservation": {
+    "reference_blend": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_DCCGameReady_VisualCorrection_A04.blend",
+    "reference_final": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A04/SM_GIA_BloodAxeCairnstone_A005_FINAL_CORRECTED_3D_A04.png",
+    "required_exact_geometry_and_uv": true
+  },
+  "a08_structure": {
+    "C001": {
+      "role": "exact A04 plinth visual construction",
+      "preserved": true
+    },
+    "C002": {
+      "role": "upper masonry course",
+      "stone_islands": 19,
+      "source_count": true,
+      "outer_cm": [
+        123.846154,
+        92.707424
+      ],
+      "z_cm": [
+        23.0,
+        34.25
+      ]
+    },
+    "C003": {
+      "role": "lower masonry course",
+      "stone_islands": 24,
+      "source_count": true,
+      "outer_cm": [
+        137.307692,
+        105.196507
+      ],
+      "z_cm": [
+        9.75,
+        22.25
+      ]
+    },
+    "C004": {
+      "role": "peripheral rubble apron",
+      "stone_islands": 32,
+      "source_count": false,
+      "bounded_rule": true,
+      "outer_cm": [
+        140.0,
+        110.0
+      ],
+      "z_cm": [
+        0.0,
+        9.0
+      ]
+    }
+  },
+  "course_clearances_cm": {
+    "C004_to_C003": 0.75,
+    "C003_to_C002": 0.75
+  },
+  "individual_islands_total": 75,
+  "recessed_mortar_beds": 3,
+  "connected_shells_total": 79,
+  "continuous_annular_shells": 0,
+  "replacement_base": {
+    "A04_base_geometry_inputs": 0,
+    "A06_geometry_inputs": 0,
+    "A07_geometry_inputs": 0
+  },
+  "uv_color": {
+    "exact_A04_C001_uv": true,
+    "per_stone_cardinal_and_top_source_projection": true,
+    "mortar_authored_hidden_transition_zone": true,
+    "vertical_smear_allowed": false,
+    "color_grading": false
+  },
+  "preservation": {
+    "A04_blend": {
+      "path": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_DCCGameReady_VisualCorrection_A04.blend",
+      "sha256_before": "e399a5c34455a70a55ca3084972544dd8bf007930bf1bb05c041fcef169e4caf",
+      "sha256_after": "e399a5c34455a70a55ca3084972544dd8bf007930bf1bb05c041fcef169e4caf",
+      "pass": true
+    },
+    "A04_manifest": {
+      "path": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_VISUAL_CORRECTION_A04_MANIFEST.json",
+      "sha256_before": "30416d9c336e70f1ad25aadb32158c35ad2e6f33cdf32bd3476f9b9a80ab8c65",
+      "sha256_after": "30416d9c336e70f1ad25aadb32158c35ad2e6f33cdf32bd3476f9b9a80ab8c65",
+      "pass": true
+    },
+    "A04_final": {
+      "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A04/SM_GIA_BloodAxeCairnstone_A005_FINAL_CORRECTED_3D_A04.png",
+      "sha256_before": "e2e62ac9a7a8ad17aa56200c6e3d2f155927498c0068cb345af45b51dd53aff1",
+      "sha256_after": "e2e62ac9a7a8ad17aa56200c6e3d2f155927498c0068cb345af45b51dd53aff1",
+      "pass": true
+    }
+  }
+}

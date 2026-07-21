@@ -1,0 +1,69 @@
+{
+  "schema": "aerathea.visual_correction_a08_internal_attempt_log.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-VISUAL-CORRECTION-A08",
+  "date": "2026-07-21",
+  "attempts": [
+    {
+      "id": "Attempt01",
+      "status": "quarantined",
+      "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A08/InternalAttempts/Attempt01/A08_ATTEMPT.png",
+      "sha256": "34e2295e80274e9621cabd66434ee7a5c89482622620e34b0af5aafb1f346e48",
+      "rejection_reasons": [
+        "per-stone authored-zone side UVs read as clean gray blocks rather than source weathered stone",
+        "open joints expose the review background instead of recessed red/dark mortar",
+        "course stones remain too mechanically uniform in vertical cadence"
+      ],
+      "artifact_classification": "quarantined internal proof"
+    },
+    {
+      "id": "Attempt02",
+      "status": "quarantined",
+      "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A08/InternalAttempts/Attempt02/A08_ATTEMPT.png",
+      "sha256": "b831f28bc4090ee4557458f0a143fdd52414d9c4ae6882976e76c666b583b948",
+      "rejection_reasons": [
+        "C002 side patches sample source joint/background edges and produce visible stripes",
+        "C002/C003 stone silhouettes remain too rectangular and vertically uniform",
+        "C004 rubble cadence remains too even"
+      ],
+      "artifact_classification": "quarantined internal proof"
+    },
+    {
+      "id": "Attempt03",
+      "status": "quarantined",
+      "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A08/InternalAttempts/Attempt03/A08_ATTEMPT.png",
+      "sha256": "88179f7b7f66e25c0f7caad4e67c11c22197bee167cd69e360b6811f66ad8e89",
+      "rejection_reasons": [
+        "C002 source-core side patch routing still reads as metallic vertical striping",
+        "the C004 mortar bed reaches the visible perimeter and hides the individual rubble as a smooth skirt",
+        "the recessed mortar does not bridge the two measured inter-course clearances, leaving bright background bands"
+      ],
+      "artifact_classification": "quarantined internal proof"
+    },
+    {
+      "id": "Attempt04",
+      "status": "quarantined",
+      "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A08/InternalAttempts/Attempt04/A08_ATTEMPT.png",
+      "sha256": "364ed34cd152306b3486f1d87a14c8b75dad69255d4077b1eabcdbcb55ca04db",
+      "rejection_reasons": [
+        "C004 resolves as a uniform authored-gray block cadence rather than the source-visible rubble apron",
+        "the exposed course ledges are untextured authored gray and lose the approved top-view weathering",
+        "C004 height variation remains too uniform for the source rubble silhouette"
+      ],
+      "artifact_classification": "quarantined internal proof"
+    },
+    {
+      "id": "Attempt05",
+      "status": "accepted_internal_visual_gate",
+      "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A08/InternalAttempts/Attempt05/A08_ATTEMPT.png",
+      "sha256": "6c58c364d3522f53b6c2011bf0c5fb09abba3bb44ee6d765be715c31b0dd52b4",
+      "acceptance_basis": [
+        "C002 and C003 remain visibly separate individual-stone courses with recessed joints",
+        "C004 reads as 32 source-weathered irregular rubble stones without a continuous skirt",
+        "source-weathered top faces are restored and bright inter-course background bands are absent",
+        "the A08 independent technical audit passed all 17 pre-final gates"
+      ],
+      "artifact_classification": "proof only"
+    }
+  ]
+}

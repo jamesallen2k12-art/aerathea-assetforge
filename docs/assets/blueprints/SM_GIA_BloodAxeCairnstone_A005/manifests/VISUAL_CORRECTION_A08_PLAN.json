@@ -1,0 +1,81 @@
+{
+  "schema": "aerathea.visual_correction_a08_plan.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-VISUAL-CORRECTION-A08",
+  "date": "2026-07-21",
+  "status": "active_measurement_first",
+  "artifact_classification": "authoritative execution plan",
+  "flamestrike_authority": "you have full approval and full authority to correct this image no matter what that requires ...present the final image to me for visual approval when complete",
+  "source_authority": {
+    "path": "docs/assets/reference/bloodaxe_cairnstone_asset/REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate.png",
+    "sha256": "4b953abb87f5f254a5f51c6214e76d3f72c4fc55bc2fa4e4d605b2440d6e53c2",
+    "modified": false
+  },
+  "authority_inputs": {
+    "source": {
+      "path": "docs/assets/reference/bloodaxe_cairnstone_asset/REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate.png",
+      "sha256": "4b953abb87f5f254a5f51c6214e76d3f72c4fc55bc2fa4e4d605b2440d6e53c2"
+    },
+    "a08_handoff": {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/VISUAL_CORRECTION_A07_VISUAL_REJECTION_A08_RESTART_HANDOFF.md",
+      "sha256": "5cccec4ce7bd1d7e5f380f91c3a406196afbe7ea3f2616e6ac878a5aaefa16d9"
+    },
+    "a07_drift": {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/VISUAL_CORRECTION_A07_RING_DEFORMATION_DRIFT.json",
+      "sha256": "7973675f2d6962cb522037a2e8d6e97148542ad3748aaaf0b54596f762905975"
+    },
+    "a06_exterior_edges": {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/VISUAL_CORRECTION_A06_EXTERIOR_EDGE_AUDIT.json",
+      "sha256": "89539f3688af26d8b9410f01e927c9df17a8cb21b15c3c966178906332d49bdd"
+    },
+    "step11_rules": {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_11_TECHNICAL_RULE_REGISTRY.json",
+      "sha256": "27b63adc0fde2c0be61bb7b7785e01623fc321d18eda7d13cf06cd3f59024b96"
+    },
+    "step14_color": {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_14_BASE_COLOR_OWNERSHIP_MANIFEST.json",
+      "sha256": "c04c44aba1a7efacb9a2fc2f3146c3705ed7b9a80801e3ee2ff6b9e08ec97970"
+    },
+    "a04_blend": {
+      "path": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_DCCGameReady_VisualCorrection_A04.blend",
+      "sha256": "e399a5c34455a70a55ca3084972544dd8bf007930bf1bb05c041fcef169e4caf"
+    },
+    "a04_manifest": {
+      "path": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_VISUAL_CORRECTION_A04_MANIFEST.json",
+      "sha256": "30416d9c336e70f1ad25aadb32158c35ad2e6f33cdf32bd3476f9b9a80ab8c65"
+    }
+  },
+  "required_counts": {
+    "C002": {"count": 19, "authority": "A08 source-visible neutral-core measurement"},
+    "C003": {"count": 24, "authority": "A08 source-visible neutral-core measurement"},
+    "C004": {"count": 32, "authority": "bounded construction rule; source exact count blocked"}
+  },
+  "target_outer_extents_cm": {
+    "C002": [123.846154, 92.707424],
+    "C003": [137.307692, 105.196507],
+    "C004": [140.0, 110.0]
+  },
+  "visible_z_ranges_cm": {
+    "C004": [0.0, 9.0],
+    "C003": [9.75, 22.25],
+    "C002": [23.0, 34.25]
+  },
+  "minimum_intercourse_clearance_cm": 0.75,
+  "construction": {
+    "fresh_a08_only": true,
+    "a07_geometry_inputs": 0,
+    "actual_individual_watertight_stone_islands": true,
+    "exact_a04_c001_preserved": true,
+    "per_stone_uvs": true,
+    "single_runtime_material": true,
+    "overall_bounds_cm": [140.0, 110.0, 220.0],
+    "pivot_cm": [0.0, 0.0, 0.0]
+  },
+  "review": {
+    "required_fixed_proofs": ["front", "left", "right", "true_orthographic_top"],
+    "final": "one perspective image opened visibly",
+    "artifact_status": "candidate pending Flamestrike visual approval"
+  },
+  "unreal_authorized": false,
+  "fully_game_ready": false
+}

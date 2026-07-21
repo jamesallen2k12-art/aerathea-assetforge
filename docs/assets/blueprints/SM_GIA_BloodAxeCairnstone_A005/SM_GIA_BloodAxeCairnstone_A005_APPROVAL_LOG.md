@@ -1,10 +1,32 @@
 # SM_GIA_BloodAxeCairnstone_A005 Approval Log
 
-Status: A07 rejected/quarantined; A08 fresh-context measurement restart authorized
+Status: A08 audited DCC game-ready candidate; Flamestrike visual decision pending
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-21
+
+## A08 Full Correction Authority And Audited Result
+
+- Date: 2026-07-21
+- Approver: Flamestrike
+- Statement: `you have full approval and full authority to correct this image no matter what that requires ...present the final image to me for visual approval when complete`
+- Contract ID: `A005-CR-VISUAL-CORRECTION-A08`
+- Scope completed: measurement-only top-stone audit; fresh individual-stone
+  C002/C003/C004 construction; exact A04 C001 preservation; per-stone source
+  UV routing; Blender, textures, LOD0-LOD3, collision, FBXs, fixed proofs,
+  final review render, and independent audit
+- Construction: `19 / 24 / 32` individual stones; `3` recessed mortar beds;
+  `0` continuous annular masonry shells; `0.75 cm` clearances
+- Technical result: independent audit `20/20`; clean FBX reimport `4/4`;
+  source-owned RGB mismatches `0 / 154948`
+- Status: `DCC game-ready candidate`
+- Exact review SHA-256:
+  `6c58c364d3522f53b6c2011bf0c5fb09abba3bb44ee6d765be715c31b0dd52b4`
+- Current decision: Flamestrike visual approval, rejection, or blocked finding
+  is pending for that exact image only
+- Unreal/Step 17, `Fully game-ready`, approved-library, and visual-canon
+  promotion: unauthorized
 
 ## A07 Visible Rejection / A08 Restart Authority
 

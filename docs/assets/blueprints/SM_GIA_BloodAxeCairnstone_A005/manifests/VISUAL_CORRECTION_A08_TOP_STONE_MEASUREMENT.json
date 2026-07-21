@@ -1,0 +1,534 @@
+{
+  "schema": "aerathea.visual_correction_a08_top_stone_measurement.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-VISUAL-CORRECTION-A08",
+  "date": "2026-07-21",
+  "status": "pass_authoritative_measurement_gate",
+  "artifact_classification": "authoritative measurement record",
+  "source": {
+    "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_TOP.png",
+    "sha256": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf",
+    "size_px": [
+      337,
+      371
+    ]
+  },
+  "method": {
+    "description": "Exact RGB neutral-core scan in declared top-panel annuli, one-pixel cross erosion, four-connected components, declared area cutoffs, and centroid recording.",
+    "construction_datum_px": [
+      136.0,
+      145.0
+    ],
+    "datum_claim": "calculation datum only; not a claimed source physical center",
+    "candidate_fill_created": false,
+    "geometry_created": false,
+    "hidden_edge_inference": false
+  },
+  "courses": {
+    "C002": {
+      "count": 19,
+      "count_status": "source-visible separable core count",
+      "records": [
+        {
+          "source_core_area_px": 214,
+          "centroid_px": [
+            217.528,
+            166.528
+          ],
+          "construction_datum_angle_deg": 13.487175,
+          "stone_id": "S01"
+        },
+        {
+          "source_core_area_px": 280,
+          "centroid_px": [
+            207.757,
+            196.818
+          ],
+          "construction_datum_angle_deg": 33.261143,
+          "stone_id": "S02"
+        },
+        {
+          "source_core_area_px": 246,
+          "centroid_px": [
+            188.106,
+            221.407
+          ],
+          "construction_datum_angle_deg": 53.100606,
+          "stone_id": "S03"
+        },
+        {
+          "source_core_area_px": 183,
+          "centroid_px": [
+            165.235,
+            231.902
+          ],
+          "construction_datum_angle_deg": 69.676406,
+          "stone_id": "S04"
+        },
+        {
+          "source_core_area_px": 235,
+          "centroid_px": [
+            141.328,
+            234.991
+          ],
+          "construction_datum_angle_deg": 86.270798,
+          "stone_id": "S05"
+        },
+        {
+          "source_core_area_px": 287,
+          "centroid_px": [
+            111.599,
+            232.756
+          ],
+          "construction_datum_angle_deg": 107.020596,
+          "stone_id": "S06"
+        },
+        {
+          "source_core_area_px": 299,
+          "centroid_px": [
+            84.575,
+            223.759
+          ],
+          "construction_datum_angle_deg": 125.710767,
+          "stone_id": "S07"
+        },
+        {
+          "source_core_area_px": 302,
+          "centroid_px": [
+            63.43,
+            199.579
+          ],
+          "construction_datum_angle_deg": 145.661878,
+          "stone_id": "S08"
+        },
+        {
+          "source_core_area_px": 241,
+          "centroid_px": [
+            54.183,
+            167.776
+          ],
+          "construction_datum_angle_deg": 165.810321,
+          "stone_id": "S09"
+        },
+        {
+          "source_core_area_px": 300,
+          "centroid_px": [
+            53.3,
+            136.187
+          ],
+          "construction_datum_angle_deg": 185.528843,
+          "stone_id": "S10"
+        },
+        {
+          "source_core_area_px": 283,
+          "centroid_px": [
+            61.124,
+            102.576
+          ],
+          "construction_datum_angle_deg": 207.231717,
+          "stone_id": "S11"
+        },
+        {
+          "source_core_area_px": 322,
+          "centroid_px": [
+            75.978,
+            76.32
+          ],
+          "construction_datum_angle_deg": 226.10465,
+          "stone_id": "S12"
+        },
+        {
+          "source_core_area_px": 231,
+          "centroid_px": [
+            98.221,
+            56.658
+          ],
+          "construction_datum_angle_deg": 244.78785,
+          "stone_id": "S13"
+        },
+        {
+          "source_core_area_px": 250,
+          "centroid_px": [
+            122.892,
+            49.08
+          ],
+          "construction_datum_angle_deg": 261.44388,
+          "stone_id": "S14"
+        },
+        {
+          "source_core_area_px": 315,
+          "centroid_px": [
+            151.124,
+            50.298
+          ],
+          "construction_datum_angle_deg": 279.972001,
+          "stone_id": "S15"
+        },
+        {
+          "source_core_area_px": 289,
+          "centroid_px": [
+            179.024,
+            62.872
+          ],
+          "construction_datum_angle_deg": 299.974551,
+          "stone_id": "S16"
+        },
+        {
+          "source_core_area_px": 215,
+          "centroid_px": [
+            203.34,
+            86.549
+          ],
+          "construction_datum_angle_deg": 321.747479,
+          "stone_id": "S17"
+        },
+        {
+          "source_core_area_px": 269,
+          "centroid_px": [
+            215.312,
+            112.941
+          ],
+          "construction_datum_angle_deg": 339.839271,
+          "stone_id": "S18"
+        },
+        {
+          "source_core_area_px": 215,
+          "centroid_px": [
+            219.149,
+            139.772
+          ],
+          "construction_datum_angle_deg": 356.731483,
+          "stone_id": "S19"
+        }
+      ],
+      "angular_center_spacings_deg": [
+        19.773968,
+        19.839463,
+        16.5758,
+        16.594392,
+        20.749798,
+        18.690171,
+        19.951111,
+        20.148443,
+        19.718522,
+        21.702874,
+        18.872933,
+        18.6832,
+        16.65603,
+        18.528121,
+        20.00255,
+        21.772928,
+        18.091792,
+        16.892212,
+        16.755692
+      ]
+    },
+    "C003": {
+      "count": 24,
+      "count_status": "source-visible separable core count",
+      "records": [
+        {
+          "source_core_area_px": 92,
+          "centroid_px": [
+            228.924,
+            179.533
+          ],
+          "construction_datum_angle_deg": 18.651776,
+          "stone_id": "S01"
+        },
+        {
+          "source_core_area_px": 214,
+          "centroid_px": [
+            217.201,
+            208.888
+          ],
+          "construction_datum_angle_deg": 35.550978,
+          "stone_id": "S02"
+        },
+        {
+          "source_core_area_px": 255,
+          "centroid_px": [
+            196.322,
+            234.812
+          ],
+          "construction_datum_angle_deg": 53.518754,
+          "stone_id": "S03"
+        },
+        {
+          "source_core_area_px": 123,
+          "centroid_px": [
+            173.927,
+            246.26
+          ],
+          "construction_datum_angle_deg": 67.590544,
+          "stone_id": "S04"
+        },
+        {
+          "source_core_area_px": 167,
+          "centroid_px": [
+            141.03,
+            253.21
+          ],
+          "construction_datum_angle_deg": 87.070367,
+          "stone_id": "S05"
+        },
+        {
+          "source_core_area_px": 116,
+          "centroid_px": [
+            112.802,
+            250.293
+          ],
+          "construction_datum_angle_deg": 103.634606,
+          "stone_id": "S06"
+        },
+        {
+          "source_core_area_px": 257,
+          "centroid_px": [
+            86.887,
+            242.549
+          ],
+          "construction_datum_angle_deg": 118.999665,
+          "stone_id": "S07"
+        },
+        {
+          "source_core_area_px": 229,
+          "centroid_px": [
+            63.236,
+            225.659
+          ],
+          "construction_datum_angle_deg": 134.804413,
+          "stone_id": "S08"
+        },
+        {
+          "source_core_area_px": 178,
+          "centroid_px": [
+            48.719,
+            202.624
+          ],
+          "construction_datum_angle_deg": 149.050342,
+          "stone_id": "S09"
+        },
+        {
+          "source_core_area_px": 165,
+          "centroid_px": [
+            41.03,
+            181.055
+          ],
+          "construction_datum_angle_deg": 160.974361,
+          "stone_id": "S10"
+        },
+        {
+          "source_core_area_px": 168,
+          "centroid_px": [
+            36.06,
+            150.19
+          ],
+          "construction_datum_angle_deg": 177.299187,
+          "stone_id": "S11"
+        },
+        {
+          "source_core_area_px": 153,
+          "centroid_px": [
+            38.052,
+            125.144
+          ],
+          "construction_datum_angle_deg": 190.433138,
+          "stone_id": "S12"
+        },
+        {
+          "source_core_area_px": 101,
+          "centroid_px": [
+            44.822,
+            103.525
+          ],
+          "construction_datum_angle_deg": 202.448804,
+          "stone_id": "S13"
+        },
+        {
+          "source_core_area_px": 126,
+          "centroid_px": [
+            51.024,
+            85.706
+          ],
+          "construction_datum_angle_deg": 212.365721,
+          "stone_id": "S14"
+        },
+        {
+          "source_core_area_px": 196,
+          "centroid_px": [
+            67.265,
+            62.781
+          ],
+          "construction_datum_angle_deg": 227.373711,
+          "stone_id": "S15"
+        },
+        {
+          "source_core_area_px": 232,
+          "centroid_px": [
+            87.543,
+            47.164
+          ],
+          "construction_datum_angle_deg": 241.396773,
+          "stone_id": "S16"
+        },
+        {
+          "source_core_area_px": 182,
+          "centroid_px": [
+            111.582,
+            37.912
+          ],
+          "construction_datum_angle_deg": 255.907955,
+          "stone_id": "S17"
+        },
+        {
+          "source_core_area_px": 64,
+          "centroid_px": [
+            129.953,
+            35.578
+          ],
+          "construction_datum_angle_deg": 266.518338,
+          "stone_id": "S18"
+        },
+        {
+          "source_core_area_px": 221,
+          "centroid_px": [
+            150.769,
+            36.462
+          ],
+          "construction_datum_angle_deg": 278.520226,
+          "stone_id": "S19"
+        },
+        {
+          "source_core_area_px": 142,
+          "centroid_px": [
+            175.718,
+            45.014
+          ],
+          "construction_datum_angle_deg": 293.621919,
+          "stone_id": "S20"
+        },
+        {
+          "source_core_area_px": 137,
+          "centroid_px": [
+            193.956,
+            55.358
+          ],
+          "construction_datum_angle_deg": 305.443319,
+          "stone_id": "S21"
+        },
+        {
+          "source_core_area_px": 182,
+          "centroid_px": [
+            212.676,
+            77.912
+          ],
+          "construction_datum_angle_deg": 321.525162,
+          "stone_id": "S22"
+        },
+        {
+          "source_core_area_px": 71,
+          "centroid_px": [
+            227.789,
+            110.141
+          ],
+          "construction_datum_angle_deg": 340.968159,
+          "stone_id": "S23"
+        },
+        {
+          "source_core_area_px": 71,
+          "centroid_px": [
+            233.211,
+            141.394
+          ],
+          "construction_datum_angle_deg": 358.070471,
+          "stone_id": "S24"
+        }
+      ],
+      "angular_center_spacings_deg": [
+        16.899202,
+        17.967776,
+        14.07179,
+        19.479823,
+        16.564239,
+        15.365059,
+        15.804748,
+        14.245929,
+        11.924019,
+        16.324826,
+        13.133951,
+        12.015666,
+        9.916917,
+        15.00799,
+        14.023062,
+        14.511182,
+        10.610383,
+        12.001888,
+        15.101693,
+        11.8214,
+        16.081843,
+        19.442997,
+        17.102312,
+        20.581305
+      ]
+    },
+    "C004": {
+      "count": null,
+      "count_status": "blocked",
+      "reason": "Peripheral rubble occlusion, small merged silhouettes, and shadow prevent an exact source-visible stone count without interpretation."
+    }
+  },
+  "outer_extents_cm": {
+    "C002": [
+      123.846154,
+      92.707424
+    ],
+    "C003": [
+      137.307692,
+      105.196507
+    ],
+    "C004": [
+      140.0,
+      110.0
+    ],
+    "authority": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/VISUAL_CORRECTION_A06_EXTERIOR_EDGE_AUDIT.json",
+    "a06_status": "pass_authoritative_exterior_edge_measurement"
+  },
+  "inner_radial_limits": {
+    "status": "visible discrete contacts retained; exact closed inner perimeters remain blocked",
+    "construction_rule": "derive hidden inner stone edges only from exact A04 C001 containment and adjacent-course clearance; no source-exact closure claim"
+  },
+  "vertical_construction_rule_cm": {
+    "C004": [
+      0.0,
+      9.0
+    ],
+    "C003": [
+      9.75,
+      22.25
+    ],
+    "C002": [
+      23.0,
+      34.25
+    ],
+    "minimum_intercourse_clearance": 0.75,
+    "source_exact_height_claim": false
+  },
+  "uv_orientation_requirements": {
+    "per_stone_island": true,
+    "top_faces": "source-top projection with preserved angular order",
+    "outer_and_inner_side_faces": "local tangential U and physical-height V",
+    "end_faces": "local radial U and physical-height V",
+    "maximum_uv_aspect_ratio": 6.0,
+    "vertical_smear_allowed": false
+  },
+  "bounded_interpretation_after_gate": {
+    "C004_count": 32,
+    "authority": "Flamestrike full correction authority plus approved Step 11 32-sector C004 sampling",
+    "source_exact_count_claim": false,
+    "C002_C003_boundaries": "cyclic midpoints between adjacent measured neutral-core centroid angles",
+    "boundary_claim": "construction-only; not source-owned closed contours"
+  },
+  "decision": "measurement gate passes; fresh A08 individual-stone geometry is authorized under the active contract",
+  "unreal_authorized": false,
+  "fully_game_ready": false
+}

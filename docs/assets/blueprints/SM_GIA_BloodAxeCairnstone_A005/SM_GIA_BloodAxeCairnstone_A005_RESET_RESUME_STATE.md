@@ -1,12 +1,37 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: A07 rejected/quarantined; A08 fresh-context measurement restart authorized
+Status: A08 audited DCC game-ready candidate; Flamestrike visual decision pending
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-21
 
-## Active Resume Boundary - A07 Rejection / A08 Fresh Restart
+## Active Resume Boundary - A08 Final Candidate / Visual Decision Pending
+
+A08 is complete under `A005-CR-VISUAL-CORRECTION-A08` and passes the full
+independent audit.
+
+- Status: `candidate`; pipeline status: `DCC game-ready candidate`.
+- Independent audit: `20/20`; failures: `0`.
+- A07 geometry inputs: `0`; A07 remains `quarantined`.
+- Individual stones: C002 `19`, C003 `24`, C004 `32`.
+- Course clearances: `0.75 cm` and `0.75 cm`.
+- Recessed mortar beds: `3`; continuous annular masonry shells: `0`.
+- Exact A04 C001 geometry and UV signatures: preserved.
+- LOD triangles: `9104 / 4186 / 1910 / 704`; clean FBX re-import:
+  `4/4`; collision hulls: `4`; materials: `1`.
+- Source-owned RGB: `154948` pixels compared; mismatches: `0`.
+- Final review:
+  `Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A08/SM_GIA_BloodAxeCairnstone_A005_FINAL_CORRECTED_3D_A08.png`.
+- Final SHA-256:
+  `6c58c364d3522f53b6c2011bf0c5fb09abba3bb44ee6d765be715c31b0dd52b4`.
+- Output record: `steps/VISUAL_CORRECTION_A08_OUTPUT_RECORD.md`.
+- Review record: `review/VISUAL_CORRECTION_A08_FINAL_REVIEW.md`.
+- Current stop: Flamestrike may approve, reject, or mark blocked only this
+  exact A08 review candidate.
+- Unreal/Step 17 and `Fully game-ready` remain unauthorized and false.
+
+## Superseded Resume Boundary - A07 Rejection / A08 Fresh Restart
 
 Flamestrike rejected the exact A07 review on 2026-07-21 and requested a save
 point/context reset before another attempt.

@@ -1,12 +1,43 @@
 # SM_GIA_BloodAxeCairnstone_A005 Artifact Index
 
-Status: A07 rejected/quarantined; A08 fresh-context measurement restart authorized
+Status: A08 audited DCC game-ready candidate; Flamestrike visual decision pending
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-21
 
-## Active A07 Rejection / A08 Fresh-Context Boundary
+## Active A08 Audited Candidate
+
+A08 completed the authorized measurement-first individual-stone restart and
+passed its independent audit `20/20`. The exact final image is pending
+Flamestrike visual approval.
+
+| Artifact | Status | Role |
+|---|---|---|
+| steps/VISUAL_CORRECTION_A08_CONTRACT.md | authoritative execution boundary | Locks measurement-first correction, individual-stone construction, proof set, and review stop. |
+| manifests/VISUAL_CORRECTION_A08_PLAN.json | authoritative execution plan | Locks source hashes, counts, bounds, clearances, isolated outputs, and Unreal firewall. |
+| manifests/VISUAL_CORRECTION_A08_TOP_STONE_MEASUREMENT.json | authoritative measurement record | Records source-visible C002/C003 counts, bounded C004 rule, construction datums, and measured extents. |
+| evidence/VISUAL_CORRECTION_A08/SM_GIA_BloodAxeCairnstone_A005_A08_TOP_STONE_MEASUREMENT.png | proof only | Measurement-only source board without candidate fills. |
+| manifests/VISUAL_CORRECTION_A08_INTERNAL_ATTEMPT_LOG.json | proof only | Quarantines Attempts01-04 and records the accepted internal Attempt05 gate. |
+| Tools/DCC/build_bloodaxe_cairnstone_a005_visual_correction_a08.py | candidate builder | Builds the fresh A08 individual-stone DCC package and duplicate-free reduced LODs. |
+| Tools/DCC/render_bloodaxe_cairnstone_a005_visual_correction_a08.py | proof-supporting renderer | Produces the fixed proof set and exact final review image. |
+| Tools/DCC/audit_bloodaxe_cairnstone_a005_visual_correction_a08.py | proof-supporting independent auditor | Verifies the complete 20-gate A08 technical and review package. |
+| SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_DCCGameReady_VisualCorrection_A08.blend | candidate | Audited A08 Blender source; SHA-256 `c971915d5f118c8f420eef28c1c7b0692cbaebf77dcaca225f9d13c542aa724f`. |
+| SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_VISUAL_CORRECTION_A08_MANIFEST.json | candidate sidecar | Records package hashes, counts, bounds, clearances, UV/material routing, and preservation. |
+| SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/VisualCorrection_A08/ | candidate | Base Color, Normal, and ORM; source-owned RGB mismatch count `0`. |
+| SourceAssets/Exports/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/VisualCorrection_A08/ | candidate | LOD0-LOD3 FBXs; clean re-import `4/4`. |
+| manifests/VISUAL_CORRECTION_A08_VALIDATION.json | proof only | Independent `20/20` validation and Unreal firewall record. |
+| steps/VISUAL_CORRECTION_A08_OUTPUT_RECORD.md | authoritative technical result record | Records the completed A08 package and visual-decision stop. |
+| review/VISUAL_CORRECTION_A08_FINAL_REVIEW.md | candidate review record | Identifies the exact final image awaiting Flamestrike. |
+| Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A08/ | proof only; local-only | Final image, object pass, fixed proofs, render audit, and quarantined internal attempts. |
+
+Final image SHA-256:
+`6c58c364d3522f53b6c2011bf0c5fb09abba3bb44ee6d765be715c31b0dd52b4`.
+
+Unreal, Step 17, `Fully game-ready`, approved-library, and visual-canon
+promotion remain unauthorized.
+
+## Superseded A07 Rejection / A08 Fresh-Context Boundary
 
 Flamestrike rejected A07 after visible review. The package is `quarantined`;
 its `20/20` audit is `proof only`. A08 must begin with a measurement-only top
