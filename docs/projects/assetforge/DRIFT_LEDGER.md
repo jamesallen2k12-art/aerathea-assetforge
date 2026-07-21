@@ -24,6 +24,20 @@ Core authority: `AGENTS.md` Core Principles govern this ledger. Drifted artifact
 
 ## Entries
 
+### 2026-07-20 21:38 EDT - A005 A02 Extent-Only Base And Distribution-Only Color False Pass
+
+- Asset or scope: `SM_GIA_BloodAxeCairnstone_A005` A02 visual-correction Blender/FBX/texture package, final image, and gates G22-G26.
+- Detected by: Flamestrike visible comparison of the reopened exact A02 final image against the authoritative reference; the base pieces remained wrong and displayed pixel colors remained off.
+- Last known Core-valid state: the unchanged source image, approved Step 11 construction blueprint/technical rule registry/vertex authority, and approved Step 14 UV/material ownership plans. The exact world targets remain `140 x 110 x 220 cm` with a `35 cm` base.
+- First drift action: `build_bloodaxe_cairnstone_a005_visual_correction_a02.py` replaced C004/C003/C002 with continuous loft profiles and represented the repair as complete after exact bounds and projected band-height checks.
+- Assumption or interpretation that caused drift: correct extents and three readable centerline bands were treated as proof of the reference's chunky masonry/rubble construction; global median color distributions were treated as proof of spatial displayed-color correspondence.
+- Affected outputs: all A02 Blender, texture, FBX, manifest, final-image, render-audit, independent-audit, validation, review, and technical-result visual-equivalence claims. A01, the source, Step 11, Step 14, and unrelated assets are unaffected.
+- Artifact statuses: A02 production outputs and final image are `quarantined` visual candidates; its `26/26` validation remains `proof only` for exact numeric/topology/package/preservation tests, while the implied visual-equivalence result is `invalid and superseded`; A02 tools are `reference only` for diagnosis.
+- Quarantined locations or records: A02 files remain preserved in their existing `VisualCorrection_A02` paths; the authoritative classification is `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/VISUAL_CORRECTION_A02_VISUAL_REJECTION_A03_RECOVERY_RECORD.md`; checkpoint `Saved/ProjectRecovery/20260720-213755/`.
+- Recovery decision: do not repair A02 forward. Return to the unchanged Step 11/14 boundary, create only A03-suffixed outputs, enforce spatial source-owner silhouette and color-correspondence gates, and open only the accepted A03 final image.
+- Flamestrike approval: Flamestrike's original full correction authority plus the visible 2026-07-20 rejection findings authorize the smallest sufficient A03 recovery of the same A005 discrepancy; Unreal and promotion authority remain false.
+- Follow-up Core/Kaizen improvement: visual equivalence gates must test spatial owner-view silhouette/course structure and corresponding-region color error. Bounding boxes, projected centerline band heights, texel identity, and global color histograms cannot independently approve visual likeness.
+
 ### 2026-07-20 18:28 EDT - A005 Step 15 Annotation-Contaminated Source-Owner Masks
 
 - Asset or scope: `SM_GIA_BloodAxeCairnstone_A005` Step 15 Attempt 01 UV placement, five source-owner masks, texture/material candidate, and proof package.

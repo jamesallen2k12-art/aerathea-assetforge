@@ -1,6 +1,6 @@
 # A005 Visual Correction A02 Output Record
 
-Status: technical pass; pending Flamestrike visual approval
+Status: technical proof retained; visually rejected and quarantined
 
 Artifact classification: `authoritative technical result record`
 
@@ -10,10 +10,11 @@ Contract ID: `A005-CR-VISUAL-CORRECTION-A02`
 
 ## Decision
 
-The bounded A02 correction is technically complete. The package passes all
-`26/26` independent gates and is classified as a `candidate` with pipeline
-status `DCC game-ready candidate`. This result does not self-approve the
-appearance, authorize Unreal work, or promote the asset to `Fully game-ready`.
+The bounded A02 correction completed its technical audit, but Flamestrike
+visually rejected the reopened final image. The bottom pieces remain wrong and
+the displayed pixel colors remain off. The package is `quarantined` as a
+visual candidate. Its `26/26` result is retained only as `proof only` for the
+exact numeric/topology/package/preservation tests that actually ran.
 
 The A01 visual package remains `quarantined`; its technical evidence remains
 `proof only`. A01 preservation hashes passed without modification.
@@ -68,11 +69,11 @@ The A01 visual package remains `quarantined`; its technical evidence remains
 - A01 `20/20` validation: `proof only`.
 - Unreal outputs: `0`; `Fully game-ready`: `false`.
 
-## Approval Gate
+## Approval Gate Resolution
 
-Flamestrike may approve, reject, or block the exact final image and A02 DCC
-candidate identified above. Visual approval would not itself authorize Unreal
-Step 17; that requires a separate explicit contract.
+Flamestrike decision: `rejected`. A03 Core Recovery is routed by
+`VISUAL_CORRECTION_A02_VISUAL_REJECTION_A03_RECOVERY_RECORD.md`. Unreal Step
+17 remains unauthorized.
 
 ## Git Closeout
 

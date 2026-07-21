@@ -1,12 +1,19 @@
 # A005 Visual Correction A02 Final Review
 
-Status: candidate pending Flamestrike visual approval
+Status: visually rejected by Flamestrike; quarantined
 
-Artifact classification: `candidate review boundary`
+Artifact classification: `authoritative rejection record; image quarantined`
 
 Date: 2026-07-20
 
 Contract ID: `A005-CR-VISUAL-CORRECTION-A02`
+
+## Decision
+
+Flamestrike rejected the visibly reopened exact image. It is better than A01,
+but the bottom pieces remain materially wrong and the displayed pixel colors
+remain off. The A02 image and DCC package are quarantined. The earlier word
+`approved` preceded visibility, was paused, and was not recorded as approval.
 
 ## Exact Review Artifact
 

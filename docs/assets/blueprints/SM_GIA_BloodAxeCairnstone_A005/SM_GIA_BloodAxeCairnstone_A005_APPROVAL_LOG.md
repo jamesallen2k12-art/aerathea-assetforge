@@ -1,10 +1,29 @@
 # SM_GIA_BloodAxeCairnstone_A005 Approval Log
 
-Status: A02 technical pass complete; pending Flamestrike visual approval
+Status: A02 visually rejected and quarantined; A03 Core Recovery active
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
+
+## A02 Visible Rejection / A03 Recovery Authority
+
+- Date: 2026-07-20
+- Decision authority: Flamestrike
+- Decision: `rejected`; A02 visual package classification: `quarantined`
+- Findings: A02 is better than A01, but the bottom pieces remain materially
+  wrong and displayed pixel colors remain off against the reference
+- Approval clarification: the earlier `approved` response preceded visible
+  inspection, was paused, and was never entered as visual approval
+- Technical evidence retained: numeric/topology/package/preservation portions
+  of A02 `26/26` validation are `proof only`; visual-equivalence implication is
+  invalid and superseded
+- Recovery authority: return to the unchanged Step 11/14 boundary and perform
+  the smallest sufficient A03 correction using spatial source-owner silhouette
+  and displayed-color correspondence gates
+- Recovery record:
+  `steps/VISUAL_CORRECTION_A02_VISUAL_REJECTION_A03_RECOVERY_RECORD.md`
+- Unreal authority: `false`; `Fully game-ready`: `false`
 
 ## A02 Visual Correction Execution And Technical Result
 

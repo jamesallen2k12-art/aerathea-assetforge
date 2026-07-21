@@ -1,12 +1,34 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: A02 technical pass complete; pending Flamestrike visual approval
+Status: A02 visually rejected and quarantined; A03 Core Recovery active
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
 
-## Active Resume Boundary - A02 Candidate Complete / Visual Approval Pending
+## Active Resume Boundary - A02 Rejected / A03 Core Recovery
+
+After the exact A02 final image was reopened visibly, Flamestrike found that
+the bottom pieces remained materially wrong and the displayed pixel colors
+remained off. The earlier word `approved` preceded visibility, was paused, and
+was never recorded as approval.
+
+- A02 production outputs and final image: `quarantined` visual candidates.
+- A02 `26/26` validation: `proof only` for its numeric, topology, packaging,
+  and preservation scope; visual-equivalence implication invalid/superseded.
+- Root false pass: continuous base lofts were checked by extents and projected
+  band height, not spatial masonry/rubble silhouette; color was checked by
+  global distributions, not corresponding source/render regions.
+- Last Core-valid state: unchanged source plus authoritative Step 11 and Step
+  14 construction/UV/material records.
+- Recovery record:
+  `steps/VISUAL_CORRECTION_A02_VISUAL_REJECTION_A03_RECOVERY_RECORD.md`.
+- Pre-recovery checkpoint: `Saved/ProjectRecovery/20260720-213755/`.
+- Current authority: bounded A03 recovery of the same base and displayed-color
+  discrepancy with A03-only outputs and spatial source-owner gates.
+- Unreal/Step 17 remains unauthorized; `Fully game-ready` remains `false`.
+
+## Superseded Resume Boundary - A02 Candidate Complete / Visual Approval Pending
 
 Flamestrike authorized the bounded A02 correction under contract
 `A005-CR-VISUAL-CORRECTION-A02`. The corrected package is complete and passes

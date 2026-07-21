@@ -3,7 +3,7 @@
   "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
   "contract_id": "A005-CR-VISUAL-CORRECTION-A02",
   "date": "2026-07-20",
-  "status": "complete_pending_flamestrike_visual_approval",
+  "status": "visually_rejected_quarantined_superseded_by_a03_core_recovery",
   "artifact_classification": "authoritative execution plan",
   "source_authority": {
     "path": "docs/assets/reference/bloodaxe_cairnstone_asset/REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate.png",
@@ -67,7 +67,13 @@
     "pipeline_status": "DCC game-ready candidate",
     "final_image_sha256": "511664eb9ea4192f9d86cd1d08f320158b1d70df6a57bfc2130543c80c47247d",
     "unreal_outputs": 0,
-    "fully_game_ready": false
+    "fully_game_ready": false,
+    "visual_decision": "rejected",
+    "visual_findings": [
+      "bottom pieces remain materially wrong against the reference",
+      "displayed pixel colors remain off against the reference"
+    ],
+    "recovery_record": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/VISUAL_CORRECTION_A02_VISUAL_REJECTION_A03_RECOVERY_RECORD.md"
   },
   "review_rule": "Intermediate attempts remain internal and are not opened. Open only the accepted final A02 image visibly for Flamestrike."
 }

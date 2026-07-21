@@ -1,32 +1,47 @@
 # SM_GIA_BloodAxeCairnstone_A005 Artifact Index
 
-Status: A02 technical pass complete; pending Flamestrike visual approval
+Status: A02 visually rejected and quarantined; A03 Core Recovery active
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
 
-## Active A02 Visual Correction Candidate
+## Active A03 Core Recovery Boundary
 
-The bounded A02 correction is technically complete under contract
-`A005-CR-VISUAL-CORRECTION-A02`. It passes `26/26` independent gates and is a
-`candidate` with pipeline status `DCC game-ready candidate`. Flamestrike visual
-approval remains pending. Unreal and `Fully game-ready` promotion remain zero.
+Flamestrike rejected the visibly reopened A02 final. The A02 package is
+`quarantined`; its exact technical results remain `proof only`, but its
+visual-equivalence implication is invalid. Recovery returns to the unchanged
+Step 11/14 authority and creates A03-only outputs with spatial source-owner
+silhouette and color-correspondence gates.
+
+Authoritative recovery record:
+`steps/VISUAL_CORRECTION_A02_VISUAL_REJECTION_A03_RECOVERY_RECORD.md`.
+
+Unreal, `Fully game-ready`, approved-library, and visual-canon promotion remain
+zero.
+
+## Quarantined A02 Visual Correction Candidate
+
+The bounded A02 correction completed its `26/26` audit under contract
+`A005-CR-VISUAL-CORRECTION-A02`, but Flamestrike rejected the visibly reopened
+final. The technical result is `proof only`; A02 production outputs are
+`quarantined` visual candidates. Unreal and `Fully game-ready` promotion remain
+zero.
 
 | Artifact | Status | Role |
 |---|---|---|
-| steps/VISUAL_CORRECTION_A02_CONTRACT.md | authoritative execution boundary | Records the exact base/color correction scope, evidence authorities, review constraint, and downstream firewall. |
-| manifests/VISUAL_CORRECTION_A02_PLAN.json | authoritative execution plan | Locks dimensions, base spans, material/presentation controls, required outputs, and result classification. |
-| Tools/DCC/build_bloodaxe_cairnstone_a005_visual_correction_a02.py | candidate production builder | Builds the corrected four-shell asset, direct source-faithful material package, LODs, collision, Blender source, FBXs, and manifest. |
-| Tools/DCC/render_bloodaxe_cairnstone_a005_visual_correction_a02.py | proof-supporting renderer | Produces the one accepted final review image with measured base-band and displayed-color evidence. |
-| Tools/DCC/audit_bloodaxe_cairnstone_a005_visual_correction_a02.py | proof-supporting independent auditor | Verifies 26 source, geometry, topology, UV, material, FBX, preservation, presentation, and firewall gates. |
-| SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_DCCGameReady_VisualCorrection_A02.blend | candidate | Corrected DCC game-ready candidate; `8672/3988/1820/692` triangles, exact `140 x 110 x 220 cm` bounds, four closed shells, one material, and four collision proxies. |
-| SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_VISUAL_CORRECTION_A02_MANIFEST.json | candidate sidecar | Exact authority, component, UV, material, texture, Blender, FBX, and preservation hashes/counts. |
-| SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/VisualCorrection_A02/ | candidate | A02 Base Color, DirectX Normal, and ORM; all `154948` source-owned Base Color pixels remain exact. |
-| SourceAssets/Exports/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/VisualCorrection_A02/ | candidate | LOD0/collision plus LOD1-LOD3 FBXs; clean re-import `4/4`. |
+| steps/VISUAL_CORRECTION_A02_CONTRACT.md | authoritative historical execution boundary | Records the exact completed A02 scope and downstream firewall. |
+| manifests/VISUAL_CORRECTION_A02_PLAN.json | authoritative historical/rejection plan | Locks dimensions and controls, then records the visible rejection and A03 route. |
+| Tools/DCC/build_bloodaxe_cairnstone_a005_visual_correction_a02.py | reference only | Preserved false-pass builder for A03 diagnosis. |
+| Tools/DCC/render_bloodaxe_cairnstone_a005_visual_correction_a02.py | reference only | Preserved distribution-only renderer/audit producer for A03 diagnosis. |
+| Tools/DCC/audit_bloodaxe_cairnstone_a005_visual_correction_a02.py | reference only | Preserved extent/distribution auditor; not sufficient visual-equivalence authority. |
+| SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_DCCGameReady_VisualCorrection_A02.blend | quarantined | Rejected visual candidate; numeric package evidence remains proof only. |
+| SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_VISUAL_CORRECTION_A02_MANIFEST.json | quarantined sidecar | Preserved exact A02 hashes/counts; not A03 authority. |
+| SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/VisualCorrection_A02/ | quarantined | Rejected A02 texture package; source-owned texel identity does not prove displayed correspondence. |
+| SourceAssets/Exports/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/VisualCorrection_A02/ | quarantined | Rejected A02 FBX package; clean re-import remains proof only. |
 | manifests/VISUAL_CORRECTION_A02_VALIDATION.json | proof only | Independent `26/26` validation and classification/firewall record. |
-| steps/VISUAL_CORRECTION_A02_OUTPUT_RECORD.md | authoritative technical result | Records the completed correction, evidence, artifact routing, and approval boundary. |
-| review/VISUAL_CORRECTION_A02_FINAL_REVIEW.md | candidate review boundary | Identifies the exact visibly opened final image and the visual decision it supports. |
+| steps/VISUAL_CORRECTION_A02_OUTPUT_RECORD.md | authoritative historical technical/rejection result | Records the technical pass, visible rejection, and superseded approval boundary. |
+| review/VISUAL_CORRECTION_A02_FINAL_REVIEW.md | authoritative rejection record | Identifies the exact rejected image and Flamestrike decision. |
 | Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A02/ | proof only; local-only | Final image, object pass, render audit, and independent audit. |
 
 Final image SHA-256:
