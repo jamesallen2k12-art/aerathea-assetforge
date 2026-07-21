@@ -1,10 +1,32 @@
 # SM_GIA_BloodAxeCairnstone_A005 Approval Log
 
-Status: A11 pixel-exact geometry candidate complete; visual decision pending
+Status: A12 multi-row measurement candidate complete; dimensional decision pending
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-21
+
+## A12 Measurement Approval / Audited Candidate Pending Decision
+
+- Date: 2026-07-21
+- Approver: Flamestrike
+- Approval: measurement-only two-envelope reconciliation; no geometry rebuild
+- Contract ID: `A005-CR-VISUAL-CORRECTION-A12-MEASUREMENT`
+- Trigger: remaining visual problems with A11 base dimensions
+- Direct-label finding: C004/base remains `140 x 110 x 35 cm`; `120 x 90 cm`
+  belongs to C001 maximum width/depth and cannot authorize C003
+- Multi-row candidate median C002: `112.291667 x 76.651584 cm`
+- Multi-row candidate median C003: `129.548611 x 96.063348 cm`
+- A10-to-A12 median width reductions: C002 `6.319444 cm`; C003 `4.618056
+  cm`
+- Independent validation: `22/22`; failures: `0`
+- Review-board SHA-256:
+  `8e49df2da9140d60f0ac337c4c0b9e1d05940380182bae5ee5c3958bb7f248b0`
+- Artifact status: measurement manifest and board `candidate`; validation
+  `proof only`; contract `authoritative`
+- Dimensional decision: pending Flamestrike
+- Geometry, Blender, FBX, Unreal, approved-library, and visual-canon
+  promotion: unauthorized
 
 ## A11 Full Correction Authority / Technical Completion / Visual Decision Pending
 

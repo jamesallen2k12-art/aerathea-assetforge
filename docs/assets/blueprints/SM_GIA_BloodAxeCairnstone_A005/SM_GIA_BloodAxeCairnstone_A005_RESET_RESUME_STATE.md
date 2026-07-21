@@ -1,12 +1,41 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: A11 pixel-exact geometry candidate complete; visual decision pending
+Status: A12 multi-row measurement candidate complete; dimensional decision pending
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-21
 
-## Active Resume Boundary - A11 Final Candidate / Visual Decision Pending
+## Active Resume Boundary - A12 Multi-Row Measurement Decision Pending
+
+Flamestrike approved the measurement-only contract
+`A005-CR-VISUAL-CORRECTION-A12-MEASUREMENT` after identifying remaining base
+dimension problems in A11.
+
+- The direct `120 x 90 cm` labels are explicitly owned by C001 maximum
+  width/depth. Assigning them to C003 is rejected as a source-authority
+  conflict.
+- Direct C004/base labels remain `140 x 110 x 35 cm`.
+- A12 compares every approved C002/C003 row sample rather than selecting only
+  the widest row used by A10.
+- Candidate multi-row median C002: `112.291667 x 76.651584 cm`.
+- Candidate multi-row median C003: `129.548611 x 96.063348 cm`.
+- Relative to A10, the medians reduce C002 width by `6.319444 cm` and C003
+  width by `4.618056 cm`; C002 depth reduces `0.497738 cm`; C003 depth is
+  unchanged.
+- Independent audit: `22/22`; failures: `0`.
+- Exact review board:
+  `Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A12_Measurement/SM_GIA_BloodAxeCairnstone_A005_A12_TWO_ENVELOPE_RECONCILIATION.png`.
+- Board SHA-256:
+  `8e49df2da9140d60f0ac337c4c0b9e1d05940380182bae5ee5c3958bb7f248b0`.
+- Post-audit checkpoint: `Saved/ProjectRecovery/20260721-121816/`.
+- Current stop: Flamestrike may approve the multi-row median statistic as the
+  dimensional basis for a separate geometry contract, reject it, or mark it
+  blocked.
+- No Blender, FBX, texture, material, collision, LOD, Unreal, canon, or
+  library artifact was modified.
+
+## Prior Resume Boundary - A11 Final Candidate / Visual Decision Not Granted
 
 Flamestrike granted full correction authority, and Codex executed the visible
 contract `A005-CR-VISUAL-CORRECTION-A11` within the approved A10 measurement

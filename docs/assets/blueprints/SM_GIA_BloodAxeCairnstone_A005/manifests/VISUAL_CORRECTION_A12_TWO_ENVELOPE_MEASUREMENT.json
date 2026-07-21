@@ -1,0 +1,543 @@
+{
+  "schema": "aerathea.visual_correction_a12_two_envelope_measurement.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-VISUAL-CORRECTION-A12-MEASUREMENT",
+  "date": "2026-07-21",
+  "status": "candidate_measurement_pending_flamestrike_review",
+  "artifact_classification": "candidate",
+  "authority": {
+    "flamestrike_approval": "approved",
+    "scope": "measurement-only two-envelope reconciliation; no geometry rebuild",
+    "inputs": {
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_FRONT.png": "262071198bc0d409e9b68af5ac4f3c6a4768a90b1fd199342035a8a82342c2c5",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_LEFT.png": "52212ba783d026a008929e3946cac934281de7d2daec2ada316205059258cba4",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_06_FRONT_MEASUREMENT_MANIFEST.json": "c71932bef2016808d24fdc9aed47b9f4a3c32f59bdd45a551aab6804d877ecef",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_07_LEFT_MEASUREMENT_MANIFEST.json": "e08d868925967a05d465cecadc4810a3f3e2b3cdb5be342e32ebdd807e0e9725",
+      "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/VISUAL_CORRECTION_A10_PIXEL_EXACT_BASE_RECONCILIATION.json": "09452319172cdca60f024e106e20eef52a5567eac04e0f2fda73985370b3e156"
+    }
+  },
+  "direct_label_ownership": {
+    "C001_max_width_cm": 120,
+    "C001_max_depth_cm": 90,
+    "C004_footprint_width_cm": 140,
+    "C004_footprint_depth_cm": 110,
+    "base_height_cm": 35
+  },
+  "tested_structural_plinth_hypothesis": {
+    "hypothesis": "map the direct 120 x 90 cm labels to C003 as a structural-plinth envelope",
+    "result": "rejected_as_source_authority_conflict",
+    "reason": "the approved front and left measurement records explicitly assign 120 cm width and 90 cm depth to C001 maximum dimensions; no direct source label assigns 120 x 90 cm to C003",
+    "C003_120x90_authorized": false
+  },
+  "envelopes": {
+    "C004_outer_rubble": {
+      "extent_cm": [
+        140,
+        110
+      ],
+      "height_reference_cm": 35,
+      "width_to_height": {
+        "exact": "4/1",
+        "decimal": 4.0
+      },
+      "depth_to_height": {
+        "exact": "22/7",
+        "decimal": 3.142857143
+      },
+      "status": "direct_source_label_authority"
+    },
+    "C001_maximum": {
+      "extent_cm": [
+        120,
+        90
+      ],
+      "height_reference_cm": 220,
+      "status": "direct_source_label_authority; not a C003 plinth label"
+    }
+  },
+  "multi_row_statistics": {
+    "C002": {
+      "front_X": {
+        "view": "front",
+        "component": "C002",
+        "approved_row_records": [
+          {
+            "source_record_id": "F-C002-R345",
+            "row_y_px": 345,
+            "half_open_span_px": [
+              135,
+              366
+            ],
+            "pixel_center_delta_px": 230,
+            "left_endpoint_rgb": [
+              156,
+              158,
+              155
+            ],
+            "right_endpoint_rgb": [
+              179,
+              177,
+              177
+            ]
+          },
+          {
+            "source_record_id": "F-C002-R355",
+            "row_y_px": 355,
+            "half_open_span_px": [
+              134,
+              366
+            ],
+            "pixel_center_delta_px": 231,
+            "left_endpoint_rgb": [
+              143,
+              144,
+              141
+            ],
+            "right_endpoint_rgb": [
+              21,
+              21,
+              20
+            ]
+          },
+          {
+            "source_record_id": "F-C002-R360",
+            "row_y_px": 360,
+            "half_open_span_px": [
+              127,
+              372
+            ],
+            "pixel_center_delta_px": 244,
+            "left_endpoint_rgb": [
+              175,
+              177,
+              173
+            ],
+            "right_endpoint_rgb": [
+              144,
+              143,
+              144
+            ]
+          }
+        ],
+        "pixel_center_deltas_px": [
+          230,
+          231,
+          244
+        ],
+        "minimum_delta_px": 230,
+        "maximum_delta_px": 244,
+        "median_delta_px": {
+          "exact": "231/1",
+          "decimal": 231.0
+        },
+        "conditional_median_extent_cm": {
+          "exact": "2695/24",
+          "decimal": 112.291666667
+        },
+        "conditional_extent_to_35cm_base_height": {
+          "exact": "77/24",
+          "decimal": 3.208333333
+        },
+        "A10_widest_row_extent_cm": {
+          "exact": "2135/18",
+          "decimal": 118.611111111
+        },
+        "median_reduction_from_A10_cm": {
+          "exact": "455/72",
+          "decimal": 6.319444444
+        },
+        "formula": "140 * median([230, 231, 244]) / 288",
+        "premise": "conditional on C004 140 cm owner-axis extent and 35 cm total base height"
+      },
+      "left_Y": {
+        "view": "left",
+        "component": "C002",
+        "approved_row_records": [
+          {
+            "source_record_id": "L-C002-R240",
+            "row_y_px": 240,
+            "half_open_span_px": [
+              154,
+              306
+            ],
+            "pixel_center_delta_px": 151,
+            "left_endpoint_rgb": [
+              130,
+              128,
+              123
+            ],
+            "right_endpoint_rgb": [
+              104,
+              101,
+              101
+            ]
+          },
+          {
+            "source_record_id": "L-C002-R250",
+            "row_y_px": 250,
+            "half_open_span_px": [
+              153,
+              308
+            ],
+            "pixel_center_delta_px": 154,
+            "left_endpoint_rgb": [
+              38,
+              32,
+              31
+            ],
+            "right_endpoint_rgb": [
+              70,
+              69,
+              71
+            ]
+          },
+          {
+            "source_record_id": "L-C002-R255",
+            "row_y_px": 255,
+            "half_open_span_px": [
+              152,
+              308
+            ],
+            "pixel_center_delta_px": 155,
+            "left_endpoint_rgb": [
+              181,
+              185,
+              183
+            ],
+            "right_endpoint_rgb": [
+              23,
+              22,
+              19
+            ]
+          }
+        ],
+        "pixel_center_deltas_px": [
+          151,
+          154,
+          155
+        ],
+        "minimum_delta_px": 151,
+        "maximum_delta_px": 155,
+        "median_delta_px": {
+          "exact": "154/1",
+          "decimal": 154.0
+        },
+        "conditional_median_extent_cm": {
+          "exact": "16940/221",
+          "decimal": 76.65158371
+        },
+        "conditional_extent_to_35cm_base_height": {
+          "exact": "484/221",
+          "decimal": 2.190045249
+        },
+        "A10_widest_row_extent_cm": {
+          "exact": "17050/221",
+          "decimal": 77.149321267
+        },
+        "median_reduction_from_A10_cm": {
+          "exact": "110/221",
+          "decimal": 0.497737557
+        },
+        "formula": "110 * median([151, 154, 155]) / 221",
+        "premise": "conditional on C004 110 cm owner-axis extent and 35 cm total base height"
+      }
+    },
+    "C003": {
+      "front_X": {
+        "view": "front",
+        "component": "C003",
+        "approved_row_records": [
+          {
+            "source_record_id": "F-C003-R375",
+            "row_y_px": 375,
+            "half_open_span_px": [
+              120,
+              381
+            ],
+            "pixel_center_delta_px": 260,
+            "left_endpoint_rgb": [
+              57,
+              58,
+              52
+            ],
+            "right_endpoint_rgb": [
+              162,
+              164,
+              167
+            ]
+          },
+          {
+            "source_record_id": "F-C003-R380",
+            "row_y_px": 380,
+            "half_open_span_px": [
+              119,
+              381
+            ],
+            "pixel_center_delta_px": 261,
+            "left_endpoint_rgb": [
+              170,
+              167,
+              166
+            ],
+            "right_endpoint_rgb": [
+              137,
+              138,
+              138
+            ]
+          },
+          {
+            "source_record_id": "F-C003-R385",
+            "row_y_px": 385,
+            "half_open_span_px": [
+              115,
+              388
+            ],
+            "pixel_center_delta_px": 272,
+            "left_endpoint_rgb": [
+              137,
+              131,
+              128
+            ],
+            "right_endpoint_rgb": [
+              175,
+              176,
+              179
+            ]
+          },
+          {
+            "source_record_id": "F-C003-R390",
+            "row_y_px": 390,
+            "half_open_span_px": [
+              111,
+              388
+            ],
+            "pixel_center_delta_px": 276,
+            "left_endpoint_rgb": [
+              149,
+              147,
+              144
+            ],
+            "right_endpoint_rgb": [
+              84,
+              86,
+              84
+            ]
+          }
+        ],
+        "pixel_center_deltas_px": [
+          260,
+          261,
+          272,
+          276
+        ],
+        "minimum_delta_px": 260,
+        "maximum_delta_px": 276,
+        "median_delta_px": {
+          "exact": "533/2",
+          "decimal": 266.5
+        },
+        "conditional_median_extent_cm": {
+          "exact": "18655/144",
+          "decimal": 129.548611111
+        },
+        "conditional_extent_to_35cm_base_height": {
+          "exact": "533/144",
+          "decimal": 3.701388889
+        },
+        "A10_widest_row_extent_cm": {
+          "exact": "805/6",
+          "decimal": 134.166666667
+        },
+        "median_reduction_from_A10_cm": {
+          "exact": "665/144",
+          "decimal": 4.618055556
+        },
+        "formula": "140 * median([260, 261, 272, 276]) / 288",
+        "premise": "conditional on C004 140 cm owner-axis extent and 35 cm total base height"
+      },
+      "left_Y": {
+        "view": "left",
+        "component": "C003",
+        "approved_row_records": [
+          {
+            "source_record_id": "L-C003-R265",
+            "row_y_px": 265,
+            "half_open_span_px": [
+              133,
+              327
+            ],
+            "pixel_center_delta_px": 193,
+            "left_endpoint_rgb": [
+              120,
+              120,
+              117
+            ],
+            "right_endpoint_rgb": [
+              177,
+              177,
+              178
+            ]
+          },
+          {
+            "source_record_id": "L-C003-R275",
+            "row_y_px": 275,
+            "half_open_span_px": [
+              133,
+              327
+            ],
+            "pixel_center_delta_px": 193,
+            "left_endpoint_rgb": [
+              50,
+              51,
+              47
+            ],
+            "right_endpoint_rgb": [
+              95,
+              95,
+              95
+            ]
+          },
+          {
+            "source_record_id": "L-C003-R280",
+            "row_y_px": 280,
+            "half_open_span_px": [
+              133,
+              327
+            ],
+            "pixel_center_delta_px": 193,
+            "left_endpoint_rgb": [
+              96,
+              95,
+              94
+            ],
+            "right_endpoint_rgb": [
+              117,
+              120,
+              118
+            ]
+          }
+        ],
+        "pixel_center_deltas_px": [
+          193,
+          193,
+          193
+        ],
+        "minimum_delta_px": 193,
+        "maximum_delta_px": 193,
+        "median_delta_px": {
+          "exact": "193/1",
+          "decimal": 193.0
+        },
+        "conditional_median_extent_cm": {
+          "exact": "21230/221",
+          "decimal": 96.063348416
+        },
+        "conditional_extent_to_35cm_base_height": {
+          "exact": "4246/1547",
+          "decimal": 2.744667098
+        },
+        "A10_widest_row_extent_cm": {
+          "exact": "21230/221",
+          "decimal": 96.063348416
+        },
+        "median_reduction_from_A10_cm": {
+          "exact": "0/1",
+          "decimal": 0.0
+        },
+        "formula": "110 * median([193, 193, 193]) / 221",
+        "premise": "conditional on C004 110 cm owner-axis extent and 35 cm total base height"
+      }
+    }
+  },
+  "C004_normalization_evidence": {
+    "front": {
+      "source_record_id": "F-C004-R410",
+      "view": "front",
+      "component_id": "C004",
+      "row_y_px": 410,
+      "inclusive_pixel_count": 289,
+      "pixel_center_delta_px": 288,
+      "left_edge": {
+        "pixel_local": [
+          106,
+          410
+        ],
+        "source_rgb": [
+          124,
+          121,
+          116
+        ]
+      },
+      "right_edge": {
+        "pixel_local": [
+          394,
+          410
+        ],
+        "source_rgb": [
+          112,
+          111,
+          111
+        ]
+      },
+      "interior_span_owned": false,
+      "ownership_basis": "approved manual native-pixel irregular_C004_outer_edge_observation"
+    },
+    "left": {
+      "source_record_id": "L-C004-R305",
+      "view": "left",
+      "component_id": "C004",
+      "row_y_px": 305,
+      "inclusive_pixel_count": 222,
+      "pixel_center_delta_px": 221,
+      "left_edge": {
+        "pixel_local": [
+          120,
+          305
+        ],
+        "source_rgb": [
+          135,
+          127,
+          120
+        ]
+      },
+      "right_edge": {
+        "pixel_local": [
+          341,
+          305
+        ],
+        "source_rgb": [
+          180,
+          180,
+          179
+        ]
+      },
+      "interior_span_owned": false,
+      "ownership_basis": "approved manual native-pixel irregular_C004_outer_edge_observation"
+    },
+    "interior_owned": false,
+    "use": "axis normalization only"
+  },
+  "method": {
+    "statistic": "median of every approved manual row sample for the component and owner view",
+    "pixel_span_convention": "distance between inclusive endpoint pixel centers",
+    "comparison": "A10 widest approved row versus A12 multi-row median",
+    "candidate_fill_created": false,
+    "closed_contour_created": false,
+    "curve_fit_created": false,
+    "geometry_created": false,
+    "blender_outputs_created": 0,
+    "fbx_outputs_created": 0,
+    "unreal_outputs_created": 0,
+    "source_modified": false
+  },
+  "finding": "The 120 x 90 mapping cannot authorize C003. The multi-row median is the evidence-backed statistic that tests whether isolated protruding stones inflated the A10 widest-row construction extents.",
+  "blocked": [
+    "The median statistic is not construction authority until Flamestrike approves this A12 result.",
+    "C004 interior ownership and continuous contours remain unproven.",
+    "No new hidden interface, socket, or course-height construction is authorized."
+  ],
+  "decision_requested": "approve, reject, or mark blocked the A12 multi-row median statistic as the dimensional basis for a separate geometry contract",
+  "review_board": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A12_Measurement/SM_GIA_BloodAxeCairnstone_A005_A12_TWO_ENVELOPE_RECONCILIATION.png",
+  "validation_artifact": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/VISUAL_CORRECTION_A12_TWO_ENVELOPE_MEASUREMENT_VALIDATION.json",
+  "review_board_sha256": "8e49df2da9140d60f0ac337c4c0b9e1d05940380182bae5ee5c3958bb7f248b0"
+}

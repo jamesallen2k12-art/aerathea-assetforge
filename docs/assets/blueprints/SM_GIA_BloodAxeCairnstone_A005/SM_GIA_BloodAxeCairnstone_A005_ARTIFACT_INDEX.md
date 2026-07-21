@@ -1,12 +1,43 @@
 # SM_GIA_BloodAxeCairnstone_A005 Artifact Index
 
-Status: A11 pixel-exact geometry candidate complete; visual decision pending
+Status: A12 multi-row measurement candidate complete; dimensional decision pending
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-21
 
-## Active A11 Pixel-Exact Geometry Candidate
+## Active A12 Two-Envelope / Multi-Row Measurement Candidate
+
+A12 tests the proposed `120 x 90 cm` structural-plinth mapping and rejects it
+as source authority because the approved records assign those labels to C001.
+It then compares A10's widest-row construction extents with the median of all
+approved C002/C003 owner-view row samples. The measurement package passes
+`22/22`; the median statistic is pending Flamestrike's dimensional decision.
+
+| Artifact | Status | Role |
+|---|---|---|
+| steps/VISUAL_CORRECTION_A12_TWO_ENVELOPE_MEASUREMENT_CONTRACT.md | authoritative execution boundary | Locks the measurement-only label-ownership test, multi-row comparison, evidence-only board, and geometry firewall. |
+| Tools/DCC/measure_bloodaxe_cairnstone_a005_two_envelope_a12.py | candidate measurement tool | Replays exact source rows, computes medians and base-height ratios, and produces the no-fill review board and manifest. |
+| Tools/DCC/audit_bloodaxe_cairnstone_a005_two_envelope_a12.py | proof-supporting independent auditor | Replays 22 authority, label, row, RGB, formula, board, and no-production gates. |
+| manifests/VISUAL_CORRECTION_A12_TWO_ENVELOPE_MEASUREMENT.json | candidate measurement record | Records direct label ownership, rejected C003 label hypothesis, exact row sets, conditional median dimensions, formulas, and blocks. |
+| manifests/VISUAL_CORRECTION_A12_TWO_ENVELOPE_MEASUREMENT_VALIDATION.json | proof only | Independent `22/22` validation. |
+| steps/VISUAL_CORRECTION_A12_TWO_ENVELOPE_MEASUREMENT_OUTPUT.md | candidate measurement output | Summarizes the audited findings and exact dimensional decision gate. |
+| Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A12_Measurement/ | proof only; local-only | Contains the exact visible technical review board. |
+
+Candidate median dimensions, conditional on C004 `140 x 110 cm`:
+
+- C002: `112.291667 x 76.651584 cm`.
+- C003: `129.548611 x 96.063348 cm`.
+
+Review-board SHA-256:
+`8e49df2da9140d60f0ac337c4c0b9e1d05940380182bae5ee5c3958bb7f248b0`.
+
+Post-audit checkpoint: `Saved/ProjectRecovery/20260721-121816/`.
+
+No geometry rebuild, Unreal work, `Fully game-ready`, approved-library, or
+visual-canon promotion is authorized.
+
+## Prior A11 Pixel-Exact Geometry Candidate / Visual Decision Not Granted
 
 A11 converts the approved A10 owner-view ratios into one bounded DCC
 construction while preserving exact A04 C001. It corrects the superseded A09
