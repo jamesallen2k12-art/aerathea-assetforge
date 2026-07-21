@@ -22,6 +22,10 @@ all `26/26` independent gates.
   `Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A02/SM_GIA_BloodAxeCairnstone_A005_FINAL_CORRECTED_3D_A02.png`.
 - Final image SHA-256:
   `511664eb9ea4192f9d86cd1d08f320158b1d70df6a57bfc2130543c80c47247d`.
+- Exact 20-path dependency snapshot:
+  `72031e9470905e24a49adf46ffc57da92cb0618c`; pushed to `assetforge/main`
+  and live-remote verified.
+- Pre-metadata checkpoint: `Saved/ProjectRecovery/20260720-211631/`.
 - Base projected bands: `49.47 / 64.64 / 60.00 px`.
 - Source-owned Base Color: `154948` pixels; mismatches `0`.
 - Clean FBX re-import: `4/4`; LOD triangles:

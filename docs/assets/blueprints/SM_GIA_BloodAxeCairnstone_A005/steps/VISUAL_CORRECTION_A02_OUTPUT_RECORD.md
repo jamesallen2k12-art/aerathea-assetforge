@@ -73,3 +73,10 @@ The A01 visual package remains `quarantined`; its technical evidence remains
 Flamestrike may approve, reject, or block the exact final image and A02 DCC
 candidate identified above. Visual approval would not itself authorize Unreal
 Step 17; that requires a separate explicit contract.
+
+## Git Closeout
+
+The exact 20-path A02 dependency snapshot is commit
+`72031e9470905e24a49adf46ffc57da92cb0618c`, pushed to `assetforge/main`
+and verified against the live remote ref. Pre-metadata checkpoint:
+`Saved/ProjectRecovery/20260720-211631/`.

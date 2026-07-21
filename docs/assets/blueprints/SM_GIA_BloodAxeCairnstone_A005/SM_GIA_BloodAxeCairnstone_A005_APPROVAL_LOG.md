@@ -22,6 +22,9 @@ Updated: 2026-07-20
 - Independent audit: `26/26`; clean FBX re-import: `4/4`
 - Final image SHA-256:
   `511664eb9ea4192f9d86cd1d08f320158b1d70df6a57bfc2130543c80c47247d`
+- Exact 20-path dependency snapshot:
+  `72031e9470905e24a49adf46ffc57da92cb0618c`; pushed to `assetforge/main`
+  and live-remote verified
 - Artifact classification: `candidate`; pipeline status: `DCC game-ready
   candidate`
 - Visual approval: pending; Unreal authority: `false`; `Fully game-ready`:

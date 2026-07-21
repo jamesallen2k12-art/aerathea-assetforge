@@ -33,6 +33,11 @@ Final image SHA-256:
 `511664eb9ea4192f9d86cd1d08f320158b1d70df6a57bfc2130543c80c47247d`.
 The A01 package remains `quarantined` and byte-preserved.
 
+The exact 20-path A02 dependency snapshot is commit
+`72031e9470905e24a49adf46ffc57da92cb0618c`, pushed to `assetforge/main`
+and verified against the live remote ref. Pre-metadata checkpoint:
+`Saved/ProjectRecovery/20260720-211631/`.
+
 ## Superseded A02 Restart Decision
 
 Flamestrike rejected the A01 review image. The A01 Blender/FBX/texture package
