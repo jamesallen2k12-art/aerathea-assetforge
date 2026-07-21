@@ -1,6 +1,6 @@
 # SM_GIA_BloodAxeCairnstone_A005 Visual-Fidelity Core Recovery
 
-Status: recovery technically complete; DCC game-ready candidate pending Flamestrike visual approval
+Status: A01 technical pass; visually rejected and quarantined; A02 restart authorized
 
 Artifact classification: `authoritative recovery record`
 
@@ -130,3 +130,13 @@ family. Later iterations reused the single local final-render path and were
 rejected before promotion for material-slot misassignment, oversized relief,
 source-atlas seam exposure, padding stretch, or an artificial transition
 band. The accepted render is the only review image.
+
+## Flamestrike A01 Visual Decision
+
+Flamestrike rejected the opened A01 review image on 2026-07-20. The bottom
+base layer reads as cut off; the required plinth, seated ring, and lower
+debris-surrounded ring do not all read distinctly; and rendered pixel color is
+off relative to the authoritative source. This visual decision overrides the
+internal visual-pass claim without invalidating the `20/20` technical audit
+evidence. A01 is now `quarantined`; the authorized restart packet is
+`SM_GIA_BloodAxeCairnstone_A005_A02_VISUAL_CORRECTION_RESTART_HANDOFF.md`.

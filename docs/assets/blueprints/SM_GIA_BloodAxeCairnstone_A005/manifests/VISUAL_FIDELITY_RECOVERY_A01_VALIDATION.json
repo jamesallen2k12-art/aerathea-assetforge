@@ -3,8 +3,8 @@
   "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
   "contract_id": "A005-CR-STEPS01-16-VISUAL-FIDELITY-RECOVERY-A01",
   "date": "2026-07-20",
-  "status": "pass_dcc_game_ready_candidate_pending_flamestrike_visual_approval",
-  "artifact_classification": "proof only",
+  "status": "technical_pass_20_of_20_visual_reject_by_flamestrike",
+  "artifact_classification": "proof only; A01 candidate visually quarantined",
   "pipeline_status": "DCC game-ready candidate",
   "fully_game_ready": false,
   "unreal_outputs": 0,
@@ -22,7 +22,19 @@
     "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualFidelityRecovery_A01/SM_GIA_BloodAxeCairnstone_A005_FINAL_GAME_READY_ASSET.png",
     "sha256": "56666489f3b5420ad7a4d5206f96e0631147df936eece147780a2263d4d3c05b",
     "orientation": "upright source-matched front with slight top reveal",
-    "visual_gate": "pass_internal_source_matched_front_pending_Flamestrike"
+    "visual_gate": "rejected_by_Flamestrike_bottom_base_stack_and_color_mismatch"
+  },
+  "flamestrike_visual_review": {
+    "date": "2026-07-20",
+    "decision": "reject_A01_candidate",
+    "technical_gates_affected": false,
+    "visual_findings": [
+      "bottom base layer appears cut off",
+      "plinth, seated ring, and lower debris-surrounded ring do not all read distinctly",
+      "rendered pixel color is off relative to source"
+    ],
+    "artifact_status_after_review": "quarantined",
+    "next_action": "fresh-context A02 correction pass"
   },
   "step_results": {
     "STEP_01": "retained_authoritative_valid",

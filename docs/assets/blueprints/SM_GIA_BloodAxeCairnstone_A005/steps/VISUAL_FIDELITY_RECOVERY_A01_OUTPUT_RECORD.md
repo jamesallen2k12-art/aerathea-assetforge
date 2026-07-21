@@ -1,6 +1,6 @@
 # A005 Steps 01-16 Visual-Fidelity Recovery A01 Output Record
 
-Status: technically complete; pending Flamestrike visual approval
+Status: technical pass; visually rejected and quarantined by Flamestrike
 
 Artifact classification: `authoritative recovery result record`
 
@@ -10,9 +10,10 @@ Contract ID: `A005-CR-STEPS01-16-VISUAL-FIDELITY-RECOVERY-A01`
 
 ## Decision
 
-Pass the corrected package as a `candidate` with pipeline status `DCC
-game-ready candidate`. Do not promote it to `Fully game-ready`, visual canon,
-or the approved asset library. Unreal outputs remain zero.
+Retain the `20/20` result as technical `proof only`, but reject and quarantine
+the A01 package as a visual candidate. Flamestrike found a missing/cut-off read
+in the bottom base stack and source-color mismatch. A fresh-context A02
+correction pass is authorized. Unreal outputs remain zero.
 
 ## Step Results
 

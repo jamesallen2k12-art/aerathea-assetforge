@@ -1,10 +1,27 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: Steps 01-16 visual-fidelity recovery technically complete; DCC game-ready candidate pending Flamestrike visual approval
+Status: A01 technical pass visually rejected; restart into A02 correction pass
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
+
+## Active Resume Boundary - A02 Base-Stack And Color Correction
+
+Flamestrike rejected the A01 final image and authorized a recovery point plus
+fresh-context pass. The complete next-agent packet is
+`SM_GIA_BloodAxeCairnstone_A005_A02_VISUAL_CORRECTION_RESTART_HANDOFF.md`.
+
+- A01 is `quarantined` as a visual candidate; its `20/20` audit is `proof only`.
+- Required correction: restore the distinct plinth, seated ring, and lower
+  debris-surrounded ring; correct final displayed color to the source.
+- Root geometry/shader cause is not yet proven. The handoff separates evidence
+  from diagnostic hypotheses.
+- Resume only into the bounded A02 audit/correction contract.
+- Do not open intermediate images. Unreal/Step 17 remains unauthorized.
+
+Manual restart checkpoint: `Saved/ProjectRecovery/20260720-202843/`.
+
 
 ## Active Resume Boundary - Steps 01-16 Visual-Fidelity Core Recovery
 

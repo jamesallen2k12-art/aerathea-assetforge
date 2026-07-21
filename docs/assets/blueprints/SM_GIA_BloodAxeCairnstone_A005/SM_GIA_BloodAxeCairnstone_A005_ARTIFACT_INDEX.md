@@ -1,10 +1,18 @@
 # SM_GIA_BloodAxeCairnstone_A005 Artifact Index
 
-Status: Steps 01-16 visual-fidelity recovery technically complete; DCC game-ready candidate pending Flamestrike visual approval
+Status: A01 technical pass visually rejected and quarantined; A02 restart pending
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
+
+## Active A02 Restart Decision
+
+Flamestrike rejected the A01 review image. The A01 Blender/FBX/texture package
+and final image are `quarantined` as visual candidates; their `20/20` audit is
+retained as `proof only`. The authoritative next-agent packet is
+`SM_GIA_BloodAxeCairnstone_A005_A02_VISUAL_CORRECTION_RESTART_HANDOFF.md`.
+
 
 ## Active Steps 01-16 Visual-Fidelity Core Recovery
 

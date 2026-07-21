@@ -1,10 +1,25 @@
 # SM_GIA_BloodAxeCairnstone_A005 Approval Log
 
-Status: Steps 01-16 visual-fidelity recovery technically complete; DCC game-ready candidate pending Flamestrike visual approval
+Status: A01 technical pass visually rejected; A02 correction pass authorized after restart
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
+
+## A01 Visual Rejection / A02 Restart Authority
+
+- Date: 2026-07-20
+- Approver: Flamestrike
+- A01 decision: `rejected`; package classification: `quarantined`
+- Findings: bottom base layer appears cut off; the plinth, seated ring, and
+  lower debris-surrounded ring do not all read distinctly; rendered pixel
+  color is off relative to the authoritative source
+- Technical evidence retained: A01 `20/20` audit and `4/4` FBX imports are
+  `proof only`
+- Next authority: create a recovery point, restart with fresh context, and
+  perform an A02 correction pass under the dedicated restart handoff
+- Unreal authority: `false`; `Fully game-ready`: `false`
+
 
 ## Steps 01-16 Visual-Fidelity Recovery Authority
 
