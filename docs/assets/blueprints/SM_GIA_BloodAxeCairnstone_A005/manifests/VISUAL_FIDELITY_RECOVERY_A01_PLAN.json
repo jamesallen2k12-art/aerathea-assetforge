@@ -1,0 +1,79 @@
+{
+  "schema": "aerathea.a005_visual_fidelity_recovery_plan.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-STEPS01-16-VISUAL-FIDELITY-RECOVERY-A01",
+  "date": "2026-07-20",
+  "status": "technically_complete_pending_flamestrike_visual_approval",
+  "artifact_classification": "authoritative recovery plan",
+  "source_authority": {
+    "path": "docs/assets/reference/bloodaxe_cairnstone_asset/REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate.png",
+    "sha256": "4b953abb87f5f254a5f51c6214e76d3f72c4fc55bc2fa4e4d605b2440d6e53c2",
+    "modified": false
+  },
+  "step_audit": {
+    "STEP_01_TO_STEP_10": "authoritative_unchanged",
+    "STEP_11": "authoritative_constraints_honored_with_recovery_validation_override",
+    "STEP_12": "historical_output_quarantined_recovery_pass",
+    "STEP_13": "historical_approval_superseded_recovery_pass",
+    "STEP_14": "authoritative_owner_rules_applied_recovery_pass",
+    "STEP_15": "historical_candidate_quarantined_recovery_pass",
+    "STEP_16": "historical_candidate_quarantined_recovery_pass"
+  },
+  "first_divergence": {
+    "step": "STEP_12",
+    "planned_lod0_target_triangles": 8000,
+    "planned_lod0_approved_range": [4000, 10000],
+    "historical_lod0_triangles": 784,
+    "defective_gate": "maximum-only triangle budget allowed an under-resolved blockout to pass without macro-feature coverage"
+  },
+  "locked_dimensions_cm": {
+    "assembled": [140, 110, 220],
+    "base_height": 35,
+    "monolith_max": [120, 90],
+    "pivot": [0, 0, 0]
+  },
+  "required_visual_features": [
+    "rounded irregular tapered monolith",
+    "two separated block-built masonry courses",
+    "peripheral rubble apron with individual silhouette stones",
+    "front Blood Axe relief",
+    "red fissure and rune language",
+    "dark weathered hand-painted stone response",
+    "source-matched upright orientation and framing"
+  ],
+  "implementation_constraints": {
+    "primary_shells": 4,
+    "C005_C006_C007_decoration_geometry": 0,
+    "decoration_consumers": "face-owned BaseColor and Normal",
+    "runtime_material_slots": 1
+  },
+  "recovery_gates": {
+    "lod0_triangles_min": 4000,
+    "lod0_triangles_max": 10000,
+    "lod_levels": 4,
+    "collision_hulls": 4,
+    "uv0_required": true,
+    "lightmap_uv_required": true,
+    "texture_maps": ["BaseColor", "Normal", "ORM"],
+    "material_slots_max": 1,
+    "source_dimensions_exact": true,
+    "major_visual_feature_coverage_required": true,
+    "final_source_comparison_required": true,
+    "unreal_outputs": 0
+  },
+  "approval": {
+    "approver": "Flamestrike",
+    "scope": "complete Steps 01-16 visual-fidelity recovery and open only the final corrected 3D image"
+  },
+  "result": {
+    "pipeline_status": "DCC game-ready candidate",
+    "artifact_classification": "candidate",
+    "lod_triangles": [8672, 3988, 1820, 692],
+    "independent_gates": "20/20",
+    "source_owned_basecolor_mismatches": 0,
+    "clean_fbx_reimports": "4/4",
+    "unreal_outputs": 0,
+    "fully_game_ready": false,
+    "next_gate": "Flamestrike review of the single final accepted image"
+  }
+}

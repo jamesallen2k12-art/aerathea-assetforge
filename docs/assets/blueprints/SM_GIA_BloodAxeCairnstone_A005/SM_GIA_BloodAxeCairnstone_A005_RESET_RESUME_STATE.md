@@ -1,10 +1,41 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: Step 16 technically complete and remotely closed DCC game-ready candidate; mandatory restart required
+Status: Steps 01-16 visual-fidelity recovery technically complete; DCC game-ready candidate pending Flamestrike visual approval
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
+
+## Active Resume Boundary - Steps 01-16 Visual-Fidelity Core Recovery
+
+Flamestrike authorized complete A005 source-to-game-ready discrepancy
+recovery across Steps 01-16 and requested that only the final corrected 3D
+image be opened. Contract:
+`A005-CR-STEPS01-16-VISUAL-FIDELITY-RECOVERY-A01`.
+
+Audit result: Steps 01-10 remain authoritative. The first production
+divergence is Step 12, where a `784`-triangle blockout passed a maximum-only
+budget gate despite Step 11's approved `4000-10000` range and approximately
+`8000`-triangle target. Historical Step 12, Step 15, and Step 16 candidates
+are quarantined for visual-fidelity use. Recovery from the unchanged A02
+source authority is technically complete under pre-action checkpoint
+`Saved/ProjectRecovery/20260720-193020/`.
+
+- Steps 01-10: retained authoritative.
+- Step 11: authoritative blueprint honored, including four primary shells,
+  one material, and zero C-005/C-006/C-007 decoration geometry.
+- Steps 12-16: rebuilt and independently validated.
+- LOD triangles: `8672/3988/1820/692`.
+- Exact bounds: `140 x 110 x 220 cm`; collision proxies: `4`.
+- Source-owned Base Color: `154948` pixels compared; mismatches `0`.
+- Clean FBX imports: `4/4`; recovery gates: `20/20`.
+- Candidate: `SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_DCCGameReady_A02.blend`.
+- Single final review image:
+  `Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualFidelityRecovery_A01/SM_GIA_BloodAxeCairnstone_A005_FINAL_GAME_READY_ASSET.png`.
+- Current stop: pending Flamestrike visual approval of that image.
+- Pipeline status: `DCC game-ready candidate`; Unreal work remains `0` and
+  `Fully game-ready` remains `false`.
+
 
 ## Current Resume Boundary - Step 16 Technical Candidate Complete / Step 17 Unauthorized
 

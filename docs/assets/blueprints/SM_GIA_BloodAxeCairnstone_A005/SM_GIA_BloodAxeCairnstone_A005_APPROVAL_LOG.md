@@ -1,10 +1,45 @@
 # SM_GIA_BloodAxeCairnstone_A005 Approval Log
 
-Status: Step 16 technically complete and remotely closed DCC game-ready candidate; mandatory restart required
+Status: Steps 01-16 visual-fidelity recovery technically complete; DCC game-ready candidate pending Flamestrike visual approval
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
+
+## Steps 01-16 Visual-Fidelity Recovery Authority
+
+- Date: 2026-07-20
+- Approver: Flamestrike
+- Authority statement: resume and use the complete Steps 01-16 process to
+  locate and correct the source-to-game-ready visual discrepancy, with full
+  approval and authority to make required changes; open only the final 3D
+  game-ready asset image for approval
+- Contract ID: `A005-CR-STEPS01-16-VISUAL-FIDELITY-RECOVERY-A01`
+- Approved scope: audit Steps 01-16; preserve valid source evidence; identify
+  and record the first divergence; quarantine affected downstream candidates;
+  revise the A005-only construction/material/package workflow; rebuild UVs,
+  maps, material, LOD0-LOD3, collision, Blender/FBX package; independently
+  validate; render and visibly open only the final corrected 3D image
+- First divergence: Step 12 under-resolved `784`-triangle blockout passed a
+  maximum-only budget gate despite Step 11's `4000-10000` approved range and
+  approximately `8000`-triangle target
+- Steps 01-10 authority: preserved
+- Unreal authority: `false`; `Fully game-ready` promotion: `false`
+- Pre-action checkpoint: `Saved/ProjectRecovery/20260720-193020/`
+- Recovery result: Steps 01-10 retained; Step 11 honored; Steps 12-16
+  rebuilt and independently validated
+- Blueprint-critical implementation: four closed primary shells; C-005/C-006/
+  C-007 decoration geometry `0`; one material; source-owned Base Color/Normal
+- LOD triangles: `8672/3988/1820/692`
+- Exact bounds: `140 x 110 x 220 cm` on all LODs
+- Source-owned Base Color verification: `154948` pixels; mismatches `0`
+- Clean FBX re-import: `4/4`
+- Independent recovery audit: `20/20`
+- Final accepted review image:
+  `Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualFidelityRecovery_A01/SM_GIA_BloodAxeCairnstone_A005_FINAL_GAME_READY_ASSET.png`
+- Result classification: `candidate`; pipeline status: `DCC game-ready
+  candidate`; pending Flamestrike visual approval
+
 
 ## Step 16 DCC Game-Ready Package Execution Authority
 

@@ -1,10 +1,46 @@
 # SM_GIA_BloodAxeCairnstone_A005 Artifact Index
 
-Status: Step 16 technically complete and remotely closed DCC game-ready candidate; mandatory restart required
+Status: Steps 01-16 visual-fidelity recovery technically complete; DCC game-ready candidate pending Flamestrike visual approval
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-20
+
+## Active Steps 01-16 Visual-Fidelity Core Recovery
+
+The active contract is
+`A005-CR-STEPS01-16-VISUAL-FIDELITY-RECOVERY-A01`. The first divergence is
+Step 12: a `784`-triangle blockout passed a ceiling-only budget gate despite
+Step 11's approved `4000-10000` range, approximately `8000`-triangle target,
+and modeled macro-feature allocations. Steps 01-10 remain authoritative.
+Historical Step 12, Step 15, and Step 16 production candidates are
+`quarantined`; Step 13 remains historical macro-decision authority only; Step
+14 is reference-only for the recovery application. The authoritative recovery
+record and plan are:
+
+- `SM_GIA_BloodAxeCairnstone_A005_VISUAL_FIDELITY_CORE_RECOVERY_20260720.md`;
+- `manifests/VISUAL_FIDELITY_RECOVERY_A01_PLAN.json`.
+
+Recovery outputs:
+
+| Artifact | Status | Role |
+|---|---|---|
+| Tools/DCC/build_bloodaxe_cairnstone_a005_visual_fidelity_recovery.py | candidate production builder | Rebuilds from the immutable A02 authority into four Step 11-compliant primary shells, source-owned UV/material consumers, LOD0-LOD3, collision, Blender, and FBX outputs. |
+| Tools/DCC/render_bloodaxe_cairnstone_a005_visual_fidelity_final.py | proof-supporting renderer | Produces the single source-matched front approval render; no intermediate image is a review gate. |
+| Tools/DCC/audit_bloodaxe_cairnstone_a005_visual_fidelity_recovery.py | proof-supporting independent auditor | Verifies 20 gates including topology, LODs, UVs, source-owned pixel identity, collision, texture/export hashes, clean FBX imports, render metrics, and Unreal firewall. |
+| SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_DCCGameReady_A02.blend | candidate | Corrected DCC game-ready candidate with `8672/3988/1820/692` triangles, four closed shells, two UV layers, one material, and four collision proxies. |
+| SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_VISUAL_FIDELITY_RECOVERY_A01_MANIFEST.json | candidate sidecar | Exact source, geometry, UV, material, texture, collision, Blender, and FBX hashes/counts. |
+| SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/VisualFidelityRecovery_A01/ | candidate | Recovery Base Color, DirectX Normal, and ORM; `154948` source-owned Base Color pixels remain exact. |
+| SourceAssets/Exports/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/VisualFidelityRecovery_A01/ | candidate | LOD0/collision plus LOD1-LOD3 FBXs; clean re-import `4/4`. |
+| manifests/VISUAL_FIDELITY_RECOVERY_A01_VALIDATION.json | proof only | Independent `20/20` validation and Steps 01-16 classification record. |
+| steps/VISUAL_FIDELITY_RECOVERY_A01_OUTPUT_RECORD.md | authoritative recovery result | Records the recovered technical result, classifications, rejected-frame handling, and approval boundary. |
+| review/VISUAL_FIDELITY_RECOVERY_A01_FINAL_REVIEW.md | candidate review boundary | Identifies the one final accepted image for Flamestrike review. |
+| Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualFidelityRecovery_A01/ | proof only; local-only | Final render, render audit, and independent audit. |
+
+Technical result: `20/20` recovery gates pass. Artifact status is `candidate`;
+pipeline status is `DCC game-ready candidate`. Unreal, `Fully game-ready`,
+approved-library, and visual-canon promotion remain zero.
+
 
 ## Step 16 DCC Game-Ready Package - Technical Pass / Step 17 Pending
 
