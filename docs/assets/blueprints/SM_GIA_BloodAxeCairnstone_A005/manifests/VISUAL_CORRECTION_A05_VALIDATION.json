@@ -3,19 +3,26 @@
   "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
   "contract_id": "A005-CR-VISUAL-CORRECTION-A05",
   "date": "2026-07-21",
-  "status": "pass_candidate_pending_flamestrike_visual_review",
+  "status": "technical_pass_retained_as_proof_only_visual_rejection_quarantined",
   "artifact_classification": "proof only",
-  "pipeline_status": "DCC game-ready candidate",
+  "pipeline_status": "quarantined",
   "fully_game_ready": false,
   "unreal_outputs": 0,
+  "flamestrike_visual_rejection": {
+    "date": "2026-07-21",
+    "decision": "rejected",
+    "finding": "The two structural base dimensions are incorrect because internal alignment pixels were treated as exterior footprint endpoints.",
+    "technical_gate_disposition": "All recorded technical pass results remain proof only. G06, G07, G16, and the overall visual-candidate implication are invalid and superseded as A06 dimensional/visual authority.",
+    "artifact_disposition": "Complete A05 package and final image quarantined."
+  },
   "candidate": {
     "manifest": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_VISUAL_CORRECTION_A05_MANIFEST.json",
-    "manifest_sha256": "6fd33e98aa076adbbb4662a0441feaca4aa97e0ce6c129cb243982669cbde7d4"
+    "manifest_sha256": "d317eece468c383e96bfb44a43c9aaa9539cea117773d169d62581755b492fd2"
   },
   "final_review_image": {
     "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A05/SM_GIA_BloodAxeCairnstone_A005_FINAL_CORRECTED_3D_A05.png",
     "sha256": "5175ffb7c0c1bd5d66f8b1ede17ebc489ab77ade3c5667ac35c3bc3d101bef56",
-    "visual_gate": "pending Flamestrike"
+    "visual_gate": "rejected by Flamestrike; quarantined"
   },
   "gates": [
     {

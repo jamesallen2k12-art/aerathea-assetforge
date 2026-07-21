@@ -1,6 +1,6 @@
 # A005 Visual Correction A05 Output Record
 
-Status: `pass_candidate_pending_flamestrike_visual_review`
+Status: `technical pass retained as proof only; visually rejected and quarantined`
 
 Artifact classification: `authoritative technical result record`
 
@@ -15,16 +15,30 @@ oval cairn components while preserving the exact approved A04 plinth. The
 candidate passed the independent technical and render audit at `18/18` with
 zero failures.
 
-Artifact status is `candidate`. Pipeline status is `DCC game-ready candidate`.
-Visual approval remains pending Flamestrike. Unreal, Step 17, `Fully
-game-ready`, approved-library, and visual-canon promotion remain unauthorized
-and false.
+At technical closeout, artifact status was `candidate` and pipeline status was
+`DCC game-ready candidate`. That state is superseded by the visible rejection
+below. Unreal, Step 17, `Fully game-ready`, approved-library, and visual-canon
+promotion remained unauthorized and false.
+
+## Superseding Flamestrike Visual Decision
+
+Rejected on 2026-07-21. The geometry is closer and stonework appearance is
+better, but the C002/C003 dimensions are incorrect. A05 treated distances
+between internal alignment pixels as the physical widths/depths of the two
+base pieces even though those pixels do not sit on the exterior edges.
+
+The complete A05 package is `quarantined`. Its technical audit remains `proof
+only`; the C002/C003 physical footprints, G06/G07/G16 implications, and visual
+candidate conclusion are `invalid and superseded`. The exact A04 plinth
+remains an `authoritative visual reference`; A05 stonework is `reference only`.
 
 ## Corrective Construction
 
 - C001: exact A04 plinth geometry and UV signature preserved.
-- C002 upper course: measured oval footprint `119.097222 x 77.647059 cm`.
-- C003 lower course: measured oval footprint `134.652778 x 96.561086 cm`.
+- C002 upper course: A05-derived oval footprint
+  `119.097222 x 77.647059 cm`; now invalid as outer-footprint authority.
+- C003 lower course: A05-derived oval footprint
+  `134.652778 x 96.561086 cm`; now invalid as outer-footprint authority.
 - C004 apron: oval footprint `140 x 110 cm`, rebuilt as irregular peripheral
   rubble with varied block widths, recessed joints, and uneven crowns.
 - Overall bounds: exact `140 x 110 x 220 cm`; pivot `[0,0,0]`.
@@ -66,11 +80,12 @@ authority.
   course cadence.
 - Attempt04: `proof only`; first acceptable base read, held when the pre-audit
   found an A04 plinth UV-equivalence mismatch.
-- Final A05: `candidate`; component-owned UV repair and exact plinth-equivalence
-  audit passed before final rendering.
+- Final A05: `quarantined` after visible rejection; component-owned UV repair
+  and exact plinth-equivalence audit remain `proof only`.
 
 ## Stop Boundary
 
-Flamestrike may approve, reject, or mark blocked only the exact final A05 image
-identified above. No downstream production action is authorized by this
-technical pass.
+Flamestrike rejected the exact A05 image identified above. The next bounded
+action after resume is the A06 exterior-edge measurement-only gate recorded in
+`VISUAL_CORRECTION_A05_VISUAL_REJECTION_A06_RESTART_HANDOFF.md`. No A06
+geometry or downstream production action is authorized by this save point.

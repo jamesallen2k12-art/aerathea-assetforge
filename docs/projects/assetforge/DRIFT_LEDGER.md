@@ -24,6 +24,20 @@ Core authority: `AGENTS.md` Core Principles govern this ledger. Drifted artifact
 
 ## Entries
 
+### 2026-07-21 08:01 EDT - A005 A05 Internal Alignment Spans Promoted To Outer Footprints
+
+- Asset or scope: `SM_GIA_BloodAxeCairnstone_A005` A05 measurement audit, C002/C003 footprint authority, replacement-base geometry, package, validation, and final review image.
+- Detected by: Flamestrike's visible A05 review. The geometry is closer and stonework appearance better, but the two structural base dimensions are incorrect because the alignment pixels used for measurement lie within the base geometry rather than on its exterior edges.
+- Last known Core-valid state: unchanged authoritative source image and source specifications; exact A04 plinth as an `authoritative visual reference`; A04 rejection guidance requiring actual oval base measurements. A05 topology/package evidence remains technically valid but is not dimensional or visual authority.
+- First drift action: `VISUAL_CORRECTION_A05_MEASUREMENT_AUDIT.json` promoted spans such as `F-C002-R360`, `L-C002-R255`, `F-C003-R390`, and `L-C003-R265` to physical C002/C003 footprint extents without first proving that both span endpoints were exterior silhouette edges.
+- Assumption or interpretation that caused drift: distance between internal alignment/contact pixels was treated as equivalent to the full outer width/depth of each base piece. The measurement gate correctly avoided closed contour fills but still converted unclassified internal stations into exterior dimensional authority.
+- Affected outputs: A05 measurement ready decision; A05 plan and contract execution; C002/C003 geometry and UV placement; Blender/FBX/texture package; footprint-dependent gates G06, G07, and G16; final candidate conclusion; final review image. The source, exact A04 plinth, A04 files, and unrelated assets are unaffected.
+- Artifact statuses: complete A05 package and final image are `quarantined`; A05 C002/C003 dimensions and base geometry are `invalid as A06 construction authority`; A05 stonework treatment is `reference only`; raw A05 pixel samples and non-footprint technical gates are `proof only`; A05 visual-equivalence implication is `invalid and superseded`.
+- Quarantined locations or records: A05 outputs remain preserved in their existing `VisualCorrection_A05` paths; authoritative classification and restart instructions are in `docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/VISUAL_CORRECTION_A05_VISUAL_REJECTION_A06_RESTART_HANDOFF.md`; finalized recovery checkpoint `Saved/ProjectRecovery/20260721-080648/`.
+- Recovery decision: stop A05 and do not repair forward. A06 must begin with a measurement-only audit that classifies exterior silhouette edges separately from internal alignment/contact, occlusion, material/shadow boundaries, and unknowns. Measure only between verified exterior edges; if an edge cannot be proven, report `Blueprint block: source authority missing`. No A06 geometry is authorized by this save point.
+- Flamestrike approval: Flamestrike requested this save point with the exact rejection guidance so the next attempt can start from it. This authorizes recovery recording and preservation only, not A06 geometry, UV, texture, Unreal, or promotion work.
+- Follow-up Core/Kaizen improvement: every future footprint measurement gate must include endpoint-semantic classification and an explicit proof that each endpoint lies on the exterior silhouette. Alignment, contact, seam, feature, and witness pixels must be stored as separate evidence classes and can never be promoted to full extents by distance alone.
+
 ### 2026-07-20 22:47 EDT - A005 A03 Target-Space Proportion Gate Visual-Canon Conflict
 
 - Asset or scope: `SM_GIA_BloodAxeCairnstone_A005` A03 visual-correction contract, builder, Blender/FBX/texture package, spatial gates, and final-path image.

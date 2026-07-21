@@ -3,8 +3,14 @@
   "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
   "contract_id": "A005-CR-VISUAL-CORRECTION-A05",
   "date": "2026-07-21",
-  "status": "authorized_for_complete_a05_corrective_execution",
-  "artifact_classification": "authoritative execution plan",
+  "status": "completed_then_visually_rejected_quarantined",
+  "artifact_classification": "authoritative historical boundary; invalid as A06 construction authority",
+  "flamestrike_visual_rejection": {
+    "date": "2026-07-21",
+    "decision": "A05 rejected",
+    "first_invalid_interpretation": "C002/C003 source alignment spans were promoted to physical outer footprints without proving that the endpoints were exterior silhouette edges.",
+    "recovery": "A06 must begin with a measurement-only exterior-edge classification and may not reuse A05 footprint values."
+  },
   "source_authority": {
     "path": "docs/assets/reference/bloodaxe_cairnstone_asset/REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate.png",
     "sha256": "4b953abb87f5f254a5f51c6214e76d3f72c4fc55bc2fa4e4d605b2440d6e53c2",

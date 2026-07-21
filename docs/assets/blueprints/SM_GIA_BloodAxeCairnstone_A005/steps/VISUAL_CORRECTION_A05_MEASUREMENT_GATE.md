@@ -1,12 +1,21 @@
 # A005 Visual Correction A05 Measurement Gate
 
-Status: `authoritative measurement record ready for A05 contract`
+Status: `superseded; internal alignment spans invalid as outer-footprint authority`
 
-Artifact classification: `authoritative`
+Artifact classification: `proof only; derived footprint interpretation invalid and quarantined`
 
 Date: 2026-07-21
 
-## Decision
+## Superseding Flamestrike Decision
+
+The A05 visible review proved that the alignment pixels used below lie within
+C002/C003 rather than on their exterior edges. Their separation is not the
+physical width/depth of either base piece. The raw pixel samples remain `proof
+only`; the derived footprint values and ready-for-contract decision are
+`invalid and superseded`. A06 must begin with a separate exterior-edge
+measurement gate.
+
+## Historical Decision
 
 `authoritative measurement record ready for A05 contract`
 
@@ -49,10 +58,9 @@ authorized.
 - Source-exact individual course heights.
 - Physical cross-panel pixel identity.
 
-These blocks do not prevent a later A05 construction contract from using the
-approved production pivot, a clearly classified oval interpretation bounded
-by the exact stations, and a 35 cm course allocation selected inside the
-recorded two-view intervals.
+The historical A05 conclusion that these blocks did not prevent construction
+is superseded. The exact stations are internal alignment/contact evidence and
+cannot bound an A06 outer footprint.
 
 ## Evidence
 

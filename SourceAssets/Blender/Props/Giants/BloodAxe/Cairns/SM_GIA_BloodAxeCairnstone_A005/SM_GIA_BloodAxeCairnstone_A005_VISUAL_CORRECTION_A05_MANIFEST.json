@@ -3,9 +3,19 @@
   "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
   "contract_id": "A005-CR-VISUAL-CORRECTION-A05",
   "date": "2026-07-21",
-  "status": "candidate_pending_a05_independent_audit",
-  "artifact_classification": "candidate",
-  "pipeline_status": "DCC game-ready candidate pending A05 audit and Flamestrike review",
+  "status": "visually_rejected_quarantined",
+  "artifact_classification": "quarantined",
+  "pipeline_status": "quarantined; technical package evidence retained as proof only",
+  "flamestrike_visual_rejection": {
+    "date": "2026-07-21",
+    "decision": "rejected",
+    "positive_findings": [
+      "geometry is closer",
+      "stonework appearance is better"
+    ],
+    "blocking_finding": "The dimensions of the two structural base pieces are incorrect because internal alignment pixels were treated as exterior footprint endpoints.",
+    "a06_authority": "A05 C002/C003 dimensions and base geometry are invalid as A06 construction authority."
+  },
   "source_authority": {
     "path": "docs/assets/reference/bloodaxe_cairnstone_asset/REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate.png",
     "sha256": "4b953abb87f5f254a5f51c6214e76d3f72c4fc55bc2fa4e4d605b2440d6e53c2",

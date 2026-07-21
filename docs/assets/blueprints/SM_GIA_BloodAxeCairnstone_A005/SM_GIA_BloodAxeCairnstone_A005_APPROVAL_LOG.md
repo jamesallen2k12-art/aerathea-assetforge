@@ -1,12 +1,34 @@
 # SM_GIA_BloodAxeCairnstone_A005 Approval Log
 
-Status: A05 DCC game-ready candidate passed 18/18; Flamestrike visual decision pending
+Status: A05 visually rejected and quarantined; A06 exterior-edge remeasurement pending resume
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-21
 
-## A05 Complete Visual Correction Authority And Technical Result
+## A05 Visible Rejection / A06 Recovery Authority
+
+- Date: 2026-07-21
+- Decision authority: Flamestrike
+- Decision: `rejected`; complete A05 package classification: `quarantined`
+- Positive findings: geometry is closer; stonework appearance is better
+- Blocking finding: C002/C003 dimensions are incorrect because the A05
+  measurement interpretation treated the distance between internal alignment
+  pixels as the exterior width/depth of the two base pieces
+- Technical evidence retained: A05 `18/18` validation is `proof only` for
+  topology, overall bounds, exact A04 plinth preservation, LODs, collision,
+  textures, FBX re-import, and render integrity
+- Invalidated authority: A05 C002/C003 footprint values, their geometry, and
+  footprint-dependent validation implications
+- Recovery requirement: A06 must start with measurement-only identification
+  of actual exterior silhouette pixels, explicitly separated from internal
+  alignment/contact pixels; unobservable edges remain blocked
+- Recovery handoff:
+  `steps/VISUAL_CORRECTION_A05_VISUAL_REJECTION_A06_RESTART_HANDOFF.md`
+- Finalized recovery checkpoint: `Saved/ProjectRecovery/20260721-080648/`
+- Unreal authority: `false`; `Fully game-ready`: `false`
+
+## Superseded A05 Complete Visual Correction Authority And Technical Result
 
 - Date: 2026-07-21
 - Approver for execution: Flamestrike

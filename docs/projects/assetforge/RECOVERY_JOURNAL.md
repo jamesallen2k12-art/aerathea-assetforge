@@ -6641,3 +6641,23 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260721-073502/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260721-073502/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 08:01:53 EDT -0400 - A005 A05 rejected; alignment pixels are internal and not base-edge dimensions; A06 remeasurement guidance attached
+
+- Snapshot: `Saved/ProjectRecovery/20260721-080153/`
+- Git: branch `main`, HEAD `6f88ffe`, status lines `254`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-080153/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-080153/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-080153/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 08:06:48 EDT -0400 - A005 A05 rejection fully recorded; A06 exterior-edge measurement-only restart boundary active
+
+- Snapshot: `Saved/ProjectRecovery/20260721-080648/`
+- Git: branch `main`, HEAD `6f88ffe`, status lines `267`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-080648/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-080648/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-080648/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

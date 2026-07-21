@@ -1,14 +1,34 @@
 # A005 Visual Correction A05 Final Review
 
-Status: `candidate pending Flamestrike visual review`
+Status: `visually rejected by Flamestrike; quarantined`
 
-Artifact classification: `candidate`
+Artifact classification: `quarantined`
 
 Date: 2026-07-21
 
 Contract ID: `A005-CR-VISUAL-CORRECTION-A05`
 
-## Decision Requested
+## Flamestrike Decision
+
+Rejected on 2026-07-21. Flamestrike found that the geometry is closer and the
+stonework appearance is better, but the two structural base pieces still have
+incorrect dimensions. The source alignment pixels used for A05 lie inside the
+base geometry rather than on its exterior edges, so their separation is not
+the base width.
+
+Decision consequences:
+
+- Quarantine the complete A05 candidate and final review image.
+- Retain A05's technical package evidence as `proof only`.
+- Treat the A05 C002/C003 dimensions and base geometry as `invalid as A06
+  construction authority`.
+- Retain the improved A05 stonework appearance as `reference only`, not an
+  approved look.
+- Preserve the exact A04 plinth as the authoritative visual reference.
+- Begin A06 with an exterior-edge measurement-only audit; do not build A06
+  geometry from alignment/contact spans.
+
+## Historical Decision Requested
 
 Approve, reject, or mark blocked the exact A05 image below as the corrected
 Steps 01-16 `DCC game-ready candidate` for A005.
@@ -27,8 +47,9 @@ audit passed. Internal attempts are not approval authority.
 
 - The approved A04 plinth is exactly preserved in geometry and UV behavior.
 - The rejected rectangular/cumulative A04 base is absent.
-- The replacement base uses measured oval footprints and reads as three
-  nested cairn components rather than added rectangular plates.
+- The replacement base used A05-derived oval footprints and reads as three
+  nested cairn components rather than added rectangular plates; the derived
+  C002/C003 dimensions are now invalid as exterior-footprint authority.
 - Stone widths, joints, crown heights, and the outer rubble edge vary to avoid
   a manufactured ring or smooth-skirt read.
 - Base colors use component-local source routing; no color grade was applied.
@@ -46,8 +67,9 @@ audit passed. Internal attempts are not approval authority.
 - Bright fringe fraction: `0.0`.
 - Unreal outputs: `0`; `Fully game-ready`: `false`.
 
-## Boundary
+## Rejection Boundary
 
-Approval applies only to this A05 DCC review candidate. It does not authorize
-Unreal, Step 17, `Fully game-ready`, approved-library, or visual-canon
-promotion.
+The exact A05 DCC candidate and review image are `quarantined`. Its `18/18`
+validation is `proof only` and does not establish correct base dimensions or
+visual equivalence. Unreal, Step 17, `Fully game-ready`, approved-library, and
+visual-canon promotion remain unauthorized.

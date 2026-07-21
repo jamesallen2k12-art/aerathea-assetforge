@@ -1,12 +1,37 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: A05 DCC game-ready candidate passed 18/18; Flamestrike visual decision pending
+Status: A05 visually rejected and quarantined; A06 exterior-edge remeasurement pending resume
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-21
 
-## Active Resume Boundary - A05 Final Candidate / Visual Decision Pending
+## Active Resume Boundary - A05 Rejection / A06 Exterior-Edge Recovery
+
+Flamestrike rejected the exact A05 final review on 2026-07-21. The A05
+geometry is closer and its stonework appearance is better, but the dimensions
+of C002 and C003 are incorrect. The alignment pixels used by A05 lie within
+the two base pieces, not at their exterior edges; their separation is not the
+physical base width/depth.
+
+- Complete A05 package and final image: `quarantined`.
+- A05 `18/18` validation: `proof only` for its technical scope.
+- A05 C002/C003 dimensions, base geometry, and footprint-dependent gates:
+  `invalid as A06 construction authority`.
+- A05 stonework appearance: `reference only`; improved but not approved.
+- Exact A04 plinth: remains `authoritative visual reference`.
+- Required A06 first action: measurement-only classification and measurement
+  of verified exterior silhouette edges, kept separate from internal
+  alignment/contact pixels.
+- If the actual exterior edge is occluded or ambiguous: report `Blueprint
+  block: source authority missing`; do not infer geometry.
+- A06 geometry is not authorized by this save point.
+- Authoritative handoff:
+  `steps/VISUAL_CORRECTION_A05_VISUAL_REJECTION_A06_RESTART_HANDOFF.md`.
+- Finalized recovery checkpoint: `Saved/ProjectRecovery/20260721-080648/`.
+- Unreal/Step 17 remains unauthorized; `Fully game-ready` remains `false`.
+
+## Superseded Resume Boundary - A05 Final Candidate / Visual Decision Pending
 
 Flamestrike authorized complete correction of the 3D image on 2026-07-21.
 The A05 measurement gate, replacement-base build, package, final render, and

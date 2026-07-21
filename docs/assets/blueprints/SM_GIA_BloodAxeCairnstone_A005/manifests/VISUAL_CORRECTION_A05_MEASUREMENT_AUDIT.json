@@ -3,9 +3,15 @@
   "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
   "audit_id": "A005-CR-VISUAL-CORRECTION-A05-MEASUREMENT-A01",
   "date": "2026-07-21",
-  "status": "authoritative_measurement_record_ready_for_A05_contract",
-  "artifact_classification": "authoritative",
-  "decision": "authoritative measurement record ready for A05 contract",
+  "status": "superseded_alignment_spans_not_outer_footprint_authority",
+  "artifact_classification": "proof only; derived footprint interpretation invalid and quarantined",
+  "decision": "invalid as C002/C003 outer-footprint authority; raw pixel samples retained as proof only",
+  "flamestrike_visual_rejection": {
+    "date": "2026-07-21",
+    "decision": "A05 rejected",
+    "finding": "The alignment pixels used by the A05 measurement interpretation lie within the two base pieces and are not their exterior edges.",
+    "consequence": "The derived C002 and C003 physical footprint values and ready-for-build decision are invalid and superseded. A06 must separately identify and measure verified exterior silhouette endpoints."
+  },
   "authority": {
     "handoff": "steps/VISUAL_CORRECTION_A04_VISUAL_REJECTION_A05_RESTART_HANDOFF.md",
     "source_panels": {
