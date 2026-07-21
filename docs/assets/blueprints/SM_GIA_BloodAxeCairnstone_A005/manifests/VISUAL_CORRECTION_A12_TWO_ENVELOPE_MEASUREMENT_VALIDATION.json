@@ -3,15 +3,15 @@
   "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
   "contract_id": "A005-CR-VISUAL-CORRECTION-A12-MEASUREMENT",
   "date": "2026-07-21",
-  "status": "pass_candidate_measurement_pending_flamestrike_review",
+  "status": "pass_authoritative_multi_row_measurement",
   "artifact_classification": "proof only",
   "manifest": {
     "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/VISUAL_CORRECTION_A12_TWO_ENVELOPE_MEASUREMENT.json",
-    "sha256": "194adac6fc2991c7e644e61e3a61cd1d8117af893e1b366a5ecc5274b9513637"
+    "sha256": "273a56c297e1818e6597328a6cc5f73c71b412eb01d8b3eaec7f54af79bc0ade"
   },
   "gate_summary": {
-    "passed": 22,
-    "total": 22,
+    "passed": 23,
+    "total": 23,
     "failed": 0
   },
   "gates": [
@@ -23,7 +23,10 @@
     {
       "id": "G02_status",
       "status": "pass",
-      "detail": "candidate_measurement_pending_flamestrike_review"
+      "detail": {
+        "status": "approved_authoritative_multi_row_dimension_statistics",
+        "classification": "authoritative measurement record"
+      }
     },
     {
       "id": "G03_approval_scope",
@@ -38,6 +41,16 @@
           "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_07_LEFT_MEASUREMENT_MANIFEST.json": "e08d868925967a05d465cecadc4810a3f3e2b3cdb5be342e32ebdd807e0e9725",
           "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/VISUAL_CORRECTION_A10_PIXEL_EXACT_BASE_RECONCILIATION.json": "09452319172cdca60f024e106e20eef52a5567eac04e0f2fda73985370b3e156"
         }
+      }
+    },
+    {
+      "id": "G03A_output_approval",
+      "status": "pass",
+      "detail": {
+        "statement": "approved",
+        "date": "2026-07-21",
+        "scope": "A12 multi-row median dimensions: C002 112.291667 x 76.651584 cm; C003 129.548611 x 96.063348 cm; C004 retained at 140 x 110 cm",
+        "exclusions": "no geometry rebuild, hidden-interface construction, Blender, FBX, Unreal, Fully game-ready, library, or visual-canon promotion"
       }
     },
     {
@@ -616,5 +629,5 @@
       ]
     }
   ],
-  "decision": "A12 measurement is technically valid; median statistic remains candidate pending Flamestrike"
+  "decision": "A12 multi-row median dimensions are approved measurement authority; geometry still requires a separate approved contract"
 }

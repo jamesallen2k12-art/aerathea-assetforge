@@ -44,8 +44,9 @@ def main() -> int:
         gates.append({"id": gate_id, "status": "pass" if passed else "fail", "detail": detail})
 
     gate("G01_contract", data["contract_id"] == "A005-CR-VISUAL-CORRECTION-A12-MEASUREMENT", data["contract_id"])
-    gate("G02_status", data["status"] == "candidate_measurement_pending_flamestrike_review", data["status"])
+    gate("G02_status", data["status"] == "approved_authoritative_multi_row_dimension_statistics" and data["artifact_classification"] == "authoritative measurement record", {"status": data["status"], "classification": data["artifact_classification"]})
     gate("G03_approval_scope", data["authority"]["flamestrike_approval"] == "approved" and "measurement-only" in data["authority"]["scope"], data["authority"])
+    gate("G03A_output_approval", data["flamestrike_output_approval"]["statement"] == "approved" and "C002 112.291667 x 76.651584 cm" in data["flamestrike_output_approval"]["scope"] and "no geometry rebuild" in data["flamestrike_output_approval"]["exclusions"], data["flamestrike_output_approval"])
     source_images = {}
     hash_failures = []
     for rel, expected in data["authority"]["inputs"].items():
@@ -109,12 +110,12 @@ def main() -> int:
         "asset_id": data["asset_id"],
         "contract_id": data["contract_id"],
         "date": "2026-07-21",
-        "status": "pass_candidate_measurement_pending_flamestrike_review" if not failures else "blocked_a12_measurement_audit",
+        "status": "pass_authoritative_multi_row_measurement" if not failures else "blocked_a12_measurement_audit",
         "artifact_classification": "proof only",
         "manifest": {"path": str(MANIFEST.relative_to(ROOT)), "sha256": sha256(MANIFEST)},
         "gate_summary": {"passed": len(gates) - len(failures), "total": len(gates), "failed": len(failures)},
         "gates": gates,
-        "decision": "A12 measurement is technically valid; median statistic remains candidate pending Flamestrike" if not failures else "A12 measurement failed independent replay",
+        "decision": "A12 multi-row median dimensions are approved measurement authority; geometry still requires a separate approved contract" if not failures else "A12 measurement failed independent replay",
     }
     AUDIT.write_text(json.dumps(output, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"status": output["status"], "gate_summary": output["gate_summary"], "audit": str(AUDIT)}, indent=2))

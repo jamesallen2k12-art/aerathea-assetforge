@@ -1,12 +1,12 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: A12 multi-row measurement candidate complete; dimensional decision pending
+Status: A12 multi-row dimensions approved; separate geometry contract required
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-21
 
-## Active Resume Boundary - A12 Multi-Row Measurement Decision Pending
+## Active Resume Boundary - A12 Dimensions Approved / Geometry Contract Required
 
 Flamestrike approved the measurement-only contract
 `A005-CR-VISUAL-CORRECTION-A12-MEASUREMENT` after identifying remaining base
@@ -18,20 +18,24 @@ dimension problems in A11.
 - Direct C004/base labels remain `140 x 110 x 35 cm`.
 - A12 compares every approved C002/C003 row sample rather than selecting only
   the widest row used by A10.
-- Candidate multi-row median C002: `112.291667 x 76.651584 cm`.
-- Candidate multi-row median C003: `129.548611 x 96.063348 cm`.
+- Approved authoritative multi-row median C002: `112.291667 x 76.651584 cm`.
+- Approved authoritative multi-row median C003: `129.548611 x 96.063348 cm`.
 - Relative to A10, the medians reduce C002 width by `6.319444 cm` and C003
   width by `4.618056 cm`; C002 depth reduces `0.497738 cm`; C003 depth is
   unchanged.
-- Independent audit: `22/22`; failures: `0`.
+- Approval-aware independent audit: `23/23`; failures: `0`.
 - Exact review board:
   `Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A12_Measurement/SM_GIA_BloodAxeCairnstone_A005_A12_TWO_ENVELOPE_RECONCILIATION.png`.
 - Board SHA-256:
   `8e49df2da9140d60f0ac337c4c0b9e1d05940380182bae5ee5c3958bb7f248b0`.
 - Post-audit checkpoint: `Saved/ProjectRecovery/20260721-121816/`.
-- Current stop: Flamestrike may approve the multi-row median statistic as the
-  dimensional basis for a separate geometry contract, reject it, or mark it
-  blocked.
+- Flamestrike decision: `approved`; these dimensions are authority for a
+  separate geometry-correction contract.
+- Approval/renewal checkpoint: `Saved/ProjectRecovery/20260721-122558/`.
+- Renewal status: safe to renew. On resume, summarize this boundary and stop
+  at the separate geometry-contract approval gate.
+- Current stop: draft and obtain approval for that geometry contract. No active
+  geometry step contract exists at renewal.
 - No Blender, FBX, texture, material, collision, LOD, Unreal, canon, or
   library artifact was modified.
 

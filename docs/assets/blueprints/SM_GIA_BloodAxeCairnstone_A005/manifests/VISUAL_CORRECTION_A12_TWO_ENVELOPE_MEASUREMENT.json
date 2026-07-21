@@ -3,8 +3,8 @@
   "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
   "contract_id": "A005-CR-VISUAL-CORRECTION-A12-MEASUREMENT",
   "date": "2026-07-21",
-  "status": "candidate_measurement_pending_flamestrike_review",
-  "artifact_classification": "candidate",
+  "status": "approved_authoritative_multi_row_dimension_statistics",
+  "artifact_classification": "authoritative measurement record",
   "authority": {
     "flamestrike_approval": "approved",
     "scope": "measurement-only two-envelope reconciliation; no geometry rebuild",
@@ -15,6 +15,12 @@
       "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_07_LEFT_MEASUREMENT_MANIFEST.json": "e08d868925967a05d465cecadc4810a3f3e2b3cdb5be342e32ebdd807e0e9725",
       "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/VISUAL_CORRECTION_A10_PIXEL_EXACT_BASE_RECONCILIATION.json": "09452319172cdca60f024e106e20eef52a5567eac04e0f2fda73985370b3e156"
     }
+  },
+  "flamestrike_output_approval": {
+    "statement": "approved",
+    "date": "2026-07-21",
+    "scope": "A12 multi-row median dimensions: C002 112.291667 x 76.651584 cm; C003 129.548611 x 96.063348 cm; C004 retained at 140 x 110 cm",
+    "exclusions": "no geometry rebuild, hidden-interface construction, Blender, FBX, Unreal, Fully game-ready, library, or visual-canon promotion"
   },
   "direct_label_ownership": {
     "C001_max_width_cm": 120,
