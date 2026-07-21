@@ -1,12 +1,30 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: A05 visually rejected and quarantined; A06 exterior-edge remeasurement pending resume
+Status: A06 DCC game-ready candidate complete; Flamestrike visual approval pending
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-21
 
-## Active Resume Boundary - A05 Rejection / A06 Exterior-Edge Recovery
+## Active Resume Boundary - A06 Exterior-Corrected Candidate
+
+Flamestrike granted full approval and authority on 2026-07-21 to continue correcting the base geometry and present the completed image. A06 completed the required exterior-edge measurement gate, rebuilt the isolated A06 package, and passed the complete independent audit.
+
+- Contract: `A005-CR-VISUAL-CORRECTION-A06`.
+- Status: `candidate`; pipeline status: `DCC game-ready candidate`.
+- Independent audit: `18/18`; failures: `0`.
+- Corrected footprints: C002 `123.846154 x 92.707424 cm`; C003 `137.307692 x 105.196507 cm`; C004 `140 x 110 cm`.
+- Exact A04 plinth geometry and UV signatures: preserved.
+- LOD triangles: `8704 / 4002 / 1826 / 696`; clean FBX re-import: `4/4`; collision hulls: `4`; materials: `1`.
+- Source-owned RGB: `154948` pixels compared; mismatches: `0`.
+- Final review: `Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A06/SM_GIA_BloodAxeCairnstone_A005_FINAL_CORRECTED_3D_A06.png`.
+- Final SHA-256: `3173234aa89c5ada67919e5d0dfbe318cc369a76199df02097784b5ac92ef578`.
+- Output record: `steps/VISUAL_CORRECTION_A06_OUTPUT_RECORD.md`.
+- Review record: `review/VISUAL_CORRECTION_A06_FINAL_REVIEW.md`.
+- Current stop: Flamestrike may approve, reject, or mark blocked only this exact A06 review candidate.
+- Unreal, Step 17, `Fully game-ready`, approved-library, and visual-canon promotion remain unauthorized and false.
+
+## Superseded Resume Boundary - A05 Rejection / A06 Exterior-Edge Recovery
 
 Flamestrike rejected the exact A05 final review on 2026-07-21. The A05
 geometry is closer and its stonework appearance is better, but the dimensions

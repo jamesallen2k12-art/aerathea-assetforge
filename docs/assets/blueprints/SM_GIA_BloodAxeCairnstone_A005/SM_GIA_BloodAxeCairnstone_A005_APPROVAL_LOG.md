@@ -1,10 +1,24 @@
 # SM_GIA_BloodAxeCairnstone_A005 Approval Log
 
-Status: A05 visually rejected and quarantined; A06 exterior-edge remeasurement pending resume
+Status: A06 DCC game-ready candidate complete; Flamestrike visual approval pending
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-21
+
+## A06 Complete Correction Authority And Technical Result
+
+- Date: 2026-07-21
+- Approver for execution: Flamestrike
+- Authority statement: `resume ... You have full Approval and Authority to continue to work on this problem to correct the base geometry of the 3d image ... present the completed image for approval at the end`
+- Contract ID: `A005-CR-VISUAL-CORRECTION-A06`
+- Scope executed: exterior-edge-only measurement gate; exact A04 plinth preservation; A06-only C002/C003/C004 rebuild; component-local UV/source-pixel routing; Blender, textures, LOD0-LOD3, collision, FBXs, final review render, independent audit, and visible review preparation
+- Corrected footprints: C002 `123.846154 x 92.707424 cm`; C003 `137.307692 x 105.196507 cm`
+- Technical result: `pass_candidate_pending_flamestrike_visual_review`
+- Independent audit: `18/18`; clean FBX re-import: `4/4`
+- Final image SHA-256: `3173234aa89c5ada67919e5d0dfbe318cc369a76199df02097784b5ac92ef578`
+- Artifact classification: `candidate`; pipeline status: `DCC game-ready candidate`
+- Visual approval: pending; Unreal authority: `false`; `Fully game-ready`: `false`
 
 ## A05 Visible Rejection / A06 Recovery Authority
 

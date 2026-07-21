@@ -1,0 +1,93 @@
+{
+  "schema": "aerathea.visual_correction_a06_plan.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-VISUAL-CORRECTION-A06",
+  "date": "2026-07-21",
+  "status": "completed_candidate_pending_flamestrike_visual_review",
+  "artifact_classification": "authoritative execution plan",
+  "source_authority": {
+    "path": "docs/assets/reference/bloodaxe_cairnstone_asset/REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate.png",
+    "sha256": "4b953abb87f5f254a5f51c6214e76d3f72c4fc55bc2fa4e4d605b2440d6e53c2",
+    "modified": false
+  },
+  "authority_inputs": {
+    "source": {
+      "path": "docs/assets/reference/bloodaxe_cairnstone_asset/REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate.png",
+      "sha256": "4b953abb87f5f254a5f51c6214e76d3f72c4fc55bc2fa4e4d605b2440d6e53c2"
+    },
+    "a06_handoff": {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/VISUAL_CORRECTION_A05_VISUAL_REJECTION_A06_RESTART_HANDOFF.md",
+      "sha256": "bc52a06cb171086d9fc2db0b73ec089f59b1c00860a21408d8923fc4e69a82d3"
+    },
+    "a06_measurement_audit": {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/VISUAL_CORRECTION_A06_EXTERIOR_EDGE_AUDIT.json",
+      "sha256": "89539f3688af26d8b9410f01e927c9df17a8cb21b15c3c966178906332d49bdd"
+    },
+    "step11_rules": {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_11_TECHNICAL_RULE_REGISTRY.json",
+      "sha256": "27b63adc0fde2c0be61bb7b7785e01623fc321d18eda7d13cf06cd3f59024b96"
+    },
+    "step14_color": {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/STEP_14_BASE_COLOR_OWNERSHIP_MANIFEST.json",
+      "sha256": "c04c44aba1a7efacb9a2fc2f3146c3705ed7b9a80801e3ee2ff6b9e08ec97970"
+    },
+    "a04_plinth_blend_reference": {
+      "path": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_DCCGameReady_VisualCorrection_A04.blend",
+      "sha256": "e399a5c34455a70a55ca3084972544dd8bf007930bf1bb05c041fcef169e4caf"
+    },
+    "a04_manifest_reference": {
+      "path": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_VISUAL_CORRECTION_A04_MANIFEST.json",
+      "sha256": "30416d9c336e70f1ad25aadb32158c35ad2e6f33cdf32bd3476f9b9a80ab8c65"
+    },
+    "a04_plinth_visual_reference": {
+      "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A04/SM_GIA_BloodAxeCairnstone_A005_FINAL_CORRECTED_3D_A04.png",
+      "sha256": "e2e62ac9a7a8ad17aa56200c6e3d2f155927498c0068cb345af45b51dd53aff1"
+    }
+  },
+  "construction": {
+    "overall_bounds_cm": [140.0, 110.0, 220.0],
+    "pivot_cm": [0.0, 0.0, 0.0],
+    "C001": {
+      "role": "exact A04 plinth visual construction",
+      "preserve": true,
+      "base_geometry_used": false
+    },
+    "C002": {
+      "role": "upper exterior-measured oval masonry course",
+      "maximum_footprint_cm": [123.846154, 92.707424],
+      "visible_height_cm": 9.5,
+      "block_count": 17,
+      "oval_exponent": 2.0
+    },
+    "C003": {
+      "role": "larger lower exterior-measured oval masonry course",
+      "maximum_footprint_cm": [137.307692, 105.196507],
+      "visible_height_cm": 15.0,
+      "block_count": 19,
+      "oval_exponent": 2.0
+    },
+    "C004": {
+      "role": "shallow oval peripheral rubble apron",
+      "maximum_footprint_cm": [140.0, 110.0],
+      "visible_height_cm": 10.5,
+      "block_count": 24,
+      "oval_exponent": 2.0
+    }
+  },
+  "uv_color": {
+    "source_owned_rgb_byte_exact": true,
+    "component_local_top_routing": true,
+    "component_local_vertical_routing": true,
+    "color_grading": false,
+    "geometry_before_uv_evaluation": true
+  },
+  "outputs": {
+    "a06_only_paths": true,
+    "blender": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_DCCGameReady_VisualCorrection_A06.blend",
+    "texture_root": "SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/VisualCorrection_A06",
+    "export_root": "SourceAssets/Exports/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/VisualCorrection_A06",
+    "review_root": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A06"
+  },
+  "unreal_authorized": false,
+  "fully_game_ready": false
+}

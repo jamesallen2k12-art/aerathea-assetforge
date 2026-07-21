@@ -1,12 +1,39 @@
 # SM_GIA_BloodAxeCairnstone_A005 Artifact Index
 
-Status: A05 visually rejected and quarantined; A06 exterior-edge remeasurement pending resume
+Status: A06 DCC game-ready candidate complete; Flamestrike visual approval pending
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-21
 
-## Active A05 Rejection / A06 Recovery Boundary
+## Active A06 Exterior-Corrected Candidate
+
+The A06 measurement gate separates actual component exterior limits from the invalid A05 alignment/contact spans. A06 preserves the exact A04 plinth, rebuilds the two structural oval base pieces at `123.846154 x 92.707424 cm` and `137.307692 x 105.196507 cm`, and passes the complete `18/18` audit. The package is a `candidate` / `DCC game-ready candidate` pending Flamestrike visual approval.
+
+| Artifact | Status | Role |
+|---|---|---|
+| steps/VISUAL_CORRECTION_A06_MEASUREMENT_GATE.md | authoritative measurement record | Records the exact exterior-edge decision and corrected footprints. |
+| manifests/VISUAL_CORRECTION_A06_EXTERIOR_EDGE_AUDIT.json | authoritative measurement record | Preserves source hashes, exact edge marks, ratios, and no-interpretation controls. |
+| steps/VISUAL_CORRECTION_A06_CONTRACT.md | authoritative execution boundary | Locks the A06-only correction, gates, artifact firewall, and review stop. |
+| manifests/VISUAL_CORRECTION_A06_PLAN.json | authoritative execution plan | Locks inputs, dimensions, isolated outputs, and downstream exclusions. |
+| Tools/DCC/audit_bloodaxe_cairnstone_a005_a06_exterior_edges.py | proof-supporting measurement auditor | Replays source hashes, exact exterior marks, physical ratios, and the measurement-only board. |
+| Tools/DCC/build_bloodaxe_cairnstone_a005_visual_correction_a06.py | candidate builder | Produces the isolated A06 Blender, texture, LOD, collision, and FBX package. |
+| Tools/DCC/render_bloodaxe_cairnstone_a005_visual_correction_a06.py | proof-supporting renderer | Produces fixed-view diagnostics and the single eligible final A06 review image. |
+| Tools/DCC/audit_bloodaxe_cairnstone_a005_visual_correction_a06.py | proof-supporting independent auditor | Verifies 18 authority, geometry, footprint, exact-plinth, texture, package, render, and firewall gates. |
+| SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_DCCGameReady_VisualCorrection_A06.blend | candidate | Audited Blender source; SHA-256 `b88a6398eba9d5fbf38cb27d8b9173ce5587ac06dfe3c44b578f48fb8e94c64a`. |
+| SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_VISUAL_CORRECTION_A06_MANIFEST.json | candidate sidecar | Records exact package hashes, counts, bounds, construction, and preservation. |
+| SourceAssets/Textures/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/VisualCorrection_A06/ | candidate | Base Color, Normal, and ORM package; source-owned RGB mismatch count `0`. |
+| SourceAssets/Exports/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/VisualCorrection_A06/ | candidate | LOD0-LOD3 FBXs; clean re-import `4/4`. |
+| manifests/VISUAL_CORRECTION_A06_VALIDATION.json | proof only | Independent `18/18` validation and downstream firewall record. |
+| steps/VISUAL_CORRECTION_A06_OUTPUT_RECORD.md | authoritative technical result record | Records the bounded candidate result, hashes, attempt disposition, and stop boundary. |
+| review/VISUAL_CORRECTION_A06_FINAL_REVIEW.md | candidate review record | Identifies the exact final image and requested Flamestrike visual decision. |
+| Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A06/ | proof only; local-only | Measurement board, internal attempt, fixed-view proofs, final image, and render audit. |
+
+Final image SHA-256: `3173234aa89c5ada67919e5d0dfbe318cc369a76199df02097784b5ac92ef578`.
+
+Unreal, Step 17, `Fully game-ready`, approved-library, and visual-canon promotion remain zero.
+
+## Superseded A05 Rejection / A06 Recovery Boundary
 
 Flamestrike rejected A05 after visible review. The geometry is closer and the
 stonework appearance better, but A05's two structural base dimensions were

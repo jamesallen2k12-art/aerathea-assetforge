@@ -1,0 +1,650 @@
+{
+  "schema": "aerathea.a005_visual_correction_a06_validation.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-VISUAL-CORRECTION-A06",
+  "date": "2026-07-21",
+  "status": "pass_candidate_pending_flamestrike_visual_review",
+  "artifact_classification": "proof only",
+  "pipeline_status": "DCC game-ready candidate",
+  "fully_game_ready": false,
+  "unreal_outputs": 0,
+  "candidate": {
+    "manifest": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_VISUAL_CORRECTION_A06_MANIFEST.json",
+    "manifest_sha256": "86c6d75f9eedb21dfc54072af7fb70a42495e4f4d91dca63d5d00595583b2de1"
+  },
+  "final_review_image": {
+    "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A06/SM_GIA_BloodAxeCairnstone_A005_FINAL_CORRECTED_3D_A06.png",
+    "sha256": "3173234aa89c5ada67919e5d0dfbe318cc369a76199df02097784b5ac92ef578",
+    "visual_gate": "pending Flamestrike"
+  },
+  "gates": [
+    {
+      "id": "G01_authority_hashes",
+      "status": "pass",
+      "detail": {
+        "source": {
+          "expected": "4b953abb87f5f254a5f51c6214e76d3f72c4fc55bc2fa4e4d605b2440d6e53c2",
+          "actual": "4b953abb87f5f254a5f51c6214e76d3f72c4fc55bc2fa4e4d605b2440d6e53c2",
+          "pass": true
+        },
+        "a06_handoff": {
+          "expected": "bc52a06cb171086d9fc2db0b73ec089f59b1c00860a21408d8923fc4e69a82d3",
+          "actual": "bc52a06cb171086d9fc2db0b73ec089f59b1c00860a21408d8923fc4e69a82d3",
+          "pass": true
+        },
+        "a06_measurement_audit": {
+          "expected": "89539f3688af26d8b9410f01e927c9df17a8cb21b15c3c966178906332d49bdd",
+          "actual": "89539f3688af26d8b9410f01e927c9df17a8cb21b15c3c966178906332d49bdd",
+          "pass": true
+        },
+        "step11_rules": {
+          "expected": "27b63adc0fde2c0be61bb7b7785e01623fc321d18eda7d13cf06cd3f59024b96",
+          "actual": "27b63adc0fde2c0be61bb7b7785e01623fc321d18eda7d13cf06cd3f59024b96",
+          "pass": true
+        },
+        "step14_color": {
+          "expected": "c04c44aba1a7efacb9a2fc2f3146c3705ed7b9a80801e3ee2ff6b9e08ec97970",
+          "actual": "c04c44aba1a7efacb9a2fc2f3146c3705ed7b9a80801e3ee2ff6b9e08ec97970",
+          "pass": true
+        },
+        "a04_plinth_blend_reference": {
+          "expected": "e399a5c34455a70a55ca3084972544dd8bf007930bf1bb05c041fcef169e4caf",
+          "actual": "e399a5c34455a70a55ca3084972544dd8bf007930bf1bb05c041fcef169e4caf",
+          "pass": true
+        },
+        "a04_manifest_reference": {
+          "expected": "30416d9c336e70f1ad25aadb32158c35ad2e6f33cdf32bd3476f9b9a80ab8c65",
+          "actual": "30416d9c336e70f1ad25aadb32158c35ad2e6f33cdf32bd3476f9b9a80ab8c65",
+          "pass": true
+        },
+        "a04_plinth_visual_reference": {
+          "expected": "e2e62ac9a7a8ad17aa56200c6e3d2f155927498c0068cb345af45b51dd53aff1",
+          "actual": "e2e62ac9a7a8ad17aa56200c6e3d2f155927498c0068cb345af45b51dd53aff1",
+          "pass": true
+        }
+      }
+    },
+    {
+      "id": "G02_contract_and_classification",
+      "status": "pass",
+      "detail": {
+        "contract": "A005-CR-VISUAL-CORRECTION-A06",
+        "classification": "candidate"
+      }
+    },
+    {
+      "id": "G03_lods_and_budget",
+      "status": "pass",
+      "detail": {
+        "LOD0": {
+          "triangles": 8704,
+          "bounds": {
+            "min": [
+              -70.0,
+              -55.0,
+              0.0
+            ],
+            "max": [
+              70.0,
+              55.0,
+              220.0
+            ],
+            "dimensions": [
+              140.0,
+              110.0,
+              220.0
+            ]
+          },
+          "uv_layers": [
+            "UVMap",
+            "LightmapUV"
+          ],
+          "materials": 1
+        },
+        "LOD1": {
+          "triangles": 4002,
+          "bounds": {
+            "min": [
+              -70.0,
+              -55.0,
+              0.0
+            ],
+            "max": [
+              70.0,
+              55.0,
+              220.0
+            ],
+            "dimensions": [
+              140.0,
+              110.0,
+              220.0
+            ]
+          },
+          "uv_layers": [
+            "UVMap",
+            "LightmapUV"
+          ],
+          "materials": 1
+        },
+        "LOD2": {
+          "triangles": 1826,
+          "bounds": {
+            "min": [
+              -70.0,
+              -55.0,
+              0.0
+            ],
+            "max": [
+              70.0,
+              55.0,
+              220.0
+            ],
+            "dimensions": [
+              140.0,
+              110.0,
+              220.0
+            ]
+          },
+          "uv_layers": [
+            "UVMap",
+            "LightmapUV"
+          ],
+          "materials": 1
+        },
+        "LOD3": {
+          "triangles": 696,
+          "bounds": {
+            "min": [
+              -70.0,
+              -55.0,
+              0.0
+            ],
+            "max": [
+              70.0,
+              55.0,
+              220.0
+            ],
+            "dimensions": [
+              140.0,
+              110.0,
+              220.0
+            ]
+          },
+          "uv_layers": [
+            "UVMap",
+            "LightmapUV"
+          ],
+          "materials": 1
+        }
+      }
+    },
+    {
+      "id": "G04_bounds_and_pivot",
+      "status": "pass",
+      "detail": {
+        "LOD0": {
+          "min": [
+            -70.0,
+            -55.0,
+            0.0
+          ],
+          "max": [
+            70.0,
+            55.0,
+            220.0
+          ],
+          "dimensions": [
+            140.0,
+            110.0,
+            220.0
+          ]
+        },
+        "LOD1": {
+          "min": [
+            -70.0,
+            -55.0,
+            0.0
+          ],
+          "max": [
+            70.0,
+            55.0,
+            220.0
+          ],
+          "dimensions": [
+            140.0,
+            110.0,
+            220.0
+          ]
+        },
+        "LOD2": {
+          "min": [
+            -70.0,
+            -55.0,
+            0.0
+          ],
+          "max": [
+            70.0,
+            55.0,
+            220.0
+          ],
+          "dimensions": [
+            140.0,
+            110.0,
+            220.0
+          ]
+        },
+        "LOD3": {
+          "min": [
+            -70.0,
+            -55.0,
+            0.0
+          ],
+          "max": [
+            70.0,
+            55.0,
+            220.0
+          ],
+          "dimensions": [
+            140.0,
+            110.0,
+            220.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "G05_four_closed_primary_shells",
+      "status": "pass",
+      "detail": {
+        "components": 4,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0
+      }
+    },
+    {
+      "id": "G06_measured_component_footprints",
+      "status": "pass",
+      "detail": {
+        "C001_plinth": {
+          "vertices": 2578,
+          "min": [
+            -54.0,
+            -39.0,
+            34.0
+          ],
+          "max": [
+            54.0,
+            39.0,
+            220.0
+          ],
+          "dimensions": [
+            108.0,
+            78.0,
+            186.0
+          ]
+        },
+        "C002_upper": {
+          "vertices": 614,
+          "min": [
+            -61.92307662963867,
+            -46.35371017456055,
+            24.577829360961914
+          ],
+          "max": [
+            61.92308044433594,
+            46.35371398925781,
+            34.721290588378906
+          ],
+          "dimensions": [
+            123.84615707397461,
+            92.70742416381836,
+            10.143461227416992
+          ]
+        },
+        "C003_lower": {
+          "vertices": 686,
+          "min": [
+            -68.65384674072266,
+            -52.5982551574707,
+            9.493017196655273
+          ],
+          "max": [
+            68.65383911132812,
+            52.59825134277344,
+            25.248523712158203
+          ],
+          "dimensions": [
+            137.30768585205078,
+            105.19650650024414,
+            15.75550651550293
+          ]
+        },
+        "C004_apron": {
+          "vertices": 482,
+          "min": [
+            -70.0,
+            -55.0,
+            0.0
+          ],
+          "max": [
+            70.0,
+            55.0,
+            9.942510604858398
+          ],
+          "dimensions": [
+            140.0,
+            110.0,
+            9.942510604858398
+          ]
+        }
+      }
+    },
+    {
+      "id": "G07_n2_oval_containment",
+      "status": "pass",
+      "detail": {
+        "C002": {
+          "maximum_normalized_n2": 1.0000001112456358,
+          "pass": true
+        },
+        "C003": {
+          "maximum_normalized_n2": 1.0000000630237933,
+          "pass": true
+        },
+        "C004": {
+          "maximum_normalized_n2": 1.0,
+          "pass": true
+        }
+      }
+    },
+    {
+      "id": "G08_exact_A04_plinth_geometry_and_uv",
+      "status": "pass",
+      "detail": {
+        "A04": {
+          "vertex_count": 2578,
+          "face_count": 5152,
+          "minimum": [
+            -54.0,
+            -39.0,
+            34.0
+          ],
+          "maximum": [
+            54.0,
+            39.0,
+            220.0
+          ],
+          "vertices_sha256": "6476789e161be9153f0ce6b942267f7329a5bb6d7483e822938cd162a3b937d3",
+          "faces_sha256": "8548696c874fa2b7e0c79d66b3be126a92405e286a140e20269376d9032e0e95",
+          "geometry_sha256": "54ceeba198e8563ea9f92beb0dbdd8f6b22e0ea38fb99591ed0f3b435cc37721",
+          "uv_sha256": "5633bc68f1a29728764b283fb7b84b6df0d6bc3ec79892a35b6096304298104b"
+        },
+        "A06": {
+          "vertex_count": 2578,
+          "face_count": 5152,
+          "minimum": [
+            -54.0,
+            -39.0,
+            34.0
+          ],
+          "maximum": [
+            54.0,
+            39.0,
+            220.0
+          ],
+          "vertices_sha256": "6476789e161be9153f0ce6b942267f7329a5bb6d7483e822938cd162a3b937d3",
+          "faces_sha256": "8548696c874fa2b7e0c79d66b3be126a92405e286a140e20269376d9032e0e95",
+          "geometry_sha256": "54ceeba198e8563ea9f92beb0dbdd8f6b22e0ea38fb99591ed0f3b435cc37721",
+          "uv_sha256": "5633bc68f1a29728764b283fb7b84b6df0d6bc3ec79892a35b6096304298104b"
+        }
+      }
+    },
+    {
+      "id": "G09_material_and_uv",
+      "status": "pass",
+      "detail": {
+        "lods": {
+          "LOD0": {
+            "materials": 1,
+            "uv_layers": [
+              "UVMap",
+              "LightmapUV"
+            ]
+          },
+          "LOD1": {
+            "materials": 1,
+            "uv_layers": [
+              "UVMap",
+              "LightmapUV"
+            ]
+          },
+          "LOD2": {
+            "materials": 1,
+            "uv_layers": [
+              "UVMap",
+              "LightmapUV"
+            ]
+          },
+          "LOD3": {
+            "materials": 1,
+            "uv_layers": [
+              "UVMap",
+              "LightmapUV"
+            ]
+          }
+        },
+        "material_nodes": [
+          "A06_DIRECTX_NORMAL",
+          "A06_DIRECT_SOURCE_BASECOLOR",
+          "A06_ORM_NONMETALLIC",
+          "Combine RGB",
+          "Material Output",
+          "Math",
+          "Normal Map",
+          "Principled BSDF",
+          "Separate RGB",
+          "Separate RGB.001"
+        ]
+      }
+    },
+    {
+      "id": "G10_collision_set",
+      "status": "pass",
+      "detail": [
+        "UCX_SM_GIA_BloodAxeCairnstone_A005_00",
+        "UCX_SM_GIA_BloodAxeCairnstone_A005_01",
+        "UCX_SM_GIA_BloodAxeCairnstone_A005_02",
+        "UCX_SM_GIA_BloodAxeCairnstone_A005_03"
+      ]
+    },
+    {
+      "id": "G11_fbx_hashes",
+      "status": "pass",
+      "detail": {
+        "LOD0": {
+          "actual": "e80bc6b25dea0d0c6218562896e3f6f19fc7fd848816f1e0ed01418c6fd494c8",
+          "expected": "e80bc6b25dea0d0c6218562896e3f6f19fc7fd848816f1e0ed01418c6fd494c8"
+        },
+        "LOD1": {
+          "actual": "d305039d9b0fb7c33fd37176ba0a0be5ea0cddfbe816d01c51e422ef53e62325",
+          "expected": "d305039d9b0fb7c33fd37176ba0a0be5ea0cddfbe816d01c51e422ef53e62325"
+        },
+        "LOD2": {
+          "actual": "e1a30ccc3d608bbd76378a6fb48109fdcadb928743288035d35e2facf95f77d3",
+          "expected": "e1a30ccc3d608bbd76378a6fb48109fdcadb928743288035d35e2facf95f77d3"
+        },
+        "LOD3": {
+          "actual": "d948d97a4be2502fbc84c0604c7d2964eb13c357e4339a4869b940370d909f85",
+          "expected": "d948d97a4be2502fbc84c0604c7d2964eb13c357e4339a4869b940370d909f85"
+        }
+      }
+    },
+    {
+      "id": "G12_clean_fbx_reimport",
+      "status": "pass",
+      "detail": {
+        "LOD0": {
+          "mesh_objects": 5,
+          "primary_objects": 1,
+          "primary_triangles": 8704,
+          "expected_triangles": 8704,
+          "pass": true
+        },
+        "LOD1": {
+          "mesh_objects": 1,
+          "primary_objects": 1,
+          "primary_triangles": 4002,
+          "expected_triangles": 4002,
+          "pass": true
+        },
+        "LOD2": {
+          "mesh_objects": 1,
+          "primary_objects": 1,
+          "primary_triangles": 1826,
+          "expected_triangles": 1826,
+          "pass": true
+        },
+        "LOD3": {
+          "mesh_objects": 1,
+          "primary_objects": 1,
+          "primary_triangles": 696,
+          "expected_triangles": 696,
+          "pass": true
+        }
+      }
+    },
+    {
+      "id": "G13_source_owned_rgb_exact",
+      "status": "pass",
+      "detail": {
+        "atlas": {
+          "pixels_compared": 154948,
+          "mismatches": 0,
+          "by_view": {
+            "front": {
+              "pixels_compared": 60761,
+              "mismatches": 0
+            },
+            "back": {
+              "pixels_compared": 39241,
+              "mismatches": 0
+            },
+            "left": {
+              "pixels_compared": 20938,
+              "mismatches": 0
+            },
+            "right": {
+              "pixels_compared": 16516,
+              "mismatches": 0
+            },
+            "top": {
+              "pixels_compared": 17492,
+              "mismatches": 0
+            }
+          }
+        },
+        "measurement_status": "pass_authoritative_exterior_edge_measurement"
+      }
+    },
+    {
+      "id": "G14_A04_references_preserved",
+      "status": "pass",
+      "detail": {
+        "A04_blend": {
+          "path": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_DCCGameReady_VisualCorrection_A04.blend",
+          "sha256_before": "e399a5c34455a70a55ca3084972544dd8bf007930bf1bb05c041fcef169e4caf",
+          "sha256_after": "e399a5c34455a70a55ca3084972544dd8bf007930bf1bb05c041fcef169e4caf",
+          "pass": true
+        },
+        "A04_manifest": {
+          "path": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_VISUAL_CORRECTION_A04_MANIFEST.json",
+          "sha256_before": "30416d9c336e70f1ad25aadb32158c35ad2e6f33cdf32bd3476f9b9a80ab8c65",
+          "sha256_after": "30416d9c336e70f1ad25aadb32158c35ad2e6f33cdf32bd3476f9b9a80ab8c65",
+          "pass": true
+        },
+        "A04_final": {
+          "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A04/SM_GIA_BloodAxeCairnstone_A005_FINAL_CORRECTED_3D_A04.png",
+          "sha256_before": "e2e62ac9a7a8ad17aa56200c6e3d2f155927498c0068cb345af45b51dd53aff1",
+          "sha256_after": "e2e62ac9a7a8ad17aa56200c6e3d2f155927498c0068cb345af45b51dd53aff1",
+          "pass": true
+        }
+      }
+    },
+    {
+      "id": "G15_unreal_firewall",
+      "status": "pass",
+      "detail": {
+        "unreal_outputs": 0,
+        "fully_game_ready": false,
+        "unreal_authorized": false
+      }
+    },
+    {
+      "id": "G16_projection_oval_base_hierarchy",
+      "status": "pass",
+      "detail": {
+        "plinth": {
+          "z_cm": 37,
+          "row": 811,
+          "width_px": 398
+        },
+        "upper": {
+          "z_cm": 29,
+          "row": 844,
+          "width_px": 494
+        },
+        "lower": {
+          "z_cm": 17,
+          "row": 893,
+          "width_px": 549
+        },
+        "apron": {
+          "z_cm": 5,
+          "row": 942,
+          "width_px": 558
+        }
+      }
+    },
+    {
+      "id": "G17_final_review_integrity",
+      "status": "pass",
+      "detail": {
+        "size": [
+          1400,
+          1600
+        ],
+        "margins": {
+          "left": 357,
+          "top": 161,
+          "right": 347,
+          "bottom": 181
+        },
+        "review_markers": 0,
+        "collision_visible": 0,
+        "bright_fringe_fraction": 0.0
+      }
+    },
+    {
+      "id": "G18_displayed_stone_color",
+      "status": "pass",
+      "detail": {
+        "source": [
+          52,
+          49,
+          46
+        ],
+        "final": [
+          48,
+          45,
+          42
+        ],
+        "rgb_distance": 6.928203230275509
+      }
+    }
+  ],
+  "gate_summary": {
+    "passed": 18,
+    "total": 18
+  }
+}

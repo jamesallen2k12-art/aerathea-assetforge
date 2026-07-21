@@ -6661,3 +6661,53 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260721-080648/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260721-080648/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 08:16:41 EDT -0400 - before A005 A06 exterior-edge measurement-only audit
+
+- Snapshot: `Saved/ProjectRecovery/20260721-081641/`
+- Git: branch `main`, HEAD `5adccb0`, status lines `254`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-081641/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-081641/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-081641/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 08:25:54 EDT -0400 - A005 A06 exterior-edge measurement gate passed before geometry build
+
+- Snapshot: `Saved/ProjectRecovery/20260721-082554/`
+- Git: branch `main`, HEAD `5adccb0`, status lines `258`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-082554/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-082554/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-082554/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 08:29:53 EDT -0400 - A005 A06 geometry build complete and Attempt01 visually accepted before independent audit
+
+- Snapshot: `Saved/ProjectRecovery/20260721-082953/`
+- Git: branch `main`, HEAD `5adccb0`, status lines `267`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-082953/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-082953/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-082953/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 08:30:15 EDT -0400 - A005 A06 technical audit 15 of 15 passed before final render
+
+- Snapshot: `Saved/ProjectRecovery/20260721-083015/`
+- Git: branch `main`, HEAD `5adccb0`, status lines `268`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-083015/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-083015/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-083015/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-21 08:33:42 EDT -0400 - A005 A06 final 18 of 18 candidate opened for Flamestrike visual approval
+
+- Snapshot: `Saved/ProjectRecovery/20260721-083342/`
+- Git: branch `main`, HEAD `5adccb0`, status lines `273`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260721-083342/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260721-083342/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260721-083342/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

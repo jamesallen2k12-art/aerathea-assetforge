@@ -1,0 +1,495 @@
+{
+  "schema": "aerathea.visual_correction_a06_exterior_edge_audit.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "audit_id": "A005-CR-VISUAL-CORRECTION-A06-EXTERIOR-EDGE-A01",
+  "date": "2026-07-21",
+  "status": "pass_authoritative_exterior_edge_measurement",
+  "artifact_classification": "authoritative measurement record",
+  "decision": "authoritative exterior-edge measurement record ready for A06 contract",
+  "authority": {
+    "handoff": "steps/VISUAL_CORRECTION_A05_VISUAL_REJECTION_A06_RESTART_HANDOFF.md",
+    "flamestrike_authority": "full approval and authority to continue correcting the base geometry and present the completed image",
+    "source_panels": {
+      "front": {
+        "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_FRONT.png",
+        "expected_sha256": "262071198bc0d409e9b68af5ac4f3c6a4768a90b1fd199342035a8a82342c2c5",
+        "actual_sha256": "262071198bc0d409e9b68af5ac4f3c6a4768a90b1fd199342035a8a82342c2c5",
+        "hash_match": true,
+        "size_px": [
+          483,
+          525
+        ]
+      },
+      "left": {
+        "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_LEFT.png",
+        "expected_sha256": "52212ba783d026a008929e3946cac934281de7d2daec2ada316205059258cba4",
+        "actual_sha256": "52212ba783d026a008929e3946cac934281de7d2daec2ada316205059258cba4",
+        "hash_match": true,
+        "size_px": [
+          484,
+          401
+        ]
+      },
+      "top": {
+        "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/panels/STEP_03/SM_GIA_BloodAxeCairnstone_A005_STEP_03_TOP.png",
+        "expected_sha256": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf",
+        "actual_sha256": "1bc9750b903a3d9e5689bee3c2c1c7094ccd554c361ff622aa9065d2c5287fdf",
+        "hash_match": true,
+        "size_px": [
+          337,
+          371
+        ]
+      }
+    },
+    "approved_overall_footprint_cm": [
+      140,
+      110
+    ]
+  },
+  "controls": {
+    "alignment_contact_spans_used_as_outer_dimensions": false,
+    "geometry_created": false,
+    "candidate_fill_created": false,
+    "inferred_overlay_created": false,
+    "closed_contour_created": false,
+    "curve_or_oval_fit_created": false,
+    "source_modified": false,
+    "color_grading_performed": false
+  },
+  "top_exterior_edge_records": {
+    "C002": {
+      "classification": "visible component exterior edge over lower course",
+      "x": {
+        "negative": {
+          "pixel_local": [
+            48,
+            160
+          ],
+          "source_rgb": [
+            112,
+            101,
+            92
+          ]
+        },
+        "positive": {
+          "pixel_local": [
+            232,
+            160
+          ],
+          "source_rgb": [
+            76,
+            36,
+            27
+          ]
+        },
+        "span_px": 184
+      },
+      "y": {
+        "positive": {
+          "pixel_local": [
+            140,
+            52
+          ],
+          "source_rgb": [
+            58,
+            55,
+            49
+          ]
+        },
+        "negative": {
+          "pixel_local": [
+            140,
+            245
+          ],
+          "source_rgb": [
+            6,
+            1,
+            2
+          ]
+        },
+        "span_px": 193
+      },
+      "closed_contour_created": false,
+      "filled_region_created": false,
+      "curve_fit_created": false
+    },
+    "C003": {
+      "classification": "visible component exterior edge over peripheral apron",
+      "x": {
+        "negative": {
+          "pixel_local": [
+            35,
+            160
+          ],
+          "source_rgb": [
+            44,
+            32,
+            28
+          ]
+        },
+        "positive": {
+          "pixel_local": [
+            239,
+            160
+          ],
+          "source_rgb": [
+            162,
+            162,
+            168
+          ]
+        },
+        "span_px": 204
+      },
+      "y": {
+        "positive": {
+          "pixel_local": [
+            140,
+            38
+          ],
+          "source_rgb": [
+            44,
+            35,
+            39
+          ]
+        },
+        "negative": {
+          "pixel_local": [
+            140,
+            257
+          ],
+          "source_rgb": [
+            21,
+            20,
+            16
+          ]
+        },
+        "span_px": 219
+      },
+      "closed_contour_created": false,
+      "filled_region_created": false,
+      "curve_fit_created": false
+    },
+    "C004": {
+      "classification": "visible outer silhouette against source paper",
+      "x": {
+        "negative": {
+          "pixel_local": [
+            31,
+            160
+          ],
+          "source_rgb": [
+            63,
+            51,
+            48
+          ]
+        },
+        "positive": {
+          "pixel_local": [
+            239,
+            160
+          ],
+          "source_rgb": [
+            162,
+            162,
+            168
+          ]
+        },
+        "span_px": 208
+      },
+      "y": {
+        "positive": {
+          "pixel_local": [
+            140,
+            31
+          ],
+          "source_rgb": [
+            8,
+            3,
+            3
+          ]
+        },
+        "negative": {
+          "pixel_local": [
+            140,
+            260
+          ],
+          "source_rgb": [
+            245,
+            244,
+            245
+          ]
+        },
+        "span_px": 229
+      },
+      "closed_contour_created": false,
+      "filled_region_created": false,
+      "curve_fit_created": false
+    }
+  },
+  "owner_view_crosschecks": {
+    "front": {
+      "C002": [
+        {
+          "row": 345,
+          "left": 135,
+          "right_exclusive": 366,
+          "span_px": 231,
+          "left_rgb": [
+            156,
+            158,
+            155
+          ],
+          "right_rgb": [
+            179,
+            177,
+            177
+          ],
+          "classification": "visible exterior silhouette row; cross-check only"
+        },
+        {
+          "row": 355,
+          "left": 134,
+          "right_exclusive": 366,
+          "span_px": 232,
+          "left_rgb": [
+            143,
+            144,
+            141
+          ],
+          "right_rgb": [
+            21,
+            21,
+            20
+          ],
+          "classification": "visible exterior silhouette row; cross-check only"
+        },
+        {
+          "row": 360,
+          "left": 127,
+          "right_exclusive": 372,
+          "span_px": 245,
+          "left_rgb": [
+            175,
+            177,
+            173
+          ],
+          "right_rgb": [
+            144,
+            143,
+            144
+          ],
+          "classification": "visible exterior silhouette row; cross-check only"
+        }
+      ],
+      "C003": [
+        {
+          "row": 375,
+          "left": 120,
+          "right_exclusive": 381,
+          "span_px": 261,
+          "left_rgb": [
+            57,
+            58,
+            52
+          ],
+          "right_rgb": [
+            162,
+            164,
+            167
+          ],
+          "classification": "visible exterior silhouette row; cross-check only"
+        },
+        {
+          "row": 385,
+          "left": 115,
+          "right_exclusive": 388,
+          "span_px": 273,
+          "left_rgb": [
+            137,
+            131,
+            128
+          ],
+          "right_rgb": [
+            175,
+            176,
+            179
+          ],
+          "classification": "visible exterior silhouette row; cross-check only"
+        },
+        {
+          "row": 390,
+          "left": 111,
+          "right_exclusive": 388,
+          "span_px": 277,
+          "left_rgb": [
+            149,
+            147,
+            144
+          ],
+          "right_rgb": [
+            84,
+            86,
+            84
+          ],
+          "classification": "visible exterior silhouette row; cross-check only"
+        }
+      ]
+    },
+    "left": {
+      "C002": [
+        {
+          "row": 240,
+          "left": 154,
+          "right_exclusive": 306,
+          "span_px": 152,
+          "left_rgb": [
+            130,
+            128,
+            123
+          ],
+          "right_rgb": [
+            104,
+            101,
+            101
+          ],
+          "classification": "visible exterior silhouette row; cross-check only"
+        },
+        {
+          "row": 250,
+          "left": 153,
+          "right_exclusive": 308,
+          "span_px": 155,
+          "left_rgb": [
+            38,
+            32,
+            31
+          ],
+          "right_rgb": [
+            70,
+            69,
+            71
+          ],
+          "classification": "visible exterior silhouette row; cross-check only"
+        },
+        {
+          "row": 255,
+          "left": 152,
+          "right_exclusive": 308,
+          "span_px": 156,
+          "left_rgb": [
+            181,
+            185,
+            183
+          ],
+          "right_rgb": [
+            23,
+            22,
+            19
+          ],
+          "classification": "visible exterior silhouette row; cross-check only"
+        }
+      ],
+      "C003": [
+        {
+          "row": 265,
+          "left": 133,
+          "right_exclusive": 327,
+          "span_px": 194,
+          "left_rgb": [
+            120,
+            120,
+            117
+          ],
+          "right_rgb": [
+            177,
+            177,
+            178
+          ],
+          "classification": "visible exterior silhouette row; cross-check only"
+        },
+        {
+          "row": 275,
+          "left": 133,
+          "right_exclusive": 327,
+          "span_px": 194,
+          "left_rgb": [
+            50,
+            51,
+            47
+          ],
+          "right_rgb": [
+            95,
+            95,
+            95
+          ],
+          "classification": "visible exterior silhouette row; cross-check only"
+        },
+        {
+          "row": 280,
+          "left": 133,
+          "right_exclusive": 327,
+          "span_px": 194,
+          "left_rgb": [
+            96,
+            95,
+            94
+          ],
+          "right_rgb": [
+            117,
+            120,
+            118
+          ],
+          "classification": "visible exterior silhouette row; cross-check only"
+        }
+      ]
+    }
+  },
+  "derived_physical_footprints": {
+    "C002": {
+      "maximum_footprint_cm": [
+        {
+          "exact": "1610/13",
+          "decimal": 123.846154
+        },
+        {
+          "exact": "21230/229",
+          "decimal": 92.707424
+        }
+      ],
+      "formula": {
+        "width": "140 * 184 / 208",
+        "depth": "110 * 193 / 229"
+      },
+      "basis": "same-top-panel ratio of verified component exterior span to verified C004 outer silhouette span"
+    },
+    "C003": {
+      "maximum_footprint_cm": [
+        {
+          "exact": "1785/13",
+          "decimal": 137.307692
+        },
+        {
+          "exact": "24090/229",
+          "decimal": 105.196507
+        }
+      ],
+      "formula": {
+        "width": "140 * 204 / 208",
+        "depth": "110 * 219 / 229"
+      },
+      "basis": "same-top-panel ratio of verified component exterior span to verified C004 outer silhouette span"
+    }
+  },
+  "superseded_a05_footprints_cm": {
+    "C002": [
+      119.097222,
+      77.647059
+    ],
+    "C003": [
+      134.652778,
+      96.561086
+    ]
+  },
+  "review_board": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A06_Measurement/SM_GIA_BloodAxeCairnstone_A005_A06_EXTERIOR_EDGE_MEASUREMENT_ONLY_REVIEW.png",
+  "review_board_sha256": "fe7b716c2b028a751b7dc6e1f9b77b4f2b6d1c4c003689bbd3765b80914466a5"
+}
