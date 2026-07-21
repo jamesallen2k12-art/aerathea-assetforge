@@ -1,12 +1,45 @@
 # SM_GIA_BloodAxeCairnstone_A005 Reset / Resume State
 
-Status: A08 audited DCC game-ready candidate; Flamestrike visual decision pending
+Status: A09 candidate pending Flamestrike visual review
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-21
 
-## Active Resume Boundary - A08 Final Candidate / Visual Decision Pending
+## Active Resume Boundary - A09 Final Candidate / Visual Decision Pending
+
+Flamestrike rejected the exact A08 final image and approved
+`A005-CR-VISUAL-CORRECTION-A09`. The A09 package and final review candidate are
+now complete.
+
+- A08 visible defects: white background leaks, missing exposed-face detail,
+  disconnected C004 debris, and circular rather than irregular-ovoid ring read.
+- A08 package and renders: `reference only`; A08 validation: `proof only` for
+  its bounded technical checks.
+- Retained authority: unchanged source, exact A04 C001, A08 top measurement,
+  C002/C003 source-visible counts, C004 bounded count, and maximum extents.
+- Approved construction: fresh C002/C003/C004 modules; shared origin and exact
+  named anchors; hidden interface receivers; source-conditioned irregular
+  ovoid contours; clustered C004 rubble; corrected exposed-face UV detail.
+- Required proof: module-only front/top images, assembled front/left/right/top,
+  and one source-oriented final perspective image; complete.
+- Independent audit: `20/20`; clean assembled/module FBX re-import: `8/8`.
+- LOD triangles: `9020 / 4148 / 1894 / 696`.
+- Interface background leaks: `0 / 0 / 0` pixels.
+- Exact A04 C001 geometry and UV signatures: preserved.
+- Final review:
+  `Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A09/SM_GIA_BloodAxeCairnstone_A005_FINAL_CORRECTED_3D_A09.png`.
+- Final SHA-256:
+  `33106df764ebaedf25f6aa36e7a69ee88715aa9b62119d69ee41817df8875d0b`.
+- Output record: `steps/VISUAL_CORRECTION_A09_OUTPUT_RECORD.md`.
+- Review record: `review/VISUAL_CORRECTION_A09_FINAL_REVIEW.md`.
+- Final candidate checkpoint: `Saved/ProjectRecovery/20260721-104614/`.
+- Current stop: Flamestrike may approve, reject, or mark blocked only this
+  exact A09 review candidate.
+- Pre-recovery checkpoint: `Saved/ProjectRecovery/20260721-101044/`.
+- Unreal/Step 17 and `Fully game-ready` remain unauthorized and false.
+
+## Superseded Resume Boundary - A08 Final Candidate / Visual Rejection
 
 A08 is complete under `A005-CR-VISUAL-CORRECTION-A08` and passes the full
 independent audit.
@@ -27,8 +60,8 @@ independent audit.
   `6c58c364d3522f53b6c2011bf0c5fb09abba3bb44ee6d765be715c31b0dd52b4`.
 - Output record: `steps/VISUAL_CORRECTION_A08_OUTPUT_RECORD.md`.
 - Review record: `review/VISUAL_CORRECTION_A08_FINAL_REVIEW.md`.
-- Current stop: Flamestrike may approve, reject, or mark blocked only this
-  exact A08 review candidate.
+- Visual decision: `rejected`; exact A08 review candidate retained as
+  `reference only`.
 - Unreal/Step 17 and `Fully game-ready` remain unauthorized and false.
 
 ## Superseded Resume Boundary - A07 Rejection / A08 Fresh Restart

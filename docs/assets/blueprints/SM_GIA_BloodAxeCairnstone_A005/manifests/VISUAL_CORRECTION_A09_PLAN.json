@@ -1,0 +1,64 @@
+{
+  "schema": "aerathea.visual_correction_a09_plan.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-VISUAL-CORRECTION-A09",
+  "date": "2026-07-21",
+  "status": "completed_candidate_pending_flamestrike_visual_review",
+  "artifact_classification": "authoritative execution plan",
+  "flamestrike_authority": "approved the exact A09 modular-base recovery contract",
+  "source_authority": {
+    "path": "docs/assets/reference/bloodaxe_cairnstone_asset/REF_GIA_BloodAxeCairnstoneAsset_A02_BlueprintTemplate.png",
+    "sha256": "4b953abb87f5f254a5f51c6214e76d3f72c4fc55bc2fa4e4d605b2440d6e53c2",
+    "modified": false
+  },
+  "authority_inputs": {
+    "a09_handoff": {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/steps/VISUAL_CORRECTION_A08_VISUAL_REJECTION_A09_MODULAR_RECOVERY_HANDOFF.md",
+      "sha256": "da65875f9f1f279e7ed246d189afb228ad41c552cdef4112eda82a4dfaee141b"
+    },
+    "a08_rejection": {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/VISUAL_CORRECTION_A08_VISUAL_REJECTION.json",
+      "sha256": "f8b6610a498f049c08baf72c507e171433e0e7419b85efc3948e8ad7b3a86cc8"
+    },
+    "a08_measurement": {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/VISUAL_CORRECTION_A08_TOP_STONE_MEASUREMENT.json",
+      "sha256": "71f4787c7c5e39e27cfa39af652cbecf39eb819dd00a2c5a2bf5937f2e5e9c23"
+    },
+    "a06_exterior_edges": {
+      "path": "docs/assets/blueprints/SM_GIA_BloodAxeCairnstone_A005/manifests/VISUAL_CORRECTION_A06_EXTERIOR_EDGE_AUDIT.json",
+      "sha256": "89539f3688af26d8b9410f01e927c9df17a8cb21b15c3c966178906332d49bdd"
+    },
+    "a04_blend": {
+      "path": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_DCCGameReady_VisualCorrection_A04.blend",
+      "sha256": "e399a5c34455a70a55ca3084972544dd8bf007930bf1bb05c041fcef169e4caf"
+    },
+    "a04_manifest": {
+      "path": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_VISUAL_CORRECTION_A04_MANIFEST.json",
+      "sha256": "30416d9c336e70f1ad25aadb32158c35ad2e6f33cdf32bd3476f9b9a80ab8c65"
+    }
+  },
+  "modules": {
+    "C001": {"role": "locked monolith", "preserve_exact_A04": true},
+    "C002": {"role": "upper masonry course", "stone_count": 19, "outer_extent_cm": [123.846154, 92.707424]},
+    "C003": {"role": "lower masonry course", "stone_count": 24, "outer_extent_cm": [137.307692, 105.196507]},
+    "C004": {"role": "clustered rubble apron", "bounded_stone_count": 32, "outer_extent_cm": [140.0, 110.0]}
+  },
+  "anchors": ["SOCKET_A005_ROOT", "SOCKET_A005_C001", "SOCKET_A005_C002", "SOCKET_A005_C003", "SOCKET_A005_C004"],
+  "controls": {
+    "fresh_A09_course_geometry": true,
+    "A08_course_geometry_inputs": 0,
+    "shared_origin": [0.0, 0.0, 0.0],
+    "separate_module_exports": true,
+    "hidden_interface_receivers": true,
+    "background_leaks_allowed": 0,
+    "source_color_grading": false,
+    "unreal_authorized": false,
+    "fully_game_ready": false
+  },
+  "review": {
+    "module_proofs": ["C002_front", "C002_top", "C003_front", "C003_top", "C004_front", "C004_top"],
+    "assembled_fixed_proofs": ["front", "left", "right", "true_orthographic_top"],
+    "final": "one source-oriented perspective image opened visibly",
+    "artifact_status": "candidate pending Flamestrike visual approval"
+  }
+}

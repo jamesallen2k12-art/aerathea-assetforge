@@ -1,8 +1,8 @@
 # A005 Visual Correction A08 Final Review
 
-Status: `candidate pending Flamestrike visual approval`
+Status: `visually rejected; reference only`
 
-Artifact classification: `candidate review record`
+Artifact classification: `authoritative visual rejection record`
 
 Date: 2026-07-21
 
@@ -38,9 +38,11 @@ SHA-256:
 
 ## Approval Boundary
 
-Flamestrike may approve, reject, or mark blocked only the exact A08 review
-image identified above. Approval would accept this image and audited DCC
-package as the corrected `DCC game-ready candidate`.
+Flamestrike rejected the exact A08 review image after observing white geometry
+gaps, missing detail, a disconnected debris apron, and rings that read more
+circular than ovoid. A08 is retained as `reference only`; its technical audit
+remains `proof only` for the bounded checks it performed.
 
-It does not authorize Unreal/Step 17, `Fully game-ready`, approved-library,
-or visual-canon promotion.
+Flamestrike approved the A09 modular-base recovery contract. This does not
+authorize Unreal/Step 17, `Fully game-ready`, approved-library, or visual-canon
+promotion.

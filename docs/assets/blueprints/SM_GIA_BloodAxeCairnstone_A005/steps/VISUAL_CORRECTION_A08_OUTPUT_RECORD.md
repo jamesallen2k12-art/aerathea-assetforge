@@ -1,6 +1,6 @@
 # A005 Visual Correction A08 Output Record
 
-Status: `technical pass; visual decision pending`
+Status: `technical pass; visually rejected; superseded by A09`
 
 Artifact classification: `authoritative technical result record`
 
@@ -63,6 +63,7 @@ SHA-256:
 
 ## Stop Boundary
 
-Flamestrike may approve, reject, or mark blocked only the exact A08 final
-image. No Unreal, Step 17, `Fully game-ready`, approved-library, or
-visual-canon action is authorized.
+Flamestrike rejected the exact A08 final image. The package is retained as
+`reference only`; this record remains the authoritative historical technical
+result. A09 modular-base recovery is approved. No Unreal, Step 17, `Fully
+game-ready`, approved-library, or visual-canon action is authorized.

@@ -1,0 +1,90 @@
+{
+  "schema": "aerathea.visual_correction_a09_internal_attempt_log.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-VISUAL-CORRECTION-A09",
+  "date": "2026-07-21",
+  "attempts": [
+    {
+      "id": "Attempt01",
+      "status": "quarantined",
+      "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A09/InternalAttempts/Attempt01/A09_ATTEMPT.png",
+      "sha256": "c6826feddec7499eb7117b0533ce6c9be0aa75731a4c9ab1e9e227c2f1ad7336",
+      "rejection_reasons": [
+        "receiver caps rise above the individual stones and read as added smooth courses",
+        "the continuous receiver surfaces hide the C004 rubble silhouette",
+        "the base remains mechanically regular rather than source-conditioned"
+      ],
+      "artifact_classification": "quarantined internal proof"
+    },
+    {
+      "id": "Attempt02",
+      "status": "quarantined",
+      "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A09/InternalAttempts/Attempt02/A09_ATTEMPT.png",
+      "sha256": "e79069aad9fee1cae41827a4d6f9f0958ebfdbc4f7a780c2466bda7695e5594e",
+      "rejection_reasons": [
+        "C004 reads as a third brick course instead of a rubble apron",
+        "the debris remains too evenly spaced and visually detached",
+        "receiver exposure still dominates the base transition"
+      ],
+      "artifact_classification": "quarantined internal proof"
+    },
+    {
+      "id": "Attempt03",
+      "status": "quarantined",
+      "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A09/InternalAttempts/Attempt03/A09_ATTEMPT.png",
+      "sha256": "1d4cec913902a75a8da67c8e3fb86f8873e22951e2754c76431cb1c28ed2f937",
+      "rejection_reasons": [
+        "the lower receiver descends as a smooth skirt and suppresses the rubble",
+        "the base interfaces remain visually over-regular",
+        "the receiver-to-stone balance does not match the source"
+      ],
+      "artifact_classification": "quarantined internal proof"
+    },
+    {
+      "id": "Attempt04",
+      "status": "quarantined",
+      "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A09/InternalAttempts/Attempt04/A09_ATTEMPT.png",
+      "sha256": "17e723394eb71e073c37628f752baf779d9fa686384e1dbcfb621bc406a6a87b",
+      "rejection_reasons": [
+        "receiver vertical bands use flat authored gray and lose source stone detail",
+        "the base is geometrically improved but the exposed receiver treatment remains visible"
+      ],
+      "artifact_classification": "quarantined internal proof"
+    },
+    {
+      "id": "Attempt05",
+      "status": "quarantined",
+      "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A09/InternalAttempts/Attempt05/A09_ATTEMPT.png",
+      "sha256": "40bb6a3906aa5adca81cbe93a9654ca0af93d5e71ed2d44454bd0c79a51f51a2",
+      "rejection_reasons": [
+        "magnified alpha review finds background wedges at the three module contacts",
+        "the C003/C004 transition still exposes literal background between rubble stones"
+      ],
+      "artifact_classification": "quarantined internal proof"
+    },
+    {
+      "id": "Attempt06",
+      "status": "quarantined",
+      "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A09/InternalAttempts/Attempt06/A09_ATTEMPT.png",
+      "sha256": "0faa31e88c235293fa6c798c703d91521e6c075c99292441a96d5210deee48c6",
+      "rejection_reasons": [
+        "all module contacts close, but raised receiver top caps show as flat dark-gray annular bands",
+        "the visible caps replace stone detail with artificial horizontal surfaces"
+      ],
+      "artifact_classification": "quarantined internal proof"
+    },
+    {
+      "id": "Attempt07",
+      "status": "accepted_internal_visual_gate",
+      "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A09/InternalAttempts/Attempt07/A09_ATTEMPT.png",
+      "sha256": "33106df764ebaedf25f6aa36e7a69ee88715aa9b62119d69ee41817df8875d0b",
+      "acceptance_basis": [
+        "all three declared module-contact bands contain zero background pixels",
+        "open-top inset receiver collars remain hidden behind the stone silhouettes",
+        "C002, C003, and C004 top proofs retain their measured ovoid ratios",
+        "C004 reads as 32 irregular stones in two staggered rows rather than a third masonry course"
+      ],
+      "artifact_classification": "proof only"
+    }
+  ]
+}

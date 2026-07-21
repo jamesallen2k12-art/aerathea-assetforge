@@ -1,0 +1,899 @@
+{
+  "schema": "aerathea.a005_visual_correction_a09_validation.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "contract_id": "A005-CR-VISUAL-CORRECTION-A09",
+  "date": "2026-07-21",
+  "status": "pass_candidate_pending_flamestrike_visual_review",
+  "artifact_classification": "proof only",
+  "pipeline_status": "DCC game-ready candidate",
+  "fully_game_ready": false,
+  "unreal_outputs": 0,
+  "candidate": {
+    "manifest": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_VISUAL_CORRECTION_A09_MANIFEST.json",
+    "manifest_sha256": "cf4cbcbe890c01db1afd63412cafa1324f64ef5a9ad04b8bd64ea8db437d144f"
+  },
+  "final_review_image": {
+    "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A09/SM_GIA_BloodAxeCairnstone_A005_FINAL_CORRECTED_3D_A09.png",
+    "sha256": "33106df764ebaedf25f6aa36e7a69ee88715aa9b62119d69ee41817df8875d0b",
+    "visual_gate": "pending Flamestrike"
+  },
+  "gates": [
+    {
+      "id": "G01_authority_hashes",
+      "status": "pass",
+      "detail": {
+        "a09_handoff": {
+          "expected": "da65875f9f1f279e7ed246d189afb228ad41c552cdef4112eda82a4dfaee141b",
+          "actual": "da65875f9f1f279e7ed246d189afb228ad41c552cdef4112eda82a4dfaee141b",
+          "pass": true
+        },
+        "a08_rejection": {
+          "expected": "f8b6610a498f049c08baf72c507e171433e0e7419b85efc3948e8ad7b3a86cc8",
+          "actual": "f8b6610a498f049c08baf72c507e171433e0e7419b85efc3948e8ad7b3a86cc8",
+          "pass": true
+        },
+        "a08_measurement": {
+          "expected": "71f4787c7c5e39e27cfa39af652cbecf39eb819dd00a2c5a2bf5937f2e5e9c23",
+          "actual": "71f4787c7c5e39e27cfa39af652cbecf39eb819dd00a2c5a2bf5937f2e5e9c23",
+          "pass": true
+        },
+        "a06_exterior_edges": {
+          "expected": "89539f3688af26d8b9410f01e927c9df17a8cb21b15c3c966178906332d49bdd",
+          "actual": "89539f3688af26d8b9410f01e927c9df17a8cb21b15c3c966178906332d49bdd",
+          "pass": true
+        },
+        "a04_blend": {
+          "expected": "e399a5c34455a70a55ca3084972544dd8bf007930bf1bb05c041fcef169e4caf",
+          "actual": "e399a5c34455a70a55ca3084972544dd8bf007930bf1bb05c041fcef169e4caf",
+          "pass": true
+        },
+        "a04_manifest": {
+          "expected": "30416d9c336e70f1ad25aadb32158c35ad2e6f33cdf32bd3476f9b9a80ab8c65",
+          "actual": "30416d9c336e70f1ad25aadb32158c35ad2e6f33cdf32bd3476f9b9a80ab8c65",
+          "pass": true
+        },
+        "source_authority": {
+          "expected": "4b953abb87f5f254a5f51c6214e76d3f72c4fc55bc2fa4e4d605b2440d6e53c2",
+          "actual": "4b953abb87f5f254a5f51c6214e76d3f72c4fc55bc2fa4e4d605b2440d6e53c2",
+          "pass": true
+        }
+      }
+    },
+    {
+      "id": "G02_contract_and_scope",
+      "status": "pass",
+      "detail": {
+        "manifest_contract": "A005-CR-VISUAL-CORRECTION-A09",
+        "classification": "candidate",
+        "A08_course_geometry_inputs": 0,
+        "fresh_A09_course_geometry": true
+      }
+    },
+    {
+      "id": "G03_lods_and_budget",
+      "status": "pass",
+      "detail": {
+        "triangles": [
+          9020,
+          4148,
+          1894,
+          696
+        ],
+        "target_range_LOD0": [
+          4000,
+          10000
+        ]
+      }
+    },
+    {
+      "id": "G04_bounds_and_pivot",
+      "status": "pass",
+      "detail": {
+        "LOD0": {
+          "min": [
+            -70.0,
+            -55.0,
+            0.0
+          ],
+          "max": [
+            70.0,
+            55.0,
+            220.0
+          ],
+          "dimensions": [
+            140.0,
+            110.0,
+            220.0
+          ]
+        },
+        "LOD1": {
+          "min": [
+            -70.0,
+            -55.0,
+            0.0
+          ],
+          "max": [
+            70.0,
+            55.0,
+            220.0
+          ],
+          "dimensions": [
+            140.0,
+            110.0,
+            220.0
+          ]
+        },
+        "LOD2": {
+          "min": [
+            -70.0,
+            -55.0,
+            0.0
+          ],
+          "max": [
+            70.0,
+            55.0,
+            220.0
+          ],
+          "dimensions": [
+            140.0,
+            110.0,
+            220.0
+          ]
+        },
+        "LOD3": {
+          "min": [
+            -70.0,
+            -55.0,
+            0.0
+          ],
+          "max": [
+            70.0,
+            55.0,
+            220.0
+          ],
+          "dimensions": [
+            140.0,
+            110.0,
+            220.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "G05_module_components_and_counts",
+      "status": "pass",
+      "detail": {
+        "C001": {
+          "triangles": 5152,
+          "bounds": {
+            "min": [
+              -54.0,
+              -39.0,
+              34.0
+            ],
+            "max": [
+              54.0,
+              39.0,
+              220.0
+            ],
+            "dimensions": [
+              108.0,
+              78.0,
+              186.0
+            ]
+          },
+          "uv_layers": [
+            "UVMap",
+            "LightmapUV"
+          ],
+          "materials": 1,
+          "topology": {
+            "components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "degenerate_faces": 0
+          },
+          "stone_count": 1,
+          "receiver_count": 0
+        },
+        "C002": {
+          "triangles": 1336,
+          "bounds": {
+            "min": [
+              -61.92307662963867,
+              -46.35371017456055,
+              21.700000762939453
+            ],
+            "max": [
+              61.92308044433594,
+              46.35371398925781,
+              35.099998474121094
+            ],
+            "dimensions": [
+              123.84615707397461,
+              92.70742416381836,
+              13.39999771118164
+            ]
+          },
+          "uv_layers": [
+            "UVMap",
+            "LightmapUV"
+          ],
+          "materials": 1,
+          "topology": {
+            "components": 20,
+            "boundary_edges": 64,
+            "nonmanifold_edges": 0,
+            "degenerate_faces": 0
+          },
+          "stone_count": 19,
+          "receiver_count": 1
+        },
+        "C003": {
+          "triangles": 1652,
+          "bounds": {
+            "min": [
+              -68.65384674072266,
+              -52.5982551574707,
+              7.900000095367432
+            ],
+            "max": [
+              68.65383911132812,
+              52.59825134277344,
+              22.399999618530273
+            ],
+            "dimensions": [
+              137.30768585205078,
+              105.19650650024414,
+              14.499999523162842
+            ]
+          },
+          "uv_layers": [
+            "UVMap",
+            "LightmapUV"
+          ],
+          "materials": 1,
+          "topology": {
+            "components": 25,
+            "boundary_edges": 64,
+            "nonmanifold_edges": 0,
+            "degenerate_faces": 0
+          },
+          "stone_count": 24,
+          "receiver_count": 1
+        },
+        "C004": {
+          "triangles": 880,
+          "bounds": {
+            "min": [
+              -70.0,
+              -55.0,
+              0.0
+            ],
+            "max": [
+              70.0,
+              55.0,
+              10.0
+            ],
+            "dimensions": [
+              140.0,
+              110.0,
+              10.0
+            ]
+          },
+          "uv_layers": [
+            "UVMap",
+            "LightmapUV"
+          ],
+          "materials": 1,
+          "topology": {
+            "components": 33,
+            "boundary_edges": 80,
+            "nonmanifold_edges": 0,
+            "degenerate_faces": 0
+          },
+          "stone_count": 32,
+          "receiver_count": 1
+        }
+      }
+    },
+    {
+      "id": "G06_retained_module_extents",
+      "status": "pass",
+      "detail": {
+        "C002": {
+          "actual": [
+            123.84615707397461,
+            92.70742416381836
+          ],
+          "expected": [
+            123.846154,
+            92.707424
+          ]
+        },
+        "C003": {
+          "actual": [
+            137.30768585205078,
+            105.19650650024414
+          ],
+          "expected": [
+            137.307692,
+            105.196507
+          ]
+        },
+        "C004": {
+          "actual": [
+            140.0,
+            110.0
+          ],
+          "expected": [
+            140.0,
+            110.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "G07_irregular_ovoid_top_proofs",
+      "status": "pass",
+      "detail": {
+        "C002": {
+          "pixel_ratio": 1.3355481727574752,
+          "target_ratio": 1.335881730464218,
+          "difference": 0.0003335577067429263,
+          "pass": true
+        },
+        "C003": {
+          "pixel_ratio": 1.3045387994143485,
+          "target_ratio": 1.3052495364698755,
+          "difference": 0.0007107370555270442,
+          "pass": true
+        },
+        "C004": {
+          "pixel_ratio": 1.2717086834733893,
+          "target_ratio": 1.2727272727272727,
+          "difference": 0.0010185892538834285,
+          "pass": true
+        }
+      }
+    },
+    {
+      "id": "G08_exact_A04_C001_geometry_and_uv",
+      "status": "pass",
+      "detail": {
+        "A04": {
+          "vertex_count": 2578,
+          "face_count": 5152,
+          "geometry_sha256": "54ceeba198e8563ea9f92beb0dbdd8f6b22e0ea38fb99591ed0f3b435cc37721",
+          "uv_sha256": "5633bc68f1a29728764b283fb7b84b6df0d6bc3ec79892a35b6096304298104b"
+        },
+        "A09": {
+          "vertex_count": 2578,
+          "face_count": 5152,
+          "geometry_sha256": "54ceeba198e8563ea9f92beb0dbdd8f6b22e0ea38fb99591ed0f3b435cc37721",
+          "uv_sha256": "5633bc68f1a29728764b283fb7b84b6df0d6bc3ec79892a35b6096304298104b"
+        }
+      }
+    },
+    {
+      "id": "G09_shared_origin_sockets",
+      "status": "pass",
+      "detail": {
+        "SOCKET_A005_ROOT": {
+          "location_cm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_rad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "pass": true
+        },
+        "SOCKET_A005_C001": {
+          "location_cm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_rad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "pass": true
+        },
+        "SOCKET_A005_C002": {
+          "location_cm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_rad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "pass": true
+        },
+        "SOCKET_A005_C003": {
+          "location_cm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_rad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "pass": true
+        },
+        "SOCKET_A005_C004": {
+          "location_cm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_rad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "pass": true
+        }
+      }
+    },
+    {
+      "id": "G10_topology_and_declared_open_receiver_collars",
+      "status": "pass",
+      "detail": {
+        "LOD0": {
+          "components": 79,
+          "boundary_edges": 208,
+          "nonmanifold_edges": 0,
+          "degenerate_faces": 0
+        },
+        "modules": {
+          "C001": {
+            "components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "degenerate_faces": 0
+          },
+          "C002": {
+            "components": 20,
+            "boundary_edges": 64,
+            "nonmanifold_edges": 0,
+            "degenerate_faces": 0
+          },
+          "C003": {
+            "components": 25,
+            "boundary_edges": 64,
+            "nonmanifold_edges": 0,
+            "degenerate_faces": 0
+          },
+          "C004": {
+            "components": 33,
+            "boundary_edges": 80,
+            "nonmanifold_edges": 0,
+            "degenerate_faces": 0
+          }
+        },
+        "policy": "only the deliberately hidden receiver top loops are boundary edges; no degenerate faces"
+      }
+    },
+    {
+      "id": "G11_material_and_uv",
+      "status": "pass",
+      "detail": {
+        "material_nodes": [
+          "A09_DIRECTX_NORMAL",
+          "A09_DIRECT_SOURCE_BASECOLOR",
+          "A09_ORM_NONMETALLIC",
+          "Combine RGB",
+          "Material Output",
+          "Math",
+          "Normal Map",
+          "Principled BSDF",
+          "Separate RGB",
+          "Separate RGB.001"
+        ],
+        "lods": {
+          "LOD0": {
+            "uv_layers": [
+              "UVMap",
+              "LightmapUV"
+            ],
+            "materials": 1
+          },
+          "LOD1": {
+            "uv_layers": [
+              "UVMap",
+              "LightmapUV"
+            ],
+            "materials": 1
+          },
+          "LOD2": {
+            "uv_layers": [
+              "UVMap",
+              "LightmapUV"
+            ],
+            "materials": 1
+          },
+          "LOD3": {
+            "uv_layers": [
+              "UVMap",
+              "LightmapUV"
+            ],
+            "materials": 1
+          }
+        },
+        "modules": {
+          "C001": {
+            "uv_layers": [
+              "UVMap",
+              "LightmapUV"
+            ],
+            "materials": 1
+          },
+          "C002": {
+            "uv_layers": [
+              "UVMap",
+              "LightmapUV"
+            ],
+            "materials": 1
+          },
+          "C003": {
+            "uv_layers": [
+              "UVMap",
+              "LightmapUV"
+            ],
+            "materials": 1
+          },
+          "C004": {
+            "uv_layers": [
+              "UVMap",
+              "LightmapUV"
+            ],
+            "materials": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "G12_source_owned_rgb_exact",
+      "status": "pass",
+      "detail": {
+        "atlas": {
+          "pixels_compared": 154948,
+          "mismatches": 0,
+          "by_view": {
+            "front": {
+              "pixels_compared": 60761,
+              "mismatches": 0
+            },
+            "back": {
+              "pixels_compared": 39241,
+              "mismatches": 0
+            },
+            "left": {
+              "pixels_compared": 20938,
+              "mismatches": 0
+            },
+            "right": {
+              "pixels_compared": 16516,
+              "mismatches": 0
+            },
+            "top": {
+              "pixels_compared": 17492,
+              "mismatches": 0
+            }
+          }
+        },
+        "measurement_status": "pass_authoritative_measurement_gate"
+      }
+    },
+    {
+      "id": "G13_collision_set",
+      "status": "pass",
+      "detail": [
+        "UCX_SM_GIA_BloodAxeCairnstone_A005_00",
+        "UCX_SM_GIA_BloodAxeCairnstone_A005_01",
+        "UCX_SM_GIA_BloodAxeCairnstone_A005_02",
+        "UCX_SM_GIA_BloodAxeCairnstone_A005_03"
+      ]
+    },
+    {
+      "id": "G14_artifact_hashes",
+      "status": "pass",
+      "detail": {
+        "blend": {
+          "expected": "b31f736b60ee9e6f47af143609426e64fb666bfc9b348d26eb0e27e6465aded6",
+          "actual": "b31f736b60ee9e6f47af143609426e64fb666bfc9b348d26eb0e27e6465aded6"
+        },
+        "final": {
+          "expected": "33106df764ebaedf25f6aa36e7a69ee88715aa9b62119d69ee41817df8875d0b",
+          "actual": "33106df764ebaedf25f6aa36e7a69ee88715aa9b62119d69ee41817df8875d0b"
+        },
+        "assembled_fbx": {
+          "LOD0": {
+            "expected": "1178236c32f369dddad734ff8396abd0f5dfb35b4866a24f87daad9d051756dc",
+            "actual": "1178236c32f369dddad734ff8396abd0f5dfb35b4866a24f87daad9d051756dc"
+          },
+          "LOD1": {
+            "expected": "57a6aadd7fd48b25de507bb115e679f11c012dd38c9bf1d643313adcacce20d4",
+            "actual": "57a6aadd7fd48b25de507bb115e679f11c012dd38c9bf1d643313adcacce20d4"
+          },
+          "LOD2": {
+            "expected": "f278b205bce1bbf9889b3be971e8fd94011289b4b832e87b57576a3869e7add1",
+            "actual": "f278b205bce1bbf9889b3be971e8fd94011289b4b832e87b57576a3869e7add1"
+          },
+          "LOD3": {
+            "expected": "499cc1b32f747225731aa85513b9f2225801d741a77ac518f6089ceca1456e86",
+            "actual": "499cc1b32f747225731aa85513b9f2225801d741a77ac518f6089ceca1456e86"
+          }
+        },
+        "module_fbx": {
+          "C001": {
+            "expected": "cd1d134330a447e3bddd111db548690bd1a7c2b3432232997a79cc3e20fbfcd3",
+            "actual": "cd1d134330a447e3bddd111db548690bd1a7c2b3432232997a79cc3e20fbfcd3"
+          },
+          "C002": {
+            "expected": "1a7df6441e941f4cf369ac2f9dfc8c5ffce6c31f2121a50e943aa3f844e87fe0",
+            "actual": "1a7df6441e941f4cf369ac2f9dfc8c5ffce6c31f2121a50e943aa3f844e87fe0"
+          },
+          "C003": {
+            "expected": "096ebdfa4d6919fec8ab61111df2e0d5a888f9c45051b62b03af557267fddb33",
+            "actual": "096ebdfa4d6919fec8ab61111df2e0d5a888f9c45051b62b03af557267fddb33"
+          },
+          "C004": {
+            "expected": "209c46c33c1e60763338bf9125c6be1f786c1c6624d5c81a5937e8cbbea13f70",
+            "actual": "209c46c33c1e60763338bf9125c6be1f786c1c6624d5c81a5937e8cbbea13f70"
+          }
+        }
+      }
+    },
+    {
+      "id": "G15_clean_fbx_reimport",
+      "status": "pass",
+      "detail": {
+        "assembled": {
+          "LOD0": {
+            "mesh_objects": 5,
+            "primary_objects": 1,
+            "primary_triangles": 9020,
+            "expected_triangles": 9020,
+            "pass": true
+          },
+          "LOD1": {
+            "mesh_objects": 1,
+            "primary_objects": 1,
+            "primary_triangles": 4148,
+            "expected_triangles": 4148,
+            "pass": true
+          },
+          "LOD2": {
+            "mesh_objects": 1,
+            "primary_objects": 1,
+            "primary_triangles": 1894,
+            "expected_triangles": 1894,
+            "pass": true
+          },
+          "LOD3": {
+            "mesh_objects": 1,
+            "primary_objects": 1,
+            "primary_triangles": 696,
+            "expected_triangles": 696,
+            "pass": true
+          }
+        },
+        "modules": {
+          "C001": {
+            "mesh_objects": 1,
+            "triangles": 5152,
+            "expected_triangles": 5152,
+            "socket": "SOCKET_A005_C001",
+            "socket_scale_after_blender_fbx_unit_conversion": [
+              0.009999999776482582,
+              0.009999999776482582,
+              0.009999999776482582
+            ],
+            "socket_pass": true,
+            "pass": true
+          },
+          "C002": {
+            "mesh_objects": 1,
+            "triangles": 1336,
+            "expected_triangles": 1336,
+            "socket": "SOCKET_A005_C002",
+            "socket_scale_after_blender_fbx_unit_conversion": [
+              0.009999999776482582,
+              0.009999999776482582,
+              0.009999999776482582
+            ],
+            "socket_pass": true,
+            "pass": true
+          },
+          "C003": {
+            "mesh_objects": 1,
+            "triangles": 1652,
+            "expected_triangles": 1652,
+            "socket": "SOCKET_A005_C003",
+            "socket_scale_after_blender_fbx_unit_conversion": [
+              0.009999999776482582,
+              0.009999999776482582,
+              0.009999999776482582
+            ],
+            "socket_pass": true,
+            "pass": true
+          },
+          "C004": {
+            "mesh_objects": 1,
+            "triangles": 880,
+            "expected_triangles": 880,
+            "socket": "SOCKET_A005_C004",
+            "socket_scale_after_blender_fbx_unit_conversion": [
+              0.009999999776482582,
+              0.009999999776482582,
+              0.009999999776482582
+            ],
+            "socket_pass": true,
+            "pass": true
+          }
+        }
+      }
+    },
+    {
+      "id": "G16_required_proof_set",
+      "status": "pass",
+      "detail": {
+        "assembled": [
+          "front_lit",
+          "front_shadeless",
+          "left_shadeless",
+          "right_shadeless",
+          "top_shadeless"
+        ],
+        "modules": {
+          "C002": [
+            "front",
+            "top"
+          ],
+          "C003": [
+            "front",
+            "top"
+          ],
+          "C004": [
+            "front",
+            "top"
+          ]
+        }
+      }
+    },
+    {
+      "id": "G17_zero_background_interface_leaks",
+      "status": "pass",
+      "detail": {
+        "method": "front orthographic alpha holes measured only across the three declared module-contact bands",
+        "bands": {
+          "C001_C002": {
+            "pixels": 0,
+            "rows": 0,
+            "maximum_row_pixels": 0
+          },
+          "C002_C003": {
+            "pixels": 0,
+            "rows": 0,
+            "maximum_row_pixels": 0
+          },
+          "C003_C004": {
+            "pixels": 0,
+            "rows": 0,
+            "maximum_row_pixels": 0
+          }
+        },
+        "background_leak_pixels": 0,
+        "pass": true
+      }
+    },
+    {
+      "id": "G18_final_review_integrity",
+      "status": "pass",
+      "detail": {
+        "size": [
+          1400,
+          1600
+        ],
+        "margins": {
+          "left": 328,
+          "top": 136,
+          "right": 330,
+          "bottom": 165
+        },
+        "bright_fringe_fraction": 0.0,
+        "review_markers": 0,
+        "collision_visible": 0,
+        "lod_visible": "LOD0 only"
+      }
+    },
+    {
+      "id": "G19_C004_clustered_rubble",
+      "status": "pass",
+      "detail": {
+        "object": "SM_GIA_BloodAxeCairnstone_A005_C004_RUBBLE_APRON_A09",
+        "stone_count": 32,
+        "clusters": 8,
+        "staggered_rows": 2,
+        "outer_cm": [
+          140.0,
+          110.0
+        ],
+        "receiver_z_cm": [
+          0.8,
+          10.0
+        ]
+      }
+    },
+    {
+      "id": "G20_preservation_and_unreal_firewall",
+      "status": "pass",
+      "detail": {
+        "preservation": {
+          "A04_blend": {
+            "path": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_DCCGameReady_VisualCorrection_A04.blend",
+            "sha256_before": "e399a5c34455a70a55ca3084972544dd8bf007930bf1bb05c041fcef169e4caf",
+            "sha256_after": "e399a5c34455a70a55ca3084972544dd8bf007930bf1bb05c041fcef169e4caf",
+            "pass": true
+          },
+          "A04_manifest": {
+            "path": "SourceAssets/Blender/Props/Giants/BloodAxe/Cairns/SM_GIA_BloodAxeCairnstone_A005/SM_GIA_BloodAxeCairnstone_A005_VISUAL_CORRECTION_A04_MANIFEST.json",
+            "sha256_before": "30416d9c336e70f1ad25aadb32158c35ad2e6f33cdf32bd3476f9b9a80ab8c65",
+            "sha256_after": "30416d9c336e70f1ad25aadb32158c35ad2e6f33cdf32bd3476f9b9a80ab8c65",
+            "pass": true
+          },
+          "A04_final": {
+            "path": "Saved/Automation/DCC/SM_GIA_BloodAxeCairnstone_A005/Production/VisualCorrection_A04/SM_GIA_BloodAxeCairnstone_A005_FINAL_CORRECTED_3D_A04.png",
+            "sha256_before": "e2e62ac9a7a8ad17aa56200c6e3d2f155927498c0068cb345af45b51dd53aff1",
+            "sha256_after": "e2e62ac9a7a8ad17aa56200c6e3d2f155927498c0068cb345af45b51dd53aff1",
+            "pass": true
+          }
+        },
+        "unreal_outputs": 0,
+        "fully_game_ready": false,
+        "unreal_authorized": false
+      }
+    }
+  ],
+  "gate_summary": {
+    "passed": 20,
+    "total": 20
+  }
+}

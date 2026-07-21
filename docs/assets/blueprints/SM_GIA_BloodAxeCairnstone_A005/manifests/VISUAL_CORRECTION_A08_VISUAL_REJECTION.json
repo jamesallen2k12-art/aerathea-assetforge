@@ -1,0 +1,48 @@
+{
+  "schema": "aerathea.visual_correction_a08_visual_rejection.v1",
+  "asset_id": "SM_GIA_BloodAxeCairnstone_A005",
+  "date": "2026-07-21",
+  "status": "flamestrike_visual_rejection_a09_recovery_approved",
+  "artifact_classification": "authoritative visual decision record",
+  "flamestrike_observations": [
+    "white areas and areas missing detail remain in the corrected image",
+    "the white areas appear to be geometry gaps between the debris ring and bottom base ring",
+    "the debris ring is imperfect and visually disconnected",
+    "the base rings appear more circular than ovoid"
+  ],
+  "flamestrike_approved_recovery": "A09 modular-base recovery: preserve C001; rebuild C002, C003, and C004 as independently reviewable mesh modules with shared-origin sockets, source-shaped ovoid contours, hidden contact receivers, corrected UV detail, and no visible background leaks; prove modules separately and then present one assembled final image.",
+  "pre_recovery_checkpoint": "Saved/ProjectRecovery/20260721-101044/",
+  "last_known_core_valid_state": {
+    "authoritative_source": "unchanged",
+    "exact_A04_C001": "authoritative visual construction reference",
+    "A08_top_measurement": "authoritative measurement record",
+    "A08_counts_and_maximum_extents": "retained construction authority",
+    "A08_technical_audit": "proof only for its bounded technical gates"
+  },
+  "proven_defects": {
+    "background_leak": "A08 contains literal 0.75 cm air clearances at C004/C003 and C003/C002 while the recessed mortar beds do not cover the full camera-visible interface.",
+    "debris_disconnect": "C004 is implemented as 32 regularly distributed annular wedge stones with angular gaps and a deeply recessed support bed.",
+    "circular_read": "C002/C003/C004 use smooth exponent-2 ellipse formulas and radial wedge construction; correct maximum bounds alone do not reproduce the source's irregular ovoid masonry read.",
+    "missing_detail": "A08 combines under-resolved wedge geometry with stretched or low-frequency UV ownership on exposed faces."
+  },
+  "affected_outputs": {
+    "A08_final_image": "rejected; reference only",
+    "A08_blender_fbx_textures": "reference only for defect analysis",
+    "A08_builder_renderer_auditor": "reference only for A09 implementation support; not A09 visual authority",
+    "A08_validation": "proof only; does not establish visual equivalence",
+    "A08_contract_and_output_record": "authoritative historical execution and technical result records",
+    "A08_measurement_record": "authoritative retained input"
+  },
+  "a09_required_controls": [
+    "independent C002 C003 C004 mesh modules in one shared coordinate frame",
+    "named socket or anchor empties with exact transforms",
+    "source-shaped irregular ovoid course contours within retained maximum extents",
+    "hidden receiver or mortar geometry covering every camera-visible interface",
+    "clustered staggered C004 rubble rather than one regular segmented annulus",
+    "module-only fixed proof images before assembled proof",
+    "no visible background pixels inside the declared assembled base envelope",
+    "source-matched final camera and ovoid-read visual gate"
+  ],
+  "unreal_authorized": false,
+  "fully_game_ready": false
+}

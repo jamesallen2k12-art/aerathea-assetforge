@@ -1,10 +1,47 @@
 # SM_GIA_BloodAxeCairnstone_A005 Approval Log
 
-Status: A08 audited DCC game-ready candidate; Flamestrike visual decision pending
+Status: A09 candidate pending Flamestrike visual review
 
 Artifact classification: `authoritative`
 
 Updated: 2026-07-21
+
+## A09 Modular Recovery Technical Completion / Visual Decision Pending
+
+- Date: 2026-07-21
+- Execution authority: Flamestrike's approved A09 modular-base recovery
+  contract
+- Result: independent C002/C003/C004 modules, exact shared-origin sockets,
+  hidden open-top receiver collars, irregular ovoid footprints, clustered
+  C004 rubble, separate module FBXs, assembled LODs, and complete proof set
+- Independent audit: `20/20`; clean FBX re-import: `8/8`
+- Interface background leaks: `0 / 0 / 0` pixels
+- LOD triangles: `9020 / 4148 / 1894 / 696`
+- Final candidate checkpoint: `Saved/ProjectRecovery/20260721-104614/`
+- Exact review SHA-256:
+  `33106df764ebaedf25f6aa36e7a69ee88715aa9b62119d69ee41817df8875d0b`
+- Artifact status: `candidate`; pipeline status: `DCC game-ready candidate`
+- Visual decision: pending Flamestrike
+- Unreal/Step 17, `Fully game-ready`, approved-library, and visual-canon
+  promotion: unauthorized
+
+## A08 Visual Rejection / A09 Modular Recovery Approval
+
+- Date: 2026-07-21
+- Decision authority: Flamestrike
+- A08 visual decision: `rejected`; exact A08 image and DCC package retained as
+  `reference only`
+- Findings: camera-visible white geometry gaps, missing exposed-face detail,
+  disconnected C004 debris, and rings that read more circular than ovoid
+- Approved A09 scope: preserve C001; independently rebuild C002/C003/C004 in
+  one shared coordinate frame; add exact named sockets/anchors and hidden
+  interface receivers; use source-conditioned irregular ovoid contours;
+  rebuild C004 as clustered rubble; prove modules separately and then present
+  one assembled final image
+- Contract ID: `A005-CR-VISUAL-CORRECTION-A09`
+- Pre-recovery checkpoint: `Saved/ProjectRecovery/20260721-101044/`
+- Unreal/Step 17, `Fully game-ready`, approved-library, and visual-canon
+  promotion: unauthorized
 
 ## A08 Full Correction Authority And Audited Result
 
@@ -23,8 +60,9 @@ Updated: 2026-07-21
 - Status: `DCC game-ready candidate`
 - Exact review SHA-256:
   `6c58c364d3522f53b6c2011bf0c5fb09abba3bb44ee6d765be715c31b0dd52b4`
-- Current decision: Flamestrike visual approval, rejection, or blocked finding
-  is pending for that exact image only
+- Visual decision: `rejected`; exact image and DCC package are `reference only`
+- Technical result record remains authoritative history; validation is `proof
+  only` for its bounded gates
 - Unreal/Step 17, `Fully game-ready`, approved-library, and visual-canon
   promotion: unauthorized
 
