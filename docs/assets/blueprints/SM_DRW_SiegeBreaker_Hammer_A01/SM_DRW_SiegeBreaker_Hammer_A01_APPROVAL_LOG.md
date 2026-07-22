@@ -235,3 +235,31 @@
 - Approval scope: the authoritative plan amendment and reset routing only.
   Production remains unstarted under the active save/closeout contract and
   requires the concise post-reset end-to-end execution scope.
+
+## A07 Source-Constrained Authoritative 3D Master Route
+
+- Date: 2026-07-22.
+- Flamestrike decision: save the Source-Constrained Authoritative 3D Master
+  approach, prepare for context reset, and run that process after reset.
+- Plan ID: `SB-SC3M-A07`.
+- Plan status: `authoritative` as the active process and next-run route.
+- Controlling method: original concept controls visible design; commercially
+  cleared AI produces 3D hypotheses; Blender converges and completes one real
+  360-degree object; Flamestrike approves interpretations; uniform scale locks
+  the master; exact orthographics and pixel measurements are derived afterward.
+- Numeric rule: use the approved `170 cm` overall length as the uniform scale
+  anchor; validate `52 x 32 cm` width/depth without independent axis scaling.
+- Prior orthographic rule: independently generated views are not A07 geometry,
+  scale, or pixel authority.
+- A06 status: preserved at `step_10_waiting_flamestrike_decision`; superseded as
+  the active production route, not deleted or repaired forward.
+- `SB-CM-VISUAL-A01`: remains `quarantined` and invalid as a Hero Candidate or
+  construction authority.
+- License rule: no source processing or inference until Gate 00 proves a
+  commercially permitted runtime and raw-geometry export path that excludes
+  restricted NVIDIA components.
+- Post-reset authority: Core resume handshake followed by read-only Gate 00
+  execution only.
+- Production state: A07 source processing, inference, and DCC work not started.
+- Unreal authority: `false`.
+- Fully game-ready: `false`.

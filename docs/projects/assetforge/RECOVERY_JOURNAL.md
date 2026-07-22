@@ -7442,3 +7442,96 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260722-095133/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260722-095133/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 10:10:58 EDT -0400 - before approved Siege Breaker A06 proof run
+
+- Snapshot: `Saved/ProjectRecovery/20260722-101058/`
+- Git: branch `main`, HEAD `8a71dfa`, status lines `274`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-101058/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-101058/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-101058/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 10:20:17 EDT -0400 - before A06 Step 02 seven-source scanline lock
+
+- Snapshot: `Saved/ProjectRecovery/20260722-102017/`
+- Git: branch `main`, HEAD `8a71dfa`, status lines `276`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-102017/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-102017/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-102017/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 10:53:50 EDT -0400 - before A06 Step 03 exact source decomposition
+
+- Snapshot: `Saved/ProjectRecovery/20260722-105350/`
+- Git: branch `main`, HEAD `8a71dfa`, status lines `278`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-105350/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-105350/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-105350/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 10:54:50 EDT -0400 - A06 Step 03 crops complete before independent audit
+
+- Snapshot: `Saved/ProjectRecovery/20260722-105450/`
+- Git: branch `main`, HEAD `8a71dfa`, status lines `278`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-105450/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-105450/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-105450/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 11:15:29 EDT -0400 - A06 Step 05 complete before Step 06 exact front-back measurements
+
+- Snapshot: `Saved/ProjectRecovery/20260722-111529/`
+- Git: branch `main`, HEAD `8a71dfa`, status lines `280`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-111529/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-111529/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-111529/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 12:37:10 EDT -0400 - before visual-first Siege Breaker canonical master candidate
+
+- Snapshot: `Saved/ProjectRecovery/20260722-123710/`
+- Git: branch `main`, HEAD `8a71dfa`, status lines `291`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-123710/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-123710/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-123710/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 12:53:44 EDT -0400 - after visual-first Siege Breaker canonical master candidate and 59-of-59 audit
+
+- Snapshot: `Saved/ProjectRecovery/20260722-125344/`
+- Git: branch `main`, HEAD `8a71dfa`, status lines `296`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-125344/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-125344/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-125344/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 13:01:30 EDT -0400 - Siege Breaker SB-CM-VISUAL-A01 rejected; primitive-first Hero-candidate drift recorded and quarantined
+
+- Snapshot: `Saved/ProjectRecovery/20260722-130130/`
+- Git: branch `main`, HEAD `8a71dfa`, status lines `297`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-130130/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-130130/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-130130/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 13:35:03 EDT -0400 - saved Siege Breaker A07 source-constrained authoritative 3D master method before context reset
+
+- Snapshot: `Saved/ProjectRecovery/20260722-133503/`
+- Git: branch `main`, HEAD `8a71dfa`, status lines `303`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-133503/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-133503/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-133503/assetforge_recent_saved_outputs.txt`
+- Next resume step: perform the Core resume handshake using the Siege Breaker
+  top-level reset state and A07 reset handoff, then execute only
+  `A07_GATE_00_COMMERCIAL_SAFE_EXECUTION_PATH_CONTRACT.md`. Do not process the
+  concept, run inference, or create geometry unless Gate 00 records `go`.

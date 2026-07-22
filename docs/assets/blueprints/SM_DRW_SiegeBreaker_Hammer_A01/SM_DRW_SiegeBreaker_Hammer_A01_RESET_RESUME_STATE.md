@@ -1,64 +1,57 @@
 # SM_DRW_SiegeBreaker_Hammer_A01 Reset / Resume State
 
-- Active contract: `SB-VF-A05-ORTHOGRAPHIC-VOLUMETRIC`
-- Contract record: `steps/VISUAL_FIDELITY_A05_ORTHOGRAPHIC_VOLUMETRIC_REBUILD_CONTRACT.md`
-- Restart handoff: `steps/VISUAL_FIDELITY_A04_DRIFT_RECOVERY_A05_RESTART_HANDOFF.md`
-- Last Core-valid state: verified package, exact numeric specification, corrected canonical blockout, unchanged detailed orthographic source, and A05 authority records
-- Current pipeline state: `A05 DCC game-ready candidate complete; pending Flamestrike visual approval`
-- Geometry authority: embedded `asset_spec.json`, `dimensions_cm.csv`, corrected canonical blockout, and freshly registered detailed orthographic views
-- Numeric envelope: exact `52 x 32 x 170 cm`
-- Orthographic authority: front/back own X/Z evidence; left/right own Y/Z evidence; top/bottom own X/Y evidence after one uniform registration per complete view
-- Three-quarter authority: style, material character, depth character, and final beauty comparison only; forbidden as construction frame
-- Shared assembly frame: origin at bottom-center pommel; centerline `X=0,Y=0`; Z stations `0,14,18,60,132,170 cm`
-- A03/A04 authority reversal, component scales, masks, geometry, textures, exports, and renders: `quarantined`; forbidden as A05 construction inputs
-- A03/A04 technical audits: `proof only` for mechanics and defect history; no visual or A05 construction implication
-- A04 final review board SHA `86496214...710`: `invalid as a completed 3D asset`
-- A04 visible defects: 2.5D facades/cards, backing blocks, contaminated gray/white pixels, approximately `5.29 cm` head/shaft center mismatch, approximately `1.05 cm` grip/pommel mismatch, elongated/thin handle read
-- Required A05 method: fresh clean orthographic masks; whole-view registration; real volumetric reconstruction; shared attachment axis; UV projection/bake onto real geometry; computed fail-closed validation; multi-angle parallax proof
-- Blocked A05 methods: perspective-derived geometry, per-component scaling/recentering, facades/cards/billboards, raw background-bearing source textures, asserted audit passes, repair-forward from failed geometry
-- A05 production started: `true`
-- A05 production complete: `true`
-- A05 artifact status: `candidate`
-- Independent audit: `pass 28/28`
-- Final review board: `review/SM_DRW_SiegeBreaker_Hammer_A01_A05_FINAL_REVIEW_BOARD.png`
-- Final review board SHA-256: `befd52f5668abcbdadb0e8ce5c6798c9ad5a02c711037fe4ba851b59333b5aef`
-- Next action after resume: report the completed A05 candidate and await Flamestrike `approved`, `rejected`, or `blocked` decision
-- Pending gate: Flamestrike visual decision on the final A05 image
+- Active approved route: `SB-SC3M-A07`
+- Plan: `SM_DRW_SiegeBreaker_Hammer_A01_SOURCE_CONSTRAINED_AUTHORITATIVE_3D_MASTER_A07_PLAN.md`
+- Reset handoff: `handoffs/SOURCE_CONSTRAINED_AUTHORITATIVE_3D_MASTER_A07_RESET_HANDOFF.md`
+- First contract: `steps/A07_GATE_00_COMMERCIAL_SAFE_EXECUTION_PATH_CONTRACT.md`
+- Current state: `A07 process saved; context-reset ready; production not started`
+- Next approved activity: Core resume handshake followed by A07 Gate 00 only
+- Source processing authorized now: `false`
+- Model inference authorized now: `false`
+- DCC production authorized now: `false`
 - Unreal authority: `false`
 - Fully game-ready: `false`
 
-## Next Approved Test Route
+## Last Core-Valid State
 
-- Date set: 2026-07-22
-- Plan ID: `SB-CR-STEPS01-16-A06-POC`
-- Plan record: `SM_DRW_SiegeBreaker_Hammer_A01_STEPS_01_16_PROOF_OF_CONCEPT_PIPELINE_PLAN.md`
-- Reset handoff: `handoffs/STEPS_01_16_PROOF_OF_CONCEPT_NEXT_TEST_HANDOFF.md`
-- Route status: `authoritative next-test plan; production not started`
-- Required sequence: exact Steps `01 -> 16`; no skipping, merging, reordering,
-  silent substitution, gate weakening, or repair-forward
-- Deviation response: stop as blocked; preserve evidence; propose a versioned
-  amendment; wait for Flamestrike approval before changing the plan
-- A05 preservation: remains an undecided `candidate`; excluded from A06
-  construction authority without reclassification
-- Artistic control: technical pass and artistic-soul approval are independent;
-  both are required at the declared review gates
-- Primary proof criterion: complete without manual production intervention and
-  reproduce the candidate through two isolated clean runs with identical
-  canonical results, deterministic resume, negative tamper failures, no network
-  dependency, and a complete rebuild recipe
-- First-run outside-input budget: one end-to-end authorization, at most one
-  batched unresolved Step 10 authority decision, and one final artistic decision
-- Locked-replay outside-input budget: zero
-- Contract visibility: full step contracts need not be shown when they follow
-  the locked rules exactly and pass independent scope/completeness validation;
-  required source, measurement, interpretation, geometry, material, and final
-  artistic review artifacts remain visible decision gates
-- Next action after reset: Core resume handshake, report both A05 status and the
-  A06 next-test route, then create/audit the exact Step 01 contract and provide
-  one concise end-to-end proof-run execution scope for approval unless separate
-  execution authority is granted
-- Step 01 production started: `false`
-- Source processing authorized: `false`
-- DCC production authorized: `false`
-- Unreal authority: `false`
-- Fully game-ready: `false`
+- Original Siege Breaker concept: `authoritative visual target`.
+- Source path proposed for Gate 01:
+  `SourceAssets/Concepts/SiegeBreaker/siege_breaker_concept_view.png`.
+- Source SHA-256:
+  `9f1ac142a5047968bb20c74216c2dccf61470ed9f4e21689ff01934bd849c586`.
+- Existing numeric envelope: `52 x 32 x 170 cm`; A07 uses `170 cm` as
+  the uniform scale anchor and treats width/depth as fail-closed constraints.
+- Shared frame: bottom-center pommel origin; `X=0,Y=0`; protected stations
+  remain recorded in `manifests/MEASUREMENT_AND_OWNERSHIP_CONTRACTS.json`.
+- A06 state: preserved at `step_10_waiting_flamestrike_decision`; no longer the
+  active production route.
+- `SB-CM-VISUAL-A01`: `quarantined; invalid as Hero Candidate or authority`.
+- A07 visual, geometry, or measurement candidate: does not exist.
+
+## Active Method
+
+A07 creates one complete 3D object before it creates authoritative
+orthographic images:
+
+`concept -> licensed AI 3D hypotheses -> source-converged Blender model ->`
+`approved hidden surfaces -> uniform scale lock -> approved authoritative 3D`
+`Concept Master -> exact derived orthographic measurements -> game-ready derivative`
+
+The original concept controls visible design. AI outputs remain candidates.
+Flamestrike controls interpretation and promotion. The locked 3D master controls
+geometry and measurement.
+
+## License Stop
+
+The existing local TRELLIS/TRELLIS.2 GLB route invokes restricted NVIDIA
+components and is not cleared for A07 production. Existing TRELLIS outputs are
+not A07 inputs. Gate 00 must prove a commercially safe inference and raw-geometry
+export route before Gate 01 or any generation.
+
+## Resume Instruction
+
+Read the recovery journal/latest checkpoint, this state, the A07 plan, A07
+handoff, Gate 00 contract, and prior canonical-master rejection record. Report
+the current state summary. Then execute Gate 00 only. Do not crop the source,
+run inference, create geometry, or advance to Gate 01 unless Gate 00 records
+`go`.

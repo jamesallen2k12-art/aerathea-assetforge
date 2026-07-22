@@ -58,5 +58,10 @@
 | A05 final review board SHA `befd52f5...b5aef` | `candidate` | Exact visible board pending Flamestrike `approved`, `rejected`, or `blocked` decision. |
 | `SM_DRW_SiegeBreaker_Hammer_A01_STEPS_01_16_PROOF_OF_CONCEPT_PIPELINE_PLAN.md` | `authoritative` | Next-test routing and process plan; locks Steps 01-16, dual technical/artistic gates, non-deviation and amendment rules, minimal-input first run, zero-input locked replay, and two-run reproducibility proof. |
 | `handoffs/STEPS_01_16_PROOF_OF_CONCEPT_NEXT_TEST_HANDOFF.md` | `authoritative` | Reset-safe next-test handoff; permits resume handshake and contract preparation/validation, preserves contract-display waiver, and routes to one concise end-to-end execution authority decision. |
+| `SM_DRW_SiegeBreaker_Hammer_A01_SOURCE_CONSTRAINED_AUTHORITATIVE_3D_MASTER_A07_PLAN.md` | `authoritative` | Active next-run method: concept-constrained AI hypotheses, Blender convergence, explicit hidden-surface approval, uniform scale lock, authoritative 3D master, then exact master-derived orthographics. |
+| `handoffs/SOURCE_CONSTRAINED_AUTHORITATIVE_3D_MASTER_A07_RESET_HANDOFF.md` | `authoritative` | Reset-safe A07 state, license block, read order, and exact next action. |
+| `steps/A07_GATE_00_COMMERCIAL_SAFE_EXECUTION_PATH_CONTRACT.md` | `authoritative` | Approved post-reset read-only preflight; must produce a fail-closed license-path decision before source processing or inference. |
+| A06 measurement-first route | `reference only for A07 routing; preserved in-place` | Remains at Step 10 with its existing internal evidence classifications, but no longer controls the active production route. |
+| Existing TRELLIS/TRELLIS.2 outputs using the restricted GLB path | `proof only / reference only` | Forbidden as A07 construction, geometry, texture, or measurement inputs. |
 
-Unreal authority is `false`. `Fully game-ready` is `false`. No A01/A02/A03/A04 visual candidate is eligible for approval. A05 is the sole current `DCC game-ready candidate` and awaits Flamestrike visual approval.
+Unreal authority is `false`. `Fully game-ready` is `false`. No A01/A02/A03/A04 visual candidate is eligible for approval. A05 remains a historical undecided `DCC game-ready candidate`; A07 is the active approved route and has not created a visual or DCC candidate.
