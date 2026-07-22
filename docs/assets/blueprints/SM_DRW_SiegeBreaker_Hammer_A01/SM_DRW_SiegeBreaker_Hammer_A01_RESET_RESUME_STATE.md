@@ -4,7 +4,7 @@
 - Contract record: `steps/VISUAL_FIDELITY_A05_ORTHOGRAPHIC_VOLUMETRIC_REBUILD_CONTRACT.md`
 - Restart handoff: `steps/VISUAL_FIDELITY_A04_DRIFT_RECOVERY_A05_RESTART_HANDOFF.md`
 - Last Core-valid state: verified package, exact numeric specification, corrected canonical blockout, unchanged detailed orthographic source, and A05 authority records
-- Current pipeline state: `A05 orthographic-volumetric DCC rebuild approved and queued after reset`
+- Current pipeline state: `A05 DCC game-ready candidate complete; pending Flamestrike visual approval`
 - Geometry authority: embedded `asset_spec.json`, `dimensions_cm.csv`, corrected canonical blockout, and freshly registered detailed orthographic views
 - Numeric envelope: exact `52 x 32 x 170 cm`
 - Orthographic authority: front/back own X/Z evidence; left/right own Y/Z evidence; top/bottom own X/Y evidence after one uniform registration per complete view
@@ -16,9 +16,13 @@
 - A04 visible defects: 2.5D facades/cards, backing blocks, contaminated gray/white pixels, approximately `5.29 cm` head/shaft center mismatch, approximately `1.05 cm` grip/pommel mismatch, elongated/thin handle read
 - Required A05 method: fresh clean orthographic masks; whole-view registration; real volumetric reconstruction; shared attachment axis; UV projection/bake onto real geometry; computed fail-closed validation; multi-angle parallax proof
 - Blocked A05 methods: perspective-derived geometry, per-component scaling/recentering, facades/cards/billboards, raw background-bearing source textures, asserted audit passes, repair-forward from failed geometry
-- A05 production started: `false`
-- Next action after resume: perform the Core Resume Handshake, run a pre-DCC checkpoint, and execute the A05 contract from Step 1 fresh orthographic intake
-- Review rule: do not show intermediate images; visibly open only the final completed A05 review image unless a genuine evidence block stops production
-- Pending gate after A05 completion: Flamestrike `approved`, `rejected`, or `blocked` decision on the final A05 image
+- A05 production started: `true`
+- A05 production complete: `true`
+- A05 artifact status: `candidate`
+- Independent audit: `pass 28/28`
+- Final review board: `review/SM_DRW_SiegeBreaker_Hammer_A01_A05_FINAL_REVIEW_BOARD.png`
+- Final review board SHA-256: `befd52f5668abcbdadb0e8ce5c6798c9ad5a02c711037fe4ba851b59333b5aef`
+- Next action after resume: report the completed A05 candidate and await Flamestrike `approved`, `rejected`, or `blocked` decision
+- Pending gate: Flamestrike visual decision on the final A05 image
 - Unreal authority: `false`
 - Fully game-ready: `false`

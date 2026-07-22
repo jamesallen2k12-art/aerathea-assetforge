@@ -1,0 +1,276 @@
+{
+  "schema": "aerathea.siegebreaker_a05_orthographic_intake.v1",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "contract_id": "SB-VF-A05-ORTHOGRAPHIC-VOLUMETRIC",
+  "artifact_status": "proof only",
+  "source_sheet": "SourceAssets/Reference/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/02_SiegeBreaker_Codex_Final_Package/reference/concept_sheet_style_reference.png",
+  "source_dimensions_px": [
+    1055,
+    1491
+  ],
+  "input_hashes": {
+    "SourceAssets/Reference/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/02_SiegeBreaker_Codex_Final_Package/reference/concept_sheet_style_reference.png": "3308a7bd0f0830c9cd1b695b57077d9faf77a839bb3e70edc6afe87c68af8b74",
+    "SourceAssets/Reference/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/02_SiegeBreaker_Codex_Final_Package/asset_spec.json": "3385bc17dda3df9def80bc4efb27abeb194e67d763e56e537b7396b448274a21",
+    "SourceAssets/Reference/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/02_SiegeBreaker_Codex_Final_Package/dimensions_cm.csv": "b18e5a5c06820f05d7bb7c3c3864cb47e96731ee635143c643aadad171771d91",
+    "SourceAssets/Reference/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/02_SiegeBreaker_Codex_Final_Package/component_breakdown.json": "eb1cdd56e000910c50fe9b28460e38438f463ff0221ded127a8778fd7fee7a42",
+    "SourceAssets/Reference/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/02_SiegeBreaker_Codex_Final_Package/modeling_notes.md": "2763cde0ddc548d0de836ced36c657b045c3799a1142545a0f90636dbba96d34",
+    "SourceAssets/Reference/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/02_SiegeBreaker_Codex_Final_Package/material_spec.json": "769a3f68d5e24c72824d95d696c72b1a2c115670773937cdaee88a0a3d742af0",
+    "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/SiegeBreaker_Blockout.blend": "1365e9d3654fe6e74b9ff558c80dc32164465b4cbd1bbb802374ee599bb6d8ea"
+  },
+  "construction_input_a03_a04_count": 0,
+  "panel_records": {
+    "front": {
+      "crop_box_px": [
+        478,
+        169,
+        635,
+        579
+      ],
+      "crop_sha256": "0d4c4a60fc551d48460be6d00281ddf4a5f5f5e01b227593ef077f1ea84bc242",
+      "mask_sha256": "0321ac476bb41ccc2cf11428d94514d203ac6347568dcea1b374934baaaadeb7",
+      "cutout_sha256": "0990bb0c9374487061004a078ba516fed16cc9413620d58e800b44925b81b7f7",
+      "object_bbox_local_px": [
+        4,
+        1,
+        157,
+        410
+      ],
+      "object_extent_px": [
+        153,
+        409
+      ],
+      "world_axes": [
+        "X",
+        "Z"
+      ],
+      "world_extent_cm": [
+        52.0,
+        170.0
+      ],
+      "whole_view_axis_calibration_cm_per_px": [
+        0.33986928104575165,
+        0.4156479217603912
+      ],
+      "raw_aspect": 0.3740831295843521,
+      "numeric_aspect": 0.3058823529411765,
+      "raw_aspect_residual_percent": 22.29640774873048,
+      "complete_view_registration_count": 1,
+      "per_component_scale_or_recenter_count": 0,
+      "authority_resolution": "Numeric world frame overrides illustrated panel drift; the complete clean panel remains visible-shape and surface evidence inside the locked numeric envelope."
+    },
+    "back": {
+      "crop_box_px": [
+        780,
+        169,
+        932,
+        579
+      ],
+      "crop_sha256": "7601f489eb31c876b9181ee0f8332ec89b5fb74a0bf0e742fead2ae90b6845d4",
+      "mask_sha256": "d6a8f3aab32ff54249ec9bdb66adef92e26ff77222e5696c2b1e97e9c96c5615",
+      "cutout_sha256": "b055a83b75d927f20a318a8e39ae784131a5172c18d531ba0acbacafb9400d30",
+      "object_bbox_local_px": [
+        0,
+        1,
+        152,
+        410
+      ],
+      "object_extent_px": [
+        152,
+        409
+      ],
+      "world_axes": [
+        "X",
+        "Z"
+      ],
+      "world_extent_cm": [
+        52.0,
+        170.0
+      ],
+      "whole_view_axis_calibration_cm_per_px": [
+        0.34210526315789475,
+        0.4156479217603912
+      ],
+      "raw_aspect": 0.37163814180929094,
+      "numeric_aspect": 0.3058823529411765,
+      "raw_aspect_residual_percent": 21.497084822268185,
+      "complete_view_registration_count": 1,
+      "per_component_scale_or_recenter_count": 0,
+      "authority_resolution": "Numeric world frame overrides illustrated panel drift; the complete clean panel remains visible-shape and surface evidence inside the locked numeric envelope."
+    },
+    "left": {
+      "crop_box_px": [
+        515,
+        697,
+        609,
+        1027
+      ],
+      "crop_sha256": "de638b47bb42dac55e3363743f8182068edb5a2f7632b094a717805de3f79b5e",
+      "mask_sha256": "275088989ab02a7e0eaa7018d95c43fec495e1baaa35e9396d58d3789734bfab",
+      "cutout_sha256": "5a1325799f6e45e47d4cf4a9bf6baf3e4c60eab0501b824c9ea41afbd4ef07ce",
+      "object_bbox_local_px": [
+        6,
+        0,
+        93,
+        306
+      ],
+      "object_extent_px": [
+        87,
+        306
+      ],
+      "world_axes": [
+        "Y",
+        "Z"
+      ],
+      "world_extent_cm": [
+        32.0,
+        170.0
+      ],
+      "whole_view_axis_calibration_cm_per_px": [
+        0.367816091954023,
+        0.5555555555555556
+      ],
+      "raw_aspect": 0.28431372549019607,
+      "numeric_aspect": 0.18823529411764706,
+      "raw_aspect_residual_percent": 51.041666666666664,
+      "complete_view_registration_count": 1,
+      "per_component_scale_or_recenter_count": 0,
+      "authority_resolution": "Numeric world frame overrides illustrated panel drift; the complete clean panel remains visible-shape and surface evidence inside the locked numeric envelope."
+    },
+    "right": {
+      "crop_box_px": [
+        808,
+        697,
+        905,
+        1027
+      ],
+      "crop_sha256": "514949bef08957e366102ca84baef25a35b60ae817352925f02683033728c4f4",
+      "mask_sha256": "bcf32c86a0f1390c5ffc06fe7b77a2a42e7b5413cde98857d4e3b4e2f86dbf6d",
+      "cutout_sha256": "e7dd79098ca92aedc0bf10d07bb68267c28653b4d24db9eeb790539c4ce3b7a7",
+      "object_bbox_local_px": [
+        5,
+        0,
+        93,
+        306
+      ],
+      "object_extent_px": [
+        88,
+        306
+      ],
+      "world_axes": [
+        "Y",
+        "Z"
+      ],
+      "world_extent_cm": [
+        32.0,
+        170.0
+      ],
+      "whole_view_axis_calibration_cm_per_px": [
+        0.36363636363636365,
+        0.5555555555555556
+      ],
+      "raw_aspect": 0.2875816993464052,
+      "numeric_aspect": 0.18823529411764706,
+      "raw_aspect_residual_percent": 52.77777777777777,
+      "complete_view_registration_count": 1,
+      "per_component_scale_or_recenter_count": 0,
+      "authority_resolution": "Numeric world frame overrides illustrated panel drift; the complete clean panel remains visible-shape and surface evidence inside the locked numeric envelope."
+    },
+    "top": {
+      "crop_box_px": [
+        74,
+        1111,
+        464,
+        1259
+      ],
+      "crop_sha256": "77a3cd039d33762ed8cf3c014e116f0c37947b96c74d9b43f802136c26fd924d",
+      "mask_sha256": "b773aedbe9f07eef08cc3e26a7e8d1a2097ff36813185e40895e137897f32c04",
+      "cutout_sha256": "34e86b68900f390b88a2fdd971ba237f6823044915fb2e8f8a1720867b59c737",
+      "object_bbox_local_px": [
+        0,
+        0,
+        390,
+        116
+      ],
+      "object_extent_px": [
+        390,
+        116
+      ],
+      "world_axes": [
+        "X",
+        "Y"
+      ],
+      "world_extent_cm": [
+        52.0,
+        32.0
+      ],
+      "whole_view_axis_calibration_cm_per_px": [
+        0.13333333333333333,
+        0.27586206896551724
+      ],
+      "raw_aspect": 3.3620689655172415,
+      "numeric_aspect": 1.625,
+      "raw_aspect_residual_percent": 106.89655172413795,
+      "complete_view_registration_count": 1,
+      "per_component_scale_or_recenter_count": 0,
+      "authority_resolution": "Numeric world frame overrides illustrated panel drift; the complete clean panel remains visible-shape and surface evidence inside the locked numeric envelope."
+    },
+    "bottom": {
+      "crop_box_px": [
+        575,
+        1111,
+        953,
+        1259
+      ],
+      "crop_sha256": "2618cc3a12d8cd76397b07d6d843c26946fade93081d57fc6427929b4f1bac8d",
+      "mask_sha256": "8962cce5a7dd7f8ff329a9b962fe914a4177286eb49d8fa9f56229f388b065f7",
+      "cutout_sha256": "1120ddbf58762c5473945f05c48c86cd6f518f641aaf196a69ac6877b8294fdb",
+      "object_bbox_local_px": [
+        0,
+        0,
+        378,
+        113
+      ],
+      "object_extent_px": [
+        378,
+        113
+      ],
+      "world_axes": [
+        "X",
+        "Y"
+      ],
+      "world_extent_cm": [
+        52.0,
+        32.0
+      ],
+      "whole_view_axis_calibration_cm_per_px": [
+        0.13756613756613756,
+        0.2831858407079646
+      ],
+      "raw_aspect": 3.3451327433628317,
+      "numeric_aspect": 1.625,
+      "raw_aspect_residual_percent": 105.85432266848196,
+      "complete_view_registration_count": 1,
+      "per_component_scale_or_recenter_count": 0,
+      "authority_resolution": "Numeric world frame overrides illustrated panel drift; the complete clean panel remains visible-shape and surface evidence inside the locked numeric envelope."
+    }
+  },
+  "pregeometry_gate": {
+    "six_fresh_crops": true,
+    "six_nonempty_object_masks": true,
+    "complete_view_registration_count": 6,
+    "per_component_scale_or_recenter_count": 0,
+    "shared_centerline": "X=0,Y=0",
+    "height_stations_cm": [
+      0,
+      14,
+      18,
+      60,
+      132,
+      170
+    ],
+    "numeric_authority_overrides_illustrated_drift": true,
+    "status": "pass"
+  },
+  "evidence_board": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/evidence/VISUAL_FIDELITY_A05/SM_DRW_SiegeBreaker_Hammer_A01_A05_ORTHOGRAPHIC_INTAKE_BOARD.png",
+  "evidence_board_sha256": "78a6af7749adde6467bd7108b3143e47155ae45cd0fcedae6e2ccb247bff0a77"
+}

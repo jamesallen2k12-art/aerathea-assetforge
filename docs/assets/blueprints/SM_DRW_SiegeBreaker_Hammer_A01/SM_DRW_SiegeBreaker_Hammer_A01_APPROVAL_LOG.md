@@ -151,3 +151,20 @@
 - Excluded: Unreal import, `Fully game-ready`, self-approval of final visual
   quality, and unrelated worktree changes.
 - Execution state: `approved and queued for the first post-reset agent`.
+
+## A05 Objective Result
+
+- Date: 2026-07-21.
+- Fresh source intake: six object-only orthographic masks; zero A03/A04 inputs.
+- Construction: genuine closed volumes on one shared `X=0,Y=0` axis.
+- Evaluated bounds: `51.999998 x 31.999999 x 170.000005 cm`.
+- LOD triangles: `7144 / 4856 / 3000 / 1428`.
+- Production set: five materials, twenty 2K PBR maps, three custom collision
+  proxies, four FBXs, one GLB, and clean reimports.
+- Independent fail-closed audit: `pass`, `28/28`.
+- Final review board SHA-256:
+  `befd52f5668abcbdadb0e8ce5c6798c9ad5a02c711037fe4ba851b59333b5aef`.
+- Pipeline status: `DCC game-ready candidate pending Flamestrike visual approval`.
+- Pending authority: Flamestrike `approved`, `rejected`, or `blocked` decision.
+- Unreal authority: `false`.
+- Fully game-ready: `false`.

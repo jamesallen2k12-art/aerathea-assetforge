@@ -1,0 +1,17 @@
+{
+  "schema": "aerathea.siegebreaker_a05_review_package.v1",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "artifact_status": "candidate",
+  "pipeline_status": "DCC game-ready candidate pending Flamestrike visual approval",
+  "final_board": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/SM_DRW_SiegeBreaker_Hammer_A01_A05_FINAL_REVIEW_BOARD.png",
+  "final_board_sha256": "befd52f5668abcbdadb0e8ce5c6798c9ad5a02c711037fe4ba851b59333b5aef",
+  "audit_status": "pass",
+  "audit_gates": [
+    28,
+    28
+  ],
+  "a03_a04_construction_inputs": 0,
+  "visible_review_open_required": true,
+  "unreal_authority": false,
+  "fully_game_ready": false
+}

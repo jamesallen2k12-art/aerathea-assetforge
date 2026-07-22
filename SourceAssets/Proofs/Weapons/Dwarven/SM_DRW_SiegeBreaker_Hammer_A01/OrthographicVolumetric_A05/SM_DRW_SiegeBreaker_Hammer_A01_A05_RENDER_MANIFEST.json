@@ -1,0 +1,150 @@
+{
+  "schema": "aerathea.siegebreaker_a05_render_set.v1",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "artifact_status": "proof only",
+  "blend": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/OrthographicVolumetric_A05/SM_DRW_SiegeBreaker_Hammer_A01_DCCGameReady_OrthographicVolumetric_A05.blend",
+  "views": {
+    "FRONT": {
+      "path": "SourceAssets/Proofs/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/OrthographicVolumetric_A05/SM_DRW_SiegeBreaker_Hammer_A01_A05_FRONT.png",
+      "sha256": "94dbca79deb24dac4edf86b5e8d52cdb4dbe68612d6c9e92866f2eaee1106848",
+      "camera_position": [
+        0.0,
+        -4.2,
+        0.88
+      ],
+      "target": [
+        0.0,
+        0.0,
+        0.86
+      ],
+      "projection": "ORTHO",
+      "scale_or_lens": 1.88
+    },
+    "BACK": {
+      "path": "SourceAssets/Proofs/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/OrthographicVolumetric_A05/SM_DRW_SiegeBreaker_Hammer_A01_A05_BACK.png",
+      "sha256": "92fce3d69a75a5a61cf97d75b4b8afba4724a5f81f47ad480a498c1d64c2bc7f",
+      "camera_position": [
+        0.0,
+        4.2,
+        0.88
+      ],
+      "target": [
+        0.0,
+        0.0,
+        0.86
+      ],
+      "projection": "ORTHO",
+      "scale_or_lens": 1.88
+    },
+    "LEFT": {
+      "path": "SourceAssets/Proofs/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/OrthographicVolumetric_A05/SM_DRW_SiegeBreaker_Hammer_A01_A05_LEFT.png",
+      "sha256": "1fd65c11ae446ddfc803ba6d47e545eba850fcca86492b8160aebf961771f6a6",
+      "camera_position": [
+        -4.2,
+        0.0,
+        0.88
+      ],
+      "target": [
+        0.0,
+        0.0,
+        0.86
+      ],
+      "projection": "ORTHO",
+      "scale_or_lens": 1.88
+    },
+    "RIGHT": {
+      "path": "SourceAssets/Proofs/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/OrthographicVolumetric_A05/SM_DRW_SiegeBreaker_Hammer_A01_A05_RIGHT.png",
+      "sha256": "d8daf5616cb080b50c1208df68997d9674a3e1f64140cbed76f2a72d49be7b6d",
+      "camera_position": [
+        4.2,
+        0.0,
+        0.88
+      ],
+      "target": [
+        0.0,
+        0.0,
+        0.86
+      ],
+      "projection": "ORTHO",
+      "scale_or_lens": 1.88
+    },
+    "TOP": {
+      "path": "SourceAssets/Proofs/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/OrthographicVolumetric_A05/SM_DRW_SiegeBreaker_Hammer_A01_A05_TOP.png",
+      "sha256": "caea0342bc404923f147d792f0253801e8c7942c60265a17e41179ec00ff4f2f",
+      "camera_position": [
+        0.0,
+        0.0,
+        4.2
+      ],
+      "target": [
+        0.0,
+        0.0,
+        1.51
+      ],
+      "projection": "ORTHO",
+      "scale_or_lens": 0.62
+    },
+    "BOTTOM": {
+      "path": "SourceAssets/Proofs/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/OrthographicVolumetric_A05/SM_DRW_SiegeBreaker_Hammer_A01_A05_BOTTOM.png",
+      "sha256": "f10b1e7f8ecd34e07acf96802e12e469c5bdaf35beb234e6c91cf8b781ccf6de",
+      "camera_position": [
+        0.0,
+        0.0,
+        -3.5
+      ],
+      "target": [
+        0.0,
+        0.0,
+        1.51
+      ],
+      "projection": "ORTHO",
+      "scale_or_lens": 0.62
+    },
+    "BEAUTY": {
+      "path": "SourceAssets/Proofs/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/OrthographicVolumetric_A05/SM_DRW_SiegeBreaker_Hammer_A01_A05_BEAUTY.png",
+      "sha256": "6e5133ee20d198a54852118b5132d94fb5a20c2a499de0d22cdc5ce8cde03626",
+      "camera_position": [
+        2.05,
+        -2.8,
+        2.3
+      ],
+      "target": [
+        0.0,
+        0.0,
+        0.94
+      ],
+      "projection": "PERSP",
+      "scale_or_lens": 62.0
+    }
+  },
+  "parallax": [
+    {
+      "path": "SourceAssets/Proofs/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/OrthographicVolumetric_A05/SM_DRW_SiegeBreaker_Hammer_A01_A05_PARALLAX_01.png",
+      "sha256": "bdf7934780daca584524cbd4d829d1aa6ded108bcf1d3be89fd8cec1f155ce2e",
+      "yaw_deg": -60
+    },
+    {
+      "path": "SourceAssets/Proofs/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/OrthographicVolumetric_A05/SM_DRW_SiegeBreaker_Hammer_A01_A05_PARALLAX_02.png",
+      "sha256": "7bce9f594113bfd74eca27b89b57cc81c725582351129752d3b82ccb0d8cb21c",
+      "yaw_deg": -30
+    },
+    {
+      "path": "SourceAssets/Proofs/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/OrthographicVolumetric_A05/SM_DRW_SiegeBreaker_Hammer_A01_A05_PARALLAX_03.png",
+      "sha256": "802ddbeebc2f936813901a4d093ddf2bd2c4a47c6123f3655c758dc602807a61",
+      "yaw_deg": 0
+    },
+    {
+      "path": "SourceAssets/Proofs/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/OrthographicVolumetric_A05/SM_DRW_SiegeBreaker_Hammer_A01_A05_PARALLAX_04.png",
+      "sha256": "9037f1d1032a6a3be83c3b04718f75523454cfef5dd0c5856693379dfcc1412a",
+      "yaw_deg": 30
+    },
+    {
+      "path": "SourceAssets/Proofs/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/OrthographicVolumetric_A05/SM_DRW_SiegeBreaker_Hammer_A01_A05_PARALLAX_05.png",
+      "sha256": "71bbf231daf5dc9d050f86f8937bae7e36d4d216b6ab90d8752d30b149ca848f",
+      "yaw_deg": 60
+    }
+  ],
+  "render_engine": "BLENDER_EEVEE",
+  "fixed_object": true,
+  "intermediate_review_visibility": "internal only"
+}

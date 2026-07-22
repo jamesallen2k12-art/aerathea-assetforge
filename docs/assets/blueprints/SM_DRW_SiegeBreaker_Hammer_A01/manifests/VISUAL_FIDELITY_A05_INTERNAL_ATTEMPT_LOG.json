@@ -1,0 +1,42 @@
+{
+  "schema": "aerathea.siegebreaker_a05_internal_attempt_log.v1",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "contract_id": "SB-VF-A05-ORTHOGRAPHIC-VOLUMETRIC",
+  "artifact_status": "reference only",
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "rejected internal",
+      "reasons": [
+        "central head read too rectangular",
+        "stone material hierarchy was too pale",
+        "side strike-face canonical rune diamonds were missing",
+        "leather and rune hierarchy was too weak"
+      ],
+      "eligible_for_flamestrike_review": false
+    },
+    {
+      "attempt": 2,
+      "status": "rejected internal",
+      "reasons": [
+        "side strike rune layers were coplanar with bronze frames and z-fought"
+      ],
+      "eligible_for_flamestrike_review": false
+    },
+    {
+      "attempt": 3,
+      "status": "rejected technical",
+      "reasons": [
+        "two leather wrap helix meshes contained open end rings"
+      ],
+      "eligible_for_flamestrike_review": false
+    },
+    {
+      "attempt": 4,
+      "status": "candidate",
+      "independent_audit": "pass 28/28",
+      "final_board_sha256": "befd52f5668abcbdadb0e8ce5c6798c9ad5a02c711037fe4ba851b59333b5aef",
+      "eligible_for_flamestrike_review": true
+    }
+  ]
+}

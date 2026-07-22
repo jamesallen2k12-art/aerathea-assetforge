@@ -50,5 +50,11 @@
 | `manifests/SOURCE_AUTHORITY_A05_ORTHOGRAPHIC.json` | `authoritative` | Promotes the supplied detailed orthographic dataset under the exact numeric/common-axis frame and limits the 3/4 render to style review. |
 | `steps/VISUAL_FIDELITY_A05_ORTHOGRAPHIC_VOLUMETRIC_REBUILD_CONTRACT.md` | `authoritative` | Approved next-agent end-to-end rebuild steps and fail-closed gates. |
 | `steps/VISUAL_FIDELITY_A04_DRIFT_RECOVERY_A05_RESTART_HANDOFF.md` | `authoritative` | Reset-safe resume order, quarantine rules, and final-only review behavior. |
+| A05 fresh orthographic intake, six masks, and intake board | `proof only` | Source-clean measurement and zero-A03/A04 pregeometry evidence. |
+| `SM_DRW_SiegeBreaker_Hammer_A01_DCCGameReady_OrthographicVolumetric_A05.blend` | `candidate` | Genuine volumetric A05 DCC source pending Flamestrike visual approval. |
+| A05 twenty-map 2K PBR package | `candidate` | Stone, bronze, steel, leather, and restrained rune BC/N/ORM/E maps. |
+| A05 LOD0-LOD3 FBXs, GLB, and three collision proxies | `candidate` | Clean-reimported production package; Unreal not authorized. |
+| `manifests/VISUAL_FIDELITY_A05_TECHNICAL_AUDIT.json` | `proof only` | Independent `28/28` evaluated geometry, texture, topology, export, and reimport pass. |
+| A05 final review board SHA `befd52f5...b5aef` | `candidate` | Exact visible board pending Flamestrike `approved`, `rejected`, or `blocked` decision. |
 
-Unreal authority is `false`. `Fully game-ready` is `false`. No A01/A02/A03/A04 visual candidate is eligible for approval. A05 is approved and queued after reset; no A05 production artifact exists yet.
+Unreal authority is `false`. `Fully game-ready` is `false`. No A01/A02/A03/A04 visual candidate is eligible for approval. A05 is the sole current `DCC game-ready candidate` and awaits Flamestrike visual approval.
