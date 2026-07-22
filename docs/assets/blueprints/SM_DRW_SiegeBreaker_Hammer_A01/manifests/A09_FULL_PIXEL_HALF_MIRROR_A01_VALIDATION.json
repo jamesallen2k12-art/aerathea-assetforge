@@ -1,0 +1,110 @@
+{
+  "schema": "aerathea.siegebreaker.a09_pixel_half_mirror_validation.v1",
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "attempt": "A09_PixelHalfMirror_VisualMatch_A01",
+  "contract_id": "SB-PHM-A09-FULL-MIRROR",
+  "artifact_status": "DCC source candidate pending Flamestrike visual decision",
+  "software": {
+    "blender": "3.0.1",
+    "image_generation": false,
+    "trellis": false
+  },
+  "source_hashes": {
+    "front": "d00bf9ffcfd4862884626fa961c5f6b4fd6cedfdff7936b2210ca2a905e57e95",
+    "back": "15b4633f2df4ee06115ef4a7e238f287ebece1bae514ad4005c1036a57359799",
+    "left": "1a23e0c24f7be4b12df93e2509b9d300acc9161a21a32b336f7cf63c1288d91b",
+    "concept": "9f1ac142a5047968bb20c74216c2dccf61470ed9f4e21689ff01934bd849c586"
+  },
+  "source_rectangles_half_open": {
+    "front": [
+      317,
+      193,
+      808,
+      1304
+    ],
+    "back": [
+      285,
+      193,
+      818,
+      1344
+    ],
+    "left": [
+      397,
+      190,
+      612,
+      1299
+    ]
+  },
+  "exact_component_membership_pixels": {
+    "front": 212765,
+    "back": 238342,
+    "left": 118540
+  },
+  "visual_match_scale": {
+    "authority": "uniform source-pixel proportions",
+    "cm_per_front_pixel": 0.15301530153015303,
+    "cm_per_left_pixel": 0.1532912533814247,
+    "overall_length_anchor_cm": 170.0,
+    "printed_52cm_width_used": false,
+    "target_envelope_cm": [
+      75.13051305130513,
+      32.95761947700631,
+      170.0
+    ]
+  },
+  "construction": {
+    "source_half": "X>=0",
+    "mirror_plane": "X=0",
+    "mirror_applied": true,
+    "prior_candidate_geometry_inputs": 0,
+    "source_projection_is_geometry_proof": false,
+    "inward_relief_max_cm": 0.72,
+    "source_half_active_pixels": 107736,
+    "source_half_boundary_pixels": 2749,
+    "half_vertices_before_mirror": 218742,
+    "half_faces_before_mirror": 217638,
+    "complete_vertices": 435278,
+    "complete_polygons": 435276
+  },
+  "mesh_bounds": {
+    "min_cm": [
+      -37.565258,
+      -16.478809,
+      0.0
+    ],
+    "max_cm": [
+      37.565258,
+      16.478809,
+      170.0
+    ],
+    "dimensions_cm": [
+      75.130516,
+      32.957619,
+      170.0
+    ]
+  },
+  "symmetry": {
+    "unique_vertices": 435278,
+    "missing_mirrored_vertices": 0,
+    "pass": true
+  },
+  "comparison": {
+    "right_half_mean_absolute_rgb_delta": 6.140577
+  },
+  "outputs": {
+    "blend_local_only": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A09_PixelHalfMirror_VisualMatch_A01/SM_DRW_SiegeBreaker_Hammer_A01_A09_PixelHalfMirror_VisualMatch_A01.blend",
+    "front_render": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A09_FULL_PIXEL_HALF_MIRROR_A01_FRONT.png",
+    "color_3q": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A09_FULL_PIXEL_HALF_MIRROR_A01_COLOR_3Q.png",
+    "geometry_3q": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A09_FULL_PIXEL_HALF_MIRROR_A01_GEOMETRY_3Q.png",
+    "review": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A09_FULL_PIXEL_HALF_MIRROR_A01_REVIEW.png"
+  },
+  "output_hashes": {
+    "blend": "06ffb121d00cddb7b9e30a60067a5036a851d285f15daca3bffe3a663fd6d78f",
+    "front_render": "a8d1cc06b80815d1acfa6cef85c6b48ccdae2828a5f3fb67574a686c5d720d42",
+    "color_3q": "0a0f59100f02ddc5fe2ca5817add3666be164b3bf6cc778ece04dd85cab0f1f0",
+    "geometry_3q": "1b0d24d98d9a604824f97fa6cdc9ce91f5184722c15c9044924eae311bdb7598",
+    "review": "63b52d3f0ebc4c10ff088f0d8a926281e2e136eaa609c2ede77cc19053f1dccf"
+  },
+  "unreal_authority": false,
+  "fully_game_ready": false
+}

@@ -63,5 +63,29 @@
 | `steps/A07_GATE_00_COMMERCIAL_SAFE_EXECUTION_PATH_CONTRACT.md` | `authoritative` | Approved post-reset read-only preflight; must produce a fail-closed license-path decision before source processing or inference. |
 | A06 measurement-first route | `reference only for A07 routing; preserved in-place` | Remains at Step 10 with its existing internal evidence classifications, but no longer controls the active production route. |
 | Existing TRELLIS/TRELLIS.2 outputs using the restricted GLB path | `proof only / reference only` | Forbidden as A07 construction, geometry, texture, or measurement inputs. |
+| `SM_DRW_SiegeBreaker_Hammer_A01_BLENDER_ONLY_SOURCE_RECONSTRUCTION_A08_PLAN.md` | `authoritative` | Active Blender-only, component-bounded route based on the proven Cairnstone A04 plinth method. |
+| `steps/A08_STEP_01_POMMEL_SOURCE_RECONSTRUCTION_CONTRACT.md` | `authoritative for execution scope` | Permits only the fresh isolated `18 x 11 cm` pommel and Blender-rendered source comparison. |
+| `Tools/DCC/build_siegebreaker_a08_pommel_a01.py` | `candidate production tool` | Fresh Blender-only pommel builder; consumes no prior Siege Breaker geometry. |
+| A08 pommel Attempt A01 `.blend`, manifest, and review | `quarantined` | Internally rejected for clipped comparison framing, missing labels, solid-placeholder rune, and weak material hierarchy. |
+| `manifests/A08_STEP_01_INTERNAL_REJECTIONS.md` | `authoritative defect record` | Preserves the A01 rejection boundary and limits A02 to the recorded corrections. |
+| A08 pommel Attempt A02 `.blend`, manifest, and review | `quarantined` | Internally rejected because the orthographic camera scale/aspect clipped the candidate and labels; rune/material corrections remain defect evidence only. |
+| A08 pommel Attempt A03 `.blend`, manifest, and review | `quarantined` | Review rig passed, but source-visible plate, rune, band, and brace proportions failed internal fidelity review. |
+| A08 pommel Attempt A04 `.blend`, manifest, and review | `quarantined` | Exact numeric bounds passed, but the production review lost its source panel and the rune motif remained generic. |
+| A08 pommel Attempt A05 `.blend`, manifest, and review | `quarantined` | First valid comparison and source rune motif, but side-panel/rivet segmentation and focal-plate metal hierarchy remained incomplete. |
+| `SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A08_BlenderOnly_Pommel_A06/SM_DRW_SiegeBreaker_Hammer_A01_A08_Pommel_A06.blend` | `candidate` | Fresh isolated Blender-only pommel at exact `18 x 11 cm`; pending Flamestrike visual decision. |
+| `review/A08_STEP_01_POMMEL_A06_REVIEW.png` | `candidate review artifact` | Exact Blender-rendered authoritative-source versus A06 comparison, opened for Flamestrike decision. |
+| `manifests/A08_STEP_01_POMMEL_A06_VALIDATION.json` | `proof only` | Builder evidence, hashes, numeric bounds, software boundary, and interpretation status. |
+| `manifests/A08_STEP_01_POMMEL_A06_INDEPENDENT_AUDIT.json` | `proof only` | Independent Blender audit `18/18`; cannot approve visual fidelity. |
+| `steps/A08_STEP_01_POMMEL_A06_OUTPUT_RECORD.md` | `authoritative status record` | A06 output, recovery history, evidence boundary, and pending decision. |
 
-Unreal authority is `false`. `Fully game-ready` is `false`. No A01/A02/A03/A04 visual candidate is eligible for approval. A05 remains a historical undecided `DCC game-ready candidate`; A07 is the active approved route and has not created a visual or DCC candidate.
+| `manifests/A08_A07_ESTIMATED_MATCH_RECOVERY.md` | `authoritative recovery boundary` | Records the unexecuted estimated-crop/yaw A07 drift and forbids repair-forward. |
+| `Tools/DCC/build_siegebreaker_a08_pommel_a07.py` | `invalid; unexecuted` | Preserved defect evidence containing estimated crop/yaw values; forbidden as an A09 or later construction input. |
+| `SM_DRW_SiegeBreaker_Hammer_A01_PIXEL_HALF_MIRROR_A09_PLAN.md` | `authoritative` | Locks Visual Match, uniform source-pixel proportions, one-half construction, mirroring, and proof separation. |
+| `steps/A09_FULL_PIXEL_HALF_MIRROR_VISUAL_MATCH_CONTRACT.md` | `authoritative for execution scope` | Permits the complete fresh pixel-scanned half, exact mirror, Blender renders, manifest, audit, and visible stop gate. |
+| `SM_DRW_SiegeBreaker_Hammer_A01_A09_PixelHalfMirror_VisualMatch_A01.blend` | `candidate; local only` | Fresh complete pixel-proportion mesh built as `X>=0` and mirrored at `X=0`; pending Flamestrike visual decision. |
+| `review/A09_FULL_PIXEL_HALF_MIRROR_A01_REVIEW.png` | `candidate review artifact` | Exact source, completed front, difference, colored three-quarter, and separate gray geometry proof; SHA `63b52d3f...f1dccf`. |
+| `manifests/A09_FULL_PIXEL_HALF_MIRROR_A01_VALIDATION.json` | `proof only` | Source hashes/counts, build statistics, pixel-proportion envelope, symmetry, comparison, and output hashes. |
+| `manifests/A09_FULL_PIXEL_HALF_MIRROR_A01_INDEPENDENT_AUDIT.json` | `proof only` | Independent Blender audit `22/22`; cannot approve visual fidelity. |
+| `steps/A09_FULL_PIXEL_HALF_MIRROR_A01_OUTPUT_RECORD.md` | `authoritative status record` | A09 outputs, hashes, software boundary, technical result, and pending Flamestrike decision. |
+
+Unreal authority is `false`. `Fully game-ready` is `false`. No A01/A02/A03/A04 visual candidate is eligible for approval. A05 remains a historical undecided `DCC game-ready candidate`. A07 stopped before producing an output and is superseded. A08 is historical. A09 has reached its visible decision gate; further production is stopped pending Flamestrike's classification.

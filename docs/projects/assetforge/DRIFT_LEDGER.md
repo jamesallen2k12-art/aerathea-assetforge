@@ -676,3 +676,15 @@ Core authority: `AGENTS.md` Core Principles govern this ledger. Drifted artifact
 - Recovery decision: stop DCC production and do not package A02 for approval. Reuse the successful cairnstone pixel-coordinate and source-measurement method in a measurement-only gate, but first select one hammer view as primary projected visual authority and audit the remaining panels for conflicting information. Pixel evidence may control projected silhouette, landmarks, component boundaries, and rendered-reference color; it may not invent hidden 3D surfaces or override the exact numeric envelope.
 - Blueprint block: source authority missing. `SOURCE_AUTHORITY_LOCK.json`, the project charter, and the active contracts currently classify the concept as `style only` and disallow concept-panel geometry overrides. Flamestrike must approve the proposed source-view authority rule before measurement can become A03 geometry authority.
 - Follow-up Core/Kaizen improvement: technical completion and resemblance require separate gates. A DCC candidate cannot receive a visual-fidelity classification without a camera-calibrated source-versus-render comparison against an explicitly selected, non-conflicting source view.
+
+### 2026-07-22 - Siege Breaker A08 A07 Estimated Perfect-Match Drift
+
+- Asset or scope: `SM_DRW_SiegeBreaker_Hammer_A01` A08 pommel revision.
+- Detected by: Flamestrike before A07 execution.
+- Last known Core-valid state: immutable Siege Breaker sources, exact A06 source crops, and the Blender-only software boundary.
+- First drift action: A07 encoded an estimated source window (`x=512..628`, `y=1074..1253`) and hand-selected `13 degree` yaw while being described as a perfect-match pass.
+- Assumption that caused drift: visual estimates were treated as equivalent to exact source-pixel measurements.
+- Affected outputs: `Tools/DCC/build_siegebreaker_a08_pommel_a07.py` only; it was never executed and created no `.blend`, manifest, or review.
+- Artifact statuses: A07 script `invalid; preserved in place`; A06 pommel `reference only; revision requested`; A01-A05 remain `quarantined`.
+- Recovery decision: do not repair A07 forward. Flamestrike selected A09 `Visual Match`: uniform source-pixel proportions anchored by the `170 cm` length, one fresh `X>=0` Blender half, exact center-plane mirror, separate geometry and color proof.
+- Follow-up Core/Kaizen improvement: any claim of pixel-perfect matching must derive crop, center, scale, and camera values from recorded source pixels; estimated values are an automatic stop-line failure.

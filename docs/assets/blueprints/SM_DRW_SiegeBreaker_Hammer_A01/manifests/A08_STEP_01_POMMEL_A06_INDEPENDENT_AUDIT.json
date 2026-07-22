@@ -1,0 +1,163 @@
+{
+  "schema": "aerathea.siegebreaker_a08_pommel_a06_independent_audit.v1",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "contract_id": "SB-BSR-A08-STEP01-POMMEL",
+  "status": "pass",
+  "artifact_status": "proof only",
+  "gate_summary": {
+    "passed": 18,
+    "total": 18
+  },
+  "local_bounds_cm": {
+    "minimum": [
+      -5.5,
+      -5.047596454620361,
+      0.0
+    ],
+    "maximum": [
+      5.5,
+      4.680000305175781,
+      18.0
+    ],
+    "extent": [
+      11.0,
+      9.727596759796143,
+      18.0
+    ]
+  },
+  "gates": [
+    {
+      "name": "source_hash",
+      "pass": true,
+      "evidence": "9f1ac142a5047968bb20c74216c2dccf61470ed9f4e21689ff01934bd849c586"
+    },
+    {
+      "name": "contract_id",
+      "pass": true,
+      "evidence": "SB-BSR-A08-STEP01-POMMEL"
+    },
+    {
+      "name": "blender_only",
+      "pass": true,
+      "evidence": "Blender only"
+    },
+    {
+      "name": "historical_geometry_inputs_zero",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "hidden_surface_authority_false",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "height_18_cm",
+      "pass": true,
+      "evidence": 18.0
+    },
+    {
+      "name": "width_11_cm",
+      "pass": true,
+      "evidence": 11.0
+    },
+    {
+      "name": "origin_z_zero",
+      "pass": true,
+      "evidence": 0.0
+    },
+    {
+      "name": "candidate_fully_in_frame",
+      "pass": true,
+      "evidence": {
+        "minimum": [
+          0.6010981798171997,
+          0.15217380225658417
+        ],
+        "maximum": [
+          0.8554235696792603,
+          0.8478260040283203
+        ]
+      }
+    },
+    {
+      "name": "source_display_fully_in_frame",
+      "pass": true,
+      "evidence": [
+        [
+          0.11580583453178406,
+          0.15217380225658417
+        ],
+        [
+          0.42767244577407837,
+          0.15217380225658417
+        ],
+        [
+          0.42767244577407837,
+          0.8478260040283203
+        ],
+        [
+          0.11580583453178406,
+          0.8478260040283203
+        ]
+      ]
+    },
+    {
+      "name": "source_labels_present",
+      "pass": true,
+      "evidence": [
+        "AUTHORITATIVE_SOURCE",
+        "UNCHANGED_CONCEPT_UV_WINDOW"
+      ]
+    },
+    {
+      "name": "required_visible_groups",
+      "pass": true,
+      "evidence": [
+        "FacetedBody",
+        "UpperCollar",
+        "LowerForgedBand",
+        "FrontRecess",
+        "BronzeFrame",
+        "SteelFrame",
+        "RuneCrystal",
+        "LeftPanelFrame",
+        "RightPanelFrame",
+        "Rivet"
+      ]
+    },
+    {
+      "name": "review_file_exists",
+      "pass": true,
+      "evidence": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A08_STEP_01_POMMEL_A06_REVIEW.png"
+    },
+    {
+      "name": "review_hash_matches_manifest",
+      "pass": true,
+      "evidence": "1562c44568c4ba40a6d074f241f4a55d3eb1c6ca6668026be7aa9a2e54ae55e4"
+    },
+    {
+      "name": "manifest_candidate_status",
+      "pass": true,
+      "evidence": "candidate_pending_flamestrike_visual_decision"
+    },
+    {
+      "name": "no_external_generated_images_loaded",
+      "pass": true,
+      "evidence": [
+        "/home/james/Projects/Aerathea/SourceAssets/Concepts/SiegeBreaker/siege_breaker_concept_view.png"
+      ]
+    },
+    {
+      "name": "unreal_outputs_zero",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "fully_game_ready_false",
+      "pass": true,
+      "evidence": false
+    }
+  ],
+  "decision_boundary": "Technical pass cannot approve visual fidelity; Flamestrike decision remains required."
+}

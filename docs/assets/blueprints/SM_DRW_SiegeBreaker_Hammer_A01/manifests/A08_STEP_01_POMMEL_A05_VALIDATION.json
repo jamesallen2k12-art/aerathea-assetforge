@@ -1,0 +1,95 @@
+{
+  "schema": "aerathea.siegebreaker_a08_pommel_candidate.v1",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "contract_id": "SB-BSR-A08-STEP01-POMMEL",
+  "date": "2026-07-22",
+  "status": "internally_rejected_before_flamestrike_review",
+  "artifact_status": "quarantined",
+  "software_boundary": {
+    "visual_and_geometry_software": "Blender 3.0.1",
+    "trellis_used": false,
+    "triposr_used": false,
+    "generative_image_or_image_to_3d_used": false,
+    "historical_geometry_inputs": 0
+  },
+  "authority_hashes": {
+    "source": "9f1ac142a5047968bb20c74216c2dccf61470ed9f4e21689ff01934bd849c586",
+    "plan": "4772b475c6ff631c762e351561dd1fd9198b13b205ec733873d28a6e436eb867",
+    "contract": "43c8f2bb5a51a00aa4fc0f86c20bafdcf5137528f64cfcd10b101198ddd0d857"
+  },
+  "source": {
+    "path": "SourceAssets/Concepts/SiegeBreaker/siege_breaker_concept_view.png",
+    "sha256": "9f1ac142a5047968bb20c74216c2dccf61470ed9f4e21689ff01934bd849c586",
+    "dimensions_px": [
+      1122,
+      1402
+    ],
+    "mutated": false,
+    "role": "authoritative visual target"
+  },
+  "numeric_gate": {
+    "required_height_cm": 18.0,
+    "required_max_width_cm": 11.0,
+    "required_minimum_z_cm": 0.0,
+    "measured_local_bounds": {
+      "minimum_cm": [
+        -5.5,
+        -5.010000705718994,
+        0.0
+      ],
+      "maximum_cm": [
+        5.5,
+        4.680000305175781,
+        18.0
+      ],
+      "extent_cm": [
+        11.0,
+        9.690001010894775,
+        18.0
+      ]
+    },
+    "height_pass": true,
+    "width_pass": true,
+    "origin_pass": true
+  },
+  "visible_groups": {
+    "faceted_body": true,
+    "upper_and_lower_collars": true,
+    "layered_front_diamond": true,
+    "forged_bracing": true,
+    "restrained_blue_rune": true
+  },
+  "interpretation_boundary": {
+    "depth": "candidate interpretation",
+    "rear_continuation": "unresolved",
+    "internal_attachment": "unresolved",
+    "approved_hidden_surface_authority": false
+  },
+  "mesh_signature_sha256": "05f25d311bcc04c929ab935c079515c660007a7285a2be58f695c72d4affb2b7",
+  "outputs": {
+    "blend": {
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A08_BlenderOnly_Pommel_A05/SM_DRW_SiegeBreaker_Hammer_A01_A08_Pommel_A05.blend",
+      "sha256": "19daee7a3b834635c22eb1d5a4fa516f135d00858272044c7d5dccb457a1d128"
+    },
+    "review": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A08_STEP_01_POMMEL_A05_REVIEW.png",
+      "sha256": "7dc6d7bd0c2efca18f21cf3fddfa034c1cf6a86ebbc0e8776ccce70ce1b4bb93"
+    },
+    "script": {
+      "path": "Tools/DCC/build_siegebreaker_a08_pommel_a05.py",
+      "sha256": "679422a58a66d1b9d343218f71e2d99d841fa77800cf72b537b865c0529ad2e4"
+    }
+  },
+  "unreal_outputs": 0,
+  "fully_game_ready": false,
+  "internal_rejection": {
+    "numeric_gate_pass": true,
+    "review_rig_pass": true,
+    "source_rune_motif_pass": true,
+    "side_panel_segmentation_pass": false,
+    "rivet_and_attachment_readability_pass": false,
+    "focal_plate_material_hierarchy_pass": false,
+    "eligible_for_flamestrike_review": false
+  },
+  "next_decision": "Attempt A06 may add only the recorded source-visible side panels, rivets, and plate metal hierarchy"
+}

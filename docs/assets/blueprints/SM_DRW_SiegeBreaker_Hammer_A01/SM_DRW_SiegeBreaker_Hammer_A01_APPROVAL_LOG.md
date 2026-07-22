@@ -27,6 +27,22 @@
 - Unreal authority: `false`.
 - Fully game-ready: `false`.
 
+## A09 Full Pixel-Half Visual-Match Authority
+
+- Date: `2026-07-22`.
+- Flamestrike decision: `use the pixel measurement proportions`, clarified as `Visual Match`.
+- Plan ID: `SB-PHM-A09`.
+- Contract: `SB-PHM-A09-FULL-MIRROR`.
+- Scale authority: uniform front pixel scale `170/1111 cm per pixel`.
+- Candidate envelope: approximately `75.130513051 x 32.957619477 x 170 cm`.
+- Printed `52 cm` width: preserved evidence but superseded for A09 geometry because it conflicts with the front image by `44.481756%`.
+- Construction authority: fresh source-scanned `X>=0` half followed by exact Blender mirror at `X=0`.
+- Review requirement: colored front visual-match render plus untextured geometry proof.
+- Software authority: Blender only; no TRELLIS, generated images, or image-to-3D.
+- Output ceiling: `DCC source candidate pending Flamestrike visual decision`.
+- Unreal authority: `false`.
+- Fully game-ready: `false`.
+
 ## Visual Fidelity A02 Execution Authority
 
 - Date: 2026-07-21.
@@ -263,3 +279,67 @@
 - Production state: A07 source processing, inference, and DCC work not started.
 - Unreal authority: `false`.
 - Fully game-ready: `false`.
+
+## A08 Blender-Only Proven-Process Route
+
+- Date: 2026-07-22.
+- Flamestrike direction: use no image-generation software in this process;
+  Blender is the sole exception; specifically, no TRELLIS.
+- Flamestrike decision: apply the process proven successful on the Blood Axe
+  Cairnstone A005 A04 plinth to Siege Breaker.
+- Evidence classification: the A04 plinth proves fresh, bounded,
+  source-constrained Blender reconstruction at component scope; later failures
+  of other Cairnstone base components do not invalidate the approved plinth.
+- Plan ID: `SB-BSR-A08`.
+- Active contract: `SB-BSR-A08-STEP01-POMMEL`.
+- First component: isolated `SB-C006` pommel at exact `18 x 11 cm` authority.
+- Construction boundary: zero A01-A07 Siege Breaker geometry inputs; unchanged
+  original concept; Blender-only visual and geometry output.
+- A07 state: stopped and superseded as the active route before Gate 00 output,
+  source processing, inference, or geometry.
+- Unreal authority: `false`.
+- Fully game-ready: `false`.
+
+## A08 Step 01 Pommel A06 Candidate
+
+- Date: 2026-07-22.
+- Contract: `SB-BSR-A08-STEP01-POMMEL`.
+- Result: one fresh Blender-only isolated pommel candidate.
+- Numeric result: exact `18.000 cm` height, `11.000 cm` maximum width, and
+  `Z=0.000 cm` bottom/pivot station.
+- Software result: Blender 3.0.1 only; TRELLIS, TripoSR, generative-image, and
+  image-to-3D use all `false`.
+- Historical geometry inputs: `0`.
+- Independent audit: `pass 18/18`; `proof only`.
+- Review SHA-256:
+  `1562c44568c4ba40a6d074f241f4a55d3eb1c6ca6668026be7aa9a2e54ae55e4`.
+- Artifact status: `candidate pending Flamestrike visual decision`.
+- Interpretation boundary: depth, rear continuation, and internal attachment
+  are not approved.
+- Next decision: Flamestrike `approved`, `revise`, `rejected`, or `blocked` for
+  the A06 pommel only.
+- Adjacent component authority: `false`.
+- Unreal authority: `false`.
+- Fully game-ready: `false`.
+
+## A09 Full Pixel-Half Mirror A01 Candidate
+
+- Date: 2026-07-22.
+- Flamestrike direction: use pixel-measurement proportions, construct the full
+  `X>=0` half in Blender, mirror it, and show the completed image.
+- Contract: `SB-PHM-A09-FULL-MIRROR`.
+- Result: one fresh complete mirrored Blender model from immutable front,
+  left, and back source pixels; prior candidate geometry inputs `0`.
+- Visual-match envelope: `75.130516 x 32.957619 x 170.000000 cm`.
+- Complete mesh: `435278` vertices and `435276` polygons.
+- Independent symmetry: `0` missing mirrored vertices.
+- Independent audit: `pass 22/22`; `proof only`.
+- Review SHA-256:
+  `63b52d3f0ebc4c10ff088f0d8a926281e2e136eaa609c2ede77cc19053f1dccf`.
+- Software: Blender 3.0.1 only; image generation, TRELLIS, and image-to-3D
+  were not used.
+- Artifact status: `DCC source candidate pending Flamestrike visual decision`.
+- Next decision: Flamestrike `approved`, `revise`, `rejected`, or `blocked` for
+  the complete A09 candidate.
+- Further DCC, exports, Unreal, and game-ready escalation: `false` pending the
+  visual decision.

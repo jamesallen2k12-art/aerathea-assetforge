@@ -1,0 +1,94 @@
+{
+  "schema": "aerathea.siegebreaker_a08_pommel_candidate.v1",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "contract_id": "SB-BSR-A08-STEP01-POMMEL",
+  "date": "2026-07-22",
+  "status": "internally_rejected_before_flamestrike_review",
+  "artifact_status": "quarantined",
+  "software_boundary": {
+    "visual_and_geometry_software": "Blender 3.0.1",
+    "trellis_used": false,
+    "triposr_used": false,
+    "generative_image_or_image_to_3d_used": false,
+    "historical_geometry_inputs": 0
+  },
+  "authority_hashes": {
+    "source": "9f1ac142a5047968bb20c74216c2dccf61470ed9f4e21689ff01934bd849c586",
+    "plan": "4772b475c6ff631c762e351561dd1fd9198b13b205ec733873d28a6e436eb867",
+    "contract": "43c8f2bb5a51a00aa4fc0f86c20bafdcf5137528f64cfcd10b101198ddd0d857"
+  },
+  "source": {
+    "path": "SourceAssets/Concepts/SiegeBreaker/siege_breaker_concept_view.png",
+    "sha256": "9f1ac142a5047968bb20c74216c2dccf61470ed9f4e21689ff01934bd849c586",
+    "dimensions_px": [
+      1122,
+      1402
+    ],
+    "mutated": false,
+    "role": "authoritative visual target"
+  },
+  "numeric_gate": {
+    "required_height_cm": 18.0,
+    "required_max_width_cm": 11.0,
+    "required_minimum_z_cm": 0.0,
+    "measured_local_bounds": {
+      "minimum_cm": [
+        -5.5,
+        -5.5,
+        0.0
+      ],
+      "maximum_cm": [
+        5.5,
+        5.5,
+        18.0
+      ],
+      "extent_cm": [
+        11.0,
+        11.0,
+        18.0
+      ]
+    },
+    "height_pass": true,
+    "width_pass": true,
+    "origin_pass": true
+  },
+  "visible_groups": {
+    "faceted_body": true,
+    "upper_and_lower_collars": true,
+    "layered_front_diamond": true,
+    "forged_bracing": true,
+    "restrained_blue_rune": true
+  },
+  "interpretation_boundary": {
+    "depth": "candidate interpretation",
+    "rear_continuation": "unresolved",
+    "internal_attachment": "unresolved",
+    "approved_hidden_surface_authority": false
+  },
+  "mesh_signature_sha256": "5b2ffbc506690c27d15e617499d27cc9823368b2b65084b8489c6fec081bd373",
+  "outputs": {
+    "blend": {
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A08_BlenderOnly_Pommel_A02/SM_DRW_SiegeBreaker_Hammer_A01_A08_Pommel_A02.blend",
+      "sha256": "6905952c21325446174e82a02f531aef98a268c506a89422df5ba746f0b71151"
+    },
+    "review": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A08_STEP_01_POMMEL_A02_REVIEW.png",
+      "sha256": "153bfeabb50dea1e84e87d9b70648d12f64f7ac84b26b389016f8ef4f4ea8529"
+    },
+    "script": {
+      "path": "Tools/DCC/build_siegebreaker_a08_pommel_a02.py",
+      "sha256": "0d07d0b969aaae9820c4ec9f1917a852e4cd4de0fcc31fae81263d89353c19a7"
+    }
+  },
+  "unreal_outputs": 0,
+  "fully_game_ready": false,
+  "internal_rejection": {
+    "rune_matches_outlined_source_motif": true,
+    "material_hierarchy_readable": true,
+    "camera_aspect_scale_correct": false,
+    "complete_candidate_visible": false,
+    "review_labels_visible": false,
+    "eligible_for_flamestrike_review": false
+  },
+  "next_decision": "Attempt A03 may correct only the recorded review-camera and source-window defects"
+}

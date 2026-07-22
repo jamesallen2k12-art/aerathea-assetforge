@@ -1,0 +1,93 @@
+{
+  "schema": "aerathea.siegebreaker_a08_pommel_candidate.v1",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "contract_id": "SB-BSR-A08-STEP01-POMMEL",
+  "date": "2026-07-22",
+  "status": "internally_rejected_before_flamestrike_review",
+  "artifact_status": "quarantined",
+  "software_boundary": {
+    "visual_and_geometry_software": "Blender 3.0.1",
+    "trellis_used": false,
+    "triposr_used": false,
+    "generative_image_or_image_to_3d_used": false,
+    "historical_geometry_inputs": 0
+  },
+  "authority_hashes": {
+    "source": "9f1ac142a5047968bb20c74216c2dccf61470ed9f4e21689ff01934bd849c586",
+    "plan": "4772b475c6ff631c762e351561dd1fd9198b13b205ec733873d28a6e436eb867",
+    "contract": "43c8f2bb5a51a00aa4fc0f86c20bafdcf5137528f64cfcd10b101198ddd0d857"
+  },
+  "source": {
+    "path": "SourceAssets/Concepts/SiegeBreaker/siege_breaker_concept_view.png",
+    "sha256": "9f1ac142a5047968bb20c74216c2dccf61470ed9f4e21689ff01934bd849c586",
+    "dimensions_px": [
+      1122,
+      1402
+    ],
+    "mutated": false,
+    "role": "authoritative visual target"
+  },
+  "numeric_gate": {
+    "required_height_cm": 18.0,
+    "required_max_width_cm": 11.0,
+    "required_minimum_z_cm": 0.0,
+    "measured_local_bounds": {
+      "minimum_cm": [
+        -5.5,
+        -5.010000705718994,
+        0.0
+      ],
+      "maximum_cm": [
+        5.5,
+        4.680000305175781,
+        18.0
+      ],
+      "extent_cm": [
+        11.0,
+        9.690001010894775,
+        18.0
+      ]
+    },
+    "height_pass": true,
+    "width_pass": true,
+    "origin_pass": true
+  },
+  "visible_groups": {
+    "faceted_body": true,
+    "upper_and_lower_collars": true,
+    "layered_front_diamond": true,
+    "forged_bracing": true,
+    "restrained_blue_rune": true
+  },
+  "interpretation_boundary": {
+    "depth": "candidate interpretation",
+    "rear_continuation": "unresolved",
+    "internal_attachment": "unresolved",
+    "approved_hidden_surface_authority": false
+  },
+  "mesh_signature_sha256": "672661c1f7442924a51c9cca5b26c29d205ef852aae52d6b3db706c1feb35ddd",
+  "outputs": {
+    "blend": {
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A08_BlenderOnly_Pommel_A04/SM_DRW_SiegeBreaker_Hammer_A01_A08_Pommel_A04.blend",
+      "sha256": "eccd9639aaf4067dabfa88baf7095e2e87d6c729e76b2ad01b801bfeb2786ddf"
+    },
+    "review": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A08_STEP_01_POMMEL_A04_REVIEW.png",
+      "sha256": "070be4d765450bfb0109c34d8e8ba4146ed26b3517891c172001a5b4ffdb14d1"
+    },
+    "script": {
+      "path": "Tools/DCC/build_siegebreaker_a08_pommel_a04.py",
+      "sha256": "8cee3dc28a0ecbc5378dc48d158a1ffd364c843211bb2c665566846f9d96fa95"
+    }
+  },
+  "unreal_outputs": 0,
+  "fully_game_ready": false,
+  "internal_rejection": {
+    "numeric_gate_pass": true,
+    "source_plane_visible_in_production_review": false,
+    "source_labels_visible_in_production_review": false,
+    "generic_diamond_rune_matches_source_motif": false,
+    "eligible_for_flamestrike_review": false
+  },
+  "next_decision": "Attempt A05 may correct only the source-display depth and source-visible rune motif"
+}

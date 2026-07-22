@@ -7547,3 +7547,43 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
 - Next resume step: perform the Core resume handshake from the A07 reset
   handoff, then execute Gate 00 only; no source processing, inference, or DCC
   construction before a commercial-safe-path `go` decision.
+
+### 2026-07-22 13:45:45 EDT -0400 - before Siege Breaker A08 Blender-only pommel reconstruction gate
+
+- Snapshot: `Saved/ProjectRecovery/20260722-134545/`
+- Git: branch `main`, HEAD `7e58547`, status lines `298`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-134545/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-134545/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-134545/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 14:05:52 EDT -0400 - Siege Breaker A08 Step 01 pommel A06 candidate 18of18 pending visual decision
+
+- Snapshot: `Saved/ProjectRecovery/20260722-140552/`
+- Git: branch `main`, HEAD `7e58547`, status lines `332`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-140552/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-140552/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-140552/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 14:36:24 EDT -0400 - before Siege Breaker full pixel-half visual-match Blender build
+
+- Snapshot: `Saved/ProjectRecovery/20260722-143624/`
+- Git: branch `main`, HEAD `7e58547`, status lines `334`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-143624/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-143624/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-143624/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 14:58:49 EDT -0400 - Siege Breaker A09 pixel-half mirror candidate complete pending visual decision
+
+- Snapshot: `Saved/ProjectRecovery/20260722-145849/`
+- Git: branch `main`, HEAD `7e58547`, status lines `348`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-145849/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-145849/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-145849/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

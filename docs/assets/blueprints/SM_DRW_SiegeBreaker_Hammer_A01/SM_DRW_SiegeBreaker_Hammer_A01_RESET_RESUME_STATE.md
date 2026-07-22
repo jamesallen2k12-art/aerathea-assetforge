@@ -1,14 +1,13 @@
 # SM_DRW_SiegeBreaker_Hammer_A01 Reset / Resume State
 
-- Active approved route: `SB-SC3M-A07`
-- Plan: `SM_DRW_SiegeBreaker_Hammer_A01_SOURCE_CONSTRAINED_AUTHORITATIVE_3D_MASTER_A07_PLAN.md`
-- Reset handoff: `handoffs/SOURCE_CONSTRAINED_AUTHORITATIVE_3D_MASTER_A07_RESET_HANDOFF.md`
-- First contract: `steps/A07_GATE_00_COMMERCIAL_SAFE_EXECUTION_PATH_CONTRACT.md`
-- Current state: `A07 process saved; context-reset ready; production not started`
-- Next approved activity: Core resume handshake followed by A07 Gate 00 only
+- Active approved route: `SB-PHM-A09`
+- Plan: `SM_DRW_SiegeBreaker_Hammer_A01_PIXEL_HALF_MIRROR_A09_PLAN.md`
+- Active contract: `steps/A09_FULL_PIXEL_HALF_MIRROR_VISUAL_MATCH_CONTRACT.md`
+- Current state: `A09 complete mirrored visual-match candidate; technical audit pass 22/22; pending Flamestrike visual decision`
+- Next approved activity: open the exact A09 review board and receive one `approved`, `revise`, `rejected`, or `blocked` decision
 - Source processing authorized now: `false`
 - Model inference authorized now: `false`
-- DCC production authorized now: `false`
+- DCC production authorized now: `false; visible A09 decision gate active`
 - Unreal authority: `false`
 - Fully game-ready: `false`
 
@@ -26,32 +25,41 @@
 - A06 state: preserved at `step_10_waiting_flamestrike_decision`; no longer the
   active production route.
 - `SB-CM-VISUAL-A01`: `quarantined; invalid as Hero Candidate or authority`.
-- A07 visual, geometry, or measurement candidate: does not exist.
+- A07 visual, geometry, or measurement candidate: does not exist; route stopped.
+- No TRELLIS, TRELLIS.2, TripoSR, generative-image, or image-to-3D software is
+  authorized for Siege Breaker.
+- Blender is the sole approved visual and geometry construction exception.
+- A08 Step 01 A06 pommel: `reference only; revision requested by Flamestrike`.
+- A08 A07 estimated-match script: `invalid; unexecuted; preserved in place`.
+- A09 visual-match rule: uniform front-pixel scale anchored to `170 cm`;
+  measured envelope approximately `75.130513051 x 32.957619477 x 170 cm`.
+- A08 A01-A05 pommel attempts: `quarantined`.
+- A08 independent audit: `proof only`, `18/18 pass`.
+- A09 authorizes the complete mirrored visual-match DCC candidate and its
+  source-facing color review. LODs, collision, exports, and Unreal remain
+  unauthorized.
 
 ## Active Method
 
-A07 creates one complete 3D object before it creates authoritative
-orthographic images:
+A09 applies Flamestrike's Visual Match direction:
 
-`concept -> licensed AI 3D hypotheses -> source-converged Blender model ->`
-`approved hidden surfaces -> uniform scale lock -> approved authoritative 3D`
-`Concept Master -> exact derived orthographic measurements -> game-ready derivative`
+`immutable front/left/back pixels + uniform pixel proportions -> fresh X>=0`
+`Blender half -> exact X=0 mirror -> separate source-color and gray geometry`
+`proofs -> Flamestrike visual decision`
 
-The original concept controls visible design. AI outputs remain candidates.
-Flamestrike controls interpretation and promotion. The locked 3D master controls
-geometry and measurement.
+No prior Siege Breaker candidate geometry is an A09 construction input.
+Flamestrike controls visual approval.
 
-## License Stop
+## Prohibited Software Boundary
 
-The existing local TRELLIS/TRELLIS.2 GLB route invokes restricted NVIDIA
-components and is not cleared for A07 production. Existing TRELLIS outputs are
-not A07 inputs. Gate 00 must prove a commercially safe inference and raw-geometry
-export route before Gate 01 or any generation.
+TRELLIS, TRELLIS.2, TripoSR, diffusion, generative-image, image-to-3D, and
+generated-view software are forbidden. Existing outputs from those methods are
+not A09 inputs. A07 Gate 00 is stopped and superseded by Flamestrike's later
+Blender-only direction.
 
 ## Resume Instruction
 
-Read the recovery journal/latest checkpoint, this state, the A07 plan, A07
-handoff, Gate 00 contract, and prior canonical-master rejection record. Report
-the current state summary. Then execute Gate 00 only. Do not crop the source,
-run inference, create geometry, or advance to Gate 01 unless Gate 00 records
-`go`.
+Read the recovery journal/latest checkpoint, this state, the A09 plan, the A09
+contract, the A09 output record, and the A08/A07 recovery record. The candidate
+is complete; stop at the visible review and wait for Flamestrike's decision.
+Never use TRELLIS or any other prohibited generation software.

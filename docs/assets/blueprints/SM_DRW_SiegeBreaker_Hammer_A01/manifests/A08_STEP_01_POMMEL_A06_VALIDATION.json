@@ -1,0 +1,86 @@
+{
+  "schema": "aerathea.siegebreaker_a08_pommel_candidate.v1",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "contract_id": "SB-BSR-A08-STEP01-POMMEL",
+  "date": "2026-07-22",
+  "status": "candidate_pending_flamestrike_visual_decision",
+  "artifact_status": "candidate",
+  "software_boundary": {
+    "visual_and_geometry_software": "Blender 3.0.1",
+    "trellis_used": false,
+    "triposr_used": false,
+    "generative_image_or_image_to_3d_used": false,
+    "historical_geometry_inputs": 0
+  },
+  "authority_hashes": {
+    "source": "9f1ac142a5047968bb20c74216c2dccf61470ed9f4e21689ff01934bd849c586",
+    "plan": "4772b475c6ff631c762e351561dd1fd9198b13b205ec733873d28a6e436eb867",
+    "contract": "43c8f2bb5a51a00aa4fc0f86c20bafdcf5137528f64cfcd10b101198ddd0d857"
+  },
+  "source": {
+    "path": "SourceAssets/Concepts/SiegeBreaker/siege_breaker_concept_view.png",
+    "sha256": "9f1ac142a5047968bb20c74216c2dccf61470ed9f4e21689ff01934bd849c586",
+    "dimensions_px": [
+      1122,
+      1402
+    ],
+    "mutated": false,
+    "role": "authoritative visual target"
+  },
+  "numeric_gate": {
+    "required_height_cm": 18.0,
+    "required_max_width_cm": 11.0,
+    "required_minimum_z_cm": 0.0,
+    "measured_local_bounds": {
+      "minimum_cm": [
+        -5.5,
+        -5.047596454620361,
+        0.0
+      ],
+      "maximum_cm": [
+        5.5,
+        4.680000305175781,
+        18.0
+      ],
+      "extent_cm": [
+        11.0,
+        9.727596759796143,
+        18.0
+      ]
+    },
+    "height_pass": true,
+    "width_pass": true,
+    "origin_pass": true
+  },
+  "visible_groups": {
+    "faceted_body": true,
+    "upper_and_lower_collars": true,
+    "layered_front_diamond": true,
+    "forged_bracing": true,
+    "restrained_blue_rune": true
+  },
+  "interpretation_boundary": {
+    "depth": "candidate interpretation",
+    "rear_continuation": "unresolved",
+    "internal_attachment": "unresolved",
+    "approved_hidden_surface_authority": false
+  },
+  "mesh_signature_sha256": "f80354756e5436613cc1d6a3df8ebfb23d90e0a859c7082ceaa8f394f23290a8",
+  "outputs": {
+    "blend": {
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A08_BlenderOnly_Pommel_A06/SM_DRW_SiegeBreaker_Hammer_A01_A08_Pommel_A06.blend",
+      "sha256": "cb8004745e421be797c3d7a1e55594a05905d4440ac7353d3d8443ed255c7f06"
+    },
+    "review": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A08_STEP_01_POMMEL_A06_REVIEW.png",
+      "sha256": "1562c44568c4ba40a6d074f241f4a55d3eb1c6ca6668026be7aa9a2e54ae55e4"
+    },
+    "script": {
+      "path": "Tools/DCC/build_siegebreaker_a08_pommel_a06.py",
+      "sha256": "10fab30f0df41d6e43e6b4c3b8020b5aa7f6a7dc47afa9402663a166f6ac8ac1"
+    }
+  },
+  "unreal_outputs": 0,
+  "fully_game_ready": false,
+  "next_decision": "Flamestrike approve, revise, reject, or block the isolated pommel visual candidate"
+}
