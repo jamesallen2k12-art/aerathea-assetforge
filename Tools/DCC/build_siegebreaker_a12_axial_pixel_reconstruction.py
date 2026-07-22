@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Build the Siege Breaker A12 axial-source correction in Blender.
+"""Build the Siege Breaker A12 R4 side-owner-face correction in Blender.
 
 The script recreates the approved A09 half/mirror model from its immutable
 front/back/left pixels, remaps only the head depth using the approved A11
-centered top/bottom footprint, and adds top/bottom source-facing Blender
-geometry built from exact source masks.  No generated image or image-to-3D
-software is used.
+centered top/bottom footprint, preserves the approved R3 component separation,
+and replaces the warped outward strike faces with one reconciled Y/Z geometry
+solution built from exact left/right source scanlines and mirrored at X=0. No
+generated image or image-to-3D software is used.
 """
 
 from __future__ import annotations
@@ -34,8 +35,9 @@ from build_a06_siegebreaker_step06_front_back_measurements import selected_membe
 ROOT = Path(__file__).resolve().parents[2]
 ASSET = "SM_DRW_SiegeBreaker_Hammer_A01"
 ATTEMPT = "A12_AxialPixelReconstruction_A01"
-CONTRACT_ID = "SB-AXIAL-A12-RECONSTRUCTION"
+CONTRACT_ID = "SB-AXIAL-A12-R4-SIDE-OWNER-FACES"
 SOURCE_DIR = ROOT / "SourceAssets/Concepts/SiegeBreaker"
+RIGHT_PATH = SOURCE_DIR / "siege_breaker_right_view.png"
 TOP_PATH = SOURCE_DIR / "siege_breaker_true_axial_top_view.png"
 BOTTOM_PATH = SOURCE_DIR / "siege_breaker_true_axial_bottom_view.png"
 A11_PATH = (
@@ -56,6 +58,7 @@ EXPECTED_SHA256 = {
     "front": "d00bf9ffcfd4862884626fa961c5f6b4fd6cedfdff7936b2210ca2a905e57e95",
     "back": "15b4633f2df4ee06115ef4a7e238f287ebece1bae514ad4005c1036a57359799",
     "left": "1a23e0c24f7be4b12df93e2509b9d300acc9161a21a32b336f7cf63c1288d91b",
+    "right": "04a1e9359d518b1dec35fe161020bd23ab9e2f8d5934f24e4184aecaa91d8330",
     "concept": "9f1ac142a5047968bb20c74216c2dccf61470ed9f4e21689ff01934bd849c586",
     "top": "aee612d9bed74e4f861576f926fe9d75de00f80dc416e3a6ba66a75247c00e98",
     "bottom": "874a9e7c7713c7edbcf1030486d3988a54e8499ee697e316ec82a013fdb9d746",
@@ -64,6 +67,11 @@ EXPECTED_SHA256 = {
 }
 EXPECTED_A11_RECTS = {"top": [94, 330, 1106, 921], "bottom": [93, 330, 1106, 933]}
 EXPECTED_A11_COUNTS = {"top": 465117, "bottom": 509030}
+SIDE_RECTS = {
+    "left": [397, 190, 612, 1299],
+    "right": [467, 172, 681, 1270],
+}
+EXPECTED_SIDE_COUNTS = {"left": 118540, "right": 116948}
 COMMON_SCALE = float(Fraction(33388, 449955))
 TARGET_WIDTH = float(Fraction(83470, 1111))
 TARGET_DEPTH = float(Fraction(6644212, 149985))
@@ -72,12 +80,15 @@ HEAD_Z_MIN = 132.0
 HEAD_Z_MAX = 170.0
 RELIEF_STEP_PX = 3.0
 RELIEF_MAX_CM = 0.45
+SIDE_RELIEF_STEP_PX = 2.0
+SIDE_FACE_SOLIDIFY_CM = 1.40
+SIDE_WALL_RECESS_CM = 1.70
 CORE_WIDTH_RATIO = float(Fraction(24, 52))
 STONE_WIDTH_RATIO_EACH = float(Fraction(14, 52))
 CORE_WIDTH = TARGET_WIDTH * CORE_WIDTH_RATIO
 STONE_WIDTH_EACH = TARGET_WIDTH * STONE_WIDTH_RATIO_EACH
 CORE_HALF_WIDTH = CORE_WIDTH * 0.5
-COMPONENT_SEPARATION_APPROVED = True
+SIDE_OWNER_FACE_APPROVED = True
 
 OUTPUT_ROOT = ROOT / "SourceAssets/Blender/Weapons/Dwarven" / ASSET / ATTEMPT
 LOCAL_RENDER_ROOT = OUTPUT_ROOT / "renders"
@@ -88,9 +99,19 @@ MANIFEST_PATH = DOC_ROOT / "manifests/A12_AXIAL_PIXEL_RECONSTRUCTION_A01_VALIDAT
 MASK_PATHS = {
     "top": OUTPUT_ROOT / "A12_true_top_filled_footprint.png",
     "bottom": OUTPUT_ROOT / "A12_true_bottom_filled_footprint.png",
+    "left": OUTPUT_ROOT / "A12_R4_left_exact_membership.png",
+    "right": OUTPUT_ROOT / "A12_R4_right_exact_membership.png",
+    "left_filled": OUTPUT_ROOT / "A12_R4_left_exterior_removed_mask.png",
+    "right_filled": OUTPUT_ROOT / "A12_R4_right_exterior_removed_mask.png",
+}
+MASKED_SOURCE_PATHS = {
+    "left": OUTPUT_ROOT / "A12_R4_left_source_pixels_object_alpha.png",
+    "right": OUTPUT_ROOT / "A12_R4_right_source_pixels_object_alpha.png",
 }
 RENDER_PATHS = {
     "front": REVIEW_ROOT / "A12_AXIAL_PIXEL_RECONSTRUCTION_A01_FRONT.png",
+    "left": REVIEW_ROOT / "A12_AXIAL_PIXEL_RECONSTRUCTION_A01_LEFT_OWNER_FACE.png",
+    "right": REVIEW_ROOT / "A12_AXIAL_PIXEL_RECONSTRUCTION_A01_RIGHT_OWNER_FACE.png",
     "top": REVIEW_ROOT / "A12_AXIAL_PIXEL_RECONSTRUCTION_A01_TOP_HEAD_ISOLATED.png",
     "bottom": REVIEW_ROOT / "A12_AXIAL_PIXEL_RECONSTRUCTION_A01_BOTTOM_HEAD_ISOLATED.png",
     "color_3q": REVIEW_ROOT / "A12_AXIAL_PIXEL_RECONSTRUCTION_A01_COLOR_3Q.png",
@@ -166,6 +187,88 @@ def filled_a11_mask(path: Path, view: str) -> tuple[Image.Image, Image.Image, di
     if filled.getbbox() != (0, 0, width, height):
         raise RuntimeError(f"{view} filled mask lost measured boundary: {filled.getbbox()}")
     return source, filled, metadata
+
+
+def fill_enclosed_source_regions(mask: Image.Image) -> Image.Image:
+    """Keep exact membership plus enclosed source pixels; remove exterior sheet background."""
+    width, height = mask.size
+    selected = bytearray(1 if value else 0 for value in mask.getdata())
+    exterior = bytearray(width * height)
+    queue: deque[int] = deque()
+    for x in range(width):
+        for y in (0, height - 1):
+            index = y * width + x
+            if not selected[index] and not exterior[index]:
+                exterior[index] = 1
+                queue.append(index)
+    for y in range(height):
+        for x in (0, width - 1):
+            index = y * width + x
+            if not selected[index] and not exterior[index]:
+                exterior[index] = 1
+                queue.append(index)
+    while queue:
+        current = queue.popleft()
+        cy, cx = divmod(current, width)
+        for nx, ny in ((cx + 1, cy), (cx - 1, cy), (cx, cy + 1), (cx, cy - 1)):
+            if nx < 0 or ny < 0 or nx >= width or ny >= height:
+                continue
+            neighbor = ny * width + nx
+            if selected[neighbor] or exterior[neighbor]:
+                continue
+            exterior[neighbor] = 1
+            queue.append(neighbor)
+    filled = Image.new("L", (width, height), 0)
+    pixels = filled.load()
+    for y in range(height):
+        for x in range(width):
+            index = y * width + x
+            if selected[index] or not exterior[index]:
+                pixels[x, y] = 255
+    return filled
+
+
+def save_masked_side_source(
+    view: str,
+    source: Image.Image,
+    filled_mask: Image.Image,
+) -> dict[str, object]:
+    rect = SIDE_RECTS[view]
+    alpha = Image.new("L", source.size, 0)
+    alpha.paste(filled_mask, (rect[0], rect[1]))
+    rgba = source.convert("RGBA")
+    rgba.putalpha(alpha)
+    rgba.save(MASKED_SOURCE_PATHS[view])
+    return {
+        "filled_membership_pixels": sum(1 for value in filled_mask.getdata() if value),
+        "full_canvas_alpha_pixels": sum(1 for value in alpha.getdata() if value),
+        "method": "exact membership plus enclosed regions; exterior flood-fill removed",
+    }
+
+
+def masked_image_material(name: str, path: Path) -> bpy.types.Material:
+    material = bpy.data.materials.new(name)
+    material.use_nodes = True
+    material.blend_method = "CLIP"
+    material.alpha_threshold = 0.5
+    material.show_transparent_back = True
+    nodes = material.node_tree.nodes
+    nodes.clear()
+    output = nodes.new("ShaderNodeOutputMaterial")
+    texture = nodes.new("ShaderNodeTexImage")
+    texture.image = bpy.data.images.load(str(path), check_existing=True)
+    texture.interpolation = "Closest"
+    emission = nodes.new("ShaderNodeEmission")
+    emission.inputs["Strength"].default_value = 1.0
+    transparent = nodes.new("ShaderNodeBsdfTransparent")
+    mix = nodes.new("ShaderNodeMixShader")
+    material.node_tree.links.new(texture.outputs["Color"], emission.inputs["Color"])
+    material.node_tree.links.new(texture.outputs["Alpha"], mix.inputs[0])
+    material.node_tree.links.new(transparent.outputs[0], mix.inputs[1])
+    material.node_tree.links.new(emission.outputs[0], mix.inputs[2])
+    material.node_tree.links.new(mix.outputs[0], output.inputs["Surface"])
+    material.diffuse_color = (0.18, 0.16, 0.14, 1.0)
+    return material
 
 
 def column_span(mask: Image.Image, source_x_edge: float) -> tuple[int, int]:
@@ -510,6 +613,216 @@ def source_luma(source: Image.Image, global_x: float, global_y: float) -> int:
     return a09.integer_luma(source.getpixel((x, y)))
 
 
+def side_row_span(mask: Image.Image, z_cm: float) -> tuple[int, int, int]:
+    """Return the exact outer active-pixel interval for one side scanline."""
+    width, height = mask.size
+    local_y = (TARGET_HEIGHT - max(0.0, min(TARGET_HEIGHT, z_cm))) / TARGET_HEIGHT * height
+    row = max(0, min(height - 1, int(math.floor(local_y))))
+    pixels = mask.load()
+    for radius in range(8):
+        candidates = [row] if radius == 0 else [max(0, row - radius), min(height - 1, row + radius)]
+        for candidate in candidates:
+            xs = [x for x in range(width) if pixels[x, candidate] > 0]
+            if xs:
+                return min(xs), max(xs) + 1, candidate
+    raise RuntimeError(f"no exact side membership near Z={z_cm:.6f} cm")
+
+
+def mean_side_half_depth(side_masks: dict[str, Image.Image], z_cm: float) -> tuple[float, dict[str, object]]:
+    samples: dict[str, object] = {}
+    normalized_half_depths: list[float] = []
+    for view in ("left", "right"):
+        mask = side_masks[view]
+        x0, x1, row = side_row_span(mask, z_cm)
+        pixel_span = x1 - x0
+        half_depth = (pixel_span / mask.width) * TARGET_DEPTH * 0.5
+        normalized_half_depths.append(half_depth)
+        samples[view] = {
+            "local_row": row,
+            "outer_interval_half_open": [x0, x1],
+            "pixel_span": pixel_span,
+            "normalized_half_depth_cm": half_depth,
+        }
+    mean_half = sum(normalized_half_depths) * 0.5
+    samples["mean_half_depth_cm"] = mean_half
+    return mean_half, samples
+
+
+def side_source_coordinates(
+    view: str,
+    side_masks: dict[str, Image.Image],
+    world_y: float,
+    world_z: float,
+) -> tuple[float, float]:
+    mask = side_masks[view]
+    local_x = mask.width * 0.5 + world_y / TARGET_DEPTH * mask.width
+    local_y = (TARGET_HEIGHT - max(0.0, min(TARGET_HEIGHT, world_z))) / TARGET_HEIGHT * mask.height
+    rect = SIDE_RECTS[view]
+    return (
+        rect[0] + max(0.0, min(float(mask.width), local_x)),
+        rect[1] + max(0.0, min(float(mask.height), local_y)),
+    )
+
+
+def recess_superseded_outward_wall(stone_model: bpy.types.Object, face_z_min: float) -> dict[str, float | int]:
+    """Move only the warped head-end wall inward so the source owner face is visible."""
+    outer_x = TARGET_WIDTH * 0.5
+    threshold = outer_x - SIDE_WALL_RECESS_CM + 0.10
+    changed = 0
+    for vertex in stone_model.data.vertices:
+        x, z = float(vertex.co.x), float(vertex.co.z)
+        if z < face_z_min - 1.0e-6 or abs(x) < threshold:
+            continue
+        vertex.co.x = math.copysign(outer_x - SIDE_WALL_RECESS_CM, x)
+        changed += 1
+    stone_model.data.update()
+    if changed == 0:
+        raise RuntimeError("R4 found no superseded outward-wall vertices to recess")
+    stone_model["Aerathea.R4SupersededOutwardWallRecessed"] = True
+    stone_model["Aerathea.R4RecessCm"] = SIDE_WALL_RECESS_CM
+    return {
+        "vertices_recessed": changed,
+        "selection_abs_x_min_cm": threshold,
+        "head_z_min_cm": face_z_min,
+        "recess_cm": SIDE_WALL_RECESS_CM,
+    }
+
+
+def build_side_owner_faces(
+    sources: dict[str, Image.Image],
+    side_masks: dict[str, Image.Image],
+    left_material: bpy.types.Material,
+    right_material: bpy.types.Material,
+    face_z_min: float,
+) -> tuple[bpy.types.Object, dict[str, object]]:
+    """Build one +X pixel-scanned face, mirror it, then retain per-side pixels."""
+    mean_width_px = (side_masks["left"].width + side_masks["right"].width) * 0.5
+    mean_height_px = (side_masks["left"].height + side_masks["right"].height) * 0.5
+    y_step_cm = TARGET_DEPTH / mean_width_px * SIDE_RELIEF_STEP_PX
+    z_step_cm = TARGET_HEIGHT / mean_height_px * SIDE_RELIEF_STEP_PX
+
+    y_segments = max(2, int(math.ceil(mean_width_px / SIDE_RELIEF_STEP_PX)))
+    z_edges = [face_z_min]
+    while z_edges[-1] < HEAD_Z_MAX:
+        z_edges.append(min(HEAD_Z_MAX, z_edges[-1] + z_step_cm))
+
+    vertices: list[tuple[float, float, float]] = []
+    faces: list[tuple[int, int, int, int]] = []
+    cache: dict[tuple[int, int], int] = {}
+    outer_x = TARGET_WIDTH * 0.5
+
+    def owner_vertex(iu: int, iz: int) -> int:
+        key = (iu, iz)
+        if key in cache:
+            return cache[key]
+        world_z = z_edges[iz]
+        mean_half, _ = mean_side_half_depth(side_masks, world_z)
+        world_y = -mean_half + (2.0 * mean_half * iu / y_segments)
+        lumas = []
+        for view in ("left", "right"):
+            source_x, source_y = side_source_coordinates(view, side_masks, world_y, world_z)
+            lumas.append(source_luma(sources[view], source_x, source_y))
+        mean_luma = sum(lumas) * 0.5
+        perimeter = iu in (0, y_segments) or world_z in (face_z_min, HEAD_Z_MAX)
+        inward = 0.0 if perimeter else max(0.0, min(RELIEF_MAX_CM, (230.0 - min(230.0, mean_luma)) / 230.0 * RELIEF_MAX_CM))
+        index = len(vertices)
+        vertices.append((outer_x - inward, world_y, world_z))
+        cache[key] = index
+        return index
+
+    for iz in range(len(z_edges) - 1):
+        for iu in range(y_segments):
+            v00 = owner_vertex(iu, iz)
+            v10 = owner_vertex(iu + 1, iz)
+            v11 = owner_vertex(iu + 1, iz + 1)
+            v01 = owner_vertex(iu, iz + 1)
+            faces.append((v00, v10, v11, v01))
+
+    half_surface_faces = list(faces)
+    edge_use: dict[tuple[int, int], tuple[int, tuple[int, int]]] = {}
+    for face in half_surface_faces:
+        for index in range(len(face)):
+            oriented = (face[index], face[(index + 1) % len(face)])
+            key = tuple(sorted(oriented))
+            count, _ = edge_use.get(key, (0, oriented))
+            edge_use[key] = (count + 1, oriented)
+    boundary_edges = [oriented for count, oriented in edge_use.values() if count == 1]
+    front_vertex_count = len(vertices)
+    vertices.extend((x - SIDE_FACE_SOLIDIFY_CM, y, z) for x, y, z in list(vertices))
+    closed_faces: list[tuple[int, ...]] = list(half_surface_faces)
+    closed_faces.extend(tuple(front_vertex_count + index for index in reversed(face)) for face in half_surface_faces)
+    closed_faces.extend(
+        (start, end, front_vertex_count + end, front_vertex_count + start)
+        for start, end in boundary_edges
+    )
+
+    mesh = bpy.data.meshes.new(f"{ASSET}_A12_R4_SideOwnerFaces_Mesh")
+    mesh.from_pydata(vertices, [], closed_faces)
+    mesh.update(calc_edges=True)
+    obj = bpy.data.objects.new(f"{ASSET}_A12_R4_SideOwnerFaces", mesh)
+    bpy.context.scene.collection.objects.link(obj)
+    obj.data.materials.append(left_material)
+    obj.data.materials.append(right_material)
+    apply_x_mirror(obj, "A12_R4_SideOwnerFaces_ExactCenterMirror")
+
+    while obj.data.uv_layers:
+        obj.data.uv_layers.remove(obj.data.uv_layers[0])
+    uv_layer = obj.data.uv_layers.new(name="A12_R4_PerSideExactSourceUV")
+    material_counts = {"left_minus_x_faces": 0, "right_plus_x_faces": 0}
+    for polygon in obj.data.polygons:
+        center_x = sum(float(obj.data.vertices[index].co.x) for index in polygon.vertices) / len(polygon.vertices)
+        view = "right" if center_x >= 0.0 else "left"
+        polygon.material_index = 1 if view == "right" else 0
+        material_counts[f"{view}_{'plus_x' if view == 'right' else 'minus_x'}_faces"] += 1
+        source = sources[view]
+        for loop_index in polygon.loop_indices:
+            vertex = obj.data.vertices[obj.data.loops[loop_index].vertex_index]
+            source_x, source_y = side_source_coordinates(
+                view,
+                side_masks,
+                float(vertex.co.y),
+                float(vertex.co.z),
+            )
+            uv_layer.data[loop_index].uv = (source_x / source.width, 1.0 - source_y / source.height)
+
+    anchor_stations = [132.0, 136.75, 141.5, 146.25, 151.0, 155.75, 160.5, 165.25, 170.0]
+    profile_samples = []
+    for station in anchor_stations:
+        mean_half, sample = mean_side_half_depth(side_masks, station)
+        profile_samples.append({"z_cm": station, "mean_half_depth_cm": mean_half, "sources": sample})
+
+    obj["Aerathea.ContractID"] = CONTRACT_ID
+    obj["Aerathea.CorrectionID"] = "SB-AXIAL-A12-R4-SIDE-OWNER-FACES"
+    obj["Aerathea.ArtifactStatus"] = "DCC source candidate pending Flamestrike visual decision"
+    obj["Aerathea.ComponentRole"] = "mirrored -X/+X outward strike-face owner geometry"
+    obj["Aerathea.GeometryOwner"] = "centered arithmetic mean of exact left/right scanline intervals"
+    obj["Aerathea.VisiblePixelOwners"] = "-X=left source; +X=right source"
+    obj["Aerathea.SourceHalf"] = "X>=0"
+    obj["Aerathea.SolidifiedInwardCm"] = SIDE_FACE_SOLIDIFY_CM
+    obj["Aerathea.ReliefMaxCm"] = RELIEF_MAX_CM
+    obj.data.update()
+    return obj, {
+        "construction": "one continuous row-connected +X scanline face; pure-X inward closure; exact X=0 mirror; fixed source-specific -X/+X UV ownership",
+        "owner_face_z_interval_cm": [face_z_min, HEAD_Z_MAX],
+        "fixed_horizontal_source_mapping": True,
+        "y_or_z_edge_offset_used": False,
+        "grid_step_source_pixels": SIDE_RELIEF_STEP_PX,
+        "grid_step_y_cm": y_step_cm,
+        "grid_step_z_cm": z_step_cm,
+        "continuous_row_segments": y_segments,
+        "separate_raster_cell_islands": False,
+        "inward_relief_max_cm": RELIEF_MAX_CM,
+        "inward_solidify_cm": SIDE_FACE_SOLIDIFY_CM,
+        "half_surface_faces_before_closure": len(half_surface_faces),
+        "half_boundary_edges": len(boundary_edges),
+        "half_closed_faces_before_mirror": len(closed_faces),
+        "complete_vertices": len(obj.data.vertices),
+        "complete_polygons": len(obj.data.polygons),
+        "material_face_counts": material_counts,
+        "anchor_profile_samples": profile_samples,
+    }
+
+
 def build_axial_relief(
     view: str,
     source: Image.Image,
@@ -621,6 +934,18 @@ def axial_camera(view: str, rect: list[int]) -> bpy.types.Object:
         location = (target_x, target_y, -220.0)
         target = (target_x, target_y, 151.0)
     return add_camera(f"CAM_A12_{view.upper()}_PIXEL_REGISTERED", location, target, canvas * COMMON_SCALE)
+
+
+def side_face_camera(view: str, face_z_min: float) -> bpy.types.Object:
+    center_z = (face_z_min + HEAD_Z_MAX) * 0.5
+    ortho = max(TARGET_DEPTH + 8.0, HEAD_Z_MAX - face_z_min + 8.0)
+    if view == "left":
+        location = (-520.0, 0.0, center_z)
+    elif view == "right":
+        location = (520.0, 0.0, center_z)
+    else:
+        raise RuntimeError(f"unsupported R4 side view: {view}")
+    return add_camera(f"CAM_A12_R4_{view.upper()}_OWNER_FACE", location, (0.0, 0.0, center_z), ortho)
 
 
 def render(camera: bpy.types.Object, path: Path, width: int, height: int, override: bpy.types.Material | None = None) -> None:
@@ -740,6 +1065,7 @@ def compose_review(
     masks: dict[str, Image.Image],
     bounds: dict[str, list[float]],
     counts: dict[str, int],
+    side_owner_stats: dict[str, object],
 ) -> dict[str, dict[str, float]]:
     board = Image.new("RGB", (3600, 3000), (228, 224, 216))
     draw = ImageDraw.Draw(board)
@@ -749,18 +1075,23 @@ def compose_review(
     body = font(27)
     small = font(23)
     draw.rectangle((0, 0, 3600, 210), fill=(29, 34, 41))
-    draw.text((70, 35), "SIEGE BREAKER A12 R3 - COMPONENT-SEPARATED AXIAL RECONSTRUCTION", fill=(245, 242, 233), font=title)
-    draw.text((72, 125), "TWO MIRRORED STONES + CENTERED CORE | PIXEL-SCALED 24:14:14 | BLENDER ONLY", fill=(173, 207, 229), font=subtitle)
+    draw.text((70, 35), "SIEGE BREAKER A12 R4 - SIDE-OWNER STRIKE FACES", fill=(245, 242, 233), font=title)
+    draw.text((72, 125), "-X LEFT PIXELS | +X RIGHT PIXELS | ONE MEAN Y/Z PROFILE + EXACT X MIRROR | BLENDER ONLY", fill=(173, 207, 229), font=subtitle)
 
-    axial_crops = {
-        "top": (55, 285, 1145, 970),
-        "bottom": (55, 285, 1145, 980),
-    }
-    columns = [(80, "top", "TOP SOURCE", sources["top"].crop(axial_crops["top"])),
-               (950, "top", "A12 TOP - HEAD ISOLATED", Image.open(RENDER_PATHS["top"]).crop(axial_crops["top"])),
-               (1820, "bottom", "BOTTOM SOURCE", sources["bottom"].crop(axial_crops["bottom"])),
-               (2690, "bottom", "A12 BOTTOM - HEAD ISOLATED", Image.open(RENDER_PATHS["bottom"]).crop(axial_crops["bottom"]))]
-    for x, _, text_label, image in columns:
+    side_source_crops = {}
+    face_z_min = float(side_owner_stats["owner_face_z_interval_cm"][0])
+    for view in ("left", "right"):
+        rect = SIDE_RECTS[view]
+        mask = masks[view]
+        head_bottom = rect[1] + int(math.ceil(mask.height * (TARGET_HEIGHT - face_z_min) / TARGET_HEIGHT))
+        side_source_crops[view] = sources[view].crop((rect[0], rect[1], rect[2], head_bottom))
+    columns = [
+        (80, "-X LEFT SOURCE FACE", side_source_crops["left"]),
+        (950, "R4 -X OWNER FACE", Image.open(RENDER_PATHS["left"])),
+        (1820, "+X RIGHT SOURCE FACE", side_source_crops["right"]),
+        (2690, "R4 +X OWNER FACE", Image.open(RENDER_PATHS["right"])),
+    ]
+    for x, text_label, image in columns:
         draw.text((x, 250), text_label, fill=(39, 42, 47), font=label)
         panel = fit_panel(image, (800, 720))
         board.paste(panel, (x, 305))
@@ -770,9 +1101,9 @@ def compose_review(
     front_render_crop = Image.open(RENDER_PATHS["front"]).convert("RGB").crop((250, 150, 875, 1365))
     lower = [
         (80, "UNCHANGED FRONT SOURCE", front_source_crop),
-        (950, "A12 COMPLETED FRONT", front_render_crop),
-        (1820, "A12 COLORED 3/4", Image.open(RENDER_PATHS["color_3q"])),
-        (2690, "A12 GEOMETRY 3/4", Image.open(RENDER_PATHS["geometry_3q"])),
+        (950, "R4 COMPLETED FRONT", front_render_crop),
+        (1820, "R4 COLORED 3/4", Image.open(RENDER_PATHS["color_3q"])),
+        (2690, "R4 GEOMETRY 3/4", Image.open(RENDER_PATHS["geometry_3q"])),
     ]
     for x, text_label, image in lower:
         draw.text((x, 1100), text_label, fill=(39, 42, 47), font=label)
@@ -780,15 +1111,30 @@ def compose_review(
         board.paste(panel, (x, 1155))
         draw.rectangle((x, 1155, x + 800, 2435), outline=(91, 88, 82), width=3)
 
-    comparison = {
+    axial_comparison = {
         view: axial_difference(sources[view], Image.open(RENDER_PATHS[view]), masks[view], EXPECTED_A11_RECTS[view])
         for view in ("top", "bottom")
+    }
+    source_half_differences = []
+    for sample in side_owner_stats["anchor_profile_samples"]:
+        left_half = sample["sources"]["left"]["normalized_half_depth_cm"]
+        right_half = sample["sources"]["right"]["normalized_half_depth_cm"]
+        source_half_differences.append(abs(left_half - right_half))
+    comparison = {
+        "top": axial_comparison["top"],
+        "bottom": axial_comparison["bottom"],
+        "side_owner_faces": {
+            "anchor_station_count": len(source_half_differences),
+            "maximum_left_right_normalized_half_depth_difference_cm": round(max(source_half_differences), 6),
+            "candidate_profile_is_exact_arithmetic_mean": True,
+            "geometry_mirrored_at_x0": True,
+        },
     }
     dims = bounds["dimensions_cm"]
     notes = [
         f"Approved mean footprint: 1012.5 x 597 px = {TARGET_WIDTH:.6f} x {TARGET_DEPTH:.6f} cm; overall length {TARGET_HEIGHT:.3f} cm.",
-        "Flat top/bottom projections are proof only; source ownership is integrated onto the separated stone/core boundary faces.",
-        f"Top/bottom right-half RGB deltas: {comparison['top']['right_half_mean_absolute_rgb_delta']:.3f} / {comparison['bottom']['right_half_mean_absolute_rgb_delta']:.3f} of 255.",
+        f"R4 replaces the complete measured strike-face span Z={face_z_min:.6f}..170 cm: -X uses left pixels; +X uses right pixels; geometry mirrors at X=0.",
+        f"Nine audited side anchors retained; maximum source half-depth disagreement after A11 normalization: {max(source_half_differences):.6f} cm.",
         f"Evaluated complete bounds: {dims[0]:.6f} x {dims[1]:.6f} x {dims[2]:.6f} cm; mesh objects {counts['objects']}; polygons {counts['polygons']}.",
         "Status: DCC source candidate pending Flamestrike visual decision. No image generation, TRELLIS, export, or Unreal work.",
     ]
@@ -802,15 +1148,16 @@ def compose_review(
 
 
 def main() -> None:
-    if not COMPONENT_SEPARATION_APPROVED:
+    if not SIDE_OWNER_FACE_APPROVED:
         raise RuntimeError(
-            "Blueprint block: A12 R3 component-separation correction is not approved"
+            "Blueprint block: A12 R4 side-owner-face correction is not approved"
         )
     ensure_dirs()
     paths = {
         "front": a09.FRONT_PATH,
         "back": a09.BACK_PATH,
         "left": a09.LEFT_PATH,
+        "right": RIGHT_PATH,
         "concept": a09.CONCEPT_PATH,
         "top": TOP_PATH,
         "bottom": BOTTOM_PATH,
@@ -831,25 +1178,43 @@ def main() -> None:
     front_image = Image.open(a09.FRONT_PATH).convert("RGB")
     back_image = Image.open(a09.BACK_PATH).convert("RGB")
     left_image = Image.open(a09.LEFT_PATH).convert("RGB")
+    right_image = Image.open(RIGHT_PATH).convert("RGB")
     front_mask, front_count = a09.exact_component_mask(front_image, a09.FRONT_RECT)
     back_mask, back_count = a09.exact_component_mask(back_image, a09.BACK_RECT)
     left_mask, left_count = a09.exact_component_mask(left_image, a09.LEFT_RECT)
     observed_a09_counts = {"front": front_count, "back": back_count, "left": left_count}
     if observed_a09_counts != a09.EXPECTED_COMPONENT_PIXELS:
         raise RuntimeError(f"A09 membership replay mismatch: {observed_a09_counts}")
+    right_mask, right_count = a09.exact_component_mask(right_image, tuple(SIDE_RECTS["right"]))
+    observed_side_counts = {"left": left_count, "right": right_count}
+    if observed_side_counts != EXPECTED_SIDE_COUNTS:
+        raise RuntimeError(f"R4 side membership replay mismatch: {observed_side_counts}")
+    left_mask.save(MASK_PATHS["left"])
+    right_mask.save(MASK_PATHS["right"])
+    left_filled_mask = fill_enclosed_source_regions(left_mask)
+    right_filled_mask = fill_enclosed_source_regions(right_mask)
+    left_filled_mask.save(MASK_PATHS["left_filled"])
+    right_filled_mask.save(MASK_PATHS["right_filled"])
+    side_alpha_stats = {
+        "left": save_masked_side_source("left", left_image, left_filled_mask),
+        "right": save_masked_side_source("right", right_image, right_filled_mask),
+    }
 
     top_source, top_mask, top_meta = filled_a11_mask(TOP_PATH, "top")
     bottom_source, bottom_mask, bottom_meta = filled_a11_mask(BOTTOM_PATH, "bottom")
     top_mask.save(MASK_PATHS["top"])
     bottom_mask.save(MASK_PATHS["bottom"])
-    sources = {"top": top_source, "bottom": bottom_source}
-    masks = {"top": top_mask, "bottom": bottom_mask}
+    sources = {"top": top_source, "bottom": bottom_source, "left": left_image, "right": right_image}
+    masks = {"top": top_mask, "bottom": bottom_mask, "left": left_mask, "right": right_mask}
+    side_masks = {"left": left_mask, "right": right_mask}
 
     a09.clear_scene()
     configure_scene()
     front_material = a09.image_material("MI_DRW_SiegeBreaker_A12_FrontSourcePixels", a09.FRONT_PATH)
     back_material = a09.image_material("MI_DRW_SiegeBreaker_A12_BackSourcePixels", a09.BACK_PATH)
     side_material = a09.image_material("MI_DRW_SiegeBreaker_A12_LeftSourcePixels", a09.LEFT_PATH)
+    left_owner_material = masked_image_material("MI_DRW_SiegeBreaker_A12_R4_LeftOwnerPixelsMasked", MASKED_SOURCE_PATHS["left"])
+    right_side_material = masked_image_material("MI_DRW_SiegeBreaker_A12_R4_RightOwnerPixelsMasked", MASKED_SOURCE_PATHS["right"])
     top_material = a09.image_material("MI_DRW_SiegeBreaker_A12_TopSourcePixels", TOP_PATH)
     bottom_material = a09.image_material("MI_DRW_SiegeBreaker_A12_BottomSourcePixels", BOTTOM_PATH)
     edge_material = a09.flat_material("M_DRW_SiegeBreaker_A12_AxialEdge", (0.11, 0.13, 0.16, 1.0))
@@ -871,6 +1236,8 @@ def main() -> None:
         [front_material, back_material, side_material],
     )
     depth_remap = remap_stone_depth(stone_model, left_mask, top_mask, bottom_mask)
+    stone_face_z_min = min(float(vertex.co.z) for vertex in stone_model.data.vertices)
+    superseded_wall_recess = recess_superseded_outward_wall(stone_model, stone_face_z_min)
     stone_axial_owner_faces = assign_axial_owner_materials(
         stone_model,
         top_source,
@@ -893,7 +1260,7 @@ def main() -> None:
     stone_model.data.name = f"{ASSET}_A12_TwoMirroredStoneStrikeMasses_Mesh"
     for model, role in ((core_model, "centered metal core and shaft"), (stone_model, "two mirrored stone strike masses")):
         model["Aerathea.ContractID"] = CONTRACT_ID
-        model["Aerathea.CorrectionID"] = "SB-AXIAL-A12-R3-COMPONENT-SEPARATION"
+        model["Aerathea.CorrectionID"] = "SB-AXIAL-A12-R4-SIDE-OWNER-FACES"
         model["Aerathea.ArtifactStatus"] = "DCC source candidate pending Flamestrike visual decision"
         model["Aerathea.ComponentRole"] = role
         model["Aerathea.TopBottomProofProjectionIsCandidateGeometry"] = False
@@ -903,6 +1270,15 @@ def main() -> None:
     stone_model["Aerathea.ApprovedHeadDepthCm"] = TARGET_DEPTH
     stone_model["Aerathea.ComponentWidthEachCm"] = STONE_WIDTH_EACH
     stone_model["Aerathea.SideViewControlsHeadDepth"] = False
+    stone_model["Aerathea.SideViewControlsOutwardStrikeFace"] = True
+
+    side_owner_faces, side_owner_stats = build_side_owner_faces(
+        {"left": left_image, "right": right_image},
+        side_masks,
+        left_owner_material,
+        right_side_material,
+        stone_face_z_min,
+    )
 
     cap_objects = {}
     relief_objects = {}
@@ -923,7 +1299,7 @@ def main() -> None:
             "relief": relief_stats,
         }
 
-    candidate_objects = [core_model, stone_model]
+    candidate_objects = [core_model, stone_model, side_owner_faces]
     proof_backings = [*cap_objects.values(), *relief_objects.values()]
     a09.add_lighting()
     source_px_per_cm = 1.0 / a09.FRONT_SCALE
@@ -937,11 +1313,15 @@ def main() -> None:
     front_camera = add_camera("CAM_A12_FRONT_PIXEL_REGISTERED", (camera_x, -520.0, camera_z), (camera_x, 0.0, camera_z), front_ortho)
     top_camera = axial_camera("top", EXPECTED_A11_RECTS["top"])
     bottom_camera = axial_camera("bottom", EXPECTED_A11_RECTS["bottom"])
+    left_camera = side_face_camera("left", stone_face_z_min)
+    right_camera = side_face_camera("right", stone_face_z_min)
     three_quarter = add_camera("CAM_A12_COMPLETED_THREE_QUARTER", (145.0, -235.0, 112.0), (0.0, 0.0, 84.0), 205.0)
 
     render(front_camera, RENDER_PATHS["front"], front_image.width, front_image.height)
     render_head_isolated("top", top_camera, RENDER_PATHS["top"], candidate_objects, cap_objects, relief_objects)
     render_head_isolated("bottom", bottom_camera, RENDER_PATHS["bottom"], candidate_objects, cap_objects, relief_objects)
+    render(left_camera, RENDER_PATHS["left"], 900, 900)
+    render(right_camera, RENDER_PATHS["right"], 900, 900)
     render(three_quarter, RENDER_PATHS["color_3q"], 1400, 1600)
     render_geometry_objects(candidate_objects, three_quarter, RENDER_PATHS["geometry_3q"], 1400, 1600, proof_material)
 
@@ -958,7 +1338,7 @@ def main() -> None:
         obj["Aerathea.CompleteSymmetry"] = json.dumps(symmetry_result, sort_keys=True)
     bpy.ops.wm.save_as_mainfile(filepath=str(BLEND_PATH))
 
-    comparison = compose_review(sources, masks, bounds, counts)
+    comparison = compose_review(sources, masks, bounds, counts, side_owner_stats)
     after_a09_hash = sha256(A09_BLEND)
     if after_a09_hash != EXPECTED_SHA256["a09_blend"]:
         raise RuntimeError(f"A09 source changed during A12 build: {after_a09_hash}")
@@ -969,9 +1349,15 @@ def main() -> None:
         "review": str(REVIEW_BOARD.relative_to(ROOT)),
         "top_filled_mask_local_only": str(MASK_PATHS["top"].relative_to(ROOT)),
         "bottom_filled_mask_local_only": str(MASK_PATHS["bottom"].relative_to(ROOT)),
+        "left_exact_membership_mask_local_only": str(MASK_PATHS["left"].relative_to(ROOT)),
+        "right_exact_membership_mask_local_only": str(MASK_PATHS["right"].relative_to(ROOT)),
+        "left_exterior_removed_mask_local_only": str(MASK_PATHS["left_filled"].relative_to(ROOT)),
+        "right_exterior_removed_mask_local_only": str(MASK_PATHS["right_filled"].relative_to(ROOT)),
+        "left_object_alpha_source_local_only": str(MASKED_SOURCE_PATHS["left"].relative_to(ROOT)),
+        "right_object_alpha_source_local_only": str(MASKED_SOURCE_PATHS["right"].relative_to(ROOT)),
     }
     manifest = {
-        "schema": "aerathea.siegebreaker.a12_axial_pixel_reconstruction_validation.v1",
+        "schema": "aerathea.siegebreaker.a12_axial_pixel_reconstruction_validation.v2",
         "asset": ASSET,
         "attempt": ATTEMPT,
         "contract_id": CONTRACT_ID,
@@ -994,9 +1380,15 @@ def main() -> None:
             "stone_depth_applies_to_complete_source_visible_stone_silhouette": True,
             "top_bottom_own_head_depth": True,
             "side_view_owns_head_depth": False,
+            "left_view_owns_minus_x_outward_strike_face": True,
+            "right_view_owns_plus_x_outward_strike_face": True,
+            "side_face_geometry_is_centered_arithmetic_mean_and_x_mirrored": True,
         },
         "source_measurements": {
             "a09_component_pixels": observed_a09_counts,
+            "r4_side_component_pixels": observed_side_counts,
+            "side_rectangles_half_open": SIDE_RECTS,
+            "side_object_alpha": side_alpha_stats,
             "top_metadata": top_meta,
             "bottom_metadata": bottom_meta,
         },
@@ -1005,6 +1397,8 @@ def main() -> None:
             "centered_core_and_shaft": core_build_stats,
             "two_mirrored_stone_strike_masses": stone_build_stats,
             "stone_depth_remap": depth_remap,
+            "superseded_outward_wall_recess": superseded_wall_recess,
+            "mirrored_side_owner_faces": side_owner_stats,
             "axial_owner_material_faces": {
                 "centered_core_and_shaft": core_axial_owner_faces,
                 "two_mirrored_stone_strike_masses": stone_axial_owner_faces,
@@ -1018,6 +1412,7 @@ def main() -> None:
                 "A12 R0 axial backing/relief and bottom-orientation failure",
                 "A12 R1 owner-view-correct constant-Z projection sheets invalid in completed assembly",
                 "A12 R2 monolithic Z=132 depth application created false center stone and horizontal ledge",
+                "A12 R3 front/back-projected outward walls warped the visible strike faces",
             ],
             "global_z132_to_z138_transition_used": False,
             "proof_backings_hidden_from_completed_renders": all(obj.hide_render for obj in proof_backings),

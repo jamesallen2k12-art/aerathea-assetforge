@@ -731,3 +731,71 @@ Core authority: `AGENTS.md` Core Principles govern this ledger. Drifted artifact
 - Recovery decision: do not blend the monolithic shell. Flamestrike approved R3 component separation. Apply the pixel-scaled `24:14:14` core/stone/stone split, remap complete stone silhouettes only, preserve the centered A09 core/shaft, and use no global `6 cm` transition.
 - Recovery result: R3 creates two candidate objects, exact `75.130516052 x 44.299175262 x 170 cm` bounds, zero missing mirrored vertices, and independent `25/25` pass. The horizontal R2 ledge is absent; visual approval remains Flamestrike's decision.
 - Follow-up Core/Kaizen improvement: cross-view reconstruction must apply measurement authority per explicit physical component. A whole-object silhouette mask cannot replace component ownership when separate masses and negative spaces are recorded.
+
+### 2026-07-22 - Siege Breaker A12 R3 Outward Strike-Face Ownership Drift
+
+- Asset or scope: `SM_DRW_SiegeBreaker_Hammer_A01` A12 R3 visible left/right
+  strike-face geometry and colored three-quarter review.
+- Detected by: Flamestrike's visual rejection that the colored completed
+  three-quarter image is warped, followed by the clarification that the hammer
+  faces mean the left and right outward strike faces.
+- Last known Core-valid state: A09 approved visual-match/mirror method, A11
+  centered-mean head footprint, and the R3 centered-core/two-stone component
+  split remain valid within their explicit scopes.
+- First drift action: R3 retained front/back-derived projected side walls as
+  the visible solution for the two outward strike faces.
+- Assumption or interpretation that caused drift: preserving front silhouette
+  pixels and exact total depth was assumed sufficient to define side-visible
+  face silhouette, bevel, rune plate, and relief.
+- Affected outputs: R3 `.blend`, colored and gray three-quarter renders, front
+  render, review board, candidate classification, validation's visual
+  implication, and pending-decision status.
+- Artifact statuses: exact R3 visible candidate `quarantined`; its component
+  partition, bounds, and symmetry evidence `proof only`; R3 audit `proof only`;
+  A09/A11 authority unchanged.
+- Quarantined location: local
+  `SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_InternalRejected_R3/`;
+  hash record `manifests/A12_INTERNAL_REJECTIONS.md`.
+- Recovery decision: Flamestrike approved R4. Use the exact `-X/+X` side source
+  pixels as outward-face owners, reconcile their one-pixel crop-width
+  difference into one centered mean `Y/Z` geometry profile, construct one face
+  and mirror it at `X=0`, retain the exact A11 envelope, and stop at a new
+  visible side/three-quarter review gate.
+- Follow-up Core/Kaizen improvement: every visible orthographic surface needs
+  an explicit source-view owner. Exact global dimensions and symmetry cannot
+  substitute for the correct view-owned face geometry.
+
+### 2026-07-22 - Siege Breaker A12 R4 Internal Side-Face Implementation Drift
+
+- Asset or scope: `SM_DRW_SiegeBreaker_Hammer_A01` R4A-R4C internal attempts
+  under `SB-AXIAL-A12-R4-SIDE-OWNER-FACES`.
+- Detected by: internal source-map, dimension, and close-up visual gates before
+  any attempt was presented to Flamestrike.
+- Last known Core-valid state: approved R4 source ownership, A09/A11 frame,
+  R3 component split, exact mirror requirement, and unchanged outer envelope.
+- First drift actions: R4A normalized source UVs independently per row and used
+  edge-offset Solidify; R4B represented the face as separate raster cells;
+  R4C left superseded wall vertices in front of maximum owner-face relief.
+- Assumptions or interpretations that caused drift: changing scanline spans
+  were treated as local texture coordinate frames; isolated pixel cells were
+  treated as a continuous production surface; and a technically recessed wall
+  was assumed visually hidden without comparing its exact X depth to all owner
+  relief positions.
+- Affected outputs: internal R4A-R4C blends, validation files, renders, review
+  boards, and the first `36/36` R4C technical audit.
+- Artifact statuses: R4A-R4C `quarantined / invalid as review candidates`;
+  their fault evidence `proof only`; all higher authority unchanged.
+- Quarantined locations: local `A12_InternalRejected_R4A/`,
+  `A12_InternalRejected_R4B/`, and `A12_InternalRejected_R4C/`; exact hashes
+  and bounded corrections are recorded in `manifests/A12_INTERNAL_REJECTIONS.md`.
+- Recovery decision: return to the same approved R4 rule, use a fixed source
+  coordinate map, one continuous row-connected surface, exact-membership alpha,
+  pure-X closure, and recess only the superseded wall far enough that its
+  maximum `|X|` is behind the deepest visible owner relief.
+- Recovery result: R4D retains the exact
+  `75.130516052 x 44.299175262 x 170 cm` envelope, has zero missing mirrored
+  vertices, and passes the expanded independent audit `37/37`; it remains a
+  candidate pending Flamestrike visual judgment.
+- Follow-up Core/Kaizen improvement: a side-owner technical gate must test
+  fixed global UV mapping, connected topology, source-background removal, and
+  depth ordering against the maximum relief—not merely object bounds.

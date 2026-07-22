@@ -1,8 +1,8 @@
 {
-  "schema": "aerathea.siegebreaker.a12_axial_pixel_reconstruction_validation.v1",
+  "schema": "aerathea.siegebreaker.a12_axial_pixel_reconstruction_validation.v2",
   "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
   "attempt": "A12_AxialPixelReconstruction_A01",
-  "contract_id": "SB-AXIAL-A12-RECONSTRUCTION",
+  "contract_id": "SB-AXIAL-A12-R4-SIDE-OWNER-FACES",
   "artifact_status": "DCC source candidate pending Flamestrike visual decision",
   "software": {
     "blender": "3.0.1",
@@ -14,6 +14,7 @@
     "front": "d00bf9ffcfd4862884626fa961c5f6b4fd6cedfdff7936b2210ca2a905e57e95",
     "back": "15b4633f2df4ee06115ef4a7e238f287ebece1bae514ad4005c1036a57359799",
     "left": "1a23e0c24f7be4b12df93e2509b9d300acc9161a21a32b336f7cf63c1288d91b",
+    "right": "04a1e9359d518b1dec35fe161020bd23ab9e2f8d5934f24e4184aecaa91d8330",
     "concept": "9f1ac142a5047968bb20c74216c2dccf61470ed9f4e21689ff01934bd849c586",
     "top": "aee612d9bed74e4f861576f926fe9d75de00f80dc416e3a6ba66a75247c00e98",
     "bottom": "874a9e7c7713c7edbcf1030486d3988a54e8499ee697e316ec82a013fdb9d746",
@@ -36,13 +37,46 @@
     ],
     "stone_depth_applies_to_complete_source_visible_stone_silhouette": true,
     "top_bottom_own_head_depth": true,
-    "side_view_owns_head_depth": false
+    "side_view_owns_head_depth": false,
+    "left_view_owns_minus_x_outward_strike_face": true,
+    "right_view_owns_plus_x_outward_strike_face": true,
+    "side_face_geometry_is_centered_arithmetic_mean_and_x_mirrored": true
   },
   "source_measurements": {
     "a09_component_pixels": {
       "front": 212765,
       "back": 238342,
       "left": 118540
+    },
+    "r4_side_component_pixels": {
+      "left": 118540,
+      "right": 116948
+    },
+    "side_rectangles_half_open": {
+      "left": [
+        397,
+        190,
+        612,
+        1299
+      ],
+      "right": [
+        467,
+        172,
+        681,
+        1270
+      ]
+    },
+    "side_object_alpha": {
+      "left": {
+        "filled_membership_pixels": 119109,
+        "full_canvas_alpha_pixels": 119109,
+        "method": "exact membership plus enclosed regions; exterior flood-fill removed"
+      },
+      "right": {
+        "filled_membership_pixels": 117538,
+        "full_canvas_alpha_pixels": 117538,
+        "method": "exact membership plus enclosed regions; exterior flood-fill removed"
+      }
     },
     "top_metadata": {
       "corner_median_luma_twice": 496,
@@ -110,14 +144,272 @@
       "head_vertex_y_max_cm": 22.149587631225586,
       "head_vertex_depth_cm": 44.29917526245117
     },
+    "superseded_outward_wall_recess": {
+      "vertices_recessed": 5472,
+      "selection_abs_x_min_cm": 35.96525652565256,
+      "head_z_min_cm": 111.089111328125,
+      "recess_cm": 1.7
+    },
+    "mirrored_side_owner_faces": {
+      "construction": "one continuous row-connected +X scanline face; pure-X inward closure; exact X=0 mirror; fixed source-specific -X/+X UV ownership",
+      "owner_face_z_interval_cm": [
+        111.089111328125,
+        170.0
+      ],
+      "fixed_horizontal_source_mapping": true,
+      "y_or_z_edge_offset_used": false,
+      "grid_step_source_pixels": 2.0,
+      "grid_step_y_cm": 0.4130459355181827,
+      "grid_step_z_cm": 0.3081105573176257,
+      "continuous_row_segments": 108,
+      "separate_raster_cell_islands": false,
+      "inward_relief_max_cm": 0.45,
+      "inward_solidify_cm": 1.4,
+      "half_surface_faces_before_closure": 20736,
+      "half_boundary_edges": 600,
+      "half_closed_faces_before_mirror": 42072,
+      "complete_vertices": 84148,
+      "complete_polygons": 84144,
+      "material_face_counts": {
+        "left_minus_x_faces": 42072,
+        "right_plus_x_faces": 42072
+      },
+      "anchor_profile_samples": [
+        {
+          "z_cm": 132.0,
+          "mean_half_depth_cm": 21.8402835654137,
+          "sources": {
+            "left": {
+              "local_row": 247,
+              "outer_interval_half_open": [
+                3,
+                213
+              ],
+              "pixel_span": 210,
+              "normalized_half_depth_cm": 21.63448158769365
+            },
+            "right": {
+              "local_row": 245,
+              "outer_interval_half_open": [
+                0,
+                213
+              ],
+              "pixel_span": 213,
+              "normalized_half_depth_cm": 22.046085543133753
+            },
+            "mean_half_depth_cm": 21.8402835654137
+          }
+        },
+        {
+          "z_cm": 136.75,
+          "mean_half_depth_cm": 21.89179423586059,
+          "sources": {
+            "left": {
+              "local_row": 216,
+              "outer_interval_half_open": [
+                3,
+                214
+              ],
+              "pixel_span": 211,
+              "normalized_half_depth_cm": 21.73750292858743
+            },
+            "right": {
+              "local_row": 214,
+              "outer_interval_half_open": [
+                0,
+                213
+              ],
+              "pixel_span": 213,
+              "normalized_half_depth_cm": 22.046085543133753
+            },
+            "mean_half_depth_cm": 21.89179423586059
+          }
+        },
+        {
+          "z_cm": 141.5,
+          "mean_half_depth_cm": 21.99457487268686,
+          "sources": {
+            "left": {
+              "local_row": 185,
+              "outer_interval_half_open": [
+                0,
+                214
+              ],
+              "pixel_span": 214,
+              "normalized_half_depth_cm": 22.04656695126877
+            },
+            "right": {
+              "local_row": 184,
+              "outer_interval_half_open": [
+                1,
+                213
+              ],
+              "pixel_span": 212,
+              "normalized_half_depth_cm": 21.942582794104954
+            },
+            "mean_half_depth_cm": 21.99457487268686
+          }
+        },
+        {
+          "z_cm": 146.25,
+          "mean_half_depth_cm": 21.8402835654137,
+          "sources": {
+            "left": {
+              "local_row": 154,
+              "outer_interval_half_open": [
+                3,
+                213
+              ],
+              "pixel_span": 210,
+              "normalized_half_depth_cm": 21.63448158769365
+            },
+            "right": {
+              "local_row": 153,
+              "outer_interval_half_open": [
+                0,
+                213
+              ],
+              "pixel_span": 213,
+              "normalized_half_depth_cm": 22.046085543133753
+            },
+            "mean_half_depth_cm": 21.8402835654137
+          }
+        },
+        {
+          "z_cm": 151.0,
+          "mean_half_depth_cm": 20.75422681281386,
+          "sources": {
+            "left": {
+              "local_row": 123,
+              "outer_interval_half_open": [
+                4,
+                211
+              ],
+              "pixel_span": 207,
+              "normalized_half_depth_cm": 21.325417565012312
+            },
+            "right": {
+              "local_row": 122,
+              "outer_interval_half_open": [
+                0,
+                195
+              ],
+              "pixel_span": 195,
+              "normalized_half_depth_cm": 20.183036060615407
+            },
+            "mean_half_depth_cm": 20.75422681281386
+          }
+        },
+        {
+          "z_cm": 155.75,
+          "mean_half_depth_cm": 19.20722177093461,
+          "sources": {
+            "left": {
+              "local_row": 92,
+              "outer_interval_half_open": [
+                3,
+                187
+              ],
+              "pixel_span": 184,
+              "normalized_half_depth_cm": 18.955926724455388
+            },
+            "right": {
+              "local_row": 92,
+              "outer_interval_half_open": [
+                0,
+                188
+              ],
+              "pixel_span": 188,
+              "normalized_half_depth_cm": 19.458516817413827
+            },
+            "mean_half_depth_cm": 19.20722177093461
+          }
+        },
+        {
+          "z_cm": 160.5,
+          "mean_half_depth_cm": 18.586686684896844,
+          "sources": {
+            "left": {
+              "local_row": 61,
+              "outer_interval_half_open": [
+                3,
+                185
+              ],
+              "pixel_span": 182,
+              "normalized_half_depth_cm": 18.74988404266783
+            },
+            "right": {
+              "local_row": 61,
+              "outer_interval_half_open": [
+                0,
+                178
+              ],
+              "pixel_span": 178,
+              "normalized_half_depth_cm": 18.423489327125857
+            },
+            "mean_half_depth_cm": 18.586686684896844
+          }
+        },
+        {
+          "z_cm": 165.25,
+          "mean_half_depth_cm": 15.436833257476293,
+          "sources": {
+            "left": {
+              "local_row": 30,
+              "outer_interval_half_open": [
+                17,
+                170
+              ],
+              "pixel_span": 153,
+              "normalized_half_depth_cm": 15.762265156748231
+            },
+            "right": {
+              "local_row": 30,
+              "outer_interval_half_open": [
+                14,
+                160
+              ],
+              "pixel_span": 146,
+              "normalized_half_depth_cm": 15.111401358204354
+            },
+            "mean_half_depth_cm": 15.436833257476293
+          }
+        },
+        {
+          "z_cm": 170.0,
+          "mean_half_depth_cm": 1.8551062482905538,
+          "sources": {
+            "left": {
+              "local_row": 0,
+              "outer_interval_half_open": [
+                78,
+                111
+              ],
+              "pixel_span": 33,
+              "normalized_half_depth_cm": 3.3997042494947167
+            },
+            "right": {
+              "local_row": 0,
+              "outer_interval_half_open": [
+                131,
+                134
+              ],
+              "pixel_span": 3,
+              "normalized_half_depth_cm": 0.31050824708639085
+            },
+            "mean_half_depth_cm": 1.8551062482905538
+          }
+        }
+      ]
+    },
     "axial_owner_material_faces": {
       "centered_core_and_shaft": {
         "top_boundary_faces": 12,
         "bottom_boundary_faces": 240
       },
       "two_mirrored_stone_strike_masses": {
-        "top_boundary_faces": 286,
-        "bottom_boundary_faces": 286
+        "top_boundary_faces": 244,
+        "bottom_boundary_faces": 244
       }
     },
     "axial_surfaces": {
@@ -185,16 +477,17 @@
     "internal_rejected_attempts": [
       "A12 R0 axial backing/relief and bottom-orientation failure",
       "A12 R1 owner-view-correct constant-Z projection sheets invalid in completed assembly",
-      "A12 R2 monolithic Z=132 depth application created false center stone and horizontal ledge"
+      "A12 R2 monolithic Z=132 depth application created false center stone and horizontal ledge",
+      "A12 R3 front/back-projected outward walls warped the visible strike faces"
     ],
     "global_z132_to_z138_transition_used": false,
     "proof_backings_hidden_from_completed_renders": true
   },
   "mesh": {
     "counts": {
-      "objects": 2,
-      "vertices": 436670,
-      "polygons": 436664,
+      "objects": 3,
+      "vertices": 520818,
+      "polygons": 520808,
       "proof_backing_objects": 4
     },
     "bounds": {
@@ -215,7 +508,7 @@
       ]
     },
     "symmetry": {
-      "unique_vertices": 436670,
+      "unique_vertices": 520818,
       "missing_mirrored_vertices": 0,
       "pass": true,
       "per_object": {
@@ -225,6 +518,10 @@
         },
         "SM_DRW_SiegeBreaker_Hammer_A01_A12_TwoMirroredStoneStrikeMasses": {
           "unique_vertices": 181672,
+          "missing_mirrored_vertices": 0
+        },
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_R4_SideOwnerFaces": {
+          "unique_vertices": 84148,
           "missing_mirrored_vertices": 0
         }
       }
@@ -236,29 +533,51 @@
     },
     "bottom": {
       "right_half_mean_absolute_rgb_delta": 54.794658
+    },
+    "side_owner_faces": {
+      "anchor_station_count": 9,
+      "maximum_left_right_normalized_half_depth_difference_cm": 3.089196,
+      "candidate_profile_is_exact_arithmetic_mean": true,
+      "geometry_mirrored_at_x0": true
     }
   },
   "outputs": {
     "blend_local_only": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_AxialPixelReconstruction_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_AxialPixelReconstruction_A01.blend",
     "front": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_AXIAL_PIXEL_RECONSTRUCTION_A01_FRONT.png",
+    "left": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_AXIAL_PIXEL_RECONSTRUCTION_A01_LEFT_OWNER_FACE.png",
+    "right": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_AXIAL_PIXEL_RECONSTRUCTION_A01_RIGHT_OWNER_FACE.png",
     "top": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_AXIAL_PIXEL_RECONSTRUCTION_A01_TOP_HEAD_ISOLATED.png",
     "bottom": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_AXIAL_PIXEL_RECONSTRUCTION_A01_BOTTOM_HEAD_ISOLATED.png",
     "color_3q": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_AXIAL_PIXEL_RECONSTRUCTION_A01_COLOR_3Q.png",
     "geometry_3q": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_AXIAL_PIXEL_RECONSTRUCTION_A01_GEOMETRY_3Q.png",
     "review": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_AXIAL_PIXEL_RECONSTRUCTION_A01_REVIEW.png",
     "top_filled_mask_local_only": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_AxialPixelReconstruction_A01/A12_true_top_filled_footprint.png",
-    "bottom_filled_mask_local_only": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_AxialPixelReconstruction_A01/A12_true_bottom_filled_footprint.png"
+    "bottom_filled_mask_local_only": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_AxialPixelReconstruction_A01/A12_true_bottom_filled_footprint.png",
+    "left_exact_membership_mask_local_only": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_AxialPixelReconstruction_A01/A12_R4_left_exact_membership.png",
+    "right_exact_membership_mask_local_only": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_AxialPixelReconstruction_A01/A12_R4_right_exact_membership.png",
+    "left_exterior_removed_mask_local_only": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_AxialPixelReconstruction_A01/A12_R4_left_exterior_removed_mask.png",
+    "right_exterior_removed_mask_local_only": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_AxialPixelReconstruction_A01/A12_R4_right_exterior_removed_mask.png",
+    "left_object_alpha_source_local_only": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_AxialPixelReconstruction_A01/A12_R4_left_source_pixels_object_alpha.png",
+    "right_object_alpha_source_local_only": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_AxialPixelReconstruction_A01/A12_R4_right_source_pixels_object_alpha.png"
   },
   "output_hashes": {
-    "blend_local_only": "7490516c746646d095af970836b75283048a3b7dce19d7c262ac8f2a3a7bc706",
-    "front": "8296fa456a3d6e83d8eca28199903a84ffab000cd7bc97380f518acef9f4bfe1",
-    "top": "52b04deb26cf4b1095e464cb7115e63bfb1870343965f248597c2297f46bcfb9",
-    "bottom": "de7cab13504a70c732cb28e1c2dc858ac2b8c6e1b8ee83e1d5d996866b6a7779",
-    "color_3q": "6ee475ecf62753c9c28c6d138df7f56801675267e5f460cbcbdcd6725a931eac",
-    "geometry_3q": "ef35847476a2f0bfd1e98b02e997629347266f9c88be805d81bfba863767135a",
-    "review": "621c361e809d11d775c3aa7aca476fdad4c3962cd76997cf763d0edb4d1ad5c6",
+    "blend_local_only": "d44778864febf225019ba2a256ae22af87d8fc091ed2fc515b1ab0010c9fff96",
+    "front": "49e299a50429e3f12785beef8954e1cd2d676c543434b800a4ce8ab5dca8ee07",
+    "left": "4cc052091778d7cc0a239baab6727a9394ef1e87f3c0d0c734c4f13f67d4c5ec",
+    "right": "0f89602c93467a6800082eea0346797dbdb5f1e5dde8cfa8ff59533654ed0ca4",
+    "top": "a8d1ed37b3b09f4d9fcedd8494eb62cdd5eb10af8342217fd341fb1256ff3d6e",
+    "bottom": "f5f393d994e72ae776ffd649aebdd8c022870f8b58fd93a385ec6773dac5e27f",
+    "color_3q": "9e053ae4a72410d7160a8281142963b7c35ff7dae575370e666563f88917a374",
+    "geometry_3q": "913a953212c97e96b8c68136f9ff107afb1b50446c05d351a8dc8b87e649c511",
+    "review": "eb0b41930a012ef014e2962daef697d5733942cc231b22b8775dbb24a77a7520",
     "top_filled_mask_local_only": "97ea33dec726198cefd13597263ef80dd893f245d0332de9187b22b3711a055f",
-    "bottom_filled_mask_local_only": "3534efb16c13c80ca2f8e1b1872f18fe2808e6d872fe41c58080141a80524f87"
+    "bottom_filled_mask_local_only": "3534efb16c13c80ca2f8e1b1872f18fe2808e6d872fe41c58080141a80524f87",
+    "left_exact_membership_mask_local_only": "9d9e37e173cbd352a406802802e85ead9bbbe6ad20874616452af62c9e5569c5",
+    "right_exact_membership_mask_local_only": "f0fcdabdffe5035a1e31bb2fb793a4db91d697328feea6afa71bfe0add67c372",
+    "left_exterior_removed_mask_local_only": "9d9e37e173cbd352a406802802e85ead9bbbe6ad20874616452af62c9e5569c5",
+    "right_exterior_removed_mask_local_only": "f0fcdabdffe5035a1e31bb2fb793a4db91d697328feea6afa71bfe0add67c372",
+    "left_object_alpha_source_local_only": "2c759c394a28c8f6a522fdbce9979274cd88e02c98ca6e130e755a5169ff4dc5",
+    "right_object_alpha_source_local_only": "8ac7ff7767fdd69559b64e96a4e932900a24a56f40bd851a8faf0a33890dd4b2"
   },
   "unreal_authority": false,
   "fully_game_ready": false

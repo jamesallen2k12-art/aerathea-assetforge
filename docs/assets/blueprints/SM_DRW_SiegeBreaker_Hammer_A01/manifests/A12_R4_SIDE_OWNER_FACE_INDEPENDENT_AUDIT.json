@@ -1,0 +1,697 @@
+{
+  "schema": "aerathea.siegebreaker.a12_r4_side_owner_face_independent_audit.v1",
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "contract_id": "SB-AXIAL-A12-R4-SIDE-OWNER-FACES",
+  "correction_id": "SB-AXIAL-A12-R4-SIDE-OWNER-FACES",
+  "status": "pass",
+  "artifact_status": "proof only",
+  "gate_summary": {
+    "passed": 37,
+    "total": 37
+  },
+  "observed_bounds_cm": {
+    "minimum": [
+      -37.56525802612305,
+      -22.149587631225586,
+      0.0
+    ],
+    "maximum": [
+      37.56525802612305,
+      22.149587631225586,
+      170.0
+    ],
+    "dimensions": [
+      75.1305160522461,
+      44.29917526245117,
+      170.0
+    ]
+  },
+  "observed_owner_face_bounds_cm": {
+    "minimum": [
+      -37.56525802612305,
+      -22.097837448120117,
+      111.089111328125
+    ],
+    "maximum": [
+      37.56525802612305,
+      22.097837448120117,
+      170.0
+    ]
+  },
+  "observed_component_edges": {
+    "core_max_positive_x_cm": 17.367237091064453,
+    "stone_min_positive_x_cm": 17.367237091064453,
+    "approved_boundary_cm": 17.337810704147337
+  },
+  "observed_symmetry": {
+    "SM_DRW_SiegeBreaker_Hammer_A01_A12_CenteredCoreAndShaft": {
+      "unique_vertices": 254998,
+      "missing_mirrored_vertices": 0,
+      "pass": true
+    },
+    "SM_DRW_SiegeBreaker_Hammer_A01_A12_TwoMirroredStoneStrikeMasses": {
+      "unique_vertices": 181672,
+      "missing_mirrored_vertices": 0,
+      "pass": true
+    },
+    "SM_DRW_SiegeBreaker_Hammer_A01_A12_R4_SideOwnerFaces": {
+      "unique_vertices": 84148,
+      "missing_mirrored_vertices": 0,
+      "pass": true
+    }
+  },
+  "gates": [
+    {
+      "name": "manifest_schema",
+      "pass": true,
+      "evidence": "aerathea.siegebreaker.a12_axial_pixel_reconstruction_validation.v2"
+    },
+    {
+      "name": "contract_and_correction_ids",
+      "pass": true,
+      "evidence": {
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_CenteredCoreAndShaft": [
+          "SB-AXIAL-A12-R4-SIDE-OWNER-FACES",
+          "SB-AXIAL-A12-R4-SIDE-OWNER-FACES"
+        ],
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_TwoMirroredStoneStrikeMasses": [
+          "SB-AXIAL-A12-R4-SIDE-OWNER-FACES",
+          "SB-AXIAL-A12-R4-SIDE-OWNER-FACES"
+        ],
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_R4_SideOwnerFaces": [
+          "SB-AXIAL-A12-R4-SIDE-OWNER-FACES",
+          "SB-AXIAL-A12-R4-SIDE-OWNER-FACES"
+        ]
+      }
+    },
+    {
+      "name": "candidate_status",
+      "pass": true,
+      "evidence": "DCC source candidate pending Flamestrike visual decision"
+    },
+    {
+      "name": "three_candidate_components",
+      "pass": true,
+      "evidence": {
+        "objects": 3,
+        "vertices": 520818,
+        "polygons": 520808,
+        "proof_backing_objects": 4
+      }
+    },
+    {
+      "name": "component_roles",
+      "pass": true,
+      "evidence": {
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_CenteredCoreAndShaft": "centered metal core and shaft",
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_TwoMirroredStoneStrikeMasses": "two mirrored stone strike masses",
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_R4_SideOwnerFaces": "mirrored -X/+X outward strike-face owner geometry"
+      }
+    },
+    {
+      "name": "pixel_scaled_24_14_14_partition",
+      "pass": true,
+      "evidence": {
+        "ratio_core_leftstone_rightstone": [
+          24,
+          14,
+          14
+        ],
+        "core_width_cm": 34.675621408294674,
+        "stone_width_each_cm": 20.227445821505228,
+        "core_half_width_cm": 17.337810704147337,
+        "core_source_pixels": 125217,
+        "two_stone_source_pixels": 89704
+      }
+    },
+    {
+      "name": "component_boundary_within_one_front_pixel",
+      "pass": true,
+      "evidence": {
+        "core_max_positive_x_cm": 17.367237091064453,
+        "stone_min_positive_x_cm": 17.367237091064453,
+        "approved_boundary_cm": 17.337810704147337
+      }
+    },
+    {
+      "name": "exact_candidate_envelope",
+      "pass": true,
+      "evidence": [
+        75.1305160522461,
+        44.29917526245117,
+        170.0
+      ]
+    },
+    {
+      "name": "bounds_match_manifest",
+      "pass": true,
+      "evidence": {
+        "observed": [
+          75.1305160522461,
+          44.29917526245117,
+          170.0
+        ],
+        "manifest": [
+          75.1305160522461,
+          44.29917526245117,
+          170.0
+        ]
+      }
+    },
+    {
+      "name": "origin_z_zero",
+      "pass": true,
+      "evidence": 0.0
+    },
+    {
+      "name": "owner_face_exact_x_envelope",
+      "pass": true,
+      "evidence": {
+        "minimum": [
+          -37.56525802612305,
+          -22.097837448120117,
+          111.089111328125
+        ],
+        "maximum": [
+          37.56525802612305,
+          22.097837448120117,
+          170.0
+        ]
+      }
+    },
+    {
+      "name": "owner_face_exact_z_interval",
+      "pass": true,
+      "evidence": {
+        "observed": {
+          "minimum": [
+            -37.56525802612305,
+            -22.097837448120117,
+            111.089111328125
+          ],
+          "maximum": [
+            37.56525802612305,
+            22.097837448120117,
+            170.0
+          ]
+        },
+        "declared": [
+          111.089111328125,
+          170.0
+        ]
+      }
+    },
+    {
+      "name": "independent_symmetry",
+      "pass": true,
+      "evidence": {
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_CenteredCoreAndShaft": {
+          "unique_vertices": 254998,
+          "missing_mirrored_vertices": 0,
+          "pass": true
+        },
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_TwoMirroredStoneStrikeMasses": {
+          "unique_vertices": 181672,
+          "missing_mirrored_vertices": 0,
+          "pass": true
+        },
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_R4_SideOwnerFaces": {
+          "unique_vertices": 84148,
+          "missing_mirrored_vertices": 0,
+          "pass": true
+        }
+      }
+    },
+    {
+      "name": "mirrors_applied",
+      "pass": true,
+      "evidence": {
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_CenteredCoreAndShaft": {
+          "property": 1,
+          "modifiers": []
+        },
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_TwoMirroredStoneStrikeMasses": {
+          "property": 1,
+          "modifiers": []
+        },
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_R4_SideOwnerFaces": {
+          "property": 1,
+          "modifiers": []
+        }
+      }
+    },
+    {
+      "name": "no_remaining_candidate_modifiers",
+      "pass": true,
+      "evidence": {
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_CenteredCoreAndShaft": [],
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_TwoMirroredStoneStrikeMasses": [],
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_R4_SideOwnerFaces": []
+      }
+    },
+    {
+      "name": "side_membership_counts",
+      "pass": true,
+      "evidence": {
+        "left": 118540,
+        "right": 116948
+      }
+    },
+    {
+      "name": "side_source_hashes",
+      "pass": true,
+      "evidence": {
+        "left": "1a23e0c24f7be4b12df93e2509b9d300acc9161a21a32b336f7cf63c1288d91b",
+        "right": "04a1e9359d518b1dec35fe161020bd23ab9e2f8d5934f24e4184aecaa91d8330"
+      }
+    },
+    {
+      "name": "nine_profile_anchors",
+      "pass": true,
+      "evidence": [
+        {
+          "z_cm": 132.0,
+          "mean_half_depth_cm": 21.8402835654137,
+          "sources": {
+            "left": {
+              "local_row": 247,
+              "outer_interval_half_open": [
+                3,
+                213
+              ],
+              "pixel_span": 210,
+              "normalized_half_depth_cm": 21.63448158769365
+            },
+            "right": {
+              "local_row": 245,
+              "outer_interval_half_open": [
+                0,
+                213
+              ],
+              "pixel_span": 213,
+              "normalized_half_depth_cm": 22.046085543133753
+            },
+            "mean_half_depth_cm": 21.8402835654137
+          }
+        },
+        {
+          "z_cm": 136.75,
+          "mean_half_depth_cm": 21.89179423586059,
+          "sources": {
+            "left": {
+              "local_row": 216,
+              "outer_interval_half_open": [
+                3,
+                214
+              ],
+              "pixel_span": 211,
+              "normalized_half_depth_cm": 21.73750292858743
+            },
+            "right": {
+              "local_row": 214,
+              "outer_interval_half_open": [
+                0,
+                213
+              ],
+              "pixel_span": 213,
+              "normalized_half_depth_cm": 22.046085543133753
+            },
+            "mean_half_depth_cm": 21.89179423586059
+          }
+        },
+        {
+          "z_cm": 141.5,
+          "mean_half_depth_cm": 21.99457487268686,
+          "sources": {
+            "left": {
+              "local_row": 185,
+              "outer_interval_half_open": [
+                0,
+                214
+              ],
+              "pixel_span": 214,
+              "normalized_half_depth_cm": 22.04656695126877
+            },
+            "right": {
+              "local_row": 184,
+              "outer_interval_half_open": [
+                1,
+                213
+              ],
+              "pixel_span": 212,
+              "normalized_half_depth_cm": 21.942582794104954
+            },
+            "mean_half_depth_cm": 21.99457487268686
+          }
+        },
+        {
+          "z_cm": 146.25,
+          "mean_half_depth_cm": 21.8402835654137,
+          "sources": {
+            "left": {
+              "local_row": 154,
+              "outer_interval_half_open": [
+                3,
+                213
+              ],
+              "pixel_span": 210,
+              "normalized_half_depth_cm": 21.63448158769365
+            },
+            "right": {
+              "local_row": 153,
+              "outer_interval_half_open": [
+                0,
+                213
+              ],
+              "pixel_span": 213,
+              "normalized_half_depth_cm": 22.046085543133753
+            },
+            "mean_half_depth_cm": 21.8402835654137
+          }
+        },
+        {
+          "z_cm": 151.0,
+          "mean_half_depth_cm": 20.75422681281386,
+          "sources": {
+            "left": {
+              "local_row": 123,
+              "outer_interval_half_open": [
+                4,
+                211
+              ],
+              "pixel_span": 207,
+              "normalized_half_depth_cm": 21.325417565012312
+            },
+            "right": {
+              "local_row": 122,
+              "outer_interval_half_open": [
+                0,
+                195
+              ],
+              "pixel_span": 195,
+              "normalized_half_depth_cm": 20.183036060615407
+            },
+            "mean_half_depth_cm": 20.75422681281386
+          }
+        },
+        {
+          "z_cm": 155.75,
+          "mean_half_depth_cm": 19.20722177093461,
+          "sources": {
+            "left": {
+              "local_row": 92,
+              "outer_interval_half_open": [
+                3,
+                187
+              ],
+              "pixel_span": 184,
+              "normalized_half_depth_cm": 18.955926724455388
+            },
+            "right": {
+              "local_row": 92,
+              "outer_interval_half_open": [
+                0,
+                188
+              ],
+              "pixel_span": 188,
+              "normalized_half_depth_cm": 19.458516817413827
+            },
+            "mean_half_depth_cm": 19.20722177093461
+          }
+        },
+        {
+          "z_cm": 160.5,
+          "mean_half_depth_cm": 18.586686684896844,
+          "sources": {
+            "left": {
+              "local_row": 61,
+              "outer_interval_half_open": [
+                3,
+                185
+              ],
+              "pixel_span": 182,
+              "normalized_half_depth_cm": 18.74988404266783
+            },
+            "right": {
+              "local_row": 61,
+              "outer_interval_half_open": [
+                0,
+                178
+              ],
+              "pixel_span": 178,
+              "normalized_half_depth_cm": 18.423489327125857
+            },
+            "mean_half_depth_cm": 18.586686684896844
+          }
+        },
+        {
+          "z_cm": 165.25,
+          "mean_half_depth_cm": 15.436833257476293,
+          "sources": {
+            "left": {
+              "local_row": 30,
+              "outer_interval_half_open": [
+                17,
+                170
+              ],
+              "pixel_span": 153,
+              "normalized_half_depth_cm": 15.762265156748231
+            },
+            "right": {
+              "local_row": 30,
+              "outer_interval_half_open": [
+                14,
+                160
+              ],
+              "pixel_span": 146,
+              "normalized_half_depth_cm": 15.111401358204354
+            },
+            "mean_half_depth_cm": 15.436833257476293
+          }
+        },
+        {
+          "z_cm": 170.0,
+          "mean_half_depth_cm": 1.8551062482905538,
+          "sources": {
+            "left": {
+              "local_row": 0,
+              "outer_interval_half_open": [
+                78,
+                111
+              ],
+              "pixel_span": 33,
+              "normalized_half_depth_cm": 3.3997042494947167
+            },
+            "right": {
+              "local_row": 0,
+              "outer_interval_half_open": [
+                131,
+                134
+              ],
+              "pixel_span": 3,
+              "normalized_half_depth_cm": 0.31050824708639085
+            },
+            "mean_half_depth_cm": 1.8551062482905538
+          }
+        }
+      ]
+    },
+    {
+      "name": "one_face_then_mirror_rule",
+      "pass": true,
+      "evidence": {
+        "construction": "one continuous row-connected +X scanline face; pure-X inward closure; exact X=0 mirror; fixed source-specific -X/+X UV ownership",
+        "source_half": "X>=0"
+      }
+    },
+    {
+      "name": "fixed_source_map_no_yz_offset",
+      "pass": true,
+      "evidence": {
+        "fixed_mapping": true,
+        "y_or_z_edge_offset": false
+      }
+    },
+    {
+      "name": "continuous_row_connected_surface",
+      "pass": true,
+      "evidence": {
+        "segments": 108,
+        "islands": false,
+        "boundary_edges": 600
+      }
+    },
+    {
+      "name": "per_side_pixel_ownership",
+      "pass": true,
+      "evidence": {
+        "property": "-X=left source; +X=right source",
+        "materials": [
+          "MI_DRW_SiegeBreaker_A12_R4_LeftOwnerPixelsMasked",
+          "MI_DRW_SiegeBreaker_A12_R4_RightOwnerPixelsMasked"
+        ]
+      }
+    },
+    {
+      "name": "source_background_removed_by_exact_alpha",
+      "pass": true,
+      "evidence": {
+        "left": {
+          "filled_membership_pixels": 119109,
+          "full_canvas_alpha_pixels": 119109,
+          "method": "exact membership plus enclosed regions; exterior flood-fill removed"
+        },
+        "right": {
+          "filled_membership_pixels": 117538,
+          "full_canvas_alpha_pixels": 117538,
+          "method": "exact membership plus enclosed regions; exterior flood-fill removed"
+        }
+      }
+    },
+    {
+      "name": "both_side_materials_used",
+      "pass": true,
+      "evidence": {
+        "left_minus_x_faces": 42072,
+        "right_plus_x_faces": 42072
+      }
+    },
+    {
+      "name": "side_owner_uv_present",
+      "pass": true,
+      "evidence": [
+        "A12_R4_PerSideExactSourceUV"
+      ]
+    },
+    {
+      "name": "superseded_wall_recessed",
+      "pass": true,
+      "evidence": {
+        "vertices_recessed": 5472,
+        "selection_abs_x_min_cm": 35.96525652565256,
+        "head_z_min_cm": 111.089111328125,
+        "recess_cm": 1.7
+      }
+    },
+    {
+      "name": "legacy_wall_behind_maximum_owner_relief",
+      "pass": true,
+      "evidence": {
+        "stone_head_max_abs_x_cm": 35.88208770751953,
+        "owner_deepest_visible_abs_x_cm": 37.11525652565256
+      }
+    },
+    {
+      "name": "axial_owner_materials_preserved",
+      "pass": true,
+      "evidence": {
+        "core": 1,
+        "stone": 1
+      }
+    },
+    {
+      "name": "proof_objects_hidden_and_classified",
+      "pass": true,
+      "evidence": {
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_TopClosedSourceCap": {
+          "hide_render": true,
+          "status": "proof only; head-isolated source backing; hidden from completed assembly"
+        },
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_BottomClosedSourceCap": {
+          "hide_render": true,
+          "status": "proof only; head-isolated source backing; hidden from completed assembly"
+        },
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_TopSourceRelief": {
+          "hide_render": true,
+          "status": "proof only; head-isolated source projection; hidden from completed assembly"
+        },
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_BottomSourceRelief": {
+          "hide_render": true,
+          "status": "proof only; head-isolated source projection; hidden from completed assembly"
+        }
+      }
+    },
+    {
+      "name": "no_global_transition_blend",
+      "pass": true,
+      "evidence": false
+    },
+    {
+      "name": "fresh_rebuild_no_prior_geometry",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "a09_immutable",
+      "pass": true,
+      "evidence": "06ffb121d00cddb7b9e30a60067a5036a851d285f15daca3bffe3a663fd6d78f"
+    },
+    {
+      "name": "only_authorized_source_images_loaded",
+      "pass": true,
+      "evidence": [
+        "A12_R4_left_source_pixels_object_alpha.png",
+        "A12_R4_right_source_pixels_object_alpha.png",
+        "siege_breaker_back_view.png",
+        "siege_breaker_front_view.png",
+        "siege_breaker_left_view.png",
+        "siege_breaker_true_axial_bottom_view.png",
+        "siege_breaker_true_axial_top_view.png"
+      ]
+    },
+    {
+      "name": "output_hashes",
+      "pass": true,
+      "evidence": {
+        "blend_local_only": "d44778864febf225019ba2a256ae22af87d8fc091ed2fc515b1ab0010c9fff96",
+        "front": "49e299a50429e3f12785beef8954e1cd2d676c543434b800a4ce8ab5dca8ee07",
+        "left": "4cc052091778d7cc0a239baab6727a9394ef1e87f3c0d0c734c4f13f67d4c5ec",
+        "right": "0f89602c93467a6800082eea0346797dbdb5f1e5dde8cfa8ff59533654ed0ca4",
+        "top": "a8d1ed37b3b09f4d9fcedd8494eb62cdd5eb10af8342217fd341fb1256ff3d6e",
+        "bottom": "f5f393d994e72ae776ffd649aebdd8c022870f8b58fd93a385ec6773dac5e27f",
+        "color_3q": "9e053ae4a72410d7160a8281142963b7c35ff7dae575370e666563f88917a374",
+        "geometry_3q": "913a953212c97e96b8c68136f9ff107afb1b50446c05d351a8dc8b87e649c511",
+        "review": "eb0b41930a012ef014e2962daef697d5733942cc231b22b8775dbb24a77a7520",
+        "top_filled_mask_local_only": "97ea33dec726198cefd13597263ef80dd893f245d0332de9187b22b3711a055f",
+        "bottom_filled_mask_local_only": "3534efb16c13c80ca2f8e1b1872f18fe2808e6d872fe41c58080141a80524f87",
+        "left_exact_membership_mask_local_only": "9d9e37e173cbd352a406802802e85ead9bbbe6ad20874616452af62c9e5569c5",
+        "right_exact_membership_mask_local_only": "f0fcdabdffe5035a1e31bb2fb793a4db91d697328feea6afa71bfe0add67c372",
+        "left_exterior_removed_mask_local_only": "9d9e37e173cbd352a406802802e85ead9bbbe6ad20874616452af62c9e5569c5",
+        "right_exterior_removed_mask_local_only": "f0fcdabdffe5035a1e31bb2fb793a4db91d697328feea6afa71bfe0add67c372",
+        "left_object_alpha_source_local_only": "2c759c394a28c8f6a522fdbce9979274cd88e02c98ca6e130e755a5169ff4dc5",
+        "right_object_alpha_source_local_only": "8ac7ff7767fdd69559b64e96a4e932900a24a56f40bd851a8faf0a33890dd4b2"
+      }
+    },
+    {
+      "name": "side_renders_distinct",
+      "pass": true,
+      "evidence": {
+        "left": "4cc052091778d7cc0a239baab6727a9394ef1e87f3c0d0c734c4f13f67d4c5ec",
+        "right": "0f89602c93467a6800082eea0346797dbdb5f1e5dde8cfa8ff59533654ed0ca4"
+      }
+    },
+    {
+      "name": "geometry_proof_distinct",
+      "pass": true,
+      "evidence": {
+        "color": "9e053ae4a72410d7160a8281142963b7c35ff7dae575370e666563f88917a374",
+        "geometry": "913a953212c97e96b8c68136f9ff107afb1b50446c05d351a8dc8b87e649c511"
+      }
+    },
+    {
+      "name": "no_image_generation_trellis_or_unreal",
+      "pass": true,
+      "evidence": {
+        "software": {
+          "blender": "3.0.1",
+          "image_generation": false,
+          "trellis": false,
+          "image_to_3d": false
+        },
+        "unreal": false,
+        "game_ready": false
+      }
+    }
+  ],
+  "decision_boundary": "Technical audit cannot grant visual approval; Flamestrike must decide from the visible R4 review board."
+}

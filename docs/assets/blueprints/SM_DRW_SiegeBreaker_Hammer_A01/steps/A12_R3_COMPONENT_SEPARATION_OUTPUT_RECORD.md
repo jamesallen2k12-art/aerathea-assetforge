@@ -4,7 +4,7 @@
 - Contract: `SB-AXIAL-A12-RECONSTRUCTION`
 - Correction: `SB-AXIAL-A12-R3-COMPONENT-SEPARATION`
 - Date: `2026-07-22`
-- Artifact status: `DCC source candidate pending Flamestrike visual decision`
+- Artifact status: `quarantined after Flamestrike visual rejection`
 - Unreal authority: `false`
 - Fully game-ready: `false`
 
@@ -47,9 +47,10 @@ silhouettes. The centered core/shaft retains the proven A09 depth. No global
 ## Visual Gate
 
 Internal review confirms that the R2 horizontal ledge is absent and the
-untextured proof now reads as two mirrored outer stones around one centered
-core/shaft. Technical evidence cannot grant visual approval. The exact R3
-review board is pending Flamestrike's decision.
+untextured proof reads as two mirrored outer stones around one centered
+core/shaft. Flamestrike rejected the exact R3 colored completed three-quarter
+view because the outward strike faces are warped. The component split and
+numeric evidence remain `proof only`; R3 is not eligible for visual approval.
 
 ## Hash Locks
 
@@ -68,8 +69,9 @@ review board is pending Flamestrike's decision.
 - independent audit:
   `5d1a85110e38c1dd47b177793aa38d4bf010847ae1191d88f7041cfd15a5e6f2`.
 
-## Decision Required
+## Final Decision
 
-Flamestrike must classify the exact visible R3 candidate as `approved`,
-`revise`, `rejected`, or `blocked`. Approval would apply only to this reviewed
-DCC source appearance and component correction, not game-ready escalation.
+Flamestrike classification: `rejected / revise by source-view ownership`.
+The `-X/+X` side source views must own the outward strike faces. R4 is limited
+to that correction and a new visible review; no game-ready escalation is
+authorized.

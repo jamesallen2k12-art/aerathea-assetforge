@@ -138,3 +138,174 @@ Hash locks:
 `Blueprint block: rule missing` — a source-authorized transition rule is
 required between the unchanged A09 depth below `Z=132 cm` and the A11 centered
 mean head depth above it.
+
+## R3 — Component Split Correct, Outward Strike Faces Warped
+
+- Date: `2026-07-22`
+- Status: `quarantined after Flamestrike visual rejection`
+- Contract: `SB-AXIAL-A12-R3-COMPONENT-SEPARATION`
+
+R3 correctly removed the false center stone and produced separate mirrored
+outer stones around the centered metal core/shaft. Its exact component split,
+overall envelope, and symmetry audit passed. Flamestrike nevertheless rejected
+the colored completed three-quarter view because the two outward strike faces
+were visibly warped.
+
+The first invalid assumption was retaining front/back-derived projected side
+walls as the visible `-X/+X` strike-face solution. Those walls preserve the
+front elevation but do not reproduce the side-view-owned face silhouette,
+bevels, rune plate, or surface relief. The exact left/right source views are the
+explicit evidence for those outward faces.
+
+The attempt is `invalid` as a visual candidate. Its component-separation ratio,
+centered core, exact A11 envelope, and zero-missing-mirror result remain
+`proof only` inputs to the bounded R4 correction. The exact rejected artifacts
+are preserved locally under
+`SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_InternalRejected_R3/`.
+
+Hash locks:
+
+- rejected `.blend`:
+  `7490516c746646d095af970836b75283048a3b7dce19d7c262ac8f2a3a7bc706`;
+- rejected review board:
+  `621c361e809d11d775c3aa7aca476fdad4c3962cd76997cf763d0edb4d1ad5c6`;
+- rejected colored three-quarter:
+  `6ee475ecf62753c9c28c6d138df7f56801675267e5f460cbcbdcd6725a931eac`;
+- rejected geometry three-quarter:
+  `ef35847476a2f0bfd1e98b02e997629347266f9c88be805d81bfba863767135a`;
+- rejected front:
+  `8296fa456a3d6e83d8eca28199903a84ffab000cd7bc97380f518acef9f4bfe1`;
+- rejected validation:
+  `bf4009a7dde2a191d816a4b83a28fa496fc8535b8a0adc8d5607a37ee08fa1d5`;
+- rejected independent audit:
+  `5d1a85110e38c1dd47b177793aa38d4bf010847ae1191d88f7041cfd15a5e6f2`.
+
+Bounded correction approved by Flamestrike: keep A09/A11, the centered core,
+the R3 component split, and the exact envelope; replace only the visible
+outward strike-face solution with pixel-scanned `-X/+X` owner geometry; build
+one geometric face solution and mirror it at `X=0`; map each original side
+source to its corresponding outward face; show side-source comparisons plus
+colored and gray three-quarter proofs; stop at the visual gate.
+
+## R4A — Nonlinear Side UV And Edge-Offset Envelope Failure
+
+- Date: `2026-07-22`
+- Status: `quarantined; never presented for approval`
+- Contract: `SB-AXIAL-A12-R4-SIDE-OWNER-FACES`
+
+The first internal R4 execution created one `+X` face and mirrored it correctly,
+but failed the internal source-map and dimension gates:
+
+- it normalized UV coordinates independently inside each scanline's changing
+  member span, visibly wavering straight source features;
+- Blender Solidify with even edge offset expanded `Y`, `Z`, and the recorded
+  envelope to `75.130516 x 45.648811 x 170.749954 cm`;
+- it used only the earlier upper-head sample interval `Z=132..170 cm`, while
+  the fresh front-source stone component proves that the complete outward
+  strike mass continues to `Z=111.089111 cm`.
+
+The attempt is `invalid` as a review candidate. It is preserved locally under
+`SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_InternalRejected_R4A/`.
+
+Hash locks:
+
+- rejected `.blend`:
+  `c0f9d15348f0a50d9385b4aa497ae412a342534d84c4474091dfc59229f3afc6`;
+- rejected review board:
+  `01a97612caa7b2709f3a5232a42171023bd5f763ca2a0979b47a0f004ce1295b`;
+- rejected colored three-quarter:
+  `b63d0b10a24565756f9781e1c119375f9fd01b0a7bcbde9d487911cabd742d1f`;
+- rejected geometry three-quarter:
+  `ee5a29b58f1090da079a953080272cc5674773af4decd962ef619f5a1a44475f`;
+- rejected `-X` face:
+  `0a86b9c385737bdde49e70ca7c13ce027db62bb9437a3086fded0e240be255c4`;
+- rejected `+X` face:
+  `ac569919149cdfd5cc5c171f42665b877fe7428eb4fe6087f22a159089053105`;
+- rejected validation:
+  `8fc719799ce22a8dbc26992333c39f533f8a735a019308d83a9ec36f82ef609e`.
+
+Bounded correction: use one fixed crop-to-A11-depth coordinate map for every
+source pixel; derive the complete owner-face `Z` interval from the freshly
+built front-source stone component; create pure-X inward thickness manually so
+no Y/Z offset is possible; preserve all other R4 authority.
+
+## R4B — Exact Envelope, But Background Corners And Raster Seams
+
+- Date: `2026-07-22`
+- Status: `quarantined; never presented for approval`
+- Contract: `SB-AXIAL-A12-R4-SIDE-OWNER-FACES`
+
+R4B corrected the nonlinear UV error, covered the full measured stone interval
+`Z=111.089111..170 cm`, and restored the exact candidate envelope
+`75.130516 x 44.299175 x 170 cm`. It still failed the internal visual gate:
+
+- the common mean silhouette can exceed either individual source membership at
+  a changing row edge, so opaque white source background appeared at bevel
+  corners;
+- cell-by-cell raster closure produced small visible discontinuities around
+  the central rune plate.
+
+The attempt is `invalid` as a review candidate. It is preserved locally under
+`SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_InternalRejected_R4B/`.
+
+Hash locks:
+
+- rejected `.blend`:
+  `c93fe431f99ee42f3d5fe8b1ed512aaae45aea7a67e038fb6a1fb36e3d5923b8`;
+- rejected review board:
+  `ed6ecdf7d67e55ff5b4c28f9a3b5960878805815c656ca9964023b404a4c4437`;
+- rejected colored three-quarter:
+  `d9e7ae6360dc4a6bfb1f4961b52935e4ce152a01ff950fa4ebef38edf940a3dd`;
+- rejected geometry three-quarter:
+  `5c12390f3b97449f91a18919bdc11931234dab55b84b8ff0f0553faad4357351`;
+- rejected `-X` face:
+  `198168a44b7542a044057e38f7adba678857f4660c39571af8f7419a4edc7763`;
+- rejected `+X` face:
+  `6ba11b87897d0b8dc4b1c5e9cc23213141b1f99f07b487bac8aff2e61bb6fd24`;
+- rejected validation:
+  `c605ff87d9a34cd1d6d9df4273016cc57c4efeeddefaa3a1d1a9dd7151ebee3a`.
+
+Bounded correction: retain the fixed coordinate map, complete measured Z span,
+mean geometry profile, and pure-X thickness; derive alpha solely from the exact
+source membership to remove source background; replace discontinuous raster
+cell islands with one continuous row-connected face grid.
+
+## R4C — Continuous Masked Face, Legacy-Wall Occlusion
+
+- Date: `2026-07-22`
+- Status: `quarantined; never presented for approval`
+- Contract: `SB-AXIAL-A12-R4-SIDE-OWNER-FACES`
+
+R4C removed the source-sheet background and raster-cell seams, preserved the
+exact envelope, and passed its first independent technical audit `36/36`.
+Internal close-up review still found small rectangular patches around the rune
+plate. Exact vertex evidence identifies the cause: legacy wall vertices at
+`|X|=37.259228 cm` remain outside the new face's deepest relief position
+`|X|=37.115258 cm` and therefore occlude the owner pixels.
+
+The attempt is `invalid` as a review candidate despite its technical pass. It
+is preserved locally under
+`SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_InternalRejected_R4C/`.
+
+Hash locks:
+
+- rejected `.blend`:
+  `ab30971e2f57fade7eaacb4898eed5b4378b117010fcadde20c84986876d1d61`;
+- rejected review board:
+  `f1709fe64a4eda77cf71384890fb63a4578ffe04a6512f36ab31e7f595090c2f`;
+- rejected colored three-quarter:
+  `e59f7f451c18b459263d5f99ff1b5afbae3d6324c620f72c24bc1d5781f37664`;
+- rejected geometry three-quarter:
+  `d5bd260a7c0277dc0bcdba751bd8dd404e03f7cd3cb24af2d54537e805ca76d8`;
+- rejected `-X` face:
+  `cc8e3dcc93f1cc7f239ce978bab705f87222a6e5f6f4db2854a99e2639548673`;
+- rejected `+X` face:
+  `9a39cd18de2b55acad86815e75f024475c44d12abfddc7067bfa09de11c61ed9`;
+- rejected validation:
+  `079a8a0f82074c4ead9376620722deb56138310242db783ea50b081ac51a7e17`;
+- rejected technical audit:
+  `22a23107131c311e436c15b9f43846935fee19d0ecc5bc0e0f1a3101c81a0d38`.
+
+Bounded correction: enlarge only the already-authorized inward recess so every
+superseded wall vertex is behind the new maximum relief. Do not alter source
+pixels, owner-face profile, UV mapping, relief, mirror, or outer envelope.

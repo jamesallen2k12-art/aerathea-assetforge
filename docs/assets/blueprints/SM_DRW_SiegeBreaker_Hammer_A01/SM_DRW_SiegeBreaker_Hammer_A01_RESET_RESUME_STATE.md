@@ -1,13 +1,13 @@
 # SM_DRW_SiegeBreaker_Hammer_A01 Reset / Resume State
 
-- Active approved route: `A12 R3 component-separated axial reconstruction`
+- Active approved route: `A12 R4 side-owner strike-face reconstruction`
 - Plan: `SM_DRW_SiegeBreaker_Hammer_A01_PIXEL_HALF_MIRROR_A09_PLAN.md`
-- Active contract: `A12 R3 correction executed; visible decision gate active`
-- Current state: `DCC source candidate pending Flamestrike visual decision`
-- Next approved activity: `open exact A12 R3 board and receive approved/revise/rejected/blocked decision`
-- Source processing authorized now: `false; A11 bounded measurement is complete`
+- Active contract: `steps/A12_R4_SIDE_OWNER_FACE_RECONSTRUCTION_CONTRACT.md`
+- Current state: `R3 and internal R4A-R4C quarantined; R4D candidate built and independently audited 37/37`
+- Next approved activity: `open the exact R4 review artifacts and stop for Flamestrike's visual decision`
+- Source processing authorized now: `true only for exact -X/+X outward-face pixels under R4`
 - Model inference authorized now: `false`
-- DCC production authorized now: `false beyond the completed R3 visual gate`
+- DCC production authorized now: `false pending the R4 visual decision`
 - Unreal authority: `false`
 - Fully game-ready: `false`
 
@@ -70,8 +70,22 @@
   core/shaft, and no global `6 cm` blend.
 - A12 R3 candidate: two mesh objects, bounds
   `75.130516052 x 44.299175262 x 170 cm`, zero missing mirrored vertices,
-  independent audit `25/25`, review SHA `621c361e...d1ad5c6`, pending visual
-  decision.
+  independent audit `25/25`, review SHA `621c361e...d1ad5c6`; Flamestrike
+  rejected its colored three-quarter view because the outward faces are
+  warped. R3 is `quarantined`; component separation remains `proof only`.
+- Flamestrike clarified that the left/right outward strike faces must be built
+  from the original `-X/+X` view pixels and approved R4.
+- R4 preserves A09/A11, the R3 component split, exact mirror structure, and
+  overall envelope; it replaces only the outward strike-face owner geometry
+  and presents exact side plus colored/gray three-quarter proofs.
+- R4A-R4C were rejected internally and preserved locally. The current R4D
+  candidate removes their mapping, seam/background, and legacy-wall occlusion
+  defects without changing the approved R4 source/profile authority.
+- R4D evaluated envelope:
+  `75.130516052 x 44.299175262 x 170.000000000 cm`; geometry: `3` objects,
+  `520818` vertices, `520808` polygons; independent audit: `pass 37/37`.
+- R4D artifact status: `DCC source candidate pending Flamestrike visual
+  decision`; technical evidence is `proof only`.
 
 ## Active Method
 
@@ -94,7 +108,8 @@ Blender-only direction.
 ## Resume Instruction
 
 Read the recovery journal/latest checkpoint, this state, A09 final approval,
-A11 authority, `steps/A12_R3_COMPONENT_SEPARATION_CORRECTION_CONTRACT.md`,
-`steps/A12_R3_COMPONENT_SEPARATION_OUTPUT_RECORD.md`, and the A12 R3 independent
-audit. Reopen the exact A12 R3 review board if needed and stop for Flamestrike's
-visual decision. Never use TRELLIS or any other prohibited generation software.
+A11 authority, `steps/A12_R3_COMPONENT_SEPARATION_OUTPUT_RECORD.md`, and
+`steps/A12_R4_SIDE_OWNER_FACE_RECONSTRUCTION_CONTRACT.md`, and
+`steps/A12_R4_SIDE_OWNER_FACE_OUTPUT_RECORD.md`. Open the exact R4 review
+artifacts and stop for Flamestrike's visual decision. Never use TRELLIS or any
+other prohibited generation software.

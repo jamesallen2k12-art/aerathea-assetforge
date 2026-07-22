@@ -441,5 +441,50 @@
 - Independent audit: `pass 25/25`; `proof only`.
 - Review-board SHA-256:
   `621c361e809d11d775c3aa7aca476fdad4c3962cd76997cf763d0edb4d1ad5c6`.
+- Flamestrike visual decision: `rejected / revise`; the colored completed
+  three-quarter view warps the outward strike faces.
+- Artifact status: `quarantined`; component separation and numeric evidence
+  remain `proof only` for the bounded R4 correction.
+- Further DCC, export, Unreal, or game-ready escalation: `false`.
+
+## A12 R4 Side-Owner Strike-Face Approval
+
+- Date: `2026-07-22`.
+- Flamestrike clarification: “faces of the hammer” means the left and right
+  outward strike faces.
+- Flamestrike direction: take their geometry from the `-X` and `+X` source
+  views; approval response: `approved`.
+- Preserved authority: A09 visual match and half/mirror method, A11
+  `75.130513051 x 44.299176584 cm` head footprint, R3 centered core and
+  `24:14:14` component split, and `170 cm` longitudinal scale.
+- New ownership: left-view pixels own the `-X` strike face; right-view pixels
+  own the `+X` strike face. Printed `32 cm` remains `reference only`.
+- Construction rule: reconcile the two exact side profiles into one centered
+  arithmetic-mean `Y/Z` profile, construct one `+X` face, mirror its geometry
+  at `X=0`, and retain each side's original visible pixels on its corresponding
+  face.
+- Authorized output: Blender-only R4 DCC source candidate, two side
+  comparisons, colored and gray three-quarter proofs, validation, audit, and
+  one visible review board.
+- Prohibited: image generation, TRELLIS, image-to-3D, export, LOD, collision,
+  Unreal, game-ready escalation, or technical self-approval.
+
+## A12 R4 Side-Owner Strike-Face Candidate
+
+- Date: `2026-07-22`.
+- Result: fresh Blender R4 candidate with one continuous `+X` owner-face
+  geometry solution mirrored at `X=0`; original left/right source pixels remain
+  independently owned by their corresponding outward faces.
+- Preserved result: R3 centered core and `24:14:14` component split, A11
+  footprint, A09 mirror method, and `170 cm` longitudinal scale remain
+  unchanged.
+- Evaluated envelope:
+  `75.130516052 x 44.299175262 x 170.000000000 cm`.
+- Candidate geometry: `3` objects, `520818` vertices, `520808` polygons, and
+  zero missing mirrored vertices.
+- Independent audit: `pass 37/37`; `proof only`.
+- Review-board SHA-256:
+  `eb0b41930a012ef014e2962daef697d5733942cc231b22b8775dbb24a77a7520`.
 - Artifact status: `DCC source candidate pending Flamestrike visual decision`.
+- Current gate: visible review; Flamestrike decision pending.
 - Further DCC, export, Unreal, or game-ready escalation: `false`.

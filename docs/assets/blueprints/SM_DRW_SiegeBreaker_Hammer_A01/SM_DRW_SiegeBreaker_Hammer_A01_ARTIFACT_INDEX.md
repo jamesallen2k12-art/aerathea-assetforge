@@ -82,13 +82,18 @@
 | `manifests/A11_TRUE_AXIAL_TOP_BOTTOM_PIXEL_MEASUREMENT.json` | `authoritative measurement and reconciliation rule` | Exact source hashes and pixel rectangles plus the approved centered mean `1012.5 x 597 px`, `75.130513051 x 44.299176584 cm` footprint, and axial depth ownership. |
 | `manifests/A11_TRUE_AXIAL_TOP_BOTTOM_PIXEL_MEASUREMENT_INDEPENDENT_AUDIT.json` | `proof only` | Independent `26/26` source, scan, formula, ownership, software-boundary, and unchanged-A09 checks. |
 | `steps/A12_AXIAL_PIXEL_RECONSTRUCTION_CONTRACT.md` | `authoritative historical execution contract` | Original exact axial reconstruction scope; R0-R2 exposed implementation and monolithic component-ownership defects. |
-| `manifests/A12_INTERNAL_REJECTIONS.md` | `authoritative defect record` | Hash-locks quarantined R0-R2 and identifies flat projection, orientation, and false center-stone failures. |
+| `manifests/A12_INTERNAL_REJECTIONS.md` | `authoritative defect record` | Hash-locks quarantined R0-R4C and identifies projection, orientation, ownership, mapping, seam, and occlusion failures. |
 | `steps/A12_R3_COMPONENT_SEPARATION_CORRECTION_CONTRACT.md` | `authoritative for executed correction scope` | Flamestrike-approved two-stone/centered-core correction using the pixel-scaled `24:14:14` split and no global transition blend. |
-| `SM_DRW_SiegeBreaker_Hammer_A01_A12_AxialPixelReconstruction_A01.blend` | `DCC source candidate; local only` | Two mirrored stone strike masses plus centered core/shaft; exact A11 envelope; pending Flamestrike visual decision. |
-| `review/A12_AXIAL_PIXEL_RECONSTRUCTION_A01_REVIEW.png` | `candidate review artifact` | Top/bottom source proofs, completed front, colored 3/4, and independent gray geometry 3/4; SHA `621c361e...d1ad5c6`. |
-| `manifests/A12_AXIAL_PIXEL_RECONSTRUCTION_A01_VALIDATION.json` | `proof only` | Component partition, bounds, symmetry, source/material ownership, hashes, and prohibited-software evidence. |
-| `manifests/A12_R3_COMPONENT_SEPARATION_INDEPENDENT_AUDIT.json` | `proof only` | Independent Blender audit `25/25`; cannot grant visual approval. |
-| `steps/A12_R3_COMPONENT_SEPARATION_OUTPUT_RECORD.md` | `authoritative status record` | R3 result, hashes, technical evidence, artifact ceiling, and pending visual decision. |
+| A12 R3 `.blend`, review, and renders SHA `621c361e...d1ad5c6` | `quarantined; local preserved copy` | Component split is technically useful, but Flamestrike rejected the warped outward strike faces. |
+| `manifests/A12_R3_COMPONENT_SEPARATION_INDEPENDENT_AUDIT.json` | `proof only` | R3 independent Blender audit `25/25`; technical pass did not prove visual fidelity. |
+| `steps/A12_R3_COMPONENT_SEPARATION_OUTPUT_RECORD.md` | `authoritative status record` | R3 result, hash locks, rejection, and bounded R4 recovery route. |
+| `steps/A12_R4_SIDE_OWNER_FACE_RECONSTRUCTION_CONTRACT.md` | `authoritative for active execution scope` | Replaces only the warped outward faces using exact `-X/+X` source ownership, one mirrored geometry solution, and the unchanged A11 envelope. |
+| R4A-R4C local preserved attempts | `quarantined` | Internally rejected nonlinear-map, raster-seam/background, and legacy-wall occlusion attempts; defect evidence only. |
+| `SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_AxialPixelReconstruction_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_AxialPixelReconstruction_A01.blend` | `DCC source candidate; local only` | Fresh R4 side-owner reconstruction; exact envelope and mirror; pending Flamestrike visual decision. |
+| `review/A12_AXIAL_PIXEL_RECONSTRUCTION_A01_REVIEW.png` | `candidate review artifact` | Exact source/owner-face and colored/gray three-quarter review board; SHA `eb0b4193...7520`. |
+| `manifests/A12_AXIAL_PIXEL_RECONSTRUCTION_A01_VALIDATION.json` | `proof only` | Builder evidence for source ownership, construction, dimensions, hashes, and software boundary. |
+| `manifests/A12_R4_SIDE_OWNER_FACE_INDEPENDENT_AUDIT.json` | `proof only` | Independent R4 audit `37/37`; cannot grant visual approval. |
+| `steps/A12_R4_SIDE_OWNER_FACE_OUTPUT_RECORD.md` | `authoritative status record` | R4 result, recovery trail, hash locks, technical evidence, and pending visual gate. |
 
 | `manifests/A08_A07_ESTIMATED_MATCH_RECOVERY.md` | `authoritative recovery boundary` | Records the unexecuted estimated-crop/yaw A07 drift and forbids repair-forward. |
 | `Tools/DCC/build_siegebreaker_a08_pommel_a07.py` | `invalid; unexecuted` | Preserved defect evidence containing estimated crop/yaw values; forbidden as an A09 or later construction input. |
