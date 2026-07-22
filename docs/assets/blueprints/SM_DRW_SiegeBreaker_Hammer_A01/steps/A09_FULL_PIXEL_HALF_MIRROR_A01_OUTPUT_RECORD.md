@@ -4,7 +4,7 @@
 - Contract: `SB-PHM-A09-FULL-MIRROR`
 - Attempt: `A09_PixelHalfMirror_VisualMatch_A01`
 - Date: 2026-07-22
-- Artifact status: `DCC source candidate pending Flamestrike visual decision`
+- Artifact status: `authoritative for approved A09 visual match; local-only DCC source`
 - Technical audit status: `pass 22/22; proof only`
 
 ## Result
@@ -58,8 +58,11 @@ source-color projection is explicitly not treated as geometry proof.
   and not produced.
 - `Fully game-ready`: `false`.
 
-## Decision Gate
+## Decision Record
 
-The technical result is a candidate, not visual approval. Flamestrike must
-classify the exact visible A09 review as `approved`, `revise`, `rejected`, or
-`blocked`. No further production is authorized before that decision.
+Flamestrike reviewed the exact hash-locked board visibly and decided
+`approved` on 2026-07-22. The approval is recorded in
+`review/A09_FULL_PIXEL_HALF_MIRROR_A01_FINAL_REVIEW.md`.
+
+The technical audit remains `proof only`. No further DCC production, exports,
+Unreal work, or game-ready escalation is authorized by this decision.

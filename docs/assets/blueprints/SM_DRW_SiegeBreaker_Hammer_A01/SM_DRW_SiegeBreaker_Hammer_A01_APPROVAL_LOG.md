@@ -322,7 +322,7 @@
 - Unreal authority: `false`.
 - Fully game-ready: `false`.
 
-## A09 Full Pixel-Half Mirror A01 Candidate
+## A09 Full Pixel-Half Mirror A01 Candidate and Approval
 
 - Date: 2026-07-22.
 - Flamestrike direction: use pixel-measurement proportions, construct the full
@@ -338,8 +338,11 @@
   `63b52d3f0ebc4c10ff088f0d8a926281e2e136eaa609c2ede77cc19053f1dccf`.
 - Software: Blender 3.0.1 only; image generation, TRELLIS, and image-to-3D
   were not used.
-- Artifact status: `DCC source candidate pending Flamestrike visual decision`.
-- Next decision: Flamestrike `approved`, `revise`, `rejected`, or `blocked` for
-  the complete A09 candidate.
-- Further DCC, exports, Unreal, and game-ready escalation: `false` pending the
-  visual decision.
+- Flamestrike decision: `approved` after visible review of the exact board.
+- Approval record:
+  `review/A09_FULL_PIXEL_HALF_MIRROR_A01_FINAL_REVIEW.md`.
+- Reclassified artifact status: `authoritative` for the exact approved A09
+  visual appearance, pixel proportions, and mirrored DCC geometry.
+- Validation and independent audit remain `proof only`.
+- Further DCC, exports, Unreal, and game-ready escalation: `false`; approval
+  applies only to the completed A09 candidate.

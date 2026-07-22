@@ -82,10 +82,11 @@
 | `Tools/DCC/build_siegebreaker_a08_pommel_a07.py` | `invalid; unexecuted` | Preserved defect evidence containing estimated crop/yaw values; forbidden as an A09 or later construction input. |
 | `SM_DRW_SiegeBreaker_Hammer_A01_PIXEL_HALF_MIRROR_A09_PLAN.md` | `authoritative` | Locks Visual Match, uniform source-pixel proportions, one-half construction, mirroring, and proof separation. |
 | `steps/A09_FULL_PIXEL_HALF_MIRROR_VISUAL_MATCH_CONTRACT.md` | `authoritative for execution scope` | Permits the complete fresh pixel-scanned half, exact mirror, Blender renders, manifest, audit, and visible stop gate. |
-| `SM_DRW_SiegeBreaker_Hammer_A01_A09_PixelHalfMirror_VisualMatch_A01.blend` | `candidate; local only` | Fresh complete pixel-proportion mesh built as `X>=0` and mirrored at `X=0`; pending Flamestrike visual decision. |
-| `review/A09_FULL_PIXEL_HALF_MIRROR_A01_REVIEW.png` | `candidate review artifact` | Exact source, completed front, difference, colored three-quarter, and separate gray geometry proof; SHA `63b52d3f...f1dccf`. |
+| `SM_DRW_SiegeBreaker_Hammer_A01_A09_PixelHalfMirror_VisualMatch_A01.blend` | `authoritative for approved A09 visual match; local only` | Fresh complete pixel-proportion mesh built as `X>=0` and mirrored at `X=0`; approved by Flamestrike for its exact visible appearance and geometry. Not game-ready. |
+| `review/A09_FULL_PIXEL_HALF_MIRROR_A01_REVIEW.png` | `authoritative approval evidence` | Exact source, completed front, difference, colored three-quarter, and separate gray geometry proof approved by Flamestrike; SHA `63b52d3f...f1dccf`. |
+| `review/A09_FULL_PIXEL_HALF_MIRROR_A01_FINAL_REVIEW.md` | `authoritative` | Hash-locked Flamestrike approval scope and explicit exclusions. |
 | `manifests/A09_FULL_PIXEL_HALF_MIRROR_A01_VALIDATION.json` | `proof only` | Source hashes/counts, build statistics, pixel-proportion envelope, symmetry, comparison, and output hashes. |
 | `manifests/A09_FULL_PIXEL_HALF_MIRROR_A01_INDEPENDENT_AUDIT.json` | `proof only` | Independent Blender audit `22/22`; cannot approve visual fidelity. |
-| `steps/A09_FULL_PIXEL_HALF_MIRROR_A01_OUTPUT_RECORD.md` | `authoritative status record` | A09 outputs, hashes, software boundary, technical result, and pending Flamestrike decision. |
+| `steps/A09_FULL_PIXEL_HALF_MIRROR_A01_OUTPUT_RECORD.md` | `authoritative status record` | A09 outputs, hashes, software boundary, technical result, and final Flamestrike approval. |
 
-Unreal authority is `false`. `Fully game-ready` is `false`. No A01/A02/A03/A04 visual candidate is eligible for approval. A05 remains a historical undecided `DCC game-ready candidate`. A07 stopped before producing an output and is superseded. A08 is historical. A09 has reached its visible decision gate; further production is stopped pending Flamestrike's classification.
+Unreal authority is `false`. `Fully game-ready` is `false`. No A01/A02/A03/A04 visual candidate is eligible for approval. A05 remains a historical undecided `DCC game-ready candidate`. A07 stopped before producing an output and is superseded. A08 is historical. A09 is approved and complete; further production requires a new explicit scope.

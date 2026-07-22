@@ -7587,3 +7587,13 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260722-145849/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260722-145849/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 15:02:29 EDT -0400 - Siege Breaker A09 visual-match candidate approved by Flamestrike
+
+- Snapshot: `Saved/ProjectRecovery/20260722-150229/`
+- Git: branch `main`, HEAD `df2f988`, status lines `310`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-150229/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-150229/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-150229/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
