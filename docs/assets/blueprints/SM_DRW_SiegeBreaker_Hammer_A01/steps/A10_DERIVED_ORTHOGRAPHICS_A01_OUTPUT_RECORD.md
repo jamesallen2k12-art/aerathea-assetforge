@@ -52,3 +52,16 @@ The board accurately exposes the approved source from all six axes, including
 previously unreviewed top and bottom structure. Technical validation cannot
 approve those visible surfaces. Flamestrike must decide `approved`, `revise`,
 `rejected`, or `blocked` before any next production step.
+
+## Source-Authority Recovery Addendum
+
+Flamestrike identified that `siege_breaker_top_view.png` and
+`siege_breaker_bottom_view.png` are not true axial top/bottom projections.
+Repository inspection found no genuine original axial end views. The A10
+`+Z/-Z` renders remain exact views of the approved A09 model, but they are not
+source-matched evidence. See
+`manifests/A10_SOURCE_TOP_BOTTOM_PROJECTION_AUTHORITY_CONFLICT_RECOVERY.md`.
+
+Gate status is now `Blueprint block: source authority missing` pending genuine
+source views or Flamestrike's explicit approval of the derived end surfaces as
+interpretation.

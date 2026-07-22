@@ -94,5 +94,8 @@
 | `manifests/A10_DERIVED_ORTHOGRAPHICS_A01_VALIDATION.json` | `proof only` | Source identity, unchanged before/after hash, bounds, transforms, cameras, and output hashes. |
 | `manifests/A10_DERIVED_ORTHOGRAPHICS_A01_INDEPENDENT_AUDIT.json` | `proof only` | Independent audit `25/25`; cannot approve newly revealed surfaces. |
 | `steps/A10_DERIVED_ORTHOGRAPHICS_A01_OUTPUT_RECORD.md` | `authoritative status record` | A10 source lock, outputs, hashes, technical result, boundary, and pending decision. |
+| `siege_breaker_top_view.png` and `siege_breaker_bottom_view.png` | `reference only; invalid as axial top/bottom authority` | Preserved unchanged full-length elevation sheets whose titles conflict with their visible projections. |
+| A06 Step 08 top/bottom measurement family | `proof only for scan mechanics; invalid as axial authority` | Measured the mislabeled elevation sheets and cannot establish `+Z/-Z` source geometry. |
+| `manifests/A10_SOURCE_TOP_BOTTOM_PROJECTION_AUTHORITY_CONFLICT_RECOVERY.md` | `authoritative recovery boundary` | Records the projection conflict, affected artifacts, unaffected A09 result, and missing-authority stop. |
 
-Unreal authority is `false`. `Fully game-ready` is `false`. No A01/A02/A03/A04 visual candidate is eligible for approval. A05 remains a historical undecided `DCC game-ready candidate`. A07 stopped before producing an output and is superseded. A08 is historical. A09 is approved. A10 has reached its visible decision gate; further production is stopped pending Flamestrike's classification.
+Unreal authority is `false`. `Fully game-ready` is `false`. No A01/A02/A03/A04 visual candidate is eligible for approval. A05 remains a historical undecided `DCC game-ready candidate`. A07 stopped before producing an output and is superseded. A08 is historical. A09 is approved. A10 is preserved, but source-matched top/bottom authority is blocked; further production requires the missing authority recorded above.

@@ -1,13 +1,13 @@
 # SM_DRW_SiegeBreaker_Hammer_A01 Reset / Resume State
 
-- Active approved route: `SB-ORTHO-A10-DERIVED-A01`
+- Active approved route: `Core Recovery; A10 source top/bottom authority block`
 - Plan: `SM_DRW_SiegeBreaker_Hammer_A01_PIXEL_HALF_MIRROR_A09_PLAN.md`
 - Active contract: `steps/A10_DERIVED_ORTHOGRAPHIC_RENDER_CONTRACT.md`
-- Current state: `A10 six-view orthographic candidate complete; independent audit pass 25/25; pending Flamestrike visual decision`
-- Next approved activity: open the exact A10 review board and receive one `approved`, `revise`, `rejected`, or `blocked` decision
+- Current state: `Blueprint block: source authority missing; files titled top/bottom fail axial projection identity`
+- Next approved activity: `none; await genuine axial source views or Flamestrike approval of A10 +Z/-Z surfaces as interpretation`
 - Source processing authorized now: `false`
 - Model inference authorized now: `false`
-- DCC production authorized now: `false; visible A10 decision gate active`
+- DCC production authorized now: `false; Core Recovery stop`
 - Unreal authority: `false`
 - Fully game-ready: `false`
 
@@ -41,6 +41,12 @@
 - A10 derived orthographics: six true views at one common `190 cm` scale from
   the unchanged approved A09 source; independent audit `25/25`; `candidate`
   pending Flamestrike review of all revealed surfaces.
+- Source files titled `Top View` and `Bottom View`: `invalid as axial top/bottom
+  authority`; both visibly show the full longitudinal elevation. No genuine
+  original axial end views are present in the source folder.
+- A09 approved source: unaffected because those mislabeled sheets were not A09
+  construction inputs.
+- A10 `+Z/-Z` renders: valid model-derived proof, not source-matched authority.
 
 ## Active Method
 
@@ -65,5 +71,7 @@ Blender-only direction.
 Read the recovery journal/latest checkpoint, this state, the A09 plan, the A09
 contract, the A09 output record, the A09 final review decision, and the A08/A07
 recovery record, then read the A10 contract and output record. A10 is complete;
-stop at visible review and wait for Flamestrike's decision. Never use TRELLIS
-or any other prohibited generation software.
+then read `manifests/A10_SOURCE_TOP_BOTTOM_PROJECTION_AUTHORITY_CONFLICT_RECOVERY.md`.
+Stop. Do not advance until genuine axial source views are supplied or
+Flamestrike explicitly approves the A10 model-derived end surfaces as
+interpretation. Never use TRELLIS or any other prohibited generation software.

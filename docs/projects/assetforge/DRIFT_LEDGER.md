@@ -688,3 +688,17 @@ Core authority: `AGENTS.md` Core Principles govern this ledger. Drifted artifact
 - Artifact statuses: A07 script `invalid; preserved in place`; A06 pommel `reference only; revision requested`; A01-A05 remain `quarantined`.
 - Recovery decision: do not repair A07 forward. Flamestrike selected A09 `Visual Match`: uniform source-pixel proportions anchored by the `170 cm` length, one fresh `X>=0` Blender half, exact center-plane mirror, separate geometry and color proof.
 - Follow-up Core/Kaizen improvement: any claim of pixel-perfect matching must derive crop, center, scale, and camera values from recorded source pixels; estimated values are an automatic stop-line failure.
+
+### 2026-07-22 - Siege Breaker Mislabeled Top/Bottom Projection Authority Drift
+
+- Asset or scope: `SM_DRW_SiegeBreaker_Hammer_A01` source-view identification, historical A06 top/bottom measurement authority, and A10 review routing.
+- Detected by: Flamestrike's visual rejection that the displayed files are not top and bottom views.
+- Last known Core-valid state: the hash-locked A09 Blender source remains approved for its reviewed visual result; the A10 six-view board remains an exact unchanged-model render candidate with a `25/25` technical audit.
+- First drift action: Codex trusted `siege_breaker_top_view.png` and `siege_breaker_bottom_view.png` filenames and embedded titles and presented them as genuine source top/bottom views without validating the projection against the established `Z` length axis.
+- Assumption that caused drift: source labeling was treated as projection proof even though both sheets visibly show the entire `170 cm` longitudinal elevation.
+- Affected outputs: temporary `/tmp/siegebreaker_source_top_bottom_review.html` viewer; source classification of the two PNGs; A06 Step 08 top/bottom measurement contracts, boards, and downstream axial-authority claims; A10 top/bottom review routing.
+- Artifact statuses: temporary viewer `invalid` and closed; the two PNGs `reference only for visible elevation content / invalid as axial top-bottom authority`; A06 Step 08 top/bottom family `proof only for scan mechanics / invalid as axial authority`; A09 `unaffected`; A10 `candidate proof of the unchanged model only`, with no source-match implication for `+Z/-Z` surfaces.
+- Repository audit: no genuine original axial top/bottom source views exist under `SourceAssets/Concepts/SiegeBreaker/`; old `generated/orthographic_true/top.png` and `bottom.png` are DCC outputs and remain `proof only`, not source authority.
+- Recovery decision: do not repair or reinterpret the mislabeled sheets. Stop before game-ready work with `Blueprint block: source authority missing`. Resume only if Flamestrike supplies genuine axial source views or explicitly approves the A10 model-derived end surfaces as interpretation.
+- Recovery record: `docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/manifests/A10_SOURCE_TOP_BOTTOM_PROJECTION_AUTHORITY_CONFLICT_RECOVERY.md`.
+- Follow-up Core/Kaizen improvement: view identity must be validated from projection geometry and established axes before filenames, titles, crops, or measurements can become directional authority.

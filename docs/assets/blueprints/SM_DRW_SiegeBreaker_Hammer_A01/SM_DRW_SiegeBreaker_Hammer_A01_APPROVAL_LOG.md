@@ -365,3 +365,21 @@
 - Next decision: Flamestrike `approved`, `revise`, `rejected`, or `blocked` for
   the six exact derived views.
 - Further DCC, exports, Unreal, and game-ready escalation: `false`.
+
+## A10 Source Top/Bottom Projection Conflict
+
+- Date: 2026-07-22.
+- Flamestrike decision evidence: the displayed files are not top and bottom
+  views.
+- Verified conflict: both title-labeled sheets show the complete `170 cm`
+  longitudinal elevation and therefore cannot be `+Z/-Z` axial views in the
+  established A09 frame.
+- Source classification: both files are `invalid as axial top/bottom authority`
+  and retained only as `reference only` for their visible elevation content.
+- Repository result: no genuine original axial top/bottom source views found.
+- A09 status: unchanged and approved; it did not consume the mislabeled files.
+- A10 status: preserved as an exact derived-view candidate, but its `+Z/-Z`
+  surfaces have no source-match authority.
+- Gate status: `Blueprint block: source authority missing`.
+- Recovery authority required: genuine axial source views or explicit
+  Flamestrike approval of the A10 derived end surfaces as interpretation.
