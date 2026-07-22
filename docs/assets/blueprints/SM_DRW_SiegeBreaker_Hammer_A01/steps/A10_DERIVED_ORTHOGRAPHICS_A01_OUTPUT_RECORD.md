@@ -62,6 +62,8 @@ Repository inspection found no genuine original axial end views. The A10
 source-matched evidence. See
 `manifests/A10_SOURCE_TOP_BOTTOM_PROJECTION_AUTHORITY_CONFLICT_RECOVERY.md`.
 
-Gate status is now `Blueprint block: source authority missing` pending genuine
-source views or Flamestrike's explicit approval of the derived end surfaces as
-interpretation.
+That missing-source gate was later resolved when Flamestrike supplied genuine
+axial top/bottom sources. The A10 top/bottom views do not match those source
+pixels and remain model-derived proof only. The current gate is
+`Blueprint block: pixel ownership/reconciliation rule missing`; see the A11
+measurement manifest.

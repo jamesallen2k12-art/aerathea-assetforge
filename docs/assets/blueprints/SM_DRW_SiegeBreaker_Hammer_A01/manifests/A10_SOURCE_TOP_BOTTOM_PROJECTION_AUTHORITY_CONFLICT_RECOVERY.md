@@ -2,7 +2,7 @@
 
 - Asset: `SM_DRW_SiegeBreaker_Hammer_A01`
 - Date: 2026-07-22
-- Recovery status: `Blueprint block: source authority missing`
+- Recovery status: `source identity resolved by A11 intake; pixel reconciliation block remains`
 - Detected by: Flamestrike visual review
 
 ## Conflict
@@ -24,11 +24,11 @@ Their titles and filenames therefore conflict with their visible projection.
 
 ## Repository Audit
 
-No other original-source axial top/bottom images exist under
-`SourceAssets/Concepts/SiegeBreaker/`. Files named `top.png` and `bottom.png`
-under the verified package's `generated/orthographic_true/` directory are old
-DCC outputs classified `proof only`; they are not source authority and cannot
-replace missing source evidence.
+At the time of the audit, no other original-source axial top/bottom images
+existed under `SourceAssets/Concepts/SiegeBreaker/`. Files named `top.png` and
+`bottom.png` under the verified package's `generated/orthographic_true/`
+directory are old DCC outputs classified `proof only`; they are not source
+authority and cannot replace source evidence.
 
 ## First Drift Action
 
@@ -67,4 +67,38 @@ authorities:
 2. Flamestrike reviews the A10 `+Z/-Z` derived views and explicitly approves
    those model-derived end surfaces as interpretation.
 
-No option is selected by this recovery record.
+No option was selected by this original recovery record.
+
+## A11 Recovery Update — Supplied Axial Sources
+
+Flamestrike subsequently supplied two `1254 x 1254` PNGs and explicitly
+declared Image 1 the top view and Image 2 the bottom view. They are preserved
+under unambiguous filenames:
+
+- `SourceAssets/Concepts/SiegeBreaker/siege_breaker_true_axial_top_view.png`
+  — SHA-256 `aee612d9bed74e4f861576f926fe9d75de00f80dc416e3a6ba66a75247c00e98`;
+- `SourceAssets/Concepts/SiegeBreaker/siege_breaker_true_axial_bottom_view.png`
+  — SHA-256 `874a9e7c7713c7edbcf1030486d3988a54e8499ee697e316ec82a013fdb9d746`.
+
+Flamestrike further directed: `use pixel measurements`. Therefore the printed
+`52 x 32 cm` labels are preserved as `reference only` and do not control
+geometry.
+
+The established adaptive-luma greatest non-edge connected-component scan
+measured these exact half-open object rectangles:
+
+- top `[94, 330, 1106, 921]` = `1012 x 591 px`;
+- bottom `[93, 330, 1106, 933]` = `1013 x 603 px`.
+
+The source-identity block is resolved. A new fail-closed conflict remains:
+registering either axial sheet to the approved A09 front-pixel head width
+produces `43.875625705 cm` top depth or `44.722309348 cm` bottom depth, while
+the approved A09 left-view pixel proportion produces `32.957619477 cm` depth.
+Top and bottom also disagree by `12 px` in depth. No averaging, cropping, or
+owner choice is authorized. Blender geometry remains stopped pending an
+explicit pixel ownership or reconciliation rule from Flamestrike.
+
+Evidence:
+`A11_TRUE_AXIAL_TOP_BOTTOM_PIXEL_MEASUREMENT.json`; independent audit `19/19`
+pass. No image generation, TRELLIS, image-to-3D, or Blender geometry change
+occurred.

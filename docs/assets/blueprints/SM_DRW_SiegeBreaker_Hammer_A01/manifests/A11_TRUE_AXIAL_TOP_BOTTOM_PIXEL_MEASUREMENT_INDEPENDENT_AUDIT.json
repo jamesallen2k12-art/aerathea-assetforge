@@ -1,0 +1,144 @@
+{
+  "schema": "aerathea.siegebreaker_true_axial_pixel_measurement_independent_audit.v1",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "date": "2026-07-22",
+  "artifact_status": "proof only",
+  "manifest_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/manifests/A11_TRUE_AXIAL_TOP_BOTTOM_PIXEL_MEASUREMENT.json",
+  "manifest_sha256": "5448ccb68d189b9441459454480a462cd38bb64b0316bb5a459a02a45f9b56dc",
+  "checks_passed": 19,
+  "checks_total": 19,
+  "verdict": "pass",
+  "checks": [
+    {
+      "check": "manifest_schema",
+      "pass": true,
+      "observed": "aerathea.siegebreaker_true_axial_pixel_measurement.v1"
+    },
+    {
+      "check": "pixel_rule",
+      "pass": true,
+      "observed": {
+        "source_identity": "Image 1 is Top View; Image 2 is Bottom View",
+        "measurement_rule": "use pixel measurements",
+        "printed_dimensions_control_geometry": false
+      }
+    },
+    {
+      "check": "printed_dimensions_not_geometry_authority",
+      "pass": true,
+      "observed": {
+        "source_identity": "Image 1 is Top View; Image 2 is Bottom View",
+        "measurement_rule": "use pixel measurements",
+        "printed_dimensions_control_geometry": false
+      }
+    },
+    {
+      "check": "top_file_hash",
+      "pass": true,
+      "observed": "aee612d9bed74e4f861576f926fe9d75de00f80dc416e3a6ba66a75247c00e98"
+    },
+    {
+      "check": "top_canvas",
+      "pass": true,
+      "observed": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "check": "top_bbox",
+      "pass": true,
+      "observed": [
+        94,
+        330,
+        1106,
+        921
+      ]
+    },
+    {
+      "check": "top_component_count",
+      "pass": true,
+      "observed": 465117
+    },
+    {
+      "check": "top_pixel_dimensions",
+      "pass": true,
+      "observed": [
+        1012,
+        591
+      ]
+    },
+    {
+      "check": "top_depth_formula",
+      "pass": true,
+      "observed": "24665385/562166"
+    },
+    {
+      "check": "bottom_file_hash",
+      "pass": true,
+      "observed": "874a9e7c7713c7edbcf1030486d3988a54e8499ee697e316ec82a013fdb9d746"
+    },
+    {
+      "check": "bottom_canvas",
+      "pass": true,
+      "observed": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "check": "bottom_bbox",
+      "pass": true,
+      "observed": [
+        93,
+        330,
+        1106,
+        933
+      ]
+    },
+    {
+      "check": "bottom_component_count",
+      "pass": true,
+      "observed": 509030
+    },
+    {
+      "check": "bottom_pixel_dimensions",
+      "pass": true,
+      "observed": [
+        1013,
+        603
+      ]
+    },
+    {
+      "check": "bottom_depth_formula",
+      "pass": true,
+      "observed": "50332410/1125443"
+    },
+    {
+      "check": "cross_view_verdict",
+      "pass": true,
+      "observed": "blocked_cross_view_depth_conflict"
+    },
+    {
+      "check": "no_geometry_authority",
+      "pass": true,
+      "observed": false
+    },
+    {
+      "check": "no_image_generation",
+      "pass": true,
+      "observed": {
+        "image_generation_used": false,
+        "trellis_used": false,
+        "image_to_3d_used": false,
+        "blender_geometry_changed": false,
+        "procedural_image_or_overlay_created": false
+      }
+    },
+    {
+      "check": "a09_blend_unchanged",
+      "pass": true,
+      "observed": "06ffb121d00cddb7b9e30a60067a5036a851d285f15daca3bffe3a663fd6d78f"
+    }
+  ]
+}

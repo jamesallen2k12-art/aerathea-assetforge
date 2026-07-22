@@ -1,11 +1,11 @@
 # SM_DRW_SiegeBreaker_Hammer_A01 Reset / Resume State
 
-- Active approved route: `Core Recovery; A10 source top/bottom authority block`
+- Active approved route: `Core Recovery; A11 cross-view pixel-depth authority block`
 - Plan: `SM_DRW_SiegeBreaker_Hammer_A01_PIXEL_HALF_MIRROR_A09_PLAN.md`
-- Active contract: `steps/A10_DERIVED_ORTHOGRAPHIC_RENDER_CONTRACT.md`
-- Current state: `Blueprint block: source authority missing; files titled top/bottom fail axial projection identity`
-- Next approved activity: `none; await genuine axial source views or Flamestrike approval of A10 +Z/-Z surfaces as interpretation`
-- Source processing authorized now: `false`
+- Active contract: `A11 true axial source pixel-measurement intake; measurement complete`
+- Current state: `Blueprint block: pixel ownership/reconciliation rule missing`
+- Next approved activity: `none; await Flamestrike decision on which source pixels own head depth or an approved reconciliation formula`
+- Source processing authorized now: `false; A11 bounded measurement is complete`
 - Model inference authorized now: `false`
 - DCC production authorized now: `false; Core Recovery stop`
 - Unreal authority: `false`
@@ -36,17 +36,29 @@
 - A08 A01-A05 pommel attempts: `quarantined`.
 - A08 independent audit: `proof only`, `18/18 pass`.
 - A09 complete mirrored visual-match DCC source: `approved by Flamestrike` for
-  its exact hash-locked visual appearance, pixel proportions, and mirrored
-  geometry. LODs, collision, exports, and Unreal remain unauthorized.
+  its exact hash-locked reviewed front/three-quarter appearance and mirrored
+  construction. Its previously unreviewed axial surface/depth solution is not
+  source-matched authority after the A11 source intake. LODs, collision,
+  exports, and Unreal remain unauthorized.
 - A10 derived orthographics: six true views at one common `190 cm` scale from
   the unchanged approved A09 source; independent audit `25/25`; `candidate`
   pending Flamestrike review of all revealed surfaces.
-- Source files titled `Top View` and `Bottom View`: `invalid as axial top/bottom
-  authority`; both visibly show the full longitudinal elevation. No genuine
-  original axial end views are present in the source folder.
-- A09 approved source: unaffected because those mislabeled sheets were not A09
-  construction inputs.
-- A10 `+Z/-Z` renders: valid model-derived proof, not source-matched authority.
+- Earlier source files titled `Top View` and `Bottom View`: `invalid as axial
+  top/bottom authority`; both visibly show the full longitudinal elevation.
+- Flamestrike supplied genuine axial sources on 2026-07-22 and explicitly
+  declared Image 1 `Top View`, Image 2 `Bottom View`, and `use pixel
+  measurements`. Exact preserved source hashes and measurements are in
+  `manifests/A11_TRUE_AXIAL_TOP_BOTTOM_PIXEL_MEASUREMENT.json`.
+- A11 top object extent: `1012 x 591 px`; A11 bottom object extent:
+  `1013 x 603 px`; independent audit: `pass 19/19`.
+- Printed `52 x 32 cm` labels: `reference only`; they do not control geometry.
+- Registering each axial sheet to the existing A09 front-pixel head width gives
+  depth consequences of `43.875625705 cm` top and `44.722309348 cm` bottom,
+  conflicting with the existing left-view pixel depth `32.957619477 cm`.
+- A09 file/hash: unchanged. Its approved reviewed appearance remains valid;
+  its unreviewed axial/depth solution cannot override the newly supplied source.
+- A10 `+Z/-Z` renders: valid model-derived proof, not source-matched authority;
+  ineligible for approval as an exact top/bottom match.
 
 ## Active Method
 
@@ -71,7 +83,8 @@ Blender-only direction.
 Read the recovery journal/latest checkpoint, this state, the A09 plan, the A09
 contract, the A09 output record, the A09 final review decision, and the A08/A07
 recovery record, then read the A10 contract and output record. A10 is complete;
-then read `manifests/A10_SOURCE_TOP_BOTTOM_PROJECTION_AUTHORITY_CONFLICT_RECOVERY.md`.
-Stop. Do not advance until genuine axial source views are supplied or
-Flamestrike explicitly approves the A10 model-derived end surfaces as
-interpretation. Never use TRELLIS or any other prohibited generation software.
+then read `manifests/A10_SOURCE_TOP_BOTTOM_PROJECTION_AUTHORITY_CONFLICT_RECOVERY.md`,
+`manifests/A11_TRUE_AXIAL_TOP_BOTTOM_PIXEL_MEASUREMENT.json`, and its independent
+audit. Stop. Do not change geometry until Flamestrike approves which source
+pixels own head depth or approves an explicit reconciliation formula. Never use
+TRELLIS or any other prohibited generation software.

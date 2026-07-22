@@ -702,3 +702,16 @@ Core authority: `AGENTS.md` Core Principles govern this ledger. Drifted artifact
 - Recovery decision: do not repair or reinterpret the mislabeled sheets. Stop before game-ready work with `Blueprint block: source authority missing`. Resume only if Flamestrike supplies genuine axial source views or explicitly approves the A10 model-derived end surfaces as interpretation.
 - Recovery record: `docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/manifests/A10_SOURCE_TOP_BOTTOM_PROJECTION_AUTHORITY_CONFLICT_RECOVERY.md`.
 - Follow-up Core/Kaizen improvement: view identity must be validated from projection geometry and established axes before filenames, titles, crops, or measurements can become directional authority.
+
+### 2026-07-22 - Siege Breaker A11 True Axial Source Recovery / Pixel Conflict
+
+- Asset or scope: `SM_DRW_SiegeBreaker_Hammer_A01` A11 genuine axial source intake and recovery of the prior missing-source block.
+- New authority: Flamestrike supplied Image 1 as `Top View`, Image 2 as `Bottom View`, and directed `use pixel measurements`; printed `52 x 32 cm` labels are `reference only` for geometry.
+- Preserved evidence: true top SHA `aee612d9bed74e4f861576f926fe9d75de00f80dc416e3a6ba66a75247c00e98`; true bottom SHA `874a9e7c7713c7edbcf1030486d3988a54e8499ee697e316ec82a013fdb9d746`.
+- Exact scan result: top `[94,330,1106,921)` = `1012 x 591 px`; bottom `[93,330,1106,933)` = `1013 x 603 px`; independent audit `19/19` pass.
+- Last known Core-valid state: A09 remains approved for its exact reviewed front/three-quarter appearance and unchanged hash; A10 remains model-derived proof only for top/bottom.
+- Remaining conflict: axial width registration produces top/bottom depth consequences `43.875625705 cm` and `44.722309348 cm`, versus the A09 left-view pixel consequence `32.957619477 cm`; top and bottom themselves differ by `12 px` in depth.
+- Artifact status: supplied source pixels `authoritative`; A11 measurements `candidate pending Flamestrike review`; A11 audit `proof only`; A09 unreviewed axial/depth solution `not source-matched authority`; A10 `+Z/-Z` views `proof only`.
+- Recovery decision: missing-source block resolved; stop at `Blueprint block: pixel ownership/reconciliation rule missing`. Do not average, crop, independently scale axes, or change Blender geometry without Flamestrike's exact rule.
+- Software boundary: no image generation, TRELLIS, image-to-3D, procedural overlay, or Blender geometry change occurred.
+- Follow-up Core/Kaizen improvement: source-view pixel ratios must be cross-audited before complete-geometry authority is claimed; printed dimensions and matching labels cannot hide incompatible source projections.

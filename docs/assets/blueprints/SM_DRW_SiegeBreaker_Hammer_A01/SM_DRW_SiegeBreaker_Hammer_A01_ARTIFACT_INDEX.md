@@ -47,7 +47,7 @@
 | A04 internal attempt log | `reference only` | Records three rejected internal review boards; none is eligible for approval. |
 | A04 final completed review board SHA `86496214...710` | `invalid` | Visibly rejected; not a completed true 3D asset and not eligible for approval. |
 | `manifests/VISUAL_FIDELITY_A04_DRIFT_RECOVERY_A05_RESTART.json` | `authoritative` | Root-cause classification, quarantine boundary, last valid state, and A05 recovery decision. |
-| `manifests/SOURCE_AUTHORITY_A05_ORTHOGRAPHIC.json` | `authoritative` | Promotes the supplied detailed orthographic dataset under the exact numeric/common-axis frame and limits the 3/4 render to style review. |
+| `manifests/SOURCE_AUTHORITY_A05_ORTHOGRAPHIC.json` | `authoritative historical authority; printed transverse dimensions superseded` | Promotes the supplied detailed orthographic dataset under the then-current numeric/common-axis frame. A09/A11 Flamestrike pixel-measurement direction supersedes its printed `52 x 32 cm` geometry authority. |
 | `steps/VISUAL_FIDELITY_A05_ORTHOGRAPHIC_VOLUMETRIC_REBUILD_CONTRACT.md` | `authoritative` | Approved next-agent end-to-end rebuild steps and fail-closed gates. |
 | `steps/VISUAL_FIDELITY_A04_DRIFT_RECOVERY_A05_RESTART_HANDOFF.md` | `authoritative` | Reset-safe resume order, quarantine rules, and final-only review behavior. |
 | A05 fresh orthographic intake, six masks, and intake board | `proof only` | Source-clean measurement and zero-A03/A04 pregeometry evidence. |
@@ -77,6 +77,10 @@
 | `manifests/A08_STEP_01_POMMEL_A06_VALIDATION.json` | `proof only` | Builder evidence, hashes, numeric bounds, software boundary, and interpretation status. |
 | `manifests/A08_STEP_01_POMMEL_A06_INDEPENDENT_AUDIT.json` | `proof only` | Independent Blender audit `18/18`; cannot approve visual fidelity. |
 | `steps/A08_STEP_01_POMMEL_A06_OUTPUT_RECORD.md` | `authoritative status record` | A06 output, recovery history, evidence boundary, and pending decision. |
+| `SourceAssets/Concepts/SiegeBreaker/siege_breaker_true_axial_top_view.png` | `authoritative source pixels; local source asset` | Flamestrike-declared `+Z` top source, `1254 x 1254`, SHA `aee612d9...c00e98`. |
+| `SourceAssets/Concepts/SiegeBreaker/siege_breaker_true_axial_bottom_view.png` | `authoritative source pixels; local source asset` | Flamestrike-declared `-Z` bottom source, `1254 x 1254`, SHA `874a9e7c...9d746`. |
+| `manifests/A11_TRUE_AXIAL_TOP_BOTTOM_PIXEL_MEASUREMENT.json` | `candidate measurement` | Exact source hashes, object pixel rectangles, pixel ratios, and fail-closed cross-view depth conflict; no geometry authority. |
+| `manifests/A11_TRUE_AXIAL_TOP_BOTTOM_PIXEL_MEASUREMENT_INDEPENDENT_AUDIT.json` | `proof only` | Independent `19/19` source, scan, formula, software-boundary, and unchanged-A09 checks. |
 
 | `manifests/A08_A07_ESTIMATED_MATCH_RECOVERY.md` | `authoritative recovery boundary` | Records the unexecuted estimated-crop/yaw A07 drift and forbids repair-forward. |
 | `Tools/DCC/build_siegebreaker_a08_pommel_a07.py` | `invalid; unexecuted` | Preserved defect evidence containing estimated crop/yaw values; forbidden as an A09 or later construction input. |

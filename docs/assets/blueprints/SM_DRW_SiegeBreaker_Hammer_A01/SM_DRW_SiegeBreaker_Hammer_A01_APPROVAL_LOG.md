@@ -383,3 +383,24 @@
 - Gate status: `Blueprint block: source authority missing`.
 - Recovery authority required: genuine axial source views or explicit
   Flamestrike approval of the A10 derived end surfaces as interpretation.
+
+## A11 True Axial Source Pixel-Measurement Direction
+
+- Date: `2026-07-22`.
+- Flamestrike source declaration: Image 1 is `Top View`; Image 2 is `Bottom
+  View`.
+- Flamestrike measurement direction: `use pixel measurements` because the
+  printed measurement does not match the established pixel measurement.
+- Source status: exact supplied pixels are `authoritative`; preserved under
+  unambiguous true-axial filenames and SHA-256 locked.
+- Printed `52 x 32 cm` labels: `reference only`; no geometry authority.
+- Measurement method: established A06/A09 adaptive-luma greatest non-edge
+  8-connected component scan; no inferred contours, fills, or overlays.
+- Top object extent: `[94,330,1106,921)` = `1012 x 591 px`.
+- Bottom object extent: `[93,330,1106,933)` = `1013 x 603 px`.
+- Independent audit: `pass 19/19`; `proof only`.
+- Conflict: when width-registered to the existing A09 front-pixel width, top
+  depth is `43.875625705 cm` and bottom depth is `44.722309348 cm`; both
+  conflict with the existing left-view pixel depth `32.957619477 cm`.
+- Current gate: `Blueprint block: pixel ownership/reconciliation rule missing`.
+- DCC/geometry authority: `false`; no Blender file was changed.
