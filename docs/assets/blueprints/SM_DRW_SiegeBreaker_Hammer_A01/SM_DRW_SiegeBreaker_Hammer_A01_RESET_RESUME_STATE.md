@@ -1,10 +1,10 @@
 # SM_DRW_SiegeBreaker_Hammer_A01 Reset / Resume State
 
-- Active approved route: `Core Recovery; A11 cross-view pixel-depth authority block`
+- Active approved route: `A11 centered-mean axial pixel authority locked`
 - Plan: `SM_DRW_SiegeBreaker_Hammer_A01_PIXEL_HALF_MIRROR_A09_PLAN.md`
 - Active contract: `A11 true axial source pixel-measurement intake; measurement complete`
-- Current state: `Blueprint block: pixel ownership/reconciliation rule missing`
-- Next approved activity: `none; await Flamestrike decision on which source pixels own head depth or an approved reconciliation formula`
+- Current state: `measurement authority resolved; no active Blender reconstruction contract`
+- Next approved activity: `none; prepare and approve a separate source-constrained Blender reconstruction step`
 - Source processing authorized now: `false; A11 bounded measurement is complete`
 - Model inference authorized now: `false`
 - DCC production authorized now: `false; Core Recovery stop`
@@ -50,11 +50,14 @@
   measurements`. Exact preserved source hashes and measurements are in
   `manifests/A11_TRUE_AXIAL_TOP_BOTTOM_PIXEL_MEASUREMENT.json`.
 - A11 top object extent: `1012 x 591 px`; A11 bottom object extent:
-  `1013 x 603 px`; independent audit: `pass 19/19`.
+  `1013 x 603 px`; independent audit: `pass 26/26`.
 - Printed `52 x 32 cm` labels: `reference only`; they do not control geometry.
-- Registering each axial sheet to the existing A09 front-pixel head width gives
-  depth consequences of `43.875625705 cm` top and `44.722309348 cm` bottom,
-  conflicting with the existing left-view pixel depth `32.957619477 cm`.
+- Flamestrike approved center alignment and the arithmetic mean footprint:
+  `1012.5 x 597 px`. With the existing A09 front-pixel width consequence, the
+  authoritative head footprint is `75.130513051 x 44.299176584 cm`.
+- Top/bottom axial pixels now own head depth. The left view retains visible
+  design/profile-detail and longitudinal-placement authority, but its prior
+  `32.957619477 cm` head-depth scale is superseded.
 - A09 file/hash: unchanged. Its approved reviewed appearance remains valid;
   its unreviewed axial/depth solution cannot override the newly supplied source.
 - A10 `+Z/-Z` renders: valid model-derived proof, not source-matched authority;
@@ -85,6 +88,6 @@ contract, the A09 output record, the A09 final review decision, and the A08/A07
 recovery record, then read the A10 contract and output record. A10 is complete;
 then read `manifests/A10_SOURCE_TOP_BOTTOM_PROJECTION_AUTHORITY_CONFLICT_RECOVERY.md`,
 `manifests/A11_TRUE_AXIAL_TOP_BOTTOM_PIXEL_MEASUREMENT.json`, and its independent
-audit. Stop. Do not change geometry until Flamestrike approves which source
-pixels own head depth or approves an explicit reconciliation formula. Never use
+audit. The pixel ownership conflict is resolved. Stop before geometry; prepare
+and obtain approval for a separate Blender reconstruction contract. Never use
 TRELLIS or any other prohibited generation software.

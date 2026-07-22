@@ -404,3 +404,23 @@
   conflict with the existing left-view pixel depth `32.957619477 cm`.
 - Current gate: `Blueprint block: pixel ownership/reconciliation rule missing`.
 - DCC/geometry authority: `false`; no Blender file was changed.
+
+## A11 Centered-Mean Axial Reconciliation Approval
+
+- Date: `2026-07-22`.
+- Flamestrike finding: the `1 px` width difference is `0.5 px` per side between
+  the two sources, and the `12 px` depth difference is `6 px` per side; this is
+  acceptable natural variation for the stone hammer.
+- Flamestrike decision: `ok do it` in direct response to the proposed rule.
+- Approved formula: center-align the source footprints and use their arithmetic
+  mean: `1012.5 x 597 px`.
+- Common pixel scale: `0.074202976 cm/px`, anchored by the approved A09
+  front-pixel width `75.130513051 cm`.
+- Approved head footprint: `75.130513051 x 44.299176584 cm`.
+- Ownership: top/bottom own head X/Y footprint, depth scale, and respective
+  visible surface design. The side view owns visible profile/detail and
+  longitudinal placement but not head-depth scale.
+- Independent audit: `pass 26/26`; `proof only`.
+- Authority state: pixel ownership/reconciliation block `resolved`.
+- Blender geometry change under this approval: `false`; a separate
+  reconstruction contract is required.

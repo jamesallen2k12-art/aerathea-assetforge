@@ -1,8 +1,8 @@
 {
-  "schema": "aerathea.siegebreaker_true_axial_pixel_measurement.v1",
+  "schema": "aerathea.siegebreaker_true_axial_pixel_measurement.v2",
   "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
   "date": "2026-07-22",
-  "artifact_status": "candidate measurement; source pixels authoritative",
+  "artifact_status": "authoritative measurement and reconciliation rule",
   "software_boundary": {
     "image_generation_used": false,
     "trellis_used": false,
@@ -13,7 +13,8 @@
   "flamestrike_authority": {
     "source_identity": "Image 1 is Top View; Image 2 is Bottom View",
     "measurement_rule": "use pixel measurements",
-    "printed_dimensions_control_geometry": false
+    "printed_dimensions_control_geometry": false,
+    "reconciliation_decision": "approved centered mean of top/bottom footprints; axial views own head depth; side view retains design/profile-detail authority but not head-depth scale"
   },
   "existing_a09_pixel_registration": {
     "overall_length_anchor_cm": 170,
@@ -104,7 +105,7 @@
         }
       },
       "printed_52x32_labels": "reference only; explicitly superseded by Flamestrike's pixel-measurement direction",
-      "artifact_status": "authoritative source pixels; candidate measurement pending Flamestrike review"
+      "artifact_status": "authoritative source pixels and measured extent under approved reconciliation"
     },
     "bottom": {
       "view": "bottom",
@@ -173,7 +174,7 @@
         }
       },
       "printed_52x32_labels": "reference only; explicitly superseded by Flamestrike's pixel-measurement direction",
-      "artifact_status": "authoritative source pixels; candidate measurement pending Flamestrike review"
+      "artifact_status": "authoritative source pixels and measured extent under approved reconciliation"
     }
   },
   "cross_view_evidence": {
@@ -209,9 +210,68 @@
       "denominator": 199561,
       "display_decimal": "1.929735770"
     },
-    "verdict": "blocked_cross_view_depth_conflict",
-    "reason": "A single exact X/Y footprint cannot simultaneously reproduce the recorded left, top, and bottom source-pixel proportions without an approved ownership/reconciliation rule."
+    "raw_evidence_verdict": "cross_view_depth_conflict",
+    "resolution": "resolved by Flamestrike-approved centered-mean axial ownership rule"
   },
-  "geometry_authority": false,
-  "next_decision_required": "Flamestrike must approve which pixel view owns head depth, or approve a declared reconciliation formula, before Blender geometry changes."
+  "approved_reconciliation": {
+    "alignment_rule": "register top and bottom on their exact object center edges",
+    "formula": "arithmetic mean of exact top/bottom full object pixel extents",
+    "mean_width_pixels_exact": {
+      "numerator": 2025,
+      "denominator": 2,
+      "display_decimal": "1012.500000000"
+    },
+    "mean_depth_pixels_exact": {
+      "numerator": 597,
+      "denominator": 1,
+      "display_decimal": "597.000000000"
+    },
+    "common_cm_per_axial_pixel_exact": {
+      "numerator": 33388,
+      "denominator": 449955,
+      "display_decimal": "0.074202976"
+    },
+    "approved_head_width_cm_exact": {
+      "numerator": 83470,
+      "denominator": 1111,
+      "display_decimal": "75.130513051"
+    },
+    "approved_head_depth_cm_exact": {
+      "numerator": 6644212,
+      "denominator": 149985,
+      "display_decimal": "44.299176584"
+    },
+    "centered_residual_per_side_pixels_exact": {
+      "top_width": {
+        "numerator": 1,
+        "denominator": 4,
+        "display_decimal": "0.250000000"
+      },
+      "bottom_width": {
+        "numerator": 1,
+        "denominator": 4,
+        "display_decimal": "0.250000000"
+      },
+      "top_depth": {
+        "numerator": 3,
+        "denominator": 1,
+        "display_decimal": "3.000000000"
+      },
+      "bottom_depth": {
+        "numerator": 3,
+        "denominator": 1,
+        "display_decimal": "3.000000000"
+      }
+    },
+    "top_bottom_role": "authoritative for head X/Y footprint, depth scale, and their respective visible surface design",
+    "side_role": "authoritative for visible side/profile design detail and longitudinal placement; not authoritative for head-depth scale",
+    "status": "authoritative"
+  },
+  "geometry_authority": {
+    "head_footprint_scale": true,
+    "top_bottom_surface_design": true,
+    "side_head_depth_scale": false,
+    "blender_geometry_edit_executed": false
+  },
+  "next_decision_required": "A separate Blender reconstruction step contract is required before geometry changes."
 }

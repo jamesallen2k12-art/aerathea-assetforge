@@ -64,6 +64,7 @@ source-matched evidence. See
 
 That missing-source gate was later resolved when Flamestrike supplied genuine
 axial top/bottom sources. The A10 top/bottom views do not match those source
-pixels and remain model-derived proof only. The current gate is
-`Blueprint block: pixel ownership/reconciliation rule missing`; see the A11
-measurement manifest.
+pixels and remain model-derived proof only. Flamestrike subsequently resolved
+the pixel-ownership conflict by approving the centered-mean top/bottom
+footprint and axial depth ownership. A10 remains unchanged proof; a separate
+Blender reconstruction contract is required before geometry changes.

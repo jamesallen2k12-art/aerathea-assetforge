@@ -2,9 +2,9 @@
 
 - Asset: `SM_DRW_SiegeBreaker_Hammer_A01`
 - Date: `2026-07-22`
-- Artifact status: `candidate measurement; source pixels authoritative`
-- Geometry authority: `false`
-- Independent audit: `pass 19/19; proof only`
+- Artifact status: `authoritative measurement and reconciliation rule`
+- Geometry edit executed: `false`
+- Independent audit: `pass 26/26; proof only`
 
 ## Authority
 
@@ -30,13 +30,32 @@ Using the approved A09 front-pixel width consequence
 Both conflict with the A09 left-view pixel depth consequence
 `215 * 170 / 1109 = 32.957619477 cm`.
 
-## Decision
+## Initial Decision Gate
 
 The missing-source block is resolved. The measurement gate stops with
 `Blueprint block: pixel ownership/reconciliation rule missing`. No average,
 independent-axis rescale, crop adjustment, or geometry repair has been applied.
-Flamestrike must approve which pixel view owns head depth, or approve an exact
-reconciliation formula, before Blender geometry changes.
+Flamestrike was required to approve which pixel view owns head depth, or an
+exact reconciliation formula, before Blender geometry changes.
+
+## Approved Reconciliation
+
+Flamestrike accepted the boundary differences as harmless natural stone
+variation and approved the recommended centered-mean axial rule:
+
+- centered mean footprint: `1012.5 x 597 px`;
+- common axial scale: `0.074202976 cm/px`;
+- authoritative head footprint: `75.130513051 x 44.299176584 cm`;
+- source deviation from the mean: `0.25 px` per side in width and `3 px` per
+  side in depth for each source;
+- top/bottom authority: head X/Y footprint, depth scale, and respective visible
+  surface design;
+- side-view authority: visible profile/detail and longitudinal placement, but
+  not head-depth scale.
+
+The pixel ownership/reconciliation block is resolved. This approval did not
+authorize or execute Blender geometry changes; reconstruction requires a
+separate step contract.
 
 ## Outputs
 

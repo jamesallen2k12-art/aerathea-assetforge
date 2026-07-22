@@ -79,8 +79,8 @@
 | `steps/A08_STEP_01_POMMEL_A06_OUTPUT_RECORD.md` | `authoritative status record` | A06 output, recovery history, evidence boundary, and pending decision. |
 | `SourceAssets/Concepts/SiegeBreaker/siege_breaker_true_axial_top_view.png` | `authoritative source pixels; local source asset` | Flamestrike-declared `+Z` top source, `1254 x 1254`, SHA `aee612d9...c00e98`. |
 | `SourceAssets/Concepts/SiegeBreaker/siege_breaker_true_axial_bottom_view.png` | `authoritative source pixels; local source asset` | Flamestrike-declared `-Z` bottom source, `1254 x 1254`, SHA `874a9e7c...9d746`. |
-| `manifests/A11_TRUE_AXIAL_TOP_BOTTOM_PIXEL_MEASUREMENT.json` | `candidate measurement` | Exact source hashes, object pixel rectangles, pixel ratios, and fail-closed cross-view depth conflict; no geometry authority. |
-| `manifests/A11_TRUE_AXIAL_TOP_BOTTOM_PIXEL_MEASUREMENT_INDEPENDENT_AUDIT.json` | `proof only` | Independent `19/19` source, scan, formula, software-boundary, and unchanged-A09 checks. |
+| `manifests/A11_TRUE_AXIAL_TOP_BOTTOM_PIXEL_MEASUREMENT.json` | `authoritative measurement and reconciliation rule` | Exact source hashes and pixel rectangles plus the approved centered mean `1012.5 x 597 px`, `75.130513051 x 44.299176584 cm` footprint, and axial depth ownership. |
+| `manifests/A11_TRUE_AXIAL_TOP_BOTTOM_PIXEL_MEASUREMENT_INDEPENDENT_AUDIT.json` | `proof only` | Independent `26/26` source, scan, formula, ownership, software-boundary, and unchanged-A09 checks. |
 
 | `manifests/A08_A07_ESTIMATED_MATCH_RECOVERY.md` | `authoritative recovery boundary` | Records the unexecuted estimated-crop/yaw A07 drift and forbids repair-forward. |
 | `Tools/DCC/build_siegebreaker_a08_pommel_a07.py` | `invalid; unexecuted` | Preserved defect evidence containing estimated crop/yaw values; forbidden as an A09 or later construction input. |

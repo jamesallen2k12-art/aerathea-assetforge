@@ -7657,3 +7657,23 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260722-155210/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260722-155210/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 15:59:34 EDT -0400 - Before Siege Breaker A11 axial pixel reconciliation approval lock
+
+- Snapshot: `Saved/ProjectRecovery/20260722-155934/`
+- Git: branch `main`, HEAD `3316d51`, status lines `312`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-155934/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-155934/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-155934/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 16:02:20 EDT -0400 - After Siege Breaker A11 centered-mean axial authority lock
+
+- Snapshot: `Saved/ProjectRecovery/20260722-160220/`
+- Git: branch `main`, HEAD `3316d51`, status lines `324`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-160220/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-160220/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-160220/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

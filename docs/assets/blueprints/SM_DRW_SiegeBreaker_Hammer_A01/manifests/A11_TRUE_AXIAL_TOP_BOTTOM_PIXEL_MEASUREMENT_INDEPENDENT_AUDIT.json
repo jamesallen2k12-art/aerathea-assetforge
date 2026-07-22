@@ -1,18 +1,18 @@
 {
-  "schema": "aerathea.siegebreaker_true_axial_pixel_measurement_independent_audit.v1",
+  "schema": "aerathea.siegebreaker_true_axial_pixel_measurement_independent_audit.v2",
   "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
   "date": "2026-07-22",
   "artifact_status": "proof only",
   "manifest_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/manifests/A11_TRUE_AXIAL_TOP_BOTTOM_PIXEL_MEASUREMENT.json",
-  "manifest_sha256": "5448ccb68d189b9441459454480a462cd38bb64b0316bb5a459a02a45f9b56dc",
-  "checks_passed": 19,
-  "checks_total": 19,
+  "manifest_sha256": "46877ab4b0142d8141deb4feab234f461a31e61e118d3ce7b41e0b3679786096",
+  "checks_passed": 26,
+  "checks_total": 26,
   "verdict": "pass",
   "checks": [
     {
       "check": "manifest_schema",
       "pass": true,
-      "observed": "aerathea.siegebreaker_true_axial_pixel_measurement.v1"
+      "observed": "aerathea.siegebreaker_true_axial_pixel_measurement.v2"
     },
     {
       "check": "pixel_rule",
@@ -20,7 +20,8 @@
       "observed": {
         "source_identity": "Image 1 is Top View; Image 2 is Bottom View",
         "measurement_rule": "use pixel measurements",
-        "printed_dimensions_control_geometry": false
+        "printed_dimensions_control_geometry": false,
+        "reconciliation_decision": "approved centered mean of top/bottom footprints; axial views own head depth; side view retains design/profile-detail authority but not head-depth scale"
       }
     },
     {
@@ -29,7 +30,8 @@
       "observed": {
         "source_identity": "Image 1 is Top View; Image 2 is Bottom View",
         "measurement_rule": "use pixel measurements",
-        "printed_dimensions_control_geometry": false
+        "printed_dimensions_control_geometry": false,
+        "reconciliation_decision": "approved centered mean of top/bottom footprints; axial views own head depth; side view retains design/profile-detail authority but not head-depth scale"
       }
     },
     {
@@ -115,14 +117,150 @@
       "observed": "50332410/1125443"
     },
     {
-      "check": "cross_view_verdict",
+      "check": "raw_conflict_preserved",
       "pass": true,
-      "observed": "blocked_cross_view_depth_conflict"
+      "observed": {
+        "top_vs_bottom_width_pixel_delta": 1,
+        "top_vs_bottom_depth_pixel_delta": 12,
+        "top_depth_cm_from_front_width_exact": {
+          "numerator": 24665385,
+          "denominator": 562166,
+          "display_decimal": "43.875625705"
+        },
+        "bottom_depth_cm_from_front_width_exact": {
+          "numerator": 50332410,
+          "denominator": 1125443,
+          "display_decimal": "44.722309348"
+        },
+        "top_minus_left_depth_percent_exact": {
+          "numerator": 400396745,
+          "denominator": 12086569,
+          "display_decimal": "33.127411509"
+        },
+        "bottom_minus_left_depth_percent_exact": {
+          "numerator": 1727494240,
+          "denominator": 48394049,
+          "display_decimal": "35.696418789"
+        },
+        "bottom_minus_top_depth_cm_exact": {
+          "numerator": 482164455,
+          "denominator": 569474158,
+          "display_decimal": "0.846683644"
+        },
+        "bottom_minus_top_depth_percent_of_top_exact": {
+          "numerator": 385100,
+          "denominator": 199561,
+          "display_decimal": "1.929735770"
+        },
+        "raw_evidence_verdict": "cross_view_depth_conflict",
+        "resolution": "resolved by Flamestrike-approved centered-mean axial ownership rule"
+      }
     },
     {
-      "check": "no_geometry_authority",
+      "check": "conflict_resolved",
       "pass": true,
-      "observed": false
+      "observed": {
+        "top_vs_bottom_width_pixel_delta": 1,
+        "top_vs_bottom_depth_pixel_delta": 12,
+        "top_depth_cm_from_front_width_exact": {
+          "numerator": 24665385,
+          "denominator": 562166,
+          "display_decimal": "43.875625705"
+        },
+        "bottom_depth_cm_from_front_width_exact": {
+          "numerator": 50332410,
+          "denominator": 1125443,
+          "display_decimal": "44.722309348"
+        },
+        "top_minus_left_depth_percent_exact": {
+          "numerator": 400396745,
+          "denominator": 12086569,
+          "display_decimal": "33.127411509"
+        },
+        "bottom_minus_left_depth_percent_exact": {
+          "numerator": 1727494240,
+          "denominator": 48394049,
+          "display_decimal": "35.696418789"
+        },
+        "bottom_minus_top_depth_cm_exact": {
+          "numerator": 482164455,
+          "denominator": 569474158,
+          "display_decimal": "0.846683644"
+        },
+        "bottom_minus_top_depth_percent_of_top_exact": {
+          "numerator": 385100,
+          "denominator": 199561,
+          "display_decimal": "1.929735770"
+        },
+        "raw_evidence_verdict": "cross_view_depth_conflict",
+        "resolution": "resolved by Flamestrike-approved centered-mean axial ownership rule"
+      }
+    },
+    {
+      "check": "mean_width_pixels",
+      "pass": true,
+      "observed": {
+        "numerator": 2025,
+        "denominator": 2,
+        "display_decimal": "1012.500000000"
+      }
+    },
+    {
+      "check": "mean_depth_pixels",
+      "pass": true,
+      "observed": {
+        "numerator": 597,
+        "denominator": 1,
+        "display_decimal": "597.000000000"
+      }
+    },
+    {
+      "check": "common_scale",
+      "pass": true,
+      "observed": {
+        "numerator": 33388,
+        "denominator": 449955,
+        "display_decimal": "0.074202976"
+      }
+    },
+    {
+      "check": "approved_depth",
+      "pass": true,
+      "observed": {
+        "numerator": 6644212,
+        "denominator": 149985,
+        "display_decimal": "44.299176584"
+      }
+    },
+    {
+      "check": "axial_depth_authority",
+      "pass": true,
+      "observed": {
+        "head_footprint_scale": true,
+        "top_bottom_surface_design": true,
+        "side_head_depth_scale": false,
+        "blender_geometry_edit_executed": false
+      }
+    },
+    {
+      "check": "side_depth_superseded",
+      "pass": true,
+      "observed": {
+        "head_footprint_scale": true,
+        "top_bottom_surface_design": true,
+        "side_head_depth_scale": false,
+        "blender_geometry_edit_executed": false
+      }
+    },
+    {
+      "check": "blender_unchanged_by_reconciliation",
+      "pass": true,
+      "observed": {
+        "head_footprint_scale": true,
+        "top_bottom_surface_design": true,
+        "side_head_depth_scale": false,
+        "blender_geometry_edit_executed": false
+      }
     },
     {
       "check": "no_image_generation",

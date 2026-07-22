@@ -103,7 +103,7 @@ def measure_source(view: str, source: dict[str, object], front_width_cm: Fractio
             "depth_cm_consequence_exact": exact(depth_cm_from_front_width),
         },
         "printed_52x32_labels": "reference only; explicitly superseded by Flamestrike's pixel-measurement direction",
-        "artifact_status": "authoritative source pixels; candidate measurement pending Flamestrike review",
+        "artifact_status": "authoritative source pixels and measured extent under approved reconciliation",
     }
 
 
@@ -121,11 +121,22 @@ def main() -> None:
         views["bottom"]["registration_using_existing_front_pixel_width"]["depth_cm_consequence_exact"]["denominator"],
     )
 
+    mean_width_px = Fraction(
+        views["top"]["object_width_pixels"] + views["bottom"]["object_width_pixels"],
+        2,
+    )
+    mean_depth_px = Fraction(
+        views["top"]["object_depth_pixels"] + views["bottom"]["object_depth_pixels"],
+        2,
+    )
+    common_cm_per_pixel = front_width_cm / mean_width_px
+    approved_depth_cm = mean_depth_px * common_cm_per_pixel
+
     result = {
-        "schema": "aerathea.siegebreaker_true_axial_pixel_measurement.v1",
+        "schema": "aerathea.siegebreaker_true_axial_pixel_measurement.v2",
         "asset_id": ASSET_ID,
         "date": "2026-07-22",
-        "artifact_status": "candidate measurement; source pixels authoritative",
+        "artifact_status": "authoritative measurement and reconciliation rule",
         "software_boundary": {
             "image_generation_used": False,
             "trellis_used": False,
@@ -137,6 +148,7 @@ def main() -> None:
             "source_identity": "Image 1 is Top View; Image 2 is Bottom View",
             "measurement_rule": "use pixel measurements",
             "printed_dimensions_control_geometry": False,
+            "reconciliation_decision": "approved centered mean of top/bottom footprints; axial views own head depth; side view retains design/profile-detail authority but not head-depth scale",
         },
         "existing_a09_pixel_registration": {
             "overall_length_anchor_cm": OVERALL_LENGTH_CM,
@@ -155,17 +167,40 @@ def main() -> None:
             "bottom_minus_left_depth_percent_exact": exact((bottom_depth_cm - left_depth_cm) / left_depth_cm * 100),
             "bottom_minus_top_depth_cm_exact": exact(bottom_depth_cm - top_depth_cm),
             "bottom_minus_top_depth_percent_of_top_exact": exact((bottom_depth_cm - top_depth_cm) / top_depth_cm * 100),
-            "verdict": "blocked_cross_view_depth_conflict",
-            "reason": "A single exact X/Y footprint cannot simultaneously reproduce the recorded left, top, and bottom source-pixel proportions without an approved ownership/reconciliation rule.",
+            "raw_evidence_verdict": "cross_view_depth_conflict",
+            "resolution": "resolved by Flamestrike-approved centered-mean axial ownership rule",
         },
-        "geometry_authority": False,
-        "next_decision_required": "Flamestrike must approve which pixel view owns head depth, or approve a declared reconciliation formula, before Blender geometry changes.",
+        "approved_reconciliation": {
+            "alignment_rule": "register top and bottom on their exact object center edges",
+            "formula": "arithmetic mean of exact top/bottom full object pixel extents",
+            "mean_width_pixels_exact": exact(mean_width_px),
+            "mean_depth_pixels_exact": exact(mean_depth_px),
+            "common_cm_per_axial_pixel_exact": exact(common_cm_per_pixel),
+            "approved_head_width_cm_exact": exact(front_width_cm),
+            "approved_head_depth_cm_exact": exact(approved_depth_cm),
+            "centered_residual_per_side_pixels_exact": {
+                "top_width": exact((mean_width_px - views["top"]["object_width_pixels"]) / 2),
+                "bottom_width": exact((views["bottom"]["object_width_pixels"] - mean_width_px) / 2),
+                "top_depth": exact((mean_depth_px - views["top"]["object_depth_pixels"]) / 2),
+                "bottom_depth": exact((views["bottom"]["object_depth_pixels"] - mean_depth_px) / 2),
+            },
+            "top_bottom_role": "authoritative for head X/Y footprint, depth scale, and their respective visible surface design",
+            "side_role": "authoritative for visible side/profile design detail and longitudinal placement; not authoritative for head-depth scale",
+            "status": "authoritative",
+        },
+        "geometry_authority": {
+            "head_footprint_scale": True,
+            "top_bottom_surface_design": True,
+            "side_head_depth_scale": False,
+            "blender_geometry_edit_executed": False,
+        },
+        "next_decision_required": "A separate Blender reconstruction step contract is required before geometry changes.",
     }
 
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({
-        "result": result["cross_view_evidence"]["verdict"],
+        "result": result["cross_view_evidence"]["resolution"],
         "output": str(OUTPUT.relative_to(ROOT)),
         "top_bbox": views["top"]["object_rectangle_half_open"],
         "bottom_bbox": views["bottom"]["object_rectangle_half_open"],

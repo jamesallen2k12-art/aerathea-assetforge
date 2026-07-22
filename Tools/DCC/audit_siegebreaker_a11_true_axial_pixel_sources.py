@@ -96,7 +96,7 @@ def main() -> None:
     def check(name: str, passed: bool, observed: object) -> None:
         checks.append({"check": name, "pass": bool(passed), "observed": observed})
 
-    check("manifest_schema", manifest["schema"] == "aerathea.siegebreaker_true_axial_pixel_measurement.v1", manifest["schema"])
+    check("manifest_schema", manifest["schema"] == "aerathea.siegebreaker_true_axial_pixel_measurement.v2", manifest["schema"])
     check("pixel_rule", manifest["flamestrike_authority"]["measurement_rule"] == "use pixel measurements", manifest["flamestrike_authority"])
     check("printed_dimensions_not_geometry_authority", manifest["flamestrike_authority"]["printed_dimensions_control_geometry"] is False, manifest["flamestrike_authority"])
 
@@ -116,14 +116,22 @@ def main() -> None:
         recorded_depth = fraction(record["registration_using_existing_front_pixel_width"]["depth_cm_consequence_exact"])
         check(f"{view}_depth_formula", derived_depth == recorded_depth, str(derived_depth))
 
-    check("cross_view_verdict", manifest["cross_view_evidence"]["verdict"] == "blocked_cross_view_depth_conflict", manifest["cross_view_evidence"]["verdict"])
-    check("no_geometry_authority", manifest["geometry_authority"] is False, manifest["geometry_authority"])
+    approved = manifest["approved_reconciliation"]
+    check("raw_conflict_preserved", manifest["cross_view_evidence"]["raw_evidence_verdict"] == "cross_view_depth_conflict", manifest["cross_view_evidence"])
+    check("conflict_resolved", manifest["cross_view_evidence"]["resolution"] == "resolved by Flamestrike-approved centered-mean axial ownership rule", manifest["cross_view_evidence"])
+    check("mean_width_pixels", fraction(approved["mean_width_pixels_exact"]) == Fraction(2025, 2), approved["mean_width_pixels_exact"])
+    check("mean_depth_pixels", fraction(approved["mean_depth_pixels_exact"]) == Fraction(597), approved["mean_depth_pixels_exact"])
+    check("common_scale", fraction(approved["common_cm_per_axial_pixel_exact"]) == Fraction(33388, 449955), approved["common_cm_per_axial_pixel_exact"])
+    check("approved_depth", fraction(approved["approved_head_depth_cm_exact"]) == Fraction(6644212, 149985), approved["approved_head_depth_cm_exact"])
+    check("axial_depth_authority", manifest["geometry_authority"]["head_footprint_scale"] is True, manifest["geometry_authority"])
+    check("side_depth_superseded", manifest["geometry_authority"]["side_head_depth_scale"] is False, manifest["geometry_authority"])
+    check("blender_unchanged_by_reconciliation", manifest["geometry_authority"]["blender_geometry_edit_executed"] is False, manifest["geometry_authority"])
     check("no_image_generation", manifest["software_boundary"]["image_generation_used"] is False, manifest["software_boundary"])
     check("a09_blend_unchanged", A09_BLEND.exists() and sha256(A09_BLEND) == A09_BLEND_SHA256, sha256(A09_BLEND) if A09_BLEND.exists() else "missing")
 
     passed = sum(1 for row in checks if row["pass"])
     result = {
-        "schema": "aerathea.siegebreaker_true_axial_pixel_measurement_independent_audit.v1",
+        "schema": "aerathea.siegebreaker_true_axial_pixel_measurement_independent_audit.v2",
         "asset_id": ASSET_ID,
         "date": "2026-07-22",
         "artifact_status": "proof only",

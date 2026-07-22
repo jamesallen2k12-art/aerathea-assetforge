@@ -2,7 +2,7 @@
 
 - Asset: `SM_DRW_SiegeBreaker_Hammer_A01`
 - Date: 2026-07-22
-- Recovery status: `source identity resolved by A11 intake; pixel reconciliation block remains`
+- Recovery status: `resolved by approved A11 centered-mean axial pixel authority`
 - Detected by: Flamestrike visual review
 
 ## Conflict
@@ -90,15 +90,32 @@ measured these exact half-open object rectangles:
 - top `[94, 330, 1106, 921]` = `1012 x 591 px`;
 - bottom `[93, 330, 1106, 933]` = `1013 x 603 px`.
 
-The source-identity block is resolved. A new fail-closed conflict remains:
+The source-identity block was resolved. A new fail-closed conflict was found:
 registering either axial sheet to the approved A09 front-pixel head width
 produces `43.875625705 cm` top depth or `44.722309348 cm` bottom depth, while
 the approved A09 left-view pixel proportion produces `32.957619477 cm` depth.
 Top and bottom also disagree by `12 px` in depth. No averaging, cropping, or
-owner choice is authorized. Blender geometry remains stopped pending an
-explicit pixel ownership or reconciliation rule from Flamestrike.
+owner choice was authorized at that measurement point.
+
+## Approved A11 Reconciliation
+
+Flamestrike accepted the top/bottom boundary difference as harmless natural
+stone variation and directed Codex to apply the recommended centered-mean
+rule. The approved common footprint is:
+
+- centered width: `(1012 + 1013) / 2 = 1012.5 px`;
+- centered depth: `(591 + 603) / 2 = 597 px`;
+- common scale from the A09 front-pixel width:
+  `75.130513051 / 1012.5 = 0.074202976 cm/px`;
+- authoritative head footprint: `75.130513051 x 44.299176584 cm`.
+
+The centered residual is `0.25 px` per side in width and `3 px` per side in
+depth for each source relative to the mean. Top/bottom own head depth and their
+respective visible surface design. The side view retains visible profile/detail
+and longitudinal-placement authority but no longer owns head-depth scale.
 
 Evidence:
-`A11_TRUE_AXIAL_TOP_BOTTOM_PIXEL_MEASUREMENT.json`; independent audit `19/19`
-pass. No image generation, TRELLIS, image-to-3D, or Blender geometry change
-occurred.
+`A11_TRUE_AXIAL_TOP_BOTTOM_PIXEL_MEASUREMENT.json`; independent audit `26/26`
+pass. The conflict is resolved for future reconstruction. No image generation,
+TRELLIS, image-to-3D, or Blender geometry change occurred in this authority
+step.
