@@ -26,3 +26,39 @@
 - Pending gate: Flamestrike visual decision on the final A05 image
 - Unreal authority: `false`
 - Fully game-ready: `false`
+
+## Next Approved Test Route
+
+- Date set: 2026-07-22
+- Plan ID: `SB-CR-STEPS01-16-A06-POC`
+- Plan record: `SM_DRW_SiegeBreaker_Hammer_A01_STEPS_01_16_PROOF_OF_CONCEPT_PIPELINE_PLAN.md`
+- Reset handoff: `handoffs/STEPS_01_16_PROOF_OF_CONCEPT_NEXT_TEST_HANDOFF.md`
+- Route status: `authoritative next-test plan; production not started`
+- Required sequence: exact Steps `01 -> 16`; no skipping, merging, reordering,
+  silent substitution, gate weakening, or repair-forward
+- Deviation response: stop as blocked; preserve evidence; propose a versioned
+  amendment; wait for Flamestrike approval before changing the plan
+- A05 preservation: remains an undecided `candidate`; excluded from A06
+  construction authority without reclassification
+- Artistic control: technical pass and artistic-soul approval are independent;
+  both are required at the declared review gates
+- Primary proof criterion: complete without manual production intervention and
+  reproduce the candidate through two isolated clean runs with identical
+  canonical results, deterministic resume, negative tamper failures, no network
+  dependency, and a complete rebuild recipe
+- First-run outside-input budget: one end-to-end authorization, at most one
+  batched unresolved Step 10 authority decision, and one final artistic decision
+- Locked-replay outside-input budget: zero
+- Contract visibility: full step contracts need not be shown when they follow
+  the locked rules exactly and pass independent scope/completeness validation;
+  required source, measurement, interpretation, geometry, material, and final
+  artistic review artifacts remain visible decision gates
+- Next action after reset: Core resume handshake, report both A05 status and the
+  A06 next-test route, then create/audit the exact Step 01 contract and provide
+  one concise end-to-end proof-run execution scope for approval unless separate
+  execution authority is granted
+- Step 01 production started: `false`
+- Source processing authorized: `false`
+- DCC production authorized: `false`
+- Unreal authority: `false`
+- Fully game-ready: `false`

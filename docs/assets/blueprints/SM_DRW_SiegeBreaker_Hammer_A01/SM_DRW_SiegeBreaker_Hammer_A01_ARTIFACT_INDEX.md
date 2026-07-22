@@ -56,5 +56,7 @@
 | A05 LOD0-LOD3 FBXs, GLB, and three collision proxies | `candidate` | Clean-reimported production package; Unreal not authorized. |
 | `manifests/VISUAL_FIDELITY_A05_TECHNICAL_AUDIT.json` | `proof only` | Independent `28/28` evaluated geometry, texture, topology, export, and reimport pass. |
 | A05 final review board SHA `befd52f5...b5aef` | `candidate` | Exact visible board pending Flamestrike `approved`, `rejected`, or `blocked` decision. |
+| `SM_DRW_SiegeBreaker_Hammer_A01_STEPS_01_16_PROOF_OF_CONCEPT_PIPELINE_PLAN.md` | `authoritative` | Next-test routing and process plan; locks Steps 01-16, dual technical/artistic gates, non-deviation and amendment rules, minimal-input first run, zero-input locked replay, and two-run reproducibility proof. |
+| `handoffs/STEPS_01_16_PROOF_OF_CONCEPT_NEXT_TEST_HANDOFF.md` | `authoritative` | Reset-safe next-test handoff; permits resume handshake and contract preparation/validation, preserves contract-display waiver, and routes to one concise end-to-end execution authority decision. |
 
 Unreal authority is `false`. `Fully game-ready` is `false`. No A01/A02/A03/A04 visual candidate is eligible for approval. A05 is the sole current `DCC game-ready candidate` and awaits Flamestrike visual approval.

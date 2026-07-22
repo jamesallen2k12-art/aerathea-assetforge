@@ -168,3 +168,70 @@
 - Pending authority: Flamestrike `approved`, `rejected`, or `blocked` decision.
 - Unreal authority: `false`.
 - Fully game-ready: `false`.
+
+## Steps 01-16 Proof-Of-Concept Next-Test Route
+
+- Date: 2026-07-22.
+- Flamestrike direction: save the reviewed sixteen-step proof-of-concept
+  pipeline and set it as the next test before reset; confirm that the process
+  must be followed without silent deviation.
+- Plan ID: `SB-CR-STEPS01-16-A06-POC`.
+- Approved status: `authoritative` as the next-test routing and process plan.
+- Production status: not started; Step 01 requires its own visible execution
+  contract and approval after the resume handshake.
+- Sequence authority: Steps `01` through `16` must execute in exact order. A
+  blocked condition does not authorize a workaround, substitution, skipped
+  gate, merged step, reordered step, weakened tolerance, or repair-forward.
+- Amendment authority: any required change must be evidence-linked, versioned,
+  presented to Flamestrike, and approved before execution resumes.
+- Artistic authority: technical audits cannot approve artistic fidelity;
+  Flamestrike retains the geometry, material, final-soul, and direction gates.
+- A05 status: preserved as a pending `candidate`; not approved, rejected,
+  quarantined, or reclassified by this routing decision.
+- Excluded: source processing, Step 01 execution, DCC work, textures, exports,
+  Unreal, `Fully game-ready`, application development, and unrelated worktree
+  changes.
+
+## Proof-Of-Concept Contract Visibility Waiver
+
+- Date: 2026-07-22.
+- Flamestrike direction: the contracts do not need to be shown as long as they
+  follow the rules explicitly and do not involve deviation.
+- Waived: routine display of full contract documents.
+- Still required: versioned contract creation, explicit Core/Blueprint scope,
+  independent completeness and non-deviation validation, and preservation in
+  the asset record.
+- Not waived: execution authority where required; source, measurement,
+  interpretation, geometry, material, and final artistic review decisions;
+  review-artifact visibility; exact sequence; stop-the-line; or the versioned
+  amendment requirement.
+- Communication rule: when approval is required, Codex may present the concise
+  exact execution scope instead of opening the full contract document.
+
+## Proof-Of-Concept Autonomous Repeatability Requirement
+
+- Date: 2026-07-22.
+- Flamestrike direction: the important requirement is that the process can be
+  completed fully and repeatably without outside involvement, or with only
+  minimal outside input.
+- First proof-run budget: one end-to-end execution authorization, no routine
+  intermediate interaction, at most one batched unresolved Step 10 authority
+  decision, and one final artistic decision.
+- Locked-replay budget: zero outside input after the approved decisions are
+  captured in immutable manifests.
+- Required proof: two isolated clean rebuilds; identical canonical results;
+  deterministic state path; interruption/resume proof; corrupted crop, scale,
+  mask, landmark, axis, source-hash, and output-hash negative tests; no manual
+  DCC edits; no network or cloud dependency; complete recorded execution recipe.
+- Failure rule: a one-off visually correct asset is not a successful proof of
+  concept if the clean replay, equality, recovery, or negative gates fail.
+- Authority boundary: autonomous execution may produce a `DCC game-ready
+  candidate`; it may not self-grant Flamestrike artistic approval, Unreal
+  authority, visual-canon promotion, approved-library status, or `Fully
+  game-ready` status.
+- Approval decision: Flamestrike stated `approved` after the autonomous-
+  repeatability requirement and minimal-input boundary were incorporated into
+  the saved next-test route.
+- Approval scope: the authoritative plan amendment and reset routing only.
+  Production remains unstarted under the active save/closeout contract and
+  requires the concise post-reset end-to-end execution scope.
