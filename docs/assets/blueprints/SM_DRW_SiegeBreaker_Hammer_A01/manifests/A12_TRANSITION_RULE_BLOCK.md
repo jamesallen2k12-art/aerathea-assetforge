@@ -3,7 +3,7 @@
 - Asset: `SM_DRW_SiegeBreaker_Hammer_A01`
 - Contract: `SB-AXIAL-A12-RECONSTRUCTION`
 - Date: `2026-07-22`
-- Status: `blocked pending Flamestrike rule approval`
+- Status: `superseded by approved A12 R3 component separation`
 - Artifact ceiling: no A12 review candidate exists
 
 ## Decision
@@ -31,5 +31,7 @@ Allow a continuous transition band entirely inside the approved head interval:
 - require the completed bounds to remain
   `75.130513051 x 44.299176584 x 170 cm` within Blender float tolerance.
 
-This proposed `6 cm` transition is not authorized until Flamestrike explicitly
-approves it.
+This proposed `6 cm` transition was not approved and is not used. Flamestrike
+instead identified the false center stone as the root problem and approved the
+component-separated correction recorded in
+`steps/A12_R3_COMPONENT_SEPARATION_CORRECTION_CONTRACT.md`.

@@ -717,3 +717,17 @@ Core authority: `AGENTS.md` Core Principles govern this ledger. Drifted artifact
 - Final recovery status: pixel ownership/reconciliation block `resolved`; A11 measurement rule `authoritative`; independent audit `26/26` pass; no Blender geometry change under this step.
 - Software boundary: no image generation, TRELLIS, image-to-3D, procedural overlay, or Blender geometry change occurred.
 - Follow-up Core/Kaizen improvement: source-view pixel ratios must be cross-audited before complete-geometry authority is claimed; printed dimensions and matching labels cannot hide incompatible source projections.
+
+### 2026-07-22 - Siege Breaker A12 Monolithic Head Ownership Drift
+
+- Asset or scope: `SM_DRW_SiegeBreaker_Hammer_A01` A12 R0-R2 axial reconstruction attempts.
+- Detected by: internal three-quarter review, followed by Flamestrike's observation that rock incorrectly occupied the center between the two hammer halves and the centered shaft mount.
+- Last known Core-valid state: approved A09 visible appearance and mirror method; authoritative A11 centered-mean axial footprint; separate source-visible stone masses and centered metal core recorded in the component inventory.
+- First drift action: A12 applied the A11 head-depth correction to one monolithic front-source shell above a single Z threshold.
+- Assumption or interpretation that caused drift: every source pixel in the declared head band was treated as one physical stone/head volume, overriding the explicit two-stone/center-core component ownership.
+- Affected outputs: A12 internal R0 constant-Z projections, R1 corrected owner projections, and R2 exact monolithic depth-remap blend, review boards, renders, blends, and validations.
+- Artifact statuses: R0-R2 `quarantined / invalid as review candidates`; their exact masks, source hashes, and failure evidence remain `proof only`; A09/A11 authorities remain unchanged.
+- Quarantined locations or records: local `A12_InternalRejected_R0/`, `A12_InternalRejected_R1/`, and `A12_InternalRejected_R2/`; authoritative defect record `manifests/A12_INTERNAL_REJECTIONS.md`.
+- Recovery decision: do not blend the monolithic shell. Flamestrike approved R3 component separation. Apply the pixel-scaled `24:14:14` core/stone/stone split, remap complete stone silhouettes only, preserve the centered A09 core/shaft, and use no global `6 cm` transition.
+- Recovery result: R3 creates two candidate objects, exact `75.130516052 x 44.299175262 x 170 cm` bounds, zero missing mirrored vertices, and independent `25/25` pass. The horizontal R2 ledge is absent; visual approval remains Flamestrike's decision.
+- Follow-up Core/Kaizen improvement: cross-view reconstruction must apply measurement authority per explicit physical component. A whole-object silhouette mask cannot replace component ownership when separate masses and negative spaces are recorded.

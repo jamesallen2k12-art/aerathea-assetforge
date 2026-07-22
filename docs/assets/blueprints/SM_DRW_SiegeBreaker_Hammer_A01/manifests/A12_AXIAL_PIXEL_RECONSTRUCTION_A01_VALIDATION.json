@@ -1,0 +1,265 @@
+{
+  "schema": "aerathea.siegebreaker.a12_axial_pixel_reconstruction_validation.v1",
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "attempt": "A12_AxialPixelReconstruction_A01",
+  "contract_id": "SB-AXIAL-A12-RECONSTRUCTION",
+  "artifact_status": "DCC source candidate pending Flamestrike visual decision",
+  "software": {
+    "blender": "3.0.1",
+    "image_generation": false,
+    "trellis": false,
+    "image_to_3d": false
+  },
+  "authority_hashes": {
+    "front": "d00bf9ffcfd4862884626fa961c5f6b4fd6cedfdff7936b2210ca2a905e57e95",
+    "back": "15b4633f2df4ee06115ef4a7e238f287ebece1bae514ad4005c1036a57359799",
+    "left": "1a23e0c24f7be4b12df93e2509b9d300acc9161a21a32b336f7cf63c1288d91b",
+    "concept": "9f1ac142a5047968bb20c74216c2dccf61470ed9f4e21689ff01934bd849c586",
+    "top": "aee612d9bed74e4f861576f926fe9d75de00f80dc416e3a6ba66a75247c00e98",
+    "bottom": "874a9e7c7713c7edbcf1030486d3988a54e8499ee697e316ec82a013fdb9d746",
+    "a11": "46877ab4b0142d8141deb4feab234f461a31e61e118d3ce7b41e0b3679786096",
+    "a09_blend": "06ffb121d00cddb7b9e30a60067a5036a851d285f15daca3bffe3a663fd6d78f"
+  },
+  "a09_source_hash_after_build": "06ffb121d00cddb7b9e30a60067a5036a851d285f15daca3bffe3a663fd6d78f",
+  "a09_source_unchanged": true,
+  "approved_axial_rule": {
+    "mean_footprint_pixels": [
+      1012.5,
+      597.0
+    ],
+    "common_cm_per_pixel": 0.07420297585314087,
+    "head_width_cm": 75.13051305130513,
+    "head_depth_cm": 44.299176584325096,
+    "declared_core_head_z_interval_cm": [
+      132.0,
+      170.0
+    ],
+    "stone_depth_applies_to_complete_source_visible_stone_silhouette": true,
+    "top_bottom_own_head_depth": true,
+    "side_view_owns_head_depth": false
+  },
+  "source_measurements": {
+    "a09_component_pixels": {
+      "front": 212765,
+      "back": 238342,
+      "left": 118540
+    },
+    "top_metadata": {
+      "corner_median_luma_twice": 496,
+      "foreground_luma_max_twice": 456,
+      "component_count": 134,
+      "rejected_edge_component_count": 0,
+      "selected_component_pixel_count": 465117,
+      "rectangle_half_open": [
+        94,
+        330,
+        1106,
+        921
+      ]
+    },
+    "bottom_metadata": {
+      "corner_median_luma_twice": 494,
+      "foreground_luma_max_twice": 454,
+      "component_count": 137,
+      "rejected_edge_component_count": 0,
+      "selected_component_pixel_count": 509030,
+      "rectangle_half_open": [
+        93,
+        330,
+        1106,
+        933
+      ]
+    }
+  },
+  "construction": {
+    "component_partition": {
+      "ratio_core_leftstone_rightstone": [
+        24,
+        14,
+        14
+      ],
+      "core_width_cm": 34.675621408294674,
+      "stone_width_each_cm": 20.227445821505228,
+      "core_half_width_cm": 17.337810704147337,
+      "core_source_pixels": 125217,
+      "two_stone_source_pixels": 89704
+    },
+    "centered_core_and_shaft": {
+      "source_half_active_pixels": 62849,
+      "source_half_boundary_pixels": 2552,
+      "half_vertices_before_mirror": 128602,
+      "half_faces_before_mirror": 127498,
+      "complete_vertices": 254998,
+      "complete_polygons": 254996
+    },
+    "two_mirrored_stone_strike_masses": {
+      "source_half_active_pixels": 44887,
+      "source_half_boundary_pixels": 888,
+      "half_vertices_before_mirror": 90836,
+      "half_faces_before_mirror": 90834,
+      "complete_vertices": 181672,
+      "complete_polygons": 181668
+    },
+    "stone_depth_remap": {
+      "vertices_remapped": 181672,
+      "pre_normalize_head_vertex_y_min_cm": -21.778573989868164,
+      "pre_normalize_head_vertex_y_max_cm": 22.149587631225586,
+      "pre_normalize_head_vertex_depth_cm": 43.92816162109375,
+      "centered_mean_depth_normalization_scale": 1.0084459478735206,
+      "head_vertex_y_min_cm": -22.149587631225586,
+      "head_vertex_y_max_cm": 22.149587631225586,
+      "head_vertex_depth_cm": 44.29917526245117
+    },
+    "axial_owner_material_faces": {
+      "centered_core_and_shaft": {
+        "top_boundary_faces": 12,
+        "bottom_boundary_faces": 240
+      },
+      "two_mirrored_stone_strike_masses": {
+        "top_boundary_faces": 286,
+        "bottom_boundary_faces": 286
+      }
+    },
+    "axial_surfaces": {
+      "top": {
+        "selected_component_pixels": 465117,
+        "filled_footprint_pixels": 467668,
+        "source_rectangle_half_open": [
+          94,
+          330,
+          1106,
+          921
+        ],
+        "cap": {
+          "boundary_loops": 1,
+          "full_boundary_edges": 4212,
+          "half_boundary_vertices": 2095,
+          "complete_vertices": 8372,
+          "complete_polygons": 4191,
+          "visible_z_cm": 168.45,
+          "inside_z_cm": 167.95
+        },
+        "relief": {
+          "grid_step_pixels": 3.0,
+          "inward_relief_max_cm": 0.45,
+          "solidify_thickness_cm": 0.06,
+          "closed_surface": true,
+          "half_faces_before_mirror": 25953,
+          "complete_vertices": 105198,
+          "complete_polygons": 105200
+        }
+      },
+      "bottom": {
+        "selected_component_pixels": 509030,
+        "filled_footprint_pixels": 513015,
+        "source_rectangle_half_open": [
+          93,
+          330,
+          1106,
+          933
+        ],
+        "cap": {
+          "boundary_loops": 1,
+          "full_boundary_edges": 4182,
+          "half_boundary_vertices": 2082,
+          "complete_vertices": 8324,
+          "complete_polygons": 4167,
+          "visible_z_cm": 133.55,
+          "inside_z_cm": 134.05
+        },
+        "relief": {
+          "grid_step_pixels": 3.0,
+          "inward_relief_max_cm": 0.45,
+          "solidify_thickness_cm": 0.06,
+          "closed_surface": true,
+          "half_faces_before_mirror": 28641,
+          "complete_vertices": 115944,
+          "complete_polygons": 115946
+        }
+      }
+    },
+    "source_half": "X>=0",
+    "mirror_plane": "X=0",
+    "all_mesh_mirrors_applied": true,
+    "prior_candidate_geometry_inputs": 0,
+    "internal_rejected_attempts": [
+      "A12 R0 axial backing/relief and bottom-orientation failure",
+      "A12 R1 owner-view-correct constant-Z projection sheets invalid in completed assembly",
+      "A12 R2 monolithic Z=132 depth application created false center stone and horizontal ledge"
+    ],
+    "global_z132_to_z138_transition_used": false,
+    "proof_backings_hidden_from_completed_renders": true
+  },
+  "mesh": {
+    "counts": {
+      "objects": 2,
+      "vertices": 436670,
+      "polygons": 436664,
+      "proof_backing_objects": 4
+    },
+    "bounds": {
+      "minimum_cm": [
+        -37.56525802612305,
+        -22.149587631225586,
+        0.0
+      ],
+      "maximum_cm": [
+        37.56525802612305,
+        22.149587631225586,
+        170.0
+      ],
+      "dimensions_cm": [
+        75.1305160522461,
+        44.29917526245117,
+        170.0
+      ]
+    },
+    "symmetry": {
+      "unique_vertices": 436670,
+      "missing_mirrored_vertices": 0,
+      "pass": true,
+      "per_object": {
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_CenteredCoreAndShaft": {
+          "unique_vertices": 254998,
+          "missing_mirrored_vertices": 0
+        },
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_TwoMirroredStoneStrikeMasses": {
+          "unique_vertices": 181672,
+          "missing_mirrored_vertices": 0
+        }
+      }
+    }
+  },
+  "comparison": {
+    "top": {
+      "right_half_mean_absolute_rgb_delta": 7.215811
+    },
+    "bottom": {
+      "right_half_mean_absolute_rgb_delta": 54.794658
+    }
+  },
+  "outputs": {
+    "blend_local_only": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_AxialPixelReconstruction_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_AxialPixelReconstruction_A01.blend",
+    "front": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_AXIAL_PIXEL_RECONSTRUCTION_A01_FRONT.png",
+    "top": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_AXIAL_PIXEL_RECONSTRUCTION_A01_TOP_HEAD_ISOLATED.png",
+    "bottom": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_AXIAL_PIXEL_RECONSTRUCTION_A01_BOTTOM_HEAD_ISOLATED.png",
+    "color_3q": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_AXIAL_PIXEL_RECONSTRUCTION_A01_COLOR_3Q.png",
+    "geometry_3q": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_AXIAL_PIXEL_RECONSTRUCTION_A01_GEOMETRY_3Q.png",
+    "review": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_AXIAL_PIXEL_RECONSTRUCTION_A01_REVIEW.png",
+    "top_filled_mask_local_only": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_AxialPixelReconstruction_A01/A12_true_top_filled_footprint.png",
+    "bottom_filled_mask_local_only": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_AxialPixelReconstruction_A01/A12_true_bottom_filled_footprint.png"
+  },
+  "output_hashes": {
+    "blend_local_only": "7490516c746646d095af970836b75283048a3b7dce19d7c262ac8f2a3a7bc706",
+    "front": "8296fa456a3d6e83d8eca28199903a84ffab000cd7bc97380f518acef9f4bfe1",
+    "top": "52b04deb26cf4b1095e464cb7115e63bfb1870343965f248597c2297f46bcfb9",
+    "bottom": "de7cab13504a70c732cb28e1c2dc858ac2b8c6e1b8ee83e1d5d996866b6a7779",
+    "color_3q": "6ee475ecf62753c9c28c6d138df7f56801675267e5f460cbcbdcd6725a931eac",
+    "geometry_3q": "ef35847476a2f0bfd1e98b02e997629347266f9c88be805d81bfba863767135a",
+    "review": "621c361e809d11d775c3aa7aca476fdad4c3962cd76997cf763d0edb4d1ad5c6",
+    "top_filled_mask_local_only": "97ea33dec726198cefd13597263ef80dd893f245d0332de9187b22b3711a055f",
+    "bottom_filled_mask_local_only": "3534efb16c13c80ca2f8e1b1872f18fe2808e6d872fe41c58080141a80524f87"
+  },
+  "unreal_authority": false,
+  "fully_game_ready": false
+}

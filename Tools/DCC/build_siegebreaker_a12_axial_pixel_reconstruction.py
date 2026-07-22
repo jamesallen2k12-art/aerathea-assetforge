@@ -72,7 +72,12 @@ HEAD_Z_MIN = 132.0
 HEAD_Z_MAX = 170.0
 RELIEF_STEP_PX = 3.0
 RELIEF_MAX_CM = 0.45
-TRANSITION_RULE_APPROVED = False
+CORE_WIDTH_RATIO = float(Fraction(24, 52))
+STONE_WIDTH_RATIO_EACH = float(Fraction(14, 52))
+CORE_WIDTH = TARGET_WIDTH * CORE_WIDTH_RATIO
+STONE_WIDTH_EACH = TARGET_WIDTH * STONE_WIDTH_RATIO_EACH
+CORE_HALF_WIDTH = CORE_WIDTH * 0.5
+COMPONENT_SEPARATION_APPROVED = True
 
 OUTPUT_ROOT = ROOT / "SourceAssets/Blender/Weapons/Dwarven" / ASSET / ATTEMPT
 LOCAL_RENDER_ROOT = OUTPUT_ROOT / "renders"
@@ -189,7 +194,7 @@ def mean_axial_edges(top_mask: Image.Image, bottom_mask: Image.Image, world_x: f
     return ((top_min + bottom_min) * 0.5, (top_max + bottom_max) * 0.5)
 
 
-def remap_head_depth(
+def remap_stone_depth(
     model: bpy.types.Object,
     left_mask: Image.Image,
     top_mask: Image.Image,
@@ -199,8 +204,6 @@ def remap_head_depth(
     remapped_vertices: list[bpy.types.MeshVertex] = []
     for vertex in model.data.vertices:
         x, old_y, z = float(vertex.co.x), float(vertex.co.y), float(vertex.co.z)
-        if z + 1.0e-6 < HEAD_Z_MIN:
-            continue
         old_min, old_max = a09.depth_at_z(left_mask, z)
         new_min, new_max = mean_axial_edges(top_mask, bottom_mask, x)
         if old_max - old_min <= 1.0e-9:
@@ -236,12 +239,47 @@ def remap_head_depth(
     }
 
 
+def partition_front_components(front_mask: Image.Image) -> tuple[Image.Image, Image.Image, dict[str, object]]:
+    """Split the exact source membership at the pixel-scaled 24:14:14 boundary."""
+    width, height = front_mask.size
+    source_pixels = front_mask.load()
+    core_mask = Image.new("L", (width, height), 0)
+    stone_mask = Image.new("L", (width, height), 0)
+    core_pixels = core_mask.load()
+    stone_pixels = stone_mask.load()
+    core_count = 0
+    stone_count = 0
+    for local_y in range(height):
+        for local_x in range(width):
+            if source_pixels[local_x, local_y] == 0:
+                continue
+            global_center_x = a09.FRONT_RECT[0] + local_x + 0.5
+            world_x = (global_center_x - a09.FRONT_CENTER_EDGE) * a09.FRONT_SCALE
+            if abs(world_x) < CORE_HALF_WIDTH:
+                core_pixels[local_x, local_y] = 255
+                core_count += 1
+            else:
+                stone_pixels[local_x, local_y] = 255
+                stone_count += 1
+    if core_count + stone_count != sum(1 for value in front_mask.getdata() if value):
+        raise RuntimeError("A12 component partition lost source membership")
+    return core_mask, stone_mask, {
+        "ratio_core_leftstone_rightstone": [24, 14, 14],
+        "core_width_cm": CORE_WIDTH,
+        "stone_width_each_cm": STONE_WIDTH_EACH,
+        "core_half_width_cm": CORE_HALF_WIDTH,
+        "core_source_pixels": core_count,
+        "two_stone_source_pixels": stone_count,
+    }
+
+
 def assign_axial_owner_materials(
     model: bpy.types.Object,
     top_source: Image.Image,
     bottom_source: Image.Image,
     top_material: bpy.types.Material,
     bottom_material: bpy.types.Material,
+    minimum_z: float | None,
 ) -> dict[str, int]:
     """Put axial source pixels on the real remapped head boundary.
 
@@ -262,7 +300,7 @@ def assign_axial_owner_materials(
     for polygon in model.data.polygons:
         if polygon.material_index != 2:
             continue
-        if min(float(model.data.vertices[index].co.z) for index in polygon.vertices) < HEAD_Z_MIN - 1.0e-6:
+        if minimum_z is not None and min(float(model.data.vertices[index].co.z) for index in polygon.vertices) < minimum_z - 1.0e-6:
             continue
         if polygon.normal.z > 0.5:
             view = "top"
@@ -596,22 +634,52 @@ def render(camera: bpy.types.Object, path: Path, width: int, height: int, overri
     scene.view_layers[0].material_override = None
 
 
+def render_geometry_objects(
+    objects: list[bpy.types.Object],
+    camera: bpy.types.Object,
+    path: Path,
+    width: int,
+    height: int,
+    material: bpy.types.Material,
+) -> None:
+    saved: dict[str, tuple[list[bpy.types.Material | None], list[int]]] = {}
+    for obj in objects:
+        saved[obj.name] = (
+            [slot.material for slot in obj.material_slots],
+            [polygon.material_index for polygon in obj.data.polygons],
+        )
+        obj.data.materials.clear()
+        obj.data.materials.append(material)
+        for polygon in obj.data.polygons:
+            polygon.material_index = 0
+    render(camera, path, width, height)
+    for obj in objects:
+        materials, indices = saved[obj.name]
+        obj.data.materials.clear()
+        for value in materials:
+            obj.data.materials.append(value)
+        for polygon, material_index in zip(obj.data.polygons, indices):
+            polygon.material_index = material_index
+
+
 def render_head_isolated(
     view: str,
     camera: bpy.types.Object,
     path: Path,
-    model: bpy.types.Object,
+    models: list[bpy.types.Object],
     cap_objects: dict[str, bpy.types.Object],
     relief_objects: dict[str, bpy.types.Object],
 ) -> None:
-    states = {obj.name: obj.hide_render for obj in [model, *cap_objects.values(), *relief_objects.values()]}
-    model.hide_render = True
+    all_objects = [*models, *cap_objects.values(), *relief_objects.values()]
+    states = {obj.name: obj.hide_render for obj in all_objects}
+    for model in models:
+        model.hide_render = True
     for name in ("top", "bottom"):
         visible = name == view
         cap_objects[name].hide_render = not visible
         relief_objects[name].hide_render = not visible
     render(camera, path, 1254, 1254)
-    for obj in [model, *cap_objects.values(), *relief_objects.values()]:
+    for obj in all_objects:
         obj.hide_render = states[obj.name]
 
 
@@ -681,8 +749,8 @@ def compose_review(
     body = font(27)
     small = font(23)
     draw.rectangle((0, 0, 3600, 210), fill=(29, 34, 41))
-    draw.text((70, 35), "SIEGE BREAKER A12 - AXIAL PIXEL RECONSTRUCTION", fill=(245, 242, 233), font=title)
-    draw.text((72, 125), "APPROVED CENTERED TOP/BOTTOM DEPTH | FRESH HALF + EXACT MIRROR | BLENDER ONLY", fill=(173, 207, 229), font=subtitle)
+    draw.text((70, 35), "SIEGE BREAKER A12 R3 - COMPONENT-SEPARATED AXIAL RECONSTRUCTION", fill=(245, 242, 233), font=title)
+    draw.text((72, 125), "TWO MIRRORED STONES + CENTERED CORE | PIXEL-SCALED 24:14:14 | BLENDER ONLY", fill=(173, 207, 229), font=subtitle)
 
     axial_crops = {
         "top": (55, 285, 1145, 970),
@@ -719,7 +787,7 @@ def compose_review(
     dims = bounds["dimensions_cm"]
     notes = [
         f"Approved mean footprint: 1012.5 x 597 px = {TARGET_WIDTH:.6f} x {TARGET_DEPTH:.6f} cm; overall length {TARGET_HEIGHT:.3f} cm.",
-        "Top/bottom are exact head-isolated proof projections; their source ownership is integrated onto the candidate's real boundary faces.",
+        "Flat top/bottom projections are proof only; source ownership is integrated onto the separated stone/core boundary faces.",
         f"Top/bottom right-half RGB deltas: {comparison['top']['right_half_mean_absolute_rgb_delta']:.3f} / {comparison['bottom']['right_half_mean_absolute_rgb_delta']:.3f} of 255.",
         f"Evaluated complete bounds: {dims[0]:.6f} x {dims[1]:.6f} x {dims[2]:.6f} cm; mesh objects {counts['objects']}; polygons {counts['polygons']}.",
         "Status: DCC source candidate pending Flamestrike visual decision. No image generation, TRELLIS, export, or Unreal work.",
@@ -734,10 +802,9 @@ def compose_review(
 
 
 def main() -> None:
-    if not TRANSITION_RULE_APPROVED:
+    if not COMPONENT_SEPARATION_APPROVED:
         raise RuntimeError(
-            "Blueprint block: rule missing — A12 requires Flamestrike approval of the "
-            "Z=132..138 cm depth-transition rule before another candidate build"
+            "Blueprint block: A12 R3 component-separation correction is not approved"
         )
     ensure_dirs()
     paths = {
@@ -788,29 +855,54 @@ def main() -> None:
     edge_material = a09.flat_material("M_DRW_SiegeBreaker_A12_AxialEdge", (0.11, 0.13, 0.16, 1.0))
     proof_material = a09.flat_material("M_DRW_SiegeBreaker_A12_GeometryProof", (0.24, 0.28, 0.34, 1.0))
 
-    model, a09_build_stats = a09.build_half_mesh(
+    core_mask, stone_mask, component_partition = partition_front_components(front_mask)
+    core_model, core_build_stats = a09.build_half_mesh(
         front_image,
-        front_mask,
+        core_mask,
         back_image,
         left_mask,
         [front_material, back_material, side_material],
     )
-    depth_remap = remap_head_depth(model, left_mask, top_mask, bottom_mask)
-    axial_owner_faces = assign_axial_owner_materials(
-        model,
+    stone_model, stone_build_stats = a09.build_half_mesh(
+        front_image,
+        stone_mask,
+        back_image,
+        left_mask,
+        [front_material, back_material, side_material],
+    )
+    depth_remap = remap_stone_depth(stone_model, left_mask, top_mask, bottom_mask)
+    stone_axial_owner_faces = assign_axial_owner_materials(
+        stone_model,
         top_source,
         bottom_source,
         top_material,
         bottom_material,
+        None,
     )
-    model.name = f"{ASSET}_A12_CompleteMirroredMainVolume"
-    model.data.name = f"{ASSET}_A12_MainVolume_Mesh"
-    model["Aerathea.ContractID"] = CONTRACT_ID
-    model["Aerathea.ArtifactStatus"] = "DCC source candidate pending Flamestrike visual decision"
-    model["Aerathea.HeadDepthAuthority"] = "A11 centered mean axial pixels"
-    model["Aerathea.ApprovedHeadDepthCm"] = TARGET_DEPTH
-    model["Aerathea.SideViewControlsHeadDepth"] = False
-    model["Aerathea.TopBottomProofProjectionIsCandidateGeometry"] = False
+    core_axial_owner_faces = assign_axial_owner_materials(
+        core_model,
+        top_source,
+        bottom_source,
+        top_material,
+        bottom_material,
+        HEAD_Z_MIN,
+    )
+    core_model.name = f"{ASSET}_A12_CenteredCoreAndShaft"
+    core_model.data.name = f"{ASSET}_A12_CenteredCoreAndShaft_Mesh"
+    stone_model.name = f"{ASSET}_A12_TwoMirroredStoneStrikeMasses"
+    stone_model.data.name = f"{ASSET}_A12_TwoMirroredStoneStrikeMasses_Mesh"
+    for model, role in ((core_model, "centered metal core and shaft"), (stone_model, "two mirrored stone strike masses")):
+        model["Aerathea.ContractID"] = CONTRACT_ID
+        model["Aerathea.CorrectionID"] = "SB-AXIAL-A12-R3-COMPONENT-SEPARATION"
+        model["Aerathea.ArtifactStatus"] = "DCC source candidate pending Flamestrike visual decision"
+        model["Aerathea.ComponentRole"] = role
+        model["Aerathea.TopBottomProofProjectionIsCandidateGeometry"] = False
+    core_model["Aerathea.DepthAuthority"] = "proven A09 front/back/left pixel build"
+    core_model["Aerathea.ComponentWidthCm"] = CORE_WIDTH
+    stone_model["Aerathea.DepthAuthority"] = "A11 centered mean axial pixels"
+    stone_model["Aerathea.ApprovedHeadDepthCm"] = TARGET_DEPTH
+    stone_model["Aerathea.ComponentWidthEachCm"] = STONE_WIDTH_EACH
+    stone_model["Aerathea.SideViewControlsHeadDepth"] = False
 
     cap_objects = {}
     relief_objects = {}
@@ -831,7 +923,7 @@ def main() -> None:
             "relief": relief_stats,
         }
 
-    candidate_objects = [model]
+    candidate_objects = [core_model, stone_model]
     proof_backings = [*cap_objects.values(), *relief_objects.values()]
     a09.add_lighting()
     source_px_per_cm = 1.0 / a09.FRONT_SCALE
@@ -848,10 +940,10 @@ def main() -> None:
     three_quarter = add_camera("CAM_A12_COMPLETED_THREE_QUARTER", (145.0, -235.0, 112.0), (0.0, 0.0, 84.0), 205.0)
 
     render(front_camera, RENDER_PATHS["front"], front_image.width, front_image.height)
-    render_head_isolated("top", top_camera, RENDER_PATHS["top"], model, cap_objects, relief_objects)
-    render_head_isolated("bottom", bottom_camera, RENDER_PATHS["bottom"], model, cap_objects, relief_objects)
+    render_head_isolated("top", top_camera, RENDER_PATHS["top"], candidate_objects, cap_objects, relief_objects)
+    render_head_isolated("bottom", bottom_camera, RENDER_PATHS["bottom"], candidate_objects, cap_objects, relief_objects)
     render(three_quarter, RENDER_PATHS["color_3q"], 1400, 1600)
-    render(three_quarter, RENDER_PATHS["geometry_3q"], 1400, 1600, proof_material)
+    render_geometry_objects(candidate_objects, three_quarter, RENDER_PATHS["geometry_3q"], 1400, 1600, proof_material)
 
     bounds = bounds_objects(candidate_objects)
     symmetry_result = symmetry(candidate_objects)
@@ -898,7 +990,8 @@ def main() -> None:
             "common_cm_per_pixel": COMMON_SCALE,
             "head_width_cm": TARGET_WIDTH,
             "head_depth_cm": TARGET_DEPTH,
-            "head_z_interval_cm": [HEAD_Z_MIN, HEAD_Z_MAX],
+            "declared_core_head_z_interval_cm": [HEAD_Z_MIN, HEAD_Z_MAX],
+            "stone_depth_applies_to_complete_source_visible_stone_silhouette": True,
             "top_bottom_own_head_depth": True,
             "side_view_owns_head_depth": False,
         },
@@ -908,9 +1001,14 @@ def main() -> None:
             "bottom_metadata": bottom_meta,
         },
         "construction": {
-            "main_volume": a09_build_stats,
-            "head_depth_remap": depth_remap,
-            "axial_owner_material_faces": axial_owner_faces,
+            "component_partition": component_partition,
+            "centered_core_and_shaft": core_build_stats,
+            "two_mirrored_stone_strike_masses": stone_build_stats,
+            "stone_depth_remap": depth_remap,
+            "axial_owner_material_faces": {
+                "centered_core_and_shaft": core_axial_owner_faces,
+                "two_mirrored_stone_strike_masses": stone_axial_owner_faces,
+            },
             "axial_surfaces": axial_stats,
             "source_half": "X>=0",
             "mirror_plane": "X=0",
@@ -919,7 +1017,9 @@ def main() -> None:
             "internal_rejected_attempts": [
                 "A12 R0 axial backing/relief and bottom-orientation failure",
                 "A12 R1 owner-view-correct constant-Z projection sheets invalid in completed assembly",
+                "A12 R2 monolithic Z=132 depth application created false center stone and horizontal ledge",
             ],
+            "global_z132_to_z138_transition_used": False,
             "proof_backings_hidden_from_completed_renders": all(obj.hide_render for obj in proof_backings),
         },
         "mesh": {"counts": counts, "bounds": bounds, "symmetry": symmetry_result},

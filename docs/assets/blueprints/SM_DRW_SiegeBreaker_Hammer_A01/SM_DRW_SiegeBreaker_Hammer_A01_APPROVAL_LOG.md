@@ -424,3 +424,22 @@
 - Authority state: pixel ownership/reconciliation block `resolved`.
 - Blender geometry change under this approval: `false`; a separate
   reconstruction contract is required.
+
+## A12 R3 Component-Separated Axial Candidate
+
+- Date: `2026-07-22`.
+- Flamestrike correction: remove the false stone between the two hammer halves
+  and the centered shaft mount; use separate mirrored stones and a centered
+  metal core; `proceed`.
+- Component rule: approved A11 pixel width with the recorded `24:14:14`
+  core/stone/stone proportion; no printed-width absolute scale.
+- Result: two candidate mesh objects, exact evaluated envelope
+  `75.130516052 x 44.299175262 x 170 cm`, and zero missing mirrored vertices.
+- A11 depth applies across the complete stone silhouettes; the centered
+  core/shaft retains A09 depth. No `6 cm` transition blend was used.
+- R2 false center-stone ledge: absent in internal colored and geometry proofs.
+- Independent audit: `pass 25/25`; `proof only`.
+- Review-board SHA-256:
+  `621c361e809d11d775c3aa7aca476fdad4c3962cd76997cf763d0edb4d1ad5c6`.
+- Artifact status: `DCC source candidate pending Flamestrike visual decision`.
+- Further DCC, export, Unreal, or game-ready escalation: `false`.

@@ -1,13 +1,13 @@
 # SM_DRW_SiegeBreaker_Hammer_A01 Reset / Resume State
 
-- Active approved route: `A11 centered-mean axial pixel authority locked`
+- Active approved route: `A12 R3 component-separated axial reconstruction`
 - Plan: `SM_DRW_SiegeBreaker_Hammer_A01_PIXEL_HALF_MIRROR_A09_PLAN.md`
-- Active contract: `A11 true axial source pixel-measurement intake; measurement complete`
-- Current state: `measurement authority resolved; no active Blender reconstruction contract`
-- Next approved activity: `none; prepare and approve a separate source-constrained Blender reconstruction step`
+- Active contract: `A12 R3 correction executed; visible decision gate active`
+- Current state: `DCC source candidate pending Flamestrike visual decision`
+- Next approved activity: `open exact A12 R3 board and receive approved/revise/rejected/blocked decision`
 - Source processing authorized now: `false; A11 bounded measurement is complete`
 - Model inference authorized now: `false`
-- DCC production authorized now: `false; Core Recovery stop`
+- DCC production authorized now: `false beyond the completed R3 visual gate`
 - Unreal authority: `false`
 - Fully game-ready: `false`
 
@@ -62,6 +62,16 @@
   its unreviewed axial/depth solution cannot override the newly supplied source.
 - A10 `+Z/-Z` renders: valid model-derived proof, not source-matched authority;
   ineligible for approval as an exact top/bottom match.
+- A12 R0-R2: `quarantined`; never presented as valid candidates. R2 applied
+  axial depth monolithically and created false center stone plus a horizontal
+  ledge.
+- Flamestrike approved A12 R3 component separation: centered core width
+  `34.675621408 cm`, each stone `20.227445822 cm`, two mirrored stones, centered
+  core/shaft, and no global `6 cm` blend.
+- A12 R3 candidate: two mesh objects, bounds
+  `75.130516052 x 44.299175262 x 170 cm`, zero missing mirrored vertices,
+  independent audit `25/25`, review SHA `621c361e...d1ad5c6`, pending visual
+  decision.
 
 ## Active Method
 
@@ -83,11 +93,8 @@ Blender-only direction.
 
 ## Resume Instruction
 
-Read the recovery journal/latest checkpoint, this state, the A09 plan, the A09
-contract, the A09 output record, the A09 final review decision, and the A08/A07
-recovery record, then read the A10 contract and output record. A10 is complete;
-then read `manifests/A10_SOURCE_TOP_BOTTOM_PROJECTION_AUTHORITY_CONFLICT_RECOVERY.md`,
-`manifests/A11_TRUE_AXIAL_TOP_BOTTOM_PIXEL_MEASUREMENT.json`, and its independent
-audit. The pixel ownership conflict is resolved. Stop before geometry; prepare
-and obtain approval for a separate Blender reconstruction contract. Never use
-TRELLIS or any other prohibited generation software.
+Read the recovery journal/latest checkpoint, this state, A09 final approval,
+A11 authority, `steps/A12_R3_COMPONENT_SEPARATION_CORRECTION_CONTRACT.md`,
+`steps/A12_R3_COMPONENT_SEPARATION_OUTPUT_RECORD.md`, and the A12 R3 independent
+audit. Reopen the exact A12 R3 review board if needed and stop for Flamestrike's
+visual decision. Never use TRELLIS or any other prohibited generation software.

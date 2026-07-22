@@ -1,0 +1,310 @@
+{
+  "schema": "aerathea.siegebreaker.a12_r3_component_separation_independent_audit.v1",
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "contract_id": "SB-AXIAL-A12-RECONSTRUCTION",
+  "correction_id": "SB-AXIAL-A12-R3-COMPONENT-SEPARATION",
+  "status": "pass",
+  "artifact_status": "proof only",
+  "gate_summary": {
+    "passed": 25,
+    "total": 25
+  },
+  "observed_bounds_cm": {
+    "minimum": [
+      -37.56525802612305,
+      -22.149587631225586,
+      0.0
+    ],
+    "maximum": [
+      37.56525802612305,
+      22.149587631225586,
+      170.0
+    ],
+    "dimensions": [
+      75.1305160522461,
+      44.29917526245117,
+      170.0
+    ]
+  },
+  "observed_component_edges": {
+    "core_max_positive_x_cm": 17.367237091064453,
+    "stone_min_positive_x_cm": 17.367237091064453,
+    "approved_boundary_cm": 17.337810704147337
+  },
+  "observed_symmetry": {
+    "SM_DRW_SiegeBreaker_Hammer_A01_A12_CenteredCoreAndShaft": {
+      "unique_vertices": 254998,
+      "missing_mirrored_vertices": 0,
+      "pass": true
+    },
+    "SM_DRW_SiegeBreaker_Hammer_A01_A12_TwoMirroredStoneStrikeMasses": {
+      "unique_vertices": 181672,
+      "missing_mirrored_vertices": 0,
+      "pass": true
+    }
+  },
+  "gates": [
+    {
+      "name": "manifest_schema",
+      "pass": true,
+      "evidence": "aerathea.siegebreaker.a12_axial_pixel_reconstruction_validation.v1"
+    },
+    {
+      "name": "contract_and_correction_ids",
+      "pass": true,
+      "evidence": {
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_CenteredCoreAndShaft": [
+          "SB-AXIAL-A12-RECONSTRUCTION",
+          "SB-AXIAL-A12-R3-COMPONENT-SEPARATION"
+        ],
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_TwoMirroredStoneStrikeMasses": [
+          "SB-AXIAL-A12-RECONSTRUCTION",
+          "SB-AXIAL-A12-R3-COMPONENT-SEPARATION"
+        ]
+      }
+    },
+    {
+      "name": "candidate_status",
+      "pass": true,
+      "evidence": "DCC source candidate pending Flamestrike visual decision"
+    },
+    {
+      "name": "two_candidate_components",
+      "pass": true,
+      "evidence": {
+        "objects": 2,
+        "vertices": 436670,
+        "polygons": 436664,
+        "proof_backing_objects": 4
+      }
+    },
+    {
+      "name": "component_roles",
+      "pass": true,
+      "evidence": {
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_CenteredCoreAndShaft": "centered metal core and shaft",
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_TwoMirroredStoneStrikeMasses": "two mirrored stone strike masses"
+      }
+    },
+    {
+      "name": "pixel_scaled_24_14_14_partition",
+      "pass": true,
+      "evidence": {
+        "ratio_core_leftstone_rightstone": [
+          24,
+          14,
+          14
+        ],
+        "core_width_cm": 34.675621408294674,
+        "stone_width_each_cm": 20.227445821505228,
+        "core_half_width_cm": 17.337810704147337,
+        "core_source_pixels": 125217,
+        "two_stone_source_pixels": 89704
+      }
+    },
+    {
+      "name": "component_partition_preserves_front_membership",
+      "pass": true,
+      "evidence": {
+        "core": 125217,
+        "stones": 89704
+      }
+    },
+    {
+      "name": "component_boundary_within_one_front_pixel",
+      "pass": true,
+      "evidence": {
+        "core_max_positive_x_cm": 17.367237091064453,
+        "stone_min_positive_x_cm": 17.367237091064453,
+        "approved_boundary_cm": 17.337810704147337
+      }
+    },
+    {
+      "name": "exact_candidate_envelope",
+      "pass": true,
+      "evidence": [
+        75.1305160522461,
+        44.29917526245117,
+        170.0
+      ]
+    },
+    {
+      "name": "bounds_match_manifest",
+      "pass": true,
+      "evidence": {
+        "observed": [
+          75.1305160522461,
+          44.29917526245117,
+          170.0
+        ],
+        "manifest": [
+          75.1305160522461,
+          44.29917526245117,
+          170.0
+        ]
+      }
+    },
+    {
+      "name": "origin_z_zero",
+      "pass": true,
+      "evidence": 0.0
+    },
+    {
+      "name": "independent_symmetry",
+      "pass": true,
+      "evidence": {
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_CenteredCoreAndShaft": {
+          "unique_vertices": 254998,
+          "missing_mirrored_vertices": 0,
+          "pass": true
+        },
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_TwoMirroredStoneStrikeMasses": {
+          "unique_vertices": 181672,
+          "missing_mirrored_vertices": 0,
+          "pass": true
+        }
+      }
+    },
+    {
+      "name": "mirrors_applied",
+      "pass": true,
+      "evidence": {
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_CenteredCoreAndShaft": {
+          "property": 1,
+          "modifiers": []
+        },
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_TwoMirroredStoneStrikeMasses": {
+          "property": 1,
+          "modifiers": []
+        }
+      }
+    },
+    {
+      "name": "no_remaining_candidate_modifiers",
+      "pass": true,
+      "evidence": {
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_CenteredCoreAndShaft": [],
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_TwoMirroredStoneStrikeMasses": []
+      }
+    },
+    {
+      "name": "stone_depth_authority",
+      "pass": true,
+      "evidence": {
+        "authority": "A11 centered mean axial pixels",
+        "depth": 44.299176584325096
+      }
+    },
+    {
+      "name": "core_depth_authority",
+      "pass": true,
+      "evidence": "proven A09 front/back/left pixel build"
+    },
+    {
+      "name": "axial_owner_materials_integrated",
+      "pass": true,
+      "evidence": {
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_CenteredCoreAndShaft": [
+          "MI_DRW_SiegeBreaker_A12_FrontSourcePixels",
+          "MI_DRW_SiegeBreaker_A12_BackSourcePixels",
+          "MI_DRW_SiegeBreaker_A12_LeftSourcePixels",
+          "MI_DRW_SiegeBreaker_A12_TopSourcePixels",
+          "MI_DRW_SiegeBreaker_A12_BottomSourcePixels"
+        ],
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_TwoMirroredStoneStrikeMasses": [
+          "MI_DRW_SiegeBreaker_A12_FrontSourcePixels",
+          "MI_DRW_SiegeBreaker_A12_BackSourcePixels",
+          "MI_DRW_SiegeBreaker_A12_LeftSourcePixels",
+          "MI_DRW_SiegeBreaker_A12_TopSourcePixels",
+          "MI_DRW_SiegeBreaker_A12_BottomSourcePixels"
+        ]
+      }
+    },
+    {
+      "name": "proof_objects_hidden_and_classified",
+      "pass": true,
+      "evidence": {
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_TopClosedSourceCap": {
+          "hide_render": true,
+          "status": "proof only; head-isolated source backing; hidden from completed assembly"
+        },
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_BottomClosedSourceCap": {
+          "hide_render": true,
+          "status": "proof only; head-isolated source backing; hidden from completed assembly"
+        },
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_TopSourceRelief": {
+          "hide_render": true,
+          "status": "proof only; head-isolated source projection; hidden from completed assembly"
+        },
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_BottomSourceRelief": {
+          "hide_render": true,
+          "status": "proof only; head-isolated source projection; hidden from completed assembly"
+        }
+      }
+    },
+    {
+      "name": "no_global_transition_blend",
+      "pass": true,
+      "evidence": false
+    },
+    {
+      "name": "fresh_rebuild_no_prior_geometry",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "a09_immutable",
+      "pass": true,
+      "evidence": "06ffb121d00cddb7b9e30a60067a5036a851d285f15daca3bffe3a663fd6d78f"
+    },
+    {
+      "name": "only_authorized_source_images_loaded",
+      "pass": true,
+      "evidence": [
+        "siege_breaker_back_view.png",
+        "siege_breaker_front_view.png",
+        "siege_breaker_left_view.png",
+        "siege_breaker_true_axial_bottom_view.png",
+        "siege_breaker_true_axial_top_view.png"
+      ]
+    },
+    {
+      "name": "output_hashes",
+      "pass": true,
+      "evidence": {
+        "blend_local_only": "7490516c746646d095af970836b75283048a3b7dce19d7c262ac8f2a3a7bc706",
+        "front": "8296fa456a3d6e83d8eca28199903a84ffab000cd7bc97380f518acef9f4bfe1",
+        "top": "52b04deb26cf4b1095e464cb7115e63bfb1870343965f248597c2297f46bcfb9",
+        "bottom": "de7cab13504a70c732cb28e1c2dc858ac2b8c6e1b8ee83e1d5d996866b6a7779",
+        "color_3q": "6ee475ecf62753c9c28c6d138df7f56801675267e5f460cbcbdcd6725a931eac",
+        "geometry_3q": "ef35847476a2f0bfd1e98b02e997629347266f9c88be805d81bfba863767135a",
+        "review": "621c361e809d11d775c3aa7aca476fdad4c3962cd76997cf763d0edb4d1ad5c6",
+        "top_filled_mask_local_only": "97ea33dec726198cefd13597263ef80dd893f245d0332de9187b22b3711a055f",
+        "bottom_filled_mask_local_only": "3534efb16c13c80ca2f8e1b1872f18fe2808e6d872fe41c58080141a80524f87"
+      }
+    },
+    {
+      "name": "geometry_proof_distinct",
+      "pass": true,
+      "evidence": {
+        "color": "6ee475ecf62753c9c28c6d138df7f56801675267e5f460cbcbdcd6725a931eac",
+        "geometry": "ef35847476a2f0bfd1e98b02e997629347266f9c88be805d81bfba863767135a"
+      }
+    },
+    {
+      "name": "no_image_generation_trellis_or_unreal",
+      "pass": true,
+      "evidence": {
+        "software": {
+          "blender": "3.0.1",
+          "image_generation": false,
+          "trellis": false,
+          "image_to_3d": false
+        },
+        "unreal": false,
+        "game_ready": false
+      }
+    }
+  ],
+  "decision_boundary": "Technical audit cannot grant visual approval; Flamestrike must decide from the visible review board."
+}
