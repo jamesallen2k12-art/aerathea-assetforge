@@ -3,7 +3,7 @@
 - Asset: `SM_DRW_SiegeBreaker_Hammer_A01`
 - Contract: `SB-AXIAL-A12-R4-SIDE-OWNER-FACES`
 - Date: `2026-07-22`
-- Artifact status: `DCC source candidate pending Flamestrike visual decision`
+- Artifact status: `quarantined after Flamestrike identified whole-assembly registration defects`
 - Technical evidence status: `proof only`
 - Unreal authority: `false`
 - Fully game-ready: `false`
@@ -92,4 +92,8 @@ completed colored three-quarter render, gray geometry proof, and both exact
 side-owner views must be shown visibly. Flamestrike alone may classify R4 as
 `approved`, `revise`, `rejected`, or `blocked`.
 
-No adjacent production is authorized at this gate.
+Flamestrike subsequently identified two differently scaled handle facets,
+residual rock between the apparent haft surfaces, and handle misalignment. R4D
+is therefore `quarantined` as a complete visual candidate. Its strike-face and
+measurement evidence may be referenced, but its mesh is forbidden as R5
+construction geometry. R5 supersedes this gate.

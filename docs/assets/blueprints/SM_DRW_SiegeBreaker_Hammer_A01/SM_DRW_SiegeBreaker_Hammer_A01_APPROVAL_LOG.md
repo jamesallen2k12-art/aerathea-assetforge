@@ -469,6 +469,44 @@
 - Prohibited: image generation, TRELLIS, image-to-3D, export, LOD, collision,
   Unreal, game-ready escalation, or technical self-approval.
 
+## A12 R5 One-Half Mirror Reconciliation Approval
+
+- Date: `2026-07-22`.
+- Flamestrike proposed reversing the conflicting side and building one complete
+  hammer half, then duplicating it to assemble the whole hammer; approval
+  response: `approved` to the exact clarified rule.
+- Construction authority: front positive half plus corresponding reversed back
+  half and registered right-side depth create one fresh `X>=0` half; mirror at
+  `X=0` preserves front/back orientation.
+- Left source: reversed around its measured shaft axis for `-X` surface pixels
+  and comparison, not independent geometry.
+- R5 depth: registered right-source pixel consequence; no A11 depth stretching
+  and no left/right averaging.
+- Empty-space rule: preserve exact source-connected gaps; no rock or projected
+  wall may fill the core/haft separation.
+- Stop gate and prohibited software boundary: unchanged.
+
+## A12 R5 Cylindrical-Haft Static-UV Amendment
+
+- Date: `2026-07-22`.
+- Flamestrike supplied the exact haft method: a true cylinder, front and back
+  `180-degree` face sets, separate front/back material slots, and static UV
+  islands spanning `U=0..1` for Unreal-compatible transfer.
+- The `157.08%` texture widening is authorized only as a deterministic
+  crop/resize of the exact supplied source pixels; it is not image generation.
+- Geometry authority: the cylinder shares the measured shaft axis and is built
+  in the approved `X>=0` half before the exact `X=0` mirror.
+- Circular consequence: for the haft only, the front positive-half pixel radius
+  is used in both X and Y; the right view retains axis/comparison authority but
+  cannot elliptically rescale a true cylinder. Other R5 components keep their
+  existing right-view depth rule.
+- Shader boundary: static UV coordinates only; no Blender procedural Tube,
+  Generated, or Object coordinates.
+- Current output authority: revised Blender R5 candidate, proof renders,
+  validation, audit, and visible review board.
+- Deferred authority: FBX export settings and Unreal material setup are
+  recorded for a later gate but are not authorized for execution now.
+
 ## A12 R4 Side-Owner Strike-Face Candidate
 
 - Date: `2026-07-22`.
@@ -488,3 +526,42 @@
 - Artifact status: `DCC source candidate pending Flamestrike visual decision`.
 - Current gate: visible review; Flamestrike decision pending.
 - Further DCC, export, Unreal, or game-ready escalation: `false`.
+
+## A12 R5 Four-View Whole-Assembly Recovery Approval
+
+- Date: `2026-07-22`.
+- Flamestrike finding: R4D still shows rock between the apparent haft surfaces,
+  visible front/side/back scale discontinuity, and handle misalignment.
+- R4D decision: `revise / quarantined as a complete visual candidate`.
+- Flamestrike approved replacing the stopped handle-only correction with a
+  fresh whole-assembly reconstruction from the original front, back, left, and
+  right pixels; R4D is evidence only and cannot supply construction geometry.
+- Required registration: common `0..170 cm` Z frame and shaft-derived
+  transverse axes; separately trace stones, centered metal core, empty space,
+  handle, and pommel; build one half and mirror exactly.
+- Fail-closed rule: if opposite views conflict beyond the accepted pixel
+  tolerance, show exact measurement evidence and stop instead of averaging,
+  stretching, or inventing geometry.
+- Prohibited: image generation, TRELLIS, image-to-3D, export, LOD, collision,
+  Unreal, game-ready escalation, or technical self-approval.
+
+## A12 R5 Cylindrical-Haft A04 Candidate
+
+- Date: `2026-07-22`.
+- Result: the haft is one true profiled circular cylinder on `X=0,Y=0`, built
+  as `X>=0` and mirrored exactly at `X=0`; the earlier slab-haft geometry is
+  absent.
+- Haft interval: `Z=30.0..109.25 cm`, ending at the last common front/back
+  haft-owned source row.
+- Materials/UV: `Front_Material` and `Back_Material`, each owning `180
+  degrees`; one static `UVMap`; exact `U=0..1`, `V=0..1` per half; no
+  procedural coordinate nodes.
+- Texture treatment: exact source-pixel sampling, nearest resampling, `1.5708`
+  deterministic widening; no generated imagery.
+- Complete bounds: `74.977501 x 33.132968 x 170.000000 cm`.
+- Independent audit: `pass 45/45`; `proof only`.
+- Review-board SHA:
+  `2b00b55d28aecbbee5d96e9a6eec5d694139f64c0cbc015f450b1ad05c1dc79f`.
+- Artifact status: `DCC source candidate pending Flamestrike visual decision`.
+- Pending decision: Flamestrike `approved`, `revise`, `rejected`, or `blocked`.
+- FBX, Unreal, LOD, collision, and game-ready escalation remain unauthorized.

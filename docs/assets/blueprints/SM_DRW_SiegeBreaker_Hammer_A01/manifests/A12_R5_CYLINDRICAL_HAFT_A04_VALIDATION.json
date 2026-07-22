@@ -1,0 +1,381 @@
+{
+  "schema": "aerathea.siegebreaker.a12_r5_cylindrical_haft_validation.v2",
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "contract_id": "SB-AXIAL-A12-R5-FOUR-VIEW-WHOLE-ASSEMBLY",
+  "attempt": "A12_R5_CylindricalHaft_A04",
+  "artifact_status": "DCC source candidate pending Flamestrike visual decision",
+  "source_hashes": {
+    "front": "d00bf9ffcfd4862884626fa961c5f6b4fd6cedfdff7936b2210ca2a905e57e95",
+    "back": "15b4633f2df4ee06115ef4a7e238f287ebece1bae514ad4005c1036a57359799",
+    "left": "1a23e0c24f7be4b12df93e2509b9d300acc9161a21a32b336f7cf63c1288d91b",
+    "right": "04a1e9359d518b1dec35fe161020bd23ab9e2f8d5934f24e4184aecaa91d8330"
+  },
+  "source_rectangles_half_open": {
+    "front": [
+      317,
+      193,
+      808,
+      1304
+    ],
+    "back": [
+      285,
+      193,
+      818,
+      1344
+    ],
+    "left": [
+      397,
+      190,
+      612,
+      1299
+    ],
+    "right": [
+      467,
+      172,
+      681,
+      1270
+    ]
+  },
+  "source_membership_counts": {
+    "front": 212765,
+    "back": 238342,
+    "left": 118540,
+    "right": 116948
+  },
+  "source_scale_cm_per_pixel": {
+    "front": 0.15301530153015303,
+    "back": 0.1476976542137272,
+    "left": 0.1532912533814247,
+    "right": 0.15482695810564662
+  },
+  "registered_shaft_axes_global_px": {
+    "front": 563.0,
+    "back": 552.5,
+    "left": 549.5,
+    "right": 593.5
+  },
+  "shaft_axis_samples": {
+    "front": [
+      {
+        "z_cm": 90.0,
+        "local_row": 522,
+        "local_interval_half_open": [
+          213,
+          278
+        ],
+        "global_center_edge_px": 562.5
+      },
+      {
+        "z_cm": 95.0,
+        "local_row": 490,
+        "local_interval_half_open": [
+          214,
+          278
+        ],
+        "global_center_edge_px": 563.0
+      },
+      {
+        "z_cm": 100.0,
+        "local_row": 457,
+        "local_interval_half_open": [
+          214,
+          278
+        ],
+        "global_center_edge_px": 563.0
+      }
+    ],
+    "back": [
+      {
+        "z_cm": 90.0,
+        "local_row": 541,
+        "local_interval_half_open": [
+          234,
+          301
+        ],
+        "global_center_edge_px": 552.5
+      },
+      {
+        "z_cm": 95.0,
+        "local_row": 507,
+        "local_interval_half_open": [
+          234,
+          301
+        ],
+        "global_center_edge_px": 552.5
+      },
+      {
+        "z_cm": 100.0,
+        "local_row": 473,
+        "local_interval_half_open": [
+          234,
+          301
+        ],
+        "global_center_edge_px": 552.5
+      }
+    ],
+    "left": [
+      {
+        "z_cm": 90.0,
+        "local_row": 521,
+        "local_interval_half_open": [
+          124,
+          180
+        ],
+        "global_center_edge_px": 549.0
+      },
+      {
+        "z_cm": 95.0,
+        "local_row": 489,
+        "local_interval_half_open": [
+          125,
+          180
+        ],
+        "global_center_edge_px": 549.5
+      },
+      {
+        "z_cm": 100.0,
+        "local_row": 456,
+        "local_interval_half_open": [
+          125,
+          180
+        ],
+        "global_center_edge_px": 549.5
+      }
+    ],
+    "right": [
+      {
+        "z_cm": 90.0,
+        "local_row": 516,
+        "local_interval_half_open": [
+          99,
+          154
+        ],
+        "global_center_edge_px": 593.5
+      },
+      {
+        "z_cm": 95.0,
+        "local_row": 484,
+        "local_interval_half_open": [
+          99,
+          154
+        ],
+        "global_center_edge_px": 593.5
+      },
+      {
+        "z_cm": 100.0,
+        "local_row": 452,
+        "local_interval_half_open": [
+          99,
+          154
+        ],
+        "global_center_edge_px": 593.5
+      }
+    ]
+  },
+  "left_surface_pixel_composite": {
+    "left_owner_pixels": 119109,
+    "mirrored_right_fallback_pixels": 10409
+  },
+  "back_surface_pixel_composite": {
+    "back_owner_pixels": 239771,
+    "reversed_front_fallback_pixels": 6115
+  },
+  "haft_texture_derivation": {
+    "front": {
+      "view": "front",
+      "z_interval_cm": [
+        30.0,
+        109.25
+      ],
+      "maximum_source_diameter_px": 89,
+      "widen_factor": 1.5708,
+      "output_dimensions_px": [
+        140,
+        519
+      ],
+      "resampling": "nearest exact source-pixel sampling",
+      "unique_source_pixels_sampled": 35496,
+      "generated_imagery": false
+    },
+    "back": {
+      "view": "back",
+      "z_interval_cm": [
+        30.0,
+        109.25
+      ],
+      "maximum_source_diameter_px": 94,
+      "widen_factor": 1.5708,
+      "output_dimensions_px": [
+        148,
+        538
+      ],
+      "resampling": "nearest exact source-pixel sampling",
+      "unique_source_pixels_sampled": 38935,
+      "generated_imagery": false
+    }
+  },
+  "construction": {
+    "source_half": "X>=0",
+    "front_owner": "front positive half",
+    "back_owner": "corresponding reversed back image-left half",
+    "depth_owner": "registered right view",
+    "left_owner": "reversed -X surface pixels; no independent geometry",
+    "mirror_plane": "X=0",
+    "mirror_applied": true,
+    "prior_candidate_geometry_inputs": 0,
+    "a11_depth_used": false,
+    "source_connected_empty_space_preserved": true,
+    "haft": "true circular profiled cylinder built as X>=0 half and mirrored at X=0",
+    "haft_radius_authority": "front positive-half pixels; identical X/Y radius by cylinder definition",
+    "haft_right_view_role": "shaft-axis registration and comparison; no elliptical scaling",
+    "haft_static_uv": true,
+    "haft_front_back_material_degrees": [
+      180,
+      180
+    ],
+    "haft_uv_u_range_per_half": [
+      0.0,
+      1.0
+    ],
+    "haft_texture_widen_factor": 1.5708
+  },
+  "build": {
+    "source_half_active_pixels": 89232,
+    "source_half_boundary_pixels": 1775,
+    "half_vertices_before_mirror": 180688,
+    "half_faces_before_mirror": 180100,
+    "complete_vertices": 360204,
+    "complete_polygons": 360200,
+    "material_face_counts": {
+      "front": 178464,
+      "back": 178464,
+      "right": 1636,
+      "left": 1636
+    },
+    "front_pixels_rejected_by_back_membership_intersection": 0,
+    "haft_source_pixels_removed_from_facade": 17402
+  },
+  "haft_build": {
+    "geometry": "true profiled circular cylinder",
+    "z_interval_cm": [
+      30.0,
+      109.25
+    ],
+    "profile_authority": "front positive-half pixel radius at each source-registered Z row",
+    "ring_count": 519,
+    "full_angular_segments": 32,
+    "radius_min_cm": 4.743474,
+    "radius_max_cm": 6.732673,
+    "complete_vertices": 16610,
+    "complete_polygons": 16640,
+    "materials": [
+      "Front_Material",
+      "Back_Material"
+    ],
+    "material_slots": 2,
+    "uv_layer_names": [
+      "UVMap"
+    ],
+    "static_uv_ranges_u_v": {
+      "front": [
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "back": [
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ]
+    },
+    "front_half_degrees": 180,
+    "back_half_degrees": 180,
+    "procedural_coordinate_nodes": 0,
+    "mirror_applied": true
+  },
+  "mesh": {
+    "bounds": {
+      "min_cm": [
+        -37.48875,
+        -19.585609,
+        0.0
+      ],
+      "max_cm": [
+        37.48875,
+        13.547359,
+        170.0
+      ],
+      "dimensions_cm": [
+        74.977501,
+        33.132968,
+        170.0
+      ]
+    },
+    "objects": {
+      "SM_DRW_SiegeBreaker_Hammer_A01_A12_R5_CompleteMirroredAssembly": {
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "SM_DRW_SiegeBreaker_Hammer_A01_A12_R5_CylindricalHaft_CompleteM": {
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "software": {
+    "blender": "3.0.1",
+    "image_generation": false,
+    "trellis": false,
+    "image_to_3d": false
+  },
+  "deferred_export_record": {
+    "executed": false,
+    "fbx_apply_scalings": "FBX All",
+    "fbx_add_leaf_bones": false,
+    "unreal_static_uv_required": true
+  },
+  "unreal_authority": false,
+  "fully_game_ready": false,
+  "outputs": {
+    "front": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_R5_CYLINDRICAL_HAFT_A04_FRONT.png",
+    "back": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_R5_CYLINDRICAL_HAFT_A04_BACK.png",
+    "left": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_R5_CYLINDRICAL_HAFT_A04_LEFT.png",
+    "right": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_R5_CYLINDRICAL_HAFT_A04_RIGHT.png",
+    "color_3q": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_R5_CYLINDRICAL_HAFT_A04_COLOR_3Q.png",
+    "geometry_3q": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_R5_CYLINDRICAL_HAFT_A04_GEOMETRY_3Q.png",
+    "review": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_R5_CYLINDRICAL_HAFT_A04_REVIEW.png",
+    "blend_local_only": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R5_CylindricalHaft_A04/SM_DRW_SiegeBreaker_Hammer_A01_A12_R5_CylindricalHaft_A04.blend"
+  },
+  "output_hashes": {
+    "front": "f2ba1f07153f13da9c116630e85cd2fd75ad67a31ca633322e4f25930b293513",
+    "back": "57021f14fe84ce8b255390613e348190057e97b9ce1b97039fa122081fe2f9cb",
+    "left": "a9a98a2c0d5a784962a3d5afd1368d7b84dab8a60c687774dfaf819fcd19bbef",
+    "right": "f1ebe94446add9bfc20528e9cea62f125640426afdd33b19d9de83f4c81d9359",
+    "color_3q": "902507e5347edf76c2500f50c0942d79c404f30f1911ee4b5bd4390b7a509d13",
+    "geometry_3q": "89021d60e98a3b8dce4395a265c9c736b1dfeb5ab2399fef103189fab5e7de24",
+    "review": "2b00b55d28aecbbee5d96e9a6eec5d694139f64c0cbc015f450b1ad05c1dc79f",
+    "blend_local_only": "085f5b5d873f73c9611f01a90d10dca7768968f4648fb58061d928dd75ea16ec",
+    "left_owner_composite_local_only": "f25ff8ce3b0cd6cafdac3716fb4b35ed6ee6c7ec7fbd3dd2cb9baa7b92b338fb",
+    "back_owner_composite_local_only": "a077a86d028aebe5d108026507209cbdb791f0b7ea8574465a6ed23586b94437",
+    "front_haft_texture_local_only": "b9dbcf700dd422fdcfa8cc0bdf7b2a90a317ca651dba1b15cb082c576f22accc",
+    "back_haft_texture_local_only": "fc56c015a51641a5c6f27b752aea3f5ded82021f5917783239d524a65e9ac1fd"
+  }
+}

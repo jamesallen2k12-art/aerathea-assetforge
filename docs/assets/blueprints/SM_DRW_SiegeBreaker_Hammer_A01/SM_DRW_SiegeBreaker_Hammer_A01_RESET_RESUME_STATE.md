@@ -1,13 +1,13 @@
 # SM_DRW_SiegeBreaker_Hammer_A01 Reset / Resume State
 
-- Active approved route: `A12 R4 side-owner strike-face reconstruction`
+- Active approved route: `A12 R5 four-view whole-assembly reconstruction`
 - Plan: `SM_DRW_SiegeBreaker_Hammer_A01_PIXEL_HALF_MIRROR_A09_PLAN.md`
-- Active contract: `steps/A12_R4_SIDE_OWNER_FACE_RECONSTRUCTION_CONTRACT.md`
-- Current state: `R3 and internal R4A-R4C quarantined; R4D candidate built and independently audited 37/37`
-- Next approved activity: `open the exact R4 review artifacts and stop for Flamestrike's visual decision`
+- Active contract: `steps/A12_R5_FOUR_VIEW_WHOLE_ASSEMBLY_RECONSTRUCTION_CONTRACT.md`
+- Current state: `R4D and R5A01-R5A03 quarantined; R5 cylindrical-haft A04 technical pass, visible decision pending`
+- Next approved activity: `show the exact A04 board and stop for Flamestrike approval, revision, rejection, or blocked decision`
 - Source processing authorized now: `true only for exact -X/+X outward-face pixels under R4`
 - Model inference authorized now: `false`
-- DCC production authorized now: `false pending the R4 visual decision`
+- DCC production authorized now: `true only for the exact R5 one-half mirror contract`
 - Unreal authority: `false`
 - Fully game-ready: `false`
 
@@ -86,6 +86,29 @@
   `520818` vertices, `520808` polygons; independent audit: `pass 37/37`.
 - R4D artifact status: `DCC source candidate pending Flamestrike visual
   decision`; technical evidence is `proof only`.
+- Flamestrike identified R4D handle scaling/alignment and residual inter-haft
+  rock defects. The complete R4D candidate is now `quarantined`; its mesh is
+  forbidden as R5 construction geometry.
+- R5 is a fresh four-view source registration and whole-assembly reconstruction.
+  It must stop measurement-only if opposite views do not reverse and agree
+  around the registered shaft axis within the accepted pixel tolerance.
+- Flamestrike resolved the left/right conflict: use the registered right view as
+  `+X` depth authority, reverse the left view for `-X` surface ownership, build
+  one complete half, and mirror at `X=0`. A11 depth stretching is superseded in
+  R5 by this explicit side-view authority.
+- R5A01/R5A02 exposed a remaining slab-haft defect: registered front/back
+  facade extrusion still reads as independently scaled planar surfaces.
+  Flamestrike replaced that haft method with a true cylinder, separate front
+  and back 180-degree material ownership, and one static UV map whose half
+  islands each span `U=0..1`. FBX and Unreal execution remain deferred.
+- R5A03 proved the cylinder/mirror/static-UV construction but included the back
+  source's first head-owned row at its top, producing one thin join gap. It is
+  quarantined; A04 changes only the top endpoint to the last common
+  front/back haft row at `Z=109.25 cm`.
+- A04 result: true profiled circular haft, separate front/back 180-degree
+  materials, static exact `U/V=0..1` half-islands, two mesh components, full
+  `0..170 cm` Z frame, and independent audit `pass 45/45`. Review-board SHA
+  `2b00b55d...c79f`; visual decision pending.
 
 ## Active Method
 
@@ -109,7 +132,8 @@ Blender-only direction.
 
 Read the recovery journal/latest checkpoint, this state, A09 final approval,
 A11 authority, `steps/A12_R3_COMPONENT_SEPARATION_OUTPUT_RECORD.md`, and
-`steps/A12_R4_SIDE_OWNER_FACE_RECONSTRUCTION_CONTRACT.md`, and
-`steps/A12_R4_SIDE_OWNER_FACE_OUTPUT_RECORD.md`. Open the exact R4 review
-artifacts and stop for Flamestrike's visual decision. Never use TRELLIS or any
-other prohibited generation software.
+`steps/A12_R4_SIDE_OWNER_FACE_OUTPUT_RECORD.md`, and
+  `steps/A12_R5_FOUR_VIEW_WHOLE_ASSEMBLY_RECONSTRUCTION_CONTRACT.md`, and
+  `steps/A12_R5_CYLINDRICAL_HAFT_A04_OUTPUT_RECORD.md`. Show only the exact A04
+  review board and wait for Flamestrike's visual decision. Do not export, enter
+  Unreal, or use TRELLIS or any other prohibited generation software.

@@ -1,0 +1,413 @@
+{
+  "schema": "aerathea.siegebreaker.a12_r5_cylindrical_haft_independent_audit.v1",
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "contract_id": "SB-AXIAL-A12-R5-FOUR-VIEW-WHOLE-ASSEMBLY",
+  "artifact_status": "proof only",
+  "result": "pass",
+  "summary": "45/45 checks passed",
+  "checks": [
+    {
+      "name": "contract_id",
+      "pass": true,
+      "evidence": "SB-AXIAL-A12-R5-FOUR-VIEW-WHOLE-ASSEMBLY"
+    },
+    {
+      "name": "artifact_ceiling",
+      "pass": true,
+      "evidence": "DCC source candidate pending Flamestrike visual decision"
+    },
+    {
+      "name": "source_hash_lock",
+      "pass": true,
+      "evidence": {
+        "front": "d00bf9ffcfd4862884626fa961c5f6b4fd6cedfdff7936b2210ca2a905e57e95",
+        "back": "15b4633f2df4ee06115ef4a7e238f287ebece1bae514ad4005c1036a57359799",
+        "left": "1a23e0c24f7be4b12df93e2509b9d300acc9161a21a32b336f7cf63c1288d91b",
+        "right": "04a1e9359d518b1dec35fe161020bd23ab9e2f8d5934f24e4184aecaa91d8330"
+      }
+    },
+    {
+      "name": "source_membership_counts",
+      "pass": true,
+      "evidence": {
+        "front": 212765,
+        "back": 238342,
+        "left": 118540,
+        "right": 116948
+      }
+    },
+    {
+      "name": "registered_shaft_axes",
+      "pass": true,
+      "evidence": {
+        "front": 563.0,
+        "back": 552.5,
+        "left": 549.5,
+        "right": 593.5
+      }
+    },
+    {
+      "name": "blend_hash",
+      "pass": true,
+      "evidence": "085f5b5d873f73c9611f01a90d10dca7768968f4648fb58061d928dd75ea16ec"
+    },
+    {
+      "name": "output_hash_front",
+      "pass": true,
+      "evidence": "/home/james/Projects/Aerathea/docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_R5_CYLINDRICAL_HAFT_A04_FRONT.png"
+    },
+    {
+      "name": "output_hash_back",
+      "pass": true,
+      "evidence": "/home/james/Projects/Aerathea/docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_R5_CYLINDRICAL_HAFT_A04_BACK.png"
+    },
+    {
+      "name": "output_hash_left",
+      "pass": true,
+      "evidence": "/home/james/Projects/Aerathea/docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_R5_CYLINDRICAL_HAFT_A04_LEFT.png"
+    },
+    {
+      "name": "output_hash_right",
+      "pass": true,
+      "evidence": "/home/james/Projects/Aerathea/docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_R5_CYLINDRICAL_HAFT_A04_RIGHT.png"
+    },
+    {
+      "name": "output_hash_color_3q",
+      "pass": true,
+      "evidence": "/home/james/Projects/Aerathea/docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_R5_CYLINDRICAL_HAFT_A04_COLOR_3Q.png"
+    },
+    {
+      "name": "output_hash_geometry_3q",
+      "pass": true,
+      "evidence": "/home/james/Projects/Aerathea/docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_R5_CYLINDRICAL_HAFT_A04_GEOMETRY_3Q.png"
+    },
+    {
+      "name": "output_hash_review",
+      "pass": true,
+      "evidence": "/home/james/Projects/Aerathea/docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_R5_CYLINDRICAL_HAFT_A04_REVIEW.png"
+    },
+    {
+      "name": "colored_and_geometry_proofs_distinct",
+      "pass": true,
+      "evidence": [
+        "902507e5347edf76c2500f50c0942d79c404f30f1911ee4b5bd4390b7a509d13",
+        "89021d60e98a3b8dce4395a265c9c736b1dfeb5ab2399fef103189fab5e7de24"
+      ]
+    },
+    {
+      "name": "geometry_proof_flat_material_only",
+      "pass": true,
+      "evidence": {
+        "geometry_max_rgb_chroma": 20,
+        "color_max_rgb_chroma": 185
+      }
+    },
+    {
+      "name": "front_haft_texture_local_only_hash",
+      "pass": true,
+      "evidence": "/home/james/Projects/Aerathea/SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R5_CylindricalHaft_A04/A12_R5_front_haft_15708_static_uv.png"
+    },
+    {
+      "name": "back_haft_texture_local_only_hash",
+      "pass": true,
+      "evidence": "/home/james/Projects/Aerathea/SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R5_CylindricalHaft_A04/A12_R5_back_haft_15708_static_uv.png"
+    },
+    {
+      "name": "two_mesh_components",
+      "pass": true,
+      "evidence": [
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_R5_CompleteMirroredAssembly",
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_R5_CylindricalHaft_CompleteM"
+      ]
+    },
+    {
+      "name": "one_cylindrical_haft",
+      "pass": true,
+      "evidence": [
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_R5_CylindricalHaft_CompleteM"
+      ]
+    },
+    {
+      "name": "one_non_haft_assembly",
+      "pass": true,
+      "evidence": [
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_R5_CompleteMirroredAssembly"
+      ]
+    },
+    {
+      "name": "prior_geometry_inputs_zero",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "haft_component_property",
+      "pass": true,
+      "evidence": "true cylindrical haft"
+    },
+    {
+      "name": "haft_mirror_applied",
+      "pass": true,
+      "evidence": {
+        "property": 1,
+        "modifiers": 0
+      }
+    },
+    {
+      "name": "registered_axis",
+      "pass": true,
+      "evidence": "X=0,Y=0"
+    },
+    {
+      "name": "front_back_degrees",
+      "pass": true,
+      "evidence": [
+        180,
+        180
+      ]
+    },
+    {
+      "name": "static_uv_property",
+      "pass": true,
+      "evidence": {
+        "uv": "UVMap",
+        "procedural": 0
+      }
+    },
+    {
+      "name": "widen_factor",
+      "pass": true,
+      "evidence": 1.5708
+    },
+    {
+      "name": "two_material_slots",
+      "pass": true,
+      "evidence": [
+        "Front_Material",
+        "Back_Material"
+      ]
+    },
+    {
+      "name": "one_static_uv_layer",
+      "pass": true,
+      "evidence": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "front_uv_exact_0_1",
+      "pass": true,
+      "evidence": [
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "back_uv_exact_0_1",
+      "pass": true,
+      "evidence": [
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "no_procedural_coordinate_nodes",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "image_nodes_flat_static_uv",
+      "pass": true,
+      "evidence": [
+        [
+          "Front_Material",
+          "Image Texture",
+          "FLAT"
+        ],
+        [
+          "Back_Material",
+          "Image Texture",
+          "FLAT"
+        ]
+      ]
+    },
+    {
+      "name": "circular_cross_sections",
+      "pass": true,
+      "evidence": 4.053934770098522e-07
+    },
+    {
+      "name": "exact_x_mirror",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "bottom_center_z_frame",
+      "pass": true,
+      "evidence": {
+        "min_z": 0.0,
+        "max_z": 170.0
+      }
+    },
+    {
+      "name": "identity_transforms",
+      "pass": true,
+      "evidence": {
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_R5_CompleteMirroredAssembly": {
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "SM_DRW_SiegeBreaker_Hammer_A01_A12_R5_CylindricalHaft_CompleteM": {
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "manifest_bounds_match",
+      "pass": true,
+      "evidence": {
+        "observed": [
+          74.97750091552734,
+          33.132967948913574,
+          170.0
+        ],
+        "recorded": [
+          74.977501,
+          33.132968,
+          170.0
+        ]
+      }
+    },
+    {
+      "name": "front_texture_15708_width",
+      "pass": true,
+      "evidence": {
+        "view": "front",
+        "z_interval_cm": [
+          30.0,
+          109.25
+        ],
+        "maximum_source_diameter_px": 89,
+        "widen_factor": 1.5708,
+        "output_dimensions_px": [
+          140,
+          519
+        ],
+        "resampling": "nearest exact source-pixel sampling",
+        "unique_source_pixels_sampled": 35496,
+        "generated_imagery": false
+      }
+    },
+    {
+      "name": "front_texture_not_generated",
+      "pass": true,
+      "evidence": {
+        "view": "front",
+        "z_interval_cm": [
+          30.0,
+          109.25
+        ],
+        "maximum_source_diameter_px": 89,
+        "widen_factor": 1.5708,
+        "output_dimensions_px": [
+          140,
+          519
+        ],
+        "resampling": "nearest exact source-pixel sampling",
+        "unique_source_pixels_sampled": 35496,
+        "generated_imagery": false
+      }
+    },
+    {
+      "name": "back_texture_15708_width",
+      "pass": true,
+      "evidence": {
+        "view": "back",
+        "z_interval_cm": [
+          30.0,
+          109.25
+        ],
+        "maximum_source_diameter_px": 94,
+        "widen_factor": 1.5708,
+        "output_dimensions_px": [
+          148,
+          538
+        ],
+        "resampling": "nearest exact source-pixel sampling",
+        "unique_source_pixels_sampled": 38935,
+        "generated_imagery": false
+      }
+    },
+    {
+      "name": "back_texture_not_generated",
+      "pass": true,
+      "evidence": {
+        "view": "back",
+        "z_interval_cm": [
+          30.0,
+          109.25
+        ],
+        "maximum_source_diameter_px": 94,
+        "widen_factor": 1.5708,
+        "output_dimensions_px": [
+          148,
+          538
+        ],
+        "resampling": "nearest exact source-pixel sampling",
+        "unique_source_pixels_sampled": 38935,
+        "generated_imagery": false
+      }
+    },
+    {
+      "name": "prohibited_software_absent",
+      "pass": true,
+      "evidence": {
+        "blender": "3.0.1",
+        "image_generation": false,
+        "trellis": false,
+        "image_to_3d": false
+      }
+    },
+    {
+      "name": "no_export_or_unreal_execution",
+      "pass": true,
+      "evidence": {
+        "executed": false,
+        "fbx_apply_scalings": "FBX All",
+        "fbx_add_leaf_bones": false,
+        "unreal_static_uv_required": true
+      }
+    },
+    {
+      "name": "future_fbx_record",
+      "pass": true,
+      "evidence": {
+        "apply_scalings": "FBX All",
+        "add_leaf_bones": 0
+      }
+    }
+  ],
+  "visual_approval_granted": false,
+  "unreal_authority": false,
+  "fully_game_ready": false
+}

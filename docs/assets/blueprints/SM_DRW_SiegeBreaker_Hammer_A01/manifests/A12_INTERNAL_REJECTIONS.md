@@ -309,3 +309,139 @@ Hash locks:
 Bounded correction: enlarge only the already-authorized inward recess so every
 superseded wall vertex is behind the new maximum relief. Do not alter source
 pixels, owner-face profile, UV mapping, relief, mirror, or outer envelope.
+
+## R4D — Side-Face Audit Pass, Whole-Assembly Registration Failure
+
+- Date: `2026-07-22`
+- Status: `quarantined after Flamestrike visual rejection/revision`
+- Contract: `SB-AXIAL-A12-R4-SIDE-OWNER-FACES`
+
+R4D corrected the R4C owner-face occlusion and passed its expanded technical
+audit `37/37`. Flamestrike then identified defects outside that audit's
+coverage: the handle reads as differently scaled front/side/back facets, rock
+remains visibly between the apparent haft surfaces, and the handle is not
+aligned.
+
+The first invalid inherited assumption is A09's use of the whole left-view head
+crop midpoint as the Y origin for every Z row. Exact stable-shaft measurements
+show the left handle axis approximately `44 px` away from that midpoint. The
+second invalid assumption is that front/back pixel sheets plus side-wall
+projection form one registered volume. They do not establish common local
+component landmarks across the four views.
+
+R4D is `invalid` as a complete visual candidate despite its side-face technical
+pass. Its exact strike-face measurements remain `proof only`; its mesh is
+forbidden as R5 construction geometry. Exact preserved hashes:
+
+- `.blend`:
+  `d44778864febf225019ba2a256ae22af87d8fc091ed2fc515b1ab0010c9fff96`;
+- review board:
+  `eb0b41930a012ef014e2962daef697d5733942cc231b22b8775dbb24a77a7520`;
+- colored three-quarter:
+  `9e053ae4a72410d7160a8281142963b7c35ff7dae575370e666563f88917a374`;
+- geometry three-quarter:
+  `913a953212c97e96b8c68136f9ff107afb1b50446c05d351a8dc8b87e649c511`;
+- validation:
+  `beeb035e780a65a7af1461888ecefe4e227219b0844ec9bef6ab62dda98021fa`;
+- independent audit:
+  `cea705dbe7407ee2fd7ebf1205cb8b5cc0d280a5abc4293d4d4ecb0c4aa1c559`.
+
+Approved recovery: preserve R4D only as quarantined evidence; return to the
+original four source views, register them to the shaft centerline and common Z
+landmarks, trace physical components and empty space separately, and rebuild
+fresh only if the opposite views pass the R5 source-consistency gate.
+
+## R5A01 — Registered Assembly With Source-Gap And Proof-Material Failure
+
+- Date: `2026-07-22`
+- Status: `quarantined; never presented for approval`
+- Contract: `SB-AXIAL-A12-R5-FOUR-VIEW-WHOLE-ASSEMBLY`
+
+R5A01 rebuilt from immutable front/back/left/right source pixels on measured
+shaft axes and used one `X>=0` half plus an exact mirror. Internal review found
+source-sheet background gaps on the left/back surfaces, a geometry proof that
+still displayed source color, and a rectangular faceted haft. The attempt is
+`invalid` as a review candidate.
+
+Preserved local hashes:
+
+- `.blend`: `9e52c422fc8ec6efade3c7112b0dda4e0b1d9ed5b9c20d04c3cd9446a8c64071`;
+- validation: `425019c4860fe2deea43836e9d9fdc848b61435fe3dea952ce55dd30cf90126c`;
+- review board: `a220982155d31c9a25cc9cbbde7a5e51cdd7dfed9bcff3d9ba40f8813f561b47`.
+
+## R5A02 — Registration Improved, Slab Haft And Endpoint Loss Remain
+
+- Date: `2026-07-22`
+- Status: `quarantined; never presented for approval`
+- Contract: `SB-AXIAL-A12-R5-FOUR-VIEW-WHOLE-ASSEMBLY`
+
+R5A02 corrected most source-background gaps and produced a valid gray geometry
+proof. It still represented the haft as front/back facade slabs with side
+walls, so the handle read as multiple differently scaled surfaces instead of
+one aligned round object. Front/back membership intersection also removed the
+lowest source row, reducing the evaluated height to `169.846985 cm`, and a
+small side-view background sliver remained. Flamestrike's later explicit
+cylinder/static-UV method supersedes this haft construction.
+
+Preserved local hashes:
+
+- `.blend`: `e3e4e9d492760b693857b7fc8cf1c84fe309967f54126bdd59e48a5e9f8d8264`;
+- validation: `9818083f34a1c0250a6f76978d13cf35dc8b8db7a6337c893934612d727c4f2c`;
+- review board: `8d6b5dd598eaf3f841c6ae85f86fb4644562d915a05554cb695f6f7581191961`;
+- colored three-quarter: `a73fb7f3c0078f79df0ec0191237a3f6420cfcec0cb119246b835d347eb52586`;
+- geometry three-quarter: `fd968bedcfb108630eb916f57c71dcc34bc1e9b1a72782d1b86ad65ee2db18d9`.
+
+Approved recovery: preserve the shared shaft registration and one-half mirror
+rule, remove the slab haft, build a true cylinder on that axis, assign separate
+front/back 180-degree material sets, and store all mapping in a static UV map.
+Do not export or enter Unreal at this gate.
+
+## R5A03 — Cylinder Correct, Back Head-Transition Row Included
+
+- Date: `2026-07-22`
+- Status: `quarantined; never presented for approval`
+- Contract: `SB-AXIAL-A12-R5-FOUR-VIEW-WHOLE-ASSEMBLY`
+
+R5A03 replaced the slab haft with the approved true circular cylinder, exact
+half/mirror construction, two 180-degree material sets, and static `UVMap`
+islands spanning `U=0..1`. Internal review confirmed that the handle now reads
+as one centered round component. The first top endpoint nevertheless used
+`Z=111 cm`; the back source has already entered its head-owned interval by that
+row, so the back haft texture normalized head pixels into its top row and left
+a thin white join gap. This pass is `invalid` as a review candidate.
+
+Preserved local hashes:
+
+- `.blend`: `933491a21589afb89726b1f51d18b1e390b3076fcef65d190a59d4c2533a52c0`;
+- validation: `43f81fda0c0995d8ebee7ebc0e38d372fd26c35da6b304cafde75cc0e2677e2b`;
+- review board: `2576608b94ebea7661dc145ae136540da57fbea49a56275ba00bf38455a0576f`;
+- colored three-quarter: `f58489a0ba24d5450d74cfec3b58530600e2e79a1df685bca417375afc737e07`;
+- back proof: `afc98bb40473b2366b1b0a6ffaf5e5df41b67af405933512a0ae1cc298cdac27`.
+
+Bounded correction: retain the cylinder, its front-derived circular profile,
+static UVs, materials, mirror, and all source hashes; move only its top endpoint
+to `Z=109.25 cm`, the last measured row where both front and back remain
+haft-owned, so the facade resumes before the back head transition.
+
+## R5A04 Pre-Audit Board — Material Override Did Not Cover Both Meshes
+
+- Date: `2026-07-22`
+- Status: `invalid proof artifact; never presented for approval`
+- Candidate geometry status: `unchanged`
+
+The first A04 board used Blender view-layer material override for the gray
+proof, but the render retained source-color materials on the two-object
+assembly. The colored proof was therefore duplicated into the geometry panel.
+This was a review-artifact failure, not a geometry or source change. The invalid
+proof and board are preserved locally under
+`A12_InternalRejected_R5A04_PreProofFix/`.
+
+- invalid geometry-proof SHA:
+  `ac8ee5cbc8fc798447d0b3a5db2ffc20b2731d184dfe2f6e64e1a3d688ced473`;
+- invalid board SHA:
+  `7070a11f402dbf6936b75532bb3d27e6138d0da55ba0fd66657ca92db89216cb`.
+
+Bounded correction: temporarily replace both mesh objects' material arrays
+with the one geometry-proof material, render, then restore their exact material
+slots and polygon indices before saving. No mesh, UV, texture, source, camera,
+or ownership value changes.

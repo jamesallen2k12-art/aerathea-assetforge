@@ -799,3 +799,68 @@ Core authority: `AGENTS.md` Core Principles govern this ledger. Drifted artifact
 - Follow-up Core/Kaizen improvement: a side-owner technical gate must test
   fixed global UV mapping, connected topology, source-background removal, and
   depth ordering against the maximum relief—not merely object bounds.
+
+### 2026-07-22 - Siege Breaker R4D Whole-Assembly Registration Drift
+
+- Asset or scope: `SM_DRW_SiegeBreaker_Hammer_A01` R4D handle, haft gap, and
+  front/side/back surface registration.
+- Detected by: Flamestrike visual review after the R4D `37/37` technical pass.
+- Last known Core-valid state: immutable four-view source pixels, `170 cm`
+  world-Z scale, bottom-center origin, explicit component inventory, and exact
+  center-plane mirror requirement.
+- First drift action: the A09 facade-extrusion method used the whole left-view
+  head-crop midpoint as every row's Y origin and R4 preserved that centered
+  core/shaft unchanged.
+- Assumption that caused drift: whole-object crop centers and independently
+  normalized front/back/side projections were treated as a common registered
+  component frame. Exact shaft rows disprove that assumption; the left-view
+  handle axis is about `44 px` away from the used head-crop midpoint.
+- Affected outputs: A09 handle geometry methodology; R3/R4 centered-core/shaft
+  geometry; R4D blend, renders, review board, validation's visual implication,
+  and complete-candidate status.
+- Artifact statuses: R4D complete candidate `quarantined`; R4 strike-face
+  numeric evidence `proof only`; R4D mesh forbidden for R5 construction; source
+  pixels and approved scale/mirror rules unchanged.
+- Recovery decision: do not repair R4D forward. Flamestrike approved R5 fresh
+  whole-assembly registration from front/back/left/right pixels, using stable
+  shaft rows as the transverse origins and separately tracing physical
+  components and empty space.
+- Fail-closed condition: if opposite sources fail to reverse/agree around the
+  registered shaft axes within the accepted pixel tolerance, stop with
+  `Blueprint block: source authority conflict` and request an exact
+  reconciliation rule before generating geometry.
+- Follow-up Core/Kaizen improvement: every multi-view build audit must test
+  component-local axes, corresponding landmark registration, empty-space
+  preservation, and view-to-view physical scale—not only object bounds and
+  mirror symmetry.
+
+### 2026-07-22 - Siege Breaker R5A01-R5A03 Haft Reconstruction Drift
+
+- Asset or scope: `SM_DRW_SiegeBreaker_Hammer_A01` R5 registered handle/haft
+  geometry and its front/back/side visual continuity.
+- Detected by: internal colored and gray three-quarter review, then resolved by
+  Flamestrike's explicit true-cylinder and static-UV method.
+- Last known Core-valid state: immutable four-view pixels, shaft-derived axes,
+  `170 cm` Z frame, one `X>=0` half, exact `X=0` mirror, and the approved
+  right-view depth/left-view pixel reconciliation.
+- First drift action: the fresh R5 builder retained pixel-cell front and back
+  facade surfaces with connecting side walls through the haft.
+- Assumption that caused drift: registering the slab surfaces to one axis was
+  treated as sufficient to make the handle a single round physical component.
+- Affected outputs: R5A01-R5A03 blends, manifests, orthographic renders,
+  colored/gray three-quarter renders, and review boards.
+- Artifact statuses: R5A01-R5A03 `quarantined / invalid as review candidates`;
+  their axis measurements and source hashes remain `proof only`.
+- Quarantined locations: local `A12_InternalRejected_R5A01/` and
+  `A12_InternalRejected_R5A02/` plus the first-cylinder
+  `A12_InternalRejected_R5A03/`; exact hashes are recorded in
+  `manifests/A12_INTERNAL_REJECTIONS.md`.
+- Recovery decision: replace only the haft construction with a true cylinder
+  on the registered axis; split front/back 180-degree material ownership; use
+  static `UVMap` islands spanning `U=0..1`; retain the one-half mirror rule;
+  stop the cylinder at the last common front/back haft-owned row; keep FBX and
+  Unreal work outside this gate.
+- Follow-up Core/Kaizen improvement: a cylindrical component must be audited
+  for circular cross-sections, one shared axis, explicit face-set ownership,
+  and exported static UV coordinates—not inferred from a visually centered
+  collection of planar projections.

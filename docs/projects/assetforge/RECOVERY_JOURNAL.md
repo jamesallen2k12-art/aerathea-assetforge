@@ -7677,3 +7677,143 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260722-160220/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260722-160220/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 16:05:40 EDT -0400 - Before Siege Breaker A12 axial-source Blender reconstruction
+
+- Snapshot: `Saved/ProjectRecovery/20260722-160540/`
+- Git: branch `main`, HEAD `822c4a8`, status lines `312`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-160540/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-160540/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-160540/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 16:21:07 EDT -0400 - Siege Breaker A12 internal R0 rejected before bounded correction rerun
+
+- Snapshot: `Saved/ProjectRecovery/20260722-162107/`
+- Git: branch `main`, HEAD `822c4a8`, status lines `325`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-162107/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-162107/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-162107/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 16:28:49 EDT -0400 - Siege Breaker A12 R1 preserved; before boundary-owned axial rebuild
+
+- Snapshot: `Saved/ProjectRecovery/20260722-162849/`
+- Git: branch `main`, HEAD `822c4a8`, status lines `326`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-162849/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-162849/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-162849/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 16:32:53 EDT -0400 - Siege Breaker A12 R2 quarantined; transition rule blocked for approval
+
+- Snapshot: `Saved/ProjectRecovery/20260722-163253/`
+- Git: branch `main`, HEAD `822c4a8`, status lines `328`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-163253/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-163253/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-163253/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 16:48:53 EDT -0400 - Siege Breaker A12 R3 component separation before Blender rebuild
+
+- Snapshot: `Saved/ProjectRecovery/20260722-164853/`
+- Git: branch `main`, HEAD `4cbdb36`, status lines `327`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-164853/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-164853/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-164853/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 16:54:14 EDT -0400 - Siege Breaker A12 R3 rebuilt and audit passed 25 of 25
+
+- Snapshot: `Saved/ProjectRecovery/20260722-165414/`
+- Git: branch `main`, HEAD `4cbdb36`, status lines `334`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-165414/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-165414/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-165414/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 18:19:40 EDT -0400 - Before Siege Breaker A12 R4 side-owner strike-face Blender rebuild
+
+- Snapshot: `Saved/ProjectRecovery/20260722-181940/`
+- Git: branch `main`, HEAD `6a02207`, status lines `327`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-181940/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-181940/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-181940/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 18:25:17 EDT -0400 - Siege Breaker A12 R4A quarantined before fixed-map pure-X R4 rebuild
+
+- Snapshot: `Saved/ProjectRecovery/20260722-182517/`
+- Git: branch `main`, HEAD `6a02207`, status lines `337`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-182517/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-182517/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-182517/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 18:31:46 EDT -0400 - Siege Breaker A12 R4B quarantined before continuous masked-face R4 rebuild
+
+- Snapshot: `Saved/ProjectRecovery/20260722-183146/`
+- Git: branch `main`, HEAD `6a02207`, status lines `338`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-183146/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-183146/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-183146/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 18:36:24 EDT -0400 - Siege Breaker A12 R4C quarantined before legacy-wall occlusion correction
+
+- Snapshot: `Saved/ProjectRecovery/20260722-183624/`
+- Git: branch `main`, HEAD `6a02207`, status lines `340`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-183624/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-183624/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-183624/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 18:40:59 EDT -0400 - Siege Breaker A12 R4 side-owner face candidate audited 37 of 37; pending Flamestrike visual review
+
+- Snapshot: `Saved/ProjectRecovery/20260722-184059/`
+- Git: branch `main`, HEAD `6a02207`, status lines `341`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-184059/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-184059/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-184059/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 19:06:44 EDT -0400 - Before Siege Breaker R5 whole-assembly four-view registration and R4D quarantine
+
+- Snapshot: `Saved/ProjectRecovery/20260722-190644/`
+- Git: branch `main`, HEAD `70d34fa`, status lines `321`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-190644/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-190644/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-190644/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 19:32:42 EDT -0400 - Before Siege Breaker R5 true cylindrical haft static UV rebuild
+
+- Snapshot: `Saved/ProjectRecovery/20260722-193242/`
+- Git: branch `main`, HEAD `70d34fa`, status lines `341`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-193242/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-193242/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-193242/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 19:43:15 EDT -0400 - Siege Breaker R5 cylindrical haft A04 technical pass 45 of 45 before visible review
+
+- Snapshot: `Saved/ProjectRecovery/20260722-194315/`
+- Git: branch `main`, HEAD `70d34fa`, status lines `355`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-194315/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-194315/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-194315/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
