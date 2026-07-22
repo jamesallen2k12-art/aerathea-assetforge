@@ -1,0 +1,189 @@
+{
+  "schema": "aerathea.siegebreaker.a10_derived_orthographics_validation.v1",
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "contract_id": "SB-ORTHO-A10-DERIVED-A01",
+  "artifact_status": "candidate derived orthographic review pending Flamestrike decision",
+  "authority": {
+    "approved_a09_blend": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A09_PixelHalfMirror_VisualMatch_A01/SM_DRW_SiegeBreaker_Hammer_A01_A09_PixelHalfMirror_VisualMatch_A01.blend",
+    "required_sha256": "06ffb121d00cddb7b9e30a60067a5036a851d285f15daca3bffe3a663fd6d78f",
+    "hash_before_render": "06ffb121d00cddb7b9e30a60067a5036a851d285f15daca3bffe3a663fd6d78f",
+    "hash_after_render": "06ffb121d00cddb7b9e30a60067a5036a851d285f15daca3bffe3a663fd6d78f",
+    "unchanged": true,
+    "model_object": "SM_DRW_SiegeBreaker_Hammer_A01_A09_CompleteMirroredModel"
+  },
+  "software": {
+    "blender": "3.0.1",
+    "image_generation": false,
+    "trellis": false,
+    "image_to_3d": false
+  },
+  "model": {
+    "bounds": {
+      "minimum_cm": [
+        -37.56525802612305,
+        -16.478809356689453,
+        0.0
+      ],
+      "maximum_cm": [
+        37.56525802612305,
+        16.478809356689453,
+        170.0
+      ],
+      "dimensions_cm": [
+        75.1305160522461,
+        32.957618713378906,
+        170.0
+      ],
+      "center_cm": [
+        0.0,
+        0.0,
+        85.0
+      ]
+    },
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation_euler": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "vertices": 435278,
+    "polygons": 435276
+  },
+  "camera_contract": {
+    "projection": "ORTHO",
+    "common_ortho_scale_cm": 190.0,
+    "resolution_px": [
+      1200,
+      1600
+    ],
+    "target_cm": [
+      0.0,
+      0.0,
+      85.0
+    ],
+    "view_directions": {
+      "front": "camera -Y looking +Y",
+      "back": "camera +Y looking -Y",
+      "left": "camera -X looking +X",
+      "right": "camera +X looking -X",
+      "top": "camera +Z looking -Z",
+      "bottom": "camera -Z looking +Z"
+    },
+    "cameras": {
+      "front": {
+        "location_cm": [
+          0.0,
+          -420.0,
+          85.0
+        ],
+        "rotation_euler_rad": [
+          1.5707963705062866,
+          -0.0,
+          0.0
+        ],
+        "type": "ORTHO",
+        "ortho_scale_cm": 190.0
+      },
+      "back": {
+        "location_cm": [
+          0.0,
+          420.0,
+          85.0
+        ],
+        "rotation_euler_rad": [
+          1.5707963705062866,
+          8.74227694680485e-08,
+          3.1415927410125732
+        ],
+        "type": "ORTHO",
+        "ortho_scale_cm": 190.0
+      },
+      "left": {
+        "location_cm": [
+          -420.0,
+          0.0,
+          85.0
+        ],
+        "rotation_euler_rad": [
+          1.570796251296997,
+          -0.0,
+          -1.570796251296997
+        ],
+        "type": "ORTHO",
+        "ortho_scale_cm": 190.0
+      },
+      "right": {
+        "location_cm": [
+          420.0,
+          0.0,
+          85.0
+        ],
+        "rotation_euler_rad": [
+          1.570796251296997,
+          -0.0,
+          1.570796251296997
+        ],
+        "type": "ORTHO",
+        "ortho_scale_cm": 190.0
+      },
+      "top": {
+        "location_cm": [
+          0.0,
+          0.0,
+          505.0
+        ],
+        "rotation_euler_rad": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "type": "ORTHO",
+        "ortho_scale_cm": 190.0
+      },
+      "bottom": {
+        "location_cm": [
+          0.0,
+          0.0,
+          -335.0
+        ],
+        "rotation_euler_rad": [
+          8.742277657347586e-08,
+          3.1415927410125732,
+          -8.742277657347586e-08
+        ],
+        "type": "ORTHO",
+        "ortho_scale_cm": 190.0
+      }
+    }
+  },
+  "outputs": {
+    "front": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A10_DERIVED_ORTHOGRAPHICS_A01_FRONT.png",
+    "back": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A10_DERIVED_ORTHOGRAPHICS_A01_BACK.png",
+    "left": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A10_DERIVED_ORTHOGRAPHICS_A01_LEFT.png",
+    "right": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A10_DERIVED_ORTHOGRAPHICS_A01_RIGHT.png",
+    "top": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A10_DERIVED_ORTHOGRAPHICS_A01_TOP.png",
+    "bottom": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A10_DERIVED_ORTHOGRAPHICS_A01_BOTTOM.png",
+    "review_board": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A10_DERIVED_ORTHOGRAPHICS_A01_REVIEW.png"
+  },
+  "output_hashes": {
+    "front": "9081a024b26eb1075cc46663617cc7862ab1a171d95e6be38ea362491e934d5b",
+    "back": "8803cd319f66346fe1a5a4bbd06d2520d4bd5c0abf0acfa5df94c5b2e7fe7878",
+    "left": "040a91417e4fa14725fee16a2cfdbfab135a38bfe1ad3b8795df5b369f76f67e",
+    "right": "d38003a668d98499c769d5ffebd6baabe355b3e67e46cb31d965e04e74a7f58e",
+    "top": "6914415b5cfe855b6c3b9bf0d3d8f685caba66bd8ca7f6a62b8ecc9716d54d75",
+    "bottom": "fe9e6f4ff51d5a9eca58f4b87d50f62c0a2d45f582bf302688e6d9643ef39ab0",
+    "review_board": "537dc63f1701adbca061efd8416061b56d455a5ea865c7e917902e33c0ef1704"
+  },
+  "source_file_saved": false,
+  "unreal_authority": false,
+  "fully_game_ready": false
+}

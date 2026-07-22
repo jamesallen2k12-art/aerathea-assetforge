@@ -1,13 +1,13 @@
 # SM_DRW_SiegeBreaker_Hammer_A01 Reset / Resume State
 
-- Active approved route: `SB-PHM-A09; completed`
+- Active approved route: `SB-ORTHO-A10-DERIVED-A01`
 - Plan: `SM_DRW_SiegeBreaker_Hammer_A01_PIXEL_HALF_MIRROR_A09_PLAN.md`
-- Active contract: `steps/A09_FULL_PIXEL_HALF_MIRROR_VISUAL_MATCH_CONTRACT.md; fulfilled`
-- Current state: `A09 complete mirrored visual-match DCC source approved by Flamestrike; technical audit pass 22/22`
-- Next approved activity: `none; await Flamestrike's next explicitly scoped direction`
+- Active contract: `steps/A10_DERIVED_ORTHOGRAPHIC_RENDER_CONTRACT.md`
+- Current state: `A10 six-view orthographic candidate complete; independent audit pass 25/25; pending Flamestrike visual decision`
+- Next approved activity: open the exact A10 review board and receive one `approved`, `revise`, `rejected`, or `blocked` decision
 - Source processing authorized now: `false`
 - Model inference authorized now: `false`
-- DCC production authorized now: `false; A09 contract complete`
+- DCC production authorized now: `false; visible A10 decision gate active`
 - Unreal authority: `false`
 - Fully game-ready: `false`
 
@@ -38,6 +38,9 @@
 - A09 complete mirrored visual-match DCC source: `approved by Flamestrike` for
   its exact hash-locked visual appearance, pixel proportions, and mirrored
   geometry. LODs, collision, exports, and Unreal remain unauthorized.
+- A10 derived orthographics: six true views at one common `190 cm` scale from
+  the unchanged approved A09 source; independent audit `25/25`; `candidate`
+  pending Flamestrike review of all revealed surfaces.
 
 ## Active Method
 
@@ -61,6 +64,6 @@ Blender-only direction.
 
 Read the recovery journal/latest checkpoint, this state, the A09 plan, the A09
 contract, the A09 output record, the A09 final review decision, and the A08/A07
-recovery record. A09 is complete and approved. Do not begin another production
-step without new explicit scope. Never use TRELLIS or any other prohibited
-generation software.
+recovery record, then read the A10 contract and output record. A10 is complete;
+stop at visible review and wait for Flamestrike's decision. Never use TRELLIS
+or any other prohibited generation software.

@@ -346,3 +346,22 @@
 - Validation and independent audit remain `proof only`.
 - Further DCC, exports, Unreal, and game-ready escalation: `false`; approval
   applies only to the completed A09 candidate.
+
+## A10 Derived Orthographic A01 Candidate
+
+- Date: 2026-07-22.
+- Flamestrike direction: derive orthographic images from the approved A09 3D
+  source before game-ready production.
+- Contract: `SB-ORTHO-A10-DERIVED-A01`.
+- Input: exact approved A09 `.blend`, SHA
+  `06ffb121d00cddb7b9e30a60067a5036a851d285f15daca3bffe3a663fd6d78f`.
+- Result: front, back, left, right, top, and bottom Blender orthographics at one
+  `190 cm` scale and `1200 x 1600 px` frame.
+- Source hash after render: unchanged.
+- Independent audit: `pass 25/25`; `proof only`.
+- Review-board SHA-256:
+  `537dc63f1701adbca061efd8416061b56d455a5ea865c7e917902e33c0ef1704`.
+- Artifact status: `candidate derived orthographic review pending Flamestrike decision`.
+- Next decision: Flamestrike `approved`, `revise`, `rejected`, or `blocked` for
+  the six exact derived views.
+- Further DCC, exports, Unreal, and game-ready escalation: `false`.

@@ -1,0 +1,368 @@
+{
+  "schema": "aerathea.siegebreaker.a10_derived_orthographics_independent_audit.v1",
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "contract_id": "SB-ORTHO-A10-DERIVED-A01",
+  "status": "pass",
+  "artifact_status": "proof only",
+  "gate_summary": {
+    "passed": 25,
+    "total": 25
+  },
+  "independent_bounds_cm": {
+    "minimum": [
+      -37.56525802612305,
+      -16.478809356689453,
+      0.0
+    ],
+    "maximum": [
+      37.56525802612305,
+      16.478809356689453,
+      170.0
+    ],
+    "dimensions": [
+      75.1305160522461,
+      32.957618713378906,
+      170.0
+    ]
+  },
+  "observed_output_hashes": {
+    "front": "9081a024b26eb1075cc46663617cc7862ab1a171d95e6be38ea362491e934d5b",
+    "back": "8803cd319f66346fe1a5a4bbd06d2520d4bd5c0abf0acfa5df94c5b2e7fe7878",
+    "left": "040a91417e4fa14725fee16a2cfdbfab135a38bfe1ad3b8795df5b369f76f67e",
+    "right": "d38003a668d98499c769d5ffebd6baabe355b3e67e46cb31d965e04e74a7f58e",
+    "top": "6914415b5cfe855b6c3b9bf0d3d8f685caba66bd8ca7f6a62b8ecc9716d54d75",
+    "bottom": "fe9e6f4ff51d5a9eca58f4b87d50f62c0a2d45f582bf302688e6d9643ef39ab0",
+    "review_board": "537dc63f1701adbca061efd8416061b56d455a5ea865c7e917902e33c0ef1704"
+  },
+  "gates": [
+    {
+      "name": "schema",
+      "pass": true,
+      "evidence": "aerathea.siegebreaker.a10_derived_orthographics_validation.v1"
+    },
+    {
+      "name": "contract_id",
+      "pass": true,
+      "evidence": "SB-ORTHO-A10-DERIVED-A01"
+    },
+    {
+      "name": "candidate_status",
+      "pass": true,
+      "evidence": "candidate derived orthographic review pending Flamestrike decision"
+    },
+    {
+      "name": "approved_source_hash_current",
+      "pass": true,
+      "evidence": "06ffb121d00cddb7b9e30a60067a5036a851d285f15daca3bffe3a663fd6d78f"
+    },
+    {
+      "name": "approved_source_hash_unchanged",
+      "pass": true,
+      "evidence": {
+        "approved_a09_blend": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A09_PixelHalfMirror_VisualMatch_A01/SM_DRW_SiegeBreaker_Hammer_A01_A09_PixelHalfMirror_VisualMatch_A01.blend",
+        "required_sha256": "06ffb121d00cddb7b9e30a60067a5036a851d285f15daca3bffe3a663fd6d78f",
+        "hash_before_render": "06ffb121d00cddb7b9e30a60067a5036a851d285f15daca3bffe3a663fd6d78f",
+        "hash_after_render": "06ffb121d00cddb7b9e30a60067a5036a851d285f15daca3bffe3a663fd6d78f",
+        "unchanged": true,
+        "model_object": "SM_DRW_SiegeBreaker_Hammer_A01_A09_CompleteMirroredModel"
+      }
+    },
+    {
+      "name": "approved_model_object",
+      "pass": true,
+      "evidence": "SM_DRW_SiegeBreaker_Hammer_A01_A09_CompleteMirroredModel"
+    },
+    {
+      "name": "independent_dimensions",
+      "pass": true,
+      "evidence": [
+        75.1305160522461,
+        32.957618713378906,
+        170.0
+      ]
+    },
+    {
+      "name": "manifest_bounds_match",
+      "pass": true,
+      "evidence": {
+        "minimum_cm": [
+          -37.56525802612305,
+          -16.478809356689453,
+          0.0
+        ],
+        "maximum_cm": [
+          37.56525802612305,
+          16.478809356689453,
+          170.0
+        ]
+      }
+    },
+    {
+      "name": "mesh_counts",
+      "pass": true,
+      "evidence": {
+        "vertices": 435278,
+        "polygons": 435276
+      }
+    },
+    {
+      "name": "identity_transform",
+      "pass": true,
+      "evidence": {
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation_euler": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "name": "six_exact_views",
+      "pass": true,
+      "evidence": [
+        "back",
+        "bottom",
+        "front",
+        "left",
+        "review_board",
+        "right",
+        "top"
+      ]
+    },
+    {
+      "name": "all_outputs_exist",
+      "pass": true,
+      "evidence": {
+        "front": 1546223,
+        "back": 1553682,
+        "left": 1290942,
+        "right": 1291312,
+        "top": 1180107,
+        "bottom": 1149228,
+        "review_board": 4029989
+      }
+    },
+    {
+      "name": "output_hashes",
+      "pass": true,
+      "evidence": {
+        "front": "9081a024b26eb1075cc46663617cc7862ab1a171d95e6be38ea362491e934d5b",
+        "back": "8803cd319f66346fe1a5a4bbd06d2520d4bd5c0abf0acfa5df94c5b2e7fe7878",
+        "left": "040a91417e4fa14725fee16a2cfdbfab135a38bfe1ad3b8795df5b369f76f67e",
+        "right": "d38003a668d98499c769d5ffebd6baabe355b3e67e46cb31d965e04e74a7f58e",
+        "top": "6914415b5cfe855b6c3b9bf0d3d8f685caba66bd8ca7f6a62b8ecc9716d54d75",
+        "bottom": "fe9e6f4ff51d5a9eca58f4b87d50f62c0a2d45f582bf302688e6d9643ef39ab0",
+        "review_board": "537dc63f1701adbca061efd8416061b56d455a5ea865c7e917902e33c0ef1704"
+      }
+    },
+    {
+      "name": "individual_hashes_unique",
+      "pass": true,
+      "evidence": {
+        "front": "9081a024b26eb1075cc46663617cc7862ab1a171d95e6be38ea362491e934d5b",
+        "back": "8803cd319f66346fe1a5a4bbd06d2520d4bd5c0abf0acfa5df94c5b2e7fe7878",
+        "left": "040a91417e4fa14725fee16a2cfdbfab135a38bfe1ad3b8795df5b369f76f67e",
+        "right": "d38003a668d98499c769d5ffebd6baabe355b3e67e46cb31d965e04e74a7f58e",
+        "top": "6914415b5cfe855b6c3b9bf0d3d8f685caba66bd8ca7f6a62b8ecc9716d54d75",
+        "bottom": "fe9e6f4ff51d5a9eca58f4b87d50f62c0a2d45f582bf302688e6d9643ef39ab0"
+      }
+    },
+    {
+      "name": "individual_resolution",
+      "pass": true,
+      "evidence": {
+        "front": [
+          1200,
+          1600
+        ],
+        "back": [
+          1200,
+          1600
+        ],
+        "left": [
+          1200,
+          1600
+        ],
+        "right": [
+          1200,
+          1600
+        ],
+        "top": [
+          1200,
+          1600
+        ],
+        "bottom": [
+          1200,
+          1600
+        ]
+      }
+    },
+    {
+      "name": "review_board_resolution",
+      "pass": true,
+      "evidence": [
+        3300,
+        3300
+      ]
+    },
+    {
+      "name": "nonblank_images",
+      "pass": true,
+      "evidence": {
+        "front": [
+          64.388901,
+          64.973709,
+          66.217153
+        ],
+        "back": [
+          66.62208,
+          67.001565,
+          67.878933
+        ],
+        "left": [
+          51.538987,
+          52.224502,
+          53.213816
+        ],
+        "right": [
+          51.538142,
+          52.223859,
+          53.212612
+        ],
+        "top": [
+          40.813681,
+          40.944346,
+          41.446577
+        ],
+        "bottom": [
+          51.904168,
+          52.311412,
+          53.240019
+        ],
+        "review_board": [
+          73.163433,
+          72.164044,
+          70.675762
+        ]
+      }
+    },
+    {
+      "name": "orthographic_projection",
+      "pass": true,
+      "evidence": "ORTHO"
+    },
+    {
+      "name": "one_common_metric_scale",
+      "pass": true,
+      "evidence": 190.0
+    },
+    {
+      "name": "camera_axis_offsets",
+      "pass": true,
+      "evidence": {
+        "front": [
+          0.0,
+          -420.0,
+          0.0
+        ],
+        "back": [
+          0.0,
+          420.0,
+          0.0
+        ],
+        "left": [
+          -420.0,
+          0.0,
+          0.0
+        ],
+        "right": [
+          420.0,
+          0.0,
+          0.0
+        ],
+        "top": [
+          0.0,
+          0.0,
+          420.0
+        ],
+        "bottom": [
+          0.0,
+          0.0,
+          -420.0
+        ]
+      }
+    },
+    {
+      "name": "camera_target_is_bounds_center",
+      "pass": true,
+      "evidence": {
+        "target_cm": [
+          0.0,
+          0.0,
+          85.0
+        ],
+        "bounds_center_cm": [
+          0.0,
+          0.0,
+          85.0
+        ]
+      }
+    },
+    {
+      "name": "common_frame_contains_all_projections",
+      "pass": true,
+      "evidence": {
+        "horizontal_span_cm": 142.5,
+        "vertical_span_cm": 190.0,
+        "projected_extents_cm": {
+          "front_back": [
+            75.1305160522461,
+            170.0
+          ],
+          "left_right": [
+            32.957618713378906,
+            170.0
+          ],
+          "top_bottom": [
+            75.1305160522461,
+            32.957618713378906
+          ]
+        }
+      }
+    },
+    {
+      "name": "source_not_saved",
+      "pass": true,
+      "evidence": false
+    },
+    {
+      "name": "no_image_generation_trellis_or_image_to_3d",
+      "pass": true,
+      "evidence": {
+        "blender": "3.0.1",
+        "image_generation": false,
+        "trellis": false,
+        "image_to_3d": false
+      }
+    },
+    {
+      "name": "no_unreal_or_game_ready_claim",
+      "pass": true,
+      "evidence": {
+        "unreal_authority": false,
+        "fully_game_ready": false
+      }
+    }
+  ],
+  "decision_boundary": "Technical audit cannot approve the revealed orthographic appearance; Flamestrike decision remains required."
+}

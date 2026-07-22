@@ -7597,3 +7597,23 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260722-150229/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260722-150229/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 15:07:26 EDT -0400 - before Siege Breaker A10 derived orthographic Blender renders
+
+- Snapshot: `Saved/ProjectRecovery/20260722-150726/`
+- Git: branch `main`, HEAD `b62b7b5`, status lines `307`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-150726/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-150726/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-150726/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 15:12:06 EDT -0400 - Siege Breaker A10 derived orthographics complete pending visual decision
+
+- Snapshot: `Saved/ProjectRecovery/20260722-151206/`
+- Git: branch `main`, HEAD `b62b7b5`, status lines `322`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-151206/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-151206/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-151206/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

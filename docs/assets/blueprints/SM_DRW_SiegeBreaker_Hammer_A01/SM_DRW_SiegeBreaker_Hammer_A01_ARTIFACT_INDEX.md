@@ -88,5 +88,11 @@
 | `manifests/A09_FULL_PIXEL_HALF_MIRROR_A01_VALIDATION.json` | `proof only` | Source hashes/counts, build statistics, pixel-proportion envelope, symmetry, comparison, and output hashes. |
 | `manifests/A09_FULL_PIXEL_HALF_MIRROR_A01_INDEPENDENT_AUDIT.json` | `proof only` | Independent Blender audit `22/22`; cannot approve visual fidelity. |
 | `steps/A09_FULL_PIXEL_HALF_MIRROR_A01_OUTPUT_RECORD.md` | `authoritative status record` | A09 outputs, hashes, software boundary, technical result, and final Flamestrike approval. |
+| `steps/A10_DERIVED_ORTHOGRAPHIC_RENDER_CONTRACT.md` | `authoritative for execution scope` | Permits only six unchanged common-scale orthographic renders from the approved A09 source, validation, packaging, and visible review. |
+| Six `review/A10_DERIVED_ORTHOGRAPHICS_A01_*.png` axis renders | `candidate` | Exact front, back, left, right, top, and bottom Blender renders at one `190 cm` scale; pending Flamestrike visual decision. |
+| `review/A10_DERIVED_ORTHOGRAPHICS_A01_REVIEW.png` | `candidate review artifact` | Hash-locked six-view board from the unchanged approved source; SHA `537dc63f...f1704`. |
+| `manifests/A10_DERIVED_ORTHOGRAPHICS_A01_VALIDATION.json` | `proof only` | Source identity, unchanged before/after hash, bounds, transforms, cameras, and output hashes. |
+| `manifests/A10_DERIVED_ORTHOGRAPHICS_A01_INDEPENDENT_AUDIT.json` | `proof only` | Independent audit `25/25`; cannot approve newly revealed surfaces. |
+| `steps/A10_DERIVED_ORTHOGRAPHICS_A01_OUTPUT_RECORD.md` | `authoritative status record` | A10 source lock, outputs, hashes, technical result, boundary, and pending decision. |
 
-Unreal authority is `false`. `Fully game-ready` is `false`. No A01/A02/A03/A04 visual candidate is eligible for approval. A05 remains a historical undecided `DCC game-ready candidate`. A07 stopped before producing an output and is superseded. A08 is historical. A09 is approved and complete; further production requires a new explicit scope.
+Unreal authority is `false`. `Fully game-ready` is `false`. No A01/A02/A03/A04 visual candidate is eligible for approval. A05 remains a historical undecided `DCC game-ready candidate`. A07 stopped before producing an output and is superseded. A08 is historical. A09 is approved. A10 has reached its visible decision gate; further production is stopped pending Flamestrike's classification.
