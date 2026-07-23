@@ -1,0 +1,15 @@
+{
+  "schema": "AERATHEA_R8_STEP09A_STATE_V1",
+  "run_id": "SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01",
+  "parent_evidence_run": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
+  "recovery_run": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "current_stage": "candidate_complete_independent_pass_waiting_flamestrike_decision",
+  "approval_recorded": true,
+  "technical_result": "PASS 79/79",
+  "candidate_artifact_status": "candidate",
+  "ownership_decision_approved": false,
+  "step_11_unlocked": false,
+  "production_authority": false,
+  "blender_authority": false,
+  "unreal_authority": false
+}

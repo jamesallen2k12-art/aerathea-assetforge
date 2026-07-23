@@ -1,21 +1,43 @@
 # SM_DRW_SiegeBreaker_Hammer_A01 Reset / Resume State
 
 - Active approved route:
-  `Core Recovery from the valid Step 01-09 dataset; Step 10 passed; Step 11 source-authority gate blocked`
+  `Core Recovery from valid R8 Steps 01-09; Step 10 passed; Step 09A ownership candidate complete; Step 11 still locked`
 - Plan: `SM_DRW_SiegeBreaker_Hammer_A01_STEPS_01_16_PROOF_OF_CONCEPT_PIPELINE_PLAN.md`
 - Active contract:
-  `SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02; Step 10 complete; Step 11 blocked before blueprint`
+  `SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01; measurement-only pass complete`
 - Current state:
-  `Step 10 PASS 50/50; Step 11 source-authority block independently confirmed 26/26; no production blueprint exists`
+  `Step 09A independent PASS 79/79; ownership package is candidate pending Flamestrike decision; no production blueprint exists`
 - Next approved activity:
-  `none; await Flamestrike approval of the bounded Step 09A component-pixel ownership amendment`
+  `none; await Flamestrike decision on the exact Step 09A ownership candidate`
 - Source processing authorized now:
-  `false; the proposed Step 09A measurement/source-ownership pass is not yet approved`
+  `false; the approved Step 09A pass is complete and stopped at its decision gate`
 - Model inference authorized now: `false`
 - DCC production authorized now:
   `false; Step 11 did not unlock Step 12`
 - Unreal authority: `false`
 - Fully game-ready: `false`
+
+## 2026-07-23 Step 09A Ownership Candidate
+
+- Flamestrike approved the bounded measurement/source-ownership pass.
+- Fresh run:
+  `proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/`.
+- All six immutable R8 views were hash-verified. Front, right, top, and bottom
+  produced exact candidate ownership; back and left remained locked
+  non-owning references.
+- Outputs contain exact half-open component scanlines, protected
+  exterior-connected spaces, thirteen ordered boundary-edge sets, four
+  order-only correspondence groups, and source-only one-pixel marks.
+- Independent result: `PASS 79/79`.
+- Artifact status: ownership package `candidate`; validation `proof only`.
+- Final review board SHA-256:
+  `62d585a56d59b57c0a3d09413fe9e82df28db7005cab25b67489f82d44ff35e5`.
+- No filled candidate, hidden surface, production blueprint, Blender source,
+  geometry, render, export, or Unreal artifact was created.
+- Step 11 remains locked until Flamestrike separately approves this exact
+  ownership candidate and the source-authority preflight is rerun.
+- Handoff:
+  `proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/handoffs/STEP_09A_TO_STEP_11_HANDOFF.md`.
 
 ## 2026-07-23 Step 10 Pass / Step 11 Source-Authority Block
 

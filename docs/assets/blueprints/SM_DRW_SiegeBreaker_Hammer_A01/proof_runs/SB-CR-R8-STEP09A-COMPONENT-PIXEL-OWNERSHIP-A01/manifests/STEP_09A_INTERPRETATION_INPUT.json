@@ -1,0 +1,144 @@
+{
+  "schema": "AERATHEA_R8_STEP09A_INTERPRETATION_INPUT_V1",
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "run_id": "SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01",
+  "artifact_status": "candidate interpretation pending independent audit and Flamestrike decision",
+  "authority": {
+    "approval_record": "steps/STEP_09A_APPROVAL_RECORD.md",
+    "execution_contract": "steps/STEP_09A_CONTRACT.md",
+    "parent_step09_index_sha256": "5a0a3eea8f877d55216f9efabe15b0ee1cf938e4c15a825a0e218f72ba76839a",
+    "recovery_step10_decisions_sha256": "0559b801ed3f544af82057d45f918599f07524588ff49c5ca92aefa744e467e9",
+    "recovery_step10_numeric_precedence_sha256": "ff2f7cb37284dc7d1416044913375f67924ec4141c22a5385b3a29541e7446b9"
+  },
+  "immutable_inputs": {
+    "front": {
+      "source_path": "Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_FRONT_A01.png",
+      "source_sha256": "9a34588afd4fef32001cd9cb2115699e7506ef1e90331c19f4d32483c60aab8c",
+      "capture_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/evidence/STEP_03_COMPLETE_HAMMER_SCANLINES/front_complete_hammer_scanlines.json.gz",
+      "capture_sha256": "57f11e52d410e5f0fba858276e8dad89fb34e10b93a829e6ccac5af69c803047",
+      "rectangle_half_open": [256, 208, 868, 1271]
+    },
+    "right": {
+      "source_path": "Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_RIGHT_A01.png",
+      "source_sha256": "58f3199babbcf9323751d04f0ffafa4316048243cf2f39992cdb6b04176306e8",
+      "capture_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/evidence/STEP_03_COMPLETE_HAMMER_SCANLINES/right_complete_hammer_scanlines.json.gz",
+      "capture_sha256": "cb15d0a2806ca00d716984c929a22a29331893c5117672b571622c0924c2a098",
+      "rectangle_half_open": [418, 166, 668, 1262]
+    },
+    "top": {
+      "source_path": "Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_TOP_A01.png",
+      "source_sha256": "be3e0b70de7a6e4fad025315f22feb21dc948ea9c3e7efb0adb63a983f190f9c",
+      "capture_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/evidence/STEP_03_COMPLETE_HAMMER_SCANLINES/top_complete_hammer_scanlines.json.gz",
+      "capture_sha256": "731272c89dae717b646f067e5337c14de0781ec11e01858efe50655aaa222d94",
+      "rectangle_half_open": [280, 305, 1253, 788]
+    },
+    "bottom": {
+      "source_path": "Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_BOTTOM_A01.png",
+      "source_sha256": "d2a32732fd480a0556e882e304bcfbff1dd82d0a913ad4c36117109406de988e",
+      "capture_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/evidence/STEP_03_COMPLETE_HAMMER_SCANLINES/bottom_complete_hammer_scanlines.json.gz",
+      "capture_sha256": "da989819826b07e09049e422487a1bb5590dce576796be204c019bec2916ba11",
+      "rectangle_half_open": [277, 308, 1252, 770]
+    }
+  },
+  "locked_nonowning_inputs": {
+    "back": {
+      "source_path": "Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_BACK_A01.png",
+      "source_sha256": "f09dd1ad3978f39e10ecee8ea7efa84336520f0cea4921fe3c410dfd04019694",
+      "capture_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/evidence/STEP_03_COMPLETE_HAMMER_SCANLINES/back_complete_hammer_scanlines.json.gz",
+      "capture_sha256": "453649488a8f9c320ff533461d90c2a4e536060f2e074cadeedcdef0f8620701",
+      "rectangle_half_open": [253, 204, 870, 1266],
+      "ownership_output_required": false
+    },
+    "left": {
+      "source_path": "Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_LEFT_A01.png",
+      "source_sha256": "7215495802065bb1907ec67f46e6f7c622b9beaf768eb710a5fc12880a6b1cc5",
+      "capture_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/evidence/STEP_03_COMPLETE_HAMMER_SCANLINES/left_complete_hammer_scanlines.json.gz",
+      "capture_sha256": "9464cce559f975b3855e3e9d894826441924607ffea2884f73c60235e6d26489",
+      "rectangle_half_open": [448, 165, 706, 1261],
+      "ownership_output_required": false
+    }
+  },
+  "approved_domain_rule": {
+    "selected_membership": "unchanged exact complete-hammer capture membership",
+    "enclosed_source_pixels": "unselected pixels not reachable from the locked rectangle boundary through 4-connected unselected pixels",
+    "protected_negative_space": "unselected pixels reachable from the locked rectangle boundary through 4-connected unselected pixels",
+    "new_color_threshold_or_classifier": false
+  },
+  "shared_contact_cut_rule": {
+    "observed_gap_edges": "use the exact last owner edge and first adjacent owner edge around the structural-axis run",
+    "contact_rows": "linearly interpolate the nearest observed gap mid-edges in exact rational arithmetic",
+    "rounding": "nearest integer source edge; exact half ties choose the lower source edge",
+    "classification": "candidate interpretation requiring Flamestrike decision"
+  },
+  "front_interpretation": {
+    "structural_axis_source_edge_x": 562,
+    "stone_rows_half_open": [221, 600],
+    "c01_rows_half_open": [295, 600],
+    "c12_reserved_rows_half_open": [208, 295],
+    "c06_rows_half_open": [600, 670],
+    "c01_c06_shared_source_edge_y": 600,
+    "c06_c07_shared_source_edge_y": 670,
+    "stone_boundary_method": "axis-centered exact gap observations with shared-contact interpolation",
+    "c12_scope": "reserved only to prevent C01 overlap; no new C12 shape decision"
+  },
+  "right_interpretation": {
+    "rotation_axis_source_edge_x": 557,
+    "c04_rows_half_open": [241, 651],
+    "candidate_intervals_half_open": {
+      "rune_side": [557, 668],
+      "metal_center_piece_side": [418, 557]
+    },
+    "metal_half_c04_left_edge_anchors": [
+      [241, 504],
+      [250, 488],
+      [260, 478],
+      [280, 462],
+      [300, 462],
+      [350, 462],
+      [400, 462],
+      [450, 462],
+      [500, 462],
+      [550, 462],
+      [600, 462],
+      [620, 472],
+      [640, 484],
+      [651, 502]
+    ],
+    "anchor_interpolation": "linear in exact rational arithmetic with nearest-lower-on-half source-edge rounding",
+    "metal_pixels_left_of_face_edge": "reserved C01 side visibility; not C04",
+    "face_top_and_bottom": "candidate source-visible component contacts requiring Flamestrike decision"
+  },
+  "axial_interpretation": {
+    "top_center_source_edge_x": {
+      "numerator": 1533,
+      "denominator": 2
+    },
+    "bottom_center_source_edge_x": {
+      "numerator": 1529,
+      "denominator": 2
+    },
+    "stone_boundary_method": "when the center-axis owner run exists, use its exact adjacent gap edges; interpolate only contact rows; when no center-axis owner exists, assign exact left/right runs by the center edge and create no central owner",
+    "central_pixels": "reserved central non-stone source ownership; this amendment does not decide C01 versus C12 in axial views"
+  },
+  "correspondence_interpretation": {
+    "scope": "name and order exact source-edge sets only",
+    "pairing_or_resampling_created": false,
+    "ordering": {
+      "front_and_right": "source y ascending, equivalent to world Z descending",
+      "top_and_bottom": "source y ascending in each registered axial source"
+    },
+    "groups": [
+      "C02 front/top/bottom inner owner edges",
+      "C03 front/top/bottom inner owner edges",
+      "C04 right candidate axis and exterior edges",
+      "C01/C06 and C06/C07 front shared contacts"
+    ]
+  },
+  "forbidden_outputs": {
+    "candidate_fill_review": true,
+    "hidden_surface": true,
+    "production_blueprint": true,
+    "blender_or_geometry": true,
+    "render_export_or_unreal": true
+  }
+}

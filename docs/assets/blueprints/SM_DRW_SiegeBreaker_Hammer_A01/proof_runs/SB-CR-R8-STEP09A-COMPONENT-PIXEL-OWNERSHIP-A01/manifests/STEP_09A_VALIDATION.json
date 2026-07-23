@@ -1,0 +1,706 @@
+{
+  "artifact_status": "proof only",
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "authority": {
+    "approval_record_sha256": "02c7ad4d0c3f4bad37276f0cf51dbd213b733009d972436ef146ac8ef7fc18cf",
+    "execution_contract_sha256": "be1fd161263dca733ce3ca84c0648871f98383b162652f4a6fdac0ba199a528b",
+    "interpretation_input_sha256": "8055611c52e4883127e705f6419b4c8dd09ae7d8c76ba38e4130fafbbd45cbcd",
+    "parent_step09_index_sha256": "5a0a3eea8f877d55216f9efabe15b0ee1cf938e4c15a825a0e218f72ba76839a",
+    "recovery_step10_decisions_sha256": "0559b801ed3f544af82057d45f918599f07524588ff49c5ca92aefa744e467e9",
+    "recovery_step10_numeric_precedence_sha256": "ff2f7cb37284dc7d1416044913375f67924ec4141c22a5385b3a29541e7446b9"
+  },
+  "candidate_fill_review_created": false,
+  "checks": [
+    {
+      "id": "identity_and_schema",
+      "result": "PASS"
+    },
+    {
+      "evidence": "8055611c52e4883127e705f6419b4c8dd09ae7d8c76ba38e4130fafbbd45cbcd",
+      "id": "interpretation_input_hash_chain",
+      "result": "PASS"
+    },
+    {
+      "evidence": "5a0a3eea8f877d55216f9efabe15b0ee1cf938e4c15a825a0e218f72ba76839a",
+      "id": "authority_parent_step09_index_sha256",
+      "result": "PASS"
+    },
+    {
+      "evidence": "0559b801ed3f544af82057d45f918599f07524588ff49c5ca92aefa744e467e9",
+      "id": "authority_recovery_step10_decisions_sha256",
+      "result": "PASS"
+    },
+    {
+      "evidence": "ff2f7cb37284dc7d1416044913375f67924ec4141c22a5385b3a29541e7446b9",
+      "id": "authority_recovery_step10_numeric_precedence_sha256",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "approval_sha256": "02c7ad4d0c3f4bad37276f0cf51dbd213b733009d972436ef146ac8ef7fc18cf",
+        "contract_sha256": "be1fd161263dca733ce3ca84c0648871f98383b162652f4a6fdac0ba199a528b"
+      },
+      "id": "approval_and_contract_present",
+      "result": "PASS"
+    },
+    {
+      "id": "owning_and_nonowning_view_sets",
+      "result": "PASS"
+    },
+    {
+      "evidence": "9a34588afd4fef32001cd9cb2115699e7506ef1e90331c19f4d32483c60aab8c",
+      "id": "front_source_hash",
+      "result": "PASS"
+    },
+    {
+      "evidence": "57f11e52d410e5f0fba858276e8dad89fb34e10b93a829e6ccac5af69c803047",
+      "id": "front_capture_hash",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "rectangle_half_open": [
+          256,
+          208,
+          868,
+          1271
+        ],
+        "schema": "AERATHEA_COMPLETE_HAMMER_RGBA_SCANLINES_V1"
+      },
+      "id": "front_capture_schema_and_rectangle",
+      "result": "PASS"
+    },
+    {
+      "id": "front_capture_runs_well_formed",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "source_size": [
+          1122,
+          1402
+        ]
+      },
+      "id": "front_source_contains_locked_rectangle",
+      "result": "PASS"
+    },
+    {
+      "evidence": "58f3199babbcf9323751d04f0ffafa4316048243cf2f39992cdb6b04176306e8",
+      "id": "right_source_hash",
+      "result": "PASS"
+    },
+    {
+      "evidence": "cb15d0a2806ca00d716984c929a22a29331893c5117672b571622c0924c2a098",
+      "id": "right_capture_hash",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "rectangle_half_open": [
+          418,
+          166,
+          668,
+          1262
+        ],
+        "schema": "AERATHEA_COMPLETE_HAMMER_RGBA_SCANLINES_V1"
+      },
+      "id": "right_capture_schema_and_rectangle",
+      "result": "PASS"
+    },
+    {
+      "id": "right_capture_runs_well_formed",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "source_size": [
+          1122,
+          1402
+        ]
+      },
+      "id": "right_source_contains_locked_rectangle",
+      "result": "PASS"
+    },
+    {
+      "evidence": "be3e0b70de7a6e4fad025315f22feb21dc948ea9c3e7efb0adb63a983f190f9c",
+      "id": "top_source_hash",
+      "result": "PASS"
+    },
+    {
+      "evidence": "731272c89dae717b646f067e5337c14de0781ec11e01858efe50655aaa222d94",
+      "id": "top_capture_hash",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "rectangle_half_open": [
+          280,
+          305,
+          1253,
+          788
+        ],
+        "schema": "AERATHEA_COMPLETE_HAMMER_RGBA_SCANLINES_V1"
+      },
+      "id": "top_capture_schema_and_rectangle",
+      "result": "PASS"
+    },
+    {
+      "id": "top_capture_runs_well_formed",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "source_size": [
+          1536,
+          1024
+        ]
+      },
+      "id": "top_source_contains_locked_rectangle",
+      "result": "PASS"
+    },
+    {
+      "evidence": "d2a32732fd480a0556e882e304bcfbff1dd82d0a913ad4c36117109406de988e",
+      "id": "bottom_source_hash",
+      "result": "PASS"
+    },
+    {
+      "evidence": "da989819826b07e09049e422487a1bb5590dce576796be204c019bec2916ba11",
+      "id": "bottom_capture_hash",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "rectangle_half_open": [
+          277,
+          308,
+          1252,
+          770
+        ],
+        "schema": "AERATHEA_COMPLETE_HAMMER_RGBA_SCANLINES_V1"
+      },
+      "id": "bottom_capture_schema_and_rectangle",
+      "result": "PASS"
+    },
+    {
+      "id": "bottom_capture_runs_well_formed",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "source_size": [
+          1536,
+          1024
+        ]
+      },
+      "id": "bottom_source_contains_locked_rectangle",
+      "result": "PASS"
+    },
+    {
+      "evidence": "f09dd1ad3978f39e10ecee8ea7efa84336520f0cea4921fe3c410dfd04019694",
+      "id": "back_source_hash",
+      "result": "PASS"
+    },
+    {
+      "evidence": "453649488a8f9c320ff533461d90c2a4e536060f2e074cadeedcdef0f8620701",
+      "id": "back_capture_hash",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "rectangle_half_open": [
+          253,
+          204,
+          870,
+          1266
+        ],
+        "schema": "AERATHEA_COMPLETE_HAMMER_RGBA_SCANLINES_V1"
+      },
+      "id": "back_capture_schema_and_rectangle",
+      "result": "PASS"
+    },
+    {
+      "id": "back_capture_runs_well_formed",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "source_size": [
+          1122,
+          1402
+        ]
+      },
+      "id": "back_source_contains_locked_rectangle",
+      "result": "PASS"
+    },
+    {
+      "evidence": "7215495802065bb1907ec67f46e6f7c622b9beaf768eb710a5fc12880a6b1cc5",
+      "id": "left_source_hash",
+      "result": "PASS"
+    },
+    {
+      "evidence": "9464cce559f975b3855e3e9d894826441924607ffea2884f73c60235e6d26489",
+      "id": "left_capture_hash",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "rectangle_half_open": [
+          448,
+          165,
+          706,
+          1261
+        ],
+        "schema": "AERATHEA_COMPLETE_HAMMER_RGBA_SCANLINES_V1"
+      },
+      "id": "left_capture_schema_and_rectangle",
+      "result": "PASS"
+    },
+    {
+      "id": "left_capture_runs_well_formed",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "source_size": [
+          1122,
+          1402
+        ]
+      },
+      "id": "left_source_contains_locked_rectangle",
+      "result": "PASS"
+    },
+    {
+      "evidence": [
+        "back",
+        "left"
+      ],
+      "id": "nonowning_hash_locks_recorded",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "canonical_sha256": "fbc73ea706b8b8df7ab9879aab3f6631906605bcbcba67d0f07148d368aee24d",
+        "file_sha256": "396adfbaaefc8a8ea35104e5e96dfde322510fb4ce88530fbb32f7f3073b3562"
+      },
+      "id": "deterministic_canonical_scanline_payload",
+      "result": "PASS"
+    },
+    {
+      "id": "front_scanline_header",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "enclosed": 1756,
+        "owner": 46183,
+        "selected": 44427
+      },
+      "id": "front_C01_CENTER_CORE_owner_rows",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "enclosed": 125,
+        "owner": 71788,
+        "selected": 71663
+      },
+      "id": "front_C02_STONE_LEFT_owner_rows",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "enclosed": 128,
+        "owner": 71689,
+        "selected": 71561
+      },
+      "id": "front_C03_STONE_RIGHT_owner_rows",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "enclosed": 20,
+        "owner": 6068,
+        "selected": 6048
+      },
+      "id": "front_C06_UPPER_HAFT_CAP_owner_rows",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "enclosed": 67,
+        "owner": 6463,
+        "selected": 6396
+      },
+      "id": "front_C12_RESERVED_EXISTING_OWNER_owner_rows",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "overlap_pixel_count": 0
+      },
+      "id": "front_component_owner_nonoverlap",
+      "result": "PASS"
+    },
+    {
+      "id": "right_scanline_header",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "enclosed": 4,
+        "owner": 9832,
+        "selected": 9828
+      },
+      "id": "right_C01_SIDE_RESERVED_IN_METAL_HALF_owner_rows",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "enclosed": 236,
+        "owner": 37508,
+        "selected": 37272
+      },
+      "id": "right_C04_METAL_CENTER_PIECE_SIDE_owner_rows",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "enclosed": 361,
+        "owner": 42029,
+        "selected": 41668
+      },
+      "id": "right_C04_RUNE_SIDE_owner_rows",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "overlap_pixel_count": 0
+      },
+      "id": "right_component_owner_nonoverlap",
+      "result": "PASS"
+    },
+    {
+      "id": "top_scanline_header",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "enclosed": 286,
+        "owner": 141087,
+        "selected": 140801
+      },
+      "id": "top_C02_STONE_LEFT_owner_rows",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "enclosed": 262,
+        "owner": 140054,
+        "selected": 139792
+      },
+      "id": "top_C03_STONE_RIGHT_owner_rows",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "enclosed": 176,
+        "owner": 103446,
+        "selected": 103270
+      },
+      "id": "top_CENTRAL_NON_STONE_RESERVED_owner_rows",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "overlap_pixel_count": 0
+      },
+      "id": "top_component_owner_nonoverlap",
+      "result": "PASS"
+    },
+    {
+      "id": "bottom_scanline_header",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "enclosed": 239,
+        "owner": 132685,
+        "selected": 132446
+      },
+      "id": "bottom_C02_STONE_LEFT_owner_rows",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "enclosed": 242,
+        "owner": 133227,
+        "selected": 132985
+      },
+      "id": "bottom_C03_STONE_RIGHT_owner_rows",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "enclosed": 451,
+        "owner": 109361,
+        "selected": 108910
+      },
+      "id": "bottom_CENTRAL_NON_STONE_RESERVED_owner_rows",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "overlap_pixel_count": 0
+      },
+      "id": "bottom_component_owner_nonoverlap",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "C01_CENTER_CORE": 0,
+        "C02_STONE_LEFT": 0,
+        "C03_STONE_RIGHT": 0,
+        "C06_UPPER_HAFT_CAP": 0,
+        "C12_RESERVED_EXISTING_OWNER": 0
+      },
+      "id": "front_independent_candidate_rule_replay",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "C01_SIDE_RESERVED_IN_METAL_HALF": 0,
+        "C04_METAL_CENTER_PIECE_SIDE": 0,
+        "C04_RUNE_SIDE": 0
+      },
+      "id": "right_independent_candidate_rule_replay",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "C02_STONE_LEFT": 0,
+        "C03_STONE_RIGHT": 0,
+        "CENTRAL_NON_STONE_RESERVED": 0
+      },
+      "id": "top_independent_candidate_rule_replay",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "C02_STONE_LEFT": 0,
+        "C03_STONE_RIGHT": 0,
+        "CENTRAL_NON_STONE_RESERVED": 0
+      },
+      "id": "bottom_independent_candidate_rule_replay",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "record_count": 308,
+        "unique_pixel_count": 25405
+      },
+      "id": "front_protected_negative_space_replay",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "record_count": 0,
+        "unique_pixel_count": 0
+      },
+      "id": "right_protected_negative_space_replay",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "record_count": 463,
+        "unique_pixel_count": 71432
+      },
+      "id": "top_protected_negative_space_replay",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "record_count": 476,
+        "unique_pixel_count": 59321
+      },
+      "id": "bottom_protected_negative_space_replay",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "boundary_count": 13,
+        "boundary_ids": [
+          "BOTTOM_C02_INNER_OWNER_EDGE",
+          "BOTTOM_C03_INNER_OWNER_EDGE",
+          "BOTTOM_STONE_SEPARATION_WITHOUT_CENTRAL_OWNER",
+          "FRONT_C01_C06_CONTACT",
+          "FRONT_C02_INNER_OWNER_EDGE",
+          "FRONT_C03_INNER_OWNER_EDGE",
+          "FRONT_C06_C07_CONTACT",
+          "FRONT_C12_RESERVED_C01_CONTACT",
+          "RIGHT_C04_CANDIDATE_HALF_BOUNDARIES",
+          "RIGHT_C04_TOP_BOTTOM_EDGES",
+          "TOP_C02_INNER_OWNER_EDGE",
+          "TOP_C03_INNER_OWNER_EDGE",
+          "TOP_STONE_SEPARATION_WITHOUT_CENTRAL_OWNER"
+        ]
+      },
+      "id": "boundary_edge_sets_independent_replay",
+      "result": "PASS"
+    },
+    {
+      "evidence": [
+        "CORR_C02_FRONT_TOP_BOTTOM_INNER_OWNER_EDGES",
+        "CORR_C03_FRONT_TOP_BOTTOM_INNER_OWNER_EDGES",
+        "CORR_C04_RIGHT_CANDIDATE_FACE_EDGES",
+        "CORR_C01_C06_C07_FRONT_CONTACTS"
+      ],
+      "id": "correspondence_groups_are_order_only",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "changed_source_pixel_count": 2714,
+        "sha256": "06a0f21b01a652fde338a6639580b10769fd86e1f9adaf2e578aba789eae48fa",
+        "size": [
+          612,
+          1063
+        ]
+      },
+      "id": "front_thin_mark_review_pixel_replay",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "changed_source_pixel_count": 2008,
+        "sha256": "65c6b5250bfed13fd38e4c608758921f4bd0ed03cb52caf4a28980f70a13a4e3",
+        "size": [
+          250,
+          1096
+        ]
+      },
+      "id": "right_thin_mark_review_pixel_replay",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "changed_source_pixel_count": 2780,
+        "sha256": "ef82bda2f5b15af77e243224d73f05a322cf8de065255a667ca2c4a63656c9d9",
+        "size": [
+          973,
+          483
+        ]
+      },
+      "id": "top_thin_mark_review_pixel_replay",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "changed_source_pixel_count": 2793,
+        "sha256": "0330f0277cc27c6ec6f083899df08bda58ebc931b9c25a4dc01467699a5a26fd",
+        "size": [
+          975,
+          462
+        ]
+      },
+      "id": "bottom_thin_mark_review_pixel_replay",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "sha256": "62d585a56d59b57c0a3d09413fe9e82df28db7005cab25b67489f82d44ff35e5",
+        "size": [
+          2040,
+          1350
+        ]
+      },
+      "id": "combined_review_board_pixel_replay",
+      "result": "PASS"
+    },
+    {
+      "id": "no_geometry_or_fill_flags",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "geometry_extensions": [],
+        "unexpected": []
+      },
+      "id": "run_artifact_allowlist_and_no_geometry",
+      "result": "PASS"
+    },
+    {
+      "evidence": {
+        "imports": [
+          "PIL",
+          "__future__",
+          "collections",
+          "dataclasses",
+          "fractions",
+          "gzip",
+          "hashlib",
+          "json",
+          "pathlib",
+          "typing"
+        ]
+      },
+      "id": "builder_has_no_dcc_or_process_import",
+      "result": "PASS"
+    }
+  ],
+  "decision": "candidate pending Flamestrike source-ownership decision",
+  "geometry_or_blender_created": false,
+  "reconstructed_view_summary": {
+    "bottom": {
+      "component_owner_pixels": {
+        "C02_STONE_LEFT": 132685,
+        "C03_STONE_RIGHT": 133227,
+        "CENTRAL_NON_STONE_RESERVED": 109361
+      },
+      "enclosed_source_pixels": 932,
+      "selected_capture_pixels": 374341
+    },
+    "front": {
+      "component_owner_pixels": {
+        "C01_CENTER_CORE": 46183,
+        "C02_STONE_LEFT": 71788,
+        "C03_STONE_RIGHT": 71689,
+        "C06_UPPER_HAFT_CAP": 6068,
+        "C12_RESERVED_EXISTING_OWNER": 6463
+      },
+      "enclosed_source_pixels": 2221,
+      "selected_capture_pixels": 247844
+    },
+    "right": {
+      "component_owner_pixels": {
+        "C01_SIDE_RESERVED_IN_METAL_HALF": 9832,
+        "C04_METAL_CENTER_PIECE_SIDE": 37508,
+        "C04_RUNE_SIDE": 42029
+      },
+      "enclosed_source_pixels": 872,
+      "selected_capture_pixels": 142185
+    },
+    "top": {
+      "component_owner_pixels": {
+        "C02_STONE_LEFT": 141087,
+        "C03_STONE_RIGHT": 140054,
+        "CENTRAL_NON_STONE_RESERVED": 103446
+      },
+      "enclosed_source_pixels": 724,
+      "selected_capture_pixels": 383863
+    }
+  },
+  "result": "PASS",
+  "review_changed_source_pixel_counts": {
+    "bottom": 2793,
+    "front": 2714,
+    "right": 2008,
+    "top": 2780
+  },
+  "run_id": "SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01",
+  "schema": "AERATHEA_R8_STEP09A_INDEPENDENT_VALIDATION_V1",
+  "summary": {
+    "failed_check_ids": [],
+    "passed": 79,
+    "total": 79
+  }
+}
