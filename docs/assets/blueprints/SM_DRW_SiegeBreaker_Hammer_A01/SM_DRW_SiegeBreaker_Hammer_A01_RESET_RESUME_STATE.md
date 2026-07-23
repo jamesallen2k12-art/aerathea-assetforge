@@ -3,8 +3,8 @@
 - Active approved route: `A12 R5 four-view whole-assembly reconstruction`
 - Plan: `SM_DRW_SiegeBreaker_Hammer_A01_PIXEL_HALF_MIRROR_A09_PLAN.md`
 - Active contract: `steps/A12_R5_FOUR_VIEW_WHOLE_ASSEMBLY_RECONSTRUCTION_CONTRACT.md`
-- Current state: `R4D and R5A01-R5A03 quarantined; R5 cylindrical-haft A04 technical pass, visible decision pending`
-- Next approved activity: `show the exact A04 board and stop for Flamestrike approval, revision, rejection, or blocked decision`
+- Current state: `R5A04 invalid as a complete DCC/visual candidate; Core Recovery active; no production authority`
+- Next approved activity: `present steps/A12_R6_SINGLE_CLOSED_HALF_RECOVERY_CONTRACT.md and wait for Flamestrike approval before Blender execution`
 - Source processing authorized now: `true only for exact -X/+X outward-face pixels under R4`
 - Model inference authorized now: `false`
 - DCC production authorized now: `true only for the exact R5 one-half mirror contract`
@@ -108,7 +108,28 @@
 - A04 result: true profiled circular haft, separate front/back 180-degree
   materials, static exact `U/V=0..1` half-islands, two mesh components, full
   `0..170 cm` Z frame, and independent audit `pass 45/45`. Review-board SHA
-  `2b00b55d...c79f`; visual decision pending.
+  `2b00b55d...c79f`. Flamestrike rejected/revised the visual result because the
+  two independently normalized material strips are vertically misaligned at
+  the side-visible boundaries. The geometry/mirror proof remains `proof only`;
+  the complete A04 visual candidate is quarantined.
+- The exact cause is UV/material landmark registration, not cylinder rotation:
+  the front strip is `140 x 519 px`, the back strip is `148 x 538 px`, and a
+  common `V=0..1` does not align their internal component transitions.
+- Current block: `Blueprint block: seam reconciliation rule missing`. No UV or
+  material correction is authorized until Flamestrike approves an exact shared
+  landmark mapping or alternate boundary rule.
+- Superseding A04 finding: the half itself is a composite of front/back facades,
+  connecting walls, and independent side-owner surfaces. The exact mirror was
+  applied to an invalid multi-surface projection assembly rather than one
+  coherent closed physical `50%` half. This causes layered faces and exposed
+  white source/seam lines in the colored three-quarter view.
+- A04 complete blend and visual outputs: `invalid`. The `45/45` audit is
+  reclassified `proof only` for its narrow mechanical checks and cannot validate
+  topology or visual fidelity. The enlarged face render was cancelled before
+  execution.
+- Last Core-valid evidence: immutable source pixels/hashes, measured shaft axes,
+  `170 cm` Z frame, bottom-center origin, the requirement to construct one
+  physical half then duplicate/mirror it, and Flamestrike's visual findings.
 
 ## Active Method
 
@@ -134,6 +155,8 @@ Read the recovery journal/latest checkpoint, this state, A09 final approval,
 A11 authority, `steps/A12_R3_COMPONENT_SEPARATION_OUTPUT_RECORD.md`, and
 `steps/A12_R4_SIDE_OWNER_FACE_OUTPUT_RECORD.md`, and
   `steps/A12_R5_FOUR_VIEW_WHOLE_ASSEMBLY_RECONSTRUCTION_CONTRACT.md`, and
-  `steps/A12_R5_CYLINDRICAL_HAFT_A04_OUTPUT_RECORD.md`. Show only the exact A04
-  review board and wait for Flamestrike's visual decision. Do not export, enter
-  Unreal, or use TRELLIS or any other prohibited generation software.
+  `steps/A12_R5_CYLINDRICAL_HAFT_A04_OUTPUT_RECORD.md`. A04 is invalid. Do not
+  render it forward or reuse any of its facade, wall, side-owner, cylinder, UV,
+  or composite material construction. Present a fresh single-closed-half
+  contract and wait for approval. Do not export, enter Unreal, or use TRELLIS
+  or any other prohibited generation software.

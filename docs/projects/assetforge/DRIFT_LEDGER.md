@@ -864,3 +864,60 @@ Core authority: `AGENTS.md` Core Principles govern this ledger. Drifted artifact
   for circular cross-sections, one shared axis, explicit face-set ownership,
   and exported static UV coordinates—not inferred from a visually centered
   collection of planar projections.
+
+### 2026-07-22 - Siege Breaker R5A04 Haft Texture-Seam Registration Drift
+
+- Asset or scope: `SM_DRW_SiegeBreaker_Hammer_A01` R5A04 front/back 180-degree
+  haft materials as seen from the left and right cameras.
+- Detected by: Flamestrike visual review of both side renders.
+- Last known Core-valid state: A04 circular geometry, registered axis, exact
+  X mirror, source hashes, separate material ownership, and static UV extents;
+  independent audit `45/45` remains `proof only`.
+- First drift action: the front and back source rows were independently
+  normalized into `140 x 519 px` and `148 x 538 px` strips, then both assigned
+  a common normalized `V=0..1` without component-landmark registration.
+- Assumption that caused drift: matching UV bounds were treated as proof that
+  internal collars, runes, and grip transitions reached the shared side
+  boundaries at identical Z positions.
+- Affected outputs: A04 haft materials/UV visual result, left/right renders,
+  colored three-quarter render, board, blend candidate classification, and
+  pending visual-decision status.
+- Artifact statuses: complete A04 visual candidate `quarantined`; circular
+  geometry/mirror/source/static-UV mechanics `proof only`; original sources
+  unchanged.
+- Recovery decision: preserve A04 unchanged; render the requested standalone
+  colored complete three-quarter face review only; do not correct the seam
+  until an exact shared component-landmark or alternate boundary rule is
+  approved.
+- Follow-up Core/Kaizen improvement: UV extent equality is not landmark
+  equality. Every multi-source cylinder seam audit must compare corresponding
+  source component Z landmarks at both material boundaries.
+
+### 2026-07-22 - Siege Breaker R5A04 Projection-Composite Half Drift
+
+- Asset or scope: complete `SM_DRW_SiegeBreaker_Hammer_A01` R5A04 geometry,
+  materials, colored three-quarter review, and candidate classification.
+- Detected by: Flamestrike's observation that one hammer face is visibly placed
+  over another, the two halves are not a true rotated/connected 50% build, and
+  white lines remain from the composite approach.
+- Last known Core-valid state: immutable source pixels and hashes, measured
+  shaft axes, `170 cm` Z frame, bottom-center origin, and the approved rule to
+  construct one coherent physical half before duplicating/mirroring it.
+- First drift action: `build_registered_half` created independent front/back
+  pixel facades and side walls, then assigned different source projections to
+  those surfaces. A separately textured cylinder was added before mirroring.
+- Assumption that caused drift: exact X symmetry of a composite projection
+  assembly was treated as proof that the input was one coherent physical half.
+- Affected outputs: complete A04 blend, front/back/left/right renders, colored
+  and gray three-quarter renders, review board, validation implication,
+  independent-audit implication, and candidate status.
+- Artifact statuses: A04 blend and colored visual outputs `invalid`; `45/45`
+  audit `proof only` for narrow mechanics; immutable source evidence and the
+  physical-half/mirror requirement remain authoritative.
+- Recovery decision: cancel the enlarged A04 face render; do not repair forward
+  or reuse any R5 geometry, UV, material, or composite; define a fresh
+  single-closed-half reconstruction contract and wait for Flamestrike approval.
+- Follow-up Core/Kaizen improvement: a half/mirror gate must prove one closed
+  manifold half, one occurrence of every visible surface, zero overlapping
+  owner faces, zero source-background exposure, and an exact welded center seam
+  before symmetry checks can pass.

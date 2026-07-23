@@ -3,7 +3,7 @@
 - Asset: `SM_DRW_SiegeBreaker_Hammer_A01`
 - Contract ID: `SB-AXIAL-A12-R5-FOUR-VIEW-WHOLE-ASSEMBLY`
 - Date: `2026-07-22`
-- Status: `executed through cylindrical-haft A04; technical pass; Flamestrike visual decision pending`
+- Status: `superseded after A04 composite-construction rejection; Core Recovery active`
 - Artifact ceiling: `DCC source candidate pending Flamestrike visual decision`
 - Unreal authority: `false`
 - Fully game-ready authority: `false`

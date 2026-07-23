@@ -445,3 +445,57 @@ Bounded correction: temporarily replace both mesh objects' material arrays
 with the one geometry-proof material, render, then restore their exact material
 slots and polygon indices before saving. No mesh, UV, texture, source, camera,
 or ownership value changes.
+
+## R5A04 — Circular Geometry Pass, Front/Back Texture Seam Misregistration
+
+- Date: `2026-07-22`
+- Status: `quarantined after Flamestrike visual rejection/revision`
+- Contract: `SB-AXIAL-A12-R5-FOUR-VIEW-WHOLE-ASSEMBLY`
+
+Flamestrike identified a vertical mismatch in both side renders where the two
+haft halves should meet exactly. The independent audit proves that the cylinder
+rings are circular within `0.000000406 cm`, the X mirror has zero missing
+counterparts, and both UV islands span exact `0..1`. Therefore the defect is not
+a rotation, mirror, or geometric join failure.
+
+The first invalid assumption was treating common normalized `V=0..1` as common
+component registration. The front source strip is `140 x 519 px`; the back is
+`148 x 538 px`. Their collars, runes, grip transitions, and other landmarks do
+not occupy the same normalized V positions, so the two independently sampled
+designs visibly jump at the side-tangent material boundaries.
+
+A04 is `invalid as a visual candidate`. Its source hashes, circular geometry,
+exact mirror, and static-UV mechanics remain `proof only`. Its hash locks remain
+in `steps/A12_R5_CYLINDRICAL_HAFT_A04_OUTPUT_RECORD.md`.
+
+`Blueprint block: seam reconciliation rule missing` — do not repair forward by
+stretching, averaging, painting over the seam, or changing cylinder rotation.
+An exact shared component-landmark mapping or alternate material-boundary rule
+requires Flamestrike approval.
+
+### Superseding R5A04 Core Finding — The Mirrored Half Is A Projection Composite
+
+Flamestrike's further review supersedes the seam-only diagnosis. The colored
+three-quarter image shows one hammer face over another underlying face and
+visible white lines because the purported half contains multiple source-owned
+projection surfaces: front/back pixel facades, connecting side walls, and
+independently mapped side-owner surfaces. Mirroring that assembly exactly does
+not turn it into one coherent physical half.
+
+The complete R5A04 blend and visual outputs are `invalid`. The prior `45/45`
+audit remains `proof only` for source hashes, circular-ring math, UV extents,
+identity transforms, and X symmetry. It is explicitly insufficient because it
+did not test duplicate visible faces, overlapping owner surfaces, closed-half
+topology, or white source-background exposure.
+
+The first drift action was `build_registered_half`: it converted every front
+source pixel into front and back facade faces plus boundary walls, then mapped
+separate side sources onto those walls. `build_cylindrical_haft` added another
+independently textured component. The later mirror duplicated this composite;
+it did not duplicate a single physical half.
+
+Core recovery: do not reuse any R5 geometry, UVs, materials, or composites.
+Return to immutable source evidence and define a fresh build in which exactly
+one closed `X>=0` physical half exists, every visible surface occurs once, the
+center seam is welded, and the opposite half is created only by the approved
+duplicate/mirror operation. No new construction is authorized yet.

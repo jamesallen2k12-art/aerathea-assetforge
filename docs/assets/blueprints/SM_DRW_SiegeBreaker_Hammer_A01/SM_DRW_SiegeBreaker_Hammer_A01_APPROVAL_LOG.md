@@ -565,3 +565,57 @@
 - Artifact status: `DCC source candidate pending Flamestrike visual decision`.
 - Pending decision: Flamestrike `approved`, `revise`, `rejected`, or `blocked`.
 - FBX, Unreal, LOD, collision, and game-ready escalation remain unauthorized.
+
+## A12 R5 Cylindrical-Haft A04 Visual Rejection / Revision
+
+- Date: `2026-07-22`.
+- Flamestrike finding: the R5 left and right renders show a vertical
+  misalignment where the two haft texture halves meet; the halves must meet
+  exactly.
+- Diagnosis: this is not a cylinder rotation, mirror, or circular-geometry
+  error. The front and back 180-degree material strips were independently
+  normalized from `140 x 519 px` and `148 x 538 px` sources. Their component
+  landmarks therefore arrive at the shared side-tangent boundaries at
+  different Z positions.
+- A04 status: `quarantined as a visual candidate`; its `45/45` geometry,
+  mirror, source-lock, and static-UV audit remains `proof only`.
+- Current request authority: preserve A04 unchanged and create one standalone
+  high-resolution colored complete three-quarter render emphasizing the
+  outward hammer face.
+- Correction authority: `false`; an exact shared landmark/seam reconciliation
+  rule must be approved before the haft UV/material mapping is revised.
+
+## A12 R5 A04 Superseding Composite-Construction Rejection
+
+- Date: `2026-07-22`.
+- Flamestrike finding: the colored complete three-quarter view shows one hammer
+  face placed over another underlying face, plus visible white lines. The result
+  is a composite of different source projections, not one coherent physical
+  `50%` hammer half duplicated and joined.
+- Confirmed root cause: the R5 builder created front/back pixel-cell facades,
+  connecting side walls, and independent side-owner materials before applying
+  the X mirror. The mirror itself is exact, but the object being mirrored is a
+  multi-source projection composite rather than one closed physical half.
+- Audit limitation: `45/45` proved circular haft rings, UV extents, source
+  hashes, transforms, and X symmetry; it did not test overlapping owner
+  surfaces, duplicate visible faces, coherent closed-half topology, or exposed
+  source-background pixels.
+- Superseding status: complete R5A04 blend and all colored visual outputs are
+  `invalid`; its narrow measurement and mechanical checks are `proof only`.
+- The requested enlarged A04 face render was cancelled before execution because
+  it would only enlarge invalid evidence.
+- Further Blender construction authority: `false` pending approval of a fresh
+  single-closed-half reconstruction contract.
+
+## A12 R6 Single-Closed-Half Recovery Draft
+
+- Date: `2026-07-22`.
+- Status: `draft; Flamestrike approval required before execution`.
+- Proposed rule: fresh Blender scene; one coherent closed physical `X>=0`
+  half; each visible exterior surface occurs once; no R5 geometry, UV,
+  material, composite, facade, wall, or overlay reuse; exact X mirror and welded
+  center seam only after the source half passes topology gates.
+- Proposed visual gate: standalone high-resolution colored complete
+  three-quarter face render plus independent gray proof and four source-view
+  comparisons.
+- Current production authority: `false`.

@@ -63,6 +63,30 @@ zero missing X-mirrored vertices.
 
 ## Current Gate
 
-Technical result: `pass`. This does not grant artistic approval. Flamestrike
-must approve, reject, or request revision of the exact visible A04 review board
-before any FBX, Unreal, LOD, collision, game-ready, or other production step.
+Technical result: `pass`. Flamestrike subsequently rejected/revised the visual
+candidate because the independently normalized front/back haft strips do not
+align at the side-visible material boundaries. A04 is now `quarantined as a
+visual candidate`; its technical audit remains `proof only`. No FBX, Unreal,
+LOD, collision, game-ready, or seam-correction step is authorized.
+
+`Blueprint block: seam reconciliation rule missing` — a later correction must
+define one exact shared component-landmark map or another explicitly approved
+method for making the two 180-degree texture boundaries meet.
+
+## Superseding Core Recovery Finding
+
+Flamestrike's subsequent three-quarter review identified a more fundamental
+failure: one visible hammer face is layered over another and white lines remain
+because A04 is a multi-source projection composite. Although its final X mirror
+is exact, the mirrored input is not one coherent closed physical `50%` half.
+It contains front/back facade cells, connecting side walls, and independently
+mapped side-owner surfaces.
+
+This supersedes the seam-only diagnosis. The complete A04 blend and colored
+visual result are `invalid`; its source hashes, shaft-axis measurements,
+circular-ring test, and mirror mechanics remain `proof only`. The `45/45`
+audit did not test the controlling visual/topological condition and therefore
+cannot validate A04 as a DCC source candidate.
+
+The requested enlarged A04 colored face render was cancelled before execution.
+No repair-forward, rerender, export, or Unreal step is authorized.

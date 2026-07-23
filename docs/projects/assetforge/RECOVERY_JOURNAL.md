@@ -7817,3 +7817,13 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260722-194315/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260722-194315/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 19:59:39 EDT -0400 - Siege Breaker R5A04 composite-half invalidation and R6 recovery draft
+
+- Snapshot: `Saved/ProjectRecovery/20260722-195939/`
+- Git: branch `main`, HEAD `dedd2a7`, status lines `343`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-195939/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-195939/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-195939/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
