@@ -1032,3 +1032,305 @@ Core authority: `AGENTS.md` Core Principles govern this ledger. Drifted artifact
 - Follow-up Core/Kaizen improvement: axial-source gates must separately test
   outer extent, internal component axes, corresponding decorations, and whether
   each visible feature is geometrically possible from the declared projection.
+
+### 2026-07-23 - Siege Breaker R9 Interpretive-Method And Unauthorized-Retry Drift
+
+- Asset or scope: `SM_DRW_SiegeBreaker_Hammer_A01` A12 R9 contract, A01-A05
+  outputs, tools, audits, review packages, and candidate/status assertions.
+- Detected by: Flamestrike process review and clarification that the required
+  deliverable is a technically correct source-measured mathematical
+  reconstruction, while R8 exists only for centerline, rotation, and
+  duplication accuracy.
+- Last known Core-valid state: the original six immutable source images and
+  hashes; A11 outer footprint and dimensions; approved R6 component corrections;
+  the approved R7 staged component-measurement route; replayable R7 measurements
+  as narrow proof; and R8 limited to corrected transformation registration.
+- First method drift action: the R9 contract replaced exact source-derived
+  component measurement and equations with hand-selected interpretation values
+  inside a locked outer envelope, then treated R8 as appearance guidance for a
+  new physical master.
+- First execution-scope drift action: after the single authorized R9 A01 attempt
+  failed its review lighting, Codex proceeded to A02 without obtaining a new
+  Flamestrike approval, then continued through A03, A04, and A05.
+- Assumptions that caused drift: outer bounds and camera-span arithmetic were
+  treated as proof of reconstruction; bounded artistic interpretation was
+  treated as a substitute for source equations; R8 was assigned a broader role
+  than its centerline purpose; and technical retries were assumed to inherit
+  authority after a fail-closed attempt.
+- Affected outputs: the R9 contract; A01-A05 local Blender sources, ledgers,
+  renders, boards, manifests, and packages; the R9 build/audit/package tools;
+  and reset, approval, artifact-index, and output records that called A05 a
+  candidate.
+- Artifact statuses: R9 contract `quarantined approved historical contract;
+  invalid method`; R9 A01-A05 `quarantined`; A04 package `invalid`; A05 invalid
+  as source-measured reconstruction; R9 numeric/camera/closed-volume audits
+  `proof only`; R9 tools `quarantined`; original sources and approved
+  source-measurement rules unchanged.
+- Recovery decision: preserve the entire R9 chain without reuse; restore the
+  original sources as detailed geometry authority; restrict R8 to centerline,
+  rotation, and duplication relationships; replay and complete a
+  measurement-only component ledger; obtain Flamestrike measurement approval;
+  then draft a separate mathematical construction contract.
+- Current block: `Blueprint block: source-measured component ledger and
+  centerline reconciliation require an approved measurement-only contract`.
+- Local recovery record:
+  `docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/manifests/A12_R9_CORE_RECOVERY_AND_SOURCE_RECONSTRUCTION_RESTORE.md`.
+- Protected checkpoint: `Saved/ProjectRecovery/20260723-071220`.
+- Follow-up Core/Kaizen improvement: technical retries after any fail-closed
+  attempt require a new explicit approval; projection audits must compare
+  source-derived component landmarks and contours, never only outer spans.
+
+### 2026-07-23 - Siege Breaker A12 R10 Documented-Process Replacement Drift
+
+- Asset or scope: `SM_DRW_SiegeBreaker_Hammer_A01` A12 R10 post-measurement
+  construction contract, voxel-hull tools, Blender source, proofs, validation,
+  and independent audit.
+- Detected by: Flamestrike process correction after the R10 visual-hull pass.
+- Last known Core-valid state: the authoritative A09 visual-match source and
+  pixel-half method; the approved R6 proper-axis depth reflection and `pi/2`
+  cylindrical-UV mechanics as narrow proof; the R7 staged component-geometry
+  recovery route; the six original source images; and the approved R10 A01
+  measurement/centerline evidence with R8 restricted to centerline, axis,
+  rotation, and duplication relationships.
+- First drift action: Codex authored
+  `siegebreaker_a12_r10_visual_hull.py` and replaced the documented R7
+  component-by-component half-construction sequence with a new
+  `384 x 226 x 304` six-view voxel-intersection volume.
+- Compounding action: Codex affinely fitted the resulting voxel volumes to the
+  approved component domains and outer dimensions, treating a technically
+  passing envelope as sufficient despite the method and appearance mismatch.
+- Assumption that caused drift: the R10 phrase `maximal orthographic visual
+  hull` was treated as permission to invent a new representation instead of
+  continuing the already documented reconstruction chain and changing only
+  the previously unresolved center/axis registration.
+- Proven visible effects: voxel-stepped head surfaces, stretched projection
+  bands in the colored three-quarter proof, and an untextured geometry proof
+  that no longer matched the documented pre-R8 component reconstruction.
+- Affected outputs: the R10 voxel-hull contract; builder, helper, and audit
+  tools; Blender source and derived textures; validation and independent audit;
+  and all R10 voxel-hull review images.
+- Artifact statuses: the entire R10 voxel-hull family is `invalid /
+  quarantined`; its source-hash, exact-dimension, `pi/2` haft, pommel-envelope,
+  and file-hash checks remain `proof only`; no visual, geometry, DCC-candidate,
+  export, Unreal, or game-ready authority survives.
+- Quarantine location:
+  `Saved/AssetForgeResearch/SiegeBreaker/A12_R10_VoxelHull_Drift_20260723/`.
+- Recovery decision: do not repair the voxel attempt. Return to the R7 staged
+  component process, retain the R6 proven transform/UV mechanics only in their
+  approved narrow scope, use R10/R8 only to replace the unresolved centerline,
+  axis, rotation, and duplication registrations, and require the documented
+  Step 02 component-equation contract before Blender construction.
+- Local recovery record:
+  `docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/manifests/A12_R10_VOXEL_HULL_METHOD_DRIFT_AND_RECOVERY.md`.
+- Protected checkpoint: `Saved/ProjectRecovery/20260723-100526`.
+- Follow-up Core/Kaizen improvement: before implementing a post-measurement
+  pass, the builder must cite the exact prior construction function and the
+  single approved variable being replaced; a new representation requires a
+  separately approved method amendment.
+
+### 2026-07-23 - Siege Breaker A12 R10 Step 05 A02 Shared-Contact Scale Drift
+
+- Asset or scope: `SM_DRW_SiegeBreaker_Hammer_A01` A12 R10 Step 05 A02
+  rotational C09/C10/C11/C12 proof.
+- Detected by: Flamestrike visual review of the A02 pommel source-color and
+  independent-gray views.
+- Last known Core-valid state: the Step 05A exact source-pixel evidence and
+  approved U1/U3/L4 ownership rows; the approved C10/C11 18 cm longitudinal
+  and 11 cm maximum-diameter registration; the approved C12 stations; and the
+  A01-to-A02 exact-foreground-pixel UV correction.
+- First drift action: the Step 05 contract and builder left C09 in the raw
+  front-image registration while placing adjacent C10/C11 in the normalized
+  lower-assembly registration, even though C09 and C10 share the same exact
+  row-1131 source edge.
+- Assumption that caused drift: component-local equation checks were treated
+  as sufficient without a mandatory equality gate at a shared component
+  contact.
+- Proven evidence: at row `1131`, both components own raw positive edge
+  `x=616` and raw radius `9010/1111 = 8.109810981098 cm`. A02 registered C09
+  at that raw radius but registered C10 at `583/136 = 4.286764705882 cm`,
+  producing a diameter discontinuity of `16.219621962196 cm` versus
+  `8.573529411765 cm`, a ratio of approximately `1.891825546`.
+- Affected outputs: A02 Blender source, validation, independent audit, all A02
+  review renders and board, and the A02 versions of the Step 05 build/audit
+  tools.
+- Artifact statuses: A02 `invalid; quarantined`; its `23/23` builder result and
+  `53/53` independent audit remain `proof only` for the checks they actually
+  performed and provide no scale or visual approval authority.
+- Recovery decision: do not repair A02 forward. Preserve it, then create A03
+  with C09 using the exact same lower radial factor `12221/23120` and
+  longitudinal factor `18/173 cm/px` as C10/C11. Require exact equality at
+  row `1131` between C09 and C10 and declare the future C08 row-`1112`
+  contact diameter as `99/17 = 5.823529411765 cm`.
+- Unchanged scope: C10, C11, C12 geometry and source-pixel mapping remain
+  unchanged; C08 and C07 geometry, the exact `pi/2` haft wrap, whole-half
+  `Rz(180 degrees)`, FBX, and Unreal remain unexecuted.
+- Quarantine location:
+  `Saved/AssetForgeResearch/SiegeBreaker/A12_R10_Step05_A02_ComponentScale_InternalReject/`.
+- Follow-up Core/Kaizen improvement: every shared component boundary must
+  replay the same source row/edge through the same registration and pass an
+  exact contact-radius equality gate before a proof can be presented.
+### 2026-07-23 - Siege Breaker A12 R10 Step 06 Half-Presentation And Per-Component-Wall Drift
+
+- Asset or scope: `SM_DRW_SiegeBreaker_Hammer_A01` A12 R10 Step 06 A01
+  source-half assembly, Blender proof, renders, builder, audit, and records.
+- Detected by: Flamestrike visual rejection and correction that the measured
+  half exists to create the complete hammer by one `180 degree` axis rotation.
+- Last known Core-valid state: authoritative A09 pixel-half process; R7 staged
+  component recovery; approved R10 Steps 03/04/05/05C component sources; R10/R8
+  centerline, axis, rotation, and duplication registration; and the approved
+  `pi/2` haft-wrap formula.
+- First drift action: Codex treated the measured source half as the Step 06
+  review endpoint and withheld the required final
+  `Rz(180 degrees): (X,Y,Z)->(-X,-Y,Z)` duplicate.
+- Compounding action: Codex closed each measured component independently toward
+  the center plane, creating striped slabs instead of replaying A09's one
+  combined outer-boundary physical-half closure.
+- Assumption that caused drift: a technically closed set of isolated component
+  proofs was treated as equivalent to replaying the previously approved
+  complete-half process.
+- Affected outputs: the complete
+  `A12_R10_Step06_OneRz180SourceHalfAssembly_A01` family.
+- Artifact statuses: Blender proof, renders, review board, construction tools,
+  validation, audit, contract, and closure amendment are
+  `invalid / quarantined`; inherited source hashes, profiles, exact formulas,
+  and junction-count mechanics remain `proof only`.
+- Quarantined location:
+  `Saved/AssetForgeResearch/SiegeBreaker/A12_R10_Step06_HalfPresentationWallDrift_20260723/`.
+- Smallest sufficient recovery: do not repair forward; rebuild from the
+  approved isolated sources; replay A09's combined-outer-boundary half
+  construction; retain R7/R10 component profiles and the `pi/2` haft wrap;
+  substitute only the corrected R10 axis/registration; apply one exact
+  `Rz(180 degrees)` duplicate; audit and present only the complete hammer.
+- Local recovery record:
+  `docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/manifests/A12_R10_STEP06_HALF_PRESENTATION_AND_WALL_METHOD_DRIFT_RECOVERY.md`.
+
+### 2026-07-23 - Siege Breaker R8 All-Views Dimension-Gate Drift
+
+- Asset or scope: `SM_DRW_SiegeBreaker_Hammer_A01` R8 full-scanline
+  dimension-compatibility contract, blocking interpretation, audit, and review.
+- Detected by: Flamestrike's reminder to use the successful process from
+  `2026-07-22`.
+- Last known Core-valid state: A09 used one uniform length-anchored scale and
+  allowed width to remain the front-pixel consequence; A11 center-aligned and
+  averaged the true top/bottom footprints, uniformly registered the mean to
+  the front-owned width, assigned axial depth ownership to top/bottom, and
+  removed side-view depth-scale authority.
+- First drift action: the R8 compatibility contract required every individual
+  view to reproduce both existing physical axes under one uniform scale.
+- Assumption that caused drift: the conditional expectation that the recreated
+  models retained the same dimensions was treated as a replacement for the
+  documented view-ownership reconciliation process.
+- Affected outputs:
+  `A12_R10_STEP02A_R8_FULL_SCANLINE_DIMENSION_COMPATIBILITY_CONTRACT.md`,
+  its manifest, audit, and review board.
+- Artifact statuses: the six immutable source hashes, complete scanline
+  memberships, exact RGBA captures, rectangles, and raw ratio residuals remain
+  valid `proof only`; the all-views stop criterion is `superseded / reference
+  only` and cannot decide construction scale.
+- Smallest sufficient recovery: re-audit the exact boundaries and replay the
+  A09/A11 view-owned equations without source-image stretching.
+- Recovery result: boundary replay `PASS`; the exact successful process yields
+  `97.873941674506 x 47.479915237376 x 170 cm`, proving the new R8 redraw
+  changed proportions rather than proving a bad scan selection.
+- Current block: existing dimension authority remains unchanged pending
+  Flamestrike approval or rejection of the exact new R8-derived dimensions.
+- Local recovery record:
+  `docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/manifests/A12_R10_R8_VIEW_OWNED_SCALE_RECONCILIATION_A01.json`.
+
+### 2026-07-23 - Siege Breaker R8 New-Dimension Review-Camera Scale Drift
+
+- Asset or scope: `SM_DRW_SiegeBreaker_Hammer_A01` A12 R10 R8
+  new-dimension reconstruction A01 first internal Blender render.
+- Detected by: Codex internal visual review before presentation.
+- Last known Core-valid state: the approved new R8 dimension authority,
+  exact scanline captures, bounded reconstruction contract, fresh coherent
+  positive-X half, exact `pi/2` haft wrap, one `Rz(180 degrees)` duplicate,
+  and the saved geometry's `20/20` builder plus `43/43` independent technical
+  audit.
+- First drift action: the orthographic camera helper accepted each declared
+  review scale but did not assign it to `Camera.ortho_scale`, leaving
+  Blender's default `6 cm` scale.
+- Assumption that caused drift: function arguments were treated as executed
+  camera state without an image-space framing gate.
+- Affected outputs: the first A01 front, right, back, color 3/4, gray 3/4,
+  review board, and their saved camera state.
+- Artifact statuses: first review images and camera state are
+  `invalid / quarantined`; exact scanline evidence, geometry, formulas,
+  dimensions, and technical audit evidence remain `proof only` pending a
+  correctly framed rerender and repeat audit.
+- Quarantine location:
+  `Saved/AssetForgeResearch/SiegeBreaker/A12_R10_R8_NewDimensions_A01_CameraScale_InternalReject_20260723/`.
+- Smallest sufficient recovery: assign the already-declared orthographic
+  scale, rebuild/rerender from the same contract and evidence, repeat the
+  independent audit, and perform a fresh internal visual review. No
+  measurement, geometry, dimension, material, FBX, Unreal, LOD, collision,
+  or game-ready authority changes.
+- Kaizen gate: the independent audit must verify the four saved camera
+  `ortho_scale` values before a board can be classified as a review
+  candidate.
+
+### 2026-07-23 - Siege Breaker R8 New-Dimension Side-UV And Gray-Proof Drift
+
+- Asset or scope: `SM_DRW_SiegeBreaker_Hammer_A01` A12 R10 R8
+  new-dimension reconstruction A01 correctly framed internal rerender.
+- Detected by: Codex internal visual review and byte-level color/gray output
+  comparison before presentation.
+- Last known Core-valid state: the same approved R8 measurement and
+  reconstruction authority as the camera recovery; geometry bounds,
+  Rz180 symmetry, and exact haft formula passed repeat technical audit.
+- First drift action: the new builder assigned one midpoint UV to all four
+  corners of each combined-boundary side face instead of replaying A09's
+  signed depth-to-source-X UV registration at every face corner.
+- Compounding defect: a Blender view-layer override produced a gray-proof
+  file byte-identical to the color render instead of replaying A09's explicit
+  temporary material replacement.
+- Assumption that caused drift: foreground-valid midpoint sampling and an
+  API-level override were treated as equivalent to the documented A09
+  image-reconstruction and proof functions.
+- Affected outputs: the correctly framed A01 right, color 3/4, gray 3/4,
+  review board, and their saved side-UV/proof state.
+- Artifact statuses: those review outputs and side-UV/proof state are
+  `invalid / quarantined`; unchanged scanline evidence, measurements,
+  geometry coordinates, Rz180 structure, and haft formula remain `proof
+  only`.
+- Quarantine location:
+  `Saved/AssetForgeResearch/SiegeBreaker/A12_R10_R8_NewDimensions_A01_SideUVGray_InternalReject_20260723/`.
+- Smallest sufficient recovery: replay A09's signed per-corner side UV
+  function using the new right-view scanlines and center diamond, replay
+  A09's explicit material-swap geometry proof, repeat all audits, and perform
+  a fresh internal visual gate. Do not alter dimensions or geometry rules.
+- Kaizen gates: audit four source-owned UV samples per side face and require
+  the independent-gray file hash to differ from the color file hash.
+
+### 2026-07-23 - Siege Breaker R8 Wrong Bisection Axis And Short Handle Drift
+
+- Asset or scope: `SM_DRW_SiegeBreaker_Hammer_A01`
+  `A12_R10_R8ScanlineNewDimensionsRz180_A01`.
+- Detected by: Flamestrike visual rejection.
+- Last known Core-valid state: immutable new R8 scanlines, exact dimension
+  consequence, exact right-view diamond center `x=557`, approved right-view
+  half interval `[418,557)`, exact Rz180 transform, physical handle locks, and
+  exact `pi/2` cylinder formula.
+- First drift action: the builder retained the new front image's `X>=0` half
+  instead of the right image's diamond-centered `Y<=0` depth half.
+- Compounding handle action: the handle stopped at straight-shaft boundary
+  `C`, `Z=113220/1111 cm`, rather than including the upper coupler through
+  boundary `A`, `Z=132 cm`.
+- Assumption that caused drift: A09's front-half implementation was treated
+  as the controlling bisection despite the newer explicit right-diamond
+  registration, and `C` was mislabeled as `A` in the builder.
+- Proven missing handle span:
+  `33432/1111 = 30.091809180918 cm`.
+- Affected outputs: complete A01 Blender source, validation, audit, review
+  renders, review board, and output record.
+- Artifact status: `invalid / quarantined`; immutable measurements and
+  formula evidence remain `proof only`.
+- Quarantine:
+  `Saved/AssetForgeResearch/SiegeBreaker/A12_R10_R8_NewDimensions_WrongAxis_UserReject_20260723/`.
+- Smallest sufficient recovery: return to the scanline evidence; build one
+  candidate from `[418,557)` and one from `[557,668)` around the correct
+  `Y=0` seam; complete each once with Rz180; extend the corrected handle to
+  `Z=132`; retain the exact handle locks and cylinder formula; independently
+  audit and present both.
+- Local recovery record:
+  `docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/manifests/A12_R10_R8_WRONG_AXIS_AND_HANDLE_SCALE_RECOVERY.md`.

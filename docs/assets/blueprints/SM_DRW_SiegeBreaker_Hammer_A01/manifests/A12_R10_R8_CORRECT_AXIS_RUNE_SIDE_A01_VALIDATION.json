@@ -1,0 +1,299 @@
+{
+  "schema": "aerathea.siegebreaker.r8_correct_axis_candidate.v1",
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "attempt": "A12_R10_R8CorrectAxisRuneSide_A01",
+  "candidate_kind": "rune",
+  "candidate_label": "RUNE-SIDE HALF",
+  "contract_id": "SB-A12-R10-R8-CORRECT-AXIS-TWO-HAMMER-A01",
+  "contract_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_R8_CORRECT_AXIS_TWO_HAMMER_A01_CONTRACT.md",
+  "contract_sha256": "c76ba4e02336ed609e7c747d200e3e63bc247b8bf43b44541bea9392aa006517",
+  "date": "2026-07-23",
+  "artifact_status": "DCC source candidate pending Flamestrike comparison",
+  "source_authority": {
+    "scan_manifest": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/manifests/A12_R10_R8_FULL_SCANLINE_DIMENSION_COMPATIBILITY_A01.json",
+    "scale_manifest": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/manifests/A12_R10_R8_VIEW_OWNED_SCALE_RECONCILIATION_A01.json",
+    "diamond_manifest": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/manifests/A12_R10_R8_RIGHT_DIAMOND_CENTER_HALF_ROTATION_A01.json",
+    "sources": {
+      "front": {
+        "path": "Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_FRONT_A01.png",
+        "sha256": "9a34588afd4fef32001cd9cb2115699e7506ef1e90331c19f4d32483c60aab8c",
+        "capture_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/evidence/A12_R10_R8_FULL_SCANLINE_DIMENSION_COMPATIBILITY_A01/scanlines/r8_front_complete_object_full_scanlines.json.gz",
+        "capture_sha256": "83eb6b3743cdafdcef406800adde1e99354ca163e098b6d97f3a7d6708f71bf6",
+        "decoded_membership_sha256": "c4c135ce63088fa59416d76d31c66e968904571b2eecb124c7c144f51e93433b",
+        "selected_rgba_sha256": "2a61e2004ccb31e603498c0308e93e606261fe9d9a2714968e082dad7ce13ab7",
+        "selected_pixel_count": 247844,
+        "exact_rgba_replay": true
+      },
+      "back": {
+        "path": "Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_BACK_A01.png",
+        "sha256": "f09dd1ad3978f39e10ecee8ea7efa84336520f0cea4921fe3c410dfd04019694",
+        "capture_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/evidence/A12_R10_R8_FULL_SCANLINE_DIMENSION_COMPATIBILITY_A01/scanlines/r8_back_complete_object_full_scanlines.json.gz",
+        "capture_sha256": "67afb16b521dbf077435361229c10bc7ff96769f5fdc28c8a5aee6734b9656a7",
+        "decoded_membership_sha256": "f011b2583644b6c9e1ba53b9154277bec5a0ae12f3535b24350be50d95f4d3e0",
+        "selected_rgba_sha256": "5f2c3a1ee57d4695568a9979a2dd7befa6014133f24462f648295b22d4726731",
+        "selected_pixel_count": 250209,
+        "exact_rgba_replay": true
+      },
+      "right": {
+        "path": "Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_RIGHT_A01.png",
+        "sha256": "58f3199babbcf9323751d04f0ffafa4316048243cf2f39992cdb6b04176306e8",
+        "capture_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/evidence/A12_R10_R8_FULL_SCANLINE_DIMENSION_COMPATIBILITY_A01/scanlines/r8_right_complete_object_full_scanlines.json.gz",
+        "capture_sha256": "80f5216bf2c2b920958a3f6edce2867c700a2ac4c286d81dd809d0ff4c8e40bc",
+        "decoded_membership_sha256": "500999c52510637380f0c2469c35ed2902a938ac5b3d0099bb46895a5990fcf3",
+        "selected_rgba_sha256": "5f855ad51779a9378d75dc3a5e324488a2e1bd210942aee0032bc632bf08e20b",
+        "selected_pixel_count": 142185,
+        "exact_rgba_replay": true
+      }
+    }
+  },
+  "dimensions_cm_exact": {
+    "width": {
+      "numerator": 104040,
+      "denominator": 1063,
+      "display_decimal": "97.873941674506"
+    },
+    "depth": {
+      "numerator": 24579450,
+      "denominator": 517681,
+      "display_decimal": "47.479915237376"
+    },
+    "height": {
+      "numerator": 170,
+      "denominator": 1,
+      "display_decimal": "170.000000000000"
+    }
+  },
+  "measurement_events": {
+    "front_station_spans_pixels": {
+      "A": 116,
+      "C": 69,
+      "H1": 78,
+      "H8": 70,
+      "U1": 78,
+      "U3": 115,
+      "L4": 107
+    },
+    "right_A_previous_span_pixels": 144,
+    "right_A_span_pixels": 127,
+    "rules": {
+      "front_A_sustained_at_most_120": true,
+      "front_C_sustained_at_most_70": true,
+      "front_H1_reaches_75": true,
+      "front_H8_sustained_at_most_71": true,
+      "front_U1_reaches_78": true,
+      "front_U3_reaches_115": true,
+      "front_L4_reaches_at_most_107": true,
+      "right_A_contracts_at_least_15": true
+    },
+    "pass": true
+  },
+  "construction": {
+    "source_half_axis": "Y<=0",
+    "bisection_source_edge_x": 557,
+    "source_interval_half_open": [
+      557,
+      668
+    ],
+    "whole_transform": "Rz(180): (X,Y,Z)->(-X,-Y,Z)",
+    "whole_transform_count": 1,
+    "coordinate_equal_seam_weld": true,
+    "head": {
+      "candidate": "rune",
+      "source_interval_half_open": [
+        557,
+        668
+      ],
+      "source_half_span_pixels": 111,
+      "source_top_row": 166,
+      "head_A_row": 647,
+      "active_source_half_cells": 44552,
+      "open_seam_edges": 478,
+      "combined_boundary_faces": 710,
+      "source_half_axis": "Y<=0",
+      "bisection_x": 557,
+      "half_depth_scale_cm_per_pixel": 0.21387349206025186,
+      "source_half_vertices": 90294,
+      "source_half_faces": 89814,
+      "coordinate_equal_seam_vertices_welded": 958,
+      "duplicate_faces_added": 89814,
+      "complete_vertices": 179630,
+      "complete_polygons": 179628
+    },
+    "handle": {
+      "profile_ring_count": 672,
+      "half_angular_segments": 64,
+      "theta": "-pi/2+pi*U",
+      "pi_over_2_wrap": true,
+      "source_uv_samples": 42944,
+      "source_uv_background_samples": 0,
+      "decorative_radius_scale_cm_per_pixel": 0.07857142857142857,
+      "raw_lower_max_radius_pixels": 70.0,
+      "stations_source_rows": {
+        "A": 600,
+        "C": 670,
+        "H1": 870,
+        "H8": 955,
+        "U1": 1110,
+        "U3": 1150,
+        "L4": 1220,
+        "terminal": 1271
+      },
+      "stations_z_cm_exact": {
+        "A": {
+          "numerator": 132,
+          "denominator": 1,
+          "display_decimal": "132.000000000000"
+        },
+        "C": {
+          "numerator": 1022124,
+          "denominator": 8591,
+          "display_decimal": "118.976137818647"
+        },
+        "H1": {
+          "numerator": 702444,
+          "denominator": 8591,
+          "display_decimal": "81.765103014783"
+        },
+        "H8": {
+          "numerator": 7980,
+          "denominator": 121,
+          "display_decimal": "65.950413223141"
+        },
+        "U1": {
+          "numerator": 2898,
+          "denominator": 121,
+          "display_decimal": "23.950413223140"
+        },
+        "U3": {
+          "numerator": 18,
+          "denominator": 1,
+          "display_decimal": "18.000000000000"
+        },
+        "L4": {
+          "numerator": 918,
+          "denominator": 121,
+          "display_decimal": "7.586776859504"
+        },
+        "terminal": {
+          "numerator": 0,
+          "denominator": 1,
+          "display_decimal": "0.000000000000"
+        }
+      },
+      "grip_length_cm": 42.0,
+      "pommel_length_cm": 18.0,
+      "maximum_radius_cm": 5.5,
+      "handle_top_z_cm": 132.0,
+      "previous_missing_span_cm": 30.09180918091809,
+      "source_half_vertices": 43682,
+      "source_half_faces": 43072,
+      "coordinate_equal_seam_vertices_welded": 1346,
+      "duplicate_faces_added": 43072,
+      "complete_vertices": 86018,
+      "complete_polygons": 86144
+    },
+    "handle_formula": {
+      "theta": "-pi/2+pi*U",
+      "surface": "X=r(z)cos(theta);Y=r(z)sin(theta)",
+      "pi_over_2": 1.5707963267948966,
+      "shaft_radius_cm": 2.5,
+      "grip_length_cm": 42.0,
+      "pommel_length_cm": 18.0,
+      "pommel_maximum_width_cm": 11.0,
+      "handle_top_z_cm": 132.0
+    },
+    "prior_candidate_geometry_inputs": 0
+  },
+  "mesh": {
+    "object_count": 2,
+    "vertices": 265648,
+    "polygons": 265772,
+    "bounds": {
+      "min_cm": [
+        -48.93696975708008,
+        -23.739957809448242,
+        0.0
+      ],
+      "max_cm": [
+        48.93696975708008,
+        23.739957809448242,
+        170.0
+      ],
+      "dimensions_cm": [
+        97.87393951416016,
+        47.479915618896484,
+        170.0
+      ]
+    },
+    "rz180_symmetry": {
+      "objects": {
+        "C00_R8_CORRECT_AXIS_HEAD_RUNE_COMPLETE_RZ180": {
+          "unique_vertices": 179630,
+          "missing_rz180_vertices": 0,
+          "pass": true
+        },
+        "C06_C11_CORRECTED_HANDLE_RUNE_COMPLETE_RZ180": {
+          "unique_vertices": 86018,
+          "missing_rz180_vertices": 0,
+          "pass": true
+        }
+      },
+      "total_missing_rz180_vertices": 0,
+      "pass": true
+    },
+    "maximum_true_haft_radius_error_cm": 1.1486157491802373e-07
+  },
+  "review_cameras": {
+    "CAM_rune_FRONT": 188.0,
+    "CAM_rune_RIGHT": 188.0,
+    "CAM_rune_3Q": 198.0
+  },
+  "technical_gates": {
+    "contract_present": true,
+    "source_hashes_match": true,
+    "scanlines_replay_exactly": true,
+    "scanline_station_rules_pass": true,
+    "correct_bisection_source_edge_557": true,
+    "source_half_axis_is_Y": true,
+    "candidate_interval_exact": true,
+    "no_prior_geometry": true,
+    "one_rz180_each": true,
+    "rz180_symmetry": true,
+    "handle_includes_upper_coupler": true,
+    "handle_top_132_cm": true,
+    "missing_span_recorded": true,
+    "pi_over_2_wrap": true,
+    "shaft_radius_2_5_cm": true,
+    "grip_length_42_cm": true,
+    "pommel_length_18_cm": true,
+    "pommel_maximum_width_11_cm": true,
+    "handle_source_background_zero": true,
+    "width_exact": true,
+    "depth_exact": true,
+    "height_exact": true,
+    "camera_scales_exact": true,
+    "gray_differs_from_color": true,
+    "no_modifiers": true,
+    "fbx_unreal_not_used": true
+  },
+  "technical_result": "PASS",
+  "outputs": {
+    "blend": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8CorrectAxisRuneSide_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R10_R8CorrectAxisRuneSide_A01.blend",
+    "front": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_R10_R8_CORRECT_AXIS_TWO_HAMMER_A01/A12_R10_R8_RUNE_COMPLETE_FRONT.png",
+    "right": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_R10_R8_CORRECT_AXIS_TWO_HAMMER_A01/A12_R10_R8_RUNE_COMPLETE_RIGHT.png",
+    "color_3q": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_R10_R8_CORRECT_AXIS_TWO_HAMMER_A01/A12_R10_R8_RUNE_COMPLETE_COLOR_3Q.png",
+    "gray_3q": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_R10_R8_CORRECT_AXIS_TWO_HAMMER_A01/A12_R10_R8_RUNE_COMPLETE_GRAY_3Q.png"
+  },
+  "output_hashes": {
+    "blend": "1b272d83269c1d4aac167d95ce5cfeb70766c301d7ae1eb7b7a045c4d441a752",
+    "front": "fa64121dd73042b7b791a2063d2c96d3e599bb6a75e20b400d451d4df4026536",
+    "right": "4313b26fa1cdde2b35fd6d2ca6c3176cfa595a29e4748d42d1a6eb890266df5e",
+    "color_3q": "573fcc92137de75637214088369c1feede886910faac8d2972e1b5b46fac5559",
+    "gray_3q": "bf2b9f26e3f4e0b147d4b8ebf4dc4c52cd50134b0692d590e6507abdf115236c"
+  },
+  "comparison_board": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_R10_R8_CORRECT_AXIS_TWO_HAMMER_A01/A12_R10_R8_CORRECT_AXIS_TWO_HAMMER_A01_REVIEW.png",
+  "unreal_authority": false,
+  "fully_game_ready": false,
+  "comparison_board_sha256": "ae3dbabae8976f52f7ceae3d2f86cc288687608b0a457a47ba41d3441d87bf46",
+  "comparison_candidate": "metal"
+}

@@ -1,0 +1,175 @@
+{
+  "schema": "aerathea.siegebreaker.r8_correct_axis_independent_audit.v1",
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "candidate_kind": "rune",
+  "contract_id": "SB-A12-R10-R8-CORRECT-AXIS-TWO-HAMMER-A01",
+  "artifact_status": "DCC source candidate pending Flamestrike comparison",
+  "audit_independence": {
+    "opened_blend": "/home/james/Projects/Aerathea/SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8CorrectAxisRuneSide_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R10_R8CorrectAxisRuneSide_A01.blend",
+    "builder_script_not_imported": true,
+    "geometry_bounds_recomputed": true,
+    "Rz180_symmetry_recomputed_from_vertices": true,
+    "handle_station_formula_recomputed_from_exact_fractions": true,
+    "output_hashes_recomputed": true
+  },
+  "measured_bounds": {
+    "minimum_cm": [
+      -48.93696975708008,
+      -23.739957809448242,
+      0.0
+    ],
+    "maximum_cm": [
+      48.93696975708008,
+      23.739957809448242,
+      170.0
+    ],
+    "dimensions_cm": [
+      97.87393951416016,
+      47.479915618896484,
+      170.0
+    ]
+  },
+  "expected_dimensions_cm": [
+    97.87394167450611,
+    47.47991523737591,
+    170.0
+  ],
+  "Rz180_symmetry": {
+    "pass": true,
+    "vertices_checked": 265648,
+    "failure_count_reported": 0,
+    "failures": []
+  },
+  "handle_profile": {
+    "checks": {
+      "station_z_values_exact": true,
+      "profile_starts_at_A_edge_600": true,
+      "profile_ends_at_terminal_edge_1271": true,
+      "source_edges_monotonic": true,
+      "z_values_monotonic": true,
+      "shaft_C_to_H1_radius_2_5_cm": true,
+      "grip_H8_to_U1_is_42_cm": true,
+      "pommel_U3_to_terminal_is_18_cm": true,
+      "lower_maximum_diameter_is_11_cm": true
+    },
+    "stations": {
+      "A": {
+        "source_edge": 600,
+        "sampled_source_row": 600,
+        "expected_z_cm": 132.0,
+        "actual_z_cm": 132.0,
+        "pass": true
+      },
+      "C": {
+        "source_edge": 670,
+        "sampled_source_row": 670,
+        "expected_z_cm": 118.97613781864742,
+        "actual_z_cm": 118.97613781864742,
+        "pass": true
+      },
+      "H1": {
+        "source_edge": 870,
+        "sampled_source_row": 870,
+        "expected_z_cm": 81.76510301478291,
+        "actual_z_cm": 81.76510301478291,
+        "pass": true
+      },
+      "H8": {
+        "source_edge": 955,
+        "sampled_source_row": 955,
+        "expected_z_cm": 65.9504132231405,
+        "actual_z_cm": 65.9504132231405,
+        "pass": true
+      },
+      "U1": {
+        "source_edge": 1110,
+        "sampled_source_row": 1110,
+        "expected_z_cm": 23.950413223140497,
+        "actual_z_cm": 23.950413223140497,
+        "pass": true
+      },
+      "U3": {
+        "source_edge": 1150,
+        "sampled_source_row": 1150,
+        "expected_z_cm": 18.0,
+        "actual_z_cm": 18.0,
+        "pass": true
+      },
+      "L4": {
+        "source_edge": 1220,
+        "sampled_source_row": 1220,
+        "expected_z_cm": 7.586776859504132,
+        "actual_z_cm": 7.586776859504132,
+        "pass": true
+      },
+      "TERMINAL": {
+        "source_edge": 1271,
+        "sampled_source_row": 1270,
+        "expected_z_cm": 0.0,
+        "actual_z_cm": 0.0,
+        "pass": true
+      }
+    },
+    "profile_ring_count": 672,
+    "shaft_maximum_radius_error_cm": 0.0,
+    "profile_maximum_radius_cm": 5.5,
+    "pass": true
+  },
+  "checks": {
+    "contract_exists": true,
+    "contract_id_exact": true,
+    "candidate_kind_exact": true,
+    "two_mesh_components_only": true,
+    "source_axis_is_right_depth_Y": true,
+    "bisection_source_edge_is_557": true,
+    "source_interval_exact": true,
+    "source_top_exact": true,
+    "one_Rz180_completion": true,
+    "Rz180_vertex_symmetry": true,
+    "no_prior_candidate_geometry": true,
+    "handle_top_is_A_132_cm": true,
+    "previous_missing_span_is_recorded": true,
+    "cylinder_wrap_formula_exact": true,
+    "handle_profile_pass": true,
+    "width_exact": true,
+    "depth_exact": true,
+    "height_exact": true,
+    "three_review_cameras_exact": true,
+    "no_mesh_modifiers": true,
+    "all_builder_gates_declared_pass": true,
+    "comparison_board_exists": true,
+    "comparison_board_hash_matches": true,
+    "no_Unreal_authority": true,
+    "front_source_exists": true,
+    "front_source_hash_matches_manifest": true,
+    "front_source_hash_matches_scan_authority": true,
+    "front_scanline_capture_exists": true,
+    "front_scanline_capture_hash_matches": true,
+    "front_exact_rgba_replay_declared": true,
+    "back_source_exists": true,
+    "back_source_hash_matches_manifest": true,
+    "back_source_hash_matches_scan_authority": true,
+    "back_scanline_capture_exists": true,
+    "back_scanline_capture_hash_matches": true,
+    "back_exact_rgba_replay_declared": true,
+    "right_source_exists": true,
+    "right_source_hash_matches_manifest": true,
+    "right_source_hash_matches_scan_authority": true,
+    "right_scanline_capture_exists": true,
+    "right_scanline_capture_hash_matches": true,
+    "right_exact_rgba_replay_declared": true,
+    "blend_exists": true,
+    "blend_hash_matches": true,
+    "front_exists": true,
+    "front_hash_matches": true,
+    "right_exists": true,
+    "right_hash_matches": true,
+    "color_3q_exists": true,
+    "color_3q_hash_matches": true,
+    "gray_3q_exists": true,
+    "gray_3q_hash_matches": true
+  },
+  "pass_count": 52,
+  "check_count": 52,
+  "result": "PASS"
+}

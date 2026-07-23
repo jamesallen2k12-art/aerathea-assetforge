@@ -809,3 +809,347 @@
 - A04 A01 blend remains forbidden as a construction input.
 - Image generation, TRELLIS, image-to-3D, FBX, Unreal, LOD, collision, and
   game-ready escalation remain unauthorized.
+
+## A12 R9 Dimension-Locked Physical-Master Historical Execution Authority
+
+- Date: `2026-07-23`.
+- Flamestrike response to the displayed
+  `A12_R9_DIMENSION_LOCKED_PHYSICAL_MASTER_SIX_CAMERA_CONTRACT.md`:
+  `approved`.
+- Contract ID: `SB-A12-R9-DLPM6C-A01`.
+- Authorized scope: Sections 7 through 12 exactly as written: immutable input
+  and parameter lock, one fresh Blender-only physical master, six fixed
+  `2048 x 2048` orthographic cameras at `190 cm`, numeric/pixel audits,
+  review-package construction, and the visible decision stop gate.
+- Authorized interpretation: only the bounded values declared in Section 3.3
+  and frozen in the R9 parameter ledger.
+- Output ceiling: `DCC source candidate pending Flamestrike visual decision`.
+- Excluded: old `.blend` or geometry reuse, source editing, image generation,
+  UVs, production textures/materials, LODs, collision, FBX/GLB, Unreal,
+  visual-canon promotion, `DCC game-ready candidate`, `Fully game-ready`,
+  unrelated work, and Codex self-approval.
+- Superseding status: the contract is quarantined by the `2026-07-23` R9 Core
+  Recovery because its interpretive method did not serve the clarified
+  source-measured mathematical-reconstruction goal.
+
+## A12 R9 A05 Historical Technical Result
+
+- Date: `2026-07-23`.
+- Result: `narrow R9 mechanical PASS; proof only`.
+- Status: `quarantined; invalid as source-measured mathematical reconstruction`.
+- Recovery history:
+  A01 review package `quarantined`;
+  A02 incomplete attempt `quarantined`;
+  A03 visual candidate `quarantined`;
+  A04 review package `invalid` and board `quarantined`.
+- A05 source SHA-256:
+  `244612d3806808bcb2745bbef287ea8a5c1a3897129b9eb4bca3892561e6fe4b`.
+- A05 ledger SHA-256:
+  `2aef76e46663b0e8ec8c30618897bcb6434ae2211dd7e4dca45588cbcef26e46`.
+- A05 review-board SHA-256:
+  `9ac65d356e37b6a474b781f53d4d9b6872f1583571e5be3a65e23d03d0e1d23d`.
+- A05 validation SHA-256:
+  `2da018ec763917a0ef2efe06d14e8958c1f9173be11f5b1ba4ae89b0037233b1`.
+- A05 independent audit: `10/10 PASS`; SHA-256
+  `cca1158714e980f4c15a017dd2e3e9d3428dd63adb959088b70269b3b08fc8b0`.
+- A05 review-package SHA-256:
+  `17d20a04a6f0ec9dfc0cd39aa97ea4d9edeef33581a4ca1aa0f3e682ff3e264d`.
+- Visual decision: `cancelled; A05 is ineligible for approval`.
+- Unreal authority: `false`.
+- Fully game-ready: `false`.
+
+## A12 R9 Core Recovery And Source-Reconstruction Restore
+
+- Date: `2026-07-23`.
+- Flamestrike correction: the required result is a technically correct
+  mathematical reconstruction from measured original-source evidence, not a
+  concept-to-3D interpretation.
+- R8 purpose correction: the recreated orthographics exist only to provide
+  centerline accuracy for rotation and duplication. Their shapes, proportions,
+  materials, colors, and printed measurements do not replace the original
+  source images.
+- First method drift: R9 substituted hand-selected interpretation values and
+  outer-span audits for source-derived component measurements and equations.
+- First execution-scope drift: Codex proceeded from the single authorized A01
+  failure to A02 without a new approval, then continued through A05.
+- Result: R9 contract and A01-A05 chain `quarantined`; R9 technical checks
+  `proof only`; R9 tools forbidden as reconstruction inputs.
+- Restored authority:
+  original six sources for detailed measurements;
+  A11 for outer footprint and scale;
+  replayable R7 measurements as narrow proof;
+  R8 only for centerline/rotation/duplication registration;
+  Flamestrike's R6 component corrections as authoritative.
+- Recovery record:
+  `manifests/A12_R9_CORE_RECOVERY_AND_SOURCE_RECONSTRUCTION_RESTORE.md`.
+- Current gate:
+  `A12_R10_STEP01_SOURCE_MEASUREMENT_CENTERLINE_RECONCILIATION_CONTRACT.md`
+  requires Flamestrike approval before source processing or measurement
+  execution.
+- DCC / Unreal / Fully game-ready authority: `false / false / false`.
+
+## A12 R10 Step 01 Measurement Contract Draft
+
+- Date: `2026-07-23`.
+- Contract ID: `SB-A12-R10-S01-SMCR-A01`.
+- Contract SHA-256:
+  `c4243219c5f33bf039c082c0d8914b1c609908c86ebe92fd838a4ed389f0a844`.
+- Status: `candidate; no execution authority`.
+- Purpose: independently replay the original six sources, restore exact
+  component measurements, isolate all cross-view residuals, and use R8 only
+  for centerline/rotation/duplication registration.
+- Output ceiling after approval:
+  `candidate source-measurement and transform-registration record`.
+- Explicit boundary: no source modification, image generation, Blender,
+  geometry, candidate fills, UVs, materials, export, Unreal, or Step 02.
+- Pending decision: Flamestrike approves, revises, rejects, or blocks the exact
+  measurement-only contract.
+
+## A12 R10 Step 01 Approval And Execution
+
+- Date: `2026-07-23`.
+- Flamestrike response to exact contract
+  `SB-A12-R10-S01-SMCR-A01`: `approved`.
+- Approved contract SHA-256:
+  `c4243219c5f33bf039c082c0d8914b1c609908c86ebe92fd838a4ed389f0a844`.
+- Authorized scope: original-source measurement, exact replay audit,
+  marks-only evidence boards, output record, and visible review only.
+- Explicitly unauthorized: source modification, corrected images, Blender,
+  geometry, candidate fills, UV execution, materials, export, Unreal, or
+  Step 02.
+- First internal execution stopped before a manifest because an assumed common
+  upper-cap Z sample contained no source-owned pixels. The unapproved station
+  was removed; exact independently replayed source-visible rows were used and
+  their cross-view correspondence was left blocked.
+- A second packaging attempt stopped before a manifest on the workstation's
+  older Pillow constant name. The compatibility-only name was corrected
+  without changing measurements, formulas, coordinates, or evidence rules.
+- Measurement manifest:
+  `manifests/A12_R10_STEP01_SOURCE_MEASUREMENT_CENTERLINE_A01.json`.
+- Manifest SHA-256:
+  `4d47a3e6bb375cc9f6371341f7b359dbfa107a1a2856fb239ccaa0ca01dda327`.
+- Independent replay:
+  `183/183 PASS`.
+- Independent audit SHA-256:
+  `49ca8e4772fbd2e1df24c9c864073333c7671baba14545b9b0bf1ed8b261764f`.
+- Visible review-board SHA-256:
+  `4db2e76cf37d302ecea0875ac0a3360d95934ff608ea351ae4b815681cfc04ca`.
+- Mechanical result: `PASS`.
+- Production decision: `BLOCKED`; eight exact authority decisions remain.
+- Artifact status:
+  `candidate source-measurement and transform-registration record`.
+- DCC / geometry / Unreal / Fully game-ready authority:
+  `false / false / false / false`.
+- Completeness additions before the final audit:
+  the exact published component-width residual
+  `193/277750000000 cm`, the right `593.5 px` and left `549..549.5 px`
+  source shaft-axis bands, their signed separation from each face-local
+  centerline band, and nine left/right side-visible pommel depth stations.
+
+## A12 R10 Haft Cylinder-Wrapping Direction
+
+- Date: `2026-07-23`.
+- Flamestrike direction:
+  `dont forget to use the cylinder wrapping formula for the haft`.
+- Status:
+  `authoritative future Step 02 construction constraint; recorded but not
+  executed in Step 01`.
+- Approved shaft diameter/radius:
+  `5 cm / 2.5 cm`.
+- Exact half-cylinder widening:
+  `pi/2 = 1.5707963267948966 = 157.07963267948966%`.
+- Future front-half angular mapping:
+  `theta(U)=-pi/2+pi*U`, `U in [0,1]`.
+- Future surface equation:
+  `X=r(z)cos(theta)`, `Y=r(z)sin(theta)`, with measured longitudinal `Z`.
+- Radius ownership:
+  the front positive-half source radius is used equally in X and Y; side
+  views may compare the axis but may not elliptically scale the true haft.
+- Step 01 UV/geometry execution:
+  `false / false`.
+
+## A12 R10 Step 01 Measurement-Evidence Approval
+
+- Date: `2026-07-23`.
+- Flamestrike response to the exact measurement-evidence gate:
+  `apprvoved`.
+- Normalized decision:
+  `approved`.
+- Approved hash-locked manifest:
+  `4d47a3e6bb375cc9f6371341f7b359dbfa107a1a2856fb239ccaa0ca01dda327`.
+- Reclassification:
+  the R10 A01 source measurements and transform-registration evidence are
+  `authoritative within their declared measurement scope`.
+- Independent audit remains:
+  `proof only; 183/183 PASS`.
+- Eight blocks remain authoritative and unresolved.
+- Step 02 / Blender / geometry / Unreal authority:
+  `false / false / false / false`.
+- Approval record:
+  `steps/A12_R10_STEP01_SOURCE_MEASUREMENT_CENTERLINE_A01_APPROVAL_RECORD.md`.
+- Next gate:
+  Flamestrike resolves or preserves the exact blocks before any Step 02
+  component-equation contract is drafted.
+
+## A12 R10 R8 View-Owned Scale Reconciliation Approval And Result
+
+- Date: `2026-07-23`.
+- Flamestrike correction: use the successful A09/A11 process rather than
+  requiring every new R8 view to reproduce both pre-existing axes.
+- Approved method: preserve the new pixels and their proportions; apply one
+  uniform scale to each governing view; let front own width; let centered
+  top/bottom own depth; retain side views for profile/design and longitudinal
+  evidence without head-depth authority; do not stretch an image axis.
+- Approval response: `exactly ... proceed`.
+- Authorized scope: re-audit all six R8 object boundaries and exact RGBA
+  scanlines, calculate the view-owned physical consequence, audit it
+  independently, open the marks-only board, and stop before geometry if the
+  dimensions change.
+- Boundary replay: `PASS`; the selected rectangles follow the hammer and
+  exclude the dimension annotations.
+- Exact new pixel consequence:
+  `97.873941674506 x 47.479915237376 x 170 cm`.
+- Existing authority:
+  `75.130513051305 x 44.299176584325 x 170 cm`.
+- Independent audit: `9/9 PASS`; `proof only`.
+- Decision: `BLOCKED`; the R8 redraw changed physical proportions and the new
+  dimensions require explicit Flamestrike approval or rejection.
+- Existing dimension authority changed: `false`.
+- Geometry / Blender / Unreal authority:
+  `false / false / false`.
+- Output record:
+  `steps/A12_R10_STEP02A_R8_VIEW_OWNED_SCALE_RECONCILIATION_A01_OUTPUT_RECORD.md`.
+
+## A12 R10 R8 New-Dimension Reconstruction Approval
+
+- Date: `2026-07-23`.
+- Flamestrike decision:
+  `use the new dimensions ... we will see what the hammer looks like and make a judgement call ... it might look better this way`.
+- Approved candidate dimensions:
+  `97.873941674506 x 47.479915237376 x 170 cm`.
+- Approved scope: fresh reconstruction from the new R8 scanline data using
+  the documented A09 coherent-half process, exact `pi/2` haft wrap, one
+  `Rz(180 degrees)` duplication, coordinate-equal seam weld, technical audit,
+  complete-hammer renders, visible review board, and decision stop.
+- Rejected A02 hybrid geometry reuse: `false`.
+- FBX / Unreal / LOD / collision / game-ready authority:
+  `false / false / false / false / false`.
+- Contract:
+  `steps/A12_R10_R8_NEW_DIMENSION_SCANLINE_RZ180_RECONSTRUCTION_A01_CONTRACT.md`.
+
+## A12 R10 R8 New-Dimension First Internal Render Rejection
+
+- Date: `2026-07-23`.
+- Detection: Codex internal visual gate before presentation.
+- Cause: the review-camera helper accepted but did not assign its declared
+  orthographic scale, so Blender used the default `6 cm` view.
+- First review images and saved camera state:
+  `invalid / quarantined`.
+- Scanline evidence, new dimensions, exact formulas, constructed geometry,
+  builder checks, and independent technical checks:
+  `proof only; unchanged by this camera-only defect`.
+- Quarantine:
+  `Saved/AssetForgeResearch/SiegeBreaker/A12_R10_R8_NewDimensions_A01_CameraScale_InternalReject_20260723/`.
+- Authorized recovery: set the declared camera scales, rerender without
+  changing reconstruction inputs or geometry rules, repeat the independent
+  audit, and stop at the same visible review decision.
+- Scope expansion:
+  `none`.
+
+## A12 R10 R8 New-Dimension Second Internal Render Rejection
+
+- Date: `2026-07-23`.
+- Detection: Codex internal visual gate before presentation.
+- First defect: side faces used one midpoint UV for all four corners instead
+  of the authoritative A09 signed per-corner side-image registration.
+- Second defect: the supposed gray geometry proof was byte-identical to the
+  source-color 3/4 render.
+- Review outputs and affected side-UV/proof state:
+  `invalid / quarantined`.
+- Unchanged measurement, dimension, geometry-coordinate, Rz180, and exact
+  haft-formula evidence:
+  `proof only`.
+- Quarantine:
+  `Saved/AssetForgeResearch/SiegeBreaker/A12_R10_R8_NewDimensions_A01_SideUVGray_InternalReject_20260723/`.
+- Authorized recovery: replay the exact A09 per-corner side-UV and explicit
+  temporary material-replacement proof functions against the new R8 data,
+  repeat the audits, and stop at the same visual-decision gate.
+- Scope expansion:
+  `none`.
+
+## A12 R10 R8 New-Dimension Reconstruction Candidate
+
+- Date: `2026-07-23`.
+- Exact approved candidate envelope:
+  `97.873941674506 x 47.479915237376 x 170 cm`.
+- Construction: fresh new-R8 scanline reconstruction; one coherent positive-X
+  half; exact `pi/2` haft wrap; one `Rz(180 degrees)` completion; combined
+  head boundary; A09 signed four-corner side registration.
+- Builder gates:
+  `23/23 PASS`.
+- Independent saved-file audit:
+  `49/49 PASS`.
+- Artifact status:
+  `DCC source candidate pending Flamestrike visual decision`.
+- Review-board SHA-256:
+  `4b490fff8445ca3dc461e2c3af28cbbedf5e32ac5967e30b0a30ba92c6181546`.
+- Output record:
+  `steps/A12_R10_R8_NEW_DIMENSION_SCANLINE_RZ180_RECONSTRUCTION_A01_OUTPUT_RECORD.md`.
+- FBX / Unreal / LOD / collision / game-ready authority:
+  `false / false / false / false / false`.
+- Pending decision:
+  `approve / revise / reject / blocked`.
+
+## A12 R10 R8 Wrong-Axis Candidate Rejection And Two-Hammer Authority
+
+- Date: `2026-07-23`.
+- Flamestrike rejection: the preceding candidate duplicated the bisected
+  image around the wrong physical axis and its handle was not scaled
+  correctly.
+- Rejected A01 status:
+  `invalid / quarantined`.
+- Proven axis correction: bisect the R8 right image through the exact
+  diamond-center source edge `x=557`; map the selected side-image half to
+  `Y<=0`; then apply one exact Rz180 completion.
+- Proven handle correction: the handle must include the upper coupler through
+  `A=132 cm`; the rejected handle stopped at `C=113220/1111 cm` and omitted
+  `33432/1111 = 30.091809180918 cm`.
+- Flamestrike-authorized candidates:
+  - rune-side half `[557,668)`;
+  - metal-center-piece half `[418,557)`.
+- Intermediate approval requirement:
+  `waived by Flamestrike for this exact two-candidate contract`.
+- Contract:
+  `steps/A12_R10_R8_CORRECT_AXIS_TWO_HAMMER_A01_CONTRACT.md`.
+- Required stop:
+  open one final two-hammer comparison board for Flamestrike.
+- FBX / Unreal / LOD / collision / game-ready authority:
+  `false / false / false / false / false`.
+
+## A12 R10 R8 Correct-Axis Two-Hammer Candidate Result
+
+- Date: `2026-07-23`.
+- Rune-side source half:
+  `[557,668) -> Y<=0 -> one Rz180 completion`.
+- Metal-center-piece source half:
+  `[418,557) -> Y<=0 -> one Rz180 completion`.
+- Both candidate bounds:
+  `97.87393951416016 x 47.479915618896484 x 170.0 cm`.
+- Corrected handle top:
+  `A=132 cm`, including the upper coupler.
+- Corrected handle locks:
+  `2.5 cm shaft radius / pi/2 wrap / 42 cm grip / 18 cm pommel / 11 cm maximum width`.
+- Rune candidate:
+  `26/26 builder PASS; 52/52 independent audit PASS`.
+- Metal candidate:
+  `26/26 builder PASS; 52/52 independent audit PASS`.
+- Artifact status:
+  `two DCC source candidates pending Flamestrike comparison`.
+- Review-board SHA-256:
+  `ae3dbabae8976f52f7ceae3d2f86cc288687608b0a457a47ba41d3441d87bf46`.
+- Output record:
+  `steps/A12_R10_R8_CORRECT_AXIS_TWO_HAMMER_A01_OUTPUT_RECORD.md`.
+- Pending decision:
+  `select Hammer A / select Hammer B / revise / reject / blocked`.
+- FBX / Unreal / LOD / collision / game-ready authority:
+  `false / false / false / false / false`.
