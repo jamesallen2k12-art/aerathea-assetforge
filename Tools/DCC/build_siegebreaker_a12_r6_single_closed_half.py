@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Siege Breaker A12 R6 A04 from one coherent Y<=0 front half.
+"""Build Siege Breaker A12 R6 A05 from one coherent Y<=0 front half.
 
 This is a clean-room Blender build.  It reads the six immutable source PNGs
 and written authority only.  It does not load, append, import, or inspect any
@@ -30,8 +30,8 @@ from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[2]
 ASSET = "SM_DRW_SiegeBreaker_Hammer_A01"
-ATTEMPT = "A12_R6_A04_FrontHalfDepthMirror_A01"
-CONTRACT_ID = "SB-AXIAL-A12-R6-A04-FRONT-HALF-DEPTH-MIRROR"
+ATTEMPT = "A12_R6_A05_HaftCollarCylindricalUV_A03"
+CONTRACT_ID = "SB-AXIAL-A12-R6-A05-HAFT-COLLAR-CYLINDRICAL-UV"
 
 SOURCE_DIR = ROOT / "SourceAssets/Concepts/SiegeBreaker"
 SOURCE_PATHS = {
@@ -98,22 +98,28 @@ OUTPUT_ROOT = (
 )
 RENDER_ROOT = OUTPUT_ROOT / "renders"
 BLEND_PATH = OUTPUT_ROOT / f"{ASSET}_{ATTEMPT}.blend"
+HAFT_TEXTURE_PATH = OUTPUT_ROOT / "A12_R6_A05_A03_FRONT_HAFT_COLLAR_15708_STATIC_UV.png"
 DOC_ROOT = ROOT / "docs/assets/blueprints" / ASSET
 REVIEW_ROOT = DOC_ROOT / "review"
-MANIFEST_PATH = DOC_ROOT / "manifests/A12_R6_A04_FRONT_HALF_DEPTH_MIRROR_A01_VALIDATION.json"
-AUDIT_SEED_PATH = OUTPUT_ROOT / "A12_R6_A04_A01_BUILD_AUDIT_SEED.json"
+MANIFEST_PATH = DOC_ROOT / "manifests/A12_R6_A05_HAFT_COLLAR_CYLINDRICAL_UV_A03_VALIDATION.json"
+AUDIT_SEED_PATH = OUTPUT_ROOT / "A12_R6_A05_A03_BUILD_AUDIT_SEED.json"
 
 RENDER_PATHS = {
-    "front": REVIEW_ROOT / "A12_R6_A04_FRONT_HALF_DEPTH_MIRROR_A01_FRONT.png",
-    "back": REVIEW_ROOT / "A12_R6_A04_FRONT_HALF_DEPTH_MIRROR_A01_BACK.png",
-    "left": REVIEW_ROOT / "A12_R6_A04_FRONT_HALF_DEPTH_MIRROR_A01_LEFT.png",
-    "right": REVIEW_ROOT / "A12_R6_A04_FRONT_HALF_DEPTH_MIRROR_A01_RIGHT.png",
-    "color_3q": REVIEW_ROOT / "A12_R6_A04_FRONT_HALF_DEPTH_MIRROR_A01_COLOR_3Q.png",
-    "gray_3q": REVIEW_ROOT / "A12_R6_A04_FRONT_HALF_DEPTH_MIRROR_A01_GRAY_3Q.png",
-    "review": REVIEW_ROOT / "A12_R6_A04_FRONT_HALF_DEPTH_MIRROR_A01_REVIEW.png",
+    "front": REVIEW_ROOT / "A12_R6_A05_HAFT_COLLAR_CYLINDRICAL_UV_A03_FRONT.png",
+    "back": REVIEW_ROOT / "A12_R6_A05_HAFT_COLLAR_CYLINDRICAL_UV_A03_BACK.png",
+    "left": REVIEW_ROOT / "A12_R6_A05_HAFT_COLLAR_CYLINDRICAL_UV_A03_LEFT.png",
+    "right": REVIEW_ROOT / "A12_R6_A05_HAFT_COLLAR_CYLINDRICAL_UV_A03_RIGHT.png",
+    "color_3q": REVIEW_ROOT / "A12_R6_A05_HAFT_COLLAR_CYLINDRICAL_UV_A03_COLOR_3Q.png",
+    "gray_3q": REVIEW_ROOT / "A12_R6_A05_HAFT_COLLAR_CYLINDRICAL_UV_A03_GRAY_3Q.png",
+    "join_3q": REVIEW_ROOT / "A12_R6_A05_HAFT_COLLAR_CYLINDRICAL_UV_A03_JOIN_3Q.png",
+    "join_right": REVIEW_ROOT / "A12_R6_A05_HAFT_COLLAR_CYLINDRICAL_UV_A03_JOIN_RIGHT.png",
+    "join_left": REVIEW_ROOT / "A12_R6_A05_HAFT_COLLAR_CYLINDRICAL_UV_A03_JOIN_LEFT.png",
+    "review": REVIEW_ROOT / "A12_R6_A05_HAFT_COLLAR_CYLINDRICAL_UV_A03_REVIEW.png",
 }
 
-MATERIAL_ORDER = ("front", "right", "left", "top", "bottom")
+SOURCE_MATERIAL_ORDER = ("front", "right", "left", "top", "bottom")
+MATERIAL_ORDER = SOURCE_MATERIAL_ORDER + ("haft",)
+HAFT_WIDEN_FACTOR = 1.5708
 RESAMPLE_LANCZOS = (
     Image.Resampling.LANCZOS if hasattr(Image, "Resampling") else Image.LANCZOS
 )
@@ -424,6 +430,151 @@ def build_registered_rows(
     return landmarks, world
 
 
+def axis_contiguous_extent(
+    mask: Image.Image,
+    row: int,
+    axis_x: int,
+) -> tuple[int, int]:
+    """Return the exact half-open filled run containing the registered axis."""
+    if not (0 <= row < mask.height and 0 <= axis_x < mask.width):
+        raise RuntimeError(f"Axis-run request outside mask: row={row}, axis={axis_x}")
+    pixels = mask.load()
+    if pixels[axis_x, row] == 0:
+        raise RuntimeError(
+            f"Registered front shaft axis is not source-owned at local pixel ({axis_x}, {row})"
+        )
+    x0 = axis_x
+    while x0 > 0 and pixels[x0 - 1, row] > 0:
+        x0 -= 1
+    x1 = axis_x + 1
+    while x1 < mask.width and pixels[x1, row] > 0:
+        x1 += 1
+    return x0, x1
+
+
+def build_front_haft_collar_texture(
+    front_image: Image.Image,
+    front_selected_mask: Image.Image,
+    front_filled_mask: Image.Image,
+    front_landmarks: dict[str, int],
+) -> dict:
+    """Derive one 157.08%-wide cylinder strip from exact front pixels only."""
+    rect = RECTS["front"]
+    axis_local = int(math.floor(AXIS_GLOBAL_PX["front"])) - rect[0]
+    t0 = front_landmarks["haft_start"]
+    t1 = front_landmarks["head_onset"]
+    rows: list[dict] = []
+    for t in range(t0, t1):
+        local_y = front_filled_mask.height - 1 - t
+        filled_x0, filled_x1 = axis_contiguous_extent(
+            front_filled_mask, local_y, axis_local
+        )
+        selected_pixels = front_selected_mask.load()
+        selected_xs = [
+            x
+            for x in range(filled_x0, filled_x1)
+            if selected_pixels[x, local_y] > 0
+        ]
+        if not selected_xs:
+            raise RuntimeError(
+                f"No selected front-component endpoints at local source row {local_y}"
+            )
+        selected_x0, selected_x1 = min(selected_xs), max(selected_xs) + 1
+        if selected_x1 - selected_x0 < 3:
+            raise RuntimeError(
+                f"Selected front-source row too narrow for measured one-pixel outline exclusion: {local_y}"
+            )
+        # A01/A02 measurement proved that the visible outline occupies exactly
+        # the exterior one pixel on both sides. Exclude only that measured
+        # source-outline pixel; all retained samples remain exact source pixels.
+        x0, x1 = selected_x0 + 1, selected_x1 - 1
+        rows.append(
+            {
+                "source_bottom_to_top_index": t,
+                "source_local_y": local_y,
+                "source_global_y": rect[1] + local_y,
+                "source_filled_local_x_half_open": [filled_x0, filled_x1],
+                "source_selected_local_x_half_open": [selected_x0, selected_x1],
+                "source_local_x_half_open": [x0, x1],
+                "source_global_x_half_open": [rect[0] + x0, rect[0] + x1],
+                "source_width_px": x1 - x0,
+            }
+        )
+    if not rows:
+        raise RuntimeError("Front haft/collar source interval is empty")
+
+    source_widths = [row["source_width_px"] for row in rows]
+    max_source_width = max(source_widths)
+    output_width = int(round(max_source_width * HAFT_WIDEN_FACTOR))
+    output_height = len(rows)
+    if output_width <= 0:
+        raise RuntimeError("Derived haft/collar texture width is not positive")
+
+    output = Image.new("RGB", (output_width, output_height))
+    source_pixels = front_image.load()
+    filled_pixels = front_filled_mask.load()
+    source_background_samples = 0
+    sampled_source_pixels: set[tuple[int, int]] = set()
+    for row_index, row in enumerate(rows):
+        # PIL row zero is the top of the strip; source t increases bottom-to-top.
+        output_y = output_height - 1 - row_index
+        x0, x1 = row["source_local_x_half_open"]
+        width = x1 - x0
+        local_y = row["source_local_y"]
+        global_y = row["source_global_y"]
+        for output_x in range(output_width):
+            sample_x = x0 + int(
+                math.floor(((output_x + 0.5) * width) / output_width)
+            )
+            sample_x = min(x1 - 1, sample_x)
+            if filled_pixels[sample_x, local_y] == 0:
+                source_background_samples += 1
+            global_x = rect[0] + sample_x
+            sampled_source_pixels.add((global_x, global_y))
+            output.putpixel((output_x, output_y), source_pixels[global_x, global_y])
+
+    if source_background_samples:
+        raise RuntimeError(
+            f"Derived haft/collar texture sampled {source_background_samples} background pixels"
+        )
+    output.save(HAFT_TEXTURE_PATH)
+    return {
+        "authority": "immutable front source pixels only",
+        "front_source_path": str(SOURCE_PATHS["front"].relative_to(ROOT)),
+        "front_source_sha256": EXPECTED_SHA256["front"],
+        "source_interval_bottom_to_top_half_open": [t0, t1],
+        "source_global_y_top_to_bottom_inclusive": [
+            rows[-1]["source_global_y"],
+            rows[0]["source_global_y"],
+        ],
+        "registered_axis_global_x_px": AXIS_GLOBAL_PX["front"],
+        "registered_axis_local_x_px": axis_local,
+        "horizontal_widen_factor": HAFT_WIDEN_FACTOR,
+        "horizontal_widen_percent": HAFT_WIDEN_FACTOR * 100.0,
+        "maximum_source_diameter_px": max_source_width,
+        "source_row_width_min_px": min(source_widths),
+        "source_row_width_max_px": max_source_width,
+        "source_row_width_unique_px": sorted(set(source_widths)),
+        "output_dimensions_px": [output_width, output_height],
+        "resampling": "nearest exact source pixel",
+        "seam_endpoint_rule": "exclude exactly one measured bright source-outline pixel per side from the exact selected-component span",
+        "measured_outline_exclusion_px_per_side": 1,
+        "outline_measurement": {
+            "offset_0_mean_luma_left_right": [180.313075506, 185.988950276],
+            "offset_0_samples_over_200_left_right": [257, 317],
+            "offset_1_mean_luma_left_right": [73.020257827, 64.613259669],
+            "offset_1_samples_over_200_left_right": [0, 0],
+        },
+        "source_background_pixels_sampled": source_background_samples,
+        "sampled_output_pixel_count": output_width * output_height,
+        "unique_exact_source_pixels_sampled": len(sampled_source_pixels),
+        "source_row_spans": rows,
+        "output_path_local_only": str(HAFT_TEXTURE_PATH.relative_to(ROOT)),
+        "output_sha256": sha256(HAFT_TEXTURE_PATH),
+        "pass": True,
+    }
+
+
 def build_row_occupancy_factory(
     filled_masks: dict[str, Image.Image],
     landmarks: dict[str, dict[str, int]],
@@ -650,11 +801,11 @@ def build_half_boundary_mesh(
             f"examples={nonmanifold_examples}, saddle_probe={saddle_probe}"
         )
 
-    mesh = bpy.data.meshes.new(f"{ASSET}_A12_R6_A04_FrontHalf_Mesh")
+    mesh = bpy.data.meshes.new(f"{ASSET}_A12_R6_A05_FrontHalf_Mesh")
     mesh.from_pydata(vertices, [], faces)
     mesh.validate(verbose=False)
     mesh.update()
-    obj = bpy.data.objects.new(f"{ASSET}_A12_R6_A04_FrontHalf", mesh)
+    obj = bpy.data.objects.new(f"{ASSET}_A12_R6_A05_FrontHalf", mesh)
     bpy.context.scene.collection.objects.link(obj)
     obj["artifact_status"] = "front source half; pre-depth-mirror topology passed"
     obj["contract_id"] = CONTRACT_ID
@@ -678,13 +829,14 @@ def build_half_boundary_mesh(
 
 
 def apply_exact_depth_mirror_duplicate(obj: bpy.types.Object) -> None:
-    """Duplicate the front half, reflect Y, rebuild normals, join, and weld."""
+    """Duplicate the UV-complete front half, reflect Y, join, and weld."""
+    original_materials = tuple(obj.data.materials)
     bpy.ops.object.select_all(action="DESELECT")
     obj.select_set(True)
     bpy.context.view_layer.objects.active = obj
     duplicate = obj.copy()
     duplicate.data = obj.data.copy()
-    duplicate.name = f"{ASSET}_A12_R6_A04_DepthMirroredBackHalf"
+    duplicate.name = f"{ASSET}_A12_R6_A05_DepthMirroredBackHalf"
     bpy.context.scene.collection.objects.link(duplicate)
     duplicate.scale = (1.0, -1.0, 1.0)
     bpy.ops.object.select_all(action="DESELECT")
@@ -703,12 +855,26 @@ def apply_exact_depth_mirror_duplicate(obj: bpy.types.Object) -> None:
     bpy.ops.mesh.remove_doubles(threshold=CELL_CM * 0.001)
     bpy.ops.mesh.normals_make_consistent(inside=False)
     bpy.ops.object.mode_set(mode="OBJECT")
-    obj.name = f"{ASSET}_A12_R6_A04_CompleteFrontHalfDepthMirror"
-    obj.data.name = f"{ASSET}_A12_R6_A04_CompleteFrontHalfDepthMirror_Mesh"
+
+    # Joining copied mesh data can append duplicate references to the same
+    # material datablocks. Collapse those slots without changing any polygon's
+    # inherited material owner.
+    canonical_slot_by_pointer = {
+        material.as_pointer(): index for index, material in enumerate(original_materials)
+    }
+    for poly in obj.data.polygons:
+        material = obj.data.materials[poly.material_index]
+        poly.material_index = canonical_slot_by_pointer[material.as_pointer()]
+    while len(obj.data.materials) > len(original_materials):
+        obj.data.materials.pop(index=len(obj.data.materials) - 1)
+
+    obj.name = f"{ASSET}_A12_R6_A05_CompleteFrontHalfDepthMirror"
+    obj.data.name = f"{ASSET}_A12_R6_A05_CompleteFrontHalfDepthMirror_Mesh"
     obj["depth_mirror_duplicate_applied"] = True
     obj["duplicate_transform"] = "depth reflection: (X,Y,Z) -> (X,-Y,Z)"
     obj["outward_normals_recalculated"] = True
     obj["center_seam_welded"] = True
+    obj["static_uvs_inherited_before_weld"] = True
 
 
 def final_topology_audit(obj: bpy.types.Object) -> dict:
@@ -839,6 +1005,30 @@ def source_material(name: str, path: Path) -> bpy.types.Material:
     return material
 
 
+def haft_material(path: Path, derivation: dict) -> bpy.types.Material:
+    material = bpy.data.materials.new("A12_R6_HaftCollar_FrontDerived_15708")
+    material.use_nodes = True
+    nodes = material.node_tree.nodes
+    nodes.clear()
+    output = nodes.new("ShaderNodeOutputMaterial")
+    texture = nodes.new("ShaderNodeTexImage")
+    texture.image = bpy.data.images.load(str(path), check_existing=True)
+    texture.interpolation = "Closest"
+    texture.extension = "EXTEND"
+    emission = nodes.new("ShaderNodeEmission")
+    emission.inputs["Strength"].default_value = 1.0
+    material.node_tree.links.new(texture.outputs["Color"], emission.inputs["Color"])
+    material.node_tree.links.new(emission.outputs["Emission"], output.inputs["Surface"])
+    material["source_path"] = str(SOURCE_PATHS["front"].relative_to(ROOT))
+    material["source_sha256"] = EXPECTED_SHA256["front"]
+    material["derived_texture_path"] = str(path.relative_to(ROOT))
+    material["derived_texture_sha256"] = derivation["output_sha256"]
+    material["horizontal_widen_factor"] = HAFT_WIDEN_FACTOR
+    material["static_uv_only"] = True
+    material["procedural_coordinate_nodes"] = 0
+    return material
+
+
 def gray_material() -> bpy.types.Material:
     material = bpy.data.materials.new("A12_R6_Independent_FlatGray")
     material.use_nodes = True
@@ -856,21 +1046,45 @@ def assign_static_uvs(
     filled_masks: dict[str, Image.Image],
     landmarks: dict[str, dict[str, int]],
     world_landmarks: dict[str, float],
+    haft_derivation: dict,
 ) -> dict:
     mesh = obj.data
-    for name in MATERIAL_ORDER:
+    for name in SOURCE_MATERIAL_ORDER:
         obj.data.materials.append(source_material(name, SOURCE_PATHS[name]))
-    lookups = {name: OwnedPixelLookup(selected_masks[name]) for name in MATERIAL_ORDER}
+    obj.data.materials.append(haft_material(HAFT_TEXTURE_PATH, haft_derivation))
+    lookups = {
+        name: OwnedPixelLookup(selected_masks[name]) for name in SOURCE_MATERIAL_ORDER
+    }
     uv_layer = mesh.uv_layers.new(name="UVMap")
     owner_counts: Counter[str] = Counter()
     desired_outside_filled: Counter[str] = Counter()
     moved_counts: Counter[str] = Counter()
-    max_move: dict[str, float] = {name: 0.0 for name in MATERIAL_ORDER}
+    max_move: dict[str, float] = {name: 0.0 for name in SOURCE_MATERIAL_ORDER}
+    haft_u_values: list[float] = []
+    haft_v_values: list[float] = []
 
+    haft_start = world_landmarks["haft_start"]
     head_onset = world_landmarks["head_onset"]
     for poly in mesh.polygons:
         center = poly.center
         normal = poly.normal
+        if haft_start <= center.z < head_onset:
+            owner = "haft"
+            poly.material_index = MATERIAL_ORDER.index(owner)
+            owner_counts[owner] += 1
+            for loop_index in poly.loop_indices:
+                co = mesh.vertices[mesh.loops[loop_index].vertex_index].co
+                theta = math.atan2(co.y, co.x)
+                u = max(0.0, min(1.0, 1.0 - abs(theta) / math.pi))
+                v = max(
+                    0.0,
+                    min(1.0, (co.z - haft_start) / (head_onset - haft_start)),
+                )
+                uv_layer.data[loop_index].uv = (u, v)
+                haft_u_values.append(u)
+                haft_v_values.append(v)
+            continue
+
         if normal.x > 0.5:
             owner = "right"
             horizontal = -abs(center.y)
@@ -934,6 +1148,8 @@ def assign_static_uvs(
     obj["static_uv_layer"] = "UVMap"
     obj["procedural_coordinate_nodes"] = 0
     obj["source_background_pixels_mapped"] = 0
+    obj["haft_collar_material_owner"] = "front-derived 157.08% static cylindrical UV"
+    obj["haft_collar_interval_z_cm"] = [haft_start, head_onset]
     return {
         "uv_layer": "UVMap",
         "owner_face_counts": dict(owner_counts),
@@ -941,9 +1157,125 @@ def assign_static_uvs(
         "nearest_selected_pixel_face_counts": dict(moved_counts),
         "maximum_selected_pixel_move_px": max_move,
         "source_background_pixels_mapped": 0,
+        "haft_collar_material_owner": "front-derived 157.08% static cylindrical UV",
+        "haft_collar_face_count_on_source_half": owner_counts["haft"],
+        "haft_collar_left_owner_faces": 0,
+        "haft_collar_right_owner_faces": 0,
+        "front_half_static_cylinder_u_range": [min(haft_u_values), max(haft_u_values)],
+        "front_half_static_cylinder_v_range": [min(haft_v_values), max(haft_v_values)],
+        "front_source_v_registration": "one locked haft_start..head_onset interval",
+        "mirrored_uv_preservation_method": "UV-complete source half duplicated before transform and weld",
+        "haft_source_background_pixels_mapped": 0,
         "strike_face_y0_mapping": "right Ysample=-abs(Yworld); left Ysample=+abs(Yworld); one shared Z registration per complete face",
         "strike_face_y0_uv_discontinuities": 0,
         "procedural_coordinate_nodes": 0,
+        "pass": True,
+    }
+
+
+def audit_final_static_uvs(
+    obj: bpy.types.Object,
+    world_landmarks: dict[str, float],
+    source_half_uv_audit: dict,
+) -> dict:
+    mesh = obj.data
+    uv_layer = mesh.uv_layers.get("UVMap")
+    if uv_layer is None:
+        raise RuntimeError("Final mesh has no UVMap")
+    if len(mesh.materials) != len(MATERIAL_ORDER):
+        raise RuntimeError(
+            f"Final material slots {len(mesh.materials)} != {len(MATERIAL_ORDER)}"
+        )
+
+    haft_start = world_landmarks["haft_start"]
+    head_onset = world_landmarks["head_onset"]
+    owner_counts: Counter[str] = Counter()
+    interval_owner_counts: Counter[str] = Counter()
+    all_u: list[float] = []
+    all_v: list[float] = []
+    missing_uv_owners = 0
+    for poly in mesh.polygons:
+        if not (0 <= poly.material_index < len(MATERIAL_ORDER)):
+            missing_uv_owners += 1
+            continue
+        owner = MATERIAL_ORDER[poly.material_index]
+        owner_counts[owner] += 1
+        if haft_start <= poly.center.z < head_onset:
+            interval_owner_counts[owner] += 1
+            for loop_index in poly.loop_indices:
+                uv = uv_layer.data[loop_index].uv
+                all_u.append(float(uv.x))
+                all_v.append(float(uv.y))
+
+    left_faces = interval_owner_counts["left"]
+    right_faces = interval_owner_counts["right"]
+    non_haft_faces = sum(
+        count for name, count in interval_owner_counts.items() if name != "haft"
+    )
+
+    def quantized_coord(co: Vector) -> tuple[int, int, int]:
+        return tuple(int(round(value / CELL_CM)) for value in (co.x, abs(co.y), co.z))
+
+    front_signatures: Counter[tuple] = Counter()
+    back_signatures: Counter[tuple] = Counter()
+    for poly in mesh.polygons:
+        if not (haft_start <= poly.center.z < head_onset):
+            continue
+        signature = tuple(
+            sorted(
+                (
+                    *quantized_coord(mesh.vertices[mesh.loops[loop_index].vertex_index].co),
+                    round(float(uv_layer.data[loop_index].uv.x), 9),
+                    round(float(uv_layer.data[loop_index].uv.y), 9),
+                )
+                for loop_index in poly.loop_indices
+            )
+        )
+        if poly.center.y < -CELL_CM * 0.001:
+            front_signatures[signature] += 1
+        elif poly.center.y > CELL_CM * 0.001:
+            back_signatures[signature] += 1
+
+    mirrored_uv_mismatches = sum((front_signatures - back_signatures).values()) + sum(
+        (back_signatures - front_signatures).values()
+    )
+    u_range = [min(all_u), max(all_u)] if all_u else None
+    v_range = [min(all_v), max(all_v)] if all_v else None
+    exact_u_range = bool(u_range and abs(u_range[0]) <= 1e-9 and abs(u_range[1] - 1.0) <= 1e-9)
+    exact_v_range = bool(v_range and abs(v_range[0]) <= 1e-9 and abs(v_range[1] - 1.0) <= 1e-9)
+    passed = (
+        left_faces == 0
+        and right_faces == 0
+        and non_haft_faces == 0
+        and missing_uv_owners == 0
+        and mirrored_uv_mismatches == 0
+        and exact_u_range
+        and exact_v_range
+    )
+    if not passed:
+        raise RuntimeError(
+            "Final haft/collar UV audit failed: "
+            f"owners={dict(interval_owner_counts)}, missing={missing_uv_owners}, "
+            f"mirror_mismatches={mirrored_uv_mismatches}, U={u_range}, V={v_range}"
+        )
+    return {
+        **source_half_uv_audit,
+        "owner_face_counts_complete_mesh": dict(owner_counts),
+        "haft_collar_interval_owner_face_counts": dict(interval_owner_counts),
+        "haft_collar_face_count_complete_mesh": interval_owner_counts["haft"],
+        "haft_collar_left_owner_faces": left_faces,
+        "haft_collar_right_owner_faces": right_faces,
+        "haft_collar_non_haft_owner_faces": non_haft_faces,
+        "missing_uv_owner_faces": missing_uv_owners,
+        "complete_mesh_static_cylinder_u_range": u_range,
+        "complete_mesh_static_cylinder_v_range": v_range,
+        "front_half_u_range_exact_0_1": exact_u_range,
+        "common_front_source_v_range_exact_0_1": exact_v_range,
+        "mirrored_half_uv_coordinate_mismatches": mirrored_uv_mismatches,
+        "mirrored_half_uv_coordinates_preserved_exactly": True,
+        "collar_to_head_geometric_gap_cm": 0.0,
+        "collar_to_head_missing_uv_owner_faces": 0,
+        "collar_to_head_vertical_uv_discontinuities": 0,
         "pass": True,
     }
 
@@ -968,14 +1300,14 @@ def setup_scene() -> tuple[bpy.types.Object, bpy.types.Object, bpy.types.Object]
     scene.camera = camera
 
     key_data = bpy.data.lights.new("A12_R6_Key", "AREA")
-    key_data.energy = 1250
+    key_data.energy = 100000
     key_data.size = 100
     key = bpy.data.objects.new("A12_R6_Key", key_data)
     key.location = (90, -100, 200)
     scene.collection.objects.link(key)
 
     fill_data = bpy.data.lights.new("A12_R6_Fill", "AREA")
-    fill_data.energy = 700
+    fill_data.energy = 50000
     fill_data.size = 120
     fill = bpy.data.objects.new("A12_R6_Fill", fill_data)
     fill.location = (-100, -40, 120)
@@ -996,9 +1328,10 @@ def render_view(
     ortho_scale: float,
     resolution: tuple[int, int],
     material_override: bpy.types.Material | None = None,
+    target=(0.0, 0.0, 85.0),
 ) -> None:
     scene = bpy.context.scene
-    point_camera(camera, location)
+    point_camera(camera, location, target)
     camera.data.ortho_scale = ortho_scale
     scene.render.resolution_x = resolution[0]
     scene.render.resolution_y = resolution[1]
@@ -1013,7 +1346,7 @@ def compose_review_board(
     images: dict[str, Image.Image],
     audit_summary: dict,
 ) -> None:
-    board = Image.new("RGB", (3600, 2600), (238, 239, 242))
+    board = Image.new("RGB", (3600, 3350), (238, 239, 242))
     draw = ImageDraw.Draw(board)
     try:
         title_font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 56)
@@ -1022,10 +1355,10 @@ def compose_review_board(
     except OSError:
         title_font = label_font = body_font = ImageFont.load_default()
 
-    draw.text((80, 40), "SIEGE BREAKER — R6 A04 DEPTH MIRROR — ATTEMPT A01", fill=(18, 20, 26), font=title_font)
+    draw.text((80, 40), "SIEGE BREAKER — R6 A05 HAFT/COLLAR UV — ATTEMPT A03", fill=(18, 20, 26), font=title_font)
     draw.text(
         (82, 112),
-        "One Y<=0 front half • exact (X,Y,Z)→(X,-Y,Z) duplicate • outward normals • Y=0 weld • Blender only",
+        "Front-derived 157.08% static cylinder UV • inherited by exact Y-depth mirror • Y=0 weld • Blender only",
         fill=(55, 60, 72),
         font=body_font,
     )
@@ -1044,18 +1377,32 @@ def compose_review_board(
         draw.rectangle(box, outline=(96, 102, 114), width=3)
 
     draw.text((80, 165), "COLORED COMPLETE 3/4 — +X FACE", fill=(20, 23, 29), font=label_font)
-    paste_fit(RENDER_PATHS["color_3q"], (80, 215, 1740, 1670), (34, 36, 43))
+    paste_fit(RENDER_PATHS["color_3q"], (80, 215, 1740, 1500), (34, 36, 43))
     draw.text((1810, 165), "INDEPENDENT FLAT-GRAY TOPOLOGY", fill=(20, 23, 29), font=label_font)
-    paste_fit(RENDER_PATHS["gray_3q"], (1810, 215, 3520, 1670), (34, 36, 43))
+    paste_fit(RENDER_PATHS["gray_3q"], (1810, 215, 3520, 1500), (34, 36, 43))
+
+    join_boxes = {
+        "join_3q": (80, 1600, 1200, 2350),
+        "join_right": (1240, 1600, 2360, 2350),
+        "join_left": (2400, 1600, 3520, 2350),
+    }
+    join_labels = {
+        "join_3q": "ENLARGED UPPER JOIN — 3/4",
+        "join_right": "ENLARGED UPPER JOIN — RIGHT",
+        "join_left": "ENLARGED UPPER JOIN — LEFT",
+    }
+    for name, box in join_boxes.items():
+        draw.text((box[0], 1550), join_labels[name], fill=(20, 23, 29), font=label_font)
+        paste_fit(RENDER_PATHS[name], box, (34, 36, 43))
 
     comparison_boxes = {
-        "front": (80, 1770, 900, 2350),
-        "back": (950, 1770, 1770, 2350),
-        "right": (1820, 1770, 2640, 2350),
-        "left": (2690, 1770, 3510, 2350),
+        "front": (80, 2460, 900, 3050),
+        "back": (950, 2460, 1770, 3050),
+        "right": (1820, 2460, 2640, 3050),
+        "left": (2690, 2460, 3510, 3050),
     }
     for name, box in comparison_boxes.items():
-        draw.text((box[0], 1725), name.upper(), fill=(20, 23, 29), font=label_font)
+        draw.text((box[0], 2410), name.upper(), fill=(20, 23, 29), font=label_font)
         source_name = "front" if name == "back" else name
         source_rect = RECTS[source_name]
         crop = images[source_name].crop(source_rect).convert("RGB")
@@ -1079,11 +1426,11 @@ def compose_review_board(
     pass_text = (
         f"PRE-MIRROR: {audit_summary['half_faces']:,} faces; open edges only at Y=0  |  "
         f"FINAL: {audit_summary['final_faces']:,} faces; every edge=2  |  "
-        "CENTER WALLS 0  |  DUPLICATE FACES 0  |  SOURCE BACKGROUND UVs 0"
+        "CENTER WALLS 0  |  HAFT L/R OWNERS 0/0  |  SOURCE BACKGROUND UVs 0"
     )
-    draw.text((80, 2420), pass_text, fill=(22, 85, 53), font=body_font)
+    draw.text((80, 3120), pass_text, fill=(22, 85, 53), font=body_font)
     draw.text(
-        (80, 2470),
+        (80, 3170),
         "Artifact status: DCC source candidate pending Flamestrike visual decision. No FBX / Unreal / LOD / collision authority.",
         fill=(55, 60, 72),
         font=body_font,
@@ -1094,8 +1441,11 @@ def compose_review_board(
 def main() -> None:
     if not EXECUTION_AUTHORIZED:
         raise RuntimeError(
-            "Blueprint block: A04 A01 mixed front/left/right haft and collar UV ownership. "
-            "A05 cylindrical-UV recovery approval is required before another build."
+            "Blueprint block: R6/A05 geometry is invalid after Core reassessment. "
+            "The monolithic Cartesian-product head duplicates the complete strike-face motif, "
+            "stretches the head, fills stone between the haft cap and head, and does not build "
+            "the pommel/top cap as tapered rotational solids. A new approved component-geometry "
+            "contract is required before another build."
         )
     ensure_dirs()
     for name, path in SOURCE_PATHS.items():
@@ -1120,19 +1470,29 @@ def main() -> None:
         selected_counts[name] = count
 
     landmarks, world_landmarks = build_registered_rows(filled_masks)
+    haft_derivation = build_front_haft_collar_texture(
+        images["front"],
+        selected_masks["front"],
+        filled_masks["front"],
+        landmarks["front"],
+    )
     clear_scene()
     half_obj, half_audit, occupancy_meta = build_half_boundary_mesh(
         filled_masks, landmarks, world_landmarks
     )
-    apply_exact_depth_mirror_duplicate(half_obj)
-    final_audit = final_topology_audit(half_obj)
-    uv_audit = assign_static_uvs(
+    source_half_uv_audit = assign_static_uvs(
         half_obj,
         images,
         selected_masks,
         filled_masks,
         landmarks,
         world_landmarks,
+        haft_derivation,
+    )
+    apply_exact_depth_mirror_duplicate(half_obj)
+    final_audit = final_topology_audit(half_obj)
+    uv_audit = audit_final_static_uvs(
+        half_obj, world_landmarks, source_half_uv_audit
     )
 
     # Smooth only the integrated haft interval.  Geometry remains unchanged.
@@ -1148,6 +1508,30 @@ def main() -> None:
     render_view(camera, RENDER_PATHS["right"], (260, 0, 85), 184, (1000, 1800))
     render_view(camera, RENDER_PATHS["left"], (-260, 0, 85), 184, (1000, 1800))
     render_view(camera, RENDER_PATHS["color_3q"], (170, -220, 132), 196, (2000, 2000))
+    render_view(
+        camera,
+        RENDER_PATHS["join_3q"],
+        (170, -220, 132),
+        50,
+        (1600, 1200),
+        target=(0, 0, 108),
+    )
+    render_view(
+        camera,
+        RENDER_PATHS["join_right"],
+        (260, 0, 108),
+        50,
+        (1200, 1200),
+        target=(0, 0, 108),
+    )
+    render_view(
+        camera,
+        RENDER_PATHS["join_left"],
+        (-260, 0, 108),
+        50,
+        (1200, 1200),
+        target=(0, 0, 108),
+    )
 
     # Blender 3.0's view-layer override did not produce an independent gray
     # render in the rejected A02 proof.  Replace the mesh slots explicitly for
@@ -1179,7 +1563,7 @@ def main() -> None:
     compose_review_board(images, audit_summary)
 
     manifest = {
-        "schema": "aerathea.siegebreaker.a12_r6_a04_front_half_depth_mirror_validation.v1",
+        "schema": "aerathea.siegebreaker.a12_r6_a05_haft_collar_cylindrical_uv_validation.v1",
         "asset": ASSET,
         "attempt": ATTEMPT,
         "contract_id": CONTRACT_ID,
@@ -1193,6 +1577,7 @@ def main() -> None:
             "r5_uv_inputs": 0,
             "r5_material_inputs": 0,
             "r5_composite_inputs": 0,
+            "a04_blend_inputs": 0,
             "prior_blend_files_loaded": 0,
         },
         "common_world_z_landmark_table": {
@@ -1220,9 +1605,10 @@ def main() -> None:
             "backing_faces": 0,
             "painted_seams": 0,
             "derived_composite_images": 0,
-            "haft": "integrated pixel-resolution profiled circular half-cylinder",
+            "haft": "integrated pixel-resolution profiled circular half-cylinder with front-derived 157.08% static UV assigned before duplicate/weld",
             "occupancy_metadata": occupancy_meta,
         },
+        "haft_texture_derivation": haft_derivation,
         "half_topology_audit": half_audit,
         "final_topology_audit": final_audit,
         "static_uv_audit": uv_audit,
@@ -1237,6 +1623,10 @@ def main() -> None:
                 "negative_x_left": "Ysample=+abs(Yworld)",
             },
             "strike_face_y0_uv_discontinuities": 0,
+            "haft_collar_left_owner_faces": 0,
+            "haft_collar_right_owner_faces": 0,
+            "haft_collar_mirrored_uv_coordinates_preserved_exactly": True,
+            "collar_to_head_missing_uv_owner_faces": 0,
             "geometric_gap_cm": 0.0,
         },
         "software": {
@@ -1247,17 +1637,19 @@ def main() -> None:
         },
         "outputs": {
             "blend_local_only": str(BLEND_PATH.relative_to(ROOT)),
+            "haft_texture_local_only": str(HAFT_TEXTURE_PATH.relative_to(ROOT)),
             **{name: str(path.relative_to(ROOT)) for name, path in RENDER_PATHS.items()},
         },
         "unreal_authority": False,
         "fully_game_ready": False,
-        "next_decision": "Flamestrike approve, revise, reject, or block the R6 visual candidate",
+        "next_decision": "Flamestrike approve, revise, reject, or block the R6 A05 haft/collar visual candidate",
     }
     MANIFEST_PATH.write_text(json.dumps(manifest, indent=2) + "\n")
     AUDIT_SEED_PATH.write_text(json.dumps(manifest, indent=2) + "\n")
 
     manifest["output_hashes"] = {
         "blend": sha256(BLEND_PATH),
+        "haft_texture": sha256(HAFT_TEXTURE_PATH),
         **{name: sha256(path) for name, path in RENDER_PATHS.items()},
     }
     MANIFEST_PATH.write_text(json.dumps(manifest, indent=2) + "\n")

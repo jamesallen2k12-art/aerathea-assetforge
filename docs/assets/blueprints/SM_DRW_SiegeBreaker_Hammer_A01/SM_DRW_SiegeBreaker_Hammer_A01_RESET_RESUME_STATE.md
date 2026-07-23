@@ -1,13 +1,13 @@
 # SM_DRW_SiegeBreaker_Hammer_A01 Reset / Resume State
 
-- Active approved route: `blocked after A12 R6 A04 A01 visual failure`
-- Plan: `SM_DRW_SiegeBreaker_Hammer_A01_PIXEL_HALF_MIRROR_A09_PLAN.md`
-- Active contract: `none for further Blender execution; A05 is draft`
-- Current state: `R6 A04 A01 invalid/quarantined after Flamestrike identified disconnected-looking haft UVs, vertical misregistration, and missing collar pixel ownership`
-- Next approved activity: `none; request Flamestrike decision on the draft A05 haft/collar cylindrical-UV recovery contract`
+- Active approved route: `none; Core Recovery after A12 R6 A05 geometry failure`
+- Plan: `SM_DRW_SiegeBreaker_Hammer_A01_A12_R7_COMPONENT_GEOMETRY_RECOVERY_PLAN.md` (`draft; approval required`)
+- Active contract: `none for Blender execution; A05 is historical invalid output evidence`
+- Current state: `R6 A05 A01-A03 invalid/quarantined after foundational component-geometry failure`
+- Next approved activity: `none; first present the draft R7 plan for Flamestrike approval or revision`
 - Source processing authorized now: `true only for the immutable six-view evidence and exact R6 ownership rules`
 - Model inference authorized now: `false`
-- DCC production authorized now: `false pending A05 approval`
+- DCC production authorized now: `false`
 - Unreal authority: `false`
 - Fully game-ready: `false`
 
@@ -155,10 +155,16 @@
   faces; the upper collar mixed `6,592` front with `2,176` left and `2,176`
   right. The complete colored candidate is invalid; the mechanical checks are
   proof only.
-- Current block: `Blueprint block: revised haft/collar UV ownership rule
-  requires Flamestrike approval before another Blender build`. The draft A05
-  contract proposes one fresh front-derived `157.08%` static cylindrical UV
-  owner for the complete haft/collar, preserved through the Y-depth mirror.
+- Flamestrike approved the A05 correction: one fresh front-derived `157.08%`
+  static cylindrical UV owner for the complete haft/collar, preserved through
+  the Y-depth mirror. The A04 A01 blend remains forbidden input.
+- A05 A01-A03 are now invalid/quarantined. Flamestrike proved that the wider,
+  warped head and doubled face began when a complete strike-face region was
+  repeated instead of splitting one face at its own vertical centerline and
+  duplicating only one half. The monolithic front-X × side-Y occupancy also
+  fills stone between the upper haft cap and head and does not create tapered
+  rotational pommel/top-cap geometry. A05's narrow UV mechanics remain `proof
+  only`; no DCC execution authority remains.
 
 ## Active Method
 
@@ -180,19 +186,11 @@ Blender-only direction.
 
 ## Resume Instruction
 
-Read the recovery journal/latest checkpoint, this state, A09 final approval,
-A11 authority, `steps/A12_R3_COMPONENT_SEPARATION_OUTPUT_RECORD.md`, and
-`steps/A12_R4_SIDE_OWNER_FACE_OUTPUT_RECORD.md`, and
-  `steps/A12_R5_FOUR_VIEW_WHOLE_ASSEMBLY_RECONSTRUCTION_CONTRACT.md`, and
-  `steps/A12_R5_CYLINDRICAL_HAFT_A04_OUTPUT_RECORD.md`, and
-  `steps/A12_R6_SINGLE_CLOSED_HALF_RECOVERY_CONTRACT.md`. A04 is invalid. Do not
-  render it forward or reuse any of its facade, wall, side-owner, cylinder, UV,
-  or composite material construction. R6 is approved only for the fresh
-  single-closed-half construction, fail-closed audit, and declared review
-  package. R6A01 failed before output and A02 is superseded unexecuted. A03 is
-  superseded. A04 A01 is invalid after visible haft/collar failure; do not load
-  or repair its blend. Read
-  `steps/A12_R6_A04_FRONT_HALF_DEPTH_MIRROR_A01_OUTPUT_RECORD.md` and the draft
-  `steps/A12_R6_A05_HAFT_COLLAR_CYLINDRICAL_UV_RECOVERY_CONTRACT.md`, then stop
-  for Flamestrike approval. Do not run another Blender build, export, enter
-  Unreal, or use TRELLIS or any other prohibited generation software.
+Read only the latest recovery journal/checkpoint, this reset state,
+`steps/A12_R6_A05_CORE_REASSESSMENT_AND_RECOVERY.md`, and
+`SM_DRW_SiegeBreaker_Hammer_A01_A12_R7_COMPONENT_GEOMETRY_RECOVERY_PLAN.md`.
+Report that A05 A01-A03 are invalid/quarantined and that DCC authority is
+false. Present the draft R7 plan for Flamestrike approval or revision, then
+stop. Do not run the disabled builder, inspect or reuse an old blend, begin
+measurement Step 01, create geometry, export, enter Unreal, or use TRELLIS or
+any prohibited generation software before that approval.

@@ -7907,3 +7907,53 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260722-213218/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260722-213218/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 21:42:11 EDT -0400 - Before Siege Breaker A12 R6 A05 approved haft collar cylindrical UV build
+
+- Snapshot: `Saved/ProjectRecovery/20260722-214211/`
+- Git: branch `main`, HEAD `ba0182c`, status lines `374`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-214211/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-214211/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-214211/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 21:46:56 EDT -0400 - Before Siege Breaker A12 R6 A05 A02 selected-endpoint seam correction build
+
+- Snapshot: `Saved/ProjectRecovery/20260722-214656/`
+- Git: branch `main`, HEAD `ba0182c`, status lines `388`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-214656/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-214656/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-214656/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 21:52:27 EDT -0400 - Before Siege Breaker A12 R6 A05 A03 measured one-pixel outline exclusion build
+
+- Snapshot: `Saved/ProjectRecovery/20260722-215227/`
+- Git: branch `main`, HEAD `ba0182c`, status lines `400`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-215227/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-215227/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-215227/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 21:55:10 EDT -0400 - Before Siege Breaker A12 R6 A05 A03 final proof-lighting rebuild
+
+- Snapshot: `Saved/ProjectRecovery/20260722-215510/`
+- Git: branch `main`, HEAD `ba0182c`, status lines `412`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-215510/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-215510/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-215510/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 22:03:03 EDT -0400 - Siege Breaker A12 R6 A05 Core Recovery and draft R7 reset-safe plan
+
+- Snapshot: `Saved/ProjectRecovery/20260722-220303/`
+- Git: branch `main`, HEAD `ba0182c`, status lines `415`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-220303/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-220303/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-220303/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

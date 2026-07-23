@@ -4,7 +4,7 @@
 - Parent contract: `SB-AXIAL-A12-R6-A04-FRONT-HALF-DEPTH-MIRROR`
 - Proposed contract ID: `SB-AXIAL-A12-R6-A05-HAFT-COLLAR-CYLINDRICAL-UV`
 - Date: `2026-07-22`
-- Status: `draft; Flamestrike approval required before execution`
+- Status: `approved scope executed; result invalid; no longer active after Core reassessment`
 - Artifact ceiling if approved: `DCC source candidate pending Flamestrike visual decision`
 - Unreal authority: `false`
 - Fully game-ready authority: `false`
@@ -76,3 +76,19 @@ Any failure makes the attempt invalid and stops before visible presentation.
   coordinate nodes;
 - no FBX, Unreal, LOD, collision, packaging, or game-ready escalation;
 - no self-approval.
+
+## Execution Outcome And Superseding Core Reassessment
+
+A01-A03 are `invalid / quarantined` as complete visual or geometry candidates.
+The A05-local UV correction was implemented, but it inherited an invalid R6
+head/pommel construction. Flamestrike identified head stretch, incorrect
+strike-face rotation/taper, renewed stone between the haft cap and head, and
+non-rotational pommel/top-cap geometry. Flamestrike further clarified that the
+strike-face division must run down the face's own vertical middle and only one
+half-face may be duplicated; the implementation repeated a complete face
+motif on both sides.
+
+The first violating construction is recorded in
+`A12_R6_A05_CORE_REASSESSMENT_AND_RECOVERY.md`. This contract no longer
+authorizes Blender execution. Its closed-mesh, Y-depth-mirror, weld, and
+haft/collar UV results are `proof only` for those narrow mechanics.

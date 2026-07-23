@@ -608,3 +608,113 @@ immutable source files after approving one haft-specific rule that assigns the
 complete front semicylinder and its collar to one front-derived static UV
 island, preserves that UV through the Y-depth mirror, and forbids left/right
 source ownership below the exact head transition.
+
+## R6 A05 A01 — Exact UV Inheritance, Bright Source-Outline Seam
+
+- Date: `2026-07-22`
+- Status: `internally rejected; quarantined; not presented as a valid candidate`
+- Contract: `SB-AXIAL-A12-R6-A05-HAFT-COLLAR-CYLINDRICAL-UV`
+
+A01 rebuilt fresh, assigned the front-derived `157.08%` cylindrical UV to the
+source half before the approved Y-depth duplicate/weld, and passed its numeric
+gates. The complete haft/collar contained `169,196` haft-owned faces, zero
+left-owned faces, zero right-owned faces, exact `U/V=0..1`, and zero mirrored
+UV-coordinate mismatches.
+
+Internal visual inspection rejected the attempt because the enlarged left and
+right join renders still contained a bright vertical line at the Y=0 side
+seam. The mesh is welded and both halves have identical seam coordinates; the
+line is therefore not a geometric gap or scale mismatch. The first and last
+texture columns came from the bright exterior pixels of each axis-containing
+filled front-source row. Their mean luma values were `180.313075506` and
+`185.988950276`, compared with `101.046040516` for the center column. Mapping
+those bright silhouette-edge pixels to the cylinder's two side seams exposed
+the source outline as a false seam.
+
+Bounded A02 correction inside the approved contract: keep the same immutable
+front source, geometry, 157.08% widening, nearest sampling, pre-mirror static
+UV assignment, transform, and weld. For every registered row, retain the exact
+axis-containing filled span but place its first and last exact selected-component
+pixels at the strip endpoints. No pixel is invented, painted, averaged, or
+borrowed from another view. A01 remains local `proof only` for its passing
+mechanical checks and `invalid` as a visual candidate.
+
+## R6 A05 A02 — Selected Endpoints Preserve The Same One-Pixel Outline
+
+- Date: `2026-07-22`
+- Status: `internally rejected; quarantined; not presented as a valid candidate`
+- Contract: `SB-AXIAL-A12-R6-A05-HAFT-COLLAR-CYLINDRICAL-UV`
+
+A02 replaced filled-span endpoints with the first and last exact pixels in the
+locked selected component. The enlarged side renders were visually unchanged:
+the bright vertical line remained because those selected endpoints are the
+same one-pixel contour captured by the `<=234` component threshold.
+
+Exact inward-column measurement established a finite, one-pixel outline band
+across the 543 registered rows:
+
+- offset `0`: left/right mean luma `180.313/185.989`, with `257/317` rows over
+  luma `200`;
+- offset `1`: left/right mean luma `73.020/64.613`, with `0/0` rows over luma
+  `200`.
+
+Bounded A03 correction: exclude exactly the measured exterior one pixel on
+each side of every selected source row, then retain the same nearest-source
+sampling and `157.08%` widening. This removes no unmeasured interior band and
+introduces no new pixel, paint, interpolation, alternate view, geometry, UV,
+transform, or material owner. A02 remains local `proof only` for mechanical
+checks and `invalid` as a visual candidate.
+
+### A03 Pre-Proof Packaging Rejection — Flat Gray Underlit
+
+The first A03 clean build removed the false white seam and passed the contract
+gates, but its independent Principled flat-gray proof rendered too dark for a
+useful topology review. The mesh, UVs, source pixels, materials, mirror, weld,
+and colored outputs were not rejected or changed. Only the Blender area-light
+energy used by the gray proof is corrected before regenerating the declared
+review package.
+
+- underlit gray proof SHA:
+  `e181fe48f1c2968dabd0094efb0a73224ede3560ac3aecadc832dc2d02b350f8`;
+- underlit review board SHA:
+  `307d3f5a4cb080245170038a06662f376770f9160e425b7ffb709d4382e27231`.
+
+## R6 A05 A03 — Whole Geometry Invalid After Flamestrike Review
+
+- Date: `2026-07-22`
+- Status: `invalid / quarantined; never eligible for approval`
+- Contract: `SB-AXIAL-A12-R6-A05-HAFT-COLLAR-CYLINDRICAL-UV`
+
+Flamestrike's visible review identified failures outside the local A05 UV
+correction: the head is stretched, the strike-face piece has the wrong
+rotation/pitch, stone again fills the space between the upper haft cap and the
+head, and the pommel and top cap are not tapered rotational forms. Flamestrike
+also clarified that the strike-face division belongs down the vertical middle
+of one face and only one half-face should be duplicated. The A03 side view
+instead repeats a complete face motif, producing two face diamonds and an
+artificially wide head.
+
+The A03 implementation's first invalid construction is the non-haft branch of
+`build_row_occupancy_factory`: it forms
+`front-row X cells × right-row Y cells` as one solid cross-section. This makes
+one monolithic extrusion instead of separate centered core, strike stones,
+face half, tapered cap, and pommel volumes. The right/left source is then used
+mainly as a material owner on a resulting stair wall; it does not establish the
+face's required inward pitch. The strike texture is folded around the global
+shaft axis rather than split at the strike face's own centerline.
+
+Preserved A03 hashes before reclassification:
+
+- `.blend`: `e474f79351c1296ff257b225f839a9e6195b71eed51ffb88d651a36eade69f14`;
+- validation: `514a4703d790cedca3c8cf5f24afe07233fa1e0138d98031010e4aaab1ba3aa4`;
+- review board: `8799af5bfe8d349f71a7586b4b230c40fe75bc52df404d9a05e72dce61d886df`;
+- colored three-quarter: `da82a596fd8fdb6891ed258f3cbcb80c68acf1badcb2bd0ef7b02bee6d9f2708`;
+- enlarged join 3/4: `2769ff7c6dc009e082c6367ff73e9b1c42d57422a4c05c60f13f8f59633fbbf1`;
+- enlarged right: `e453cfff61e845581832c2d0864ac37470eb5fb3b5253206e3fa82561e10eae5`;
+- enlarged left: `1897b69afb941182d4a8895b147f2d8c6af1315b01c2994c73c9d3037607000c`.
+
+Narrow proof retained: edge incidence, one connected topology, Y-depth mirror,
+weld, outward normals, and haft/collar UV inheritance. None of those mechanics
+proves correct component geometry or visual fidelity. No independent candidate
+audit will be run. The builder is disabled pending a new approved geometry
+contract.

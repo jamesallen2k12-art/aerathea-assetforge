@@ -954,3 +954,44 @@ Core authority: `AGENTS.md` Core Principles govern this ledger. Drifted artifact
 - Follow-up Core/Kaizen improvement: component-specific ownership rules must be
   evaluated before global normal-direction material routing; connected topology
   does not prove continuous visible ownership.
+
+### 2026-07-22 - Siege Breaker A12 R6/A05 Monolithic Geometry And Full-Face Duplication Drift
+
+- Asset or scope: `SM_DRW_SiegeBreaker_Hammer_A01` R6 base geometry inherited
+  by A05 A01-A03.
+- Detected by: Flamestrike visual review of the A05 output.
+- Last known Core-valid state: immutable source pixels/hashes; `170 cm` frame;
+  approved centered-core/two-stone separation evidence; original side-source
+  strike-face appearance; exact haft axis; and the requirement to build one
+  physical half of each component before duplication.
+- First drift action: outside the cylindrical haft interval,
+  `build_row_occupancy_factory` created every cross-section as the Cartesian
+  product of all front-row X cells and all right-row Y cells. This collapsed
+  separate core, stone, strike-face, cap, and pommel forms into one monolithic
+  extruded volume.
+- Compounding mapping error: the strike-face source was folded about the
+  global shaft axis, causing a complete strike-face motif to appear on each
+  mirrored half. Flamestrike's authoritative correction is that the division
+  line runs down the vertical middle of one strike face and only one half-face
+  is duplicated.
+- Assumption that caused drift: closed manifold topology and exact mirroring
+  were treated as proof of correct component geometry, while side-source
+  pixels were used mainly for depth extent/material ownership instead of the
+  strike face's pitch, taper, and own centerline.
+- Proven visible effects: widened/stretched head; duplicated face diamonds;
+  incorrect face rotation/pitch; stone between the upper haft cap and head;
+  pommel and top cap represented as extruded silhouettes instead of tapered
+  cylinders/cones.
+- Affected outputs: R6 A04 and A05 geometry basis; A05 A01-A03 blends,
+  textures, manifests, colored/gray/join renders, review boards, and candidate
+  labels.
+- Artifact statuses: A05 A01-A03 `invalid / quarantined`; edge-incidence,
+  connectivity, Y-mirror/weld, and haft/collar UV mechanics `proof only`;
+  sources and explicit Flamestrike geometry corrections `authoritative`.
+- Recovery decision: disable the builder; do not repair forward; return to
+  source evidence and component separation; require a new approved contract
+  for the face half-centerline/pitch, separate stones/core, tapered rotational
+  pommel/top cap, and zero inter-cap stone occupancy.
+- Follow-up Core/Kaizen improvement: every geometry gate must compare
+  component count, centerline, taper/pitch, and negative-space occupancy—not
+  merely envelope, manifoldness, mirror equality, or texture ownership.

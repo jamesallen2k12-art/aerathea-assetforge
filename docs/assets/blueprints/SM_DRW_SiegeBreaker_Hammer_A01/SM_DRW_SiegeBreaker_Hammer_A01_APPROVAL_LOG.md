@@ -633,6 +633,32 @@
 - Image generation, TRELLIS, image-to-3D, FBX, Unreal, LOD, collision, and
   game-ready escalation remain unauthorized.
 
+## A12 R6 A05 Visual Rejection And Geometry Clarification
+
+- Date: `2026-07-22`.
+- Flamestrike finding: the hammer face was duplicated as a whole; only one
+  half-face should be constructed and duplicated, with the division line down
+  the vertical middle of the face.
+- Additional findings: the strike-face piece must pitch inward toward the head
+  at the bottom; the current head is stretched; stone incorrectly occupies the
+  space between the upper haft cap and head; the pommel and top cap must be
+  tapered cylinders/cones rather than extruded solids.
+- Result: A05 A01-A03 complete outputs `invalid / quarantined`; narrow
+  topology/mirror/haft-UV mechanics remain `proof only`.
+- Current DCC production authority: `false` pending a new component-geometry
+  contract and Flamestrike approval.
+
+## A12 R7 Reset-Safe Plan Request
+
+- Date: `2026-07-22`.
+- Flamestrike requested a save point and forward plan so context can be reset
+  without renewed drift.
+- Created plan:
+  `SM_DRW_SiegeBreaker_Hammer_A01_A12_R7_COMPONENT_GEOMETRY_RECOVERY_PLAN.md`.
+- Classification: `draft; approval required`.
+- This request authorizes the save point and plan records only. It does not
+  approve R7 Step 01 measurement or any Blender execution.
+
 ## A12 R6 A01 Fail-Closed Topology Result
 
 - Date: `2026-07-22`.
@@ -699,3 +725,15 @@
   the approved component-specific cylindrical UV method.
 - Current production authority: `false` pending Flamestrike approval of
   `A12_R6_A05_HAFT_COLLAR_CYLINDRICAL_UV_RECOVERY_CONTRACT.md`.
+
+## A12 R6 A05 Haft/Collar Cylindrical-UV Recovery Approval
+
+- Date: `2026-07-22`.
+- Flamestrike response to the displayed A05 recovery contract: `approved`.
+- Approved scope: one fresh immutable-source rebuild; exact Y-depth mirror;
+  one front-derived `157.08%` static cylindrical UV owner for the complete
+  haft/collar; mirrored UV preservation; zero left/right owners below the head
+  transition; enlarged join proofs; validation and independent audit.
+- A04 A01 blend remains forbidden as a construction input.
+- Image generation, TRELLIS, image-to-3D, FBX, Unreal, LOD, collision, and
+  game-ready escalation remain unauthorized.
