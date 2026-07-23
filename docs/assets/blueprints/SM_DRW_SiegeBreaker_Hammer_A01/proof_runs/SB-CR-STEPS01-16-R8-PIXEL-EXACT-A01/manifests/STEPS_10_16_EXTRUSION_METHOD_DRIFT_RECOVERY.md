@@ -6,7 +6,8 @@
 - Detected by: Flamestrike
 - Flamestrike finding:
   `the presented result is an extrusion; yesterday's process has zero extrusions`
-- Recovery state: `Core Recovery after Step 09`
+- Recovery state:
+  `Core Recovery after Step 09; authority reconciliation complete; awaiting a fresh Step 10 zero-extrusion blueprint`
 - DCC / export / Unreal authority: `false / false / false`
 
 ## Last Core-Valid State
@@ -76,3 +77,29 @@ resume Step 10.
 The exact reset instructions are:
 
 `docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/handoffs/A12_R10_R8_ZERO_EXTRUSION_RESET_HANDOFF.md`
+
+## Authority-Only Recovery Resolution
+
+On `2026-07-23`, Flamestrike approved the smallest authority correction:
+
+1. lock
+   `steps/A12_R10_R8_PIXEL_EXACT_STEPS01_16_A01_CONTRACT.md`
+   at SHA-256
+   `77b0339126388be01f59532cd6b79228450b61e739ebc10c2f849833fd337bd4`;
+2. use exactly one
+   `Rz(180 degrees): (X,Y,Z)->(-X,-Y,Z)`
+   as the whole-asset completion transform for this R8 run;
+3. treat the older final Y-depth reflection clause as superseded for this R8
+   run only; and
+4. preserve every other approved equation, measurement, ownership rule,
+   closure rule, and fail-closed gate.
+
+The approval record is:
+
+`docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_R8_ZERO_EXTRUSION_AUTHORITY_RECOVERY_A01_APPROVAL_RECORD.md`
+
+This resolves the reset-handoff fingerprint mismatch and completion-transform
+conflict. It does not validate or restore any quarantined Step 10-16 artifact.
+The next permitted output is a new Step 10 zero-extrusion blueprint. Geometry,
+Blender, rendering, export, and Unreal remain unauthorized until their later
+gates pass.

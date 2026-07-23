@@ -58,7 +58,32 @@ writing a new Step 10 or Step 11 artifact:
 8. New-data execution boundary:
    `steps/A12_R10_R8_PIXEL_EXACT_STEPS01_16_A01_CONTRACT.md`
    — SHA-256
-   `7f2a5774749a3e6872f26174fc7ea6593697a513781482712cceb0c5771199e6`.
+   `77b0339126388be01f59532cd6b79228450b61e739ebc10c2f849833fd337bd4`.
+
+## Flamestrike-Approved Authority Reconciliation
+
+On `2026-07-23`, Flamestrike approved the authority-only correction recorded
+in:
+
+`steps/A12_R10_R8_ZERO_EXTRUSION_AUTHORITY_RECOVERY_A01_APPROVAL_RECORD.md`.
+
+For this R8 pixel-exact run only:
+
+- the new-data execution-boundary bytes at SHA-256
+  `77b0339126388be01f59532cd6b79228450b61e739ebc10c2f849833fd337bd4`
+  are the locked contract authority;
+- the whole-asset completion transform is exactly one
+  `Rz(180 degrees): (X,Y,Z)->(-X,-Y,Z)`;
+- that R8-specific transform supersedes the older final Y-depth reflection
+  clause in
+  `steps/A12_R10_STEP02_COMPONENT_EQUATION_CONTRACT_DRAFT.md`;
+- every other approved component equation, source-ownership rule, closure
+  rule, measurement, and fail-closed gate remains unchanged.
+
+This reconciliation authorizes documentation consistency only. It does not
+authorize geometry, Blender, rendering, export, or Unreal work. The next
+permitted gate is a fresh Step 10 zero-extrusion production blueprint bound
+directly to the valid Step 01-09 evidence.
 
 The old A09 builder imports old approved component meshes. Those meshes are
 forbidden in the new build. The next agent must replay its construction logic

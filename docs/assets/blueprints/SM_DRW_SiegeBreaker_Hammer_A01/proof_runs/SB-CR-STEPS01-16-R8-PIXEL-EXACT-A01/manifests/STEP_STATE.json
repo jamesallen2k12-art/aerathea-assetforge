@@ -1,7 +1,7 @@
 {
   "schema": "AERATHEA_STEPS_01_16_STATE_V1",
   "run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
-  "current_step": "CORE_RECOVERY_AFTER_STEP_09",
+  "current_step": "AUTHORITY_RECOVERY_COMPLETE_BEFORE_STEP_10",
   "completed_steps": [
     "01",
     "02",
@@ -13,7 +13,7 @@
     "08",
     "09"
   ],
-  "state": "blocked_at_step_10_after_extrusion_method_drift",
+  "state": "ready_for_fresh_step_10_zero_extrusion_blueprint_only",
   "illegal_skip_detected": true,
   "method_deviation_detected": true,
   "intermediate_approval_required": false,
@@ -21,6 +21,15 @@
   "production_authority": false,
   "unreal_authority": false,
   "fully_game_ready": false,
+  "authority_recovery": {
+    "status": "approved_and_recorded",
+    "approval_record": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_R8_ZERO_EXTRUSION_AUTHORITY_RECOVERY_A01_APPROVAL_RECORD.md",
+    "locked_execution_contract_sha256": "77b0339126388be01f59532cd6b79228450b61e739ebc10c2f849833fd337bd4",
+    "completion_transform_for_this_run": "Rz(180 degrees): (X,Y,Z)->(-X,-Y,Z)",
+    "superseded_historical_rule": "final Y-depth reflection in A12_R10_STEP02_COMPONENT_EQUATION_CONTRACT_DRAFT.md",
+    "geometry_authorized_by_this_recovery": false
+  },
+  "next_permitted_gate": "STEP_10_ZERO_EXTRUSION_METHOD_BINDING_BLUEPRINT_ONLY",
   "last_valid_validation": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_09_INDEPENDENT_AUDIT.json",
   "last_valid_data_audit": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_09_PRE_GEOMETRY_EXACT_DATA_AUDIT.json",
   "recovery_record": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEPS_10_16_EXTRUSION_METHOD_DRIFT_RECOVERY.md",

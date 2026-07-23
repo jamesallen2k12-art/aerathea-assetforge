@@ -1,15 +1,34 @@
 # SM_DRW_SiegeBreaker_Hammer_A01 Reset / Resume State
 
-- Active approved route: `Core Recovery at the last valid Step 09 dataset`
+- Active approved route:
+  `Core Recovery from the last valid Step 09 dataset; authority reconciliation complete`
 - Plan: `SM_DRW_SiegeBreaker_Hammer_A01_STEPS_01_16_PROOF_OF_CONCEPT_PIPELINE_PLAN.md`
 - Active contract: `SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01; Steps 10-16 invalid`
-- Current state: `Core Recovery; exact new-image evidence valid through Step 09 only`
-- Next approved activity: `resume from the zero-extrusion reset handoff; no geometry before the exact prior method is bound to the new measurements`
+- Current state:
+  `Core Recovery; exact new-image evidence valid through Step 09; ready for a fresh Step 10 zero-extrusion blueprint only`
+- Next approved activity:
+  `write and independently audit the Step 10 method-binding blueprint; no geometry`
 - Source processing authorized now: `false; preserve the exact Step 01-09 data`
 - Model inference authorized now: `false`
 - DCC production authorized now: `false until the zero-extrusion method gate passes`
 - Unreal authority: `false`
 - Fully game-ready: `false`
+
+## 2026-07-23 Authority-Only Recovery Approval
+
+- Flamestrike approved locking the existing R8 new-data execution contract at
+  SHA-256
+  `77b0339126388be01f59532cd6b79228450b61e739ebc10c2f849833fd337bd4`.
+- For `SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01`, the final completion transform is
+  exactly one `Rz(180 degrees): (X,Y,Z)->(-X,-Y,Z)`.
+- This R8-only rule supersedes the older final Y-depth reflection clause. It
+  does not change any other approved component equation or evidence rule.
+- Approval record:
+  `steps/A12_R10_R8_ZERO_EXTRUSION_AUTHORITY_RECOVERY_A01_APPROVAL_RECORD.md`.
+- The earlier source-authority fingerprint mismatch and completion-transform
+  conflict are resolved.
+- Step 10 may now be drafted as a zero-extrusion, direct-parameter-substitution
+  blueprint. Geometry, Blender, rendering, export, and Unreal remain stopped.
 
 ## 2026-07-23 Zero-Extrusion Core Recovery Savepoint
 
