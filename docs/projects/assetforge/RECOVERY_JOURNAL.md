@@ -7827,3 +7827,23 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260722-195939/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260722-195939/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 20:06:34 EDT -0400 - Siege Breaker A12 R6 approved fresh single-closed-half prebuild
+
+- Snapshot: `Saved/ProjectRecovery/20260722-200634/`
+- Git: branch `main`, HEAD `3dd6d0e`, status lines `339`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-200634/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-200634/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-200634/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 20:26:23 EDT -0400 - Siege Breaker R6A01 fail-closed one-pixel saddle; A02 approval gate drafted
+
+- Snapshot: `Saved/ProjectRecovery/20260722-202623/`
+- Git: branch `main`, HEAD `3dd6d0e`, status lines `343`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-202623/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-202623/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-202623/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

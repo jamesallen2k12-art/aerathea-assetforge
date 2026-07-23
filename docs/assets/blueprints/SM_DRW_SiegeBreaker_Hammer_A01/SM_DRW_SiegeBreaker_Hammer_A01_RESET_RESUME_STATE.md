@@ -1,13 +1,13 @@
 # SM_DRW_SiegeBreaker_Hammer_A01 Reset / Resume State
 
-- Active approved route: `A12 R5 four-view whole-assembly reconstruction`
+- Active approved route: `A12 R6 single-closed-half recovery`
 - Plan: `SM_DRW_SiegeBreaker_Hammer_A01_PIXEL_HALF_MIRROR_A09_PLAN.md`
-- Active contract: `steps/A12_R5_FOUR_VIEW_WHOLE_ASSEMBLY_RECONSTRUCTION_CONTRACT.md`
-- Current state: `R5A04 invalid as a complete DCC/visual candidate; Core Recovery active; no production authority`
-- Next approved activity: `present steps/A12_R6_SINGLE_CLOSED_HALF_RECOVERY_CONTRACT.md and wait for Flamestrike approval before Blender execution`
-- Source processing authorized now: `true only for exact -X/+X outward-face pixels under R4`
+- Active contract: `steps/A12_R6_SINGLE_CLOSED_HALF_RECOVERY_CONTRACT.md`
+- Current state: `R5A04 invalid; R6A01 stopped fail-closed before output on one exact diagonal source-pixel topology conflict`
+- Next approved activity: `present A12_R6_A02_ONE_PIXEL_SADDLE_RECONCILIATION_CONTRACT.md and wait for Flamestrike approval`
+- Source processing authorized now: `true only for the immutable six-view evidence and exact R6 ownership rules`
 - Model inference authorized now: `false`
-- DCC production authorized now: `true only for the exact R5 one-half mirror contract`
+- DCC production authorized now: `false pending the A02 one-pixel topology precedence decision`
 - Unreal authority: `false`
 - Fully game-ready: `false`
 
@@ -130,6 +130,16 @@
 - Last Core-valid evidence: immutable source pixels/hashes, measured shaft axes,
   `170 cm` Z frame, bottom-center origin, the requirement to construct one
   physical half then duplicate/mirror it, and Flamestrike's visual findings.
+- Flamestrike approved `SB-AXIAL-A12-R6-SINGLE-CLOSED-HALF` on `2026-07-22`.
+  The fresh R6 build may now proceed under its no-R5-reuse and fail-closed
+  boundaries.
+- R6A01 then stopped at the pre-mirror topology gate. One front/back diagonal
+  saddle at `X=0.153015302 cm`, `Z=168.622862286 cm` generated 110 four-face
+  edges along Y. No `.blend`, UV, material, render, candidate manifest, or
+  review board was created. The exact front pixel for the missing centered
+  bridge is source-owned at luma `195`; a view-precedence rule is still needed.
+- Current block: `Blueprint block: one-pixel front/back topology precedence
+  rule missing`. A02 is draft only.
 
 ## Active Method
 
@@ -155,8 +165,12 @@ Read the recovery journal/latest checkpoint, this state, A09 final approval,
 A11 authority, `steps/A12_R3_COMPONENT_SEPARATION_OUTPUT_RECORD.md`, and
 `steps/A12_R4_SIDE_OWNER_FACE_OUTPUT_RECORD.md`, and
   `steps/A12_R5_FOUR_VIEW_WHOLE_ASSEMBLY_RECONSTRUCTION_CONTRACT.md`, and
-  `steps/A12_R5_CYLINDRICAL_HAFT_A04_OUTPUT_RECORD.md`. A04 is invalid. Do not
+  `steps/A12_R5_CYLINDRICAL_HAFT_A04_OUTPUT_RECORD.md`, and
+  `steps/A12_R6_SINGLE_CLOSED_HALF_RECOVERY_CONTRACT.md`. A04 is invalid. Do not
   render it forward or reuse any of its facade, wall, side-owner, cylinder, UV,
-  or composite material construction. Present a fresh single-closed-half
-  contract and wait for approval. Do not export, enter Unreal, or use TRELLIS
-  or any other prohibited generation software.
+  or composite material construction. R6 is approved only for the fresh
+  single-closed-half construction, fail-closed audit, and declared review
+  package. R6A01 failed before output; do not execute a repair until
+  `steps/A12_R6_A02_ONE_PIXEL_SADDLE_RECONCILIATION_CONTRACT.md` is explicitly
+  approved. Do not export, enter Unreal, or use TRELLIS or any other prohibited
+  generation software.

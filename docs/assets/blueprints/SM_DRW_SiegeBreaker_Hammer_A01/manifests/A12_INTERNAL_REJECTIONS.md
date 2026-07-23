@@ -499,3 +499,34 @@ Return to immutable source evidence and define a fresh build in which exactly
 one closed `X>=0` physical half exists, every visible surface occurs once, the
 center seam is welded, and the opposite half is created only by the approved
 duplicate/mirror operation. No new construction is authorized yet.
+
+## R6A01 — Exact Diagonal Pixel Saddle Fails Pre-Mirror Manifold Gate
+
+- Date: `2026-07-22`
+- Status: `invalid; no candidate output created`
+- Contract: `SB-AXIAL-A12-R6-SINGLE-CLOSED-HALF`
+
+The clean-room R6 builder read only the six immutable source PNGs and created
+no R5 geometry, UV, material, texture, or Blender inputs. Before mirror, UV,
+material assignment, save, or render, its source-half audit reported:
+
+- `1,074,899` edges with exactly two incident faces;
+- `3,198` open edges, all correctly on `X=0` for the later weld;
+- `110` edges with four incident faces;
+- zero off-center open edges.
+
+All 110 four-face edges are one X/Z checkerboard saddle extruded along valid
+right-view Y cells. The shared grid edge is `(X=1,Z=1102)`, equivalent to
+`X=0.153015302 cm`, `Z=168.622862286 cm`. Layer `1101` owns `X-cell=1` while
+layer `1102` owns `X-cell=0`, so their solids meet only at a corner.
+
+The exact front pixel at the missing centered bridge cell `(X-cell=0,
+Z-layer=1101)` is `RGB(212,192,169)`, integer luma `195`, and therefore valid
+front-object evidence under the locked `<=234` membership rule. It was absent
+from the volume only because the conservative front/back silhouette
+intersection rejected it.
+
+The contract did not declare front or back precedence for this one-pixel
+topology conflict. The gate therefore stopped without adding or removing any
+cell. The builder is quarantined as a diagnostic implementation until an exact
+reconciliation is approved.

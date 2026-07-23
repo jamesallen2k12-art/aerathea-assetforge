@@ -101,7 +101,9 @@
 | `manifests/A12_R5_CYLINDRICAL_HAFT_A04_VALIDATION.json` | `proof only` | Source, geometry, texture-derivation, static-UV, bounds, output-hash, software, and deferred-export evidence. |
 | `manifests/A12_R5_CYLINDRICAL_HAFT_A04_INDEPENDENT_AUDIT.json` | `proof only` | Independent `45/45` audit including circular rings, exact mirror, material slots, U/V extents, flat proof separation, and no prohibited software. |
 | `steps/A12_R5_CYLINDRICAL_HAFT_A04_OUTPUT_RECORD.md` | `authoritative invalidation/status record` | Hash locks A04, records the superseding composite-half rejection, and limits the prior audit to proof-only mechanics. |
-| `steps/A12_R6_SINGLE_CLOSED_HALF_RECOVERY_CONTRACT.md` | `draft; approval required` | Proposed fresh no-reuse recovery: one coherent closed physical X>=0 half, one occurrence per visible surface, exact mirror/weld, and no facade/composite/overlay construction. |
+| `steps/A12_R6_SINGLE_CLOSED_HALF_RECOVERY_CONTRACT.md` | `authoritative for active execution scope` | Flamestrike-approved fresh no-reuse recovery: one coherent closed physical X>=0 half, one occurrence per visible surface, exact mirror/weld, and no facade/composite/overlay construction. |
+| `Tools/DCC/build_siegebreaker_a12_r6_single_closed_half.py` | `quarantined diagnostic implementation; no candidate output` | Fresh no-R5 builder stopped at the pre-mirror manifold gate: one front/back diagonal pixel saddle produced 110 four-face edges. It may not be executed forward without the A02 reconciliation approval. |
+| `steps/A12_R6_A02_ONE_PIXEL_SADDLE_RECONCILIATION_CONTRACT.md` | `draft; approval required` | Proposed exact one-pixel front-owner precedence at the only topology saddle; no broad fill, remesh, smoothing, or other geometry change. |
 
 | `manifests/A08_A07_ESTIMATED_MATCH_RECOVERY.md` | `authoritative recovery boundary` | Records the unexecuted estimated-crop/yaw A07 drift and forbids repair-forward. |
 | `Tools/DCC/build_siegebreaker_a08_pommel_a07.py` | `invalid; unexecuted` | Preserved defect evidence containing estimated crop/yaw values; forbidden as an A09 or later construction input. |

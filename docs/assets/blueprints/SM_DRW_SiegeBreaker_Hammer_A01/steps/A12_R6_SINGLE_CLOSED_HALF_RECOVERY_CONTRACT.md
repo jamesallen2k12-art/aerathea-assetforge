@@ -3,7 +3,7 @@
 - Asset: `SM_DRW_SiegeBreaker_Hammer_A01`
 - Contract ID: `SB-AXIAL-A12-R6-SINGLE-CLOSED-HALF`
 - Date: `2026-07-22`
-- Status: `draft; Flamestrike approval required before execution`
+- Status: `approved for exact execution by Flamestrike on 2026-07-22`
 - Artifact ceiling if approved: `DCC source candidate pending Flamestrike visual decision`
 - Unreal authority: `false`
 - Fully game-ready authority: `false`
@@ -95,5 +95,25 @@ does not grant visual approval.
 
 ## Approval Gate
 
-No Blender execution is authorized by this draft. Flamestrike must approve this
-exact single-closed-half recovery contract before R6 construction begins.
+Flamestrike approved this exact single-closed-half recovery contract on
+`2026-07-22`. Blender execution is authorized only inside the construction,
+audit, review-output, and explicit-exclusion boundaries above.
+
+## A01 Execution Outcome
+
+- Date: `2026-07-22`.
+- Status: `invalid; fail-closed topology stop; no blend, UV, material, render,
+  manifest candidate, or review output created`.
+- The exact source half had `1,074,899` edges with two incident faces,
+  `3,198` allowed open center-plane edges, and `110` edges with four incident
+  faces.
+- Every four-face edge was the same single X/Z diagonal source-pixel saddle
+  extruded through 110 valid right-view depth cells: grid edge `X=1 px`,
+  `Z=1102 px`, or `X=0.153015302 cm`, `Z=168.622862286 cm`.
+- The front-owned pixel at half-grid cell `(X=0,Z-layer=1101)` is exact object
+  evidence (`RGB 212,192,169`; integer luma `195 <= 234`) but the initial
+  front/back silhouette intersection excluded it. The adjacent cells then
+  touched only at a corner, which is not a valid manifold solid.
+- The approved contract did not state which view wins this one-pixel
+  front/back topology conflict. Production stopped instead of filling,
+  deleting, beveling, or remeshing the source pixels.
