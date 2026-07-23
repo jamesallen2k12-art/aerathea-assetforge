@@ -676,6 +676,61 @@
 - Step 02, DCC, FBX, Unreal, LOD, collision, and game-ready authority remain
   `false`.
 
+## A12 R7 Step 01 Axial Internal-Registration Visual Revision
+
+- Date: `2026-07-22`.
+- Flamestrike finding: the true axial bottom center section is above and right
+  of the centerline and visibly rotated; its non-face diamond landmarks do not
+  align like those in the true axial top; the separate center diamonds on the
+  outward hammer faces appear incorrectly oriented in both axial sheets.
+- Exact replay consequence: bottom outer center `(599.5,631.5) px`; main bottom
+  center emissive landmark `(609.5,599.0) px`; offset `(+10.0,-32.5) px`.
+- Decision: Step 01 complete candidate and board `quarantined; revision
+  requested`; independent audit remains `proof only`.
+- A11 centered mean remains outer-footprint/scale authority only. It does not
+  authorize internal axes, component rotation, diamond placement, or
+  strike-face feature orientation.
+- Current block: `Blueprint block: axial internal component registration and
+  projection-consistency rule missing`.
+- Step 02, source-image correction, DCC, Blender, FBX, Unreal, and UV/material
+  execution remain unauthorized.
+
+## A12 R8 Six-View Orthographic Redraw Request And Internal Rejection
+
+- Date: `2026-07-22`.
+- Flamestrike authorized a fresh image-generated front/back/left/right/true
+  top/true bottom set using corrected dimensions and requested visible approval
+  review after creation.
+- Codex used the built-in image-generation resource through the imagegen skill.
+  The requested `Sol5.6 Ultra High` selector was unavailable and was not
+  misrepresented as used.
+- Six images plus two bounded FRONT correction attempts were created and
+  preserved locally under
+  `Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/`.
+- Internal result: `quarantined / invalid for approval as pixel authority`.
+  The rendered labels are correct, but actual silhouette ratios differ from
+  the required measurements by approximately `9.66%` to `31.96%`.
+- The six images were opened visibly as quarantined review support, not as a
+  valid production approval board.
+- Current block: exact orthographic math requires a dimension-locked physical
+  master and six common-scale parallel-camera renders; no DCC contract is
+  approved.
+
+## A12 R8 Six-View Positive Visual Feedback And Reset Request
+
+- Date: `2026-07-22`.
+- Flamestrike response after the six images were shown: `looks great`.
+- Flamestrike requested a save point, detailed reset instructions, and durable
+  preservation of the exact images for a fresh start tomorrow.
+- The six hashes were copied unchanged to
+  `Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/`.
+- Classification: `reference only; positive visual-direction feedback`.
+- This is not formal visual-canon approval and cannot override the deterministic
+  ratio failures recorded in the A12 R8 internal-rejection manifest.
+- DCC, geometry, UV, FBX, Unreal, and pixel-measurement authority remain false.
+- Reset handoff:
+  `handoffs/A12_R8_SIX_VIEW_VISUAL_REFERENCE_RESET_HANDOFF.md`.
+
 ## A12 R6 A01 Fail-Closed Topology Result
 
 - Date: `2026-07-22`.

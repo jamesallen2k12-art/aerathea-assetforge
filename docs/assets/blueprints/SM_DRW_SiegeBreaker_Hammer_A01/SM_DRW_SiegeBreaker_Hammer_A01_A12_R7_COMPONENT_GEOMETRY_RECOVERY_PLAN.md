@@ -2,7 +2,7 @@
 
 - Asset: `SM_DRW_SiegeBreaker_Hammer_A01`
 - Date: `2026-07-22`
-- Status: `authoritative staged recovery plan; Step 01 executed and pending Flamestrike review`
+- Status: `authoritative staged route; Step 01 quarantined and returned to Core Recovery`
 - Starting state: `Core Recovery; A05 A01-A03 invalid/quarantined`
 - DCC production authority: `false`
 - Unreal authority: `false`

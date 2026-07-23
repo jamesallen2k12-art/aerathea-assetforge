@@ -1,10 +1,10 @@
 # SM_DRW_SiegeBreaker_Hammer_A01 Reset / Resume State
 
-- Active approved route: `A12 R7 staged component-geometry recovery plan`
-- Plan: `SM_DRW_SiegeBreaker_Hammer_A01_A12_R7_COMPONENT_GEOMETRY_RECOVERY_PLAN.md` (`authoritative staged route`)
-- Active contract: `none; Step 01 completed and stopped at Flamestrike review gate`
-- Current state: `R7 Step 01 candidate measurement record; independent audit pass 40/40; five blocked rules`
-- Next approved activity: `none; Flamestrike must approve/revise Step 01 and resolve the five blocked rules`
+- Active approved route: `none; Core Recovery inside A12 R7 Step 01`
+- Plan: `SM_DRW_SiegeBreaker_Hammer_A01_A12_R7_COMPONENT_GEOMETRY_RECOVERY_PLAN.md` (`authoritative staged route; paused`)
+- Active contract: `none; Step 01 candidate quarantined after axial internal-registration conflict`
+- Current state: `R7 Step 01 quarantined; A12 R8 six-view visual references saved with positive feedback but invalid pixel ratios`
+- Next approved activity: `none; a dimension-locked physical-master/six-camera contract requires Flamestrike approval or revision`
 - Source processing authorized now: `true only for the immutable six-view evidence and exact R6 ownership rules`
 - Model inference authorized now: `false`
 - DCC production authorized now: `false`
@@ -170,6 +170,25 @@
 - R7 Step 01 produced a `candidate measurement record` with exact sparse marks,
   component ledger, formulas, and five blocked ownership rules. Independent
   audit is `pass 40/40` as `proof only`; Step 02 and DCC remain unauthorized.
+- Flamestrike then identified bottom center-section translation/rotation,
+  cross-view non-face diamond misalignment, and impossible face-on outward
+  strike diamonds in both axial sheets. The Step 01 complete candidate is
+  `quarantined; revision requested`; its narrow replay evidence remains `proof
+  only`.
+- A11 centered-mean authority is narrowed to the approved outer full-object
+  footprint and scale consequence. It cannot control internal component axes,
+  rotation, diamond placement, or strike-face feature orientation.
+- Flamestrike authorized an A12 R8 image-generated six-view redraw using all
+  corrected dimensions. Six sheets and two bounded FRONT correction attempts
+  were created with the imagegen skill and opened visibly.
+- A12 R8 is `quarantined / invalid for pixel authority`: actual silhouette
+  ratios differ from the printed measurements by `9.66%-31.96%`, left/right
+  depth differs, and top/bottom footprints differ. Prompt-only numeric edits
+  did not converge. All outputs remain local under `Saved/AssetForgeResearch/`.
+- Flamestrike said the visible set `looks great` and requested a reset-safe save
+  point. Exact hash-matched copies are preserved under
+  `Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/`
+  as `reference only`; no visual-canon or pixel-authority promotion occurred.
 
 ## Active Method
 
@@ -178,9 +197,11 @@ A12 R7 is the active staged recovery route:
 `immutable six-view pixels -> approved component measurements -> explicit`
 `component-geometry contract -> isolated proofs -> physical half -> mirror`
 
-Only Step 01 has executed. Its measurements and five blocked rules are pending
-Flamestrike review. No prior invalid Siege Breaker geometry is an R7
-construction input, and no geometry construction is presently authorized.
+Step 01 and the A12 R8 generated redraw are quarantined in Core Recovery. Exact
+six-view pixel authority now requires one dimension-locked physical master and
+six parallel-camera renders at one common scale. No prior invalid Siege Breaker
+geometry or generated orthographic is a construction input, and no geometry
+construction is presently authorized.
 
 ## Prohibited Software Boundary
 
@@ -193,10 +214,14 @@ approved; A07 Gate 00 remains stopped and superseded.
 
 Read only the latest recovery journal/checkpoint, this reset state,
 `steps/A12_R6_A05_CORE_REASSESSMENT_AND_RECOVERY.md`, the approved R7 plan,
-`steps/A12_R7_STEP01_COMPONENT_REGISTRATION_A01_OUTPUT_RECORD.md`, and its
-manifest/review record. Report that A05 A01-A03 remain invalid/quarantined,
-Step 01 is a candidate measurement record with independent audit `40/40`, five
-ownership rules remain blocked, and DCC authority is false. Present the Step 01
-review gate and stop. Do not draft Step 02, run a builder, inspect or reuse an
-old blend, create geometry, export, enter Unreal, or use TRELLIS or any
-prohibited generation software before the required approval and rule decisions.
+`steps/A12_R7_STEP01_COMPONENT_REGISTRATION_A01_OUTPUT_RECORD.md`, and
+`manifests/A12_R7_STEP01_AXIAL_INTERNAL_REGISTRATION_CONFLICT_RECOVERY.md`, and
+`manifests/A12_R8_SIX_VIEW_ORTHOGRAPHIC_GENERATION_INTERNAL_REJECTIONS.md`, and
+`handoffs/A12_R8_SIX_VIEW_VISUAL_REFERENCE_RESET_HANDOFF.md`.
+Report that A05 A01-A03 remain invalid/quarantined, Step 01 is quarantined
+after Flamestrike's axial internal-registration findings, its `40/40` audit is
+proof only, the A12 R8 generated six-view set failed exact ratio checks, and
+DCC authority is false. Present the dimension-locked physical-master/six-camera
+contract gate and stop. Do not draft Step 02, alter a source image, run a
+builder, inspect or reuse an old blend, create geometry, export, enter Unreal,
+or use TRELLIS or any prohibited generation software before approval.

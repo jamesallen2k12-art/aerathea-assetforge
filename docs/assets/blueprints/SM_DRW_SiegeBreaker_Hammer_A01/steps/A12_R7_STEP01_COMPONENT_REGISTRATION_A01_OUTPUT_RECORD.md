@@ -3,7 +3,7 @@
 - Asset: `SM_DRW_SiegeBreaker_Hammer_A01`
 - Contract: `SB-AXIAL-A12-R7-STEP01-COMPONENT-REGISTRATION`
 - Date: `2026-07-22`
-- Artifact status: `candidate measurement record; pending Flamestrike approval or revision`
+- Artifact status: `quarantined; revision requested after axial internal-registration conflict`
 - Independent audit: `pass 40/40; proof only`
 - Step 02 authority: `false`
 - DCC / Unreal authority: `false / false`
@@ -61,8 +61,13 @@ approve the measurements or grant Step 02 authority.
 
 ## Stop Gate
 
-Flamestrike must approve, revise, reject, or keep the exact measurement record
-blocked and resolve the five rules above before a Step 02 component-geometry
-contract may be drafted. The supplied cone-sector texture-mapping method is
-`reference only`; it neither resolves these geometry-ownership blocks nor
-authorizes UV, material, Blender, or Unreal work.
+Flamestrike's visual review supersedes the pending-approval state. The complete
+record is quarantined because the axial panel equated outer-footprint center
+registration with internal component registration and did not flag impossible
+face-on strike diamonds in the `+Z/-Z` sheets.
+
+Recovery authority is recorded in
+`manifests/A12_R7_STEP01_AXIAL_INTERNAL_REGISTRATION_CONFLICT_RECOVERY.md`.
+The original five rules remain unresolved, and a new axial internal-registration
+rule is also blocked. The supplied cone-sector texture-mapping method remains
+`reference only`; it authorizes no UV, material, Blender, or Unreal work.

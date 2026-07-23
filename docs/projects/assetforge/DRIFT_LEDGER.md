@@ -995,3 +995,40 @@ Core authority: `AGENTS.md` Core Principles govern this ledger. Drifted artifact
 - Follow-up Core/Kaizen improvement: every geometry gate must compare
   component count, centerline, taper/pitch, and negative-space occupancy—not
   merely envelope, manifoldness, mirror equality, or texture ownership.
+
+### 2026-07-22 - Siege Breaker A12 R7 Step 01 Axial Internal-Registration Drift
+
+- Asset or scope: `SM_DRW_SiegeBreaker_Hammer_A01` A12 R7 Step 01 true-axial
+  center-registration panel, measurement manifest, and complete-candidate
+  classification.
+- Detected by: Flamestrike visual review of the visible Step 01 board and the
+  immutable top/bottom source sheets.
+- Last known Core-valid state: six immutable source hashes; exact full-object
+  rectangles; approved centered-mean outer footprint; exact front/back/side
+  measurement evidence; no DCC, geometry, or Unreal authority.
+- First drift action: the board labeled full-object bounding-box crosshairs as
+  `APPROVED CENTER REGISTRATION` without checking internal center-assembly or
+  decorative landmark registration.
+- Assumption that caused drift: the outer-object rectangle center was treated
+  as every internal component center, and the axial sheets were treated as
+  physically coherent projections despite face-on strike diamonds that should
+  be edge-on from `+Z/-Z`.
+- Proven evidence: bottom outer center is `(599.5,631.5) px`; bottom central
+  emissive motif center is `(609.5,599.0) px`, an offset of `(+10.0,-32.5) px`.
+  The user additionally identifies visible center-section rotation and
+  non-face diamond misalignment; exact structural rotation remains unmeasured.
+- Affected outputs: Step 01 manifest, review board, review markdown, output
+  record, axial-center interpretation, and A11's broad visible-surface-design
+  implication.
+- Artifact statuses: Step 01 complete candidate and board `quarantined;
+  revision requested`; audit `40/40` remains `proof only`; A11 mean footprint
+  remains authoritative only for outer extent/scale; sources remain unchanged.
+- Recovery decision: do not repair forward or alter source images. Require an
+  approved replacement measurement-only contract for internal structural
+  axes, translation/rotation, corresponding non-face diamonds, and explicit
+  exclusion of impossible face-on strike-diamond axial orientation.
+- Current block: `Blueprint block: axial internal component registration and
+  projection-consistency rule missing`.
+- Follow-up Core/Kaizen improvement: axial-source gates must separately test
+  outer extent, internal component axes, corresponding decorations, and whether
+  each visible feature is geometrically possible from the declared projection.

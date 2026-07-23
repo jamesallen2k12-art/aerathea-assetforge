@@ -7977,3 +7977,23 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260722-223504/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260722-223504/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 22:53:16 EDT -0400 - Before Siege Breaker A12 R7 Step 01 axial internal-registration Core Recovery
+
+- Snapshot: `Saved/ProjectRecovery/20260722-225316/`
+- Git: branch `main`, HEAD `f9b2fdf`, status lines `404`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-225316/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-225316/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-225316/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 23:33:20 EDT -0400 - Siege Breaker A12 R8 six-view visual references saved with reset-safe handoff
+
+- Snapshot: `Saved/ProjectRecovery/20260722-233320/`
+- Git: branch `main`, HEAD `f9b2fdf`, status lines `414`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-233320/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-233320/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-233320/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
