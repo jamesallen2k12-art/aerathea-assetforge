@@ -1,13 +1,13 @@
 # SM_DRW_SiegeBreaker_Hammer_A01 Reset / Resume State
 
-- Active approved route: `A12 R6 single-closed-half recovery`
+- Active approved route: `blocked after A12 R6 A04 A01 visual failure`
 - Plan: `SM_DRW_SiegeBreaker_Hammer_A01_PIXEL_HALF_MIRROR_A09_PLAN.md`
-- Active contract: `steps/A12_R6_SINGLE_CLOSED_HALF_RECOVERY_CONTRACT.md`
-- Current state: `R5A04 invalid; R6A01 stopped fail-closed before output on one exact diagonal source-pixel topology conflict`
-- Next approved activity: `present A12_R6_A02_ONE_PIXEL_SADDLE_RECONCILIATION_CONTRACT.md and wait for Flamestrike approval`
+- Active contract: `none for further Blender execution; A05 is draft`
+- Current state: `R6 A04 A01 invalid/quarantined after Flamestrike identified disconnected-looking haft UVs, vertical misregistration, and missing collar pixel ownership`
+- Next approved activity: `none; request Flamestrike decision on the draft A05 haft/collar cylindrical-UV recovery contract`
 - Source processing authorized now: `true only for the immutable six-view evidence and exact R6 ownership rules`
 - Model inference authorized now: `false`
-- DCC production authorized now: `false pending the A02 one-pixel topology precedence decision`
+- DCC production authorized now: `false pending A05 approval`
 - Unreal authority: `false`
 - Fully game-ready: `false`
 
@@ -140,6 +140,25 @@
   bridge is source-owned at luma `195`; a view-precedence rule is still needed.
 - Current block: `Blueprint block: one-pixel front/back topology precedence
   rule missing`. A02 is draft only.
+- Flamestrike superseded that block by approving A03: remove the independent
+  back-silhouette intersection entirely, build one `Y<=0` front physical half,
+  duplicate it by exact `Rz(180 degrees)`, and weld at `Y=0`. A02 remains
+  unexecuted and reference only.
+- A03 internal attempts proved coherent closed topology and isolated UV-axis
+  failures, but Flamestrike then corrected the transform authority. A03 is
+  reference only. A04 replaces `Rz(180 degrees)` with the proper-axis depth
+  reflection `(X,Y,Z)->(X,-Y,Z)`, preserving left/right and top/bottom before
+  the `Y=0` weld.
+- A04 A01 proved one connected closed component, the exact depth mirror, and
+  outward normals, but Flamestrike rejected/revised its visible haft/collar.
+  The haft mixed `95,664` front-, `36,766` left-, and `36,766` right-owned
+  faces; the upper collar mixed `6,592` front with `2,176` left and `2,176`
+  right. The complete colored candidate is invalid; the mechanical checks are
+  proof only.
+- Current block: `Blueprint block: revised haft/collar UV ownership rule
+  requires Flamestrike approval before another Blender build`. The draft A05
+  contract proposes one fresh front-derived `157.08%` static cylindrical UV
+  owner for the complete haft/collar, preserved through the Y-depth mirror.
 
 ## Active Method
 
@@ -170,7 +189,10 @@ A11 authority, `steps/A12_R3_COMPONENT_SEPARATION_OUTPUT_RECORD.md`, and
   render it forward or reuse any of its facade, wall, side-owner, cylinder, UV,
   or composite material construction. R6 is approved only for the fresh
   single-closed-half construction, fail-closed audit, and declared review
-  package. R6A01 failed before output; do not execute a repair until
-  `steps/A12_R6_A02_ONE_PIXEL_SADDLE_RECONCILIATION_CONTRACT.md` is explicitly
-  approved. Do not export, enter Unreal, or use TRELLIS or any other prohibited
-  generation software.
+  package. R6A01 failed before output and A02 is superseded unexecuted. A03 is
+  superseded. A04 A01 is invalid after visible haft/collar failure; do not load
+  or repair its blend. Read
+  `steps/A12_R6_A04_FRONT_HALF_DEPTH_MIRROR_A01_OUTPUT_RECORD.md` and the draft
+  `steps/A12_R6_A05_HAFT_COLLAR_CYLINDRICAL_UV_RECOVERY_CONTRACT.md`, then stop
+  for Flamestrike approval. Do not run another Blender build, export, enter
+  Unreal, or use TRELLIS or any other prohibited generation software.

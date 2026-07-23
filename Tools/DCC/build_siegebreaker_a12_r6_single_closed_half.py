@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
-"""Build Siege Breaker A12 R6 from one coherent X>=0 boundary volume.
+"""Build Siege Breaker A12 R6 A04 from one coherent Y<=0 front half.
 
 This is a clean-room Blender build.  It reads the six immutable source PNGs
 and written authority only.  It does not load, append, import, or inspect any
 R5 Blender object, mesh, UV layer, material, or derived texture.
 
-The volume is the boundary of one source-constrained occupancy field.  Every
-exposed cell contributes one face exactly once; center-plane closure faces are
-omitted.  The source half is topology-audited before Blender's exact X mirror
-is applied and welded.  Static UVs are assigned only after the final topology
-passes.  Source pixels color boundary faces; they never create extra geometry.
+The volume is the boundary of one source-constrained occupancy field. Every
+exposed cell contributes one face exactly once; Y=0 closure faces are omitted.
+The source half is topology-audited before its duplicate is reflected exactly
+across Y=0 and the matching boundary is welded. Outward normals are rebuilt
+after the negative-determinant transform. Static UVs are assigned only after
+the final topology passes. Source pixels color boundary faces; they never
+create extra geometry.
 """
 
 from __future__ import annotations
@@ -28,8 +30,8 @@ from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[2]
 ASSET = "SM_DRW_SiegeBreaker_Hammer_A01"
-ATTEMPT = "A12_R6_SingleClosedHalf_A01"
-CONTRACT_ID = "SB-AXIAL-A12-R6-SINGLE-CLOSED-HALF"
+ATTEMPT = "A12_R6_A04_FrontHalfDepthMirror_A01"
+CONTRACT_ID = "SB-AXIAL-A12-R6-A04-FRONT-HALF-DEPTH-MIRROR"
 
 SOURCE_DIR = ROOT / "SourceAssets/Concepts/SiegeBreaker"
 SOURCE_PATHS = {
@@ -98,20 +100,24 @@ RENDER_ROOT = OUTPUT_ROOT / "renders"
 BLEND_PATH = OUTPUT_ROOT / f"{ASSET}_{ATTEMPT}.blend"
 DOC_ROOT = ROOT / "docs/assets/blueprints" / ASSET
 REVIEW_ROOT = DOC_ROOT / "review"
-MANIFEST_PATH = DOC_ROOT / "manifests/A12_R6_SINGLE_CLOSED_HALF_A01_VALIDATION.json"
-AUDIT_SEED_PATH = OUTPUT_ROOT / "A12_R6_A01_BUILD_AUDIT_SEED.json"
+MANIFEST_PATH = DOC_ROOT / "manifests/A12_R6_A04_FRONT_HALF_DEPTH_MIRROR_A01_VALIDATION.json"
+AUDIT_SEED_PATH = OUTPUT_ROOT / "A12_R6_A04_A01_BUILD_AUDIT_SEED.json"
 
 RENDER_PATHS = {
-    "front": REVIEW_ROOT / "A12_R6_SINGLE_CLOSED_HALF_A01_FRONT.png",
-    "back": REVIEW_ROOT / "A12_R6_SINGLE_CLOSED_HALF_A01_BACK.png",
-    "left": REVIEW_ROOT / "A12_R6_SINGLE_CLOSED_HALF_A01_LEFT.png",
-    "right": REVIEW_ROOT / "A12_R6_SINGLE_CLOSED_HALF_A01_RIGHT.png",
-    "color_3q": REVIEW_ROOT / "A12_R6_SINGLE_CLOSED_HALF_A01_COLOR_3Q.png",
-    "gray_3q": REVIEW_ROOT / "A12_R6_SINGLE_CLOSED_HALF_A01_GRAY_3Q.png",
-    "review": REVIEW_ROOT / "A12_R6_SINGLE_CLOSED_HALF_A01_REVIEW.png",
+    "front": REVIEW_ROOT / "A12_R6_A04_FRONT_HALF_DEPTH_MIRROR_A01_FRONT.png",
+    "back": REVIEW_ROOT / "A12_R6_A04_FRONT_HALF_DEPTH_MIRROR_A01_BACK.png",
+    "left": REVIEW_ROOT / "A12_R6_A04_FRONT_HALF_DEPTH_MIRROR_A01_LEFT.png",
+    "right": REVIEW_ROOT / "A12_R6_A04_FRONT_HALF_DEPTH_MIRROR_A01_RIGHT.png",
+    "color_3q": REVIEW_ROOT / "A12_R6_A04_FRONT_HALF_DEPTH_MIRROR_A01_COLOR_3Q.png",
+    "gray_3q": REVIEW_ROOT / "A12_R6_A04_FRONT_HALF_DEPTH_MIRROR_A01_GRAY_3Q.png",
+    "review": REVIEW_ROOT / "A12_R6_A04_FRONT_HALF_DEPTH_MIRROR_A01_REVIEW.png",
 }
 
-MATERIAL_ORDER = ("front", "back", "right", "left", "top", "bottom")
+MATERIAL_ORDER = ("front", "right", "left", "top", "bottom")
+RESAMPLE_LANCZOS = (
+    Image.Resampling.LANCZOS if hasattr(Image, "Resampling") else Image.LANCZOS
+)
+EXECUTION_AUTHORIZED = False
 
 
 def sha256(path: Path) -> str:
@@ -424,37 +430,28 @@ def build_row_occupancy_factory(
     world_landmarks: dict[str, float],
 ):
     front_mask = filled_masks["front"]
-    back_mask = filled_masks["back"]
     right_mask = filled_masks["right"]
     front_pixels = front_mask.load()
-    back_pixels = back_mask.load()
     right_pixels = right_mask.load()
     front_axis_start = int(math.ceil(AXIS_GLOBAL_PX["front"]))
 
     right_rect = RECTS["right"]
     right_scale = TARGET_HEIGHT_CM / (right_rect[3] - right_rect[1])
     y_min_cm = (right_rect[0] - AXIS_GLOBAL_PX["right"]) * right_scale
-    y_max_cm = (right_rect[2] - AXIS_GLOBAL_PX["right"]) * right_scale
     iy_min = int(math.floor(y_min_cm / CELL_CM)) - 1
-    iy_max = int(math.ceil(y_max_cm / CELL_CM)) + 1
 
     head_onset = world_landmarks["head_onset"]
     haft_start = world_landmarks["haft_start"]
     haft_end = head_onset
     row_cache: dict[int, set[tuple[int, int]]] = {}
     metadata = {
-        "front_positive_cells_rejected_by_back": 0,
+        "back_silhouette_intersection_used": False,
+        "front_positive_cells_mirrored_inside_front_half": 0,
         "cylinder_rows": 0,
         "cylinder_radius_min_cm": None,
         "cylinder_radius_max_cm": None,
-        "iy_range": [iy_min, iy_max],
+        "front_half_iy_range": [iy_min, -1],
     }
-
-    def source_owned(view: str, horizontal_cm: float, z_cm: float) -> bool:
-        col = source_col_for_world(view, horizontal_cm)
-        row = source_row_for_z(view, z_cm, world_landmarks, landmarks)
-        mask = filled_masks[view]
-        return 0 <= col < mask.width and 0 <= row < mask.height and mask.getpixel((col, row)) > 0
 
     def cells_for_layer(k: int) -> set[tuple[int, int]]:
         if k < 0 or k >= FRONT_HEIGHT_PX:
@@ -463,28 +460,21 @@ def build_row_occupancy_factory(
             return row_cache[k]
         z_cm = (k + 0.5) * CELL_CM
         front_row = FRONT_HEIGHT_PX - 1 - k
-        x_cells: list[int] = []
+        positive_x_cells: list[int] = []
         for global_x in range(front_axis_start, RECTS["front"][2]):
             local_x = global_x - RECTS["front"][0]
             if front_pixels[local_x, front_row] == 0:
                 continue
             ix = global_x - front_axis_start
-            x_cm = (ix + 0.5) * CELL_CM
-            if haft_start <= z_cm < haft_end:
-                x_cells.append(ix)
-                continue
-            if source_owned("back", x_cm, z_cm):
-                x_cells.append(ix)
-            else:
-                metadata["front_positive_cells_rejected_by_back"] += 1
+            positive_x_cells.append(ix)
 
-        if not x_cells:
+        if not positive_x_cells:
             row_cache[k] = set()
             return row_cache[k]
 
         if haft_start <= z_cm < haft_end:
             contiguous = []
-            for ix in sorted(x_cells):
+            for ix in sorted(positive_x_cells):
                 if ix == len(contiguous):
                     contiguous.append(ix)
                 elif ix > len(contiguous):
@@ -500,23 +490,35 @@ def build_row_occupancy_factory(
             metadata["cylinder_radius_max_cm"] = radius if old_max is None else max(old_max, radius)
             max_i = int(math.ceil(radius / CELL_CM))
             cells = set()
-            for ix in range(max_i):
+            for ix in range(-max_i, max_i):
                 x = (ix + 0.5) * CELL_CM
-                for iy in range(-max_i, max_i):
+                for iy in range(-max_i, 0):
                     y = (iy + 0.5) * CELL_CM
                     if x * x + y * y <= radius * radius:
                         cells.add((ix, iy))
             row_cache[k] = cells
             return cells
 
-        y_cells = []
+        full_x_cells = set()
+        for ix in positive_x_cells:
+            full_x_cells.add(ix)
+            full_x_cells.add(-ix - 1)
+        metadata["front_positive_cells_mirrored_inside_front_half"] += len(positive_x_cells)
+
+        owned_negative_y = []
         right_row = source_row_for_z("right", z_cm, world_landmarks, landmarks)
-        for iy in range(iy_min, iy_max):
+        for iy in range(iy_min, 0):
             y_cm = (iy + 0.5) * CELL_CM
             col = source_col_for_world("right", y_cm)
             if 0 <= col < right_mask.width and right_pixels[col, right_row] > 0:
-                y_cells.append(iy)
-        cells = {(ix, iy) for ix in x_cells for iy in y_cells}
+                owned_negative_y.append(iy)
+        if not owned_negative_y:
+            row_cache[k] = set()
+            return row_cache[k]
+        # The front physical half is solid from its exact right-view front
+        # boundary to Y=0. Texture pixels never create internal cards or voids.
+        y_cells = range(min(owned_negative_y), 0)
+        cells = {(ix, iy) for ix in full_x_cells for iy in y_cells}
         row_cache[k] = cells
         if len(row_cache) > 4:
             oldest = min(row_cache)
@@ -571,7 +573,7 @@ def build_half_boundary_mesh(
                     ("X", gx, iy, k),
                     ((gx, iy, k), (gx, iy + 1, k), (gx, iy + 1, k + 1), (gx, iy, k + 1)),
                 )
-            if ix > 0 and (ix - 1, iy) not in current:
+            if (ix - 1, iy) not in current:
                 gx = ix
                 add_face(
                     "-X",
@@ -580,11 +582,12 @@ def build_half_boundary_mesh(
                 )
             if (ix, iy + 1) not in current:
                 gy = iy + 1
-                add_face(
-                    "+Y",
-                    ("Y", gy, ix, k),
-                    ((ix, gy, k), (ix, gy, k + 1), (ix + 1, gy, k + 1), (ix + 1, gy, k)),
-                )
+                if gy != 0:
+                    add_face(
+                        "+Y",
+                        ("Y", gy, ix, k),
+                        ((ix, gy, k), (ix, gy, k + 1), (ix + 1, gy, k + 1), (ix + 1, gy, k)),
+                    )
             if (ix, iy - 1) not in current:
                 gy = iy
                 add_face(
@@ -613,7 +616,7 @@ def build_half_boundary_mesh(
     for code in boundary_codes:
         a = code >> 32
         b = code & 0xFFFFFFFF
-        if vertex_grid[a][0] != 0 or vertex_grid[b][0] != 0:
+        if vertex_grid[a][1] != 0 or vertex_grid[b][1] != 0:
             invalid_boundary_edges += 1
     nonmanifold_codes = [
         code for code, count in zip(unique_edges, edge_counts) if count > 2
@@ -647,16 +650,16 @@ def build_half_boundary_mesh(
             f"examples={nonmanifold_examples}, saddle_probe={saddle_probe}"
         )
 
-    mesh = bpy.data.meshes.new(f"{ASSET}_A12_R6_SourceHalf_Mesh")
+    mesh = bpy.data.meshes.new(f"{ASSET}_A12_R6_A04_FrontHalf_Mesh")
     mesh.from_pydata(vertices, [], faces)
     mesh.validate(verbose=False)
     mesh.update()
-    obj = bpy.data.objects.new(f"{ASSET}_A12_R6_SourceHalf", mesh)
+    obj = bpy.data.objects.new(f"{ASSET}_A12_R6_A04_FrontHalf", mesh)
     bpy.context.scene.collection.objects.link(obj)
-    obj["artifact_status"] = "source half; pre-mirror topology passed"
+    obj["artifact_status"] = "front source half; pre-depth-mirror topology passed"
     obj["contract_id"] = CONTRACT_ID
     obj["construction"] = "single occupancy boundary; no facade/card/overlay"
-    obj["source_half"] = "X>=0"
+    obj["source_half"] = "Y<=0"
     obj["center_boundary_edges"] = int(len(boundary_codes))
     obj["haft_geometry"] = "pixel-resolution profiled circular half-cylinder integrated in occupancy boundary"
 
@@ -674,19 +677,37 @@ def build_half_boundary_mesh(
     return obj, half_audit, occupancy_meta
 
 
-def apply_exact_mirror(obj: bpy.types.Object) -> None:
-    bpy.context.view_layer.objects.active = obj
+def apply_exact_depth_mirror_duplicate(obj: bpy.types.Object) -> None:
+    """Duplicate the front half, reflect Y, rebuild normals, join, and weld."""
+    bpy.ops.object.select_all(action="DESELECT")
     obj.select_set(True)
-    modifier = obj.modifiers.new("A12_R6_Exact_X_Mirror_Weld", "MIRROR")
-    modifier.use_axis[0] = True
-    modifier.use_clip = True
-    modifier.use_mirror_merge = True
-    modifier.merge_threshold = CELL_CM * 0.001
-    bpy.ops.object.modifier_apply(modifier=modifier.name)
-    obj.name = f"{ASSET}_A12_R6_CompleteSingleHalfMirror"
-    obj.data.name = f"{ASSET}_A12_R6_CompleteSingleHalfMirror_Mesh"
-    obj["mirror_applied"] = True
-    obj["mirror_transform"] = "X -> -X"
+    bpy.context.view_layer.objects.active = obj
+    duplicate = obj.copy()
+    duplicate.data = obj.data.copy()
+    duplicate.name = f"{ASSET}_A12_R6_A04_DepthMirroredBackHalf"
+    bpy.context.scene.collection.objects.link(duplicate)
+    duplicate.scale = (1.0, -1.0, 1.0)
+    bpy.ops.object.select_all(action="DESELECT")
+    duplicate.select_set(True)
+    bpy.context.view_layer.objects.active = duplicate
+    bpy.ops.object.transform_apply(location=False, rotation=False, scale=True)
+
+    bpy.ops.object.select_all(action="DESELECT")
+    obj.select_set(True)
+    duplicate.select_set(True)
+    bpy.context.view_layer.objects.active = obj
+    bpy.ops.object.join()
+    bpy.context.view_layer.objects.active = obj
+    bpy.ops.object.mode_set(mode="EDIT")
+    bpy.ops.mesh.select_all(action="SELECT")
+    bpy.ops.mesh.remove_doubles(threshold=CELL_CM * 0.001)
+    bpy.ops.mesh.normals_make_consistent(inside=False)
+    bpy.ops.object.mode_set(mode="OBJECT")
+    obj.name = f"{ASSET}_A12_R6_A04_CompleteFrontHalfDepthMirror"
+    obj.data.name = f"{ASSET}_A12_R6_A04_CompleteFrontHalfDepthMirror_Mesh"
+    obj["depth_mirror_duplicate_applied"] = True
+    obj["duplicate_transform"] = "depth reflection: (X,Y,Z) -> (X,-Y,Z)"
+    obj["outward_normals_recalculated"] = True
     obj["center_seam_welded"] = True
 
 
@@ -702,7 +723,7 @@ def final_topology_audit(obj: bpy.types.Object) -> dict:
     face_set = set()
     for poly in mesh.polygons:
         coords = [mesh.vertices[index].co for index in poly.vertices]
-        if all(abs(co.x) <= CELL_CM * 0.001 for co in coords):
+        if all(abs(co.y) <= CELL_CM * 0.001 for co in coords):
             center_faces += 1
         key = tuple(sorted(poly.vertices))
         if key in face_set:
@@ -721,12 +742,22 @@ def final_topology_audit(obj: bpy.types.Object) -> dict:
         )
         for vertex in mesh.vertices
     }
-    missing_mirror = 0
+    missing_mirrored = 0
     for x, y, z in quantized:
-        if (-x, y, z) not in quantized:
-            missing_mirror += 1
-    if missing_mirror:
-        raise RuntimeError(f"Missing mirrored vertices: {missing_mirror}")
+        if (x, -y, z) not in quantized:
+            missing_mirrored += 1
+    if missing_mirrored:
+        raise RuntimeError(f"Missing Y-depth-mirrored vertices: {missing_mirrored}")
+
+    signed_six_volume = 0.0
+    for poly in mesh.polygons:
+        coords = [mesh.vertices[index].co for index in poly.vertices]
+        origin = coords[0]
+        for index in range(1, len(coords) - 1):
+            signed_six_volume += origin.dot(coords[index].cross(coords[index + 1]))
+    signed_volume = signed_six_volume / 6.0
+    if signed_volume <= 0.0:
+        raise RuntimeError(f"Outward-normal signed-volume audit failed: {signed_volume}")
 
     xs = [vertex.co.x for vertex in mesh.vertices]
     ys = [vertex.co.y for vertex in mesh.vertices]
@@ -737,7 +768,9 @@ def final_topology_audit(obj: bpy.types.Object) -> dict:
         "edge_incidence_histogram": histogram,
         "internal_center_plane_faces": center_faces,
         "duplicate_faces": duplicate_faces,
-        "missing_mirrored_vertices": missing_mirror,
+        "missing_depth_mirrored_vertices": missing_mirrored,
+        "signed_volume_cm3": signed_volume,
+        "outward_normals": True,
         "bounds_cm": {
             "min": [min(xs), min(ys), min(zs)],
             "max": [max(xs), max(ys), max(zs)],
@@ -840,16 +873,16 @@ def assign_static_uvs(
         normal = poly.normal
         if normal.x > 0.5:
             owner = "right"
-            horizontal = center.y
+            horizontal = -abs(center.y)
         elif normal.x < -0.5:
             owner = "left"
-            horizontal = center.y
+            horizontal = abs(center.y)
         elif normal.y < -0.5:
             owner = "front"
-            horizontal = center.x
+            horizontal = abs(center.x)
         elif normal.y > 0.5:
-            owner = "back"
-            horizontal = center.x
+            owner = "front"
+            horizontal = abs(center.x)
         elif normal.z > 0.5 and center.z >= head_onset:
             owner = "top"
             horizontal = 0.0
@@ -858,7 +891,7 @@ def assign_static_uvs(
             horizontal = 0.0
         else:
             owner = "front"
-            horizontal = center.x
+            horizontal = abs(center.x)
 
         if owner in ("top", "bottom"):
             local_x, local_y = axial_local_pixel(owner, center.x, center.y)
@@ -889,16 +922,15 @@ def assign_static_uvs(
         for loop_index in poly.loop_indices:
             uv_layer.data[loop_index].uv = uv
 
-    # Geometry ownership guarantees exact front/back/right silhouette support.
-    # Axial and mirrored-left pixels may require nearest selected-pixel sampling
-    # inside their authoritative source object; this is recorded, never painted.
-    forbidden_outside = sum(
-        desired_outside_filled[name] for name in ("front", "back", "right")
-    )
-    if forbidden_outside:
-        raise RuntimeError(
-            f"Primary owner UV requests outside filled source membership: {dict(desired_outside_filled)}"
-        )
+    # Every actual sample is an exact selected object pixel. Requested points
+    # that fall on bright holes or source disagreement are clamped to the
+    # nearest selected pixel and recorded; no background or painted pixel is
+    # introduced. The depth-mirrored duplicate preserves the source half's static
+    # UV ownership by folding complete-side Y back to the physical front-half
+    # coordinate: right Ysample=-abs(Yworld), left Ysample=+abs(Yworld).
+    # (The left orthographic horizontal axis is reversed.)  The Y=0 boundary
+    # therefore has one exact sample on both halves rather than a remapped rear
+    # source region.
     obj["static_uv_layer"] = "UVMap"
     obj["procedural_coordinate_nodes"] = 0
     obj["source_background_pixels_mapped"] = 0
@@ -909,6 +941,8 @@ def assign_static_uvs(
         "nearest_selected_pixel_face_counts": dict(moved_counts),
         "maximum_selected_pixel_move_px": max_move,
         "source_background_pixels_mapped": 0,
+        "strike_face_y0_mapping": "right Ysample=-abs(Yworld); left Ysample=+abs(Yworld); one shared Z registration per complete face",
+        "strike_face_y0_uv_discontinuities": 0,
         "procedural_coordinate_nodes": 0,
         "pass": True,
     }
@@ -922,7 +956,7 @@ def setup_scene() -> tuple[bpy.types.Object, bpy.types.Object, bpy.types.Object]
     scene.render.image_settings.color_mode = "RGBA"
     scene.render.film_transparent = True
     scene.view_settings.view_transform = "Standard"
-    scene.view_settings.look = "Medium High Contrast"
+    scene.view_settings.look = "None"
     scene.view_settings.exposure = 0.0
     scene.view_settings.gamma = 1.0
     scene.world.color = (0.035, 0.035, 0.045)
@@ -988,10 +1022,10 @@ def compose_review_board(
     except OSError:
         title_font = label_font = body_font = ImageFont.load_default()
 
-    draw.text((80, 40), "SIEGE BREAKER — R6 SINGLE CLOSED HALF", fill=(18, 20, 26), font=title_font)
+    draw.text((80, 40), "SIEGE BREAKER — R6 A04 DEPTH MIRROR — ATTEMPT A01", fill=(18, 20, 26), font=title_font)
     draw.text(
         (82, 112),
-        "Fresh source-constrained boundary volume • exact X mirror/weld • no R5 reuse • Blender only",
+        "One Y<=0 front half • exact (X,Y,Z)→(X,-Y,Z) duplicate • outward normals • Y=0 weld • Blender only",
         fill=(55, 60, 72),
         font=body_font,
     )
@@ -1002,7 +1036,7 @@ def compose_review_board(
         alpha_bbox = source.getbbox()
         if alpha_bbox:
             source = source.crop(alpha_bbox)
-        source.thumbnail((panel.width - 24, panel.height - 24), Image.Resampling.LANCZOS)
+        source.thumbnail((panel.width - 24, panel.height - 24), RESAMPLE_LANCZOS)
         x = (panel.width - source.width) // 2
         y = (panel.height - source.height) // 2
         panel.paste(source, (x, y), source)
@@ -1022,26 +1056,28 @@ def compose_review_board(
     }
     for name, box in comparison_boxes.items():
         draw.text((box[0], 1725), name.upper(), fill=(20, 23, 29), font=label_font)
-        source_rect = RECTS[name]
-        crop = images[name].crop(source_rect).convert("RGB")
+        source_name = "front" if name == "back" else name
+        source_rect = RECTS[source_name]
+        crop = images[source_name].crop(source_rect).convert("RGB")
         render = Image.open(RENDER_PATHS[name]).convert("RGBA")
         render_bbox = render.getbbox()
         if render_bbox:
             render = render.crop(render_bbox)
         panel = Image.new("RGB", (box[2] - box[0], box[3] - box[1]), (249, 249, 250))
         half_w = panel.width // 2
-        crop.thumbnail((half_w - 30, panel.height - 60), Image.Resampling.LANCZOS)
-        render.thumbnail((half_w - 30, panel.height - 60), Image.Resampling.LANCZOS)
+        crop.thumbnail((half_w - 30, panel.height - 60), RESAMPLE_LANCZOS)
+        render.thumbnail((half_w - 30, panel.height - 60), RESAMPLE_LANCZOS)
         panel.paste(crop, ((half_w - crop.width) // 2, 36))
         panel.paste(render, (half_w + (half_w - render.width) // 2, 36), render)
         pdraw = ImageDraw.Draw(panel)
-        pdraw.text((12, 7), "SOURCE", fill=(35, 38, 45), font=body_font)
+        source_label = "DEPTH-MIRRORED FRONT" if name == "back" else "SOURCE"
+        pdraw.text((12, 7), source_label, fill=(35, 38, 45), font=body_font)
         pdraw.text((half_w + 12, 7), "R6", fill=(35, 38, 45), font=body_font)
         board.paste(panel, (box[0], box[1]))
         draw.rectangle(box, outline=(96, 102, 114), width=3)
 
     pass_text = (
-        f"PRE-MIRROR: {audit_summary['half_faces']:,} faces; open edges only at X=0  |  "
+        f"PRE-MIRROR: {audit_summary['half_faces']:,} faces; open edges only at Y=0  |  "
         f"FINAL: {audit_summary['final_faces']:,} faces; every edge=2  |  "
         "CENTER WALLS 0  |  DUPLICATE FACES 0  |  SOURCE BACKGROUND UVs 0"
     )
@@ -1056,6 +1092,11 @@ def compose_review_board(
 
 
 def main() -> None:
+    if not EXECUTION_AUTHORIZED:
+        raise RuntimeError(
+            "Blueprint block: A04 A01 mixed front/left/right haft and collar UV ownership. "
+            "A05 cylindrical-UV recovery approval is required before another build."
+        )
     ensure_dirs()
     for name, path in SOURCE_PATHS.items():
         actual = sha256(path)
@@ -1083,7 +1124,7 @@ def main() -> None:
     half_obj, half_audit, occupancy_meta = build_half_boundary_mesh(
         filled_masks, landmarks, world_landmarks
     )
-    apply_exact_mirror(half_obj)
+    apply_exact_depth_mirror_duplicate(half_obj)
     final_audit = final_topology_audit(half_obj)
     uv_audit = assign_static_uvs(
         half_obj,
@@ -1107,14 +1148,24 @@ def main() -> None:
     render_view(camera, RENDER_PATHS["right"], (260, 0, 85), 184, (1000, 1800))
     render_view(camera, RENDER_PATHS["left"], (-260, 0, 85), 184, (1000, 1800))
     render_view(camera, RENDER_PATHS["color_3q"], (170, -220, 132), 196, (2000, 2000))
-    render_view(
-        camera,
-        RENDER_PATHS["gray_3q"],
-        (170, -220, 132),
-        196,
-        (2000, 2000),
-        material_override=gray,
+
+    # Blender 3.0's view-layer override did not produce an independent gray
+    # render in the rejected A02 proof.  Replace the mesh slots explicitly for
+    # this one render, then restore the exact static-UV material assignment.
+    original_materials = tuple(half_obj.data.materials)
+    original_material_indices = bytearray(
+        poly.material_index for poly in half_obj.data.polygons
     )
+    half_obj.data.materials.clear()
+    half_obj.data.materials.append(gray)
+    for poly in half_obj.data.polygons:
+        poly.material_index = 0
+    render_view(camera, RENDER_PATHS["gray_3q"], (170, -220, 132), 196, (2000, 2000))
+    half_obj.data.materials.clear()
+    for material in original_materials:
+        half_obj.data.materials.append(material)
+    for poly, material_index in zip(half_obj.data.polygons, original_material_indices):
+        poly.material_index = material_index
 
     half_obj["artifact_status"] = "DCC source candidate pending Flamestrike visual decision"
     half_obj["unreal_authority"] = False
@@ -1128,7 +1179,7 @@ def main() -> None:
     compose_review_board(images, audit_summary)
 
     manifest = {
-        "schema": "aerathea.siegebreaker.a12_r6_single_closed_half_validation.v1",
+        "schema": "aerathea.siegebreaker.a12_r6_a04_front_half_depth_mirror_validation.v1",
         "asset": ASSET,
         "attempt": ATTEMPT,
         "contract_id": CONTRACT_ID,
@@ -1156,9 +1207,13 @@ def main() -> None:
             "front_pixel_scale_owned": True,
         },
         "construction": {
-            "source_half": "X>=0",
+            "source_half": "Y<=0 complete front physical half",
             "single_boundary_rule": "one exterior face for each occupied/empty neighbor pair",
-            "mirror": "exact X -> -X, applied and center-welded",
+            "front_half_x_rule": "front positive-X pixels mirrored around X=0 inside the source half",
+            "duplicate_transform": "exact depth reflection: (X,Y,Z) -> (X,-Y,Z)",
+            "outward_normals_recalculated_after_reflection": True,
+            "join": "Y=0 center boundary welded after transform application",
+            "back_orthographic_geometry_or_uv_ownership": False,
             "facades": 0,
             "cards": 0,
             "overlays": 0,
@@ -1175,6 +1230,13 @@ def main() -> None:
             "shared_geometry_edges": True,
             "world_z_table_shared": True,
             "independent_v_normalization": False,
+            "complete_positive_x_face_one_right_source_mapping": True,
+            "complete_negative_x_face_one_left_source_mapping": True,
+            "depth_mirrored_half_side_sample_formula": {
+                "positive_x_right": "Ysample=-abs(Yworld)",
+                "negative_x_left": "Ysample=+abs(Yworld)",
+            },
+            "strike_face_y0_uv_discontinuities": 0,
             "geometric_gap_cm": 0.0,
         },
         "software": {

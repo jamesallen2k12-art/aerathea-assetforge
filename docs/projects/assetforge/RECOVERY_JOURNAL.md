@@ -7847,3 +7847,63 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260722-202623/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260722-202623/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 20:52:28 EDT -0400 - Siege Breaker R6A03 approved front-half rotate180 prebuild
+
+- Snapshot: `Saved/ProjectRecovery/20260722-205228/`
+- Git: branch `main`, HEAD `4d5fafc`, status lines `340`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-205228/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-205228/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-205228/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 21:02:10 EDT -0400 - Siege Breaker A12 R6 A03 attempt 3 prebuild: rotated UV ownership and independent gray proof fixed
+
+- Snapshot: `Saved/ProjectRecovery/20260722-210210/`
+- Git: branch `main`, HEAD `4d5fafc`, status lines `349`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-210210/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-210210/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-210210/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 21:06:08 EDT -0400 - Siege Breaker A12 R6 A03 attempt 4 prebuild: corrected left orthographic axis sign
+
+- Snapshot: `Saved/ProjectRecovery/20260722-210608/`
+- Git: branch `main`, HEAD `4d5fafc`, status lines `358`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-210608/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-210608/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-210608/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 21:17:46 EDT -0400 - Siege Breaker A12 R6 A04 A01 prebuild: approved proper-axis Y depth mirror
+
+- Snapshot: `Saved/ProjectRecovery/20260722-211746/`
+- Git: branch `main`, HEAD `4d5fafc`, status lines `369`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-211746/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-211746/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-211746/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 21:25:40 EDT -0400 - Siege Breaker A12 R6 A04 A01 rejected: connected geometry, invalid mixed haft/collar UV ownership
+
+- Snapshot: `Saved/ProjectRecovery/20260722-212540/`
+- Git: branch `main`, HEAD `4d5fafc`, status lines `378`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-212540/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-212540/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-212540/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 21:32:18 EDT -0400 - Siege Breaker A12 R6 A04 Core recovery complete; A05 cylindrical UV draft awaiting approval
+
+- Snapshot: `Saved/ProjectRecovery/20260722-213218/`
+- Git: branch `main`, HEAD `4d5fafc`, status lines `381`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-213218/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-213218/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-213218/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

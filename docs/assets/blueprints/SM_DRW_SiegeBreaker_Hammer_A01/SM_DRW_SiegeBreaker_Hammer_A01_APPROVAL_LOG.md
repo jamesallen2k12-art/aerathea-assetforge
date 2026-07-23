@@ -647,3 +647,55 @@
   rule missing`.
 - A bounded A02 rule is drafted. No repair or continued Blender production is
   authorized until Flamestrike approves it.
+
+## A12 R6 A03 Front-Half Rotation Approval
+
+- Date: `2026-07-22`.
+- Flamestrike decision: the front physical half should be rotated `180
+  degrees` around the handle axis so the two copies meet without an
+  independently scaled front/back seam.
+- Approval response to the stated tradeoff and method: `ok do it`.
+- A02 status: `superseded unexecuted`; its one-pixel insertion is forbidden.
+- Approved scope: one coherent `Y<=0` front half, exact `Rz(180 degrees)`
+  duplicate, `Y=0` weld, one continuous +X right-source mapping and one
+  continuous -X left-source mapping, source-background exclusion audit, and
+  declared Blender review package.
+- Back orthographic status in A03: `reference only`; the back is the rotated
+  front and cannot independently change geometry, scale, or texture.
+- Image generation, TRELLIS, image-to-3D, FBX, Unreal, LOD, collision, and
+  game-ready escalation remain unauthorized.
+
+## A12 R6 A04 Proper-Axis Depth-Mirror Approval
+
+- Date: `2026-07-22`.
+- Flamestrike direction: after copying the completed front side to the back,
+  orient it on the proper axis and weld it.
+- Coordinate resolution: in the locked Blender frame, preserving left/right
+  and top/bottom while moving front to back is the exact depth reflection
+  `(X,Y,Z) -> (X,-Y,Z)` across `Y=0`; an X-axis rotation would invert Z and a
+  Z-axis rotation swaps X.
+- Flamestrike approval: `ok then make the adjustment to the proper axis`.
+- A03 status: `reference only; superseded after internal attempts`.
+- Approved scope: one fresh coherent `Y<=0` front half, exact Y depth mirror,
+  outward-normal correction, `Y=0` weld, preserved side-source ownership,
+  fail-closed audit, and declared Blender review package.
+- Back orthographic: `reference only`; it cannot independently change geometry,
+  scale, or texture.
+- Image generation, TRELLIS, image-to-3D, FBX, Unreal, LOD, collision, and
+  game-ready escalation remain unauthorized.
+
+## A12 R6 A04 A01 Haft/Collar Visual Revision
+
+- Date: `2026-07-22`.
+- Flamestrike finding on the A12 image: the haft cylinders do not connect
+  visibly, the vertical design is misaligned, and part of the collar below the
+  head lacks correct pixel ownership.
+- Result: A04 A01 complete visual candidate `invalid / quarantined`; the
+  independent candidate audit was not run.
+- Preserved proof only: one connected closed mesh, exact Y-depth mirror,
+  welded center, and outward normals.
+- Root cause: global +X/-X head-source routing was incorrectly applied to the
+  haft and collar, mixing front, left, and right projections instead of using
+  the approved component-specific cylindrical UV method.
+- Current production authority: `false` pending Flamestrike approval of
+  `A12_R6_A05_HAFT_COLLAR_CYLINDRICAL_UV_RECOVERY_CONTRACT.md`.

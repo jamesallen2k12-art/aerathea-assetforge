@@ -530,3 +530,81 @@ The contract did not declare front or back precedence for this one-pixel
 topology conflict. The gate therefore stopped without adding or removing any
 cell. The builder is quarantined as a diagnostic implementation until an exact
 reconciliation is approved.
+
+## R6 A03 Internal Attempts — Z-Rotation Method Superseded Before Approval
+
+- Date: `2026-07-22`
+- Status: `quarantined / reference only; never presented as a valid candidate`
+- Contract: `SB-AXIAL-A12-R6-A03-FRONT-HALF-ROTATE180`
+
+The A03 lane produced one coherent front physical half and mechanically closed
+copies, but none reached the required approved visual gate before Flamestrike
+superseded the Z-axis transform with the proper-axis A04 depth mirror.
+
+- A01 stopped before output because Blender 3.0 rejected an unsupported color
+  look. No `.blend`, manifest, or review board was created.
+- A02 passed geometry construction but was internally rejected: complete-side
+  UV reassignment sampled outside the side-source objects, producing broad
+  white bands; the gray override repeated the color proof; Pillow review-board
+  packaging failed. Preserved local `.blend` SHA:
+  `50bf23585544815f342ba3a14dc9c1d64ca7a1cebb17da4a890fae09ca05eb59`.
+- A03 corrected rotated right-side ownership and the independent gray proof,
+  but the left orthographic axis sign remained reversed. The left render
+  contained broad white bands and was internally rejected. Preserved hashes:
+  `.blend` `93207b4c7c7fcc435b19a254e77756efbe76bb51e1b27085f6ee88c7b5c8e93f`,
+  validation `ae169b6857b14683514228c0b06121cfe5dd778c6cd31e7b5b02b75119942211`,
+  board `00b470a60e22f06f3969098e5001b0af73c5a24d7272d1cfb052a3c7104fc3da`.
+- A04 corrected the left sign and removed the broad source-background bands.
+  Before independent audit or visible presentation, Flamestrike clarified that
+  the copied front half must preserve left/right and top/bottom on the proper
+  front/back axis. This output is therefore `reference only` under the
+  superseded A03 Z-rotation method, not a visual candidate. Preserved hashes:
+  `.blend` `93b82f723ab07a55f42049b6aeda802d7107f7290ed4320c5aedb0e539e20808`,
+  validation `29f4e4dcbd7dea139b8df2c4549bbf4fddf85be68167044264a09a0e94e0dd79`,
+  board `f6576911e98cb43c50f3345f5a06aca78682a9e3db04eb8653d851bcb359297a`.
+
+The A03 outputs remain local defect/mechanical evidence only. They are
+forbidden A04 construction inputs. A04 restarts from the immutable source PNGs
+and uses only `(X,Y,Z)->(X,-Y,Z)` before the `Y=0` weld.
+
+## R6 A04 A01 — Depth Mirror Correct, Haft/Collar Ownership Invalid
+
+- Date: `2026-07-22`
+- Status: `quarantined after Flamestrike visual revision`
+- Contract: `SB-AXIAL-A12-R6-A04-FRONT-HALF-DEPTH-MIRROR`
+
+A04 A01 applied the correct depth reflection, recalculated outward normals,
+welded `Y=0`, and produced one closed connected mesh. Numerical inspection
+confirmed every one of its `1,210,410` vertices belongs to one connected
+component. The final edge-incidence histogram is exactly `{2: 2,420,816}`;
+internal center faces, duplicate faces, and missing Y-mirrored vertices are all
+zero. These facts remain `proof only`.
+
+Flamestrike identified that the visible haft cylinders do not connect, the
+vertical design is misaligned, and part of the collar immediately below the
+head lacks correct pixel ownership. The render and material audit confirms the
+failure is not an open geometric seam. The builder applied the global head-side
+rule to the haft and collar, mixing three independent source projections:
+
+- complete haft interval: `95,664` front-owned faces, `36,766` left-owned
+  faces, and `36,766` right-owned faces;
+- upper collar interval `Z=106.0..110.324032403 cm`: `6,592` front-owned
+  faces, `2,176` left-owned faces, and `2,176` right-owned faces.
+
+Those projections do not define one cylindrical vertical registration. The
+side-source pixels produce broken collar ownership and visible stepped light
+regions at the cylinder boundaries. This also fails to implement Flamestrike's
+explicit static cylindrical-UV rule for the haft.
+
+Preserved hashes:
+
+- `.blend`: `386a532b3fd400ea22b793f6b61ae6133ce7742667e09c2b7da3ac913c68bff3`;
+- validation: `d09f202c9880a44f99454bc426c562543edb7907b8a79cf16212e574bad3bf63`;
+- review board: `f173c834e51d47728494fa25ffbd3f933070dea2f57cbf60576e51dd82dab6fa`;
+- colored three-quarter: `3c10027e66aa29e5c3043ca9bbab6d403f721b2270ac6a270992f9d3b8aa918a`.
+
+Recovery boundary: do not repair the saved A01 blend. Rebuild fresh from the
+immutable source files after approving one haft-specific rule that assigns the
+complete front semicylinder and its collar to one front-derived static UV
+island, preserves that UV through the Y-depth mirror, and forbids left/right
+source ownership below the exact head transition.

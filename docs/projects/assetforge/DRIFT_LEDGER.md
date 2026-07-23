@@ -921,3 +921,36 @@ Core authority: `AGENTS.md` Core Principles govern this ledger. Drifted artifact
   manifold half, one occurrence of every visible surface, zero overlapping
   owner faces, zero source-background exposure, and an exact welded center seam
   before symmetry checks can pass.
+
+### 2026-07-22 - Siege Breaker A12 R6 A04 A01 Haft/Collar UV-Ownership Drift
+
+- Asset or scope: `SM_DRW_SiegeBreaker_Hammer_A01` A12 R6 A04 A01 depth-mirror
+  build, specifically the haft and upper collar below the head.
+- Detected by: Flamestrike visual review of the A12 colored output.
+- Last known Core-valid state: immutable source pixels and hashes, coherent
+  `Y<=0` front physical half, approved `(X,Y,Z)->(X,-Y,Z)` depth mirror,
+  `Y=0` weld, and Flamestrike's earlier explicit static cylindrical-UV method.
+- First drift action: `assign_static_uvs` applied the global +X right-source and
+  -X left-source head rule to every polygon in the haft/collar interval instead
+  of invoking a haft-specific front-derived cylindrical UV owner.
+- Assumption that caused drift: one shared piecewise Z landmark table and
+  nearest selected-pixel clamping were treated as sufficient to register three
+  independent orthographic projections around one cylinder.
+- Proven evidence: the complete mesh is one connected component containing all
+  `1,210,410` vertices and every edge has two incident faces, but the haft mixes
+  `95,664` front-, `36,766` left-, and `36,766` right-owned faces. The upper
+  collar alone mixes `6,592` front with `2,176` left and `2,176` right.
+- Affected outputs: A04 A01 blend UV/material assignment, all colored renders,
+  review board, validation candidate classification, and pending visual status.
+- Artifact statuses: complete A04 A01 visual candidate `invalid / quarantined`;
+  connectivity, depth-mirror, closed-topology, and normal audits `proof only`;
+  immutable source evidence and proper-axis transform remain authoritative.
+- Recovery decision: do not repair the saved blend. Return to a fresh source
+  rebuild and require one front-derived static cylindrical UV owner for the
+  complete front haft/collar half, preserved through the depth mirror; forbid
+  left/right ownership below the exact head transition.
+- Current block: `Blueprint block: revised haft/collar UV ownership rule
+  requires Flamestrike approval before another Blender build`.
+- Follow-up Core/Kaizen improvement: component-specific ownership rules must be
+  evaluated before global normal-direction material routing; connected topology
+  does not prove continuous visible ownership.

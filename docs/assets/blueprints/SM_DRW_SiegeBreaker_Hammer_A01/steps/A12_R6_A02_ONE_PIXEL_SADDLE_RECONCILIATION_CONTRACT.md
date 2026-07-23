@@ -4,7 +4,7 @@
 - Parent contract: `SB-AXIAL-A12-R6-SINGLE-CLOSED-HALF`
 - Amendment ID: `SB-AXIAL-A12-R6-A02-ONE-PIXEL-SADDLE`
 - Date: `2026-07-22`
-- Status: `draft; Flamestrike approval required before execution`
+- Status: `superseded unexecuted by approved A03 front-half rotation method`
 - Artifact ceiling: `DCC source candidate pending Flamestrike visual decision`
 - Unreal authority: `false`
 - Fully game-ready authority: `false`
@@ -66,3 +66,10 @@ No other source cell may be filled, deleted, beveled, smoothed, or remeshed.
 
 No further Blender construction is authorized until Flamestrike approves this
 exact one-pixel front-owner precedence rule.
+
+## Superseding Decision
+
+Flamestrike did not approve this one-pixel repair. On `2026-07-22`, Flamestrike
+instead approved building one complete front physical half, duplicating it by
+an exact `180-degree` rotation around the handle axis, and welding the two
+halves. A02 remains preserved as `reference only` and must not be executed.
