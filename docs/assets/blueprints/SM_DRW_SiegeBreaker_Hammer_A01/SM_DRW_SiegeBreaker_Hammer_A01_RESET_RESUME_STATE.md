@@ -1,10 +1,10 @@
 # SM_DRW_SiegeBreaker_Hammer_A01 Reset / Resume State
 
-- Active approved route: `none; Core Recovery after A12 R6 A05 geometry failure`
-- Plan: `SM_DRW_SiegeBreaker_Hammer_A01_A12_R7_COMPONENT_GEOMETRY_RECOVERY_PLAN.md` (`draft; approval required`)
-- Active contract: `none for Blender execution; A05 is historical invalid output evidence`
-- Current state: `R6 A05 A01-A03 invalid/quarantined after foundational component-geometry failure`
-- Next approved activity: `none; first present the draft R7 plan for Flamestrike approval or revision`
+- Active approved route: `A12 R7 staged component-geometry recovery plan`
+- Plan: `SM_DRW_SiegeBreaker_Hammer_A01_A12_R7_COMPONENT_GEOMETRY_RECOVERY_PLAN.md` (`authoritative staged route`)
+- Active contract: `none; Step 01 completed and stopped at Flamestrike review gate`
+- Current state: `R7 Step 01 candidate measurement record; independent audit pass 40/40; five blocked rules`
+- Next approved activity: `none; Flamestrike must approve/revise Step 01 and resolve the five blocked rules`
 - Source processing authorized now: `true only for the immutable six-view evidence and exact R6 ownership rules`
 - Model inference authorized now: `false`
 - DCC production authorized now: `false`
@@ -165,32 +165,38 @@
   fills stone between the upper haft cap and head and does not create tapered
   rotational pommel/top-cap geometry. A05's narrow UV mechanics remain `proof
   only`; no DCC execution authority remains.
+- Flamestrike approved the A12 R7 staged component-geometry recovery plan and
+  authorized only its Step 01 measurement pass.
+- R7 Step 01 produced a `candidate measurement record` with exact sparse marks,
+  component ledger, formulas, and five blocked ownership rules. Independent
+  audit is `pass 40/40` as `proof only`; Step 02 and DCC remain unauthorized.
 
 ## Active Method
 
-A09 applies Flamestrike's Visual Match direction:
+A12 R7 is the active staged recovery route:
 
-`immutable front/left/back pixels + uniform pixel proportions -> fresh X>=0`
-`Blender half -> exact X=0 mirror -> separate source-color and gray geometry`
-`proofs -> Flamestrike visual decision`
+`immutable six-view pixels -> approved component measurements -> explicit`
+`component-geometry contract -> isolated proofs -> physical half -> mirror`
 
-No prior Siege Breaker candidate geometry is an A09 construction input.
-Flamestrike controls visual approval.
+Only Step 01 has executed. Its measurements and five blocked rules are pending
+Flamestrike review. No prior invalid Siege Breaker geometry is an R7
+construction input, and no geometry construction is presently authorized.
 
 ## Prohibited Software Boundary
 
 TRELLIS, TRELLIS.2, TripoSR, diffusion, generative-image, image-to-3D, and
 generated-view software are forbidden. Existing outputs from those methods are
-not A09 inputs. A07 Gate 00 is stopped and superseded by Flamestrike's later
-Blender-only direction.
+not R7 inputs. Blender is deferred until a later exact step contract is
+approved; A07 Gate 00 remains stopped and superseded.
 
 ## Resume Instruction
 
 Read only the latest recovery journal/checkpoint, this reset state,
-`steps/A12_R6_A05_CORE_REASSESSMENT_AND_RECOVERY.md`, and
-`SM_DRW_SiegeBreaker_Hammer_A01_A12_R7_COMPONENT_GEOMETRY_RECOVERY_PLAN.md`.
-Report that A05 A01-A03 are invalid/quarantined and that DCC authority is
-false. Present the draft R7 plan for Flamestrike approval or revision, then
-stop. Do not run the disabled builder, inspect or reuse an old blend, begin
-measurement Step 01, create geometry, export, enter Unreal, or use TRELLIS or
-any prohibited generation software before that approval.
+`steps/A12_R6_A05_CORE_REASSESSMENT_AND_RECOVERY.md`, the approved R7 plan,
+`steps/A12_R7_STEP01_COMPONENT_REGISTRATION_A01_OUTPUT_RECORD.md`, and its
+manifest/review record. Report that A05 A01-A03 remain invalid/quarantined,
+Step 01 is a candidate measurement record with independent audit `40/40`, five
+ownership rules remain blocked, and DCC authority is false. Present the Step 01
+review gate and stop. Do not draft Step 02, run a builder, inspect or reuse an
+old blend, create geometry, export, enter Unreal, or use TRELLIS or any
+prohibited generation software before the required approval and rule decisions.

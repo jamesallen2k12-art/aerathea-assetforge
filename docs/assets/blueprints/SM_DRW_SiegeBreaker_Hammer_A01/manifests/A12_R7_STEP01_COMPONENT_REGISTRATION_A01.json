@@ -1,0 +1,1741 @@
+{
+  "schema": "aerathea.siegebreaker.a12_r7_step01_component_registration.v1",
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "contract_id": "SB-AXIAL-A12-R7-STEP01-COMPONENT-REGISTRATION",
+  "date": "2026-07-22",
+  "artifact_status": "candidate measurement record; technical pass; blocked unknowns; pending Flamestrike approval or revision",
+  "production_authority": {
+    "step_02": false,
+    "dcc": false,
+    "unreal": false,
+    "fully_game_ready": false
+  },
+  "sources": {
+    "front": {
+      "view": "front",
+      "source_path": "SourceAssets/Concepts/SiegeBreaker/siege_breaker_front_view.png",
+      "file_sha256": "d00bf9ffcfd4862884626fa961c5f6b4fd6cedfdff7936b2210ca2a905e57e95",
+      "decoded_rgba_sha256": "2eb51889b171e4e3683a7cd74a6ac9993e775f5be38eb15e9c41c7151a8bf160",
+      "canvas_pixels": [
+        1122,
+        1402
+      ],
+      "selected_component_pixel_count": 212765,
+      "object_rectangle_half_open": [
+        317,
+        193,
+        808,
+        1304
+      ],
+      "selection_method": "A06/A09 adaptive-luma greatest non-edge 8-connected component; no saved mask",
+      "artifact_status": "authoritative immutable source pixels"
+    },
+    "back": {
+      "view": "back",
+      "source_path": "SourceAssets/Concepts/SiegeBreaker/siege_breaker_back_view.png",
+      "file_sha256": "15b4633f2df4ee06115ef4a7e238f287ebece1bae514ad4005c1036a57359799",
+      "decoded_rgba_sha256": "f82d4e4cb4de7979b63599a3a3877bdd6fd07fc0aab4910eae25ea27386d5281",
+      "canvas_pixels": [
+        1122,
+        1402
+      ],
+      "selected_component_pixel_count": 238342,
+      "object_rectangle_half_open": [
+        285,
+        193,
+        818,
+        1344
+      ],
+      "selection_method": "A06/A09 adaptive-luma greatest non-edge 8-connected component; no saved mask",
+      "artifact_status": "authoritative immutable source pixels"
+    },
+    "left": {
+      "view": "left",
+      "source_path": "SourceAssets/Concepts/SiegeBreaker/siege_breaker_left_view.png",
+      "file_sha256": "1a23e0c24f7be4b12df93e2509b9d300acc9161a21a32b336f7cf63c1288d91b",
+      "decoded_rgba_sha256": "a4624a74ed06613e2601871f2b3b6ea9dc0330aa186e505d22f0c4f39328b6d7",
+      "canvas_pixels": [
+        1122,
+        1402
+      ],
+      "selected_component_pixel_count": 118540,
+      "object_rectangle_half_open": [
+        397,
+        190,
+        612,
+        1299
+      ],
+      "selection_method": "A06/A09 adaptive-luma greatest non-edge 8-connected component; no saved mask",
+      "artifact_status": "authoritative immutable source pixels"
+    },
+    "right": {
+      "view": "right",
+      "source_path": "SourceAssets/Concepts/SiegeBreaker/siege_breaker_right_view.png",
+      "file_sha256": "04a1e9359d518b1dec35fe161020bd23ab9e2f8d5934f24e4184aecaa91d8330",
+      "decoded_rgba_sha256": "010abe2b6552f3798dc7bf5f6f48cc0079148eebb40ed2493660e3b6ebbca630",
+      "canvas_pixels": [
+        1122,
+        1402
+      ],
+      "selected_component_pixel_count": 116948,
+      "object_rectangle_half_open": [
+        467,
+        172,
+        681,
+        1270
+      ],
+      "selection_method": "A06/A09 adaptive-luma greatest non-edge 8-connected component; no saved mask",
+      "artifact_status": "authoritative immutable source pixels"
+    },
+    "top": {
+      "view": "top",
+      "source_path": "SourceAssets/Concepts/SiegeBreaker/siege_breaker_true_axial_top_view.png",
+      "file_sha256": "aee612d9bed74e4f861576f926fe9d75de00f80dc416e3a6ba66a75247c00e98",
+      "decoded_rgba_sha256": "5e31e34195d455132f4ba203651928bc2b23f381f1943f1df0c1d0b311ab73db",
+      "canvas_pixels": [
+        1254,
+        1254
+      ],
+      "selected_component_pixel_count": 465117,
+      "object_rectangle_half_open": [
+        94,
+        330,
+        1106,
+        921
+      ],
+      "selection_method": "A06/A09 adaptive-luma greatest non-edge 8-connected component; no saved mask",
+      "artifact_status": "authoritative immutable source pixels"
+    },
+    "bottom": {
+      "view": "bottom",
+      "source_path": "SourceAssets/Concepts/SiegeBreaker/siege_breaker_true_axial_bottom_view.png",
+      "file_sha256": "874a9e7c7713c7edbcf1030486d3988a54e8499ee697e316ec82a013fdb9d746",
+      "decoded_rgba_sha256": "073158fdb47051261f2cd573c1212bea76e8808762ae5e1a61a7322e1e996d9b",
+      "canvas_pixels": [
+        1254,
+        1254
+      ],
+      "selected_component_pixel_count": 509030,
+      "object_rectangle_half_open": [
+        93,
+        330,
+        1106,
+        933
+      ],
+      "selection_method": "A06/A09 adaptive-luma greatest non-edge 8-connected component; no saved mask",
+      "artifact_status": "authoritative immutable source pixels"
+    }
+  },
+  "longitudinal_registration": {
+    "front": {
+      "formula": "Z_cm = 170 - (source_y_edge - 193) * 170 / 1111",
+      "object_y_edges_half_open": [
+        193,
+        1304
+      ]
+    },
+    "back": {
+      "formula": "Z_cm = 170 - (source_y_edge - 193) * 170 / 1151",
+      "object_y_edges_half_open": [
+        193,
+        1344
+      ]
+    },
+    "left": {
+      "formula": "Z_cm = 170 - (source_y_edge - 190) * 170 / 1109",
+      "object_y_edges_half_open": [
+        190,
+        1299
+      ]
+    },
+    "right": {
+      "formula": "Z_cm = 170 - (source_y_edge - 172) * 170 / 1098",
+      "object_y_edges_half_open": [
+        172,
+        1270
+      ]
+    }
+  },
+  "axial_center_registration": {
+    "top": {
+      "object_rectangle_half_open": [
+        94,
+        330,
+        1106,
+        921
+      ],
+      "object_center_edge_pixels_exact": {
+        "x": {
+          "numerator": 600,
+          "denominator": 1,
+          "display_decimal": "600.000000000"
+        },
+        "y": {
+          "numerator": 1251,
+          "denominator": 2,
+          "display_decimal": "625.500000000"
+        }
+      }
+    },
+    "bottom": {
+      "object_rectangle_half_open": [
+        93,
+        330,
+        1106,
+        933
+      ],
+      "object_center_edge_pixels_exact": {
+        "x": {
+          "numerator": 1199,
+          "denominator": 2,
+          "display_decimal": "599.500000000"
+        },
+        "y": {
+          "numerator": 1263,
+          "denominator": 2,
+          "display_decimal": "631.500000000"
+        }
+      }
+    },
+    "approved_centered_mean_footprint_pixels_exact": {
+      "width": {
+        "numerator": 2025,
+        "denominator": 2,
+        "display_decimal": "1012.500000000"
+      },
+      "depth": {
+        "numerator": 597,
+        "denominator": 1,
+        "display_decimal": "597.000000000"
+      }
+    },
+    "approved_world_footprint_cm": {
+      "width": "75.130513051",
+      "depth": "44.299176584"
+    },
+    "authority": "A11 Flamestrike-approved centered-mean axial reconciliation replayed unchanged"
+  },
+  "front_component_stations": [
+    {
+      "station_id": "TOP_SOURCE_SEPARATED",
+      "selected_source_row": 220,
+      "source_row_center_z_cm_exact": {
+        "numerator": 16745,
+        "denominator": 101,
+        "display_decimal": "165.792079208"
+      },
+      "components": {
+        "stone_left": {
+          "span_half_open_pixels": [
+            345,
+            459
+          ],
+          "width_pixels": 114,
+          "center_edge_pixels_exact": {
+            "numerator": 402,
+            "denominator": 1,
+            "display_decimal": "402.000000000"
+          }
+        },
+        "center_core_or_cap": {
+          "span_half_open_pixels": [
+            539,
+            587
+          ],
+          "width_pixels": 48,
+          "center_edge_pixels_exact": {
+            "numerator": 563,
+            "denominator": 1,
+            "display_decimal": "563.000000000"
+          }
+        },
+        "stone_right": {
+          "span_half_open_pixels": [
+            666,
+            780
+          ],
+          "width_pixels": 114,
+          "center_edge_pixels_exact": {
+            "numerator": 723,
+            "denominator": 1,
+            "display_decimal": "723.000000000"
+          }
+        }
+      },
+      "authority": "exact source-member spans separated by source-connected background; no contour interpolation"
+    },
+    {
+      "station_id": "BOTTOM_SOURCE_SEPARATED",
+      "selected_source_row": 520,
+      "source_row_center_z_cm_exact": {
+        "numerator": 133195,
+        "denominator": 1111,
+        "display_decimal": "119.887488749"
+      },
+      "components": {
+        "stone_left": {
+          "span_half_open_pixels": [
+            337,
+            476
+          ],
+          "width_pixels": 139,
+          "center_edge_pixels_exact": {
+            "numerator": 813,
+            "denominator": 2,
+            "display_decimal": "406.500000000"
+          }
+        },
+        "center_core_or_cap": {
+          "span_half_open_pixels": [
+            512,
+            614
+          ],
+          "width_pixels": 102,
+          "center_edge_pixels_exact": {
+            "numerator": 563,
+            "denominator": 1,
+            "display_decimal": "563.000000000"
+          }
+        },
+        "stone_right": {
+          "span_half_open_pixels": [
+            648,
+            788
+          ],
+          "width_pixels": 140,
+          "center_edge_pixels_exact": {
+            "numerator": 718,
+            "denominator": 1,
+            "display_decimal": "718.000000000"
+          }
+        }
+      },
+      "authority": "exact source-member spans separated by source-connected background; no contour interpolation"
+    }
+  ],
+  "strike_mass_width_and_inward_pitch_evidence": {
+    "front_top_row": 220,
+    "front_bottom_row": 520,
+    "delta_rows": 300,
+    "left_width_top_pixels": 114,
+    "left_width_bottom_pixels": 139,
+    "right_width_top_pixels": 114,
+    "right_width_bottom_pixels": 140,
+    "left_inner_edge_inward_delta_pixels": 17,
+    "right_inner_edge_inward_delta_pixels": 18,
+    "left_center_edge_inward_delta_pixels_exact": {
+      "numerator": 9,
+      "denominator": 2,
+      "display_decimal": "4.500000000"
+    },
+    "right_center_edge_inward_delta_pixels_exact": {
+      "numerator": 5,
+      "denominator": 1,
+      "display_decimal": "5.000000000"
+    },
+    "mean_center_edge_inward_delta_pixels_exact": {
+      "numerator": 19,
+      "denominator": 4,
+      "display_decimal": "4.750000000"
+    },
+    "left_pitch_angle_degrees_from_uniform_front_pixels": 0.8593722436446808,
+    "right_pitch_angle_degrees_from_uniform_front_pixels": 0.9548412538721887,
+    "mean_pitch_angle_degrees_from_uniform_front_pixels": 0.9071073784305639,
+    "authority": "source-visible 2D center-edge slope and width change only; not yet a 3D rotation contract"
+  },
+  "strike_face_centerline_evidence": {
+    "right": {
+      "emissive_selection_rule": "B>=90 and B-max(R,G)>=24; greatest 8-connected component inside declared side-head crop",
+      "emissive_motif_rectangle_half_open": [
+        525,
+        311,
+        570,
+        407
+      ],
+      "emissive_motif_center_edge_x_pixels_exact": {
+        "numerator": 1095,
+        "denominator": 2,
+        "display_decimal": "547.500000000"
+      },
+      "outer_rail_union_rectangle_half_open": [
+        469,
+        259,
+        477,
+        465
+      ],
+      "inner_rail_union_rectangle_half_open": [
+        620,
+        256,
+        634,
+        468
+      ],
+      "outer_rail_center_edge_x_pixels_exact": {
+        "numerator": 473,
+        "denominator": 1,
+        "display_decimal": "473.000000000"
+      },
+      "inner_rail_center_edge_x_pixels_exact": {
+        "numerator": 627,
+        "denominator": 1,
+        "display_decimal": "627.000000000"
+      },
+      "rail_midpoint_centerline_x_pixels_exact": {
+        "numerator": 550,
+        "denominator": 1,
+        "display_decimal": "550.000000000"
+      },
+      "face_centerline_candidate_band_x_pixels_exact": {
+        "minimum": {
+          "numerator": 1095,
+          "denominator": 2,
+          "display_decimal": "547.500000000"
+        },
+        "maximum": {
+          "numerator": 550,
+          "denominator": 1,
+          "display_decimal": "550.000000000"
+        },
+        "width_pixels": {
+          "numerator": 5,
+          "denominator": 2,
+          "display_decimal": "2.500000000"
+        }
+      },
+      "shaft_axis_x_pixels_exact": {
+        "numerator": 1187,
+        "denominator": 2,
+        "display_decimal": "593.500000000"
+      },
+      "face_centerline_is_shaft_axis": false,
+      "top_width_station": {
+        "declared_world_z_cm": 165,
+        "continuous_source_row_edge_exact": {
+          "numerator": 3473,
+          "denominator": 17,
+          "display_decimal": "204.294117647"
+        },
+        "selected_source_row": 204,
+        "member_intervals_half_open": [
+          [
+            479,
+            586
+          ],
+          [
+            588,
+            629
+          ]
+        ],
+        "span_half_open_pixels": [
+          479,
+          629
+        ],
+        "width_pixels": 150,
+        "center_edge_pixels_exact": {
+          "numerator": 554,
+          "denominator": 1,
+          "display_decimal": "554.000000000"
+        }
+      },
+      "bottom_width_station": {
+        "declared_world_z_cm": 125,
+        "continuous_source_row_edge_exact": {
+          "numerator": 7865,
+          "denominator": 17,
+          "display_decimal": "462.647058824"
+        },
+        "selected_source_row": 462,
+        "member_intervals_half_open": [
+          [
+            467,
+            529
+          ],
+          [
+            530,
+            632
+          ]
+        ],
+        "span_half_open_pixels": [
+          467,
+          632
+        ],
+        "width_pixels": 165,
+        "center_edge_pixels_exact": {
+          "numerator": 1099,
+          "denominator": 2,
+          "display_decimal": "549.500000000"
+        }
+      },
+      "bottom_to_top_width_ratio_exact": {
+        "numerator": 11,
+        "denominator": 10,
+        "display_decimal": "1.100000000"
+      },
+      "single_controlling_centerline_status": "blocked: motif center and rail midpoint are distinct exact landmarks; Flamestrike rule required"
+    },
+    "left": {
+      "emissive_selection_rule": "B>=90 and B-max(R,G)>=24; greatest 8-connected component inside declared side-head crop",
+      "emissive_motif_rectangle_half_open": [
+        450,
+        319,
+        496,
+        411
+      ],
+      "emissive_motif_center_edge_x_pixels_exact": {
+        "numerator": 473,
+        "denominator": 1,
+        "display_decimal": "473.000000000"
+      },
+      "outer_rail_union_rectangle_half_open": [
+        409,
+        277,
+        420,
+        469
+      ],
+      "inner_rail_union_rectangle_half_open": [
+        528,
+        270,
+        538,
+        481
+      ],
+      "outer_rail_center_edge_x_pixels_exact": {
+        "numerator": 829,
+        "denominator": 2,
+        "display_decimal": "414.500000000"
+      },
+      "inner_rail_center_edge_x_pixels_exact": {
+        "numerator": 533,
+        "denominator": 1,
+        "display_decimal": "533.000000000"
+      },
+      "rail_midpoint_centerline_x_pixels_exact": {
+        "numerator": 1895,
+        "denominator": 4,
+        "display_decimal": "473.750000000"
+      },
+      "face_centerline_candidate_band_x_pixels_exact": {
+        "minimum": {
+          "numerator": 473,
+          "denominator": 1,
+          "display_decimal": "473.000000000"
+        },
+        "maximum": {
+          "numerator": 1895,
+          "denominator": 4,
+          "display_decimal": "473.750000000"
+        },
+        "width_pixels": {
+          "numerator": 3,
+          "denominator": 4,
+          "display_decimal": "0.750000000"
+        }
+      },
+      "shaft_axis_x_pixels_exact": {
+        "numerator": 1099,
+        "denominator": 2,
+        "display_decimal": "549.500000000"
+      },
+      "face_centerline_is_shaft_axis": false,
+      "top_width_station": {
+        "declared_world_z_cm": 165,
+        "continuous_source_row_edge_exact": {
+          "numerator": 7569,
+          "denominator": 34,
+          "display_decimal": "222.617647059"
+        },
+        "selected_source_row": 222,
+        "member_intervals_half_open": [
+          [
+            412,
+            435
+          ],
+          [
+            436,
+            538
+          ]
+        ],
+        "span_half_open_pixels": [
+          412,
+          538
+        ],
+        "width_pixels": 126,
+        "center_edge_pixels_exact": {
+          "numerator": 475,
+          "denominator": 1,
+          "display_decimal": "475.000000000"
+        }
+      },
+      "bottom_width_station": {
+        "declared_world_z_cm": 125,
+        "continuous_source_row_edge_exact": {
+          "numerator": 16441,
+          "denominator": 34,
+          "display_decimal": "483.558823529"
+        },
+        "selected_source_row": 483,
+        "member_intervals_half_open": [
+          [
+            400,
+            538
+          ]
+        ],
+        "span_half_open_pixels": [
+          400,
+          538
+        ],
+        "width_pixels": 138,
+        "center_edge_pixels_exact": {
+          "numerator": 469,
+          "denominator": 1,
+          "display_decimal": "469.000000000"
+        }
+      },
+      "bottom_to_top_width_ratio_exact": {
+        "numerator": 23,
+        "denominator": 21,
+        "display_decimal": "1.095238095"
+      },
+      "single_controlling_centerline_status": "blocked: motif center and rail midpoint are distinct exact landmarks; Flamestrike rule required"
+    }
+  },
+  "upper_haft_cap_negative_space": {
+    "front": {
+      "selected_source_row": 520,
+      "source_row_center_z_cm_exact": {
+        "numerator": 133195,
+        "denominator": 1111,
+        "display_decimal": "119.887488749"
+      },
+      "components": {
+        "stone_left": {
+          "span_half_open_pixels": [
+            337,
+            476
+          ],
+          "width_pixels": 139,
+          "center_edge_pixels_exact": {
+            "numerator": 813,
+            "denominator": 2,
+            "display_decimal": "406.500000000"
+          }
+        },
+        "center_core_or_cap": {
+          "span_half_open_pixels": [
+            512,
+            614
+          ],
+          "width_pixels": 102,
+          "center_edge_pixels_exact": {
+            "numerator": 563,
+            "denominator": 1,
+            "display_decimal": "563.000000000"
+          }
+        },
+        "stone_right": {
+          "span_half_open_pixels": [
+            648,
+            788
+          ],
+          "width_pixels": 140,
+          "center_edge_pixels_exact": {
+            "numerator": 718,
+            "denominator": 1,
+            "display_decimal": "718.000000000"
+          }
+        }
+      },
+      "left_gap_half_open_pixels": [
+        476,
+        512
+      ],
+      "left_gap_width_pixels": 36,
+      "right_gap_half_open_pixels": [
+        614,
+        648
+      ],
+      "right_gap_width_pixels": 34
+    },
+    "back": {
+      "selected_source_row": 540,
+      "source_row_center_z_cm_exact": {
+        "numerator": 136595,
+        "denominator": 1151,
+        "display_decimal": "118.675065161"
+      },
+      "components": {
+        "stone_left": {
+          "span_half_open_pixels": [
+            304,
+            466
+          ],
+          "width_pixels": 162,
+          "center_edge_pixels_exact": {
+            "numerator": 385,
+            "denominator": 1,
+            "display_decimal": "385.000000000"
+          }
+        },
+        "center_core_or_cap": {
+          "span_half_open_pixels": [
+            500,
+            606
+          ],
+          "width_pixels": 106,
+          "center_edge_pixels_exact": {
+            "numerator": 553,
+            "denominator": 1,
+            "display_decimal": "553.000000000"
+          }
+        },
+        "stone_right": {
+          "span_half_open_pixels": [
+            638,
+            800
+          ],
+          "width_pixels": 162,
+          "center_edge_pixels_exact": {
+            "numerator": 719,
+            "denominator": 1,
+            "display_decimal": "719.000000000"
+          }
+        }
+      },
+      "left_gap_half_open_pixels": [
+        466,
+        500
+      ],
+      "left_gap_width_pixels": 34,
+      "right_gap_half_open_pixels": [
+        606,
+        638
+      ],
+      "right_gap_width_pixels": 32
+    },
+    "authority": "exact source-background gaps at discrete rows; hidden continuation and 3D closure remain blocked"
+  },
+  "rotational_visible_envelope_profiles": {
+    "front": {
+      "upper_head_cap_spire_samples": [
+        {
+          "role": "upper_head_cap_spire_visible_envelope",
+          "selected_source_row": 212,
+          "source_row_center_z_cm_exact": {
+            "numerator": 185555,
+            "denominator": 1111,
+            "display_decimal": "167.016201620"
+          },
+          "member_intervals_half_open": [
+            [
+              549,
+              578
+            ]
+          ],
+          "visible_envelope_span_half_open_pixels": [
+            549,
+            578
+          ],
+          "visible_envelope_width_pixels": 29,
+          "visible_envelope_center_edge_pixels_exact": {
+            "numerator": 1127,
+            "denominator": 2,
+            "display_decimal": "563.500000000"
+          },
+          "visible_silhouette_half_width_pixels_exact": {
+            "numerator": 29,
+            "denominator": 2,
+            "display_decimal": "14.500000000"
+          },
+          "authority": "discrete visible silhouette envelope only; not a hidden radius, connected contour, fill, or geometry"
+        },
+        {
+          "role": "upper_head_cap_spire_visible_envelope",
+          "selected_source_row": 225,
+          "source_row_center_z_cm_exact": {
+            "numerator": 183345,
+            "denominator": 1111,
+            "display_decimal": "165.027002700"
+          },
+          "member_intervals_half_open": [
+            [
+              539,
+              563
+            ],
+            [
+              567,
+              587
+            ]
+          ],
+          "visible_envelope_span_half_open_pixels": [
+            539,
+            587
+          ],
+          "visible_envelope_width_pixels": 48,
+          "visible_envelope_center_edge_pixels_exact": {
+            "numerator": 563,
+            "denominator": 1,
+            "display_decimal": "563.000000000"
+          },
+          "visible_silhouette_half_width_pixels_exact": {
+            "numerator": 24,
+            "denominator": 1,
+            "display_decimal": "24.000000000"
+          },
+          "authority": "discrete visible silhouette envelope only; not a hidden radius, connected contour, fill, or geometry"
+        },
+        {
+          "role": "upper_head_cap_spire_visible_envelope",
+          "selected_source_row": 238,
+          "source_row_center_z_cm_exact": {
+            "numerator": 181135,
+            "denominator": 1111,
+            "display_decimal": "163.037803780"
+          },
+          "member_intervals_half_open": [
+            [
+              524,
+              602
+            ]
+          ],
+          "visible_envelope_span_half_open_pixels": [
+            524,
+            602
+          ],
+          "visible_envelope_width_pixels": 78,
+          "visible_envelope_center_edge_pixels_exact": {
+            "numerator": 563,
+            "denominator": 1,
+            "display_decimal": "563.000000000"
+          },
+          "visible_silhouette_half_width_pixels_exact": {
+            "numerator": 39,
+            "denominator": 1,
+            "display_decimal": "39.000000000"
+          },
+          "authority": "discrete visible silhouette envelope only; not a hidden radius, connected contour, fill, or geometry"
+        },
+        {
+          "role": "upper_head_cap_spire_visible_envelope",
+          "selected_source_row": 251,
+          "source_row_center_z_cm_exact": {
+            "numerator": 178925,
+            "denominator": 1111,
+            "display_decimal": "161.048604860"
+          },
+          "member_intervals_half_open": [
+            [
+              523,
+              603
+            ]
+          ],
+          "visible_envelope_span_half_open_pixels": [
+            523,
+            603
+          ],
+          "visible_envelope_width_pixels": 80,
+          "visible_envelope_center_edge_pixels_exact": {
+            "numerator": 563,
+            "denominator": 1,
+            "display_decimal": "563.000000000"
+          },
+          "visible_silhouette_half_width_pixels_exact": {
+            "numerator": 40,
+            "denominator": 1,
+            "display_decimal": "40.000000000"
+          },
+          "authority": "discrete visible silhouette envelope only; not a hidden radius, connected contour, fill, or geometry"
+        }
+      ],
+      "pommel_and_terminal_samples": [
+        {
+          "role": "pommel_terminal_visible_envelope",
+          "selected_source_row": 1180,
+          "source_row_center_z_cm_exact": {
+            "numerator": 20995,
+            "denominator": 1111,
+            "display_decimal": "18.897389739"
+          },
+          "member_intervals_half_open": [
+            [
+              495,
+              628
+            ]
+          ],
+          "visible_envelope_span_half_open_pixels": [
+            495,
+            628
+          ],
+          "visible_envelope_width_pixels": 133,
+          "visible_envelope_center_edge_pixels_exact": {
+            "numerator": 1123,
+            "denominator": 2,
+            "display_decimal": "561.500000000"
+          },
+          "visible_silhouette_half_width_pixels_exact": {
+            "numerator": 133,
+            "denominator": 2,
+            "display_decimal": "66.500000000"
+          },
+          "authority": "discrete visible silhouette envelope only; not a hidden radius, connected contour, fill, or geometry"
+        },
+        {
+          "role": "pommel_terminal_visible_envelope",
+          "selected_source_row": 1200,
+          "source_row_center_z_cm_exact": {
+            "numerator": 17595,
+            "denominator": 1111,
+            "display_decimal": "15.837083708"
+          },
+          "member_intervals_half_open": [
+            [
+              492,
+              553
+            ],
+            [
+              554,
+              630
+            ]
+          ],
+          "visible_envelope_span_half_open_pixels": [
+            492,
+            630
+          ],
+          "visible_envelope_width_pixels": 138,
+          "visible_envelope_center_edge_pixels_exact": {
+            "numerator": 561,
+            "denominator": 1,
+            "display_decimal": "561.000000000"
+          },
+          "visible_silhouette_half_width_pixels_exact": {
+            "numerator": 69,
+            "denominator": 1,
+            "display_decimal": "69.000000000"
+          },
+          "authority": "discrete visible silhouette envelope only; not a hidden radius, connected contour, fill, or geometry"
+        },
+        {
+          "role": "pommel_terminal_visible_envelope",
+          "selected_source_row": 1220,
+          "source_row_center_z_cm_exact": {
+            "numerator": 14195,
+            "denominator": 1111,
+            "display_decimal": "12.776777678"
+          },
+          "member_intervals_half_open": [
+            [
+              492,
+              569
+            ],
+            [
+              570,
+              630
+            ]
+          ],
+          "visible_envelope_span_half_open_pixels": [
+            492,
+            630
+          ],
+          "visible_envelope_width_pixels": 138,
+          "visible_envelope_center_edge_pixels_exact": {
+            "numerator": 561,
+            "denominator": 1,
+            "display_decimal": "561.000000000"
+          },
+          "visible_silhouette_half_width_pixels_exact": {
+            "numerator": 69,
+            "denominator": 1,
+            "display_decimal": "69.000000000"
+          },
+          "authority": "discrete visible silhouette envelope only; not a hidden radius, connected contour, fill, or geometry"
+        },
+        {
+          "role": "pommel_terminal_visible_envelope",
+          "selected_source_row": 1240,
+          "source_row_center_z_cm_exact": {
+            "numerator": 10795,
+            "denominator": 1111,
+            "display_decimal": "9.716471647"
+          },
+          "member_intervals_half_open": [
+            [
+              505,
+              617
+            ]
+          ],
+          "visible_envelope_span_half_open_pixels": [
+            505,
+            617
+          ],
+          "visible_envelope_width_pixels": 112,
+          "visible_envelope_center_edge_pixels_exact": {
+            "numerator": 561,
+            "denominator": 1,
+            "display_decimal": "561.000000000"
+          },
+          "visible_silhouette_half_width_pixels_exact": {
+            "numerator": 56,
+            "denominator": 1,
+            "display_decimal": "56.000000000"
+          },
+          "authority": "discrete visible silhouette envelope only; not a hidden radius, connected contour, fill, or geometry"
+        },
+        {
+          "role": "pommel_terminal_visible_envelope",
+          "selected_source_row": 1260,
+          "source_row_center_z_cm_exact": {
+            "numerator": 7395,
+            "denominator": 1111,
+            "display_decimal": "6.656165617"
+          },
+          "member_intervals_half_open": [
+            [
+              521,
+              601
+            ]
+          ],
+          "visible_envelope_span_half_open_pixels": [
+            521,
+            601
+          ],
+          "visible_envelope_width_pixels": 80,
+          "visible_envelope_center_edge_pixels_exact": {
+            "numerator": 561,
+            "denominator": 1,
+            "display_decimal": "561.000000000"
+          },
+          "visible_silhouette_half_width_pixels_exact": {
+            "numerator": 40,
+            "denominator": 1,
+            "display_decimal": "40.000000000"
+          },
+          "authority": "discrete visible silhouette envelope only; not a hidden radius, connected contour, fill, or geometry"
+        },
+        {
+          "role": "pommel_terminal_visible_envelope",
+          "selected_source_row": 1280,
+          "source_row_center_z_cm_exact": {
+            "numerator": 3995,
+            "denominator": 1111,
+            "display_decimal": "3.595859586"
+          },
+          "member_intervals_half_open": [
+            [
+              536,
+              586
+            ]
+          ],
+          "visible_envelope_span_half_open_pixels": [
+            536,
+            586
+          ],
+          "visible_envelope_width_pixels": 50,
+          "visible_envelope_center_edge_pixels_exact": {
+            "numerator": 561,
+            "denominator": 1,
+            "display_decimal": "561.000000000"
+          },
+          "visible_silhouette_half_width_pixels_exact": {
+            "numerator": 25,
+            "denominator": 1,
+            "display_decimal": "25.000000000"
+          },
+          "authority": "discrete visible silhouette envelope only; not a hidden radius, connected contour, fill, or geometry"
+        },
+        {
+          "role": "pommel_terminal_visible_envelope",
+          "selected_source_row": 1303,
+          "source_row_center_z_cm_exact": {
+            "numerator": 85,
+            "denominator": 1111,
+            "display_decimal": "0.076507651"
+          },
+          "member_intervals_half_open": [
+            [
+              549,
+              558
+            ],
+            [
+              559,
+              562
+            ],
+            [
+              564,
+              569
+            ]
+          ],
+          "visible_envelope_span_half_open_pixels": [
+            549,
+            569
+          ],
+          "visible_envelope_width_pixels": 20,
+          "visible_envelope_center_edge_pixels_exact": {
+            "numerator": 559,
+            "denominator": 1,
+            "display_decimal": "559.000000000"
+          },
+          "visible_silhouette_half_width_pixels_exact": {
+            "numerator": 10,
+            "denominator": 1,
+            "display_decimal": "10.000000000"
+          },
+          "authority": "discrete visible silhouette envelope only; not a hidden radius, connected contour, fill, or geometry"
+        }
+      ]
+    },
+    "back": {
+      "upper_head_cap_spire_samples": [
+        {
+          "role": "upper_head_cap_spire_visible_envelope",
+          "selected_source_row": 213,
+          "source_row_center_z_cm_exact": {
+            "numerator": 192185,
+            "denominator": 1151,
+            "display_decimal": "166.972198089"
+          },
+          "member_intervals_half_open": [
+            [
+              532,
+              549
+            ],
+            [
+              551,
+              555
+            ],
+            [
+              558,
+              574
+            ]
+          ],
+          "visible_envelope_span_half_open_pixels": [
+            532,
+            574
+          ],
+          "visible_envelope_width_pixels": 42,
+          "visible_envelope_center_edge_pixels_exact": {
+            "numerator": 553,
+            "denominator": 1,
+            "display_decimal": "553.000000000"
+          },
+          "visible_silhouette_half_width_pixels_exact": {
+            "numerator": 21,
+            "denominator": 1,
+            "display_decimal": "21.000000000"
+          },
+          "authority": "discrete visible silhouette envelope only; not a hidden radius, connected contour, fill, or geometry"
+        },
+        {
+          "role": "upper_head_cap_spire_visible_envelope",
+          "selected_source_row": 226,
+          "source_row_center_z_cm_exact": {
+            "numerator": 189975,
+            "denominator": 1151,
+            "display_decimal": "165.052128584"
+          },
+          "member_intervals_half_open": [
+            [
+              525,
+              579
+            ]
+          ],
+          "visible_envelope_span_half_open_pixels": [
+            525,
+            579
+          ],
+          "visible_envelope_width_pixels": 54,
+          "visible_envelope_center_edge_pixels_exact": {
+            "numerator": 552,
+            "denominator": 1,
+            "display_decimal": "552.000000000"
+          },
+          "visible_silhouette_half_width_pixels_exact": {
+            "numerator": 27,
+            "denominator": 1,
+            "display_decimal": "27.000000000"
+          },
+          "authority": "discrete visible silhouette envelope only; not a hidden radius, connected contour, fill, or geometry"
+        },
+        {
+          "role": "upper_head_cap_spire_visible_envelope",
+          "selected_source_row": 240,
+          "source_row_center_z_cm_exact": {
+            "numerator": 187595,
+            "denominator": 1151,
+            "display_decimal": "162.984361425"
+          },
+          "member_intervals_half_open": [
+            [
+              511,
+              552
+            ],
+            [
+              558,
+              593
+            ]
+          ],
+          "visible_envelope_span_half_open_pixels": [
+            511,
+            593
+          ],
+          "visible_envelope_width_pixels": 82,
+          "visible_envelope_center_edge_pixels_exact": {
+            "numerator": 552,
+            "denominator": 1,
+            "display_decimal": "552.000000000"
+          },
+          "visible_silhouette_half_width_pixels_exact": {
+            "numerator": 41,
+            "denominator": 1,
+            "display_decimal": "41.000000000"
+          },
+          "authority": "discrete visible silhouette envelope only; not a hidden radius, connected contour, fill, or geometry"
+        },
+        {
+          "role": "upper_head_cap_spire_visible_envelope",
+          "selected_source_row": 253,
+          "source_row_center_z_cm_exact": {
+            "numerator": 185385,
+            "denominator": 1151,
+            "display_decimal": "161.064291920"
+          },
+          "member_intervals_half_open": [
+            [
+              503,
+              551
+            ],
+            [
+              555,
+              601
+            ]
+          ],
+          "visible_envelope_span_half_open_pixels": [
+            503,
+            601
+          ],
+          "visible_envelope_width_pixels": 98,
+          "visible_envelope_center_edge_pixels_exact": {
+            "numerator": 552,
+            "denominator": 1,
+            "display_decimal": "552.000000000"
+          },
+          "visible_silhouette_half_width_pixels_exact": {
+            "numerator": 49,
+            "denominator": 1,
+            "display_decimal": "49.000000000"
+          },
+          "authority": "discrete visible silhouette envelope only; not a hidden radius, connected contour, fill, or geometry"
+        }
+      ],
+      "pommel_and_terminal_samples": [
+        {
+          "role": "pommel_terminal_visible_envelope",
+          "selected_source_row": 1170,
+          "source_row_center_z_cm_exact": {
+            "numerator": 29495,
+            "denominator": 1151,
+            "display_decimal": "25.625543006"
+          },
+          "member_intervals_half_open": [
+            [
+              494,
+              610
+            ]
+          ],
+          "visible_envelope_span_half_open_pixels": [
+            494,
+            610
+          ],
+          "visible_envelope_width_pixels": 116,
+          "visible_envelope_center_edge_pixels_exact": {
+            "numerator": 552,
+            "denominator": 1,
+            "display_decimal": "552.000000000"
+          },
+          "visible_silhouette_half_width_pixels_exact": {
+            "numerator": 58,
+            "denominator": 1,
+            "display_decimal": "58.000000000"
+          },
+          "authority": "discrete visible silhouette envelope only; not a hidden radius, connected contour, fill, or geometry"
+        },
+        {
+          "role": "pommel_terminal_visible_envelope",
+          "selected_source_row": 1190,
+          "source_row_center_z_cm_exact": {
+            "numerator": 26095,
+            "denominator": 1151,
+            "display_decimal": "22.671589922"
+          },
+          "member_intervals_half_open": [
+            [
+              497,
+              607
+            ]
+          ],
+          "visible_envelope_span_half_open_pixels": [
+            497,
+            607
+          ],
+          "visible_envelope_width_pixels": 110,
+          "visible_envelope_center_edge_pixels_exact": {
+            "numerator": 552,
+            "denominator": 1,
+            "display_decimal": "552.000000000"
+          },
+          "visible_silhouette_half_width_pixels_exact": {
+            "numerator": 55,
+            "denominator": 1,
+            "display_decimal": "55.000000000"
+          },
+          "authority": "discrete visible silhouette envelope only; not a hidden radius, connected contour, fill, or geometry"
+        },
+        {
+          "role": "pommel_terminal_visible_envelope",
+          "selected_source_row": 1210,
+          "source_row_center_z_cm_exact": {
+            "numerator": 22695,
+            "denominator": 1151,
+            "display_decimal": "19.717636838"
+          },
+          "member_intervals_half_open": [
+            [
+              481,
+              622
+            ]
+          ],
+          "visible_envelope_span_half_open_pixels": [
+            481,
+            622
+          ],
+          "visible_envelope_width_pixels": 141,
+          "visible_envelope_center_edge_pixels_exact": {
+            "numerator": 1103,
+            "denominator": 2,
+            "display_decimal": "551.500000000"
+          },
+          "visible_silhouette_half_width_pixels_exact": {
+            "numerator": 141,
+            "denominator": 2,
+            "display_decimal": "70.500000000"
+          },
+          "authority": "discrete visible silhouette envelope only; not a hidden radius, connected contour, fill, or geometry"
+        },
+        {
+          "role": "pommel_terminal_visible_envelope",
+          "selected_source_row": 1230,
+          "source_row_center_z_cm_exact": {
+            "numerator": 19295,
+            "denominator": 1151,
+            "display_decimal": "16.763683753"
+          },
+          "member_intervals_half_open": [
+            [
+              479,
+              605
+            ],
+            [
+              606,
+              624
+            ]
+          ],
+          "visible_envelope_span_half_open_pixels": [
+            479,
+            624
+          ],
+          "visible_envelope_width_pixels": 145,
+          "visible_envelope_center_edge_pixels_exact": {
+            "numerator": 1103,
+            "denominator": 2,
+            "display_decimal": "551.500000000"
+          },
+          "visible_silhouette_half_width_pixels_exact": {
+            "numerator": 145,
+            "denominator": 2,
+            "display_decimal": "72.500000000"
+          },
+          "authority": "discrete visible silhouette envelope only; not a hidden radius, connected contour, fill, or geometry"
+        },
+        {
+          "role": "pommel_terminal_visible_envelope",
+          "selected_source_row": 1250,
+          "source_row_center_z_cm_exact": {
+            "numerator": 15895,
+            "denominator": 1151,
+            "display_decimal": "13.809730669"
+          },
+          "member_intervals_half_open": [
+            [
+              479,
+              624
+            ]
+          ],
+          "visible_envelope_span_half_open_pixels": [
+            479,
+            624
+          ],
+          "visible_envelope_width_pixels": 145,
+          "visible_envelope_center_edge_pixels_exact": {
+            "numerator": 1103,
+            "denominator": 2,
+            "display_decimal": "551.500000000"
+          },
+          "visible_silhouette_half_width_pixels_exact": {
+            "numerator": 145,
+            "denominator": 2,
+            "display_decimal": "72.500000000"
+          },
+          "authority": "discrete visible silhouette envelope only; not a hidden radius, connected contour, fill, or geometry"
+        },
+        {
+          "role": "pommel_terminal_visible_envelope",
+          "selected_source_row": 1270,
+          "source_row_center_z_cm_exact": {
+            "numerator": 12495,
+            "denominator": 1151,
+            "display_decimal": "10.855777585"
+          },
+          "member_intervals_half_open": [
+            [
+              491,
+              612
+            ]
+          ],
+          "visible_envelope_span_half_open_pixels": [
+            491,
+            612
+          ],
+          "visible_envelope_width_pixels": 121,
+          "visible_envelope_center_edge_pixels_exact": {
+            "numerator": 1103,
+            "denominator": 2,
+            "display_decimal": "551.500000000"
+          },
+          "visible_silhouette_half_width_pixels_exact": {
+            "numerator": 121,
+            "denominator": 2,
+            "display_decimal": "60.500000000"
+          },
+          "authority": "discrete visible silhouette envelope only; not a hidden radius, connected contour, fill, or geometry"
+        },
+        {
+          "role": "pommel_terminal_visible_envelope",
+          "selected_source_row": 1290,
+          "source_row_center_z_cm_exact": {
+            "numerator": 9095,
+            "denominator": 1151,
+            "display_decimal": "7.901824500"
+          },
+          "member_intervals_half_open": [
+            [
+              508,
+              595
+            ]
+          ],
+          "visible_envelope_span_half_open_pixels": [
+            508,
+            595
+          ],
+          "visible_envelope_width_pixels": 87,
+          "visible_envelope_center_edge_pixels_exact": {
+            "numerator": 1103,
+            "denominator": 2,
+            "display_decimal": "551.500000000"
+          },
+          "visible_silhouette_half_width_pixels_exact": {
+            "numerator": 87,
+            "denominator": 2,
+            "display_decimal": "43.500000000"
+          },
+          "authority": "discrete visible silhouette envelope only; not a hidden radius, connected contour, fill, or geometry"
+        },
+        {
+          "role": "pommel_terminal_visible_envelope",
+          "selected_source_row": 1310,
+          "source_row_center_z_cm_exact": {
+            "numerator": 5695,
+            "denominator": 1151,
+            "display_decimal": "4.947871416"
+          },
+          "member_intervals_half_open": [
+            [
+              521,
+              582
+            ]
+          ],
+          "visible_envelope_span_half_open_pixels": [
+            521,
+            582
+          ],
+          "visible_envelope_width_pixels": 61,
+          "visible_envelope_center_edge_pixels_exact": {
+            "numerator": 1103,
+            "denominator": 2,
+            "display_decimal": "551.500000000"
+          },
+          "visible_silhouette_half_width_pixels_exact": {
+            "numerator": 61,
+            "denominator": 2,
+            "display_decimal": "30.500000000"
+          },
+          "authority": "discrete visible silhouette envelope only; not a hidden radius, connected contour, fill, or geometry"
+        },
+        {
+          "role": "pommel_terminal_visible_envelope",
+          "selected_source_row": 1330,
+          "source_row_center_z_cm_exact": {
+            "numerator": 2295,
+            "denominator": 1151,
+            "display_decimal": "1.993918332"
+          },
+          "member_intervals_half_open": [
+            [
+              534,
+              570
+            ]
+          ],
+          "visible_envelope_span_half_open_pixels": [
+            534,
+            570
+          ],
+          "visible_envelope_width_pixels": 36,
+          "visible_envelope_center_edge_pixels_exact": {
+            "numerator": 552,
+            "denominator": 1,
+            "display_decimal": "552.000000000"
+          },
+          "visible_silhouette_half_width_pixels_exact": {
+            "numerator": 18,
+            "denominator": 1,
+            "display_decimal": "18.000000000"
+          },
+          "authority": "discrete visible silhouette envelope only; not a hidden radius, connected contour, fill, or geometry"
+        },
+        {
+          "role": "pommel_terminal_visible_envelope",
+          "selected_source_row": 1343,
+          "source_row_center_z_cm_exact": {
+            "numerator": 85,
+            "denominator": 1151,
+            "display_decimal": "0.073848827"
+          },
+          "member_intervals_half_open": [
+            [
+              551,
+              553
+            ]
+          ],
+          "visible_envelope_span_half_open_pixels": [
+            551,
+            553
+          ],
+          "visible_envelope_width_pixels": 2,
+          "visible_envelope_center_edge_pixels_exact": {
+            "numerator": 552,
+            "denominator": 1,
+            "display_decimal": "552.000000000"
+          },
+          "visible_silhouette_half_width_pixels_exact": {
+            "numerator": 1,
+            "denominator": 1,
+            "display_decimal": "1.000000000"
+          },
+          "authority": "discrete visible silhouette envelope only; not a hidden radius, connected contour, fill, or geometry"
+        }
+      ]
+    },
+    "interpretation_boundary": "each sample is an outer visible half-width only; no samples are connected, averaged, smoothed, or declared circular"
+  },
+  "component_ledger": [
+    {
+      "id": "C01_CENTER_CORE",
+      "status": "partially source-known",
+      "source_evidence": "front/back center spans at discrete separated rows plus approved R3 24/14/14 width consequence",
+      "complete_half_open_pixel_bounds": null,
+      "block": "ornament, bracing, and stones occlude a unique complete semantic boundary"
+    },
+    {
+      "id": "C02_STONE_LEFT",
+      "status": "partially source-known",
+      "source_evidence": "front exact top/bottom spans and axial footprint",
+      "complete_half_open_pixel_bounds": null,
+      "block": "strike-face surface versus backing-stone semantic boundary is not a source-separated contour"
+    },
+    {
+      "id": "C03_STONE_RIGHT",
+      "status": "partially source-known",
+      "source_evidence": "front exact top/bottom spans and axial footprint",
+      "complete_half_open_pixel_bounds": null,
+      "block": "strike-face surface versus backing-stone semantic boundary is not a source-separated contour"
+    },
+    {
+      "id": "C04_STRIKE_FACE_HALF_POSITIVE_X",
+      "status": "partially source-known; centerline blocked",
+      "source_evidence": "right side motif/rail center landmarks and Z165/Z125 width samples",
+      "complete_half_open_pixel_bounds": null,
+      "block": "motif-center and rail-midpoint centerline landmarks differ by exact pixels"
+    },
+    {
+      "id": "C05_STRIKE_FACE_HALF_NEGATIVE_X",
+      "status": "partially source-known; centerline blocked",
+      "source_evidence": "left side motif/rail center landmarks and Z165/Z125 width samples",
+      "complete_half_open_pixel_bounds": null,
+      "block": "motif-center and rail-midpoint centerline landmarks differ by exact pixels"
+    },
+    {
+      "id": "C06_UPPER_HAFT_CAP",
+      "status": "partially source-known",
+      "source_evidence": "front/back center spans and exact adjacent negative-space gaps",
+      "complete_half_open_pixel_bounds": null,
+      "block": "hidden cap/stone contact continuation is not source visible"
+    },
+    {
+      "id": "C07_HAFT",
+      "status": "axis and narrow mechanics known; complete component bounds blocked",
+      "source_evidence": "approved shaft axes and R6/A05 narrow cylindrical-UV proof only",
+      "complete_half_open_pixel_bounds": null,
+      "block": "decorative collar ownership among C06/C07/C08 is not declared by the R7 plan"
+    },
+    {
+      "id": "C08_GRIP",
+      "status": "source-visible; complete semantic bounds blocked",
+      "source_evidence": "front/back/side pixels",
+      "complete_half_open_pixel_bounds": null,
+      "block": "collar-to-grip ownership rule missing"
+    },
+    {
+      "id": "C09_LOWER_COLLAR",
+      "status": "source-visible; complete semantic bounds blocked",
+      "source_evidence": "front/back/side pixels",
+      "complete_half_open_pixel_bounds": null,
+      "block": "lower-collar versus pommel-body ownership rule missing"
+    },
+    {
+      "id": "C10_POMMEL_BODY",
+      "status": "visible envelope sampled; rotational radius blocked",
+      "source_evidence": "front/back discrete outer half-width samples",
+      "complete_half_open_pixel_bounds": null,
+      "block": "outer faceted decoration does not reveal a unique hidden circular core"
+    },
+    {
+      "id": "C11_POMMEL_TERMINAL_CAP",
+      "status": "visible envelope sampled; body split blocked",
+      "source_evidence": "front/back terminal rows including exact visible tips",
+      "complete_half_open_pixel_bounds": null,
+      "block": "exact body/terminal semantic transition and front/back reconciliation rule missing"
+    },
+    {
+      "id": "C12_UPPER_HEAD_CAP_SPIRE",
+      "status": "visible envelope sampled; rotational radius blocked",
+      "source_evidence": "front/back discrete central-cap half-width samples",
+      "complete_half_open_pixel_bounds": null,
+      "block": "front/back sample stations and visible outer decoration require an approved reconciliation rule"
+    }
+  ],
+  "blocked_unknowns": [
+    {
+      "id": "R7-S01-B01",
+      "block": "strike-face controlling centerline rule missing",
+      "required_decision": "approve motif-center, rail-midpoint, or another exact source-landmark rule separately for each side view"
+    },
+    {
+      "id": "R7-S01-B02",
+      "block": "strike-face surface/backing-stone semantic boundary missing",
+      "required_decision": "declare which visible rail or silhouette edge terminates C04/C05 without inferring a filled face"
+    },
+    {
+      "id": "R7-S01-B03",
+      "block": "rotational envelope reconciliation rule missing",
+      "required_decision": "declare whether front, back, centered mean, or another exact rule owns each radius-by-Z station"
+    },
+    {
+      "id": "R7-S01-B04",
+      "block": "rotational core versus decorative envelope ownership missing",
+      "required_decision": "declare whether visible outer half-width is the revolution radius or only a containment bound"
+    },
+    {
+      "id": "R7-S01-B05",
+      "block": "decorative collar component ownership missing",
+      "required_decision": "assign visible upper/lower collar regions among C06/C07/C08/C09/C10 before full bounds are measured"
+    }
+  ],
+  "evidence_interpretation_firewall": {
+    "saved_masks": 0,
+    "filled_component_shapes": 0,
+    "connected_contours": 0,
+    "smoothed_envelopes": 0,
+    "hidden_closures": 0,
+    "candidate_geometry": 0,
+    "blender_files": 0,
+    "source_pixels_or_exact_marks_only": true
+  },
+  "software_boundary": {
+    "python_pillow_measurement_and_packaging": true,
+    "blender": false,
+    "image_generation": false,
+    "trellis": false,
+    "image_to_3d": false,
+    "unreal": false
+  },
+  "outputs": {
+    "component_stations": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/evidence/A12_R7_STEP01_COMPONENT_REGISTRATION_A01/A12_R7_STEP01_COMPONENT_STATIONS_A01.png",
+      "file_sha256": "4d136f17e2df2dd7f55ac0e401402e6f125fe83598857191f9464a1762584cc1"
+    },
+    "face_centerlines": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/evidence/A12_R7_STEP01_COMPONENT_REGISTRATION_A01/A12_R7_STEP01_STRIKE_FACE_CENTERLINES_A01.png",
+      "file_sha256": "e43fd35c5454a9de6b2774fe7c95210f57a6d21ad2a0735f58aa8537f28b0c9a"
+    },
+    "axial_centers": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/evidence/A12_R7_STEP01_COMPONENT_REGISTRATION_A01/A12_R7_STEP01_AXIAL_CENTER_REGISTRATION_A01.png",
+      "file_sha256": "a231759c9f2d0e947db6641fd78c07a95d5c836d25b4b7c0d23094ef6d0ce3b5"
+    },
+    "rotational_profiles": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/evidence/A12_R7_STEP01_COMPONENT_REGISTRATION_A01/A12_R7_STEP01_ROTATIONAL_VISIBLE_ENVELOPES_A01.png",
+      "file_sha256": "f1edd94a21be8b7756464f30e0347612987368dea8b8865774bc5e13d731ac06"
+    },
+    "review_board": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/evidence/A12_R7_STEP01_COMPONENT_REGISTRATION_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R7_STEP01_COMPONENT_REGISTRATION_A01_REVIEW_BOARD.png",
+      "file_sha256": "2f9bc9f724329baac4db7275cc3ab5c48975e44cee1bd9da58decf751d75705b"
+    }
+  },
+  "technical_gates": [
+    {
+      "name": "six_source_hashes_exact",
+      "pass": true
+    },
+    {
+      "name": "six_object_rectangles_exact",
+      "pass": true
+    },
+    {
+      "name": "six_membership_counts_exact",
+      "pass": true
+    },
+    {
+      "name": "twelve_component_ids_present",
+      "pass": true
+    },
+    {
+      "name": "front_inward_pitch_bilateral",
+      "pass": true
+    },
+    {
+      "name": "front_bottom_wider_bilateral",
+      "pass": true
+    },
+    {
+      "name": "upper_cap_negative_spaces_positive",
+      "pass": true
+    },
+    {
+      "name": "face_centerline_not_shaft_axis",
+      "pass": true
+    },
+    {
+      "name": "blocked_unknowns_preserved",
+      "pass": true
+    },
+    {
+      "name": "measurement_only_firewall",
+      "pass": true
+    }
+  ],
+  "technical_result": "pass"
+}

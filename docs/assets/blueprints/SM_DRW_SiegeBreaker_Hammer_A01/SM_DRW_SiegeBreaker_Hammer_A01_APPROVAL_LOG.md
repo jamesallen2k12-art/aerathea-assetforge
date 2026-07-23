@@ -659,6 +659,23 @@
 - This request authorizes the save point and plan records only. It does not
   approve R7 Step 01 measurement or any Blender execution.
 
+## A12 R7 Plan Approval And Step 01 Measurement Result
+
+- Date: `2026-07-22`.
+- Flamestrike response to the exact R7-plan approval gate: `approved`.
+- Approved scope: Step 01 measurement-only component registration using the
+  immutable six source images, exact marks, tables, formulas, and blocked
+  unknowns; no filled candidates, geometry, Blender, export, or Unreal.
+- Result: candidate measurement record created; independent audit `pass 40/40`
+  as `proof only`.
+- Five geometry-ownership rules remain blocked: strike-face centerline,
+  strike-face/backing boundary, rotational-envelope reconciliation,
+  rotational-core ownership, and decorative-collar ownership.
+- Pending decision: Flamestrike approves, revises, rejects, or keeps Step 01
+  blocked and resolves those rules.
+- Step 02, DCC, FBX, Unreal, LOD, collision, and game-ready authority remain
+  `false`.
+
 ## A12 R6 A01 Fail-Closed Topology Result
 
 - Date: `2026-07-22`.

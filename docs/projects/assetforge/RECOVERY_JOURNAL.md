@@ -7957,3 +7957,23 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260722-220303/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260722-220303/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 22:07:51 EDT -0400 - Before Siege Breaker A12 R7 Step 01 measurement-only component registration
+
+- Snapshot: `Saved/ProjectRecovery/20260722-220751/`
+- Git: branch `main`, HEAD `754ad17`, status lines `404`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-220751/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-220751/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-220751/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-22 22:35:04 EDT -0400 - Siege Breaker A12 R7 Step 01 measurement record complete and awaiting Flamestrike review
+
+- Snapshot: `Saved/ProjectRecovery/20260722-223504/`
+- Git: branch `main`, HEAD `754ad17`, status lines `417`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260722-223504/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260722-223504/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260722-223504/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

@@ -1,0 +1,553 @@
+{
+  "schema": "aerathea.siegebreaker.a12_r7_step01_component_registration_independent_audit.v1",
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "contract_id": "SB-AXIAL-A12-R7-STEP01-COMPONENT-REGISTRATION",
+  "artifact_status": "proof only; technical audit cannot approve measurement interpretation or unblock Step 02",
+  "gate_summary": {
+    "passed": 40,
+    "total": 40,
+    "result": "pass"
+  },
+  "gates": [
+    {
+      "name": "front_hash",
+      "pass": true,
+      "evidence": "d00bf9ffcfd4862884626fa961c5f6b4fd6cedfdff7936b2210ca2a905e57e95"
+    },
+    {
+      "name": "front_rect",
+      "pass": true,
+      "evidence": [
+        317,
+        193,
+        808,
+        1304
+      ]
+    },
+    {
+      "name": "front_count",
+      "pass": true,
+      "evidence": 212765
+    },
+    {
+      "name": "back_hash",
+      "pass": true,
+      "evidence": "15b4633f2df4ee06115ef4a7e238f287ebece1bae514ad4005c1036a57359799"
+    },
+    {
+      "name": "back_rect",
+      "pass": true,
+      "evidence": [
+        285,
+        193,
+        818,
+        1344
+      ]
+    },
+    {
+      "name": "back_count",
+      "pass": true,
+      "evidence": 238342
+    },
+    {
+      "name": "left_hash",
+      "pass": true,
+      "evidence": "1a23e0c24f7be4b12df93e2509b9d300acc9161a21a32b336f7cf63c1288d91b"
+    },
+    {
+      "name": "left_rect",
+      "pass": true,
+      "evidence": [
+        397,
+        190,
+        612,
+        1299
+      ]
+    },
+    {
+      "name": "left_count",
+      "pass": true,
+      "evidence": 118540
+    },
+    {
+      "name": "right_hash",
+      "pass": true,
+      "evidence": "04a1e9359d518b1dec35fe161020bd23ab9e2f8d5934f24e4184aecaa91d8330"
+    },
+    {
+      "name": "right_rect",
+      "pass": true,
+      "evidence": [
+        467,
+        172,
+        681,
+        1270
+      ]
+    },
+    {
+      "name": "right_count",
+      "pass": true,
+      "evidence": 116948
+    },
+    {
+      "name": "top_hash",
+      "pass": true,
+      "evidence": "aee612d9bed74e4f861576f926fe9d75de00f80dc416e3a6ba66a75247c00e98"
+    },
+    {
+      "name": "top_rect",
+      "pass": true,
+      "evidence": [
+        94,
+        330,
+        1106,
+        921
+      ]
+    },
+    {
+      "name": "top_count",
+      "pass": true,
+      "evidence": 465117
+    },
+    {
+      "name": "bottom_hash",
+      "pass": true,
+      "evidence": "874a9e7c7713c7edbcf1030486d3988a54e8499ee697e316ec82a013fdb9d746"
+    },
+    {
+      "name": "bottom_rect",
+      "pass": true,
+      "evidence": [
+        93,
+        330,
+        1106,
+        933
+      ]
+    },
+    {
+      "name": "bottom_count",
+      "pass": true,
+      "evidence": 509030
+    },
+    {
+      "name": "front_top_component_spans",
+      "pass": true,
+      "evidence": {
+        "stone_left": [
+          345,
+          459
+        ],
+        "center_core_or_cap": [
+          539,
+          587
+        ],
+        "stone_right": [
+          666,
+          780
+        ]
+      }
+    },
+    {
+      "name": "front_bottom_component_spans",
+      "pass": true,
+      "evidence": {
+        "stone_left": [
+          337,
+          476
+        ],
+        "center_core_or_cap": [
+          512,
+          614
+        ],
+        "stone_right": [
+          648,
+          788
+        ]
+      }
+    },
+    {
+      "name": "bilateral_inward_center_shift",
+      "pass": true,
+      "evidence": [
+        4.5,
+        5.0
+      ]
+    },
+    {
+      "name": "mean_pitch",
+      "pass": true,
+      "evidence": 0.9071073784305639
+    },
+    {
+      "name": "back_negative_space_station",
+      "pass": true,
+      "evidence": [
+        [
+          304,
+          466
+        ],
+        [
+          500,
+          606
+        ],
+        [
+          638,
+          800
+        ]
+      ]
+    },
+    {
+      "name": "front_negative_gaps",
+      "pass": true,
+      "evidence": {
+        "selected_source_row": 520,
+        "source_row_center_z_cm_exact": {
+          "numerator": 133195,
+          "denominator": 1111,
+          "display_decimal": "119.887488749"
+        },
+        "components": {
+          "stone_left": {
+            "span_half_open_pixels": [
+              337,
+              476
+            ],
+            "width_pixels": 139,
+            "center_edge_pixels_exact": {
+              "numerator": 813,
+              "denominator": 2,
+              "display_decimal": "406.500000000"
+            }
+          },
+          "center_core_or_cap": {
+            "span_half_open_pixels": [
+              512,
+              614
+            ],
+            "width_pixels": 102,
+            "center_edge_pixels_exact": {
+              "numerator": 563,
+              "denominator": 1,
+              "display_decimal": "563.000000000"
+            }
+          },
+          "stone_right": {
+            "span_half_open_pixels": [
+              648,
+              788
+            ],
+            "width_pixels": 140,
+            "center_edge_pixels_exact": {
+              "numerator": 718,
+              "denominator": 1,
+              "display_decimal": "718.000000000"
+            }
+          }
+        },
+        "left_gap_half_open_pixels": [
+          476,
+          512
+        ],
+        "left_gap_width_pixels": 36,
+        "right_gap_half_open_pixels": [
+          614,
+          648
+        ],
+        "right_gap_width_pixels": 34
+      }
+    },
+    {
+      "name": "back_negative_gaps",
+      "pass": true,
+      "evidence": {
+        "selected_source_row": 540,
+        "source_row_center_z_cm_exact": {
+          "numerator": 136595,
+          "denominator": 1151,
+          "display_decimal": "118.675065161"
+        },
+        "components": {
+          "stone_left": {
+            "span_half_open_pixels": [
+              304,
+              466
+            ],
+            "width_pixels": 162,
+            "center_edge_pixels_exact": {
+              "numerator": 385,
+              "denominator": 1,
+              "display_decimal": "385.000000000"
+            }
+          },
+          "center_core_or_cap": {
+            "span_half_open_pixels": [
+              500,
+              606
+            ],
+            "width_pixels": 106,
+            "center_edge_pixels_exact": {
+              "numerator": 553,
+              "denominator": 1,
+              "display_decimal": "553.000000000"
+            }
+          },
+          "stone_right": {
+            "span_half_open_pixels": [
+              638,
+              800
+            ],
+            "width_pixels": 162,
+            "center_edge_pixels_exact": {
+              "numerator": 719,
+              "denominator": 1,
+              "display_decimal": "719.000000000"
+            }
+          }
+        },
+        "left_gap_half_open_pixels": [
+          466,
+          500
+        ],
+        "left_gap_width_pixels": 34,
+        "right_gap_half_open_pixels": [
+          606,
+          638
+        ],
+        "right_gap_width_pixels": 32
+      }
+    },
+    {
+      "name": "right_motif_component",
+      "pass": true,
+      "evidence": {
+        "count": 1512,
+        "rect": [
+          525,
+          311,
+          570,
+          407
+        ]
+      }
+    },
+    {
+      "name": "right_face_not_shaft",
+      "pass": true,
+      "evidence": {
+        "minimum": {
+          "numerator": 1095,
+          "denominator": 2,
+          "display_decimal": "547.500000000"
+        },
+        "maximum": {
+          "numerator": 550,
+          "denominator": 1,
+          "display_decimal": "550.000000000"
+        },
+        "width_pixels": {
+          "numerator": 5,
+          "denominator": 2,
+          "display_decimal": "2.500000000"
+        }
+      }
+    },
+    {
+      "name": "left_motif_component",
+      "pass": true,
+      "evidence": {
+        "count": 1597,
+        "rect": [
+          450,
+          319,
+          496,
+          411
+        ]
+      }
+    },
+    {
+      "name": "left_face_not_shaft",
+      "pass": true,
+      "evidence": {
+        "minimum": {
+          "numerator": 473,
+          "denominator": 1,
+          "display_decimal": "473.000000000"
+        },
+        "maximum": {
+          "numerator": 1895,
+          "denominator": 4,
+          "display_decimal": "473.750000000"
+        },
+        "width_pixels": {
+          "numerator": 3,
+          "denominator": 4,
+          "display_decimal": "0.750000000"
+        }
+      }
+    },
+    {
+      "name": "component_ledger_exact_ids",
+      "pass": true,
+      "evidence": [
+        "C01_CENTER_CORE",
+        "C02_STONE_LEFT",
+        "C03_STONE_RIGHT",
+        "C04_STRIKE_FACE_HALF_POSITIVE_X",
+        "C05_STRIKE_FACE_HALF_NEGATIVE_X",
+        "C06_UPPER_HAFT_CAP",
+        "C07_HAFT",
+        "C08_GRIP",
+        "C09_LOWER_COLLAR",
+        "C10_POMMEL_BODY",
+        "C11_POMMEL_TERMINAL_CAP",
+        "C12_UPPER_HEAD_CAP_SPIRE"
+      ]
+    },
+    {
+      "name": "five_blocks_preserved",
+      "pass": true,
+      "evidence": [
+        {
+          "id": "R7-S01-B01",
+          "block": "strike-face controlling centerline rule missing",
+          "required_decision": "approve motif-center, rail-midpoint, or another exact source-landmark rule separately for each side view"
+        },
+        {
+          "id": "R7-S01-B02",
+          "block": "strike-face surface/backing-stone semantic boundary missing",
+          "required_decision": "declare which visible rail or silhouette edge terminates C04/C05 without inferring a filled face"
+        },
+        {
+          "id": "R7-S01-B03",
+          "block": "rotational envelope reconciliation rule missing",
+          "required_decision": "declare whether front, back, centered mean, or another exact rule owns each radius-by-Z station"
+        },
+        {
+          "id": "R7-S01-B04",
+          "block": "rotational core versus decorative envelope ownership missing",
+          "required_decision": "declare whether visible outer half-width is the revolution radius or only a containment bound"
+        },
+        {
+          "id": "R7-S01-B05",
+          "block": "decorative collar component ownership missing",
+          "required_decision": "assign visible upper/lower collar regions among C06/C07/C08/C09/C10 before full bounds are measured"
+        }
+      ]
+    },
+    {
+      "name": "no_interpretation_outputs",
+      "pass": true,
+      "evidence": {
+        "saved_masks": 0,
+        "filled_component_shapes": 0,
+        "connected_contours": 0,
+        "smoothed_envelopes": 0,
+        "hidden_closures": 0,
+        "candidate_geometry": 0,
+        "blender_files": 0,
+        "source_pixels_or_exact_marks_only": true
+      }
+    },
+    {
+      "name": "step02_and_dcc_false",
+      "pass": true,
+      "evidence": {
+        "step_02": false,
+        "dcc": false,
+        "unreal": false,
+        "fully_game_ready": false
+      }
+    },
+    {
+      "name": "output_component_stations_hash",
+      "pass": true,
+      "evidence": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/evidence/A12_R7_STEP01_COMPONENT_REGISTRATION_A01/A12_R7_STEP01_COMPONENT_STATIONS_A01.png",
+        "file_sha256": "4d136f17e2df2dd7f55ac0e401402e6f125fe83598857191f9464a1762584cc1"
+      }
+    },
+    {
+      "name": "output_face_centerlines_hash",
+      "pass": true,
+      "evidence": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/evidence/A12_R7_STEP01_COMPONENT_REGISTRATION_A01/A12_R7_STEP01_STRIKE_FACE_CENTERLINES_A01.png",
+        "file_sha256": "e43fd35c5454a9de6b2774fe7c95210f57a6d21ad2a0735f58aa8537f28b0c9a"
+      }
+    },
+    {
+      "name": "output_axial_centers_hash",
+      "pass": true,
+      "evidence": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/evidence/A12_R7_STEP01_COMPONENT_REGISTRATION_A01/A12_R7_STEP01_AXIAL_CENTER_REGISTRATION_A01.png",
+        "file_sha256": "a231759c9f2d0e947db6641fd78c07a95d5c836d25b4b7c0d23094ef6d0ce3b5"
+      }
+    },
+    {
+      "name": "output_rotational_profiles_hash",
+      "pass": true,
+      "evidence": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/evidence/A12_R7_STEP01_COMPONENT_REGISTRATION_A01/A12_R7_STEP01_ROTATIONAL_VISIBLE_ENVELOPES_A01.png",
+        "file_sha256": "f1edd94a21be8b7756464f30e0347612987368dea8b8865774bc5e13d731ac06"
+      }
+    },
+    {
+      "name": "output_review_board_hash",
+      "pass": true,
+      "evidence": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/evidence/A12_R7_STEP01_COMPONENT_REGISTRATION_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R7_STEP01_COMPONENT_REGISTRATION_A01_REVIEW_BOARD.png",
+        "file_sha256": "2f9bc9f724329baac4db7275cc3ab5c48975e44cee1bd9da58decf751d75705b"
+      }
+    },
+    {
+      "name": "review_firewall",
+      "pass": true,
+      "evidence": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A12_R7_STEP01_COMPONENT_REGISTRATION_A01_REVIEW.md"
+    },
+    {
+      "name": "manifest_technical_gates",
+      "pass": true,
+      "evidence": [
+        {
+          "name": "six_source_hashes_exact",
+          "pass": true
+        },
+        {
+          "name": "six_object_rectangles_exact",
+          "pass": true
+        },
+        {
+          "name": "six_membership_counts_exact",
+          "pass": true
+        },
+        {
+          "name": "twelve_component_ids_present",
+          "pass": true
+        },
+        {
+          "name": "front_inward_pitch_bilateral",
+          "pass": true
+        },
+        {
+          "name": "front_bottom_wider_bilateral",
+          "pass": true
+        },
+        {
+          "name": "upper_cap_negative_spaces_positive",
+          "pass": true
+        },
+        {
+          "name": "face_centerline_not_shaft_axis",
+          "pass": true
+        },
+        {
+          "name": "blocked_unknowns_preserved",
+          "pass": true
+        },
+        {
+          "name": "measurement_only_firewall",
+          "pass": true
+        }
+      ]
+    }
+  ],
+  "decision_boundary": "Flamestrike must approve or revise the measurement record and resolve its blocked rules. No audit grants geometry authority."
+}
