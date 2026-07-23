@@ -1,0 +1,71 @@
+{
+  "schema": "AERATHEA_R8_DISAGREEMENT_UNKNOWN_MATRIX_V1",
+  "run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
+  "items": [
+    {
+      "id": "DX001",
+      "subject": "front versus back complete width consequence",
+      "front_cm": {
+        "numerator": 104040,
+        "denominator": 1063,
+        "display_decimal": "97.873941674506"
+      },
+      "back_cm": {
+        "numerator": 52445,
+        "denominator": 531,
+        "display_decimal": "98.766478342750"
+      },
+      "status": "explicit_rule_required"
+    },
+    {
+      "id": "DX002",
+      "subject": "top versus bottom depth consequence at common axial scale",
+      "top_cm": {
+        "numerator": 25125660,
+        "denominator": 517681,
+        "display_decimal": "48.535024464873"
+      },
+      "bottom_cm": {
+        "numerator": 24033240,
+        "denominator": 517681,
+        "display_decimal": "46.424806009879"
+      },
+      "status": "approved centered arithmetic-mean rule available"
+    },
+    {
+      "id": "DX003",
+      "subject": "right rune versus metal half completed depth",
+      "rune_cm": {
+        "numerator": 9435,
+        "denominator": 274,
+        "display_decimal": "34.434306569343"
+      },
+      "metal_cm": {
+        "numerator": 11815,
+        "denominator": 274,
+        "display_decimal": "43.120437956204"
+      },
+      "status": "approved retain-as-two-candidates rule available"
+    },
+    {
+      "id": "DX004",
+      "subject": "right object-bounds center versus diamond rotation center",
+      "object_center_x": {
+        "numerator": 543,
+        "denominator": 1,
+        "display_decimal": "543.000000000000"
+      },
+      "rotation_center_x": {
+        "numerator": 557,
+        "denominator": 1,
+        "display_decimal": "557.000000000000"
+      },
+      "status": "approved diamond-center x=557 rule available"
+    },
+    {
+      "id": "DX005",
+      "subject": "front stations versus independently unresolved back stations",
+      "status": "front-source priority required for construction stations"
+    }
+  ]
+}

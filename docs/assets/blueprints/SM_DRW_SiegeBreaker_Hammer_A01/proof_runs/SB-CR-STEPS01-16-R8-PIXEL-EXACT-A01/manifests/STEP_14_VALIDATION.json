@@ -1,0 +1,15 @@
+{
+  "schema": "AERATHEA_STEP_VALIDATION_V1",
+  "run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
+  "step": "14",
+  "decision": "UV, base color, and material-interpretation plan",
+  "result": "PASS",
+  "checks_passed": 4,
+  "checks_total": 4,
+  "checks": {
+    "rune_plan_exists": true,
+    "rune_no_geometry_change": true,
+    "metal_plan_exists": true,
+    "metal_no_geometry_change": true
+  }
+}

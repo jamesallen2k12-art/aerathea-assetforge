@@ -1,0 +1,137 @@
+{
+  "schema": "AERATHEA_R8_STEP11_PRODUCTION_GEOMETRY_BLUEPRINT_V1",
+  "run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
+  "step": "11",
+  "artifact_status": "authoritative",
+  "input_authority": {
+    "registration": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_05_PIXEL_WORLD_REGISTRATION_LOCK.json",
+      "sha256": "aed4b8d87a4a5b442c0465c9db59fa524f63797153d662e1a5e7cf90423a2446"
+    },
+    "front_measurement": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_06_FRONT_MEASUREMENT_CONTRACT.json",
+      "sha256": "85f09fc89c8b73df8e6fdf47924e2251da9dda6decabe44fa3f3b2577b7708eb"
+    },
+    "right_measurement": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_07_RIGHT_MEASUREMENT_CONTRACT.json",
+      "sha256": "977831e86b02148125a7e1a04024d2d114721590ebf63937bdd314d02cc427c9"
+    },
+    "interpretations": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_10_INTERPRETATION_DECISIONS.json",
+      "sha256": "61259d503f816e88f3d2c8d14d254a2bff98ee7040d062edc4c12a72b585854b"
+    }
+  },
+  "execution_entry_point": "Tools/DCC/build_siegebreaker_r8_pixel_exact_steps12_16.py",
+  "clean_outputs": {
+    "source_root": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/R8_PixelExact_Steps01_16_A01",
+    "review_root": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/review/STEP_16_FINAL",
+    "old_construction_input_count": 0
+  },
+  "world_frame": {
+    "pivot_cm": [
+      0,
+      0,
+      0
+    ],
+    "pivot": "bottom-center terminal/pommel",
+    "axes": {
+      "+X": "head right",
+      "+Y": "back",
+      "+Z": "up"
+    },
+    "assembly_axis": "world Z through right-source diamond center x=557"
+  },
+  "dimensions_cm": {
+    "width_front_owned": {
+      "numerator": 104040,
+      "denominator": 1063,
+      "display_decimal": "97.873941674506"
+    },
+    "depth_centered_top_bottom_owned": {
+      "numerator": 24579450,
+      "denominator": 517681,
+      "display_decimal": "47.479915237376"
+    },
+    "length_anchor": {
+      "numerator": 170,
+      "denominator": 1,
+      "display_decimal": "170.000000000000"
+    }
+  },
+  "variants": {
+    "rune_side": {
+      "interval_half_open": [
+        557,
+        668
+      ],
+      "span_pixels": 111,
+      "completed_depth_cm": {
+        "numerator": 9435,
+        "denominator": 274,
+        "display_decimal": "34.434306569343"
+      }
+    },
+    "metal_center_piece_side": {
+      "interval_half_open": [
+        418,
+        557
+      ],
+      "span_pixels": 139,
+      "completed_depth_cm": {
+        "numerator": 11815,
+        "denominator": 274,
+        "display_decimal": "43.120437956204"
+      }
+    }
+  },
+  "components": [
+    {
+      "id": "C00_HEAD",
+      "source": "exact selected right half plus front-owned width",
+      "closure": "4-connected enclosed fill; straight ruled boundary"
+    },
+    {
+      "id": "C01_HANDLE_A_TERMINAL",
+      "source": "front station/profile scanlines",
+      "closure": "half-cylinder bands and flat endpoint caps"
+    }
+  ],
+  "construction": {
+    "head": "retain every selected source-half cell; map horizontal source edges from x=557 at the one right scale; map vertical source edges at the same scale; use front scanline width without rescaling the right half; complete once by Rz180",
+    "handle": "derive r(z) from each front source row at 170/1063 cm/px; map each retained half-row pixel-column interval through theta=-pi/2+pi*U; complete once by Rz180",
+    "texture": "unchanged full-resolution R8 PNGs; nearest/constant pixel sampling; no generated recolor or resized construction bitmap"
+  },
+  "fresh_build": {
+    "prior_mesh_allowed": false,
+    "prior_uv_allowed": false,
+    "prior_texture_allowed": false,
+    "prior_render_allowed": false
+  },
+  "performance_plan": {
+    "LOD0": "pixel-authority proof mesh; retain exact source interval ownership even when above normal large-prop budget",
+    "LOD1": "boundary-preserving 50 percent target",
+    "LOD2": "boundary-preserving 25 percent target",
+    "LOD3": "primary silhouette 12.5 percent target",
+    "collision": "separate simple handle capsule plus head box proxy"
+  },
+  "material_plan": {
+    "slots": [
+      "right_source",
+      "front_source",
+      "back_source"
+    ],
+    "interpolation": "Closest",
+    "maps": {
+      "base_color": "immutable R8 pixels",
+      "normal": "flat proof normal; production bake pending visual approval",
+      "orm": "uniform proof ORM; production paint pending visual approval",
+      "emissive": "blue-pixel threshold only; no shape expansion"
+    }
+  },
+  "repeatability": {
+    "run_a": "fresh clean output",
+    "run_b": "fresh clean repeat",
+    "canonical_compare": "mesh coordinates, polygon indices, UVs, material indices, source hashes, renders, FBX reimport bounds"
+  },
+  "final_review": "one board showing both unequal-depth hammers: source color 3/4, front, right, and independent gray; visibly open for Flamestrike"
+}

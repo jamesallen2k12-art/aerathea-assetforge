@@ -1,0 +1,11 @@
+{
+  "schema": "AERATHEA_NEGATIVE_TAMPER_TEST_V1",
+  "result": "PASS",
+  "tests": {
+    "axis_556_rejected": true,
+    "rune_forced_to_metal_depth_rejected": true,
+    "source_hash_one_bit_change_rejected": true,
+    "second_rz180_rejected": true,
+    "stretch_flag_rejected": true
+  }
+}

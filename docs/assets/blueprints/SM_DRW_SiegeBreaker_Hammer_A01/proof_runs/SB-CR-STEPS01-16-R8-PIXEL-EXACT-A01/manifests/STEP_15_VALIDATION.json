@@ -1,0 +1,27 @@
+{
+  "schema": "AERATHEA_STEP_VALIDATION_V1",
+  "run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
+  "step": "15",
+  "decision": "UV, texture, and material candidate",
+  "result": "PASS",
+  "checks_passed": 16,
+  "checks_total": 16,
+  "checks": {
+    "rune_geometry_byte_semantics_unchanged": true,
+    "rune_uv0_present": true,
+    "rune_material_slots_two_or_fewer": true,
+    "rune_source_base_color_hashes_locked": true,
+    "rune_normal_maps_directx_flat": true,
+    "rune_orm_packed": true,
+    "rune_emissive_zero_expansion": true,
+    "rune_closest_interpolation": true,
+    "metal_geometry_byte_semantics_unchanged": true,
+    "metal_uv0_present": true,
+    "metal_material_slots_two_or_fewer": true,
+    "metal_source_base_color_hashes_locked": true,
+    "metal_normal_maps_directx_flat": true,
+    "metal_orm_packed": true,
+    "metal_emissive_zero_expansion": true,
+    "metal_closest_interpolation": true
+  }
+}

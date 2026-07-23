@@ -8597,3 +8597,43 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260723-171020/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260723-171020/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-23 17:29:29 EDT -0400 - Before Siege Breaker R8 pixel-exact Steps 01-16 fresh replay; stretched candidates rejected
+
+- Snapshot: `Saved/ProjectRecovery/20260723-172929/`
+- Git: branch `main`, HEAD `9d50a41`, status lines `563`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260723-172929/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260723-172929/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260723-172929/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-23 17:52:29 EDT -0400 - Siege Breaker R8 exact Steps 01-11 complete; before fresh Steps 12-16 Blender build
+
+- Snapshot: `Saved/ProjectRecovery/20260723-175229/`
+- Git: branch `main`, HEAD `9d50a41`, status lines `573`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260723-175229/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260723-175229/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260723-175229/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-23 18:06:58 EDT -0400 - Siege Breaker R8 exact 16-step build and independent final audit complete
+
+- Snapshot: `Saved/ProjectRecovery/20260723-180658/`
+- Git: branch `main`, HEAD `9d50a41`, status lines `576`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260723-180658/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260723-180658/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260723-180658/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-23 18:16:38 EDT -0400 - Siege Breaker zero-extrusion Core Recovery; valid through R8 Step 09; next-agent exact-process handoff saved
+
+- Snapshot: `Saved/ProjectRecovery/20260723-181638/`
+- Git: branch `main`, HEAD `9d50a41`, status lines `578`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260723-181638/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260723-181638/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260723-181638/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

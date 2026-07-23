@@ -1,0 +1,911 @@
+{
+  "schema": "AERATHEA_SOURCE_OWNERSHIP_INVENTORY_V1",
+  "run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
+  "step": "04",
+  "artifact_status": "authoritative for R8 component naming and source ownership",
+  "views": [
+    "concept",
+    "front",
+    "back",
+    "left",
+    "right",
+    "top",
+    "bottom"
+  ],
+  "physical_observation_families": [
+    {
+      "id": "PV001",
+      "label": "viewer-left or first visible faceted stone strike mass",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "top",
+        "bottom"
+      ],
+      "visibility": "direct or partial",
+      "cross_view_correspondence": "unresolved"
+    },
+    {
+      "id": "PV002",
+      "label": "viewer-right or second visible faceted stone strike mass",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "top",
+        "bottom"
+      ],
+      "visibility": "direct or partial",
+      "cross_view_correspondence": "unresolved"
+    },
+    {
+      "id": "PV003",
+      "label": "left side-view dominant strike-face stone region",
+      "views": [
+        "left"
+      ],
+      "visibility": "direct",
+      "cross_view_correspondence": "unresolved"
+    },
+    {
+      "id": "PV004",
+      "label": "right side-view dominant strike-face stone region",
+      "views": [
+        "right"
+      ],
+      "visibility": "direct",
+      "cross_view_correspondence": "unresolved"
+    },
+    {
+      "id": "PV005",
+      "label": "central head structural core and layered metal bracing region",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ],
+      "visibility": "direct with view-dependent occlusion",
+      "cross_view_correspondence": "unresolved"
+    },
+    {
+      "id": "PV006",
+      "label": "front-facing layered diamond focal plate region",
+      "views": [
+        "concept",
+        "front",
+        "top",
+        "bottom"
+      ],
+      "visibility": "direct or partial",
+      "cross_view_correspondence": "unresolved"
+    },
+    {
+      "id": "PV007",
+      "label": "back-facing layered diamond focal plate region",
+      "views": [
+        "back"
+      ],
+      "visibility": "direct",
+      "cross_view_correspondence": "unresolved"
+    },
+    {
+      "id": "PV008",
+      "label": "left side strike-face diamond inset region",
+      "views": [
+        "left"
+      ],
+      "visibility": "direct",
+      "cross_view_correspondence": "unresolved"
+    },
+    {
+      "id": "PV009",
+      "label": "right side strike-face diamond inset region",
+      "views": [
+        "right"
+      ],
+      "visibility": "direct",
+      "cross_view_correspondence": "unresolved"
+    },
+    {
+      "id": "PV010",
+      "label": "head crown or top finial region",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right"
+      ],
+      "visibility": "direct or partial",
+      "cross_view_correspondence": "unresolved"
+    },
+    {
+      "id": "PV011",
+      "label": "head-to-shaft neck and collar region",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ],
+      "visibility": "direct with view-dependent occlusion",
+      "cross_view_correspondence": "unresolved"
+    },
+    {
+      "id": "PV012",
+      "label": "long engraved metal shaft region",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ],
+      "visibility": "direct",
+      "cross_view_correspondence": "unresolved"
+    },
+    {
+      "id": "PV013",
+      "label": "shaft-to-grip transition collar region",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ],
+      "visibility": "direct",
+      "cross_view_correspondence": "unresolved"
+    },
+    {
+      "id": "PV014",
+      "label": "crisscross leather grip region",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ],
+      "visibility": "direct",
+      "cross_view_correspondence": "unresolved"
+    },
+    {
+      "id": "PV015",
+      "label": "grip-to-pommel lower collar region",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ],
+      "visibility": "direct",
+      "cross_view_correspondence": "unresolved"
+    },
+    {
+      "id": "PV016",
+      "label": "faceted pommel body region",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ],
+      "visibility": "direct with view-dependent occlusion",
+      "cross_view_correspondence": "unresolved"
+    },
+    {
+      "id": "PV017",
+      "label": "front or concept pommel diamond inset region",
+      "views": [
+        "concept",
+        "front"
+      ],
+      "visibility": "direct",
+      "cross_view_correspondence": "unresolved"
+    },
+    {
+      "id": "PV018",
+      "label": "back pommel diamond inset region",
+      "views": [
+        "back"
+      ],
+      "visibility": "direct",
+      "cross_view_correspondence": "unresolved"
+    },
+    {
+      "id": "PV019",
+      "label": "side or axial pommel inset region",
+      "views": [
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ],
+      "visibility": "direct or partial",
+      "cross_view_correspondence": "unresolved"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "CT001",
+      "observation": "stone strike regions visibly meet or are captured by metal bracing",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ],
+      "hidden_attachment": "unresolved"
+    },
+    {
+      "id": "CT002",
+      "observation": "central focal plate visibly layers over central structural region",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "top",
+        "bottom"
+      ],
+      "hidden_attachment": "unresolved"
+    },
+    {
+      "id": "CT003",
+      "observation": "head neck visibly meets central head underside or axial region",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ],
+      "hidden_attachment": "unresolved"
+    },
+    {
+      "id": "CT004",
+      "observation": "neck visibly meets long metal shaft",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ],
+      "hidden_attachment": "unresolved"
+    },
+    {
+      "id": "CT005",
+      "observation": "metal shaft visibly meets transition collar and leather grip",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ],
+      "hidden_attachment": "unresolved"
+    },
+    {
+      "id": "CT006",
+      "observation": "leather grip visibly meets lower collar and pommel",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ],
+      "hidden_attachment": "unresolved"
+    },
+    {
+      "id": "CT007",
+      "observation": "pommel focal inset visibly layers over pommel body",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ],
+      "hidden_attachment": "unresolved"
+    }
+  ],
+  "occlusions": [
+    {
+      "id": "OC001",
+      "observation": "metal bracing occludes portions of both stone strike regions",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "top",
+        "bottom"
+      ],
+      "status": "direct"
+    },
+    {
+      "id": "OC002",
+      "observation": "central diamond layers occlude the central core",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "top",
+        "bottom"
+      ],
+      "status": "direct"
+    },
+    {
+      "id": "OC003",
+      "observation": "dominant side stone face occludes most central head depth",
+      "views": [
+        "left",
+        "right"
+      ],
+      "status": "direct"
+    },
+    {
+      "id": "OC004",
+      "observation": "head mass occludes the top of the neck in some views",
+      "views": [
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ],
+      "status": "direct"
+    },
+    {
+      "id": "OC005",
+      "observation": "collars occlude shaft and grip end boundaries",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ],
+      "status": "direct"
+    },
+    {
+      "id": "OC006",
+      "observation": "pommel inset and bracing occlude pommel body faces",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ],
+      "status": "direct"
+    }
+  ],
+  "negative_spaces": [
+    {
+      "id": "NS001",
+      "observation": "dark recessed gaps between stone masses and central bracing",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "top",
+        "bottom"
+      ],
+      "closure": "unresolved"
+    },
+    {
+      "id": "NS002",
+      "observation": "recesses around layered central diamond plate",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "top",
+        "bottom"
+      ],
+      "closure": "unresolved"
+    },
+    {
+      "id": "NS003",
+      "observation": "side-view setback between dominant stone face and central head mass",
+      "views": [
+        "left",
+        "right"
+      ],
+      "closure": "unresolved"
+    },
+    {
+      "id": "NS004",
+      "observation": "small gaps and recesses between neck armor bands",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right"
+      ],
+      "closure": "unresolved"
+    },
+    {
+      "id": "NS005",
+      "observation": "small recesses between pommel body, braces, and inset",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ],
+      "closure": "unresolved"
+    }
+  ],
+  "material_regions": [
+    {
+      "id": "MR001",
+      "label": "dark faceted stone",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ],
+      "status": "direct visible color/material character"
+    },
+    {
+      "id": "MR002",
+      "label": "aged bronze or warm dark metal",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ],
+      "status": "direct visible color/material character"
+    },
+    {
+      "id": "MR003",
+      "label": "dark steel or engraved blackened metal",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ],
+      "status": "direct visible color/material character"
+    },
+    {
+      "id": "MR004",
+      "label": "dark brown crisscross leather",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ],
+      "status": "direct visible color/material character"
+    },
+    {
+      "id": "MR005",
+      "label": "cold blue luminous rune or crystal region",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ],
+      "status": "direct visible color/emissive character"
+    }
+  ],
+  "rune_motifs": [
+    {
+      "id": "RM001",
+      "label": "central diamond rune/crystal motif",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "top",
+        "bottom"
+      ],
+      "continuity": "unresolved"
+    },
+    {
+      "id": "RM002",
+      "label": "vertical stone-brace rune rows",
+      "views": [
+        "concept",
+        "front",
+        "back"
+      ],
+      "continuity": "unresolved"
+    },
+    {
+      "id": "RM003",
+      "label": "side strike-face diamond rune motif",
+      "views": [
+        "left",
+        "right"
+      ],
+      "continuity": "unresolved"
+    },
+    {
+      "id": "RM004",
+      "label": "engraved shaft motif",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ],
+      "continuity": "unresolved"
+    },
+    {
+      "id": "RM005",
+      "label": "pommel diamond rune/crystal motif",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ],
+      "continuity": "unresolved"
+    }
+  ],
+  "annotation_classes": [
+    {
+      "id": "AN001",
+      "label": "white paper and faint grid background",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ],
+      "object_ownership": false
+    },
+    {
+      "id": "AN002",
+      "label": "titles and subtitles",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ],
+      "object_ownership": false
+    },
+    {
+      "id": "AN003",
+      "label": "dimension arrows, extension lines, and leaders",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ],
+      "object_ownership": false
+    },
+    {
+      "id": "AN004",
+      "label": "numeric dimension and property text",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ],
+      "object_ownership": false
+    },
+    {
+      "id": "AN005",
+      "label": "dimension tables and notes boxes",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ],
+      "object_ownership": false
+    },
+    {
+      "id": "AN006",
+      "label": "page borders, decorative rules, and corner marks",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ],
+      "object_ownership": false
+    }
+  ],
+  "unresolved_unknowns": [
+    {
+      "id": "UK001",
+      "question": "which visible strike-mass observations correspond to the same final physical stone across views",
+      "status": "unresolved",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ]
+    },
+    {
+      "id": "UK002",
+      "question": "exact hidden boundary and depth of each stone mass",
+      "status": "unresolved",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ]
+    },
+    {
+      "id": "UK003",
+      "question": "internal receiver and attachment between stone and bracing",
+      "status": "unresolved",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ]
+    },
+    {
+      "id": "UK004",
+      "question": "whether front and back focal plates are separate plates or faces of one core",
+      "status": "unresolved",
+      "views": [
+        "front",
+        "back"
+      ]
+    },
+    {
+      "id": "UK005",
+      "question": "exact continuity of top and underside head bracing",
+      "status": "unresolved",
+      "views": [
+        "top",
+        "bottom"
+      ]
+    },
+    {
+      "id": "UK006",
+      "question": "hidden continuation behind side strike faces",
+      "status": "unresolved",
+      "views": [
+        "left",
+        "right"
+      ]
+    },
+    {
+      "id": "UK007",
+      "question": "exact neck-to-head receiver geometry",
+      "status": "unresolved",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ]
+    },
+    {
+      "id": "UK008",
+      "question": "cross-view continuity and phase of shaft engravings",
+      "status": "unresolved",
+      "views": [
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ]
+    },
+    {
+      "id": "UK009",
+      "question": "cross-view continuity and phase of leather wrap",
+      "status": "unresolved",
+      "views": [
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ]
+    },
+    {
+      "id": "UK010",
+      "question": "hidden pommel volume, braces, and inset correspondence",
+      "status": "unresolved",
+      "views": [
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ]
+    },
+    {
+      "id": "UK011",
+      "question": "which dark pixels are cast shadow versus authored material value",
+      "status": "unresolved",
+      "views": [
+        "concept",
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ]
+    },
+    {
+      "id": "UK012",
+      "question": "whether all six illustrated orthographic views form one exact coherent dataset",
+      "status": "unresolved",
+      "views": [
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ]
+    }
+  ],
+  "pixel_coordinates_recorded": false,
+  "measurement_or_registration_performed": false,
+  "cross_view_correspondence_resolved": false,
+  "hidden_surface_resolved": false,
+  "mask_contour_fill_or_geometry_created": false,
+  "a01_a05_construction_input_used": false,
+  "authority": {
+    "step03_manifest": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_03_CROP_COORDINATES.json",
+    "step03_manifest_sha256": "83347c7bfbbd072697a7d67c9edb66bfe4f14768dff52e9cbd77e5a9de53d1b1",
+    "locked_generic_vocabulary_template": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-A06-POC/manifests/STEP_04_COMPONENT_AND_SOURCE_OWNERSHIP_INVENTORY.json",
+    "locked_generic_vocabulary_template_sha256": "7f18df8e1580d4c682a48497598a3603dbbea4dd2de8e54ea6f669f6fd37783f",
+    "reuse_limit": "semantic component/material/annotation vocabulary only; no old coordinates, measurements, transforms, masks, or geometry"
+  },
+  "r8_source_rectangles": {
+    "front": [
+      256,
+      208,
+      868,
+      1271
+    ],
+    "back": [
+      253,
+      204,
+      870,
+      1266
+    ],
+    "left": [
+      448,
+      165,
+      706,
+      1261
+    ],
+    "right": [
+      418,
+      166,
+      668,
+      1262
+    ],
+    "top": [
+      280,
+      305,
+      1253,
+      788
+    ],
+    "bottom": [
+      277,
+      308,
+      1252,
+      770
+    ]
+  },
+  "r8_complete_hammer_capture_sha256": {
+    "front": "57f11e52d410e5f0fba858276e8dad89fb34e10b93a829e6ccac5af69c803047",
+    "back": "453649488a8f9c320ff533461d90c2a4e536060f2e074cadeedcdef0f8620701",
+    "left": "9464cce559f975b3855e3e9d894826441924607ffea2884f73c60235e6d26489",
+    "right": "cb15d0a2806ca00d716984c929a22a29331893c5117672b571622c0924c2a098",
+    "top": "731272c89dae717b646f067e5337c14de0781ec11e01858efe50655aaa222d94",
+    "bottom": "da989819826b07e09049e422487a1bb5590dce576796be204c019bec2916ba11"
+  }
+}

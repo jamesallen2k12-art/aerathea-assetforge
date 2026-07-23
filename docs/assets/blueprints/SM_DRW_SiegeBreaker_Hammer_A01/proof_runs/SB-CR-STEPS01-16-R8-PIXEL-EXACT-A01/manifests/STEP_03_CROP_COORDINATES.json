@@ -1,0 +1,344 @@
+{
+  "schema": "AERATHEA_EXACT_SOURCE_DECOMPOSITION_V2",
+  "run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
+  "step": "03",
+  "artifact_status": "authoritative for this proof run",
+  "input_step02_source_lock_sha256": "a20197a55163f9691cabcd236339750a37b7a474e8089d234c63abfee2898b12",
+  "method": {
+    "id": "AET_R8_ANNOTATION_EXCLUDING_EXACT_OBJECT_V1",
+    "implementation_path": "Tools/DCC/measure_siegebreaker_a12_r10_r8_full_scanlines.py",
+    "implementation_sha256": "7271746a5e3111ca961d6e4ce3aeb242201266ae9067c0dc3ed5f6669e0837b6",
+    "selection": "original source pixels only; fixed chroma/luma core derives annotation-free envelope; greatest eligible 8-connected component supplies exact membership and colors"
+  },
+  "sources": [
+    {
+      "id": "front",
+      "source_path": "Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_FRONT_A01.png",
+      "source_file_sha256": "9a34588afd4fef32001cd9cb2115699e7506ef1e90331c19f4d32483c60aab8c",
+      "source_decoded_rgb_sha256": "0ad7e07fe8d5866e1a787b89954ecdb5c20d843ddd6219ff13a4fa16ddedaa98",
+      "canvas_pixels": [
+        1122,
+        1402
+      ],
+      "corner_median_luma_twice": 508,
+      "foreground_luma_max_twice": 468,
+      "candidate_component_count": 36,
+      "rejected_edge_component_count": 0,
+      "selected_component_pixel_count": 247844,
+      "rectangle_half_open": [
+        256,
+        208,
+        868,
+        1271
+      ],
+      "annotation_exclusion_color_core_rectangle_half_open": [
+        252,
+        204,
+        871,
+        1275
+      ],
+      "center_edge_pixels_exact": {
+        "x": {
+          "numerator": 562,
+          "denominator": 1,
+          "display_decimal": "562.000000000000"
+        },
+        "y": {
+          "numerator": 1479,
+          "denominator": 2,
+          "display_decimal": "739.500000000000"
+        }
+      },
+      "selection_rule": "integer luma=(77R+150G+29B)>>8; threshold 2*luma<=corner_median_twice-40; fixed chroma>=16 and luma<220 core derives a 4-pixel-expanded object-only envelope excluding neutral annotations; greatest original eligible 8-connected component inside that envelope supplies exact pixels",
+      "crop_width": 612,
+      "crop_height": 1063,
+      "crop_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/evidence/STEP_03_EXACT_CROPS/front/front_object_region.png",
+      "crop_file_sha256": "36f08f98b1182528f4b61a8681178921a10a00c8f758a79f5e307c537c637c34",
+      "crop_decoded_rgb_sha256": "826cd5d2d3f818549035c389b936770abe05dd3a06c28aaa0f54948145d67430",
+      "boundary_review_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/evidence/STEP_03_EXACT_BOUNDARIES/front_boundary_review.png",
+      "boundary_review_sha256": "3522b273dbc8629be0d00625a1a53391f53512b2f1c6bdbef60cb0b0e1efc8ef",
+      "capture_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/evidence/STEP_03_COMPLETE_HAMMER_SCANLINES/front_complete_hammer_scanlines.json.gz",
+      "capture_file_sha256": "57f11e52d410e5f0fba858276e8dad89fb34e10b93a829e6ccac5af69c803047",
+      "selected_rgba_sha256": "2a61e2004ccb31e603498c0308e93e606261fe9d9a2714968e082dad7ce13ab7",
+      "decoded_membership_sha256": "c4c135ce63088fa59416d76d31c66e968904571b2eecb124c7c144f51e93433b",
+      "exact_selected_pixel_count": 247844,
+      "padding_pixels": 0,
+      "pixel_exact": true
+    },
+    {
+      "id": "back",
+      "source_path": "Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_BACK_A01.png",
+      "source_file_sha256": "f09dd1ad3978f39e10ecee8ea7efa84336520f0cea4921fe3c410dfd04019694",
+      "source_decoded_rgb_sha256": "d388f3cb75fd8deeae19f78a48c6fdf4a35ae491248ac0c35525eab3c6190768",
+      "canvas_pixels": [
+        1122,
+        1402
+      ],
+      "corner_median_luma_twice": 502,
+      "foreground_luma_max_twice": 462,
+      "candidate_component_count": 31,
+      "rejected_edge_component_count": 0,
+      "selected_component_pixel_count": 250209,
+      "rectangle_half_open": [
+        253,
+        204,
+        870,
+        1266
+      ],
+      "annotation_exclusion_color_core_rectangle_half_open": [
+        249,
+        204,
+        873,
+        1270
+      ],
+      "center_edge_pixels_exact": {
+        "x": {
+          "numerator": 1123,
+          "denominator": 2,
+          "display_decimal": "561.500000000000"
+        },
+        "y": {
+          "numerator": 735,
+          "denominator": 1,
+          "display_decimal": "735.000000000000"
+        }
+      },
+      "selection_rule": "integer luma=(77R+150G+29B)>>8; threshold 2*luma<=corner_median_twice-40; fixed chroma>=16 and luma<220 core derives a 4-pixel-expanded object-only envelope excluding neutral annotations; greatest original eligible 8-connected component inside that envelope supplies exact pixels",
+      "crop_width": 617,
+      "crop_height": 1062,
+      "crop_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/evidence/STEP_03_EXACT_CROPS/back/back_object_region.png",
+      "crop_file_sha256": "214dc5d6cf67d31497545270ed7db97e28ce32938fddaebb5e5d1e72dd7ae77f",
+      "crop_decoded_rgb_sha256": "e4964f6a7b019fa53d740c315010cd9087cedd52e0a3795c9352cdd4135d2b0e",
+      "boundary_review_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/evidence/STEP_03_EXACT_BOUNDARIES/back_boundary_review.png",
+      "boundary_review_sha256": "e9841d32cfada78a60a49893ef3bbad15239dbd5859e27665a4cf02a1f4abbce",
+      "capture_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/evidence/STEP_03_COMPLETE_HAMMER_SCANLINES/back_complete_hammer_scanlines.json.gz",
+      "capture_file_sha256": "453649488a8f9c320ff533461d90c2a4e536060f2e074cadeedcdef0f8620701",
+      "selected_rgba_sha256": "5f2c3a1ee57d4695568a9979a2dd7befa6014133f24462f648295b22d4726731",
+      "decoded_membership_sha256": "f011b2583644b6c9e1ba53b9154277bec5a0ae12f3535b24350be50d95f4d3e0",
+      "exact_selected_pixel_count": 250209,
+      "padding_pixels": 0,
+      "pixel_exact": true
+    },
+    {
+      "id": "left",
+      "source_path": "Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_LEFT_A01.png",
+      "source_file_sha256": "7215495802065bb1907ec67f46e6f7c622b9beaf768eb710a5fc12880a6b1cc5",
+      "source_decoded_rgb_sha256": "9e996c5dbc1213f18adf1f9a7848c0a698b9775457ded751d0fb4fe5b989e5ad",
+      "canvas_pixels": [
+        1122,
+        1402
+      ],
+      "corner_median_luma_twice": 508,
+      "foreground_luma_max_twice": 468,
+      "candidate_component_count": 24,
+      "rejected_edge_component_count": 0,
+      "selected_component_pixel_count": 146324,
+      "rectangle_half_open": [
+        448,
+        165,
+        706,
+        1261
+      ],
+      "annotation_exclusion_color_core_rectangle_half_open": [
+        444,
+        161,
+        710,
+        1263
+      ],
+      "center_edge_pixels_exact": {
+        "x": {
+          "numerator": 577,
+          "denominator": 1,
+          "display_decimal": "577.000000000000"
+        },
+        "y": {
+          "numerator": 713,
+          "denominator": 1,
+          "display_decimal": "713.000000000000"
+        }
+      },
+      "selection_rule": "integer luma=(77R+150G+29B)>>8; threshold 2*luma<=corner_median_twice-40; fixed chroma>=16 and luma<220 core derives a 4-pixel-expanded object-only envelope excluding neutral annotations; greatest original eligible 8-connected component inside that envelope supplies exact pixels",
+      "crop_width": 258,
+      "crop_height": 1096,
+      "crop_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/evidence/STEP_03_EXACT_CROPS/left/left_object_region.png",
+      "crop_file_sha256": "353435ad3f30a7501887074f9d42d93e560b4d9495b9ab4b9231452b72c73470",
+      "crop_decoded_rgb_sha256": "15508360305a463490021715ae2bce591bbce466092c7d08ccb7bd58dd16089e",
+      "boundary_review_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/evidence/STEP_03_EXACT_BOUNDARIES/left_boundary_review.png",
+      "boundary_review_sha256": "ae7a5adbb281a461ae5b4a7822ccb6f39fd13ef8497af85ef624ad333e62a142",
+      "capture_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/evidence/STEP_03_COMPLETE_HAMMER_SCANLINES/left_complete_hammer_scanlines.json.gz",
+      "capture_file_sha256": "9464cce559f975b3855e3e9d894826441924607ffea2884f73c60235e6d26489",
+      "selected_rgba_sha256": "7456fb1956d8a1530baf1053b87bd073ae414536f7b64ca80e2dca7c4270b8a9",
+      "decoded_membership_sha256": "f1e022c197020ce9e2f9f59da83edf57be8ca26ea708dc44f5732ba07972686c",
+      "exact_selected_pixel_count": 146324,
+      "padding_pixels": 0,
+      "pixel_exact": true
+    },
+    {
+      "id": "right",
+      "source_path": "Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_RIGHT_A01.png",
+      "source_file_sha256": "58f3199babbcf9323751d04f0ffafa4316048243cf2f39992cdb6b04176306e8",
+      "source_decoded_rgb_sha256": "39659b53ffdb3c59c88a5894b3f901681df9c1d2fd995021c19992f8f10846a4",
+      "canvas_pixels": [
+        1122,
+        1402
+      ],
+      "corner_median_luma_twice": 506,
+      "foreground_luma_max_twice": 466,
+      "candidate_component_count": 16,
+      "rejected_edge_component_count": 0,
+      "selected_component_pixel_count": 142185,
+      "rectangle_half_open": [
+        418,
+        166,
+        668,
+        1262
+      ],
+      "annotation_exclusion_color_core_rectangle_half_open": [
+        417,
+        162,
+        671,
+        1265
+      ],
+      "center_edge_pixels_exact": {
+        "x": {
+          "numerator": 543,
+          "denominator": 1,
+          "display_decimal": "543.000000000000"
+        },
+        "y": {
+          "numerator": 714,
+          "denominator": 1,
+          "display_decimal": "714.000000000000"
+        }
+      },
+      "selection_rule": "integer luma=(77R+150G+29B)>>8; threshold 2*luma<=corner_median_twice-40; fixed chroma>=16 and luma<220 core derives a 4-pixel-expanded object-only envelope excluding neutral annotations; greatest original eligible 8-connected component inside that envelope supplies exact pixels",
+      "crop_width": 250,
+      "crop_height": 1096,
+      "crop_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/evidence/STEP_03_EXACT_CROPS/right/right_object_region.png",
+      "crop_file_sha256": "9e7760a059963ef9a91e937f38abf822285d467ee6d13e74aa361faac0f35523",
+      "crop_decoded_rgb_sha256": "e509493a0a637157270839c157b8e630b9441a227391b06a712624617a2a1c14",
+      "boundary_review_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/evidence/STEP_03_EXACT_BOUNDARIES/right_boundary_review.png",
+      "boundary_review_sha256": "d9575eb8f333fb66f92ae594d59c5ea4552f6526f5d2ece6e5b189b3bf92e6d7",
+      "capture_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/evidence/STEP_03_COMPLETE_HAMMER_SCANLINES/right_complete_hammer_scanlines.json.gz",
+      "capture_file_sha256": "cb15d0a2806ca00d716984c929a22a29331893c5117672b571622c0924c2a098",
+      "selected_rgba_sha256": "5f855ad51779a9378d75dc3a5e324488a2e1bd210942aee0032bc632bf08e20b",
+      "decoded_membership_sha256": "500999c52510637380f0c2469c35ed2902a938ac5b3d0099bb46895a5990fcf3",
+      "exact_selected_pixel_count": 142185,
+      "padding_pixels": 0,
+      "pixel_exact": true
+    },
+    {
+      "id": "top",
+      "source_path": "Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_TOP_A01.png",
+      "source_file_sha256": "be3e0b70de7a6e4fad025315f22feb21dc948ea9c3e7efb0adb63a983f190f9c",
+      "source_decoded_rgb_sha256": "d248f565b801d60c1aaed59b196aac5f7dc3cb18e900eec2b32d9f4991e779c6",
+      "canvas_pixels": [
+        1536,
+        1024
+      ],
+      "corner_median_luma_twice": 500,
+      "foreground_luma_max_twice": 460,
+      "candidate_component_count": 4,
+      "rejected_edge_component_count": 0,
+      "selected_component_pixel_count": 383863,
+      "rectangle_half_open": [
+        280,
+        305,
+        1253,
+        788
+      ],
+      "annotation_exclusion_color_core_rectangle_half_open": [
+        280,
+        302,
+        1254,
+        792
+      ],
+      "center_edge_pixels_exact": {
+        "x": {
+          "numerator": 1533,
+          "denominator": 2,
+          "display_decimal": "766.500000000000"
+        },
+        "y": {
+          "numerator": 1093,
+          "denominator": 2,
+          "display_decimal": "546.500000000000"
+        }
+      },
+      "selection_rule": "integer luma=(77R+150G+29B)>>8; threshold 2*luma<=corner_median_twice-40; fixed chroma>=16 and luma<220 core derives a 4-pixel-expanded object-only envelope excluding neutral annotations; greatest original eligible 8-connected component inside that envelope supplies exact pixels",
+      "crop_width": 973,
+      "crop_height": 483,
+      "crop_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/evidence/STEP_03_EXACT_CROPS/top/top_object_region.png",
+      "crop_file_sha256": "6fcf5e851700171f8dba0d3b41e602b1156762fc00f07c038be4efc75be334e9",
+      "crop_decoded_rgb_sha256": "3e4a65f1fcdb47f722d28656f501cdf7b3e790ffb9168eebb753bc5ca1dca04a",
+      "boundary_review_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/evidence/STEP_03_EXACT_BOUNDARIES/top_boundary_review.png",
+      "boundary_review_sha256": "3b5e07e5fd71f1be11f381ab70a4298085e9247be145bbe1326ead9fb07c4faf",
+      "capture_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/evidence/STEP_03_COMPLETE_HAMMER_SCANLINES/top_complete_hammer_scanlines.json.gz",
+      "capture_file_sha256": "731272c89dae717b646f067e5337c14de0781ec11e01858efe50655aaa222d94",
+      "selected_rgba_sha256": "18824c0e99da5f1578bcf2779b1f6d50edbe428d84d3cba4f72493db26de6661",
+      "decoded_membership_sha256": "6c5e3d59ee793872d0fb8b70b7f29e16d4b70e4890af37dd62c6593a6f84896f",
+      "exact_selected_pixel_count": 383863,
+      "padding_pixels": 0,
+      "pixel_exact": true
+    },
+    {
+      "id": "bottom",
+      "source_path": "Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_BOTTOM_A01.png",
+      "source_file_sha256": "d2a32732fd480a0556e882e304bcfbff1dd82d0a913ad4c36117109406de988e",
+      "source_decoded_rgb_sha256": "7c34df345094f0ab9b2ba914539b5da3f911ef9d7999dff533486e4bd638b848",
+      "canvas_pixels": [
+        1536,
+        1024
+      ],
+      "corner_median_luma_twice": 498,
+      "foreground_luma_max_twice": 458,
+      "candidate_component_count": 5,
+      "rejected_edge_component_count": 0,
+      "selected_component_pixel_count": 374341,
+      "rectangle_half_open": [
+        277,
+        308,
+        1252,
+        770
+      ],
+      "annotation_exclusion_color_core_rectangle_half_open": [
+        275,
+        304,
+        1255,
+        774
+      ],
+      "center_edge_pixels_exact": {
+        "x": {
+          "numerator": 1529,
+          "denominator": 2,
+          "display_decimal": "764.500000000000"
+        },
+        "y": {
+          "numerator": 539,
+          "denominator": 1,
+          "display_decimal": "539.000000000000"
+        }
+      },
+      "selection_rule": "integer luma=(77R+150G+29B)>>8; threshold 2*luma<=corner_median_twice-40; fixed chroma>=16 and luma<220 core derives a 4-pixel-expanded object-only envelope excluding neutral annotations; greatest original eligible 8-connected component inside that envelope supplies exact pixels",
+      "crop_width": 975,
+      "crop_height": 462,
+      "crop_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/evidence/STEP_03_EXACT_CROPS/bottom/bottom_object_region.png",
+      "crop_file_sha256": "1d4cd6b45e29fe771d1b5432bcf1e65ee4b62dc7188e22dd1bab667ae2f028f0",
+      "crop_decoded_rgb_sha256": "29d475db802fc4a8b9a12714d9b31179714f92d1e929f29569a96405f5da7bab",
+      "boundary_review_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/evidence/STEP_03_EXACT_BOUNDARIES/bottom_boundary_review.png",
+      "boundary_review_sha256": "fda6e6dc733e72643c2dfc66d5f0194ace5ecca59bbebfb272ee91c114988a84",
+      "capture_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/evidence/STEP_03_COMPLETE_HAMMER_SCANLINES/bottom_complete_hammer_scanlines.json.gz",
+      "capture_file_sha256": "da989819826b07e09049e422487a1bb5590dce576796be204c019bec2916ba11",
+      "selected_rgba_sha256": "eef3c1a3105c15c080487f77f3b5a7b9dbd3b74baf17e16ff4f418573b32d9f0",
+      "decoded_membership_sha256": "2a33164e799a2df467a984a3596dca0721354caccc4ed0db2f78c70a955288a3",
+      "exact_selected_pixel_count": 374341,
+      "padding_pixels": 0,
+      "pixel_exact": true
+    }
+  ],
+  "source_pixels_modified": false,
+  "resize_filter_cleanup_recolor_rotation": false,
+  "geometry_created": false,
+  "review": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/review/STEP_03_EXACT_SOURCE_DECOMPOSITION_REVIEW.png",
+  "review_sha256": "51902061bc891bb6a0f40296bee01a80e174215cf7db1f9c3ea9e4d366659585"
+}

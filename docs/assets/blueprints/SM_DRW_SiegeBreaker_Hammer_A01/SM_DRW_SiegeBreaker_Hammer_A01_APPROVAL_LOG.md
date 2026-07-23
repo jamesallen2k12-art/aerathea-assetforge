@@ -1153,3 +1153,78 @@
   `select Hammer A / select Hammer B / revise / reject / blocked`.
 - FBX / Unreal / LOD / collision / game-ready authority:
   `false / false / false / false / false`.
+
+## A12 R10 R8 Stretched-Candidate Rejection And Exact Steps 01-16 Authority
+
+- Date: `2026-07-23`.
+- Flamestrike rejection:
+  both correct-axis candidates stretched source pixels and were not
+  pixel-perfect.
+- Rejected candidate status:
+  `invalid / quarantined`.
+- Proven scale defect:
+  rune `0.213873492060 cm/px`; metal `0.170791062005 cm/px`; relative rune
+  enlargement `25.225225225%`.
+- Flamestrike direction:
+  scan the hammer pixel-for-pixel from every new orthographic side, derive the
+  dimensions from the new pixels, and execute yesterday's documented Steps
+  01-16 exactly with only the new data substituted.
+- Intermediate theory approval:
+  not required within the exact authorized run.
+- Active contract:
+  `steps/A12_R10_R8_PIXEL_EXACT_STEPS01_16_A01_CONTRACT.md`.
+- Required final stop:
+  visibly present the completed final comparison image for Flamestrike.
+- Unreal / Fully game-ready authority:
+  `false / false`.
+
+## A12 R10 R8 Pixel-Exact Steps 01-16 Final Candidate Result
+
+- Date: `2026-07-23`.
+- Run:
+  `SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01`.
+- Exact selected source pixels replayed:
+  `1,544,766`; membership and RGBA equality passed independently.
+- Governing scale:
+  one uniform scale per complete view; `170 cm` is the only external anchor.
+- Shared width / height:
+  `97.873941674506 x 170.000000000000 cm`.
+- Hammer A, rune-side half `[557,668)`:
+  `34.434306569343 cm` completed depth; `7,924` LOD0 triangles.
+- Hammer B, metal-center-piece half `[418,557)`:
+  `43.120437956204 cm` completed depth; `7,888` LOD0 triangles.
+- Both candidates:
+  watertight LOD0; LOD1-LOD3; two collision proxies; FBX; GLB; clean FBX
+  reimport; exact `x=557`; one Rz180; exact `pi/2` haft wrap; clean Run A/Run
+  B canonical equality.
+- Aggregate Step gates:
+  Step 12 `28/28`; Step 13 `8/8`; Step 14 `4/4`; Step 15 `16/16`; Step 16
+  `29/29`.
+- Independent direct saved-file audit:
+  `66/66 PASS`.
+- Final review SHA-256:
+  `49c787696eefba99a38498b7181342124d0402f48cbac8932c838b77eefc0bfe`.
+- Artifact status:
+  `two DCC game-ready candidates pending Flamestrike final visual approval`.
+- Pending decision:
+  `select Hammer A / select Hammer B / revise / reject / blocked`.
+- Unreal / Fully game-ready authority:
+  `false / false`.
+
+## 2026-07-23 — Final Board Rejected; Zero-Extrusion Recovery Save Approved
+
+- Flamestrike rejected the final board because the reconstruction is an
+  extrusion.
+- Flamestrike clarified that yesterday's successful process uses zero
+  extrusions.
+- Steps 10-16 and the presented final board are reclassified
+  `invalid / quarantined`.
+- The last valid state is the exact new-image evidence through Step 09.
+- Flamestrike explicitly requested a reset savepoint containing the exact
+  previous instructions for the next agent, with only the new image dimensions
+  substituted and no deviation.
+- Authoritative next-agent handoff:
+  `handoffs/A12_R10_R8_ZERO_EXTRUSION_RESET_HANDOFF.md`.
+- This approval authorizes preservation and reset handoff only. No geometry,
+  render, export, Unreal, or game-ready escalation is authorized in this
+  savepoint action.

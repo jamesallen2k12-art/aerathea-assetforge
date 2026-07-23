@@ -1,0 +1,28 @@
+{
+  "schema": "AERATHEA_STEPS_01_16_STATE_V1",
+  "run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
+  "current_step": "CORE_RECOVERY_AFTER_STEP_09",
+  "completed_steps": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "08",
+    "09"
+  ],
+  "state": "blocked_at_step_10_after_extrusion_method_drift",
+  "illegal_skip_detected": true,
+  "method_deviation_detected": true,
+  "intermediate_approval_required": false,
+  "final_flamestrike_decision_required": false,
+  "production_authority": false,
+  "unreal_authority": false,
+  "fully_game_ready": false,
+  "last_valid_validation": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_09_INDEPENDENT_AUDIT.json",
+  "last_valid_data_audit": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_09_PRE_GEOMETRY_EXACT_DATA_AUDIT.json",
+  "recovery_record": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEPS_10_16_EXTRUSION_METHOD_DRIFT_RECOVERY.md",
+  "rejected_final_review": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/review/STEP_16_FINAL/STEP_16_R8_PIXEL_EXACT_TWO_HAMMER_FINAL_REVIEW.png"
+}

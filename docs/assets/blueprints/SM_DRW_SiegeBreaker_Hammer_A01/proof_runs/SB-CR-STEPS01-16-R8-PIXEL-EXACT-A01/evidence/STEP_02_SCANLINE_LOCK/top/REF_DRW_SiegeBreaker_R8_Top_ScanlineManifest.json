@@ -1,0 +1,23 @@
+{
+  "format": "AET_RGB_SCANLINE_V1",
+  "asset_id": "REF_DRW_SiegeBreaker_R8_Top",
+  "source": "Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_TOP_A01.png",
+  "target_image": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/evidence/STEP_02_SCANLINE_LOCK/top/REF_DRW_SiegeBreaker_R8_Top_ScanTarget.png",
+  "scan_record": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/evidence/STEP_02_SCANLINE_LOCK/top/REF_DRW_SiegeBreaker_R8_Top.rgbscan.gz",
+  "rebuilt_image": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/evidence/STEP_02_SCANLINE_LOCK/top/REF_DRW_SiegeBreaker_R8_Top_RebuiltFromScanlines.png",
+  "difference_image": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/evidence/STEP_02_SCANLINE_LOCK/top/REF_DRW_SiegeBreaker_R8_Top_Difference.png",
+  "width": 1536,
+  "height": 1024,
+  "scanlines": 1024,
+  "rgb_bytes": 4718592,
+  "scan_sha256": "d248f565b801d60c1aaed59b196aac5f7dc3cb18e900eec2b32d9f4991e779c6",
+  "target_pixel_sha256": "d248f565b801d60c1aaed59b196aac5f7dc3cb18e900eec2b32d9f4991e779c6",
+  "rebuild_pixel_sha256": "d248f565b801d60c1aaed59b196aac5f7dc3cb18e900eec2b32d9f4991e779c6",
+  "max_rgb_delta": 0,
+  "changed_pixels": 0,
+  "mean_grayscale_delta": 0.0,
+  "first_row_sha256": "4cf13010e67e00db044594d8df4892d56be1977af32d224a66fb507074660962",
+  "middle_row_sha256": "6ce9ba94bb22ef6151d30c7f99bb968dc5f5b4394d1289628e8421c7ad82c01b",
+  "last_row_sha256": "9ecc5e6b7001161a10dfb561b1c4992ae13656ca54e844ee15ce95d9e713d61f",
+  "pixel_exact": true
+}

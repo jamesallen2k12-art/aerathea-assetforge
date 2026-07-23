@@ -1,0 +1,139 @@
+{
+  "schema": "AERATHEA_STEP03_INDEPENDENT_AUDIT_V1",
+  "run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
+  "artifact_status": "proof only",
+  "builder_not_imported": true,
+  "selector_recomputed": true,
+  "every_selected_location_and_rgba_replayed": true,
+  "observed": {
+    "front": {
+      "rectangle_half_open": [
+        256,
+        208,
+        868,
+        1271
+      ],
+      "selected_pixel_count": 247844,
+      "membership_sha256": "c4c135ce63088fa59416d76d31c66e968904571b2eecb124c7c144f51e93433b",
+      "selected_rgba_sha256": "2a61e2004ccb31e603498c0308e93e606261fe9d9a2714968e082dad7ce13ab7"
+    },
+    "back": {
+      "rectangle_half_open": [
+        253,
+        204,
+        870,
+        1266
+      ],
+      "selected_pixel_count": 250209,
+      "membership_sha256": "f011b2583644b6c9e1ba53b9154277bec5a0ae12f3535b24350be50d95f4d3e0",
+      "selected_rgba_sha256": "5f2c3a1ee57d4695568a9979a2dd7befa6014133f24462f648295b22d4726731"
+    },
+    "left": {
+      "rectangle_half_open": [
+        448,
+        165,
+        706,
+        1261
+      ],
+      "selected_pixel_count": 146324,
+      "membership_sha256": "f1e022c197020ce9e2f9f59da83edf57be8ca26ea708dc44f5732ba07972686c",
+      "selected_rgba_sha256": "7456fb1956d8a1530baf1053b87bd073ae414536f7b64ca80e2dca7c4270b8a9"
+    },
+    "right": {
+      "rectangle_half_open": [
+        418,
+        166,
+        668,
+        1262
+      ],
+      "selected_pixel_count": 142185,
+      "membership_sha256": "500999c52510637380f0c2469c35ed2902a938ac5b3d0099bb46895a5990fcf3",
+      "selected_rgba_sha256": "5f855ad51779a9378d75dc3a5e324488a2e1bd210942aee0032bc632bf08e20b"
+    },
+    "top": {
+      "rectangle_half_open": [
+        280,
+        305,
+        1253,
+        788
+      ],
+      "selected_pixel_count": 383863,
+      "membership_sha256": "6c5e3d59ee793872d0fb8b70b7f29e16d4b70e4890af37dd62c6593a6f84896f",
+      "selected_rgba_sha256": "18824c0e99da5f1578bcf2779b1f6d50edbe428d84d3cba4f72493db26de6661"
+    },
+    "bottom": {
+      "rectangle_half_open": [
+        277,
+        308,
+        1252,
+        770
+      ],
+      "selected_pixel_count": 374341,
+      "membership_sha256": "2a33164e799a2df467a984a3596dca0721354caccc4ed0db2f78c70a955288a3",
+      "selected_rgba_sha256": "eef3c1a3105c15c080487f77f3b5a7b9dbd3b74baf17e16ff4f418573b32d9f0"
+    }
+  },
+  "checks": {
+    "front_source_hash": true,
+    "front_rectangle_recomputed": true,
+    "front_membership_recomputed": true,
+    "front_membership_hash": true,
+    "front_selected_rgba_hash": true,
+    "front_pixel_count": true,
+    "front_crop_hash": true,
+    "front_no_padding": true,
+    "front_every_capture_pixel_matches_source": true,
+    "back_source_hash": true,
+    "back_rectangle_recomputed": true,
+    "back_membership_recomputed": true,
+    "back_membership_hash": true,
+    "back_selected_rgba_hash": true,
+    "back_pixel_count": true,
+    "back_crop_hash": true,
+    "back_no_padding": true,
+    "back_every_capture_pixel_matches_source": true,
+    "left_source_hash": true,
+    "left_rectangle_recomputed": true,
+    "left_membership_recomputed": true,
+    "left_membership_hash": true,
+    "left_selected_rgba_hash": true,
+    "left_pixel_count": true,
+    "left_crop_hash": true,
+    "left_no_padding": true,
+    "left_every_capture_pixel_matches_source": true,
+    "right_source_hash": true,
+    "right_rectangle_recomputed": true,
+    "right_membership_recomputed": true,
+    "right_membership_hash": true,
+    "right_selected_rgba_hash": true,
+    "right_pixel_count": true,
+    "right_crop_hash": true,
+    "right_no_padding": true,
+    "right_every_capture_pixel_matches_source": true,
+    "top_source_hash": true,
+    "top_rectangle_recomputed": true,
+    "top_membership_recomputed": true,
+    "top_membership_hash": true,
+    "top_selected_rgba_hash": true,
+    "top_pixel_count": true,
+    "top_crop_hash": true,
+    "top_no_padding": true,
+    "top_every_capture_pixel_matches_source": true,
+    "bottom_source_hash": true,
+    "bottom_rectangle_recomputed": true,
+    "bottom_membership_recomputed": true,
+    "bottom_membership_hash": true,
+    "bottom_selected_rgba_hash": true,
+    "bottom_pixel_count": true,
+    "bottom_crop_hash": true,
+    "bottom_no_padding": true,
+    "bottom_every_capture_pixel_matches_source": true,
+    "six_views": true,
+    "source_pixels_unmodified": true,
+    "no_resize_or_rotation": true,
+    "no_geometry": true
+  },
+  "pass_count": 58,
+  "check_count": 58,
+  "result": "PASS"
+}

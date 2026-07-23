@@ -1,0 +1,23 @@
+{
+  "format": "AET_RGB_SCANLINE_V1",
+  "asset_id": "REF_DRW_SiegeBreaker_Concept",
+  "source": "SourceAssets/Concepts/SiegeBreaker/siege_breaker_concept_view.png",
+  "target_image": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/evidence/STEP_02_SCANLINE_LOCK/concept/REF_DRW_SiegeBreaker_Concept_ScanTarget.png",
+  "scan_record": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/evidence/STEP_02_SCANLINE_LOCK/concept/REF_DRW_SiegeBreaker_Concept.rgbscan.gz",
+  "rebuilt_image": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/evidence/STEP_02_SCANLINE_LOCK/concept/REF_DRW_SiegeBreaker_Concept_RebuiltFromScanlines.png",
+  "difference_image": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/evidence/STEP_02_SCANLINE_LOCK/concept/REF_DRW_SiegeBreaker_Concept_Difference.png",
+  "width": 1122,
+  "height": 1402,
+  "scanlines": 1402,
+  "rgb_bytes": 4719132,
+  "scan_sha256": "23306feaadd9ab3e3492f73d389507a5662a547b580788ebf80d61af879694cf",
+  "target_pixel_sha256": "23306feaadd9ab3e3492f73d389507a5662a547b580788ebf80d61af879694cf",
+  "rebuild_pixel_sha256": "23306feaadd9ab3e3492f73d389507a5662a547b580788ebf80d61af879694cf",
+  "max_rgb_delta": 0,
+  "changed_pixels": 0,
+  "mean_grayscale_delta": 0.0,
+  "first_row_sha256": "4dd454bdff1b5273c1cbb574c682d7c78e1f9d0dfd3bca09ed893881aa99f821",
+  "middle_row_sha256": "8bee4c984c8f26dcd00a485a652017ef73b8e07752a3afacdbc33fc9d87a1e2b",
+  "last_row_sha256": "48eb606912c3f65f6dedd79c8f23638a0e624425c4cf42f046317f0a8c66fd06",
+  "pixel_exact": true
+}

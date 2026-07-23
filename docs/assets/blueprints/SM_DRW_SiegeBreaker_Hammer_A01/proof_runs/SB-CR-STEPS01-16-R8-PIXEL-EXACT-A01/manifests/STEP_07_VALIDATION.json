@@ -1,0 +1,25 @@
+{
+  "schema": "AERATHEA_STEP_VALIDATION_V1",
+  "run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
+  "step": "07",
+  "result": "PASS",
+  "checks_passed": 12,
+  "checks_total": 12,
+  "checks": {
+    "left_replay_exact": true,
+    "right_replay_exact": true,
+    "side_scales_independent_of_front": true,
+    "left_right_scale_from_own_heights": true,
+    "bisection_exact_557": true,
+    "right_bounds_not_silently_recentered": true,
+    "rune_span_111": true,
+    "metal_span_139": true,
+    "unequal_spans_preserved": true,
+    "review_exists": true,
+    "no_stretch": true,
+    "no_geometry": true
+  },
+  "left_manifest_sha256": "7d099a11fb5566059bf0caaeaa353c479a531acff78fac6a9bedbeea739eb3f1",
+  "right_manifest_sha256": "977831e86b02148125a7e1a04024d2d114721590ebf63937bdd314d02cc427c9",
+  "review_sha256": "1d1a28dbcff4ddddbfbfcc3c3fa68dd2fd4053022dc551fb287e66a6b636a33e"
+}

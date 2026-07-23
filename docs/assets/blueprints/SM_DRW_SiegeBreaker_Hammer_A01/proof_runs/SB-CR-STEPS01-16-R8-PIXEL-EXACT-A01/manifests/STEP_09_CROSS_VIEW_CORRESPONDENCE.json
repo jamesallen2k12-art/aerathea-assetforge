@@ -1,0 +1,18 @@
+{
+  "schema": "AERATHEA_R8_CROSS_VIEW_CORRESPONDENCE_V1",
+  "run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
+  "status": "candidate pending Step 10 deterministic rules",
+  "directly_corresponding": [
+    "overall vertical extent front/back/left/right",
+    "head, coupler, haft, ferrule, grip, collar, pommel order",
+    "blue focal diamond family"
+  ],
+  "not_exactly_corresponding": [
+    "DX001",
+    "DX002",
+    "DX003",
+    "DX004",
+    "DX005"
+  ],
+  "hidden_surface_correspondence": "unresolved until Step 10"
+}

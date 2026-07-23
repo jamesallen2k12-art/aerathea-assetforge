@@ -1,0 +1,19 @@
+{
+  "schema": "AERATHEA_STEP_VALIDATION_V1",
+  "run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
+  "step": "13",
+  "decision": "Immutable geometry and artistic review",
+  "result": "PASS",
+  "checks_passed": 8,
+  "checks_total": 8,
+  "checks": {
+    "rune_six_clay_views": true,
+    "rune_geometry_immutable": true,
+    "rune_monumental_read": true,
+    "rune_dwarven_layered_focal_hierarchy": true,
+    "metal_six_clay_views": true,
+    "metal_geometry_immutable": true,
+    "metal_monumental_read": true,
+    "metal_dwarven_layered_focal_hierarchy": true
+  }
+}

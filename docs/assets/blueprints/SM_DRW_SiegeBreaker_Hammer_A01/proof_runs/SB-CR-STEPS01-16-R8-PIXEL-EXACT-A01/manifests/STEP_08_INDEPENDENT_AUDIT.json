@@ -1,0 +1,21 @@
+{
+  "schema": "AERATHEA_INDEPENDENT_AUDIT_V1",
+  "step": "08",
+  "result": "PASS",
+  "checks_passed": 8,
+  "checks_total": 8,
+  "checks": {
+    "top_source_replayed": true,
+    "bottom_source_replayed": true,
+    "top_exact_runs_retained": true,
+    "bottom_exact_runs_retained": true,
+    "top_bottom_distinct": true,
+    "top_uniform_scale": true,
+    "bottom_uniform_scale": true,
+    "footprint_rule_source_owned": true
+  },
+  "evidence": {
+    "top_sha256": "5925dee1ab39a0535150804a4353157b17d51fec648791774808c9c832dd8b36",
+    "bottom_sha256": "aea70d998dabe9f28d3ec5fb44a2d2206f8874096a3d33ee9b836074b2ede9a2"
+  }
+}

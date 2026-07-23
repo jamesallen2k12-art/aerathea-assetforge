@@ -1,0 +1,233 @@
+{
+  "schema": "AERATHEA_R8_PIXEL_WORLD_REGISTRATION_V1",
+  "run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
+  "step": "05",
+  "artifact_status": "authoritative",
+  "pixel_convention": {
+    "coordinates": "integer half-open source pixel edges",
+    "sample_location": "(x+1/2,y+1/2)",
+    "source_origin": "upper left",
+    "source_x": "right",
+    "source_y": "down"
+  },
+  "world_frame": {
+    "pivot_cm": [
+      0,
+      0,
+      0
+    ],
+    "pivot": "bottom-center terminal/pommel",
+    "axes": {
+      "+X": "head right",
+      "+Y": "back",
+      "+Z": "up"
+    },
+    "assembly_axis": "world Z through right-source diamond center x=557"
+  },
+  "only_external_anchor_cm": {
+    "numerator": 170,
+    "denominator": 1,
+    "display_decimal": "170.000000000000"
+  },
+  "view_uniform_scales_cm_per_pixel": {
+    "front": {
+      "scale_x": {
+        "numerator": 170,
+        "denominator": 1063,
+        "display_decimal": "0.159924741298"
+      },
+      "scale_y": {
+        "numerator": 170,
+        "denominator": 1063,
+        "display_decimal": "0.159924741298"
+      }
+    },
+    "back": {
+      "scale_x": {
+        "numerator": 85,
+        "denominator": 531,
+        "display_decimal": "0.160075329567"
+      },
+      "scale_y": {
+        "numerator": 85,
+        "denominator": 531,
+        "display_decimal": "0.160075329567"
+      }
+    },
+    "left": {
+      "scale_x": {
+        "numerator": 85,
+        "denominator": 548,
+        "display_decimal": "0.155109489051"
+      },
+      "scale_y": {
+        "numerator": 85,
+        "denominator": 548,
+        "display_decimal": "0.155109489051"
+      }
+    },
+    "right": {
+      "scale_x": {
+        "numerator": 85,
+        "denominator": 548,
+        "display_decimal": "0.155109489051"
+      },
+      "scale_y": {
+        "numerator": 85,
+        "denominator": 548,
+        "display_decimal": "0.155109489051"
+      }
+    },
+    "top": {
+      "scale_x": {
+        "numerator": 52020,
+        "denominator": 517681,
+        "display_decimal": "0.100486593095"
+      },
+      "scale_y": {
+        "numerator": 52020,
+        "denominator": 517681,
+        "display_decimal": "0.100486593095"
+      }
+    },
+    "bottom": {
+      "scale_x": {
+        "numerator": 52020,
+        "denominator": 517681,
+        "display_decimal": "0.100486593095"
+      },
+      "scale_y": {
+        "numerator": 52020,
+        "denominator": 517681,
+        "display_decimal": "0.100486593095"
+      }
+    }
+  },
+  "centers_source_edges": {
+    "front": {
+      "numerator": 562,
+      "denominator": 1,
+      "display_decimal": "562.000000000000"
+    },
+    "back": {
+      "numerator": 1123,
+      "denominator": 2,
+      "display_decimal": "561.500000000000"
+    },
+    "left": {
+      "numerator": 577,
+      "denominator": 1,
+      "display_decimal": "577.000000000000"
+    },
+    "right_object": {
+      "numerator": 543,
+      "denominator": 1,
+      "display_decimal": "543.000000000000"
+    },
+    "right_rotation": {
+      "numerator": 557,
+      "denominator": 1,
+      "display_decimal": "557.000000000000"
+    },
+    "top_x": {
+      "numerator": 1533,
+      "denominator": 2,
+      "display_decimal": "766.500000000000"
+    },
+    "top_y": {
+      "numerator": 1093,
+      "denominator": 2,
+      "display_decimal": "546.500000000000"
+    },
+    "bottom_x": {
+      "numerator": 1529,
+      "denominator": 2,
+      "display_decimal": "764.500000000000"
+    },
+    "bottom_y": {
+      "numerator": 539,
+      "denominator": 1,
+      "display_decimal": "539.000000000000"
+    }
+  },
+  "coordinate_equations": {
+    "front": "X=(x-562)*170/1063; Z=(1271-y)*170/1063",
+    "back": "X=(1123/2-x)*170/1062; Z=(1266-y)*170/1062",
+    "left": "Y=(577-x)*170/1096; Z=(1261-y)*170/1096",
+    "right_rotation": "Y=(x-557)*170/1096; Z=(1262-y)*170/1096",
+    "top": "X=(x-1533/2)*Saxial; Y=(y-1093/2)*Saxial",
+    "bottom": "X=(1529/2-x)*Saxial; Y=(539-y)*Saxial"
+  },
+  "derived_overall_dimensions_cm": {
+    "width_front_owned": {
+      "numerator": 104040,
+      "denominator": 1063,
+      "display_decimal": "97.873941674506"
+    },
+    "depth_centered_top_bottom_owned": {
+      "numerator": 24579450,
+      "denominator": 517681,
+      "display_decimal": "47.479915237376"
+    },
+    "length_anchor": {
+      "numerator": 170,
+      "denominator": 1,
+      "display_decimal": "170.000000000000"
+    }
+  },
+  "observed_comparison_consequences_cm": {
+    "back_width": {
+      "numerator": 52445,
+      "denominator": 531,
+      "display_decimal": "98.766478342750"
+    },
+    "left_depth": {
+      "numerator": 10965,
+      "denominator": 274,
+      "display_decimal": "40.018248175182"
+    },
+    "right_depth_about_object_bounds": {
+      "numerator": 10625,
+      "denominator": 274,
+      "display_decimal": "38.777372262774"
+    },
+    "top_depth_at_common_axial_scale": {
+      "numerator": 25125660,
+      "denominator": 517681,
+      "display_decimal": "48.535024464873"
+    },
+    "bottom_depth_at_common_axial_scale": {
+      "numerator": 24033240,
+      "denominator": 517681,
+      "display_decimal": "46.424806009879"
+    }
+  },
+  "right_candidate_halves": {
+    "rune_side": {
+      "interval_half_open": [
+        557,
+        668
+      ],
+      "span_pixels": 111,
+      "completed_depth_cm": {
+        "numerator": 9435,
+        "denominator": 274,
+        "display_decimal": "34.434306569343"
+      }
+    },
+    "metal_center_piece_side": {
+      "interval_half_open": [
+        418,
+        557
+      ],
+      "span_pixels": 139,
+      "completed_depth_cm": {
+        "numerator": 11815,
+        "denominator": 274,
+        "display_decimal": "43.120437956204"
+      }
+    }
+  },
+  "no_stretch": true,
+  "source_pixels_modified": false
+}

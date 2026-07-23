@@ -1,15 +1,42 @@
 # SM_DRW_SiegeBreaker_Hammer_A01 Reset / Resume State
 
-- Active approved route: `none; Core Recovery inside A12 R7 Step 01`
-- Plan: `SM_DRW_SiegeBreaker_Hammer_A01_A12_R7_COMPONENT_GEOMETRY_RECOVERY_PLAN.md` (`authoritative staged route; paused`)
-- Active contract: `none; Step 01 candidate quarantined after axial internal-registration conflict`
-- Current state: `R7 Step 01 quarantined; A12 R8 six-view visual references saved with positive feedback but invalid pixel ratios`
-- Next approved activity: `none; a dimension-locked physical-master/six-camera contract requires Flamestrike approval or revision`
-- Source processing authorized now: `true only for the immutable six-view evidence and exact R6 ownership rules`
+- Active approved route: `Core Recovery at the last valid Step 09 dataset`
+- Plan: `SM_DRW_SiegeBreaker_Hammer_A01_STEPS_01_16_PROOF_OF_CONCEPT_PIPELINE_PLAN.md`
+- Active contract: `SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01; Steps 10-16 invalid`
+- Current state: `Core Recovery; exact new-image evidence valid through Step 09 only`
+- Next approved activity: `resume from the zero-extrusion reset handoff; no geometry before the exact prior method is bound to the new measurements`
+- Source processing authorized now: `false; preserve the exact Step 01-09 data`
 - Model inference authorized now: `false`
-- DCC production authorized now: `false`
+- DCC production authorized now: `false until the zero-extrusion method gate passes`
 - Unreal authority: `false`
 - Fully game-ready: `false`
+
+## 2026-07-23 Zero-Extrusion Core Recovery Savepoint
+
+- Flamestrike rejected the presented final board and identified the controlling
+  defect: the model is an extrusion, while yesterday's proven mathematical
+  reconstruction process uses zero extrusions.
+- Last Core-valid state:
+  `SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01` Steps 01-09, including all six exact
+  pixel/color scanline captures, registrations, measurements, and the
+  pre-geometry exact-data audit.
+- First drift:
+  Step 10/11 silently replaced the approved component-equation process with a
+  generalized cross-section blueprint. Step 12 implemented that unauthorized
+  method as rectangular head slices and a simplified wrapped handle.
+- Affected outputs:
+  every Step 10-16 decision, blueprint, mesh, UV/material candidate, LOD,
+  collision proxy, export, render, review board, validation, audit, and
+  game-ready implication in the R8 pixel-exact run.
+- Artifact status:
+  Steps 10-16 and the final board are `invalid / quarantined`; their technical
+  checks are `proof only` for internal consistency of the wrong method.
+- Required reset handoff:
+  `handoffs/A12_R10_R8_ZERO_EXTRUSION_RESET_HANDOFF.md`.
+- Recovery rule:
+  do not repair the extrusion forward. Re-enter from the exact Step 09 data and
+  replay the approved component-by-component non-extrusion process with only
+  the new image measurements substituted.
 
 ## Last Core-Valid State
 
@@ -188,40 +215,81 @@
 - Flamestrike said the visible set `looks great` and requested a reset-safe save
   point. Exact hash-matched copies are preserved under
   `Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/`
-  as `reference only`; no visual-canon or pixel-authority promotion occurred.
+  unchanged. Flamestrike clarified on `2026-07-23` that R8 exists only for
+  centerline, axis, rotation, and duplication accuracy. Its silhouette,
+  component shapes, materials, colors, and printed dimensions are not
+  reconstruction authority.
+- The original six source images remain the detailed pixel-measurement
+  authority. A11 remains outer-footprint and scale authority. R7 remains the
+  governing staged mathematical-reconstruction route.
+- R9 changed that method into a hand-interpreted physical master inside an
+  outer envelope. Its bounding-box and camera-span checks did not prove a
+  source-measured reconstruction.
+- The R9 contract is `quarantined approved historical scope; invalid method for
+  the clarified project goal`.
+- A01 was the only attempt inside the explicit R9 attempt boundary. Proceeding
+  to A02 after A01 failed was the first execution-scope drift action. A02-A05
+  were not separately approved.
+- R9 A01-A05, their Blender sources, ledgers, renders, boards, packages, and
+  tools are `quarantined`; A04's review package remains `invalid`.
+- R9 A05 is `invalid as source-measured mathematical reconstruction`. Its
+  world-bounds, camera, closed-volume, and render-mask checks remain only
+  `proof only`.
+- Authoritative recovery record:
+  `manifests/A12_R9_CORE_RECOVERY_AND_SOURCE_RECONSTRUCTION_RESTORE.md`.
+- Executed measurement gate:
+  `steps/A12_R10_STEP01_SOURCE_MEASUREMENT_CENTERLINE_RECONCILIATION_CONTRACT.md`.
+- Flamestrike approved exact contract SHA
+  `c4243219c5f33bf039c082c0d8914b1c609908c86ebe92fd838a4ed389f0a844`.
+- R10 Step 01 output:
+  `manifests/A12_R10_STEP01_SOURCE_MEASUREMENT_CENTERLINE_A01.json`;
+  mechanical result `PASS`; production decision `BLOCKED`.
+- Independent replay audit:
+  `183/183 PASS` as `proof only`.
+- R10 preserves 15 lossless scanline captures, all original/R8 hashes, exact
+  source stations, raw residuals, 12 component statuses, and eight authority
+  blocks. It creates no corrected source image, fill, geometry, UV, or render.
+- Flamestrike approved the exact hash-locked R10 A01 measurement evidence as
+  authoritative within its declared scope. All eight blocks remain unresolved;
+  Step 02 and DCC authority remain false.
+- Flamestrike's haft wrapping direction is now authoritative for a future
+  Step 02 contract: true `5 cm` diameter cylinder, `2.5 cm` radius, exact
+  half-wrap scale `pi/2`, and
+  `X=r(z)cos(theta), Y=r(z)sin(theta)`. It was recorded but not executed.
 
 ## Active Method
 
-A12 R7 is the active staged recovery route:
+A12 R7's staged source-measured method is restored:
 
-`immutable six-view pixels -> approved component measurements -> explicit`
-`component-geometry contract -> isolated proofs -> physical half -> mirror`
+`original source pixels -> exact component measurements -> centerline and`
+`cross-view equations -> approved physical component construction ->`
+`fixed-camera source reprojection audit`
 
-Step 01 and the A12 R8 generated redraw are quarantined in Core Recovery. Exact
-six-view pixel authority now requires one dimension-locked physical master and
-six parallel-camera renders at one common scale. No prior invalid Siege Breaker
-geometry or generated orthographic is a construction input, and no geometry
-construction is presently authorized.
+The measurement-only step is complete and approved. The next decision is the
+resolution or explicit preservation of blocks `R10-S01-B01` through `B08`.
+No geometry follows automatically.
 
 ## Prohibited Software Boundary
 
 TRELLIS, TRELLIS.2, TripoSR, diffusion, generative-image, image-to-3D, and
-generated-view software are forbidden. Existing outputs from those methods are
-not R7 inputs. Blender is deferred until a later exact step contract is
-approved; A07 Gate 00 remains stopped and superseded.
+generated-view software remain forbidden. The existing R8 images may be read
+only for their declared centerline, axis, rotation, and duplication
+relationship. Blender is stopped until approved measurements are converted
+into a separately approved construction contract.
 
 ## Resume Instruction
 
 Read only the latest recovery journal/checkpoint, this reset state,
-`steps/A12_R6_A05_CORE_REASSESSMENT_AND_RECOVERY.md`, the approved R7 plan,
-`steps/A12_R7_STEP01_COMPONENT_REGISTRATION_A01_OUTPUT_RECORD.md`, and
-`manifests/A12_R7_STEP01_AXIAL_INTERNAL_REGISTRATION_CONFLICT_RECOVERY.md`, and
-`manifests/A12_R8_SIX_VIEW_ORTHOGRAPHIC_GENERATION_INTERNAL_REJECTIONS.md`, and
-`handoffs/A12_R8_SIX_VIEW_VISUAL_REFERENCE_RESET_HANDOFF.md`.
-Report that A05 A01-A03 remain invalid/quarantined, Step 01 is quarantined
-after Flamestrike's axial internal-registration findings, its `40/40` audit is
-proof only, the A12 R8 generated six-view set failed exact ratio checks, and
-DCC authority is false. Present the dimension-locked physical-master/six-camera
-contract gate and stop. Do not draft Step 02, alter a source image, run a
-builder, inspect or reuse an old blend, create geometry, export, enter Unreal,
-or use TRELLIS or any prohibited generation software before approval.
+`manifests/A12_R9_CORE_RECOVERY_AND_SOURCE_RECONSTRUCTION_RESTORE.md`,
+`steps/A12_R6_A05_CORE_REASSESSMENT_AND_RECOVERY.md`,
+`SM_DRW_SiegeBreaker_Hammer_A01_A12_R7_COMPONENT_GEOMETRY_RECOVERY_PLAN.md`,
+`manifests/A12_R7_STEP01_AXIAL_INTERNAL_REGISTRATION_CONFLICT_RECOVERY.md`,
+`manifests/A12_R8_SIX_VIEW_ORTHOGRAPHIC_GENERATION_INTERNAL_REJECTIONS.md`,
+and
+`steps/A12_R10_STEP01_SOURCE_MEASUREMENT_CENTERLINE_A01_APPROVAL_RECORD.md`.
+Report that R9 is quarantined, the original six sources own detailed
+measurements, R8 owns only centerline/rotation/duplication registration, and
+R10 A01 is approved authoritative measured evidence but remains `BLOCKED for
+construction` pending eight exact decisions. Do not run further source
+processing, measurement scripts, Blender, image generation, geometry, export,
+or Unreal until Flamestrike approves the next exact scope.

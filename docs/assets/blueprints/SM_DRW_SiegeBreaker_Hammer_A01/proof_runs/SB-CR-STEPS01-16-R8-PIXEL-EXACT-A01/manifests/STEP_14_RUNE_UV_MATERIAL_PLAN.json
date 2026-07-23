@@ -1,0 +1,19 @@
+{
+  "schema": "AERATHEA_R8_STEP14_UV_MATERIAL_PLAN_V1",
+  "run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
+  "variant": "rune",
+  "geometry_sha256": "28b6e43ccec90614e251059150f95bd76983b002103771c49bfe9d1043343d6c",
+  "uv0": "source-owned orthographic coordinates; unchanged full-resolution source PNGs; right half owns head side, front owns front/handle",
+  "uv1": "generated non-overlap lightmap channel during Unreal import; not used here",
+  "seams": "Rz180 seam and existing component contact A only",
+  "interpolation": "Closest",
+  "base_color": "immutable source RGB",
+  "normal": "flat DirectX proof normal; no geometry compensation",
+  "orm": "R=255 AO, G=178 roughness, B=72 metallic proof packing",
+  "emissive": "source blue threshold B>=100 and B-R>=20, zero expansion",
+  "slots": [
+    "right_source",
+    "front_source"
+  ],
+  "geometry_change_authorized": false
+}

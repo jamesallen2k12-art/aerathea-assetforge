@@ -1,0 +1,22 @@
+{
+  "schema": "AERATHEA_STEP_VALIDATION_V1",
+  "run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
+  "step": "11",
+  "result": "PASS",
+  "checks_passed": 8,
+  "checks_total": 8,
+  "checks": {
+    "manifest_entry_point_locked": true,
+    "old_construction_forbidden": true,
+    "two_variants": true,
+    "x557_in_construction": true,
+    "pi_formula_in_construction": true,
+    "lod0_to_lod3": true,
+    "three_material_sources": true,
+    "run_a_run_b_defined": true
+  },
+  "artifact_sha256": {
+    "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_11_PRODUCTION_GEOMETRY_BLUEPRINT.json": "287eeac3efe2d3c974a019b6e68ed89fe9685979dbd663d79c972d15d60a51f2",
+    "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/review/STEP_11_PRODUCTION_BLUEPRINT_REVIEW.md": "9320548f6823945f6bc0df89f2137abafc4200fad98b3c33d65c7c21b0fae2c9"
+  }
+}

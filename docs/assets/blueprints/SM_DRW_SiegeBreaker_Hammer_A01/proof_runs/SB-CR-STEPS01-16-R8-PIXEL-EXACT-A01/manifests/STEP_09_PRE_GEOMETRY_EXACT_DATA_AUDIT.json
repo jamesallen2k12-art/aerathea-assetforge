@@ -1,0 +1,11 @@
+{
+  "schema": "AERATHEA_R8_PRE_GEOMETRY_EXACT_DATA_AUDIT_V1",
+  "run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
+  "result": "pass_with_explicit_blocks",
+  "reason": "all six sources are exact and independently registered, but their silhouettes are not one zero-XOR 3D dataset without the already approved Step 10 priority/completion rules",
+  "source_pixels_modified": false,
+  "component_scaling_used": false,
+  "image_warping_used": false,
+  "silent_priority_used": false,
+  "geometry_authorized": false
+}

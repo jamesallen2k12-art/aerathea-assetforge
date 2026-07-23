@@ -1,0 +1,25 @@
+{
+  "schema": "AERATHEA_INDEPENDENT_AUDIT_V1",
+  "step": "09",
+  "result": "PASS",
+  "checks_passed": 10,
+  "checks_total": 10,
+  "checks": {
+    "six_sources_replayed_directly": true,
+    "total_pixel_count_direct": true,
+    "index_total_matches_direct": true,
+    "source_hashes_match": true,
+    "membership_hashes_match": true,
+    "rgba_hashes_match": true,
+    "disagreements_explicit": true,
+    "valid_audit_result": true,
+    "geometry_block_preserved": true,
+    "no_warp_or_component_scale": true
+  },
+  "evidence": {
+    "integrated_sha256": "5a0a3eea8f877d55216f9efabe15b0ee1cf938e4c15a825a0e218f72ba76839a",
+    "matrix_sha256": "83c201059c9deee3bbb26429283cbfe50d2a47d4203f24e841e86a01d5e1c7b7",
+    "pre_geometry_audit_sha256": "260c79857fe059517b4076bcc65b538aef807a7be33a58a4a46edc32c2150fdb",
+    "direct_total_selected_pixels": 1544766
+  }
+}

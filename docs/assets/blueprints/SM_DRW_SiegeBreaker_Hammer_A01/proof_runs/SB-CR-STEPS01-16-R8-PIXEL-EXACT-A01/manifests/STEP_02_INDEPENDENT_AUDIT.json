@@ -1,0 +1,111 @@
+{
+  "schema": "AERATHEA_STEP02_INDEPENDENT_AUDIT_V1",
+  "run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
+  "artifact_status": "proof only",
+  "builder_not_imported": true,
+  "scan_records_replayed_directly": true,
+  "observed": {
+    "front": {
+      "width": 1122,
+      "height": 1402,
+      "rgb_bytes": 4719132,
+      "decoded_rgb_sha256": "0ad7e07fe8d5866e1a787b89954ecdb5c20d843ddd6219ff13a4fa16ddedaa98"
+    },
+    "back": {
+      "width": 1122,
+      "height": 1402,
+      "rgb_bytes": 4719132,
+      "decoded_rgb_sha256": "d388f3cb75fd8deeae19f78a48c6fdf4a35ae491248ac0c35525eab3c6190768"
+    },
+    "left": {
+      "width": 1122,
+      "height": 1402,
+      "rgb_bytes": 4719132,
+      "decoded_rgb_sha256": "9e996c5dbc1213f18adf1f9a7848c0a698b9775457ded751d0fb4fe5b989e5ad"
+    },
+    "right": {
+      "width": 1122,
+      "height": 1402,
+      "rgb_bytes": 4719132,
+      "decoded_rgb_sha256": "39659b53ffdb3c59c88a5894b3f901681df9c1d2fd995021c19992f8f10846a4"
+    },
+    "top": {
+      "width": 1536,
+      "height": 1024,
+      "rgb_bytes": 4718592,
+      "decoded_rgb_sha256": "d248f565b801d60c1aaed59b196aac5f7dc3cb18e900eec2b32d9f4991e779c6"
+    },
+    "bottom": {
+      "width": 1536,
+      "height": 1024,
+      "rgb_bytes": 4718592,
+      "decoded_rgb_sha256": "7c34df345094f0ab9b2ba914539b5da3f911ef9d7999dff533486e4bd638b848"
+    },
+    "concept": {
+      "width": 1122,
+      "height": 1402,
+      "rgb_bytes": 4719132,
+      "decoded_rgb_sha256": "23306feaadd9ab3e3492f73d389507a5662a547b580788ebf80d61af879694cf"
+    }
+  },
+  "checks": {
+    "front_source_file_hash": true,
+    "front_source_canvas": true,
+    "front_decoded_hash": true,
+    "front_replay_byte_count": true,
+    "front_replay_bytes_equal": true,
+    "front_replay_hash_equal": true,
+    "front_declared_zero_difference": true,
+    "back_source_file_hash": true,
+    "back_source_canvas": true,
+    "back_decoded_hash": true,
+    "back_replay_byte_count": true,
+    "back_replay_bytes_equal": true,
+    "back_replay_hash_equal": true,
+    "back_declared_zero_difference": true,
+    "left_source_file_hash": true,
+    "left_source_canvas": true,
+    "left_decoded_hash": true,
+    "left_replay_byte_count": true,
+    "left_replay_bytes_equal": true,
+    "left_replay_hash_equal": true,
+    "left_declared_zero_difference": true,
+    "right_source_file_hash": true,
+    "right_source_canvas": true,
+    "right_decoded_hash": true,
+    "right_replay_byte_count": true,
+    "right_replay_bytes_equal": true,
+    "right_replay_hash_equal": true,
+    "right_declared_zero_difference": true,
+    "top_source_file_hash": true,
+    "top_source_canvas": true,
+    "top_decoded_hash": true,
+    "top_replay_byte_count": true,
+    "top_replay_bytes_equal": true,
+    "top_replay_hash_equal": true,
+    "top_declared_zero_difference": true,
+    "bottom_source_file_hash": true,
+    "bottom_source_canvas": true,
+    "bottom_decoded_hash": true,
+    "bottom_replay_byte_count": true,
+    "bottom_replay_bytes_equal": true,
+    "bottom_replay_hash_equal": true,
+    "bottom_declared_zero_difference": true,
+    "concept_source_file_hash": true,
+    "concept_source_canvas": true,
+    "concept_decoded_hash": true,
+    "concept_replay_byte_count": true,
+    "concept_replay_bytes_equal": true,
+    "concept_replay_hash_equal": true,
+    "concept_declared_zero_difference": true,
+    "source_count_seven": true,
+    "metric_source_count_six": true,
+    "only_170_cm_scale_anchor": true,
+    "other_dimensions_deferred": true,
+    "source_bytes_unmodified": true,
+    "no_later_stage_output": true
+  },
+  "pass_count": 55,
+  "check_count": 55,
+  "result": "PASS"
+}

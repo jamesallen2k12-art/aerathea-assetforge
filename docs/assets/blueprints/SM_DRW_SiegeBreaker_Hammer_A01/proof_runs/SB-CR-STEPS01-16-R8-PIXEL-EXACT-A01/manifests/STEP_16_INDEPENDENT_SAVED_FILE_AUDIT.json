@@ -1,0 +1,325 @@
+{
+  "schema": "AERATHEA_INDEPENDENT_SAVED_FILE_AUDIT_V1",
+  "run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
+  "step": "16",
+  "result": "PASS",
+  "checks_passed": 66,
+  "checks_total": 66,
+  "checks": {
+    "rune_all_package_files_exist": true,
+    "rune_step12_two_lod0_components": true,
+    "rune_step12_watertight": true,
+    "rune_step12_no_uv": true,
+    "rune_step15_geometry_unchanged": true,
+    "rune_step15_uv_present": true,
+    "rune_step15_material_slots": true,
+    "rune_final_geometry_unchanged": true,
+    "rune_final_watertight_lod0": true,
+    "rune_lod0_cap": true,
+    "rune_lods_monotonic": true,
+    "rune_collision_count": true,
+    "rune_width_direct": true,
+    "rune_depth_direct": true,
+    "rune_height_direct": true,
+    "rune_pivot_direct": true,
+    "rune_scene_axis_557": true,
+    "rune_scene_one_rz180": true,
+    "rune_scene_pi_over_2": true,
+    "rune_scene_old_inputs_zero": true,
+    "rune_fbx_clean_reimport": true,
+    "rune_fbx_bounds": true,
+    "rune_glb2_valid": true,
+    "rune_render_front_nonblank": true,
+    "rune_render_back_nonblank": true,
+    "rune_render_left_nonblank": true,
+    "rune_render_right_nonblank": true,
+    "rune_render_color_3q_nonblank": true,
+    "rune_render_gray_3q_nonblank": true,
+    "metal_all_package_files_exist": true,
+    "metal_step12_two_lod0_components": true,
+    "metal_step12_watertight": true,
+    "metal_step12_no_uv": true,
+    "metal_step15_geometry_unchanged": true,
+    "metal_step15_uv_present": true,
+    "metal_step15_material_slots": true,
+    "metal_final_geometry_unchanged": true,
+    "metal_final_watertight_lod0": true,
+    "metal_lod0_cap": true,
+    "metal_lods_monotonic": true,
+    "metal_collision_count": true,
+    "metal_width_direct": true,
+    "metal_depth_direct": true,
+    "metal_height_direct": true,
+    "metal_pivot_direct": true,
+    "metal_scene_axis_557": true,
+    "metal_scene_one_rz180": true,
+    "metal_scene_pi_over_2": true,
+    "metal_scene_old_inputs_zero": true,
+    "metal_fbx_clean_reimport": true,
+    "metal_fbx_bounds": true,
+    "metal_glb2_valid": true,
+    "metal_render_front_nonblank": true,
+    "metal_render_back_nonblank": true,
+    "metal_render_left_nonblank": true,
+    "metal_render_right_nonblank": true,
+    "metal_render_color_3q_nonblank": true,
+    "metal_render_gray_3q_nonblank": true,
+    "final_board_hash_matches": true,
+    "final_board_nonblank": true,
+    "candidate_depths_unequal": true,
+    "package_no_stretch": true,
+    "package_no_candidate_scale": true,
+    "unreal_authority_false": true,
+    "fully_game_ready_false": true,
+    "negative_tamper_tests_pass": true
+  },
+  "evidence": {
+    "rune": {
+      "step12_geometry_sha256": "5c46cce118214edc623b2a1495cc099a70be0388b48a1d57b36f0aa5803d5b6f",
+      "step15_geometry_sha256": "5c46cce118214edc623b2a1495cc099a70be0388b48a1d57b36f0aa5803d5b6f",
+      "final_geometry_sha256": "5c46cce118214edc623b2a1495cc099a70be0388b48a1d57b36f0aa5803d5b6f",
+      "direct_bounds_cm": {
+        "min": [
+          -48.93696975708008,
+          -17.217153549194336,
+          0.0
+        ],
+        "max": [
+          48.93696975708008,
+          17.217153549194336,
+          170.0
+        ],
+        "dimensions": [
+          97.87393951416016,
+          34.43430709838867,
+          170.0
+        ]
+      },
+      "direct_topology": {
+        "C00_HEAD_RUNE_COMPLETE_RZ180": {
+          "nonmanifold_edges": 0,
+          "degenerate_faces": 0,
+          "triangles": 4868
+        },
+        "C01_HANDLE_A_TO_TERMINAL_COMPLETE_RZ180": {
+          "nonmanifold_edges": 0,
+          "degenerate_faces": 0,
+          "triangles": 3056
+        }
+      },
+      "direct_lod_triangles": {
+        "0": 7924,
+        "1": 3962,
+        "2": 1980,
+        "3": 990
+      },
+      "direct_collision_names": [
+        "UCX_SM_DRW_SiegeBreaker_Hammer_A01_HANDLE_00",
+        "UCX_SM_DRW_SiegeBreaker_Hammer_A01_HEAD_00"
+      ],
+      "fbx_sha256": "fab755fc0ae10576221552db06be851230e96efa717689d9df3db5e521e61cef",
+      "fbx_reimport_bounds_cm": {
+        "min": [
+          -48.93696975708008,
+          -17.217147827148438,
+          0.0
+        ],
+        "max": [
+          48.93696975708008,
+          17.217159271240234,
+          170.0
+        ],
+        "dimensions": [
+          97.87393951416016,
+          34.43430709838867,
+          170.0
+        ]
+      },
+      "glb_sha256": "086d2264032079ab7df41445432c6444a9e4b4e7d53fc090ce9b3f5660096797",
+      "glb": {
+        "version": 2,
+        "declared_length": 274752,
+        "actual_length": 274752,
+        "mesh_count": 10
+      },
+      "renders": {
+        "front": {
+          "sha256": "8d0d075e6d8c8cf03071675da2b771c182630c7a30e0c2c79a474931e1b4abf5",
+          "resolution": [
+            900,
+            1250
+          ],
+          "max_rgb_stddev": 64.27279124777682
+        },
+        "back": {
+          "sha256": "27a35994e8dd8c973e749bbde3e9ba138a53496498f4ee26d7496ead58f19a8c",
+          "resolution": [
+            900,
+            1250
+          ],
+          "max_rgb_stddev": 64.27283927602808
+        },
+        "left": {
+          "sha256": "438c930cfa703a477c62bfa432175974be94e8da083966ecf459dfa47793c1a7",
+          "resolution": [
+            900,
+            1250
+          ],
+          "max_rgb_stddev": 48.58404675519321
+        },
+        "right": {
+          "sha256": "84f983f8717b2a27b0b3fc6904d75501e454c5f9c511238c43014106d79a2804",
+          "resolution": [
+            900,
+            1250
+          ],
+          "max_rgb_stddev": 48.58399799058666
+        },
+        "color_3q": {
+          "sha256": "e60130544e34e697431f9ee3406caca574f89c982d190f183e921aa97102f30c",
+          "resolution": [
+            900,
+            1250
+          ],
+          "max_rgb_stddev": 61.250452447370755
+        },
+        "gray_3q": {
+          "sha256": "2bd8da0fc499c5aa36225b0442b87a762d06308a8826fd16d2860bc50e64fcb1",
+          "resolution": [
+            900,
+            1250
+          ],
+          "max_rgb_stddev": 35.16599961197769
+        }
+      }
+    },
+    "metal": {
+      "step12_geometry_sha256": "e7d2d1bcedc35044f3b6e98bd111b4534d204105c270f9d4b7fa873f5a4dc9c5",
+      "step15_geometry_sha256": "e7d2d1bcedc35044f3b6e98bd111b4534d204105c270f9d4b7fa873f5a4dc9c5",
+      "final_geometry_sha256": "e7d2d1bcedc35044f3b6e98bd111b4534d204105c270f9d4b7fa873f5a4dc9c5",
+      "direct_bounds_cm": {
+        "min": [
+          -48.93696975708008,
+          -21.560218811035156,
+          0.0
+        ],
+        "max": [
+          48.93696975708008,
+          21.560218811035156,
+          170.0
+        ],
+        "dimensions": [
+          97.87393951416016,
+          43.12043762207031,
+          170.0
+        ]
+      },
+      "direct_topology": {
+        "C00_HEAD_METAL_COMPLETE_RZ180": {
+          "nonmanifold_edges": 0,
+          "degenerate_faces": 0,
+          "triangles": 4832
+        },
+        "C01_HANDLE_A_TO_TERMINAL_COMPLETE_RZ180": {
+          "nonmanifold_edges": 0,
+          "degenerate_faces": 0,
+          "triangles": 3056
+        }
+      },
+      "direct_lod_triangles": {
+        "0": 7888,
+        "1": 3944,
+        "2": 1972,
+        "3": 986
+      },
+      "direct_collision_names": [
+        "UCX_SM_DRW_SiegeBreaker_Hammer_A01_HANDLE_00",
+        "UCX_SM_DRW_SiegeBreaker_Hammer_A01_HEAD_00"
+      ],
+      "fbx_sha256": "48a343a784b74f2e28a0bcbced34455b3e561caf7d27a5c12a91cd8c79f07dbe",
+      "fbx_reimport_bounds_cm": {
+        "min": [
+          -48.93696975708008,
+          -21.560213088989258,
+          0.0
+        ],
+        "max": [
+          48.93696975708008,
+          21.560224533081055,
+          170.0
+        ],
+        "dimensions": [
+          97.87393951416016,
+          43.12043762207031,
+          170.0
+        ]
+      },
+      "glb_sha256": "098164e4b2efc3530f6ace03a5ca8780152a55a309a027aef3795bd8a68bb038",
+      "glb": {
+        "version": 2,
+        "declared_length": 273556,
+        "actual_length": 273556,
+        "mesh_count": 10
+      },
+      "renders": {
+        "front": {
+          "sha256": "7a6056f4d4a36cc2845c96aea4d4e9b8a274fa7b1530d493d5e7ef9dfb4a15b5",
+          "resolution": [
+            900,
+            1250
+          ],
+          "max_rgb_stddev": 64.5767390296
+        },
+        "back": {
+          "sha256": "abad7bec35b47d8eccb7f0f5677019ec413ad3ba46c03ef09f6c904742f36f37",
+          "resolution": [
+            900,
+            1250
+          ],
+          "max_rgb_stddev": 64.57676153429881
+        },
+        "left": {
+          "sha256": "0c6796ff3b12b937a6ca52e9356e59dabb63d9177e69d9bbf0737e9f36f03841",
+          "resolution": [
+            900,
+            1250
+          ],
+          "max_rgb_stddev": 50.750880459035216
+        },
+        "right": {
+          "sha256": "28028b0c9992a9532a9b66622490ac63799ee943a21ebc1d4fbf581f13e7439b",
+          "resolution": [
+            900,
+            1250
+          ],
+          "max_rgb_stddev": 50.75115653728997
+        },
+        "color_3q": {
+          "sha256": "2f78725e0d24d3a7d745f0f209227e70ea1fe94f763c0156b91aeb55fb5cff01",
+          "resolution": [
+            900,
+            1250
+          ],
+          "max_rgb_stddev": 62.16145288141472
+        },
+        "gray_3q": {
+          "sha256": "7ffca9ef092597cedf6c64010138915dbfec079e47ec56c5d69cad33ee7f6510",
+          "resolution": [
+            900,
+            1250
+          ],
+          "max_rgb_stddev": 36.1670176717875
+        }
+      }
+    }
+  },
+  "final_board": {
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/review/STEP_16_FINAL/STEP_16_R8_PIXEL_EXACT_TWO_HAMMER_FINAL_REVIEW.png",
+    "sha256": "49c787696eefba99a38498b7181342124d0402f48cbac8932c838b77eefc0bfe",
+    "resolution": [
+      4500,
+      2780
+    ],
+    "max_rgb_stddev": 87.7400930273652
+  }
+}

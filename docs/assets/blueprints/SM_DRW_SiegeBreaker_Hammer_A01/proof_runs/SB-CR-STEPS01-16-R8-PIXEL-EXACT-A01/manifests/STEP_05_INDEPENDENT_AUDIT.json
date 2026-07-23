@@ -1,0 +1,27 @@
+{
+  "schema": "AERATHEA_INDEPENDENT_AUDIT_V1",
+  "step": "05",
+  "result": "PASS",
+  "checks_passed": 12,
+  "checks_total": 12,
+  "checks": {
+    "manifest_hash_direct": true,
+    "front_scale_recomputed": true,
+    "back_scale_recomputed": true,
+    "right_scale_recomputed": true,
+    "axial_scale_recomputed": true,
+    "scale_xy_equal_all": true,
+    "width_recomputed": true,
+    "depth_recomputed": true,
+    "right_axis_exact": true,
+    "rune_depth_recomputed": true,
+    "metal_depth_recomputed": true,
+    "halves_not_normalized": true
+  },
+  "evidence": {
+    "recomputed_width": "104040/1063",
+    "recomputed_axial_depth": "24579450/517681",
+    "recomputed_rune_depth": "9435/274",
+    "recomputed_metal_depth": "11815/274"
+  }
+}

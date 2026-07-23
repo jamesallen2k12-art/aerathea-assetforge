@@ -1,0 +1,108 @@
+{
+  "schema": "AERATHEA_R8_INTEGRATED_EXACT_MEASUREMENT_INDEX_V1",
+  "run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
+  "step": "09",
+  "inputs": {
+    "step05": "aed4b8d87a4a5b442c0465c9db59fa524f63797153d662e1a5e7cf90423a2446",
+    "step06_front": "85f09fc89c8b73df8e6fdf47924e2251da9dda6decabe44fa3f3b2577b7708eb",
+    "step06_back": "817af18192b3cf3b26ac47fb460e18b82266c30ce61f993b463a36175c014fcb",
+    "step07_left": "7d099a11fb5566059bf0caaeaa353c479a531acff78fac6a9bedbeea739eb3f1",
+    "step07_right": "977831e86b02148125a7e1a04024d2d114721590ebf63937bdd314d02cc427c9",
+    "step08_top": "5925dee1ab39a0535150804a4353157b17d51fec648791774808c9c832dd8b36",
+    "step08_bottom": "aea70d998dabe9f28d3ec5fb44a2d2206f8874096a3d33ee9b836074b2ede9a2"
+  },
+  "total_exact_selected_pixels": 1544766,
+  "per_view_selected_pixels": {
+    "front": 247844,
+    "back": 250209,
+    "left": 146324,
+    "right": 142185,
+    "top": 383863,
+    "bottom": 374341
+  },
+  "derived_dimensions_cm": {
+    "width_front_owned": {
+      "numerator": 104040,
+      "denominator": 1063,
+      "display_decimal": "97.873941674506"
+    },
+    "depth_centered_top_bottom_owned": {
+      "numerator": 24579450,
+      "denominator": 517681,
+      "display_decimal": "47.479915237376"
+    },
+    "length_anchor": {
+      "numerator": 170,
+      "denominator": 1,
+      "display_decimal": "170.000000000000"
+    }
+  },
+  "front_component_stations_world_z_cm": {
+    "A_begin_haft_including_coupler": {
+      "numerator": 114070,
+      "denominator": 1063,
+      "display_decimal": "107.309501411101"
+    },
+    "C_coupler_meets_true_haft": {
+      "numerator": 102170,
+      "denominator": 1063,
+      "display_decimal": "96.114769520226"
+    },
+    "H1_haft_meets_handle_ferrule": {
+      "numerator": 68170,
+      "denominator": 1063,
+      "display_decimal": "64.129821260583"
+    },
+    "H8_ferrule_meets_grip": {
+      "numerator": 53720,
+      "denominator": 1063,
+      "display_decimal": "50.536218250235"
+    },
+    "U1_grip_meets_collar": {
+      "numerator": 27370,
+      "denominator": 1063,
+      "display_decimal": "25.747883349012"
+    },
+    "U3_collar_meets_pommel": {
+      "numerator": 20570,
+      "denominator": 1063,
+      "display_decimal": "19.350893697084"
+    },
+    "L4_pommel_meets_terminal_cap": {
+      "numerator": 8670,
+      "denominator": 1063,
+      "display_decimal": "8.156161806209"
+    },
+    "terminal_bottom": {
+      "numerator": 0,
+      "denominator": 1,
+      "display_decimal": "0.000000000000"
+    }
+  },
+  "right_candidate_halves": {
+    "rune_side": {
+      "interval_half_open": [
+        557,
+        668
+      ],
+      "span_pixels": 111,
+      "completed_depth_cm": {
+        "numerator": 9435,
+        "denominator": 274,
+        "display_decimal": "34.434306569343"
+      }
+    },
+    "metal_center_piece_side": {
+      "interval_half_open": [
+        418,
+        557
+      ],
+      "span_pixels": 139,
+      "completed_depth_cm": {
+        "numerator": 11815,
+        "denominator": 274,
+        "display_decimal": "43.120437956204"
+      }
+    }
+  }
+}

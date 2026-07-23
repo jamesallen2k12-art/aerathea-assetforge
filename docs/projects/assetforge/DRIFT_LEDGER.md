@@ -24,6 +24,20 @@ Core authority: `AGENTS.md` Core Principles govern this ledger. Drifted artifact
 
 ## Entries
 
+### 2026-07-23 18:13 EDT - Siege Breaker R8 Steps 10-16 Extrusion-Method Drift
+
+- Asset or scope: `SM_DRW_SiegeBreaker_Hammer_A01`, run `SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01`, Steps 10-16 and the presented two-hammer final board.
+- Detected by: Flamestrike's direct visual and method rejection: the result is an extrusion, while yesterday's process contains zero extrusions.
+- Last known Core-valid state: the exact new-image scanline, color, registration, measurement, and cross-view evidence through Step 09. Step 09 remains `pass_with_explicit_blocks` and grants no geometry authority.
+- First drift action: Step 10/11 silently converted unresolved evidence into a generalized cross-section blueprint instead of binding the approved R7/R10 component equations and A09 combined-boundary process to the new measurements.
+- Assumption or interpretation that caused drift: internal dimensional/topology consistency and the triangle cap were treated as permission to replace exact component-surface reconstruction with rectangular head slices and a simplified wrapped handle.
+- Affected outputs: every Step 10-16 decision, blueprint, handoff, validation, audit, mesh, UV/material candidate, LOD, collision proxy, export, render, final review board, and `DCC game-ready candidate` implication in the R8 pixel-exact run.
+- Artifact statuses: Steps 01-09 are `authoritative within their exact evidence scope`; Steps 10-16 and the final board are `invalid / quarantined`; their checks are `proof only` for internal consistency of the wrong method; the three new Steps 10-16 builder/audit scripts are `quarantined` or `reference only` as recorded in the local recovery manifest.
+- Quarantined locations or records: affected artifacts remain preserved in place; governing record `docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEPS_10_16_EXTRUSION_METHOD_DRIFT_RECOVERY.md`.
+- Recovery decision: do not repair forward. Resume from Step 09 and replay the approved component-by-component zero-extrusion process with only the new source measurements substituted. Add a direct independent method audit that rejects any extrusion, slab, primitive, generalized cross-section, or performance-driven shape simplification.
+- Flamestrike approval: explicit request to create this savepoint, record yesterday's exact instructions for the next agent using the new dimensions, ensure no deviation, and then reset.
+- Follow-up Core/Kaizen improvement: geometry validation must prove process lineage and prohibited-method absence before checking bounds, topology, export, or performance. Builder-authored pass flags cannot establish method fidelity.
+
 ### 2026-07-22 12:59 EDT - Siege Breaker Scripted Primitive-First Hero-Candidate Drift
 
 - Asset or scope: `SM_DRW_SiegeBreaker_Hammer_A01` visual-first canonical-master candidate `SB-CM-VISUAL-A01`, including its Blender source, renders, approval board, build/audit scripts, validation, output record, review record, and candidate classification.
@@ -1334,3 +1348,15 @@ Core authority: `AGENTS.md` Core Principles govern this ledger. Drifted artifact
   audit and present both.
 - Local recovery record:
   `docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/manifests/A12_R10_R8_WRONG_AXIS_AND_HANDLE_SCALE_RECOVERY.md`.
+### 2026-07-23 - Siege Breaker R8 Per-Half Normalization And Pixel Resampling Drift
+
+- Asset or scope: `SM_DRW_SiegeBreaker_Hammer_A01` correct-axis rune-side and metal-center-piece candidates.
+- Detected by: Flamestrike visual rejection: the images were stretched and were not pixel-perfect.
+- Last known Core-valid state: immutable six-view R8 pixels, exact scanline method, right diamond center `x=557`, one Rz180 rule, `pi/2` cylinder formula, and the authoritative Steps 01-16 process.
+- First drift: the builder forced the `111 px` rune half and `139 px` metal half into the same physical half-depth, producing different per-pixel scales.
+- Additional drift: candidate-specific head-height registration and fixed 64-segment nearest-pixel handle sampling normalized or skipped/repeated source data.
+- Affected outputs: both Blender candidates, eight candidate renders, the comparison board, validations, audits, and output record.
+- Artifact statuses: all affected geometry/review outputs are `invalid / quarantined`; their self-consistency audits are invalid as candidate authority; immutable input hashes and `x=557` center evidence remain `reference only`.
+- Assumption that caused drift: Codex treated equal target dimensions as a requirement that overrode direct source-pixel mapping.
+- Smallest sufficient recovery: restart at Step 01 under `SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01`, scan every new source pixel, derive dimensions, preserve one uniform scale per view and unequal half consequences, and execute Steps 01-16 unchanged.
+- Flamestrike approval: explicit 2026-07-23 direction to perform the complete new-image scan and exact sixteen-step replay through final visible review without intermediate theory approval.

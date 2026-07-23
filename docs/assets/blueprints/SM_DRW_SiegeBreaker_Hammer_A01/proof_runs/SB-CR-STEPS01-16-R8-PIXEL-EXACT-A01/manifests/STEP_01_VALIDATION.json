@@ -1,0 +1,21 @@
+{
+  "schema": "AERATHEA_STEP_VALIDATION_V1",
+  "run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
+  "step": "01",
+  "artifact_status": "proof only",
+  "checks": {
+    "identity_locked": true,
+    "goal_locked": true,
+    "source_firewall_locked": true,
+    "artistic_soul_keepers_locked": true,
+    "completion_boundary_locked": true,
+    "strict_sequence_locked": true,
+    "outside_input_budget_locked": true,
+    "unreal_excluded": true,
+    "no_source_processing_in_step_01": true,
+    "no_geometry_in_step_01": true
+  },
+  "pass_count": 10,
+  "check_count": 10,
+  "result": "PASS"
+}

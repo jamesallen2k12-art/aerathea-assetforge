@@ -1,0 +1,87 @@
+{
+  "schema": "AERATHEA_R8_STEP10_INTERPRETATION_DECISIONS_V1",
+  "run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
+  "step": "10",
+  "artifact_status": "authoritative",
+  "input_step09_audit_sha256": "260c79857fe059517b4076bcc65b538aef807a7be33a58a4a46edc32c2150fdb",
+  "input_disagreement_matrix_sha256": "83c201059c9deee3bbb26429283cbfe50d2a47d4203f24e841e86a01d5e1c7b7",
+  "authority_hashes": {
+    "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_R8_PIXEL_EXACT_STEPS01_16_A01_CONTRACT.md": "7f2a5774749a3e6872f26174fc7ea6593697a513781482712cceb0c5771199e6",
+    "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_STEP02A_R8_VIEW_OWNED_SCALE_RECONCILIATION_A01_CONTRACT.md": "84da92d2bec200a646bee4297965e9cd3bcd9aac090381b4108d931d7c1f4cd7",
+    "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_STEP06A_DETERMINISTIC_CLOSURE_AMENDMENT_A01.md": "8ee99d2b5c510a540623aa4a69154b3bc0da9c7a9e846a42194a0dabe716d1b4"
+  },
+  "rules": [
+    {
+      "id": "IR001",
+      "resolves": "DX001",
+      "rule": "front owns construction width and front visible profile; back retains independent color/comparison authority and cannot resize the front-owned geometry",
+      "authority": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_STEP02A_R8_VIEW_OWNED_SCALE_RECONCILIATION_A01_CONTRACT.md"
+    },
+    {
+      "id": "IR002",
+      "resolves": "DX002",
+      "rule": "centered top/bottom arithmetic mean remains the axial reference depth; both exact footprints remain separate evidence",
+      "authority": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_STEP02A_R8_VIEW_OWNED_SCALE_RECONCILIATION_A01_CONTRACT.md"
+    },
+    {
+      "id": "IR003",
+      "resolves": "DX003",
+      "rule": "for the requested comparison, the later active candidate rule controls: retain rune [557,668) and metal [418,557) at the one right-view scale, producing two unequal completed depths",
+      "authority": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_R8_PIXEL_EXACT_STEPS01_16_A01_CONTRACT.md"
+    },
+    {
+      "id": "IR004",
+      "resolves": "DX004",
+      "rule": "use the measured diamond-center edge x=557 as the Rz180 axis; the right object-bounds center x=543 is not substituted",
+      "authority": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_R8_PIXEL_EXACT_STEPS01_16_A01_CONTRACT.md"
+    },
+    {
+      "id": "IR005",
+      "resolves": "DX005",
+      "rule": "front owns construction stations and handle exterior profile; back station correspondence remains non-construction evidence",
+      "authority": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_R8_PIXEL_EXACT_STEPS01_16_A01_CONTRACT.md"
+    },
+    {
+      "id": "IR006",
+      "resolves": "UK002, UK006, negative-space closure",
+      "rule": "fill only bright pixels enclosed by the approved exterior boundary using a 4-connected exterior flood; never expand the exterior or merge components",
+      "authority": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_STEP06A_DETERMINISTIC_CLOSURE_AMENDMENT_A01.md"
+    },
+    {
+      "id": "IR007",
+      "resolves": "hidden joins and terminal closure",
+      "rule": "join ordered measured boundaries only with straight ruled surfaces; close component contacts and flat terminal ends without smoothing, bevel fitting, or envelope expansion",
+      "authority": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_STEP06A_DETERMINISTIC_CLOSURE_AMENDMENT_A01.md"
+    },
+    {
+      "id": "IR008",
+      "resolves": "UK009",
+      "rule": "map the retained front source half to the handle with theta=-pi/2+pi*U and X=r(z)cos(theta), Y=r(z)sin(theta); each retained pixel column owns its exact U interval and the flat-diameter/half-circumference factor is pi/2",
+      "authority": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_R8_PIXEL_EXACT_STEPS01_16_A01_CONTRACT.md"
+    },
+    {
+      "id": "IR009",
+      "resolves": "whole-object completion",
+      "rule": "construct one source half and complete it exactly once with Rz180: (X,Y,Z)->(-X,-Y,Z), welding coordinate-equal seam vertices only",
+      "authority": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_R8_PIXEL_EXACT_STEPS01_16_A01_CONTRACT.md"
+    },
+    {
+      "id": "IR010",
+      "resolves": "material/color ownership",
+      "rule": "sample unchanged R8 pixels with nearest/constant interpolation: right-half pixels own the candidate strike/profile surfaces; front owns handle/source-half color and front boundary color; back/top/bottom remain color and audit references where exact one-to-one construction ownership is absent",
+      "authority": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_R8_PIXEL_EXACT_STEPS01_16_A01_CONTRACT.md"
+    }
+  ],
+  "all_silhouette_contact_major_volume_blocks_resolved": true,
+  "remaining_unknowns": [
+    {
+      "subject": "internal receiver engineering",
+      "status": "preserved unknown; cannot affect approved exterior"
+    },
+    {
+      "subject": "exact hidden rune continuity",
+      "status": "preserved unknown; no invented visible rune"
+    }
+  ],
+  "geometry_authorized_for_step11_blueprint": true
+}
