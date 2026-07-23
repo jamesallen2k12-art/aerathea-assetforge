@@ -1,0 +1,214 @@
+{
+  "artifact_status": "invalid; validator expected the wrong exact scanline schema label",
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "block_code": null,
+  "check_count": 26,
+  "checks": [
+    {
+      "expected": "AERATHEA_R8_ZERO_EXTRUSION_STEP11_SOURCE_PREFLIGHT_V1",
+      "name": "preflight_schema",
+      "observed": "AERATHEA_R8_ZERO_EXTRUSION_STEP11_SOURCE_PREFLIGHT_V1",
+      "pass": true
+    },
+    {
+      "expected": 1544766,
+      "name": "whole_pixel_total_matches_step09",
+      "observed": 1544766,
+      "pass": true
+    },
+    {
+      "expected": "97.873941674506",
+      "name": "front_width_matches_step09",
+      "observed": "97.873941674506",
+      "pass": true
+    },
+    {
+      "expected": "34.434306569343",
+      "name": "rune_depth_matches_step09",
+      "observed": "34.434306569343",
+      "pass": true
+    },
+    {
+      "expected": "43.120437956204",
+      "name": "metal_depth_matches_step09",
+      "observed": "43.120437956204",
+      "pass": true
+    },
+    {
+      "expected": false,
+      "name": "step04_coordinates_not_recorded",
+      "observed": false,
+      "pass": true
+    },
+    {
+      "expected": false,
+      "name": "step04_correspondence_not_resolved",
+      "observed": false,
+      "pass": true
+    },
+    {
+      "expected": false,
+      "name": "step04_hidden_surface_not_resolved",
+      "observed": false,
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "all_required_coordinate_owners_absent",
+      "observed": true,
+      "pass": true
+    },
+    {
+      "expected": 7,
+      "name": "required_owner_count",
+      "observed": 7,
+      "pass": true
+    },
+    {
+      "expected": [],
+      "name": "measurement_records_have_no_component_owner_coordinates",
+      "observed": [],
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "measurement_records_are_whole_view_profiles",
+      "observed": true,
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "front_capture_has_only_complete_hammer_selection",
+      "observed": true,
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "back_capture_has_only_complete_hammer_selection",
+      "observed": true,
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "left_capture_has_only_complete_hammer_selection",
+      "observed": true,
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "right_capture_has_only_complete_hammer_selection",
+      "observed": true,
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "top_capture_has_only_complete_hammer_selection",
+      "observed": true,
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "bottom_capture_has_only_complete_hammer_selection",
+      "observed": true,
+      "pass": true
+    },
+    {
+      "expected": [
+        "back",
+        "bottom",
+        "front",
+        "left",
+        "right",
+        "top"
+      ],
+      "name": "all_six_capture_views_present",
+      "observed": [
+        "back",
+        "bottom",
+        "front",
+        "left",
+        "right",
+        "top"
+      ],
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "capture_schema_is_complete_hammer_scanline",
+      "observed": false,
+      "pass": false
+    },
+    {
+      "expected": true,
+      "name": "step10_adds_no_component_coordinates",
+      "observed": true,
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "numeric_record_adds_no_component_coordinates",
+      "observed": true,
+      "pass": true
+    },
+    {
+      "expected": false,
+      "name": "production_blueprint_absent",
+      "observed": false,
+      "pass": true
+    },
+    {
+      "expected": "Blueprint block: source authority missing",
+      "name": "preflight_decision_exact",
+      "observed": "Blueprint block: source authority missing",
+      "pass": true
+    },
+    {
+      "expected": false,
+      "name": "proposed_amendment_has_no_geometry_authority",
+      "observed": false,
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "proposed_amendment_requires_flamestrike",
+      "observed": true,
+      "pass": true
+    }
+  ],
+  "geometry_authority": false,
+  "independent_validator": "Tools/DCC/audit_siegebreaker_r8_step11_source_authority.py",
+  "input_sha256": {
+    "complete_hammer_captures": {
+      "back_complete_hammer_scanlines.json.gz": "453649488a8f9c320ff533461d90c2a4e536060f2e074cadeedcdef0f8620701",
+      "bottom_complete_hammer_scanlines.json.gz": "da989819826b07e09049e422487a1bb5590dce576796be204c019bec2916ba11",
+      "front_complete_hammer_scanlines.json.gz": "57f11e52d410e5f0fba858276e8dad89fb34e10b93a829e6ccac5af69c803047",
+      "left_complete_hammer_scanlines.json.gz": "9464cce559f975b3855e3e9d894826441924607ffea2884f73c60235e6d26489",
+      "right_complete_hammer_scanlines.json.gz": "cb15d0a2806ca00d716984c929a22a29331893c5117672b571622c0924c2a098",
+      "top_complete_hammer_scanlines.json.gz": "731272c89dae717b646f067e5337c14de0781ec11e01858efe50655aaa222d94"
+    },
+    "measurements": {
+      "STEP_06_BACK_MEASUREMENT_CONTRACT.json": "817af18192b3cf3b26ac47fb460e18b82266c30ce61f993b463a36175c014fcb",
+      "STEP_06_FRONT_MEASUREMENT_CONTRACT.json": "85f09fc89c8b73df8e6fdf47924e2251da9dda6decabe44fa3f3b2577b7708eb",
+      "STEP_07_LEFT_MEASUREMENT_CONTRACT.json": "7d099a11fb5566059bf0caaeaa353c479a531acff78fac6a9bedbeea739eb3f1",
+      "STEP_07_RIGHT_MEASUREMENT_CONTRACT.json": "977831e86b02148125a7e1a04024d2d114721590ebf63937bdd314d02cc427c9",
+      "STEP_08_BOTTOM_MEASUREMENT_CONTRACT.json": "aea70d998dabe9f28d3ec5fb44a2d2206f8874096a3d33ee9b836074b2ede9a2",
+      "STEP_08_TOP_MEASUREMENT_CONTRACT.json": "5925dee1ab39a0535150804a4353157b17d51fec648791774808c9c832dd8b36"
+    },
+    "preflight": "4c5ee368a47dc3dc5d15929093d721f73984acc7759b6880f3a3c4494bd46d87",
+    "step04_inventory": "1bf54f9400dc2a4d0bb972ad56a3a913b586254f09b4867542e1c9899daf8a60",
+    "step09_index": "5a0a3eea8f877d55216f9efabe15b0ee1cf938e4c15a825a0e218f72ba76839a",
+    "step10_decisions": "0559b801ed3f544af82057d45f918599f07524588ff49c5ca92aefa744e467e9",
+    "step10_numeric_precedence": "ff2f7cb37284dc7d1416044913375f67924ec4141c22a5385b3a29541e7446b9"
+  },
+  "missing_authority": [
+    "exact new-image component pixel ownership for C01/C02/C03/C04/C06",
+    "exact source-coordinate ownership for protected negative spaces",
+    "exact cross-view boundary correspondence required by ruled closures"
+  ],
+  "next_step_unlocked": null,
+  "pass_count": 25,
+  "result": "FAIL",
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "schema": "AERATHEA_R8_ZERO_EXTRUSION_STEP11_VALIDATION_V1",
+  "step": "11"
+}

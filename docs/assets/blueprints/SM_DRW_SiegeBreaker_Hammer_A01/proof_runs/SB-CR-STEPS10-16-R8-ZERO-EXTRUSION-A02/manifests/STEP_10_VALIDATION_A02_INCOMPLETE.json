@@ -1,0 +1,405 @@
+{
+  "artifact_status": "invalid; incomplete final-depth precedence audit",
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "check_count": 45,
+  "checks": [
+    {
+      "expected": true,
+      "name": "execution_contract_exists",
+      "observed": true,
+      "pass": true
+    },
+    {
+      "expected": "77b0339126388be01f59532cd6b79228450b61e739ebc10c2f849833fd337bd4",
+      "name": "execution_contract_sha256",
+      "observed": "77b0339126388be01f59532cd6b79228450b61e739ebc10c2f849833fd337bd4",
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "component_equations_exists",
+      "observed": true,
+      "pass": true
+    },
+    {
+      "expected": "a40d0b67d802687ac3c9ec9ad8e00a915cc1dc730ce31f3fab00b18a1837a21c",
+      "name": "component_equations_sha256",
+      "observed": "a40d0b67d802687ac3c9ec9ad8e00a915cc1dc730ce31f3fab00b18a1837a21c",
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "view_owned_scale_contract_exists",
+      "observed": true,
+      "pass": true
+    },
+    {
+      "expected": "84da92d2bec200a646bee4297965e9cd3bcd9aac090381b4108d931d7c1f4cd7",
+      "name": "view_owned_scale_contract_sha256",
+      "observed": "84da92d2bec200a646bee4297965e9cd3bcd9aac090381b4108d931d7c1f4cd7",
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "source_half_contract_exists",
+      "observed": true,
+      "pass": true
+    },
+    {
+      "expected": "eba4884b6b52178846854b59c88594fc3aa896067d868f6748d4aadd3bc4106a",
+      "name": "source_half_contract_sha256",
+      "observed": "eba4884b6b52178846854b59c88594fc3aa896067d868f6748d4aadd3bc4106a",
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "closure_amendment_exists",
+      "observed": true,
+      "pass": true
+    },
+    {
+      "expected": "8ee99d2b5c510a540623aa4a69154b3bc0da9c7a9e846a42194a0dabe716d1b4",
+      "name": "closure_amendment_sha256",
+      "observed": "8ee99d2b5c510a540623aa4a69154b3bc0da9c7a9e846a42194a0dabe716d1b4",
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "step09_index_exists",
+      "observed": true,
+      "pass": true
+    },
+    {
+      "expected": "5a0a3eea8f877d55216f9efabe15b0ee1cf938e4c15a825a0e218f72ba76839a",
+      "name": "step09_index_sha256",
+      "observed": "5a0a3eea8f877d55216f9efabe15b0ee1cf938e4c15a825a0e218f72ba76839a",
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "step09_pre_geometry_audit_exists",
+      "observed": true,
+      "pass": true
+    },
+    {
+      "expected": "260c79857fe059517b4076bcc65b538aef807a7be33a58a4a46edc32c2150fdb",
+      "name": "step09_pre_geometry_audit_sha256",
+      "observed": "260c79857fe059517b4076bcc65b538aef807a7be33a58a4a46edc32c2150fdb",
+      "pass": true
+    },
+    {
+      "expected": "AERATHEA_R8_ZERO_EXTRUSION_STEP10_DECISIONS_V1",
+      "name": "record_schema",
+      "observed": "AERATHEA_R8_ZERO_EXTRUSION_STEP10_DECISIONS_V1",
+      "pass": true
+    },
+    {
+      "expected": "10",
+      "name": "record_step",
+      "observed": "10",
+      "pass": true
+    },
+    {
+      "expected": false,
+      "name": "geometry_created_false",
+      "observed": false,
+      "pass": true
+    },
+    {
+      "expected": false,
+      "name": "new_interpretation_created_false",
+      "observed": false,
+      "pass": true
+    },
+    {
+      "expected": [
+        "DX001",
+        "DX002",
+        "DX003",
+        "DX004",
+        "DX005"
+      ],
+      "name": "source_disagreement_ids_exact",
+      "observed": [
+        "DX001",
+        "DX002",
+        "DX003",
+        "DX004",
+        "DX005"
+      ],
+      "pass": true
+    },
+    {
+      "expected": [
+        "UK001",
+        "UK002",
+        "UK003",
+        "UK004",
+        "UK005",
+        "UK006",
+        "UK007",
+        "UK008",
+        "UK009",
+        "UK010",
+        "UK011",
+        "UK012"
+      ],
+      "name": "source_unknown_ids_exact",
+      "observed": [
+        "UK001",
+        "UK002",
+        "UK003",
+        "UK004",
+        "UK005",
+        "UK006",
+        "UK007",
+        "UK008",
+        "UK009",
+        "UK010",
+        "UK011",
+        "UK012"
+      ],
+      "pass": true
+    },
+    {
+      "expected": [
+        "DX001",
+        "DX002",
+        "DX003",
+        "DX004",
+        "DX005"
+      ],
+      "name": "resolved_disagreement_ids_exact",
+      "observed": [
+        "DX001",
+        "DX002",
+        "DX003",
+        "DX004",
+        "DX005"
+      ],
+      "pass": true
+    },
+    {
+      "expected": [
+        "UK001",
+        "UK002",
+        "UK003",
+        "UK004",
+        "UK005",
+        "UK006",
+        "UK007",
+        "UK008",
+        "UK009",
+        "UK010",
+        "UK011",
+        "UK012"
+      ],
+      "name": "resolved_unknown_ids_exact",
+      "observed": [
+        "UK001",
+        "UK002",
+        "UK003",
+        "UK004",
+        "UK005",
+        "UK006",
+        "UK007",
+        "UK008",
+        "UK009",
+        "UK010",
+        "UK011",
+        "UK012"
+      ],
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "all_disagreements_use_existing_rules",
+      "observed": true,
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "all_unknowns_use_existing_rules",
+      "observed": true,
+      "pass": true
+    },
+    {
+      "expected": [],
+      "name": "no_unresolved_geometry_affecting_items",
+      "observed": [],
+      "pass": true
+    },
+    {
+      "expected": "unresolved until Step 10",
+      "name": "parent_cross_view_waited_for_step10",
+      "observed": "unresolved until Step 10",
+      "pass": true
+    },
+    {
+      "expected": "exactly one Rz(180 degrees): (X,Y,Z)->(-X,-Y,Z)",
+      "name": "whole_completion_exact",
+      "observed": "exactly one Rz(180 degrees): (X,Y,Z)->(-X,-Y,Z)",
+      "pass": true
+    },
+    {
+      "expected": "theta(U)=-pi/2+pi*U with exact pi/2 flat-diameter-to-half-circumference factor",
+      "name": "haft_formula_exact",
+      "observed": "theta(U)=-pi/2+pi*U with exact pi/2 flat-diameter-to-half-circumference factor",
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "combined_boundary_rule_present",
+      "observed": true,
+      "pass": true
+    },
+    {
+      "expected": "source-connected negative spaces remain unoccupied",
+      "name": "negative_space_rule_present",
+      "observed": "source-connected negative spaces remain unoccupied",
+      "pass": true
+    },
+    {
+      "expected": "34.434306569343",
+      "name": "rune_depth_preserved",
+      "observed": "34.434306569343",
+      "pass": true
+    },
+    {
+      "expected": "43.120437956204",
+      "name": "metal_depth_preserved",
+      "observed": "43.120437956204",
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "decision_record_does_not_name_invalid_parent_step_artifact",
+      "observed": true,
+      "pass": true
+    },
+    {
+      "expected": "AERATHEA_R8_STEP10_NUMERIC_SUBSTITUTION_V1",
+      "name": "numeric_substitution_schema",
+      "observed": "AERATHEA_R8_STEP10_NUMERIC_SUBSTITUTION_V1",
+      "pass": true
+    },
+    {
+      "expected": {
+        "name": "overall_length_cm",
+        "value": "170.000000000000"
+      },
+      "name": "only_fixed_external_anchor_is_length",
+      "observed": {
+        "name": "overall_length_cm",
+        "value": "170.000000000000"
+      },
+      "pass": true
+    },
+    {
+      "expected": "97.873941674506",
+      "name": "front_width_matches_step09",
+      "observed": "97.873941674506",
+      "pass": true
+    },
+    {
+      "expected": "34.434306569343",
+      "name": "rune_depth_matches_step09",
+      "observed": "34.434306569343",
+      "pass": true
+    },
+    {
+      "expected": "43.120437956204",
+      "name": "metal_depth_matches_step09",
+      "observed": "43.120437956204",
+      "pass": true
+    },
+    {
+      "expected": {
+        "A_begin_haft_including_coupler": "107.309501411101",
+        "C_coupler_meets_true_haft": "96.114769520226",
+        "H1_haft_meets_handle_ferrule": "64.129821260583",
+        "H8_ferrule_meets_grip": "50.536218250235",
+        "L4_pommel_meets_terminal_cap": "8.156161806209",
+        "U1_grip_meets_collar": "25.747883349012",
+        "U3_collar_meets_pommel": "19.350893697084",
+        "terminal_bottom": "0.000000000000"
+      },
+      "name": "front_stations_match_step09",
+      "observed": {
+        "A_begin_haft_including_coupler": "107.309501411101",
+        "C_coupler_meets_true_haft": "96.114769520226",
+        "H1_haft_meets_handle_ferrule": "64.129821260583",
+        "H8_ferrule_meets_grip": "50.536218250235",
+        "L4_pommel_meets_terminal_cap": "8.156161806209",
+        "U1_grip_meets_collar": "25.747883349012",
+        "U3_collar_meets_pommel": "19.350893697084",
+        "terminal_bottom": "0.000000000000"
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "grip_length_cm": "42",
+        "pommel_length_cm": "18",
+        "pommel_width_cm": "11",
+        "shaft_diameter_cm": "5"
+      },
+      "name": "older_conflicting_numeric_locks_explicit",
+      "observed": {
+        "grip_length_cm": "42",
+        "pommel_length_cm": "18",
+        "pommel_width_cm": "11",
+        "shaft_diameter_cm": "5"
+      },
+      "pass": true
+    },
+    {
+      "expected": false,
+      "name": "separate_component_scale_forbidden",
+      "observed": false,
+      "pass": true
+    },
+    {
+      "expected": false,
+      "name": "source_resampling_forbidden",
+      "observed": false,
+      "pass": true
+    },
+    {
+      "expected": false,
+      "name": "numeric_rule_creates_no_interpretation",
+      "observed": false,
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "active_contract_declares_only_length_fixed",
+      "observed": true,
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "active_contract_forbids_component_scaling",
+      "observed": true,
+      "pass": true
+    }
+  ],
+  "independent_validator": "Tools/DCC/audit_siegebreaker_r8_zero_extrusion_steps10_11.py",
+  "input_sha256": {
+    "closure_amendment": "8ee99d2b5c510a540623aa4a69154b3bc0da9c7a9e846a42194a0dabe716d1b4",
+    "component_equations": "a40d0b67d802687ac3c9ec9ad8e00a915cc1dc730ce31f3fab00b18a1837a21c",
+    "decision_record": "262919a2d12b7948c4f6dcbf86f157e35af9234db862576c13a4ab4cbddae247",
+    "execution_contract": "77b0339126388be01f59532cd6b79228450b61e739ebc10c2f849833fd337bd4",
+    "numeric_substitution": "77b579b9f194495898b6e7a44374991ebfdd5258d3803b38181209a476710853",
+    "source_half_contract": "eba4884b6b52178846854b59c88594fc3aa896067d868f6748d4aadd3bc4106a",
+    "step09_index": "5a0a3eea8f877d55216f9efabe15b0ee1cf938e4c15a825a0e218f72ba76839a",
+    "step09_pre_geometry_audit": "260c79857fe059517b4076bcc65b538aef807a7be33a58a4a46edc32c2150fdb",
+    "view_owned_scale_contract": "84da92d2bec200a646bee4297965e9cd3bcd9aac090381b4108d931d7c1f4cd7"
+  },
+  "next_step_unlocked": "11",
+  "pass_count": 45,
+  "result": "PASS",
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "schema": "AERATHEA_R8_ZERO_EXTRUSION_STEP10_VALIDATION_V1",
+  "step": "10"
+}

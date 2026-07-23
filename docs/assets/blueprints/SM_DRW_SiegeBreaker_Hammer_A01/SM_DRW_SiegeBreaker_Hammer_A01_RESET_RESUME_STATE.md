@@ -1,18 +1,50 @@
 # SM_DRW_SiegeBreaker_Hammer_A01 Reset / Resume State
 
 - Active approved route:
-  `Core Recovery from the last valid Step 09 dataset; authority reconciliation complete`
+  `Core Recovery from the valid Step 01-09 dataset; Step 10 passed; Step 11 source-authority gate blocked`
 - Plan: `SM_DRW_SiegeBreaker_Hammer_A01_STEPS_01_16_PROOF_OF_CONCEPT_PIPELINE_PLAN.md`
-- Active contract: `SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01; Steps 10-16 invalid`
+- Active contract:
+  `SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02; Step 10 complete; Step 11 blocked before blueprint`
 - Current state:
-  `Core Recovery; exact new-image evidence valid through Step 09; ready for a fresh Step 10 zero-extrusion blueprint only`
+  `Step 10 PASS 50/50; Step 11 source-authority block independently confirmed 26/26; no production blueprint exists`
 - Next approved activity:
-  `write and independently audit the Step 10 method-binding blueprint; no geometry`
-- Source processing authorized now: `false; preserve the exact Step 01-09 data`
+  `none; await Flamestrike approval of the bounded Step 09A component-pixel ownership amendment`
+- Source processing authorized now:
+  `false; the proposed Step 09A measurement/source-ownership pass is not yet approved`
 - Model inference authorized now: `false`
-- DCC production authorized now: `false until the zero-extrusion method gate passes`
+- DCC production authorized now:
+  `false; Step 11 did not unlock Step 12`
 - Unreal authority: `false`
 - Fully game-ready: `false`
+
+## 2026-07-23 Step 10 Pass / Step 11 Source-Authority Block
+
+- Fresh recovery run:
+  `proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/`.
+- Step 10 resolved the recorded interpretation and numeric-precedence questions
+  under the approved zero-extrusion rules. Independent result: `PASS 50/50`.
+- Step 11 checked whether the valid evidence can assign every required
+  component surface to an exact new-image pixel or scanline owner, an approved
+  equation, and an exact measurement.
+- Independent Step 11 result:
+  `BLOCKED; 26/26 checks confirm the blocked finding`.
+- Exact missing authority:
+  component-pixel ownership for `C01/C02/C03/C04/C06`, protected
+  negative-space coordinates, and cross-view boundary correspondence for the
+  ruled closures.
+- Block code: `Blueprint block: source authority missing`.
+- No production blueprint, geometry, Blender source, render, export, or Unreal
+  asset was created.
+- Step 10 is the last completed step. Step 12 remains locked.
+- Proposed recovery amendment:
+  `SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01`.
+- The amendment is measurement/source-ownership only and requires Flamestrike
+  approval before execution. It grants no candidate-fill, blueprint, Blender,
+  geometry, render, export, or Unreal authority.
+- Block record:
+  `proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_11_OUTPUT_RECORD.md`.
+- Blocked handoff:
+  `proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/handoffs/STEP_11_BLOCKED_HANDOFF.md`.
 
 ## 2026-07-23 Authority-Only Recovery Approval
 

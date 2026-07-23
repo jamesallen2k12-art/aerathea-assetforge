@@ -1,0 +1,98 @@
+{
+  "schema": "AERATHEA_R8_ZERO_EXTRUSION_STEP11_SOURCE_PREFLIGHT_V1",
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "parent_run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
+  "step": "11",
+  "available_exact_authority": {
+    "whole_hammer_selected_pixels": 1544766,
+    "front_object_rectangle_half_open": [256, 208, 868, 1271],
+    "right_object_rectangle_half_open": [418, 166, 668, 1262],
+    "front_uniform_scale_cm_per_pixel": "170/1063",
+    "right_uniform_scale_cm_per_pixel": "85/548",
+    "front_owned_width_cm": "97.873941674506",
+    "rune_final_depth_cm": "34.434306569343",
+    "metal_final_depth_cm": "43.120437956204",
+    "right_rotation_axis_x": 557,
+    "front_component_z_stations": true,
+    "approved_component_names_and_view_roles": true,
+    "approved_hidden_closure_equations": true,
+    "approved_rz180_completion": true,
+    "approved_rotational_and_haft_equations": true
+  },
+  "required_coordinate_bearing_owners": [
+    {
+      "component": "C01_CENTER_CORE",
+      "required": "exact new-front pixel or scanline membership and boundary coordinates",
+      "found": false
+    },
+    {
+      "component": "C02_STONE_LEFT",
+      "required": "exact new-front/top/bottom owner membership and common boundaries",
+      "found": false
+    },
+    {
+      "component": "C03_STONE_RIGHT",
+      "required": "exact new-front/top/bottom owner membership and common boundaries",
+      "found": false
+    },
+    {
+      "component": "C04_STRIKE_FACE_POSITIVE_X",
+      "required": "exact new-right component membership and vertical boundary, separately for each candidate half",
+      "found": false
+    },
+    {
+      "component": "C06_UPPER_HAFT_CAP",
+      "required": "exact new-front owner membership and measured C01/C07 contacts",
+      "found": false
+    },
+    {
+      "component": "PROTECTED_NEGATIVE_SPACES",
+      "required": "exact source-coordinate memberships or boundary loops that must remain empty",
+      "found": false
+    },
+    {
+      "component": "CROSS_VIEW_COMMON_BOUNDARIES",
+      "required": "exact corresponding front/right/top/bottom boundary-edge ordering for ruled closure",
+      "found": false
+    }
+  ],
+  "evidence_findings": {
+    "step04_pixel_coordinates_recorded": false,
+    "step04_cross_view_correspondence_resolved": false,
+    "step04_hidden_surface_resolved": false,
+    "steps06_08_scope": "whole-view selected-object scanlines and profiles, not component owner masks",
+    "step09_scope": "integrated whole-view measurements and explicit disagreements, not component owner segmentation",
+    "step10_scope": "approved rule precedence and closure method, not new pixel-coordinate ownership"
+  },
+  "forbidden_substitutes": [
+    "old approved component meshes",
+    "old component coordinate intervals",
+    "old component scale locks",
+    "invalid parent Step 10 or Step 11 records",
+    "agent-chosen color thresholds",
+    "visually guessed contours",
+    "whole-object mask treated as a component mask"
+  ],
+  "missing_authority": [
+    "exact new-image component pixel ownership for C01/C02/C03/C04/C06",
+    "exact source-coordinate ownership for protected negative spaces",
+    "exact cross-view boundary correspondence required by ruled closures"
+  ],
+  "proposed_recovery_amendment": {
+    "id": "SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01",
+    "scope": "measurement and source-ownership interpretation only",
+    "actions": [
+      "record exact source-pixel and scanline boundaries for the required components in each owning view",
+      "record exact protected negative-space memberships",
+      "record ordered corresponding boundary edges for approved ruled closures",
+      "produce source-pixel marks and coordinates only, with no candidate fills or geometry",
+      "independently audit every coordinate against the immutable scanline captures",
+      "present the complete ownership decision for Flamestrike approval"
+    ],
+    "geometry_authority": false,
+    "blender_authority": false,
+    "requires_flamestrike_approval_before_execution": true
+  },
+  "decision": "Blueprint block: source authority missing"
+}

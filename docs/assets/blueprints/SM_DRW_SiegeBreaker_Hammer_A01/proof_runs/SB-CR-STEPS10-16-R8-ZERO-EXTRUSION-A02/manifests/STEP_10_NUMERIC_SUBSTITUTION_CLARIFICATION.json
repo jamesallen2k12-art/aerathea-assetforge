@@ -1,0 +1,69 @@
+{
+  "schema": "AERATHEA_R8_STEP10_NUMERIC_SUBSTITUTION_V1",
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "active_execution_contract_sha256": "77b0339126388be01f59532cd6b79228450b61e739ebc10c2f849833fd337bd4",
+  "fixed_external_numeric_anchor": {
+    "name": "overall_length_cm",
+    "value": "170.000000000000"
+  },
+  "substituted_data_fields": [
+    "overall width",
+    "candidate completed depth",
+    "component longitudinal stations",
+    "component lengths",
+    "front-owned rotational radii",
+    "component width and profile consequences"
+  ],
+  "older_numeric_locks_not_carried_into_r8": {
+    "shaft_diameter_cm": "5",
+    "grip_length_cm": "42",
+    "pommel_length_cm": "18",
+    "pommel_width_cm": "11",
+    "reason": "carrying any of these fixed values would require component-specific scaling forbidden by the newer R8 no-stretch contract"
+  },
+  "equations_and_methods_preserved": [
+    "front scanlines own longitudinal stations and rotational radius-versus-Z evidence",
+    "P(z,theta)=(r(z)cos(theta),r(z)sin(theta),z)",
+    "theta(U)=-pi/2+pi*U",
+    "exact pi/2 flat-diameter-to-half-circumference mapping",
+    "one measured source half and exactly one Rz180 completion",
+    "one combined exterior head boundary and measured ruled closures"
+  ],
+  "new_pixel_consequences": {
+    "front_owned_width_cm": "97.873941674506",
+    "centered_top_bottom_depth_cm": {
+      "value": "47.479915237376",
+      "final_geometry_role": "comparison_and_orientation_only"
+    },
+    "rune_side_completed_depth_cm": "34.434306569343",
+    "metal_center_piece_completed_depth_cm": "43.120437956204",
+    "front_component_stations_world_z_cm": {
+      "A_begin_haft_including_coupler": "107.309501411101",
+      "C_coupler_meets_true_haft": "96.114769520226",
+      "H1_haft_meets_handle_ferrule": "64.129821260583",
+      "H8_ferrule_meets_grip": "50.536218250235",
+      "U1_grip_meets_collar": "25.747883349012",
+      "U3_collar_meets_pommel": "19.350893697084",
+      "L4_pommel_meets_terminal_cap": "8.156161806209",
+      "terminal_bottom": "0.000000000000"
+    }
+  },
+  "final_candidate_dimensions_cm": {
+    "rune_side": [
+      "97.873941674506",
+      "34.434306569343",
+      "170.000000000000"
+    ],
+    "metal_center_piece_side": [
+      "97.873941674506",
+      "43.120437956204",
+      "170.000000000000"
+    ]
+  },
+  "final_depth_precedence": "candidate-specific right-view completed depth controls final geometry; centered top/bottom mean is comparison and orientation evidence only",
+  "separate_component_scale_permitted": false,
+  "source_resampling_permitted": false,
+  "new_interpretation_created": false,
+  "decision": "new R8 pixel measurements replace conflicting old numeric data fields while approved construction equations remain unchanged"
+}

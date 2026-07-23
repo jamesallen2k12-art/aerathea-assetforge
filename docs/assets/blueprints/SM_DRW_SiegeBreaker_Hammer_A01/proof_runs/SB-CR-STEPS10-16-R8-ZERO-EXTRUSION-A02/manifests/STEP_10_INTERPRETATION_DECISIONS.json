@@ -1,0 +1,165 @@
+{
+  "schema": "AERATHEA_R8_ZERO_EXTRUSION_STEP10_DECISIONS_V1",
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "parent_run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
+  "step": "10",
+  "artifact_status": "candidate pending independent audit",
+  "geometry_created": false,
+  "new_interpretation_created": false,
+  "authority_hashes": {
+    "execution_contract": "77b0339126388be01f59532cd6b79228450b61e739ebc10c2f849833fd337bd4",
+    "component_equations": "a40d0b67d802687ac3c9ec9ad8e00a915cc1dc730ce31f3fab00b18a1837a21c",
+    "view_owned_scale_contract": "84da92d2bec200a646bee4297965e9cd3bcd9aac090381b4108d931d7c1f4cd7",
+    "source_half_contract": "eba4884b6b52178846854b59c88594fc3aa896067d868f6748d4aadd3bc4106a",
+    "closure_amendment": "8ee99d2b5c510a540623aa4a69154b3bc0da9c7a9e846a42194a0dabe716d1b4",
+    "step09_index": "5a0a3eea8f877d55216f9efabe15b0ee1cf938e4c15a825a0e218f72ba76839a",
+    "step09_pre_geometry_audit": "260c79857fe059517b4076bcc65b538aef807a7be33a58a4a46edc32c2150fdb"
+  },
+  "disagreement_resolutions": [
+    {
+      "id": "DX001",
+      "subject": "front versus back complete width consequence",
+      "resolution": "front owns physical width; back remains comparison and color evidence",
+      "result_cm": "97.873941674506",
+      "authority": [
+        "A12_R10_STEP02A_R8_VIEW_OWNED_SCALE_RECONCILIATION_A01_CONTRACT.md",
+        "STEP_09_INTEGRATED_EXACT_MEASUREMENT_INDEX.json"
+      ],
+      "status": "resolved_by_existing_approved_rule"
+    },
+    {
+      "id": "DX002",
+      "subject": "top versus bottom depth consequence",
+      "resolution": "center-align the exact top and bottom object rectangles and preserve the arithmetic-mean depth as axial comparison and orientation evidence; it does not override the later candidate-specific final-depth rule",
+      "result_cm": "47.479915237376",
+      "final_geometry_role": "comparison_and_orientation_only",
+      "authority": [
+        "A12_R10_STEP02A_R8_VIEW_OWNED_SCALE_RECONCILIATION_A01_CONTRACT.md",
+        "STEP_09_INTEGRATED_EXACT_MEASUREMENT_INDEX.json"
+      ],
+      "status": "resolved_by_existing_approved_rule"
+    },
+    {
+      "id": "DX003",
+      "subject": "right rune-side versus metal-center-piece half depth",
+      "resolution": "preserve two candidates at one common right-view scale; these candidate-specific depths control final completed geometry and may not be normalized to each other or to the centered axial mean",
+      "candidate_results_cm": {
+        "rune_side": "34.434306569343",
+        "metal_center_piece_side": "43.120437956204"
+      },
+      "authority": [
+        "A12_R10_R8_PIXEL_EXACT_STEPS01_16_A01_CONTRACT.md",
+        "STEP_09_INTEGRATED_EXACT_MEASUREMENT_INDEX.json"
+      ],
+      "final_geometry_role": "authoritative_candidate_depth",
+      "status": "resolved_by_existing_approved_rule"
+    },
+    {
+      "id": "DX004",
+      "subject": "right object-bounds center versus diamond rotation center",
+      "resolution": "use the exact diamond-center source edge x=557 as the construction axis",
+      "authority": [
+        "A12_R10_R8_PIXEL_EXACT_STEPS01_16_A01_CONTRACT.md",
+        "A12_R10_R8_ZERO_EXTRUSION_AUTHORITY_RECOVERY_A01_APPROVAL_RECORD.md"
+      ],
+      "status": "resolved_by_existing_approved_rule"
+    },
+    {
+      "id": "DX005",
+      "subject": "front stations versus unresolved back stations",
+      "resolution": "front scanlines own longitudinal component stations; back owns back-facing color registration only",
+      "authority": [
+        "A12_R10_STEP02_COMPONENT_EQUATION_CONTRACT_DRAFT.md section R10-S01-B04",
+        "STEP_09_INTEGRATED_EXACT_MEASUREMENT_INDEX.json"
+      ],
+      "status": "resolved_by_existing_approved_rule"
+    }
+  ],
+  "unknown_resolutions": [
+    {
+      "id": "UK001",
+      "resolution": "C02 and C03 retain front-owned stone surfaces; the selected right candidate half owns the positive-X strike face; one Rz180 completion owns the opposite face",
+      "authority": "component equations B02 plus the R8 run-specific Rz180 approval",
+      "status": "resolved_by_existing_approved_rule"
+    },
+    {
+      "id": "UK002",
+      "resolution": "stone hidden boundaries are only straight ruled faces between corresponding measured owner boundaries inside the stone domains",
+      "authority": "component equations B06 and deterministic closure amendment",
+      "status": "resolved_by_existing_approved_rule"
+    },
+    {
+      "id": "UK003",
+      "resolution": "stone and bracing share one measured common boundary; no receiver, backing plate, duplicate wall, or invented thickness is created",
+      "authority": "component equations B02 and B06",
+      "status": "resolved_by_existing_approved_rule"
+    },
+    {
+      "id": "UK004",
+      "resolution": "front and back focal treatments are separately owned visible surfaces of C01; geometry remains one structural core and no independent hidden plate is added",
+      "authority": "component equations B02, B04, and B06",
+      "status": "resolved_by_existing_approved_rule"
+    },
+    {
+      "id": "UK005",
+      "resolution": "top and bottom directly own visible footprint orientation and color where compatible with the later candidate-depth rule; they may not stretch either final candidate; hidden bracing continuation is limited to measured straight ruled boundary faces",
+      "authority": "view-owned scale contract plus component equations B06",
+      "status": "resolved_by_existing_approved_rule"
+    },
+    {
+      "id": "UK006",
+      "resolution": "the selected right strike-face half is completed once about its own measured centerline; hidden continuation uses only its measured boundary and common stone contact",
+      "authority": "component equations B01, B02, B06, and the R8 candidate-boundary rule",
+      "status": "resolved_by_existing_approved_rule"
+    },
+    {
+      "id": "UK007",
+      "resolution": "C06 joins C07A only at their measured common station by the approved straight half-ring connection; no extra receiver volume is added",
+      "authority": "deterministic closure amendment C06/C07A rule",
+      "status": "resolved_by_existing_approved_rule"
+    },
+    {
+      "id": "UK008",
+      "resolution": "shaft engraving remains view-local material evidence on exact front/back half-cylinder UV ownership; geometry is not twisted or stretched to reconcile ornament phase",
+      "authority": "exact pi/2 cylinder-wrap rule",
+      "status": "resolved_by_existing_approved_rule"
+    },
+    {
+      "id": "UK009",
+      "resolution": "leather-wrap phase remains view-local material evidence on the same measured cylindrical mapping; no geometry deformation resolves the phase mismatch",
+      "authority": "exact pi/2 cylinder-wrap rule and Step 14 material boundary",
+      "status": "resolved_by_existing_approved_rule"
+    },
+    {
+      "id": "UK010",
+      "resolution": "C09 through C11 use exact front-owned radius-versus-Z surfaces and approved common contacts; view-specific pommel insets remain material ownership",
+      "authority": "component equations B03, B04, B05, and deterministic closure amendment",
+      "status": "resolved_by_existing_approved_rule"
+    },
+    {
+      "id": "UK011",
+      "resolution": "dark pixels remain exact source-visible color evidence; they do not create relief, holes, or hidden geometry unless another approved geometry equation owns that surface",
+      "authority": "evidence-versus-interpretation rule and Step 15 source-color boundary",
+      "status": "resolved_by_existing_approved_rule"
+    },
+    {
+      "id": "UK012",
+      "resolution": "the six-view dataset remains pass_with_explicit_blocks; this Step 10 record resolves every geometry-affecting block without altering any source",
+      "authority": "Step 09 audit plus all decisions above",
+      "status": "resolved_by_existing_approved_rule"
+    }
+  ],
+  "construction_rules_carried_forward": {
+    "source_half": "one coherent measured source half",
+    "whole_completion": "exactly one Rz(180 degrees): (X,Y,Z)->(-X,-Y,Z)",
+    "strike_face": "one measured face half duplicated once around its own centerline",
+    "head": "separately owned source surfaces with one combined exterior boundary and no per-component backing walls",
+    "hidden_closure": "straight ruled faces between corresponding measured boundaries only",
+    "rotational_surfaces": "P(z,theta)=(r(z)cos(theta),r(z)sin(theta),z)",
+    "haft": "theta(U)=-pi/2+pi*U with exact pi/2 flat-diameter-to-half-circumference factor",
+    "negative_spaces": "source-connected negative spaces remain unoccupied"
+  },
+  "unresolved_geometry_affecting_items": [],
+  "decision": "pass_pending_independent_audit"
+}

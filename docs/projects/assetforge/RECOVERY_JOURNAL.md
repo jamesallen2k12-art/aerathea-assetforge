@@ -8647,3 +8647,13 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260723-184445/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260723-184445/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-23 19:09:49 EDT -0400 - Siege Breaker R8 Step 10 PASS; Step 11 blocked on component pixel ownership authority
+
+- Snapshot: `Saved/ProjectRecovery/20260723-190949/`
+- Git: branch `main`, HEAD `ad9c2a5`, status lines `559`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260723-190949/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260723-190949/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260723-190949/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
