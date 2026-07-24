@@ -1,6 +1,60 @@
 # SM_DRW_SiegeBreaker_Hammer_A01 Reset / Resume State
 
+## 2026-07-24 Center-Post And Handle-Shape Core Recovery — Current State
+
+Flamestrike's visible review found two geometry errors shared by the latest
+centered-face mirror-and-weld pair:
+
+- the head was constructed as a front-profile slab, which filled the
+  source-owned separation around the top center post; and
+- the handle was closed as a rectangular section instead of using the
+  approved rotational surface.
+
+Current classification:
+
+- Siege Breaker A13 R1 Blender source: `invalid / quarantined in place`.
+- Foe Hammer A13 R1 Blender source: `invalid / quarantined in place`.
+- Both A13 R1 review boards: `invalid as corrected-candidate review; proof
+  only for the visible defects`.
+- Former topology and twin-equality `PASS`: `proof only`; it does not prove
+  component shape.
+- Valid DCC source candidates: `0`.
+- DCC game-ready candidates: `0`.
+- Fully game-ready assets: `0`.
+- Step 13 / Step 14 / Unreal authority: `false / false / false`.
+- Active geometry contract: `none`.
+
+The source images, exact measurement and ownership evidence through Step
+`09A`, the locked A12 R10 zero-extrusion component/cylinder rules, shared twin
+identity/bounds, and approved face elevation plus `X=0` mirror-and-weld
+constraints remain authoritative. The former Step 11 construction blueprint
+remains invalid/quarantined as construction authority.
+
+Do not repair either current mesh. The next permitted action is to draft a
+narrow fresh-build correction contract and stop for Flamestrike's separate
+approval.
+
+Governing recovery record:
+
+`proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_CENTER_POST_AND_HANDLE_SHAPE_DRIFT_RECOVERY_A01.md`
+
+Reset handoff:
+
+`proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/handoffs/TWIN_HAMMER_CENTER_POST_AND_HANDLE_RESET_HANDOFF_A01.md`
+
+Pre-record checkpoint:
+
+`Saved/ProjectRecovery/20260724-151433`
+
+On resume, report this recovery state before doing anything else. Do not open
+Blender for production, modify code, rebuild geometry, render, export, or
+advance to Unreal without a new visible correction contract and a separate
+Flamestrike approval.
+
 ## 2026-07-24 Fresh Shared-Depth Twin DCC Sources — Current State
+
+This section is historical and is superseded by the Core Recovery state
+above.
 
 The approved `FRESH_TWIN_DCC_SOURCE_BUILDER_A01` contract is complete.
 

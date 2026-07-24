@@ -4,7 +4,7 @@
   "parent_run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
   "last_valid_parent_step": "09",
   "last_core_valid_step": "09A",
-  "current_step": "TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01",
+  "current_step": "CORE_RECOVERY_TWIN_HAMMER_CENTER_POST_AND_HANDLE_SHAPE_DRIFT_A01",
   "completed_steps": [
     "01",
     "02",
@@ -22,7 +22,7 @@
     "11",
     "12"
   ],
-  "state": "twin_hammer_centered_face_mirror_weld_fresh_build_a01_technical_pass_visual_review_pending",
+  "state": "core_recovery_stopped_no_valid_dcc_source_candidate_new_contract_required",
   "step_11_decision": "historically approved; invalid and quarantined as construction authority after the 2026-07-24 depth-ownership correction",
   "step_11_validation": "blueprint A02 independent PASS 462/462; proof only for narrow checks",
   "historical_block": {
@@ -297,7 +297,7 @@
     "stop_rule": "both final images are open visibly; stop for Flamestrike feedback and do not begin repair or rebuild"
   },
   "twin_hammer_centered_face_mirror_weld_fresh_build_a01": {
-    "artifact_status": "authoritative status; approved execution consumed; technical PASS; Flamestrike visual review pending",
+    "artifact_status": "invalid / quarantined in place as corrected DCC source authority; topology evidence proof only",
     "flamestrike_decision": "approved",
     "approval_evidence": "After the exact face misalignment and required perimeter correction were explained, Flamestrike stated: I approve the fix ... make it happen.",
     "recovery_amendment_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_RECOVERY_A01.json",
@@ -335,22 +335,22 @@
     },
     "render_authority": false,
     "execution_authority_consumed": true,
-    "technical_result": "PASS",
+    "technical_result": "topology-only PASS; component-shape FAIL after Flamestrike visual review",
     "paired_saved_file_audit": {
       "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01_INDEPENDENT_AUDIT.json",
       "sha256": "416ea044a2f28ca009423a3780302621b0e31c49cb9c9eec3dfe896e9b9da3bf",
       "result": "PASS"
     },
     "shared_saved_geometry_sha256": "a7076cfb62eb229e3e996f37144517adbbdc81d594a22d1c14397828d16566ad",
-    "valid_dcc_source_candidates": 2,
+    "valid_dcc_source_candidates": 0,
     "siege_breaker": {
-      "artifact_status": "DCC source candidate; pending Flamestrike visual decision",
+      "artifact_status": "invalid / quarantined in place; not a DCC source candidate",
       "blend_path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A13_R1_CenteredFaceMirrorWeld_DCCSource_A01/SM_DRW_SiegeBreaker_Hammer_A01_DCCSource_CenteredFaceMirrorWeld_A01.blend",
       "blend_sha256": "9808a58a57d8c9f55e9c7083bd8596f9085d59f60cc1ae27e26dd90a43e50f31",
       "local_c04_treatment": "double rune sided"
     },
     "foe_hammer": {
-      "artifact_status": "DCC source candidate; pending Flamestrike visual decision",
+      "artifact_status": "invalid / quarantined in place; not a DCC source candidate",
       "blend_path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_FoeHammer_Hammer_A01/A13_R1_CenteredFaceMirrorWeld_DCCSource_A01/SM_DRW_FoeHammer_Hammer_A01_DCCSource_CenteredFaceMirrorWeld_A01.blend",
       "blend_sha256": "bb5337f7a40b0e10ba1b29772c00177bc597fe70e36393ed0704b26054f4ff70",
       "local_c04_treatment": "double metal-center-piece sided"
@@ -362,7 +362,7 @@
       "siege_breaker_board_sha256": "963b48ad87f4d1beb1368c1db23aa5588dc2d8c780fbbca1828aa2a47243b72a",
       "foe_hammer_board_sha256": "7c4a29f6ced322339354dbd36bb86e2946740e908daabbfafec0f93d72a61dc4",
       "both_boards_opened_visibly": true,
-      "flamestrike_visual_decision": "pending"
+      "flamestrike_visual_decision": "rejected by center-post separation and square-handle findings"
     },
     "rejected_attempts_record": {
       "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01_REJECTED_ATTEMPTS.json",
@@ -377,9 +377,49 @@
     "uv_texture_lod_collision_export_authority": false,
     "unreal_authority": false
   },
+  "core_recovery_twin_hammer_center_post_and_handle_shape_drift_a01": {
+    "artifact_status": "authoritative recovery state",
+    "result": "STOPPED",
+    "detected_by": "Flamestrike visual review",
+    "findings": [
+      "head constructed as a front-profile slab, filling source-owned separation around the top center post",
+      "handle constructed with rectangular row cross-sections instead of approved rotational surfaces"
+    ],
+    "first_drift_action": "build_asset_mesh() in Tools/DCC/build_twin_hammer_centered_face_mirror_weld_a01.py used the Step 06 front mask as a paired front/back construction domain and closed its perimeter",
+    "cause": "front projection, common depth, manifold closure, welded symmetry, and equal dimensions were treated as proof of three-dimensional component fidelity",
+    "recovery_record_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_CENTER_POST_AND_HANDLE_SHAPE_DRIFT_RECOVERY_A01.md",
+    "recovery_record_sha256": "3c24c18d940a428918bad714ca3fb04c3a2092a4656f77c6b5736658b116546a",
+    "reset_handoff_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/handoffs/TWIN_HAMMER_CENTER_POST_AND_HANDLE_RESET_HANDOFF_A01.md",
+    "reset_handoff_sha256": "041d6ea4151849970426bbfa9b3d8dd6dc3804631d946ee815af66a112628037",
+    "pre_record_checkpoint": "Saved/ProjectRecovery/20260724-151433",
+    "last_core_valid_authority": [
+      "hash-locked source images",
+      "exact measurements and component ownership through Step 09A",
+      "locked A12 R10 zero-extrusion component, boundary, closure, and cylinder-wrap rules",
+      "approved shared twin identity and dimensions",
+      "approved centered face elevation and positive-X half X=0 mirror-and-weld constraints"
+    ],
+    "historical_step_11_blueprint_status": "invalid / quarantined as construction authority",
+    "affected_artifacts": {
+      "siege_breaker_a13_r1": "invalid / quarantined in place",
+      "foe_hammer_a13_r1": "invalid / quarantined in place",
+      "review_boards": "invalid as corrected-candidate review; proof only for visible defects",
+      "builder": "quarantined; forbidden as future construction input",
+      "independent_audit": "proof only for manifold, seam, bounds, and twin equality; invalid as component-shape or protected-space proof",
+      "renderer": "reference only"
+    },
+    "valid_dcc_source_candidates": 0,
+    "active_geometry_contract": false,
+    "blender_authority": false,
+    "geometry_authority": false,
+    "render_authority": false,
+    "step_13_authority": false,
+    "step_14_authority": false,
+    "unreal_authority": false
+  },
   "next_permitted_action": {
-    "action": "receive Flamestrike's visual decision on the two visible corrected review boards",
-    "next_gate": "Flamestrike may approve, reject, or request a scoped visual correction; no downstream work is authorized",
+    "action": "draft one narrow fresh-build correction contract from the authoritative recovery handoff, then stop",
+    "next_gate": "separate Flamestrike approval of the exact correction contract before code, Blender, geometry, or rendering",
     "geometry_authority": false,
     "blender_authority": false
   },

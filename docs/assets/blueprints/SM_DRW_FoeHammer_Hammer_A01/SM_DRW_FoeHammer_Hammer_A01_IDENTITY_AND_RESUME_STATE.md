@@ -1,6 +1,57 @@
 # SM_DRW_FoeHammer_Hammer_A01 Identity And Resume State
 
+## 2026-07-24 Center-Post And Handle-Shape Core Recovery — Current State
+
+Foe Hammer shares the same latest geometry as Siege Breaker, so Flamestrike's
+two visible findings apply to both:
+
+- the head is a front-profile slab that fills the source-owned separation
+  around the top center post; and
+- the handle is rectangular instead of rotational.
+
+Current classification:
+
+- A13 R1 Foe Hammer Blender source: `invalid / quarantined in place`.
+- A13 R1 Siege Breaker Blender source: `invalid / quarantined in place`.
+- Both review boards: `invalid as corrected-candidate review; proof only for
+  the defects`.
+- Former topology and twin-equality `PASS`: `proof only`.
+- Valid DCC source candidates: `0`.
+- DCC game-ready candidates: `0`.
+- Fully game-ready assets: `0`.
+- Step 13 / Step 14 / Unreal authority: `false / false / false`.
+- Active geometry contract: `none`.
+
+Foe Hammer's identity and double-metal-center-piece treatment remain
+authoritative. The shared source measurements, component ownership, locked
+A12 R10 zero-extrusion component/cylinder rules, shared dimensions, and
+approved centered-face mirror-and-weld constraints also remain authoritative.
+The former Step 11 construction blueprint remains invalid/quarantined as
+construction authority.
+
+Do not repair or copy forward the current mesh. The next permitted action is
+to draft a narrow fresh-build correction contract and stop for Flamestrike's
+separate approval.
+
+Governing recovery record:
+
+`docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_CENTER_POST_AND_HANDLE_SHAPE_DRIFT_RECOVERY_A01.md`
+
+Reset handoff:
+
+`docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/handoffs/TWIN_HAMMER_CENTER_POST_AND_HANDLE_RESET_HANDOFF_A01.md`
+
+Pre-record checkpoint:
+
+`Saved/ProjectRecovery/20260724-151433`
+
+On resume, report this recovery state before any action. No code, Blender,
+geometry, render, export, Step 13/14, or Unreal work is active.
+
 ## 2026-07-24 Fresh Standalone Foe Hammer Source — Current State
+
+This section is historical and is superseded by the Core Recovery state
+above.
 
 The approved `FRESH_TWIN_DCC_SOURCE_BUILDER_A01` contract created the first
 valid standalone Foe Hammer Blender source.

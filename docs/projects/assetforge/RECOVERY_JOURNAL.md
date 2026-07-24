@@ -9037,3 +9037,23 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260724-151044/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260724-151044/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 15:14:33 EDT -0400 - Twin hammer Core Recovery before recording center-post and square-handle drift
+
+- Snapshot: `Saved/ProjectRecovery/20260724-151433/`
+- Git: branch `main`, HEAD `03f7f50`, status lines `558`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-151433/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-151433/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-151433/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 15:22:36 EDT -0400 - Twin hammer Core Recovery sealed: center-post separation and square-handle drift recorded with reset handoff
+
+- Snapshot: `Saved/ProjectRecovery/20260724-152236/`
+- Git: branch `main`, HEAD `03f7f50`, status lines `565`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-152236/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-152236/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-152236/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

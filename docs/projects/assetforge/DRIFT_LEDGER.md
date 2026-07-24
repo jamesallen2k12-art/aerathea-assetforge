@@ -24,6 +24,20 @@ Core authority: `AGENTS.md` Core Principles govern this ledger. Drifted artifact
 
 ## Entries
 
+### 2026-07-24 15:17 EDT - Twin Hammer Front-Slab And Square-Handle Drift
+
+- Asset or scope: `SM_DRW_SiegeBreaker_Hammer_A01` and `SM_DRW_FoeHammer_Hammer_A01`, build `TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01`, including its Blender sources, manifests, audit, renderer, and review boards.
+- Detected by: Flamestrike's direct visual findings that the head now reads as extruded with no separation around the top center post and that the handle has become square.
+- Last known Core-valid state: hash-locked source images; exact measurement and ownership evidence through Step `09A`; the locked A12 R10 zero-extrusion component, boundary, closure, and cylinder-wrap rules; approved shared twin identity/bounds; and the approved centered end-face elevation, positive-`X` half, `X=0` mirror, and welded-seam constraints. The former Step 11 construction blueprint remains invalid/quarantined as construction authority, and no current Blender geometry is valid.
+- First drift action: `build_asset_mesh()` in `Tools/DCC/build_twin_hammer_centered_face_mirror_weld_a01.py` made the front Step 06 mask the construction domain, copied its cells to paired front/back depth planes, and closed their perimeter instead of executing the approved top/bottom owner surfaces and rotational component equations.
+- Assumption or interpretation that caused drift: a correct front projection, common outer depth, manifold closure, welded symmetry, and equal twin dimensions were treated as sufficient proof of the intended three-dimensional component shapes.
+- Affected outputs: both A13 R1 centered-face Blender sources; build and review manifests; independent audit; both review boards and raw renders; builder, auditor, and renderer; and every claim that either A13 R1 output is a valid corrected `DCC source candidate`.
+- Artifact statuses: both Blender sources are `invalid / quarantined in place`; review boards are `invalid as corrected-candidate review` and `proof only` for the defects; build/audit records are `proof only` for narrow technical properties; builder is `quarantined`; auditor and renderer are `reference only`; source images and the last Core-valid evidence/rules remain `authoritative`.
+- Quarantined locations or records: affected files remain preserved in their existing A13 R1 and review paths. Governing record: `docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_CENTER_POST_AND_HANDLE_SHAPE_DRIFT_RECOVERY_A01.md`.
+- Recovery decision: do not cut, bevel, round, or otherwise repair the current meshes. Reset to the last Core-valid pre-geometry evidence; rebuild C01/C02/C03 from front/top/bottom ownership with protected center-post gaps, rebuild C06-C11 with the approved rotational equations, then retain the already approved face elevation and `X=0` mirror-and-weld completion.
+- Flamestrike approval: Flamestrike asked whether a context reset was needed and, if so, explicitly requested creation of the save point and instructions. This authorizes recovery recording and preservation only; a new correction contract still requires separate approval.
+- Follow-up Core/Kaizen improvement: audits must prove top/bottom protected-space occupancy and representative radial cross-sections from the saved mesh. A positive front-mask hole count, manifold topology, equal bounds, and builder-authored pass labels cannot establish component-shape fidelity.
+
 ### 2026-07-23 18:13 EDT - Siege Breaker R8 Steps 10-16 Extrusion-Method Drift
 
 - Asset or scope: `SM_DRW_SiegeBreaker_Hammer_A01`, run `SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01`, Steps 10-16 and the presented two-hammer final board.
