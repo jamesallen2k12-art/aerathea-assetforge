@@ -4,7 +4,7 @@
   "parent_run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
   "last_valid_parent_step": "09",
   "last_core_valid_step": "09A",
-  "current_step": "SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_REVIEW_PENDING",
+  "current_step": "SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_APPROVED_STOPPED",
   "completed_steps": [
     "01",
     "02",
@@ -22,7 +22,7 @@
     "11",
     "12"
   ],
-  "state": "blueprint_validated_waiting_flamestrike_review_no_production_authority",
+  "state": "authoritative_shared_depth_blueprint_no_fresh_builder_authority",
   "step_11_decision": "historically approved; invalid and quarantined as construction authority after the 2026-07-24 depth-ownership correction",
   "step_11_validation": "blueprint A02 independent PASS 462/462; proof only for narrow checks",
   "historical_block": {
@@ -83,7 +83,7 @@
     "repair_forward_authorized": false
   },
   "shared_depth_recovery_blueprint_a01": {
-    "artifact_status": "candidate pending Flamestrike approval",
+    "artifact_status": "authoritative through external decision approval and authority lock",
     "blueprint_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01.json",
     "blueprint_sha256": "efdbd8795dff2031fcde9e734868ff4c617dc37ad1e7b3743c3727daea981d58",
     "validation_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_VALIDATION.json",
@@ -91,6 +91,15 @@
     "validation_status": "proof only; 66/66 PASS",
     "review_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_REVIEW.md",
     "review_sha256": "48f5e748b89682f8297686d409f97909b48468777988a143174d34760faa62c9",
+    "decision_approval_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_DECISION_APPROVAL_RECORD.md",
+    "decision_approval_sha256": "94b30875014cfbf088568cb2b2305fd64449166c3617b8524c8ad5346f4ca7aa",
+    "authority_lock_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_AUTHORITY_LOCK.json",
+    "authority_lock_sha256": "6889b826481e5e11dd10775f2b81467b1014687b7fda9ebbff62d519bfff09bc",
+    "authority_lock_validation_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_AUTHORITY_LOCK_VALIDATION.json",
+    "authority_lock_validation_sha256": "154ac1ed96c437fe971dfd27c415141f70ea08ae8ee43ae72251d1b30a016739",
+    "authority_lock_validation_status": "proof only; 43/43 PASS",
+    "approved_handoff_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/handoffs/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_APPROVED_HANDOFF.md",
+    "approved_handoff_sha256": "efa18d21c21987dcc061a22f843ccc854cd7252929145679a68c9ae7f7d508ac",
     "shared_output_dimensions_xyz_cm_exact": [
       "50719500/517681",
       "6644212/149985",
@@ -104,8 +113,8 @@
     "unreal_authority": false
   },
   "next_permitted_action": {
-    "action": "stop for Flamestrike to approve, reject, or mark the shared-depth recovery blueprint blocked",
-    "next_gate": "blueprint review only; a separate visible fresh-builder contract remains required after any blueprint approval",
+    "action": "stop; the governing blueprint is approved but no fresh-builder contract is active",
+    "next_gate": "separately stated visible fresh-builder contract and separate Flamestrike approval",
     "geometry_authority": false,
     "blender_authority": false
   },

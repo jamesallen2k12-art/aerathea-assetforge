@@ -1,0 +1,94 @@
+{
+  "schema": "AERATHEA_SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_AUTHORITY_LOCK_V1",
+  "date": "2026-07-24",
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "artifact_status": "authoritative",
+  "assets": [
+    "SM_DRW_SiegeBreaker_Hammer_A01",
+    "SM_DRW_FoeHammer_Hammer_A01"
+  ],
+  "blueprint": {
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01.json",
+    "sha256": "efdbd8795dff2031fcde9e734868ff4c617dc37ad1e7b3743c3727daea981d58",
+    "internal_pre_decision_status": "candidate pending Flamestrike approval",
+    "effective_status": "authoritative shared-depth recovery blueprint",
+    "immutable_after_review": true
+  },
+  "approved_step_contract": {
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_APPROVAL_RECORD.md",
+    "sha256": "b54b2f5d26e4374822aa443fbe2b1d5a78dc05cf2b1c88501c1a2021d6c05d3d",
+    "status": "authoritative approval record"
+  },
+  "decision_approval": {
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_DECISION_APPROVAL_RECORD.md",
+    "sha256": "94b30875014cfbf088568cb2b2305fd64449166c3617b8524c8ad5346f4ca7aa",
+    "flamestrike_decision": "approved",
+    "status": "authoritative approval record"
+  },
+  "independent_validation": {
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_VALIDATION.json",
+    "sha256": "48e53e3ddfff94319927aebaec47fcbe9c40ea7369c20a4b73cdc0c38fa47ff5",
+    "result": "66/66 PASS",
+    "status": "proof only"
+  },
+  "visible_review": {
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_REVIEW.md",
+    "sha256": "48f5e748b89682f8297686d409f97909b48468777988a143174d34760faa62c9",
+    "opened_visibly": true,
+    "status": "reviewed candidate evidence"
+  },
+  "locked_shared_output_dimensions_xyz_cm_exact": {
+    "width": {
+      "numerator": 50719500,
+      "denominator": 517681,
+      "display_decimal": "97.974428267601"
+    },
+    "depth": {
+      "numerator": 6644212,
+      "denominator": 149985,
+      "display_decimal": "44.299176584"
+    },
+    "height": {
+      "numerator": 170,
+      "denominator": 1,
+      "display_decimal": "170.000000000000"
+    },
+    "cross_asset_tolerance_cm": "0/1"
+  },
+  "locked_variant_assignment": {
+    "SM_DRW_SiegeBreaker_Hammer_A01": {
+      "local_c04_treatment": "rune_side",
+      "completed_face_rule": "double rune sided"
+    },
+    "SM_DRW_FoeHammer_Hammer_A01": {
+      "local_c04_treatment": "metal_center_piece_side",
+      "completed_face_rule": "double metal-center-piece sided"
+    }
+  },
+  "locked_shared_body_rule": {
+    "canonical_shared_base_required": true,
+    "canonical_shared_base_hash_equality_required": true,
+    "allowed_geometry_difference": "tagged local C04 treatment only",
+    "local_c04_may_control_global_bounds": false,
+    "local_c04_stretch_normalize_or_resample_allowed": false,
+    "common_envelope_may_create_unowned_fill_geometry": false,
+    "quarantined_step12_geometry_reuse_allowed": false,
+    "EQ_CANDIDATE_AXIAL_INTERSECTION_allowed": false
+  },
+  "authority_boundary": {
+    "blueprint_approved": true,
+    "builder_change_authority": false,
+    "builder_run_authority": false,
+    "blender_authority": false,
+    "geometry_authority": false,
+    "foe_hammer_source_fork_authority": false,
+    "step_13_authority": false,
+    "retopology_uv_bake_export_authority": false,
+    "unreal_authority": false
+  },
+  "next_gate": {
+    "action": "stop",
+    "requirement": "separate visible fresh-builder contract and separate Flamestrike approval",
+    "automatic_advancement": false
+  }
+}

@@ -1,10 +1,46 @@
 # SM_DRW_SiegeBreaker_Hammer_A01 Reset / Resume State
 
-## 2026-07-24 Depth-Ownership Core Recovery — Current Authority
+## 2026-07-24 Shared-Depth Recovery Blueprint A01 — Current Authority
 
-This section supersedes every stale geometry-status, depth, Step 10, Step 11,
-and Step 12 current-state statement below while preserving those statements
-as historical evidence.
+Flamestrike approved `SHARED_DEPTH_RECOVERY_BLUEPRINT_A01` as the governing
+blueprint.
+
+- Blueprint status: `authoritative`.
+- Blueprint validation: `proof only; 66/66 PASS`.
+- Authority-lock validation: `proof only; 43/43 PASS`.
+- Exact shared XYZ:
+  `50719500/517681 × 6644212/149985 × 170/1 cm`.
+- Decimal shared XYZ:
+  `97.974428267601 × 44.299176584 × 170 cm`.
+- Shared-body rule: one canonically identical nonvariant base for both assets.
+- Siege Breaker distinction: double rune sided.
+- Foe Hammer distinction: double metal-center-piece sided.
+- Allowed geometry difference: tagged local `C04` treatment only.
+- Former Step 12 geometry: `invalid / quarantined in place`.
+- Current valid DCC source candidate: `none` for either asset.
+- Builder, Blender, geometry, Foe Hammer source fork, Step 13, and Unreal:
+  `unauthorized`.
+
+Authority lock:
+
+`proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_AUTHORITY_LOCK.json`
+
+Approved handoff:
+
+`proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/handoffs/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_APPROVED_HANDOFF.md`
+
+No production action is active. The next gate requires a separately stated
+visible fresh-builder contract and separate Flamestrike approval.
+
+On resume, verify this current section, the authority lock, the approved
+handoff, the latest recovery journal/checkpoint, and git status. Report that
+the governing blueprint is authoritative, neither asset has a valid DCC
+source candidate, and no fresh-builder contract is active.
+
+## 2026-07-24 Depth-Ownership Core Recovery — Historical Pre-Blueprint State
+
+This section records the recovery state before the governing blueprint was
+approved and remains historical evidence.
 
 Flamestrike clarified and approved that the rune and metal `C04` source spans
 are local face-treatment extents, not candidate-specific global body depths.
@@ -486,7 +522,7 @@ generated-view software remain forbidden for this reconstruction. Blender is
 stopped. The approved Step 11 blueprint still requires a separate visible
 Step 12 contract and separate Flamestrike approval before production.
 
-## Resume Instruction
+## Historical Pre-Recovery Resume Instruction
 
 Read only the latest recovery journal/checkpoint, git status, this reset state,
 the Step 09A authority lock, the Step 11 blueprint, its Step 11 authority lock,

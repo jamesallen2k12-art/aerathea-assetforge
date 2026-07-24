@@ -1,0 +1,86 @@
+{
+  "schema": "AERATHEA_SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_AUTHORITY_LOCK_VALIDATION_V1",
+  "date": "2026-07-24",
+  "artifact_status": "proof only",
+  "authority_lock": {
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_AUTHORITY_LOCK.json",
+    "sha256": "6889b826481e5e11dd10775f2b81467b1014687b7fda9ebbff62d519bfff09bc",
+    "effective_blueprint_status": "authoritative shared-depth recovery blueprint"
+  },
+  "validation_method": {
+    "method": "independent read-only JSON, SHA-256, and Python Fraction replay",
+    "blueprint_or_builder_code_imported": false,
+    "project_validator_created": false,
+    "network_used": false,
+    "geometry_read": false,
+    "geometry_created_or_modified": false,
+    "blender_opened": false
+  },
+  "result": {
+    "checks_passed": 43,
+    "checks_total": 43,
+    "verdict": "PASS",
+    "failed_checks": []
+  },
+  "verified_hashes": {
+    "blueprint": {
+      "sha256": "efdbd8795dff2031fcde9e734868ff4c617dc37ad1e7b3743c3727daea981d58",
+      "unchanged_from_review": true
+    },
+    "approved_step_contract": {
+      "sha256": "b54b2f5d26e4374822aa443fbe2b1d5a78dc05cf2b1c88501c1a2021d6c05d3d"
+    },
+    "decision_approval": {
+      "sha256": "94b30875014cfbf088568cb2b2305fd64449166c3617b8524c8ad5346f4ca7aa"
+    },
+    "independent_blueprint_validation": {
+      "sha256": "48e53e3ddfff94319927aebaec47fcbe9c40ea7369c20a4b73cdc0c38fa47ff5",
+      "result": "66/66 PASS"
+    },
+    "visible_review": {
+      "sha256": "48f5e748b89682f8297686d409f97909b48468777988a143174d34760faa62c9"
+    }
+  },
+  "verified_decision": {
+    "question": "Do you approve SHARED_DEPTH_RECOVERY_BLUEPRINT_A01 as the governing blueprint?",
+    "flamestrike_reply": "approved",
+    "effective_artifact_status": "authoritative shared-depth recovery blueprint"
+  },
+  "verified_shared_dimensions_xyz_cm_exact": {
+    "width": "50719500/517681",
+    "depth": "6644212/149985",
+    "height": "170/1",
+    "cross_asset_tolerance": "0/1"
+  },
+  "verified_variant_assignment": {
+    "SM_DRW_SiegeBreaker_Hammer_A01": "double rune sided",
+    "SM_DRW_FoeHammer_Hammer_A01": "double metal-center-piece sided"
+  },
+  "verified_shared_body_guards": {
+    "canonical_shared_base_required": true,
+    "canonical_shared_base_hash_equality_required": true,
+    "only_local_c04_may_differ": true,
+    "local_c04_may_control_global_bounds": false,
+    "local_c04_stretch_normalize_or_resample_allowed": false,
+    "common_envelope_may_create_unowned_fill_geometry": false,
+    "quarantined_step12_geometry_reuse_allowed": false,
+    "EQ_CANDIDATE_AXIAL_INTERSECTION_allowed": false
+  },
+  "verified_authority_boundary": {
+    "blueprint_approved": true,
+    "builder_change_authority": false,
+    "builder_run_authority": false,
+    "blender_authority": false,
+    "geometry_authority": false,
+    "foe_hammer_source_fork_authority": false,
+    "step_13_authority": false,
+    "retopology_uv_bake_export_authority": false,
+    "unreal_authority": false
+  },
+  "decision": {
+    "authority_lock": "PASS",
+    "blueprint_status": "authoritative",
+    "current_action": "stop",
+    "next_gate": "separate visible fresh-builder contract and separate Flamestrike approval"
+  }
+}

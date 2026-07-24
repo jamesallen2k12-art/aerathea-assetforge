@@ -12,6 +12,36 @@
 - Step 13 authority: `false`
 - Unreal authority: `false`
 
+## Governing Shared-Depth Blueprint — Current Authority
+
+Flamestrike approved `SHARED_DEPTH_RECOVERY_BLUEPRINT_A01`.
+
+- Blueprint status: `authoritative`.
+- Blueprint validation: `proof only; 66/66 PASS`.
+- Authority-lock validation: `proof only; 43/43 PASS`.
+- Exact Foe Hammer XYZ:
+  `50719500/517681 × 6644212/149985 × 170/1 cm`.
+- Decimal XYZ:
+  `97.974428267601 × 44.299176584 × 170 cm`.
+- Shared body: canonically identical to Siege Breaker.
+- Foe Hammer distinction: double metal-center-piece sided.
+- Allowed geometry difference: tagged local `C04` treatment only.
+- Current valid Foe Hammer DCC source candidate: `does not exist`.
+- Former Step 12 metal source: `invalid / quarantined in place`.
+- Fresh builder, Blender, geometry, source fork, Step 13, and Unreal:
+  `unauthorized`.
+
+Authority lock:
+
+`docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_AUTHORITY_LOCK.json`
+
+Approved handoff:
+
+`docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/handoffs/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_APPROVED_HANDOFF.md`
+
+No production action is active. A separate visible fresh-builder contract and
+separate Flamestrike approval are required before DCC work.
+
 ## Establishing Decision
 
 Flamestrike selected Candidate B, the
@@ -32,7 +62,7 @@ The governing approval record is:
 
 `docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_12_DUAL_ASSET_SELECTION_APPROVAL_RECORD.md`
 
-## Current Core Recovery Override — 2026-07-24
+## Historical Core Recovery Override — 2026-07-24
 
 Flamestrike clarified and approved that the unequal rune and metal source
 spans are local `C04` face-treatment extents, not different global body
@@ -119,6 +149,7 @@ as part of the head-side treatment or must be reconciled before advancement.
 
 - Foe Hammer identity and double-metal-center-piece treatment:
   `authoritative`.
+- Shared-depth recovery blueprint: `authoritative`.
 - Former Candidate B geometry assignment: `superseded`.
 - Candidate B Blender source: `invalid / quarantined in place`.
 - Candidate B validation and review renders: `proof only`.
@@ -135,22 +166,23 @@ as part of the head-side treatment or must be reconciled before advancement.
 On resume, verify:
 
 1. this record;
-2. the governing dual-asset selection approval record;
-3. the hash-locked Candidate B source and canonical geometry;
-4. the latest recovery journal/checkpoint; and
-5. git status.
+2. the shared-depth blueprint authority lock and approved handoff;
+3. the governing dual-asset selection approval record;
+4. the hash-locked historical Candidate B source and canonical geometry;
+5. the latest recovery journal/checkpoint; and
+6. git status.
 
-Report that Foe Hammer's identity and double-metal-center-piece treatment are
-authoritative, but its former Step 12 source is
-`invalid / quarantined in place`. There is no standalone or valid Foe Hammer
-DCC source candidate, and it cannot advance without a new recovery contract.
+Report that Foe Hammer's identity, double-metal-center-piece treatment, exact
+shared XYZ, and shared-body blueprint are authoritative. Its former Step 12
+source is `invalid / quarantined in place`; there is no standalone or valid
+Foe Hammer DCC source candidate; and no fresh-builder contract is active.
 
 ## Next Approval Gate
 
 No production action is currently active.
 
-A separate visible contract must create a corrected shared-depth blueprint
-before either twin is rebuilt from the last Core-valid evidence. The
-quarantined Candidate B geometry may not be forked or repaired forward.
+A separate visible fresh-builder contract and separate Flamestrike approval
+are required before either twin is rebuilt from the last Core-valid evidence.
+The quarantined Candidate B geometry may not be forked or repaired forward.
 Step 13, source modification, asset copying/renaming, export, and Unreal
 remain locked.
