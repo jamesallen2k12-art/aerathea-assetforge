@@ -9067,3 +9067,43 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260724-161016/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260724-161016/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 18:56:47 EDT -0400 - before twin hammer measurement-only authority resolution A01
+
+- Snapshot: `Saved/ProjectRecovery/20260724-185647/`
+- Git: branch `main`, HEAD `1852628`, status lines `559`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-185647/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-185647/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-185647/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 19:11:42 EDT -0400 - after twin hammer measurement authority A01 evidence PASS partial resolution
+
+- Snapshot: `Saved/ProjectRecovery/20260724-191142/`
+- Git: branch `main`, HEAD `1852628`, status lines `567`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-191142/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-191142/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-191142/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 19:13:04 EDT -0400 - final twin hammer measurement authority A01 review state
+
+- Snapshot: `Saved/ProjectRecovery/20260724-191304/`
+- Git: branch `main`, HEAD `1852628`, status lines `568`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-191304/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-191304/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-191304/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 19:16:46 EDT -0400 - final approved twin hammer measurement authority A01 decision state
+
+- Snapshot: `Saved/ProjectRecovery/20260724-191646/`
+- Git: branch `main`, HEAD `1852628`, status lines `568`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-191646/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-191646/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-191646/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

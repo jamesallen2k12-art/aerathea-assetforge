@@ -1,0 +1,1320 @@
+{
+  "artifact_status": "proof only",
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "blender_opened": false,
+  "candidate_disposition": "candidate partial authority resolution; production remains blocked",
+  "candidate_manifest": {
+    "artifact_status": "candidate partial authority resolution; production remains blocked",
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_HEAD_CORRESPONDENCE_CONTACT_ROTATIONAL_STATION_AUTHORITY_A01.json",
+    "production_authority": false,
+    "sha256": "7a7c633587b4d39797339077685109eb28c31ca8e28e36f1e888d0506fec2ceb"
+  },
+  "checks": [
+    {
+      "id": "schema",
+      "result": "PASS"
+    },
+    {
+      "id": "contract_hash_and_approval",
+      "result": "PASS"
+    },
+    {
+      "id": "candidate_status_and_ceiling",
+      "result": "PASS"
+    },
+    {
+      "expected": [
+        "AGENTS.md",
+        "Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_BACK_A01.png",
+        "Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_BOTTOM_A01.png",
+        "Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_FRONT_A01.png",
+        "Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_LEFT_A01.png",
+        "Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_RIGHT_A01.png",
+        "Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_TOP_A01.png",
+        "SourceAssets/Concepts/SiegeBreaker/siege_breaker_back_view.png",
+        "SourceAssets/Concepts/SiegeBreaker/siege_breaker_bottom_view.png",
+        "SourceAssets/Concepts/SiegeBreaker/siege_breaker_front_view.png",
+        "SourceAssets/Concepts/SiegeBreaker/siege_breaker_left_view.png",
+        "SourceAssets/Concepts/SiegeBreaker/siege_breaker_right_view.png",
+        "SourceAssets/Concepts/SiegeBreaker/siege_breaker_top_view.png",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/evidence/STEP_09A_COMPONENT_SCANLINES.json.gz",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/manifests/STEP_09A_AUTHORITY_LOCK.json",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/manifests/STEP_09A_BOUNDARY_AND_CORRESPONDENCE_INDEX.json",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/steps/STEP_09A_CONTRACT.md",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_06_FRONT_MEASUREMENT_CONTRACT.json",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_08_BOTTOM_MEASUREMENT_CONTRACT.json",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_08_TOP_MEASUREMENT_CONTRACT.json",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_09_INTEGRATED_EXACT_MEASUREMENT_INDEX.json",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01.json",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_AUTHORITY_LOCK.json",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_STATE.json",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_CENTER_POST_HANDLE_FRESH_BUILD_CORRECTION_A01_AUTHORITY_PREFLIGHT.json",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/TWIN_HAMMER_CENTER_POST_AND_HANDLE_FRESH_BUILD_CORRECTION_A01_CONTRACT.md",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/TWIN_HAMMER_HEAD_CORRESPONDENCE_CONTACT_AND_ROTATIONAL_STATION_AUTHORITY_RESOLUTION_A01_CONTRACT.md",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_R8_CORRECT_AXIS_TWO_HAMMER_A01_CONTRACT.md",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_R8_PIXEL_EXACT_STEPS01_16_A01_CONTRACT.md",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_STEP02_COMPONENT_EQUATION_CONTRACT_DRAFT.md"
+      ],
+      "id": "authority_replay_path_set",
+      "observed": [
+        "AGENTS.md",
+        "Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_BACK_A01.png",
+        "Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_BOTTOM_A01.png",
+        "Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_FRONT_A01.png",
+        "Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_LEFT_A01.png",
+        "Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_RIGHT_A01.png",
+        "Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_TOP_A01.png",
+        "SourceAssets/Concepts/SiegeBreaker/siege_breaker_back_view.png",
+        "SourceAssets/Concepts/SiegeBreaker/siege_breaker_bottom_view.png",
+        "SourceAssets/Concepts/SiegeBreaker/siege_breaker_front_view.png",
+        "SourceAssets/Concepts/SiegeBreaker/siege_breaker_left_view.png",
+        "SourceAssets/Concepts/SiegeBreaker/siege_breaker_right_view.png",
+        "SourceAssets/Concepts/SiegeBreaker/siege_breaker_top_view.png",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/evidence/STEP_09A_COMPONENT_SCANLINES.json.gz",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/manifests/STEP_09A_AUTHORITY_LOCK.json",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/manifests/STEP_09A_BOUNDARY_AND_CORRESPONDENCE_INDEX.json",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/steps/STEP_09A_CONTRACT.md",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_06_FRONT_MEASUREMENT_CONTRACT.json",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_08_BOTTOM_MEASUREMENT_CONTRACT.json",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_08_TOP_MEASUREMENT_CONTRACT.json",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_09_INTEGRATED_EXACT_MEASUREMENT_INDEX.json",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01.json",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_AUTHORITY_LOCK.json",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_STATE.json",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_CENTER_POST_HANDLE_FRESH_BUILD_CORRECTION_A01_AUTHORITY_PREFLIGHT.json",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/TWIN_HAMMER_CENTER_POST_AND_HANDLE_FRESH_BUILD_CORRECTION_A01_CONTRACT.md",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/TWIN_HAMMER_HEAD_CORRESPONDENCE_CONTACT_AND_ROTATIONAL_STATION_AUTHORITY_RESOLUTION_A01_CONTRACT.md",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_R8_CORRECT_AXIS_TWO_HAMMER_A01_CONTRACT.md",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_R8_PIXEL_EXACT_STEPS01_16_A01_CONTRACT.md",
+        "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_STEP02_COMPONENT_EQUATION_CONTRACT_DRAFT.md"
+      ],
+      "result": "PASS"
+    },
+    {
+      "expected": "5d2d2637a58113f0a6f5ec92e40d8bb2bda9e03fb58b4868a0d9dfbb3b57ad55",
+      "id": "authority_hash::AGENTS.md",
+      "observed": "5d2d2637a58113f0a6f5ec92e40d8bb2bda9e03fb58b4868a0d9dfbb3b57ad55",
+      "result": "PASS"
+    },
+    {
+      "expected": "f09dd1ad3978f39e10ecee8ea7efa84336520f0cea4921fe3c410dfd04019694",
+      "id": "authority_hash::Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_BACK_A01.png",
+      "observed": "f09dd1ad3978f39e10ecee8ea7efa84336520f0cea4921fe3c410dfd04019694",
+      "result": "PASS"
+    },
+    {
+      "expected": "d2a32732fd480a0556e882e304bcfbff1dd82d0a913ad4c36117109406de988e",
+      "id": "authority_hash::Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_BOTTOM_A01.png",
+      "observed": "d2a32732fd480a0556e882e304bcfbff1dd82d0a913ad4c36117109406de988e",
+      "result": "PASS"
+    },
+    {
+      "expected": "9a34588afd4fef32001cd9cb2115699e7506ef1e90331c19f4d32483c60aab8c",
+      "id": "authority_hash::Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_FRONT_A01.png",
+      "observed": "9a34588afd4fef32001cd9cb2115699e7506ef1e90331c19f4d32483c60aab8c",
+      "result": "PASS"
+    },
+    {
+      "expected": "7215495802065bb1907ec67f46e6f7c622b9beaf768eb710a5fc12880a6b1cc5",
+      "id": "authority_hash::Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_LEFT_A01.png",
+      "observed": "7215495802065bb1907ec67f46e6f7c622b9beaf768eb710a5fc12880a6b1cc5",
+      "result": "PASS"
+    },
+    {
+      "expected": "58f3199babbcf9323751d04f0ffafa4316048243cf2f39992cdb6b04176306e8",
+      "id": "authority_hash::Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_RIGHT_A01.png",
+      "observed": "58f3199babbcf9323751d04f0ffafa4316048243cf2f39992cdb6b04176306e8",
+      "result": "PASS"
+    },
+    {
+      "expected": "be3e0b70de7a6e4fad025315f22feb21dc948ea9c3e7efb0adb63a983f190f9c",
+      "id": "authority_hash::Saved/AssetForgeResearch/SiegeBreaker/A12_R8_SixViewGeneration/VisualReference_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R8_TOP_A01.png",
+      "observed": "be3e0b70de7a6e4fad025315f22feb21dc948ea9c3e7efb0adb63a983f190f9c",
+      "result": "PASS"
+    },
+    {
+      "expected": "15b4633f2df4ee06115ef4a7e238f287ebece1bae514ad4005c1036a57359799",
+      "id": "authority_hash::SourceAssets/Concepts/SiegeBreaker/siege_breaker_back_view.png",
+      "observed": "15b4633f2df4ee06115ef4a7e238f287ebece1bae514ad4005c1036a57359799",
+      "result": "PASS"
+    },
+    {
+      "expected": "634dcf706a95a7f967b0c73d3c28fff318e3f91b2866e790369a57fa3b6e8d91",
+      "id": "authority_hash::SourceAssets/Concepts/SiegeBreaker/siege_breaker_bottom_view.png",
+      "observed": "634dcf706a95a7f967b0c73d3c28fff318e3f91b2866e790369a57fa3b6e8d91",
+      "result": "PASS"
+    },
+    {
+      "expected": "d00bf9ffcfd4862884626fa961c5f6b4fd6cedfdff7936b2210ca2a905e57e95",
+      "id": "authority_hash::SourceAssets/Concepts/SiegeBreaker/siege_breaker_front_view.png",
+      "observed": "d00bf9ffcfd4862884626fa961c5f6b4fd6cedfdff7936b2210ca2a905e57e95",
+      "result": "PASS"
+    },
+    {
+      "expected": "1a23e0c24f7be4b12df93e2509b9d300acc9161a21a32b336f7cf63c1288d91b",
+      "id": "authority_hash::SourceAssets/Concepts/SiegeBreaker/siege_breaker_left_view.png",
+      "observed": "1a23e0c24f7be4b12df93e2509b9d300acc9161a21a32b336f7cf63c1288d91b",
+      "result": "PASS"
+    },
+    {
+      "expected": "04a1e9359d518b1dec35fe161020bd23ab9e2f8d5934f24e4184aecaa91d8330",
+      "id": "authority_hash::SourceAssets/Concepts/SiegeBreaker/siege_breaker_right_view.png",
+      "observed": "04a1e9359d518b1dec35fe161020bd23ab9e2f8d5934f24e4184aecaa91d8330",
+      "result": "PASS"
+    },
+    {
+      "expected": "06d9cc7f78a4fe459a1f620e4787b53bf63399f7215bb9106a4e264749147d1c",
+      "id": "authority_hash::SourceAssets/Concepts/SiegeBreaker/siege_breaker_top_view.png",
+      "observed": "06d9cc7f78a4fe459a1f620e4787b53bf63399f7215bb9106a4e264749147d1c",
+      "result": "PASS"
+    },
+    {
+      "expected": "396adfbaaefc8a8ea35104e5e96dfde322510fb4ce88530fbb32f7f3073b3562",
+      "id": "authority_hash::docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/evidence/STEP_09A_COMPONENT_SCANLINES.json.gz",
+      "observed": "396adfbaaefc8a8ea35104e5e96dfde322510fb4ce88530fbb32f7f3073b3562",
+      "result": "PASS"
+    },
+    {
+      "expected": "a7e07ad68e9b2737c7c70e71e9df714766a285695693e741197900e17c3a06a5",
+      "id": "authority_hash::docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/manifests/STEP_09A_AUTHORITY_LOCK.json",
+      "observed": "a7e07ad68e9b2737c7c70e71e9df714766a285695693e741197900e17c3a06a5",
+      "result": "PASS"
+    },
+    {
+      "expected": "e190ed266753c797d4f9ec812154ff3b29f5d5d780e53e235e780c43492d0bd8",
+      "id": "authority_hash::docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/manifests/STEP_09A_BOUNDARY_AND_CORRESPONDENCE_INDEX.json",
+      "observed": "e190ed266753c797d4f9ec812154ff3b29f5d5d780e53e235e780c43492d0bd8",
+      "result": "PASS"
+    },
+    {
+      "expected": "be1fd161263dca733ce3ca84c0648871f98383b162652f4a6fdac0ba199a528b",
+      "id": "authority_hash::docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/steps/STEP_09A_CONTRACT.md",
+      "observed": "be1fd161263dca733ce3ca84c0648871f98383b162652f4a6fdac0ba199a528b",
+      "result": "PASS"
+    },
+    {
+      "expected": "85f09fc89c8b73df8e6fdf47924e2251da9dda6decabe44fa3f3b2577b7708eb",
+      "id": "authority_hash::docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_06_FRONT_MEASUREMENT_CONTRACT.json",
+      "observed": "85f09fc89c8b73df8e6fdf47924e2251da9dda6decabe44fa3f3b2577b7708eb",
+      "result": "PASS"
+    },
+    {
+      "expected": "aea70d998dabe9f28d3ec5fb44a2d2206f8874096a3d33ee9b836074b2ede9a2",
+      "id": "authority_hash::docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_08_BOTTOM_MEASUREMENT_CONTRACT.json",
+      "observed": "aea70d998dabe9f28d3ec5fb44a2d2206f8874096a3d33ee9b836074b2ede9a2",
+      "result": "PASS"
+    },
+    {
+      "expected": "5925dee1ab39a0535150804a4353157b17d51fec648791774808c9c832dd8b36",
+      "id": "authority_hash::docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_08_TOP_MEASUREMENT_CONTRACT.json",
+      "observed": "5925dee1ab39a0535150804a4353157b17d51fec648791774808c9c832dd8b36",
+      "result": "PASS"
+    },
+    {
+      "expected": "5a0a3eea8f877d55216f9efabe15b0ee1cf938e4c15a825a0e218f72ba76839a",
+      "id": "authority_hash::docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_09_INTEGRATED_EXACT_MEASUREMENT_INDEX.json",
+      "observed": "5a0a3eea8f877d55216f9efabe15b0ee1cf938e4c15a825a0e218f72ba76839a",
+      "result": "PASS"
+    },
+    {
+      "expected": "efdbd8795dff2031fcde9e734868ff4c617dc37ad1e7b3743c3727daea981d58",
+      "id": "authority_hash::docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01.json",
+      "observed": "efdbd8795dff2031fcde9e734868ff4c617dc37ad1e7b3743c3727daea981d58",
+      "result": "PASS"
+    },
+    {
+      "expected": "6889b826481e5e11dd10775f2b81467b1014687b7fda9ebbff62d519bfff09bc",
+      "id": "authority_hash::docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_AUTHORITY_LOCK.json",
+      "observed": "6889b826481e5e11dd10775f2b81467b1014687b7fda9ebbff62d519bfff09bc",
+      "result": "PASS"
+    },
+    {
+      "expected": "da38d30770c297b9f5ee74affe8dad9a2c0ff2ab4f5591891f5da1e37327cac0",
+      "id": "authority_hash::docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_STATE.json",
+      "observed": "da38d30770c297b9f5ee74affe8dad9a2c0ff2ab4f5591891f5da1e37327cac0",
+      "result": "PASS"
+    },
+    {
+      "expected": "b2546925d0be580fc002b88dbffb9284e5a028b3eed55f372ad5b752de7d7eee",
+      "id": "authority_hash::docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_CENTER_POST_HANDLE_FRESH_BUILD_CORRECTION_A01_AUTHORITY_PREFLIGHT.json",
+      "observed": "b2546925d0be580fc002b88dbffb9284e5a028b3eed55f372ad5b752de7d7eee",
+      "result": "PASS"
+    },
+    {
+      "expected": "1e424dfdbb12b7e12c67e3a6c4cae29c1eb80309c5fe0d3717f6e0fd772e8b37",
+      "id": "authority_hash::docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/TWIN_HAMMER_CENTER_POST_AND_HANDLE_FRESH_BUILD_CORRECTION_A01_CONTRACT.md",
+      "observed": "1e424dfdbb12b7e12c67e3a6c4cae29c1eb80309c5fe0d3717f6e0fd772e8b37",
+      "result": "PASS"
+    },
+    {
+      "expected": "1352b2c008c30bda6e2755fc568126e62fc65e049b8a79c13808f4ea7e1a4548",
+      "id": "authority_hash::docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/TWIN_HAMMER_HEAD_CORRESPONDENCE_CONTACT_AND_ROTATIONAL_STATION_AUTHORITY_RESOLUTION_A01_CONTRACT.md",
+      "observed": "1352b2c008c30bda6e2755fc568126e62fc65e049b8a79c13808f4ea7e1a4548",
+      "result": "PASS"
+    },
+    {
+      "expected": "c76ba4e02336ed609e7c747d200e3e63bc247b8bf43b44541bea9392aa006517",
+      "id": "authority_hash::docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_R8_CORRECT_AXIS_TWO_HAMMER_A01_CONTRACT.md",
+      "observed": "c76ba4e02336ed609e7c747d200e3e63bc247b8bf43b44541bea9392aa006517",
+      "result": "PASS"
+    },
+    {
+      "expected": "77b0339126388be01f59532cd6b79228450b61e739ebc10c2f849833fd337bd4",
+      "id": "authority_hash::docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_R8_PIXEL_EXACT_STEPS01_16_A01_CONTRACT.md",
+      "observed": "77b0339126388be01f59532cd6b79228450b61e739ebc10c2f849833fd337bd4",
+      "result": "PASS"
+    },
+    {
+      "expected": "a40d0b67d802687ac3c9ec9ad8e00a915cc1dc730ce31f3fab00b18a1837a21c",
+      "id": "authority_hash::docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_STEP02_COMPONENT_EQUATION_CONTRACT_DRAFT.md",
+      "observed": "a40d0b67d802687ac3c9ec9ad8e00a915cc1dc730ce31f3fab00b18a1837a21c",
+      "result": "PASS"
+    },
+    {
+      "id": "authority_replay_summary",
+      "result": "PASS"
+    },
+    {
+      "expected": {
+        "mode": "RGB",
+        "size_pixels": [
+          1122,
+          1402
+        ]
+      },
+      "id": "new_r8_decode::front",
+      "observed": {
+        "mode": "RGB",
+        "size_pixels": [
+          1122,
+          1402
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "expected": {
+        "mode": "RGB",
+        "size_pixels": [
+          1122,
+          1402
+        ]
+      },
+      "id": "new_r8_decode::back",
+      "observed": {
+        "mode": "RGB",
+        "size_pixels": [
+          1122,
+          1402
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "expected": {
+        "mode": "RGB",
+        "size_pixels": [
+          1122,
+          1402
+        ]
+      },
+      "id": "new_r8_decode::left",
+      "observed": {
+        "mode": "RGB",
+        "size_pixels": [
+          1122,
+          1402
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "expected": {
+        "mode": "RGB",
+        "size_pixels": [
+          1122,
+          1402
+        ]
+      },
+      "id": "new_r8_decode::right",
+      "observed": {
+        "mode": "RGB",
+        "size_pixels": [
+          1122,
+          1402
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "expected": {
+        "mode": "RGB",
+        "size_pixels": [
+          1536,
+          1024
+        ]
+      },
+      "id": "new_r8_decode::top",
+      "observed": {
+        "mode": "RGB",
+        "size_pixels": [
+          1536,
+          1024
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "expected": {
+        "mode": "RGB",
+        "size_pixels": [
+          1536,
+          1024
+        ]
+      },
+      "id": "new_r8_decode::bottom",
+      "observed": {
+        "mode": "RGB",
+        "size_pixels": [
+          1536,
+          1024
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "id": "step09_input_hash_chain",
+      "result": "PASS"
+    },
+    {
+      "id": "step09a_scope",
+      "result": "PASS"
+    },
+    {
+      "id": "source_role_split",
+      "result": "PASS"
+    },
+    {
+      "id": "boundary_inventory_id_set",
+      "result": "PASS"
+    },
+    {
+      "id": "boundary_inventory::BOTTOM_C02_INNER_OWNER_EDGE",
+      "result": "PASS"
+    },
+    {
+      "id": "boundary_inventory::BOTTOM_C03_INNER_OWNER_EDGE",
+      "result": "PASS"
+    },
+    {
+      "id": "boundary_inventory::BOTTOM_STONE_SEPARATION_WITHOUT_CENTRAL_OWNER",
+      "result": "PASS"
+    },
+    {
+      "id": "boundary_inventory::FRONT_C01_C06_CONTACT",
+      "result": "PASS"
+    },
+    {
+      "id": "boundary_inventory::FRONT_C02_INNER_OWNER_EDGE",
+      "result": "PASS"
+    },
+    {
+      "id": "boundary_inventory::FRONT_C03_INNER_OWNER_EDGE",
+      "result": "PASS"
+    },
+    {
+      "id": "boundary_inventory::FRONT_C06_C07_CONTACT",
+      "result": "PASS"
+    },
+    {
+      "id": "boundary_inventory::FRONT_C12_RESERVED_C01_CONTACT",
+      "result": "PASS"
+    },
+    {
+      "id": "boundary_inventory::RIGHT_C04_CANDIDATE_HALF_BOUNDARIES",
+      "result": "PASS"
+    },
+    {
+      "id": "boundary_inventory::RIGHT_C04_TOP_BOTTOM_EDGES",
+      "result": "PASS"
+    },
+    {
+      "id": "boundary_inventory::TOP_C02_INNER_OWNER_EDGE",
+      "result": "PASS"
+    },
+    {
+      "id": "boundary_inventory::TOP_C03_INNER_OWNER_EDGE",
+      "result": "PASS"
+    },
+    {
+      "id": "boundary_inventory::TOP_STONE_SEPARATION_WITHOUT_CENTRAL_OWNER",
+      "result": "PASS"
+    },
+    {
+      "id": "projected_contact::FRONT_C01_C06_CONTACT",
+      "result": "PASS"
+    },
+    {
+      "id": "projected_contact::FRONT_C06_C07_CONTACT",
+      "result": "PASS"
+    },
+    {
+      "id": "projected_contact::FRONT_C12_RESERVED_C01_CONTACT",
+      "result": "PASS"
+    },
+    {
+      "id": "c04_projected_boundary::metal_center_piece_side::top",
+      "result": "PASS"
+    },
+    {
+      "id": "c04_projected_boundary::metal_center_piece_side::bottom",
+      "result": "PASS"
+    },
+    {
+      "id": "c04_projected_boundary::rune_side::top",
+      "result": "PASS"
+    },
+    {
+      "id": "c04_projected_boundary::rune_side::bottom",
+      "result": "PASS"
+    },
+    {
+      "id": "bottom_center_separation_recorded_absence",
+      "result": "PASS"
+    },
+    {
+      "id": "head_embedding_block::FRONT_C02_INNER_OWNER_EDGE",
+      "result": "PASS"
+    },
+    {
+      "id": "head_embedding_block::TOP_C02_INNER_OWNER_EDGE",
+      "result": "PASS"
+    },
+    {
+      "id": "head_embedding_block::BOTTOM_C02_INNER_OWNER_EDGE",
+      "result": "PASS"
+    },
+    {
+      "id": "head_embedding_block::FRONT_C03_INNER_OWNER_EDGE",
+      "result": "PASS"
+    },
+    {
+      "id": "head_embedding_block::TOP_C03_INNER_OWNER_EDGE",
+      "result": "PASS"
+    },
+    {
+      "id": "head_embedding_block::BOTTOM_C03_INNER_OWNER_EDGE",
+      "result": "PASS"
+    },
+    {
+      "expected": {
+        "boundary_count": 6,
+        "sample_count": 2566
+      },
+      "id": "head_embedding_summary",
+      "observed": {
+        "boundary_count": 6,
+        "sample_count": 2566
+      },
+      "result": "PASS"
+    },
+    {
+      "id": "front_head_z_registration_conflict",
+      "result": "PASS"
+    },
+    {
+      "id": "head_closure_count_and_blocks",
+      "result": "PASS"
+    },
+    {
+      "id": "head_zero_triangulation",
+      "result": "PASS"
+    },
+    {
+      "id": "station_component_count",
+      "result": "PASS"
+    },
+    {
+      "id": "station::C06_UPPER_HAFT_CAP",
+      "result": "PASS"
+    },
+    {
+      "id": "station::C07_HAFT",
+      "result": "PASS"
+    },
+    {
+      "id": "station::C07B_HAFT_TO_HANDLE_FERRULE",
+      "result": "PASS"
+    },
+    {
+      "id": "station::C08_GRIP",
+      "result": "PASS"
+    },
+    {
+      "id": "station::C09_LOWER_COLLAR",
+      "result": "PASS"
+    },
+    {
+      "id": "station::C10_POMMEL_BODY",
+      "result": "PASS"
+    },
+    {
+      "id": "station::C11_POMMEL_TERMINAL_CAP",
+      "result": "PASS"
+    },
+    {
+      "id": "longitudinal_continuity",
+      "result": "PASS"
+    },
+    {
+      "id": "transition_edge_set",
+      "result": "PASS"
+    },
+    {
+      "id": "transition::600",
+      "result": "PASS"
+    },
+    {
+      "id": "transition::670",
+      "result": "PASS"
+    },
+    {
+      "id": "transition::870",
+      "result": "PASS"
+    },
+    {
+      "id": "transition::955",
+      "result": "PASS"
+    },
+    {
+      "id": "transition::1110",
+      "result": "PASS"
+    },
+    {
+      "id": "transition::1150",
+      "result": "PASS"
+    },
+    {
+      "id": "transition::1220",
+      "result": "PASS"
+    },
+    {
+      "id": "transition::1271",
+      "result": "PASS"
+    },
+    {
+      "id": "only_c08_c09_coordinate_equal_transition",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_registration",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row_count",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::955",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::956",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::957",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::958",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::959",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::960",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::961",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::962",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::963",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::964",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::965",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::966",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::967",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::968",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::969",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::970",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::971",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::972",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::973",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::974",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::975",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::976",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::977",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::978",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::979",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::980",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::981",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::982",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::983",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::984",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::985",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::986",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::987",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::988",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::989",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::990",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::991",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::992",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::993",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::994",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::995",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::996",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::997",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::998",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::999",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1000",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1001",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1002",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1003",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1004",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1005",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1006",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1007",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1008",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1009",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1010",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1011",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1012",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1013",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1014",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1015",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1016",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1017",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1018",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1019",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1020",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1021",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1022",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1023",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1024",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1025",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1026",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1027",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1028",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1029",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1030",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1031",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1032",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1033",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1034",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1035",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1036",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1037",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1038",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1039",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1040",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1041",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1042",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1043",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1044",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1045",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1046",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1047",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1048",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1049",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1050",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1051",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1052",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1053",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1054",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1055",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1056",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1057",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1058",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1059",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1060",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1061",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1062",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1063",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1064",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1065",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1066",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1067",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1068",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1069",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1070",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1071",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1072",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1073",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1074",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1075",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1076",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1077",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1078",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1079",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1080",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1081",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1082",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1083",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1084",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1085",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1086",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1087",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1088",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1089",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1090",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1091",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1092",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1093",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1094",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1095",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1096",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1097",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1098",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1099",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1100",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1101",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1102",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1103",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1104",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1105",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1106",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1107",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1108",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_row::1109",
+      "result": "PASS"
+    },
+    {
+      "id": "c08_range",
+      "result": "PASS"
+    },
+    {
+      "id": "top_protected_separation",
+      "result": "PASS"
+    },
+    {
+      "id": "bottom_protected_separation",
+      "result": "PASS"
+    },
+    {
+      "id": "protected_negative_space_counts",
+      "result": "PASS"
+    },
+    {
+      "id": "manifest_prohibited_output_counts",
+      "result": "PASS"
+    },
+    {
+      "expected": [],
+      "id": "filesystem_no_forbidden_prefixed_outputs",
+      "observed": [],
+      "result": "PASS"
+    },
+    {
+      "id": "tools_do_not_import_blender_or_each_other",
+      "result": "PASS"
+    },
+    {
+      "id": "remaining_block_labels",
+      "result": "PASS"
+    },
+    {
+      "id": "next_gate_stays_manual",
+      "result": "PASS"
+    }
+  ],
+  "checks_failed": 0,
+  "checks_passed": 261,
+  "checks_total": 261,
+  "contract": {
+    "approved_sha256": "1352b2c008c30bda6e2755fc568126e62fc65e049b8a79c13808f4ea7e1a4548",
+    "observed_sha256": "1352b2c008c30bda6e2755fc568126e62fc65e049b8a79c13808f4ea7e1a4548",
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/TWIN_HAMMER_HEAD_CORRESPONDENCE_CONTACT_AND_ROTATIONAL_STATION_AUTHORITY_RESOLUTION_A01_CONTRACT.md"
+  },
+  "date": "2026-07-24",
+  "failed_check_ids": [],
+  "geometry_created": false,
+  "imagery_created": false,
+  "paired_asset": "SM_DRW_FoeHammer_Hammer_A01",
+  "production_authority": false,
+  "remaining_authority_need": "Flamestrike approve/revise/reject/blocked decision on the candidate tables; complete head embedding/closure and unequal-radius transition rules remain blocked",
+  "replayed_observation_totals": {
+    "authority_hashes": 30,
+    "blender_outputs": 0,
+    "c08_rows": 155,
+    "component_intervals": 7,
+    "geometry_outputs": 0,
+    "head_boundary_samples": 2566,
+    "head_boundary_sequences": 6,
+    "head_triangle_index_triplets": 0,
+    "image_outputs": 0,
+    "new_r8_images_decoded": 6,
+    "projected_contact_unit_edges": 333,
+    "rotational_transitions": 8,
+    "station_edges": 8
+  },
+  "result": "PASS",
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "schema": "AERATHEA_TWIN_HAMMER_HEAD_CONTACT_ROTATIONAL_AUTHORITY_A01_INDEPENDENT_AUDIT_V1",
+  "tools": {
+    "independent_auditor": {
+      "imports_resolver": false,
+      "path": "Tools/DCC/audit_twin_hammer_head_contact_rotational_authority_a01.py",
+      "sha256": "75d3b54b4d6f5d476be1fec543aeaa32d3416a4e0ec2dd0ccb60da3d5b9bed2e"
+    },
+    "resolver": {
+      "path": "Tools/DCC/measure_twin_hammer_head_contact_rotational_authority_a01.py",
+      "sha256": "8d9abde1846b3d412af4dc0684b492e29f7aa7a59a83c7f324c88d6cd07d77cb"
+    }
+  }
+}
