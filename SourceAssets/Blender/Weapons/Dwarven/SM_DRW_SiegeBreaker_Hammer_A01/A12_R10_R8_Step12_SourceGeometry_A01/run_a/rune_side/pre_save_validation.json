@@ -1,0 +1,163 @@
+{
+  "bounds": {
+    "dimensions_cm": [
+      97.97442826760108,
+      34.434306569343065,
+      170.0
+    ],
+    "dimensions_exact": [
+      "50719500/517681",
+      "9435/274",
+      "170/1"
+    ],
+    "maximum_cm": [
+      48.98721413380054,
+      17.217153284671532,
+      170.0
+    ],
+    "maximum_exact": [
+      "25359750/517681",
+      "9435/548",
+      "170/1"
+    ],
+    "minimum_cm": [
+      -48.98721413380054,
+      -17.217153284671532,
+      0.0
+    ],
+    "minimum_exact": [
+      "-25359750/517681",
+      "-9435/548",
+      "0/1"
+    ]
+  },
+  "checks": [
+    {
+      "expected": {
+        "maximum_absolute_difference_cm": "1/5",
+        "maximum_per_side_source_pixels": "1/1",
+        "maximum_relative_difference": "1/400"
+      },
+      "id": "BUILD-CROSS-VIEW-WIDTH-TOLERANCE",
+      "observed": {
+        "all_limits_pass": true,
+        "axial_pixel_scale_cm_exact": "52020/517681",
+        "completed_difference_cm_exact": "52020/517681",
+        "completed_relative_difference_exact": "1/974",
+        "expected_width_cm_exact": "104040/1063",
+        "limit_results": {
+          "absolute_difference_cm": true,
+          "per_side_source_pixels": true,
+          "relative_difference": true
+        },
+        "maximum_per_side_source_pixels_exact": "1/2",
+        "measured_geometry_clipped": false,
+        "negative_side_difference_cm_exact": "26010/517681",
+        "observed_width_cm_exact": "50719500/517681",
+        "positive_side_difference_cm_exact": "26010/517681",
+        "thresholds_exact": {
+          "maximum_absolute_difference_cm": "1/5",
+          "maximum_per_side_source_pixels": "1/1",
+          "maximum_relative_difference": "1/400"
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "expected": {
+        "center_x_exact": "0/1",
+        "center_y_exact": "0/1",
+        "depth_exact": "9435/274",
+        "height_exact": "170/1",
+        "minimum_z_exact": "0/1"
+      },
+      "id": "BUILD-EXACT-DEPTH-HEIGHT-CENTER",
+      "observed": {
+        "center_x_exact": "0/1",
+        "center_y_exact": "0/1",
+        "depth_exact": "9435/274",
+        "height_exact": "170/1",
+        "minimum_z_exact": "0/1"
+      },
+      "result": "PASS"
+    },
+    {
+      "expected": [
+        "Zmin=0",
+        "Zmax=170"
+      ],
+      "id": "BUILD-PIVOT-AND-HEIGHT",
+      "observed": [
+        "0/1",
+        "170/1"
+      ],
+      "result": "PASS"
+    },
+    {
+      "expected": 64,
+      "id": "BUILD-ANGULAR-DIVISIONS",
+      "observed": [
+        64
+      ],
+      "result": "PASS"
+    },
+    {
+      "expected": 1,
+      "id": "BUILD-C04-LOCAL-MIRROR",
+      "observed": 1,
+      "result": "PASS"
+    },
+    {
+      "expected": 1,
+      "id": "BUILD-WHOLE-RZ180",
+      "observed": 1,
+      "result": "PASS"
+    },
+    {
+      "expected": "every emitted mesh record nonempty",
+      "id": "BUILD-NONEMPTY-RECORDS",
+      "observed": [],
+      "result": "PASS"
+    },
+    {
+      "expected": 0,
+      "id": "BUILD-NO-DEGENERATE-FACE-INDICES",
+      "observed": 0,
+      "result": "PASS"
+    },
+    {
+      "expected": [],
+      "id": "BUILD-NO-EXACT-ZERO-AREA-FACES",
+      "observed": [],
+      "result": "PASS"
+    }
+  ],
+  "cross_view_width_tolerance": {
+    "all_limits_pass": true,
+    "axial_pixel_scale_cm_exact": "52020/517681",
+    "completed_difference_cm_exact": "52020/517681",
+    "completed_relative_difference_exact": "1/974",
+    "expected_width_cm_exact": "104040/1063",
+    "limit_results": {
+      "absolute_difference_cm": true,
+      "per_side_source_pixels": true,
+      "relative_difference": true
+    },
+    "maximum_per_side_source_pixels_exact": "1/2",
+    "measured_geometry_clipped": false,
+    "negative_side_difference_cm_exact": "26010/517681",
+    "observed_width_cm_exact": "50719500/517681",
+    "positive_side_difference_cm_exact": "26010/517681",
+    "thresholds_exact": {
+      "maximum_absolute_difference_cm": "1/5",
+      "maximum_per_side_source_pixels": "1/1",
+      "maximum_relative_difference": "1/400"
+    }
+  },
+  "high_poly_nanite_amendment_applied": true,
+  "mesh_records": 50,
+  "polygons": 1103198,
+  "result": "PASS",
+  "triangles_observed_not_gated": 2202434,
+  "vertices": 1120742
+}

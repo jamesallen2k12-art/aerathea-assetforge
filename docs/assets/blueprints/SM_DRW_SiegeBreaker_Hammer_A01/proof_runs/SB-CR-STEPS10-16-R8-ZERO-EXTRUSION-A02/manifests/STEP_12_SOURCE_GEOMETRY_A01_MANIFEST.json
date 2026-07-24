@@ -334,6 +334,188 @@
         "reason": "The approved pre-save gate stopped the conflicting geometry before any candidate file was accepted."
       },
       "next_gate": "Flamestrike must approve or reject the exact proposed Step 11E front-width intersection rule. Approval authorizes only that clipping amendment and resumption of the already-approved Step 12 dual-candidate build."
+    },
+    {
+      "schema": "AERATHEA_R8_STEP12_CROSS_VIEW_SILHOUETTE_TOLERANCE_CLEARANCE_SUPPLEMENT_V1",
+      "date": "2026-07-24",
+      "artifact_status": "authoritative",
+      "approved_tolerance_rule": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_11E_CROSS_VIEW_SILHOUETTE_TOLERANCE_AMENDMENT_A01.md",
+        "sha256": "640d19d6012b4c9926d7ddd431812481219fc65703effa08b194af2116e78b74",
+        "artifact_status": "authoritative",
+        "result": "PASS",
+        "maximum_per_side_source_pixels_exact": "1/1",
+        "maximum_relative_difference_exact": "1/400",
+        "maximum_absolute_difference_cm_exact": "1/5",
+        "all_limits_required": true,
+        "measured_geometry_clipped": false,
+        "exact_constraints_relaxed": false,
+        "step13_authorized": false,
+        "unreal_authorized": false
+      },
+      "approval": {
+        "authority": "Flamestrike",
+        "response": "agreed ... proceed with this change",
+        "scope": "Replace the exact cross-view silhouette-dimension equality gate with the bounded three-limit tolerance while preserving measured geometry and all exact technical constraints."
+      },
+      "proof_outputs": [
+        {
+          "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_11E_CROSS_VIEW_SILHOUETTE_TOLERANCE_AMENDMENT_A01_VALIDATION.json",
+          "sha256": "ee9337b65a7a5d0fa71295dfc5b153690667c00aea646cadc6ff1eb3e697ce4d",
+          "artifact_status": "proof only",
+          "result": "PASS"
+        },
+        {
+          "path": "Tools/DCC/build_siegebreaker_r8_step12_source_geometry_a01.py",
+          "sha256": "dfb613fa98d1f3207b98f1535746dafdd4535748b21de24a38b59ff10f3c67f4",
+          "artifact_status": "proof only"
+        },
+        {
+          "path": "Tools/DCC/audit_siegebreaker_r8_step12_source_geometry_a01.py",
+          "sha256": "badbf73bc12d4a6d55aad4f62dda6f7ac8363cfc7e1491b400343ff9548c300a",
+          "artifact_status": "proof only"
+        }
+      ],
+      "validation_summary": {
+        "authority_checks": "42 pass / 0 fail",
+        "semantic_checks": "51 pass / 0 fail",
+        "exact_payload_checks": "6 pass / 0 fail",
+        "closure_constructibility_checks": "16 pass / 0 fail",
+        "tolerance_semantic_checks": "18 pass / 0 fail",
+        "tolerance_measurement_checks": "4 pass / 0 fail",
+        "current_width_expected_cm_exact": "104040/1063",
+        "current_width_observed_cm_exact": "50719500/517681",
+        "current_width_per_side_source_pixels_exact": "1/2",
+        "current_width_relative_difference_exact": "1/974",
+        "current_width_absolute_difference_cm_exact": "52020/517681"
+      },
+      "resolved_block": "Blueprint block: rule missing — axial owner cells require an exact front-width intersection",
+      "rejected_alternative": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_11E_AXIAL_WIDTH_INTERSECTION_AMENDMENT_A01_PROPOSED.md",
+        "sha256": "a9f8e6e2ada2ea0a3955251bc8a8cc78fa0851f9247063e14204974e6eaae437",
+        "artifact_status": "reference only",
+        "approved": false,
+        "geometry_authority": false
+      },
+      "current_result": "AUTHORIZED_FOR_STEP12_DUAL_CANDIDATE_BUILD",
+      "current_block_code": null,
+      "execution_trace": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_12_SOURCE_GEOMETRY_A01_EVENT_TRACE.jsonl",
+        "current_sha256": "b4de155034adc1a7e5a187a170c4e44f3017bb13ca515cbe74843e75dc6a0156",
+        "artifact_status": "authoritative"
+      },
+      "production_state": {
+        "post_tolerance_pre_blender_checkpoint": "Saved/ProjectRecovery/20260724-080828",
+        "pre_tolerance_failed_run_preserved": true,
+        "accepted_geometry_created": false,
+        "blend_files_created": false,
+        "renders_created": false,
+        "review_board_created": false,
+        "dcc_source_candidate": false,
+        "dcc_game_ready_candidate": false,
+        "fully_game_ready": false,
+        "step13_authorized": false,
+        "unreal_authorized": false
+      },
+      "next_gate": "Create the required pre-Blender checkpoint, then build, independently audit, and render both already-approved Step 12 high-poly source candidates without entering Step 13."
+    },
+    {
+      "schema": "AERATHEA_R8_STEP12_DUAL_DCC_SOURCE_CANDIDATE_COMPLETION_SUPPLEMENT_V1",
+      "date": "2026-07-24",
+      "artifact_status": "authoritative",
+      "historical_state_policy": "Earlier blocked fields and supplements remain unchanged as historical evidence. This newest additive supplement is the current state authority.",
+      "current_result": "READY_FOR_FLAMESTRIKE_VISUAL_SELECTION",
+      "current_block_code": null,
+      "approved_width_tolerance": {
+        "maximum_per_side_source_pixels_exact": "1/1",
+        "maximum_relative_difference_exact": "1/400",
+        "maximum_absolute_difference_cm_exact": "1/5",
+        "observed_per_side_source_pixels_exact": "1/2",
+        "observed_relative_difference_exact": "1/974",
+        "observed_absolute_difference_cm_exact": "52020/517681",
+        "all_limits_pass": true,
+        "measured_geometry_clipped": false
+      },
+      "candidate_outputs": {
+        "rune_side": {
+          "artifact_status": "DCC source candidate",
+          "root": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side",
+          "blend_sha256": "014048ff149a98e35c5537084bee827480411929474b08b6668361d442797b4f",
+          "canonical_geometry_sha256": "3209bcfe5893194f3f04060000a7dcfc3ba50d4cffbcc336dd8ec383d8f3980b",
+          "build_manifest_sha256": "9ed453a0810b45b25786bd1c1d7482d6c0e8caeca51105378fa4ebe2dcc4f8dc",
+          "independent_saved_audit_sha256": "e42779b148b8335f1e100df62660a73e33eb4dd07b808bdb590a89cdee09e8e3",
+          "audit": "105 pass / 0 fail / 105 total",
+          "mesh_objects": 50,
+          "triangles_observed_not_gated": 2202434,
+          "dimensions_cm_exact": [
+            "50719500/517681",
+            "9435/274",
+            "170/1"
+          ]
+        },
+        "metal_center_piece_side": {
+          "artifact_status": "DCC source candidate",
+          "root": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/metal_center_piece_side",
+          "blend_sha256": "d98fe28d1409954069fbe77cca2fe7ae1b49c1d63bbff00096ff1986af2ef8de",
+          "canonical_geometry_sha256": "47422ab9775847e0f66cc1db6ae587eadec46bca7dc54027f69c7fe4a3a98175",
+          "build_manifest_sha256": "9a5fe4b034bd1b5af512e6cd8a404a3cf30970c88b2809f39a9d4e961d6fd982",
+          "independent_saved_audit_sha256": "f29de64688e7be8af42d320a6c2c77c5858f59c5fed64cb92f4dccc1496dbd50",
+          "audit": "105 pass / 0 fail / 105 total",
+          "mesh_objects": 50,
+          "triangles_observed_not_gated": 2316748,
+          "dimensions_cm_exact": [
+            "50719500/517681",
+            "11815/274",
+            "170/1"
+          ]
+        }
+      },
+      "validation": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_12_DUAL_DCC_SOURCE_CANDIDATE_A01_VALIDATION.json",
+        "sha256": "4341a7dd0b8218731cc171ed0e1159989f585137b031019a5b8b8920b09dc6f3",
+        "artifact_status": "proof only",
+        "result": "PASS"
+      },
+      "review_board": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/STEP_12_FRESH_DCC_SOURCE_GEOMETRY_A01_REVIEW_BOARD.png",
+        "sha256": "d5fd658eed5c62c8775ed4f53e5478d233ddc47147382f69d87c021c42a9f474",
+        "artifact_status": "proof only",
+        "visually_inspected": true,
+        "visible_desktop_window_opened": true,
+        "candidate_selected": false
+      },
+      "failed_retry_history": {
+        "artifact_status": "invalid",
+        "quarantine_path": "Saved/ProjectRecovery/Quarantine/20260724-081118/rune_side_saved_audit_topology_failure",
+        "promoted": false,
+        "drift_detected": false
+      },
+      "implementation_outputs": {
+        "candidate_builder_sha256": "ae2bd49b75d187cb057e2759d65eebc7fce1b1647b20a96df2bfe62333b8ff83",
+        "board_composer_builder_sha256": "85356eb4f79e5c83fbb84c6add3d94f36325553bb715068774d351fc5f0f4032",
+        "independent_auditor_sha256": "4e7a3a4c3d6e3b85ffab66f56f404393cd0379a6bb8953286843844e676aa443"
+      },
+      "execution_trace": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_12_SOURCE_GEOMETRY_A01_EVENT_TRACE.jsonl",
+        "current_sha256": "47fc61385d71e0f2a391ca65eed6735ec8ae56333c07d4361519395b83d289ee",
+        "artifact_status": "authoritative"
+      },
+      "production_state": {
+        "post_build_checkpoint": "Saved/ProjectRecovery/20260724-082657",
+        "builder_created": true,
+        "independent_saved_file_auditor_created": true,
+        "accepted_geometry_created": true,
+        "blend_files_created": true,
+        "renders_created": true,
+        "review_board_created": true,
+        "dcc_source_candidates": 2,
+        "candidate_selected": false,
+        "dcc_game_ready_candidate": false,
+        "fully_game_ready": false,
+        "step13_authorized": false,
+        "unreal_authorized": false
+      },
+      "next_gate": "Flamestrike must approve Candidate A, approve Candidate B, reject both, or mark the visual review blocked. Do not enter Step 13 without a separately clear approval contract."
     }
   ],
   "not_created": {

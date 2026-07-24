@@ -1,0 +1,165 @@
+{
+  "artifact_status": "proof only",
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "candidate_selection": {
+    "decision_made": false,
+    "required_authority": "Flamestrike visual review",
+    "step13_authorized": false,
+    "unreal_authorized": false
+  },
+  "candidates": {
+    "metal_center_piece_side": {
+      "artifact_status": "DCC source candidate",
+      "audit": {
+        "failed": 0,
+        "passed": 105,
+        "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/metal_center_piece_side/independent_saved_candidate_audit.json",
+        "result": "PASS",
+        "sha256": "f29de64688e7be8af42d320a6c2c77c5858f59c5fed64cb92f4dccc1496dbd50",
+        "total": 105
+      },
+      "blend": {
+        "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/metal_center_piece_side/SM_DRW_SiegeBreaker_Hammer_A01_metal_center_piece_side_DCCSourceCandidate.blend",
+        "sha256": "d98fe28d1409954069fbe77cca2fe7ae1b49c1d63bbff00096ff1986af2ef8de"
+      },
+      "build_manifest": {
+        "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/metal_center_piece_side/build_manifest.json",
+        "sha256": "9a5fe4b034bd1b5af512e6cd8a404a3cf30970c88b2809f39a9d4e961d6fd982"
+      },
+      "canonical_geometry": {
+        "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/metal_center_piece_side/canonical_geometry.json.gz",
+        "sha256": "47422ab9775847e0f66cc1db6ae587eadec46bca7dc54027f69c7fe4a3a98175"
+      },
+      "dimensions_cm": {
+        "depth_exact": "11815/274",
+        "height_exact": "170/1",
+        "width_exact": "50719500/517681"
+      },
+      "geometry_observation": {
+        "mesh_objects": 50,
+        "polygon_limit_enforced": false,
+        "polygons": 1160636,
+        "triangles_observed_not_gated": 2316748,
+        "vertices": 1179070
+      },
+      "inventory": {
+        "missing_files": 0,
+        "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/metal_center_piece_side/OUTPUT_INVENTORY.json",
+        "result": "PASS",
+        "sha256": "5857515e5e8aa29d62f320c24da8fea4187998a389c006582ef43f6ad46ccab3",
+        "unexpected_files": 0
+      },
+      "pre_save_validation": {
+        "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/metal_center_piece_side/pre_save_validation.json",
+        "result": "PASS",
+        "sha256": "dcc3f4c0dd39f3fbfec15dc44dcd02d56665f08aabc1271e3cbba4d737bd6fde"
+      },
+      "proof_renders": {
+        "fixed_silhouettes": 6,
+        "neutral_clay": 7,
+        "parallax_frames": 8,
+        "parallax_strip": 1,
+        "wireframe_contact": 1
+      }
+    },
+    "rune_side": {
+      "artifact_status": "DCC source candidate",
+      "audit": {
+        "failed": 0,
+        "passed": 105,
+        "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/independent_saved_candidate_audit.json",
+        "result": "PASS",
+        "sha256": "e42779b148b8335f1e100df62660a73e33eb4dd07b808bdb590a89cdee09e8e3",
+        "total": 105
+      },
+      "blend": {
+        "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/SM_DRW_SiegeBreaker_Hammer_A01_rune_side_DCCSourceCandidate.blend",
+        "sha256": "014048ff149a98e35c5537084bee827480411929474b08b6668361d442797b4f"
+      },
+      "build_manifest": {
+        "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/build_manifest.json",
+        "sha256": "9ed453a0810b45b25786bd1c1d7482d6c0e8caeca51105378fa4ebe2dcc4f8dc"
+      },
+      "canonical_geometry": {
+        "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/canonical_geometry.json.gz",
+        "sha256": "3209bcfe5893194f3f04060000a7dcfc3ba50d4cffbcc336dd8ec383d8f3980b"
+      },
+      "dimensions_cm": {
+        "depth_exact": "9435/274",
+        "height_exact": "170/1",
+        "width_exact": "50719500/517681"
+      },
+      "geometry_observation": {
+        "mesh_objects": 50,
+        "polygon_limit_enforced": false,
+        "polygons": 1103198,
+        "triangles_observed_not_gated": 2202434,
+        "vertices": 1120742
+      },
+      "inventory": {
+        "missing_files": 0,
+        "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/OUTPUT_INVENTORY.json",
+        "result": "PASS",
+        "sha256": "70f516df66e3c36a9bbfb3d87a83d498d8eacbf616b789583cd2e653c962d909",
+        "unexpected_files": 0
+      },
+      "pre_save_validation": {
+        "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/pre_save_validation.json",
+        "result": "PASS",
+        "sha256": "e8d16693b82559af3e52bd7903fc8664bb366b587fd9b5b4e66498dd0db4870e"
+      },
+      "proof_renders": {
+        "fixed_silhouettes": 6,
+        "neutral_clay": 7,
+        "parallax_frames": 8,
+        "parallax_strip": 1,
+        "wireframe_contact": 1
+      }
+    }
+  },
+  "date": "2026-07-24",
+  "execution_trace": {
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_12_SOURCE_GEOMETRY_A01_EVENT_TRACE.jsonl",
+    "sha256": "47fc61385d71e0f2a391ca65eed6735ec8ae56333c07d4361519395b83d289ee"
+  },
+  "failed_retry_history": {
+    "artifact_status": "invalid",
+    "drift_detected": false,
+    "preserved_at": "Saved/ProjectRecovery/Quarantine/20260724-081118/rune_side_saved_audit_topology_failure",
+    "promoted": false
+  },
+  "final_checkpoint": "Saved/ProjectRecovery/20260724-082657",
+  "result": "PASS",
+  "review_board": {
+    "artifact_status": "proof only",
+    "candidate_selected": false,
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/STEP_12_FRESH_DCC_SOURCE_GEOMETRY_A01_REVIEW_BOARD.png",
+    "sha256": "d5fd658eed5c62c8775ed4f53e5478d233ddc47147382f69d87c021c42a9f474",
+    "visible_desktop_window_opened": true,
+    "visual_inspection": {
+      "framing": "PASS",
+      "orientation": "PASS",
+      "text_overlap": "PASS"
+    }
+  },
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "schema": "AERATHEA_R8_STEP12_DUAL_DCC_SOURCE_CANDIDATE_A01_VALIDATION_V1",
+  "step": "12",
+  "tools": {
+    "board_composer_builder_sha256": "85356eb4f79e5c83fbb84c6add3d94f36325553bb715068774d351fc5f0f4032",
+    "candidate_builder_sha256": "ae2bd49b75d187cb057e2759d65eebc7fce1b1647b20a96df2bfe62333b8ff83",
+    "independent_auditor_sha256": "4e7a3a4c3d6e3b85ffab66f56f404393cd0379a6bb8953286843844e676aa443"
+  },
+  "width_tolerance": {
+    "all_limits_pass": true,
+    "front_target_width_cm_exact": "104040/1063",
+    "geometry_clipped": false,
+    "maximum_absolute_difference_cm_exact": "1/5",
+    "maximum_per_side_source_pixels_exact": "1/1",
+    "maximum_relative_difference_exact": "1/400",
+    "observed_absolute_difference_cm_exact": "52020/517681",
+    "observed_per_side_source_pixels_exact": "1/2",
+    "observed_relative_difference_exact": "1/974",
+    "observed_width_cm_exact": "50719500/517681"
+  }
+}

@@ -1,0 +1,1113 @@
+{
+  "artifact_status": "DCC source candidate",
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "authority_check_count": 45,
+  "authority_checks": [
+    {
+      "label": "blueprint",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_11_PRODUCTION_GEOMETRY_BLUEPRINT.json",
+      "result": "PASS",
+      "sha256": "2b598497ba5e61a4352c217f3fb20b3545189c710934f3a21d9b7398ddb472c7"
+    },
+    {
+      "label": "amendment",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_11B_HIGH_POLY_NANITE_PERFORMANCE_AMENDMENT_A01.md",
+      "result": "PASS",
+      "sha256": "2e4276ea0adc32d8c6a21fb5bfbd46eacf627a9708c6187e56be1556eee76ba6"
+    },
+    {
+      "label": "parity_amendment",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_11C_BOTTOM_C02_C03_LABEL_CORRECTION_A01.md",
+      "result": "PASS",
+      "sha256": "45cc92d07f90fdb1bb104c8ede5e9fb6e6161454ea91d0923dc6f81cf02512d1"
+    },
+    {
+      "label": "stitch_amendment",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_11D_THREE_BOUNDARY_STONE_STITCH_AMENDMENT_A01.md",
+      "result": "PASS",
+      "sha256": "850fd42808be667da1d24f1dbccc8ff192ac8b2ccddadb0b714256637849b61a"
+    },
+    {
+      "label": "stitch_validation",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_11D_THREE_BOUNDARY_STONE_STITCH_AMENDMENT_A01_VALIDATION.json",
+      "result": "PASS",
+      "sha256": "ff69717625d12e8e3f4f502d47c242a62ced72127bec5d9f5dd01c9537357d38"
+    },
+    {
+      "label": "tolerance_amendment",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_11E_CROSS_VIEW_SILHOUETTE_TOLERANCE_AMENDMENT_A01.md",
+      "result": "PASS",
+      "sha256": "640d19d6012b4c9926d7ddd431812481219fc65703effa08b194af2116e78b74"
+    },
+    {
+      "label": "tolerance_validation",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_11E_CROSS_VIEW_SILHOUETTE_TOLERANCE_AMENDMENT_A01_VALIDATION.json",
+      "result": "PASS",
+      "sha256": "ee9337b65a7a5d0fa71295dfc5b153690667c00aea646cadc6ff1eb3e697ce4d"
+    },
+    {
+      "label": "environment_lock",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_12_ENVIRONMENT_LOCK_A01.json",
+      "result": "PASS",
+      "sha256": "a2d9be9162d3aa5440492765aafe621e63bc4a1f80814bd523dce20dae7b66f8"
+    },
+    {
+      "label": "authority_lock",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_11_PRODUCTION_BLUEPRINT_A02_AUTHORITY_LOCK.json",
+      "result": "PASS",
+      "sha256": "3235fcc9480ad246f968b275792aa3a309aa34710b5bfec3fc005980ae3d5069"
+    },
+    {
+      "label": "step12_contract",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_12_FRESH_DCC_SOURCE_GEOMETRY_A01_PROPOSED_CONTRACT.md",
+      "result": "PASS",
+      "sha256": "a3f16266da53ed28a0c849818271dea0c07cd8ba8005e05a6778e2a0f6d2935b"
+    },
+    {
+      "label": "step12_approval",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_12_FRESH_DCC_SOURCE_GEOMETRY_A01_APPROVAL_RECORD.md",
+      "result": "PASS",
+      "sha256": "2b6fedd15020808beb63ff556c66bc52114a06cd69331f72bfe637caea69e7d7"
+    },
+    {
+      "label": "agents",
+      "path": "AGENTS.md",
+      "result": "PASS",
+      "sha256": "5d2d2637a58113f0a6f5ec92e40d8bb2bda9e03fb58b4868a0d9dfbb3b57ad55"
+    },
+    {
+      "label": "approval_record",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_11_PRODUCTION_BLUEPRINT_A02_APPROVAL_RECORD.md",
+      "result": "PASS",
+      "sha256": "6e2786e5d283f0176f90f83a80493c04581a6680aab32b3214c52403382e522f"
+    },
+    {
+      "label": "closure_amendment",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_STEP06A_DETERMINISTIC_CLOSURE_AMENDMENT_A01.md",
+      "result": "PASS",
+      "sha256": "8ee99d2b5c510a540623aa4a69154b3bc0da9c7a9e846a42194a0dabe716d1b4"
+    },
+    {
+      "label": "component_equations",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_STEP02_COMPONENT_EQUATION_CONTRACT_DRAFT.md",
+      "result": "PASS",
+      "sha256": "a40d0b67d802687ac3c9ec9ad8e00a915cc1dc730ce31f3fab00b18a1837a21c"
+    },
+    {
+      "label": "component_equations_approval",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_STEP02_COMPONENT_EQUATION_CONTRACT_A01_APPROVAL_RECORD.md",
+      "result": "PASS",
+      "sha256": "8296f530d48f43b99c6de26271e3be4da0a9fd512e389c90f55b9d5208185b29"
+    },
+    {
+      "label": "pipeline_plan",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/SM_DRW_SiegeBreaker_Hammer_A01_STEPS_01_16_PROOF_OF_CONCEPT_PIPELINE_PLAN.md",
+      "result": "PASS",
+      "sha256": "53046eb839b94d9548dfc2e49471b3605a2fc882228ca5e4291db7390e584a2a"
+    },
+    {
+      "label": "project_charter",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/SM_DRW_SiegeBreaker_Hammer_A01_PROJECT_CHARTER.md",
+      "result": "PASS",
+      "sha256": "41c543aebf9bca5e5e8b970851843b6485fa17fc3473325d46a3960a9ba46f1b"
+    },
+    {
+      "label": "proposed_contract",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_11_PRODUCTION_BLUEPRINT_A02_PROPOSED_CONTRACT.md",
+      "result": "PASS",
+      "sha256": "b563abfcda868f0345c65c729acee0d7d0dd9123e65544405d0139de06d64800"
+    },
+    {
+      "label": "proven_process_audit",
+      "path": "Tools/DCC/audit_siegebreaker_a12_r10_a09_process_complete_rz180.py",
+      "result": "PASS",
+      "sha256": "6db37706e87021cf1ea978091c1e7b9f30c21163a5d5bd64bb6b32919ee352e0"
+    },
+    {
+      "label": "proven_process_builder",
+      "path": "Tools/DCC/build_siegebreaker_a12_r10_a09_process_complete_rz180.py",
+      "result": "PASS",
+      "sha256": "088ec22595437611e4f0e136db13b49d32ce3caaf8224c60f145f1c15153f235"
+    },
+    {
+      "label": "proven_process_output",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_A09_PROCESS_COMPLETE_RZ180_A02_OUTPUT_RECORD.md",
+      "result": "PASS",
+      "sha256": "639db9d0c565aae7b974dab6fce9fb888f1b8412c77bbb2f6046413a7dbdff52"
+    },
+    {
+      "label": "r7_component_plan",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R7_COMPONENT_GEOMETRY_RECOVERY_PLAN.md",
+      "result": "PASS",
+      "sha256": "b0b077c8d39a07e5d1ab12309e77560afa1c407fe3bb3e6272a0c4e6d568b22e"
+    },
+    {
+      "label": "r8_execution_contract",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_R8_PIXEL_EXACT_STEPS01_16_A01_CONTRACT.md",
+      "result": "PASS",
+      "sha256": "77b0339126388be01f59532cd6b79228450b61e739ebc10c2f849833fd337bd4"
+    },
+    {
+      "label": "source_half_contract",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_STEP06_ONE_RZ180_SOURCE_HALF_ASSEMBLY_A01_CONTRACT.md",
+      "result": "PASS",
+      "sha256": "eba4884b6b52178846854b59c88594fc3aa896067d868f6748d4aadd3bc4106a"
+    },
+    {
+      "label": "step04_inventory",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_04_COMPONENT_AND_SOURCE_OWNERSHIP_INVENTORY.json",
+      "result": "PASS",
+      "sha256": "1bf54f9400dc2a4d0bb972ad56a3a913b586254f09b4867542e1c9899daf8a60"
+    },
+    {
+      "label": "step05_registration",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_05_PIXEL_WORLD_REGISTRATION_LOCK.json",
+      "result": "PASS",
+      "sha256": "aed4b8d87a4a5b442c0465c9db59fa524f63797153d662e1a5e7cf90423a2446"
+    },
+    {
+      "label": "step06_back",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_06_BACK_MEASUREMENT_CONTRACT.json",
+      "result": "PASS",
+      "sha256": "817af18192b3cf3b26ac47fb460e18b82266c30ce61f993b463a36175c014fcb"
+    },
+    {
+      "label": "step06_front",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_06_FRONT_MEASUREMENT_CONTRACT.json",
+      "result": "PASS",
+      "sha256": "85f09fc89c8b73df8e6fdf47924e2251da9dda6decabe44fa3f3b2577b7708eb"
+    },
+    {
+      "label": "step07_left",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_07_LEFT_MEASUREMENT_CONTRACT.json",
+      "result": "PASS",
+      "sha256": "7d099a11fb5566059bf0caaeaa353c479a531acff78fac6a9bedbeea739eb3f1"
+    },
+    {
+      "label": "step07_right",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_07_RIGHT_MEASUREMENT_CONTRACT.json",
+      "result": "PASS",
+      "sha256": "977831e86b02148125a7e1a04024d2d114721590ebf63937bdd314d02cc427c9"
+    },
+    {
+      "label": "step08_bottom",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_08_BOTTOM_MEASUREMENT_CONTRACT.json",
+      "result": "PASS",
+      "sha256": "aea70d998dabe9f28d3ec5fb44a2d2206f8874096a3d33ee9b836074b2ede9a2"
+    },
+    {
+      "label": "step08_top",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_08_TOP_MEASUREMENT_CONTRACT.json",
+      "result": "PASS",
+      "sha256": "5925dee1ab39a0535150804a4353157b17d51fec648791774808c9c832dd8b36"
+    },
+    {
+      "label": "step09_index",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_09_INTEGRATED_EXACT_MEASUREMENT_INDEX.json",
+      "result": "PASS",
+      "sha256": "5a0a3eea8f877d55216f9efabe15b0ee1cf938e4c15a825a0e218f72ba76839a"
+    },
+    {
+      "label": "step09_pre_geometry",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_09_PRE_GEOMETRY_EXACT_DATA_AUDIT.json",
+      "result": "PASS",
+      "sha256": "260c79857fe059517b4076bcc65b538aef807a7be33a58a4a46edc32c2150fdb"
+    },
+    {
+      "label": "step09a_authority_lock",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/manifests/STEP_09A_AUTHORITY_LOCK.json",
+      "result": "PASS",
+      "sha256": "a7e07ad68e9b2737c7c70e71e9df714766a285695693e741197900e17c3a06a5"
+    },
+    {
+      "label": "step09a_boundaries",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/manifests/STEP_09A_BOUNDARY_AND_CORRESPONDENCE_INDEX.json",
+      "result": "PASS",
+      "sha256": "e190ed266753c797d4f9ec812154ff3b29f5d5d780e53e235e780c43492d0bd8"
+    },
+    {
+      "label": "step09a_scanlines",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/evidence/STEP_09A_COMPONENT_SCANLINES.json.gz",
+      "result": "PASS",
+      "sha256": "396adfbaaefc8a8ea35104e5e96dfde322510fb4ce88530fbb32f7f3073b3562"
+    },
+    {
+      "label": "step09a_validation",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/manifests/STEP_09A_VALIDATION.json",
+      "result": "PASS",
+      "sha256": "1e02aecf558145d4e440b1cdda90513fb28a0075149b1bf24f7ed3c00f7c3e60"
+    },
+    {
+      "label": "step10_decisions",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_10_INTERPRETATION_DECISIONS.json",
+      "result": "PASS",
+      "sha256": "0559b801ed3f544af82057d45f918599f07524588ff49c5ca92aefa744e467e9"
+    },
+    {
+      "label": "step10_numeric",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_10_NUMERIC_SUBSTITUTION_CLARIFICATION.json",
+      "result": "PASS",
+      "sha256": "ff2f7cb37284dc7d1416044913375f67924ec4141c22a5385b3a29541e7446b9"
+    },
+    {
+      "label": "step11_preflight",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_11_SOURCE_AUTHORITY_PREFLIGHT_A02.json",
+      "result": "PASS",
+      "sha256": "d243832e443779ae99e658e401a1985b94fa243a1a803849a50d1f31bd97eba0"
+    },
+    {
+      "label": "step11_preflight_validation",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_11_VALIDATION_A02.json",
+      "result": "PASS",
+      "sha256": "e2bf62f65612945bdd9e295295b2b970098e88d75edd21d2e8c4896d5fbcf32b"
+    },
+    {
+      "label": "view_scale_contract",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_STEP02A_R8_VIEW_OWNED_SCALE_RECONCILIATION_A01_CONTRACT.md",
+      "result": "PASS",
+      "sha256": "84da92d2bec200a646bee4297965e9cd3bcd9aac090381b4108d931d7c1f4cd7"
+    },
+    {
+      "label": "zero_extrusion_handoff",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/handoffs/A12_R10_R8_ZERO_EXTRUSION_RESET_HANDOFF.md",
+      "result": "PASS",
+      "sha256": "405d93b079c0fe52bdc443cadd085010fb64acf4cf9d078bf6e78d7e915e3ba0"
+    }
+  ],
+  "authority_failures": 0,
+  "build_metadata": {
+    "c04_local_y_mirror_count": 1,
+    "c04_outer_closure_metadata": {
+      "c04_loop_vertices": 978,
+      "instruction_id": "CLOSURE_C03_TO_C04_RUNE",
+      "ruled_faces_negative": 2701,
+      "ruled_faces_positive": 2701,
+      "shared_parameter_breakpoints": 2702,
+      "steiner_vertices": "only exact evaluations on existing straight loop edges at shared cumulative-length breakpoints",
+      "stone_loop_vertices": 1726
+    },
+    "candidate": "rune_side",
+    "closure_contact_instruction_report": [
+      {
+        "faces": 64,
+        "instruction_id": "CONTACT_C01_C06",
+        "lower_radius_exact": "9860/1063",
+        "method": "exact_planar_positive_x_half_annular_shoulder",
+        "result": "PASS",
+        "upper_radius_exact": "9690/1063"
+      },
+      {
+        "duplicate_wall_created": false,
+        "faces": 0,
+        "instruction_id": "CONTACT_C06_C07",
+        "method": "coordinate_equal_common_half_ring",
+        "result": "PASS"
+      },
+      {
+        "faces": 64,
+        "instruction_id": "CONTACT_C07_C07B",
+        "lower_radius_exact": "6460/1063",
+        "method": "exact_planar_positive_x_half_annular_shoulder",
+        "result": "PASS",
+        "upper_radius_exact": "6290/1063"
+      },
+      {
+        "faces": 64,
+        "instruction_id": "CONTACT_C07B_C08",
+        "lower_radius_exact": "5780/1063",
+        "method": "exact_planar_positive_x_half_annular_shoulder",
+        "result": "PASS",
+        "upper_radius_exact": "6120/1063"
+      },
+      {
+        "duplicate_wall_created": false,
+        "faces": 0,
+        "instruction_id": "CONTACT_C08_C09",
+        "method": "coordinate_equal_common_half_ring",
+        "result": "PASS"
+      },
+      {
+        "faces": 64,
+        "instruction_id": "CONTACT_C09_C10",
+        "lower_radius_exact": "9520/1063",
+        "method": "exact_planar_positive_x_half_annular_shoulder",
+        "result": "PASS",
+        "upper_radius_exact": "9350/1063"
+      },
+      {
+        "faces": 64,
+        "instruction_id": "CONTACT_C10_C11",
+        "lower_radius_exact": "9010/1063",
+        "method": "exact_planar_positive_x_half_annular_shoulder",
+        "result": "PASS",
+        "upper_radius_exact": "9180/1063"
+      },
+      {
+        "duplicate_wall_created": false,
+        "faces": 0,
+        "instruction_id": "CONTACT_C12_C01",
+        "method": "coordinate_equal_common_half_ring",
+        "result": "PASS"
+      },
+      {
+        "faces": 64,
+        "instruction_id": "CAP_C11_BOTTOM",
+        "radius_exact": "170/1063",
+        "result": "PASS"
+      },
+      {
+        "faces": 64,
+        "instruction_id": "CAP_C12_TOP",
+        "radius_exact": "340/1063",
+        "result": "PASS"
+      },
+      {
+        "faces": 1850,
+        "instruction_id": "CLOSURE_C02_INNER",
+        "result": "PASS",
+        "rule": "Step 11D completed perimeter"
+      },
+      {
+        "faces": 1850,
+        "instruction_id": "CLOSURE_C03_INNER",
+        "result": "PASS",
+        "rule": "Step 11D completed perimeter"
+      },
+      {
+        "faces": 5402,
+        "instruction_id": "CLOSURE_C03_TO_C04_RUNE",
+        "result": "PASS",
+        "rule": "EQ_ORDERED_RULED_FACE shared exterior boundary"
+      },
+      {
+        "faces": 0,
+        "instruction_id": "CLOSURE_C03_TO_C04_METAL",
+        "result": "NOT_APPLICABLE_TO_CANDIDATE"
+      },
+      {
+        "faces": 0,
+        "instruction_id": "GUARD_PROTECTED_NEGATIVE_SPACES",
+        "protected_space_fill_attempts": 0,
+        "result": "PASS"
+      },
+      {
+        "instruction_id": "WHOLE_ASSET_RZ180",
+        "operation_count": 1,
+        "result": "PASS",
+        "rotated_record_count": 23,
+        "source_record_count": 23
+      }
+    ],
+    "completed_mesh_record_count": 50,
+    "half_depth_exact": "9435/548",
+    "rotational_metadata": {
+      "C06_UPPER_HAFT_CAP": {
+        "angular_divisions_positive_x": 64,
+        "bottom_world_z_exact": "102170/1063",
+        "first_radius_exact": "9860/1063",
+        "instruction_id": "SURF_C06_ROTATIONAL_HALF",
+        "last_radius_exact": "5780/1063",
+        "ring_count": 71,
+        "row_count": 70,
+        "source_rows_half_open": [
+          600,
+          670
+        ],
+        "top_world_z_exact": "114070/1063"
+      },
+      "C07B_HAFT_TO_HANDLE_FERRULE": {
+        "angular_divisions_positive_x": 64,
+        "bottom_world_z_exact": "53720/1063",
+        "first_radius_exact": "6460/1063",
+        "instruction_id": "SURF_C07B_ROTATIONAL_HALF",
+        "last_radius_exact": "6120/1063",
+        "ring_count": 86,
+        "row_count": 85,
+        "source_rows_half_open": [
+          870,
+          955
+        ],
+        "top_world_z_exact": "68170/1063"
+      },
+      "C07_HAFT": {
+        "angular_divisions_positive_x": 64,
+        "bottom_world_z_exact": "68170/1063",
+        "first_radius_exact": "5780/1063",
+        "instruction_id": "SURF_C07_ROTATIONAL_HALF",
+        "last_radius_exact": "6290/1063",
+        "ring_count": 201,
+        "row_count": 200,
+        "source_rows_half_open": [
+          670,
+          870
+        ],
+        "top_world_z_exact": "102170/1063"
+      },
+      "C08_GRIP": {
+        "angular_divisions_positive_x": 64,
+        "bottom_world_z_exact": "27370/1063",
+        "first_radius_exact": "5780/1063",
+        "instruction_id": "SURF_C08_ROTATIONAL_HALF",
+        "last_radius_exact": "6460/1063",
+        "ring_count": 156,
+        "row_count": 155,
+        "source_rows_half_open": [
+          955,
+          1110
+        ],
+        "top_world_z_exact": "53720/1063"
+      },
+      "C09_LOWER_COLLAR": {
+        "angular_divisions_positive_x": 64,
+        "bottom_world_z_exact": "20570/1063",
+        "first_radius_exact": "6460/1063",
+        "instruction_id": "SURF_C09_ROTATIONAL_HALF",
+        "last_radius_exact": "9350/1063",
+        "ring_count": 41,
+        "row_count": 40,
+        "source_rows_half_open": [
+          1110,
+          1150
+        ],
+        "top_world_z_exact": "27370/1063"
+      },
+      "C10_POMMEL_BODY": {
+        "angular_divisions_positive_x": 64,
+        "bottom_world_z_exact": "8670/1063",
+        "first_radius_exact": "9520/1063",
+        "instruction_id": "SURF_C10_ROTATIONAL_HALF",
+        "last_radius_exact": "9180/1063",
+        "ring_count": 71,
+        "row_count": 70,
+        "source_rows_half_open": [
+          1150,
+          1220
+        ],
+        "top_world_z_exact": "20570/1063"
+      },
+      "C11_POMMEL_TERMINAL_CAP": {
+        "angular_divisions_positive_x": 64,
+        "bottom_world_z_exact": "0/1",
+        "first_radius_exact": "9010/1063",
+        "instruction_id": "SURF_C11_ROTATIONAL_HALF",
+        "last_radius_exact": "170/1063",
+        "ring_count": 52,
+        "row_count": 51,
+        "source_rows_half_open": [
+          1220,
+          1271
+        ],
+        "top_world_z_exact": "8670/1063"
+      },
+      "C12_UPPER_HEAD_CAP_SPIRE": {
+        "angular_divisions_positive_x": 64,
+        "bottom_world_z_exact": "165920/1063",
+        "first_radius_exact": "340/1063",
+        "instruction_id": "SURF_C12_ROTATIONAL_HALF",
+        "last_radius_exact": "12580/1063",
+        "ring_count": 88,
+        "row_count": 87,
+        "source_rows_half_open": [
+          208,
+          295
+        ],
+        "top_world_z_exact": "170/1"
+      }
+    },
+    "source_record_count_before_rz180": 23,
+    "stone_stitch_metadata": {
+      "bottom_y0_bridge_cm": 0.20097318618995094,
+      "negative_perimeter_vertex_count": 1852,
+      "negative_triangle_count": 1850,
+      "parameter_polygon": [
+        [
+          "0/1",
+          "6/1"
+        ],
+        [
+          "0/1",
+          "3/1"
+        ],
+        [
+          "1/1",
+          "1/1"
+        ],
+        [
+          "3/1",
+          "0/1"
+        ],
+        [
+          "6/1",
+          "0/1"
+        ],
+        [
+          "8/1",
+          "1/1"
+        ],
+        [
+          "9/1",
+          "3/1"
+        ],
+        [
+          "9/1",
+          "6/1"
+        ],
+        [
+          "8/1",
+          "8/1"
+        ],
+        [
+          "6/1",
+          "9/1"
+        ],
+        [
+          "3/1",
+          "9/1"
+        ],
+        [
+          "1/1",
+          "8/1"
+        ]
+      ],
+      "steiner_vertices_used": false,
+      "tolerance_weld_used": false,
+      "top_y0_bridge_cm": 0.4019463723799019
+    },
+    "surface_instruction_report": [
+      {
+        "faces": 84058,
+        "instruction_id": "SURF_C04_RUNE_FACE_HALF",
+        "local_y_mirror_count": 1,
+        "result": "PASS"
+      },
+      {
+        "faces": 46183,
+        "instruction_id": "SURF_C01_FRONT",
+        "result": "PASS",
+        "source_owner": "C01_CENTER_CORE"
+      },
+      {
+        "faces": 71788,
+        "instruction_id": "SURF_C02_FRONT",
+        "result": "PASS",
+        "source_owner": "C02_STONE_LEFT"
+      },
+      {
+        "faces": 71689,
+        "instruction_id": "SURF_C03_FRONT",
+        "result": "PASS",
+        "source_owner": "C03_STONE_RIGHT"
+      },
+      {
+        "faces": 56949,
+        "instruction_id": "SURF_C02_TOP_HALF",
+        "result": "PASS",
+        "step11c_logical_mapping_applied": false,
+        "stored_source_owner": "C02_STONE_LEFT"
+      },
+      {
+        "faces": 56414,
+        "instruction_id": "SURF_C03_TOP_HALF",
+        "result": "PASS",
+        "step11c_logical_mapping_applied": false,
+        "stored_source_owner": "C03_STONE_RIGHT"
+      },
+      {
+        "faces": 55614,
+        "instruction_id": "SURF_C02_BOTTOM_HALF",
+        "result": "PASS",
+        "step11c_logical_mapping_applied": true,
+        "stored_source_owner": "C03_STONE_RIGHT"
+      },
+      {
+        "faces": 55393,
+        "instruction_id": "SURF_C03_BOTTOM_HALF",
+        "result": "PASS",
+        "step11c_logical_mapping_applied": true,
+        "stored_source_owner": "C02_STONE_LEFT"
+      },
+      {
+        "angular_divisions_positive_x": 64,
+        "bottom_world_z_exact": "102170/1063",
+        "faces": 4480,
+        "first_radius_exact": "9860/1063",
+        "instruction_id": "SURF_C06_ROTATIONAL_HALF",
+        "last_radius_exact": "5780/1063",
+        "result": "PASS",
+        "ring_count": 71,
+        "row_count": 70,
+        "source_rows_half_open": [
+          600,
+          670
+        ],
+        "top_world_z_exact": "114070/1063"
+      },
+      {
+        "angular_divisions_positive_x": 64,
+        "bottom_world_z_exact": "68170/1063",
+        "faces": 12800,
+        "first_radius_exact": "5780/1063",
+        "instruction_id": "SURF_C07_ROTATIONAL_HALF",
+        "last_radius_exact": "6290/1063",
+        "result": "PASS",
+        "ring_count": 201,
+        "row_count": 200,
+        "source_rows_half_open": [
+          670,
+          870
+        ],
+        "top_world_z_exact": "102170/1063"
+      },
+      {
+        "angular_divisions_positive_x": 64,
+        "bottom_world_z_exact": "53720/1063",
+        "faces": 5440,
+        "first_radius_exact": "6460/1063",
+        "instruction_id": "SURF_C07B_ROTATIONAL_HALF",
+        "last_radius_exact": "6120/1063",
+        "result": "PASS",
+        "ring_count": 86,
+        "row_count": 85,
+        "source_rows_half_open": [
+          870,
+          955
+        ],
+        "top_world_z_exact": "68170/1063"
+      },
+      {
+        "angular_divisions_positive_x": 64,
+        "bottom_world_z_exact": "27370/1063",
+        "faces": 9920,
+        "first_radius_exact": "5780/1063",
+        "instruction_id": "SURF_C08_ROTATIONAL_HALF",
+        "last_radius_exact": "6460/1063",
+        "result": "PASS",
+        "ring_count": 156,
+        "row_count": 155,
+        "source_rows_half_open": [
+          955,
+          1110
+        ],
+        "top_world_z_exact": "53720/1063"
+      },
+      {
+        "angular_divisions_positive_x": 64,
+        "bottom_world_z_exact": "20570/1063",
+        "faces": 2560,
+        "first_radius_exact": "6460/1063",
+        "instruction_id": "SURF_C09_ROTATIONAL_HALF",
+        "last_radius_exact": "9350/1063",
+        "result": "PASS",
+        "ring_count": 41,
+        "row_count": 40,
+        "source_rows_half_open": [
+          1110,
+          1150
+        ],
+        "top_world_z_exact": "27370/1063"
+      },
+      {
+        "angular_divisions_positive_x": 64,
+        "bottom_world_z_exact": "8670/1063",
+        "faces": 4480,
+        "first_radius_exact": "9520/1063",
+        "instruction_id": "SURF_C10_ROTATIONAL_HALF",
+        "last_radius_exact": "9180/1063",
+        "result": "PASS",
+        "ring_count": 71,
+        "row_count": 70,
+        "source_rows_half_open": [
+          1150,
+          1220
+        ],
+        "top_world_z_exact": "20570/1063"
+      },
+      {
+        "angular_divisions_positive_x": 64,
+        "bottom_world_z_exact": "0/1",
+        "faces": 3264,
+        "first_radius_exact": "9010/1063",
+        "instruction_id": "SURF_C11_ROTATIONAL_HALF",
+        "last_radius_exact": "170/1063",
+        "result": "PASS",
+        "ring_count": 52,
+        "row_count": 51,
+        "source_rows_half_open": [
+          1220,
+          1271
+        ],
+        "top_world_z_exact": "8670/1063"
+      },
+      {
+        "angular_divisions_positive_x": 64,
+        "bottom_world_z_exact": "165920/1063",
+        "faces": 5568,
+        "first_radius_exact": "340/1063",
+        "instruction_id": "SURF_C12_ROTATIONAL_HALF",
+        "last_radius_exact": "12580/1063",
+        "result": "PASS",
+        "ring_count": 88,
+        "row_count": 87,
+        "source_rows_half_open": [
+          208,
+          295
+        ],
+        "top_world_z_exact": "170/1"
+      }
+    ],
+    "whole_asset_rz180_count": 1
+  },
+  "candidate": "rune_side",
+  "created_utc": "2026-07-24T12:18:01.076531+00:00",
+  "files": {
+    "blend": {
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/SM_DRW_SiegeBreaker_Hammer_A01_rune_side_DCCSourceCandidate.blend",
+      "sha256": "014048ff149a98e35c5537084bee827480411929474b08b6668361d442797b4f"
+    },
+    "canonical_geometry": {
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/canonical_geometry.json.gz",
+      "sha256": "3209bcfe5893194f3f04060000a7dcfc3ba50d4cffbcc336dd8ec383d8f3980b"
+    },
+    "pre_save_validation": {
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/pre_save_validation.json",
+      "sha256": "e8d16693b82559af3e52bd7903fc8664bb366b587fd9b5b4e66498dd0db4870e"
+    }
+  },
+  "final_candidate_files": [
+    {
+      "bytes": 1408,
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/OUTPUT_INVENTORY.json",
+      "sha256": "70f516df66e3c36a9bbfb3d87a83d498d8eacbf616b789583cd2e653c962d909"
+    },
+    {
+      "bytes": 81942340,
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/SM_DRW_SiegeBreaker_Hammer_A01_rune_side_DCCSourceCandidate.blend",
+      "sha256": "014048ff149a98e35c5537084bee827480411929474b08b6668361d442797b4f"
+    },
+    {
+      "bytes": 11720285,
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/canonical_geometry.json.gz",
+      "sha256": "3209bcfe5893194f3f04060000a7dcfc3ba50d4cffbcc336dd8ec383d8f3980b"
+    },
+    {
+      "bytes": 4194,
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/pre_save_validation.json",
+      "sha256": "e8d16693b82559af3e52bd7903fc8664bb366b587fd9b5b4e66498dd0db4870e"
+    },
+    {
+      "bytes": 46210,
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/independent_saved_candidate_audit.json",
+      "sha256": "e42779b148b8335f1e100df62660a73e33eb4dd07b808bdb590a89cdee09e8e3"
+    },
+    {
+      "bytes": 295558,
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/renders/silhouette_front.png",
+      "sha256": "b041f5d4090a5a292732e1dfa92f17615f4161bab2586f69cdcd2d96423f3455"
+    },
+    {
+      "bytes": 295466,
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/renders/silhouette_back.png",
+      "sha256": "acbc8c59976dddce4bd15fe67dcd0997083b8471956356db7c66a23d18e0bf79"
+    },
+    {
+      "bytes": 281901,
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/renders/silhouette_left.png",
+      "sha256": "1c50af2d44e28c69e434417c103c1d8e15cafc8b936a0e40836b26a2b6ff0bad"
+    },
+    {
+      "bytes": 282094,
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/renders/silhouette_right.png",
+      "sha256": "3dfaa437d5f61c4422988be61b0621399b571d466c01548cbab7d9e4673e04a5"
+    },
+    {
+      "bytes": 273377,
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/renders/silhouette_top.png",
+      "sha256": "e0f818d0e5e11304bd4d99cbf883e38f53f4857f21009eed52df770d908b2fcf"
+    },
+    {
+      "bytes": 276562,
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/renders/silhouette_bottom.png",
+      "sha256": "455df08adc7b9c06106c668947dea4bdc0cb7b347a7d306566d0f219081ad77d"
+    },
+    {
+      "bytes": 295262,
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/renders/clay_front.png",
+      "sha256": "5d3e011a17b57ff0c2e3f9db4e07235ba89560d01d91e4b79a3007afb1bfeee1"
+    },
+    {
+      "bytes": 295258,
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/renders/clay_back.png",
+      "sha256": "da4c7eacdda2436a91bcff9dcb467220db4597a28893a37276a2309dc3ff9707"
+    },
+    {
+      "bytes": 283397,
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/renders/clay_left.png",
+      "sha256": "9fadae4dd7ef2dc8a8a0d3ea3ca7ef8544221ad0c15be04a4a09fc6226489d5d"
+    },
+    {
+      "bytes": 283485,
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/renders/clay_right.png",
+      "sha256": "31c3cab89eaa59a5b52a4f0bedf231aa7f72b130c363866acb6cd1c03cdbc0c2"
+    },
+    {
+      "bytes": 273007,
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/renders/clay_top.png",
+      "sha256": "2e9ed358a6eae3f355cd893ee64ee577bb9f4e923b2ba3061bc1e55f5d13a58b"
+    },
+    {
+      "bytes": 279408,
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/renders/clay_bottom.png",
+      "sha256": "b86ffd8dc42948271eb98ef096fec436aa6140da25ac6c8d26d85d3a8a9aa643"
+    },
+    {
+      "bytes": 305777,
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/renders/clay_three_quarter.png",
+      "sha256": "456744d91e70a1137302d36f3a32e0d76daa9c07c7d0124fea1cd76425ac6997"
+    },
+    {
+      "bytes": 323315,
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/renders/wireframe_contact_three_quarter.png",
+      "sha256": "dfe4669da5d9342863c859303e80e3d42fefe64d327e94cc7d597794f240ad02"
+    },
+    {
+      "bytes": 297503,
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/renders/parallax_000.png",
+      "sha256": "19f5ed394fc621b345565debb19caf10687040e075357bf04bf90875ac16644f"
+    },
+    {
+      "bytes": 304237,
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/renders/parallax_001.png",
+      "sha256": "e1bb669daca216be8f734682b937cbb06bf0dc0544994fd5fe84b7fde7f48f05"
+    },
+    {
+      "bytes": 286323,
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/renders/parallax_002.png",
+      "sha256": "c70ed3396ff759d228dc4b6ee23d86598b72a4210b1d486be7d5198905d80c95"
+    },
+    {
+      "bytes": 303918,
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/renders/parallax_003.png",
+      "sha256": "8ed66b5bc990a7e0425aeb8b04ad472f3f0c89a914939ce30004c4588c4f2767"
+    },
+    {
+      "bytes": 297121,
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/renders/parallax_004.png",
+      "sha256": "8d9a029f6ac769e811ed83fcef50b68ae37107ccb1d96c4c8e0a968acff20785"
+    },
+    {
+      "bytes": 303773,
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/renders/parallax_005.png",
+      "sha256": "38d465fe1ac1dc78b52fa916b8330dd837184009036f2f0110ce26a4354ef411"
+    },
+    {
+      "bytes": 286416,
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/renders/parallax_006.png",
+      "sha256": "0d735ca58fb29a2681f7a27d811f8e12da5636acbec5193eea3047c141807c9f"
+    },
+    {
+      "bytes": 303559,
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/renders/parallax_007.png",
+      "sha256": "b18b26c2ff55672be963feca10a005daf6a2e0382bce74dd11f5be696a1bde0e"
+    },
+    {
+      "bytes": 204467,
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/renders/parallax_strip.png",
+      "sha256": "92da70fbeae375632c509dcf505fd999c4a039757153b067202e581a1514c40b"
+    }
+  ],
+  "forbidden_methods": {
+    "backing_plate": false,
+    "extrusion": false,
+    "old_coordinate_read": false,
+    "old_mesh_import": false,
+    "primitive_replacement": false,
+    "solidify": false,
+    "source_resampling": false,
+    "tolerance_weld": false
+  },
+  "independent_saved_candidate_audit": {
+    "checks_failed": 0,
+    "checks_passed": 105,
+    "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side/independent_saved_candidate_audit.json",
+    "result": "PASS",
+    "sha256": "e42779b148b8335f1e100df62660a73e33eb4dd07b808bdb590a89cdee09e8e3"
+  },
+  "manifest_self_hash_policy": "build_manifest.json is intentionally excluded from its own final_candidate_files hash list because a stable recursive self-hash is impossible",
+  "polygon_limit_enforced": false,
+  "polygon_limit_reason": "Step 11B high-poly/Nanite amendment; count observed only",
+  "pre_save_validation": {
+    "bounds": {
+      "dimensions_cm": [
+        97.97442826760108,
+        34.434306569343065,
+        170.0
+      ],
+      "dimensions_exact": [
+        "50719500/517681",
+        "9435/274",
+        "170/1"
+      ],
+      "maximum_cm": [
+        48.98721413380054,
+        17.217153284671532,
+        170.0
+      ],
+      "maximum_exact": [
+        "25359750/517681",
+        "9435/548",
+        "170/1"
+      ],
+      "minimum_cm": [
+        -48.98721413380054,
+        -17.217153284671532,
+        0.0
+      ],
+      "minimum_exact": [
+        "-25359750/517681",
+        "-9435/548",
+        "0/1"
+      ]
+    },
+    "checks": [
+      {
+        "expected": {
+          "maximum_absolute_difference_cm": "1/5",
+          "maximum_per_side_source_pixels": "1/1",
+          "maximum_relative_difference": "1/400"
+        },
+        "id": "BUILD-CROSS-VIEW-WIDTH-TOLERANCE",
+        "observed": {
+          "all_limits_pass": true,
+          "axial_pixel_scale_cm_exact": "52020/517681",
+          "completed_difference_cm_exact": "52020/517681",
+          "completed_relative_difference_exact": "1/974",
+          "expected_width_cm_exact": "104040/1063",
+          "limit_results": {
+            "absolute_difference_cm": true,
+            "per_side_source_pixels": true,
+            "relative_difference": true
+          },
+          "maximum_per_side_source_pixels_exact": "1/2",
+          "measured_geometry_clipped": false,
+          "negative_side_difference_cm_exact": "26010/517681",
+          "observed_width_cm_exact": "50719500/517681",
+          "positive_side_difference_cm_exact": "26010/517681",
+          "thresholds_exact": {
+            "maximum_absolute_difference_cm": "1/5",
+            "maximum_per_side_source_pixels": "1/1",
+            "maximum_relative_difference": "1/400"
+          }
+        },
+        "result": "PASS"
+      },
+      {
+        "expected": {
+          "center_x_exact": "0/1",
+          "center_y_exact": "0/1",
+          "depth_exact": "9435/274",
+          "height_exact": "170/1",
+          "minimum_z_exact": "0/1"
+        },
+        "id": "BUILD-EXACT-DEPTH-HEIGHT-CENTER",
+        "observed": {
+          "center_x_exact": "0/1",
+          "center_y_exact": "0/1",
+          "depth_exact": "9435/274",
+          "height_exact": "170/1",
+          "minimum_z_exact": "0/1"
+        },
+        "result": "PASS"
+      },
+      {
+        "expected": [
+          "Zmin=0",
+          "Zmax=170"
+        ],
+        "id": "BUILD-PIVOT-AND-HEIGHT",
+        "observed": [
+          "0/1",
+          "170/1"
+        ],
+        "result": "PASS"
+      },
+      {
+        "expected": 64,
+        "id": "BUILD-ANGULAR-DIVISIONS",
+        "observed": [
+          64
+        ],
+        "result": "PASS"
+      },
+      {
+        "expected": 1,
+        "id": "BUILD-C04-LOCAL-MIRROR",
+        "observed": 1,
+        "result": "PASS"
+      },
+      {
+        "expected": 1,
+        "id": "BUILD-WHOLE-RZ180",
+        "observed": 1,
+        "result": "PASS"
+      },
+      {
+        "expected": "every emitted mesh record nonempty",
+        "id": "BUILD-NONEMPTY-RECORDS",
+        "observed": [],
+        "result": "PASS"
+      },
+      {
+        "expected": 0,
+        "id": "BUILD-NO-DEGENERATE-FACE-INDICES",
+        "observed": 0,
+        "result": "PASS"
+      },
+      {
+        "expected": [],
+        "id": "BUILD-NO-EXACT-ZERO-AREA-FACES",
+        "observed": [],
+        "result": "PASS"
+      }
+    ],
+    "cross_view_width_tolerance": {
+      "all_limits_pass": true,
+      "axial_pixel_scale_cm_exact": "52020/517681",
+      "completed_difference_cm_exact": "52020/517681",
+      "completed_relative_difference_exact": "1/974",
+      "expected_width_cm_exact": "104040/1063",
+      "limit_results": {
+        "absolute_difference_cm": true,
+        "per_side_source_pixels": true,
+        "relative_difference": true
+      },
+      "maximum_per_side_source_pixels_exact": "1/2",
+      "measured_geometry_clipped": false,
+      "negative_side_difference_cm_exact": "26010/517681",
+      "observed_width_cm_exact": "50719500/517681",
+      "positive_side_difference_cm_exact": "26010/517681",
+      "thresholds_exact": {
+        "maximum_absolute_difference_cm": "1/5",
+        "maximum_per_side_source_pixels": "1/1",
+        "maximum_relative_difference": "1/400"
+      }
+    },
+    "high_poly_nanite_amendment_applied": true,
+    "mesh_records": 50,
+    "polygons": 1103198,
+    "result": "PASS",
+    "triangles_observed_not_gated": 2202434,
+    "vertices": 1120742
+  },
+  "proof_render_gate": {
+    "fixed_silhouette_renders": 6,
+    "neutral_clay_renders": 7,
+    "parallax_frames": 8,
+    "pre_render_audit_passed": true,
+    "production_materials_created": false,
+    "wireframe_contact_sets": 1
+  },
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "schema": "AERATHEA_R8_STEP12_CANDIDATE_BUILD_MANIFEST_A01_V1",
+  "step13_authorized": false,
+  "unreal_authorized": false
+}

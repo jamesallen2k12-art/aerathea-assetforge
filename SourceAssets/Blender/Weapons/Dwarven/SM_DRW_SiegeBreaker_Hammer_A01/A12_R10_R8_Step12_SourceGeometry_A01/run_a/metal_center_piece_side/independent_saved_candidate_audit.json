@@ -1,0 +1,1386 @@
+{
+  "artifact_status": "proof only",
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "audit_independence": {
+    "builder_claims_used_as_geometry_authority": false,
+    "builder_imported": false,
+    "canonical_geometry_used_for_integrity_only": true,
+    "expected_geometry_derived_from_hash_locked_sources": true,
+    "saved_blend_geometry_read_directly": true,
+    "scene_custom_properties_used_for_integrity_and_stage_locks_only": true
+  },
+  "candidate": "metal_center_piece_side",
+  "checks": [
+    {
+      "category": "authority",
+      "expected": "2b598497ba5e61a4352c217f3fb20b3545189c710934f3a21d9b7398ddb472c7",
+      "id": "AUTH-blueprint",
+      "observed": "2b598497ba5e61a4352c217f3fb20b3545189c710934f3a21d9b7398ddb472c7",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "2e4276ea0adc32d8c6a21fb5bfbd46eacf627a9708c6187e56be1556eee76ba6",
+      "id": "AUTH-amendment",
+      "observed": "2e4276ea0adc32d8c6a21fb5bfbd46eacf627a9708c6187e56be1556eee76ba6",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "45cc92d07f90fdb1bb104c8ede5e9fb6e6161454ea91d0923dc6f81cf02512d1",
+      "id": "AUTH-parity_amendment",
+      "observed": "45cc92d07f90fdb1bb104c8ede5e9fb6e6161454ea91d0923dc6f81cf02512d1",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "850fd42808be667da1d24f1dbccc8ff192ac8b2ccddadb0b714256637849b61a",
+      "id": "AUTH-stitch_amendment",
+      "observed": "850fd42808be667da1d24f1dbccc8ff192ac8b2ccddadb0b714256637849b61a",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "640d19d6012b4c9926d7ddd431812481219fc65703effa08b194af2116e78b74",
+      "id": "AUTH-tolerance_amendment",
+      "observed": "640d19d6012b4c9926d7ddd431812481219fc65703effa08b194af2116e78b74",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "3235fcc9480ad246f968b275792aa3a309aa34710b5bfec3fc005980ae3d5069",
+      "id": "AUTH-step11_authority_lock",
+      "observed": "3235fcc9480ad246f968b275792aa3a309aa34710b5bfec3fc005980ae3d5069",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "a3f16266da53ed28a0c849818271dea0c07cd8ba8005e05a6778e2a0f6d2935b",
+      "id": "AUTH-step12_contract",
+      "observed": "a3f16266da53ed28a0c849818271dea0c07cd8ba8005e05a6778e2a0f6d2935b",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "2b6fedd15020808beb63ff556c66bc52114a06cd69331f72bfe637caea69e7d7",
+      "id": "AUTH-step12_approval",
+      "observed": "2b6fedd15020808beb63ff556c66bc52114a06cd69331f72bfe637caea69e7d7",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "5d2d2637a58113f0a6f5ec92e40d8bb2bda9e03fb58b4868a0d9dfbb3b57ad55",
+      "id": "AUTH-CATALOG-agents",
+      "observed": "5d2d2637a58113f0a6f5ec92e40d8bb2bda9e03fb58b4868a0d9dfbb3b57ad55",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "6e2786e5d283f0176f90f83a80493c04581a6680aab32b3214c52403382e522f",
+      "id": "AUTH-CATALOG-approval_record",
+      "observed": "6e2786e5d283f0176f90f83a80493c04581a6680aab32b3214c52403382e522f",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "8ee99d2b5c510a540623aa4a69154b3bc0da9c7a9e846a42194a0dabe716d1b4",
+      "id": "AUTH-CATALOG-closure_amendment",
+      "observed": "8ee99d2b5c510a540623aa4a69154b3bc0da9c7a9e846a42194a0dabe716d1b4",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "a40d0b67d802687ac3c9ec9ad8e00a915cc1dc730ce31f3fab00b18a1837a21c",
+      "id": "AUTH-CATALOG-component_equations",
+      "observed": "a40d0b67d802687ac3c9ec9ad8e00a915cc1dc730ce31f3fab00b18a1837a21c",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "8296f530d48f43b99c6de26271e3be4da0a9fd512e389c90f55b9d5208185b29",
+      "id": "AUTH-CATALOG-component_equations_approval",
+      "observed": "8296f530d48f43b99c6de26271e3be4da0a9fd512e389c90f55b9d5208185b29",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "53046eb839b94d9548dfc2e49471b3605a2fc882228ca5e4291db7390e584a2a",
+      "id": "AUTH-CATALOG-pipeline_plan",
+      "observed": "53046eb839b94d9548dfc2e49471b3605a2fc882228ca5e4291db7390e584a2a",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "41c543aebf9bca5e5e8b970851843b6485fa17fc3473325d46a3960a9ba46f1b",
+      "id": "AUTH-CATALOG-project_charter",
+      "observed": "41c543aebf9bca5e5e8b970851843b6485fa17fc3473325d46a3960a9ba46f1b",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "b563abfcda868f0345c65c729acee0d7d0dd9123e65544405d0139de06d64800",
+      "id": "AUTH-CATALOG-proposed_contract",
+      "observed": "b563abfcda868f0345c65c729acee0d7d0dd9123e65544405d0139de06d64800",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "6db37706e87021cf1ea978091c1e7b9f30c21163a5d5bd64bb6b32919ee352e0",
+      "id": "AUTH-CATALOG-proven_process_audit",
+      "observed": "6db37706e87021cf1ea978091c1e7b9f30c21163a5d5bd64bb6b32919ee352e0",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "088ec22595437611e4f0e136db13b49d32ce3caaf8224c60f145f1c15153f235",
+      "id": "AUTH-CATALOG-proven_process_builder",
+      "observed": "088ec22595437611e4f0e136db13b49d32ce3caaf8224c60f145f1c15153f235",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "639db9d0c565aae7b974dab6fce9fb888f1b8412c77bbb2f6046413a7dbdff52",
+      "id": "AUTH-CATALOG-proven_process_output",
+      "observed": "639db9d0c565aae7b974dab6fce9fb888f1b8412c77bbb2f6046413a7dbdff52",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "b0b077c8d39a07e5d1ab12309e77560afa1c407fe3bb3e6272a0c4e6d568b22e",
+      "id": "AUTH-CATALOG-r7_component_plan",
+      "observed": "b0b077c8d39a07e5d1ab12309e77560afa1c407fe3bb3e6272a0c4e6d568b22e",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "77b0339126388be01f59532cd6b79228450b61e739ebc10c2f849833fd337bd4",
+      "id": "AUTH-CATALOG-r8_execution_contract",
+      "observed": "77b0339126388be01f59532cd6b79228450b61e739ebc10c2f849833fd337bd4",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "eba4884b6b52178846854b59c88594fc3aa896067d868f6748d4aadd3bc4106a",
+      "id": "AUTH-CATALOG-source_half_contract",
+      "observed": "eba4884b6b52178846854b59c88594fc3aa896067d868f6748d4aadd3bc4106a",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "1bf54f9400dc2a4d0bb972ad56a3a913b586254f09b4867542e1c9899daf8a60",
+      "id": "AUTH-CATALOG-step04_inventory",
+      "observed": "1bf54f9400dc2a4d0bb972ad56a3a913b586254f09b4867542e1c9899daf8a60",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "aed4b8d87a4a5b442c0465c9db59fa524f63797153d662e1a5e7cf90423a2446",
+      "id": "AUTH-CATALOG-step05_registration",
+      "observed": "aed4b8d87a4a5b442c0465c9db59fa524f63797153d662e1a5e7cf90423a2446",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "817af18192b3cf3b26ac47fb460e18b82266c30ce61f993b463a36175c014fcb",
+      "id": "AUTH-CATALOG-step06_back",
+      "observed": "817af18192b3cf3b26ac47fb460e18b82266c30ce61f993b463a36175c014fcb",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "85f09fc89c8b73df8e6fdf47924e2251da9dda6decabe44fa3f3b2577b7708eb",
+      "id": "AUTH-CATALOG-step06_front",
+      "observed": "85f09fc89c8b73df8e6fdf47924e2251da9dda6decabe44fa3f3b2577b7708eb",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "7d099a11fb5566059bf0caaeaa353c479a531acff78fac6a9bedbeea739eb3f1",
+      "id": "AUTH-CATALOG-step07_left",
+      "observed": "7d099a11fb5566059bf0caaeaa353c479a531acff78fac6a9bedbeea739eb3f1",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "977831e86b02148125a7e1a04024d2d114721590ebf63937bdd314d02cc427c9",
+      "id": "AUTH-CATALOG-step07_right",
+      "observed": "977831e86b02148125a7e1a04024d2d114721590ebf63937bdd314d02cc427c9",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "aea70d998dabe9f28d3ec5fb44a2d2206f8874096a3d33ee9b836074b2ede9a2",
+      "id": "AUTH-CATALOG-step08_bottom",
+      "observed": "aea70d998dabe9f28d3ec5fb44a2d2206f8874096a3d33ee9b836074b2ede9a2",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "5925dee1ab39a0535150804a4353157b17d51fec648791774808c9c832dd8b36",
+      "id": "AUTH-CATALOG-step08_top",
+      "observed": "5925dee1ab39a0535150804a4353157b17d51fec648791774808c9c832dd8b36",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "5a0a3eea8f877d55216f9efabe15b0ee1cf938e4c15a825a0e218f72ba76839a",
+      "id": "AUTH-CATALOG-step09_index",
+      "observed": "5a0a3eea8f877d55216f9efabe15b0ee1cf938e4c15a825a0e218f72ba76839a",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "260c79857fe059517b4076bcc65b538aef807a7be33a58a4a46edc32c2150fdb",
+      "id": "AUTH-CATALOG-step09_pre_geometry",
+      "observed": "260c79857fe059517b4076bcc65b538aef807a7be33a58a4a46edc32c2150fdb",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "a7e07ad68e9b2737c7c70e71e9df714766a285695693e741197900e17c3a06a5",
+      "id": "AUTH-CATALOG-step09a_authority_lock",
+      "observed": "a7e07ad68e9b2737c7c70e71e9df714766a285695693e741197900e17c3a06a5",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "e190ed266753c797d4f9ec812154ff3b29f5d5d780e53e235e780c43492d0bd8",
+      "id": "AUTH-CATALOG-step09a_boundaries",
+      "observed": "e190ed266753c797d4f9ec812154ff3b29f5d5d780e53e235e780c43492d0bd8",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "396adfbaaefc8a8ea35104e5e96dfde322510fb4ce88530fbb32f7f3073b3562",
+      "id": "AUTH-CATALOG-step09a_scanlines",
+      "observed": "396adfbaaefc8a8ea35104e5e96dfde322510fb4ce88530fbb32f7f3073b3562",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "1e02aecf558145d4e440b1cdda90513fb28a0075149b1bf24f7ed3c00f7c3e60",
+      "id": "AUTH-CATALOG-step09a_validation",
+      "observed": "1e02aecf558145d4e440b1cdda90513fb28a0075149b1bf24f7ed3c00f7c3e60",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "0559b801ed3f544af82057d45f918599f07524588ff49c5ca92aefa744e467e9",
+      "id": "AUTH-CATALOG-step10_decisions",
+      "observed": "0559b801ed3f544af82057d45f918599f07524588ff49c5ca92aefa744e467e9",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "ff2f7cb37284dc7d1416044913375f67924ec4141c22a5385b3a29541e7446b9",
+      "id": "AUTH-CATALOG-step10_numeric",
+      "observed": "ff2f7cb37284dc7d1416044913375f67924ec4141c22a5385b3a29541e7446b9",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "d243832e443779ae99e658e401a1985b94fa243a1a803849a50d1f31bd97eba0",
+      "id": "AUTH-CATALOG-step11_preflight",
+      "observed": "d243832e443779ae99e658e401a1985b94fa243a1a803849a50d1f31bd97eba0",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "e2bf62f65612945bdd9e295295b2b970098e88d75edd21d2e8c4896d5fbcf32b",
+      "id": "AUTH-CATALOG-step11_preflight_validation",
+      "observed": "e2bf62f65612945bdd9e295295b2b970098e88d75edd21d2e8c4896d5fbcf32b",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "84da92d2bec200a646bee4297965e9cd3bcd9aac090381b4108d931d7c1f4cd7",
+      "id": "AUTH-CATALOG-view_scale_contract",
+      "observed": "84da92d2bec200a646bee4297965e9cd3bcd9aac090381b4108d931d7c1f4cd7",
+      "result": "PASS"
+    },
+    {
+      "category": "authority",
+      "expected": "405d93b079c0fe52bdc443cadd085010fb64acf4cf9d078bf6e78d7e915e3ba0",
+      "id": "AUTH-CATALOG-zero_extrusion_handoff",
+      "observed": "405d93b079c0fe52bdc443cadd085010fb64acf4cf9d078bf6e78d7e915e3ba0",
+      "result": "PASS"
+    },
+    {
+      "category": "saved-file identity",
+      "expected": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/metal_center_piece_side/SM_DRW_SiegeBreaker_Hammer_A01_metal_center_piece_side_DCCSourceCandidate.blend",
+      "id": "SAVED-FILE-EXACT-PATH",
+      "observed": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/metal_center_piece_side/SM_DRW_SiegeBreaker_Hammer_A01_metal_center_piece_side_DCCSourceCandidate.blend",
+      "result": "PASS"
+    },
+    {
+      "category": "scene structure",
+      "expected": "all saved scene objects are mesh records",
+      "id": "SCENE-ONLY-MESH-OBJECTS",
+      "observed": {
+        "mesh_objects": 50,
+        "non_mesh": [],
+        "scene_objects": 50
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "closed-world inventory",
+      "expected": [
+        "CAP_C11_BOTTOM",
+        "CAP_C11_BOTTOM__RZ180",
+        "CAP_C12_TOP",
+        "CAP_C12_TOP__RZ180",
+        "CLOSURE_C02_INNER_COMPLETED_PERIMETER",
+        "CLOSURE_C03_INNER_COMPLETED_PERIMETER",
+        "CLOSURE_C03_TO_C04_METAL",
+        "CLOSURE_C03_TO_C04_METAL_RZ180",
+        "CONTACT_C01_C06",
+        "CONTACT_C01_C06__RZ180",
+        "CONTACT_C07B_C08",
+        "CONTACT_C07B_C08__RZ180",
+        "CONTACT_C07_C07B",
+        "CONTACT_C07_C07B__RZ180",
+        "CONTACT_C09_C10",
+        "CONTACT_C09_C10__RZ180",
+        "CONTACT_C10_C11",
+        "CONTACT_C10_C11__RZ180",
+        "SURF_C01_FRONT",
+        "SURF_C01_FRONT__RZ180",
+        "SURF_C02_BOTTOM_HALF",
+        "SURF_C02_BOTTOM_HALF__RZ180",
+        "SURF_C02_FRONT",
+        "SURF_C02_FRONT__RZ180",
+        "SURF_C02_TOP_HALF",
+        "SURF_C02_TOP_HALF__RZ180",
+        "SURF_C03_BOTTOM_HALF",
+        "SURF_C03_BOTTOM_HALF__RZ180",
+        "SURF_C03_FRONT",
+        "SURF_C03_FRONT__RZ180",
+        "SURF_C03_TOP_HALF",
+        "SURF_C03_TOP_HALF__RZ180",
+        "SURF_C04_METAL_FACE_HALF",
+        "SURF_C04_METAL_FACE_HALF__RZ180",
+        "SURF_C06_ROTATIONAL_HALF",
+        "SURF_C06_ROTATIONAL_HALF__RZ180",
+        "SURF_C07B_ROTATIONAL_HALF",
+        "SURF_C07B_ROTATIONAL_HALF__RZ180",
+        "SURF_C07_ROTATIONAL_HALF",
+        "SURF_C07_ROTATIONAL_HALF__RZ180",
+        "SURF_C08_ROTATIONAL_HALF",
+        "SURF_C08_ROTATIONAL_HALF__RZ180",
+        "SURF_C09_ROTATIONAL_HALF",
+        "SURF_C09_ROTATIONAL_HALF__RZ180",
+        "SURF_C10_ROTATIONAL_HALF",
+        "SURF_C10_ROTATIONAL_HALF__RZ180",
+        "SURF_C11_ROTATIONAL_HALF",
+        "SURF_C11_ROTATIONAL_HALF__RZ180",
+        "SURF_C12_ROTATIONAL_HALF",
+        "SURF_C12_ROTATIONAL_HALF__RZ180"
+      ],
+      "id": "OBJECT-INVENTORY-EXACT",
+      "observed": {
+        "count": 50,
+        "missing": [],
+        "unexpected": []
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "scene configuration",
+      "expected": {
+        "length_unit": "CENTIMETERS",
+        "scale_length": 0.01,
+        "system": "METRIC"
+      },
+      "id": "SCENE-METRIC-CENTIMETERS",
+      "observed": {
+        "length_unit": "CENTIMETERS",
+        "scale_length": 0.009999999776482582,
+        "system": "METRIC"
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "scene configuration",
+      "expected": {
+        "adaptive": false,
+        "denoising": false,
+        "device": "CPU",
+        "engine": "CYCLES",
+        "samples": 32,
+        "view_transform": "Standard"
+      },
+      "id": "SCENE-DETERMINISTIC-RENDER-SETTINGS",
+      "observed": {
+        "adaptive": false,
+        "denoising": false,
+        "device": "CPU",
+        "engine": "CYCLES",
+        "samples": 32,
+        "view_transform": "Standard"
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "geometry invariants",
+      "expected": [],
+      "id": "OBJECT-IDENTITY-TRANSFORMS",
+      "observed": [],
+      "result": "PASS"
+    },
+    {
+      "category": "forbidden methods",
+      "expected": [],
+      "id": "OBJECT-NO-MODIFIERS",
+      "observed": [],
+      "result": "PASS"
+    },
+    {
+      "category": "stage boundary",
+      "expected": [],
+      "id": "OBJECT-NO-UV-LAYERS",
+      "observed": [],
+      "result": "PASS"
+    },
+    {
+      "category": "stage boundary",
+      "expected": "one M_STEP12_PROOF_* material and no image textures per object",
+      "id": "OBJECT-PROOF-MATERIALS-ONLY",
+      "observed": [],
+      "result": "PASS"
+    },
+    {
+      "category": "geometry invariants",
+      "expected": {
+        "degenerate_index_faces": 0,
+        "nonfinite_vertices": 0,
+        "zero_area_faces": 0
+      },
+      "id": "MESH-FINITE-NONDEGENERATE",
+      "observed": {
+        "degenerate_index_faces": 0,
+        "nonfinite_vertices": 0,
+        "zero_area_faces": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "scale and pivot",
+      "expected": {
+        "maximum_y_cm": 21.56021897810219,
+        "maximum_z_cm": 170.0,
+        "minimum_y_cm": -21.56021897810219,
+        "minimum_z_cm": 0.0,
+        "pivot_cm": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "id": "GEOMETRY-EXACT-PIVOT-DEPTH-HEIGHT",
+      "observed": {
+        "dimensions_cm": [
+          97.97442626953125,
+          43.12043762207031,
+          170.0
+        ],
+        "maximum_cm": [
+          48.987213134765625,
+          21.560218811035156,
+          170.0
+        ],
+        "minimum_cm": [
+          -48.987213134765625,
+          -21.560218811035156,
+          0.0
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "cross-view silhouette tolerance",
+      "expected": {
+        "all_limits_required": true,
+        "maximum_absolute_difference_cm": 0.2,
+        "maximum_per_side_source_pixels": 1.0,
+        "maximum_relative_difference": 0.0025
+      },
+      "id": "GEOMETRY-CROSS-VIEW-WIDTH-TOLERANCE",
+      "observed": {
+        "axial_pixel_scale_cm": 0.10048659309497547,
+        "completed_difference_cm": 0.10048459502513651,
+        "completed_relative_difference": 0.0010266736304471369,
+        "expected_width_cm": 97.87394167450611,
+        "limit_results": {
+          "absolute_difference_cm": true,
+          "per_side_source_pixels": true,
+          "relative_difference": true
+        },
+        "maximum_per_side_source_pixels": 0.49999005802775565,
+        "measured_geometry_clipped": false,
+        "negative_side_difference_cm": 0.05024229751256826,
+        "observed_width_cm": 97.97442626953125,
+        "positive_side_difference_cm": 0.05024229751256826
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "source ownership",
+      "expected": "every polygon belongs to the exact approved owner cell and plane",
+      "id": "SOURCE-OWNER-REPLAY-SURF_C01_FRONT",
+      "observed": {
+        "expected_polygons": 46183,
+        "observed_polygons": 46183,
+        "owner_cell_failures": 0,
+        "plane_failures": 0,
+        "result": "PASS"
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "source ownership",
+      "expected": "every polygon belongs to the exact approved owner cell and plane",
+      "id": "SOURCE-OWNER-REPLAY-SURF_C02_FRONT",
+      "observed": {
+        "expected_polygons": 71788,
+        "observed_polygons": 71788,
+        "owner_cell_failures": 0,
+        "plane_failures": 0,
+        "result": "PASS"
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "source ownership",
+      "expected": "every polygon belongs to the exact approved owner cell and plane",
+      "id": "SOURCE-OWNER-REPLAY-SURF_C03_FRONT",
+      "observed": {
+        "expected_polygons": 71689,
+        "observed_polygons": 71689,
+        "owner_cell_failures": 0,
+        "plane_failures": 0,
+        "result": "PASS"
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "source ownership",
+      "expected": "every polygon belongs to the exact approved owner cell and plane",
+      "id": "SOURCE-OWNER-REPLAY-SURF_C02_TOP_HALF",
+      "observed": {
+        "expected_polygons": 66750,
+        "observed_polygons": 66750,
+        "owner_cell_failures": 0,
+        "plane_failures": 0,
+        "result": "PASS"
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "source ownership",
+      "expected": "every polygon belongs to the exact approved owner cell and plane",
+      "id": "SOURCE-OWNER-REPLAY-SURF_C03_TOP_HALF",
+      "observed": {
+        "expected_polygons": 66183,
+        "observed_polygons": 66183,
+        "owner_cell_failures": 0,
+        "plane_failures": 0,
+        "result": "PASS"
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "source ownership",
+      "expected": "every polygon belongs to the exact approved owner cell and plane",
+      "id": "SOURCE-OWNER-REPLAY-SURF_C02_BOTTOM_HALF",
+      "observed": {
+        "expected_polygons": 64426,
+        "observed_polygons": 64426,
+        "owner_cell_failures": 0,
+        "plane_failures": 0,
+        "result": "PASS"
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "source ownership",
+      "expected": "every polygon belongs to the exact approved owner cell and plane",
+      "id": "SOURCE-OWNER-REPLAY-SURF_C03_BOTTOM_HALF",
+      "observed": {
+        "expected_polygons": 64206,
+        "observed_polygons": 64206,
+        "owner_cell_failures": 0,
+        "plane_failures": 0,
+        "result": "PASS"
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "source ownership",
+      "expected": "every polygon belongs to the exact candidate C04 owner; one coordinate-exact local Y mirror",
+      "id": "SOURCE-OWNER-REPLAY-SURF_C04_METAL_FACE_HALF",
+      "observed": {
+        "expected_polygons": 75016,
+        "local_y_mirror_coordinate_exact": true,
+        "observed_polygons": 75016,
+        "owner_cell_failures": 0,
+        "plane_failures": 0,
+        "result": "PASS"
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "source ownership",
+      "expected": "exact source-row radii and Z stations with 64 positive-X angular divisions",
+      "id": "ROTATIONAL-REPLAY-SURF_C06_ROTATIONAL_HALF",
+      "observed": {
+        "angular_divisions_positive_x": 64,
+        "expected_polygons": 4480,
+        "expected_rings": 71,
+        "expected_vertices": 4615,
+        "half_ring_endpoint_failures": 0,
+        "observed_polygons": 4480,
+        "observed_vertices": 4615,
+        "result": "PASS",
+        "source_row_sequence_exact": true,
+        "source_rows_half_open": [
+          600,
+          670
+        ],
+        "vertex_measurement_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "source ownership",
+      "expected": "exact source-row radii and Z stations with 64 positive-X angular divisions",
+      "id": "ROTATIONAL-REPLAY-SURF_C07_ROTATIONAL_HALF",
+      "observed": {
+        "angular_divisions_positive_x": 64,
+        "expected_polygons": 12800,
+        "expected_rings": 201,
+        "expected_vertices": 13065,
+        "half_ring_endpoint_failures": 0,
+        "observed_polygons": 12800,
+        "observed_vertices": 13065,
+        "result": "PASS",
+        "source_row_sequence_exact": true,
+        "source_rows_half_open": [
+          670,
+          870
+        ],
+        "vertex_measurement_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "source ownership",
+      "expected": "exact source-row radii and Z stations with 64 positive-X angular divisions",
+      "id": "ROTATIONAL-REPLAY-SURF_C07B_ROTATIONAL_HALF",
+      "observed": {
+        "angular_divisions_positive_x": 64,
+        "expected_polygons": 5440,
+        "expected_rings": 86,
+        "expected_vertices": 5590,
+        "half_ring_endpoint_failures": 0,
+        "observed_polygons": 5440,
+        "observed_vertices": 5590,
+        "result": "PASS",
+        "source_row_sequence_exact": true,
+        "source_rows_half_open": [
+          870,
+          955
+        ],
+        "vertex_measurement_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "source ownership",
+      "expected": "exact source-row radii and Z stations with 64 positive-X angular divisions",
+      "id": "ROTATIONAL-REPLAY-SURF_C08_ROTATIONAL_HALF",
+      "observed": {
+        "angular_divisions_positive_x": 64,
+        "expected_polygons": 9920,
+        "expected_rings": 156,
+        "expected_vertices": 10140,
+        "half_ring_endpoint_failures": 0,
+        "observed_polygons": 9920,
+        "observed_vertices": 10140,
+        "result": "PASS",
+        "source_row_sequence_exact": true,
+        "source_rows_half_open": [
+          955,
+          1110
+        ],
+        "vertex_measurement_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "source ownership",
+      "expected": "exact source-row radii and Z stations with 64 positive-X angular divisions",
+      "id": "ROTATIONAL-REPLAY-SURF_C09_ROTATIONAL_HALF",
+      "observed": {
+        "angular_divisions_positive_x": 64,
+        "expected_polygons": 2560,
+        "expected_rings": 41,
+        "expected_vertices": 2665,
+        "half_ring_endpoint_failures": 0,
+        "observed_polygons": 2560,
+        "observed_vertices": 2665,
+        "result": "PASS",
+        "source_row_sequence_exact": true,
+        "source_rows_half_open": [
+          1110,
+          1150
+        ],
+        "vertex_measurement_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "source ownership",
+      "expected": "exact source-row radii and Z stations with 64 positive-X angular divisions",
+      "id": "ROTATIONAL-REPLAY-SURF_C10_ROTATIONAL_HALF",
+      "observed": {
+        "angular_divisions_positive_x": 64,
+        "expected_polygons": 4480,
+        "expected_rings": 71,
+        "expected_vertices": 4615,
+        "half_ring_endpoint_failures": 0,
+        "observed_polygons": 4480,
+        "observed_vertices": 4615,
+        "result": "PASS",
+        "source_row_sequence_exact": true,
+        "source_rows_half_open": [
+          1150,
+          1220
+        ],
+        "vertex_measurement_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "source ownership",
+      "expected": "exact source-row radii and Z stations with 64 positive-X angular divisions",
+      "id": "ROTATIONAL-REPLAY-SURF_C11_ROTATIONAL_HALF",
+      "observed": {
+        "angular_divisions_positive_x": 64,
+        "expected_polygons": 3264,
+        "expected_rings": 52,
+        "expected_vertices": 3380,
+        "half_ring_endpoint_failures": 0,
+        "observed_polygons": 3264,
+        "observed_vertices": 3380,
+        "result": "PASS",
+        "source_row_sequence_exact": true,
+        "source_rows_half_open": [
+          1220,
+          1271
+        ],
+        "vertex_measurement_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "source ownership",
+      "expected": "exact source-row radii and Z stations with 64 positive-X angular divisions",
+      "id": "ROTATIONAL-REPLAY-SURF_C12_ROTATIONAL_HALF",
+      "observed": {
+        "angular_divisions_positive_x": 64,
+        "expected_polygons": 5568,
+        "expected_rings": 88,
+        "expected_vertices": 5720,
+        "half_ring_endpoint_failures": 0,
+        "observed_polygons": 5568,
+        "observed_vertices": 5720,
+        "result": "PASS",
+        "source_row_sequence_exact": true,
+        "source_rows_half_open": [
+          208,
+          295
+        ],
+        "vertex_measurement_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "single whole-asset completion",
+      "expected": "one index-preserving (-X,-Y,+Z) occurrence",
+      "id": "RZ180-SURF_C01_FRONT",
+      "observed": {
+        "face_index_failures": 0,
+        "polygon_count": 46183,
+        "result": "PASS",
+        "rotated": "SURF_C01_FRONT__RZ180",
+        "source": "SURF_C01_FRONT",
+        "vertex_count": 46681,
+        "vertex_transform_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "single whole-asset completion",
+      "expected": "one index-preserving (-X,-Y,+Z) occurrence",
+      "id": "RZ180-SURF_C02_FRONT",
+      "observed": {
+        "face_index_failures": 0,
+        "polygon_count": 71788,
+        "result": "PASS",
+        "rotated": "SURF_C02_FRONT__RZ180",
+        "source": "SURF_C02_FRONT",
+        "vertex_count": 72403,
+        "vertex_transform_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "single whole-asset completion",
+      "expected": "one index-preserving (-X,-Y,+Z) occurrence",
+      "id": "RZ180-SURF_C02_TOP_HALF",
+      "observed": {
+        "face_index_failures": 0,
+        "polygon_count": 66750,
+        "result": "PASS",
+        "rotated": "SURF_C02_TOP_HALF__RZ180",
+        "source": "SURF_C02_TOP_HALF",
+        "vertex_count": 67337,
+        "vertex_transform_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "single whole-asset completion",
+      "expected": "one index-preserving (-X,-Y,+Z) occurrence",
+      "id": "RZ180-SURF_C02_BOTTOM_HALF",
+      "observed": {
+        "face_index_failures": 0,
+        "polygon_count": 64426,
+        "result": "PASS",
+        "rotated": "SURF_C02_BOTTOM_HALF__RZ180",
+        "source": "SURF_C02_BOTTOM_HALF",
+        "vertex_count": 64994,
+        "vertex_transform_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "single whole-asset completion",
+      "expected": "one index-preserving (-X,-Y,+Z) occurrence",
+      "id": "RZ180-SURF_C03_FRONT",
+      "observed": {
+        "face_index_failures": 0,
+        "polygon_count": 71689,
+        "result": "PASS",
+        "rotated": "SURF_C03_FRONT__RZ180",
+        "source": "SURF_C03_FRONT",
+        "vertex_count": 72308,
+        "vertex_transform_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "single whole-asset completion",
+      "expected": "one index-preserving (-X,-Y,+Z) occurrence",
+      "id": "RZ180-SURF_C03_TOP_HALF",
+      "observed": {
+        "face_index_failures": 0,
+        "polygon_count": 66183,
+        "result": "PASS",
+        "rotated": "SURF_C03_TOP_HALF__RZ180",
+        "source": "SURF_C03_TOP_HALF",
+        "vertex_count": 66750,
+        "vertex_transform_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "single whole-asset completion",
+      "expected": "one index-preserving (-X,-Y,+Z) occurrence",
+      "id": "RZ180-SURF_C03_BOTTOM_HALF",
+      "observed": {
+        "face_index_failures": 0,
+        "polygon_count": 64206,
+        "result": "PASS",
+        "rotated": "SURF_C03_BOTTOM_HALF__RZ180",
+        "source": "SURF_C03_BOTTOM_HALF",
+        "vertex_count": 64771,
+        "vertex_transform_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "single whole-asset completion",
+      "expected": "one index-preserving (-X,-Y,+Z) occurrence",
+      "id": "RZ180-SURF_C04_METAL_FACE_HALF",
+      "observed": {
+        "face_index_failures": 0,
+        "polygon_count": 75016,
+        "result": "PASS",
+        "rotated": "SURF_C04_METAL_FACE_HALF__RZ180",
+        "source": "SURF_C04_METAL_FACE_HALF",
+        "vertex_count": 75617,
+        "vertex_transform_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "single whole-asset completion",
+      "expected": "one index-preserving (-X,-Y,+Z) occurrence",
+      "id": "RZ180-SURF_C06_ROTATIONAL_HALF",
+      "observed": {
+        "face_index_failures": 0,
+        "polygon_count": 4480,
+        "result": "PASS",
+        "rotated": "SURF_C06_ROTATIONAL_HALF__RZ180",
+        "source": "SURF_C06_ROTATIONAL_HALF",
+        "vertex_count": 4615,
+        "vertex_transform_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "single whole-asset completion",
+      "expected": "one index-preserving (-X,-Y,+Z) occurrence",
+      "id": "RZ180-SURF_C07_ROTATIONAL_HALF",
+      "observed": {
+        "face_index_failures": 0,
+        "polygon_count": 12800,
+        "result": "PASS",
+        "rotated": "SURF_C07_ROTATIONAL_HALF__RZ180",
+        "source": "SURF_C07_ROTATIONAL_HALF",
+        "vertex_count": 13065,
+        "vertex_transform_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "single whole-asset completion",
+      "expected": "one index-preserving (-X,-Y,+Z) occurrence",
+      "id": "RZ180-SURF_C07B_ROTATIONAL_HALF",
+      "observed": {
+        "face_index_failures": 0,
+        "polygon_count": 5440,
+        "result": "PASS",
+        "rotated": "SURF_C07B_ROTATIONAL_HALF__RZ180",
+        "source": "SURF_C07B_ROTATIONAL_HALF",
+        "vertex_count": 5590,
+        "vertex_transform_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "single whole-asset completion",
+      "expected": "one index-preserving (-X,-Y,+Z) occurrence",
+      "id": "RZ180-SURF_C08_ROTATIONAL_HALF",
+      "observed": {
+        "face_index_failures": 0,
+        "polygon_count": 9920,
+        "result": "PASS",
+        "rotated": "SURF_C08_ROTATIONAL_HALF__RZ180",
+        "source": "SURF_C08_ROTATIONAL_HALF",
+        "vertex_count": 10140,
+        "vertex_transform_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "single whole-asset completion",
+      "expected": "one index-preserving (-X,-Y,+Z) occurrence",
+      "id": "RZ180-SURF_C09_ROTATIONAL_HALF",
+      "observed": {
+        "face_index_failures": 0,
+        "polygon_count": 2560,
+        "result": "PASS",
+        "rotated": "SURF_C09_ROTATIONAL_HALF__RZ180",
+        "source": "SURF_C09_ROTATIONAL_HALF",
+        "vertex_count": 2665,
+        "vertex_transform_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "single whole-asset completion",
+      "expected": "one index-preserving (-X,-Y,+Z) occurrence",
+      "id": "RZ180-SURF_C10_ROTATIONAL_HALF",
+      "observed": {
+        "face_index_failures": 0,
+        "polygon_count": 4480,
+        "result": "PASS",
+        "rotated": "SURF_C10_ROTATIONAL_HALF__RZ180",
+        "source": "SURF_C10_ROTATIONAL_HALF",
+        "vertex_count": 4615,
+        "vertex_transform_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "single whole-asset completion",
+      "expected": "one index-preserving (-X,-Y,+Z) occurrence",
+      "id": "RZ180-SURF_C11_ROTATIONAL_HALF",
+      "observed": {
+        "face_index_failures": 0,
+        "polygon_count": 3264,
+        "result": "PASS",
+        "rotated": "SURF_C11_ROTATIONAL_HALF__RZ180",
+        "source": "SURF_C11_ROTATIONAL_HALF",
+        "vertex_count": 3380,
+        "vertex_transform_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "single whole-asset completion",
+      "expected": "one index-preserving (-X,-Y,+Z) occurrence",
+      "id": "RZ180-SURF_C12_ROTATIONAL_HALF",
+      "observed": {
+        "face_index_failures": 0,
+        "polygon_count": 5568,
+        "result": "PASS",
+        "rotated": "SURF_C12_ROTATIONAL_HALF__RZ180",
+        "source": "SURF_C12_ROTATIONAL_HALF",
+        "vertex_count": 5720,
+        "vertex_transform_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "single whole-asset completion",
+      "expected": "one index-preserving (-X,-Y,+Z) occurrence",
+      "id": "RZ180-CONTACT_C01_C06",
+      "observed": {
+        "face_index_failures": 0,
+        "polygon_count": 64,
+        "result": "PASS",
+        "rotated": "CONTACT_C01_C06__RZ180",
+        "source": "CONTACT_C01_C06",
+        "vertex_count": 130,
+        "vertex_transform_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "single whole-asset completion",
+      "expected": "one index-preserving (-X,-Y,+Z) occurrence",
+      "id": "RZ180-CONTACT_C07B_C08",
+      "observed": {
+        "face_index_failures": 0,
+        "polygon_count": 64,
+        "result": "PASS",
+        "rotated": "CONTACT_C07B_C08__RZ180",
+        "source": "CONTACT_C07B_C08",
+        "vertex_count": 130,
+        "vertex_transform_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "single whole-asset completion",
+      "expected": "one index-preserving (-X,-Y,+Z) occurrence",
+      "id": "RZ180-CONTACT_C07_C07B",
+      "observed": {
+        "face_index_failures": 0,
+        "polygon_count": 64,
+        "result": "PASS",
+        "rotated": "CONTACT_C07_C07B__RZ180",
+        "source": "CONTACT_C07_C07B",
+        "vertex_count": 130,
+        "vertex_transform_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "single whole-asset completion",
+      "expected": "one index-preserving (-X,-Y,+Z) occurrence",
+      "id": "RZ180-CONTACT_C09_C10",
+      "observed": {
+        "face_index_failures": 0,
+        "polygon_count": 64,
+        "result": "PASS",
+        "rotated": "CONTACT_C09_C10__RZ180",
+        "source": "CONTACT_C09_C10",
+        "vertex_count": 130,
+        "vertex_transform_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "single whole-asset completion",
+      "expected": "one index-preserving (-X,-Y,+Z) occurrence",
+      "id": "RZ180-CONTACT_C10_C11",
+      "observed": {
+        "face_index_failures": 0,
+        "polygon_count": 64,
+        "result": "PASS",
+        "rotated": "CONTACT_C10_C11__RZ180",
+        "source": "CONTACT_C10_C11",
+        "vertex_count": 130,
+        "vertex_transform_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "single whole-asset completion",
+      "expected": "one index-preserving (-X,-Y,+Z) occurrence",
+      "id": "RZ180-CAP_C11_BOTTOM",
+      "observed": {
+        "face_index_failures": 0,
+        "polygon_count": 64,
+        "result": "PASS",
+        "rotated": "CAP_C11_BOTTOM__RZ180",
+        "source": "CAP_C11_BOTTOM",
+        "vertex_count": 66,
+        "vertex_transform_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "single whole-asset completion",
+      "expected": "one index-preserving (-X,-Y,+Z) occurrence",
+      "id": "RZ180-CAP_C12_TOP",
+      "observed": {
+        "face_index_failures": 0,
+        "polygon_count": 64,
+        "result": "PASS",
+        "rotated": "CAP_C12_TOP__RZ180",
+        "source": "CAP_C12_TOP",
+        "vertex_count": 66,
+        "vertex_transform_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "closure topology",
+      "expected": "coordinate-exact Rz180 closure counterpart",
+      "id": "CLOSURE-RZ180-CLOSURE_C02_INNER_COMPLETED_PERIMETER",
+      "observed": {
+        "face_index_failures": 0,
+        "polygon_count": 2131,
+        "result": "PASS",
+        "rotated": "CLOSURE_C03_INNER_COMPLETED_PERIMETER",
+        "source": "CLOSURE_C02_INNER_COMPLETED_PERIMETER",
+        "vertex_count": 2133,
+        "vertex_transform_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "closure topology",
+      "expected": "coordinate-exact Rz180 closure counterpart",
+      "id": "CLOSURE-RZ180-CLOSURE_C03_TO_C04_METAL",
+      "observed": {
+        "face_index_failures": 0,
+        "polygon_count": 2986,
+        "result": "PASS",
+        "rotated": "CLOSURE_C03_TO_C04_METAL_RZ180",
+        "source": "CLOSURE_C03_TO_C04_METAL",
+        "vertex_count": 5969,
+        "vertex_transform_failures": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "closure topology",
+      "expected": "one connected triangulated disk, no Steiner center, no non-manifold edge, and both measured Y=0 bridges preserved",
+      "id": "STONE-STITCH-TOPOLOGY-CLOSURE_C02_INNER_COMPLETED_PERIMETER",
+      "observed": {
+        "active_vertices": 2133,
+        "bottom_distinct_endpoint_bridge_present": true,
+        "boundary_edges": 2133,
+        "connected_components": 1,
+        "edges": 4263,
+        "euler_characteristic": 1,
+        "faces": 2131,
+        "maximum_edge_face_use": 2,
+        "nonmanifold_edges_over_two": 0,
+        "quad_faces": 0,
+        "stored_vertices": 2133,
+        "top_distinct_endpoint_bridge_present": true,
+        "triangle_faces": 2131
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "closure topology",
+      "expected": "one connected triangulated disk, no Steiner center, no non-manifold edge, and both measured Y=0 bridges preserved",
+      "id": "STONE-STITCH-TOPOLOGY-CLOSURE_C03_INNER_COMPLETED_PERIMETER",
+      "observed": {
+        "active_vertices": 2133,
+        "bottom_distinct_endpoint_bridge_present": true,
+        "boundary_edges": 2133,
+        "connected_components": 1,
+        "edges": 4263,
+        "euler_characteristic": 1,
+        "faces": 2131,
+        "maximum_edge_face_use": 2,
+        "nonmanifold_edges_over_two": 0,
+        "quad_faces": 0,
+        "stored_vertices": 2133,
+        "top_distinct_endpoint_bridge_present": true,
+        "triangle_faces": 2131
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "closure topology",
+      "expected": "one connected ruled annular strip with two open boundary loops",
+      "id": "OUTER-CLOSURE-TOPOLOGY-CLOSURE_C03_TO_C04_METAL",
+      "observed": {
+        "active_vertices": 5969,
+        "boundary_edges": 5969,
+        "connected_components": 1,
+        "edges": 8955,
+        "euler_characteristic": 0,
+        "faces": 2986,
+        "maximum_edge_face_use": 2,
+        "nonmanifold_edges_over_two": 0,
+        "quad_faces": 2983,
+        "stored_vertices": 5969,
+        "triangle_faces": 3
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "closure topology",
+      "expected": "one connected ruled annular strip with two open boundary loops",
+      "id": "OUTER-CLOSURE-TOPOLOGY-CLOSURE_C03_TO_C04_METAL_RZ180",
+      "observed": {
+        "active_vertices": 5969,
+        "boundary_edges": 5969,
+        "connected_components": 1,
+        "edges": 8955,
+        "euler_characteristic": 0,
+        "faces": 2986,
+        "maximum_edge_face_use": 2,
+        "nonmanifold_edges_over_two": 0,
+        "quad_faces": 2983,
+        "stored_vertices": 5969,
+        "triangle_faces": 3
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "saved-file integrity",
+      "expected": "47422ab9775847e0f66cc1db6ae587eadec46bca7dc54027f69c7fe4a3a98175",
+      "id": "CANONICAL-GEOMETRY-INTEGRITY",
+      "observed": "47422ab9775847e0f66cc1db6ae587eadec46bca7dc54027f69c7fe4a3a98175",
+      "result": "PASS"
+    },
+    {
+      "category": "saved-file integrity",
+      "expected": "dcc3f4c0dd39f3fbfec15dc44dcd02d56665f08aabc1271e3cbba4d737bd6fde",
+      "id": "PRE-SAVE-VALIDATION-INTEGRITY",
+      "observed": "dcc3f4c0dd39f3fbfec15dc44dcd02d56665f08aabc1271e3cbba4d737bd6fde",
+      "result": "PASS"
+    },
+    {
+      "category": "saved-file integrity",
+      "expected": {
+        "mesh_records": 50,
+        "polygons": 1160636,
+        "result": "PASS",
+        "triangles_observed_not_gated": 2316748,
+        "vertices": 1179070
+      },
+      "id": "DIRECT-COUNTS-MATCH-PRE-SAVE-RECORD",
+      "observed": {
+        "mesh_records": 50,
+        "polygons": 1160636,
+        "result": "PASS",
+        "triangles_observed_not_gated": 2316748,
+        "vertices": 1179070
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "saved-file integrity",
+      "expected": {
+        "blend_sha256": "d98fe28d1409954069fbe77cca2fe7ae1b49c1d63bbff00096ff1986af2ef8de",
+        "candidate": "metal_center_piece_side"
+      },
+      "id": "BUILD-MANIFEST-SAVED-BLEND-HASH",
+      "observed": {
+        "blend_sha256": "d98fe28d1409954069fbe77cca2fe7ae1b49c1d63bbff00096ff1986af2ef8de",
+        "candidate": "metal_center_piece_side"
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "closed-world inventory",
+      "expected": "all existing files are members of the predeclared candidate inventory",
+      "id": "OUTPUT-INVENTORY-CLOSED-WORLD",
+      "observed": {
+        "allowed_files": 29,
+        "existing_files": 5,
+        "unexpected": []
+      },
+      "result": "PASS"
+    },
+    {
+      "category": "stage boundary",
+      "expected": {
+        "artifact_status": "DCC source candidate",
+        "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+        "candidate": "metal_center_piece_side",
+        "high_poly_nanite_stage": true,
+        "network_operations": 0,
+        "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+        "step13_authorized": false,
+        "unreal_authorized": false
+      },
+      "id": "SAVED-STAGE-LOCKS",
+      "observed": {
+        "artifact_status": "DCC source candidate",
+        "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+        "candidate": "metal_center_piece_side",
+        "high_poly_nanite_stage": true,
+        "network_operations": 0,
+        "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+        "step13_authorized": false,
+        "unreal_authorized": false
+      },
+      "result": "PASS"
+    }
+  ],
+  "date": "2026-07-24T12:20:44.051414+00:00",
+  "decision": {
+    "artifact_class_if_pass": "DCC source candidate",
+    "baking_authorized": false,
+    "export_authorized": false,
+    "proof_render_allowed": true,
+    "retopology_authorized": false,
+    "saved_candidate_accepted": true,
+    "selection_authorized": false,
+    "step13_authorized": false,
+    "unreal_authorized": false,
+    "uv_authorized": false
+  },
+  "direct_observations": {
+    "bounds_maximum_cm": [
+      48.987213134765625,
+      21.560218811035156,
+      170.0
+    ],
+    "bounds_minimum_cm": [
+      -48.987213134765625,
+      -21.560218811035156,
+      0.0
+    ],
+    "mesh_objects": 50,
+    "polygon_limit_authority": "Step 11B high-poly/Nanite amendment; count observed only",
+    "polygon_limit_enforced": false,
+    "polygons": 1160636,
+    "triangles_observed_not_gated": 2316748,
+    "vertices": 1179070
+  },
+  "failed_check_ids": [],
+  "result": "PASS",
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "schema": "AERATHEA_R8_STEP12_INDEPENDENT_SAVED_CANDIDATE_AUDIT_A01_V1",
+  "summary": {
+    "failed": 0,
+    "passed": 105,
+    "total": 105
+  }
+}

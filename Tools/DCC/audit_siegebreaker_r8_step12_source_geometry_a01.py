@@ -45,10 +45,20 @@ DEFAULT_STITCH_AMENDMENT = ROOT / (
     "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/"
     "STEP_11D_THREE_BOUNDARY_STONE_STITCH_AMENDMENT_A01.md"
 )
-VALIDATION_PATH = ROOT / (
+DEFAULT_TOLERANCE_AMENDMENT = ROOT / (
+    "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/"
+    "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/"
+    "STEP_11E_CROSS_VIEW_SILHOUETTE_TOLERANCE_AMENDMENT_A01.md"
+)
+STITCH_VALIDATION_PATH = ROOT / (
     "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/"
     "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/"
     "STEP_11D_THREE_BOUNDARY_STONE_STITCH_AMENDMENT_A01_VALIDATION.json"
+)
+TOLERANCE_VALIDATION_PATH = ROOT / (
+    "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/"
+    "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/"
+    "STEP_11E_CROSS_VIEW_SILHOUETTE_TOLERANCE_AMENDMENT_A01_VALIDATION.json"
 )
 
 EXPECTED = {
@@ -59,6 +69,9 @@ EXPECTED = {
     ),
     "stitch_amendment": (
         "850fd42808be667da1d24f1dbccc8ff192ac8b2ccddadb0b714256637849b61a"
+    ),
+    "tolerance_amendment": (
+        "640d19d6012b4c9926d7ddd431812481219fc65703effa08b194af2116e78b74"
     ),
     "step11_authority_lock": (
         "3235fcc9480ad246f968b275792aa3a309aa34710b5bfec3fc005980ae3d5069"
@@ -194,6 +207,7 @@ def verify_authority(
     amendment_path: Path,
     parity_amendment_path: Path,
     stitch_amendment_path: Path,
+    tolerance_amendment_path: Path,
     blueprint: dict[str, Any],
 ) -> tuple[list[dict[str, Any]], dict[str, Path]]:
     checks: list[dict[str, Any]] = []
@@ -210,6 +224,11 @@ def verify_authority(
             "stitch_amendment",
             stitch_amendment_path,
             EXPECTED["stitch_amendment"],
+        ),
+        (
+            "tolerance_amendment",
+            tolerance_amendment_path,
+            EXPECTED["tolerance_amendment"],
         ),
         (
             "step11_authority_lock",
@@ -566,6 +585,197 @@ def stitch_amendment_semantic_checks(
         }
         for key, clause in required_clauses.items()
     ]
+
+
+def tolerance_amendment_semantic_checks(
+    tolerance_amendment_text: str,
+) -> list[dict[str, Any]]:
+    normalized_text = " ".join(tolerance_amendment_text.split())
+    required_clauses = {
+        "one_pixel_per_side": "`P <= 1` source pixel per side",
+        "quarter_percent": "`R <= 1/400` (`0.25%`)",
+        "two_millimeters": "`D <= 1/5 cm` (`2 mm`)",
+        "all_limits_required": (
+            "The cross-view silhouette dimension passes only when all "
+            "three limits pass"
+        ),
+        "record_exact_metrics": (
+            "The audit must record `E`, `O`, `D`, `Dminus`, `Dplus`, `S`, "
+            "`P`, and `R`"
+        ),
+        "pivot_exact": "the world `(0,0,0)` pivot",
+        "height_exact": "the fixed `170 cm` overall-height scale anchor",
+        "depth_exact": "candidate-specific right-view depth",
+        "labels_exact": "Step 11C component labels and bottom-view equation",
+        "protected_exact": "protected negative spaces",
+        "mirrors_exact": "the single local C04 `Y` mirror",
+        "rz180_exact": "the single whole-asset `Rz180`",
+        "angular_divisions_exact": (
+            "the exact `64` positive-X angular divisions"
+        ),
+        "seams_exact": "coordinate-equal matching seams and contacts",
+        "keep_measured_geometry": (
+            "The exact measured bottom owner cells remain unchanged. "
+            "No width clipping is permitted or required."
+        ),
+        "prior_trim_rejected": (
+            "is rejected as a production rule and retained as "
+            "`reference only`"
+        ),
+        "step13_locked": "Step 13 remains locked",
+        "unreal_locked": "Unreal remain locked",
+    }
+    return [
+        {
+            "id": f"TOLERANCE-AMENDMENT-{key}",
+            "required_clause": clause,
+            "result": "pass" if clause in normalized_text else "fail",
+        }
+        for key, clause in required_clauses.items()
+    ]
+
+
+def cross_view_width_tolerance_audit(
+    blueprint: dict[str, Any],
+    scanlines: dict[str, Any],
+) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+    stored_bottom_c02 = owner_rows(
+        scanlines,
+        "bottom",
+        "C02_STONE_LEFT",
+    )
+    stored_bottom_c03 = owner_rows(
+        scanlines,
+        "bottom",
+        "C03_STONE_RIGHT",
+    )
+    positive_source_edge = min(
+        int(start)
+        for row in stored_bottom_c02
+        for start, _ in row["owner_runs_half_open"]
+    )
+    negative_source_edge = max(
+        int(stop)
+        for row in stored_bottom_c03
+        for _, stop in row["owner_runs_half_open"]
+    )
+    observed_positive = bottom_x(positive_source_edge)
+    observed_negative = bottom_x(negative_source_edge)
+    observed_width = observed_positive - observed_negative
+    expected_width = exact(
+        blueprint["candidate_variants"]["rune_side"][
+            "completed_dimensions_cm"
+        ]["width"]
+    )
+    expected_half = expected_width / 2
+    axial_pixel_scale = exact(
+        blueprint["measurement_catalog"]["MEAS_AXIAL_SCALE"]["value"][
+            "scale_x"
+        ]
+    )
+    difference = abs(observed_width - expected_width)
+    negative_side_difference = abs(observed_negative + expected_half)
+    positive_side_difference = abs(observed_positive - expected_half)
+    maximum_side_difference = max(
+        negative_side_difference,
+        positive_side_difference,
+    )
+    per_side_pixels = maximum_side_difference / axial_pixel_scale
+    relative_difference = difference / expected_width
+    thresholds = {
+        "maximum_per_side_source_pixels": Fraction(1),
+        "maximum_relative_difference": Fraction(1, 400),
+        "maximum_absolute_difference_cm": Fraction(1, 5),
+    }
+    results = {
+        "per_side_source_pixels": (
+            per_side_pixels <= thresholds["maximum_per_side_source_pixels"]
+        ),
+        "relative_difference": (
+            relative_difference
+            <= thresholds["maximum_relative_difference"]
+        ),
+        "absolute_difference": (
+            difference <= thresholds["maximum_absolute_difference_cm"]
+        ),
+    }
+
+    def fraction_record(value: Fraction) -> dict[str, Any]:
+        return {
+            "exact": f"{value.numerator}/{value.denominator}",
+            "decimal": f"{float(value):.12f}",
+        }
+
+    record = {
+        "controlling_view": "front",
+        "secondary_view": "bottom",
+        "logical_bottom_mapping": {
+            "negative_C02": "stored C03 owner payload",
+            "positive_C03": "stored C02 owner payload",
+        },
+        "source_edges": {
+            "negative_x": negative_source_edge,
+            "positive_x": positive_source_edge,
+        },
+        "expected_width_cm": fraction_record(expected_width),
+        "observed_width_cm": fraction_record(observed_width),
+        "completed_difference_cm": fraction_record(difference),
+        "negative_side_difference_cm": fraction_record(
+            negative_side_difference
+        ),
+        "positive_side_difference_cm": fraction_record(
+            positive_side_difference
+        ),
+        "axial_pixel_scale_cm": fraction_record(axial_pixel_scale),
+        "maximum_per_side_source_pixels": fraction_record(
+            per_side_pixels
+        ),
+        "completed_relative_difference": fraction_record(
+            relative_difference
+        ),
+        "thresholds": {
+            key: fraction_record(value)
+            for key, value in thresholds.items()
+        },
+        "limit_results": results,
+        "result": "PASS" if all(results.values()) else "FAIL",
+        "measured_geometry_clipped": False,
+    }
+    checks = [
+        {
+            "id": "TOLERANCE-WIDTH-PER-SIDE-PIXELS",
+            "name": "cross-view boundary difference is at most one source pixel per side",
+            "expected_maximum_exact": "1/1",
+            "observed_exact": fraction_record(per_side_pixels)["exact"],
+            "result": "pass" if results["per_side_source_pixels"] else "fail",
+        },
+        {
+            "id": "TOLERANCE-WIDTH-RELATIVE",
+            "name": "completed cross-view width difference is at most 0.25 percent",
+            "expected_maximum_exact": "1/400",
+            "observed_exact": fraction_record(relative_difference)["exact"],
+            "result": "pass" if results["relative_difference"] else "fail",
+        },
+        {
+            "id": "TOLERANCE-WIDTH-ABSOLUTE",
+            "name": "completed cross-view width difference is at most 2 mm",
+            "expected_maximum_cm_exact": "1/5",
+            "observed_cm_exact": fraction_record(difference)["exact"],
+            "result": "pass" if results["absolute_difference"] else "fail",
+        },
+        {
+            "id": "TOLERANCE-WIDTH-MEASURED-GEOMETRY-PRESERVED",
+            "name": "tolerance decision records the discrepancy without clipping measured owner geometry",
+            "expected": False,
+            "observed": record["measured_geometry_clipped"],
+            "result": (
+                "pass"
+                if record["measured_geometry_clipped"] is False
+                else "fail"
+            ),
+        },
+    ]
+    return record, checks
 
 
 def boundary_owner_key(boundary_id: str) -> str:
@@ -1044,6 +1254,7 @@ def build_validation(
     amendment_path: Path,
     parity_amendment_path: Path,
     stitch_amendment_path: Path,
+    tolerance_amendment_path: Path,
 ) -> dict[str, Any]:
     blueprint = load_json(blueprint_path)
     amendment_text = amendment_path.read_text(encoding="utf-8")
@@ -1051,11 +1262,15 @@ def build_validation(
     stitch_amendment_text = stitch_amendment_path.read_text(
         encoding="utf-8"
     )
+    tolerance_amendment_text = tolerance_amendment_path.read_text(
+        encoding="utf-8"
+    )
     authority_checks, authority_paths = verify_authority(
         blueprint_path,
         amendment_path,
         parity_amendment_path,
         stitch_amendment_path,
+        tolerance_amendment_path,
         blueprint,
     )
     amendment_checks = amendment_semantic_checks(amendment_text)
@@ -1065,9 +1280,16 @@ def build_validation(
     stitch_amendment_checks = stitch_amendment_semantic_checks(
         stitch_amendment_text
     )
+    tolerance_amendment_checks = tolerance_amendment_semantic_checks(
+        tolerance_amendment_text
+    )
 
     scanlines = load_gzip_json(authority_paths["step09a_scanlines"])
     boundaries = load_json(authority_paths["step09a_boundaries"])
+    tolerance_record, tolerance_checks = cross_view_width_tolerance_audit(
+        blueprint,
+        scanlines,
+    )
     payload_checks = correction_payload_checks(
         blueprint,
         scanlines,
@@ -1139,6 +1361,14 @@ def build_validation(
         for check in stitch_amendment_checks
         if check["result"] != "pass"
     ]
+    tolerance_amendment_failures = [
+        check
+        for check in tolerance_amendment_checks
+        if check["result"] != "pass"
+    ]
+    tolerance_failures = [
+        check for check in tolerance_checks if check["result"] != "pass"
+    ]
     payload_failures = [
         check for check in payload_checks if check["result"] != "pass"
     ]
@@ -1159,6 +1389,7 @@ def build_validation(
         and not amendment_failures
         and not parity_amendment_failures
         and not stitch_amendment_failures
+        and not tolerance_amendment_failures
         and not payload_failures
         and not corrected_orientation_failures
         and raw_conflict_confirmed
@@ -1166,7 +1397,8 @@ def build_validation(
     )
     step12_result = (
         "BLOCKED"
-        if correction_result == "PASS" and constructibility_failures
+        if correction_result == "PASS"
+        and (constructibility_failures or tolerance_failures)
         else "PASS"
         if correction_result == "PASS"
         else "LOCKED"
@@ -1174,7 +1406,7 @@ def build_validation(
 
     return {
         "schema": (
-            "AERATHEA_STEP11D_THREE_BOUNDARY_STONE_STITCH_"
+            "AERATHEA_STEP11E_CROSS_VIEW_SILHOUETTE_TOLERANCE_"
             "AMENDMENT_A01_VALIDATION_V1"
         ),
         "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
@@ -1195,6 +1427,7 @@ def build_validation(
                 "asset-specific Flamestrike high-poly/Nanite amendment",
                 "Flamestrike-approved bottom C02/C03 label correction",
                 "Flamestrike-approved completed-perimeter stone stitch rule",
+                "Flamestrike-approved cross-view silhouette tolerance rule",
             ],
             "python": platform.python_version(),
         },
@@ -1207,6 +1440,12 @@ def build_validation(
             "parity_amendment_sha256": sha256(parity_amendment_path),
             "stitch_amendment_path": relative(stitch_amendment_path),
             "stitch_amendment_sha256": sha256(stitch_amendment_path),
+            "tolerance_amendment_path": relative(
+                tolerance_amendment_path
+            ),
+            "tolerance_amendment_sha256": sha256(
+                tolerance_amendment_path
+            ),
             "authority_checks_passed": len(authority_checks)
             - len(authority_failures),
             "authority_checks_failed": len(authority_failures),
@@ -1214,14 +1453,17 @@ def build_validation(
                 len(amendment_checks)
                 + len(parity_amendment_checks)
                 + len(stitch_amendment_checks)
+                + len(tolerance_amendment_checks)
                 - len(amendment_failures)
                 - len(parity_amendment_failures)
                 - len(stitch_amendment_failures)
+                - len(tolerance_amendment_failures)
             ),
             "semantic_checks_failed": (
                 len(amendment_failures)
                 + len(parity_amendment_failures)
                 + len(stitch_amendment_failures)
+                + len(tolerance_amendment_failures)
             ),
             "payload_checks_passed": len(payload_checks)
             - len(payload_failures),
@@ -1231,6 +1473,7 @@ def build_validation(
                 + amendment_checks
                 + parity_amendment_checks
                 + stitch_amendment_checks
+                + tolerance_amendment_checks
                 + payload_checks
                 + [raw_conflict_check]
             ),
@@ -1261,6 +1504,31 @@ def build_validation(
                 "straight triangles; no interior or tolerance-derived vertices"
             ),
         },
+        "cross_view_silhouette_tolerance_validation": {
+            "result": (
+                "PASS"
+                if not tolerance_amendment_failures
+                and not tolerance_failures
+                else "FAIL"
+            ),
+            "amendment_path": relative(tolerance_amendment_path),
+            "amendment_sha256": sha256(tolerance_amendment_path),
+            "semantic_checks_passed": (
+                len(tolerance_amendment_checks)
+                - len(tolerance_amendment_failures)
+            ),
+            "semantic_checks_failed": len(
+                tolerance_amendment_failures
+            ),
+            "measurement_checks_passed": (
+                len(tolerance_checks) - len(tolerance_failures)
+            ),
+            "measurement_checks_failed": len(tolerance_failures),
+            "width_audit": tolerance_record,
+            "checks": tolerance_amendment_checks + tolerance_checks,
+            "measured_geometry_clipped": False,
+            "prior_width_clip_proposal_status": "reference only",
+        },
         "source_conflict_preserved_as_evidence": {
             "result": "PASS" if raw_conflict_confirmed else "FAIL",
             "world_x_owner_bounds": raw_orientation,
@@ -1276,12 +1544,20 @@ def build_validation(
                 None
                 if step12_result == "PASS"
                 else (
-                    "Blueprint block: rule missing — three-boundary stone "
-                    "closure construction"
+                    (
+                        "Blueprint block: approved cross-view silhouette "
+                        "tolerance limits failed"
+                        if tolerance_failures
+                        else (
+                            "Blueprint block: rule missing — three-boundary "
+                            "stone closure construction"
+                        )
+                    )
                     if step12_result == "BLOCKED"
                     else (
-                        "Blueprint block: approved additive Step 11B/11C/11D "
-                        "authority failed independent validation"
+                        "Blueprint block: approved additive Step "
+                        "11B/11C/11D/11E authority failed independent "
+                        "validation"
                     )
                 )
             ),
@@ -1346,6 +1622,15 @@ def build_validation(
                 ),
                 "protected_gap_fill_allowed": False,
                 "tolerance_weld_allowed": False,
+            },
+            "approved_cross_view_tolerance_resolution": {
+                "maximum_per_side_source_pixels": "1/1",
+                "maximum_relative_difference": "1/400",
+                "maximum_absolute_difference_cm": "1/5",
+                "all_limits_required": True,
+                "current_width_result": tolerance_record["result"],
+                "measured_geometry_clipped": False,
+                "exact_constraints_relaxed": False,
             },
             "builder_creation_allowed": step12_result == "PASS",
             "blender_production_allowed_after_required_checkpoint": (
@@ -1789,6 +2074,7 @@ def build_saved_candidate_audit(
     amendment_path: Path,
     parity_amendment_path: Path,
     stitch_amendment_path: Path,
+    tolerance_amendment_path: Path,
     saved_candidate: Path,
     candidate: str,
 ) -> dict[str, Any]:
@@ -1819,6 +2105,7 @@ def build_saved_candidate_audit(
         amendment_path,
         parity_amendment_path,
         stitch_amendment_path,
+        tolerance_amendment_path,
         blueprint,
     )
     for record in authority_checks:
@@ -2070,20 +2357,31 @@ def build_saved_candidate_audit(
         expected_dimensions[1] / 2.0,
         expected_dimensions[2],
     ]
-    bounds_ok = all(
-        _float_close(observed, expected, 3.0e-5)
-        for observed, expected in zip(
-            minimum + maximum,
-            expected_minimum + expected_maximum,
+    exact_depth_height_pivot_ok = (
+        _float_close(minimum[1], expected_minimum[1], 3.0e-5)
+        and _float_close(maximum[1], expected_maximum[1], 3.0e-5)
+        and _float_close(minimum[2], 0.0, 3.0e-5)
+        and _float_close(maximum[2], expected_dimensions[2], 3.0e-5)
+        and _float_close(
+            (minimum[0] + maximum[0]) / 2.0,
+            0.0,
+            3.0e-5,
+        )
+        and _float_close(
+            (minimum[1] + maximum[1]) / 2.0,
+            0.0,
+            3.0e-5,
         )
     )
     add_check(
-        "GEOMETRY-BOUNDS-PIVOT-SCALE",
-        bounds_ok,
+        "GEOMETRY-EXACT-PIVOT-DEPTH-HEIGHT",
+        exact_depth_height_pivot_ok,
         {
-            "minimum_cm": expected_minimum,
-            "maximum_cm": expected_maximum,
-            "dimensions_cm": expected_dimensions,
+            "pivot_cm": [0.0, 0.0, 0.0],
+            "minimum_y_cm": expected_minimum[1],
+            "maximum_y_cm": expected_maximum[1],
+            "minimum_z_cm": 0.0,
+            "maximum_z_cm": expected_dimensions[2],
         },
         {
             "minimum_cm": minimum,
@@ -2091,6 +2389,53 @@ def build_saved_candidate_audit(
             "dimensions_cm": observed_dimensions,
         },
         "scale and pivot",
+    )
+    width_difference = abs(
+        observed_dimensions[0] - expected_dimensions[0]
+    )
+    negative_side_difference = abs(
+        minimum[0] - expected_minimum[0]
+    )
+    positive_side_difference = abs(
+        maximum[0] - expected_maximum[0]
+    )
+    maximum_side_difference = max(
+        negative_side_difference,
+        positive_side_difference,
+    )
+    per_side_source_pixels = maximum_side_difference / float(AXIAL_SCALE)
+    relative_width_difference = (
+        width_difference / expected_dimensions[0]
+    )
+    width_limit_results = {
+        "per_side_source_pixels": per_side_source_pixels <= 1.0 + 1.0e-8,
+        "relative_difference": (
+            relative_width_difference <= 0.0025 + 1.0e-10
+        ),
+        "absolute_difference_cm": width_difference <= 0.2 + 1.0e-8,
+    }
+    add_check(
+        "GEOMETRY-CROSS-VIEW-WIDTH-TOLERANCE",
+        all(width_limit_results.values()),
+        {
+            "maximum_per_side_source_pixels": 1.0,
+            "maximum_relative_difference": 0.0025,
+            "maximum_absolute_difference_cm": 0.2,
+            "all_limits_required": True,
+        },
+        {
+            "expected_width_cm": expected_dimensions[0],
+            "observed_width_cm": observed_dimensions[0],
+            "completed_difference_cm": width_difference,
+            "negative_side_difference_cm": negative_side_difference,
+            "positive_side_difference_cm": positive_side_difference,
+            "axial_pixel_scale_cm": float(AXIAL_SCALE),
+            "maximum_per_side_source_pixels": per_side_source_pixels,
+            "completed_relative_difference": relative_width_difference,
+            "limit_results": width_limit_results,
+            "measured_geometry_clipped": False,
+        },
+        "cross-view silhouette tolerance",
     )
 
     half_depth = exact(
@@ -2401,7 +2746,9 @@ def build_saved_candidate_audit(
                 and topology["euler_characteristic"] == 0
                 and topology["connected_components"] == 1
                 and topology["nonmanifold_edges_over_two"] == 0
-                and topology["quad_faces"] == topology["faces"]
+                and topology["triangle_faces"]
+                + topology["quad_faces"]
+                == topology["faces"]
                 and topology["boundary_edges"] > 0
             )
         else:
@@ -2616,6 +2963,11 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=DEFAULT_STITCH_AMENDMENT,
     )
+    parser.add_argument(
+        "--tolerance-amendment",
+        type=Path,
+        default=DEFAULT_TOLERANCE_AMENDMENT,
+    )
     parser.add_argument("--preflight-only", action="store_true")
     parser.add_argument("--saved-candidate", type=Path)
     parser.add_argument("--candidate", choices=CANDIDATES)
@@ -2623,7 +2975,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--validation-output",
         type=Path,
-        default=VALIDATION_PATH,
+        default=TOLERANCE_VALIDATION_PATH,
     )
     return parser.parse_args(raw)
 
@@ -2644,6 +2996,7 @@ def main() -> int:
                 args.amendment.resolve(),
                 args.parity_amendment.resolve(),
                 args.stitch_amendment.resolve(),
+                args.tolerance_amendment.resolve(),
                 saved_candidate,
                 args.candidate,
             )
@@ -2697,11 +3050,13 @@ def main() -> int:
     amendment_path = args.amendment.resolve()
     parity_amendment_path = args.parity_amendment.resolve()
     stitch_amendment_path = args.stitch_amendment.resolve()
+    tolerance_amendment_path = args.tolerance_amendment.resolve()
     result = build_validation(
         blueprint_path,
         amendment_path,
         parity_amendment_path,
         stitch_amendment_path,
+        tolerance_amendment_path,
     )
     output = args.validation_output.resolve()
     output.parent.mkdir(parents=True, exist_ok=True)
@@ -2713,6 +3068,9 @@ def main() -> int:
         "validation": relative(output),
         "correction_result": result["correction_validation"]["result"],
         "stitch_result": result["stitch_validation"]["result"],
+        "tolerance_result": result[
+            "cross_view_silhouette_tolerance_validation"
+        ]["result"],
         "step12_result": result["step12_resume_preflight"]["result"],
         "block_code": result["step12_resume_preflight"]["block_code"],
     }, sort_keys=True))

@@ -47,8 +47,15 @@ DEFAULT_PARITY_AMENDMENT = PROOF_ROOT / (
 DEFAULT_STITCH_AMENDMENT = PROOF_ROOT / (
     "steps/STEP_11D_THREE_BOUNDARY_STONE_STITCH_AMENDMENT_A01.md"
 )
+DEFAULT_TOLERANCE_AMENDMENT = PROOF_ROOT / (
+    "steps/STEP_11E_CROSS_VIEW_SILHOUETTE_TOLERANCE_AMENDMENT_A01.md"
+)
 STITCH_VALIDATION = PROOF_ROOT / (
     "manifests/STEP_11D_THREE_BOUNDARY_STONE_STITCH_AMENDMENT_A01_VALIDATION.json"
+)
+TOLERANCE_VALIDATION = PROOF_ROOT / (
+    "manifests/"
+    "STEP_11E_CROSS_VIEW_SILHOUETTE_TOLERANCE_AMENDMENT_A01_VALIDATION.json"
 )
 ENVIRONMENT_LOCK = PROOF_ROOT / "manifests/STEP_12_ENVIRONMENT_LOCK_A01.json"
 AUTHORITY_LOCK = PROOF_ROOT / (
@@ -70,6 +77,8 @@ EXPECTED_HASHES = {
     "parity_amendment": "45cc92d07f90fdb1bb104c8ede5e9fb6e6161454ea91d0923dc6f81cf02512d1",
     "stitch_amendment": "850fd42808be667da1d24f1dbccc8ff192ac8b2ccddadb0b714256637849b61a",
     "stitch_validation": "ff69717625d12e8e3f4f502d47c242a62ced72127bec5d9f5dd01c9537357d38",
+    "tolerance_amendment": "640d19d6012b4c9926d7ddd431812481219fc65703effa08b194af2116e78b74",
+    "tolerance_validation": "ee9337b65a7a5d0fa71295dfc5b153690667c00aea646cadc6ff1eb3e697ce4d",
     "environment_lock": "a2d9be9162d3aa5440492765aafe621e63bc4a1f80814bd523dce20dae7b66f8",
     "authority_lock": "3235fcc9480ad246f968b275792aa3a309aa34710b5bfec3fc005980ae3d5069",
     "step12_contract": "a3f16266da53ed28a0c849818271dea0c07cd8ba8005e05a6778e2a0f6d2935b",
@@ -176,6 +185,7 @@ def verify_authority(
     amendment_path: Path,
     parity_amendment_path: Path,
     stitch_amendment_path: Path,
+    tolerance_amendment_path: Path,
 ) -> tuple[dict[str, Any], list[dict[str, Any]]]:
     checks = [
         verify_hash(blueprint_path, EXPECTED_HASHES["blueprint"], "blueprint"),
@@ -194,6 +204,16 @@ def verify_authority(
             STITCH_VALIDATION,
             EXPECTED_HASHES["stitch_validation"],
             "stitch_validation",
+        ),
+        verify_hash(
+            tolerance_amendment_path,
+            EXPECTED_HASHES["tolerance_amendment"],
+            "tolerance_amendment",
+        ),
+        verify_hash(
+            TOLERANCE_VALIDATION,
+            EXPECTED_HASHES["tolerance_validation"],
+            "tolerance_validation",
         ),
         verify_hash(
             ENVIRONMENT_LOCK,
@@ -226,6 +246,13 @@ def verify_authority(
         raise RuntimeError("Step 11D validation does not authorize Step 12")
     if not validation["closed_world_decision"]["builder_creation_allowed"]:
         raise RuntimeError("Step 11D validation forbids builder creation")
+    tolerance_validation = load_json(TOLERANCE_VALIDATION)
+    if tolerance_validation[
+        "cross_view_silhouette_tolerance_validation"
+    ]["result"] != "PASS":
+        raise RuntimeError("Step 11E tolerance validation failed")
+    if tolerance_validation["step12_resume_preflight"]["result"] != "PASS":
+        raise RuntimeError("Step 11E validation does not authorize Step 12")
     return blueprint, checks
 
 
@@ -473,6 +500,27 @@ def cross(
         a[2] * b[0] - a[0] * b[2],
         a[0] * b[1] - a[1] * b[0],
     )
+
+
+def polygon_normal(
+    points: Sequence[tuple[Fraction, Fraction, Fraction]],
+) -> tuple[Fraction, Fraction, Fraction]:
+    normal = [Fraction(0), Fraction(0), Fraction(0)]
+    wrapped = list(points) + [points[0]]
+    for current, following in zip(wrapped, wrapped[1:]):
+        normal[0] += (
+            (current[1] - following[1])
+            * (current[2] + following[2])
+        )
+        normal[1] += (
+            (current[2] - following[2])
+            * (current[0] + following[0])
+        )
+        normal[2] += (
+            (current[0] - following[0])
+            * (current[1] + following[1])
+        )
+    return tuple(normal)  # type: ignore[return-value]
 
 
 def build_c04_face(
@@ -948,6 +996,12 @@ def ear_clip(
             )
             if area <= 0:
                 continue
+            world_normal = cross(
+                vector_sub(world_points[current], world_points[previous]),
+                vector_sub(world_points[following], world_points[previous]),
+            )
+            if world_normal == (0, 0, 0):
+                continue
             diagonal = squared_distance(
                 world_points[previous],
                 world_points[following],
@@ -979,7 +1033,17 @@ def ear_clip(
         position, previous, current, following = selected
         triangles.append((previous, current, following))
         active.pop(position)
-    triangles.append(tuple(active))
+    final = tuple(active)
+    final_normal = cross(
+        vector_sub(world_points[final[1]], world_points[final[0]]),
+        vector_sub(world_points[final[2]], world_points[final[0]]),
+    )
+    if final_normal == (0, 0, 0):
+        raise RuntimeError(
+            "Approved deterministic ear clipping ended on a zero-area "
+            "world-space triangle"
+        )
+    triangles.append(final)
     return triangles
 
 
@@ -1382,14 +1446,23 @@ def build_c04_outer_closures(
         stone_b = evaluate_closed_loop(stone_loop, stone_breaks, stop)
         face_a = evaluate_closed_loop(face_loop, face_breaks, start)
         face_b = evaluate_closed_loop(face_loop, face_breaks, stop)
-        points = (stone_a, stone_b, face_b, face_a)
-        if len(set(points)) < 3:
+        ordered_points = (stone_a, stone_b, face_b, face_a)
+        points: list[tuple[Fraction, Fraction, Fraction]] = []
+        for point in ordered_points:
+            if not points or points[-1] != point:
+                points.append(point)
+        if len(points) > 1 and points[0] == points[-1]:
+            points.pop()
+        if len(points) < 3:
             continue
-        normal = cross(
-            vector_sub(points[1], points[0]),
-            vector_sub(points[2], points[0]),
+        normal = polygon_normal(points)
+        if normal == (0, 0, 0):
+            continue
+        positive.face(
+            tuple(points)
+            if normal[0] > 0
+            else tuple(reversed(points))
         )
-        positive.face(points if normal[0] > 0 else tuple(reversed(points)))
     negative = positive.rotated_rz180(
         f"{instruction_id}_RZ180",
         "COMPLETED_AFTER_ONE_RZ180",
@@ -1881,11 +1954,88 @@ def validate_pre_save_records(
             }
         )
 
+    expected_width = expected_dimensions[0]
+    observed_width = bounds["_dimensions"][0]
+    completed_width_difference = abs(observed_width - expected_width)
+    expected_half_width = expected_width / 2
+    negative_side_difference = abs(
+        bounds["_minimum"][0] + expected_half_width
+    )
+    positive_side_difference = abs(
+        bounds["_maximum"][0] - expected_half_width
+    )
+    maximum_side_difference = max(
+        negative_side_difference,
+        positive_side_difference,
+    )
+    per_side_source_pixels = maximum_side_difference / AXIAL_SCALE
+    relative_width_difference = completed_width_difference / expected_width
+    width_limit_results = {
+        "per_side_source_pixels": per_side_source_pixels <= 1,
+        "relative_difference": relative_width_difference <= Fraction(1, 400),
+        "absolute_difference_cm": (
+            completed_width_difference <= Fraction(1, 5)
+        ),
+    }
+    cross_view_width_tolerance = {
+        "expected_width_cm_exact": qstr(expected_width),
+        "observed_width_cm_exact": qstr(observed_width),
+        "completed_difference_cm_exact": qstr(
+            completed_width_difference
+        ),
+        "negative_side_difference_cm_exact": qstr(
+            negative_side_difference
+        ),
+        "positive_side_difference_cm_exact": qstr(
+            positive_side_difference
+        ),
+        "axial_pixel_scale_cm_exact": qstr(AXIAL_SCALE),
+        "maximum_per_side_source_pixels_exact": qstr(
+            per_side_source_pixels
+        ),
+        "completed_relative_difference_exact": qstr(
+            relative_width_difference
+        ),
+        "thresholds_exact": {
+            "maximum_per_side_source_pixels": "1/1",
+            "maximum_relative_difference": "1/400",
+            "maximum_absolute_difference_cm": "1/5",
+        },
+        "limit_results": width_limit_results,
+        "all_limits_pass": all(width_limit_results.values()),
+        "measured_geometry_clipped": False,
+    }
     check(
-        "BUILD-BOUNDS-DIMENSIONS",
-        bounds["_dimensions"] == expected_dimensions,
-        [qstr(value) for value in expected_dimensions],
-        bounds["dimensions_exact"],
+        "BUILD-CROSS-VIEW-WIDTH-TOLERANCE",
+        all(width_limit_results.values()),
+        cross_view_width_tolerance["thresholds_exact"],
+        cross_view_width_tolerance,
+    )
+    check(
+        "BUILD-EXACT-DEPTH-HEIGHT-CENTER",
+        bounds["_dimensions"][1:] == expected_dimensions[1:]
+        and bounds["_minimum"][2] == 0
+        and bounds["_maximum"][2] == 170
+        and bounds["_minimum"][0] + bounds["_maximum"][0] == 0
+        and bounds["_minimum"][1] + bounds["_maximum"][1] == 0,
+        {
+            "depth_exact": qstr(expected_dimensions[1]),
+            "height_exact": qstr(expected_dimensions[2]),
+            "center_x_exact": "0/1",
+            "center_y_exact": "0/1",
+            "minimum_z_exact": "0/1",
+        },
+        {
+            "depth_exact": qstr(bounds["_dimensions"][1]),
+            "height_exact": qstr(bounds["_dimensions"][2]),
+            "center_x_exact": qstr(
+                (bounds["_minimum"][0] + bounds["_maximum"][0]) / 2
+            ),
+            "center_y_exact": qstr(
+                (bounds["_minimum"][1] + bounds["_maximum"][1]) / 2
+            ),
+            "minimum_z_exact": qstr(bounds["_minimum"][2]),
+        },
     )
     check(
         "BUILD-PIVOT-AND-HEIGHT",
@@ -1949,6 +2099,23 @@ def validate_pre_save_records(
             for face in record.faces
         ),
     )
+    zero_area_faces = [
+        {
+            "object": record.name,
+            "face_index": face_index,
+        }
+        for record in records
+        if record.material_key in {"CLOSURE", "CONTACT"}
+        for face_index, face in enumerate(record.faces)
+        if polygon_normal([record.vertices[index] for index in face])
+        == (0, 0, 0)
+    ]
+    check(
+        "BUILD-NO-EXACT-ZERO-AREA-FACES",
+        not zero_area_faces,
+        [],
+        zero_area_faces,
+    )
     failures = [item for item in checks if item["result"] != "PASS"]
     if failures:
         raise RuntimeError(
@@ -1970,6 +2137,7 @@ def validate_pre_save_records(
             record.triangle_count for record in records
         ),
         "high_poly_nanite_amendment_applied": True,
+        "cross_view_width_tolerance": cross_view_width_tolerance,
     }
 
 
@@ -2153,6 +2321,7 @@ def internal_build(args: argparse.Namespace) -> int:
         args.amendment.resolve(),
         args.parity_amendment.resolve(),
         args.stitch_amendment.resolve(),
+        args.tolerance_amendment.resolve(),
     )
     paths = {
         key: ROOT / record["path"]
@@ -2654,10 +2823,22 @@ def compose_review_board() -> Path:
         candidate: candidate_root_from_lock(environment_lock, candidate)
         for candidate in CANDIDATES
     }
+    validations = {}
     for candidate, root in roots.items():
         audit = load_json(root / "independent_saved_candidate_audit.json")
         if audit["result"] != "PASS":
             raise RuntimeError(f"{candidate} is not independently audited")
+        validation = load_json(root / "pre_save_validation.json")
+        tolerance = validation["cross_view_width_tolerance"]
+        if (
+            validation["result"] != "PASS"
+            or not tolerance["all_limits_pass"]
+            or tolerance["measured_geometry_clipped"]
+        ):
+            raise RuntimeError(
+                f"{candidate} does not satisfy the approved width tolerance"
+            )
+        validations[candidate] = validation
     panel_specs = [
         ("clay_three_quarter.png", "NEUTRAL CLAY 3/4"),
         ("clay_front.png", "FRONT"),
@@ -2704,19 +2885,21 @@ def compose_review_board() -> Path:
     gap = 22
     left = 36
     row_tops = [190, 745]
-    labels = {
-        "rune_side": (
-            "CANDIDATE A — RUNE SIDE",
-            "97.873941674506 × 34.434306569343 × 170 cm",
-        ),
+    headings = {
+        "rune_side": "CANDIDATE A — RUNE SIDE",
         "metal_center_piece_side": (
-            "CANDIDATE B — METAL CENTER PIECE SIDE",
-            "97.873941674506 × 43.120437956204 × 170 cm",
+            "CANDIDATE B — METAL CENTER PIECE SIDE"
         ),
     }
     for row_index, candidate in enumerate(CANDIDATES):
         row_top = row_tops[row_index]
-        heading, dimensions = labels[candidate]
+        heading = headings[candidate]
+        dimensions_cm = validations[candidate]["bounds"]["dimensions_cm"]
+        dimensions = (
+            "observed W×D×H "
+            f"{dimensions_cm[0]:.12f} × {dimensions_cm[1]:.12f} × "
+            f"{dimensions_cm[2]:.0f} cm • width tolerance PASS"
+        )
         draw.text(
             (left, row_top - 46),
             heading,
@@ -2724,10 +2907,11 @@ def compose_review_board() -> Path:
             fill=(239, 242, 245),
         )
         draw.text(
-            (left + 410, row_top - 46),
+            (width - 36, row_top - 46),
             dimensions,
             font=small_font,
             fill=(173, 180, 188),
+            anchor="ra",
         )
         for column, (filename, label) in enumerate(panel_specs):
             x = left + column * (panel_w + gap)
@@ -2767,6 +2951,7 @@ def external_build(args: argparse.Namespace) -> int:
         args.amendment.resolve(),
         args.parity_amendment.resolve(),
         args.stitch_amendment.resolve(),
+        args.tolerance_amendment.resolve(),
     )
     del blueprint
     environment_lock = load_json(ENVIRONMENT_LOCK)
@@ -2805,6 +2990,8 @@ def external_build(args: argparse.Namespace) -> int:
         str(args.parity_amendment.resolve()),
         "--stitch-amendment",
         str(args.stitch_amendment.resolve()),
+        "--tolerance-amendment",
+        str(args.tolerance_amendment.resolve()),
         "--candidate",
         args.candidate,
         "--output-root",
@@ -2848,7 +3035,7 @@ def external_build(args: argparse.Namespace) -> int:
                 args.candidate,
                 "--audit-output",
                 str(audit_path),
-                *common[:8],
+                *common[:10],
             ],
             blend=blend,
         ),
@@ -2901,6 +3088,11 @@ def parse_args() -> argparse.Namespace:
         "--stitch-amendment",
         type=Path,
         default=DEFAULT_STITCH_AMENDMENT,
+    )
+    parser.add_argument(
+        "--tolerance-amendment",
+        type=Path,
+        default=DEFAULT_TOLERANCE_AMENDMENT,
     )
     parser.add_argument("--candidate", choices=CANDIDATES)
     parser.add_argument("--output-root", type=Path)

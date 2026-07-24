@@ -62,3 +62,44 @@ divisions, preserve continuous U ownership, create no geometry, and stop for a
 Flamestrike decision.
 
 No amendment is active or authorized.
+
+## Additive Current-State Handoff — 2026-07-24
+
+This section supersedes the earlier blocked resume state while preserving it
+as historical evidence.
+
+- Current step: `Step 12 dual-candidate visual review`
+- Last completed state: `STEP_12_REVIEW_STATE_CHECKPOINTED`
+- Candidate A — rune side: `DCC source candidate`
+- Candidate B — metal center piece side: `DCC source candidate`
+- Independent saved-file audits: `105/105 PASS` for each candidate
+- Candidate selection: `not made`
+- Step 13: `locked`
+- Retopology, UV, bake, export, and Unreal: `unauthorized`
+- Final checkpoint: `Saved/ProjectRecovery/20260724-082657`
+
+The approved width threshold is now a bounded three-limit tolerance. The
+observed half-pixel-per-side difference passes all three limits and no source
+geometry was clipped. All non-width technical constraints remain exact.
+
+## Current Review Evidence
+
+- Review board:
+  `docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/STEP_12_FRESH_DCC_SOURCE_GEOMETRY_A01_REVIEW_BOARD.png`
+- Review board SHA-256:
+  `d5fd658eed5c62c8775ed4f53e5478d233ddc47147382f69d87c021c42a9f474`
+- Validation:
+  `docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_12_DUAL_DCC_SOURCE_CANDIDATE_A01_VALIDATION.json`
+- Validation SHA-256:
+  `4341a7dd0b8218731cc171ed0e1159989f585137b031019a5b8b8920b09dc6f3`
+- Event trace SHA-256:
+  `47fc61385d71e0f2a391ca65eed6735ec8ae56333c07d4361519395b83d289ee`
+
+The board is open in a visible desktop image viewer. It is `proof only`; it
+does not approve either candidate.
+
+## Required Decision
+
+Flamestrike must approve Candidate A, approve Candidate B, reject both, or mark
+the review blocked. Any approval authorizes only the clearly stated next
+contract. It does not automatically authorize Step 13 or Unreal production.

@@ -8807,3 +8807,33 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260724-075048/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260724-075048/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 08:08:28 EDT -0400 - Siege Breaker Step 11E tolerance validated before Step 12 dual-candidate build
+
+- Snapshot: `Saved/ProjectRecovery/20260724-080828/`
+- Git: branch `main`, HEAD `354e1d4`, status lines `561`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-080828/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-080828/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-080828/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 08:11:18 EDT -0400 - Siege Breaker rune-side saved audit stopped on two zero-area outer-closure faces
+
+- Snapshot: `Saved/ProjectRecovery/20260724-081118/`
+- Git: branch `main`, HEAD `354e1d4`, status lines `563`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-081118/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-081118/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-081118/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 08:26:57 EDT -0400 - Siege Breaker Step 12 dual DCC source candidates audited and review board ready
+
+- Snapshot: `Saved/ProjectRecovery/20260724-082657/`
+- Git: branch `main`, HEAD `354e1d4`, status lines `564`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-082657/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-082657/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-082657/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
