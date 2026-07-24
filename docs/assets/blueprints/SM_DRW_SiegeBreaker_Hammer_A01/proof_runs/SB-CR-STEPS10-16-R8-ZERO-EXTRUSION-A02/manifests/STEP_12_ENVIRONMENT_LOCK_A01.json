@@ -1,0 +1,117 @@
+{
+  "schema": "AERATHEA_R8_STEP12_ENVIRONMENT_LOCK_A01_V1",
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "step": "12",
+  "date": "2026-07-23",
+  "artifact_status": "authoritative for the approved Step 12 A01 execution",
+  "approval": {
+    "contract_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_12_FRESH_DCC_SOURCE_GEOMETRY_A01_PROPOSED_CONTRACT.md",
+    "contract_sha256": "a3f16266da53ed28a0c849818271dea0c07cd8ba8005e05a6778e2a0f6d2935b",
+    "approval_record_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_12_FRESH_DCC_SOURCE_GEOMETRY_A01_APPROVAL_RECORD.md",
+    "approval_record_sha256": "2b6fedd15020808beb63ff556c66bc52114a06cd69331f72bfe637caea69e7d7"
+  },
+  "authority_preflight": {
+    "blueprint_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_11_PRODUCTION_GEOMETRY_BLUEPRINT.json",
+    "blueprint_sha256": "2b598497ba5e61a4352c217f3fb20b3545189c710934f3a21d9b7398ddb472c7",
+    "authority_lock_sha256": "3235fcc9480ad246f968b275792aa3a309aa34710b5bfec3fc005980ae3d5069",
+    "authority_files_checked": 34,
+    "authority_file_failures": 0,
+    "result": "PASS"
+  },
+  "operating_system": {
+    "name": "Linux",
+    "kernel": "6.8.0-124-generic",
+    "architecture": "x86_64",
+    "timezone": "America/New_York"
+  },
+  "locale": {
+    "LANG": "en_US.UTF-8",
+    "LC_ALL": "C.UTF-8",
+    "numeric_decimal": "."
+  },
+  "blender": {
+    "binary_path": "Tools/External/Blender/blender-4.5.11-linux-x64/blender",
+    "binary_sha256": "dc72290ee8651c93c4a946c012c5f2a034946fd320e6c3ab214fa23181427428",
+    "version": "4.5.11 LTS",
+    "build_hash": "4db51e9d1e1e",
+    "build_platform": "Linux",
+    "startup_mode": "--background --factory-startup",
+    "project_install": false,
+    "system_install": false
+  },
+  "python": {
+    "entry_wrapper_path": "/usr/bin/python3",
+    "entry_wrapper_version": "3.10.12",
+    "entry_wrapper_sha256": "7d51cd6b48b521277f5caa4610a82126e315fa2be4df069823a8b1eeb5bd4a86",
+    "blender_embedded_path": "Tools/External/Blender/blender-4.5.11-linux-x64/4.5/python/bin/python3.11",
+    "blender_embedded_version": "3.11.11",
+    "blender_embedded_sha256": "2f019a53ea44a4cb2e87ffa4b63cf9abf986bb20d541f0f78ea0dd9dc52ee51e",
+    "external_packages": []
+  },
+  "units": {
+    "system": "METRIC",
+    "length_unit": "CENTIMETERS",
+    "scale_length": 0.01,
+    "geometry_coordinate_unit": "centimeter"
+  },
+  "color_management": {
+    "config_path": "Tools/External/Blender/blender-4.5.11-linux-x64/4.5/datafiles/colormanagement/config.ocio",
+    "config_sha256": "aa4142b29b5a472aa5cb895020aa8cb673c95a31660eeee451f8a820694d3b16",
+    "display_device": "sRGB",
+    "view_transform": "Standard",
+    "look": "None",
+    "exposure": 0.0,
+    "gamma": 1.0,
+    "sequencer_colorspace": "sRGB"
+  },
+  "render": {
+    "backend": "CYCLES",
+    "device_class": "CPU",
+    "device": "AMD Ryzen 7 5800X3D 8-Core Processor",
+    "samples": 32,
+    "adaptive_sampling": false,
+    "denoising": false,
+    "film_transparent": false,
+    "resolution_px": [
+      512,
+      512
+    ],
+    "resolution_percentage": 100,
+    "file_format": "PNG",
+    "color_mode": "RGBA",
+    "color_depth": "8",
+    "frame": 1
+  },
+  "determinism": {
+    "python_hash_seed": "0",
+    "geometry_seed": 0,
+    "render_seed": 0,
+    "stochastic_geometry": false,
+    "thread_override": "Blender automatic CPU scheduling; no geometry operation depends on thread order",
+    "canonical_coordinate_quantization_cm": "1e-9",
+    "canonical_normal_quantization": "1e-9"
+  },
+  "network": {
+    "required_state": "disabled",
+    "environment_flag": "AET_NETWORK_DISABLED=1",
+    "execution_boundary": "Codex workspace sandbox with restricted network access",
+    "builder_network_operations": 0,
+    "package_downloads": 0
+  },
+  "output_root": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01",
+  "candidate_roots": {
+    "rune_side": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/rune_side",
+    "metal_center_piece_side": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/metal_center_piece_side"
+  },
+  "pre_blender_validation": {
+    "required_fields_present": true,
+    "blender_binary_hash_matches": true,
+    "embedded_python_hash_matches": true,
+    "ocio_config_hash_matches": true,
+    "output_root_fresh": true,
+    "candidate_roots_fresh": true,
+    "network_disabled_required": true,
+    "result": "PASS"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "schema": "AERATHEA_R8_STEP12_SOURCE_GEOMETRY_A01_INDEPENDENT_AUDIT_V1",
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "step": "12 pregeometry audit",
+  "date": "2026-07-23",
+  "artifact_status": "proof only",
+  "result": "BLOCKED",
+  "audit_independence": {
+    "builder_imported": false,
+    "builder_created": false,
+    "builder_claims_trusted": false,
+    "blender_custom_properties_trusted": false,
+    "expected_values_read_from": [
+      "hash-locked source-half contract",
+      "hash-locked R8 front measurement rows",
+      "hash-locked Step 09A component scanlines",
+      "authoritative Step 11 topology and performance plan"
+    ],
+    "implementation": "independent Python 3.10.12 read-only replay"
+  },
+  "observed_component_radius_states": {
+    "C06": 33,
+    "C07": 11,
+    "C07B": 25,
+    "C08": 14,
+    "C09": 16,
+    "C10": 20,
+    "C11": 39,
+    "C12": 56
+  },
+  "observed_totals": {
+    "radius_states": 214,
+    "longitudinal_transitions": 206,
+    "explicit_positive_x_angular_divisions": 64,
+    "triangles_per_ruled_quad": 2,
+    "whole_rz180_multiplier": 2,
+    "minimum_rotational_triangles": 52736,
+    "lod0_hard_cap_triangles": 10000,
+    "minimum_over_cap": 42736
+  },
+  "formula_replay": {
+    "expression": "206 * 64 * 2 * 2",
+    "result": 52736,
+    "interpretation": "lower bound before all non-rotational head, contact, cap, closure, and seam topology"
+  },
+  "checks": [
+    {
+      "id": "S12-PG-001",
+      "name": "all Step 11 authority hashes match",
+      "result": "pass"
+    },
+    {
+      "id": "S12-PG-002",
+      "name": "environment lock complete and independently hash-verified",
+      "result": "pass"
+    },
+    {
+      "id": "S12-PG-003",
+      "name": "explicit angular tessellation rule located",
+      "result": "pass",
+      "observed": "64 positive-X divisions in the hash-locked source-half contract"
+    },
+    {
+      "id": "S12-PG-004",
+      "name": "current exact R8 radius states replayed",
+      "result": "pass",
+      "observed": 214
+    },
+    {
+      "id": "S12-PG-005",
+      "name": "rotational lower-bound triangle count does not exceed hard cap",
+      "result": "fail",
+      "observed": 52736,
+      "maximum": 10000
+    },
+    {
+      "id": "S12-PG-006",
+      "name": "replacement angular rule exists if 64 divisions are treated as superseded",
+      "result": "fail",
+      "observed": "no replacement rule in the authoritative Step 11 blueprint"
+    },
+    {
+      "id": "S12-PG-007",
+      "name": "production may safely proceed without a new authored decision",
+      "result": "fail"
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 3,
+    "total": 7,
+    "decision": "BLOCKED",
+    "block_code": "Blueprint block: rule missing — performance amendment required"
+  },
+  "scope_preserved": {
+    "builder_created": false,
+    "blender_started_for_production": false,
+    "geometry_saved": false,
+    "render_started": false,
+    "source_output_root_created": false,
+    "step13_unlocked": false
+  }
+}

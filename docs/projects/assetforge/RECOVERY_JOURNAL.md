@@ -8717,3 +8717,23 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260723-211719/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260723-211719/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-23 21:57:23 EDT -0400 - Before Siege Breaker Step 12 A01 approved dual-variant DCC source geometry execution
+
+- Snapshot: `Saved/ProjectRecovery/20260723-215723/`
+- Git: branch `main`, HEAD `7fe1bc1`, status lines `557`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260723-215723/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260723-215723/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260723-215723/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-23 22:14:29 EDT -0400 - Siege Breaker Step 12 A01 blocked before geometry on angular tessellation performance authority
+
+- Snapshot: `Saved/ProjectRecovery/20260723-221429/`
+- Git: branch `main`, HEAD `7fe1bc1`, status lines `565`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260723-221429/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260723-221429/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260723-221429/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

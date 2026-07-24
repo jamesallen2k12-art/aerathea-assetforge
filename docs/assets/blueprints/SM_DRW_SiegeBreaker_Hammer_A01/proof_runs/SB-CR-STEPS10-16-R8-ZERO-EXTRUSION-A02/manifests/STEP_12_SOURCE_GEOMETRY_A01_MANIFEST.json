@@ -1,0 +1,95 @@
+{
+  "schema": "AERATHEA_R8_STEP12_SOURCE_GEOMETRY_A01_MANIFEST_V1",
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "step": "12",
+  "date": "2026-07-23",
+  "result": "BLOCKED",
+  "block_code": "Blueprint block: rule missing — performance amendment required",
+  "artifact_status": "authoritative blocked package inventory",
+  "created_files": [
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_12_FRESH_DCC_SOURCE_GEOMETRY_A01_PROPOSED_CONTRACT.md",
+      "sha256": "a3f16266da53ed28a0c849818271dea0c07cd8ba8005e05a6778e2a0f6d2935b",
+      "artifact_status": "authoritative approved scope"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_12_FRESH_DCC_SOURCE_GEOMETRY_A01_APPROVAL_RECORD.md",
+      "sha256": "2b6fedd15020808beb63ff556c66bc52114a06cd69331f72bfe637caea69e7d7",
+      "artifact_status": "authoritative"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_12_ENVIRONMENT_LOCK_A01.json",
+      "sha256": "a2d9be9162d3aa5440492765aafe621e63bc4a1f80814bd523dce20dae7b66f8",
+      "artifact_status": "authoritative within the approved blocked execution"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_12_SOURCE_GEOMETRY_A01_EVENT_TRACE.jsonl",
+      "sha256": "fc9f77fd46b503447c44c217c4db5f664e78b6860b1a54209409d999ef603d9c",
+      "artifact_status": "authoritative execution trace"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_12_SOURCE_GEOMETRY_A01_VALIDATION.json",
+      "sha256": "a9d2de46d4b994de803ff89903dcc1af070128f85db9f690a33d58db662d850f",
+      "artifact_status": "proof only"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_12_SOURCE_GEOMETRY_A01_INDEPENDENT_AUDIT.json",
+      "sha256": "d240266d628460337def1ef6779513008d9057dcfe05183133f55984521bbf05",
+      "artifact_status": "proof only"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_12_FRESH_DCC_SOURCE_GEOMETRY_A01_OUTPUT_RECORD.md",
+      "sha256": "8797a8d7a67f36255184761b142c884a8067e93b4d5a32b8b78dd166e8875f1f",
+      "artifact_status": "authoritative blocked result record"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/handoffs/STEP_12_TO_STEP_13_HANDOFF_A01.md",
+      "sha256": "210668c8c754c32c6ba5c4b54f590af027444995bfc6712d15b0892f7d6cc4d4",
+      "artifact_status": "authoritative blocked handoff"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_12_SOURCE_GEOMETRY_A01_MANIFEST.json",
+      "sha256": null,
+      "artifact_status": "authoritative blocked package inventory",
+      "self_hash_rule": "The manifest cannot contain its own final SHA-256 without recursive byte mutation; its detached SHA-256 is reported after final validation."
+    }
+  ],
+  "not_created": {
+    "builder": "Tools/DCC/build_siegebreaker_r8_step12_source_geometry_a01.py",
+    "validator": "Tools/DCC/audit_siegebreaker_r8_step12_source_geometry_a01.py",
+    "source_output_root": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01",
+    "blend_files": true,
+    "geometry": true,
+    "renders": true,
+    "review_board": true,
+    "uv_material_texture": true,
+    "lod_collision": true,
+    "export": true,
+    "unreal": true
+  },
+  "technical_summary": {
+    "authority_files_passed": 34,
+    "authority_files_failed": 0,
+    "radius_states": 214,
+    "longitudinal_transitions": 206,
+    "positive_x_angular_divisions": 64,
+    "minimum_rotational_triangles": 52736,
+    "lod0_hard_cap_triangles": 10000,
+    "minimum_over_cap": 42736,
+    "independent_audit": "4 pass / 3 fail / 7 total"
+  },
+  "classification": {
+    "step12": "blocked",
+    "dcc_source_candidate": false,
+    "dcc_game_ready_candidate": false,
+    "fully_game_ready": false,
+    "step13_authorized": false
+  },
+  "drift": {
+    "detected": false,
+    "drift_ledger_entry_required": false,
+    "reason": "The approved fail-closed performance gate stopped before production."
+  },
+  "next_gate": "separate authorization to draft a measurement-only Step 11B angular-tessellation and performance amendment"
+}

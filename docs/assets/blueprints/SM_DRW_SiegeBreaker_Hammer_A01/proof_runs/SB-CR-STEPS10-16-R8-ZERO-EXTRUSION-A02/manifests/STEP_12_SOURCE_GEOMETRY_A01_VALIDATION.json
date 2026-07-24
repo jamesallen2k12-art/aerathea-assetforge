@@ -1,0 +1,77 @@
+{
+  "schema": "AERATHEA_R8_STEP12_SOURCE_GEOMETRY_A01_VALIDATION_V1",
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "step": "12",
+  "date": "2026-07-23",
+  "artifact_status": "proof only",
+  "result": "BLOCKED",
+  "block_code": "Blueprint block: rule missing — performance amendment required",
+  "block_detail": "The hash-locked authority contains 64 positive-X angular divisions, which cannot satisfy the 10,000-triangle hard cap when replayed with the exact current R8 radius states. If that inherited count is superseded, the Step 11 blueprint provides no replacement angular subdivision rule.",
+  "authority_preflight": {
+    "contract_sha256": "a3f16266da53ed28a0c849818271dea0c07cd8ba8005e05a6778e2a0f6d2935b",
+    "approval_record_sha256": "2b6fedd15020808beb63ff556c66bc52114a06cd69331f72bfe637caea69e7d7",
+    "blueprint_sha256": "2b598497ba5e61a4352c217f3fb20b3545189c710934f3a21d9b7398ddb472c7",
+    "authority_lock_sha256": "3235fcc9480ad246f968b275792aa3a309aa34710b5bfec3fc005980ae3d5069",
+    "authority_files_checked": 34,
+    "authority_file_failures": 0,
+    "environment_lock_sha256": "a2d9be9162d3aa5440492765aafe621e63bc4a1f80814bd523dce20dae7b66f8",
+    "result": "PASS"
+  },
+  "pregeometry_performance_gate": {
+    "source_half_contract_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_STEP06_ONE_RZ180_SOURCE_HALF_ASSEMBLY_A01_CONTRACT.md",
+    "source_half_contract_sha256": "eba4884b6b52178846854b59c88594fc3aa896067d868f6748d4aadd3bc4106a",
+    "explicit_positive_x_angular_divisions": 64,
+    "component_radius_states": {
+      "C06": 33,
+      "C07": 11,
+      "C07B": 25,
+      "C08": 14,
+      "C09": 16,
+      "C10": 20,
+      "C11": 39,
+      "C12": 56
+    },
+    "radius_state_total": 214,
+    "longitudinal_transition_total": 206,
+    "minimum_rotational_triangle_formula": "206 transitions * 64 positive-X angular divisions * 2 triangles per quad * 2 whole-Rz180 occurrences",
+    "minimum_rotational_triangles": 52736,
+    "head_contact_cap_closure_triangles_included": 0,
+    "lod0_target_triangles": 8000,
+    "lod0_hard_cap_triangles": 10000,
+    "minimum_over_hard_cap": 42736,
+    "result": "FAIL"
+  },
+  "closed_world_decision": {
+    "branch_if_64_divisions_remain_authoritative": "blocked because the rotational topology alone exceeds the hard cap by at least 42,736 triangles",
+    "branch_if_64_divisions_are_superseded": "blocked because no replacement angular division count or adaptive tessellation rule exists in the authoritative Step 11 blueprint",
+    "silent_subdivision_choice_allowed": false,
+    "builder_creation_allowed_after_block": false,
+    "blender_production_allowed_after_block": false,
+    "retry_allowed": false
+  },
+  "output_ceiling_observed": {
+    "step12_builder_created": false,
+    "independent_validator_created": false,
+    "output_root_created": false,
+    "blender_production_started": false,
+    "geometry_created": false,
+    "blend_created": false,
+    "render_created": false,
+    "review_board_created": false,
+    "export_created": false,
+    "unreal_created": false,
+    "dcc_source_candidate_created": false
+  },
+  "required_amendment": {
+    "name": "Step 11B angular tessellation and performance amendment",
+    "must_lock": [
+      "the exact positive-X angular division count or deterministic adaptive rule",
+      "continuous proportional U ownership with no nearest-pixel skipping or repetition",
+      "the exact whole-asset triangle estimate before Blender",
+      "the 8,000 target and 10,000 hard-cap disposition",
+      "silhouette review expectations for the chosen full-circumference side count"
+    ],
+    "recommended_measurement_only_candidate": "Evaluate 6 and 8 positive-X angular divisions against exact whole-asset topology counts; do not build geometry until one exact rule is approved."
+  }
+}
