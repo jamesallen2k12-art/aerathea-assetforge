@@ -8907,3 +8907,23 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260724-122643/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260724-122643/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 12:53:56 EDT -0400 - Before twin hammer Step 13 immutable geometry and artistic review A01
+
+- Snapshot: `Saved/ProjectRecovery/20260724-125356/`
+- Git: branch `main`, HEAD `d411098`, status lines `558`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-125356/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-125356/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-125356/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 13:22:21 EDT -0400 - After twin hammer Step 13 technical FAIL stop and recovery records A01
+
+- Snapshot: `Saved/ProjectRecovery/20260724-132221/`
+- Git: branch `main`, HEAD `d411098`, status lines `567`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-132221/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-132221/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-132221/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

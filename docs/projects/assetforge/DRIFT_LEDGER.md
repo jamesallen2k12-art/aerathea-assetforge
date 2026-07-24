@@ -1406,3 +1406,76 @@ Core authority: `AGENTS.md` Core Principles govern this ledger. Drifted artifact
   axial envelope and exact cross-asset dimension-equality gates.
 - Local recovery record:
   `docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_12_DEPTH_OWNERSHIP_CORE_RECOVERY.md`.
+
+### 2026-07-24 13:13 EDT - Twin Hammer Fresh-Source Topology And Contact Drift
+
+- Asset or scope: `SM_DRW_SiegeBreaker_Hammer_A01` and
+  `SM_DRW_FoeHammer_Hammer_A01`, fresh shared-depth DCC sources and the
+  attempted `STEP_13_IMMUTABLE_GEOMETRY_ARTISTIC_REVIEW_A01` gate.
+- Detected by: the Flamestrike-approved Step 13 independent saved-geometry
+  audit, followed by a second corrected audit pass and a direct native Blender
+  `bmesh` winding check.
+- Last known Core-valid state: the approved and hash-locked
+  `SHARED_DEPTH_RECOVERY_BLUEPRINT_A01` plus its immutable source authority,
+  exact common dimensions, twin identity, and fresh-builder approval boundary,
+  before the fresh-builder geometry was treated as Step 13-ready. The shared
+  dimensions, shared-base equality, source lineage, and twin identity remain
+  valid evidence; no Step 13-complete DCC source exists.
+- First drift action: the fresh builder saved the local C04 ruled-closure
+  surfaces and the broader surface-patch assembly without proving consistent
+  face winding, exact closed/manifold boundary incidence, and every declared
+  contact before classifying both outputs as valid advancement candidates.
+- Assumption or interpretation that caused drift: exact bounds, provenance,
+  shared hashes, local-variant identity, source-hash stability, and a visually
+  acceptable review were treated as sufficient evidence for Step 13 entry.
+  The prior pre-save and independent audits did not test per-object winding or
+  exact assembled boundary incidence, so technical completeness was inferred
+  from narrower evidence.
+- Proven evidence:
+  - Siege Breaker has `19,200` unpaired exact assembled boundary edges, `890`
+    boundary incidences greater than two, `2,978` assembled seam-winding
+    mismatches, and `138` winding mismatches in each of its two local C04
+    closure objects.
+  - Foe Hammer has `18,900` unpaired exact assembled boundary edges, `890`
+    boundary incidences greater than two, `2,936` assembled seam-winding
+    mismatches, and `118` winding mismatches in each of its two local C04
+    closure objects.
+  - Both sources fail the declared-contact gate and therefore cannot establish
+    protected-negative-space preservation under the approved Step 13
+    contract.
+  - Both `.blend` files remained byte-identical; observed twin XYZ difference
+    remains exactly `0.0 × 0.0 × 0.0 cm`; shared-base equality and the only
+    allowed local C04 identity difference remain intact.
+- Affected outputs: both fresh shared-depth `.blend` sources; their
+  pre-save/build manifests; the earlier narrow independent audit; the fresh
+  visual review and advancement decision; Step 13 readiness fields; and any
+  attempted Step 13, Step 14, export, or Unreal advancement based on those
+  sources.
+- Artifact statuses: both `.blend` files retain the pipeline vocabulary
+  `DCC source candidate` because reviewable DCC sources exist, but are
+  `quarantined in place` as Step 13-pass, Step 14, export, or Unreal
+  authority. Earlier builder/visual outputs are `reference only` for recovery
+  and appearance history. Their narrow pass results remain `proof only` for
+  the checks actually performed. The corrected Step 13 technical audit is
+  `proof only; FAIL`; the keeper-feature audit is `proof only; BLOCKED`; the
+  failure board is `proof only`.
+- Quarantined locations or records: source bytes remain preserved at their
+  locked paths because the approved contract forbids moving, renaming,
+  resaving, or repairing them. The governing failure evidence is
+  `docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_13_IMMUTABLE_GEOMETRY_ARTISTIC_REVIEW_A01_TECHNICAL_AUDIT.json`.
+- Recovery decision: stop before Step 13 rendering and do not repair forward.
+  Return to the approved shared-depth blueprint as the last construction
+  authority. The preferred smallest sufficient recovery is a separately
+  approved fresh-builder blueprint that makes exact closed/manifold topology,
+  contact incidence, winding, and protected-negative-space checks pre-save
+  requirements. Any alternative repair route requires an explicit Core
+  reassessment and Flamestrike approval first.
+- Flamestrike approval: Flamestrike approved execution of the exact read-only
+  Step 13 contract. That approval authorizes this failure disposition,
+  recovery recording, checkpoint, scoped commit/push, and visible stop board;
+  it does not authorize source modification, repair, rebuild, Step 14, export,
+  or Unreal.
+- Follow-up Core/Kaizen improvement: future geometry builders must run
+  per-object winding/degeneracy checks and exact assembled boundary/contact
+  incidence before saving. An independent saved-file audit must repeat those
+  checks before any visual approval can grant advancement.

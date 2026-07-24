@@ -1,0 +1,126 @@
+{
+  "schema": "AERATHEA_STEP_13_IMMUTABLE_GEOMETRY_KEEPER_FEATURE_AUDIT_V1",
+  "date_utc": "2026-07-24T17:13:34Z",
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "step_id": "STEP_13_IMMUTABLE_GEOMETRY_ARTISTIC_REVIEW_A01",
+  "artifact_status": "proof only; BLOCKED",
+  "result": "BLOCKED",
+  "controlling_gate": {
+    "technical_audit_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_13_IMMUTABLE_GEOMETRY_ARTISTIC_REVIEW_A01_TECHNICAL_AUDIT.json",
+    "technical_audit_sha256": "e1c2e6bcbc4f2cf7b7ff991c8ea8fa25f72ecf2ae4913683b1d9ba1ab1a945ad",
+    "technical_result": "FAIL",
+    "contract_rule": "Read-only review rendering and keeper-feature judgment may begin only after the saved-geometry technical audit passes.",
+    "disposition": "The renderer was not created or run. No Step 13 candidate render, silhouette, XOR, thumbnail, wireframe, contact view, negative-space view, turntable, or twin-comparison image was produced."
+  },
+  "assets": {
+    "siege_breaker": {
+      "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+      "pipeline_status_before": "DCC source candidate",
+      "pipeline_status_after": "DCC source candidate",
+      "artifact_disposition": "quarantined in place as Step 13-pass or Step 14 authority pending an approved recovery",
+      "source_path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/SM_DRW_SiegeBreaker_Hammer_A01_DCCSource_SharedDepth_A01.blend",
+      "sha256_before": "c69b415ac3429091c6aa77d24ffcd6d88bbd0f9fc711e3862c2c7e7b51034537",
+      "sha256_after": "c69b415ac3429091c6aa77d24ffcd6d88bbd0f9fc711e3862c2c7e7b51034537",
+      "byte_identical": true
+    },
+    "foe_hammer": {
+      "asset_id": "SM_DRW_FoeHammer_Hammer_A01",
+      "pipeline_status_before": "DCC source candidate",
+      "pipeline_status_after": "DCC source candidate",
+      "artifact_disposition": "quarantined in place as Step 13-pass or Step 14 authority pending an approved recovery",
+      "source_path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_FoeHammer_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/SM_DRW_FoeHammer_Hammer_A01_DCCSource_SharedDepth_A01.blend",
+      "sha256_before": "67737a3c561cd6462af3657ea93488af76f32a5815ee0b4d5887182d14c761d4",
+      "sha256_after": "67737a3c561cd6462af3657ea93488af76f32a5815ee0b4d5887182d14c761d4",
+      "byte_identical": true
+    }
+  },
+  "geometry_readable_keeper_features": [
+    {
+      "id": "KF-01",
+      "feature": "monumental top-heavy Aerathean Dwarven great-hammer silhouette",
+      "result": "BLOCKED",
+      "evidence": "No authorized Step 13 render exists because the technical gate failed."
+    },
+    {
+      "id": "KF-02",
+      "feature": "two irregular faceted strike masses balanced without bland mirrored-box read",
+      "result": "BLOCKED",
+      "evidence": "No authorized Step 13 render exists because the technical gate failed."
+    },
+    {
+      "id": "KF-03",
+      "feature": "dense believable structural bracing shapes",
+      "result": "BLOCKED",
+      "evidence": "No authorized Step 13 wireframe or matched multi-view render exists."
+    },
+    {
+      "id": "KF-04",
+      "feature": "dominant layered central diamond shield or crystal focal hierarchy",
+      "result": "BLOCKED",
+      "evidence": "No authorized Step 13 matched-view evidence exists."
+    },
+    {
+      "id": "KF-05",
+      "feature": "narrow shaft contrast against the massive head",
+      "result": "BLOCKED",
+      "evidence": "No authorized Step 13 full-size and thumbnail silhouette evidence exists."
+    },
+    {
+      "id": "KF-06",
+      "feature": "readable grip and weighted faceted pommel massing",
+      "result": "BLOCKED",
+      "evidence": "No authorized Step 13 matched-view evidence exists."
+    },
+    {
+      "id": "KF-07",
+      "feature": "authored front, back, sides, top, bottom, contacts, and negative spaces",
+      "result": "BLOCKED",
+      "evidence": "The technical audit failed closed/manifold, declared-contact, and protected-negative-space gates before rendering."
+    },
+    {
+      "id": "KF-08",
+      "feature": "no blank backs, copied facades, cards, projection carriers, or hollow presentation tricks",
+      "result": "BLOCKED",
+      "evidence": "Forbidden identity markers were absent, but the required Step 13 360-degree and wireframe evidence was not authorized after the technical failure."
+    },
+    {
+      "id": "KF-09",
+      "feature": "large-form geometry suitable for later material interpretation",
+      "result": "BLOCKED",
+      "evidence": "The sources failed required topology and contact gates; later material interpretation cannot be authorized."
+    },
+    {
+      "id": "KF-10",
+      "feature": "correct double-rune versus double-metal-center-piece twin identity with no other shared-base difference",
+      "result": "BLOCKED",
+      "evidence": "The technical audit passed exact twin identity and shared-base equality, but the approved contract requires every geometry-readable keeper feature to be decided only after a complete technical PASS and matched review package."
+    }
+  ],
+  "material_dependent_keeper_features": {
+    "result": "not evaluated at this geometry-only gate",
+    "features": [
+      "aged-bronze color",
+      "dark-steel response",
+      "leather color",
+      "emissive intensity",
+      "wear",
+      "scratches",
+      "cracks",
+      "grain",
+      "final surface storytelling"
+    ]
+  },
+  "assumptions": [],
+  "interpretations": [],
+  "blockers_or_uncertainty": [
+    "Both sources failed the required closed/manifold assembled-volume gate.",
+    "Both sources failed at least one declared exact-contact gate.",
+    "Protected-negative-space preservation cannot pass while the topology and declared-contact gates fail.",
+    "The local C04 closure meshes contain directly observed winding inconsistencies."
+  ],
+  "step_13_complete": false,
+  "step_14_authority": false,
+  "retopology_uv_bake_export_authority": false,
+  "unreal_authority": false,
+  "next_approval_need": "A separate Core recovery reassessment and exact repair-or-rebuild contract; no repair or Step 14 work is authorized."
+}

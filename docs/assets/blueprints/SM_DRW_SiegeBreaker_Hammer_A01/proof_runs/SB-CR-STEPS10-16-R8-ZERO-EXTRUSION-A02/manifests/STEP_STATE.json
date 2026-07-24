@@ -4,7 +4,7 @@
   "parent_run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
   "last_valid_parent_step": "09",
   "last_core_valid_step": "09A",
-  "current_step": "FRESH_TWIN_DCC_SOURCE_BUILDER_A01_VISUAL_REVIEW_STOP",
+  "current_step": "STEP_13_IMMUTABLE_GEOMETRY_ARTISTIC_REVIEW_A01_TECHNICAL_FAIL_STOP",
   "completed_steps": [
     "01",
     "02",
@@ -22,7 +22,7 @@
     "11",
     "12"
   ],
-  "state": "two_audited_dcc_source_candidates_pending_flamestrike_visual_decision",
+  "state": "step_13_technical_fail_render_not_run_core_recovery_stop",
   "step_11_decision": "historically approved; invalid and quarantined as construction authority after the 2026-07-24 depth-ownership correction",
   "step_11_validation": "blueprint A02 independent PASS 462/462; proof only for narrow checks",
   "historical_block": {
@@ -124,7 +124,10 @@
     "review_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/FRESH_TWIN_DCC_SOURCE_BUILDER_A01_REVIEW.png",
     "review_sha256": "2f88854a58596e104841878c355082a0f9515e95ca634bd0ed31bbbc8d608c65",
     "review_opened_visibly": true,
-    "visual_decision": "pending Flamestrike",
+    "visual_decision": "both candidates approved by Flamestrike for advancement",
+    "visual_decision_approval_record_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/FRESH_TWIN_DCC_SOURCE_BUILDER_A01_VISUAL_DECISION_APPROVAL_RECORD.md",
+    "visual_decision_approval_record_sha256": "3ae3e8a823262870e3ea01cc4b33a470d68d3b5b7d8fe49049315d68e6c66eb7",
+    "review_artifact_status": "candidate review evidence; visually approved for advancement; not visual canon or final artistic approval",
     "shared_output_dimensions_xyz_cm_exact": [
       "50719500/517681",
       "6644212/149985",
@@ -156,9 +159,99 @@
     "retopology_uv_bake_export_authority": false,
     "unreal_authority": false
   },
+  "step_13_contract_candidate": {
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_13_IMMUTABLE_GEOMETRY_ARTISTIC_REVIEW_A01_CONTRACT.md",
+    "sha256": "cc5b3185c851a229f44428b4544a19c490025095fcae2b5313fc3f5ae3f5d74b",
+    "artifact_status": "approved execution contract; consumed by FAIL stop",
+    "documentation_validation_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_13_IMMUTABLE_GEOMETRY_ARTISTIC_REVIEW_A01_CONTRACT_VALIDATION.json",
+    "documentation_validation_result": "PASS 46/46",
+    "documentation_validation_artifact_status": "proof only",
+    "flamestrike_contract_decision": "approved",
+    "flamestrike_contract_decision_date": "2026-07-24",
+    "approval_evidence": "Flamestrike replied `approved` to the explicit approval question for contract SHA-256 cc5b3185c851a229f44428b4544a19c490025095fcae2b5313fc3f5ae3f5d74b.",
+    "step_13_execution_authority": false,
+    "execution_authority_consumed": true,
+    "blender_read_only_audit_and_render_authority": false,
+    "geometry_modification_authority": false,
+    "downstream_production_authority": false,
+    "unreal_authority": false
+  },
+  "step_13_immutable_geometry_artistic_review_a01": {
+    "artifact_status": "authoritative stop/disposition record backed by proof-only audits",
+    "result": "FAIL / BLOCKED",
+    "step_13_complete": false,
+    "technical_audit_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_13_IMMUTABLE_GEOMETRY_ARTISTIC_REVIEW_A01_TECHNICAL_AUDIT.json",
+    "technical_audit_sha256": "e1c2e6bcbc4f2cf7b7ff991c8ea8fa25f72ecf2ae4913683b1d9ba1ab1a945ad",
+    "technical_audit_artifact_status": "proof only; FAIL",
+    "technical_audit_amendment": {
+      "superseded_first_audit_sha256": "c89210db6fe5ee19e528bdec9c4f4ad8c38b4c5723c74b3d6dfaa0fffc127d0f",
+      "correction": "removed an over-strict Foe visible-C04-fill requirement; topology/contact failures remained",
+      "corrected_result": "FAIL"
+    },
+    "auditor_path": "Tools/DCC/audit_siegebreaker_foehammer_step13_immutable_geometry_a01.py",
+    "auditor_sha256": "0a1273392baab4d62edbd86691e3c782e5d25737f1fe9b1f3a522f389e17e0f9",
+    "keeper_feature_audit_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_13_IMMUTABLE_GEOMETRY_ARTISTIC_REVIEW_A01_KEEPER_FEATURE_AUDIT.json",
+    "keeper_feature_audit_sha256": "8dac9b954e6758812f634a48a74171c232b852d8b086c2ffcb37fdd5415b1bc5",
+    "keeper_feature_result": "BLOCKED",
+    "renderer_created": false,
+    "renderer_run": false,
+    "candidate_render_count": 0,
+    "review_board_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/STEP_13_IMMUTABLE_GEOMETRY_ARTISTIC_REVIEW_A01_REVIEW.png",
+    "review_board_sha256": "9d7b7d2331a33b77fd82b84f82055bc7f6a9f39f3e31a2492aa5bf0a2f117710",
+    "review_board_artifact_status": "proof only; explicit non-render technical-stop board",
+    "review_board_opened_visibly": true,
+    "output_record_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_13_IMMUTABLE_GEOMETRY_ARTISTIC_REVIEW_A01_OUTPUT_RECORD.md",
+    "output_record_sha256": "17925871020e9c0f7816bae05dea0ca628be6bb479dbc75b64611a3b9a795f15",
+    "stop_handoff_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/handoffs/STEP_13_IMMUTABLE_GEOMETRY_ARTISTIC_REVIEW_A01_STOP_HANDOFF.md",
+    "stop_handoff_sha256": "af869b8eccf976705796e206212fe38889bd6d44079238e68ffa39ecf943bd74",
+    "direct_failures": {
+      "siege_breaker": {
+        "unpaired_exact_assembly_boundary_edges": 19200,
+        "assembly_boundary_incidence_greater_than_two": 890,
+        "assembly_boundary_winding_mismatches": 2978,
+        "local_c04_closure_winding_mismatches_per_occurrence": 138,
+        "declared_contacts": "FAIL",
+        "protected_negative_spaces": "FAIL"
+      },
+      "foe_hammer": {
+        "unpaired_exact_assembly_boundary_edges": 18900,
+        "assembly_boundary_incidence_greater_than_two": 890,
+        "assembly_boundary_winding_mismatches": 2936,
+        "local_c04_closure_winding_mismatches_per_occurrence": 118,
+        "declared_contacts": "FAIL",
+        "protected_negative_spaces": "FAIL"
+      }
+    },
+    "source_hashes_unchanged": true,
+    "observed_cross_asset_dimension_difference_cm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "shared_base_hash_equal": true,
+    "difference_outside_tagged_local_c04": false,
+    "asset_pipeline_status": {
+      "siege_breaker": "DCC source candidate",
+      "foe_hammer": "DCC source candidate"
+    },
+    "artifact_disposition": {
+      "siege_breaker": "quarantined in place as Step 13-pass or downstream authority",
+      "foe_hammer": "quarantined in place as Step 13-pass or downstream authority"
+    },
+    "core_recovery": {
+      "status": "active stop; recovery implementation not approved",
+      "drift_ledger_path": "docs/projects/assetforge/DRIFT_LEDGER.md",
+      "drift_ledger_sha256_at_output_record": "c72a42db610de5409a7090bdb304246c2bbcd415dad3446a3bcdb8b110b2a9f1",
+      "last_known_construction_authority": "SHARED_DEPTH_RECOVERY_BLUEPRINT_A01",
+      "repair_forward_authorized": false
+    },
+    "step_14_authority": false,
+    "retopology_uv_bake_export_authority": false,
+    "unreal_authority": false
+  },
   "next_permitted_action": {
-    "action": "stop for Flamestrike visual approval, rejection, or blocked decision on the fresh twin review board",
-    "next_gate": "visual decision only; any later production step requires a separately stated visible contract and separate Flamestrike approval",
+    "action": "stop and wait for Flamestrike to approve, reject, or mark blocked a separate Core recovery reassessment and exact recovery contract",
+    "next_gate": "Core recovery decision only; Step 14 remains locked",
     "geometry_authority": false,
     "blender_authority": false
   },
