@@ -1,0 +1,99 @@
+{
+  "schema": "AERATHEA_TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_REJECTED_ATTEMPTS_A01_V1",
+  "date": "2026-07-24",
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "build_id": "TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01",
+  "artifact_status": "reference only; controlled rejected-attempt record",
+  "drift_event": false,
+  "reason_not_drift": "Every rejected construction or camera pass was stopped by its required pre-save, paired, or internal-visibility gate before presentation as an approved result.",
+  "failed_source_geometry_inputs": 0,
+  "failed_sources_modified": false,
+  "attempts": [
+    {
+      "attempt_id": "PRE_SAVE_R1_SEGMENTED_PERIMETER",
+      "artifact_status": "invalid; rejected before save",
+      "saved_blend_count": 0,
+      "observed_topology": {
+        "open_boundary_edges": 96300,
+        "edge_incidence_greater_than_two": 92,
+        "winding_mismatch_edges": 12688,
+        "zero_area_faces": 0
+      },
+      "cause": "Treatment-strip edges terminated on adjoining perimeter faces and the inherited sidewall order faced inward.",
+      "disposition": "No Blender source was saved. The empty attempt root and rejection marker are quarantined locally."
+    },
+    {
+      "attempt_id": "PRE_SAVE_R2_INSET_GRID_BEFORE_WINDING_FIX",
+      "artifact_status": "invalid; rejected before save",
+      "saved_blend_count": 0,
+      "observed_topology": {
+        "open_boundary_edges": 0,
+        "edge_incidence_greater_than_two": 92,
+        "winding_mismatch_edges": 12688,
+        "zero_area_faces": 14
+      },
+      "cause": "The inset grid closed the perimeter, but diagonal source-pixel contacts and inward sidewall order remained."
+    },
+    {
+      "attempt_id": "PRE_SAVE_R3_WINDING_FIXED_NEEDLE_TRIANGLES",
+      "artifact_status": "invalid; rejected before save",
+      "saved_blend_count": 0,
+      "observed_topology": {
+        "open_boundary_edges": 0,
+        "edge_incidence_greater_than_two": 92,
+        "winding_mismatch_edges": 0,
+        "zero_area_faces": 116970
+      },
+      "cause": "Face winding was corrected, but Blender treated the extremely thin fan triangles around the treatment grid as zero-area."
+    },
+    {
+      "attempt_id": "PRE_SAVE_R4_CORNER_SPLIT_THIN_FAN",
+      "artifact_status": "invalid; rejected before save",
+      "saved_blend_count": 0,
+      "observed_topology": {
+        "open_boundary_edges": 0,
+        "edge_incidence_greater_than_two": 0,
+        "winding_mismatch_edges": 0,
+        "zero_area_faces": 2128
+      },
+      "cause": "All diagonal point contacts were split without adding or removing source pixels; the remaining failure was only Blender's thin-triangle area tolerance."
+    },
+    {
+      "attempt_id": "SAVED_R5_VARIANT_SPECIFIC_GRID",
+      "artifact_status": "quarantined; each saved file passed individually, paired audit failed",
+      "saved_blend_count": 2,
+      "individual_saved_file_audits": "PASS",
+      "paired_audit": "FAIL",
+      "cross_asset_failure": "geometry_sha256_equal=false",
+      "siege_breaker_blend_sha256": "cb0cec23a33ac51efa7eb742d09e2af137c7c4708bf609a3c4a5f8df1f5292ab",
+      "foe_hammer_blend_sha256": "2ae6d00fc9acceeb0b855115916f91e99ae04cdd2cfd8104a00950728b6aa902",
+      "rejected_build_manifest": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01_MANIFEST_REJECTED_CROSS_ASSET_A01.json",
+        "sha256": "34b63e83db122a11054862386f2aefe0fa845c134f0d16670956dfa1c6c639d6"
+      },
+      "rejected_paired_audit": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01_INDEPENDENT_AUDIT_REJECTED_CROSS_ASSET_A01.json",
+        "sha256": "c9deaae993d63398ba664902429142caedb76f60c5b2a6385417ce5df9ba8255"
+      },
+      "cause": "Rune and metal treatment grids had different internal breakpoints, so their topology differed despite identical outer bounds.",
+      "disposition": "Both saved attempts and their local manifests are quarantined in distinct local output roots and have no downstream authority."
+    },
+    {
+      "attempt_id": "REVIEW_RENDER_R1_TIGHT_CAMERA",
+      "artifact_status": "invalid; rejected internal staging; never published",
+      "geometry_result": "unchanged; paired saved-file audit PASS",
+      "cause": "The direct end-face and matched topology camera trimmed the lower head transition too tightly.",
+      "disposition": "Preserved only in temporary staging with an internal rejection marker; replaced by the wider matched camera pass."
+    }
+  ],
+  "accepted_result": {
+    "construction_attempt": "SAVED_R6_SHARED_INTERNAL_GRID",
+    "review_attempt": "REVIEW_RENDER_R2_WIDER_MATCHED_CAMERA",
+    "paired_saved_file_audit": "PASS",
+    "published_review_render": "PASS",
+    "flamestrike_visual_decision": "pending"
+  },
+  "step_13_complete": false,
+  "step_14_authority": false,
+  "unreal_authority": false
+}

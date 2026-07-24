@@ -4,7 +4,7 @@
   "parent_run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
   "last_valid_parent_step": "09",
   "last_core_valid_step": "09A",
-  "current_step": "STEP_13_TECHNICAL_FAIL_DIAGNOSTIC_RENDER_A01",
+  "current_step": "TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01",
   "completed_steps": [
     "01",
     "02",
@@ -22,7 +22,7 @@
     "11",
     "12"
   ],
-  "state": "step_13_technical_fail_diagnostic_render_complete_waiting_feedback",
+  "state": "twin_hammer_centered_face_mirror_weld_fresh_build_a01_technical_pass_visual_review_pending",
   "step_11_decision": "historically approved; invalid and quarantined as construction authority after the 2026-07-24 depth-ownership correction",
   "step_11_validation": "blueprint A02 independent PASS 462/462; proof only for narrow checks",
   "historical_block": {
@@ -66,7 +66,7 @@
     "step_12_unlocked": false
   },
   "core_recovery_20260724": {
-    "status": "authoritative",
+    "status": "recovery implementation technical PASS; Flamestrike visual review pending",
     "recovery_record": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_12_DEPTH_OWNERSHIP_CORE_RECOVERY.md",
     "first_drift_action": "Step 10 promoted local C04 face-treatment spans to candidate-specific global body depth",
     "common_body_depth_cm_exact": {
@@ -79,8 +79,9 @@
     "foe_hammer_treatment": "double metal-center-piece sided",
     "former_rune_geometry_status": "invalid / quarantined in place",
     "former_metal_geometry_status": "invalid / quarantined in place",
-    "valid_dcc_source_candidates": 0,
-    "repair_forward_authorized": false
+    "valid_dcc_source_candidates": 2,
+    "repair_forward_authorized": false,
+    "fresh_rebuild_authorized_and_executed": true
   },
   "shared_depth_recovery_blueprint_a01": {
     "artifact_status": "authoritative through external decision approval and authority lock",
@@ -295,9 +296,90 @@
     "presentation_check": "PASS; full hammer visible, matched views, readable labels, no geometry hidden",
     "stop_rule": "both final images are open visibly; stop for Flamestrike feedback and do not begin repair or rebuild"
   },
+  "twin_hammer_centered_face_mirror_weld_fresh_build_a01": {
+    "artifact_status": "authoritative status; approved execution consumed; technical PASS; Flamestrike visual review pending",
+    "flamestrike_decision": "approved",
+    "approval_evidence": "After the exact face misalignment and required perimeter correction were explained, Flamestrike stated: I approve the fix ... make it happen.",
+    "recovery_amendment_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_RECOVERY_A01.json",
+    "recovery_amendment_sha256": "4e960362ebcf27ffd3c6ed811584679d5f8ca75befcaad8286370224fe9eb3e4",
+    "recovery_validation_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_RECOVERY_A01_VALIDATION.json",
+    "recovery_validation_sha256": "8f6cfa57c8044c93e671a0d4270ef801df311f8cfa7428eaa17f19003837bb07",
+    "recovery_validation_result": "PASS 51/51",
+    "approval_record_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01_APPROVAL_RECORD.md",
+    "approval_record_sha256": "bb1b090befd1db4a76a37434855e9577e2e41e2cc9cda64982dd6df1e998ba85",
+    "centered_positive_z_translation_cm_exact": "1608625/145631",
+    "centered_positive_z_translation_cm_decimal": "11.045896821419",
+    "fresh_builder_authority": false,
+    "independent_saved_file_auditor_authority": false,
+    "blender_authority": false,
+    "new_geometry_authority": false,
+    "new_source_save_authority": false,
+    "failed_source_geometry_read_authority": false,
+    "failed_source_save_or_modify_authority": false,
+    "mirror_plane": "X=0",
+    "whole_asset_rz180_authority": false,
+    "center_seam_join_and_weld_required": true,
+    "required_topology_result": {
+      "open_boundary_edges": 0,
+      "edge_incidence_greater_than_two": 0,
+      "winding_mismatch_edges": 0,
+      "loose_edges": 0,
+      "zero_area_faces": 0,
+      "duplicate_faces": 0,
+      "center_seam_unwelded_vertices": 0
+    },
+    "required_output_roots": {
+      "siege_breaker": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A13_R1_CenteredFaceMirrorWeld_DCCSource_A01",
+      "foe_hammer": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_FoeHammer_Hammer_A01/A13_R1_CenteredFaceMirrorWeld_DCCSource_A01",
+      "review": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01"
+    },
+    "render_authority": false,
+    "execution_authority_consumed": true,
+    "technical_result": "PASS",
+    "paired_saved_file_audit": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01_INDEPENDENT_AUDIT.json",
+      "sha256": "416ea044a2f28ca009423a3780302621b0e31c49cb9c9eec3dfe896e9b9da3bf",
+      "result": "PASS"
+    },
+    "shared_saved_geometry_sha256": "a7076cfb62eb229e3e996f37144517adbbdc81d594a22d1c14397828d16566ad",
+    "valid_dcc_source_candidates": 2,
+    "siege_breaker": {
+      "artifact_status": "DCC source candidate; pending Flamestrike visual decision",
+      "blend_path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A13_R1_CenteredFaceMirrorWeld_DCCSource_A01/SM_DRW_SiegeBreaker_Hammer_A01_DCCSource_CenteredFaceMirrorWeld_A01.blend",
+      "blend_sha256": "9808a58a57d8c9f55e9c7083bd8596f9085d59f60cc1ae27e26dd90a43e50f31",
+      "local_c04_treatment": "double rune sided"
+    },
+    "foe_hammer": {
+      "artifact_status": "DCC source candidate; pending Flamestrike visual decision",
+      "blend_path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_FoeHammer_Hammer_A01/A13_R1_CenteredFaceMirrorWeld_DCCSource_A01/SM_DRW_FoeHammer_Hammer_A01_DCCSource_CenteredFaceMirrorWeld_A01.blend",
+      "blend_sha256": "bb5337f7a40b0e10ba1b29772c00177bc597fe70e36393ed0704b26054f4ff70",
+      "local_c04_treatment": "double metal-center-piece sided"
+    },
+    "review_render": {
+      "manifest_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01_REVIEW_RENDER_A01_MANIFEST.json",
+      "manifest_sha256": "957cb2551c3486494b2d589be86af42709759f523f5545314ca05918e4236052",
+      "result": "PASS",
+      "siege_breaker_board_sha256": "963b48ad87f4d1beb1368c1db23aa5588dc2d8c780fbbca1828aa2a47243b72a",
+      "foe_hammer_board_sha256": "7c4a29f6ced322339354dbd36bb86e2946740e908daabbfafec0f93d72a61dc4",
+      "both_boards_opened_visibly": true,
+      "flamestrike_visual_decision": "pending"
+    },
+    "rejected_attempts_record": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01_REJECTED_ATTEMPTS.json",
+      "sha256": "a81e29458043485aaf3fa20fdc7ac7b5b34edf09ad8bc5118ef2421a9cdb3923",
+      "artifact_status": "reference only"
+    },
+    "output_record": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01_OUTPUT_RECORD.md",
+      "sha256": "20d00e7fa85c201c783b9cf85ffc78f46e0f4b119ca01ff20dfe7682308db8c9"
+    },
+    "step_14_authority": false,
+    "uv_texture_lod_collision_export_authority": false,
+    "unreal_authority": false
+  },
   "next_permitted_action": {
-    "action": "stop for Flamestrike feedback; no production action is authorized",
-    "next_gate": "visible diagnostic feedback from Flamestrike; mirror-and-weld work remains separately locked",
+    "action": "receive Flamestrike's visual decision on the two visible corrected review boards",
+    "next_gate": "Flamestrike may approve, reject, or request a scoped visual correction; no downstream work is authorized",
     "geometry_authority": false,
     "blender_authority": false
   },

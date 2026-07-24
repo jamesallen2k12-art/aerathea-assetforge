@@ -1,0 +1,180 @@
+{
+  "artifact_status": "candidate pending independent saved-file audit",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "authority_checks": [
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_RECOVERY_A01.json",
+      "result": "PASS",
+      "sha256": "4e960362ebcf27ffd3c6ed811584679d5f8ca75befcaad8286370224fe9eb3e4"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_RECOVERY_A01_VALIDATION.json",
+      "result": "PASS",
+      "sha256": "8f6cfa57c8044c93e671a0d4270ef801df311f8cfa7428eaa17f19003837bb07"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01_APPROVAL_RECORD.md",
+      "result": "PASS",
+      "sha256": "bb1b090befd1db4a76a37434855e9577e2e41e2cc9cda64982dd6df1e998ba85"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_06_FRONT_MEASUREMENT_CONTRACT.json",
+      "result": "PASS",
+      "sha256": "85f09fc89c8b73df8e6fdf47924e2251da9dda6decabe44fa3f3b2577b7708eb"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/evidence/STEP_09A_COMPONENT_SCANLINES.json.gz",
+      "result": "PASS",
+      "sha256": "396adfbaaefc8a8ea35104e5e96dfde322510fb4ce88530fbb32f7f3073b3562"
+    },
+    {
+      "path": "SourceAssets/Concepts/SiegeBreaker/siege_breaker_front_view.png",
+      "result": "PASS",
+      "sha256": "d00bf9ffcfd4862884626fa961c5f6b4fd6cedfdff7936b2210ca2a905e57e95"
+    },
+    {
+      "path": "SourceAssets/Concepts/SiegeBreaker/siege_breaker_back_view.png",
+      "result": "PASS",
+      "sha256": "15b4633f2df4ee06115ef4a7e238f287ebece1bae514ad4005c1036a57359799"
+    },
+    {
+      "path": "SourceAssets/Concepts/SiegeBreaker/siege_breaker_right_view.png",
+      "result": "PASS",
+      "sha256": "04a1e9359d518b1dec35fe161020bd23ab9e2f8d5934f24e4184aecaa91d8330"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A09_FULL_PIXEL_HALF_MIRROR_A01_FINAL_REVIEW.md",
+      "result": "PASS",
+      "sha256": "9edfae8a31b17ed07e31e8ac0582681f06d0347463b1dcf87712fec490d3628a"
+    },
+    {
+      "path": "Tools/External/Blender/blender-4.5.11-linux-x64/blender",
+      "result": "PASS",
+      "sha256": "dc72290ee8651c93c4a946c012c5f2a034946fd320e6c3ab214fa23181427428"
+    },
+    {
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/SM_DRW_SiegeBreaker_Hammer_A01_DCCSource_SharedDepth_A01.blend",
+      "result": "PASS; hash check only; geometry not read",
+      "sha256": "c69b415ac3429091c6aa77d24ffcd6d88bbd0f9fc711e3862c2c7e7b51034537"
+    },
+    {
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_FoeHammer_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/SM_DRW_FoeHammer_Hammer_A01_DCCSource_SharedDepth_A01.blend",
+      "result": "PASS; hash check only; geometry not read",
+      "sha256": "67737a3c561cd6462af3657ea93488af76f32a5815ee0b4d5887182d14c761d4"
+    }
+  ],
+  "blend": {
+    "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A13_R1_CenteredFaceMirrorWeld_DCCSource_A01/SM_DRW_SiegeBreaker_Hammer_A01_DCCSource_CenteredFaceMirrorWeld_A01.blend",
+    "sha256": "9808a58a57d8c9f55e9c7083bd8596f9085d59f60cc1ae27e26dd90a43e50f31"
+  },
+  "build_id": "TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01",
+  "construction_validation": {
+    "active_local_treatment_faces": 157676,
+    "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+    "asset_key": "siege_breaker",
+    "centered_face_shift_cm_decimal": 11.045896821418516,
+    "centered_face_shift_cm_exact": "1608625/145631",
+    "declared_contacts": "PASS",
+    "expected_dimensions_cm_decimal": [
+      97.97442826760108,
+      44.299176584325096,
+      170.0
+    ],
+    "expected_dimensions_cm_exact": [
+      "50719500/517681",
+      "6644212/149985",
+      "170/1"
+    ],
+    "gates": {
+      "center_seam_unwelded_vertices": true,
+      "duplicate_faces": true,
+      "edge_incidence_greater_than_two": true,
+      "exact_shared_dimensions_with_float_tolerance": true,
+      "integrated_end_face_exists": true,
+      "local_treatment_faces_exist": true,
+      "loose_edges": true,
+      "open_boundary_edges": true,
+      "positive_signed_volume": true,
+      "protected_negative_spaces_preserved": true,
+      "winding_mismatch_edges": true,
+      "zero_area_faces": true
+    },
+    "integrated_end_face_faces": 215272,
+    "mirror_count": 1,
+    "mirror_plane": "X=0",
+    "outer_x_extension_cm_exact": "26010/517681",
+    "protected_negative_spaces": "PASS",
+    "result": "PASS",
+    "shared_internal_treatment_grid": true,
+    "source_cells_added_or_removed_for_corner_splits": 0,
+    "source_diagonal_corner_splits": 46,
+    "source_enclosed_negative_spaces": 125,
+    "source_positive_x_cells": 123046,
+    "topology": {
+      "anomaly_samples": {
+        "overloaded_edges": [],
+        "winding_mismatch_edges": [],
+        "zero_area_faces": []
+      },
+      "bounds_max_cm": [
+        48.987213134765625,
+        22.149587631225586,
+        170.0
+      ],
+      "bounds_min_cm": [
+        -48.987213134765625,
+        -22.149587631225586,
+        0.0
+      ],
+      "center_seam_unwelded_vertices": 0,
+      "dimensions_cm": [
+        97.97442626953125,
+        44.29917526245117,
+        170.0
+      ],
+      "duplicate_faces": 0,
+      "edge_incidence_greater_than_two": 0,
+      "edges": 1637566,
+      "faces": 713042,
+      "loose_edges": 0,
+      "open_boundary_edges": 0,
+      "signed_volume_cm3": 237484.9789510657,
+      "vertices": 924152,
+      "winding_mismatch_edges": 0,
+      "zero_area_faces": 0
+    },
+    "treatment": "double rune sided",
+    "variant": "rune_side",
+    "whole_asset_rz180_count": 0
+  },
+  "date_utc": "2026-07-24T18:45:02.256685+00:00",
+  "display_name": "Siege Breaker",
+  "failed_source_geometry_inputs": 0,
+  "failed_sources": {
+    "foe_hammer": {
+      "byte_identical": true,
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_FoeHammer_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/SM_DRW_FoeHammer_Hammer_A01_DCCSource_SharedDepth_A01.blend",
+      "sha256_after": "67737a3c561cd6462af3657ea93488af76f32a5815ee0b4d5887182d14c761d4",
+      "sha256_before": "67737a3c561cd6462af3657ea93488af76f32a5815ee0b4d5887182d14c761d4"
+    },
+    "siege_breaker": {
+      "byte_identical": true,
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/SM_DRW_SiegeBreaker_Hammer_A01_DCCSource_SharedDepth_A01.blend",
+      "sha256_after": "c69b415ac3429091c6aa77d24ffcd6d88bbd0f9fc711e3862c2c7e7b51034537",
+      "sha256_before": "c69b415ac3429091c6aa77d24ffcd6d88bbd0f9fc711e3862c2c7e7b51034537"
+    }
+  },
+  "input_geometry_files": [],
+  "pre_save_validation": {
+    "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A13_R1_CenteredFaceMirrorWeld_DCCSource_A01/pre_save_validation.json",
+    "sha256": "29275df30232599467c4e56f61516dd689d923c0442dddcb431b18d699b578af"
+  },
+  "result": "PRE_SAVE_PASS",
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "schema": "AERATHEA_TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_DCC_SOURCE_A01_V1",
+  "step_13_complete": false,
+  "step_14_authority": false,
+  "treatment": "double rune sided",
+  "unreal_authority": false,
+  "variant": "rune_side"
+}

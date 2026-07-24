@@ -1,0 +1,105 @@
+{
+  "artifact_status": "proof only; PASS",
+  "asset_id": "SM_DRW_FoeHammer_Hammer_A01",
+  "asset_key": "foe_hammer",
+  "build_id": "TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01",
+  "build_manifest": {
+    "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_FoeHammer_Hammer_A01/A13_R1_CenteredFaceMirrorWeld_DCCSource_A01/build_manifest.json",
+    "sha256": "43f674b76f4e9a3b1703163cd999754a5d20399562a0a0be3127d1f4befd1f41"
+  },
+  "checks": {
+    "center_seam_unwelded_vertices_zero": true,
+    "centered_face_shift_exact": true,
+    "duplicate_faces_zero": true,
+    "edge_incidence_greater_than_two_zero": true,
+    "failed_source_geometry_inputs_zero": true,
+    "failed_sources_byte_identical": true,
+    "integrated_end_face_exists": true,
+    "loose_edges_zero": true,
+    "mirror_applied": true,
+    "mirror_plane_x0": true,
+    "mirror_vertex_pairing_complete": true,
+    "no_linked_libraries": true,
+    "object_location_zero": true,
+    "object_rotation_zero": true,
+    "object_scale_applied": true,
+    "open_boundary_edges_zero": true,
+    "positive_signed_volume": true,
+    "protected_negative_spaces_recorded": true,
+    "shared_dimensions_match": true,
+    "shared_internal_treatment_grid": true,
+    "single_welded_mesh_object": true,
+    "source_diagonal_corner_splits_exact": true,
+    "treatment_exists_on_negative_x": true,
+    "treatment_exists_on_positive_x": true,
+    "treatment_material_exists": true,
+    "whole_asset_rz180_zero": true,
+    "winding_mismatch_edges_zero": true,
+    "zero_area_faces_zero": true
+  },
+  "date_utc": "2026-07-24T18:45:47.041917+00:00",
+  "declared_contacts": "PASS",
+  "failed_checks": [],
+  "failed_source_checks": {
+    "foe_hammer": {
+      "byte_identical": true,
+      "expected_sha256": "67737a3c561cd6462af3657ea93488af76f32a5815ee0b4d5887182d14c761d4",
+      "observed_sha256": "67737a3c561cd6462af3657ea93488af76f32a5815ee0b4d5887182d14c761d4",
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_FoeHammer_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/SM_DRW_FoeHammer_Hammer_A01_DCCSource_SharedDepth_A01.blend"
+    },
+    "siege_breaker": {
+      "byte_identical": true,
+      "expected_sha256": "c69b415ac3429091c6aa77d24ffcd6d88bbd0f9fc711e3862c2c7e7b51034537",
+      "observed_sha256": "c69b415ac3429091c6aa77d24ffcd6d88bbd0f9fc711e3862c2c7e7b51034537",
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/SM_DRW_SiegeBreaker_Hammer_A01_DCCSource_SharedDepth_A01.blend"
+    }
+  },
+  "geometry_modified_by_auditor": false,
+  "protected_negative_spaces": "PASS",
+  "result": "PASS",
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "schema": "AERATHEA_TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_SAVED_FILE_AUDIT_A01_V1",
+  "source": {
+    "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_FoeHammer_Hammer_A01/A13_R1_CenteredFaceMirrorWeld_DCCSource_A01/SM_DRW_FoeHammer_Hammer_A01_DCCSource_CenteredFaceMirrorWeld_A01.blend",
+    "sha256": "bb5337f7a40b0e10ba1b29772c00177bc597fe70e36393ed0704b26054f4ff70"
+  },
+  "source_save_operator_invoked_by_auditor": false,
+  "step_13_complete": false,
+  "step_14_authority": false,
+  "topology": {
+    "bounds_max_cm": [
+      48.987213134765625,
+      22.149587631225586,
+      170.0
+    ],
+    "bounds_min_cm": [
+      -48.987213134765625,
+      -22.149587631225586,
+      0.0
+    ],
+    "center_seam_unwelded_vertices": 0,
+    "dimensions_cm": [
+      97.97442626953125,
+      44.29917526245117,
+      170.0
+    ],
+    "duplicate_faces": 0,
+    "edge_incidence_greater_than_two": 0,
+    "edges": 1637566,
+    "faces": 713042,
+    "geometry_sha256": "a7076cfb62eb229e3e996f37144517adbbdc81d594a22d1c14397828d16566ad",
+    "loose_edges": 0,
+    "missing_mirror_vertices": 0,
+    "open_boundary_edges": 0,
+    "signed_volume_cm3": 237484.9789510657,
+    "vertices": 924152,
+    "winding_mismatch_edges": 0,
+    "zero_area_faces": 0
+  },
+  "treatment_face_counts": {
+    "negative_x": 70458,
+    "positive_x": 70458
+  },
+  "unreal_authority": false,
+  "variant": "metal_center_piece_side"
+}

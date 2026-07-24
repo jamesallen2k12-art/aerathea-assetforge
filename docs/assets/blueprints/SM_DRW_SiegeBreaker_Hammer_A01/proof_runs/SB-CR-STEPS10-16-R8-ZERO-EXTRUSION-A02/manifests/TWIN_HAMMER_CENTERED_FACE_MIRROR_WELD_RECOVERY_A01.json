@@ -1,0 +1,166 @@
+{
+  "schema": "AERATHEA_TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_RECOVERY_A01_V1",
+  "recovery_id": "TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_RECOVERY_A01",
+  "date": "2026-07-24",
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "artifact_status": "authoritative correction amendment within Flamestrike-approved fix",
+  "decision": "approved",
+  "plain_english_goal": "Raise and integrate the two end faces into each hammer head, build one clean sealed half, mirror it across the true center plane, and weld the completed halves.",
+  "assets": {
+    "siege_breaker": {
+      "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+      "local_c04_treatment": "double rune sided"
+    },
+    "foe_hammer": {
+      "asset_id": "SM_DRW_FoeHammer_Hammer_A01",
+      "local_c04_treatment": "double metal-center-piece sided"
+    }
+  },
+  "flamestrike_approval": {
+    "decision": "approved",
+    "evidence": "After the exact misalignment and required perimeter correction were explained, Flamestrike stated: I approve the fix ... make it happen.",
+    "approved_outcome": [
+      "raise and correctly align the end faces on both hammers",
+      "correct the face perimeter rather than preserving the hanging-panel error",
+      "weld each end face into the adjoining hammer body",
+      "build one correct half and mirror it instead of copying and rotating the faulty half"
+    ]
+  },
+  "governing_authority": {
+    "shared_depth_blueprint": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01.json",
+      "sha256": "efdbd8795dff2031fcde9e734868ff4c617dc37ad1e7b3743c3727daea981d58"
+    },
+    "approved_mirror_visual_contract": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A09_FULL_PIXEL_HALF_MIRROR_VISUAL_MATCH_CONTRACT.md",
+      "sha256": "294bb6c10178b9314bb011a59877f30df187728ef1e21e763a7f391aa5bc9395"
+    },
+    "approved_mirror_visual_decision": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A09_FULL_PIXEL_HALF_MIRROR_A01_FINAL_REVIEW.md",
+      "sha256": "9edfae8a31b17ed07e31e8ac0582681f06d0347463b1dcf87712fec490d3628a",
+      "reviewed_board_sha256": "63b52d3f0ebc4c10ff088f0d8a926281e2e136eaa609c2ede77cc19053f1dccf",
+      "approved_role": "visual appearance, source-pixel proportions, and X=0 mirror method"
+    },
+    "front_measurement": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_06_FRONT_MEASUREMENT_CONTRACT.json",
+      "sha256": "85f09fc89c8b73df8e6fdf47924e2251da9dda6decabe44fa3f3b2577b7708eb"
+    },
+    "component_scanlines": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/evidence/STEP_09A_COMPONENT_SCANLINES.json.gz",
+      "sha256": "396adfbaaefc8a8ea35104e5e96dfde322510fb4ce88530fbb32f7f3073b3562"
+    },
+    "source_images": {
+      "front": {
+        "path": "SourceAssets/Concepts/SiegeBreaker/siege_breaker_front_view.png",
+        "sha256": "d00bf9ffcfd4862884626fa961c5f6b4fd6cedfdff7936b2210ca2a905e57e95"
+      },
+      "back": {
+        "path": "SourceAssets/Concepts/SiegeBreaker/siege_breaker_back_view.png",
+        "sha256": "15b4633f2df4ee06115ef4a7e238f287ebece1bae514ad4005c1036a57359799"
+      },
+      "right": {
+        "path": "SourceAssets/Concepts/SiegeBreaker/siege_breaker_right_view.png",
+        "sha256": "04a1e9359d518b1dec35fe161020bd23ab9e2f8d5934f24e4184aecaa91d8330"
+      }
+    }
+  },
+  "preserved_failed_sources": {
+    "classification": "quarantined in place as Step 13-pass or downstream authority; immutable failure evidence",
+    "read_as_geometry_input": false,
+    "save_or_modify_allowed": false,
+    "siege_breaker": {
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/SM_DRW_SiegeBreaker_Hammer_A01_DCCSource_SharedDepth_A01.blend",
+      "sha256": "c69b415ac3429091c6aa77d24ffcd6d88bbd0f9fc711e3862c2c7e7b51034537"
+    },
+    "foe_hammer": {
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_FoeHammer_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/SM_DRW_FoeHammer_Hammer_A01_DCCSource_SharedDepth_A01.blend",
+      "sha256": "67737a3c561cd6462af3657ea93488af76f32a5815ee0b4d5887182d14c761d4"
+    }
+  },
+  "proven_alignment_evidence": {
+    "shared_body_z_cm_exact": {
+      "minimum": "114070/1063",
+      "maximum": "178500/1063",
+      "midpoint": "146285/1063"
+    },
+    "unshifted_local_c04_z_cm_exact": {
+      "minimum": "51935/548",
+      "maximum": "86785/548",
+      "midpoint": "69360/548"
+    },
+    "end_face_height_cm_exact": "17425/274",
+    "shared_body_height_cm_exact": "64430/1063",
+    "height_excess_cm_decimal": "2.983413558926",
+    "centered_positive_z_translation_cm_exact": "1608625/145631",
+    "centered_positive_z_translation_cm_decimal": "11.045896821419",
+    "shifted_local_c04_z_cm_exact": {
+      "minimum": "61641405/582524",
+      "maximum": "98686955/582524"
+    },
+    "even_perimeter_excess_above_and_below_shared_body_cm_decimal": "1.491706779463",
+    "decision": "Center the end-face treatment vertically on the approved shared head. Preserve its source scale, apply only the exact positive-Z translation, and let the welded shared-body perimeter control containment."
+  },
+  "superseded_rules": {
+    "old_c04_world_z_formula": "Z=(1262-y)*85/548",
+    "replacement_c04_world_z_formula": "Z=(1262-y)*85/548+1608625/145631",
+    "old_completion": "whole-asset Rz180",
+    "replacement_completion": "reflect the sealed positive-X half across X=0, merge the center seam, and weld",
+    "old_disconnected_end_face": "forbidden",
+    "local_treatment_scale_change": "forbidden",
+    "local_treatment_containment": "The welded shared strike-face perimeter owns the outer boundary. Local C04 evidence outside that perimeter is clipped only by the welded containment boundary; it may not enlarge the shared body."
+  },
+  "construction_rule": {
+    "fresh_only": true,
+    "one_positive_x_half": true,
+    "mirror_plane": "X=0",
+    "mirror_transform": "(X,Y,Z)->(-X,Y,Z)",
+    "whole_asset_rz180_count": 0,
+    "mirror_count": 1,
+    "center_seam_join_and_weld_required": true,
+    "strike_end_face_integrated_into_head_solid": true,
+    "separate_floating_or_hanging_end_panel_allowed": false,
+    "local_c04_role": "source-owned local surface treatment on the integrated strike face; not a separate global body or depth owner",
+    "shared_dimensions_xyz_cm_exact": [
+      "50719500/517681",
+      "6644212/149985",
+      "170/1"
+    ],
+    "cross_asset_geometry_difference_allowed": "local C04 treatment only"
+  },
+  "mandatory_pre_save_and_independent_saved_file_gates": {
+    "open_boundary_edges": 0,
+    "edge_incidence_greater_than_two": 0,
+    "winding_mismatch_edges": 0,
+    "loose_edges": 0,
+    "zero_area_faces": 0,
+    "duplicate_faces": 0,
+    "center_seam_unwelded_vertices": 0,
+    "source_hashes_unchanged": true,
+    "cross_asset_xyz_difference_cm": [
+      0,
+      0,
+      0
+    ],
+    "declared_contacts": "PASS",
+    "protected_negative_spaces": "PASS"
+  },
+  "required_review_outputs": {
+    "one_corrected_board_per_hammer": true,
+    "matched_normal_and_wire_or_topology_view": true,
+    "open_visibly": true,
+    "stop_for_flamestrike_review": true
+  },
+  "explicit_exclusions": [
+    "modify or resave either failed source",
+    "read geometry from either failed source",
+    "repair forward the failed surface-patch assembly",
+    "use whole-asset Rz180",
+    "stretch or normalize the local C04 treatment",
+    "UV or texture production",
+    "LOD or collision",
+    "FBX or other export",
+    "Unreal work",
+    "Step 14 advancement",
+    "DCC game-ready candidate or Fully game-ready classification"
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "artifact_status": "proof only; PASS",
+  "assets": {
+    "foe_hammer": {
+      "asset_id": "SM_DRW_FoeHammer_Hammer_A01",
+      "checks": {
+        "center_seam_unwelded_vertices_zero": true,
+        "centered_face_shift_exact": true,
+        "duplicate_faces_zero": true,
+        "edge_incidence_greater_than_two_zero": true,
+        "failed_source_geometry_inputs_zero": true,
+        "failed_sources_byte_identical": true,
+        "integrated_end_face_exists": true,
+        "loose_edges_zero": true,
+        "mirror_applied": true,
+        "mirror_plane_x0": true,
+        "mirror_vertex_pairing_complete": true,
+        "no_linked_libraries": true,
+        "object_location_zero": true,
+        "object_rotation_zero": true,
+        "object_scale_applied": true,
+        "open_boundary_edges_zero": true,
+        "positive_signed_volume": true,
+        "protected_negative_spaces_recorded": true,
+        "shared_dimensions_match": true,
+        "shared_internal_treatment_grid": true,
+        "single_welded_mesh_object": true,
+        "source_diagonal_corner_splits_exact": true,
+        "treatment_exists_on_negative_x": true,
+        "treatment_exists_on_positive_x": true,
+        "treatment_material_exists": true,
+        "whole_asset_rz180_zero": true,
+        "winding_mismatch_edges_zero": true,
+        "zero_area_faces_zero": true
+      },
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_FoeHammer_Hammer_A01/A13_R1_CenteredFaceMirrorWeld_DCCSource_A01/independent_saved_file_audit.json",
+      "result": "PASS",
+      "sha256": "93bb8f17b6f9bb6d821fedd994d2b15b8b2849646f40613a9285bba52cf831ab",
+      "source": {
+        "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_FoeHammer_Hammer_A01/A13_R1_CenteredFaceMirrorWeld_DCCSource_A01/SM_DRW_FoeHammer_Hammer_A01_DCCSource_CenteredFaceMirrorWeld_A01.blend",
+        "sha256": "bb5337f7a40b0e10ba1b29772c00177bc597fe70e36393ed0704b26054f4ff70"
+      },
+      "topology": {
+        "bounds_max_cm": [
+          48.987213134765625,
+          22.149587631225586,
+          170.0
+        ],
+        "bounds_min_cm": [
+          -48.987213134765625,
+          -22.149587631225586,
+          0.0
+        ],
+        "center_seam_unwelded_vertices": 0,
+        "dimensions_cm": [
+          97.97442626953125,
+          44.29917526245117,
+          170.0
+        ],
+        "duplicate_faces": 0,
+        "edge_incidence_greater_than_two": 0,
+        "edges": 1637566,
+        "faces": 713042,
+        "geometry_sha256": "a7076cfb62eb229e3e996f37144517adbbdc81d594a22d1c14397828d16566ad",
+        "loose_edges": 0,
+        "missing_mirror_vertices": 0,
+        "open_boundary_edges": 0,
+        "signed_volume_cm3": 237484.9789510657,
+        "vertices": 924152,
+        "winding_mismatch_edges": 0,
+        "zero_area_faces": 0
+      }
+    },
+    "siege_breaker": {
+      "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+      "checks": {
+        "center_seam_unwelded_vertices_zero": true,
+        "centered_face_shift_exact": true,
+        "duplicate_faces_zero": true,
+        "edge_incidence_greater_than_two_zero": true,
+        "failed_source_geometry_inputs_zero": true,
+        "failed_sources_byte_identical": true,
+        "integrated_end_face_exists": true,
+        "loose_edges_zero": true,
+        "mirror_applied": true,
+        "mirror_plane_x0": true,
+        "mirror_vertex_pairing_complete": true,
+        "no_linked_libraries": true,
+        "object_location_zero": true,
+        "object_rotation_zero": true,
+        "object_scale_applied": true,
+        "open_boundary_edges_zero": true,
+        "positive_signed_volume": true,
+        "protected_negative_spaces_recorded": true,
+        "shared_dimensions_match": true,
+        "shared_internal_treatment_grid": true,
+        "single_welded_mesh_object": true,
+        "source_diagonal_corner_splits_exact": true,
+        "treatment_exists_on_negative_x": true,
+        "treatment_exists_on_positive_x": true,
+        "treatment_material_exists": true,
+        "whole_asset_rz180_zero": true,
+        "winding_mismatch_edges_zero": true,
+        "zero_area_faces_zero": true
+      },
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A13_R1_CenteredFaceMirrorWeld_DCCSource_A01/independent_saved_file_audit.json",
+      "result": "PASS",
+      "sha256": "b1faff39a735e2c07e4f78eeff2e32090b792bbd29b0a88ef5f3f154a8772dfa",
+      "source": {
+        "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A13_R1_CenteredFaceMirrorWeld_DCCSource_A01/SM_DRW_SiegeBreaker_Hammer_A01_DCCSource_CenteredFaceMirrorWeld_A01.blend",
+        "sha256": "9808a58a57d8c9f55e9c7083bd8596f9085d59f60cc1ae27e26dd90a43e50f31"
+      },
+      "topology": {
+        "bounds_max_cm": [
+          48.987213134765625,
+          22.149587631225586,
+          170.0
+        ],
+        "bounds_min_cm": [
+          -48.987213134765625,
+          -22.149587631225586,
+          0.0
+        ],
+        "center_seam_unwelded_vertices": 0,
+        "dimensions_cm": [
+          97.97442626953125,
+          44.29917526245117,
+          170.0
+        ],
+        "duplicate_faces": 0,
+        "edge_incidence_greater_than_two": 0,
+        "edges": 1637566,
+        "faces": 713042,
+        "geometry_sha256": "a7076cfb62eb229e3e996f37144517adbbdc81d594a22d1c14397828d16566ad",
+        "loose_edges": 0,
+        "missing_mirror_vertices": 0,
+        "open_boundary_edges": 0,
+        "signed_volume_cm3": 237484.9789510657,
+        "vertices": 924152,
+        "winding_mismatch_edges": 0,
+        "zero_area_faces": 0
+      }
+    }
+  },
+  "auditor": {
+    "path": "Tools/DCC/audit_twin_hammer_centered_face_mirror_weld_a01.py",
+    "sha256": "075e33edf41699934943e24df721c2b0a070dc0c6a8df5283ef2d24a5f2f9f2e"
+  },
+  "build_id": "TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01",
+  "build_manifest": {
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01_MANIFEST.json",
+    "sha256": "2668d03fb868f989f1a4fd95c0f84cb9b772984d04a4cf72f253c636ec07192f"
+  },
+  "classification_if_pass": {
+    "SM_DRW_FoeHammer_Hammer_A01": "DCC source candidate",
+    "SM_DRW_SiegeBreaker_Hammer_A01": "DCC source candidate"
+  },
+  "cross_asset_checks": {
+    "both_center_seams_welded": true,
+    "both_open_boundary_edges_zero": true,
+    "both_saved_file_audits_pass": true,
+    "both_winding_mismatch_edges_zero": true,
+    "dimensions_bitwise_equal": true,
+    "failed_sources_byte_identical": true,
+    "geometry_sha256_equal": true
+  },
+  "date_utc": "2026-07-24T18:45:47.215616+00:00",
+  "failed_source_geometry_inputs": 0,
+  "failed_source_hashes_unchanged": true,
+  "next_gate": "corrected review rendering",
+  "observed_cross_asset_dimension_difference_cm": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "result": "PASS",
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "schema": "AERATHEA_TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01_INDEPENDENT_AUDIT_V1",
+  "shared_dimensions_cm_exact": [
+    "50719500/517681",
+    "6644212/149985",
+    "170/1"
+  ],
+  "shared_geometry_hash_equal": true,
+  "step_13_complete": false,
+  "step_14_authority": false,
+  "unreal_authority": false
+}

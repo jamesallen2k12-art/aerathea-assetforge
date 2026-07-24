@@ -1,0 +1,90 @@
+{
+  "artifact_status": "proof only; pending Flamestrike visual review",
+  "build_id": "TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01",
+  "build_manifest": {
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01_MANIFEST.json",
+    "result": "PRE_SAVE_PASS",
+    "sha256": "2668d03fb868f989f1a4fd95c0f84cb9b772984d04a4cf72f253c636ec07192f"
+  },
+  "candidate_hashes_after": {
+    "foe_hammer": "bb5337f7a40b0e10ba1b29772c00177bc597fe70e36393ed0704b26054f4ff70",
+    "siege_breaker": "9808a58a57d8c9f55e9c7083bd8596f9085d59f60cc1ae27e26dd90a43e50f31"
+  },
+  "candidate_hashes_before": {
+    "foe_hammer": "bb5337f7a40b0e10ba1b29772c00177bc597fe70e36393ed0704b26054f4ff70",
+    "siege_breaker": "9808a58a57d8c9f55e9c7083bd8596f9085d59f60cc1ae27e26dd90a43e50f31"
+  },
+  "date_utc": "2026-07-24T19:05:46.827386+00:00",
+  "failed_source_hashes_after": {
+    "foe_hammer": "67737a3c561cd6462af3657ea93488af76f32a5815ee0b4d5887182d14c761d4",
+    "siege_breaker": "c69b415ac3429091c6aa77d24ffcd6d88bbd0f9fc711e3862c2c7e7b51034537"
+  },
+  "failed_source_hashes_before": {
+    "foe_hammer": "67737a3c561cd6462af3657ea93488af76f32a5815ee0b4d5887182d14c761d4",
+    "siege_breaker": "c69b415ac3429091c6aa77d24ffcd6d88bbd0f9fc711e3862c2c7e7b51034537"
+  },
+  "flamestrike_decision": "pending",
+  "independent_audit": {
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01_INDEPENDENT_AUDIT.json",
+    "result": "PASS",
+    "sha256": "416ea044a2f28ca009423a3780302621b0e31c49cb9c9eec3dfe896e9b9da3bf"
+  },
+  "outputs": {
+    "foe_hammer": {
+      "board": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01/SM_DRW_FoeHammer_Hammer_A01_CENTERED_FACE_MIRROR_WELD_REVIEW_A01.png",
+        "sha256": "7c4a29f6ced322339354dbd36bb86e2946740e908daabbfafec0f93d72a61dc4"
+      },
+      "end": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01/SM_DRW_FoeHammer_Hammer_A01_CENTERED_FACE_MIRROR_WELD_END_FACE_A01.png",
+        "sha256": "e6666fe45fffbfb710bced242e891a271115d329aa467ed6e1c079f1f58c2229"
+      },
+      "full": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01/SM_DRW_FoeHammer_Hammer_A01_CENTERED_FACE_MIRROR_WELD_FULL_ASSET_A01.png",
+        "sha256": "15e16e737589b41cb447a7b10fc30b1da7286f3c4be1cabafac7af7abf2a3cd3"
+      },
+      "metadata": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01/SM_DRW_FoeHammer_Hammer_A01_CENTERED_FACE_MIRROR_WELD_RENDER_METADATA_A01.json",
+        "sha256": "6dfd9ef649e688d5a9e66adaeef8d63983e9b904aacc8d70291617bc0b353935"
+      },
+      "topology": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01/SM_DRW_FoeHammer_Hammer_A01_CENTERED_FACE_MIRROR_WELD_TOPOLOGY_A01.png",
+        "sha256": "c1ca5dfa7952d65b539237cbddbf60674206d78e4b14678520b753a69dcb88bc"
+      }
+    },
+    "siege_breaker": {
+      "board": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01/SM_DRW_SiegeBreaker_Hammer_A01_CENTERED_FACE_MIRROR_WELD_REVIEW_A01.png",
+        "sha256": "963b48ad87f4d1beb1368c1db23aa5588dc2d8c780fbbca1828aa2a47243b72a"
+      },
+      "end": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01/SM_DRW_SiegeBreaker_Hammer_A01_CENTERED_FACE_MIRROR_WELD_END_FACE_A01.png",
+        "sha256": "2f54a6d1bb7e27bca2248fed8c1d9f98b244904703842ce11d5d163b1a41a566"
+      },
+      "full": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01/SM_DRW_SiegeBreaker_Hammer_A01_CENTERED_FACE_MIRROR_WELD_FULL_ASSET_A01.png",
+        "sha256": "6f7bfc216813dcdae8a44fd6a8503b439cdb3c746ba7f7ac01c45c178d93f7b9"
+      },
+      "metadata": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01/SM_DRW_SiegeBreaker_Hammer_A01_CENTERED_FACE_MIRROR_WELD_RENDER_METADATA_A01.json",
+        "sha256": "05133221464fd5284cf66001aeb78aae45e45af10128c425038ec336e26ea177"
+      },
+      "topology": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01/SM_DRW_SiegeBreaker_Hammer_A01_CENTERED_FACE_MIRROR_WELD_TOPOLOGY_A01.png",
+        "sha256": "4712c9904f9d1be0ced97722e876a12a8c98deb1b87ef304df7999eccdccefcf"
+      }
+    }
+  },
+  "render_id": "TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01_REVIEW_RENDER_A01",
+  "renderer": {
+    "path": "Tools/DCC/render_twin_hammer_centered_face_mirror_weld_review_a01.py",
+    "sha256": "2f921ed99157a7c9463a9715ca4b23b2c924c7628f8f66bada7adad195266059"
+  },
+  "result": "PASS",
+  "review_root": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01",
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "schema": "AERATHEA_TWIN_HAMMER_CENTERED_FACE_REVIEW_RENDER_A01_V1",
+  "source_save_operator_invoked": false,
+  "uv_or_texture_created": false,
+  "visible_review_required": true
+}

@@ -1,0 +1,79 @@
+{
+  "active_local_treatment_faces": 140916,
+  "asset_id": "SM_DRW_FoeHammer_Hammer_A01",
+  "asset_key": "foe_hammer",
+  "centered_face_shift_cm_decimal": 11.045896821418516,
+  "centered_face_shift_cm_exact": "1608625/145631",
+  "declared_contacts": "PASS",
+  "expected_dimensions_cm_decimal": [
+    97.97442826760108,
+    44.299176584325096,
+    170.0
+  ],
+  "expected_dimensions_cm_exact": [
+    "50719500/517681",
+    "6644212/149985",
+    "170/1"
+  ],
+  "gates": {
+    "center_seam_unwelded_vertices": true,
+    "duplicate_faces": true,
+    "edge_incidence_greater_than_two": true,
+    "exact_shared_dimensions_with_float_tolerance": true,
+    "integrated_end_face_exists": true,
+    "local_treatment_faces_exist": true,
+    "loose_edges": true,
+    "open_boundary_edges": true,
+    "positive_signed_volume": true,
+    "protected_negative_spaces_preserved": true,
+    "winding_mismatch_edges": true,
+    "zero_area_faces": true
+  },
+  "integrated_end_face_faces": 215272,
+  "mirror_count": 1,
+  "mirror_plane": "X=0",
+  "outer_x_extension_cm_exact": "26010/517681",
+  "protected_negative_spaces": "PASS",
+  "result": "PASS",
+  "shared_internal_treatment_grid": true,
+  "source_cells_added_or_removed_for_corner_splits": 0,
+  "source_diagonal_corner_splits": 46,
+  "source_enclosed_negative_spaces": 125,
+  "source_positive_x_cells": 123046,
+  "topology": {
+    "anomaly_samples": {
+      "overloaded_edges": [],
+      "winding_mismatch_edges": [],
+      "zero_area_faces": []
+    },
+    "bounds_max_cm": [
+      48.987213134765625,
+      22.149587631225586,
+      170.0
+    ],
+    "bounds_min_cm": [
+      -48.987213134765625,
+      -22.149587631225586,
+      0.0
+    ],
+    "center_seam_unwelded_vertices": 0,
+    "dimensions_cm": [
+      97.97442626953125,
+      44.29917526245117,
+      170.0
+    ],
+    "duplicate_faces": 0,
+    "edge_incidence_greater_than_two": 0,
+    "edges": 1637566,
+    "faces": 713042,
+    "loose_edges": 0,
+    "open_boundary_edges": 0,
+    "signed_volume_cm3": 237484.9789510657,
+    "vertices": 924152,
+    "winding_mismatch_edges": 0,
+    "zero_area_faces": 0
+  },
+  "treatment": "double metal-center-piece sided",
+  "variant": "metal_center_piece_side",
+  "whole_asset_rz180_count": 0
+}

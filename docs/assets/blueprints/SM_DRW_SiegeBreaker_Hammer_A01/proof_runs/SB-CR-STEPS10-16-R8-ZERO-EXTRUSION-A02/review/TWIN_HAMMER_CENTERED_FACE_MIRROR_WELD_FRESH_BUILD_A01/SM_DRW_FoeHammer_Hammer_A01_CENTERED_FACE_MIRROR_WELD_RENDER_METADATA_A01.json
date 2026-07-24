@@ -1,0 +1,58 @@
+{
+  "artifact_status": "proof only; staged for internal visual inspection",
+  "asset_id": "SM_DRW_FoeHammer_Hammer_A01",
+  "asset_key": "foe_hammer",
+  "build_id": "TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01",
+  "camera_views": {
+    "full_asset": {
+      "location_cm": [
+        250.0,
+        -315.0,
+        215.0
+      ],
+      "orthographic_scale_cm": 196.0,
+      "target_cm": [
+        0.0,
+        0.0,
+        86.0
+      ]
+    },
+    "positive_x_end_face": {
+      "location_cm": [
+        320.0,
+        0.0,
+        132.0
+      ],
+      "orthographic_scale_cm": 84.0,
+      "target_cm": [
+        0.0,
+        0.0,
+        132.0
+      ]
+    },
+    "topology": "matched positive-X end-face camera; temporary face-partition palette"
+  },
+  "date_utc": "2026-07-24T19:05:23.033303+00:00",
+  "geometry_modified_in_saved_source": false,
+  "mesh_object_count": 1,
+  "outputs": {
+    "end": {
+      "filename": "SM_DRW_FoeHammer_Hammer_A01_CENTERED_FACE_MIRROR_WELD_END_FACE_A01.png",
+      "sha256": "e6666fe45fffbfb710bced242e891a271115d329aa467ed6e1c079f1f58c2229"
+    },
+    "full": {
+      "filename": "SM_DRW_FoeHammer_Hammer_A01_CENTERED_FACE_MIRROR_WELD_FULL_ASSET_A01.png",
+      "sha256": "15e16e737589b41cb447a7b10fc30b1da7286f3c4be1cabafac7af7abf2a3cd3"
+    },
+    "topology": {
+      "filename": "SM_DRW_FoeHammer_Hammer_A01_CENTERED_FACE_MIRROR_WELD_TOPOLOGY_A01.png",
+      "sha256": "c1ca5dfa7952d65b539237cbddbf60674206d78e4b14678520b753a69dcb88bc"
+    }
+  },
+  "render_id": "TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01_REVIEW_RENDER_A01",
+  "result": "PASS",
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "schema": "AERATHEA_TWIN_HAMMER_CENTERED_FACE_REVIEW_RENDER_METADATA_A01_V1",
+  "source_save_operator_invoked": false,
+  "uv_or_texture_created": false
+}

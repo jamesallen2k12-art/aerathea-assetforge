@@ -1,0 +1,313 @@
+{
+  "amendment": {
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_RECOVERY_A01.json",
+    "sha256": "4e960362ebcf27ffd3c6ed811584679d5f8ca75befcaad8286370224fe9eb3e4"
+  },
+  "artifact_status": "proof only; PASS",
+  "assumptions": [],
+  "blender_opened": false,
+  "checks": [
+    {
+      "check_id": "AMENDMENT-SCHEMA",
+      "observed": "AERATHEA_TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_RECOVERY_A01_V1",
+      "result": "PASS"
+    },
+    {
+      "check_id": "RECOVERY-ID",
+      "observed": "TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_RECOVERY_A01",
+      "result": "PASS"
+    },
+    {
+      "check_id": "RUN-ID",
+      "observed": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+      "result": "PASS"
+    },
+    {
+      "check_id": "DECISION-APPROVED",
+      "observed": "approved",
+      "result": "PASS"
+    },
+    {
+      "check_id": "FLAMESTRIKE-APPROVED",
+      "observed": "approved",
+      "result": "PASS"
+    },
+    {
+      "check_id": "HASH-SHARED_DEPTH_RECOVERY_BLUEPRINT_A01.json",
+      "observed": {
+        "expected": "efdbd8795dff2031fcde9e734868ff4c617dc37ad1e7b3743c3727daea981d58",
+        "observed": "efdbd8795dff2031fcde9e734868ff4c617dc37ad1e7b3743c3727daea981d58"
+      },
+      "result": "PASS"
+    },
+    {
+      "check_id": "HASH-A09_FULL_PIXEL_HALF_MIRROR_VISUAL_MATCH_CONTRACT.md",
+      "observed": {
+        "expected": "294bb6c10178b9314bb011a59877f30df187728ef1e21e763a7f391aa5bc9395",
+        "observed": "294bb6c10178b9314bb011a59877f30df187728ef1e21e763a7f391aa5bc9395"
+      },
+      "result": "PASS"
+    },
+    {
+      "check_id": "HASH-A09_FULL_PIXEL_HALF_MIRROR_A01_FINAL_REVIEW.md",
+      "observed": {
+        "expected": "9edfae8a31b17ed07e31e8ac0582681f06d0347463b1dcf87712fec490d3628a",
+        "observed": "9edfae8a31b17ed07e31e8ac0582681f06d0347463b1dcf87712fec490d3628a"
+      },
+      "result": "PASS"
+    },
+    {
+      "check_id": "HASH-STEP_06_FRONT_MEASUREMENT_CONTRACT.json",
+      "observed": {
+        "expected": "85f09fc89c8b73df8e6fdf47924e2251da9dda6decabe44fa3f3b2577b7708eb",
+        "observed": "85f09fc89c8b73df8e6fdf47924e2251da9dda6decabe44fa3f3b2577b7708eb"
+      },
+      "result": "PASS"
+    },
+    {
+      "check_id": "HASH-STEP_09A_COMPONENT_SCANLINES.json.gz",
+      "observed": {
+        "expected": "396adfbaaefc8a8ea35104e5e96dfde322510fb4ce88530fbb32f7f3073b3562",
+        "observed": "396adfbaaefc8a8ea35104e5e96dfde322510fb4ce88530fbb32f7f3073b3562"
+      },
+      "result": "PASS"
+    },
+    {
+      "check_id": "HASH-siege_breaker_front_view.png",
+      "observed": {
+        "expected": "d00bf9ffcfd4862884626fa961c5f6b4fd6cedfdff7936b2210ca2a905e57e95",
+        "observed": "d00bf9ffcfd4862884626fa961c5f6b4fd6cedfdff7936b2210ca2a905e57e95"
+      },
+      "result": "PASS"
+    },
+    {
+      "check_id": "HASH-siege_breaker_back_view.png",
+      "observed": {
+        "expected": "15b4633f2df4ee06115ef4a7e238f287ebece1bae514ad4005c1036a57359799",
+        "observed": "15b4633f2df4ee06115ef4a7e238f287ebece1bae514ad4005c1036a57359799"
+      },
+      "result": "PASS"
+    },
+    {
+      "check_id": "HASH-siege_breaker_right_view.png",
+      "observed": {
+        "expected": "04a1e9359d518b1dec35fe161020bd23ab9e2f8d5934f24e4184aecaa91d8330",
+        "observed": "04a1e9359d518b1dec35fe161020bd23ab9e2f8d5934f24e4184aecaa91d8330"
+      },
+      "result": "PASS"
+    },
+    {
+      "check_id": "FAILED-SOURCES-NOT-GEOMETRY-INPUT",
+      "observed": false,
+      "result": "PASS"
+    },
+    {
+      "check_id": "FAILED-SOURCES-IMMUTABLE",
+      "observed": false,
+      "result": "PASS"
+    },
+    {
+      "check_id": "FAILED-SOURCE-HASH-SIEGE_BREAKER",
+      "observed": {
+        "expected": "c69b415ac3429091c6aa77d24ffcd6d88bbd0f9fc711e3862c2c7e7b51034537",
+        "observed": "c69b415ac3429091c6aa77d24ffcd6d88bbd0f9fc711e3862c2c7e7b51034537"
+      },
+      "result": "PASS"
+    },
+    {
+      "check_id": "FAILED-SOURCE-HASH-FOE_HAMMER",
+      "observed": {
+        "expected": "67737a3c561cd6462af3657ea93488af76f32a5815ee0b4d5887182d14c761d4",
+        "observed": "67737a3c561cd6462af3657ea93488af76f32a5815ee0b4d5887182d14c761d4"
+      },
+      "result": "PASS"
+    },
+    {
+      "check_id": "CENTER-SHIFT-EXACT",
+      "observed": "1608625/145631",
+      "result": "PASS"
+    },
+    {
+      "check_id": "SHIFTED-MIN-EXACT",
+      "observed": "61641405/582524",
+      "result": "PASS"
+    },
+    {
+      "check_id": "SHIFTED-MAX-EXACT",
+      "observed": "98686955/582524",
+      "result": "PASS"
+    },
+    {
+      "check_id": "CENTERED-MIDPOINTS-EQUAL",
+      "observed": "146285/1063",
+      "result": "PASS"
+    },
+    {
+      "check_id": "NO-C04-SCALE-CHANGE",
+      "observed": "17425/274",
+      "result": "PASS"
+    },
+    {
+      "check_id": "SHIFTED-C04-WITHIN-ASSET-Z",
+      "observed": [
+        "61641405/582524",
+        "98686955/582524"
+      ],
+      "result": "PASS"
+    },
+    {
+      "check_id": "FRESH-ONLY",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "check_id": "ONE-POSITIVE-X-HALF",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "check_id": "MIRROR-PLANE-X0",
+      "observed": "X=0",
+      "result": "PASS"
+    },
+    {
+      "check_id": "MIRROR-TRANSFORM",
+      "observed": "(X,Y,Z)->(-X,Y,Z)",
+      "result": "PASS"
+    },
+    {
+      "check_id": "RZ180-FORBIDDEN",
+      "observed": 0,
+      "result": "PASS"
+    },
+    {
+      "check_id": "ONE-MIRROR",
+      "observed": 1,
+      "result": "PASS"
+    },
+    {
+      "check_id": "CENTER-SEAM-WELD",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "check_id": "INTEGRATED-END-FACE",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "check_id": "NO-FLOATING-END-PANEL",
+      "observed": false,
+      "result": "PASS"
+    },
+    {
+      "check_id": "SHARED-XYZ",
+      "observed": [
+        "50719500/517681",
+        "6644212/149985",
+        "170/1"
+      ],
+      "result": "PASS"
+    },
+    {
+      "check_id": "ZERO-GATE-OPEN_BOUNDARY_EDGES",
+      "observed": 0,
+      "result": "PASS"
+    },
+    {
+      "check_id": "ZERO-GATE-EDGE_INCIDENCE_GREATER_THAN_TWO",
+      "observed": 0,
+      "result": "PASS"
+    },
+    {
+      "check_id": "ZERO-GATE-WINDING_MISMATCH_EDGES",
+      "observed": 0,
+      "result": "PASS"
+    },
+    {
+      "check_id": "ZERO-GATE-LOOSE_EDGES",
+      "observed": 0,
+      "result": "PASS"
+    },
+    {
+      "check_id": "ZERO-GATE-ZERO_AREA_FACES",
+      "observed": 0,
+      "result": "PASS"
+    },
+    {
+      "check_id": "ZERO-GATE-DUPLICATE_FACES",
+      "observed": 0,
+      "result": "PASS"
+    },
+    {
+      "check_id": "ZERO-GATE-CENTER_SEAM_UNWELDED_VERTICES",
+      "observed": 0,
+      "result": "PASS"
+    },
+    {
+      "check_id": "SOURCE-HASH-GATE",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "check_id": "CONTACT-GATE",
+      "observed": "PASS",
+      "result": "PASS"
+    },
+    {
+      "check_id": "NEGATIVE-SPACE-GATE",
+      "observed": "PASS",
+      "result": "PASS"
+    },
+    {
+      "check_id": "EXCLUSION-MODIFY-OR-RESAVE-EITHER-FAILED-SOURCE",
+      "observed": "modify or resave either failed source",
+      "result": "PASS"
+    },
+    {
+      "check_id": "EXCLUSION-READ-GEOMETRY-FROM-EITHER-FAILED-SOURCE",
+      "observed": "read geometry from either failed source",
+      "result": "PASS"
+    },
+    {
+      "check_id": "EXCLUSION-REPAIR-FORWARD-THE-FAILED-SURFACE-PATCH-ASSEMBLY",
+      "observed": "repair forward the failed surface-patch assembly",
+      "result": "PASS"
+    },
+    {
+      "check_id": "EXCLUSION-USE-WHOLE-ASSET-RZ180",
+      "observed": "use whole-asset Rz180",
+      "result": "PASS"
+    },
+    {
+      "check_id": "EXCLUSION-UNREAL-WORK",
+      "observed": "Unreal work",
+      "result": "PASS"
+    },
+    {
+      "check_id": "EXCLUSION-STEP-14-ADVANCEMENT",
+      "observed": "Step 14 advancement",
+      "result": "PASS"
+    },
+    {
+      "check_id": "PRIOR-STATE-WAITING-FEEDBACK",
+      "observed": "step_13_technical_fail_diagnostic_render_complete_waiting_feedback",
+      "result": "PASS"
+    },
+    {
+      "check_id": "PRIOR-PRODUCTION-AUTHORITY-FALSE",
+      "observed": false,
+      "result": "PASS"
+    }
+  ],
+  "checks_failed": 0,
+  "checks_passed": 51,
+  "date_utc": "2026-07-24T18:13:59.437715+00:00",
+  "failed_sources_modified": false,
+  "geometry_created": false,
+  "next_gate": "record the approved fresh-build execution boundary",
+  "recovery_id": "TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_RECOVERY_A01",
+  "result": "PASS",
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "schema": "AERATHEA_TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_RECOVERY_A01_VALIDATION_V1"
+}

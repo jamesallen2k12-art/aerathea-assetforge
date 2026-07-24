@@ -8947,3 +8947,93 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260724-135149/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260724-135149/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 14:24:47 EDT -0400 - Before twin hammer centered-face mirror-and-weld fresh build A01
+
+- Snapshot: `Saved/ProjectRecovery/20260724-142447/`
+- Git: branch `main`, HEAD `afdb690`, status lines `562`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-142447/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-142447/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-142447/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 14:32:55 EDT -0400 - After rejected pre-save A01; before inset-grid fresh retry
+
+- Snapshot: `Saved/ProjectRecovery/20260724-143255/`
+- Git: branch `main`, HEAD `afdb690`, status lines `564`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-143255/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-143255/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-143255/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 14:39:13 EDT -0400 - After second stopped pre-save gate; before source-preserving corner-split retry
+
+- Snapshot: `Saved/ProjectRecovery/20260724-143913/`
+- Git: branch `main`, HEAD `afdb690`, status lines `564`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-143913/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-143913/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-143913/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 14:40:45 EDT -0400 - After zero-area-only pre-save stop; before stable welded-border retry
+
+- Snapshot: `Saved/ProjectRecovery/20260724-144045/`
+- Git: branch `main`, HEAD `afdb690`, status lines `564`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-144045/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-144045/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-144045/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 14:42:24 EDT -0400 - After individual PASS but cross-asset geometry-hash FAIL; before shared-grid fresh retry
+
+- Snapshot: `Saved/ProjectRecovery/20260724-144224/`
+- Git: branch `main`, HEAD `afdb690`, status lines `568`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-144224/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-144224/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-144224/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 14:44:16 EDT -0400 - Before shared internal treatment-grid twin hammer fresh build
+
+- Snapshot: `Saved/ProjectRecovery/20260724-144416/`
+- Git: branch `main`, HEAD `afdb690`, status lines `568`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-144416/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-144416/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-144416/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 14:52:54 EDT -0400 - After twin hammer paired audit PASS; before staged corrected review renders
+
+- Snapshot: `Saved/ProjectRecovery/20260724-145254/`
+- Git: branch `main`, HEAD `afdb690`, status lines `573`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-145254/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-145254/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-145254/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 14:59:49 EDT -0400 - After internally rejected clipped-camera render; before wider matched review render
+
+- Snapshot: `Saved/ProjectRecovery/20260724-145949/`
+- Git: branch `main`, HEAD `afdb690`, status lines `573`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-145949/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-145949/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-145949/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 15:10:44 EDT -0400 - Twin hammer centered-face mirror-and-weld technical PASS; two review boards open; visual decision pending
+
+- Snapshot: `Saved/ProjectRecovery/20260724-151044/`
+- Git: branch `main`, HEAD `afdb690`, status lines `577`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-151044/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-151044/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-151044/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
