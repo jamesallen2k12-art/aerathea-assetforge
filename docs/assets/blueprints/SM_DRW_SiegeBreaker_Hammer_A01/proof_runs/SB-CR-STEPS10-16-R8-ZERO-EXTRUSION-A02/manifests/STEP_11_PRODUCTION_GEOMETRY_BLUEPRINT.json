@@ -1,0 +1,3047 @@
+{
+  "algorithmic_reference_boundary": {
+    "forbidden_use": "old mesh, old coordinates, old masks, old UVs, old materials, old textures, old dimensions, or old renders",
+    "fresh_r8_measurements_required": true,
+    "permitted_use": "algorithmic sequence, direct-surface ownership, ruled closure, completion, and independent-audit structure only",
+    "reference_files": [
+      "proven_process_output",
+      "proven_process_builder",
+      "proven_process_audit"
+    ]
+  },
+  "approval": {
+    "approval_record_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_11_PRODUCTION_BLUEPRINT_A02_APPROVAL_RECORD.md",
+    "approval_record_sha256": "6e2786e5d283f0176f90f83a80493c04581a6680aab32b3214c52403382e522f",
+    "authorized_work": "document and independent audit only",
+    "decision": "approved",
+    "decision_authority": "Flamestrike",
+    "proposed_contract_sha256": "b563abfcda868f0345c65c729acee0d7d0dd9123e65544405d0139de06d64800"
+  },
+  "artifact_status": "candidate pending independent audit and Flamestrike decision",
+  "artistic_soul_review_rubric": [
+    "monumental top-heavy Dwarven great-hammer silhouette",
+    "two faceted stone strike masses remain readable",
+    "central layered diamond remains the focal point",
+    "narrow shaft remains contrasted against the massive head",
+    "grip and weighted pommel remain distinct",
+    "cold blue rune light stays restrained",
+    "no blank back, facade, carrier, copied depth face, or projection shell",
+    "protected stone/core gaps remain visibly open"
+  ],
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "authority_files": {
+    "agents": {
+      "hash_locked": true,
+      "path": "AGENTS.md",
+      "sha256": "5d2d2637a58113f0a6f5ec92e40d8bb2bda9e03fb58b4868a0d9dfbb3b57ad55"
+    },
+    "approval_record": {
+      "hash_locked": true,
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_11_PRODUCTION_BLUEPRINT_A02_APPROVAL_RECORD.md",
+      "sha256": "6e2786e5d283f0176f90f83a80493c04581a6680aab32b3214c52403382e522f"
+    },
+    "closure_amendment": {
+      "hash_locked": true,
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_STEP06A_DETERMINISTIC_CLOSURE_AMENDMENT_A01.md",
+      "sha256": "8ee99d2b5c510a540623aa4a69154b3bc0da9c7a9e846a42194a0dabe716d1b4"
+    },
+    "component_equations": {
+      "hash_locked": true,
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_STEP02_COMPONENT_EQUATION_CONTRACT_DRAFT.md",
+      "sha256": "a40d0b67d802687ac3c9ec9ad8e00a915cc1dc730ce31f3fab00b18a1837a21c"
+    },
+    "component_equations_approval": {
+      "hash_locked": true,
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_STEP02_COMPONENT_EQUATION_CONTRACT_A01_APPROVAL_RECORD.md",
+      "sha256": "8296f530d48f43b99c6de26271e3be4da0a9fd512e389c90f55b9d5208185b29"
+    },
+    "pipeline_plan": {
+      "hash_locked": true,
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/SM_DRW_SiegeBreaker_Hammer_A01_STEPS_01_16_PROOF_OF_CONCEPT_PIPELINE_PLAN.md",
+      "sha256": "53046eb839b94d9548dfc2e49471b3605a2fc882228ca5e4291db7390e584a2a"
+    },
+    "project_charter": {
+      "hash_locked": true,
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/SM_DRW_SiegeBreaker_Hammer_A01_PROJECT_CHARTER.md",
+      "sha256": "41c543aebf9bca5e5e8b970851843b6485fa17fc3473325d46a3960a9ba46f1b"
+    },
+    "proposed_contract": {
+      "hash_locked": true,
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_11_PRODUCTION_BLUEPRINT_A02_PROPOSED_CONTRACT.md",
+      "sha256": "b563abfcda868f0345c65c729acee0d7d0dd9123e65544405d0139de06d64800"
+    },
+    "proven_process_audit": {
+      "hash_locked": true,
+      "path": "Tools/DCC/audit_siegebreaker_a12_r10_a09_process_complete_rz180.py",
+      "sha256": "6db37706e87021cf1ea978091c1e7b9f30c21163a5d5bd64bb6b32919ee352e0"
+    },
+    "proven_process_builder": {
+      "hash_locked": true,
+      "path": "Tools/DCC/build_siegebreaker_a12_r10_a09_process_complete_rz180.py",
+      "sha256": "088ec22595437611e4f0e136db13b49d32ce3caaf8224c60f145f1c15153f235"
+    },
+    "proven_process_output": {
+      "hash_locked": true,
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_A09_PROCESS_COMPLETE_RZ180_A02_OUTPUT_RECORD.md",
+      "sha256": "639db9d0c565aae7b974dab6fce9fb888f1b8412c77bbb2f6046413a7dbdff52"
+    },
+    "r7_component_plan": {
+      "hash_locked": true,
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R7_COMPONENT_GEOMETRY_RECOVERY_PLAN.md",
+      "sha256": "b0b077c8d39a07e5d1ab12309e77560afa1c407fe3bb3e6272a0c4e6d568b22e"
+    },
+    "r8_execution_contract": {
+      "hash_locked": true,
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_R8_PIXEL_EXACT_STEPS01_16_A01_CONTRACT.md",
+      "sha256": "77b0339126388be01f59532cd6b79228450b61e739ebc10c2f849833fd337bd4"
+    },
+    "source_half_contract": {
+      "hash_locked": true,
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_STEP06_ONE_RZ180_SOURCE_HALF_ASSEMBLY_A01_CONTRACT.md",
+      "sha256": "eba4884b6b52178846854b59c88594fc3aa896067d868f6748d4aadd3bc4106a"
+    },
+    "step04_inventory": {
+      "hash_locked": true,
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_04_COMPONENT_AND_SOURCE_OWNERSHIP_INVENTORY.json",
+      "sha256": "1bf54f9400dc2a4d0bb972ad56a3a913b586254f09b4867542e1c9899daf8a60"
+    },
+    "step05_registration": {
+      "hash_locked": true,
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_05_PIXEL_WORLD_REGISTRATION_LOCK.json",
+      "sha256": "aed4b8d87a4a5b442c0465c9db59fa524f63797153d662e1a5e7cf90423a2446"
+    },
+    "step06_back": {
+      "hash_locked": true,
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_06_BACK_MEASUREMENT_CONTRACT.json",
+      "sha256": "817af18192b3cf3b26ac47fb460e18b82266c30ce61f993b463a36175c014fcb"
+    },
+    "step06_front": {
+      "hash_locked": true,
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_06_FRONT_MEASUREMENT_CONTRACT.json",
+      "sha256": "85f09fc89c8b73df8e6fdf47924e2251da9dda6decabe44fa3f3b2577b7708eb"
+    },
+    "step07_left": {
+      "hash_locked": true,
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_07_LEFT_MEASUREMENT_CONTRACT.json",
+      "sha256": "7d099a11fb5566059bf0caaeaa353c479a531acff78fac6a9bedbeea739eb3f1"
+    },
+    "step07_right": {
+      "hash_locked": true,
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_07_RIGHT_MEASUREMENT_CONTRACT.json",
+      "sha256": "977831e86b02148125a7e1a04024d2d114721590ebf63937bdd314d02cc427c9"
+    },
+    "step08_bottom": {
+      "hash_locked": true,
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_08_BOTTOM_MEASUREMENT_CONTRACT.json",
+      "sha256": "aea70d998dabe9f28d3ec5fb44a2d2206f8874096a3d33ee9b836074b2ede9a2"
+    },
+    "step08_top": {
+      "hash_locked": true,
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_08_TOP_MEASUREMENT_CONTRACT.json",
+      "sha256": "5925dee1ab39a0535150804a4353157b17d51fec648791774808c9c832dd8b36"
+    },
+    "step09_index": {
+      "hash_locked": true,
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_09_INTEGRATED_EXACT_MEASUREMENT_INDEX.json",
+      "sha256": "5a0a3eea8f877d55216f9efabe15b0ee1cf938e4c15a825a0e218f72ba76839a"
+    },
+    "step09_pre_geometry": {
+      "hash_locked": true,
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_09_PRE_GEOMETRY_EXACT_DATA_AUDIT.json",
+      "sha256": "260c79857fe059517b4076bcc65b538aef807a7be33a58a4a46edc32c2150fdb"
+    },
+    "step09a_authority_lock": {
+      "hash_locked": true,
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/manifests/STEP_09A_AUTHORITY_LOCK.json",
+      "sha256": "a7e07ad68e9b2737c7c70e71e9df714766a285695693e741197900e17c3a06a5"
+    },
+    "step09a_boundaries": {
+      "hash_locked": true,
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/manifests/STEP_09A_BOUNDARY_AND_CORRESPONDENCE_INDEX.json",
+      "sha256": "e190ed266753c797d4f9ec812154ff3b29f5d5d780e53e235e780c43492d0bd8"
+    },
+    "step09a_scanlines": {
+      "hash_locked": true,
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/evidence/STEP_09A_COMPONENT_SCANLINES.json.gz",
+      "sha256": "396adfbaaefc8a8ea35104e5e96dfde322510fb4ce88530fbb32f7f3073b3562"
+    },
+    "step09a_validation": {
+      "hash_locked": true,
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/manifests/STEP_09A_VALIDATION.json",
+      "sha256": "1e02aecf558145d4e440b1cdda90513fb28a0075149b1bf24f7ed3c00f7c3e60"
+    },
+    "step10_decisions": {
+      "hash_locked": true,
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_10_INTERPRETATION_DECISIONS.json",
+      "sha256": "0559b801ed3f544af82057d45f918599f07524588ff49c5ca92aefa744e467e9"
+    },
+    "step10_numeric": {
+      "hash_locked": true,
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_10_NUMERIC_SUBSTITUTION_CLARIFICATION.json",
+      "sha256": "ff2f7cb37284dc7d1416044913375f67924ec4141c22a5385b3a29541e7446b9"
+    },
+    "step11_preflight": {
+      "hash_locked": true,
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_11_SOURCE_AUTHORITY_PREFLIGHT_A02.json",
+      "sha256": "d243832e443779ae99e658e401a1985b94fa243a1a803849a50d1f31bd97eba0"
+    },
+    "step11_preflight_validation": {
+      "hash_locked": true,
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_11_VALIDATION_A02.json",
+      "sha256": "e2bf62f65612945bdd9e295295b2b970098e88d75edd21d2e8c4896d5fbcf32b"
+    },
+    "view_scale_contract": {
+      "hash_locked": true,
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_STEP02A_R8_VIEW_OWNED_SCALE_RECONCILIATION_A01_CONTRACT.md",
+      "sha256": "84da92d2bec200a646bee4297965e9cd3bcd9aac090381b4108d931d7c1f4cd7"
+    },
+    "zero_extrusion_handoff": {
+      "hash_locked": true,
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/handoffs/A12_R10_R8_ZERO_EXTRUSION_RESET_HANDOFF.md",
+      "sha256": "405d93b079c0fe52bdc443cadd085010fb64acf4cf9d078bf6e78d7e915e3ba0"
+    }
+  },
+  "candidate_variants": {
+    "metal_center_piece_side": {
+      "completed_dimensions_cm": {
+        "depth": {
+          "denominator": 274,
+          "display_decimal": "43.120437956204",
+          "numerator": 11815
+        },
+        "height": {
+          "denominator": 1,
+          "display_decimal": "170.000000000000",
+          "numerator": 170
+        },
+        "width": {
+          "denominator": 1063,
+          "display_decimal": "97.873941674506",
+          "numerator": 104040
+        }
+      },
+      "front_envelope_y_cm": {
+        "denominator": 548,
+        "display_decimal": "-21.560218978102",
+        "numerator": -11815
+      },
+      "source_half_depth_cm": {
+        "denominator": 548,
+        "display_decimal": "21.560218978102",
+        "numerator": 11815
+      },
+      "source_interval_half_open": [
+        418,
+        557
+      ],
+      "source_owner": "OWN_RIGHT_C04_METAL",
+      "strike_face_equation": "EQ_C04_METAL_SOURCE_HALF"
+    },
+    "rune_side": {
+      "completed_dimensions_cm": {
+        "depth": {
+          "denominator": 274,
+          "display_decimal": "34.434306569343",
+          "numerator": 9435
+        },
+        "height": {
+          "denominator": 1,
+          "display_decimal": "170.000000000000",
+          "numerator": 170
+        },
+        "width": {
+          "denominator": 1063,
+          "display_decimal": "97.873941674506",
+          "numerator": 104040
+        }
+      },
+      "front_envelope_y_cm": {
+        "denominator": 548,
+        "display_decimal": "-17.217153284672",
+        "numerator": -9435
+      },
+      "source_half_depth_cm": {
+        "denominator": 548,
+        "display_decimal": "17.217153284672",
+        "numerator": 9435
+      },
+      "source_interval_half_open": [
+        557,
+        668
+      ],
+      "source_owner": "OWN_RIGHT_C04_RUNE",
+      "strike_face_equation": "EQ_C04_RUNE_SOURCE_HALF"
+    }
+  },
+  "clean_replay_plan": {
+    "canonical_geometry_record": [
+      "component ID",
+      "exact rational vertex position before float serialization",
+      "face index order",
+      "normal",
+      "UV",
+      "material assignment",
+      "transform",
+      "pivot",
+      "bounds"
+    ],
+    "forced_interruption_test": "interrupt after source-half audit, resume from the verified checkpoint, and require the same final canonical result",
+    "negative_tests": [
+      "corrupted source hash",
+      "corrupted owner row",
+      "corrupted scale",
+      "corrupted rotation axis",
+      "protected-gap fill attempt",
+      "second Rz180 attempt",
+      "forbidden extrusion method",
+      "output hash mismatch"
+    ],
+    "network_access": false,
+    "no_cross_run_output_reads": true,
+    "required_equalities": [
+      "state path",
+      "canonical geometry hash",
+      "component and contact records",
+      "protected-space projection results",
+      "LOD triangle counts",
+      "collision canonical hashes",
+      "review-board composition",
+      "validation verdicts"
+    ],
+    "run_a_root": "<fresh-isolated-root>/run_a/{candidate}",
+    "run_b_root": "<fresh-isolated-root>/run_b/{candidate}"
+  },
+  "closure_and_contact_instructions": [
+    {
+      "candidate_variants": [
+        "rune_side",
+        "metal_center_piece_side"
+      ],
+      "components": [
+        "C02_STONE_LEFT",
+        "C01_C12_SHARED_CENTRAL_STRUCTURE"
+      ],
+      "creates_new_exterior_silhouette": false,
+      "duplicate_wall_created": false,
+      "equation_refs": [
+        "EQ_EXACT_OWNER_BOUNDARY",
+        "EQ_ORDERED_RULED_FACE"
+      ],
+      "extrusion_used": false,
+      "fills_protected_negative_space": false,
+      "id": "CLOSURE_C02_INNER",
+      "instruction": "Join only the approved ordered C02 inner boundary sets. Every protected run stays open; unmatched coordinates stop the later build.",
+      "measurement_refs": [
+        "MEAS_C02",
+        "MEAS_FRONT_SCALE",
+        "MEAS_AXIAL_SCALE"
+      ],
+      "method": "ordered_straight_ruled_faces",
+      "source_ownership_refs": [
+        "CORR_C02_FRONT_TOP_BOTTOM_INNER_OWNER_EDGES",
+        "FRONT_C02_INNER_OWNER_EDGE",
+        "TOP_C02_INNER_OWNER_EDGE",
+        "BOTTOM_C02_INNER_OWNER_EDGE"
+      ]
+    },
+    {
+      "candidate_variants": [
+        "rune_side",
+        "metal_center_piece_side"
+      ],
+      "components": [
+        "C03_STONE_RIGHT",
+        "C01_C12_SHARED_CENTRAL_STRUCTURE"
+      ],
+      "creates_new_exterior_silhouette": false,
+      "duplicate_wall_created": false,
+      "equation_refs": [
+        "EQ_EXACT_OWNER_BOUNDARY",
+        "EQ_ORDERED_RULED_FACE"
+      ],
+      "extrusion_used": false,
+      "fills_protected_negative_space": false,
+      "id": "CLOSURE_C03_INNER",
+      "instruction": "Join only the approved ordered C03 inner boundary sets. Every protected run stays open; unmatched coordinates stop the later build.",
+      "measurement_refs": [
+        "MEAS_C03",
+        "MEAS_FRONT_SCALE",
+        "MEAS_AXIAL_SCALE"
+      ],
+      "method": "ordered_straight_ruled_faces",
+      "source_ownership_refs": [
+        "CORR_C03_FRONT_TOP_BOTTOM_INNER_OWNER_EDGES",
+        "FRONT_C03_INNER_OWNER_EDGE",
+        "TOP_C03_INNER_OWNER_EDGE",
+        "BOTTOM_C03_INNER_OWNER_EDGE"
+      ]
+    },
+    {
+      "candidate_variants": [
+        "rune_side"
+      ],
+      "components": [
+        "C03_STONE_RIGHT",
+        "C04_STRIKE_FACE_POSITIVE_X"
+      ],
+      "creates_new_exterior_silhouette": false,
+      "duplicate_wall_created": false,
+      "equation_refs": [
+        "EQ_EXACT_OWNER_BOUNDARY",
+        "EQ_ORDERED_RULED_FACE"
+      ],
+      "extrusion_used": false,
+      "fills_protected_negative_space": false,
+      "id": "CLOSURE_C03_TO_C04_RUNE",
+      "instruction": "C04 replaces the outward C03 exterior occurrence at +X. Use one shared boundary and no strike-face backing plate.",
+      "measurement_refs": [
+        "MEAS_C03",
+        "MEAS_C04",
+        "MEAS_FRONT_WIDTH",
+        "MEAS_RUNE_DEPTH"
+      ],
+      "method": "one_common_exterior_boundary",
+      "source_ownership_refs": [
+        "OWN_FRONT_C03",
+        "OWN_TOP_C03",
+        "OWN_BOTTOM_C03",
+        "OWN_RIGHT_C04_RUNE",
+        "CORR_C04_RIGHT_CANDIDATE_FACE_EDGES"
+      ]
+    },
+    {
+      "candidate_variants": [
+        "metal_center_piece_side"
+      ],
+      "components": [
+        "C03_STONE_RIGHT",
+        "C04_STRIKE_FACE_POSITIVE_X"
+      ],
+      "creates_new_exterior_silhouette": false,
+      "duplicate_wall_created": false,
+      "equation_refs": [
+        "EQ_EXACT_OWNER_BOUNDARY",
+        "EQ_ORDERED_RULED_FACE"
+      ],
+      "extrusion_used": false,
+      "fills_protected_negative_space": false,
+      "id": "CLOSURE_C03_TO_C04_METAL",
+      "instruction": "C04 replaces the outward C03 exterior occurrence at +X. Exclude the exact C01-reserved right pixels and create no strike-face backing plate.",
+      "measurement_refs": [
+        "MEAS_C03",
+        "MEAS_C04",
+        "MEAS_FRONT_WIDTH",
+        "MEAS_METAL_DEPTH"
+      ],
+      "method": "one_common_exterior_boundary",
+      "source_ownership_refs": [
+        "OWN_FRONT_C03",
+        "OWN_TOP_C03",
+        "OWN_BOTTOM_C03",
+        "OWN_RIGHT_C04_METAL",
+        "CORR_C04_RIGHT_CANDIDATE_FACE_EDGES"
+      ]
+    },
+    {
+      "candidate_variants": [
+        "rune_side",
+        "metal_center_piece_side"
+      ],
+      "components": [
+        "C12_UPPER_HEAD_CAP_SPIRE",
+        "C01_CENTER_CORE"
+      ],
+      "creates_new_exterior_silhouette": false,
+      "duplicate_wall_created": false,
+      "equation_refs": [
+        "EQ_EXACT_OWNER_BOUNDARY",
+        "EQ_ORDERED_RULED_FACE"
+      ],
+      "extrusion_used": false,
+      "fills_protected_negative_space": false,
+      "id": "CONTACT_C12_C01",
+      "instruction": "Use the exact y=295 front contact once. C12 and C01 may share that boundary but may not carry coincident walls.",
+      "measurement_refs": [
+        "MEAS_C12",
+        "MEAS_C01"
+      ],
+      "method": "shared_boundary_no_duplicate_wall",
+      "source_ownership_refs": [
+        "FRONT_C12_RESERVED_C01_CONTACT"
+      ]
+    },
+    {
+      "candidate_variants": [
+        "rune_side",
+        "metal_center_piece_side"
+      ],
+      "components": [
+        "C01_CENTER_CORE",
+        "C06_UPPER_HAFT_CAP"
+      ],
+      "creates_new_exterior_silhouette": false,
+      "duplicate_wall_created": false,
+      "equation_refs": [
+        "EQ_EXACT_OWNER_BOUNDARY",
+        "EQ_ORDERED_RULED_FACE"
+      ],
+      "extrusion_used": false,
+      "fills_protected_negative_space": false,
+      "id": "CONTACT_C01_C06",
+      "instruction": "Use the exact y=600 adjacent owner runs once. The one-pixel run difference remains source evidence and is joined only by the approved straight boundary rule.",
+      "measurement_refs": [
+        "MEAS_C01",
+        "MEAS_C06"
+      ],
+      "method": "shared_boundary_no_duplicate_wall",
+      "source_ownership_refs": [
+        "FRONT_C01_C06_CONTACT",
+        "CORR_C01_C06_C07_FRONT_CONTACTS"
+      ]
+    },
+    {
+      "candidate_variants": [
+        "rune_side",
+        "metal_center_piece_side"
+      ],
+      "components": [
+        "C06_UPPER_HAFT_CAP",
+        "C07_HAFT"
+      ],
+      "creates_new_exterior_silhouette": false,
+      "duplicate_wall_created": false,
+      "equation_refs": [
+        "EQ_EXACT_OWNER_BOUNDARY",
+        "EQ_ORDERED_RULED_FACE"
+      ],
+      "extrusion_used": false,
+      "fills_protected_negative_space": false,
+      "id": "CONTACT_C06_C07",
+      "instruction": "Join at exact front edge y=670 and its source-derived ring. Do not add a receiver volume.",
+      "measurement_refs": [
+        "MEAS_C06",
+        "MEAS_C07"
+      ],
+      "method": "shared_ring_or_exact_ruled_connection",
+      "source_ownership_refs": [
+        "FRONT_C06_C07_CONTACT",
+        "CORR_C01_C06_C07_FRONT_CONTACTS"
+      ]
+    },
+    {
+      "candidate_variants": [
+        "rune_side",
+        "metal_center_piece_side"
+      ],
+      "components": [
+        "C07_HAFT",
+        "C07B_HAFT_TO_HANDLE_FERRULE"
+      ],
+      "creates_new_exterior_silhouette": false,
+      "duplicate_wall_created": false,
+      "equation_refs": [
+        "EQ_RADIUS_FROM_FRONT",
+        "EQ_HALF_ANNULAR_SHOULDER"
+      ],
+      "extrusion_used": false,
+      "fills_protected_negative_space": false,
+      "id": "CONTACT_C07_C07B",
+      "instruction": "At source edge y=870, use one exact planar positive-X half-annular shoulder from the two exact adjacent R8 radius records. Add no coincident wall.",
+      "measurement_refs": [
+        "MEAS_C07",
+        "MEAS_C07B"
+      ],
+      "method": "exact_planar_half_annular_shoulder",
+      "source_ownership_refs": [
+        "OWN_FRONT_C07",
+        "OWN_FRONT_C07B"
+      ]
+    },
+    {
+      "candidate_variants": [
+        "rune_side",
+        "metal_center_piece_side"
+      ],
+      "components": [
+        "C07B_HAFT_TO_HANDLE_FERRULE",
+        "C08_GRIP"
+      ],
+      "creates_new_exterior_silhouette": false,
+      "duplicate_wall_created": false,
+      "equation_refs": [
+        "EQ_RADIUS_FROM_FRONT",
+        "EQ_HALF_ANNULAR_SHOULDER"
+      ],
+      "extrusion_used": false,
+      "fills_protected_negative_space": false,
+      "id": "CONTACT_C07B_C08",
+      "instruction": "At source edge y=955, use one exact planar positive-X half-annular shoulder from the two exact adjacent R8 radius records. Add no coincident wall.",
+      "measurement_refs": [
+        "MEAS_C07B",
+        "MEAS_C08"
+      ],
+      "method": "exact_planar_half_annular_shoulder",
+      "source_ownership_refs": [
+        "OWN_FRONT_C07B",
+        "OWN_FRONT_C08"
+      ]
+    },
+    {
+      "candidate_variants": [
+        "rune_side",
+        "metal_center_piece_side"
+      ],
+      "components": [
+        "C08_GRIP",
+        "C09_LOWER_COLLAR"
+      ],
+      "creates_new_exterior_silhouette": false,
+      "duplicate_wall_created": false,
+      "equation_refs": [
+        "EQ_RADIUS_FROM_FRONT",
+        "EQ_HALF_ANNULAR_SHOULDER"
+      ],
+      "extrusion_used": false,
+      "fills_protected_negative_space": false,
+      "id": "CONTACT_C08_C09",
+      "instruction": "At source edge y=1110, use one coordinate-equal common half-ring from the two exact adjacent R8 radius records. Add no coincident wall.",
+      "measurement_refs": [
+        "MEAS_C08",
+        "MEAS_C09"
+      ],
+      "method": "coordinate_equal_common_half_ring",
+      "source_ownership_refs": [
+        "OWN_FRONT_C08",
+        "OWN_FRONT_C09"
+      ]
+    },
+    {
+      "candidate_variants": [
+        "rune_side",
+        "metal_center_piece_side"
+      ],
+      "components": [
+        "C09_LOWER_COLLAR",
+        "C10_POMMEL_BODY"
+      ],
+      "creates_new_exterior_silhouette": false,
+      "duplicate_wall_created": false,
+      "equation_refs": [
+        "EQ_RADIUS_FROM_FRONT",
+        "EQ_HALF_ANNULAR_SHOULDER"
+      ],
+      "extrusion_used": false,
+      "fills_protected_negative_space": false,
+      "id": "CONTACT_C09_C10",
+      "instruction": "At source edge y=1150, use one exact planar positive-X half-annular shoulder from the two exact adjacent R8 radius records. Add no coincident wall.",
+      "measurement_refs": [
+        "MEAS_C09",
+        "MEAS_C10"
+      ],
+      "method": "exact_planar_half_annular_shoulder",
+      "source_ownership_refs": [
+        "OWN_FRONT_C09",
+        "OWN_FRONT_C10"
+      ]
+    },
+    {
+      "candidate_variants": [
+        "rune_side",
+        "metal_center_piece_side"
+      ],
+      "components": [
+        "C10_POMMEL_BODY",
+        "C11_POMMEL_TERMINAL_CAP"
+      ],
+      "creates_new_exterior_silhouette": false,
+      "duplicate_wall_created": false,
+      "equation_refs": [
+        "EQ_RADIUS_FROM_FRONT",
+        "EQ_HALF_ANNULAR_SHOULDER"
+      ],
+      "extrusion_used": false,
+      "fills_protected_negative_space": false,
+      "id": "CONTACT_C10_C11",
+      "instruction": "At source edge y=1220, use one exact planar positive-X half-annular shoulder from the two exact adjacent R8 radius records. Add no coincident wall.",
+      "measurement_refs": [
+        "MEAS_C10",
+        "MEAS_C11"
+      ],
+      "method": "exact_planar_half_annular_shoulder",
+      "source_ownership_refs": [
+        "OWN_FRONT_C10",
+        "OWN_FRONT_C11"
+      ]
+    },
+    {
+      "candidate_variants": [
+        "rune_side",
+        "metal_center_piece_side"
+      ],
+      "components": [
+        "C11_POMMEL_TERMINAL_CAP"
+      ],
+      "creates_new_exterior_silhouette": false,
+      "duplicate_wall_created": false,
+      "equation_refs": [
+        "EQ_RADIUS_FROM_FRONT",
+        "EQ_PLANAR_HALF_CAP"
+      ],
+      "extrusion_used": false,
+      "fills_protected_negative_space": false,
+      "id": "CAP_C11_BOTTOM",
+      "instruction": "Close only the exact terminal ring from front row 1270 at world Z=0; do not extend the radius or Z range.",
+      "measurement_refs": [
+        "MEAS_C11",
+        "MEAS_OVERALL_LENGTH"
+      ],
+      "method": "exact_planar_positive_x_half_cap",
+      "source_ownership_refs": [
+        "OWN_FRONT_C11"
+      ]
+    },
+    {
+      "candidate_variants": [
+        "rune_side",
+        "metal_center_piece_side"
+      ],
+      "components": [
+        "C12_UPPER_HEAD_CAP_SPIRE"
+      ],
+      "creates_new_exterior_silhouette": false,
+      "duplicate_wall_created": false,
+      "equation_refs": [
+        "EQ_RADIUS_FROM_FRONT",
+        "EQ_PLANAR_HALF_CAP"
+      ],
+      "extrusion_used": false,
+      "fills_protected_negative_space": false,
+      "id": "CAP_C12_TOP",
+      "instruction": "Close only the exact terminal ring from front row 208 at world Z=170; do not extend the radius or Z range.",
+      "measurement_refs": [
+        "MEAS_C12",
+        "MEAS_OVERALL_LENGTH"
+      ],
+      "method": "exact_planar_positive_x_half_cap",
+      "source_ownership_refs": [
+        "OWN_FRONT_C12_FULL"
+      ]
+    },
+    {
+      "candidate_variants": [
+        "rune_side",
+        "metal_center_piece_side"
+      ],
+      "components": [
+        "C01_CENTER_CORE",
+        "C02_STONE_LEFT",
+        "C03_STONE_RIGHT",
+        "C04_STRIKE_FACE_POSITIVE_X",
+        "C06_UPPER_HAFT_CAP"
+      ],
+      "creates_new_exterior_silhouette": false,
+      "duplicate_wall_created": false,
+      "equation_refs": [
+        "EQ_EXACT_OWNER_BOUNDARY"
+      ],
+      "extrusion_used": false,
+      "fills_protected_negative_space": false,
+      "id": "GUARD_PROTECTED_NEGATIVE_SPACES",
+      "instruction": "Every approved exterior-connected protected pixel remains unoccupied in every projection. A later conflict stops before geometry is saved.",
+      "measurement_refs": [
+        "MEAS_FRONT_SCALE",
+        "MEAS_RIGHT_SCALE",
+        "MEAS_AXIAL_SCALE"
+      ],
+      "method": "no_surface_no_fill_guard",
+      "source_ownership_refs": [
+        "PROTECTED_FRONT",
+        "PROTECTED_RIGHT",
+        "PROTECTED_TOP",
+        "PROTECTED_BOTTOM"
+      ]
+    },
+    {
+      "candidate_variants": [
+        "rune_side",
+        "metal_center_piece_side"
+      ],
+      "components": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C06",
+        "C07",
+        "C07B",
+        "C08",
+        "C09",
+        "C10",
+        "C11",
+        "C12"
+      ],
+      "creates_new_exterior_silhouette": false,
+      "duplicate_wall_created": false,
+      "equation_refs": [
+        "EQ_RZ180_COMPLETION",
+        "EQ_EQUAL_COORDINATE_WELD"
+      ],
+      "extrusion_used": false,
+      "fills_protected_negative_space": false,
+      "id": "WHOLE_ASSET_RZ180",
+      "instruction": "After every source-half gate passes, apply exactly one Rz180 completion to the whole source set. Merge only coordinate-equal seam vertices.",
+      "measurement_refs": [
+        "MEAS_WORLD_FRAME",
+        "MEAS_FRONT_WIDTH",
+        "MEAS_RUNE_DEPTH",
+        "MEAS_METAL_DEPTH",
+        "MEAS_OVERALL_LENGTH"
+      ],
+      "method": "exact_single_whole_completion",
+      "source_ownership_refs": [
+        "OWN_FRONT_C01",
+        "OWN_FRONT_C02",
+        "OWN_FRONT_C03",
+        "OWN_FRONT_C06",
+        "OWN_FRONT_C07",
+        "OWN_FRONT_C07B",
+        "OWN_FRONT_C08",
+        "OWN_FRONT_C09",
+        "OWN_FRONT_C10",
+        "OWN_FRONT_C11",
+        "OWN_FRONT_C12_FULL"
+      ]
+    }
+  ],
+  "collision_pivot_export_plan": {
+    "asset_name": "SM_DRW_SiegeBreaker_Hammer_A01",
+    "asset_type": "Static Mesh Weapon Prop",
+    "collision_proxies": [
+      "UCX_SM_DRW_SiegeBreaker_Hammer_A01_Head_00",
+      "UCX_SM_DRW_SiegeBreaker_Hammer_A01_HaftGrip_00",
+      "UCX_SM_DRW_SiegeBreaker_Hammer_A01_Pommel_00"
+    ],
+    "collision_proxy_count": 3,
+    "execution_now": false,
+    "export_names": {
+      "fbx": "SM_DRW_SiegeBreaker_Hammer_A01.fbx",
+      "glb": "SM_DRW_SiegeBreaker_Hammer_A01.glb"
+    },
+    "pivot": "bottom-center terminal/pommel at world (0,0,0)",
+    "unreal_path_future": "/Game/Aerathea/Weapons/Dwarven/SiegeBreaker/"
+  },
+  "construction_order": [
+    "verify every authority hash and exact preflight gate",
+    "materialize exact evidence catalogs without changing coordinates",
+    "build one selected C04 face half and perform its one local mirror",
+    "build C01/C02/C03 visible owner surfaces; keep unresolved central axial evidence reserved and non-geometric",
+    "build C06/C07/C07B/C08/C09/C10/C11/C12 rotational source halves",
+    "create only declared shared contacts, ruled faces, shoulders, and terminal caps",
+    "prove protected spaces empty and every visible owner occurs once",
+    "apply exactly one whole-asset Rz180 and coordinate-equal weld",
+    "audit the saved candidate directly before any review render"
+  ],
+  "date": "2026-07-23",
+  "decision": "candidate_pending_independent_audit",
+  "equation_catalog": {
+    "EQ_BOTTOM_OWNER_PLANE": {
+      "authority": [
+        "component_equations",
+        "closure_amendment",
+        "step10_decisions"
+      ],
+      "formula": "P_bottom(x,y,Z_component_bottom)=((1529/2-x)*52020/517681,(539-y)*52020/517681,Z_component_bottom)",
+      "id": "EQ_BOTTOM_OWNER_PLANE",
+      "role": "exact bottom-owner underside domain for the measured source half",
+      "source_half_selector": "retain only pixel cells whose exact sample has Y<=0; the one Rz180 completion supplies the complement"
+    },
+    "EQ_BOTTOM_XY": {
+      "authority": [
+        "step05_registration",
+        "step08_bottom"
+      ],
+      "formula": "X=(1529/2-x)*52020/517681; Y=(539-y)*52020/517681",
+      "id": "EQ_BOTTOM_XY",
+      "role": "exact bottom source-edge to world X/Y mapping"
+    },
+    "EQ_C04_METAL_SOURCE_HALF": {
+      "authority": [
+        "r8_execution_contract",
+        "component_equations",
+        "step10_decisions"
+      ],
+      "formula": "P=(+52020/1063,(x-557)*85/548,(1262-y)*85/548), x in [418,557)",
+      "id": "EQ_C04_METAL_SOURCE_HALF",
+      "role": "map the metal-center-piece right owner into the negative-Y face half"
+    },
+    "EQ_C04_RUNE_SOURCE_HALF": {
+      "authority": [
+        "r8_execution_contract",
+        "component_equations",
+        "step10_decisions"
+      ],
+      "formula": "P=(+52020/1063,-(x-557)*85/548,(1262-y)*85/548), x in [557,668)",
+      "id": "EQ_C04_RUNE_SOURCE_HALF",
+      "role": "map the rune-side right owner into the negative-Y face half"
+    },
+    "EQ_CANDIDATE_AXIAL_INTERSECTION": {
+      "authority": [
+        "view_scale_contract",
+        "step10_decisions",
+        "step10_numeric"
+      ],
+      "formula": "S_compatible=S_exact_owner_cell intersect {(X,Y): -D_candidate/2<=Y<=0}; retain only nonzero-area intersections and do not move an original cell edge",
+      "id": "EQ_CANDIDATE_AXIAL_INTERSECTION",
+      "outside_classification": "exact axial source evidence outside the selected candidate depth remains comparison/color evidence and creates no geometry",
+      "role": "enforce the approved candidate-specific final depth without stretching, normalizing, or moving an axial source pixel"
+    },
+    "EQ_COLUMN_WRAP": {
+      "authority": [
+        "r8_execution_contract",
+        "component_equations"
+      ],
+      "factor": "flat-diameter-to-half-circumference=pi/2 exactly",
+      "formula": "U=(x_edge-x_left(y))/(x_right(y)-x_left(y)); theta(U)=-pi/2+pi*U",
+      "id": "EQ_COLUMN_WRAP",
+      "role": "each retained exact source column owns its proportional U interval; no source column is skipped or repeated"
+    },
+    "EQ_EQUAL_COORDINATE_WELD": {
+      "authority": [
+        "source_half_contract",
+        "step10_decisions"
+      ],
+      "formula": "merge only vertices with exactly equal canonical rational coordinates; no tolerance search or nearest-point weld",
+      "id": "EQ_EQUAL_COORDINATE_WELD",
+      "role": "prevent position change during completion"
+    },
+    "EQ_EXACT_OWNER_BOUNDARY": {
+      "authority": [
+        "closure_amendment",
+        "step09a_boundaries"
+      ],
+      "formula": "boundary edges are integer half-open cell edges incident to exactly one owner cell and one non-owner cell",
+      "id": "EQ_EXACT_OWNER_BOUNDARY",
+      "role": "derive no new contour beyond the exact owner membership"
+    },
+    "EQ_FACE_LOCAL_MIRROR": {
+      "authority": [
+        "component_equations",
+        "step10_decisions"
+      ],
+      "formula": "(X,Y,Z)->(X,-Y,Z) exactly once about Y=0",
+      "id": "EQ_FACE_LOCAL_MIRROR",
+      "role": "complete one positive-X strike face from one measured face half; weld only coordinate-equal Y=0 vertices"
+    },
+    "EQ_FRONT_OWNER_PLANE": {
+      "authority": [
+        "component_equations",
+        "step10_decisions",
+        "step10_numeric"
+      ],
+      "formula": "P_front(x,y,candidate)=((x-562)*170/1063,-D_candidate/2,(1271-y)*170/1063)",
+      "id": "EQ_FRONT_OWNER_PLANE",
+      "role": "place an exact front-owned visible domain once on the candidate front envelope; no copied depth face"
+    },
+    "EQ_FRONT_XZ": {
+      "authority": [
+        "step05_registration",
+        "step06_front"
+      ],
+      "formula": "X=(x-562)*170/1063; Z=(1271-y)*170/1063",
+      "id": "EQ_FRONT_XZ",
+      "role": "exact front source-edge to world X/Z mapping"
+    },
+    "EQ_HALF_ANNULAR_SHOULDER": {
+      "authority": [
+        "closure_amendment",
+        "step10_numeric"
+      ],
+      "formula": "P(t,theta)=((1-t)*r_upper+t*r_lower)*(cos(theta),sin(theta),0)+(0,0,Z_station), 0<=t<=1, -pi/2<=theta<=pi/2",
+      "id": "EQ_HALF_ANNULAR_SHOULDER",
+      "role": "one planar station closure between exact adjacent R8 radii; omit when the radii are coordinate-equal"
+    },
+    "EQ_ORDERED_RULED_FACE": {
+      "authority": [
+        "component_equations",
+        "closure_amendment"
+      ],
+      "formula": "R(s,t)=(1-t)*A(s)+t*B(s), 0<=t<=1",
+      "id": "EQ_ORDERED_RULED_FACE",
+      "pairing_rule": "Parameterize each approved ordered pixel-edge polyline by exact cumulative source-edge length. Use the sorted union of their exact rational breakpoints; evaluate only along the existing straight source edges at each shared parameter, then join corresponding values. Never smooth, search a nearby row, or move an owner boundary.",
+      "role": "straight hidden connection inside the owning component domain; never a new exterior silhouette"
+    },
+    "EQ_PLANAR_HALF_CAP": {
+      "authority": [
+        "closure_amendment",
+        "step10_numeric"
+      ],
+      "formula": "P(t,theta)=(t*r_terminal*cos(theta),t*r_terminal*sin(theta),Z_terminal), 0<=t<=1, -pi/2<=theta<=pi/2",
+      "id": "EQ_PLANAR_HALF_CAP",
+      "role": "close only the exact C11 bottom or C12 top terminal ring"
+    },
+    "EQ_RADIUS_FROM_FRONT": {
+      "authority": [
+        "component_equations",
+        "step10_numeric",
+        "step06_front"
+      ],
+      "formula": "r(y,owner)=abs(x_positive_exact_owner_edge(y)-562)*170/1063",
+      "id": "EQ_RADIUS_FROM_FRONT",
+      "owner_selection_rule": "read the positive edge only from the surface instruction's exact source_ownership_ref; never from the whole-row outer interval when another component is present",
+      "role": "new R8 front pixel consequence; old fixed 5/42/18/11 cm component values are not used"
+    },
+    "EQ_RIGHT_YZ": {
+      "authority": [
+        "step05_registration",
+        "step07_right"
+      ],
+      "formula": "Y=(x-557)*85/548; Z=(1262-y)*85/548",
+      "id": "EQ_RIGHT_YZ",
+      "role": "exact right source-edge to world Y/Z mapping"
+    },
+    "EQ_ROTATIONAL_SURFACE": {
+      "authority": [
+        "component_equations",
+        "step10_decisions"
+      ],
+      "formula": "P(z,theta)=(r(z)*cos(theta),r(z)*sin(theta),z), -pi/2<=theta<=pi/2 for the source half",
+      "id": "EQ_ROTATIONAL_SURFACE",
+      "role": "exact source-derived positive-X half rotational surface"
+    },
+    "EQ_RZ180_COMPLETION": {
+      "authority": [
+        "r8_execution_contract",
+        "zero_extrusion_handoff",
+        "step10_decisions"
+      ],
+      "formula": "(X,Y,Z)->(-X,-Y,Z) exactly once",
+      "id": "EQ_RZ180_COMPLETION",
+      "role": "whole-asset completion after the source set is validated"
+    },
+    "EQ_TOP_OWNER_PLANE": {
+      "authority": [
+        "component_equations",
+        "closure_amendment",
+        "step10_decisions"
+      ],
+      "formula": "P_top(x,y,Z_component_top)=((x-1533/2)*52020/517681,(y-1093/2)*52020/517681,Z_component_top)",
+      "id": "EQ_TOP_OWNER_PLANE",
+      "role": "exact top-owner cap domain for the measured source half",
+      "source_half_selector": "retain only pixel cells whose exact sample has Y<=0; the one Rz180 completion supplies the complement"
+    },
+    "EQ_TOP_XY": {
+      "authority": [
+        "step05_registration",
+        "step08_top"
+      ],
+      "formula": "X=(x-1533/2)*52020/517681; Y=(y-1093/2)*52020/517681",
+      "id": "EQ_TOP_XY",
+      "role": "exact top source-edge to world X/Y mapping"
+    }
+  },
+  "evidence_catalog": {
+    "BOTTOM_C02_INNER_OWNER_EDGE": {
+      "component": "C02_STONE_LEFT",
+      "id": "BOTTOM_C02_INNER_OWNER_EDGE",
+      "json_pointer": "/boundaries/BOTTOM_C02_INNER_OWNER_EDGE",
+      "order": "source_y_ascending",
+      "record_canonical_sha256": "9bab41782616ab1b74d4c257c3d43fd5c614dbbf68ec2c541c39119f6e0edff5",
+      "sample_count": 461,
+      "source_file_key": "step09a_boundaries",
+      "view": "bottom"
+    },
+    "BOTTOM_C03_INNER_OWNER_EDGE": {
+      "component": "C03_STONE_RIGHT",
+      "id": "BOTTOM_C03_INNER_OWNER_EDGE",
+      "json_pointer": "/boundaries/BOTTOM_C03_INNER_OWNER_EDGE",
+      "order": "source_y_ascending",
+      "record_canonical_sha256": "60b59e861f09b8bbe46a2556d2224e801defadd011731e60cfc5920de303d6a5",
+      "sample_count": 461,
+      "source_file_key": "step09a_boundaries",
+      "view": "bottom"
+    },
+    "BOTTOM_STONE_SEPARATION_WITHOUT_CENTRAL_OWNER": {
+      "component": "SHARED_OR_ORDERED_BOUNDARY",
+      "id": "BOTTOM_STONE_SEPARATION_WITHOUT_CENTRAL_OWNER",
+      "json_pointer": "/boundaries/BOTTOM_STONE_SEPARATION_WITHOUT_CENTRAL_OWNER",
+      "order": "source_y_ascending",
+      "record_canonical_sha256": "590083eab50046c27371b8e9209c35fdee614600d807cb787b31e9c8a9319e32",
+      "sample_count": 0,
+      "source_file_key": "step09a_boundaries",
+      "view": "bottom"
+    },
+    "CORR_C01_C06_C07_FRONT_CONTACTS": {
+      "component": "C06_UPPER_HAFT_CAP",
+      "id": "CORR_C01_C06_C07_FRONT_CONTACTS",
+      "json_pointer": "/correspondence_groups by exact id CORR_C01_C06_C07_FRONT_CONTACTS",
+      "ordered_boundary_ids": [
+        "FRONT_C01_C06_CONTACT",
+        "FRONT_C06_C07_CONTACT"
+      ],
+      "record_canonical_sha256": "833d9ba236d867d2b36a3ea231c900dfe7502b0c986510d35e8300700178d372",
+      "scope": "exact adjacent source-row edge sets only",
+      "source_file_key": "step09a_boundaries",
+      "view": "cross_view"
+    },
+    "CORR_C02_FRONT_TOP_BOTTOM_INNER_OWNER_EDGES": {
+      "component": "C02_STONE_LEFT",
+      "id": "CORR_C02_FRONT_TOP_BOTTOM_INNER_OWNER_EDGES",
+      "json_pointer": "/correspondence_groups by exact id CORR_C02_FRONT_TOP_BOTTOM_INNER_OWNER_EDGES",
+      "ordered_boundary_ids": [
+        "FRONT_C02_INNER_OWNER_EDGE",
+        "TOP_C02_INNER_OWNER_EDGE",
+        "BOTTOM_C02_INNER_OWNER_EDGE"
+      ],
+      "record_canonical_sha256": "f53fd328164cfdc192a2067b5ec9610e5850053bc082321899c09bb4c82bb6a0",
+      "scope": "ordered exact source-edge sets only; no point pairing or surface created",
+      "source_file_key": "step09a_boundaries",
+      "view": "cross_view"
+    },
+    "CORR_C03_FRONT_TOP_BOTTOM_INNER_OWNER_EDGES": {
+      "component": "C03_STONE_RIGHT",
+      "id": "CORR_C03_FRONT_TOP_BOTTOM_INNER_OWNER_EDGES",
+      "json_pointer": "/correspondence_groups by exact id CORR_C03_FRONT_TOP_BOTTOM_INNER_OWNER_EDGES",
+      "ordered_boundary_ids": [
+        "FRONT_C03_INNER_OWNER_EDGE",
+        "TOP_C03_INNER_OWNER_EDGE",
+        "BOTTOM_C03_INNER_OWNER_EDGE"
+      ],
+      "record_canonical_sha256": "e312494e27c18cab107f71fb325b3ef09d5de09825b1a7c80f01d76eaf434e85",
+      "scope": "ordered exact source-edge sets only; no point pairing or surface created",
+      "source_file_key": "step09a_boundaries",
+      "view": "cross_view"
+    },
+    "CORR_C04_RIGHT_CANDIDATE_FACE_EDGES": {
+      "component": "C04_STRIKE_FACE_POSITIVE_X",
+      "id": "CORR_C04_RIGHT_CANDIDATE_FACE_EDGES",
+      "json_pointer": "/correspondence_groups by exact id CORR_C04_RIGHT_CANDIDATE_FACE_EDGES",
+      "ordered_boundary_ids": [
+        "RIGHT_C04_CANDIDATE_HALF_BOUNDARIES",
+        "RIGHT_C04_TOP_BOTTOM_EDGES"
+      ],
+      "record_canonical_sha256": "49ead2fb8c725e9b89f05039b374e25811d00feed14afe065dbe232e5ad26a8b",
+      "scope": "two candidate-specific ordered source-edge sets about x=557",
+      "source_file_key": "step09a_boundaries",
+      "view": "cross_view"
+    },
+    "FRONT_C01_C06_CONTACT": {
+      "component": "SHARED_OR_ORDERED_BOUNDARY",
+      "id": "FRONT_C01_C06_CONTACT",
+      "json_pointer": "/boundaries/FRONT_C01_C06_CONTACT",
+      "order": "source_x_ascending",
+      "record_canonical_sha256": "888eff7435c8c6b335a4b4278de554c78fd25781cae6aa712a0b92ffd7b126c6",
+      "sample_count": 0,
+      "source_file_key": "step09a_boundaries",
+      "view": "front"
+    },
+    "FRONT_C02_INNER_OWNER_EDGE": {
+      "component": "C02_STONE_LEFT",
+      "id": "FRONT_C02_INNER_OWNER_EDGE",
+      "json_pointer": "/boundaries/FRONT_C02_INNER_OWNER_EDGE",
+      "order": "source_y_ascending_world_z_descending",
+      "record_canonical_sha256": "346c8a68295c42dca7942abc3e20fd11df63730415e7bfc062aa09a6def7af59",
+      "sample_count": 376,
+      "source_file_key": "step09a_boundaries",
+      "view": "front"
+    },
+    "FRONT_C03_INNER_OWNER_EDGE": {
+      "component": "C03_STONE_RIGHT",
+      "id": "FRONT_C03_INNER_OWNER_EDGE",
+      "json_pointer": "/boundaries/FRONT_C03_INNER_OWNER_EDGE",
+      "order": "source_y_ascending_world_z_descending",
+      "record_canonical_sha256": "61053eacec62556d73d68d876f7f62add6de6d36ed9724fd7de2552a32abb6b2",
+      "sample_count": 376,
+      "source_file_key": "step09a_boundaries",
+      "view": "front"
+    },
+    "FRONT_C06_C07_CONTACT": {
+      "component": "SHARED_OR_ORDERED_BOUNDARY",
+      "id": "FRONT_C06_C07_CONTACT",
+      "json_pointer": "/boundaries/FRONT_C06_C07_CONTACT",
+      "order": "source_x_ascending",
+      "record_canonical_sha256": "581992195463e4fd709cfb6730ab9efd71074e71c7d75b0a9aeb465863576855",
+      "sample_count": 0,
+      "source_file_key": "step09a_boundaries",
+      "view": "front"
+    },
+    "FRONT_C12_RESERVED_C01_CONTACT": {
+      "component": "SHARED_OR_ORDERED_BOUNDARY",
+      "id": "FRONT_C12_RESERVED_C01_CONTACT",
+      "json_pointer": "/boundaries/FRONT_C12_RESERVED_C01_CONTACT",
+      "order": "source_x_ascending",
+      "record_canonical_sha256": "b33bb62721e8950a882fdc839f00be1e0a9349d191c2850dbf4ccbc96139cee9",
+      "sample_count": 0,
+      "source_file_key": "step09a_boundaries",
+      "view": "front"
+    },
+    "OWN_BOTTOM_C02": {
+      "component": "C02_STONE_LEFT",
+      "enclosed_source_pixel_count": 239,
+      "id": "OWN_BOTTOM_C02",
+      "json_pointer": "/views/bottom/component_owners/C02_STONE_LEFT",
+      "owner_pixel_count": 132685,
+      "row_count": 461,
+      "rows_canonical_sha256": "5c2b0b26980222cec9890492cae12fb4572ba41a52078e66bdf7c98e6cd81f8f",
+      "selected_capture_pixel_count": 132446,
+      "source_edge_domain": "integer half-open source pixel edges",
+      "source_file_key": "step09a_scanlines",
+      "view": "bottom"
+    },
+    "OWN_BOTTOM_C03": {
+      "component": "C03_STONE_RIGHT",
+      "enclosed_source_pixel_count": 242,
+      "id": "OWN_BOTTOM_C03",
+      "json_pointer": "/views/bottom/component_owners/C03_STONE_RIGHT",
+      "owner_pixel_count": 133227,
+      "row_count": 461,
+      "rows_canonical_sha256": "c4a4eca33b04d4e3e6047e108c9efd4b2a12159729fe7a74c8ffff32971312a6",
+      "selected_capture_pixel_count": 132985,
+      "source_edge_domain": "integer half-open source pixel edges",
+      "source_file_key": "step09a_scanlines",
+      "view": "bottom"
+    },
+    "OWN_BOTTOM_CENTRAL_RESERVED": {
+      "component": "CENTRAL_NON_STONE_RESERVED",
+      "enclosed_source_pixel_count": 451,
+      "id": "OWN_BOTTOM_CENTRAL_RESERVED",
+      "json_pointer": "/views/bottom/component_owners/CENTRAL_NON_STONE_RESERVED",
+      "owner_pixel_count": 109361,
+      "row_count": 462,
+      "rows_canonical_sha256": "5b504dcf412aff21efe7cfa1f79282908044c8469fb175d7a16dc14a6be8c976",
+      "selected_capture_pixel_count": 108910,
+      "source_edge_domain": "integer half-open source pixel edges",
+      "source_file_key": "step09a_scanlines",
+      "view": "bottom"
+    },
+    "OWN_FRONT_C01": {
+      "component": "C01_CENTER_CORE",
+      "enclosed_source_pixel_count": 1756,
+      "id": "OWN_FRONT_C01",
+      "json_pointer": "/views/front/component_owners/C01_CENTER_CORE",
+      "owner_pixel_count": 46183,
+      "row_count": 305,
+      "rows_canonical_sha256": "2ea179d74c1913fad305af15499a2ee2d9da8689a352bed09ac0cb027a4f481b",
+      "selected_capture_pixel_count": 44427,
+      "source_edge_domain": "integer half-open source pixel edges",
+      "source_file_key": "step09a_scanlines",
+      "view": "front"
+    },
+    "OWN_FRONT_C02": {
+      "component": "C02_STONE_LEFT",
+      "enclosed_source_pixel_count": 125,
+      "id": "OWN_FRONT_C02",
+      "json_pointer": "/views/front/component_owners/C02_STONE_LEFT",
+      "owner_pixel_count": 71788,
+      "row_count": 376,
+      "rows_canonical_sha256": "6e3bfc1a1e4c151c927b4e30114e809335ec8a46f6c0cdcfc429cea49fd7b06a",
+      "selected_capture_pixel_count": 71663,
+      "source_edge_domain": "integer half-open source pixel edges",
+      "source_file_key": "step09a_scanlines",
+      "view": "front"
+    },
+    "OWN_FRONT_C03": {
+      "component": "C03_STONE_RIGHT",
+      "enclosed_source_pixel_count": 128,
+      "id": "OWN_FRONT_C03",
+      "json_pointer": "/views/front/component_owners/C03_STONE_RIGHT",
+      "owner_pixel_count": 71689,
+      "row_count": 376,
+      "rows_canonical_sha256": "e4f15a7fbd929c64a6e9fee1846d4e607c8ec414971d983c8343de9d7f3912e6",
+      "selected_capture_pixel_count": 71561,
+      "source_edge_domain": "integer half-open source pixel edges",
+      "source_file_key": "step09a_scanlines",
+      "view": "front"
+    },
+    "OWN_FRONT_C06": {
+      "component": "C06_UPPER_HAFT_CAP",
+      "enclosed_source_pixel_count": 20,
+      "id": "OWN_FRONT_C06",
+      "json_pointer": "/views/front/component_owners/C06_UPPER_HAFT_CAP",
+      "owner_pixel_count": 6068,
+      "row_count": 70,
+      "rows_canonical_sha256": "d1b27310c3be814d1dab1df1707e4a6619f129bdb1deb916b366861185451fff",
+      "selected_capture_pixel_count": 6048,
+      "source_edge_domain": "integer half-open source pixel edges",
+      "source_file_key": "step09a_scanlines",
+      "view": "front"
+    },
+    "OWN_FRONT_C07": {
+      "component": "C07_HAFT",
+      "id": "OWN_FRONT_C07",
+      "json_pointer": "/row_profiles filtered by 670<=source_y<870",
+      "ownership_rule": "all exact selected front-source runs inside the approved component station interval",
+      "row_count": 200,
+      "rows_canonical_sha256": "62bc80eb77255d15f1f2e5d3da6523c65fc0758868840fa08468cb633fdbea03",
+      "selected_pixel_count": 13714,
+      "source_edge_domain": "integer half-open source pixel edges",
+      "source_file_key": "step06_front",
+      "source_rows_half_open": [
+        670,
+        870
+      ],
+      "view": "front"
+    },
+    "OWN_FRONT_C07B": {
+      "component": "C07B_HAFT_TO_HANDLE_FERRULE",
+      "id": "OWN_FRONT_C07B",
+      "json_pointer": "/row_profiles filtered by 870<=source_y<955",
+      "ownership_rule": "all exact selected front-source runs inside the approved component station interval",
+      "row_count": 85,
+      "rows_canonical_sha256": "09c83a4f798946bf7babe5aa9d3243aa0c02a91515f55aa9c1ae506e2016590a",
+      "selected_pixel_count": 6923,
+      "source_edge_domain": "integer half-open source pixel edges",
+      "source_file_key": "step06_front",
+      "source_rows_half_open": [
+        870,
+        955
+      ],
+      "view": "front"
+    },
+    "OWN_FRONT_C08": {
+      "component": "C08_GRIP",
+      "id": "OWN_FRONT_C08",
+      "json_pointer": "/row_profiles filtered by 955<=source_y<1110",
+      "ownership_rule": "all exact selected front-source runs inside the approved component station interval",
+      "row_count": 155,
+      "rows_canonical_sha256": "7c9949782c503cd55e84f685dec5f87c97a67c84c2b365a1f5a7957d599a91cb",
+      "selected_pixel_count": 10897,
+      "source_edge_domain": "integer half-open source pixel edges",
+      "source_file_key": "step06_front",
+      "source_rows_half_open": [
+        955,
+        1110
+      ],
+      "view": "front"
+    },
+    "OWN_FRONT_C09": {
+      "component": "C09_LOWER_COLLAR",
+      "id": "OWN_FRONT_C09",
+      "json_pointer": "/row_profiles filtered by 1110<=source_y<1150",
+      "ownership_rule": "all exact selected front-source runs inside the approved component station interval",
+      "row_count": 40,
+      "rows_canonical_sha256": "306f201d7ba42d09039e920d7d1dfd3bb13d3c10cbb502611da07044d73c12c3",
+      "selected_pixel_count": 3910,
+      "source_edge_domain": "integer half-open source pixel edges",
+      "source_file_key": "step06_front",
+      "source_rows_half_open": [
+        1110,
+        1150
+      ],
+      "view": "front"
+    },
+    "OWN_FRONT_C10": {
+      "component": "C10_POMMEL_BODY",
+      "id": "OWN_FRONT_C10",
+      "json_pointer": "/row_profiles filtered by 1150<=source_y<1220",
+      "ownership_rule": "all exact selected front-source runs inside the approved component station interval",
+      "row_count": 70,
+      "rows_canonical_sha256": "e50e1391ba851e678709aac6aff320cf77c67366c00d5e48a9542921e0377dd6",
+      "selected_pixel_count": 9183,
+      "source_edge_domain": "integer half-open source pixel edges",
+      "source_file_key": "step06_front",
+      "source_rows_half_open": [
+        1150,
+        1220
+      ],
+      "view": "front"
+    },
+    "OWN_FRONT_C11": {
+      "component": "C11_POMMEL_TERMINAL_CAP",
+      "id": "OWN_FRONT_C11",
+      "json_pointer": "/row_profiles filtered by 1220<=source_y<1271",
+      "ownership_rule": "all exact selected front-source runs inside the approved component station interval",
+      "row_count": 51,
+      "rows_canonical_sha256": "fa35639018b75b5247145f6fe6c212f016be03b9c82df6c1e9e0c8ab195b9110",
+      "selected_pixel_count": 2915,
+      "source_edge_domain": "integer half-open source pixel edges",
+      "source_file_key": "step06_front",
+      "source_rows_half_open": [
+        1220,
+        1271
+      ],
+      "view": "front"
+    },
+    "OWN_FRONT_C12_FULL": {
+      "component": "C12_UPPER_HEAD_CAP_SPIRE",
+      "id": "OWN_FRONT_C12_FULL",
+      "json_pointers": [
+        "/row_profiles filtered by 208<=source_y<221",
+        "/views/front/component_owners/C12_RESERVED_EXISTING_OWNER/rows"
+      ],
+      "owner_pixel_count": 6670,
+      "ownership_rule": "rows 208..220 use only exact Step 06 selected runs; rows 221..294 use only the approved Step 09A reserved C12 owner",
+      "row_count": 87,
+      "rows_canonical_sha256": "bee8d83ffebbd65709add7242ecdff376d724a6c97fdb38de3134fe161d55fef",
+      "source_edge_domain": "integer half-open source pixel edges",
+      "source_file_keys": [
+        "step06_front",
+        "step09a_scanlines"
+      ],
+      "source_rows_half_open": [
+        208,
+        295
+      ],
+      "stone_pixels_borrowed": false,
+      "view": "front"
+    },
+    "OWN_FRONT_C12_RESERVED": {
+      "component": "C12_RESERVED_EXISTING_OWNER",
+      "enclosed_source_pixel_count": 67,
+      "id": "OWN_FRONT_C12_RESERVED",
+      "json_pointer": "/views/front/component_owners/C12_RESERVED_EXISTING_OWNER",
+      "owner_pixel_count": 6463,
+      "row_count": 74,
+      "rows_canonical_sha256": "25ea677b7b1ebe1498eb2c17b38c9ba52698d871330fa66e4d9347cf6b0b4a4c",
+      "selected_capture_pixel_count": 6396,
+      "source_edge_domain": "integer half-open source pixel edges",
+      "source_file_key": "step09a_scanlines",
+      "view": "front"
+    },
+    "OWN_RIGHT_C01_RESERVED": {
+      "component": "C01_SIDE_RESERVED_IN_METAL_HALF",
+      "enclosed_source_pixel_count": 4,
+      "id": "OWN_RIGHT_C01_RESERVED",
+      "json_pointer": "/views/right/component_owners/C01_SIDE_RESERVED_IN_METAL_HALF",
+      "owner_pixel_count": 9832,
+      "row_count": 368,
+      "rows_canonical_sha256": "2876bf70a55f32e8af008bc1bf9f45688f7a4546cc6a95a2835dd15e67ed89a3",
+      "selected_capture_pixel_count": 9828,
+      "source_edge_domain": "integer half-open source pixel edges",
+      "source_file_key": "step09a_scanlines",
+      "view": "right"
+    },
+    "OWN_RIGHT_C04_METAL": {
+      "component": "C04_METAL_CENTER_PIECE_SIDE",
+      "enclosed_source_pixel_count": 236,
+      "id": "OWN_RIGHT_C04_METAL",
+      "json_pointer": "/views/right/component_owners/C04_METAL_CENTER_PIECE_SIDE",
+      "owner_pixel_count": 37508,
+      "row_count": 410,
+      "rows_canonical_sha256": "b2152bdcc1a68cacad36b6080ceb32f0e890a577f147566c902dfd667b11ce9d",
+      "selected_capture_pixel_count": 37272,
+      "source_edge_domain": "integer half-open source pixel edges",
+      "source_file_key": "step09a_scanlines",
+      "view": "right"
+    },
+    "OWN_RIGHT_C04_RUNE": {
+      "component": "C04_RUNE_SIDE",
+      "enclosed_source_pixel_count": 361,
+      "id": "OWN_RIGHT_C04_RUNE",
+      "json_pointer": "/views/right/component_owners/C04_RUNE_SIDE",
+      "owner_pixel_count": 42029,
+      "row_count": 410,
+      "rows_canonical_sha256": "b9895216ae61818cf4972f875e5116bfd1e9bd736735fbc7407ff8b0caf0c5fc",
+      "selected_capture_pixel_count": 41668,
+      "source_edge_domain": "integer half-open source pixel edges",
+      "source_file_key": "step09a_scanlines",
+      "view": "right"
+    },
+    "OWN_TOP_C02": {
+      "component": "C02_STONE_LEFT",
+      "enclosed_source_pixel_count": 286,
+      "id": "OWN_TOP_C02",
+      "json_pointer": "/views/top/component_owners/C02_STONE_LEFT",
+      "owner_pixel_count": 141087,
+      "row_count": 483,
+      "rows_canonical_sha256": "18e490b9d8c80882a7a253629b299497ef6d5404ce3489436812cb5216fa2c3c",
+      "selected_capture_pixel_count": 140801,
+      "source_edge_domain": "integer half-open source pixel edges",
+      "source_file_key": "step09a_scanlines",
+      "view": "top"
+    },
+    "OWN_TOP_C03": {
+      "component": "C03_STONE_RIGHT",
+      "enclosed_source_pixel_count": 262,
+      "id": "OWN_TOP_C03",
+      "json_pointer": "/views/top/component_owners/C03_STONE_RIGHT",
+      "owner_pixel_count": 140054,
+      "row_count": 483,
+      "rows_canonical_sha256": "a21bfc6b01d8360d959109928cec7d6662ebe655de798b94881532706e76a77c",
+      "selected_capture_pixel_count": 139792,
+      "source_edge_domain": "integer half-open source pixel edges",
+      "source_file_key": "step09a_scanlines",
+      "view": "top"
+    },
+    "OWN_TOP_CENTRAL_RESERVED": {
+      "component": "CENTRAL_NON_STONE_RESERVED",
+      "enclosed_source_pixel_count": 176,
+      "id": "OWN_TOP_CENTRAL_RESERVED",
+      "json_pointer": "/views/top/component_owners/CENTRAL_NON_STONE_RESERVED",
+      "owner_pixel_count": 103446,
+      "row_count": 446,
+      "rows_canonical_sha256": "4a82226f51f2be6e0b17a1dfd64bb13e876a190f5d388cf4c76ab57cf9fd3e91",
+      "selected_capture_pixel_count": 103270,
+      "source_edge_domain": "integer half-open source pixel edges",
+      "source_file_key": "step09a_scanlines",
+      "view": "top"
+    },
+    "PROTECTED_BOTTOM": {
+      "component": "PROTECTED_NEGATIVE_SPACE",
+      "id": "PROTECTED_BOTTOM",
+      "json_pointer": "/views/bottom/protected_negative_spaces",
+      "ownership_rule": "exterior-connected and permanently unoccupied",
+      "protected_pixel_count": 59321,
+      "record_count": 476,
+      "records_canonical_sha256": "ae51435675567f40f5cc14355f0f90443fd6575f9410c4f195ef80f128973f32",
+      "source_file_key": "step09a_scanlines",
+      "view": "bottom"
+    },
+    "PROTECTED_FRONT": {
+      "component": "PROTECTED_NEGATIVE_SPACE",
+      "id": "PROTECTED_FRONT",
+      "json_pointer": "/views/front/protected_negative_spaces",
+      "ownership_rule": "exterior-connected and permanently unoccupied",
+      "protected_pixel_count": 25405,
+      "record_count": 308,
+      "records_canonical_sha256": "ccc4c8106f8e8c956bfc16b839e86aff68faef1b8888f91c6225305326bc68a8",
+      "source_file_key": "step09a_scanlines",
+      "view": "front"
+    },
+    "PROTECTED_RIGHT": {
+      "component": "PROTECTED_NEGATIVE_SPACE",
+      "id": "PROTECTED_RIGHT",
+      "json_pointer": "/views/right/protected_negative_spaces",
+      "ownership_rule": "exterior-connected and permanently unoccupied",
+      "protected_pixel_count": 0,
+      "record_count": 0,
+      "records_canonical_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "source_file_key": "step09a_scanlines",
+      "view": "right"
+    },
+    "PROTECTED_TOP": {
+      "component": "PROTECTED_NEGATIVE_SPACE",
+      "id": "PROTECTED_TOP",
+      "json_pointer": "/views/top/protected_negative_spaces",
+      "ownership_rule": "exterior-connected and permanently unoccupied",
+      "protected_pixel_count": 71432,
+      "record_count": 463,
+      "records_canonical_sha256": "51feaef34e4b3187b056b0a007f6c85e5704f8779d42875f2fd7d251520442b1",
+      "source_file_key": "step09a_scanlines",
+      "view": "top"
+    },
+    "RIGHT_C04_CANDIDATE_HALF_BOUNDARIES": {
+      "component": "SHARED_OR_ORDERED_BOUNDARY",
+      "id": "RIGHT_C04_CANDIDATE_HALF_BOUNDARIES",
+      "json_pointer": "/boundaries/RIGHT_C04_CANDIDATE_HALF_BOUNDARIES",
+      "order": "source_y_ascending_world_z_descending",
+      "record_canonical_sha256": "c74bf1f369315085b24e8b99c032eec9838ca661dc6d90bc97c1cb9ec5d91757",
+      "sample_count": 410,
+      "source_file_key": "step09a_boundaries",
+      "view": "right"
+    },
+    "RIGHT_C04_TOP_BOTTOM_EDGES": {
+      "component": "SHARED_OR_ORDERED_BOUNDARY",
+      "id": "RIGHT_C04_TOP_BOTTOM_EDGES",
+      "json_pointer": "/boundaries/RIGHT_C04_TOP_BOTTOM_EDGES",
+      "order": "source_x_ascending",
+      "record_canonical_sha256": "45ed138508348dea6ce6d6357bdc33fc3ac8f72544aab5911d4f82f14ec1359d",
+      "sample_count": 0,
+      "source_file_key": "step09a_boundaries",
+      "view": "right"
+    },
+    "TOP_C02_INNER_OWNER_EDGE": {
+      "component": "C02_STONE_LEFT",
+      "id": "TOP_C02_INNER_OWNER_EDGE",
+      "json_pointer": "/boundaries/TOP_C02_INNER_OWNER_EDGE",
+      "order": "source_y_ascending",
+      "record_canonical_sha256": "bdde8cff1797353e4a40514511f31ebb03191be095f063486f8d351ca8a4d3ec",
+      "sample_count": 446,
+      "source_file_key": "step09a_boundaries",
+      "view": "top"
+    },
+    "TOP_C03_INNER_OWNER_EDGE": {
+      "component": "C03_STONE_RIGHT",
+      "id": "TOP_C03_INNER_OWNER_EDGE",
+      "json_pointer": "/boundaries/TOP_C03_INNER_OWNER_EDGE",
+      "order": "source_y_ascending",
+      "record_canonical_sha256": "1bf9e720afd30b221120309ca82855245d4671f3a3fc4c7e6d7bd1ad5ed27f23",
+      "sample_count": 446,
+      "source_file_key": "step09a_boundaries",
+      "view": "top"
+    },
+    "TOP_STONE_SEPARATION_WITHOUT_CENTRAL_OWNER": {
+      "component": "SHARED_OR_ORDERED_BOUNDARY",
+      "id": "TOP_STONE_SEPARATION_WITHOUT_CENTRAL_OWNER",
+      "json_pointer": "/boundaries/TOP_STONE_SEPARATION_WITHOUT_CENTRAL_OWNER",
+      "order": "source_y_ascending",
+      "record_canonical_sha256": "250f1c4a5d4ead45e243c72e72e8da4036ce4d99732a3ba156a5f98459a958af",
+      "sample_count": 37,
+      "source_file_key": "step09a_boundaries",
+      "view": "top"
+    }
+  },
+  "forbidden_methods": [
+    "Blender Extrude",
+    "Solidify",
+    "bmesh extrude operations",
+    "cube or primitive replacement",
+    "slab",
+    "copied depth face",
+    "silhouette push through depth",
+    "generalized cross-section",
+    "per-component backing wall",
+    "source resampling",
+    "nearby-row search",
+    "smoothing",
+    "averaging",
+    "per-component scale",
+    "protected-gap fill",
+    "old mesh import",
+    "repair-forward"
+  ],
+  "future_execution_contract": {
+    "entry_point_exists_now": false,
+    "event_trace_fields": [
+      "monotonic event index",
+      "UTC timestamp",
+      "state before and after",
+      "candidate variant",
+      "command and parameters",
+      "input hashes",
+      "output hashes",
+      "tool versions",
+      "check result",
+      "failure or retry reason"
+    ],
+    "future_entry_point": "python3 Tools/DCC/build_siegebreaker_r8_step12_source_geometry_a01.py --blueprint docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_11_PRODUCTION_GEOMETRY_BLUEPRINT.json --candidate {rune_side|metal_center_piece_side} --output-root <fresh-isolated-root>",
+    "illegal_transition_action": "fail closed and preserve the last verified state",
+    "missing_environment_field_action": "fail before Blender starts; do not infer a default",
+    "required_environment_lock_fields": [
+      "Blender binary path and SHA-256",
+      "Blender version",
+      "Python version",
+      "OS and architecture",
+      "locale and unit system",
+      "color-management settings",
+      "render backend and device class",
+      "dependency versions and hashes",
+      "fixed seeds",
+      "network disabled"
+    ],
+    "resume_rule": "Resume only from the last output whose canonical hash and state-transition record independently verify.",
+    "state_path": [
+      "STEP_11_BLUEPRINT_APPROVED",
+      "STEP_12_AUTHORITY_VERIFIED",
+      "STEP_12_SOURCE_HALF_BUILT",
+      "STEP_12_SOURCE_HALF_AUDITED",
+      "STEP_12_RZ180_COMPLETED",
+      "STEP_12_SAVED_CANDIDATE_AUDITED",
+      "STEP_12_REVIEW_READY"
+    ],
+    "step12_authorized_now": false
+  },
+  "input_gate": {
+    "missing_authority": [],
+    "step09a_authority": "approved",
+    "step09a_validation": "PASS 79/79",
+    "step10_validation": "PASS 50/50",
+    "step11_source_preflight": "PASS",
+    "step11_source_preflight_validation": "PASS 119/119"
+  },
+  "mandatory_step12_gates": [
+    "all authority hashes match",
+    "every constructed surface resolves to one blueprint surface instruction",
+    "every hidden face resolves to one closure instruction",
+    "no protected source pixel is occupied",
+    "no owner pixel is claimed by two visible surfaces in one view",
+    "no independent backing wall or copied depth face exists",
+    "no extrusion, slab, primitive replacement, or generalized cross-section exists",
+    "every rotational radius replays from the exact front row",
+    "each C04 variant retains its own exact completed depth",
+    "one C04 local mirror and one whole Rz180 occur, no more",
+    "only coordinate-equal seam vertices weld",
+    "pivot is world (0,0,0) and height is exactly 170 cm",
+    "LOD0 does not exceed the hard cap or the build stops for an amendment"
+  ],
+  "measurement_catalog": {
+    "MEAS_AXIAL_SCALE": {
+      "id": "MEAS_AXIAL_SCALE",
+      "json_pointer": "/view_uniform_scales_cm_per_pixel/top",
+      "source_file_key": "step05_registration",
+      "value": {
+        "scale_x": {
+          "denominator": 517681,
+          "display_decimal": "0.100486593095",
+          "numerator": 52020
+        },
+        "scale_y": {
+          "denominator": 517681,
+          "display_decimal": "0.100486593095",
+          "numerator": 52020
+        }
+      }
+    },
+    "MEAS_C01": {
+      "component": "C01_CENTER_CORE",
+      "id": "MEAS_C01",
+      "owner_id": "OWN_FRONT_C01",
+      "source_rows_half_open": [
+        295,
+        600
+      ],
+      "view": "front",
+      "world_length_cm": {
+        "denominator": 1063,
+        "display_decimal": "48.777046095955",
+        "numerator": 51850
+      },
+      "world_z_bottom_cm": {
+        "denominator": 1063,
+        "display_decimal": "107.309501411101",
+        "numerator": 114070
+      },
+      "world_z_top_cm": {
+        "denominator": 1063,
+        "display_decimal": "156.086547507056",
+        "numerator": 165920
+      }
+    },
+    "MEAS_C02": {
+      "component": "C02_STONE_LEFT",
+      "id": "MEAS_C02",
+      "owner_id": "OWN_FRONT_C02",
+      "source_rows_half_open": [
+        221,
+        600
+      ],
+      "view": "front",
+      "world_length_cm": {
+        "denominator": 1063,
+        "display_decimal": "60.611476952023",
+        "numerator": 64430
+      },
+      "world_z_bottom_cm": {
+        "denominator": 1063,
+        "display_decimal": "107.309501411101",
+        "numerator": 114070
+      },
+      "world_z_top_cm": {
+        "denominator": 1063,
+        "display_decimal": "167.920978363123",
+        "numerator": 178500
+      }
+    },
+    "MEAS_C03": {
+      "component": "C03_STONE_RIGHT",
+      "id": "MEAS_C03",
+      "owner_id": "OWN_FRONT_C03",
+      "source_rows_half_open": [
+        221,
+        600
+      ],
+      "view": "front",
+      "world_length_cm": {
+        "denominator": 1063,
+        "display_decimal": "60.611476952023",
+        "numerator": 64430
+      },
+      "world_z_bottom_cm": {
+        "denominator": 1063,
+        "display_decimal": "107.309501411101",
+        "numerator": 114070
+      },
+      "world_z_top_cm": {
+        "denominator": 1063,
+        "display_decimal": "167.920978363123",
+        "numerator": 178500
+      }
+    },
+    "MEAS_C04": {
+      "component": "C04_STRIKE_FACE_POSITIVE_X",
+      "id": "MEAS_C04",
+      "owner_id": "OWN_RIGHT_C04_RUNE/OWN_RIGHT_C04_METAL",
+      "source_rows_half_open": [
+        241,
+        651
+      ],
+      "view": "right",
+      "world_length_cm": {
+        "denominator": 274,
+        "display_decimal": "63.594890510949",
+        "numerator": 17425
+      },
+      "world_z_bottom_cm": {
+        "denominator": 548,
+        "display_decimal": "94.771897810219",
+        "numerator": 51935
+      },
+      "world_z_top_cm": {
+        "denominator": 548,
+        "display_decimal": "158.366788321168",
+        "numerator": 86785
+      }
+    },
+    "MEAS_C06": {
+      "component": "C06_UPPER_HAFT_CAP",
+      "id": "MEAS_C06",
+      "owner_id": "OWN_FRONT_C06",
+      "source_rows_half_open": [
+        600,
+        670
+      ],
+      "view": "front",
+      "world_length_cm": {
+        "denominator": 1063,
+        "display_decimal": "11.194731890875",
+        "numerator": 11900
+      },
+      "world_z_bottom_cm": {
+        "denominator": 1063,
+        "display_decimal": "96.114769520226",
+        "numerator": 102170
+      },
+      "world_z_top_cm": {
+        "denominator": 1063,
+        "display_decimal": "107.309501411101",
+        "numerator": 114070
+      }
+    },
+    "MEAS_C07": {
+      "component": "C07_HAFT",
+      "id": "MEAS_C07",
+      "owner_id": "OWN_FRONT_C07",
+      "source_rows_half_open": [
+        670,
+        870
+      ],
+      "view": "front",
+      "world_length_cm": {
+        "denominator": 1063,
+        "display_decimal": "31.984948259643",
+        "numerator": 34000
+      },
+      "world_z_bottom_cm": {
+        "denominator": 1063,
+        "display_decimal": "64.129821260583",
+        "numerator": 68170
+      },
+      "world_z_top_cm": {
+        "denominator": 1063,
+        "display_decimal": "96.114769520226",
+        "numerator": 102170
+      }
+    },
+    "MEAS_C07B": {
+      "component": "C07B_HAFT_TO_HANDLE_FERRULE",
+      "id": "MEAS_C07B",
+      "owner_id": "OWN_FRONT_C07B",
+      "source_rows_half_open": [
+        870,
+        955
+      ],
+      "view": "front",
+      "world_length_cm": {
+        "denominator": 1063,
+        "display_decimal": "13.593603010348",
+        "numerator": 14450
+      },
+      "world_z_bottom_cm": {
+        "denominator": 1063,
+        "display_decimal": "50.536218250235",
+        "numerator": 53720
+      },
+      "world_z_top_cm": {
+        "denominator": 1063,
+        "display_decimal": "64.129821260583",
+        "numerator": 68170
+      }
+    },
+    "MEAS_C08": {
+      "component": "C08_GRIP",
+      "id": "MEAS_C08",
+      "owner_id": "OWN_FRONT_C08",
+      "source_rows_half_open": [
+        955,
+        1110
+      ],
+      "view": "front",
+      "world_length_cm": {
+        "denominator": 1063,
+        "display_decimal": "24.788334901223",
+        "numerator": 26350
+      },
+      "world_z_bottom_cm": {
+        "denominator": 1063,
+        "display_decimal": "25.747883349012",
+        "numerator": 27370
+      },
+      "world_z_top_cm": {
+        "denominator": 1063,
+        "display_decimal": "50.536218250235",
+        "numerator": 53720
+      }
+    },
+    "MEAS_C09": {
+      "component": "C09_LOWER_COLLAR",
+      "id": "MEAS_C09",
+      "owner_id": "OWN_FRONT_C09",
+      "source_rows_half_open": [
+        1110,
+        1150
+      ],
+      "view": "front",
+      "world_length_cm": {
+        "denominator": 1063,
+        "display_decimal": "6.396989651929",
+        "numerator": 6800
+      },
+      "world_z_bottom_cm": {
+        "denominator": 1063,
+        "display_decimal": "19.350893697084",
+        "numerator": 20570
+      },
+      "world_z_top_cm": {
+        "denominator": 1063,
+        "display_decimal": "25.747883349012",
+        "numerator": 27370
+      }
+    },
+    "MEAS_C10": {
+      "component": "C10_POMMEL_BODY",
+      "id": "MEAS_C10",
+      "owner_id": "OWN_FRONT_C10",
+      "source_rows_half_open": [
+        1150,
+        1220
+      ],
+      "view": "front",
+      "world_length_cm": {
+        "denominator": 1063,
+        "display_decimal": "11.194731890875",
+        "numerator": 11900
+      },
+      "world_z_bottom_cm": {
+        "denominator": 1063,
+        "display_decimal": "8.156161806209",
+        "numerator": 8670
+      },
+      "world_z_top_cm": {
+        "denominator": 1063,
+        "display_decimal": "19.350893697084",
+        "numerator": 20570
+      }
+    },
+    "MEAS_C11": {
+      "component": "C11_POMMEL_TERMINAL_CAP",
+      "id": "MEAS_C11",
+      "owner_id": "OWN_FRONT_C11",
+      "source_rows_half_open": [
+        1220,
+        1271
+      ],
+      "view": "front",
+      "world_length_cm": {
+        "denominator": 1063,
+        "display_decimal": "8.156161806209",
+        "numerator": 8670
+      },
+      "world_z_bottom_cm": {
+        "denominator": 1,
+        "display_decimal": "0.000000000000",
+        "numerator": 0
+      },
+      "world_z_top_cm": {
+        "denominator": 1063,
+        "display_decimal": "8.156161806209",
+        "numerator": 8670
+      }
+    },
+    "MEAS_C12": {
+      "component": "C12_UPPER_HEAD_CAP_SPIRE",
+      "id": "MEAS_C12",
+      "owner_id": "OWN_FRONT_C12_FULL",
+      "source_rows_half_open": [
+        208,
+        295
+      ],
+      "view": "front",
+      "world_length_cm": {
+        "denominator": 1063,
+        "display_decimal": "13.913452492944",
+        "numerator": 14790
+      },
+      "world_z_bottom_cm": {
+        "denominator": 1063,
+        "display_decimal": "156.086547507056",
+        "numerator": 165920
+      },
+      "world_z_top_cm": {
+        "denominator": 1,
+        "display_decimal": "170.000000000000",
+        "numerator": 170
+      }
+    },
+    "MEAS_FRONT_SCALE": {
+      "id": "MEAS_FRONT_SCALE",
+      "json_pointer": "/view_uniform_scales_cm_per_pixel/front",
+      "source_file_key": "step05_registration",
+      "value": {
+        "scale_x": {
+          "denominator": 1063,
+          "display_decimal": "0.159924741298",
+          "numerator": 170
+        },
+        "scale_y": {
+          "denominator": 1063,
+          "display_decimal": "0.159924741298",
+          "numerator": 170
+        }
+      }
+    },
+    "MEAS_FRONT_WIDTH": {
+      "half_value_cm": {
+        "denominator": 1063,
+        "display_decimal": "48.936970837253",
+        "numerator": 52020
+      },
+      "id": "MEAS_FRONT_WIDTH",
+      "json_pointer": "/derived_dimensions_cm/width_front_owned",
+      "source_file_key": "step09_index",
+      "value": {
+        "denominator": 1063,
+        "display_decimal": "97.873941674506",
+        "numerator": 104040
+      }
+    },
+    "MEAS_METAL_DEPTH": {
+      "half_value_cm": {
+        "denominator": 548,
+        "display_decimal": "21.560218978102",
+        "numerator": 11815
+      },
+      "id": "MEAS_METAL_DEPTH",
+      "json_pointer": "/right_candidate_halves/metal_center_piece_side/completed_depth_cm",
+      "source_file_key": "step09_index",
+      "value": {
+        "denominator": 274,
+        "display_decimal": "43.120437956204",
+        "numerator": 11815
+      }
+    },
+    "MEAS_OVERALL_LENGTH": {
+      "id": "MEAS_OVERALL_LENGTH",
+      "json_pointer": "/derived_dimensions_cm/length_anchor",
+      "source_file_key": "step09_index",
+      "value": {
+        "denominator": 1,
+        "display_decimal": "170.000000000000",
+        "numerator": 170
+      }
+    },
+    "MEAS_RIGHT_SCALE": {
+      "id": "MEAS_RIGHT_SCALE",
+      "json_pointer": "/view_uniform_scales_cm_per_pixel/right",
+      "source_file_key": "step05_registration",
+      "value": {
+        "scale_x": {
+          "denominator": 548,
+          "display_decimal": "0.155109489051",
+          "numerator": 85
+        },
+        "scale_y": {
+          "denominator": 548,
+          "display_decimal": "0.155109489051",
+          "numerator": 85
+        }
+      }
+    },
+    "MEAS_RUNE_DEPTH": {
+      "half_value_cm": {
+        "denominator": 548,
+        "display_decimal": "17.217153284672",
+        "numerator": 9435
+      },
+      "id": "MEAS_RUNE_DEPTH",
+      "json_pointer": "/right_candidate_halves/rune_side/completed_depth_cm",
+      "source_file_key": "step09_index",
+      "value": {
+        "denominator": 274,
+        "display_decimal": "34.434306569343",
+        "numerator": 9435
+      }
+    },
+    "MEAS_WORLD_FRAME": {
+      "id": "MEAS_WORLD_FRAME",
+      "json_pointer": "/world_frame",
+      "source_file_key": "step05_registration",
+      "value": {
+        "assembly_axis": "world Z through right-source diamond center x=557",
+        "axes": {
+          "+X": "head right",
+          "+Y": "back",
+          "+Z": "up"
+        },
+        "pivot": "bottom-center terminal/pommel",
+        "pivot_cm": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "next_gate": "independent document audit, visible review, then a separate Flamestrike approve/revise/reject/blocked decision",
+  "numeric_precedence": {
+    "final_depth_precedence": "candidate-specific right-view completed depth controls final geometry; centered top/bottom mean is comparison and orientation evidence only",
+    "new_pixel_consequences": {
+      "centered_top_bottom_depth_cm": {
+        "final_geometry_role": "comparison_and_orientation_only",
+        "value": "47.479915237376"
+      },
+      "front_component_stations_world_z_cm": {
+        "A_begin_haft_including_coupler": "107.309501411101",
+        "C_coupler_meets_true_haft": "96.114769520226",
+        "H1_haft_meets_handle_ferrule": "64.129821260583",
+        "H8_ferrule_meets_grip": "50.536218250235",
+        "L4_pommel_meets_terminal_cap": "8.156161806209",
+        "U1_grip_meets_collar": "25.747883349012",
+        "U3_collar_meets_pommel": "19.350893697084",
+        "terminal_bottom": "0.000000000000"
+      },
+      "front_owned_width_cm": "97.873941674506",
+      "metal_center_piece_completed_depth_cm": "43.120437956204",
+      "rune_side_completed_depth_cm": "34.434306569343"
+    },
+    "older_fixed_component_values_not_carried": {
+      "grip_length_cm": "42",
+      "pommel_length_cm": "18",
+      "pommel_width_cm": "11",
+      "reason": "carrying any of these fixed values would require component-specific scaling forbidden by the newer R8 no-stretch contract",
+      "shaft_diameter_cm": "5"
+    },
+    "only_fixed_external_anchor": {
+      "name": "overall_length_cm",
+      "value": "170.000000000000"
+    }
+  },
+  "output_ceiling": {
+    "blender_opened": false,
+    "export_created": false,
+    "geometry_created": false,
+    "production_blueprint_created": true,
+    "render_created": false,
+    "step12_unlocked": false,
+    "unreal_created": false
+  },
+  "pixel_and_world_frame": {
+    "component_specific_scaling": false,
+    "coordinate_equations": {
+      "back": "X=(1123/2-x)*170/1062; Z=(1266-y)*170/1062",
+      "bottom": "X=(1529/2-x)*Saxial; Y=(539-y)*Saxial",
+      "front": "X=(x-562)*170/1063; Z=(1271-y)*170/1063",
+      "left": "Y=(577-x)*170/1096; Z=(1261-y)*170/1096",
+      "right_rotation": "Y=(x-557)*170/1096; Z=(1262-y)*170/1096",
+      "top": "X=(x-1533/2)*Saxial; Y=(y-1093/2)*Saxial"
+    },
+    "one_uniform_scale_per_view": true,
+    "pixel_convention": {
+      "coordinates": "integer half-open source pixel edges",
+      "sample_location": "(x+1/2,y+1/2)",
+      "source_origin": "upper left",
+      "source_x": "right",
+      "source_y": "down"
+    },
+    "source_resampling": false,
+    "world_frame": {
+      "assembly_axis": "world Z through right-source diamond center x=557",
+      "axes": {
+        "+X": "head right",
+        "+Y": "back",
+        "+Z": "up"
+      },
+      "pivot": "bottom-center terminal/pommel",
+      "pivot_cm": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "plain_english_goal": "Tell a later approved build exactly which measured source owns each surface and exactly which approved equation may connect it, without building anything now.",
+  "reserved_evidence": [
+    {
+      "candidate_variants": [
+        "rune_side",
+        "metal_center_piece_side"
+      ],
+      "id": "RESERVED_TOP_CENTRAL_NON_STONE",
+      "rule": "These exact pixels remain shared C01/C12 top-view color and orientation evidence. Step 09A explicitly did not decide their C01-versus-C12 split, so they create no independent plane, plate, fill, or geometry surface. Later material registration may use them only on geometry already created by a separately cited exact component instruction.",
+      "source_ownership_ref": "OWN_TOP_CENTRAL_RESERVED"
+    },
+    {
+      "candidate_variants": [
+        "rune_side",
+        "metal_center_piece_side"
+      ],
+      "id": "RESERVED_BOTTOM_CENTRAL_NON_STONE",
+      "rule": "These exact pixels remain shared central underside color and orientation evidence. Their component and Z assignment is not approved, so they create no independent plane, plate, fill, or geometry surface. Protected surroundings remain empty.",
+      "source_ownership_ref": "OWN_BOTTOM_CENTRAL_RESERVED"
+    },
+    {
+      "candidate_variants": [
+        "metal_center_piece_side"
+      ],
+      "id": "RESERVED_RIGHT_C01_METAL_VARIANT",
+      "rule": "These exact pixels remain C01 visibility/color evidence and are excluded from C04. They do not create an independent plate, receiver, backing surface, or new geometry plane.",
+      "source_ownership_ref": "OWN_RIGHT_C01_RESERVED"
+    },
+    {
+      "id": "LOCKED_BACK_NONOWNING",
+      "rule": "Back remains color/comparison evidence only; it may not replace front-owned geometry or create a copied depth face.",
+      "source_file_key": "step06_back"
+    },
+    {
+      "id": "LOCKED_LEFT_NONOWNING",
+      "rule": "Left remains comparison evidence and the final negative-X strike face comes only from the approved Rz180 completion.",
+      "source_file_key": "step07_left"
+    }
+  ],
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "schema": "AERATHEA_R8_ZERO_EXTRUSION_STEP11_PRODUCTION_BLUEPRINT_A02_V1",
+  "step": "11 production blueprint only",
+  "surface_instructions": [
+    {
+      "backing_surface_created": false,
+      "candidate_variants": [
+        "rune_side",
+        "metal_center_piece_side"
+      ],
+      "component": "C01_CENTER_CORE",
+      "equation_refs": [
+        "EQ_FRONT_XZ",
+        "EQ_FRONT_OWNER_PLANE"
+      ],
+      "extrusion_used": false,
+      "hidden_surface": false,
+      "id": "SURF_C01_FRONT",
+      "instruction": "Triangulate only the exact C01 front owner domain on the candidate front envelope. Interior pixels remain UV/color owners; only exact owner boundaries may create geometry.",
+      "measurement_refs": [
+        "MEAS_C01",
+        "MEAS_FRONT_SCALE",
+        "MEAS_RUNE_DEPTH",
+        "MEAS_METAL_DEPTH"
+      ],
+      "method": "exact_visible_owner_domain",
+      "source_ownership_refs": [
+        "OWN_FRONT_C01"
+      ],
+      "visible_occurrence_rule": "one front occurrence; the back occurrence comes only from Rz180"
+    },
+    {
+      "backing_surface_created": false,
+      "candidate_variants": [
+        "rune_side",
+        "metal_center_piece_side"
+      ],
+      "component": "C02_STONE_LEFT",
+      "equation_refs": [
+        "EQ_FRONT_XZ",
+        "EQ_FRONT_OWNER_PLANE"
+      ],
+      "extrusion_used": false,
+      "hidden_surface": false,
+      "id": "SURF_C02_FRONT",
+      "instruction": "Build the exact front-owned C02 visible domain once.",
+      "measurement_refs": [
+        "MEAS_C02",
+        "MEAS_FRONT_SCALE",
+        "MEAS_RUNE_DEPTH",
+        "MEAS_METAL_DEPTH"
+      ],
+      "method": "exact_visible_owner_domain",
+      "source_ownership_refs": [
+        "OWN_FRONT_C02"
+      ],
+      "visible_occurrence_rule": "one front occurrence; no backing wall"
+    },
+    {
+      "backing_surface_created": false,
+      "candidate_variants": [
+        "rune_side",
+        "metal_center_piece_side"
+      ],
+      "component": "C02_STONE_LEFT",
+      "equation_refs": [
+        "EQ_TOP_XY",
+        "EQ_TOP_OWNER_PLANE",
+        "EQ_CANDIDATE_AXIAL_INTERSECTION"
+      ],
+      "extrusion_used": false,
+      "hidden_surface": false,
+      "id": "SURF_C02_TOP_HALF",
+      "instruction": "Build only the exact negative-Y source-half cells from the approved top C02 owner at MEAS_C02.world_z_top_cm. Intersect each exact cell with the selected candidate depth; never stretch it. Preserve every protected gap.",
+      "measurement_refs": [
+        "MEAS_C02",
+        "MEAS_AXIAL_SCALE",
+        "MEAS_RUNE_DEPTH",
+        "MEAS_METAL_DEPTH"
+      ],
+      "method": "exact_visible_owner_domain",
+      "source_ownership_refs": [
+        "OWN_TOP_C02"
+      ],
+      "visible_occurrence_rule": "one source-half occurrence; Rz180 supplies the complement"
+    },
+    {
+      "backing_surface_created": false,
+      "candidate_variants": [
+        "rune_side",
+        "metal_center_piece_side"
+      ],
+      "component": "C02_STONE_LEFT",
+      "equation_refs": [
+        "EQ_BOTTOM_XY",
+        "EQ_BOTTOM_OWNER_PLANE",
+        "EQ_CANDIDATE_AXIAL_INTERSECTION"
+      ],
+      "extrusion_used": false,
+      "hidden_surface": false,
+      "id": "SURF_C02_BOTTOM_HALF",
+      "instruction": "Build only the exact negative-Y source-half cells from the approved bottom C02 owner at MEAS_C02.world_z_bottom_cm. Intersect each exact cell with the selected candidate depth; never stretch it. Preserve every protected gap.",
+      "measurement_refs": [
+        "MEAS_C02",
+        "MEAS_AXIAL_SCALE",
+        "MEAS_RUNE_DEPTH",
+        "MEAS_METAL_DEPTH"
+      ],
+      "method": "exact_visible_owner_domain",
+      "source_ownership_refs": [
+        "OWN_BOTTOM_C02"
+      ],
+      "visible_occurrence_rule": "one source-half occurrence; Rz180 supplies the complement"
+    },
+    {
+      "backing_surface_created": false,
+      "candidate_variants": [
+        "rune_side",
+        "metal_center_piece_side"
+      ],
+      "component": "C03_STONE_RIGHT",
+      "equation_refs": [
+        "EQ_FRONT_XZ",
+        "EQ_FRONT_OWNER_PLANE"
+      ],
+      "extrusion_used": false,
+      "hidden_surface": false,
+      "id": "SURF_C03_FRONT",
+      "instruction": "Build the exact front-owned C03 visible domain once.",
+      "measurement_refs": [
+        "MEAS_C03",
+        "MEAS_FRONT_SCALE",
+        "MEAS_RUNE_DEPTH",
+        "MEAS_METAL_DEPTH"
+      ],
+      "method": "exact_visible_owner_domain",
+      "source_ownership_refs": [
+        "OWN_FRONT_C03"
+      ],
+      "visible_occurrence_rule": "one front occurrence; no backing wall"
+    },
+    {
+      "backing_surface_created": false,
+      "candidate_variants": [
+        "rune_side",
+        "metal_center_piece_side"
+      ],
+      "component": "C03_STONE_RIGHT",
+      "equation_refs": [
+        "EQ_TOP_XY",
+        "EQ_TOP_OWNER_PLANE",
+        "EQ_CANDIDATE_AXIAL_INTERSECTION"
+      ],
+      "extrusion_used": false,
+      "hidden_surface": false,
+      "id": "SURF_C03_TOP_HALF",
+      "instruction": "Build only the exact negative-Y source-half cells from the approved top C03 owner at MEAS_C03.world_z_top_cm. Intersect each exact cell with the selected candidate depth; never stretch it. Preserve every protected gap.",
+      "measurement_refs": [
+        "MEAS_C03",
+        "MEAS_AXIAL_SCALE",
+        "MEAS_RUNE_DEPTH",
+        "MEAS_METAL_DEPTH"
+      ],
+      "method": "exact_visible_owner_domain",
+      "source_ownership_refs": [
+        "OWN_TOP_C03"
+      ],
+      "visible_occurrence_rule": "one source-half occurrence; Rz180 supplies the complement"
+    },
+    {
+      "backing_surface_created": false,
+      "candidate_variants": [
+        "rune_side",
+        "metal_center_piece_side"
+      ],
+      "component": "C03_STONE_RIGHT",
+      "equation_refs": [
+        "EQ_BOTTOM_XY",
+        "EQ_BOTTOM_OWNER_PLANE",
+        "EQ_CANDIDATE_AXIAL_INTERSECTION"
+      ],
+      "extrusion_used": false,
+      "hidden_surface": false,
+      "id": "SURF_C03_BOTTOM_HALF",
+      "instruction": "Build only the exact negative-Y source-half cells from the approved bottom C03 owner at MEAS_C03.world_z_bottom_cm. Intersect each exact cell with the selected candidate depth; never stretch it. Preserve every protected gap.",
+      "measurement_refs": [
+        "MEAS_C03",
+        "MEAS_AXIAL_SCALE",
+        "MEAS_RUNE_DEPTH",
+        "MEAS_METAL_DEPTH"
+      ],
+      "method": "exact_visible_owner_domain",
+      "source_ownership_refs": [
+        "OWN_BOTTOM_C03"
+      ],
+      "visible_occurrence_rule": "one source-half occurrence; Rz180 supplies the complement"
+    },
+    {
+      "backing_surface_created": false,
+      "candidate_variants": [
+        "rune_side"
+      ],
+      "component": "C04_STRIKE_FACE_POSITIVE_X",
+      "equation_refs": [
+        "EQ_RIGHT_YZ",
+        "EQ_C04_RUNE_SOURCE_HALF",
+        "EQ_FACE_LOCAL_MIRROR"
+      ],
+      "extrusion_used": false,
+      "hidden_surface": false,
+      "id": "SURF_C04_RUNE_FACE_HALF",
+      "instruction": "Build the rune-side owner half at +X, locally mirror it once about Y=0, and weld only the exact center edge. Do not build a plate thickness or backing face.",
+      "measurement_refs": [
+        "MEAS_C04",
+        "MEAS_FRONT_WIDTH",
+        "MEAS_RUNE_DEPTH"
+      ],
+      "method": "exact_face_half_then_local_mirror",
+      "source_ownership_refs": [
+        "OWN_RIGHT_C04_RUNE",
+        "RIGHT_C04_CANDIDATE_HALF_BOUNDARIES"
+      ],
+      "visible_occurrence_rule": "one completed positive-X strike face before whole Rz180"
+    },
+    {
+      "backing_surface_created": false,
+      "candidate_variants": [
+        "metal_center_piece_side"
+      ],
+      "component": "C04_STRIKE_FACE_POSITIVE_X",
+      "equation_refs": [
+        "EQ_RIGHT_YZ",
+        "EQ_C04_METAL_SOURCE_HALF",
+        "EQ_FACE_LOCAL_MIRROR"
+      ],
+      "extrusion_used": false,
+      "hidden_surface": false,
+      "id": "SURF_C04_METAL_FACE_HALF",
+      "instruction": "Build the metal-center-piece owner half at +X, locally mirror it once about Y=0, and weld only the exact center edge. Pixels reserved to C01 remain excluded.",
+      "measurement_refs": [
+        "MEAS_C04",
+        "MEAS_FRONT_WIDTH",
+        "MEAS_METAL_DEPTH"
+      ],
+      "method": "exact_face_half_then_local_mirror",
+      "source_ownership_refs": [
+        "OWN_RIGHT_C04_METAL",
+        "RIGHT_C04_CANDIDATE_HALF_BOUNDARIES"
+      ],
+      "visible_occurrence_rule": "one completed positive-X strike face before whole Rz180"
+    },
+    {
+      "backing_surface_created": false,
+      "candidate_variants": [
+        "rune_side",
+        "metal_center_piece_side"
+      ],
+      "component": "C06_UPPER_HAFT_CAP",
+      "equation_refs": [
+        "EQ_RADIUS_FROM_FRONT",
+        "EQ_ROTATIONAL_SURFACE",
+        "EQ_COLUMN_WRAP"
+      ],
+      "extrusion_used": false,
+      "hidden_surface": false,
+      "id": "SURF_C06_ROTATIONAL_HALF",
+      "instruction": "Use every approved C06 row and its positive exact owner edge as r(z); retain source-column U ownership without fixed old dimensions.",
+      "measurement_refs": [
+        "MEAS_C06",
+        "MEAS_FRONT_SCALE"
+      ],
+      "method": "source_radius_rotational_half",
+      "source_ownership_refs": [
+        "OWN_FRONT_C06"
+      ],
+      "visible_occurrence_rule": "one positive-X rotational half; Rz180 supplies the complement"
+    },
+    {
+      "backing_surface_created": false,
+      "candidate_variants": [
+        "rune_side",
+        "metal_center_piece_side"
+      ],
+      "component": "C07_HAFT",
+      "equation_refs": [
+        "EQ_RADIUS_FROM_FRONT",
+        "EQ_ROTATIONAL_SURFACE",
+        "EQ_COLUMN_WRAP"
+      ],
+      "extrusion_used": false,
+      "hidden_surface": false,
+      "id": "SURF_C07_ROTATIONAL_HALF",
+      "instruction": "Use the exact R8 front rows 670..869 and their new radius-by-Z consequence. The old fixed 5 cm shaft diameter is not carried into this run.",
+      "measurement_refs": [
+        "MEAS_C07",
+        "MEAS_FRONT_SCALE"
+      ],
+      "method": "source_radius_rotational_half",
+      "source_ownership_refs": [
+        "OWN_FRONT_C07"
+      ],
+      "visible_occurrence_rule": "one positive-X rotational half; Rz180 supplies the complement"
+    },
+    {
+      "backing_surface_created": false,
+      "candidate_variants": [
+        "rune_side",
+        "metal_center_piece_side"
+      ],
+      "component": "C07B_HAFT_TO_HANDLE_FERRULE",
+      "equation_refs": [
+        "EQ_RADIUS_FROM_FRONT",
+        "EQ_ROTATIONAL_SURFACE",
+        "EQ_COLUMN_WRAP"
+      ],
+      "extrusion_used": false,
+      "hidden_surface": false,
+      "id": "SURF_C07B_ROTATIONAL_HALF",
+      "instruction": "Use only the exact R8 ferrule rows and their radius profile.",
+      "measurement_refs": [
+        "MEAS_C07B",
+        "MEAS_FRONT_SCALE"
+      ],
+      "method": "source_radius_rotational_half",
+      "source_ownership_refs": [
+        "OWN_FRONT_C07B"
+      ],
+      "visible_occurrence_rule": "one positive-X rotational half; Rz180 supplies the complement"
+    },
+    {
+      "backing_surface_created": false,
+      "candidate_variants": [
+        "rune_side",
+        "metal_center_piece_side"
+      ],
+      "component": "C08_GRIP",
+      "equation_refs": [
+        "EQ_RADIUS_FROM_FRONT",
+        "EQ_ROTATIONAL_SURFACE",
+        "EQ_COLUMN_WRAP"
+      ],
+      "extrusion_used": false,
+      "hidden_surface": false,
+      "id": "SURF_C08_ROTATIONAL_HALF",
+      "instruction": "Use only exact R8 grip rows and proportional source-column wrap. Leather phase is material evidence and may not deform the geometry.",
+      "measurement_refs": [
+        "MEAS_C08",
+        "MEAS_FRONT_SCALE"
+      ],
+      "method": "source_radius_rotational_half",
+      "source_ownership_refs": [
+        "OWN_FRONT_C08"
+      ],
+      "visible_occurrence_rule": "one positive-X rotational half; Rz180 supplies the complement"
+    },
+    {
+      "backing_surface_created": false,
+      "candidate_variants": [
+        "rune_side",
+        "metal_center_piece_side"
+      ],
+      "component": "C09_LOWER_COLLAR",
+      "equation_refs": [
+        "EQ_RADIUS_FROM_FRONT",
+        "EQ_ROTATIONAL_SURFACE",
+        "EQ_COLUMN_WRAP"
+      ],
+      "extrusion_used": false,
+      "hidden_surface": false,
+      "id": "SURF_C09_ROTATIONAL_HALF",
+      "instruction": "Use only exact R8 collar rows and their radius profile.",
+      "measurement_refs": [
+        "MEAS_C09",
+        "MEAS_FRONT_SCALE"
+      ],
+      "method": "source_radius_rotational_half",
+      "source_ownership_refs": [
+        "OWN_FRONT_C09"
+      ],
+      "visible_occurrence_rule": "one positive-X rotational half; Rz180 supplies the complement"
+    },
+    {
+      "backing_surface_created": false,
+      "candidate_variants": [
+        "rune_side",
+        "metal_center_piece_side"
+      ],
+      "component": "C10_POMMEL_BODY",
+      "equation_refs": [
+        "EQ_RADIUS_FROM_FRONT",
+        "EQ_ROTATIONAL_SURFACE",
+        "EQ_COLUMN_WRAP"
+      ],
+      "extrusion_used": false,
+      "hidden_surface": false,
+      "id": "SURF_C10_ROTATIONAL_HALF",
+      "instruction": "Use only exact R8 pommel rows and their radius profile. The old fixed 18 cm length and 11 cm width are not carried into this run.",
+      "measurement_refs": [
+        "MEAS_C10",
+        "MEAS_FRONT_SCALE"
+      ],
+      "method": "source_radius_rotational_half",
+      "source_ownership_refs": [
+        "OWN_FRONT_C10"
+      ],
+      "visible_occurrence_rule": "one positive-X rotational half; Rz180 supplies the complement"
+    },
+    {
+      "backing_surface_created": false,
+      "candidate_variants": [
+        "rune_side",
+        "metal_center_piece_side"
+      ],
+      "component": "C11_POMMEL_TERMINAL_CAP",
+      "equation_refs": [
+        "EQ_RADIUS_FROM_FRONT",
+        "EQ_ROTATIONAL_SURFACE",
+        "EQ_COLUMN_WRAP"
+      ],
+      "extrusion_used": false,
+      "hidden_surface": false,
+      "id": "SURF_C11_ROTATIONAL_HALF",
+      "instruction": "Use only exact R8 terminal-cap rows and their radius profile.",
+      "measurement_refs": [
+        "MEAS_C11",
+        "MEAS_FRONT_SCALE"
+      ],
+      "method": "source_radius_rotational_half",
+      "source_ownership_refs": [
+        "OWN_FRONT_C11"
+      ],
+      "visible_occurrence_rule": "one positive-X rotational half; Rz180 supplies the complement"
+    },
+    {
+      "backing_surface_created": false,
+      "candidate_variants": [
+        "rune_side",
+        "metal_center_piece_side"
+      ],
+      "component": "C12_UPPER_HEAD_CAP_SPIRE",
+      "equation_refs": [
+        "EQ_RADIUS_FROM_FRONT",
+        "EQ_ROTATIONAL_SURFACE",
+        "EQ_COLUMN_WRAP"
+      ],
+      "extrusion_used": false,
+      "hidden_surface": false,
+      "id": "SURF_C12_ROTATIONAL_HALF",
+      "instruction": "Rows 208..220 use the exact front selected runs; rows 221..294 use only the reserved existing C12 owner. No C12 shape is inferred from stone pixels.",
+      "measurement_refs": [
+        "MEAS_C12",
+        "MEAS_FRONT_SCALE"
+      ],
+      "method": "source_radius_rotational_half",
+      "source_ownership_refs": [
+        "OWN_FRONT_C12_FULL"
+      ],
+      "visible_occurrence_rule": "one positive-X rotational half; Rz180 supplies the complement"
+    }
+  ],
+  "topology_and_performance_plan": {
+    "fidelity_precedence": "Exact source boundaries, protected gaps, contacts, and the primary silhouette may not be reduced to meet a budget.",
+    "lod0_hard_cap_triangles": 10000,
+    "lod0_target_triangles": 8000,
+    "lod_targets_as_lod0_fraction": {
+      "LOD0": "1",
+      "LOD1": "3/5",
+      "LOD2": "3/10",
+      "LOD3": "3/25"
+    },
+    "over_cap_action": "Stop before saving geometry and report Blueprint block: rule missing; request a separate performance amendment.",
+    "pixel_to_topology_rule": "Owner pixels control exact surface membership and UV/color ownership. Geometry is required at every exact boundary change and approved radius change; planar interiors may be triangulated without moving or deleting an owner boundary.",
+    "required_lods": [
+      "LOD0",
+      "LOD1",
+      "LOD2",
+      "LOD3"
+    ]
+  },
+  "transition_catalog": {
+    "TR_C01_C06": {
+      "closure": "one exact planar positive-X half-annular shoulder",
+      "id": "TR_C01_C06",
+      "lower_component": "C06_UPPER_HAFT_CAP",
+      "lower_positive_radius": {
+        "axis_source_edge_x": 562,
+        "positive_envelope_edge_x": 620,
+        "radius_cm": {
+          "denominator": 1063,
+          "display_decimal": "9.275634995296",
+          "numerator": 9860
+        },
+        "source_ownership_ref": "OWN_FRONT_C06",
+        "source_y": 600
+      },
+      "lower_source_ownership_ref": "OWN_FRONT_C06",
+      "same_radius": false,
+      "shared_source_edge_y": 600,
+      "shared_world_z_cm": {
+        "denominator": 1063,
+        "display_decimal": "107.309501411101",
+        "numerator": 114070
+      },
+      "source_rows": [
+        599,
+        600
+      ],
+      "upper_component": "C01_CENTER_CORE",
+      "upper_positive_radius": {
+        "axis_source_edge_x": 562,
+        "positive_envelope_edge_x": 619,
+        "radius_cm": {
+          "denominator": 1063,
+          "display_decimal": "9.115710253998",
+          "numerator": 9690
+        },
+        "source_ownership_ref": "OWN_FRONT_C01",
+        "source_y": 599
+      },
+      "upper_source_ownership_ref": "OWN_FRONT_C01"
+    },
+    "TR_C06_C07": {
+      "closure": "one coordinate-equal common half-ring",
+      "id": "TR_C06_C07",
+      "lower_component": "C07_HAFT",
+      "lower_positive_radius": {
+        "axis_source_edge_x": 562,
+        "positive_envelope_edge_x": 596,
+        "radius_cm": {
+          "denominator": 1063,
+          "display_decimal": "5.437441204139",
+          "numerator": 5780
+        },
+        "source_ownership_ref": "OWN_FRONT_C07",
+        "source_y": 670
+      },
+      "lower_source_ownership_ref": "OWN_FRONT_C07",
+      "same_radius": true,
+      "shared_source_edge_y": 670,
+      "shared_world_z_cm": {
+        "denominator": 1063,
+        "display_decimal": "96.114769520226",
+        "numerator": 102170
+      },
+      "source_rows": [
+        669,
+        670
+      ],
+      "upper_component": "C06_UPPER_HAFT_CAP",
+      "upper_positive_radius": {
+        "axis_source_edge_x": 562,
+        "positive_envelope_edge_x": 596,
+        "radius_cm": {
+          "denominator": 1063,
+          "display_decimal": "5.437441204139",
+          "numerator": 5780
+        },
+        "source_ownership_ref": "OWN_FRONT_C06",
+        "source_y": 669
+      },
+      "upper_source_ownership_ref": "OWN_FRONT_C06"
+    },
+    "TR_C07B_C08": {
+      "closure": "one exact planar positive-X half-annular shoulder",
+      "id": "TR_C07B_C08",
+      "lower_component": "C08_GRIP",
+      "lower_positive_radius": {
+        "axis_source_edge_x": 562,
+        "positive_envelope_edge_x": 596,
+        "radius_cm": {
+          "denominator": 1063,
+          "display_decimal": "5.437441204139",
+          "numerator": 5780
+        },
+        "source_ownership_ref": "OWN_FRONT_C08",
+        "source_y": 955
+      },
+      "lower_source_ownership_ref": "OWN_FRONT_C08",
+      "same_radius": false,
+      "shared_source_edge_y": 955,
+      "shared_world_z_cm": {
+        "denominator": 1063,
+        "display_decimal": "50.536218250235",
+        "numerator": 53720
+      },
+      "source_rows": [
+        954,
+        955
+      ],
+      "upper_component": "C07B_HAFT_TO_HANDLE_FERRULE",
+      "upper_positive_radius": {
+        "axis_source_edge_x": 562,
+        "positive_envelope_edge_x": 598,
+        "radius_cm": {
+          "denominator": 1063,
+          "display_decimal": "5.757290686736",
+          "numerator": 6120
+        },
+        "source_ownership_ref": "OWN_FRONT_C07B",
+        "source_y": 954
+      },
+      "upper_source_ownership_ref": "OWN_FRONT_C07B"
+    },
+    "TR_C07_C07B": {
+      "closure": "one exact planar positive-X half-annular shoulder",
+      "id": "TR_C07_C07B",
+      "lower_component": "C07B_HAFT_TO_HANDLE_FERRULE",
+      "lower_positive_radius": {
+        "axis_source_edge_x": 562,
+        "positive_envelope_edge_x": 600,
+        "radius_cm": {
+          "denominator": 1063,
+          "display_decimal": "6.077140169332",
+          "numerator": 6460
+        },
+        "source_ownership_ref": "OWN_FRONT_C07B",
+        "source_y": 870
+      },
+      "lower_source_ownership_ref": "OWN_FRONT_C07B",
+      "same_radius": false,
+      "shared_source_edge_y": 870,
+      "shared_world_z_cm": {
+        "denominator": 1063,
+        "display_decimal": "64.129821260583",
+        "numerator": 68170
+      },
+      "source_rows": [
+        869,
+        870
+      ],
+      "upper_component": "C07_HAFT",
+      "upper_positive_radius": {
+        "axis_source_edge_x": 562,
+        "positive_envelope_edge_x": 599,
+        "radius_cm": {
+          "denominator": 1063,
+          "display_decimal": "5.917215428034",
+          "numerator": 6290
+        },
+        "source_ownership_ref": "OWN_FRONT_C07",
+        "source_y": 869
+      },
+      "upper_source_ownership_ref": "OWN_FRONT_C07"
+    },
+    "TR_C08_C09": {
+      "closure": "one coordinate-equal common half-ring",
+      "id": "TR_C08_C09",
+      "lower_component": "C09_LOWER_COLLAR",
+      "lower_positive_radius": {
+        "axis_source_edge_x": 562,
+        "positive_envelope_edge_x": 600,
+        "radius_cm": {
+          "denominator": 1063,
+          "display_decimal": "6.077140169332",
+          "numerator": 6460
+        },
+        "source_ownership_ref": "OWN_FRONT_C09",
+        "source_y": 1110
+      },
+      "lower_source_ownership_ref": "OWN_FRONT_C09",
+      "same_radius": true,
+      "shared_source_edge_y": 1110,
+      "shared_world_z_cm": {
+        "denominator": 1063,
+        "display_decimal": "25.747883349012",
+        "numerator": 27370
+      },
+      "source_rows": [
+        1109,
+        1110
+      ],
+      "upper_component": "C08_GRIP",
+      "upper_positive_radius": {
+        "axis_source_edge_x": 562,
+        "positive_envelope_edge_x": 600,
+        "radius_cm": {
+          "denominator": 1063,
+          "display_decimal": "6.077140169332",
+          "numerator": 6460
+        },
+        "source_ownership_ref": "OWN_FRONT_C08",
+        "source_y": 1109
+      },
+      "upper_source_ownership_ref": "OWN_FRONT_C08"
+    },
+    "TR_C09_C10": {
+      "closure": "one exact planar positive-X half-annular shoulder",
+      "id": "TR_C09_C10",
+      "lower_component": "C10_POMMEL_BODY",
+      "lower_positive_radius": {
+        "axis_source_edge_x": 562,
+        "positive_envelope_edge_x": 618,
+        "radius_cm": {
+          "denominator": 1063,
+          "display_decimal": "8.955785512700",
+          "numerator": 9520
+        },
+        "source_ownership_ref": "OWN_FRONT_C10",
+        "source_y": 1150
+      },
+      "lower_source_ownership_ref": "OWN_FRONT_C10",
+      "same_radius": false,
+      "shared_source_edge_y": 1150,
+      "shared_world_z_cm": {
+        "denominator": 1063,
+        "display_decimal": "19.350893697084",
+        "numerator": 20570
+      },
+      "source_rows": [
+        1149,
+        1150
+      ],
+      "upper_component": "C09_LOWER_COLLAR",
+      "upper_positive_radius": {
+        "axis_source_edge_x": 562,
+        "positive_envelope_edge_x": 617,
+        "radius_cm": {
+          "denominator": 1063,
+          "display_decimal": "8.795860771402",
+          "numerator": 9350
+        },
+        "source_ownership_ref": "OWN_FRONT_C09",
+        "source_y": 1149
+      },
+      "upper_source_ownership_ref": "OWN_FRONT_C09"
+    },
+    "TR_C10_C11": {
+      "closure": "one exact planar positive-X half-annular shoulder",
+      "id": "TR_C10_C11",
+      "lower_component": "C11_POMMEL_TERMINAL_CAP",
+      "lower_positive_radius": {
+        "axis_source_edge_x": 562,
+        "positive_envelope_edge_x": 615,
+        "radius_cm": {
+          "denominator": 1063,
+          "display_decimal": "8.476011288805",
+          "numerator": 9010
+        },
+        "source_ownership_ref": "OWN_FRONT_C11",
+        "source_y": 1220
+      },
+      "lower_source_ownership_ref": "OWN_FRONT_C11",
+      "same_radius": false,
+      "shared_source_edge_y": 1220,
+      "shared_world_z_cm": {
+        "denominator": 1063,
+        "display_decimal": "8.156161806209",
+        "numerator": 8670
+      },
+      "source_rows": [
+        1219,
+        1220
+      ],
+      "upper_component": "C10_POMMEL_BODY",
+      "upper_positive_radius": {
+        "axis_source_edge_x": 562,
+        "positive_envelope_edge_x": 616,
+        "radius_cm": {
+          "denominator": 1063,
+          "display_decimal": "8.635936030103",
+          "numerator": 9180
+        },
+        "source_ownership_ref": "OWN_FRONT_C10",
+        "source_y": 1219
+      },
+      "upper_source_ownership_ref": "OWN_FRONT_C10"
+    },
+    "TR_C12_C01": {
+      "closure": "one coordinate-equal common half-ring",
+      "id": "TR_C12_C01",
+      "lower_component": "C01_CENTER_CORE",
+      "lower_positive_radius": {
+        "axis_source_edge_x": 562,
+        "positive_envelope_edge_x": 636,
+        "radius_cm": {
+          "denominator": 1063,
+          "display_decimal": "11.834430856068",
+          "numerator": 12580
+        },
+        "source_ownership_ref": "OWN_FRONT_C01",
+        "source_y": 295
+      },
+      "lower_source_ownership_ref": "OWN_FRONT_C01",
+      "same_radius": true,
+      "shared_source_edge_y": 295,
+      "shared_world_z_cm": {
+        "denominator": 1063,
+        "display_decimal": "156.086547507056",
+        "numerator": 165920
+      },
+      "source_rows": [
+        294,
+        295
+      ],
+      "upper_component": "C12_UPPER_HEAD_CAP_SPIRE",
+      "upper_positive_radius": {
+        "axis_source_edge_x": 562,
+        "positive_envelope_edge_x": 636,
+        "radius_cm": {
+          "denominator": 1063,
+          "display_decimal": "11.834430856068",
+          "numerator": 12580
+        },
+        "source_ownership_ref": "OWN_FRONT_C12_FULL",
+        "source_y": 294
+      },
+      "upper_source_ownership_ref": "OWN_FRONT_C12_FULL"
+    }
+  },
+  "uv_material_texture_plan": {
+    "geometry_change_in_step14_or_step15": false,
+    "material_families": [
+      "dark faceted stone",
+      "aged bronze",
+      "dark steel",
+      "dark brown leather",
+      "cold blue rune/crystal emissive"
+    ],
+    "material_slot_count": 2,
+    "material_slots": [
+      {
+        "families": [
+          "dark faceted stone",
+          "aged bronze",
+          "dark steel",
+          "dark brown leather"
+        ],
+        "name": "MI_DRW_SiegeBreaker_Opaque",
+        "slot": 0
+      },
+      {
+        "families": [
+          "cold blue rune/crystal emissive"
+        ],
+        "name": "MI_DRW_SiegeBreaker_Emissive",
+        "slot": 1
+      }
+    ],
+    "source_visible_color_rule": "Exact owner-view pixels remain view-local color evidence. Back, left, ornament phase, and dark-value evidence may not change geometry.",
+    "texture_resolution": "2048x2048",
+    "texture_set": [
+      "T_DRW_SiegeBreaker_A01_BC",
+      "T_DRW_SiegeBreaker_A01_N",
+      "T_DRW_SiegeBreaker_A01_ORM",
+      "T_DRW_SiegeBreaker_A01_E"
+    ],
+    "uv_rule": "UV ownership is component-specific. Rotational rows use the exact source-column U intervals from EQ_COLUMN_WRAP. No UV is created in Step 11."
+  }
+}

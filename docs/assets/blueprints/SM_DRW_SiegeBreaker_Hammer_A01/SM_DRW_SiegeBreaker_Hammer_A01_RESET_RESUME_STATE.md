@@ -1,21 +1,45 @@
 # SM_DRW_SiegeBreaker_Hammer_A01 Reset / Resume State
 
 - Active approved route:
-  `Core Recovery from valid R8 Steps 01-09; Step 10 passed; Step 09A ownership approved; Step 11 source preflight passed`
+  `Core Recovery from valid R8 Steps 01-09; Step 10 passed; Step 09A ownership approved; Step 11 blueprint candidate independently passed`
 - Plan: `SM_DRW_SiegeBreaker_Hammer_A01_STEPS_01_16_PROOF_OF_CONCEPT_PIPELINE_PLAN.md`
 - Active contract:
-  `Step 11 source-authority preflight A02 complete; proposed production-blueprint contract awaiting approval`
+  `approved Step 11 document-only contract complete; exact blueprint candidate awaiting Flamestrike decision`
 - Current state:
-  `Step 09A ownership authoritative; Step 11 A02 preflight PASS 119/119 with 7/7 evidence groups found; no production blueprint exists`
+  `Step 09A ownership authoritative; Step 11 blueprint candidate exists and independently passed 462/462; no production asset exists`
 - Next approved activity:
-  `none; await Flamestrike decision on the proposed Step 11 construction-instructions-only contract`
+  `none; await Flamestrike approve/revise/reject/blocked decision on the exact Step 11 blueprint`
 - Source processing authorized now:
   `false; source preflight is complete`
 - Model inference authorized now: `false`
 - DCC production authorized now:
-  `false; Step 11 did not unlock Step 12`
+  `false; the audited blueprint did not unlock Step 12`
 - Unreal authority: `false`
 - Fully game-ready: `false`
+
+## 2026-07-23 Step 11 Production Blueprint A02 Audit Pass
+
+- Flamestrike approved only writing the exact construction instructions,
+  independently checking them, and stopping for review.
+- Blueprint:
+  `proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_11_PRODUCTION_GEOMETRY_BLUEPRINT.json`.
+- Blueprint SHA-256:
+  `2b598497ba5e61a4352c217f3fb20b3545189c710934f3a21d9b7398ddb472c7`.
+- The blueprint contains `17` exact surface instructions and `16`
+  connection/contact/guard/completion instructions.
+- Every planned surface cites exact source ownership, an approved equation,
+  and an exact measurement.
+- Independent result: `PASS 462/462`.
+- Deterministic audit rerun: the same validation SHA-256,
+  `c896b5bf48f43e0fb32920a28a4fc76c6e351e0727c02e38266505299a682c82`.
+- Blueprint artifact status: `candidate`.
+- Independent validation status: `proof only`.
+- Blender, geometry, render, export, and Unreal outputs: `not created`.
+- Step 11 remains incomplete pending Flamestrike's exact blueprint decision.
+- Step 12 remains locked and requires a separate visible contract and
+  approval.
+- Plain-English review:
+  `proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/STEP_11_PRODUCTION_BLUEPRINT_A02_REVIEW.md`.
 
 ## 2026-07-23 Step 09A Approval / Step 11 Preflight A02 Pass
 
@@ -350,37 +374,38 @@
 
 ## Active Method
 
-A12 R7's staged source-measured method is restored:
+The approved R8 zero-extrusion route is active:
 
-`original source pixels -> exact component measurements -> centerline and`
-`cross-view equations -> approved physical component construction ->`
-`fixed-camera source reprojection audit`
+`immutable R8 source pixels -> exact component ownership and measurements ->`
+`approved zero-extrusion equations -> audited Step 11 blueprint ->`
+`separately approved fresh Step 12 component construction`
 
-The measurement-only step is complete and approved. The next decision is the
-resolution or explicit preservation of blocks `R10-S01-B01` through `B08`.
-No geometry follows automatically.
+Step 09A ownership is authoritative. The Step 11 blueprint is an independently
+audited `candidate`. The next decision is approval, revision, rejection, or a
+blocked classification for that exact document. No geometry follows
+automatically.
 
 ## Prohibited Software Boundary
 
 TRELLIS, TRELLIS.2, TripoSR, diffusion, generative-image, image-to-3D, and
-generated-view software remain forbidden. The existing R8 images may be read
-only for their declared centerline, axis, rotation, and duplication
-relationship. Blender is stopped until approved measurements are converted
-into a separately approved construction contract.
+generated-view software remain forbidden for this reconstruction. Blender is
+stopped. An approved Step 11 blueprint would still require a separate visible
+Step 12 contract and separate Flamestrike approval.
 
 ## Resume Instruction
 
-Read only the latest recovery journal/checkpoint, this reset state,
-`manifests/A12_R9_CORE_RECOVERY_AND_SOURCE_RECONSTRUCTION_RESTORE.md`,
-`steps/A12_R6_A05_CORE_REASSESSMENT_AND_RECOVERY.md`,
-`SM_DRW_SiegeBreaker_Hammer_A01_A12_R7_COMPONENT_GEOMETRY_RECOVERY_PLAN.md`,
-`manifests/A12_R7_STEP01_AXIAL_INTERNAL_REGISTRATION_CONFLICT_RECOVERY.md`,
-`manifests/A12_R8_SIX_VIEW_ORTHOGRAPHIC_GENERATION_INTERNAL_REJECTIONS.md`,
-and
-`steps/A12_R10_STEP01_SOURCE_MEASUREMENT_CENTERLINE_A01_APPROVAL_RECORD.md`.
-Report that R9 is quarantined, the original six sources own detailed
-measurements, R8 owns only centerline/rotation/duplication registration, and
-R10 A01 is approved authoritative measured evidence but remains `BLOCKED for
-construction` pending eight exact decisions. Do not run further source
-processing, measurement scripts, Blender, image generation, geometry, export,
-or Unreal until Flamestrike approves the next exact scope.
+Read only the latest recovery journal/checkpoint, git status, this reset state,
+the Step 09A authority lock, the Step 11 blueprint, its independent validation,
+and its plain-English review/handoff.
+
+Report:
+
+1. Step 09A ownership is `authoritative`.
+2. The Step 11 blueprint is a `candidate`.
+3. Its independent audit is `proof only; PASS 462/462`.
+4. No Blender, geometry, render, export, or Unreal artifact exists.
+5. Step 12 is locked.
+6. The only pending action is Flamestrike's decision on the exact blueprint.
+
+Do not run source processing, Blender, image generation, geometry, render,
+export, or Unreal work until a later exact scope is approved.
