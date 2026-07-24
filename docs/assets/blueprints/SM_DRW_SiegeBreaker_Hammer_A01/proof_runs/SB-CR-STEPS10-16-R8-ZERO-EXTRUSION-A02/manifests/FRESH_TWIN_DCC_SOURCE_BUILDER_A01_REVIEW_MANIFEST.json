@@ -1,0 +1,36 @@
+{
+  "artifact_status": "candidate review evidence",
+  "assets": {
+    "foe_hammer": {
+      "asset_id": "SM_DRW_FoeHammer_Hammer_A01",
+      "independent_audit_result": "PASS",
+      "independent_audit_sha256": "9107b943046cfe3373e301e88636ee628817c7e7766892048136de7a70e9b846",
+      "render_manifest_sha256": "9cca468944cd7a0ab48f8b39b2061a357b6fe704705f6ef710f4fbc32aaa2095"
+    },
+    "siege_breaker": {
+      "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+      "independent_audit_result": "PASS",
+      "independent_audit_sha256": "52fa75f4708b95e6b1150ccffb150672f09c6697f5bcd88871440d1a464f28e0",
+      "render_manifest_sha256": "52c874639fd6d078f29e8bf4b5cf339c8eccab2451985445884ae86c227e90f7"
+    }
+  },
+  "board": {
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/FRESH_TWIN_DCC_SOURCE_BUILDER_A01_REVIEW.png",
+    "sha256": "2f88854a58596e104841878c355082a0f9515e95ca634bd0ed31bbbc8d608c65"
+  },
+  "packager": {
+    "path": "Tools/DCC/package_siegebreaker_foehammer_shared_depth_a01_review.py",
+    "sha256": "1deead84bb425d09df518ac84f50c5e6836907f289c4c2ee3dba84e773b7a249"
+  },
+  "prior_packaging_attempt": {
+    "cause": "system Pillow does not expose Image.Resampling; all eight source renders completed and remained valid",
+    "geometry_or_audit_affected": false,
+    "result": "FAIL",
+    "scope": "board composition only"
+  },
+  "result": "PASS",
+  "retopology_uv_bake_export_authority": false,
+  "schema": "AERATHEA_FRESH_TWIN_DCC_SOURCE_REVIEW_A01_V1",
+  "step_13_authority": false,
+  "unreal_authority": false
+}

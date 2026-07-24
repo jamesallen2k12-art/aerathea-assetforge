@@ -1,6 +1,57 @@
 # SM_DRW_SiegeBreaker_Hammer_A01 Reset / Resume State
 
-## 2026-07-24 Shared-Depth Recovery Blueprint A01 — Current Authority
+## 2026-07-24 Fresh Shared-Depth Twin DCC Sources — Current State
+
+The approved `FRESH_TWIN_DCC_SOURCE_BUILDER_A01` contract is complete.
+
+- Siege Breaker status: `DCC source candidate`.
+- Foe Hammer status: `DCC source candidate`.
+- Visual decision: `pending Flamestrike`.
+- Independent saved-file and cross-asset audit: `PASS`.
+- Exact shared XYZ:
+  `50719500/517681 × 6644212/149985 × 170/1 cm`.
+- Decimal shared XYZ:
+  `97.974428267601 × 44.299176584 × 170 cm`.
+- Observed cross-asset Blender dimension difference:
+  `0.0 × 0.0 × 0.0 cm`.
+- Exact canonical shared-base hash equality: `PASS`.
+- Independently derived saved shared-base hash equality: `PASS`.
+- Siege Breaker distinction: double rune sided.
+- Foe Hammer distinction: double metal-center-piece sided.
+- Quarantined Step 12 geometry read count: `0`.
+- Current action: `stop for Flamestrike visual decision`.
+- Step 13 authority: `false`.
+- Retopology / UV / bake / export authority: `false`.
+- Unreal authority: `false`.
+
+Current Siege Breaker source:
+
+`SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/SM_DRW_SiegeBreaker_Hammer_A01_DCCSource_SharedDepth_A01.blend`
+
+SHA-256:
+
+`c69b415ac3429091c6aa77d24ffcd6d88bbd0f9fc711e3862c2c7e7b51034537`
+
+Independent saved-file audit SHA-256:
+
+`52fa75f4708b95e6b1150ccffb150672f09c6697f5bcd88871440d1a464f28e0`
+
+Review handoff:
+
+`proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/handoffs/FRESH_TWIN_DCC_SOURCE_BUILDER_A01_VISUAL_REVIEW_HANDOFF.md`
+
+Review board:
+
+`proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/FRESH_TWIN_DCC_SOURCE_BUILDER_A01_REVIEW.png`
+
+On resume, verify this current section, the fresh output record, the
+independent cross-asset audit, the review handoff, the latest recovery
+journal/checkpoint, and git status. Report both assets as audited
+`DCC source candidate` outputs awaiting Flamestrike's visual decision. Do not
+advance to Step 13 or later production without a separate visible contract
+and approval.
+
+## 2026-07-24 Shared-Depth Recovery Blueprint A01 — Historical Pre-Build Authority
 
 Flamestrike approved `SHARED_DEPTH_RECOVERY_BLUEPRINT_A01` as the governing
 blueprint.

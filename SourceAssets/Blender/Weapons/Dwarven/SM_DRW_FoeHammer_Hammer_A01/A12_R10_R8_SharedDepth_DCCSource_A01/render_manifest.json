@@ -1,0 +1,26 @@
+{
+  "artifact_status": "candidate review evidence",
+  "asset_id": "SM_DRW_FoeHammer_Hammer_A01",
+  "independent_audit_sha256": "9107b943046cfe3373e301e88636ee628817c7e7766892048136de7a70e9b846",
+  "schema": "AERATHEA_FRESH_TWIN_DCC_SOURCE_RENDER_A01_V1",
+  "step_13_authority": false,
+  "unreal_authority": false,
+  "views": {
+    "front": {
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_FoeHammer_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/renders/front.png",
+      "sha256": "e986e674ef6db2bcdac554c4260e894425e1493c342fbada4a93647b4552111f"
+    },
+    "right": {
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_FoeHammer_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/renders/right.png",
+      "sha256": "2335d1bf3603bf525e88f10b53584147e91839c4f6a437128dc4d65d40dd8d09"
+    },
+    "three_quarter": {
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_FoeHammer_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/renders/three_quarter.png",
+      "sha256": "d27716a4d4e1c25a15d807a4a880edb581bf4b99e59958ae2b39bf35e9cd9403"
+    },
+    "top": {
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_FoeHammer_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/renders/top.png",
+      "sha256": "8dd37444808c52f7094f3dc19517fbcfaf9d76c4da4da438eddd345d0282f74b"
+    }
+  }
+}

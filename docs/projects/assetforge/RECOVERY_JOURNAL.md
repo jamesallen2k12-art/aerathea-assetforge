@@ -8877,3 +8877,23 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260724-112622/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260724-112622/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 11:30:21 EDT -0400 - start fresh twin hammer shared-depth DCC build
+
+- Snapshot: `Saved/ProjectRecovery/20260724-113021/`
+- Git: branch `main`, HEAD `146d7f2`, status lines `555`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-113021/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-113021/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-113021/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 12:11:33 EDT -0400 - complete fresh twin hammer shared-depth DCC source candidates
+
+- Snapshot: `Saved/ProjectRecovery/20260724-121133/`
+- Git: branch `main`, HEAD `146d7f2`, status lines `571`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-121133/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-121133/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-121133/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

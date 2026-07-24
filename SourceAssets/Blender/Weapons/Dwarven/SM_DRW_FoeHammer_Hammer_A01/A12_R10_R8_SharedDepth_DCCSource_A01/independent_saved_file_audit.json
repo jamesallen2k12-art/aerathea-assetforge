@@ -1,0 +1,103 @@
+{
+  "artifact_status": "proof only; supports DCC source candidate classification",
+  "asset_id": "SM_DRW_FoeHammer_Hammer_A01",
+  "build_id": "FRESH_TWIN_DCC_SOURCE_BUILDER_A01",
+  "build_manifest": {
+    "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_FoeHammer_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/build_manifest.json",
+    "sha256": "c49bb3d6b57fc7054ebded933f1847a4fa27d128aca00bca953e76cb4a86a99c"
+  },
+  "builder_exact_shared_base_canonical_sha256": "ac0d08252ee71166842779bfb85904c4378ff1a9a4b8328d82dfac9c914e8049",
+  "checks": {
+    "asset_id": true,
+    "build_id": true,
+    "common_half_depth_exact": true,
+    "expected_depth_exact": true,
+    "expected_height_exact": true,
+    "expected_width_exact": true,
+    "forbidden_equation_absent": true,
+    "local_c04_domain_half_exact": true,
+    "local_c04_domain_is_registration_not_fill": true,
+    "local_c04_source_interval": true,
+    "local_y_mirror_count": true,
+    "manifest_asset_identity_matches": true,
+    "no_external_images": true,
+    "no_linked_libraries": true,
+    "quarantined_geometry_read_count": true,
+    "saved_bounds_within_float32_encoding_tolerance": true,
+    "shared_base_contains_no_local_c04_equation": true,
+    "surface_provenance_complete": true,
+    "variant": true,
+    "variant_inside_common_envelope": true,
+    "visible_face_inside_approved_local_domain": true,
+    "whole_asset_rz180_count": true
+  },
+  "classification_if_pass": "DCC source candidate",
+  "date_utc": "2026-07-24T15:54:48.568998+00:00",
+  "display_name": "Foe Hammer",
+  "expected_and_observed_dimensions_recorded_separately": true,
+  "expected_dimensions_cm": {
+    "decimal": [
+      97.97442826760108,
+      44.299176584325096,
+      170.0
+    ],
+    "exact": [
+      "50719500/517681",
+      "6644212/149985",
+      "170/1"
+    ]
+  },
+  "external_image_count": 0,
+  "linked_library_count": 0,
+  "local_c04_extent": {
+    "approved_domain_half_cm_decimal": 21.56021897810219,
+    "approved_domain_half_cm_exact": "11815/548",
+    "domain_is_registration_not_fill": true,
+    "inside_common_envelope": true,
+    "observed_visible_face_half_cm": 14.735401153564453,
+    "visible_face_inside_approved_domain": true
+  },
+  "mesh_object_count": 50,
+  "missing_surface_provenance_objects": [],
+  "observed_saved_mesh_bounds_cm": {
+    "absolute_error_from_exact_decimal": [
+      1.9980698340305025e-06,
+      1.3218739240983268e-06,
+      0.0
+    ],
+    "dimensions": [
+      97.97442626953125,
+      44.29917526245117,
+      170.0
+    ],
+    "encoding_tolerance_cm": 2e-05,
+    "maximum": [
+      48.987213134765625,
+      22.149587631225586,
+      170.0
+    ],
+    "minimum": [
+      -48.987213134765625,
+      -22.149587631225586,
+      0.0
+    ]
+  },
+  "polygons": 1168246,
+  "quarantined_geometry_read_count": 0,
+  "result": "PASS",
+  "retopology_uv_bake_export_authority": false,
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "saved_blend": {
+    "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_FoeHammer_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/SM_DRW_FoeHammer_Hammer_A01_DCCSource_SharedDepth_A01.blend",
+    "sha256": "67737a3c561cd6462af3657ea93488af76f32a5815ee0b4d5887182d14c761d4"
+  },
+  "saved_shared_base_canonical_sha256": "f03b975b03141204b4a3c061306d8f48f8668e2a2bdcd214d1f72f555efe86c4",
+  "schema": "AERATHEA_FRESH_TWIN_DCC_SOURCE_SAVED_FILE_AUDIT_V1",
+  "shared_mesh_object_count": 46,
+  "step_13_authority": false,
+  "triangles": 2331882,
+  "unreal_authority": false,
+  "variant": "metal_center_piece_side",
+  "variant_mesh_object_count": 4,
+  "vertices": 1186812
+}

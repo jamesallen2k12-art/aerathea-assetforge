@@ -1,5 +1,61 @@
 # SM_DRW_FoeHammer_Hammer_A01 Identity And Resume State
 
+## 2026-07-24 Fresh Standalone Foe Hammer Source — Current State
+
+The approved `FRESH_TWIN_DCC_SOURCE_BUILDER_A01` contract created the first
+valid standalone Foe Hammer Blender source.
+
+- Asset identity: `authoritative`.
+- Treatment: double metal-center-piece sided.
+- Geometry status: `DCC source candidate`.
+- Visual decision: `pending Flamestrike`.
+- Independent saved-file audit: `PASS`.
+- Independent cross-asset audit: `PASS`.
+- Exact XYZ:
+  `50719500/517681 × 6644212/149985 × 170/1 cm`.
+- Decimal XYZ:
+  `97.974428267601 × 44.299176584 × 170 cm`.
+- Observed XYZ difference from Siege Breaker:
+  `0.0 × 0.0 × 0.0 cm`.
+- Canonical shared-base equality with Siege Breaker: `PASS`.
+- Quarantined geometry read count: `0`.
+- DCC game-ready candidate: `false`.
+- Fully game-ready: `false`.
+- Step 13 authority: `false`.
+- Unreal authority: `false`.
+
+Current standalone source:
+
+`SourceAssets/Blender/Weapons/Dwarven/SM_DRW_FoeHammer_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/SM_DRW_FoeHammer_Hammer_A01_DCCSource_SharedDepth_A01.blend`
+
+SHA-256:
+
+`67737a3c561cd6462af3657ea93488af76f32a5815ee0b4d5887182d14c761d4`
+
+Independent saved-file audit SHA-256:
+
+`9107b943046cfe3373e301e88636ee628817c7e7766892048136de7a70e9b846`
+
+The approved metal source interval `[418,557)` remains an exact local
+registration domain. Only selected source-owned pixels create visible face
+geometry; the interval rectangle is not filled. The treatment and its ruled
+join remain inside the shared global depth envelope.
+
+Review handoff:
+
+`docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/handoffs/FRESH_TWIN_DCC_SOURCE_BUILDER_A01_VISUAL_REVIEW_HANDOFF.md`
+
+On resume, report that Foe Hammer now has an audited standalone
+`DCC source candidate`, is otherwise canonically identical to Siege Breaker,
+and awaits Flamestrike's visual decision. Step 13, retopology, UVs, baking,
+export, and Unreal remain locked behind a separate visible contract.
+
+## Historical Identity Establishment And Pre-Build State
+
+The remainder of this record preserves the identity decision, quarantined
+lineage, and pre-build resume state. It does not override the current state
+above.
+
 - Date established: `2026-07-24`
 - Asset name: `Foe Hammer`
 - Asset ID: `SM_DRW_FoeHammer_Hammer_A01`
@@ -12,7 +68,7 @@
 - Step 13 authority: `false`
 - Unreal authority: `false`
 
-## Governing Shared-Depth Blueprint — Current Authority
+## Governing Shared-Depth Blueprint — Historical Pre-Build Authority
 
 Flamestrike approved `SHARED_DEPTH_RECOVERY_BLUEPRINT_A01`.
 
@@ -82,7 +138,7 @@ Governing recovery record:
 
 `docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_12_DEPTH_OWNERSHIP_CORE_RECOVERY.md`
 
-## Selected Source Lineage
+## Historical Quarantined Source Lineage
 
 - Source run:
   `SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02`
@@ -145,7 +201,7 @@ or described as exact geometric equality without a separately approved rule
 and audit. A later decision must establish whether the difference is accepted
 as part of the head-side treatment or must be reconciled before advancement.
 
-## Current Artifact Vocabulary
+## Historical Pre-Build Artifact Vocabulary
 
 - Foe Hammer identity and double-metal-center-piece treatment:
   `authoritative`.
@@ -161,7 +217,7 @@ as part of the head-side treatment or must be reconciled before advancement.
 - DCC game-ready candidate: `false`.
 - Fully game-ready: `false`.
 
-## Resume Instruction
+## Historical Pre-Build Resume Instruction
 
 On resume, verify:
 
@@ -177,7 +233,7 @@ shared XYZ, and shared-body blueprint are authoritative. Its former Step 12
 source is `invalid / quarantined in place`; there is no standalone or valid
 Foe Hammer DCC source candidate; and no fresh-builder contract is active.
 
-## Next Approval Gate
+## Historical Pre-Build Next Approval Gate
 
 No production action is currently active.
 

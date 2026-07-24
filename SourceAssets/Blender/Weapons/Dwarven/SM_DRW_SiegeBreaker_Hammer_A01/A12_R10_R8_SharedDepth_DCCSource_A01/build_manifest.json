@@ -1,0 +1,630 @@
+{
+  "artifact_status": "candidate pending independent saved-file audit",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "authority_boundary": {
+    "dcc_source_candidate_after_independent_audit": true,
+    "retopology_uv_bake_export": false,
+    "step_13": false,
+    "unreal": false
+  },
+  "build_id": "FRESH_TWIN_DCC_SOURCE_BUILDER_A01",
+  "date_utc": "2026-07-24T15:54:12.364482+00:00",
+  "display_name": "Siege Breaker",
+  "fresh_builder_approval": {
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/FRESH_TWIN_DCC_SOURCE_BUILDER_A01_APPROVAL_RECORD.md",
+    "sha256": "8b59685cf27656805ecf73385ab980c1d96dec2686ac1928f6f547f4dad787ef",
+    "status": "authoritative approval record"
+  },
+  "governing_blueprint": {
+    "effective_status": "authoritative",
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01.json",
+    "sha256": "efdbd8795dff2031fcde9e734868ff4c617dc37ad1e7b3743c3727daea981d58"
+  },
+  "input_geometry_files": [],
+  "local_c04_treatment": "rune_side",
+  "outputs": {
+    "blend": {
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/SM_DRW_SiegeBreaker_Hammer_A01_DCCSource_SharedDepth_A01.blend",
+      "sha256": "c69b415ac3429091c6aa77d24ffcd6d88bbd0f9fc711e3862c2c7e7b51034537"
+    },
+    "pre_save_validation": {
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/pre_save_validation.json",
+      "sha256": "43281332221d4b9c1d97a9cff89323569897d7b38e66f8bbff0d92dbccfdc4ff"
+    }
+  },
+  "pre_save_validation": {
+    "artifact_status": "candidate pending independent saved-file audit",
+    "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+    "expected_dimensions_cm_exact": [
+      "50719500/517681",
+      "6644212/149985",
+      "170/1"
+    ],
+    "faces": 1186382,
+    "forbidden_equation_absent": true,
+    "local_y_mirror_count": 1,
+    "mesh_record_count": 50,
+    "observed_bounds": {
+      "dimensions_decimal": [
+        97.97442826760108,
+        44.299176584325096,
+        170.0
+      ],
+      "dimensions_exact": [
+        "50719500/517681",
+        "6644212/149985",
+        "170/1"
+      ],
+      "maximum_decimal": [
+        48.98721413380054,
+        22.149588292162548,
+        170.0
+      ],
+      "maximum_exact": [
+        "25359750/517681",
+        "3322106/149985",
+        "170/1"
+      ],
+      "minimum_decimal": [
+        -48.98721413380054,
+        -22.149588292162548,
+        0.0
+      ],
+      "minimum_exact": [
+        "-25359750/517681",
+        "-3322106/149985",
+        "0/1"
+      ]
+    },
+    "quarantined_geometry_read_count": 0,
+    "result": "PASS",
+    "shared_base_canonical_sha256": "ac0d08252ee71166842779bfb85904c4378ff1a9a4b8328d82dfac9c914e8049",
+    "shared_record_count": 46,
+    "surface_provenance_complete": true,
+    "surface_provenance_count": 50,
+    "triangles": 2368154,
+    "variant": "rune_side",
+    "variant_record_count": 4,
+    "vertices": 1205064,
+    "whole_asset_rz180_count": 1
+  },
+  "quarantined_geometry_read_count": 0,
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "schema": "AERATHEA_FRESH_TWIN_DCC_SOURCE_A01_ASSET_V1",
+  "shared_base": {
+    "bounds": {
+      "dimensions_decimal": [
+        97.97442826760108,
+        44.299176584325096,
+        170.0
+      ],
+      "dimensions_exact": [
+        "50719500/517681",
+        "6644212/149985",
+        "170/1"
+      ],
+      "maximum_decimal": [
+        48.98721413380054,
+        22.149588292162548,
+        170.0
+      ],
+      "maximum_exact": [
+        "25359750/517681",
+        "3322106/149985",
+        "170/1"
+      ],
+      "minimum_decimal": [
+        -48.98721413380054,
+        -22.149588292162548,
+        0.0
+      ],
+      "minimum_exact": [
+        "-25359750/517681",
+        "-3322106/149985",
+        "0/1"
+      ]
+    },
+    "canonical_sha256": "ac0d08252ee71166842779bfb85904c4378ff1a9a4b8328d82dfac9c914e8049",
+    "record_count": 46,
+    "report": {
+      "completed_shared_record_count": 46,
+      "inner_closure_metadata": {
+        "equation_id": "EQ_RULED_EXACT_BOUNDARY_CLOSURE",
+        "perimeter_vertices": 2177,
+        "steiner_vertices_used": false,
+        "tolerance_weld_used": false,
+        "triangles_per_side": 2175
+      },
+      "profile_metadata": {
+        "C06_UPPER_HAFT_CAP": {
+          "angular_divisions_positive_x": 64,
+          "bottom_world_z_exact": "102170/1063",
+          "component": "C06_UPPER_HAFT_CAP",
+          "first_radius_exact": "9860/1063",
+          "last_radius_exact": "5780/1063",
+          "ring_count": 71,
+          "row_count": 70,
+          "source_owner": "OWN_FRONT_C06",
+          "source_rows_half_open": [
+            600,
+            670
+          ],
+          "top_world_z_exact": "114070/1063"
+        },
+        "C07B_HAFT_TO_HANDLE_FERRULE": {
+          "angular_divisions_positive_x": 64,
+          "bottom_world_z_exact": "53720/1063",
+          "component": "C07B_HAFT_TO_HANDLE_FERRULE",
+          "first_radius_exact": "6460/1063",
+          "last_radius_exact": "6120/1063",
+          "ring_count": 86,
+          "row_count": 85,
+          "source_owner": "OWN_FRONT_C07B",
+          "source_rows_half_open": [
+            870,
+            955
+          ],
+          "top_world_z_exact": "68170/1063"
+        },
+        "C07_HAFT": {
+          "angular_divisions_positive_x": 64,
+          "bottom_world_z_exact": "68170/1063",
+          "component": "C07_HAFT",
+          "first_radius_exact": "5780/1063",
+          "last_radius_exact": "6290/1063",
+          "ring_count": 201,
+          "row_count": 200,
+          "source_owner": "OWN_FRONT_C07",
+          "source_rows_half_open": [
+            670,
+            870
+          ],
+          "top_world_z_exact": "102170/1063"
+        },
+        "C08_GRIP": {
+          "angular_divisions_positive_x": 64,
+          "bottom_world_z_exact": "27370/1063",
+          "component": "C08_GRIP",
+          "first_radius_exact": "5780/1063",
+          "last_radius_exact": "6460/1063",
+          "ring_count": 156,
+          "row_count": 155,
+          "source_owner": "OWN_FRONT_C08",
+          "source_rows_half_open": [
+            955,
+            1110
+          ],
+          "top_world_z_exact": "53720/1063"
+        },
+        "C09_LOWER_COLLAR": {
+          "angular_divisions_positive_x": 64,
+          "bottom_world_z_exact": "20570/1063",
+          "component": "C09_LOWER_COLLAR",
+          "first_radius_exact": "6460/1063",
+          "last_radius_exact": "9350/1063",
+          "ring_count": 41,
+          "row_count": 40,
+          "source_owner": "OWN_FRONT_C09",
+          "source_rows_half_open": [
+            1110,
+            1150
+          ],
+          "top_world_z_exact": "27370/1063"
+        },
+        "C10_POMMEL_BODY": {
+          "angular_divisions_positive_x": 64,
+          "bottom_world_z_exact": "8670/1063",
+          "component": "C10_POMMEL_BODY",
+          "first_radius_exact": "9520/1063",
+          "last_radius_exact": "9180/1063",
+          "ring_count": 71,
+          "row_count": 70,
+          "source_owner": "OWN_FRONT_C10",
+          "source_rows_half_open": [
+            1150,
+            1220
+          ],
+          "top_world_z_exact": "20570/1063"
+        },
+        "C11_POMMEL_TERMINAL_CAP": {
+          "angular_divisions_positive_x": 64,
+          "bottom_world_z_exact": "0/1",
+          "component": "C11_POMMEL_TERMINAL_CAP",
+          "first_radius_exact": "9010/1063",
+          "last_radius_exact": "170/1063",
+          "ring_count": 52,
+          "row_count": 51,
+          "source_owner": "OWN_FRONT_C11",
+          "source_rows_half_open": [
+            1220,
+            1271
+          ],
+          "top_world_z_exact": "8670/1063"
+        },
+        "C12_UPPER_HEAD_CAP_SPIRE": {
+          "angular_divisions_positive_x": 64,
+          "bottom_world_z_exact": "165920/1063",
+          "component": "C12_UPPER_HEAD_CAP_SPIRE",
+          "first_radius_exact": "340/1063",
+          "last_radius_exact": "12580/1063",
+          "ring_count": 88,
+          "row_count": 87,
+          "source_owner": "OWN_FRONT_C12_FULL",
+          "source_rows_half_open": [
+            208,
+            295
+          ],
+          "top_world_z_exact": "170/1"
+        }
+      },
+      "source_records_before_whole_asset_rz180": 22,
+      "stone_bottom_z_exact": "114070/1063",
+      "stone_top_z_exact": "178500/1063",
+      "surface_provenance": [
+        {
+          "equation_id": "EQ_FRONT_OWNER_CELL_AT_SHARED_FRONT_PLANE",
+          "faces": 46183,
+          "record": "SURF_C01_FRONT",
+          "source_owner": "OWN_FRONT_C01"
+        },
+        {
+          "equation_id": "EQ_FRONT_OWNER_CELL_AT_SHARED_FRONT_PLANE",
+          "faces": 71788,
+          "record": "SURF_C02_FRONT",
+          "source_owner": "OWN_FRONT_C02"
+        },
+        {
+          "equation_id": "EQ_FRONT_OWNER_CELL_AT_SHARED_FRONT_PLANE",
+          "faces": 71689,
+          "record": "SURF_C03_FRONT",
+          "source_owner": "OWN_FRONT_C03"
+        },
+        {
+          "equation_id": "EQ_AXIAL_OWNER_CELL_COMMON_BODY_LIMIT",
+          "faces": 67674,
+          "record": "SURF_C02_TOP_HALF",
+          "source_owner": "OWN_TOP_C02",
+          "stored_owner": "C02_STONE_LEFT"
+        },
+        {
+          "equation_id": "EQ_AXIAL_OWNER_CELL_COMMON_BODY_LIMIT",
+          "faces": 67107,
+          "record": "SURF_C03_TOP_HALF",
+          "source_owner": "OWN_TOP_C03",
+          "stored_owner": "C03_STONE_RIGHT"
+        },
+        {
+          "equation_id": "EQ_AXIAL_OWNER_CELL_COMMON_BODY_LIMIT",
+          "faces": 65361,
+          "record": "SURF_C02_BOTTOM_HALF",
+          "source_owner": "OWN_BOTTOM_C02_LOGICAL",
+          "stored_owner": "C03_STONE_RIGHT"
+        },
+        {
+          "equation_id": "EQ_AXIAL_OWNER_CELL_COMMON_BODY_LIMIT",
+          "faces": 65141,
+          "record": "SURF_C03_BOTTOM_HALF",
+          "source_owner": "OWN_BOTTOM_C03_LOGICAL",
+          "stored_owner": "C02_STONE_LEFT"
+        },
+        {
+          "equation_id": "EQ_FRONT_OWNER_EDGE_ROTATION_ABOUT_Z",
+          "faces": 4480,
+          "record": "SURF_C06_UPPER_HAFT_CAP_ROTATIONAL_HALF",
+          "source_owner": "OWN_FRONT_C06"
+        },
+        {
+          "equation_id": "EQ_FRONT_OWNER_EDGE_ROTATION_ABOUT_Z",
+          "faces": 12800,
+          "record": "SURF_C07_HAFT_ROTATIONAL_HALF",
+          "source_owner": "OWN_FRONT_C07"
+        },
+        {
+          "equation_id": "EQ_FRONT_OWNER_EDGE_ROTATION_ABOUT_Z",
+          "faces": 5440,
+          "record": "SURF_C07B_HAFT_TO_HANDLE_FERRULE_ROTATIONAL_HALF",
+          "source_owner": "OWN_FRONT_C07B"
+        },
+        {
+          "equation_id": "EQ_FRONT_OWNER_EDGE_ROTATION_ABOUT_Z",
+          "faces": 9920,
+          "record": "SURF_C08_GRIP_ROTATIONAL_HALF",
+          "source_owner": "OWN_FRONT_C08"
+        },
+        {
+          "equation_id": "EQ_FRONT_OWNER_EDGE_ROTATION_ABOUT_Z",
+          "faces": 2560,
+          "record": "SURF_C09_LOWER_COLLAR_ROTATIONAL_HALF",
+          "source_owner": "OWN_FRONT_C09"
+        },
+        {
+          "equation_id": "EQ_FRONT_OWNER_EDGE_ROTATION_ABOUT_Z",
+          "faces": 4480,
+          "record": "SURF_C10_POMMEL_BODY_ROTATIONAL_HALF",
+          "source_owner": "OWN_FRONT_C10"
+        },
+        {
+          "equation_id": "EQ_FRONT_OWNER_EDGE_ROTATION_ABOUT_Z",
+          "faces": 3264,
+          "record": "SURF_C11_POMMEL_TERMINAL_CAP_ROTATIONAL_HALF",
+          "source_owner": "OWN_FRONT_C11"
+        },
+        {
+          "equation_id": "EQ_FRONT_OWNER_EDGE_ROTATION_ABOUT_Z",
+          "faces": 5568,
+          "record": "SURF_C12_UPPER_HEAD_CAP_SPIRE_ROTATIONAL_HALF",
+          "source_owner": "OWN_FRONT_C12_FULL"
+        },
+        {
+          "equation_id": "EQ_EXACT_PLANAR_HALF_ANNULAR_SHOULDER",
+          "faces": 64,
+          "record": "CONTACT_C01_CENTER_CORE_TO_C06_UPPER_HAFT_CAP",
+          "source_owner": "C01_CENTER_CORE:row=599;C06_UPPER_HAFT_CAP:row=600"
+        },
+        {
+          "equation_id": "EQ_EXACT_PLANAR_HALF_ANNULAR_SHOULDER",
+          "faces": 64,
+          "record": "CONTACT_C07_HAFT_TO_C07B_HAFT_TO_HANDLE_FERRULE",
+          "source_owner": "C07_HAFT:row=869;C07B_HAFT_TO_HANDLE_FERRULE:row=870"
+        },
+        {
+          "equation_id": "EQ_EXACT_PLANAR_HALF_ANNULAR_SHOULDER",
+          "faces": 64,
+          "record": "CONTACT_C07B_HAFT_TO_HANDLE_FERRULE_TO_C08_GRIP",
+          "source_owner": "C07B_HAFT_TO_HANDLE_FERRULE:row=954;C08_GRIP:row=955"
+        },
+        {
+          "equation_id": "EQ_EXACT_PLANAR_HALF_ANNULAR_SHOULDER",
+          "faces": 64,
+          "record": "CONTACT_C09_LOWER_COLLAR_TO_C10_POMMEL_BODY",
+          "source_owner": "C09_LOWER_COLLAR:row=1149;C10_POMMEL_BODY:row=1150"
+        },
+        {
+          "equation_id": "EQ_EXACT_PLANAR_HALF_ANNULAR_SHOULDER",
+          "faces": 64,
+          "record": "CONTACT_C10_POMMEL_BODY_TO_C11_POMMEL_TERMINAL_CAP",
+          "source_owner": "C10_POMMEL_BODY:row=1219;C11_POMMEL_TERMINAL_CAP:row=1220"
+        },
+        {
+          "equation_id": "EQ_EXACT_SOURCE_RADIUS_TERMINAL_HALF_CAP",
+          "faces": 64,
+          "record": "CAP_C11_BOTTOM",
+          "source_owner": "OWN_FRONT_C11:row=1270"
+        },
+        {
+          "equation_id": "EQ_EXACT_SOURCE_RADIUS_TERMINAL_HALF_CAP",
+          "faces": 64,
+          "record": "CAP_C12_TOP",
+          "source_owner": "OWN_FRONT_C12_FULL:row=208"
+        },
+        {
+          "equation_id": "EQ_RULED_EXACT_BOUNDARY_CLOSURE",
+          "faces": 2175,
+          "record": "CLOSURE_C02_INNER_EXACT_BOUNDARIES",
+          "source_owner": "FRONT/TOP/BOTTOM_C02_C03_INNER_OWNER_EDGE_SETS"
+        },
+        {
+          "equation_id": "EQ_RULED_EXACT_BOUNDARY_CLOSURE",
+          "faces": 2175,
+          "record": "CLOSURE_C03_INNER_EXACT_BOUNDARIES",
+          "source_owner": "FRONT/TOP/BOTTOM_C02_C03_INNER_OWNER_EDGE_SETS"
+        }
+      ],
+      "transition_report": [
+        {
+          "faces": 0,
+          "lower_component": "C01_CENTER_CORE",
+          "lower_radius_exact": "12580/1063",
+          "method": "coordinate_equal_common_half_ring",
+          "source_edge_y": 295,
+          "upper_component": "C12_UPPER_HEAD_CAP_SPIRE",
+          "upper_radius_exact": "12580/1063",
+          "world_z_exact": "165920/1063"
+        },
+        {
+          "faces": 64,
+          "lower_component": "C06_UPPER_HAFT_CAP",
+          "lower_radius_exact": "9860/1063",
+          "method": "exact_source_radii_half_annular_shoulder",
+          "source_edge_y": 600,
+          "upper_component": "C01_CENTER_CORE",
+          "upper_radius_exact": "9690/1063",
+          "world_z_exact": "114070/1063"
+        },
+        {
+          "faces": 0,
+          "lower_component": "C07_HAFT",
+          "lower_radius_exact": "5780/1063",
+          "method": "coordinate_equal_common_half_ring",
+          "source_edge_y": 670,
+          "upper_component": "C06_UPPER_HAFT_CAP",
+          "upper_radius_exact": "5780/1063",
+          "world_z_exact": "102170/1063"
+        },
+        {
+          "faces": 64,
+          "lower_component": "C07B_HAFT_TO_HANDLE_FERRULE",
+          "lower_radius_exact": "6460/1063",
+          "method": "exact_source_radii_half_annular_shoulder",
+          "source_edge_y": 870,
+          "upper_component": "C07_HAFT",
+          "upper_radius_exact": "6290/1063",
+          "world_z_exact": "68170/1063"
+        },
+        {
+          "faces": 64,
+          "lower_component": "C08_GRIP",
+          "lower_radius_exact": "5780/1063",
+          "method": "exact_source_radii_half_annular_shoulder",
+          "source_edge_y": 955,
+          "upper_component": "C07B_HAFT_TO_HANDLE_FERRULE",
+          "upper_radius_exact": "6120/1063",
+          "world_z_exact": "53720/1063"
+        },
+        {
+          "faces": 0,
+          "lower_component": "C09_LOWER_COLLAR",
+          "lower_radius_exact": "6460/1063",
+          "method": "coordinate_equal_common_half_ring",
+          "source_edge_y": 1110,
+          "upper_component": "C08_GRIP",
+          "upper_radius_exact": "6460/1063",
+          "world_z_exact": "27370/1063"
+        },
+        {
+          "faces": 64,
+          "lower_component": "C10_POMMEL_BODY",
+          "lower_radius_exact": "9520/1063",
+          "method": "exact_source_radii_half_annular_shoulder",
+          "source_edge_y": 1150,
+          "upper_component": "C09_LOWER_COLLAR",
+          "upper_radius_exact": "9350/1063",
+          "world_z_exact": "20570/1063"
+        },
+        {
+          "faces": 64,
+          "lower_component": "C11_POMMEL_TERMINAL_CAP",
+          "lower_radius_exact": "9010/1063",
+          "method": "exact_source_radii_half_annular_shoulder",
+          "source_edge_y": 1220,
+          "upper_component": "C10_POMMEL_BODY",
+          "upper_radius_exact": "9180/1063",
+          "world_z_exact": "8670/1063"
+        }
+      ],
+      "whole_asset_rz180_count": 1
+    }
+  },
+  "source_authority_checks": [
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01.json",
+      "result": "PASS",
+      "sha256": "efdbd8795dff2031fcde9e734868ff4c617dc37ad1e7b3743c3727daea981d58"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_AUTHORITY_LOCK.json",
+      "result": "PASS",
+      "sha256": "6889b826481e5e11dd10775f2b81467b1014687b7fda9ebbff62d519bfff09bc"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_VALIDATION.json",
+      "result": "PASS",
+      "sha256": "48e53e3ddfff94319927aebaec47fcbe9c40ea7369c20a4b73cdc0c38fa47ff5"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/FRESH_TWIN_DCC_SOURCE_BUILDER_A01_APPROVAL_RECORD.md",
+      "result": "PASS",
+      "sha256": "8b59685cf27656805ecf73385ab980c1d96dec2686ac1928f6f547f4dad787ef"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/manifests/A11_TRUE_AXIAL_TOP_BOTTOM_PIXEL_MEASUREMENT.json",
+      "result": "PASS",
+      "sha256": "46877ab4b0142d8141deb4feab234f461a31e61e118d3ce7b41e0b3679786096"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_05_PIXEL_WORLD_REGISTRATION_LOCK.json",
+      "result": "PASS",
+      "sha256": "aed4b8d87a4a5b442c0465c9db59fa524f63797153d662e1a5e7cf90423a2446"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_06_FRONT_MEASUREMENT_CONTRACT.json",
+      "result": "PASS",
+      "sha256": "85f09fc89c8b73df8e6fdf47924e2251da9dda6decabe44fa3f3b2577b7708eb"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_07_RIGHT_MEASUREMENT_CONTRACT.json",
+      "result": "PASS",
+      "sha256": "977831e86b02148125a7e1a04024d2d114721590ebf63937bdd314d02cc427c9"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_08_TOP_MEASUREMENT_CONTRACT.json",
+      "result": "PASS",
+      "sha256": "5925dee1ab39a0535150804a4353157b17d51fec648791774808c9c832dd8b36"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_08_BOTTOM_MEASUREMENT_CONTRACT.json",
+      "result": "PASS",
+      "sha256": "aea70d998dabe9f28d3ec5fb44a2d2206f8874096a3d33ee9b836074b2ede9a2"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_09_INTEGRATED_EXACT_MEASUREMENT_INDEX.json",
+      "result": "PASS",
+      "sha256": "5a0a3eea8f877d55216f9efabe15b0ee1cf938e4c15a825a0e218f72ba76839a"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/manifests/STEP_09A_AUTHORITY_LOCK.json",
+      "result": "PASS",
+      "sha256": "a7e07ad68e9b2737c7c70e71e9df714766a285695693e741197900e17c3a06a5"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/manifests/STEP_09A_BOUNDARY_AND_CORRESPONDENCE_INDEX.json",
+      "result": "PASS",
+      "sha256": "e190ed266753c797d4f9ec812154ff3b29f5d5d780e53e235e780c43492d0bd8"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/evidence/STEP_09A_COMPONENT_SCANLINES.json.gz",
+      "result": "PASS",
+      "sha256": "396adfbaaefc8a8ea35104e5e96dfde322510fb4ce88530fbb32f7f3073b3562"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_12_ENVIRONMENT_LOCK_A01.json",
+      "result": "PASS",
+      "sha256": "a2d9be9162d3aa5440492765aafe621e63bc4a1f80814bd523dce20dae7b66f8"
+    },
+    {
+      "path": "Tools/External/Blender/blender-4.5.11-linux-x64/blender",
+      "result": "PASS",
+      "sha256": "dc72290ee8651c93c4a946c012c5f2a034946fd320e6c3ab214fa23181427428"
+    }
+  ],
+  "variant_report": {
+    "closure_metadata": {
+      "c04_loop_vertices": 978,
+      "equation_id": "EQ_RULED_C04_TO_SHARED_BODY_BOUNDARIES",
+      "ruled_faces_per_side": 3055,
+      "shared_parameter_breakpoints": 3056,
+      "stone_loop_vertices": 2080,
+      "variant_local_c04": true
+    },
+    "domain_is_registration_not_fill": true,
+    "local_domain_half_extent_expected_exact": "9435/548",
+    "local_domain_half_extent_observed_exact": "9435/548",
+    "local_y_mirror_count": 1,
+    "owner_name": "C04_RUNE_SIDE",
+    "record_count": 4,
+    "source_interval_half_open": [
+      557,
+      668
+    ],
+    "surface_provenance": [
+      {
+        "equation_id": "EQ_C04_RUNE_LOCAL_HALF",
+        "faces": 84058,
+        "record": "SURF_C04_RUNE_LOCAL_HALF",
+        "source_owner": "OWN_RIGHT_C04_RUNE"
+      },
+      {
+        "equation_id": "EQ_C04_RUNE_LOCAL_HALF",
+        "faces": 84058,
+        "record": "SURF_C04_RUNE_LOCAL_HALF__RZ180",
+        "source_owner": "OWN_RIGHT_C04_RUNE"
+      },
+      {
+        "equation_id": "EQ_RULED_C04_TO_SHARED_BODY_BOUNDARIES",
+        "faces": 3055,
+        "record": "CLOSURE_C04_RUNE_TO_SHARED_STONE_POSITIVE_X",
+        "source_owner": "C04_RUNE_SIDE+FRONT/TOP/BOTTOM_C02_C03_OUTER_OWNER_EDGES"
+      },
+      {
+        "equation_id": "EQ_RULED_C04_TO_SHARED_BODY_BOUNDARIES",
+        "faces": 3055,
+        "record": "CLOSURE_C04_RUNE_TO_SHARED_STONE_POSITIVE_X__RZ180",
+        "source_owner": "C04_RUNE_SIDE+FRONT/TOP/BOTTOM_C02_C03_OUTER_OWNER_EDGES"
+      }
+    ],
+    "variant": "rune_side",
+    "visible_face_fills_entire_domain": true,
+    "visible_face_half_extent_observed_exact": "9435/548",
+    "whole_asset_rz180_count": 1
+  }
+}

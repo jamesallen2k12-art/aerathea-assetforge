@@ -1,0 +1,160 @@
+{
+  "artifact_status": "candidate pending independent saved-file audit",
+  "assets": {
+    "foe_hammer": {
+      "asset_id": "SM_DRW_FoeHammer_Hammer_A01",
+      "blend": {
+        "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_FoeHammer_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/SM_DRW_FoeHammer_Hammer_A01_DCCSource_SharedDepth_A01.blend",
+        "sha256": "67737a3c561cd6462af3657ea93488af76f32a5815ee0b4d5887182d14c761d4"
+      },
+      "manifest": {
+        "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_FoeHammer_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/build_manifest.json",
+        "sha256": "c49bb3d6b57fc7054ebded933f1847a4fa27d128aca00bca953e76cb4a86a99c"
+      },
+      "observed_dimensions_cm_exact": [
+        "50719500/517681",
+        "6644212/149985",
+        "170/1"
+      ],
+      "output_root": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_FoeHammer_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01",
+      "pre_save_result": "PASS",
+      "shared_base_canonical_sha256": "ac0d08252ee71166842779bfb85904c4378ff1a9a4b8328d82dfac9c914e8049",
+      "variant": "metal_center_piece_side"
+    },
+    "siege_breaker": {
+      "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+      "blend": {
+        "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/SM_DRW_SiegeBreaker_Hammer_A01_DCCSource_SharedDepth_A01.blend",
+        "sha256": "c69b415ac3429091c6aa77d24ffcd6d88bbd0f9fc711e3862c2c7e7b51034537"
+      },
+      "manifest": {
+        "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/build_manifest.json",
+        "sha256": "24dce5c7b173c36afd4fa73b710c0048f776edeffdf32f477aae48c9cbc987f7"
+      },
+      "observed_dimensions_cm_exact": [
+        "50719500/517681",
+        "6644212/149985",
+        "170/1"
+      ],
+      "output_root": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01",
+      "pre_save_result": "PASS",
+      "shared_base_canonical_sha256": "ac0d08252ee71166842779bfb85904c4378ff1a9a4b8328d82dfac9c914e8049",
+      "variant": "rune_side"
+    }
+  },
+  "build_id": "FRESH_TWIN_DCC_SOURCE_BUILDER_A01",
+  "builder": {
+    "path": "Tools/DCC/build_siegebreaker_foehammer_shared_depth_a01.py",
+    "sha256": "592a1e49eb45cd93d56b1e883d323cf35114b0124899b1e04d789fbf3c6f3f35"
+  },
+  "canonical_shared_base_sha256": "ac0d08252ee71166842779bfb85904c4378ff1a9a4b8328d82dfac9c914e8049",
+  "cross_asset_exact_bound_difference_cm": [
+    "0/1",
+    "0/1",
+    "0/1"
+  ],
+  "date_utc": "2026-07-24T15:54:28.050225+00:00",
+  "exact_shared_dimensions_cm": [
+    "50719500/517681",
+    "6644212/149985",
+    "170/1"
+  ],
+  "fresh_builder_approval": {
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/FRESH_TWIN_DCC_SOURCE_BUILDER_A01_APPROVAL_RECORD.md",
+    "sha256": "8b59685cf27656805ecf73385ab980c1d96dec2686ac1928f6f547f4dad787ef"
+  },
+  "governing_blueprint": {
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01.json",
+    "sha256": "efdbd8795dff2031fcde9e734868ff4c617dc37ad1e7b3743c3727daea981d58"
+  },
+  "input_geometry_files": [],
+  "next_gate": "independent saved-file and cross-asset audit",
+  "quarantined_geometry_read_count": 0,
+  "result": "PRE_SAVE_PASS",
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "schema": "AERATHEA_FRESH_TWIN_DCC_SOURCE_BUILDER_A01_V1",
+  "source_authority_checks": [
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01.json",
+      "result": "PASS",
+      "sha256": "efdbd8795dff2031fcde9e734868ff4c617dc37ad1e7b3743c3727daea981d58"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_AUTHORITY_LOCK.json",
+      "result": "PASS",
+      "sha256": "6889b826481e5e11dd10775f2b81467b1014687b7fda9ebbff62d519bfff09bc"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_VALIDATION.json",
+      "result": "PASS",
+      "sha256": "48e53e3ddfff94319927aebaec47fcbe9c40ea7369c20a4b73cdc0c38fa47ff5"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/FRESH_TWIN_DCC_SOURCE_BUILDER_A01_APPROVAL_RECORD.md",
+      "result": "PASS",
+      "sha256": "8b59685cf27656805ecf73385ab980c1d96dec2686ac1928f6f547f4dad787ef"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/manifests/A11_TRUE_AXIAL_TOP_BOTTOM_PIXEL_MEASUREMENT.json",
+      "result": "PASS",
+      "sha256": "46877ab4b0142d8141deb4feab234f461a31e61e118d3ce7b41e0b3679786096"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_05_PIXEL_WORLD_REGISTRATION_LOCK.json",
+      "result": "PASS",
+      "sha256": "aed4b8d87a4a5b442c0465c9db59fa524f63797153d662e1a5e7cf90423a2446"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_06_FRONT_MEASUREMENT_CONTRACT.json",
+      "result": "PASS",
+      "sha256": "85f09fc89c8b73df8e6fdf47924e2251da9dda6decabe44fa3f3b2577b7708eb"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_07_RIGHT_MEASUREMENT_CONTRACT.json",
+      "result": "PASS",
+      "sha256": "977831e86b02148125a7e1a04024d2d114721590ebf63937bdd314d02cc427c9"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_08_TOP_MEASUREMENT_CONTRACT.json",
+      "result": "PASS",
+      "sha256": "5925dee1ab39a0535150804a4353157b17d51fec648791774808c9c832dd8b36"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_08_BOTTOM_MEASUREMENT_CONTRACT.json",
+      "result": "PASS",
+      "sha256": "aea70d998dabe9f28d3ec5fb44a2d2206f8874096a3d33ee9b836074b2ede9a2"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_09_INTEGRATED_EXACT_MEASUREMENT_INDEX.json",
+      "result": "PASS",
+      "sha256": "5a0a3eea8f877d55216f9efabe15b0ee1cf938e4c15a825a0e218f72ba76839a"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/manifests/STEP_09A_AUTHORITY_LOCK.json",
+      "result": "PASS",
+      "sha256": "a7e07ad68e9b2737c7c70e71e9df714766a285695693e741197900e17c3a06a5"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/manifests/STEP_09A_BOUNDARY_AND_CORRESPONDENCE_INDEX.json",
+      "result": "PASS",
+      "sha256": "e190ed266753c797d4f9ec812154ff3b29f5d5d780e53e235e780c43492d0bd8"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/evidence/STEP_09A_COMPONENT_SCANLINES.json.gz",
+      "result": "PASS",
+      "sha256": "396adfbaaefc8a8ea35104e5e96dfde322510fb4ce88530fbb32f7f3073b3562"
+    },
+    {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_12_ENVIRONMENT_LOCK_A01.json",
+      "result": "PASS",
+      "sha256": "a2d9be9162d3aa5440492765aafe621e63bc4a1f80814bd523dce20dae7b66f8"
+    },
+    {
+      "path": "Tools/External/Blender/blender-4.5.11-linux-x64/blender",
+      "result": "PASS",
+      "sha256": "dc72290ee8651c93c4a946c012c5f2a034946fd320e6c3ab214fa23181427428"
+    }
+  ],
+  "step_13_authority": false,
+  "unreal_authority": false
+}

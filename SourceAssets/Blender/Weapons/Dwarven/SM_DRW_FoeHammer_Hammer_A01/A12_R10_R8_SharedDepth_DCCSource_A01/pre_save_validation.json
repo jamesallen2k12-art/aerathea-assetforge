@@ -1,0 +1,56 @@
+{
+  "artifact_status": "candidate pending independent saved-file audit",
+  "asset_id": "SM_DRW_FoeHammer_Hammer_A01",
+  "expected_dimensions_cm_exact": [
+    "50719500/517681",
+    "6644212/149985",
+    "170/1"
+  ],
+  "faces": 1168246,
+  "forbidden_equation_absent": true,
+  "local_y_mirror_count": 1,
+  "mesh_record_count": 50,
+  "observed_bounds": {
+    "dimensions_decimal": [
+      97.97442826760108,
+      44.299176584325096,
+      170.0
+    ],
+    "dimensions_exact": [
+      "50719500/517681",
+      "6644212/149985",
+      "170/1"
+    ],
+    "maximum_decimal": [
+      48.98721413380054,
+      22.149588292162548,
+      170.0
+    ],
+    "maximum_exact": [
+      "25359750/517681",
+      "3322106/149985",
+      "170/1"
+    ],
+    "minimum_decimal": [
+      -48.98721413380054,
+      -22.149588292162548,
+      0.0
+    ],
+    "minimum_exact": [
+      "-25359750/517681",
+      "-3322106/149985",
+      "0/1"
+    ]
+  },
+  "quarantined_geometry_read_count": 0,
+  "result": "PASS",
+  "shared_base_canonical_sha256": "ac0d08252ee71166842779bfb85904c4378ff1a9a4b8328d82dfac9c914e8049",
+  "shared_record_count": 46,
+  "surface_provenance_complete": true,
+  "surface_provenance_count": 50,
+  "triangles": 2331882,
+  "variant": "metal_center_piece_side",
+  "variant_record_count": 4,
+  "vertices": 1186812,
+  "whole_asset_rz180_count": 1
+}

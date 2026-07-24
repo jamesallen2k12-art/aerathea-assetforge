@@ -1,0 +1,79 @@
+{
+  "artifact_status": "proof only",
+  "asset_audits": {
+    "foe_hammer": {
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_FoeHammer_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/independent_saved_file_audit.json",
+      "sha256": "9107b943046cfe3373e301e88636ee628817c7e7766892048136de7a70e9b846"
+    },
+    "siege_breaker": {
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/independent_saved_file_audit.json",
+      "sha256": "52fa75f4708b95e6b1150ccffb150672f09c6697f5bcd88871440d1a464f28e0"
+    }
+  },
+  "auditor": {
+    "path": "Tools/DCC/audit_siegebreaker_foehammer_shared_depth_a01.py",
+    "sha256": "c54c504160f2b82b8f01d952265be78117287972b5819d3f0ff24a94babbcd36"
+  },
+  "authority_checks": [
+    {
+      "expected_sha256": "efdbd8795dff2031fcde9e734868ff4c617dc37ad1e7b3743c3727daea981d58",
+      "observed_sha256": "efdbd8795dff2031fcde9e734868ff4c617dc37ad1e7b3743c3727daea981d58",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01.json",
+      "result": "PASS"
+    },
+    {
+      "expected_sha256": "6889b826481e5e11dd10775f2b81467b1014687b7fda9ebbff62d519bfff09bc",
+      "observed_sha256": "6889b826481e5e11dd10775f2b81467b1014687b7fda9ebbff62d519bfff09bc",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_AUTHORITY_LOCK.json",
+      "result": "PASS"
+    },
+    {
+      "expected_sha256": "8b59685cf27656805ecf73385ab980c1d96dec2686ac1928f6f547f4dad787ef",
+      "observed_sha256": "8b59685cf27656805ecf73385ab980c1d96dec2686ac1928f6f547f4dad787ef",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/FRESH_TWIN_DCC_SOURCE_BUILDER_A01_APPROVAL_RECORD.md",
+      "result": "PASS"
+    },
+    {
+      "expected_sha256": "dc72290ee8651c93c4a946c012c5f2a034946fd320e6c3ab214fa23181427428",
+      "observed_sha256": "dc72290ee8651c93c4a946c012c5f2a034946fd320e6c3ab214fa23181427428",
+      "path": "Tools/External/Blender/blender-4.5.11-linux-x64/blender",
+      "result": "PASS"
+    }
+  ],
+  "build_id": "FRESH_TWIN_DCC_SOURCE_BUILDER_A01",
+  "builder_exact_shared_base_canonical_sha256": "ac0d08252ee71166842779bfb85904c4378ff1a9a4b8328d82dfac9c914e8049",
+  "checks": {
+    "both_quarantined_geometry_read_counts_zero": true,
+    "builder_exact_shared_base_hash_equal": true,
+    "foe_hammer_saved_file_audit_pass": true,
+    "observed_xyz_difference_zero": true,
+    "observed_xyz_dimensions_bitwise_equal": true,
+    "saved_shared_base_hash_equal": true,
+    "siege_breaker_saved_file_audit_pass": true,
+    "step_13_remains_locked": true,
+    "unreal_remains_locked": true,
+    "variant_assignments_correct": true
+  },
+  "classification_if_pass": {
+    "SM_DRW_FoeHammer_Hammer_A01": "DCC source candidate",
+    "SM_DRW_SiegeBreaker_Hammer_A01": "DCC source candidate"
+  },
+  "date_utc": "2026-07-24T15:54:48.664946+00:00",
+  "expected_shared_dimensions_cm_exact": [
+    "50719500/517681",
+    "6644212/149985",
+    "170/1"
+  ],
+  "observed_cross_asset_dimension_difference_cm": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "result": "PASS",
+  "retopology_uv_bake_export_authority": false,
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "saved_shared_base_canonical_sha256": "f03b975b03141204b4a3c061306d8f48f8668e2a2bdcd214d1f72f555efe86c4",
+  "schema": "AERATHEA_FRESH_TWIN_DCC_SOURCE_INDEPENDENT_AUDIT_V1",
+  "step_13_authority": false,
+  "unreal_authority": false
+}

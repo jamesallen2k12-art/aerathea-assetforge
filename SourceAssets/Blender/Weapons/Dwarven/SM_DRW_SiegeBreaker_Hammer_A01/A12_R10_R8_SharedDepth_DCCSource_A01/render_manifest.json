@@ -1,0 +1,26 @@
+{
+  "artifact_status": "candidate review evidence",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "independent_audit_sha256": "52fa75f4708b95e6b1150ccffb150672f09c6697f5bcd88871440d1a464f28e0",
+  "schema": "AERATHEA_FRESH_TWIN_DCC_SOURCE_RENDER_A01_V1",
+  "step_13_authority": false,
+  "unreal_authority": false,
+  "views": {
+    "front": {
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/renders/front.png",
+      "sha256": "f55b20c9aa516e6c7cd9f53c7a50d4c7f4bc3d7d3702f7242a812ee1e46689ec"
+    },
+    "right": {
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/renders/right.png",
+      "sha256": "e452258c332108a5c5ab44ce1cfe16400d33bc49c08349f2d8e0135108f03904"
+    },
+    "three_quarter": {
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/renders/three_quarter.png",
+      "sha256": "2b6506066db9a5856b91a4a23123d51b485393f33678c216793c2cca16d51133"
+    },
+    "top": {
+      "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/renders/top.png",
+      "sha256": "f28e35fe1a53d3c079ff88a66702e5e5a803388642e4c0fe3317674756c5e373"
+    }
+  }
+}
