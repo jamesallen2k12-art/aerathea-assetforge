@@ -1,0 +1,776 @@
+{
+  "artifact_status": "proof only",
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "audit_independence": {
+    "blender_started": false,
+    "builder_claims_trusted": false,
+    "builder_created": false,
+    "builder_imported": false,
+    "expected_values_read_from": [
+      "hash-locked Step 11 blueprint",
+      "hash-locked Step 09A component scanlines",
+      "hash-locked Step 09A ordered boundary records",
+      "hash-locked pixel/world equations",
+      "asset-specific Flamestrike high-poly/Nanite amendment",
+      "Flamestrike-approved bottom C02/C03 label correction"
+    ],
+    "geometry_created": false,
+    "python": "3.10.12"
+  },
+  "closed_world_decision": {
+    "approved_semantic_resolution": {
+      "logical_BOTTOM_C02_INNER_OWNER_EDGE": "stored BOTTOM_C03_INNER_OWNER_EDGE payload",
+      "logical_BOTTOM_C03_INNER_OWNER_EDGE": "stored BOTTOM_C02_INNER_OWNER_EDGE payload",
+      "logical_OWN_BOTTOM_C02": "stored OWN_BOTTOM_C03 payload",
+      "logical_OWN_BOTTOM_C03": "stored OWN_BOTTOM_C02 payload"
+    },
+    "blender_production_allowed_after_required_checkpoint": false,
+    "bottom_x_equation": "X=(1529/2-x)*52020/517681",
+    "builder_creation_allowed": false,
+    "coordinate_flip_applied": false,
+    "geometry_created": false,
+    "source_pixels_changed": false,
+    "stored_evidence_changed": false
+  },
+  "closure_constructibility_preflight": {
+    "checks": [
+      {
+        "boundary_ref_count": 3,
+        "boundary_refs": [
+          "FRONT_C02_INNER_OWNER_EDGE",
+          "TOP_C02_INNER_OWNER_EDGE",
+          "BOTTOM_C02_INNER_OWNER_EDGE"
+        ],
+        "explicit_pairings": null,
+        "formula_arity": 2,
+        "id": "CONSTRUCTIBILITY-CLOSURE_C02_INNER",
+        "method": "ordered_straight_ruled_faces",
+        "name": "CLOSURE_C02_INNER defines the exact ordered boundary pairs consumed by its binary ruled-face equation",
+        "result": "fail",
+        "risk_if_inferred": "An inferred pairing can create a non-manifold duplicate wall, omit an owner boundary, or close a protected gap.",
+        "ruled_face_formula": "R(s,t)=(1-t)*A(s)+t*B(s), 0<=t<=1"
+      },
+      {
+        "boundary_ref_count": 3,
+        "boundary_refs": [
+          "FRONT_C03_INNER_OWNER_EDGE",
+          "TOP_C03_INNER_OWNER_EDGE",
+          "BOTTOM_C03_INNER_OWNER_EDGE"
+        ],
+        "explicit_pairings": null,
+        "formula_arity": 2,
+        "id": "CONSTRUCTIBILITY-CLOSURE_C03_INNER",
+        "method": "ordered_straight_ruled_faces",
+        "name": "CLOSURE_C03_INNER defines the exact ordered boundary pairs consumed by its binary ruled-face equation",
+        "result": "fail",
+        "risk_if_inferred": "An inferred pairing can create a non-manifold duplicate wall, omit an owner boundary, or close a protected gap.",
+        "ruled_face_formula": "R(s,t)=(1-t)*A(s)+t*B(s), 0<=t<=1"
+      }
+    ],
+    "failed": 2,
+    "missing_authority": "Each stone closure cites ordered front, top, and bottom boundary sets, while EQ_ORDERED_RULED_FACE consumes only A(s) and B(s). The blueprint supplies no explicit pairing graph or three-boundary surface rule.",
+    "passed": 0,
+    "result": "BLOCKED",
+    "total": 2
+  },
+  "correction_validation": {
+    "authority_checks_failed": 0,
+    "authority_checks_passed": 40,
+    "checks": [
+      {
+        "expected_sha256": "2b598497ba5e61a4352c217f3fb20b3545189c710934f3a21d9b7398ddb472c7",
+        "id": "AUTH-blueprint",
+        "observed_sha256": "2b598497ba5e61a4352c217f3fb20b3545189c710934f3a21d9b7398ddb472c7",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_11_PRODUCTION_GEOMETRY_BLUEPRINT.json",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "2e4276ea0adc32d8c6a21fb5bfbd46eacf627a9708c6187e56be1556eee76ba6",
+        "id": "AUTH-amendment",
+        "observed_sha256": "2e4276ea0adc32d8c6a21fb5bfbd46eacf627a9708c6187e56be1556eee76ba6",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_11B_HIGH_POLY_NANITE_PERFORMANCE_AMENDMENT_A01.md",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "45cc92d07f90fdb1bb104c8ede5e9fb6e6161454ea91d0923dc6f81cf02512d1",
+        "id": "AUTH-parity_amendment",
+        "observed_sha256": "45cc92d07f90fdb1bb104c8ede5e9fb6e6161454ea91d0923dc6f81cf02512d1",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_11C_BOTTOM_C02_C03_LABEL_CORRECTION_A01.md",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "3235fcc9480ad246f968b275792aa3a309aa34710b5bfec3fc005980ae3d5069",
+        "id": "AUTH-step11_authority_lock",
+        "observed_sha256": "3235fcc9480ad246f968b275792aa3a309aa34710b5bfec3fc005980ae3d5069",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_11_PRODUCTION_BLUEPRINT_A02_AUTHORITY_LOCK.json",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "a3f16266da53ed28a0c849818271dea0c07cd8ba8005e05a6778e2a0f6d2935b",
+        "id": "AUTH-step12_contract",
+        "observed_sha256": "a3f16266da53ed28a0c849818271dea0c07cd8ba8005e05a6778e2a0f6d2935b",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_12_FRESH_DCC_SOURCE_GEOMETRY_A01_PROPOSED_CONTRACT.md",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "2b6fedd15020808beb63ff556c66bc52114a06cd69331f72bfe637caea69e7d7",
+        "id": "AUTH-step12_approval",
+        "observed_sha256": "2b6fedd15020808beb63ff556c66bc52114a06cd69331f72bfe637caea69e7d7",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_12_FRESH_DCC_SOURCE_GEOMETRY_A01_APPROVAL_RECORD.md",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "5d2d2637a58113f0a6f5ec92e40d8bb2bda9e03fb58b4868a0d9dfbb3b57ad55",
+        "id": "AUTH-CATALOG-agents",
+        "observed_sha256": "5d2d2637a58113f0a6f5ec92e40d8bb2bda9e03fb58b4868a0d9dfbb3b57ad55",
+        "path": "AGENTS.md",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "6e2786e5d283f0176f90f83a80493c04581a6680aab32b3214c52403382e522f",
+        "id": "AUTH-CATALOG-approval_record",
+        "observed_sha256": "6e2786e5d283f0176f90f83a80493c04581a6680aab32b3214c52403382e522f",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_11_PRODUCTION_BLUEPRINT_A02_APPROVAL_RECORD.md",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "8ee99d2b5c510a540623aa4a69154b3bc0da9c7a9e846a42194a0dabe716d1b4",
+        "id": "AUTH-CATALOG-closure_amendment",
+        "observed_sha256": "8ee99d2b5c510a540623aa4a69154b3bc0da9c7a9e846a42194a0dabe716d1b4",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_STEP06A_DETERMINISTIC_CLOSURE_AMENDMENT_A01.md",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "a40d0b67d802687ac3c9ec9ad8e00a915cc1dc730ce31f3fab00b18a1837a21c",
+        "id": "AUTH-CATALOG-component_equations",
+        "observed_sha256": "a40d0b67d802687ac3c9ec9ad8e00a915cc1dc730ce31f3fab00b18a1837a21c",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_STEP02_COMPONENT_EQUATION_CONTRACT_DRAFT.md",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "8296f530d48f43b99c6de26271e3be4da0a9fd512e389c90f55b9d5208185b29",
+        "id": "AUTH-CATALOG-component_equations_approval",
+        "observed_sha256": "8296f530d48f43b99c6de26271e3be4da0a9fd512e389c90f55b9d5208185b29",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_STEP02_COMPONENT_EQUATION_CONTRACT_A01_APPROVAL_RECORD.md",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "53046eb839b94d9548dfc2e49471b3605a2fc882228ca5e4291db7390e584a2a",
+        "id": "AUTH-CATALOG-pipeline_plan",
+        "observed_sha256": "53046eb839b94d9548dfc2e49471b3605a2fc882228ca5e4291db7390e584a2a",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/SM_DRW_SiegeBreaker_Hammer_A01_STEPS_01_16_PROOF_OF_CONCEPT_PIPELINE_PLAN.md",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "41c543aebf9bca5e5e8b970851843b6485fa17fc3473325d46a3960a9ba46f1b",
+        "id": "AUTH-CATALOG-project_charter",
+        "observed_sha256": "41c543aebf9bca5e5e8b970851843b6485fa17fc3473325d46a3960a9ba46f1b",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/SM_DRW_SiegeBreaker_Hammer_A01_PROJECT_CHARTER.md",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "b563abfcda868f0345c65c729acee0d7d0dd9123e65544405d0139de06d64800",
+        "id": "AUTH-CATALOG-proposed_contract",
+        "observed_sha256": "b563abfcda868f0345c65c729acee0d7d0dd9123e65544405d0139de06d64800",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_11_PRODUCTION_BLUEPRINT_A02_PROPOSED_CONTRACT.md",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "6db37706e87021cf1ea978091c1e7b9f30c21163a5d5bd64bb6b32919ee352e0",
+        "id": "AUTH-CATALOG-proven_process_audit",
+        "observed_sha256": "6db37706e87021cf1ea978091c1e7b9f30c21163a5d5bd64bb6b32919ee352e0",
+        "path": "Tools/DCC/audit_siegebreaker_a12_r10_a09_process_complete_rz180.py",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "088ec22595437611e4f0e136db13b49d32ce3caaf8224c60f145f1c15153f235",
+        "id": "AUTH-CATALOG-proven_process_builder",
+        "observed_sha256": "088ec22595437611e4f0e136db13b49d32ce3caaf8224c60f145f1c15153f235",
+        "path": "Tools/DCC/build_siegebreaker_a12_r10_a09_process_complete_rz180.py",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "639db9d0c565aae7b974dab6fce9fb888f1b8412c77bbb2f6046413a7dbdff52",
+        "id": "AUTH-CATALOG-proven_process_output",
+        "observed_sha256": "639db9d0c565aae7b974dab6fce9fb888f1b8412c77bbb2f6046413a7dbdff52",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_A09_PROCESS_COMPLETE_RZ180_A02_OUTPUT_RECORD.md",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "b0b077c8d39a07e5d1ab12309e77560afa1c407fe3bb3e6272a0c4e6d568b22e",
+        "id": "AUTH-CATALOG-r7_component_plan",
+        "observed_sha256": "b0b077c8d39a07e5d1ab12309e77560afa1c407fe3bb3e6272a0c4e6d568b22e",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R7_COMPONENT_GEOMETRY_RECOVERY_PLAN.md",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "77b0339126388be01f59532cd6b79228450b61e739ebc10c2f849833fd337bd4",
+        "id": "AUTH-CATALOG-r8_execution_contract",
+        "observed_sha256": "77b0339126388be01f59532cd6b79228450b61e739ebc10c2f849833fd337bd4",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_R8_PIXEL_EXACT_STEPS01_16_A01_CONTRACT.md",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "eba4884b6b52178846854b59c88594fc3aa896067d868f6748d4aadd3bc4106a",
+        "id": "AUTH-CATALOG-source_half_contract",
+        "observed_sha256": "eba4884b6b52178846854b59c88594fc3aa896067d868f6748d4aadd3bc4106a",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_STEP06_ONE_RZ180_SOURCE_HALF_ASSEMBLY_A01_CONTRACT.md",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "1bf54f9400dc2a4d0bb972ad56a3a913b586254f09b4867542e1c9899daf8a60",
+        "id": "AUTH-CATALOG-step04_inventory",
+        "observed_sha256": "1bf54f9400dc2a4d0bb972ad56a3a913b586254f09b4867542e1c9899daf8a60",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_04_COMPONENT_AND_SOURCE_OWNERSHIP_INVENTORY.json",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "aed4b8d87a4a5b442c0465c9db59fa524f63797153d662e1a5e7cf90423a2446",
+        "id": "AUTH-CATALOG-step05_registration",
+        "observed_sha256": "aed4b8d87a4a5b442c0465c9db59fa524f63797153d662e1a5e7cf90423a2446",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_05_PIXEL_WORLD_REGISTRATION_LOCK.json",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "817af18192b3cf3b26ac47fb460e18b82266c30ce61f993b463a36175c014fcb",
+        "id": "AUTH-CATALOG-step06_back",
+        "observed_sha256": "817af18192b3cf3b26ac47fb460e18b82266c30ce61f993b463a36175c014fcb",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_06_BACK_MEASUREMENT_CONTRACT.json",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "85f09fc89c8b73df8e6fdf47924e2251da9dda6decabe44fa3f3b2577b7708eb",
+        "id": "AUTH-CATALOG-step06_front",
+        "observed_sha256": "85f09fc89c8b73df8e6fdf47924e2251da9dda6decabe44fa3f3b2577b7708eb",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_06_FRONT_MEASUREMENT_CONTRACT.json",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "7d099a11fb5566059bf0caaeaa353c479a531acff78fac6a9bedbeea739eb3f1",
+        "id": "AUTH-CATALOG-step07_left",
+        "observed_sha256": "7d099a11fb5566059bf0caaeaa353c479a531acff78fac6a9bedbeea739eb3f1",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_07_LEFT_MEASUREMENT_CONTRACT.json",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "977831e86b02148125a7e1a04024d2d114721590ebf63937bdd314d02cc427c9",
+        "id": "AUTH-CATALOG-step07_right",
+        "observed_sha256": "977831e86b02148125a7e1a04024d2d114721590ebf63937bdd314d02cc427c9",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_07_RIGHT_MEASUREMENT_CONTRACT.json",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "aea70d998dabe9f28d3ec5fb44a2d2206f8874096a3d33ee9b836074b2ede9a2",
+        "id": "AUTH-CATALOG-step08_bottom",
+        "observed_sha256": "aea70d998dabe9f28d3ec5fb44a2d2206f8874096a3d33ee9b836074b2ede9a2",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_08_BOTTOM_MEASUREMENT_CONTRACT.json",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "5925dee1ab39a0535150804a4353157b17d51fec648791774808c9c832dd8b36",
+        "id": "AUTH-CATALOG-step08_top",
+        "observed_sha256": "5925dee1ab39a0535150804a4353157b17d51fec648791774808c9c832dd8b36",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_08_TOP_MEASUREMENT_CONTRACT.json",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "5a0a3eea8f877d55216f9efabe15b0ee1cf938e4c15a825a0e218f72ba76839a",
+        "id": "AUTH-CATALOG-step09_index",
+        "observed_sha256": "5a0a3eea8f877d55216f9efabe15b0ee1cf938e4c15a825a0e218f72ba76839a",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_09_INTEGRATED_EXACT_MEASUREMENT_INDEX.json",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "260c79857fe059517b4076bcc65b538aef807a7be33a58a4a46edc32c2150fdb",
+        "id": "AUTH-CATALOG-step09_pre_geometry",
+        "observed_sha256": "260c79857fe059517b4076bcc65b538aef807a7be33a58a4a46edc32c2150fdb",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_09_PRE_GEOMETRY_EXACT_DATA_AUDIT.json",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "a7e07ad68e9b2737c7c70e71e9df714766a285695693e741197900e17c3a06a5",
+        "id": "AUTH-CATALOG-step09a_authority_lock",
+        "observed_sha256": "a7e07ad68e9b2737c7c70e71e9df714766a285695693e741197900e17c3a06a5",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/manifests/STEP_09A_AUTHORITY_LOCK.json",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "e190ed266753c797d4f9ec812154ff3b29f5d5d780e53e235e780c43492d0bd8",
+        "id": "AUTH-CATALOG-step09a_boundaries",
+        "observed_sha256": "e190ed266753c797d4f9ec812154ff3b29f5d5d780e53e235e780c43492d0bd8",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/manifests/STEP_09A_BOUNDARY_AND_CORRESPONDENCE_INDEX.json",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "396adfbaaefc8a8ea35104e5e96dfde322510fb4ce88530fbb32f7f3073b3562",
+        "id": "AUTH-CATALOG-step09a_scanlines",
+        "observed_sha256": "396adfbaaefc8a8ea35104e5e96dfde322510fb4ce88530fbb32f7f3073b3562",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/evidence/STEP_09A_COMPONENT_SCANLINES.json.gz",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "1e02aecf558145d4e440b1cdda90513fb28a0075149b1bf24f7ed3c00f7c3e60",
+        "id": "AUTH-CATALOG-step09a_validation",
+        "observed_sha256": "1e02aecf558145d4e440b1cdda90513fb28a0075149b1bf24f7ed3c00f7c3e60",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/manifests/STEP_09A_VALIDATION.json",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "0559b801ed3f544af82057d45f918599f07524588ff49c5ca92aefa744e467e9",
+        "id": "AUTH-CATALOG-step10_decisions",
+        "observed_sha256": "0559b801ed3f544af82057d45f918599f07524588ff49c5ca92aefa744e467e9",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_10_INTERPRETATION_DECISIONS.json",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "ff2f7cb37284dc7d1416044913375f67924ec4141c22a5385b3a29541e7446b9",
+        "id": "AUTH-CATALOG-step10_numeric",
+        "observed_sha256": "ff2f7cb37284dc7d1416044913375f67924ec4141c22a5385b3a29541e7446b9",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_10_NUMERIC_SUBSTITUTION_CLARIFICATION.json",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "d243832e443779ae99e658e401a1985b94fa243a1a803849a50d1f31bd97eba0",
+        "id": "AUTH-CATALOG-step11_preflight",
+        "observed_sha256": "d243832e443779ae99e658e401a1985b94fa243a1a803849a50d1f31bd97eba0",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_11_SOURCE_AUTHORITY_PREFLIGHT_A02.json",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "e2bf62f65612945bdd9e295295b2b970098e88d75edd21d2e8c4896d5fbcf32b",
+        "id": "AUTH-CATALOG-step11_preflight_validation",
+        "observed_sha256": "e2bf62f65612945bdd9e295295b2b970098e88d75edd21d2e8c4896d5fbcf32b",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_11_VALIDATION_A02.json",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "84da92d2bec200a646bee4297965e9cd3bcd9aac090381b4108d931d7c1f4cd7",
+        "id": "AUTH-CATALOG-view_scale_contract",
+        "observed_sha256": "84da92d2bec200a646bee4297965e9cd3bcd9aac090381b4108d931d7c1f4cd7",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_STEP02A_R8_VIEW_OWNED_SCALE_RECONCILIATION_A01_CONTRACT.md",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "405d93b079c0fe52bdc443cadd085010fb64acf4cf9d078bf6e78d7e915e3ba0",
+        "id": "AUTH-CATALOG-zero_extrusion_handoff",
+        "observed_sha256": "405d93b079c0fe52bdc443cadd085010fb64acf4cf9d078bf6e78d7e915e3ba0",
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/handoffs/A12_R10_R8_ZERO_EXTRUSION_RESET_HANDOFF.md",
+        "result": "pass"
+      },
+      {
+        "id": "AMENDMENT-high_poly_stage",
+        "required_clause": "Step 12 is a high-poly source reconstruction stage",
+        "result": "pass"
+      },
+      {
+        "id": "AMENDMENT-nanite_target",
+        "required_clause": "Nanite-capable Unreal Engine 5 target",
+        "result": "pass"
+      },
+      {
+        "id": "AMENDMENT-target_superseded",
+        "required_clause": "the Step 11 `8,000`-triangle target is superseded",
+        "result": "pass"
+      },
+      {
+        "id": "AMENDMENT-cap_superseded",
+        "required_clause": "the Step 11 `10,000`-triangle hard cap is superseded",
+        "result": "pass"
+      },
+      {
+        "id": "AMENDMENT-angular_divisions_preserved",
+        "required_clause": "retain exactly `64` positive-X angular divisions",
+        "result": "pass"
+      },
+      {
+        "id": "AMENDMENT-step13_locked",
+        "required_clause": "Step 13 authority: `false`",
+        "result": "pass"
+      },
+      {
+        "id": "AMENDMENT-unreal_locked",
+        "required_clause": "Unreal authority: `false`",
+        "result": "pass"
+      },
+      {
+        "id": "PARITY-AMENDMENT-label_only",
+        "required_clause": "corrects the two reversed bottom-view C02/C03 semantic labels only",
+        "result": "pass"
+      },
+      {
+        "id": "PARITY-AMENDMENT-coordinate_system_unchanged",
+        "required_clause": "Coordinate-system change: `none`",
+        "result": "pass"
+      },
+      {
+        "id": "PARITY-AMENDMENT-source_pixels_unchanged",
+        "required_clause": "Source-pixel change: `none`",
+        "result": "pass"
+      },
+      {
+        "id": "PARITY-AMENDMENT-measurement_unchanged",
+        "required_clause": "Measurement change: `none`",
+        "result": "pass"
+      },
+      {
+        "id": "PARITY-AMENDMENT-bottom_equation_preserved",
+        "required_clause": "X=(1529/2-x)*52020/517681",
+        "result": "pass"
+      },
+      {
+        "id": "PARITY-AMENDMENT-logical_c02_uses_stored_c03",
+        "required_clause": "logical evidence reference `OWN_BOTTOM_C02` must therefore resolve to the exact stored payload and canonical row set of `OWN_BOTTOM_C03`",
+        "result": "pass"
+      },
+      {
+        "id": "PARITY-AMENDMENT-logical_c03_uses_stored_c02",
+        "required_clause": "logical evidence reference `OWN_BOTTOM_C03` must therefore resolve to the exact stored payload and canonical row set of `OWN_BOTTOM_C02`",
+        "result": "pass"
+      },
+      {
+        "id": "PARITY-AMENDMENT-c02_boundary_payload_swap",
+        "required_clause": "logical boundary reference `BOTTOM_C02_INNER_OWNER_EDGE` must resolve to the exact stored ordered boundary payload of `BOTTOM_C03_INNER_OWNER_EDGE`",
+        "result": "pass"
+      },
+      {
+        "id": "PARITY-AMENDMENT-c03_boundary_payload_swap",
+        "required_clause": "logical boundary reference `BOTTOM_C03_INNER_OWNER_EDGE` must resolve to the exact stored ordered boundary payload of `BOTTOM_C02_INNER_OWNER_EDGE`",
+        "result": "pass"
+      },
+      {
+        "id": "PARITY-AMENDMENT-step13_locked",
+        "required_clause": "Step 13 authority: `false`",
+        "result": "pass"
+      },
+      {
+        "id": "PARITY-AMENDMENT-unreal_locked",
+        "required_clause": "Unreal authority: `false`",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "5c2b0b26980222cec9890492cae12fb4572ba41a52078e66bdf7c98e6cd81f8f",
+        "id": "PAYLOAD-STORED_BOTTOM_C02_ROWS",
+        "name": "stored_bottom_c02_rows remains byte-canonically unchanged",
+        "observed_sha256": "5c2b0b26980222cec9890492cae12fb4572ba41a52078e66bdf7c98e6cd81f8f",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "c4a4eca33b04d4e3e6047e108c9efd4b2a12159729fe7a74c8ffff32971312a6",
+        "id": "PAYLOAD-STORED_BOTTOM_C03_ROWS",
+        "name": "stored_bottom_c03_rows remains byte-canonically unchanged",
+        "observed_sha256": "c4a4eca33b04d4e3e6047e108c9efd4b2a12159729fe7a74c8ffff32971312a6",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "9bab41782616ab1b74d4c257c3d43fd5c614dbbf68ec2c541c39119f6e0edff5",
+        "id": "PAYLOAD-STORED_BOTTOM_C02_BOUNDARY",
+        "name": "stored_bottom_c02_boundary remains byte-canonically unchanged",
+        "observed_sha256": "9bab41782616ab1b74d4c257c3d43fd5c614dbbf68ec2c541c39119f6e0edff5",
+        "result": "pass"
+      },
+      {
+        "expected_sha256": "60b59e861f09b8bbe46a2556d2224e801defadd011731e60cfc5920de303d6a5",
+        "id": "PAYLOAD-STORED_BOTTOM_C03_BOUNDARY",
+        "name": "stored_bottom_c03_boundary remains byte-canonically unchanged",
+        "observed_sha256": "60b59e861f09b8bbe46a2556d2224e801defadd011731e60cfc5920de303d6a5",
+        "result": "pass"
+      },
+      {
+        "boundary_record_canonical_sha256": "60b59e861f09b8bbe46a2556d2224e801defadd011731e60cfc5920de303d6a5",
+        "boundary_source": "BOTTOM_C03_INNER_OWNER_EDGE",
+        "id": "PAYLOAD-CORRECTED-LOGICAL-C02",
+        "name": "logical bottom C02 resolves to the complete stored C03 owner and boundary payloads",
+        "owner_rows_canonical_sha256": "c4a4eca33b04d4e3e6047e108c9efd4b2a12159729fe7a74c8ffff32971312a6",
+        "owner_source": "OWN_BOTTOM_C03",
+        "result": "pass"
+      },
+      {
+        "boundary_record_canonical_sha256": "9bab41782616ab1b74d4c257c3d43fd5c614dbbf68ec2c541c39119f6e0edff5",
+        "boundary_source": "BOTTOM_C02_INNER_OWNER_EDGE",
+        "id": "PAYLOAD-CORRECTED-LOGICAL-C03",
+        "name": "logical bottom C03 resolves to the complete stored C02 owner and boundary payloads",
+        "owner_rows_canonical_sha256": "5c2b0b26980222cec9890492cae12fb4572ba41a52078e66bdf7c98e6cd81f8f",
+        "owner_source": "OWN_BOTTOM_C02",
+        "result": "pass"
+      },
+      {
+        "expected": {
+          "C02": {
+            "bottom": "positive_x",
+            "front": "negative_x",
+            "top": "negative_x"
+          },
+          "C03": {
+            "bottom": "negative_x",
+            "front": "positive_x",
+            "top": "positive_x"
+          }
+        },
+        "id": "PARITY-RAW-MISLABEL-EVIDENCE",
+        "name": "the stored bottom C02/C03 semantic identities are exactly reversed relative to front and top",
+        "result": "pass"
+      }
+    ],
+    "high_poly_amendment_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_11B_HIGH_POLY_NANITE_PERFORMANCE_AMENDMENT_A01.md",
+    "high_poly_amendment_sha256": "2e4276ea0adc32d8c6a21fb5bfbd46eacf627a9708c6187e56be1556eee76ba6",
+    "parity_amendment_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_11C_BOTTOM_C02_C03_LABEL_CORRECTION_A01.md",
+    "parity_amendment_sha256": "45cc92d07f90fdb1bb104c8ede5e9fb6e6161454ea91d0923dc6f81cf02512d1",
+    "payload_checks_failed": 0,
+    "payload_checks_passed": 6,
+    "result": "PASS",
+    "semantic_checks_failed": 0,
+    "semantic_checks_passed": 18
+  },
+  "date": "2026-07-24T10:46:47.410863+00:00",
+  "internal_failures": [],
+  "next_authorized_action": {
+    "action": "Obtain an additive, exact stone-closure construction rule that identifies which measured boundaries are paired and how protected runs remain open without producing an unwatertight or non-manifold shell.",
+    "step13_authorized": false,
+    "unreal_authorized": false
+  },
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "schema": "AERATHEA_STEP11C_BOTTOM_C02_C03_LABEL_CORRECTION_A01_VALIDATION_V1",
+  "source_conflict_preserved_as_evidence": {
+    "diagnostic_checks": [
+      {
+        "id": "PARITY-C02-FRONT-TOP",
+        "name": "C02 front and top owners resolve to the same world-X side",
+        "observed": {
+          "front": "negative_x",
+          "top": "negative_x"
+        },
+        "result": "pass"
+      },
+      {
+        "id": "PARITY-C02-BOTTOM",
+        "name": "C02 bottom owner resolves to the same world-X side as its front/top owners",
+        "observed": {
+          "bottom": "positive_x",
+          "front": "negative_x",
+          "top": "negative_x"
+        },
+        "result": "fail"
+      },
+      {
+        "id": "PARITY-C03-FRONT-TOP",
+        "name": "C03 front and top owners resolve to the same world-X side",
+        "observed": {
+          "front": "positive_x",
+          "top": "positive_x"
+        },
+        "result": "pass"
+      },
+      {
+        "id": "PARITY-C03-BOTTOM",
+        "name": "C03 bottom owner resolves to the same world-X side as its front/top owners",
+        "observed": {
+          "bottom": "negative_x",
+          "front": "positive_x",
+          "top": "positive_x"
+        },
+        "result": "fail"
+      },
+      {
+        "authority_instruction": "CLOSURE_C03_TO_C04_RUNE / CLOSURE_C03_TO_C04_METAL",
+        "bottom_c03_maximum_x_cm_exact": "-7360830/517681",
+        "crosses_x0": true,
+        "id": "PARITY-C03-BOTTOM-TO-C04-POSITIVE-X",
+        "minimum_x_separation_cm": "63.155823760192",
+        "minimum_x_separation_cm_exact": "32694570/517681",
+        "name": "the named bottom C03 owner can meet the positive-X C04 strike face without crossing X=0",
+        "positive_x_strike_plane_cm_exact": "52020/1063",
+        "result": "fail"
+      },
+      {
+        "id": "PARITY-BOTTOM-SEMANTIC-SWAP-EVIDENCE",
+        "name": "bottom owner signs are the exact opposite of their named front/top components",
+        "observed": {
+          "C02_bottom_minimum_x_cm": "2.662894717017",
+          "C02_bottom_sign": "positive_x",
+          "C03_bottom_maximum_x_cm": "-14.218852922939",
+          "C03_bottom_sign": "negative_x"
+        },
+        "result": "fail"
+      }
+    ],
+    "interpretation": "The stored source records remain unchanged. Their raw names demonstrate the approved C02/C03 bottom-view mislabel.",
+    "result": "PASS",
+    "world_x_owner_bounds": {
+      "C02": {
+        "bottom": {
+          "maximum_cm": "48.987214133801",
+          "maximum_cm_exact": "25359750/517681",
+          "minimum_cm": "2.662894717017",
+          "minimum_cm_exact": "1378530/517681",
+          "sign_class": "positive_x",
+          "stored_source_owner": "C02_STONE_LEFT"
+        },
+        "front": {
+          "maximum_cm": "-13.273753527752",
+          "maximum_cm_exact": "-14110/1063",
+          "minimum_cm": "-48.936970837253",
+          "minimum_cm_exact": "-52020/1063",
+          "sign_class": "negative_x",
+          "stored_source_owner": "C02_STONE_LEFT"
+        },
+        "top": {
+          "maximum_cm": "-2.763381310112",
+          "maximum_cm_exact": "-1430550/517681",
+          "minimum_cm": "-48.886727540706",
+          "minimum_cm_exact": "-25307730/517681",
+          "sign_class": "negative_x",
+          "stored_source_owner": "C02_STONE_LEFT"
+        }
+      },
+      "C03": {
+        "bottom": {
+          "maximum_cm": "-14.218852922939",
+          "maximum_cm_exact": "-7360830/517681",
+          "minimum_cm": "-48.987214133801",
+          "minimum_cm_exact": "-25359750/517681",
+          "sign_class": "negative_x",
+          "stored_source_owner": "C03_STONE_RIGHT"
+        },
+        "front": {
+          "maximum_cm": "48.936970837253",
+          "maximum_cm_exact": "52020/1063",
+          "minimum_cm": "13.113828786453",
+          "minimum_cm_exact": "13940/1063",
+          "sign_class": "positive_x",
+          "stored_source_owner": "C03_STONE_RIGHT"
+        },
+        "top": {
+          "maximum_cm": "48.886727540706",
+          "maximum_cm_exact": "25307730/517681",
+          "minimum_cm": "2.964354496302",
+          "minimum_cm_exact": "1534590/517681",
+          "sign_class": "positive_x",
+          "stored_source_owner": "C03_STONE_RIGHT"
+        }
+      }
+    }
+  },
+  "step12_resume_preflight": {
+    "block_code": "Blueprint block: rule missing \u2014 three-boundary stone closure construction",
+    "checks": [
+      {
+        "id": "PARITY-C02-FRONT-TOP",
+        "name": "C02 front and top owners resolve to the same world-X side",
+        "observed": {
+          "front": "negative_x",
+          "top": "negative_x"
+        },
+        "result": "pass"
+      },
+      {
+        "id": "PARITY-C02-BOTTOM",
+        "name": "C02 bottom owner resolves to the same world-X side as its front/top owners",
+        "observed": {
+          "bottom": "negative_x",
+          "front": "negative_x",
+          "top": "negative_x"
+        },
+        "result": "pass"
+      },
+      {
+        "id": "PARITY-C03-FRONT-TOP",
+        "name": "C03 front and top owners resolve to the same world-X side",
+        "observed": {
+          "front": "positive_x",
+          "top": "positive_x"
+        },
+        "result": "pass"
+      },
+      {
+        "id": "PARITY-C03-BOTTOM",
+        "name": "C03 bottom owner resolves to the same world-X side as its front/top owners",
+        "observed": {
+          "bottom": "positive_x",
+          "front": "positive_x",
+          "top": "positive_x"
+        },
+        "result": "pass"
+      },
+      {
+        "authority_instruction": "CLOSURE_C03_TO_C04_RUNE / CLOSURE_C03_TO_C04_METAL",
+        "bottom_c03_maximum_x_cm_exact": "25359750/517681",
+        "crosses_x0": false,
+        "id": "PARITY-C03-BOTTOM-TO-C04-POSITIVE-X",
+        "minimum_x_separation_cm": "-0.050243296547",
+        "minimum_x_separation_cm_exact": "-26010/517681",
+        "name": "the named bottom C03 owner can meet the positive-X C04 strike face without crossing X=0",
+        "positive_x_strike_plane_cm_exact": "52020/1063",
+        "result": "pass"
+      },
+      {
+        "id": "PARITY-BOTTOM-SEMANTIC-SWAP-EVIDENCE",
+        "name": "bottom owner signs are the exact opposite of their named front/top components",
+        "observed": {
+          "C02_bottom_minimum_x_cm": "-48.987214133801",
+          "C02_bottom_sign": "negative_x",
+          "C03_bottom_maximum_x_cm": "48.987214133801",
+          "C03_bottom_sign": "positive_x"
+        },
+        "result": "pass"
+      }
+    ],
+    "corrected_world_x_owner_bounds": {
+      "C02": {
+        "bottom": {
+          "maximum_cm": "-14.218852922939",
+          "maximum_cm_exact": "-7360830/517681",
+          "minimum_cm": "-48.987214133801",
+          "minimum_cm_exact": "-25359750/517681",
+          "sign_class": "negative_x",
+          "stored_source_owner": "C03_STONE_RIGHT"
+        },
+        "front": {
+          "maximum_cm": "-13.273753527752",
+          "maximum_cm_exact": "-14110/1063",
+          "minimum_cm": "-48.936970837253",
+          "minimum_cm_exact": "-52020/1063",
+          "sign_class": "negative_x",
+          "stored_source_owner": "C02_STONE_LEFT"
+        },
+        "top": {
+          "maximum_cm": "-2.763381310112",
+          "maximum_cm_exact": "-1430550/517681",
+          "minimum_cm": "-48.886727540706",
+          "minimum_cm_exact": "-25307730/517681",
+          "sign_class": "negative_x",
+          "stored_source_owner": "C02_STONE_LEFT"
+        }
+      },
+      "C03": {
+        "bottom": {
+          "maximum_cm": "48.987214133801",
+          "maximum_cm_exact": "25359750/517681",
+          "minimum_cm": "2.662894717017",
+          "minimum_cm_exact": "1378530/517681",
+          "sign_class": "positive_x",
+          "stored_source_owner": "C02_STONE_LEFT"
+        },
+        "front": {
+          "maximum_cm": "48.936970837253",
+          "maximum_cm_exact": "52020/1063",
+          "minimum_cm": "13.113828786453",
+          "minimum_cm_exact": "13940/1063",
+          "sign_class": "positive_x",
+          "stored_source_owner": "C03_STONE_RIGHT"
+        },
+        "top": {
+          "maximum_cm": "48.886727540706",
+          "maximum_cm_exact": "25307730/517681",
+          "minimum_cm": "2.964354496302",
+          "minimum_cm_exact": "1534590/517681",
+          "sign_class": "positive_x",
+          "stored_source_owner": "C03_STONE_RIGHT"
+        }
+      }
+    },
+    "failed": 0,
+    "passed": 6,
+    "result": "BLOCKED",
+    "total": 6
+  }
+}

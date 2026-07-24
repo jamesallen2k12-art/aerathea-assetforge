@@ -114,6 +114,80 @@
         "builder_remains_not_created": true
       },
       "next_gate": "Flamestrike approval or rejection of an additive semantic parity amendment that preserves the approved source pixels and bottom-view equation while mapping OWN_BOTTOM_C02 to world component C03 and OWN_BOTTOM_C03 to world component C02, including their ordered boundary IDs, for Step 12 construction and closure authority."
+    },
+    {
+      "schema": "AERATHEA_R8_STEP12_LABEL_CORRECTION_AND_CLOSURE_BLOCK_SUPPLEMENT_V1",
+      "date": "2026-07-24",
+      "artifact_status": "authoritative",
+      "approved_label_correction": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_11C_BOTTOM_C02_C03_LABEL_CORRECTION_A01.md",
+        "sha256": "45cc92d07f90fdb1bb104c8ede5e9fb6e6161454ea91d0923dc6f81cf02512d1",
+        "artifact_status": "authoritative",
+        "result": "PASS",
+        "coordinate_flip_applied": false,
+        "source_pixels_changed": false,
+        "measurements_changed": false,
+        "corrected_logical_C02_world_x": "negative",
+        "corrected_logical_C03_world_x": "positive"
+      },
+      "proof_outputs": [
+        {
+          "path": "Tools/DCC/audit_siegebreaker_r8_step12_source_geometry_a01.py",
+          "sha256": "336a5da2fb62eeaae3fcc1aa388cba53a71c8b9a3307a313119e3b63b40cf9b9",
+          "artifact_status": "proof only"
+        },
+        {
+          "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_11C_BOTTOM_C02_C03_LABEL_CORRECTION_A01_VALIDATION.json",
+          "sha256": "82fe61ad589ddaa887f6c11c36eeb11d078645e49ccbc08ca422d13b27897d30",
+          "artifact_status": "proof only",
+          "label_correction_result": "PASS",
+          "step12_resume_result": "BLOCKED"
+        }
+      ],
+      "label_correction_validation_summary": {
+        "authority_checks": "40 pass / 0 fail",
+        "semantic_checks": "18 pass / 0 fail",
+        "exact_payload_checks": "6 pass / 0 fail",
+        "corrected_orientation_checks": "6 pass / 0 fail"
+      },
+      "resolved_historical_block": "Blueprint block: source authority conflicting — bottom-view C02/C03 world-ownership parity",
+      "current_result": "BLOCKED",
+      "current_block_code": "Blueprint block: rule missing — three-boundary stone closure construction",
+      "current_evidence": {
+        "affected_closures": [
+          "CLOSURE_C02_INNER",
+          "CLOSURE_C03_INNER"
+        ],
+        "ordered_boundary_sets_per_closure": 3,
+        "ordered_boundary_views": [
+          "front",
+          "top",
+          "bottom"
+        ],
+        "approved_ruled_face_formula": "R(s,t)=(1-t)*A(s)+t*B(s), 0<=t<=1",
+        "approved_formula_boundary_arity": 2,
+        "explicit_pairing_graph_present": false,
+        "risk_if_inferred": "An inferred pairing can create a non-manifold duplicate wall, omit an owner boundary, or close a protected gap."
+      },
+      "execution_trace": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_12_SOURCE_GEOMETRY_A01_EVENT_TRACE.jsonl",
+        "current_sha256": "27f4d97581e9f9c3a9591f24f527d760f7fefd36037f2c7df483779959bc37ac",
+        "artifact_status": "authoritative"
+      },
+      "production_state": {
+        "pre_blender_checkpoint_created": true,
+        "builder_created": false,
+        "blender_started": false,
+        "geometry_created": false,
+        "blend_files_created": false,
+        "renders_created": false,
+        "review_board_created": false,
+        "dcc_source_candidate": false,
+        "dcc_game_ready_candidate": false,
+        "fully_game_ready": false,
+        "step13_authorized": false
+      },
+      "next_gate": "Flamestrike must approve or reject an exact additive construction rule for converting each measured front/top/bottom stone-boundary trio into one closed, manifold side surface while keeping every protected gap empty."
     }
   ],
   "not_created": {

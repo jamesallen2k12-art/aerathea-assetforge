@@ -8757,3 +8757,23 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260724-062103/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260724-062103/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 06:31:23 EDT -0400 - before SiegeBreaker Step 12 dual-variant high-poly Blender execution after approved C02 C03 label correction
+
+- Snapshot: `Saved/ProjectRecovery/20260724-063123/`
+- Git: branch `main`, HEAD `cff8005`, status lines `559`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-063123/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-063123/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-063123/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 06:48:36 EDT -0400 - SiegeBreaker Step 12 label correction passed; blocked before builder on missing three-boundary stone closure rule
+
+- Snapshot: `Saved/ProjectRecovery/20260724-064836/`
+- Git: branch `main`, HEAD `cff8005`, status lines `561`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-064836/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-064836/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-064836/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
