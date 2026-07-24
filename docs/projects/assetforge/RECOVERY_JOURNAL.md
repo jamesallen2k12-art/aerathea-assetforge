@@ -8777,3 +8777,33 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260724-064836/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260724-064836/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 07:14:08 EDT -0400 - Siege Breaker Step 11D stitch rule validated before Step 12 high-poly build
+
+- Snapshot: `Saved/ProjectRecovery/20260724-071408/`
+- Git: branch `main`, HEAD `9b71a7b`, status lines `560`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-071408/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-071408/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-071408/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 07:44:47 EDT -0400 - Siege Breaker Step 12 rune-side build stopped at pre-save dimension gate
+
+- Snapshot: `Saved/ProjectRecovery/20260724-074447/`
+- Git: branch `main`, HEAD `9b71a7b`, status lines `563`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-074447/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-074447/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-074447/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 07:50:48 EDT -0400 - Siege Breaker Step 12 blocked on exact axial width-intersection authority
+
+- Snapshot: `Saved/ProjectRecovery/20260724-075048/`
+- Git: branch `main`, HEAD `9b71a7b`, status lines `563`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-075048/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-075048/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-075048/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

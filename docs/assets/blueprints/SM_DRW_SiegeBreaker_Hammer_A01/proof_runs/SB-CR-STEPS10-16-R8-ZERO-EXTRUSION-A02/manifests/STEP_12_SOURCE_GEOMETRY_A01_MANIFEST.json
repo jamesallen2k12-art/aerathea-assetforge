@@ -188,6 +188,152 @@
         "step13_authorized": false
       },
       "next_gate": "Flamestrike must approve or reject an exact additive construction rule for converting each measured front/top/bottom stone-boundary trio into one closed, manifold side surface while keeping every protected gap empty."
+    },
+    {
+      "schema": "AERATHEA_R8_STEP12_STONE_STITCH_CLEARANCE_SUPPLEMENT_V1",
+      "date": "2026-07-24",
+      "artifact_status": "authoritative",
+      "approved_stitch_rule": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_11D_THREE_BOUNDARY_STONE_STITCH_AMENDMENT_A01.md",
+        "sha256": "850fd42808be667da1d24f1dbccc8ff192ac8b2ccddadb0b714256637849b61a",
+        "artifact_status": "authoritative",
+        "result": "PASS",
+        "affected_closures": [
+          "CLOSURE_C02_INNER",
+          "CLOSURE_C03_INNER"
+        ],
+        "rule": "One completed closed perimeter per stone; deterministic straight triangles using only exact measured, candidate-intersection, or one-Rz180 boundary vertices.",
+        "free_or_steiner_vertices_allowed": false,
+        "tolerance_weld_allowed": false,
+        "protected_gap_fill_allowed": false,
+        "whole_asset_rz180_count": 1,
+        "step13_authorized": false,
+        "unreal_authorized": false
+      },
+      "proof_outputs": [
+        {
+          "path": "Tools/DCC/audit_siegebreaker_r8_step12_source_geometry_a01.py",
+          "sha256": "87beef1d7d7c29e9a4ab89cd8ea050e14bb9757dc8029925a1472dc6a698905e",
+          "artifact_status": "proof only"
+        },
+        {
+          "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_11D_THREE_BOUNDARY_STONE_STITCH_AMENDMENT_A01_VALIDATION.json",
+          "sha256": "ff69717625d12e8e3f4f502d47c242a62ced72127bec5d9f5dd01c9537357d38",
+          "artifact_status": "proof only",
+          "result": "PASS"
+        }
+      ],
+      "validation_summary": {
+        "authority_checks": "41 pass / 0 fail",
+        "semantic_checks": "33 pass / 0 fail",
+        "exact_payload_checks": "6 pass / 0 fail",
+        "corrected_orientation_checks": "6 pass / 0 fail",
+        "closure_constructibility_checks": "16 pass / 0 fail",
+        "top_y0_endpoint_bridge_cm": "0.401946372380",
+        "bottom_y0_endpoint_bridge_cm": "0.200973186190"
+      },
+      "resolved_historical_block": "Blueprint block: rule missing — three-boundary stone closure construction",
+      "current_result": "AUTHORIZED_FOR_STEP12_BUILDER_IMPLEMENTATION",
+      "current_block_code": null,
+      "execution_trace": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_12_SOURCE_GEOMETRY_A01_EVENT_TRACE.jsonl",
+        "current_sha256": "d49e946740d3afbf031025d0e930128cbac0f945d27189b9ffa5d76985bb6b9e",
+        "artifact_status": "authoritative"
+      },
+      "production_state": {
+        "post_stitch_pre_blender_checkpoint_created": true,
+        "post_stitch_pre_blender_checkpoint": "Saved/ProjectRecovery/20260724-071408",
+        "builder_created": false,
+        "blender_started": false,
+        "geometry_created": false,
+        "blend_files_created": false,
+        "renders_created": false,
+        "review_board_created": false,
+        "dcc_source_candidate": false,
+        "dcc_game_ready_candidate": false,
+        "fully_game_ready": false,
+        "step13_authorized": false
+      },
+      "next_gate": "Implement the already-approved deterministic dual-variant Step 12 high-poly builder and saved-file audit without entering Step 13."
+    },
+    {
+      "schema": "AERATHEA_R8_STEP12_AXIAL_WIDTH_INTERSECTION_BLOCK_SUPPLEMENT_V1",
+      "date": "2026-07-24",
+      "artifact_status": "authoritative",
+      "current_result": "BLOCKED",
+      "current_block_code": "Blueprint block: rule missing — axial owner cells require an exact front-width intersection",
+      "gate_evidence": {
+        "candidate": "rune_side",
+        "gate": "pre-save exact completed dimensions",
+        "expected_width_cm_exact": "104040/1063",
+        "expected_width_cm": "97.873941674506",
+        "observed_width_cm_exact": "50719500/517681",
+        "observed_width_cm": "97.974428267601",
+        "completed_width_overrun_cm_exact": "52020/517681",
+        "completed_width_overrun_cm": "0.100486593095",
+        "per_side_overrun_cm_exact": "26010/517681",
+        "per_side_overrun_cm": "0.050243296548",
+        "depth_result": "exact",
+        "height_result": "exact",
+        "cause": "The Step 11C-corrected bottom owner domains extend one half axial source pixel past the front-owned width on each side. EQ_CANDIDATE_AXIAL_INTERSECTION authorizes exact depth clipping but contains no X-width intersection rule.",
+        "inference_applied": false
+      },
+      "proposed_rule": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_11E_AXIAL_WIDTH_INTERSECTION_AMENDMENT_A01_PROPOSED.md",
+        "sha256": "a9f8e6e2ada2ea0a3955251bc8a8cc78fa0851f9247063e14204974e6eaae437",
+        "artifact_status": "candidate",
+        "approved": false,
+        "plain_english": "Clip only the tiny part of each bottom outer boundary pixel that lies beyond the already-approved front width. Do not move or change the rest of the measured cells."
+      },
+      "failed_attempt": {
+        "artifact_status": "invalid",
+        "blend_file_created": false,
+        "render_created": false,
+        "candidate_promoted": false,
+        "accepted_geometry_created": false,
+        "quarantine_path": "Saved/ProjectRecovery/Quarantine/20260724-074447/rune_side_pre_save_width_gate_failure",
+        "quarantined_files": [
+          {
+            "path": "OUTPUT_INVENTORY.json",
+            "sha256": "70f516df66e3c36a9bbfb3d87a83d498d8eacbf616b789583cd2e653c962d909"
+          }
+        ],
+        "post_failure_checkpoint": "Saved/ProjectRecovery/20260724-074447",
+        "final_block_record_checkpoint": "Saved/ProjectRecovery/20260724-075048"
+      },
+      "execution_trace": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_12_SOURCE_GEOMETRY_A01_EVENT_TRACE.jsonl",
+        "current_sha256": "765ae62e1ec1f36be18edf704a95f8973e3e2a59602f3d0584ea6eb3fd961a72",
+        "artifact_status": "authoritative"
+      },
+      "implementation_outputs": {
+        "builder_path": "Tools/DCC/build_siegebreaker_r8_step12_source_geometry_a01.py",
+        "builder_sha256_at_failed_gate": "1e5559eca4f48c22bd6a86c74bc4d52dd31fb66026975d71741c3bd1025fcab5",
+        "independent_auditor_path": "Tools/DCC/audit_siegebreaker_r8_step12_source_geometry_a01.py",
+        "independent_auditor_sha256_at_failed_gate": "cad50b60c956d3982ce6ec1d747fa16b77494830c2c21ece995107995dc5ff48",
+        "artifact_status": "proof only"
+      },
+      "production_state": {
+        "builder_created": true,
+        "independent_saved_file_auditor_created": true,
+        "blender_started": true,
+        "in_memory_geometry_reached_pre_save_gate": true,
+        "accepted_geometry_created": false,
+        "blend_files_created": false,
+        "renders_created": false,
+        "review_board_created": false,
+        "dcc_source_candidate": false,
+        "dcc_game_ready_candidate": false,
+        "fully_game_ready": false,
+        "step13_authorized": false,
+        "unreal_authorized": false
+      },
+      "drift": {
+        "detected": false,
+        "drift_ledger_entry_required": false,
+        "reason": "The approved pre-save gate stopped the conflicting geometry before any candidate file was accepted."
+      },
+      "next_gate": "Flamestrike must approve or reject the exact proposed Step 11E front-width intersection rule. Approval authorizes only that clipping amendment and resumption of the already-approved Step 12 dual-candidate build."
     }
   ],
   "not_created": {
