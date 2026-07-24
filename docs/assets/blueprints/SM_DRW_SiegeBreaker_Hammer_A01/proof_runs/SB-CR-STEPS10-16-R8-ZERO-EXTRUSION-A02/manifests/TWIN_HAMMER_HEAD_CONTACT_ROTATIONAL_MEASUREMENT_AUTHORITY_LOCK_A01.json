@@ -1,0 +1,466 @@
+{
+  "schema": "AERATHEA_TWIN_HAMMER_HEAD_CONTACT_ROTATIONAL_MEASUREMENT_AUTHORITY_LOCK_A01_V1",
+  "date": "2026-07-24",
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "artifact_status": "authoritative measurement-only partial authority; production remains blocked",
+  "assets": [
+    "SM_DRW_SiegeBreaker_Hammer_A01",
+    "SM_DRW_FoeHammer_Hammer_A01"
+  ],
+  "contract": {
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/TWIN_HAMMER_HEAD_CONTACT_ROTATIONAL_MEASUREMENT_AUTHORITY_LOCK_A01_CONTRACT.md",
+    "sha256": "03f0f933aadc516ba639fc47450465b2144f8eb828642a36d88dd7cbbe93e9e6",
+    "artifact_status_before_execution": "candidate contract pending exact-hash Flamestrike execution approval",
+    "effective_status": "authoritative approved execution contract; consumed by this lock execution",
+    "exact_hash_execution_approved": true,
+    "approval_question": "Do you approve executing exact contract SHA 03f0f933aadc516ba639fc47450465b2144f8eb828642a36d88dd7cbbe93e9e6 to create only the declared measurement-authority lock package and minimal state/checkpoint records, with no production, Blender, geometry, imagery, rendering, export, Step 13/14, or Unreal work?",
+    "flamestrike_reply": "approved"
+  },
+  "governing_input_package": {
+    "agents": {
+      "path": "AGENTS.md",
+      "sha256": "5d2d2637a58113f0a6f5ec92e40d8bb2bda9e03fb58b4868a0d9dfbb3b57ad55",
+      "role": "Core and closed-world control"
+    },
+    "shared_depth_authority_lock": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_AUTHORITY_LOCK.json",
+      "sha256": "6889b826481e5e11dd10775f2b81467b1014687b7fda9ebbff62d519bfff09bc",
+      "role": "existing shared-depth and production-boundary authority"
+    },
+    "shared_depth_authority_lock_validation": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_AUTHORITY_LOCK_VALIDATION.json",
+      "sha256": "154ac1ed96c437fe971dfd27c415141f70ea08ae8ee43ae72251d1b30a016739",
+      "role": "proof-only validation of the shared-depth lock"
+    },
+    "measurement_contract": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/TWIN_HAMMER_HEAD_CORRESPONDENCE_CONTACT_AND_ROTATIONAL_STATION_AUTHORITY_RESOLUTION_A01_CONTRACT.md",
+      "sha256": "1352b2c008c30bda6e2755fc568126e62fc65e049b8a79c13808f4ea7e1a4548",
+      "role": "consumed measurement execution contract"
+    },
+    "approved_candidate_manifest": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_HEAD_CORRESPONDENCE_CONTACT_ROTATIONAL_STATION_AUTHORITY_A01.json",
+      "sha256": "7a7c633587b4d39797339077685109eb28c31ca8e28e36f1e888d0506fec2ceb",
+      "role": "exact Flamestrike-approved candidate measurement package"
+    },
+    "measurement_independent_audit": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_HEAD_CORRESPONDENCE_CONTACT_ROTATIONAL_STATION_AUTHORITY_A01_INDEPENDENT_AUDIT.json",
+      "sha256": "837ebb6778867efa4f4228d30ac2f7d8e3c48f4303a3ea651b675f311995eaaa",
+      "role": "proof only; 261/261 PASS"
+    },
+    "measurement_output_record": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/TWIN_HAMMER_HEAD_CORRESPONDENCE_CONTACT_AND_ROTATIONAL_STATION_AUTHORITY_RESOLUTION_A01_OUTPUT_RECORD.md",
+      "sha256": "26941ec8eee3dc55494d8fe0dbc7d5079f6cad47642d2f3df8672356de122c5e",
+      "role": "Flamestrike output-decision record"
+    },
+    "measurement_visible_review": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/TWIN_HAMMER_HEAD_CORRESPONDENCE_CONTACT_ROTATIONAL_STATION_AUTHORITY_A01_REVIEW.md",
+      "sha256": "24d0e65baf95dc657f08947bffd7e41596dcd06cf3d3f1463d857b40ad859872",
+      "role": "visibly reviewed measurement evidence"
+    },
+    "measurement_handoff": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/handoffs/TWIN_HAMMER_HEAD_CORRESPONDENCE_CONTACT_ROTATIONAL_STATION_AUTHORITY_A01_HANDOFF.md",
+      "sha256": "d6938adf4d4614bbf8ccb5b2a526b54937e1f8a60059092e32cc667f02a8f6be",
+      "role": "approved scope and stop-state handoff"
+    },
+    "step_state_at_preflight": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_STATE.json",
+      "sha256": "a0785564b4e85a67c7bbe77da4b864ee13dd861a7925df8575601d55262a82cc",
+      "role": "pre-execution state evidence; not immutable after this lock execution"
+    },
+    "approved_measurement_package_commit": "69846b0b66611d67e4821b8ad38c560a55a75351",
+    "approved_lock_contract_commit": "87ac6724edeeaa81e09f0690287638d140b30261"
+  },
+  "approved_candidate_manifest": {
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_HEAD_CORRESPONDENCE_CONTACT_ROTATIONAL_STATION_AUTHORITY_A01.json",
+    "sha256": "7a7c633587b4d39797339077685109eb28c31ca8e28e36f1e888d0506fec2ceb",
+    "original_artifact_status": "candidate partial authority resolution; production remains blocked",
+    "measurement_result": "PASS_MEASUREMENT_PROCESS_WITH_PARTIAL_AUTHORITY_RESOLUTION",
+    "flamestrike_output_decision": "approved",
+    "effective_locked_subset_status": "authoritative measurement-only partial authority; production remains blocked",
+    "whole_file_immutable": true,
+    "whole_file_change_invalidates_lock": true,
+    "unlisted_sections_promoted": false
+  },
+  "canonical_partial_lock_sections": [
+    {
+      "id": "SOURCE_ROLE_SPLIT",
+      "selector": ".source_role_and_lineage_matrix",
+      "sha256_jq_cS_with_trailing_newline": "3d1035aacddad1cae0340a847dbbc750847269b9ed6861650457af822ac29aae",
+      "effective_authority": "authoritative current measurement source-role split"
+    },
+    {
+      "id": "PROJECTED_CONTACT_AND_C04_BOUNDARY_EXPANSION",
+      "selector": ".projected_contact_expansion",
+      "sha256_jq_cS_with_trailing_newline": "d7192621b27d67002124f09943a6265d90c84bb1191c156dbe5a3d40966d5b3c",
+      "effective_authority": "authoritative exact 2D projected-contact and projected-owner-boundary evidence only"
+    },
+    {
+      "id": "C06_C11_STATION_AND_PHYSICAL_Z",
+      "selector": ".c06_c11_half_open_station_table",
+      "sha256_jq_cS_with_trailing_newline": "72cc13e2ab54fa132f4dc8675f198d17eb5262b2bd348def3d25147ba7a3a72d",
+      "effective_authority": "authoritative C06-C11 station and physical-Z measurement authority only"
+    },
+    {
+      "id": "C08_RADIUS_BY_Z",
+      "selector": ".c08_radius_by_z_table",
+      "sha256_jq_cS_with_trailing_newline": "eb82dba6e3d994533cca2150b4194d38ab2024fb8156a78c82bbd0f532c9ca6d",
+      "effective_authority": "authoritative C08 row-exact radius-by-Z measurement authority only"
+    },
+    {
+      "id": "GOVERNING_STOP_CONDITIONS",
+      "selector": ".remaining_blocks",
+      "sha256_jq_cS_with_trailing_newline": "f260d07eda22ef5faec9047d43a846b31f4849d16d08c1076cb68d1bf880bad4",
+      "effective_authority": "authoritative unresolved stop conditions"
+    }
+  ],
+  "source_role_authority": {
+    "new_r8_lineage": {
+      "role": "current source pixels, view-local contours, component station observations, color observations, and view-local measurements",
+      "decoded_source_count": 6,
+      "decoded_without_resampling": true
+    },
+    "original_six_view_lineage": {
+      "role": "reference only",
+      "current_numeric_input": false,
+      "exact_cross_lineage_mapping": null
+    },
+    "step09a": {
+      "role": "authoritative component memberships, protected negative spaces, projected boundaries, and source order",
+      "hidden_surfaces": false,
+      "point_pairing": false,
+      "triangulation": false
+    },
+    "shared_depth_blueprint": {
+      "role": "validation bounds and twin identity only",
+      "creates_surface": false
+    },
+    "component_equation_contract": {
+      "role": "equation-form and fail-closed precedent only; old image coordinates, scale, and stations excluded"
+    },
+    "correct_axis_contract": {
+      "role": "explicit new-R8 station semantics and later physical longitudinal/radial locks"
+    },
+    "creates_cross_lineage_coordinate_mapping": false
+  },
+  "projected_contact_authority": {
+    "classification": "exact two-dimensional projected authority only",
+    "contacts": [
+      {
+        "contact_id": "FRONT_C01_C06_CONTACT",
+        "source_edge_y": 600,
+        "intersection_run_half_open": [
+          504,
+          619
+        ],
+        "unit_edge_count": 115,
+        "creates_3d_contact": false
+      },
+      {
+        "contact_id": "FRONT_C06_C07_CONTACT",
+        "source_edge_y": 670,
+        "intersection_run_half_open": [
+          527,
+          596
+        ],
+        "unit_edge_count": 69,
+        "creates_3d_contact": false
+      },
+      {
+        "contact_id": "FRONT_C12_RESERVED_C01_CONTACT",
+        "source_edge_y": 295,
+        "intersection_run_half_open": [
+          487,
+          636
+        ],
+        "unit_edge_count": 149,
+        "creates_3d_contact": false
+      }
+    ],
+    "total_contact_unit_edges": 333,
+    "right_c04_projected_owner_boundaries": [
+      {
+        "candidate": "metal_center_piece_side",
+        "position": "top",
+        "source_edge_y": 241,
+        "owner_run_half_open": [
+          504,
+          557
+        ],
+        "unit_edge_count": 53,
+        "classification": "exact projected owner boundary only",
+        "physical_common_contact_authority": false
+      },
+      {
+        "candidate": "metal_center_piece_side",
+        "position": "bottom",
+        "source_edge_y": 651,
+        "owner_run_half_open": [
+          500,
+          557
+        ],
+        "unit_edge_count": 57,
+        "classification": "exact projected owner boundary only",
+        "physical_common_contact_authority": false
+      },
+      {
+        "candidate": "rune_side",
+        "position": "top",
+        "source_edge_y": 241,
+        "owner_run_half_open": [
+          557,
+          620
+        ],
+        "unit_edge_count": 63,
+        "classification": "exact projected owner boundary only",
+        "physical_common_contact_authority": false
+      },
+      {
+        "candidate": "rune_side",
+        "position": "bottom",
+        "source_edge_y": 651,
+        "owner_run_half_open": [
+          557,
+          622
+        ],
+        "unit_edge_count": 65,
+        "classification": "exact projected owner boundary only",
+        "physical_common_contact_authority": false
+      }
+    ],
+    "bottom_center_separation": {
+      "boundary_id": "BOTTOM_STONE_SEPARATION_WITHOUT_CENTRAL_OWNER",
+      "classification": "recorded absence of bottom-specific samples",
+      "sample_count": 0,
+      "fill_or_no_gap_authority": false
+    },
+    "creates_point_correspondence": false,
+    "creates_surface": false,
+    "creates_triangle": false
+  },
+  "c06_c11_station_and_physical_z_authority": {
+    "source_station_edges": {
+      "A_begin_haft_including_coupler": 600,
+      "C_coupler_meets_true_haft": 670,
+      "H1_haft_meets_handle_ferrule": 870,
+      "H8_ferrule_meets_grip": 955,
+      "U1_grip_meets_collar": 1110,
+      "U3_collar_meets_pommel": 1150,
+      "L4_pommel_meets_terminal_cap": 1220,
+      "terminal_bottom": 1271
+    },
+    "piecewise_z_formulas": {
+      "600_to_955": "132-(y-600)*(7992/42955)",
+      "955_to_1110": "7980/121-(y-955)*(42/155)",
+      "1110_to_1271": "(1271-y)*(18/121)"
+    },
+    "continuous_at_edges": [
+      955,
+      1110
+    ],
+    "components": [
+      {
+        "component": "C06_UPPER_HAFT_CAP",
+        "source_rows_half_open": [
+          600,
+          670
+        ],
+        "upper_world_z_cm_exact": "132/1",
+        "lower_world_z_cm_exact": "1022124/8591",
+        "physical_length_cm_exact": "111888/8591"
+      },
+      {
+        "component": "C07_HAFT",
+        "source_rows_half_open": [
+          670,
+          870
+        ],
+        "upper_world_z_cm_exact": "1022124/8591",
+        "lower_world_z_cm_exact": "702444/8591",
+        "physical_length_cm_exact": "319680/8591"
+      },
+      {
+        "component": "C07B_HAFT_TO_HANDLE_FERRULE",
+        "source_rows_half_open": [
+          870,
+          955
+        ],
+        "upper_world_z_cm_exact": "702444/8591",
+        "lower_world_z_cm_exact": "7980/121",
+        "physical_length_cm_exact": "135864/8591"
+      },
+      {
+        "component": "C08_GRIP",
+        "source_rows_half_open": [
+          955,
+          1110
+        ],
+        "upper_world_z_cm_exact": "7980/121",
+        "lower_world_z_cm_exact": "2898/121",
+        "physical_length_cm_exact": "42/1"
+      },
+      {
+        "component": "C09_LOWER_COLLAR",
+        "source_rows_half_open": [
+          1110,
+          1150
+        ],
+        "upper_world_z_cm_exact": "2898/121",
+        "lower_world_z_cm_exact": "18/1",
+        "physical_length_cm_exact": "720/121"
+      },
+      {
+        "component": "C10_POMMEL_BODY",
+        "source_rows_half_open": [
+          1150,
+          1220
+        ],
+        "upper_world_z_cm_exact": "18/1",
+        "lower_world_z_cm_exact": "918/121",
+        "physical_length_cm_exact": "1260/121"
+      },
+      {
+        "component": "C11_POMMEL_TERMINAL_CAP",
+        "source_rows_half_open": [
+          1220,
+          1271
+        ],
+        "upper_world_z_cm_exact": "918/121",
+        "lower_world_z_cm_exact": "0/1",
+        "physical_length_cm_exact": "918/121"
+      }
+    ],
+    "component_interval_count": 7,
+    "station_edge_count": 8,
+    "head_z_reconciliation_authority": false
+  },
+  "c08_radius_by_z_authority": {
+    "source_rows_half_open": [
+      955,
+      1110
+    ],
+    "row_count": 155,
+    "source_axis_edge_x": 562,
+    "radial_scale_cm_per_pixel_exact": "11/136",
+    "minimum_distance_pixels": 33,
+    "maximum_distance_pixels": 38,
+    "minimum_radius_cm_exact": "363/136",
+    "maximum_radius_cm_exact": "209/68",
+    "row_content_authority": "exact manifest rows by immutable whole-file and section digest reference",
+    "source_column_ownership": "for each recorded row distance d_y and source cell [x,x+1), exact normalized interval [(x-562)/d_y,(x+1-562)/d_y] under theta(U)=-pi/2+pi*U",
+    "smoothing_allowed": false,
+    "interpolation_between_unrecorded_rows_allowed": false,
+    "resampling_allowed": false,
+    "nearby_row_substitution_allowed": false,
+    "fixed_segment_count_allowed": false,
+    "creates_geometry": false
+  },
+  "excluded_candidate_evidence": {
+    "rotational_transition_contact_table": {
+      "status": "proof-only candidate evidence; no row receives authority from this lock",
+      "coordinate_equal_c08_c09_row_at_1110_promoted": false,
+      "unequal_radius_transition_authority": false,
+      "terminal_cap_closure_authority": false
+    },
+    "projected_boundary_inventory": {
+      "status": "evidence only except where the locked projected-contact section explicitly references a boundary",
+      "three_dimensional_authority": false
+    },
+    "head_corner_anchor_and_embedding_matrix": {
+      "status": "blocked unknown / proof only",
+      "complete_xyz_authority": false
+    },
+    "head_closure_incidence_table": {
+      "status": "blocked unknown / proof only",
+      "closure_authority": false
+    },
+    "candidate_correspondence_and_index_triangulation": {
+      "status": "proof only",
+      "point_correspondence_authority": false,
+      "triangle_index_triplet_count": 0
+    },
+    "hidden_closure_and_common_contact_table": {
+      "status": "blocked unknown / proof only",
+      "hidden_surface_authority": false
+    }
+  },
+  "authoritative_stop_conditions": [
+    {
+      "label": "Blueprint block: source authority missing",
+      "detail": "complete head XYZ embedding, physical corner incidence, hidden-boundary owner, and bottom center-gap disposition"
+    },
+    {
+      "label": "Blueprint block: rule missing",
+      "detail": "complete cyclic head boundary incidence and approved hidden-closure equation"
+    },
+    {
+      "label": "Blueprint block: source authority conflict",
+      "detail": "front global-view head Z registration maps A to 114070/1063 cm while the later physical lock sets A to 132 cm; no approved current head-Z reconciliation exists"
+    },
+    {
+      "label": "Blueprint block: source authority missing",
+      "detail": "C04 top/bottom boundaries lack an exact adjacent stone owner and full physical perimeter incidence"
+    },
+    {
+      "label": "Blueprint block: rule missing",
+      "detail": "unequal-radius rotational contacts require current-lineage shoulder equations; terminal cap closure also remains unreconciled"
+    }
+  ],
+  "head_authority_status": {
+    "replayed_boundary_sample_count": 2566,
+    "complete_xyz_boundary_sample_count": 0,
+    "approved_point_correspondence_count": 0,
+    "triangle_index_triplet_count": 0,
+    "head_z_conflict": {
+      "front_global_view_a_cm_exact": "114070/1063",
+      "later_physical_station_a_cm_exact": "132/1",
+      "approved_reconciliation_exists": false
+    }
+  },
+  "authority_boundary": {
+    "measurement_partial_authority": true,
+    "complete_head_authority": false,
+    "head_correspondence_authority": false,
+    "head_closure_authority": false,
+    "c04_physical_contact_authority": false,
+    "unequal_radius_transition_authority": false,
+    "terminal_cap_closure_authority": false,
+    "builder_change_authority": false,
+    "builder_run_authority": false,
+    "blender_authority": false,
+    "geometry_authority": false,
+    "imagery_authority": false,
+    "render_authority": false,
+    "export_authority": false,
+    "step_13_authority": false,
+    "step_14_authority": false,
+    "unreal_authority": false,
+    "production_authority": false
+  },
+  "invalidation_rule": {
+    "effective_only_if_independent_validation_passes": true,
+    "invalidate_on_governing_input_hash_change": true,
+    "invalidate_on_manifest_whole_file_hash_change": true,
+    "invalidate_on_locked_section_digest_change": true,
+    "invalidate_on_authority_boundary_expansion": true,
+    "repair_forward_allowed": false
+  },
+  "execution_observations": {
+    "resolver_rerun": false,
+    "existing_independent_auditor_rerun": false,
+    "new_project_tool_created": false,
+    "approved_manifest_modified": false,
+    "approved_independent_audit_modified": false,
+    "blender_opened": false,
+    "geometry_created": false,
+    "imagery_created": false,
+    "render_created": false,
+    "export_created": false,
+    "unreal_work_performed": false
+  },
+  "next_gate": {
+    "current_action": "stop after visible authority-lock review",
+    "requirement": "separate block-resolution contract and separate Flamestrike approval before any production contract can be execution-ready",
+    "production_contract_unlocked": false,
+    "automatic_advancement": false
+  }
+}

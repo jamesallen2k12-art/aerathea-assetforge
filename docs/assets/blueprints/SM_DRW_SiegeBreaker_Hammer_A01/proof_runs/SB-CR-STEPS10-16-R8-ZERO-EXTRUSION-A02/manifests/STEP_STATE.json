@@ -4,7 +4,7 @@
   "parent_run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
   "last_valid_parent_step": "09",
   "last_core_valid_step": "09A",
-  "current_step": "CORE_RECOVERY_TWIN_HAMMER_MEASUREMENT_AUTHORITY_A01_APPROVED_PENDING_LOCK",
+  "current_step": "CORE_RECOVERY_TWIN_HAMMER_MEASUREMENT_AUTHORITY_LOCK_A01_VALIDATION_FAILURE",
   "completed_steps": [
     "01",
     "02",
@@ -22,7 +22,7 @@
     "11",
     "12"
   ],
-  "state": "core_recovery_measurement_authority_approved_pending_separate_authority_lock",
+  "state": "core_recovery_stopped_invalid_authority_lock_validation_failure",
   "step_11_decision": "historically approved; invalid and quarantined as construction authority after the 2026-07-24 depth-ownership correction",
   "step_11_validation": "blueprint A02 independent PASS 462/462; proof only for narrow checks",
   "historical_block": {
@@ -452,7 +452,7 @@
     "unreal_authority": false
   },
   "twin_hammer_head_contact_rotational_authority_resolution_a01": {
-    "artifact_status": "Flamestrike-approved candidate measurement resolution; authority lock pending",
+    "artifact_status": "Flamestrike-approved candidate measurement resolution; valid authority lock absent after invalid A01 attempt",
     "result": "PASS_MEASUREMENT_PROCESS_WITH_PARTIAL_AUTHORITY_RESOLUTION",
     "contract_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/TWIN_HAMMER_HEAD_CORRESPONDENCE_CONTACT_AND_ROTATIONAL_STATION_AUTHORITY_RESOLUTION_A01_CONTRACT.md",
     "contract_sha256": "1352b2c008c30bda6e2755fc568126e62fc65e049b8a79c13808f4ea7e1a4548",
@@ -515,9 +515,58 @@
     "step_14_authority": false,
     "unreal_authority": false
   },
+  "twin_hammer_head_contact_rotational_measurement_authority_lock_a01": {
+    "artifact_status": "invalid; proof only",
+    "result": "FAIL_INDEPENDENT_VALIDATION_59_OF_61",
+    "contract_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/TWIN_HAMMER_HEAD_CONTACT_ROTATIONAL_MEASUREMENT_AUTHORITY_LOCK_A01_CONTRACT.md",
+    "contract_sha256": "03f0f933aadc516ba639fc47450465b2144f8eb828642a36d88dd7cbbe93e9e6",
+    "flamestrike_execution_decision": "approved",
+    "execution_authority_consumed": true,
+    "pre_execution_checkpoint": "Saved/ProjectRecovery/20260724-193505",
+    "invalid_lock_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_HEAD_CONTACT_ROTATIONAL_MEASUREMENT_AUTHORITY_LOCK_A01.json",
+    "invalid_lock_sha256": "e57b88d53724f69b4d7179a2616316820f9ef669699e074d5c74aa1ea59c6cd9",
+    "validation_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_HEAD_CONTACT_ROTATIONAL_MEASUREMENT_AUTHORITY_LOCK_A01_VALIDATION.json",
+    "validation_sha256": "25b8eea66a442c512e8e59dd02fb48c2487e708495a40e88e40e4e03379d40b5",
+    "validation_result": "FAIL 59/61",
+    "failed_check_ids": [
+      "E08",
+      "E09"
+    ],
+    "failure_classification": "validation implementation failure; zero-match rg count pipelines emitted empty numeric operands",
+    "read_only_failure_diagnosis": {
+      "classification": "diagnostic only; not a validation rerun",
+      "matching_new_project_authority_lock_tools": 0,
+      "matching_forbidden_authority_lock_output_extensions": 0,
+      "may_reinterpret_failed_validation_as_pass": false
+    },
+    "output_record_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/TWIN_HAMMER_HEAD_CONTACT_ROTATIONAL_MEASUREMENT_AUTHORITY_LOCK_A01_OUTPUT_RECORD.md",
+    "output_record_sha256": "993a70d9d0616e0a8e047f1c7769398feebe90898b6eb39616f35044f9bd51d3",
+    "review_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/TWIN_HAMMER_HEAD_CONTACT_ROTATIONAL_MEASUREMENT_AUTHORITY_LOCK_A01_REVIEW.md",
+    "review_sha256": "2c14b0664f29ad6b0910d2363f61273305d15ea1fd1805ab7b2da4b4043fe953",
+    "handoff_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/handoffs/TWIN_HAMMER_HEAD_CONTACT_ROTATIONAL_MEASUREMENT_AUTHORITY_LOCK_A01_HANDOFF.md",
+    "handoff_sha256": "121d31a22ee1eec91af4d215bae3b2e291d065fb7310e5cb060a67bc6da07f29",
+    "last_core_valid_state": "Flamestrike-approved candidate measurement resolution; authority lock pending; production remains blocked",
+    "valid_measurement_authority_lock_created": false,
+    "invalid_lock_record_created": true,
+    "approved_candidate_manifest_modified": false,
+    "measurement_resolver_rerun": false,
+    "measurement_independent_auditor_rerun": false,
+    "project_tools_created_or_modified": 0,
+    "blender_opened": false,
+    "geometry_created": false,
+    "imagery_created": false,
+    "render_created": false,
+    "export_created": false,
+    "step_13_authority": false,
+    "step_14_authority": false,
+    "unreal_authority": false,
+    "production_authority": false,
+    "validation_failure_is_drift": false,
+    "repair_forward_allowed": false
+  },
   "next_permitted_action": {
-    "action": "separately stated authority-lock creation step for the approved candidate measurement manifest, then stop",
-    "next_gate": "separate Flamestrike approval of the exact authority-lock step before creating a lock; a later production contract and separate approval remain required",
+    "action": "draft exactly one Core recovery contract for a clean A02 measurement-authority lock attempt from the last valid approved candidate measurement state, then stop",
+    "next_gate": "separate Flamestrike approval before drafting or executing any A02 recovery; production remains blocked",
     "geometry_authority": false,
     "blender_authority": false
   },
