@@ -6,7 +6,8 @@ The approved `FRESH_TWIN_DCC_SOURCE_BUILDER_A01` contract is complete.
 
 - Siege Breaker status: `DCC source candidate`.
 - Foe Hammer status: `DCC source candidate`.
-- Visual decision: `pending Flamestrike`.
+- Visual decision:
+  `both displayed candidates approved by Flamestrike for advancement`.
 - Independent saved-file and cross-asset audit: `PASS`.
 - Exact shared XYZ:
   `50719500/517681 × 6644212/149985 × 170/1 cm`.
@@ -19,7 +20,7 @@ The approved `FRESH_TWIN_DCC_SOURCE_BUILDER_A01` contract is complete.
 - Siege Breaker distinction: double rune sided.
 - Foe Hammer distinction: double metal-center-piece sided.
 - Quarantined Step 12 geometry read count: `0`.
-- Current action: `stop for Flamestrike visual decision`.
+- Current action: `await a separately stated and approved Step 13 contract`.
 - Step 13 authority: `false`.
 - Retopology / UV / bake / export authority: `false`.
 - Unreal authority: `false`.
@@ -44,12 +45,16 @@ Review board:
 
 `proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/FRESH_TWIN_DCC_SOURCE_BUILDER_A01_REVIEW.png`
 
+Visual-decision approval record:
+
+`proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/FRESH_TWIN_DCC_SOURCE_BUILDER_A01_VISUAL_DECISION_APPROVAL_RECORD.md`
+
 On resume, verify this current section, the fresh output record, the
-independent cross-asset audit, the review handoff, the latest recovery
-journal/checkpoint, and git status. Report both assets as audited
-`DCC source candidate` outputs awaiting Flamestrike's visual decision. Do not
-advance to Step 13 or later production without a separate visible contract
-and approval.
+independent cross-asset audit, the visual-decision approval record, the latest
+recovery journal/checkpoint, and git status. Report both assets as audited,
+visually approved `DCC source candidate` outputs awaiting a separate Step 13
+contract. Do not execute Step 13 or later production without that visible
+contract and approval.
 
 ## 2026-07-24 Shared-Depth Recovery Blueprint A01 — Historical Pre-Build Authority
 

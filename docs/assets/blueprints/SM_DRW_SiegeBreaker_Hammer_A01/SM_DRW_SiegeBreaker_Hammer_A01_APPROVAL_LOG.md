@@ -1228,3 +1228,27 @@
 - This approval authorizes preservation and reset handoff only. No geometry,
   render, export, Unreal, or game-ready escalation is authorized in this
   savepoint action.
+
+## 2026-07-24 — Fresh Shared-Depth Twin Images Approved
+
+- Flamestrike decision: `I approve the images`.
+- Reviewed evidence:
+  `proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/FRESH_TWIN_DCC_SOURCE_BUILDER_A01_REVIEW.png`.
+- Review-board SHA-256:
+  `2f88854a58596e104841878c355082a0f9515e95ca634bd0ed31bbbc8d608c65`.
+- Siege Breaker result:
+  double-rune-sided `DCC source candidate` visually approved for advancement.
+- Foe Hammer result:
+  double-metal-center-piece-sided `DCC source candidate` visually approved
+  for advancement.
+- Shared exact XYZ:
+  `50719500/517681 × 6644212/149985 × 170/1 cm`.
+- Observed cross-asset Blender dimension difference:
+  `0.0 × 0.0 × 0.0 cm`.
+- Approval record:
+  `proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/FRESH_TWIN_DCC_SOURCE_BUILDER_A01_VISUAL_DECISION_APPROVAL_RECORD.md`.
+- Authority boundary:
+  both assets remain `DCC source candidate`; Step 13 requires a separate
+  visible contract and approval. Retopology, UVs, baking, textures, materials,
+  LODs, collision, export, Unreal, and final/game-ready promotion remain
+  unauthorized.

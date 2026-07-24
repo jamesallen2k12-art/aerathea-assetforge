@@ -8897,3 +8897,13 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260724-121133/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260724-121133/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 12:26:43 EDT -0400 - Record Flamestrike approval of Siege Breaker and Foe Hammer twin review images
+
+- Snapshot: `Saved/ProjectRecovery/20260724-122643/`
+- Git: branch `main`, HEAD `3327cf2`, status lines `559`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-122643/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-122643/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-122643/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

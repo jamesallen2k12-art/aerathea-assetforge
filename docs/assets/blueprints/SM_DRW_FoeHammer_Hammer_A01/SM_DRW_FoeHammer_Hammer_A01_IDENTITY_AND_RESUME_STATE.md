@@ -8,7 +8,8 @@ valid standalone Foe Hammer Blender source.
 - Asset identity: `authoritative`.
 - Treatment: double metal-center-piece sided.
 - Geometry status: `DCC source candidate`.
-- Visual decision: `pending Flamestrike`.
+- Visual decision:
+  `approved by Flamestrike for advancement with its Siege Breaker twin`.
 - Independent saved-file audit: `PASS`.
 - Independent cross-asset audit: `PASS`.
 - Exact XYZ:
@@ -45,10 +46,15 @@ Review handoff:
 
 `docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/handoffs/FRESH_TWIN_DCC_SOURCE_BUILDER_A01_VISUAL_REVIEW_HANDOFF.md`
 
+Visual-decision approval record:
+
+`docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/FRESH_TWIN_DCC_SOURCE_BUILDER_A01_VISUAL_DECISION_APPROVAL_RECORD.md`
+
 On resume, report that Foe Hammer now has an audited standalone
 `DCC source candidate`, is otherwise canonically identical to Siege Breaker,
-and awaits Flamestrike's visual decision. Step 13, retopology, UVs, baking,
-export, and Unreal remain locked behind a separate visible contract.
+and has passed the current Flamestrike visual gate with its twin. Step 13,
+retopology, UVs, baking, export, and Unreal remain locked behind a separate
+visible contract.
 
 ## Historical Identity Establishment And Pre-Build State
 
