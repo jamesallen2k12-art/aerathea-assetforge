@@ -1,0 +1,356 @@
+{
+  "schema": "AERATHEA_SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_V1",
+  "date": "2026-07-24",
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "artifact_status": "candidate pending Flamestrike approval",
+  "assets": {
+    "siege_breaker": {
+      "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+      "display_name": "Siege Breaker",
+      "local_c04_treatment": "rune_side",
+      "completed_face_rule": "double rune sided"
+    },
+    "foe_hammer": {
+      "asset_id": "SM_DRW_FoeHammer_Hammer_A01",
+      "display_name": "Foe Hammer",
+      "local_c04_treatment": "metal_center_piece_side",
+      "completed_face_rule": "double metal-center-piece sided"
+    }
+  },
+  "software_boundary": {
+    "documentation_only": true,
+    "builder_changed": false,
+    "builder_run": false,
+    "blender_opened": false,
+    "geometry_created_or_modified": false,
+    "source_candidate_forked": false,
+    "step_13_authority": false,
+    "unreal_authority": false
+  },
+  "approval_contract": {
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_APPROVAL_RECORD.md",
+    "sha256": "b54b2f5d26e4374822aa443fbe2b1d5a78dc05cf2b1c88501c1a2021d6c05d3d",
+    "status": "authoritative approval record"
+  },
+  "authority_sources": {
+    "depth_ownership_core_recovery": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_12_DEPTH_OWNERSHIP_CORE_RECOVERY.md",
+      "sha256": "d433959a9ff573cc51a0b4bd97067b634a11ddf1ea075913647616e6f59c70f5",
+      "status": "authoritative"
+    },
+    "a11_axial_depth": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/manifests/A11_TRUE_AXIAL_TOP_BOTTOM_PIXEL_MEASUREMENT.json",
+      "sha256": "46877ab4b0142d8141deb4feab234f461a31e61e118d3ce7b41e0b3679786096",
+      "status": "authoritative measurement and reconciliation rule"
+    },
+    "a11_independent_audit": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/manifests/A11_TRUE_AXIAL_TOP_BOTTOM_PIXEL_MEASUREMENT_INDEPENDENT_AUDIT.json",
+      "sha256": "4d4e46b2d1ad71bbdcc8952d85063601b672f4835a2bb95c03f2a7e49eeaff07",
+      "status": "proof only; 26/26 PASS"
+    },
+    "step09a_local_c04_boundaries": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/manifests/STEP_09A_BOUNDARY_AND_CORRESPONDENCE_INDEX.json",
+      "sha256": "e190ed266753c797d4f9ec812154ff3b29f5d5d780e53e235e780c43492d0bd8",
+      "status": "authoritative within measured ownership scope"
+    },
+    "step09_integrated_measurements": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_09_INTEGRATED_EXACT_MEASUREMENT_INDEX.json",
+      "sha256": "5a0a3eea8f877d55216f9efabe15b0ee1cf938e4c15a825a0e218f72ba76839a",
+      "status": "authoritative only for unchanged source measurements"
+    },
+    "step11e_width_tolerance": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_11E_CROSS_VIEW_SILHOUETTE_TOLERANCE_AMENDMENT_A01.md",
+      "sha256": "640d19d6012b4c9926d7ddd431812481219fc65703effa08b194af2116e78b74",
+      "status": "inherited only for exact width arithmetic, larger measured width preservation, and no-clipping rule",
+      "explicitly_not_inherited": "candidate-specific right-view global-depth clause"
+    }
+  },
+  "controlling_goal": {
+    "plain_english": "Create two dimension-identical twin hammers from one shared body and envelope, differing only in their doubled local C04 treatment.",
+    "same_overall_dimensions_required": true,
+    "same_shared_body_geometry_required": true,
+    "allowed_variant_difference": "local C04 treatment only",
+    "repair_forward_from_quarantined_step12": false
+  },
+  "coordinate_system": {
+    "units": "centimeters",
+    "origin": "bottom-center terminal/pommel",
+    "pivot_cm_exact": [
+      "0/1",
+      "0/1",
+      "0/1"
+    ],
+    "axes": {
+      "X": "head width and opposing strike-face direction",
+      "Y": "head body depth",
+      "Z": "longitudinal axis; positive upward"
+    },
+    "whole_asset_completion": {
+      "equation_id": "EQ_WHOLE_ASSET_RZ180",
+      "formula": "(X,Y,Z)->(-X,-Y,Z)",
+      "required_count": 1
+    }
+  },
+  "shared_output_bounds_cm_exact": {
+    "width_x": {
+      "numerator": 50719500,
+      "denominator": 517681,
+      "display_decimal": "97.974428267601",
+      "minimum": "-25359750/517681",
+      "maximum": "25359750/517681"
+    },
+    "depth_y": {
+      "numerator": 6644212,
+      "denominator": 149985,
+      "display_decimal": "44.299176584",
+      "minimum": "-3322106/149985",
+      "maximum": "3322106/149985"
+    },
+    "height_z": {
+      "numerator": 170,
+      "denominator": 1,
+      "display_decimal": "170.000000000000",
+      "minimum": "0/1",
+      "maximum": "170/1"
+    },
+    "applies_identically_to": [
+      "SM_DRW_SiegeBreaker_Hammer_A01",
+      "SM_DRW_FoeHammer_Hammer_A01"
+    ]
+  },
+  "width_reconciliation": {
+    "controlling_front_width_cm_exact": {
+      "numerator": 104040,
+      "denominator": 1063,
+      "display_decimal": "97.873941674506"
+    },
+    "preserved_source_owned_output_width_cm_exact": {
+      "numerator": 50719500,
+      "denominator": 517681,
+      "display_decimal": "97.974428267601"
+    },
+    "completed_difference_cm_exact": {
+      "numerator": 52020,
+      "denominator": 517681,
+      "display_decimal": "0.100486593095"
+    },
+    "difference_per_side_cm_exact": {
+      "numerator": 26010,
+      "denominator": 517681,
+      "display_decimal": "0.050243296547"
+    },
+    "secondary_view_pixel_scale_cm_exact": {
+      "numerator": 52020,
+      "denominator": 517681,
+      "display_decimal": "0.100486593095"
+    },
+    "maximum_per_side_difference_pixels_exact": "1/2",
+    "completed_relative_difference_exact": "1/974",
+    "approved_limits": {
+      "maximum_per_side_pixels": "1/1",
+      "maximum_relative_difference": "1/400",
+      "maximum_completed_difference_cm": "1/5"
+    },
+    "decision": "Use the larger exact source-owned observed width as the common output bound for both twins; preserve the smaller front width as the controlling comparison and strike-plane registration.",
+    "clipping_or_rescaling_allowed": false
+  },
+  "global_depth_ownership": {
+    "owner": "A11 approved axial outer-footprint depth plus Flamestrike's 2026-07-24 Core Recovery approval",
+    "common_full_depth_cm_exact": {
+      "numerator": 6644212,
+      "denominator": 149985,
+      "display_decimal": "44.299176584"
+    },
+    "common_half_depth_cm_exact": {
+      "numerator": 3322106,
+      "denominator": 149985,
+      "display_decimal": "22.149588292163"
+    },
+    "candidate_specific_global_depth_allowed": false,
+    "r8_centered_top_bottom_depth_cm": {
+      "numerator": 24579450,
+      "denominator": 517681,
+      "display_decimal": "47.479915237376",
+      "status": "reference only; comparison/orientation evidence; not final global depth"
+    },
+    "former_rune_global_depth_classification": "invalid as global depth; valid only as local C04 completed span",
+    "former_metal_global_depth_classification": "invalid as global depth; valid only as local C04 completed span"
+  },
+  "local_c04_treatments": {
+    "rune_side": {
+      "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+      "source_owner": "OWN_RIGHT_C04_RUNE",
+      "source_boundary_record": "RIGHT_C04_CANDIDATE_HALF_BOUNDARIES",
+      "source_interval_half_open": [
+        557,
+        668
+      ],
+      "source_span_pixels": 111,
+      "right_view_scale_cm_per_pixel_exact": "85/548",
+      "positive_x_source_half_equation": {
+        "id": "EQ_C04_RUNE_LOCAL_HALF",
+        "formula": "P=(52020/1063,-(x-557)*85/548,(1262-y)*85/548), x in [557,668)"
+      },
+      "face_local_completion": {
+        "id": "EQ_C04_LOCAL_Y_MIRROR",
+        "formula": "(X,Y,Z)->(X,-Y,Z)",
+        "required_count": 1
+      },
+      "local_half_extent_y_cm_exact": {
+        "numerator": 9435,
+        "denominator": 548,
+        "display_decimal": "17.217153284672"
+      },
+      "local_completed_span_y_cm_exact": {
+        "numerator": 9435,
+        "denominator": 274,
+        "display_decimal": "34.434306569343"
+      },
+      "inset_from_common_envelope_per_side_cm_exact": {
+        "numerator": 405405613,
+        "denominator": 82191780,
+        "display_decimal": "4.932435007491"
+      },
+      "global_bound_owner": false,
+      "stretch_normalize_or_resample_allowed": false
+    },
+    "metal_center_piece_side": {
+      "asset_id": "SM_DRW_FoeHammer_Hammer_A01",
+      "source_owner": "OWN_RIGHT_C04_METAL",
+      "source_boundary_record": "RIGHT_C04_CANDIDATE_HALF_BOUNDARIES",
+      "source_interval_half_open": [
+        418,
+        557
+      ],
+      "source_span_pixels": 139,
+      "right_view_scale_cm_per_pixel_exact": "85/548",
+      "positive_x_source_half_equation": {
+        "id": "EQ_C04_METAL_LOCAL_HALF",
+        "formula": "P=(52020/1063,(x-557)*85/548,(1262-y)*85/548), x in [418,557)"
+      },
+      "face_local_completion": {
+        "id": "EQ_C04_LOCAL_Y_MIRROR",
+        "formula": "(X,Y,Z)->(X,-Y,Z)",
+        "required_count": 1
+      },
+      "local_half_extent_y_cm_exact": {
+        "numerator": 11815,
+        "denominator": 548,
+        "display_decimal": "21.560218978102"
+      },
+      "local_completed_span_y_cm_exact": {
+        "numerator": 11815,
+        "denominator": 274,
+        "display_decimal": "43.120437956204"
+      },
+      "inset_from_common_envelope_per_side_cm_exact": {
+        "numerator": 48441313,
+        "denominator": 82191780,
+        "display_decimal": "0.589369314060"
+      },
+      "global_bound_owner": false,
+      "stretch_normalize_or_resample_allowed": false
+    }
+  },
+  "equation_replacements": {
+    "invalid_removed_rule": {
+      "id": "EQ_CANDIDATE_AXIAL_INTERSECTION",
+      "former_formula": "S_compatible=S_exact_owner_cell intersect {(X,Y): -D_candidate/2<=Y<=0}",
+      "status": "invalid; forbidden in every future build"
+    },
+    "common_body_limit": {
+      "id": "EQ_COMMON_BODY_DEPTH_LIMIT",
+      "formula": "-3322106/149985<=Y<=3322106/149985",
+      "role": "common outer Y limit and validation bound for both twins",
+      "creates_geometry_by_itself": false
+    },
+    "shared_front_back_registration": {
+      "id": "EQ_SHARED_FRONT_BACK_PLANES",
+      "formula": "Y_front=-3322106/149985; Y_back=3322106/149985",
+      "role": "common body front/back depth registration; source-owned surfaces only"
+    },
+    "shared_output_bounds_equality": {
+      "id": "EQ_TWIN_OUTPUT_BOUNDS_EQUALITY",
+      "formula": "BoundsXYZ(SiegeBreaker)=BoundsXYZ(FoeHammer)=(50719500/517681,6644212/149985,170/1)",
+      "tolerance": "0/1 cm between twins"
+    },
+    "shared_base_canonical_equality": {
+      "id": "EQ_TWIN_SHARED_BASE_CANONICAL_EQUALITY",
+      "formula": "CanonicalHash(SharedBase_SiegeBreaker)=CanonicalHash(SharedBase_FoeHammer)",
+      "excluded_variant_components": [
+        "C04_RUNE_LOCAL_TREATMENT",
+        "C04_METAL_CENTER_PIECE_LOCAL_TREATMENT"
+      ]
+    }
+  },
+  "shared_body_invariant": {
+    "required": true,
+    "construction_rule": "Construct the shared body once from approved nonvariant source ownership and equations, then instantiate the same canonical shared base for both twins.",
+    "shared_component_scope": [
+      "C01_CENTER_CORE",
+      "C02_STONE_LEFT",
+      "C03_STONE_RIGHT",
+      "C06_UPPER_HAFT_CAP",
+      "C07_HAFT",
+      "C07B_HAFT_TO_HANDLE_FERRULE",
+      "C08_GRIP",
+      "C09_LOWER_COLLAR",
+      "C10_POMMEL_BODY",
+      "C11_POMMEL_TERMINAL_CAP",
+      "C12_UPPER_HEAD_CAP_SPIRE",
+      "all nonvariant contacts, closures, pivot state, scale state, and transforms"
+    ],
+    "allowed_geometry_difference": [
+      "C04_RUNE_LOCAL_TREATMENT versus C04_METAL_CENTER_PIECE_LOCAL_TREATMENT"
+    ],
+    "topology_count_equality_required": false,
+    "reason_topology_may_differ": "Only the source-owned local C04 treatments may have different topology.",
+    "material_or_identity_difference_outside_c04_allowed": false,
+    "shared_base_may_read_quarantined_geometry": false
+  },
+  "evidence_interpretation_guards": {
+    "common_bounds_are_geometry_fill": false,
+    "bounding_box_may_create_surface": false,
+    "footprint_may_create_surface": false,
+    "unowned_backing_plate_allowed": false,
+    "local_c04_span_may_clip_shared_body": false,
+    "source_owner_required_for_every_surface": true,
+    "missing_surface_authority_response": "Blueprint block: source authority missing",
+    "missing_connection_rule_response": "Blueprint block: rule missing"
+  },
+  "required_future_build_audits": [
+    "verify both saved output bounds equal the exact shared XYZ record",
+    "verify zero cross-asset bound difference on X, Y, and Z",
+    "verify the shared-base canonical hashes are identical after excluding only the tagged local C04 treatment",
+    "verify rune local half extent is exactly 9435/548 cm without stretching",
+    "verify metal local half extent is exactly 11815/548 cm without stretching",
+    "verify both local treatments remain inside the common Y envelope",
+    "verify EQ_CANDIDATE_AXIAL_INTERSECTION is absent",
+    "verify no candidate-specific global depth field controls shared geometry",
+    "verify one local Y mirror and one whole-asset Rz180 per asset",
+    "verify no geometry is read from either quarantined Step 12 output family",
+    "verify every created surface cites an approved source owner and equation",
+    "verify expected and observed dimensions are recorded separately"
+  ],
+  "prohibited_actions": [
+    "reuse or repair forward either quarantined Step 12 mesh",
+    "stretch, normalize, average, or resample either local C04 treatment",
+    "promote a local C04 span to global depth",
+    "use the common envelope or a bounding rectangle as unowned fill geometry",
+    "change builder or auditor code under this blueprint-review step",
+    "open Blender or save geometry",
+    "fork or rename a Foe Hammer source",
+    "advance to Step 13",
+    "retopology, UV, bake, texture, material, LOD, collision, export, or Unreal work"
+  ],
+  "decision_gate": {
+    "current_decision": "pending Flamestrike blueprint review",
+    "allowed_responses": [
+      "approve blueprint",
+      "reject blueprint",
+      "mark blueprint blocked"
+    ],
+    "if_approved": "A separate visible fresh-builder contract is still required before code, Blender, or geometry.",
+    "production_authority": false
+  }
+}

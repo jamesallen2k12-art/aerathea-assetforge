@@ -1,0 +1,180 @@
+{
+  "schema": "AERATHEA_SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_VALIDATION_V1",
+  "date": "2026-07-24",
+  "artifact_status": "proof only",
+  "blueprint": {
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01.json",
+    "sha256": "efdbd8795dff2031fcde9e734868ff4c617dc37ad1e7b3743c3727daea981d58",
+    "status": "candidate pending Flamestrike approval"
+  },
+  "approval_contract": {
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_APPROVAL_RECORD.md",
+    "sha256": "b54b2f5d26e4374822aa443fbe2b1d5a78dc05cf2b1c88501c1a2021d6c05d3d",
+    "status": "authoritative approval record"
+  },
+  "validation_method": {
+    "method": "independent read-only Python Fraction replay",
+    "blueprint_builder_or_auditor_imported": false,
+    "project_validator_created": false,
+    "network_used": false,
+    "geometry_read": false,
+    "geometry_created_or_modified": false,
+    "blender_opened": false
+  },
+  "result": {
+    "checks_passed": 66,
+    "checks_total": 66,
+    "verdict": "PASS",
+    "failed_checks": []
+  },
+  "check_groups": [
+    {
+      "group": "schema and artifact status",
+      "passed": 2,
+      "total": 2,
+      "result": "PASS"
+    },
+    {
+      "group": "documentation-only software boundary",
+      "passed": 8,
+      "total": 8,
+      "result": "PASS"
+    },
+    {
+      "group": "approval and authority source existence/hash locks",
+      "passed": 14,
+      "total": 14,
+      "result": "PASS"
+    },
+    {
+      "group": "exact shared bounds and symmetric min/max",
+      "passed": 5,
+      "total": 5,
+      "result": "PASS"
+    },
+    {
+      "group": "larger width selection and three-limit tolerance replay",
+      "passed": 8,
+      "total": 8,
+      "result": "PASS"
+    },
+    {
+      "group": "A11 depth and R8 reference-only depth replay",
+      "passed": 3,
+      "total": 3,
+      "result": "PASS"
+    },
+    {
+      "group": "rune and metal local C04 interval/span/inset replay",
+      "passed": 16,
+      "total": 16,
+      "result": "PASS"
+    },
+    {
+      "group": "invalid candidate-depth rule and key absence",
+      "passed": 3,
+      "total": 3,
+      "result": "PASS"
+    },
+    {
+      "group": "shared-body and evidence guards",
+      "passed": 4,
+      "total": 4,
+      "result": "PASS"
+    },
+    {
+      "group": "identity assignment and stopped production gate",
+      "passed": 3,
+      "total": 3,
+      "result": "PASS"
+    }
+  ],
+  "exact_replay": {
+    "shared_output_bounds_xyz_cm": {
+      "width": {
+        "exact": "50719500/517681",
+        "decimal": "97.974428267601"
+      },
+      "depth": {
+        "exact": "6644212/149985",
+        "decimal": "44.299176584"
+      },
+      "height": {
+        "exact": "170/1",
+        "decimal": "170.000000000000"
+      },
+      "cross_asset_tolerance": "0/1 cm"
+    },
+    "width_reconciliation": {
+      "controlling_front_width_exact": "104040/1063",
+      "preserved_larger_output_width_exact": "50719500/517681",
+      "difference_exact": "52020/517681",
+      "difference_per_side_exact": "26010/517681",
+      "difference_per_side_pixels_exact": "1/2",
+      "relative_difference_exact": "1/974",
+      "pixel_limit_pass": true,
+      "relative_limit_pass": true,
+      "absolute_limit_pass": true,
+      "clipping_or_rescaling_used": false
+    },
+    "common_depth": {
+      "a11_manifest_exact": "6644212/149985",
+      "blueprint_exact": "6644212/149985",
+      "equality_pass": true,
+      "half_depth_exact": "3322106/149985"
+    },
+    "rune_local_treatment": {
+      "authority_interval_half_open": [
+        557,
+        668
+      ],
+      "span_pixels": 111,
+      "scale_exact": "85/548",
+      "half_extent_exact": "9435/548",
+      "completed_span_exact": "9435/274",
+      "inset_per_side_exact": "405405613/82191780",
+      "inside_common_envelope": true,
+      "global_depth_owner": false,
+      "unstretched": true
+    },
+    "metal_center_piece_local_treatment": {
+      "authority_interval_half_open": [
+        418,
+        557
+      ],
+      "span_pixels": 139,
+      "scale_exact": "85/548",
+      "half_extent_exact": "11815/548",
+      "completed_span_exact": "11815/274",
+      "inset_per_side_exact": "48441313/82191780",
+      "inside_common_envelope": true,
+      "global_depth_owner": false,
+      "unstretched": true
+    }
+  },
+  "invalid_rule_guards": {
+    "EQ_CANDIDATE_AXIAL_INTERSECTION_occurrences": 1,
+    "occurrence_role": "historical invalid-rule declaration only",
+    "source_half_depth_cm_key_present": false,
+    "front_envelope_y_cm_key_present": false,
+    "candidate_specific_global_depth_allowed": false,
+    "common_bounds_create_geometry": false
+  },
+  "quarantined_tool_boundary": {
+    "builder_path": "Tools/DCC/build_siegebreaker_r8_step12_source_geometry_a01.py",
+    "builder_sha256": "85356eb4f79e5c83fbb84c6add3d94f36325553bb715068774d351fc5f0f4032",
+    "builder_worktree_changed_by_this_step": false,
+    "auditor_path": "Tools/DCC/audit_siegebreaker_r8_step12_source_geometry_a01.py",
+    "auditor_sha256": "4e7a3a4c3d6e3b85ffab66f56f404393cd0379a6bb8953286843844e676aa443",
+    "auditor_worktree_changed_by_this_step": false
+  },
+  "decision": {
+    "blueprint_equations": "independently validated",
+    "blueprint_visual_or_production_approval": "pending Flamestrike review",
+    "builder_authority": false,
+    "blender_authority": false,
+    "geometry_authority": false,
+    "step_13_authority": false,
+    "unreal_authority": false
+  }
+}

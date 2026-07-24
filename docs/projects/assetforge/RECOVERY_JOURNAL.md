@@ -8857,3 +8857,13 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260724-105121/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260724-105121/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 11:05:14 EDT -0400 - record validated shared-depth twin hammer blueprint review
+
+- Snapshot: `Saved/ProjectRecovery/20260724-110514/`
+- Git: branch `main`, HEAD `953131e`, status lines `560`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-110514/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-110514/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-110514/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
