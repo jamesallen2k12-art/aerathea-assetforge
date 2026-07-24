@@ -1,5 +1,55 @@
 # SM_DRW_FoeHammer_Hammer_A01 Identity And Resume State
 
+## 2026-07-24 Fresh-Build Authority Preflight Block — Current State
+
+Flamestrike approved the exact twin-hammer fresh-build correction contract at
+SHA-256:
+
+`1e424dfdbb12b7e12c67e3a6c4cae29c1eb80309c5fe0d3717f6e0fd772e8b37`.
+
+The mandatory authority preflight stopped before code with:
+
+- `Blueprint block: rule missing`;
+- `Blueprint block: source authority missing`.
+
+Step 09A supplies ordered C02/C03 front/top/bottom owner-edge sets but
+explicitly no point pairing or hidden surface. The unequal edge counts
+(`376 / 446 / 461`), empty head/contact sets, incomplete C06-C11 station and
+contact authority, and missing C08 radius-by-Z owner prevent deterministic
+construction without inventing new rules.
+
+Foe Hammer's identity and double-metal-center-piece local C04 treatment remain
+authoritative. No new Foe Hammer source was created.
+
+Current classification:
+
+- Approved correction contract:
+  `authoritative approved execution contract; consumed by preflight block`.
+- Authority preflight and output record:
+  `authoritative stop records`.
+- New implementation tools: `0`.
+- New Blender files / geometry / renders / review boards: `0 / 0 / 0 / 0`.
+- Valid DCC source candidates: `0`.
+- Active geometry contract: `none`.
+- Step 13 / Step 14 / Unreal authority: `false / false / false`.
+
+The next permissible proposal is one measurement-only authority-resolution
+contract for exact head correspondence/closure, complete contacts, complete
+C06-C11 stations, and C08 radius ownership. It requires a separate
+Flamestrike approval. Production remains stopped.
+
+Governing preflight:
+
+`docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_CENTER_POST_HANDLE_FRESH_BUILD_CORRECTION_A01_AUTHORITY_PREFLIGHT.json`
+
+Blocked handoff:
+
+`docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/handoffs/TWIN_HAMMER_CENTER_POST_HANDLE_FRESH_BUILD_CORRECTION_A01_REVIEW_HANDOFF.md`
+
+Post-block checkpoint:
+
+`Saved/ProjectRecovery/20260724-161016`
+
 ## 2026-07-24 Center-Post And Handle-Shape Core Recovery — Current State
 
 Foe Hammer shares the same latest geometry as Siege Breaker, so Flamestrike's

@@ -9057,3 +9057,13 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260724-152236/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260724-152236/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 16:10:16 EDT -0400 - Twin hammer fresh-build authority preflight blocked before code A01
+
+- Snapshot: `Saved/ProjectRecovery/20260724-161016/`
+- Git: branch `main`, HEAD `792e503`, status lines `569`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-161016/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-161016/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-161016/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

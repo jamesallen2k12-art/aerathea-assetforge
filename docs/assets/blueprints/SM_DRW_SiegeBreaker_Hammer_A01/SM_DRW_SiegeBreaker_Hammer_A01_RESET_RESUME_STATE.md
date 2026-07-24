@@ -1,5 +1,58 @@
 # SM_DRW_SiegeBreaker_Hammer_A01 Reset / Resume State
 
+## 2026-07-24 Fresh-Build Authority Preflight Block — Current State
+
+Flamestrike approved the exact twin-hammer fresh-build correction contract at
+SHA-256:
+
+`1e424dfdbb12b7e12c67e3a6c4cae29c1eb80309c5fe0d3717f6e0fd772e8b37`.
+
+The contract's mandatory preflight stopped before code.
+
+Exact block labels:
+
+- `Blueprint block: rule missing`;
+- `Blueprint block: source authority missing`.
+
+The Step 09A authority preserves ordered C02/C03 front/top/bottom owner-edge
+sets but explicitly creates no point pairing or hidden surface. Those edge
+sets have unequal sample counts (`376 / 446 / 461`), so no deterministic ruled
+closure can be built without a new approved correspondence and triangulation
+rule.
+
+Required head/contact sets are also empty, and the current records do not
+contain a complete C06-C11 half-open station/contact table or C08 radius-by-Z
+owner.
+
+Current classification:
+
+- Approved correction contract:
+  `authoritative approved execution contract; consumed by preflight block`.
+- Authority preflight and output record:
+  `authoritative stop records`.
+- New implementation tools: `0`.
+- New Blender files / geometry / renders / review boards: `0 / 0 / 0 / 0`.
+- Valid DCC source candidates: `0`.
+- Active geometry contract: `none`.
+- Step 13 / Step 14 / Unreal authority: `false / false / false`.
+
+The next permissible proposal is one measurement-only authority-resolution
+contract for exact head correspondence/closure, complete contacts, complete
+C06-C11 stations, and C08 radius ownership. It requires a separate
+Flamestrike approval. Do not open Blender for production or create geometry.
+
+Governing preflight:
+
+`proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_CENTER_POST_HANDLE_FRESH_BUILD_CORRECTION_A01_AUTHORITY_PREFLIGHT.json`
+
+Blocked handoff:
+
+`proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/handoffs/TWIN_HAMMER_CENTER_POST_HANDLE_FRESH_BUILD_CORRECTION_A01_REVIEW_HANDOFF.md`
+
+Post-block checkpoint:
+
+`Saved/ProjectRecovery/20260724-161016`
+
 ## 2026-07-24 Center-Post And Handle-Shape Core Recovery — Current State
 
 Flamestrike's visible review found two geometry errors shared by the latest

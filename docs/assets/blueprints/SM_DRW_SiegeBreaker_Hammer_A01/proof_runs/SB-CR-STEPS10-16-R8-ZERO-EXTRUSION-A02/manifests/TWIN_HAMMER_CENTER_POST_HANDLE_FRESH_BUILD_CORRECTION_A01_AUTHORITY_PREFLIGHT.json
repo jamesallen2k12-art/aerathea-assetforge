@@ -1,0 +1,265 @@
+{
+  "schema": "AERATHEA_TWIN_HAMMER_CENTER_POST_HANDLE_FRESH_BUILD_AUTHORITY_PREFLIGHT_V1",
+  "date": "2026-07-24",
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "assets": [
+    "SM_DRW_SiegeBreaker_Hammer_A01",
+    "SM_DRW_FoeHammer_Hammer_A01"
+  ],
+  "artifact_status": "authoritative execution stop record backed by read-only evidence",
+  "result": "BLOCKED_BEFORE_CODE",
+  "contract": {
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/TWIN_HAMMER_CENTER_POST_AND_HANDLE_FRESH_BUILD_CORRECTION_A01_CONTRACT.md",
+    "approved_sha256": "1e424dfdbb12b7e12c67e3a6c4cae29c1eb80309c5fe0d3717f6e0fd772e8b37",
+    "observed_sha256": "1e424dfdbb12b7e12c67e3a6c4cae29c1eb80309c5fe0d3717f6e0fd772e8b37",
+    "approval_recorded": true,
+    "approval_response": "approved"
+  },
+  "repository_preflight": {
+    "head": "792e503bf3d3c427c9620c9c9a6fbdac0b7d637f",
+    "remote_assetforge_main": "792e503bf3d3c427c9620c9c9a6fbdac0b7d637f",
+    "branch": "main",
+    "preexisting_status_entries_before_contract": 558,
+    "status_entries_after_contract_draft": 559,
+    "unrelated_dirty_entries_preserved": true
+  },
+  "authority_hash_validation": {
+    "checked": 34,
+    "failures": 0,
+    "result": "PASS",
+    "verified": {
+      "AGENTS.md": "5d2d2637a58113f0a6f5ec92e40d8bb2bda9e03fb58b4868a0d9dfbb3b57ad55",
+      "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_CENTER_POST_AND_HANDLE_SHAPE_DRIFT_RECOVERY_A01.md": "3c24c18d940a428918bad714ca3fb04c3a2092a4656f77c6b5736658b116546a",
+      "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/handoffs/TWIN_HAMMER_CENTER_POST_AND_HANDLE_RESET_HANDOFF_A01.md": "041d6ea4151849970426bbfa9b3d8dd6dc3804631d946ee815af66a112628037",
+      "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_STATE.json": "d6ef38eb769b1b76f7093b8d2ce4f1868adc60dc7becab67cc177cd153d1a981",
+      "SourceAssets/Concepts/SiegeBreaker/siege_breaker_front_view.png": "d00bf9ffcfd4862884626fa961c5f6b4fd6cedfdff7936b2210ca2a905e57e95",
+      "SourceAssets/Concepts/SiegeBreaker/siege_breaker_back_view.png": "15b4633f2df4ee06115ef4a7e238f287ebece1bae514ad4005c1036a57359799",
+      "SourceAssets/Concepts/SiegeBreaker/siege_breaker_left_view.png": "1a23e0c24f7be4b12df93e2509b9d300acc9161a21a32b336f7cf63c1288d91b",
+      "SourceAssets/Concepts/SiegeBreaker/siege_breaker_right_view.png": "04a1e9359d518b1dec35fe161020bd23ab9e2f8d5934f24e4184aecaa91d8330",
+      "SourceAssets/Concepts/SiegeBreaker/siege_breaker_top_view.png": "06d9cc7f78a4fe459a1f620e4787b53bf63399f7215bb9106a4e264749147d1c",
+      "SourceAssets/Concepts/SiegeBreaker/siege_breaker_bottom_view.png": "634dcf706a95a7f967b0c73d3c28fff318e3f91b2866e790369a57fa3b6e8d91",
+      "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/manifests/STEP_09A_AUTHORITY_LOCK.json": "a7e07ad68e9b2737c7c70e71e9df714766a285695693e741197900e17c3a06a5",
+      "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/manifests/STEP_09A_BOUNDARY_AND_CORRESPONDENCE_INDEX.json": "e190ed266753c797d4f9ec812154ff3b29f5d5d780e53e235e780c43492d0bd8",
+      "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/evidence/STEP_09A_COMPONENT_SCANLINES.json.gz": "396adfbaaefc8a8ea35104e5e96dfde322510fb4ce88530fbb32f7f3073b3562",
+      "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01/manifests/STEP_09_INTEGRATED_EXACT_MEASUREMENT_INDEX.json": "5a0a3eea8f877d55216f9efabe15b0ee1cf938e4c15a825a0e218f72ba76839a",
+      "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/manifests/A12_R10_STEP01_SOURCE_MEASUREMENT_CENTERLINE_A01.json": "4d47a3e6bb375cc9f6371341f7b359dbfa107a1a2856fb239ccaa0ca01dda327",
+      "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/manifests/A11_TRUE_AXIAL_TOP_BOTTOM_PIXEL_MEASUREMENT.json": "46877ab4b0142d8141deb4feab234f461a31e61e118d3ce7b41e0b3679786096",
+      "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/SM_DRW_SiegeBreaker_Hammer_A01_STEPS_01_16_PROOF_OF_CONCEPT_PIPELINE_PLAN.md": "53046eb839b94d9548dfc2e49471b3605a2fc882228ca5e4291db7390e584a2a",
+      "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/SM_DRW_SiegeBreaker_Hammer_A01_A12_R7_COMPONENT_GEOMETRY_RECOVERY_PLAN.md": "b0b077c8d39a07e5d1ab12309e77560afa1c407fe3bb3e6272a0c4e6d568b22e",
+      "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_STEP02_COMPONENT_EQUATION_CONTRACT_DRAFT.md": "a40d0b67d802687ac3c9ec9ad8e00a915cc1dc730ce31f3fab00b18a1837a21c",
+      "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_STEP02_COMPONENT_EQUATION_CONTRACT_A01_APPROVAL_RECORD.md": "8296f530d48f43b99c6de26271e3be4da0a9fd512e389c90f55b9d5208185b29",
+      "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_R8_PIXEL_EXACT_STEPS01_16_A01_CONTRACT.md": "77b0339126388be01f59532cd6b79228450b61e739ebc10c2f849833fd337bd4",
+      "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_R8_ZERO_EXTRUSION_AUTHORITY_RECOVERY_A01_APPROVAL_RECORD.md": "76c9b6a1d798780def0662c3a072f76144531f82b3228d7e2ce4adb4ee0d5ee0",
+      "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/handoffs/A12_R10_R8_ZERO_EXTRUSION_RESET_HANDOFF.md": "405d93b079c0fe52bdc443cadd085010fb64acf4cf9d078bf6e78d7e915e3ba0",
+      "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01.json": "efdbd8795dff2031fcde9e734868ff4c617dc37ad1e7b3743c3727daea981d58",
+      "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/SHARED_DEPTH_RECOVERY_BLUEPRINT_A01_AUTHORITY_LOCK.json": "6889b826481e5e11dd10775f2b81467b1014687b7fda9ebbff62d519bfff09bc",
+      "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_RECOVERY_A01.json": "4e960362ebcf27ffd3c6ed811584679d5f8ca75befcaad8286370224fe9eb3e4",
+      "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_RECOVERY_A01_VALIDATION.json": "8f6cfa57c8044c93e671a0d4270ef801df311f8cfa7428eaa17f19003837bb07",
+      "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/TWIN_HAMMER_CENTERED_FACE_MIRROR_WELD_FRESH_BUILD_A01_APPROVAL_RECORD.md": "bb1b090befd1db4a76a37434855e9577e2e41e2cc9cda64982dd6df1e998ba85",
+      "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A09_FULL_PIXEL_HALF_MIRROR_VISUAL_MATCH_CONTRACT.md": "294bb6c10178b9314bb011a59877f30df187728ef1e21e763a7f391aa5bc9395",
+      "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/review/A09_FULL_PIXEL_HALF_MIRROR_A01_FINAL_REVIEW.md": "9edfae8a31b17ed07e31e8ac0582681f06d0347463b1dcf87712fec490d3628a",
+      "Tools/DCC/build_siegebreaker_a12_r10_a09_process_complete_rz180.py": "088ec22595437611e4f0e136db13b49d32ce3caaf8224c60f145f1c15153f235",
+      "Tools/DCC/audit_siegebreaker_a12_r10_a09_process_complete_rz180.py": "6db37706e87021cf1ea978091c1e7b9f30c21163a5d5bd64bb6b32919ee352e0",
+      "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/steps/A12_R10_A09_PROCESS_COMPLETE_RZ180_A02_OUTPUT_RECORD.md": "639db9d0c565aae7b974dab6fce9fb888f1b8412c77bbb2f6046413a7dbdff52"
+    }
+  },
+  "source_decode_validation": {
+    "result": "PASS",
+    "decoded_without_resampling": true,
+    "images": {
+      "front": {
+        "mode": "RGB",
+        "size_pixels": [1122, 1402]
+      },
+      "back": {
+        "mode": "RGB",
+        "size_pixels": [1122, 1402]
+      },
+      "left": {
+        "mode": "RGB",
+        "size_pixels": [1122, 1402]
+      },
+      "right": {
+        "mode": "RGB",
+        "size_pixels": [1122, 1402]
+      },
+      "top": {
+        "mode": "RGB",
+        "size_pixels": [1402, 1122]
+      },
+      "bottom": {
+        "mode": "RGB",
+        "size_pixels": [1402, 1122]
+      }
+    }
+  },
+  "state_and_output_root_validation": {
+    "result": "PASS",
+    "state_before_record": "core_recovery_stopped_no_valid_dcc_source_candidate_new_contract_required",
+    "valid_dcc_source_candidates": 0,
+    "active_competing_geometry_contract": false,
+    "blender_process_active": false,
+    "implementation_files_absent": 3,
+    "fresh_source_roots_absent": 2,
+    "fresh_review_roots_absent": 1,
+    "overwrite_count": 0
+  },
+  "explicit_authority_findings": {
+    "step_09a_authority_lock": {
+      "decision": "approved",
+      "hidden_surfaces": false,
+      "ordered_boundary_edge_sets": true,
+      "ordered_correspondence_groups": true
+    },
+    "step_09a_correspondence_scope": {
+      "C02_STONE_LEFT": "ordered exact source-edge sets only; no point pairing or surface created",
+      "C03_STONE_RIGHT": "ordered exact source-edge sets only; no point pairing or surface created"
+    },
+    "head_owner_edge_sample_counts": {
+      "FRONT_C02_INNER_OWNER_EDGE": 376,
+      "TOP_C02_INNER_OWNER_EDGE": 446,
+      "BOTTOM_C02_INNER_OWNER_EDGE": 461,
+      "FRONT_C03_INNER_OWNER_EDGE": 376,
+      "TOP_C03_INNER_OWNER_EDGE": 446,
+      "BOTTOM_C03_INNER_OWNER_EDGE": 461
+    },
+    "empty_required_boundary_or_contact_sets": {
+      "BOTTOM_STONE_SEPARATION_WITHOUT_CENTRAL_OWNER": 0,
+      "FRONT_C01_C06_CONTACT": 0,
+      "FRONT_C06_C07_CONTACT": 0,
+      "FRONT_C12_RESERVED_C01_CONTACT": 0,
+      "RIGHT_C04_TOP_BOTTOM_EDGES": 0
+    },
+    "r10_component_statuses": {
+      "C06_UPPER_HAFT_CAP": "exact visible row spans and adjacent negative spaces known; hidden contact blocked",
+      "C08_GRIP": "42 cm approved lock projected exactly; exact C08 semantic membership not separable",
+      "C09_LOWER_COLLAR": "source-visible; semantic boundaries blocked",
+      "C10_POMMEL_BODY": "discrete visible envelopes known; physical radii and body split were blocked in the measurement record",
+      "C11_POMMEL_TERMINAL_CAP": "visible terminal envelope known; body transition and physical radii were blocked in the measurement record",
+      "C12_UPPER_HEAD_CAP_SPIRE": "discrete visible envelopes and structural axis known; physical rotational core and head contact were blocked in the measurement record"
+    },
+    "approved_equation_contract_conflict": {
+      "declaration": "R10-S01-B05 says exact component_station_measurements and approved_lock_projections control semantic transitions",
+      "observed_missing_inputs": "the cited tables do not contain a complete exact half-open transition/contact table for C06-C11, and B03 does not assign C08 radius-by-Z authority",
+      "disposition": "stop rather than invent numeric stations or a radius"
+    }
+  },
+  "contract_preflight_checks": [
+    {
+      "id": 1,
+      "check": "approved contract hash",
+      "result": "PASS"
+    },
+    {
+      "id": 2,
+      "check": "all cited authority paths and hashes",
+      "result": "PASS"
+    },
+    {
+      "id": 3,
+      "check": "zero valid DCC candidates and no competing geometry contract",
+      "result": "PASS"
+    },
+    {
+      "id": 4,
+      "check": "fresh implementation and output roots absent",
+      "result": "PASS"
+    },
+    {
+      "id": 5,
+      "check": "six source images decode losslessly",
+      "result": "PASS"
+    },
+    {
+      "id": 6,
+      "check": "Step 09A owner/contact/protected-space/boundary/correspondence coverage",
+      "result": "FAIL",
+      "reason": "ordered edge sets are authoritative, but required contact sets are empty and the approved scope explicitly excludes hidden surfaces"
+    },
+    {
+      "id": 7,
+      "check": "approved equations cover every surface, rotational station, contact, cap, and hidden closure",
+      "result": "FAIL",
+      "reason": "no explicit point pairing or triangulation exists for unequal front/top/bottom owner-edge sequences; complete contact and closure authority is absent"
+    },
+    {
+      "id": 8,
+      "check": "C04 intervals, shared dimensions, translation, and X mirror unchanged",
+      "result": "PASS"
+    },
+    {
+      "id": 9,
+      "check": "C01/C02/C03 front/top/bottom boundary records readable",
+      "result": "PASS_WITH_RECORDED_ABSENCE",
+      "reason": "owner edges are readable; the bottom center-separation set remains explicitly empty"
+    },
+    {
+      "id": 10,
+      "check": "C06-C11 radius-by-Z and source-column records complete",
+      "result": "FAIL",
+      "reason": "C08 has no approved radius-by-Z owner and the complete exact C06-C11 semantic transition/contact table is missing"
+    },
+    {
+      "id": 11,
+      "check": "C12 unchanged owner/equation path",
+      "result": "FAIL",
+      "reason": "a rotational radius rule exists, but the required C12-to-head contact and closed-component authority remains absent"
+    },
+    {
+      "id": 12,
+      "check": "no required surface depends on inferred pairing or forbidden prior geometry",
+      "result": "FAIL",
+      "reason": "constructing the head closures from current records would require a new unapproved pairing rule; no forbidden prior geometry was read"
+    },
+    {
+      "id": 13,
+      "check": "no approved output would overwrite an existing file",
+      "result": "PASS"
+    }
+  ],
+  "blocks": [
+    {
+      "label": "Blueprint block: rule missing",
+      "missing_authority": "explicit cross-view point correspondence, triangulation, and ruled-closure mapping for the unequal C01/C02/C03 front/top/bottom boundary sequences"
+    },
+    {
+      "label": "Blueprint block: source authority missing",
+      "missing_authority": "complete source-owned hidden closure and common-contact records for the head, C04 perimeter, C06/C07/C12 contacts, and the bottom center-post separation"
+    },
+    {
+      "label": "Blueprint block: rule missing",
+      "missing_authority": "complete exact C06-C11 half-open component station/contact table and approved C08 radius-by-Z ownership"
+    }
+  ],
+  "proposed_rule_change_not_approved": {
+    "action": "draft one measurement-only authority-resolution contract",
+    "required_outputs": [
+      "an explicit exact cross-view correspondence and triangulation table for every required head closure",
+      "a complete source-owned contact and hidden-closure table for C01/C02/C03/C04/C06/C07/C12",
+      "a complete exact half-open station and radius-by-Z table for C06-C11 including C08",
+      "independent validation that the new tables create no geometry, resampling, smoothing, inferred fill, or protected-space occupation"
+    ],
+    "production_authority": false,
+    "requires_separate_flamestrike_approval": true
+  },
+  "outputs_created": {
+    "implementation_tools": 0,
+    "blender_files": 0,
+    "geometry_objects": 0,
+    "saved_source_candidates": 0,
+    "independent_saved_file_audits": 0,
+    "renders": 0,
+    "review_boards": 0,
+    "exports": 0,
+    "unreal_assets": 0
+  },
+  "post_block_checkpoint": "Saved/ProjectRecovery/20260724-161016",
+  "final_authority": {
+    "valid_dcc_source_candidates": 0,
+    "active_geometry_contract": false,
+    "production_authority": false,
+    "step_13_authority": false,
+    "step_14_authority": false,
+    "unreal_authority": false
+  }
+}

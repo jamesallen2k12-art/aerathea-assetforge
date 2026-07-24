@@ -4,7 +4,7 @@
   "parent_run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
   "last_valid_parent_step": "09",
   "last_core_valid_step": "09A",
-  "current_step": "CORE_RECOVERY_TWIN_HAMMER_CENTER_POST_AND_HANDLE_SHAPE_DRIFT_A01",
+  "current_step": "CORE_RECOVERY_TWIN_HAMMER_FRESH_BUILD_AUTHORITY_PREFLIGHT_BLOCK_A01",
   "completed_steps": [
     "01",
     "02",
@@ -22,7 +22,7 @@
     "11",
     "12"
   ],
-  "state": "core_recovery_stopped_no_valid_dcc_source_candidate_new_contract_required",
+  "state": "core_recovery_stopped_rule_and_source_authority_missing",
   "step_11_decision": "historically approved; invalid and quarantined as construction authority after the 2026-07-24 depth-ownership correction",
   "step_11_validation": "blueprint A02 independent PASS 462/462; proof only for narrow checks",
   "historical_block": {
@@ -417,9 +417,43 @@
     "step_14_authority": false,
     "unreal_authority": false
   },
+  "twin_hammer_center_post_handle_fresh_build_authority_preflight_block_a01": {
+    "artifact_status": "authoritative execution stop state",
+    "result": "BLOCKED_BEFORE_CODE",
+    "contract_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/TWIN_HAMMER_CENTER_POST_AND_HANDLE_FRESH_BUILD_CORRECTION_A01_CONTRACT.md",
+    "contract_sha256": "1e424dfdbb12b7e12c67e3a6c4cae29c1eb80309c5fe0d3717f6e0fd772e8b37",
+    "flamestrike_decision": "approved",
+    "approval_record_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/TWIN_HAMMER_CENTER_POST_HANDLE_FRESH_BUILD_CORRECTION_A01_APPROVAL_RECORD.md",
+    "authority_preflight_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_CENTER_POST_HANDLE_FRESH_BUILD_CORRECTION_A01_AUTHORITY_PREFLIGHT.json",
+    "output_record_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/TWIN_HAMMER_CENTER_POST_HANDLE_FRESH_BUILD_CORRECTION_A01_OUTPUT_RECORD.md",
+    "blocked_handoff_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/handoffs/TWIN_HAMMER_CENTER_POST_HANDLE_FRESH_BUILD_CORRECTION_A01_REVIEW_HANDOFF.md",
+    "authority_hashes": "PASS 34/34",
+    "source_decode": "PASS 6/6",
+    "fresh_output_roots": "PASS; all absent",
+    "blocks": [
+      "Blueprint block: rule missing — no approved cross-view point correspondence, triangulation, or ruled-closure mapping for unequal C01/C02/C03 boundary sequences",
+      "Blueprint block: source authority missing — hidden surfaces are outside Step 09A scope and required head/contact boundary records are empty",
+      "Blueprint block: rule missing — complete C06-C11 half-open station/contact authority and C08 radius-by-Z ownership are absent"
+    ],
+    "execution_authority_consumed": true,
+    "implementation_tools_created": 0,
+    "blender_files_created": 0,
+    "geometry_objects_created": 0,
+    "renders_created": 0,
+    "review_boards_created": 0,
+    "post_block_checkpoint": "Saved/ProjectRecovery/20260724-161016",
+    "valid_dcc_source_candidates": 0,
+    "active_geometry_contract": false,
+    "blender_authority": false,
+    "geometry_authority": false,
+    "render_authority": false,
+    "step_13_authority": false,
+    "step_14_authority": false,
+    "unreal_authority": false
+  },
   "next_permitted_action": {
-    "action": "draft one narrow fresh-build correction contract from the authoritative recovery handoff, then stop",
-    "next_gate": "separate Flamestrike approval of the exact correction contract before code, Blender, geometry, or rendering",
+    "action": "draft one measurement-only authority-resolution contract for exact head correspondence/closure and complete C06-C11 station/radius authority, then stop",
+    "next_gate": "separate Flamestrike approval of the exact authority-resolution contract before any new evidence processing; a later production contract and approval remain separately required",
     "geometry_authority": false,
     "blender_authority": false
   },

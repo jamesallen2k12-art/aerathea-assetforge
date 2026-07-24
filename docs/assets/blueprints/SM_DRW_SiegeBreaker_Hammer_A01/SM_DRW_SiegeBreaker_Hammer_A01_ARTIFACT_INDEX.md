@@ -188,3 +188,15 @@ source-measured mathematical-reconstruction method is restored. R10 Step 01
 is mechanically complete and its exact measurement evidence is approved as
 `authoritative`. It remains `BLOCKED for construction` pending Flamestrike's
 eight exact decisions. No Step 02 or DCC authority follows.
+
+## 2026-07-24 Twin Fresh-Build Authority Preflight Block
+
+| Artifact | Status | Decision use |
+|---|---|---|
+| `proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/TWIN_HAMMER_CENTER_POST_AND_HANDLE_FRESH_BUILD_CORRECTION_A01_CONTRACT.md` | `authoritative approved execution contract; consumed by preflight block` | Exact conditional scope approved at SHA `1e424dfd...e8b37`; no missing authority was waived. |
+| `proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/TWIN_HAMMER_CENTER_POST_HANDLE_FRESH_BUILD_CORRECTION_A01_APPROVAL_RECORD.md` | `authoritative` | Records Flamestrike's exact `approved` response and the conditional authority effect. |
+| `proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_CENTER_POST_HANDLE_FRESH_BUILD_CORRECTION_A01_AUTHORITY_PREFLIGHT.json` | `authoritative execution stop record` | Hash/source/root gates pass; surface correspondence, hidden closure, contacts, stations, and C08 radius authority block code. |
+| `proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_CENTER_POST_HANDLE_FRESH_BUILD_CORRECTION_A01_EVENT_TRACE.jsonl` | `authoritative event record` | Records approval, read-only PASS checks, authority block, and zero production-output count. |
+| `proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/TWIN_HAMMER_CENTER_POST_HANDLE_FRESH_BUILD_CORRECTION_A01_OUTPUT_RECORD.md` | `authoritative stop and disposition record` | Preserves exact block labels, missing authority, zero-output result, and next gate. |
+| `proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/handoffs/TWIN_HAMMER_CENTER_POST_HANDLE_FRESH_BUILD_CORRECTION_A01_REVIEW_HANDOFF.md` | `authoritative blocked handoff` | Resume-safe stop; no review board exists because no saved-file audit gate opened. |
+| A13 R2 fresh source roots | `do not exist` | No source candidate or geometry was created. |

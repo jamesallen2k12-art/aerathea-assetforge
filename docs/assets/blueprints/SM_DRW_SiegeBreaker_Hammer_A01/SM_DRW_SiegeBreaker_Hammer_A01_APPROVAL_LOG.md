@@ -1252,3 +1252,34 @@
   visible contract and approval. Retopology, UVs, baking, textures, materials,
   LODs, collision, export, Unreal, and final/game-ready promotion remain
   unauthorized.
+
+## 2026-07-24 — Twin Fresh-Build Contract Approved; Preflight Blocked
+
+- Flamestrike decision: `approved`.
+- Approved contract:
+  `proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/TWIN_HAMMER_CENTER_POST_AND_HANDLE_FRESH_BUILD_CORRECTION_A01_CONTRACT.md`.
+- Approved contract SHA-256:
+  `1e424dfdbb12b7e12c67e3a6c4cae29c1eb80309c5fe0d3717f6e0fd772e8b37`.
+- Approval effect:
+  exact conditional execution scope approved; every contract preflight gate
+  remained mandatory.
+- Preflight result:
+  `BLOCKED BEFORE CODE`.
+- Exact block labels:
+  - `Blueprint block: rule missing`;
+  - `Blueprint block: source authority missing`.
+- Cause:
+  Step 09A authorizes ordered edge sets but no point pairing or hidden
+  surfaces; head edge counts differ across views; required contacts are empty;
+  and complete C06-C11 station/contact plus C08 radius authority is absent.
+- Production output:
+  zero tools, Blender files, geometry, audits, renders, boards, exports, or
+  Unreal assets.
+- Approval record:
+  `proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/TWIN_HAMMER_CENTER_POST_HANDLE_FRESH_BUILD_CORRECTION_A01_APPROVAL_RECORD.md`.
+- Authority preflight:
+  `proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/TWIN_HAMMER_CENTER_POST_HANDLE_FRESH_BUILD_CORRECTION_A01_AUTHORITY_PREFLIGHT.json`.
+- Next gate:
+  a separately approved measurement-only authority-resolution contract.
+- Step 13 / Step 14 / Unreal authority:
+  `false / false / false`.
