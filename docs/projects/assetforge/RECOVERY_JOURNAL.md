@@ -8927,3 +8927,23 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260724-132221/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260724-132221/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 13:31:35 EDT -0400 - Before twin hammer read-only topology diagnostic renders A01
+
+- Snapshot: `Saved/ProjectRecovery/20260724-133135/`
+- Git: branch `main`, HEAD `acaa373`, status lines `557`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-133135/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-133135/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-133135/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 13:51:49 EDT -0400 - After twin hammer read-only topology diagnostic renders A01
+
+- Snapshot: `Saved/ProjectRecovery/20260724-135149/`
+- Git: branch `main`, HEAD `acaa373`, status lines `563`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-135149/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-135149/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-135149/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

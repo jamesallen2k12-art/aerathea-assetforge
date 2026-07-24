@@ -4,7 +4,7 @@
   "parent_run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
   "last_valid_parent_step": "09",
   "last_core_valid_step": "09A",
-  "current_step": "STEP_13_IMMUTABLE_GEOMETRY_ARTISTIC_REVIEW_A01_TECHNICAL_FAIL_STOP",
+  "current_step": "STEP_13_TECHNICAL_FAIL_DIAGNOSTIC_RENDER_A01",
   "completed_steps": [
     "01",
     "02",
@@ -22,7 +22,7 @@
     "11",
     "12"
   ],
-  "state": "step_13_technical_fail_render_not_run_core_recovery_stop",
+  "state": "step_13_technical_fail_diagnostic_render_complete_waiting_feedback",
   "step_11_decision": "historically approved; invalid and quarantined as construction authority after the 2026-07-24 depth-ownership correction",
   "step_11_validation": "blueprint A02 independent PASS 462/462; proof only for narrow checks",
   "historical_block": {
@@ -249,9 +249,55 @@
     "retopology_uv_bake_export_authority": false,
     "unreal_authority": false
   },
+  "step_13_technical_fail_diagnostic_render_a01": {
+    "artifact_status": "proof-only diagnostic complete; sources unchanged; waiting for Flamestrike feedback",
+    "approval_record_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_13_TECHNICAL_FAIL_DIAGNOSTIC_RENDER_A01_APPROVAL_RECORD.md",
+    "approval_record_sha256": "8e7e63b621c91f855c3006ef2cb40447a397463729f5725f299703ec382d32a1",
+    "flamestrike_decision": "approved",
+    "approval_evidence": "Flamestrike replied `approved` to the explicit five-item diagnostic scope: close out existing failure records, make one read-only problem-visualization image per hammer, do not edit either source, stop for feedback, and defer mirror-and-weld work to a separate contract.",
+    "existing_failure_closeout_commit": "acaa373625e2464008d193f00e7b0d25e08c13fe",
+    "existing_failure_closeout_remote_verified": true,
+    "read_only_blender_diagnostic_authority": false,
+    "read_only_blender_diagnostic_authority_consumed": true,
+    "source_save_authority": false,
+    "geometry_modification_authority": false,
+    "repair_or_rebuild_authority": false,
+    "mirror_and_weld_authority": false,
+    "step_14_authority": false,
+    "export_or_unreal_authority": false,
+    "required_final_images": {
+      "siege_breaker": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/STEP_13_TECHNICAL_FAIL_DIAGNOSTIC_A01/SM_DRW_SiegeBreaker_Hammer_A01_TECHNICAL_FAIL_DIAGNOSTIC_A01.png",
+      "foe_hammer": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/STEP_13_TECHNICAL_FAIL_DIAGNOSTIC_A01/SM_DRW_FoeHammer_Hammer_A01_TECHNICAL_FAIL_DIAGNOSTIC_A01.png"
+    },
+    "verified_outputs": {
+      "result": "PASS",
+      "manifest_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_13_TECHNICAL_FAIL_DIAGNOSTIC_RENDER_A01.json",
+      "manifest_sha256": "26b228c76526f5b846281bd432f6baa13ce66709d5d386932654c8ad2e0d688f",
+      "renderer_path": "Tools/DCC/render_siegebreaker_foehammer_step13_failure_diagnostic_a01.py",
+      "renderer_sha256": "f2dce52af3b0afe13a32ab069e6dc82e1883a50675f77a86c993d104d2a14d4e",
+      "output_record_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_13_TECHNICAL_FAIL_DIAGNOSTIC_RENDER_A01_OUTPUT_RECORD.md",
+      "output_record_sha256": "d29d26ad52512ef92317de0defa4369b7c80e29acf5fe42947c8fc5a81c206f0",
+      "siege_breaker_image_sha256": "c8f45a752476076217b259046b4da3609d1ad7c333f097b388cba31cd8b738fd",
+      "foe_hammer_image_sha256": "71d93a8f292a9cf135b56943bd551b5032814add23a74c17e332e982527e7f5d",
+      "source_hashes_unchanged": true,
+      "source_save_operator_invoked": false,
+      "geometry_modified": false,
+      "mirror_and_weld_performed": false,
+      "final_images_opened_visibly": true
+    },
+    "rejected_first_framing": {
+      "artifact_status": "rejected / proof only",
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/STEP_13_TECHNICAL_FAIL_DIAGNOSTIC_A01_REJECTED_FRAMING_A01",
+      "reason": "lower information blocks hid part of the pommel and the legend was cramped",
+      "presented_for_approval": false
+    },
+    "presentation_rule": "each final image shows a normal matched three-quarter view beside the same view with red unmatched edges, yellow overloaded joins, and magenta local-C04 winding errors",
+    "presentation_check": "PASS; full hammer visible, matched views, readable labels, no geometry hidden",
+    "stop_rule": "both final images are open visibly; stop for Flamestrike feedback and do not begin repair or rebuild"
+  },
   "next_permitted_action": {
-    "action": "stop and wait for Flamestrike to approve, reject, or mark blocked a separate Core recovery reassessment and exact recovery contract",
-    "next_gate": "Core recovery decision only; Step 14 remains locked",
+    "action": "stop for Flamestrike feedback; no production action is authorized",
+    "next_gate": "visible diagnostic feedback from Flamestrike; mirror-and-weld work remains separately locked",
     "geometry_authority": false,
     "blender_authority": false
   },

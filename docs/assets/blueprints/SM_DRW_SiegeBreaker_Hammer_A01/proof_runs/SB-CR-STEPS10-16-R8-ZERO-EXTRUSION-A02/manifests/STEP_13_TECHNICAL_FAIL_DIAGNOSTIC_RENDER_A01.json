@@ -1,0 +1,144 @@
+{
+  "artifact_classification": {
+    "final_images": "proof only; technical-failure diagnostic",
+    "raw_renders": "proof only",
+    "sources": "DCC source candidate pipeline status; quarantined as Step 13-pass or downstream authority",
+    "temporary_overlay_curves": "in-memory diagnostic only; never saved to either source"
+  },
+  "artifact_status": "proof only; PASS",
+  "assets": {
+    "foe_hammer": {
+      "asset_id": "SM_DRW_FoeHammer_Hammer_A01",
+      "final_diagnostic_image": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/STEP_13_TECHNICAL_FAIL_DIAGNOSTIC_A01/SM_DRW_FoeHammer_Hammer_A01_TECHNICAL_FAIL_DIAGNOSTIC_A01.png",
+        "sha256": "71d93a8f292a9cf135b56943bd551b5032814add23a74c17e332e982527e7f5d",
+        "size_px": [
+          1580,
+          1280
+        ]
+      },
+      "observed_issue_counts": {
+        "local_c04_winding_edges": 236,
+        "overloaded_boundary_edges": 890,
+        "unpaired_boundary_edges": 18900
+      },
+      "raw_render_report": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/STEP_13_TECHNICAL_FAIL_DIAGNOSTIC_A01/raw/foe_hammer/render_report.json",
+        "sha256": "36759b5dc432d2dbf4057198f1dfd762d22b7f39500fb49a63b38fa275d762e5"
+      },
+      "raw_renders": {
+        "issues": {
+          "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/STEP_13_TECHNICAL_FAIL_DIAGNOSTIC_A01/raw/foe_hammer/SM_DRW_FoeHammer_Hammer_A01_ISSUES_3Q.png",
+          "sha256": "b2e133bc9acbdab4429161e1e8d90efc2658f7e23745b92830e8f8617874c1ec"
+        },
+        "normal": {
+          "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/STEP_13_TECHNICAL_FAIL_DIAGNOSTIC_A01/raw/foe_hammer/SM_DRW_FoeHammer_Hammer_A01_NORMAL_3Q.png",
+          "sha256": "0b04844e2ac20b6369fc202bcb83823128f1fcd2e48f8b5eb163d460aca59a58"
+        }
+      },
+      "source": {
+        "byte_identical": true,
+        "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_FoeHammer_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/SM_DRW_FoeHammer_Hammer_A01_DCCSource_SharedDepth_A01.blend",
+        "sha256_after": "67737a3c561cd6462af3657ea93488af76f32a5815ee0b4d5887182d14c761d4",
+        "sha256_before": "67737a3c561cd6462af3657ea93488af76f32a5815ee0b4d5887182d14c761d4"
+      }
+    },
+    "siege_breaker": {
+      "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+      "final_diagnostic_image": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/STEP_13_TECHNICAL_FAIL_DIAGNOSTIC_A01/SM_DRW_SiegeBreaker_Hammer_A01_TECHNICAL_FAIL_DIAGNOSTIC_A01.png",
+        "sha256": "c8f45a752476076217b259046b4da3609d1ad7c333f097b388cba31cd8b738fd",
+        "size_px": [
+          1580,
+          1280
+        ]
+      },
+      "observed_issue_counts": {
+        "local_c04_winding_edges": 276,
+        "overloaded_boundary_edges": 890,
+        "unpaired_boundary_edges": 19200
+      },
+      "raw_render_report": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/STEP_13_TECHNICAL_FAIL_DIAGNOSTIC_A01/raw/siege_breaker/render_report.json",
+        "sha256": "77b5d48c5db2b46ed687c12b51135215798b4c6842451c9f34ed0cf5e726dc27"
+      },
+      "raw_renders": {
+        "issues": {
+          "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/STEP_13_TECHNICAL_FAIL_DIAGNOSTIC_A01/raw/siege_breaker/SM_DRW_SiegeBreaker_Hammer_A01_ISSUES_3Q.png",
+          "sha256": "a26d979fc5f02f86d9b2ca8357baa25e2c67709f6c0bfae50bc26cd853ad6aa8"
+        },
+        "normal": {
+          "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/STEP_13_TECHNICAL_FAIL_DIAGNOSTIC_A01/raw/siege_breaker/SM_DRW_SiegeBreaker_Hammer_A01_NORMAL_3Q.png",
+          "sha256": "eabb513b099a927090c046c5c2f7edcf67959dcf1bfe371544944805d353700d"
+        }
+      },
+      "source": {
+        "byte_identical": true,
+        "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/SM_DRW_SiegeBreaker_Hammer_A01_DCCSource_SharedDepth_A01.blend",
+        "sha256_after": "c69b415ac3429091c6aa77d24ffcd6d88bbd0f9fc711e3862c2c7e7b51034537",
+        "sha256_before": "c69b415ac3429091c6aa77d24ffcd6d88bbd0f9fc711e3862c2c7e7b51034537"
+      }
+    }
+  },
+  "assumptions": [],
+  "authority": {
+    "approval_record": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_13_TECHNICAL_FAIL_DIAGNOSTIC_RENDER_A01_APPROVAL_RECORD.md",
+      "sha256": "8e7e63b621c91f855c3006ef2cb40447a397463729f5725f299703ec382d32a1"
+    },
+    "blender": {
+      "path": "Tools/External/Blender/blender-4.5.11-linux-x64/blender",
+      "sha256": "dc72290ee8651c93c4a946c012c5f2a034946fd320e6c3ab214fa23181427428"
+    },
+    "checks": {
+      "approval_record_hash_matches": true,
+      "blender_hash_matches": true,
+      "diagnostic_approval_record_matches_state": true,
+      "diagnostic_decision_approved": true,
+      "foe_hammer_source_hash_matches": true,
+      "geometry_modification_authority_false": true,
+      "mirror_and_weld_authority_false": true,
+      "read_only_blender_authority_true": true,
+      "repair_or_rebuild_authority_false": true,
+      "siege_breaker_source_hash_matches": true,
+      "source_save_authority_false": true,
+      "step_14_authority_false": true,
+      "technical_audit_hash_matches": true,
+      "technical_audit_is_fail": true,
+      "unreal_authority_false": true
+    },
+    "step_state": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_STATE.json",
+      "sha256_at_preflight": "d8dd3f0ca2474b22823cc1409d9ec4f0a7204544b0a65125309641f1ef9652c5"
+    },
+    "technical_audit": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_13_IMMUTABLE_GEOMETRY_ARTISTIC_REVIEW_A01_TECHNICAL_AUDIT.json",
+      "result": "FAIL",
+      "sha256": "e1c2e6bcbc4f2cf7b7ff991c8ea8fa25f72ecf2ae4913683b1d9ba1ab1a945ad"
+    }
+  },
+  "date_utc": "2026-07-24T17:48:35.975565+00:00",
+  "diagnostic_id": "STEP_13_TECHNICAL_FAIL_DIAGNOSTIC_RENDER_A01",
+  "export_or_unreal_authority": false,
+  "geometry_repair_authority": false,
+  "legend": {
+    "magenta": "directly observed local-C04 face-winding error",
+    "red": "exact saved panel boundary edge with no matching partner",
+    "yellow": "exact saved boundary edge used by more than two panels"
+  },
+  "mirror_and_weld_performed": false,
+  "next_approval_need": "Flamestrike visual feedback and any additional data; mirror-and-weld recovery remains separately locked",
+  "plain_english_purpose": "Show why a normal render can look acceptable while the saved surface panels contain bad joins and reversed C04 winding.",
+  "renderer": {
+    "path": "Tools/DCC/render_siegebreaker_foehammer_step13_failure_diagnostic_a01.py",
+    "sha256": "f2dce52af3b0afe13a32ab069e6dc82e1883a50675f77a86c993d104d2a14d4e"
+  },
+  "repair_or_rebuild_performed": false,
+  "result": "PASS",
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "schema": "AERATHEA_STEP_13_TECHNICAL_FAIL_DIAGNOSTIC_RENDER_A01_V1",
+  "source_geometry_modified": false,
+  "source_save_operator_invoked": false,
+  "step_13_complete": false,
+  "step_14_authority": false
+}

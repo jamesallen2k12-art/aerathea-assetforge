@@ -1,0 +1,59 @@
+{
+  "artifact_status": "proof only; technical-failure diagnostic",
+  "asset_id": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "asset_key": "siege_breaker",
+  "camera": {
+    "direction": [
+      1.0,
+      -1.35,
+      0.58
+    ],
+    "ortho_scale_cm": 225.0,
+    "resolution_px": [
+      720,
+      900
+    ],
+    "target_cm": [
+      0.0,
+      0.0,
+      85.0
+    ],
+    "type": "ORTHO"
+  },
+  "expected_issue_counts": {
+    "local_c04_winding_edges": 276,
+    "local_c04_winding_per_occurrence": 138,
+    "overloaded_boundary_edges": 890,
+    "unpaired_boundary_edges": 19200
+  },
+  "geometry_repaired_or_rebuilt": false,
+  "observed_issue_counts": {
+    "local_c04_winding_edges": 276,
+    "overloaded_boundary_edges": 890,
+    "unpaired_boundary_edges": 19200
+  },
+  "overlay_legend": {
+    "magenta": "directly observed local-C04 face-winding error",
+    "red": "exact saved panel boundary edge with no matching partner",
+    "yellow": "exact saved boundary edge used by more than two panels"
+  },
+  "raw_renders": {
+    "issues": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/STEP_13_TECHNICAL_FAIL_DIAGNOSTIC_A01/raw/siege_breaker/SM_DRW_SiegeBreaker_Hammer_A01_ISSUES_3Q.png",
+      "sha256": "a26d979fc5f02f86d9b2ca8357baa25e2c67709f6c0bfae50bc26cd853ad6aa8"
+    },
+    "normal": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/STEP_13_TECHNICAL_FAIL_DIAGNOSTIC_A01/raw/siege_breaker/SM_DRW_SiegeBreaker_Hammer_A01_NORMAL_3Q.png",
+      "sha256": "eabb513b099a927090c046c5c2f7edcf67959dcf1bfe371544944805d353700d"
+    }
+  },
+  "result": "PASS",
+  "source": {
+    "byte_identical": true,
+    "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/SM_DRW_SiegeBreaker_Hammer_A01_DCCSource_SharedDepth_A01.blend",
+    "sha256_after": "c69b415ac3429091c6aa77d24ffcd6d88bbd0f9fc711e3862c2c7e7b51034537",
+    "sha256_before": "c69b415ac3429091c6aa77d24ffcd6d88bbd0f9fc711e3862c2c7e7b51034537"
+  },
+  "source_save_operator_invoked": false,
+  "temporary_overlay_geometry_saved_to_source": false
+}

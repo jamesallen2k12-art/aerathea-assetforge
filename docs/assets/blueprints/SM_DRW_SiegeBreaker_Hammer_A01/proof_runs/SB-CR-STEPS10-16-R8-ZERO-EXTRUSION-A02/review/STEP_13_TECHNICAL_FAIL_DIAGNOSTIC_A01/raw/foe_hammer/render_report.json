@@ -1,0 +1,59 @@
+{
+  "artifact_status": "proof only; technical-failure diagnostic",
+  "asset_id": "SM_DRW_FoeHammer_Hammer_A01",
+  "asset_key": "foe_hammer",
+  "camera": {
+    "direction": [
+      1.0,
+      -1.35,
+      0.58
+    ],
+    "ortho_scale_cm": 225.0,
+    "resolution_px": [
+      720,
+      900
+    ],
+    "target_cm": [
+      0.0,
+      0.0,
+      85.0
+    ],
+    "type": "ORTHO"
+  },
+  "expected_issue_counts": {
+    "local_c04_winding_edges": 236,
+    "local_c04_winding_per_occurrence": 118,
+    "overloaded_boundary_edges": 890,
+    "unpaired_boundary_edges": 18900
+  },
+  "geometry_repaired_or_rebuilt": false,
+  "observed_issue_counts": {
+    "local_c04_winding_edges": 236,
+    "overloaded_boundary_edges": 890,
+    "unpaired_boundary_edges": 18900
+  },
+  "overlay_legend": {
+    "magenta": "directly observed local-C04 face-winding error",
+    "red": "exact saved panel boundary edge with no matching partner",
+    "yellow": "exact saved boundary edge used by more than two panels"
+  },
+  "raw_renders": {
+    "issues": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/STEP_13_TECHNICAL_FAIL_DIAGNOSTIC_A01/raw/foe_hammer/SM_DRW_FoeHammer_Hammer_A01_ISSUES_3Q.png",
+      "sha256": "b2e133bc9acbdab4429161e1e8d90efc2658f7e23745b92830e8f8617874c1ec"
+    },
+    "normal": {
+      "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/STEP_13_TECHNICAL_FAIL_DIAGNOSTIC_A01/raw/foe_hammer/SM_DRW_FoeHammer_Hammer_A01_NORMAL_3Q.png",
+      "sha256": "0b04844e2ac20b6369fc202bcb83823128f1fcd2e48f8b5eb163d460aca59a58"
+    }
+  },
+  "result": "PASS",
+  "source": {
+    "byte_identical": true,
+    "path": "SourceAssets/Blender/Weapons/Dwarven/SM_DRW_FoeHammer_Hammer_A01/A12_R10_R8_SharedDepth_DCCSource_A01/SM_DRW_FoeHammer_Hammer_A01_DCCSource_SharedDepth_A01.blend",
+    "sha256_after": "67737a3c561cd6462af3657ea93488af76f32a5815ee0b4d5887182d14c761d4",
+    "sha256_before": "67737a3c561cd6462af3657ea93488af76f32a5815ee0b4d5887182d14c761d4"
+  },
+  "source_save_operator_invoked": false,
+  "temporary_overlay_geometry_saved_to_source": false
+}
