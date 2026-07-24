@@ -138,3 +138,31 @@ Foe Hammer identity/resume record:
 
 Step 13, retopology, UVs, baking, export, Unreal, and source modification
 remain locked pending a separate visible contract.
+
+## Additive Core Recovery Handoff — 2026-07-24
+
+This section supersedes every current-state claim above that calls either
+saved Step 12 geometry a DCC source candidate.
+
+- Current state: `Core Recovery; production stopped`.
+- First drift: Step 10 promoted local `C04` face-treatment spans to global
+  candidate depth.
+- Common authoritative body depth:
+  `6644212/149985 cm = 44.299176584 cm`.
+- Required cross-asset rule: Siege Breaker and Foe Hammer must have identical
+  overall dimensions and the same body and hammer-face envelope.
+- Siege Breaker distinction: double rune sided.
+- Foe Hammer distinction: double metal-center-piece sided.
+- Former rune Step 12 geometry: `invalid / quarantined in place`.
+- Former metal Step 12 geometry: `invalid / quarantined in place`.
+- Current valid DCC source candidates: `none`.
+- Narrow Step 12 audits and renders: `proof only`.
+- Step 13: `locked`.
+
+Do not fork, rename, resave, or repair either former candidate. A separately
+approved shared-depth recovery blueprint and fresh-build contract are
+required before DCC production resumes.
+
+Governing record:
+
+`docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_12_DEPTH_OWNERSHIP_CORE_RECOVERY.md`

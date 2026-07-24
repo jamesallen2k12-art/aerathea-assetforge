@@ -5,7 +5,8 @@
 - Asset ID: `SM_DRW_FoeHammer_Hammer_A01`
 - Asset type: `Dwarven great hammer weapon/prop`
 - Identity record status: `authoritative`
-- Geometry status: `DCC source candidate`
+- Geometry status:
+  `no valid DCC source candidate; former Step 12 source invalid / quarantined in place`
 - DCC game-ready status: `false`
 - Fully game-ready status: `false`
 - Step 13 authority: `false`
@@ -31,12 +32,33 @@ The governing approval record is:
 
 `docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_12_DUAL_ASSET_SELECTION_APPROVAL_RECORD.md`
 
+## Current Core Recovery Override — 2026-07-24
+
+Flamestrike clarified and approved that the unequal rune and metal source
+spans are local `C04` face-treatment extents, not different global body
+depths.
+
+Foe Hammer and Siege Breaker must have exactly identical overall dimensions
+and the same body and hammer-face envelope. Their common full body depth is
+the approved axial value:
+
+`6644212/149985 cm = 44.299176584 cm`.
+
+Foe Hammer remains the double-metal-center-piece twin. Its prior Step 12
+metal candidate is now `invalid / quarantined in place`, not a current DCC
+source candidate. The identity decision remains `authoritative`.
+
+Governing recovery record:
+
+`docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_12_DEPTH_OWNERSHIP_CORE_RECOVERY.md`
+
 ## Selected Source Lineage
 
 - Source run:
   `SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02`
 - Source candidate key: `metal_center_piece_side`
-- Source artifact status: `DCC source candidate`
+- Source artifact status:
+  `invalid / quarantined in place; historical Step 12 candidate lineage`
 - Current Blender source:
   `SourceAssets/Blender/Weapons/Dwarven/SM_DRW_SiegeBreaker_Hammer_A01/A12_R10_R8_Step12_SourceGeometry_A01/run_a/metal_center_piece_side/SM_DRW_SiegeBreaker_Hammer_A01_metal_center_piece_side_DCCSourceCandidate.blend`
 - Blender SHA-256:
@@ -49,7 +71,8 @@ The governing approval record is:
   `9a5fe4b034bd1b5af512e6cd8a404a3cf30970c88b2809f39a9d4e961d6fd982`
 - Independent saved-file audit SHA-256:
   `f29de64688e7be8af42d320a6c2c77c5858f59c5fed64cb92f4dccc1496dbd50`
-- Independent saved-file audit: `105/105 PASS`
+- Independent saved-file audit:
+  `105/105 PASS; proof only for narrow implementation consistency`
 - Exact dimensions, width × depth × height:
   `50719500/517681 × 11815/274 × 170/1 cm`
 - Decimal dimensions:
@@ -77,7 +100,11 @@ not alter `docs/assets/VISUAL_CANON_REGISTRY.md`.
 
 ## Evidence Constraint
 
-Shared identity is authoritative; exact mesh parity is not yet proven.
+This section records the pre-recovery evidence and is superseded by
+`Current Core Recovery Override — 2026-07-24`.
+
+Shared identity is authoritative; exact mesh parity was not proven by the
+former Step 12 candidates.
 
 The selected Foe Hammer candidate is
 `43.120437956204 cm` deep. The selected Siege Breaker candidate is
@@ -90,13 +117,16 @@ as part of the head-side treatment or must be reconciled before advancement.
 
 ## Current Artifact Vocabulary
 
-- Foe Hammer identity and Candidate B assignment: `authoritative`.
-- Candidate B Blender source: `DCC source candidate`.
+- Foe Hammer identity and double-metal-center-piece treatment:
+  `authoritative`.
+- Former Candidate B geometry assignment: `superseded`.
+- Candidate B Blender source: `invalid / quarantined in place`.
 - Candidate B validation and review renders: `proof only`.
 - Standalone Foe Hammer Blender source: `does not exist`.
 - Foe Hammer UVs, textures, materials, LODs, collision, and exports:
   `do not exist under the Foe Hammer identity`.
 - Unreal asset: `does not exist`.
+- Valid DCC source candidate: `false`.
 - DCC game-ready candidate: `false`.
 - Fully game-ready: `false`.
 
@@ -110,16 +140,17 @@ On resume, verify:
 4. the latest recovery journal/checkpoint; and
 5. git status.
 
-Report that Foe Hammer is a selected `DCC source candidate`, shares Siege
-Breaker's identity except for the double metal-center-piece treatment, still
-uses the pre-fork Siege Breaker source path, and cannot advance without a new
-contract.
+Report that Foe Hammer's identity and double-metal-center-piece treatment are
+authoritative, but its former Step 12 source is
+`invalid / quarantined in place`. There is no standalone or valid Foe Hammer
+DCC source candidate, and it cannot advance without a new recovery contract.
 
 ## Next Approval Gate
 
 No production action is currently active.
 
-A separate visible contract must decide whether to preserve Candidate B
-exactly in a hash-verified Foe Hammer identity fork or first perform an
-evidence-only geometric-parity reconciliation. Step 13, source modification,
-asset copying/renaming, export, and Unreal remain locked.
+A separate visible contract must create a corrected shared-depth blueprint
+before either twin is rebuilt from the last Core-valid evidence. The
+quarantined Candidate B geometry may not be forked or repaired forward.
+Step 13, source modification, asset copying/renaming, export, and Unreal
+remain locked.

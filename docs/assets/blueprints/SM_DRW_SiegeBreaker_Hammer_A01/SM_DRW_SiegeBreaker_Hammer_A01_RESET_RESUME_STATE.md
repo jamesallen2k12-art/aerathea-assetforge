@@ -1,9 +1,46 @@
 # SM_DRW_SiegeBreaker_Hammer_A01 Reset / Resume State
 
-## 2026-07-24 Step 12 Dual-Asset Selection — Current Authority
+## 2026-07-24 Depth-Ownership Core Recovery — Current Authority
 
-This section supersedes the stale opening state below while preserving the
-earlier state as historical evidence.
+This section supersedes every stale geometry-status, depth, Step 10, Step 11,
+and Step 12 current-state statement below while preserving those statements
+as historical evidence.
+
+Flamestrike clarified and approved that the rune and metal `C04` source spans
+are local face-treatment extents, not candidate-specific global body depths.
+
+- Siege Breaker and Foe Hammer have identical overall dimensions.
+- Their body and hammer-face envelope is identical.
+- Common full body depth:
+  `6644212/149985 cm = 44.299176584 cm`.
+- Siege Breaker: double rune sided.
+- Foe Hammer: double metal-center-piece sided.
+- The local source intervals must not be stretched or promoted to global
+  clipping planes.
+- Former rune Step 12 geometry: `invalid / quarantined in place`.
+- Former metal Step 12 geometry: `invalid / quarantined in place`.
+- Current valid DCC source candidate: `none` for either asset.
+- Narrow Step 12 audits and review renders: `proof only`.
+- Step 13: `locked`.
+- Blender rebuild, retopology, UVs, baking, export, and Unreal:
+  `unauthorized`.
+
+Core Recovery found the first drift in Step 10's final-depth ownership
+decision. Step 11 propagated it into the production blueprint, and Step 12
+used the resulting candidate half depth for shared body and axial geometry.
+
+Governing recovery record:
+
+`proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_12_DEPTH_OWNERSHIP_CORE_RECOVERY.md`
+
+The next gate is a separately approved shared-depth recovery blueprint
+contract built from the last Core-valid evidence. Do not repair either former
+Step 12 mesh forward.
+
+## 2026-07-24 Step 12 Dual-Asset Selection — Historical Geometry State
+
+This section records the state before the depth-ownership Core Recovery above
+and is preserved as historical evidence.
 
 - Step 12 dual high-poly source construction: `complete`.
 - Candidate A, `rune_side`: selected for

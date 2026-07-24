@@ -3,7 +3,8 @@
   "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
   "parent_run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
   "last_valid_parent_step": "09",
-  "current_step": "STEP_11_COMPLETE_WAITING_SEPARATE_STEP12_CONTRACT",
+  "last_core_valid_step": "09A",
+  "current_step": "CORE_RECOVERY_DEPTH_OWNERSHIP_APPROVED",
   "completed_steps": [
     "01",
     "02",
@@ -14,12 +15,16 @@
     "07",
     "08",
     "09",
-    "10",
-    "11"
+    "09A"
   ],
-  "state": "step11_approved_authoritative_step12_locked",
-  "step_11_decision": "Flamestrike approved the exact blueprint as the authoritative construction plan",
-  "step_11_validation": "blueprint A02 independent PASS 462/462; deterministic rerun hash stable",
+  "historically_completed_but_reclassified_steps": [
+    "10",
+    "11",
+    "12"
+  ],
+  "state": "core_recovery_production_stopped_no_valid_dcc_source_candidate",
+  "step_11_decision": "historically approved; invalid and quarantined as construction authority after the 2026-07-24 depth-ownership correction",
+  "step_11_validation": "blueprint A02 independent PASS 462/462; proof only for narrow checks",
   "historical_block": {
     "status": "cleared by approved Step 09A ownership authority",
     "missing_authority": [
@@ -42,7 +47,7 @@
   "step_11_production_blueprint_a02": {
     "approval_recorded": true,
     "flamestrike_decision_approval_recorded": true,
-    "blueprint_status": "authoritative",
+    "blueprint_status": "invalid / quarantined in place as construction authority",
     "blueprint_sha256": "2b598497ba5e61a4352c217f3fb20b3545189c710934f3a21d9b7398ddb472c7",
     "surface_instruction_count": 17,
     "closure_contact_guard_completion_instruction_count": 16,
@@ -53,15 +58,33 @@
     "decision_record_sha256": "e2c9957e9f1bb3ccdaa56406b3f81f47c8aff647cb02d0c3520b3117eb3c6d2a",
     "authority_lock_sha256": "3235fcc9480ad246f968b275792aa3a309aa34710b5bfec3fc005980ae3d5069",
     "production_blueprint_created": true,
-    "step_11_completed": true,
+    "historical_step_11_completed": true,
+    "step_11_currently_valid": false,
     "blender_opened": false,
     "geometry_created": false,
     "render_export_or_unreal_created": false,
     "step_12_unlocked": false
   },
+  "core_recovery_20260724": {
+    "status": "authoritative",
+    "recovery_record": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_12_DEPTH_OWNERSHIP_CORE_RECOVERY.md",
+    "first_drift_action": "Step 10 promoted local C04 face-treatment spans to candidate-specific global body depth",
+    "common_body_depth_cm_exact": {
+      "numerator": 6644212,
+      "denominator": 149985,
+      "display_decimal": "44.299176584"
+    },
+    "required_dimension_relationship": "Siege Breaker and Foe Hammer have identical overall XYZ dimensions and the same body and hammer-face envelope",
+    "siege_breaker_treatment": "double rune sided",
+    "foe_hammer_treatment": "double metal-center-piece sided",
+    "former_rune_geometry_status": "invalid / quarantined in place",
+    "former_metal_geometry_status": "invalid / quarantined in place",
+    "valid_dcc_source_candidates": 0,
+    "repair_forward_authorized": false
+  },
   "next_permitted_action": {
-    "action": "stop; the current approval grants no Step 12 work",
-    "next_gate": "a separately stated visible Step 12 contract and separate Flamestrike approval",
+    "action": "stop; no geometry production is authorized",
+    "next_gate": "a separately stated and approved shared-depth recovery blueprint contract",
     "geometry_authority": false,
     "blender_authority": false
   },

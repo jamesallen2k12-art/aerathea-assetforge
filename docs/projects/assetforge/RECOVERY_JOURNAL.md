@@ -8847,3 +8847,13 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260724-102921/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260724-102921/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 10:51:21 EDT -0400 - record Siege Breaker and Foe Hammer depth ownership Core recovery
+
+- Snapshot: `Saved/ProjectRecovery/20260724-105121/`
+- Git: branch `main`, HEAD `126879c`, status lines `562`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-105121/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-105121/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-105121/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.

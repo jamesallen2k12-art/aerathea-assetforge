@@ -1361,3 +1361,48 @@ Core authority: `AGENTS.md` Core Principles govern this ledger. Drifted artifact
 - Assumption that caused drift: Codex treated equal target dimensions as a requirement that overrode direct source-pixel mapping.
 - Smallest sufficient recovery: restart at Step 01 under `SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01`, scan every new source pixel, derive dimensions, preserve one uniform scale per view and unequal half consequences, and execute Steps 01-16 unchanged.
 - Flamestrike approval: explicit 2026-07-23 direction to perform the complete new-image scan and exact sixteen-step replay through final visible review without intermediate theory approval.
+
+### 2026-07-24 - Siege Breaker / Foe Hammer Local C04 Span Promoted To Global Depth
+
+- Asset or scope: `SM_DRW_SiegeBreaker_Hammer_A01` and
+  `SM_DRW_FoeHammer_Hammer_A01`, R8 Steps 10-12 depth ownership and dual
+  candidate geometry.
+- Detected by: Flamestrike's clarification that only the segment around the
+  rune is more inset; the hammer faces and body are not two different depths.
+- Last known Core-valid state: authoritative A11 axial outer-footprint depth,
+  Step 09A local `RIGHT_C04_CANDIDATE_HALF_BOUNDARIES`, and the approved twin
+  identity/treatment selection.
+- First drift action: Step 10 promoted the local rune and metal `C04`
+  completed spans to candidate-specific final global depth.
+- Assumption that caused drift: distance from the right-view rotation axis to
+  a local `C04` owner edge was treated as the complete hammer-body half depth.
+- Propagation: Step 11 encoded that assumption as
+  `source_half_depth_cm`, `front_envelope_y_cm`, and
+  `EQ_CANDIDATE_AXIAL_INTERSECTION`; Step 12 then applied the value to shared
+  front, axial, closure, and bounds construction.
+- Proven authority: A11 assigns head-depth scale to the axial views and sets
+  full depth to
+  `6644212/149985 cm = 44.299176584 cm`; its independent audit is
+  `26/26 PASS`.
+- Approved correction: both twins have identical overall dimensions and the
+  same body/hammer-face envelope. Siege Breaker is double rune sided; Foe
+  Hammer is double metal-center-piece sided. The unequal `C04` spans remain
+  local, unstretched face-treatment evidence.
+- Prior-drift boundary: this does not revive the rejected per-half
+  normalization method. No local source span is stretched; both local
+  treatments are placed within one independently owned axial body envelope.
+- Affected outputs: Step 10 final-depth records; Step 11 blueprint,
+  validations, approvals, handoffs, reviews, and amendments; Step 12
+  builder/auditor, manifests, audits, state, handoff, both complete `run_a`
+  output families, and the review board.
+- Artifact statuses: Step 10 global-depth clauses are `invalid`; their
+  interval arithmetic is `proof only`. The affected Step 11 construction
+  family and both Step 12 geometry families are
+  `invalid / quarantined in place`. Narrow audit results and renders remain
+  `proof only`. Twin identity selection remains `authoritative`.
+- Smallest sufficient recovery: do not repair either mesh forward. Replace
+  the global-depth premise in a separately approved recovery blueprint, then
+  build both twins fresh from the last Core-valid evidence with one common
+  axial envelope and exact cross-asset dimension-equality gates.
+- Local recovery record:
+  `docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_12_DEPTH_OWNERSHIP_CORE_RECOVERY.md`.

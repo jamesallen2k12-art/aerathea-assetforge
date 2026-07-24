@@ -4,8 +4,10 @@
 - Approving authority: `Flamestrike`
 - Source asset: `SM_DRW_SiegeBreaker_Hammer_A01`
 - Source run: `SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02`
-- Decision status: `authoritative`
-- Geometry status: `two selected DCC source candidates`
+- Decision status:
+  `authoritative for twin identity; geometry assignment superseded by Core recovery`
+- Geometry status:
+  `no valid DCC source candidate; former Step 12 geometry invalid / quarantined in place`
 - Step 13 authority: `false`
 - Unreal authority: `false`
 
@@ -137,3 +139,34 @@ must state whether to:
    advances.
 
 Until then, both selected assets remain `DCC source candidate`.
+
+## Superseding Depth-Ownership Core Recovery — 2026-07-24
+
+This section supersedes the geometry-status, candidate-assignment, depth, and
+next-gate statements above while preserving the original selection record as
+historical evidence.
+
+Flamestrike clarified and approved that:
+
+- Siege Breaker and Foe Hammer must have identical overall dimensions;
+- their body and hammer-face envelope is identical;
+- the unequal rune and metal spans are local `C04` face-treatment extents,
+  not global body depths;
+- Siege Breaker remains double rune sided;
+- Foe Hammer remains double metal-center-piece sided; and
+- the common full body depth is the authoritative axial value
+  `6644212/149985 cm = 44.299176584 cm`.
+
+The identity selection remains `authoritative`. The assignment of the
+existing Step 12 `.blend` files as current DCC source candidates is revoked.
+Both geometry families are `invalid / quarantined in place`; their hashes,
+measurements, and audits remain `proof only` for lineage and narrow
+implementation checks.
+
+Neither asset currently has a valid DCC source candidate. No Foe Hammer source
+fork is authorized. A fresh recovery blueprint and a separately approved
+build contract are required before geometry resumes.
+
+Governing recovery record:
+
+`docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_12_DEPTH_OWNERSHIP_CORE_RECOVERY.md`
