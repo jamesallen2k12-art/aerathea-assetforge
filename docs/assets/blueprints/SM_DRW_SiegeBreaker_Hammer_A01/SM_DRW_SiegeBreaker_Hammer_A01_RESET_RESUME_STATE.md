@@ -1,21 +1,40 @@
 # SM_DRW_SiegeBreaker_Hammer_A01 Reset / Resume State
 
 - Active approved route:
-  `Core Recovery from valid R8 Steps 01-09; Step 10 passed; Step 09A ownership approved; Step 11 blueprint candidate independently passed`
+  `Core Recovery from valid R8 Steps 01-09; Step 10 passed; Step 09A ownership approved; Step 11 blueprint approved authoritative`
 - Plan: `SM_DRW_SiegeBreaker_Hammer_A01_STEPS_01_16_PROOF_OF_CONCEPT_PIPELINE_PLAN.md`
 - Active contract:
-  `approved Step 11 document-only contract complete; exact blueprint candidate awaiting Flamestrike decision`
+  `Step 11 complete; no active Step 12 contract`
 - Current state:
-  `Step 09A ownership authoritative; Step 11 blueprint candidate exists and independently passed 462/462; no production asset exists`
+  `Step 09A ownership authoritative; Step 11 blueprint authoritative; independent audit proof only PASS 462/462; no production asset exists`
 - Next approved activity:
-  `none; await Flamestrike approve/revise/reject/blocked decision on the exact Step 11 blueprint`
+  `none under the current approval; Step 12 requires a separate visible contract and separate approval`
 - Source processing authorized now:
   `false; source preflight is complete`
 - Model inference authorized now: `false`
 - DCC production authorized now:
-  `false; the audited blueprint did not unlock Step 12`
+  `false; Step 11 approval did not unlock Step 12`
 - Unreal authority: `false`
 - Fully game-ready: `false`
+
+## 2026-07-23 Step 11 Blueprint Approved
+
+- Flamestrike approved the exact Step 11 blueprint as the authoritative
+  construction plan.
+- Approved blueprint SHA-256:
+  `2b598497ba5e61a4352c217f3fb20b3545189c710934f3a21d9b7398ddb472c7`.
+- Decision record:
+  `proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_11_PRODUCTION_BLUEPRINT_A02_DECISION_APPROVAL_RECORD.md`.
+- Authority lock:
+  `proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_11_PRODUCTION_BLUEPRINT_A02_AUTHORITY_LOCK.json`.
+- Authority-lock SHA-256:
+  `3235fcc9480ad246f968b275792aa3a309aa34710b5bfec3fc005980ae3d5069`.
+- Blueprint artifact status: `authoritative`.
+- Independent validation status: `proof only`.
+- Step 11 status: `complete`.
+- Blender, geometry, render, export, and Unreal outputs: `not created`.
+- No Step 12 contract or builder was created.
+- Step 12 remains locked.
 
 ## 2026-07-23 Step 11 Production Blueprint A02 Audit Pass
 
@@ -380,32 +399,31 @@ The approved R8 zero-extrusion route is active:
 `approved zero-extrusion equations -> audited Step 11 blueprint ->`
 `separately approved fresh Step 12 component construction`
 
-Step 09A ownership is authoritative. The Step 11 blueprint is an independently
-audited `candidate`. The next decision is approval, revision, rejection, or a
-blocked classification for that exact document. No geometry follows
-automatically.
+Step 09A ownership and the exact Step 11 blueprint are authoritative. The
+Step 11 audit remains `proof only`. Step 11 is complete. Step 12 remains
+locked, and no geometry follows automatically.
 
 ## Prohibited Software Boundary
 
 TRELLIS, TRELLIS.2, TripoSR, diffusion, generative-image, image-to-3D, and
 generated-view software remain forbidden for this reconstruction. Blender is
-stopped. An approved Step 11 blueprint would still require a separate visible
-Step 12 contract and separate Flamestrike approval.
+stopped. The approved Step 11 blueprint still requires a separate visible
+Step 12 contract and separate Flamestrike approval before production.
 
 ## Resume Instruction
 
 Read only the latest recovery journal/checkpoint, git status, this reset state,
-the Step 09A authority lock, the Step 11 blueprint, its independent validation,
-and its plain-English review/handoff.
+the Step 09A authority lock, the Step 11 blueprint, its Step 11 authority lock,
+independent validation, and approved handoff.
 
 Report:
 
 1. Step 09A ownership is `authoritative`.
-2. The Step 11 blueprint is a `candidate`.
+2. The Step 11 blueprint is `authoritative`.
 3. Its independent audit is `proof only; PASS 462/462`.
 4. No Blender, geometry, render, export, or Unreal artifact exists.
 5. Step 12 is locked.
-6. The only pending action is Flamestrike's decision on the exact blueprint.
+6. No Step 12 contract is active.
 
 Do not run source processing, Blender, image generation, geometry, render,
 export, or Unreal work until a later exact scope is approved.

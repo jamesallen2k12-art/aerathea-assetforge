@@ -3,7 +3,7 @@
   "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
   "parent_run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
   "last_valid_parent_step": "09",
-  "current_step": "STEP_11_PRODUCTION_BLUEPRINT_A02_AUDIT_PASS_WAITING_FLAMESTRIKE_DECISION",
+  "current_step": "STEP_11_COMPLETE_WAITING_SEPARATE_STEP12_CONTRACT",
   "completed_steps": [
     "01",
     "02",
@@ -14,10 +14,11 @@
     "07",
     "08",
     "09",
-    "10"
+    "10",
+    "11"
   ],
-  "state": "waiting_flamestrike_step11_blueprint_candidate_decision",
-  "step_11_decision": "production blueprint candidate created; not authoritative until Flamestrike decision",
+  "state": "step11_approved_authoritative_step12_locked",
+  "step_11_decision": "Flamestrike approved the exact blueprint as the authoritative construction plan",
   "step_11_validation": "blueprint A02 independent PASS 462/462; deterministic rerun hash stable",
   "historical_block": {
     "status": "cleared by approved Step 09A ownership authority",
@@ -40,7 +41,8 @@
   },
   "step_11_production_blueprint_a02": {
     "approval_recorded": true,
-    "blueprint_status": "candidate",
+    "flamestrike_decision_approval_recorded": true,
+    "blueprint_status": "authoritative",
     "blueprint_sha256": "2b598497ba5e61a4352c217f3fb20b3545189c710934f3a21d9b7398ddb472c7",
     "surface_instruction_count": 17,
     "closure_contact_guard_completion_instruction_count": 16,
@@ -48,16 +50,18 @@
     "validation_status": "proof only",
     "validation_sha256": "c896b5bf48f43e0fb32920a28a4fc76c6e351e0727c02e38266505299a682c82",
     "deterministic_validation_rerun": "same SHA-256",
+    "decision_record_sha256": "e2c9957e9f1bb3ccdaa56406b3f81f47c8aff647cb02d0c3520b3117eb3c6d2a",
+    "authority_lock_sha256": "3235fcc9480ad246f968b275792aa3a309aa34710b5bfec3fc005980ae3d5069",
     "production_blueprint_created": true,
-    "step_11_completed": false,
+    "step_11_completed": true,
     "blender_opened": false,
     "geometry_created": false,
     "render_export_or_unreal_created": false,
     "step_12_unlocked": false
   },
   "next_permitted_action": {
-    "action": "Flamestrike approve, revise, reject, or block the exact Step 11 blueprint candidate",
-    "scope_if_approved": "classify only the written blueprint as authoritative; Step 12 still requires a separate contract and approval",
+    "action": "stop; the current approval grants no Step 12 work",
+    "next_gate": "a separately stated visible Step 12 contract and separate Flamestrike approval",
     "geometry_authority": false,
     "blender_authority": false
   },

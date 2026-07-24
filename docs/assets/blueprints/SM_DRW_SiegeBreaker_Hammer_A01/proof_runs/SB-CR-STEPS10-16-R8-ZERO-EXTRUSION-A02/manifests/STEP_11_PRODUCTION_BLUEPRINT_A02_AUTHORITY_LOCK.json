@@ -1,0 +1,76 @@
+{
+  "schema": "AERATHEA_R8_ZERO_EXTRUSION_STEP11_BLUEPRINT_AUTHORITY_LOCK_A02_V1",
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "step": "11",
+  "date": "2026-07-23",
+  "decision": "approved",
+  "decision_authority": "Flamestrike",
+  "reviewed_git_commit": "e7576b36f7883a820f0ed8af2aeb7dc28e17c3a6",
+  "approved_file_sha256": {
+    "production_blueprint": "2b598497ba5e61a4352c217f3fb20b3545189c710934f3a21d9b7398ddb472c7",
+    "independent_validation": "c896b5bf48f43e0fb32920a28a4fc76c6e351e0727c02e38266505299a682c82",
+    "plain_english_review": "b51b16cb836dac7e6d7242dbb047f557ee6afa082a63b3d4b4feeb068f42632c",
+    "decision_approval_record": "e2c9957e9f1bb3ccdaa56406b3f81f47c8aff647cb02d0c3520b3117eb3c6d2a",
+    "execution_authorization_record": "6e2786e5d283f0176f90f83a80493c04581a6680aab32b3214c52403382e522f"
+  },
+  "approved_paths": {
+    "production_blueprint": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_11_PRODUCTION_GEOMETRY_BLUEPRINT.json",
+    "independent_validation": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_11_BLUEPRINT_VALIDATION_A02.json",
+    "plain_english_review": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/review/STEP_11_PRODUCTION_BLUEPRINT_A02_REVIEW.md",
+    "decision_approval_record": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_11_PRODUCTION_BLUEPRINT_A02_DECISION_APPROVAL_RECORD.md",
+    "execution_authorization_record": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_11_PRODUCTION_BLUEPRINT_A02_APPROVAL_RECORD.md"
+  },
+  "artifact_status": {
+    "production_blueprint": "authoritative",
+    "decision_approval_record": "authoritative",
+    "authority_lock": "authoritative",
+    "independent_validation": "proof only",
+    "plain_english_review": "reference only"
+  },
+  "approved_blueprint_summary": {
+    "surface_instruction_count": 17,
+    "closure_contact_guard_completion_instruction_count": 16,
+    "candidate_variants": [
+      "rune_side",
+      "metal_center_piece_side"
+    ],
+    "rune_completed_dimensions_cm": [
+      "97.873941674506",
+      "34.434306569343",
+      "170.000000000000"
+    ],
+    "metal_completed_dimensions_cm": [
+      "97.873941674506",
+      "43.120437956204",
+      "170.000000000000"
+    ],
+    "whole_completion": "(X,Y,Z)->(-X,-Y,Z) exactly once",
+    "validation_result": "PASS 462/462"
+  },
+  "approved_scope": {
+    "construction_plan_authority": true,
+    "blueprint_bytes_may_change_without_new_approval": false,
+    "step_11_completed": true,
+    "blender_authority": false,
+    "geometry_authority": false,
+    "render_authority": false,
+    "uv_material_authority": false,
+    "lod_collision_authority": false,
+    "export_authority": false,
+    "unreal_authority": false,
+    "step_12_authority": false
+  },
+  "output_ceiling": {
+    "blueprint_reclassified_authoritative": true,
+    "blender_opened": false,
+    "step_12_builder_created": false,
+    "geometry_created": false,
+    "render_created": false,
+    "export_created": false,
+    "unreal_created": false,
+    "step_12_unlocked": false
+  },
+  "next_gate": "a separately stated visible Step 12 contract and a separate Flamestrike approval",
+  "current_action_stop": "record this approval, checkpoint, commit, push, and stop without drafting or starting Step 12"
+}

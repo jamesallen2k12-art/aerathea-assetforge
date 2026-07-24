@@ -8697,3 +8697,23 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260723-210115/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260723-210115/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-23 21:13:42 EDT -0400 - Before recording Siege Breaker Step 11 blueprint approval
+
+- Snapshot: `Saved/ProjectRecovery/20260723-211342/`
+- Git: branch `main`, HEAD `e7576b3`, status lines `555`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260723-211342/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260723-211342/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260723-211342/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-23 21:17:19 EDT -0400 - Siege Breaker Step 11 blueprint approved and authority locked
+
+- Snapshot: `Saved/ProjectRecovery/20260723-211719/`
+- Git: branch `main`, HEAD `e7576b3`, status lines `562`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260723-211719/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260723-211719/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260723-211719/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
