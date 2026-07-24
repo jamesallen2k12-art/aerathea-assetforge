@@ -1,0 +1,1113 @@
+{
+  "artifact_status": "proof only",
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "check_count": 119,
+  "checks": [
+    {
+      "expected": "AERATHEA_R8_ZERO_EXTRUSION_STEP11_SOURCE_PREFLIGHT_A02_V1",
+      "id": "preflight_schema",
+      "observed": "AERATHEA_R8_ZERO_EXTRUSION_STEP11_SOURCE_PREFLIGHT_A02_V1",
+      "result": "PASS"
+    },
+    {
+      "expected": "SM_DRW_SiegeBreaker_Hammer_A01",
+      "id": "preflight_asset",
+      "observed": "SM_DRW_SiegeBreaker_Hammer_A01",
+      "result": "PASS"
+    },
+    {
+      "expected": "PASS",
+      "id": "preflight_decision",
+      "observed": "PASS",
+      "result": "PASS"
+    },
+    {
+      "expected": [],
+      "id": "preflight_missing_authority",
+      "observed": [],
+      "result": "PASS"
+    },
+    {
+      "expected": false,
+      "id": "production_blueprint_not_created",
+      "observed": false,
+      "result": "PASS"
+    },
+    {
+      "expected": false,
+      "id": "step11_blueprint_not_authorized",
+      "observed": false,
+      "result": "PASS"
+    },
+    {
+      "expected": false,
+      "id": "step12_not_unlocked",
+      "observed": false,
+      "result": "PASS"
+    },
+    {
+      "expected": false,
+      "id": "no_geometry_or_blender",
+      "observed": false,
+      "result": "PASS"
+    },
+    {
+      "expected": false,
+      "id": "no_render_export_or_unreal",
+      "observed": false,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "approval_response_exact",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "approval_scope_excludes_blueprint_geometry_step12",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": "AERATHEA_R8_STEP09A_OWNERSHIP_AUTHORITY_LOCK_V1",
+      "id": "authority_lock_schema",
+      "observed": "AERATHEA_R8_STEP09A_OWNERSHIP_AUTHORITY_LOCK_V1",
+      "result": "PASS"
+    },
+    {
+      "expected": "approved",
+      "id": "authority_lock_decision",
+      "observed": "approved",
+      "result": "PASS"
+    },
+    {
+      "expected": "Flamestrike",
+      "id": "authority_lock_decision_authority",
+      "observed": "Flamestrike",
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "authority_lock_preflight_authorized",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": false,
+      "id": "authority_lock_blueprint_not_authorized",
+      "observed": false,
+      "result": "PASS"
+    },
+    {
+      "expected": false,
+      "id": "authority_lock_geometry_not_authorized",
+      "observed": false,
+      "result": "PASS"
+    },
+    {
+      "expected": "8055611c52e4883127e705f6419b4c8dd09ae7d8c76ba38e4130fafbbd45cbcd",
+      "id": "approved_hash_interpretation_input",
+      "observed": "8055611c52e4883127e705f6419b4c8dd09ae7d8c76ba38e4130fafbbd45cbcd",
+      "result": "PASS"
+    },
+    {
+      "expected": {
+        "expected": "8055611c52e4883127e705f6419b4c8dd09ae7d8c76ba38e4130fafbbd45cbcd",
+        "match": true,
+        "observed": "8055611c52e4883127e705f6419b4c8dd09ae7d8c76ba38e4130fafbbd45cbcd"
+      },
+      "id": "preflight_hash_result_interpretation_input",
+      "observed": {
+        "expected": "8055611c52e4883127e705f6419b4c8dd09ae7d8c76ba38e4130fafbbd45cbcd",
+        "match": true,
+        "observed": "8055611c52e4883127e705f6419b4c8dd09ae7d8c76ba38e4130fafbbd45cbcd"
+      },
+      "result": "PASS"
+    },
+    {
+      "expected": "396adfbaaefc8a8ea35104e5e96dfde322510fb4ce88530fbb32f7f3073b3562",
+      "id": "approved_hash_component_scanlines",
+      "observed": "396adfbaaefc8a8ea35104e5e96dfde322510fb4ce88530fbb32f7f3073b3562",
+      "result": "PASS"
+    },
+    {
+      "expected": {
+        "expected": "396adfbaaefc8a8ea35104e5e96dfde322510fb4ce88530fbb32f7f3073b3562",
+        "match": true,
+        "observed": "396adfbaaefc8a8ea35104e5e96dfde322510fb4ce88530fbb32f7f3073b3562"
+      },
+      "id": "preflight_hash_result_component_scanlines",
+      "observed": {
+        "expected": "396adfbaaefc8a8ea35104e5e96dfde322510fb4ce88530fbb32f7f3073b3562",
+        "match": true,
+        "observed": "396adfbaaefc8a8ea35104e5e96dfde322510fb4ce88530fbb32f7f3073b3562"
+      },
+      "result": "PASS"
+    },
+    {
+      "expected": "e190ed266753c797d4f9ec812154ff3b29f5d5d780e53e235e780c43492d0bd8",
+      "id": "approved_hash_boundary_and_correspondence_index",
+      "observed": "e190ed266753c797d4f9ec812154ff3b29f5d5d780e53e235e780c43492d0bd8",
+      "result": "PASS"
+    },
+    {
+      "expected": {
+        "expected": "e190ed266753c797d4f9ec812154ff3b29f5d5d780e53e235e780c43492d0bd8",
+        "match": true,
+        "observed": "e190ed266753c797d4f9ec812154ff3b29f5d5d780e53e235e780c43492d0bd8"
+      },
+      "id": "preflight_hash_result_boundary_and_correspondence_index",
+      "observed": {
+        "expected": "e190ed266753c797d4f9ec812154ff3b29f5d5d780e53e235e780c43492d0bd8",
+        "match": true,
+        "observed": "e190ed266753c797d4f9ec812154ff3b29f5d5d780e53e235e780c43492d0bd8"
+      },
+      "result": "PASS"
+    },
+    {
+      "expected": "1e02aecf558145d4e440b1cdda90513fb28a0075149b1bf24f7ed3c00f7c3e60",
+      "id": "approved_hash_independent_validation",
+      "observed": "1e02aecf558145d4e440b1cdda90513fb28a0075149b1bf24f7ed3c00f7c3e60",
+      "result": "PASS"
+    },
+    {
+      "expected": {
+        "expected": "1e02aecf558145d4e440b1cdda90513fb28a0075149b1bf24f7ed3c00f7c3e60",
+        "match": true,
+        "observed": "1e02aecf558145d4e440b1cdda90513fb28a0075149b1bf24f7ed3c00f7c3e60"
+      },
+      "id": "preflight_hash_result_independent_validation",
+      "observed": {
+        "expected": "1e02aecf558145d4e440b1cdda90513fb28a0075149b1bf24f7ed3c00f7c3e60",
+        "match": true,
+        "observed": "1e02aecf558145d4e440b1cdda90513fb28a0075149b1bf24f7ed3c00f7c3e60"
+      },
+      "result": "PASS"
+    },
+    {
+      "expected": "62d585a56d59b57c0a3d09413fe9e82df28db7005cab25b67489f82d44ff35e5",
+      "id": "approved_hash_review_board",
+      "observed": "62d585a56d59b57c0a3d09413fe9e82df28db7005cab25b67489f82d44ff35e5",
+      "result": "PASS"
+    },
+    {
+      "expected": {
+        "expected": "62d585a56d59b57c0a3d09413fe9e82df28db7005cab25b67489f82d44ff35e5",
+        "match": true,
+        "observed": "62d585a56d59b57c0a3d09413fe9e82df28db7005cab25b67489f82d44ff35e5"
+      },
+      "id": "preflight_hash_result_review_board",
+      "observed": {
+        "expected": "62d585a56d59b57c0a3d09413fe9e82df28db7005cab25b67489f82d44ff35e5",
+        "match": true,
+        "observed": "62d585a56d59b57c0a3d09413fe9e82df28db7005cab25b67489f82d44ff35e5"
+      },
+      "result": "PASS"
+    },
+    {
+      "expected": "06a0f21b01a652fde338a6639580b10769fd86e1f9adaf2e578aba789eae48fa",
+      "id": "approved_hash_front_exact_marks",
+      "observed": "06a0f21b01a652fde338a6639580b10769fd86e1f9adaf2e578aba789eae48fa",
+      "result": "PASS"
+    },
+    {
+      "expected": {
+        "expected": "06a0f21b01a652fde338a6639580b10769fd86e1f9adaf2e578aba789eae48fa",
+        "match": true,
+        "observed": "06a0f21b01a652fde338a6639580b10769fd86e1f9adaf2e578aba789eae48fa"
+      },
+      "id": "preflight_hash_result_front_exact_marks",
+      "observed": {
+        "expected": "06a0f21b01a652fde338a6639580b10769fd86e1f9adaf2e578aba789eae48fa",
+        "match": true,
+        "observed": "06a0f21b01a652fde338a6639580b10769fd86e1f9adaf2e578aba789eae48fa"
+      },
+      "result": "PASS"
+    },
+    {
+      "expected": "65c6b5250bfed13fd38e4c608758921f4bd0ed03cb52caf4a28980f70a13a4e3",
+      "id": "approved_hash_right_exact_marks",
+      "observed": "65c6b5250bfed13fd38e4c608758921f4bd0ed03cb52caf4a28980f70a13a4e3",
+      "result": "PASS"
+    },
+    {
+      "expected": {
+        "expected": "65c6b5250bfed13fd38e4c608758921f4bd0ed03cb52caf4a28980f70a13a4e3",
+        "match": true,
+        "observed": "65c6b5250bfed13fd38e4c608758921f4bd0ed03cb52caf4a28980f70a13a4e3"
+      },
+      "id": "preflight_hash_result_right_exact_marks",
+      "observed": {
+        "expected": "65c6b5250bfed13fd38e4c608758921f4bd0ed03cb52caf4a28980f70a13a4e3",
+        "match": true,
+        "observed": "65c6b5250bfed13fd38e4c608758921f4bd0ed03cb52caf4a28980f70a13a4e3"
+      },
+      "result": "PASS"
+    },
+    {
+      "expected": "ef82bda2f5b15af77e243224d73f05a322cf8de065255a667ca2c4a63656c9d9",
+      "id": "approved_hash_top_exact_marks",
+      "observed": "ef82bda2f5b15af77e243224d73f05a322cf8de065255a667ca2c4a63656c9d9",
+      "result": "PASS"
+    },
+    {
+      "expected": {
+        "expected": "ef82bda2f5b15af77e243224d73f05a322cf8de065255a667ca2c4a63656c9d9",
+        "match": true,
+        "observed": "ef82bda2f5b15af77e243224d73f05a322cf8de065255a667ca2c4a63656c9d9"
+      },
+      "id": "preflight_hash_result_top_exact_marks",
+      "observed": {
+        "expected": "ef82bda2f5b15af77e243224d73f05a322cf8de065255a667ca2c4a63656c9d9",
+        "match": true,
+        "observed": "ef82bda2f5b15af77e243224d73f05a322cf8de065255a667ca2c4a63656c9d9"
+      },
+      "result": "PASS"
+    },
+    {
+      "expected": "0330f0277cc27c6ec6f083899df08bda58ebc931b9c25a4dc01467699a5a26fd",
+      "id": "approved_hash_bottom_exact_marks",
+      "observed": "0330f0277cc27c6ec6f083899df08bda58ebc931b9c25a4dc01467699a5a26fd",
+      "result": "PASS"
+    },
+    {
+      "expected": {
+        "expected": "0330f0277cc27c6ec6f083899df08bda58ebc931b9c25a4dc01467699a5a26fd",
+        "match": true,
+        "observed": "0330f0277cc27c6ec6f083899df08bda58ebc931b9c25a4dc01467699a5a26fd"
+      },
+      "id": "preflight_hash_result_bottom_exact_marks",
+      "observed": {
+        "expected": "0330f0277cc27c6ec6f083899df08bda58ebc931b9c25a4dc01467699a5a26fd",
+        "match": true,
+        "observed": "0330f0277cc27c6ec6f083899df08bda58ebc931b9c25a4dc01467699a5a26fd"
+      },
+      "result": "PASS"
+    },
+    {
+      "expected": "ab3f676d02bc35af6deb2ff87c93d4bc2aece6f895ac36a2517a102399237b61",
+      "id": "approved_hash_output_record",
+      "observed": "ab3f676d02bc35af6deb2ff87c93d4bc2aece6f895ac36a2517a102399237b61",
+      "result": "PASS"
+    },
+    {
+      "expected": {
+        "expected": "ab3f676d02bc35af6deb2ff87c93d4bc2aece6f895ac36a2517a102399237b61",
+        "match": true,
+        "observed": "ab3f676d02bc35af6deb2ff87c93d4bc2aece6f895ac36a2517a102399237b61"
+      },
+      "id": "preflight_hash_result_output_record",
+      "observed": {
+        "expected": "ab3f676d02bc35af6deb2ff87c93d4bc2aece6f895ac36a2517a102399237b61",
+        "match": true,
+        "observed": "ab3f676d02bc35af6deb2ff87c93d4bc2aece6f895ac36a2517a102399237b61"
+      },
+      "result": "PASS"
+    },
+    {
+      "expected": "f4dcbfdf2053f3f9931075634103b2216aa8570c93b3dd7e6280d4c39566ac29",
+      "id": "approved_hash_candidate_handoff",
+      "observed": "f4dcbfdf2053f3f9931075634103b2216aa8570c93b3dd7e6280d4c39566ac29",
+      "result": "PASS"
+    },
+    {
+      "expected": {
+        "expected": "f4dcbfdf2053f3f9931075634103b2216aa8570c93b3dd7e6280d4c39566ac29",
+        "match": true,
+        "observed": "f4dcbfdf2053f3f9931075634103b2216aa8570c93b3dd7e6280d4c39566ac29"
+      },
+      "id": "preflight_hash_result_candidate_handoff",
+      "observed": {
+        "expected": "f4dcbfdf2053f3f9931075634103b2216aa8570c93b3dd7e6280d4c39566ac29",
+        "match": true,
+        "observed": "f4dcbfdf2053f3f9931075634103b2216aa8570c93b3dd7e6280d4c39566ac29"
+      },
+      "result": "PASS"
+    },
+    {
+      "expected": "a7e07ad68e9b2737c7c70e71e9df714766a285695693e741197900e17c3a06a5",
+      "id": "preflight_authority_lock_hash",
+      "observed": "a7e07ad68e9b2737c7c70e71e9df714766a285695693e741197900e17c3a06a5",
+      "result": "PASS"
+    },
+    {
+      "expected": "7a466161c0af498cd663c4c68470e190ce9de3ae22aa72da69d3d1d3ca3d102e",
+      "id": "preflight_approval_record_hash",
+      "observed": "7a466161c0af498cd663c4c68470e190ce9de3ae22aa72da69d3d1d3ca3d102e",
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "preflight_authority_lock_valid",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": "PASS",
+      "id": "step09a_validation_result",
+      "observed": "PASS",
+      "result": "PASS"
+    },
+    {
+      "expected": [
+        79,
+        79,
+        []
+      ],
+      "id": "step09a_validation_count",
+      "observed": [
+        79,
+        79,
+        []
+      ],
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "step09a_validation_all_checks_pass",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": false,
+      "id": "step09a_validation_no_geometry",
+      "observed": false,
+      "result": "PASS"
+    },
+    {
+      "expected": false,
+      "id": "step09a_validation_no_filled_review",
+      "observed": false,
+      "result": "PASS"
+    },
+    {
+      "expected": "AERATHEA_R8_STEP09A_COMPONENT_SCANLINES_V1",
+      "id": "scanline_schema",
+      "observed": "AERATHEA_R8_STEP09A_COMPONENT_SCANLINES_V1",
+      "result": "PASS"
+    },
+    {
+      "expected": [
+        "C01_CENTER_CORE",
+        "C02_STONE_LEFT",
+        "C03_STONE_RIGHT",
+        "C06_UPPER_HAFT_CAP",
+        "C12_RESERVED_EXISTING_OWNER"
+      ],
+      "id": "front_component_set",
+      "observed": [
+        "C01_CENTER_CORE",
+        "C02_STONE_LEFT",
+        "C03_STONE_RIGHT",
+        "C06_UPPER_HAFT_CAP",
+        "C12_RESERVED_EXISTING_OWNER"
+      ],
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "front_C01_CENTER_CORE_record_valid",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "front_C01_CENTER_CORE_owner_nonempty",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "front_C02_STONE_LEFT_record_valid",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "front_C02_STONE_LEFT_owner_nonempty",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "front_C03_STONE_RIGHT_record_valid",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "front_C03_STONE_RIGHT_owner_nonempty",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "front_C06_UPPER_HAFT_CAP_record_valid",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "front_C06_UPPER_HAFT_CAP_owner_nonempty",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "front_C12_RESERVED_EXISTING_OWNER_record_valid",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "front_C12_RESERVED_EXISTING_OWNER_owner_nonempty",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": 0,
+      "id": "front_component_overlap_pixels",
+      "observed": 0,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "front_component_overlap_gate",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "front_protected_records_coordinate_valid",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": [
+        "C01_SIDE_RESERVED_IN_METAL_HALF",
+        "C04_METAL_CENTER_PIECE_SIDE",
+        "C04_RUNE_SIDE"
+      ],
+      "id": "right_component_set",
+      "observed": [
+        "C01_SIDE_RESERVED_IN_METAL_HALF",
+        "C04_METAL_CENTER_PIECE_SIDE",
+        "C04_RUNE_SIDE"
+      ],
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "right_C01_SIDE_RESERVED_IN_METAL_HALF_record_valid",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "right_C01_SIDE_RESERVED_IN_METAL_HALF_owner_nonempty",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "right_C04_METAL_CENTER_PIECE_SIDE_record_valid",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "right_C04_METAL_CENTER_PIECE_SIDE_owner_nonempty",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "right_C04_RUNE_SIDE_record_valid",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "right_C04_RUNE_SIDE_owner_nonempty",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": 0,
+      "id": "right_component_overlap_pixels",
+      "observed": 0,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "right_component_overlap_gate",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "right_protected_records_coordinate_valid",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": [
+        "C02_STONE_LEFT",
+        "C03_STONE_RIGHT",
+        "CENTRAL_NON_STONE_RESERVED"
+      ],
+      "id": "top_component_set",
+      "observed": [
+        "C02_STONE_LEFT",
+        "C03_STONE_RIGHT",
+        "CENTRAL_NON_STONE_RESERVED"
+      ],
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "top_C02_STONE_LEFT_record_valid",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "top_C02_STONE_LEFT_owner_nonempty",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "top_C03_STONE_RIGHT_record_valid",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "top_C03_STONE_RIGHT_owner_nonempty",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "top_CENTRAL_NON_STONE_RESERVED_record_valid",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "top_CENTRAL_NON_STONE_RESERVED_owner_nonempty",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": 0,
+      "id": "top_component_overlap_pixels",
+      "observed": 0,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "top_component_overlap_gate",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "top_protected_records_coordinate_valid",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": [
+        "C02_STONE_LEFT",
+        "C03_STONE_RIGHT",
+        "CENTRAL_NON_STONE_RESERVED"
+      ],
+      "id": "bottom_component_set",
+      "observed": [
+        "C02_STONE_LEFT",
+        "C03_STONE_RIGHT",
+        "CENTRAL_NON_STONE_RESERVED"
+      ],
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "bottom_C02_STONE_LEFT_record_valid",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "bottom_C02_STONE_LEFT_owner_nonempty",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "bottom_C03_STONE_RIGHT_record_valid",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "bottom_C03_STONE_RIGHT_owner_nonempty",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "bottom_CENTRAL_NON_STONE_RESERVED_record_valid",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "bottom_CENTRAL_NON_STONE_RESERVED_owner_nonempty",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": 0,
+      "id": "bottom_component_overlap_pixels",
+      "observed": 0,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "bottom_component_overlap_gate",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "bottom_protected_records_coordinate_valid",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": {
+        "bottom": {
+          "C02_STONE_LEFT": 132685,
+          "C03_STONE_RIGHT": 133227,
+          "CENTRAL_NON_STONE_RESERVED": 109361
+        },
+        "front": {
+          "C01_CENTER_CORE": 46183,
+          "C02_STONE_LEFT": 71788,
+          "C03_STONE_RIGHT": 71689,
+          "C06_UPPER_HAFT_CAP": 6068,
+          "C12_RESERVED_EXISTING_OWNER": 6463
+        },
+        "right": {
+          "C01_SIDE_RESERVED_IN_METAL_HALF": 9832,
+          "C04_METAL_CENTER_PIECE_SIDE": 37508,
+          "C04_RUNE_SIDE": 42029
+        },
+        "top": {
+          "C02_STONE_LEFT": 141087,
+          "C03_STONE_RIGHT": 140054,
+          "CENTRAL_NON_STONE_RESERVED": 103446
+        }
+      },
+      "id": "preflight_component_counts_match_direct_replay",
+      "observed": {
+        "bottom": {
+          "C02_STONE_LEFT": 132685,
+          "C03_STONE_RIGHT": 133227,
+          "CENTRAL_NON_STONE_RESERVED": 109361
+        },
+        "front": {
+          "C01_CENTER_CORE": 46183,
+          "C02_STONE_LEFT": 71788,
+          "C03_STONE_RIGHT": 71689,
+          "C06_UPPER_HAFT_CAP": 6068,
+          "C12_RESERVED_EXISTING_OWNER": 6463
+        },
+        "right": {
+          "C01_SIDE_RESERVED_IN_METAL_HALF": 9832,
+          "C04_METAL_CENTER_PIECE_SIDE": 37508,
+          "C04_RUNE_SIDE": 42029
+        },
+        "top": {
+          "C02_STONE_LEFT": 141087,
+          "C03_STONE_RIGHT": 140054,
+          "CENTRAL_NON_STONE_RESERVED": 103446
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "expected": [
+        "FRONT_C02_INNER_OWNER_EDGE",
+        "FRONT_C03_INNER_OWNER_EDGE",
+        "FRONT_C01_C06_CONTACT",
+        "FRONT_C06_C07_CONTACT",
+        "FRONT_C12_RESERVED_C01_CONTACT",
+        "RIGHT_C04_CANDIDATE_HALF_BOUNDARIES",
+        "RIGHT_C04_TOP_BOTTOM_EDGES",
+        "TOP_C02_INNER_OWNER_EDGE",
+        "TOP_C03_INNER_OWNER_EDGE",
+        "TOP_STONE_SEPARATION_WITHOUT_CENTRAL_OWNER",
+        "BOTTOM_C02_INNER_OWNER_EDGE",
+        "BOTTOM_C03_INNER_OWNER_EDGE",
+        "BOTTOM_STONE_SEPARATION_WITHOUT_CENTRAL_OWNER"
+      ],
+      "id": "preflight_required_boundary_ids",
+      "observed": [
+        "FRONT_C02_INNER_OWNER_EDGE",
+        "FRONT_C03_INNER_OWNER_EDGE",
+        "FRONT_C01_C06_CONTACT",
+        "FRONT_C06_C07_CONTACT",
+        "FRONT_C12_RESERVED_C01_CONTACT",
+        "RIGHT_C04_CANDIDATE_HALF_BOUNDARIES",
+        "RIGHT_C04_TOP_BOTTOM_EDGES",
+        "TOP_C02_INNER_OWNER_EDGE",
+        "TOP_C03_INNER_OWNER_EDGE",
+        "TOP_STONE_SEPARATION_WITHOUT_CENTRAL_OWNER",
+        "BOTTOM_C02_INNER_OWNER_EDGE",
+        "BOTTOM_C03_INNER_OWNER_EDGE",
+        "BOTTOM_STONE_SEPARATION_WITHOUT_CENTRAL_OWNER"
+      ],
+      "result": "PASS"
+    },
+    {
+      "expected": [
+        "BOTTOM_C02_INNER_OWNER_EDGE",
+        "BOTTOM_C03_INNER_OWNER_EDGE",
+        "BOTTOM_STONE_SEPARATION_WITHOUT_CENTRAL_OWNER",
+        "FRONT_C01_C06_CONTACT",
+        "FRONT_C02_INNER_OWNER_EDGE",
+        "FRONT_C03_INNER_OWNER_EDGE",
+        "FRONT_C06_C07_CONTACT",
+        "FRONT_C12_RESERVED_C01_CONTACT",
+        "RIGHT_C04_CANDIDATE_HALF_BOUNDARIES",
+        "RIGHT_C04_TOP_BOTTOM_EDGES",
+        "TOP_C02_INNER_OWNER_EDGE",
+        "TOP_C03_INNER_OWNER_EDGE",
+        "TOP_STONE_SEPARATION_WITHOUT_CENTRAL_OWNER"
+      ],
+      "id": "boundary_id_set",
+      "observed": [
+        "BOTTOM_C02_INNER_OWNER_EDGE",
+        "BOTTOM_C03_INNER_OWNER_EDGE",
+        "BOTTOM_STONE_SEPARATION_WITHOUT_CENTRAL_OWNER",
+        "FRONT_C01_C06_CONTACT",
+        "FRONT_C02_INNER_OWNER_EDGE",
+        "FRONT_C03_INNER_OWNER_EDGE",
+        "FRONT_C06_C07_CONTACT",
+        "FRONT_C12_RESERVED_C01_CONTACT",
+        "RIGHT_C04_CANDIDATE_HALF_BOUNDARIES",
+        "RIGHT_C04_TOP_BOTTOM_EDGES",
+        "TOP_C02_INNER_OWNER_EDGE",
+        "TOP_C03_INNER_OWNER_EDGE",
+        "TOP_STONE_SEPARATION_WITHOUT_CENTRAL_OWNER"
+      ],
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "FRONT_C02_INNER_OWNER_EDGE_coordinate_valid",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "FRONT_C03_INNER_OWNER_EDGE_coordinate_valid",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "FRONT_C01_C06_CONTACT_coordinate_valid",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "FRONT_C06_C07_CONTACT_coordinate_valid",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "FRONT_C12_RESERVED_C01_CONTACT_coordinate_valid",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "RIGHT_C04_CANDIDATE_HALF_BOUNDARIES_coordinate_valid",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "RIGHT_C04_TOP_BOTTOM_EDGES_coordinate_valid",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "TOP_C02_INNER_OWNER_EDGE_coordinate_valid",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "TOP_C03_INNER_OWNER_EDGE_coordinate_valid",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "TOP_STONE_SEPARATION_WITHOUT_CENTRAL_OWNER_coordinate_valid",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "BOTTOM_C02_INNER_OWNER_EDGE_coordinate_valid",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "BOTTOM_C03_INNER_OWNER_EDGE_coordinate_valid",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "BOTTOM_STONE_SEPARATION_WITHOUT_CENTRAL_OWNER_coordinate_valid",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": [
+        "CORR_C02_FRONT_TOP_BOTTOM_INNER_OWNER_EDGES",
+        "CORR_C03_FRONT_TOP_BOTTOM_INNER_OWNER_EDGES",
+        "CORR_C04_RIGHT_CANDIDATE_FACE_EDGES",
+        "CORR_C01_C06_C07_FRONT_CONTACTS"
+      ],
+      "id": "preflight_required_group_ids",
+      "observed": [
+        "CORR_C02_FRONT_TOP_BOTTOM_INNER_OWNER_EDGES",
+        "CORR_C03_FRONT_TOP_BOTTOM_INNER_OWNER_EDGES",
+        "CORR_C04_RIGHT_CANDIDATE_FACE_EDGES",
+        "CORR_C01_C06_C07_FRONT_CONTACTS"
+      ],
+      "result": "PASS"
+    },
+    {
+      "expected": [
+        "CORR_C02_FRONT_TOP_BOTTOM_INNER_OWNER_EDGES",
+        "CORR_C03_FRONT_TOP_BOTTOM_INNER_OWNER_EDGES",
+        "CORR_C04_RIGHT_CANDIDATE_FACE_EDGES",
+        "CORR_C01_C06_C07_FRONT_CONTACTS"
+      ],
+      "id": "correspondence_group_ids",
+      "observed": [
+        "CORR_C02_FRONT_TOP_BOTTOM_INNER_OWNER_EDGES",
+        "CORR_C03_FRONT_TOP_BOTTOM_INNER_OWNER_EDGES",
+        "CORR_C04_RIGHT_CANDIDATE_FACE_EDGES",
+        "CORR_C01_C06_C07_FRONT_CONTACTS"
+      ],
+      "result": "PASS"
+    },
+    {
+      "expected": true,
+      "id": "correspondence_group_boundary_references",
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "expected": [
+        {
+          "component": "C02_STONE_LEFT",
+          "id": "CORR_C02_FRONT_TOP_BOTTOM_INNER_OWNER_EDGES",
+          "ordered_boundary_ids": [
+            "FRONT_C02_INNER_OWNER_EDGE",
+            "TOP_C02_INNER_OWNER_EDGE",
+            "BOTTOM_C02_INNER_OWNER_EDGE"
+          ],
+          "scope": "ordered exact source-edge sets only; no point pairing or surface created"
+        },
+        {
+          "component": "C03_STONE_RIGHT",
+          "id": "CORR_C03_FRONT_TOP_BOTTOM_INNER_OWNER_EDGES",
+          "ordered_boundary_ids": [
+            "FRONT_C03_INNER_OWNER_EDGE",
+            "TOP_C03_INNER_OWNER_EDGE",
+            "BOTTOM_C03_INNER_OWNER_EDGE"
+          ],
+          "scope": "ordered exact source-edge sets only; no point pairing or surface created"
+        },
+        {
+          "component": "C04_STRIKE_FACE_POSITIVE_X",
+          "id": "CORR_C04_RIGHT_CANDIDATE_FACE_EDGES",
+          "ordered_boundary_ids": [
+            "RIGHT_C04_CANDIDATE_HALF_BOUNDARIES",
+            "RIGHT_C04_TOP_BOTTOM_EDGES"
+          ],
+          "scope": "two candidate-specific ordered source-edge sets about x=557"
+        },
+        {
+          "component": "C06_UPPER_HAFT_CAP",
+          "id": "CORR_C01_C06_C07_FRONT_CONTACTS",
+          "ordered_boundary_ids": [
+            "FRONT_C01_C06_CONTACT",
+            "FRONT_C06_C07_CONTACT"
+          ],
+          "scope": "exact adjacent source-row edge sets only"
+        }
+      ],
+      "id": "correspondence_groups_exact_order_only_records",
+      "observed": [
+        {
+          "component": "C02_STONE_LEFT",
+          "id": "CORR_C02_FRONT_TOP_BOTTOM_INNER_OWNER_EDGES",
+          "ordered_boundary_ids": [
+            "FRONT_C02_INNER_OWNER_EDGE",
+            "TOP_C02_INNER_OWNER_EDGE",
+            "BOTTOM_C02_INNER_OWNER_EDGE"
+          ],
+          "scope": "ordered exact source-edge sets only; no point pairing or surface created"
+        },
+        {
+          "component": "C03_STONE_RIGHT",
+          "id": "CORR_C03_FRONT_TOP_BOTTOM_INNER_OWNER_EDGES",
+          "ordered_boundary_ids": [
+            "FRONT_C03_INNER_OWNER_EDGE",
+            "TOP_C03_INNER_OWNER_EDGE",
+            "BOTTOM_C03_INNER_OWNER_EDGE"
+          ],
+          "scope": "ordered exact source-edge sets only; no point pairing or surface created"
+        },
+        {
+          "component": "C04_STRIKE_FACE_POSITIVE_X",
+          "id": "CORR_C04_RIGHT_CANDIDATE_FACE_EDGES",
+          "ordered_boundary_ids": [
+            "RIGHT_C04_CANDIDATE_HALF_BOUNDARIES",
+            "RIGHT_C04_TOP_BOTTOM_EDGES"
+          ],
+          "scope": "two candidate-specific ordered source-edge sets about x=557"
+        },
+        {
+          "component": "C06_UPPER_HAFT_CAP",
+          "id": "CORR_C01_C06_C07_FRONT_CONTACTS",
+          "ordered_boundary_ids": [
+            "FRONT_C01_C06_CONTACT",
+            "FRONT_C06_C07_CONTACT"
+          ],
+          "scope": "exact adjacent source-row edge sets only"
+        }
+      ],
+      "result": "PASS"
+    },
+    {
+      "expected": [
+        "C01_CENTER_CORE",
+        "C02_STONE_LEFT",
+        "C03_STONE_RIGHT",
+        "C04_STRIKE_FACE_POSITIVE_X",
+        "C06_UPPER_HAFT_CAP",
+        "PROTECTED_NEGATIVE_SPACES",
+        "CROSS_VIEW_COMMON_BOUNDARIES"
+      ],
+      "id": "all_seven_required_owners_found",
+      "observed": [
+        "C01_CENTER_CORE",
+        "C02_STONE_LEFT",
+        "C03_STONE_RIGHT",
+        "C04_STRIKE_FACE_POSITIVE_X",
+        "C06_UPPER_HAFT_CAP",
+        "PROTECTED_NEGATIVE_SPACES",
+        "CROSS_VIEW_COMMON_BOUNDARIES"
+      ],
+      "result": "PASS"
+    },
+    {
+      "expected": 1544766,
+      "id": "whole_pixel_total_matches_parent",
+      "observed": 1544766,
+      "result": "PASS"
+    },
+    {
+      "expected": "97.873941674506",
+      "id": "front_width_matches_parent",
+      "observed": "97.873941674506",
+      "result": "PASS"
+    },
+    {
+      "expected": "34.434306569343",
+      "id": "rune_depth_matches_parent",
+      "observed": "34.434306569343",
+      "result": "PASS"
+    },
+    {
+      "expected": "43.120437956204",
+      "id": "metal_depth_matches_parent",
+      "observed": "43.120437956204",
+      "result": "PASS"
+    },
+    {
+      "expected": {
+        "parent_step09_index": "5a0a3eea8f877d55216f9efabe15b0ee1cf938e4c15a825a0e218f72ba76839a",
+        "step09a_approval_record": "7a466161c0af498cd663c4c68470e190ce9de3ae22aa72da69d3d1d3ca3d102e",
+        "step09a_authority_lock": "a7e07ad68e9b2737c7c70e71e9df714766a285695693e741197900e17c3a06a5",
+        "step09a_boundary_index": "e190ed266753c797d4f9ec812154ff3b29f5d5d780e53e235e780c43492d0bd8",
+        "step09a_component_scanlines": "396adfbaaefc8a8ea35104e5e96dfde322510fb4ce88530fbb32f7f3073b3562",
+        "step09a_validation": "1e02aecf558145d4e440b1cdda90513fb28a0075149b1bf24f7ed3c00f7c3e60",
+        "step10_decisions": "0559b801ed3f544af82057d45f918599f07524588ff49c5ca92aefa744e467e9",
+        "step10_numeric_precedence": "ff2f7cb37284dc7d1416044913375f67924ec4141c22a5385b3a29541e7446b9"
+      },
+      "id": "preflight_input_hashes",
+      "observed": {
+        "parent_step09_index": "5a0a3eea8f877d55216f9efabe15b0ee1cf938e4c15a825a0e218f72ba76839a",
+        "step09a_approval_record": "7a466161c0af498cd663c4c68470e190ce9de3ae22aa72da69d3d1d3ca3d102e",
+        "step09a_authority_lock": "a7e07ad68e9b2737c7c70e71e9df714766a285695693e741197900e17c3a06a5",
+        "step09a_boundary_index": "e190ed266753c797d4f9ec812154ff3b29f5d5d780e53e235e780c43492d0bd8",
+        "step09a_component_scanlines": "396adfbaaefc8a8ea35104e5e96dfde322510fb4ce88530fbb32f7f3073b3562",
+        "step09a_validation": "1e02aecf558145d4e440b1cdda90513fb28a0075149b1bf24f7ed3c00f7c3e60",
+        "step10_decisions": "0559b801ed3f544af82057d45f918599f07524588ff49c5ca92aefa744e467e9",
+        "step10_numeric_precedence": "ff2f7cb37284dc7d1416044913375f67924ec4141c22a5385b3a29541e7446b9"
+      },
+      "result": "PASS"
+    },
+    {
+      "expected": false,
+      "id": "production_blueprint_file_absent",
+      "observed": false,
+      "result": "PASS"
+    }
+  ],
+  "failed_check_ids": [],
+  "geometry_authority": false,
+  "independent_validator": "Tools/DCC/audit_siegebreaker_r8_step11_source_authority_a02.py",
+  "input_sha256": {
+    "parent_step09_index": "5a0a3eea8f877d55216f9efabe15b0ee1cf938e4c15a825a0e218f72ba76839a",
+    "preflight_a02": "d243832e443779ae99e658e401a1985b94fa243a1a803849a50d1f31bd97eba0",
+    "step09a_approval_record": "7a466161c0af498cd663c4c68470e190ce9de3ae22aa72da69d3d1d3ca3d102e",
+    "step09a_authority_lock": "a7e07ad68e9b2737c7c70e71e9df714766a285695693e741197900e17c3a06a5",
+    "step09a_boundary_index": "e190ed266753c797d4f9ec812154ff3b29f5d5d780e53e235e780c43492d0bd8",
+    "step09a_component_scanlines": "396adfbaaefc8a8ea35104e5e96dfde322510fb4ce88530fbb32f7f3073b3562",
+    "step09a_validation": "1e02aecf558145d4e440b1cdda90513fb28a0075149b1bf24f7ed3c00f7c3e60",
+    "step10_decisions": "0559b801ed3f544af82057d45f918599f07524588ff49c5ca92aefa744e467e9",
+    "step10_numeric_precedence": "ff2f7cb37284dc7d1416044913375f67924ec4141c22a5385b3a29541e7446b9"
+  },
+  "missing_authority": [],
+  "next_gate": "Flamestrike decision on a separately stated Step 11 production-blueprint contract",
+  "pass_count": 119,
+  "production_blueprint_created": false,
+  "result": "PASS",
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "schema": "AERATHEA_R8_ZERO_EXTRUSION_STEP11_VALIDATION_A02_V1",
+  "source_authority_preflight_decision": "PASS",
+  "step": "11 source-authority preflight rerun only",
+  "step_11_production_blueprint_authorized": false,
+  "step_12_unlocked": false,
+  "unreal_authority": false
+}

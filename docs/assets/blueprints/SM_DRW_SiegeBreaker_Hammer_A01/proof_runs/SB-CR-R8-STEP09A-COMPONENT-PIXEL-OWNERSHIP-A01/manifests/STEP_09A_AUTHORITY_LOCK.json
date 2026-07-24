@@ -1,0 +1,51 @@
+{
+  "schema": "AERATHEA_R8_STEP09A_OWNERSHIP_AUTHORITY_LOCK_V1",
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "run_id": "SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01",
+  "decision": "approved",
+  "decision_authority": "Flamestrike",
+  "artifact_status": {
+    "component_scanlines": "authoritative",
+    "protected_negative_spaces": "authoritative",
+    "contact_and_boundary_edge_sets": "authoritative",
+    "ordered_correspondence_groups": "authoritative",
+    "independent_validation": "proof only",
+    "marked_source_reviews": "reference only",
+    "combined_review_board": "approved review target"
+  },
+  "approved_scope": {
+    "component_ids": [
+      "C01_CENTER_CORE",
+      "C02_STONE_LEFT",
+      "C03_STONE_RIGHT",
+      "C04_STRIKE_FACE_POSITIVE_X",
+      "C06_UPPER_HAFT_CAP"
+    ],
+    "protected_negative_spaces": true,
+    "contact_edges": true,
+    "ordered_boundary_edge_sets": true,
+    "hidden_surfaces": false,
+    "production_blueprint": false,
+    "blender_or_geometry": false,
+    "render_export_or_unreal": false,
+    "step_12": false
+  },
+  "approved_file_sha256": {
+    "interpretation_input": "8055611c52e4883127e705f6419b4c8dd09ae7d8c76ba38e4130fafbbd45cbcd",
+    "component_scanlines": "396adfbaaefc8a8ea35104e5e96dfde322510fb4ce88530fbb32f7f3073b3562",
+    "boundary_and_correspondence_index": "e190ed266753c797d4f9ec812154ff3b29f5d5d780e53e235e780c43492d0bd8",
+    "independent_validation": "1e02aecf558145d4e440b1cdda90513fb28a0075149b1bf24f7ed3c00f7c3e60",
+    "review_board": "62d585a56d59b57c0a3d09413fe9e82df28db7005cab25b67489f82d44ff35e5",
+    "front_exact_marks": "06a0f21b01a652fde338a6639580b10769fd86e1f9adaf2e578aba789eae48fa",
+    "right_exact_marks": "65c6b5250bfed13fd38e4c608758921f4bd0ed03cb52caf4a28980f70a13a4e3",
+    "top_exact_marks": "ef82bda2f5b15af77e243224d73f05a322cf8de065255a667ca2c4a63656c9d9",
+    "bottom_exact_marks": "0330f0277cc27c6ec6f083899df08bda58ebc931b9c25a4dc01467699a5a26fd",
+    "output_record": "ab3f676d02bc35af6deb2ff87c93d4bc2aece6f895ac36a2517a102399237b61",
+    "candidate_handoff": "f4dcbfdf2053f3f9931075634103b2216aa8570c93b3dd7e6280d4c39566ac29"
+  },
+  "approved_git_commit": "eaeb08c504104a48c64911e3f200dd8000ce338c",
+  "step_11_source_authority_preflight_authorized": true,
+  "step_11_production_blueprint_authorized": false,
+  "geometry_authority": false,
+  "unreal_authority": false
+}

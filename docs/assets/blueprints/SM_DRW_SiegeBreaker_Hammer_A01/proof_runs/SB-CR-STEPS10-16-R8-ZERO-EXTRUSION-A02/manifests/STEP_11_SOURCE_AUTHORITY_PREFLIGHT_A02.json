@@ -1,0 +1,238 @@
+{
+  "approval_scope": "hash-locked Step 09A ownership authority plus this preflight; no production blueprint or geometry",
+  "artifact_status": "preflight evidence pending independent audit",
+  "asset": "SM_DRW_SiegeBreaker_Hammer_A01",
+  "authority_lock": {
+    "approval_record_path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/steps/STEP_09A_OWNERSHIP_DECISION_APPROVAL_RECORD.md",
+    "approval_record_sha256": "7a466161c0af498cd663c4c68470e190ce9de3ae22aa72da69d3d1d3ca3d102e",
+    "approved_file_hash_results": {
+      "bottom_exact_marks": {
+        "expected": "0330f0277cc27c6ec6f083899df08bda58ebc931b9c25a4dc01467699a5a26fd",
+        "match": true,
+        "observed": "0330f0277cc27c6ec6f083899df08bda58ebc931b9c25a4dc01467699a5a26fd"
+      },
+      "boundary_and_correspondence_index": {
+        "expected": "e190ed266753c797d4f9ec812154ff3b29f5d5d780e53e235e780c43492d0bd8",
+        "match": true,
+        "observed": "e190ed266753c797d4f9ec812154ff3b29f5d5d780e53e235e780c43492d0bd8"
+      },
+      "candidate_handoff": {
+        "expected": "f4dcbfdf2053f3f9931075634103b2216aa8570c93b3dd7e6280d4c39566ac29",
+        "match": true,
+        "observed": "f4dcbfdf2053f3f9931075634103b2216aa8570c93b3dd7e6280d4c39566ac29"
+      },
+      "component_scanlines": {
+        "expected": "396adfbaaefc8a8ea35104e5e96dfde322510fb4ce88530fbb32f7f3073b3562",
+        "match": true,
+        "observed": "396adfbaaefc8a8ea35104e5e96dfde322510fb4ce88530fbb32f7f3073b3562"
+      },
+      "front_exact_marks": {
+        "expected": "06a0f21b01a652fde338a6639580b10769fd86e1f9adaf2e578aba789eae48fa",
+        "match": true,
+        "observed": "06a0f21b01a652fde338a6639580b10769fd86e1f9adaf2e578aba789eae48fa"
+      },
+      "independent_validation": {
+        "expected": "1e02aecf558145d4e440b1cdda90513fb28a0075149b1bf24f7ed3c00f7c3e60",
+        "match": true,
+        "observed": "1e02aecf558145d4e440b1cdda90513fb28a0075149b1bf24f7ed3c00f7c3e60"
+      },
+      "interpretation_input": {
+        "expected": "8055611c52e4883127e705f6419b4c8dd09ae7d8c76ba38e4130fafbbd45cbcd",
+        "match": true,
+        "observed": "8055611c52e4883127e705f6419b4c8dd09ae7d8c76ba38e4130fafbbd45cbcd"
+      },
+      "output_record": {
+        "expected": "ab3f676d02bc35af6deb2ff87c93d4bc2aece6f895ac36a2517a102399237b61",
+        "match": true,
+        "observed": "ab3f676d02bc35af6deb2ff87c93d4bc2aece6f895ac36a2517a102399237b61"
+      },
+      "review_board": {
+        "expected": "62d585a56d59b57c0a3d09413fe9e82df28db7005cab25b67489f82d44ff35e5",
+        "match": true,
+        "observed": "62d585a56d59b57c0a3d09413fe9e82df28db7005cab25b67489f82d44ff35e5"
+      },
+      "right_exact_marks": {
+        "expected": "65c6b5250bfed13fd38e4c608758921f4bd0ed03cb52caf4a28980f70a13a4e3",
+        "match": true,
+        "observed": "65c6b5250bfed13fd38e4c608758921f4bd0ed03cb52caf4a28980f70a13a4e3"
+      },
+      "top_exact_marks": {
+        "expected": "ef82bda2f5b15af77e243224d73f05a322cf8de065255a667ca2c4a63656c9d9",
+        "match": true,
+        "observed": "ef82bda2f5b15af77e243224d73f05a322cf8de065255a667ca2c4a63656c9d9"
+      }
+    },
+    "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/manifests/STEP_09A_AUTHORITY_LOCK.json",
+    "sha256": "a7e07ad68e9b2737c7c70e71e9df714766a285695693e741197900e17c3a06a5",
+    "valid": true
+  },
+  "available_exact_authority": {
+    "approved_component_names_and_view_roles": true,
+    "approved_component_pixel_ownership": true,
+    "approved_hidden_closure_equations": true,
+    "approved_rotational_and_haft_equations": true,
+    "approved_rz180_completion": true,
+    "component_owner_pixel_counts": {
+      "bottom": {
+        "C02_STONE_LEFT": 132685,
+        "C03_STONE_RIGHT": 133227,
+        "CENTRAL_NON_STONE_RESERVED": 109361
+      },
+      "front": {
+        "C01_CENTER_CORE": 46183,
+        "C02_STONE_LEFT": 71788,
+        "C03_STONE_RIGHT": 71689,
+        "C06_UPPER_HAFT_CAP": 6068,
+        "C12_RESERVED_EXISTING_OWNER": 6463
+      },
+      "right": {
+        "C01_SIDE_RESERVED_IN_METAL_HALF": 9832,
+        "C04_METAL_CENTER_PIECE_SIDE": 37508,
+        "C04_RUNE_SIDE": 42029
+      },
+      "top": {
+        "C02_STONE_LEFT": 141087,
+        "C03_STONE_RIGHT": 140054,
+        "CENTRAL_NON_STONE_RESERVED": 103446
+      }
+    },
+    "front_component_z_stations": true,
+    "front_owned_width_cm": "97.873941674506",
+    "front_uniform_scale_cm_per_pixel": "170/1063",
+    "metal_final_depth_cm": "43.120437956204",
+    "order_only_correspondence_group_count": 4,
+    "ordered_boundary_set_count": 13,
+    "right_rotation_axis_x": 557,
+    "right_uniform_scale_cm_per_pixel": "85/548",
+    "rune_final_depth_cm": "34.434306569343",
+    "step09a_independent_validation": "PASS 79/79",
+    "whole_hammer_selected_pixels": 1544766
+  },
+  "decision": "PASS",
+  "geometry_or_blender_created": false,
+  "input_sha256": {
+    "parent_step09_index": "5a0a3eea8f877d55216f9efabe15b0ee1cf938e4c15a825a0e218f72ba76839a",
+    "step09a_approval_record": "7a466161c0af498cd663c4c68470e190ce9de3ae22aa72da69d3d1d3ca3d102e",
+    "step09a_authority_lock": "a7e07ad68e9b2737c7c70e71e9df714766a285695693e741197900e17c3a06a5",
+    "step09a_boundary_index": "e190ed266753c797d4f9ec812154ff3b29f5d5d780e53e235e780c43492d0bd8",
+    "step09a_component_scanlines": "396adfbaaefc8a8ea35104e5e96dfde322510fb4ce88530fbb32f7f3073b3562",
+    "step09a_validation": "1e02aecf558145d4e440b1cdda90513fb28a0075149b1bf24f7ed3c00f7c3e60",
+    "step10_decisions": "0559b801ed3f544af82057d45f918599f07524588ff49c5ca92aefa744e467e9",
+    "step10_numeric_precedence": "ff2f7cb37284dc7d1416044913375f67924ec4141c22a5385b3a29541e7446b9"
+  },
+  "missing_authority": [],
+  "next_gate": "present the independently audited preflight result; request a separate Step 11 production-blueprint contract decision",
+  "ownership_amendment_run_id": "SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01",
+  "parent_run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
+  "production_blueprint_created": false,
+  "render_export_or_unreal_created": false,
+  "required_boundary_ids": [
+    "FRONT_C02_INNER_OWNER_EDGE",
+    "FRONT_C03_INNER_OWNER_EDGE",
+    "FRONT_C01_C06_CONTACT",
+    "FRONT_C06_C07_CONTACT",
+    "FRONT_C12_RESERVED_C01_CONTACT",
+    "RIGHT_C04_CANDIDATE_HALF_BOUNDARIES",
+    "RIGHT_C04_TOP_BOTTOM_EDGES",
+    "TOP_C02_INNER_OWNER_EDGE",
+    "TOP_C03_INNER_OWNER_EDGE",
+    "TOP_STONE_SEPARATION_WITHOUT_CENTRAL_OWNER",
+    "BOTTOM_C02_INNER_OWNER_EDGE",
+    "BOTTOM_C03_INNER_OWNER_EDGE",
+    "BOTTOM_STONE_SEPARATION_WITHOUT_CENTRAL_OWNER"
+  ],
+  "required_coordinate_bearing_owners": [
+    {
+      "component": "C01_CENTER_CORE",
+      "evidence": [
+        "front/C01_CENTER_CORE",
+        "FRONT_C12_RESERVED_C01_CONTACT",
+        "FRONT_C01_C06_CONTACT"
+      ],
+      "found": true,
+      "required": "exact new-front membership plus C12/C06 contact edges"
+    },
+    {
+      "component": "C02_STONE_LEFT",
+      "evidence": [
+        "front/top/bottom C02_STONE_LEFT scanlines",
+        "CORR_C02_FRONT_TOP_BOTTOM_INNER_OWNER_EDGES"
+      ],
+      "found": true,
+      "required": "exact front/top/bottom membership and ordered boundaries"
+    },
+    {
+      "component": "C03_STONE_RIGHT",
+      "evidence": [
+        "front/top/bottom C03_STONE_RIGHT scanlines",
+        "CORR_C03_FRONT_TOP_BOTTOM_INNER_OWNER_EDGES"
+      ],
+      "found": true,
+      "required": "exact front/top/bottom membership and ordered boundaries"
+    },
+    {
+      "component": "C04_STRIKE_FACE_POSITIVE_X",
+      "evidence": [
+        "right/C04_RUNE_SIDE",
+        "right/C04_METAL_CENTER_PIECE_SIDE",
+        "CORR_C04_RIGHT_CANDIDATE_FACE_EDGES"
+      ],
+      "found": true,
+      "required": "exact new-right membership and boundaries for both approved candidate halves"
+    },
+    {
+      "component": "C06_UPPER_HAFT_CAP",
+      "evidence": [
+        "front/C06_UPPER_HAFT_CAP",
+        "FRONT_C01_C06_CONTACT",
+        "FRONT_C06_C07_CONTACT"
+      ],
+      "found": true,
+      "required": "exact new-front membership and C01/C07 contacts"
+    },
+    {
+      "component": "PROTECTED_NEGATIVE_SPACES",
+      "evidence": [
+        "front/right/top/bottom protected_negative_spaces",
+        "Step 09A protected-space independent replay checks"
+      ],
+      "found": true,
+      "required": "exact exterior-connected source-coordinate records in every owning view"
+    },
+    {
+      "component": "CROSS_VIEW_COMMON_BOUNDARIES",
+      "evidence": [
+        "FRONT_C02_INNER_OWNER_EDGE",
+        "FRONT_C03_INNER_OWNER_EDGE",
+        "FRONT_C01_C06_CONTACT",
+        "FRONT_C06_C07_CONTACT",
+        "FRONT_C12_RESERVED_C01_CONTACT",
+        "RIGHT_C04_CANDIDATE_HALF_BOUNDARIES",
+        "RIGHT_C04_TOP_BOTTOM_EDGES",
+        "TOP_C02_INNER_OWNER_EDGE",
+        "TOP_C03_INNER_OWNER_EDGE",
+        "TOP_STONE_SEPARATION_WITHOUT_CENTRAL_OWNER",
+        "BOTTOM_C02_INNER_OWNER_EDGE",
+        "BOTTOM_C03_INNER_OWNER_EDGE",
+        "BOTTOM_STONE_SEPARATION_WITHOUT_CENTRAL_OWNER",
+        "CORR_C02_FRONT_TOP_BOTTOM_INNER_OWNER_EDGES",
+        "CORR_C03_FRONT_TOP_BOTTOM_INNER_OWNER_EDGES",
+        "CORR_C04_RIGHT_CANDIDATE_FACE_EDGES",
+        "CORR_C01_C06_C07_FRONT_CONTACTS"
+      ],
+      "found": true,
+      "required": "all exact ordered boundary sets and approved order-only correspondence groups"
+    }
+  ],
+  "required_correspondence_group_ids": [
+    "CORR_C02_FRONT_TOP_BOTTOM_INNER_OWNER_EDGES",
+    "CORR_C03_FRONT_TOP_BOTTOM_INNER_OWNER_EDGES",
+    "CORR_C04_RIGHT_CANDIDATE_FACE_EDGES",
+    "CORR_C01_C06_C07_FRONT_CONTACTS"
+  ],
+  "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
+  "schema": "AERATHEA_R8_ZERO_EXTRUSION_STEP11_SOURCE_PREFLIGHT_A02_V1",
+  "step": "11 source-authority preflight rerun only",
+  "step_11_production_blueprint_authorized": false,
+  "step_12_unlocked": false
+}

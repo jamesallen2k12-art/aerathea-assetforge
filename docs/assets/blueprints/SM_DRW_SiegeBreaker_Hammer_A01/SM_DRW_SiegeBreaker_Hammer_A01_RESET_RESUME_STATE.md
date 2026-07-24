@@ -1,21 +1,39 @@
 # SM_DRW_SiegeBreaker_Hammer_A01 Reset / Resume State
 
 - Active approved route:
-  `Core Recovery from valid R8 Steps 01-09; Step 10 passed; Step 09A ownership candidate complete; Step 11 still locked`
+  `Core Recovery from valid R8 Steps 01-09; Step 10 passed; Step 09A ownership approved; Step 11 source preflight passed`
 - Plan: `SM_DRW_SiegeBreaker_Hammer_A01_STEPS_01_16_PROOF_OF_CONCEPT_PIPELINE_PLAN.md`
 - Active contract:
-  `SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01; measurement-only pass complete`
+  `Step 11 source-authority preflight A02 complete; proposed production-blueprint contract awaiting approval`
 - Current state:
-  `Step 09A independent PASS 79/79; ownership package is candidate pending Flamestrike decision; no production blueprint exists`
+  `Step 09A ownership authoritative; Step 11 A02 preflight PASS 119/119 with 7/7 evidence groups found; no production blueprint exists`
 - Next approved activity:
-  `none; await Flamestrike decision on the exact Step 09A ownership candidate`
+  `none; await Flamestrike decision on the proposed Step 11 construction-instructions-only contract`
 - Source processing authorized now:
-  `false; the approved Step 09A pass is complete and stopped at its decision gate`
+  `false; source preflight is complete`
 - Model inference authorized now: `false`
 - DCC production authorized now:
   `false; Step 11 did not unlock Step 12`
 - Unreal authority: `false`
 - Fully game-ready: `false`
+
+## 2026-07-23 Step 09A Approval / Step 11 Preflight A02 Pass
+
+- Flamestrike approved the exact hash-locked Step 09A ownership package as the
+  official pixel-ownership record and authorized only rerunning the Step 11
+  source-authority check.
+- Step 09A authority lock:
+  `proof_runs/SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01/manifests/STEP_09A_AUTHORITY_LOCK.json`.
+- The A02 preflight found all `7/7` required evidence groups.
+- Independent A02 result: `PASS 119/119`.
+- The earlier missing-measurement block is cleared.
+- No Step 11 production blueprint, Blender file, geometry, render, export, or
+  Unreal artifact was created.
+- Step 11 is not complete and Step 12 remains locked.
+- Proposed next contract:
+  `proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_11_PRODUCTION_BLUEPRINT_A02_PROPOSED_CONTRACT.md`.
+- That proposed step would write and audit construction instructions only,
+  then stop. It requires a separate Flamestrike approval.
 
 ## 2026-07-23 Step 09A Ownership Candidate
 

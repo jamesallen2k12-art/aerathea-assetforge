@@ -3,7 +3,7 @@
   "run_id": "SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02",
   "parent_run_id": "SB-CR-STEPS01-16-R8-PIXEL-EXACT-A01",
   "last_valid_parent_step": "09",
-  "current_step": "BLOCKED_AT_STEP_11_SOURCE_AUTHORITY",
+  "current_step": "STEP_11_SOURCE_AUTHORITY_PREFLIGHT_A02_PASS",
   "completed_steps": [
     "01",
     "02",
@@ -16,10 +16,11 @@
     "09",
     "10"
   ],
-  "state": "blocked_pending_flamestrike_step09a_component_pixel_ownership_approval",
-  "step_11_decision": "Blueprint block: source authority missing",
-  "step_11_validation": "26/26 PASS for the blocked finding",
-  "block": {
+  "state": "waiting_flamestrike_step11_production_blueprint_contract_decision",
+  "step_11_decision": "source-authority preflight PASS; production blueprint not created",
+  "step_11_validation": "A02 independent PASS 119/119",
+  "historical_block": {
+    "status": "cleared by approved Step 09A ownership authority",
     "missing_authority": [
       "exact new-image component pixel ownership for C01/C02/C03/C04/C06",
       "exact source-coordinate ownership for protected negative spaces",
@@ -28,9 +29,18 @@
     "production_blueprint_created": false,
     "step_12_unlocked": false
   },
+  "step_11_source_authority_preflight_a02": {
+    "result": "PASS",
+    "required_authority_found": "7/7",
+    "independent_validation": "119/119 PASS",
+    "missing_authority": [],
+    "production_blueprint_created": false,
+    "step_11_completed": false,
+    "step_12_unlocked": false
+  },
   "next_permitted_action": {
-    "action": "none until Flamestrike approves SB-CR-R8-STEP09A-COMPONENT-PIXEL-OWNERSHIP-A01",
-    "scope_if_approved": "measurement and source-ownership interpretation only",
+    "action": "none until Flamestrike approves STEP_11_PRODUCTION_BLUEPRINT_A02_PROPOSED_CONTRACT.md",
+    "scope_if_approved": "write and independently audit the Step 11 construction blueprint document only",
     "geometry_authority": false,
     "blender_authority": false
   },
