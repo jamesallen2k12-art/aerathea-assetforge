@@ -9107,3 +9107,13 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260724-191646/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260724-191646/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 19:27:36 EDT -0400 - candidate twin hammer measurement authority lock A01 contract review
+
+- Snapshot: `Saved/ProjectRecovery/20260724-192736/`
+- Git: branch `main`, HEAD `69846b0`, status lines `559`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-192736/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-192736/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-192736/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
