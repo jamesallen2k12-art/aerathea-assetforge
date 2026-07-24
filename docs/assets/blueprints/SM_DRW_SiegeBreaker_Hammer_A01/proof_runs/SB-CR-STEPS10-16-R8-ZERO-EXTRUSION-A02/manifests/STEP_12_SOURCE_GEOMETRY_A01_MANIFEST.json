@@ -55,6 +55,67 @@
       "self_hash_rule": "The manifest cannot contain its own final SHA-256 without recursive byte mutation; its detached SHA-256 is reported after final validation."
     }
   ],
+  "additive_supplements": [
+    {
+      "schema": "AERATHEA_R8_STEP12_HIGH_POLY_NANITE_AND_PARITY_BLOCK_SUPPLEMENT_V1",
+      "date": "2026-07-24",
+      "artifact_status": "authoritative",
+      "authority_change": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_11B_HIGH_POLY_NANITE_PERFORMANCE_AMENDMENT_A01.md",
+        "sha256": "2e4276ea0adc32d8c6a21fb5bfbd46eacf627a9708c6187e56be1556eee76ba6",
+        "artifact_status": "authoritative",
+        "validation_result": "PASS",
+        "effect": "The 8,000-triangle target and 10,000-triangle hard cap are superseded only for this asset's high-poly DCC source stage. The exact 64 positive-X angular divisions remain mandatory. Triangle count is observed rather than used as a pass/fail gate."
+      },
+      "proof_outputs": [
+        {
+          "path": "Tools/DCC/audit_siegebreaker_r8_step12_source_geometry_a01.py",
+          "sha256": "ccdd33315544097b9fca68874e183c70969f98d417611a7055612cbf49ed2f63",
+          "artifact_status": "proof only"
+        },
+        {
+          "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_11B_HIGH_POLY_NANITE_PERFORMANCE_AMENDMENT_A01_VALIDATION.json",
+          "sha256": "eda28ccb0f64c526ac987d5f4aef8e8f20c30329cf75ac5706c831405d94d234",
+          "artifact_status": "proof only"
+        }
+      ],
+      "execution_trace": {
+        "path": "docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/manifests/STEP_12_SOURCE_GEOMETRY_A01_EVENT_TRACE.jsonl",
+        "pre_amendment_sha256_recorded_in_created_files": "fc9f77fd46b503447c44c217c4db5f664e78b6860b1a54209409d999ef603d9c",
+        "current_sha256": "c677e30888b1e3388e4e9db5167a2bf37b03fc4df4cd2e3758a447edc1baf551",
+        "artifact_status": "authoritative"
+      },
+      "current_result": "BLOCKED",
+      "current_block_code": "Blueprint block: source authority conflicting — bottom-view C02/C03 world-ownership parity",
+      "current_evidence": {
+        "bottom_x_equation": "X=(1529/2-x)*52020/517681",
+        "C02_front_world_x": "negative",
+        "C02_top_world_x": "negative",
+        "C02_bottom_world_x": "positive",
+        "C03_front_world_x": "positive",
+        "C03_top_world_x": "positive",
+        "C03_bottom_world_x": "negative",
+        "named_C03_bottom_to_positive_C04_minimum_x_separation_cm": 63.155823760192
+      },
+      "production_state": {
+        "builder_created": false,
+        "blender_started": false,
+        "geometry_created": false,
+        "blend_files_created": false,
+        "renders_created": false,
+        "review_board_created": false,
+        "dcc_source_candidate": false,
+        "dcc_game_ready_candidate": false,
+        "fully_game_ready": false,
+        "step13_authorized": false
+      },
+      "historical_not_created_clarification": {
+        "validator_is_now_created_as_pregeometry_proof_only": true,
+        "builder_remains_not_created": true
+      },
+      "next_gate": "Flamestrike approval or rejection of an additive semantic parity amendment that preserves the approved source pixels and bottom-view equation while mapping OWN_BOTTOM_C02 to world component C03 and OWN_BOTTOM_C03 to world component C02, including their ordered boundary IDs, for Step 12 construction and closure authority."
+    }
+  ],
   "not_created": {
     "builder": "Tools/DCC/build_siegebreaker_r8_step12_source_geometry_a01.py",
     "validator": "Tools/DCC/audit_siegebreaker_r8_step12_source_geometry_a01.py",

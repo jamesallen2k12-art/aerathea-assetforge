@@ -8737,3 +8737,23 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260723-221429/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260723-221429/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 06:06:58 EDT -0400 - before SiegeBreaker Step 12 high-poly Nanite amendment implementation
+
+- Snapshot: `Saved/ProjectRecovery/20260724-060658/`
+- Git: branch `main`, HEAD `bfc73ff`, status lines `556`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-060658/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-060658/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-060658/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 06:21:03 EDT -0400 - SiegeBreaker Step 12 high-poly amendment passed; blocked on bottom-view C02 C03 world parity
+
+- Snapshot: `Saved/ProjectRecovery/20260724-062103/`
+- Git: branch `main`, HEAD `bfc73ff`, status lines `561`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-062103/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-062103/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-062103/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
