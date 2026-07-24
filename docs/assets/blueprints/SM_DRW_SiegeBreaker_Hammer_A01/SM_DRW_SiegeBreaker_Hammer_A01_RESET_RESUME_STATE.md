@@ -1,5 +1,44 @@
 # SM_DRW_SiegeBreaker_Hammer_A01 Reset / Resume State
 
+## 2026-07-24 Step 12 Dual-Asset Selection — Current Authority
+
+This section supersedes the stale opening state below while preserving the
+earlier state as historical evidence.
+
+- Step 12 dual high-poly source construction: `complete`.
+- Candidate A, `rune_side`: selected for
+  `SM_DRW_SiegeBreaker_Hammer_A01` / Siege Breaker.
+- Candidate B, `metal_center_piece_side`: selected for
+  `SM_DRW_FoeHammer_Hammer_A01` / Foe Hammer.
+- Siege Breaker identity distinction: `double rune sided`.
+- Foe Hammer identity distinction: `double metal-center-piece sided`.
+- Shared identity relationship: `authoritative; otherwise identical`.
+- Candidate A status: `DCC source candidate`; independent audit
+  `105/105 PASS`.
+- Candidate B status: `DCC source candidate assigned to the new Foe Hammer
+  identity`; independent audit `105/105 PASS`.
+- Step 13: `locked`.
+- Retopology, UV, bake, export, and Unreal: `unauthorized`.
+- DCC game-ready candidate: `false` for both assets.
+- Fully game-ready: `false` for both assets.
+
+The candidates have equal audited width and height but different audited
+depths: Siege Breaker `34.434306569343 cm`; Foe Hammer
+`43.120437956204 cm`. Shared identity is approved, but exact mesh parity has
+not been proven. No geometry normalization is authorized.
+
+Governing selection record:
+
+`proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_12_DUAL_ASSET_SELECTION_APPROVAL_RECORD.md`
+
+Foe Hammer identity and resume record:
+
+`docs/assets/blueprints/SM_DRW_FoeHammer_Hammer_A01/SM_DRW_FoeHammer_Hammer_A01_IDENTITY_AND_RESUME_STATE.md`
+
+No production action is active. A separate visible contract is required
+before source modification, Candidate B identity-fork copying/renaming,
+geometric-parity reconciliation, Step 13, export, or Unreal.
+
 - Active approved route:
   `Core Recovery from valid R8 Steps 01-09; Step 10 passed; Step 09A ownership approved; Step 11 blueprint approved authoritative`
 - Plan: `SM_DRW_SiegeBreaker_Hammer_A01_STEPS_01_16_PROOF_OF_CONCEPT_PIPELINE_PLAN.md`

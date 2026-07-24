@@ -103,3 +103,38 @@ does not approve either candidate.
 Flamestrike must approve Candidate A, approve Candidate B, reject both, or mark
 the review blocked. Any approval authorizes only the clearly stated next
 contract. It does not automatically authorize Step 13 or Unreal production.
+
+## Additive Dual-Asset Selection — 2026-07-24
+
+This section supersedes the pending-selection state above while preserving it
+as historical evidence.
+
+Flamestrike selected both candidates as two assets:
+
+- Candidate A, `rune_side`, is Siege Breaker,
+  `SM_DRW_SiegeBreaker_Hammer_A01`.
+- Candidate B, `metal_center_piece_side`, is Foe Hammer,
+  `SM_DRW_FoeHammer_Hammer_A01`.
+
+Their shared identity is otherwise identical. Siege Breaker is double rune
+sided; Foe Hammer is double metal-center-piece sided. No other identity
+distinction is authorized.
+
+Both remain `DCC source candidate`. Candidate B still exists only under its
+hash-locked pre-fork Siege Breaker source path; no Foe Hammer source copy,
+rename, relink, or resave has been authorized or performed.
+
+The candidates have different audited depths and topology counts. This
+evidence is preserved. Shared identity does not establish exact mesh parity,
+and no normalization or reconciliation is authorized.
+
+Governing selection record:
+
+`docs/assets/blueprints/SM_DRW_SiegeBreaker_Hammer_A01/proof_runs/SB-CR-STEPS10-16-R8-ZERO-EXTRUSION-A02/steps/STEP_12_DUAL_ASSET_SELECTION_APPROVAL_RECORD.md`
+
+Foe Hammer identity/resume record:
+
+`docs/assets/blueprints/SM_DRW_FoeHammer_Hammer_A01/SM_DRW_FoeHammer_Hammer_A01_IDENTITY_AND_RESUME_STATE.md`
+
+Step 13, retopology, UVs, baking, export, Unreal, and source modification
+remain locked pending a separate visible contract.
