@@ -9147,3 +9147,33 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260724-195640/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260724-195640/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 20:01:56 EDT -0400 - before twin hammer measurement authority lock A02 Core recovery execution
+
+- Snapshot: `Saved/ProjectRecovery/20260724-200156/`
+- Git: branch `main`, HEAD `f38f5c4`, status lines `558`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-200156/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-200156/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-200156/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 20:07:52 EDT -0400 - A02 pre-writer evaluator block after H01-H18; no lock written
+
+- Snapshot: `Saved/ProjectRecovery/20260724-200752/`
+- Git: branch `main`, HEAD `f38f5c4`, status lines `562`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-200752/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-200752/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-200752/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 20:08:29 EDT -0400 - Finalize A02 pre-writer block records and stop state
+
+- Snapshot: `Saved/ProjectRecovery/20260724-200829/`
+- Git: branch `main`, HEAD `f38f5c4`, status lines `562`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-200829/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-200829/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-200829/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
