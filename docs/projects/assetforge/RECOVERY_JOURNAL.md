@@ -9177,3 +9177,23 @@ Heavy raw outputs remain in ignored `Saved/AssetForgeResearch/` paths. This file
   - `Saved/ProjectRecovery/20260724-200829/recent_project_files.txt`
   - `Saved/ProjectRecovery/20260724-200829/assetforge_recent_saved_outputs.txt`
 - Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 20:13:43 EDT -0400 - before twin hammer measurement authority lock A03 Core recovery contract draft
+
+- Snapshot: `Saved/ProjectRecovery/20260724-201343/`
+- Git: branch `main`, HEAD `dd6b993`, status lines `558`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-201343/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-201343/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-201343/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
+
+### 2026-07-24 20:20:05 EDT -0400 - A03 Core recovery contract draft ready for review
+
+- Snapshot: `Saved/ProjectRecovery/20260724-202005/`
+- Git: branch `main`, HEAD `dd6b993`, status lines `560`
+- Recovery files:
+  - `Saved/ProjectRecovery/20260724-202005/git_status_short.txt`
+  - `Saved/ProjectRecovery/20260724-202005/recent_project_files.txt`
+  - `Saved/ProjectRecovery/20260724-202005/assetforge_recent_saved_outputs.txt`
+- Next resume step: read this entry, then inspect the snapshot folder before continuing any interrupted long job.
